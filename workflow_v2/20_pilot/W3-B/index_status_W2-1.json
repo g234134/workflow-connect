@@ -2,22 +2,28 @@
   "schema_version": "repo_index_status_v0.1",
   "case_id": "W2-1",
   "job_type": "repo_index_v1",
-  "job_id": "repo_index_v1_job__W2-1__main_repo__sample",
+  "job_id": "repo_index_v1_job__W2-1__wave_b_gov_scope",
   "status": "succeeded",
-  "last_updated": "2026-05-29T10:30:00Z",
-  "started_at": "2026-05-29T10:29:00Z",
-  "finished_at": "2026-05-29T10:30:00Z",
+  "last_updated": "2026-06-05T08:38:25Z",
+  "started_at": "2026-06-05T08:38:25Z",
+  "finished_at": "2026-06-05T08:38:25Z",
   "scope": {
-    "kb_index_scope_kind": "repo_subtree",
+    "kb_index_scope_kind": "repo_subtree_list",
     "kb_index_repo_root_ref": "repo_root",
-    "kb_index_subtree": "core",
-    "kb_index_baseline_ref": "unpinned"
+    "kb_index_subtree": "gov_wave_b_bootstrap",
+    "kb_index_baseline_ref": "unpinned",
+    "kb_index_subtrees": [
+      "core",
+      "subagents",
+      "context",
+      "observability",
+      "04_Workflows"
+    ]
   },
-  "scope_digest": "scope_digest__sample__core__unpinned",
+  "scope_digest": "7fdcc419ac8fa8069c12ed85cd868734508bf072b8afefd876af37c8c002f3a5",
   "result_summary": {
-    "file_count": 9,
-    "chunk_count": 406,
-    "manifest_ref": "workflow_v2/20_pilot/W3-B/index_manifest_W2-1.sample.json"
+    "file_count": 188,
+    "chunk_count": 1190,
+    "manifest_ref": "workflow_v2/20_pilot/W3-B/index_manifest_W2-1.json"
   }
 }
-

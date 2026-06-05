@@ -2061,3 +2061,55 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 - **修復前**（`c5f4f8ed6` / run #26995011784）：bootstrap 無 repo 內 `core.ask_rag_selector`／`core.langgraph_flow` shim；selector 測試無法於 CI 匯入。
 - **shim push 仍紅**（`c3dba870b` / run #27003323541）：shim 與測試去耦已 push，但 `eval-gate-ci.yml` 的 `P+ eval unit tests` step 使用 folded `run` 區塊且未指定 `shell: bash`，Actions 回報 **exit code 127**（與 selector 邏輯無關）。
 - **修復後**（`4944121e7` / run #27003487102）：補 `shell: bash`、改為明確 unittest 命令列，並將 selector／routing 測試納入同一矩陣；Eval gate CI **conclusion: success**（含 Shadow spool smoke）。
+
+---
+
+## WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE（治理關鍵 subtree 真實 index 回填）
+
+**日期**：2026-06-05  
+**角色**：Knowledge / Indexing Engineer  
+**票號**：`WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE`  
+**狀態**：**done**
+
+### 範圍與目的
+
+- 將 W3-B pilot index 從 sample 側車升級為 **Wave B 治理關鍵 subtree** 的真實 HQ bootstrap index（不依賴 PG/Qdrant）。
+- 產出非 sample manifest、更新 `index_status_W2-1.json`，並跑通 **sync → gate → manifest RAG smoke** 閉環。
+- 明確界定：本票為 **Wave B bootstrap**；暗部 `repo_index_v1` 全量替換留 **Wave C**。
+
+### 主要變更
+
+| 檔案 | 動作 | 說明 |
+|----|----|----|
+| `workflow_v2/kb/wave_b_gov_scope.json` | 新增 | 凍結 Wave B scope（5 subtrees + `AGENTS.md`） |
+| `workflow_v2/kb/repo_index_bootstrap.py` | 新增 | 掃描 → manifest + index_status 寫入 |
+| `workflow_v2/kb/rag_index_smoke.py` | 新增 | manifest 關鍵字 RAG smoke（無 Qdrant） |
+| `workflow_v2/kb/__init__.py`、`workflow_v2/__init__.py` | 新增 | package 入口 |
+| `workflow_v2/20_pilot/W3-B/index_manifest_W2-1.json` | 新增 | 權威 manifest（`file_count=188`，`chunk_count=1190`） |
+| `workflow_v2/20_pilot/W3-B/index_status_W2-1.json` | 修改 | `job_id=repo_index_v1_job__W2-1__wave_b_gov_scope`；非 sample ref |
+| `workflow_v2/20_pilot/W2-1_case/W2-1_case.md` | 修改 | sync 回填 `kb_index_*`（`ready` / `gov_wave_b_bootstrap`） |
+| `workflow_v2/20_pilot/W3-B/W3-B_index_pipeline_runbook.md` | 修改 | 附录 A：Wave B bootstrap CLI 序列 |
+| `tests/test_kb_index_bootstrap.py` | 新增 | schema／digest／bootstrap／RAG smoke 單測 |
+| `docs/WAVE_B_EXECUTION_PLAN.md` | 新增 | Wave B 批次一計畫 + 本票 done 條目 |
+
+### 測試結果
+
+- `python workflow_v2/kb/repo_index_bootstrap.py run --case W2-1` → `ok=true`，`file_count=188`，`chunk_count=1190`
+- `python -m unittest tests.test_kb_index_bootstrap -v` → **Ran 9 tests … OK**
+- `python workflow_v2/kb/rag_index_smoke.py "AGENTS.md"` → `ok=true`，`hit_count=3`，首 hit `path=AGENTS.md`
+- `wf_kb_index_sync.ps1` → updated case markdown
+- `wf_kb_index_gate.ps1` → `verdict=allow`，`kb_index_status=ready`
+
+### CI / 執行證據
+
+| 項 | 值 |
+|----|----|
+| CI | 本票 **未改** workflow；無新增 Actions run |
+| 本地 smoke | 見上列四條命令 |
+| Run URL | —（待 Wave B 批次 CI 矩陣票回填） |
+
+### 備註
+
+- HQ bootstrap **刻意不** 写 PG/Qdrant；Progress「Repo index QA」infra 阻塞情境仍由 `index_status_*_failed_infra.json` 样例覆盖。
+- `index_manifest_W2-1.json` 约 2MB（含 chunk 全文）；Wave C 可改为仅存 manifest 摘要 + 暗部 PG 权威。
+- **Wave C 留项**：暗部 embed、全库增量、多 case 动态 scope、`W3-B-SELECTOR-HOOK` prod 默认启用。

@@ -221,4 +221,51 @@ powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_kb_inde
 powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_kb_index_gate.ps1 -CaseDir workflow_v2/20_pilot/W2-1_case -TargetImpState IMP-AI-READY
 ```
 
+---
+
+## 附录 A — Wave B bootstrap scope（`WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE` · 2026-06-05）
+
+> **定位**：HQ 侧离线 bootstrap runner；**不**依赖 PostgreSQL／Qdrant。暗部 `repo_index_v1` 就绪后可替换 runner，但须保持 `index_status`／manifest 契约不变。
+
+### A.1 冻结 scope
+
+权威配置：`workflow_v2/kb/wave_b_gov_scope.json`
+
+| 项 | 值 |
+|----|-----|
+| **case** | `W2-1` |
+| **subtrees** | `core`、`subagents`、`context`、`observability`、`04_Workflows` |
+| **root files** | `AGENTS.md` |
+| **include_globs** | `*.py`、`*.md` |
+| **scope_digest** | 见 `index_status_W2-1.json`（SHA-256 canonical JSON） |
+
+### A.2 可重跑 CLI 序列（repo root）
+
+```bash
+# 1) 扫描 subtree → manifest + index_status
+python workflow_v2/kb/repo_index_bootstrap.py run --case W2-1
+
+# 2) 案卷回填
+powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_kb_index_sync.ps1 `
+  -CaseDir workflow_v2/20_pilot/W2-1_case `
+  -StatusJson workflow_v2/20_pilot/W3-B/index_status_W2-1.json
+
+# 3) IMP-AI-READY gate（期望 verdict=allow）
+powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_kb_index_gate.ps1 `
+  -CaseDir workflow_v2/20_pilot/W2-1_case `
+  -TargetImpState IMP-AI-READY
+
+# 4) manifest RAG smoke（期望 hits>=1）
+python workflow_v2/kb/rag_index_smoke.py "AGENTS.md" --top-k 5
+```
+
+### A.3 Wave B vs Wave C
+
+| 项目 | Wave B（本附录） | Wave C 之后 |
+|------|------------------|-------------|
+| Runner | `workflow_v2/kb/repo_index_bootstrap.py` | 暗部 `repo_index_agent` + PG manifest |
+| Case | 仅 `W2-1` | 多 case 动态 scope |
+| 向量检索 | manifest 关键词 smoke | Qdrant `repo_chunks` prod 路径 |
+
+**Wave C 留项**：全库增量、多 tenant KB、暗部 embed job 自动触发。
 

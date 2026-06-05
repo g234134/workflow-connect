@@ -1,0 +1,31 @@
+{
+  "schema_version": "repo_index_scope_v0.1",
+  "case_id": "W2-1",
+  "wave": "B",
+  "description": "Wave B bootstrap — governance-critical subtrees for W2-1 pilot",
+  "kb_index_scope_kind": "repo_subtree_list",
+  "kb_index_repo_root_ref": "repo_root",
+  "kb_index_subtree": "gov_wave_b_bootstrap",
+  "kb_index_subtrees": [
+    "core",
+    "subagents",
+    "context",
+    "observability",
+    "04_Workflows"
+  ],
+  "kb_index_baseline_ref": "unpinned",
+  "include_root_files": [
+    "AGENTS.md"
+  ],
+  "include_globs": ["*.py", "*.md"],
+  "exclude_dir_names": [
+    "__pycache__",
+    ".git",
+    ".venv",
+    "node_modules",
+    ".pytest_cache",
+    ".mypy_cache",
+    "venv"
+  ],
+  "exclude_globs": ["*.pyc", "*.sample.json"]
+}

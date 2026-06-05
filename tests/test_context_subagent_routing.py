@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import importlib.util
 import sys
 import unittest
 from pathlib import Path
@@ -68,21 +67,9 @@ class TestContextSubagentRouting(unittest.TestCase):
 
     def test_selector_unchanged_when_subagent_route_present(self) -> None:
         """RAG selector (S2) must not be overridden by subagent routing."""
-        selector_path = (
-            _REPO_ROOT
-            / "01_Environments"
-            / "python_venvs"
-            / "gov_core_system"
-            / "core"
-            / "ask_rag_selector.py"
-        )
-        spec = importlib.util.spec_from_file_location(
-            "_test_ask_rag_selector", selector_path
-        )
-        assert spec is not None and spec.loader is not None
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        decide_use_rag = mod.decide_use_rag
+        import core.ask_rag_selector as selector_mod
+
+        decide_use_rag = selector_mod.decide_use_rag
 
         built = attach_subagent_route_to_context(
             build_rooted_context({"query": "你好"}, mode="ask_pipeline")

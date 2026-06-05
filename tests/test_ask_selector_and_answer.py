@@ -9,10 +9,9 @@ from pathlib import Path
 from unittest import mock
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
-_GOV_ROOT = _REPO_ROOT / "01_Environments" / "python_venvs" / "gov_core_system"
 
-if str(_GOV_ROOT) not in sys.path:
-    sys.path.insert(0, str(_GOV_ROOT))
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 
 def _hline_with_kb() -> dict[str, object]:

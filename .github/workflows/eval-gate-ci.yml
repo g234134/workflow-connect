@@ -161,19 +161,17 @@ jobs:
 
       - name: P+ eval unit tests
 
-        run: >-
+        shell: bash
 
-          python -m unittest
-
-          tests.test_eval_exporter
-
-          tests.test_eval_ci_check
-
-          tests.test_eval_gate
-
-          tests.test_ibridge_exporter
-
-          -v
+        run: |
+          python -m unittest \
+            tests.test_eval_exporter \
+            tests.test_eval_ci_check \
+            tests.test_eval_gate \
+            tests.test_ibridge_exporter \
+            tests.test_ask_selector_and_answer \
+            tests.test_context_subagent_routing \
+            -v
 
 
 
@@ -499,19 +497,17 @@ jobs:
 
       - name: P+ eval unit tests
 
-        run: >-
+        shell: bash
 
-          python -m unittest
-
-          tests.test_eval_exporter
-
-          tests.test_eval_ci_check
-
-          tests.test_eval_gate
-
-          tests.test_ibridge_exporter
-
-          -v
+        run: |
+          python -m unittest \
+            tests.test_eval_exporter \
+            tests.test_eval_ci_check \
+            tests.test_eval_gate \
+            tests.test_ibridge_exporter \
+            tests.test_ask_selector_and_answer \
+            tests.test_context_subagent_routing \
+            -v
 
 
 

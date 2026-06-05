@@ -1,9 +1,28 @@
 # eval_gate export & CI (v1)
 
-> **Modules**: `observability/eval_exporter.py`, `observability/eval_ci_check.py`, `observability/eval_stats.py`  
+> **Modules**: `observability/eval_exporter.py`, `observability/eval_ci_check.py`, `observability/eval_stats.py`, `observability/eval_report.py`  
 > **Schema**: `observability/eval_export_schema.json` (`eval_export/v1`)  
 > **Gate logic**: `observability/eval_gate.py` → `evaluate_task_record` (unchanged)  
-> **Distribution / CI thresholds (analysis only)**: `observability/eval_stats_report.md`
+> **Distribution / CI thresholds (analysis only)**: `observability/eval_stats_report.md`  
+> **Wave B report artifacts**: `artifacts/eval/eval_report.latest.{md,json}` (CI upload; local via `eval_report`)
+
+---
+
+## Wave B eval gate report (`WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP`)
+
+Generate Markdown + JSON summary from `eval_export/v1` JSONL (does **not** change gate logic or default CI thresholds):
+
+```bash
+# Fixture-aligned smoke (N=3)
+python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+
+# Nightly export when present
+python -m observability.eval_report artifacts/eval/eval_export_v1_shadow_nightly.latest.jsonl --out-dir artifacts/eval
+```
+
+**CI**: `.github/workflows/eval-gate-ci.yml` uploads `eval-gate-report-pr` (PR job) and `eval-gate-report-nightly` (nightly job).
+
+**Wave C 留项**: HTML dashboard / Slack 通知 / 14 日 baseline 自动 tighten（见 `docs/WAVE_B_EXECUTION_PLAN.md`）。
 
 ---
 

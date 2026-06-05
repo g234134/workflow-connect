@@ -2113,3 +2113,47 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 - HQ bootstrap **刻意不** 写 PG/Qdrant；Progress「Repo index QA」infra 阻塞情境仍由 `index_status_*_failed_infra.json` 样例覆盖。
 - `index_manifest_W2-1.json` 约 2MB（含 chunk 全文）；Wave C 可改为仅存 manifest 摘要 + 暗部 PG 权威。
 - **Wave C 留项**：暗部 embed、全库增量、多 case 动态 scope、`W3-B-SELECTOR-HOOK` prod 默认启用。
+
+---
+
+## WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP（eval gate 匯出報表與 CI 可視化）
+
+**日期**：2026-06-05  
+**角色**：Observability / Eval Gate Engineer  
+**票號**：`WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP`  
+**狀態**：**done**
+
+### 範圍與目的
+
+- 在 **不改 eval_gate 邏輯** 前提下，將 `eval_export/v1` JSONL 統計升級為可發佈的 **Markdown + JSON 報表**。
+- 接入 `eval-gate-ci.yml` PR／nightly job 的 **artifact 上傳**，便於 reviewer 無需手動 grep JSONL。
+- 明確界定：Wave B 僅 bootstrap 報表；Grafana／Slack 留 **Wave C**。
+
+### 主要變更
+
+| 檔案 | 動作 | 說明 |
+|----|----|----|
+| `observability/eval_report.py` | 新增 | `write_eval_report` → stable summary dict + `.md`/`.json` |
+| `tests/test_eval_report.py` | 新增 | 形狀／寫檔／空 export 測試（4 cases） |
+| `.github/workflows/eval-gate-ci.yml` | 修改 | PR + nightly 生成報表並 `upload-artifact` |
+| `observability/eval_export.md` | 修改 | Wave B report CLI 與 CI artifact 名稱 |
+| `observability/eval_stats_report.md` | 修改 | 交叉引用 `eval_report` 產物 |
+| `docs/WAVE_B_EXECUTION_PLAN.md` | 修改 | 本票 **done** 條目 |
+
+### 測試結果
+
+- `python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval` → `ok=true`，`sample_count=3`，`needs_review_ratio=0.6667`
+- `python -m unittest tests.test_eval_report tests.test_eval_stats tests.test_eval_exporter tests.test_eval_ci_check tests.test_eval_gate -v` → **33 tests OK**
+
+### CI / 執行證據
+
+| 項 | 值 |
+|----|----|
+| Workflow | Eval gate CI |
+| 新增 artifact | `eval-gate-report-pr`（PR job）、`eval-gate-report-nightly`（nightly job） |
+| Run URL | —（待 push 後 Actions 回填） |
+
+### 備註
+
+- 未修改 `eval_ci_check` 預設 threshold（PR 仍 0.72；nightly 仍 0.60 + `infra_risk`）。
+- 本地產物 `artifacts/eval/eval_report.latest.*` 可重跑覆寫，**不**強制 commit。

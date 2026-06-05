@@ -205,6 +205,36 @@ jobs:
 
 
 
+      - name: Generate eval gate report (Wave B)
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+
+
+
+      - name: Upload eval gate report artifact (PR)
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: eval-gate-report-pr
+
+          path: |
+
+            artifacts/eval/eval_report.latest.md
+
+            artifacts/eval/eval_report.latest.json
+
+          if-no-files-found: error
+
+
+
   shadow-spool-smoke:
 
 
@@ -544,6 +574,48 @@ jobs:
           EVAL_EXPORT_INPUT: ${{ env.SHADOW_EXPORT_OUT }}
 
         run: bash scripts/run_eval_exporter_nightly.sh
+
+
+
+      - name: Generate eval gate report (Wave B)
+
+        continue-on-error: true
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          EXPORT="artifacts/eval/eval_export_v1_shadow_nightly.latest.jsonl"
+
+          if [[ ! -s "${EXPORT}" ]]; then
+
+            EXPORT="tests/fixtures/eval/eval_export_sample.jsonl"
+
+          fi
+
+          python -m observability.eval_report "${EXPORT}" --out-dir artifacts/eval
+
+
+
+      - name: Upload eval gate report artifact (nightly)
+
+        continue-on-error: true
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: eval-gate-report-nightly
+
+          path: |
+
+            artifacts/eval/eval_report.latest.md
+
+            artifacts/eval/eval_report.latest.json
+
+          if-no-files-found: warn
 
 
 

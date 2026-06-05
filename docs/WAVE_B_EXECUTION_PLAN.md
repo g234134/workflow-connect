@@ -11,7 +11,7 @@
 | 顺序 | 票号 | 优先级 | 状态 | 说明 |
 |------|------|--------|------|------|
 | 1 | `WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE` | P1 | **done** | 治理关键 subtree 真实 index bootstrap + 案卷 sync/gate + manifest RAG smoke |
-| 2 | `WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP` | P1 | todo | eval_export → Markdown/JSON 报表 + CI artifact |
+| 2 | `WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP` | P1 | **done** | eval_export → Markdown/JSON 报表 + CI artifact |
 | 3 | `WAVE-B-P1-TRACE-QUERY-CLI` | P1 | todo | gov-trace-v2 本地 JSONL 查询 CLI |
 | 4 | `WAVE-B-P2-KB-SELECTOR-HOOK-MIN` | P2 | todo | `kb_index_status` 只读 selector 降级规则 |
 | 5 | `WAVE-B-P2-EVAL-TRACE-CORRELATE` | P2 | todo | eval_export 与 trace 关联追查 |
@@ -42,4 +42,25 @@
 
 ---
 
-*文件版本：v0.1 · 2026-06-05 · Wave B 批次一开票*
+## WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP（done · 2026-06-05）
+
+### 交付摘要
+
+- 报表 CLI：`observability/eval_report.py` → `artifacts/eval/eval_report.latest.{md,json}`
+- CI：`eval-gate-ci.yml` PR + nightly 上传 artifact（`eval-gate-report-pr` / `eval-gate-report-nightly`）
+- 单测：`tests/test_eval_report.py`（4/4 OK）
+
+### 可重跑命令
+
+```bash
+python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+python -m unittest tests.test_eval_report tests.test_eval_stats -v
+```
+
+### Wave C 留项
+
+- Grafana/HTML dashboard、Slack 通知、真实 nightly cohort 自动 threshold tighten
+
+---
+
+*文件版本：v0.2 · 2026-06-05 · Wave B #2 done*

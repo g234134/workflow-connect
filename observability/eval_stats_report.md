@@ -1,6 +1,7 @@
 # eval_export distribution analysis & CI threshold recommendations
 
 > **Tool**: `python -m observability.eval_stats` (`observability/eval_stats.py`)  
+> **Wave B report CLI**: `python -m observability.eval_report` → `artifacts/eval/eval_report.latest.{md,json}`  
 > **Input**: `eval_export/v1` JSONL (from `eval_exporter`, not raw `ibridge_records`)  
 > **Scope**: Wave X / Chat B — analysis only; does **not** change `.github/workflows` or `eval_ci_check` defaults.
 
@@ -11,6 +12,7 @@
 | Dataset | N | needs_review | Ratio | Top tags |
 |---------|---|--------------|-------|----------|
 | `tests/fixtures/eval/eval_export_sample.jsonl` | 3 | 2 | **66.7%** | `infra_risk` (1), `high_retry` (1) |
+| `artifacts/eval/eval_report.latest.json` (Wave B tool) | 3 | 2 | **66.7%** | same — regenerate via `eval_report` CLI |
 | `artifacts/eval/smoke_eval_results.jsonl` | 3 | 2 | **66.7%** | same fixture shape |
 | Combined (duplicate smoke + sample) | 6 | 4 | **66.7%** | `infra_risk` (2), `high_retry` (2) |
 

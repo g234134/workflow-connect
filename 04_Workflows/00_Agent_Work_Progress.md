@@ -2033,6 +2033,7 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 | `core/ask_pipeline_ibridge_v0.py` | 新增 | selector / flow 的 ibridge context wiring stub |
 | `tests/test_ask_selector_and_answer.py` | 修改 | `sys.path` 對齊 repo root，不再依賴不存在的 gov venv 路徑 |
 | `tests/test_context_subagent_routing.py` | 修改 | 移除硬編碼 loader 路徑，改用 repo 內 `core.ask_rag_selector` |
+| `.github/workflows/eval-gate-ci.yml` | 修改 | `P+ eval unit tests` 改 `shell: bash`；納入 selector／routing 測試（修復 Actions exit 127） |
 
 ### 測試結果
 - `python -m unittest tests.test_ask_selector_and_answer tests.test_context_subagent_routing -v`
@@ -2044,13 +2045,19 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 | 項 | 值 |
 |----|----|
 | Workflow | Eval gate CI |
-| 範圍 | ask selector / RAG selector compatibility fix |
-| 相關測試 | `tests.test_ask_selector_and_answer`, `tests.test_context_subagent_routing` |
-| Branch / SHA | `main` @ `c5f4f8ed6`（本地 shim 已驗收；待 push） |
-| Run URL | https://github.com/g234134/workflow-connect/actions/runs/26995011784 |
+| 範圍 | ask selector / RAG selector compatibility fix + eval gate unittest matrix |
+| 相關測試 | `tests.test_ask_selector_and_answer`, `tests.test_context_subagent_routing`, `tests.test_eval_exporter`, `tests.test_eval_ci_check`, `tests.test_eval_gate`, `tests.test_ibridge_exporter` |
+| Branch / SHA（修復後） | `main` @ `4944121e7` |
+| Run URL（修復後 · 綠燈） | https://github.com/g234134/workflow-connect/actions/runs/27003487102 |
+| Branch / SHA（shim only · 仍紅） | `main` @ `c3dba870b` |
+| Run URL（shim push · 修復前 workflow） | https://github.com/g234134/workflow-connect/actions/runs/27003323541 |
+| Branch / SHA（bootstrap · 修復前） | `main` @ `c5f4f8ed6` |
+| Run URL（bootstrap · 修復前） | https://github.com/g234134/workflow-connect/actions/runs/26995011784 |
 
 ### 備註
 - 本次新增 `core.*` 檔案為 **CI / unit test 相容層 shim**，後續可由 `gov_core_system` 真實實作逐步替換，但需維持既有測試介面。
 - `shadow-spool-smoke (LF / Two-Pool)` 與 `eval_gate` 核心邏輯未受本票影響。
 - `test_k2_ask_shadow.py` 仍使用 `_GOV_ROOT` 載入 `core.langgraph_flow`；若未來納入同一條 CI gate，需另開票統一路徑策略。
-- 上述 Run URL 為 bootstrap push 觸發之 **Eval gate CI #1**（修復前；`conclusion: failure`）；本票驗收以本地 unittest 為準，push 含 shim 後待 Actions 重跑轉綠。
+- **修復前**（`c5f4f8ed6` / run #26995011784）：bootstrap 無 repo 內 `core.ask_rag_selector`／`core.langgraph_flow` shim；selector 測試無法於 CI 匯入。
+- **shim push 仍紅**（`c3dba870b` / run #27003323541）：shim 與測試去耦已 push，但 `eval-gate-ci.yml` 的 `P+ eval unit tests` step 使用 folded `run` 區塊且未指定 `shell: bash`，Actions 回報 **exit code 127**（與 selector 邏輯無關）。
+- **修復後**（`4944121e7` / run #27003487102）：補 `shell: bash`、改為明確 unittest 命令列，並將 selector／routing 測試納入同一矩陣；Eval gate CI **conclusion: success**（含 Shadow spool smoke）。

@@ -224,7 +224,7 @@ gantt
 - **P5 Dashboard／Alert**（**≥85%**）：四面板 JSON + 三條 baseline 告警 + evaluator 接線；Prometheus／Grafana／PG live soak 列 placeholder，不阻塞本波段判定。
 - **K2-phase1-remote-rollout-runbook**（**done**）：遠端 rollout 藍圖 runbook 已落盤（Blueprint only；實作见 `K2-phase1-remote-rollout`）。
 - **Telegram listener 復活**（**done**）：`WAVE-CORE-P0-TELEGRAM-LISTENER-REVIVE` 已收口。listener 已啟動（`Start-TelegramListener.ps1`）；`.telegram_listener.lock` pid 與實際 `_telegram_listener.py --mode loop` 一致；最新 err log（`listener_20260605_110242.err.log`）無 `RemoteDisconnected`；`Master_Map.json -> war_status.telegram_listener` 已更新；2026-06-05 客戶端 `/ping` → `pong · 2026-06-05T03:12:45+00:00`（E2E 通路正常）。後續由 watchdog 或日常維運處理。
-- **ask selector / RAG selector CI compatibility**（**done**）：已以 repo 內 shim 移除對 `gov_core_system` 舊路徑的硬依賴，`tests.test_ask_selector_and_answer` 與 `tests.test_context_subagent_routing` 可於 CI 直接執行，無 `ModuleNotFoundError` / `FileNotFoundError`（戰報：`WAVE-B-P1-ASK-RAG-SELECTOR-CI-FIX`）。
+- **ask selector / RAG selector CI compatibility**（**done**）：已以 repo 內 shim 移除對 `gov_core_system` 舊路徑的硬依賴，`tests.test_ask_selector_and_answer` 與 `tests.test_context_subagent_routing` 已納入 `eval-gate-ci.yml` unittest 矩陣；Eval gate CI 綠燈 `main` @ `4944121e7`（run #27003487102）（戰報：`WAVE-B-P1-ASK-RAG-SELECTOR-CI-FIX`）。
 
 ### 仍待完成
 

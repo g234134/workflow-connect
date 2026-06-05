@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:49:14+00:00",
+  "source_path": "D:\\大唐三省六部\\04_Workflows\\MenXia_Audit.py",
+  "name": "MenXia_Audit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9199,
+  "content_sha256": "45113f3ada0e154632b8a0dd9d5a841a927c2badc440ceb9561a32c018808979",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 236,
+    "non_empty_lines": 201,
+    "char_count": 8843,
+    "preview_lines": [
+      "# MenXia_Audit.py — 門下省 V1",
+      "# 讀取 03_RAG_Database/C3_Logs，依「最新 Run_ID」統計失敗；失敗計數 >= 2 → 封駁（Manual + 終止信號）。",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "def _load_base_agent():"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "from Base_Agent import AgentStatus, Base_Agent  # type: ignore",
+      "from gov_paths import get_department_under, get_tang_gov_root, resolve_artifact_under_root"
+    ],
+    "classes": [
+      "LogAuditResult",
+      "MenXia_Audit"
+    ],
+    "functions": [
+      "_load_base_agent",
+      "_utc_iso",
+      "audit_c3_logs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_102_45113f3ada0e1546_MenXia_Audit.py.json"
+}

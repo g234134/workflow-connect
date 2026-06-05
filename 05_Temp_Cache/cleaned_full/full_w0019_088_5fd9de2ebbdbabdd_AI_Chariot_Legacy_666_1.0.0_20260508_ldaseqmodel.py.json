@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ldaseqmodel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ldaseqmodel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 63821,
+  "content_sha256": "5fd9de2ebbdbabddd998249443b978e8a7b298d3bc87e231128e377a77475ee1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1647,
+    "non_empty_lines": 1307,
+    "char_count": 63814,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "# Based on Copyright (C) 2016 Radim Rehurek <radimrehurek@seznam.cz>",
+      "\"\"\"Lda Sequence model, inspired by",
+      "`David M. Blei, John D. Lafferty: \"Dynamic Topic Models\"",
+      "<https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf>`_.",
+      "The original C/C++ implementation can be found on `blei-lab/dtm <https://github.com/blei-lab/dtm>`_.",
+      "TODO: The next steps to take this forward would be:"
+    ],
+    "imports": [
+      "import logging",
+      "import numpy as np",
+      "from scipy.special import digamma, gammaln",
+      "from scipy import optimize",
+      "from gensim import utils, matutils",
+      "from gensim.models import ldamodel"
+    ],
+    "classes": [
+      "LdaSeqModel",
+      "sslm",
+      "LdaPost"
+    ],
+    "functions": [
+      "f_obs",
+      "df_obs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_088_5fd9de2ebbdbabdd_AI_Chariot_Legacy_666_1.0.0_20260508_ldaseqmodel.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_encrypt_decrypt_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_encrypt_decrypt_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3903,
+  "content_sha256": "eff3701a77761f0120749cdb387b8fe0b83a6728785766d6bcbeccd94822c7ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 90,
+    "char_count": 3903,
+    "preview_lines": [
+      "import base64",
+      "import os",
+      "from typing import Literal, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "def _get_salt_key():",
+      "    from litellm.proxy.proxy_server import master_key",
+      "    salt_key = os.getenv(\"LITELLM_SALT_KEY\", None)",
+      "    if salt_key is None:",
+      "        salt_key = master_key",
+      "    return salt_key"
+    ],
+    "imports": [
+      "import base64",
+      "import os",
+      "from typing import Literal, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.proxy_server import master_key",
+      "import hashlib",
+      "import nacl.secret",
+      "import nacl.utils",
+      "import hashlib",
+      "import nacl.secret",
+      "import nacl.utils"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_salt_key",
+      "encrypt_value_helper",
+      "decrypt_value_helper",
+      "encrypt_value",
+      "decrypt_value"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_406_eff3701a77761f01_AI_Chariot_Legacy_666_1.0.0_20260508_encrypt_decrypt_utils.py.json"
+}

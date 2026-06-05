@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 480,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_composable\\contract.py",
+  "name": "contract.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7567,
+  "content_sha256": "134c00fb036005276e05a7b249af7f795eab687e591e6ee67973f144b87668ec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 194,
+    "non_empty_lines": 161,
+    "char_count": 7567,
+    "preview_lines": [
+      "import uuid",
+      "from collections import OrderedDict",
+      "from functools import wraps",
+      "from typing import Callable, Dict, List, Optional, Type",
+      "import torch.nn as nn",
+      "from torch.distributed._composable_state import _State",
+      "def generate_state_key(string=\"__composable_api_state_key\"):",
+      "    return f\"{string}_{str(uuid.uuid4())}\"",
+      "STATE_KEY = generate_state_key()",
+      "REGISTRY_KEY = generate_state_key()"
+    ],
+    "imports": [
+      "import uuid",
+      "from collections import OrderedDict",
+      "from functools import wraps",
+      "from typing import Callable, Dict, List, Optional, Type",
+      "import torch.nn as nn",
+      "from torch.distributed._composable_state import _State"
+    ],
+    "classes": [
+      "RegistryItem"
+    ],
+    "functions": [
+      "generate_state_key",
+      "contract",
+      "_get_registry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_480_134c00fb03600527_contract.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 367,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hatch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hatch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7453,
+  "content_sha256": "b5f10cd03431c8b91413cee51ddb8c365139e4628836d019a3863f62c026489a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 225,
+    "non_empty_lines": 181,
+    "char_count": 7453,
+    "preview_lines": [
+      "\"\"\"Contains classes for generating hatch patterns.\"\"\"",
+      "import numpy as np",
+      "from matplotlib import _api",
+      "from matplotlib.path import Path",
+      "class HatchPatternBase:",
+      "    \"\"\"The base class for a hatch pattern.\"\"\"",
+      "    pass",
+      "class HorizontalHatch(HatchPatternBase):",
+      "    def __init__(self, hatch, density):",
+      "        self.num_lines = int((hatch.count('-') + hatch.count('+')) * density)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from matplotlib import _api",
+      "from matplotlib.path import Path"
+    ],
+    "classes": [
+      "HatchPatternBase",
+      "HorizontalHatch",
+      "VerticalHatch",
+      "NorthEastHatch",
+      "SouthEastHatch",
+      "Shapes",
+      "Circles",
+      "SmallCircles",
+      "LargeCircles",
+      "SmallFilledCircles",
+      "Stars"
+    ],
+    "functions": [
+      "_validate_hatch_pattern",
+      "get_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_367_b5f10cd03431c8b9_AI_Chariot_Legacy_666_1.0.0_20260508_hatch.py.json"
+}

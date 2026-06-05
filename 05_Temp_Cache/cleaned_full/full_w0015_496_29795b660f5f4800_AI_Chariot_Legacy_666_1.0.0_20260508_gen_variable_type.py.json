@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 496,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gen_variable_type.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gen_variable_type.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 85963,
+  "content_sha256": "29795b660f5f48007db4d11dbe6f61633114d6fa661f30a1e5238f8765164eb9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2180,
+    "non_empty_lines": 2029,
+    "char_count": 85963,
+    "preview_lines": [
+      "# Generates VariableType.h/cpp",
+      "#",
+      "# **If any changes are being made to the VariableType codegen please also check",
+      "# if updates are needed in torch/csrc/autograd/autograd_not_implemented_fallback.cpp",
+      "#",
+      "# VariableType is a subclass of at::Type that provides the binding code",
+      "# necessary to provide a differentiable version of ATen operators. There are a",
+      "# number of different things we could mean:",
+      "#",
+      "#   - Given a non-differentiable forward implementation, we might"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re",
+      "from typing import Callable, Sequence",
+      "from torchgen.api import cpp",
+      "from torchgen.api.autograd import (",
+      "from torchgen.api.types import (",
+      "from torchgen.code_template import CodeTemplate",
+      "from torchgen.context import (",
+      "from torchgen.model import (",
+      "from torchgen.utils import FileManager, mapMaybe",
+      "from .context import with_native_function_with_differentiability_info_and_key",
+      "from .gen_inplace_or_view_type import (",
+      "from .gen_trace_type import ("
+    ],
+    "classes": [],
+    "functions": [
+      "gen_variable_type",
+      "gen_wrapper_registration",
+      "gen_variable_type_func",
+      "emit_body"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_496_29795b660f5f4800_AI_Chariot_Legacy_666_1.0.0_20260508_gen_variable_type.py.json"
+}

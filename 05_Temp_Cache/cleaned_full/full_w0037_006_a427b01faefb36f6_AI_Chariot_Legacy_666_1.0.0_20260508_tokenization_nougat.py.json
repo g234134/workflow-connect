@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 6,
+  "generated_at": "2026-05-08T18:46:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_nougat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_nougat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26091,
+  "content_sha256": "a427b01faefb36f650028917d2747bc9adea33b87fe4b698493e0e04dba7c24e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 660,
+    "non_empty_lines": 558,
+    "char_count": 26091,
+    "preview_lines": [
+      "# Copyright 2023 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import re",
+      "from functools import partial",
+      "from multiprocessing import Pool",
+      "import numpy as np",
+      "from tokenizers import Tokenizer, decoders, normalizers, pre_tokenizers, processors",
+      "from tokenizers.models import BPE",
+      "from ...tokenization_utils_tokenizers import TokenizersBackend",
+      "from ...utils import is_levenshtein_available, is_nltk_available, logging, requires_backends",
+      "from Levenshtein import ratio",
+      "import nltk"
+    ],
+    "classes": [
+      "NougatTokenizer"
+    ],
+    "functions": [
+      "markdown_compatible",
+      "normalize_list_like_lines",
+      "find_next_punctuation",
+      "truncate_repetitions",
+      "remove_numbers",
+      "get_slices",
+      "remove_slice_from_lines"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_006_a427b01faefb36f6_AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_nougat.py.json"
+}

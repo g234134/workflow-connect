@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 471,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_run_step_delta.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_run_step_delta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 741,
+  "content_sha256": "62970fbd79f006f969ead94c85c5861a30a036c29f88e255cc686cfadc8a7b65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 15,
+    "char_count": 741,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Union, Optional",
+      "from typing_extensions import Annotated, TypeAlias",
+      "from ....._utils import PropertyInfo",
+      "from ....._models import BaseModel",
+      "from .tool_call_delta_object import ToolCallDeltaObject",
+      "from .run_step_delta_message_delta import RunStepDeltaMessageDelta",
+      "__all__ = [\"RunStepDelta\", \"StepDetails\"]",
+      "StepDetails: TypeAlias = Annotated[",
+      "    Union[RunStepDeltaMessageDelta, ToolCallDeltaObject], PropertyInfo(discriminator=\"type\")"
+    ],
+    "imports": [
+      "from typing import Union, Optional",
+      "from typing_extensions import Annotated, TypeAlias",
+      "from ....._utils import PropertyInfo",
+      "from ....._models import BaseModel",
+      "from .tool_call_delta_object import ToolCallDeltaObject",
+      "from .run_step_delta_message_delta import RunStepDeltaMessageDelta"
+    ],
+    "classes": [
+      "RunStepDelta"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_471_62970fbd79f006f9_AI_Chariot_Legacy_666_1.0.0_20260508_run_step_delta.py.json"
+}

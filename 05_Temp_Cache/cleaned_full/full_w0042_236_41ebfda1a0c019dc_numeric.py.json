@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:47:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\core\\numeric.py",
+  "name": "numeric.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 372,
+  "content_sha256": "41ebfda1a0c019dc9b96b0e35570734d8d3af44f19f91dcf20e9c3a772ba5d16",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 10,
+    "char_count": 372,
+    "preview_lines": [
+      "def __getattr__(attr_name):",
+      "    from numpy._core import numeric",
+      "    from ._utils import _raise_warning",
+      "    sentinel = object()",
+      "    ret = getattr(numeric, attr_name, sentinel)",
+      "    if ret is sentinel:",
+      "        raise AttributeError(",
+      "            f\"module 'numpy.core.numeric' has no attribute {attr_name}\")",
+      "    _raise_warning(attr_name, \"numeric\")",
+      "    return ret"
+    ],
+    "imports": [
+      "from numpy._core import numeric",
+      "from ._utils import _raise_warning"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_236_41ebfda1a0c019dc_numeric.py.json"
+}

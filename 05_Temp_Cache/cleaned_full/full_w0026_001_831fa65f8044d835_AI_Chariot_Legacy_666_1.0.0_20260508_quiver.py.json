@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quiver.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quiver.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 48676,
+  "content_sha256": "831fa65f8044d8357512345031347fde3a9933c3438759e950e8b37400b2e224",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1228,
+    "non_empty_lines": 1018,
+    "char_count": 48667,
+    "preview_lines": [
+      "\"\"\"",
+      "Support for plotting vector fields.",
+      "Presently this contains Quiver and Barb. Quiver plots an arrow in the",
+      "direction of the vector, with the size of the arrow related to the",
+      "magnitude of the vector.",
+      "Barbs are like quiver in that they point along a vector, but",
+      "the magnitude of the vector is given schematically by the presence of barbs",
+      "or flags on the barb.",
+      "This will also become a home for things such as standard",
+      "deviation ellipses, which can and will be derived very easily from"
+    ],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from numpy import ma",
+      "from matplotlib import _api, cbook, _docstring",
+      "import matplotlib.artist as martist",
+      "import matplotlib.collections as mcollections",
+      "from matplotlib.patches import CirclePolygon",
+      "import matplotlib.text as mtext",
+      "import matplotlib.transforms as transforms"
+    ],
+    "classes": [
+      "QuiverKey",
+      "Quiver",
+      "Barbs"
+    ],
+    "functions": [
+      "_parse_args",
+      "_check_consistent_shapes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_001_831fa65f8044d835_AI_Chariot_Legacy_666_1.0.0_20260508_quiver.py.json"
+}

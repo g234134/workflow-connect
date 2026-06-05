@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llvmjitcode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llvmjitcode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17166,
+  "content_sha256": "af92b885fd56549bc006b775f9a973bf69c5dcc72e4eaf86cd213eee3f31aa9b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 491,
+    "non_empty_lines": 394,
+    "char_count": 17166,
+    "preview_lines": [
+      "'''",
+      "Use llvmlite to create executable functions from SymPy expressions",
+      "This module requires llvmlite (https://github.com/numba/llvmlite).",
+      "'''",
+      "import ctypes",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.core.singleton import S",
+      "from sympy.tensor.indexed import IndexedBase",
+      "from sympy.utilities.decorator import doctest_depends_on"
+    ],
+    "imports": [
+      "import ctypes",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.core.singleton import S",
+      "from sympy.tensor.indexed import IndexedBase",
+      "from sympy.utilities.decorator import doctest_depends_on"
+    ],
+    "classes": [
+      "LLVMJitPrinter",
+      "LLVMJitCallbackPrinter",
+      "LLVMJitCode",
+      "LLVMJitCodeCallback",
+      "CodeSignature"
+    ],
+    "functions": [
+      "_llvm_jit_code",
+      "llvm_callable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_291_af92b885fd56549b_AI_Chariot_Legacy_666_1.0.0_20260508_llvmjitcode.py.json"
+}

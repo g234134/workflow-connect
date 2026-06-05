@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 497,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gen_view_funcs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gen_view_funcs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11940,
+  "content_sha256": "00fac0656ca992d11b66be952cc575d8c1f96ec4e56eaec56623b7303cc062ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 288,
+    "char_count": 11940,
+    "preview_lines": [
+      "# Generates ViewFuncs.h/cpp",
+      "#",
+      "# NOTE: If any changes are being made to the ViewFunc codegen please also check",
+      "# if updates are needed in torch/csrc/autograd/autograd_not_implemented_fallback.cpp",
+      "# The fallback is expected to mimic this codegen, so we should keep the two in sync.",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "import torchgen.api.dispatcher as dispatcher",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "import torchgen.api.dispatcher as dispatcher",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import (",
+      "from torchgen.code_template import CodeTemplate",
+      "from torchgen.model import Argument, NativeFunction, OptionalType",
+      "from torchgen.utils import FileManager",
+      "from .gen_inplace_or_view_type import (",
+      "from torchgen.api.autograd import NativeFunctionWithDifferentiabilityInfo"
+    ],
+    "classes": [],
+    "functions": [
+      "view_func_name",
+      "is_symint_or_tensor",
+      "remove_const_ref",
+      "returns_multi_tensor",
+      "generate_state_getter_setter",
+      "process_function",
+      "gen_view_funcs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_497_00fac0656ca992d1_AI_Chariot_Legacy_666_1.0.0_20260508_gen_view_funcs.py.json"
+}

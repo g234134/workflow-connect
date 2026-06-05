@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:47:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\plotting\\pygletplot\\plot_rotation.py",
+  "name": "plot_rotation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1445,
+  "content_sha256": "2863024f2692879fd4403f45286088a68237f826db3a15f14dc8c0735a39f8f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 68,
+    "non_empty_lines": 46,
+    "char_count": 1445,
+    "preview_lines": [
+      "try:",
+      "    from ctypes import c_float",
+      "except ImportError:",
+      "    pass",
+      "import pyglet.gl as pgl",
+      "from math import sqrt as _sqrt, acos as _acos, pi",
+      "def cross(a, b):",
+      "    return (a[1] * b[2] - a[2] * b[1],",
+      "            a[2] * b[0] - a[0] * b[2],",
+      "            a[0] * b[1] - a[1] * b[0])"
+    ],
+    "imports": [
+      "from ctypes import c_float",
+      "import pyglet.gl as pgl",
+      "from math import sqrt as _sqrt, acos as _acos, pi"
+    ],
+    "classes": [],
+    "functions": [
+      "cross",
+      "dot",
+      "mag",
+      "norm",
+      "get_sphere_mapping",
+      "get_spherical_rotatation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_044_2863024f2692879f_plot_rotation.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_permission_delete_response.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_permission_delete_response.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 558,
+  "content_sha256": "5ff46e3afc5aea2df018b3f98e81e2c6fe2d34b529b8afb6ba68947fa3fb1daf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 11,
+    "char_count": 558,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "__all__ = [\"PermissionDeleteResponse\"]",
+      "class PermissionDeleteResponse(BaseModel):",
+      "    id: str",
+      "    \"\"\"The ID of the fine-tuned model checkpoint permission that was deleted.\"\"\"",
+      "    deleted: bool",
+      "    \"\"\"Whether the fine-tuned model checkpoint permission was successfully deleted.\"\"\"",
+      "    object: Literal[\"checkpoint.permission\"]"
+    ],
+    "imports": [
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel"
+    ],
+    "classes": [
+      "PermissionDeleteResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_066_5ff46e3afc5aea2d_AI_Chariot_Legacy_666_1.0.0_20260508_permission_delete_response.py.json"
+}

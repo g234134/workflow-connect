@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 244,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llama_edge.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llama_edge.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8596,
+  "content_sha256": "bec83319c4b9fc82685d5537c5d6e1901348d6132bbdd6246adaabd9251d82ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 241,
+    "non_empty_lines": 204,
+    "char_count": 8596,
+    "preview_lines": [
+      "import json",
+      "import logging",
+      "import re",
+      "from typing import Any, Dict, Iterator, List, Mapping, Optional, Type",
+      "import requests",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import (",
+      "    BaseChatModel,",
+      "    generate_from_stream,",
+      ")"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "import re",
+      "from typing import Any, Dict, Iterator, List, Mapping, Optional, Type",
+      "import requests",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import (",
+      "from langchain_core.messages import (",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.utils import get_pydantic_field_names",
+      "from pydantic import ConfigDict, model_validator"
+    ],
+    "classes": [
+      "LlamaEdgeChatService"
+    ],
+    "functions": [
+      "_convert_dict_to_message",
+      "_convert_message_to_dict",
+      "_convert_delta_to_message_chunk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_244_bec83319c4b9fc82_AI_Chariot_Legacy_666_1.0.0_20260508_llama_edge.py.json"
+}

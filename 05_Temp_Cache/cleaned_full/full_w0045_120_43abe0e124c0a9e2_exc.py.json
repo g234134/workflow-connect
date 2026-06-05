@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\exc.py",
+  "name": "exc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2801,
+  "content_sha256": "43abe0e124c0a9e2778bbafa78aca87903cfc7814ee36175ad87dc7e12a6050e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 72,
+    "char_count": 2801,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import tempfile",
+      "import textwrap",
+      "from functools import lru_cache",
+      "if os.environ.get(\"TORCHINDUCTOR_WRITE_MISSING_OPS\") == \"1\":",
+      "    @lru_cache(None)",
+      "    def _record_missing_op(target):",
+      "        with open(f\"{tempfile.gettempdir()}/missing_ops.txt\", \"a\") as fd:",
+      "            fd.write(str(target) + \"\\n\")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import tempfile",
+      "import textwrap",
+      "from functools import lru_cache",
+      "from . import config"
+    ],
+    "classes": [
+      "OperatorIssue",
+      "MissingOperatorWithoutDecomp",
+      "MissingOperatorWithDecomp",
+      "LoweringException",
+      "InvalidCxxCompiler",
+      "CppWrapperCodeGenError",
+      "CppCompileError",
+      "CUDACompileError"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_120_43abe0e124c0a9e2_exc.py.json"
+}

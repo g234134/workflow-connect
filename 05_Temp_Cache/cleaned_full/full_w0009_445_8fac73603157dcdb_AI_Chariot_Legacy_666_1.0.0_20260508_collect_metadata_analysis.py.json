@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 445,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_collect_metadata_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_collect_metadata_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40536,
+  "content_sha256": "8fac73603157dcdb243e877bf7dafc189dcfe4b0bf7542a91bbe04177312a278",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 749,
+    "non_empty_lines": 706,
+    "char_count": 40536,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"",
+      "This module is one of the analysis modules - it takes as input a function or graph",
+      "and some preexisting properties, and returns some data that is useful for deciding",
+      "how to further proceed with compilation or construct runtime wrappers.",
+      "In particular, the analysis here constructs view and mutation metadata from running",
+      "a functionalized version of the graph under compilation.",
+      "\"\"\"",
+      "import collections",
+      "import contextlib"
+    ],
+    "imports": [
+      "import collections",
+      "import contextlib",
+      "import logging",
+      "from functools import wraps",
+      "from typing import Callable, DefaultDict, Dict, List, Optional",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch import Tensor",
+      "from torch._guards import detect_fake_mode",
+      "from torch._logging import getArtifactLogger",
+      "from torch._subclasses.functional_tensor import FunctionalTensor, FunctionalTensorMode",
+      "from torch._subclasses.meta_utils import safe_is_leaf",
+      "from torch.fx.experimental.symbolic_shapes import is_concrete_int",
+      "from torch.multiprocessing.reductions import StorageWeakRef",
+      "from torch.utils._python_dispatch import (",
+      "from .functional_utils import (",
+      "from .schemas import (",
+      "from .subclass_utils import create_subclass_meta",
+      "from .utils import _get_autocast_states, KNOWN_TYPES, strict_zip"
+    ],
+    "classes": [],
+    "functions": [
+      "coerce_tangent",
+      "run_functionalized_fw_and_collect_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_445_8fac73603157dcdb_AI_Chariot_Legacy_666_1.0.0_20260508_collect_metadata_analysis.py.json"
+}

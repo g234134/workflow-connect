@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__species_distributions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__species_distributions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9669,
+  "content_sha256": "aadfea2167fddffb4b85914748c7f0ad883b02d10ba0b4741a740e7f32a31db8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 287,
+    "non_empty_lines": 230,
+    "char_count": 9669,
+    "preview_lines": [
+      "\"\"\"",
+      "=============================",
+      "Species distribution dataset",
+      "=============================",
+      "This dataset represents the geographic distribution of species.",
+      "The dataset is provided by Phillips et. al. (2006).",
+      "The two species are:",
+      " - `\"Bradypus variegatus\"",
+      "   <http://www.iucnredlist.org/details/3038/0>`_ ,",
+      "   the Brown-throated Sloth."
+    ],
+    "imports": [
+      "import logging",
+      "from io import BytesIO",
+      "from numbers import Integral, Real",
+      "from os import PathLike, remove",
+      "from os.path import exists",
+      "import joblib",
+      "import numpy as np",
+      "from sklearn.datasets import get_data_home",
+      "from sklearn.datasets._base import RemoteFileMetadata, _fetch_remote, _pkl_filepath",
+      "from sklearn.utils import Bunch",
+      "from sklearn.utils._param_validation import Interval, validate_params"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_coverage",
+      "_load_csv",
+      "construct_grids",
+      "fetch_species_distributions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_240_aadfea2167fddffb_AI_Chariot_Legacy_666_1.0.0_20260508__species_distributions.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 156,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chat_generation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chat_generation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5293,
+  "content_sha256": "2666673a72b24f566922590de141e66cc7d9f5c6467bc1b7a23091768743020d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 122,
+    "char_count": 5293,
+    "preview_lines": [
+      "\"\"\"Chat generation output classes.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Literal",
+      "from pydantic import model_validator",
+      "from langchain_core.messages import BaseMessage, BaseMessageChunk",
+      "from langchain_core.outputs.generation import Generation",
+      "from langchain_core.utils._merge import merge_dicts",
+      "if TYPE_CHECKING:",
+      "    from typing_extensions import Self",
+      "class ChatGeneration(Generation):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Literal",
+      "from pydantic import model_validator",
+      "from langchain_core.messages import BaseMessage, BaseMessageChunk",
+      "from langchain_core.outputs.generation import Generation",
+      "from langchain_core.utils._merge import merge_dicts",
+      "from typing_extensions import Self"
+    ],
+    "classes": [
+      "ChatGeneration",
+      "ChatGenerationChunk"
+    ],
+    "functions": [
+      "merge_chat_generation_chunks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_156_2666673a72b24f56_AI_Chariot_Legacy_666_1.0.0_20260508_chat_generation.py.json"
+}

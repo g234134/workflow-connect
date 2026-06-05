@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 449,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_partial.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_partial.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46554,
+  "content_sha256": "860014bdead83fd8d0f9468a513ba6bb2d546734078d6356b32ef663efa886cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1089,
+    "non_empty_lines": 981,
+    "char_count": 46554,
+    "preview_lines": [
+      "# --------------------------------------------------------------------------------",
+      "# The following code is adapted from a comment on GitHub in the pydantic/pydantic repository by silviumarcu.",
+      "# Source: https://github.com/pydantic/pydantic/issues/6381#issuecomment-1831607091",
+      "#",
+      "# This code is used in accordance with the repository's license, and this reference",
+      "# serves as an acknowledgment of the original author's contribution to this project.",
+      "# --------------------------------------------------------------------------------",
+      "from __future__ import annotations",
+      "import json",
+      "import re"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import re",
+      "import sys",
+      "import types",
+      "import warnings",
+      "from collections.abc import AsyncGenerator, Generator, Iterable",
+      "from copy import deepcopy",
+      "from functools import cache",
+      "from typing import (  # noqa: UP035",
+      "from jiter import from_json",
+      "from pydantic import BaseModel, create_model",
+      "from pydantic.fields import FieldInfo, PydanticUndefined",
+      "from instructor.mode import Mode",
+      "from instructor.utils import extract_json_from_stream, extract_json_from_stream_async",
+      "from instructor.dsl.json_tracker import JsonCompleteness, is_json_complete"
+    ],
+    "classes": [
+      "MakeFieldsOptional",
+      "PartialLiteralMixin",
+      "PartialBase",
+      "Partial"
+    ],
+    "functions": [
+      "remove_control_chars",
+      "process_potential_object",
+      "_build_partial_object",
+      "_build_partial_list",
+      "_process_generic_arg",
+      "_rebuild_generic_annotation",
+      "_make_field_optional"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_449_860014bdead83fd8_AI_Chariot_Legacy_666_1.0.0_20260508_partial.py.json"
+}

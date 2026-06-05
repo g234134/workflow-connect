@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 429,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_engines.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_engines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3462,
+  "content_sha256": "218c7af03d4428ac8cb31ab1573f54bd9bccfda89df8b10e28f43e7cb122bf95",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 151,
+    "non_empty_lines": 112,
+    "char_count": 3462,
+    "preview_lines": [
+      "\"\"\"",
+      "Engine classes for :func:`~pandas.eval`",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import abc",
+      "from typing import TYPE_CHECKING",
+      "from pandas.errors import NumExprClobberingError",
+      "from pandas.core.computation.align import (",
+      "    align_terms,",
+      "    reconstruct_object,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "from typing import TYPE_CHECKING",
+      "from pandas.errors import NumExprClobberingError",
+      "from pandas.core.computation.align import (",
+      "from pandas.core.computation.ops import (",
+      "from pandas.io.formats import printing",
+      "from pandas.core.computation.expr import Expr",
+      "import numexpr as ne"
+    ],
+    "classes": [
+      "AbstractEngine",
+      "NumExprEngine",
+      "PythonEngine"
+    ],
+    "functions": [
+      "_check_ne_builtin_clash"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_429_218c7af03d4428ac_AI_Chariot_Legacy_666_1.0.0_20260508_engines.py.json"
+}

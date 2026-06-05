@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_2_0_compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_2_0_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1678,
+  "content_sha256": "d11cc544adb9f78bb31502a996624ee6e32c443539beb0940f8fc0ecdc00736f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 37,
+    "char_count": 1678,
+    "preview_lines": [
+      "from os import path",
+      "import pickle",
+      "import numpy as np",
+      "class TestNumPy2Compatibility:",
+      "    data_dir = path.join(path.dirname(__file__), \"data\")",
+      "    filename = path.join(data_dir, \"numpy_2_0_array.pkl\")",
+      "    def test_importable__core_stubs(self):",
+      "        \"\"\"",
+      "        Checks if stubs for `numpy._core` are importable.",
+      "        \"\"\""
+    ],
+    "imports": [
+      "from os import path",
+      "import pickle",
+      "import numpy as np",
+      "from numpy._core.multiarray import _reconstruct",
+      "from numpy._core.umath import cos",
+      "from numpy._core._multiarray_umath import exp",
+      "from numpy._core._internal import ndarray",
+      "from numpy._core._dtype import _construction_repr",
+      "from numpy._core._dtype_ctypes import dtype_from_ctypes_type"
+    ],
+    "classes": [
+      "TestNumPy2Compatibility"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_115_d11cc544adb9f78b_AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_2_0_compat.py.json"
+}

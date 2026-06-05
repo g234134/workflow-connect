@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 290,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\retrievers\\document_compressors\\test_listwise_rerank.py",
+  "name": "test_listwise_rerank.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 360,
+  "content_sha256": "0d77bf1ef31692a19ab552f54febefaf71e47376b2ca722d31c722654df86e91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 11,
+    "char_count": 357,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_classic.retrievers.document_compressors.listwise_rerank import (",
+      "    LLMListwiseRerank,",
+      ")",
+      "@pytest.mark.requires(\"langchain_openai\")",
+      "def test__list_rerank_init() -> None:",
+      "    from langchain_openai import ChatOpenAI",
+      "    LLMListwiseRerank.from_llm(",
+      "        llm=ChatOpenAI(api_key=\"foo\"),",
+      "        top_n=10,"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_classic.retrievers.document_compressors.listwise_rerank import (",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [],
+    "functions": [
+      "test__list_rerank_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_290_0d77bf1ef31692a1_test_listwise_rerank.py.json"
+}

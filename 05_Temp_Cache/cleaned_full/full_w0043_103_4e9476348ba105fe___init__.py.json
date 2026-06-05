@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29422,
+  "content_sha256": "4e9476348ba105feab28d82f5bcf6cdba2e3e84de6e059bbfe7a13728c0a4ab0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 545,
+    "non_empty_lines": 479,
+    "char_count": 29422,
+    "preview_lines": [
+      "\"\"\"",
+      "SymPy is a Python library for symbolic mathematics. It aims to become a",
+      "full-featured computer algebra system (CAS) while keeping the code as simple",
+      "as possible in order to be comprehensible and easily extensible.  SymPy is",
+      "written entirely in Python. It depends on mpmath, and other external libraries",
+      "may be optionally for things like plotting support.",
+      "See the webpage for more information and documentation:",
+      "    https://sympy.org",
+      "\"\"\"",
+      "# Keep this in sync with setup.py/pyproject.toml"
+    ],
+    "imports": [
+      "import sys",
+      "import mpmath",
+      "from sympy.release import __version__",
+      "from sympy.core.cache import lazy_function",
+      "import warnings",
+      "import os",
+      "from .core import (sympify, SympifyError, cacheit, Basic, Atom,",
+      "from .logic import (to_cnf, to_dnf, to_nnf, And, Or, Not, Xor, Nand, Nor,",
+      "from .assumptions import (AppliedPredicate, Predicate, AssumptionsContext,",
+      "from .polys import (Poly, PurePoly, poly_from_expr, parallel_poly_from_expr,",
+      "from .series import (Order, O, limit, Limit, gruntz, series, approximants,",
+      "from .functions import (factorial, factorial2, rf, ff, binomial,",
+      "from .ntheory import (nextprime, prevprime, prime, primerange,",
+      "from .concrete import product, Product, summation, Sum",
+      "from .discrete import (fft, ifft, ntt, intt, fwht, ifwht, mobius_transform,",
+      "from .simplify import (simplify, hypersimp, hypersimilar, logcombine,",
+      "from .sets import (Set, Interval, Union, EmptySet, FiniteSet, ProductSet,",
+      "from .solvers import (solve, solve_linear_system, solve_linear_system_LU,",
+      "from .matrices import (ShapeError, NonSquareMatrixError, GramSchmidt,"
+    ],
+    "classes": [],
+    "functions": [
+      "__sympy_debug"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_103_4e9476348ba105fe___init__.py.json"
+}

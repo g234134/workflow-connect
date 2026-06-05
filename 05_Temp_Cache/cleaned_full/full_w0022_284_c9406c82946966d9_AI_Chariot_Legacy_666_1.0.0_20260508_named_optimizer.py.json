@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_named_optimizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_named_optimizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14374,
+  "content_sha256": "c9406c82946966d9cfd8108a6164a54d1cc9fddfb311a24ee59e2751ad01ddda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 341,
+    "non_empty_lines": 297,
+    "char_count": 14374,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "import warnings",
+      "from copy import deepcopy",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Collection,",
+      "    Dict,",
+      "    List,"
+    ],
+    "imports": [
+      "import logging",
+      "import warnings",
+      "from copy import deepcopy",
+      "from typing import (",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch import optim",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed.fsdp import FullyShardedDataParallel as FSDP"
+    ],
+    "classes": [
+      "_NamedOptimizer"
+    ],
+    "functions": [
+      "_gen_param_group_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_284_c9406c82946966d9_AI_Chariot_Legacy_666_1.0.0_20260508_named_optimizer.py.json"
+}

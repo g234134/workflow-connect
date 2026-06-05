@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\multiprocessing\\queue.py",
+  "name": "queue.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1492,
+  "content_sha256": "48dd76e81fec67f47885d4ef70c7bb3fe1743d6a8cc7a7466403c82e6b0e5807",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 32,
+    "char_count": 1492,
+    "preview_lines": [
+      "import io",
+      "import multiprocessing.queues",
+      "import pickle",
+      "from multiprocessing.reduction import ForkingPickler",
+      "class ConnectionWrapper:",
+      "    \"\"\"Proxy class for _multiprocessing.Connection which uses ForkingPickler for object serialization.\"\"\"",
+      "    def __init__(self, conn):",
+      "        self.conn = conn",
+      "    def send(self, obj):",
+      "        buf = io.BytesIO()"
+    ],
+    "imports": [
+      "import io",
+      "import multiprocessing.queues",
+      "import pickle",
+      "from multiprocessing.reduction import ForkingPickler"
+    ],
+    "classes": [
+      "ConnectionWrapper",
+      "Queue",
+      "SimpleQueue"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_222_48dd76e81fec67f4_queue.py.json"
+}

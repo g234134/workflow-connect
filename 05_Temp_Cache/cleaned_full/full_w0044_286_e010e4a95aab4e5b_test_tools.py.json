@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 286,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\strategies\\branch\\tests\\test_tools.py",
+  "name": "test_tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 942,
+  "content_sha256": "e010e4a95aab4e5b22bd0d0f95d42be8f8d566c02291cdfdb52c460100378abf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 32,
+    "char_count": 942,
+    "preview_lines": [
+      "from sympy.strategies.branch.tools import canon",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.singleton import S",
+      "def posdec(x):",
+      "    if isinstance(x, Integer) and x > 0:",
+      "        yield x - 1",
+      "    else:",
+      "        yield x",
+      "def branch5(x):"
+    ],
+    "imports": [
+      "from sympy.strategies.branch.tools import canon",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.singleton import S"
+    ],
+    "classes": [],
+    "functions": [
+      "posdec",
+      "branch5",
+      "test_zero_ints",
+      "test_split5"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_286_e010e4a95aab4e5b_test_tools.py.json"
+}

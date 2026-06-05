@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\optim\\post_localSGD_optimizer.py",
+  "name": "post_localSGD_optimizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4496,
+  "content_sha256": "57a5f37210c682d127f14ac007a1909aa2889e14ffe01bf1fd206a4ff00b6936",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 94,
+    "char_count": 4496,
+    "preview_lines": [
+      "import warnings",
+      "import torch",
+      "import torch.distributed.algorithms.model_averaging.averagers as averagers",
+      "class PostLocalSGDOptimizer(torch.optim.Optimizer):",
+      "    r\"\"\"",
+      "    Wraps an arbitrary :class:`torch.optim.Optimizer` and runs `post-local SGD <https://arxiv.org/abs/1808.07217>`_,",
+      "    This optimizer runs local optimizer at every step.",
+      "    After the warm-up stage, it averages parameters periodically afer the local optimizer is applied.",
+      "    Args:",
+      "        optim: The local optimizer."
+    ],
+    "imports": [
+      "import warnings",
+      "import torch",
+      "import torch.distributed.algorithms.model_averaging.averagers as averagers"
+    ],
+    "classes": [
+      "PostLocalSGDOptimizer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_194_57a5f37210c682d1_post_localSGD_optimizer.py.json"
+}

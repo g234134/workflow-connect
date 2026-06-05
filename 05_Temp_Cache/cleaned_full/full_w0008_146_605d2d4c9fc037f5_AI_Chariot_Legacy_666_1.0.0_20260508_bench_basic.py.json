@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 146,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bench_basic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bench_basic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 210,
+  "content_sha256": "605d2d4c9fc037f5b3d75aa27733386c8865c04844a9573e206546ad4c7a49a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 8,
+    "char_count": 210,
+    "preview_lines": [
+      "from sympy.core import symbols, S",
+      "x, y = symbols('x,y')",
+      "def timeit_Symbol_meth_lookup():",
+      "    x.diff  # no call, just method lookup",
+      "def timeit_S_lookup():",
+      "    S.Exp1",
+      "def timeit_Symbol_eq_xy():",
+      "    x == y"
+    ],
+    "imports": [
+      "from sympy.core import symbols, S"
+    ],
+    "classes": [],
+    "functions": [
+      "timeit_Symbol_meth_lookup",
+      "timeit_S_lookup",
+      "timeit_Symbol_eq_xy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_146_605d2d4c9fc037f5_AI_Chariot_Legacy_666_1.0.0_20260508_bench_basic.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 207,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_code.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_code.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2518,
+  "content_sha256": "25d108833f3cebe83187e24fd714be52dd53815eb0d2fcdc7bae56d25457734b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 77,
+    "char_count": 2518,
+    "preview_lines": [
+      "import pytest",
+      "from tests_python.debugger_unittest import IS_PY36_OR_GREATER, IS_CPYTHON",
+      "from tests_python.debug_constants import TEST_CYTHON",
+      "pytestmark = pytest.mark.skipif(not IS_PY36_OR_GREATER or not IS_CPYTHON or not TEST_CYTHON, reason=\"Requires CPython >= 3.6\")",
+      "import unittest",
+      "from _pydevd_frame_eval.vendored.bytecode import ConcreteBytecode, Bytecode, ControlFlowGraph",
+      "from _pydevd_frame_eval.vendored.bytecode.tests import get_code",
+      "class CodeTests(unittest.TestCase):",
+      "    \"\"\"Check that bytecode.from_code(code).to_code() returns code.\"\"\"",
+      "    def check(self, source, function=False):"
+    ],
+    "imports": [
+      "import pytest",
+      "from tests_python.debugger_unittest import IS_PY36_OR_GREATER, IS_CPYTHON",
+      "from tests_python.debug_constants import TEST_CYTHON",
+      "import unittest",
+      "from _pydevd_frame_eval.vendored.bytecode import ConcreteBytecode, Bytecode, ControlFlowGraph",
+      "from _pydevd_frame_eval.vendored.bytecode.tests import get_code"
+    ],
+    "classes": [
+      "CodeTests"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_207_25d108833f3cebe8_AI_Chariot_Legacy_666_1.0.0_20260508_test_code.py.json"
+}

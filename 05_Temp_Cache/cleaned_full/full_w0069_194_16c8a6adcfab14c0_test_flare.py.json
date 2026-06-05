@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\test_flare.py",
+  "name": "test_flare.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1719,
+  "content_sha256": "16c8a6adcfab14c08536b50c9bbc1406145a552295f744d13fe2a27029fc5648",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 36,
+    "char_count": 1716,
+    "preview_lines": [
+      "\"\"\"Tests for FlareChain.from_llm preserving supplied ChatOpenAI instance.\"\"\"",
+      "from typing import cast",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever",
+      "from langchain_core.runnables import RunnableSequence",
+      "from langchain_classic.chains.flare.base import FlareChain",
+      "class _EmptyRetriever(BaseRetriever):",
+      "    \"\"\"Minimal no-op retriever used only for constructing FlareChain in tests.\"\"\"",
+      "    def _get_relevant_documents(self, query: str) -> list[Document]:  # type: ignore[override]"
+    ],
+    "imports": [
+      "from typing import cast",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever",
+      "from langchain_core.runnables import RunnableSequence",
+      "from langchain_classic.chains.flare.base import FlareChain",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [
+      "_EmptyRetriever"
+    ],
+    "functions": [
+      "test_from_llm_rejects_non_chatopenai",
+      "test_from_llm_uses_supplied_chatopenai"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_194_16c8a6adcfab14c0_test_flare.py.json"
+}

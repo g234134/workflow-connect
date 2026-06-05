@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 15,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_shard\\sharding_spec\\chunk_sharding_spec_ops\\_common.py",
+  "name": "_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13395,
+  "content_sha256": "b6b5eff7be3e623f57d2c50d222b1f0169d95ea6c014eb2e8b9928e359c8d0d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 349,
+    "non_empty_lines": 310,
+    "char_count": 13387,
+    "preview_lines": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharded_tensor._ops._common import _sharded_op_common",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec._internals import (",
+      "    get_chunk_sharding_params,",
+      "    get_chunked_dim_size,",
+      "    get_split_size,",
+      ")"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharded_tensor._ops._common import _sharded_op_common",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec._internals import (",
+      "from torch.distributed._shard.sharding_spec.api import custom_sharding_spec_op",
+      "from torch.distributed.nn.functional import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_chunk_sharding_spec_check",
+      "_register_sharded_op_on_local_tensor",
+      "_handle_col_wise_sharding_base",
+      "_result_distribute_with_col_rearrange",
+      "_handle_max_norm_col_wise",
+      "_all_gather_base_input",
+      "_handle_row_wise_mask"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_015_b6b5eff7be3e623f__common.py.json"
+}

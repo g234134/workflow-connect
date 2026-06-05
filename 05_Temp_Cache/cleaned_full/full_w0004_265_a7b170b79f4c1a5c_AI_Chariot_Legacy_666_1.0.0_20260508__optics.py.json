@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__optics.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__optics.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46188,
+  "content_sha256": "a7b170b79f4c1a5c4d60f5f4dcad11a49a2040a333e8eee6a8d59fc2577ae562",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1202,
+    "non_empty_lines": 1022,
+    "char_count": 46186,
+    "preview_lines": [
+      "\"\"\"Ordering Points To Identify the Clustering Structure (OPTICS)",
+      "These routines execute the OPTICS algorithm, and implement various",
+      "cluster extraction methods of the ordered list.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from scipy.sparse import SparseEfficiencyWarning, issparse"
+    ],
+    "imports": [
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from scipy.sparse import SparseEfficiencyWarning, issparse",
+      "from sklearn.base import BaseEstimator, ClusterMixin, _fit_context",
+      "from sklearn.exceptions import DataConversionWarning",
+      "from sklearn.metrics import pairwise_distances",
+      "from sklearn.metrics.pairwise import _VALID_METRICS, PAIRWISE_BOOLEAN_FUNCTIONS",
+      "from sklearn.neighbors import NearestNeighbors",
+      "from sklearn.utils import gen_batches",
+      "from sklearn.utils._chunking import get_chunk_n_rows",
+      "from sklearn.utils._param_validation import (",
+      "from sklearn.utils.validation import check_memory, validate_data",
+      "from them [1]_. Unlike DBSCAN, it keeps cluster hierarchy for a variable"
+    ],
+    "classes": [
+      "OPTICS"
+    ],
+    "functions": [
+      "_validate_size",
+      "_compute_core_distances_",
+      "compute_optics_graph",
+      "_set_reach_dist",
+      "cluster_optics_dbscan",
+      "cluster_optics_xi",
+      "_extend_region",
+      "_update_filter_sdas",
+      "_correct_predecessor",
+      "_xi_cluster",
+      "_extract_xi_labels"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_265_a7b170b79f4c1a5c_AI_Chariot_Legacy_666_1.0.0_20260508__optics.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_getattr_static.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_getattr_static.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4078,
+  "content_sha256": "6dd02bb06bb40cd279e00e0b8575114ddae681d2a829378ad8c00f33f194db70",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 99,
+    "char_count": 4078,
+    "preview_lines": [
+      "\"\"\"",
+      "A static version of getattr.",
+      "This is a backport of the Python 3 code with a little bit of additional",
+      "information returned to enable Jedi to make decisions.",
+      "\"\"\"",
+      "import types",
+      "from jedi import debug",
+      "_sentinel = object()",
+      "def _check_instance(obj, attr):",
+      "    instance_dict = {}"
+    ],
+    "imports": [
+      "import types",
+      "from jedi import debug"
+    ],
+    "classes": [],
+    "functions": [
+      "_check_instance",
+      "_check_class",
+      "_is_type",
+      "_shadowed_dict",
+      "_static_getmro",
+      "_safe_hasattr",
+      "_safe_is_data_descriptor",
+      "getattr_static"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_086_6dd02bb06bb40cd2_AI_Chariot_Legacy_666_1.0.0_20260508_getattr_static.py.json"
+}

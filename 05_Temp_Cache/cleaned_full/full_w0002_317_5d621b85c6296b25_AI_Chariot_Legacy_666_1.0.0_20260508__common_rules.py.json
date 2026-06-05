@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__common_rules.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__common_rules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12312,
+  "content_sha256": "5d621b85c6296b25680d383bcf734f48e53ad42f0b72086a25271a66224b3f58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 288,
+    "non_empty_lines": 260,
+    "char_count": 12312,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "from typing import cast, Dict, List, Optional, Tuple",
+      "import torch",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta",
+      "from torch.distributed.tensor._op_schema import (",
+      "    _is_inplace_op,",
+      "    _is_out_variant_op,",
+      "    OpSchema,",
+      "    OutputSharding,",
+      ")"
+    ],
+    "imports": [
+      "from typing import cast, Dict, List, Optional, Tuple",
+      "import torch",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta",
+      "from torch.distributed.tensor._op_schema import (",
+      "from torch.distributed.tensor._ops.utils import prod",
+      "from torch.distributed.tensor._utils import compute_local_shape"
+    ],
+    "classes": [],
+    "functions": [
+      "_replace_char_in_str",
+      "_gen_reshard_suggestions",
+      "einop_rule",
+      "pointwise_rule"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_317_5d621b85c6296b25_AI_Chariot_Legacy_666_1.0.0_20260508__common_rules.py.json"
+}

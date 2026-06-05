@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_find_common_type.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_find_common_type.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5226,
+  "content_sha256": "73ffc66e09d16b0c20a96badf20e50f76f1e9fcfbf3b7a136444156ea43c32b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 148,
+    "char_count": 5226,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas.core.dtypes.cast import find_common_type",
+      "from pandas.core.dtypes.common import pandas_dtype",
+      "from pandas.core.dtypes.dtypes import (",
+      "    CategoricalDtype,",
+      "    DatetimeTZDtype,",
+      "    IntervalDtype,",
+      "    PeriodDtype,",
+      ")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas.core.dtypes.cast import find_common_type",
+      "from pandas.core.dtypes.common import pandas_dtype",
+      "from pandas.core.dtypes.dtypes import (",
+      "from pandas import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_numpy_dtypes",
+      "test_raises_empty_input",
+      "test_categorical_dtype",
+      "test_datetimetz_dtype_match",
+      "test_datetimetz_dtype_mismatch",
+      "test_period_dtype_match",
+      "test_period_dtype_mismatch",
+      "test_interval_dtype",
+      "test_interval_dtype_with_categorical"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_275_73ffc66e09d16b0c_AI_Chariot_Legacy_666_1.0.0_20260508_test_find_common_type.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_inverse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_inverse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2963,
+  "content_sha256": "e14c201d64881e012828e9e239b90294c60df43acedb1372bce4954e85d2a63f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 87,
+    "char_count": 2963,
+    "preview_lines": [
+      "from sympy.core.sympify import _sympify",
+      "from sympy.core import S, Basic",
+      "from sympy.matrices.exceptions import NonSquareMatrixError",
+      "from sympy.matrices.expressions.matpow import MatPow",
+      "class Inverse(MatPow):",
+      "    \"\"\"",
+      "    The multiplicative inverse of a matrix expression",
+      "    This is a symbolic object that simply stores its argument without",
+      "    evaluating it. To actually compute the inverse, use the ``.inverse()``",
+      "    method of matrices."
+    ],
+    "imports": [
+      "from sympy.core.sympify import _sympify",
+      "from sympy.core import S, Basic",
+      "from sympy.matrices.exceptions import NonSquareMatrixError",
+      "from sympy.matrices.expressions.matpow import MatPow",
+      "from sympy.matrices.expressions.determinant import det",
+      "from sympy.assumptions.ask import ask, Q",
+      "from sympy.assumptions.refine import handlers_dict"
+    ],
+    "classes": [
+      "Inverse"
+    ],
+    "functions": [
+      "refine_Inverse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_167_e14c201d64881e01_AI_Chariot_Legacy_666_1.0.0_20260508_inverse.py.json"
+}

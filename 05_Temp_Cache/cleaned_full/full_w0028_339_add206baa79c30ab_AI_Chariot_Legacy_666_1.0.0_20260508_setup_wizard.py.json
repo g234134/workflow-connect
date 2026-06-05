@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 339,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_setup_wizard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_setup_wizard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24938,
+  "content_sha256": "add206baa79c30ab201c8332fd4c45d5316e3bdc041c6cb89debe5f2589b55c5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 668,
+    "non_empty_lines": 576,
+    "char_count": 23492,
+    "preview_lines": [
+      "# ruff: noqa: T201",
+      "# flake8: noqa: T201",
+      "\"\"\"",
+      "LiteLLM Interactive Setup Wizard",
+      "Guides users through selecting LLM providers, entering API keys,",
+      "and generating a proxy config file — mirroring the Claude Code onboarding UX.",
+      "\"\"\"",
+      "import importlib.metadata",
+      "import os",
+      "import re"
+    ],
+    "imports": [
+      "import importlib.metadata",
+      "import os",
+      "import re",
+      "import secrets",
+      "import sys",
+      "import sysconfig",
+      "from pathlib import Path",
+      "from typing import Dict, List, Optional, Set",
+      "import termios",
+      "import tty",
+      "from litellm.utils import check_valid_key"
+    ],
+    "classes": [
+      "SetupWizard"
+    ],
+    "functions": [
+      "_supports_color",
+      "_c",
+      "orange",
+      "bold",
+      "green",
+      "blue",
+      "grey",
+      "dim",
+      "_divider",
+      "_styled_input",
+      "_yaml_escape",
+      "run_setup_wizard"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_339_add206baa79c30ab_AI_Chariot_Legacy_666_1.0.0_20260508_setup_wizard.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 110,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\fastapi\\applications.py",
+  "name": "applications.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 181470,
+  "content_sha256": "d57244e4ba9620b98a17820dd029da34d02adaf47bc988401b5241ba46c6703b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 4691,
+    "non_empty_lines": 4036,
+    "char_count": 181467,
+    "preview_lines": [
+      "from collections.abc import Awaitable, Callable, Coroutine, Sequence",
+      "from enum import Enum",
+      "from typing import Annotated, Any, TypeVar",
+      "from annotated_doc import Doc",
+      "from fastapi import routing",
+      "from fastapi.datastructures import Default, DefaultPlaceholder",
+      "from fastapi.exception_handlers import (",
+      "    http_exception_handler,",
+      "    request_validation_exception_handler,",
+      "    websocket_request_validation_exception_handler,"
+    ],
+    "imports": [
+      "from collections.abc import Awaitable, Callable, Coroutine, Sequence",
+      "from enum import Enum",
+      "from typing import Annotated, Any, TypeVar",
+      "from annotated_doc import Doc",
+      "from fastapi import routing",
+      "from fastapi.datastructures import Default, DefaultPlaceholder",
+      "from fastapi.exception_handlers import (",
+      "from fastapi.exceptions import RequestValidationError, WebSocketRequestValidationError",
+      "from fastapi.logger import logger",
+      "from fastapi.middleware.asyncexitstack import AsyncExitStackMiddleware",
+      "from fastapi.openapi.docs import (",
+      "from fastapi.openapi.utils import get_openapi",
+      "from fastapi.params import Depends",
+      "from fastapi.types import DecoratedCallable, IncEx",
+      "from fastapi.utils import generate_unique_id",
+      "from starlette.applications import Starlette",
+      "from starlette.datastructures import State",
+      "from starlette.exceptions import HTTPException",
+      "from starlette.middleware import Middleware",
+      "from starlette.middleware.base import BaseHTTPMiddleware"
+    ],
+    "classes": [
+      "FastAPI"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_110_d57244e4ba9620b9_applications.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\frozen_linear_folding.h",
+  "name": "frozen_linear_folding.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 384,
+  "content_sha256": "af73c5f28f3d09ff5f0fa0e45e8ace29ca745243e5ae1f78f2abe81e96c9be84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 10,
+    "char_count": 384,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Fuses Linear -> BatchNormNd into a single Linear by",
+      "// folding batchnorm weights into linear weights.",
+      "// This pass only works on Frozen Graphs; otherwise it is a No-Op.",
+      "TORCH_API bool FoldFrozenLinearBatchnorm(std::shared_ptr<Graph>& graph);",
+      "} // namespace jit",
+      "} // namespace torch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_357_af73c5f28f3d09ff_frozen_linear_folding.h.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 361,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rendezvous.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rendezvous.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10147,
+  "content_sha256": "4ba4b4a01ea17c645cebbc3a07197d041dbfddad59f9f43399cdffd39e7af7c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 281,
+    "non_empty_lines": 215,
+    "char_count": 10147,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "try:",
+      "    from urllib.parse import urlparse, urlunparse",
+      "except ImportError as e:",
+      "    raise ImportError(",
+      "        \"urllib cannot be found, urlparse from python2 is no longer supported.\"",
+      "    ) from e",
+      "import numbers",
+      "import os",
+      "import sys"
+    ],
+    "imports": [
+      "from urllib.parse import urlparse, urlunparse",
+      "import numbers",
+      "import os",
+      "import sys",
+      "from datetime import timedelta",
+      "from typing import Callable, Dict, Iterator, Optional, Tuple",
+      "from torch.distributed import FileStore, PrefixStore, Store, TCPStore",
+      "from .constants import default_pg_timeout",
+      "import urllib.request"
+    ],
+    "classes": [],
+    "functions": [
+      "register_rendezvous_handler",
+      "_query_to_dict",
+      "_get_use_libuv_from_query_dict",
+      "_rendezvous_helper",
+      "rendezvous",
+      "_create_store_from_options",
+      "_rendezvous_error",
+      "_file_rendezvous_handler",
+      "_torchelastic_use_agent_store",
+      "_create_c10d_store",
+      "_tcp_rendezvous_handler",
+      "_env_rendezvous_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_361_4ba4b4a01ea17c64_AI_Chariot_Legacy_666_1.0.0_20260508_rendezvous.py.json"
+}

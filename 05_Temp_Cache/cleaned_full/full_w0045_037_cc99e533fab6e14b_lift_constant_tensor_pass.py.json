@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\passes\\lift_constant_tensor_pass.py",
+  "name": "lift_constant_tensor_pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2820,
+  "content_sha256": "cc99e533fab6e14bba457e2f5b8b6ade9503c171b3007e02e2d9b90a97f13b89",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 58,
+    "char_count": 2820,
+    "preview_lines": [
+      "from typing import Dict",
+      "import torch",
+      "from torch._guards import detect_fake_mode",
+      "from torch.export.exported_program import InputKind, InputSpec, TensorArgument",
+      "def lift_constant_tensor_pass(gm, graph_signature) -> Dict[str, torch.Tensor]:",
+      "    \"\"\"",
+      "    Takes an ExportedProgram and returns the ExportedProgram modified in-place,",
+      "    with the constant tensors as buffers.",
+      "    \"\"\"",
+      "    if len([node for node in gm.graph.nodes if node.op == \"placeholder\"]) == 0:"
+    ],
+    "imports": [
+      "from typing import Dict",
+      "import torch",
+      "from torch._guards import detect_fake_mode",
+      "from torch.export.exported_program import InputKind, InputSpec, TensorArgument"
+    ],
+    "classes": [],
+    "functions": [
+      "lift_constant_tensor_pass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_037_cc99e533fab6e14b_lift_constant_tensor_pass.py.json"
+}

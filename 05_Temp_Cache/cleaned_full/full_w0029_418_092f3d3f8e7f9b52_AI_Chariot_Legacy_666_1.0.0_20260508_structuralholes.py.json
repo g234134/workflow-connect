@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_structuralholes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_structuralholes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9342,
+  "content_sha256": "092f3d3f8e7f9b52461469d2180f85942db19edd0162adcee64cb5ce48d81032",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 283,
+    "non_empty_lines": 222,
+    "char_count": 9338,
+    "preview_lines": [
+      "\"\"\"Functions for computing measures of structural holes.\"\"\"",
+      "import networkx as nx",
+      "__all__ = [\"constraint\", \"local_constraint\", \"effective_size\"]",
+      "@nx._dispatchable(edge_attrs=\"weight\")",
+      "def mutual_weight(G, u, v, weight=None):",
+      "    \"\"\"Returns the sum of the weights of the edge from `u` to `v` and",
+      "    the edge from `v` to `u` in `G`.",
+      "    `weight` is the edge data key that represents the edge weight. If",
+      "    the specified key is `None` or is not in the edge data for an edge,",
+      "    that edge is assumed to have weight 1."
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "mutual_weight",
+      "normalized_mutual_weight",
+      "effective_size",
+      "constraint",
+      "local_constraint"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_418_092f3d3f8e7f9b52_AI_Chariot_Legacy_666_1.0.0_20260508_structuralholes.py.json"
+}

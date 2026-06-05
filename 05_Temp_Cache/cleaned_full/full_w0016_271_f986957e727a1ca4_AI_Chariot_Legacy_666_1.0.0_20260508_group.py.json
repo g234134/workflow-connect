@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 271,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_group.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_group.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27960,
+  "content_sha256": "f986957e727a1ca4fa6f53fe221c942ad26f5e4d194a70b6273e173fa8639321",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 787,
+    "non_empty_lines": 663,
+    "char_count": 27956,
+    "preview_lines": [
+      "\"\"\"Group centrality measures.\"\"\"",
+      "from copy import deepcopy",
+      "import networkx as nx",
+      "from networkx.algorithms.centrality.betweenness import (",
+      "    _accumulate_endpoints,",
+      "    _single_source_dijkstra_path_basic,",
+      "    _single_source_shortest_path_basic,",
+      ")",
+      "from networkx.utils.decorators import not_implemented_for",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from copy import deepcopy",
+      "import networkx as nx",
+      "from networkx.algorithms.centrality.betweenness import (",
+      "from networkx.utils.decorators import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "group_betweenness_centrality",
+      "_group_preprocessing",
+      "prominent_group",
+      "_dfbnb",
+      "_heuristic",
+      "group_closeness_centrality",
+      "group_degree_centrality",
+      "group_in_degree_centrality",
+      "group_out_degree_centrality"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_271_f986957e727a1ca4_AI_Chariot_Legacy_666_1.0.0_20260508_group.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 373,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\selective_build\\operator.py",
+  "name": "operator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6677,
+  "content_sha256": "a90475e7859573d61afa0b39cb747f76a74eaf24db5cff4e91b873fd1c245a66",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 170,
+    "non_empty_lines": 141,
+    "char_count": 6677,
+    "preview_lines": [
+      "from dataclasses import dataclass",
+      "from typing import Dict, Optional, Tuple",
+      "# This class holds information about a single operator used to determine",
+      "# the outcome of a selective/custom PyTorch build that doesn't include",
+      "# registration code for all the supported operators. This is done to",
+      "# reduce the size of the generated binary so that it can be deployed in",
+      "# situations where binary size comes at a premium.",
+      "#",
+      "@dataclass(frozen=True)",
+      "class SelectiveBuildOperator:"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from typing import Dict, Optional, Tuple"
+    ],
+    "classes": [
+      "SelectiveBuildOperator"
+    ],
+    "functions": [
+      "merge_debug_info",
+      "combine_operators",
+      "merge_operator_dicts",
+      "strip_operator_overload_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_373_a90475e7859573d6_operator.py.json"
+}

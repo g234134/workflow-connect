@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 447,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__decomp_qz.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__decomp_qz.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16779,
+  "content_sha256": "44cc57ee92f236e161bd32b0467b9a47436b685c2e661bc2f0306520f73c2384",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 449,
+    "non_empty_lines": 375,
+    "char_count": 16779,
+    "preview_lines": [
+      "import warnings",
+      "import numpy as np",
+      "from numpy import asarray_chkfinite",
+      "from ._misc import LinAlgError, _datacopied, LinAlgWarning",
+      "from .lapack import get_lapack_funcs",
+      "__all__ = ['qz', 'ordqz']",
+      "_double_precision = ['i', 'l', 'd']",
+      "def _select_function(sort):",
+      "    if callable(sort):",
+      "        # assume the user knows what they're doing"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from numpy import asarray_chkfinite",
+      "from ._misc import LinAlgError, _datacopied, LinAlgWarning",
+      "from .lapack import get_lapack_funcs"
+    ],
+    "classes": [],
+    "functions": [
+      "_select_function",
+      "_lhp",
+      "_rhp",
+      "_iuc",
+      "_ouc",
+      "_qz",
+      "qz",
+      "ordqz"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_447_44cc57ee92f236e1_AI_Chariot_Legacy_666_1.0.0_20260508__decomp_qz.py.json"
+}

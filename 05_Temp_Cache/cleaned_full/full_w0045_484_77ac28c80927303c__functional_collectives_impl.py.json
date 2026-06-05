@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 484,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_functional_collectives_impl.py",
+  "name": "_functional_collectives_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12796,
+  "content_sha256": "77ac28c80927303c557a8998330316c13972ef9f9abcc2a31a043ad0cc4f67ec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 343,
+    "non_empty_lines": 281,
+    "char_count": 12796,
+    "preview_lines": [
+      "import logging",
+      "import warnings",
+      "import weakref",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from typing import List, Optional, cast",
+      "\"\"\"",
+      "Moved eager kernel implementations to a separate file partly for readability and partly as it is currently",
+      "easier in dynamo to set tracing policy on a file-by-file level."
+    ],
+    "imports": [
+      "import logging",
+      "import warnings",
+      "import weakref",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from typing import List, Optional, cast"
+    ],
+    "classes": [
+      "_WaitRegistration"
+    ],
+    "functions": [
+      "_register_tensor_work",
+      "_wait_reg_dec",
+      "_register_tensor_wrapper",
+      "_wait_tensor",
+      "_tensor_needs_wait",
+      "_outstanding_wait_count",
+      "_wait_all",
+      "_str_to_reduce_op",
+      "_broadcast",
+      "_all_reduce",
+      "_all_reduce_coalesced",
+      "_all_gather_into_tensor",
+      "_all_gather_into_tensor_coalesced",
+      "_reduce_scatter_tensor",
+      "_reduce_scatter_tensor_coalesced",
+      "_all_gather_into_tensor_coalesced_fallback",
+      "_reduce_scatter_tensor_coalesced_fallback",
+      "_all_to_all_single"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_484_77ac28c80927303c__functional_collectives_impl.py.json"
+}

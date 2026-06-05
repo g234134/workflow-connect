@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 323,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_adjoint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_adjoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1065,
+  "content_sha256": "73139cdf7e3235223d31ace11bd1d3f2cd4e0978e40d6af7663d899f21d2dd9e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 23,
+    "char_count": 1065,
+    "preview_lines": [
+      "from sympy.core import symbols, S",
+      "from sympy.functions import adjoint, conjugate, transpose",
+      "from sympy.matrices.expressions import MatrixSymbol, Adjoint, trace, Transpose",
+      "from sympy.matrices import eye, Matrix",
+      "n, m, l, k, p = symbols('n m l k p', integer=True)",
+      "A = MatrixSymbol('A', n, m)",
+      "B = MatrixSymbol('B', m, l)",
+      "C = MatrixSymbol('C', n, n)",
+      "def test_adjoint():",
+      "    Sq = MatrixSymbol('Sq', n, n)"
+    ],
+    "imports": [
+      "from sympy.core import symbols, S",
+      "from sympy.functions import adjoint, conjugate, transpose",
+      "from sympy.matrices.expressions import MatrixSymbol, Adjoint, trace, Transpose",
+      "from sympy.matrices import eye, Matrix"
+    ],
+    "classes": [],
+    "functions": [
+      "test_adjoint"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_323_73139cdf7e323522_AI_Chariot_Legacy_666_1.0.0_20260508_test_adjoint.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 143,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\ollama\\tests\\unit_tests\\test_embeddings.py",
+  "name": "test_embeddings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5209,
+  "content_sha256": "588144ebd1c5d797513b5fe20b2a122c767670644349fa4fa9e8ac37cad7ba7d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 130,
+    "non_empty_lines": 93,
+    "char_count": 5206,
+    "preview_lines": [
+      "\"\"\"Test embedding model integration.\"\"\"",
+      "from typing import Any",
+      "from unittest.mock import AsyncMock, MagicMock, Mock, patch",
+      "import pytest",
+      "from langchain_ollama.embeddings import OllamaEmbeddings",
+      "MODEL_NAME = \"llama3.1\"",
+      "def test_initialization() -> None:",
+      "    \"\"\"Test embedding model initialization.\"\"\"",
+      "    OllamaEmbeddings(model=MODEL_NAME, keep_alive=1)",
+      "@patch(\"langchain_ollama.embeddings.validate_model\")"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from unittest.mock import AsyncMock, MagicMock, Mock, patch",
+      "import pytest",
+      "from langchain_ollama.embeddings import OllamaEmbeddings"
+    ],
+    "classes": [],
+    "functions": [
+      "test_initialization",
+      "test_validate_model_on_init",
+      "test_embed_documents_passes_options",
+      "test_embed_documents_passes_dimensions",
+      "test_embed_documents_dimensions_none_by_default",
+      "test_dimensions_validation",
+      "test_embed_documents_raises_when_client_none"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_143_588144ebd1c5d797_test_embeddings.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_docstrings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_docstrings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9844,
+  "content_sha256": "2984c9101e521835f790cdaf5b15d19390f08373c20a90368d07c8871c5440c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 238,
+    "char_count": 9844,
+    "preview_lines": [
+      "\"\"\"",
+      "Docstrings are another source of information for functions and classes.",
+      ":mod:`jedi.inference.dynamic_params` tries to find all executions of functions,",
+      "while the docstring parsing is much easier. There are three different types of",
+      "docstrings that |jedi| understands:",
+      "- `Sphinx <http://sphinx-doc.org/markup/desc.html#info-field-lists>`_",
+      "- `Epydoc <http://epydoc.sourceforge.net/manual-fields.html>`_",
+      "- `Numpydoc <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`_",
+      "For example, the sphinx annotation ``:type foo: str`` clearly states that the",
+      "type of ``foo`` is ``str``."
+    ],
+    "imports": [
+      "import re",
+      "import warnings",
+      "from parso import parse, ParserSyntaxError",
+      "from jedi import debug",
+      "from jedi.inference.cache import inference_state_method_cache",
+      "from jedi.inference.base_value import iterator_to_value_set, ValueSet, \\",
+      "from jedi.inference.lazy_value import LazyKnownValues",
+      "from numpydoc.docscrape import NumpyDocString  # type: ignore[import, unused-ignore]"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_numpy_doc_string_cls",
+      "_search_param_in_numpydocstr",
+      "_search_return_in_numpydocstr",
+      "_expand_typestr",
+      "_search_param_in_docstr",
+      "_strip_rst_role",
+      "_infer_for_statement_string",
+      "_execute_types_in_stmt",
+      "_execute_array_values",
+      "infer_param",
+      "infer_return_types"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_102_2984c9101e521835_AI_Chariot_Legacy_666_1.0.0_20260508_docstrings.py.json"
+}

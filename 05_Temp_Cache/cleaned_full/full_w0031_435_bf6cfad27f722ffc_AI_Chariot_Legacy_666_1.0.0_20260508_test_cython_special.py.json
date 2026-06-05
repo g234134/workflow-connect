@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 435,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cython_special.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cython_special.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19491,
+  "content_sha256": "bf6cfad27f722ffc44d2e6b35e46201a63f337d09a9209f09168dd37427fedd7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 363,
+    "non_empty_lines": 342,
+    "char_count": 19491,
+    "preview_lines": [
+      "from collections.abc import Callable",
+      "import pytest",
+      "from itertools import product",
+      "from numpy.testing import assert_allclose, suppress_warnings",
+      "from scipy import special",
+      "from scipy.special import cython_special",
+      "bint_points = [True, False]",
+      "int_points = [-10, -1, 1, 10]",
+      "real_points = [-10.0, -1.0, 1.0, 10.0]",
+      "complex_points = [complex(*tup) for tup in product(real_points, repeat=2)]"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import pytest",
+      "from itertools import product",
+      "from numpy.testing import assert_allclose, suppress_warnings",
+      "from scipy import special",
+      "from scipy.special import cython_special"
+    ],
+    "classes": [],
+    "functions": [
+      "_generate_test_points",
+      "test_cython_api_completeness",
+      "test_cython_api"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_435_bf6cfad27f722ffc_AI_Chariot_Legacy_666_1.0.0_20260508_test_cython_special.py.json"
+}

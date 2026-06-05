@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_supervised_hyperparameters.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_supervised_hyperparameters.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 926,
+  "content_sha256": "63d877fe2183e5dae190074c8d1e12cdbd34059a90e3791ad451544a02abcc92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 20,
+    "char_count": 926,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Union",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel",
+      "__all__ = [\"SupervisedHyperparameters\"]",
+      "class SupervisedHyperparameters(BaseModel):",
+      "    \"\"\"The hyperparameters used for the fine-tuning job.\"\"\"",
+      "    batch_size: Union[Literal[\"auto\"], int, None] = None",
+      "    \"\"\"Number of examples in each batch.",
+      "    A larger batch size means that model parameters are updated less frequently, but"
+    ],
+    "imports": [
+      "from typing import Union",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel"
+    ],
+    "classes": [
+      "SupervisedHyperparameters"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_490_63d877fe2183e5da_AI_Chariot_Legacy_666_1.0.0_20260508_supervised_hyperparameters.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ggml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ggml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32632,
+  "content_sha256": "46c8e43348f0d07547a276d880fc61f468db2b4f403fc0f1b373328c5a394976",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 829,
+    "non_empty_lines": 729,
+    "char_count": 32612,
+    "preview_lines": [
+      "# Copyright 2024 The ggml.ai team and The HuggingFace Inc. team. and pygguf author (github.com/99991)",
+      "# https://github.com/99991/pygguf",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "from array import array",
+      "import numpy as np",
+      "from tokenizers import Tokenizer, decoders, normalizers, pre_tokenizers, processors",
+      "from tokenizers.models import BPE, Unigram",
+      "from .. import AddedToken",
+      "from ..convert_slow_tokenizer import GemmaConverter, GPT2Converter, LlamaConverter, Qwen2Converter, T5Converter",
+      "from ..utils import logging",
+      "from ..utils.logging import tqdm"
+    ],
+    "classes": [
+      "GGUFTokenizerSkeleton",
+      "GGUFLlamaConverter",
+      "GGUFQwen2Converter",
+      "GGUFPhi3Converter",
+      "GGUFGPTConverter",
+      "GGUFT5Converter",
+      "GGUFGemmaConverter"
+    ],
+    "functions": [
+      "_gguf_parse_value",
+      "convert_gguf_tokenizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_098_46c8e43348f0d075_AI_Chariot_Legacy_666_1.0.0_20260508_ggml.py.json"
+}

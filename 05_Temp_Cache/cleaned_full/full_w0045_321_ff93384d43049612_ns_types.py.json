@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:47:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\ns\\fx\\ns_types.py",
+  "name": "ns_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2419,
+  "content_sha256": "ff93384d43049612a39b85b37920a29687a08fc4952332f07ae414d14ad70810",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 57,
+    "char_count": 2419,
+    "preview_lines": [
+      "import enum",
+      "from typing import NamedTuple",
+      "from torch.fx.graph import Node",
+      "from typing import Dict, Any, List, Union, Callable",
+      "class NSSingleResultValuesType(str, enum.Enum):",
+      "    WEIGHT = 'weight'",
+      "    NODE_OUTPUT = 'node_output'",
+      "    NODE_INPUT = 'node_input'",
+      "class NSSubgraph(NamedTuple):",
+      "    start_node: Node"
+    ],
+    "imports": [
+      "import enum",
+      "from typing import NamedTuple",
+      "from torch.fx.graph import Node",
+      "from typing import Dict, Any, List, Union, Callable"
+    ],
+    "classes": [
+      "NSSingleResultValuesType",
+      "NSSubgraph"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_321_ff93384d43049612_ns_types.py.json"
+}

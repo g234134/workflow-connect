@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_anonymizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_anonymizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6413,
+  "content_sha256": "5451b0b90750fc446e911bd582c842f830b06e9de70d55491fd2b22ac5b212f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 153,
+    "char_count": 6413,
+    "preview_lines": [
+      "import re  # noqa",
+      "import inspect",
+      "from abc import abstractmethod",
+      "from collections import defaultdict",
+      "from typing import Any, Callable, Optional, TypedDict, Union",
+      "class _ExtractOptions(TypedDict):",
+      "    max_depth: Optional[int]",
+      "    \"\"\"",
+      "    Maximum depth to traverse to to extract string nodes",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import re  # noqa",
+      "import inspect",
+      "from abc import abstractmethod",
+      "from collections import defaultdict",
+      "from typing import Any, Callable, Optional, TypedDict, Union"
+    ],
+    "classes": [
+      "_ExtractOptions",
+      "StringNode",
+      "StringNodeProcessor",
+      "ReplacerOptions",
+      "StringNodeRule",
+      "RuleNodeProcessor",
+      "CallableNodeProcessor"
+    ],
+    "functions": [
+      "_extract_string_nodes",
+      "_get_node_processor",
+      "create_anonymizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_418_5451b0b90750fc44_AI_Chariot_Legacy_666_1.0.0_20260508_anonymizer.py.json"
+}

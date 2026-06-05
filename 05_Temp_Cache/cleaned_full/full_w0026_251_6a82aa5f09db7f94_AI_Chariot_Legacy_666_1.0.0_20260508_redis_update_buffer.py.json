@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_redis_update_buffer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_redis_update_buffer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20009,
+  "content_sha256": "6a82aa5f09db7f94b74d780d5ddd96da1ac63a986722af71ae5a6bb142f495e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 532,
+    "non_empty_lines": 481,
+    "char_count": 20009,
+    "preview_lines": [
+      "\"\"\"",
+      "Handles buffering database `UPDATE` transactions in Redis before committing them to the database",
+      "This is to prevent deadlocks and improve reliability",
+      "\"\"\"",
+      "import asyncio",
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Union, cast",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import RedisCache",
+      "from litellm.constants import ("
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Union, cast",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import RedisCache",
+      "from litellm.constants import (",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.proxy._types import (",
+      "from litellm.proxy.db.db_transaction_queue.base_update_queue import service_logger_obj",
+      "from litellm.proxy.db.db_transaction_queue.daily_spend_update_queue import (",
+      "from litellm.proxy.db.db_transaction_queue.spend_update_queue import SpendUpdateQueue",
+      "from litellm.secret_managers.main import str_to_bool",
+      "from litellm.types.services import ServiceTypes",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.proxy.proxy_server import general_settings"
+    ],
+    "classes": [
+      "RedisUpdateBuffer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_251_6a82aa5f09db7f94_AI_Chariot_Legacy_666_1.0.0_20260508_redis_update_buffer.py.json"
+}

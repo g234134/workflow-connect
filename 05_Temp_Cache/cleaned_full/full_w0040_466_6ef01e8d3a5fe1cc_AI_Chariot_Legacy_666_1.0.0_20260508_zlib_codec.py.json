@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 466,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_zlib_codec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_zlib_codec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2204,
+  "content_sha256": "6ef01e8d3a5fe1cc52f7b5ae008df12f1dbce7304111bf8d4758f1bfc0115759",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 60,
+    "char_count": 2204,
+    "preview_lines": [
+      "\"\"\"Python 'zlib_codec' Codec - zlib compression encoding.",
+      "This codec de/encodes from bytes to bytes.",
+      "Written by Marc-Andre Lemburg (mal@lemburg.com).",
+      "\"\"\"",
+      "import codecs",
+      "import zlib # this codec needs the optional zlib module !",
+      "### Codec APIs",
+      "def zlib_encode(input, errors='strict'):",
+      "    assert errors == 'strict'",
+      "    return (zlib.compress(input), len(input))"
+    ],
+    "imports": [
+      "import codecs",
+      "import zlib # this codec needs the optional zlib module !"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamWriter",
+      "StreamReader"
+    ],
+    "functions": [
+      "zlib_encode",
+      "zlib_decode",
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_466_6ef01e8d3a5fe1cc_AI_Chariot_Legacy_666_1.0.0_20260508_zlib_codec.py.json"
+}

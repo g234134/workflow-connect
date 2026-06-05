@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 121,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_documentloader_adapter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_documentloader_adapter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2676,
+  "content_sha256": "4cfb7e3ae276e528d86aaa6041eba2bfa465230385b3d0ad9b2b82d36e0d9fcf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 54,
+    "char_count": 2676,
+    "preview_lines": [
+      "import inspect",
+      "from typing import Any, Dict, Iterator, Type",
+      "from langchain_classic.document_loaders.base import BaseBlobParser, BaseLoader",
+      "from langchain_core._api import beta",
+      "from langchain_core.documents import Document",
+      "from langchain_core.documents.base import Blob",
+      "@beta()",
+      "class DocumentLoaderAsParser(BaseBlobParser):",
+      "    \"\"\"A wrapper class that adapts a document loader to function as a parser.",
+      "    This class is a work-around that adapts a document loader to function as a parser."
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Any, Dict, Iterator, Type",
+      "from langchain_classic.document_loaders.base import BaseBlobParser, BaseLoader",
+      "from langchain_core._api import beta",
+      "from langchain_core.documents import Document",
+      "from langchain_core.documents.base import Blob",
+      "from langchain_community.document_loaders.excel import UnstructuredExcelLoader"
+    ],
+    "classes": [
+      "DocumentLoaderAsParser"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_121_4cfb7e3ae276e528_AI_Chariot_Legacy_666_1.0.0_20260508_documentloader_adapter.py.json"
+}

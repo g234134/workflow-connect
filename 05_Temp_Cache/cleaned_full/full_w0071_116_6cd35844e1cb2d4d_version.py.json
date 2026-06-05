@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\version.py",
+  "name": "version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 346,
+  "content_sha256": "6cd35844e1cb2d4d2b13d076f33bbad790ead8146720ea12c3b201eebba55451",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 343,
+    "preview_lines": [
+      "\"\"\"Exports package version.\"\"\"",
+      "from importlib import metadata",
+      "__all__ = (\"__version__\",)",
+      "try:",
+      "    __version__ = metadata.version(__package__)",
+      "except metadata.PackageNotFoundError:",
+      "    # Case where package metadata is not available.",
+      "    __version__ = \"\"",
+      "del metadata  # optional, avoids polluting the results of dir(__package__)"
+    ],
+    "imports": [
+      "from importlib import metadata"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_116_6cd35844e1cb2d4d_version.py.json"
+}

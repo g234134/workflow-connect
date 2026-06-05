@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 483,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\.github\\workflows\\reopen_on_assignment.yml",
+  "name": "reopen_on_assignment.yml",
+  "extension": ".yml",
+  "original_type": "yaml",
+  "size_bytes": 8189,
+  "content_sha256": "23f6477cce1ad0b1ab23cb2cc446174ff471df95c80b5fc27c5f52a9cf5ec445",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 177,
+    "char_count": 8177,
+    "preview_lines": [
+      "# Reopen PRs that were auto-closed by require_issue_link.yml when the",
+      "# contributor was not assigned to the linked issue. When a maintainer",
+      "# assigns the contributor to the issue, this workflow finds matching",
+      "# closed PRs, verifies the issue link, and reopens them.",
+      "#",
+      "# Uses the default GITHUB_TOKEN (not a PAT or app token) so that the",
+      "# reopen and label-removal events do NOT re-trigger other workflows.",
+      "# GitHub suppresses events created by the default GITHUB_TOKEN within",
+      "# workflow runs to prevent infinite loops.",
+      "name: Reopen PR on Issue Assignment"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_483_23f6477cce1ad0b1_reopen_on_assignment.yml.json"
+}

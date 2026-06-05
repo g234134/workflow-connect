@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 2,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_backports.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_backports.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1175,
+  "content_sha256": "38db742543d5d5eb5908ef434cbbabd61f385e68076582bf93bdea9a9e244608",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 29,
+    "char_count": 1175,
+    "preview_lines": [
+      "import mmap",
+      "from joblib import Parallel, delayed",
+      "from joblib.backports import concurrency_safe_rename, make_memmap",
+      "from joblib.test.common import with_numpy",
+      "from joblib.testing import parametrize",
+      "@with_numpy",
+      "def test_memmap(tmpdir):",
+      "    fname = tmpdir.join(\"test.mmap\").strpath",
+      "    size = 5 * mmap.ALLOCATIONGRANULARITY",
+      "    offset = mmap.ALLOCATIONGRANULARITY + 1"
+    ],
+    "imports": [
+      "import mmap",
+      "from joblib import Parallel, delayed",
+      "from joblib.backports import concurrency_safe_rename, make_memmap",
+      "from joblib.test.common import with_numpy",
+      "from joblib.testing import parametrize"
+    ],
+    "classes": [],
+    "functions": [
+      "test_memmap",
+      "test_concurrency_safe_rename"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_002_38db742543d5d5eb_AI_Chariot_Legacy_666_1.0.0_20260508_test_backports.py.json"
+}

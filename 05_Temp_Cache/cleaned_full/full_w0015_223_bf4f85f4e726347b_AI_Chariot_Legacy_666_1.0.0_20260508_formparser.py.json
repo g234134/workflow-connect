@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_formparser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_formparser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15847,
+  "content_sha256": "bf4f85f4e726347b8f2ea5de3d6fdbd1ab16ce91fe67f6651a3f1aa3408c9aea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 430,
+    "non_empty_lines": 356,
+    "char_count": 15847,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from io import BytesIO",
+      "from urllib.parse import parse_qsl",
+      "from ._internal import _plain_int",
+      "from .datastructures import FileStorage",
+      "from .datastructures import Headers",
+      "from .datastructures import MultiDict",
+      "from .exceptions import RequestEntityTooLarge",
+      "from .http import parse_options_header"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from io import BytesIO",
+      "from urllib.parse import parse_qsl",
+      "from ._internal import _plain_int",
+      "from .datastructures import FileStorage",
+      "from .datastructures import Headers",
+      "from .datastructures import MultiDict",
+      "from .exceptions import RequestEntityTooLarge",
+      "from .http import parse_options_header",
+      "from .sansio.multipart import Data",
+      "from .sansio.multipart import Epilogue",
+      "from .sansio.multipart import Field",
+      "from .sansio.multipart import File",
+      "from .sansio.multipart import MultipartDecoder",
+      "from .sansio.multipart import NeedData",
+      "from .wsgi import get_content_length",
+      "from .wsgi import get_input_stream",
+      "from tempfile import SpooledTemporaryFile",
+      "from tempfile import TemporaryFile"
+    ],
+    "classes": [
+      "FormDataParser",
+      "MultiPartParser"
+    ],
+    "functions": [
+      "default_stream_factory",
+      "parse_form_data",
+      "_chunk_iter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_223_bf4f85f4e726347b_AI_Chariot_Legacy_666_1.0.0_20260508_formparser.py.json"
+}

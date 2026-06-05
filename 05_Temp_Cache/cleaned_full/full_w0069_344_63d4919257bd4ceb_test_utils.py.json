@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 344,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\test_utils.py",
+  "name": "test_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 432,
+  "content_sha256": "63d4919257bd4ceb0889665f943b9f464d621cb0c63cfc676b58581468c7e8a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 429,
+    "preview_lines": [
+      "import re",
+      "import pytest",
+      "from langchain_core.utils import check_package_version",
+      "def test_check_package_version_pass() -> None:",
+      "    check_package_version(\"PyYAML\", gte_version=\"5.4.1\")",
+      "def test_check_package_version_fail() -> None:",
+      "    with pytest.raises(",
+      "        ValueError, match=re.escape(\"Expected PyYAML version to be < 5.4.1. Received \")",
+      "    ):",
+      "        check_package_version(\"PyYAML\", lt_version=\"5.4.1\")"
+    ],
+    "imports": [
+      "import re",
+      "import pytest",
+      "from langchain_core.utils import check_package_version"
+    ],
+    "classes": [],
+    "functions": [
+      "test_check_package_version_pass",
+      "test_check_package_version_fail"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_344_63d4919257bd4ceb_test_utils.py.json"
+}

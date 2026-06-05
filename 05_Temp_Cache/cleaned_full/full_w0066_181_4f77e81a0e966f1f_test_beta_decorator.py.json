@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\_api\\test_beta_decorator.py",
+  "name": "test_beta_decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12189,
+  "content_sha256": "4f77e81a0e966f1f2da86077964507a03930d3492c795866db3ce8d1f9bfd4ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 382,
+    "non_empty_lines": 308,
+    "char_count": 12186,
+    "preview_lines": [
+      "import inspect",
+      "import warnings",
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel",
+      "from langchain_core._api.beta_decorator import beta, warn_beta",
+      "@pytest.mark.parametrize(",
+      "    (\"kwargs\", \"expected_message\"),",
+      "    [",
+      "        ("
+    ],
+    "imports": [
+      "import inspect",
+      "import warnings",
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel",
+      "from langchain_core._api.beta_decorator import beta, warn_beta"
+    ],
+    "classes": [
+      "ClassWithBetaMethods",
+      "MyModel"
+    ],
+    "functions": [
+      "test_warn_beta",
+      "beta_function",
+      "test_beta_function",
+      "test_beta_method",
+      "test_beta_classmethod",
+      "test_beta_staticmethod",
+      "test_beta_property",
+      "test_whole_class_beta",
+      "test_whole_class_inherited_beta",
+      "test_beta_method_pydantic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_181_4f77e81a0e966f1f_test_beta_decorator.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\conversation\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5445,
+  "content_sha256": "4cb02a4b1e87ed05e20cc5b9f6d9c8a31acc30cb5c7daf9c2482e80f8c24a3e3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 149,
+    "non_empty_lines": 115,
+    "char_count": 5442,
+    "preview_lines": [
+      "\"\"\"Chain that carries on a conversation and calls an LLM.\"\"\"",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from pydantic import ConfigDict, Field, model_validator",
+      "from typing_extensions import Self, override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.conversation.prompt import PROMPT",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.memory.buffer import ConversationBufferMemory",
+      "@deprecated("
+    ],
+    "imports": [
+      "from langchain_core._api import deprecated",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from pydantic import ConfigDict, Field, model_validator",
+      "from typing_extensions import Self, override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.conversation.prompt import PROMPT",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.memory.buffer import ConversationBufferMemory",
+      "from langchain_core.chat_history import InMemoryChatMessageHistory",
+      "from langchain_core.runnables.history import RunnableWithMessageHistory",
+      "from langchain_openai import ChatOpenAI",
+      "from langchain_classic.memory import ConversationBufferWindowMemory",
+      "from langchain_core.chat_history import InMemoryChatMessageHistory",
+      "from langchain_core.runnables.history import RunnableWithMessageHistory",
+      "from langchain_openai import ChatOpenAI",
+      "from langchain_classic.chains import ConversationChain",
+      "from langchain_openai import OpenAI"
+    ],
+    "classes": [
+      "ConversationChain"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_049_4cb02a4b1e87ed05_base.py.json"
+}

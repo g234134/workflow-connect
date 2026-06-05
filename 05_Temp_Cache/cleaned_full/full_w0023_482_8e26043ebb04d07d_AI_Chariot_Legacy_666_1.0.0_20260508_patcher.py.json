@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 482,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_patcher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_patcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6198,
+  "content_sha256": "8e26043ebb04d07dc82f266eaaf89eff8a1197cad49d2d1169b09747209fc3aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 143,
+    "non_empty_lines": 117,
+    "char_count": 6198,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import copy",
+      "import functools",
+      "from typing import List, TYPE_CHECKING, Union",
+      "import torch",
+      "if TYPE_CHECKING:",
+      "    import io",
+      "# TODO: Remove after https://github.com/huggingface/safetensors/pull/318",
+      "@functools.lru_cache(None)",
+      "def has_safetensors_and_transformers():"
+    ],
+    "imports": [
+      "import copy",
+      "import functools",
+      "from typing import List, TYPE_CHECKING, Union",
+      "import torch",
+      "import io",
+      "import safetensors  # type: ignore[import]  # noqa: F401",
+      "import transformers  # type: ignore[import]  # noqa: F401",
+      "from safetensors import torch as safetensors_torch  # noqa: F401",
+      "import safetensors",
+      "import transformers",
+      "import safetensors",
+      "import transformers",
+      "import safetensors",
+      "import transformers"
+    ],
+    "classes": [
+      "ONNXTorchPatcher"
+    ],
+    "functions": [
+      "has_safetensors_and_transformers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_482_8e26043ebb04d07d_AI_Chariot_Legacy_666_1.0.0_20260508_patcher.py.json"
+}

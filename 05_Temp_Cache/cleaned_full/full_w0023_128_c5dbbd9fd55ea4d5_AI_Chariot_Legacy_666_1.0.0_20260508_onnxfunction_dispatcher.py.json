@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_onnxfunction_dispatcher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_onnxfunction_dispatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38644,
+  "content_sha256": "c5dbbd9fd55ea4d5b9b52be176f1e581b649f44dba461108e7e406e91e975188",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 874,
+    "non_empty_lines": 768,
+    "char_count": 38644,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Dispatcher for AtenLib functions from onnx-script.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import operator",
+      "import types",
+      "from typing import Any, Callable, Sequence, TYPE_CHECKING",
+      "import torch",
+      "import torch._ops",
+      "import torch.fx"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import operator",
+      "import types",
+      "from typing import Any, Callable, Sequence, TYPE_CHECKING",
+      "import torch",
+      "import torch._ops",
+      "import torch.fx",
+      "from torch.onnx._internal.fx import (",
+      "import onnxscript  # type: ignore[import]",
+      "from onnxscript.function_libs.torch_lib import (  # type: ignore[import]",
+      "from torch.onnx import OnnxRegistry"
+    ],
+    "classes": [
+      "OnnxFunctionDispatcher",
+      "_OnnxSchemaChecker"
+    ],
+    "functions": [
+      "_find_opschema_matched_symbolic_function_disagnostic_message_formatter",
+      "_find_operator_overloads_in_onnx_registry_disagnostic_message_formatter",
+      "_is_arg_with_complex_dtype",
+      "_find_onnx_data_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_128_c5dbbd9fd55ea4d5_AI_Chariot_Legacy_666_1.0.0_20260508_onnxfunction_dispatcher.py.json"
+}

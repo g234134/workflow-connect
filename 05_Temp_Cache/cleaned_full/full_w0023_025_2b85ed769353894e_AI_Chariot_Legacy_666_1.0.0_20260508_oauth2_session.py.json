@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 25,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oauth2_session.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oauth2_session.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23932,
+  "content_sha256": "2b85ed769353894e83abc26f12c8fc694a4c75abd6482640b9339cff1859701c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 587,
+    "non_empty_lines": 522,
+    "char_count": 23932,
+    "preview_lines": [
+      "import logging",
+      "from oauthlib.common import generate_token, urldecode",
+      "from oauthlib.oauth2 import WebApplicationClient, InsecureTransportError",
+      "from oauthlib.oauth2 import LegacyApplicationClient",
+      "from oauthlib.oauth2 import TokenExpiredError, is_secure_transport",
+      "import requests",
+      "log = logging.getLogger(__name__)",
+      "class TokenUpdated(Warning):",
+      "    def __init__(self, token):",
+      "        super(TokenUpdated, self).__init__()"
+    ],
+    "imports": [
+      "import logging",
+      "from oauthlib.common import generate_token, urldecode",
+      "from oauthlib.oauth2 import WebApplicationClient, InsecureTransportError",
+      "from oauthlib.oauth2 import LegacyApplicationClient",
+      "from oauthlib.oauth2 import TokenExpiredError, is_secure_transport",
+      "import requests"
+    ],
+    "classes": [
+      "TokenUpdated",
+      "OAuth2Session"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_025_2b85ed769353894e_AI_Chariot_Legacy_666_1.0.0_20260508_oauth2_session.py.json"
+}

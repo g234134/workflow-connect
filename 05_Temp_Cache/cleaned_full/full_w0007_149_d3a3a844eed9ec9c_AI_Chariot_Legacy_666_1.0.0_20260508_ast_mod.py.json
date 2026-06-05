@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 149,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ast_mod.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ast_mod.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10295,
+  "content_sha256": "d3a3a844eed9ec9cdf73e71f95ff19df0caa175edf918bfa7c9fcdc3877b7901",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 330,
+    "non_empty_lines": 261,
+    "char_count": 10295,
+    "preview_lines": [
+      "\"\"\"",
+      "This module contains utility function and classes to inject simple ast",
+      "transformations based on code strings into IPython. While it is already possible",
+      "with ast-transformers it is not easy to directly manipulate ast.",
+      "IPython has pre-code and post-code hooks, but are ran from within the IPython",
+      "machinery so may be inappropriate, for example for performance measurement.",
+      "This module give you tools to simplify this, and expose 2 classes:",
+      "- `ReplaceCodeTransformer` which is a simple ast transformer based on code",
+      "  template,",
+      "and for advance case:"
+    ],
+    "imports": [
+      "from time import perf_counter",
+      "from IPython.core.magic import (",
+      "from IPython.core.magics.ast_mod import ReplaceCodeTransformer",
+      "from textwrap import dedent",
+      "import ast",
+      "from time import perf_counter",
+      "from builtins import type as mangle-type, print as mangle-print",
+      "from time import perf_counter as mangle-perf_counter",
+      "from ast import (",
+      "import ast",
+      "import copy",
+      "from typing import Dict, Optional, Union"
+    ],
+    "classes": [
+      "Mangler",
+      "ReplaceCodeTransformer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_149_d3a3a844eed9ec9c_AI_Chariot_Legacy_666_1.0.0_20260508_ast_mod.py.json"
+}

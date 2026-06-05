@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\langgraph_sdk\\auth\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31823,
+  "content_sha256": "4346fbba29819d044e74ea3ea5cf351307c613c9ece04e9ac1cab2246aac72c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 876,
+    "non_empty_lines": 723,
+    "char_count": 31820,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import typing",
+      "from collections.abc import Callable, Sequence",
+      "from langgraph_sdk.auth import exceptions, types",
+      "TH = typing.TypeVar(\"TH\", bound=types.Handler)",
+      "AH = typing.TypeVar(\"AH\", bound=types.Authenticator)",
+      "class Auth:",
+      "    \"\"\"Add custom authentication and authorization management to your LangGraph application.",
+      "    The Auth class provides a unified system for handling authentication and"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import typing",
+      "from collections.abc import Callable, Sequence",
+      "from langgraph_sdk.auth import exceptions, types",
+      "from langgraph_sdk import Auth"
+    ],
+    "classes": [
+      "Auth",
+      "_ActionHandler",
+      "_ResourceActionOn",
+      "_ResourceOn",
+      "_AssistantsOn",
+      "_ThreadsOn",
+      "_CronsOn",
+      "_StoreActionOn",
+      "_StoreOn",
+      "_On"
+    ],
+    "functions": [
+      "_register_handler",
+      "_validate_handler",
+      "is_studio_user"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_211_4346fbba29819d04___init__.py.json"
+}

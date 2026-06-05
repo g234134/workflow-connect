@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 145,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\integration_tests\\retrievers\\document_compressors\\test_listwise_rerank.py",
+  "name": "test_listwise_rerank.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 806,
+  "content_sha256": "eba3b50b57853bd2b4bdddf0974551d76d581d03eda64dddf63aee4e898296d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 20,
+    "char_count": 803,
+    "preview_lines": [
+      "from langchain_core.documents import Document",
+      "from langchain_classic.retrievers.document_compressors.listwise_rerank import (",
+      "    LLMListwiseRerank,",
+      ")",
+      "def test_list_rerank() -> None:",
+      "    from langchain_openai import ChatOpenAI",
+      "    documents = [",
+      "        Document(\"Sally is my friend from school\"),",
+      "        Document(\"Steve is my friend from home\"),",
+      "        Document(\"I didn't always like yogurt\"),"
+    ],
+    "imports": [
+      "from langchain_core.documents import Document",
+      "from langchain_classic.retrievers.document_compressors.listwise_rerank import (",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [],
+    "functions": [
+      "test_list_rerank"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_145_eba3b50b57853bd2_test_listwise_rerank.py.json"
+}

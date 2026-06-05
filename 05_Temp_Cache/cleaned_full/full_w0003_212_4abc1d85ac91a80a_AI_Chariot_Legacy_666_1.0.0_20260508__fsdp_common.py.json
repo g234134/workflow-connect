@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 212,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_common.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5098,
+  "content_sha256": "4abc1d85ac91a80a3c0e20a6a26c25450fd685dd7667fdd756973bac94c1eb59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 122,
+    "char_count": 5098,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import math",
+      "import traceback",
+      "from dataclasses import dataclass",
+      "from enum import auto, Enum",
+      "from typing import Any, cast, List, Optional",
+      "import torch",
+      "import torch._dynamo.compiled_autograd as ca",
+      "import torch.distributed as dist",
+      "import torch.nn as nn"
+    ],
+    "imports": [
+      "import math",
+      "import traceback",
+      "from dataclasses import dataclass",
+      "from enum import auto, Enum",
+      "from typing import Any, cast, List, Optional",
+      "import torch",
+      "import torch._dynamo.compiled_autograd as ca",
+      "import torch.distributed as dist",
+      "import torch.nn as nn",
+      "from torch.distributed._composable.contract import _get_registry",
+      "from torch.distributed.tensor import DeviceMesh, DTensor",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec"
+    ],
+    "classes": [
+      "DataParallelMeshInfo",
+      "FSDPMeshInfo",
+      "DDPMeshInfo",
+      "HSDPMeshInfo",
+      "TrainingState"
+    ],
+    "functions": [
+      "_raise_assert_with_print",
+      "_is_composable_with_fsdp",
+      "_get_dim0_padded_size",
+      "_chunk_with_empty",
+      "_get_dim0_chunked_size",
+      "_from_local_no_grad",
+      "_to_dtype_if_needed",
+      "_cast_fp_tensor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_212_4abc1d85ac91a80a_AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_common.py.json"
+}

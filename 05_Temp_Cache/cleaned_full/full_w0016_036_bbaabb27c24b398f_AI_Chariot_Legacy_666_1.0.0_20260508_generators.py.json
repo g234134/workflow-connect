@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generators.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4045,
+  "content_sha256": "bbaabb27c24b398fae119a8c3d44f36a4c72b9add735070f883b2e88adbe94b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 106,
+    "char_count": 4045,
+    "preview_lines": [
+      "\"\"\"",
+      "Each generator will return float samples from -1.0 to 1.0, which can be ",
+      "converted to actual audio with 8, 16, 24, or 32 bit depth using the",
+      "SiganlGenerator.to_audio_segment() method (on any of it's subclasses).",
+      "See Wikipedia's \"waveform\" page for info on some of the generators included ",
+      "here: http://en.wikipedia.org/wiki/Waveform",
+      "\"\"\"",
+      "import math",
+      "import array",
+      "import itertools"
+    ],
+    "imports": [
+      "import math",
+      "import array",
+      "import itertools",
+      "import random",
+      "from .audio_segment import AudioSegment",
+      "from .utils import ("
+    ],
+    "classes": [
+      "SignalGenerator",
+      "Sine",
+      "Pulse",
+      "Square",
+      "Sawtooth",
+      "Triangle",
+      "WhiteNoise"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_036_bbaabb27c24b398f_AI_Chariot_Legacy_666_1.0.0_20260508_generators.py.json"
+}

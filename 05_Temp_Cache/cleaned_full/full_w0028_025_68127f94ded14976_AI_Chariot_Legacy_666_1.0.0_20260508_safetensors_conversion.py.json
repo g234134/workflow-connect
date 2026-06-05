@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 25,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_safetensors_conversion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_safetensors_conversion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4541,
+  "content_sha256": "68127f94ded1497679b8140ebb50506387aa94d91908687121c54785cb064a85",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 90,
+    "char_count": 4541,
+    "preview_lines": [
+      "from typing import Optional",
+      "import httpx",
+      "from huggingface_hub import Discussion, HfApi, get_repo_discussions",
+      "from .utils import cached_file, http_user_agent, logging",
+      "logger = logging.get_logger(__name__)",
+      "def previous_pr(api: HfApi, model_id: str, pr_title: str, token: str) -> Optional[\"Discussion\"]:",
+      "    main_commit = api.list_repo_commits(model_id, token=token)[0].commit_id",
+      "    for discussion in get_repo_discussions(repo_id=model_id, token=token):",
+      "        if discussion.title == pr_title and discussion.status == \"open\" and discussion.is_pull_request:",
+      "            commits = api.list_repo_commits(model_id, revision=discussion.git_reference, token=token)"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "import httpx",
+      "from huggingface_hub import Discussion, HfApi, get_repo_discussions",
+      "from .utils import cached_file, http_user_agent, logging"
+    ],
+    "classes": [],
+    "functions": [
+      "previous_pr",
+      "spawn_conversion",
+      "get_conversion_pr_reference",
+      "auto_conversion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_025_68127f94ded14976_AI_Chariot_Legacy_666_1.0.0_20260508_safetensors_conversion.py.json"
+}

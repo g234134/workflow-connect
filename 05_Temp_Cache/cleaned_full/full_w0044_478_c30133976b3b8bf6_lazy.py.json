@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 478,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\variables\\lazy.py",
+  "name": "lazy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3361,
+  "content_sha256": "c30133976b3b8bf6a21397d27502ff0e4a3a525ffca8b173d0927e3ebc7358de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 102,
+    "non_empty_lines": 75,
+    "char_count": 3361,
+    "preview_lines": [
+      "import functools",
+      "from typing import Optional",
+      "from .base import VariableTracker",
+      "class LazyCache:",
+      "    \"\"\"Container to cache the real VariableTracker\"\"\"",
+      "    def __init__(self, value, source):",
+      "        assert source",
+      "        self.value = value",
+      "        self.source = source",
+      "        self.vt: Optional[VariableTracker] = None"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Optional",
+      "from .base import VariableTracker",
+      "from ..symbolic_convert import InstructionTranslator",
+      "from .builder import VariableBuilder"
+    ],
+    "classes": [
+      "LazyCache",
+      "LazyVariableTracker"
+    ],
+    "functions": [
+      "_create_realize_and_forward",
+      "_populate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_478_c30133976b3b8bf6_lazy.py.json"
+}

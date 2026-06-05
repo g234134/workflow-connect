@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 227,
+  "generated_at": "2026-05-08T18:48:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\retrievers\\time_weighted_retriever.py",
+  "name": "time_weighted_retriever.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8007,
+  "content_sha256": "f07cbdc94ce5be793061ce1b1ce0dd3fbecd27e066c5013787aa78ada3dba0f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 198,
+    "non_empty_lines": 174,
+    "char_count": 8004,
+    "preview_lines": [
+      "import datetime",
+      "from copy import deepcopy",
+      "from typing import Any",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForRetrieverRun,",
+      "    CallbackManagerForRetrieverRun,",
+      ")",
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever",
+      "from langchain_core.vectorstores import VectorStore"
+    ],
+    "imports": [
+      "import datetime",
+      "from copy import deepcopy",
+      "from typing import Any",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever",
+      "from langchain_core.vectorstores import VectorStore",
+      "from pydantic import ConfigDict, Field",
+      "from typing_extensions import override"
+    ],
+    "classes": [
+      "TimeWeightedVectorStoreRetriever"
+    ],
+    "functions": [
+      "_get_hours_passed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_227_f07cbdc94ce5be79_time_weighted_retriever.py.json"
+}

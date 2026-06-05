@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 239,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_admin_ui_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_admin_ui_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6568,
+  "content_sha256": "e7eb1b8cead08ae78a325b6ada137867f6e109118a15e4b17c0afbe306e4a7df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 158,
+    "char_count": 6568,
+    "preview_lines": [
+      "def show_missing_vars_in_env():",
+      "    from fastapi.responses import HTMLResponse",
+      "    from litellm.proxy.proxy_server import master_key, prisma_client",
+      "    if prisma_client is None and master_key is None:",
+      "        return HTMLResponse(",
+      "            content=missing_keys_form(",
+      "                missing_key_names=\"DATABASE_URL, LITELLM_MASTER_KEY\"",
+      "            ),",
+      "            status_code=200,",
+      "        )"
+    ],
+    "imports": [
+      "from fastapi.responses import HTMLResponse",
+      "from litellm.proxy.proxy_server import master_key, prisma_client",
+      "from fastapi.responses import HTMLResponse"
+    ],
+    "classes": [],
+    "functions": [
+      "show_missing_vars_in_env",
+      "missing_keys_form",
+      "admin_ui_disabled"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_239_e7eb1b8cead08ae7_AI_Chariot_Legacy_666_1.0.0_20260508_admin_ui_utils.py.json"
+}

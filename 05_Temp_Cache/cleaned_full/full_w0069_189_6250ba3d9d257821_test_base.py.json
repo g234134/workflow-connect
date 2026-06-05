@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 189,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7338,
+  "content_sha256": "6250ba3d9d257821def5c31945f2cdb331e1e322f91bf41fa3e77ee99f9e8f73",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 245,
+    "non_empty_lines": 189,
+    "char_count": 7335,
+    "preview_lines": [
+      "\"\"\"Test logic on base chain class.\"\"\"",
+      "import re",
+      "import uuid",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks.manager import CallbackManagerForChainRun",
+      "from langchain_core.tracers.context import collect_runs",
+      "from typing_extensions import override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.base import Chain"
+    ],
+    "imports": [
+      "import re",
+      "import uuid",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks.manager import CallbackManagerForChainRun",
+      "from langchain_core.tracers.context import collect_runs",
+      "from typing_extensions import override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.schema import RUN_KEY",
+      "from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler"
+    ],
+    "classes": [
+      "FakeMemory",
+      "FakeChain"
+    ],
+    "functions": [
+      "test_bad_inputs",
+      "test_bad_outputs",
+      "test_run_info",
+      "test_correct_call",
+      "test_single_input_correct",
+      "test_single_input_error",
+      "test_run_single_arg",
+      "test_run_multiple_args_error",
+      "test_run_kwargs",
+      "test_run_kwargs_error",
+      "test_run_args_and_kwargs_error",
+      "test_multiple_output_keys_error",
+      "test_run_arg_with_memory",
+      "test_run_with_callback",
+      "test_run_with_callback_and_input_error",
+      "test_manually_specify_rid",
+      "test_run_with_callback_and_output_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_189_6250ba3d9d257821_test_base.py.json"
+}

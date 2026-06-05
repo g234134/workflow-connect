@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hanging_request_check.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hanging_request_check.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6216,
+  "content_sha256": "90e32cf132c93c31b18a82cf3f21a31308f4b5ec440696c40496db4b4199d122",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 149,
+    "char_count": 6216,
+    "preview_lines": [
+      "\"\"\"",
+      "Class to check for LLM API hanging requests",
+      "Notes:",
+      "- Do not create tasks that sleep, that can saturate the event loop",
+      "- Do not store large objects (eg. messages in memory) that can increase RAM usage",
+      "\"\"\"",
+      "import asyncio",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger"
+    ],
+    "imports": [
+      "import asyncio",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching.in_memory_cache import InMemoryCache",
+      "from litellm.litellm_core_utils.core_helpers import get_litellm_metadata_from_kwargs",
+      "from litellm.types.integrations.slack_alerting import (",
+      "from litellm.integrations.SlackAlerting.slack_alerting import SlackAlerting",
+      "from litellm.proxy.proxy_server import proxy_logging_obj",
+      "from litellm.integrations.SlackAlerting.slack_alerting import AlertType"
+    ],
+    "classes": [
+      "AlertingHangingRequestCheck"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_346_90e32cf132c93c31_AI_Chariot_Legacy_666_1.0.0_20260508_hanging_request_check.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\tensor_type.py",
+  "name": "tensor_type.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3036,
+  "content_sha256": "da855506951bc89410558aa1dacf9e5744339fa1b81a3532fa3bac5b4110226f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 104,
+    "non_empty_lines": 81,
+    "char_count": 3036,
+    "preview_lines": [
+      "from torch.fx.experimental.unification import Var  # type: ignore[attr-defined]",
+      "from ._compatibility import compatibility",
+      "@compatibility(is_backward_compatible=False)",
+      "class TensorType:",
+      "    \"\"\"",
+      "    TensorType defines a type for tensors, which consists of a list of dimensions.",
+      "    Example:",
+      "        class M(torch.nn.Module):",
+      "            def forward(self, x:TensorType((1,2,3, Dyn)), y:TensorType((1,2,3, Dyn))):",
+      "                return torch.add(x, y)"
+    ],
+    "imports": [
+      "from torch.fx.experimental.unification import Var  # type: ignore[attr-defined]",
+      "from ._compatibility import compatibility"
+    ],
+    "classes": [
+      "TensorType",
+      "_DynType"
+    ],
+    "functions": [
+      "is_consistent",
+      "is_more_precise"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_377_da855506951bc894_tensor_type.py.json"
+}

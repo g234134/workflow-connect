@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 67,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_compilerop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_compilerop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7004,
+  "content_sha256": "ea9cf5a48e17c7cbec9ef17b0476e660bd1a73df08fe7a82415accee03b3a29b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 158,
+    "char_count": 7004,
+    "preview_lines": [
+      "\"\"\"Compiler tools with improved interactive support.",
+      "Provides compilation machinery similar to codeop, but with caching support so",
+      "we can provide interactive tracebacks.",
+      "Authors",
+      "-------",
+      "* Robert Kern",
+      "* Fernando Perez",
+      "* Thomas Kluyver",
+      "\"\"\"",
+      "# Note: though it might be more natural to name this module 'compiler', that"
+    ],
+    "imports": [
+      "import __future__",
+      "from ast import PyCF_ONLY_AST",
+      "import codeop",
+      "import functools",
+      "import hashlib",
+      "import linecache",
+      "import operator",
+      "import time",
+      "from contextlib import contextmanager"
+    ],
+    "classes": [
+      "CachingCompiler"
+    ],
+    "functions": [
+      "code_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_067_ea9cf5a48e17c7cb_AI_Chariot_Legacy_666_1.0.0_20260508_compilerop.py.json"
+}

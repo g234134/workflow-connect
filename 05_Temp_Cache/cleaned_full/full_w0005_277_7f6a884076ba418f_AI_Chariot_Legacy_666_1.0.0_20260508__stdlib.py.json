@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 277,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__stdlib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__stdlib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7730,
+  "content_sha256": "7f6a884076ba418f84b6e401d7d9d03a8a362078b20c61848b5a9f5b3fa61b55",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 465,
+    "non_empty_lines": 454,
+    "char_count": 7730,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"List of Python standard library modules.",
+      "Sadly, there is no reliable way to tell whether a module is part of the",
+      "standard library except by comparing to a canonical list.",
+      "This is taken from https://github.com/PyCQA/isort/tree/develop/isort/stdlibs,",
+      "which itself is sourced from the Python documentation.",
+      "\"\"\"",
+      "import sys",
+      "def is_stdlib_module(module: str) -> bool:",
+      "    base_module = module.partition(\".\")[0]"
+    ],
+    "imports": [
+      "import sys"
+    ],
+    "classes": [],
+    "functions": [
+      "is_stdlib_module",
+      "_get_stdlib_modules"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_277_7f6a884076ba418f_AI_Chariot_Legacy_666_1.0.0_20260508__stdlib.py.json"
+}

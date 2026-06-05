@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_poolers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_poolers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12247,
+  "content_sha256": "b1f81c656876748a3d518e37ec29e9007771a8f421baf8cd3d8ce120a94020f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 327,
+    "non_empty_lines": 281,
+    "char_count": 12247,
+    "preview_lines": [
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.fx",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from torchvision.ops.boxes import box_area",
+      "from ..utils import _log_api_usage_once",
+      "from .roi_align import roi_align",
+      "# copying result_idx_in_level to a specific index in result[]",
+      "# is not supported by ONNX tracing yet."
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.fx",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from torchvision.ops.boxes import box_area",
+      "from ..utils import _log_api_usage_once",
+      "from .roi_align import roi_align"
+    ],
+    "classes": [
+      "LevelMapper",
+      "MultiScaleRoIAlign"
+    ],
+    "functions": [
+      "_onnx_merge_levels",
+      "initLevelMapper",
+      "_convert_to_roi_format",
+      "_infer_scale",
+      "_setup_scales",
+      "_filter_input",
+      "_multiscale_roi_align"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_265_b1f81c656876748a_AI_Chariot_Legacy_666_1.0.0_20260508_poolers.py.json"
+}

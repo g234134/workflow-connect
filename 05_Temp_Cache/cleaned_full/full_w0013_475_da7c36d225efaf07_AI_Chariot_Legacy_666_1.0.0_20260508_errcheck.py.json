@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 475,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_errcheck.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_errcheck.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4169,
+  "content_sha256": "da7c36d225efaf07c03744abf59e65ac57c37be3c521dd839d62163444198932",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 114,
+    "char_count": 4169,
+    "preview_lines": [
+      "\"\"\"",
+      "This module houses the error-checking routines used by the GDAL",
+      "ctypes prototypes.",
+      "\"\"\"",
+      "from ctypes import c_void_p, string_at",
+      "from django.contrib.gis.gdal.error import GDALException, SRSException, check_err",
+      "from django.contrib.gis.gdal.libgdal import lgdal",
+      "# Helper routines for retrieving pointers and/or values from",
+      "# arguments passed in by reference.",
+      "def arg_byref(args, offset=-1):"
+    ],
+    "imports": [
+      "from ctypes import c_void_p, string_at",
+      "from django.contrib.gis.gdal.error import GDALException, SRSException, check_err",
+      "from django.contrib.gis.gdal.libgdal import lgdal"
+    ],
+    "classes": [],
+    "functions": [
+      "arg_byref",
+      "ptr_byref",
+      "check_const_string",
+      "check_string",
+      "check_envelope",
+      "check_geom",
+      "check_geom_offset",
+      "check_srs",
+      "check_arg_errcode",
+      "check_errcode",
+      "check_pointer",
+      "check_str_arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_475_da7c36d225efaf07_AI_Chariot_Legacy_666_1.0.0_20260508_errcheck.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_ode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_ode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1822,
+  "content_sha256": "cc0c5ec411f87e798534ee1bbc41dbba0d4d2560b9cea7c56950e56228e8c246",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 59,
+    "char_count": 1822,
+    "preview_lines": [
+      "#from mpmath.calculus import ODE_step_euler, ODE_step_rk4, odeint, arange",
+      "from mpmath import odefun, cos, sin, mpf, sinc, mp",
+      "'''",
+      "solvers = [ODE_step_euler, ODE_step_rk4]",
+      "def test_ode1():",
+      "    \"\"\"",
+      "    Let's solve:",
+      "    x'' + w**2 * x = 0",
+      "    i.e. x1 = x, x2 = x1':",
+      "    x1' =  x2"
+    ],
+    "imports": [
+      "from mpmath import odefun, cos, sin, mpf, sinc, mp"
+    ],
+    "classes": [],
+    "functions": [
+      "test_ode1",
+      "test_ode2",
+      "test_odefun_rational",
+      "test_odefun_sinc_large",
+      "test_odefun_harmonic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_130_cc0c5ec411f87e79_AI_Chariot_Legacy_666_1.0.0_20260508_test_ode.py.json"
+}

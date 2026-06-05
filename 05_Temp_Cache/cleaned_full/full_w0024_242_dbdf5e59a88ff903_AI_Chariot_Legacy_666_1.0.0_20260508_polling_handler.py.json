@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_polling_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_polling_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12641,
+  "content_sha256": "dbdf5e59a88ff903a18dc35e1ed34d29f531d2b84ed0ae4d37bccaa3dfaa58ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 329,
+    "non_empty_lines": 278,
+    "char_count": 12641,
+    "preview_lines": [
+      "\"\"\"",
+      "Response Polling Handler for Background Responses with Cache",
+      "\"\"\"",
+      "import json",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid4",
+      "from litellm.caching.redis_cache import RedisCache",
+      "from litellm.types.llms.openai import ResponsesAPIResponse, ResponsesAPIStatus"
+    ],
+    "imports": [
+      "import json",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid4",
+      "from litellm.caching.redis_cache import RedisCache",
+      "from litellm.types.llms.openai import ResponsesAPIResponse, ResponsesAPIStatus"
+    ],
+    "classes": [
+      "ResponsePollingHandler"
+    ],
+    "functions": [
+      "should_use_polling_for_request"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_242_dbdf5e59a88ff903_AI_Chariot_Legacy_666_1.0.0_20260508_polling_handler.py.json"
+}

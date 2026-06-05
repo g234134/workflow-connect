@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOODSCAPE | 木地板裝修攻略與選品</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Bodoni+Moda:ital@1&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #FDFCFB; color: #333; }
+        .accent-font { font-family: 'Bodoni Moda', serif; }
+        .table-row:nth-child(even) { background-color: #F9F7F2; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <nav class="sticky top-0 bg-white/90 backdrop-blur-md z-50 px-8 py-4 border-b border-gray-100 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-[#5D4037]">WOODSCAPE.</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#comparison" class="hover:text-orange-800">選購攻略</a>
+                <a href="#construction" class="hover:text-orange-800">施工標準</a>
+                <a href="#maintenance" class="hover:text-orange-800">保養須知</a>
+            </div>
+        </nav>
+
+        <section id="comparison" class="py-20 container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-orange-800 font-bold tracking-widest text-xs">GUIDE</span>
+                <h2 class="text-4xl font-bold mt-4">三秒看懂：哪種地板適合你？</h2>
+            </div>
+            
+            [Image of comparative table of flooring types: solid wood vs engineered vs laminate]
+
+            <div class="overflow-x-auto rounded-xl border border-gray-200">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-[#5D4037] text-white">
+                        <tr>
+                            <th class="p-4">項目</th>
+                            <th class="p-4">實木地板</th>
+                            <th class="p-4">海島型實木</th>
+                            <th class="p-4">超耐磨強化</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row border-b">
+                            <td class="p-4 font-bold">材質結構</td>
+                            <td class="p-4">天然原木裁切</td>
+                            <td class="p-4">實木皮+夾板</td>
+                            <td class="p-4">木纖維高壓板</td>
+                        </tr>
+                        <tr class="table-row border-b">
+                            <td class="p-4 font-bold">抗潮性能</td>
+                            <td class="p-4 text-red-500">較差 (易膨脹)</td>
+                            <td class="p-4 text-green-600">優 (穩定度高)</td>
+                            <td class="p-4 text-green-600">優 (膨脹係數低)</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="p-4 font-bold">保養難度</td>
+                            <td class="p-4">需定期上油</td>
+                            <td class="p-4">不可過多水擦</td>
+                            <td class="p-4">容易，抗刮力強</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="construction" class="bg-[#F9F7F2] py-20">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-8 italic accent-font">Professional Standards.</h2>
+                    <div class="space-y-6 text-gray-600">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-[#5D4037] text-white rounded-full w-6 h-6 flex-shrink-0 flex items-center justify-center text-xs">1</div>
+                            <p><strong>防潮布鋪設：</strong> 重疊 15cm 並以防水膠帶封口，徹底阻絕地氣。</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-[#5D4037] text-white rounded-full w-6 h-6 flex-shrink-0 flex items-center justify-center text-xs">2</div>
+                            <p><strong>伸縮縫留設：</strong> 牆邊保留 8-12mm 縫隙，預防熱脹冷縮造成起翹。</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-[#5D4037] text-white rounded-full w-6 h-6 flex-shrink-0 flex items-center justify-center text-xs">3</div>
+                            <p><strong>地面平整度：</strong> 落差需在 3mm 以內，否則需進行自平泥或墊高處理。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-96 rounded-2xl overflow-hidden shadow-2xl" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1581850518616-0819c3a242c7?q=80&w=1200" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="maintenance" class="py-20 container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 underline decoration-[#5D4037] decoration-4 underline-offset-8">木地板保養 Q&A</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div v-for="(faq, i) in faqs" :key="i" class="border border-gray-200 rounded-lg p-6 bg-white hover:border-[#5D4037] transition">
+                    <h4 class="font-bold mb-2 flex items-center">
+                        <span class="text-orange-800 mr-2">Q.</span> {{ faq.q }}
+                    </h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        <span class="text-[#5D4037] font-bold mr-2">A.</span> {{ faq.a }}
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const { createApp, ref } = Vue;
+        createApp({
+            setup() {
+                const faqs = ref([
+                    { q: "木地板可以用濕拖把拖地嗎？", a: "建議使用微濕、不滴水的布，或使用木地板專用清潔劑。海島型或實木地板尤其怕水，長期潮濕會導致邊緣發黑。" },
+                    { q: "地板被傢俱刮傷了怎麼辦？", a: "淺層刮痕可使用木地板修補膏或蠟筆塗抹；若為深層刮痕，強化地板可能需局部更換，實木地板則可考慮重新研磨上漆。" },
+                    { q: "家裡有寵物，該選哪種地板？", a: "強烈推薦『超耐磨強化地板』，其表面有三氧化二鋁保護層，抗刮能力是實木地板的 10 倍以上。" }
+                ]);
+                return { faqs };
+            }
+        }).mount('#app');
+        AOS.init();
+    </script>
+</body>
+</html>

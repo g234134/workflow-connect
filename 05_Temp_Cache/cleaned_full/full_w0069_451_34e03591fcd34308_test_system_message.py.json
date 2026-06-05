@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 451,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\test_system_message.py",
+  "name": "test_system_message.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43076,
+  "content_sha256": "34e03591fcd34308a8cb3275ed86b160b83e31c58ffb3b61d504a2817182bc43",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1063,
+    "non_empty_lines": 901,
+    "char_count": 43073,
+    "preview_lines": [
+      "\"\"\"Comprehensive unit tests for system message handling in agents.",
+      "This module consolidates all system message and dynamic prompt tests:",
+      "- Basic system message scenarios (none, string, SystemMessage)",
+      "- ModelRequest system_message field support",
+      "- System message updates via middleware",
+      "- Multiple middleware chaining",
+      "- Cache control preservation",
+      "- Metadata merging",
+      "- Dynamic system prompt middleware",
+      "- Edge cases and error handling"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "from dataclasses import dataclass",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, TextContentBlock",
+      "from langgraph.runtime import Runtime",
+      "from langchain.agents.factory import create_agent",
+      "from langchain.agents.middleware.types import AgentState, ModelRequest, ModelResponse"
+    ],
+    "classes": [
+      "TestModelRequestSystemMessage",
+      "TestCreateAgentSystemMessage",
+      "TestSystemMessageUpdateViaMiddleware",
+      "TestMultipleMiddlewareChaining",
+      "TestCacheControlPreservation",
+      "TestMetadataMerging",
+      "TestDynamicSystemPromptMiddleware",
+      "TestSystemMessageMiddlewareIntegration",
+      "TestEdgeCasesAndErrorHandling"
+    ],
+    "functions": [
+      "_make_request"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_451_34e03591fcd34308_test_system_message.py.json"
+}

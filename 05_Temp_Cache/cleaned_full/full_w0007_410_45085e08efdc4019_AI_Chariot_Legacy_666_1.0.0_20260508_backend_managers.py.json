@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_managers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_managers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11795,
+  "content_sha256": "45085e08efdc40195a5ac60c6c09acc2ed143ca53b6e62d32392c4160a2d9250",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 387,
+    "non_empty_lines": 314,
+    "char_count": 11795,
+    "preview_lines": [
+      "from matplotlib import _api, backend_tools, cbook, widgets",
+      "class ToolEvent:",
+      "    \"\"\"Event for tool manipulation (add/remove).\"\"\"",
+      "    def __init__(self, name, sender, tool, data=None):",
+      "        self.name = name",
+      "        self.sender = sender",
+      "        self.tool = tool",
+      "        self.data = data",
+      "class ToolTriggerEvent(ToolEvent):",
+      "    \"\"\"Event to inform that a tool has been triggered.\"\"\""
+    ],
+    "imports": [
+      "from matplotlib import _api, backend_tools, cbook, widgets"
+    ],
+    "classes": [
+      "ToolEvent",
+      "ToolTriggerEvent",
+      "ToolManagerMessageEvent",
+      "ToolManager"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_410_45085e08efdc4019_AI_Chariot_Legacy_666_1.0.0_20260508_backend_managers.py.json"
+}

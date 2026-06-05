@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:47:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\_core\\_simd.pyi",
+  "name": "_simd.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 1013,
+  "content_sha256": "bcbaf77267d4e43f94cad20f133407530a043991b37cb23adeec0f60df9bbc85",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 28,
+    "char_count": 1013,
+    "preview_lines": [
+      "from types import ModuleType",
+      "from typing import TypedDict, type_check_only",
+      "# NOTE: these 5 are only defined on systems with an intel processor",
+      "SSE42: ModuleType | None = ...",
+      "FMA3: ModuleType | None = ...",
+      "AVX2: ModuleType | None = ...",
+      "AVX512F: ModuleType | None = ...",
+      "AVX512_SKX: ModuleType | None = ...",
+      "# NOTE: these 2 are only defined on systems with an arm processor",
+      "ASIMD: ModuleType | None = ..."
+    ],
+    "imports": [
+      "from types import ModuleType",
+      "from typing import TypedDict, type_check_only"
+    ],
+    "classes": [
+      "SimdTargets"
+    ],
+    "functions": [
+      "clear_floatstatus",
+      "get_floatstatus"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_120_bcbaf77267d4e43f__simd.pyi.json"
+}

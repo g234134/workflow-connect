@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 491,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__typedattr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__typedattr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2508,
+  "content_sha256": "3f8a33662927dfe0dba6861cbf28214bf14e60081b994c5ea14f3e2ffd3ba593",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 59,
+    "char_count": 2508,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable, Mapping",
+      "from typing import Any, TypeVar, final, overload",
+      "from ._exceptions import TypedAttributeLookupError",
+      "T_Attr = TypeVar(\"T_Attr\")",
+      "T_Default = TypeVar(\"T_Default\")",
+      "undefined = object()",
+      "def typed_attribute() -> Any:",
+      "    \"\"\"Return a unique object, used to mark typed attributes.\"\"\"",
+      "    return object()"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable, Mapping",
+      "from typing import Any, TypeVar, final, overload",
+      "from ._exceptions import TypedAttributeLookupError"
+    ],
+    "classes": [
+      "TypedAttributeSet",
+      "TypedAttributeProvider"
+    ],
+    "functions": [
+      "typed_attribute"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_491_3f8a33662927dfe0_AI_Chariot_Legacy_666_1.0.0_20260508__typedattr.py.json"
+}

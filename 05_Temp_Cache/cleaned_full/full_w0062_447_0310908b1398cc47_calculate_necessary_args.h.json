@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 447,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\runtime\\calculate_necessary_args.h",
+  "name": "calculate_necessary_args.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2350,
+  "content_sha256": "0310908b1398cc47e19d890cec1c69296a9c5150bb4d8def9234e956c873c992",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 61,
+    "char_count": 2350,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/jit/frontend/schema_matching.h>",
+      "#include <cstddef>",
+      "namespace torch::jit {",
+      "// Calculates the number of args that need to be passed in.",
+      "// Less args may be needed if defaults are provided.",
+      "// Returns: {number args needed, number of out args}",
+      "inline std::pair<int64_t, int64_t> CalculateNecessaryArgs(",
+      "    const std::vector<Argument>& schema_args,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_447_0310908b1398cc47_calculate_necessary_args.h.json"
+}

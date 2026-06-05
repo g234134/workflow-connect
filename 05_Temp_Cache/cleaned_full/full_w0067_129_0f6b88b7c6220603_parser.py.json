@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 129,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\query_constructor\\parser.py",
+  "name": "parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8843,
+  "content_sha256": "0f6b88b7c62206035c14603e8f5eaa8459f38086bdf205304f3441ff3297ea3f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 280,
+    "non_empty_lines": 230,
+    "char_count": 8840,
+    "preview_lines": [
+      "import datetime",
+      "import warnings",
+      "from collections.abc import Sequence",
+      "from typing import Any, Literal",
+      "from langchain_core.utils import check_package_version",
+      "from typing_extensions import TypedDict",
+      "try:",
+      "    check_package_version(\"lark\", gte_version=\"1.1.5\")",
+      "    from lark import Lark, Transformer, v_args",
+      "    _HAS_LARK = True"
+    ],
+    "imports": [
+      "import datetime",
+      "import warnings",
+      "from collections.abc import Sequence",
+      "from typing import Any, Literal",
+      "from langchain_core.utils import check_package_version",
+      "from typing_extensions import TypedDict",
+      "from lark import Lark, Transformer, v_args",
+      "from langchain_core.structured_query import ("
+    ],
+    "classes": [
+      "ISO8601Date",
+      "ISO8601DateTime",
+      "QueryTransformer"
+    ],
+    "functions": [
+      "get_parser"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_129_0f6b88b7c6220603_parser.py.json"
+}

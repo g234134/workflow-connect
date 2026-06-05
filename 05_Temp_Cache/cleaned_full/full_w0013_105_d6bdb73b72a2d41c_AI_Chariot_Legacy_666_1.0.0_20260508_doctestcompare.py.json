@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_doctestcompare.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_doctestcompare.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18219,
+  "content_sha256": "d6bdb73b72a2d41ca9ab39155a1f7b144751abe10dbe61445ae001396744d0ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 488,
+    "non_empty_lines": 440,
+    "char_count": 18219,
+    "preview_lines": [
+      "\"\"\"",
+      "lxml-based doctest output comparison.",
+      "Note: normally, you should just import the `lxml.usedoctest` and",
+      "`lxml.html.usedoctest` modules from within a doctest, instead of this",
+      "one::",
+      "    >>> import lxml.usedoctest # for XML output",
+      "    >>> import lxml.html.usedoctest # for HTML output",
+      "To use this module directly, you must call ``lxmldoctest.install()``,",
+      "which will cause doctest to use this in all subsequent calls.",
+      "This changes the way output is checked and comparisons are made for"
+    ],
+    "imports": [
+      "from lxml import etree",
+      "import sys",
+      "import re",
+      "import doctest",
+      "from html import escape as html_escape",
+      "from cgi import escape as html_escape"
+    ],
+    "classes": [
+      "LXMLOutputChecker",
+      "LHTMLOutputChecker",
+      "_RestoreChecker"
+    ],
+    "functions": [
+      "strip",
+      "norm_whitespace",
+      "html_fromstring",
+      "install",
+      "temp_install",
+      "_find_doctest_frame"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_105_d6bdb73b72a2d41c_AI_Chariot_Legacy_666_1.0.0_20260508_doctestcompare.py.json"
+}

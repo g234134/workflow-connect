@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\core\\RefcountedDeleter.h",
+  "name": "RefcountedDeleter.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2243,
+  "content_sha256": "239548268c86b1875b926e06d725316fc98add64054a06b05f829020f8c5f1b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 42,
+    "char_count": 2243,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/Storage.h>",
+      "#include <c10/util/UniqueVoidPtr.h>",
+      "#include <atomic>",
+      "#include <memory>",
+      "namespace c10 {",
+      "// A RefcountedDeleterContext object is used as the `ctx` argument for DataPtr",
+      "// to implement a shared DataPtr. Normally, a DataPtr is unique, but we use",
+      "// this custom context and the `refcounted_deleter` function below to make the",
+      "// DataPtr act like a non-unique DataPtr. This context object holds onto an"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_180_239548268c86b187_RefcountedDeleter.h.json"
+}

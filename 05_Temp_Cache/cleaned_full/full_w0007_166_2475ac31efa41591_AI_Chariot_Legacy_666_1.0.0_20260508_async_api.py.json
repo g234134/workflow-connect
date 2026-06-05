@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_async_api.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_async_api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24306,
+  "content_sha256": "2475ac31efa41591a6a32280a78263781f9c6180206fbfb0b24c5748f52d9f12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 765,
+    "non_empty_lines": 652,
+    "char_count": 24306,
+    "preview_lines": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Sequence, Optional, List",
+      "from uuid import UUID",
+      "from overrides import override",
+      "from chromadb.api.collection_configuration import (",
+      "    CreateCollectionConfiguration,",
+      "    UpdateCollectionConfiguration,",
+      ")",
+      "from chromadb.auth import UserIdentity",
+      "from chromadb.api.models.AsyncCollection import AsyncCollection"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Sequence, Optional, List",
+      "from uuid import UUID",
+      "from overrides import override",
+      "from chromadb.api.collection_configuration import (",
+      "from chromadb.auth import UserIdentity",
+      "from chromadb.api.models.AsyncCollection import AsyncCollection",
+      "from chromadb.config import DEFAULT_DATABASE, DEFAULT_TENANT",
+      "from chromadb.api.types import (",
+      "from chromadb.execution.expression.plan import Search",
+      "from chromadb.config import Component, Settings",
+      "from chromadb.types import Database, Tenant, Collection as CollectionModel",
+      "import chromadb.utils.embedding_functions as ef"
+    ],
+    "classes": [
+      "AsyncBaseAPI",
+      "AsyncClientAPI",
+      "AsyncAdminAPI",
+      "AsyncServerAPI"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_166_2475ac31efa41591_AI_Chariot_Legacy_666_1.0.0_20260508_async_api.py.json"
+}

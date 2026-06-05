@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\cuda\\memory_snapshot.h",
+  "name": "memory_snapshot.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 782,
+  "content_sha256": "ee826e368c6b08c819213a3f92827cd80e140d70afd7e74c9b4a25b7f8c6c60f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 20,
+    "char_count": 782,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/Optional.h>",
+      "#include <torch/csrc/Export.h>",
+      "#include <string>",
+      "namespace torch::cuda {",
+      "// C++-only versions of these, for python use",
+      "// those defined in cuda/Module.cpp which also record python state.",
+      "TORCH_CUDA_CU_API void _record_memory_history(",
+      "    bool enabled,",
+      "    bool record_context = true,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_141_ee826e368c6b08c8_memory_snapshot.h.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 445,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__decomp_polar.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__decomp_polar.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3689,
+  "content_sha256": "e0a00940080aa0de96fe89c433e9b7a06a9fc022b7fff0120bb50530574a71a7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 96,
+    "char_count": 3689,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy.linalg import svd",
+      "__all__ = ['polar']",
+      "def polar(a, side=\"right\"):",
+      "    \"\"\"",
+      "    Compute the polar decomposition.",
+      "    Returns the factors of the polar decomposition [1]_ `u` and `p` such",
+      "    that ``a = up`` (if `side` is \"right\") or ``a = pu`` (if `side` is",
+      "    \"left\"), where `p` is positive semidefinite. Depending on the shape",
+      "    of `a`, either the rows or columns of `u` are orthonormal. When `a`"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.linalg import svd"
+    ],
+    "classes": [],
+    "functions": [
+      "polar"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_445_e0a00940080aa0de_AI_Chariot_Legacy_666_1.0.0_20260508__decomp_polar.py.json"
+}

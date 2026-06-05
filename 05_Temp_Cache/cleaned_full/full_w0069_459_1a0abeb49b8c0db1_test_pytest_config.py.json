@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\test_pytest_config.py",
+  "name": "test_pytest_config.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 251,
+  "content_sha256": "1a0abeb49b8c0db143ab8813a4f5d13adbdc4422a2b8d0ad75c0006afc204cc0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 9,
+    "non_empty_lines": 7,
+    "char_count": 248,
+    "preview_lines": [
+      "import pytest",
+      "import pytest_socket",
+      "import requests",
+      "def test_socket_disabled() -> None:",
+      "    \"\"\"This test should fail.\"\"\"",
+      "    with pytest.raises(pytest_socket.SocketBlockedError):",
+      "        requests.get(\"https://www.example.com\", timeout=1)"
+    ],
+    "imports": [
+      "import pytest",
+      "import pytest_socket",
+      "import requests"
+    ],
+    "classes": [],
+    "functions": [
+      "test_socket_disabled"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_459_1a0abeb49b8c0db1_test_pytest_config.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:47:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_subclasses\\functional_tensor.py",
+  "name": "functional_tensor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23709,
+  "content_sha256": "653112e44ae9f154652aa65dbfa372d545f52fe650eac930ac9e2f49d473d325",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 552,
+    "non_empty_lines": 456,
+    "char_count": 23709,
+    "preview_lines": [
+      "import contextlib",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Callable, ContextManager, Tuple",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import _functionalization_reapply_views_tls as _reapply_views",
+      "from torch.utils._python_dispatch import return_and_correct_aliasing, TorchDispatchMode",
+      "not_implemented_log = torch._logging.getArtifactLogger(__name__, \"not_implemented\")",
+      "class FunctionalTensor(torch.Tensor):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import contextlib",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Callable, ContextManager, Tuple",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import _functionalization_reapply_views_tls as _reapply_views",
+      "from torch.utils._python_dispatch import return_and_correct_aliasing, TorchDispatchMode",
+      "from a program. If you perform a mutable operation on a functional tensor,"
+    ],
+    "classes": [
+      "FunctionalTensor",
+      "FunctionalTensorMode",
+      "BaseFunctionalizeAPI",
+      "PythonFunctionalizeAPI",
+      "CppFunctionalizeAPI",
+      "FunctorchFunctionalizeAPI"
+    ],
+    "functions": [
+      "maybe_disable_functional_mode",
+      "unset_functional_temporarily",
+      "dispatch_functionalize"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_242_653112e44ae9f154_functional_tensor.py.json"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cpu_vec_isa.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cpu_vec_isa.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12211,
+  "content_sha256": "8ac3c63e0bc24f69294abdf64ccb5e1285e8f42377f53f7815c93d0a9882e042",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 373,
+    "non_empty_lines": 295,
+    "char_count": 12211,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import dataclasses",
+      "import functools",
+      "import os",
+      "import platform",
+      "import re",
+      "import subprocess",
+      "import sys",
+      "from typing import Any, Callable, Dict, List",
+      "import torch"
+    ],
+    "imports": [
+      "import dataclasses",
+      "import functools",
+      "import os",
+      "import platform",
+      "import re",
+      "import subprocess",
+      "import sys",
+      "from typing import Any, Callable, Dict, List",
+      "import torch",
+      "from torch._inductor import config",
+      "from torch._inductor.cpp_builder import get_compiler_version_info, get_cpp_compiler",
+      "import torch",
+      "from ctypes import cdll",
+      "from torch._inductor.codecache import get_lock_dir, LOCK_TIMEOUT, write",
+      "from torch._inductor.cpp_builder import (",
+      "from filelock import FileLock"
+    ],
+    "classes": [
+      "VecISA",
+      "VecNEON",
+      "VecAVX512",
+      "VecAMX",
+      "VecAVX2",
+      "VecZVECTOR",
+      "VecVSX",
+      "InvalidVecISA"
+    ],
+    "functions": [
+      "_get_isa_dry_compile_fingerprint",
+      "x86_isa_checker",
+      "valid_vec_isa_list",
+      "pick_vec_isa"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_432_8ac3c63e0bc24f69_AI_Chariot_Legacy_666_1.0.0_20260508_cpu_vec_isa.py.json"
+}

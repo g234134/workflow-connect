@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_laplacianmatrix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_laplacianmatrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20536,
+  "content_sha256": "8911c769b99bf52e028433f1dd89f6f9620440577f7e5143dc066403893ea326",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 617,
+    "non_empty_lines": 492,
+    "char_count": 20528,
+    "preview_lines": [
+      "\"\"\"Laplacian matrix of graphs.",
+      "All calculations here are done using the out-degree. For Laplacians using",
+      "in-degree, use `G.reverse(copy=False)` instead of `G` and take the transpose.",
+      "The `laplacian_matrix` function provides an unnormalized matrix,",
+      "while `normalized_laplacian_matrix`, `directed_laplacian_matrix`,",
+      "and `directed_combinatorial_laplacian_matrix` are all normalized.",
+      "\"\"\"",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "__all__ = ["
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "import scipy as sp"
+    ],
+    "classes": [],
+    "functions": [
+      "laplacian_matrix",
+      "normalized_laplacian_matrix",
+      "total_spanning_tree_weight",
+      "directed_laplacian_matrix",
+      "directed_combinatorial_laplacian_matrix",
+      "_transition_matrix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_036_8911c769b99bf52e_AI_Chariot_Legacy_666_1.0.0_20260508_laplacianmatrix.py.json"
+}

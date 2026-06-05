@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 325,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\secrets_plugins\\atlassian_api_token.py",
+  "name": "atlassian_api_token.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 673,
+  "content_sha256": "741af78892f3173751fffc4789e06beeb4bb9b4bdc266c478633146c8e87d512",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 18,
+    "char_count": 673,
+    "preview_lines": [
+      "\"\"\"",
+      "This plugin searches for Atlassian API tokens",
+      "\"\"\"",
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector",
+      "class AtlassianApiTokenDetector(RegexBasedDetector):",
+      "    \"\"\"Scans for Atlassian API tokens.\"\"\"",
+      "    @property",
+      "    def secret_type(self) -> str:",
+      "        return \"Atlassian API token\""
+    ],
+    "imports": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector"
+    ],
+    "classes": [
+      "AtlassianApiTokenDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_325_741af78892f31737_atlassian_api_token.py.json"
+}

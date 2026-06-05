@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 318,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_edmondskarp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_edmondskarp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8056,
+  "content_sha256": "3c42302dfb5ebd2d95607693cf364c48e2cfcbb41204fb163de763c75951e82b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 241,
+    "non_empty_lines": 203,
+    "char_count": 8056,
+    "preview_lines": [
+      "\"\"\"",
+      "Edmonds-Karp algorithm for maximum flow problems.",
+      "\"\"\"",
+      "import networkx as nx",
+      "from networkx.algorithms.flow.utils import build_residual_network",
+      "__all__ = [\"edmonds_karp\"]",
+      "def edmonds_karp_core(R, s, t, cutoff):",
+      "    \"\"\"Implementation of the Edmonds-Karp algorithm.\"\"\"",
+      "    R_nodes = R.nodes",
+      "    R_pred = R.pred"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.algorithms.flow.utils import build_residual_network"
+    ],
+    "classes": [],
+    "functions": [
+      "edmonds_karp_core",
+      "edmonds_karp_impl",
+      "edmonds_karp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_318_3c42302dfb5ebd2d_AI_Chariot_Legacy_666_1.0.0_20260508_edmondskarp.py.json"
+}

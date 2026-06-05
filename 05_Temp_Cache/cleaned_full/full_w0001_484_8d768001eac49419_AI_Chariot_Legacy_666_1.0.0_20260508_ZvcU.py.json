@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 484,
+  "generated_at": "2026-05-08T18:44:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ZvcU.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ZvcU.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15616,
+  "content_sha256": "8d768001eac49419ae4f9d6681d5afcf65cbdf8b6c7933472d95fb1c80ad9ff7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 302,
+    "non_empty_lines": 258,
+    "char_count": 15396,
+    "preview_lines": [
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Generator, Mapping, Sequence",
+      "from typing import Any, TypedDict",
+      "from graphon.model_runtime.entities.llm_entities import LLMResult, LLMResultChunk, LLMResultChunkDelta, LLMUsage",
+      "from graphon.model_runtime.entities.message_entities import (",
+      "    AssistantPromptMessage,",
+      "    PromptMessage,",
+      "    PromptMessageTool,"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Generator, Mapping, Sequence",
+      "from typing import Any, TypedDict",
+      "from graphon.model_runtime.entities.llm_entities import LLMResult, LLMResultChunk, LLMResultChunkDelta, LLMUsage",
+      "from graphon.model_runtime.entities.message_entities import (",
+      "from core.agent.base_agent_runner import BaseAgentRunner",
+      "from core.agent.entities import AgentScratchpadUnit",
+      "from core.agent.errors import AgentMaxIterationError",
+      "from core.agent.output_parser.cot_output_parser import CotAgentOutputParser",
+      "from core.app.apps.base_app_queue_manager import PublishFrom",
+      "from core.app.entities.queue_entities import QueueAgentThoughtEvent, QueueMessageEndEvent, QueueMessageFileEvent",
+      "from core.ops.ops_trace_manager import TraceQueueManager",
+      "from core.prompt.agent_history_prompt_transform import AgentHistoryPromptTransform",
+      "from core.tools.__base.tool import Tool",
+      "from core.tools.entities.tool_entities import ToolInvokeMeta",
+      "from core.tools.tool_engine import ToolEngine",
+      "from models.model import Message"
+    ],
+    "classes": [
+      "ActionDict",
+      "CotAgentRunner"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_484_8d768001eac49419_AI_Chariot_Legacy_666_1.0.0_20260508_ZvcU.py.json"
+}

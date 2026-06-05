@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:49:15+00:00",
+  "source_path": "D:\\大唐三省六部\\05_Temp_Cache\\raw_inbound\\AI_Chariot_Legacy_666_1.0.0_20260508_crawl-optimization.php",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_crawl-optimization.php",
+  "extension": ".php",
+  "original_type": "php",
+  "size_bytes": 10084,
+  "content_sha256": "e32b63dcab4b7e3d4c9edf864417038749e273b0acf93976b9ebfcf6a197b454",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 290,
+    "non_empty_lines": 259,
+    "char_count": 10084,
+    "preview_lines": [
+      "<?php",
+      "/**",
+      " * Crawl Optimization Class",
+      " * This class is responsible for optimizing crawl settings by removing category bases in URLs",
+      " * and managing rewrite rules for categories and product categories in WooCommerce.",
+      " *",
+      " * @since 1.0.0",
+      " * @package surerank",
+      " */",
+      "namespace SureRank\\Inc\\Frontend;"
+    ],
+    "has_php_tag": true,
+    "namespaces": [
+      "SureRank\\Inc\\Frontend"
+    ],
+    "uses": [
+      "SureRank\\Inc\\Crawl_Optimization\\Utils",
+      "SureRank\\Inc\\Functions\\Helper",
+      "SureRank\\Inc\\Traits\\Get_Instance"
+    ],
+    "classes": [
+      "Crawl_Optimization"
+    ],
+    "functions": [
+      "__construct",
+      "remove_category_base_from_links",
+      "add_custom_redirect_query_var",
+      "handle_redirect_for_old_category",
+      "add_rewrite_rules_for_categories",
+      "surerank_filter_product_category_rewrite_rules",
+      "surerank_remove_product_category_base",
+      "surerank_product_category_redirect",
+      "generate_clean_category_rules",
+      "get_category_path_from_map",
+      "append_category_rewrite"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_203_e32b63dcab4b7e3d_AI_Chariot_Legacy_666_1.0.0_20260508_crawl-optimization.php.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 11,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_http_parsing_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_http_parsing_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18725,
+  "content_sha256": "6e516f8eb8a58c3dea1a96ededbe441b1b357a78a57518e5bf703254cdaf7c9e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 505,
+    "non_empty_lines": 432,
+    "char_count": 18725,
+    "preview_lines": [
+      "import json",
+      "import re",
+      "from typing import Any, Collection, Dict, List, Optional",
+      "import orjson",
+      "from fastapi import Request, UploadFile, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import ProxyException",
+      "from litellm.proxy.common_utils.callback_utils import (",
+      "    get_metadata_variable_name_from_kwargs,",
+      ")"
+    ],
+    "imports": [
+      "import json",
+      "import re",
+      "from typing import Any, Collection, Dict, List, Optional",
+      "import orjson",
+      "from fastapi import Request, UploadFile, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import ProxyException",
+      "from litellm.proxy.common_utils.callback_utils import (",
+      "from litellm.types.router import Deployment",
+      "from litellm.proxy.proxy_server import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_safe_get_request_parsed_body",
+      "_safe_get_request_query_params",
+      "_safe_set_request_parsed_body",
+      "_safe_get_request_headers",
+      "check_file_size_under_limit",
+      "extract_nested_form_metadata",
+      "get_tags_from_request_body",
+      "populate_request_with_path_params",
+      "_add_vector_store_id_from_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_011_6e516f8eb8a58c3d_AI_Chariot_Legacy_666_1.0.0_20260508_http_parsing_utils.py.json"
+}

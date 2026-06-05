@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 201,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_check_for_update.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_check_for_update.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 481,
+  "content_sha256": "48b7a176bbefca0ccf165a93b21d9d0d309792e09f9f715a29fb3dbac9941a74",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 10,
+    "char_count": 481,
+    "preview_lines": [
+      "import pkg_resources",
+      "import requests",
+      "from packaging import version",
+      "def check_for_update():",
+      "    # Fetch the latest version from the PyPI API",
+      "    response = requests.get(f\"https://pypi.org/pypi/open-interpreter/json\")",
+      "    latest_version = response.json()[\"info\"][\"version\"]",
+      "    # Get the current version using pkg_resources",
+      "    current_version = pkg_resources.get_distribution(\"open-interpreter\").version",
+      "    return version.parse(latest_version) > version.parse(current_version)"
+    ],
+    "imports": [
+      "import pkg_resources",
+      "import requests",
+      "from packaging import version"
+    ],
+    "classes": [],
+    "functions": [
+      "check_for_update"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_201_48b7a176bbefca0c_AI_Chariot_Legacy_666_1.0.0_20260508_check_for_update.py.json"
+}

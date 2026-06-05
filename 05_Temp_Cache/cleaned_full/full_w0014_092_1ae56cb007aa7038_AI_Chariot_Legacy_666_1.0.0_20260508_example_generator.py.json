@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_example_generator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_example_generator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 741,
+  "content_sha256": "1ae56cb007aa7038681863bf12c75890ad963ab91ffc7d32cc98335a741246ad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 19,
+    "char_count": 741,
+    "preview_lines": [
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import StrOutputParser",
+      "from langchain_core.prompts.few_shot import FewShotPromptTemplate",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "TEST_GEN_TEMPLATE_SUFFIX = \"Add another example.\"",
+      "def generate_example(",
+      "    examples: list[dict],",
+      "    llm: BaseLanguageModel,",
+      "    prompt_template: PromptTemplate,",
+      ") -> str:"
+    ],
+    "imports": [
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import StrOutputParser",
+      "from langchain_core.prompts.few_shot import FewShotPromptTemplate",
+      "from langchain_core.prompts.prompt import PromptTemplate"
+    ],
+    "classes": [],
+    "functions": [
+      "generate_example"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_092_1ae56cb007aa7038_AI_Chariot_Legacy_666_1.0.0_20260508_example_generator.py.json"
+}

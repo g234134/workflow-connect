@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 137,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\etcd_server.py",
+  "name": "etcd_server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8598,
+  "content_sha256": "afd7998baa984fa9658f193f30ffaefe1538403868c53525adcdd54a66e56f28",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 246,
+    "non_empty_lines": 205,
+    "char_count": 8598,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "import atexit",
+      "import logging",
+      "import os",
+      "import shlex"
+    ],
+    "imports": [
+      "import atexit",
+      "import logging",
+      "import os",
+      "import shlex",
+      "import shutil",
+      "import socket",
+      "import subprocess",
+      "import tempfile",
+      "import time",
+      "from typing import Optional, TextIO, Union",
+      "import etcd  # type: ignore[import]"
+    ],
+    "classes": [
+      "EtcdServer"
+    ],
+    "functions": [
+      "find_free_port",
+      "stop_etcd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_137_afd7998baa984fa9_etcd_server.py.json"
+}

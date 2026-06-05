@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 312,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_initializers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_initializers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9267,
+  "content_sha256": "2c61da31fceed03279607f534ddf9646a07560efeae6783095c153bfe44ff823",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 224,
+    "non_empty_lines": 189,
+    "char_count": 9267,
+    "preview_lines": [
+      "# litellm/proxy/guardrails/guardrail_initializers.py",
+      "from typing import Any, Dict, List, Optional",
+      "import litellm",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.types.guardrails import *",
+      "def initialize_bedrock(litellm_params: LitellmParams, guardrail: Guardrail):",
+      "    from litellm.proxy.guardrails.guardrail_hooks.bedrock_guardrails import (",
+      "        BedrockGuardrail,",
+      "    )",
+      "    _bedrock_callback = BedrockGuardrail("
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Optional",
+      "import litellm",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.types.guardrails import *",
+      "from litellm.proxy.guardrails.guardrail_hooks.bedrock_guardrails import (",
+      "from litellm.proxy.guardrails.guardrail_hooks.lakera_ai import lakeraAI_Moderation",
+      "from litellm.proxy.guardrails.guardrail_hooks.lakera_ai_v2 import LakeraAIGuardrail",
+      "from litellm.proxy.guardrails.guardrail_hooks.presidio import (",
+      "from litellm_enterprise.enterprise_callbacks.secret_detection import (",
+      "from litellm.proxy.guardrails.guardrail_hooks.tool_permission import (",
+      "from litellm.proxy.guardrails.guardrail_hooks.lasso import LassoGuardrail",
+      "from litellm.proxy.guardrails.guardrail_hooks.panw_prisma_airs import ("
+    ],
+    "classes": [],
+    "functions": [
+      "initialize_bedrock",
+      "initialize_lakera",
+      "initialize_lakera_v2",
+      "initialize_presidio",
+      "initialize_hide_secrets",
+      "initialize_tool_permission",
+      "initialize_lasso",
+      "initialize_panw_prisma_airs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_312_2c61da31fceed032_AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_initializers.py.json"
+}

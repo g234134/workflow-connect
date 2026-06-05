@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\logic\\inference.py",
+  "name": "inference.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8983,
+  "content_sha256": "2760fcb7d887092768b734bd8aaea0dc4bcb3ec236075d2488d6e61ec233fe86",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 271,
+    "char_count": 8983,
+    "preview_lines": [
+      "\"\"\"Inference in propositional logic\"\"\"",
+      "from sympy.logic.boolalg import And, Not, conjuncts, to_cnf, BooleanFunction",
+      "from sympy.core.sorting import ordered",
+      "from sympy.core.sympify import sympify",
+      "from sympy.external.importtools import import_module",
+      "def literal_symbol(literal):",
+      "    \"\"\"",
+      "    The symbol in this literal (without the negation).",
+      "    Examples",
+      "    ========"
+    ],
+    "imports": [
+      "from sympy.logic.boolalg import And, Not, conjuncts, to_cnf, BooleanFunction",
+      "from sympy.core.sorting import ordered",
+      "from sympy.core.sympify import sympify",
+      "from sympy.external.importtools import import_module",
+      "from sympy.logic.algorithms.dpll import dpll_satisfiable",
+      "from sympy.logic.algorithms.dpll2 import dpll_satisfiable",
+      "from sympy.logic.algorithms.pycosat_wrapper import pycosat_satisfiable",
+      "from sympy.logic.algorithms.minisat22_wrapper import minisat22_satisfiable",
+      "from sympy.logic.algorithms.z3_wrapper import z3_satisfiable",
+      "from sympy.core.symbol import Symbol"
+    ],
+    "classes": [
+      "KB",
+      "PropKB"
+    ],
+    "functions": [
+      "literal_symbol",
+      "satisfiable",
+      "valid",
+      "pl_true",
+      "entails"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_340_2760fcb7d8870927_inference.py.json"
+}

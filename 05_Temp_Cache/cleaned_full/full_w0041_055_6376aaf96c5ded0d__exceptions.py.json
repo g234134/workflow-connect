@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\anyio\\_core\\_exceptions.py",
+  "name": "_exceptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4407,
+  "content_sha256": "6376aaf96c5ded0d87ab04a0ee764fbd1b0712e19aceffea79eb7a82a10174f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 115,
+    "char_count": 4407,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import sys",
+      "from collections.abc import Generator",
+      "from textwrap import dedent",
+      "from typing import Any",
+      "if sys.version_info < (3, 11):",
+      "    from exceptiongroup import BaseExceptionGroup",
+      "class BrokenResourceError(Exception):",
+      "    \"\"\"",
+      "    Raised when trying to use a resource that has been rendered unusable due to external"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import sys",
+      "from collections.abc import Generator",
+      "from textwrap import dedent",
+      "from typing import Any",
+      "from exceptiongroup import BaseExceptionGroup"
+    ],
+    "classes": [
+      "BrokenResourceError",
+      "BrokenWorkerProcess",
+      "BrokenWorkerInterpreter",
+      "BusyResourceError",
+      "ClosedResourceError",
+      "ConnectionFailed",
+      "DelimiterNotFound",
+      "EndOfStream",
+      "IncompleteRead",
+      "TypedAttributeLookupError",
+      "WouldBlock",
+      "NoEventLoopError",
+      "RunFinishedError"
+    ],
+    "functions": [
+      "iterate_exceptions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_055_6376aaf96c5ded0d__exceptions.py.json"
+}

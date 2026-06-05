@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 306,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_jvp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_jvp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12038,
+  "content_sha256": "b498a923ee02ecb74295b51061e550aa557c7a349bab1d681ea6d74ebc9a04ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 335,
+    "non_empty_lines": 278,
+    "char_count": 12038,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import inspect",
+      "from typing import Callable, Dict, List, Optional, Tuple",
+      "import torch",
+      "import torch._decomp",
+      "from torch import Tensor",
+      "from torch._prims_common.wrappers import _maybe_remove_out_wrapper",
+      "decomposition_table = torch._decomp.decomposition_table",
+      "decomposition_table_for_jvp: Dict[torch._ops.OperatorBase, Callable] = {}"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Callable, Dict, List, Optional, Tuple",
+      "import torch",
+      "import torch._decomp",
+      "from torch import Tensor",
+      "from torch._prims_common.wrappers import _maybe_remove_out_wrapper"
+    ],
+    "classes": [],
+    "functions": [
+      "maybe_register_decomposition",
+      "register_decomposition_for_jvp",
+      "_register_jit_decomposition_for_jvp",
+      "trace",
+      "log_sigmoid_forward",
+      "recompute_mean_var",
+      "native_layer_norm_backward",
+      "prod",
+      "native_batch_norm_backward",
+      "batch_norm_backward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_306_b498a923ee02ecb7_AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_jvp.py.json"
+}

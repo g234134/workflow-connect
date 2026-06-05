@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 405,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_qt_for_kernel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_qt_for_kernel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3442,
+  "content_sha256": "44e2df37e35c03f87e66066c9bda415b5cb9ec8fe0c6726639da51c2fa70f030",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 104,
+    "char_count": 3442,
+    "preview_lines": [
+      "\"\"\"Import Qt in a manner suitable for an IPython kernel.",
+      "This is the import used for the `gui=qt` or `matplotlib=qt` initialization.",
+      "Import Priority:",
+      "if Qt has been imported anywhere else:",
+      "   use that",
+      "if matplotlib has been imported and doesn't support v2 (<= 1.0.1):",
+      "    use PyQt4 @v1",
+      "Next, ask QT_API env variable",
+      "if QT_API not set:",
+      "    ask matplotlib what it's using. If Qt4Agg or Qt5Agg, then use the"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "from IPython.external.qt_loaders import ("
+    ],
+    "classes": [],
+    "functions": [
+      "matplotlib_options",
+      "get_options"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_405_44e2df37e35c03f8_AI_Chariot_Legacy_666_1.0.0_20260508_qt_for_kernel.py.json"
+}

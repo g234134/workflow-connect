@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 184,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_securetransport.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_securetransport.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34446,
+  "content_sha256": "15e7f5208514147aa97afcd78833db20690329c858d8554a79578b191d50ab78",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 920,
+    "non_empty_lines": 780,
+    "char_count": 34446,
+    "preview_lines": [
+      "\"\"\"",
+      "SecureTranport support for urllib3 via ctypes.",
+      "This makes platform-native TLS available to urllib3 users on macOS without the",
+      "use of a compiler. This is an important feature because the Python Package",
+      "Index is moving to become a TLSv1.2-or-higher server, and the default OpenSSL",
+      "that ships with macOS is not capable of doing TLSv1.2. The only way to resolve",
+      "this is to give macOS users an alternative solution to the problem, and that",
+      "solution is to use SecureTransport.",
+      "We use ctypes here because this solution must not require a compiler. That's",
+      "because pip is not allowed to require a compiler either."
+    ],
+    "imports": [
+      "import pip._vendor.urllib3.contrib.securetransport as securetransport",
+      "from __future__ import absolute_import",
+      "import contextlib",
+      "import ctypes",
+      "import errno",
+      "import os.path",
+      "import shutil",
+      "import socket",
+      "import ssl",
+      "import struct",
+      "import threading",
+      "import weakref",
+      "from .. import util",
+      "from ..packages import six",
+      "from ..util.ssl_ import PROTOCOL_TLS_CLIENT",
+      "from ._securetransport.bindings import CoreFoundation, Security, SecurityConst",
+      "from ._securetransport.low_level import (",
+      "from socket import _fileobject",
+      "from ..packages.backports.makefile import backport_makefile"
+    ],
+    "classes": [
+      "WrappedSocket",
+      "SecureTransportContext"
+    ],
+    "functions": [
+      "inject_into_urllib3",
+      "extract_from_urllib3",
+      "_read_callback",
+      "_write_callback"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_184_15e7f5208514147a_AI_Chariot_Legacy_666_1.0.0_20260508_securetransport.py.json"
+}

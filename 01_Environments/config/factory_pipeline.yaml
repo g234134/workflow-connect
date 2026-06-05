@@ -1,0 +1,83 @@
+# ─────────────────────────────────────────────────────────────
+# factory_pipeline.yaml — 大唐三省六部 · 全自動數據清洗工廠
+# 流水線：Ingest → Clean(Sample) → Clean(Full) → Recover →
+#          Evaluate → Index → Archive
+# 每段 stage 都會被 Factory_Orchestrator 讀入並串聯。
+# 此檔為「設定即文件」：修改前請備份，並透過黃金樣本回歸驗證。
+# ─────────────────────────────────────────────────────────────
+
+version: "0.1"
+factory_name: "Tang_Gov_Cleaning_Factory"
+
+defaults:
+  retry:
+    max_attempts: 3
+    initial_backoff_seconds: 2
+    backoff_multiplier: 2
+  timeout_seconds: 600
+  concurrency: 1
+  on_failure: "quarantine"     # quarantine | dlq | abort
+
+cabinets:                      # 雙艙虛擬環境
+  main: "01_Environments/python_venvs/gov_main"
+  agency: "01_Environments/python_venvs/gov_agency"
+
+stages:
+  - id: ingest
+    cabinet: main
+    agent: "Watchdog (raw_inbound)"
+    input_dir: "05_Temp_Cache/raw_inbound"
+    notes: "由 watchdog 觸發；登錄 Chariot_Registry 進場指紋以利冪等"
+
+  - id: clean_sample
+    cabinet: main
+    agent: "Code_Cleaner_Agent"
+    sample_size: 100
+    output_dir: "05_Temp_Cache/cleaned_sample"
+
+  - id: clean_full
+    cabinet: main
+    agent: "Code_Cleaner_Throttled_Agent"
+    output_dir: "05_Temp_Cache/cleaned_full"
+    schema_validation: true        # pydantic 守門員
+
+  - id: recover
+    cabinet: main
+    agent: "GroqHybridRecovery_Agent"
+    triggers:
+      - upstream_status: "format_error"
+    quota:
+      max_calls_per_hour: 200
+
+  - id: evaluate
+    cabinet: main
+    agent: "Asset_Value_Evaluator_Agent"
+    sampling: "random_100"
+    groq_only_for_gray_zone: true
+
+  - id: index
+    cabinet: main
+    agent: "Indexing_Agent"
+    output_dir: "03_RAG_Database/C2_核心知識庫"
+
+  - id: archive
+    cabinet: main
+    agent: "Liquidation_Agent"
+    output_dir: "06_Exports_Output/Archive"
+
+alerts:
+  channel: telegram
+  thresholds:
+    error_rate_window_minutes: 15
+    error_rate_pct: 10
+    backlog_max: 500
+
+token_budget:
+  groq:
+    daily_max_tokens: 500000
+    fallback_model: "llama-3.1-8b-instant"
+
+watchdog:
+  status_json_max_age_minutes: 10
+  lockfile_max_age_minutes: 30
+  on_stale: "alert_and_restart"

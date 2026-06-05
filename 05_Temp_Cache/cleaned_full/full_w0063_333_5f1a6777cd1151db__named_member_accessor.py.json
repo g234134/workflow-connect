@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 333,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\utils\\_named_member_accessor.py",
+  "name": "_named_member_accessor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14591,
+  "content_sha256": "5f1a6777cd1151db11dd4d8daff316c21ca3fb45d6865f4b3175de0214e3cc18",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 374,
+    "non_empty_lines": 321,
+    "char_count": 14591,
+    "preview_lines": [
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "from typing import Dict, Iterable, List, Tuple",
+      "import torch",
+      "_MISSING: torch.Tensor = object()  # type: ignore[assignment]",
+      "def set_tensor(module: \"torch.nn.Module\", name: str, tensor: torch.Tensor) -> None:",
+      "    if not isinstance(module, torch.nn.Module):",
+      "        raise TypeError(f\"{module} is not an instance of torch.nn.Module\")",
+      "    if not isinstance(tensor, torch.Tensor) and tensor is not None:",
+      "        raise TypeError(f\"{tensor} is not an instance of torch.Tensor\")"
+    ],
+    "imports": [
+      "from typing import Dict, Iterable, List, Tuple",
+      "import torch"
+    ],
+    "classes": [
+      "NamedMemberAccessor"
+    ],
+    "functions": [
+      "set_tensor",
+      "swap_tensor",
+      "swap_submodule"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_333_5f1a6777cd1151db__named_member_accessor.py.json"
+}

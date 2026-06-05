@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\python\\python_ivalue.h",
+  "name": "python_ivalue.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3358,
+  "content_sha256": "137db58271d75efeb15b8b9264743601bef27dd8919683c834a440b98f636ed1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 84,
+    "char_count": 3358,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/ivalue.h>",
+      "#include <pybind11/pybind11.h>",
+      "#include <torch/csrc/jit/python/pybind_utils.h>",
+      "#include <torch/csrc/python_headers.h>",
+      "#include <torch/csrc/utils/pybind.h>",
+      "namespace py = pybind11;",
+      "namespace c10::ivalue {",
+      "// concrete ivalue Holder that hold a py::object",
+      "struct C10_EXPORT ConcretePyObjectHolder final : PyObjectHolder {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_436_137db58271d75efe_python_ivalue.h.json"
+}

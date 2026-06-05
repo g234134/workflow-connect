@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 76,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sample_finite_rv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sample_finite_rv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3061,
+  "content_sha256": "756c2b15e3f0f1e5f6ac185e0178b5015c6bfe0a810fadd564a7d6f3584da107",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 85,
+    "char_count": 3061,
+    "preview_lines": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.singleton import S",
+      "from sympy.external import import_module",
+      "from sympy.stats import Binomial, sample, Die, FiniteRV, DiscreteUniform, Bernoulli, BetaBinomial, Hypergeometric, \\",
+      "    Rademacher",
+      "from sympy.testing.pytest import skip, raises",
+      "def test_given_sample():",
+      "    X = Die('X', 6)",
+      "    scipy = import_module('scipy')",
+      "    if not scipy:"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.singleton import S",
+      "from sympy.external import import_module",
+      "from sympy.stats import Binomial, sample, Die, FiniteRV, DiscreteUniform, Bernoulli, BetaBinomial, Hypergeometric, \\",
+      "from sympy.testing.pytest import skip, raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_given_sample",
+      "test_sample_numpy",
+      "test_sample_scipy",
+      "test_sample_pymc",
+      "test_sample_seed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_076_756c2b15e3f0f1e5_AI_Chariot_Legacy_666_1.0.0_20260508_test_sample_finite_rv.py.json"
+}

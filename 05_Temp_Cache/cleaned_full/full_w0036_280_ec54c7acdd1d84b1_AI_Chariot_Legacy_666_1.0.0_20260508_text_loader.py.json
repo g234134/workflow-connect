@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_text_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_text_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1137,
+  "content_sha256": "ec54c7acdd1d84b1f0a6f16780ed9c400f91b022d8e9353cce4fe3e9224324db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 24,
+    "char_count": 1137,
+    "preview_lines": [
+      "from typing import Any",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "class TextFileLoader(BaseLoader):",
+      "    def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:  # type: ignore[override]",
+      "        source_ref = source_content.source_ref",
+      "        if not source_content.path_exists():",
+      "            raise FileNotFoundError(",
+      "                f\"The following file does not exist: {source_content.source}\"",
+      "            )"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent"
+    ],
+    "classes": [
+      "TextFileLoader",
+      "TextLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_280_ec54c7acdd1d84b1_AI_Chariot_Legacy_666_1.0.0_20260508_text_loader.py.json"
+}

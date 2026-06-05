@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:47:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\simplify\\cse_main.py",
+  "name": "cse_main.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31310,
+  "content_sha256": "b5c5265d7146219ca85f83ef044999f98626f8204b5e803218b1ef7abc4fdb7a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 945,
+    "non_empty_lines": 758,
+    "char_count": 31310,
+    "preview_lines": [
+      "\"\"\" Tools for doing common subexpression elimination.",
+      "\"\"\"",
+      "from collections import defaultdict",
+      "from sympy.core import Basic, Mul, Add, Pow, sympify",
+      "from sympy.core.containers import Tuple, OrderedSet",
+      "from sympy.core.exprtools import factor_terms",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import ordered",
+      "from sympy.core.symbol import symbols, Symbol",
+      "from sympy.matrices import (MatrixBase, Matrix, ImmutableMatrix,"
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "from sympy.core import Basic, Mul, Add, Pow, sympify",
+      "from sympy.core.containers import Tuple, OrderedSet",
+      "from sympy.core.exprtools import factor_terms",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import ordered",
+      "from sympy.core.symbol import symbols, Symbol",
+      "from sympy.matrices import (MatrixBase, Matrix, ImmutableMatrix,",
+      "from sympy.matrices.expressions import (MatrixExpr, MatrixSymbol, MatMul,",
+      "from sympy.matrices.expressions.matexpr import MatrixElement",
+      "from sympy.polys.rootoftools import RootOf",
+      "from sympy.utilities.iterables import numbered_symbols, sift, \\",
+      "from . import cse_opts"
+    ],
+    "classes": [
+      "FuncArgTracker",
+      "Unevaluated"
+    ],
+    "functions": [
+      "reps_toposort",
+      "cse_separate",
+      "cse_release_variables",
+      "preprocess_for_cse",
+      "postprocess_for_cse",
+      "match_common_args",
+      "opt_cse",
+      "tree_cse",
+      "cse",
+      "_cse_homogeneous"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_232_b5c5265d7146219c_cse_main.py.json"
+}

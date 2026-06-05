@@ -1,0 +1,90 @@
+# Phase 6 (P6): core agent workflow smoke — PR fast path + optional dark tier.
+# Complements eval-gate-ci.yml (P+ eval) and gov-gate-metrics.yml (workflow_v2).
+
+name: Core agent smoke
+
+on:
+  push:
+    paths-ignore:
+      - "02_Agents_Core/repos/**"
+      - "05_Temp_Cache/**"
+      - "**/*.md"
+      - "workflow_v2/**"
+  pull_request:
+    paths-ignore:
+      - "02_Agents_Core/repos/**"
+      - "05_Temp_Cache/**"
+      - "**/*.md"
+      - "workflow_v2/**"
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: Smoke tier (PR, ROOT, DARK, ALL)
+        type: choice
+        options:
+          - PR
+          - ROOT
+          - DARK
+          - ALL
+        default: PR
+
+concurrency:
+  group: core-agent-smoke-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  agent-smoke-pr:
+    name: Agent workflow smoke (PR / ROOT)
+    if: >-
+      github.event_name != 'workflow_dispatch'
+      || (github.event_name == 'workflow_dispatch' && (inputs.tier == 'PR' || inputs.tier == 'ROOT'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Core agent smoke (tier PR)
+        run: python 04_Workflows/_core_agent_smoke.py --tier PR -v
+
+  agent-smoke-dark:
+    name: Agent workflow smoke (DARK — tool + API shape)
+    if: github.event_name == 'workflow_dispatch' && inputs.tier == 'DARK'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install minimal dark-tier dependencies
+        run: pip install -r requirements-ci-minimal.txt
+
+      - name: Core agent smoke (tier DARK)
+        run: python 04_Workflows/_core_agent_smoke.py --tier DARK -v
+
+  agent-smoke-all:
+    name: Agent workflow smoke (ALL tiers)
+    if: github.event_name == 'workflow_dispatch' && inputs.tier == 'ALL'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install minimal dark-tier dependencies
+        run: pip install -r requirements-ci-minimal.txt
+
+      - name: Core agent smoke (tier ALL)
+        run: python 04_Workflows/_core_agent_smoke.py --tier ALL -v

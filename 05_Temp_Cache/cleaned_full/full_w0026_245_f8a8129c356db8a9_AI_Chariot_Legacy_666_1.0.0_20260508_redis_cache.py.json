@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 245,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_redis_cache.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_redis_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 54002,
+  "content_sha256": "f8a8129c356db8a94aa7b7fa5eb9641e88338308fbaacf0d96f7c87a0d8e5b26",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1398,
+    "non_empty_lines": 1266,
+    "char_count": 54002,
+    "preview_lines": [
+      "\"\"\"",
+      "Redis Cache implementation",
+      "Has 4 primary methods:",
+      "    - set_cache",
+      "    - get_cache",
+      "    - async_set_cache",
+      "    - async_get_cache",
+      "\"\"\"",
+      "import ast",
+      "import asyncio"
+    ],
+    "imports": [
+      "import ast",
+      "import asyncio",
+      "import hashlib",
+      "import inspect",
+      "import json",
+      "import time",
+      "from datetime import timedelta",
+      "from typing import TYPE_CHECKING, Any, List, Optional, Tuple, Union, cast",
+      "import litellm",
+      "from litellm._logging import print_verbose, verbose_logger",
+      "from litellm.constants import DEFAULT_REDIS_MAJOR_VERSION",
+      "from litellm.litellm_core_utils.core_helpers import _get_parent_otel_span_from_kwargs",
+      "from litellm.litellm_core_utils.coroutine_checker import coroutine_checker",
+      "from litellm.types.caching import RedisPipelineIncrementOperation",
+      "from litellm.types.services import ServiceTypes",
+      "from .base_cache import BaseCache",
+      "from opentelemetry.trace import Span as _Span",
+      "from redis.asyncio import Redis, RedisCluster",
+      "from redis.asyncio.client import Pipeline",
+      "from redis.asyncio.cluster import ClusterPipeline"
+    ],
+    "classes": [
+      "RedisCache"
+    ],
+    "functions": [
+      "_get_call_stack_info"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_245_f8a8129c356db8a9_AI_Chariot_Legacy_666_1.0.0_20260508_redis_cache.py.json"
+}

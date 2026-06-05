@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 69,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__emformer_hubert.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__emformer_hubert.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13831,
+  "content_sha256": "533fe128e3b32bcba5e6ba41c7fff5e7fa32fe9925a1c97c4af4609a34e0ee12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 333,
+    "non_empty_lines": 299,
+    "char_count": 13831,
+    "preview_lines": [
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "from torchaudio.models import Wav2Vec2Model",
+      "from torchaudio.models.emformer import Emformer",
+      "from torchaudio.models.rnnt import _TimeReduction",
+      "class FeatureEncoder(torch.nn.Module):",
+      "    \"\"\"Extract features from log-mel spectrogram input. Consists of linear layer and time reduction layer.",
+      "    Args:",
+      "        input_dim (int): The feature dimension of log-mel spectrogram feature.",
+      "        output_dim (int): The feature dimension after linear layer."
+    ],
+    "imports": [
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "from torchaudio.models import Wav2Vec2Model",
+      "from torchaudio.models.emformer import Emformer",
+      "from torchaudio.models.rnnt import _TimeReduction"
+    ],
+    "classes": [
+      "FeatureEncoder",
+      "EmformerEncoder"
+    ],
+    "functions": [
+      "_get_emformer_feature_extractor",
+      "_get_emformer_encoder",
+      "emformer_hubert_model",
+      "emformer_hubert_base"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_069_533fe128e3b32bcb_AI_Chariot_Legacy_666_1.0.0_20260508__emformer_hubert.py.json"
+}

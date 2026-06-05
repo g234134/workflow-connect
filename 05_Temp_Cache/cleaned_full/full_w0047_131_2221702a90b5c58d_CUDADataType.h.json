@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 131,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cuda\\CUDADataType.h",
+  "name": "CUDADataType.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2763,
+  "content_sha256": "2221702a90b5c58d6963a30d7af6bfdfac14aa71bca93f78ef7911eb33c19da6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 92,
+    "char_count": 2763,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/ScalarType.h>",
+      "#include <cuda.h>",
+      "#include <library_types.h>",
+      "namespace at::cuda {",
+      "template <typename scalar_t>",
+      "cudaDataType getCudaDataType() {",
+      "  TORCH_INTERNAL_ASSERT(false, \"Cannot convert type \", typeid(scalar_t).name(), \" to cudaDataType.\")",
+      "}",
+      "template<> inline cudaDataType getCudaDataType<at::Half>() {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_131_2221702a90b5c58d_CUDADataType.h.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 155,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_tool_index.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_tool_index.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5444,
+  "content_sha256": "cb0e0bd9c533571beb7d36f34e7c4e18db977e9476bbfd5e5bb4ce65b6a5d2c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 151,
+    "non_empty_lines": 134,
+    "char_count": 5444,
+    "preview_lines": [
+      "\"\"\"",
+      "Track tool usage for the dashboard: insert into SpendLogToolIndex when spend logs",
+      "are written, so \"last N requests for tool X\" and \"how is this tool called in production\"",
+      "queries are fast.",
+      "\"\"\"",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Set",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.litellm_core_utils.safe_json_loads import safe_json_loads",
+      "from litellm.proxy.utils import PrismaClient"
+    ],
+    "imports": [
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Set",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.litellm_core_utils.safe_json_loads import safe_json_loads",
+      "from litellm.proxy.utils import PrismaClient"
+    ],
+    "classes": [],
+    "functions": [
+      "_add_tool_calls_to_set",
+      "_parse_tool_names_from_payload"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_155_cb0e0bd9c533571b_AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_tool_index.py.json"
+}

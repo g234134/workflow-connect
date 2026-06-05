@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_iso2022_kr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_iso2022_kr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1053,
+  "content_sha256": "1c86362e17944f0bcf68db02f4995bdeea605867795fff7ab4079073f96705e4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 31,
+    "char_count": 1053,
+    "preview_lines": [
+      "#",
+      "# iso2022_kr.py: Python Unicode Codec for ISO2022_KR",
+      "#",
+      "# Written by Hye-Shik Chang <perky@FreeBSD.org>",
+      "#",
+      "import _codecs_iso2022, codecs",
+      "import _multibytecodec as mbc",
+      "codec = _codecs_iso2022.getcodec('iso2022_kr')",
+      "class Codec(codecs.Codec):",
+      "    encode = codec.encode"
+    ],
+    "imports": [
+      "import _codecs_iso2022, codecs",
+      "import _multibytecodec as mbc"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamReader",
+      "StreamWriter"
+    ],
+    "functions": [
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_226_1c86362e17944f0b_AI_Chariot_Legacy_666_1.0.0_20260508_iso2022_kr.py.json"
+}

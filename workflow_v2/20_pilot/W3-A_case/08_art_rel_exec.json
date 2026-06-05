@@ -1,0 +1,59 @@
+{
+  "artifact_id": "ART-REL-EXEC",
+  "ticket_id": "W4-A-K2-ROLLOUT-INTEGRATION",
+  "pilot_artifact_id": "W3-A-K2-ASK-ROLLOUT-PILOT",
+  "release_id": "w4a-p2-canary-2026-05-29",
+  "decision_ref": "07_art_rel_dec.json",
+  "target_audience_or_env": "staging-internal",
+  "published_at": "2026-05-29T11:10:44+00:00",
+  "execution_evidence": {
+    "env_logical": "staging-internal",
+    "entrypoint": "ask_api",
+    "merge_interface": "ASK_MERGE_INTERFACE",
+    "canary_cohort_ref": "canary_env.md",
+    "shadow_run_ref": "shadow_run_latest.md",
+    "pilot_stream_id": "W4-A-PILOT-RELEASE-STREAM-v0.1",
+    "run_id": "2026-05-29_111042",
+    "canary_assignments": [
+      {
+        "task_id": "w4a-canary-sample-001",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      },
+      {
+        "task_id": "w4a-canary-sample-002",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      },
+      {
+        "task_id": "w4a-canary-sample-003",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      },
+      {
+        "task_id": "w4a-canary-sample-004",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      },
+      {
+        "task_id": "w4a-canary-sample-005",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      }
+    ],
+    "metrics_ref": [
+      "cohort_in=0/5 at 5%"
+    ],
+    "commands_run": [
+      {
+        "cmd": "wf_k2_rollout_canary_sim.py",
+        "exit_ok": true,
+        "note": "Simulated cohort only — no live traffic switch"
+      }
+    ]
+  },
+  "rollback_path_valid": false,
+  "not_in_scope": "No remote prod auto rollout; no Phase 3+; no merge adapter change",
+  "executed_by_role": "release",
+  "message": "Internal canary simulation per W4-A boundary."
+}

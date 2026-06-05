@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bmp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bmp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1347,
+  "content_sha256": "c3f261bba841c8072424dc8a848df31ce2ac1f289b1e0c4322388f23d7afef4e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 43,
+    "non_empty_lines": 33,
+    "char_count": 1347,
+    "preview_lines": [
+      "from .constants import MIME_TYPE",
+      "from .helpers import LITTLE_ENDIAN, StreamReader",
+      "from .image import BaseImageHeader",
+      "class Bmp(BaseImageHeader):",
+      "    \"\"\"Image header parser for BMP images.\"\"\"",
+      "    @classmethod",
+      "    def from_stream(cls, stream):",
+      "        \"\"\"Return |Bmp| instance having header properties parsed from the BMP image in",
+      "        `stream`.\"\"\"",
+      "        stream_rdr = StreamReader(stream, LITTLE_ENDIAN)"
+    ],
+    "imports": [
+      "from .constants import MIME_TYPE",
+      "from .helpers import LITTLE_ENDIAN, StreamReader",
+      "from .image import BaseImageHeader"
+    ],
+    "classes": [
+      "Bmp"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_304_c3f261bba841c807_AI_Chariot_Legacy_666_1.0.0_20260508_bmp.py.json"
+}

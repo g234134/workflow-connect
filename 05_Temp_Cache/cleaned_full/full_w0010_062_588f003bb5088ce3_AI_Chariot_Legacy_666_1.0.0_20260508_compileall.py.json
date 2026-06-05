@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_compileall.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_compileall.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20507,
+  "content_sha256": "588f003bb5088ce380f3c335febaec1318811d275e5554b106655c4ceebabcfb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 469,
+    "non_empty_lines": 423,
+    "char_count": 20507,
+    "preview_lines": [
+      "\"\"\"Module/script to byte-compile all .py files to .pyc files.",
+      "When called as a script with arguments, this compiles the directories",
+      "given as arguments recursively; the -l option prevents it from",
+      "recursing into directories.",
+      "Without arguments, it compiles all modules on sys.path, without",
+      "recursing into subdirectories.  (Even though it should do so for",
+      "packages -- for now, you'll have to deal with packages separately.)",
+      "See module py_compile for details of the actual byte-compilation.",
+      "\"\"\"",
+      "import os"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import importlib.util",
+      "import py_compile",
+      "import struct",
+      "import filecmp",
+      "from functools import partial",
+      "from pathlib import Path",
+      "from concurrent.futures.process import _check_system_limits",
+      "from concurrent.futures import ProcessPoolExecutor",
+      "import multiprocessing"
+    ],
+    "classes": [],
+    "functions": [
+      "_walk_dir",
+      "compile_dir",
+      "compile_file",
+      "compile_path",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_062_588f003bb5088ce3_AI_Chariot_Legacy_666_1.0.0_20260508_compileall.py.json"
+}

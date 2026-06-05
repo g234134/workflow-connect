@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 480,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dia.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dia.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20657,
+  "content_sha256": "e0f42a11c0d3ccd30dbde1e8c44887180db12b252f9b2571f7a21e7dc0708d5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 590,
+    "non_empty_lines": 489,
+    "char_count": 20657,
+    "preview_lines": [
+      "\"\"\"Sparse DIAgonal format\"\"\"",
+      "__docformat__ = \"restructuredtext en\"",
+      "__all__ = ['dia_array', 'dia_matrix', 'isspmatrix_dia']",
+      "import numpy as np",
+      "from .._lib._util import copy_if_needed",
+      "from ._matrix import spmatrix",
+      "from ._base import issparse, _formats, _spbase, sparray",
+      "from ._data import _data_matrix",
+      "from ._sputils import (",
+      "    isshape, upcast_char, getdtype, get_sum_dtype, validateaxis, check_shape"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from .._lib._util import copy_if_needed",
+      "from ._matrix import spmatrix",
+      "from ._base import issparse, _formats, _spbase, sparray",
+      "from ._data import _data_matrix",
+      "from ._sputils import (",
+      "from ._sparsetools import dia_matvec"
+    ],
+    "classes": [
+      "_dia_base",
+      "dia_array",
+      "dia_matrix"
+    ],
+    "functions": [
+      "_invert_index",
+      "isspmatrix_dia"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_480_e0f42a11c0d3ccd3_AI_Chariot_Legacy_666_1.0.0_20260508__dia.py.json"
+}

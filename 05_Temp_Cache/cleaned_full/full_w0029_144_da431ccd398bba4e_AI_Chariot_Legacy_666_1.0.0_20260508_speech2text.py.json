@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 144,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_speech2text.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_speech2text.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 657,
+  "content_sha256": "da431ccd398bba4e115d3f8705606636b42e5db44bf5526b705c69203b41a63a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 657,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.tools import AzureCogsSpeech2TextTool",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {\"AzureCogsSpeech2TextTool\": \"langchain_community.tools\"}",
+      "_import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)",
+      "def __getattr__(name: str) -> Any:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.tools import AzureCogsSpeech2TextTool"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_144_da431ccd398bba4e_AI_Chariot_Legacy_666_1.0.0_20260508_speech2text.py.json"
+}

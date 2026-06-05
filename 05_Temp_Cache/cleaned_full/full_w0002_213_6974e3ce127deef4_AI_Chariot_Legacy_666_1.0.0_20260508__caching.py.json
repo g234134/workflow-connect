@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 213,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__caching.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__caching.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10869,
+  "content_sha256": "6974e3ce127deef457085e28b7ffb7766dfdd52e0cf4b7ffb6f396081540b49d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 301,
+    "non_empty_lines": 258,
+    "char_count": 10869,
+    "preview_lines": [
+      "# Copyright 2024 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import datetime",
+      "import json",
+      "from typing import List, Optional",
+      "from typing_extensions import override",
+      "from google.cloud.aiplatform import base as aiplatform_base",
+      "from google.cloud.aiplatform import initializer as aiplatform_initializer",
+      "from google.cloud.aiplatform import utils as aiplatform_utils",
+      "from google.cloud.aiplatform.compat.types import (",
+      "from google.cloud.aiplatform_v1beta1.services import gen_ai_cache_service",
+      "from google.cloud.aiplatform_v1beta1.types.cached_content import (",
+      "from google.cloud.aiplatform_v1beta1.types import (",
+      "from google.cloud.aiplatform_v1beta1.types.gen_ai_cache_service import (",
+      "from vertexai.generative_models import _generative_models",
+      "from vertexai.generative_models._generative_models import (",
+      "from google.protobuf import field_mask_pb2"
+    ],
+    "classes": [
+      "CachedContent"
+    ],
+    "functions": [
+      "_prepare_create_request",
+      "_prepare_get_cached_content_request"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_213_6974e3ce127deef4_AI_Chariot_Legacy_666_1.0.0_20260508__caching.py.json"
+}

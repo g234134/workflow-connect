@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_realtime_truncation_retention_ratio.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_realtime_truncation_retention_ratio.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1749,
+  "content_sha256": "11f72f51fa3c525ec482a5a90ec4e9513959ae665720ed4bae84cb86039f89bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 34,
+    "char_count": 1749,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel",
+      "__all__ = [\"RealtimeTruncationRetentionRatio\", \"TokenLimits\"]",
+      "class TokenLimits(BaseModel):",
+      "    \"\"\"Optional custom token limits for this truncation strategy.",
+      "    If not provided, the model's default token limits will be used.",
+      "    \"\"\"",
+      "    post_instructions: Optional[int] = None"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel"
+    ],
+    "classes": [
+      "TokenLimits",
+      "RealtimeTruncationRetentionRatio"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_195_11f72f51fa3c525e_AI_Chariot_Legacy_666_1.0.0_20260508_realtime_truncation_retention_ratio.py.json"
+}

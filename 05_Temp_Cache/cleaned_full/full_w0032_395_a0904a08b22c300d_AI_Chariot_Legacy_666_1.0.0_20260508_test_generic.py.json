@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 395,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_generic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_generic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18456,
+  "content_sha256": "a0904a08b22c300d4a4e8f2afa81bd25099ac72b1ceff41281b06a3089a1db77",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 450,
+    "non_empty_lines": 409,
+    "char_count": 18456,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def validate_grid_path(r, c, s, t, p):",
+      "    assert isinstance(p, list)",
+      "    assert p[0] == s",
+      "    assert p[-1] == t",
+      "    s = ((s - 1) // c, (s - 1) % c)",
+      "    t = ((t - 1) // c, (t - 1) % c)",
+      "    assert len(p) == abs(t[0] - s[0]) + abs(t[1] - s[1]) + 1",
+      "    p = [((u - 1) // c, (u - 1) % c) for u in p]"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx import convert_node_labels_to_integers as cnlti"
+    ],
+    "classes": [
+      "TestGenericPath",
+      "TestAverageShortestPathLength",
+      "TestAverageShortestPathLengthNumpy"
+    ],
+    "functions": [
+      "validate_grid_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_395_a0904a08b22c300d_AI_Chariot_Legacy_666_1.0.0_20260508_test_generic.py.json"
+}

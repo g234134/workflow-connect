@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 94,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__evals.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__evals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7980,
+  "content_sha256": "7c6203e14a62481977206dab3b7be21055ee240085e33a9fb4d1bfbcde5afc7b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 243,
+    "non_empty_lines": 202,
+    "char_count": 7980,
+    "preview_lines": [
+      "\"\"\"Beta utility functions to assist in common eval workflows.",
+      "These functions may change in the future.",
+      "\"\"\"",
+      "import collections",
+      "import datetime",
+      "import itertools",
+      "import uuid",
+      "from collections.abc import Sequence",
+      "from typing import Optional, TypeVar",
+      "import langsmith.run_trees as rt"
+    ],
+    "imports": [
+      "import collections",
+      "import datetime",
+      "import itertools",
+      "import uuid",
+      "from collections.abc import Sequence",
+      "from typing import Optional, TypeVar",
+      "import langsmith.run_trees as rt",
+      "import langsmith.schemas as ls_schemas",
+      "from langsmith import evaluation as ls_eval",
+      "from langsmith._internal._beta_decorator import warn_beta",
+      "from langsmith.client import Client",
+      "import langsmith",
+      "import random"
+    ],
+    "classes": [],
+    "functions": [
+      "_convert_ids",
+      "_convert_root_run",
+      "convert_runs_to_test",
+      "_load_nested_traces",
+      "_outer_product",
+      "compute_test_metrics"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_094_7c6203e14a624819_AI_Chariot_Legacy_666_1.0.0_20260508__evals.py.json"
+}

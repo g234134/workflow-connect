@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 375,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_azure_blob_cache.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_azure_blob_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4003,
+  "content_sha256": "b4148ceca335cf85034535f9b6fde43e5659fe46ca39f4036725179019ef3cf9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 84,
+    "char_count": 4003,
+    "preview_lines": [
+      "\"\"\"",
+      "Azure Blob Cache implementation",
+      "Has 4 methods:",
+      "    - set_cache",
+      "    - get_cache",
+      "    - async_set_cache",
+      "    - async_get_cache",
+      "\"\"\"",
+      "import asyncio",
+      "import json"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "from contextlib import suppress",
+      "from litellm._logging import print_verbose, verbose_logger",
+      "from .base_cache import BaseCache",
+      "from azure.storage.blob import BlobServiceClient",
+      "from azure.core.exceptions import ResourceExistsError",
+      "from azure.identity import DefaultAzureCredential",
+      "from azure.identity.aio import DefaultAzureCredential as AsyncDefaultAzureCredential",
+      "from azure.storage.blob.aio import BlobServiceClient as AsyncBlobServiceClient",
+      "from azure.core.exceptions import ResourceNotFoundError",
+      "from azure.core.exceptions import ResourceNotFoundError"
+    ],
+    "classes": [
+      "AzureBlobCache"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_375_b4148ceca335cf85_AI_Chariot_Legacy_666_1.0.0_20260508_azure_blob_cache.py.json"
+}

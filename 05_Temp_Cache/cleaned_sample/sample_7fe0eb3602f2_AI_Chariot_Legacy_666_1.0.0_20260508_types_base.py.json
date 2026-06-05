@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b2acafc815514942ab47ff963c67b987",
+  "generated_at": "2026-05-08T18:33:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9240,
+  "encoding": "utf-8-sig",
+  "sha256": "7fe0eb3602f2f82edda3efd3025108e7c1fe76271553b66097a24e39fa6593d0",
+  "content_summary": {
+    "line_count": 276,
+    "non_empty_lines": 199,
+    "char_count": 9240,
+    "preview_lines": [
+      "\"\"\"",
+      "Where should I add a new type? `types_base.py` vs `types.py`",
+      "This file defines data model classes for torchgen typing system, as well as some base types such as int32_t.",
+      "`types.py` defines ATen Tensor type and some c10 types, along with signatures that use these types.",
+      "The difference between these two files, is `types_base.py` should be implementation-agnostic, meaning it shouldn't",
+      "contain any type definition that is tight to a specific C++ library (e.g., ATen), so that it can be easily reused",
+      "if we want to generate code for another C++ library.",
+      "Add new types to `types.py` if these types are ATen/c10 related.",
+      "Add new types to `types_base.py` if they are basic and not attached to ATen/c10.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from enum import auto, Enum",
+      "from typing import TYPE_CHECKING, Union",
+      "from torchgen.model import Argument, SelfArgument, TensorOptionsArguments"
+    ],
+    "classes": [
+      "SpecialArgName",
+      "BaseCppType",
+      "CType",
+      "BaseCType",
+      "ConstRefCType",
+      "VectorCType",
+      "ArrayCType",
+      "TupleCType",
+      "MutRefCType",
+      "NamedCType",
+      "Binding",
+      "Expr"
+    ],
+    "functions": []
+  },
+  "clean_status": "ok",
+  "warnings": [],
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_sample\\sample_7fe0eb3602f2_AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py.json"
+}

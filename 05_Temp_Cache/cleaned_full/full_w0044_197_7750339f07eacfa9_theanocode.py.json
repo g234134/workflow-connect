@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\theanocode.py",
+  "name": "theanocode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19094,
+  "content_sha256": "7750339f07eacfa94547af34446ac87f986dd801f4122ee9cfeef2199b7e08b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 571,
+    "non_empty_lines": 438,
+    "char_count": 19094,
+    "preview_lines": [
+      "\"\"\"",
+      ".. deprecated:: 1.8",
+      "  ``sympy.printing.theanocode`` is deprecated. Theano has been renamed to",
+      "  Aesara. Use ``sympy.printing.aesaracode`` instead. See",
+      "  :ref:`theanocode-deprecated` for more information.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import math",
+      "from typing import Any",
+      "from sympy.external import import_module"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from typing import Any",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.utilities.iterables import is_sequence",
+      "import sympy",
+      "from functools import partial",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from theano.sandbox import linalg as tlinalg"
+    ],
+    "classes": [
+      "TheanoPrinter"
+    ],
+    "functions": [
+      "theano_code",
+      "dim_handling",
+      "theano_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_197_7750339f07eacfa9_theanocode.py.json"
+}

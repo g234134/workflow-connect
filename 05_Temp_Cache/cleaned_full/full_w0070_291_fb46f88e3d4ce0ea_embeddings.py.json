@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\standard-tests\\langchain_tests\\integration_tests\\embeddings.py",
+  "name": "embeddings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4325,
+  "content_sha256": "fb46f88e3d4ce0ea086cf10c4a642544e9fb5270a58a8e9fcf91c00d0a383926",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 119,
+    "non_empty_lines": 83,
+    "char_count": 4322,
+    "preview_lines": [
+      "\"\"\"Integration tests for embeddings.\"\"\"",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_tests.unit_tests.embeddings import EmbeddingsTests",
+      "class EmbeddingsIntegrationTests(EmbeddingsTests):",
+      "    \"\"\"Base class for embeddings integration tests.",
+      "    Test subclasses must implement the `embeddings_class` property to specify the",
+      "    embeddings model to be tested. You can also override the",
+      "    `embedding_model_params` property to specify initialization parameters.",
+      "    ```python",
+      "    from typing import Type"
+    ],
+    "imports": [
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_tests.unit_tests.embeddings import EmbeddingsTests",
+      "from typing import Type",
+      "from langchain_tests.integration_tests import EmbeddingsIntegrationTests",
+      "from my_package.embeddings import MyEmbeddingsModel"
+    ],
+    "classes": [
+      "EmbeddingsIntegrationTests"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_291_fb46f88e3d4ce0ea_embeddings.py.json"
+}

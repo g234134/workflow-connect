@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_entity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_entity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1651,
+  "content_sha256": "084f00206322e62b046b6e1136c7a8d304664d36a3e582db81315d0e605eb005",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 41,
+    "char_count": 1651,
+    "preview_lines": [
+      "# Process html entity - &#123;, &#xAF;, &quot;, ...",
+      "import re",
+      "from ..common.entities import entities",
+      "from ..common.utils import fromCodePoint, isValidEntityCode",
+      "from .state_inline import StateInline",
+      "DIGITAL_RE = re.compile(r\"^&#((?:x[a-f0-9]{1,6}|[0-9]{1,7}));\", re.IGNORECASE)",
+      "NAMED_RE = re.compile(r\"^&([a-z][a-z0-9]{1,31});\", re.IGNORECASE)",
+      "def entity(state: StateInline, silent: bool) -> bool:",
+      "    pos = state.pos",
+      "    maximum = state.posMax"
+    ],
+    "imports": [
+      "import re",
+      "from ..common.entities import entities",
+      "from ..common.utils import fromCodePoint, isValidEntityCode",
+      "from .state_inline import StateInline"
+    ],
+    "classes": [],
+    "functions": [
+      "entity"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_436_084f00206322e62b_AI_Chariot_Legacy_666_1.0.0_20260508_entity.py.json"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 391,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_b2b_gemm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_b2b_gemm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25342,
+  "content_sha256": "72572550de9dc82f806e059fb50ef23438d8676719d5e35aadf0da1c0c1cc73e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 746,
+    "non_empty_lines": 669,
+    "char_count": 25342,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from collections import deque",
+      "from typing import Dict, List, Set, Tuple",
+      "import torch",
+      "from torch.utils._pytree import tree_map",
+      "from ..._dynamo.utils import counters",
+      "from ..ir import (",
+      "    ComputedBuffer,",
+      "    FixedLayout,"
+    ],
+    "imports": [
+      "import functools",
+      "from collections import deque",
+      "from typing import Dict, List, Set, Tuple",
+      "import torch",
+      "from torch.utils._pytree import tree_map",
+      "from ..._dynamo.utils import counters",
+      "from ..ir import (",
+      "from ..lowering import lowerings",
+      "from ..pattern_matcher import (",
+      "from ..select_algorithm import (",
+      "from ..utils import ceildiv"
+    ],
+    "classes": [],
+    "functions": [
+      "b2b_gemm_grid",
+      "load_ratio_left",
+      "load_ratio_right",
+      "is_b2b_gemm_good_on",
+      "unoptimized_b2b_gemm",
+      "build_subgraph_buffer",
+      "create_placeholder",
+      "tuned_b2b_gemm",
+      "b2b_gemm_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_391_72572550de9dc82f_AI_Chariot_Legacy_666_1.0.0_20260508_b2b_gemm.py.json"
+}

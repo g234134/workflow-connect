@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 100,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chart.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chart.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13665,
+  "content_sha256": "cc6ed67e1836377674b66da4dd0fabd15a3e444e2ee60ebbaa3a112262ffbb0c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 480,
+    "non_empty_lines": 367,
+    "char_count": 13665,
+    "preview_lines": [
+      "# Natural Language Toolkit: Combinatory Categorial Grammar",
+      "#",
+      "# Copyright (C) 2001-2026 NLTK Project",
+      "# Author: Graeme Gange <ggange@csse.unimelb.edu.au>",
+      "# URL: <https://www.nltk.org/>",
+      "# For license information, see LICENSE.TXT",
+      "\"\"\"",
+      "The lexicon is constructed by calling",
+      "``lexicon.fromstring(<lexicon string>)``.",
+      "In order to construct a parser, you also need a rule set."
+    ],
+    "imports": [
+      "import itertools",
+      "from nltk.ccg.combinator import *",
+      "from nltk.ccg.combinator import (",
+      "from nltk.ccg.lexicon import Token, fromstring",
+      "from nltk.ccg.logic import *",
+      "from nltk.parse import ParserI",
+      "from nltk.parse.chart import AbstractChartRule, Chart, EdgeI",
+      "from nltk.sem.logic import *",
+      "from nltk.tree import Tree"
+    ],
+    "classes": [
+      "CCGEdge",
+      "CCGLeafEdge",
+      "BinaryCombinatorRule",
+      "ForwardTypeRaiseRule",
+      "BackwardTypeRaiseRule",
+      "CCGChartParser",
+      "CCGChart"
+    ],
+    "functions": [
+      "compute_semantics",
+      "printCCGDerivation",
+      "printCCGTree",
+      "demo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_100_cc6ed67e18363776_AI_Chariot_Legacy_666_1.0.0_20260508_chart.py.json"
+}

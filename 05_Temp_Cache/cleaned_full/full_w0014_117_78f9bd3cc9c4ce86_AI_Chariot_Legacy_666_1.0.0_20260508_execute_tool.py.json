@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_execute_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_execute_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1612,
+  "content_sha256": "78f9bd3cc9c4ce86195bc334e1d9c3448355edd4670cab476b86059f5227a996",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 43,
+    "char_count": 1612,
+    "preview_lines": [
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP, SPANDATA, SPANSTATUS",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from ..consts import SPAN_ORIGIN",
+      "from ..utils import _set_agent_data",
+      "from typing import TYPE_CHECKING",
+      "if TYPE_CHECKING:",
+      "    import agents",
+      "    from typing import Any",
+      "def execute_tool_span("
+    ],
+    "imports": [
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP, SPANDATA, SPANSTATUS",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from ..consts import SPAN_ORIGIN",
+      "from ..utils import _set_agent_data",
+      "from typing import TYPE_CHECKING",
+      "import agents",
+      "from typing import Any"
+    ],
+    "classes": [],
+    "functions": [
+      "execute_tool_span",
+      "update_execute_tool_span"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_117_78f9bd3cc9c4ce86_AI_Chariot_Legacy_666_1.0.0_20260508_execute_tool.py.json"
+}

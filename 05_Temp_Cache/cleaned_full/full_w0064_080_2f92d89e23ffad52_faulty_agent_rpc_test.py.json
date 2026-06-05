@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 80,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\distributed\\rpc\\faulty_agent_rpc_test.py",
+  "name": "faulty_agent_rpc_test.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14428,
+  "content_sha256": "2f92d89e23ffad527b8b96a96c61322f7d2f15bc89f71e15c2cfc6ceedabbc78",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 324,
+    "non_empty_lines": 281,
+    "char_count": 14428,
+    "preview_lines": [
+      "import torch",
+      "import time",
+      "import torch.distributed.rpc as rpc",
+      "from torch.distributed.rpc.api import _delete_all_user_and_unforked_owner_rrefs",
+      "from torch.testing._internal.dist_utils import (",
+      "    dist_init,",
+      "    wait_until_pending_futures_and_users_flushed,",
+      "    wait_until_owners_and_forks_on_rank,",
+      "    worker_name,",
+      ")"
+    ],
+    "imports": [
+      "import torch",
+      "import time",
+      "import torch.distributed.rpc as rpc",
+      "from torch.distributed.rpc.api import _delete_all_user_and_unforked_owner_rrefs",
+      "from torch.testing._internal.dist_utils import (",
+      "from torch.testing._internal.distributed.rpc.rpc_agent_test_fixture import ("
+    ],
+    "classes": [
+      "FaultyAgentRpcTest"
+    ],
+    "functions": [
+      "my_sleep_func",
+      "my_script_func",
+      "add_rref_to_value"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_080_2f92d89e23ffad52_faulty_agent_rpc_test.py.json"
+}

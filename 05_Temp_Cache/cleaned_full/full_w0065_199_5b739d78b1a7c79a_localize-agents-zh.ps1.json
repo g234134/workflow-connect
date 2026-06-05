@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 199,
+  "generated_at": "2026-05-08T18:48:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\scripts\\i18n\\localize-agents-zh.ps1",
+  "name": "localize-agents-zh.ps1",
+  "extension": ".ps1",
+  "original_type": "powershell",
+  "size_bytes": 1654,
+  "content_sha256": "5b739d78b1a7c79affd4314fd85df853cf8d1e39435116af04ec2366c980f268",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 36,
+    "char_count": 1654,
+    "preview_lines": [
+      "param(",
+      "    [string[]]$TargetDirs = @(",
+      "        \"$env:USERPROFILE\\.github\\agents\",",
+      "        \"$env:USERPROFILE\\.copilot\\agents\"",
+      "    )",
+      ")",
+      "$mapFile = Join-Path $PSScriptRoot \"agent-names-zh.json\"",
+      "$map = Get-Content $mapFile -Raw -Encoding UTF8 | ConvertFrom-Json",
+      "$totalUpdated = 0",
+      "foreach ($dir in $TargetDirs) {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_199_5b739d78b1a7c79a_localize-agents-zh.ps1.json"
+}

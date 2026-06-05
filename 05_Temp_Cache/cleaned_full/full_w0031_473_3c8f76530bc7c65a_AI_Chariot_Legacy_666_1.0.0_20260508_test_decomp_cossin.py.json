@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 473,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cossin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cossin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12282,
+  "content_sha256": "3c8f76530bc7c65ab8552d4402861010dffd3bcc105d8e995b76845ac433dfed",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 300,
+    "non_empty_lines": 243,
+    "char_count": 12070,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.random import default_rng",
+      "from numpy.testing import assert_allclose",
+      "from scipy import linalg",
+      "from scipy.linalg.lapack import _compute_lwork",
+      "from scipy.stats import ortho_group, unitary_group",
+      "from scipy.linalg import cossin, get_lapack_funcs",
+      "REAL_DTYPES = (np.float32, np.float64)",
+      "COMPLEX_DTYPES = (np.complex64, np.complex128)"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.random import default_rng",
+      "from numpy.testing import assert_allclose",
+      "from scipy import linalg",
+      "from scipy.linalg.lapack import _compute_lwork",
+      "from scipy.stats import ortho_group, unitary_group",
+      "from scipy.linalg import cossin, get_lapack_funcs"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cossin",
+      "test_cossin_mixed_types",
+      "test_cossin_error_incorrect_subblocks",
+      "test_cossin_error_empty_subblocks",
+      "test_cossin_error_missing_partitioning",
+      "test_cossin_error_non_iterable",
+      "test_cossin_error_non_square",
+      "test_cossin_error_partitioning",
+      "test_cossin_separate",
+      "test_properties",
+      "test_indexing_bug_gh19365"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_473_3c8f76530bc7c65a_AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cossin.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_termsim.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_termsim.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26437,
+  "content_sha256": "6f0aba24d6c5867fdc6feac8714d463d8c5194c777986c46aadb237ab028fb8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 629,
+    "non_empty_lines": 515,
+    "char_count": 26435,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2018 Vit Novotny <witiko@mail.muni.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"",
+      "This module provides classes that deal with term similarities.",
+      "\"\"\"",
+      "from array import array",
+      "from itertools import chain"
+    ],
+    "imports": [
+      "from array import array",
+      "from itertools import chain",
+      "import logging",
+      "from math import sqrt",
+      "import numpy as np",
+      "from scipy import sparse",
+      "from gensim.matutils import corpus2csc",
+      "from gensim.utils import SaveLoad, is_corpus"
+    ],
+    "classes": [
+      "TermSimilarityIndex",
+      "UniformTermSimilarityIndex",
+      "WordEmbeddingSimilarityIndex",
+      "SparseTermSimilarityMatrix"
+    ],
+    "functions": [
+      "_shortest_uint_dtype",
+      "_create_source",
+      "_normalize_dense_vector",
+      "_normalize_dense_corpus",
+      "_normalize_sparse_corpus"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_240_6f0aba24d6c5867f_AI_Chariot_Legacy_666_1.0.0_20260508_termsim.py.json"
+}

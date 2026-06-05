@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_phimoe.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_phimoe.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15585,
+  "content_sha256": "ea7c836eb13ba4fdad29b27cb8ab636b0a5f531d4d007b74eb3a9f788a4fc4f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 410,
+    "non_empty_lines": 346,
+    "char_count": 15584,
+    "preview_lines": [
+      "# Copyright 2024 Microsoft and the HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import torch",
+      "from torch import nn",
+      "from ...modeling_layers import (",
+      "from ...modeling_rope_utils import ROPE_INIT_FUNCTIONS",
+      "from ...utils.generic import maybe_autocast",
+      "from ...utils.output_capturing import OutputRecorder",
+      "from ..llama.modeling_llama import LlamaAttention",
+      "from ..mixtral.modeling_mixtral import (",
+      "from .configuration_phimoe import PhimoeConfig"
+    ],
+    "classes": [
+      "PhimoeRotaryEmbedding",
+      "PhimoeAttention",
+      "PhimoeMultiplier",
+      "PhimoeExperts",
+      "PhimoeTopKRouter",
+      "PhimoeSparseMoeBlock",
+      "PhimoeDecoderLayer",
+      "PhimoePreTrainedModel",
+      "PhimoeModel",
+      "PhimoeForCausalLM",
+      "PhimoeForSequenceClassification"
+    ],
+    "functions": [
+      "sparsemixer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_049_ea7c836eb13ba4fd_AI_Chariot_Legacy_666_1.0.0_20260508_modular_phimoe.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\jit\\_state.py",
+  "name": "_state.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3775,
+  "content_sha256": "75235cf19b00bbb5c2b4b370a70188911eed48be4981a76bdd8e1db465bd1ba5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 125,
+    "non_empty_lines": 87,
+    "char_count": 3775,
+    "preview_lines": [
+      "\"\"\"JIT-related state.",
+      "This module stores various pieces of Python-global state relating to the JIT.",
+      "This is not intended to be imported directly; please the exposed",
+      "functionalities in `torch.jit`.",
+      "\"\"\"",
+      "import os",
+      "import weakref",
+      "import torch",
+      "class EnabledProxy:",
+      "    \"\"\"Stores whether the JIT is enabled or not."
+    ],
+    "imports": [
+      "import os",
+      "import weakref",
+      "import torch"
+    ],
+    "classes": [
+      "EnabledProxy"
+    ],
+    "functions": [
+      "disable",
+      "enable",
+      "_add_script_class",
+      "_get_script_class",
+      "_get_python_class",
+      "_clear_class_state",
+      "_try_get_jit_cached_overloads",
+      "_set_jit_overload_cache",
+      "_try_get_jit_cached_function",
+      "_set_jit_function_cache"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_193_75235cf19b00bbb5__state.py.json"
+}

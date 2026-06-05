@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\summarization.py",
+  "name": "summarization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26670,
+  "content_sha256": "dd6ae5c83618457b9130ffa7f3aa59d68912e79983dc084953e0c3b7b03359cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 658,
+    "non_empty_lines": 534,
+    "char_count": 26667,
+    "preview_lines": [
+      "\"\"\"Summarization middleware.\"\"\"",
+      "import uuid",
+      "import warnings",
+      "from collections.abc import Callable, Iterable, Mapping",
+      "from functools import partial",
+      "from typing import Any, Literal, cast",
+      "from langchain_core.messages import (",
+      "    AIMessage,",
+      "    AnyMessage,",
+      "    MessageLikeRepresentation,"
+    ],
+    "imports": [
+      "import uuid",
+      "import warnings",
+      "from collections.abc import Callable, Iterable, Mapping",
+      "from functools import partial",
+      "from typing import Any, Literal, cast",
+      "from langchain_core.messages import (",
+      "from langchain_core.messages.human import HumanMessage",
+      "from langchain_core.messages.utils import (",
+      "from langgraph.graph.message import (",
+      "from langgraph.runtime import Runtime",
+      "from typing_extensions import override",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, ContextT, ResponseT",
+      "from langchain.chat_models import BaseChatModel, init_chat_model"
+    ],
+    "classes": [
+      "SummarizationMiddleware"
+    ],
+    "functions": [
+      "_get_approximate_token_counter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_370_dd6ae5c83618457b_summarization.py.json"
+}

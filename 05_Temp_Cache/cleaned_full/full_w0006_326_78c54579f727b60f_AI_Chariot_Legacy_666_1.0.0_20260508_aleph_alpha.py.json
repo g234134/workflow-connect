@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 326,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aleph_alpha.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aleph_alpha.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12725,
+  "content_sha256": "78c54579f727b60f2061d1b76526b8249e9228501912ac60d6828ce58eb94529",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 307,
+    "non_empty_lines": 262,
+    "char_count": 12725,
+    "preview_lines": [
+      "import json",
+      "import time",
+      "import types",
+      "from typing import Callable, Optional",
+      "import httpx  # type: ignore",
+      "import litellm",
+      "from litellm.utils import Choices, Message, ModelResponse, Usage",
+      "class AlephAlphaError(Exception):",
+      "    def __init__(self, status_code, message):",
+      "        self.status_code = status_code"
+    ],
+    "imports": [
+      "import json",
+      "import time",
+      "import types",
+      "from typing import Callable, Optional",
+      "import httpx  # type: ignore",
+      "import litellm",
+      "from litellm.utils import Choices, Message, ModelResponse, Usage"
+    ],
+    "classes": [
+      "AlephAlphaError",
+      "AlephAlphaConfig"
+    ],
+    "functions": [
+      "validate_environment",
+      "completion",
+      "embedding"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_326_78c54579f727b60f_AI_Chariot_Legacy_666_1.0.0_20260508_aleph_alpha.py.json"
+}

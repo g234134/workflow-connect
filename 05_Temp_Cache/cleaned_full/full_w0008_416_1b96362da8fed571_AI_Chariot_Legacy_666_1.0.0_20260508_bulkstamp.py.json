@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 416,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bulkstamp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bulkstamp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4823,
+  "content_sha256": "1b96362da8fed571c11fc93928719427a4c2bdbc5047168f16c7fc7f2b4dbcf0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 132,
+    "char_count": 4823,
+    "preview_lines": [
+      "#",
+      "# bulkstamp.py:",
+      "#    Stamp versions on all files that can be found in a given tree.",
+      "#",
+      "# USAGE: python bulkstamp.py <version> <root directory> <descriptions>",
+      "#",
+      "# Example: python bulkstamp.py 103 ..\\win32\\Build\\ desc.txt",
+      "#",
+      "# <version> corresponds to the build number. It will be concatenated with",
+      "# the major and minor version numbers found in the description file."
+    ],
+    "imports": [
+      "import fnmatch",
+      "import os",
+      "import sys",
+      "from collections.abc import Mapping",
+      "from optparse import Values",
+      "import win32verstamp",
+      "import win32verstamp"
+    ],
+    "classes": [],
+    "functions": [
+      "walk",
+      "load_descriptions",
+      "scan"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_416_1b96362da8fed571_AI_Chariot_Legacy_666_1.0.0_20260508_bulkstamp.py.json"
+}

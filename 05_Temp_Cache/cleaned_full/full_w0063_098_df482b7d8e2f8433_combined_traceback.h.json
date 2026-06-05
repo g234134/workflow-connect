@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\profiler\\combined_traceback.h",
+  "name": "combined_traceback.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2399,
+  "content_sha256": "df482b7d8e2f84335f070027b3e9764e1fd2435318d4e56573085b813b0cd55e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 62,
+    "char_count": 2399,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/runtime/interpreter.h>",
+      "#include <torch/csrc/profiler/unwind/unwind.h>",
+      "namespace torch {",
+      "// struct that holds the result of symbolizing multiple tracebacks",
+      "// each traceback is a list of indices into all_frames",
+      "// (lots of Frames get duplicated across traces)",
+      "struct TORCH_API SymbolizedTracebacks {",
+      "  std::vector<unwind::Frame> all_frames;",
+      "  // index into all_frames, so that"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_098_df482b7d8e2f8433_combined_traceback.h.json"
+}

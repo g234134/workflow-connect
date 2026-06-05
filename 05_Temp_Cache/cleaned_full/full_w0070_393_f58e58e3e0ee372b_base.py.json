@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 393,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-postgres\\langgraph\\checkpoint\\postgres\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10923,
+  "content_sha256": "f58e58e3e0ee372b5ca39781ce6f89aee7929b7e82fae0a1c764593935c0c95f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 315,
+    "non_empty_lines": 287,
+    "char_count": 10920,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import random",
+      "import warnings",
+      "from collections.abc import Sequence",
+      "from importlib.metadata import version as get_version",
+      "from typing import Any, cast",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "    WRITES_IDX_MAP,",
+      "    BaseCheckpointSaver,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import random",
+      "import warnings",
+      "from collections.abc import Sequence",
+      "from importlib.metadata import version as get_version",
+      "from typing import Any, cast",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "from langgraph.checkpoint.serde.types import TASKS",
+      "from psycopg.types.json import Jsonb",
+      "from jsonb_each_text(checkpoint -> 'channel_versions')",
+      "from checkpoint_writes cw",
+      "from checkpoints \"\"\"",
+      "from checkpoint_writes"
+    ],
+    "classes": [
+      "BasePostgresSaver"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_393_f58e58e3e0ee372b_base.py.json"
+}

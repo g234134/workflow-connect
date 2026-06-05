@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cupy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cupy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1235,
+  "content_sha256": "c8cb49d1022fd9e80d0b83063f4a1be07a33a13e1ccb0225ab32fce9a9ca76e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 35,
+    "char_count": 1235,
+    "preview_lines": [
+      "import pytest",
+      "from thinc.util import has_cupy_gpu, has_torch, has_tensorflow, require_gpu",
+      "from thinc.backends import use_pytorch_for_gpu_memory, use_tensorflow_for_gpu_memory",
+      "from spacy_loggers.cupy import cupy_logger_v1",
+      "@pytest.fixture",
+      "def logger():",
+      "    setup_logger = cupy_logger_v1()",
+      "    step, _ = setup_logger(None)",
+      "    return step",
+      "@pytest.mark.skipif(not has_cupy_gpu, reason=\"CuPy support required\")"
+    ],
+    "imports": [
+      "import pytest",
+      "from thinc.util import has_cupy_gpu, has_torch, has_tensorflow, require_gpu",
+      "from thinc.backends import use_pytorch_for_gpu_memory, use_tensorflow_for_gpu_memory",
+      "from spacy_loggers.cupy import cupy_logger_v1"
+    ],
+    "classes": [],
+    "functions": [
+      "logger",
+      "test_cupy_allocator_source_default",
+      "test_cupy_allocator_source_torch",
+      "test_cupy_allocator_source_tf"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_409_c8cb49d1022fd9e8_AI_Chariot_Legacy_666_1.0.0_20260508_test_cupy.py.json"
+}

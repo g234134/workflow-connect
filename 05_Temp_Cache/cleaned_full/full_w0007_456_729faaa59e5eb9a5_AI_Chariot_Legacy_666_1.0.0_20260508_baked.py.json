@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 456,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_baked.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_baked.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18323,
+  "content_sha256": "729faaa59e5eb9a5db3d03ce27d94519b61cf15b390eabef925f21e18202791b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 570,
+    "non_empty_lines": 426,
+    "char_count": 18323,
+    "preview_lines": [
+      "# ext/baked.py",
+      "# Copyright (C) 2005-2026 the SQLAlchemy authors and contributors",
+      "# <see AUTHORS file>",
+      "#",
+      "# This module is part of SQLAlchemy and is released under",
+      "# the MIT License: https://www.opensource.org/licenses/mit-license.php",
+      "# mypy: ignore-errors",
+      "\"\"\"Baked query extension.",
+      "Provides a creational pattern for the :class:`.query.Query` object which",
+      "allows the fully constructed object, Core select statement, and string"
+    ],
+    "imports": [
+      "import collections.abc as collections_abc",
+      "import logging",
+      "from .. import exc as sa_exc",
+      "from .. import util",
+      "from ..orm import exc as orm_exc",
+      "from ..orm.query import Query",
+      "from ..orm.session import Session",
+      "from ..sql import func",
+      "from ..sql import literal_column",
+      "from ..sql import util as sql_util"
+    ],
+    "classes": [
+      "Bakery",
+      "BakedQuery",
+      "Result"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_456_729faaa59e5eb9a5_AI_Chariot_Legacy_666_1.0.0_20260508_baked.py.json"
+}

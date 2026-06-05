@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_exponential.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_exponential.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43414,
+  "content_sha256": "4c6c8b961bfb7765b158fe13386345b88f6187d66038f7a487756c156ae55d54",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1306,
+    "non_empty_lines": 1134,
+    "char_count": 43414,
+    "preview_lines": [
+      "from itertools import product",
+      "from typing import Tuple as tTuple",
+      "from sympy.core.add import Add",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.expr import Expr",
+      "from sympy.core.function import (Function, ArgumentIndexError, expand_log,",
+      "    expand_mul, FunctionClass, PoleError, expand_multinomial, expand_complex)",
+      "from sympy.core.logic import fuzzy_and, fuzzy_not, fuzzy_or",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.numbers import Integer, Rational, pi, I"
+    ],
+    "imports": [
+      "from itertools import product",
+      "from typing import Tuple as tTuple",
+      "from sympy.core.add import Add",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.expr import Expr",
+      "from sympy.core.function import (Function, ArgumentIndexError, expand_log,",
+      "from sympy.core.logic import fuzzy_and, fuzzy_not, fuzzy_or",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.numbers import Integer, Rational, pi, I",
+      "from sympy.core.parameters import global_parameters",
+      "from sympy.core.power import Pow",
+      "from sympy.core.relational import Ge",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Wild, Dummy",
+      "from sympy.core.sympify import sympify",
+      "from sympy.functions.combinatorial.factorials import factorial",
+      "from sympy.functions.elementary.complexes import arg, unpolarify, im, re, Abs",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.ntheory import multiplicity, perfect_power",
+      "from sympy.ntheory.factor_ import factorint"
+    ],
+    "classes": [
+      "ExpBase",
+      "exp_polar",
+      "ExpMeta",
+      "exp",
+      "log",
+      "LambertW"
+    ],
+    "functions": [
+      "match_real_imag",
+      "_log_atan_table"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_158_4c6c8b961bfb7765_AI_Chariot_Legacy_666_1.0.0_20260508_exponential.py.json"
+}

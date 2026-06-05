@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gb2312.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gb2312.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1027,
+  "content_sha256": "3d2d567d8d079b78f3f3b566ed52ad2f38af61bf832b7dc28858b0039a032d6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 31,
+    "char_count": 1027,
+    "preview_lines": [
+      "#",
+      "# gb2312.py: Python Unicode Codec for GB2312",
+      "#",
+      "# Written by Hye-Shik Chang <perky@FreeBSD.org>",
+      "#",
+      "import _codecs_cn, codecs",
+      "import _multibytecodec as mbc",
+      "codec = _codecs_cn.getcodec('gb2312')",
+      "class Codec(codecs.Codec):",
+      "    encode = codec.encode"
+    ],
+    "imports": [
+      "import _codecs_cn, codecs",
+      "import _multibytecodec as mbc"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamReader",
+      "StreamWriter"
+    ],
+    "functions": [
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_436_3d2d567d8d079b78_AI_Chariot_Legacy_666_1.0.0_20260508_gb2312.py.json"
+}

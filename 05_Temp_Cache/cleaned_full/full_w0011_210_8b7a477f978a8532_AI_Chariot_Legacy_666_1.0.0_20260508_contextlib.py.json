@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 210,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_contextlib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_contextlib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27637,
+  "content_sha256": "8b7a477f978a8532852fd81e241c78182516bc4975d672d580a5848a76e11eb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 800,
+    "non_empty_lines": 656,
+    "char_count": 27637,
+    "preview_lines": [
+      "\"\"\"Utilities for with-statement contexts.  See PEP 343.\"\"\"",
+      "import abc",
+      "import os",
+      "import sys",
+      "import _collections_abc",
+      "from collections import deque",
+      "from functools import wraps",
+      "from types import MethodType, GenericAlias",
+      "__all__ = [\"asynccontextmanager\", \"contextmanager\", \"closing\", \"nullcontext\",",
+      "           \"AbstractContextManager\", \"AbstractAsyncContextManager\","
+    ],
+    "imports": [
+      "import abc",
+      "import os",
+      "import sys",
+      "import _collections_abc",
+      "from collections import deque",
+      "from functools import wraps",
+      "from types import MethodType, GenericAlias"
+    ],
+    "classes": [
+      "AbstractContextManager",
+      "AbstractAsyncContextManager",
+      "ContextDecorator",
+      "AsyncContextDecorator",
+      "_GeneratorContextManagerBase",
+      "_GeneratorContextManager",
+      "_AsyncGeneratorContextManager",
+      "closing",
+      "aclosing",
+      "_RedirectStream",
+      "redirect_stdout",
+      "redirect_stderr",
+      "suppress",
+      "_BaseExitStack",
+      "ExitStack",
+      "AsyncExitStack",
+      "nullcontext",
+      "chdir"
+    ],
+    "functions": [
+      "contextmanager",
+      "asynccontextmanager"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_210_8b7a477f978a8532_AI_Chariot_Legacy_666_1.0.0_20260508_contextlib.py.json"
+}

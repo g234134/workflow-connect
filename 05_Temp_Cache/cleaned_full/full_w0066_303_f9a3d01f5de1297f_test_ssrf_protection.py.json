@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 303,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\test_ssrf_protection.py",
+  "name": "test_ssrf_protection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9515,
+  "content_sha256": "f9a3d01f5de1297f9a95ae527bc8e32b57f2217c0a8920e1f286b129a8e8a796",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 238,
+    "non_empty_lines": 177,
+    "char_count": 9512,
+    "preview_lines": [
+      "\"\"\"Tests for SSRF protection utilities.\"\"\"",
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel, ValidationError",
+      "from langchain_core._security._ssrf_protection import (",
+      "    SSRFProtectedUrl,",
+      "    SSRFProtectedUrlRelaxed,",
+      "    is_safe_url,",
+      "    validate_safe_url,",
+      ")"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel, ValidationError",
+      "from langchain_core._security._ssrf_protection import ("
+    ],
+    "classes": [
+      "TestValidateSafeUrl",
+      "TestIsSafeUrl",
+      "TestSSRFProtectedUrlType",
+      "TestSSRFProtectedUrlRelaxedType",
+      "TestRealWorldURLs"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_303_f9a3d01f5de1297f_test_ssrf_protection.py.json"
+}

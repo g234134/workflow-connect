@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_translation_matrix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_translation_matrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18508,
+  "content_sha256": "a40829813bb6b9eae00530e4a4d69196be62ed991d306fb39a0d09e00841f693",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 458,
+    "non_empty_lines": 351,
+    "char_count": 18508,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# encoding: utf-8",
+      "\"\"\"Produce a translation matrix to translate words from one language to another, using either",
+      "a standard nearest neighbour method or a globally corrected neighbour retrieval method [1]_.",
+      "This method can be used to augment the existing phrase tables with more candidate translations, or",
+      "filter out errors from the translation tables and known dictionaries [2]_. What's more, it also works",
+      "for any two sets of named-vectors where there are some paired-guideposts to learn the transformation.",
+      "Examples",
+      "--------",
+      "How to make translation between two set of word-vectors"
+    ],
+    "imports": [
+      "import warnings",
+      "from collections import OrderedDict",
+      "import numpy as np",
+      "from gensim import utils"
+    ],
+    "classes": [
+      "Space",
+      "TranslationMatrix",
+      "BackMappingTranslationMatrix"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_250_a40829813bb6b9ea_AI_Chariot_Legacy_666_1.0.0_20260508_translation_matrix.py.json"
+}

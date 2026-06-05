@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:49:14+00:00",
+  "source_path": "D:\\大唐三省六部\\04_Workflows\\Cleanup_Check.py",
+  "name": "Cleanup_Check.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6954,
+  "content_sha256": "ac63526f82b18233f7ef7dd9b2b348dd3a02063e47b974fa33e1b4071a62dc0e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 208,
+    "non_empty_lines": 178,
+    "char_count": 6480,
+    "preview_lines": [
+      "# Cleanup_Check.py",
+      "# 比對 C 槽「舊目錄」與 D 槽「新目錄」：以 SHA256 內容比對，找出已在 D 槽存在相同內容的檔案，",
+      "# 供您手動刪除 C 槽冗餘檔（遷移時檔名可能帶前綴，故不用路徑 1:1 對照）。",
+      "from __future__ import annotations",
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "import sys",
+      "from dataclasses import asdict, dataclass"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "import sys",
+      "from dataclasses import asdict, dataclass",
+      "from datetime import datetime, timezone",
+      "from typing import Dict, Iterator, List, Optional, Tuple",
+      "from gov_paths import get_tang_gov_root"
+    ],
+    "classes": [
+      "MatchRow"
+    ],
+    "functions": [
+      "_utc_iso",
+      "sha256_file",
+      "iter_files",
+      "build_dest_index",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_098_ac63526f82b18233_Cleanup_Check.py.json"
+}

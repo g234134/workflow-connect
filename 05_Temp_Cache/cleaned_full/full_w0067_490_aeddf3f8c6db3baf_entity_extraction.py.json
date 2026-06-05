@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:48:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\indexes\\prompts\\entity_extraction.py",
+  "name": "entity_extraction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1993,
+  "content_sha256": "aeddf3f8c6db3bafb0a7fae3f3c4003548d4c72b39be398a34807f0c51671794",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 32,
+    "char_count": 1990,
+    "preview_lines": [
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "_DEFAULT_ENTITY_EXTRACTION_TEMPLATE = \"\"\"You are an AI assistant reading the transcript of a conversation between an AI and a human. Extract all of the proper nouns from the last line of conversation. As a guideline, a proper noun is generally capitalized. You should definitely extract all names and places.",
+      "The conversation history is provided just in case of a coreference (e.g. \"What do you know about him\" where \"him\" is defined in a previous line) -- ignore items mentioned there that are not in the last line.",
+      "Return the output as a single comma-separated list, or NONE if there is nothing of note to return (e.g. the user is just issuing a greeting or having a simple conversation).",
+      "EXAMPLE",
+      "Conversation history:",
+      "Person #1: how's it going today?",
+      "AI: \"It's going great! How about you?\"",
+      "Person #1: good! busy working on Langchain. lots to do.",
+      "AI: \"That sounds like a lot of work! What kind of things are you doing to make Langchain better?\""
+    ],
+    "imports": [
+      "from langchain_core.prompts.prompt import PromptTemplate"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_490_aeddf3f8c6db3baf_entity_extraction.py.json"
+}

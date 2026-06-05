@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\dest\\register_dispatch_key.py",
+  "name": "register_dispatch_key.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41158,
+  "content_sha256": "8bc321328cf02137a46cf27fb7dd5d7252dfc86c82b0eb3b8790b16f7feac5ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 989,
+    "non_empty_lines": 884,
+    "char_count": 41158,
+    "preview_lines": [
+      "import itertools",
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import List, Literal, Optional, Tuple, Union",
+      "import torchgen.api.cpp as cpp",
+      "import torchgen.api.meta as meta",
+      "import torchgen.api.structured as structured",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import (",
+      "    BaseCType,"
+    ],
+    "imports": [
+      "import itertools",
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import List, Literal, Optional, Tuple, Union",
+      "import torchgen.api.cpp as cpp",
+      "import torchgen.api.meta as meta",
+      "import torchgen.api.structured as structured",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import (",
+      "from torchgen.context import method_with_native_function, native_function_manager",
+      "from torchgen.model import (",
+      "from torchgen.selective_build.selector import SelectiveBuilder",
+      "from torchgen.utils import assert_never, mapMaybe, Target"
+    ],
+    "classes": [
+      "RegisterDispatchKey",
+      "StructuredRegisterDispatchKey"
+    ],
+    "functions": [
+      "gen_registration_headers",
+      "gen_empty_impl_names",
+      "gen_create_out_helper",
+      "gen_maybe_create_proxy_helper",
+      "gen_resize_out_helper",
+      "gen_check_inplace_helper",
+      "gen_registration_helpers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_280_8bc321328cf02137_register_dispatch_key.py.json"
+}

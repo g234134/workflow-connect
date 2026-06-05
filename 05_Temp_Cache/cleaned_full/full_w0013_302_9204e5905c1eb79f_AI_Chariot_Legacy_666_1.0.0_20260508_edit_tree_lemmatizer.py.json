@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_edit_tree_lemmatizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_edit_tree_lemmatizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15178,
+  "content_sha256": "9204e5905c1eb79f9d021a96276404234844b4662985fd0791b1557c6cfd5e53",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 395,
+    "non_empty_lines": 335,
+    "char_count": 15178,
+    "preview_lines": [
+      "import importlib",
+      "from collections import Counter",
+      "from itertools import islice",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple, cast",
+      "import numpy as np",
+      "import srsly",
+      "from thinc.api import Config, Model, NumpyOps, SequenceCategoricalCrossentropy",
+      "from thinc.types import Floats2d, Ints2d",
+      "from .. import util",
+      "from ..errors import Errors"
+    ],
+    "imports": [
+      "import importlib",
+      "from collections import Counter",
+      "from itertools import islice",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple, cast",
+      "import numpy as np",
+      "import srsly",
+      "from thinc.api import Config, Model, NumpyOps, SequenceCategoricalCrossentropy",
+      "from thinc.types import Floats2d, Ints2d",
+      "from .. import util",
+      "from ..errors import Errors",
+      "from ..language import Language",
+      "from ..tokens import Doc",
+      "from ..training import Example, validate_examples, validate_get_examples",
+      "from ..vocab import Vocab",
+      "from ._edit_tree_internals.edit_trees import EditTrees",
+      "from ._edit_tree_internals.schemas import validate_edit_tree",
+      "from .lemmatizer import lemmatizer_score",
+      "from .trainable_pipe import TrainablePipe"
+    ],
+    "classes": [
+      "EditTreeLemmatizer"
+    ],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_302_9204e5905c1eb79f_AI_Chariot_Legacy_666_1.0.0_20260508_edit_tree_lemmatizer.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 217,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__socket.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__socket.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6046,
+  "content_sha256": "9556708eba36a86c5ca039a425f71685a98b029b17caa4165fbffb0211de54a8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 166,
+    "char_count": 6046,
+    "preview_lines": [
+      "import errno",
+      "import selectors",
+      "import socket",
+      "from typing import Optional, Union, Any",
+      "from ._exceptions import (",
+      "    WebSocketConnectionClosedException,",
+      "    WebSocketTimeoutException,",
+      ")",
+      "from ._ssl_compat import SSLError, SSLEOFError, SSLWantReadError, SSLWantWriteError",
+      "from ._utils import extract_error_code, extract_err_message"
+    ],
+    "imports": [
+      "import errno",
+      "import selectors",
+      "import socket",
+      "from typing import Optional, Union, Any",
+      "from ._exceptions import (",
+      "from ._ssl_compat import SSLError, SSLEOFError, SSLWantReadError, SSLWantWriteError",
+      "from ._utils import extract_error_code, extract_err_message"
+    ],
+    "classes": [
+      "sock_opt"
+    ],
+    "functions": [
+      "setdefaulttimeout",
+      "getdefaulttimeout",
+      "recv",
+      "recv_line",
+      "send"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_217_9556708eba36a86c_AI_Chariot_Legacy_666_1.0.0_20260508__socket.py.json"
+}

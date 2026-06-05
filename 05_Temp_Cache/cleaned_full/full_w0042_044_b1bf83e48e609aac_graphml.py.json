@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\readwrite\\graphml.py",
+  "name": "graphml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 39326,
+  "content_sha256": "b1bf83e48e609aac8d8ff4d2354bcb9fef7a3415ed3803c53042af4f79a4753c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1053,
+    "non_empty_lines": 928,
+    "char_count": 39326,
+    "preview_lines": [
+      "\"\"\"",
+      "*******",
+      "GraphML",
+      "*******",
+      "Read and write graphs in GraphML format.",
+      ".. warning::",
+      "    This parser uses the standard xml library present in Python, which is",
+      "    insecure - see :external+python:mod:`xml` for additional information.",
+      "    Only parse GraphML files you trust.",
+      "This implementation does not support mixed graphs (directed and unidirected"
+    ],
+    "imports": [
+      "import warnings",
+      "from collections import defaultdict",
+      "import networkx as nx",
+      "from networkx.utils import open_file",
+      "import lxml.etree as lxmletree"
+    ],
+    "classes": [
+      "GraphML",
+      "GraphMLWriter",
+      "IncrementalElement",
+      "GraphMLWriterLxml",
+      "GraphMLReader"
+    ],
+    "functions": [
+      "write_graphml_xml",
+      "write_graphml_lxml",
+      "generate_graphml",
+      "read_graphml",
+      "parse_graphml"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_044_b1bf83e48e609aac_graphml.py.json"
+}

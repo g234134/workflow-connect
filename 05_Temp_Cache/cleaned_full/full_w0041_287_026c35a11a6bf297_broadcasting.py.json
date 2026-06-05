@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:47:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\broadcasting.py",
+  "name": "broadcasting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4974,
+  "content_sha256": "026c35a11a6bf29752ebb682ffdc2324e42898fd48a8fbeab44edcd0c7fd2fbd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 132,
+    "char_count": 4972,
+    "preview_lines": [
+      "\"\"\"Routines to calculate the broadcast time of certain graphs.",
+      "Broadcasting is an information dissemination problem in which a node in a graph,",
+      "called the originator, must distribute a message to all other nodes by placing",
+      "a series of calls along the edges of the graph. Once informed, other nodes aid",
+      "the originator in distributing the message.",
+      "The broadcasting must be completed as quickly as possible subject to the",
+      "following constraints:",
+      "- Each call requires one unit of time.",
+      "- A node can only participate in one call per unit of time.",
+      "- Each call only involves two adjacent nodes: a sender and a receiver."
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_max_broadcast_value",
+      "_get_broadcast_centers",
+      "tree_broadcast_center",
+      "tree_broadcast_time"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_287_026c35a11a6bf297_broadcasting.py.json"
+}

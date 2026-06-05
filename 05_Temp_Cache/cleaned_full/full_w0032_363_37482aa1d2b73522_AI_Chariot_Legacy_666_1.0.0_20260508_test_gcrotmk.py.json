@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_gcrotmk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_gcrotmk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6044,
+  "content_sha256": "37482aa1d2b73522ed8dd781b016d5429b3e4ac740b71061cb13d82b637c996c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 141,
+    "char_count": 6044,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "\"\"\"Tests for the linalg._isolve.gcrotmk module",
+      "\"\"\"",
+      "import threading",
+      "from numpy.testing import (assert_, assert_allclose, assert_equal,",
+      "                           suppress_warnings)",
+      "import numpy as np",
+      "from numpy import zeros, array, allclose",
+      "from scipy.linalg import norm",
+      "from scipy.sparse import csr_array, eye_array, random_array"
+    ],
+    "imports": [
+      "import threading",
+      "from numpy.testing import (assert_, assert_allclose, assert_equal,",
+      "import numpy as np",
+      "from numpy import zeros, array, allclose",
+      "from scipy.linalg import norm",
+      "from scipy.sparse import csr_array, eye_array, random_array",
+      "from scipy.sparse.linalg._interface import LinearOperator",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.sparse.linalg._isolve import gcrotmk, gmres"
+    ],
+    "classes": [
+      "TestGCROTMK"
+    ],
+    "functions": [
+      "matvec",
+      "cb",
+      "do_solve"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_363_37482aa1d2b73522_AI_Chariot_Legacy_666_1.0.0_20260508_test_gcrotmk.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__beta_decorator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__beta_decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 574,
+  "content_sha256": "fe550c67218fde66ce6e83f10f19229ec91c65e9a85c8fa7f248bf68fbb5862a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 574,
+    "preview_lines": [
+      "import functools",
+      "import warnings",
+      "from typing import Callable",
+      "class LangSmithBetaWarning(UserWarning):",
+      "    \"\"\"This is a warning specific to the LangSmithBeta module.\"\"\"",
+      "@functools.lru_cache(maxsize=100)",
+      "def _warn_once(message: str, stacklevel: int = 2) -> None:",
+      "    warnings.warn(message, LangSmithBetaWarning, stacklevel=stacklevel)",
+      "def warn_beta(func: Callable) -> Callable:",
+      "    @functools.wraps(func)"
+    ],
+    "imports": [
+      "import functools",
+      "import warnings",
+      "from typing import Callable"
+    ],
+    "classes": [
+      "LangSmithBetaWarning"
+    ],
+    "functions": [
+      "_warn_once",
+      "warn_beta"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_158_fe550c67218fde66_AI_Chariot_Legacy_666_1.0.0_20260508__beta_decorator.py.json"
+}

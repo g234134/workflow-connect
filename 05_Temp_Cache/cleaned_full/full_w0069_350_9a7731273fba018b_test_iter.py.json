@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\utils\\test_iter.py",
+  "name": "test_iter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 614,
+  "content_sha256": "9a7731273fba018b102ed09917a206127a6964dc65d404ed7ce05447a5b75307",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 18,
+    "char_count": 611,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_core.utils.iter import batch_iterate",
+      "@pytest.mark.parametrize(",
+      "    (\"input_size\", \"input_iterable\", \"expected_output\"),",
+      "    [",
+      "        (2, [1, 2, 3, 4, 5], [[1, 2], [3, 4], [5]]),",
+      "        (3, [10, 20, 30, 40, 50], [[10, 20, 30], [40, 50]]),",
+      "        (1, [100, 200, 300], [[100], [200], [300]]),",
+      "        (4, [], []),",
+      "    ],"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_core.utils.iter import batch_iterate"
+    ],
+    "classes": [],
+    "functions": [
+      "test_batch_iterate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_350_9a7731273fba018b_test_iter.py.json"
+}

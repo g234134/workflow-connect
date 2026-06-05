@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_span_ruler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_span_ruler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19479,
+  "content_sha256": "e5d66c9e9729c30d5edf670d347c306e9dc0a3393ae5223859c385eb5007a6b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 507,
+    "non_empty_lines": 439,
+    "char_count": 19479,
+    "preview_lines": [
+      "import importlib",
+      "import warnings",
+      "from functools import partial",
+      "from pathlib import Path",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Dict,",
+      "    Iterable,",
+      "    List,"
+    ],
+    "imports": [
+      "import importlib",
+      "import warnings",
+      "from functools import partial",
+      "from pathlib import Path",
+      "from typing import (",
+      "import srsly",
+      "from .. import util",
+      "from ..errors import Errors, Warnings",
+      "from ..language import Language",
+      "from ..matcher import Matcher, PhraseMatcher",
+      "from ..matcher.levenshtein import levenshtein_compare",
+      "from ..scorer import Scorer",
+      "from ..tokens import Doc, Span",
+      "from ..training import Example",
+      "from ..util import SimpleFrozenList, ensure_path",
+      "from .pipe import Pipe",
+      "from the EntityRuler."
+    ],
+    "classes": [
+      "SpanRuler"
+    ],
+    "functions": [
+      "prioritize_new_ents_filter",
+      "make_prioritize_new_ents_filter",
+      "prioritize_existing_ents_filter",
+      "make_preserve_existing_ents_filter",
+      "overlapping_labeled_spans_score",
+      "make_overlapping_labeled_spans_scorer",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_103_e5d66c9e9729c30d_AI_Chariot_Legacy_666_1.0.0_20260508_span_ruler.py.json"
+}

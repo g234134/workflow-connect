@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__atfork.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__atfork.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 825,
+  "content_sha256": "1ccede58f6ddef5db07a0cd0ef42bfa03e3fb6fadc7f2243099d5c7399405e71",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 23,
+    "char_count": 825,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import sys",
+      "__all__ = [\"register_after_fork\"]",
+      "if sys.platform == \"win32\":",
+      "    import multiprocessing.util as _util",
+      "    def _register(func):",
+      "        def wrapper(arg):",
+      "            func()",
+      "        _util.register_after_fork(_register, wrapper)",
+      "else:"
+    ],
+    "imports": [
+      "import sys",
+      "import multiprocessing.util as _util",
+      "import os"
+    ],
+    "classes": [],
+    "functions": [
+      "register_after_fork"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_102_1ccede58f6ddef5d_AI_Chariot_Legacy_666_1.0.0_20260508__atfork.py.json"
+}

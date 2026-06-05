@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_torchao.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_torchao.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8143,
+  "content_sha256": "322cac8ef88068bb95049063cb952ec0488954dcb2baa036d6fd6931ea4c0e75",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 154,
+    "char_count": 8143,
+    "preview_lines": [
+      "# Copyright 2024 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import re",
+      "from typing import TYPE_CHECKING",
+      "from .base import HfQuantizer",
+      "from .quantizers_utils import get_module_from_name, should_convert_module",
+      "from ..modeling_utils import PreTrainedModel",
+      "from ..utils.quantization_config import TorchAoConfig",
+      "from safetensors import safe_open",
+      "from ..utils import is_torch_available, is_torchao_available, logging",
+      "from ..core_model_loading import WeightConverter",
+      "import torch",
+      "from torchao.prototype.safetensors.safetensors_support import (",
+      "from torchao.quantization import FqnToConfig, fqn_matches_fqn_config",
+      "from ..integrations.torchao import TorchAoQuantize",
+      "from ..integrations.torchao import TorchAoDeserialize"
+    ],
+    "classes": [
+      "TorchAoHfQuantizer"
+    ],
+    "functions": [
+      "_fuzzy_match_size"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_468_322cac8ef88068bb_AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_torchao.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\sets\\handlers\\comparison.py",
+  "name": "comparison.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1601,
+  "content_sha256": "59f4ffbcbace92f3ea460da67fb833895b3fe9c2e0d24393105bfe35bd7322fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 38,
+    "char_count": 1601,
+    "preview_lines": [
+      "from sympy.core.relational import Eq, is_eq",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.logic import fuzzy_and, fuzzy_bool",
+      "from sympy.logic.boolalg import And",
+      "from sympy.multipledispatch import dispatch",
+      "from sympy.sets.sets import tfn, ProductSet, Interval, FiniteSet, Set",
+      "@dispatch(Interval, FiniteSet) # type:ignore",
+      "def _eval_is_eq(lhs, rhs): # noqa: F811",
+      "    return False",
+      "@dispatch(FiniteSet, Interval) # type:ignore"
+    ],
+    "imports": [
+      "from sympy.core.relational import Eq, is_eq",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.logic import fuzzy_and, fuzzy_bool",
+      "from sympy.logic.boolalg import And",
+      "from sympy.multipledispatch import dispatch",
+      "from sympy.sets.sets import tfn, ProductSet, Interval, FiniteSet, Set"
+    ],
+    "classes": [],
+    "functions": [
+      "_eval_is_eq",
+      "_eval_is_eq",
+      "_eval_is_eq",
+      "_eval_is_eq",
+      "_eval_is_eq",
+      "_eval_is_eq",
+      "_eval_is_eq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_221_59f4ffbcbace92f3_comparison.py.json"
+}

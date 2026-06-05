@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_glibc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_glibc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3726,
+  "content_sha256": "b0487c44924b612751bd3a803b84c754f3c0f9848354b0f8488f52a3e6f15f55",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 102,
+    "non_empty_lines": 87,
+    "char_count": 3726,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "def glibc_version_string() -> str | None:",
+      "    \"Returns glibc version string, or None if not using glibc.\"",
+      "    return glibc_version_string_confstr() or glibc_version_string_ctypes()",
+      "def glibc_version_string_confstr() -> str | None:",
+      "    \"Primary implementation of glibc_version_string using os.confstr.\"",
+      "    # os.confstr is quite a bit faster than ctypes.DLL. It's also less likely",
+      "    # to be broken or missing. This strategy is used in the standard library"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "import ctypes"
+    ],
+    "classes": [],
+    "functions": [
+      "glibc_version_string",
+      "glibc_version_string_confstr",
+      "glibc_version_string_ctypes",
+      "libc_ver"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_117_b0487c44924b6127_AI_Chariot_Legacy_666_1.0.0_20260508_glibc.py.json"
+}

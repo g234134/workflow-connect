@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 50,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_annotations.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_annotations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1581,
+  "content_sha256": "553fc0a2b298f40616619519d7bfc2794ac994403b54693054b0d09700f5071a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 40,
+    "char_count": 1581,
+    "preview_lines": [
+      "u\"\"\"",
+      "Fixer to remove function annotations",
+      "\"\"\"",
+      "from lib2to3 import fixer_base",
+      "from lib2to3.pgen2 import token",
+      "from lib2to3.fixer_util import syms",
+      "warning_text = u\"Removing function annotations completely.\"",
+      "def param_without_annotations(node):",
+      "    return node.children[0]",
+      "class FixAnnotations(fixer_base.BaseFix):"
+    ],
+    "imports": [
+      "from lib2to3 import fixer_base",
+      "from lib2to3.pgen2 import token",
+      "from lib2to3.fixer_util import syms"
+    ],
+    "classes": [
+      "FixAnnotations"
+    ],
+    "functions": [
+      "param_without_annotations"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_050_553fc0a2b298f406_AI_Chariot_Legacy_666_1.0.0_20260508_fix_annotations.py.json"
+}

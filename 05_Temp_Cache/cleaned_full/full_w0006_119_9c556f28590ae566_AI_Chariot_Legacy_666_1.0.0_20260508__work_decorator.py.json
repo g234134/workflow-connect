@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__work_decorator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__work_decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5109,
+  "content_sha256": "9c556f28590ae56634c89a8f065603c5daa9aa8fa016149cf9625894ee04759d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 158,
+    "non_empty_lines": 134,
+    "char_count": 5109,
+    "preview_lines": [
+      "\"\"\"",
+      "A decorator used to create [workers](/guide/workers).",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from functools import partial, wraps",
+      "from inspect import iscoroutinefunction",
+      "from typing import TYPE_CHECKING, Callable, Coroutine, TypeVar, Union, cast, overload",
+      "from typing_extensions import ParamSpec, TypeAlias",
+      "if TYPE_CHECKING:",
+      "    from textual.worker import Worker"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import partial, wraps",
+      "from inspect import iscoroutinefunction",
+      "from typing import TYPE_CHECKING, Callable, Coroutine, TypeVar, Union, cast, overload",
+      "from typing_extensions import ParamSpec, TypeAlias",
+      "from textual.worker import Worker",
+      "from textual.dom import DOMNode"
+    ],
+    "classes": [
+      "WorkerDeclarationError"
+    ],
+    "functions": [
+      "work"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_119_9c556f28590ae566_AI_Chariot_Legacy_666_1.0.0_20260508__work_decorator.py.json"
+}

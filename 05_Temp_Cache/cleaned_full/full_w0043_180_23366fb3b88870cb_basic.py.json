@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\basic.py",
+  "name": "basic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 76789,
+  "content_sha256": "23366fb3b88870cbd5f3f6ad85d3819c8bc1609837f2486e3b67c026d77bb931",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2355,
+    "non_empty_lines": 1924,
+    "char_count": 76789,
+    "preview_lines": [
+      "\"\"\"Base class for all the objects in SymPy\"\"\"",
+      "from __future__ import annotations",
+      "from collections import Counter",
+      "from collections.abc import Mapping, Iterable",
+      "from itertools import zip_longest",
+      "from functools import cmp_to_key",
+      "from typing import TYPE_CHECKING, overload",
+      "from .assumptions import _prepare_class_assumptions",
+      "from .cache import cacheit",
+      "from .sympify import _sympify, sympify, SympifyError, _external_converter"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import Counter",
+      "from collections.abc import Mapping, Iterable",
+      "from itertools import zip_longest",
+      "from functools import cmp_to_key",
+      "from typing import TYPE_CHECKING, overload",
+      "from .assumptions import _prepare_class_assumptions",
+      "from .cache import cacheit",
+      "from .sympify import _sympify, sympify, SympifyError, _external_converter",
+      "from .sorting import ordered",
+      "from .kind import Kind, UndefinedKind",
+      "from ._print_helpers import Printable",
+      "from sympy.utilities.decorator import deprecated",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.iterables import iterable, numbered_symbols",
+      "from sympy.utilities.misc import filldedent, func_name",
+      "from typing import ClassVar, TypeVar, Any",
+      "from typing_extensions import Self",
+      "from .assumptions import StdFactKB",
+      "from .symbol import Symbol"
+    ],
+    "classes": [
+      "Basic",
+      "Atom"
+    ],
+    "functions": [
+      "as_Basic",
+      "_cmp_name",
+      "_get_postprocessors",
+      "_get_postprocessors_for_type",
+      "_atomic",
+      "_make_find_query"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_180_23366fb3b88870cb_basic.py.json"
+}

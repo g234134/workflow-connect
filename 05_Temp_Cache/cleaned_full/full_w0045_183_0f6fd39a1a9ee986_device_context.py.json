@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lazy\\device_context.py",
+  "name": "device_context.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 659,
+  "content_sha256": "0f6fd39a1a9ee9868b13584e3a4186d40707cce6516407cd00e62f9b2729b023",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 659,
+    "preview_lines": [
+      "import threading",
+      "from typing import Any, Dict",
+      "import torch._C._lazy",
+      "class DeviceContext:",
+      "    _CONTEXTS: Dict[str, Any] = dict()",
+      "    _CONTEXTS_LOCK = threading.Lock()",
+      "    def __init__(self, device):",
+      "        self.device = device",
+      "def get_device_context(device=None):",
+      "    if device is None:"
+    ],
+    "imports": [
+      "import threading",
+      "from typing import Any, Dict",
+      "import torch._C._lazy"
+    ],
+    "classes": [
+      "DeviceContext"
+    ],
+    "functions": [
+      "get_device_context"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_183_0f6fd39a1a9ee986_device_context.py.json"
+}

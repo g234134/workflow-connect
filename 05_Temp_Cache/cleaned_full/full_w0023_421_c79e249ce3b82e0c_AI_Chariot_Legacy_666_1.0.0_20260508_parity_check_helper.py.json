@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_parity_check_helper.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_parity_check_helper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5840,
+  "content_sha256": "c79e249ce3b82e0cd6be57b73771ee5b24534cd86171a9f031ad7602b79d0d3a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 146,
+    "non_empty_lines": 120,
+    "char_count": 5840,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.  See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "# This script helps debugging parity issue for two same onnx models with fp16 and fp32 format",
+      "# Please build ORT with --cmake_extra_defines onnxruntime_DEBUG_NODE_INPUTS_OUTPUTS=ON",
+      "import math",
+      "import multiprocessing",
+      "import os"
+    ],
+    "imports": [
+      "import math",
+      "import multiprocessing",
+      "import os",
+      "from pathlib import Path",
+      "import numpy",
+      "import torch",
+      "from benchmark_helper import create_onnxruntime_session",
+      "from gpt2_helper import Gpt2Helper",
+      "from onnx import TensorProto, numpy_helper",
+      "import shutil  # noqa: PLC0415",
+      "import glob  # noqa: PLC0415"
+    ],
+    "classes": [],
+    "functions": [
+      "environ_setting_nodes",
+      "environ_setting_paths",
+      "environ_reset",
+      "inference",
+      "generate_outputs_files",
+      "post_processing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_421_c79e249ce3b82e0c_AI_Chariot_Legacy_666_1.0.0_20260508_parity_check_helper.py.json"
+}

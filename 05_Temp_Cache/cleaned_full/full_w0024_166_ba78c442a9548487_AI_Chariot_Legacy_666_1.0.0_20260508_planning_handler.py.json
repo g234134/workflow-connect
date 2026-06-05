@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:45:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_planning_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_planning_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5963,
+  "content_sha256": "ba78c442a95484874e15a1b69a799b6c4ccf84f248815098fd4b631664599206",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 130,
+    "char_count": 5963,
+    "preview_lines": [
+      "\"\"\"Handles planning and coordination of crew tasks.\"\"\"",
+      "import logging",
+      "from pydantic import BaseModel, Field",
+      "from crewai.agent import Agent",
+      "from crewai.llms.base_llm import BaseLLM",
+      "from crewai.task import Task",
+      "logger = logging.getLogger(__name__)",
+      "class PlanPerTask(BaseModel):",
+      "    \"\"\"Represents a plan for a specific task.\"\"\"",
+      "    task_number: int = Field("
+    ],
+    "imports": [
+      "import logging",
+      "from pydantic import BaseModel, Field",
+      "from crewai.agent import Agent",
+      "from crewai.llms.base_llm import BaseLLM",
+      "from crewai.task import Task"
+    ],
+    "classes": [
+      "PlanPerTask",
+      "PlannerTaskPydanticOutput",
+      "CrewPlanner"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_166_ba78c442a9548487_AI_Chariot_Legacy_666_1.0.0_20260508_planning_handler.py.json"
+}

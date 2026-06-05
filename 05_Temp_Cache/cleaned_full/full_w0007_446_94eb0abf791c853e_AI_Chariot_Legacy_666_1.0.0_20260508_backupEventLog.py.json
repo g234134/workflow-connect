@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backupEventLog.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backupEventLog.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1288,
+  "content_sha256": "94eb0abf791c853e0a8717f4adf0b511eca5562d5998a84a45e69069b91826a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 41,
+    "char_count": 1288,
+    "preview_lines": [
+      "# Generate a base file name",
+      "import os",
+      "import time",
+      "import win32api",
+      "import win32evtlog",
+      "def BackupClearLog(logType):",
+      "    datePrefix = time.strftime(\"%Y%m%d\", time.localtime(time.time()))",
+      "    fileExists = 1",
+      "    retry = 0",
+      "    while fileExists:"
+    ],
+    "imports": [
+      "import os",
+      "import time",
+      "import win32api",
+      "import win32evtlog"
+    ],
+    "classes": [],
+    "functions": [
+      "BackupClearLog"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_446_94eb0abf791c853e_AI_Chariot_Legacy_666_1.0.0_20260508_backupEventLog.py.json"
+}

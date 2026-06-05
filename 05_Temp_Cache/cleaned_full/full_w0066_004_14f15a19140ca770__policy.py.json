@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 4,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\_security\\_policy.py",
+  "name": "_policy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11159,
+  "content_sha256": "14f15a19140ca770a3faa6c0d111157d8dbde13611247a3b3d29b21a6ecc5657",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 306,
+    "non_empty_lines": 246,
+    "char_count": 11156,
+    "preview_lines": [
+      "\"\"\"SSRF protection policy with IP validation and DNS-aware URL checking.\"\"\"",
+      "import asyncio",
+      "import dataclasses",
+      "import ipaddress",
+      "import os",
+      "import socket",
+      "import urllib.parse",
+      "from langchain_core._security._exceptions import SSRFBlockedError",
+      "# ---------------------------------------------------------------------------",
+      "# Blocklist constants"
+    ],
+    "imports": [
+      "import asyncio",
+      "import dataclasses",
+      "import ipaddress",
+      "import os",
+      "import socket",
+      "import urllib.parse",
+      "from langchain_core._security._exceptions import SSRFBlockedError"
+    ],
+    "classes": [
+      "SSRFPolicy"
+    ],
+    "functions": [
+      "_extract_embedded_ipv4",
+      "_ip_in_blocked_networks",
+      "validate_resolved_ip",
+      "validate_hostname",
+      "_effective_allowed_hosts",
+      "validate_url_sync"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_004_14f15a19140ca770__policy.py.json"
+}

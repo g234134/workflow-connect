@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\saved_variable_hooks.h",
+  "name": "saved_variable_hooks.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 336,
+  "content_sha256": "49d8038d00013f7a4a9686b9e164353898597cd267ec47194d6e4aa08aee5c07",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 11,
+    "char_count": 336,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "namespace torch {",
+      "namespace autograd {",
+      "struct TORCH_API SavedVariableHooks {",
+      "  virtual void call_pack_hook(const at::Tensor& tensor) = 0;",
+      "  virtual at::Tensor call_unpack_hook() = 0;",
+      "  virtual ~SavedVariableHooks() = default;",
+      "};",
+      "} // namespace autograd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_124_49d8038d00013f7a_saved_variable_hooks.h.json"
+}

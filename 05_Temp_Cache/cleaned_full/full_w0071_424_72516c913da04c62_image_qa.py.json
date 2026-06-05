@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 424,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_tools\\information_retrieval\\image_qa.py",
+  "name": "image_qa.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2203,
+  "content_sha256": "72516c913da04c62bd70832f9fbcd50be6bac446af00cdd2715c902dcf933d96",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 48,
+    "char_count": 2203,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import os",
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "@with_requirements([\"transformers\", \"torch\", \"pillow\"], [\"transformers\", \"torch\", \"os\"])",
+      "def image_qa(image, question, ckpt=\"Salesforce/blip-vqa-base\"):",
+      "    \"\"\"Perform question answering on an image using a pre-trained VQA model.",
+      "    Args:",
+      "        image (Union[str, Image.Image]): The image to perform question answering on. It can be either file path to the image or a PIL Image object."
+    ],
+    "imports": [
+      "import os",
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "import torch",
+      "from PIL import Image",
+      "from transformers import BlipForQuestionAnswering, BlipProcessor"
+    ],
+    "classes": [],
+    "functions": [
+      "image_qa"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_424_72516c913da04c62_image_qa.py.json"
+}

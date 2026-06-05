@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 215,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\pipeline\\sync\\skip\\tracker.py",
+  "name": "tracker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6344,
+  "content_sha256": "23d7af652d89f0983c891f8fbd5161579f072ce9f533b6a40689fd276730426d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 180,
+    "non_empty_lines": 136,
+    "char_count": 6344,
+    "preview_lines": [
+      "# Copyright 2019 Kakao Brain",
+      "#",
+      "# Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "\"\"\"Tracks skip tensors on a thread.\"\"\"",
+      "from contextlib import contextmanager",
+      "import threading",
+      "from typing import Dict, Generator, List, Optional, Tuple"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "import threading",
+      "from typing import Dict, Generator, List, Optional, Tuple",
+      "from torch import Tensor",
+      "from ..checkpoint import is_checkpointing",
+      "from ..dependency import fork, join",
+      "from ..microbatch import Batch",
+      "from ..stream import AbstractStream",
+      "from .layout import SkipLayout",
+      "from .namespace import Namespace",
+      "from .portal import Portal"
+    ],
+    "classes": [
+      "SkipTracker",
+      "SkipTrackerThroughPotals",
+      "ThreadLocal"
+    ],
+    "functions": [
+      "use_skip_tracker",
+      "current_skip_tracker"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_215_23d7af652d89f098_tracker.py.json"
+}

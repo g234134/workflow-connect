@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 408,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_shortestaugmentingpath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_shortestaugmentingpath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10372,
+  "content_sha256": "8175dd918de71f8774857567d0fdbe9337c2dc31dcb8276bb9d15dc5eb5f94a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 300,
+    "non_empty_lines": 254,
+    "char_count": 10372,
+    "preview_lines": [
+      "\"\"\"",
+      "Shortest augmenting path algorithm for maximum flow problems.",
+      "\"\"\"",
+      "from collections import deque",
+      "import networkx as nx",
+      "from .edmondskarp import edmonds_karp_core",
+      "from .utils import CurrentEdge, build_residual_network",
+      "__all__ = [\"shortest_augmenting_path\"]",
+      "def shortest_augmenting_path_impl(G, s, t, capacity, residual, two_phase, cutoff):",
+      "    \"\"\"Implementation of the shortest augmenting path algorithm.\"\"\""
+    ],
+    "imports": [
+      "from collections import deque",
+      "import networkx as nx",
+      "from .edmondskarp import edmonds_karp_core",
+      "from .utils import CurrentEdge, build_residual_network"
+    ],
+    "classes": [],
+    "functions": [
+      "shortest_augmenting_path_impl",
+      "shortest_augmenting_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_408_8175dd918de71f87_AI_Chariot_Legacy_666_1.0.0_20260508_shortestaugmentingpath.py.json"
+}

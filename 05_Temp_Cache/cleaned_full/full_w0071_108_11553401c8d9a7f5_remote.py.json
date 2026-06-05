@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\pregel\\remote.py",
+  "name": "remote.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 45300,
+  "content_sha256": "11553401c8d9a7f595f0b1f54f218a171f579af1462be4f20ab66babf22694fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1191,
+    "non_empty_lines": 1075,
+    "char_count": 45297,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import logging",
+      "from collections.abc import AsyncIterator, Iterator, Sequence",
+      "from dataclasses import asdict",
+      "from typing import (",
+      "    Any,",
+      "    Literal,",
+      "    cast,",
+      "    overload,",
+      ")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from collections.abc import AsyncIterator, Iterator, Sequence",
+      "from dataclasses import asdict",
+      "from typing import (",
+      "from uuid import UUID",
+      "import langsmith as ls",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langchain_core.runnables.graph import (",
+      "from langchain_core.runnables.graph import (",
+      "from langchain_core.runnables.graph import (",
+      "from langgraph.checkpoint.base import CheckpointMetadata",
+      "from langgraph_sdk.client import (",
+      "from langgraph_sdk.schema import (",
+      "from langgraph_sdk.schema import (",
+      "from langgraph_sdk.schema import (",
+      "from typing_extensions import Self",
+      "from langgraph._internal._config import merge_configs",
+      "from langgraph._internal._constants import (",
+      "from langgraph.errors import GraphInterrupt, ParentCommand"
+    ],
+    "classes": [
+      "RemoteException",
+      "RemoteGraph"
+    ],
+    "functions": [
+      "_sanitize_config_value",
+      "_merge_tracing_headers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_108_11553401c8d9a7f5_remote.py.json"
+}

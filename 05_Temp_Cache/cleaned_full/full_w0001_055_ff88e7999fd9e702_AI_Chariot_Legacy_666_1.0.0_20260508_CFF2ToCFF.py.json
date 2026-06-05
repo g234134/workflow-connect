@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_CFF2ToCFF.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_CFF2ToCFF.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8459,
+  "content_sha256": "ff88e7999fd9e70294d0b12961cd9c9c4963479f2e6de404da3e9e641ddeccae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 258,
+    "non_empty_lines": 214,
+    "char_count": 8459,
+    "preview_lines": [
+      "\"\"\"CFF2 to CFF converter.\"\"\"",
+      "from fontTools.ttLib import TTFont, newTable",
+      "from fontTools.misc.cliTools import makeOutputFileName",
+      "from fontTools.misc.psCharStrings import T2StackUseExtractor",
+      "from fontTools.cffLib import (",
+      "    TopDictIndex,",
+      "    buildOrder,",
+      "    buildDefaults,",
+      "    topDictOperators,",
+      "    privateDictOperators,"
+    ],
+    "imports": [
+      "from fontTools.ttLib import TTFont, newTable",
+      "from fontTools.misc.cliTools import makeOutputFileName",
+      "from fontTools.misc.psCharStrings import T2StackUseExtractor",
+      "from fontTools.cffLib import (",
+      "from .transforms import desubroutinizeCharString",
+      "from .specializer import specializeProgram",
+      "from .width import optimizeWidths",
+      "from collections import defaultdict",
+      "import logging",
+      "import sys",
+      "import argparse"
+    ],
+    "classes": [],
+    "functions": [
+      "_convertCFF2ToCFF",
+      "convertCFF2ToCFF",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_055_ff88e7999fd9e702_AI_Chariot_Legacy_666_1.0.0_20260508_CFF2ToCFF.py.json"
+}

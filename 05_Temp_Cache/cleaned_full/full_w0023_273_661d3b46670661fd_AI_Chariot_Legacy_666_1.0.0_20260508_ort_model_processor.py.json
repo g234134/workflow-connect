@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 273,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ort_model_processor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ort_model_processor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4472,
+  "content_sha256": "661d3b46670661fd3ea9b5d18a29b60d65061dbb2b11e1bafeb39cc7754b7b1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 71,
+    "char_count": 4472,
+    "preview_lines": [
+      "# Copyright (c) Microsoft Corporation. All rights reserved.",
+      "# Licensed under the MIT License.",
+      "import ort_flatbuffers_py.fbs as fbs",
+      "from .operator_type_usage_processors import OperatorTypeUsageManager",
+      "class OrtFormatModelProcessor:",
+      "    \"Class to process an ORT format model and determine required operators and types.\"",
+      "    def __init__(self, model_path: str, required_ops: dict, processors: OperatorTypeUsageManager):",
+      "        \"\"\"",
+      "        Initialize ORT format model processor",
+      "        :param model_path: Path to model to load"
+    ],
+    "imports": [
+      "import ort_flatbuffers_py.fbs as fbs",
+      "from .operator_type_usage_processors import OperatorTypeUsageManager"
+    ],
+    "classes": [
+      "OrtFormatModelProcessor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_273_661d3b46670661fd_AI_Chariot_Legacy_666_1.0.0_20260508_ort_model_processor.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_spfun_stats.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_spfun_stats.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2058,
+  "content_sha256": "02ba1fb905580a6e917af131d203f6009d7fe8046b7f842ce632f78f42c43ca5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 48,
+    "char_count": 2058,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import (assert_array_equal,",
+      "        assert_array_almost_equal_nulp, assert_almost_equal)",
+      "from pytest import raises as assert_raises",
+      "from scipy.special import gammaln, multigammaln",
+      "class TestMultiGammaLn:",
+      "    def test1(self):",
+      "        # A test of the identity",
+      "        #     Gamma_1(a) = Gamma(a)",
+      "        np.random.seed(1234)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import (assert_array_equal,",
+      "from pytest import raises as assert_raises",
+      "from scipy.special import gammaln, multigammaln"
+    ],
+    "classes": [
+      "TestMultiGammaLn"
+    ],
+    "functions": [
+      "_check_multigammaln_array_result",
+      "test_multigammaln_array_arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_280_02ba1fb905580a6e_AI_Chariot_Legacy_666_1.0.0_20260508_test_spfun_stats.py.json"
+}

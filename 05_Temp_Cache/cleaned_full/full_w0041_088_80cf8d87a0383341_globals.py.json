@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\click\\globals.py",
+  "name": "globals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1923,
+  "content_sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 45,
+    "char_count": 1923,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from threading import local",
+      "if t.TYPE_CHECKING:",
+      "    from .core import Context",
+      "_local = local()",
+      "@t.overload",
+      "def get_current_context(silent: t.Literal[False] = False) -> Context: ...",
+      "@t.overload",
+      "def get_current_context(silent: bool = ...) -> Context | None: ..."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from threading import local",
+      "from .core import Context"
+    ],
+    "classes": [],
+    "functions": [
+      "get_current_context",
+      "get_current_context",
+      "get_current_context",
+      "push_context",
+      "pop_context",
+      "resolve_color_default"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_088_80cf8d87a0383341_globals.py.json"
+}

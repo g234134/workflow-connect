@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\example_selectors\\length_based.py",
+  "name": "length_based.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4510,
+  "content_sha256": "6096d8c803ece0d29fe563f2fd572e28ebe5fa30a1af6da78298e13bfa9d19fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 100,
+    "char_count": 4507,
+    "preview_lines": [
+      "\"\"\"Select examples based on length.\"\"\"",
+      "import re",
+      "from collections.abc import Callable",
+      "from pydantic import BaseModel, Field, model_validator",
+      "from typing_extensions import Self",
+      "from langchain_core.example_selectors.base import BaseExampleSelector",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "def _get_length_based(text: str) -> int:",
+      "    return len(re.split(r\"\\n| \", text))",
+      "class LengthBasedExampleSelector(BaseExampleSelector, BaseModel):"
+    ],
+    "imports": [
+      "import re",
+      "from collections.abc import Callable",
+      "from pydantic import BaseModel, Field, model_validator",
+      "from typing_extensions import Self",
+      "from langchain_core.example_selectors.base import BaseExampleSelector",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "from langchain_core.example_selectors import LengthBasedExampleSelector",
+      "from langchain_core.prompts import PromptTemplate"
+    ],
+    "classes": [
+      "LengthBasedExampleSelector"
+    ],
+    "functions": [
+      "_get_length_based"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_034_6096d8c803ece0d2_length_based.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 435,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_client.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_client.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12756,
+  "content_sha256": "7997c153bdb6d7b196bf54d63623c9e6fa3cfac5b3abfc66c7e87076321eb375",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 332,
+    "non_empty_lines": 283,
+    "char_count": 12756,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import json",
+      "from collections.abc import Iterable, Sequence",
+      "from itertools import chain",
+      "from typing import Any, TypedDict",
+      "import httpx",
+      "from anthropic import NOT_GIVEN, AsyncAnthropic",
+      "from anthropic.types import ("
+    ],
+    "imports": [
+      "import json",
+      "from collections.abc import Iterable, Sequence",
+      "from itertools import chain",
+      "from typing import Any, TypedDict",
+      "import httpx",
+      "from anthropic import NOT_GIVEN, AsyncAnthropic",
+      "from anthropic.types import (",
+      "from fast_depends.library.serializer import SerializerProto",
+      "from autogen.beta.config.client import LLMClient",
+      "from autogen.beta.context import ConversationContext",
+      "from autogen.beta.events import (",
+      "from autogen.beta.response import ResponseProto",
+      "from autogen.beta.tools.builtin.code_execution import CodeExecutionToolSchema",
+      "from autogen.beta.tools.builtin.skills import SkillsToolSchema",
+      "from autogen.beta.tools.schemas import ToolSchema",
+      "from .events import AnthropicServerToolCallEvent, AnthropicServerToolResultBlockType, AnthropicServerToolResultEvent",
+      "from .mappers import ("
+    ],
+    "classes": [
+      "CreateOptions",
+      "AnthropicClient"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_435_7997c153bdb6d7b1_AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_client.py.json"
+}

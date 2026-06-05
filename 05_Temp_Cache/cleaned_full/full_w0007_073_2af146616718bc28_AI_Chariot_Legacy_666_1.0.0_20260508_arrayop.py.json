@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 73,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_arrayop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_arrayop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18397,
+  "content_sha256": "2af146616718bc285691386d540a2d95a4ab71f8c7a20031be9c56be9e9d4a0a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 528,
+    "non_empty_lines": 403,
+    "char_count": 18397,
+    "preview_lines": [
+      "import itertools",
+      "from collections.abc import Iterable",
+      "from sympy.core._print_helpers import Printable",
+      "from sympy.core.containers import Tuple",
+      "from sympy.core.function import diff",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sympify import _sympify",
+      "from sympy.tensor.array.ndim_array import NDimArray",
+      "from sympy.tensor.array.dense_ndim_array import DenseNDimArray, ImmutableDenseNDimArray",
+      "from sympy.tensor.array.sparse_ndim_array import SparseNDimArray"
+    ],
+    "imports": [
+      "import itertools",
+      "from collections.abc import Iterable",
+      "from sympy.core._print_helpers import Printable",
+      "from sympy.core.containers import Tuple",
+      "from sympy.core.function import diff",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sympify import _sympify",
+      "from sympy.tensor.array.ndim_array import NDimArray",
+      "from sympy.tensor.array.dense_ndim_array import DenseNDimArray, ImmutableDenseNDimArray",
+      "from sympy.tensor.array.sparse_ndim_array import SparseNDimArray",
+      "from sympy.matrices import MatrixBase",
+      "from sympy.tensor.array import SparseNDimArray, ImmutableSparseNDimArray",
+      "from sympy.tensor.array.expressions.array_expressions import _CodegenArrayAbstract",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct",
+      "from sympy.tensor.array.expressions.array_expressions import _ArrayExpr",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol",
+      "from sympy.tensor.array.expressions.array_expressions import _array_contraction",
+      "from sympy.tensor.array.expressions.array_expressions import _CodegenArrayAbstract",
+      "from sympy.tensor.array.expressions.array_expressions import _ArrayExpr",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol"
+    ],
+    "classes": [
+      "Flatten"
+    ],
+    "functions": [
+      "_arrayfy",
+      "tensorproduct",
+      "_util_contraction_diagonal",
+      "tensorcontraction",
+      "tensordiagonal",
+      "derive_by_array",
+      "permutedims"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_073_2af146616718bc28_AI_Chariot_Legacy_666_1.0.0_20260508_arrayop.py.json"
+}

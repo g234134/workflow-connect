@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 371,
+  "generated_at": "2026-05-08T18:45:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_xlstm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_xlstm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 64486,
+  "content_sha256": "11b1971fc30086a20b9c52165b49f1ec71989f7b15174dcf8eea2de832750ce4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1600,
+    "non_empty_lines": 1381,
+    "char_count": 64486,
+    "preview_lines": [
+      "# Copyright 2025 NXAI GmbH. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn",
+      "from torch.nn import CrossEntropyLoss",
+      "from ... import initialization as init",
+      "from ...generation import GenerationMixin",
+      "from ...modeling_layers import GradientCheckpointingLayer",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...processing_utils import Unpack",
+      "from ...utils import ModelOutput, TransformersKwargs, auto_docstring, can_return_tuple, is_xlstm_available",
+      "from ...utils.generic import merge_with_config_defaults",
+      "from ...utils.output_capturing import capture_outputs",
+      "from .configuration_xlstm import xLSTMConfig",
+      "from xlstm.xlstm_large.model import RMSNorm as xLSTMRMSNorm",
+      "from xlstm.xlstm_large.model import mLSTMBlock, mLSTMStateType, soft_cap",
+      "from collections.abc import Callable",
+      "from functools import partial",
+      "from typing import Literal",
+      "from .configuration_xlstm import round_up_to_next_multiple_of"
+    ],
+    "classes": [
+      "xLSTMPreTrainedModel",
+      "xLSTMCache",
+      "xLSTMOutput",
+      "xLSTMModel",
+      "xLSTMCausalLMOutput",
+      "xLSTMForCausalLM"
+    ],
+    "functions": [
+      "small_init_method",
+      "wang_init_method"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_371_11b1971fc30086a2_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_xlstm.py.json"
+}

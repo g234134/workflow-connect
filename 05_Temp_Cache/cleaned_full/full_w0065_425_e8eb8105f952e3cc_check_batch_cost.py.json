@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 425,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\proxy\\common_utils\\check_batch_cost.py",
+  "name": "check_batch_cost.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7877,
+  "content_sha256": "e8eb8105f952e3ccb3375008a617cb613a21f962201f399cae7e5ace7c2a355d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 190,
+    "non_empty_lines": 166,
+    "char_count": 7877,
+    "preview_lines": [
+      "\"\"\"",
+      "Polls LiteLLM_ManagedObjectTable to check if the batch job is complete, and if the cost has been tracked.",
+      "\"\"\"",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime",
+      "from typing import TYPE_CHECKING, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "if TYPE_CHECKING:",
+      "    from litellm.proxy.utils import PrismaClient, ProxyLogging",
+      "    from litellm.router import Router"
+    ],
+    "imports": [
+      "from litellm._uuid import uuid",
+      "from datetime import datetime",
+      "from typing import TYPE_CHECKING, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.utils import PrismaClient, ProxyLogging",
+      "from litellm.router import Router",
+      "from litellm.proxy.utils import PrismaClient, ProxyLogging",
+      "from litellm.router import Router",
+      "from litellm.batches.batch_utils import (",
+      "from litellm.files.main import afile_content",
+      "from litellm.litellm_core_utils.get_llm_provider_logic import get_llm_provider",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLogging",
+      "from litellm.proxy.openai_files_endpoints.common_utils import ("
+    ],
+    "classes": [
+      "CheckBatchCost"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_425_e8eb8105f952e3cc_check_batch_cost.py.json"
+}

@@ -1,0 +1,216 @@
+{
+  "run_id": "run_2026-05-11_0001",
+  "schema_version": "1.0",
+  "trace_meta": {
+    "trace_id": "sim-calib-20260511-zh-ss-mx",
+    "workflow_name": "AGENTS_Initialization_Calibration",
+    "started_at_iso": "2026-05-11T00:00:00Z",
+    "ended_at_iso": "2026-05-11T00:00:22Z",
+    "overall_status": "Success",
+    "inferred": [
+      "started_at_iso",
+      "ended_at_iso",
+      "steps[].timestamp_iso",
+      "steps[].latency_ms (except smoke_test)"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": "S01",
+      "timestamp_iso": "2026-05-11T00:00:01Z",
+      "status": "Success",
+      "node_id": "N0_intake",
+      "input_summary": "使用者指令：接戰；交接句指向 D:\\大唐三省六部\\AGENTS.md 與 §初始化校準",
+      "output_summary": "鎖定 playbook：四段校準＋六行回報格式；紅線含禁印 .env、禁硬編路徑",
+      "tool_call": null,
+      "decision": {
+        "had_decision": true,
+        "decision_reason": "交接句唯一入口為 AGENTS.md，優先讀取而非直接跑腳本",
+        "inferred": true
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S02",
+      "timestamp_iso": "2026-05-11T00:00:03Z",
+      "status": "Success",
+      "node_id": "N1_mount_map",
+      "input_summary": "路徑：D:\\大唐三省六部\\04_Workflows\\Master_Map.json",
+      "output_summary": "version=2.57；tang_gov_root 空字串由檔案位置解析；aliases 含 xing_bu→05_Temp_Cache；war_status 等索引可用",
+      "tool_call": {
+        "tool_name": "Read",
+        "tool_input": {
+          "path": "D:\\大唐三省六部\\04_Workflows\\Master_Map.json",
+          "limit": null
+        },
+        "tool_output": {
+          "bytes_or_lines_summary": "parsed JSON root keys: version, departments, aliases, artifacts, runners, war_status, ...",
+          "redacted": false
+        },
+        "latency_ms": 180,
+        "inferred": true
+      },
+      "decision": null,
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S03",
+      "timestamp_iso": "2026-05-11T00:00:05Z",
+      "status": "Success",
+      "node_id": "N2_read_law",
+      "input_summary": "Base_Agent.py 前段（Run_ID、get_path、gov_paths 約束）",
+      "output_summary": "確認：每 run UUID；狀態列舉；路徑經 resolve_agent_output_path／artifact_path",
+      "tool_call": {
+        "tool_name": "Read",
+        "tool_input": {
+          "path": "D:\\大唐三省六部\\02_Agents_Core\\Base_Agent.py",
+          "limit": 120
+        },
+        "tool_output": {
+          "summary": "class Base_Agent; get_path delegates to gov_paths.resolve_agent_output_path; run_id = uuid.uuid4().hex"
+        },
+        "latency_ms": 150,
+        "inferred": true
+      },
+      "decision": null,
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S04",
+      "timestamp_iso": "2026-05-11T00:00:12Z",
+      "status": "Success",
+      "node_id": "N3_smoke_keys",
+      "input_summary": "執行 python 04_Workflows\\_smoke_test_keys.py（工作目錄繼承／絕對路徑）",
+      "output_summary": "OpenAI/Groq/Telegram 皆 [OK]；exit_code 0",
+      "tool_call": {
+        "tool_name": "Shell",
+        "tool_input": {
+          "command": "python \"D:\\大唐三省六部\\04_Workflows\\_smoke_test_keys.py\""
+        },
+        "tool_output": {
+          "stdout_excerpt": "OpenAI : [OK]; Groq : [OK]; Telegram : [OK]",
+          "exit_code": 0
+        },
+        "latency_ms": 4728,
+        "inferred": false
+      },
+      "decision": {
+        "had_decision": true,
+        "decision_reason": "三鑰全 OK → 糧草綠燈，繼續審核",
+        "inferred": false
+      },
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S05",
+      "timestamp_iso": "2026-05-11T00:00:14Z",
+      "status": "Success",
+      "node_id": "N4_audit_status",
+      "input_summary": "讀取 Status.json 全檔",
+      "output_summary": "runs 末筆 run_id=fd8886d24dff42b6b0b8539f845d9a57 status=Success Migration_Manager；migration_last_wave Success",
+      "tool_call": {
+        "tool_name": "Read",
+        "tool_input": {
+          "path": "D:\\大唐三省六部\\04_Workflows\\Status.json"
+        },
+        "tool_output": {
+          "summary": "schema_version 1.0; updated_at 2026-05-08; business_metrics.inbound_watchdog v2.55"
+        },
+        "latency_ms": 120,
+        "inferred": true
+      },
+      "decision": null,
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S06",
+      "timestamp_iso": "2026-05-11T00:00:18Z",
+      "status": "Success",
+      "node_id": "N5_audit_temp_cache",
+      "input_summary": "Glob 列舉 05_Temp_Cache/raw_inbound 與 quarantine",
+      "output_summary": "raw_inbound 計 89 檔；quarantine 計 69 檔",
+      "tool_call": {
+        "tool_name": "Glob",
+        "tool_input": {
+          "target_directory": "D:\\大唐三省六部\\05_Temp_Cache\\raw_inbound",
+          "glob_pattern": "*"
+        },
+        "tool_output": {
+          "match_count": 89
+        },
+        "latency_ms": 220,
+        "inferred": true
+      },
+      "secondary_tool_call": {
+        "tool_name": "Glob",
+        "tool_input": {
+          "target_directory": "D:\\大唐三省六部\\05_Temp_Cache\\quarantine",
+          "glob_pattern": "*"
+        },
+        "tool_output": {
+          "match_count": 69
+        },
+        "latency_ms": 200,
+        "inferred": true
+      },
+      "decision": null,
+      "error": null,
+      "retry_count": 0
+    },
+    {
+      "step_id": "S07",
+      "timestamp_iso": "2026-05-11T00:00:19Z",
+      "status": "Skipped",
+      "node_id": "N6_optional_lock",
+      "input_summary": "嘗試讀取 .telegram_listener.lock（僅 PID 存在性）",
+      "output_summary": "檔案不存在 → 無法本地核對 PID；未阻斷主流程",
+      "tool_call": {
+        "tool_name": "Read",
+        "tool_input": {
+          "path": "D:\\大唐三省六部\\04_Workflows\\.telegram_listener.lock"
+        },
+        "tool_output": {
+          "error": "File not found"
+        },
+        "latency_ms": 35,
+        "inferred": true
+      },
+      "decision": {
+        "had_decision": true,
+        "decision_reason": "可選節點失敗不升格為紅燈；健康度仍以三鑰為準（憲法）",
+        "inferred": true
+      },
+      "error": {
+        "type": "FileNotFound",
+        "message": "lock file missing at observed path",
+        "blocking": false
+      },
+      "retry_count": 0
+    },
+    {
+      "step_id": "S08",
+      "timestamp_iso": "2026-05-11T00:00:22Z",
+      "status": "Success",
+      "node_id": "N7_report",
+      "input_summary": "彙總 Master_Map.version、律法、三鑰、Status、刑部件數、lock 缺漏附註",
+      "output_summary": "六行口頭回報；健康度綠；待命",
+      "tool_call": null,
+      "memory_writeback": {
+        "kind": "conversation_summary_only",
+        "targets": [
+          "user_visible_chat"
+        ],
+        "persisted_artifacts": [],
+        "inferred": true
+      },
+      "decision": null,
+      "error": null,
+      "retry_count": 0
+    }
+  ]
+}

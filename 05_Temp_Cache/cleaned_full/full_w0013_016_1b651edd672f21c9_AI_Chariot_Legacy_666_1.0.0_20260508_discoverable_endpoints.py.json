@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_discoverable_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_discoverable_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25042,
+  "content_sha256": "1b651edd672f21c9cd4266ae07ce2de692327eaf8041d860a046f693327209f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 713,
+    "non_empty_lines": 603,
+    "char_count": 25042,
+    "preview_lines": [
+      "import json",
+      "from typing import Optional",
+      "from urllib.parse import urlencode, urlparse, urlunparse",
+      "from fastapi import APIRouter, Form, HTTPException, Request",
+      "from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "    get_async_httpx_client,",
+      "    httpxSpecialProvider,",
+      ")",
+      "from litellm.proxy.auth.ip_address_utils import IPAddressUtils"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Optional",
+      "from urllib.parse import urlencode, urlparse, urlunparse",
+      "from fastapi import APIRouter, Form, HTTPException, Request",
+      "from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.proxy.auth.ip_address_utils import IPAddressUtils",
+      "from litellm.proxy.common_utils.encrypt_decrypt_utils import (",
+      "from litellm.proxy.common_utils.http_parsing_utils import _read_request_body",
+      "from litellm.proxy.utils import get_server_root_path",
+      "from litellm.types.mcp import MCPAuth",
+      "from litellm.types.mcp_server.mcp_server_manager import MCPServer",
+      "from litellm.proxy._experimental.mcp_server.mcp_server_manager import ("
+    ],
+    "classes": [],
+    "functions": [
+      "get_request_base_url",
+      "encode_state_with_base_url",
+      "decode_state_hash",
+      "_resolve_oauth2_server_for_root_endpoints",
+      "_build_oauth_protected_resource_response",
+      "_build_oauth_authorization_server_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_016_1b651edd672f21c9_AI_Chariot_Legacy_666_1.0.0_20260508_discoverable_endpoints.py.json"
+}

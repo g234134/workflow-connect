@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\uv-examples\\monorepo\\apps\\agent\\src\\agent\\graph.py",
+  "name": "graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 893,
+  "content_sha256": "eaee415f471e6019f3e2841b96633c35897d9d2641a39123ece5688d2ad7fa12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 21,
+    "char_count": 890,
+    "preview_lines": [
+      "from collections.abc import Sequence",
+      "from typing import Annotated, TypedDict",
+      "from langchain_core.messages import AIMessage, BaseMessage",
+      "from langgraph.graph import END, START, StateGraph",
+      "from langgraph.graph.message import add_messages",
+      "from shared import get_dummy_message",
+      "class State(TypedDict):",
+      "    messages: Annotated[Sequence[BaseMessage], add_messages]",
+      "def call_model(state: State) -> dict:",
+      "    dummy_message = get_dummy_message()"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from typing import Annotated, TypedDict",
+      "from langchain_core.messages import AIMessage, BaseMessage",
+      "from langgraph.graph import END, START, StateGraph",
+      "from langgraph.graph.message import add_messages",
+      "from shared import get_dummy_message"
+    ],
+    "classes": [
+      "State"
+    ],
+    "functions": [
+      "call_model",
+      "should_continue"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_035_eaee415f471e6019_graph.py.json"
+}

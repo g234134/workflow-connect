@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dask.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dask.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4466,
+  "content_sha256": "09765b2732153a1295f082dcc6ecb76d3bdc69c0ae7806f24319af0246cf92b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 128,
+    "char_count": 4466,
+    "preview_lines": [
+      "import dask",
+      "from distributed.client import Client, _get_global_client",
+      "from distributed.worker import Worker",
+      "from fsspec import filesystem",
+      "from fsspec.spec import AbstractBufferedFile, AbstractFileSystem",
+      "from fsspec.utils import infer_storage_options",
+      "def _get_client(client):",
+      "    if client is None:",
+      "        return _get_global_client()",
+      "    elif isinstance(client, Client):"
+    ],
+    "imports": [
+      "import dask",
+      "from distributed.client import Client, _get_global_client",
+      "from distributed.worker import Worker",
+      "from fsspec import filesystem",
+      "from fsspec.spec import AbstractBufferedFile, AbstractFileSystem",
+      "from fsspec.utils import infer_storage_options"
+    ],
+    "classes": [
+      "DaskWorkerFileSystem",
+      "DaskFile"
+    ],
+    "functions": [
+      "_get_client",
+      "_in_worker"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_163_09765b2732153a12_AI_Chariot_Legacy_666_1.0.0_20260508_dask.py.json"
+}

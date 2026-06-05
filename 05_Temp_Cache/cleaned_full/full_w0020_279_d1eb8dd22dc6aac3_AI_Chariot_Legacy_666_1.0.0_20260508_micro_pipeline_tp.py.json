@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 279,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_micro_pipeline_tp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_micro_pipeline_tp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29672,
+  "content_sha256": "d1eb8dd22dc6aac3d21cc002b4fd5603571249350245c70ad6c1b8a8c049190d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 854,
+    "non_empty_lines": 730,
+    "char_count": 29672,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import operator",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass, field",
+      "from typing import Any, cast, Dict, List, Optional, Set",
+      "import torch",
+      "from .. import config, inductor_prims",
+      "from ..pattern_matcher import (",
+      "    CallFunction,",
+      "    Ignored,"
+    ],
+    "imports": [
+      "import operator",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass, field",
+      "from typing import Any, cast, Dict, List, Optional, Set",
+      "import torch",
+      "from .. import config, inductor_prims",
+      "from ..pattern_matcher import ("
+    ],
+    "classes": [
+      "_AllGatherMatch",
+      "_ReduceScatterMatch",
+      "_Matmul",
+      "_ScaledMatmul"
+    ],
+    "functions": [
+      "_is_backward",
+      "_compute_mm_arithmetic_intensity",
+      "_filter_nodes_by_target",
+      "_find_ancestors",
+      "_get_tensor",
+      "find_all_gather_patterns",
+      "find_reduce_scatter_patterns",
+      "_find_reshape_mm_reshape",
+      "_find_consumer_matmuls",
+      "_insert_fused_all_gather_matmul",
+      "fuse_all_gather_matmul",
+      "_find_producer_matmul",
+      "_insert_fused_matmul_reduce_scatter",
+      "fuse_matmul_reduce_scatter",
+      "_get_node_to_ancestors",
+      "_get_collective_to_overlappable_nodes",
+      "_get_unexposed_collectives",
+      "micro_pipeline_tp_pass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_279_d1eb8dd22dc6aac3_AI_Chariot_Legacy_666_1.0.0_20260508_micro_pipeline_tp.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sagemaker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sagemaker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10636,
+  "content_sha256": "4912eea7d5eb57f67edb703777c8196e4a9ba270dcb1c3030e66e99b2b42cdb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 274,
+    "non_empty_lines": 249,
+    "char_count": 10636,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# Copyright 2021 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "from ...utils.constants import SAGEMAKER_PARALLEL_EC2_INSTANCES, TORCH_DYNAMO_MODES",
+      "from ...utils.dataclasses import ComputeEnvironment, SageMakerDistributedType",
+      "from ...utils.imports import is_boto3_available",
+      "from .config_args import SageMakerConfig",
+      "from .config_utils import (",
+      "import boto3  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "_create_iam_role_for_sagemaker",
+      "_get_iam_role_arn",
+      "get_sagemaker_input"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_028_4912eea7d5eb57f6_AI_Chariot_Legacy_666_1.0.0_20260508_sagemaker.py.json"
+}

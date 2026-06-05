@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 143,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\tracers\\langchain.py",
+  "name": "langchain.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16103,
+  "content_sha256": "4d244a9189c90da57399471a5c7fc91bb4ceec395ff9d356ffe823b57c23e9ed",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 456,
+    "non_empty_lines": 387,
+    "char_count": 16100,
+    "preview_lines": [
+      "\"\"\"A tracer implementation that records to LangChain endpoint.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "from concurrent.futures import ThreadPoolExecutor",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, cast",
+      "from uuid import UUID",
+      "from langsmith import Client, get_tracing_context",
+      "from langsmith import run_trees as rt",
+      "from langsmith import utils as ls_utils"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from concurrent.futures import ThreadPoolExecutor",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, cast",
+      "from uuid import UUID",
+      "from langsmith import Client, get_tracing_context",
+      "from langsmith import run_trees as rt",
+      "from langsmith import utils as ls_utils",
+      "from tenacity import (",
+      "from typing_extensions import override",
+      "from langchain_core.env import get_runtime_environment",
+      "from langchain_core.load import dumpd",
+      "from langchain_core.messages.ai import UsageMetadata, add_usage",
+      "from langchain_core.tracers._compat import run_construct, run_to_dict",
+      "from langchain_core.tracers.base import BaseTracer",
+      "from langchain_core.tracers.schemas import Run",
+      "from collections.abc import Mapping",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.outputs import ChatGenerationChunk, GenerationChunk"
+    ],
+    "classes": [
+      "LangChainTracer"
+    ],
+    "functions": [
+      "log_error_once",
+      "wait_for_all_tracers",
+      "get_client",
+      "_get_executor",
+      "_get_usage_metadata_from_generations",
+      "_get_usage_metadata_from_message",
+      "_patch_missing_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_143_4d244a9189c90da5_langchain.py.json"
+}

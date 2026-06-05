@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_server_schemes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_server_schemes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25418,
+  "content_sha256": "6e44c172c68bf3f1528b096f67564a7bde01cfa6e965f6704957d6192b6af926",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 759,
+    "non_empty_lines": 639,
+    "char_count": 25418,
+    "preview_lines": [
+      "\"\"\"Server-side authentication schemes for A2A protocol.",
+      "These schemes validate incoming requests to A2A server endpoints.",
+      "Supported authentication methods:",
+      "- Simple token validation with static bearer tokens",
+      "- Enterprise token validation (via PlusAPI)",
+      "- OpenID Connect with JWT validation using JWKS",
+      "- OAuth2 with JWT validation or token introspection",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "import logging",
+      "import os",
+      "from typing import TYPE_CHECKING, Annotated, Any, ClassVar, Literal",
+      "import httpx",
+      "import jwt",
+      "from jwt import PyJWKClient",
+      "from pydantic import (",
+      "from typing_extensions import Self",
+      "from a2a.types import OAuth2SecurityScheme",
+      "from jwt.types import Options",
+      "from fastapi import HTTPException, status as http_status"
+    ],
+    "classes": [
+      "AuthenticatedUser",
+      "ServerAuthScheme",
+      "SimpleTokenAuth",
+      "EnterpriseTokenAuth",
+      "OIDCAuth",
+      "OAuth2ServerAuth",
+      "APIKeyServerAuth",
+      "MTLSServerAuth"
+    ],
+    "functions": [
+      "_coerce_secret_str"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_287_6e44c172c68bf3f1_AI_Chariot_Legacy_666_1.0.0_20260508_server_schemes.py.json"
+}

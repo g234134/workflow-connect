@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 373,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_replace_with_hop_pass_util.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_replace_with_hop_pass_util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7174,
+  "content_sha256": "9563fb80e9e2a1bd870727fa5d73460bf09fb75221e42ede385548e8cba17c0f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 178,
+    "non_empty_lines": 162,
+    "char_count": 7174,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "import copy",
+      "import operator",
+      "from typing import Callable",
+      "import torch",
+      "from torch._ops import HigherOrderOperator",
+      "from ..utils import node_replace_, nodes_map",
+      "def _replace_with_hop_helper(",
+      "    node: torch.fx.Node,"
+    ],
+    "imports": [
+      "import contextlib",
+      "import copy",
+      "import operator",
+      "from typing import Callable",
+      "import torch",
+      "from torch._ops import HigherOrderOperator",
+      "from ..utils import node_replace_, nodes_map"
+    ],
+    "classes": [],
+    "functions": [
+      "_replace_with_hop_helper",
+      "_sequential_split_and_maybe_inline_subgraphs_helper",
+      "_replace_with_hop_pass_helper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_373_9563fb80e9e2a1bd_AI_Chariot_Legacy_666_1.0.0_20260508_replace_with_hop_pass_util.py.json"
+}

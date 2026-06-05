@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__kernel_pca.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__kernel_pca.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23230,
+  "content_sha256": "4e4af7b00a3fb70b42ea0688a2f853ca0aa8057ff00058085e6b07b4dfb38442",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 579,
+    "non_empty_lines": 483,
+    "char_count": 23222,
+    "preview_lines": [
+      "\"\"\"Kernel Principal Components Analysis.\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from scipy.linalg import eigh",
+      "from scipy.sparse.linalg import eigsh",
+      "from sklearn.base import (",
+      "    BaseEstimator,"
+    ],
+    "imports": [
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from scipy.linalg import eigh",
+      "from scipy.sparse.linalg import eigsh",
+      "from sklearn.base import (",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.metrics.pairwise import pairwise_kernels",
+      "from sklearn.preprocessing import KernelCenterer",
+      "from sklearn.utils._arpack import _init_arpack_v0",
+      "from sklearn.utils._param_validation import Interval, StrOptions",
+      "from sklearn.utils.extmath import _randomized_eigsh, svd_flip",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "KernelPCA"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_434_4e4af7b00a3fb70b_AI_Chariot_Legacy_666_1.0.0_20260508__kernel_pca.py.json"
+}

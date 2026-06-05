@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 424,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vgg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vgg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19736,
+  "content_sha256": "42df6be6c16863ea0f7703f80deeb58ea4957bd5d464b5cae3bafdc950d0df73",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 511,
+    "non_empty_lines": 440,
+    "char_count": 19736,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, cast, Dict, List, Optional, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _ovewrite_named_param, handle_legacy_interface",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, cast, Dict, List, Optional, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "classes": [
+      "VGG",
+      "VGG11_Weights",
+      "VGG11_BN_Weights",
+      "VGG13_Weights",
+      "VGG13_BN_Weights",
+      "VGG16_Weights",
+      "VGG16_BN_Weights",
+      "VGG19_Weights",
+      "VGG19_BN_Weights"
+    ],
+    "functions": [
+      "make_layers",
+      "_vgg",
+      "vgg11",
+      "vgg11_bn",
+      "vgg13",
+      "vgg13_bn",
+      "vgg16",
+      "vgg16_bn",
+      "vgg19",
+      "vgg19_bn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_424_42df6be6c16863ea_AI_Chariot_Legacy_666_1.0.0_20260508_vgg.py.json"
+}

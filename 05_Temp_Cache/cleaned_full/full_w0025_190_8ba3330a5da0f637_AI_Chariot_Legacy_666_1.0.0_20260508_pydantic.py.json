@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydantic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydantic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17161,
+  "content_sha256": "8ba3330a5da0f637bd95be4f2ff837944aa64911224f2295ebbcd4cad31125e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 535,
+    "non_empty_lines": 444,
+    "char_count": 17161,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "\"\"\"Pydantic (v1 / v2) adapter for LanceDB\"\"\"",
+      "from __future__ import annotations",
+      "import inspect",
+      "import sys",
+      "import types",
+      "from abc import ABC, abstractmethod",
+      "from datetime import date, datetime",
+      "from typing import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import sys",
+      "import types",
+      "from abc import ABC, abstractmethod",
+      "from datetime import date, datetime",
+      "from typing import (",
+      "import numpy as np",
+      "import pyarrow as pa",
+      "import pydantic",
+      "from packaging.version import Version",
+      "from pydantic_core import CoreSchema, core_schema",
+      "from pydantic.fields import FieldInfo",
+      "from .embeddings import EmbeddingFunctionConfig",
+      "from warnings import warn"
+    ],
+    "classes": [
+      "FixedSizeListMixin",
+      "LanceModel"
+    ],
+    "functions": [
+      "vector",
+      "Vector",
+      "MultiVector",
+      "_py_type_to_arrow_type",
+      "_pydantic_type_to_arrow_type",
+      "_pydantic_list_child_to_arrow",
+      "_unwrap_optional_annotation",
+      "_pydantic_to_arrow_type",
+      "is_nullable",
+      "_pydantic_to_field",
+      "pydantic_to_schema",
+      "get_extras"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_190_8ba3330a5da0f637_AI_Chariot_Legacy_666_1.0.0_20260508_pydantic.py.json"
+}

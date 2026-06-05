@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__width.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__width.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14818,
+  "content_sha256": "f47bc000b9b499c5d374733e686294680b81f41778d42283cdf6edc2a0c0330a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 339,
+    "non_empty_lines": 300,
+    "char_count": 14806,
+    "preview_lines": [
+      "\"\"\"This is a high-level width() supporting terminal output.\"\"\"",
+      "from typing import Literal",
+      "# local",
+      "from ._wcwidth import wcwidth",
+      "from .bisearch import bisearch",
+      "from ._wcswidth import wcswidth",
+      "from ._constants import (_EMOJI_ZWJ_SET,",
+      "                         _ISC_VIRAMA_SET,",
+      "                         _CATEGORY_MC_TABLE,",
+      "                         _FITZPATRICK_RANGE,"
+    ],
+    "imports": [
+      "from typing import Literal",
+      "from ._wcwidth import wcwidth",
+      "from .bisearch import bisearch",
+      "from ._wcswidth import wcswidth",
+      "from ._constants import (_EMOJI_ZWJ_SET,",
+      "from .table_vs16 import VS16_NARROW_TO_WIDE",
+      "from .text_sizing import TextSizing, TextSizingParams",
+      "from .control_codes import ILLEGAL_CTRL, VERTICAL_CTRL, HORIZONTAL_CTRL, ZERO_WIDTH_CTRL",
+      "from .table_grapheme import ISC_CONSONANT",
+      "from .escape_sequences import (_SEQUENCE_CLASSIFY,"
+    ],
+    "classes": [],
+    "functions": [
+      "_width_ignored_codes",
+      "width"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_103_f47bc000b9b499c5_AI_Chariot_Legacy_666_1.0.0_20260508__width.py.json"
+}

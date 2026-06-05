@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 320,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_steinertree.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_steinertree.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8048,
+  "content_sha256": "75b3dc88cacb1e66f55d66b4bfbfafdea34527767ba590f49f8440185f1ea1be",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 231,
+    "non_empty_lines": 182,
+    "char_count": 8036,
+    "preview_lines": [
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for, pairwise",
+      "__all__ = [\"metric_closure\", \"steiner_tree\"]",
+      "@not_implemented_for(\"directed\")",
+      "@nx._dispatchable(edge_attrs=\"weight\", returns_graph=True)",
+      "def metric_closure(G, weight=\"weight\"):",
+      "    \"\"\"Return the metric closure of a graph.",
+      "    The metric closure of a graph *G* is the complete graph in which each edge",
+      "    is weighted by the shortest path distance between the nodes in *G* ."
+    ],
+    "imports": [
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for, pairwise"
+    ],
+    "classes": [],
+    "functions": [
+      "metric_closure",
+      "_mehlhorn_steiner_tree",
+      "_kou_steiner_tree",
+      "_remove_nonterminal_leaves",
+      "steiner_tree"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_320_75b3dc88cacb1e66_AI_Chariot_Legacy_666_1.0.0_20260508_steinertree.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 189,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_msgpack_packet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_msgpack_packet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1765,
+  "content_sha256": "8122ca8183fcf10009d49f2c3a680616fb51066347f1058fb4722659a5c8ab3b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 37,
+    "char_count": 1765,
+    "preview_lines": [
+      "import msgpack",
+      "from . import packet",
+      "class MsgPackPacket(packet.Packet):",
+      "    uses_binary_events = False",
+      "    dumps_default = None",
+      "    ext_hook = msgpack.ExtType",
+      "    @classmethod",
+      "    def configure(cls, dumps_default=None, ext_hook=msgpack.ExtType):",
+      "        \"\"\"Change the default options for msgpack encoding and decoding.",
+      "        :param dumps_default: a function called for objects that cannot be"
+    ],
+    "imports": [
+      "import msgpack",
+      "from . import packet"
+    ],
+    "classes": [
+      "MsgPackPacket"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_189_8122ca8183fcf100_AI_Chariot_Legacy_666_1.0.0_20260508_msgpack_packet.py.json"
+}

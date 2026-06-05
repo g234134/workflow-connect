@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 299,
+  "generated_at": "2026-05-08T18:48:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\tools\\amadeus\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 947,
+  "content_sha256": "bd98e6762d0d646e2bafb6973c55cc5e2a9b09ef47da7794d03b70c57aa6d784",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 21,
+    "char_count": 944,
+    "preview_lines": [
+      "\"\"\"Amadeus tools.\"\"\"",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.tools.amadeus.closest_airport import AmadeusClosestAirport",
+      "    from langchain_community.tools.amadeus.flight_search import AmadeusFlightSearch",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.tools.amadeus.closest_airport import AmadeusClosestAirport",
+      "from langchain_community.tools.amadeus.flight_search import AmadeusFlightSearch"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_299_bd98e6762d0d646e___init__.py.json"
+}

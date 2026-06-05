@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 379,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_matlib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_matlib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1913,
+  "content_sha256": "2a604ca3733b200441f0ae4d2d893ad7546db1f5b5d3f2e00901018dd2c433d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 47,
+    "char_count": 1913,
+    "preview_lines": [
+      "import numpy as np",
+      "import numpy.matlib",
+      "from numpy.testing import assert_, assert_array_equal",
+      "def test_empty():",
+      "    x = numpy.matlib.empty((2,))",
+      "    assert_(isinstance(x, np.matrix))",
+      "    assert_(x.shape, (1, 2))",
+      "def test_ones():",
+      "    assert_array_equal(numpy.matlib.ones((2, 3)),",
+      "                       np.matrix([[ 1.,  1.,  1.],"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import numpy.matlib",
+      "from numpy.testing import assert_, assert_array_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_empty",
+      "test_ones",
+      "test_zeros",
+      "test_identity",
+      "test_eye",
+      "test_rand",
+      "test_randn",
+      "test_repmat"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_379_2a604ca3733b2004_AI_Chariot_Legacy_666_1.0.0_20260508_test_matlib.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_approval.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_approval.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2764,
+  "content_sha256": "7de1aa0152d8542f8ff4ad640719a8e9cbaca1219e433f264ae1a5a4bcce9bce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 57,
+    "char_count": 2764,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import ToolCallEvent, ToolResultEvent",
+      "from autogen.beta.middleware.base import ToolExecution, ToolMiddleware, ToolResultType",
+      "_DEFAULT_MESSAGE = (",
+      "    \"Agent wants to call the tool:\\n`{tool_name}`, {tool_arguments}\\nPlease approve or deny this request.\\nY/N?\\n\"",
+      ")",
+      "_DEFAULT_MESSAGE_ALWAYS = \"Agent wants to call the tool:\\n`{tool_name}`, {tool_arguments}\\nPlease approve or deny this request.\\nY/N/Always?\\n\""
+    ],
+    "imports": [
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import ToolCallEvent, ToolResultEvent",
+      "from autogen.beta.middleware.base import ToolExecution, ToolMiddleware, ToolResultType"
+    ],
+    "classes": [],
+    "functions": [
+      "approval_required"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_007_7de1aa0152d8542f_AI_Chariot_Legacy_666_1.0.0_20260508_approval.py.json"
+}

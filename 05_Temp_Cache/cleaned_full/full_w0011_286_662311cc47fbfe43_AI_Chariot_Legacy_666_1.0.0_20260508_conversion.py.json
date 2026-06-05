@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 286,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conversion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conversion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2433,
+  "content_sha256": "662311cc47fbfe43962782084d716ae9d2fec03c0c848130bdb13bd3969f81a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 58,
+    "char_count": 2433,
+    "preview_lines": [
+      "\"\"\"",
+      "This module holds simple classes to convert geospatial values from the",
+      "database.",
+      "\"\"\"",
+      "from decimal import Decimal",
+      "from django.contrib.gis.measure import Area, Distance",
+      "from django.db import models",
+      "class AreaField(models.FloatField):",
+      "    \"Wrapper for Area values.\"",
+      "    def __init__(self, geo_field):"
+    ],
+    "imports": [
+      "from decimal import Decimal",
+      "from django.contrib.gis.measure import Area, Distance",
+      "from django.db import models"
+    ],
+    "classes": [
+      "AreaField",
+      "DistanceField"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_286_662311cc47fbfe43_AI_Chariot_Legacy_666_1.0.0_20260508_conversion.py.json"
+}

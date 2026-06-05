@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 125,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_seed_sequence.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_seed_sequence.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3389,
+  "content_sha256": "27fa5ea8163832176e611d5f15801f70ddb0bf20bb3fac66578c5bbba8fd9db4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 72,
+    "char_count": 3389,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.random import SeedSequence",
+      "from numpy.testing import assert_array_compare, assert_array_equal",
+      "def test_reference_data():",
+      "    \"\"\" Check that SeedSequence generates data the same as the C++ reference.",
+      "    https://gist.github.com/imneme/540829265469e673d045",
+      "    \"\"\"",
+      "    inputs = [",
+      "        [3735928559, 195939070, 229505742, 305419896],",
+      "        [3668361503, 4165561550, 1661411377, 3634257570],"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.random import SeedSequence",
+      "from numpy.testing import assert_array_compare, assert_array_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_reference_data",
+      "test_zero_padding"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_125_27fa5ea816383217_AI_Chariot_Legacy_666_1.0.0_20260508_test_seed_sequence.py.json"
+}

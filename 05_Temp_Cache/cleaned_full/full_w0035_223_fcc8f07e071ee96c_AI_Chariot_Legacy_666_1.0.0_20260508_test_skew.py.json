@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_skew.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_skew.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6349,
+  "content_sha256": "fcc8f07e071ee96c4b1f775a7c8ee2aefd82c3400d89fcad0ad417772392b429",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 170,
+    "non_empty_lines": 135,
+    "char_count": 6349,
+    "preview_lines": [
+      "\"\"\"",
+      "Testing that skewed Axes properly work.",
+      "\"\"\"",
+      "from contextlib import ExitStack",
+      "import itertools",
+      "import platform",
+      "import matplotlib.pyplot as plt",
+      "from matplotlib.testing.decorators import image_comparison",
+      "from matplotlib.axes import Axes",
+      "import matplotlib.transforms as transforms"
+    ],
+    "imports": [
+      "from contextlib import ExitStack",
+      "import itertools",
+      "import platform",
+      "import matplotlib.pyplot as plt",
+      "from matplotlib.testing.decorators import image_comparison",
+      "from matplotlib.axes import Axes",
+      "import matplotlib.transforms as transforms",
+      "import matplotlib.axis as maxis",
+      "import matplotlib.spines as mspines",
+      "import matplotlib.patches as mpatch",
+      "from matplotlib.projections import register_projection"
+    ],
+    "classes": [
+      "SkewXTick",
+      "SkewXAxis",
+      "SkewSpine",
+      "SkewXAxes"
+    ],
+    "functions": [
+      "test_set_line_coll_dash_image",
+      "test_skew_rectangle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_223_fcc8f07e071ee96c_AI_Chariot_Legacy_666_1.0.0_20260508_test_skew.py.json"
+}

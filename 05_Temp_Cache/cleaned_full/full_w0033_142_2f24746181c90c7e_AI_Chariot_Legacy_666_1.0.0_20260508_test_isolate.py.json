@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_isolate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_isolate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 555,
+  "content_sha256": "2f24746181c90c7e6fa694331b31a224af9a688575eff26695af1d31ff77a258",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 19,
+    "char_count": 555,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.algorithms.isolates` module.\"\"\"",
+      "import networkx as nx",
+      "def test_is_isolate():",
+      "    G = nx.Graph()",
+      "    G.add_edge(0, 1)",
+      "    G.add_node(2)",
+      "    assert not nx.is_isolate(G, 0)",
+      "    assert not nx.is_isolate(G, 1)",
+      "    assert nx.is_isolate(G, 2)",
+      "def test_isolates():"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_isolate",
+      "test_isolates",
+      "test_number_of_isolates"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_142_2f24746181c90c7e_AI_Chariot_Legacy_666_1.0.0_20260508_test_isolate.py.json"
+}

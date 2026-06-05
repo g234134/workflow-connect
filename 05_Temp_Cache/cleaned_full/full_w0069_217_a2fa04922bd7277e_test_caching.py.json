@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 217,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\embeddings\\test_caching.py",
+  "name": "test_caching.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9134,
+  "content_sha256": "a2fa04922bd7277e9daf6f90c6a9b0199c74226f42e10a2fddf34fb6845bf3fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 253,
+    "non_empty_lines": 202,
+    "char_count": 9131,
+    "preview_lines": [
+      "\"\"\"Embeddings tests.\"\"\"",
+      "import contextlib",
+      "import hashlib",
+      "import importlib",
+      "import warnings",
+      "import pytest",
+      "from langchain_core.embeddings import Embeddings",
+      "from typing_extensions import override",
+      "from langchain_classic.embeddings import CacheBackedEmbeddings",
+      "from langchain_classic.storage.in_memory import InMemoryStore"
+    ],
+    "imports": [
+      "import contextlib",
+      "import hashlib",
+      "import importlib",
+      "import warnings",
+      "import pytest",
+      "from langchain_core.embeddings import Embeddings",
+      "from typing_extensions import override",
+      "from langchain_classic.embeddings import CacheBackedEmbeddings",
+      "from langchain_classic.storage.in_memory import InMemoryStore"
+    ],
+    "classes": [
+      "MockEmbeddings"
+    ],
+    "functions": [
+      "cache_embeddings",
+      "cache_embeddings_batch",
+      "cache_embeddings_with_query",
+      "test_embed_documents",
+      "test_embed_documents_batch",
+      "test_embed_query",
+      "test_embed_cached_query",
+      "test_blake2b_encoder",
+      "test_sha256_encoder",
+      "test_sha512_encoder",
+      "test_sha1_warning_emitted_once",
+      "test_custom_encoder"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_217_a2fa04922bd7277e_test_caching.py.json"
+}

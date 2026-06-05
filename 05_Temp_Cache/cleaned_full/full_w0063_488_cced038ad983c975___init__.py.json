@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\profiler\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1482,
+  "content_sha256": "cced038ad983c9756985aab2769d74f77cd8a4c266f2c0599437ac62df5acc81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 38,
+    "char_count": 1482,
+    "preview_lines": [
+      "r\"\"\"",
+      "PyTorch Profiler is a tool that allows the collection of performance metrics during training and inference.",
+      "Profiler's context manager API can be used to better understand what model operators are the most expensive,",
+      "examine their input shapes and stack traces, study device kernel activity and visualize the execution trace.",
+      ".. note::",
+      "    An earlier version of the API in :mod:`torch.autograd` module is considered legacy and will be deprecated.",
+      "\"\"\"",
+      "import os",
+      "from torch._C._autograd import _supported_activities, DeviceType, kineto_available",
+      "from torch._C._profiler import _ExperimentalConfig, ProfilerActivity, RecordScope"
+    ],
+    "imports": [
+      "import os",
+      "from torch._C._autograd import _supported_activities, DeviceType, kineto_available",
+      "from torch._C._profiler import _ExperimentalConfig, ProfilerActivity, RecordScope",
+      "from torch.autograd.profiler import KinetoStepTracker, record_function",
+      "from torch.optim.optimizer import register_optimizer_step_post_hook",
+      "from .profiler import (",
+      "from . import itt"
+    ],
+    "classes": [],
+    "functions": [
+      "_optimizer_post_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_488_cced038ad983c975___init__.py.json"
+}

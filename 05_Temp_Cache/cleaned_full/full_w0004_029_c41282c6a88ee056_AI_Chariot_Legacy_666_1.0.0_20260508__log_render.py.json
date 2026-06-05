@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__log_render.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__log_render.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3213,
+  "content_sha256": "c41282c6a88ee05664f1e1b9e9ff1cac576b989c45ac9b1013757717e7c57a47",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 81,
+    "char_count": 3213,
+    "preview_lines": [
+      "from datetime import datetime",
+      "from typing import Iterable, List, Optional, TYPE_CHECKING, Union, Callable",
+      "from .text import Text, TextType",
+      "if TYPE_CHECKING:",
+      "    from .console import Console, ConsoleRenderable, RenderableType",
+      "    from .table import Table",
+      "FormatTimeCallable = Callable[[datetime], Text]",
+      "class LogRender:",
+      "    def __init__(",
+      "        self,"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from typing import Iterable, List, Optional, TYPE_CHECKING, Union, Callable",
+      "from .text import Text, TextType",
+      "from .console import Console, ConsoleRenderable, RenderableType",
+      "from .table import Table",
+      "from .containers import Renderables",
+      "from .table import Table",
+      "from rich.console import Console"
+    ],
+    "classes": [
+      "LogRender"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_029_c41282c6a88ee056_AI_Chariot_Legacy_666_1.0.0_20260508__log_render.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_serialize_span_groups.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_serialize_span_groups.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8929,
+  "content_sha256": "cb70c381a43363b86b9fe197d49d513562498d58904435460c74242470ab3c50",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 161,
+    "non_empty_lines": 141,
+    "char_count": 8929,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.tokens import Span, SpanGroup",
+      "from spacy.tokens._dict_proxies import SpanGroups",
+      "@pytest.mark.issue(10685)",
+      "def test_issue10685(en_tokenizer):",
+      "    \"\"\"Test `SpanGroups` de/serialization\"\"\"",
+      "    # Start with a Doc with no SpanGroups",
+      "    doc = en_tokenizer(\"Will it blend?\")",
+      "    # Test empty `SpanGroups` de/serialization:",
+      "    assert len(doc.spans) == 0"
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.tokens import Span, SpanGroup",
+      "from spacy.tokens._dict_proxies import SpanGroups"
+    ],
+    "classes": [],
+    "functions": [
+      "test_issue10685",
+      "test_span_groups_serialization_mismatches",
+      "test_deserialize_span_groups_compat",
+      "test_span_groups_serialization"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_159_cb70c381a43363b8_AI_Chariot_Legacy_666_1.0.0_20260508_test_serialize_span_groups.py.json"
+}

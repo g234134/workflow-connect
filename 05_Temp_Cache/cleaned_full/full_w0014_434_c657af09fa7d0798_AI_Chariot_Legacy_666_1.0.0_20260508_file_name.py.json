@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:45:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_file_name.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_file_name.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5620,
+  "content_sha256": "c657af09fa7d079854b11f78007d3db60e109f5617906c4cf76b903dff16a53c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 155,
+    "non_empty_lines": 132,
+    "char_count": 5620,
+    "preview_lines": [
+      "import os",
+      "from jedi.api import classes",
+      "from jedi.api.strings import StringName, get_quote_ending",
+      "from jedi.api.helpers import match",
+      "from jedi.inference.helpers import get_str_or_none",
+      "class PathName(StringName):",
+      "    api_type = 'path'",
+      "def complete_file_name(inference_state, module_context, start_leaf, quote, string,",
+      "                       like_name, signatures_callback, code_lines, position, fuzzy):",
+      "    # First we want to find out what can actually be changed as a name."
+    ],
+    "imports": [
+      "import os",
+      "from jedi.api import classes",
+      "from jedi.api.strings import StringName, get_quote_ending",
+      "from jedi.api.helpers import match",
+      "from jedi.inference.helpers import get_str_or_none"
+    ],
+    "classes": [
+      "PathName"
+    ],
+    "functions": [
+      "complete_file_name",
+      "_get_string_additions",
+      "_add_strings",
+      "_add_os_path_join"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_434_c657af09fa7d0798_AI_Chariot_Legacy_666_1.0.0_20260508_file_name.py.json"
+}

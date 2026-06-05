@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_win32comport_demo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_win32comport_demo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6202,
+  "content_sha256": "24d90f9dd4ca8eddddce66734976dbc47f7e6fc8fca18f88159561422d914b41",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 174,
+    "non_empty_lines": 160,
+    "char_count": 6202,
+    "preview_lines": [
+      "# This is a simple serial port terminal demo.",
+      "#",
+      "# Its primary purpose is to demonstrate the native serial port access offered via",
+      "# win32file.",
+      "# It uses 3 threads:",
+      "# - The main thread, which cranks up the other 2 threads, then simply waits for them to exit.",
+      "# - The user-input thread - blocks waiting for a keyboard character, and when found sends it",
+      "#   out the COM port.  If the character is Ctrl+C, it stops, signalling the COM port thread to stop.",
+      "# - The COM port thread is simply listening for input on the COM port, and prints it to the screen.",
+      "# This demo uses userlapped IO, so that none of the read or write operations actually block (however,"
+    ],
+    "imports": [
+      "import msvcrt  # For the getch() function.",
+      "import sys",
+      "import threading",
+      "import win32con  # constants.",
+      "from win32event import (  # We use events and the WaitFor[Multiple]Objects functions.",
+      "from win32file import (  # The base COM port and file IO functions."
+    ],
+    "classes": [
+      "SerialTTY"
+    ],
+    "functions": [
+      "FindModem"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_237_24d90f9dd4ca8edd_AI_Chariot_Legacy_666_1.0.0_20260508_win32comport_demo.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 19,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_trustregion_exact.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_trustregion_exact.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13284,
+  "content_sha256": "fb67b81b97e32432baf5a2d736980fc3b2c45f0a483525bb7d960ddba7b14924",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 351,
+    "non_empty_lines": 264,
+    "char_count": 13284,
+    "preview_lines": [
+      "\"\"\"",
+      "Unit tests for trust-region iterative subproblem.",
+      "\"\"\"",
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize._trustregion_exact import (",
+      "    estimate_smallest_singular_value,",
+      "    singular_leading_submatrix,",
+      "    IterativeSubproblem)",
+      "from scipy.linalg import (svd, get_lapack_funcs, det, qr, norm)"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize._trustregion_exact import (",
+      "from scipy.linalg import (svd, get_lapack_funcs, det, qr, norm)",
+      "from numpy.testing import (assert_array_equal,"
+    ],
+    "classes": [
+      "TestEstimateSmallestSingularValue",
+      "TestSingularLeadingSubmatrix",
+      "TestIterativeSubproblem"
+    ],
+    "functions": [
+      "random_entry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_019_fb67b81b97e32432_AI_Chariot_Legacy_666_1.0.0_20260508_test_trustregion_exact.py.json"
+}

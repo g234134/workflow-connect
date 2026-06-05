@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_base_schema.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_base_schema.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4143,
+  "content_sha256": "c64ab548549d57e7c04da6d315fa2d04b9480827011863c73212d673b84d331d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 143,
+    "non_empty_lines": 109,
+    "char_count": 4143,
+    "preview_lines": [
+      "from _pydevd_bundle._debug_adapter.pydevd_schema_log import debug_exception",
+      "import json",
+      "import itertools",
+      "from functools import partial",
+      "class BaseSchema(object):",
+      "    @staticmethod",
+      "    def initialize_ids_translation():",
+      "        BaseSchema._dap_id_to_obj_id = {0: 0, None: None}",
+      "        BaseSchema._obj_id_to_dap_id = {0: 0, None: None}",
+      "        BaseSchema._next_dap_id = partial(next, itertools.count(1))"
+    ],
+    "imports": [
+      "from _pydevd_bundle._debug_adapter.pydevd_schema_log import debug_exception",
+      "import json",
+      "import itertools",
+      "from functools import partial"
+    ],
+    "classes": [
+      "BaseSchema"
+    ],
+    "functions": [
+      "register",
+      "register_request",
+      "register_response",
+      "register_event",
+      "from_dict",
+      "from_json",
+      "get_response_class",
+      "build_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_224_c64ab548549d57e7_AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_base_schema.py.json"
+}

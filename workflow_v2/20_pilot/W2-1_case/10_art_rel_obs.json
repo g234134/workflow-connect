@@ -1,0 +1,23 @@
+{
+  "artifact_id": "ART-REL-OBS",
+  "ticket_id": "W2-1-QA-REL",
+  "pilot_artifact_id": "W2-1-G8-RECON-PILOT",
+  "release_id": "W2-1-G8-RECON-PILOT-doc-auth-20260527",
+  "obs_plan_ref": "09_art_pm_obs_plan.md",
+  "observation_started_at": "2026-05-27T00:00:00+08:00",
+  "observation_window_end": "2026-06-03T23:59:59+08:00",
+  "window_met": false,
+  "observation_phase": "active",
+  "observation_outcome": "clean",
+  "interim_record": true,
+  "incidents_summary": "No incident observed at observation start (day 0). Formal window close-out pending 2026-06-03 or orchestrator waiver.",
+  "signals_checked_day0": {
+    "S1_10_states": { "command": "rg \"10_states\" workflow_v2/10_governance/", "exit_ok": true, "note": "0 erroneous path hits in G8-3 target" },
+    "S2_ART-REL-RECORD": { "command": "rg \"ART-REL-RECORD\" workflow_v2/10_governance/G7_state_machine/", "exit_ok": true, "note": "0 matches" },
+    "S3_stale_G8": { "command": "rg \"待 G8-\" workflow_v2/10_governance/G7_state_machine/", "exit_ok": true, "note": "0 matches" }
+  },
+  "feedback_archived": false,
+  "follow_up_tickets": ["W2-2", "W2-3"],
+  "freeze_recommendation": false,
+  "message": "IMP-OBSERVING entered; 7-day lightweight watch active. Not claiming CI enforce or prod release."
+}

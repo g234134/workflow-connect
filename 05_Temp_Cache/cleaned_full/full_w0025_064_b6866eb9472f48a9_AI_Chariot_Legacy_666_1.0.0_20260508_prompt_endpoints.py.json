@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prompt_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prompt_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41437,
+  "content_sha256": "b6866eb9472f48a940a6af7c48d85385351fa86cb18bec764a1061783bbde32a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1207,
+    "non_empty_lines": 1017,
+    "char_count": 41413,
+    "preview_lines": [
+      "\"\"\"",
+      "CRUD ENDPOINTS FOR PROMPTS",
+      "\"\"\"",
+      "import tempfile",
+      "from pathlib import Path",
+      "from typing import Any, Dict, List, Optional, cast",
+      "from fastapi import (",
+      "    APIRouter,",
+      "    Depends,",
+      "    File,"
+    ],
+    "imports": [
+      "import tempfile",
+      "from pathlib import Path",
+      "from typing import Any, Dict, List, Optional, cast",
+      "from fastapi import (",
+      "from pydantic import BaseModel",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import CommonProxyErrors, LitellmUserRoles, UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.types.prompts.init_prompts import (",
+      "from litellm.types.proxy.prompt_endpoints import TestPromptRequest"
+    ],
+    "classes": [
+      "Prompt",
+      "PatchPromptRequest"
+    ],
+    "functions": [
+      "get_base_prompt_id",
+      "get_version_number",
+      "construct_versioned_prompt_id",
+      "get_latest_version_prompt_id",
+      "get_latest_prompt_versions",
+      "create_versioned_prompt_spec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_064_b6866eb9472f48a9_AI_Chariot_Legacy_666_1.0.0_20260508_prompt_endpoints.py.json"
+}

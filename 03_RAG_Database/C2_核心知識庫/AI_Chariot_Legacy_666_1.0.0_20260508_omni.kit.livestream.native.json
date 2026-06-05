@@ -1,0 +1,38 @@
+{
+  "package": {
+    "packageId": "omni.kit.livestream.native-5.0.1+107.0.0.lx64.d.cp310",
+    "id": "omni.kit.livestream.native-5.0.1",
+    "name": "omni.kit.livestream.native",
+    "version": "5.0.1",
+    "metadata": "107.0.0.lx64.d.cp310",
+    "archivePath": "https://d4i3qtqj3r0z5.cloudfront.net/omni.kit.livestream.native-5.0.1%2B107.0.0.lx64.d.cp310.zip",
+    "publish": {
+      "date": 1713278523
+    },
+    "target": {
+      "config": [
+        "debug"
+      ],
+      "python": [
+        "cp310"
+      ],
+      "platform": [
+        "linux-x86_64"
+      ],
+      "kit": [
+        "107.0.0"
+      ]
+    }
+  },
+  "dependencies": {
+    "omni.kit.livestream.core": {
+      "version": "4.1.2"
+    },
+    "omni.kit.streamsdk.plugins": {
+      "version": "4.1.1"
+    },
+    "omni.services.streaming.manager": {
+      "optional": true
+    }
+  }
+}

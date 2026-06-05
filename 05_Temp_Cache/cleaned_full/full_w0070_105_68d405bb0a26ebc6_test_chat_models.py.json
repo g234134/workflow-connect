@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\mistralai\\tests\\integration_tests\\test_chat_models.py",
+  "name": "test_chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7093,
+  "content_sha256": "68d405bb0a26ebc6dd817979e2f0e8ea005fc45e01369b4d4402fb424e954bd3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 161,
+    "char_count": 7090,
+    "preview_lines": [
+      "\"\"\"Test ChatMistral chat model.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import time",
+      "from typing import Any",
+      "import pytest",
+      "from httpx import ReadTimeout",
+      "from langchain_core.messages import AIMessageChunk, BaseMessageChunk",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import time",
+      "from typing import Any",
+      "import pytest",
+      "from httpx import ReadTimeout",
+      "from langchain_core.messages import AIMessageChunk, BaseMessageChunk",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "from langchain_mistralai.chat_models import ChatMistralAI"
+    ],
+    "classes": [
+      "Book",
+      "BookDict"
+    ],
+    "functions": [
+      "_check_parsed_result",
+      "test_structured_output_json_schema",
+      "test_retry_parameters",
+      "test_reasoning",
+      "test_reasoning_v1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_105_68d405bb0a26ebc6_test_chat_models.py.json"
+}

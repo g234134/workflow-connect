@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 439,
+  "generated_at": "2026-05-08T18:47:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tests\\test_triads.py",
+  "name": "test_triads.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8219,
+  "content_sha256": "09b9c500108c0d4d17d66ceededcd6e3e58bdaa9f9a6d6834ce4a135a4e32309",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 248,
+    "non_empty_lines": 215,
+    "char_count": 8219,
+    "preview_lines": [
+      "\"\"\"Tests for the :mod:`networkx.algorithms.triads` module.\"\"\"",
+      "import itertools",
+      "from collections import defaultdict",
+      "from random import sample",
+      "import pytest",
+      "import networkx as nx",
+      "def test_triadic_census():",
+      "    \"\"\"Tests the triadic_census function.\"\"\"",
+      "    G = nx.DiGraph()",
+      "    G.add_edges_from([\"01\", \"02\", \"03\", \"04\", \"05\", \"12\", \"16\", \"51\", \"56\", \"65\"])"
+    ],
+    "imports": [
+      "import itertools",
+      "from collections import defaultdict",
+      "from random import sample",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_triadic_census",
+      "test_is_triad",
+      "test_all_triads",
+      "test_triad_type",
+      "test_triads_by_type",
+      "test_triadic_census_short_path_nodelist",
+      "test_triadic_census_correct_nodelist_values",
+      "test_triadic_census_tiny_graphs",
+      "test_triadic_census_selfloops",
+      "test_triadic_census_four_path",
+      "test_triadic_census_four_path_nodelist",
+      "test_triadic_census_nodelist",
+      "test_triadic_census_on_random_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_439_09b9c500108c0d4d_test_triads.py.json"
+}

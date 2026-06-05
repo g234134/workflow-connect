@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 461,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\rprop.py",
+  "name": "rprop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12748,
+  "content_sha256": "1a9f6e2c417a1c73a0e882e979f6bff7105915e4ab819fe8814ca595ad864542",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 335,
+    "non_empty_lines": 288,
+    "char_count": 12748,
+    "preview_lines": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _default_to_fused_or_foreach,",
+      "                        _differentiable_doc, _foreach_doc, _maximize_doc, _view_as_real)",
+      "from typing import List, Optional",
+      "__all__ = [\"Rprop\", \"rprop\"]",
+      "class Rprop(Optimizer):",
+      "    def __init__(",
+      "        self,",
+      "        params,"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _default_to_fused_or_foreach,",
+      "from typing import List, Optional"
+    ],
+    "classes": [
+      "Rprop"
+    ],
+    "functions": [
+      "rprop",
+      "_single_tensor_rprop",
+      "_multi_tensor_rprop"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_461_1a9f6e2c417a1c73_rprop.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:48:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\utilities\\google_lens.py",
+  "name": "google_lens.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 679,
+  "content_sha256": "042f40c03fdd3ce041d9d161dce61d77867eb50e9de3f200e45f6705f2cd7ae3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 676,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.utilities import GoogleLensAPIWrapper",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {\"GoogleLensAPIWrapper\": \"langchain_community.utilities\"}",
+      "_import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)",
+      "def __getattr__(name: str) -> Any:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.utilities import GoogleLensAPIWrapper"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_487_042f40c03fdd3ce0_google_lens.py.json"
+}

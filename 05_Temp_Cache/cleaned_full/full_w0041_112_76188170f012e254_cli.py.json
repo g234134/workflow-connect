@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 112,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\fastapi\\cli.py",
+  "name": "cli.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 455,
+  "content_sha256": "76188170f012e254745101d5e5e01ef12de9eb4289183f9b0990b87e996205f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 10,
+    "char_count": 455,
+    "preview_lines": [
+      "try:",
+      "    from fastapi_cli.cli import main as cli_main",
+      "except ImportError:  # pragma: no cover",
+      "    cli_main = None  # type: ignore",
+      "def main() -> None:",
+      "    if not cli_main:  # type: ignore[truthy-function]  # ty: ignore[unused-ignore-comment]",
+      "        message = 'To use the fastapi command, please install \"fastapi[standard]\":\\n\\n\\tpip install \"fastapi[standard]\"\\n'",
+      "        print(message)",
+      "        raise RuntimeError(message)  # noqa: B904",
+      "    cli_main()"
+    ],
+    "imports": [
+      "from fastapi_cli.cli import main as cli_main"
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_112_76188170f012e254_cli.py.json"
+}

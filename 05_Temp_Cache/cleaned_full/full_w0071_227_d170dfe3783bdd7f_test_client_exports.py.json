@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 227,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_client_exports.py",
+  "name": "test_client_exports.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2710,
+  "content_sha256": "d170dfe3783bdd7f7e701d6894d01bd0134e822f2a6b1fc4277ca189518f9ecf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 74,
+    "char_count": 2707,
+    "preview_lines": [
+      "\"\"\"Test that all expected symbols are exported from langgraph_sdk.client.",
+      "This test ensures backwards compatibility during refactoring.",
+      "\"\"\"",
+      "import httpx",
+      "from langgraph_sdk import get_client as public_get_client",
+      "from langgraph_sdk import get_sync_client as public_get_sync_client",
+      "from langgraph_sdk.client import (",
+      "    AssistantsClient,",
+      "    CronClient,",
+      "    HttpClient,"
+    ],
+    "imports": [
+      "import httpx",
+      "from langgraph_sdk import get_client as public_get_client",
+      "from langgraph_sdk import get_sync_client as public_get_sync_client",
+      "from langgraph_sdk.client import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_client_exports",
+      "test_public_api_exports",
+      "test_client_instantiation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_227_d170dfe3783bdd7f_test_client_exports.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 296,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_out_dtype.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_out_dtype.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5744,
+  "content_sha256": "202bfdf6451c92e942f4da7acc1d02bd22fbf931c2a09e70c6b9ad53eca495b4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 133,
+    "char_count": 5744,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._higher_order_ops.utils import autograd_not_implemented",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._prims_common import elementwise_dtypes, ELEMENTWISE_TYPE_PROMOTION_KIND",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch.fx.experimental.proxy_tensor import ("
+    ],
+    "imports": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._higher_order_ops.utils import autograd_not_implemented",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._prims_common import elementwise_dtypes, ELEMENTWISE_TYPE_PROMOTION_KIND",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch.fx.experimental.proxy_tensor import ("
+    ],
+    "classes": [
+      "OutDtypeOperator"
+    ],
+    "functions": [
+      "trace_out_dtype",
+      "out_dtype_dense",
+      "is_int_mm",
+      "out_dtype_fallback",
+      "out_dtype_proxy",
+      "out_dtype_fake_tensor_mode",
+      "out_dtype_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_296_202bfdf6451c92e9_AI_Chariot_Legacy_666_1.0.0_20260508_out_dtype.py.json"
+}

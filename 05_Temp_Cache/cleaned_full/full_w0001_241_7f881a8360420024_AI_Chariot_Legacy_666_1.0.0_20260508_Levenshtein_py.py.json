@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:44:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_Levenshtein_py.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_Levenshtein_py.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17103,
+  "content_sha256": "7f881a8360420024865cf55ed209c69d87f90832c0772aa1bdfe5c525f69b515",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 571,
+    "non_empty_lines": 480,
+    "char_count": 17099,
+    "preview_lines": [
+      "# SPDX-License-Identifier: MIT",
+      "# Copyright (C) 2022 Max Bachmann",
+      "from __future__ import annotations",
+      "from rapidfuzz._common_py import common_affix, conv_sequences",
+      "from rapidfuzz._utils import is_none, setupPandas",
+      "from rapidfuzz.distance import Indel_py as Indel",
+      "from rapidfuzz.distance._initialize_py import Editop, Editops",
+      "def _levenshtein_maximum(s1, s2, weights):",
+      "    len1 = len(s1)",
+      "    len2 = len(s2)"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from rapidfuzz._common_py import common_affix, conv_sequences",
+      "from rapidfuzz._utils import is_none, setupPandas",
+      "from rapidfuzz.distance import Indel_py as Indel",
+      "from rapidfuzz.distance._initialize_py import Editop, Editops"
+    ],
+    "classes": [],
+    "functions": [
+      "_levenshtein_maximum",
+      "_uniform_generic",
+      "_uniform_distance",
+      "distance",
+      "similarity",
+      "normalized_distance",
+      "normalized_similarity",
+      "_matrix",
+      "editops",
+      "opcodes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_241_7f881a8360420024_AI_Chariot_Legacy_666_1.0.0_20260508_Levenshtein_py.py.json"
+}

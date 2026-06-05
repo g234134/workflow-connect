@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_numpy_pickle.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_numpy_pickle.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28791,
+  "content_sha256": "37fc1031febfbe023bd674582e77b475cda43ba75f8749644da3999fc4eae477",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 756,
+    "non_empty_lines": 644,
+    "char_count": 28791,
+    "preview_lines": [
+      "\"\"\"Utilities for fast persistence of big data, with optional compression.\"\"\"",
+      "# Author: Gael Varoquaux <gael dot varoquaux at normalesup dot org>",
+      "# Copyright (c) 2009 Gael Varoquaux",
+      "# License: BSD Style, 3 clauses.",
+      "import io",
+      "import os",
+      "import pickle",
+      "import warnings",
+      "from pathlib import Path",
+      "from .backports import make_memmap"
+    ],
+    "imports": [
+      "import io",
+      "import os",
+      "import pickle",
+      "import warnings",
+      "from pathlib import Path",
+      "from .backports import make_memmap",
+      "from .compressor import (",
+      "from .numpy_pickle_compat import (",
+      "from .numpy_pickle_utils import ("
+    ],
+    "classes": [
+      "NumpyArrayWrapper",
+      "NumpyPickler",
+      "NumpyUnpickler"
+    ],
+    "functions": [
+      "dump",
+      "_unpickle",
+      "load_temporary_memmap",
+      "load"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_003_37fc1031febfbe02_AI_Chariot_Legacy_666_1.0.0_20260508_numpy_pickle.py.json"
+}

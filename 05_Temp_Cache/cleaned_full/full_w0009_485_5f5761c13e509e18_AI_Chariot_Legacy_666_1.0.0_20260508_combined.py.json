@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 485,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_combined.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_combined.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2966,
+  "content_sha256": "5f5761c13e509e18b678e68f327a42e9a4f2c25d35e21ae82653ba623312aca6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 85,
+    "non_empty_lines": 68,
+    "char_count": 2966,
+    "preview_lines": [
+      "import warnings",
+      "from typing import Any",
+      "from pydantic import field_validator",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.memory.chat_memory import BaseChatMemory",
+      "class CombinedMemory(BaseMemory):",
+      "    \"\"\"Combining multiple memories' data together.\"\"\"",
+      "    memories: list[BaseMemory]",
+      "    \"\"\"For tracking all the memories that should be accessed.\"\"\"",
+      "    @field_validator(\"memories\")"
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import Any",
+      "from pydantic import field_validator",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.memory.chat_memory import BaseChatMemory"
+    ],
+    "classes": [
+      "CombinedMemory"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_485_5f5761c13e509e18_AI_Chariot_Legacy_666_1.0.0_20260508_combined.py.json"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tunnel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tunnel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13787,
+  "content_sha256": "c5fb511a58643bf475f735ea703124b2896d4aa4ff5d0cd19d74fd1e2e3cc48b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 430,
+    "non_empty_lines": 356,
+    "char_count": 13787,
+    "preview_lines": [
+      "\"\"\"Basic ssh tunnel utilities, and convenience functions for tunneling",
+      "zeromq connections.",
+      "\"\"\"",
+      "# Copyright (C) 2010-2011  IPython Development Team",
+      "# Copyright (C) 2011- PyZMQ Developers",
+      "#",
+      "# Redistributed from IPython under the terms of the BSD License.",
+      "import atexit",
+      "import os",
+      "import re"
+    ],
+    "imports": [
+      "import atexit",
+      "import os",
+      "import re",
+      "import signal",
+      "import socket",
+      "import sys",
+      "import warnings",
+      "from getpass import getpass, getuser",
+      "from multiprocessing import Process",
+      "import paramiko",
+      "from .forward import forward_tunnel",
+      "import pexpect",
+      "from the local machine.  It simply creates an ssh tunnel using the remaining args,"
+    ],
+    "classes": [
+      "MaxRetryExceeded"
+    ],
+    "functions": [
+      "select_random_ports",
+      "try_passwordless_ssh",
+      "_try_passwordless_openssh",
+      "_try_passwordless_paramiko",
+      "tunnel_connection",
+      "open_tunnel",
+      "openssh_tunnel",
+      "_stop_tunnel",
+      "_split_server",
+      "paramiko_tunnel",
+      "_paramiko_tunnel"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_329_c5fb511a58643bf4_AI_Chariot_Legacy_666_1.0.0_20260508_tunnel.py.json"
+}

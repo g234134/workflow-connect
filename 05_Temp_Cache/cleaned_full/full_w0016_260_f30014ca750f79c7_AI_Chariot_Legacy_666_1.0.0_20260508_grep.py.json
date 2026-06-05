@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_grep.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_grep.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7521,
+  "content_sha256": "f30014ca750f79c7742bbe9d363368a6fa8b484112dc5a1450f858792a1d2fb1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 184,
+    "char_count": 7521,
+    "preview_lines": [
+      "\"\"\"Grep dialog for Find in Files functionality.",
+      "   Inherits from SearchDialogBase for GUI and uses searchengine",
+      "   to prepare search pattern.",
+      "\"\"\"",
+      "import fnmatch",
+      "import os",
+      "import sys",
+      "from tkinter import StringVar, BooleanVar",
+      "from tkinter.ttk import Checkbutton  # Frame imported in ...Base",
+      "from idlelib.searchbase import SearchDialogBase"
+    ],
+    "imports": [
+      "import fnmatch",
+      "import os",
+      "import sys",
+      "from tkinter import StringVar, BooleanVar",
+      "from tkinter.ttk import Checkbutton  # Frame imported in ...Base",
+      "from idlelib.searchbase import SearchDialogBase",
+      "from idlelib import searchengine",
+      "from idlelib.outwin import OutputWindow  # leave here!",
+      "from tkinter import Toplevel, Text, SEL",
+      "from tkinter.ttk import Frame, Button",
+      "from idlelib.pyshell import PyShellFileList"
+    ],
+    "classes": [
+      "GrepDialog"
+    ],
+    "functions": [
+      "grep",
+      "walk_error",
+      "findfiles",
+      "_grep_dialog"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_260_f30014ca750f79c7_AI_Chariot_Legacy_666_1.0.0_20260508_grep.py.json"
+}

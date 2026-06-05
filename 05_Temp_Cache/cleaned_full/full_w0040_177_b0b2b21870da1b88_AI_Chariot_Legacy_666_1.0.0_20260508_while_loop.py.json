@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 177,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_while_loop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_while_loop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10728,
+  "content_sha256": "b0b2b21870da1b889c6a1526a456a002351d12024fc28af6dc9a6e3a4187995d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 268,
+    "non_empty_lines": 213,
+    "char_count": 10728,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import Callable, Tuple, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._higher_order_ops.utils import (",
+      "    _has_potential_branch_input_alias,",
+      "    _has_potential_branch_input_mutation,",
+      "    _maybe_run_with_interpreter,",
+      "    _set_compilation_env,"
+    ],
+    "imports": [
+      "from typing import Callable, Tuple, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._higher_order_ops.utils import (",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch.fx.experimental.proxy_tensor import ProxyTorchDispatchMode, track_tensor_tree"
+    ],
+    "classes": [
+      "WhileLoopOp"
+    ],
+    "functions": [
+      "while_loop",
+      "while_loop_dense",
+      "while_loop_tracing",
+      "while_loop_fake_tensor_mode",
+      "while_loop_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_177_b0b2b21870da1b88_AI_Chariot_Legacy_666_1.0.0_20260508_while_loop.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_resolver.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_resolver.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24352,
+  "content_sha256": "d61be87bbd980cc208d122287fe40debc967c6c73de4dad968c6d1281fa3643e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 633,
+    "non_empty_lines": 530,
+    "char_count": 24348,
+    "preview_lines": [
+      "\"\"\"MCP tool resolution for CrewAI agents.",
+      "This module extracts all MCP-related tool resolution logic from the Agent class",
+      "into a standalone MCPToolResolver. It handles three flavours of MCP reference:",
+      "  1. Native configs:   MCPServerStdio / MCPServerHTTP / MCPServerSSE objects.",
+      "  2. HTTPS URLs:       e.g. \"https://mcp.example.com/api\"",
+      "  3. AMP references:   e.g. \"notion\" or \"notion#search\" (legacy \"crewai-amp:\" prefix also works)",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextvars"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextvars",
+      "import time",
+      "from typing import TYPE_CHECKING, Any, Final, cast",
+      "from urllib.parse import urlparse",
+      "from crewai.mcp.client import MCPClient",
+      "from crewai.mcp.config import (",
+      "from crewai.mcp.transports.base import BaseTransport",
+      "from crewai.mcp.transports.http import HTTPTransport",
+      "from crewai.mcp.transports.sse import SSETransport",
+      "from crewai.mcp.transports.stdio import StdioTransport",
+      "from crewai.utilities.string_utils import sanitize_tool_name",
+      "from crewai.tools.base_tool import BaseTool",
+      "from crewai.utilities.logger import Logger",
+      "from crewai.events.event_bus import crewai_event_bus",
+      "from crewai.events.types.mcp_events import MCPConfigFetchFailedEvent",
+      "import httpx",
+      "from crewai_tools.tools.crewai_platform_tools.misc import (",
+      "from crewai.cli.plus_api import PlusAPI"
+    ],
+    "classes": [
+      "MCPToolResolver"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_103_d61be87bbd980cc2_AI_Chariot_Legacy_666_1.0.0_20260508_tool_resolver.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 170,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\sizevars.py",
+  "name": "sizevars.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24058,
+  "content_sha256": "e44915ba02892363359e0ead7c8ab299eae114e36497e64af4dd834f07a9ffd8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 594,
+    "non_empty_lines": 515,
+    "char_count": 24058,
+    "preview_lines": [
+      "import functools",
+      "import itertools",
+      "import logging",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Set, Tuple, Union",
+      "import sympy",
+      "from sympy import Expr",
+      "from torch.fx.experimental.symbolic_shapes import ShapeEnv",
+      "from torch.utils._sympy.functions import FloorDiv, ModularIndexing",
+      "from torch.utils._sympy.value_ranges import bound_sympy",
+      "from .utils import sympy_subs, sympy_symbol, VarRanges"
+    ],
+    "imports": [
+      "import functools",
+      "import itertools",
+      "import logging",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Set, Tuple, Union",
+      "import sympy",
+      "from sympy import Expr",
+      "from torch.fx.experimental.symbolic_shapes import ShapeEnv",
+      "from torch.utils._sympy.functions import FloorDiv, ModularIndexing",
+      "from torch.utils._sympy.value_ranges import bound_sympy",
+      "from .utils import sympy_subs, sympy_symbol, VarRanges",
+      "from .virtualized import V"
+    ],
+    "classes": [
+      "SizeVarAllocator",
+      "SimplifyIndexing"
+    ],
+    "functions": [
+      "join_dimensions",
+      "_join_dimensions_cached"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_170_e44915ba02892363_sizevars.py.json"
+}

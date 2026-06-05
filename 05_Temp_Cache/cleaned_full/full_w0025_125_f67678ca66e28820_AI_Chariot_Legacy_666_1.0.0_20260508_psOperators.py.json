@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 125,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_psOperators.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_psOperators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16272,
+  "content_sha256": "f67678ca66e288202963d57c38046962abceef7384709806c93b42b86cc3fabc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 572,
+    "non_empty_lines": 467,
+    "char_count": 16272,
+    "preview_lines": [
+      "_accessstrings = {0: \"\", 1: \"readonly\", 2: \"executeonly\", 3: \"noaccess\"}",
+      "class ps_object(object):",
+      "    literal = 1",
+      "    access = 0",
+      "    value = None",
+      "    def __init__(self, value):",
+      "        self.value = value",
+      "        self.type = self.__class__.__name__[3:] + \"type\"",
+      "    def __repr__(self):",
+      "        return \"<%s %s>\" % (self.__class__.__name__[3:], repr(self.value))"
+    ],
+    "imports": [],
+    "classes": [
+      "ps_object",
+      "ps_operator",
+      "ps_procedure",
+      "ps_name",
+      "ps_literal",
+      "ps_array",
+      "ps_font",
+      "ps_file",
+      "ps_dict",
+      "ps_mark",
+      "ps_procmark",
+      "ps_null",
+      "ps_boolean",
+      "ps_string",
+      "ps_integer",
+      "ps_real",
+      "PSOperators"
+    ],
+    "functions": [
+      "_type1_item_repr",
+      "_type1_Encoding_repr",
+      "_type1_CharString_repr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_125_f67678ca66e28820_AI_Chariot_Legacy_666_1.0.0_20260508_psOperators.py.json"
+}

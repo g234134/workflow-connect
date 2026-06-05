@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 337,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__hub.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__hub.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 795,
+  "content_sha256": "beb62413ac9e754d3449e63838826f2937b964a66a7c0342b805f588072fcb4a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 795,
+    "preview_lines": [
+      "\"\"\"Shared constants and helpers for hub (agent/skill) methods.\"\"\"",
+      "from __future__ import annotations",
+      "import re",
+      "from typing import Optional",
+      "from langsmith import utils as ls_utils",
+      "REPO_HANDLE_PATTERN = re.compile(r\"^[a-z][a-z0-9-_]*$\")",
+      "PLATFORM_HUB = \"/v1/platform/hub/repos\"",
+      "HUB = \"/repos\"",
+      "def build_commit_url(host: str, owner: str, name: str, commit_hash: str) -> str:",
+      "    \"\"\"Build the URL for a hub directory commit.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re",
+      "from typing import Optional",
+      "from langsmith import utils as ls_utils"
+    ],
+    "classes": [],
+    "functions": [
+      "build_commit_url",
+      "validate_parent_commit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_337_beb62413ac9e754d_AI_Chariot_Legacy_666_1.0.0_20260508__hub.py.json"
+}

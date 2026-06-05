@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 100,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_docsim.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_docsim.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 54082,
+  "content_sha256": "c29fadaa86cbb9c3ef614dfed562a426c17132b893dc6aedcedf3b198fd3be0c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1299,
+    "non_empty_lines": 1075,
+    "char_count": 54080,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2013 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Compute similarities across a collection of documents in the Vector Space Model.",
+      "The main class is :class:`~gensim.similarities.docsim.Similarity`, which builds an index for a given set of documents.",
+      "Once the index is built, you can perform efficient queries like \"Tell me how similar is this query document to each",
+      "document in the index?\". The result is a vector of numbers as large as the size of the initial set of documents,",
+      "that is, one float for each index document. Alternatively, you can also request only the top-N most"
+    ],
+    "imports": [
+      "import logging",
+      "import itertools",
+      "import os",
+      "import heapq",
+      "import warnings",
+      "import numpy",
+      "import scipy.sparse",
+      "from gensim import interfaces, utils, matutils",
+      "import multiprocessing"
+    ],
+    "classes": [
+      "Shard",
+      "Similarity",
+      "MatrixSimilarity",
+      "SoftCosineSimilarity",
+      "WmdSimilarity",
+      "SparseMatrixSimilarity"
+    ],
+    "functions": [
+      "query_shard",
+      "_nlargest"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_100_c29fadaa86cbb9c3_AI_Chariot_Legacy_666_1.0.0_20260508_docsim.py.json"
+}

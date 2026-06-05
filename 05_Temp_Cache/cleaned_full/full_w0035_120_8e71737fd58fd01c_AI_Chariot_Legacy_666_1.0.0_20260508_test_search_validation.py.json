@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_search_validation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_search_validation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8641,
+  "content_sha256": "8e71737fd58fd01c460859b3ee794b33ded9e83334ab3aae077cf748e09dc971",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 183,
+    "char_count": 8641,
+    "preview_lines": [
+      "import pytest",
+      "from firecrawl.v2.types import SearchRequest, Source, ScrapeOptions, ScrapeFormats",
+      "from firecrawl.v2.methods.search import _validate_search_request",
+      "class TestSearchValidation:",
+      "    \"\"\"Unit tests for search request validation.\"\"\"",
+      "    def test_validate_empty_query(self):",
+      "        \"\"\"Test validation of empty query.\"\"\"",
+      "        request = SearchRequest(query=\"\")",
+      "        with pytest.raises(ValueError, match=\"Query cannot be empty\"):",
+      "            _validate_search_request(request)"
+    ],
+    "imports": [
+      "import pytest",
+      "from firecrawl.v2.types import SearchRequest, Source, ScrapeOptions, ScrapeFormats",
+      "from firecrawl.v2.methods.search import _validate_search_request"
+    ],
+    "classes": [
+      "TestSearchValidation",
+      "TestSearchRequestModel"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_120_8e71737fd58fd01c_AI_Chariot_Legacy_666_1.0.0_20260508_test_search_validation.py.json"
+}

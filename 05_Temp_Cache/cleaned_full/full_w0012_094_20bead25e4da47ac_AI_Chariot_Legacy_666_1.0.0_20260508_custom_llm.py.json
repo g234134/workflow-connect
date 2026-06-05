@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 94,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7169,
+  "content_sha256": "20bead25e4da47acb2606fa5c025a1103196c4e3186eff2c3ae2d715cd4e0b6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 245,
+    "non_empty_lines": 222,
+    "char_count": 7169,
+    "preview_lines": [
+      "# What is this?",
+      "## Handler file for a Custom Chat LLM",
+      "\"\"\"",
+      "- completion",
+      "- acompletion",
+      "- streaming",
+      "- async_streaming",
+      "\"\"\"",
+      "from typing import (",
+      "    TYPE_CHECKING,"
+    ],
+    "imports": [
+      "from typing import (",
+      "import httpx",
+      "from litellm.llms.custom_httpx.http_handler import AsyncHTTPHandler, HTTPHandler",
+      "from litellm.types.utils import GenericStreamingChunk",
+      "from litellm.utils import EmbeddingResponse, ImageResponse, ModelResponse",
+      "from .base import BaseLLM",
+      "from litellm import CustomStreamWrapper"
+    ],
+    "classes": [
+      "CustomLLMError",
+      "CustomLLM"
+    ],
+    "functions": [
+      "custom_chat_llm_router"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_094_20bead25e4da47ac_AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm.py.json"
+}

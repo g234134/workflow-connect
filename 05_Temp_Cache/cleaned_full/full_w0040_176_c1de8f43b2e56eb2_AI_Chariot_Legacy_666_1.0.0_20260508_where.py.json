@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_where.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_where.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3127,
+  "content_sha256": "c1de8f43b2e56eb253a9a98531c87f162a676ede087b03094803e8ccc4ebc0a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 77,
+    "char_count": 3127,
+    "preview_lines": [
+      "import onnx",
+      "from ..quant_utils import TENSOR_NAME_QUANT_SUFFIX, QuantizedValue, QuantizedValueType, attribute_to_kwarg, ms_domain",
+      "from .base_operator import QuantOperatorBase",
+      "from .qdq_base_operator import QDQOperatorBase",
+      "class QLinearWhere(QuantOperatorBase):",
+      "    def should_quantize(self):",
+      "        return True",
+      "    def quantize(self):",
+      "        node = self.node",
+      "        assert node.op_type == \"Where\""
+    ],
+    "imports": [
+      "import onnx",
+      "from ..quant_utils import TENSOR_NAME_QUANT_SUFFIX, QuantizedValue, QuantizedValueType, attribute_to_kwarg, ms_domain",
+      "from .base_operator import QuantOperatorBase",
+      "from .qdq_base_operator import QDQOperatorBase"
+    ],
+    "classes": [
+      "QLinearWhere",
+      "QDQWhere"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_176_c1de8f43b2e56eb2_AI_Chariot_Legacy_666_1.0.0_20260508_where.py.json"
+}

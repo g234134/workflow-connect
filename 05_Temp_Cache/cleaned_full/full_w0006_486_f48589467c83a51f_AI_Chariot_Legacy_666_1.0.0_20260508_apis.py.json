@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 486,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_apis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_apis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19568,
+  "content_sha256": "f48589467c83a51f36a3d8ec611235b3a497abdd7c6d4f9714c642761fe348e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 449,
+    "non_empty_lines": 377,
+    "char_count": 19568,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "# NOTE: We allow Dynamo to see this file (via torch/_dynamo/trace_rules.py) so that it can",
+      "#       trace through functorch transforms.",
+      "#       Currently, we can't allow Dynamo to see `eager_transforms.py`/`vmap.py` as that break a lot of thing",
+      "#       and there isn't a mechanism to selectively expose only some functions (eg. grad) from a file",
+      "#       to Dynamo.",
+      "import functools",
+      "from torch._functorch.utils import argnums_t, exposed_in",
+      "from torch._functorch.vmap import ("
+    ],
+    "imports": [
+      "import functools",
+      "from torch._functorch.utils import argnums_t, exposed_in",
+      "from torch._functorch.vmap import (",
+      "from torch._dynamo import is_compiling"
+    ],
+    "classes": [],
+    "functions": [
+      "vmap",
+      "chunk_vmap",
+      "grad",
+      "grad_and_value"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_486_f48589467c83a51f_AI_Chariot_Legacy_666_1.0.0_20260508_apis.py.json"
+}

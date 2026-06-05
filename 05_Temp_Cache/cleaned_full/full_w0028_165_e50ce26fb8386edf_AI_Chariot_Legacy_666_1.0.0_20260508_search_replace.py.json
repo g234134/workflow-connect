@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 165,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_search_replace.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_search_replace.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19813,
+  "content_sha256": "e50ce26fb8386edf36b08db2c827fb869979f7dc24a1bc598151a7ac20a01247",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 757,
+    "non_empty_lines": 572,
+    "char_count": 19795,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "import sys",
+      "from pathlib import Path",
+      "try:",
+      "    import git",
+      "except ImportError:",
+      "    git = None",
+      "from diff_match_patch import diff_match_patch",
+      "from tqdm import tqdm",
+      "from aider.dump import dump"
+    ],
+    "imports": [
+      "import sys",
+      "from pathlib import Path",
+      "import git",
+      "from diff_match_patch import diff_match_patch",
+      "from tqdm import tqdm",
+      "from aider.dump import dump",
+      "from aider.utils import GitTemporaryDirectory"
+    ],
+    "classes": [
+      "RelativeIndenter",
+      "SearchTextNotUnique"
+    ],
+    "functions": [
+      "map_patches",
+      "relative_indent",
+      "line_pad",
+      "line_unpad",
+      "dmp_apply",
+      "lines_to_chars",
+      "dmp_lines_apply",
+      "diff_lines",
+      "search_and_replace",
+      "git_cherry_pick_osr_onto_o",
+      "git_cherry_pick_sr_onto_so",
+      "flexible_search_and_replace",
+      "reverse_lines",
+      "try_strategy",
+      "strip_blank_lines",
+      "read_text",
+      "proc",
+      "colorize_result",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_165_e50ce26fb8386edf_AI_Chariot_Legacy_666_1.0.0_20260508_search_replace.py.json"
+}

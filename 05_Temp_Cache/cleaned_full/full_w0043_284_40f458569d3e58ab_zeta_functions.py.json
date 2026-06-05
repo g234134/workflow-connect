@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:47:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\functions\\special\\zeta_functions.py",
+  "name": "zeta_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24091,
+  "content_sha256": "40f458569d3e58ab34d82512422448254583e0dff73e6aab3ac935306cc151f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 786,
+    "non_empty_lines": 603,
+    "char_count": 24091,
+    "preview_lines": [
+      "\"\"\" Riemann zeta and related function. \"\"\"",
+      "from sympy.core.add import Add",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.function import ArgumentIndexError, expand_mul, DefinedFunction",
+      "from sympy.core.logic import fuzzy_not",
+      "from sympy.core.numbers import pi, I, Integer",
+      "from sympy.core.relational import Eq",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Dummy",
+      "from sympy.core.sympify import sympify"
+    ],
+    "imports": [
+      "from sympy.core.add import Add",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.function import ArgumentIndexError, expand_mul, DefinedFunction",
+      "from sympy.core.logic import fuzzy_not",
+      "from sympy.core.numbers import pi, I, Integer",
+      "from sympy.core.relational import Eq",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Dummy",
+      "from sympy.core.sympify import sympify",
+      "from sympy.functions.combinatorial.numbers import bernoulli, factorial, genocchi, harmonic",
+      "from sympy.functions.elementary.complexes import re, unpolarify, Abs, polar_lift",
+      "from sympy.functions.elementary.exponential import log, exp_polar, exp",
+      "from sympy.functions.elementary.integers import ceiling, floor",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.functions.elementary.piecewise import Piecewise",
+      "from sympy.polys.polytools import Poly"
+    ],
+    "classes": [
+      "lerchphi",
+      "polylog",
+      "zeta",
+      "dirichlet_eta",
+      "riemann_xi",
+      "stieltjes"
+    ],
+    "functions": [
+      "_dilogtable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_284_40f458569d3e58ab_zeta_functions.py.json"
+}

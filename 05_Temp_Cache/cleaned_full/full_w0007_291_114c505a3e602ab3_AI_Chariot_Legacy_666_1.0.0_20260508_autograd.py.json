@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_autograd.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_autograd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12093,
+  "content_sha256": "114c505a3e602ab349fa17191dba53d6a860267e9e94b7e33fb012a51e2e11fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 275,
+    "non_empty_lines": 237,
+    "char_count": 12093,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from collections import namedtuple",
+      "import functools",
+      "# NOTE [CustomOp autograd kernel indirection]",
+      "# We register `inner` as the autograd kernel for this custom_op.",
+      "# `inner` either calls the autograd formula registered by the user,",
+      "# or goes into an `autograd_not_implemented` kernel.",
+      "#"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from collections import namedtuple",
+      "import functools"
+    ],
+    "classes": [],
+    "functions": [
+      "autograd_kernel_indirection",
+      "autograd_not_implemented",
+      "mark_non_differentiable",
+      "construct_autograd_kernel",
+      "gen_autograd_function",
+      "namedtuple_args_cls",
+      "namedtuple_args",
+      "validate_grad_inputs_dict",
+      "grad_inputs_dict_to_flat_tuple",
+      "save_pytree_for_backward",
+      "unpack_saved"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_291_114c505a3e602ab3_AI_Chariot_Legacy_666_1.0.0_20260508_autograd.py.json"
+}

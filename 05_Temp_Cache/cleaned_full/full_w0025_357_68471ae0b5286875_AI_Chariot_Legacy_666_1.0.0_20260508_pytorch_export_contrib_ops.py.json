@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pytorch_export_contrib_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pytorch_export_contrib_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5351,
+  "content_sha256": "68471ae0b5286875e6645538a21e91a29ca3defcc0c91a4ff61543f1ff7df553",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 137,
+    "non_empty_lines": 107,
+    "char_count": 5351,
+    "preview_lines": [
+      "# Copyright (c) Microsoft Corporation. All rights reserved.",
+      "# Licensed under the MIT License.",
+      "\"\"\"",
+      "Support for registering ONNX Runtime's built-in contrib ops with",
+      "PyTorch-ONNX exporter (torch.onnx.export).",
+      "\"\"\"",
+      "import contextlib",
+      "import typing",
+      "try:",
+      "    # TODO(justinchuby): Create a function to alert users when torch is not installed"
+    ],
+    "imports": [
+      "import contextlib",
+      "import typing",
+      "import torch",
+      "from torch.onnx import symbolic_helper",
+      "from torch.onnx import symbolic_registry  # noqa: PLC0415"
+    ],
+    "classes": [],
+    "functions": [
+      "_reg",
+      "register",
+      "unregister"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_357_68471ae0b5286875_AI_Chariot_Legacy_666_1.0.0_20260508_pytorch_export_contrib_ops.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fractionfield.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fractionfield.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5776,
+  "content_sha256": "058e9e3a471f225ae62f568fe1c5e070a300a7bf1585b50ce346b925d818d6a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 177,
+    "non_empty_lines": 137,
+    "char_count": 5776,
+    "preview_lines": [
+      "\"\"\"Implementation of :class:`FractionField` class. \"\"\"",
+      "from sympy.polys.domains.compositedomain import CompositeDomain",
+      "from sympy.polys.domains.field import Field",
+      "from sympy.polys.polyerrors import CoercionFailed, GeneratorsError",
+      "from sympy.utilities import public",
+      "@public",
+      "class FractionField(Field, CompositeDomain):",
+      "    \"\"\"A class for representing multivariate rational function fields. \"\"\"",
+      "    is_FractionField = is_Frac = True",
+      "    has_assoc_Ring = True"
+    ],
+    "imports": [
+      "from sympy.polys.domains.compositedomain import CompositeDomain",
+      "from sympy.polys.domains.field import Field",
+      "from sympy.polys.polyerrors import CoercionFailed, GeneratorsError",
+      "from sympy.utilities import public",
+      "from sympy.polys.fields import FracField"
+    ],
+    "classes": [
+      "FractionField"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_242_058e9e3a471f225a_AI_Chariot_Legacy_666_1.0.0_20260508_fractionfield.py.json"
+}

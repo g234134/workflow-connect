@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 309,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tryconnection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tryconnection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1027,
+  "content_sha256": "08b1969773cfb6198c780282631b7fbd4a35f5ba91a3892e3b0698d5169274ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 25,
+    "char_count": 1027,
+    "preview_lines": [
+      "def try_connection(verbose, *args, **kwargs):",
+      "    import adodbapi",
+      "    dbconnect = adodbapi.connect",
+      "    try:",
+      "        s = dbconnect(*args, **kwargs)  # connect to server",
+      "        if verbose:",
+      "            print(\"Connected to:\", s.connection_string)",
+      "            print(\"which has tables:\", s.get_table_names())",
+      "        s.close()  # thanks, it worked, goodbye",
+      "    except adodbapi.DatabaseError as inst:"
+    ],
+    "imports": [
+      "import adodbapi"
+    ],
+    "classes": [],
+    "functions": [
+      "try_connection",
+      "try_operation_with_expected_exception"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_309_08b1969773cfb619_AI_Chariot_Legacy_666_1.0.0_20260508_tryconnection.py.json"
+}

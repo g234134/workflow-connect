@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spectral_norm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spectral_norm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15279,
+  "content_sha256": "fd07cce7bf05eba6be25560bb8d5baa38d1df94d4c43f9a3e02e45162ffa1246",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 366,
+    "non_empty_lines": 319,
+    "char_count": 15279,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Spectral Normalization from https://arxiv.org/abs/1802.05957.\"\"\"",
+      "from typing import Any, Optional, TypeVar",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.nn.modules import Module",
+      "__all__ = [",
+      "    \"SpectralNorm\",",
+      "    \"SpectralNormLoadStateDictPreHook\",",
+      "    \"SpectralNormStateDictHook\","
+    ],
+    "imports": [
+      "from typing import Any, Optional, TypeVar",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.nn.modules import Module"
+    ],
+    "classes": [
+      "SpectralNorm",
+      "SpectralNormLoadStateDictPreHook",
+      "SpectralNormStateDictHook"
+    ],
+    "functions": [
+      "spectral_norm",
+      "remove_spectral_norm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_140_fd07cce7bf05eba6_AI_Chariot_Legacy_666_1.0.0_20260508_spectral_norm.py.json"
+}

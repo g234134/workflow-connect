@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 342,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_remote_feature_flags.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_remote_feature_flags.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14374,
+  "content_sha256": "7ddc170cb87c50d7918485d434cfb3b706d1303f90ab6702cb25907f718da1f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 319,
+    "non_empty_lines": 272,
+    "char_count": 14374,
+    "preview_lines": [
+      "import httpx",
+      "import logging",
+      "import json",
+      "import urllib.parse",
+      "import asyncio",
+      "from datetime import datetime",
+      "from typing import Dict, Any, Callable, Tuple, Optional",
+      "from asgiref.sync import sync_to_async",
+      "from .types import RemoteFlagsConfig, SelectedVariant, RemoteFlagsResponse",
+      "from .utils import REQUEST_HEADERS, EXPOSURE_EVENT, prepare_common_query_params, generate_traceparent "
+    ],
+    "imports": [
+      "import httpx",
+      "import logging",
+      "import json",
+      "import urllib.parse",
+      "import asyncio",
+      "from datetime import datetime",
+      "from typing import Dict, Any, Callable, Tuple, Optional",
+      "from asgiref.sync import sync_to_async",
+      "from .types import RemoteFlagsConfig, SelectedVariant, RemoteFlagsResponse",
+      "from .utils import REQUEST_HEADERS, EXPOSURE_EVENT, prepare_common_query_params, generate_traceparent"
+    ],
+    "classes": [
+      "RemoteFeatureFlagsProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_342_7ddc170cb87c50d7_AI_Chariot_Legacy_666_1.0.0_20260508_remote_feature_flags.py.json"
+}

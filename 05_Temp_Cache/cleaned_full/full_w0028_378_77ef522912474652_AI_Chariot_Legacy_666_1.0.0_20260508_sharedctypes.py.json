@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 378,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sharedctypes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sharedctypes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6306,
+  "content_sha256": "77ef522912474652490b7df523112858e51721e63dcf109b8567a35ce9b31b0d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 240,
+    "non_empty_lines": 198,
+    "char_count": 6306,
+    "preview_lines": [
+      "#",
+      "# Module which supports allocation of ctypes objects from shared memory",
+      "#",
+      "# multiprocessing/sharedctypes.py",
+      "#",
+      "# Copyright (c) 2006-2008, R Oudkerk",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "#",
+      "import ctypes",
+      "import weakref"
+    ],
+    "imports": [
+      "import ctypes",
+      "import weakref",
+      "from . import heap",
+      "from . import get_context",
+      "from .context import reduction, assert_spawning"
+    ],
+    "classes": [
+      "SynchronizedBase",
+      "Synchronized",
+      "SynchronizedArray",
+      "SynchronizedString"
+    ],
+    "functions": [
+      "_new_value",
+      "RawValue",
+      "RawArray",
+      "Value",
+      "Array",
+      "copy",
+      "synchronized",
+      "reduce_ctype",
+      "rebuild_ctype",
+      "make_property",
+      "get",
+      "set"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_378_77ef522912474652_AI_Chariot_Legacy_666_1.0.0_20260508_sharedctypes.py.json"
+}

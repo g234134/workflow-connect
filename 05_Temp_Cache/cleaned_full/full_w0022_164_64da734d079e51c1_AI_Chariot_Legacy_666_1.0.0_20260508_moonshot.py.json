@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 164,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_moonshot.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_moonshot.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6142,
+  "content_sha256": "64da734d079e51c178bfd9acb63145a872d1844ec63b6d5cf5119b13ecb5b3d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 187,
+    "non_empty_lines": 144,
+    "char_count": 6076,
+    "preview_lines": [
+      "\"\"\"Wrapper around Moonshot chat models.\"\"\"",
+      "from typing import Dict",
+      "from langchain_core.utils import (",
+      "    convert_to_secret_str,",
+      "    get_from_dict_or_env,",
+      "    pre_init,",
+      ")",
+      "from langchain_community.chat_models import ChatOpenAI",
+      "from langchain_community.llms.moonshot import MOONSHOT_SERVICE_URL_BASE, MoonshotCommon",
+      "class MoonshotChat(MoonshotCommon, ChatOpenAI):  # type: ignore[misc]"
+    ],
+    "imports": [
+      "from typing import Dict",
+      "from langchain_core.utils import (",
+      "from langchain_community.chat_models import ChatOpenAI",
+      "from langchain_community.llms.moonshot import MOONSHOT_SERVICE_URL_BASE, MoonshotCommon",
+      "from langchain_community.chat_models import MoonshotChat",
+      "import openai"
+    ],
+    "classes": [
+      "MoonshotChat"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_164_64da734d079e51c1_AI_Chariot_Legacy_666_1.0.0_20260508_moonshot.py.json"
+}

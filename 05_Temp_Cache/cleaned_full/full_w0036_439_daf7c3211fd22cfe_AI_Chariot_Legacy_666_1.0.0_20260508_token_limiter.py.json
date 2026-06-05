@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 439,
+  "generated_at": "2026-05-08T18:46:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_token_limiter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_token_limiter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2740,
+  "content_sha256": "daf7c3211fd22cfe1b84e8b35c48229fa6e0d18a906dcbce791196e2e3c2acf8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 59,
+    "char_count": 2740,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from collections.abc import Sequence",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelRequest, ModelResponse, ToolResultsEvent",
+      "from autogen.beta.middleware.base import BaseMiddleware, LLMCall, MiddlewareFactory",
+      "class TokenLimiter(MiddlewareFactory):",
+      "    \"\"\"Truncate message history to fit within a token budget.",
+      "    Uses a simple character-based estimate (``chars_per_token`` chars per token)"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelRequest, ModelResponse, ToolResultsEvent",
+      "from autogen.beta.middleware.base import BaseMiddleware, LLMCall, MiddlewareFactory"
+    ],
+    "classes": [
+      "TokenLimiter",
+      "_TokenLimiter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_439_daf7c3211fd22cfe_AI_Chariot_Legacy_666_1.0.0_20260508_token_limiter.py.json"
+}

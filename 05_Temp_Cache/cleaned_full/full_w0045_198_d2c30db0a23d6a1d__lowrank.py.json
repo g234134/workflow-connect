@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 198,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lowrank.py",
+  "name": "_lowrank.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11194,
+  "content_sha256": "d2c30db0a23d6a1d9b223b1c37290851f7847790f928c067aa5d595051f52750",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 298,
+    "non_empty_lines": 237,
+    "char_count": 11194,
+    "preview_lines": [
+      "\"\"\"Implement various linear algebra algorithms for low rank matrices.",
+      "\"\"\"",
+      "__all__ = [\"svd_lowrank\", \"pca_lowrank\"]",
+      "from typing import Optional, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from . import _linalg_utils as _utils",
+      "from .overrides import handle_torch_function, has_torch_function",
+      "def get_approximate_basis(",
+      "    A: Tensor, q: int, niter: Optional[int] = 2, M: Optional[Tensor] = None"
+    ],
+    "imports": [
+      "from typing import Optional, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from . import _linalg_utils as _utils",
+      "from .overrides import handle_torch_function, has_torch_function"
+    ],
+    "classes": [],
+    "functions": [
+      "get_approximate_basis",
+      "svd_lowrank",
+      "_svd_lowrank",
+      "pca_lowrank"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_198_d2c30db0a23d6a1d__lowrank.py.json"
+}

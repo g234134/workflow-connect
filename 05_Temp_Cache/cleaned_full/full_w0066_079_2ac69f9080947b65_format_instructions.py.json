@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 79,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\output_parsers\\format_instructions.py",
+  "name": "format_instructions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1125,
+  "content_sha256": "2ac69f9080947b6577b7c1b9e807c4b4f53dec1011c104a944d9e83233e6ea79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 12,
+    "char_count": 1122,
+    "preview_lines": [
+      "\"\"\"Format instructions.\"\"\"",
+      "JSON_FORMAT_INSTRUCTIONS = \"\"\"STRICT OUTPUT FORMAT:",
+      "- Return only the JSON value that conforms to the schema. Do not include any additional text, explanations, headings, or separators.",
+      "- Do not wrap the JSON in Markdown or code fences (no ``` or ```json).",
+      "- Do not prepend or append any text (e.g., do not write \"Here is the JSON:\").",
+      "- The response must be a single top-level JSON value exactly as required by the schema (object/array/etc.), with no trailing commas or comments.",
+      "The output should be formatted as a JSON instance that conforms to the JSON schema below.",
+      "As an example, for the schema {{\"properties\": {{\"foo\": {{\"title\": \"Foo\", \"description\": \"a list of strings\", \"type\": \"array\", \"items\": {{\"type\": \"string\"}}}}}}, \"required\": [\"foo\"]}} the object {{\"foo\": [\"bar\", \"baz\"]}} is a well-formatted instance of the schema. The object {{\"properties\": {{\"foo\": [\"bar\", \"baz\"]}}}} is not well-formatted.",
+      "Here is the output schema (shown in a code block for readability only ??do not include any backticks or Markdown in your output):",
+      "```"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_079_2ac69f9080947b65_format_instructions.py.json"
+}

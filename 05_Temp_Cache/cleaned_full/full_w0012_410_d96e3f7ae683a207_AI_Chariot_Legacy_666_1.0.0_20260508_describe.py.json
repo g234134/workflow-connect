@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_describe.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_describe.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10554,
+  "content_sha256": "d96e3f7ae683a207446b9676e373fa86a9f06d762b1cfc990cc76693303d4462",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 375,
+    "non_empty_lines": 307,
+    "char_count": 10554,
+    "preview_lines": [
+      "\"\"\"",
+      "Module responsible for execution of NDFrame.describe() method.",
+      "Method NDFrame.describe() delegates actual execution to function describe_ndframe().",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from abc import (",
+      "    ABC,",
+      "    abstractmethod,",
+      ")",
+      "from typing import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import (",
+      "from typing import (",
+      "import numpy as np",
+      "from pandas._typing import (",
+      "from pandas.util._validators import validate_percentile",
+      "from pandas.core.dtypes.common import (",
+      "from pandas.core.dtypes.dtypes import (",
+      "from pandas.core.arrays.floating import Float64Dtype",
+      "from pandas.core.reshape.concat import concat",
+      "from pandas.io.formats.format import format_percentiles",
+      "from collections.abc import (",
+      "from pandas import ("
+    ],
+    "classes": [
+      "NDFrameDescriberAbstract",
+      "SeriesDescriber",
+      "DataFrameDescriber"
+    ],
+    "functions": [
+      "describe_ndframe",
+      "reorder_columns",
+      "describe_numeric_1d",
+      "describe_categorical_1d",
+      "describe_timestamp_1d",
+      "select_describe_func",
+      "_refine_percentiles"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_410_d96e3f7ae683a207_AI_Chariot_Legacy_666_1.0.0_20260508_describe.py.json"
+}

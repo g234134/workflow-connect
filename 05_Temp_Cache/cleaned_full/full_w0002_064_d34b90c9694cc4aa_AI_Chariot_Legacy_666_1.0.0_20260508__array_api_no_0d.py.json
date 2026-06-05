@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__array_api_no_0d.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__array_api_no_0d.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4556,
+  "content_sha256": "d34b90c9694cc4aa46947199906ccd99bc18186dafad68cf57f3b78f6604c42f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 78,
+    "char_count": 4556,
+    "preview_lines": [
+      "\"\"\"",
+      "Extra testing functions that forbid 0d-input, see #21044",
+      "While the xp_assert_* functions generally aim to follow the conventions of the",
+      "underlying `xp` library, NumPy in particular is inconsistent in its handling",
+      "of scalars vs. 0d-arrays, see https://github.com/numpy/numpy/issues/24897.",
+      "For example, this means that the following operations (as of v2.0.1) currently",
+      "return scalars, even though a 0d-array would often be more appropriate:",
+      "    import numpy as np",
+      "    np.array(0) * 2     # scalar, not 0d array",
+      "    - np.array(0)       # scalar, not 0d-array"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy._lib._array_api import array_namespace, is_numpy",
+      "from scipy._lib._array_api import (xp_assert_close as xp_assert_close_base,"
+    ],
+    "classes": [],
+    "functions": [
+      "_check_scalar",
+      "xp_assert_equal",
+      "xp_assert_close",
+      "xp_assert_less",
+      "assert_array_almost_equal",
+      "assert_almost_equal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_064_d34b90c9694cc4aa_AI_Chariot_Legacy_666_1.0.0_20260508__array_api_no_0d.py.json"
+}

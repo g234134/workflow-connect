@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 90,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec256\\missing_vld1_neon.h",
+  "name": "missing_vld1_neon.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 14011,
+  "content_sha256": "569d9fbd2324fbd3ad0c379a149c8983bc83b06c7969188670e92cdf3f688b44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 452,
+    "non_empty_lines": 395,
+    "char_count": 14011,
+    "preview_lines": [
+      "/* Workaround for missing vld1_*_x2 and vst1_*_x2 intrinsics in gcc-7.  */",
+      "__extension__ extern __inline uint8x8x2_t",
+      "__attribute__ ((__always_inline__, __gnu_inline__, __artificial__))",
+      "vld1_u8_x2 (const uint8_t *__a)",
+      "{",
+      "  uint8x8x2_t ret;",
+      "  asm volatile(\"ld1 {%S0.8b - %T0.8b}, %1\" : \"=w\" (ret) : \"Q\"(*__a));",
+      "  return ret;",
+      "}",
+      "__extension__ extern __inline int8x8x2_t"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_090_569d9fbd2324fbd3_missing_vld1_neon.h.json"
+}

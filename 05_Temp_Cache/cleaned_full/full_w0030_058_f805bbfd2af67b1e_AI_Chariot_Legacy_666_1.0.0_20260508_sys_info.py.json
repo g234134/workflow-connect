@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sys_info.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sys_info.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3833,
+  "content_sha256": "f805bbfd2af67b1ed9b661d10c6c4b17a7b280341f56b09d72596e48e8f4eb72",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 137,
+    "non_empty_lines": 109,
+    "char_count": 3833,
+    "preview_lines": [
+      "\"\"\"Print information about the system and langchain packages for debugging purposes.\"\"\"",
+      "import pkgutil",
+      "import platform",
+      "import re",
+      "import sys",
+      "from collections.abc import Sequence",
+      "from importlib import metadata, util",
+      "def _get_sub_deps(packages: Sequence[str]) -> list[str]:",
+      "    \"\"\"Get any specified sub-dependencies.\"\"\"",
+      "    sub_deps = set()"
+    ],
+    "imports": [
+      "import pkgutil",
+      "import platform",
+      "import re",
+      "import sys",
+      "from collections.abc import Sequence",
+      "from importlib import metadata, util"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_sub_deps",
+      "print_sys_info"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_058_f805bbfd2af67b1e_AI_Chariot_Legacy_666_1.0.0_20260508_sys_info.py.json"
+}

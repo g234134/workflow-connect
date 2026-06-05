@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 50,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cubic_scheduler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cubic_scheduler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3957,
+  "content_sha256": "e370025a33e3ab20c7002e8e68053db777150b37ab70de4fcca092ab653d42b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 113,
+    "non_empty_lines": 93,
+    "char_count": 3957,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import warnings",
+      "from .base_scheduler import BaseScheduler",
+      "__all__ = [\"CubicSL\"]",
+      "def _clamp(x, lo, hi):",
+      "    return max(lo, min(hi, x))",
+      "class CubicSL(BaseScheduler):",
+      "    r\"\"\"Sets the sparsity level of each parameter group to the final sl",
+      "    plus a given exponential function.",
+      "    .. math::"
+    ],
+    "imports": [
+      "import warnings",
+      "from .base_scheduler import BaseScheduler"
+    ],
+    "classes": [
+      "CubicSL"
+    ],
+    "functions": [
+      "_clamp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_050_e370025a33e3ab20_AI_Chariot_Legacy_666_1.0.0_20260508_cubic_scheduler.py.json"
+}

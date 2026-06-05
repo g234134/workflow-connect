@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_add_crew_to_flow.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_add_crew_to_flow.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2731,
+  "content_sha256": "50eedf459d6dbdde5841dbdb85ac494cffbf44701c7057ec8b12e92dbab141a8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 56,
+    "char_count": 2731,
+    "preview_lines": [
+      "from pathlib import Path",
+      "import click",
+      "from crewai.cli.utils import copy_template",
+      "from crewai.utilities.printer import PRINTER",
+      "def add_crew_to_flow(crew_name: str) -> None:",
+      "    \"\"\"Add a new crew to the current flow.\"\"\"",
+      "    # Check if pyproject.toml exists in the current directory",
+      "    if not Path(\"pyproject.toml\").exists():",
+      "        PRINTER.print(",
+      "            \"This command must be run from the root of a flow project.\", color=\"red\""
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "import click",
+      "from crewai.cli.utils import copy_template",
+      "from crewai.utilities.printer import PRINTER"
+    ],
+    "classes": [],
+    "functions": [
+      "add_crew_to_flow",
+      "create_embedded_crew"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_221_50eedf459d6dbdde_AI_Chariot_Legacy_666_1.0.0_20260508_add_crew_to_flow.py.json"
+}

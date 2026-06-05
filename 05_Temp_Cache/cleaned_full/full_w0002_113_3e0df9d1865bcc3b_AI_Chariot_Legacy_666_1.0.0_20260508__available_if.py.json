@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__available_if.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__available_if.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3041,
+  "content_sha256": "3e0df9d1865bcc3b6a62e286c92a661426263fd1d191651e94405792cb2c7a62",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 79,
+    "char_count": 3041,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "from functools import update_wrapper, wraps",
+      "from types import MethodType",
+      "class _AvailableIfDescriptor:",
+      "    \"\"\"Implements a conditional property using the descriptor protocol.",
+      "    Using this class to create a decorator will raise an ``AttributeError``",
+      "    if check(self) returns a falsey value. Note that if check raises an error",
+      "    this will also result in hasattr returning false.",
+      "    See https://docs.python.org/3/howto/descriptor.html for an explanation of"
+    ],
+    "imports": [
+      "from functools import update_wrapper, wraps",
+      "from types import MethodType"
+    ],
+    "classes": [
+      "_AvailableIfDescriptor"
+    ],
+    "functions": [
+      "available_if"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_113_3e0df9d1865bcc3b_AI_Chariot_Legacy_666_1.0.0_20260508__available_if.py.json"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 39,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\autograd_function_db.py",
+  "name": "autograd_function_db.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20033,
+  "content_sha256": "7734bbe88f0fa8262acd8c2ff313ba761a386f1bcc1943f6b23e7b9bd98cefcd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 630,
+    "non_empty_lines": 529,
+    "char_count": 20033,
+    "preview_lines": [
+      "import torch",
+      "from functools import partial",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.opinfo.core import (",
+      "    OpInfo,",
+      "    SampleInput,",
+      ")",
+      "from torch.testing._internal.common_dtype import all_types_and",
+      "import numpy as np",
+      "# Note: [autograd.Function db]"
+    ],
+    "imports": [
+      "import torch",
+      "from functools import partial",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.opinfo.core import (",
+      "from torch.testing._internal.common_dtype import all_types_and",
+      "import numpy as np"
+    ],
+    "classes": [
+      "NumpyCube",
+      "CubeGenVmap",
+      "NumpyCubeNotComposable",
+      "NumpyMul",
+      "MulGenVmap",
+      "NumpyExp_",
+      "NumpySort",
+      "SortGenVmap",
+      "NumpyTake",
+      "TakeGenVmap",
+      "Select",
+      "SelectGenVmap",
+      "ScaleGradGenVmap",
+      "ZeroGradientsGenVmap",
+      "ForwardHasDefaultArgs"
+    ],
+    "functions": [
+      "to_numpy",
+      "sample_inputs_numpy_cube",
+      "sample_inputs_numpy_mul",
+      "sample_inputs_numpy_sort",
+      "sample_inputs_numpy_take",
+      "sample_inputs_select",
+      "sample_inputs_forward_default_args"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_039_7734bbe88f0fa826_autograd_function_db.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 362,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_support_alternative_backends.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_support_alternative_backends.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4535,
+  "content_sha256": "e266aa1ac333998efadc3c49cc09e9413c068546d4634e7d6cde5312e29e3c58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 113,
+    "non_empty_lines": 91,
+    "char_count": 4535,
+    "preview_lines": [
+      "import pytest",
+      "from scipy.special._support_alternative_backends import (get_array_special_func,",
+      "                                                         array_special_func_map)",
+      "from scipy.conftest import array_api_compatible",
+      "from scipy import special",
+      "from scipy._lib._array_api_no_0d import xp_assert_close",
+      "from scipy._lib._array_api import is_jax, is_torch, SCIPY_DEVICE",
+      "from scipy._lib.array_api_compat import numpy as np",
+      "try:",
+      "    import array_api_strict"
+    ],
+    "imports": [
+      "import pytest",
+      "from scipy.special._support_alternative_backends import (get_array_special_func,",
+      "from scipy.conftest import array_api_compatible",
+      "from scipy import special",
+      "from scipy._lib._array_api_no_0d import xp_assert_close",
+      "from scipy._lib._array_api import is_jax, is_torch, SCIPY_DEVICE",
+      "from scipy._lib.array_api_compat import numpy as np",
+      "import array_api_strict"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dispatch_to_unrecognize_library",
+      "test_rel_entr_generic",
+      "test_support_alternative_backends",
+      "test_chdtr_gh21311"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_362_e266aa1ac333998e_AI_Chariot_Legacy_666_1.0.0_20260508_test_support_alternative_backends.py.json"
+}

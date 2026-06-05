@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 249,
+  "generated_at": "2026-05-08T18:47:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\solvers\\benchmarks\\bench_solvers.py",
+  "name": "bench_solvers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 288,
+  "content_sha256": "6552b64c85b45e35910c17b1d39e329a6565481430f912018442f5c12d990265",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 288,
+    "preview_lines": [
+      "from sympy.core.symbol import Symbol",
+      "from sympy.matrices.dense import (eye, zeros)",
+      "from sympy.solvers.solvers import solve_linear_system",
+      "N = 8",
+      "M = zeros(N, N + 1)",
+      "M[:, :N] = eye(N)",
+      "S = [Symbol('A%i' % i) for i in range(N)]",
+      "def timeit_linsolve_trivial():",
+      "    solve_linear_system(M, *S)"
+    ],
+    "imports": [
+      "from sympy.core.symbol import Symbol",
+      "from sympy.matrices.dense import (eye, zeros)",
+      "from sympy.solvers.solvers import solve_linear_system"
+    ],
+    "classes": [],
+    "functions": [
+      "timeit_linsolve_trivial"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_249_6552b64c85b45e35_bench_solvers.py.json"
+}

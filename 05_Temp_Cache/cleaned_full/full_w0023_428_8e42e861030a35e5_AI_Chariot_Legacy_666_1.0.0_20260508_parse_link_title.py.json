@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_parse_link_title.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_parse_link_title.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2273,
+  "content_sha256": "8e42e861030a35e5fd6ef5901e4692ae8884a36ec7ca590450d9a3f31051969e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 59,
+    "char_count": 2273,
+    "preview_lines": [
+      "\"\"\"Parse link title\"\"\"",
+      "from ..common.utils import charCodeAt, unescapeAll",
+      "class _State:",
+      "    __slots__ = (\"can_continue\", \"marker\", \"ok\", \"pos\", \"str\")",
+      "    def __init__(self) -> None:",
+      "        self.ok = False",
+      "        \"\"\"if `true`, this is a valid link title\"\"\"",
+      "        self.can_continue = False",
+      "        \"\"\"if `true`, this link can be continued on the next line\"\"\"",
+      "        self.pos = 0"
+    ],
+    "imports": [
+      "from ..common.utils import charCodeAt, unescapeAll"
+    ],
+    "classes": [
+      "_State"
+    ],
+    "functions": [
+      "parseLinkTitle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_428_8e42e861030a35e5_AI_Chariot_Legacy_666_1.0.0_20260508_parse_link_title.py.json"
+}

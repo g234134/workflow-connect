@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_issue208.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_issue208.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 338,
+  "content_sha256": "c5ac544e8410abae89ccc4f825f97026bb8013dcd10c6f8b967f75a19db11703",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 10,
+    "non_empty_lines": 8,
+    "char_count": 338,
+    "preview_lines": [
+      "from thinc.api import Linear, chain",
+      "def test_issue208():",
+      "    \"\"\"Test issue that was caused by trying to flatten nested chains.\"\"\"",
+      "    layer1 = Linear(nO=9, nI=3)",
+      "    layer2 = Linear(nO=12, nI=9)",
+      "    layer3 = Linear(nO=5, nI=12)",
+      "    model = chain(layer1, chain(layer2, layer3)).initialize()",
+      "    assert model.get_dim(\"nO\") == 5"
+    ],
+    "imports": [
+      "from thinc.api import Linear, chain"
+    ],
+    "classes": [],
+    "functions": [
+      "test_issue208"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_148_c5ac544e8410abae_AI_Chariot_Legacy_666_1.0.0_20260508_test_issue208.py.json"
+}

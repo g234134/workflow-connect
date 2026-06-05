@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_findstatic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_findstatic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1643,
+  "content_sha256": "3f5d8617eebc6c8d5cb15b632f42760f029c117f093417851e691181ba659ee2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 43,
+    "char_count": 1643,
+    "preview_lines": [
+      "import os",
+      "from django.contrib.staticfiles import finders",
+      "from django.core.management.base import LabelCommand",
+      "class Command(LabelCommand):",
+      "    help = \"Finds the absolute paths for the given static file(s).\"",
+      "    label = \"staticfile\"",
+      "    def add_arguments(self, parser):",
+      "        super().add_arguments(parser)",
+      "        parser.add_argument(",
+      "            \"--first\","
+    ],
+    "imports": [
+      "import os",
+      "from django.contrib.staticfiles import finders",
+      "from django.core.management.base import LabelCommand"
+    ],
+    "classes": [
+      "Command"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_007_3f5d8617eebc6c8d_AI_Chariot_Legacy_666_1.0.0_20260508_findstatic.py.json"
+}

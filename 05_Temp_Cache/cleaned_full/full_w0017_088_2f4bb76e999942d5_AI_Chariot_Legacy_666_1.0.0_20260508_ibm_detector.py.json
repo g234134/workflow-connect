@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ibm_detector.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ibm_detector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28129,
+  "content_sha256": "2f4bb76e999942d5b36fe2346a35449800fa1c2853e8ceabb549e7f34b837943",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 759,
+    "non_empty_lines": 636,
+    "char_count": 28129,
+    "preview_lines": [
+      "# +-------------------------------------------------------------+",
+      "#",
+      "#           Use IBM Guardrails Detector for your LLM calls",
+      "#           Based on IBM's FMS Guardrails",
+      "#",
+      "# +-------------------------------------------------------------+",
+      "import os",
+      "from datetime import datetime",
+      "from typing import Any, AsyncGenerator, Dict, List, Optional, Union",
+      "import httpx"
+    ],
+    "imports": [
+      "import os",
+      "from datetime import datetime",
+      "from typing import Any, AsyncGenerator, Dict, List, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching.caching import DualCache",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.ibm import (",
+      "from litellm.types.utils import CallTypesLiteral, GuardrailStatus, ModelResponseStream"
+    ],
+    "classes": [
+      "IBMGuardrailDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_088_2f4bb76e999942d5_AI_Chariot_Legacy_666_1.0.0_20260508_ibm_detector.py.json"
+}

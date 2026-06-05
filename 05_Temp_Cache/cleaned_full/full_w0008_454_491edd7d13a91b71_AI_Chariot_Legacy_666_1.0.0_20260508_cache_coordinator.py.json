@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 454,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cache_coordinator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cache_coordinator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6965,
+  "content_sha256": "491edd7d13a91b710e30d39b31ad714735da0b2e3af78d134b878eff347c1dd7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 163,
+    "char_count": 6965,
+    "preview_lines": [
+      "\"\"\"",
+      "Event-driven cache coordinator to prevent cache stampede.",
+      "Use this when many requests can miss the same cache key at once (e.g. after",
+      "expiry or restart). Without coordination, they would all run the expensive",
+      "load (DB query, API call) in parallel and overload the backend.",
+      "This module ensures only one request performs the load; the rest wait for a",
+      "signal and then read the freshly cached value. Reuse it for any cache-aside",
+      "pattern: global spend, feature flags, config, or other shared read-through data.",
+      "\"\"\"",
+      "import asyncio"
+    ],
+    "imports": [
+      "import asyncio",
+      "import time",
+      "from typing import Any, Awaitable, Callable, Optional, Protocol, TypeVar",
+      "from litellm._logging import verbose_proxy_logger"
+    ],
+    "classes": [
+      "AsyncCacheProtocol",
+      "EventDrivenCacheCoordinator"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_454_491edd7d13a91b71_AI_Chariot_Legacy_666_1.0.0_20260508_cache_coordinator.py.json"
+}

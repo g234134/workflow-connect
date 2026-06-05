@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__workload.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__workload.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12825,
+  "content_sha256": "aebe2a6bbc84655986c7c35bca46ac1d1e0b735b3b65b77b34c8ea412a9a3e1b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 313,
+    "non_empty_lines": 253,
+    "char_count": 12825,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import time",
+      "import threading",
+      "from typing import Any, Callable, TypedDict, cast",
+      "from pathlib import Path",
+      "from typing_extensions import Literal, NotRequired",
+      "import httpx",
+      "from .._exceptions import OAuthError, OpenAIError, SubjectTokenProviderError",
+      "from .._utils._sync import to_thread",
+      "TOKEN_EXCHANGE_GRANT_TYPE = \"urn:ietf:params:oauth:grant-type:token-exchange\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import time",
+      "import threading",
+      "from typing import Any, Callable, TypedDict, cast",
+      "from pathlib import Path",
+      "from typing_extensions import Literal, NotRequired",
+      "import httpx",
+      "from .._exceptions import OAuthError, OpenAIError, SubjectTokenProviderError",
+      "from .._utils._sync import to_thread"
+    ],
+    "classes": [
+      "SubjectTokenProvider",
+      "WorkloadIdentity",
+      "WorkloadIdentityAuth"
+    ],
+    "functions": [
+      "k8s_service_account_token_provider",
+      "azure_managed_identity_token_provider",
+      "gcp_id_token_provider"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_120_aebe2a6bbc846559_AI_Chariot_Legacy_666_1.0.0_20260508__workload.py.json"
+}

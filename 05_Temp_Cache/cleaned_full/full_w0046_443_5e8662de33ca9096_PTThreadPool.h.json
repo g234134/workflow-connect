@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 443,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\PTThreadPool.h",
+  "name": "PTThreadPool.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 408,
+  "content_sha256": "5e8662de33ca9096564e0b2b25233d26185029a6b454027929e6d062bb9da852",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 13,
+    "char_count": 408,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/Parallel.h>",
+      "#include <c10/core/thread_pool.h>",
+      "namespace at {",
+      "class TORCH_API PTThreadPool : public c10::ThreadPool {",
+      " public:",
+      "  explicit PTThreadPool(int pool_size, int numa_node_id = -1)",
+      "      : c10::ThreadPool(pool_size, numa_node_id, []() {",
+      "          c10::setThreadName(\"PTThreadPool\");",
+      "          at::init_num_threads();"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_443_5e8662de33ca9096_PTThreadPool.h.json"
+}

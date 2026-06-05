@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\qdrant\\tests\\integration_tests\\qdrant_vector_store\\test_from_texts.py",
+  "name": "test_from_texts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14683,
+  "content_sha256": "2536adc22480c5d9c06c3e0d934c88ae6e6888e3be02df7d90e1098e08ccfea4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 385,
+    "non_empty_lines": 347,
+    "char_count": 14680,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import uuid",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from qdrant_client import models",
+      "from langchain_qdrant import QdrantVectorStore, RetrievalMode",
+      "from langchain_qdrant.qdrant import QdrantVectorStoreError",
+      "from tests.integration_tests.common import (",
+      "    ConsistentFakeEmbeddings,",
+      "    ConsistentFakeSparseEmbeddings,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import uuid",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from qdrant_client import models",
+      "from langchain_qdrant import QdrantVectorStore, RetrievalMode",
+      "from langchain_qdrant.qdrant import QdrantVectorStoreError",
+      "from tests.integration_tests.common import (",
+      "from tests.integration_tests.fixtures import qdrant_locations, retrieval_modes"
+    ],
+    "classes": [],
+    "functions": [
+      "test_vectorstore_from_texts",
+      "test_qdrant_from_texts_stores_ids",
+      "test_qdrant_from_texts_stores_embeddings_as_named_vectors",
+      "test_qdrant_from_texts_reuses_same_collection",
+      "test_qdrant_from_texts_raises_error_on_different_dimensionality",
+      "test_qdrant_from_texts_raises_error_on_different_vector_name",
+      "test_qdrant_from_texts_raises_error_on_different_distance",
+      "test_qdrant_from_texts_recreates_collection_on_force_recreate",
+      "test_qdrant_from_texts_stores_metadatas",
+      "test_from_texts_passed_optimizers_config_and_on_disk_payload"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_259_2536adc22480c5d9_test_from_texts.py.json"
+}

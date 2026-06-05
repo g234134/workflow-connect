@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 175,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_teams.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_teams.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5810,
+  "content_sha256": "4b12826c5e4c78ecd7e643161d2d8a75b075b45f85c8d242b387279cc3577e56",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 138,
+    "char_count": 5784,
+    "preview_lines": [
+      "\"\"\"Team management commands for LiteLLM CLI.\"\"\"",
+      "from typing import Any, Dict, List, Optional",
+      "import click",
+      "import requests",
+      "from rich.console import Console",
+      "from rich.table import Table",
+      "from litellm.proxy.client import Client",
+      "@click.group()",
+      "def teams():",
+      "    \"\"\"Manage teams and team assignments\"\"\""
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Optional",
+      "import click",
+      "import requests",
+      "from rich.console import Console",
+      "from rich.table import Table",
+      "from litellm.proxy.client import Client",
+      "from .auth import prompt_team_selection"
+    ],
+    "classes": [],
+    "functions": [
+      "teams",
+      "display_teams_table",
+      "list",
+      "available",
+      "assign_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_175_4b12826c5e4c78ec_AI_Chariot_Legacy_666_1.0.0_20260508_teams.py.json"
+}

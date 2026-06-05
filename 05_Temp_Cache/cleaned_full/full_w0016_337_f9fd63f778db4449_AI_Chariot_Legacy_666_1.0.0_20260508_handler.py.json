@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 337,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10562,
+  "content_sha256": "f9fd63f778db4449b6e41dfb3eaebae323ba3ebacd0e4b08100209779c050fb4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 295,
+    "non_empty_lines": 244,
+    "char_count": 10562,
+    "preview_lines": [
+      "\"\"\"",
+      "Handler for A2A to LiteLLM completion bridge.",
+      "Routes A2A requests through litellm.acompletion based on custom_llm_provider.",
+      "A2A Streaming Events (in order):",
+      "1. Task event (kind: \"task\") - Initial task creation with status \"submitted\"",
+      "2. Status update (kind: \"status-update\") - Status change to \"working\"",
+      "3. Artifact update (kind: \"artifact-update\") - Content/artifact delivery",
+      "4. Status update (kind: \"status-update\") - Final status \"completed\" with final=true",
+      "\"\"\"",
+      "from typing import Any, AsyncIterator, Dict, Optional"
+    ],
+    "imports": [
+      "from typing import Any, AsyncIterator, Dict, Optional",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.a2a_protocol.litellm_completion_bridge.transformation import (",
+      "from litellm.a2a_protocol.providers.config_manager import A2AProviderConfigManager"
+    ],
+    "classes": [
+      "A2ACompletionBridgeHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_337_f9fd63f778db4449_AI_Chariot_Legacy_666_1.0.0_20260508_handler.py.json"
+}

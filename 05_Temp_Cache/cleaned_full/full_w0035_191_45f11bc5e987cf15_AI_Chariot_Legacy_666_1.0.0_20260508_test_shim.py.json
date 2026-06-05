@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 191,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_shim.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_shim.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 980,
+  "content_sha256": "45f11bc5e987cf15b1076b0f1f8a113971582168d210c614d8d9596b60fbe624",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 24,
+    "char_count": 980,
+    "preview_lines": [
+      "from typing import List",
+      "from thinc.shims.shim import Shim",
+      "from ..util import make_tempdir",
+      "class MockShim(Shim):",
+      "    def __init__(self, data: List[int]):",
+      "        super().__init__(None, config=None, optimizer=None)",
+      "        self.data = data",
+      "    def to_bytes(self):",
+      "        return bytes(self.data)",
+      "    def from_bytes(self, data: bytes) -> \"MockShim\":"
+    ],
+    "imports": [
+      "from typing import List",
+      "from thinc.shims.shim import Shim",
+      "from ..util import make_tempdir"
+    ],
+    "classes": [
+      "MockShim"
+    ],
+    "functions": [
+      "test_shim_can_roundtrip_with_path",
+      "test_shim_can_roundtrip_with_path_subclass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_191_45f11bc5e987cf15_AI_Chariot_Legacy_666_1.0.0_20260508_test_shim.py.json"
+}

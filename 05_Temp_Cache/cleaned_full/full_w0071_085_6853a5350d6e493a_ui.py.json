@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\graph\\ui.py",
+  "name": "ui.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6823,
+  "content_sha256": "6853a5350d6e493a4a0910f7b00090e848a700474170177aa46db3d6da34b543",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 173,
+    "char_count": 6820,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import Any, Literal, cast",
+      "from uuid import uuid4",
+      "from langchain_core.messages import AnyMessage",
+      "from typing_extensions import TypedDict",
+      "from langgraph.config import get_config, get_stream_writer",
+      "from langgraph.constants import CONF",
+      "__all__ = (",
+      "    \"UIMessage\",",
+      "    \"RemoveUIMessage\","
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Literal, cast",
+      "from uuid import uuid4",
+      "from langchain_core.messages import AnyMessage",
+      "from typing_extensions import TypedDict",
+      "from langgraph.config import get_config, get_stream_writer",
+      "from langgraph.constants import CONF",
+      "from the current state.",
+      "from langgraph._internal._constants import CONFIG_KEY_SEND",
+      "from langgraph._internal._constants import CONFIG_KEY_SEND"
+    ],
+    "classes": [
+      "UIMessage",
+      "RemoveUIMessage"
+    ],
+    "functions": [
+      "push_ui_message",
+      "delete_ui_message",
+      "ui_message_reducer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_085_6853a5350d6e493a_ui.py.json"
+}

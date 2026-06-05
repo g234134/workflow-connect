@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 414,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_deploy.py",
+  "name": "_deploy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3609,
+  "content_sha256": "542df0a2df85df14f4005d6ea5110a9c2b788463f3719f3b819a18f1d7e8b0f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 85,
+    "char_count": 3609,
+    "preview_lines": [
+      "import io",
+      "import torch",
+      "from torch.package import Importer, OrderedImporter, PackageImporter, sys_importer",
+      "from torch.package._package_pickler import create_pickler",
+      "from torch.package._package_unpickler import PackageUnpickler",
+      "from torch.serialization import _maybe_decode_ascii",
+      "def _save_storages(importer, obj):",
+      "    serialized_storages = []",
+      "    serialized_dtypes = []",
+      "    importer = importer if isinstance(importer, torch.package.PackageImporter) else None"
+    ],
+    "imports": [
+      "import io",
+      "import torch",
+      "from torch.package import Importer, OrderedImporter, PackageImporter, sys_importer",
+      "from torch.package._package_pickler import create_pickler",
+      "from torch.package._package_unpickler import PackageUnpickler",
+      "from torch.serialization import _maybe_decode_ascii"
+    ],
+    "classes": [],
+    "functions": [
+      "_save_storages",
+      "_load_storages",
+      "_get_package"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_414_542df0a2df85df14__deploy.py.json"
+}

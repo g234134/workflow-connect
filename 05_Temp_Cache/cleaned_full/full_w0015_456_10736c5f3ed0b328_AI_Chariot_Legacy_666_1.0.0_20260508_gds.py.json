@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 456,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gds.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gds.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4567,
+  "content_sha256": "10736c5f3ed0b3288cdcc034f23deac4bf42a77e9bcc51edb232da8b8bfc3db9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 129,
+    "non_empty_lines": 98,
+    "char_count": 4567,
+    "preview_lines": [
+      "import os",
+      "import sys",
+      "from typing import Callable, List, Optional",
+      "import torch",
+      "from torch.types import Storage",
+      "__all__: List[str] = []",
+      "def _dummy_fn(name: str) -> Callable:",
+      "    def fn(*args, **kwargs):  # type: ignore[no-untyped-def]",
+      "        raise RuntimeError(f\"torch._C.{name} is not supported on this platform\")",
+      "    return fn"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "from typing import Callable, List, Optional",
+      "import torch",
+      "from torch.types import Storage"
+    ],
+    "classes": [
+      "_GdsFile"
+    ],
+    "functions": [
+      "_dummy_fn",
+      "_gds_register_buffer",
+      "_gds_deregister_buffer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_456_10736c5f3ed0b328_AI_Chariot_Legacy_666_1.0.0_20260508_gds.py.json"
+}

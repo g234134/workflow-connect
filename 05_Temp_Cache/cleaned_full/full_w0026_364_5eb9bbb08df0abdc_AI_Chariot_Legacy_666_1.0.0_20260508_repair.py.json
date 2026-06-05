@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 364,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_repair.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_repair.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2134,
+  "content_sha256": "5eb9bbb08df0abdcfbfc8842d1fb5b0bb4ce80341967f1e94ec5f271f1b6c748",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 76,
+    "non_empty_lines": 63,
+    "char_count": 2134,
+    "preview_lines": [
+      "import pathlib",
+      "import shutil",
+      "import subprocess",
+      "from io import BufferedReader, BytesIO",
+      "from typing import Literal, Optional, Union",
+      "T_repair_setting = Literal[\"default\", \"prepress\", \"printer\", \"ebook\", \"screen\"]",
+      "def _repair(",
+      "    path_or_fp: Union[str, pathlib.Path, BufferedReader, BytesIO],",
+      "    password: Optional[str] = None,",
+      "    gs_path: Optional[Union[str, pathlib.Path]] = None,"
+    ],
+    "imports": [
+      "import pathlib",
+      "import shutil",
+      "import subprocess",
+      "from io import BufferedReader, BytesIO",
+      "from typing import Literal, Optional, Union"
+    ],
+    "classes": [],
+    "functions": [
+      "_repair",
+      "repair"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_364_5eb9bbb08df0abdc_AI_Chariot_Legacy_666_1.0.0_20260508_repair.py.json"
+}

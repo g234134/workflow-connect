@@ -1,0 +1,79 @@
+{
+  "schema": "w4a_rollout_pipeline/v0.1",
+  "pilot_stream_id": "W4-A-PILOT-RELEASE-STREAM-v0.1",
+  "pilot_artifact_id": "W3-A-K2-ASK-ROLLOUT-PILOT",
+  "anchor_release_flow": {
+    "name": "W2-1-internal-doc-authority + eval-gate-ci shadow nightly",
+    "w2_case_dir": "workflow_v2/20_pilot/W2-1_case",
+    "ci_workflow": ".github/workflows/eval-gate-ci.yml",
+    "ci_job_shadow": "eval-shadow-nightly",
+    "note": "W4-A does not modify prod CI; local runner mirrors shadow unittest + canary ART-REL only."
+  },
+  "env_logical": "staging-internal",
+  "k2_phases": {
+    "shadow": {
+      "primary_source": "ask",
+      "user_visible": "100% ask",
+      "min_window_days": 7
+    },
+    "internal_canary": {
+      "primary_source": "k2",
+      "traffic_percent": 5,
+      "cohort_kind": "internal_staff_hash"
+    }
+  },
+  "paths": {
+    "case_dir": "workflow_v2/20_pilot/W3-A_case",
+    "run_records_subdir": "run_records",
+    "spool_rel": "artifacts/eval/k2_shadow_spool.jsonl"
+  },
+  "shadow_step": {
+    "unittest_modules": [
+      "tests.test_k2_merge_adapter",
+      "tests.test_k2_ask_shadow"
+    ],
+    "shadow_export_fixture": "tests/fixtures/eval/shadow_raw_records.jsonl",
+    "eval_ci_max_needs_review_ratio": "0.6",
+    "eval_ci_fail_on_tags": "infra_risk"
+  },
+  "canary_step": {
+    "sample_task_ids": [
+      "w4a-canary-sample-001",
+      "w4a-canary-sample-002",
+      "w4a-canary-sample-003",
+      "w4a-canary-sample-004",
+      "w4a-canary-sample-005"
+    ],
+    "cohort_salt": "w4a-staging-internal-v0.1"
+  },
+  "override": {
+    "allowed_roles": ["release", "hq_governance", "engineering_oncall"],
+    "record_filename": "override_record.json"
+  },
+  "rollback": {
+    "record_filename": "rollback_record.json",
+    "default_action": "ask_only_cohort_zero"
+  },
+  "trace_contract": {
+    "schema": "w4a-trace-contract/v0.1",
+    "note": "Phase-level VERDICT step names vs fine-grained rollout_trace.jsonl steps; gate checklist A6/B8.",
+    "phases": {
+      "shadow": {
+        "verdict_step": "shadow",
+        "trace_sub_steps": [
+          "k2_shadow_unittest",
+          "ibridge_exporter_shadow",
+          "eval_ci_check_shadow"
+        ],
+        "trace_phase_summary_step": "shadow",
+        "art_rel_k2_phase": "shadow"
+      },
+      "canary": {
+        "verdict_step": "canary",
+        "trace_sub_steps": ["internal_canary"],
+        "trace_phase_summary_step": "canary",
+        "art_rel_k2_phase": "internal_canary"
+      }
+    }
+  }
+}

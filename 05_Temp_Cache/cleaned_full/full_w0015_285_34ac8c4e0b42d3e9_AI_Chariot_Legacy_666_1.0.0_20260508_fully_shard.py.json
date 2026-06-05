@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fully_shard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fully_shard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19989,
+  "content_sha256": "34ac8c4e0b42d3e98048b77f4e40bf9f67c1a292106202de12f1a5a64bb7b69b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 446,
+    "non_empty_lines": 389,
+    "char_count": 19989,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from typing import Any, cast, Dict, Iterable, List, NoReturn, Optional, Type, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.distributed._composable import contract",
+      "from torch.distributed.tensor import DeviceMesh",
+      "from torch.distributed.utils import _get_root_modules",
+      "from ._fsdp_api import MixedPrecisionPolicy, OffloadPolicy"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Any, cast, Dict, Iterable, List, NoReturn, Optional, Type, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.distributed._composable import contract",
+      "from torch.distributed.tensor import DeviceMesh",
+      "from torch.distributed.utils import _get_root_modules",
+      "from ._fsdp_api import MixedPrecisionPolicy, OffloadPolicy",
+      "from ._fsdp_common import FSDPMeshInfo, HSDPMeshInfo",
+      "from ._fsdp_init import (",
+      "from ._fsdp_param_group import FSDPParamGroup",
+      "from ._fsdp_state import _get_module_fsdp_state, FSDPState"
+    ],
+    "classes": [
+      "FSDPModule",
+      "UnshardHandle"
+    ],
+    "functions": [
+      "fully_shard",
+      "unimplemented_deepcopy",
+      "register_fsdp_forward_method",
+      "_assert_all_fsdp_modules"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_285_34ac8c4e0b42d3e9_AI_Chariot_Legacy_666_1.0.0_20260508_fully_shard.py.json"
+}

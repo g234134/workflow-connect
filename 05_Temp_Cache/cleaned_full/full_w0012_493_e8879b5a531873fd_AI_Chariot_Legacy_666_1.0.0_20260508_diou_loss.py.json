@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 493,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_diou_loss.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_diou_loss.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3456,
+  "content_sha256": "e8879b5a531873fd989db1b7ea78835e0335eafc5a8d22917e2bac12e509c294",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 77,
+    "char_count": 3456,
+    "preview_lines": [
+      "from typing import Tuple",
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._utils import _loss_inter_union, _upcast_non_float",
+      "def distance_box_iou_loss(",
+      "    boxes1: torch.Tensor,",
+      "    boxes2: torch.Tensor,",
+      "    reduction: str = \"none\",",
+      "    eps: float = 1e-7,",
+      ") -> torch.Tensor:"
+    ],
+    "imports": [
+      "from typing import Tuple",
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._utils import _loss_inter_union, _upcast_non_float"
+    ],
+    "classes": [],
+    "functions": [
+      "distance_box_iou_loss",
+      "_diou_iou_loss"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_493_e8879b5a531873fd_AI_Chariot_Legacy_666_1.0.0_20260508_diou_loss.py.json"
+}

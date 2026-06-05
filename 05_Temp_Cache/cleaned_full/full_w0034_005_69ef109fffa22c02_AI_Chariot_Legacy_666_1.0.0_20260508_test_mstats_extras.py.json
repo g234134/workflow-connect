@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 5,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_mstats_extras.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_mstats_extras.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7469,
+  "content_sha256": "69ef109fffa22c023bd1468c0db97fafbf1e797db155286e36b4576bcd633310",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 142,
+    "char_count": 7469,
+    "preview_lines": [
+      "import numpy as np",
+      "import numpy.ma as ma",
+      "import scipy.stats.mstats as ms",
+      "from numpy.testing import (assert_equal, assert_almost_equal, assert_,",
+      "                           assert_allclose)",
+      "def test_compare_medians_ms():",
+      "    x = np.arange(7)",
+      "    y = x + 10",
+      "    assert_almost_equal(ms.compare_medians_ms(x, y), 0)",
+      "    y2 = np.linspace(0, 1, num=10)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import numpy.ma as ma",
+      "import scipy.stats.mstats as ms",
+      "from numpy.testing import (assert_equal, assert_almost_equal, assert_,"
+    ],
+    "classes": [
+      "TestQuantiles"
+    ],
+    "functions": [
+      "test_compare_medians_ms",
+      "test_hdmedian",
+      "test_rsh",
+      "test_mjci",
+      "test_trimmed_mean_ci",
+      "test_idealfourths",
+      "test_median_cihs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_005_69ef109fffa22c02_AI_Chariot_Legacy_666_1.0.0_20260508_test_mstats_extras.py.json"
+}

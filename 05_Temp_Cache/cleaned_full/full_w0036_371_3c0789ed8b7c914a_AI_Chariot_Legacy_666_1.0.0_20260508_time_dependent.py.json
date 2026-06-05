@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 371,
+  "generated_at": "2026-05-08T18:46:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_time_dependent.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_time_dependent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5762,
+  "content_sha256": "3c0789ed8b7c914a9b0e0bc16b3fd97d415983ec3ebdfd603c2d073ba828fd32",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 121,
+    "char_count": 5762,
+    "preview_lines": [
+      "\"\"\"Time dependent algorithms.\"\"\"",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "__all__ = [\"cd_index\"]",
+      "@not_implemented_for(\"undirected\")",
+      "@not_implemented_for(\"multigraph\")",
+      "@nx._dispatchable(node_attrs={\"time\": None, \"weight\": 1})",
+      "def cd_index(G, node, time_delta, *, time=\"time\", weight=None):",
+      "    r\"\"\"Compute the CD index for `node` within the graph `G`.",
+      "    Calculates the CD index for the given node of the graph,"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "from years to days. In the example above `timedelta(days=5 * 365)` looks like"
+    ],
+    "classes": [],
+    "functions": [
+      "cd_index"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_371_3c0789ed8b7c914a_AI_Chariot_Legacy_666_1.0.0_20260508_time_dependent.py.json"
+}

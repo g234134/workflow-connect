@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 440,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\test_fetch_last_ai_and_tool_messages.py",
+  "name": "test_fetch_last_ai_and_tool_messages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3707,
+  "content_sha256": "07e2dd2285c9a304c050eaefe6dcbb572e85cb21e0c0bde37b0f4605ff350e81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 78,
+    "char_count": 3704,
+    "preview_lines": [
+      "\"\"\"Unit tests for _fetch_last_ai_and_tool_messages helper function.",
+      "These tests verify that the helper function correctly handles edge cases,",
+      "including the scenario where no AIMessage exists in the message list",
+      "(fixes issue #34792).",
+      "\"\"\"",
+      "from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage",
+      "from langchain.agents.factory import _fetch_last_ai_and_tool_messages",
+      "def test_fetch_last_ai_and_tool_messages_normal() -> None:",
+      "    \"\"\"Test normal case with AIMessage and subsequent ToolMessages.\"\"\"",
+      "    messages = ["
+    ],
+    "imports": [
+      "from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage",
+      "from langchain.agents.factory import _fetch_last_ai_and_tool_messages"
+    ],
+    "classes": [],
+    "functions": [
+      "test_fetch_last_ai_and_tool_messages_normal",
+      "test_fetch_last_ai_and_tool_messages_multiple_ai",
+      "test_fetch_last_ai_and_tool_messages_no_ai_message",
+      "test_fetch_last_ai_and_tool_messages_empty_list",
+      "test_fetch_last_ai_and_tool_messages_only_human_messages",
+      "test_fetch_last_ai_and_tool_messages_ai_without_tool_calls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_440_07e2dd2285c9a304_test_fetch_last_ai_and_tool_messages.py.json"
+}

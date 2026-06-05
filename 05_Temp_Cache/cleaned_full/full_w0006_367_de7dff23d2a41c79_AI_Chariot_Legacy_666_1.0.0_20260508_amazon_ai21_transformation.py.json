@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 367,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_amazon_ai21_transformation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_amazon_ai21_transformation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3509,
+  "content_sha256": "de7dff23d2a41c79066108e2f5410d6c85fc2c96c893331252e9c4efc5f00ba1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 99,
+    "non_empty_lines": 82,
+    "char_count": 3509,
+    "preview_lines": [
+      "import types",
+      "from typing import List, Optional",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig",
+      "from litellm.llms.bedrock.chat.invoke_transformations.base_invoke_transformation import (",
+      "    AmazonInvokeConfig,",
+      ")",
+      "class AmazonAI21Config(AmazonInvokeConfig, BaseConfig):",
+      "    \"\"\"",
+      "    Reference: https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2#/providers?model=j2-ultra",
+      "    Supported Params for the Amazon / AI21 models:"
+    ],
+    "imports": [
+      "import types",
+      "from typing import List, Optional",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig",
+      "from litellm.llms.bedrock.chat.invoke_transformations.base_invoke_transformation import ("
+    ],
+    "classes": [
+      "AmazonAI21Config"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_367_de7dff23d2a41c79_AI_Chariot_Legacy_666_1.0.0_20260508_amazon_ai21_transformation.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__jitter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__jitter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 782,
+  "content_sha256": "2e32528698ebca4f6c5810968b3fb7517d43242c7aade6cd27905fde73cc9584",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 19,
+    "char_count": 782,
+    "preview_lines": [
+      "# coding:utf-8",
+      "import random",
+      "def random_jitter(value: float) -> float:",
+      "    \"\"\"Jitter the value a random number of milliseconds.",
+      "    This adds up to 1 second of additional time to the original value.",
+      "    Prior to backoff version 1.2 this was the default jitter behavior.",
+      "    Args:",
+      "        value: The unadulterated backoff value.",
+      "    \"\"\"",
+      "    return value + random.random()"
+    ],
+    "imports": [
+      "import random"
+    ],
+    "classes": [],
+    "functions": [
+      "random_jitter",
+      "full_jitter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_421_2e32528698ebca4f_AI_Chariot_Legacy_666_1.0.0_20260508__jitter.py.json"
+}

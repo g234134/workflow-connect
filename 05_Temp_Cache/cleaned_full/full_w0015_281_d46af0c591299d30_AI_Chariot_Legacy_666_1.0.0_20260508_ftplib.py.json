@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ftplib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ftplib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34735,
+  "content_sha256": "d46af0c591299d304747c661da2fd4fe417cb7e057eee56a1789c54e2ce083bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 966,
+    "non_empty_lines": 854,
+    "char_count": 34733,
+    "preview_lines": [
+      "\"\"\"An FTP client class and some helper functions.",
+      "Based on RFC 959: File Transfer Protocol (FTP), by J. Postel and J. Reynolds",
+      "Example:",
+      ">>> from ftplib import FTP",
+      ">>> ftp = FTP('ftp.python.org') # connect to host, default port",
+      ">>> ftp.login() # default, i.e.: user anonymous, passwd anonymous@",
+      "'230 Guest login ok, access restrictions apply.'",
+      ">>> ftp.retrlines('LIST') # list directory contents",
+      "total 9",
+      "drwxr-xr-x   8 root     wheel        1024 Jan  3  1994 ."
+    ],
+    "imports": [
+      "import sys",
+      "import socket",
+      "from socket import _GLOBAL_DEFAULT_TIMEOUT"
+    ],
+    "classes": [
+      "Error",
+      "error_reply",
+      "error_temp",
+      "error_perm",
+      "error_proto",
+      "FTP"
+    ],
+    "functions": [
+      "parse150",
+      "parse227",
+      "parse229",
+      "parse257",
+      "print_line",
+      "ftpcp",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_281_d46af0c591299d30_AI_Chariot_Legacy_666_1.0.0_20260508_ftplib.py.json"
+}

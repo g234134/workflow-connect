@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\inline_autodiff_subgraphs.h",
+  "name": "inline_autodiff_subgraphs.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 290,
+  "content_sha256": "1681353a83b1755804705be7cab544a4da244820622f6a143a8710389e5454de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 290,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "TORCH_API bool canRunWithAutograd(Node* node);",
+      "TORCH_API void InlineAutodiffSubgraphs(",
+      "    std::shared_ptr<Graph>& graph,",
+      "    size_t threshold = 5);",
+      "} // namespace jit",
+      "} // namespace torch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_366_1681353a83b17558_inline_autodiff_subgraphs.h.json"
+}

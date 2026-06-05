@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\models\\quantization\\mobilenetv2.py",
+  "name": "mobilenetv2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6037,
+  "content_sha256": "836cf71cf434317142b8c5794e92cf45d3bdf66df00bfdddd2e9146a75da247a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 131,
+    "char_count": 6037,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Optional, Union",
+      "from torch import nn, Tensor",
+      "from torch.ao.quantization import DeQuantStub, QuantStub",
+      "from torchvision.models.mobilenetv2 import InvertedResidual, MobileNet_V2_Weights, MobileNetV2",
+      "from ...ops.misc import Conv2dNormActivation",
+      "from ...transforms._presets import ImageClassification",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _IMAGENET_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Optional, Union",
+      "from torch import nn, Tensor",
+      "from torch.ao.quantization import DeQuantStub, QuantStub",
+      "from torchvision.models.mobilenetv2 import InvertedResidual, MobileNet_V2_Weights, MobileNetV2",
+      "from ...ops.misc import Conv2dNormActivation",
+      "from ...transforms._presets import ImageClassification",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _IMAGENET_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface",
+      "from .utils import _fuse_modules, _replace_relu, quantize_model"
+    ],
+    "classes": [
+      "QuantizableInvertedResidual",
+      "QuantizableMobileNetV2",
+      "MobileNet_V2_QuantizedWeights"
+    ],
+    "functions": [
+      "mobilenet_v2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_464_836cf71cf4343171_mobilenetv2.py.json"
+}

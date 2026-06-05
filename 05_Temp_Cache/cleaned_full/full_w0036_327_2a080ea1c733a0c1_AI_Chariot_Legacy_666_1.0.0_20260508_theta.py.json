@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 327,
+  "generated_at": "2026-05-08T18:46:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_theta.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_theta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 37320,
+  "content_sha256": "2a080ea1c733a0c1bafc73286a5e2810fee267848a3a8bbd24513e5b3636af73",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1049,
+    "non_empty_lines": 1032,
+    "char_count": 37320,
+    "preview_lines": [
+      "from .functions import defun, defun_wrapped",
+      "@defun",
+      "def _jacobi_theta2(ctx, z, q):",
+      "    extra1 = 10",
+      "    extra2 = 20",
+      "    # the loops below break when the fixed precision quantities",
+      "    # a and b go to zero;",
+      "    # right shifting small negative numbers by wp one obtains -1, not zero,",
+      "    # so the condition a**2 + b**2 > MIN is used to break the loops.",
+      "    MIN = 2"
+    ],
+    "imports": [
+      "from .functions import defun, defun_wrapped"
+    ],
+    "classes": [],
+    "functions": [
+      "_jacobi_theta2",
+      "_djacobi_theta2",
+      "_jacobi_theta3",
+      "_djacobi_theta3",
+      "_jacobi_theta2a",
+      "_jacobi_theta3a",
+      "_djacobi_theta2a",
+      "_djacobi_theta3a",
+      "jtheta",
+      "_djtheta"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_327_2a080ea1c733a0c1_AI_Chariot_Legacy_666_1.0.0_20260508_theta.py.json"
+}

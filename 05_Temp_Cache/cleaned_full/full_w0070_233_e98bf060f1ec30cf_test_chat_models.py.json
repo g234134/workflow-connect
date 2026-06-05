@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 233,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\perplexity\\tests\\unit_tests\\test_chat_models.py",
+  "name": "test_chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7742,
+  "content_sha256": "e98bf060f1ec30cf3e7298148833a5be6e6662ea59ff8ba8302c0c4b1e99500c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 213,
+    "non_empty_lines": 178,
+    "char_count": 7739,
+    "preview_lines": [
+      "from typing import Any, cast",
+      "from unittest.mock import MagicMock",
+      "from langchain_core.messages import AIMessageChunk, BaseMessage",
+      "from pytest_mock import MockerFixture",
+      "from langchain_perplexity import ChatPerplexity, MediaResponse, WebSearchOptions",
+      "from langchain_perplexity.chat_models import _create_usage_metadata",
+      "def test_perplexity_model_name_param() -> None:",
+      "    llm = ChatPerplexity(model=\"foo\")",
+      "    assert llm.model == \"foo\"",
+      "def test_perplexity_model_kwargs() -> None:"
+    ],
+    "imports": [
+      "from typing import Any, cast",
+      "from unittest.mock import MagicMock",
+      "from langchain_core.messages import AIMessageChunk, BaseMessage",
+      "from pytest_mock import MockerFixture",
+      "from langchain_perplexity import ChatPerplexity, MediaResponse, WebSearchOptions",
+      "from langchain_perplexity.chat_models import _create_usage_metadata"
+    ],
+    "classes": [],
+    "functions": [
+      "test_perplexity_model_name_param",
+      "test_perplexity_model_kwargs",
+      "test_perplexity_initialization",
+      "test_perplexity_new_params",
+      "test_perplexity_stream_includes_citations",
+      "test_perplexity_stream_includes_videos_and_reasoning",
+      "test_create_usage_metadata_basic",
+      "test_perplexity_invoke_includes_num_search_queries",
+      "test_profile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_233_e98bf060f1ec30cf_test_chat_models.py.json"
+}

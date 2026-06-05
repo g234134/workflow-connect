@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_intervalmath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_intervalmath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9034,
+  "content_sha256": "9dd04c733aeceb160c3794469f208bf72abba4d531ad71d3494d66754b29e6d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 213,
+    "non_empty_lines": 188,
+    "char_count": 9034,
+    "preview_lines": [
+      "from sympy.plotting.intervalmath import interval",
+      "from sympy.testing.pytest import raises",
+      "def test_interval():",
+      "    assert (interval(1, 1) == interval(1, 1, is_valid=True)) == (True, True)",
+      "    assert (interval(1, 1) == interval(1, 1, is_valid=False)) == (True, False)",
+      "    assert (interval(1, 1) == interval(1, 1, is_valid=None)) == (True, None)",
+      "    assert (interval(1, 1.5) == interval(1, 2)) == (None, True)",
+      "    assert (interval(0, 1) == interval(2, 3)) == (False, True)",
+      "    assert (interval(0, 1) == interval(1, 2)) == (None, True)",
+      "    assert (interval(1, 2) != interval(1, 2)) == (False, True)"
+    ],
+    "imports": [
+      "from sympy.plotting.intervalmath import interval",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_interval",
+      "test_interval_add",
+      "test_interval_sub",
+      "test_interval_inequality",
+      "test_interval_mul",
+      "test_interval_div",
+      "test_hashable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_116_9dd04c733aeceb16_AI_Chariot_Legacy_666_1.0.0_20260508_test_intervalmath.py.json"
+}

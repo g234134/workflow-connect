@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_py3compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_py3compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1485,
+  "content_sha256": "f6a50cc8e200aa20b09aa59a90eded173affab47a1ae0bb2b1645c5ab3888b7e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 41,
+    "char_count": 1485,
+    "preview_lines": [
+      "# coding: utf-8",
+      "\"\"\"Compatibility tricks for Python 3. Mainly to do with unicode.",
+      "This file is deprecated and will be removed in a future version.",
+      "\"\"\"",
+      "import platform",
+      "import builtins as builtin_mod",
+      "from .encoding import DEFAULT_ENCODING",
+      "from typing import Optional",
+      "def decode(s: bytes, encoding: str | None = None) -> str:",
+      "    encoding = encoding or DEFAULT_ENCODING"
+    ],
+    "imports": [
+      "import platform",
+      "import builtins as builtin_mod",
+      "from .encoding import DEFAULT_ENCODING",
+      "from typing import Optional"
+    ],
+    "classes": [],
+    "functions": [
+      "decode",
+      "encode",
+      "cast_unicode",
+      "safe_unicode",
+      "input",
+      "execfile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_178_f6a50cc8e200aa20_AI_Chariot_Legacy_666_1.0.0_20260508_py3compat.py.json"
+}

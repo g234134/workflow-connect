@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_websockets_sansio_impl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_websockets_sansio_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20198,
+  "content_sha256": "2a708a72917b544a6ee70c6e76d934bbb4a6c18d8eddd939d90f2bad0eb5e01b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 477,
+    "non_empty_lines": 424,
+    "char_count": 20198,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import logging",
+      "import random",
+      "import struct",
+      "import sys",
+      "from asyncio import TimerHandle",
+      "from asyncio.transports import BaseTransport, Transport",
+      "from http import HTTPStatus",
+      "from typing import Any, Literal, cast"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import logging",
+      "import random",
+      "import struct",
+      "import sys",
+      "from asyncio import TimerHandle",
+      "from asyncio.transports import BaseTransport, Transport",
+      "from http import HTTPStatus",
+      "from typing import Any, Literal, cast",
+      "from urllib.parse import unquote",
+      "from websockets.exceptions import InvalidState",
+      "from websockets.extensions.permessage_deflate import ServerPerMessageDeflateFactory",
+      "from websockets.frames import Frame, Opcode",
+      "from websockets.http11 import Request",
+      "from websockets.server import ServerProtocol",
+      "from uvicorn._types import (",
+      "from uvicorn.config import Config",
+      "from uvicorn.logging import TRACE_LOG_LEVEL",
+      "from uvicorn.protocols.utils import ("
+    ],
+    "classes": [
+      "WebSocketsSansIOProtocol"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_150_2a708a72917b544a_AI_Chariot_Legacy_666_1.0.0_20260508_websockets_sansio_impl.py.json"
+}

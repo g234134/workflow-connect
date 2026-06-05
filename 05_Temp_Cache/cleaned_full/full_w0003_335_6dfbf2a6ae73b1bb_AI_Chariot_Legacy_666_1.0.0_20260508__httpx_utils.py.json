@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 335,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__httpx_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__httpx_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2906,
+  "content_sha256": "6dfbf2a6ae73b1bbcbe1d82d35f5fe969f11fc5aa6cc3b5610aeb52bb63e4a8b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 67,
+    "char_count": 2906,
+    "preview_lines": [
+      "\"\"\"Utilities for creating standardized httpx AsyncClient instances.\"\"\"",
+      "from typing import Any, Protocol",
+      "import httpx",
+      "__all__ = [\"create_mcp_http_client\", \"MCP_DEFAULT_TIMEOUT\", \"MCP_DEFAULT_SSE_READ_TIMEOUT\"]",
+      "# Default MCP timeout configuration",
+      "MCP_DEFAULT_TIMEOUT = 30.0  # General operations (seconds)",
+      "MCP_DEFAULT_SSE_READ_TIMEOUT = 300.0  # SSE streams - 5 minutes (seconds)",
+      "class McpHttpClientFactory(Protocol):  # pragma: no branch",
+      "    def __call__(  # pragma: no branch",
+      "        self,"
+    ],
+    "imports": [
+      "from typing import Any, Protocol",
+      "import httpx",
+      "from httpx import BasicAuth"
+    ],
+    "classes": [
+      "McpHttpClientFactory"
+    ],
+    "functions": [
+      "create_mcp_http_client"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_335_6dfbf2a6ae73b1bb_AI_Chariot_Legacy_666_1.0.0_20260508__httpx_utils.py.json"
+}

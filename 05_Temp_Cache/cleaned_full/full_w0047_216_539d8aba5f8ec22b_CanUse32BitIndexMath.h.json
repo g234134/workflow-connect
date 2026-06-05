@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 216,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\CanUse32BitIndexMath.h",
+  "name": "CanUse32BitIndexMath.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 255,
+  "content_sha256": "539d8aba5f8ec22b06d1bb49645dae1387f4f3cb020e58676e2d364e6d55deb7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 255,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/macros/Export.h>",
+      "#include <limits>",
+      "namespace at {",
+      "class TensorBase;",
+      "}",
+      "namespace at::native {",
+      "TORCH_API bool canUse32BitIndexMath(const at::TensorBase &t, int64_t max_elem=std::numeric_limits<int32_t>::max());",
+      "}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_216_539d8aba5f8ec22b_CanUse32BitIndexMath.h.json"
+}

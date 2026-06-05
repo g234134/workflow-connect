@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 109,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_exception_mapping_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_exception_mapping_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5798,
+  "content_sha256": "861cfdf809f9d2537f436781eaeb66b26b00fc1025e4f4e90adb8a8c7d64cad7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 203,
+    "non_empty_lines": 165,
+    "char_count": 5798,
+    "preview_lines": [
+      "\"\"\"",
+      "A2A Protocol Exception Mapping Utils.",
+      "Maps A2A SDK exceptions to LiteLLM A2A exception types.",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.a2a_protocol.card_resolver import (",
+      "    fix_agent_card_url,",
+      "    is_localhost_or_internal_url,",
+      ")"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.a2a_protocol.card_resolver import (",
+      "from litellm.a2a_protocol.exceptions import (",
+      "from litellm.constants import CONNECTION_ERROR_PATTERNS",
+      "from a2a.client import A2AClient as A2AClientType",
+      "from a2a.client import A2AClient as _A2AClient  # type: ignore[no-redef]"
+    ],
+    "classes": [
+      "A2AExceptionCheckers"
+    ],
+    "functions": [
+      "map_a2a_exception",
+      "handle_a2a_localhost_retry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_109_861cfdf809f9d253_AI_Chariot_Legacy_666_1.0.0_20260508_exception_mapping_utils.py.json"
+}

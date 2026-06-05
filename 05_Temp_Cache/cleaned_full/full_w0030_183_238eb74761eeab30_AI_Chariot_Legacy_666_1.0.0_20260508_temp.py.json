@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_temp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_temp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2503,
+  "content_sha256": "238eb74761eeab3033ae9222e45037bd3f12f26d997526195ce702f77d853b5c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 61,
+    "char_count": 2503,
+    "preview_lines": [
+      "\"\"\"",
+      "The temp module provides a NamedTemporaryFile that can be reopened in the same",
+      "process on any platform. Most platforms use the standard Python",
+      "tempfile.NamedTemporaryFile class, but Windows users are given a custom class.",
+      "This is needed because the Python implementation of NamedTemporaryFile uses the",
+      "O_TEMPORARY flag under Windows, which prevents the file from being reopened",
+      "if the same flag is not provided [1][2]. Note that this does not address the",
+      "more general issue of opening a file for writing and reading in multiple",
+      "processes in a manner that works across platforms.",
+      "The custom version of NamedTemporaryFile doesn't support the same keyword"
+    ],
+    "imports": [
+      "import os",
+      "import tempfile",
+      "from django.core.files.utils import FileProxyMixin"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_183_238eb74761eeab30_AI_Chariot_Legacy_666_1.0.0_20260508_temp.py.json"
+}

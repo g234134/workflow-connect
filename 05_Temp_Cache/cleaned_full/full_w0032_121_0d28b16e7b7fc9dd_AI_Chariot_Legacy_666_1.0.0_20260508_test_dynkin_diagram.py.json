@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 121,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dynkin_diagram.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dynkin_diagram.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 260,
+  "content_sha256": "0d28b16e7b7fc9dd33ae12b35d6fd7aa45d65d87b50e4d8c99737e4636f57468",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 9,
+    "non_empty_lines": 8,
+    "char_count": 260,
+    "preview_lines": [
+      "from sympy.liealgebras.dynkin_diagram import DynkinDiagram",
+      "def test_DynkinDiagram():",
+      "    c = DynkinDiagram(\"A3\")",
+      "    diag = \"0---0---0\\n1   2   3\"",
+      "    assert c == diag",
+      "    ct = DynkinDiagram([\"B\", 3])",
+      "    diag2 = \"0---0=>=0\\n1   2   3\"",
+      "    assert ct == diag2"
+    ],
+    "imports": [
+      "from sympy.liealgebras.dynkin_diagram import DynkinDiagram"
+    ],
+    "classes": [],
+    "functions": [
+      "test_DynkinDiagram"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_121_0d28b16e7b7fc9dd_AI_Chariot_Legacy_666_1.0.0_20260508_test_dynkin_diagram.py.json"
+}

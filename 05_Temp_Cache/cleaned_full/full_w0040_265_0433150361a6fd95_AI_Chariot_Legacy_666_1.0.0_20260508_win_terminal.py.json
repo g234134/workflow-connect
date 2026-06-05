@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_win_terminal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_win_terminal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19675,
+  "content_sha256": "0433150361a6fd9527721e23e2cbc0a14455d2e25bd7c29f835d7a9fbf28cefe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 510,
+    "non_empty_lines": 423,
+    "char_count": 19675,
+    "preview_lines": [
+      "\"\"\"Module containing Windows version of :class:`Terminal`.\"\"\"",
+      "# pylint: disable=import-error",
+      "# std imports",
+      "import os",
+      "import time",
+      "import msvcrt",
+      "import asyncio",
+      "import contextlib",
+      "import collections",
+      "from typing import IO, List, Union, Optional, Generator"
+    ],
+    "imports": [
+      "import os",
+      "import time",
+      "import msvcrt",
+      "import asyncio",
+      "import contextlib",
+      "import collections",
+      "from typing import IO, List, Union, Optional, Generator",
+      "from jinxed import win32",
+      "from .terminal import WINSZ",
+      "from .terminal import Terminal as _Terminal",
+      "from .dec_modes import DecPrivateMode as _DecPrivateMode",
+      "from .dec_modes import DecModeResponse"
+    ],
+    "classes": [
+      "Terminal"
+    ],
+    "functions": [
+      "_win32_mouse_to_sgr",
+      "_win32_resize_to_seq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_265_0433150361a6fd95_AI_Chariot_Legacy_666_1.0.0_20260508_win_terminal.py.json"
+}

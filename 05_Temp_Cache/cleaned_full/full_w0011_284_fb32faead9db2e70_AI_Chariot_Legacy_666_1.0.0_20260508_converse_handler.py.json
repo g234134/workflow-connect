@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_converse_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_converse_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16772,
+  "content_sha256": "fb32faead9db2e7017a65e02c3f172a94f0857c1b14947b7c345c86a79279081",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 479,
+    "non_empty_lines": 438,
+    "char_count": 16772,
+    "preview_lines": [
+      "import json",
+      "from typing import Any, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObject",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "    AsyncHTTPHandler,",
+      "    HTTPHandler,",
+      "    _get_httpx_client,",
+      "    get_async_httpx_client,"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Any, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObject",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.utils import ModelResponse",
+      "from litellm.utils import CustomStreamWrapper",
+      "from ..base_aws_llm import BaseAWSLLM, Credentials",
+      "from ..common_utils import BedrockError",
+      "from .invoke_handler import AWSEventStreamDecoder, MockResponseIterator, make_call"
+    ],
+    "classes": [
+      "BedrockConverseLLM"
+    ],
+    "functions": [
+      "make_sync_call"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_284_fb32faead9db2e70_AI_Chariot_Legacy_666_1.0.0_20260508_converse_handler.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_singleton_int.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_singleton_int.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3063,
+  "content_sha256": "aa6644e58fde928ec5d21e8a3c1e3939f846dde7964f2ff1ade7e8e0de111e6f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 75,
+    "char_count": 3063,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import sympy",
+      "from sympy.multipledispatch import dispatch",
+      "__all__ = [\"SingletonInt\"]",
+      "class SingletonInt(sympy.AtomicExpr):",
+      "    # This is probably not super important unless we are in multiple dispatch",
+      "    # situations with other more exotic Expr types.",
+      "    _op_priority = 99999",
+      "    def __new__(cls, *args, coeff=None, **kwargs):",
+      "        instance = super().__new__(cls, *args, **kwargs)"
+    ],
+    "imports": [
+      "import sympy",
+      "from sympy.multipledispatch import dispatch"
+    ],
+    "classes": [
+      "SingletonInt"
+    ],
+    "functions": [
+      "_eval_is_ge",
+      "_eval_is_ge",
+      "_eval_is_ge"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_468_aa6644e58fde928e_AI_Chariot_Legacy_666_1.0.0_20260508_singleton_int.py.json"
+}

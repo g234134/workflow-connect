@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 91,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_users.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_users.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2769,
+  "content_sha256": "56dab3e2afa13a90d873ba27753a110869142856ab84ce928bc38614bfa2d867",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 72,
+    "char_count": 2769,
+    "preview_lines": [
+      "import click",
+      "import rich",
+      "from ... import UsersManagementClient",
+      "@click.group()",
+      "def users():",
+      "    \"\"\"Manage users on your LiteLLM proxy server\"\"\"",
+      "    pass",
+      "@users.command(\"list\")",
+      "@click.pass_context",
+      "def list_users(ctx: click.Context):"
+    ],
+    "imports": [
+      "import click",
+      "import rich",
+      "from ... import UsersManagementClient",
+      "from rich.table import Table",
+      "from rich.console import Console"
+    ],
+    "classes": [],
+    "functions": [
+      "users",
+      "list_users",
+      "get_user",
+      "create_user",
+      "delete_user"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_091_56dab3e2afa13a90_AI_Chariot_Legacy_666_1.0.0_20260508_users.py.json"
+}

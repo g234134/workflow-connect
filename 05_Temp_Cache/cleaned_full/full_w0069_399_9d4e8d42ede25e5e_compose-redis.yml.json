@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\compose-redis.yml",
+  "name": "compose-redis.yml",
+  "extension": ".yml",
+  "original_type": "yaml",
+  "size_bytes": 388,
+  "content_sha256": "9d4e8d42ede25e5ee25f87c0346bc1c48c4ca38c01e4215ca27726c2607bd16e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 16,
+    "char_count": 388,
+    "preview_lines": [
+      "name: langgraph-tests-redis",
+      "services:",
+      "  redis-test:",
+      "    image: redis:7-alpine",
+      "    ports:",
+      "      - \"6379:6379\"",
+      "    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru",
+      "    healthcheck:",
+      "      test: redis-cli ping",
+      "      start_period: 10s"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_399_9d4e8d42ede25e5e_compose-redis.yml.json"
+}

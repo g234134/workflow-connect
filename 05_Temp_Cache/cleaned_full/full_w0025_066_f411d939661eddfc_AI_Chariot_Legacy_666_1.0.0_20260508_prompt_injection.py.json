@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11186,
+  "content_sha256": "f411d939661eddfcf72c1c3568d8c2b0a46206f29280f2404d037193f9af6f9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 305,
+    "non_empty_lines": 247,
+    "char_count": 11186,
+    "preview_lines": [
+      "\"\"\"",
+      "Prompt Injection Handler for LiteLLM Skills",
+      "Handles extraction of skill content (SKILL.md) from stored ZIP files",
+      "and injection into the system prompt for non-Anthropic models.",
+      "\"\"\"",
+      "import zipfile",
+      "from io import BytesIO",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.proxy._types import LiteLLM_SkillsTable"
+    ],
+    "imports": [
+      "import zipfile",
+      "from io import BytesIO",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.proxy._types import LiteLLM_SkillsTable"
+    ],
+    "classes": [
+      "SkillPromptInjectionHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_066_f411d939661eddfc_AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection.py.json"
+}

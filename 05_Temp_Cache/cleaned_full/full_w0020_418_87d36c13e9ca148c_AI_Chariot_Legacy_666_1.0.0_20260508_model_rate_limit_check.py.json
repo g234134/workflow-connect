@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:45:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_model_rate_limit_check.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_model_rate_limit_check.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15426,
+  "content_sha256": "87d36c13e9ca148cfc7c74330d1934745364c2d8cf8161731af622b8cbece371",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 373,
+    "non_empty_lines": 313,
+    "char_count": 15426,
+    "preview_lines": [
+      "\"\"\"",
+      "Enforce TPM/RPM rate limits set on model deployments.",
+      "This pre-call check ensures that model-level TPM/RPM limits are enforced",
+      "across all requests, regardless of routing strategy.",
+      "When enabled via `enforce_model_rate_limits: true` in litellm_settings,",
+      "requests that exceed the configured TPM/RPM limits will receive a 429 error.",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any, Dict, Optional, Union",
+      "import httpx",
+      "import litellm"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Dict, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_router_logger",
+      "from litellm.caching.dual_cache import DualCache",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.types.router import RouterErrors",
+      "from litellm.types.utils import StandardLoggingPayload",
+      "from litellm.utils import get_utc_datetime",
+      "from opentelemetry.trace import Span as _Span"
+    ],
+    "classes": [
+      "RoutingArgs",
+      "ModelRateLimitingCheck"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_418_87d36c13e9ca148c_AI_Chariot_Legacy_666_1.0.0_20260508_model_rate_limit_check.py.json"
+}

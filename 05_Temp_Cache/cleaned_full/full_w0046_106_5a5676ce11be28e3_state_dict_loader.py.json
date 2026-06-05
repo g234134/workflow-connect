@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\checkpoint\\state_dict_loader.py",
+  "name": "state_dict_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6667,
+  "content_sha256": "5a5676ce11be28e346340b35636a7eb32710f9b18a39955a8c7f50be8f416506",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 174,
+    "non_empty_lines": 143,
+    "char_count": 6667,
+    "preview_lines": [
+      "from typing import Any, Dict, Optional",
+      "import warnings",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed.checkpoint.stateful import Stateful",
+      "from .storage import (",
+      "    StorageReader,",
+      ")",
+      "from .planner import LoadPlanner",
+      "from .default_planner import DefaultLoadPlanner"
+    ],
+    "imports": [
+      "from typing import Any, Dict, Optional",
+      "import warnings",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed.checkpoint.stateful import Stateful",
+      "from .storage import (",
+      "from .planner import LoadPlanner",
+      "from .default_planner import DefaultLoadPlanner",
+      "from .utils import _DistWrapper, _all_gather_keys"
+    ],
+    "classes": [],
+    "functions": [
+      "load_state_dict",
+      "load",
+      "_load_state_dict"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_106_5a5676ce11be28e3_state_dict_loader.py.json"
+}

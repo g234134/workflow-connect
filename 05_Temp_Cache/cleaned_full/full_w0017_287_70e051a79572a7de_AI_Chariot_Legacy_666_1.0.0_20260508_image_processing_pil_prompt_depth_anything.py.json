@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_prompt_depth_anything.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_prompt_depth_anything.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12656,
+  "content_sha256": "70e051a79572a7de1c4df9db3f91fb087d83850863d9534e484352b4c39ca7ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 333,
+    "non_empty_lines": 276,
+    "char_count": 12656,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "from typing import TYPE_CHECKING",
+      "import numpy as np",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import PaddingMode",
+      "from ...image_transforms import pad as np_pad",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring",
+      "from ...utils.import_utils import requires",
+      "from ...modeling_outputs import DepthEstimatorOutput"
+    ],
+    "classes": [
+      "PromptDepthAnythingImageProcessorKwargs",
+      "PromptDepthAnythingImageProcessorPil"
+    ],
+    "functions": [
+      "_constrain_to_multiple_of",
+      "_get_resize_output_image_size"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_287_70e051a79572a7de_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_prompt_depth_anything.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__rcv1.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__rcv1.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12286,
+  "content_sha256": "704592224529d9a27e07f8cc4d60a3e0fd4e455363f118c79ff54ad8ffe1579c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 339,
+    "non_empty_lines": 283,
+    "char_count": 12286,
+    "preview_lines": [
+      "\"\"\"RCV1 dataset.",
+      "The dataset page is available at",
+      "    http://jmlr.csail.mit.edu/papers/volume5/lewis04a/",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import logging",
+      "from gzip import GzipFile",
+      "from numbers import Integral, Real",
+      "from os import PathLike, makedirs, remove"
+    ],
+    "imports": [
+      "import logging",
+      "from gzip import GzipFile",
+      "from numbers import Integral, Real",
+      "from os import PathLike, makedirs, remove",
+      "from os.path import exists, join",
+      "import joblib",
+      "import numpy as np",
+      "import scipy.sparse as sp",
+      "from sklearn.datasets import get_data_home",
+      "from sklearn.datasets._base import (",
+      "from sklearn.datasets._svmlight_format_io import load_svmlight_files",
+      "from sklearn.utils import Bunch",
+      "from sklearn.utils import shuffle as shuffle_",
+      "from sklearn.utils._param_validation import Interval, StrOptions, validate_params"
+    ],
+    "classes": [],
+    "functions": [
+      "fetch_rcv1",
+      "_inverse_permutation",
+      "_find_permutation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_492_704592224529d9a2_AI_Chariot_Legacy_666_1.0.0_20260508__rcv1.py.json"
+}

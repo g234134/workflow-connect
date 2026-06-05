@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_output_capturing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_output_capturing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12394,
+  "content_sha256": "b0d122c82272dabbe6bb090925a6f727dce008a24be9dcb7e829735dce2587e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 285,
+    "non_empty_lines": 234,
+    "char_count": 12394,
+    "preview_lines": [
+      "# Copyright 2026 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import threading",
+      "from contextvars import ContextVar",
+      "from dataclasses import dataclass",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING",
+      "from .import_utils import is_torchdynamo_compiling, requires",
+      "from torch import nn",
+      "from ..modeling_utils import PreTrainedModel",
+      "from ..modeling_utils import PreTrainedModel"
+    ],
+    "classes": [
+      "OutputRecorder",
+      "CompileableContextVar"
+    ],
+    "functions": [
+      "install_output_capturing_hook",
+      "recursively_install_hooks",
+      "install_all_output_capturing_hooks",
+      "maybe_install_capturing_hooks",
+      "capture_outputs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_304_b0d122c82272dabb_AI_Chariot_Legacy_666_1.0.0_20260508_output_capturing.py.json"
+}

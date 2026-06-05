@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_line.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_line.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10378,
+  "content_sha256": "bd79dc26e9f2da3e6e9422724f4d51b75b53c0f89be177a54b77490dd2578f1d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 309,
+    "non_empty_lines": 260,
+    "char_count": 10378,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.generators import line",
+      "from networkx.utils import edges_equal",
+      "class TestGeneratorLine:",
+      "    def test_star(self):",
+      "        G = nx.star_graph(5)",
+      "        L = nx.line_graph(G)",
+      "        assert nx.is_isomorphic(L, nx.complete_graph(5))",
+      "    def test_path(self):"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.generators import line",
+      "from networkx.utils import edges_equal"
+    ],
+    "classes": [
+      "TestGeneratorLine",
+      "TestGeneratorInverseLine",
+      "TestGeneratorPrivateFunctions"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_274_bd79dc26e9f2da3e_AI_Chariot_Legacy_666_1.0.0_20260508_test_line.py.json"
+}

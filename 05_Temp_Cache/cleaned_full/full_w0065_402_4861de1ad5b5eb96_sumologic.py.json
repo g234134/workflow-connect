@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\secrets_plugins\\sumologic.py",
+  "name": "sumologic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 783,
+  "content_sha256": "4861de1ad5b5eb96d1778e122c4171cce9b28d7172573a2be85e3ef54bef8a5a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 17,
+    "char_count": 783,
+    "preview_lines": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector",
+      "class SumoLogicDetector(RegexBasedDetector):",
+      "    \"\"\"Scans for SumoLogic Access ID and Access Token.\"\"\"",
+      "    @property",
+      "    def secret_type(self) -> str:",
+      "        return \"SumoLogic\"",
+      "    @property",
+      "    def denylist(self) -> list[re.Pattern]:",
+      "        return ["
+    ],
+    "imports": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector"
+    ],
+    "classes": [
+      "SumoLogicDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_402_4861de1ad5b5eb96_sumologic.py.json"
+}

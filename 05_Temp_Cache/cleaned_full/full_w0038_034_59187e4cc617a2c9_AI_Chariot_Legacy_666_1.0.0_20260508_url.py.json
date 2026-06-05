@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_url.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_url.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15205,
+  "content_sha256": "59187e4cc617a2c9a0a7c9bc953e07e6ca681f0e7252395c3027d4e77024a00b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 469,
+    "non_empty_lines": 384,
+    "char_count": 15205,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import re",
+      "import typing",
+      "from ..exceptions import LocationParseError",
+      "from .util import to_str",
+      "# We only want to normalize urls with an HTTP(S) scheme.",
+      "# urllib3 infers URLs without a scheme (None) to be http.",
+      "_NORMALIZABLE_SCHEMES = (\"http\", \"https\", None)",
+      "# Almost all of these patterns were derived from the",
+      "# 'rfc3986' module: https://github.com/python-hyper/rfc3986"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re",
+      "import typing",
+      "from ..exceptions import LocationParseError",
+      "from .util import to_str",
+      "import urllib3"
+    ],
+    "classes": [
+      "Url"
+    ],
+    "functions": [
+      "_encode_invalid_chars",
+      "_encode_invalid_chars",
+      "_encode_invalid_chars",
+      "_remove_path_dot_segments",
+      "_normalize_host",
+      "_normalize_host",
+      "_normalize_host",
+      "_idna_encode",
+      "_encode_target",
+      "parse_url"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_034_59187e4cc617a2c9_AI_Chariot_Legacy_666_1.0.0_20260508_url.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 416,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_array_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_array_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1150,
+  "content_sha256": "811b2a97d2347fb45093ed5bf223dad630d9b1dfdab82174e7eba5c410957cde",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 27,
+    "char_count": 1150,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.lib import array_utils",
+      "from numpy.testing import assert_equal",
+      "class TestByteBounds:",
+      "    def test_byte_bounds(self):",
+      "        # pointer difference matches size * itemsize",
+      "        # due to contiguity",
+      "        a = np.arange(12).reshape(3, 4)",
+      "        low, high = array_utils.byte_bounds(a)",
+      "        assert_equal(high - low, a.size * a.itemsize)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.lib import array_utils",
+      "from numpy.testing import assert_equal"
+    ],
+    "classes": [
+      "TestByteBounds"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_416_811b2a97d2347fb4_AI_Chariot_Legacy_666_1.0.0_20260508_test_array_utils.py.json"
+}

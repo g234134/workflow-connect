@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_documents.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_documents.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1906,
+  "content_sha256": "5d79c9bf0eb51d990abfa6f821ef1179304786833f5a18e7fb82d9d503df3255",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 68,
+    "char_count": 1906,
+    "preview_lines": [
+      "# coding: utf-8",
+      "import pytest  # NOQA",
+      "from .roundtrip import round_trip, round_trip_load_all",
+      "class TestDocument:",
+      "    def test_single_doc_begin_end(self):",
+      "        inp = \"\"\"\\",
+      "        ---",
+      "        - a",
+      "        - b",
+      "        ..."
+    ],
+    "imports": [
+      "import pytest  # NOQA",
+      "from .roundtrip import round_trip, round_trip_load_all",
+      "from srsly.ruamel_yaml import dump_all, RoundTripDumper",
+      "from srsly.ruamel_yaml import parser"
+    ],
+    "classes": [
+      "TestDocument"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_083_5d79c9bf0eb51d99_AI_Chariot_Legacy_666_1.0.0_20260508_test_documents.py.json"
+}

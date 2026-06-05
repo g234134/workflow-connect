@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_laplacian.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_laplacian.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14081,
+  "content_sha256": "d00189c1eceaa21a10b6b99367de06be0e6f21230207bfc6d9074997b2454d78",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 336,
+    "non_empty_lines": 309,
+    "char_count": 14081,
+    "preview_lines": [
+      "import pytest",
+      "np = pytest.importorskip(\"numpy\")",
+      "pytest.importorskip(\"scipy\")",
+      "import networkx as nx",
+      "from networkx.generators.degree_seq import havel_hakimi_graph",
+      "from networkx.generators.expanders import margulis_gabber_galil_graph",
+      "class TestLaplacian:",
+      "    @classmethod",
+      "    def setup_class(cls):",
+      "        deg = [3, 2, 2, 1, 0]"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.generators.degree_seq import havel_hakimi_graph",
+      "from networkx.generators.expanders import margulis_gabber_galil_graph"
+    ],
+    "classes": [
+      "TestLaplacian"
+    ],
+    "functions": [
+      "test_directed_laplacian",
+      "test_directed_combinatorial_laplacian"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_226_d00189c1eceaa21a_AI_Chariot_Legacy_666_1.0.0_20260508_test_laplacian.py.json"
+}

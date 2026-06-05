@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__cpp_extension_versioner.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__cpp_extension_versioner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2069,
+  "content_sha256": "e6d0de0c631184f0b1c4487d1e742050c59352add0e3913e16cd8d40ee663888",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 45,
+    "char_count": 2069,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import collections",
+      "Entry = collections.namedtuple('Entry', 'version, hash')",
+      "def update_hash(seed, value):",
+      "    # Good old boost::hash_combine",
+      "    # https://www.boost.org/doc/libs/1_35_0/doc/html/boost/hash_combine_id241013.html",
+      "    return seed ^ (hash(value) + 0x9e3779b9 + (seed << 6) + (seed >> 2))",
+      "def hash_source_files(hash_value, source_files):",
+      "    for filename in source_files:",
+      "        with open(filename) as file:"
+    ],
+    "imports": [
+      "import collections"
+    ],
+    "classes": [
+      "ExtensionVersioner"
+    ],
+    "functions": [
+      "update_hash",
+      "hash_source_files",
+      "hash_build_arguments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_387_e6d0de0c631184f0_AI_Chariot_Legacy_666_1.0.0_20260508__cpp_extension_versioner.py.json"
+}

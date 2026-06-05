@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:47:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\functorch\\dim\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4898,
+  "content_sha256": "e6b3e2dd9ae71761574d7dcb3713b270bf7dd4e217d683c786559d5c69c671bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 179,
+    "non_empty_lines": 143,
+    "char_count": 4898,
+    "preview_lines": [
+      "import dis",
+      "import inspect",
+      "from typing import Sequence, Union",
+      "import torch",
+      "import functorch._C",
+      "from functorch._C import dim as _C",
+      "from .tree_map import tree_flatten, tree_map",
+      "from .wrap_type import wrap_type",
+      "_C._patch_tensor_class()",
+      "dims, DimList, dimlists = _C.dims, _C.DimList, _C.dimlists"
+    ],
+    "imports": [
+      "import dis",
+      "import inspect",
+      "from typing import Sequence, Union",
+      "import torch",
+      "import functorch._C",
+      "from functorch._C import dim as _C",
+      "from .tree_map import tree_flatten, tree_map",
+      "from .wrap_type import wrap_type",
+      "from . import op_properties",
+      "from . import reference"
+    ],
+    "classes": [
+      "DimensionMismatchError",
+      "DimensionBindError",
+      "_Tensor",
+      "Dim",
+      "Tensor"
+    ],
+    "functions": [
+      "cat"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_181_e6b3e2dd9ae71761___init__.py.json"
+}

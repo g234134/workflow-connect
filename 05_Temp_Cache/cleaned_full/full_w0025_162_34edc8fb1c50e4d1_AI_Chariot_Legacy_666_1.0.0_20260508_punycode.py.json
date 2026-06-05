@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 162,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_punycode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_punycode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6883,
+  "content_sha256": "34edc8fb1c50e4d1cbaa1e008bb491cd7c12116c316e51974f333fe7b628eb7c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 237,
+    "non_empty_lines": 207,
+    "char_count": 6882,
+    "preview_lines": [
+      "\"\"\" Codec for the Punicode encoding, as specified in RFC 3492",
+      "Written by Martin v. Löwis.",
+      "\"\"\"",
+      "import codecs",
+      "##################### Encoding #####################################",
+      "def segregate(str):",
+      "    \"\"\"3.1 Basic code point segregation\"\"\"",
+      "    base = bytearray()",
+      "    extended = set()",
+      "    for c in str:"
+    ],
+    "imports": [
+      "import codecs"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamWriter",
+      "StreamReader"
+    ],
+    "functions": [
+      "segregate",
+      "selective_len",
+      "selective_find",
+      "insertion_unsort",
+      "T",
+      "generate_generalized_integer",
+      "adapt",
+      "generate_integers",
+      "punycode_encode",
+      "decode_generalized_number",
+      "insertion_sort",
+      "punycode_decode",
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_162_34edc8fb1c50e4d1_AI_Chariot_Legacy_666_1.0.0_20260508_punycode.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fiscal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fiscal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26080,
+  "content_sha256": "138669b7fb8d0767f6c009bf88644b25d3588cd06ddb248b955eeb9674a44c39",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 642,
+    "non_empty_lines": 565,
+    "char_count": 26080,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for Fiscal Year and Fiscal Quarter offset classes",
+      "\"\"\"",
+      "from datetime import datetime",
+      "from dateutil.relativedelta import relativedelta",
+      "import pytest",
+      "from pandas import Timestamp",
+      "from pandas.tests.tseries.offsets.common import (",
+      "    WeekDay,",
+      "    assert_is_on_offset,"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from dateutil.relativedelta import relativedelta",
+      "import pytest",
+      "from pandas import Timestamp",
+      "from pandas.tests.tseries.offsets.common import (",
+      "from pandas.tseries.offsets import ("
+    ],
+    "classes": [
+      "TestFY5253LastOfMonth",
+      "TestFY5253NearestEndMonth",
+      "TestFY5253LastOfMonthQuarter",
+      "TestFY5253NearestEndMonthQuarter"
+    ],
+    "functions": [
+      "makeFY5253LastOfMonthQuarter",
+      "makeFY5253NearestEndMonthQuarter",
+      "makeFY5253NearestEndMonth",
+      "makeFY5253LastOfMonth",
+      "test_get_offset_name",
+      "test_bunched_yearends",
+      "test_fy5253_last_onoffset",
+      "test_fy5253_nearest_onoffset",
+      "test_fy5253qtr_onoffset_nearest",
+      "test_fy5253qtr_onoffset_last"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_284_138669b7fb8d0767_AI_Chariot_Legacy_666_1.0.0_20260508_test_fiscal.py.json"
+}

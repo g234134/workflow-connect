@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 371,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\todo.py",
+  "name": "todo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15362,
+  "content_sha256": "15581e1419df6facc0b3dfc8f37dc2a83fde2cdc42db685d54fa767afe8b4052",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 345,
+    "non_empty_lines": 277,
+    "char_count": 15359,
+    "preview_lines": [
+      "\"\"\"Planning and task management middleware for agents.\"\"\"",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Annotated, Any, Literal, cast",
+      "from langchain_core.messages import AIMessage, SystemMessage, ToolMessage",
+      "from langchain_core.tools import InjectedToolCallId, StructuredTool, tool",
+      "from langgraph.runtime import Runtime",
+      "from langgraph.types import Command",
+      "from pydantic import BaseModel",
+      "from typing_extensions import NotRequired, TypedDict, override",
+      "from langchain.agents.middleware.types import ("
+    ],
+    "imports": [
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Annotated, Any, Literal, cast",
+      "from langchain_core.messages import AIMessage, SystemMessage, ToolMessage",
+      "from langchain_core.tools import InjectedToolCallId, StructuredTool, tool",
+      "from langgraph.runtime import Runtime",
+      "from langgraph.types import Command",
+      "from pydantic import BaseModel",
+      "from typing_extensions import NotRequired, TypedDict, override",
+      "from langchain.agents.middleware.types import (",
+      "from langchain.tools import ToolRuntime",
+      "from langchain.agents.middleware.todo import TodoListMiddleware",
+      "from langchain.agents import create_agent"
+    ],
+    "classes": [
+      "Todo",
+      "PlanningState",
+      "WriteTodosInput",
+      "TodoListMiddleware"
+    ],
+    "functions": [
+      "write_todos",
+      "_write_todos"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_371_15581e1419df6fac_todo.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mpl_util.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mpl_util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3529,
+  "content_sha256": "ea83134f7ca694c83a3e0f7d4504970436b7ada6446540d908fbb7cbe7f84b41",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 69,
+    "char_count": 3529,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from itertools import pairwise",
+      "from typing import TYPE_CHECKING, cast",
+      "import matplotlib.path as mpath",
+      "import numpy as np",
+      "from contourpy import FillType, LineType",
+      "from contourpy.array import codes_from_offsets",
+      "if TYPE_CHECKING:",
+      "    from contourpy._contourpy import FillReturn, LineReturn, LineReturn_Separate",
+      "def filled_to_mpl_paths(filled: FillReturn, fill_type: FillType) -> list[mpath.Path]:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from itertools import pairwise",
+      "from typing import TYPE_CHECKING, cast",
+      "import matplotlib.path as mpath",
+      "import numpy as np",
+      "from contourpy import FillType, LineType",
+      "from contourpy.array import codes_from_offsets",
+      "from contourpy._contourpy import FillReturn, LineReturn, LineReturn_Separate"
+    ],
+    "classes": [],
+    "functions": [
+      "filled_to_mpl_paths",
+      "lines_to_mpl_paths"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_183_ea83134f7ca694c8_AI_Chariot_Legacy_666_1.0.0_20260508_mpl_util.py.json"
+}

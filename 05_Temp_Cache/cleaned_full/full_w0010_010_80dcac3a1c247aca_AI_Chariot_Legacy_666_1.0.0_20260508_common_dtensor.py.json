@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 10,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_dtensor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_dtensor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20449,
+  "content_sha256": "80dcac3a1c247aca8e73e3107466b0dc56590ab6ac55b37c466a2c2a8cd7ee0c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 548,
+    "non_empty_lines": 459,
+    "char_count": 20449,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import itertools",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from functools import wraps",
+      "from typing import Any, Callable, cast, Dict, Iterator, List, Sequence, Tuple, TypeVar",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.nn as nn"
+    ],
+    "imports": [
+      "import itertools",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from functools import wraps",
+      "from typing import Any, Callable, cast, Dict, Iterator, List, Sequence, Tuple, TypeVar",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.distributed._tensor import DeviceMesh, distribute_tensor, Replicate, Shard",
+      "from torch.distributed._tensor.placement_types import Placement",
+      "from torch.distributed.tensor.parallel import (",
+      "from torch.testing._internal.common_distributed import (",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten, TreeSpec"
+    ],
+    "classes": [
+      "RMSNormPython",
+      "MLPModule",
+      "MLPStacked",
+      "ModelArgs",
+      "Attention",
+      "FeedForward",
+      "TransformerBlock",
+      "Transformer",
+      "DTensorTestBase",
+      "DTensorOpTestBase",
+      "DTensorConverter"
+    ],
+    "functions": [
+      "skip_unless_torch_gpu",
+      "with_comms"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_010_80dcac3a1c247aca_AI_Chariot_Legacy_666_1.0.0_20260508_common_dtensor.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_glm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_glm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33222,
+  "content_sha256": "ffad7595ddc59ff2b61bbe8b67ac1a726fa354d5555e67eab9ab4e6c0128db35",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 915,
+    "non_empty_lines": 757,
+    "char_count": 33222,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "\"\"\"",
+      "Generalized Linear Models with Exponential Dispersion Family",
+      "\"\"\"",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "import scipy.optimize",
+      "from sklearn._loss.loss import (",
+      "    HalfGammaLoss,"
+    ],
+    "imports": [
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "import scipy.optimize",
+      "from sklearn._loss.loss import (",
+      "from sklearn.base import BaseEstimator, RegressorMixin, _fit_context",
+      "from sklearn.linear_model._glm._newton_solver import NewtonCholeskySolver, NewtonSolver",
+      "from sklearn.linear_model._linear_loss import LinearModelLoss",
+      "from sklearn.utils import check_array",
+      "from sklearn.utils._openmp_helpers import _openmp_effective_n_threads",
+      "from sklearn.utils._param_validation import Hidden, Interval, StrOptions",
+      "from sklearn.utils.fixes import _get_additional_lbfgs_options_dict",
+      "from sklearn.utils.optimize import _check_optimize_result",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "_GeneralizedLinearRegressor",
+      "PoissonRegressor",
+      "GammaRegressor",
+      "TweedieRegressor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_120_ffad7595ddc59ff2_AI_Chariot_Legacy_666_1.0.0_20260508_glm.py.json"
+}

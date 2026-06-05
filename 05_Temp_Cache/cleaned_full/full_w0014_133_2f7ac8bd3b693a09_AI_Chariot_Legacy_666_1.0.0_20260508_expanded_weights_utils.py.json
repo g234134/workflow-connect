@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7770,
+  "content_sha256": "2f7ac8bd3b693a0909ae46d46899654f4d6f212fbcae83185af5c24f58634b54",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 159,
+    "char_count": 7770,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import Optional",
+      "import torch",
+      "from .expanded_weights_impl import ExpandedWeight",
+      "def is_batch_first(expanded_args_and_kwargs):",
+      "    batch_first = None",
+      "    for arg in expanded_args_and_kwargs:",
+      "        if not isinstance(arg, ExpandedWeight):",
+      "            continue",
+      "        if not batch_first:"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "import torch",
+      "from .expanded_weights_impl import ExpandedWeight"
+    ],
+    "classes": [],
+    "functions": [
+      "is_batch_first",
+      "standard_kwargs",
+      "forward_helper",
+      "_check_and_unexpand_args",
+      "maybe_scale_by_batch_size",
+      "set_grad_sample_if_exists",
+      "unpack_expanded_weight_or_tensor",
+      "sum_over_all_but_batch_and_last_n"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_133_2f7ac8bd3b693a09_AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_utils.py.json"
+}

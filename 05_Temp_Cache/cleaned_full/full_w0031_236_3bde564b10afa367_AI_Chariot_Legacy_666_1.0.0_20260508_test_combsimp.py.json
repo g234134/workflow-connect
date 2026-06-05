@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_combsimp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_combsimp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2958,
+  "content_sha256": "3bde564b10afa367c342cf9495aac07127f4ffc3373ee4d1efa9614440e8340f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 57,
+    "char_count": 2958,
+    "preview_lines": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.combinatorial.factorials import (FallingFactorial, RisingFactorial, binomial, factorial)",
+      "from sympy.functions.special.gamma_functions import gamma",
+      "from sympy.simplify.combsimp import combsimp",
+      "from sympy.abc import x",
+      "def test_combsimp():",
+      "    k, m, n = symbols('k m n', integer = True)",
+      "    assert combsimp(factorial(n)) == factorial(n)",
+      "    assert combsimp(binomial(n, k)) == binomial(n, k)"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.combinatorial.factorials import (FallingFactorial, RisingFactorial, binomial, factorial)",
+      "from sympy.functions.special.gamma_functions import gamma",
+      "from sympy.simplify.combsimp import combsimp",
+      "from sympy.abc import x"
+    ],
+    "classes": [],
+    "functions": [
+      "test_combsimp",
+      "test_issue_6878",
+      "test_issue_14528"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_236_3bde564b10afa367_AI_Chariot_Legacy_666_1.0.0_20260508_test_combsimp.py.json"
+}

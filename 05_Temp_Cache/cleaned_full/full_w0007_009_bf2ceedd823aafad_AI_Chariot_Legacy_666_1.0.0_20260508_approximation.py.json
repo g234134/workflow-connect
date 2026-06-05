@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_approximation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_approximation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8817,
+  "content_sha256": "bf2ceedd823aafadceab52851eb433d369865c0707db77a6a8d62126e51a159e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 246,
+    "non_empty_lines": 207,
+    "char_count": 8817,
+    "preview_lines": [
+      "from ..libmp.backend import xrange",
+      "from .calculus import defun",
+      "#----------------------------------------------------------------------------#",
+      "#                              Approximation methods                         #",
+      "#----------------------------------------------------------------------------#",
+      "# The Chebyshev approximation formula is given at:",
+      "# http://mathworld.wolfram.com/ChebyshevApproximationFormula.html",
+      "# The only major changes in the following code is that we return the",
+      "# expanded polynomial coefficients instead of Chebyshev coefficients,",
+      "# and that we automatically transform [a,b] -> [-1,1] and back"
+    ],
+    "imports": [
+      "from ..libmp.backend import xrange",
+      "from .calculus import defun"
+    ],
+    "classes": [],
+    "functions": [
+      "chebcoeff",
+      "chebT",
+      "chebyfit",
+      "fourier",
+      "fourierval"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_009_bf2ceedd823aafad_AI_Chariot_Legacy_666_1.0.0_20260508_approximation.py.json"
+}

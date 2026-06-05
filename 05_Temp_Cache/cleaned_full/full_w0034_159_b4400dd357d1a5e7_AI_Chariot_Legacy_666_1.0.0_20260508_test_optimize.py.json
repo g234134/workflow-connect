@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_optimize.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_optimize.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7823,
+  "content_sha256": "b4400dd357d1a5e72aa227c1e598a3075690be1bde1d0eef38a4f267729ce8e4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 191,
+    "char_count": 7823,
+    "preview_lines": [
+      "import warnings",
+      "import numpy as np",
+      "import pytest",
+      "from scipy.optimize import fmin_ncg",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.utils._bunch import Bunch",
+      "from sklearn.utils._testing import assert_allclose",
+      "from sklearn.utils.optimize import _check_optimize_result, _newton_cg",
+      "def test_newton_cg(global_random_seed):",
+      "    # Test that newton_cg gives same result as scipy's fmin_ncg"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "import pytest",
+      "from scipy.optimize import fmin_ncg",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.utils._bunch import Bunch",
+      "from sklearn.utils._testing import assert_allclose",
+      "from sklearn.utils.optimize import _check_optimize_result, _newton_cg"
+    ],
+    "classes": [],
+    "functions": [
+      "test_newton_cg",
+      "test_newton_cg_verbosity",
+      "test_check_optimize"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_159_b4400dd357d1a5e7_AI_Chariot_Legacy_666_1.0.0_20260508_test_optimize.py.json"
+}

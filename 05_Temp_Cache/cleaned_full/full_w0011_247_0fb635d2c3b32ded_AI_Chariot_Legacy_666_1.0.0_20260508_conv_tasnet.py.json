@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 247,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conv_tasnet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conv_tasnet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12870,
+  "content_sha256": "0fb635d2c3b32ded3783281f37527947bdd220790819540e92a290e8d8b7a3fb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 330,
+    "non_empty_lines": 283,
+    "char_count": 12868,
+    "preview_lines": [
+      "\"\"\"Implements Conv-TasNet with building blocks of it.",
+      "Based on https://github.com/naplab/Conv-TasNet/tree/e66d82a8f956a69749ec8a4ae382217faa097c5c",
+      "\"\"\"",
+      "from typing import Optional, Tuple",
+      "import torch",
+      "class ConvBlock(torch.nn.Module):",
+      "    \"\"\"1D Convolutional block.",
+      "    Args:",
+      "        io_channels (int): The number of input/output channels, <B, Sc>",
+      "        hidden_channels (int): The number of channels in the internal layers, <H>."
+    ],
+    "imports": [
+      "from typing import Optional, Tuple",
+      "import torch"
+    ],
+    "classes": [
+      "ConvBlock",
+      "MaskGenerator",
+      "ConvTasNet"
+    ],
+    "functions": [
+      "conv_tasnet_base"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_247_0fb635d2c3b32ded_AI_Chariot_Legacy_666_1.0.0_20260508_conv_tasnet.py.json"
+}

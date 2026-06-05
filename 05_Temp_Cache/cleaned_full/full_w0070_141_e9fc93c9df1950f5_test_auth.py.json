@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\ollama\\tests\\unit_tests\\test_auth.py",
+  "name": "test_auth.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13306,
+  "content_sha256": "e9fc93c9df1950f540e650e28f980719894228bc9d02dd8fcbb7598e7d93a22a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 308,
+    "non_empty_lines": 240,
+    "char_count": 13303,
+    "preview_lines": [
+      "\"\"\"Test URL authentication parsing functionality.\"\"\"",
+      "import base64",
+      "from unittest.mock import MagicMock, patch",
+      "from langchain_ollama._utils import parse_url_with_auth",
+      "from langchain_ollama.chat_models import ChatOllama",
+      "from langchain_ollama.embeddings import OllamaEmbeddings",
+      "from langchain_ollama.llms import OllamaLLM",
+      "MODEL_NAME = \"llama3.1\"",
+      "class TestParseUrlWithAuth:",
+      "    \"\"\"Test the parse_url_with_auth utility function.\"\"\""
+    ],
+    "imports": [
+      "import base64",
+      "from unittest.mock import MagicMock, patch",
+      "from langchain_ollama._utils import parse_url_with_auth",
+      "from langchain_ollama.chat_models import ChatOllama",
+      "from langchain_ollama.embeddings import OllamaEmbeddings",
+      "from langchain_ollama.llms import OllamaLLM"
+    ],
+    "classes": [
+      "TestParseUrlWithAuth",
+      "TestChatOllamaUrlAuth",
+      "TestOllamaLLMUrlAuth",
+      "TestOllamaEmbeddingsUrlAuth",
+      "TestUrlAuthEdgeCases"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_141_e9fc93c9df1950f5_test_auth.py.json"
+}

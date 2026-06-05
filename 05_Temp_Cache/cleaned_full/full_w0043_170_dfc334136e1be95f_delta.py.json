@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 170,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\concrete\\delta.py",
+  "name": "delta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9870,
+  "content_sha256": "dfc334136e1be95f9d9fbd3a5979f294ce0302fbf26fab45cbb791138a11e41a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 327,
+    "non_empty_lines": 268,
+    "char_count": 9870,
+    "preview_lines": [
+      "\"\"\"",
+      "This module implements sums and products containing the Kronecker Delta function.",
+      "References",
+      "==========",
+      ".. [1] https://mathworld.wolfram.com/KroneckerDelta.html",
+      "\"\"\"",
+      "from .products import product",
+      "from .summations import Sum, summation",
+      "from sympy.core import Add, Mul, S, Dummy",
+      "from sympy.core.cache import cacheit"
+    ],
+    "imports": [
+      "from .products import product",
+      "from .summations import Sum, summation",
+      "from sympy.core import Add, Mul, S, Dummy",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.functions import KroneckerDelta, Piecewise, piecewise_fold",
+      "from sympy.polys.polytools import factor",
+      "from sympy.sets.sets import Interval",
+      "from sympy.solvers.solvers import solve"
+    ],
+    "classes": [],
+    "functions": [
+      "_expand_delta",
+      "_extract_delta",
+      "_has_simple_delta",
+      "_is_simple_delta",
+      "_remove_multiple_delta",
+      "_simplify_delta",
+      "deltaproduct",
+      "deltasummation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_170_dfc334136e1be95f_delta.py.json"
+}

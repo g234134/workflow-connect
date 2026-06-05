@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 217,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\mps\\event.py",
+  "name": "event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1701,
+  "content_sha256": "1a94b88d70597bef85a1de884dfde429553834d8f049ef10da414ffb68e943ec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 34,
+    "char_count": 1701,
+    "preview_lines": [
+      "import torch",
+      "class Event:",
+      "    r\"\"\"Wrapper around an MPS event.",
+      "    MPS events are synchronization markers that can be used to monitor the",
+      "    device's progress, to accurately measure timing, and to synchronize MPS streams.",
+      "    Args:",
+      "        enable_timing (bool, optional): indicates if the event should measure time",
+      "            (default: ``False``)",
+      "    \"\"\"",
+      "    def __init__(self, enable_timing=False):"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "Event"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_217_1a94b88d70597bef_event.py.json"
+}

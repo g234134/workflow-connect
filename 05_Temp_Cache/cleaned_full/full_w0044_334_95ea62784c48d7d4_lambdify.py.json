@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 334,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\utilities\\lambdify.py",
+  "name": "lambdify.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 57816,
+  "content_sha256": "95ea62784c48d7d42f6583eb1a5fd665a170b5af18641a3a020c439f0ab4d68c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1592,
+    "non_empty_lines": 1315,
+    "char_count": 57816,
+    "preview_lines": [
+      "\"\"\"",
+      "This module provides convenient functions to transform SymPy expressions to",
+      "lambda functions which can be used to calculate numerical values very fast.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import builtins",
+      "import inspect",
+      "import keyword",
+      "import textwrap"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import builtins",
+      "import inspect",
+      "import keyword",
+      "import textwrap",
+      "import linecache",
+      "import weakref",
+      "from sympy.external import import_module # noqa:F401",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from sympy.utilities.iterables import (is_sequence, iterable,",
+      "from sympy.utilities.misc import filldedent"
+    ],
+    "classes": [
+      "_EvaluatorPrinter",
+      "_TensorflowEvaluatorPrinter"
+    ],
+    "functions": [
+      "_import",
+      "lambdify",
+      "_module_present",
+      "_get_namespace",
+      "_recursive_to_string",
+      "lambdastr",
+      "_imp_namespace",
+      "implemented_function",
+      "_too_large_for_docstring"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_334_95ea62784c48d7d4_lambdify.py.json"
+}

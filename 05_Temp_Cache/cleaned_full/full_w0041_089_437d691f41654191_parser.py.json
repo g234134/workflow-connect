@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\click\\parser.py",
+  "name": "parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19010,
+  "content_sha256": "437d691f416541912af945c4fc0051ce5ca011fbf13d3b996d6361e317d79b3c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 532,
+    "non_empty_lines": 444,
+    "char_count": 19010,
+    "preview_lines": [
+      "\"\"\"",
+      "This module started out as largely a copy paste from the stdlib's",
+      "optparse module with the features removed that we do not need from",
+      "optparse because we implement them in Click on a higher level (for",
+      "instance type handling, help formatting and a lot more).",
+      "The plan is to remove more and more from here over time.",
+      "The reason this is a different module and not optparse from the stdlib",
+      "is that there are differences in 2.x and 3.x about the error messages",
+      "generated and optparse in the stdlib uses gettext for no good reason",
+      "and might cause us issues."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import collections.abc as cabc",
+      "import typing as t",
+      "from collections import deque",
+      "from gettext import gettext as _",
+      "from gettext import ngettext",
+      "from ._utils import FLAG_NEEDS_VALUE",
+      "from ._utils import UNSET",
+      "from .exceptions import BadArgumentUsage",
+      "from .exceptions import BadOptionUsage",
+      "from .exceptions import NoSuchOption",
+      "from .exceptions import UsageError",
+      "from ._utils import T_FLAG_NEEDS_VALUE",
+      "from ._utils import T_UNSET",
+      "from .core import Argument as CoreArgument",
+      "from .core import Context",
+      "from .core import Option as CoreOption",
+      "from .core import Parameter as CoreParameter"
+    ],
+    "classes": [
+      "_Option",
+      "_Argument",
+      "_ParsingState",
+      "_OptionParser"
+    ],
+    "functions": [
+      "_unpack_args",
+      "_split_opt",
+      "_normalize_opt",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_089_437d691f41654191_parser.py.json"
+}

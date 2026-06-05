@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_nullspace.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_nullspace.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5418,
+  "content_sha256": "7801033e59d590a7c533d8e7d60ced394413a2cd529bdab01f5d02fadf6e2d41",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 209,
+    "non_empty_lines": 162,
+    "char_count": 5418,
+    "preview_lines": [
+      "from sympy import ZZ, Matrix",
+      "from sympy.polys.matrices import DM, DomainMatrix",
+      "from sympy.polys.matrices.ddm import DDM",
+      "from sympy.polys.matrices.sdm import SDM",
+      "import pytest",
+      "zeros = lambda shape, K: DomainMatrix.zeros(shape, K).to_dense()",
+      "eye = lambda n, K: DomainMatrix.eye(n, K).to_dense()",
+      "#",
+      "# DomainMatrix.nullspace can have a divided answer or can return an undivided",
+      "# uncanonical answer. The uncanonical answer is not unique but we can make it"
+    ],
+    "imports": [
+      "from sympy import ZZ, Matrix",
+      "from sympy.polys.matrices import DM, DomainMatrix",
+      "from sympy.polys.matrices.ddm import DDM",
+      "from sympy.polys.matrices.sdm import SDM",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "_to_DM",
+      "_divide_last",
+      "_check_primitive",
+      "_check_divided",
+      "test_Matrix_nullspace",
+      "test_dm_dense_nullspace",
+      "test_dm_sparse_nullspace",
+      "test_ddm_nullspace",
+      "test_sdm_nullspace",
+      "test_dm_dense_nullspace_fracfree",
+      "test_dm_sparse_nullspace_fracfree"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_108_7801033e59d590a7_AI_Chariot_Legacy_666_1.0.0_20260508_test_nullspace.py.json"
+}

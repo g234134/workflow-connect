@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13482,
+  "content_sha256": "f501d060c35bfbcc3cf9e62e22a4a17138cefcb7875c5a104f2b7c279a04ab94",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 396,
+    "non_empty_lines": 351,
+    "char_count": 13482,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import logging",
+      "import os",
+      "import shutil",
+      "import uuid",
+      "from .asyn import AsyncFileSystem, _run_coros_in_chunks, sync_wrapper",
+      "from .callbacks import DEFAULT_CALLBACK",
+      "from .core import filesystem, get_filesystem_class, split_protocol, url_to_fs",
+      "_generic_fs = {}"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import logging",
+      "import os",
+      "import shutil",
+      "import uuid",
+      "from .asyn import AsyncFileSystem, _run_coros_in_chunks, sync_wrapper",
+      "from .callbacks import DEFAULT_CALLBACK",
+      "from .core import filesystem, get_filesystem_class, split_protocol, url_to_fs"
+    ],
+    "classes": [
+      "GenericFileSystem"
+    ],
+    "functions": [
+      "set_generic_fs",
+      "_resolve_fs",
+      "rsync"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_037_f501d060c35bfbcc_AI_Chariot_Legacy_666_1.0.0_20260508_generic.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_syslog.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_syslog.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11849,
+  "content_sha256": "f97c91533236d102934ed56a84902d7d873e963c3472bb23c6a8d60e3aab72a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 292,
+    "non_empty_lines": 236,
+    "char_count": 11849,
+    "preview_lines": [
+      "# Easy to use system logging for Python's logging module.",
+      "#",
+      "# Author: Peter Odding <peter@peterodding.com>",
+      "# Last Change: December 10, 2020",
+      "# URL: https://coloredlogs.readthedocs.io",
+      "\"\"\"",
+      "Easy to use UNIX system logging for Python's :mod:`logging` module.",
+      "Admittedly system logging has little to do with colored terminal output, however:",
+      "- The `coloredlogs` package is my attempt to do Python logging right and system",
+      "  logging is an important part of that equation."
+    ],
+    "imports": [
+      "import logging",
+      "import logging.handlers",
+      "import os",
+      "import socket",
+      "import sys",
+      "from humanfriendly import coerce_boolean",
+      "from humanfriendly.compat import on_macos, on_windows",
+      "from coloredlogs import ("
+    ],
+    "classes": [
+      "SystemLogging"
+    ],
+    "functions": [
+      "enable_system_logging",
+      "connect_to_syslog",
+      "find_syslog_address",
+      "is_syslog_supported",
+      "match_syslog_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_064_f97c91533236d102_AI_Chariot_Legacy_666_1.0.0_20260508_syslog.py.json"
+}

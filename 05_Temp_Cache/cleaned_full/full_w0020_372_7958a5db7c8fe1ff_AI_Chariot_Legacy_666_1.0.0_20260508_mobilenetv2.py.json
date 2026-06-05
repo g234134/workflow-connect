@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mobilenetv2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mobilenetv2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9970,
+  "content_sha256": "7958a5db7c8fe1ff830548632adef799aa3ce33122179634d701cdc21f0709d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 260,
+    "non_empty_lines": 224,
+    "char_count": 9970,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional",
+      "import torch",
+      "from torch import nn, Tensor",
+      "from ..ops.misc import Conv2dNormActivation",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _make_divisible, _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional",
+      "import torch",
+      "from torch import nn, Tensor",
+      "from ..ops.misc import Conv2dNormActivation",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _make_divisible, _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "classes": [
+      "InvertedResidual",
+      "MobileNetV2",
+      "MobileNet_V2_Weights"
+    ],
+    "functions": [
+      "mobilenet_v2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_372_7958a5db7c8fe1ff_AI_Chariot_Legacy_666_1.0.0_20260508_mobilenetv2.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 57,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__einsum_strategy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__einsum_strategy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6846,
+  "content_sha256": "4cf5b97357548b8285374cdf6a7f5636b5cd225187e73cb32f3cce50e5ba39d2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 181,
+    "non_empty_lines": 153,
+    "char_count": 6846,
+    "preview_lines": [
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import List, Set, Tuple",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "from torch.distributed.tensor._op_schema import OpStrategy, PlacementStrategy",
+      "from torch.distributed.tensor.placement_types import (",
+      "    Partial,",
+      "    Placement,",
+      "    Replicate,"
+    ],
+    "imports": [
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import List, Set, Tuple",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "from torch.distributed.tensor._op_schema import OpStrategy, PlacementStrategy",
+      "from torch.distributed.tensor.placement_types import ("
+    ],
+    "classes": [
+      "EinsumDims"
+    ],
+    "functions": [
+      "gen_einsum_strategies"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_057_4cf5b97357548b82_AI_Chariot_Legacy_666_1.0.0_20260508__einsum_strategy.py.json"
+}

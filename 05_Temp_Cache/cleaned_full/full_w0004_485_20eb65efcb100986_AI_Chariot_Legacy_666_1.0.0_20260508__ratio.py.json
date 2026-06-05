@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 485,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ratio.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ratio.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5325,
+  "content_sha256": "20eb65efcb1009866c987cb185ee3992b91bebcbbdc55cfbcc5b175490fe6f66",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 129,
+    "char_count": 5325,
+    "preview_lines": [
+      "from fractions import Fraction",
+      "from math import ceil",
+      "from typing import cast, List, Optional, Sequence, Protocol",
+      "class Edge(Protocol):",
+      "    \"\"\"Any object that defines an edge (such as Layout).\"\"\"",
+      "    size: Optional[int] = None",
+      "    ratio: int = 1",
+      "    minimum_size: int = 1",
+      "def ratio_resolve(total: int, edges: Sequence[Edge]) -> List[int]:",
+      "    \"\"\"Divide total space to satisfy size, ratio, and minimum_size, constraints."
+    ],
+    "imports": [
+      "from fractions import Fraction",
+      "from math import ceil",
+      "from typing import cast, List, Optional, Sequence, Protocol",
+      "from dataclasses import dataclass"
+    ],
+    "classes": [
+      "Edge"
+    ],
+    "functions": [
+      "ratio_resolve",
+      "ratio_reduce",
+      "ratio_distribute"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_485_20eb65efcb100986_AI_Chariot_Legacy_666_1.0.0_20260508__ratio.py.json"
+}

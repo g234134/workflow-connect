@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_distance_functions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_distance_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 191,
+  "content_sha256": "b450a20cc9052d1d1cb8c2816be471807b8ab7779fa22d11accefa0d2af0a358",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 7,
+    "non_empty_lines": 5,
+    "char_count": 191,
+    "preview_lines": [
+      "from chromadb.utils.distance_functions import cosine",
+      "import numpy as np",
+      "def test_cosine_zero() -> None:",
+      "    x = np.array([0.0, 0.0], dtype=np.float16)",
+      "    assert cosine(x, x) == 1.0"
+    ],
+    "imports": [
+      "from chromadb.utils.distance_functions import cosine",
+      "import numpy as np"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cosine_zero"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_053_b450a20cc9052d1d_AI_Chariot_Legacy_666_1.0.0_20260508_distance_functions.py.json"
+}

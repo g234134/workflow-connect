@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cauchysimilarity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cauchysimilarity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1804,
+  "content_sha256": "c3d9478e6d6680643c345a6fd99fb81e0bcb88de0491fe784cfd88d9fd3422b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 50,
+    "char_count": 1804,
+    "preview_lines": [
+      "from typing import Callable, Optional, Tuple, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d",
+      "from ..util import get_width",
+      "InT = Tuple[Floats2d, Floats2d]",
+      "OutT = Floats1d",
+      "@registry.layers(\"CauchySimilarity.v1\")",
+      "def CauchySimilarity(nI: Optional[int] = None) -> Model[InT, OutT]:",
+      "    \"\"\"Compare input vectors according to the Cauchy similarity function proposed by"
+    ],
+    "imports": [
+      "from typing import Callable, Optional, Tuple, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d",
+      "from ..util import get_width"
+    ],
+    "classes": [],
+    "functions": [
+      "CauchySimilarity",
+      "forward",
+      "init",
+      "inverse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_035_c3d9478e6d668064_AI_Chariot_Legacy_666_1.0.0_20260508_cauchysimilarity.py.json"
+}

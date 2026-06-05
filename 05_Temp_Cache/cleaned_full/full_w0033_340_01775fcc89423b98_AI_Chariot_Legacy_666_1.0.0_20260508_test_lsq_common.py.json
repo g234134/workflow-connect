@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lsq_common.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lsq_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9797,
+  "content_sha256": "01775fcc89423b98106b7832ecebbd9a9d520070fcfaa30fd720b27cad64688e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 297,
+    "non_empty_lines": 225,
+    "char_count": 9797,
+    "preview_lines": [
+      "from numpy.testing import assert_, assert_allclose, assert_equal",
+      "from pytest import raises as assert_raises",
+      "import numpy as np",
+      "from scipy.optimize._lsq.common import (",
+      "    step_size_to_bound, find_active_constraints, make_strictly_feasible,",
+      "    CL_scaling_vector, intersect_trust_region, build_quadratic_1d,",
+      "    minimize_quadratic_1d, evaluate_quadratic, reflective_transformation,",
+      "    left_multiplied_operator, right_multiplied_operator)",
+      "class TestBounds:",
+      "    def test_step_size_to_bounds(self):"
+    ],
+    "imports": [
+      "from numpy.testing import assert_, assert_allclose, assert_equal",
+      "from pytest import raises as assert_raises",
+      "import numpy as np",
+      "from scipy.optimize._lsq.common import ("
+    ],
+    "classes": [
+      "TestBounds",
+      "TestQuadraticFunction",
+      "TestTrustRegion"
+    ],
+    "functions": [
+      "test_reflective_transformation",
+      "test_linear_operators"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_340_01775fcc89423b98_AI_Chariot_Legacy_666_1.0.0_20260508_test_lsq_common.py.json"
+}

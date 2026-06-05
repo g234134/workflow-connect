@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sql.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sql.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3767,
+  "content_sha256": "321593e04dd2e205787e240299594577a934d62ae417868985ba7338475021ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 87,
+    "char_count": 3519,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Literal",
+      "from narwhals._duckdb.utils import DeferredTimeZone, narwhals_to_native_dtype",
+      "from narwhals.dataframe import LazyFrame",
+      "from narwhals.translate import from_native",
+      "from narwhals.utils import Version",
+      "if TYPE_CHECKING:",
+      "    from narwhals._compliant.typing import CompliantLazyFrameAny",
+      "    from narwhals.typing import IntoSchema",
+      "try:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Literal",
+      "from narwhals._duckdb.utils import DeferredTimeZone, narwhals_to_native_dtype",
+      "from narwhals.dataframe import LazyFrame",
+      "from narwhals.translate import from_native",
+      "from narwhals.utils import Version",
+      "from narwhals._compliant.typing import CompliantLazyFrameAny",
+      "from narwhals.typing import IntoSchema",
+      "import duckdb  # ignore-banned-import",
+      "import sqlparse"
+    ],
+    "classes": [
+      "SQLTable"
+    ],
+    "functions": [
+      "table"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_188_321593e04dd2e205_AI_Chariot_Legacy_666_1.0.0_20260508_sql.py.json"
+}

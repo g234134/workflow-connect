@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bridges.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bridges.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6066,
+  "content_sha256": "0acc6e7870ce07d6853390fc18ff37bb564a1b3c45d7ddd7069be63117807109",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 205,
+    "non_empty_lines": 161,
+    "char_count": 6066,
+    "preview_lines": [
+      "\"\"\"Bridge-finding algorithms.\"\"\"",
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "__all__ = [\"bridges\", \"has_bridges\", \"local_bridges\"]",
+      "@not_implemented_for(\"directed\")",
+      "@nx._dispatchable",
+      "def bridges(G, root=None):",
+      "    \"\"\"Generate all bridges in a graph.",
+      "    A *bridge* in a graph is an edge whose removal causes the number of"
+    ],
+    "imports": [
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "bridges",
+      "has_bridges",
+      "local_bridges"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_360_0acc6e7870ce07d6_AI_Chariot_Legacy_666_1.0.0_20260508_bridges.py.json"
+}

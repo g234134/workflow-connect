@@ -1,0 +1,44 @@
+{
+  "ticket_id": "A-W4-QA",
+  "role": "戰線 A / Week 4 QA 工兵 A-W4-QA",
+  "status": "done",
+  "date_local": "2026-05-25",
+  "executed": [
+    "暗部 gov_core_system venv：unittest 串跑 7 套件（catalog / selector / executor / facade / adapter / registry / vnext_runner）",
+    "E2E 鏈路 mock 驗證：成功路徑、selection 無工具、validation fail（無 Docker / 無真 PG·Qdrant）",
+    "文件對齊：04_Workflows/SPEC_tool_layer_vnext_draft.md §3 / §4 / §5 / §8"
+  ],
+  "results": {
+    "unittest_total": 43,
+    "unittest_ok": true,
+    "skip_flaky": "無",
+    "e2e_success": {
+      "chain": "select_tools(repo_retrieve) → execute_tool_vnext(repo) → adapter vNext envelope",
+      "tool_id": "repo_code_retrieve_smoke",
+      "vnext_ok": true,
+      "source_envelope": "repo_tool_execution_v1",
+      "envelope_version": "tool_execution_vnext_draft_v0_1"
+    },
+    "e2e_no_tool": {
+      "facade_phase": "selection",
+      "structured_error_code": "no_tool_selected",
+      "selected_tools_len": 0
+    },
+    "e2e_validation_fail": {
+      "structured_error_code": "input_validation_failed",
+      "validation_errors_preserved": true
+    },
+    "spec_alignment_summary": "§3 repo carry 欄位已落地；tool_tier / dispatch_ref / feature_flag 未落地。§4 selector 為 intent 子集；feature_flag 未支援。§5 vNext envelope 已滿足核心欄位；runtime_context_snapshot / trace_id 未映射。§8 W3.5+W4 registry/runner 完成；SPEC 仍 draft、§8.3 orchestration 合流未做",
+    "qa_verdict": "可作 Phase 2 / 戰線 A vNext 參考實作；合流 8.8 須後續票",
+    "file_changes": "無（唯讀 QA）"
+  },
+  "metrics": {
+    "tests_run": 43,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "unittest_elapsed_s": 0.015
+  },
+  "blockers": "無",
+  "next_steps": "若要升格可合流 8.8：補 adapter runtime_context_snapshot、統一 select→vNext facade、§8.3 orchestration catalog／bridge dry-run 票；SPEC 定稿尚書省簽核",
+  "forbidden_zone_note": "未改 core／暗部執行模組；未觸 .env 原文、venv 樹、runtime/checkpoints、DarkOps 根"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 189,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\core\\StreamGuard.h",
+  "name": "StreamGuard.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 6479,
+  "content_sha256": "229e705f52766198f2145fb801c9871b069da5178e1f78a6fd7cf216a3db9295",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 165,
+    "non_empty_lines": 136,
+    "char_count": 6479,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/impl/InlineStreamGuard.h>",
+      "namespace c10 {",
+      "/**",
+      " * A StreamGuard is an RAII class that changes the current device",
+      " * to the device corresponding to some stream, and changes the",
+      " * default stream on that device to be this stream.",
+      " *",
+      " * Use of StreamGuard is HIGHLY discouraged in operator definitions.  In",
+      " * a single operator, you probably don't know enough about the global"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_189_229e705f52766198_StreamGuard.h.json"
+}

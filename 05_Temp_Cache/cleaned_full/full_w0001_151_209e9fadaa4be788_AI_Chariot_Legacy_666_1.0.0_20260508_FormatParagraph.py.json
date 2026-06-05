@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 151,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_FormatParagraph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_FormatParagraph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5850,
+  "content_sha256": "209e9fadaa4be7880717cdd3f7032d0b66d7bfe8d5dd1b8b7a0faeca8204b69d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 146,
+    "char_count": 5850,
+    "preview_lines": [
+      "# Extension to format a paragraph",
+      "# Does basic, standard text formatting, and also understands Python",
+      "# comment blocks.  Thus, for editing Python source code, this",
+      "# extension is really only suitable for reformatting these comment",
+      "# blocks or triple-quoted strings.",
+      "# Known problems with comment reformatting:",
+      "# * If there is a selection marked, and the first line of the",
+      "#   selection is not complete, the block will probably not be detected",
+      "#   as comments, and will have the normal \"text formatting\" rules",
+      "#   applied."
+    ],
+    "imports": [
+      "import re"
+    ],
+    "classes": [
+      "FormatParagraph"
+    ],
+    "functions": [
+      "find_paragraph",
+      "reformat_paragraph",
+      "is_all_white",
+      "get_indent",
+      "get_comment_header"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_151_209e9fadaa4be788_AI_Chariot_Legacy_666_1.0.0_20260508_FormatParagraph.py.json"
+}

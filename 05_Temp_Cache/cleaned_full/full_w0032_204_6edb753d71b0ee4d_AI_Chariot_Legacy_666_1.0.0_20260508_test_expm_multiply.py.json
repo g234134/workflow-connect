@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 204,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_expm_multiply.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_expm_multiply.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15212,
+  "content_sha256": "6edb753d71b0ee4d17d7692c7f89c16db6a320e8bf0cfa680de42f66fa18f6d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 367,
+    "non_empty_lines": 330,
+    "char_count": 15212,
+    "preview_lines": [
+      "\"\"\"Test functions for the sparse.linalg._expm_multiply module.\"\"\"",
+      "from functools import partial",
+      "from itertools import product",
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import (assert_allclose, assert_, assert_equal,",
+      "                           suppress_warnings)",
+      "from scipy.sparse import SparseEfficiencyWarning",
+      "import scipy.sparse",
+      "from scipy.sparse.linalg import aslinearoperator"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from itertools import product",
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import (assert_allclose, assert_, assert_equal,",
+      "from scipy.sparse import SparseEfficiencyWarning",
+      "import scipy.sparse",
+      "from scipy.sparse.linalg import aslinearoperator",
+      "import scipy.linalg",
+      "from scipy.sparse.linalg import expm as sp_expm",
+      "from scipy.sparse.linalg._expm_multiply import (_theta, _compute_p_max,",
+      "from scipy._lib._util import np_long"
+    ],
+    "classes": [
+      "TestExpmActionSimple",
+      "TestExpmActionInterval"
+    ],
+    "functions": [
+      "estimated",
+      "less_than_or_close",
+      "test_expm_multiply_dtype"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_204_6edb753d71b0ee4d_AI_Chariot_Legacy_666_1.0.0_20260508_test_expm_multiply.py.json"
+}

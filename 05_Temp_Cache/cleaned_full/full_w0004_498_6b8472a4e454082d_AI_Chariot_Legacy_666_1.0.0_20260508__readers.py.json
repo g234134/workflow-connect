@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 498,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__readers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__readers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8590,
+  "content_sha256": "6b8472a4e454082dddd2afe4c4fb8120cee34c3f222ede57f754c7d05b1db8de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 250,
+    "non_empty_lines": 216,
+    "char_count": 8590,
+    "preview_lines": [
+      "# Code to read HTTP data",
+      "#",
+      "# Strategy: each reader is a callable which takes a ReceiveBuffer object, and",
+      "# either:",
+      "# 1) consumes some of it and returns an Event",
+      "# 2) raises a LocalProtocolError (for consistency -- e.g. we call validate()",
+      "#    and it might raise a LocalProtocolError, so simpler just to always use",
+      "#    this)",
+      "# 3) returns None, meaning \"I need more data\"",
+      "#"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Any, Callable, Dict, Iterable, NoReturn, Optional, Tuple, Type, Union",
+      "from ._abnf import chunk_header, header_field, request_line, status_line",
+      "from ._events import Data, EndOfMessage, InformationalResponse, Request, Response",
+      "from ._receivebuffer import ReceiveBuffer",
+      "from ._state import (",
+      "from ._util import LocalProtocolError, RemoteProtocolError, Sentinel, validate"
+    ],
+    "classes": [
+      "ContentLengthReader",
+      "ChunkedReader",
+      "Http10Reader"
+    ],
+    "functions": [
+      "_obsolete_line_fold",
+      "_decode_header_lines",
+      "maybe_read_from_IDLE_client",
+      "maybe_read_from_SEND_RESPONSE_server",
+      "expect_nothing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_498_6b8472a4e454082d_AI_Chariot_Legacy_666_1.0.0_20260508__readers.py.json"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 45,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\common_dtype.py",
+  "name": "common_dtype.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4480,
+  "content_sha256": "a553cb10e4b9e64c5dce574244881106117e08cd65765fcde5afdd917a42cb6e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 131,
+    "non_empty_lines": 97,
+    "char_count": 4480,
+    "preview_lines": [
+      "from typing import List",
+      "import torch",
+      "# Functions and classes for describing the dtypes a function supports",
+      "# NOTE: these helpers should correspond to PyTorch's C++ dispatch macros",
+      "# Verifies each given dtype is a torch.dtype",
+      "def _validate_dtypes(*dtypes):",
+      "    for dtype in dtypes:",
+      "        assert isinstance(dtype, torch.dtype)",
+      "    return dtypes",
+      "# class for tuples corresponding to a PyTorch dispatch macro"
+    ],
+    "imports": [
+      "from typing import List",
+      "import torch"
+    ],
+    "classes": [
+      "_dispatch_dtypes"
+    ],
+    "functions": [
+      "_validate_dtypes",
+      "empty_types",
+      "floating_types",
+      "floating_types_and_half",
+      "floating_types_and",
+      "floating_and_complex_types",
+      "floating_and_complex_types_and",
+      "double_types",
+      "integral_types",
+      "integral_types_and",
+      "all_types",
+      "all_types_and",
+      "complex_types",
+      "complex_types_and",
+      "all_types_and_complex",
+      "all_types_and_complex_and",
+      "all_types_and_half",
+      "custom_types",
+      "get_all_dtypes",
+      "get_all_math_dtypes",
+      "get_all_complex_dtypes",
+      "get_all_int_dtypes",
+      "get_all_fp_dtypes",
+      "get_all_qint_dtypes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_045_a553cb10e4b9e64c_common_dtype.py.json"
+}

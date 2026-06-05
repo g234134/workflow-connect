@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_jupyter_language.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_jupyter_language.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20361,
+  "content_sha256": "6907f6d96038015315c6c22b84fdc4d312846608e5adf0b8303bb5f43d3c8739",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 552,
+    "non_empty_lines": 468,
+    "char_count": 20361,
+    "preview_lines": [
+      "\"\"\"",
+      "This is NOT jupyter language, this is just python. ",
+      "Gotta split this out, generalize it, and move all the python additions to python.py, which imports this",
+      "\"\"\"",
+      "import ast",
+      "import logging",
+      "import os",
+      "import queue",
+      "import re",
+      "import sys"
+    ],
+    "imports": [
+      "import ast",
+      "import logging",
+      "import os",
+      "import queue",
+      "import re",
+      "import sys",
+      "import threading",
+      "import time",
+      "import traceback",
+      "import litellm",
+      "from jupyter_client import KernelManager",
+      "from ..base_language import BaseLanguage",
+      "from ipykernel import kernelapp as app",
+      "import matplotlib",
+      "import matplotlib.pyplot as plt"
+    ],
+    "classes": [
+      "JupyterLanguage",
+      "AddLinePrints"
+    ],
+    "functions": [
+      "preprocess_python",
+      "add_active_line_prints",
+      "wrap_in_try_except",
+      "string_to_python"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_363_6907f6d960380153_AI_Chariot_Legacy_666_1.0.0_20260508_jupyter_language.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__netcdf.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__netcdf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40317,
+  "content_sha256": "fafd8df830be7f8aa714cac2db2310b26617c713a1102643598e9d9c51a3d78b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1094,
+    "non_empty_lines": 911,
+    "char_count": 40317,
+    "preview_lines": [
+      "\"\"\"",
+      "NetCDF reader/writer module.",
+      "This module is used to read and create NetCDF files. NetCDF files are",
+      "accessed through the `netcdf_file` object. Data written to and from NetCDF",
+      "files are contained in `netcdf_variable` objects. Attributes are given",
+      "as member variables of the `netcdf_file` and `netcdf_variable` objects.",
+      "This module implements the Scientific.IO.NetCDF API to read and create",
+      "NetCDF files. The same API is also used in the PyNIO and pynetcdf",
+      "modules, allowing these modules to be used interchangeably when working",
+      "with NetCDF files."
+    ],
+    "imports": [
+      "import warnings",
+      "import weakref",
+      "from operator import mul",
+      "from platform import python_implementation",
+      "import mmap as mm",
+      "import numpy as np",
+      "from numpy import frombuffer, dtype, empty, array, asarray",
+      "from numpy import little_endian as LITTLE_ENDIAN",
+      "from functools import reduce"
+    ],
+    "classes": [
+      "netcdf_file",
+      "netcdf_variable"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_192_fafd8df830be7f8a_AI_Chariot_Legacy_666_1.0.0_20260508__netcdf.py.json"
+}

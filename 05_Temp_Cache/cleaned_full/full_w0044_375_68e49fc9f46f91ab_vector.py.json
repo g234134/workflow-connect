@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 375,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\vector\\vector.py",
+  "name": "vector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20322,
+  "content_sha256": "68e49fc9f46f91ab735875aeba563a9f4fe2a84948e669ed0148cd3e9b690623",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 714,
+    "non_empty_lines": 574,
+    "char_count": 20322,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from itertools import product",
+      "from sympy.core import Add, Basic",
+      "from sympy.core.assumptions import StdFactKB",
+      "from sympy.core.expr import AtomicExpr, Expr",
+      "from sympy.core.power import Pow",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.functions.elementary.miscellaneous import sqrt"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from itertools import product",
+      "from sympy.core import Add, Basic",
+      "from sympy.core.assumptions import StdFactKB",
+      "from sympy.core.expr import AtomicExpr, Expr",
+      "from sympy.core.power import Pow",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.matrices.immutable import ImmutableDenseMatrix as Matrix",
+      "from sympy.vector.basisdependent import (BasisDependentZero,",
+      "from sympy.vector.coordsysrect import CoordSys3D",
+      "from sympy.vector.dyadic import Dyadic, BaseDyadic, DyadicAdd",
+      "from sympy.vector.kind import VectorKind",
+      "from sympy.vector.deloperator import Del",
+      "from sympy.vector.functions import directional_derivative"
+    ],
+    "classes": [
+      "Vector",
+      "BaseVector",
+      "VectorAdd",
+      "VectorMul",
+      "VectorZero",
+      "Cross",
+      "Dot"
+    ],
+    "functions": [
+      "get_postprocessor",
+      "cross",
+      "dot"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_375_68e49fc9f46f91ab_vector.py.json"
+}

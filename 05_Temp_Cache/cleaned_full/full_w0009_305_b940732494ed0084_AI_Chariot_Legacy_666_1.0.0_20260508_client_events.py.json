@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_client_events.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_client_events.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5475,
+  "content_sha256": "b940732494ed0084c91ed610aab7f5f393642499f8ba763b925024858634484b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 168,
+    "non_empty_lines": 128,
+    "char_count": 5475,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from collections.abc import Callable",
+      "from typing import Any, Literal",
+      "from uuid import UUID",
+      "from pydantic import BaseModel",
+      "from .base_event import BaseEvent, resolve_print_callable, wrap_event",
+      "__all__ = [\"UsageSummaryEvent\"]",
+      "class ModelUsageSummary(BaseModel):"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "from typing import Any, Literal",
+      "from uuid import UUID",
+      "from pydantic import BaseModel",
+      "from .base_event import BaseEvent, resolve_print_callable, wrap_event"
+    ],
+    "classes": [
+      "ModelUsageSummary",
+      "ActualUsageSummary",
+      "TotalUsageSummary",
+      "UsageSummaryEvent",
+      "StreamEvent"
+    ],
+    "functions": [
+      "_change_usage_summary_format"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_305_b940732494ed0084_AI_Chariot_Legacy_666_1.0.0_20260508_client_events.py.json"
+}

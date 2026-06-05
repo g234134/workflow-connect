@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\autograd\\forward_ad.py",
+  "name": "forward_ad.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7821,
+  "content_sha256": "daf99939ecbfde16596dae81c4fc2f54ec7d42b6e140dd91794c55c477a44810",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 170,
+    "char_count": 7821,
+    "preview_lines": [
+      "import os",
+      "from collections import namedtuple",
+      "from typing import Any",
+      "import torch",
+      "from .grad_mode import _DecoratorContextManager",
+      "__all__ = [",
+      "    \"UnpackedDualTensor\",",
+      "    \"enter_dual_level\",",
+      "    \"exit_dual_level\",",
+      "    \"make_dual\","
+    ],
+    "imports": [
+      "import os",
+      "from collections import namedtuple",
+      "from typing import Any",
+      "import torch",
+      "from .grad_mode import _DecoratorContextManager",
+      "from torch._decomp import decompositions_for_jvp  # noqa: F401"
+    ],
+    "classes": [
+      "UnpackedDualTensor",
+      "dual_level",
+      "_set_fwd_grad_enabled"
+    ],
+    "functions": [
+      "enter_dual_level",
+      "exit_dual_level",
+      "make_dual",
+      "unpack_dual"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_428_daf99939ecbfde16_forward_ad.py.json"
+}

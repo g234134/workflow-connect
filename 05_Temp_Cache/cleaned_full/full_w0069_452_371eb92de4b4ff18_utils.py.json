@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 452,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 650,
+  "content_sha256": "371eb92de4b4ff18184c6269fcc9f29a2a3bdbdb621f57290656ca64de66b739",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 18,
+    "char_count": 647,
+    "preview_lines": [
+      "import json",
+      "from pathlib import Path",
+      "from typing import TypeVar",
+      "from pydantic import BaseModel, ConfigDict",
+      "from pydantic.alias_generators import to_camel",
+      "class BaseSchema(BaseModel):",
+      "    model_config = ConfigDict(",
+      "        alias_generator=to_camel,",
+      "        populate_by_name=True,",
+      "        from_attributes=True,"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "from typing import TypeVar",
+      "from pydantic import BaseModel, ConfigDict",
+      "from pydantic.alias_generators import to_camel"
+    ],
+    "classes": [
+      "BaseSchema"
+    ],
+    "functions": [
+      "load_spec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_452_371eb92de4b4ff18_utils.py.json"
+}

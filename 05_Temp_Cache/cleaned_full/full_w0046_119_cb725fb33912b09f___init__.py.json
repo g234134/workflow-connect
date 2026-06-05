@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\elastic\\events\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4067,
+  "content_sha256": "cb725fb33912b09f244016a93de159b2ee5961fe33aea6ecc85eee17cf64c9f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 134,
+    "non_empty_lines": 106,
+    "char_count": 4067,
+    "preview_lines": [
+      "#!/usr/bin/env/python3",
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "\"\"\"",
+      "Module contains events processing mechanisms that are integrated with the standard python logging.",
+      "Example of usage:",
+      "::"
+    ],
+    "imports": [
+      "from torch.distributed.elastic import events",
+      "import inspect",
+      "import logging",
+      "import os",
+      "import socket",
+      "import traceback",
+      "from enum import Enum",
+      "from typing import Dict, Optional",
+      "from torch.distributed.elastic.events.handlers import get_logging_handler",
+      "from .api import (  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_or_create_logger",
+      "record",
+      "record_rdzv_event",
+      "construct_and_record_rdzv_event"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_119_cb725fb33912b09f___init__.py.json"
+}

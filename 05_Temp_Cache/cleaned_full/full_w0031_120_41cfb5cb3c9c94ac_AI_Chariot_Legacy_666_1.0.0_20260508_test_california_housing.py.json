@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_california_housing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_california_housing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1407,
+  "content_sha256": "41cfb5cb3c9c94ac2f2324f07ee5aea3f7a91bda0fd8589ce3e3e2e30015578d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 28,
+    "char_count": 1407,
+    "preview_lines": [
+      "\"\"\"Test the california_housing loader, if the data is available,",
+      "or if specifically requested via environment variable",
+      "(e.g. for CI jobs).\"\"\"",
+      "from functools import partial",
+      "import pytest",
+      "from sklearn.datasets.tests.test_common import check_return_X_y",
+      "def test_fetch(fetch_california_housing_fxt):",
+      "    data = fetch_california_housing_fxt()",
+      "    assert (20640, 8) == data.data.shape",
+      "    assert (20640,) == data.target.shape"
+    ],
+    "imports": [
+      "from functools import partial",
+      "import pytest",
+      "from sklearn.datasets.tests.test_common import check_return_X_y"
+    ],
+    "classes": [],
+    "functions": [
+      "test_fetch",
+      "test_fetch_asframe",
+      "test_pandas_dependency_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_120_41cfb5cb3c9c94ac_AI_Chariot_Legacy_666_1.0.0_20260508_test_california_housing.py.json"
+}

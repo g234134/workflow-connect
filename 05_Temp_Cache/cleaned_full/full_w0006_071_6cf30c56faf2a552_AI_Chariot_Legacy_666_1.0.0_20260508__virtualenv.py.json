@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__virtualenv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__virtualenv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4342,
+  "content_sha256": "6cf30c56faf2a55228914dbbd17f8088ed371ebb08f5e7fa6fd931f913fcaf1d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 79,
+    "char_count": 4342,
+    "preview_lines": [
+      "\"\"\"Patches that are applied at runtime to the virtual environment.\"\"\"",
+      "import os",
+      "import sys",
+      "VIRTUALENV_PATCH_FILE = os.path.join(__file__)",
+      "def patch_dist(dist):",
+      "    \"\"\"",
+      "    Distutils allows user to configure some arguments via a configuration file:",
+      "    https://docs.python.org/3.11/install/index.html#distutils-configuration-files.",
+      "    Some of this arguments though don't make sense in context of the virtual environment files, let's fix them up.",
+      "    \"\"\"  # noqa: D205"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import threading",
+      "from functools import partial",
+      "from importlib.util import find_spec"
+    ],
+    "classes": [
+      "_Finder"
+    ],
+    "functions": [
+      "patch_dist"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_071_6cf30c56faf2a552_AI_Chariot_Legacy_666_1.0.0_20260508__virtualenv.py.json"
+}

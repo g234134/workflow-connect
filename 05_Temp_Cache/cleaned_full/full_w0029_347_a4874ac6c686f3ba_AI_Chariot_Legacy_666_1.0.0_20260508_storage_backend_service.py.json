@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 347,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_storage_backend_service.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_storage_backend_service.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8737,
+  "content_sha256": "a4874ac6c686f3baf2a7f4ca61403dd4b136161ad6bc4d7ac45d87a819fd3eac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 244,
+    "non_empty_lines": 210,
+    "char_count": 8737,
+    "preview_lines": [
+      "\"\"\"",
+      "Storage backend service for file upload operations.",
+      "This module provides a service class for handling file uploads to custom",
+      "storage backends (e.g., Azure Blob Storage) and managing associated metadata.",
+      "\"\"\"",
+      "import base64",
+      "import time",
+      "from typing import Any, List, Mapping, cast",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid as uuid_module"
+    ],
+    "imports": [
+      "import base64",
+      "import time",
+      "from typing import Any, List, Mapping, cast",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid as uuid_module",
+      "from litellm.llms.base_llm.files.storage_backend_factory import get_storage_backend",
+      "from litellm.llms.base_llm.files.transformation import BaseFileEndpoints",
+      "from litellm.proxy._types import ProxyException, UserAPIKeyAuth",
+      "from litellm.proxy.utils import ProxyLogging",
+      "from litellm.types.llms.openai import OpenAIFileObject, OpenAIFilesPurpose",
+      "from litellm.types.utils import SpecialEnums"
+    ],
+    "classes": [
+      "StorageBackendFileService"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_347_a4874ac6c686f3ba_AI_Chariot_Legacy_666_1.0.0_20260508_storage_backend_service.py.json"
+}

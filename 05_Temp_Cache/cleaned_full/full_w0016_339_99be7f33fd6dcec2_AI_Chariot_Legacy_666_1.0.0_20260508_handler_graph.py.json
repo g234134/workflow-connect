@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 339,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_handler_graph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_handler_graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4129,
+  "content_sha256": "99be7f33fd6dcec24cbd6744c4a55c065ad4763054be25583d64a50a17bb7f69",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 95,
+    "char_count": 4129,
+    "preview_lines": [
+      "\"\"\"Dependency graph resolution for event handlers.",
+      "This module resolves handler dependencies into execution levels, ensuring",
+      "handlers execute in correct order while maximizing parallelism.",
+      "\"\"\"",
+      "from collections import defaultdict, deque",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from crewai.events.depends import Depends",
+      "from crewai.events.types.event_bus_types import ExecutionPlan, Handler",
+      "class CircularDependencyError(Exception):"
+    ],
+    "imports": [
+      "from collections import defaultdict, deque",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from crewai.events.depends import Depends",
+      "from crewai.events.types.event_bus_types import ExecutionPlan, Handler"
+    ],
+    "classes": [
+      "CircularDependencyError",
+      "HandlerGraph"
+    ],
+    "functions": [
+      "build_execution_plan"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_339_99be7f33fd6dcec2_AI_Chariot_Legacy_666_1.0.0_20260508_handler_graph.py.json"
+}

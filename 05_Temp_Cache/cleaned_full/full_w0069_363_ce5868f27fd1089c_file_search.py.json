@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\file_search.py",
+  "name": "file_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13244,
+  "content_sha256": "ce5868f27fd1089c0d29d03e35646d418ac4f145b9084d018f3917e79919083c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 387,
+    "non_empty_lines": 305,
+    "char_count": 13241,
+    "preview_lines": [
+      "\"\"\"File search middleware for Anthropic text editor and memory tools.",
+      "This module provides Glob and Grep search tools that operate on files stored",
+      "in state or filesystem.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import json",
+      "import re",
+      "import subprocess",
+      "from contextlib import suppress"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import json",
+      "import re",
+      "import subprocess",
+      "from contextlib import suppress",
+      "from datetime import datetime, timezone",
+      "from pathlib import Path",
+      "from typing import Literal",
+      "from langchain_core.tools import tool",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, ContextT, ResponseT",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware import ("
+    ],
+    "classes": [
+      "FilesystemFileSearchMiddleware"
+    ],
+    "functions": [
+      "_expand_include_patterns",
+      "_is_valid_include_pattern",
+      "_match_include_pattern"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_363_ce5868f27fd1089c_file_search.py.json"
+}

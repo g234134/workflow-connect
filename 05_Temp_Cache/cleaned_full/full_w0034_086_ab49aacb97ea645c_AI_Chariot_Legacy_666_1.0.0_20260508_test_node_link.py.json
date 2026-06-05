@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_node_link.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_node_link.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6468,
+  "content_sha256": "ab49aacb97ea645c711d06f5f2d9855d438ea7fa133f561ee5b116cd39d7105a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 150,
+    "char_count": 6466,
+    "preview_lines": [
+      "import json",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.readwrite.json_graph import node_link_data, node_link_graph",
+      "def test_node_link_edges_default_future_warning():",
+      "    \"Test FutureWarning is raised when `edges=None` in node_link_data and node_link_graph\"",
+      "    G = nx.Graph([(1, 2)])",
+      "    with pytest.warns(FutureWarning, match=\"\\nThe default value will be\"):",
+      "        data = nx.node_link_data(G)  # edges=None, the default",
+      "    with pytest.warns(FutureWarning, match=\"\\nThe default value will be\"):"
+    ],
+    "imports": [
+      "import json",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.readwrite.json_graph import node_link_data, node_link_graph"
+    ],
+    "classes": [
+      "TestNodeLink"
+    ],
+    "functions": [
+      "test_node_link_edges_default_future_warning",
+      "test_node_link_deprecated_link_param"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_086_ab49aacb97ea645c_AI_Chariot_Legacy_666_1.0.0_20260508_test_node_link.py.json"
+}

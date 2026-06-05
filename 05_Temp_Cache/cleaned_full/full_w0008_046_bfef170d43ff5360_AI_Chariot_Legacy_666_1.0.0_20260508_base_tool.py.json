@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23707,
+  "content_sha256": "bfef170d43ff53604b94801690498397a678bb596a687958045e1ce23fc20642",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 714,
+    "non_empty_lines": 576,
+    "char_count": 23707,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "import asyncio",
+      "from collections.abc import Awaitable, Callable",
+      "import importlib",
+      "from inspect import Parameter, signature",
+      "import json",
+      "import threading",
+      "from typing import (",
+      "    Annotated,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "import asyncio",
+      "from collections.abc import Awaitable, Callable",
+      "import importlib",
+      "from inspect import Parameter, signature",
+      "import json",
+      "import threading",
+      "from typing import (",
+      "from pydantic import (",
+      "from pydantic_core import CoreSchema, core_schema",
+      "from typing_extensions import TypeIs",
+      "from crewai.tools.structured_tool import (",
+      "from crewai.types.callback import SerializableCallable, _resolve_dotted_path",
+      "from crewai.utilities.pydantic_schema_utils import generate_model_description",
+      "from crewai.utilities.string_utils import sanitize_tool_name"
+    ],
+    "classes": [
+      "EnvVar",
+      "BaseTool",
+      "Tool"
+    ],
+    "functions": [
+      "_resolve_tool_dict",
+      "_default_cache_function",
+      "_is_async_callable",
+      "_is_awaitable",
+      "to_langchain",
+      "tool",
+      "tool",
+      "tool",
+      "tool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_046_bfef170d43ff5360_AI_Chariot_Legacy_666_1.0.0_20260508_base_tool.py.json"
+}

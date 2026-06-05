@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3078,
+  "content_sha256": "a378b08df44797b37dba5f8cda41db7b02c9667a812c059fd2dcd40b0a224ccc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 66,
+    "char_count": 3078,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import email.policy",
+      "import os.path",
+      "import re",
+      "from email.generator import BytesGenerator",
+      "from email.parser import BytesParser",
+      "from ..wheelfile import WheelError, WheelFile",
+      "DIST_INFO_RE = re.compile(r\"^(?P<namever>(?P<name>.+?)-(?P<ver>\\d.*?))\\.dist-info$\")",
+      "def pack(directory: str, dest_dir: str, build_number: str | None) -> None:",
+      "    \"\"\"Repack a previously unpacked wheel directory into a new wheel file."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import email.policy",
+      "import os.path",
+      "import re",
+      "from email.generator import BytesGenerator",
+      "from email.parser import BytesParser",
+      "from ..wheelfile import WheelError, WheelFile"
+    ],
+    "classes": [],
+    "functions": [
+      "pack",
+      "compute_tagline"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_329_a378b08df44797b3_AI_Chariot_Legacy_666_1.0.0_20260508_pack.py.json"
+}

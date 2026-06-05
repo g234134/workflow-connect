@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dyld.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dyld.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5024,
+  "content_sha256": "eb8e7b17f1533bc3e86e23e8695f7a5e4b7a99ef1b1575d10af54f389161b655",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 165,
+    "non_empty_lines": 138,
+    "char_count": 5024,
+    "preview_lines": [
+      "\"\"\"",
+      "dyld emulation",
+      "\"\"\"",
+      "import os",
+      "from ctypes.macholib.framework import framework_info",
+      "from ctypes.macholib.dylib import dylib_info",
+      "from itertools import *",
+      "try:",
+      "    from _ctypes import _dyld_shared_cache_contains_path",
+      "except ImportError:"
+    ],
+    "imports": [
+      "import os",
+      "from ctypes.macholib.framework import framework_info",
+      "from ctypes.macholib.dylib import dylib_info",
+      "from itertools import *",
+      "from _ctypes import _dyld_shared_cache_contains_path"
+    ],
+    "classes": [],
+    "functions": [
+      "dyld_env",
+      "dyld_image_suffix",
+      "dyld_framework_path",
+      "dyld_library_path",
+      "dyld_fallback_framework_path",
+      "dyld_fallback_library_path",
+      "dyld_image_suffix_search",
+      "dyld_override_search",
+      "dyld_executable_path_search",
+      "dyld_default_search",
+      "dyld_find",
+      "framework_find"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_235_eb8e7b17f1533bc3_AI_Chariot_Legacy_666_1.0.0_20260508_dyld.py.json"
+}

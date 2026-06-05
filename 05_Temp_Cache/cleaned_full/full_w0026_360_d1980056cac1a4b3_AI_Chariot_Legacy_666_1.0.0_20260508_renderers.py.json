@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_renderers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_renderers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2141,
+  "content_sha256": "d1980056cac1a4b37785318db3b04a1d2e8aaea0b497813daa2e6051c0a85854",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 56,
+    "char_count": 2141,
+    "preview_lines": [
+      "import functools",
+      "from pathlib import Path",
+      "from django.conf import settings",
+      "from django.template.backends.django import DjangoTemplates",
+      "from django.template.loader import get_template",
+      "from django.utils.functional import cached_property",
+      "from django.utils.module_loading import import_string",
+      "@functools.lru_cache",
+      "def get_default_renderer():",
+      "    renderer_class = import_string(settings.FORM_RENDERER)"
+    ],
+    "imports": [
+      "import functools",
+      "from pathlib import Path",
+      "from django.conf import settings",
+      "from django.template.backends.django import DjangoTemplates",
+      "from django.template.loader import get_template",
+      "from django.utils.functional import cached_property",
+      "from django.utils.module_loading import import_string",
+      "from django.template.backends.jinja2 import Jinja2"
+    ],
+    "classes": [
+      "BaseRenderer",
+      "EngineMixin",
+      "DjangoTemplates",
+      "Jinja2",
+      "TemplatesSetting"
+    ],
+    "functions": [
+      "get_default_renderer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_360_d1980056cac1a4b3_AI_Chariot_Legacy_666_1.0.0_20260508_renderers.py.json"
+}

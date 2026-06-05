@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\qdrant\\tests\\integration_tests\\fastembed\\test_fastembed_sparse.py",
+  "name": "test_fastembed_sparse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1393,
+  "content_sha256": "f0d9431acb1385495f80b411d1d0ce80319174c9a275e51f93a2a5e5d9480311",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 27,
+    "char_count": 1390,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from langchain_qdrant import FastEmbedSparse",
+      "pytest.importorskip(\"fastembed\", reason=\"'fastembed' package is not installed\")",
+      "@pytest.mark.parametrize(",
+      "    \"model_name\", [\"Qdrant/bm25\", \"Qdrant/bm42-all-minilm-l6-v2-attentions\"]",
+      ")",
+      "def test_attention_embeddings(model_name: str) -> None:",
+      "    model = FastEmbedSparse(model_name=model_name)",
+      "    query_output = model.embed_query(\"Stay, steady and sprint.\")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from langchain_qdrant import FastEmbedSparse"
+    ],
+    "classes": [],
+    "functions": [
+      "test_attention_embeddings"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_255_f0d9431acb138549_test_fastembed_sparse.py.json"
+}

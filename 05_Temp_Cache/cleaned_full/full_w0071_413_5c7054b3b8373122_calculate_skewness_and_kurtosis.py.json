@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 413,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_tools\\data_analysis\\calculate_skewness_and_kurtosis.py",
+  "name": "calculate_skewness_and_kurtosis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 955,
+  "content_sha256": "5c7054b3b83731224d54d7b574b525ddfbbddceb154837832ff37e359466938a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 22,
+    "char_count": 955,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "def calculate_skewness_and_kurtosis(csv_file: str, column_name: str) -> tuple:",
+      "    \"\"\"Calculate the skewness and kurtosis of a specified column in a CSV file. The kurtosis is calculated using the Fisher definition.",
+      "    The two metrics are computed using scipy.stats functions.",
+      "    Args:",
+      "    csv_file (str): The path to the CSV file.",
+      "    column_name (str): The name of the column to calculate skewness and kurtosis for.",
+      "    Returns:"
+    ],
+    "imports": [
+      "import pandas as pd",
+      "from scipy.stats import kurtosis, skew"
+    ],
+    "classes": [],
+    "functions": [
+      "calculate_skewness_and_kurtosis"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_413_5c7054b3b8373122_calculate_skewness_and_kurtosis.py.json"
+}

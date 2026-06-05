@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 269,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_limit_offset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_limit_offset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2091,
+  "content_sha256": "4b0d3ecec2a052d58aedbd249141e9a092109ad8db98982e2247b7c47a41bcfe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 57,
+    "char_count": 2091,
+    "preview_lines": [
+      "import logging",
+      "import chromadb.test.property.strategies as strategies",
+      "import hypothesis.strategies as st",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.test.conftest import NOT_CLUSTER_ONLY, reset",
+      "from chromadb.test.property import invariants",
+      "from chromadb.test.utils.wait_for_version_increase import wait_for_version_increase",
+      "from hypothesis import HealthCheck, given, settings",
+      "collection_st = st.shared(",
+      "    strategies.collections(add_filterable_data=True, with_hnsw_params=True),"
+    ],
+    "imports": [
+      "import logging",
+      "import chromadb.test.property.strategies as strategies",
+      "import hypothesis.strategies as st",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.test.conftest import NOT_CLUSTER_ONLY, reset",
+      "from chromadb.test.property import invariants",
+      "from chromadb.test.utils.wait_for_version_increase import wait_for_version_increase",
+      "from hypothesis import HealthCheck, given, settings"
+    ],
+    "classes": [],
+    "functions": [
+      "test_get_limit_offset"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_269_4b0d3ecec2a052d5_AI_Chariot_Legacy_666_1.0.0_20260508_test_limit_offset.py.json"
+}

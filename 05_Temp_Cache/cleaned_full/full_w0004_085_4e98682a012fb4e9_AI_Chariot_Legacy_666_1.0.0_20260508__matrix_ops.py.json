@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__matrix_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__matrix_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17937,
+  "content_sha256": "4e98682a012fb4e997eb6979e9662a6cce58399f825bcc384d2c797efe5061f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 500,
+    "non_empty_lines": 434,
+    "char_count": 17937,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "# implement matrix related ops for distributed tensor",
+      "from typing import List",
+      "import torch",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "from torch.distributed.tensor._op_schema import (",
+      "    OpSchema,",
+      "    OpStrategy,"
+    ],
+    "imports": [
+      "from typing import List",
+      "import torch",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "from torch.distributed.tensor._op_schema import (",
+      "from torch.distributed.tensor._ops._einsum_strategy import gen_einsum_strategies",
+      "from torch.distributed.tensor._ops.utils import (",
+      "from torch.distributed.tensor.placement_types import Placement, Replicate, Shard"
+    ],
+    "classes": [],
+    "functions": [
+      "transpose_strategy",
+      "_mm_like_strategy",
+      "_addmm_like_strategy",
+      "mm_strategy",
+      "addmm_strategy",
+      "bmm_strategy",
+      "baddmm_strategy",
+      "scaled_dot_product_flash_attention_strategy",
+      "scaled_dot_product_flash_attention_backward_strategy",
+      "constant_pad_nd_strategy",
+      "scaled_dot_product_efficient_attention_strategy",
+      "scaled_dot_product_efficient_attention_backward_strategy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_085_4e98682a012fb4e9_AI_Chariot_Legacy_666_1.0.0_20260508__matrix_ops.py.json"
+}

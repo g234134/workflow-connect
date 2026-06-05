@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_layermapping.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_layermapping.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29093,
+  "content_sha256": "cbffc1adf3afbf4c45e5bab045267f74ec2e1b229787bba77d1b95f4495ce9d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 737,
+    "non_empty_lines": 651,
+    "char_count": 29093,
+    "preview_lines": [
+      "# LayerMapping -- A Django Model/OGR Layer Mapping Utility",
+      "\"\"\"",
+      "The LayerMapping class provides a way to map the contents of OGR",
+      "vector files (e.g. SHP files) to Geographic-enabled Django models.",
+      "For more information, please consult the GeoDjango documentation:",
+      "  https://docs.djangoproject.com/en/dev/ref/contrib/gis/layermapping/",
+      "\"\"\"",
+      "import sys",
+      "from decimal import Decimal",
+      "from decimal import InvalidOperation as DecimalInvalidOperation"
+    ],
+    "imports": [
+      "import sys",
+      "from decimal import Decimal",
+      "from decimal import InvalidOperation as DecimalInvalidOperation",
+      "from pathlib import Path",
+      "from django.contrib.gis.db.models import GeometryField",
+      "from django.contrib.gis.gdal import (",
+      "from django.contrib.gis.gdal.field import (",
+      "from django.core.exceptions import FieldDoesNotExist, ObjectDoesNotExist",
+      "from django.db import connections, models, router, transaction",
+      "from django.utils.encoding import force_str",
+      "from codecs import lookup"
+    ],
+    "classes": [
+      "LayerMapError",
+      "InvalidString",
+      "InvalidDecimal",
+      "InvalidInteger",
+      "MissingForeignKey",
+      "LayerMapping"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_064_cbffc1adf3afbf4c_AI_Chariot_Legacy_666_1.0.0_20260508_layermapping.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 324,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prefetch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prefetch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1358,
+  "content_sha256": "70e47028294a4bec331ab9918f6065481bae273ea244158e565e2d0581d1aed0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 32,
+    "char_count": 1358,
+    "preview_lines": [
+      "from django.db.models import Prefetch",
+      "from django.db.models.query import ModelIterable, RawQuerySet",
+      "class GenericPrefetch(Prefetch):",
+      "    def __init__(self, lookup, querysets, to_attr=None):",
+      "        for queryset in querysets:",
+      "            if queryset is not None and (",
+      "                isinstance(queryset, RawQuerySet)",
+      "                or (",
+      "                    hasattr(queryset, \"_iterable_class\")",
+      "                    and not issubclass(queryset._iterable_class, ModelIterable)"
+    ],
+    "imports": [
+      "from django.db.models import Prefetch",
+      "from django.db.models.query import ModelIterable, RawQuerySet"
+    ],
+    "classes": [
+      "GenericPrefetch"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_324_70e47028294a4bec_AI_Chariot_Legacy_666_1.0.0_20260508_prefetch.py.json"
+}

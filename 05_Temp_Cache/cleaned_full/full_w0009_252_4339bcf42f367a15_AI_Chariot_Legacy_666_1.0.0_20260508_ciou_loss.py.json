@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ciou_loss.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ciou_loss.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2834,
+  "content_sha256": "4339bcf42f367a15fe62f6013cb3d13e16c965daf78ad8b3c6ec6b4fb30b8bda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 61,
+    "char_count": 2834,
+    "preview_lines": [
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._utils import _upcast_non_float",
+      "from .diou_loss import _diou_iou_loss",
+      "def complete_box_iou_loss(",
+      "    boxes1: torch.Tensor,",
+      "    boxes2: torch.Tensor,",
+      "    reduction: str = \"none\",",
+      "    eps: float = 1e-7,",
+      ") -> torch.Tensor:"
+    ],
+    "imports": [
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._utils import _upcast_non_float",
+      "from .diou_loss import _diou_iou_loss"
+    ],
+    "classes": [],
+    "functions": [
+      "complete_box_iou_loss"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_252_4339bcf42f367a15_AI_Chariot_Legacy_666_1.0.0_20260508_ciou_loss.py.json"
+}

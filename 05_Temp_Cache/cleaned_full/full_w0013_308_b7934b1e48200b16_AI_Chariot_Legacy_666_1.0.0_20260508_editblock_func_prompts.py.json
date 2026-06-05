@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 308,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_prompts.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_prompts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 886,
+  "content_sha256": "b7934b1e48200b164f2ce030a37e5f9a5d2162d2039fe9e6214ee74690419674",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 19,
+    "char_count": 886,
+    "preview_lines": [
+      "# flake8: noqa: E501",
+      "from .base_prompts import CoderPrompts",
+      "class EditBlockFunctionPrompts(CoderPrompts):",
+      "    main_system = \"\"\"Act as an expert software developer.",
+      "Take requests for changes to the supplied code.",
+      "If the request is ambiguous, ask questions.",
+      "Once you understand the request you MUST use the `replace_lines` function to edit the files to make the needed changes.",
+      "\"\"\"",
+      "    system_reminder = \"\"\"",
+      "ONLY return code using the `replace_lines` function."
+    ],
+    "imports": [
+      "from .base_prompts import CoderPrompts"
+    ],
+    "classes": [
+      "EditBlockFunctionPrompts"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_308_b7934b1e48200b16_AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_prompts.py.json"
+}

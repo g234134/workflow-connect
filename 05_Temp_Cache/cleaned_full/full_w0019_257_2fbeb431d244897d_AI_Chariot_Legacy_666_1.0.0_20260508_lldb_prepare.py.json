@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 257,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lldb_prepare.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lldb_prepare.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1734,
+  "content_sha256": "2fbeb431d244897dd52c58519971c130f8851f840eb0837c9a5403b5f7cb8805",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 55,
+    "non_empty_lines": 42,
+    "char_count": 1734,
+    "preview_lines": [
+      "# This file is meant to be run inside lldb",
+      "# It registers command to load library and invoke attach function",
+      "# Also it marks process threads to to distinguish them from debugger",
+      "# threads later while settings trace in threads",
+      "def load_lib_and_attach(debugger, command, result, internal_dict):",
+      "    import shlex",
+      "    args = shlex.split(command)",
+      "    dll = args[0]",
+      "    is_debug = args[1]",
+      "    python_code = args[2]"
+    ],
+    "imports": [
+      "import shlex",
+      "import lldb",
+      "import lldb",
+      "import traceback"
+    ],
+    "classes": [],
+    "functions": [
+      "load_lib_and_attach",
+      "__lldb_init_module"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_257_2fbeb431d244897d_AI_Chariot_Legacy_666_1.0.0_20260508_lldb_prepare.py.json"
+}

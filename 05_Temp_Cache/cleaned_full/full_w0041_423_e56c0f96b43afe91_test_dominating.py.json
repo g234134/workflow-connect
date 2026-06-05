@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tests\\test_dominating.py",
+  "name": "test_dominating.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3112,
+  "content_sha256": "e56c0f96b43afe915a571ffe2b80f970735b0992f6deaa7e3f2b60b170ee4b84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 115,
+    "non_empty_lines": 90,
+    "char_count": 3112,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def test_dominating_set():",
+      "    G = nx.gnp_random_graph(100, 0.1)",
+      "    D = nx.dominating_set(G)",
+      "    assert nx.is_dominating_set(G, D)",
+      "    D = nx.dominating_set(G, start_with=0)",
+      "    assert nx.is_dominating_set(G, D)",
+      "def test_complete():",
+      "    \"\"\"In complete graphs each node is a dominating set."
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dominating_set",
+      "test_complete",
+      "test_raise_dominating_set",
+      "test_is_dominating_set",
+      "test_wikipedia_is_dominating_set",
+      "test_is_connected_dominating_set",
+      "test_null_graph_connected_dominating_set",
+      "test_single_node_graph_connected_dominating_set",
+      "test_raise_disconnected_graph_connected_dominating_set",
+      "test_complete_graph_connected_dominating_set",
+      "test_docstring_example_connected_dominating_set",
+      "test_connected_watts_strogatz_graph_connected_dominating_set"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_423_e56c0f96b43afe91_test_dominating.py.json"
+}

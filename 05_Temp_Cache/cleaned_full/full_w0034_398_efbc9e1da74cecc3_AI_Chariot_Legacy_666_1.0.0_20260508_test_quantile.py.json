@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_quantile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_quantile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10972,
+  "content_sha256": "efbc9e1da74cecc3f0d003a8992e7b4fb35de080931cb74fe5a301d08d426a0a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 283,
+    "non_empty_lines": 247,
+    "char_count": 10972,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import numpy as np",
+      "import pytest",
+      "from pytest import approx",
+      "from scipy.optimize import minimize",
+      "from sklearn.datasets import make_regression",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.linear_model import HuberRegressor, QuantileRegressor",
+      "from sklearn.metrics import mean_pinball_loss"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pytest import approx",
+      "from scipy.optimize import minimize",
+      "from sklearn.datasets import make_regression",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.linear_model import HuberRegressor, QuantileRegressor",
+      "from sklearn.metrics import mean_pinball_loss",
+      "from sklearn.utils._testing import assert_allclose",
+      "from sklearn.utils.fixes import ("
+    ],
+    "classes": [],
+    "functions": [
+      "X_y_data",
+      "test_incompatible_solver_for_sparse_input",
+      "test_quantile_toy_example",
+      "test_quantile_equals_huber_for_low_epsilon",
+      "test_quantile_estimates_calibration",
+      "test_quantile_sample_weight",
+      "test_asymmetric_error",
+      "test_equivariance",
+      "test_linprog_failure",
+      "test_sparse_input",
+      "test_error_interior_point_future"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_398_efbc9e1da74cecc3_AI_Chariot_Legacy_666_1.0.0_20260508_test_quantile.py.json"
+}

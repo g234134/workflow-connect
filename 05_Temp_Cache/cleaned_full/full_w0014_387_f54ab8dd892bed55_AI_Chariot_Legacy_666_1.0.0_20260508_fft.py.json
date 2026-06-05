@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:45:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fft.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fft.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 878,
+  "content_sha256": "f54ab8dd892bed55e4628a121643c302380c62ff300bfb3e141ad59f79dc485c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 31,
+    "char_count": 878,
+    "preview_lines": [
+      "from cupy.fft import * # noqa: F403",
+      "# cupy.fft doesn't have __all__. If it is added, replace this with",
+      "#",
+      "# from cupy.fft import __all__ as linalg_all",
+      "_n = {}",
+      "exec('from cupy.fft import *', _n)",
+      "del _n['__builtins__']",
+      "fft_all = list(_n)",
+      "del _n",
+      "from ..common import _fft"
+    ],
+    "imports": [
+      "from cupy.fft import * # noqa: F403",
+      "from ..common import _fft",
+      "from .._internal import get_xp",
+      "import cupy as cp"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_387_f54ab8dd892bed55_AI_Chariot_Legacy_666_1.0.0_20260508_fft.py.json"
+}

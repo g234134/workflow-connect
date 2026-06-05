@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 249,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_compare.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_compare.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9526,
+  "content_sha256": "f19a10bfac6644a248dce92c48eef3a558d80bbc7ca89c629a303c5fc0034c7e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 304,
+    "non_empty_lines": 267,
+    "char_count": 9526,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "@pytest.mark.parametrize(\"align_axis\", [0, 1, \"index\", \"columns\"])",
+      "def test_compare_axis(align_axis):",
+      "    # GH#30429",
+      "    df = pd.DataFrame(",
+      "        {\"col1\": [\"a\", \"b\", \"c\"], \"col2\": [1.0, 2.0, np.nan], \"col3\": [1.0, 2.0, 3.0]},",
+      "        columns=[\"col1\", \"col2\", \"col3\"],"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "test_compare_axis",
+      "test_compare_various_formats",
+      "test_compare_with_equal_nulls",
+      "test_compare_with_non_equal_nulls",
+      "test_compare_multi_index",
+      "test_compare_different_indices",
+      "test_compare_different_shapes",
+      "test_compare_result_names",
+      "test_invalid_input_result_names",
+      "test_compare_ea_and_np_dtype",
+      "test_compare_nullable_int64_dtype"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_249_f19a10bfac6644a2_AI_Chariot_Legacy_666_1.0.0_20260508_test_compare.py.json"
+}

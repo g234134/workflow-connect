@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1172,
+  "content_sha256": "0956b0ec3d3ee83391820efc43a6f7e5234a9f4e4f94ac1626ea973ae53ea9d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 27,
+    "char_count": 1172,
+    "preview_lines": [
+      "# This testfile tests SymPy <-> SciPy compatibility",
+      "# Don't test any SymPy features here. Just pure interaction with SciPy.",
+      "# Always write regular SymPy tests for anything, that can be tested in pure",
+      "# Python (without scipy). Here we test everything, that a user may need when",
+      "# using SymPy with SciPy",
+      "from sympy.external import import_module",
+      "scipy = import_module('scipy')",
+      "if not scipy:",
+      "    #bin/test will not execute any tests now",
+      "    disabled = True"
+    ],
+    "imports": [
+      "from sympy.external import import_module",
+      "from sympy.functions.special.bessel import jn_zeros"
+    ],
+    "classes": [],
+    "functions": [
+      "eq",
+      "test_jn_zeros"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_105_0956b0ec3d3ee833_AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_proxy_fix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_proxy_fix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6755,
+  "content_sha256": "9fe1d6f8c45626ab822219aa8992a819d6db11e1ee589a8f447845a6e8f8a736",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 149,
+    "char_count": 6755,
+    "preview_lines": [
+      "\"\"\"",
+      "X-Forwarded-For Proxy Fix",
+      "=========================",
+      "This module provides a middleware that adjusts the WSGI environ based on",
+      "``X-Forwarded-`` headers that proxies in front of an application may",
+      "set.",
+      "When an application is running behind a proxy server, WSGI may see the",
+      "request as coming from that server rather than the real client. Proxies",
+      "set various headers to track where the request actually came from.",
+      "This middleware should only be used if the application is actually"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from ..http import parse_list_header",
+      "from _typeshed.wsgi import StartResponse",
+      "from _typeshed.wsgi import WSGIApplication",
+      "from _typeshed.wsgi import WSGIEnvironment",
+      "from werkzeug.middleware.proxy_fix import ProxyFix"
+    ],
+    "classes": [
+      "ProxyFix"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_107_9fe1d6f8c45626ab_AI_Chariot_Legacy_666_1.0.0_20260508_proxy_fix.py.json"
+}

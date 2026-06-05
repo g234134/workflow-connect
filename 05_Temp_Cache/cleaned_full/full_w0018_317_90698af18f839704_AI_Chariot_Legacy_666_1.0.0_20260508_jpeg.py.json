@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_jpeg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_jpeg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15386,
+  "content_sha256": "90698af18f83970446c38f8f2be39d32025431daa188a3a0071ac52b87975715",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 425,
+    "non_empty_lines": 351,
+    "char_count": 15386,
+    "preview_lines": [
+      "\"\"\"Objects related to parsing headers of JPEG image streams.",
+      "Includes both JFIF and Exif sub-formats.",
+      "\"\"\"",
+      "import io",
+      "from docx.image.constants import JPEG_MARKER_CODE, MIME_TYPE",
+      "from docx.image.helpers import BIG_ENDIAN, StreamReader",
+      "from docx.image.image import BaseImageHeader",
+      "from docx.image.tiff import Tiff",
+      "class Jpeg(BaseImageHeader):",
+      "    \"\"\"Base class for JFIF and EXIF subclasses.\"\"\""
+    ],
+    "imports": [
+      "import io",
+      "from docx.image.constants import JPEG_MARKER_CODE, MIME_TYPE",
+      "from docx.image.helpers import BIG_ENDIAN, StreamReader",
+      "from docx.image.image import BaseImageHeader",
+      "from docx.image.tiff import Tiff"
+    ],
+    "classes": [
+      "Jpeg",
+      "Exif",
+      "Jfif",
+      "_JfifMarkers",
+      "_MarkerParser",
+      "_MarkerFinder",
+      "_Marker",
+      "_App0Marker",
+      "_App1Marker",
+      "_SofMarker"
+    ],
+    "functions": [
+      "_MarkerFactory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_317_90698af18f839704_AI_Chariot_Legacy_666_1.0.0_20260508_jpeg.py.json"
+}

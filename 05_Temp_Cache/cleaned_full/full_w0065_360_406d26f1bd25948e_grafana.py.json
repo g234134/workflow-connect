@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\secrets_plugins\\grafana.py",
+  "name": "grafana.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 903,
+  "content_sha256": "406d26f1bd25948e2a365762d75e788ddd7a26b37938210854811f3e94aeeaef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 26,
+    "char_count": 903,
+    "preview_lines": [
+      "\"\"\"",
+      "This plugin searches for Grafana secrets.",
+      "\"\"\"",
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector",
+      "class GrafanaDetector(RegexBasedDetector):",
+      "    \"\"\"Scans for Grafana Secrets.\"\"\"",
+      "    @property",
+      "    def secret_type(self) -> str:",
+      "        return \"Grafana Secret\""
+    ],
+    "imports": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector"
+    ],
+    "classes": [
+      "GrafanaDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_360_406d26f1bd25948e_grafana.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:48:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\uvicorn\\protocols\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2058,
+  "content_sha256": "d6129d0c29a8fc6b46acad7365f6bbd232fb1ebde60c4f119cbebd3b8ac74118",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 47,
+    "char_count": 2058,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import socket",
+      "import urllib.parse",
+      "from uvicorn._types import WWWScope",
+      "class ClientDisconnected(OSError): ...",
+      "def get_remote_addr(transport: asyncio.Transport) -> tuple[str, int] | None:",
+      "    socket_info: socket.socket | None = transport.get_extra_info(\"socket\")",
+      "    if socket_info is not None:",
+      "        try:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import socket",
+      "import urllib.parse",
+      "from uvicorn._types import WWWScope"
+    ],
+    "classes": [
+      "ClientDisconnected"
+    ],
+    "functions": [
+      "get_remote_addr",
+      "get_local_addr",
+      "is_ssl",
+      "get_client_addr",
+      "get_path_with_query_string"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_030_d6129d0c29a8fc6b_utils.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 369,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_country.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_country.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9011,
+  "content_sha256": "18f103433695ee40daa9e1bc94ce620fadfdd10c5eb5c539de2ef977bcb23fbc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 288,
+    "non_empty_lines": 217,
+    "char_count": 9011,
+    "preview_lines": [
+      "\"\"\"Country definitions that are based on the [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).\"\"\"",
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from functools import lru_cache",
+      "from typing import Any",
+      "from pydantic import GetCoreSchemaHandler, GetJsonSchemaHandler",
+      "from pydantic_core import PydanticCustomError, core_schema",
+      "try:",
+      "    import pycountry",
+      "except ModuleNotFoundError as e:  # pragma: no cover"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from functools import lru_cache",
+      "from typing import Any",
+      "from pydantic import GetCoreSchemaHandler, GetJsonSchemaHandler",
+      "from pydantic_core import PydanticCustomError, core_schema",
+      "import pycountry",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.country import CountryAlpha2",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.country import CountryAlpha3",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.country import CountryNumericCode"
+    ],
+    "classes": [
+      "CountryInfo",
+      "CountryAlpha2",
+      "CountryAlpha3",
+      "CountryNumericCode",
+      "CountryShortName"
+    ],
+    "functions": [
+      "_countries",
+      "_index_by_alpha2",
+      "_index_by_alpha3",
+      "_index_by_numeric_code",
+      "_index_by_short_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_369_18f103433695ee40_AI_Chariot_Legacy_666_1.0.0_20260508_country.py.json"
+}

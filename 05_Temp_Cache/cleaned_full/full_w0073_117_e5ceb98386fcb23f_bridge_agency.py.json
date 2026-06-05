@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:49:14+00:00",
+  "source_path": "D:\\大唐三省六部\\04_Workflows\\bridge_agency.py",
+  "name": "bridge_agency.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2422,
+  "content_sha256": "e5ceb98386fcb23f9b1a8cfef3c1ef673cd2ac0c74053c4ee8d931302fe049a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 63,
+    "char_count": 2402,
+    "preview_lines": [
+      "# bridge_agency.py — Agency-Agents HTTP 橋接（URL / 逾時由 .env 提供）",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "import urllib.error",
+      "import urllib.request",
+      "from typing import Any, Dict, Optional",
+      "def _ensure_env() -> None:",
+      "    here = os.path.dirname(os.path.abspath(__file__))"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "import urllib.error",
+      "import urllib.request",
+      "from typing import Any, Dict, Optional",
+      "from gov_paths import get_secret, get_tang_gov_root",
+      "from gov_paths import get_secret",
+      "from gov_paths import get_secret"
+    ],
+    "classes": [],
+    "functions": [
+      "_ensure_env",
+      "_default_base",
+      "_default_timeout",
+      "run_api_task",
+      "health_check"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_117_e5ceb98386fcb23f_bridge_agency.py.json"
+}

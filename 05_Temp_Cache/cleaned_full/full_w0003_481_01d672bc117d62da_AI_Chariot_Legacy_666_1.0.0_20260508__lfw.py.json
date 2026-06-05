@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 481,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__lfw.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__lfw.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23329,
+  "content_sha256": "01d672bc117d62da0637b047fa204d24d4ea07ac2cdfe1cb594248ee6272d895",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 654,
+    "non_empty_lines": 544,
+    "char_count": 23329,
+    "preview_lines": [
+      "\"\"\"Labeled Faces in the Wild (LFW) dataset",
+      "This dataset is a collection of JPEG pictures of famous people collected",
+      "over the internet, all details are available on the official website:",
+      "    http://vis-www.cs.umass.edu/lfw/",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import logging",
+      "from numbers import Integral, Real",
+      "from os import PathLike, listdir, makedirs, remove"
+    ],
+    "imports": [
+      "import logging",
+      "from numbers import Integral, Real",
+      "from os import PathLike, listdir, makedirs, remove",
+      "from os.path import exists, isdir, join",
+      "import numpy as np",
+      "from joblib import Memory",
+      "from sklearn.datasets._base import (",
+      "from sklearn.utils import Bunch",
+      "from sklearn.utils._param_validation import (",
+      "from sklearn.utils.fixes import tarfile_extractall",
+      "import tarfile",
+      "from PIL import Image"
+    ],
+    "classes": [],
+    "functions": [
+      "_check_fetch_lfw",
+      "_load_imgs",
+      "_fetch_lfw_people",
+      "fetch_lfw_people",
+      "_fetch_lfw_pairs",
+      "fetch_lfw_pairs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_481_01d672bc117d62da_AI_Chariot_Legacy_666_1.0.0_20260508__lfw.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 151,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cuda\\detail\\KernelUtils.h",
+  "name": "KernelUtils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1560,
+  "content_sha256": "ce597802f0110800932ff69408ac89fb79ffffd9fb5870bc4752b953e167ed74",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 27,
+    "char_count": 1560,
+    "preview_lines": [
+      "#pragma once",
+      "#include <limits>",
+      "#include <c10/util/Exception.h>",
+      "namespace at::cuda::detail {",
+      "// CUDA: grid stride looping",
+      "//",
+      "// int64_t _i_n_d_e_x specifically prevents overflow in the loop increment.",
+      "// If input.numel() < INT_MAX, _i_n_d_e_x < INT_MAX, except after the final",
+      "// iteration of the loop where _i_n_d_e_x += blockDim.x * gridDim.x can be",
+      "// greater than INT_MAX.  But in that case _i_n_d_e_x >= n, so there are no"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_151_ce597802f0110800_KernelUtils.h.json"
+}

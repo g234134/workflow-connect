@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 390,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_C\\_lazy.pyi",
+  "name": "_lazy.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 997,
+  "content_sha256": "b6a48ef4d02f7a679ad018ba69bfd1896808cc387dad86c8b8dd6c8925a21231",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 26,
+    "char_count": 997,
+    "preview_lines": [
+      "from typing import List",
+      "from torch import Tensor",
+      "# defined in torch/csrc/lazy/python/init.cpp",
+      "def _mark_step(device: str, devices: List[str], wait: bool): ...",
+      "def _wait_device_ops(devices: List[str]): ...",
+      "def _reset_metrics(): ...",
+      "def _counter_names() -> List[str]: ...",
+      "def _counter_value(name: str) -> int: ...",
+      "def _metrics_report() -> str: ...",
+      "def _get_graph_hash(tensors: List[Tensor]) -> str: ..."
+    ],
+    "imports": [
+      "from typing import List",
+      "from torch import Tensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_mark_step",
+      "_wait_device_ops",
+      "_reset_metrics",
+      "_counter_names",
+      "_counter_value",
+      "_metrics_report",
+      "_get_graph_hash",
+      "_sync_multi",
+      "_get_tensor_id",
+      "_get_tensors_text",
+      "_get_tensors_dot",
+      "_get_tensors_backend",
+      "_get_force_fallback",
+      "_set_force_fallback",
+      "_clear_ir_cache",
+      "_dump_ir_cache",
+      "_set_reuse_ir",
+      "_get_default_device_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_390_b6a48ef4d02f7a67__lazy.pyi.json"
+}

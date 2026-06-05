@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_signing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_signing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8772,
+  "content_sha256": "e76b4fa0a141bba9f1f001ce0cf1500564d9fa3762945c8ee43e6bd55aae5cb3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 278,
+    "non_empty_lines": 220,
+    "char_count": 8772,
+    "preview_lines": [
+      "\"\"\"",
+      "Functions for creating and restoring url-safe signed JSON objects.",
+      "The format used looks like this:",
+      ">>> signing.dumps(\"hello\")",
+      "'ImhlbGxvIg:1QaUZC:YIye-ze3TTx7gtSv422nZA4sgmk'",
+      "There are two components here, separated by a ':'. The first component is a",
+      "URLsafe base64 encoded JSON of the object passed to dumps(). The second",
+      "component is a base64 encoded hmac/SHA-256 hash of \"$first_component:$secret\"",
+      "signing.loads(s) checks the signature and returns the deserialized object.",
+      "If the signature fails, a BadSignature exception is raised."
+    ],
+    "imports": [
+      "import base64",
+      "import datetime",
+      "import json",
+      "import time",
+      "import zlib",
+      "from django.conf import settings",
+      "from django.utils.crypto import constant_time_compare, salted_hmac",
+      "from django.utils.encoding import force_bytes",
+      "from django.utils.module_loading import import_string",
+      "from django.utils.regex_helper import _lazy_re_compile"
+    ],
+    "classes": [
+      "BadSignature",
+      "SignatureExpired",
+      "JSONSerializer",
+      "Signer",
+      "TimestampSigner"
+    ],
+    "functions": [
+      "b62_encode",
+      "b62_decode",
+      "b64_encode",
+      "b64_decode",
+      "base64_hmac",
+      "_cookie_signer_key",
+      "get_cookie_signer",
+      "dumps",
+      "loads"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_436_e76b4fa0a141bba9_AI_Chariot_Legacy_666_1.0.0_20260508_signing.py.json"
+}

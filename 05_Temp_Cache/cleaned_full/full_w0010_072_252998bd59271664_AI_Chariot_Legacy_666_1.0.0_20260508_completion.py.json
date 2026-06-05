@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 72,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_completion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_completion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5968,
+  "content_sha256": "252998bd59271664c84aad41d7f4f4e1e47eb55a8e278cdef0681a527d3c9689",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 193,
+    "non_empty_lines": 138,
+    "char_count": 5968,
+    "preview_lines": [
+      "from typing import Iterable, List, Optional, Union",
+      "from pydantic import BaseModel, ConfigDict",
+      "from typing_extensions import Literal, Required, TypedDict",
+      "class ChatCompletionSystemMessageParam(TypedDict, total=False):",
+      "    content: Required[str]",
+      "    \"\"\"The contents of the system message.\"\"\"",
+      "    role: Required[Literal[\"system\"]]",
+      "    \"\"\"The role of the messages author, in this case `system`.\"\"\"",
+      "    name: str",
+      "    \"\"\"An optional name for the participant."
+    ],
+    "imports": [
+      "from typing import Iterable, List, Optional, Union",
+      "from pydantic import BaseModel, ConfigDict",
+      "from typing_extensions import Literal, Required, TypedDict"
+    ],
+    "classes": [
+      "ChatCompletionSystemMessageParam",
+      "ChatCompletionContentPartTextParam",
+      "ImageURL",
+      "ChatCompletionContentPartImageParam",
+      "ChatCompletionUserMessageParam",
+      "FunctionCall",
+      "Function",
+      "ChatCompletionToolMessageParam",
+      "ChatCompletionFunctionMessageParam",
+      "ChatCompletionMessageToolCallParam",
+      "ChatCompletionAssistantMessageParam",
+      "CompletionRequest"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_072_252998bd59271664_AI_Chariot_Legacy_666_1.0.0_20260508_completion.py.json"
+}

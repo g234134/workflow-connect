@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\Copy.h",
+  "name": "Copy.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 393,
+  "content_sha256": "ac72def26bd60eceaa81ede7c03a3b4d8f2b47b42c691373f9fe50b3258c9bde",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 12,
+    "char_count": 393,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/native/DispatchStub.h>",
+      "namespace at {",
+      "class Tensor;",
+      "struct TensorIterator;",
+      "class TensorBase;",
+      "namespace native {",
+      "using copy_fn = void (*)(TensorIterator&, bool non_blocking);",
+      "DECLARE_DISPATCH(copy_fn, copy_stub);",
+      "TORCH_API void copy_ignoring_overlaps(const TensorBase &dst, const TensorBase &src);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_222_ac72def26bd60ece_Copy.h.json"
+}

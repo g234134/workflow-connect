@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 405,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\datasets\\imagenet.py",
+  "name": "imagenet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8705,
+  "content_sha256": "fd5562262510f942b6f33ac5bbac7d9f55c27355ad55be43842fe002cbf38a27",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 218,
+    "non_empty_lines": 171,
+    "char_count": 8705,
+    "preview_lines": [
+      "import os",
+      "import shutil",
+      "import tempfile",
+      "from contextlib import contextmanager",
+      "from typing import Any, Dict, Iterator, List, Optional, Tuple",
+      "import torch",
+      "from .folder import ImageFolder",
+      "from .utils import check_integrity, extract_archive, verify_str_arg",
+      "ARCHIVE_META = {",
+      "    \"train\": (\"ILSVRC2012_img_train.tar\", \"1d675b47d978889d74fa0da5fadfb00e\"),"
+    ],
+    "imports": [
+      "import os",
+      "import shutil",
+      "import tempfile",
+      "from contextlib import contextmanager",
+      "from typing import Any, Dict, Iterator, List, Optional, Tuple",
+      "import torch",
+      "from .folder import ImageFolder",
+      "from .utils import check_integrity, extract_archive, verify_str_arg",
+      "import scipy.io as sio"
+    ],
+    "classes": [
+      "ImageNet"
+    ],
+    "functions": [
+      "load_meta_file",
+      "_verify_archive",
+      "parse_devkit_archive",
+      "parse_train_archive",
+      "parse_val_archive"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_405_fd5562262510f942_imagenet.py.json"
+}

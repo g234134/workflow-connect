@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 78,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_soupparser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_soupparser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10511,
+  "content_sha256": "7d0fd98d6717c0a4eb6cf0fc96c3def5834fb109a4da8f7309dd5f246157d336",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 258,
+    "char_count": 10511,
+    "preview_lines": [
+      "\"\"\"External interface to the BeautifulSoup HTML parser.",
+      "\"\"\"",
+      "__all__ = [\"fromstring\", \"parse\", \"convert_tree\"]",
+      "import re",
+      "from lxml import etree, html",
+      "try:",
+      "    from bs4 import (",
+      "        BeautifulSoup, Tag, Comment, ProcessingInstruction, NavigableString,",
+      "        Declaration, Doctype)",
+      "    _DECLARATION_OR_DOCTYPE = (Declaration, Doctype)"
+    ],
+    "imports": [
+      "import re",
+      "from lxml import etree, html",
+      "from bs4 import (",
+      "from BeautifulSoup import ("
+    ],
+    "classes": [
+      "_PseudoTag"
+    ],
+    "functions": [
+      "fromstring",
+      "parse",
+      "convert_tree",
+      "_parse",
+      "_convert_tree",
+      "_init_node_converters",
+      "unescape"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_078_7d0fd98d6717c0a4_AI_Chariot_Legacy_666_1.0.0_20260508_soupparser.py.json"
+}

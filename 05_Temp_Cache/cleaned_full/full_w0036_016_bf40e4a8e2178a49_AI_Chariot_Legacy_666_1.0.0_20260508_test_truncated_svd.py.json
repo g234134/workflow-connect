@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_truncated_svd.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_truncated_svd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7454,
+  "content_sha256": "bf40e4a8e2178a49799f4121e976422d60a48ee9155ed5bad21a1d9939fc8f68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 163,
+    "char_count": 7454,
+    "preview_lines": [
+      "\"\"\"Test truncated SVD transformer.\"\"\"",
+      "import numpy as np",
+      "import pytest",
+      "import scipy.sparse as sp",
+      "from sklearn.decomposition import PCA, TruncatedSVD",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import assert_allclose, assert_array_less",
+      "SVD_SOLVERS = [\"arpack\", \"randomized\"]",
+      "@pytest.fixture(scope=\"module\")",
+      "def X_sparse():"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import scipy.sparse as sp",
+      "from sklearn.decomposition import PCA, TruncatedSVD",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import assert_allclose, assert_array_less"
+    ],
+    "classes": [],
+    "functions": [
+      "X_sparse",
+      "test_solvers",
+      "test_attributes",
+      "test_too_many_components",
+      "test_sparse_formats",
+      "test_inverse_transform",
+      "test_integers",
+      "test_explained_variance",
+      "test_explained_variance_components_10_20",
+      "test_singular_values_consistency",
+      "test_singular_values_expected",
+      "test_truncated_svd_eq_pca",
+      "test_fit_transform"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_016_bf40e4a8e2178a49_AI_Chariot_Legacy_666_1.0.0_20260508_test_truncated_svd.py.json"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_connections.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_connections.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22218,
+  "content_sha256": "7fc60211a2e98c9e15b137082f98fe81d53b18665480b864dc5b1d7d015b67e8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 576,
+    "non_empty_lines": 519,
+    "char_count": 22218,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "# Copyright (c) 2009, Giampaolo Rodola'. All rights reserved.",
+      "# Use of this source code is governed by a BSD-style license that can be",
+      "# found in the LICENSE file.",
+      "\"\"\"Tests for net_connections() and Process.connections() APIs.\"\"\"",
+      "import os",
+      "import socket",
+      "import textwrap",
+      "import unittest",
+      "from contextlib import closing"
+    ],
+    "imports": [
+      "import os",
+      "import socket",
+      "import textwrap",
+      "import unittest",
+      "from contextlib import closing",
+      "from socket import AF_INET",
+      "from socket import AF_INET6",
+      "from socket import SOCK_DGRAM",
+      "from socket import SOCK_STREAM",
+      "import psutil",
+      "from psutil import FREEBSD",
+      "from psutil import LINUX",
+      "from psutil import MACOS",
+      "from psutil import NETBSD",
+      "from psutil import OPENBSD",
+      "from psutil import POSIX",
+      "from psutil import SUNOS",
+      "from psutil import WINDOWS",
+      "from psutil._common import supports_ipv6",
+      "from psutil._compat import PY3"
+    ],
+    "classes": [
+      "ConnectionTestCase",
+      "TestBasicOperations",
+      "TestUnconnectedSockets",
+      "TestConnectedSocket",
+      "TestFilters",
+      "TestSystemWideConnections",
+      "TestMisc"
+    ],
+    "functions": [
+      "this_proc_connections"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_281_7fc60211a2e98c9e_AI_Chariot_Legacy_666_1.0.0_20260508_test_connections.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__win32verstamp_pywin32ctypes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__win32verstamp_pywin32ctypes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4668,
+  "content_sha256": "5ea72aeefc0aa68b6f7aacb715013fe6e3c16dfb30d67d3cd77b0e5a9a897d40",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 121,
+    "char_count": 4668,
+    "preview_lines": [
+      "\"\"\"",
+      "A pure-python re-implementation of methods used by win32verstamp.",
+      "This is to avoid a bootstraping problem where win32verstamp is used during build,",
+      "but requires an installation of pywin32 to be present.",
+      "We used to work around this by ignoring failure to verstamp, but that's easy to miss.",
+      "Implementations adapted, simplified and typed from:",
+      "- https://github.com/enthought/pywin32-ctypes/blob/main/win32ctypes/core/ctypes/_util.py",
+      "- https://github.com/enthought/pywin32-ctypes/blob/main/win32ctypes/core/cffi/_resource.py",
+      "- https://github.com/enthought/pywin32-ctypes/blob/main/win32ctypes/pywin32/win32api.py",
+      "---"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Iterable",
+      "from ctypes import FormatError, WinDLL, get_last_error",
+      "from ctypes.wintypes import (",
+      "from typing import TYPE_CHECKING",
+      "from ctypes import _NamedFuncPointer",
+      "from _typeshed import ReadableBuffer",
+      "from typing_extensions import Literal, SupportsBytes, SupportsIndex"
+    ],
+    "classes": [],
+    "functions": [
+      "make_error",
+      "check_null",
+      "check_false",
+      "BeginUpdateResource",
+      "EndUpdateResource",
+      "UpdateResource"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_107_5ea72aeefc0aa68b_AI_Chariot_Legacy_666_1.0.0_20260508__win32verstamp_pywin32ctypes.py.json"
+}

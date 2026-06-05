@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 230,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\_reduction.py",
+  "name": "_reduction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1603,
+  "content_sha256": "2985e7e5c9fccccfd0802693099990096b663c5a989d73fe677f4af8aa2c5ee0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 37,
+    "char_count": 1603,
+    "preview_lines": [
+      "from typing import Optional",
+      "import warnings",
+      "# NB: Keep this file in sync with enums in aten/src/ATen/core/Reduction.h",
+      "def get_enum(reduction: str) -> int:",
+      "    if reduction == 'none':",
+      "        ret = 0",
+      "    elif reduction == 'mean':",
+      "        ret = 1",
+      "    elif reduction == 'elementwise_mean':",
+      "        warnings.warn(\"reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.\")"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "import warnings"
+    ],
+    "classes": [],
+    "functions": [
+      "get_enum",
+      "legacy_get_string",
+      "legacy_get_enum"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_230_2985e7e5c9fccccf__reduction.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\core.py",
+  "name": "core.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17479,
+  "content_sha256": "e923b95b3f8b4a4c7ab760d2ab418f98ebc500b19ed2056c5ddb2f9e8f45963b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 588,
+    "non_empty_lines": 486,
+    "char_count": 17476,
+    "preview_lines": [
+      "\"\"\"",
+      "Find the k-cores of a graph.",
+      "The k-core is found by recursively pruning nodes with degrees less than k.",
+      "See the following references for details:",
+      "An O(m) Algorithm for Cores Decomposition of Networks",
+      "Vladimir Batagelj and Matjaz Zaversnik, 2003.",
+      "https://arxiv.org/abs/cs.DS/0310049",
+      "Generalized Cores",
+      "Vladimir Batagelj and Matjaz Zaversnik, 2002.",
+      "https://arxiv.org/pdf/cs/0202039"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "core_number",
+      "_core_subgraph",
+      "k_core",
+      "k_shell",
+      "k_crust",
+      "k_corona",
+      "k_truss",
+      "onion_layers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_343_e923b95b3f8b4a4c_core.py.json"
+}

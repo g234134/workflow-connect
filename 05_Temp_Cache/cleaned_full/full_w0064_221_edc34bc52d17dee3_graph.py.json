@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\graph.py",
+  "name": "graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5957,
+  "content_sha256": "edc34bc52d17dee3058f79a68e21f039913e0b244bbf8bda28308d4c3a27c5b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 149,
+    "non_empty_lines": 123,
+    "char_count": 5957,
+    "preview_lines": [
+      "import io",
+      "import pickle",
+      "import warnings",
+      "from collections.abc import Collection",
+      "from typing import Dict, List, Optional, Set, Tuple, Type, Union",
+      "from torch.utils.data import IterDataPipe, MapDataPipe",
+      "from torch.utils.data._utils.serialization import DILL_AVAILABLE",
+      "__all__ = [\"traverse\", \"traverse_dps\"]",
+      "DataPipe = Union[IterDataPipe, MapDataPipe]",
+      "DataPipeGraph = Dict[int, Tuple[DataPipe, \"DataPipeGraph\"]]  # type: ignore[misc]"
+    ],
+    "imports": [
+      "import io",
+      "import pickle",
+      "import warnings",
+      "from collections.abc import Collection",
+      "from typing import Dict, List, Optional, Set, Tuple, Type, Union",
+      "from torch.utils.data import IterDataPipe, MapDataPipe",
+      "from torch.utils.data._utils.serialization import DILL_AVAILABLE",
+      "from dill import Pickler as dill_Pickler",
+      "from dill import extend as dill_extend"
+    ],
+    "classes": [],
+    "functions": [
+      "_stub_unpickler",
+      "_list_connected_datapipes",
+      "traverse_dps",
+      "traverse",
+      "_traverse_helper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_221_edc34bc52d17dee3_graph.py.json"
+}

@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+# 大唐三省六部 · 主艙（.venv_main）依賴清單
+# 用途：工廠主線 — Cleaner / Recovery / Indexing / Telegram /
+#       Orchestrator / Watchdog / Sentinel / Schema 守門員
+# 原則：盡量只用 Python 標準庫（urllib / json / sqlite3）；
+#       第三方僅納入「自動化、安全閥、儀表板」三類必需品。
+# 禁區：不要在此艙安裝 crewai / langchain / openai / httpx[edge]，
+#       避免 transitive deps 影響核心 agents 的 urllib 路徑。
+# ─────────────────────────────────────────────────────────────
+
+# 結構驗證（cleaned_full Schema 守門員、設定模型）
+pydantic>=2.6,<3
+
+# Pipeline 設定（factory_pipeline.yaml）
+PyYAML>=6.0,<7
+
+# 進料感應器（raw_inbound 檔案監聽）
+watchdog>=4.0,<5
+
+# 重試 / 指數退避 / DLQ
+tenacity>=8.2,<10
+
+# 哨兵自癒（PID/CPU/MEM 探測；lockfile 老化判斷）
+psutil>=5.9,<8
+
+# CLI 報表 / 排版（可選；不依賴亦可運作）
+rich>=13.7,<14

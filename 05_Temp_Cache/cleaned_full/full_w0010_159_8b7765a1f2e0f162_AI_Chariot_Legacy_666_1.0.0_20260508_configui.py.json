@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_configui.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_configui.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1211,
+  "content_sha256": "8b7765a1f2e0f162513bb106b7feeef34c2ede56bfda183d36ab3104375c4006",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1211,
+    "preview_lines": [
+      "import win32ui",
+      "from pywin.mfc import dialog",
+      "from . import dbgcon",
+      "class DebuggerOptionsPropPage(dialog.PropertyPage):",
+      "    def __init__(self):",
+      "        dialog.PropertyPage.__init__(self, win32ui.IDD_PP_DEBUGGER)",
+      "    def OnInitDialog(self):",
+      "        options = self.options = dbgcon.LoadDebuggerOptions()",
+      "        self.AddDDX(win32ui.IDC_CHECK1, dbgcon.OPT_HIDE)",
+      "        self[dbgcon.OPT_STOP_EXCEPTIONS] = options[dbgcon.OPT_STOP_EXCEPTIONS]"
+    ],
+    "imports": [
+      "import win32ui",
+      "from pywin.mfc import dialog",
+      "from . import dbgcon",
+      "import pywin.debugger"
+    ],
+    "classes": [
+      "DebuggerOptionsPropPage"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_159_8b7765a1f2e0f162_AI_Chariot_Legacy_666_1.0.0_20260508_configui.py.json"
+}

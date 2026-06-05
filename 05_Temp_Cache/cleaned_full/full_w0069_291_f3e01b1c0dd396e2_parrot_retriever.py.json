@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\retrievers\\parrot_retriever.py",
+  "name": "parrot_retriever.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 562,
+  "content_sha256": "f3e01b1c0dd396e25ab9c31c569b5f573d30e5311455f5099c88160dbcf09816",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 14,
+    "char_count": 559,
+    "preview_lines": [
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever",
+      "class FakeParrotRetriever(BaseRetriever):",
+      "    \"\"\"Test util that parrots the query back as documents.\"\"\"",
+      "    def _get_relevant_documents(  # type: ignore[override]",
+      "        self,",
+      "        query: str,",
+      "    ) -> list[Document]:",
+      "        return [Document(page_content=query)]",
+      "    async def _aget_relevant_documents(  # type: ignore[override]"
+    ],
+    "imports": [
+      "from langchain_core.documents import Document",
+      "from langchain_core.retrievers import BaseRetriever"
+    ],
+    "classes": [
+      "FakeParrotRetriever"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_291_f3e01b1c0dd396e2_parrot_retriever.py.json"
+}

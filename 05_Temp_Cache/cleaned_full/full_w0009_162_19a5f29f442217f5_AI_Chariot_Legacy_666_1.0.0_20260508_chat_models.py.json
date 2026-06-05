@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 162,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chat_models.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 100647,
+  "content_sha256": "19a5f29f442217f58846150713b69980846fafb29505ba67e28d2dab8ed816ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2500,
+    "non_empty_lines": 2214,
+    "char_count": 100627,
+    "preview_lines": [
+      "\"\"\"Chat models for conversational AI.\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextlib",
+      "import inspect",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from functools import cached_property",
+      "from operator import itemgetter"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextlib",
+      "import inspect",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from functools import cached_property",
+      "from operator import itemgetter",
+      "from typing import TYPE_CHECKING, Any, Literal, cast",
+      "from langchain_protocol.protocol import MessageFinishData",
+      "from pydantic import BaseModel, ConfigDict, Field, model_validator",
+      "from typing_extensions import Self, override",
+      "from langchain_core.caches import BaseCache",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.globals import get_llm_cache",
+      "from langchain_core.language_models._compat_bridge import (",
+      "from langchain_core.language_models._utils import (",
+      "from langchain_core.language_models.base import (",
+      "from langchain_core.language_models.chat_model_stream import ("
+    ],
+    "classes": [
+      "BaseChatModel",
+      "SimpleChatModel"
+    ],
+    "functions": [
+      "_generate_response_from_error",
+      "_format_for_tracing",
+      "generate_from_stream",
+      "_format_ls_structured_output",
+      "_gen_info_and_msg_metadata",
+      "_cleanup_llm_representation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_162_19a5f29f442217f5_AI_Chariot_Legacy_666_1.0.0_20260508_chat_models.py.json"
+}

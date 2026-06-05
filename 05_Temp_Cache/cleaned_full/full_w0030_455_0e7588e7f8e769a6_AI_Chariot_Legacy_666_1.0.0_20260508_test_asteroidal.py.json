@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 455,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_asteroidal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_asteroidal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 502,
+  "content_sha256": "0e7588e7f8e769a64cc6d1b8e170f42baf741d9b3c7b3ec753ff5d491fa9e9e0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 502,
+    "preview_lines": [
+      "import networkx as nx",
+      "def test_is_at_free():",
+      "    is_at_free = nx.asteroidal.is_at_free",
+      "    cycle = nx.cycle_graph(6)",
+      "    assert not is_at_free(cycle)",
+      "    path = nx.path_graph(6)",
+      "    assert is_at_free(path)",
+      "    small_graph = nx.complete_graph(2)",
+      "    assert is_at_free(small_graph)",
+      "    petersen = nx.petersen_graph()"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_at_free"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_455_0e7588e7f8e769a6_AI_Chariot_Legacy_666_1.0.0_20260508_test_asteroidal.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_teePen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_teePen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1345,
+  "content_sha256": "d7d3771446859b898631366b127e508386225c618aeb5cdc5e38762dc4717bfb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 55,
+    "non_empty_lines": 38,
+    "char_count": 1345,
+    "preview_lines": [
+      "\"\"\"Pen multiplexing drawing to one or more pens.\"\"\"",
+      "from fontTools.pens.basePen import AbstractPen",
+      "__all__ = [\"TeePen\"]",
+      "class TeePen(AbstractPen):",
+      "    \"\"\"Pen multiplexing drawing to one or more pens.",
+      "    Use either as TeePen(pen1, pen2, ...) or TeePen(iterableOfPens).\"\"\"",
+      "    def __init__(self, *pens):",
+      "        if len(pens) == 1:",
+      "            pens = pens[0]",
+      "        self.pens = pens"
+    ],
+    "imports": [
+      "from fontTools.pens.basePen import AbstractPen",
+      "from fontTools.pens.basePen import _TestPen"
+    ],
+    "classes": [
+      "TeePen"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_178_d7d3771446859b89_AI_Chariot_Legacy_666_1.0.0_20260508_teePen.py.json"
+}

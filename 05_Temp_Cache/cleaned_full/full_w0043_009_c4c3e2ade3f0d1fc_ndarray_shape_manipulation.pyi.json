@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\reveal\\ndarray_shape_manipulation.pyi",
+  "name": "ndarray_shape_manipulation.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 1745,
+  "content_sha256": "c4c3e2ade3f0d1fc0d62e4e99edb37069b7e0b1a2b014685d1e6b4a28a7380cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 36,
+    "char_count": 1745,
+    "preview_lines": [
+      "from typing import TypeAlias, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "_ArrayND: TypeAlias = npt.NDArray[np.int64]",
+      "_Array2D: TypeAlias = np.ndarray[tuple[int, int], np.dtype[np.int8]]",
+      "_Array3D: TypeAlias = np.ndarray[tuple[int, int, int], np.dtype[np.bool]]",
+      "_nd: _ArrayND",
+      "_2d: _Array2D",
+      "_3d: _Array3D",
+      "# reshape"
+    ],
+    "imports": [
+      "from typing import TypeAlias, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_009_c4c3e2ade3f0d1fc_ndarray_shape_manipulation.pyi.json"
+}

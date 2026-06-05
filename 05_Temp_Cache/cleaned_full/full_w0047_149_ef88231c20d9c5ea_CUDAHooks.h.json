@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 149,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cuda\\detail\\CUDAHooks.h",
+  "name": "CUDAHooks.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2268,
+  "content_sha256": "ef88231c20d9c5ea75df239004b901607541d1bb7a37ee0bdfff3adbf70f9ea5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 46,
+    "char_count": 2268,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/detail/CUDAHooksInterface.h>",
+      "#include <ATen/Generator.h>",
+      "#include <c10/util/Optional.h>",
+      "// TODO: No need to have this whole header, we can just put it all in",
+      "// the cpp file",
+      "namespace at::cuda::detail {",
+      "// Set the callback to initialize Magma, which is set by",
+      "// torch_cuda_cu. This indirection is required so magma_init is called",
+      "// in the same library where Magma will be used."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_149_ef88231c20d9c5ea_CUDAHooks.h.json"
+}

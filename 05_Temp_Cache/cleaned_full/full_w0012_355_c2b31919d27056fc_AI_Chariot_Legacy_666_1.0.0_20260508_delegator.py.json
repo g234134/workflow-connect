@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_delegator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_delegator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1044,
+  "content_sha256": "c2b31919d27056fc3aaa8f4ef798fbdf162665175fa9216d665f58ba2e4a464d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1044,
+    "preview_lines": [
+      "class Delegator:",
+      "    def __init__(self, delegate=None):",
+      "        self.delegate = delegate",
+      "        self.__cache = set()",
+      "        # Cache is used to only remove added attributes",
+      "        # when changing the delegate.",
+      "    def __getattr__(self, name):",
+      "        attr = getattr(self.delegate, name) # May raise AttributeError",
+      "        setattr(self, name, attr)",
+      "        self.__cache.add(name)"
+    ],
+    "imports": [
+      "from unittest import main"
+    ],
+    "classes": [
+      "Delegator"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_355_c2b31919d27056fc_AI_Chariot_Legacy_666_1.0.0_20260508_delegator.py.json"
+}

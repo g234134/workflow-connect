@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 273,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_windows_eventqueue.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_windows_eventqueue.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 991,
+  "content_sha256": "ca39efc778d55c97357fc8b95f25f1c9301f79f487ee7486f24bf872a87c3aa7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 35,
+    "char_count": 991,
+    "preview_lines": [
+      "\"\"\"",
+      "Windows event and VT sequence scanner",
+      "\"\"\"",
+      "from .base_eventqueue import BaseEventQueue",
+      "# Reference: https://learn.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences#input-sequences",
+      "VT_MAP: dict[bytes, str] = {",
+      "    b'\\x1b[A': 'up',",
+      "    b'\\x1b[B': 'down',",
+      "    b'\\x1b[C': 'right',",
+      "    b'\\x1b[D': 'left',"
+    ],
+    "imports": [
+      "from .base_eventqueue import BaseEventQueue"
+    ],
+    "classes": [
+      "EventQueue"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_273_ca39efc778d55c97_AI_Chariot_Legacy_666_1.0.0_20260508_windows_eventqueue.py.json"
+}

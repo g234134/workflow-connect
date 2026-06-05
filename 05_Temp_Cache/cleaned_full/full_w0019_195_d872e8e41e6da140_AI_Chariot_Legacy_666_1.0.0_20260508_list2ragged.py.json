@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_list2ragged.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_list2ragged.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 888,
+  "content_sha256": "d872e8e41e6da1403cab578346f00d76659634e0f7b8f155108c5637636baca1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 18,
+    "char_count": 888,
+    "preview_lines": [
+      "from typing import Callable, List, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ArrayXd, ListXd, Ragged",
+      "InT = TypeVar(\"InT\", bound=ListXd)",
+      "OutT = Ragged",
+      "@registry.layers(\"list2ragged.v1\")",
+      "def list2ragged() -> Model[InT, OutT]:",
+      "    \"\"\"Transform sequences to ragged arrays if necessary and return the ragged",
+      "    array. If sequences are already ragged, do nothing. A ragged array is a"
+    ],
+    "imports": [
+      "from typing import Callable, List, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ArrayXd, ListXd, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "list2ragged",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_195_d872e8e41e6da140_AI_Chariot_Legacy_666_1.0.0_20260508_list2ragged.py.json"
+}

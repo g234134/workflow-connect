@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cuts.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cuts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23015,
+  "content_sha256": "77d3ba1b77ee863834184b834a6e90c98866dce4c128565e1c2ed3cfa219d0c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 612,
+    "non_empty_lines": 505,
+    "char_count": 23015,
+    "preview_lines": [
+      "\"\"\"",
+      "Flow based cut algorithms",
+      "\"\"\"",
+      "import itertools",
+      "import networkx as nx",
+      "# Define the default maximum flow function to use in all flow based",
+      "# cut algorithms.",
+      "from networkx.algorithms.flow import build_residual_network, edmonds_karp",
+      "default_flow_func = edmonds_karp",
+      "from .utils import build_auxiliary_edge_connectivity, build_auxiliary_node_connectivity"
+    ],
+    "imports": [
+      "import itertools",
+      "import networkx as nx",
+      "from networkx.algorithms.flow import build_residual_network, edmonds_karp",
+      "from .utils import build_auxiliary_edge_connectivity, build_auxiliary_node_connectivity",
+      "from target in G."
+    ],
+    "classes": [],
+    "functions": [
+      "minimum_st_edge_cut",
+      "minimum_st_node_cut",
+      "minimum_node_cut",
+      "minimum_edge_cut"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_123_77d3ba1b77ee8638_AI_Chariot_Legacy_666_1.0.0_20260508_cuts.py.json"
+}

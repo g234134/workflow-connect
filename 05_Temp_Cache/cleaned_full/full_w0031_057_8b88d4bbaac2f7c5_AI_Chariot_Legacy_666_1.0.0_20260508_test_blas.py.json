@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 57,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_blas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_blas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42856,
+  "content_sha256": "8b88d4bbaac2f7c58e88a5f342d442525ebe41d710945449bc086704f6d88a95",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1127,
+    "non_empty_lines": 945,
+    "char_count": 42856,
+    "preview_lines": [
+      "#",
+      "# Created by: Pearu Peterson, April 2002",
+      "#",
+      "import math",
+      "import pytest",
+      "import numpy as np",
+      "import numpy.random",
+      "from numpy.testing import (assert_equal, assert_almost_equal, assert_,",
+      "                           assert_array_almost_equal, assert_allclose)",
+      "from pytest import raises as assert_raises"
+    ],
+    "imports": [
+      "import math",
+      "import pytest",
+      "import numpy as np",
+      "import numpy.random",
+      "from numpy.testing import (assert_equal, assert_almost_equal, assert_,",
+      "from pytest import raises as assert_raises",
+      "from numpy import float32, float64, complex64, complex128, arange, triu, \\",
+      "import scipy",
+      "from scipy.linalg import _fblas as fblas, get_blas_funcs, toeplitz, solve",
+      "from scipy.linalg import _cblas as cblas"
+    ],
+    "classes": [
+      "TestCBLAS1Simple",
+      "TestFBLAS1Simple",
+      "TestFBLAS2Simple",
+      "TestFBLAS3Simple",
+      "TestBLAS3Symm",
+      "TestBLAS3Syrk",
+      "TestBLAS3Syr2k",
+      "TestSyHe",
+      "TestTRMM"
+    ],
+    "functions": [
+      "test_get_blas_funcs",
+      "test_get_blas_funcs_alias",
+      "_get_func",
+      "test_trsm",
+      "test_gh_169309",
+      "test_dnrm2_neg_incx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_057_8b88d4bbaac2f7c5_AI_Chariot_Legacy_666_1.0.0_20260508_test_blas.py.json"
+}

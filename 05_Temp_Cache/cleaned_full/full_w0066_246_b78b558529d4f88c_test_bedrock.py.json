@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 246,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\messages\\block_translators\\test_bedrock.py",
+  "name": "test_bedrock.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12817,
+  "content_sha256": "b78b558529d4f88c4f8b8774a86d011ddbf83f068904962d7f0d91ff19776f1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 405,
+    "non_empty_lines": 392,
+    "char_count": 12814,
+    "preview_lines": [
+      "from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage",
+      "from langchain_core.messages import content as types",
+      "def test_convert_to_v1_from_bedrock() -> None:",
+      "    message = AIMessage(",
+      "        [",
+      "            {\"type\": \"thinking\", \"thinking\": \"foo\", \"signature\": \"foo_signature\"},",
+      "            {\"type\": \"text\", \"text\": \"Let's call a tool.\"},",
+      "            {",
+      "                \"type\": \"tool_use\",",
+      "                \"id\": \"abc_123\","
+    ],
+    "imports": [
+      "from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage",
+      "from langchain_core.messages import content as types"
+    ],
+    "classes": [],
+    "functions": [
+      "test_convert_to_v1_from_bedrock",
+      "test_convert_to_v1_from_bedrock_chunk",
+      "test_convert_to_v1_from_bedrock_input"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_246_b78b558529d4f88c_test_bedrock.py.json"
+}

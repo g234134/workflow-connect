@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 139,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__model_garden.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__model_garden.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 69103,
+  "content_sha256": "0cb0a6159ca0704900a9176c121853e37876774e14a89033b72121cbf09a6fb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1537,
+    "non_empty_lines": 1381,
+    "char_count": 69103,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import datetime",
+      "import functools",
+      "import re",
+      "from typing import Dict, List, Optional, Sequence, Union",
+      "from google.cloud import aiplatform",
+      "from google.cloud.aiplatform import base",
+      "from google.cloud.aiplatform import compat",
+      "from google.cloud.aiplatform import initializer",
+      "from google.cloud.aiplatform import models as aiplatform_models",
+      "from google.cloud.aiplatform import utils",
+      "from google.cloud.aiplatform_v1beta1 import types",
+      "from google.cloud.aiplatform_v1beta1.services import model_garden_service",
+      "from google.cloud.aiplatform_v1beta1.services import model_service",
+      "from vertexai import batch_prediction",
+      "from google.protobuf import duration_pb2"
+    ],
+    "classes": [
+      "_ModelGardenClientWithOverride",
+      "_ModelServiceClientWithOverride",
+      "OpenModel",
+      "CustomModel",
+      "PartnerModel",
+      "Model"
+    ],
+    "functions": [
+      "list_deployable_models",
+      "list_models",
+      "_is_hugging_face_model",
+      "_get_publisher_model_resource_name",
+      "_reconcile_model_name",
+      "_construct_serving_container_spec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_139_0cb0a6159ca07049_AI_Chariot_Legacy_666_1.0.0_20260508__model_garden.py.json"
+}

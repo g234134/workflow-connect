@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fake_impl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fake_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8070,
+  "content_sha256": "3cfd4ba68b596547f17ddd512a9092ef4025b29658c01178f3f2591b6bbdc0b2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 207,
+    "non_empty_lines": 168,
+    "char_count": 8070,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "import functools",
+      "from typing import Callable, Optional",
+      "from typing_extensions import deprecated",
+      "import torch",
+      "from torch._library.utils import Kernel, RegistrationHandle",
+      "class FakeImplHolder:",
+      "    \"\"\"A holder where one can register an fake impl to.\"\"\"",
+      "    def __init__(self, qualname: str):"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "from typing import Callable, Optional",
+      "from typing_extensions import deprecated",
+      "import torch",
+      "from torch._library.utils import Kernel, RegistrationHandle"
+    ],
+    "classes": [
+      "FakeImplHolder",
+      "FakeImplCtx"
+    ],
+    "functions": [
+      "construct_meta_kernel",
+      "get_none",
+      "set_ctx_getter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_258_3cfd4ba68b596547_AI_Chariot_Legacy_666_1.0.0_20260508_fake_impl.py.json"
+}

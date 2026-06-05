@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1081,
+  "content_sha256": "8d85d8766a8987fce7cdc0200ee0b1257a39b217feb7f0f09acc8591a0d59c01",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 20,
+    "char_count": 1081,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "from .conversation_item import ConversationItem",
+      "__all__ = [\"ConversationItemCreateEvent\"]",
+      "class ConversationItemCreateEvent(BaseModel):",
+      "    item: ConversationItem",
+      "    \"\"\"The item to add to the conversation.\"\"\"",
+      "    type: Literal[\"conversation.item.create\"]"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "from .conversation_item import ConversationItem"
+    ],
+    "classes": [
+      "ConversationItemCreateEvent"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_260_8d85d8766a8987fc_AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 210,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\masked\\maskedtensor\\core.py",
+  "name": "core.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12721,
+  "content_sha256": "2af70c99c6d0486ac0ee97ce0db9f12c401877f3a6850f34f19b0b18e30fdd4f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 336,
+    "non_empty_lines": 283,
+    "char_count": 12721,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import warnings",
+      "import torch",
+      "from torch.overrides import get_default_nowrap_functions",
+      "__all__ = [",
+      "    \"MaskedTensor\",",
+      "    \"is_masked_tensor\",",
+      "]",
+      "def is_masked_tensor(a):",
+      "    r\"\"\" Returns True if the input is a MaskedTensor, else False"
+    ],
+    "imports": [
+      "import warnings",
+      "import torch",
+      "from torch.overrides import get_default_nowrap_functions",
+      "from .._ops import _sparse_coo_where, _sparse_csr_where"
+    ],
+    "classes": [
+      "MaskedTensor"
+    ],
+    "functions": [
+      "is_masked_tensor",
+      "_tensors_match",
+      "_masks_match",
+      "_map_mt_args_kwargs",
+      "_wrap_result",
+      "_masked_tensor_str",
+      "_get_data",
+      "_maybe_get_mask"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_210_2af70c99c6d0486a_core.py.json"
+}

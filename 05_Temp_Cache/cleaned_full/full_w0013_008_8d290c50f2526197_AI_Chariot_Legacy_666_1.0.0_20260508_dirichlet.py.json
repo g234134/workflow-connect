@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 8,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dirichlet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dirichlet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4380,
+  "content_sha256": "8d290c50f2526197778534634b730aa6933f876d3bab4008d58bed2963a1203a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 104,
+    "char_count": 4380,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "from torch.autograd import Function",
+      "from torch.autograd.function import once_differentiable",
+      "from torch.distributions import constraints",
+      "from torch.distributions.exp_family import ExponentialFamily",
+      "from torch.types import _size",
+      "__all__ = [\"Dirichlet\"]",
+      "# This helper is exposed for testing.",
+      "def _Dirichlet_backward(x, concentration, grad_output):"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.autograd import Function",
+      "from torch.autograd.function import once_differentiable",
+      "from torch.distributions import constraints",
+      "from torch.distributions.exp_family import ExponentialFamily",
+      "from torch.types import _size"
+    ],
+    "classes": [
+      "_Dirichlet",
+      "Dirichlet"
+    ],
+    "functions": [
+      "_Dirichlet_backward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_008_8d290c50f2526197_AI_Chariot_Legacy_666_1.0.0_20260508_dirichlet.py.json"
+}

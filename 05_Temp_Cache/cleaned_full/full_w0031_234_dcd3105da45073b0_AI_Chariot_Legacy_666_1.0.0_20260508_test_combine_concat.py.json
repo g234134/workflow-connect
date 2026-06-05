@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 234,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_combine_concat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_combine_concat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2651,
+  "content_sha256": "dcd3105da45073b0719f91e14877df714136e06662fd561f96714b9e2c4e81bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 52,
+    "char_count": 2651,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays.sparse import SparseArray",
+      "class TestSparseArrayConcat:",
+      "    @pytest.mark.parametrize(\"kind\", [\"integer\", \"block\"])",
+      "    def test_basic(self, kind):",
+      "        a = SparseArray([1, 0, 0, 2], kind=kind)",
+      "        b = SparseArray([1, 0, 2, 2], kind=kind)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays.sparse import SparseArray"
+    ],
+    "classes": [
+      "TestSparseArrayConcat"
+    ],
+    "functions": [
+      "test_concat_with_non_sparse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_234_dcd3105da45073b0_AI_Chariot_Legacy_666_1.0.0_20260508_test_combine_concat.py.json"
+}

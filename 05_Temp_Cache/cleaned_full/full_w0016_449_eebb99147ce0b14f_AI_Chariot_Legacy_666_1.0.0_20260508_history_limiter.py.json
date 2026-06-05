@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 449,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_history_limiter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_history_limiter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2060,
+  "content_sha256": "eebb99147ce0b14fec8b97f476269cc275793a24d0534f380de8e6960d9a4557",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 43,
+    "char_count": 2060,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from collections.abc import Sequence",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelRequest, ModelResponse, ToolResultsEvent",
+      "from autogen.beta.middleware.base import BaseMiddleware, LLMCall, MiddlewareFactory",
+      "class HistoryLimiter(MiddlewareFactory):",
+      "    def __init__(self, max_events: int) -> None:",
+      "        if max_events < 1:"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelRequest, ModelResponse, ToolResultsEvent",
+      "from autogen.beta.middleware.base import BaseMiddleware, LLMCall, MiddlewareFactory"
+    ],
+    "classes": [
+      "HistoryLimiter",
+      "_HistoryLimiter"
+    ],
+    "functions": [
+      "_skip_leading_tool_results"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_449_eebb99147ce0b14f_AI_Chariot_Legacy_666_1.0.0_20260508_history_limiter.py.json"
+}

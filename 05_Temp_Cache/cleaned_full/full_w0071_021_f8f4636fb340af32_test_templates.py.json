@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 21,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\tests\\unit_tests\\cli\\test_templates.py",
+  "name": "test_templates.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2654,
+  "content_sha256": "f8f4636fb340af3263feb1b0b4ee391113c8935ec42d5ce6a89d18835a5b0d65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 55,
+    "char_count": 2651,
+    "preview_lines": [
+      "\"\"\"Unit tests for the 'new' CLI command.",
+      "This command creates a new LangGraph project using a specified template.",
+      "\"\"\"",
+      "import os",
+      "from io import BytesIO",
+      "from pathlib import Path",
+      "from tempfile import TemporaryDirectory",
+      "from unittest.mock import MagicMock, patch",
+      "from urllib import request",
+      "from zipfile import ZipFile"
+    ],
+    "imports": [
+      "import os",
+      "from io import BytesIO",
+      "from pathlib import Path",
+      "from tempfile import TemporaryDirectory",
+      "from unittest.mock import MagicMock, patch",
+      "from urllib import request",
+      "from zipfile import ZipFile",
+      "from click.testing import CliRunner",
+      "from langgraph_cli.cli import cli",
+      "from langgraph_cli.templates import TEMPLATE_ID_TO_CONFIG"
+    ],
+    "classes": [],
+    "functions": [
+      "test_create_new_with_mocked_download",
+      "test_invalid_template_id"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_021_f8f4636fb340af32_test_templates.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llava_agent.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llava_agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7250,
+  "content_sha256": "a1f348238eb0ba3cfd7ad2ba6d605aa7eaf3ddc2cd49719d00e9477e772ca889",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 207,
+    "non_empty_lines": 174,
+    "char_count": 7250,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "#",
+      "# Portions derived from  https://github.com/microsoft/autogen are under the MIT License.",
+      "# SPDX-License-Identifier: MIT",
+      "import json",
+      "import logging",
+      "import warnings",
+      "from typing import Any"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "import warnings",
+      "from typing import Any",
+      "import requests",
+      "from typing_extensions import deprecated",
+      "from ...code_utils import content_str",
+      "from ...formatting_utils import colored",
+      "from ...import_utils import optional_import_block, require_optional_import",
+      "from ...llm_config import LLMConfig",
+      "from ..agent import Agent",
+      "from .img_utils import get_image_data, llava_formatter",
+      "from .multimodal_conversable_agent import MultimodalConversableAgent",
+      "import replicate"
+    ],
+    "classes": [
+      "LLaVAAgent"
+    ],
+    "functions": [
+      "_llava_call_binary_with_config",
+      "llava_call_binary",
+      "llava_call"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_255_a1f348238eb0ba3c_AI_Chariot_Legacy_666_1.0.0_20260508_llava_agent.py.json"
+}

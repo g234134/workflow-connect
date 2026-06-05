@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_init_guardrails.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_init_guardrails.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5682,
+  "content_sha256": "fc22dfc02c55d736f087a6b66eb548397b7de20880990e378290f58a8e906cd1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 125,
+    "char_count": 5682,
+    "preview_lines": [
+      "from typing import Any, Dict, List, Optional, cast",
+      "import litellm",
+      "from litellm import Router",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.common_utils.callback_utils import initialize_callbacks_on_proxy",
+      "# v2 implementation",
+      "from litellm.types.guardrails import Guardrail, GuardrailItem, GuardrailItemSpec",
+      "all_guardrails: List[GuardrailItem] = []",
+      "\"\"\"",
+      "Map guardrail_name: <pre_call>, <post_call>, during_call"
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Optional, cast",
+      "import litellm",
+      "from litellm import Router",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.common_utils.callback_utils import initialize_callbacks_on_proxy",
+      "from litellm.types.guardrails import Guardrail, GuardrailItem, GuardrailItemSpec",
+      "from litellm.proxy.guardrails.guardrail_registry import IN_MEMORY_GUARDRAIL_HANDLER",
+      "from litellm.proxy.guardrails.guardrail_registry import IN_MEMORY_GUARDRAIL_HANDLER",
+      "from litellm.proxy.proxy_server import llm_router",
+      "from litellm.types.router import GuardrailTypedDict"
+    ],
+    "classes": [],
+    "functions": [
+      "init_guardrails_v2",
+      "_populate_router_guardrail_list",
+      "initialize_guardrails"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_464_fc22dfc02c55d736_AI_Chariot_Legacy_666_1.0.0_20260508_init_guardrails.py.json"
+}

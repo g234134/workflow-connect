@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\load\\serializable.py",
+  "name": "serializable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13182,
+  "content_sha256": "76e6cae185e86c5b1e54fb0d00b95d419e99fc44e17161783a8c3f66f29fb95d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 388,
+    "non_empty_lines": 306,
+    "char_count": 13179,
+    "preview_lines": [
+      "\"\"\"Serializable base class.\"\"\"",
+      "import contextlib",
+      "import logging",
+      "from abc import ABC",
+      "from typing import (",
+      "    Any,",
+      "    Literal,",
+      "    TypedDict,",
+      "    cast,",
+      ")"
+    ],
+    "imports": [
+      "import contextlib",
+      "import logging",
+      "from abc import ABC",
+      "from typing import (",
+      "from pydantic import BaseModel, ConfigDict",
+      "from pydantic.fields import FieldInfo",
+      "from typing_extensions import NotRequired, override"
+    ],
+    "classes": [
+      "BaseSerialized",
+      "SerializedConstructor",
+      "SerializedSecret",
+      "SerializedNotImplemented",
+      "Serializable"
+    ],
+    "functions": [
+      "try_neq_default",
+      "_try_neq_default",
+      "_is_field_useful",
+      "_replace_secrets",
+      "to_json_not_implemented"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_055_76e6cae185e86c5b_serializable.py.json"
+}

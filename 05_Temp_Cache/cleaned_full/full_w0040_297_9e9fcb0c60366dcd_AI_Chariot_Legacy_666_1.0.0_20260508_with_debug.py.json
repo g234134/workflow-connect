@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 297,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_with_debug.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_with_debug.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1377,
+  "content_sha256": "9e9fcb0c60366dcd823a0e56ad39c44b0d0ed8af133425b7e9cce6d0ee250805",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 32,
+    "char_count": 1377,
+    "preview_lines": [
+      "from typing import Any, Callable, Optional, Tuple, TypeVar",
+      "from ..model import Model",
+      "_ModelT = TypeVar(\"_ModelT\", bound=Model)",
+      "do_nothing = lambda *args, **kwargs: None",
+      "def with_debug(",
+      "    layer: _ModelT,",
+      "    name: Optional[str] = None,",
+      "    *,",
+      "    on_init: Callable[[Model, Any, Any], None] = do_nothing,",
+      "    on_forward: Callable[[Model, Any, bool], None] = do_nothing,"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Optional, Tuple, TypeVar",
+      "from ..model import Model"
+    ],
+    "classes": [],
+    "functions": [
+      "with_debug"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_297_9e9fcb0c60366dcd_AI_Chariot_Legacy_666_1.0.0_20260508_with_debug.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ipdoctest.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ipdoctest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11881,
+  "content_sha256": "bd84294b2d23864f46eebde87018d6afb093d891162312ab1f62a01ff06681aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 299,
+    "non_empty_lines": 234,
+    "char_count": 11881,
+    "preview_lines": [
+      "\"\"\"Nose Plugin that supports IPython doctests.",
+      "Limitations:",
+      "- When generating examples for use as doctests, make sure that you have",
+      "  pretty-printing OFF.  This can be done either by setting the",
+      "  ``PlainTextFormatter.pprint`` option in your configuration file to  False, or",
+      "  by interactively disabling it with  %Pprint.  This is required so that IPython",
+      "  output matches that of normal Python, which is used by doctest for internal",
+      "  execution.",
+      "- Do not rely on specific prompt numbers for results (such as using",
+      "  '_34==True', for example).  For IPython tests run via an external process the"
+    ],
+    "imports": [
+      "import doctest",
+      "import logging",
+      "import re",
+      "from testpath import modified_env"
+    ],
+    "classes": [
+      "DocTestFinder",
+      "IPDoctestOutputChecker",
+      "IPExample",
+      "IPDocTestParser",
+      "IPDocTestRunner"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_192_bd84294b2d23864f_AI_Chariot_Legacy_666_1.0.0_20260508_ipdoctest.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 19,
+  "generated_at": "2026-05-08T18:44:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__afm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__afm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16692,
+  "content_sha256": "7167b521bdfb4fa6721db47afe13eecc08e8b4c9a2df6cbe90307e8b6f22caa1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 532,
+    "non_empty_lines": 441,
+    "char_count": 16692,
+    "preview_lines": [
+      "\"\"\"",
+      "A python interface to Adobe Font Metrics Files.",
+      "Although a number of other Python implementations exist, and may be more",
+      "complete than this, it was decided not to go with them because they were",
+      "either:",
+      "1) copyrighted or used a non-BSD compatible license",
+      "2) had too many dependencies and a free standing lib was needed",
+      "3) did more than needed and it was easier to write afresh rather than",
+      "   figure out how to get just what was needed.",
+      "It is pretty easy to use, and has no external dependencies:"
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "import logging",
+      "import re",
+      "from ._mathtext_data import uni2type1"
+    ],
+    "classes": [
+      "AFM"
+    ],
+    "functions": [
+      "_to_int",
+      "_to_float",
+      "_to_str",
+      "_to_list_of_ints",
+      "_to_list_of_floats",
+      "_to_bool",
+      "_parse_header",
+      "_parse_char_metrics",
+      "_parse_kern_pairs",
+      "_parse_composites",
+      "_parse_optional"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_019_7167b521bdfb4fa6_AI_Chariot_Legacy_666_1.0.0_20260508__afm.py.json"
+}

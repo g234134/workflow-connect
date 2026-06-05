@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 353,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pageobjects.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pageobjects.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24198,
+  "content_sha256": "3fcfac83e3f8278bebc0644d841183ab11b65c40b50cf53155f86dba623e9755",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 616,
+    "non_empty_lines": 489,
+    "char_count": 24195,
+    "preview_lines": [
+      "# SPDX-FileCopyrightText: 2026 geisserml <geisserml@gmail.com>",
+      "# SPDX-License-Identifier: Apache-2.0 OR BSD-3-Clause",
+      "__all__ = (\"PdfObject\", \"PdfImage\", \"PdfTextObj\", \"PdfFont\")",
+      "import ctypes",
+      "from ctypes import c_uint, c_float",
+      "import logging",
+      "from pathlib import Path",
+      "from codecs import decode",
+      "from collections import namedtuple",
+      "import pypdfium2.raw as pdfium_c"
+    ],
+    "imports": [
+      "import ctypes",
+      "from ctypes import c_uint, c_float",
+      "import logging",
+      "from pathlib import Path",
+      "from codecs import decode",
+      "from collections import namedtuple",
+      "import pypdfium2.raw as pdfium_c",
+      "import pypdfium2.internal as pdfium_i",
+      "from pypdfium2.internal import FPDF_WCHAR_size",
+      "from pypdfium2._helpers.misc import PdfiumError",
+      "from pypdfium2._helpers.matrix import PdfMatrix",
+      "from pypdfium2._helpers.bitmap import PdfBitmap",
+      "from pypdfium2._lazy import Lazy, cached_property"
+    ],
+    "classes": [
+      "PdfObject",
+      "PdfTextObj",
+      "PdfFont",
+      "PdfImage",
+      "_ImageExtractionError"
+    ],
+    "functions": [
+      "_get_pil_mode",
+      "_extract_smart",
+      "_extract_direct"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_353_3fcfac83e3f8278b_AI_Chariot_Legacy_666_1.0.0_20260508_pageobjects.py.json"
+}

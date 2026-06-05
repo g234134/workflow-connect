@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__triton_ops_meta.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__triton_ops_meta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 482840,
+  "content_sha256": "099f7675eae9d6ebdb839d9fcd45425becd0fe4b51177a3b4d55a914123a9f8e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 7387,
+    "non_empty_lines": 7283,
+    "char_count": 482840,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Provides optimal triton kernel parameters.",
+      "Aim",
+      "---",
+      "The usage of optimal triton kernel parameters may increase the",
+      "performance of operations several times. For example, for large tensor",
+      "shapes, the usage of a bsr tensor as mat1 argument in addmm-based",
+      "operations typically outperforms the corresponding operation with",
+      "strided-only inputs when the blocked representation of a tensor",
+      "provides a better alignement with memory access than what the strided"
+    ],
+    "imports": [
+      "import inspect",
+      "import itertools",
+      "import re",
+      "import warnings",
+      "from typing import Any, Dict",
+      "import torch",
+      "from torch.hub import tqdm",
+      "from torch.testing import make_tensor"
+    ],
+    "classes": [],
+    "functions": [
+      "get_meta",
+      "update",
+      "dump",
+      "minimize",
+      "create_blocked_tensor",
+      "optimize_scatter_mm",
+      "tune__int_bsr_dense_addmm",
+      "tune_bsr_dense_addmm",
+      "optimize_bsr_dense_addmm",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_469_099f7675eae9d6eb_AI_Chariot_Legacy_666_1.0.0_20260508__triton_ops_meta.py.json"
+}

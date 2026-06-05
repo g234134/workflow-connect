@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 179,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\backend.py",
+  "name": "backend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5273,
+  "content_sha256": "845f5c7ed8f307dd9011cc2299e923d2043d0843174c7fa5787de5f10720b86a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 108,
+    "char_count": 5273,
+    "preview_lines": [
+      "import os",
+      "USE_SYMENGINE = os.getenv('USE_SYMENGINE', '0')",
+      "USE_SYMENGINE = USE_SYMENGINE.lower() in ('1', 't', 'true')  # type: ignore",
+      "if USE_SYMENGINE:",
+      "    from symengine import (Symbol, Integer, sympify as sympify_symengine, S,",
+      "        SympifyError, exp, log, gamma, sqrt, I, E, pi, Matrix,",
+      "        sin, cos, tan, cot, csc, sec, asin, acos, atan, acot, acsc, asec,",
+      "        sinh, cosh, tanh, coth, asinh, acosh, atanh, acoth,",
+      "        lambdify, symarray, diff, zeros, eye, diag, ones,",
+      "        expand, Function, symbols, var, Add, Mul, Derivative,"
+    ],
+    "imports": [
+      "import os",
+      "from symengine import (Symbol, Integer, sympify as sympify_symengine, S,",
+      "from symengine.lib.symengine_wrapper import gcd as igcd",
+      "from symengine import AppliedUndef",
+      "from sympy.core.add import Add",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.function import (diff, Function, AppliedUndef,",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.intfunc import igcd",
+      "from sympy.core.numbers import pi, I, Integer, Rational, E",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol, var, symbols",
+      "from sympy.core.sympify import SympifyError, sympify",
+      "from sympy.functions.elementary.exponential import log, exp",
+      "from sympy.functions.elementary.hyperbolic import (coth, sinh,",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.functions.elementary.trigonometric import (csc,",
+      "from sympy.functions.special.gamma_functions import gamma",
+      "from sympy.matrices.dense import (eye, zeros, diag, Matrix,",
+      "from sympy.matrices.immutable import ImmutableMatrix"
+    ],
+    "classes": [],
+    "functions": [
+      "_simplify_matrix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_179_845f5c7ed8f307dd_backend.py.json"
+}

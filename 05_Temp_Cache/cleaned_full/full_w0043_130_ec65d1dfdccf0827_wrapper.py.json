@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\assumptions\\wrapper.py",
+  "name": "wrapper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5434,
+  "content_sha256": "ec65d1dfdccf0827d5fa972cf2987d291470645de2fd3e4bcefd79eaf2857ff2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 134,
+    "char_count": 5434,
+    "preview_lines": [
+      "\"\"\"",
+      "Functions and wrapper object to call assumption property and predicate",
+      "query with same syntax.",
+      "In SymPy, there are two assumption systems. Old assumption system is",
+      "defined in sympy/core/assumptions, and it can be accessed by attribute",
+      "such as ``x.is_even``. New assumption system is defined in",
+      "sympy/assumptions, and it can be accessed by predicates such as",
+      "``Q.even(x)``.",
+      "Old assumption is fast, while new assumptions can freely take local facts.",
+      "In general, old assumption is used in evaluation method and new assumption"
+    ],
+    "imports": [
+      "from sympy.assumptions import ask, Q",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.sympify import _sympify"
+    ],
+    "classes": [
+      "AssumptionsWrapper"
+    ],
+    "functions": [
+      "make_eval_method",
+      "is_infinite",
+      "is_extended_real",
+      "is_extended_nonnegative"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_130_ec65d1dfdccf0827_wrapper.py.json"
+}

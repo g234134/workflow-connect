@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 384,
+  "generated_at": "2026-05-08T18:48:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\tools\\json\\tool.py",
+  "name": "tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1618,
+  "content_sha256": "7ab27e2d595ffc4dbb3de2db1ff9fcb21ccd525295fce7e892fa314fc3004b45",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 36,
+    "char_count": 1615,
+    "preview_lines": [
+      "\"\"\"This module provides dynamic access to deprecated JSON tools in LangChain.",
+      "It ensures backward compatibility by forwarding references such as",
+      "`JsonGetValueTool`, `JsonListKeysTool`, and `JsonSpec` to their updated",
+      "locations within the `langchain_community.tools` namespace.",
+      "This setup allows legacy code to continue working while guiding developers",
+      "toward using the updated module paths.",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.tools import JsonGetValueTool, JsonListKeysTool",
+      "from langchain_community.tools.json.tool import JsonSpec"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_384_7ab27e2d595ffc4d_tool.py.json"
+}

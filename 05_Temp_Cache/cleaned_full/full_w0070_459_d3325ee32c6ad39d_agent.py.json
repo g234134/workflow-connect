@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\examples\\graphs_reqs_b\\graphs_submod\\agent.py",
+  "name": "agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3405,
+  "content_sha256": "d3325ee32c6ad39d32447469a8cb6126444d80b2df8e85ccbb8bf439ba015a13",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 78,
+    "char_count": 3402,
+    "preview_lines": [
+      "from collections.abc import Sequence",
+      "from pathlib import Path",
+      "from typing import Annotated, Literal, TypedDict",
+      "from langchain_anthropic import ChatAnthropic",
+      "from langchain_community.tools.tavily_search import TavilySearchResults",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_openai import ChatOpenAI",
+      "from langgraph.graph import END, StateGraph, add_messages",
+      "from langgraph.prebuilt import ToolNode",
+      "from langgraph.runtime import Runtime"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from pathlib import Path",
+      "from typing import Annotated, Literal, TypedDict",
+      "from langchain_anthropic import ChatAnthropic",
+      "from langchain_community.tools.tavily_search import TavilySearchResults",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_openai import ChatOpenAI",
+      "from langgraph.graph import END, StateGraph, add_messages",
+      "from langgraph.prebuilt import ToolNode",
+      "from langgraph.runtime import Runtime"
+    ],
+    "classes": [
+      "AgentContext",
+      "AgentState"
+    ],
+    "functions": [
+      "should_continue",
+      "call_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_459_d3325ee32c6ad39d_agent.py.json"
+}

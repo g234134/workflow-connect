@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_with_ragged.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_with_ragged.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4574,
+  "content_sha256": "fa37c0d1957728938cdde3b3d5d2bb60e1ebf5ef448de3e25df2c28b0d9afd98",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 101,
+    "char_count": 4574,
+    "preview_lines": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar, Union, cast",
+      "from ..backends import NumpyOps",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d, Ints1d, List2d, ListXd, Padded, Ragged",
+      "NUMPY_OPS = NumpyOps()",
+      "RaggedData = Tuple[Array2d, Ints1d]",
+      "SeqT = TypeVar(\"SeqT\", bound=Union[Padded, Ragged, ListXd, RaggedData])",
+      "@registry.layers(\"with_ragged.v1\")",
+      "def with_ragged(layer: Model[Ragged, Ragged]) -> Model[SeqT, SeqT]:"
+    ],
+    "imports": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar, Union, cast",
+      "from ..backends import NumpyOps",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d, Ints1d, List2d, ListXd, Padded, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "with_ragged",
+      "forward",
+      "init",
+      "_is_ragged_data",
+      "_get_ragged",
+      "_tuple_forward",
+      "_padded_forward",
+      "_list_forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_304_fa37c0d195772893_AI_Chariot_Legacy_666_1.0.0_20260508_with_ragged.py.json"
+}

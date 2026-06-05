@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 77,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_soundfile_backend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_soundfile_backend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17833,
+  "content_sha256": "b154843363a7e8f318ec06cfaa97ef135bb5060dbfd1a892ad9e137250058bfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 457,
+    "non_empty_lines": 387,
+    "char_count": 17833,
+    "preview_lines": [
+      "\"\"\"The new soundfile backend which will become default in 0.8.0 onward\"\"\"",
+      "import warnings",
+      "from typing import Optional, Tuple",
+      "import torch",
+      "from torchaudio._internal import module_utils as _mod_utils",
+      "from .common import AudioMetaData",
+      "_IS_SOUNDFILE_AVAILABLE = False",
+      "# TODO: import soundfile only when it is used.",
+      "if _mod_utils.is_module_available(\"soundfile\"):",
+      "    try:"
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import Optional, Tuple",
+      "import torch",
+      "from torchaudio._internal import module_utils as _mod_utils",
+      "from .common import AudioMetaData",
+      "import soundfile"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_bit_depth",
+      "_get_encoding",
+      "info",
+      "load",
+      "_get_subtype_for_wav",
+      "_get_subtype_for_sphere",
+      "_get_subtype",
+      "save"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_077_b154843363a7e8f3_AI_Chariot_Legacy_666_1.0.0_20260508_soundfile_backend.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\api\\include\\torch\\nn\\modules\\container\\any_module_holder.h",
+  "name": "any_module_holder.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 4929,
+  "content_sha256": "5419345dc268809332c9fe5848a6d6e109ba56d6c7b1df817510c307bda5389e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 133,
+    "non_empty_lines": 113,
+    "char_count": 4929,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/nn/modules/container/any_value.h>",
+      "namespace torch {",
+      "namespace nn {",
+      "class Module;",
+      "// ~~~~~~~~~~~~~~~~~~~~~~~~~~ AnyModulePlaceholder ~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "/// The static type of the object we store in the `AnyModule`, which erases",
+      "/// the actual type, but allows us to call `forward()` on the underlying",
+      "/// module.",
+      "struct AnyModulePlaceholder : public AnyValue::Placeholder {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_490_5419345dc2688093_any_module_holder.h.json"
+}

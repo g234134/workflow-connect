@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\tests\\test_tree_isomorphism.py",
+  "name": "test_tree_isomorphism.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5681,
+  "content_sha256": "9993d646fdac49527d3dba468b93048f919a15bae9fe16b66cbd70aded7e26aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 164,
+    "char_count": 5681,
+    "preview_lines": [
+      "import random",
+      "import time",
+      "import pytest",
+      "import networkx as nx",
+      "def _check_isomorphism(t1, t2, isomorphism):",
+      "    assert nx.is_directed(t1) == nx.is_directed(t2)",
+      "    # Apply mapping and check for equality",
+      "    H = nx.relabel_nodes(t1, dict(isomorphism))",
+      "    return nx.utils.graphs_equal(t2, H)",
+      "@pytest.mark.parametrize(\"graph_constructor\", (nx.DiGraph, nx.MultiGraph))"
+    ],
+    "imports": [
+      "import random",
+      "import time",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "_check_isomorphism",
+      "test_tree_isomorphism_raises_on_directed_and_multigraphs",
+      "test_input_not_tree",
+      "test_hardcoded",
+      "test_tree_isomorphic_all_non_isomorphic_trees_relabeled",
+      "test_trivial_rooted_tree_isomorphism",
+      "test_rooted_tree_isomorphism_different_order",
+      "test_tree_isomorphism_all_non_isomorphic_pairs",
+      "test_long_paths_graphs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_370_9993d646fdac4952_test_tree_isomorphism.py.json"
+}

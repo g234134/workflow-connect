@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:45:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_memoization.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_memoization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1838,
+  "content_sha256": "8c3e918d5319906a4d658689f78f35bd38aabe6c32bb520a0e9b05e4f608bdfe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 76,
+    "non_empty_lines": 60,
+    "char_count": 1838,
+    "preview_lines": [
+      "from functools import wraps",
+      "def recurrence_memo(initial):",
+      "    \"\"\"",
+      "    Memo decorator for sequences defined by recurrence",
+      "    Examples",
+      "    ========",
+      "    >>> from sympy.utilities.memoization import recurrence_memo",
+      "    >>> @recurrence_memo([1]) # 0! = 1",
+      "    ... def factorial(n, prev):",
+      "    ...     return n * prev[-1]"
+    ],
+    "imports": [
+      "from functools import wraps"
+    ],
+    "classes": [],
+    "functions": [
+      "recurrence_memo",
+      "assoc_recurrence_memo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_181_8c3e918d5319906a_AI_Chariot_Legacy_666_1.0.0_20260508_memoization.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__os.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__os.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4853,
+  "content_sha256": "9060ff37e14d29dd66be7b225ef1af9d34d8d445b6d250f524d61174827ee46d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 119,
+    "non_empty_lines": 105,
+    "char_count": 4853,
+    "preview_lines": [
+      "import os",
+      "import tempfile",
+      "from os.path import abspath, curdir, dirname, join, normcase, sep",
+      "from pathlib import Path",
+      "from django.core.exceptions import SuspiciousFileOperation",
+      "# Copied verbatim (minus `os.path` fixes) from:",
+      "# https://github.com/python/cpython/pull/23901.",
+      "# Python versions >= PY315 may include this fix, so periodic checks are needed",
+      "# to remove this vendored copy of `makedirs` once solved upstream.",
+      "def makedirs(name, mode=0o777, exist_ok=False, *, parent_mode=None):"
+    ],
+    "imports": [
+      "import os",
+      "import tempfile",
+      "from os.path import abspath, curdir, dirname, join, normcase, sep",
+      "from pathlib import Path",
+      "from django.core.exceptions import SuspiciousFileOperation"
+    ],
+    "classes": [],
+    "functions": [
+      "makedirs",
+      "safe_makedirs",
+      "safe_join",
+      "symlinks_supported",
+      "to_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_280_9060ff37e14d29dd_AI_Chariot_Legacy_666_1.0.0_20260508__os.py.json"
+}

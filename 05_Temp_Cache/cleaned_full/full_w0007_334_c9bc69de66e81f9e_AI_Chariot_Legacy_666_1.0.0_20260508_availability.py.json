@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 334,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_availability.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_availability.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2884,
+  "content_sha256": "c9bc69de66e81f9efbd891d358a04dd43f9cb3a43101342268be33255578444d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 72,
+    "char_count": 2884,
+    "preview_lines": [
+      "import os",
+      "from .compilation import compile_run_strings",
+      "from .util import CompilerNotFoundError",
+      "def has_fortran():",
+      "    if not hasattr(has_fortran, 'result'):",
+      "        try:",
+      "            (stdout, stderr), info = compile_run_strings(",
+      "                [('main.f90', (",
+      "                    'program foo\\n'",
+      "                    'print *, \"hello world\"\\n'"
+    ],
+    "imports": [
+      "import os",
+      "from .compilation import compile_run_strings",
+      "from .util import CompilerNotFoundError"
+    ],
+    "classes": [],
+    "functions": [
+      "has_fortran",
+      "has_c",
+      "has_cxx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_334_c9bc69de66e81f9e_AI_Chariot_Legacy_666_1.0.0_20260508_availability.py.json"
+}

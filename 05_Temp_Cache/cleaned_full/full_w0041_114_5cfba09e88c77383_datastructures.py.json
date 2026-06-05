@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\fastapi\\datastructures.py",
+  "name": "datastructures.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5321,
+  "content_sha256": "5cfba09e88c7738374ede1795e9d534e774fda032fd5f1b893ed0be1576beca7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 144,
+    "char_count": 5321,
+    "preview_lines": [
+      "from collections.abc import Callable, Mapping",
+      "from typing import (",
+      "    Annotated,",
+      "    Any,",
+      "    BinaryIO,",
+      "    TypeVar,",
+      "    cast,",
+      ")",
+      "from annotated_doc import Doc",
+      "from pydantic import GetJsonSchemaHandler"
+    ],
+    "imports": [
+      "from collections.abc import Callable, Mapping",
+      "from typing import (",
+      "from annotated_doc import Doc",
+      "from pydantic import GetJsonSchemaHandler",
+      "from starlette.datastructures import URL as URL  # noqa: F401",
+      "from starlette.datastructures import Address as Address  # noqa: F401",
+      "from starlette.datastructures import FormData as FormData  # noqa: F401",
+      "from starlette.datastructures import Headers as Headers  # noqa: F401",
+      "from starlette.datastructures import QueryParams as QueryParams  # noqa: F401",
+      "from starlette.datastructures import State as State  # noqa: F401",
+      "from starlette.datastructures import UploadFile as StarletteUploadFile",
+      "from typing import Annotated",
+      "from fastapi import FastAPI, File, UploadFile",
+      "from ._compat.v2 import with_info_plain_validator_function"
+    ],
+    "classes": [
+      "UploadFile",
+      "DefaultPlaceholder"
+    ],
+    "functions": [
+      "Default"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_114_5cfba09e88c77383_datastructures.py.json"
+}

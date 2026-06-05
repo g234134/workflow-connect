@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_types.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1890,
+  "content_sha256": "67922871323f8ef63f9afc0724f37f456bbe10e22df0844c6379d4c9991d120f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 35,
+    "char_count": 1890,
+    "preview_lines": [
+      "from typing import Optional, Tuple, TypeVar, Union",
+      "from torch import Tensor",
+      "# Create some useful type aliases",
+      "# Template for arguments which can be supplied as a tuple, or which can be a scalar which PyTorch will internally",
+      "# broadcast to a tuple.",
+      "# Comes in several variants: A tuple of unknown size, and a fixed-size tuple for 1d, 2d, or 3d operations.",
+      "T = TypeVar(\"T\")",
+      "_scalar_or_tuple_any_t = Union[T, Tuple[T, ...]]",
+      "_scalar_or_tuple_1_t = Union[T, Tuple[T]]",
+      "_scalar_or_tuple_2_t = Union[T, Tuple[T, T]]"
+    ],
+    "imports": [
+      "from typing import Optional, Tuple, TypeVar, Union",
+      "from torch import Tensor"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_030_67922871323f8ef6_AI_Chariot_Legacy_666_1.0.0_20260508_common_types.py.json"
+}

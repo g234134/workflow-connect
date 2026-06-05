@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 348,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_primes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_primes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23984,
+  "content_sha256": "5173a4b8c7676a656f1cf419c708a509b85dc0d34d4bbcd0e1bc1215ce711a09",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 784,
+    "non_empty_lines": 622,
+    "char_count": 23984,
+    "preview_lines": [
+      "\"\"\"Prime ideals in number fields. \"\"\"",
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.domains.finitefield import FF",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.matrices.domainmatrix import DomainMatrix",
+      "from sympy.polys.polyerrors import CoercionFailed",
+      "from sympy.polys.polyutils import IntegerPowerable",
+      "from sympy.utilities.decorator import public",
+      "from .basis import round_two, nilradical_mod_p"
+    ],
+    "imports": [
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.domains.finitefield import FF",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.matrices.domainmatrix import DomainMatrix",
+      "from sympy.polys.polyerrors import CoercionFailed",
+      "from sympy.polys.polyutils import IntegerPowerable",
+      "from sympy.utilities.decorator import public",
+      "from .basis import round_two, nilradical_mod_p",
+      "from .exceptions import StructureError",
+      "from .modules import ModuleEndomorphism, find_min_poly",
+      "from .utilities import coeff_search, supplement_a_subspace"
+    ],
+    "classes": [
+      "PrimeIdeal"
+    ],
+    "functions": [
+      "_check_formal_conditions_for_maximal_order",
+      "_compute_test_factor",
+      "prime_valuation",
+      "_two_elt_rep",
+      "_prime_decomp_easy_case",
+      "_prime_decomp_compute_kernel",
+      "_prime_decomp_maximal_ideal",
+      "_prime_decomp_split_ideal",
+      "prime_decomp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_348_5173a4b8c7676a65_AI_Chariot_Legacy_666_1.0.0_20260508_primes.py.json"
+}

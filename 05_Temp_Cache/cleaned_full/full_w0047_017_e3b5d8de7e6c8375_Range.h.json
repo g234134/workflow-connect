@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\Range.h",
+  "name": "Range.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 443,
+  "content_sha256": "e3b5d8de7e6c8375c843681880c3e94c20f544b425df6115cad0ade23eda1d3c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 443,
+    "preview_lines": [
+      "#pragma once",
+      "#include <cstdint>",
+      "#include <iosfwd>",
+      "namespace at {",
+      "struct Range {",
+      "  Range(int64_t begin, int64_t end)",
+      "    : begin(begin)",
+      "    , end(end) {}",
+      "  int64_t size() const { return end - begin; }",
+      "  Range operator/(int64_t divisor) {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_017_e3b5d8de7e6c8375_Range.h.json"
+}

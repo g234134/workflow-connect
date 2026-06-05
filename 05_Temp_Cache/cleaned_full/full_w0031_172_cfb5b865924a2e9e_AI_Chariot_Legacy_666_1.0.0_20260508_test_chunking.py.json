@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 172,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_chunking.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_chunking.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2444,
+  "content_sha256": "cfb5b865924a2e9ed5d8409de7dff7ff7e69845345d593e509e8fff9dc451b4a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 61,
+    "char_count": 2444,
+    "preview_lines": [
+      "import warnings",
+      "from itertools import chain",
+      "import pytest",
+      "from sklearn import config_context",
+      "from sklearn.utils._chunking import gen_even_slices, get_chunk_n_rows",
+      "from sklearn.utils._testing import assert_array_equal",
+      "def test_gen_even_slices():",
+      "    # check that gen_even_slices contains all samples",
+      "    some_range = range(10)",
+      "    joined_range = list(chain(*[some_range[slice] for slice in gen_even_slices(10, 3)]))"
+    ],
+    "imports": [
+      "import warnings",
+      "from itertools import chain",
+      "import pytest",
+      "from sklearn import config_context",
+      "from sklearn.utils._chunking import gen_even_slices, get_chunk_n_rows",
+      "from sklearn.utils._testing import assert_array_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_gen_even_slices",
+      "test_get_chunk_n_rows",
+      "test_get_chunk_n_rows_warns"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_172_cfb5b865924a2e9e_AI_Chariot_Legacy_666_1.0.0_20260508_test_chunking.py.json"
+}

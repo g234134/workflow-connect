@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gen_static_runtime_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gen_static_runtime_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7589,
+  "content_sha256": "2fe83c3f0d0eb440d43c9d25c7737216a3efd5fdc7840869457b4e2747575faa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 229,
+    "non_empty_lines": 186,
+    "char_count": 7589,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import itertools",
+      "import os",
+      "from typing import Sequence, TypeVar, Union",
+      "from libfb.py.log import set_simple_logging  # type: ignore[import]",
+      "from torchgen import gen",
+      "from torchgen.context import native_function_manager",
+      "from torchgen.model import DispatchKey, NativeFunctionsGroup, NativeFunctionsViewGroup",
+      "from torchgen.static_runtime import config, generator"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import itertools",
+      "import os",
+      "from typing import Sequence, TypeVar, Union",
+      "from libfb.py.log import set_simple_logging  # type: ignore[import]",
+      "from torchgen import gen",
+      "from torchgen.context import native_function_manager",
+      "from torchgen.model import DispatchKey, NativeFunctionsGroup, NativeFunctionsViewGroup",
+      "from torchgen.static_runtime import config, generator",
+      "import subprocess"
+    ],
+    "classes": [],
+    "functions": [
+      "group_functions_by_op_name",
+      "clang_format",
+      "write_cpp",
+      "write_test_cpp",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_492_2fe83c3f0d0eb440_AI_Chariot_Legacy_666_1.0.0_20260508_gen_static_runtime_ops.py.json"
+}

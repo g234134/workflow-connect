@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 444,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\examples\\graph_prerelease_reqs\\agent.py",
+  "name": "agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2795,
+  "content_sha256": "524e3d371fbba15fef2a3cda13b221c11ccad512c5c53ad9a14cdae4c7fb5736",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 67,
+    "char_count": 2792,
+    "preview_lines": [
+      "from collections.abc import Sequence",
+      "from typing import Annotated, Literal, TypedDict",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_openai import ChatOpenAI",
+      "from langgraph.graph import END, StateGraph, add_messages",
+      "from langgraph.prebuilt import ToolNode",
+      "tools = []",
+      "model_oai = ChatOpenAI(temperature=0)",
+      "model_oai = model_oai.bind_tools(tools)",
+      "class AgentState(TypedDict):"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from typing import Annotated, Literal, TypedDict",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_openai import ChatOpenAI",
+      "from langgraph.graph import END, StateGraph, add_messages",
+      "from langgraph.prebuilt import ToolNode"
+    ],
+    "classes": [
+      "AgentState",
+      "ContextSchema"
+    ],
+    "functions": [
+      "should_continue",
+      "call_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_444_524e3d371fbba15f_agent.py.json"
+}

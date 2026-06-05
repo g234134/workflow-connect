@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 499,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\_api\\internal.py",
+  "name": "internal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 746,
+  "content_sha256": "d901c348370c2460176396fd4e433f289ea9ebac9c50b94967ed422943f0af8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 21,
+    "char_count": 743,
+    "preview_lines": [
+      "import inspect",
+      "from typing import cast",
+      "def is_caller_internal(depth: int = 2) -> bool:",
+      "    \"\"\"Return whether the caller at `depth` of this function is internal.\"\"\"",
+      "    try:",
+      "        frame = inspect.currentframe()",
+      "    except AttributeError:",
+      "        return False",
+      "    if frame is None:",
+      "        return False"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import cast"
+    ],
+    "classes": [],
+    "functions": [
+      "is_caller_internal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_499_d901c348370c2460_internal.py.json"
+}

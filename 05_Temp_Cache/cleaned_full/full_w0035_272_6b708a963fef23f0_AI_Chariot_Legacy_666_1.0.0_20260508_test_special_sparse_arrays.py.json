@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 272,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_special_sparse_arrays.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_special_sparse_arrays.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13191,
+  "content_sha256": "6b708a963fef23f038e6c660c7edfabac442b30bd035ebadad7d2144af5b9339",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 337,
+    "non_empty_lines": 311,
+    "char_count": 13191,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_array_equal, assert_allclose",
+      "from scipy.sparse import diags, csgraph",
+      "from scipy.linalg import eigh",
+      "from scipy.sparse.linalg import LaplacianNd",
+      "from scipy.sparse.linalg._special_sparse_arrays import Sakurai",
+      "from scipy.sparse.linalg._special_sparse_arrays import MikotaPair",
+      "INT_DTYPES = [np.int8, np.int16, np.int32, np.int64]",
+      "REAL_DTYPES = [np.float32, np.float64]"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_array_equal, assert_allclose",
+      "from scipy.sparse import diags, csgraph",
+      "from scipy.linalg import eigh",
+      "from scipy.sparse.linalg import LaplacianNd",
+      "from scipy.sparse.linalg._special_sparse_arrays import Sakurai",
+      "from scipy.sparse.linalg._special_sparse_arrays import MikotaPair"
+    ],
+    "classes": [
+      "TestLaplacianNd",
+      "TestSakurai",
+      "TestMikotaPair"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_272_6b708a963fef23f0_AI_Chariot_Legacy_666_1.0.0_20260508_test_special_sparse_arrays.py.json"
+}

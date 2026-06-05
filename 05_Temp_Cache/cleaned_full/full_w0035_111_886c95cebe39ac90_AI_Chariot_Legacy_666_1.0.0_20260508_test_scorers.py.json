@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 111,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_scorers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_scorers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1239,
+  "content_sha256": "886c95cebe39ac9074cdc3f0414ee336e7ae1ca11290d3c63e23aa04e3f53167",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 32,
+    "char_count": 1239,
+    "preview_lines": [
+      "import spacy",
+      "from spacy.training import Example",
+      "from spacy_legacy.scorers import score_cats_v1",
+      "def test_score_cats_v1():",
+      "    nlp = spacy.blank(\"en\")",
+      "    ref = nlp(\"one\")",
+      "    ref.cats = {\"winter\": 1.0, \"summer\": 0.0, \"spring\": 0.0, \"autumn\": 0.0}",
+      "    pred = nlp(\"one\")",
+      "    pred.cats = {\"winter\": 0.35, \"summer\": 0.25, \"spring\": 0.2, \"autumn\": 0.2}",
+      "    # with the previous threshold of 0.5 provided in the default textcat config,"
+    ],
+    "imports": [
+      "import spacy",
+      "from spacy.training import Example",
+      "from spacy_legacy.scorers import score_cats_v1"
+    ],
+    "classes": [],
+    "functions": [
+      "test_score_cats_v1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_111_886c95cebe39ac90_AI_Chariot_Legacy_666_1.0.0_20260508_test_scorers.py.json"
+}

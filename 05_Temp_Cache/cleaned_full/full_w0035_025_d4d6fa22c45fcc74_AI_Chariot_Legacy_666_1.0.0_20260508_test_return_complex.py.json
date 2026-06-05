@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 25,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_return_complex.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_return_complex.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2507,
+  "content_sha256": "d4d6fa22c45fcc74c20a20535399c7a18dfac3ef948768284de74af9df17adce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 55,
+    "char_count": 2507,
+    "preview_lines": [
+      "import pytest",
+      "from numpy import array",
+      "from . import util",
+      "@pytest.mark.slow",
+      "class TestReturnComplex(util.F2PyTest):",
+      "    def check_function(self, t, tname):",
+      "        if tname in [\"t0\", \"t8\", \"s0\", \"s8\"]:",
+      "            err = 1e-5",
+      "        else:",
+      "            err = 0.0"
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy import array",
+      "from . import util"
+    ],
+    "classes": [
+      "TestReturnComplex",
+      "TestFReturnComplex"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_025_d4d6fa22c45fcc74_AI_Chariot_Legacy_666_1.0.0_20260508_test_return_complex.py.json"
+}

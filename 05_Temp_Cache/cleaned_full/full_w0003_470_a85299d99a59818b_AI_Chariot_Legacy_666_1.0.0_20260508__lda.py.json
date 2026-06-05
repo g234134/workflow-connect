@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 470,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__lda.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__lda.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35171,
+  "content_sha256": "a85299d99a59818becd0031fa4f075dcf5404f84b95ef4d5f03f23c6f3f2ce84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 956,
+    "non_empty_lines": 774,
+    "char_count": 35171,
+    "preview_lines": [
+      "\"\"\"",
+      "=============================================================",
+      "Online Latent Dirichlet Allocation with variational inference",
+      "=============================================================",
+      "This implementation is modified from Matthew D. Hoffman's onlineldavb code",
+      "Link: https://github.com/blei-lab/onlineldavb",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "from numbers import Integral, Real"
+    ],
+    "imports": [
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "import scipy.sparse as sp",
+      "from joblib import effective_n_jobs",
+      "from scipy.special import gammaln, logsumexp",
+      "from sklearn.base import (",
+      "from sklearn.decomposition._online_lda_fast import (",
+      "from sklearn.decomposition._online_lda_fast import _dirichlet_expectation_2d",
+      "from sklearn.decomposition._online_lda_fast import mean_change as cy_mean_change",
+      "from sklearn.utils import check_random_state, gen_batches, gen_even_slices",
+      "from sklearn.utils._param_validation import Interval, StrOptions",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import check_is_fitted, check_non_negative, validate_data",
+      "from it."
+    ],
+    "classes": [
+      "LatentDirichletAllocation"
+    ],
+    "functions": [
+      "_update_doc_distribution"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_470_a85299d99a59818b_AI_Chariot_Legacy_666_1.0.0_20260508__lda.py.json"
+}

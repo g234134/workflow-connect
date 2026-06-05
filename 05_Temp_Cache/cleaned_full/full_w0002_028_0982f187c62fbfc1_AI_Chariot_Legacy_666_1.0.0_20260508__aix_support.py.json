@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__aix_support.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__aix_support.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4021,
+  "content_sha256": "0982f187c62fbfc1e8d368c8eb4104b56df71009a6b2823565a699e7b4cd945c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 108,
+    "non_empty_lines": 91,
+    "char_count": 4021,
+    "preview_lines": [
+      "\"\"\"Shared AIX support functions.\"\"\"",
+      "import sys",
+      "import sysconfig",
+      "# Taken from _osx_support _read_output function",
+      "def _read_cmd_output(commandstring, capture_stderr=False):",
+      "    \"\"\"Output from successful command execution or None\"\"\"",
+      "    # Similar to os.popen(commandstring, \"r\").read(),",
+      "    # but without actually using os.popen because that",
+      "    # function is not usable during python bootstrap.",
+      "    import os"
+    ],
+    "imports": [
+      "import sys",
+      "import sysconfig",
+      "import os",
+      "import contextlib",
+      "import subprocess"
+    ],
+    "classes": [],
+    "functions": [
+      "_read_cmd_output",
+      "_aix_tag",
+      "_aix_vrtl",
+      "_aix_bos_rte",
+      "aix_platform",
+      "_aix_bgt",
+      "aix_buildtag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_028_0982f187c62fbfc1_AI_Chariot_Legacy_666_1.0.0_20260508__aix_support.py.json"
+}

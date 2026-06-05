@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lineintegrals.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lineintegrals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 450,
+  "content_sha256": "cdc3c9da7ec362df4ab2001edfcb7482adc0440a5495bfa405a84b4e1b9172af",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 10,
+    "char_count": 450,
+    "preview_lines": [
+      "from sympy.core.numbers import E",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.geometry.curve import Curve",
+      "from sympy.integrals.integrals import line_integrate",
+      "s, t, x, y, z = symbols('s,t,x,y,z')",
+      "def test_lineintegral():",
+      "    c = Curve([E**t + 1, E**t - 1], (t, 0, log(2)))",
+      "    assert line_integrate(x + y, c, [x, y]) == 3*sqrt(2)"
+    ],
+    "imports": [
+      "from sympy.core.numbers import E",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.geometry.curve import Curve",
+      "from sympy.integrals.integrals import line_integrate"
+    ],
+    "classes": [],
+    "functions": [
+      "test_lineintegral"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_281_cdc3c9da7ec362df_AI_Chariot_Legacy_666_1.0.0_20260508_test_lineintegrals.py.json"
+}

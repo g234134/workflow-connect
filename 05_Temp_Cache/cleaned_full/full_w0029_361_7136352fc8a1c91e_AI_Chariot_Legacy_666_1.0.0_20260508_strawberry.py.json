@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 361,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_strawberry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_strawberry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14120,
+  "content_sha256": "7136352fc8a1c91e660a21761f9644339f6dd013303665aac0d91322e22b1540",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 406,
+    "non_empty_lines": 323,
+    "char_count": 14120,
+    "preview_lines": [
+      "import functools",
+      "import hashlib",
+      "import warnings",
+      "from inspect import isawaitable",
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP",
+      "from sentry_sdk.integrations import _check_minimum_version, Integration, DidNotEnable",
+      "from sentry_sdk.integrations.logging import ignore_logger",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import TransactionSource"
+    ],
+    "imports": [
+      "import functools",
+      "import hashlib",
+      "import warnings",
+      "from inspect import isawaitable",
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP",
+      "from sentry_sdk.integrations import _check_minimum_version, Integration, DidNotEnable",
+      "from sentry_sdk.integrations.logging import ignore_logger",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import TransactionSource",
+      "from sentry_sdk.utils import (",
+      "from functools import cached_property",
+      "from strawberry import Schema",
+      "from strawberry.extensions import SchemaExtension",
+      "from strawberry.extensions.tracing.utils import (",
+      "from strawberry.http import async_base_view, sync_base_view",
+      "from strawberry.extensions.tracing import (",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any, Callable, Generator, List, Optional",
+      "from graphql import GraphQLError, GraphQLResolveInfo"
+    ],
+    "classes": [
+      "StrawberryIntegration",
+      "SentryAsyncExtension",
+      "SentrySyncExtension"
+    ],
+    "functions": [
+      "_patch_schema_init",
+      "_patch_views",
+      "_make_request_event_processor",
+      "_make_response_event_processor",
+      "_guess_if_using_async"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_361_7136352fc8a1c91e_AI_Chariot_Legacy_666_1.0.0_20260508_strawberry.py.json"
+}

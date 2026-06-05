@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__cli.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__cli.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6779,
+  "content_sha256": "e368ff788f0f3dd15b563b9f96eade8263584ddc2bc37c90b6c1ed4f3c8dbdc4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 233,
+    "non_empty_lines": 186,
+    "char_count": 6779,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import sys",
+      "import logging",
+      "import argparse",
+      "from typing import Any, List, Type, Optional",
+      "from typing_extensions import ClassVar",
+      "import httpx",
+      "import pydantic",
+      "import openai",
+      "from . import _tools"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import sys",
+      "import logging",
+      "import argparse",
+      "from typing import Any, List, Type, Optional",
+      "from typing_extensions import ClassVar",
+      "import httpx",
+      "import pydantic",
+      "import openai",
+      "from . import _tools",
+      "from .. import _ApiType, __version__",
+      "from ._api import register_commands",
+      "from ._utils import can_use_http2",
+      "from ._errors import CLIError, display_error",
+      "from .._compat import PYDANTIC_V1, ConfigDict, model_parse",
+      "from .._models import BaseModel",
+      "from .._exceptions import APIError"
+    ],
+    "classes": [
+      "Arguments"
+    ],
+    "functions": [
+      "_build_parser",
+      "main",
+      "_parse_args",
+      "_main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_275_e368ff788f0f3dd1_AI_Chariot_Legacy_666_1.0.0_20260508__cli.py.json"
+}

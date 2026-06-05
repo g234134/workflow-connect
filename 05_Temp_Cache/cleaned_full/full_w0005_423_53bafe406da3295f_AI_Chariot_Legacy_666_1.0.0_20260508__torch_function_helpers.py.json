@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__torch_function_helpers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__torch_function_helpers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2348,
+  "content_sha256": "53bafe406da3295fca61e51027684a3e56112f0ab3ff1844b3bfcbd685e906f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 48,
+    "char_count": 2348,
+    "preview_lines": [
+      "import torch",
+      "_TORCHFUNCTION_SUBCLASS = False",
+      "class _ReturnTypeCM:",
+      "    def __init__(self, to_restore):",
+      "        self.to_restore = to_restore",
+      "    def __enter__(self):",
+      "        return self",
+      "    def __exit__(self, *args):",
+      "        global _TORCHFUNCTION_SUBCLASS",
+      "        _TORCHFUNCTION_SUBCLASS = self.to_restore"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "_ReturnTypeCM"
+    ],
+    "functions": [
+      "set_return_type",
+      "_must_return_subclass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_423_53bafe406da3295f_AI_Chariot_Legacy_666_1.0.0_20260508__torch_function_helpers.py.json"
+}

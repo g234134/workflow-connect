@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 393,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_newround.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_newround.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3190,
+  "content_sha256": "ed84d68c181f200bd2125ee12c25a07a6863a9d2adce885b3b5f32304acacf81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 84,
+    "char_count": 3190,
+    "preview_lines": [
+      "\"\"\"",
+      "``python-future``: pure Python implementation of Python 3 round().",
+      "\"\"\"",
+      "from __future__ import division",
+      "from future.utils import PYPY, PY26, bind_method",
+      "# Use the decimal module for simplicity of implementation (and",
+      "# hopefully correctness).",
+      "from decimal import Decimal, ROUND_HALF_EVEN",
+      "def newround(number, ndigits=None):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from __future__ import division",
+      "from future.utils import PYPY, PY26, bind_method",
+      "from decimal import Decimal, ROUND_HALF_EVEN",
+      "import math as _math",
+      "from decimal import _dec_from_triple    # only available on Py2.6 and Py2.7 (not 3.3)"
+    ],
+    "classes": [],
+    "functions": [
+      "newround",
+      "from_float_26"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_393_ed84d68c181f200b_AI_Chariot_Legacy_666_1.0.0_20260508_newround.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:48:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\retrievers\\self_query\\astradb.py",
+  "name": "astradb.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 704,
+  "content_sha256": "6f206bbe6a9c1e3ad0114b7e5269ccb765223235075e4d86e43792197f8eb4a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 701,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.query_constructors.astradb import AstraDBTranslator",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"AstraDBTranslator\": \"langchain_community.query_constructors.astradb\",",
+      "}"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.query_constructors.astradb import AstraDBTranslator"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_203_6f206bbe6a9c1e3a_astradb.py.json"
+}

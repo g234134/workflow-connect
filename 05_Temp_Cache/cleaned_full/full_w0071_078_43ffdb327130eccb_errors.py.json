@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 78,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\errors.py",
+  "name": "errors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3740,
+  "content_sha256": "43ffdb327130eccba8503d0703fc24ba005804bbd20c0d4f44818b90aae10017",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 89,
+    "char_count": 3737,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "from enum import Enum",
+      "from typing import Any",
+      "from warnings import warn",
+      "# EmptyChannelError is re-exported from langgraph.channels.base",
+      "from langgraph.checkpoint.base import EmptyChannelError  # noqa: F401",
+      "from typing_extensions import deprecated",
+      "from langgraph.types import Command, Interrupt",
+      "from langgraph.warnings import LangGraphDeprecatedSinceV10"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "from enum import Enum",
+      "from typing import Any",
+      "from warnings import warn",
+      "from langgraph.checkpoint.base import EmptyChannelError  # noqa: F401",
+      "from typing_extensions import deprecated",
+      "from langgraph.types import Command, Interrupt",
+      "from langgraph.warnings import LangGraphDeprecatedSinceV10"
+    ],
+    "classes": [
+      "ErrorCode",
+      "GraphRecursionError",
+      "InvalidUpdateError",
+      "GraphBubbleUp",
+      "GraphInterrupt",
+      "NodeInterrupt",
+      "ParentCommand",
+      "EmptyInputError",
+      "TaskNotFound"
+    ],
+    "functions": [
+      "create_error_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_078_43ffdb327130eccb_errors.py.json"
+}

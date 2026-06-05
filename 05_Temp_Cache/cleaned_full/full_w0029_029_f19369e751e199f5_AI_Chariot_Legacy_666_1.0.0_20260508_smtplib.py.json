@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_smtplib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_smtplib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43532,
+  "content_sha256": "f19369e751e199f5dfc05882e2f77b6a692719cebd8a18c84552544a0b93e963",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1109,
+    "non_empty_lines": 949,
+    "char_count": 43532,
+    "preview_lines": [
+      "#! /usr/bin/env python3",
+      "'''SMTP/ESMTP client class.",
+      "This should follow RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (SMTP",
+      "Authentication) and RFC 2487 (Secure SMTP over TLS).",
+      "Notes:",
+      "Please remember, when doing ESMTP, that the names of the SMTP service",
+      "extensions are NOT the same thing as the option keywords for the RCPT",
+      "and MAIL commands!",
+      "Example:",
+      "  >>> import smtplib"
+    ],
+    "imports": [
+      "import socket",
+      "import io",
+      "import re",
+      "import email.utils",
+      "import email.message",
+      "import email.generator",
+      "import base64",
+      "import hmac",
+      "import copy",
+      "import datetime",
+      "import sys",
+      "from email.base64mime import body_encode as encode_base64",
+      "import ssl"
+    ],
+    "classes": [
+      "SMTPException",
+      "SMTPNotSupportedError",
+      "SMTPServerDisconnected",
+      "SMTPResponseException",
+      "SMTPSenderRefused",
+      "SMTPRecipientsRefused",
+      "SMTPDataError",
+      "SMTPConnectError",
+      "SMTPHeloError",
+      "SMTPAuthenticationError",
+      "SMTP",
+      "LMTP"
+    ],
+    "functions": [
+      "quoteaddr",
+      "_addr_only",
+      "quotedata",
+      "_quote_periods",
+      "_fix_eols"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_029_f19369e751e199f5_AI_Chariot_Legacy_666_1.0.0_20260508_smtplib.py.json"
+}

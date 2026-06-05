@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_btree.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_btree.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30757,
+  "content_sha256": "40fcf82335bfc93b529b3fc30ba2cabd9749bd3b39d0241129b01ad14005313b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 850,
+    "non_empty_lines": 726,
+    "char_count": 30757,
+    "preview_lines": [
+      "# Copyright (C) Dnspython Contributors, see LICENSE for text of ISC license",
+      "\"\"\"",
+      "A BTree in the style of Cormen, Leiserson, and Rivest's \"Algorithms\" book, with",
+      "copy-on-write node updates, cursors, and optional space optimization for mostly-in-order",
+      "insertion.",
+      "\"\"\"",
+      "from collections.abc import MutableMapping, MutableSet",
+      "from typing import Any, Callable, Generic, Optional, Tuple, TypeVar, cast",
+      "DEFAULT_T = 127",
+      "KT = TypeVar(\"KT\")  # the type of a key in Element"
+    ],
+    "imports": [
+      "from collections.abc import MutableMapping, MutableSet",
+      "from typing import Any, Callable, Generic, Optional, Tuple, TypeVar, cast"
+    ],
+    "classes": [
+      "Element",
+      "_Creator",
+      "_Node",
+      "Cursor",
+      "Immutable",
+      "BTree",
+      "KV",
+      "BTreeDict",
+      "Member",
+      "BTreeSet"
+    ],
+    "functions": [
+      "_MIN",
+      "_MAX"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_387_40fcf82335bfc93b_AI_Chariot_Legacy_666_1.0.0_20260508_btree.py.json"
+}

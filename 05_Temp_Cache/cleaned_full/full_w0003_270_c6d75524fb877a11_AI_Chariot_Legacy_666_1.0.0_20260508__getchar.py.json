@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__getchar.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__getchar.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4841,
+  "content_sha256": "c6d75524fb877a1163f64ca0e846c3f0066f0f794dd3dfc0072bb807c3891fbc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 122,
+    "char_count": 4841,
+    "preview_lines": [
+      "\"\"\"",
+      "Unified getchar implementation for all platforms.",
+      "Combines approaches from:",
+      "- Textual (Unix/Linux): Copyright (c) 2023 Textualize Inc., MIT License",
+      "- Click (Windows fallback): Copyright 2014 Pallets, BSD-3-Clause License",
+      "\"\"\"",
+      "import os",
+      "import sys",
+      "from codecs import getincrementaldecoder",
+      "from typing import Optional, TextIO"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "from codecs import getincrementaldecoder",
+      "from typing import Optional, TextIO",
+      "import msvcrt",
+      "import termios",
+      "import tty"
+    ],
+    "classes": [],
+    "functions": [
+      "getchar"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_270_c6d75524fb877a11_AI_Chariot_Legacy_666_1.0.0_20260508__getchar.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_print_coercion_tables.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_print_coercion_tables.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6493,
+  "content_sha256": "953f08748d7f95a9edc05546d02d096a03b4994c679d7080e709cf23cd5ccd84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 207,
+    "non_empty_lines": 180,
+    "char_count": 6477,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "\"\"\"Prints type-coercion tables for the built-in NumPy types",
+      "\"\"\"",
+      "from collections import namedtuple",
+      "import numpy as np",
+      "from numpy._core.numerictypes import obj2sctype",
+      "# Generic object that can be added, but doesn't do anything else",
+      "class GenericObject:",
+      "    def __init__(self, v):",
+      "        self.v = v"
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "import numpy as np",
+      "from numpy._core.numerictypes import obj2sctype",
+      "from numpy._core._multiarray_tests import get_all_cast_information"
+    ],
+    "classes": [
+      "GenericObject"
+    ],
+    "functions": [
+      "print_cancast_table",
+      "print_coercion_table",
+      "print_new_cast_table"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_354_953f08748d7f95a9_AI_Chariot_Legacy_666_1.0.0_20260508_print_coercion_tables.py.json"
+}

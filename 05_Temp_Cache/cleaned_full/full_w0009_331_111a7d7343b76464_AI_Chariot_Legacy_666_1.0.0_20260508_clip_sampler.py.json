@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_clip_sampler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_clip_sampler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6416,
+  "content_sha256": "111a7d7343b764640d47794b5ef6575a37c99176b26329bc6e161f3a6fcc34a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 142,
+    "char_count": 6416,
+    "preview_lines": [
+      "import math",
+      "from typing import cast, Iterator, List, Optional, Sized, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.utils.data import Sampler",
+      "from torchvision.datasets.video_utils import VideoClips",
+      "class DistributedSampler(Sampler):",
+      "    \"\"\"",
+      "    Extension of DistributedSampler, as discussed in",
+      "    https://github.com/pytorch/pytorch/issues/23430"
+    ],
+    "imports": [
+      "import math",
+      "from typing import cast, Iterator, List, Optional, Sized, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.utils.data import Sampler",
+      "from torchvision.datasets.video_utils import VideoClips"
+    ],
+    "classes": [
+      "DistributedSampler",
+      "UniformClipSampler",
+      "RandomClipSampler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_331_111a7d7343b76464_AI_Chariot_Legacy_666_1.0.0_20260508_clip_sampler.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\compiled_autograd.py",
+  "name": "compiled_autograd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7619,
+  "content_sha256": "3e333bc7e09f92c35ba7e0d191cc3e86e06b7ee0eb966c5613f827552c781dfd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 217,
+    "non_empty_lines": 191,
+    "char_count": 7619,
+    "preview_lines": [
+      "import contextlib",
+      "import functools",
+      "from typing import List, Optional",
+      "import torch",
+      "from torch._dynamo.external_utils import call_hook",
+      "from torch._dynamo.source import GetItemSource, LocalSource",
+      "from torch._dynamo.utils import counters, lazy_format_graph_code",
+      "from torch._logging import getArtifactLogger",
+      "from torch._prims_common import clone_preserve_strides",
+      "from torch._subclasses import FakeTensorMode"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "from typing import List, Optional",
+      "import torch",
+      "from torch._dynamo.external_utils import call_hook",
+      "from torch._dynamo.source import GetItemSource, LocalSource",
+      "from torch._dynamo.utils import counters, lazy_format_graph_code",
+      "from torch._logging import getArtifactLogger",
+      "from torch._prims_common import clone_preserve_strides",
+      "from torch._subclasses import FakeTensorMode",
+      "from torch.fx import GraphModule",
+      "from torch.fx.experimental.proxy_tensor import (",
+      "from torch.fx.experimental.symbolic_shapes import DimDynamic, ShapeEnv",
+      "from torch.fx.proxy import Proxy"
+    ],
+    "classes": [
+      "AutogradCompilerInstance"
+    ],
+    "functions": [
+      "maybe_clone",
+      "enable",
+      "disable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_434_3e333bc7e09f92c3_compiled_autograd.py.json"
+}

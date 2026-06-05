@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 39,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_rigidbody.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_rigidbody.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6188,
+  "content_sha256": "7b3316e415adf5c59d35e63507d69870be0db0f71591a299b944b50bb4b5a8f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 184,
+    "non_empty_lines": 155,
+    "char_count": 6188,
+    "preview_lines": [
+      "from sympy.physics.mechanics import Point, ReferenceFrame, Dyadic, RigidBody",
+      "from sympy.physics.mechanics import dynamicsymbols, outer, inertia, Inertia",
+      "from sympy.physics.mechanics import inertia_of_point_mass",
+      "from sympy import expand, zeros, simplify, symbols",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy",
+      "def test_rigidbody_default():",
+      "    # Test default",
+      "    b = RigidBody('B')",
+      "    I = inertia(b.frame, *symbols('B_ixx B_iyy B_izz B_ixy B_iyz B_izx'))",
+      "    assert b.name == 'B'"
+    ],
+    "imports": [
+      "from sympy.physics.mechanics import Point, ReferenceFrame, Dyadic, RigidBody",
+      "from sympy.physics.mechanics import dynamicsymbols, outer, inertia, Inertia",
+      "from sympy.physics.mechanics import inertia_of_point_mass",
+      "from sympy import expand, zeros, simplify, symbols",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy"
+    ],
+    "classes": [],
+    "functions": [
+      "test_rigidbody_default",
+      "test_rigidbody",
+      "test_rigidbody2",
+      "test_rigidbody3",
+      "test_pendulum_angular_momentum",
+      "test_rigidbody_inertia",
+      "test_parallel_axis",
+      "test_deprecated_set_potential_energy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_039_7b3316e415adf5c5_AI_Chariot_Legacy_666_1.0.0_20260508_test_rigidbody.py.json"
+}

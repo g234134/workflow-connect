@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_async_helpers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_async_helpers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4097,
+  "content_sha256": "7d8d2212c42bde405fa498daee9d2bc6c7cff7abebf28be8d304c442b1b688a8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 150,
+    "non_empty_lines": 113,
+    "char_count": 4097,
+    "preview_lines": [
+      "\"\"\"",
+      "Async helper function that are invalid syntax on Python 3.5 and below.",
+      "This code is best effort, and may have edge cases not behaving as expected. In",
+      "particular it contain a number of heuristics to detect whether code is",
+      "effectively async and need to run in an event loop or not.",
+      "Some constructs (like top-level `return`, or `yield`) are taken care of",
+      "explicitly to actually raise a SyntaxError and stay as close as possible to",
+      "Python semantics.",
+      "\"\"\"",
+      "import ast"
+    ],
+    "imports": [
+      "import ast",
+      "import asyncio",
+      "import inspect",
+      "from functools import wraps",
+      "import curio",
+      "import trio"
+    ],
+    "classes": [
+      "_AsyncIORunner",
+      "_AsyncIOProxy"
+    ],
+    "functions": [
+      "get_asyncio_loop",
+      "_curio_runner",
+      "_trio_runner",
+      "_pseudo_sync_runner",
+      "_should_be_async"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_178_7d8d2212c42bde40_AI_Chariot_Legacy_666_1.0.0_20260508_async_helpers.py.json"
+}

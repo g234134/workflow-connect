@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fail_switch_three_greenlets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fail_switch_three_greenlets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1000,
+  "content_sha256": "2977df492198a4a16b7cbcc5f600ee548bd2b3e18a56e0d0c397317671c5d78b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 35,
+    "char_count": 1000,
+    "preview_lines": [
+      "\"\"\"",
+      "Uses a trace function to switch greenlets at unexpected times.",
+      "In the trace function, we switch from the current greenlet to another",
+      "greenlet, which switches",
+      "\"\"\"",
+      "import greenlet",
+      "g1 = None",
+      "g2 = None",
+      "switch_to_g2 = False",
+      "def tracefunc(*args):"
+    ],
+    "imports": [
+      "import greenlet"
+    ],
+    "classes": [],
+    "functions": [
+      "tracefunc",
+      "g1_run",
+      "g2_run"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_251_2977df492198a4a1_AI_Chariot_Legacy_666_1.0.0_20260508_fail_switch_three_greenlets.py.json"
+}

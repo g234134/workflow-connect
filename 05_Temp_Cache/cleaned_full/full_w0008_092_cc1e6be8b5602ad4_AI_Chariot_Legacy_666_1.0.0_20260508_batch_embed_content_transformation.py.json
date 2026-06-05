@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_batch_embed_content_transformation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_batch_embed_content_transformation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2337,
+  "content_sha256": "cc1e6be8b5602ad4fbd5219722c3ae1697d090d6089d058a9da526fca8c53187",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 62,
+    "char_count": 2337,
+    "preview_lines": [
+      "\"\"\"",
+      "Transformation logic from OpenAI /v1/embeddings format to Google AI Studio /batchEmbedContents format. ",
+      "Why separate file? Make it easy to see how transformation works",
+      "\"\"\"",
+      "from typing import List",
+      "from litellm.types.utils import EmbeddingResponse",
+      "from litellm.types.llms.openai import EmbeddingInput",
+      "from litellm.types.llms.vertex_ai import (",
+      "    ContentType,",
+      "    EmbedContentRequest,"
+    ],
+    "imports": [
+      "from typing import List",
+      "from litellm.types.utils import EmbeddingResponse",
+      "from litellm.types.llms.openai import EmbeddingInput",
+      "from litellm.types.llms.vertex_ai import (",
+      "from litellm.types.utils import Embedding, Usage",
+      "from litellm.utils import get_formatted_prompt, token_counter"
+    ],
+    "classes": [],
+    "functions": [
+      "transform_openai_input_gemini_content",
+      "process_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_092_cc1e6be8b5602ad4_AI_Chariot_Legacy_666_1.0.0_20260508_batch_embed_content_transformation.py.json"
+}

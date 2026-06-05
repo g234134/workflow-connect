@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 416,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_asy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_asy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2618,
+  "content_sha256": "f17068e91054cddc54847ec6ad57954f3b0c2604a719bf4da649c501d1f07016",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 116,
+    "non_empty_lines": 92,
+    "char_count": 2618,
+    "preview_lines": [
+      "\"\"\"",
+      "Precompute coefficients of Temme's asymptotic expansion for gammainc.",
+      "This takes about 8 hours to run on a 2.3 GHz Macbook Pro with 4GB ram.",
+      "Sources:",
+      "[1] NIST, \"Digital Library of Mathematical Functions\",",
+      "    https://dlmf.nist.gov/",
+      "\"\"\"",
+      "import os",
+      "from scipy.special._precompute.utils import lagrange_inversion",
+      "try:"
+    ],
+    "imports": [
+      "import os",
+      "from scipy.special._precompute.utils import lagrange_inversion",
+      "import mpmath as mp"
+    ],
+    "classes": [],
+    "functions": [
+      "compute_a",
+      "compute_g",
+      "eta",
+      "compute_alpha",
+      "compute_d",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_416_f17068e91054cddc_AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_asy.py.json"
+}

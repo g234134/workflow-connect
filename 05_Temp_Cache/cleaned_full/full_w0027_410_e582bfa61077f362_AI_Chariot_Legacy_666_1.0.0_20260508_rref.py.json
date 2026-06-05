@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rref.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rref.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15532,
+  "content_sha256": "e582bfa61077f362bd245548c9d947d88629ce28ab1035272b3ca5e417d2dbfa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 422,
+    "non_empty_lines": 336,
+    "char_count": 15532,
+    "preview_lines": [
+      "# Algorithms for computing the reduced row echelon form of a matrix.",
+      "#",
+      "# We need to choose carefully which algorithms to use depending on the domain,",
+      "# shape, and sparsity of the matrix as well as things like the bit count in the",
+      "# case of ZZ or QQ. This is important because the algorithms have different",
+      "# performance characteristics in the extremes of dense vs sparse.",
+      "#",
+      "# In all cases we use the sparse implementations but we need to choose between",
+      "# Gauss-Jordan elimination with division and fraction-free Gauss-Jordan",
+      "# elimination. For very sparse matrices over ZZ with low bit counts it is"
+    ],
+    "imports": [
+      "from sympy.polys.domains import ZZ",
+      "from sympy.polys.matrices.sdm import SDM, sdm_irref, sdm_rref_den",
+      "from sympy.polys.matrices.ddm import DDM",
+      "from sympy.polys.matrices.dense import ddm_irref, ddm_irref_den"
+    ],
+    "classes": [],
+    "functions": [
+      "_dm_rref",
+      "_dm_rref_den",
+      "_dm_to_fmt",
+      "_dm_rref_GJ",
+      "_dm_rref_den_FF",
+      "_dm_rref_GJ_sparse",
+      "_dm_rref_GJ_dense",
+      "_dm_rref_den_FF_sparse",
+      "_dm_rref_den_FF_dense",
+      "_dm_rref_choose_method",
+      "_dm_rref_choose_method_QQ",
+      "_dm_rref_choose_method_ZZ",
+      "_dm_row_density",
+      "_dm_elements",
+      "_dm_QQ_numers_denoms",
+      "_to_field"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_410_e582bfa61077f362_AI_Chariot_Legacy_666_1.0.0_20260508_rref.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 482,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unleash.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unleash.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1045,
+  "content_sha256": "1b3dea00a0747d3b4e83308e255db8a1c5b535b75c0e492a8a3ad60c4e8e8bb1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 24,
+    "char_count": 1045,
+    "preview_lines": [
+      "from functools import wraps",
+      "from typing import Any",
+      "from sentry_sdk.feature_flags import add_feature_flag",
+      "from sentry_sdk.integrations import Integration, DidNotEnable",
+      "try:",
+      "    from UnleashClient import UnleashClient",
+      "except ImportError:",
+      "    raise DidNotEnable(\"UnleashClient is not installed\")",
+      "class UnleashIntegration(Integration):",
+      "    identifier = \"unleash\""
+    ],
+    "imports": [
+      "from functools import wraps",
+      "from typing import Any",
+      "from sentry_sdk.feature_flags import add_feature_flag",
+      "from sentry_sdk.integrations import Integration, DidNotEnable",
+      "from UnleashClient import UnleashClient"
+    ],
+    "classes": [
+      "UnleashIntegration"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_482_1b3dea00a0747d3b_AI_Chariot_Legacy_666_1.0.0_20260508_unleash.py.json"
+}

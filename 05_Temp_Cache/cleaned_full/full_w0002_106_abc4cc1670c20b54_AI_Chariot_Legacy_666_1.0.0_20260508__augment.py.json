@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__augment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__augment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16528,
+  "content_sha256": "abc4cc1670c20b54e980eb213ab3bf788da0c7d088214f359b2f9260de9a6c3c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 369,
+    "non_empty_lines": 295,
+    "char_count": 16528,
+    "preview_lines": [
+      "import math",
+      "import numbers",
+      "import warnings",
+      "from typing import Any, Callable, Dict, List, Optional, Sequence, Union",
+      "import PIL.Image",
+      "import torch",
+      "from torch.nn.functional import one_hot",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten",
+      "from torchvision import transforms as _transforms, tv_tensors",
+      "from torchvision.transforms.v2 import functional as F"
+    ],
+    "imports": [
+      "import math",
+      "import numbers",
+      "import warnings",
+      "from typing import Any, Callable, Dict, List, Optional, Sequence, Union",
+      "import PIL.Image",
+      "import torch",
+      "from torch.nn.functional import one_hot",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten",
+      "from torchvision import transforms as _transforms, tv_tensors",
+      "from torchvision.transforms.v2 import functional as F",
+      "from ._transform import _RandomApplyTransform, Transform",
+      "from ._utils import _check_sequence_input, _parse_labels_getter, has_any, is_pure_tensor, query_chw, query_size"
+    ],
+    "classes": [
+      "RandomErasing",
+      "_BaseMixUpCutMix",
+      "MixUp",
+      "CutMix",
+      "JPEG"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_106_abc4cc1670c20b54_AI_Chariot_Legacy_666_1.0.0_20260508__augment.py.json"
+}

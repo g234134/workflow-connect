@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 324,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_logic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_logic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5634,
+  "content_sha256": "fd829222877a434a08cfd943b3bf14410aeff4b53eb8a6b3b5def0f0b5b0bb06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 198,
+    "non_empty_lines": 149,
+    "char_count": 5634,
+    "preview_lines": [
+      "from sympy.core.logic import (fuzzy_not, Logic, And, Or, Not, fuzzy_and,",
+      "    fuzzy_or, _fuzzy_group, _torf, fuzzy_nand, fuzzy_xor)",
+      "from sympy.testing.pytest import raises",
+      "from itertools import product",
+      "T = True",
+      "F = False",
+      "U = None",
+      "def test_torf():",
+      "    v = [T, F, U]",
+      "    for i in product(*[v]*3):"
+    ],
+    "imports": [
+      "from sympy.core.logic import (fuzzy_not, Logic, And, Or, Not, fuzzy_and,",
+      "from sympy.testing.pytest import raises",
+      "from itertools import product"
+    ],
+    "classes": [],
+    "functions": [
+      "test_torf",
+      "test_fuzzy_group",
+      "test_fuzzy_not",
+      "test_fuzzy_and",
+      "test_fuzzy_or",
+      "test_logic_cmp",
+      "test_logic_onearg",
+      "test_logic_xnotx",
+      "test_logic_eval_TF",
+      "test_logic_combine_args",
+      "test_logic_expand",
+      "test_logic_fromstring",
+      "test_logic_not",
+      "test_formatting",
+      "test_fuzzy_xor",
+      "test_fuzzy_nand"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_324_fd829222877a434a_AI_Chariot_Legacy_666_1.0.0_20260508_test_logic.py.json"
+}

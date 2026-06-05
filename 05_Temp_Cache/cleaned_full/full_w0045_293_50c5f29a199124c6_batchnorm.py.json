@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:47:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\nn\\quantized\\modules\\batchnorm.py",
+  "name": "batchnorm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4021,
+  "content_sha256": "50c5f29a199124c629691b3cdd105a2dec7cd5225bb803c80a35ca57d936b421",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 106,
+    "non_empty_lines": 88,
+    "char_count": 4021,
+    "preview_lines": [
+      "import torch",
+      "import torch.ao.nn.intrinsic as nni",
+      "__all__ = [",
+      "    \"BatchNorm2d\",",
+      "    \"BatchNorm3d\"",
+      "]",
+      "class _BatchNorm(torch.nn.modules.batchnorm._BatchNorm):",
+      "    def __init__(self, num_features, eps=1e-5, momentum=0.1, device=None, dtype=None) -> None:",
+      "        factory_kwargs = {'device': device, 'dtype': dtype}",
+      "        super().__init__(num_features, eps, momentum, True, True, **factory_kwargs)"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.ao.nn.intrinsic as nni"
+    ],
+    "classes": [
+      "_BatchNorm",
+      "BatchNorm2d",
+      "BatchNorm3d"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_293_50c5f29a199124c6_batchnorm.py.json"
+}

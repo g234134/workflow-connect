@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_contains.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_contains.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 286,
+  "content_sha256": "708636b6891c597494afadb10292f0ee1f28674d4fb64e1dd8739484390ce303",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 11,
+    "char_count": 286,
+    "preview_lines": [
+      "import numpy as np",
+      "import pandas as pd",
+      "def test_contains_nan(using_nan_is_na):",
+      "    # GH#52840",
+      "    arr = pd.array(range(5)) / 0",
+      "    assert np.isnan(arr._data[0])",
+      "    if using_nan_is_na:",
+      "        assert arr.isna()[0]",
+      "    else:",
+      "        assert not arr.isna()[0]"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pandas as pd"
+    ],
+    "classes": [],
+    "functions": [
+      "test_contains_nan"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_302_708636b6891c5974_AI_Chariot_Legacy_666_1.0.0_20260508_test_contains.py.json"
+}

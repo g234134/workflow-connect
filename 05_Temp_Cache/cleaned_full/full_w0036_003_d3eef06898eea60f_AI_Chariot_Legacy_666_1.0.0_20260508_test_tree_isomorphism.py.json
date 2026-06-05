@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_tree_isomorphism.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_tree_isomorphism.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7412,
+  "content_sha256": "d3eef06898eea60f0059f403aab72c2553a04d793b1de3ebe64b7cecc8273ed3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 292,
+    "non_empty_lines": 234,
+    "char_count": 7412,
+    "preview_lines": [
+      "import random",
+      "import time",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.isomorphism.tree_isomorphism import (",
+      "    rooted_tree_isomorphism,",
+      "    tree_isomorphism,",
+      ")",
+      "from networkx.classes.function import is_directed",
+      "@pytest.mark.parametrize(\"graph_constructor\", (nx.DiGraph, nx.MultiGraph))"
+    ],
+    "imports": [
+      "import random",
+      "import time",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.isomorphism.tree_isomorphism import (",
+      "from networkx.classes.function import is_directed"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tree_isomorphism_raises_on_directed_and_multigraphs",
+      "check_isomorphism",
+      "test_hardcoded",
+      "random_swap",
+      "positive_single_tree",
+      "test_positive",
+      "test_trivial",
+      "test_trivial_2",
+      "test_negative"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_003_d3eef06898eea60f_AI_Chariot_Legacy_666_1.0.0_20260508_test_tree_isomorphism.py.json"
+}

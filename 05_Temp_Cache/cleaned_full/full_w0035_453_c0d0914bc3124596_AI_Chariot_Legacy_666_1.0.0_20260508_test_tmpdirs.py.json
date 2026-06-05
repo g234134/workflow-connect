@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 453,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_tmpdirs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_tmpdirs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1385,
+  "content_sha256": "c0d0914bc31245964f7beda0e14fde0941c6605eae03d481b07ea9cc00119de7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 37,
+    "char_count": 1385,
+    "preview_lines": [
+      "\"\"\" Test tmpdirs module \"\"\"",
+      "from os import getcwd",
+      "from os.path import realpath, abspath, dirname, isfile, join as pjoin, exists",
+      "from scipy._lib._tmpdirs import tempdir, in_tempdir, in_dir",
+      "from numpy.testing import assert_, assert_equal",
+      "import pytest",
+      "MY_PATH = abspath(__file__)",
+      "MY_DIR = dirname(MY_PATH)",
+      "@pytest.mark.thread_unsafe",
+      "def test_tempdir():"
+    ],
+    "imports": [
+      "from os import getcwd",
+      "from os.path import realpath, abspath, dirname, isfile, join as pjoin, exists",
+      "from scipy._lib._tmpdirs import tempdir, in_tempdir, in_dir",
+      "from numpy.testing import assert_, assert_equal",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tempdir",
+      "test_in_tempdir",
+      "test_given_directory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_453_c0d0914bc3124596_AI_Chariot_Legacy_666_1.0.0_20260508_test_tmpdirs.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 429,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_thread_cache.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_thread_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7001,
+  "content_sha256": "8c1aac20e62510f281da962ef5ab23938fc7cab420682139693ad8960f801083",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 176,
+    "char_count": 7001,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import threading",
+      "import time",
+      "from contextlib import contextmanager",
+      "from queue import Queue",
+      "from typing import TYPE_CHECKING, NoReturn",
+      "import pytest",
+      "from .. import _thread_cache",
+      "from .._thread_cache import ThreadCache, start_thread_soon"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import threading",
+      "import time",
+      "from contextlib import contextmanager",
+      "from queue import Queue",
+      "from typing import TYPE_CHECKING, NoReturn",
+      "import pytest",
+      "from .. import _thread_cache",
+      "from .._thread_cache import ThreadCache, start_thread_soon",
+      "from .tutil import gc_collect_harder, slow",
+      "from collections.abc import Iterator",
+      "from outcome import Outcome"
+    ],
+    "classes": [],
+    "functions": [
+      "test_thread_cache_basics",
+      "test_thread_cache_deref",
+      "test_spawning_new_thread_from_deliver_reuses_starting_thread",
+      "test_idle_threads_exit",
+      "_join_started_threads",
+      "test_race_between_idle_exit_and_job_assignment",
+      "test_raise_in_deliver",
+      "test_clear_thread_cache_after_fork"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_429_8c1aac20e62510f2_AI_Chariot_Legacy_666_1.0.0_20260508_test_thread_cache.py.json"
+}

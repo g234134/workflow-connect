@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 325,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prefilter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prefilter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25779,
+  "content_sha256": "272d1216d91b11effe23d5ebe31245a6b68ff85abc148053f5f984d2deb18502",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 707,
+    "non_empty_lines": 547,
+    "char_count": 25779,
+    "preview_lines": [
+      "# encoding: utf-8",
+      "\"\"\"",
+      "Prefiltering components.",
+      "Prefilters transform user input before it is exec'd by Python.  These",
+      "transforms are used to implement additional syntax such as !ls and %magic.",
+      "\"\"\"",
+      "# Copyright (c) IPython Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "from keyword import iskeyword",
+      "import re"
+    ],
+    "imports": [
+      "from keyword import iskeyword",
+      "import re",
+      "from .autocall import IPyAutocall",
+      "from traitlets.config.configurable import Configurable",
+      "from .inputtransformer2 import (",
+      "from .macro import Macro",
+      "from .splitinput import LineInfo",
+      "from traitlets import ("
+    ],
+    "classes": [
+      "PrefilterError",
+      "PrefilterManager",
+      "PrefilterTransformer",
+      "PrefilterChecker",
+      "EmacsChecker",
+      "MacroChecker",
+      "IPyAutocallChecker",
+      "AssignmentChecker",
+      "AutoMagicChecker",
+      "PythonOpsChecker",
+      "AutocallChecker",
+      "PrefilterHandler",
+      "MacroHandler",
+      "MagicHandler",
+      "AutoHandler",
+      "EmacsHandler"
+    ],
+    "functions": [
+      "is_shadowed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_325_272d1216d91b11ef_AI_Chariot_Legacy_666_1.0.0_20260508_prefilter.py.json"
+}

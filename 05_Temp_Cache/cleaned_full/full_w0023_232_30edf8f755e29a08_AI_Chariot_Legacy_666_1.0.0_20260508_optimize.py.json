@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_optimize.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_optimize.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12693,
+  "content_sha256": "30edf8f755e29a08e30e2f81b3e49fa7cd2dcc7a2c876a71e4df51d7f49905d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 389,
+    "non_empty_lines": 329,
+    "char_count": 12693,
+    "preview_lines": [
+      "\"\"\"",
+      "Our own implementation of the Newton algorithm",
+      "Unlike the scipy.optimize version, this version of the Newton conjugate",
+      "gradient solver uses only one function call to retrieve the",
+      "func value, the gradient value and a callable for the Hessian matvec",
+      "product. If the function call is very expensive (e.g. for logistic",
+      "regression with large design matrix), this approach gives very",
+      "significant speedups.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "import scipy",
+      "from scipy.optimize._linesearch import line_search_wolfe1, line_search_wolfe2",
+      "from sklearn.exceptions import ConvergenceWarning"
+    ],
+    "classes": [
+      "_LineSearchError"
+    ],
+    "functions": [
+      "_line_search_wolfe12",
+      "_cg",
+      "_newton_cg",
+      "_check_optimize_result"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_232_30edf8f755e29a08_AI_Chariot_Legacy_666_1.0.0_20260508_optimize.py.json"
+}

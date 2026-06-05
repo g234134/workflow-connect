@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 427,
+  "generated_at": "2026-05-08T18:47:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\parsing\\latex\\lark\\transformer.py",
+  "name": "transformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25754,
+  "content_sha256": "46e5def1e9d49cbaf35050bd65f290c90d7f225800faa3c834d9e0e949d8d71e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 730,
+    "non_empty_lines": 556,
+    "char_count": 25754,
+    "preview_lines": [
+      "import re",
+      "import sympy",
+      "from sympy.external import import_module",
+      "from sympy.parsing.latex.errors import LaTeXParsingError",
+      "lark = import_module(\"lark\")",
+      "if lark:",
+      "    from lark import Transformer, Token, Tree  # type: ignore",
+      "else:",
+      "    class Transformer:  # type: ignore",
+      "        def transform(self, *args):"
+    ],
+    "imports": [
+      "import re",
+      "import sympy",
+      "from sympy.external import import_module",
+      "from sympy.parsing.latex.errors import LaTeXParsingError",
+      "from lark import Transformer, Token, Tree  # type: ignore",
+      "from sympy.physics.quantum import Bra, Ket",
+      "from sympy.physics.quantum import OuterProduct"
+    ],
+    "classes": [
+      "TransformToSymPyExpr"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_427_46e5def1e9d49cba_transformer.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 100,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_instructor_provider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_instructor_provider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1313,
+  "content_sha256": "3f0e0f8e77f1af43df8cdc8d2ce453012264155272b93176dfcf4eb5e5b19b0d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 35,
+    "char_count": 1313,
+    "preview_lines": [
+      "\"\"\"Instructor embeddings provider.\"\"\"",
+      "from chromadb.utils.embedding_functions.instructor_embedding_function import (",
+      "    InstructorEmbeddingFunction,",
+      ")",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider",
+      "class InstructorProvider(BaseEmbeddingsProvider[InstructorEmbeddingFunction]):",
+      "    \"\"\"Instructor embeddings provider.\"\"\"",
+      "    embedding_callable: type[InstructorEmbeddingFunction] = Field(",
+      "        default=InstructorEmbeddingFunction,"
+    ],
+    "imports": [
+      "from chromadb.utils.embedding_functions.instructor_embedding_function import (",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider"
+    ],
+    "classes": [
+      "InstructorProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_100_3f0e0f8e77f1af43_AI_Chariot_Legacy_666_1.0.0_20260508_instructor_provider.py.json"
+}

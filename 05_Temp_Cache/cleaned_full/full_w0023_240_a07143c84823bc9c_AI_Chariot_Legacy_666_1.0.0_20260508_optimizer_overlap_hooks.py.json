@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_optimizer_overlap_hooks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_optimizer_overlap_hooks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6283,
+  "content_sha256": "a07143c84823bc9c0330db150ca0e383a3320ec6b6e47dc75c87703b7d9de5aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 130,
+    "char_count": 6283,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Any, Callable, List, no_type_check",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.autograd import Variable",
+      "__all__: List[str] = []",
+      "_FUNCTIONAL_OPTIM_STEP_METHOD_NAME = \"step_param\"",
+      "class _OptimizerHookState:"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Any, Callable, List, no_type_check",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.autograd import Variable"
+    ],
+    "classes": [
+      "_OptimizerHookState",
+      "_OptimInBackwardHookState"
+    ],
+    "functions": [
+      "_apply_optim_in_backward_hook",
+      "_hook_then_optimizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_240_a07143c84823bc9c_AI_Chariot_Legacy_666_1.0.0_20260508_optimizer_overlap_hooks.py.json"
+}

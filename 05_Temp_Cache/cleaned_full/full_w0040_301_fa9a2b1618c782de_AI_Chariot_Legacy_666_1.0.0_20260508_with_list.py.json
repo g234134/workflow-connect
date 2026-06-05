@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 301,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_with_list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_with_list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2980,
+  "content_sha256": "fa9a2b1618c782de8fc49262b52f66a09ea69856fca699e379c31c33c74724d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 69,
+    "char_count": 2980,
+    "preview_lines": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar, Union, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d, Floats2d, Ints2d, List2d, Padded, Ragged",
+      "SeqT = TypeVar(\"SeqT\", Padded, Ragged, List2d, List[Floats2d], List[Ints2d])",
+      "@registry.layers(\"with_list.v1\")",
+      "def with_list(layer: Model[List2d, List2d]) -> Model[SeqT, SeqT]:",
+      "    return Model(",
+      "        f\"with_list({layer.name})\",",
+      "        forward,"
+    ],
+    "imports": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar, Union, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d, Floats2d, Ints2d, List2d, Padded, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "with_list",
+      "forward",
+      "init",
+      "_get_list",
+      "_ragged_forward",
+      "_padded_forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_301_fa9a2b1618c782de_AI_Chariot_Legacy_666_1.0.0_20260508_with_list.py.json"
+}

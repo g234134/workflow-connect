@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 189,
+  "generated_at": "2026-05-08T18:45:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_memory_revisions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_memory_revisions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17201,
+  "content_sha256": "59d233f86998cb97b6cabfbb4529ed41ffd867720697bb51c84acfbad25e967b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 475,
+    "non_empty_lines": 392,
+    "char_count": 17201,
+    "preview_lines": [
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import functools",
+      "import json",
+      "import logging",
+      "from typing import Any, Iterator, Optional, Union",
+      "from urllib.parse import urlencode",
+      "from google.genai import _api_module",
+      "from google.genai import _common",
+      "from google.genai._common import get_value_by_path as getv",
+      "from google.genai._common import set_value_by_path as setv",
+      "from google.genai.pagers import AsyncPager, Pager",
+      "from . import types"
+    ],
+    "classes": [
+      "MemoryRevisions",
+      "AsyncMemoryRevisions"
+    ],
+    "functions": [
+      "_GetAgentEngineMemoryRevisionRequestParameters_to_vertex",
+      "_ListAgentEngineMemoryRevisionsConfig_to_vertex",
+      "_ListAgentEngineMemoryRevisionsRequestParameters_to_vertex"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_189_59d233f86998cb97_AI_Chariot_Legacy_666_1.0.0_20260508_memory_revisions.py.json"
+}

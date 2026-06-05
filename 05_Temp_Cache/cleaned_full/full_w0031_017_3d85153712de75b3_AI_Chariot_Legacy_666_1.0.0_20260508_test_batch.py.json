@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_batch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_batch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29494,
+  "content_sha256": "3d85153712de75b340ec9a369ef6324e9deef24b651ea36bb2436f969d144f27",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 620,
+    "non_empty_lines": 553,
+    "char_count": 29494,
+    "preview_lines": [
+      "import inspect",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "from scipy import linalg, sparse",
+      "real_floating = [np.float32, np.float64]",
+      "complex_floating = [np.complex64, np.complex128]",
+      "floating = real_floating + complex_floating",
+      "def get_random(shape, *, dtype, rng):",
+      "    A = rng.random(shape)"
+    ],
+    "imports": [
+      "import inspect",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "from scipy import linalg, sparse"
+    ],
+    "classes": [
+      "TestBatch"
+    ],
+    "functions": [
+      "get_random",
+      "get_nearly_hermitian"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_017_3d85153712de75b3_AI_Chariot_Legacy_666_1.0.0_20260508_test_batch.py.json"
+}

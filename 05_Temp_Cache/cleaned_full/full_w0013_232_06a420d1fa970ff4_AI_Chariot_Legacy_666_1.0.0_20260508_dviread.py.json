@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dviread.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dviread.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42590,
+  "content_sha256": "06a420d1fa970ff4e600124f4960c2f87d9acedec1e7735f384d520ba99b5e22",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1139,
+    "non_empty_lines": 984,
+    "char_count": 42590,
+    "preview_lines": [
+      "\"\"\"",
+      "A module for reading dvi files output by TeX. Several limitations make",
+      "this not (currently) useful as a general-purpose dvi preprocessor, but",
+      "it is currently used by the pdf backend for processing usetex text.",
+      "Interface::",
+      "  with Dvi(filename, 72) as dvi:",
+      "      # iterate over pages:",
+      "      for page in dvi:",
+      "          w, h, d = page.width, page.height, page.descent",
+      "          for x, y, font, glyph, width in page.text:"
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "import enum",
+      "from functools import lru_cache, partial, wraps",
+      "import logging",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import struct",
+      "import subprocess",
+      "import sys",
+      "import numpy as np",
+      "from matplotlib import _api, cbook",
+      "from *min* to *max* to this method, adds a check that the Dvi state"
+    ],
+    "classes": [
+      "Text",
+      "Dvi",
+      "DviFont",
+      "Vf",
+      "Tfm",
+      "PsfontsMap",
+      "_LuatexKpsewhich"
+    ],
+    "functions": [
+      "_dispatch",
+      "_mul2012",
+      "_parse_enc",
+      "find_tex_file",
+      "_fontfile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_232_06a420d1fa970ff4_AI_Chariot_Legacy_666_1.0.0_20260508_dviread.py.json"
+}

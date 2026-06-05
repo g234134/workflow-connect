@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nested_schemas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nested_schemas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1892,
+  "content_sha256": "9a8d3b771f82220992388eb608db38839c6ed45cc79252c1a644280f159870ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 43,
+    "char_count": 1892,
+    "preview_lines": [
+      "\"\"\"",
+      "Validating highly nested schemas shouldn't cause exponential time blowups.",
+      "See https://github.com/python-jsonschema/jsonschema/issues/1097.",
+      "\"\"\"",
+      "from itertools import cycle",
+      "from jsonschema.validators import validator_for",
+      "metaschemaish = {",
+      "    \"$id\": \"https://example.com/draft/2020-12/schema/strict\",",
+      "    \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",",
+      "    \"$vocabulary\": {"
+    ],
+    "imports": [
+      "from itertools import cycle",
+      "from jsonschema.validators import validator_for",
+      "from pyperf import Runner"
+    ],
+    "classes": [],
+    "functions": [
+      "nested_schema"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_355_9a8d3b771f822209_AI_Chariot_Legacy_666_1.0.0_20260508_nested_schemas.py.json"
+}

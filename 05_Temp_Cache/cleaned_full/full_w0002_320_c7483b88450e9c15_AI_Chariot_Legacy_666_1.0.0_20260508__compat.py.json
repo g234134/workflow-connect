@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 320,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2829,
+  "content_sha256": "c7483b88450e9c15490bbdb3c850a06f578aab2c52fbb7f62c69cdc99febf79b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 99,
+    "non_empty_lines": 76,
+    "char_count": 2829,
+    "preview_lines": [
+      "# SPDX-License-Identifier: MIT",
+      "import inspect",
+      "import platform",
+      "import sys",
+      "import threading",
+      "from collections.abc import Mapping, Sequence  # noqa: F401",
+      "from typing import _GenericAlias",
+      "PYPY = platform.python_implementation() == \"PyPy\"",
+      "PY_3_10_PLUS = sys.version_info[:2] >= (3, 10)",
+      "PY_3_11_PLUS = sys.version_info[:2] >= (3, 11)"
+    ],
+    "imports": [
+      "import inspect",
+      "import platform",
+      "import sys",
+      "import threading",
+      "from collections.abc import Mapping, Sequence  # noqa: F401",
+      "from typing import _GenericAlias",
+      "import annotationlib"
+    ],
+    "classes": [
+      "_AnnotationExtractor"
+    ],
+    "functions": [
+      "get_generic_base"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_320_c7483b88450e9c15_AI_Chariot_Legacy_666_1.0.0_20260508__compat.py.json"
+}

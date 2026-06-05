@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 174,
+  "generated_at": "2026-05-08T18:45:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilevitv2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilevitv2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33927,
+  "content_sha256": "10defc8c324a3888b7ed903841fd58fde9bf7940779c0f3134ea24ae1f1eb2a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 942,
+    "non_empty_lines": 773,
+    "char_count": 33927,
+    "preview_lines": [
+      "# Copyright 2023 Apple Inc. and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import nn",
+      "from torch.nn import CrossEntropyLoss",
+      "from ... import initialization as init",
+      "from ...activations import ACT2FN",
+      "from ...modeling_layers import GradientCheckpointingLayer",
+      "from ...modeling_outputs import (",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import auto_docstring, logging",
+      "from .configuration_mobilevitv2 import MobileViTV2Config"
+    ],
+    "classes": [
+      "MobileViTV2ConvLayer",
+      "MobileViTV2InvertedResidual",
+      "MobileViTV2MobileNetLayer",
+      "MobileViTV2LinearSelfAttention",
+      "MobileViTV2FFN",
+      "MobileViTV2TransformerLayer",
+      "MobileViTV2Transformer",
+      "MobileViTV2Layer",
+      "MobileViTV2Encoder",
+      "MobileViTV2PreTrainedModel",
+      "MobileViTV2Model",
+      "MobileViTV2ForImageClassification",
+      "MobileViTV2ASPPPooling",
+      "MobileViTV2ASPP",
+      "MobileViTV2DeepLabV3",
+      "MobileViTV2ForSemanticSegmentation"
+    ],
+    "functions": [
+      "make_divisible",
+      "clip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_174_10defc8c324a3888_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilevitv2.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 333,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_stringstore.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_stringstore.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3437,
+  "content_sha256": "296e2605290478bffc0e3d9ec84015d2a4464523cb64d3e1dd2427c67e370d25",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 75,
+    "char_count": 3437,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.strings import StringStore",
+      "@pytest.fixture",
+      "def stringstore():",
+      "    return StringStore()",
+      "def test_string_hash(stringstore):",
+      "    \"\"\"Test that string hashing is stable across platforms\"\"\"",
+      "    assert stringstore.add(\"apple\") == 8566208034543834098",
+      "    heart = \"\\U0001f499\"",
+      "    h = stringstore.add(heart)"
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.strings import StringStore"
+    ],
+    "classes": [],
+    "functions": [
+      "stringstore",
+      "test_string_hash",
+      "test_stringstore_from_api_docs",
+      "test_stringstore_save_bytes",
+      "test_stringstore_save_unicode",
+      "test_stringstore_retrieve_id",
+      "test_stringstore_med_string",
+      "test_stringstore_long_string",
+      "test_stringstore_multiply",
+      "test_stringstore_massive_strings",
+      "test_stringstore_to_bytes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_333_296e2605290478bf_AI_Chariot_Legacy_666_1.0.0_20260508_test_stringstore.py.json"
+}

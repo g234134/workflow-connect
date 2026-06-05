@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 378,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_browserbase_load_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_browserbase_load_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2646,
+  "content_sha256": "678babce9a3e965a82db845992b9acb5152309356324139584cc133a59fec1f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 67,
+    "char_count": 2646,
+    "preview_lines": [
+      "import os",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "class BrowserbaseLoadToolSchema(BaseModel):",
+      "    url: str = Field(description=\"Website URL\")",
+      "class BrowserbaseLoadTool(BaseTool):",
+      "    name: str = \"Browserbase web load tool\"",
+      "    description: str = \"Load webpages url in a headless browser using Browserbase and return the contents\"",
+      "    args_schema: type[BaseModel] = BrowserbaseLoadToolSchema"
+    ],
+    "imports": [
+      "import os",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "from browserbase import Browserbase",
+      "import click",
+      "import subprocess",
+      "from browserbase import Browserbase"
+    ],
+    "classes": [
+      "BrowserbaseLoadToolSchema",
+      "BrowserbaseLoadTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_378_678babce9a3e965a_AI_Chariot_Legacy_666_1.0.0_20260508_browserbase_load_tool.py.json"
+}

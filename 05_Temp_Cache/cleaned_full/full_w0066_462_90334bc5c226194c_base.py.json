@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 462,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\self_ask_with_search\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8439,
+  "content_sha256": "90334bc5c226194c0723a8d618243eefe7a2c77763f012a61dbbe029c3ae7561",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 216,
+    "non_empty_lines": 179,
+    "char_count": 8436,
+    "preview_lines": [
+      "\"\"\"Chain that does self-ask with search.\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_core.tools import BaseTool, Tool",
+      "from pydantic import Field"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_core.tools import BaseTool, Tool",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from langchain_classic.agents.agent import Agent, AgentExecutor, AgentOutputParser",
+      "from langchain_classic.agents.agent_types import AgentType",
+      "from langchain_classic.agents.format_scratchpad import format_log_to_str",
+      "from langchain_classic.agents.self_ask_with_search.output_parser import (",
+      "from langchain_classic.agents.self_ask_with_search.prompt import PROMPT",
+      "from langchain_classic.agents.utils import validate_tools_single_input",
+      "from langchain_community.utilities.google_serper import GoogleSerperAPIWrapper",
+      "from langchain_community.utilities.searchapi import SearchApiAPIWrapper",
+      "from langchain_community.utilities.serpapi import SerpAPIWrapper",
+      "from langchain_classic import hub"
+    ],
+    "classes": [
+      "SelfAskWithSearchAgent",
+      "SelfAskWithSearchChain"
+    ],
+    "functions": [
+      "create_self_ask_with_search_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_462_90334bc5c226194c_base.py.json"
+}

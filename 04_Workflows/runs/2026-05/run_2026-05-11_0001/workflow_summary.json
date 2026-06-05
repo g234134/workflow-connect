@@ -1,0 +1,183 @@
+{
+  "run_id": "run_2026-05-11_0001",
+  "schema_version": "1.0",
+  "simulation_meta": {
+    "scenario": "接戰口令 → AGENTS.md §初始化校準（Initialization Calibration）",
+    "run_kind": "workflow_simulation_trace",
+    "source": "prior_cursor_agent_turn_reconstruction",
+    "inferred_fields": [
+      "nodes[].completed_at_iso",
+      "edges[].observed"
+    ],
+    "notes": "Nodes reflect governed artifacts under D:\\大唐三省六部; no Enter-Main.ps1 was invoked in trace."
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "N0_intake",
+        "label": "接戰／口令解析",
+        "phase": "ZhongShu_Planner",
+        "role": "解析使用者『接戰』與交接句，鎖定唯一入口 AGENTS.md 與 §初始化校準四段。",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:01Z",
+        "inferred": true
+      },
+      {
+        "id": "N1_mount_map",
+        "label": "掛載地圖（Authority）",
+        "phase": "ZhongShu_Planner",
+        "role": "讀取 Master_Map.json；departments/aliases/war_status 為路徑與治理權威。",
+        "artifact_ref": "04_Workflows/Master_Map.json",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:03Z",
+        "inferred": true
+      },
+      {
+        "id": "N2_read_law",
+        "label": "讀取律法（Logic）",
+        "phase": "MenXia_Audit",
+        "role": "校對 Base_Agent：Run_ID、get_path／gov_paths、禁止硬編路徑。",
+        "artifact_ref": "02_Agents_Core/Base_Agent.py",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:05Z",
+        "inferred": true
+      },
+      {
+        "id": "N3_smoke_keys",
+        "label": "檢查糧草（Config）",
+        "phase": "MenXia_Audit",
+        "role": "三鑰盲測；禁止印出 .env／金鑰原文。",
+        "artifact_ref": "04_Workflows/_smoke_test_keys.py",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:12Z",
+        "inferred": true
+      },
+      {
+        "id": "N4_audit_status",
+        "label": "現況審核（Status.json）",
+        "phase": "ShangShu_Manager",
+        "role": "讀 Status.json；摘要末筆 run 與 pipeline 相關狀態。",
+        "artifact_ref": "04_Workflows/Status.json",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:14Z",
+        "inferred": true
+      },
+      {
+        "id": "N5_audit_temp_cache",
+        "label": "刑部生料掃描（xing_bu）",
+        "phase": "ShangShu_Manager",
+        "role": "raw_inbound / quarantine 檔案計數（經地圖別名 xing_bu → 05_Temp_Cache）。",
+        "artifact_ref": "05_Temp_Cache/raw_inbound; 05_Temp_Cache/quarantine",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:18Z",
+        "inferred": true
+      },
+      {
+        "id": "N6_optional_lock",
+        "label": "Telegram 監聽器 lock（可選）",
+        "phase": "ShangShu_Manager",
+        "role": "僅驗證 lock／PID 存在性；不讀 token。",
+        "artifact_ref": "04_Workflows/.telegram_listener.lock",
+        "status": "Skipped",
+        "completed_at_iso": "2026-05-11T00:00:19Z",
+        "inferred": true
+      },
+      {
+        "id": "N7_report",
+        "label": "初始化完成口頭回報",
+        "phase": "ShangShu_Manager",
+        "role": "六行以內簡報：version、律法、三鑰、Status、刑部件數、健康度＋待命。",
+        "status": "Success",
+        "completed_at_iso": "2026-05-11T00:00:22Z",
+        "inferred": true
+      }
+    ],
+    "edges": [
+      {
+        "from": "N0_intake",
+        "to": "N1_mount_map",
+        "kind": "sequential",
+        "observed": true
+      },
+      {
+        "from": "N1_mount_map",
+        "to": "N2_read_law",
+        "kind": "sequential",
+        "observed": true
+      },
+      {
+        "from": "N2_read_law",
+        "to": "N3_smoke_keys",
+        "kind": "sequential",
+        "observed": true
+      },
+      {
+        "from": "N3_smoke_keys",
+        "to": "N4_audit_status",
+        "kind": "conditional",
+        "condition": "all_providers_ok",
+        "decision_reason": "OpenAI/Groq/Telegram 皆 [OK] → 繼續審核；若有 [FAILED] 應標記黃／紅並可能阻斷後續（本次未發生）",
+        "observed": true,
+        "inferred": true
+      },
+      {
+        "from": "N4_audit_status",
+        "to": "N5_audit_temp_cache",
+        "kind": "sequential",
+        "observed": true
+      },
+      {
+        "from": "N5_audit_temp_cache",
+        "to": "N6_optional_lock",
+        "kind": "sequential",
+        "observed": true
+      },
+      {
+        "from": "N6_optional_lock",
+        "to": "N7_report",
+        "kind": "sequential",
+        "observed": true
+      }
+    ]
+  },
+  "branches_audit_retry": {
+    "branches": [
+      {
+        "id": "BR1_smoke_outcome",
+        "at_node": "N3_smoke_keys",
+        "description": "三鑰結果分流：全 OK vs 任一 FAILED（憲法判準）",
+        "taken_path": "all_ok",
+        "inferred": true
+      },
+      {
+        "id": "BR2_lock_optional",
+        "at_node": "N6_optional_lock",
+        "description": "lock 存在則可核 PID；不存在則跳過可選步驟",
+        "taken_path": "file_missing_skip",
+        "observed": true
+      }
+    ],
+    "human_review_gates": [],
+    "rollback_points": [],
+    "retry": {
+      "occurred": false,
+      "max_retry_count": 0
+    }
+  },
+  "tool_surface": {
+    "tools_used": [
+      "Read",
+      "Shell",
+      "Glob"
+    ],
+    "external_llm_calls_in_calibration": 0
+  },
+  "memory_and_persistence": {
+    "disk_writes_in_trace": [],
+    "chat_summary_to_user": true,
+    "chariot_registry_touch": false,
+    "status_json_mutation_by_calibration": false,
+    "notes": "校準本身不改寫 Status.json；對話回覆為尚書省口頭回報。",
+    "inferred": true
+  }
+}

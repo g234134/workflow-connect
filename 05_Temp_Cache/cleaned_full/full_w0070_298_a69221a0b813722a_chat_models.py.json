@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\standard-tests\\langchain_tests\\unit_tests\\chat_models.py",
+  "name": "chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38676,
+  "content_sha256": "a69221a0b813722ad5f4fc953c1a942f66e332a78523f15ee972d98aa5274b59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1148,
+    "non_empty_lines": 866,
+    "char_count": 38673,
+    "preview_lines": [
+      "\"\"\"Chat model unit tests.\"\"\"",
+      "from __future__ import annotations",
+      "import inspect",
+      "import os",
+      "from abc import abstractmethod",
+      "from typing import TYPE_CHECKING, Any, Literal",
+      "from unittest import mock",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.load import dumpd, load"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import os",
+      "from abc import abstractmethod",
+      "from typing import TYPE_CHECKING, Any, Literal",
+      "from unittest import mock",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.load import dumpd, load",
+      "from langchain_core.runnables import RunnableBinding",
+      "from langchain_core.tools import BaseTool, tool",
+      "from pydantic import BaseModel, Field, SecretStr, ValidationError",
+      "from langchain_tests.base import BaseStandardTests",
+      "from pytest_benchmark.fixture import (",
+      "from syrupy.assertion import SnapshotAssertion"
+    ],
+    "classes": [
+      "ChatModelTests",
+      "ChatModelUnitTests"
+    ],
+    "functions": [
+      "generate_schema_pydantic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_298_a69221a0b813722a_chat_models.py.json"
+}

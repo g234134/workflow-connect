@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_f2cmap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_f2cmap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 404,
+  "content_sha256": "872cca3afdbad703c35809a9ba27405452b7c7d5979bae14febdc4fdb9b13578",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 13,
+    "char_count": 404,
+    "preview_lines": [
+      "import numpy as np",
+      "from . import util",
+      "class TestF2Cmap(util.F2PyTest):",
+      "    sources = [",
+      "        util.getpath(\"tests\", \"src\", \"f2cmap\", \"isoFortranEnvMap.f90\"),",
+      "        util.getpath(\"tests\", \"src\", \"f2cmap\", \".f2py_f2cmap\")",
+      "    ]",
+      "    # gh-15095",
+      "    def test_gh15095(self):",
+      "        inp = np.ones(3)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from . import util"
+    ],
+    "classes": [
+      "TestF2Cmap"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_224_872cca3afdbad703_AI_Chariot_Legacy_666_1.0.0_20260508_test_f2cmap.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 358,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\backend_config\\_qnnpack_pt2e.py",
+  "name": "_qnnpack_pt2e.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6466,
+  "content_sha256": "b0cfe37e60c658a2f3b3d3719a13a026bdaa5c4366ef2d23e6434e3b4e53c0ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 145,
+    "char_count": 6466,
+    "preview_lines": [
+      "import operator",
+      "import torch",
+      "from torch.ao.quantization.backend_config import (",
+      "    BackendConfig,",
+      "    DTypeConfig,",
+      "    ObservationType,",
+      "    BackendPatternConfig,",
+      ")",
+      "weighted_op_quint8_dtype_config = DTypeConfig(",
+      "    input_dtype=torch.quint8,"
+    ],
+    "imports": [
+      "import operator",
+      "import torch",
+      "from torch.ao.quantization.backend_config import (",
+      "from typing import List"
+    ],
+    "classes": [],
+    "functions": [
+      "get_linear_configs",
+      "get_conv_configs",
+      "get_pooling_configs",
+      "get_relu_configs",
+      "get_binary_op_configs",
+      "get_qnnpack_pt2e_backend_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_358_b0cfe37e60c658a2__qnnpack_pt2e.py.json"
+}

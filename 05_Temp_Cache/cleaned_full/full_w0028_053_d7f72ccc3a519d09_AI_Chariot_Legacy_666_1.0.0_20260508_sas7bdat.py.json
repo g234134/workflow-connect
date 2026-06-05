@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sas7bdat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sas7bdat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27023,
+  "content_sha256": "d7f72ccc3a519d095eb939c1bac8b393f14be0fbe722d968b2fd1b4c28a25800",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 738,
+    "non_empty_lines": 632,
+    "char_count": 27023,
+    "preview_lines": [
+      "\"\"\"",
+      "Read SAS7BDAT files",
+      "Based on code written by Jared Hobbs:",
+      "  https://bitbucket.org/jaredhobbs/sas7bdat",
+      "See also:",
+      "  https://github.com/BioStatMatt/sas7bdat",
+      "Partial documentation of the file format:",
+      "  https://cran.r-project.org/package=sas7bdat/vignettes/sas7bdat.pdf",
+      "Reference for binary data compression:",
+      "  http://collaboration.cmc.ec.gc.ca/science/rpn/biblio/ddj/Website/articles/CUJ/1992/9210/ross/ross.htm"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from datetime import datetime",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import numpy as np",
+      "from pandas._config import using_string_dtype",
+      "from pandas._libs.byteswap import (",
+      "from pandas._libs.sas import (",
+      "from pandas._libs.tslibs.conversion import cast_from_unit_vectorized",
+      "from pandas.errors import EmptyDataError",
+      "import pandas as pd",
+      "from pandas import (",
+      "from pandas.io.common import get_handle",
+      "import pandas.io.sas.sas_constants as const",
+      "from pandas.io.sas.sasreader import SASReader",
+      "from pandas._typing import ("
+    ],
+    "classes": [
+      "_Column",
+      "SAS7BDATReader"
+    ],
+    "functions": [
+      "_convert_datetimes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_053_d7f72ccc3a519d09_AI_Chariot_Legacy_666_1.0.0_20260508_sas7bdat.py.json"
+}

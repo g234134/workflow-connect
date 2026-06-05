@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 5,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_finders.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_finders.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13547,
+  "content_sha256": "df09ef42455a3b97f0c69390bb96096ac7fb49b76f81d26f8336707fd46d31a6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 382,
+    "non_empty_lines": 336,
+    "char_count": 13547,
+    "preview_lines": [
+      "import functools",
+      "import os",
+      "import warnings",
+      "from django.apps import apps",
+      "from django.conf import settings",
+      "from django.contrib.staticfiles import utils",
+      "from django.core.checks import Error, Warning",
+      "from django.core.exceptions import ImproperlyConfigured",
+      "from django.core.files.storage import FileSystemStorage, Storage, default_storage",
+      "from django.utils._os import safe_join"
+    ],
+    "imports": [
+      "import functools",
+      "import os",
+      "import warnings",
+      "from django.apps import apps",
+      "from django.conf import settings",
+      "from django.contrib.staticfiles import utils",
+      "from django.core.checks import Error, Warning",
+      "from django.core.exceptions import ImproperlyConfigured",
+      "from django.core.files.storage import FileSystemStorage, Storage, default_storage",
+      "from django.utils._os import safe_join",
+      "from django.utils.deprecation import RemovedInDjango61Warning",
+      "from django.utils.functional import LazyObject, empty",
+      "from django.utils.module_loading import import_string"
+    ],
+    "classes": [
+      "BaseFinder",
+      "FileSystemFinder",
+      "AppDirectoriesFinder",
+      "BaseStorageFinder",
+      "DefaultStorageFinder"
+    ],
+    "functions": [
+      "_check_deprecated_find_param",
+      "find",
+      "get_finders",
+      "get_finder"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_005_df09ef42455a3b97_AI_Chariot_Legacy_666_1.0.0_20260508_finders.py.json"
+}

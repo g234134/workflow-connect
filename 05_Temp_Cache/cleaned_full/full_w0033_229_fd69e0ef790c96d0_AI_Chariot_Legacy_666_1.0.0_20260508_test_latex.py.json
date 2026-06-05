@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 229,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_latex.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_latex.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8710,
+  "content_sha256": "fd69e0ef790c96d0befec528c5da36b812f66e411cec732a90a870a3d6432460",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 292,
+    "non_empty_lines": 259,
+    "char_count": 8710,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def test_tikz_attributes():",
+      "    G = nx.path_graph(4, create_using=nx.DiGraph)",
+      "    pos = {n: (n, n) for n in G}",
+      "    G.add_edge(0, 0)",
+      "    G.edges[(0, 0)][\"label\"] = \"Loop\"",
+      "    G.edges[(0, 0)][\"label_options\"] = \"midway\"",
+      "    G.nodes[0][\"style\"] = \"blue\"",
+      "    G.nodes[1][\"style\"] = \"line width=3,draw\""
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tikz_attributes",
+      "test_basic_multiple_graphs",
+      "test_basic_tikz",
+      "test_exception_pos_single_graph",
+      "test_exception_multiple_graphs",
+      "test_exception_multigraph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_229_fd69e0ef790c96d0_AI_Chariot_Legacy_666_1.0.0_20260508_test_latex.py.json"
+}

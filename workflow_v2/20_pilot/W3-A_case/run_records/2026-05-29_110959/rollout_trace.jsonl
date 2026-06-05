@@ -1,0 +1,3 @@
+﻿{"step":"k2_shadow","cmd":"python -m unittest tests.test_k2_merge_adapter tests.test_k2_ask_shadow -v","note":"unittest pass","phase":"shadow","exit_ok":true,"primary_source":"ask"}
+{"phase":"shadow","step":"eval_ci_check_fixture","note":"fixture shadow metrics","cmd":"python -m observability.eval_ci_check \u003cfixture\u003e","exit_ok":true}
+{"phase":"canary","step":"internal_canary","note":"cohort_in=0/5","exit_ok":true}

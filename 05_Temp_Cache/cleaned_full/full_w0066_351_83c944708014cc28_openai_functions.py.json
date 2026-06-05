@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\agent_toolkits\\conversational_retrieval\\openai_functions.py",
+  "name": "openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3421,
+  "content_sha256": "83c944708014cc28f8141cb55a64ae19182d8e83fef24a6ff2ffb6797a11caa6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 85,
+    "non_empty_lines": 76,
+    "char_count": 3418,
+    "preview_lines": [
+      "from typing import Any",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import SystemMessage",
+      "from langchain_core.prompts.chat import MessagesPlaceholder",
+      "from langchain_core.tools import BaseTool",
+      "from langchain_classic.agents.agent import AgentExecutor",
+      "from langchain_classic.agents.openai_functions_agent.agent_token_buffer_memory import (",
+      "    AgentTokenBufferMemory,",
+      ")",
+      "from langchain_classic.agents.openai_functions_agent.base import OpenAIFunctionsAgent"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import SystemMessage",
+      "from langchain_core.prompts.chat import MessagesPlaceholder",
+      "from langchain_core.tools import BaseTool",
+      "from langchain_classic.agents.agent import AgentExecutor",
+      "from langchain_classic.agents.openai_functions_agent.agent_token_buffer_memory import (",
+      "from langchain_classic.agents.openai_functions_agent.base import OpenAIFunctionsAgent",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.memory.token_buffer import ConversationTokenBufferMemory"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_default_system_message",
+      "create_conversational_retrieval_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_351_83c944708014cc28_openai_functions.py.json"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 172,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_async_compile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_async_compile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10165,
+  "content_sha256": "351d734b7d3e9574717354b05d56fb8435b982a7cffad8e14f01f7a56dbfbf9c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 297,
+    "non_empty_lines": 244,
+    "char_count": 10165,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import functools",
+      "import logging",
+      "import multiprocessing",
+      "import os",
+      "import sys",
+      "from concurrent.futures import Future, ProcessPoolExecutor, ThreadPoolExecutor",
+      "from concurrent.futures.process import BrokenProcessPool",
+      "from functools import partial"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import functools",
+      "import logging",
+      "import multiprocessing",
+      "import os",
+      "import sys",
+      "from concurrent.futures import Future, ProcessPoolExecutor, ThreadPoolExecutor",
+      "from concurrent.futures.process import BrokenProcessPool",
+      "from functools import partial",
+      "from time import time",
+      "from typing import Any, Callable, Dict, List, Optional, Set, TYPE_CHECKING",
+      "import torch",
+      "from torch._dynamo.device_interface import get_registered_device_interfaces",
+      "from torch._inductor import config",
+      "from torch._inductor.codecache import (",
+      "from torch._inductor.compile_worker.subproc_pool import (",
+      "from torch._inductor.compile_worker.watchdog import _async_compile_initializer",
+      "from torch._inductor.runtime.compile_tasks import (",
+      "from torch.hub import _Faketqdm, tqdm",
+      "from torch.utils._triton import has_triton_package"
+    ],
+    "classes": [
+      "AsyncCompile"
+    ],
+    "functions": [
+      "pre_fork_setup",
+      "caching_device_properties",
+      "_compile_start",
+      "_compile_end",
+      "shutdown_compile_workers",
+      "after_fork"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_172_351d734b7d3e9574_AI_Chariot_Legacy_666_1.0.0_20260508_async_compile.py.json"
+}

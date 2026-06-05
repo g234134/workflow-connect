@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 165,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_widget_time.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_widget_time.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2447,
+  "content_sha256": "7bc02cdd9865bc3e9344ba27fe7b8fb7fb8a3a646af0b3a334c020522ff0051f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 75,
+    "char_count": 2447,
+    "preview_lines": [
+      "# coding: utf-8",
+      "# Copyright (c) Vidar Tonaas Fauske.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "import pytest",
+      "import datetime",
+      "from traitlets import TraitError",
+      "from ..widget_time import TimePicker",
+      "def test_time_creation_blank():",
+      "    w = TimePicker()",
+      "    assert w.value is None"
+    ],
+    "imports": [
+      "import pytest",
+      "import datetime",
+      "from traitlets import TraitError",
+      "from ..widget_time import TimePicker"
+    ],
+    "classes": [],
+    "functions": [
+      "test_time_creation_blank",
+      "test_time_creation_value",
+      "test_time_cross_validate_value_min_max",
+      "test_time_validate_value_none",
+      "test_time_validate_value_vs_min",
+      "test_time_validate_value_vs_max",
+      "test_time_validate_min_vs_value",
+      "test_time_validate_min_vs_max",
+      "test_time_validate_max_vs_value",
+      "test_time_validate_max_vs_min"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_165_7bc02cdd9865bc3e_AI_Chariot_Legacy_666_1.0.0_20260508_test_widget_time.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 273,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_debugger_backport.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_debugger_backport.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8216,
+  "content_sha256": "a8ff7ab556df1fbc2938522386e17215554cd732200866cfd40c90cce05fc36f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 206,
+    "non_empty_lines": 177,
+    "char_count": 8216,
+    "preview_lines": [
+      "\"\"\"",
+      "The code in this module is a backport of cPython changes in Pdb",
+      "that were introduced in Python 3.13 by gh-83151: Make closure work on pdb",
+      "https://github.com/python/cpython/pull/111094.",
+      "This file should be removed once IPython drops supports for Python 3.12.",
+      "The only changes are:",
+      "- reformatting by darker (black) formatter",
+      "- addition of type-ignore comments to satisfy mypy",
+      "Copyright (c) 2001 Python Software Foundation; All Rights Reserved",
+      "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+    ],
+    "imports": [
+      "import sys",
+      "import types",
+      "import codeop",
+      "import textwrap",
+      "from types import CodeType"
+    ],
+    "classes": [
+      "PdbClosureBackport"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_273_a8ff7ab556df1fbc_AI_Chariot_Legacy_666_1.0.0_20260508_debugger_backport.py.json"
+}

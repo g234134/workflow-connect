@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_socketserver.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_socketserver.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3934,
+  "content_sha256": "b6a4cc478f3ea93b2c0c139ace638515c87d0570003f85cd7c94d9139e720328",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 136,
+    "non_empty_lines": 107,
+    "char_count": 3934,
+    "preview_lines": [
+      "#! /usr/bin/env python",
+      "\"\"\"",
+      "start socket based minimal readline exec server",
+      "it can exeuted in 2 modes of operation",
+      "1. as normal script, that listens for new connections",
+      "2. via existing_gateway.remote_exec (as imported module)",
+      "\"\"\"",
+      "# this part of the program only executes on the server side",
+      "#",
+      "from __future__ import annotations"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import fcntl",
+      "from execnet.gateway_base import Channel",
+      "from execnet.gateway_base import ExecModel",
+      "import traceback",
+      "import sys",
+      "from execnet.gateway_base import get_execmodel"
+    ],
+    "classes": [],
+    "functions": [
+      "print_",
+      "exec_from_one_connection",
+      "bind_and_listen",
+      "startserver"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_048_b6a4cc478f3ea93b_AI_Chariot_Legacy_666_1.0.0_20260508_socketserver.py.json"
+}

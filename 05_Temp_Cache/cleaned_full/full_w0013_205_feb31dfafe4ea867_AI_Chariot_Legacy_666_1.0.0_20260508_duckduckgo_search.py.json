@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 205,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_duckduckgo_search.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_duckduckgo_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3486,
+  "content_sha256": "feb31dfafe4ea867bd948b8982cfb2fd9f70460a03b599cfac3d16f369b3dbb5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 83,
+    "char_count": 3486,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from typing import Annotated, Any",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ... import Tool",
+      "with optional_import_block():",
+      "    from duckduckgo_search import DDGS",
+      "@require_optional_import("
+    ],
+    "imports": [
+      "from typing import Annotated, Any",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ... import Tool",
+      "from duckduckgo_search import DDGS"
+    ],
+    "classes": [
+      "DuckDuckGoSearchTool"
+    ],
+    "functions": [
+      "_execute_duckduckgo_query",
+      "_duckduckgo_search"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_205_feb31dfafe4ea867_AI_Chariot_Legacy_666_1.0.0_20260508_duckduckgo_search.py.json"
+}

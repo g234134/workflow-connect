@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_max_budget_per_session_limiter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_max_budget_per_session_limiter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9238,
+  "content_sha256": "45e9838556d98b9e5ffcdf826906ad77228ed4b681a14253c301cea263386d8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 267,
+    "non_empty_lines": 220,
+    "char_count": 9238,
+    "preview_lines": [
+      "\"\"\"",
+      "Per-Session Budget Limiter for LiteLLM Proxy.",
+      "Enforces a dollar-amount cap per session (identified by `session_id` /",
+      "`x-litellm-trace-id`). After each successful LLM call the response cost is",
+      "accumulated against the session. When the accumulated spend exceeds",
+      "`max_budget_per_session` (configured in agent litellm_params), subsequent",
+      "requests for that session receive a 429.",
+      "Note: trace-id enforcement (require_trace_id_on_calls_by_agent) is handled",
+      "separately in auth_checks.py at the agent level, not in this hook.",
+      "Works across multiple proxy instances via DualCache (in-memory + Redis)."
+    ],
+    "imports": [
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "from fastapi import HTTPException",
+      "from litellm import DualCache",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.utils import InternalUsageCache as _InternalUsageCache",
+      "from litellm.proxy.agent_endpoints.agent_registry import (",
+      "from litellm.proxy.agent_endpoints.agent_registry import global_agent_registry"
+    ],
+    "classes": [
+      "_PROXY_MaxBudgetPerSessionHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_119_45e9838556d98b9e_AI_Chariot_Legacy_666_1.0.0_20260508_max_budget_per_session_limiter.py.json"
+}

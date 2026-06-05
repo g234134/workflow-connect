@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:45:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pkcs12.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pkcs12.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5104,
+  "content_sha256": "992f5c14d1b869fcefb1ea1ce5ed4c5a863656c91f2fc37c63f3858e5ebb96e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 176,
+    "non_empty_lines": 147,
+    "char_count": 5104,
+    "preview_lines": [
+      "# This file is dual licensed under the terms of the Apache License, Version",
+      "# 2.0, and the BSD License. See the LICENSE file in the root of this repository",
+      "# for complete details.",
+      "from __future__ import annotations",
+      "import typing",
+      "from collections.abc import Iterable",
+      "from cryptography import x509",
+      "from cryptography.hazmat.bindings._rust import pkcs12 as rust_pkcs12",
+      "from cryptography.hazmat.primitives import serialization",
+      "from cryptography.hazmat.primitives._serialization import PBES as PBES"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing",
+      "from collections.abc import Iterable",
+      "from cryptography import x509",
+      "from cryptography.hazmat.bindings._rust import pkcs12 as rust_pkcs12",
+      "from cryptography.hazmat.primitives import serialization",
+      "from cryptography.hazmat.primitives._serialization import PBES as PBES",
+      "from cryptography.hazmat.primitives.asymmetric import (",
+      "from cryptography.hazmat.primitives.asymmetric.types import PrivateKeyTypes"
+    ],
+    "classes": [
+      "PKCS12KeyAndCertificates"
+    ],
+    "functions": [
+      "serialize_java_truststore",
+      "serialize_key_and_certificates"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_141_992f5c14d1b869fc_AI_Chariot_Legacy_666_1.0.0_20260508_pkcs12.py.json"
+}

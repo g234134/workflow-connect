@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_usage_types.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_usage_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 591,
+  "content_sha256": "7021c77dae9a8128c3d1bad0f6b700730da4688f6b8941f90b475757e7ea92d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 13,
+    "char_count": 591,
+    "preview_lines": [
+      "from firecrawl.v2.types import ConcurrencyCheck, CreditUsage, TokenUsage",
+      "class TestUsageTypes:",
+      "    def test_concurrency_check_model(self):",
+      "        cc = ConcurrencyCheck(concurrency=3, max_concurrency=10)",
+      "        assert cc.concurrency == 3",
+      "        assert cc.max_concurrency == 10",
+      "    def test_credit_usage_model(self):",
+      "        cu = CreditUsage(remaining_credits=123)",
+      "        assert isinstance(cu.remaining_credits, int)",
+      "        assert cu.remaining_credits == 123"
+    ],
+    "imports": [
+      "from firecrawl.v2.types import ConcurrencyCheck, CreditUsage, TokenUsage"
+    ],
+    "classes": [
+      "TestUsageTypes"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_089_7021c77dae9a8128_AI_Chariot_Legacy_666_1.0.0_20260508_test_usage_types.py.json"
+}

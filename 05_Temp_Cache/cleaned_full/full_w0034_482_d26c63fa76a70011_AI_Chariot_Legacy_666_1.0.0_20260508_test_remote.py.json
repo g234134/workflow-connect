@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 482,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_remote.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_remote.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2156,
+  "content_sha256": "d26c63fa76a700115a88a0459ba60a3eb5640eab475136d079f350059b4f40eb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 58,
+    "char_count": 2156,
+    "preview_lines": [
+      "from pathlib import Path",
+      "import pytest",
+      "from typer.testing import CliRunner",
+      "from weasel import app",
+      "from .test_cli_app import has_git",
+      "runner = CliRunner()",
+      "@pytest.fixture",
+      "def project_dir(tmp_path_factory: pytest.TempPathFactory):",
+      "    # a working directory for the session",
+      "    base = tmp_path_factory.mktemp(\"project\")"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "import pytest",
+      "from typer.testing import CliRunner",
+      "from weasel import app",
+      "from .test_cli_app import has_git"
+    ],
+    "classes": [],
+    "functions": [
+      "project_dir",
+      "remote_url",
+      "clone",
+      "assets",
+      "test_remote"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_482_d26c63fa76a70011_AI_Chariot_Legacy_666_1.0.0_20260508_test_remote.py.json"
+}

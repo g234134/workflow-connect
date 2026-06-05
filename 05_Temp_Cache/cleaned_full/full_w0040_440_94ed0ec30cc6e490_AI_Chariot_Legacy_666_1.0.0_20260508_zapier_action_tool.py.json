@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 440,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_zapier_action_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_zapier_action_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 982,
+  "content_sha256": "94ed0ec30cc6e490e0235fa7169d0effb958e872578a07ae12e63827a9a1b7c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 24,
+    "char_count": 982,
+    "preview_lines": [
+      "import logging",
+      "import os",
+      "from crewai_tools.adapters.zapier_adapter import ZapierActionTool, ZapierActionsAdapter",
+      "logger = logging.getLogger(__name__)",
+      "def ZapierActionTools(  # noqa: N802",
+      "    zapier_api_key: str | None = None, action_list: list[str] | None = None",
+      ") -> list[ZapierActionTool]:",
+      "    \"\"\"Factory function that returns Zapier action tools.",
+      "    Args:",
+      "        zapier_api_key: The API key for Zapier."
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "from crewai_tools.adapters.zapier_adapter import ZapierActionTool, ZapierActionsAdapter"
+    ],
+    "classes": [],
+    "functions": [
+      "ZapierActionTools"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_440_94ed0ec30cc6e490_AI_Chariot_Legacy_666_1.0.0_20260508_zapier_action_tool.py.json"
+}

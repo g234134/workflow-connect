@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 311,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__comm_mode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__comm_mode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29498,
+  "content_sha256": "257df7884610d78251fa631fdc90917092a5db5ff7c9651db6876d419d8453f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 735,
+    "non_empty_lines": 608,
+    "char_count": 29498,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import copy",
+      "import json",
+      "import re",
+      "import weakref",
+      "from collections import defaultdict",
+      "from typing import Any, Dict",
+      "import torch",
+      "import torch.nn",
+      "from torch._guards import detect_fake_mode"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "import re",
+      "import weakref",
+      "from collections import defaultdict",
+      "from typing import Any, Dict",
+      "import torch",
+      "import torch.nn",
+      "from torch._guards import detect_fake_mode",
+      "from torch.autograd.graph import register_multi_grad_hook",
+      "from torch.distributed._tools.mod_tracker import ModTracker",
+      "from torch.distributed.tensor._api import DTensor",
+      "from torch.nn.modules.module import (",
+      "from torch.utils._python_dispatch import TorchDispatchMode",
+      "from torch.utils._pytree import tree_flatten"
+    ],
+    "classes": [
+      "_CommModeModuleTracker",
+      "CommDebugMode"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_311_257df7884610d782_AI_Chariot_Legacy_666_1.0.0_20260508__comm_mode.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bootstrap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bootstrap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2062,
+  "content_sha256": "30137d9c21a74ce3735ea1819e8550ecdeb893d266e6b91a13c42486a2cae6db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 44,
+    "char_count": 2062,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from typing import Protocol, runtime_checkable",
+      "from .base import KnowledgeStore",
+      "from .constants import LOG_PREFIX",
+      "@runtime_checkable",
+      "class StoreBootstrap(Protocol):",
+      "    \"\"\"Initializes a knowledge store with a starting structure.",
+      "    Called once when an agent first runs with a store. Subsequent"
+    ],
+    "imports": [
+      "from typing import Protocol, runtime_checkable",
+      "from .base import KnowledgeStore",
+      "from .constants import LOG_PREFIX"
+    ],
+    "classes": [
+      "StoreBootstrap",
+      "DefaultBootstrap"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_321_30137d9c21a74ce3_AI_Chariot_Legacy_666_1.0.0_20260508_bootstrap.py.json"
+}

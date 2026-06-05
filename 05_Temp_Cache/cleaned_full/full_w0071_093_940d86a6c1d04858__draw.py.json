@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\pregel\\_draw.py",
+  "name": "_draw.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10761,
+  "content_sha256": "940d86a6c1d04858ecc7042c25d949d486e1b8578c69ee1af43b9e5d0eca6590",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 294,
+    "non_empty_lines": 278,
+    "char_count": 10758,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections import defaultdict",
+      "from collections.abc import Mapping, Sequence",
+      "from typing import Any, NamedTuple, cast",
+      "from langchain_core.runnables.config import RunnableConfig",
+      "from langchain_core.runnables.graph import Graph, Node",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from langgraph._internal._constants import CONF, CONFIG_KEY_SEND, INPUT",
+      "from langgraph.channels.base import BaseChannel",
+      "from langgraph.channels.last_value import LastValueAfterFinish"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import defaultdict",
+      "from collections.abc import Mapping, Sequence",
+      "from typing import Any, NamedTuple, cast",
+      "from langchain_core.runnables.config import RunnableConfig",
+      "from langchain_core.runnables.graph import Graph, Node",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from langgraph._internal._constants import CONF, CONFIG_KEY_SEND, INPUT",
+      "from langgraph.channels.base import BaseChannel",
+      "from langgraph.channels.last_value import LastValueAfterFinish",
+      "from langgraph.constants import END, START",
+      "from langgraph.managed.base import ManagedValueSpec",
+      "from langgraph.pregel._algo import (",
+      "from langgraph.pregel._checkpoint import channels_from_checkpoint, empty_checkpoint",
+      "from langgraph.pregel._io import map_input",
+      "from langgraph.pregel._read import PregelNode",
+      "from langgraph.pregel._write import ChannelWrite",
+      "from langgraph.types import All, Checkpointer"
+    ],
+    "classes": [
+      "Edge",
+      "TriggerEdge"
+    ],
+    "functions": [
+      "draw_graph",
+      "add_edge"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_093_940d86a6c1d04858__draw.py.json"
+}

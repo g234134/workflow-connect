@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\c.py",
+  "name": "c.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27011,
+  "content_sha256": "a97f04931553e59d879dccfc0c987c89aaff8c1b957110c4888b7577a8dc7ab1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 747,
+    "non_empty_lines": 628,
+    "char_count": 27011,
+    "preview_lines": [
+      "\"\"\"",
+      "C code printer",
+      "The C89CodePrinter & C99CodePrinter converts single SymPy expressions into",
+      "single C expressions, using the functions defined in math.h where possible.",
+      "A complete code generator, which uses ccode extensively, can be found in",
+      "sympy.utilities.codegen. The codegen module can be used to generate complete",
+      "source code files that are compilable without further modifications.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from functools import wraps",
+      "from itertools import chain",
+      "from sympy.core import S",
+      "from sympy.core.numbers import equal_valued, Float",
+      "from sympy.codegen.ast import (",
+      "from sympy.printing.codeprinter import CodePrinter, requires",
+      "from sympy.printing.precedence import precedence, PRECEDENCE",
+      "from sympy.sets.fancysets import Range",
+      "from sympy.printing.codeprinter import ccode, print_ccode # noqa:F401",
+      "from sympy.codegen.cfunctions import log2, Sqrt",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.functions.elementary.miscellaneous import sqrt"
+    ],
+    "classes": [
+      "C89CodePrinter",
+      "C99CodePrinter",
+      "C11CodePrinter"
+    ],
+    "functions": [
+      "get_math_macros",
+      "_as_macro_if_defined"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_142_a97f04931553e59d_c.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_encoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_encoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20224,
+  "content_sha256": "0b8cc86aca2d7fb1a5910aad44adef302b7668de85906e8d2b6294c3465d1c7a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 502,
+    "non_empty_lines": 378,
+    "char_count": 20224,
+    "preview_lines": [
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import BinaryIO, Dict, Optional, Union",
+      "import torch",
+      "import torio",
+      "ffmpeg_ext = torio._extension.lazy_import_ffmpeg_ext()",
+      "@dataclass",
+      "class CodecConfig:",
+      "    \"\"\"Codec configuration.\"\"\"",
+      "    bit_rate: int = -1"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import BinaryIO, Dict, Optional, Union",
+      "import torch",
+      "import torio"
+    ],
+    "classes": [
+      "CodecConfig",
+      "StreamingMediaEncoder"
+    ],
+    "functions": [
+      "_convert_config",
+      "_format_doc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_293_0b8cc86aca2d7fb1_AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_encoder.py.json"
+}

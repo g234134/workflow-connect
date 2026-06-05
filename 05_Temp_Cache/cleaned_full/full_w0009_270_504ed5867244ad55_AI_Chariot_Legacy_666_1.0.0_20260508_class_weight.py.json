@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_class_weight.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_class_weight.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8985,
+  "content_sha256": "504ed5867244ad55133261c89859623bf384ec57487c39c2178e107983ca108f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 231,
+    "non_empty_lines": 193,
+    "char_count": 8985,
+    "preview_lines": [
+      "\"\"\"Utilities for handling weights based on class labels.\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import numpy as np",
+      "from scipy import sparse",
+      "from sklearn.utils._param_validation import StrOptions, validate_params",
+      "from sklearn.utils.validation import _check_sample_weight",
+      "@validate_params(",
+      "    {",
+      "        \"class_weight\": [dict, StrOptions({\"balanced\"}), None],"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy import sparse",
+      "from sklearn.utils._param_validation import StrOptions, validate_params",
+      "from sklearn.utils.validation import _check_sample_weight",
+      "from sklearn.preprocessing import LabelEncoder"
+    ],
+    "classes": [],
+    "functions": [
+      "compute_class_weight",
+      "compute_sample_weight"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_270_504ed5867244ad55_AI_Chariot_Legacy_666_1.0.0_20260508_class_weight.py.json"
+}

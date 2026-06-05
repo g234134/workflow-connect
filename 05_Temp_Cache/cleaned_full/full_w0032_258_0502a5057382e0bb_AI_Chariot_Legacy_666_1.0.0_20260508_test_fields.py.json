@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fields.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fields.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1352,
+  "content_sha256": "0502a5057382e0bb177bb793d822b9991191ff6e60f6a63291067aa23a068db1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 28,
+    "char_count": 1352,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs.tslibs import fields",
+      "import pandas._testing as tm",
+      "@pytest.fixture",
+      "def dtindex():",
+      "    dtindex = np.arange(5, dtype=np.int64) * 10**9 * 3600 * 24 * 32",
+      "    dtindex.flags.writeable = False",
+      "    return dtindex",
+      "def test_get_date_name_field_readonly(dtindex):"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs.tslibs import fields",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "dtindex",
+      "test_get_date_name_field_readonly",
+      "test_get_date_field_readonly",
+      "test_get_start_end_field_readonly",
+      "test_get_timedelta_field_readonly"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_258_0502a5057382e0bb_AI_Chariot_Legacy_666_1.0.0_20260508_test_fields.py.json"
+}

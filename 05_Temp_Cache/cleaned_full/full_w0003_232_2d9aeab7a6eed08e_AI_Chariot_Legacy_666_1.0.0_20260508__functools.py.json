@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__functools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__functools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 789,
+  "content_sha256": "2d9aeab7a6eed08e1bc7101b0ec36cd3b7dbe5a779fc835d1b583349d8532eff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 25,
+    "char_count": 789,
+    "preview_lines": [
+      "import collections",
+      "import functools",
+      "# from jaraco.functools 4.0.2",
+      "def save_method_args(method):",
+      "    \"\"\"",
+      "    Wrap a method such that when it is called, the args and kwargs are",
+      "    saved on the method.",
+      "    \"\"\"",
+      "    args_and_kwargs = collections.namedtuple('args_and_kwargs', 'args kwargs')  # noqa: PYI024",
+      "    @functools.wraps(method)"
+    ],
+    "imports": [
+      "import collections",
+      "import functools"
+    ],
+    "classes": [],
+    "functions": [
+      "save_method_args",
+      "none_as"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_232_2d9aeab7a6eed08e_AI_Chariot_Legacy_666_1.0.0_20260508__functools.py.json"
+}

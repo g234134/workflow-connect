@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 212,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openrouter\\tests\\integration_tests\\test_standard.py",
+  "name": "test_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3335,
+  "content_sha256": "fc326bd063e60ac7af56033d9616443650a75899b882ebe44c8d17821b53870d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 92,
+    "char_count": 3332,
+    "preview_lines": [
+      "\"\"\"Standard integration tests for `ChatOpenRouter`.\"\"\"",
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_openrouter.chat_models import ChatOpenRouter",
+      "MODEL_NAME = \"openai/gpt-4o-mini\"",
+      "class TestChatOpenRouter(ChatModelIntegrationTests):",
+      "    \"\"\"Test `ChatOpenRouter` chat model.\"\"\"",
+      "    @property",
+      "    def chat_model_class(self) -> type[ChatOpenRouter]:",
+      "        \"\"\"Return class of chat model being tested.\"\"\""
+    ],
+    "imports": [
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_openrouter.chat_models import ChatOpenRouter"
+    ],
+    "classes": [
+      "TestChatOpenRouter",
+      "TestChatOpenRouterMultiModal"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_212_fc326bd063e60ac7_test_standard.py.json"
+}

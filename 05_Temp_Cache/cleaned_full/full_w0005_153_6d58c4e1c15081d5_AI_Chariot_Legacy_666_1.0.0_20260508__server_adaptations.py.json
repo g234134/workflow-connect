@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 153,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__server_adaptations.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__server_adaptations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14943,
+  "content_sha256": "6d58c4e1c15081d519c797ca5af2cfad2001d300f54eb98e5cc4a62b80fa9cba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 457,
+    "non_empty_lines": 388,
+    "char_count": 14943,
+    "preview_lines": [
+      "# Copyright 2016 gRPC authors.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import collections",
+      "import threading",
+      "import grpc",
+      "from grpc import _common",
+      "from grpc.beta import _metadata",
+      "from grpc.beta import interfaces",
+      "from grpc.framework.common import cardinality",
+      "from grpc.framework.common import style",
+      "from grpc.framework.foundation import abandonment",
+      "from grpc.framework.foundation import logging_pool",
+      "from grpc.framework.foundation import stream",
+      "from grpc.framework.interfaces.face import face"
+    ],
+    "classes": [
+      "_ServerProtocolContext",
+      "_FaceServicerContext",
+      "_Callback",
+      "_SimpleMethodHandler",
+      "_GenericRpcHandler",
+      "_Server"
+    ],
+    "functions": [
+      "_adapt_unary_request_inline",
+      "_adapt_stream_request_inline",
+      "_run_request_pipe_thread",
+      "_adapt_unary_unary_event",
+      "_adapt_unary_stream_event",
+      "_adapt_stream_unary_event",
+      "_adapt_stream_stream_event",
+      "_simple_method_handler",
+      "_flatten_method_pair_map",
+      "server"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_153_6d58c4e1c15081d5_AI_Chariot_Legacy_666_1.0.0_20260508__server_adaptations.py.json"
+}

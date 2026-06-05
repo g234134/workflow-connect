@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 145,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\test_messages_state.py",
+  "name": "test_messages_state.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11361,
+  "content_sha256": "16a084b3e82317b76e8f47a32212d4b9caa4af195ff53534e10764f60335b826",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 369,
+    "non_empty_lines": 312,
+    "char_count": 11358,
+    "preview_lines": [
+      "from typing import Annotated",
+      "from uuid import UUID",
+      "import langchain_core",
+      "import pytest",
+      "from langchain_core.messages import (",
+      "    AIMessage,",
+      "    AnyMessage,",
+      "    HumanMessage,",
+      "    RemoveMessage,",
+      "    SystemMessage,"
+    ],
+    "imports": [
+      "from typing import Annotated",
+      "from uuid import UUID",
+      "import langchain_core",
+      "import pytest",
+      "from langchain_core.messages import (",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "from langgraph.constants import END, START",
+      "from langgraph.graph import add_messages",
+      "from langgraph.graph.message import REMOVE_ALL_MESSAGES, MessagesState, push_message",
+      "from langgraph.graph.state import StateGraph",
+      "from tests.messages import _AnyIdHumanMessage"
+    ],
+    "classes": [
+      "MessagesStatePydantic"
+    ],
+    "functions": [
+      "test_add_single_message",
+      "test_add_multiple_messages",
+      "test_update_existing_message",
+      "test_missing_ids",
+      "test_duplicates_in_input",
+      "test_duplicates_in_input_with_remove",
+      "test_remove_message",
+      "test_duplicate_remove_message",
+      "test_remove_nonexistent_message",
+      "test_mixed_operations",
+      "test_empty_inputs",
+      "test_non_list_inputs",
+      "test_delete_all",
+      "test_messages_state",
+      "test_messages_state_format_openai",
+      "test_remove_all_messages",
+      "test_push_messages_in_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_145_16a084b3e82317b7_test_messages_state.py.json"
+}

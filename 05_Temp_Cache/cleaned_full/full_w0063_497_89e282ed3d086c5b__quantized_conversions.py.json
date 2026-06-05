@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 497,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\quantization\\_quantized_conversions.py",
+  "name": "_quantized_conversions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4390,
+  "content_sha256": "89e282ed3d086c5b5cc0e4c32e25d92eb4d1791080a89e691dce75d40c866a04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 132,
+    "non_empty_lines": 114,
+    "char_count": 4390,
+    "preview_lines": [
+      "import torch",
+      "# Pack pairs of int4 values into int8, in row major order; first int4",
+      "# value goes into lower order bits, and second int4 value into higher",
+      "# order bits of resulting int8 value.",
+      "def pack_int4_to_int8(weight):",
+      "    assert weight.dim() == 2",
+      "    assert weight.shape[1] % 2 == 0",
+      "    assert weight.dtype == torch.int8",
+      "    return ((weight[:, 1::2] & 0xF) << 4) | (weight[:, 0::2] & 0xF)",
+      "# Unpack quandruples of bits in int8 values into int4 values, in row"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [],
+    "functions": [
+      "pack_int4_to_int8",
+      "unpack_int8_to_int4",
+      "quantized_weight_reorder_for_mixed_dtypes_linear_cutlass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_497_89e282ed3d086c5b__quantized_conversions.py.json"
+}

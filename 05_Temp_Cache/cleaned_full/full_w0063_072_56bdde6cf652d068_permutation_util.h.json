@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 72,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\lazy\\core\\permutation_util.h",
+  "name": "permutation_util.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1320,
+  "content_sha256": "56bdde6cf652d06829a56eac06d3c54af7d6174ad4aa07b4425abbf5333b5d2b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 43,
+    "non_empty_lines": 36,
+    "char_count": 1320,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/ArrayRef.h>",
+      "#include <c10/util/Exception.h>",
+      "#include <c10/util/irange.h>",
+      "#include <vector>",
+      "namespace torch {",
+      "namespace lazy {",
+      "TORCH_API std::vector<int64_t> InversePermutation(",
+      "    c10::ArrayRef<int64_t> input_permutation);",
+      "TORCH_API bool IsPermutation(c10::ArrayRef<int64_t> permutation);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_072_56bdde6cf652d068_permutation_util.h.json"
+}

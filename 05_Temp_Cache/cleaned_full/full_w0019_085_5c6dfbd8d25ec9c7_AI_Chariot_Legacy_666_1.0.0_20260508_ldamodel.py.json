@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ldamodel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ldamodel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 77037,
+  "content_sha256": "5c6dfbd8d25ec9c768ecd385da63d0e5adfef0fb34c5b32ae2006541952ac87b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1696,
+    "non_empty_lines": 1403,
+    "char_count": 77037,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2011 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Optimized `Latent Dirichlet Allocation (LDA) <https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation>`_ in Python.",
+      "For a faster implementation of LDA (parallelized for multicore machines), see also :mod:`gensim.models.ldamulticore`.",
+      "This module allows both LDA model estimation from a training corpus and inference of topic",
+      "distribution on new, unseen documents. The model can also be updated with new documents",
+      "for online training."
+    ],
+    "imports": [
+      "import logging",
+      "import numbers",
+      "import os",
+      "import time",
+      "from collections import defaultdict",
+      "import numpy as np",
+      "from scipy.special import gammaln, psi  # gamma function utils",
+      "from scipy.special import polygamma",
+      "from gensim import interfaces, utils, matutils",
+      "from gensim.matutils import (",
+      "from gensim.models import basemodel, CoherenceModel",
+      "from gensim.models.callbacks import Callback"
+    ],
+    "classes": [
+      "LdaState",
+      "LdaModel"
+    ],
+    "functions": [
+      "update_dir_prior"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_085_5c6dfbd8d25ec9c7_AI_Chariot_Legacy_666_1.0.0_20260508_ldamodel.py.json"
+}

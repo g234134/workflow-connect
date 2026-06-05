@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributions\\logistic_normal.py",
+  "name": "logistic_normal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2003,
+  "content_sha256": "ae9391cf76769bf72670ac9c67701bb71071860767514ef3ce559d0fde752842",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 42,
+    "char_count": 2003,
+    "preview_lines": [
+      "from torch.distributions import constraints",
+      "from torch.distributions.normal import Normal",
+      "from torch.distributions.transformed_distribution import TransformedDistribution",
+      "from torch.distributions.transforms import StickBreakingTransform",
+      "__all__ = [\"LogisticNormal\"]",
+      "class LogisticNormal(TransformedDistribution):",
+      "    r\"\"\"",
+      "    Creates a logistic-normal distribution parameterized by :attr:`loc` and :attr:`scale`",
+      "    that define the base `Normal` distribution transformed with the",
+      "    `StickBreakingTransform` such that::"
+    ],
+    "imports": [
+      "from torch.distributions import constraints",
+      "from torch.distributions.normal import Normal",
+      "from torch.distributions.transformed_distribution import TransformedDistribution",
+      "from torch.distributions.transforms import StickBreakingTransform"
+    ],
+    "classes": [
+      "LogisticNormal"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_270_ae9391cf76769bf7_logistic_normal.py.json"
+}

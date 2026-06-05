@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_panw_prisma_airs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_panw_prisma_airs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46608,
+  "content_sha256": "d9444b3dce46cc2238d07ec2af812e7a3bf340e7fbf0c8487e16c5e1b3ff84ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1162,
+    "non_empty_lines": 1001,
+    "char_count": 46608,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "\"\"\"",
+      "Palo Alto Networks Prisma AI Runtime Security (AIRS) Guardrail Integration for LiteLLM",
+      "Provides real-time threat detection, DLP, URL filtering, content masking, and policy enforcement for AI applications.",
+      "\"\"\"",
+      "import os",
+      "import httpx",
+      "from datetime import datetime",
+      "from litellm._uuid import uuid",
+      "from litellm.caching import DualCache"
+    ],
+    "imports": [
+      "import os",
+      "import httpx",
+      "from datetime import datetime",
+      "from litellm._uuid import uuid",
+      "from litellm.caching import DualCache",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Tuple, Type",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.utils import CallTypesLiteral, ModelResponse",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.base import GuardrailConfigModel",
+      "from litellm.types.utils import Choices"
+    ],
+    "classes": [
+      "PanwPrismaAirsHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_388_d9444b3dce46cc22_AI_Chariot_Legacy_666_1.0.0_20260508_panw_prisma_airs.py.json"
+}

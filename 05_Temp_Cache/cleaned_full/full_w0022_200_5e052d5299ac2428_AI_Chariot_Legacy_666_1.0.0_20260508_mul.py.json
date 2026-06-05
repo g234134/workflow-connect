@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 200,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mul.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mul.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 78544,
+  "content_sha256": "5e052d5299ac24283e96fc3ee8d750f9190f3d30ad4bc7db73b6a448849ce350",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2196,
+    "non_empty_lines": 1897,
+    "char_count": 78544,
+    "preview_lines": [
+      "from typing import Tuple as tTuple",
+      "from collections import defaultdict",
+      "from functools import reduce",
+      "from itertools import product",
+      "import operator",
+      "from .sympify import sympify",
+      "from .basic import Basic, _args_sortkey",
+      "from .singleton import S",
+      "from .operations import AssocOp, AssocOpDispatcher",
+      "from .cache import cacheit"
+    ],
+    "imports": [
+      "from typing import Tuple as tTuple",
+      "from collections import defaultdict",
+      "from functools import reduce",
+      "from itertools import product",
+      "import operator",
+      "from .sympify import sympify",
+      "from .basic import Basic, _args_sortkey",
+      "from .singleton import S",
+      "from .operations import AssocOp, AssocOpDispatcher",
+      "from .cache import cacheit",
+      "from .intfunc import integer_nthroot, trailing",
+      "from .logic import fuzzy_not, _fuzzy_group",
+      "from .expr import Expr",
+      "from .parameters import global_parameters",
+      "from .kind import KindDispatcher",
+      "from .traversal import bottom_up",
+      "from sympy.utilities.iterables import sift"
+    ],
+    "classes": [
+      "NC_Marker",
+      "Mul"
+    ],
+    "functions": [
+      "_mulsort",
+      "_unevaluated_Mul",
+      "prod",
+      "_keep_coeff",
+      "expand_2arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_200_5e052d5299ac2428_AI_Chariot_Legacy_666_1.0.0_20260508_mul.py.json"
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_id": "ART-REL-EXEC",
+  "ticket_id": "W2-1-QA-REL",
+  "pilot_artifact_id": "W2-1-G8-RECON-PILOT",
+  "release_id": "W2-1-G8-RECON-PILOT-doc-auth-20260527",
+  "decision_ref": "07_art_rel_dec.json",
+  "target_audience_or_env": "workflow_v2/10_governance/ readers",
+  "published_at": "2026-05-27T00:00:00+08:00",
+  "execution_evidence": {
+    "authority_model": "repo-working-tree doc-authority",
+    "effective_artifacts": [
+      "G7_state_machine/20_entry_conditions.md — ART-REL-EXEC entry; G8/G10 cross-refs",
+      "G7_state_machine/30_exit_and_transitions.md — G8-1/2/5 + G10-2 §5.3 refs",
+      "G8_artifact_contract/30_engineering.md §2 — 10_workflow_states.md + G7-1 frozen note",
+      "G8_artifact_contract/README.md — IMP reconciliation status"
+    ],
+    "qa_sign_off": "06_art_qa_rev.json verdict accepted_with_gaps",
+    "not_in_scope": "No git tag, no CI enforce, no prod deploy — W2-2/W2-3 territory"
+  },
+  "rollback_path_valid": true,
+  "executed_by_role": "release",
+  "message": "Governance cross-ref delta treated as current internal authority for workflow_v2/10_governance/ readers."
+}

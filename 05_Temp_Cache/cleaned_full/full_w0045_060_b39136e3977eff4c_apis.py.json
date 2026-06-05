@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_functorch\\apis.py",
+  "name": "apis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17211,
+  "content_sha256": "b39136e3977eff4ca4d6ba07695c7feb77d3b179ea0ee59221022f8d7ac07ada",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 364,
+    "non_empty_lines": 306,
+    "char_count": 17211,
+    "preview_lines": [
+      "# NOTE: We allow Dynamo to see this file (via torch/_dynamo/skipfiles.py) so that it can",
+      "#       trace through functorch transforms.",
+      "#       Currently, we can't allow Dynamo to see `eager_transforms.py`/`vmap.py` as that break a lot of thing",
+      "#       and there isn't a mechanism to selectively expose only some functions (eg. grad) from a file",
+      "#       to Dynamo.",
+      "from torch._functorch.vmap import (vmap_impl, _check_randomness_arg,",
+      "                                   Callable, in_dims_t, out_dims_t, _check_out_dims_is_int_or_int_pytree,",
+      "                                   _process_batched_inputs, _chunked_vmap)",
+      "from torch._functorch.utils import exposed_in, argnums_t",
+      "import functools"
+    ],
+    "imports": [
+      "from torch._functorch.vmap import (vmap_impl, _check_randomness_arg,",
+      "from torch._functorch.utils import exposed_in, argnums_t",
+      "import functools"
+    ],
+    "classes": [],
+    "functions": [
+      "vmap",
+      "chunk_vmap",
+      "grad"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_060_b39136e3977eff4c_apis.py.json"
+}

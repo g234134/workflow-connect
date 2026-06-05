@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-05-08T17:49:24+00:00",
+  "finished_at": "2026-05-08T17:49:29+00:00",
+  "ok_count": 6,
+  "total": 7,
+  "rows": [
+    {
+      "api": "TELEGRAM_BOT_TOKEN",
+      "status": "OK",
+      "latency_ms": 962,
+      "note": "@MyppppAI_Bot id=8104938954",
+      "http": 200,
+      "group": "通訊"
+    },
+    {
+      "api": "GROQ_API_KEY",
+      "status": "OK",
+      "latency_ms": 274,
+      "note": "model=llama-3.3-70b-versatile tok=41 reply=\"It's nice to meet\"",
+      "http": 200,
+      "group": "大腦"
+    },
+    {
+      "api": "QWEN_APIKEY",
+      "status": "OK",
+      "latency_ms": 922,
+      "note": "model=qwen-turbo tok=18 reply='Hello! How can I'",
+      "http": 200,
+      "group": "大腦"
+    },
+    {
+      "api": "NVIDIA_API_KEY",
+      "status": "Fail",
+      "latency_ms": 132,
+      "note": "{'status': 401, 'title': 'Unauthorized', 'detail': 'Authentication failed'}",
+      "http": 401,
+      "group": "大腦"
+    },
+    {
+      "api": "FIRECRAWL_API_KEY",
+      "status": "OK",
+      "latency_ms": 778,
+      "note": "credits_remaining=998",
+      "http": 200,
+      "group": "偵察"
+    },
+    {
+      "api": "TAVILY_API_KEY",
+      "status": "OK",
+      "latency_ms": 658,
+      "note": "results=1",
+      "http": 200,
+      "group": "偵察"
+    },
+    {
+      "api": "JINA_API_KEY",
+      "status": "OK",
+      "latency_ms": 932,
+      "note": "dim=1024 tok=3",
+      "http": 200,
+      "group": "偵察"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 51,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__variation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__variation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4780,
+  "content_sha256": "336df416a4a4995ceb89577e584431e52c56f5b6b1191b158f817c2fe1bacc01",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 103,
+    "char_count": 4780,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy._lib._util import _get_nan",
+      "from scipy._lib._array_api import array_namespace, xp_copysign",
+      "from ._axis_nan_policy import _axis_nan_policy_factory",
+      "@_axis_nan_policy_factory(",
+      "    lambda x: x, n_outputs=1, result_to_tuple=lambda x: (x,)",
+      ")",
+      "def variation(a, axis=0, nan_policy='propagate', ddof=0, *, keepdims=False):",
+      "    \"\"\"",
+      "    Compute the coefficient of variation."
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy._lib._util import _get_nan",
+      "from scipy._lib._array_api import array_namespace, xp_copysign",
+      "from ._axis_nan_policy import _axis_nan_policy_factory"
+    ],
+    "classes": [],
+    "functions": [
+      "variation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_051_336df416a4a4995c_AI_Chariot_Legacy_666_1.0.0_20260508__variation.py.json"
+}

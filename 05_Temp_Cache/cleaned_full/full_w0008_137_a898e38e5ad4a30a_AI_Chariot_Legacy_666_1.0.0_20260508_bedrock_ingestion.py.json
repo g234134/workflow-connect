@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 137,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_ingestion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_ingestion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27841,
+  "content_sha256": "a898e38e5ad4a30a66337c15ff1c7c4d74e7e9f5893feb9a1370b398cd092ab7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 685,
+    "non_empty_lines": 574,
+    "char_count": 27841,
+    "preview_lines": [
+      "\"\"\"",
+      "Bedrock-specific RAG Ingestion implementation.",
+      "Bedrock Knowledge Bases handle embedding internally when files are ingested,",
+      "so this implementation uploads files to S3 and triggers ingestion jobs.",
+      "Supports two modes:",
+      "1. Use existing KB: Provide vector_store_id (KB ID)",
+      "2. Auto-create KB: Don't provide vector_store_id - creates all AWS resources automatically",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import json",
+      "import uuid",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.bedrock.base_aws_llm import BaseAWSLLM",
+      "from litellm.rag.ingestion.base_ingestion import BaseRAGIngestion",
+      "from litellm import Router",
+      "from litellm.types.rag import RAGIngestOptions"
+    ],
+    "classes": [
+      "BedrockRAGIngestion"
+    ],
+    "functions": [
+      "_get_str_or_none",
+      "_get_int",
+      "_normalize_principal_arn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_137_a898e38e5ad4a30a_AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_ingestion.py.json"
+}

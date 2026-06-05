@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:45:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_handling.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_handling.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4233,
+  "content_sha256": "56cc0111796a7c3b5ab5ff8a1cad680ab4df92d955f90c3fc8d3b899d5400d35",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 100,
+    "char_count": 4233,
+    "preview_lines": [
+      "\"\"\"",
+      "Helper functions to handle images passed in messages",
+      "\"\"\"",
+      "import base64",
+      "from httpx import Response",
+      "import litellm",
+      "from litellm import verbose_logger",
+      "from litellm.caching.caching import InMemoryCache",
+      "from litellm.constants import MAX_IMAGE_URL_DOWNLOAD_SIZE_MB",
+      "MAX_IMGS_IN_MEMORY = 10"
+    ],
+    "imports": [
+      "import base64",
+      "from httpx import Response",
+      "import litellm",
+      "from litellm import verbose_logger",
+      "from litellm.caching.caching import InMemoryCache",
+      "from litellm.constants import MAX_IMAGE_URL_DOWNLOAD_SIZE_MB"
+    ],
+    "classes": [],
+    "functions": [
+      "_process_image_response",
+      "convert_url_to_base64"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_150_56cc0111796a7c3b_AI_Chariot_Legacy_666_1.0.0_20260508_image_handling.py.json"
+}

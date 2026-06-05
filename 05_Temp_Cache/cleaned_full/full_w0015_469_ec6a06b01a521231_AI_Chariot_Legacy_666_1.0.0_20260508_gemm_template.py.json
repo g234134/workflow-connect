@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gemm_template.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gemm_template.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 64042,
+  "content_sha256": "ec6a06b01a521231a004d28af6dbb9396756cc61759fa2a334c933f4c4654c19",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1564,
+    "non_empty_lines": 1394,
+    "char_count": 64042,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import copy",
+      "import enum",
+      "import logging",
+      "import re",
+      "from abc import ABC, abstractmethod",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "from ... import ir",
+      "from ...config import cuda as inductor_cuda_config",
+      "from ...ir import ("
+    ],
+    "imports": [
+      "import copy",
+      "import enum",
+      "import logging",
+      "import re",
+      "from abc import ABC, abstractmethod",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "from ... import ir",
+      "from ...config import cuda as inductor_cuda_config",
+      "from ...ir import (",
+      "from ..common import IndentedBuffer",
+      "from . import cutlass_utils",
+      "from .cuda_kernel import CUDATemplateKernel",
+      "from .cuda_template import CUTLASSTemplate"
+    ],
+    "classes": [
+      "CUTLASSGemmTemplate",
+      "CUTLASS3xGemmTemplate",
+      "CUTLASS2xGemmTemplate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_469_ec6a06b01a521231_AI_Chariot_Legacy_666_1.0.0_20260508_gemm_template.py.json"
+}

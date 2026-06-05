@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_open_datafile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_open_datafile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2985,
+  "content_sha256": "ad7787a710bf8e10a61777873b75d38e3c241af23c0053651b5fdef41bd73778",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 82,
+    "non_empty_lines": 58,
+    "char_count": 2985,
+    "preview_lines": [
+      "import os",
+      "import zipfile",
+      "from tempfile import TemporaryDirectory",
+      "from nltk.data import ZipFilePathPointer, open_datafile",
+      "def _create_test_zip(root_dir, rel_dir, file_name, contents: bytes):",
+      "    \"\"\"",
+      "    Create a zip file under root_dir with a single file at rel_dir/file_name",
+      "    containing 'contents'. Return the full path to the zip file and the",
+      "    relative path inside the zip.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import os",
+      "import zipfile",
+      "from tempfile import TemporaryDirectory",
+      "from nltk.data import ZipFilePathPointer, open_datafile"
+    ],
+    "classes": [],
+    "functions": [
+      "_create_test_zip",
+      "test_open_datafile_directory_and_filename_from_zip",
+      "test_open_datafile_file_pointer_from_zip",
+      "test_open_datafile_binary_mode_from_zip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_148_ad7787a710bf8e10_AI_Chariot_Legacy_666_1.0.0_20260508_test_open_datafile.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 269,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_concrete.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_concrete.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 50807,
+  "content_sha256": "338074b6a4fb31a1c2f30c74d6f1abf6071ea74888ddff854961ceab0f3901f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1486,
+    "non_empty_lines": 1351,
+    "char_count": 50807,
+    "preview_lines": [
+      "import pytest",
+      "from tests_python.debugger_unittest import IS_PY36_OR_GREATER, IS_CPYTHON",
+      "from tests_python.debug_constants import TEST_CYTHON",
+      "pytestmark = pytest.mark.skipif(not IS_PY36_OR_GREATER or not IS_CPYTHON or not TEST_CYTHON, reason=\"Requires CPython >= 3.6\")",
+      "#!/usr/bin/env python3",
+      "import opcode",
+      "import sys",
+      "import textwrap",
+      "import types",
+      "import unittest"
+    ],
+    "imports": [
+      "import pytest",
+      "from tests_python.debugger_unittest import IS_PY36_OR_GREATER, IS_CPYTHON",
+      "from tests_python.debug_constants import TEST_CYTHON",
+      "import opcode",
+      "import sys",
+      "import textwrap",
+      "import types",
+      "import unittest",
+      "from _pydevd_frame_eval.vendored.bytecode import (",
+      "from _pydevd_frame_eval.vendored.bytecode.concrete import OFFSET_AS_INSTRUCTION",
+      "from _pydevd_frame_eval.vendored.bytecode.tests import get_code, TestCase"
+    ],
+    "classes": [
+      "ConcreteInstrTests",
+      "ConcreteBytecodeTests",
+      "ConcreteFromCodeTests",
+      "BytecodeToConcreteTests"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_269_338074b6a4fb31a1_AI_Chariot_Legacy_666_1.0.0_20260508_test_concrete.py.json"
+}

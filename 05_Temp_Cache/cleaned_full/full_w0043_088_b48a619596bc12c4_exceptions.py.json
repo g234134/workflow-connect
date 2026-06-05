@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\starlette\\exceptions.py",
+  "name": "exceptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1066,
+  "content_sha256": "b48a619596bc12c41f2b0dfec70e49dd93751a3691e147317c92baf40776846f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 24,
+    "char_count": 1066,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import http",
+      "from collections.abc import Mapping",
+      "class HTTPException(Exception):",
+      "    def __init__(self, status_code: int, detail: str | None = None, headers: Mapping[str, str] | None = None) -> None:",
+      "        if detail is None:",
+      "            detail = http.HTTPStatus(status_code).phrase",
+      "        self.status_code = status_code",
+      "        self.detail = detail",
+      "        self.headers = headers"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import http",
+      "from collections.abc import Mapping"
+    ],
+    "classes": [
+      "HTTPException",
+      "WebSocketException"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_088_b48a619596bc12c4_exceptions.py.json"
+}

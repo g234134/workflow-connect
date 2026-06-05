@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 391,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-postgres\\langgraph\\checkpoint\\postgres\\_internal.py",
+  "name": "_internal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 670,
+  "content_sha256": "2b22f740b3fedbfb00edc434b7f1866431d28ab8c480c445a40d47d5977940f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 16,
+    "char_count": 667,
+    "preview_lines": [
+      "\"\"\"Shared utility functions for the Postgres checkpoint & storage classes.\"\"\"",
+      "from collections.abc import Iterator",
+      "from contextlib import contextmanager",
+      "from psycopg import Connection",
+      "from psycopg.rows import DictRow",
+      "from psycopg_pool import ConnectionPool",
+      "Conn = Connection[DictRow] | ConnectionPool[Connection[DictRow]]",
+      "@contextmanager",
+      "def get_connection(conn: Conn) -> Iterator[Connection[DictRow]]:",
+      "    if isinstance(conn, Connection):"
+    ],
+    "imports": [
+      "from collections.abc import Iterator",
+      "from contextlib import contextmanager",
+      "from psycopg import Connection",
+      "from psycopg.rows import DictRow",
+      "from psycopg_pool import ConnectionPool"
+    ],
+    "classes": [],
+    "functions": [
+      "get_connection"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_391_2b22f740b3fedbfb__internal.py.json"
+}

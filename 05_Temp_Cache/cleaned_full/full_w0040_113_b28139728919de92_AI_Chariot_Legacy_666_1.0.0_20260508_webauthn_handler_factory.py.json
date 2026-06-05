@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler_factory.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler_factory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 429,
+  "content_sha256": "b28139728919de92cd6c1a351c2e85d4df8df88fa2afe0c6943d2dac63c2a41b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 11,
+    "char_count": 429,
+    "preview_lines": [
+      "from typing import List, Optional",
+      "from google.oauth2.webauthn_handler import PluginHandler, WebAuthnHandler",
+      "class WebauthnHandlerFactory:",
+      "    handlers: List[WebAuthnHandler]",
+      "    def __init__(self):",
+      "        self.handlers = [PluginHandler()]",
+      "    def get_handler(self) -> Optional[WebAuthnHandler]:",
+      "        for handler in self.handlers:",
+      "            if handler.is_available():",
+      "                return handler"
+    ],
+    "imports": [
+      "from typing import List, Optional",
+      "from google.oauth2.webauthn_handler import PluginHandler, WebAuthnHandler"
+    ],
+    "classes": [
+      "WebauthnHandlerFactory"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_113_b28139728919de92_AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler_factory.py.json"
+}

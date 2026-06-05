@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 342,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\packaged\\autograd\\deprecated.yaml",
+  "name": "deprecated.yaml",
+  "extension": ".yaml",
+  "original_type": "yaml",
+  "size_bytes": 6384,
+  "content_sha256": "9eac328a70a0ef2696a824989edd8addee1c37d5213a7e041e7ca31ea3db1400",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 134,
+    "non_empty_lines": 90,
+    "char_count": 6384,
+    "preview_lines": [
+      "# Deprecated function signatures. These are exposed in Python, but not included",
+      "# in the error message suggestions.",
+      "- name: add(Tensor self, Scalar alpha, Tensor other) -> Tensor",
+      "  aten: add(self, other, alpha)",
+      "- name: add_(Tensor(a!) self, Scalar alpha, Tensor other) -> Tensor(a!)",
+      "  aten: add_(self, other, alpha)",
+      "- name: add(Tensor self, Scalar alpha, Tensor other, *, Tensor(a!) out) -> Tensor(a!)",
+      "  aten: add_out(out, self, other, alpha)",
+      "- name: addbmm(Scalar beta, Tensor self, Scalar alpha, Tensor batch1, Tensor batch2) -> Tensor",
+      "  aten: addbmm(self, batch1, batch2, beta, alpha)"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_342_9eac328a70a0ef26_deprecated.yaml.json"
+}

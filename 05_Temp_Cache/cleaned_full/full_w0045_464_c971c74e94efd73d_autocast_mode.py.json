@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\cuda\\amp\\autocast_mode.py",
+  "name": "autocast_mode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5311,
+  "content_sha256": "c971c74e94efd73d71d370a128db077c67f0d2bddc772502f28c7792656ed312",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 119,
+    "char_count": 5311,
+    "preview_lines": [
+      "import collections",
+      "import functools",
+      "import torch",
+      "try:",
+      "    import numpy as np",
+      "    HAS_NUMPY = True",
+      "except ModuleNotFoundError:",
+      "    np = None  # type: ignore[assignment]",
+      "from typing import Any",
+      "__all__ = [\"autocast\", \"custom_fwd\", \"custom_bwd\"]"
+    ],
+    "imports": [
+      "import collections",
+      "import functools",
+      "import torch",
+      "import numpy as np",
+      "from typing import Any"
+    ],
+    "classes": [
+      "autocast"
+    ],
+    "functions": [
+      "_cast",
+      "custom_fwd",
+      "custom_bwd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_464_c971c74e94efd73d_autocast_mode.py.json"
+}

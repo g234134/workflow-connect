@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 433,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\proxy\\proxy_server.py",
+  "name": "proxy_server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1183,
+  "content_sha256": "7f339e4f28b27af2d68b6efaefed96d42a3bade47ed309e850884e8159491507",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 26,
+    "char_count": 1183,
+    "preview_lines": [
+      "import os",
+      "from typing import Optional",
+      "from litellm_enterprise.types.proxy.proxy_server import CustomAuthSettings",
+      "custom_auth_settings: Optional[CustomAuthSettings] = None",
+      "class EnterpriseProxyConfig:",
+      "    async def load_custom_auth_settings(",
+      "        self, general_settings: dict",
+      "    ) -> CustomAuthSettings:",
+      "        custom_auth_settings = general_settings.get(\"custom_auth_settings\", None)",
+      "        if custom_auth_settings is not None:"
+    ],
+    "imports": [
+      "import os",
+      "from typing import Optional",
+      "from litellm_enterprise.types.proxy.proxy_server import CustomAuthSettings",
+      "from litellm.proxy.proxy_server import premium_user"
+    ],
+    "classes": [
+      "EnterpriseProxyConfig"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_433_7f339e4f28b27af2_proxy_server.py.json"
+}

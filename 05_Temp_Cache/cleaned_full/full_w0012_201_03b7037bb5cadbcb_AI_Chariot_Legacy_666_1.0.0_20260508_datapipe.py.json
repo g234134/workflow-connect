@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 201,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_datapipe.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_datapipe.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17196,
+  "content_sha256": "03b7037bb5cadbcb6a11e4d790d5e11d192e1ec82404c35c593daacf9280f6f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 415,
+    "non_empty_lines": 343,
+    "char_count": 17196,
+    "preview_lines": [
+      "import functools",
+      "import pickle",
+      "from typing import Callable, Dict, Iterable, Iterator, List, Optional, TypeVar",
+      "from torch.utils._import_utils import import_dill",
+      "from torch.utils.data.datapipes._hook_iterator import _SnapshotState",
+      "from torch.utils.data.datapipes._typing import _DataPipeMeta, _IterDataPipeMeta",
+      "from torch.utils.data.datapipes.utils.common import (",
+      "    _deprecation_warning,",
+      "    _iter_deprecated_functional_names,",
+      "    _map_deprecated_functional_names,"
+    ],
+    "imports": [
+      "import functools",
+      "import pickle",
+      "from typing import Callable, Dict, Iterable, Iterator, List, Optional, TypeVar",
+      "from torch.utils._import_utils import import_dill",
+      "from torch.utils.data.datapipes._hook_iterator import _SnapshotState",
+      "from torch.utils.data.datapipes._typing import _DataPipeMeta, _IterDataPipeMeta",
+      "from torch.utils.data.datapipes.utils.common import (",
+      "from torch.utils.data.dataset import Dataset, IterableDataset"
+    ],
+    "classes": [
+      "DataChunk",
+      "IterDataPipe",
+      "DFIterDataPipe",
+      "MapDataPipe",
+      "_DataPipeSerializationWrapper",
+      "_IterDataPipeSerializationWrapper",
+      "_MapDataPipeSerializationWrapper"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_201_03b7037bb5cadbcb_AI_Chariot_Legacy_666_1.0.0_20260508_datapipe.py.json"
+}

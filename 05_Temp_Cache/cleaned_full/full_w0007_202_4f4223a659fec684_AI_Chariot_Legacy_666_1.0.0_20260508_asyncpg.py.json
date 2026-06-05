@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_asyncpg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_asyncpg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6578,
+  "content_sha256": "4f4223a659fec68402b98d004b5e5d6192b6ff55c274a613d49f447dd490511a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 210,
+    "non_empty_lines": 165,
+    "char_count": 6578,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "from typing import Any, TypeVar, Callable, Awaitable, Iterator",
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP, SPANDATA",
+      "from sentry_sdk.integrations import _check_minimum_version, Integration, DidNotEnable",
+      "from sentry_sdk.tracing import Span",
+      "from sentry_sdk.tracing_utils import add_query_source, record_sql_queries",
+      "from sentry_sdk.utils import (",
+      "    ensure_integration_enabled,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "from typing import Any, TypeVar, Callable, Awaitable, Iterator",
+      "import sentry_sdk",
+      "from sentry_sdk.consts import OP, SPANDATA",
+      "from sentry_sdk.integrations import _check_minimum_version, Integration, DidNotEnable",
+      "from sentry_sdk.tracing import Span",
+      "from sentry_sdk.tracing_utils import add_query_source, record_sql_queries",
+      "from sentry_sdk.utils import (",
+      "import asyncpg  # type: ignore[import-not-found]",
+      "from asyncpg.cursor import BaseCursor  # type: ignore"
+    ],
+    "classes": [
+      "AsyncPGIntegration"
+    ],
+    "functions": [
+      "_wrap_execute",
+      "_record",
+      "_wrap_connection_method",
+      "_wrap_cursor_creation",
+      "_wrap_connect_addr",
+      "_set_db_data"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_202_4f4223a659fec684_AI_Chariot_Legacy_666_1.0.0_20260508_asyncpg.py.json"
+}

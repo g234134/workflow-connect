@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lalr_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lalr_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12287,
+  "content_sha256": "064663426337af81ed13c42651d11ea1299b2c96812c850373dc35beaae308ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 334,
+    "non_empty_lines": 282,
+    "char_count": 12287,
+    "preview_lines": [
+      "\"\"\"This module builds a LALR(1) transition-table for lalr_parser.py",
+      "For now, shift/reduce conflicts are automatically resolved as shifts.",
+      "\"\"\"",
+      "# Author: Erez Shinan (2017)",
+      "# Email : erezshin@gmail.com",
+      "from typing import Dict, Set, Iterator, Tuple, List, TypeVar, Generic",
+      "from collections import defaultdict",
+      "from ..utils import classify, classify_bool, bfs, fzset, Enumerator, logger",
+      "from ..exceptions import GrammarError",
+      "from .grammar_analysis import GrammarAnalyzer, Terminal, LR0ItemSet, RulePtr, State"
+    ],
+    "imports": [
+      "from typing import Dict, Set, Iterator, Tuple, List, TypeVar, Generic",
+      "from collections import defaultdict",
+      "from ..utils import classify, classify_bool, bfs, fzset, Enumerator, logger",
+      "from ..exceptions import GrammarError",
+      "from .grammar_analysis import GrammarAnalyzer, Terminal, LR0ItemSet, RulePtr, State",
+      "from ..grammar import Rule, Symbol",
+      "from ..common import ParserConf"
+    ],
+    "classes": [
+      "Action",
+      "ParseTableBase",
+      "ParseTable",
+      "IntParseTable",
+      "LALR_Analyzer"
+    ],
+    "functions": [
+      "digraph",
+      "traverse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_490_064663426337af81_AI_Chariot_Legacy_666_1.0.0_20260508_lalr_analysis.py.json"
+}

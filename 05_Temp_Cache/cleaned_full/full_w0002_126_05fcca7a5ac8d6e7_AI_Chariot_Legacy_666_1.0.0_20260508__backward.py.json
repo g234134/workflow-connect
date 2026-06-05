@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__backward.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__backward.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14076,
+  "content_sha256": "05fcca7a5ac8d6e7e69117988478a80b572de7b92ad4497db6e0c67b10331886",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 370,
+    "non_empty_lines": 323,
+    "char_count": 14076,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import collections",
+      "import logging",
+      "import weakref",
+      "from typing import Any, cast, Deque, Dict, Iterator, List, Optional, Set, Tuple, Union",
+      "import torch",
+      "from torch.autograd.graph import GradientEdge, Node",
+      "from torch.nn import Parameter",
+      "from ._debug import map_debug_info"
+    ],
+    "imports": [
+      "import collections",
+      "import logging",
+      "import weakref",
+      "from typing import Any, cast, Deque, Dict, Iterator, List, Optional, Set, Tuple, Union",
+      "import torch",
+      "from torch.autograd.graph import GradientEdge, Node",
+      "from torch.nn import Parameter",
+      "from ._debug import map_debug_info"
+    ],
+    "classes": [
+      "Holder"
+    ],
+    "functions": [
+      "_get_grad_fn_or_grad_acc",
+      "reverse_closure",
+      "construct_reverse_graph",
+      "get_param_groups",
+      "stage_backward_input",
+      "stage_backward_weight",
+      "stage_backward",
+      "_null_coalesce_accumulate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_126_05fcca7a5ac8d6e7_AI_Chariot_Legacy_666_1.0.0_20260508__backward.py.json"
+}

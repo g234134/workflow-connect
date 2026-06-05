@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_validation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_validation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5222,
+  "content_sha256": "1fb4c19f89d80b31e4450249b30c1a0f82f6e9b82b76ccc701b1f9cd11485f06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 137,
+    "char_count": 5222,
+    "preview_lines": [
+      "import pytest",
+      "import srsly",
+      "from confection import ConfigValidationError",
+      "from weasel.schemas import ProjectConfigSchema, validate",
+      "from weasel.util import is_subpath_of, load_project_config, make_tempdir",
+      "from weasel.util import substitute_project_variables, validate_project_commands",
+      "@pytest.mark.parametrize(",
+      "    \"parent,child,expected\",",
+      "    [",
+      "        (\"/tmp\", \"/tmp\", True),"
+    ],
+    "imports": [
+      "import pytest",
+      "import srsly",
+      "from confection import ConfigValidationError",
+      "from weasel.schemas import ProjectConfigSchema, validate",
+      "from weasel.util import is_subpath_of, load_project_config, make_tempdir",
+      "from weasel.util import substitute_project_variables, validate_project_commands"
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_subpath_of",
+      "test_project_config_validation_full",
+      "test_project_config_validation1",
+      "test_project_config_validation2",
+      "test_project_config_interpolation",
+      "test_project_config_interpolation_override",
+      "test_project_config_interpolation_env"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_103_1fb4c19f89d80b31_AI_Chariot_Legacy_666_1.0.0_20260508_test_validation.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_glossary.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_glossary.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13546,
+  "content_sha256": "32763a01b36432ca1f904bc27df1f6183de1ba462e5ede2b53a741a0794c49d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 360,
+    "non_empty_lines": 353,
+    "char_count": 13518,
+    "preview_lines": [
+      "import warnings",
+      "from .errors import Warnings",
+      "def explain(term):",
+      "    \"\"\"Get a description for a given POS tag, dependency label or entity type.",
+      "    term (str): The term to explain.",
+      "    RETURNS (str): The explanation, or `None` if not found in the glossary.",
+      "    EXAMPLE:",
+      "        >>> spacy.explain(u'NORP')",
+      "        >>> doc = nlp(u'Hello world')",
+      "        >>> print([w.text, w.tag_, spacy.explain(w.tag_) for w in doc])"
+    ],
+    "imports": [
+      "import warnings",
+      "from .errors import Warnings"
+    ],
+    "classes": [],
+    "functions": [
+      "explain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_126_32763a01b36432ca_AI_Chariot_Legacy_666_1.0.0_20260508_glossary.py.json"
+}

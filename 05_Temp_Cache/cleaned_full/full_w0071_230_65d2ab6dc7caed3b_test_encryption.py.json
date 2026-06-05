@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 230,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_encryption.py",
+  "name": "test_encryption.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2139,
+  "content_sha256": "65d2ab6dc7caed3b005c56493f1924bb390f9b9e010d6a716f6e492a0ebb2d31",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 50,
+    "char_count": 2136,
+    "preview_lines": [
+      "import pytest",
+      "from langgraph_sdk.encryption import DuplicateHandlerError, Encryption",
+      "class TestHandlerValidation:",
+      "    \"\"\"Test duplicate handler and signature validation.\"\"\"",
+      "    def test_duplicate_handlers_raise_error(self):",
+      "        \"\"\"Registering the same handler type twice raises DuplicateHandlerError.\"\"\"",
+      "        encryption = Encryption()",
+      "        @encryption.encrypt.blob",
+      "        async def blob_enc(_ctx, data):",
+      "            return data"
+    ],
+    "imports": [
+      "import pytest",
+      "from langgraph_sdk.encryption import DuplicateHandlerError, Encryption"
+    ],
+    "classes": [
+      "TestHandlerValidation"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_230_65d2ab6dc7caed3b_test_encryption.py.json"
+}

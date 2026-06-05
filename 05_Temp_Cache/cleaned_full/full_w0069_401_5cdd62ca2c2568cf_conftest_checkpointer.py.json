@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 401,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\conftest_checkpointer.py",
+  "name": "conftest_checkpointer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2017,
+  "content_sha256": "5cdd62ca2c2568cfc1e22f558b30f7fbfb2a8b2db09c3d6420ac08839bb62ea8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 43,
+    "char_count": 2014,
+    "preview_lines": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from tests.unit_tests.agents.memory_assert import MemorySaverAssertImmutable",
+      "@contextmanager",
+      "def _checkpointer_memory() -> Iterator[BaseCheckpointSaver[str]]:",
+      "    yield MemorySaverAssertImmutable()",
+      "@asynccontextmanager",
+      "async def _checkpointer_memory_aio() -> AsyncIterator[BaseCheckpointSaver[str]]:",
+      "    yield MemorySaverAssertImmutable()"
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from tests.unit_tests.agents.memory_assert import MemorySaverAssertImmutable"
+    ],
+    "classes": [],
+    "functions": [
+      "_checkpointer_memory",
+      "_checkpointer_sqlite",
+      "_checkpointer_postgres",
+      "_checkpointer_postgres_pipe",
+      "_checkpointer_postgres_pool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_401_5cdd62ca2c2568cf_conftest_checkpointer.py.json"
+}

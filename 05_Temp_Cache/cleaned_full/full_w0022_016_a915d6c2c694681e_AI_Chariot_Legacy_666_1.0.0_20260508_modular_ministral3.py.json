@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_ministral3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_ministral3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3821,
+  "content_sha256": "a915d6c2c694681e3ecf5a95ef4841e669e748158d537a0d1862dec4c0d340f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 91,
+    "char_count": 3821,
+    "preview_lines": [
+      "from collections.abc import Callable",
+      "import torch",
+      "from ...cache_utils import Cache",
+      "from ...modeling_flash_attention_utils import FlashAttentionKwargs",
+      "from ...modeling_layers import (",
+      "    GenericForQuestionAnswering,",
+      "    GenericForSequenceClassification,",
+      "    GenericForTokenClassification,",
+      ")",
+      "from ...modeling_utils import ALL_ATTENTION_FUNCTIONS"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import torch",
+      "from ...cache_utils import Cache",
+      "from ...modeling_flash_attention_utils import FlashAttentionKwargs",
+      "from ...modeling_layers import (",
+      "from ...modeling_utils import ALL_ATTENTION_FUNCTIONS",
+      "from ...processing_utils import Unpack",
+      "from ...utils import auto_docstring, logging",
+      "from ..mistral.modeling_mistral import ("
+    ],
+    "classes": [
+      "Ministral3Attention",
+      "Ministral3DecoderLayer",
+      "Ministral3PreTrainedModel",
+      "Ministral3Model",
+      "Ministral3ForCausalLM",
+      "Ministral3ForTokenClassification",
+      "Ministral3ForSequenceClassification",
+      "Ministral3ForQuestionAnswering"
+    ],
+    "functions": [
+      "get_llama_4_attn_scale"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_016_a915d6c2c694681e_AI_Chariot_Legacy_666_1.0.0_20260508_modular_ministral3.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mps_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mps_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 635,
+  "content_sha256": "04a1a6b5d21119a5afd4c791c4d08d86b6d1d481e370bad406b867deb67ba55b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 21,
+    "char_count": 635,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING",
+      "import numpy",
+      "from .. import registry",
+      "from .numpy_ops import NumpyOps",
+      "from .ops import Ops",
+      "if TYPE_CHECKING:",
+      "    # Type checking does not work with dynamic base classes, since MyPy cannot",
+      "    # determine against which base class to check. So, always derive from Ops",
+      "    # during type checking.",
+      "    _Ops = Ops"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "import numpy",
+      "from .. import registry",
+      "from .numpy_ops import NumpyOps",
+      "from .ops import Ops",
+      "from thinc_apple_ops import AppleOps"
+    ],
+    "classes": [
+      "MPSOps"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_185_04a1a6b5d21119a5_AI_Chariot_Legacy_666_1.0.0_20260508_mps_ops.py.json"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 297,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\CopyKernel.h",
+  "name": "CopyKernel.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 283,
+  "content_sha256": "afcfd0f84615aea4fb5fff7cad71a8f110e78d83e2d7f3ee951d3f0f90bb04bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 8,
+    "char_count": 283,
+    "preview_lines": [
+      "#pragma once",
+      "namespace at {",
+      "struct TensorIteratorBase;",
+      "namespace native {",
+      "inline namespace CPU_CAPABILITY {",
+      "void direct_copy_kernel(TensorIteratorBase &iter);",
+      "void copy_kernel(TensorIterator& iter, bool /*non_blocking*/);",
+      "}}}  // namespace at::native::CPU_CAPABILITY"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_297_afcfd0f84615aea4_CopyKernel.h.json"
+}

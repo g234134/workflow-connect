@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:45:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_ovis2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_ovis2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14080,
+  "content_sha256": "5a90a9717691959e61b3857d0729f7a8059dd2d9e76641dc0799818d6ade7200",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 327,
+    "non_empty_lines": 289,
+    "char_count": 14080,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from functools import lru_cache",
+      "import torch",
+      "from torchvision.transforms.v2 import functional as tvF",
+      "from ...image_processing_backends import TorchvisionBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import group_images_by_shape, reorder_images",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring"
+    ],
+    "classes": [
+      "Ovis2ImageProcessorKwargs",
+      "Ovis2ImageProcessor"
+    ],
+    "functions": [
+      "get_all_supported_aspect_ratios",
+      "get_optimal_tiled_canvas",
+      "compute_patch_covering_area",
+      "split_image_into_grid",
+      "get_min_tile_covering_grid"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_218_5a90a9717691959e_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_ovis2.py.json"
+}

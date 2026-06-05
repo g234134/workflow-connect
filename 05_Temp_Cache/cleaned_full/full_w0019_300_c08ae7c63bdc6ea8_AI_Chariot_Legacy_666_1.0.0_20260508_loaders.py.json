@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 300,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_loaders.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_loaders.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24055,
+  "content_sha256": "c08ae7c63bdc6ea8795705b6f0d4a47e8b620eaf2a342c4839215b1948922c1e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 693,
+    "non_empty_lines": 558,
+    "char_count": 24055,
+    "preview_lines": [
+      "\"\"\"API and implementations for loading templates from different data",
+      "sources.",
+      "\"\"\"",
+      "import importlib.util",
+      "import os",
+      "import posixpath",
+      "import sys",
+      "import typing as t",
+      "import weakref",
+      "import zipimport"
+    ],
+    "imports": [
+      "import importlib.util",
+      "import os",
+      "import posixpath",
+      "import sys",
+      "import typing as t",
+      "import weakref",
+      "import zipimport",
+      "from collections import abc",
+      "from hashlib import sha1",
+      "from importlib import import_module",
+      "from types import ModuleType",
+      "from .exceptions import TemplateNotFound",
+      "from .utils import internalcode",
+      "from .environment import Environment",
+      "from .environment import Template",
+      "from jinja2 import BaseLoader, TemplateNotFound",
+      "from os.path import join, exists, getmtime"
+    ],
+    "classes": [
+      "BaseLoader",
+      "FileSystemLoader",
+      "PackageLoader",
+      "DictLoader",
+      "FunctionLoader",
+      "PrefixLoader",
+      "ChoiceLoader",
+      "_TemplateModule",
+      "ModuleLoader"
+    ],
+    "functions": [
+      "split_template_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_300_c08ae7c63bdc6ea8_AI_Chariot_Legacy_666_1.0.0_20260508_loaders.py.json"
+}

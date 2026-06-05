@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 356,
+  "generated_at": "2026-05-08T18:44:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_StringMatcher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_StringMatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2359,
+  "content_sha256": "f7f10f7f5e03ddab65758c06d225622514800cc0683546e0c19354b2fc0baab7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 58,
+    "char_count": 2359,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "from Levenshtein import distance, editops, matching_blocks, opcodes, ratio",
+      "class StringMatcher:",
+      "    \"\"\"A SequenceMatcher-like class built on the top of Levenshtein\"\"\"",
+      "    def _reset_cache(self):",
+      "        self._ratio = self._distance = None",
+      "        self._opcodes = self._editops = self._matching_blocks = None",
+      "    def __init__(self, isjunk=None, seq1=\"\", seq2=\"\", autojunk=False):",
+      "        if isjunk:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "from Levenshtein import distance, editops, matching_blocks, opcodes, ratio"
+    ],
+    "classes": [
+      "StringMatcher"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_356_f7f10f7f5e03ddab_AI_Chariot_Legacy_666_1.0.0_20260508_StringMatcher.py.json"
+}

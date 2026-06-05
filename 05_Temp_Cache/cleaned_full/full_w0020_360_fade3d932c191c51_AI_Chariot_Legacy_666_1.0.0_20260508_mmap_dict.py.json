@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mmap_dict.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mmap_dict.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5393,
+  "content_sha256": "fade3d932c191c51e4d83f485adba7a8a16daf978482237e463156835e8913e4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 117,
+    "char_count": 5393,
+    "preview_lines": [
+      "import json",
+      "import mmap",
+      "import os",
+      "import struct",
+      "from typing import List",
+      "_INITIAL_MMAP_SIZE = 1 << 16",
+      "_pack_integer_func = struct.Struct(b'i').pack",
+      "_pack_two_doubles_func = struct.Struct(b'dd').pack",
+      "_unpack_integer = struct.Struct(b'i').unpack_from",
+      "_unpack_two_doubles = struct.Struct(b'dd').unpack_from"
+    ],
+    "imports": [
+      "import json",
+      "import mmap",
+      "import os",
+      "import struct",
+      "from typing import List"
+    ],
+    "classes": [
+      "MmapedDict"
+    ],
+    "functions": [
+      "_pack_two_doubles",
+      "_pack_integer",
+      "_read_all_values",
+      "mmap_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_360_fade3d932c191c51_AI_Chariot_Legacy_666_1.0.0_20260508_mmap_dict.py.json"
+}

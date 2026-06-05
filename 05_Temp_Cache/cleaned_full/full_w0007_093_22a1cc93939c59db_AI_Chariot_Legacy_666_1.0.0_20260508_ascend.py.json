@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ascend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ascend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4909,
+  "content_sha256": "22a1cc93939c59dba6cf0540725e0787f9cb8ec285cea1803c4e0139e8ebb450",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 137,
+    "non_empty_lines": 122,
+    "char_count": 4909,
+    "preview_lines": [
+      "import os",
+      "from typing import Any, Dict, List, Optional",
+      "from langchain_core.embeddings import Embeddings",
+      "from pydantic import BaseModel, ConfigDict, model_validator",
+      "class AscendEmbeddings(Embeddings, BaseModel):",
+      "    \"\"\"",
+      "    Ascend NPU accelerate Embedding model",
+      "    Please ensure that you have installed CANN and torch_npu.",
+      "    Example:",
+      "    from langchain_community.embeddings import AscendEmbeddings"
+    ],
+    "imports": [
+      "import os",
+      "from typing import Any, Dict, List, Optional",
+      "from langchain_core.embeddings import Embeddings",
+      "from pydantic import BaseModel, ConfigDict, model_validator",
+      "from langchain_community.embeddings import AscendEmbeddings",
+      "from transformers import AutoModel, AutoTokenizer",
+      "import torch_npu",
+      "import torch",
+      "import torch",
+      "import numpy as np"
+    ],
+    "classes": [
+      "AscendEmbeddings"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_093_22a1cc93939c59db_AI_Chariot_Legacy_666_1.0.0_20260508_ascend.py.json"
+}

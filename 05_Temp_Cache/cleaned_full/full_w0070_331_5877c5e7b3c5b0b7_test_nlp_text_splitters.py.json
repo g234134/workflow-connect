@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\text-splitters\\tests\\integration_tests\\test_nlp_text_splitters.py",
+  "name": "test_nlp_text_splitters.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4138,
+  "content_sha256": "5877c5e7b3c5b0b79fe9f2a3ab34c61f0a69ac1671ef2cb42833c1a6b222c73e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 101,
+    "char_count": 4135,
+    "preview_lines": [
+      "\"\"\"Test text splitting functionality using NLTK and Spacy based sentence splitters.\"\"\"",
+      "import re",
+      "import nltk",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from langchain_text_splitters.nltk import NLTKTextSplitter",
+      "from langchain_text_splitters.spacy import SpacyTextSplitter",
+      "def setup_module() -> None:",
+      "    nltk.download(\"punkt_tab\")",
+      "@pytest.fixture"
+    ],
+    "imports": [
+      "import re",
+      "import nltk",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from langchain_text_splitters.nltk import NLTKTextSplitter",
+      "from langchain_text_splitters.spacy import SpacyTextSplitter"
+    ],
+    "classes": [],
+    "functions": [
+      "setup_module",
+      "spacy",
+      "test_nltk_text_splitting_args",
+      "test_spacy_text_splitting_args",
+      "test_nltk_text_splitter",
+      "test_spacy_text_splitter",
+      "test_spacy_text_splitter_strip_whitespace",
+      "test_nltk_text_splitter_args",
+      "test_nltk_text_splitter_with_add_start_index"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_331_5877c5e7b3c5b0b7_test_nlp_text_splitters.py.json"
+}

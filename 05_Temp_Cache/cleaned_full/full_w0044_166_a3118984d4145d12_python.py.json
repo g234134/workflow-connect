@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\python.py",
+  "name": "python.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3347,
+  "content_sha256": "a3118984d4145d12a31d2120aaba0603207e038660250a80fe8ec2f2e5c0d54f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 75,
+    "char_count": 3347,
+    "preview_lines": [
+      "import keyword as kw",
+      "import sympy",
+      "from .repr import ReprPrinter",
+      "from .str import StrPrinter",
+      "# A list of classes that should be printed using StrPrinter",
+      "STRPRINT = (\"Add\", \"Infinity\", \"Integer\", \"Mul\", \"NegativeInfinity\", \"Pow\")",
+      "class PythonPrinter(ReprPrinter, StrPrinter):",
+      "    \"\"\"A printer which converts an expression into its Python interpretation.\"\"\"",
+      "    def __init__(self, settings=None):",
+      "        super().__init__(settings)"
+    ],
+    "imports": [
+      "import keyword as kw",
+      "import sympy",
+      "from .repr import ReprPrinter",
+      "from .str import StrPrinter"
+    ],
+    "classes": [
+      "PythonPrinter"
+    ],
+    "functions": [
+      "python",
+      "print_python"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_166_a3118984d4145d12_python.py.json"
+}

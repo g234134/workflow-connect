@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 217,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_recipient_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_recipient_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 396,
+  "content_sha256": "01b8c80757f47966a1b9727b3b8fefbb5d10d49a6f4fa406245a8c8f2bb41ee7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 11,
+    "non_empty_lines": 9,
+    "char_count": 396,
+    "preview_lines": [
+      "def format_to_recipient(text, recipient):",
+      "    return f\"@@@RECIPIENT:{recipient}@@@CONTENT:{text}@@@END\"",
+      "def parse_for_recipient(content):",
+      "    if content.startswith(\"@@@RECIPIENT:\") and \"@@@END\" in content:",
+      "        parts = content.split(\"@@@\")",
+      "        recipient = parts[1].split(\":\")[1]",
+      "        new_content = parts[2].split(\":\")[1]",
+      "        return recipient, new_content",
+      "    return None, content"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "format_to_recipient",
+      "parse_for_recipient"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_217_01b8c80757f47966_AI_Chariot_Legacy_666_1.0.0_20260508_recipient_utils.py.json"
+}

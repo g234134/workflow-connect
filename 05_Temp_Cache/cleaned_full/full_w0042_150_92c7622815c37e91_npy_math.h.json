@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:47:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\_core\\include\\numpy\\npy_math.h",
+  "name": "npy_math.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 19460,
+  "content_sha256": "92c7622815c37e9107075b3d9b9ca29f286375c73487ecc971f5c4ba854701df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 602,
+    "non_empty_lines": 513,
+    "char_count": 19460,
+    "preview_lines": [
+      "#ifndef NUMPY_CORE_INCLUDE_NUMPY_NPY_MATH_H_",
+      "#define NUMPY_CORE_INCLUDE_NUMPY_NPY_MATH_H_",
+      "#include <numpy/npy_common.h>",
+      "#include <math.h>",
+      "/* By adding static inline specifiers to npy_math function definitions when",
+      "   appropriate, compiler is given the opportunity to optimize */",
+      "#if NPY_INLINE_MATH",
+      "#define NPY_INPLACE static inline",
+      "#else",
+      "#define NPY_INPLACE"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_150_92c7622815c37e91_npy_math.h.json"
+}

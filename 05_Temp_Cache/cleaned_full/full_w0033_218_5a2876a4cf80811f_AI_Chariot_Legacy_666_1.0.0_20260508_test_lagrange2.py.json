@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lagrange2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lagrange2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1400,
+  "content_sha256": "5a2876a4cf80811f93397f33e2613716dc925a71a3dfd0462cdc0059a3758da4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 35,
+    "char_count": 1400,
+    "preview_lines": [
+      "from sympy import symbols",
+      "from sympy.physics.mechanics import dynamicsymbols",
+      "from sympy.physics.mechanics import ReferenceFrame, Point, Particle",
+      "from sympy.physics.mechanics import LagrangesMethod, Lagrangian",
+      "### This test asserts that a system with more than one external forces",
+      "### is acurately formed with Lagrange method (see issue #8626)",
+      "def test_lagrange_2forces():",
+      "    ### Equations for two damped springs in serie with two forces",
+      "    ### generalized coordinates",
+      "    q1, q2 = dynamicsymbols('q1, q2')"
+    ],
+    "imports": [
+      "from sympy import symbols",
+      "from sympy.physics.mechanics import dynamicsymbols",
+      "from sympy.physics.mechanics import ReferenceFrame, Point, Particle",
+      "from sympy.physics.mechanics import LagrangesMethod, Lagrangian"
+    ],
+    "classes": [],
+    "functions": [
+      "test_lagrange_2forces"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_218_5a2876a4cf80811f_AI_Chariot_Legacy_666_1.0.0_20260508_test_lagrange2.py.json"
+}

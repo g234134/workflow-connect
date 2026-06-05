@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llamaparse_instrumentor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llamaparse_instrumentor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5604,
+  "content_sha256": "82f001e6967dd6632b7c8db0bc6bbc6af7c19a2fa61441564ba3df45e6670e4e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 139,
+    "char_count": 5604,
+    "preview_lines": [
+      "from wrapt import wrap_function_wrapper",
+      "from opentelemetry.instrumentation.llamaindex.utils import (",
+      "    _with_tracer_wrapper,",
+      "    process_request,",
+      "    process_response,",
+      "    start_as_current_span_async,",
+      ")",
+      "from opentelemetry.semconv_ai import SpanAttributes, TraceloopSpanKindValues",
+      "MODULE_NAME = \"llama_parse\"",
+      "CLASS_NAME = \"LlamaParse\""
+    ],
+    "imports": [
+      "from wrapt import wrap_function_wrapper",
+      "from opentelemetry.instrumentation.llamaindex.utils import (",
+      "from opentelemetry.semconv_ai import SpanAttributes, TraceloopSpanKindValues"
+    ],
+    "classes": [
+      "LlamaParseInstrumentor"
+    ],
+    "functions": [
+      "get_json_wrapper",
+      "get_images_wrapper",
+      "get_charts_wrapper",
+      "load_data_wrapper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_254_82f001e6967dd663_AI_Chariot_Legacy_666_1.0.0_20260508_llamaparse_instrumentor.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 43,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pendulum_dt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pendulum_dt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12937,
+  "content_sha256": "40719495cd5fabf64bdf07a94ff650db895aa0a3f280de8338d59ce45937d90f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 370,
+    "non_empty_lines": 289,
+    "char_count": 12937,
+    "preview_lines": [
+      "\"\"\"Native Pendulum DateTime object implementation. This is a copy of the Pendulum DateTime object, but with a Pydantic",
+      "CoreSchema implementation. This allows Pydantic to validate the DateTime object.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "try:",
+      "    from pendulum import Date as _Date",
+      "    from pendulum import DateTime as _DateTime",
+      "    from pendulum import Duration as _Duration",
+      "    from pendulum import Time as _Time",
+      "    from pendulum import parse"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from pendulum import Date as _Date",
+      "from pendulum import DateTime as _DateTime",
+      "from pendulum import Duration as _Duration",
+      "from pendulum import Time as _Time",
+      "from pendulum import parse",
+      "from datetime import date, datetime, time, timedelta",
+      "from typing import Any",
+      "from pydantic import GetCoreSchemaHandler",
+      "from pydantic_core import PydanticCustomError, core_schema",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.pendulum_dt import DateTime",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.pendulum_dt import Time",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.pendulum_dt import Date"
+    ],
+    "classes": [
+      "DateTimeSettings",
+      "DateTime",
+      "Time",
+      "Date",
+      "Duration"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_043_40719495cd5fabf6_AI_Chariot_Legacy_666_1.0.0_20260508_pendulum_dt.py.json"
+}

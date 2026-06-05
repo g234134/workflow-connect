@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_truncate_output.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_truncate_output.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1180,
+  "content_sha256": "271295886ffbf80f54efcf832744e7ca9fdc149b2c6772953a4b5519c9f4f156",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 21,
+    "char_count": 1180,
+    "preview_lines": [
+      "def truncate_output(data, max_output_chars=2800, add_scrollbars=False):",
+      "    # if \"@@@DO_NOT_TRUNCATE@@@\" in data:",
+      "    #     return data",
+      "    needs_truncation = False",
+      "    message = f\"Output truncated. Showing the last {max_output_chars} characters. You should try again and use computer.ai.summarize(output) over the output, or break it down into smaller steps.\\n\\n\"",
+      "    # This won't work because truncated code is stored in interpreter.messages :/",
+      "    # If the full code was stored, we could do this:",
+      "    if add_scrollbars:",
+      "        message = (",
+      "            message.strip()"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "truncate_output"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_304_271295886ffbf80f_AI_Chariot_Legacy_666_1.0.0_20260508_truncate_output.py.json"
+}

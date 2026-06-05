@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tagging.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tagging.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6597,
+  "content_sha256": "e83f6df4b826a0364565aaa0a4bc8baddd7577c54c305c187bd4ea61f4f981da",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 189,
+    "non_empty_lines": 156,
+    "char_count": 6597,
+    "preview_lines": [
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers.openai_functions import (",
+      "    JsonOutputFunctionsParser,",
+      "    PydanticOutputFunctionsParser,",
+      ")",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.chains.llm import LLMChain"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers.openai_functions import (",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.openai_functions.utils import (",
+      "from typing_extensions import Annotated, TypedDict",
+      "from langchain_anthropic import ChatAnthropic",
+      "from pydantic import BaseModel, Field",
+      "from langchain_anthropic import ChatAnthropic"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_tagging_function",
+      "create_tagging_chain",
+      "create_tagging_chain_pydantic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_126_e83f6df4b826a036_AI_Chariot_Legacy_666_1.0.0_20260508_tagging.py.json"
+}

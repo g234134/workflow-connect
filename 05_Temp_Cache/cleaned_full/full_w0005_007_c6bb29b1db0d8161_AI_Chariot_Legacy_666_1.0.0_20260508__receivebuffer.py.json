@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__receivebuffer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__receivebuffer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5252,
+  "content_sha256": "c6bb29b1db0d81617145f41c4d7c51f11add8d15d74cad08a39710616a49d56b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 126,
+    "char_count": 5252,
+    "preview_lines": [
+      "import re",
+      "import sys",
+      "from typing import List, Optional, Union",
+      "__all__ = [\"ReceiveBuffer\"]",
+      "# Operations we want to support:",
+      "# - find next \\r\\n or \\r\\n\\r\\n (\\n or \\n\\n are also acceptable),",
+      "#   or wait until there is one",
+      "# - read at-most-N bytes",
+      "# Goals:",
+      "# - on average, do this fast"
+    ],
+    "imports": [
+      "import re",
+      "import sys",
+      "from typing import List, Optional, Union"
+    ],
+    "classes": [
+      "ReceiveBuffer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_007_c6bb29b1db0d8161_AI_Chariot_Legacy_666_1.0.0_20260508__receivebuffer.py.json"
+}

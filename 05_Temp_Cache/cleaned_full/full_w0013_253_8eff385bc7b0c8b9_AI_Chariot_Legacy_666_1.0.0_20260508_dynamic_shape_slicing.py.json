@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_slicing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_slicing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 403,
+  "content_sha256": "8eff385bc7b0c8b97a5bba913fd8e3d45109cd352c2afe2b7274f7754e1b3ce3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 12,
+    "char_count": 403,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "class DynamicShapeSlicing(torch.nn.Module):",
+      "    \"\"\"",
+      "    Slices with dynamic shape arguments should be captured into the graph",
+      "    rather than being baked in.",
+      "    \"\"\"",
+      "    def forward(self, x):",
+      "        return x[: x.shape[0] - 2, x.shape[1] - 1 :: 2]",
+      "example_args = (torch.randn(3, 2),)"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "DynamicShapeSlicing"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_253_8eff385bc7b0c8b9_AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_slicing.py.json"
+}

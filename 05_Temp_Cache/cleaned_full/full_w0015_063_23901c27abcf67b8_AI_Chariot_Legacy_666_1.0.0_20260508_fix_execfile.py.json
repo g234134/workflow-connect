@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_execfile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_execfile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 921,
+  "content_sha256": "23901c27abcf67b8bbd130a16aaf629f1aa76780b4e3ec89c9f008b466bc1377",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 25,
+    "char_count": 921,
+    "preview_lines": [
+      "# coding: utf-8",
+      "\"\"\"",
+      "Fixer for the execfile() function on Py2, which was removed in Py3.",
+      "The Lib/lib2to3/fixes/fix_execfile.py module has some problems: see",
+      "python-future issue #37. This fixer merely imports execfile() from",
+      "past.builtins and leaves the code alone.",
+      "Adds this import line::",
+      "    from past.builtins import execfile",
+      "for the function execfile() that was removed from Py3.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from past.builtins import execfile",
+      "from __future__ import unicode_literals",
+      "from lib2to3 import fixer_base",
+      "from libfuturize.fixer_util import touch_import_top"
+    ],
+    "classes": [
+      "FixExecfile"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_063_23901c27abcf67b8_AI_Chariot_Legacy_666_1.0.0_20260508_fix_execfile.py.json"
+}

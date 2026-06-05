@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pep723.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pep723.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1242,
+  "content_sha256": "26c1b5a7709a55c5bc7237250f69038fb77daad56b35069ebd8fd49ca874d2d9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 31,
+    "char_count": 1242,
+    "preview_lines": [
+      "import re",
+      "from typing import Any",
+      "from pip._internal.utils.compat import tomllib",
+      "REGEX = r\"(?m)^# /// (?P<type>[a-zA-Z0-9-]+)$\\s(?P<content>(^#(| .*)$\\s)+)^# ///$\"",
+      "class PEP723Exception(ValueError):",
+      "    \"\"\"Raised to indicate a problem when parsing PEP 723 metadata from a script\"\"\"",
+      "    def __init__(self, msg: str) -> None:",
+      "        self.msg = msg",
+      "def pep723_metadata(scriptfile: str) -> dict[str, Any]:",
+      "    with open(scriptfile, encoding=\"utf8\") as f:"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Any",
+      "from pip._internal.utils.compat import tomllib"
+    ],
+    "classes": [
+      "PEP723Exception"
+    ],
+    "functions": [
+      "pep723_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_046_26c1b5a7709a55c5_AI_Chariot_Legacy_666_1.0.0_20260508_pep723.py.json"
+}

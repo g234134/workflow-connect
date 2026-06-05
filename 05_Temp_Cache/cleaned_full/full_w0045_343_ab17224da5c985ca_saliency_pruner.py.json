@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\pruning\\_experimental\\pruner\\saliency_pruner.py",
+  "name": "saliency_pruner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1356,
+  "content_sha256": "ab17224da5c985ca16b80a6d751279d266bc46ca1c6226382a23bda293fd29cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 22,
+    "char_count": 1356,
+    "preview_lines": [
+      "from .base_structured_sparsifier import BaseStructuredSparsifier",
+      "class SaliencyPruner(BaseStructuredSparsifier):",
+      "    \"\"\"",
+      "    Prune rows based on the saliency (L1 norm) of each row.",
+      "    This pruner works on N-Dimensional weight tensors.",
+      "    For each row, we will calculate the saliency, whic is the sum the L1 norm of all weights in that row.",
+      "    We expect that the resulting saliency vector has the same shape as our mask.",
+      "    We then pick elements to remove until we reach the target sparsity_level.",
+      "    \"\"\"",
+      "    def update_mask(self, module, tensor_name, **kwargs):"
+    ],
+    "imports": [
+      "from .base_structured_sparsifier import BaseStructuredSparsifier"
+    ],
+    "classes": [
+      "SaliencyPruner"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_343_ab17224da5c985ca_saliency_pruner.py.json"
+}

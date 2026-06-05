@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_str_accessor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_str_accessor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 907,
+  "content_sha256": "d243f2af3e889e48188b35124d86aa1ef725c5ef9bbbad982cfef9a6d8e5ee91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 21,
+    "char_count": 907,
+    "preview_lines": [
+      "import pytest",
+      "from pandas import Series",
+      "import pandas._testing as tm",
+      "class TestStrAccessor:",
+      "    def test_str_attribute(self):",
+      "        # GH#9068",
+      "        methods = [\"strip\", \"rstrip\", \"lstrip\"]",
+      "        ser = Series([\" jack\", \"jill \", \" jesse \", \"frank\"])",
+      "        for method in methods:",
+      "            expected = Series([getattr(str, method)(x) for x in ser.values])"
+    ],
+    "imports": [
+      "import pytest",
+      "from pandas import Series",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestStrAccessor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_321_d243f2af3e889e48_AI_Chariot_Legacy_666_1.0.0_20260508_test_str_accessor.py.json"
+}

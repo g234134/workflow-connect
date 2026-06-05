@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 392,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_sdists-v9\\pypi\\html2text\\2024.2.26\\V_FUr4DMIno5fi6PgJSHi\\src\\test\\test_newlines_on_multiple_calls.py",
+  "name": "test_newlines_on_multiple_calls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 305,
+  "content_sha256": "33cc5661eb3faeca1bfd3e9f9c6a6487bc0e00277087c3d4e235fcdb0cd01c8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 305,
+    "preview_lines": [
+      "import html2text",
+      "# See https://github.com/Alir3z4/html2text/issues/163 for more information.",
+      "def test_newline_on_multiple_calls():",
+      "    h = html2text.HTML2Text()",
+      "    html = \"<p>test</p>\"",
+      "    md1 = h.handle(html)",
+      "    md2 = h.handle(html)",
+      "    md3 = h.handle(html)",
+      "    assert md1 == md2 == md3"
+    ],
+    "imports": [
+      "import html2text"
+    ],
+    "classes": [],
+    "functions": [
+      "test_newline_on_multiple_calls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_392_33cc5661eb3faeca_test_newlines_on_multiple_calls.py.json"
+}

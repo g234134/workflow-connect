@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:47:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\quantized\\cpu\\RuyUtils.h",
+  "name": "RuyUtils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 407,
+  "content_sha256": "b64cdf6ec9980a39b969de706c8191875b65ab6d4c39e16de5b72b3b1f56e3fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 407,
+    "preview_lines": [
+      "#pragma once",
+      "#ifdef USE_RUY_QMATMUL",
+      "#include <ruy/ruy.h>",
+      "namespace at {",
+      "namespace native {",
+      "namespace ruy_utils {",
+      "ruy::Context* get_ruy_context();",
+      "void quantize_multiplier(double scale,",
+      "                         int* multiplier_fixedpoint,",
+      "                         int* multiplier_exponent);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_366_b64cdf6ec9980a39_RuyUtils.h.json"
+}

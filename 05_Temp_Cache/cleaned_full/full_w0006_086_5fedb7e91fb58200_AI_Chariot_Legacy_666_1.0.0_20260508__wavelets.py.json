@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__wavelets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__wavelets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 902,
+  "content_sha256": "5fedb7e91fb5820085c6ee7bb7f1d4d95220160c8adf343646d2b1713c155ac7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 24,
+    "char_count": 902,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy.signal import convolve",
+      "def _ricker(points, a):",
+      "    A = 2 / (np.sqrt(3 * a) * (np.pi**0.25))",
+      "    wsq = a**2",
+      "    vec = np.arange(0, points) - (points - 1.0) / 2",
+      "    xsq = vec**2",
+      "    mod = (1 - xsq / wsq)",
+      "    gauss = np.exp(-xsq / (2 * wsq))",
+      "    total = A * mod * gauss"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.signal import convolve"
+    ],
+    "classes": [],
+    "functions": [
+      "_ricker",
+      "_cwt"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_086_5fedb7e91fb58200_AI_Chariot_Legacy_666_1.0.0_20260508__wavelets.py.json"
+}

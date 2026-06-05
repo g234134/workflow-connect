@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cython.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cython.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 709,
+  "content_sha256": "7d9f7f98e6e4573749a0aeacb9f88853de64e464ad8e9e8b58e938010f335bf4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 17,
+    "char_count": 709,
+    "preview_lines": [
+      "\"\"\" Exports a no-op 'cython' namespace similar to",
+      "https://github.com/cython/cython/blob/master/Cython/Shadow.py",
+      "This allows to optionally compile @cython decorated functions",
+      "(when cython is available at built time), or run the same code",
+      "as pure-python, without runtime dependency on cython module.",
+      "We only define the symbols that we use. E.g. see fontTools.cu2qu",
+      "\"\"\"",
+      "from types import SimpleNamespace",
+      "def _empty_decorator(x):",
+      "    return x"
+    ],
+    "imports": [
+      "from types import SimpleNamespace"
+    ],
+    "classes": [],
+    "functions": [
+      "_empty_decorator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_140_7d9f7f98e6e45737_AI_Chariot_Legacy_666_1.0.0_20260508_cython.py.json"
+}

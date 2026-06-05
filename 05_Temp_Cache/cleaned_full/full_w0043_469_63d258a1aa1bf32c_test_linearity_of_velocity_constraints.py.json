@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\mechanics\\tests\\test_linearity_of_velocity_constraints.py",
+  "name": "test_linearity_of_velocity_constraints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1341,
+  "content_sha256": "63d258a1aa1bf32c8becf4be54dee0f830bc6047c2c4119d1524a44002a53812",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 34,
+    "char_count": 1341,
+    "preview_lines": [
+      "from sympy import symbols, sin, cos",
+      "from sympy.physics.mechanics import (dynamicsymbols, ReferenceFrame, Point,",
+      "            KanesMethod)",
+      "from sympy.testing import pytest",
+      "from sympy.solvers.solveset import NonlinearError",
+      "def test_linearity_of_motion_constraints():",
+      "    # Test that an error is raised by KanesMethod if nonlinear velocity",
+      "    # constraints are supplied.",
+      "    # It is a simple pendulum.",
+      "    t = dynamicsymbols._t"
+    ],
+    "imports": [
+      "from sympy import symbols, sin, cos",
+      "from sympy.physics.mechanics import (dynamicsymbols, ReferenceFrame, Point,",
+      "from sympy.testing import pytest",
+      "from sympy.solvers.solveset import NonlinearError"
+    ],
+    "classes": [],
+    "functions": [
+      "test_linearity_of_motion_constraints"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_469_63d258a1aa1bf32c_test_linearity_of_velocity_constraints.py.json"
+}

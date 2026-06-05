@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 334,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\utils\\_per_sample_grad.py",
+  "name": "_per_sample_grad.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5689,
+  "content_sha256": "e45b5feb11157d74bc2253696eae126047fe982c119e7cff5e4cd1b8c2adc88e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 102,
+    "non_empty_lines": 87,
+    "char_count": 5689,
+    "preview_lines": [
+      "import functools",
+      "import torch",
+      "from torch.nn.utils._expanded_weights.expanded_weights_impl import ExpandedWeight",
+      "from torch.utils import _pytree as pytree",
+      "# dependency on `functional_call` means that this can't be exposed in utils",
+      "# without creating circular dependency",
+      "def call_for_per_sample_grads(module, *, batch_size=None, loss_reduction=\"sum\", batch_first=True):",
+      "    r\"\"\"",
+      "    Return a forward function for a module, populating grad_sample with per sample gradients on backward invocation.",
+      "    Args:"
+    ],
+    "imports": [
+      "import functools",
+      "import torch",
+      "from torch.nn.utils._expanded_weights.expanded_weights_impl import ExpandedWeight",
+      "from torch.utils import _pytree as pytree"
+    ],
+    "classes": [],
+    "functions": [
+      "call_for_per_sample_grads"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_334_e45b5feb11157d74__per_sample_grad.py.json"
+}

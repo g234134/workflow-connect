@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 174,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_equal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_equal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1678,
+  "content_sha256": "468389baee2431ee11924ede37254e268bf94b5efbd181e25408b388d20a776a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 89,
+    "non_empty_lines": 67,
+    "char_count": 1678,
+    "preview_lines": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.symbol import (Dummy, Symbol)",
+      "from sympy.functions.elementary.exponential import exp",
+      "def test_equal():",
+      "    b = Symbol(\"b\")",
+      "    a = Symbol(\"a\")",
+      "    e1 = a + b",
+      "    e2 = 2*a*b",
+      "    e3 = a**3*b**2",
+      "    e4 = a*b + b*a"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.symbol import (Dummy, Symbol)",
+      "from sympy.functions.elementary.exponential import exp"
+    ],
+    "classes": [],
+    "functions": [
+      "test_equal",
+      "test_expevalbug",
+      "test_cmp_bug1",
+      "test_cmp_bug2",
+      "test_cmp_issue_4357",
+      "test_dummy_eq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_174_468389baee2431ee_AI_Chariot_Legacy_666_1.0.0_20260508_test_equal.py.json"
+}

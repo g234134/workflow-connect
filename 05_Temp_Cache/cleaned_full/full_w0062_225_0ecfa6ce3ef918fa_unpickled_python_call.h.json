@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 225,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\rpc\\unpickled_python_call.h",
+  "name": "unpickled_python_call.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1408,
+  "content_sha256": "0ecfa6ce3ef918fae7dccb2107c75a847f10bdecf050981d8223f244c31f68ec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 34,
+    "char_count": 1408,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/distributed/rpc/rpc_command_base.h>",
+      "#include <torch/csrc/distributed/rpc/types.h>",
+      "#include <torch/csrc/utils/pybind.h>",
+      "namespace torch {",
+      "namespace distributed {",
+      "namespace rpc {",
+      "// This class converts the content in a PythonCall into py::object. This is a",
+      "// helper class to make sure that all arguments deserialization is done before",
+      "// entering RequestCallbackImpl::processRpc(...), so that the deserialization"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_225_0ecfa6ce3ef918fa_unpickled_python_call.h.json"
+}

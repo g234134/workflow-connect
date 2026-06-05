@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 435,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_highlighter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_highlighter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9729,
+  "content_sha256": "3086a95b08d1f1a85472c0e2720378c4b45b6a76e1e71fd0ce1e647dd0eb28a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 232,
+    "non_empty_lines": 188,
+    "char_count": 9729,
+    "preview_lines": [
+      "import re",
+      "from abc import ABC, abstractmethod",
+      "from typing import ClassVar, Sequence, Union",
+      "from .text import Span, Text",
+      "def _combine_regex(*regexes: str) -> str:",
+      "    \"\"\"Combine a number of regexes in to a single regex.",
+      "    Returns:",
+      "        str: New regex with all regexes ORed together.",
+      "    \"\"\"",
+      "    return \"|\".join(regexes)"
+    ],
+    "imports": [
+      "import re",
+      "from abc import ABC, abstractmethod",
+      "from typing import ClassVar, Sequence, Union",
+      "from .text import Span, Text"
+    ],
+    "classes": [
+      "Highlighter",
+      "NullHighlighter",
+      "RegexHighlighter",
+      "ReprHighlighter",
+      "JSONHighlighter",
+      "ISO8601Highlighter"
+    ],
+    "functions": [
+      "_combine_regex"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_435_3086a95b08d1f1a8_AI_Chariot_Legacy_666_1.0.0_20260508_highlighter.py.json"
+}

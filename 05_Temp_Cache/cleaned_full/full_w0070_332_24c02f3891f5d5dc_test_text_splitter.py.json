@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 332,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\text-splitters\\tests\\integration_tests\\test_text_splitter.py",
+  "name": "test_text_splitter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4876,
+  "content_sha256": "24c02f3891f5d5dce619121b4f781670aeb198994af88ccf10055cebf6d348bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 133,
+    "non_empty_lines": 104,
+    "char_count": 4873,
+    "preview_lines": [
+      "\"\"\"Test text splitters that require an integration.\"\"\"",
+      "import pytest",
+      "from transformers import AutoTokenizer",
+      "from langchain_text_splitters import (",
+      "    TokenTextSplitter,",
+      ")",
+      "from langchain_text_splitters.character import CharacterTextSplitter",
+      "from langchain_text_splitters.sentence_transformers import (",
+      "    SentenceTransformersTokenTextSplitter,",
+      ")"
+    ],
+    "imports": [
+      "import pytest",
+      "from transformers import AutoTokenizer",
+      "from langchain_text_splitters import (",
+      "from langchain_text_splitters.character import CharacterTextSplitter",
+      "from langchain_text_splitters.sentence_transformers import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_huggingface_type_check",
+      "test_huggingface_tokenizer",
+      "test_token_text_splitter",
+      "test_token_text_splitter_overlap",
+      "test_token_text_splitter_from_tiktoken",
+      "test_sentence_transformers_count_tokens",
+      "test_sentence_transformers_split_text",
+      "test_sentence_transformers_multiple_tokens",
+      "test_sentence_transformers_with_additional_model_kwargs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_332_24c02f3891f5d5dc_test_text_splitter.py.json"
+}

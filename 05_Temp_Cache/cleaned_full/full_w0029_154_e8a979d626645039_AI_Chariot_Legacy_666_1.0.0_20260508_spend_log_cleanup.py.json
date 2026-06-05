@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 154,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_cleanup.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_cleanup.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6395,
+  "content_sha256": "e8a979d626645039f11b09b3470bf19ae4d9a02787bb2eb7c7926dcf47d0bfd0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 161,
+    "non_empty_lines": 137,
+    "char_count": 6393,
+    "preview_lines": [
+      "import asyncio",
+      "from datetime import datetime, timedelta, timezone",
+      "from typing import Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import RedisCache",
+      "from litellm.constants import (",
+      "    SPEND_LOG_CLEANUP_BATCH_SIZE,",
+      "    SPEND_LOG_CLEANUP_JOB_NAME,",
+      "    SPEND_LOG_RUN_LOOPS,",
+      ")"
+    ],
+    "imports": [
+      "import asyncio",
+      "from datetime import datetime, timedelta, timezone",
+      "from typing import Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import RedisCache",
+      "from litellm.constants import (",
+      "from litellm.litellm_core_utils.duration_parser import duration_in_seconds",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.proxy.proxy_server import general_settings as default_settings",
+      "from litellm.proxy.proxy_server import proxy_logging_obj"
+    ],
+    "classes": [
+      "SpendLogCleanup"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_154_e8a979d626645039_AI_Chariot_Legacy_666_1.0.0_20260508_spend_log_cleanup.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gen_qnn_ctx_onnx_model.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gen_qnn_ctx_onnx_model.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16562,
+  "content_sha256": "983ba60e9ffccc28628c48ad09c7d8ee45b1af9b81a82d9ebca425555e0ffdcb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 364,
+    "non_empty_lines": 321,
+    "char_count": 16562,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation. All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "import json",
+      "from argparse import ArgumentParser",
+      "import onnx",
+      "from onnx import TensorProto, helper",
+      "class QnnTensorStruct:",
+      "    def __init__("
+    ],
+    "imports": [
+      "import json",
+      "from argparse import ArgumentParser",
+      "import onnx",
+      "from onnx import TensorProto, helper"
+    ],
+    "classes": [
+      "QnnTensorStruct"
+    ],
+    "functions": [
+      "is_quantized_data_type",
+      "qnn_data_type_to_onnx_data_type",
+      "parse_qnn_converter_json_file",
+      "generate_wrapper_onnx_file",
+      "parse_qnn_graph",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_490_983ba60e9ffccc28_AI_Chariot_Legacy_666_1.0.0_20260508_gen_qnn_ctx_onnx_model.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 278,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_group_numbers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_group_numbers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9203,
+  "content_sha256": "cd67d8720cc777c9f8a22a2ca6d20f405fe851a94ec53ce8a214f933ba56be9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 296,
+    "non_empty_lines": 235,
+    "char_count": 9203,
+    "preview_lines": [
+      "from itertools import chain, combinations",
+      "from sympy.external.gmpy import gcd",
+      "from sympy.ntheory.factor_ import factorint",
+      "from sympy.utilities.misc import as_int",
+      "def _is_nilpotent_number(factors: dict) -> bool:",
+      "    \"\"\" Check whether `n` is a nilpotent number.",
+      "    Note that ``factors`` is a prime factorization of `n`.",
+      "    This is a low-level helper for ``is_nilpotent_number``, for internal use.",
+      "    \"\"\"",
+      "    for p in factors.keys():"
+    ],
+    "imports": [
+      "from itertools import chain, combinations",
+      "from sympy.external.gmpy import gcd",
+      "from sympy.ntheory.factor_ import factorint",
+      "from sympy.utilities.misc import as_int"
+    ],
+    "classes": [],
+    "functions": [
+      "_is_nilpotent_number",
+      "is_nilpotent_number",
+      "is_abelian_number",
+      "is_cyclic_number",
+      "_holder_formula",
+      "groups_count"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_278_cd67d8720cc777c9_AI_Chariot_Legacy_666_1.0.0_20260508_group_numbers.py.json"
+}

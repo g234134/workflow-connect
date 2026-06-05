@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 247,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_commutator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_commutator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2727,
+  "content_sha256": "91e06cb460e93484c546bd3ab9516b91afcb8dee7a83aa05a09404a595e69d8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 61,
+    "char_count": 2727,
+    "preview_lines": [
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.symbol import symbols",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.commutator import Commutator as Comm",
+      "from sympy.physics.quantum.operator import Operator",
+      "a, b, c = symbols('a,b,c')",
+      "n = symbols('n', integer=True)",
+      "A, B, C, D = symbols('A,B,C,D', commutative=False)",
+      "def test_commutator():",
+      "    c = Comm(A, B)"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.symbol import symbols",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.commutator import Commutator as Comm",
+      "from sympy.physics.quantum.operator import Operator"
+    ],
+    "classes": [
+      "Foo",
+      "Bar",
+      "Tam"
+    ],
+    "functions": [
+      "test_commutator",
+      "test_commutator_identities",
+      "test_commutator_dagger",
+      "test_eval_commutator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_247_91e06cb460e93484_AI_Chariot_Legacy_666_1.0.0_20260508_test_commutator.py.json"
+}

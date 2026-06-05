@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 109,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\assumptions\\ask.py",
+  "name": "ask.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19376,
+  "content_sha256": "0765bc096fbdca7bd8a9f057f7fe2a08b8424b013483f8141aaabb94ce74c149",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 651,
+    "non_empty_lines": 503,
+    "char_count": 19376,
+    "preview_lines": [
+      "\"\"\"Module for querying SymPy objects about assumptions.\"\"\"",
+      "from sympy.assumptions.assume import (global_assumptions, Predicate,",
+      "        AppliedPredicate)",
+      "from sympy.assumptions.cnf import CNF, EncodedCNF, Literal",
+      "from sympy.core import sympify",
+      "from sympy.core.kind import BooleanKind",
+      "from sympy.core.relational import Eq, Ne, Gt, Lt, Ge, Le",
+      "from sympy.logic.inference import satisfiable",
+      "from sympy.utilities.decorator import memoize_property",
+      "from sympy.utilities.exceptions import (sympy_deprecation_warning,"
+    ],
+    "imports": [
+      "from sympy.assumptions.assume import (global_assumptions, Predicate,",
+      "from sympy.assumptions.cnf import CNF, EncodedCNF, Literal",
+      "from sympy.core import sympify",
+      "from sympy.core.kind import BooleanKind",
+      "from sympy.core.relational import Eq, Ne, Gt, Lt, Ge, Le",
+      "from sympy.logic.inference import satisfiable",
+      "from sympy.utilities.decorator import memoize_property",
+      "from sympy.utilities.exceptions import (sympy_deprecation_warning,",
+      "from .handlers.sets import HermitianPredicate",
+      "from .handlers.sets import AntihermitianPredicate",
+      "from .handlers.sets import RealPredicate",
+      "from .handlers.sets import ExtendedRealPredicate",
+      "from .handlers.sets import ImaginaryPredicate",
+      "from .handlers.sets import ComplexPredicate",
+      "from .handlers.sets import AlgebraicPredicate",
+      "from .predicates.sets import TranscendentalPredicate",
+      "from .handlers.sets import IntegerPredicate",
+      "from .predicates.sets import NonIntegerPredicate",
+      "from .handlers.sets import RationalPredicate",
+      "from .handlers.sets import IrrationalPredicate"
+    ],
+    "classes": [
+      "AssumptionKeys"
+    ],
+    "functions": [
+      "_extract_all_facts",
+      "ask",
+      "_ask_single_fact",
+      "register_handler",
+      "remove_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_109_0765bc096fbdca7b_ask.py.json"
+}

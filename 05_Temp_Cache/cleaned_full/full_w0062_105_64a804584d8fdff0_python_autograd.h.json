@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\python_autograd.h",
+  "name": "python_autograd.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 426,
+  "content_sha256": "64a804584d8fdff0fd59ec7335f40d5e29f2037d5a04f354d599a84a7d7900c9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 13,
+    "char_count": 426,
+    "preview_lines": [
+      "#ifndef THP_AUTOGRAD_H",
+      "#define THP_AUTOGRAD_H",
+      "PyObject* THPAutograd_initExtension(PyObject* _unused, PyObject* unused);",
+      "void THPAutograd_initFunctions();",
+      "namespace torch {",
+      "namespace autograd {",
+      "PyMethodDef* python_functions();",
+      "}",
+      "} // namespace torch",
+      "#include <torch/csrc/autograd/python_engine.h>"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_105_64a804584d8fdff0_python_autograd.h.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 289,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__stream_decoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__stream_decoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2551,
+  "content_sha256": "81396c4e7d2cea254e2f84a6a7f8a784350170e66e0a01a02626fb7ce45b4163",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 48,
+    "char_count": 2551,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Iterator, AsyncIterator",
+      "from ..._utils import lru_cache",
+      "from ..._streaming import ServerSentEvent",
+      "if TYPE_CHECKING:",
+      "    from botocore.model import Shape",
+      "    from botocore.eventstream import EventStreamMessage",
+      "@lru_cache(maxsize=None)",
+      "def get_response_stream_shape() -> Shape:",
+      "    from botocore.model import ServiceModel"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Iterator, AsyncIterator",
+      "from ..._utils import lru_cache",
+      "from ..._streaming import ServerSentEvent",
+      "from botocore.model import Shape",
+      "from botocore.eventstream import EventStreamMessage",
+      "from botocore.model import ServiceModel",
+      "from botocore.loaders import Loader",
+      "from botocore.parsers import EventStreamJSONParser",
+      "from botocore.eventstream import EventStreamBuffer",
+      "from botocore.eventstream import EventStreamBuffer"
+    ],
+    "classes": [
+      "AWSEventStreamDecoder"
+    ],
+    "functions": [
+      "get_response_stream_shape"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_289_81396c4e7d2cea25_AI_Chariot_Legacy_666_1.0.0_20260508__stream_decoder.py.json"
+}

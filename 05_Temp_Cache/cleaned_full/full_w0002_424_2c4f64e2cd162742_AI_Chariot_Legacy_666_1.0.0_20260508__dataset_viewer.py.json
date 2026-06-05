@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 424,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dataset_viewer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dataset_viewer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5675,
+  "content_sha256": "2c4f64e2cd1627424d76b889f0beaa57ffb17db5150b554487b0817748ce8cb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 138,
+    "char_count": 5675,
+    "preview_lines": [
+      "# Copyright 2026 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import shutil",
+      "import subprocess",
+      "from dataclasses import dataclass",
+      "from typing import TYPE_CHECKING, Any, Union",
+      "from . import constants",
+      "from .utils import get_token",
+      "import duckdb",
+      "import duckdb"
+    ],
+    "classes": [
+      "DatasetParquetEntry",
+      "_DuckDBCliConnection",
+      "_DuckDBCliRelation"
+    ],
+    "functions": [
+      "execute_raw_sql_query",
+      "_raise_on_forbidden_query",
+      "_get_duckdb_connection",
+      "_build_duckdb_secret_statements"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_424_2c4f64e2cd162742_AI_Chariot_Legacy_666_1.0.0_20260508__dataset_viewer.py.json"
+}

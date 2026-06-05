@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 243,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__onnx_graph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__onnx_graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1986,
+  "content_sha256": "49243d7c4c034521892f6a521d2ee398aa2a088fa6fef4345981b28130495b30",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 53,
+    "char_count": 1986,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from tensorboard.compat.proto.graph_pb2 import GraphDef",
+      "from tensorboard.compat.proto.node_def_pb2 import NodeDef",
+      "from tensorboard.compat.proto.versions_pb2 import VersionDef",
+      "from tensorboard.compat.proto.attr_value_pb2 import AttrValue",
+      "from tensorboard.compat.proto.tensor_shape_pb2 import TensorShapeProto",
+      "def load_onnx_graph(fname):",
+      "    import onnx",
+      "    m = onnx.load(fname)  # type: ignore[attr-defined]",
+      "    g = m.graph"
+    ],
+    "imports": [
+      "from tensorboard.compat.proto.graph_pb2 import GraphDef",
+      "from tensorboard.compat.proto.node_def_pb2 import NodeDef",
+      "from tensorboard.compat.proto.versions_pb2 import VersionDef",
+      "from tensorboard.compat.proto.attr_value_pb2 import AttrValue",
+      "from tensorboard.compat.proto.tensor_shape_pb2 import TensorShapeProto",
+      "import onnx",
+      "import itertools"
+    ],
+    "classes": [],
+    "functions": [
+      "load_onnx_graph",
+      "parse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_243_49243d7c4c034521_AI_Chariot_Legacy_666_1.0.0_20260508__onnx_graph.py.json"
+}

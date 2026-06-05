@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 481,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\anthropic\\langchain_anthropic\\middleware\\anthropic_tools.py",
+  "name": "anthropic_tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40752,
+  "content_sha256": "05ffeb4179dcacb16951b62c2aca4dedbe30c8abd7e667b4f267beceb49f18bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1171,
+    "non_empty_lines": 980,
+    "char_count": 40749,
+    "preview_lines": [
+      "\"\"\"Anthropic text editor and memory tool middleware.",
+      "This module provides client-side implementations of Anthropic's text editor and",
+      "memory tools using schema-less tool definitions and tool call interception.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import os",
+      "import shutil",
+      "from datetime import datetime, timezone",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Annotated, Any, cast"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import shutil",
+      "from datetime import datetime, timezone",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Annotated, Any, cast",
+      "from langchain.agents.middleware.types import (",
+      "from langchain.tools import ToolRuntime, tool",
+      "from langchain_core.messages import SystemMessage, ToolMessage",
+      "from langgraph.types import Command",
+      "from typing_extensions import NotRequired, TypedDict",
+      "from collections.abc import Awaitable, Callable, Sequence"
+    ],
+    "classes": [
+      "FileData",
+      "AnthropicToolsState",
+      "_StateClaudeFileToolMiddleware",
+      "StateClaudeTextEditorMiddleware",
+      "StateClaudeMemoryMiddleware",
+      "_FilesystemClaudeFileToolMiddleware",
+      "FilesystemClaudeTextEditorMiddleware",
+      "FilesystemClaudeMemoryMiddleware"
+    ],
+    "functions": [
+      "files_reducer",
+      "_validate_path",
+      "_list_directory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_481_05ffeb4179dcacb1_anthropic_tools.py.json"
+}

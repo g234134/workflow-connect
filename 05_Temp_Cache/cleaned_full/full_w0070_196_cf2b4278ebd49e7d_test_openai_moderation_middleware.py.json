@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 196,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\unit_tests\\middleware\\test_openai_moderation_middleware.py",
+  "name": "test_openai_moderation_middleware.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6336,
+  "content_sha256": "cf2b4278ebd49e7d55eb699ec53c4db59d989fbd182793bae4d35eeb4d6c64c3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 157,
+    "char_count": 6333,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from copy import deepcopy",
+      "from typing import Any, cast",
+      "from unittest.mock import Mock",
+      "import pytest",
+      "from langchain.agents.middleware.types import AgentState",
+      "from langchain_core.messages import AIMessage, HumanMessage, ToolMessage",
+      "from openai.types.moderation import Moderation",
+      "from langchain_openai.middleware.openai_moderation import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from copy import deepcopy",
+      "from typing import Any, cast",
+      "from unittest.mock import Mock",
+      "import pytest",
+      "from langchain.agents.middleware.types import AgentState",
+      "from langchain_core.messages import AIMessage, HumanMessage, ToolMessage",
+      "from openai.types.moderation import Moderation",
+      "from langchain_openai.middleware.openai_moderation import ("
+    ],
+    "classes": [
+      "StubModerationMiddleware"
+    ],
+    "functions": [
+      "flagged_result",
+      "make_state",
+      "test_before_model_allows_clean_input",
+      "test_before_model_errors_on_flagged_input",
+      "test_before_model_jump_on_end_behavior",
+      "test_custom_violation_message_template",
+      "test_after_model_replaces_flagged_message",
+      "test_tool_messages_are_moderated_when_enabled"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_196_cf2b4278ebd49e7d_test_openai_moderation_middleware.py.json"
+}

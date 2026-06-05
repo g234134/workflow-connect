@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 173,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_openai_providers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_openai_providers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3830,
+  "content_sha256": "fbd1dcbbbf6c2e6f426c0fdfa6645d0f7041d1c14c72da39333b874afb7aaa04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 76,
+    "char_count": 3830,
+    "preview_lines": [
+      "try:",
+      "    import openai",
+      "except ImportError:",
+      "    raise ModuleNotFoundError(",
+      "        \"Please install the Open AI SDK to use this feature: 'pip install openai'\"",
+      "    )",
+      "from posthog.ai.openai.openai import (",
+      "    WrappedBeta,",
+      "    WrappedChat,",
+      "    WrappedEmbeddings,"
+    ],
+    "imports": [
+      "import openai",
+      "from posthog.ai.openai.openai import (",
+      "from posthog.ai.openai.openai_async import WrappedBeta as AsyncWrappedBeta",
+      "from posthog.ai.openai.openai_async import WrappedChat as AsyncWrappedChat",
+      "from posthog.ai.openai.openai_async import WrappedEmbeddings as AsyncWrappedEmbeddings",
+      "from posthog.ai.openai.openai_async import WrappedResponses as AsyncWrappedResponses",
+      "from posthog.client import Client as PostHogClient"
+    ],
+    "classes": [
+      "AzureOpenAI",
+      "AsyncAzureOpenAI"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_173_fbd1dcbbbf6c2e6f_AI_Chariot_Legacy_666_1.0.0_20260508_openai_providers.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_use.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_use.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8013,
+  "content_sha256": "42f6f4994cbf64c34e076778b9d18782ea4987c2b89a9218fe6adc621c768cb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 290,
+    "non_empty_lines": 241,
+    "char_count": 8013,
+    "preview_lines": [
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from contextlib import AsyncExitStack, ExitStack",
+      "from functools import partial, wraps",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Optional,",
+      "    Protocol,",
+      "    TypeVar,",
+      "    Union,"
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from contextlib import AsyncExitStack, ExitStack",
+      "from functools import partial, wraps",
+      "from typing import (",
+      "from typing_extensions import ParamSpec",
+      "from fast_depends.core import CallModel, build_call_model",
+      "from fast_depends.dependencies import Dependant, Provider",
+      "from fast_depends.library.serializer import SerializerProto",
+      "from fast_depends.pydantic import PydanticSerializer",
+      "from fast_depends.msgspec import MsgSpecSerializer",
+      "from fast_depends.library.serializer import SerializerProto"
+    ],
+    "classes": [
+      "solve_async_gen",
+      "solve_gen"
+    ],
+    "functions": [
+      "Depends",
+      "inject",
+      "inject",
+      "inject",
+      "_wrap_inject"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_062_42f6f4994cbf64c3_AI_Chariot_Legacy_666_1.0.0_20260508_use.py.json"
+}

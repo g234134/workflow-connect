@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\fireworks\\langchain_fireworks\\chat_models.py",
+  "name": "chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43043,
+  "content_sha256": "bdbc04c54567ea0c0cec8b32c4d533d588bdf133d063bff9577998a723174657",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1084,
+    "non_empty_lines": 940,
+    "char_count": 43040,
+    "preview_lines": [
+      "\"\"\"Fireworks chat wrapper.\"\"\"",
+      "from __future__ import annotations",
+      "import contextlib",
+      "import json",
+      "import logging",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Mapping, Sequence",
+      "from operator import itemgetter",
+      "from typing import (",
+      "    Any,",
+      "    Literal,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import json",
+      "import logging",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Mapping, Sequence",
+      "from operator import itemgetter",
+      "from typing import (",
+      "from fireworks.client import AsyncFireworks, Fireworks  # type: ignore[import-untyped]",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models import (",
+      "from langchain_core.language_models.chat_models import (",
+      "from langchain_core.messages import (",
+      "from langchain_core.messages.tool import (",
+      "from langchain_core.messages.tool import (",
+      "from langchain_core.output_parsers import JsonOutputParser, PydanticOutputParser",
+      "from langchain_core.output_parsers.base import OutputParserLike",
+      "from langchain_core.output_parsers.openai_tools import (",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.runnables import Runnable, RunnableMap, RunnablePassthrough",
+      "from langchain_core.tools import BaseTool"
+    ],
+    "classes": [
+      "ChatFireworks"
+    ],
+    "functions": [
+      "_get_default_model_profile",
+      "_convert_dict_to_message",
+      "_convert_message_to_dict",
+      "_convert_chunk_to_message_chunk",
+      "_is_pydantic_class",
+      "_lc_tool_call_to_fireworks_tool_call",
+      "_lc_invalid_tool_call_to_fireworks_tool_call"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_046_bdbc04c54567ea0c_chat_models.py.json"
+}

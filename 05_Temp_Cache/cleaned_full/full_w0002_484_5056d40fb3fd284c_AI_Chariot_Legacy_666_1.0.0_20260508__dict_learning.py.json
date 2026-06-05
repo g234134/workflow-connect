@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 484,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dict_learning.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dict_learning.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 81032,
+  "content_sha256": "5056d40fb3fd284c366f557209bb18260fe12bb6fd575d6b805b5d283866869c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2341,
+    "non_empty_lines": 1919,
+    "char_count": 81032,
+    "preview_lines": [
+      "\"\"\"Dictionary learning.\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import itertools",
+      "import sys",
+      "import time",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from joblib import effective_n_jobs",
+      "from scipy import linalg"
+    ],
+    "imports": [
+      "import itertools",
+      "import sys",
+      "import time",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from joblib import effective_n_jobs",
+      "from scipy import linalg",
+      "from sklearn.base import (",
+      "from sklearn.linear_model import Lars, Lasso, LassoLars, orthogonal_mp_gram",
+      "from sklearn.utils import check_array, check_random_state, gen_batches, gen_even_slices",
+      "from sklearn.utils._param_validation import Interval, StrOptions, validate_params",
+      "from sklearn.utils.extmath import _randomized_svd, row_norms, svd_flip",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import check_is_fitted, validate_data"
+    ],
+    "classes": [
+      "_BaseSparseCoding",
+      "SparseCoder",
+      "DictionaryLearning",
+      "MiniBatchDictionaryLearning"
+    ],
+    "functions": [
+      "_check_positive_coding",
+      "_sparse_encode_precomputed",
+      "sparse_encode",
+      "_sparse_encode",
+      "_update_dict",
+      "_dict_learning",
+      "dict_learning_online",
+      "dict_learning"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_484_5056d40fb3fd284c_AI_Chariot_Legacy_666_1.0.0_20260508__dict_learning.py.json"
+}

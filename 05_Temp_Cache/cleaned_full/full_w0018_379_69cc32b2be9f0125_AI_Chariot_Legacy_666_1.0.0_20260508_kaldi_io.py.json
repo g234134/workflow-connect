@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 379,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_kaldi_io.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_kaldi_io.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5217,
+  "content_sha256": "69cc32b2be9f01257d21c39317401b54f0a8fd5413bb533600e9f54979b718f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 101,
+    "char_count": 5217,
+    "preview_lines": [
+      "# To use this file, the dependency (https://github.com/vesis84/kaldi-io-for-python)",
+      "# needs to be installed. This is a light wrapper around kaldi_io that returns",
+      "# torch.Tensors.",
+      "from typing import Any, Callable, Iterable, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from torchaudio._internal import module_utils as _mod_utils",
+      "if _mod_utils.is_module_available(\"numpy\"):",
+      "    import numpy as np",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from typing import Any, Callable, Iterable, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from torchaudio._internal import module_utils as _mod_utils",
+      "import numpy as np",
+      "import kaldi_io",
+      "import kaldi_io",
+      "import kaldi_io",
+      "import kaldi_io",
+      "import kaldi_io"
+    ],
+    "classes": [],
+    "functions": [
+      "_convert_method_output_to_tensor",
+      "read_vec_int_ark",
+      "read_vec_flt_scp",
+      "read_vec_flt_ark",
+      "read_mat_scp",
+      "read_mat_ark"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_379_69cc32b2be9f0125_AI_Chariot_Legacy_666_1.0.0_20260508_kaldi_io.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dump.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dump.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 653,
+  "content_sha256": "fa76969c64dcd3e9407bff775b1053a6e9cf45fccd9542bb439ce05cea6b1df0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 23,
+    "char_count": 653,
+    "preview_lines": [
+      "import json",
+      "import traceback",
+      "def cvt(s):",
+      "    if isinstance(s, str):",
+      "        return s",
+      "    try:",
+      "        return json.dumps(s, indent=4)",
+      "    except TypeError:",
+      "        return str(s)",
+      "def dump(*vals):"
+    ],
+    "imports": [
+      "import json",
+      "import traceback"
+    ],
+    "classes": [],
+    "functions": [
+      "cvt",
+      "dump"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_220_fa76969c64dcd3e9_AI_Chariot_Legacy_666_1.0.0_20260508_dump.py.json"
+}

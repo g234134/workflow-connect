@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_clip.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_clip.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1928,
+  "content_sha256": "f4e6403443e14841da9bc20950302e33a9f3f7804d62b61ea55612cac466f6c2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 51,
+    "char_count": 1928,
+    "preview_lines": [
+      "import numpy as np",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "from pandas.tests.copy_view.util import get_array",
+      "def test_clip_inplace_reference():",
+      "    df = DataFrame({\"a\": [1.5, 2, 3]})",
+      "    df_copy = df.copy()",
+      "    arr_a = get_array(df, \"a\")",
+      "    view = df[:]",
+      "    df.clip(lower=2, inplace=True)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "from pandas.tests.copy_view.util import get_array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_clip_inplace_reference",
+      "test_clip_inplace_reference_no_op",
+      "test_clip_inplace",
+      "test_clip",
+      "test_clip_no_op",
+      "test_clip_chained_inplace"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_194_f4e6403443e14841_AI_Chariot_Legacy_666_1.0.0_20260508_test_clip.py.json"
+}

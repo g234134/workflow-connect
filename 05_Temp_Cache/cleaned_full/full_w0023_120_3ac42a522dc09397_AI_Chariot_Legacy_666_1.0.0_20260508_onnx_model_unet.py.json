@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_onnx_model_unet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_onnx_model_unet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9513,
+  "content_sha256": "3ac42a522dc093978c2b6c36fa3dbde28f5bc1c847d331f48188261195212d14",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 258,
+    "non_empty_lines": 210,
+    "char_count": 9513,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "from fusion_attention_unet import FusionAttentionUnet",
+      "from fusion_bias_add import FusionBiasAdd",
+      "from fusion_biassplitgelu import FusionBiasSplitGelu",
+      "from fusion_group_norm import FusionGroupNorm",
+      "from fusion_nhwc_conv import FusionNhwcConv"
+    ],
+    "imports": [
+      "import logging",
+      "from fusion_attention_unet import FusionAttentionUnet",
+      "from fusion_bias_add import FusionBiasAdd",
+      "from fusion_biassplitgelu import FusionBiasSplitGelu",
+      "from fusion_group_norm import FusionGroupNorm",
+      "from fusion_nhwc_conv import FusionNhwcConv",
+      "from fusion_options import FusionOptions",
+      "from fusion_skip_group_norm import FusionSkipGroupNorm",
+      "from fusion_transpose import FusionInsertTranspose, FusionTranspose",
+      "from import_utils import is_installed",
+      "from onnx import ModelProto",
+      "from onnx_model import OnnxModel",
+      "from onnx_model_bert import BertOnnxModel",
+      "import tqdm  # noqa: PLC0415",
+      "from tqdm.contrib.logging import logging_redirect_tqdm  # noqa: PLC0415"
+    ],
+    "classes": [
+      "UnetOnnxModel"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_120_3ac42a522dc09397_AI_Chariot_Legacy_666_1.0.0_20260508_onnx_model_unet.py.json"
+}

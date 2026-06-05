@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 204,
+  "generated_at": "2026-05-08T18:48:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\retrievers\\self_query\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15429,
+  "content_sha256": "fdb9067e533140d3e3f36f5a08a5ae5f3bd6dbd30537cac0cf599f9b5eeb0f46",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 407,
+    "non_empty_lines": 369,
+    "char_count": 15426,
+    "preview_lines": [
+      "\"\"\"Retriever that generates and executes structured queries over its own data source.\"\"\"",
+      "import logging",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from langchain_core.callbacks.manager import (",
+      "    AsyncCallbackManagerForRetrieverRun,",
+      "    CallbackManagerForRetrieverRun,",
+      ")",
+      "from langchain_core.documents import Document",
+      "from langchain_core.language_models import BaseLanguageModel"
+    ],
+    "imports": [
+      "import logging",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from langchain_core.callbacks.manager import (",
+      "from langchain_core.documents import Document",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.retrievers import BaseRetriever",
+      "from langchain_core.runnables import Runnable",
+      "from langchain_core.structured_query import StructuredQuery, Visitor",
+      "from langchain_core.vectorstores import VectorStore",
+      "from pydantic import ConfigDict, Field, model_validator",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.query_constructor.base import (",
+      "from langchain_classic.chains.query_constructor.schema import AttributeInfo",
+      "import langchain_community  # noqa: F401",
+      "from langchain_community.query_constructors.astradb import AstraDBTranslator",
+      "from langchain_community.query_constructors.chroma import ChromaTranslator",
+      "from langchain_community.query_constructors.dashvector import DashvectorTranslator",
+      "from langchain_community.query_constructors.databricks_vector_search import (",
+      "from langchain_community.query_constructors.deeplake import DeepLakeTranslator"
+    ],
+    "classes": [
+      "SelfQueryRetriever"
+    ],
+    "functions": [
+      "_get_builtin_translator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_204_fdb9067e533140d3_base.py.json"
+}

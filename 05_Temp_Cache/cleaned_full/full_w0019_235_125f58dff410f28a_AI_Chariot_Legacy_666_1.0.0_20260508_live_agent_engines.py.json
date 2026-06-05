@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_live_agent_engines.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_live_agent_engines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6543,
+  "content_sha256": "125f58dff410f28a40cdc0e4fe4f480d3733841e4abcf9b1ba2f8372ac87803e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 179,
+    "non_empty_lines": 144,
+    "char_count": 6543,
+    "preview_lines": [
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import contextlib",
+      "import json",
+      "from typing import Any, AsyncIterator, Dict, Optional",
+      "import google.auth",
+      "from google.genai import _api_module",
+      "from .types import QueryAgentEngineConfig, QueryAgentEngineConfigOrDict",
+      "from websockets.asyncio.client import ClientConnection",
+      "from websockets.asyncio.client import connect as ws_connect",
+      "from websockets.client import ClientConnection  # type: ignore",
+      "from websockets.client import connect as ws_connect  # type: ignore",
+      "from pathlib import Path",
+      "from google import genai",
+      "from google.genai import types"
+    ],
+    "classes": [
+      "AsyncLiveAgentEngineSession",
+      "AsyncLiveAgentEngines"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_235_125f58dff410f28a_AI_Chariot_Legacy_666_1.0.0_20260508_live_agent_engines.py.json"
+}

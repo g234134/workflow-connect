@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 131,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\fake_tracer.py",
+  "name": "fake_tracer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3653,
+  "content_sha256": "a173df2ee4364a6c3b2d27754040abafdff6825a87a07b0343a035e8d508ebe2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 79,
+    "char_count": 3650,
+    "preview_lines": [
+      "from typing import Any",
+      "from uuid import UUID",
+      "from langchain_core.messages.base import BaseMessage",
+      "from langchain_core.outputs.chat_generation import ChatGeneration",
+      "from langchain_core.outputs.llm_result import LLMResult",
+      "from langchain_core.tracers import BaseTracer, Run",
+      "class FakeTracer(BaseTracer):",
+      "    \"\"\"Fake tracer that records LangChain execution.",
+      "    It replaces run ids with deterministic UUIDs for snapshotting.\"\"\"",
+      "    def __init__(self) -> None:"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from uuid import UUID",
+      "from langchain_core.messages.base import BaseMessage",
+      "from langchain_core.outputs.chat_generation import ChatGeneration",
+      "from langchain_core.outputs.llm_result import LLMResult",
+      "from langchain_core.tracers import BaseTracer, Run"
+    ],
+    "classes": [
+      "FakeTracer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_131_a173df2ee4364a6c_fake_tracer.py.json"
+}

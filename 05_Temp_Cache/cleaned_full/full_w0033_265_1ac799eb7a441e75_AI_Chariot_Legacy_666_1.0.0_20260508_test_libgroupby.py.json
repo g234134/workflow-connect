@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_libgroupby.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_libgroupby.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11075,
+  "content_sha256": "1ac799eb7a441e75864fdb93a72b4acac5d0e63a551f79cdfbd76167de0b04c7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 344,
+    "non_empty_lines": 269,
+    "char_count": 11075,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs import groupby as libgroupby",
+      "from pandas._libs.groupby import (",
+      "    group_cumprod,",
+      "    group_cumsum,",
+      "    group_mean,",
+      "    group_sum,",
+      "    group_var,",
+      ")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs import groupby as libgroupby",
+      "from pandas._libs.groupby import (",
+      "from pandas.core.dtypes.common import ensure_platform_int",
+      "from pandas import isna",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestGroupVar"
+    ],
+    "functions": [
+      "test_group_var_large_inputs",
+      "test_group_ohlc",
+      "test_cython_group_transform",
+      "test_cython_group_transform_algos",
+      "test_cython_group_mean_datetimelike",
+      "test_cython_group_mean_wrong_min_count",
+      "test_cython_group_mean_not_datetimelike_but_has_NaT_values",
+      "test_cython_group_mean_Inf_at_beginning_and_end",
+      "test_cython_group_sum_Inf_at_beginning_and_end",
+      "test_cython_group_sum_overflow"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_265_1ac799eb7a441e75_AI_Chariot_Legacy_666_1.0.0_20260508_test_libgroupby.py.json"
+}

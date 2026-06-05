@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\benchmarks\\test_create_agent.py",
+  "name": "test_create_agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1342,
+  "content_sha256": "56be78f6de2ee7761ba367f807a135eea1f042f7192821ed76a721facb7ba140",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 34,
+    "char_count": 1339,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage",
+      "from pytest_benchmark.fixture import BenchmarkFixture",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware import (",
+      "    ModelRetryMiddleware,",
+      "    TodoListMiddleware,",
+      "    ToolRetryMiddleware,"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage",
+      "from pytest_benchmark.fixture import BenchmarkFixture",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware import (",
+      "from collections.abc import Sequence",
+      "from langchain.agents.middleware import AgentMiddleware"
+    ],
+    "classes": [],
+    "functions": [
+      "test_create_agent_instantiation",
+      "test_create_agent_instantiation_with_middleware"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_389_56be78f6de2ee776_test_create_agent.py.json"
+}

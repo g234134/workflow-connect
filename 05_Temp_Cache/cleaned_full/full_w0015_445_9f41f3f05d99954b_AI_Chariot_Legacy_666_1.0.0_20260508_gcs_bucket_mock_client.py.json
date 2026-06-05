@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 445,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gcs_bucket_mock_client.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gcs_bucket_mock_client.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8352,
+  "content_sha256": "9f41f3f05d99954bbc118ce813bcaec0bfd9925bfe7963b73c5f4ae75f5e3428",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 157,
+    "char_count": 8352,
+    "preview_lines": [
+      "\"\"\"",
+      "Mock client for GCS Bucket integration testing.",
+      "This module intercepts GCS API calls and Vertex AI auth calls, returning successful",
+      "mock responses, allowing full code execution without making actual network calls.",
+      "Usage:",
+      "    Set GCS_MOCK=true in environment variables or config to enable mock mode.",
+      "\"\"\"",
+      "import asyncio",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.mock_client_factory import MockClientConfig, create_mock_client_factory, MockResponse"
+    ],
+    "imports": [
+      "import asyncio",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.mock_client_factory import MockClientConfig, create_mock_client_factory, MockResponse",
+      "from litellm.llms.custom_httpx.http_handler import AsyncHTTPHandler",
+      "from litellm.llms.vertex_ai.vertex_llm_base import VertexBase"
+    ],
+    "classes": [],
+    "functions": [
+      "create_mock_gcs_client",
+      "mock_vertex_auth_methods"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_445_9f41f3f05d99954b_AI_Chariot_Legacy_666_1.0.0_20260508_gcs_bucket_mock_client.py.json"
+}

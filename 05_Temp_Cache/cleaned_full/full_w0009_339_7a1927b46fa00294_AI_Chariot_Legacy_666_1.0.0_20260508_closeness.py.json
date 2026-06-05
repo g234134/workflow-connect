@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 339,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_closeness.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_closeness.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10281,
+  "content_sha256": "7a1927b46fa00294fdba15898c6684650fad110fa17710d3ee5b9ffae54f3401",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 282,
+    "non_empty_lines": 225,
+    "char_count": 10281,
+    "preview_lines": [
+      "\"\"\"",
+      "Closeness centrality measures.",
+      "\"\"\"",
+      "import functools",
+      "import networkx as nx",
+      "from networkx.exception import NetworkXError",
+      "from networkx.utils.decorators import not_implemented_for",
+      "__all__ = [\"closeness_centrality\", \"incremental_closeness_centrality\"]",
+      "@nx._dispatchable(edge_attrs=\"distance\")",
+      "def closeness_centrality(G, u=None, distance=None, wf_improved=True):"
+    ],
+    "imports": [
+      "import functools",
+      "import networkx as nx",
+      "from networkx.exception import NetworkXError",
+      "from networkx.utils.decorators import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "closeness_centrality",
+      "incremental_closeness_centrality"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_339_7a1927b46fa00294_AI_Chariot_Legacy_666_1.0.0_20260508_closeness.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dogbox.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dogbox.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12013,
+  "content_sha256": "2aec93c6024f46e98192b93c2a5819655866f2da5d9ac18d06d3c0b23d94d57b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 331,
+    "non_empty_lines": 255,
+    "char_count": 12013,
+    "preview_lines": [
+      "\"\"\"",
+      "Dogleg algorithm with rectangular trust regions for least-squares minimization.",
+      "The description of the algorithm can be found in [Voglis]_. The algorithm does",
+      "trust-region iterations, but the shape of trust regions is rectangular as",
+      "opposed to conventional elliptical. The intersection of a trust region and",
+      "an initial feasible region is again some rectangle. Thus, on each iteration a",
+      "bound-constrained quadratic optimization problem is solved.",
+      "A quadratic problem is solved by well-known dogleg approach, where the",
+      "function is minimized along piecewise-linear \"dogleg\" path [NumOpt]_,",
+      "Chapter 4. If Jacobian is not rank-deficient then the function is decreasing"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.linalg import lstsq, norm",
+      "from scipy.sparse.linalg import LinearOperator, aslinearoperator, lsmr",
+      "from scipy.optimize import OptimizeResult",
+      "from .common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "lsmr_operator",
+      "find_intersection",
+      "dogleg_step",
+      "dogbox"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_128_2aec93c6024f46e9_AI_Chariot_Legacy_666_1.0.0_20260508_dogbox.py.json"
+}

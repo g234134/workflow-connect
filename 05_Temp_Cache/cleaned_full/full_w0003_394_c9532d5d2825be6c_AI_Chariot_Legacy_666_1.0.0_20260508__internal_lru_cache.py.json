@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__internal_lru_cache.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__internal_lru_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 794,
+  "content_sha256": "c9532d5d2825be6c4524c63a1e52668758c028742d9d79094628d838f7a4ccfb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 23,
+    "char_count": 794,
+    "preview_lines": [
+      "from functools import lru_cache",
+      "from typing import Callable, Optional, TypeVar",
+      "T = TypeVar(\"T\")",
+      "def lru_cache_wrapper(",
+      "    maxsize: Optional[int] = None,",
+      ") -> Callable[[Callable[..., T]], Callable[..., T]]:",
+      "    \"\"\"",
+      "    Wrapper for lru_cache that caches success and exceptions",
+      "    \"\"\"",
+      "    def decorator(f: Callable[..., T]) -> Callable[..., T]:"
+    ],
+    "imports": [
+      "from functools import lru_cache",
+      "from typing import Callable, Optional, TypeVar"
+    ],
+    "classes": [],
+    "functions": [
+      "lru_cache_wrapper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_394_c9532d5d2825be6c_AI_Chariot_Legacy_666_1.0.0_20260508__internal_lru_cache.py.json"
+}

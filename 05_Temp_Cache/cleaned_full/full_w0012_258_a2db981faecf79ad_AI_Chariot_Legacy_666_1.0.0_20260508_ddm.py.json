@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ddm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ddm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27712,
+  "content_sha256": "a2db981faecf79ad9aede5d98839f206c28dc27c18f04fe15eceb0703025e2e5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1029,
+    "non_empty_lines": 820,
+    "char_count": 27712,
+    "preview_lines": [
+      "\"\"\"",
+      "Module for the DDM class.",
+      "The DDM class is an internal representation used by DomainMatrix. The letters",
+      "DDM stand for Dense Domain Matrix. A DDM instance represents a matrix using",
+      "elements from a polynomial Domain (e.g. ZZ, QQ, ...) in a dense-matrix",
+      "representation.",
+      "Basic usage:",
+      "    >>> from sympy import ZZ, QQ",
+      "    >>> from sympy.polys.matrices.ddm import DDM",
+      "    >>> A = DDM([[ZZ(0), ZZ(1)], [ZZ(-1), ZZ(0)]], (2, 2), ZZ)"
+    ],
+    "imports": [
+      "from itertools import chain",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from .exceptions import (",
+      "from sympy.polys.domains import QQ",
+      "from .dense import (",
+      "from .lll import ddm_lll, ddm_lll_transform"
+    ],
+    "classes": [
+      "takes",
+      "DDM"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_258_a2db981faecf79ad_AI_Chariot_Legacy_666_1.0.0_20260508_ddm.py.json"
+}

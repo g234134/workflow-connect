@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 294,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test__remove_redundancy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test__remove_redundancy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7027,
+  "content_sha256": "542d93cf4d133076a7d0527c41780a76f6b30111f9f1a5822dbf7b050672774f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 228,
+    "non_empty_lines": 193,
+    "char_count": 7027,
+    "preview_lines": [
+      "\"\"\"",
+      "Unit test for Linear Programming via Simplex Algorithm.",
+      "\"\"\"",
+      "# TODO: add tests for:",
+      "# https://github.com/scipy/scipy/issues/5400",
+      "# https://github.com/scipy/scipy/issues/6690",
+      "import numpy as np",
+      "from numpy.testing import (",
+      "    assert_,",
+      "    assert_allclose,"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import (",
+      "from .test_linprog import magic_square",
+      "from scipy.optimize._remove_redundancy import _remove_redundancy_svd",
+      "from scipy.optimize._remove_redundancy import _remove_redundancy_pivot_dense",
+      "from scipy.optimize._remove_redundancy import _remove_redundancy_pivot_sparse",
+      "from scipy.optimize._remove_redundancy import _remove_redundancy_id",
+      "from scipy.sparse import csc_matrix"
+    ],
+    "classes": [
+      "RRCommonTests",
+      "TestRRSVD",
+      "TestRRPivotDense",
+      "TestRRID",
+      "TestRRPivotSparse"
+    ],
+    "functions": [
+      "setup_module",
+      "redundancy_removed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_294_542d93cf4d133076_AI_Chariot_Legacy_666_1.0.0_20260508_test__remove_redundancy.py.json"
+}

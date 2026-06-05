@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 245,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_eomt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_eomt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25763,
+  "content_sha256": "1b4c502ebcc96d44d6aa756a2d2ccfaa905fb800b8e280a0e825790308b807f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 642,
+    "non_empty_lines": 523,
+    "char_count": 25763,
+    "preview_lines": [
+      "# Copyright 2025 Mobile Perception Systems Lab at TU/e and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import PaddingMode, get_size_with_aspect_ratio",
+      "from ...image_transforms import pad as np_pad",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring, is_torch_available",
+      "from ...utils.import_utils import requires",
+      "import torch"
+    ],
+    "classes": [
+      "EomtImageProcessorKwargs",
+      "EomtImageProcessorPil"
+    ],
+    "functions": [
+      "convert_segmentation_map_to_binary_masks",
+      "check_segment_validity",
+      "compute_segments",
+      "get_target_size",
+      "remove_low_and_no_objects"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_245_1b4c502ebcc96d44_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_eomt.py.json"
+}

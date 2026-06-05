@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fuser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fuser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7275,
+  "content_sha256": "02bb22689e856d633f2dd95d7b647846c7e6d6a0ed93d92507d4fd8fed8a4138",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 161,
+    "non_empty_lines": 136,
+    "char_count": 7275,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "from typing import List, Tuple",
+      "import torch",
+      "@contextlib.contextmanager",
+      "def optimized_execution(should_optimize):",
+      "    \"\"\"Context manager that controls whether the JIT's executor will run optimizations before executing a function.\"\"\"",
+      "    stored_flag = torch._C._get_graph_executor_optimize()",
+      "    torch._C._set_graph_executor_optimize(should_optimize)",
+      "    try:"
+    ],
+    "imports": [
+      "import contextlib",
+      "from typing import List, Tuple",
+      "import torch"
+    ],
+    "classes": [],
+    "functions": [
+      "optimized_execution",
+      "fuser",
+      "_get_differentiable_graph_node",
+      "_graph_for",
+      "_script_method_graph_for",
+      "set_fusion_strategy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_236_02bb22689e856d63_AI_Chariot_Legacy_666_1.0.0_20260508__fuser.py.json"
+}

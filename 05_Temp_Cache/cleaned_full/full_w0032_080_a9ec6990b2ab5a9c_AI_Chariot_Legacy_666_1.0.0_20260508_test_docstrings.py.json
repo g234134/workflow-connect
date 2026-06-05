@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 80,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_docstrings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_docstrings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7061,
+  "content_sha256": "a9ec6990b2ab5a9c5f363b91092f0d6e420c93d4e54d2bd11f22696d541fa7e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 208,
+    "non_empty_lines": 165,
+    "char_count": 7061,
+    "preview_lines": [
+      "import re",
+      "from inspect import signature",
+      "from typing import Optional",
+      "import pytest",
+      "# make it possible to discover experimental estimators when calling `all_estimators`",
+      "from sklearn.experimental import (",
+      "    enable_halving_search_cv,  # noqa: F401",
+      "    enable_iterative_imputer,  # noqa: F401",
+      ")",
+      "from sklearn.utils.discovery import all_displays, all_estimators, all_functions"
+    ],
+    "imports": [
+      "import re",
+      "from inspect import signature",
+      "from typing import Optional",
+      "import pytest",
+      "from sklearn.experimental import (",
+      "from sklearn.utils.discovery import all_displays, all_estimators, all_functions",
+      "import argparse",
+      "import sys"
+    ],
+    "classes": [],
+    "functions": [
+      "get_all_methods",
+      "get_all_functions_names",
+      "filter_errors",
+      "repr_errors",
+      "test_function_docstring",
+      "test_docstring"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_080_a9ec6990b2ab5a9c_AI_Chariot_Legacy_666_1.0.0_20260508_test_docstrings.py.json"
+}

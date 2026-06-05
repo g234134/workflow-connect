@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19693,
+  "content_sha256": "a75946469cdfac6f1bb2625f01faf41dcf42c8df58b4678564272eaf2067c0ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 565,
+    "non_empty_lines": 472,
+    "char_count": 19693,
+    "preview_lines": [
+      "\"\"\"A re-implementation of the MS DirectoryService samples related to services.",
+      "* Adds and removes an ActiveDirectory \"Service Connection Point\",",
+      "  including managing the security on the object.",
+      "* Creates and registers Service Principal Names.",
+      "* Changes the username for a domain user.",
+      "Some of these functions are likely to become move to a module - but there",
+      "is also a little command-line-interface to try these functions out.",
+      "For example:",
+      "scp.py --account-name=domain\\\\user --service-class=PythonScpTest \\\\",
+      "       --keyword=foo --keyword=bar --binding-string=bind_info \\\\"
+    ],
+    "imports": [
+      "import optparse",
+      "import textwrap",
+      "import traceback",
+      "import ntsecuritycon as dscon",
+      "import win32api",
+      "import win32con",
+      "import win32security",
+      "import winerror",
+      "from win32com.adsi import adsi",
+      "from win32com.adsi.adsicon import *",
+      "from win32com.client import Dispatch",
+      "import logging"
+    ],
+    "classes": [
+      "_NoDefault",
+      "HelpFormatter"
+    ],
+    "functions": [
+      "ScpCreate",
+      "ScpDelete",
+      "AllowAccessToScpProperties",
+      "SpnRegister",
+      "UserChangePassword",
+      "log",
+      "_get_option",
+      "_option_error",
+      "do_ScpCreate",
+      "do_ScpDelete",
+      "do_SpnCreate",
+      "do_SpnRegister",
+      "do_SpnUnregister",
+      "do_UserChangePassword",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_130_a75946469cdfac6f_AI_Chariot_Legacy_666_1.0.0_20260508_scp.py.json"
+}

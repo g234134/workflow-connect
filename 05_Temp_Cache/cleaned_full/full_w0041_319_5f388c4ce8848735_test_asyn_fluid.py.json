@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 319,
+  "generated_at": "2026-05-08T18:47:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\tests\\test_asyn_fluid.py",
+  "name": "test_asyn_fluid.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3738,
+  "content_sha256": "5f388c4ce8848735fa72f25d2de383502d738ce2d67218477fd67ff446f74cc1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 147,
+    "non_empty_lines": 112,
+    "char_count": 3738,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx import Graph, NetworkXError",
+      "from networkx.algorithms.community import asyn_fluidc",
+      "@pytest.mark.parametrize(\"graph_constructor\", (nx.DiGraph, nx.MultiGraph))",
+      "def test_raises_on_directed_and_multigraphs(graph_constructor):",
+      "    G = graph_constructor([(0, 1), (1, 2)])",
+      "    with pytest.raises(nx.NetworkXNotImplemented):",
+      "        nx.community.asyn_fluidc(G, 1)",
+      "def test_exceptions():"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx import Graph, NetworkXError",
+      "from networkx.algorithms.community import asyn_fluidc"
+    ],
+    "classes": [],
+    "functions": [
+      "test_raises_on_directed_and_multigraphs",
+      "test_exceptions",
+      "test_single_node",
+      "test_two_nodes",
+      "test_two_clique_communities",
+      "test_five_clique_ring",
+      "test_asyn_fluidc_max_iter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_319_5f388c4ce8848735_test_asyn_fluid.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 186,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__box_drawing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__box_drawing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8159,
+  "content_sha256": "06edac2595de45be3378662b6b1850711b4318179dbb84c63dd3ea50779f8750",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 366,
+    "non_empty_lines": 353,
+    "char_count": 7649,
+    "preview_lines": [
+      "\"\"\"",
+      "Box drawing utilities for Canvas.",
+      "The box drawing characters have zero to four lines radiating from the center of the glyph.",
+      "There are three line types: thin, heavy, and double. These are indicated by 1, 2, and 3 respectively (0 for no line).",
+      "This code represents the characters as a tuple of 4 integers, (<top>, <right>, <bottom>, <left>). This format",
+      "makes it possible to logically combine characters together, as there is no mathematical relationship in the unicode db.",
+      "Note that not all combinations are possible. Characters can have a maximum of 2 border types in a single glyph.",
+      "There are also fewer characters for the \"double\" line type.",
+      "\"\"\"",
+      "from __future__ import annotations"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from typing_extensions import TypeAlias"
+    ],
+    "classes": [],
+    "functions": [
+      "combine_quads"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_186_06edac2595de45be_AI_Chariot_Legacy_666_1.0.0_20260508__box_drawing.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__openai_agents.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__openai_agents.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16285,
+  "content_sha256": "a3cb717d1255cbd29b5da35eb0ef0f58ae885dd7f94d47653aca7f323f67c15b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 436,
+    "non_empty_lines": 366,
+    "char_count": 16285,
+    "preview_lines": [
+      "import logging",
+      "import weakref",
+      "from datetime import datetime",
+      "from functools import cache",
+      "from typing import Optional",
+      "from langsmith import run_trees as rt",
+      "from langsmith._internal import _context",
+      "from langsmith.run_helpers import get_current_run_tree",
+      "try:",
+      "    from agents import tracing  # type: ignore[import]"
+    ],
+    "imports": [
+      "import logging",
+      "import weakref",
+      "from datetime import datetime",
+      "from functools import cache",
+      "from typing import Optional",
+      "from langsmith import run_trees as rt",
+      "from langsmith._internal import _context",
+      "from langsmith.run_helpers import get_current_run_tree",
+      "from agents import tracing  # type: ignore[import]",
+      "from langsmith.integrations.openai_agents_sdk import (",
+      "from agents import (",
+      "from langsmith.wrappers import OpenAIAgentsTracingProcessor",
+      "from langsmith import client as ls_client",
+      "from importlib.metadata import version",
+      "from agents import (",
+      "from langsmith.wrappers import OpenAIAgentsTracingProcessor"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_package_version"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_252_a3cb717d1255cbd2_AI_Chariot_Legacy_666_1.0.0_20260508__openai_agents.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 358,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__contextlib_chdir.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__contextlib_chdir.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 609,
+  "content_sha256": "e1d23ff4f838ebcc3f7c68dd73c8aadc1c4af0f7d13c09f752f6a06a1f5dc3ea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 16,
+    "char_count": 609,
+    "preview_lines": [
+      "\"\"\"Backport of Python 3.11's contextlib.chdir.\"\"\"",
+      "import os",
+      "from contextlib import AbstractContextManager",
+      "class chdir(AbstractContextManager):  # type:ignore[type-arg]",
+      "    \"\"\"Non thread-safe context manager to change the current working directory.\"\"\"",
+      "    def __init__(self, path):",
+      "        \"\"\"Initialize the manager.\"\"\"",
+      "        self.path = path",
+      "        self._old_cwd = []",
+      "    def __enter__(self):"
+    ],
+    "imports": [
+      "import os",
+      "from contextlib import AbstractContextManager"
+    ],
+    "classes": [
+      "chdir"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_358_e1d23ff4f838ebcc_AI_Chariot_Legacy_666_1.0.0_20260508__contextlib_chdir.py.json"
+}

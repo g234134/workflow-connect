@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 498,
+  "generated_at": "2026-05-08T18:46:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_response_custom_tool_call_item.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_response_custom_tool_call_item.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 762,
+  "content_sha256": "ebc711400db55371e9159aaee660b11c7f1178601909611f75f22f0f9a8d8436",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 16,
+    "char_count": 762,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from .response_custom_tool_call import ResponseCustomToolCall",
+      "__all__ = [\"ResponseCustomToolCallItem\"]",
+      "class ResponseCustomToolCallItem(ResponseCustomToolCall):",
+      "    \"\"\"A call to a custom tool created by the model.\"\"\"",
+      "    id: str  # type: ignore",
+      "    \"\"\"The unique ID of the custom tool call item.\"\"\"",
+      "    status: Literal[\"in_progress\", \"completed\", \"incomplete\"]"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from .response_custom_tool_call import ResponseCustomToolCall"
+    ],
+    "classes": [
+      "ResponseCustomToolCallItem"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_498_ebc711400db55371_AI_Chariot_Legacy_666_1.0.0_20260508_response_custom_tool_call_item.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 278,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_64bit.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_64bit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13278,
+  "content_sha256": "f22737c6bff04a516b9064e0c0e9ed38b938757eec1278efbec396a04cf27b16",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 250,
+    "char_count": 13278,
+    "preview_lines": [
+      "\"\"\" Test functions involving 64bit or 32bit indexing \"\"\"",
+      "import pytest",
+      "import numpy as np",
+      "from scipy.sparse import (",
+      "    bsr_array, coo_array, csc_array, csr_array, dia_array,",
+      "    bsr_matrix, coo_matrix, csc_matrix, csr_matrix, dia_matrix,",
+      ")",
+      "# rename to avoid pytest collecting them in this module",
+      "from .test_base import (",
+      "    TestBSR as _TestBSR,"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from scipy.sparse import (",
+      "from .test_base import ("
+    ],
+    "classes": [
+      "RunAll64Bit",
+      "Test64BitArray",
+      "Test64BitMatrix",
+      "Test64BitMatrixSameAsArray",
+      "Test64BitArrayExtra",
+      "Test64BitMatrixExtra",
+      "Test64BitTools"
+    ],
+    "functions": [
+      "cases_64bit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_278_f22737c6bff04a51_AI_Chariot_Legacy_666_1.0.0_20260508_test_64bit.py.json"
+}

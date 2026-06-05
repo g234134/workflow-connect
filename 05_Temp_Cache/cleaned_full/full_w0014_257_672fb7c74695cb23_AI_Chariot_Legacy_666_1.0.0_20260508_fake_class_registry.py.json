@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 257,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fake_class_registry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fake_class_registry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12341,
+  "content_sha256": "672fb7c74695cb232be29ad472fc05f0c8c58f8c0d959347fba6fed2b890db09",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 320,
+    "non_empty_lines": 242,
+    "char_count": 12341,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "from typing import Any, Dict, Optional, Protocol, Tuple, Union",
+      "import torch",
+      "from torch._library.utils import parse_namespace",
+      "log = logging.getLogger(__name__)",
+      "class FakeScriptObject:",
+      "    def __init__(self, wrapped_obj: Any, script_class_name: str, x: torch.ScriptObject):",
+      "        self.wrapped_obj = wrapped_obj",
+      "        # The fully qualified name of the class of original script object"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Any, Dict, Optional, Protocol, Tuple, Union",
+      "import torch",
+      "from torch._library.utils import parse_namespace",
+      "from torch._higher_order_ops.torchbind import call_torchbind",
+      "import torch.utils._pytree as pytree",
+      "from torch.utils._python_dispatch import _disable_current_modes"
+    ],
+    "classes": [
+      "FakeScriptObject",
+      "FakeScriptMethod",
+      "HasStaticMethodFromReal",
+      "FakeClassRegistry"
+    ],
+    "functions": [
+      "_check_valid_flat_script_obj",
+      "tracing_with_real",
+      "maybe_to_fake_obj",
+      "register_fake_class",
+      "deregister_fake_class",
+      "has_fake_class",
+      "find_fake_class",
+      "_full_qual_class_name",
+      "_ns_and_class_name",
+      "_find_fake_class_for_script_object",
+      "_fake_obj_from_real"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_257_672fb7c74695cb23_AI_Chariot_Legacy_666_1.0.0_20260508_fake_class_registry.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 292,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\retrievers\\self_query\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4172,
+  "content_sha256": "a067ebed5acd76cfa4281cdd4690e4013013ee494a6b91e790856486179ebba0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 148,
+    "non_empty_lines": 128,
+    "char_count": 4169,
+    "preview_lines": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks.manager import (",
+      "    AsyncCallbackManagerForRetrieverRun,",
+      "    CallbackManagerForRetrieverRun,",
+      ")",
+      "from langchain_core.documents import Document",
+      "from langchain_core.structured_query import (",
+      "    Comparator,",
+      "    Comparison,"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks.manager import (",
+      "from langchain_core.documents import Document",
+      "from langchain_core.structured_query import (",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.query_constructor.schema import AttributeInfo",
+      "from langchain_classic.retrievers import SelfQueryRetriever",
+      "from tests.unit_tests.indexes.test_indexing import InMemoryVectorStore",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM"
+    ],
+    "classes": [
+      "FakeTranslator",
+      "InMemoryVectorstoreWithSearch"
+    ],
+    "functions": [
+      "fake_llm",
+      "fake_vectorstore",
+      "fake_self_query_retriever",
+      "test__get_relevant_documents"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_292_a067ebed5acd76cf_test_base.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 451,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__pytree.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__pytree.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3605,
+  "content_sha256": "af18b32bfd0d9dfe9aaa268280bc0b75b07081762d5deca75ff98bcd13b2d2a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 77,
+    "char_count": 3605,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from collections import namedtuple",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Optional, Tuple, Type",
+      "import torch.return_types",
+      "from torch.utils._pytree import PyTree, TreeSpec",
+      "FlattenFuncSpec = Callable[[PyTree, TreeSpec], List]",
+      "FlattenFuncExactMatchSpec = Callable[[PyTree, TreeSpec], bool]",
+      "SUPPORTED_NODES: Dict[Type[Any], FlattenFuncSpec] = {}",
+      "SUPPORTED_NODES_EXACT_MATCH: Dict[Type[Any], Optional[FlattenFuncExactMatchSpec]] = {}",
+      "def register_pytree_flatten_spec("
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Optional, Tuple, Type",
+      "import torch.return_types",
+      "from torch.utils._pytree import PyTree, TreeSpec"
+    ],
+    "classes": [],
+    "functions": [
+      "register_pytree_flatten_spec",
+      "tree_flatten_spec",
+      "_dict_flatten_spec",
+      "_list_flatten_spec",
+      "_tuple_flatten_spec",
+      "_namedtuple_flatten_spec",
+      "_dict_flatten_spec_exact_match",
+      "_list_flatten_spec_exact_match",
+      "_tuple_flatten_spec_exact_match",
+      "_namedtuple_flatten_spec_exact_match"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_451_af18b32bfd0d9dfe_AI_Chariot_Legacy_666_1.0.0_20260508__pytree.py.json"
+}

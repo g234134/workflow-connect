@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reduce_first.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reduce_first.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 845,
+  "content_sha256": "39d81f8d424d95213e85748f0194f950c3f72076ed107d4a323ca86a29eb1174",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 21,
+    "char_count": 845,
+    "preview_lines": [
+      "from typing import Callable, Tuple, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d, Ragged",
+      "from ..util import ArrayInfo",
+      "InT = Ragged",
+      "OutT = Floats2d",
+      "@registry.layers(\"reduce_first.v1\")",
+      "def reduce_first() -> Model[InT, OutT]:",
+      "    \"\"\"Reduce ragged-formatted sequences to their first element.\"\"\""
+    ],
+    "imports": [
+      "from typing import Callable, Tuple, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d, Ragged",
+      "from ..util import ArrayInfo"
+    ],
+    "classes": [],
+    "functions": [
+      "reduce_first",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_254_39d81f8d424d9521_AI_Chariot_Legacy_666_1.0.0_20260508_reduce_first.py.json"
+}

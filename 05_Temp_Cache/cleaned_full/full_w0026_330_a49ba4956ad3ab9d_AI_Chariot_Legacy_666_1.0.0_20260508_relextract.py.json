@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 330,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_relextract.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_relextract.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15270,
+  "content_sha256": "a49ba4956ad3ab9d7caeca853e31f93faa5651862ac2282d7cadc324fd0422ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 539,
+    "non_empty_lines": 450,
+    "char_count": 15270,
+    "preview_lines": [
+      "# Natural Language Toolkit: Relation Extraction",
+      "#",
+      "# Copyright (C) 2001-2026 NLTK Project",
+      "# Author: Ewan Klein <ewan@inf.ed.ac.uk>",
+      "# URL: <https://www.nltk.org/>",
+      "# For license information, see LICENSE.TXT",
+      "\"\"\"",
+      "Code for extracting relational triples from the ieer and conll2002 corpora.",
+      "Relations are stored internally as dictionaries ('reldicts').",
+      "The two serialization outputs are \"rtuple\" and \"clause\"."
+    ],
+    "imports": [
+      "import html",
+      "import re",
+      "from collections import defaultdict",
+      "from nltk.tag import tuple2str",
+      "from nltk.tree import Tree"
+    ],
+    "classes": [],
+    "functions": [
+      "_expand",
+      "class_abbrev",
+      "_join",
+      "descape_entity",
+      "list2sym",
+      "tree2semi_rel",
+      "semi_rel2reldict",
+      "extract_rels",
+      "rtuple",
+      "clause",
+      "in_demo",
+      "roles_demo",
+      "ieer_headlines",
+      "conllned",
+      "conllesp",
+      "ne_chunked"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_330_a49ba4956ad3ab9d_AI_Chariot_Legacy_666_1.0.0_20260508_relextract.py.json"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nlip_agent.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nlip_agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20673,
+  "content_sha256": "6e0207a2b7b6f54b1f4d8b2962e1182b259b05647b737b5f37666b535a2c55b7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 539,
+    "non_empty_lines": 423,
+    "char_count": 20647,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import asyncio",
+      "import logging",
+      "from typing import Any",
+      "import httpx",
+      "from ...events.agent_events import TerminationEvent",
+      "from ...import_utils import optional_import_block, require_optional_import",
+      "from ...io.base import IOStream"
+    ],
+    "imports": [
+      "import asyncio",
+      "import logging",
+      "from typing import Any",
+      "import httpx",
+      "from ...events.agent_events import TerminationEvent",
+      "from ...import_utils import optional_import_block, require_optional_import",
+      "from ...io.base import IOStream",
+      "from ...oai.client import OpenAIWrapper",
+      "from ..conversable_agent import ConversableAgent",
+      "from ..remote import RemoteAgentError, RemoteAgentNotFoundError, RequestMessage, ResponseMessage",
+      "from ..remote.agent_service import AgentService",
+      "from nlip_sdk.nlip import NLIP_Factory, NLIP_Message",
+      "from nlip_server.server import NLIP_Application, NLIP_Session, setup_server"
+    ],
+    "classes": [
+      "NlipClientError",
+      "NlipConnectionError",
+      "NlipTimeoutError",
+      "NlipAgentNotFoundError",
+      "AG2NlipSession",
+      "AG2NlipApplication",
+      "NlipRemoteAgent"
+    ],
+    "functions": [
+      "request_message_to_nlip",
+      "request_message_from_nlip",
+      "response_message_to_nlip",
+      "response_message_from_nlip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_407_6e0207a2b7b6f54b_AI_Chariot_Legacy_666_1.0.0_20260508_nlip_agent.py.json"
+}

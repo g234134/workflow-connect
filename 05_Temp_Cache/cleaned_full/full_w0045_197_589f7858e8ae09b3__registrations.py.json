@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_logging\\_registrations.py",
+  "name": "_registrations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4254,
+  "content_sha256": "589f7858e8ae09b3e473db2b072c23c200969da25a43c30d874a3a60a15611cb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 110,
+    "non_empty_lines": 106,
+    "char_count": 4254,
+    "preview_lines": [
+      "# flake8: noqa: B950",
+      "from ._internal import register_artifact, register_log",
+      "DYNAMIC = [\"torch.fx.experimental.symbolic_shapes\", \"torch.fx.experimental.sym_node\"]",
+      "DISTRIBUTED = [\"torch.distributed\", \"torch._dynamo.backends.distributed\"]",
+      "register_log(\"dynamo\", [\"torch._dynamo\", *DYNAMIC])",
+      "register_log(\"aot\", [\"torch._functorch.aot_autograd\", \"torch._functorch._aot_autograd\"])",
+      "register_log(\"inductor\", \"torch._inductor\")",
+      "register_log(\"dynamic\", DYNAMIC)",
+      "register_log(\"torch\", \"torch\")",
+      "register_log(\"distributed\", DISTRIBUTED)"
+    ],
+    "imports": [
+      "from ._internal import register_artifact, register_log"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_197_589f7858e8ae09b3__registrations.py.json"
+}

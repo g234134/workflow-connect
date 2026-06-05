@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 373,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__init_implementation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__init_implementation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2491,
+  "content_sha256": "c6e6a58d3569301f176c9517fb7d1e027ba2c8f7c37a8799a1eaf7888974987e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 58,
+    "char_count": 2491,
+    "preview_lines": [
+      "import warnings",
+      "from typing import TYPE_CHECKING",
+      "import sentry_sdk",
+      "if TYPE_CHECKING:",
+      "    from typing import Any, ContextManager, Optional",
+      "    import sentry_sdk.consts",
+      "class _InitGuard:",
+      "    _CONTEXT_MANAGER_DEPRECATION_WARNING_MESSAGE = (",
+      "        \"Using the return value of sentry_sdk.init as a context manager \"",
+      "        \"and manually calling the __enter__ and __exit__ methods on the \""
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import TYPE_CHECKING",
+      "import sentry_sdk",
+      "from typing import Any, ContextManager, Optional",
+      "import sentry_sdk.consts"
+    ],
+    "classes": [
+      "_InitGuard"
+    ],
+    "functions": [
+      "_check_python_deprecations",
+      "_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_373_c6e6a58d3569301f_AI_Chariot_Legacy_666_1.0.0_20260508__init_implementation.py.json"
+}

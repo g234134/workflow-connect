@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 45,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_absolute_import.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_absolute_import.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3140,
+  "content_sha256": "be4ac5d85c90479952cf65a676acb0ce41095530b47aae2087f44458128787bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 79,
+    "char_count": 3140,
+    "preview_lines": [
+      "\"\"\"",
+      "Fixer for import statements, with a __future__ import line.",
+      "Based on lib2to3/fixes/fix_import.py, but extended slightly so it also",
+      "supports Cython modules.",
+      "If spam is being imported from the local directory, this import:",
+      "    from spam import eggs",
+      "becomes:",
+      "    from __future__ import absolute_import",
+      "    from .spam import eggs",
+      "and this import:"
+    ],
+    "imports": [
+      "from spam import eggs",
+      "from __future__ import absolute_import",
+      "from .spam import eggs",
+      "import spam",
+      "from __future__ import absolute_import",
+      "from . import spam",
+      "from os.path import dirname, join, exists, sep",
+      "from lib2to3.fixes.fix_import import FixImport",
+      "from lib2to3.fixer_util import FromImport, syms",
+      "from lib2to3.fixes.fix_import import traverse_imports",
+      "from libfuturize.fixer_util import future_import",
+      "from __future__ import absolute_import\""
+    ],
+    "classes": [
+      "FixAbsoluteImport"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_045_be4ac5d85c904799_AI_Chariot_Legacy_666_1.0.0_20260508_fix_absolute_import.py.json"
+}

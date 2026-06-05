@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\ollama\\tests\\integration_tests\\test_llms.py",
+  "name": "test_llms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6235,
+  "content_sha256": "d228423cf4c4fc140d1a75404d9e30965c6882b2303f85fa08e495813f64f589",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 180,
+    "non_empty_lines": 135,
+    "char_count": 6232,
+    "preview_lines": [
+      "\"\"\"Test OllamaLLM llm.\"\"\"",
+      "import os",
+      "import pytest",
+      "from langchain_core.outputs import GenerationChunk",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langchain_ollama.llms import OllamaLLM",
+      "MODEL_NAME = os.environ.get(\"OLLAMA_TEST_MODEL\", \"llama3.1\")",
+      "REASONING_MODEL_NAME = os.environ.get(\"OLLAMA_REASONING_TEST_MODEL\", \"deepseek-r1:1.5b\")",
+      "SAMPLE = \"What is 3^3?\"",
+      "def test_invoke() -> None:"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from langchain_core.outputs import GenerationChunk",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langchain_ollama.llms import OllamaLLM"
+    ],
+    "classes": [],
+    "functions": [
+      "test_invoke",
+      "test_batch",
+      "test_batch_tags",
+      "test_stream_text_tokens",
+      "test__stream_no_reasoning",
+      "test__stream_with_reasoning"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_140_d228423cf4c4fc14_test_llms.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7194,
+  "content_sha256": "0b7be9cf8394e4af1c65a1e45573508c703bdf7044d199c384d79eb0db07d1c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 210,
+    "non_empty_lines": 166,
+    "char_count": 7194,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "pytestmark = pytest.mark.filterwarnings(",
+      "    \"ignore:Passing a BlockManager to DataFrame:DeprecationWarning\"",
+      ")",
+      "pa = pytest.importorskip(\"pyarrow\")",
+      "from pandas.core.arrays.arrow._arrow_utils import pyarrow_array_to_numpy_and_mask",
+      "arrays = [pd.array([1, 2, 3, None], dtype=dtype) for dtype in tm.ALL_INT_EA_DTYPES]"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays.arrow._arrow_utils import pyarrow_array_to_numpy_and_mask"
+    ],
+    "classes": [],
+    "functions": [
+      "data",
+      "test_arrow_array",
+      "test_arrow_roundtrip",
+      "test_dataframe_from_arrow_types_mapper",
+      "test_arrow_load_from_zero_chunks",
+      "test_arrow_from_arrow_uint",
+      "test_arrow_sliced",
+      "np_dtype_to_arrays",
+      "test_pyarrow_array_to_numpy_and_mask",
+      "test_from_arrow_null",
+      "test_from_arrow_type_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_428_0b7be9cf8394e4af_AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_compat.py.json"
+}

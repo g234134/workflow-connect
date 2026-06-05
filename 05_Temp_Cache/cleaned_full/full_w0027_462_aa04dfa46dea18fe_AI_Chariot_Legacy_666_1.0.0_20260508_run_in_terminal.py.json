@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 462,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_run_in_terminal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_run_in_terminal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3767,
+  "content_sha256": "aa04dfa46dea18fe30472f65ffbcd4f0feece7d080448bda82e953c8f9ffa048",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 93,
+    "char_count": 3767,
+    "preview_lines": [
+      "\"\"\"",
+      "Tools for running functions on the terminal above the current application or prompt.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from asyncio import Future, ensure_future",
+      "from contextlib import asynccontextmanager",
+      "from typing import AsyncGenerator, Awaitable, Callable, TypeVar",
+      "from prompt_toolkit.eventloop import run_in_executor_with_context",
+      "from .current import get_app_or_none",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from asyncio import Future, ensure_future",
+      "from contextlib import asynccontextmanager",
+      "from typing import AsyncGenerator, Awaitable, Callable, TypeVar",
+      "from prompt_toolkit.eventloop import run_in_executor_with_context",
+      "from .current import get_app_or_none"
+    ],
+    "classes": [],
+    "functions": [
+      "run_in_terminal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_462_aa04dfa46dea18fe_AI_Chariot_Legacy_666_1.0.0_20260508_run_in_terminal.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\dynamic_type.h",
+  "name": "dynamic_type.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 10626,
+  "content_sha256": "8f1ebca76cb036def1701c6c031ff85cb1cb0cae899cf9b0212a401b95e4572b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 238,
+    "non_empty_lines": 211,
+    "char_count": 10626,
+    "preview_lines": [
+      "#pragma once",
+      "#include <memory>",
+      "#include <type_traits>",
+      "#include <ATen/core/jit_type_base.h>",
+      "#include <c10/util/Optional.h>",
+      "namespace c10 {",
+      "using DynamicTypeBits = std::uint32_t;",
+      "#define DYNAMIC_TYPE_BIT(x) (1u << x)",
+      "constexpr DynamicTypeBits kDynamicCovariantTypeBit = DYNAMIC_TYPE_BIT(31);",
+      "constexpr DynamicTypeBits kDynamicAnyTypeBit = DYNAMIC_TYPE_BIT(30);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_055_8f1ebca76cb036de_dynamic_type.h.json"
+}

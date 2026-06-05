@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\tracers\\_compat.py",
+  "name": "_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2922,
+  "content_sha256": "a03b9cd3bfe36fbf89a4b6247e01b163bdc771dc4527c80691c5b7d21cb36768",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 67,
+    "char_count": 2919,
+    "preview_lines": [
+      "\"\"\"Compatibility helpers for Pydantic v1/v2 with langsmith `Run` objects.",
+      "!!! note",
+      "    The generic helpers (`pydantic_to_dict`, `pydantic_copy`) detect Pydanti version",
+      "    based on the langsmith `Run` model. They're intended for langsmith objects (`Run`,",
+      "    `Example`) which migrate together.",
+      "For general Pydantic v1/v2 handling, see `langchain_core.utils.pydantic`.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any, TypeVar",
+      "from langchain_core.tracers.schemas import Run"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, TypeVar",
+      "from langchain_core.tracers.schemas import Run"
+    ],
+    "classes": [],
+    "functions": [
+      "run_to_dict",
+      "run_copy",
+      "run_construct",
+      "pydantic_to_dict",
+      "pydantic_copy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_136_a03b9cd3bfe36fbf__compat.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 417,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_array_with_attr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_array_with_attr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1373,
+  "content_sha256": "4eeb81035942c6354e816b1633d8e181cf8fc86b97cda8cedd459629912ab990",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 27,
+    "char_count": 1373,
+    "preview_lines": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.tests.extension.array_with_attr import FloatAttrArray",
+      "def test_concat_with_all_na():",
+      "    # https://github.com/pandas-dev/pandas/pull/47762",
+      "    # ensure that attribute of the column array is preserved (when it gets",
+      "    # preserved in reindexing the array) during merge/concat",
+      "    arr = FloatAttrArray(np.array([np.nan, np.nan], dtype=\"float64\"), attr=\"test\")",
+      "    df1 = pd.DataFrame({\"col\": arr, \"key\": [0, 1]})"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.tests.extension.array_with_attr import FloatAttrArray"
+    ],
+    "classes": [],
+    "functions": [
+      "test_concat_with_all_na"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_417_4eeb81035942c635_AI_Chariot_Legacy_666_1.0.0_20260508_test_array_with_attr.py.json"
+}

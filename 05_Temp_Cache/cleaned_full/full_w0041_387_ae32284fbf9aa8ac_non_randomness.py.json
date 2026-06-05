@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\non_randomness.py",
+  "name": "non_randomness.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5787,
+  "content_sha256": "ae32284fbf9aa8ac0648136863180a9e20c582a483c15f07876d659164581951",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 155,
+    "non_empty_lines": 125,
+    "char_count": 5783,
+    "preview_lines": [
+      "r\"\"\"Computation of graph non-randomness.\"\"\"",
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "__all__ = [\"non_randomness\"]",
+      "@not_implemented_for(\"directed\")",
+      "@not_implemented_for(\"multigraph\")",
+      "@nx._dispatchable(edge_attrs=\"weight\")",
+      "def non_randomness(G, k=None, weight=\"weight\"):",
+      "    \"\"\"Compute the non-randomness of a graph."
+    ],
+    "imports": [
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for",
+      "import numpy as np"
+    ],
+    "classes": [],
+    "functions": [
+      "non_randomness"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_387_ae32284fbf9aa8ac_non_randomness.py.json"
+}

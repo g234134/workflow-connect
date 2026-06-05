@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 208,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_checkbreak.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_checkbreak.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3544,
+  "content_sha256": "779ea7e00d08811db6975ce48a0199343628d21e6fae66a0425a513a64965f8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 68,
+    "char_count": 3544,
+    "preview_lines": [
+      "'''",
+      "This module checks whether to break out of the solver loop.",
+      "Translated from Zaikun Zhang's modern-Fortran reference implementation in PRIMA.",
+      "Dedicated to late Professor M. J. D. Powell FRS (1936--2015).",
+      "Python translation by Nickolai Belakovski.",
+      "'''",
+      "from .infos import INFO_DEFAULT, NAN_INF_X, NAN_INF_F, FTARGET_ACHIEVED, MAXFUN_REACHED",
+      "import numpy as np",
+      "def checkbreak_unc(maxfun, nf, f, ftarget, x):",
+      "    '''"
+    ],
+    "imports": [
+      "from .infos import INFO_DEFAULT, NAN_INF_X, NAN_INF_F, FTARGET_ACHIEVED, MAXFUN_REACHED",
+      "import numpy as np"
+    ],
+    "classes": [],
+    "functions": [
+      "checkbreak_unc",
+      "checkbreak_con"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_208_779ea7e00d08811d_AI_Chariot_Legacy_666_1.0.0_20260508_checkbreak.py.json"
+}

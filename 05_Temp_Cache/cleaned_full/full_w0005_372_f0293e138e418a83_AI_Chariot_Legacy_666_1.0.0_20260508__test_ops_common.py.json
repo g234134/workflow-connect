@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__test_ops_common.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__test_ops_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4146,
+  "content_sha256": "f0293e138e418a83cf7e44b30506eeacc6eba60468fc3e418df02dad7fda422f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 136,
+    "non_empty_lines": 120,
+    "char_count": 4146,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import builtins",
+      "import torch",
+      "from torch.distributed._shard.sharding_spec import (",
+      "    ChunkShardingSpec,",
+      "    EnumerableShardingSpec,",
+      "    ShardMetadata,",
+      ")",
+      "from torch.distributed._shard.sharding_spec._internals import (",
+      "    get_chunked_dim_size,"
+    ],
+    "imports": [
+      "import builtins",
+      "import torch",
+      "from torch.distributed._shard.sharding_spec import (",
+      "from torch.distributed._shard.sharding_spec._internals import ("
+    ],
+    "classes": [],
+    "functions": [
+      "generate_chunk_sharding_specs_for_test",
+      "generate_enumerable_sharding_specs_for_test",
+      "generate_local_weight_sharding_params_for_test",
+      "clone_module_parameter",
+      "gen_binary_op_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_372_f0293e138e418a83_AI_Chariot_Legacy_666_1.0.0_20260508__test_ops_common.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 460,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\test_version.py",
+  "name": "test_version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 914,
+  "content_sha256": "ec8a00aa33afa6ce14e1d16b8519c94f96eed275b21ccf3a942f94d0c8c86daf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 19,
+    "char_count": 911,
+    "preview_lines": [
+      "\"\"\"Test that package version is consistent across configuration files.\"\"\"",
+      "from pathlib import Path",
+      "import toml",
+      "import langchain",
+      "def test_version_matches_pyproject() -> None:",
+      "    \"\"\"Verify that __version__ in __init__.py matches version in pyproject.toml.\"\"\"",
+      "    # Get the version from the package __init__.py",
+      "    init_version = langchain.__version__",
+      "    # Read the version from pyproject.toml",
+      "    pyproject_path = Path(__file__).parent.parent.parent / \"pyproject.toml\""
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "import toml",
+      "import langchain"
+    ],
+    "classes": [],
+    "functions": [
+      "test_version_matches_pyproject"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_460_ec8a00aa33afa6ce_test_version.py.json"
+}

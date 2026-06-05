@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "python .cursor/hooks/capture_session_context.py",
+        "timeout": 4
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "python .cursor/hooks/update_scope_ledger.py",
+        "timeout": 4
+      }
+    ],
+    "stop": [
+      {
+        "command": "python .cursor/hooks/prepare_battle_report.py",
+        "timeout": 4,
+        "loop_limit": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\cuda\\CUDAGraphsC10Utils.h",
+  "name": "CUDAGraphsC10Utils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3071,
+  "content_sha256": "894cc2924d3b4d438690a697f2cf7da0997d7a9426959fd5f6b7298bfabffcab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 80,
+    "char_count": 3071,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/cuda/CUDAStream.h>",
+      "#include <utility>",
+      "// CUDA Graphs utils used by c10 and aten.",
+      "// aten/cuda/CUDAGraphsUtils.cuh adds utils used by aten only.",
+      "namespace c10 {",
+      "namespace cuda {",
+      "using CaptureId_t = unsigned long long;",
+      "// first is set if the instance is created by CUDAGraph::capture_begin.",
+      "// second is set if the instance is created by at::cuda::graph_pool_handle."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_226_894cc2924d3b4d43_CUDAGraphsC10Utils.h.json"
+}

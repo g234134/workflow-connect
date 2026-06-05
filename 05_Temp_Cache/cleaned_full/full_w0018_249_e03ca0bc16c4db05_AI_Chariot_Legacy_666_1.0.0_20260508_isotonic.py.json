@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 249,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_isotonic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_isotonic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17902,
+  "content_sha256": "e03ca0bc16c4db0507534990587a75f78fe5c693ecb5ec10294b5214fb842e8e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 515,
+    "non_empty_lines": 414,
+    "char_count": 17902,
+    "preview_lines": [
+      "\"\"\"Isotonic regression for obtaining monotonic fit to data.\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import math",
+      "import warnings",
+      "from numbers import Real",
+      "import numpy as np",
+      "from scipy import interpolate, optimize",
+      "from scipy.stats import spearmanr",
+      "from sklearn._isotonic import _inplace_contiguous_isotonic_regression, _make_unique"
+    ],
+    "imports": [
+      "import math",
+      "import warnings",
+      "from numbers import Real",
+      "import numpy as np",
+      "from scipy import interpolate, optimize",
+      "from scipy.stats import spearmanr",
+      "from sklearn._isotonic import _inplace_contiguous_isotonic_regression, _make_unique",
+      "from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin, _fit_context",
+      "from sklearn.utils import check_array, check_consistent_length, metadata_routing",
+      "from sklearn.utils._param_validation import Interval, StrOptions, validate_params",
+      "from sklearn.utils.fixes import parse_version, sp_base_version",
+      "from sklearn.utils.validation import _check_sample_weight, check_is_fitted"
+    ],
+    "classes": [
+      "IsotonicRegression"
+    ],
+    "functions": [
+      "check_increasing",
+      "isotonic_regression"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_249_e03ca0bc16c4db05_AI_Chariot_Legacy_666_1.0.0_20260508_isotonic.py.json"
+}

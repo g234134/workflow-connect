@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 100,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\opinfo\\definitions\\fft.py",
+  "name": "fft.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30737,
+  "content_sha256": "6e47f44c9bd0cd7cf7aa2fe30f5045938c8a5d8428159d7dce6ecb95001af554",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 830,
+    "non_empty_lines": 807,
+    "char_count": 30737,
+    "preview_lines": [
+      "import unittest",
+      "from functools import partial",
+      "from typing import List",
+      "import numpy as np",
+      "import torch",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.common_cuda import SM53OrLater",
+      "from torch.testing._internal.common_device_type import precisionOverride",
+      "from torch.testing._internal.common_dtype import (",
+      "    all_types_and,"
+    ],
+    "imports": [
+      "import unittest",
+      "from functools import partial",
+      "from typing import List",
+      "import numpy as np",
+      "import torch",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.common_cuda import SM53OrLater",
+      "from torch.testing._internal.common_device_type import precisionOverride",
+      "from torch.testing._internal.common_dtype import (",
+      "from torch.testing._internal.common_utils import TEST_SCIPY, TEST_WITH_ROCM",
+      "from torch.testing._internal.opinfo.core import (",
+      "from torch.testing._internal.opinfo.refs import (",
+      "import scipy.fft"
+    ],
+    "classes": [
+      "SpectralFuncPythonRefInfo"
+    ],
+    "functions": [
+      "error_inputs_fft",
+      "error_inputs_fftn",
+      "sample_inputs_fft_with_min",
+      "sample_inputs_fftshift"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_100_6e47f44c9bd0cd7c_fft.py.json"
+}

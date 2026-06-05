@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 447,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\ParallelFuture.h",
+  "name": "ParallelFuture.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 305,
+  "content_sha256": "dd049e7813328c7d2797ac1969074b6514934c593434e71e35816a99c780517d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 305,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/ivalue.h>",
+      "#include <c10/macros/Macros.h>",
+      "#include <functional>",
+      "namespace at {",
+      "// Launches intra-op parallel task, returns a future",
+      "TORCH_API c10::intrusive_ptr<c10::ivalue::Future> intraop_launch_future(",
+      "    std::function<void()> func);",
+      "} // namespace at"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_447_dd049e7813328c7d_ParallelFuture.h.json"
+}

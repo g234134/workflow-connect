@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_non_min_pendulum.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_non_min_pendulum.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1503,
+  "content_sha256": "0ddc5c5ab9b71cc42ecb26373e4eac2876f845785010cfc4298dc761908ff1e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 35,
+    "char_count": 1503,
+    "preview_lines": [
+      "import sympy.physics.mechanics as _me",
+      "import sympy as _sm",
+      "import math as m",
+      "import numpy as _np",
+      "q1, q2 = _me.dynamicsymbols('q1 q2')",
+      "q1_d, q2_d = _me.dynamicsymbols('q1_ q2_', 1)",
+      "q1_dd, q2_dd = _me.dynamicsymbols('q1_ q2_', 2)",
+      "l, m, g = _sm.symbols('l m g', real=True)",
+      "frame_n = _me.ReferenceFrame('n')",
+      "point_pn = _me.Point('pn')"
+    ],
+    "imports": [
+      "import sympy.physics.mechanics as _me",
+      "import sympy as _sm",
+      "import math as m",
+      "import numpy as _np"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_430_0ddc5c5ab9b71cc4_AI_Chariot_Legacy_666_1.0.0_20260508_non_min_pendulum.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 414,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vertex_passthrough_logging_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vertex_passthrough_logging_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33298,
+  "content_sha256": "c932571efa96d6e9cfb727f6cdc9c78839a77e2cae447d6b4f15ca8d56fff401",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 812,
+    "non_empty_lines": 716,
+    "char_count": 33298,
+    "preview_lines": [
+      "import re",
+      "from datetime import datetime",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Union, cast",
+      "from urllib.parse import urlparse",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.llms.vertex_ai.gemini.vertex_and_google_ai_studio_gemini import (",
+      "    ModelResponseIterator as VertexModelResponseIterator,"
+    ],
+    "imports": [
+      "import re",
+      "from datetime import datetime",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Union, cast",
+      "from urllib.parse import urlparse",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.llms.vertex_ai.gemini.vertex_and_google_ai_studio_gemini import (",
+      "from litellm.llms.vertex_ai.vector_stores.search_api.transformation import (",
+      "from litellm.llms.vertex_ai.videos.transformation import VertexAIVideoConfig",
+      "from litellm.proxy._types import PassThroughEndpointLoggingTypedDict",
+      "from litellm.types.utils import (",
+      "from litellm.types.utils import LiteLLMBatch",
+      "from ..success_handler import PassThroughEndpointLogging",
+      "from litellm.llms.vertex_ai.vertex_ai_partner_models import ("
+    ],
+    "classes": [
+      "VertexPassthroughLoggingHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_414_c932571efa96d6e9_AI_Chariot_Legacy_666_1.0.0_20260508_vertex_passthrough_logging_handler.py.json"
+}

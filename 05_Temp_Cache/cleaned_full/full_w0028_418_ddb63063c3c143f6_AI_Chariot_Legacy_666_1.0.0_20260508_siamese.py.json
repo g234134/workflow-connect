@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_siamese.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_siamese.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1667,
+  "content_sha256": "ddb63063c3c143f651d0ccee2f6231e39b5dbc561c2aa03ecdaba9e45cc58b99",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 43,
+    "char_count": 1667,
+    "preview_lines": [
+      "from typing import Callable, Optional, Tuple, TypeVar",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ArrayXd",
+      "from ..util import get_width",
+      "LayerT = TypeVar(\"LayerT\")",
+      "SimT = TypeVar(\"SimT\")",
+      "InT = Tuple[LayerT, LayerT]",
+      "OutT = TypeVar(\"OutT\", bound=ArrayXd)",
+      "@registry.layers(\"siamese.v1\")"
+    ],
+    "imports": [
+      "from typing import Callable, Optional, Tuple, TypeVar",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ArrayXd",
+      "from ..util import get_width"
+    ],
+    "classes": [],
+    "functions": [
+      "siamese",
+      "forward",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_418_ddb63063c3c143f6_AI_Chariot_Legacy_666_1.0.0_20260508_siamese.py.json"
+}

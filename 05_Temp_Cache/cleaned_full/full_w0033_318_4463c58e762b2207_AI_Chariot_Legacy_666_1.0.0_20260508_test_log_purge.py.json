@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 318,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_log_purge.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_log_purge.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1823,
+  "content_sha256": "4463c58e762b2207934e99248b200c7e03cffbbe16bc9ee1afb823b377237377",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 38,
+    "char_count": 1823,
+    "preview_lines": [
+      "from chromadb.api.client import Client",
+      "from chromadb.config import System",
+      "from chromadb.test.property import invariants",
+      "def test_log_purge(sqlite_persistent: System) -> None:",
+      "    client = Client.from_system(sqlite_persistent)",
+      "    first_collection = client.create_collection(",
+      "        \"first_collection\", metadata={\"hnsw:sync_threshold\": 10, \"hnsw:batch_size\": 10}",
+      "    )",
+      "    second_collection = client.create_collection(",
+      "        \"second_collection\", metadata={\"hnsw:sync_threshold\": 10, \"hnsw:batch_size\": 10}"
+    ],
+    "imports": [
+      "from chromadb.api.client import Client",
+      "from chromadb.config import System",
+      "from chromadb.test.property import invariants"
+    ],
+    "classes": [],
+    "functions": [
+      "test_log_purge",
+      "test_log_purge_with_multiple_collections"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_318_4463c58e762b2207_AI_Chariot_Legacy_666_1.0.0_20260508_test_log_purge.py.json"
+}

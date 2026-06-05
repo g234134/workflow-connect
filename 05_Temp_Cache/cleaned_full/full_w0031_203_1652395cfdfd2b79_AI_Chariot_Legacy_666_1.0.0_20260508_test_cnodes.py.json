@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cnodes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cnodes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3039,
+  "content_sha256": "1652395cfdfd2b7902d5058a43e40a933350c3c4d13a38f998a5c984ad545367",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 88,
+    "char_count": 3039,
+    "preview_lines": [
+      "from sympy.core.symbol import symbols",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.codegen.ast import Declaration, Variable, float64, int64, String, CodeBlock",
+      "from sympy.codegen.cnodes import (",
+      "    alignof, CommaOperator, goto, Label, PreDecrement, PostDecrement, PreIncrement, PostIncrement,",
+      "    sizeof, union, struct",
+      ")",
+      "x, y = symbols('x y')",
+      "def test_alignof():",
+      "    ax = alignof(x)"
+    ],
+    "imports": [
+      "from sympy.core.symbol import symbols",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.codegen.ast import Declaration, Variable, float64, int64, String, CodeBlock",
+      "from sympy.codegen.cnodes import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_alignof",
+      "test_CommaOperator",
+      "test_goto_Label",
+      "test_PreDecrement",
+      "test_PostDecrement",
+      "test_PreIncrement",
+      "test_PostIncrement",
+      "test_sizeof",
+      "test_struct",
+      "test_union"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_203_1652395cfdfd2b79_AI_Chariot_Legacy_666_1.0.0_20260508_test_cnodes.py.json"
+}

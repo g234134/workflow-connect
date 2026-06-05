@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 31,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_map_reduce_prompt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_map_reduce_prompt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6954,
+  "content_sha256": "20302624a385fe0f590d4654cc3bf4e2079def82954ecc9f5a8ecc821dc61544",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 48,
+    "char_count": 6944,
+    "preview_lines": [
+      "from langchain_core.prompts import PromptTemplate",
+      "question_prompt_template = \"\"\"Use the following portion of a long document to see if any of the text is relevant to answer the question.",
+      "Return any relevant text verbatim.",
+      "{context}",
+      "Question: {question}",
+      "Relevant text, if any:\"\"\"  # noqa: E501",
+      "QUESTION_PROMPT = PromptTemplate(",
+      "    template=question_prompt_template, input_variables=[\"context\", \"question\"]",
+      ")",
+      "combine_prompt_template = \"\"\"Given the following extracted parts of a long document and a question, create a final answer with references (\"SOURCES\")."
+    ],
+    "imports": [
+      "from langchain_core.prompts import PromptTemplate"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_031_20302624a385fe0f_AI_Chariot_Legacy_666_1.0.0_20260508_map_reduce_prompt.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\huggingface\\langchain_huggingface\\llms\\huggingface_pipeline.py",
+  "name": "huggingface_pipeline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15213,
+  "content_sha256": "6f160836f85bf67533d84388075187d0a66afc5562f765ee626269f824492979",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 422,
+    "non_empty_lines": 364,
+    "char_count": 15210,
+    "preview_lines": [
+      "from __future__ import annotations  # type: ignore[import-not-found]",
+      "import importlib.util",
+      "import logging",
+      "from collections.abc import Iterator, Mapping",
+      "from typing import Any",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import BaseLLM",
+      "from langchain_core.outputs import Generation, GenerationChunk, LLMResult",
+      "from pydantic import ConfigDict, model_validator",
+      "from langchain_huggingface.utils.import_utils import ("
+    ],
+    "imports": [
+      "from __future__ import annotations  # type: ignore[import-not-found]",
+      "import importlib.util",
+      "import logging",
+      "from collections.abc import Iterator, Mapping",
+      "from typing import Any",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import BaseLLM",
+      "from langchain_core.outputs import Generation, GenerationChunk, LLMResult",
+      "from pydantic import ConfigDict, model_validator",
+      "from langchain_huggingface.utils.import_utils import (",
+      "from langchain_huggingface import HuggingFacePipeline",
+      "from langchain_huggingface import HuggingFacePipeline",
+      "from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline",
+      "from transformers import (  # type: ignore[import]",
+      "from transformers import pipeline as hf_pipeline  # type: ignore[import]",
+      "from optimum.intel import (  # type: ignore[import]",
+      "from optimum.intel import ("
+    ],
+    "classes": [
+      "HuggingFacePipeline"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_087_6f160836f85bf675_huggingface_pipeline.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bigdl_llm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bigdl_llm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5515,
+  "content_sha256": "5938f65fcb023b829f04b43a688e81eee44d74dcb05e5d01667c8bbb66558a0f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 140,
+    "char_count": 5515,
+    "preview_lines": [
+      "import logging",
+      "from typing import Any, Optional",
+      "from langchain_core.language_models.llms import LLM",
+      "from langchain_community.llms.ipex_llm import IpexLLM",
+      "logger = logging.getLogger(__name__)",
+      "class BigdlLLM(IpexLLM):",
+      "    \"\"\"Wrapper around the BigdlLLM model",
+      "    Example:",
+      "        .. code-block:: python",
+      "            from langchain_community.llms import BigdlLLM"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Any, Optional",
+      "from langchain_core.language_models.llms import LLM",
+      "from langchain_community.llms.ipex_llm import IpexLLM",
+      "from langchain_community.llms import BigdlLLM",
+      "from bigdl.llm.transformers import (",
+      "from transformers import AutoTokenizer, LlamaTokenizer",
+      "from bigdl.llm.transformers import (",
+      "from transformers import AutoTokenizer, LlamaTokenizer"
+    ],
+    "classes": [
+      "BigdlLLM"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_251_5938f65fcb023b82_AI_Chariot_Legacy_666_1.0.0_20260508_bigdl_llm.py.json"
+}

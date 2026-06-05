@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mypy_plugin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mypy_plugin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7046,
+  "content_sha256": "788fb4c70a2d578ba157b0e4a65eaeb87d798d2130a2f8237ee91b70b051af7e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 200,
+    "non_empty_lines": 158,
+    "char_count": 7046,
+    "preview_lines": [
+      "\"\"\"A mypy_ plugin for managing a number of platform-specific annotations.",
+      "Its functionality can be split into three distinct parts:",
+      "* Assigning the (platform-dependent) precisions of certain `~numpy.number`",
+      "  subclasses, including the likes of `~numpy.int_`, `~numpy.intp` and",
+      "  `~numpy.longlong`. See the documentation on",
+      "  :ref:`scalar types <arrays.scalars.built-in>` for a comprehensive overview",
+      "  of the affected classes. Without the plugin the precision of all relevant",
+      "  classes will be inferred as `~typing.Any`.",
+      "* Removing all extended-precision `~numpy.number` subclasses that are",
+      "  unavailable for the platform in question. Most notably this includes the"
+    ],
+    "imports": [
+      "from collections.abc import Callable, Iterable",
+      "from typing import TYPE_CHECKING, Final, TypeAlias, cast",
+      "import numpy as np",
+      "from mypy.typeanal import TypeAnalyser",
+      "import mypy.types",
+      "from mypy.build import PRI_MED",
+      "from mypy.nodes import ImportFrom, MypyFile, Statement",
+      "from mypy.plugin import AnalyzeTypeContext, Plugin",
+      "import warnings"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_precision_dict",
+      "_get_extended_precision_list",
+      "_get_c_intp_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_268_788fb4c70a2d578b_AI_Chariot_Legacy_666_1.0.0_20260508_mypy_plugin.py.json"
+}

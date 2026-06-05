@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 500,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_genai_vertex_embedding.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_genai_vertex_embedding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9419,
+  "content_sha256": "38614c10b5c131b64a651a927317b90c95fc03a2ec4f2933976e9b73425808f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 198,
+    "char_count": 9419,
+    "preview_lines": [
+      "\"\"\"Google Vertex AI embedding function implementation.",
+      "This module supports both the new google-genai SDK and the deprecated",
+      "vertexai.language_models module for backwards compatibility.",
+      "The deprecated vertexai.language_models module will be removed after June 24, 2026.",
+      "Migration guide: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/deprecations/genai-vertexai-sdk",
+      "\"\"\"",
+      "from typing import Any, ClassVar, cast",
+      "import warnings",
+      "from chromadb.api.types import Documents, EmbeddingFunction, Embeddings",
+      "from typing_extensions import Unpack"
+    ],
+    "imports": [
+      "from typing import Any, ClassVar, cast",
+      "import warnings",
+      "from chromadb.api.types import Documents, EmbeddingFunction, Embeddings",
+      "from typing_extensions import Unpack",
+      "from crewai.rag.embeddings.providers.google.types import VertexAIProviderConfig",
+      "import vertexai  # type: ignore[import-not-found]",
+      "from vertexai.language_models import (  # type: ignore[import-not-found]",
+      "from google import genai",
+      "from google.genai.types import EmbedContentConfig"
+    ],
+    "classes": [
+      "GoogleGenAIVertexEmbeddingFunction"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_500_38614c10b5c131b6_AI_Chariot_Legacy_666_1.0.0_20260508_genai_vertex_embedding.py.json"
+}

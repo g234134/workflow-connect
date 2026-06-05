@@ -1,0 +1,30 @@
+{
+  "artifact_id": "ART-REL-DEC",
+  "ticket_id": "W4-A-K2-ROLLOUT-INTEGRATION",
+  "pilot_artifact_id": "W3-A-K2-ASK-ROLLOUT-PILOT",
+  "release_id": "w4a-p2-canary-2026-05-29",
+  "decision": "approve",
+  "k2_phase": "internal_canary",
+  "traffic_percent": 5,
+  "shadow_window_days": null,
+  "release_scope": {
+    "summary": "Internal canary 5% on K-2×ask — staging-internal (W4-A pilot stream)",
+    "change_class": "CHG-OBS-ONLY",
+    "entrypoint": "ask_api",
+    "merge_interface": "merge_ask_and_k2"
+  },
+  "target_audience_or_env": "staging-internal",
+  "rollback_strategy_draft": "Set cohort to 0% / ask-only; disable primary_source=k2 for cohort; re-run wf_k2_rollout_run.ps1 -Phase rollback.",
+  "qa_verdict_ref": {
+    "artifact": "shadow_run_latest.md",
+    "note": "Shadow step passed in same run_id before canary"
+  },
+  "neighbor_authority_ref": [
+    "root_plan_4.8",
+    "k2_deployment_governance"
+  ],
+  "p0_blockers": [],
+  "decided_at": "2026-05-29",
+  "decided_by_role": "release",
+  "message": "W4-A internal canary pilot — not remote prod rollout."
+}

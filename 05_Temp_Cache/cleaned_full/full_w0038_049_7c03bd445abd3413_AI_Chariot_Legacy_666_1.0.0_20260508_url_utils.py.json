@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_url_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_url_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1211,
+  "content_sha256": "7c03bd445abd341315f2a06f926704dc304c00f02d5b93e5ed7b9707d8b8f5bf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 23,
+    "char_count": 1211,
+    "preview_lines": [
+      "from pathlib import PureWindowsPath, Path",
+      "from urllib.request import url2pathname",
+      "from urllib.parse import urlparse, unquote",
+      "def path_from_fileurl(urlstr, **kwargs):",
+      "    \"\"\"",
+      "    Take a file:// url and return a Path.",
+      "    Adapted from:",
+      "        https://github.com/AcademySoftwareFoundation/OpenTimelineIO/blob/4c17494dee2e515aedc8623741556fae3e4afe72/src/py-opentimelineio/opentimelineio/url_utils.py#L43-L72",
+      "    \"\"\"",
+      "    # explicitly unquote first in case drive colon is url encoded"
+    ],
+    "imports": [
+      "from pathlib import PureWindowsPath, Path",
+      "from urllib.request import url2pathname",
+      "from urllib.parse import urlparse, unquote"
+    ],
+    "classes": [],
+    "functions": [
+      "path_from_fileurl"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_049_7c03bd445abd3413_AI_Chariot_Legacy_666_1.0.0_20260508_url_utils.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 455,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\embeddings\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3931,
+  "content_sha256": "ff86b0c5903b44ac94929ad305adcb6b45ac8295b69f5419b4a531d6eb5f0d61",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 87,
+    "char_count": 3928,
+    "preview_lines": [
+      "\"\"\"Test embeddings base module.\"\"\"",
+      "import pytest",
+      "from langchain.embeddings.base import (",
+      "    _BUILTIN_PROVIDERS,",
+      "    _infer_model_and_provider,",
+      "    _parse_model_string,",
+      ")",
+      "@pytest.mark.parametrize(",
+      "    (\"model_string\", \"expected_provider\", \"expected_model\"),",
+      "    ["
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain.embeddings.base import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_parse_model_string",
+      "test_parse_model_string_errors",
+      "test_infer_model_and_provider",
+      "test_infer_model_and_provider_errors",
+      "test_supported_providers_package_names",
+      "test_is_sorted"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_455_ff86b0c5903b44ac_test_base.py.json"
+}

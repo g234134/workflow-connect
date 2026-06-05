@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5746,
+  "content_sha256": "0f831c148780234fa30232da2fc9f9e3f7b91382abd2d1bc8b2c02fe74e44648",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 179,
+    "non_empty_lines": 143,
+    "char_count": 5746,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import collections",
+      "import typing",
+      "from dataclasses import fields",
+      "from enum import auto, Enum",
+      "from typing import Dict, List, Optional, Union",
+      "# NOTE: if these fail asserts submit a PR to increase them",
+      "TRITON_MAX_BLOCK = {",
+      "    \"X\": 2048,",
+      "    \"Y\": 1024,"
+    ],
+    "imports": [
+      "import collections",
+      "import typing",
+      "from dataclasses import fields",
+      "from enum import auto, Enum",
+      "from typing import Dict, List, Optional, Union",
+      "from triton.compiler.compiler import AttrsDescriptor",
+      "import torch",
+      "from torch._dynamo.device_interface import get_interface_for_device"
+    ],
+    "classes": [
+      "ReductionHint",
+      "TileHint",
+      "HeuristicType",
+      "AutotuneHint",
+      "DeviceProperties",
+      "HalideInputSpec",
+      "HalideMeta"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_438_0f831c148780234f_AI_Chariot_Legacy_666_1.0.0_20260508_hints.py.json"
+}

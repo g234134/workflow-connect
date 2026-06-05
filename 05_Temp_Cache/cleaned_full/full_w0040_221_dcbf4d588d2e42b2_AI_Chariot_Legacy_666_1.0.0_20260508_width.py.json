@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_width.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_width.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6284,
+  "content_sha256": "dcbf4d588d2e42b247bc717f22f0bfb5b5b572af78ce00c43d28ee6ddba0f2a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 210,
+    "non_empty_lines": 162,
+    "char_count": 6284,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "\"\"\"T2CharString glyph width optimizer.",
+      "CFF glyphs whose width equals the CFF Private dictionary's ``defaultWidthX``",
+      "value do not need to specify their width in their charstring, saving bytes.",
+      "This module determines the optimum ``defaultWidthX`` and ``nominalWidthX``",
+      "values for a font, when provided with a list of glyph widths.\"\"\"",
+      "from fontTools.ttLib import TTFont",
+      "from collections import defaultdict",
+      "from operator import add",
+      "from functools import reduce"
+    ],
+    "imports": [
+      "from fontTools.ttLib import TTFont",
+      "from collections import defaultdict",
+      "from operator import add",
+      "from functools import reduce",
+      "import argparse"
+    ],
+    "classes": [
+      "missingdict"
+    ],
+    "functions": [
+      "cumSum",
+      "byteCost",
+      "optimizeWidthsBruteforce",
+      "optimizeWidths",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_221_dcbf4d588d2e42b2_AI_Chariot_Legacy_666_1.0.0_20260508_width.py.json"
+}

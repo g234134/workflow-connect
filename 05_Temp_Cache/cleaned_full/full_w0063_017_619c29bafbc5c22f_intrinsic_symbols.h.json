@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\tensorexpr\\intrinsic_symbols.h",
+  "name": "intrinsic_symbols.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 442,
+  "content_sha256": "619c29bafbc5c22f87f02f5866dd805cdd430e8647031434d97d75580bce86cb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 16,
+    "char_count": 442,
+    "preview_lines": [
+      "#pragma once",
+      "#ifdef TORCH_ENABLE_LLVM",
+      "#include <c10/util/ArrayRef.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "namespace tensorexpr {",
+      "struct SymbolAddress {",
+      "  const char* symbol;",
+      "  void* address;",
+      "  SymbolAddress(const char* sym, void* addr) : symbol(sym), address(addr) {}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_017_619c29bafbc5c22f_intrinsic_symbols.h.json"
+}

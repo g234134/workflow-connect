@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 283,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_autocast_mode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_autocast_mode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22592,
+  "content_sha256": "5c7bc70000196f33b91d0c457e4d91380db3b0c8b1da8c30b25bf04060556f84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 513,
+    "non_empty_lines": 435,
+    "char_count": 22592,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import collections",
+      "import functools",
+      "import warnings",
+      "from typing import Any, Optional",
+      "import torch",
+      "from torch.types import _dtype",
+      "try:",
+      "    import numpy as np",
+      "    HAS_NUMPY = True"
+    ],
+    "imports": [
+      "import collections",
+      "import functools",
+      "import warnings",
+      "from typing import Any, Optional",
+      "import torch",
+      "from torch.types import _dtype",
+      "import numpy as np"
+    ],
+    "classes": [
+      "autocast"
+    ],
+    "functions": [
+      "is_autocast_available",
+      "autocast_decorator",
+      "_enter_autocast",
+      "_exit_autocast",
+      "_cast",
+      "custom_fwd",
+      "custom_bwd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_283_5c7bc70000196f33_AI_Chariot_Legacy_666_1.0.0_20260508_autocast_mode.py.json"
+}

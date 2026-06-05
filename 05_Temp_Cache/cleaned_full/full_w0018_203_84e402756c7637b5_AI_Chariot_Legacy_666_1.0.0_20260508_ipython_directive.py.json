@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ipython_directive.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ipython_directive.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 45154,
+  "content_sha256": "84e402756c7637b5b3049547330eea56f0302c9c41649c4508496a478b97bea6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1278,
+    "non_empty_lines": 1037,
+    "char_count": 45152,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "\"\"\"",
+      "Sphinx directive to support embedded IPython code.",
+      "IPython provides an extension for `Sphinx <http://www.sphinx-doc.org/>`_ to",
+      "highlight and run code.",
+      "This directive allows pasting of entire interactive IPython sessions, prompts",
+      "and all, and their code will actually get re-executed at doc build time, with",
+      "all prompts renumbered sequentially. It also allows you to input code as a pure",
+      "python input by giving the argument python to the directive. The output looks",
+      "like an interactive ipython section."
+    ],
+    "imports": [
+      "import atexit",
+      "import errno",
+      "import os",
+      "import pathlib",
+      "import re",
+      "import sys",
+      "import tempfile",
+      "import ast",
+      "import warnings",
+      "import shutil",
+      "from io import StringIO",
+      "from typing import Any, Dict, Set"
+    ],
+    "classes": [
+      "EmbeddedSphinxShell",
+      "IPythonDirective"
+    ],
+    "functions": [
+      "block_parser",
+      "setup",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_203_84e402756c7637b5_AI_Chariot_Legacy_666_1.0.0_20260508_ipython_directive.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bigquery.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bigquery.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 649,
+  "content_sha256": "6c3cf403a53f1d6acb597ebe0e03d9a761b002026b4321c8e6280f172c24831c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 649,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.document_loaders import BigQueryLoader",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {\"BigQueryLoader\": \"langchain_community.document_loaders\"}",
+      "_import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)",
+      "def __getattr__(name: str) -> Any:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.document_loaders import BigQueryLoader"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_252_6c3cf403a53f1d6a_AI_Chariot_Legacy_666_1.0.0_20260508_bigquery.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__exceptions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__exceptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1894,
+  "content_sha256": "b958052a0c7feae6fd30727fa89ef10b9ce27beb9156d6c9a348f7143a1702a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 45,
+    "char_count": 1894,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "def find_stacklevel() -> int:",
+      "    \"\"\"Find the first place in the stack that is not inside narwhals.",
+      "    Taken from:",
+      "    https://github.com/pandas-dev/pandas/blob/ab89c53f48df67709a533b6a95ce3d911871a0a8/pandas/util/_exceptions.py#L30-L51",
+      "    \"\"\"",
+      "    import inspect",
+      "    from pathlib import Path",
+      "    import narwhals as nw"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "import inspect",
+      "from pathlib import Path",
+      "import narwhals as nw"
+    ],
+    "classes": [],
+    "functions": [
+      "find_stacklevel",
+      "issue_deprecation_warning",
+      "issue_warning"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_113_b958052a0c7feae6_AI_Chariot_Legacy_666_1.0.0_20260508__exceptions.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_delete_file.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_delete_file.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1168,
+  "content_sha256": "de4b4caa392f22ec291492f9c5338ff3b57b0c6f24f6ce1156cb8a41724d03e8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 35,
+    "char_count": 1168,
+    "preview_lines": [
+      "import os",
+      "import random",
+      "import gc",
+      "import time",
+      "# Borrowed from https://github.com/rogerbinns/apsw/blob/master/apsw/tests.py#L224",
+      "# Used to delete sqlite files on Windows, since Windows file locking",
+      "# behaves differently to other operating systems",
+      "# This should only be used for test or non-production code, such as in reset_state.",
+      "def delete_file(name: str) -> None:",
+      "    try:"
+    ],
+    "imports": [
+      "import os",
+      "import random",
+      "import gc",
+      "import time"
+    ],
+    "classes": [],
+    "functions": [
+      "delete_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_357_de4b4caa392f22ec_AI_Chariot_Legacy_666_1.0.0_20260508_delete_file.py.json"
+}

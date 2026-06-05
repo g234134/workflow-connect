@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 300,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pyinstaller-smoke.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pyinstaller-smoke.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1175,
+  "content_sha256": "c6dddd97f0e3c6ecd54cfaea99598c3999b9fb6e30046d93c6575097bf17b758",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 26,
+    "char_count": 1175,
+    "preview_lines": [
+      "\"\"\"A crude *bit of everything* smoke test to verify PyInstaller compatibility.",
+      "PyInstaller typically goes wrong by forgetting to package modules, extension",
+      "modules or shared libraries. This script should aim to touch as many of those",
+      "as possible in an attempt to trip a ModuleNotFoundError or a DLL load failure",
+      "due to an uncollected resource. Missing resources are unlikely to lead to",
+      "arithmetic errors so there's generally no need to verify any calculation's",
+      "output - merely that it made it to the end OK. This script should not",
+      "explicitly import any of numpy's submodules as that gives PyInstaller undue",
+      "hints that those submodules exist and should be collected (accessing implicitly",
+      "loaded submodules is OK)."
+    ],
+    "imports": [
+      "import numpy as np"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_300_c6dddd97f0e3c6ec_AI_Chariot_Legacy_666_1.0.0_20260508_pyinstaller-smoke.py.json"
+}

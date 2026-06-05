@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_connected_components.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_connected_components.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4067,
+  "content_sha256": "1e25bd812fedb4b3c197d5ef75509164644a7d6768896e0fb26553aa9d50fa44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 119,
+    "non_empty_lines": 93,
+    "char_count": 4067,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_array_almost_equal",
+      "from scipy.sparse import csgraph, csr_array",
+      "def test_weak_connections():",
+      "    Xde = np.array([[0, 1, 0],",
+      "                    [0, 0, 0],",
+      "                    [0, 0, 0]])",
+      "    Xsp = csgraph.csgraph_from_dense(Xde, null_value=0)",
+      "    for X in Xsp, Xde:",
+      "        n_components, labels =\\"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_array_almost_equal",
+      "from scipy.sparse import csgraph, csr_array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_weak_connections",
+      "test_strong_connections",
+      "test_strong_connections2",
+      "test_weak_connections2",
+      "test_ticket1876",
+      "test_fully_connected_graph",
+      "test_int64_indices_undirected",
+      "test_int64_indices_directed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_280_1e25bd812fedb4b3_AI_Chariot_Legacy_666_1.0.0_20260508_test_connected_components.py.json"
+}

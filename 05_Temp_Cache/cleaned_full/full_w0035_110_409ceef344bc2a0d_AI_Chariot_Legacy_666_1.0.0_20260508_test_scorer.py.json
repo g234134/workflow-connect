@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 110,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_scorer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_scorer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18015,
+  "content_sha256": "409ceef344bc2a0db4c183f0c3e1269d2adbdb5ff34be21a508cc63a00ddb3bf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 537,
+    "non_empty_lines": 475,
+    "char_count": 18015,
+    "preview_lines": [
+      "import pytest",
+      "from numpy.testing import assert_almost_equal, assert_array_almost_equal",
+      "from pytest import approx",
+      "from spacy.lang.en import English",
+      "from spacy.scorer import PRFScore, ROCAUCScore, Scorer, _roc_auc_score, _roc_curve",
+      "from spacy.tokens import Doc, Span",
+      "from spacy.training import Example",
+      "from spacy.training.iob_utils import offsets_to_biluo_tags",
+      "test_las_apple = [",
+      "    ["
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy.testing import assert_almost_equal, assert_array_almost_equal",
+      "from pytest import approx",
+      "from spacy.lang.en import English",
+      "from spacy.scorer import PRFScore, ROCAUCScore, Scorer, _roc_auc_score, _roc_curve",
+      "from spacy.tokens import Doc, Span",
+      "from spacy.training import Example",
+      "from spacy.training.iob_utils import offsets_to_biluo_tags"
+    ],
+    "classes": [],
+    "functions": [
+      "tagged_doc",
+      "sented_doc",
+      "test_tokenization",
+      "test_sents",
+      "test_las_per_type",
+      "test_ner_per_type",
+      "test_tag_score",
+      "test_partial_annotation",
+      "test_roc_auc_score",
+      "test_score_spans",
+      "test_prf_score",
+      "test_score_cats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_110_409ceef344bc2a0d_AI_Chariot_Legacy_666_1.0.0_20260508_test_scorer.py.json"
+}

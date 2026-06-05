@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 411,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\middleware\\core\\test_sync_async_wrappers.py",
+  "name": "test_sync_async_wrappers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17336,
+  "content_sha256": "9360840401757033ff20eae15d93cc2a76eb8ca381f17e23e6d6d8698321e8cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 490,
+    "non_empty_lines": 410,
+    "char_count": 17333,
+    "preview_lines": [
+      "\"\"\"Tests for sync/async middleware composition with wrap_tool_call and awrap_tool_call.",
+      "These tests verify the desired behavior:",
+      "1. If middleware defines both sync and async -> use both on respective paths",
+      "2. If middleware defines only sync -> use on sync path, raise NotImplementedError on async path",
+      "3. If middleware defines only async -> use on async path, raise NotImplementedError on sync path",
+      "\"\"\"",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage, ToolCall, ToolMessage"
+    ],
+    "imports": [
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage, ToolCall, ToolMessage",
+      "from langchain_core.tools import tool",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from langgraph.types import Command",
+      "from langchain.agents.factory import create_agent",
+      "from langchain.agents.middleware.types import AgentMiddleware, ToolCallRequest, wrap_tool_call",
+      "from tests.unit_tests.agents.model import FakeToolCallingModel"
+    ],
+    "classes": [
+      "TestSyncAsyncMiddlewareComposition"
+    ],
+    "functions": [
+      "search",
+      "calculator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_411_9360840401757033_test_sync_async_wrappers.py.json"
+}

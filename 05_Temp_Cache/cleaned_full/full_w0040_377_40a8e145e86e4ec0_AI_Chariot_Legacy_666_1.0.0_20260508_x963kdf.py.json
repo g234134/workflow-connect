@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_x963kdf.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_x963kdf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 456,
+  "content_sha256": "40a8e145e86e4ec02cb4bdfce1b29fbe3bafd727dd6a6007561b014567a7d95c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 456,
+    "preview_lines": [
+      "# This file is dual licensed under the terms of the Apache License, Version",
+      "# 2.0, and the BSD License. See the LICENSE file in the root of this repository",
+      "# for complete details.",
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives.kdf import KeyDerivationFunction",
+      "X963KDF = rust_openssl.kdf.X963KDF",
+      "KeyDerivationFunction.register(X963KDF)",
+      "__all__ = [\"X963KDF\"]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives.kdf import KeyDerivationFunction"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_377_40a8e145e86e4ec0_AI_Chariot_Legacy_666_1.0.0_20260508_x963kdf.py.json"
+}

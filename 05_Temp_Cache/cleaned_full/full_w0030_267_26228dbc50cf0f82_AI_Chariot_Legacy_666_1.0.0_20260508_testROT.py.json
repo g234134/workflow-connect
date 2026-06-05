@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 267,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testROT.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testROT.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 793,
+  "content_sha256": "26228dbc50cf0f82955f26d138a6b885521a5d7e879c0b7572c544c8aa10b217",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 23,
+    "char_count": 793,
+    "preview_lines": [
+      "import unittest",
+      "import pythoncom",
+      "import win32com.test.util",
+      "import winerror",
+      "class TestROT(win32com.test.util.TestCase):",
+      "    def testit(self):",
+      "        ctx = pythoncom.CreateBindCtx()",
+      "        rot = pythoncom.GetRunningObjectTable()",
+      "        num = 0",
+      "        for mk in rot:"
+    ],
+    "imports": [
+      "import unittest",
+      "import pythoncom",
+      "import win32com.test.util",
+      "import winerror"
+    ],
+    "classes": [
+      "TestROT"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_267_26228dbc50cf0f82_AI_Chariot_Legacy_666_1.0.0_20260508_testROT.py.json"
+}

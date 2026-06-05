@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 47,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_cleanup.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_cleanup.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1428,
+  "content_sha256": "14f7c78c17e4fe90a89eceb49d9a785cb62250d8f3b1d205a97d1f718b637d28",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 38,
+    "char_count": 1428,
+    "preview_lines": [
+      "\"\"\"",
+      "Prometheus multiprocess directory cleanup utilities.",
+      "Wipes all .db files on startup so workers start with a clean slate.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import glob",
+      "import os",
+      "from litellm._logging import verbose_proxy_logger",
+      "def wipe_directory(directory: str) -> None:",
+      "    \"\"\"Delete all .db files in the directory. Called once before workers fork.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import glob",
+      "import os",
+      "from litellm._logging import verbose_proxy_logger",
+      "from prometheus_client import multiprocess"
+    ],
+    "classes": [],
+    "functions": [
+      "wipe_directory",
+      "mark_worker_exit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_047_14f7c78c17e4fe90_AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_cleanup.py.json"
+}

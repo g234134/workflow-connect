@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 332,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\utilities\\enumerative.py",
+  "name": "enumerative.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43585,
+  "content_sha256": "6a1e137792a1a8674f47b1101dc5033ac60b0c7eb84a1db3eb19b9803a494858",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1155,
+    "non_empty_lines": 954,
+    "char_count": 43585,
+    "preview_lines": [
+      "\"\"\"",
+      "Algorithms and classes to support enumerative combinatorics.",
+      "Currently just multiset partitions, but more could be added.",
+      "Terminology (following Knuth, algorithm 7.1.2.5M TAOCP)",
+      "*multiset* aaabbcccc has a *partition* aaabc | bccc",
+      "The submultisets, aaabc and bccc of the partition are called",
+      "*parts*, or sometimes *vectors*.  (Knuth notes that multiset",
+      "partitions can be thought of as partitions of vectors of integers,",
+      "where the ith element of the vector gives the multiplicity of",
+      "element i.)"
+    ],
+    "imports": [],
+    "classes": [
+      "PartComponent",
+      "MultisetPartitionTraverser"
+    ],
+    "functions": [
+      "multiset_partitions_taocp",
+      "factoring_visitor",
+      "list_visitor",
+      "part_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_332_6a1e137792a1a867_enumerative.py.json"
+}

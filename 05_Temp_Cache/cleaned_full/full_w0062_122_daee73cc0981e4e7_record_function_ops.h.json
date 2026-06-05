@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\record_function_ops.h",
+  "name": "record_function_ops.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1027,
+  "content_sha256": "daee73cc0981e4e7e28eefdacc1ff90882ed3ee1a5234e378804f71b7d6a81de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 25,
+    "char_count": 1027,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/record_function.h>",
+      "#include <c10/util/Optional.h>",
+      "#include <torch/custom_class.h>",
+      "namespace torch {",
+      "namespace autograd {",
+      "namespace profiler {",
+      "struct PythonRecordFunction : public torch::CustomClassHolder {",
+      "  at::RecordFunction record;",
+      "  explicit PythonRecordFunction("
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_122_daee73cc0981e4e7_record_function_ops.h.json"
+}

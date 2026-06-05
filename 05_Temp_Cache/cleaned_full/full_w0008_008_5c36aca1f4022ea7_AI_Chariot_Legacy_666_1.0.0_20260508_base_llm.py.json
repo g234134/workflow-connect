@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 8,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_llm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_llm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33667,
+  "content_sha256": "5c36aca1f4022ea77846e787794afef502c0a73da0d52be8e1f6b4baee695280",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 972,
+    "non_empty_lines": 812,
+    "char_count": 33665,
+    "preview_lines": [
+      "\"\"\"Base LLM abstract class for CrewAI.",
+      "This module provides the abstract base class for all LLM implementations",
+      "in CrewAI, including common functionality for native SDK implementations.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Generator",
+      "from contextlib import contextmanager",
+      "import contextvars",
+      "from datetime import datetime"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Generator",
+      "from contextlib import contextmanager",
+      "import contextvars",
+      "from datetime import datetime",
+      "import json",
+      "import logging",
+      "import re",
+      "from typing import TYPE_CHECKING, Any, Final, Literal",
+      "import uuid",
+      "from pydantic import (",
+      "from typing_extensions import TypedDict",
+      "from crewai.events.event_bus import crewai_event_bus",
+      "from crewai.events.types.llm_events import (",
+      "from crewai.events.types.tool_usage_events import (",
+      "from crewai.types.usage_metrics import UsageMetrics",
+      "from crewai_files import format_multimodal_content",
+      "from crewai.agents.agent_builder.base_agent import BaseAgent",
+      "from crewai.task import Task"
+    ],
+    "classes": [
+      "JsonResponseFormat",
+      "BaseLLM"
+    ],
+    "functions": [
+      "llm_call_context",
+      "get_current_call_id"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_008_5c36aca1f4022ea7_AI_Chariot_Legacy_666_1.0.0_20260508_base_llm.py.json"
+}

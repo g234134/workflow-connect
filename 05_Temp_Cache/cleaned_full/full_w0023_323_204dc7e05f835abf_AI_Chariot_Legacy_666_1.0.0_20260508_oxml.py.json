@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 323,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oxml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oxml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8325,
+  "content_sha256": "204dc7e05f835abf104998b4a7173bebb6a9537364f818454ecec78930f9724d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 247,
+    "non_empty_lines": 185,
+    "char_count": 8325,
+    "preview_lines": [
+      "# pyright: reportPrivateUsage=false",
+      "\"\"\"Temporary stand-in for main oxml module.",
+      "This module came across with the PackageReader transplant. Probably much will get",
+      "replaced with objects from the pptx.oxml.core and then this module will either get",
+      "deleted or only hold the package related custom element classes.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import cast",
+      "from lxml import etree",
+      "from docx.opc.constants import NAMESPACE as NS"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import cast",
+      "from lxml import etree",
+      "from docx.opc.constants import NAMESPACE as NS",
+      "from docx.opc.constants import RELATIONSHIP_TARGET_MODE as RTM"
+    ],
+    "classes": [
+      "BaseOxmlElement",
+      "CT_Default",
+      "CT_Override",
+      "CT_Relationship",
+      "CT_Relationships",
+      "CT_Types"
+    ],
+    "functions": [
+      "parse_xml",
+      "qn",
+      "serialize_part_xml",
+      "serialize_for_reading"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_323_204dc7e05f835abf_AI_Chariot_Legacy_666_1.0.0_20260508_oxml.py.json"
+}

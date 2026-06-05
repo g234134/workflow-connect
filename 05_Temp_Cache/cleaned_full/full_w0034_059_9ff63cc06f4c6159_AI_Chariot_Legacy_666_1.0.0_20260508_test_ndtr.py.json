@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 59,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2757,
+  "content_sha256": "9ff63cc06f4c6159993973e02688988cf1a55142dd88fa03405b2e47a1f33d68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 63,
+    "char_count": 2757,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import scipy.special as sc",
+      "def test_ndtr():",
+      "    assert_equal(sc.ndtr(0), 0.5)",
+      "    assert_allclose(sc.ndtr(1), 0.8413447460685429)",
+      "class TestNdtri:",
+      "    def test_zero(self):",
+      "        assert sc.ndtri(0.5) == 0.0",
+      "    def test_asymptotes(self):"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import scipy.special as sc"
+    ],
+    "classes": [
+      "TestNdtri",
+      "TestLogNdtr"
+    ],
+    "functions": [
+      "test_ndtr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_059_9ff63cc06f4c6159_AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtr.py.json"
+}

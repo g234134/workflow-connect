@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__contextlib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__contextlib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6179,
+  "content_sha256": "9f04d5a16b6eb89148b89addfe8475eed4cb331431cbec8048eb5db9a07ed8b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 126,
+    "char_count": 6179,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Extra utilities for working with context managers that should have been",
+      "# in the standard library but are not",
+      "import functools",
+      "import inspect",
+      "import warnings",
+      "import sys",
+      "from typing import Any, Callable, TypeVar, cast",
+      "# Used for annotating the decorator usage of _DecoratorContextManager (e.g.,",
+      "# 'no_grad' and 'enable_grad')."
+    ],
+    "imports": [
+      "import functools",
+      "import inspect",
+      "import warnings",
+      "import sys",
+      "from typing import Any, Callable, TypeVar, cast"
+    ],
+    "classes": [
+      "_DecoratorContextManager",
+      "_NoParamDecoratorContextManager"
+    ],
+    "functions": [
+      "_wrap_generator",
+      "context_decorator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_357_9f04d5a16b6eb891_AI_Chariot_Legacy_666_1.0.0_20260508__contextlib.py.json"
+}

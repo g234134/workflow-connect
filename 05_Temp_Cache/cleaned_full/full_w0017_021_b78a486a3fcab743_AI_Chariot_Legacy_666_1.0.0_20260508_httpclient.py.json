@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 21,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_httpclient.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_httpclient.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32633,
+  "content_sha256": "b78a486a3fcab7434b6c3021345107a05433acb174dc7e46e0cf40f821324a83",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 790,
+    "non_empty_lines": 665,
+    "char_count": 32633,
+    "preview_lines": [
+      "\"\"\"Blocking and non-blocking HTTP client interfaces.",
+      "This module defines a common interface shared by two implementations,",
+      "``simple_httpclient`` and ``curl_httpclient``.  Applications may either",
+      "instantiate their chosen implementation class directly or use the",
+      "`AsyncHTTPClient` class from this module, which selects an implementation",
+      "that can be overridden with the `AsyncHTTPClient.configure` method.",
+      "The default implementation is ``simple_httpclient``, and this is expected",
+      "to be suitable for most users' needs.  However, some applications may wish",
+      "to switch to ``curl_httpclient`` for reasons such as the following:",
+      "* ``curl_httpclient`` has some features not found in ``simple_httpclient``,"
+    ],
+    "imports": [
+      "import datetime",
+      "import functools",
+      "from io import BytesIO",
+      "import ssl",
+      "import time",
+      "import weakref",
+      "from tornado.concurrent import (",
+      "from tornado.escape import utf8, native_str",
+      "from tornado import gen, httputil",
+      "from tornado.ioloop import IOLoop",
+      "from tornado.util import Configurable",
+      "from typing import Type, Any, Union, Dict, Callable, Optional, cast",
+      "from tornado.simple_httpclient import SimpleAsyncHTTPClient"
+    ],
+    "classes": [
+      "HTTPClient",
+      "AsyncHTTPClient",
+      "HTTPRequest",
+      "HTTPResponse",
+      "HTTPClientError",
+      "_RequestProxy"
+    ],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_021_b78a486a3fcab743_AI_Chariot_Legacy_666_1.0.0_20260508_httpclient.py.json"
+}

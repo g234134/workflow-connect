@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 473,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\models\\video\\swin_transformer.py",
+  "name": "swin_transformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28431,
+  "content_sha256": "33be0fdafe2554a33ace0c287859ff9e3a69641da5fa0023b8656fcf31122a95",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 743,
+    "non_empty_lines": 647,
+    "char_count": 28431,
+    "preview_lines": [
+      "# Modified from 2d Swin Transformers in torchvision:",
+      "# https://github.com/pytorch/vision/blob/main/torchvision/models/swin_transformer.py",
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn, Tensor",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn, Tensor",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _KINETICS400_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface",
+      "from ..swin_transformer import PatchMerging, SwinTransformerBlock"
+    ],
+    "classes": [
+      "ShiftedWindowAttention3d",
+      "PatchEmbed3d",
+      "SwinTransformer3d",
+      "Swin3D_T_Weights",
+      "Swin3D_S_Weights",
+      "Swin3D_B_Weights"
+    ],
+    "functions": [
+      "_get_window_and_shift_size",
+      "_get_relative_position_bias",
+      "_compute_pad_size_3d",
+      "_compute_attention_mask_3d",
+      "shifted_window_attention_3d",
+      "_swin_transformer3d",
+      "swin3d_t",
+      "swin3d_s",
+      "swin3d_b"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_473_33be0fdafe2554a3_swin_transformer.py.json"
+}

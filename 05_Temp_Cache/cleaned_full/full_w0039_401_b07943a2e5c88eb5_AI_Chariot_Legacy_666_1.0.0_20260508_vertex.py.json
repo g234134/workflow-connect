@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 401,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vertex.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vertex.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4690,
+  "content_sha256": "b07943a2e5c88eb557cb428a5cff70c8d7abb4e6a4a1c39276897fa3ae97e059",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 111,
+    "char_count": 4690,
+    "preview_lines": [
+      "\"\"\"Google Vertex AI embeddings provider.",
+      "This module supports both the new google-genai SDK and the deprecated",
+      "vertexai.language_models module for backwards compatibility.",
+      "The SDK is automatically selected based on the model name:",
+      "- Legacy models (textembedding-gecko*) use vertexai.language_models (deprecated)",
+      "- New models (gemini-embedding-*, text-embedding-*) use google-genai",
+      "Migration guide: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/deprecations/genai-vertexai-sdk",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from pydantic import AliasChoices, Field"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider",
+      "from crewai.rag.embeddings.providers.google.genai_vertex_embedding import ("
+    ],
+    "classes": [
+      "VertexAIProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_401_b07943a2e5c88eb5_AI_Chariot_Legacy_666_1.0.0_20260508_vertex.py.json"
+}

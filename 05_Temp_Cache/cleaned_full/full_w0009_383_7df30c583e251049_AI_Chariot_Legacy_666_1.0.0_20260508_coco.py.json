@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 383,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_coco.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_coco.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4289,
+  "content_sha256": "7df30c583e2510496030f6f557debb3935354624add8c3e4960877877bc63a34",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 80,
+    "char_count": 4289,
+    "preview_lines": [
+      "import os.path",
+      "from pathlib import Path",
+      "from typing import Any, Callable, List, Optional, Tuple, Union",
+      "from PIL import Image",
+      "from .vision import VisionDataset",
+      "class CocoDetection(VisionDataset):",
+      "    \"\"\"`MS Coco Detection <https://cocodataset.org/#detection-2016>`_ Dataset.",
+      "    It requires the `COCO API to be installed <https://github.com/pdollar/coco/tree/master/PythonAPI>`_.",
+      "    Args:",
+      "        root (str or ``pathlib.Path``): Root directory where images are downloaded to."
+    ],
+    "imports": [
+      "import os.path",
+      "from pathlib import Path",
+      "from typing import Any, Callable, List, Optional, Tuple, Union",
+      "from PIL import Image",
+      "from .vision import VisionDataset",
+      "from pycocotools.coco import COCO",
+      "import torchvision.datasets as dset",
+      "import torchvision.transforms as transforms"
+    ],
+    "classes": [
+      "CocoDetection",
+      "CocoCaptions"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_383_7df30c583e251049_AI_Chariot_Legacy_666_1.0.0_20260508_coco.py.json"
+}

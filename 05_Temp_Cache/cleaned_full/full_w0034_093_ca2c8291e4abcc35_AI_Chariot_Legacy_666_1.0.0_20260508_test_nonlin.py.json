@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_nonlin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_nonlin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19095,
+  "content_sha256": "ca2c8291e4abcc35b5e52516b79c613115288831abceb9aa0c8105d99b59c7de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 536,
+    "non_empty_lines": 419,
+    "char_count": 19095,
+    "preview_lines": [
+      "\"\"\" Unit tests for nonlinear solvers",
+      "Author: Ondrej Certik",
+      "May 2007",
+      "\"\"\"",
+      "from numpy.testing import assert_",
+      "import pytest",
+      "from functools import partial",
+      "from scipy.optimize import _nonlin as nonlin, root",
+      "from scipy.sparse import csr_array",
+      "from numpy import diag, dot"
+    ],
+    "imports": [
+      "from numpy.testing import assert_",
+      "import pytest",
+      "from functools import partial",
+      "from scipy.optimize import _nonlin as nonlin, root",
+      "from scipy.sparse import csr_array",
+      "from numpy import diag, dot",
+      "from numpy.linalg import inv",
+      "import numpy as np",
+      "import scipy",
+      "from .test_minpack import pressure_network"
+    ],
+    "classes": [
+      "TestNonlin",
+      "TestSecant",
+      "TestLinear",
+      "TestJacobianDotSolve",
+      "TestNonlinOldTests"
+    ],
+    "functions": [
+      "F",
+      "F2",
+      "F2_lucky",
+      "F3",
+      "F4_powell",
+      "F5",
+      "F6"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_093_ca2c8291e4abcc35_AI_Chariot_Legacy_666_1.0.0_20260508_test_nonlin.py.json"
+}

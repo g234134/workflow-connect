@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 493,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mailchimp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mailchimp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 679,
+  "content_sha256": "4951509676ee5d908b78abfa626860f5e48149c1c25d5f773d72c75a150f00dd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 17,
+    "char_count": 679,
+    "preview_lines": [
+      "import json",
+      "def mailchimp_compliance_fix(session):",
+      "    def _null_scope(r):",
+      "        token = json.loads(r.text)",
+      "        if \"scope\" in token and token[\"scope\"] is None:",
+      "            token.pop(\"scope\")",
+      "        r._content = json.dumps(token).encode()",
+      "        return r",
+      "    def _non_zero_expiration(r):",
+      "        token = json.loads(r.text)"
+    ],
+    "imports": [
+      "import json"
+    ],
+    "classes": [],
+    "functions": [
+      "mailchimp_compliance_fix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_493_4951509676ee5d90_AI_Chariot_Legacy_666_1.0.0_20260508_mailchimp.py.json"
+}

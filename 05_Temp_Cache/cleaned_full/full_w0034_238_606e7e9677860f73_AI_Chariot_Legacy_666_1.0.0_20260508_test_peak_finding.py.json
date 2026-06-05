@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_peak_finding.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_peak_finding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 36991,
+  "content_sha256": "606e7e9677860f73fba5d834c6d8002094ec091d4ec9a54c795e8388f81bfd79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 915,
+    "non_empty_lines": 790,
+    "char_count": 36991,
+    "preview_lines": [
+      "import copy",
+      "import numpy as np",
+      "import pytest",
+      "from pytest import raises, warns",
+      "from scipy._lib._array_api import xp_assert_close, xp_assert_equal",
+      "from scipy.signal._peak_finding import (",
+      "    argrelmax,",
+      "    argrelmin,",
+      "    peak_prominences,",
+      "    peak_widths,"
+    ],
+    "imports": [
+      "import copy",
+      "import numpy as np",
+      "import pytest",
+      "from pytest import raises, warns",
+      "from scipy._lib._array_api import xp_assert_close, xp_assert_equal",
+      "from scipy.signal._peak_finding import (",
+      "from scipy.signal.windows import gaussian",
+      "from scipy.signal._peak_finding_utils import _local_maxima_1d, PeakPropertyWarning"
+    ],
+    "classes": [
+      "TestLocalMaxima1d",
+      "TestRidgeLines",
+      "TestArgrel",
+      "TestPeakProminences",
+      "TestPeakWidths",
+      "TestFindPeaks",
+      "TestFindPeaksCwt"
+    ],
+    "functions": [
+      "_gen_gaussians",
+      "_gen_gaussians_even",
+      "_gen_ridge_line",
+      "test_unpack_condition_args"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_238_606e7e9677860f73_AI_Chariot_Legacy_666_1.0.0_20260508_test_peak_finding.py.json"
+}

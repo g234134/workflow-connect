@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_check_indexer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_check_indexer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3159,
+  "content_sha256": "b5faf66b587aba890dd8c24313b4ca899d2245a1ef7d258f3c2fbce91a9a6835",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 83,
+    "char_count": 3159,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.api.indexers import check_array_indexer",
+      "@pytest.mark.parametrize(",
+      "    \"indexer, expected\",",
+      "    [",
+      "        # integer",
+      "        ([1, 2], np.array([1, 2], dtype=np.intp)),"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.api.indexers import check_array_indexer"
+    ],
+    "classes": [],
+    "functions": [
+      "test_valid_input",
+      "test_boolean_na_returns_indexer",
+      "test_bool_raise_length",
+      "test_int_raise_missing_values",
+      "test_raise_invalid_array_dtypes",
+      "test_raise_nullable_string_dtype",
+      "test_pass_through_non_array_likes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_166_b5faf66b587aba89_AI_Chariot_Legacy_666_1.0.0_20260508_test_check_indexer.py.json"
+}

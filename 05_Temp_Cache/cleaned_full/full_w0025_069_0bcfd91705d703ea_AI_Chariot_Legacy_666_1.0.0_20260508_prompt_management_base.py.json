@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 69,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prompt_management_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prompt_management_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9293,
+  "content_sha256": "0bcfd91705d703eae5ef157e84cd78fbbefc681b3fab9bd20225de72192f0b06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 250,
+    "non_empty_lines": 219,
+    "char_count": 9293,
+    "preview_lines": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "from typing_extensions import TYPE_CHECKING, TypedDict",
+      "from litellm.types.llms.openai import AllMessageValues",
+      "from litellm.types.prompts.init_prompts import PromptSpec",
+      "from litellm.types.utils import StandardCallbackDynamicParams",
+      "if TYPE_CHECKING:",
+      "    from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "class PromptManagementClient(TypedDict):",
+      "    prompt_id: Optional[str]"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "from typing_extensions import TYPE_CHECKING, TypedDict",
+      "from litellm.types.llms.openai import AllMessageValues",
+      "from litellm.types.prompts.init_prompts import PromptSpec",
+      "from litellm.types.utils import StandardCallbackDynamicParams",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj"
+    ],
+    "classes": [
+      "PromptManagementClient",
+      "PromptManagementBase"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_069_0bcfd91705d703ea_AI_Chariot_Legacy_666_1.0.0_20260508_prompt_management_base.py.json"
+}

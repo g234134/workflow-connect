@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 352,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6385,
+  "content_sha256": "ea3a0a840608a6519d6a4fe7e0e69afca111154cdcd329817e83148820951084",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 185,
+    "non_empty_lines": 175,
+    "char_count": 6385,
+    "preview_lines": [
+      "# flake8: noqa: F403",
+      "from .fake_quantize import *  # noqa: F403",
+      "from .fuse_modules import fuse_modules  # noqa: F403",
+      "from .fuse_modules import fuse_modules_qat  # noqa: F403",
+      "from .fuser_method_mappings import *  # noqa: F403",
+      "from .observer import *  # noqa: F403",
+      "from .qconfig import *  # noqa: F403",
+      "from .qconfig_mapping import *  # noqa: F403",
+      "from .quant_type import *  # noqa: F403",
+      "from .quantization_mappings import *  # type: ignore[no-redef]"
+    ],
+    "imports": [
+      "from .fake_quantize import *  # noqa: F403",
+      "from .fuse_modules import fuse_modules  # noqa: F403",
+      "from .fuse_modules import fuse_modules_qat  # noqa: F403",
+      "from .fuser_method_mappings import *  # noqa: F403",
+      "from .observer import *  # noqa: F403",
+      "from .qconfig import *  # noqa: F403",
+      "from .qconfig_mapping import *  # noqa: F403",
+      "from .quant_type import *  # noqa: F403",
+      "from .quantization_mappings import *  # type: ignore[no-redef]",
+      "from .quantize import *  # noqa: F403",
+      "from .quantize_jit import *  # noqa: F403",
+      "from .stubs import *  # noqa: F403",
+      "from .pt2e.eval_utils import _move_exported_model_to_eval as move_exported_model_to_eval",
+      "from .pt2e.generate_numeric_debug_handle import generate_numeric_debug_handle  # noqa: F401",
+      "from typing import Union, List, Callable, Tuple, Optional",
+      "from torch import Tensor",
+      "import torch",
+      "from .utils import is_per_channel"
+    ],
+    "classes": [
+      "_DerivedObserverOrFakeQuantize"
+    ],
+    "functions": [
+      "default_eval_fn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_352_ea3a0a840608a651___init__.py.json"
+}

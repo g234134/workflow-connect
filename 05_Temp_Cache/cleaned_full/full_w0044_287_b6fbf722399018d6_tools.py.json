@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\strategies\\branch\\tools.py",
+  "name": "tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 357,
+  "content_sha256": "b6fbf722399018d61ba3eb2509b6c37ffaf2959779dfbc2f2dca5d06d4fe6db6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 357,
+    "preview_lines": [
+      "from .core import exhaust, multiplex",
+      "from .traverse import top_down",
+      "def canon(*rules):",
+      "    \"\"\" Strategy for canonicalization",
+      "    Apply each branching rule in a top-down fashion through the tree.",
+      "    Multiplex through all branching rule traversals",
+      "    Keep doing this until there is no change.",
+      "    \"\"\"",
+      "    return exhaust(multiplex(*map(top_down, rules)))"
+    ],
+    "imports": [
+      "from .core import exhaust, multiplex",
+      "from .traverse import top_down"
+    ],
+    "classes": [],
+    "functions": [
+      "canon"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_287_b6fbf722399018d6_tools.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 467,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__deltas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__deltas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2502,
+  "content_sha256": "23b07f0339d7670941984f0fb9abbb6b24d0531ea130811513c1584d09b67e3b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 51,
+    "char_count": 2502,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from ..._utils import is_dict, is_list",
+      "def accumulate_delta(acc: dict[object, object], delta: dict[object, object]) -> dict[object, object]:",
+      "    for key, delta_value in delta.items():",
+      "        if key not in acc:",
+      "            acc[key] = delta_value",
+      "            continue",
+      "        acc_value = acc[key]",
+      "        if acc_value is None:",
+      "            acc[key] = delta_value"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from ..._utils import is_dict, is_list"
+    ],
+    "classes": [],
+    "functions": [
+      "accumulate_delta"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_467_23b07f0339d76709_AI_Chariot_Legacy_666_1.0.0_20260508__deltas.py.json"
+}

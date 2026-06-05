@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\detail\\ORTHooksInterface.h",
+  "name": "ORTHooksInterface.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1149,
+  "content_sha256": "222bbb15f26c3955dacdd763e7371a73f5308e058634eec6ce3d9f37c1479360",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 27,
+    "char_count": 1149,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/Exception.h>",
+      "#include <c10/util/Registry.h>",
+      "constexpr const char* ORT_HELP =",
+      "  \" You need to 'import torch_ort' to use the 'ort' device in PyTorch. \"",
+      "  \"The 'torch_ort' module is provided by the ONNX Runtime itself \"",
+      "  \"(https://onnxruntime.ai).\";",
+      "// NB: Class must live in `at` due to limitations of Registry.h.",
+      "namespace at {",
+      "struct TORCH_API ORTHooksInterface {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_168_222bbb15f26c3955_ORTHooksInterface.h.json"
+}

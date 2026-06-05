@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\generators\\tests\\test_lattice.py",
+  "name": "test_lattice.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10102,
+  "content_sha256": "89807617b8f542ddd00079211a718a720891341d46abd331b44df5e765dd4bf0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 264,
+    "non_empty_lines": 221,
+    "char_count": 10102,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.generators.lattice` module.\"\"\"",
+      "from itertools import product",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal",
+      "def test_hexagonal_lattice_no_pos():",
+      "    # Test positions are note computed/stored when with_positions=False",
+      "    G = nx.hexagonal_lattice_graph(6, 6, with_positions=False)",
+      "    assert all(pos is None for _, pos in G.nodes(data=\"pos\"))",
+      "@pytest.mark.parametrize("
+    ],
+    "imports": [
+      "from itertools import product",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal"
+    ],
+    "classes": [
+      "TestGrid2DGraph",
+      "TestGridGraph",
+      "TestHypercubeGraph",
+      "TestTriangularLatticeGraph",
+      "TestHexagonalLatticeGraph"
+    ],
+    "functions": [
+      "test_hexagonal_lattice_no_pos",
+      "test_2D_lattice_no_contraction_leftovers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_017_89807617b8f542dd_test_lattice.py.json"
+}

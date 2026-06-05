@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\utils\\lambda_post_hook.h",
+  "name": "lambda_post_hook.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1010,
+  "content_sha256": "77f369e73ca1eea5f3f2310d9910c20bdc1305b38ab5f560f7d5fd0e6f1f6800",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 27,
+    "char_count": 1010,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/autograd/function_hook.h>",
+      "namespace torch {",
+      "namespace autograd {",
+      "namespace utils {",
+      "// Turns lambda into a torch::autograd::FunctionPostHook.",
+      "class LambdaPostHook : public torch::autograd::FunctionPostHook {",
+      "  using variable_list = std::vector<torch::autograd::Variable>;",
+      " public:",
+      "  // The lambda function takes as arguments the outputs and inputs of the"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_128_77f369e73ca1eea5_lambda_post_hook.h.json"
+}

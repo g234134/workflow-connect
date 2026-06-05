@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\conftest.py",
+  "name": "conftest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4440,
+  "content_sha256": "ae1d7267c99e5487c110040b01bfefbd61b532310e6aa4b2e9ad16a22c1f7420",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 97,
+    "char_count": 4437,
+    "preview_lines": [
+      "\"\"\"Configuration for unit tests.\"\"\"",
+      "from collections.abc import Iterator, Sequence",
+      "from importlib import util",
+      "from uuid import UUID",
+      "import pytest",
+      "from blockbuster import BlockBuster, blockbuster_ctx",
+      "from pytest_mock import MockerFixture",
+      "@pytest.fixture(autouse=True)",
+      "def blockbuster() -> Iterator[BlockBuster]:",
+      "    with blockbuster_ctx(\"langchain_core\") as bb:"
+    ],
+    "imports": [
+      "from collections.abc import Iterator, Sequence",
+      "from importlib import util",
+      "from uuid import UUID",
+      "import pytest",
+      "from blockbuster import BlockBuster, blockbuster_ctx",
+      "from pytest_mock import MockerFixture"
+    ],
+    "classes": [],
+    "functions": [
+      "blockbuster",
+      "pytest_addoption",
+      "pytest_collection_modifyitems",
+      "deterministic_uuids"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_193_ae1d7267c99e5487_conftest.py.json"
+}

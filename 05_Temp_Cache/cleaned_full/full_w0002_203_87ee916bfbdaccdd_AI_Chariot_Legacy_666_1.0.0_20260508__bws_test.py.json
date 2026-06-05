@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__bws_test.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__bws_test.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7239,
+  "content_sha256": "87ee916bfbdaccdd13e850359076641b5024110e89891905cc9c15c43e60852f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 177,
+    "non_empty_lines": 141,
+    "char_count": 7236,
+    "preview_lines": [
+      "import numpy as np",
+      "from functools import partial",
+      "from scipy import stats",
+      "def _bws_input_validation(x, y, alternative, method):",
+      "    ''' Input validation and standardization for bws test'''",
+      "    x, y = np.atleast_1d(x, y)",
+      "    if x.ndim > 1 or y.ndim > 1:",
+      "        raise ValueError('`x` and `y` must be exactly one-dimensional.')",
+      "    if np.isnan(x).any() or np.isnan(y).any():",
+      "        raise ValueError('`x` and `y` must not contain NaNs.')"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from functools import partial",
+      "from scipy import stats"
+    ],
+    "classes": [],
+    "functions": [
+      "_bws_input_validation",
+      "_bws_statistic",
+      "bws_test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_203_87ee916bfbdaccdd_AI_Chariot_Legacy_666_1.0.0_20260508__bws_test.py.json"
+}

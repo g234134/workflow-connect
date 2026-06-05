@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 342,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_json_validation_rule.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_json_validation_rule.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4285,
+  "content_sha256": "5c9393200629fb56487c27bf20f5ca5759b9f33d1c1655318fed052ffb95fc10",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 94,
+    "char_count": 4285,
+    "preview_lines": [
+      "import json",
+      "from typing import Any, Dict, List, Union",
+      "from litellm.constants import DEFAULT_MAX_RECURSE_DEPTH",
+      "def normalize_json_schema_types(schema: Union[Dict[str, Any], List[Any], Any], depth: int = 0, max_depth: int = DEFAULT_MAX_RECURSE_DEPTH) -> Union[Dict[str, Any], List[Any], Any]:",
+      "    \"\"\"",
+      "    Normalize JSON schema types from uppercase to lowercase format.",
+      "    Some providers (like certain Google services) use uppercase types like 'BOOLEAN', 'STRING', 'ARRAY', 'OBJECT'",
+      "    but standard JSON Schema requires lowercase: 'boolean', 'string', 'array', 'object'",
+      "    This function recursively normalizes all type fields in a schema to lowercase.",
+      "    Args:"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Any, Dict, List, Union",
+      "from litellm.constants import DEFAULT_MAX_RECURSE_DEPTH",
+      "from jsonschema import ValidationError, validate",
+      "from litellm import JSONSchemaValidationError"
+    ],
+    "classes": [],
+    "functions": [
+      "normalize_json_schema_types",
+      "normalize_tool_schema",
+      "validate_schema"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_342_5c9393200629fb56_AI_Chariot_Legacy_666_1.0.0_20260508_json_validation_rule.py.json"
+}

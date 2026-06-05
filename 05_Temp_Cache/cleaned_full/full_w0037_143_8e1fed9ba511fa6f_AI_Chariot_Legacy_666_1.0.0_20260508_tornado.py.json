@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 143,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tornado.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tornado.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7212,
+  "content_sha256": "8e1fed9ba511fa6f8e3c5953283e1e39812cc9ec762e6f6bc3bfd4a59fb57424",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 172,
+    "char_count": 7212,
+    "preview_lines": [
+      "import weakref",
+      "import contextlib",
+      "from inspect import iscoroutinefunction",
+      "import sentry_sdk",
+      "from sentry_sdk.api import continue_trace",
+      "from sentry_sdk.consts import OP",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import TransactionSource",
+      "from sentry_sdk.utils import (",
+      "    HAS_REAL_CONTEXTVARS,"
+    ],
+    "imports": [
+      "import weakref",
+      "import contextlib",
+      "from inspect import iscoroutinefunction",
+      "import sentry_sdk",
+      "from sentry_sdk.api import continue_trace",
+      "from sentry_sdk.consts import OP",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import TransactionSource",
+      "from sentry_sdk.utils import (",
+      "from sentry_sdk.integrations import _check_minimum_version, Integration, DidNotEnable",
+      "from sentry_sdk.integrations._wsgi_common import (",
+      "from sentry_sdk.integrations.logging import ignore_logger",
+      "from tornado import version_info as TORNADO_VERSION",
+      "from tornado.web import RequestHandler, HTTPError",
+      "from tornado.gen import coroutine",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any",
+      "from typing import Optional",
+      "from typing import Dict",
+      "from typing import Callable"
+    ],
+    "classes": [
+      "TornadoIntegration",
+      "TornadoRequestExtractor"
+    ],
+    "functions": [
+      "_handle_request_impl",
+      "_capture_exception",
+      "_make_event_processor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_143_8e1fed9ba511fa6f_AI_Chariot_Legacy_666_1.0.0_20260508_tornado.py.json"
+}

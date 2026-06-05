@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 216,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_adapters.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_adapters.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26285,
+  "content_sha256": "f275f5d7781b6f5db7694b71d844e400dffa22c617f8cd9f4682c696e4c47119",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 696,
+    "non_empty_lines": 588,
+    "char_count": 26285,
+    "preview_lines": [
+      "\"\"\"",
+      "requests.adapters",
+      "~~~~~~~~~~~~~~~~~",
+      "This module contains the transport adapters that Requests uses to define",
+      "and maintain connections.",
+      "\"\"\"",
+      "import os.path",
+      "import socket  # noqa: F401",
+      "import typing",
+      "import warnings"
+    ],
+    "imports": [
+      "import os.path",
+      "import socket  # noqa: F401",
+      "import typing",
+      "import warnings",
+      "from urllib3.exceptions import ClosedPoolError, ConnectTimeoutError",
+      "from urllib3.exceptions import HTTPError as _HTTPError",
+      "from urllib3.exceptions import InvalidHeader as _InvalidHeader",
+      "from urllib3.exceptions import (",
+      "from urllib3.exceptions import ProxyError as _ProxyError",
+      "from urllib3.exceptions import ReadTimeoutError, ResponseError",
+      "from urllib3.exceptions import SSLError as _SSLError",
+      "from urllib3.poolmanager import PoolManager, proxy_from_url",
+      "from urllib3.util import Timeout as TimeoutSauce",
+      "from urllib3.util import parse_url",
+      "from urllib3.util.retry import Retry",
+      "from .auth import _basic_auth_str",
+      "from .compat import basestring, urlparse",
+      "from .cookies import extract_cookies_to_jar",
+      "from .exceptions import (",
+      "from .models import Response"
+    ],
+    "classes": [
+      "BaseAdapter",
+      "HTTPAdapter"
+    ],
+    "functions": [
+      "_urllib3_request_context"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_216_f275f5d7781b6f5d_AI_Chariot_Legacy_666_1.0.0_20260508_adapters.py.json"
+}

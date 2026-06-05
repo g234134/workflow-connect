@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 286,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_grower.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_grower.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33704,
+  "content_sha256": "cc3b0b59453d1266712b928407ab19dce55f6535652eeeb0f572a013037c4308",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 822,
+    "non_empty_lines": 733,
+    "char_count": 33704,
+    "preview_lines": [
+      "\"\"\"",
+      "This module contains the TreeGrower class.",
+      "TreeGrower builds a regression tree fitting a Newton-Raphson step, based on",
+      "the gradients and hessians of the training data.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import numbers",
+      "from heapq import heappop, heappush",
+      "from timeit import default_timer as time"
+    ],
+    "imports": [
+      "import numbers",
+      "from heapq import heappop, heappush",
+      "from timeit import default_timer as time",
+      "import numpy as np",
+      "from sklearn.ensemble._hist_gradient_boosting._bitset import (",
+      "from sklearn.ensemble._hist_gradient_boosting.common import (",
+      "from sklearn.ensemble._hist_gradient_boosting.histogram import HistogramBuilder",
+      "from sklearn.ensemble._hist_gradient_boosting.predictor import TreePredictor",
+      "from sklearn.ensemble._hist_gradient_boosting.splitting import Splitter",
+      "from sklearn.utils._openmp_helpers import _openmp_effective_n_threads"
+    ],
+    "classes": [
+      "TreeNode",
+      "TreeGrower"
+    ],
+    "functions": [
+      "_fill_predictor_arrays"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_286_cc3b0b59453d1266_AI_Chariot_Legacy_666_1.0.0_20260508_grower.py.json"
+}

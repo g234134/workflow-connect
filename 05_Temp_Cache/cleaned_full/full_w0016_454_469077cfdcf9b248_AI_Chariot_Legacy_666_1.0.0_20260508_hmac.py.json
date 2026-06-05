@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 454,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hmac.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hmac.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 423,
+  "content_sha256": "469077cfdcf9b248ab090ae6ef341bb67a7da4b327023ae54d4bcaa85e5a0c37",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 423,
+    "preview_lines": [
+      "# This file is dual licensed under the terms of the Apache License, Version",
+      "# 2.0, and the BSD License. See the LICENSE file in the root of this repository",
+      "# for complete details.",
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives import hashes",
+      "__all__ = [\"HMAC\"]",
+      "HMAC = rust_openssl.hmac.HMAC",
+      "hashes.HashContext.register(HMAC)"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives import hashes"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_454_469077cfdcf9b248_AI_Chariot_Legacy_666_1.0.0_20260508_hmac.py.json"
+}

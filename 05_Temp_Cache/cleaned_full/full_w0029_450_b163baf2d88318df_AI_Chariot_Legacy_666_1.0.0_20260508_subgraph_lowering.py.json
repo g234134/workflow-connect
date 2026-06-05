@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 450,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_subgraph_lowering.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_subgraph_lowering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5062,
+  "content_sha256": "b163baf2d88318dfa9146ac3641b0d01222681b48747d3c1d3b0c03353a0d2a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 155,
+    "non_empty_lines": 117,
+    "char_count": 5062,
+    "preview_lines": [
+      "\"\"\"Utilities for lowering subgraphs used by higher order operators",
+      "\"\"\"",
+      "import functools",
+      "import operator",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, TypeVar, Union",
+      "from typing_extensions import ParamSpec",
+      "import torch",
+      "from . import ir",
+      "from .exc import SubgraphLoweringException"
+    ],
+    "imports": [
+      "import functools",
+      "import operator",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, TypeVar, Union",
+      "from typing_extensions import ParamSpec",
+      "import torch",
+      "from . import ir",
+      "from .exc import SubgraphLoweringException",
+      "from .ops_handler import SimpleCSEHandler",
+      "from .sizevars import SizeVarAllocator",
+      "from .virtualized import ops, V, WrapperHandler",
+      "from .lowering import lowerings"
+    ],
+    "classes": [
+      "PointwiseSubgraphLowering",
+      "InputDescriptor",
+      "TracingOpsHandler"
+    ],
+    "functions": [
+      "lower_pointwise_subgraph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_450_b163baf2d88318df_AI_Chariot_Legacy_666_1.0.0_20260508_subgraph_lowering.py.json"
+}

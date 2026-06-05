@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fail.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fail.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6545,
+  "content_sha256": "45f4b666893da32ccf2b667bb13713ff3b610a9fa05a4018fb4e4c1ac3a3b7d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 255,
+    "non_empty_lines": 229,
+    "char_count": 6533,
+    "preview_lines": [
+      "# coding: utf-8",
+      "# there is some work to do",
+      "# provide a failing test xyz and a non-failing xyz_no_fail ( to see",
+      "# what the current failing output is.",
+      "# on fix of srsly.ruamel_yaml, move the marked test to the appropriate test (without mark)",
+      "# and remove remove the xyz_no_fail",
+      "import pytest",
+      "from .roundtrip import round_trip, dedent, round_trip_load, round_trip_dump",
+      "class TestCommentFailures:",
+      "    @pytest.mark.xfail(strict=True)"
+    ],
+    "imports": [
+      "import pytest",
+      "from .roundtrip import round_trip, dedent, round_trip_load, round_trip_dump"
+    ],
+    "classes": [
+      "TestCommentFailures",
+      "TestIndentFailures",
+      "TestTagFailures",
+      "TestFlowValues",
+      "TestMappingKey"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_235_45f4b666893da32c_AI_Chariot_Legacy_666_1.0.0_20260508_test_fail.py.json"
+}

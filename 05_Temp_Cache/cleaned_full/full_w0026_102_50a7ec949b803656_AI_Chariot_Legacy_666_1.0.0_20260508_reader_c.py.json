@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:46:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reader_c.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reader_c.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19346,
+  "content_sha256": "50a7ec949b803656bf09031eef2209cc4f2fa7b6e9cf3f532ebfa51fced75ba5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 478,
+    "non_empty_lines": 418,
+    "char_count": 19346,
+    "preview_lines": [
+      "\"\"\"Reader for WebSocket protocol versions 13 and 8.\"\"\"",
+      "import asyncio",
+      "import builtins",
+      "from collections import deque",
+      "from typing import Deque, Final, Optional, Set, Tuple, Union",
+      "from ..base_protocol import BaseProtocol",
+      "from ..compression_utils import ZLibDecompressor",
+      "from ..helpers import _EXC_SENTINEL, set_exception",
+      "from ..streams import EofStream",
+      "from .helpers import UNPACK_CLOSE_CODE, UNPACK_LEN3, websocket_mask"
+    ],
+    "imports": [
+      "import asyncio",
+      "import builtins",
+      "from collections import deque",
+      "from typing import Deque, Final, Optional, Set, Tuple, Union",
+      "from ..base_protocol import BaseProtocol",
+      "from ..compression_utils import ZLibDecompressor",
+      "from ..helpers import _EXC_SENTINEL, set_exception",
+      "from ..streams import EofStream",
+      "from .helpers import UNPACK_CLOSE_CODE, UNPACK_LEN3, websocket_mask",
+      "from .models import ("
+    ],
+    "classes": [
+      "WebSocketDataQueue",
+      "WebSocketReader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_102_50a7ec949b803656_AI_Chariot_Legacy_666_1.0.0_20260508_reader_c.py.json"
+}

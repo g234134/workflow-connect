@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 173,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_searchengine.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_searchengine.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7415,
+  "content_sha256": "11b0c8df926e4f6bd2e26d0264b2d902c41bcc70d68a4a830df1ea2da2c2a6cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 235,
+    "non_empty_lines": 200,
+    "char_count": 7415,
+    "preview_lines": [
+      "'''Define SearchEngine for search dialogs.'''",
+      "import re",
+      "re.PatternError = re.error  # New in 3.13.",
+      "from tkinter import StringVar, BooleanVar, TclError",
+      "from tkinter import messagebox",
+      "def get(root):",
+      "    '''Return the singleton SearchEngine instance for the process.",
+      "    The single SearchEngine saves settings between dialog instances.",
+      "    If there is not a SearchEngine already, make one.",
+      "    '''"
+    ],
+    "imports": [
+      "import re",
+      "from tkinter import StringVar, BooleanVar, TclError",
+      "from tkinter import messagebox"
+    ],
+    "classes": [
+      "SearchEngine"
+    ],
+    "functions": [
+      "get",
+      "search_reverse",
+      "get_selection",
+      "get_line_col"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_173_11b0c8df926e4f6b_AI_Chariot_Legacy_666_1.0.0_20260508_searchengine.py.json"
+}

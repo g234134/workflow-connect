@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 466,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dd.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1606,
+  "content_sha256": "28e6c544a6bc72a529f5538604c967d541b552d319a926d6f5fa85bbdc9358a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 36,
+    "char_count": 1606,
+    "preview_lines": [
+      "# Tests for a few of the \"double-double\" C++ functions defined in",
+      "# special/cephes/dd_real.h. Prior to gh-20390 which translated these",
+      "# functions from C to C++, there were test cases for _dd_expm1. It",
+      "# was determined that this function is not used anywhere internally",
+      "# in SciPy, so this function was not translated.",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from scipy.special._test_internal import _dd_exp, _dd_log",
+      "# Each tuple in test_data contains:",
+      "#   (dd_func, xhi, xlo, expected_yhi, expected_ylo)"
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from scipy.special._test_internal import _dd_exp, _dd_log"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_466_28e6c544a6bc72a5_AI_Chariot_Legacy_666_1.0.0_20260508_test_dd.py.json"
+}

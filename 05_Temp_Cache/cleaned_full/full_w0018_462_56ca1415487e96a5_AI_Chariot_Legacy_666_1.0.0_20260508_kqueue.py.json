@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 462,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_kqueue.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_kqueue.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1847,
+  "content_sha256": "56ca1415487e96a5e794d194ca67c9e222f4dc3c9c90ac023066cb71630618d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 39,
+    "char_count": 1847,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import select",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "from .. import _core, _subprocess",
+      "assert (sys.platform != \"win32\" and sys.platform != \"linux\") or not TYPE_CHECKING",
+      "async def wait_child_exiting(process: _subprocess.Process) -> None:",
+      "    kqueue = _core.current_kqueue()",
+      "    try:",
+      "        from select import KQ_NOTE_EXIT"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import select",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "from .. import _core, _subprocess",
+      "from select import KQ_NOTE_EXIT"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_462_56ca1415487e96a5_AI_Chariot_Legacy_666_1.0.0_20260508_kqueue.py.json"
+}

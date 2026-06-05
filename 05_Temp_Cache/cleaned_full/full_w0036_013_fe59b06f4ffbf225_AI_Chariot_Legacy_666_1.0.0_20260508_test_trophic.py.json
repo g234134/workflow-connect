@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 13,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_trophic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_trophic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8705,
+  "content_sha256": "fe59b06f4ffbf225ff7318142878c24424b1a2154c911ae42aa49a079415df2b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 302,
+    "non_empty_lines": 252,
+    "char_count": 8705,
+    "preview_lines": [
+      "\"\"\"Test trophic levels, trophic differences and trophic coherence\"\"\"",
+      "import pytest",
+      "np = pytest.importorskip(\"numpy\")",
+      "pytest.importorskip(\"scipy\")",
+      "import networkx as nx",
+      "def test_trophic_levels():",
+      "    \"\"\"Trivial example\"\"\"",
+      "    G = nx.DiGraph()",
+      "    G.add_edge(\"a\", \"b\")",
+      "    G.add_edge(\"b\", \"c\")"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_trophic_levels",
+      "test_trophic_levels_levine",
+      "test_trophic_levels_simple",
+      "test_trophic_levels_more_complex",
+      "test_trophic_levels_even_more_complex",
+      "test_trophic_levels_singular_matrix",
+      "test_trophic_levels_singular_with_basal",
+      "test_trophic_differences",
+      "test_trophic_incoherence_parameter_no_cannibalism",
+      "test_trophic_incoherence_parameter_cannibalism"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_013_fe59b06f4ffbf225_AI_Chariot_Legacy_666_1.0.0_20260508_test_trophic.py.json"
+}

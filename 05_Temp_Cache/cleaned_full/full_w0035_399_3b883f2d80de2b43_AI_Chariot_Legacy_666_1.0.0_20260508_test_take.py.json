@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_take.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_take.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3501,
+  "content_sha256": "3b883f2d80de2b43731c321de5c041129d67b3f6bbeb636c6079f4f3ca1c6338",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 89,
+    "non_empty_lines": 73,
+    "char_count": 3501,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import Categorical",
+      "import pandas._testing as tm",
+      "@pytest.fixture(params=[True, False])",
+      "def allow_fill(request):",
+      "    \"\"\"Boolean 'allow_fill' parameter for Categorical.take\"\"\"",
+      "    return request.param",
+      "class TestTake:",
+      "    # https://github.com/pandas-dev/pandas/issues/20664"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import Categorical",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestTake"
+    ],
+    "functions": [
+      "allow_fill"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_399_3b883f2d80de2b43_AI_Chariot_Legacy_666_1.0.0_20260508_test_take.py.json"
+}

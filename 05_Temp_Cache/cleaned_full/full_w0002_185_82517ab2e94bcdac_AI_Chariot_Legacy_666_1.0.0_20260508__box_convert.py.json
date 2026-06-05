@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__box_convert.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__box_convert.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2490,
+  "content_sha256": "82517ab2e94bcdac3f286dfac20d021d6b7479feb6067923a246ea42705432c5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 65,
+    "char_count": 2490,
+    "preview_lines": [
+      "import torch",
+      "from torch import Tensor",
+      "def _box_cxcywh_to_xyxy(boxes: Tensor) -> Tensor:",
+      "    \"\"\"",
+      "    Converts bounding boxes from (cx, cy, w, h) format to (x1, y1, x2, y2) format.",
+      "    (cx, cy) refers to center of bounding box",
+      "    (w, h) are width and height of bounding box",
+      "    Args:",
+      "        boxes (Tensor[N, 4]): boxes in (cx, cy, w, h) format which will be converted.",
+      "    Returns:"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import Tensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_box_cxcywh_to_xyxy",
+      "_box_xyxy_to_cxcywh",
+      "_box_xywh_to_xyxy",
+      "_box_xyxy_to_xywh"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_185_82517ab2e94bcdac_AI_Chariot_Legacy_666_1.0.0_20260508__box_convert.py.json"
+}

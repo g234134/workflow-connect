@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dst.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dst.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9409,
+  "content_sha256": "0f300501dd442b27239ace9eec7cee1ae52123b0147941c047f9d9b2f1c958d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 275,
+    "non_empty_lines": 245,
+    "char_count": 9409,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for DateOffset additions over Daylight Savings Time",
+      "\"\"\"",
+      "from datetime import timedelta",
+      "import pytest",
+      "from pandas._libs.tslibs import Timestamp",
+      "from pandas._libs.tslibs.offsets import (",
+      "    BMonthBegin,",
+      "    BMonthEnd,",
+      "    BQuarterBegin,"
+    ],
+    "imports": [
+      "from datetime import timedelta",
+      "import pytest",
+      "from pandas._libs.tslibs import Timestamp",
+      "from pandas._libs.tslibs.offsets import (",
+      "from pandas import DatetimeIndex",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestDST"
+    ],
+    "functions": [
+      "get_utc_offset_hours",
+      "test_nontick_offset_with_ambiguous_time_error",
+      "test_add_day_nonexistent_raises"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_107_0f300501dd442b27_AI_Chariot_Legacy_666_1.0.0_20260508_test_dst.py.json"
+}

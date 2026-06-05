@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scannable.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scannable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7646,
+  "content_sha256": "8a4b3b31aad72137496ce74e25b68715575241441d6c629b2a788aa61c1fd192",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 214,
+    "non_empty_lines": 168,
+    "char_count": 7646,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "from dataclasses import dataclass",
+      "from functools import singledispatch",
+      "import sys",
+      "from typing import Callable, Iterator, Optional",
+      "from lancedb.arrow import to_arrow",
+      "import pyarrow as pa",
+      "import pyarrow.dataset as ds",
+      "from .pydantic import LanceModel"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from functools import singledispatch",
+      "import sys",
+      "from typing import Callable, Iterator, Optional",
+      "from lancedb.arrow import to_arrow",
+      "import pyarrow as pa",
+      "import pyarrow.dataset as ds",
+      "from .pydantic import LanceModel",
+      "import pandas as pd",
+      "import polars as pl",
+      "from datasets import Dataset as HFDataset",
+      "from datasets import DatasetDict as HFDatasetDict"
+    ],
+    "classes": [
+      "Scannable"
+    ],
+    "functions": [
+      "to_scannable",
+      "_from_reader",
+      "_from_batch",
+      "_from_table",
+      "_from_dataset",
+      "_from_scanner",
+      "_from_list",
+      "_from_dict",
+      "_from_lance_model",
+      "_from_iterable",
+      "_register_optional_converters"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_085_8a4b3b31aad72137_AI_Chariot_Legacy_666_1.0.0_20260508_scannable.py.json"
+}

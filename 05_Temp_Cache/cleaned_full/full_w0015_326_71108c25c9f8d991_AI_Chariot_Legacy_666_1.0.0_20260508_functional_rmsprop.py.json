@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 326,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_functional_rmsprop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_functional_rmsprop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4632,
+  "content_sha256": "71108c25c9f8d99123352a055a91c02ba52707d2c172f30b3ab545a6618b82d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 112,
+    "char_count": 4632,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import Dict, List, Optional",
+      "import torch",
+      "import torch.optim._functional as F",
+      "from torch import Tensor",
+      "__all__: List[str] = []",
+      "# Define a TorchScript compatible Functional RMSprop Optimizer",
+      "# where we use these optimizer in a functional way.",
+      "# Instead of using the `param.grad` when updating parameters,",
+      "# we explicitly allow the distributed optimizer pass gradients to"
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional",
+      "import torch",
+      "import torch.optim._functional as F",
+      "from torch import Tensor"
+    ],
+    "classes": [
+      "_FunctionalRMSprop"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_326_71108c25c9f8d991_AI_Chariot_Legacy_666_1.0.0_20260508_functional_rmsprop.py.json"
+}

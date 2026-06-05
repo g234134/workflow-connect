@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 352,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_remyx_code_executor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_remyx_code_executor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22931,
+  "content_sha256": "e398111659915838162f7088b50f50f34a59305f046bf021eded7e780f620868",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 576,
+    "non_empty_lines": 481,
+    "char_count": 22890,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "\"\"\"Remyx code executor implementation for research paper execution.\"\"\"",
+      "import logging",
+      "import os",
+      "from collections.abc import Callable",
+      "from hashlib import md5",
+      "from typing import Any, ClassVar, Literal",
+      "from pydantic import Field"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "from collections.abc import Callable",
+      "from hashlib import md5",
+      "from typing import Any, ClassVar, Literal",
+      "from pydantic import Field",
+      "from ..code_utils import TIMEOUT_MSG, _cmd",
+      "from ..doc_utils import export_module",
+      "from .base import CodeBlock, CodeExtractor, CodeResult, CommandLineCodeResult",
+      "from .docker_commandline_code_executor import DockerCommandLineCodeExecutor",
+      "from .markdown_code_extractor import MarkdownCodeExtractor",
+      "from .utils import _get_file_name_from_content, silence_pip",
+      "from dotenv import load_dotenv",
+      "from remyxai.api.search import Asset",
+      "from remyxai.api.search import get_asset as remyxai_get_asset",
+      "from remyxai.client.search import SearchClient as RemyxSearchClient"
+    ],
+    "classes": [
+      "RemyxCodeResult",
+      "RemyxCodeExecutor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_352_e398111659915838_AI_Chariot_Legacy_666_1.0.0_20260508_remyx_code_executor.py.json"
+}

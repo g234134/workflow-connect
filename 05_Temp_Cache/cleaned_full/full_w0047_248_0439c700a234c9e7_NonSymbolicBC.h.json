@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 248,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\NonSymbolicBC.h",
+  "name": "NonSymbolicBC.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2902,
+  "content_sha256": "0439c700a234c9e7924716352664d612da904addf7908ca18283ee1aea39e981",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 25,
+    "char_count": 2902,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <c10/util/irange.h>",
+      "#include <ATen/core/IListRef.h>",
+      "namespace at::native {",
+      "// This file contains non-symbolic signatures for ops that we have sym-intified the signature of.",
+      "// However, in certain cases (such as static runtime), we call the native versions of the ops directly.",
+      "// In those cases, we will duplicate the signature here with non-symbolic ints, and also duplicate the C++ implementation.",
+      "TORCH_API at::Tensor reshape(const at::Tensor& self, at::IntArrayRef proposed_shape);",
+      "TORCH_API at::Tensor narrow(const at::Tensor& self, int64_t dim, int64_t start, int64_t length);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_248_0439c700a234c9e7_NonSymbolicBC.h.json"
+}

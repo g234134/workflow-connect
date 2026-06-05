@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 109,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\partfrac.py",
+  "name": "partfrac.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14695,
+  "content_sha256": "a6d6295eca7c758cb27a23e72d4fab750faebf7f8602f0e737bf44f350baf32f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 496,
+    "non_empty_lines": 364,
+    "char_count": 14695,
+    "preview_lines": [
+      "\"\"\"Algorithms for partial fraction decomposition of rational functions. \"\"\"",
+      "from sympy.core import S, Add, sympify, Function, Lambda, Dummy",
+      "from sympy.core.traversal import preorder_traversal",
+      "from sympy.polys import Poly, RootSum, cancel, factor",
+      "from sympy.polys.polyerrors import PolynomialError",
+      "from sympy.polys.polyoptions import allowed_flags, set_defaults",
+      "from sympy.polys.polytools import parallel_poly_from_expr",
+      "from sympy.utilities import numbered_symbols, take, xthreaded, public",
+      "@xthreaded",
+      "@public"
+    ],
+    "imports": [
+      "from sympy.core import S, Add, sympify, Function, Lambda, Dummy",
+      "from sympy.core.traversal import preorder_traversal",
+      "from sympy.polys import Poly, RootSum, cancel, factor",
+      "from sympy.polys.polyerrors import PolynomialError",
+      "from sympy.polys.polyoptions import allowed_flags, set_defaults",
+      "from sympy.polys.polytools import parallel_poly_from_expr",
+      "from sympy.utilities import numbered_symbols, take, xthreaded, public",
+      "from sympy.solvers import solve"
+    ],
+    "classes": [],
+    "functions": [
+      "apart",
+      "apart_undetermined_coeffs",
+      "apart_full_decomposition",
+      "apart_list",
+      "apart_list_full_decomposition",
+      "assemble_partfrac_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_109_a6d6295eca7c758c_partfrac.py.json"
+}

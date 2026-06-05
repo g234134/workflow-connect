@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_cache.py",
+  "name": "test_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2082,
+  "content_sha256": "b15e31818243a4394a7b5df6ddb2d8369277d5066048a111786c91934b3a8177",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 52,
+    "char_count": 2079,
+    "preview_lines": [
+      "from datetime import timedelta",
+      "from unittest.mock import AsyncMock",
+      "import pytest",
+      "import langgraph_sdk.cache as cache_module",
+      "@pytest.mark.asyncio",
+      "async def test_swr_proxies_to_server_impl(monkeypatch):",
+      "    loader = AsyncMock(return_value={\"ok\": True})",
+      "    forwarded = {}",
+      "    async def fake_swr(key, inner_loader, *, fresh_for, max_age, model):",
+      "        forwarded[\"key\"] = key"
+    ],
+    "imports": [
+      "from datetime import timedelta",
+      "from unittest.mock import AsyncMock",
+      "import pytest",
+      "import langgraph_sdk.cache as cache_module"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_226_b15e31818243a439_test_cache.py.json"
+}

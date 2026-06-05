@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 23,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_httplib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_httplib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5640,
+  "content_sha256": "85ae48354a2814dacd0b291ea9d72d5ea89049e7134664d45ec4dfe8707bc40b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 200,
+    "non_empty_lines": 163,
+    "char_count": 5640,
+    "preview_lines": [
+      "# Copyright The OpenTelemetry Authors",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import http.client",
+      "import logging",
+      "import socket  # pylint:disable=unused-import # Used for typing",
+      "import typing",
+      "from typing import Any, Callable, Collection, TypedDict, cast",
+      "import wrapt",
+      "from opentelemetry import context",
+      "from opentelemetry.instrumentation.instrumentor import BaseInstrumentor",
+      "from opentelemetry.instrumentation.utils import unwrap",
+      "from opentelemetry.semconv._incubating.attributes.net_attributes import (",
+      "from opentelemetry.trace.span import Span"
+    ],
+    "classes": [
+      "HttpClientInstrumentor",
+      "_ConnectionState"
+    ],
+    "functions": [
+      "_remove_nonrecording",
+      "trysetip",
+      "_instrumented_connect",
+      "instrument_connect",
+      "_instrument",
+      "_getstate",
+      "set_ip_on_next_http_connection",
+      "_uninstrument"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_023_85ae48354a2814da_AI_Chariot_Legacy_666_1.0.0_20260508_httplib.py.json"
+}

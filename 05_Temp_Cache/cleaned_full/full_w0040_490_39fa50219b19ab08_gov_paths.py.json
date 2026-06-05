@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\gov_paths.py",
+  "name": "gov_paths.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7479,
+  "content_sha256": "39fa50219b19ab08b158387b18e2553b0b432cdc683cabe506bc47b9162d34f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 172,
+    "char_count": 6925,
+    "preview_lines": [
+      "# gov_paths.py — 路徑動態化 + 吏部 .env 載入（配置歸心）",
+      "# 所有 Agent 應透過本模組取得六部根目錄與各部門絕對路徑；禁止寫死磁碟路徑。",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "from functools import lru_cache",
+      "from typing import Any, Dict, Optional",
+      "_ROOT_CACHE: Optional[str] = None",
+      "def _load_dotenv(env_path: str) -> None:",
+      "    if not os.path.isfile(env_path):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "from functools import lru_cache",
+      "from typing import Any, Dict, Optional"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_dotenv",
+      "_discover_tang_root_from_filesystem",
+      "_read_master_map_at",
+      "invalidate_caches",
+      "get_tang_gov_root",
+      "load_master_map",
+      "_department_rel",
+      "_get_subdir_segment_from_map",
+      "resolve_agent_output_path",
+      "get_department",
+      "get_department_under",
+      "get_artifact_rel_path",
+      "get_artifact_path",
+      "resolve_artifact_under_root",
+      "get_secret"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_490_39fa50219b19ab08_gov_paths.py.json"
+}

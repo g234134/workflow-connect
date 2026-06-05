@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 362,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_url_delta.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_url_delta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 582,
+  "content_sha256": "3170a9f8e9ae353e278db580f435806e870fee90f756975c532db081e3a3c26e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 15,
+    "char_count": 582,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "__all__ = [\"ImageURLDelta\"]",
+      "class ImageURLDelta(BaseModel):",
+      "    detail: Optional[Literal[\"auto\", \"low\", \"high\"]] = None",
+      "    \"\"\"Specifies the detail level of the image.",
+      "    `low` uses fewer tokens, you can opt in to high resolution using `high`.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel"
+    ],
+    "classes": [
+      "ImageURLDelta"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_362_3170a9f8e9ae353e_AI_Chariot_Legacy_666_1.0.0_20260508_image_url_delta.py.json"
+}

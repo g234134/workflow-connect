@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 129,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fixedTools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fixedTools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7921,
+  "content_sha256": "a3fa9f94e169f8630e8543df71cd907c6ebd45fc7a2b4b7c8b7ddbe3fed6aa43",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 253,
+    "non_empty_lines": 187,
+    "char_count": 7921,
+    "preview_lines": [
+      "\"\"\"",
+      "The `OpenType specification <https://docs.microsoft.com/en-us/typography/opentype/spec/otff#data-types>`_",
+      "defines two fixed-point data types:",
+      "``Fixed``",
+      "\tA 32-bit signed fixed-point number with a 16 bit twos-complement",
+      "\tmagnitude component and 16 fractional bits.",
+      "``F2DOT14``",
+      "\tA 16-bit signed fixed-point number with a 2 bit twos-complement",
+      "\tmagnitude component and 14 fractional bits.",
+      "To support reading and writing data with these data types, this module provides"
+    ],
+    "imports": [
+      "from .roundTools import otRound, nearestMultipleShortestRepr",
+      "import logging"
+    ],
+    "classes": [],
+    "functions": [
+      "fixedToFloat",
+      "floatToFixed",
+      "floatToFixedToFloat",
+      "fixedToStr",
+      "strToFixed",
+      "strToFixedToFloat",
+      "floatToFixedToStr",
+      "ensureVersionIsLong",
+      "versionToFixed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_129_a3fa9f94e169f863_AI_Chariot_Legacy_666_1.0.0_20260508_fixedTools.py.json"
+}

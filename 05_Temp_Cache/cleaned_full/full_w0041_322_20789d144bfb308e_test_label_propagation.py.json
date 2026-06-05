@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 322,
+  "generated_at": "2026-05-08T18:47:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\tests\\test_label_propagation.py",
+  "name": "test_label_propagation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7985,
+  "content_sha256": "20789d144bfb308efcd73b1d93b5d3f38f2b2ef2f00e4db004ad458cbf8246fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 241,
+    "non_empty_lines": 197,
+    "char_count": 7985,
+    "preview_lines": [
+      "from itertools import chain, combinations",
+      "import pytest",
+      "import networkx as nx",
+      "def test_directed_not_supported():",
+      "    with pytest.raises(nx.NetworkXNotImplemented):",
+      "        # not supported for directed graphs",
+      "        test = nx.DiGraph()",
+      "        test.add_edge(\"a\", \"b\")",
+      "        test.add_edge(\"a\", \"c\")",
+      "        test.add_edge(\"b\", \"d\")"
+    ],
+    "imports": [
+      "from itertools import chain, combinations",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestAsynLpaCommunities",
+      "TestFastLabelPropagationCommunities"
+    ],
+    "functions": [
+      "test_directed_not_supported",
+      "test_iterator_vs_iterable",
+      "test_one_node",
+      "test_unconnected_communities",
+      "test_connected_communities",
+      "test_termination"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_322_20789d144bfb308e_test_label_propagation.py.json"
+}

@@ -1,0 +1,37 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-03T00:10:17+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 10 條
+二、雜訊過濾率（示意）：90.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_util_test.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_util_test.py
+2. manager.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\repos\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\libs\core\langchain_core\callbacks\manager.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_test_fancysets.py | score=8.6 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_fancysets.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_pad_mm.py | score=8.44 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_pad_mm.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_docview.py | score=8.38 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_docview.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_blockmatrix.py | score=8.15 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_blockmatrix.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_combinator.py | score=8.13 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_combinator.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_images.py | score=7.88 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_images.py
+9. AI_Chariot_Legacy_666_1.0.0_20260508_versions.py | score=7.84 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_versions.py
+10. AI_Chariot_Legacy_666_1.0.0_20260508_test_fit.py | score=7.79 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_fit.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）
+  · Run_ID=7aee63de2ee44a20958def9c5b86ca60
+  · 精煉波次過程中，共掃描100筆資料，平均值為5.245
+
+六、使用建議：
+  · 根據match_report顯示，elite_assets_matched為10，建議進一步分析這10筆資料
+  · coverage_pct為0.0，建議檢查掃描資料的覆蓋率
+  · noise_filter_rate_pct_hint為90.0，建議調整噪音過濾率以提高精度
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個數據清算和精煉的過程，共掃描100筆資料，平均值為5.245。根據match_report顯示，elite_assets_matched為10，coverage_pct為0.0，noise_filter_rate_pct_hint為90.0。建議進一步分析這10筆資料，檢查掃描資料的覆蓋率，調整噪音過濾率以提高精度。這個過程可以幫助提高數據的精度和可靠性，從而做出更好的決策。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

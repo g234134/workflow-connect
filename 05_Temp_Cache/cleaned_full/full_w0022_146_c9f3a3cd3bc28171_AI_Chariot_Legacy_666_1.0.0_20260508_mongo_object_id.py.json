@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 146,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mongo_object_id.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mongo_object_id.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2274,
+  "content_sha256": "c9f3a3cd3bc281718ee15bca92c3dc3d1031f2916f86634a6779955f149c1605",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 54,
+    "char_count": 2274,
+    "preview_lines": [
+      "\"\"\"",
+      "Validation for MongoDB ObjectId fields.",
+      "Ref: https://github.com/pydantic/pydantic-extra-types/issues/133",
+      "\"\"\"",
+      "from typing import Any",
+      "from pydantic import GetCoreSchemaHandler",
+      "from pydantic_core import core_schema",
+      "try:",
+      "    from bson import ObjectId",
+      "except ModuleNotFoundError as e:  # pragma: no cover"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from pydantic import GetCoreSchemaHandler",
+      "from pydantic_core import core_schema",
+      "from bson import ObjectId",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.mongo_object_id import MongoObjectId"
+    ],
+    "classes": [
+      "MongoObjectId"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_146_c9f3a3cd3bc28171_AI_Chariot_Legacy_666_1.0.0_20260508_mongo_object_id.py.json"
+}

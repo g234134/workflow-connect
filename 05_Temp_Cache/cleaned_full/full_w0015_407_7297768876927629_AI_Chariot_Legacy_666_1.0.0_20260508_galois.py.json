@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_galois.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_galois.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17867,
+  "content_sha256": "7297768876927629b9fb7f9caaf939f183fe02e4ba0af25e09d516a6239d2192",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 611,
+    "non_empty_lines": 465,
+    "char_count": 17867,
+    "preview_lines": [
+      "r\"\"\"",
+      "Construct transitive subgroups of symmetric groups, useful in Galois theory.",
+      "Besides constructing instances of the :py:class:`~.PermutationGroup` class to",
+      "represent the transitive subgroups of $S_n$ for small $n$, this module provides",
+      "*names* for these groups.",
+      "In some applications, it may be preferable to know the name of a group,",
+      "rather than receive an instance of the :py:class:`~.PermutationGroup`",
+      "class, and then have to do extra work to determine which group it is, by",
+      "checking various properties.",
+      "Names are instances of ``Enum`` classes defined in this module. With a name in"
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "from enum import Enum",
+      "import itertools",
+      "from sympy.combinatorics.named_groups import (",
+      "from sympy.combinatorics.perm_groups import PermutationGroup",
+      "from sympy.combinatorics.permutations import Permutation"
+    ],
+    "classes": [
+      "S1TransitiveSubgroups",
+      "S2TransitiveSubgroups",
+      "S3TransitiveSubgroups",
+      "S4TransitiveSubgroups",
+      "S5TransitiveSubgroups",
+      "S6TransitiveSubgroups"
+    ],
+    "functions": [
+      "four_group",
+      "M20",
+      "S3_in_S6",
+      "A4_in_S6",
+      "S4m",
+      "S4p",
+      "A4xC2",
+      "S4xC2",
+      "G18",
+      "G36m",
+      "G36p",
+      "G72",
+      "PSL2F5",
+      "PGL2F5",
+      "find_transitive_subgroups_of_S6"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_407_7297768876927629_AI_Chariot_Legacy_666_1.0.0_20260508_galois.py.json"
+}

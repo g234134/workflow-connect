@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 208,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\core\\impl\\LocalDispatchKeySet.h",
+  "name": "LocalDispatchKeySet.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 6419,
+  "content_sha256": "04bae406c632cb26b9bad8b43391a77e0dc712ee02a4c8de1a1e409ce528c440",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 144,
+    "char_count": 6419,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/DispatchKeySet.h>",
+      "#include <c10/macros/Export.h>",
+      "// TLS management for DispatchKeySet (the \"local\" DispatchKeySet(s))",
+      "//",
+      "// This manages two thread-local DispatchKeySets:",
+      "//",
+      "//  - The included type set, which adds a tensor type for consideration",
+      "//    in dispatch.  (For example, you might add Profiling to",
+      "//    the included type set to turn on profiling on all tensor operations.)"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_208_04bae406c632cb26_LocalDispatchKeySet.h.json"
+}

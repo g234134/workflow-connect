@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__decomp_cholesky.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__decomp_cholesky.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14119,
+  "content_sha256": "cbd754174c9694e7f1f25251226ae1adf77ddbe43c63ee5a8fa11340085bd311",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 398,
+    "non_empty_lines": 332,
+    "char_count": 14119,
+    "preview_lines": [
+      "\"\"\"Cholesky decomposition functions.\"\"\"",
+      "import numpy as np",
+      "from numpy import asarray_chkfinite, asarray, atleast_2d, empty_like",
+      "# Local imports",
+      "from ._misc import LinAlgError, _datacopied",
+      "from .lapack import get_lapack_funcs",
+      "__all__ = ['cholesky', 'cho_factor', 'cho_solve', 'cholesky_banded',",
+      "           'cho_solve_banded']",
+      "def _cholesky(a, lower=False, overwrite_a=False, clean=True,",
+      "              check_finite=True):"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy import asarray_chkfinite, asarray, atleast_2d, empty_like",
+      "from ._misc import LinAlgError, _datacopied",
+      "from .lapack import get_lapack_funcs"
+    ],
+    "classes": [],
+    "functions": [
+      "_cholesky",
+      "cholesky",
+      "cho_factor",
+      "cho_solve",
+      "cholesky_banded",
+      "cho_solve_banded"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_441_cbd754174c9694e7_AI_Chariot_Legacy_666_1.0.0_20260508__decomp_cholesky.py.json"
+}

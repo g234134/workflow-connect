@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mailcap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mailcap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9333,
+  "content_sha256": "d3242c92bfedb13c7cf5e7aa116e9a38c07e9c6de58f53d03f72a469e9448ca6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 302,
+    "non_empty_lines": 267,
+    "char_count": 9333,
+    "preview_lines": [
+      "\"\"\"Mailcap file handling.  See RFC 1524.\"\"\"",
+      "import os",
+      "import warnings",
+      "import re",
+      "__all__ = [\"getcaps\",\"findmatch\"]",
+      "_DEPRECATION_MSG = ('The {name} module is deprecated and will be removed in '",
+      "                    'Python {remove}. See the mimetypes module for an '",
+      "                    'alternative.')",
+      "warnings._deprecated(__name__, _DEPRECATION_MSG, remove=(3, 13))",
+      "def lineno_sort_key(entry):"
+    ],
+    "imports": [
+      "import os",
+      "import warnings",
+      "import re"
+    ],
+    "classes": [
+      "UnsafeMailcapInput"
+    ],
+    "functions": [
+      "lineno_sort_key",
+      "getcaps",
+      "listmailcapfiles",
+      "readmailcapfile",
+      "_readmailcapfile",
+      "parseline",
+      "parsefield",
+      "findmatch",
+      "lookup",
+      "subst",
+      "findparam",
+      "test",
+      "show"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_492_d3242c92bfedb13c_AI_Chariot_Legacy_666_1.0.0_20260508_mailcap.py.json"
+}

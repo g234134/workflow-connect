@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:46:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_revoke.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_revoke.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3113,
+  "content_sha256": "0c85639f4f64eea4e4017ae44ec44156547e5ccf6bb264c9cca957c8d749a831",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 76,
+    "char_count": 3113,
+    "preview_lines": [
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Any, Literal",
+      "from pydantic import BaseModel, ValidationError",
+      "from starlette.requests import Request",
+      "from starlette.responses import Response",
+      "from mcp.server.auth.errors import (",
+      "    stringify_pydantic_error,",
+      ")",
+      "from mcp.server.auth.json_response import PydanticJSONResponse"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Any, Literal",
+      "from pydantic import BaseModel, ValidationError",
+      "from starlette.requests import Request",
+      "from starlette.responses import Response",
+      "from mcp.server.auth.errors import (",
+      "from mcp.server.auth.json_response import PydanticJSONResponse",
+      "from mcp.server.auth.middleware.client_auth import AuthenticationError, ClientAuthenticator",
+      "from mcp.server.auth.provider import AccessToken, OAuthAuthorizationServerProvider, RefreshToken"
+    ],
+    "classes": [
+      "RevocationRequest",
+      "RevocationErrorResponse",
+      "RevocationHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_181_0c85639f4f64eea4_AI_Chariot_Legacy_666_1.0.0_20260508_revoke.py.json"
+}

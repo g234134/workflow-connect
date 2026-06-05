@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\transformer.py",
+  "name": "transformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46752,
+  "content_sha256": "ace9bb750f23a26c8b43b1b60337499c079cb85a20094f60f57e6107df669e92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 940,
+    "non_empty_lines": 811,
+    "char_count": 46752,
+    "preview_lines": [
+      "import copy",
+      "from typing import Optional, Any, Union, Callable",
+      "import torch",
+      "import warnings",
+      "from torch import Tensor",
+      "from .. import functional as F",
+      "from .module import Module",
+      "from .activation import MultiheadAttention",
+      "from .container import ModuleList",
+      "from ..init import xavier_uniform_"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import Optional, Any, Union, Callable",
+      "import torch",
+      "import warnings",
+      "from torch import Tensor",
+      "from .. import functional as F",
+      "from .module import Module",
+      "from .activation import MultiheadAttention",
+      "from .container import ModuleList",
+      "from ..init import xavier_uniform_",
+      "from .dropout import Dropout",
+      "from .linear import Linear",
+      "from .normalization import LayerNorm"
+    ],
+    "classes": [
+      "Transformer",
+      "TransformerEncoder",
+      "TransformerDecoder",
+      "TransformerEncoderLayer",
+      "TransformerDecoderLayer"
+    ],
+    "functions": [
+      "_generate_square_subsequent_mask",
+      "_get_seq_len",
+      "_get_clones",
+      "_get_activation_fn",
+      "_detect_is_causal_mask"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_274_ace9bb750f23a26c_transformer.py.json"
+}

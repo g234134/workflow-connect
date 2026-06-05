@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_eventLogDemo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_eventLogDemo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4338,
+  "content_sha256": "aaac7e453f779067df8ba4067def08246e223f0389e6912dcb1fe792155a98f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 138,
+    "non_empty_lines": 122,
+    "char_count": 4338,
+    "preview_lines": [
+      "import win32api  # To translate NT Sids to account names.",
+      "import win32con",
+      "import win32evtlog",
+      "import win32evtlogutil",
+      "import win32security",
+      "def ReadLog(computer, logType=\"Application\", dumpEachRecord=0):",
+      "    # read the entire log back.",
+      "    h = win32evtlog.OpenEventLog(computer, logType)",
+      "    numRecords = win32evtlog.GetNumberOfEventLogRecords(h)",
+      "    # print(f\"There are {numRecords} records\")"
+    ],
+    "imports": [
+      "import win32api  # To translate NT Sids to account names.",
+      "import win32con",
+      "import win32evtlog",
+      "import win32evtlogutil",
+      "import win32security",
+      "import getopt",
+      "import sys"
+    ],
+    "classes": [],
+    "functions": [
+      "ReadLog",
+      "usage",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_058_aaac7e453f779067_AI_Chariot_Legacy_666_1.0.0_20260508_eventLogDemo.py.json"
+}

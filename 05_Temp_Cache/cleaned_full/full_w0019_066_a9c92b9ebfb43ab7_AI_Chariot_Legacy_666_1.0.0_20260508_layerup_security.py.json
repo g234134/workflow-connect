@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_layerup_security.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_layerup_security.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3476,
+  "content_sha256": "a9c92b9ebfb43ab7bdc0cb56aee86ce5ae93051ab64b2f8680f5c648def3b855",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 87,
+    "char_count": 3476,
+    "preview_lines": [
+      "import logging",
+      "from typing import Any, Callable, Dict, List, Optional",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import LLM",
+      "from pydantic import model_validator",
+      "logger = logging.getLogger(__name__)",
+      "def default_guardrail_violation_handler(violation: dict) -> str:",
+      "    \"\"\"Default guardrail violation handler.",
+      "    Args:",
+      "        violation (dict): The violation dictionary."
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Any, Callable, Dict, List, Optional",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import LLM",
+      "from pydantic import model_validator",
+      "from layerup_security import LayerupSecurity as LayerupSecuritySDK"
+    ],
+    "classes": [
+      "LayerupSecurity"
+    ],
+    "functions": [
+      "default_guardrail_violation_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_066_a9c92b9ebfb43ab7_AI_Chariot_Legacy_666_1.0.0_20260508_layerup_security.py.json"
+}

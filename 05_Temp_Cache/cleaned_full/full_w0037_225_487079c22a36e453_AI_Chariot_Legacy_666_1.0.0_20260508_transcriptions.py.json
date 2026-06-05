@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 225,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transcriptions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transcriptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 52213,
+  "content_sha256": "487079c22a36e45308c4bd76fc4ae3b860adb90ddf469913d99a3468316d8406",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 987,
+    "non_empty_lines": 847,
+    "char_count": 52213,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import TYPE_CHECKING, List, Union, Mapping, Optional, cast",
+      "from typing_extensions import Literal, overload, assert_never",
+      "import httpx",
+      "from ... import _legacy_response",
+      "from ..._types import (",
+      "    Body,",
+      "    Omit,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import TYPE_CHECKING, List, Union, Mapping, Optional, cast",
+      "from typing_extensions import Literal, overload, assert_never",
+      "import httpx",
+      "from ... import _legacy_response",
+      "from ..._types import (",
+      "from ..._utils import extract_files, required_args, maybe_transform, deepcopy_minimal, async_maybe_transform",
+      "from ..._compat import cached_property",
+      "from ..._resource import SyncAPIResource, AsyncAPIResource",
+      "from ..._response import to_streamed_response_wrapper, async_to_streamed_response_wrapper",
+      "from ..._streaming import Stream, AsyncStream",
+      "from ...types.audio import transcription_create_params",
+      "from ..._base_client import make_request_options",
+      "from ...types.audio_model import AudioModel",
+      "from ...types.audio.transcription import Transcription",
+      "from ...types.audio_response_format import AudioResponseFormat",
+      "from ...types.audio.transcription_include import TranscriptionInclude",
+      "from ...types.audio.transcription_verbose import TranscriptionVerbose",
+      "from ...types.audio.transcription_diarized import TranscriptionDiarized"
+    ],
+    "classes": [
+      "Transcriptions",
+      "AsyncTranscriptions",
+      "TranscriptionsWithRawResponse",
+      "AsyncTranscriptionsWithRawResponse",
+      "TranscriptionsWithStreamingResponse",
+      "AsyncTranscriptionsWithStreamingResponse"
+    ],
+    "functions": [
+      "_get_response_format_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_225_487079c22a36e453_AI_Chariot_Legacy_666_1.0.0_20260508_transcriptions.py.json"
+}

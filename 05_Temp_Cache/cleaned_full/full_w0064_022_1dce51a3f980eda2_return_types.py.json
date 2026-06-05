@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 22,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\return_types.py",
+  "name": "return_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1118,
+  "content_sha256": "1dce51a3f980eda2089f982cdff928e7c57c92b4ae9f0069807ad68f1495b650",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 25,
+    "char_count": 1118,
+    "preview_lines": [
+      "import torch",
+      "import inspect",
+      "__all__ = [\"pytree_register_structseq\"]",
+      "# error: Module has no attribute \"_return_types\"",
+      "return_types = torch._C._return_types  # type: ignore[attr-defined]",
+      "def pytree_register_structseq(cls):",
+      "    def structseq_flatten(structseq):",
+      "        return list(structseq), None",
+      "    def structseq_unflatten(values, context):",
+      "        return cls(values)"
+    ],
+    "imports": [
+      "import torch",
+      "import inspect"
+    ],
+    "classes": [],
+    "functions": [
+      "pytree_register_structseq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_022_1dce51a3f980eda2_return_types.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_verifier.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_verifier.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11182,
+  "content_sha256": "a17f23a5aa21836426dda1dcce789d01dbeb566e4de2c4181b46b7128e66225e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 306,
+    "non_empty_lines": 273,
+    "char_count": 11182,
+    "preview_lines": [
+      "#",
+      "# DEPRECATED: implementation for ffi.verify()",
+      "#",
+      "import sys, os, binascii, shutil, io",
+      "from . import __version_verifier_modules__",
+      "from . import ffiplatform",
+      "from .error import VerificationError",
+      "if sys.version_info >= (3, 3):",
+      "    import importlib.machinery",
+      "    def _extension_suffixes():"
+    ],
+    "imports": [
+      "import sys, os, binascii, shutil, io",
+      "from . import __version_verifier_modules__",
+      "from . import ffiplatform",
+      "from .error import VerificationError",
+      "import importlib.machinery",
+      "import imp"
+    ],
+    "classes": [
+      "Verifier"
+    ],
+    "functions": [
+      "_locate_engine_class",
+      "_caller_dir_pycache",
+      "set_tmpdir",
+      "cleanup_tmpdir",
+      "_get_so_suffixes",
+      "_ensure_dir"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_387_a17f23a5aa218364_AI_Chariot_Legacy_666_1.0.0_20260508_verifier.py.json"
+}

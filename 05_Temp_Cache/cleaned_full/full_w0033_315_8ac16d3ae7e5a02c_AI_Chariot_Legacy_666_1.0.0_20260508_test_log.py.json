@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 315,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_log.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_log.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 323,
+  "content_sha256": "8ac16d3ae7e5a02c84759690395edc554af8e86c2d755323e37986041e571fb9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 311,
+    "preview_lines": [
+      "\"\"\"Tests for distutils.log\"\"\"",
+      "import logging",
+      "from distutils._log import log",
+      "class TestLog:",
+      "    def test_non_ascii(self, caplog):",
+      "        caplog.set_level(logging.DEBUG)",
+      "        log.debug('Dεbug\\tMėssãge')",
+      "        log.fatal('Fαtal\\tÈrrōr')",
+      "        assert caplog.messages == ['Dεbug\\tMėssãge', 'Fαtal\\tÈrrōr']"
+    ],
+    "imports": [
+      "import logging",
+      "from distutils._log import log"
+    ],
+    "classes": [
+      "TestLog"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_315_8ac16d3ae7e5a02c_AI_Chariot_Legacy_666_1.0.0_20260508_test_log.py.json"
+}

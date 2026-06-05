@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 215,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pointPen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pointPen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25257,
+  "content_sha256": "d17770d0c22683072ca62ef6b1ccde317f85029a71e5a84d985774f75c1d7d54",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 653,
+    "non_empty_lines": 567,
+    "char_count": 25257,
+    "preview_lines": [
+      "\"\"\"",
+      "=========",
+      "PointPens",
+      "=========",
+      "Where **SegmentPens** have an intuitive approach to drawing",
+      "(if you're familiar with postscript anyway), the **PointPen**",
+      "is geared towards accessing all the data in the contours of",
+      "the glyph. A PointPen has a very simple interface, it just",
+      "steps through all the points in a call from glyph.drawPoints().",
+      "This allows the caller to provide more data for each point."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "from fontTools.misc.enumTools import StrEnum",
+      "from fontTools.misc.loggingTools import LogMixin",
+      "from fontTools.misc.transform import DecomposedTransform, Identity",
+      "from fontTools.pens.basePen import AbstractPen, MissingComponentError, PenError"
+    ],
+    "classes": [
+      "ReverseFlipped",
+      "AbstractPointPen",
+      "BasePointToSegmentPen",
+      "PointToSegmentPen",
+      "SegmentToPointPen",
+      "GuessSmoothPointPen",
+      "ReverseContourPointPen",
+      "DecomposingPointPen"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_215_d17770d0c2268307_AI_Chariot_Legacy_666_1.0.0_20260508_pointPen.py.json"
+}

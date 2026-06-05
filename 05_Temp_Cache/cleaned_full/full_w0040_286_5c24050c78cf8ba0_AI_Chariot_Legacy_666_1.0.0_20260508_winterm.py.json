@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 286,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_winterm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_winterm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7134,
+  "content_sha256": "5c24050c78cf8ba00760d759c32d2d034d87f89878f09a7e1ef0a378b78ba775",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 172,
+    "char_count": 7134,
+    "preview_lines": [
+      "# Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.",
+      "try:",
+      "    from msvcrt import get_osfhandle",
+      "except ImportError:",
+      "    def get_osfhandle(_):",
+      "        raise OSError(\"This isn't windows!\")",
+      "from . import win32",
+      "# from wincon.h",
+      "class WinColor(object):",
+      "    BLACK   = 0"
+    ],
+    "imports": [
+      "from msvcrt import get_osfhandle",
+      "from . import win32"
+    ],
+    "classes": [
+      "WinColor",
+      "WinStyle",
+      "WinTerm"
+    ],
+    "functions": [
+      "enable_vt_processing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_286_5c24050c78cf8ba0_AI_Chariot_Legacy_666_1.0.0_20260508_winterm.py.json"
+}

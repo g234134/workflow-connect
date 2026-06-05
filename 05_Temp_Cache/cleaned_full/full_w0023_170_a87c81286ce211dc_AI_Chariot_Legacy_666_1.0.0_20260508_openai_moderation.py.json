@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 170,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_openai_moderation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_openai_moderation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1172,
+  "content_sha256": "a87c81286ce211dc49057cc6fd26fb3f9d83813154275c24508c07d1b1d9a1a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 22,
+    "char_count": 1172,
+    "preview_lines": [
+      "from typing import Literal, Optional",
+      "from pydantic import BaseModel, Field",
+      "from ..base import GuardrailConfigModel",
+      "class BaseOpenAIModerationGuardrailConfigModel(GuardrailConfigModel):",
+      "    \"\"\"Base configuration model for the OpenAI Moderation guardrail\"\"\"",
+      "    model: Optional[Literal[\"omni-moderation-latest\", \"text-moderation-latest\"]] = Field(",
+      "        default=\"omni-moderation-latest\",",
+      "        description=\"The OpenAI moderation model to use. 'omni-moderation-latest' supports more categorization options and multi-modal inputs. Defaults to 'omni-moderation-latest'.\",",
+      "    )",
+      "class OpenAIModerationGuardrailConfigModel(BaseOpenAIModerationGuardrailConfigModel):"
+    ],
+    "imports": [
+      "from typing import Literal, Optional",
+      "from pydantic import BaseModel, Field",
+      "from ..base import GuardrailConfigModel"
+    ],
+    "classes": [
+      "BaseOpenAIModerationGuardrailConfigModel",
+      "OpenAIModerationGuardrailConfigModel"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_170_a87c81286ce211dc_AI_Chariot_Legacy_666_1.0.0_20260508_openai_moderation.py.json"
+}

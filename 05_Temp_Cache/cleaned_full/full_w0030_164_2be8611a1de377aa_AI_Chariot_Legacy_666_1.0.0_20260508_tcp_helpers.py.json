@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 164,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tcp_helpers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tcp_helpers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 998,
+  "content_sha256": "2be8611a1de377aa821271c9a3c2ef1727c9c018e1f7d50a23b034692455863e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 24,
+    "char_count": 998,
+    "preview_lines": [
+      "\"\"\"Helper methods to tune a TCP connection\"\"\"",
+      "import asyncio",
+      "import socket",
+      "from contextlib import suppress",
+      "from typing import Optional  # noqa",
+      "__all__ = (\"tcp_keepalive\", \"tcp_nodelay\")",
+      "if hasattr(socket, \"SO_KEEPALIVE\"):",
+      "    def tcp_keepalive(transport: asyncio.Transport) -> None:",
+      "        sock = transport.get_extra_info(\"socket\")",
+      "        if sock is not None:"
+    ],
+    "imports": [
+      "import asyncio",
+      "import socket",
+      "from contextlib import suppress",
+      "from typing import Optional  # noqa"
+    ],
+    "classes": [],
+    "functions": [
+      "tcp_nodelay"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_164_2be8611a1de377aa_AI_Chariot_Legacy_666_1.0.0_20260508_tcp_helpers.py.json"
+}

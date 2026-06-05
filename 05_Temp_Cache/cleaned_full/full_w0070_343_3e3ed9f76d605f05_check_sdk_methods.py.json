@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\.github\\scripts\\check_sdk_methods.py",
+  "name": "check_sdk_methods.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2622,
+  "content_sha256": "3e3ed9f76d605f0599c56e5f5bc91fb7a4cfafab1c1cca8c484e0b345bd6f1b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 51,
+    "char_count": 2619,
+    "preview_lines": [
+      "import ast",
+      "import os",
+      "from itertools import filterfalse",
+      "from typing import Dict, List, Tuple",
+      "ROOT_PATH = os.path.abspath(os.path.join(__file__, \"..\", \"..\", \"..\"))",
+      "CLIENT_PATH = os.path.join(ROOT_PATH, \"libs\", \"sdk-py\", \"langgraph_sdk\", \"client.py\")",
+      "ASYNC_TO_SYNC_METHOD_MAP: Dict[str, str] = {",
+      "    \"aclose\": \"close\",",
+      "    \"__aenter__\": \"__enter__\",",
+      "    \"__aexit__\": \"__exit__\","
+    ],
+    "imports": [
+      "import ast",
+      "import os",
+      "from itertools import filterfalse",
+      "from typing import Dict, List, Tuple"
+    ],
+    "classes": [],
+    "functions": [
+      "get_class_methods",
+      "find_classes",
+      "compare_sync_async_methods",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_343_3e3ed9f76d605f05_check_sdk_methods.py.json"
+}

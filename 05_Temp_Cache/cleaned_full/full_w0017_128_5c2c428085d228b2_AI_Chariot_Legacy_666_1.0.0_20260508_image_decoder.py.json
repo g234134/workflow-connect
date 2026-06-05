@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:45:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_decoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_decoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11093,
+  "content_sha256": "5c2c428085d228b2af3b80905c6bb212ea177839fdcb1cbc46799f42000b3967",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 272,
+    "non_empty_lines": 229,
+    "char_count": 11093,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (R) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "import warnings",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from image_encoder import SAM2ImageEncoder, random_sam2_input_image",
+      "from mask_decoder import SAM2MaskDecoder"
+    ],
+    "imports": [
+      "import logging",
+      "import warnings",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from image_encoder import SAM2ImageEncoder, random_sam2_input_image",
+      "from mask_decoder import SAM2MaskDecoder",
+      "from prompt_encoder import SAM2PromptEncoder",
+      "from sam2.modeling.sam2_base import SAM2Base",
+      "from sam2_utils import compare_tensors_with_tolerance",
+      "from torch import nn",
+      "from nvtx_helper import NvtxHelper  # noqa: PLC0415"
+    ],
+    "classes": [
+      "SAM2ImageDecoder"
+    ],
+    "functions": [
+      "export_decoder_onnx",
+      "test_decoder_onnx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_128_5c2c428085d228b2_AI_Chariot_Legacy_666_1.0.0_20260508_image_decoder.py.json"
+}

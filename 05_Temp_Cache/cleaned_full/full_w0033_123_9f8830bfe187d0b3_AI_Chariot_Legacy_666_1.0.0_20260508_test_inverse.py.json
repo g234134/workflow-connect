@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_inverse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_inverse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2320,
+  "content_sha256": "9f8830bfe187d0b3d7643560cc4074940fdf93c3263452bf0553496f414451f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 51,
+    "char_count": 2320,
+    "preview_lines": [
+      "from sympy.core import symbols, S",
+      "from sympy.matrices.expressions import MatrixSymbol, Inverse, MatPow, ZeroMatrix, OneMatrix",
+      "from sympy.matrices.exceptions import NonInvertibleMatrixError, NonSquareMatrixError",
+      "from sympy.matrices import eye, Identity",
+      "from sympy.testing.pytest import raises",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.assumptions.refine import refine",
+      "n, m, l = symbols('n m l', integer=True)",
+      "A = MatrixSymbol('A', n, m)",
+      "B = MatrixSymbol('B', m, l)"
+    ],
+    "imports": [
+      "from sympy.core import symbols, S",
+      "from sympy.matrices.expressions import MatrixSymbol, Inverse, MatPow, ZeroMatrix, OneMatrix",
+      "from sympy.matrices.exceptions import NonInvertibleMatrixError, NonSquareMatrixError",
+      "from sympy.matrices import eye, Identity",
+      "from sympy.testing.pytest import raises",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.assumptions.refine import refine"
+    ],
+    "classes": [],
+    "functions": [
+      "test_inverse",
+      "test_inverse_non_invertible",
+      "test_refine",
+      "test_inverse_matpow_canonicalization",
+      "test_nonsquare_error",
+      "test_adjoint_trnaspose_conjugate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_123_9f8830bfe187d0b3_AI_Chariot_Legacy_666_1.0.0_20260508_test_inverse.py.json"
+}

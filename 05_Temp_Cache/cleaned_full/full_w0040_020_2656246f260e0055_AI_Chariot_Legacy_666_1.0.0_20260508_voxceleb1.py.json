@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 20,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_voxceleb1.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_voxceleb1.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12034,
+  "content_sha256": "2656246f260e0055058462d42dede582e7003567ff1bba86ab0e3b623897d883",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 309,
+    "non_empty_lines": 252,
+    "char_count": 12010,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import List, Tuple, Union",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_zip, _load_waveform",
+      "SAMPLE_RATE = 16000",
+      "_ARCHIVE_CONFIGS = {",
+      "    \"dev\": {"
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import List, Tuple, Union",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_zip, _load_waveform"
+    ],
+    "classes": [
+      "VoxCeleb1",
+      "VoxCeleb1Identification",
+      "VoxCeleb1Verification"
+    ],
+    "functions": [
+      "_download_extract_wavs",
+      "_get_flist",
+      "_get_paired_flist",
+      "_get_file_id"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_020_2656246f260e0055_AI_Chariot_Legacy_666_1.0.0_20260508_voxceleb1.py.json"
+}

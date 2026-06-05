@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_matmul_perf_model.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_matmul_perf_model.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7433,
+  "content_sha256": "e93ae49a8b9fdf8ef68c4704f19ab6370d40abd37284e4a968426189a8a77dcc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 211,
+    "non_empty_lines": 180,
+    "char_count": 7433,
+    "preview_lines": [
+      "# Adapted from https://github.com/triton-lang/kernels/blob/eeeebdd8be7d13629de22d600621e6234057eed3/kernels/matmul_perf_model.py",
+      "# https://github.com/triton-lang/kernels is licensed under the MIT License.",
+      "import functools",
+      "import heapq",
+      "import torch",
+      "from triton import cdiv",
+      "from triton.runtime import driver",
+      "from triton.testing import (",
+      "    get_dram_gbps,",
+      "    get_max_simd_tflops,"
+    ],
+    "imports": [
+      "import functools",
+      "import heapq",
+      "import torch",
+      "from triton import cdiv",
+      "from triton.runtime import driver",
+      "from triton.testing import (",
+      "import pynvml"
+    ],
+    "classes": [],
+    "functions": [
+      "get_clock_rate_in_khz",
+      "get_tensorcore_tflops",
+      "get_simd_tflops",
+      "get_tflops",
+      "estimate_matmul_time",
+      "early_config_prune"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_105_e93ae49a8b9fdf8e_AI_Chariot_Legacy_666_1.0.0_20260508_matmul_perf_model.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\stubs.py",
+  "name": "stubs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2074,
+  "content_sha256": "f471252f0ce6bb61da0b6575a3fa20f4042b08616c038502aafabec83c7efc21",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 51,
+    "char_count": 2074,
+    "preview_lines": [
+      "from torch import nn",
+      "class QuantStub(nn.Module):",
+      "    r\"\"\"Quantize stub module, before calibration, this is same as an observer,",
+      "    it will be swapped as `nnq.Quantize` in `convert`.",
+      "    Args:",
+      "        qconfig: quantization configuration for the tensor,",
+      "            if qconfig is not provided, we will get qconfig from parent modules",
+      "    \"\"\"",
+      "    def __init__(self, qconfig=None):",
+      "        super().__init__()"
+    ],
+    "imports": [
+      "from torch import nn"
+    ],
+    "classes": [
+      "QuantStub",
+      "DeQuantStub",
+      "QuantWrapper"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_421_f471252f0ce6bb61_stubs.py.json"
+}

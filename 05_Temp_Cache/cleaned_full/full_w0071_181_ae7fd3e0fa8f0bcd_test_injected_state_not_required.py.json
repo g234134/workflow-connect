@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\prebuilt\\tests\\test_injected_state_not_required.py",
+  "name": "test_injected_state_not_required.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9536,
+  "content_sha256": "ae7fd3e0fa8f0bcd1fa9d642942be28fd0a08c63424b7d3024e3d6f42cf4f90f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 285,
+    "non_empty_lines": 227,
+    "char_count": 9533,
+    "preview_lines": [
+      "\"\"\"Test InjectedState with NotRequired state fields.",
+      "This tests the fix for https://github.com/langchain-ai/langchain/issues/35585",
+      "When using InjectedState(<field>) on a tool parameter, and the referenced field is",
+      "declared as NotRequired in the custom state schema, the ToolNode should gracefully",
+      "handle missing fields by injecting None instead of raising KeyError.",
+      "\"\"\"",
+      "import sys",
+      "from typing import Annotated",
+      "import pytest",
+      "from langchain_core.messages import AIMessage, AnyMessage, HumanMessage, ToolMessage"
+    ],
+    "imports": [
+      "import sys",
+      "from typing import Annotated",
+      "import pytest",
+      "from langchain_core.messages import AIMessage, AnyMessage, HumanMessage, ToolMessage",
+      "from langchain_core.tools import tool",
+      "from langgraph.graph.message import add_messages",
+      "from pydantic import BaseModel, Field",
+      "from typing_extensions import NotRequired",
+      "from langgraph.prebuilt import InjectedState, ToolNode, create_react_agent",
+      "from langgraph.prebuilt.chat_agent_executor import AgentState",
+      "from .model import FakeToolCallingModel",
+      "from unittest.mock import Mock",
+      "from langgraph.runtime import Runtime",
+      "from langgraph.prebuilt.tool_node import ToolRuntime"
+    ],
+    "classes": [
+      "CustomAgentStateWithNotRequired",
+      "CustomAgentStatePydanticWithDefault"
+    ],
+    "functions": [
+      "get_weather",
+      "_create_mock_runtime",
+      "_create_config_with_runtime",
+      "test_injected_state_not_required_field_missing_injects_none",
+      "test_injected_state_not_required_field_present_works",
+      "test_create_react_agent_injected_state_not_required_field_missing",
+      "test_create_react_agent_injected_state_not_required_field_present",
+      "get_weather_optional",
+      "test_pydantic_state_with_default_field_missing_works",
+      "test_pydantic_state_with_default_field_present_works"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_181_ae7fd3e0fa8f0bcd_test_injected_state_not_required.py.json"
+}

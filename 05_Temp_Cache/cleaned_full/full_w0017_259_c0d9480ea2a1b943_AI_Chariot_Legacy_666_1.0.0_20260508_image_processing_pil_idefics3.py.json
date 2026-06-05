@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_idefics3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_idefics3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18876,
+  "content_sha256": "c0d9480ea2a1b943aac6eac1dafbbe6d2cf20661e9d7d66727523e553a5ef8dd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 480,
+    "non_empty_lines": 416,
+    "char_count": 18876,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "from typing import TYPE_CHECKING",
+      "import numpy as np",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import PaddingMode, pad",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring"
+    ],
+    "classes": [
+      "Idefics3ImageProcessorKwargs",
+      "Idefics3ImageProcessorPil"
+    ],
+    "functions": [
+      "_make_pixel_mask",
+      "_resize_output_size_rescale_to_max_len",
+      "_resize_output_size_scale_below_upper_bound",
+      "get_max_height_width",
+      "get_num_channels",
+      "get_resize_output_image_size"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_259_c0d9480ea2a1b943_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_idefics3.py.json"
+}

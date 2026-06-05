@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\pydantic\\main.py",
+  "name": "main.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 85334,
+  "content_sha256": "35b842cfe92ef300e060b40c062ef93afee1cb075cf0b7b0037a1434867c2554",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1838,
+    "non_empty_lines": 1575,
+    "char_count": 85329,
+    "preview_lines": [
+      "\"\"\"Logic for creating models.\"\"\"",
+      "# Because `dict` is in the local namespace of the `BaseModel` class, we use `Dict` for annotations.",
+      "# TODO v3 fallback to `dict` when the deprecated `dict` method gets removed.",
+      "# ruff: noqa: UP035",
+      "from __future__ import annotations as _annotations",
+      "import operator",
+      "import sys",
+      "import types",
+      "import warnings",
+      "from collections.abc import Generator, Mapping"
+    ],
+    "imports": [
+      "from __future__ import annotations as _annotations",
+      "import operator",
+      "import sys",
+      "import types",
+      "import warnings",
+      "from collections.abc import Generator, Mapping",
+      "from copy import copy, deepcopy",
+      "from functools import cached_property",
+      "from typing import (",
+      "import pydantic_core",
+      "import typing_extensions",
+      "from pydantic_core import PydanticUndefined, ValidationError",
+      "from typing_extensions import Self, TypeAlias, Unpack",
+      "from . import PydanticDeprecatedSince20, PydanticDeprecatedSince211",
+      "from ._internal import (",
+      "from ._migration import getattr_migration",
+      "from .aliases import AliasChoices, AliasPath",
+      "from .annotated_handlers import GetCoreSchemaHandler, GetJsonSchemaHandler",
+      "from .config import ConfigDict, ExtraValues",
+      "from .errors import PydanticUndefinedAnnotation, PydanticUserError"
+    ],
+    "classes": [
+      "BaseModel"
+    ],
+    "functions": [
+      "_check_frozen",
+      "_model_field_setattr_handler",
+      "_private_setattr_handler",
+      "create_model",
+      "create_model",
+      "create_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_046_35b842cfe92ef300_main.py.json"
+}

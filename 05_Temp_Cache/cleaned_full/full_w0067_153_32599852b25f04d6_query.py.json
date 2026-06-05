@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 153,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\sql_database\\query.py",
+  "name": "query.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6103,
+  "content_sha256": "32599852b25f04d68178af4ffd308fd5539c5d95b68c4a7b7cbf98b71d408711",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 131,
+    "char_count": 6100,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, TypedDict",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import StrOutputParser",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_classic.chains.sql_database.prompt import PROMPT, SQL_PROMPTS",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.utilities.sql_database import SQLDatabase",
+      "def _strip(text: str) -> str:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, TypedDict",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import StrOutputParser",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_classic.chains.sql_database.prompt import PROMPT, SQL_PROMPTS",
+      "from langchain_community.utilities.sql_database import SQLDatabase",
+      "from langchain_openai import ChatOpenAI",
+      "from langchain_classic.chains import create_sql_query_chain",
+      "from langchain_community.utilities import SQLDatabase",
+      "from langchain_core.prompts import PromptTemplate"
+    ],
+    "classes": [
+      "SQLInput",
+      "SQLInputWithTables"
+    ],
+    "functions": [
+      "_strip",
+      "create_sql_query_chain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_153_32599852b25f04d6_query.py.json"
+}

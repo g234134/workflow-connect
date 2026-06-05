@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 219,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ismags.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ismags.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43239,
+  "content_sha256": "4e964fe710f12c84c218e93c0d3e040556960db6e3cc4513e593820cd180868d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1163,
+    "non_empty_lines": 1033,
+    "char_count": 43239,
+    "preview_lines": [
+      "\"\"\"",
+      "ISMAGS Algorithm",
+      "================",
+      "Provides a Python implementation of the ISMAGS algorithm. [1]_",
+      "It is capable of finding (subgraph) isomorphisms between two graphs, taking the",
+      "symmetry of the subgraph into account. In most cases the VF2 algorithm is",
+      "faster (at least on small graphs) than this implementation, but in some cases",
+      "there is an exponential number of isomorphisms that are symmetrically",
+      "equivalent. In that case, the ISMAGS algorithm will provide only one solution",
+      "per symmetry group."
+    ],
+    "imports": [
+      "import itertools",
+      "from collections import Counter, defaultdict",
+      "from functools import reduce, wraps"
+    ],
+    "classes": [
+      "ISMAGS"
+    ],
+    "functions": [
+      "are_all_equal",
+      "make_partitions",
+      "partition_to_color",
+      "intersect"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_219_4e964fe710f12c84_AI_Chariot_Legacy_666_1.0.0_20260508_ismags.py.json"
+}

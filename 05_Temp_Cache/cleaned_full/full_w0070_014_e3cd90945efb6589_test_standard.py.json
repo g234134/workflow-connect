@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\chroma\\tests\\unit_tests\\test_standard.py",
+  "name": "test_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 971,
+  "content_sha256": "e3cd90945efb658901eb6e37421ee39833a427e029e1bddaa5070c26a89dbfd0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 22,
+    "char_count": 968,
+    "preview_lines": [
+      "from collections.abc import Generator",
+      "import pytest",
+      "from langchain_core.vectorstores import VectorStore",
+      "from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests",
+      "from pytest_benchmark.fixture import BenchmarkFixture  # type: ignore[import-untyped]",
+      "from langchain_chroma import Chroma",
+      "class TestChromaStandard(VectorStoreIntegrationTests):",
+      "    @pytest.fixture",
+      "    def vectorstore(self) -> Generator[VectorStore, None, None]:  # type: ignore[override]",
+      "        \"\"\"Get an empty vectorstore for unit tests.\"\"\""
+    ],
+    "imports": [
+      "from collections.abc import Generator",
+      "import pytest",
+      "from langchain_core.vectorstores import VectorStore",
+      "from langchain_tests.integration_tests.vectorstores import VectorStoreIntegrationTests",
+      "from pytest_benchmark.fixture import BenchmarkFixture  # type: ignore[import-untyped]",
+      "from langchain_chroma import Chroma"
+    ],
+    "classes": [
+      "TestChromaStandard"
+    ],
+    "functions": [
+      "test_chroma_init_time"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_014_e3cd90945efb6589_test_standard.py.json"
+}

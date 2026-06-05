@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 491,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__differentiate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__differentiate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 51724,
+  "content_sha256": "700ff0117ab094d762fe2b11f92623bff0b482df9b90fe44882ed64a2ffc0bc2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1129,
+    "non_empty_lines": 964,
+    "char_count": 51724,
+    "preview_lines": [
+      "# mypy: disable-error-code=\"attr-defined\"",
+      "import warnings",
+      "import numpy as np",
+      "import scipy._lib._elementwise_iterative_method as eim",
+      "from scipy._lib._util import _RichResult",
+      "from scipy._lib._array_api import array_namespace, xp_sign, xp_copy, xp_take_along_axis",
+      "_EERRORINCREASE = -1  # used in derivative",
+      "def _derivative_iv(f, x, args, tolerances, maxiter, order, initial_step,",
+      "                   step_factor, step_direction, preserve_shape, callback):",
+      "    # Input validation for `derivative`"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "import scipy._lib._elementwise_iterative_method as eim",
+      "from scipy._lib._util import _RichResult",
+      "from scipy._lib._array_api import array_namespace, xp_sign, xp_copy, xp_take_along_axis"
+    ],
+    "classes": [],
+    "functions": [
+      "_derivative_iv",
+      "derivative",
+      "_derivative_weights",
+      "jacobian",
+      "hessian"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_491_700ff0117ab094d7_AI_Chariot_Legacy_666_1.0.0_20260508__differentiate.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cached_db.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cached_db.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4148,
+  "content_sha256": "9b7e3c86060bafeae5efad13f98c66d8526643abdb23e9d9daf8b94212326c22",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 135,
+    "non_empty_lines": 113,
+    "char_count": 4148,
+    "preview_lines": [
+      "\"\"\"",
+      "Cached, database-backed sessions.",
+      "\"\"\"",
+      "import logging",
+      "from django.conf import settings",
+      "from django.contrib.sessions.backends.db import SessionStore as DBStore",
+      "from django.core.cache import caches",
+      "KEY_PREFIX = \"django.contrib.sessions.cached_db\"",
+      "logger = logging.getLogger(\"django.contrib.sessions\")",
+      "class SessionStore(DBStore):"
+    ],
+    "imports": [
+      "import logging",
+      "from django.conf import settings",
+      "from django.contrib.sessions.backends.db import SessionStore as DBStore",
+      "from django.core.cache import caches"
+    ],
+    "classes": [
+      "SessionStore"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_469_9b7e3c86060bafea_AI_Chariot_Legacy_666_1.0.0_20260508_cached_db.py.json"
+}

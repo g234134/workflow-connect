@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 453,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unified_guardrail.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unified_guardrail.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15027,
+  "content_sha256": "fc31f538254459d90f971eb4a73f52ee3a2053c3613d846b314689c15a7e317e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 398,
+    "non_empty_lines": 327,
+    "char_count": 15027,
+    "preview_lines": [
+      "\"\"\"",
+      "Unified Guardrail, leveraging LiteLLM's /applyGuardrail endpoint",
+      "1. Implements a way to call /applyGuardrail endpoint for `/chat/completions` + `/v1/messages` requests on async_pre_call_hook",
+      "2. Implements a way to call /applyGuardrail endpoint for `/chat/completions` + `/v1/messages` requests on async_post_call_success_hook",
+      "3. Implements a way to call /applyGuardrail endpoint for `/chat/completions` + `/v1/messages` requests on async_post_call_streaming_iterator_hook",
+      "\"\"\"",
+      "import copy",
+      "from typing import Any, AsyncGenerator, List, Optional, Union",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching.caching import DualCache"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import Any, AsyncGenerator, List, Optional, Union",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching.caching import DualCache",
+      "from litellm.cost_calculator import _infer_call_type",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.litellm_core_utils.api_route_to_call_types import get_call_types_for_route",
+      "from litellm.llms import load_guardrail_translation_mappings",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.utils import CallTypes, CallTypesLiteral, ModelResponseStream",
+      "from litellm.proxy.common_utils.callback_utils import (",
+      "from litellm.proxy.common_utils.callback_utils import (",
+      "from litellm.types.guardrails import GuardrailEventHooks"
+    ],
+    "classes": [
+      "UnifiedLLMGuardrails"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_453_fc31f538254459d9_AI_Chariot_Legacy_666_1.0.0_20260508_unified_guardrail.py.json"
+}

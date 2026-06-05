@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\fixup_trace_scope_blocks.h",
+  "name": "fixup_trace_scope_blocks.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1720,
+  "content_sha256": "d8e53c57be743e029fac1ba0c44da8f233769831c9651d634c922baa3e9443ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 43,
+    "char_count": 1720,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/api/module.h>",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Directly after tracing, we have an ill-formed graph with blocks inserted.",
+      "// Example:",
+      "//",
+      "// graph(%self : ClassType<Module>,",
+      "//       %input.1 : Float(3, 4)):"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_349_d8e53c57be743e02_fixup_trace_scope_blocks.h.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 451,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_devices.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_devices.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1539,
+  "content_sha256": "a80c75f5ff1315ad54f47c839b8581f882ddc18f1037c3baa0bcbaf3ef44a550",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 45,
+    "char_count": 1539,
+    "preview_lines": [
+      "\"\"\"zmq device functions\"\"\"",
+      "# Copyright (C) PyZMQ Developers",
+      "# Distributed under the terms of the Modified BSD License.",
+      "from ._cffi import ffi",
+      "from ._cffi import lib as C",
+      "from .socket import Socket",
+      "from .utils import _retry_sys_call",
+      "def proxy(frontend, backend, capture=None):",
+      "    if isinstance(capture, Socket):",
+      "        capture = capture._zmq_socket"
+    ],
+    "imports": [
+      "from ._cffi import ffi",
+      "from ._cffi import lib as C",
+      "from .socket import Socket",
+      "from .utils import _retry_sys_call"
+    ],
+    "classes": [],
+    "functions": [
+      "proxy",
+      "proxy_steerable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_451_a80c75f5ff1315ad_AI_Chariot_Legacy_666_1.0.0_20260508_devices.py.json"
+}

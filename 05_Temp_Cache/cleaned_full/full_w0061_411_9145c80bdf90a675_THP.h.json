@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 411,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\THP.h",
+  "name": "THP.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 924,
+  "content_sha256": "9145c80bdf90a675db4b5741f5bd21e2d3304a57c7490d90a5c7871582c1aa7a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 24,
+    "char_count": 924,
+    "preview_lines": [
+      "#ifndef THP_H",
+      "#define THP_H",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/python_headers.h>",
+      "// Back-compatibility macros, Thanks to http://cx-oracle.sourceforge.net/",
+      "// define PyInt_* macros for Python 3.x.  NB: We must include Python.h first,",
+      "// otherwise we'll incorrectly conclude PyInt_Check isn't defined!",
+      "#ifndef PyInt_Check",
+      "#define PyInt_Check PyLong_Check",
+      "#define PyInt_FromLong PyLong_FromLong"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_411_9145c80bdf90a675_THP.h.json"
+}

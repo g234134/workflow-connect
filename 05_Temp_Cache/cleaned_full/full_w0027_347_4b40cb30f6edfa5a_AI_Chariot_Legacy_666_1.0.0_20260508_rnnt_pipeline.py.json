@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 347,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rnnt_pipeline.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rnnt_pipeline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14129,
+  "content_sha256": "4b40cb30f6edfa5a8d05639c8c6e4a3f621f5355ffa13bfde425664a3c582768",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 380,
+    "non_empty_lines": 307,
+    "char_count": 13943,
+    "preview_lines": [
+      "import json",
+      "import math",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Callable, List, Tuple",
+      "import torch",
+      "import torchaudio",
+      "from torchaudio._internal import module_utils",
+      "from torchaudio.models import emformer_rnnt_base, RNNT, RNNTBeamSearch"
+    ],
+    "imports": [
+      "import json",
+      "import math",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from functools import partial",
+      "from typing import Callable, List, Tuple",
+      "import torch",
+      "import torchaudio",
+      "from torchaudio._internal import module_utils",
+      "from torchaudio.models import emformer_rnnt_base, RNNT, RNNTBeamSearch",
+      "import sentencepiece as spm"
+    ],
+    "classes": [
+      "_FunctionalModule",
+      "_GlobalStatsNormalization",
+      "_FeatureExtractor",
+      "_TokenProcessor",
+      "_ModuleFeatureExtractor",
+      "_SentencePieceTokenProcessor",
+      "RNNTBundle"
+    ],
+    "functions": [
+      "_piecewise_linear_log"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_347_4b40cb30f6edfa5a_AI_Chariot_Legacy_666_1.0.0_20260508_rnnt_pipeline.py.json"
+}

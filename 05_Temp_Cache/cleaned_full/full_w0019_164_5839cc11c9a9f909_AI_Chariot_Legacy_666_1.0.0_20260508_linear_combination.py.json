@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 164,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_linear_combination.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_linear_combination.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5083,
+  "content_sha256": "5839cc11c9a9f90934bbf023bfcfff7f2b89ac91bfa4e3ad22d931098ec1884b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 131,
+    "non_empty_lines": 116,
+    "char_count": 5083,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "from collections import defaultdict",
+      "from numpy import nan",
+      "import pyarrow as pa",
+      "from .base import Reranker",
+      "class LinearCombinationReranker(Reranker):",
+      "    \"\"\"",
+      "    Reranks the results using a linear combination of the scores from the",
+      "    vector and FTS search. For missing scores, fill with `fill` value."
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "from numpy import nan",
+      "import pyarrow as pa",
+      "from .base import Reranker"
+    ],
+    "classes": [
+      "LinearCombinationReranker"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_164_5839cc11c9a9f909_AI_Chariot_Legacy_666_1.0.0_20260508_linear_combination.py.json"
+}

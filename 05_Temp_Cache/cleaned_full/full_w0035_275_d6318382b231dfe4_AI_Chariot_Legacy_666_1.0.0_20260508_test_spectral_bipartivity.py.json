@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_spectral_bipartivity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_spectral_bipartivity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2358,
+  "content_sha256": "d6318382b231dfe4d638234c482e33c6665aecb1f2314ebd0d7877875d818da8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 63,
+    "char_count": 2356,
+    "preview_lines": [
+      "import pytest",
+      "pytest.importorskip(\"scipy\")",
+      "import networkx as nx",
+      "from networkx.algorithms.bipartite import spectral_bipartivity as sb",
+      "# Examples from Figure 1",
+      "# E. Estrada and J. A. Rodríguez-Velázquez, \"Spectral measures of",
+      "# bipartivity in complex networks\", PhysRev E 72, 046105 (2005)",
+      "class TestSpectralBipartivity:",
+      "    def test_star_like(self):",
+      "        # star-like"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.bipartite import spectral_bipartivity as sb"
+    ],
+    "classes": [
+      "TestSpectralBipartivity"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_275_d6318382b231dfe4_AI_Chariot_Legacy_666_1.0.0_20260508_test_spectral_bipartivity.py.json"
+}

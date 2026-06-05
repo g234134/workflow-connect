@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset20.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset20.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2538,
+  "content_sha256": "c3b213142e143a939d2f6dac497d3ae1fc20ed3d9f58ac89daf40bfefb9f87f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 75,
+    "char_count": 2538,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"This file exports ONNX ops for opset 20.",
+      "Note [ONNX Operators that are added/updated in opset 20]",
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "https://github.com/onnx/onnx/blob/main/docs/Changelog.md#version-20-of-the-default-onnx-operator-set",
+      "New operators:",
+      "    AffineGrid",
+      "    ConstantOfShape",
+      "    DFT",
+      "    Gelu"
+    ],
+    "imports": [
+      "import functools",
+      "import torch.nn.functional as F",
+      "from torch import _C",
+      "from torch.onnx import symbolic_helper",
+      "from torch.onnx._internal import jit_utils, registration"
+    ],
+    "classes": [],
+    "functions": [
+      "convert_grid_sample_mode",
+      "_grid_sampler",
+      "_affine_grid_generator",
+      "gelu"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_036_c3b213142e143a93_AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset20.py.json"
+}

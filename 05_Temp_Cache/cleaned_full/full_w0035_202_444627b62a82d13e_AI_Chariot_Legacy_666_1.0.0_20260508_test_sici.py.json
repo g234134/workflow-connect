@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sici.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sici.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1263,
+  "content_sha256": "444627b62a82d13e0f6feeba1120668c4988a132436e362cefce97370524cc8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 27,
+    "char_count": 1263,
+    "preview_lines": [
+      "import numpy as np",
+      "import scipy.special as sc",
+      "from scipy.special._testutils import FuncData",
+      "def test_sici_consistency():",
+      "    # Make sure the implementation of sici for real arguments agrees",
+      "    # with the implementation of sici for complex arguments.",
+      "    # On the negative real axis Cephes drops the imaginary part in ci",
+      "    def sici(x):",
+      "        si, ci = sc.sici(x + 0j)",
+      "        return si.real, ci.real"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import scipy.special as sc",
+      "from scipy.special._testutils import FuncData"
+    ],
+    "classes": [],
+    "functions": [
+      "test_sici_consistency",
+      "test_shichi_consistency"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_202_444627b62a82d13e_AI_Chariot_Legacy_666_1.0.0_20260508_test_sici.py.json"
+}

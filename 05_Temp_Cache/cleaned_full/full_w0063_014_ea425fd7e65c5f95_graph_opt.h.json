@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\tensorexpr\\graph_opt.h",
+  "name": "graph_opt.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 4599,
+  "content_sha256": "ea425fd7e65c5f957569b5b67fcee74d7e044a59d29947dec51509e3e717a7a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 115,
+    "non_empty_lines": 105,
+    "char_count": 4599,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "namespace tensorexpr {",
+      "// Optimize aten::cat ops in the given subgraph.",
+      "//",
+      "// Moving users of cat to its inputs.",
+      "//    Cat ops get lowered into multiple loops, one per input. When the result",
+      "//    of cat is used by some other op, it results in a situation where inlining"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_014_ea425fd7e65c5f95_graph_opt.h.json"
+}

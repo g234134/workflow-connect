@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 447,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_aqlm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_aqlm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2646,
+  "content_sha256": "b5158f5ee9230e68d07b0f5282ed9080f4c18f3150ea38bd890e20122f308f53",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 59,
+    "char_count": 2646,
+    "preview_lines": [
+      "# Copyright 2024 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from importlib import metadata",
+      "from typing import TYPE_CHECKING",
+      "from packaging import version",
+      "from .base import HfQuantizer",
+      "from ..modeling_utils import PreTrainedModel",
+      "from ..utils.quantization_config import AqlmConfig",
+      "from ..integrations import replace_with_aqlm_linear",
+      "from ..utils import is_accelerate_available, is_aqlm_available, logging",
+      "from ..utils.quantization_config import QuantizationConfigMixin"
+    ],
+    "classes": [
+      "AqlmHfQuantizer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_447_b5158f5ee9230e68_AI_Chariot_Legacy_666_1.0.0_20260508_quantizer_aqlm.py.json"
+}

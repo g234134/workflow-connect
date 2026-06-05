@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_infer_schema.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_infer_schema.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11163,
+  "content_sha256": "b92ddbde31c0d8b57c3ffd8a6685e59eb45b7599c0e77ff8a81dbe3055b6b9f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 271,
+    "non_empty_lines": 234,
+    "char_count": 11163,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import inspect",
+      "import typing",
+      "from typing import List, Optional, Sequence, Union  # noqa: F401",
+      "import torch",
+      "from torch import device, dtype, Tensor, types",
+      "from torch.utils._exposed_in import exposed_in",
+      "@exposed_in(\"torch.library\")",
+      "def infer_schema("
+    ],
+    "imports": [
+      "import inspect",
+      "import typing",
+      "from typing import List, Optional, Sequence, Union  # noqa: F401",
+      "import torch",
+      "from torch import device, dtype, Tensor, types",
+      "from torch.utils._exposed_in import exposed_in"
+    ],
+    "classes": [],
+    "functions": [
+      "infer_schema",
+      "derived_types",
+      "get_supported_param_types",
+      "parse_return",
+      "supported_param",
+      "tuple_to_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_446_b92ddbde31c0d8b5_AI_Chariot_Legacy_666_1.0.0_20260508_infer_schema.py.json"
+}

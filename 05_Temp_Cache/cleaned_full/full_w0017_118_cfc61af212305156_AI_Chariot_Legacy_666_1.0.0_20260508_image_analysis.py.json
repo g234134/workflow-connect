@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 118,
+  "generated_at": "2026-05-08T18:45:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 663,
+  "content_sha256": "cfc61af2123051566d3ee87b088986368b4b0521ead8ab7c9faa017f9ba9e2ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 663,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.tools import AzureCogsImageAnalysisTool",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {\"AzureCogsImageAnalysisTool\": \"langchain_community.tools\"}",
+      "_import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)",
+      "def __getattr__(name: str) -> Any:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.tools import AzureCogsImageAnalysisTool"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_118_cfc61af212305156_AI_Chariot_Legacy_666_1.0.0_20260508_image_analysis.py.json"
+}

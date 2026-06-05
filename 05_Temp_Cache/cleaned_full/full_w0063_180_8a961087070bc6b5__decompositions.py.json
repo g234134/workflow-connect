@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\jit\\_decompositions.py",
+  "name": "_decompositions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4218,
+  "content_sha256": "8a961087070bc6b5e864695772ce430fa7efc17c3b01fc95bae5aea4b0e57cab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 96,
+    "char_count": 4218,
+    "preview_lines": [
+      "import torch",
+      "from torch import Tensor",
+      "aten = torch.ops.aten",
+      "import inspect",
+      "import warnings",
+      "from typing import Dict, List, Optional, Set",
+      "from torch.types import Number",
+      "decomposition_table: Dict[str, torch.jit.ScriptFunction] = {}",
+      "function_name_set: Set[str] = set()",
+      "def check_decomposition_has_type_annotations(f):"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import Tensor",
+      "import inspect",
+      "import warnings",
+      "from typing import Dict, List, Optional, Set",
+      "from torch.types import Number"
+    ],
+    "classes": [],
+    "functions": [
+      "check_decomposition_has_type_annotations",
+      "signatures_match",
+      "register_decomposition",
+      "var_decomposition",
+      "var"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_180_8a961087070bc6b5__decompositions.py.json"
+}

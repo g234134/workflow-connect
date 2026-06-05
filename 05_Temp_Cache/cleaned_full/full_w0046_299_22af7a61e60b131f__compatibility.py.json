@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 299,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\_compatibility.py",
+  "name": "_compatibility.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1040,
+  "content_sha256": "22af7a61e60b131f1dfef53f537a4c9d8087eb761af1085e44233492f89d45cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1040,
+    "preview_lines": [
+      "from typing import Any, Dict",
+      "import textwrap",
+      "_BACK_COMPAT_OBJECTS : Dict[Any, None] = {}",
+      "_MARKED_WITH_COMPATIBILITY : Dict[Any, None] = {}",
+      "def compatibility(is_backward_compatible : bool):",
+      "    if is_backward_compatible:",
+      "        def mark_back_compat(fn):",
+      "            docstring = textwrap.dedent(getattr(fn, '__doc__', None) or '')",
+      "            docstring += \"\"\"",
+      ".. note::"
+    ],
+    "imports": [
+      "from typing import Any, Dict",
+      "import textwrap"
+    ],
+    "classes": [],
+    "functions": [
+      "compatibility"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_299_22af7a61e60b131f__compatibility.py.json"
+}

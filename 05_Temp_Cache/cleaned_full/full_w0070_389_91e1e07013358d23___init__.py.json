@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-postgres\\langgraph\\checkpoint\\postgres\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18953,
+  "content_sha256": "91e1e07013358d2309701d56760a2217585a58bd0cd9a5c4b23bf0c04f78ec06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 476,
+    "non_empty_lines": 424,
+    "char_count": 18950,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import threading",
+      "from collections import defaultdict",
+      "from collections.abc import Iterator, Sequence",
+      "from contextlib import contextmanager",
+      "from typing import Any",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "    WRITES_IDX_MAP,",
+      "    ChannelVersions,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import threading",
+      "from collections import defaultdict",
+      "from collections.abc import Iterator, Sequence",
+      "from contextlib import contextmanager",
+      "from typing import Any",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "from langgraph.checkpoint.serde.base import SerializerProtocol",
+      "from psycopg import Capabilities, Connection, Cursor, Pipeline",
+      "from psycopg.rows import DictRow, dict_row",
+      "from psycopg.types.json import Jsonb",
+      "from psycopg_pool import ConnectionPool",
+      "from langgraph.checkpoint.postgres import _internal",
+      "from langgraph.checkpoint.postgres.base import BasePostgresSaver",
+      "from langgraph.checkpoint.postgres.shallow import ShallowPostgresSaver"
+    ],
+    "classes": [
+      "PostgresSaver"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_389_91e1e07013358d23___init__.py.json"
+}

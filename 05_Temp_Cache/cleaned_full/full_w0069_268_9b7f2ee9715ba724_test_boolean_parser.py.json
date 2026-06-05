@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\output_parsers\\test_boolean_parser.py",
+  "name": "test_boolean_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1575,
+  "content_sha256": "9b7f2ee9715ba72491ee34147c805c1f727daddb18fa4e4e6aea40a85b682b5a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 46,
+    "char_count": 1572,
+    "preview_lines": [
+      "import re",
+      "import pytest",
+      "from langchain_classic.output_parsers.boolean import BooleanOutputParser",
+      "def test_boolean_output_parser_parse() -> None:",
+      "    parser = BooleanOutputParser()",
+      "    # Test valid input",
+      "    result = parser.parse(\"YES\")",
+      "    assert result is True",
+      "    # Test valid input",
+      "    result = parser.parse(\"NO\")"
+    ],
+    "imports": [
+      "import re",
+      "import pytest",
+      "from langchain_classic.output_parsers.boolean import BooleanOutputParser"
+    ],
+    "classes": [],
+    "functions": [
+      "test_boolean_output_parser_parse",
+      "test_boolean_output_parser_output_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_268_9b7f2ee9715ba724_test_boolean_parser.py.json"
+}

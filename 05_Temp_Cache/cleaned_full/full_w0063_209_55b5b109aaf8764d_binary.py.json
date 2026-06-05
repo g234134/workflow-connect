@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 209,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\masked\\maskedtensor\\binary.py",
+  "name": "binary.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5562,
+  "content_sha256": "55b5b109aaf8764d6b6d3f8fa4b8661b57a6f83b6506f85700aab1c9d33466eb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 157,
+    "char_count": 5562,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import torch",
+      "from .core import _map_mt_args_kwargs, _masks_match, _tensors_match, _wrap_result, is_masked_tensor",
+      "__all__ = []  # type: ignore[var-annotated]",
+      "BINARY_NAMES = [",
+      "    \"add\",",
+      "    \"atan2\",",
+      "    \"arctan2\",",
+      "    \"bitwise_and\",",
+      "    \"bitwise_or\","
+    ],
+    "imports": [
+      "import torch",
+      "from .core import _map_mt_args_kwargs, _masks_match, _tensors_match, _wrap_result, is_masked_tensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_at_least_one_mask",
+      "_binary_helper",
+      "_torch_binary",
+      "_torch_inplace_binary",
+      "_is_native_binary",
+      "_apply_native_binary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_209_55b5b109aaf8764d_binary.py.json"
+}

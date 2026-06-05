@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 21,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pdf_knowledge_source.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pdf_knowledge_source.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2035,
+  "content_sha256": "79393104ba8ea9ebf4d7dee10af4604d346718a3890e582c1e6528e012df4d68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 49,
+    "char_count": 2035,
+    "preview_lines": [
+      "from pathlib import Path",
+      "from types import ModuleType",
+      "from crewai.knowledge.source.base_file_knowledge_source import BaseFileKnowledgeSource",
+      "class PDFKnowledgeSource(BaseFileKnowledgeSource):",
+      "    \"\"\"A knowledge source that stores and queries PDF file content using embeddings.\"\"\"",
+      "    def load_content(self) -> dict[Path, str]:",
+      "        \"\"\"Load and preprocess PDF file content.\"\"\"",
+      "        pdfplumber = self._import_pdfplumber()",
+      "        content = {}",
+      "        for path in self.safe_file_paths:"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "from types import ModuleType",
+      "from crewai.knowledge.source.base_file_knowledge_source import BaseFileKnowledgeSource",
+      "import pdfplumber"
+    ],
+    "classes": [
+      "PDFKnowledgeSource"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_021_79393104ba8ea9eb_AI_Chariot_Legacy_666_1.0.0_20260508_pdf_knowledge_source.py.json"
+}

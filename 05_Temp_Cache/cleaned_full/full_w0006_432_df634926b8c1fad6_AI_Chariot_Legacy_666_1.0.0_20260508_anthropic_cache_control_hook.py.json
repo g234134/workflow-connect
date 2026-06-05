@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_cache_control_hook.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_cache_control_hook.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10224,
+  "content_sha256": "df634926b8c1fad68e66070d63ebb266c40b6646ef3401e00059694fa0857e96",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 251,
+    "non_empty_lines": 223,
+    "char_count": 10224,
+    "preview_lines": [
+      "\"\"\"",
+      "This hook is used to inject cache control directives into the messages of a chat completion.",
+      "Users can define",
+      "- `cache_control_injection_points` in the completion params and litellm will inject the cache control directives into the messages at the specified injection points.",
+      "\"\"\"",
+      "import copy",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union, cast",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.integrations.custom_prompt_management import CustomPromptManagement"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, Union, cast",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.integrations.custom_prompt_management import CustomPromptManagement",
+      "from litellm.integrations.prompt_management_base import PromptManagementClient",
+      "from litellm.types.integrations.anthropic_cache_control_hook import (",
+      "from litellm.types.llms.openai import AllMessageValues, ChatCompletionCachedContent",
+      "from litellm.types.prompts.init_prompts import PromptSpec",
+      "from litellm.types.utils import StandardCallbackDynamicParams",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj"
+    ],
+    "classes": [
+      "AnthropicCacheControlHook"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_432_df634926b8c1fad6_AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_cache_control_hook.py.json"
+}

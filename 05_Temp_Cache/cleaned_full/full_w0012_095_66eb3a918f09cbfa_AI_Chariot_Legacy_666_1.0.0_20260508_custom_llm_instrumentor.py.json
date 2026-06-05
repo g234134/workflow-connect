@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 95,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm_instrumentor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm_instrumentor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7960,
+  "content_sha256": "66eb3a918f09cbfa9cb459a5759cc56454278e1fa76d6f26b7e4fb8383bae584",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 172,
+    "char_count": 7960,
+    "preview_lines": [
+      "import importlib",
+      "import json",
+      "import pkgutil",
+      "from wrapt import wrap_function_wrapper",
+      "from inflection import underscore",
+      "from opentelemetry import context as context_api",
+      "from opentelemetry.instrumentation.utils import _SUPPRESS_INSTRUMENTATION_KEY",
+      "from opentelemetry.instrumentation.llamaindex._message_utils import (",
+      "    build_completion_output_message,",
+      "    build_input_messages,"
+    ],
+    "imports": [
+      "import importlib",
+      "import json",
+      "import pkgutil",
+      "from wrapt import wrap_function_wrapper",
+      "from inflection import underscore",
+      "from opentelemetry import context as context_api",
+      "from opentelemetry.instrumentation.utils import _SUPPRESS_INSTRUMENTATION_KEY",
+      "from opentelemetry.instrumentation.llamaindex._message_utils import (",
+      "from opentelemetry.instrumentation.llamaindex._response_utils import (",
+      "from opentelemetry.semconv._incubating.attributes import (",
+      "from opentelemetry.semconv_ai import LLMRequestTypeValues, SpanAttributes",
+      "from opentelemetry.instrumentation.llamaindex.utils import (",
+      "import llama_index.llms",
+      "from llama_index.core.llms.custom import CustomLLM",
+      "from llama_index.llms import CustomLLM"
+    ],
+    "classes": [
+      "CustomLLMInstrumentor"
+    ],
+    "functions": [
+      "_set_span_attribute",
+      "chat_wrapper",
+      "complete_wrapper",
+      "_handle_request",
+      "_handle_response",
+      "snake_case_class_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_095_66eb3a918f09cbfa_AI_Chariot_Legacy_666_1.0.0_20260508_custom_llm_instrumentor.py.json"
+}

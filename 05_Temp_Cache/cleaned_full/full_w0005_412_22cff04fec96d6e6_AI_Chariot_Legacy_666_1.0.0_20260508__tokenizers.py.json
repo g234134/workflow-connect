@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 412,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__tokenizers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__tokenizers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22314,
+  "content_sha256": "22cff04fec96d6e668fb658b25efe86145e2c9ae0210af761836e3a06327edcf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 581,
+    "non_empty_lines": 480,
+    "char_count": 22312,
+    "preview_lines": [
+      "# Copyright 2024 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import dataclasses",
+      "from typing import (",
+      "from vertexai.generative_models._generative_models import (",
+      "from vertexai.tokenization._tokenizer_loading import (",
+      "from google.cloud.aiplatform_v1beta1.types import (",
+      "from sentencepiece import sentencepiece_model_pb2",
+      "from google.protobuf import struct_pb2",
+      "import warnings"
+    ],
+    "classes": [
+      "TokensInfo",
+      "ComputeTokensResult",
+      "PreviewComputeTokensResult",
+      "CountTokensResult",
+      "_SentencePieceAdaptor",
+      "_TextsAccumulator",
+      "Tokenizer",
+      "PreviewTokenizer"
+    ],
+    "functions": [
+      "_parse_hex_byte",
+      "_token_str_to_bytes",
+      "_to_gapic_contents",
+      "_content_types_to_role_iterator",
+      "_assert_no_image_contents_type",
+      "_is_string_inputs",
+      "_to_canonical_roles",
+      "_get_tokenizer_for_model_preview",
+      "get_tokenizer_for_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_412_22cff04fec96d6e6_AI_Chariot_Legacy_666_1.0.0_20260508__tokenizers.py.json"
+}

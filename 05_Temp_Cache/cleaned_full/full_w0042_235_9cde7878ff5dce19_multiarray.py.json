@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:47:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\core\\multiarray.py",
+  "name": "multiarray.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 818,
+  "content_sha256": "9cde7878ff5dce19d8e28368541376abbc838c5d70ecf6cc431e1aee832a4d52",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 818,
+    "preview_lines": [
+      "from numpy._core import multiarray",
+      "# these must import without warning or error from numpy.core.multiarray to",
+      "# support old pickle files",
+      "for item in [\"_reconstruct\", \"scalar\"]:",
+      "    globals()[item] = getattr(multiarray, item)",
+      "# Pybind11 (in versions <= 2.11.1) imports _ARRAY_API from the multiarray",
+      "# submodule as a part of NumPy initialization, therefore it must be importable",
+      "# without a warning.",
+      "_ARRAY_API = multiarray._ARRAY_API",
+      "def __getattr__(attr_name):"
+    ],
+    "imports": [
+      "from numpy._core import multiarray",
+      "from numpy._core import multiarray",
+      "from ._utils import _raise_warning"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_235_9cde7878ff5dce19_multiarray.py.json"
+}

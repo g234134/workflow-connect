@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 471,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_equivalences.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_equivalences.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14964,
+  "content_sha256": "72d614c8b2dbb96d60c223c608ee778b65eca5825bc0557542d7470ddc4cbff5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 387,
+    "non_empty_lines": 321,
+    "char_count": 14920,
+    "preview_lines": [
+      "\"\"\"Encoding equivalences and name remapping.",
+      "This module defines:",
+      "1. **Directional supersets** for accuracy evaluation: detecting a superset",
+      "   encoding when the expected encoding is a subset is correct (e.g., detecting",
+      "   UTF-8 when expected is ASCII), but not the reverse.",
+      "2. **Bidirectional equivalents**: groups of encodings where detecting any",
+      "   member when another member was expected is considered correct.  This",
+      "   includes UTF-16/UTF-32 endian variants (which encode the same text with",
+      "   different byte order) and ISO-2022-JP branch variants (which are",
+      "   compatible extensions of the same base encoding)."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import unicodedata",
+      "from collections.abc import Callable",
+      "from chardet.pipeline import DetectionDict",
+      "from chardet.registry import lookup_encoding"
+    ],
+    "classes": [],
+    "functions": [
+      "_remap_encoding",
+      "apply_preferred_superset",
+      "apply_compat_names",
+      "_build_group_index",
+      "is_language_equivalent",
+      "is_correct",
+      "_strip_combining",
+      "_chars_equivalent",
+      "is_equivalent_detection"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_471_72d614c8b2dbb96d_AI_Chariot_Legacy_666_1.0.0_20260508_equivalences.py.json"
+}

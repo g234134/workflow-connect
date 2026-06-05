@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 69,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_get_litellm_params.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_get_litellm_params.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5168,
+  "content_sha256": "e0ed5844868b00e2adadaac7b9a1c9eca531456661a78ee3cd399f5239045293",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 148,
+    "char_count": 5168,
+    "preview_lines": [
+      "from typing import Optional",
+      "# Pre-define optional kwargs keys as frozenset for O(1) lookups",
+      "# These are extracted from kwargs only if present, avoiding unnecessary .get() calls",
+      "_OPTIONAL_KWARGS_KEYS = frozenset({",
+      "    \"azure_ad_token\",",
+      "    \"tenant_id\",",
+      "    \"client_id\",",
+      "    \"client_secret\",",
+      "    \"azure_username\",",
+      "    \"azure_password\","
+    ],
+    "imports": [
+      "from typing import Optional"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_base_model_from_litellm_call_metadata",
+      "get_litellm_params"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_069_e0ed5844868b00e2_AI_Chariot_Legacy_666_1.0.0_20260508_get_litellm_params.py.json"
+}

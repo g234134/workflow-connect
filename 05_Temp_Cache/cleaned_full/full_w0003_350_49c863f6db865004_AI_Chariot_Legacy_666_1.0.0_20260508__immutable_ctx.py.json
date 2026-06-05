@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__immutable_ctx.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__immutable_ctx.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2478,
+  "content_sha256": "49c863f6db8650043f40c87ad761fb52ae9772f3e8e40915c2807164927c9620",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 76,
+    "non_empty_lines": 58,
+    "char_count": 2478,
+    "preview_lines": [
+      "# Copyright (C) Dnspython Contributors, see LICENSE for text of ISC license",
+      "# This implementation of the immutable decorator requires python >=",
+      "# 3.7, and is significantly more storage efficient when making classes",
+      "# with slots immutable.  It's also faster.",
+      "import contextvars",
+      "import inspect",
+      "_in__init__ = contextvars.ContextVar(\"_immutable_in__init__\", default=False)",
+      "class _Immutable:",
+      "    \"\"\"Immutable mixin class\"\"\"",
+      "    # We set slots to the empty list to say \"we don't have any attributes\"."
+    ],
+    "imports": [
+      "import contextvars",
+      "import inspect"
+    ],
+    "classes": [
+      "_Immutable"
+    ],
+    "functions": [
+      "_immutable_init",
+      "immutable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_350_49c863f6db865004_AI_Chariot_Legacy_666_1.0.0_20260508__immutable_ctx.py.json"
+}

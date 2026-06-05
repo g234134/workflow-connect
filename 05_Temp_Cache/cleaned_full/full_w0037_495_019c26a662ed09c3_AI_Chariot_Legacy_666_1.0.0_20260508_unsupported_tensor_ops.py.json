@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 495,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unsupported_tensor_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unsupported_tensor_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2076,
+  "content_sha256": "019c26a662ed09c3857b5c816f72026923b4bbf7c8a9fe18b815bbf5a5c88a4e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 65,
+    "char_count": 2076,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from textwrap import dedent",
+      "from typing import Any, Dict",
+      "import torch.jit",
+      "def execWrapper(code, glob, loc):",
+      "    exec(code, glob, loc)",
+      "def _gen_unsupported_methods_properties():",
+      "    tensor_attrs = set(filter(lambda x: x[0] != \"_\", dir(torch.Tensor)))",
+      "    tensor = torch.tensor([2])",
+      "    funcs_template = dedent("
+    ],
+    "imports": [
+      "from textwrap import dedent",
+      "from typing import Any, Dict",
+      "import torch.jit"
+    ],
+    "classes": [],
+    "functions": [
+      "execWrapper",
+      "_gen_unsupported_methods_properties",
+      "_list_unsupported_tensor_ops"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_495_019c26a662ed09c3_AI_Chariot_Legacy_666_1.0.0_20260508_unsupported_tensor_ops.py.json"
+}

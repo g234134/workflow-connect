@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\optests\\aot_autograd.py",
+  "name": "aot_autograd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6203,
+  "content_sha256": "47a80650ef8708090d46aa82c132c18ebc6a2c96d5b6ebd2527160baf1b5b075",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 120,
+    "char_count": 6203,
+    "preview_lines": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch.testing._internal.common_methods_invocations import wrapper_set_seed",
+      "from functorch.compile import compiled_function, min_cut_rematerialization_partition, nop",
+      "from .make_fx import randomize",
+      "import re",
+      "class assert_raises_regex:",
+      "    def __init__(self, exception_cls, regex):",
+      "        self.exception_cls = exception_cls",
+      "        self.regex = regex"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch.testing._internal.common_methods_invocations import wrapper_set_seed",
+      "from functorch.compile import compiled_function, min_cut_rematerialization_partition, nop",
+      "from .make_fx import randomize",
+      "import re"
+    ],
+    "classes": [
+      "assert_raises_regex"
+    ],
+    "functions": [
+      "aot_autograd_check",
+      "_test_aot_autograd_forwards_backwards_helper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_108_47a80650ef870809_aot_autograd.py.json"
+}

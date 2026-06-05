@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 12,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__reduction.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__reduction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1685,
+  "content_sha256": "b7a3e02e3af07826f04dc0bab9d209d1753c4251c57972062c35e6d77ae4773e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 48,
+    "char_count": 1685,
+    "preview_lines": [
+      "import warnings",
+      "from typing import Optional",
+      "# NB: Keep this file in sync with enums in aten/src/ATen/core/Reduction.h",
+      "def get_enum(reduction: str) -> int:",
+      "    if reduction == \"none\":",
+      "        ret = 0",
+      "    elif reduction == \"mean\":",
+      "        ret = 1",
+      "    elif reduction == \"elementwise_mean\":",
+      "        warnings.warn("
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import Optional"
+    ],
+    "classes": [],
+    "functions": [
+      "get_enum",
+      "legacy_get_string",
+      "legacy_get_enum"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_012_b7a3e02e3af07826_AI_Chariot_Legacy_666_1.0.0_20260508__reduction.py.json"
+}

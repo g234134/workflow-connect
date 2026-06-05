@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 320,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__pass.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12781,
+  "content_sha256": "ba3ee3156e2b076469b07c0b8c7311267a3b26871e33e3cc61cfccd52e7fc6e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 323,
+    "non_empty_lines": 259,
+    "char_count": 12781,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import abc",
+      "import contextlib",
+      "import dataclasses",
+      "import difflib",
+      "import io",
+      "import logging",
+      "import sys",
+      "from typing import Any, Callable, TYPE_CHECKING"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "import contextlib",
+      "import dataclasses",
+      "import difflib",
+      "import io",
+      "import logging",
+      "import sys",
+      "from typing import Any, Callable, TYPE_CHECKING",
+      "import torch",
+      "import torch.fx",
+      "from torch._subclasses.fake_tensor import unset_fake_temporarily",
+      "from torch.onnx._internal.fx import diagnostics, onnxfunction_dispatcher",
+      "from torch._subclasses import fake_tensor"
+    ],
+    "classes": [
+      "PackageInfo",
+      "GraphModuleOnnxMeta",
+      "Transform",
+      "AnalysisResult",
+      "Analysis"
+    ],
+    "functions": [
+      "_patch_difflib_sequence_matcher_init",
+      "_unified_diff",
+      "_transform_diagnose_call_message_formatter",
+      "maybe_fx_graph_tabular"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_320_ba3ee3156e2b0764_AI_Chariot_Legacy_666_1.0.0_20260508__pass.py.json"
+}

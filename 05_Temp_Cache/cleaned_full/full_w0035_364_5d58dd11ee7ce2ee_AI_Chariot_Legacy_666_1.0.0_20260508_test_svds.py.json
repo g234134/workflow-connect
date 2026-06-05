@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 364,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_svds.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_svds.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 37680,
+  "content_sha256": "5d58dd11ee7ce2eeb97cb5860e7496e49141435fe93f8f6a05acaf0044ef47ea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 886,
+    "non_empty_lines": 750,
+    "char_count": 37680,
+    "preview_lines": [
+      "import re",
+      "import copy",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_equal, assert_array_equal",
+      "import pytest",
+      "from scipy.linalg import svd, null_space",
+      "from scipy.sparse import csc_array, issparse, dia_array, random_array",
+      "from scipy.sparse.linalg import LinearOperator, aslinearoperator",
+      "from scipy.sparse.linalg import svds",
+      "from scipy.sparse.linalg._eigen.arpack import ArpackNoConvergence"
+    ],
+    "imports": [
+      "import re",
+      "import copy",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_equal, assert_array_equal",
+      "import pytest",
+      "from scipy.linalg import svd, null_space",
+      "from scipy.sparse import csc_array, issparse, dia_array, random_array",
+      "from scipy.sparse.linalg import LinearOperator, aslinearoperator",
+      "from scipy.sparse.linalg import svds",
+      "from scipy.sparse.linalg._eigen.arpack import ArpackNoConvergence"
+    ],
+    "classes": [
+      "CheckingLinearOperator",
+      "SVDSCommonTests",
+      "Test_SVDS_once",
+      "Test_SVDS_ARPACK",
+      "Test_SVDS_LOBPCG",
+      "Test_SVDS_PROPACK"
+    ],
+    "functions": [
+      "sorted_svd",
+      "_check_svds",
+      "_check_svds_n"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_364_5d58dd11ee7ce2ee_AI_Chariot_Legacy_666_1.0.0_20260508_test_svds.py.json"
+}

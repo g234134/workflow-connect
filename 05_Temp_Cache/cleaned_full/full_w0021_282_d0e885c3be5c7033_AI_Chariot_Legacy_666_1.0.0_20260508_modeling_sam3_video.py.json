@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 282,
+  "generated_at": "2026-05-08T18:45:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_sam3_video.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_sam3_video.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 92980,
+  "content_sha256": "d0e885c3be5c7033368e87c45e7443c21168e30ecf3c22639113c8731f0ddb66",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2012,
+    "non_empty_lines": 1765,
+    "char_count": 92980,
+    "preview_lines": [
+      "# Copyright 2025 The Meta AI Authors and The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from collections import OrderedDict, defaultdict",
+      "from collections.abc import Iterator",
+      "from copy import deepcopy",
+      "from dataclasses import dataclass",
+      "from typing import Any",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import Tensor",
+      "from tqdm.auto import tqdm",
+      "from transformers.models.sam3.modeling_sam3 import Sam3VisionNeck",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import ModelOutput, auto_docstring, is_kernels_available, logging",
+      "from ..auto import AutoModel",
+      "from .configuration_sam3_video import Sam3VideoConfig",
+      "from ...integrations.hub_kernels import get_kernel"
+    ],
+    "classes": [
+      "Sam3VideoInferenceCache",
+      "Sam3VideoInferenceSession",
+      "Sam3VideoSegmentationOutput",
+      "Sam3VideoPreTrainedModel",
+      "Sam3VideoModel"
+    ],
+    "functions": [
+      "_load_cv_utils_kernel_once",
+      "fast_diag_box_iou",
+      "mask_iou",
+      "nms_masks",
+      "fill_holes_in_mask_scores",
+      "_get_connected_components_with_padding"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_282_d0e885c3be5c7033_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_sam3_video.py.json"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 101,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_compression_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_compression_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12086,
+  "content_sha256": "c341021862d58ed09775883e53ff43067f83012cc33da584551c751e5c16b259",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 348,
+    "non_empty_lines": 279,
+    "char_count": 12086,
+    "preview_lines": [
+      "import asyncio",
+      "import sys",
+      "import zlib",
+      "from abc import ABC, abstractmethod",
+      "from concurrent.futures import Executor",
+      "from typing import Any, Final, Optional, Protocol, TypedDict, cast",
+      "if sys.version_info >= (3, 12):",
+      "    from collections.abc import Buffer",
+      "else:",
+      "    from typing import Union"
+    ],
+    "imports": [
+      "import asyncio",
+      "import sys",
+      "import zlib",
+      "from abc import ABC, abstractmethod",
+      "from concurrent.futures import Executor",
+      "from typing import Any, Final, Optional, Protocol, TypedDict, cast",
+      "from collections.abc import Buffer",
+      "from typing import Union",
+      "import brotlicffi as brotli",
+      "import brotli",
+      "from compression.zstd import ZstdDecompressor  # noqa: I900",
+      "from backports.zstd import ZstdDecompressor"
+    ],
+    "classes": [
+      "ZLibCompressObjProtocol",
+      "ZLibDecompressObjProtocol",
+      "ZLibBackendProtocol",
+      "CompressObjArgs",
+      "ZLibBackendWrapper",
+      "DecompressionBaseHandler",
+      "ZLibCompressor",
+      "ZLibDecompressor",
+      "BrotliDecompressor",
+      "ZSTDDecompressor"
+    ],
+    "functions": [
+      "set_zlib_backend",
+      "encoding_to_mode"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_101_c341021862d58ed0_AI_Chariot_Legacy_666_1.0.0_20260508_compression_utils.py.json"
+}

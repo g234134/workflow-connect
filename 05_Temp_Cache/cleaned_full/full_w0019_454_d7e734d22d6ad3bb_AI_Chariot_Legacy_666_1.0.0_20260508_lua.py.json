@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 454,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lua.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lua.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 790,
+  "content_sha256": "d7e734d22d6ad3bb7ca65076aabda7e7deb1e80d5470e86414d1fbf4b51839e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 23,
+    "char_count": 790,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING",
+      "from langchain_community.document_loaders.parsers.language.tree_sitter_segmenter import (  # noqa: E501",
+      "    TreeSitterSegmenter,",
+      ")",
+      "if TYPE_CHECKING:",
+      "    from tree_sitter import Language",
+      "CHUNK_QUERY = \"\"\"",
+      "    [",
+      "        (function_definition_statement",
+      "            name: (identifier)) @function"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "from langchain_community.document_loaders.parsers.language.tree_sitter_segmenter import (  # noqa: E501",
+      "from tree_sitter import Language",
+      "from tree_sitter_languages import get_language"
+    ],
+    "classes": [
+      "LuaSegmenter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_454_d7e734d22d6ad3bb_AI_Chariot_Legacy_666_1.0.0_20260508_lua.py.json"
+}

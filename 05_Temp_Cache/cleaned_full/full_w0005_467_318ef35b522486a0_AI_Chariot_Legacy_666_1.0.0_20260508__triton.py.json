@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 467,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__triton.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__triton.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2336,
+  "content_sha256": "318ef35b522486a0c6aad85b9feff9fbf927ce9b6bb9c7df03437b804476bbab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 55,
+    "char_count": 2336,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import hashlib",
+      "@functools.lru_cache(None)",
+      "def has_triton_package() -> bool:",
+      "    try:",
+      "        from triton.compiler.compiler import triton_key",
+      "        return triton_key is not None",
+      "    except ImportError:",
+      "        return False"
+    ],
+    "imports": [
+      "import functools",
+      "import hashlib",
+      "from triton.compiler.compiler import triton_key",
+      "from torch._dynamo.device_interface import get_interface_for_device",
+      "from triton.compiler.compiler import make_backend",
+      "from triton.runtime.driver import driver",
+      "from triton.compiler.compiler import triton_key",
+      "import triton"
+    ],
+    "classes": [],
+    "functions": [
+      "has_triton_package",
+      "has_triton",
+      "triton_backend",
+      "triton_hash_with_backend",
+      "dtype_to_string",
+      "patch_triton_dtype_repr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_467_318ef35b522486a0_AI_Chariot_Legacy_666_1.0.0_20260508__triton.py.json"
+}

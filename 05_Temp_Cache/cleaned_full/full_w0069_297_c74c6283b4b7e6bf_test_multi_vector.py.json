@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 297,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\retrievers\\test_multi_vector.py",
+  "name": "test_multi_vector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4792,
+  "content_sha256": "c74c6283b4b7e6bf48206582539b4f1ab7531f21e74f8f87239471b7b89918ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 134,
+    "non_empty_lines": 115,
+    "char_count": 4789,
+    "preview_lines": [
+      "from collections.abc import Callable",
+      "from typing import Any",
+      "from langchain_core.documents import Document",
+      "from typing_extensions import override",
+      "from langchain_classic.retrievers.multi_vector import MultiVectorRetriever, SearchType",
+      "from langchain_classic.storage import InMemoryStore",
+      "from tests.unit_tests.indexes.test_indexing import InMemoryVectorStore",
+      "class InMemoryVectorstoreWithSearch(InMemoryVectorStore):",
+      "    @staticmethod",
+      "    def _identity_fn(score: float) -> float:"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "from typing import Any",
+      "from langchain_core.documents import Document",
+      "from typing_extensions import override",
+      "from langchain_classic.retrievers.multi_vector import MultiVectorRetriever, SearchType",
+      "from langchain_classic.storage import InMemoryStore",
+      "from tests.unit_tests.indexes.test_indexing import InMemoryVectorStore"
+    ],
+    "classes": [
+      "InMemoryVectorstoreWithSearch"
+    ],
+    "functions": [
+      "test_multi_vector_retriever_initialization",
+      "test_multi_vector_retriever_similarity_search_with_score"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_297_c74c6283b4b7e6bf_test_multi_vector.py.json"
+}

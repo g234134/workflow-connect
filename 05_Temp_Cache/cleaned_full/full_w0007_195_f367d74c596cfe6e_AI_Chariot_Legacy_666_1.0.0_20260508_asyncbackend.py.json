@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_asyncbackend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_asyncbackend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2796,
+  "content_sha256": "f367d74c596cfe6ec5fde9106e05063a4a016ece0123e1812c364058d194bc9d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 75,
+    "char_count": 2796,
+    "preview_lines": [
+      "# Copyright (C) Dnspython Contributors, see LICENSE for text of ISC license",
+      "from typing import Dict",
+      "import dns.exception",
+      "# pylint: disable=unused-import",
+      "from dns._asyncbackend import (  # noqa: F401  lgtm[py/unused-import]",
+      "    Backend,",
+      "    DatagramSocket,",
+      "    Socket,",
+      "    StreamSocket,",
+      ")"
+    ],
+    "imports": [
+      "from typing import Dict",
+      "import dns.exception",
+      "from dns._asyncbackend import (  # noqa: F401  lgtm[py/unused-import]",
+      "import dns._trio_backend",
+      "import dns._asyncio_backend",
+      "import sniffio",
+      "import asyncio"
+    ],
+    "classes": [
+      "AsyncLibraryNotFoundError"
+    ],
+    "functions": [
+      "get_backend",
+      "sniff",
+      "get_default_backend",
+      "set_default_backend"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_195_f367d74c596cfe6e_AI_Chariot_Legacy_666_1.0.0_20260508_asyncbackend.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__numeric_debugger.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__numeric_debugger.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8243,
+  "content_sha256": "85a720de7dc0137765883ee3447a11cd3d57a92847814e32720fc62dc8977266",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 235,
+    "non_empty_lines": 191,
+    "char_count": 8243,
+    "preview_lines": [
+      "import copy",
+      "import logging",
+      "from dataclasses import dataclass",
+      "from typing import Dict, List, Optional, Sequence, Tuple",
+      "import torch",
+      "from torch.ao.ns.fx.utils import compute_sqnr",
+      "from torch.fx import GraphModule, Node",
+      "from torch.nn import functional as F",
+      "NUMERIC_DEBUG_HANDLE_KEY = \"numeric_debug_handle\"",
+      "CUSTOM_KEY = \"custom\""
+    ],
+    "imports": [
+      "import copy",
+      "import logging",
+      "from dataclasses import dataclass",
+      "from typing import Dict, List, Optional, Sequence, Tuple",
+      "import torch",
+      "from torch.ao.ns.fx.utils import compute_sqnr",
+      "from torch.fx import GraphModule, Node",
+      "from torch.nn import functional as F",
+      "from torch.ao.quantization.fx.utils import get_new_attr_name_with_prefix"
+    ],
+    "classes": [
+      "OutputLogger",
+      "QuantizationComparisonResult",
+      "NodeAccuracySummary"
+    ],
+    "functions": [
+      "generate_numeric_debug_handle",
+      "_insert_logger",
+      "prepare_for_propagation_comparison",
+      "_module_stack_to_str",
+      "extract_results_from_loggers",
+      "compare_results"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_220_85a720de7dc01377_AI_Chariot_Legacy_666_1.0.0_20260508__numeric_debugger.py.json"
+}

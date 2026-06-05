@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dedupe_symint_uses.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dedupe_symint_uses.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2532,
+  "content_sha256": "91c3357c4792bc1b4588ea5dfba5811998742d9806e4a19a9099e42b3cc67ce3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 58,
+    "char_count": 2532,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from dataclasses import dataclass",
+      "from typing import Union",
+      "import torch",
+      "from torch import SymBool, SymFloat, SymInt",
+      "from torch.types import py_sym_types",
+      "@dataclass",
+      "class _SymExprHash:",
+      "    \"\"\"",
+      "    Hash for a py_sym_types that will use the underlying sympy expression"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from typing import Union",
+      "import torch",
+      "from torch import SymBool, SymFloat, SymInt",
+      "from torch.types import py_sym_types",
+      "from the backward."
+    ],
+    "classes": [
+      "_SymExprHash",
+      "_SymHashingDict"
+    ],
+    "functions": [
+      "dedupe_symints"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_313_91c3357c4792bc1b_AI_Chariot_Legacy_666_1.0.0_20260508_dedupe_symint_uses.py.json"
+}

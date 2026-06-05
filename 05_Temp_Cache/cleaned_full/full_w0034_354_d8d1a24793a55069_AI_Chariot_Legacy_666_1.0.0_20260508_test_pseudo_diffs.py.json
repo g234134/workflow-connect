@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pseudo_diffs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pseudo_diffs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14121,
+  "content_sha256": "d8d1a24793a55069fac9ba9bccb0f55974e5b56a5f06ebf77b4116f319357015",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 388,
+    "non_empty_lines": 327,
+    "char_count": 14121,
+    "preview_lines": [
+      "# Created by Pearu Peterson, September 2002",
+      "__usage__ = \"\"\"",
+      "Build fftpack:",
+      "  python setup_fftpack.py build",
+      "Run tests if scipy is installed:",
+      "  python -c 'import scipy;scipy.fftpack.test(<level>)'",
+      "Run tests if fftpack is not installed:",
+      "  python tests/test_pseudo_diffs.py [<level>]",
+      "\"\"\"",
+      "from numpy.testing import (assert_equal, assert_almost_equal,"
+    ],
+    "imports": [
+      "from numpy.testing import (assert_equal, assert_almost_equal,",
+      "from scipy.fftpack import (diff, fft, ifft, tilbert, itilbert, hilbert,",
+      "import numpy as np",
+      "from numpy import arange, sin, cos, pi, exp, tanh, sum, sign",
+      "from numpy.random import random"
+    ],
+    "classes": [
+      "TestDiff",
+      "TestTilbert",
+      "TestITilbert",
+      "TestHilbert",
+      "TestIHilbert",
+      "TestShift",
+      "TestOverwrite"
+    ],
+    "functions": [
+      "direct_diff",
+      "direct_tilbert",
+      "direct_itilbert",
+      "direct_hilbert",
+      "direct_ihilbert",
+      "direct_shift"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_354_d8d1a24793a55069_AI_Chariot_Legacy_666_1.0.0_20260508_test_pseudo_diffs.py.json"
+}

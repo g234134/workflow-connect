@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 435,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_killProcName.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_killProcName.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2050,
+  "content_sha256": "e6f856e144cd64aa08d7d12b08714875678b3b770e81a0eeeab8ba9c3093264b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 51,
+    "char_count": 2050,
+    "preview_lines": [
+      "# Kills a process by process name",
+      "#",
+      "# Uses the Performance Data Helper to locate the PID, then kills it.",
+      "# Will only kill the process if there is only one process of that name",
+      "# (eg, attempting to kill \"Python.exe\" will only work if there is only",
+      "# one Python.exe running.  (Note that the current process does not",
+      "# count - ie, if Python.exe is hosting this script, you can still kill",
+      "# another Python.exe (as long as there is only one other Python.exe)",
+      "# Really just a demo for the win32pdh(util) module, which allows you",
+      "# to get all sorts of information about a running process and many"
+    ],
+    "imports": [
+      "import sys",
+      "import win32api",
+      "import win32con",
+      "import win32pdhutil"
+    ],
+    "classes": [],
+    "functions": [
+      "killProcName"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_435_e6f856e144cd64aa_AI_Chariot_Legacy_666_1.0.0_20260508_killProcName.py.json"
+}

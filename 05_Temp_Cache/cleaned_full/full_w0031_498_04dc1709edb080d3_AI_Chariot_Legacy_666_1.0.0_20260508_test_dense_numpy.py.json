@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 498,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dense_numpy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dense_numpy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2300,
+  "content_sha256": "04dc1709edb080d3c4f28df9fac84fb058fc975f5cfd01ba61ef2d9081a985ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 89,
+    "non_empty_lines": 71,
+    "char_count": 2300,
+    "preview_lines": [
+      "import pytest",
+      "np = pytest.importorskip(\"numpy\")",
+      "import networkx as nx",
+      "def test_cycle_numpy():",
+      "    dist = nx.floyd_warshall_numpy(nx.cycle_graph(7))",
+      "    assert dist[0, 3] == 3",
+      "    assert dist[0, 4] == 3",
+      "def test_weighted_numpy_three_edges():",
+      "    XG3 = nx.Graph()",
+      "    XG3.add_weighted_edges_from("
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cycle_numpy",
+      "test_weighted_numpy_three_edges",
+      "test_weighted_numpy_two_edges",
+      "test_weight_parameter_numpy",
+      "test_directed_cycle_numpy",
+      "test_zero_weight",
+      "test_nodelist"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_498_04dc1709edb080d3_AI_Chariot_Legacy_666_1.0.0_20260508_test_dense_numpy.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 160,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\FileStore.hpp",
+  "name": "FileStore.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 1555,
+  "content_sha256": "4bb81bfb29741788698da54dc117147976da5d6587cfd31817ba546e473a831e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 41,
+    "char_count": 1555,
+    "preview_lines": [
+      "#pragma once",
+      "#include <sys/types.h>",
+      "#include <mutex>",
+      "#include <unordered_map>",
+      "#include <torch/csrc/distributed/c10d/Store.hpp>",
+      "namespace c10d {",
+      "class TORCH_API FileStore : public Store {",
+      " public:",
+      "  explicit FileStore(std::string path, int numWorkers);",
+      "  ~FileStore() override;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_160_4bb81bfb29741788_FileStore.hpp.json"
+}

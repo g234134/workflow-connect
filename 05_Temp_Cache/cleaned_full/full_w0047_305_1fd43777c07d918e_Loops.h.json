@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\Loops.h",
+  "name": "Loops.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 15324,
+  "content_sha256": "1fd43777c07d918e5e9b1a7770da66b421801cf4d74f6d7c336cfd7cdf26bec5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 394,
+    "non_empty_lines": 346,
+    "char_count": 15324,
+    "preview_lines": [
+      "#pragma once",
+      "// This file provides two functions to help write elementwise kernels:",
+      "//",
+      "//   cpu_kernel(TensorIterator iter, <lambda>)",
+      "//   cpu_kernel_vec(TensorIterator iter, <lambda>, <vec_lambda>)",
+      "//",
+      "// Both functions may generate vectorized code. The cpu_kernel implementation",
+      "// relies on the compiler's auto-vectorization. The cpu_kernel_vec",
+      "// implementation uses x86 SIMD intrinsics when available. These functions",
+      "// are only intended to be used in the ATen/native/cpu subdirectory, since files"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_305_1fd43777c07d918e_Loops.h.json"
+}

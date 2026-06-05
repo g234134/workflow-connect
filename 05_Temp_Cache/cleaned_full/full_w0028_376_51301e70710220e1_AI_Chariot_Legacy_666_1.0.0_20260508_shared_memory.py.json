@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 376,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_shared_memory.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_shared_memory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18458,
+  "content_sha256": "51301e70710220e1c494ff5383ac94442a38a4a6622f2eb94e40128c45de1aeb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 534,
+    "non_empty_lines": 455,
+    "char_count": 18458,
+    "preview_lines": [
+      "\"\"\"Provides shared memory for direct access across processes.",
+      "The API of this package is currently provisional. Refer to the",
+      "documentation for details.",
+      "\"\"\"",
+      "__all__ = [ 'SharedMemory', 'ShareableList' ]",
+      "from functools import partial",
+      "import mmap",
+      "import os",
+      "import errno",
+      "import struct"
+    ],
+    "imports": [
+      "from functools import partial",
+      "import mmap",
+      "import os",
+      "import errno",
+      "import struct",
+      "import secrets",
+      "import types",
+      "import _winapi",
+      "import _posixshmem",
+      "from . import resource_tracker"
+    ],
+    "classes": [
+      "SharedMemory",
+      "ShareableList"
+    ],
+    "functions": [
+      "_make_filename"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_376_51301e70710220e1_AI_Chariot_Legacy_666_1.0.0_20260508_shared_memory.py.json"
+}

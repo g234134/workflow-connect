@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_premai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_premai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18365,
+  "content_sha256": "a795c131ab938d17f96bed9bb7274188b46d96151206c42f77b3029852adf725",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 541,
+    "non_empty_lines": 467,
+    "char_count": 18365,
+    "preview_lines": [
+      "\"\"\"Wrapper around Prem's Chat API.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import warnings",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Callable,",
+      "    Dict,",
+      "    Iterator,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import warnings",
+      "from typing import (",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models import LanguageModelInput",
+      "from langchain_core.language_models.chat_models import BaseChatModel",
+      "from langchain_core.language_models.llms import create_base_retry_decorator",
+      "from langchain_core.messages import (",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.runnables import Runnable",
+      "from langchain_core.tools import BaseTool",
+      "from langchain_core.utils import get_from_dict_or_env, pre_init",
+      "from langchain_core.utils.function_calling import convert_to_openai_tool",
+      "from pydantic import (",
+      "from premai.api.chat_completions.v1_chat_completions_create import (",
+      "from premai.models.chat_completion_response import ChatCompletionResponse"
+    ],
+    "classes": [
+      "ChatPremAPIError",
+      "ChatPremAI"
+    ],
+    "functions": [
+      "_truncate_at_stop_tokens",
+      "_response_to_result",
+      "_convert_delta_response_to_message_chunk",
+      "_messages_to_prompt_dict",
+      "create_prem_retry_decorator",
+      "chat_with_retry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_331_a795c131ab938d17_AI_Chariot_Legacy_666_1.0.0_20260508_premai.py.json"
+}

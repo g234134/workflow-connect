@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 348,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\node.py",
+  "name": "node.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30744,
+  "content_sha256": "a4368a3e9b7b6a76f66042ad442f5d1dc4f624fcbe0e50a761f62a1813bcc09a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 696,
+    "non_empty_lines": 592,
+    "char_count": 30744,
+    "preview_lines": [
+      "# Nodes represent a definition of a value in our graph of operators.",
+      "from typing import TYPE_CHECKING, Union, Callable, Any, Tuple, List, Optional, Dict, Set",
+      "from ._compatibility import compatibility",
+      "from .immutable_collections import immutable_dict, immutable_list",
+      "import torch",
+      "import builtins",
+      "import types",
+      "import inspect",
+      "import warnings",
+      "from torch.fx.operator_schemas import normalize_function, normalize_module, ArgsKwargsPair"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Union, Callable, Any, Tuple, List, Optional, Dict, Set",
+      "from ._compatibility import compatibility",
+      "from .immutable_collections import immutable_dict, immutable_list",
+      "import torch",
+      "import builtins",
+      "import types",
+      "import inspect",
+      "import warnings",
+      "from torch.fx.operator_schemas import normalize_function, normalize_module, ArgsKwargsPair",
+      "from .._ops import ops as _ops",
+      "from .graph import Graph"
+    ],
+    "classes": [
+      "Node"
+    ],
+    "functions": [
+      "has_side_effect",
+      "_find_module_of_method",
+      "_type_repr",
+      "_get_qualified_name",
+      "_format_arg",
+      "map_arg",
+      "map_aggregate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_348_a4368a3e9b7b6a76_node.py.json"
+}

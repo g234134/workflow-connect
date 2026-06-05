@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lowrank_multivariate_normal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lowrank_multivariate_normal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10103,
+  "content_sha256": "36812c141796f95171e934826b3413d2013b71158f09281965a5ab7f6a3d4fd3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 240,
+    "non_empty_lines": 211,
+    "char_count": 10103,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import math",
+      "import torch",
+      "from torch.distributions import constraints",
+      "from torch.distributions.distribution import Distribution",
+      "from torch.distributions.multivariate_normal import _batch_mahalanobis, _batch_mv",
+      "from torch.distributions.utils import _standard_normal, lazy_property",
+      "from torch.types import _size",
+      "__all__ = [\"LowRankMultivariateNormal\"]",
+      "def _batch_capacitance_tril(W, D):"
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "from torch.distributions import constraints",
+      "from torch.distributions.distribution import Distribution",
+      "from torch.distributions.multivariate_normal import _batch_mahalanobis, _batch_mv",
+      "from torch.distributions.utils import _standard_normal, lazy_property",
+      "from torch.types import _size"
+    ],
+    "classes": [
+      "LowRankMultivariateNormal"
+    ],
+    "functions": [
+      "_batch_capacitance_tril",
+      "_batch_lowrank_logdet",
+      "_batch_lowrank_mahalanobis"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_432_36812c141796f951_AI_Chariot_Legacy_666_1.0.0_20260508_lowrank_multivariate_normal.py.json"
+}

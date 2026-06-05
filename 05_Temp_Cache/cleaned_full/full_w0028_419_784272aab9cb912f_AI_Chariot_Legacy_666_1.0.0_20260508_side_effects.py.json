@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_side_effects.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_side_effects.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30014,
+  "content_sha256": "784272aab9cb912f1d3960210b2d72b637018845bab1a7ad644d3dc34f58e9f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 701,
+    "non_empty_lines": 615,
+    "char_count": 30014,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import inspect",
+      "import warnings",
+      "from collections.abc import MutableMapping",
+      "from typing import Any, Dict, List, Optional, Type, Union",
+      "import torch.nn",
+      "from . import utils, variables",
+      "from .bytecode_transformation import (",
+      "    bytecode_from_template,"
+    ],
+    "imports": [
+      "import functools",
+      "import inspect",
+      "import warnings",
+      "from collections.abc import MutableMapping",
+      "from typing import Any, Dict, List, Optional, Type, Union",
+      "import torch.nn",
+      "from . import utils, variables",
+      "from .bytecode_transformation import (",
+      "from .codegen import PyCodegen",
+      "from .exc import unimplemented",
+      "from .source import GlobalSource, LocalSource, Source",
+      "from .utils import is_frozen_dataclass, nn_module_new, object_new",
+      "from .variables.base import (",
+      "from .variables.user_defined import FrozenDataClassVariable",
+      "from torch._dynamo.variables.misc import AutogradFunctionContextVariable"
+    ],
+    "classes": [
+      "MutableSideEffects",
+      "AttributeMutation",
+      "AttributeMutationExisting",
+      "AttributeMutationNew",
+      "SideEffects"
+    ],
+    "functions": [
+      "_manual_update_dict"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_419_784272aab9cb912f_AI_Chariot_Legacy_666_1.0.0_20260508_side_effects.py.json"
+}

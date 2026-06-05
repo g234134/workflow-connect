@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 146,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_config_init.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_config_init.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26657,
+  "content_sha256": "4fb740c90e2cac7d5792a9d1a00c6c44783262595cd389c43380d2a83906dfb4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 923,
+    "non_empty_lines": 759,
+    "char_count": 26657,
+    "preview_lines": [
+      "\"\"\"",
+      "This module is imported from the pandas package __init__.py file",
+      "in order to ensure that the core.config options registered here will",
+      "be available as soon as the user loads the package. if register_option",
+      "is invoked inside specific modules, they will not be registered until that",
+      "module is imported, which may or may not be a problem.",
+      "If you need to make sure options are available even before a certain",
+      "module is imported, register them here rather than in the module.",
+      "\"\"\"",
+      "from __future__ import annotations"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable",
+      "import os",
+      "from typing import Any",
+      "import pandas._config.config as cf",
+      "from pandas._config.config import (",
+      "from pandas.errors import Pandas4Warning",
+      "from pandas.core import nanops",
+      "from pandas.core.computation import expressions",
+      "from pandas.core.util import numba_"
+    ],
+    "classes": [],
+    "functions": [
+      "use_bottleneck_cb",
+      "use_numexpr_cb",
+      "use_numba_cb",
+      "table_schema_cb",
+      "is_terminal",
+      "is_valid_string_storage",
+      "register_plotting_backend_cb",
+      "register_converter_cb"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_146_4fb740c90e2cac7d_AI_Chariot_Legacy_666_1.0.0_20260508_config_init.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:46:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reverseContourPen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reverseContourPen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4118,
+  "content_sha256": "13f372f3a25f88ca10d3855fb3032d76968a094dfbc0dcbd89f39c71bd1a58a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 79,
+    "char_count": 4118,
+    "preview_lines": [
+      "from fontTools.misc.arrayTools import pairwise",
+      "from fontTools.pens.filterPen import ContourFilterPen",
+      "__all__ = [\"reversedContour\", \"ReverseContourPen\"]",
+      "class ReverseContourPen(ContourFilterPen):",
+      "    \"\"\"Filter pen that passes outline data to another pen, but reversing",
+      "    the winding direction of all contours. Components are simply passed",
+      "    through unchanged.",
+      "    Closed contours are reversed in such a way that the first point remains",
+      "    the first point.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from fontTools.misc.arrayTools import pairwise",
+      "from fontTools.pens.filterPen import ContourFilterPen"
+    ],
+    "classes": [
+      "ReverseContourPen"
+    ],
+    "functions": [
+      "reversedContour"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_176_13f372f3a25f88ca_AI_Chariot_Legacy_666_1.0.0_20260508_reverseContourPen.py.json"
+}

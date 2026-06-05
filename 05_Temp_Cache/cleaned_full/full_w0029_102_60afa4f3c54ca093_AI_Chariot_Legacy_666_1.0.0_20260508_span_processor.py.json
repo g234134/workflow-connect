@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_span_processor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_span_processor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13222,
+  "content_sha256": "60afa4f3c54ca0936b3845cca9869533f63e172c0dda142376ba1d2dea867a0c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 389,
+    "non_empty_lines": 303,
+    "char_count": 13222,
+    "preview_lines": [
+      "from datetime import datetime, timezone",
+      "from time import time",
+      "from typing import TYPE_CHECKING, cast",
+      "from sentry_sdk import get_client, start_transaction",
+      "from sentry_sdk.consts import INSTRUMENTER, SPANSTATUS",
+      "from sentry_sdk.integrations import DidNotEnable",
+      "from sentry_sdk.integrations.opentelemetry.consts import (",
+      "    SENTRY_BAGGAGE_KEY,",
+      "    SENTRY_TRACE_KEY,",
+      ")"
+    ],
+    "imports": [
+      "from datetime import datetime, timezone",
+      "from time import time",
+      "from typing import TYPE_CHECKING, cast",
+      "from sentry_sdk import get_client, start_transaction",
+      "from sentry_sdk.consts import INSTRUMENTER, SPANSTATUS",
+      "from sentry_sdk.integrations import DidNotEnable",
+      "from sentry_sdk.integrations.opentelemetry.consts import (",
+      "from sentry_sdk.scope import add_global_event_processor",
+      "from sentry_sdk.tracing import Transaction, Span as SentrySpan",
+      "from urllib3.util import parse_url as urlparse",
+      "from opentelemetry.context import get_value",
+      "from opentelemetry.sdk.trace import SpanProcessor, ReadableSpan as OTelSpan",
+      "from opentelemetry.semconv.trace import SpanAttributes",
+      "from opentelemetry.trace import (",
+      "from opentelemetry.trace.span import (",
+      "from typing import Any, Optional, Union",
+      "from opentelemetry import context as context_api",
+      "from sentry_sdk._types import Event, Hint"
+    ],
+    "classes": [
+      "SentrySpanProcessor"
+    ],
+    "functions": [
+      "link_trace_context_to_error_event"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_102_60afa4f3c54ca093_AI_Chariot_Legacy_666_1.0.0_20260508_span_processor.py.json"
+}

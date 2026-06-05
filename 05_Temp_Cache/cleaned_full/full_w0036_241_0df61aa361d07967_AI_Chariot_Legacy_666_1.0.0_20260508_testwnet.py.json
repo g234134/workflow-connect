@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testwnet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testwnet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4405,
+  "content_sha256": "0df61aa361d07967446e5a7b5d905e2c1666d486d4751453963f0415fc53a666",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 106,
+    "char_count": 4405,
+    "preview_lines": [
+      "import os",
+      "import win32api",
+      "import win32wnet",
+      "from winnetwk import *",
+      "possible_shares = []",
+      "def _doDumpHandle(handle, level=0):",
+      "    indent = \" \" * level",
+      "    while 1:",
+      "        items = win32wnet.WNetEnumResource(handle, 0)",
+      "        if len(items) == 0:"
+    ],
+    "imports": [
+      "import os",
+      "import win32api",
+      "import win32wnet",
+      "from winnetwk import *"
+    ],
+    "classes": [],
+    "functions": [
+      "_doDumpHandle",
+      "TestOpenEnum",
+      "findUnusedDriveLetter",
+      "TestConnection",
+      "TestGetUser"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_241_0df61aa361d07967_AI_Chariot_Legacy_666_1.0.0_20260508_testwnet.py.json"
+}

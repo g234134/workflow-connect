@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__format.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__format.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 626,
+  "content_sha256": "c5972dd2675e3d70341f7900ab18c6b650793bce86df90c060c1a4038e02981e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 19,
+    "char_count": 626,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "if TYPE_CHECKING:",
+      "    from mdurl._url import URL",
+      "def format(url: URL) -> str:  # noqa: A001",
+      "    result = \"\"",
+      "    result += url.protocol or \"\"",
+      "    result += \"//\" if url.slashes else \"\"",
+      "    result += url.auth + \"@\" if url.auth else \"\"",
+      "    if url.hostname and \":\" in url.hostname:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from mdurl._url import URL"
+    ],
+    "classes": [],
+    "functions": [
+      "format"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_197_c5972dd2675e3d70_AI_Chariot_Legacy_666_1.0.0_20260508__format.py.json"
+}

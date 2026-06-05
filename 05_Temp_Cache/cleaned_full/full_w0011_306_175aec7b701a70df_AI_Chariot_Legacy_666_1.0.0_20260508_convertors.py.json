@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 306,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_convertors.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_convertors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2304,
+  "content_sha256": "175aec7b701a70df6bb1f2674deb839e36cde75affa2e1dcdd62f26248e45ffa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 89,
+    "non_empty_lines": 59,
+    "char_count": 2304,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import math",
+      "import uuid",
+      "from typing import Any, ClassVar, Generic, TypeVar",
+      "T = TypeVar(\"T\")",
+      "class Convertor(Generic[T]):",
+      "    regex: ClassVar[str] = \"\"",
+      "    def convert(self, value: str) -> T:",
+      "        raise NotImplementedError()  # pragma: no cover",
+      "    def to_string(self, value: T) -> str:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "import uuid",
+      "from typing import Any, ClassVar, Generic, TypeVar"
+    ],
+    "classes": [
+      "Convertor",
+      "StringConvertor",
+      "PathConvertor",
+      "IntegerConvertor",
+      "FloatConvertor",
+      "UUIDConvertor"
+    ],
+    "functions": [
+      "register_url_convertor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_306_175aec7b701a70df_AI_Chariot_Legacy_666_1.0.0_20260508_convertors.py.json"
+}

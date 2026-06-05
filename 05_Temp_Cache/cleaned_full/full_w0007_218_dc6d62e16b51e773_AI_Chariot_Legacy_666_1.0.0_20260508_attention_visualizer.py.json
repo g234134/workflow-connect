@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_attention_visualizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_attention_visualizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10165,
+  "content_sha256": "dc6d62e16b51e77364c4e15859707d47fb7ed6bb33b4e5daf505a5faeec358b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 255,
+    "non_empty_lines": 220,
+    "char_count": 10161,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import io",
+      "import httpx",
+      "from PIL import Image",
+      "from ..masking_utils import create_causal_mask",
+      "from ..models.auto.auto_factory import _get_model_class",
+      "from ..models.auto.configuration_auto import AutoConfig",
+      "from ..models.auto.modeling_auto import MODEL_FOR_PRETRAINING_MAPPING, MODEL_MAPPING",
+      "from ..models.auto.processing_auto import PROCESSOR_MAPPING_NAMES, AutoProcessor",
+      "from ..models.auto.tokenization_auto import AutoTokenizer",
+      "from .import_utils import is_torch_available",
+      "import torch",
+      "import torch.nn as nn"
+    ],
+    "classes": [
+      "AttentionMaskVisualizer"
+    ],
+    "functions": [
+      "generate_attention_matrix_from_mask"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_218_dc6d62e16b51e773_AI_Chariot_Legacy_666_1.0.0_20260508_attention_visualizer.py.json"
+}

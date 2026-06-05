@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 27,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_httpsredirect.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_httpsredirect.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 848,
+  "content_sha256": "48d4e579a6002c6a084d5ef1c1b89ce2007a55874cf1895e6bfca4722533df58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 16,
+    "char_count": 848,
+    "preview_lines": [
+      "from starlette.datastructures import URL",
+      "from starlette.responses import RedirectResponse",
+      "from starlette.types import ASGIApp, Receive, Scope, Send",
+      "class HTTPSRedirectMiddleware:",
+      "    def __init__(self, app: ASGIApp) -> None:",
+      "        self.app = app",
+      "    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:",
+      "        if scope[\"type\"] in (\"http\", \"websocket\") and scope[\"scheme\"] in (\"http\", \"ws\"):",
+      "            url = URL(scope=scope)",
+      "            redirect_scheme = {\"http\": \"https\", \"ws\": \"wss\"}[url.scheme]"
+    ],
+    "imports": [
+      "from starlette.datastructures import URL",
+      "from starlette.responses import RedirectResponse",
+      "from starlette.types import ASGIApp, Receive, Scope, Send"
+    ],
+    "classes": [
+      "HTTPSRedirectMiddleware"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_027_48d4e579a6002c6a_AI_Chariot_Legacy_666_1.0.0_20260508_httpsredirect.py.json"
+}

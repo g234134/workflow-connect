@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 219,
+  "generated_at": "2026-05-08T18:47:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\jinja2\\visitor.py",
+  "name": "visitor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3557,
+  "content_sha256": "11c9cbd4f2307ffe1154238cc6c44db91f005c76d2d6a7c074c384da780a273e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 73,
+    "char_count": 3557,
+    "preview_lines": [
+      "\"\"\"API for traversing the AST nodes. Implemented by the compiler and",
+      "meta introspection.",
+      "\"\"\"",
+      "import typing as t",
+      "from .nodes import Node",
+      "if t.TYPE_CHECKING:",
+      "    import typing_extensions as te",
+      "    class VisitCallable(te.Protocol):",
+      "        def __call__(self, node: Node, *args: t.Any, **kwargs: t.Any) -> t.Any: ...",
+      "class NodeVisitor:"
+    ],
+    "imports": [
+      "import typing as t",
+      "from .nodes import Node",
+      "import typing_extensions as te",
+      "from the previous location otherwise it's replaced with the return"
+    ],
+    "classes": [
+      "NodeVisitor",
+      "NodeTransformer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_219_11c9cbd4f2307ffe_visitor.py.json"
+}

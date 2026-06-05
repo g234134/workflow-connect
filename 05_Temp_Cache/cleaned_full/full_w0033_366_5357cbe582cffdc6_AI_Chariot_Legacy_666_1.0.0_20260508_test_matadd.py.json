@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_matadd.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_matadd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1866,
+  "content_sha256": "5357cbe582cffdc6043ac762dae6861abce6f2a3ac29c5e7ebd042d5457a44c3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 41,
+    "char_count": 1866,
+    "preview_lines": [
+      "from sympy.matrices.expressions import MatrixSymbol, MatAdd, MatPow, MatMul",
+      "from sympy.matrices.expressions.special import GenericZeroMatrix, ZeroMatrix",
+      "from sympy.matrices.exceptions import ShapeError",
+      "from sympy.matrices import eye, ImmutableMatrix",
+      "from sympy.core import Add, Basic, S",
+      "from sympy.core.add import add",
+      "from sympy.testing.pytest import XFAIL, raises",
+      "X = MatrixSymbol('X', 2, 2)",
+      "Y = MatrixSymbol('Y', 2, 2)",
+      "def test_evaluate():"
+    ],
+    "imports": [
+      "from sympy.matrices.expressions import MatrixSymbol, MatAdd, MatPow, MatMul",
+      "from sympy.matrices.expressions.special import GenericZeroMatrix, ZeroMatrix",
+      "from sympy.matrices.exceptions import ShapeError",
+      "from sympy.matrices import eye, ImmutableMatrix",
+      "from sympy.core import Add, Basic, S",
+      "from sympy.core.add import add",
+      "from sympy.testing.pytest import XFAIL, raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_evaluate",
+      "test_sort_key",
+      "test_matadd_sympify",
+      "test_matadd_of_matrices",
+      "test_doit_args",
+      "test_generic_identity",
+      "test_zero_matrix_add",
+      "test_matrix_Add_with_scalar",
+      "test_shape_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_366_5357cbe582cffdc6_AI_Chariot_Legacy_666_1.0.0_20260508_test_matadd.py.json"
+}

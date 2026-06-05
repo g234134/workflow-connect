@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 479,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ntpath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ntpath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30404,
+  "content_sha256": "6c0d55ee892f98ef87b1ed3c50c9dfc7e267a98d2db47e08d3dc67529af56725",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 869,
+    "non_empty_lines": 768,
+    "char_count": 30404,
+    "preview_lines": [
+      "# Module 'ntpath' -- common operations on WinNT/Win95 pathnames",
+      "\"\"\"Common pathname manipulations, WindowsNT/95 version.",
+      "Instead of importing this module directly, import os and refer to this",
+      "module as os.path.",
+      "\"\"\"",
+      "# strings representing various path-related bits and pieces",
+      "# These are primarily for export; internally, they are hardcoded.",
+      "# Should be set before imports for resolving cyclic dependency.",
+      "curdir = '.'",
+      "pardir = '..'"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import stat",
+      "import genericpath",
+      "from genericpath import *",
+      "from _winapi import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_get_bothseps",
+      "isabs",
+      "join",
+      "splitdrive",
+      "splitroot",
+      "split",
+      "splitext",
+      "basename",
+      "dirname",
+      "lexists",
+      "ismount",
+      "expanduser",
+      "expandvars",
+      "relpath",
+      "commonpath"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_479_6c0d55ee892f98ef_AI_Chariot_Legacy_666_1.0.0_20260508_ntpath.py.json"
+}

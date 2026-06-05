@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 10,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_makepy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_makepy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14962,
+  "content_sha256": "e060b4b00eb7dca87795dfaa75cb680a30e2d9bf1c0055ddcbe0df1a20589823",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 453,
+    "non_empty_lines": 374,
+    "char_count": 14962,
+    "preview_lines": [
+      "# Originally written by Curt Hagenlocher, and various bits",
+      "# and pieces by Mark Hammond (and now Greg Stein has had",
+      "# a go too :-)",
+      "# Note that the main worker code has been moved to genpy.py",
+      "# As this is normally run from the command line, it reparses the code each time.",
+      "# Now this is nothing more than the command line handler and public interface.",
+      "# XXX - TO DO",
+      "# XXX - Greg and Mark have some ideas for a revamp - just no",
+      "#       time - if you want to help, contact us for details.",
+      "#       Main idea is to drop the classes exported and move to a more"
+    ],
+    "imports": [
+      "import importlib",
+      "import os",
+      "import sys",
+      "import pythoncom",
+      "from win32com.client import Dispatch, gencache, genpy, selecttlb",
+      "import pywin  # nopycln: import",
+      "import win32ui",
+      "from pywin.dialogs import status"
+    ],
+    "classes": [
+      "SimpleProgress",
+      "GUIProgress"
+    ],
+    "functions": [
+      "usage",
+      "ShowInfo",
+      "GetTypeLibsForSpec",
+      "GenerateFromTypeLibSpec",
+      "GenerateChildFromTypeLibSpec",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_010_e060b4b00eb7dca8_AI_Chariot_Legacy_666_1.0.0_20260508_makepy.py.json"
+}

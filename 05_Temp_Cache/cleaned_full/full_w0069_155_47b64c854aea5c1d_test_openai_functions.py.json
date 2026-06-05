@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 155,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\agents\\format_scratchpad\\test_openai_functions.py",
+  "name": "test_openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2083,
+  "content_sha256": "47b64c854aea5c1dd7b8629d2cbb1fbeadfa5636e0639eb80617cbbd442b9f24",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 63,
+    "char_count": 2080,
+    "preview_lines": [
+      "from langchain_core.agents import AgentActionMessageLog",
+      "from langchain_core.messages import AIMessage, FunctionMessage",
+      "from langchain_classic.agents.format_scratchpad.openai_functions import (",
+      "    format_to_openai_function_messages,",
+      ")",
+      "def test_calls_convert_agent_action_to_messages() -> None:",
+      "    additional_kwargs1 = {",
+      "        \"function_call\": {",
+      "            \"name\": \"tool1\",",
+      "            \"arguments\": \"input1\","
+    ],
+    "imports": [
+      "from langchain_core.agents import AgentActionMessageLog",
+      "from langchain_core.messages import AIMessage, FunctionMessage",
+      "from langchain_classic.agents.format_scratchpad.openai_functions import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_calls_convert_agent_action_to_messages",
+      "test_handles_empty_input_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_155_47b64c854aea5c1d_test_openai_functions.py.json"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov-core/trace-event/v2",
+  "title": "Gov Core Trace Event",
+  "description": "Canonical structured trace/log event for Phase 3 observability baseline.",
+  "version": "2.0.0",
+  "type": "object",
+  "required": [
+    "trace_schema_version",
+    "event",
+    "timestamp",
+    "trace_id",
+    "task_id",
+    "status"
+  ],
+  "properties": {
+    "trace_schema_version": { "const": "gov-trace-v2" },
+    "event": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "session_id": { "type": ["string", "null"] },
+    "task_id": { "type": ["string", "null"] },
+    "trace_id": { "type": "string" },
+    "span_id": { "type": ["string", "null"] },
+    "agent_name": { "type": ["string", "null"] },
+    "workflow_name": { "type": ["string", "null"] },
+    "tool_name": { "type": ["string", "null"] },
+    "latency_ms": { "type": ["number", "null"], "minimum": 0 },
+    "status": {
+      "type": "string",
+      "enum": ["success", "failed", "running", "unknown"]
+    },
+    "error_type": { "type": ["string", "null"] },
+    "token_input": { "type": ["integer", "null"], "minimum": 0 },
+    "token_output": { "type": ["integer", "null"], "minimum": 0 },
+    "token_cost": { "type": ["number", "null"], "minimum": 0 },
+    "user_id": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 41,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\pydantic\\deprecated\\decorator.py",
+  "name": "decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10845,
+  "content_sha256": "4c19ba6c9ef026c36287ff16ab92330dcc0fdf69bdfef7f1b3de9d7ac2ee934d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 234,
+    "char_count": 10845,
+    "preview_lines": [
+      "import warnings",
+      "from collections.abc import Mapping",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, TypeVar, Union, overload",
+      "from typing_extensions import deprecated",
+      "from .._internal import _config, _typing_extra",
+      "from ..alias_generators import to_pascal",
+      "from ..errors import PydanticUserError",
+      "from ..functional_validators import field_validator",
+      "from ..main import BaseModel, create_model"
+    ],
+    "imports": [
+      "import warnings",
+      "from collections.abc import Mapping",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, TypeVar, Union, overload",
+      "from typing_extensions import deprecated",
+      "from .._internal import _config, _typing_extra",
+      "from ..alias_generators import to_pascal",
+      "from ..errors import PydanticUserError",
+      "from ..functional_validators import field_validator",
+      "from ..main import BaseModel, create_model",
+      "from ..warnings import PydanticDeprecatedSince20",
+      "from inspect import Parameter, signature"
+    ],
+    "classes": [
+      "ValidatedFunction"
+    ],
+    "functions": [
+      "validate_arguments",
+      "validate_arguments",
+      "validate_arguments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_041_4c19ba6c9ef026c3_decorator.py.json"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\PIL\\ImageFont.py",
+  "name": "ImageFont.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 64573,
+  "content_sha256": "1a73a8e72363d030d1748a725c423ed251e4b46be9800cc5ed6f6c1302998a22",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1320,
+    "non_empty_lines": 1144,
+    "char_count": 64573,
+    "preview_lines": [
+      "#",
+      "# The Python Imaging Library.",
+      "# $Id$",
+      "#",
+      "# PIL raster font management",
+      "#",
+      "# History:",
+      "# 1996-08-07 fl   created (experimental)",
+      "# 1997-08-25 fl   minor adjustments to handle fonts from pilfont 0.3",
+      "# 1999-02-06 fl   rewrote most font management stuff in C"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import base64",
+      "import os",
+      "import sys",
+      "import warnings",
+      "from enum import IntEnum",
+      "from io import BytesIO",
+      "from types import ModuleType",
+      "from typing import IO, Any, BinaryIO, TypedDict, cast",
+      "from . import Image",
+      "from ._typing import StrOrBytesPath",
+      "from ._util import DeferredError, is_path",
+      "from . import ImageFile",
+      "from ._imaging import ImagingFont",
+      "from ._imagingft import Font",
+      "from . import _imagingft as core"
+    ],
+    "classes": [
+      "Axis",
+      "Layout",
+      "ImageFont",
+      "FreeTypeFont",
+      "TransposedFont"
+    ],
+    "functions": [
+      "_string_length_check",
+      "load",
+      "truetype",
+      "load_path",
+      "load_default_imagefont",
+      "load_default"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_014_1a73a8e72363d030_ImageFont.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_focus_logger.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_focus_logger.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7948,
+  "content_sha256": "f2f86e35fe6e741f3eba688921695e3913d5ecbeb9dc91c7fe81f4aa65c88f7e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 211,
+    "non_empty_lines": 182,
+    "char_count": 7948,
+    "preview_lines": [
+      "\"\"\"Focus export logger orchestrating DB pull/transform/upload.\"\"\"",
+      "from __future__ import annotations",
+      "import os",
+      "from datetime import datetime, timedelta, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, cast",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from .destinations import FocusTimeWindow",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from datetime import datetime, timedelta, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, cast",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from .destinations import FocusTimeWindow",
+      "from apscheduler.schedulers.asyncio import AsyncIOScheduler",
+      "from .export_engine import FocusExportEngine",
+      "from .export_engine import FocusExportEngine",
+      "from litellm.proxy.proxy_server import proxy_logging_obj"
+    ],
+    "classes": [
+      "FocusLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_185_f2f86e35fe6e741f_AI_Chariot_Legacy_666_1.0.0_20260508_focus_logger.py.json"
+}

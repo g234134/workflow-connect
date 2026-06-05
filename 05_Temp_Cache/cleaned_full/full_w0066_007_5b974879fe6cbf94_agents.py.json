@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\agents.py",
+  "name": "agents.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8685,
+  "content_sha256": "5b974879fe6cbf946c14a63c2b49fab7410c2419a8a8b549e712a4df3ce3502b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 256,
+    "non_empty_lines": 190,
+    "char_count": 8682,
+    "preview_lines": [
+      "\"\"\"Schema definitions for representing agent actions, observations, and return values.",
+      "!!! warning",
+      "    The schema definitions are provided for backwards compatibility.",
+      "!!! warning",
+      "    New agents should be built using the",
+      "    [`langchain` library](https://pypi.org/project/langchain/), which provides a",
+      "    simpler and more flexible way to define agents.",
+      "    See docs on [building agents](https://docs.langchain.com/oss/python/langchain/agents).",
+      "Agents use language models to choose a sequence of actions to take.",
+      "A basic agent works in the following manner:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Sequence",
+      "from typing import Any, Literal",
+      "from langchain_core.load.serializable import Serializable",
+      "from langchain_core.messages import ("
+    ],
+    "classes": [
+      "AgentAction",
+      "AgentActionMessageLog",
+      "AgentStep",
+      "AgentFinish"
+    ],
+    "functions": [
+      "_convert_agent_action_to_messages",
+      "_convert_agent_observation_to_messages",
+      "_create_function_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_007_5b974879fe6cbf94_agents.py.json"
+}

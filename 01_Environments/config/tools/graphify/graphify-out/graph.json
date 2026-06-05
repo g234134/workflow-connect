@@ -1,0 +1,95 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "tools / graphify",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "graphify_readme_tools_graphify",
+      "community": 0,
+      "norm_label": "tools / graphify"
+    },
+    {
+      "label": "\u7528\u9014\uff08\u540f\u90e8 \u00b7 \u7e3d\u90e8\u5de5\u5177\uff09",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "id": "graphify_readme_\u7528\u9014_\u540f\u90e8_\u7e3d\u90e8\u5de5\u5177",
+      "community": 0,
+      "norm_label": "\u7528\u9014(\u540f\u90e8 \u00b7 \u7e3d\u90e8\u5de5\u5177)"
+    },
+    {
+      "label": "\u7981\u5247",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "graphify_readme_\u7981\u5247",
+      "community": 0,
+      "norm_label": "\u7981\u5247"
+    },
+    {
+      "label": "\u672a\u4f86\u53ef\u80fd\u653e\u7f6e\u7684\u5167\u5bb9",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "id": "graphify_readme_\u672a\u4f86\u53ef\u80fd\u653e\u7f6e\u7684\u5167\u5bb9",
+      "community": 0,
+      "norm_label": "\u672a\u4f86\u53ef\u80fd\u653e\u7f6e\u7684\u5167\u5bb9"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "graphify_readme_tools_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_readme_tools_graphify",
+      "target": "graphify_readme_\u7528\u9014_\u540f\u90e8_\u7e3d\u90e8\u5de5\u5177",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "graphify_readme_tools_graphify",
+      "target": "graphify_readme_\u7981\u5247",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "graphify_readme_tools_graphify",
+      "target": "graphify_readme_\u672a\u4f86\u53ef\u80fd\u653e\u7f6e\u7684\u5167\u5bb9",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

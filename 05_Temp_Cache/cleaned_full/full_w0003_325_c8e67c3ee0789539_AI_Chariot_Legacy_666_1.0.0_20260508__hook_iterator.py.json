@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 325,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__hook_iterator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__hook_iterator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12233,
+  "content_sha256": "c8e67c3ee0789539f26ce8ade7a28c5988b027b98568d65e3f7ea4c158117d7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 279,
+    "non_empty_lines": 236,
+    "char_count": 12233,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import inspect",
+      "from enum import Enum",
+      "import torch",
+      "class _SnapshotState(Enum):",
+      "    r\"\"\"",
+      "    These are the snapshotting-related states that IterDataPipes can be in.",
+      "    `NotStarted` - allows you to restore a snapshot and create an iterator with reset",
+      "    `Restored` - cannot restore again, allows you to create an iterator without resetting the DataPipe"
+    ],
+    "imports": [
+      "import functools",
+      "import inspect",
+      "from enum import Enum",
+      "import torch"
+    ],
+    "classes": [
+      "_SnapshotState"
+    ],
+    "functions": [
+      "_simplify_obj_name",
+      "_strip_datapipe_from_name",
+      "_generate_input_args_string",
+      "_generate_iterdatapipe_msg",
+      "_gen_invalid_iterdatapipe_msg",
+      "_check_iterator_valid",
+      "_set_datapipe_valid_iterator_id",
+      "hook_iterator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_325_c8e67c3ee0789539_AI_Chariot_Legacy_666_1.0.0_20260508__hook_iterator.py.json"
+}

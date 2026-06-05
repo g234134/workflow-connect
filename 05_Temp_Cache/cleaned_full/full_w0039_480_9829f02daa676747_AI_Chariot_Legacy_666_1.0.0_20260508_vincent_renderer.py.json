@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 480,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vincent_renderer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vincent_renderer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1864,
+  "content_sha256": "9829f02daa6767478d9261199d43346ada4fd2d5647afa0bff59e8b84db55df0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 42,
+    "char_count": 1864,
+    "preview_lines": [
+      "import warnings",
+      "from .base import Renderer",
+      "from ..exporter import Exporter",
+      "class VincentRenderer(Renderer):",
+      "    def open_figure(self, fig, props):",
+      "        self.chart = None",
+      "        self.figwidth = int(props[\"figwidth\"] * props[\"dpi\"])",
+      "        self.figheight = int(props[\"figheight\"] * props[\"dpi\"])",
+      "    def draw_line(self, data, coordinates, style, label, mplobj=None):",
+      "        import vincent  # only import if VincentRenderer is used"
+    ],
+    "imports": [
+      "import warnings",
+      "from .base import Renderer",
+      "from ..exporter import Exporter",
+      "import vincent  # only import if VincentRenderer is used",
+      "import vincent  # only import if VincentRenderer is used"
+    ],
+    "classes": [
+      "VincentRenderer"
+    ],
+    "functions": [
+      "fig_to_vincent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_480_9829f02daa676747_AI_Chariot_Legacy_666_1.0.0_20260508_vincent_renderer.py.json"
+}

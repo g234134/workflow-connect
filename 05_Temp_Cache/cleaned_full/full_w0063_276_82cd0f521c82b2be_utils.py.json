@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 276,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2494,
+  "content_sha256": "82cd0f521c82b2be793516ff7dd92888ef28a7e99b1ba631a1963a148e2cfd96",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 61,
+    "char_count": 2494,
+    "preview_lines": [
+      "import collections",
+      "from itertools import repeat",
+      "from typing import List, Dict, Any",
+      "__all__ = ['consume_prefix_in_state_dict_if_present']",
+      "def _ntuple(n, name=\"parse\"):",
+      "    def parse(x):",
+      "        if isinstance(x, collections.abc.Iterable):",
+      "            return tuple(x)",
+      "        return tuple(repeat(x, n))",
+      "    parse.__name__ = name"
+    ],
+    "imports": [
+      "import collections",
+      "from itertools import repeat",
+      "from typing import List, Dict, Any",
+      "import torch"
+    ],
+    "classes": [],
+    "functions": [
+      "_ntuple",
+      "_reverse_repeat_tuple",
+      "_list_with_default",
+      "consume_prefix_in_state_dict_if_present"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_276_82cd0f521c82b2be_utils.py.json"
+}

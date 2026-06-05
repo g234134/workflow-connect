@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\messages\\block_translators\\groq.py",
+  "name": "groq.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5782,
+  "content_sha256": "f25466994a8b30a4aa6c71a3c660e617566152cc60624c6abe1dcdbb3a4b4355",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 126,
+    "char_count": 5779,
+    "preview_lines": [
+      "\"\"\"Derivations of standard content blocks from Groq content.\"\"\"",
+      "import json",
+      "import re",
+      "from typing import Any",
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_core.messages import content as types",
+      "from langchain_core.messages.base import _extract_reasoning_from_additional_kwargs",
+      "def _populate_extras(",
+      "    standard_block: types.ContentBlock, block: dict[str, Any], known_fields: set[str]",
+      ") -> types.ContentBlock:"
+    ],
+    "imports": [
+      "import json",
+      "import re",
+      "from typing import Any",
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_core.messages import content as types",
+      "from langchain_core.messages.base import _extract_reasoning_from_additional_kwargs",
+      "from langchain_core.messages.block_translators import (  # noqa: PLC0415"
+    ],
+    "classes": [],
+    "functions": [
+      "_populate_extras",
+      "_parse_code_json",
+      "_convert_to_v1_from_groq",
+      "translate_content",
+      "translate_content_chunk",
+      "_register_groq_translator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_066_f25466994a8b30a4_groq.py.json"
+}

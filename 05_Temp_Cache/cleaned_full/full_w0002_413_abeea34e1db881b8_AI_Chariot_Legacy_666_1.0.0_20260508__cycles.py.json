@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 413,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__cycles.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__cycles.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15206,
+  "content_sha256": "abeea34e1db881b89209dbcdcb2912b913ec32abde551e605eb2653e798707d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 448,
+    "non_empty_lines": 385,
+    "char_count": 15206,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import gc",
+      "import sys",
+      "from typing import Any, Dict, List, NamedTuple, Optional, Tuple",
+      "import types",
+      "import weakref",
+      "import json",
+      "from tempfile import NamedTemporaryFile",
+      "import torch",
+      "from torch.cuda._memory_viz import _frames_fmt, _block_extra"
+    ],
+    "imports": [
+      "import gc",
+      "import sys",
+      "from typing import Any, Dict, List, NamedTuple, Optional, Tuple",
+      "import types",
+      "import weakref",
+      "import json",
+      "from tempfile import NamedTemporaryFile",
+      "import torch",
+      "from torch.cuda._memory_viz import _frames_fmt, _block_extra",
+      "import atexit",
+      "import logging"
+    ],
+    "classes": [
+      "Node"
+    ],
+    "functions": [
+      "observe_garbage",
+      "_get_cell_type",
+      "annotated_references",
+      "object_annotation",
+      "create_graph",
+      "escape",
+      "is_cuda_tensor",
+      "cuda_allocation_context",
+      "to_dot",
+      "to_html",
+      "observe_tensor_cycles",
+      "warn_tensor_cycles"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_413_abeea34e1db881b8_AI_Chariot_Legacy_666_1.0.0_20260508__cycles.py.json"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_smart_open_lib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_smart_open_lib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16274,
+  "content_sha256": "08daf7634b34c4c10ae0df9de3433472e1e34e8651019a9f5df939eef813b6e5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 526,
+    "non_empty_lines": 434,
+    "char_count": 16274,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2019 Radim Rehurek <me@radimrehurek.com>",
+      "#",
+      "# This code is distributed under the terms and conditions",
+      "# from the MIT License (MIT).",
+      "#",
+      "\"\"\"Implements the majority of smart_open's top-level API.\"\"\"",
+      "import collections",
+      "import locale"
+    ],
+    "imports": [
+      "import collections",
+      "import locale",
+      "import logging",
+      "import os",
+      "import os.path as P",
+      "import pathlib",
+      "import urllib.parse",
+      "import warnings",
+      "import smart_open.local_file as so_file",
+      "import smart_open.compression as so_compression",
+      "import smart_open.utils as so_utils",
+      "from smart_open import doctools",
+      "from smart_open import transport",
+      "from smart_open.compression import register_compressor  # noqa: F401",
+      "from smart_open.utils import check_kwargs as _check_kwargs  # noqa: F401",
+      "from smart_open.utils import inspect_kwargs as _inspect_kwargs  # noqa: F401"
+    ],
+    "classes": [
+      "patch_pathlib"
+    ],
+    "functions": [
+      "_sniff_scheme",
+      "parse_uri",
+      "open",
+      "_get_binary_mode",
+      "_shortcut_open",
+      "_open_binary_stream",
+      "_encoding_wrapper",
+      "_patch_pathlib",
+      "smart_open"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_016_08daf7634b34c4c1_AI_Chariot_Legacy_666_1.0.0_20260508_smart_open_lib.py.json"
+}

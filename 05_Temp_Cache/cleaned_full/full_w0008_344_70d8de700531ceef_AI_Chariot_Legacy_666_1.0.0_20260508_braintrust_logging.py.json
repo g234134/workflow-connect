@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 344,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_braintrust_logging.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_braintrust_logging.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16971,
+  "content_sha256": "70d8de700531ceefdb7a0c0ec249dd1377bdc7eb9aa452d8f9bbe410543b1302",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 420,
+    "non_empty_lines": 356,
+    "char_count": 16971,
+    "preview_lines": [
+      "# What is this?",
+      "## Log success + failure events to Braintrust",
+      "import os",
+      "from datetime import datetime",
+      "from typing import Dict, Optional",
+      "import httpx",
+      "import litellm",
+      "from litellm import verbose_logger",
+      "from litellm.integrations.braintrust_mock_client import (",
+      "    should_use_braintrust_mock,"
+    ],
+    "imports": [
+      "import os",
+      "from datetime import datetime",
+      "from typing import Dict, Optional",
+      "import httpx",
+      "import litellm",
+      "from litellm import verbose_logger",
+      "from litellm.integrations.braintrust_mock_client import (",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.utils import print_verbose",
+      "import datetime as dt"
+    ],
+    "classes": [
+      "BraintrustLogger"
+    ],
+    "functions": [
+      "get_utc_datetime"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_344_70d8de700531ceef_AI_Chariot_Legacy_666_1.0.0_20260508_braintrust_logging.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 475,
+  "generated_at": "2026-05-08T18:46:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_head_tail.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_head_tail.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1935,
+  "content_sha256": "aaeb859294b9220a2724349bf7f3e8e1e3b75a2e7095c34aabbdb710c60be8db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 43,
+    "char_count": 1935,
+    "preview_lines": [
+      "import numpy as np",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "def test_head_tail_generic(index, frame_or_series):",
+      "    # GH#5370",
+      "    ndim = 2 if frame_or_series is DataFrame else 1",
+      "    shape = (len(index),) * ndim",
+      "    vals = np.random.default_rng(2).standard_normal(shape)",
+      "    obj = frame_or_series(vals, index=index)",
+      "    tm.assert_equal(obj.head(), obj.iloc[:5])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "test_head_tail_generic",
+      "test_head_tail",
+      "test_head_tail_empty"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_475_aaeb859294b9220a_AI_Chariot_Legacy_666_1.0.0_20260508_test_head_tail.py.json"
+}

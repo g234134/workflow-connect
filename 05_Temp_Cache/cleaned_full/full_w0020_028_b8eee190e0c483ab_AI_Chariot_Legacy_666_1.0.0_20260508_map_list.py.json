@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_map_list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_map_list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1063,
+  "content_sha256": "b8eee190e0c483abe9093439ac8401917eaf96dd2d1aef88ea6149ba035d891b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 26,
+    "char_count": 1063,
+    "preview_lines": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar",
+      "from ..model import Model",
+      "InT = TypeVar(\"InT\")",
+      "OutT = TypeVar(\"OutT\")",
+      "def map_list(layer: Model[InT, OutT]) -> Model[List[InT], List[OutT]]:",
+      "    \"\"\"Create a model that maps a child layer across list inputs.\"\"\"",
+      "    return Model(\"map_list\", forward, layers=[layer], init=init)",
+      "def forward(",
+      "    model: Model[List[InT], List[OutT]], Xs: List[InT], is_train: bool",
+      ") -> Tuple[List[OutT], Callable[[List[OutT]], List[InT]]]:"
+    ],
+    "imports": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar",
+      "from ..model import Model"
+    ],
+    "classes": [],
+    "functions": [
+      "map_list",
+      "forward",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_028_b8eee190e0c483ab_AI_Chariot_Legacy_666_1.0.0_20260508_map_list.py.json"
+}

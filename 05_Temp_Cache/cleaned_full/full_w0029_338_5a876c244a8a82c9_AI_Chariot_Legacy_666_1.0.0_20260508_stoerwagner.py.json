@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_stoerwagner.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_stoerwagner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5431,
+  "content_sha256": "5a876c244a8a82c9934dcc94064daedf057f0977a89fe700cef7968081a01660",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 128,
+    "char_count": 5431,
+    "preview_lines": [
+      "\"\"\"",
+      "Stoer-Wagner minimum cut algorithm.",
+      "\"\"\"",
+      "from itertools import islice",
+      "import networkx as nx",
+      "from ...utils import BinaryHeap, arbitrary_element, not_implemented_for",
+      "__all__ = [\"stoer_wagner\"]",
+      "@not_implemented_for(\"directed\")",
+      "@not_implemented_for(\"multigraph\")",
+      "@nx._dispatchable(edge_attrs=\"weight\")"
+    ],
+    "imports": [
+      "from itertools import islice",
+      "import networkx as nx",
+      "from ...utils import BinaryHeap, arbitrary_element, not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "stoer_wagner"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_338_5a876c244a8a82c9_AI_Chariot_Legacy_666_1.0.0_20260508_stoerwagner.py.json"
+}

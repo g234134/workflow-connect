@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 347,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_remote_storage.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_remote_storage.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8118,
+  "content_sha256": "170f4b0115377a86fc1de095c669f8e3a0e84a77dcbda24ed6a671f082a3a6d1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 178,
+    "char_count": 8118,
+    "preview_lines": [
+      "import hashlib",
+      "import os",
+      "import site",
+      "import sys",
+      "import tarfile",
+      "import urllib.parse",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Dict, List, Optional",
+      "from wasabi import msg",
+      "from ..errors import Errors"
+    ],
+    "imports": [
+      "import hashlib",
+      "import os",
+      "import site",
+      "import sys",
+      "import tarfile",
+      "import urllib.parse",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Dict, List, Optional",
+      "from wasabi import msg",
+      "from ..errors import Errors",
+      "from ..util import check_spacy_env_vars, download_file, ensure_pathy, get_checksum",
+      "from ..util import get_hash, make_tempdir, upload_file",
+      "from cloudpathlib import CloudPath"
+    ],
+    "classes": [
+      "RemoteStorage"
+    ],
+    "functions": [
+      "get_content_hash",
+      "get_command_hash",
+      "get_site_hash",
+      "get_env_hash"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_347_170f4b0115377a86_AI_Chariot_Legacy_666_1.0.0_20260508_remote_storage.py.json"
+}

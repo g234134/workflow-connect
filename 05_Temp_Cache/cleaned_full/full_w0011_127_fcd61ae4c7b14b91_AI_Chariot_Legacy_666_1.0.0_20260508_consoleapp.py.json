@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_consoleapp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_consoleapp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14095,
+  "content_sha256": "fcd61ae4c7b14b91d92418f9c90f294cce82e5ef500fb52e5dd09f1546fb4d68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 378,
+    "non_empty_lines": 321,
+    "char_count": 14095,
+    "preview_lines": [
+      "\"\"\"A minimal application base mixin for all ZMQ based IPython frontends.",
+      "This is not a complete console app, as subprocess will not be able to receive",
+      "input, there is no real readline support, among other limitations. This is a",
+      "refactoring of what used to be the IPython/qt/console/qtconsoleapp.py",
+      "\"\"\"",
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "import atexit",
+      "import os",
+      "import signal"
+    ],
+    "imports": [
+      "import atexit",
+      "import os",
+      "import signal",
+      "import sys",
+      "import typing as t",
+      "import uuid",
+      "import warnings",
+      "from jupyter_core.application import base_aliases, base_flags",
+      "from traitlets import CBool, CUnicode, Dict, List, Type, Unicode",
+      "from traitlets.config.application import boolean_flag",
+      "from . import KernelManager, connect, find_connection_file, tunnel_to_kernel",
+      "from .blocking import BlockingKernelClient",
+      "from .connect import KernelConnectionInfo",
+      "from .kernelspec import NoSuchKernel",
+      "from .localinterfaces import localhost",
+      "from .restarter import KernelRestarter",
+      "from .session import Session",
+      "from .utils import _filefind"
+    ],
+    "classes": [
+      "JupyterConsoleApp",
+      "IPythonConsoleApp"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_127_fcd61ae4c7b14b91_AI_Chariot_Legacy_666_1.0.0_20260508_consoleapp.py.json"
+}

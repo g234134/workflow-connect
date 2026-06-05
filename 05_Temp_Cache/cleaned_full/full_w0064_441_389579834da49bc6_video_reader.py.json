@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\io\\video_reader.py",
+  "name": "video_reader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11636,
+  "content_sha256": "389579834da49bc6047ec5c4db93a175102d93b12ca818492cf76122441f25ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 236,
+    "char_count": 11636,
+    "preview_lines": [
+      "import io",
+      "import warnings",
+      "from typing import Any, Dict, Iterator",
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._video_opt import _HAS_VIDEO_OPT",
+      "if _HAS_VIDEO_OPT:",
+      "    def _has_video_opt() -> bool:",
+      "        return True",
+      "else:"
+    ],
+    "imports": [
+      "import io",
+      "import warnings",
+      "from typing import Any, Dict, Iterator",
+      "import torch",
+      "from ..utils import _log_api_usage_once",
+      "from ._video_opt import _HAS_VIDEO_OPT",
+      "import av",
+      "import torchvision",
+      "from .. import get_video_backend"
+    ],
+    "classes": [
+      "VideoReader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_441_389579834da49bc6_video_reader.py.json"
+}

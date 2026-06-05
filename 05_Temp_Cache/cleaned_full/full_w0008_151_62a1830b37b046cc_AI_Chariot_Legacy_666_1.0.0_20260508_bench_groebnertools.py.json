@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 151,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bench_groebnertools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bench_groebnertools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 803,
+  "content_sha256": "62a1830b37b046ccc2c9efc69e77835cc44d077f0e452a55bbf267d042c8c92a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 803,
+    "preview_lines": [
+      "\"\"\"Benchmark of the Groebner bases algorithms. \"\"\"",
+      "from sympy.polys.rings import ring",
+      "from sympy.polys.domains import QQ",
+      "from sympy.polys.groebnertools import groebner",
+      "R, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12 = ring(\"x1:13\", QQ)",
+      "V = R.gens",
+      "E = [(x1, x2), (x2, x3), (x1, x4), (x1, x6), (x1, x12), (x2, x5), (x2, x7), (x3, x8),",
+      "     (x3, x10), (x4, x11), (x4, x9), (x5, x6), (x6, x7), (x7, x8), (x8, x9), (x9, x10),",
+      "     (x10, x11), (x11, x12), (x5, x12), (x5, x9), (x6, x10), (x7, x11), (x8, x12)]",
+      "F3 = [ x**3 - 1 for x in V ]"
+    ],
+    "imports": [
+      "from sympy.polys.rings import ring",
+      "from sympy.polys.domains import QQ",
+      "from sympy.polys.groebnertools import groebner"
+    ],
+    "classes": [],
+    "functions": [
+      "time_vertex_color_12_vertices_23_edges",
+      "time_vertex_color_12_vertices_24_edges"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_151_62a1830b37b046cc_AI_Chariot_Legacy_666_1.0.0_20260508_bench_groebnertools.py.json"
+}

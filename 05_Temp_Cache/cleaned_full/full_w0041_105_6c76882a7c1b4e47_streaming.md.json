@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\fastapi\\.agents\\skills\\fastapi\\references\\streaming.md",
+  "name": "streaming.md",
+  "extension": ".md",
+  "original_type": "markdown",
+  "size_bytes": 2581,
+  "content_sha256": "6c76882a7c1b4e477b4d45509bfbb16a9527025106e2b76f00b57d9280f9ca92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 69,
+    "char_count": 2581,
+    "preview_lines": [
+      "# Streaming",
+      "## Stream JSON Lines",
+      "To stream JSON Lines, declare the return type and use `yield` to return the data.",
+      "```python",
+      "@app.get(\"/items/stream\")",
+      "async def stream_items() -> AsyncIterable[Item]:",
+      "    for item in items:",
+      "        yield item",
+      "```",
+      "## Server-Sent Events (SSE)"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_105_6c76882a7c1b4e47_streaming.md.json"
+}

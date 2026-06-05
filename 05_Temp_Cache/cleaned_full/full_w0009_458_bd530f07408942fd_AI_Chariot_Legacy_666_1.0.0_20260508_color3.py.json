@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_color3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_color3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11150,
+  "content_sha256": "bd530f07408942fd9a5117e09ec40f6ca74d9ce268a1a49b9abc6c723e585e97",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 337,
+    "non_empty_lines": 293,
+    "char_count": 11150,
+    "preview_lines": [
+      "import collections",
+      "import re",
+      "from colorsys import hls_to_rgb",
+      "from .parser import parse_one_component_value",
+      "class RGBA(collections.namedtuple('RGBA', ['red', 'green', 'blue', 'alpha'])):",
+      "    \"\"\"An RGBA color.",
+      "    A tuple of four floats in the 0..1 range: ``(red, green, blue, alpha)``.",
+      "    .. attribute:: red",
+      "        Convenience access to the red channel. Same as ``rgba[0]``.",
+      "    .. attribute:: green"
+    ],
+    "imports": [
+      "import collections",
+      "import re",
+      "from colorsys import hls_to_rgb",
+      "from .parser import parse_one_component_value"
+    ],
+    "classes": [
+      "RGBA"
+    ],
+    "functions": [
+      "parse_color",
+      "_parse_alpha",
+      "_parse_rgb",
+      "_parse_hsl",
+      "_parse_comma_separated"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_458_bd530f07408942fd_AI_Chariot_Legacy_666_1.0.0_20260508_color3.py.json"
+}

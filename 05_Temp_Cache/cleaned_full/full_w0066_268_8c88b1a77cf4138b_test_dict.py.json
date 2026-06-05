@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\prompts\\test_dict.py",
+  "name": "test_dict.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4040,
+  "content_sha256": "8c88b1a77cf4138bdbc92b67684f20b0ebb8a4486a417757230793ef9ac7a795",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 118,
+    "non_empty_lines": 96,
+    "char_count": 4037,
+    "preview_lines": [
+      "import json",
+      "import pytest",
+      "from langchain_core.load import load, loads",
+      "from langchain_core.prompts import PromptTemplate",
+      "from langchain_core.prompts.dict import DictPromptTemplate",
+      "def test__dict_message_prompt_template_fstring() -> None:",
+      "    template = {",
+      "        \"type\": \"text\",",
+      "        \"text\": \"{text1}\",",
+      "        \"cache_control\": {\"type\": \"{cache_type}\"},"
+    ],
+    "imports": [
+      "import json",
+      "import pytest",
+      "from langchain_core.load import load, loads",
+      "from langchain_core.prompts import PromptTemplate",
+      "from langchain_core.prompts.dict import DictPromptTemplate"
+    ],
+    "classes": [],
+    "functions": [
+      "test__dict_message_prompt_template_fstring",
+      "test_deserialize_legacy",
+      "test_dict_prompt_template_rejects_attribute_access_to_rich_objects",
+      "test_dict_prompt_template_loads_payload_rejects_attribute_access",
+      "test_dict_prompt_template_dumpd_round_trip_rejects_attribute_access",
+      "test_dict_prompt_template_deserialization_rejects_attribute_access",
+      "test_dict_prompt_template_legacy_deserialization_rejects_attribute_access",
+      "test_prompt_template_blocks_attribute_access"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_268_8c88b1a77cf4138b_test_dict.py.json"
+}

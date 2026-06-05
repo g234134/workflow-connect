@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 495,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_appellseqs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_appellseqs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8305,
+  "content_sha256": "8567832ac2a726e02e3cdff9214ea6d6892eac0abdc4cb772d080c7a172f04a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 269,
+    "non_empty_lines": 208,
+    "char_count": 8305,
+    "preview_lines": [
+      "r\"\"\"",
+      "Efficient functions for generating Appell sequences.",
+      "An Appell sequence is a zero-indexed sequence of polynomials `p_i(x)`",
+      "satisfying `p_{i+1}'(x)=(i+1)p_i(x)` for all `i`. This definition leads",
+      "to the following iterative algorithm:",
+      ".. math :: p_0(x) = c_0,\\ p_i(x) = i \\int_0^x p_{i-1}(t)\\,dt + c_i",
+      "The constant coefficients `c_i` are usually determined from the",
+      "just-evaluated integral and `i`.",
+      "Appell sequences satisfy the following identity from umbral calculus:",
+      ".. math :: p_n(x+y) = \\sum_{k=0}^n \\binom{n}{k} p_k(x) y^{n-k}"
+    ],
+    "imports": [
+      "from sympy.polys.densearith import dup_mul_ground, dup_sub_ground, dup_quo_ground",
+      "from sympy.polys.densetools import dup_eval, dup_integrate",
+      "from sympy.polys.domains import ZZ, QQ",
+      "from sympy.polys.polytools import named_poly",
+      "from sympy.utilities import public"
+    ],
+    "classes": [],
+    "functions": [
+      "dup_bernoulli",
+      "bernoulli_poly",
+      "dup_bernoulli_c",
+      "bernoulli_c_poly",
+      "dup_genocchi",
+      "genocchi_poly",
+      "dup_euler",
+      "euler_poly",
+      "dup_andre",
+      "andre_poly"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_495_8567832ac2a726e0_AI_Chariot_Legacy_666_1.0.0_20260508_appellseqs.py.json"
+}

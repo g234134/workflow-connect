@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_speechcommands.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_speechcommands.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7664,
+  "content_sha256": "ff09ab2928847b408e3bbba4d09557ca9066371bb4bab9dc787b8543accc3a4d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 153,
+    "char_count": 7664,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Optional, Tuple, Union",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_tar, _load_waveform",
+      "FOLDER_IN_ARCHIVE = \"SpeechCommands\"",
+      "URL = \"speech_commands_v0.02\"",
+      "HASH_DIVIDER = \"_nohash_\""
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Optional, Tuple, Union",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_tar, _load_waveform"
+    ],
+    "classes": [
+      "SPEECHCOMMANDS"
+    ],
+    "functions": [
+      "_load_list",
+      "_get_speechcommands_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_150_ff09ab2928847b40_AI_Chariot_Legacy_666_1.0.0_20260508_speechcommands.py.json"
+}

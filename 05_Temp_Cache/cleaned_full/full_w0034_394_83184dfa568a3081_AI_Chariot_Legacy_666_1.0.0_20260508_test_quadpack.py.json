@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_quadpack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_quadpack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28746,
+  "content_sha256": "83184dfa568a3081aeb3361d38f05862004884ea72922907b134c7741c36ed2c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 680,
+    "non_empty_lines": 578,
+    "char_count": 28746,
+    "preview_lines": [
+      "import sys",
+      "import math",
+      "import numpy as np",
+      "from numpy import sqrt, cos, sin, arctan, exp, log, pi",
+      "from numpy.testing import (assert_,",
+      "        assert_allclose, assert_array_less, assert_almost_equal)",
+      "import pytest",
+      "from scipy.integrate import quad, dblquad, tplquad, nquad",
+      "from scipy.special import erf, erfc",
+      "from scipy._lib._ccallback import LowLevelCallable"
+    ],
+    "imports": [
+      "import sys",
+      "import math",
+      "import numpy as np",
+      "from numpy import sqrt, cos, sin, arctan, exp, log, pi",
+      "from numpy.testing import (assert_,",
+      "import pytest",
+      "from scipy.integrate import quad, dblquad, tplquad, nquad",
+      "from scipy.special import erf, erfc",
+      "from scipy._lib._ccallback import LowLevelCallable",
+      "import ctypes",
+      "import ctypes.util",
+      "from scipy._lib._ccallback_c import sine_ctypes",
+      "import scipy.integrate._test_multivariate as clib_test"
+    ],
+    "classes": [
+      "TestCtypesQuad",
+      "TestMultivariateCtypesQuad",
+      "TestQuad",
+      "TestNQuad"
+    ],
+    "functions": [
+      "assert_quad",
+      "get_clib_test_routine"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_394_83184dfa568a3081_AI_Chariot_Legacy_666_1.0.0_20260508_test_quadpack.py.json"
+}

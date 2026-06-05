@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\types.py",
+  "name": "types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2555,
+  "content_sha256": "c8a58445bf356636d0e2f0d08b9f0007ad216c6674bdb04eead32fb103f5c746",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 59,
+    "char_count": 2555,
+    "preview_lines": [
+      "import torch",
+      "from typing import Any, List, Optional, Sequence, Tuple, Union",
+      "import builtins",
+      "# Convenience aliases for common composite types that we need",
+      "# to talk about in PyTorch",
+      "_TensorOrTensors = Union[torch.Tensor, Sequence[torch.Tensor]]",
+      "_TensorOrTensorsOrGradEdge = Union[",
+      "    torch.Tensor, Sequence[torch.Tensor],",
+      "    \"torch.autograd.graph.GradientEdge\",",
+      "    Sequence[\"torch.autograd.graph.GradientEdge\"]]"
+    ],
+    "imports": [
+      "import torch",
+      "from typing import Any, List, Optional, Sequence, Tuple, Union",
+      "import builtins"
+    ],
+    "classes": [
+      "Storage"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_119_c8a58445bf356636_types.py.json"
+}

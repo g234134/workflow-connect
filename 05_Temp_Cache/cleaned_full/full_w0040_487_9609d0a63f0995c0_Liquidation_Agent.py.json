@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\Liquidation_Agent.py",
+  "name": "Liquidation_Agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13741,
+  "content_sha256": "9609d0a63f0995c035fdf4516532095ac16c7a11654a225623ea915f4e3635f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 372,
+    "non_empty_lines": 331,
+    "char_count": 13137,
+    "preview_lines": [
+      "# Liquidation_Agent.py — 兵部·數據清算執行器",
+      "# 對刑部 quarantine 之 .json 檔案進行讀取、解析、分類；",
+      "# 嚴格守則：dry_run=True（預設）僅讀取與寫報告，禁止任何物理位移。",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import re",
+      "import shutil",
+      "import sys",
+      "from datetime import datetime, timezone"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import re",
+      "import shutil",
+      "import sys",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional",
+      "from Base_Agent import AgentStatus, Base_Agent  # type: ignore",
+      "from gov_paths import (  # type: ignore"
+    ],
+    "classes": [
+      "Liquidation_Agent"
+    ],
+    "functions": [
+      "dry_run",
+      "execute"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_487_9609d0a63f0995c0_Liquidation_Agent.py.json"
+}

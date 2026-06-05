@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_clip_by_rect.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_clip_by_rect.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4156,
+  "content_sha256": "43d6e01e51711a7646fb2aadb69bf4aa75966c287c90d58bee24aa3c9653007d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 119,
+    "non_empty_lines": 90,
+    "char_count": 4156,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for GEOSClipByRect based on unit tests from libgeos.",
+      "There are some expected differences due to Shapely's handling of empty",
+      "geometries.",
+      "\"\"\"",
+      "import pytest",
+      "from shapely.ops import clip_by_rect",
+      "from shapely.wkt import dumps as dump_wkt, loads as load_wkt",
+      "def test_point_outside():",
+      "    \"\"\"Point outside\"\"\""
+    ],
+    "imports": [
+      "import pytest",
+      "from shapely.ops import clip_by_rect",
+      "from shapely.wkt import dumps as dump_wkt, loads as load_wkt"
+    ],
+    "classes": [],
+    "functions": [
+      "test_point_outside",
+      "test_point_inside",
+      "test_point_on_boundary",
+      "test_line_outside",
+      "test_line_inside",
+      "test_line_on_boundary",
+      "test_line_splitting_rectangle",
+      "test_polygon_shell_ccw_fully_on_rectangle_boundary",
+      "test_polygon_shell_cc_fully_on_rectangle_boundary",
+      "polygon_hole_ccw_fully_on_rectangle_boundary",
+      "polygon_hole_cw_fully_on_rectangle_boundary",
+      "polygon_fully_within_rectangle",
+      "polygon_overlapping_rectangle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_195_43d6e01e51711a76_AI_Chariot_Legacy_666_1.0.0_20260508_test_clip_by_rect.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_bloom.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_bloom.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1312,
+  "content_sha256": "6bc8f13f32f049723c937281350ff14a1ba1809584dcaa6bbf84fb3514e2efb8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 47,
+    "char_count": 1312,
+    "preview_lines": [
+      "from __future__ import division",
+      "import pytest",
+      "import pickle",
+      "from preshed.bloom import BloomFilter",
+      "def test_contains():",
+      "    bf = BloomFilter()",
+      "    assert 23 not in bf",
+      "    bf.add(23)",
+      "    assert 23 in bf",
+      "    bf.add(5)"
+    ],
+    "imports": [
+      "from __future__ import division",
+      "import pytest",
+      "import pickle",
+      "from preshed.bloom import BloomFilter"
+    ],
+    "classes": [],
+    "functions": [
+      "test_contains",
+      "test_no_false_negatives",
+      "test_from_error",
+      "test_to_from_bytes",
+      "test_bloom_pickle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_064_6bc8f13f32f04972_AI_Chariot_Legacy_666_1.0.0_20260508_test_bloom.py.json"
+}

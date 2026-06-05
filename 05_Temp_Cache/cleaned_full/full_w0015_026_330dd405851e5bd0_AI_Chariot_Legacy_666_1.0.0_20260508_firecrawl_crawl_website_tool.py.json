@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_firecrawl_crawl_website_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_firecrawl_crawl_website_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4457,
+  "content_sha256": "330dd405851e5bd09d6d379b2c4175c35bf02b94c372876417bffdaa7dec7d64",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 98,
+    "char_count": 4457,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field, PrivateAttr",
+      "from crewai_tools.security.safe_path import validate_url",
+      "try:",
+      "    from firecrawl import FirecrawlApp  # type: ignore[import-untyped]",
+      "    FIRECRAWL_AVAILABLE = True",
+      "except ImportError:",
+      "    FIRECRAWL_AVAILABLE = False"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field, PrivateAttr",
+      "from crewai_tools.security.safe_path import validate_url",
+      "from firecrawl import FirecrawlApp  # type: ignore[import-untyped]",
+      "from firecrawl import FirecrawlApp",
+      "import click",
+      "import subprocess",
+      "from firecrawl import FirecrawlApp",
+      "from firecrawl import FirecrawlApp  # noqa: F401"
+    ],
+    "classes": [
+      "FirecrawlCrawlWebsiteToolSchema",
+      "FirecrawlCrawlWebsiteTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_026_330dd405851e5bd0_AI_Chariot_Legacy_666_1.0.0_20260508_firecrawl_crawl_website_tool.py.json"
+}

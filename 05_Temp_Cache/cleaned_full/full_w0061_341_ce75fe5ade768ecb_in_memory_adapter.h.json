@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 341,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\caffe2\\serialize\\in_memory_adapter.h",
+  "name": "in_memory_adapter.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 676,
+  "content_sha256": "ce75fe5ade768ecbb2b145884bec19586ae49bc5a429eb4f0a5d7fcb6f4c17cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 24,
+    "char_count": 676,
+    "preview_lines": [
+      "#pragma once",
+      "#include <cstring>",
+      "#include <caffe2/serialize/read_adapter_interface.h>",
+      "namespace caffe2 {",
+      "namespace serialize {",
+      "class MemoryReadAdapter final : public caffe2::serialize::ReadAdapterInterface {",
+      " public:",
+      "  explicit MemoryReadAdapter(const void* data, off_t size)",
+      "      : data_(data), size_(size) {}",
+      "  size_t size() const override {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_341_ce75fe5ade768ecb_in_memory_adapter.h.json"
+}

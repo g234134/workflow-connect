@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 162,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_intranges.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_intranges.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1898,
+  "content_sha256": "6a652d91d8587101bc66bf82a0c33f91545a731922bc2d568313756fadca29d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 45,
+    "char_count": 1898,
+    "preview_lines": [
+      "\"\"\"",
+      "Given a list of integers, made up of (hopefully) a small number of long runs",
+      "of consecutive integers, compute a representation of the form",
+      "((start1, end1), (start2, end2) ...). Then answer the question \"was x present",
+      "in the original list?\" in time O(log(# runs)).",
+      "\"\"\"",
+      "import bisect",
+      "from typing import List, Tuple",
+      "def intranges_from_list(list_: List[int]) -> Tuple[int, ...]:",
+      "    \"\"\"Represent a list of integers as a sequence of ranges:"
+    ],
+    "imports": [
+      "import bisect",
+      "from typing import List, Tuple"
+    ],
+    "classes": [],
+    "functions": [
+      "intranges_from_list",
+      "_encode_range",
+      "_decode_range",
+      "intranges_contain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_162_6a652d91d8587101_AI_Chariot_Legacy_666_1.0.0_20260508_intranges.py.json"
+}

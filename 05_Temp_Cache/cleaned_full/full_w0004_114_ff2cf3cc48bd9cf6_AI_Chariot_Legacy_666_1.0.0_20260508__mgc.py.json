@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__mgc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__mgc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21909,
+  "content_sha256": "ff2cf3cc48bd9cf68557aa59135fdea4d460e66633b2c0d1b85ec5fc337f7906",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 550,
+    "non_empty_lines": 440,
+    "char_count": 21909,
+    "preview_lines": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy._lib._util import check_random_state, MapWrapper, rng_integers, _contains_nan",
+      "from scipy._lib._bunch import _make_tuple_bunch",
+      "from scipy.spatial.distance import cdist",
+      "from scipy.ndimage import _measurements",
+      "from ._stats import _local_correlations  # type: ignore[import-not-found]",
+      "from . import distributions",
+      "__all__ = ['multiscale_graphcorr']",
+      "# FROM MGCPY: https://github.com/neurodata/mgcpy"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy._lib._util import check_random_state, MapWrapper, rng_integers, _contains_nan",
+      "from scipy._lib._bunch import _make_tuple_bunch",
+      "from scipy.spatial.distance import cdist",
+      "from scipy.ndimage import _measurements",
+      "from ._stats import _local_correlations  # type: ignore[import-not-found]",
+      "from . import distributions"
+    ],
+    "classes": [
+      "_ParallelP"
+    ],
+    "functions": [
+      "_perm_test",
+      "_euclidean_dist",
+      "multiscale_graphcorr",
+      "_mgc_stat",
+      "_threshold_mgc_map",
+      "_smooth_mgc_map",
+      "_two_sample_transform"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_114_ff2cf3cc48bd9cf6_AI_Chariot_Legacy_666_1.0.0_20260508__mgc.py.json"
+}

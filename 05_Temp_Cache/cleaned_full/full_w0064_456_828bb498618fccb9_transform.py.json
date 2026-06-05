@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 456,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\models\\detection\\transform.py",
+  "name": "transform.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12508,
+  "content_sha256": "828bb498618fccb9dc57664c1e44d3930e943b47d4a098a2e83af63743cd03f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 319,
+    "non_empty_lines": 273,
+    "char_count": 12508,
+    "preview_lines": [
+      "import math",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "import torch",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from .image_list import ImageList",
+      "from .roi_heads import paste_masks_in_image",
+      "@torch.jit.unused",
+      "def _get_shape_onnx(image: Tensor) -> Tensor:",
+      "    from torch.onnx import operators"
+    ],
+    "imports": [
+      "import math",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "import torch",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from .image_list import ImageList",
+      "from .roi_heads import paste_masks_in_image",
+      "from torch.onnx import operators"
+    ],
+    "classes": [
+      "GeneralizedRCNNTransform"
+    ],
+    "functions": [
+      "_get_shape_onnx",
+      "_fake_cast_onnx",
+      "_resize_image_and_masks",
+      "resize_keypoints",
+      "resize_boxes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_456_828bb498618fccb9_transform.py.json"
+}

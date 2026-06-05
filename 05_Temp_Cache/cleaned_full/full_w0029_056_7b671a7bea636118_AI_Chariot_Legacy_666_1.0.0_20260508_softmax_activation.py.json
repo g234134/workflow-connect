@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 56,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_softmax_activation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_softmax_activation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 564,
+  "content_sha256": "7b671a7bea636118f5f464c4fffd93625c74c165bb4e9ce800e29e5f7d000c17",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 14,
+    "char_count": 564,
+    "preview_lines": [
+      "from typing import Callable, Tuple",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d",
+      "InT = Floats2d",
+      "OutT = Floats2d",
+      "@registry.layers(\"softmax_activation.v1\")",
+      "def softmax_activation() -> Model[InT, OutT]:",
+      "    return Model(\"softmax_activation\", forward)",
+      "def forward(model: Model[InT, OutT], X: InT, is_train: bool) -> Tuple[OutT, Callable]:"
+    ],
+    "imports": [
+      "from typing import Callable, Tuple",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d"
+    ],
+    "classes": [],
+    "functions": [
+      "softmax_activation",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_056_7b671a7bea636118_AI_Chariot_Legacy_666_1.0.0_20260508_softmax_activation.py.json"
+}

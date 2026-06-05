@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 45,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sandbox_executor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sandbox_executor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10132,
+  "content_sha256": "34624e1775de8d61fbd7405fd1a80911ac79c74588de7afa1155c0eff131c196",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 241,
+    "char_count": 10132,
+    "preview_lines": [
+      "\"\"\"",
+      "Sandbox Executor for LiteLLM Skills",
+      "Executes skill code in a sandboxed environment using llm-sandbox.",
+      "Supports Docker, Podman, and Kubernetes backends.",
+      "\"\"\"",
+      "import base64",
+      "import os",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "class SkillsSandboxExecutor:"
+    ],
+    "imports": [
+      "import base64",
+      "import os",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from llm_sandbox import SandboxSession",
+      "import tempfile",
+      "import subprocess",
+      "import os",
+      "import sys"
+    ],
+    "classes": [
+      "SkillsSandboxExecutor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_045_34624e1775de8d61_AI_Chariot_Legacy_666_1.0.0_20260508_sandbox_executor.py.json"
+}

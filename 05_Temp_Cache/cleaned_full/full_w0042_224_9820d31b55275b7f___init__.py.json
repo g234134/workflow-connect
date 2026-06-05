@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:47:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\core\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1323,
+  "content_sha256": "9820d31b55275b7f297111b4b2291fee8136a0fe0ca4ef3a9dd1e3aae84bf395",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 26,
+    "char_count": 1323,
+    "preview_lines": [
+      "\"\"\"",
+      "The `numpy.core` submodule exists solely for backward compatibility",
+      "purposes. The original `core` was renamed to `_core` and made private.",
+      "`numpy.core` will be removed in the future.",
+      "\"\"\"",
+      "from numpy import _core",
+      "from ._utils import _raise_warning",
+      "# We used to use `np.core._ufunc_reconstruct` to unpickle.",
+      "# This is unnecessary, but old pickles saved before 1.20 will be using it,",
+      "# and there is no reason to break loading them."
+    ],
+    "imports": [
+      "from numpy import _core",
+      "from ._utils import _raise_warning"
+    ],
+    "classes": [],
+    "functions": [
+      "_ufunc_reconstruct",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_224_9820d31b55275b7f___init__.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__telemetry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__telemetry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4884,
+  "content_sha256": "86554187ce42a75d0a9789aa22524b0f21b396b10a0899ea5af3448a9eecb70a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 102,
+    "char_count": 4884,
+    "preview_lines": [
+      "from queue import Queue",
+      "from threading import Lock, Thread",
+      "from typing import Optional, Union",
+      "from urllib.parse import quote",
+      "from .. import constants, logging",
+      "from . import build_hf_headers, get_session, hf_raise_for_status",
+      "logger = logging.get_logger(__name__)",
+      "# Telemetry is sent by a separate thread to avoid blocking the main thread.",
+      "# A daemon thread is started once and consume tasks from the _TELEMETRY_QUEUE.",
+      "# If the thread stops for some reason -shouldn't happen-, we restart a new one."
+    ],
+    "imports": [
+      "from queue import Queue",
+      "from threading import Lock, Thread",
+      "from typing import Optional, Union",
+      "from urllib.parse import quote",
+      "from .. import constants, logging",
+      "from . import build_hf_headers, get_session, hf_raise_for_status"
+    ],
+    "classes": [],
+    "functions": [
+      "send_telemetry",
+      "_start_telemetry_thread",
+      "_telemetry_worker",
+      "_send_telemetry_in_thread"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_351_86554187ce42a75d_AI_Chariot_Legacy_666_1.0.0_20260508__telemetry.py.json"
+}

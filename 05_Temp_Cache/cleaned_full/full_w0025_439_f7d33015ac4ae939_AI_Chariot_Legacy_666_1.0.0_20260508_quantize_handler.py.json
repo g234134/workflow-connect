@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 439,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quantize_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quantize_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7523,
+  "content_sha256": "f7d33015ac4ae93985638d371ddbebd3dfdf59b48d06c6e402fdd52dfe55abec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 225,
+    "non_empty_lines": 180,
+    "char_count": 7523,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from abc import ABC",
+      "from typing import Callable, Dict, List, Optional, Type",
+      "import torch",
+      "from torch.ao.quantization.backend_config import (",
+      "    BackendConfig,",
+      "    DTypeConfig,",
+      "    ObservationType,",
+      ")",
+      "from torch.ao.quantization.utils import NodePattern, Pattern, QuantizerCls"
+    ],
+    "imports": [
+      "from abc import ABC",
+      "from typing import Callable, Dict, List, Optional, Type",
+      "import torch",
+      "from torch.ao.quantization.backend_config import (",
+      "from torch.ao.quantization.utils import NodePattern, Pattern, QuantizerCls",
+      "from torch.fx.graph import Node",
+      "from .utils import all_node_args_have_no_tensors"
+    ],
+    "classes": [
+      "QuantizeHandler",
+      "BinaryOpQuantizeHandler",
+      "CatQuantizeHandler",
+      "ConvReluQuantizeHandler",
+      "LinearReLUQuantizeHandler",
+      "BatchNormQuantizeHandler",
+      "EmbeddingQuantizeHandler",
+      "RNNDynamicQuantizeHandler",
+      "DefaultNodeQuantizeHandler",
+      "FixedQParamsOpQuantizeHandler",
+      "CopyNodeQuantizeHandler",
+      "GeneralTensorShapeOpQuantizeHandler",
+      "CustomModuleQuantizeHandler",
+      "StandaloneModuleQuantizeHandler"
+    ],
+    "functions": [
+      "_default_root_node_getter",
+      "_get_quantize_handler_cls",
+      "_get_pattern_to_quantize_handlers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_439_f7d33015ac4ae939_AI_Chariot_Legacy_666_1.0.0_20260508_quantize_handler.py.json"
+}

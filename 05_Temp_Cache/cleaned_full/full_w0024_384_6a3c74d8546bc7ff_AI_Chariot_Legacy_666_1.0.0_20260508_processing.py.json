@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 384,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_processing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_processing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2088,
+  "content_sha256": "6a3c74d8546bc7ff301e3519cb464a96b415c2f4e2439a693d675be386c1efc4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 47,
+    "char_count": 2088,
+    "preview_lines": [
+      "from typing import List",
+      "import cv2",
+      "import numpy as np",
+      "import pypdfium2",
+      "from PIL import Image",
+      "from surya.settings import settings",
+      "def convert_if_not_rgb(images: List[Image.Image]) -> List[Image.Image]:",
+      "    new_images = []",
+      "    for image in images:",
+      "        if image.mode != \"RGB\":"
+    ],
+    "imports": [
+      "from typing import List",
+      "import cv2",
+      "import numpy as np",
+      "import pypdfium2",
+      "from PIL import Image",
+      "from surya.settings import settings"
+    ],
+    "classes": [],
+    "functions": [
+      "convert_if_not_rgb",
+      "open_pdf",
+      "get_page_images",
+      "slice_bboxes_from_image",
+      "slice_polys_from_image",
+      "slice_and_pad_poly"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_384_6a3c74d8546bc7ff_AI_Chariot_Legacy_666_1.0.0_20260508_processing.py.json"
+}

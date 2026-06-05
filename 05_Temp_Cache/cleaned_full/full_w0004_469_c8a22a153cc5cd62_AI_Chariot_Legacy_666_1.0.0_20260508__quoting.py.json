@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__quoting.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__quoting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 506,
+  "content_sha256": "c8a22a153cc5cd62d56f4f31cb50d2c4a363170a387fea0b973c53b8ac02e7b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 14,
+    "char_count": 506,
+    "preview_lines": [
+      "import os",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "__all__ = (\"_Quoter\", \"_Unquoter\")",
+      "NO_EXTENSIONS = bool(os.environ.get(\"YARL_NO_EXTENSIONS\"))  # type: bool",
+      "if sys.implementation.name != \"cpython\":",
+      "    NO_EXTENSIONS = True",
+      "if TYPE_CHECKING or NO_EXTENSIONS:",
+      "    from ._quoting_py import _Quoter, _Unquoter",
+      "else:"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "from ._quoting_py import _Quoter, _Unquoter",
+      "from ._quoting_c import _Quoter, _Unquoter",
+      "from ._quoting_py import _Quoter, _Unquoter  # type: ignore[assignment]"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_469_c8a22a153cc5cd62_AI_Chariot_Legacy_666_1.0.0_20260508__quoting.py.json"
+}

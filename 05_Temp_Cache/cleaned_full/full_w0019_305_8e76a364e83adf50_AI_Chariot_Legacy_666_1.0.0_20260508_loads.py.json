@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_loads.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_loads.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5406,
+  "content_sha256": "8e76a364e83adf502ab5dd3e06995e8688542fdf750b70a38b63996773151dd9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 177,
+    "non_empty_lines": 135,
+    "char_count": 5406,
+    "preview_lines": [
+      "from abc import ABC",
+      "from collections import namedtuple",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.vector import Vector, ReferenceFrame, Point",
+      "__all__ = ['LoadBase', 'Force', 'Torque']",
+      "class LoadBase(ABC, namedtuple('LoadBase', ['location', 'vector'])):",
+      "    \"\"\"Abstract base class for the various loading types.\"\"\"",
+      "    def __add__(self, other):",
+      "        raise TypeError(f\"unsupported operand type(s) for +: \"",
+      "                        f\"'{self.__class__.__name__}' and \""
+    ],
+    "imports": [
+      "from abc import ABC",
+      "from collections import namedtuple",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.vector import Vector, ReferenceFrame, Point"
+    ],
+    "classes": [
+      "LoadBase",
+      "Force",
+      "Torque"
+    ],
+    "functions": [
+      "gravity",
+      "_parse_load"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_305_8e76a364e83adf50_AI_Chariot_Legacy_666_1.0.0_20260508_loads.py.json"
+}

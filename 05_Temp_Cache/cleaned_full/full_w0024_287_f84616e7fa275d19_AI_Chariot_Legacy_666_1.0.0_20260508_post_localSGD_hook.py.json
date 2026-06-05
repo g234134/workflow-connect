@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_post_localSGD_hook.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_post_localSGD_hook.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5248,
+  "content_sha256": "f84616e7fa275d190ebc9f0c53b67bc215cf37916ae3d43f13b5883c1154e0f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 100,
+    "char_count": 5248,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "import torch",
+      "import torch.distributed as dist",
+      "from . import default_hooks as default",
+      "logger = logging.getLogger(__name__)",
+      "class PostLocalSGDState:",
+      "    r\"\"\"",
+      "    Store state for all-reducing gradients globally until given step, then locally after.",
+      "    Stores the state for all-reducing gradients globally using ``process_group`` until step ``start_localSGD_iter``,"
+    ],
+    "imports": [
+      "import logging",
+      "import torch",
+      "import torch.distributed as dist",
+      "from . import default_hooks as default"
+    ],
+    "classes": [
+      "PostLocalSGDState"
+    ],
+    "functions": [
+      "post_localSGD_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_287_f84616e7fa275d19_AI_Chariot_Legacy_666_1.0.0_20260508_post_localSGD_hook.py.json"
+}

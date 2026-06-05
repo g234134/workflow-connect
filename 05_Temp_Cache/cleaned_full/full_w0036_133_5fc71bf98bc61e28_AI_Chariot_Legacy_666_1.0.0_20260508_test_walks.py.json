@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_walks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_walks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1499,
+  "content_sha256": "5fc71bf98bc61e28aa6cc117b8a31275301bf56b55b5b1e320448d4aaa494e65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 39,
+    "char_count": 1499,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.algorithms.walks` module.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "pytest.importorskip(\"numpy\")",
+      "pytest.importorskip(\"scipy\")",
+      "def test_directed():",
+      "    G = nx.DiGraph([(0, 1), (1, 2), (2, 0)])",
+      "    num_walks = nx.number_of_walks(G, 3)",
+      "    expected = {0: {0: 1, 1: 0, 2: 0}, 1: {0: 0, 1: 1, 2: 0}, 2: {0: 0, 1: 0, 2: 1}}",
+      "    assert num_walks == expected"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_directed",
+      "test_undirected",
+      "test_non_integer_nodes",
+      "test_zero_length",
+      "test_negative_length_exception",
+      "test_hidden_weight_attr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_133_5fc71bf98bc61e28_AI_Chariot_Legacy_666_1.0.0_20260508_test_walks.py.json"
+}

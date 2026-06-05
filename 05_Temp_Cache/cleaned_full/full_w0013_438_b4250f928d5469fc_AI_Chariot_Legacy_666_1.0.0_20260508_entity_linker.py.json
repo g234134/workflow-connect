@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_entity_linker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_entity_linker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1162,
+  "content_sha256": "b4250f928d5469fcde37f32e132b5d3850b6a59d8d8a48d9ccc95abec4cf22ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1162,
+    "preview_lines": [
+      "from typing import Optional, List",
+      "from thinc.types import Floats2d",
+      "from thinc.api import Model",
+      "from spacy.util import registry",
+      "from spacy.tokens import Doc",
+      "def EntityLinker_v1(",
+      "    tok2vec: Model, nO: Optional[int] = None",
+      ") -> Model[List[Doc], Floats2d]:",
+      "    chain = registry.get(\"layers\", \"chain.v1\")",
+      "    clone = registry.get(\"layers\", \"clone.v1\")"
+    ],
+    "imports": [
+      "from typing import Optional, List",
+      "from thinc.types import Floats2d",
+      "from thinc.api import Model",
+      "from spacy.util import registry",
+      "from spacy.tokens import Doc"
+    ],
+    "classes": [],
+    "functions": [
+      "EntityLinker_v1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_438_b4250f928d5469fc_AI_Chariot_Legacy_666_1.0.0_20260508_entity_linker.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 161,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cudnn\\cudnn-wrapper.h",
+  "name": "cudnn-wrapper.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 508,
+  "content_sha256": "9ac93d36125eadf0b62dfca564f49b47b1b0780f133e24fc58050d65d2a776ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 11,
+    "char_count": 508,
+    "preview_lines": [
+      "#pragma once",
+      "#include <cudnn.h>",
+      "#define STRINGIFY(x) #x",
+      "#define STRING(x) STRINGIFY(x)",
+      "#if CUDNN_MAJOR < 6",
+      "#pragma message (\"CuDNN v\" STRING(CUDNN_MAJOR) \" found, but need at least CuDNN v6. You can get the latest version of CuDNN from https://developer.nvidia.com/cudnn or disable CuDNN with USE_CUDNN=0\")",
+      "#pragma message \"We strongly encourage you to move to 6.0 and above.\"",
+      "#pragma message \"This message is intended to annoy you enough to update.\"",
+      "#endif",
+      "#undef STRINGIFY"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_161_9ac93d36125eadf0_cudnn-wrapper.h.json"
+}

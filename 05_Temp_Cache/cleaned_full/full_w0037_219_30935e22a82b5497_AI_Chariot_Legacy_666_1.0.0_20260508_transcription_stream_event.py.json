@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 219,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transcription_stream_event.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transcription_stream_event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 648,
+  "content_sha256": "30935e22a82b5497a42c6037292cc4ee51cadddca1aefbe118b230810b190cf1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 12,
+    "char_count": 648,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Union",
+      "from typing_extensions import Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from .transcription_text_done_event import TranscriptionTextDoneEvent",
+      "from .transcription_text_delta_event import TranscriptionTextDeltaEvent",
+      "from .transcription_text_segment_event import TranscriptionTextSegmentEvent",
+      "__all__ = [\"TranscriptionStreamEvent\"]",
+      "TranscriptionStreamEvent: TypeAlias = Annotated[",
+      "    Union[TranscriptionTextSegmentEvent, TranscriptionTextDeltaEvent, TranscriptionTextDoneEvent],"
+    ],
+    "imports": [
+      "from typing import Union",
+      "from typing_extensions import Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from .transcription_text_done_event import TranscriptionTextDoneEvent",
+      "from .transcription_text_delta_event import TranscriptionTextDeltaEvent",
+      "from .transcription_text_segment_event import TranscriptionTextSegmentEvent"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_219_30935e22a82b5497_AI_Chariot_Legacy_666_1.0.0_20260508_transcription_stream_event.py.json"
+}

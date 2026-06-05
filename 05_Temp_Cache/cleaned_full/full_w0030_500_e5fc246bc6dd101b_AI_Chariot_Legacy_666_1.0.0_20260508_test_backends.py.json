@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 500,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_backends.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_backends.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6108,
+  "content_sha256": "e5fc246bc6dd101b6f3e18cde3d74c7202ac5012151c498c6a0eae72404001df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 170,
+    "non_empty_lines": 141,
+    "char_count": 6108,
+    "preview_lines": [
+      "import pickle",
+      "import pytest",
+      "import networkx as nx",
+      "sp = pytest.importorskip(\"scipy\")",
+      "pytest.importorskip(\"numpy\")",
+      "def test_dispatch_kwds_vs_args():",
+      "    G = nx.path_graph(4)",
+      "    nx.pagerank(G)",
+      "    nx.pagerank(G=G)",
+      "    with pytest.raises(TypeError):"
+    ],
+    "imports": [
+      "import pickle",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.classes.tests.dispatch_interface import (",
+      "from networkx.classes.tests.dispatch_interface import (",
+      "from networkx.classes.tests import dispatch_interface"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dispatch_kwds_vs_args",
+      "test_pickle",
+      "test_graph_converter_needs_backend",
+      "test_networkx_backend",
+      "test_dispatchable_are_functions",
+      "test_mixing_backend_graphs",
+      "test_bad_backend_name",
+      "test_fallback_to_nx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_500_e5fc246bc6dd101b_AI_Chariot_Legacy_666_1.0.0_20260508_test_backends.py.json"
+}

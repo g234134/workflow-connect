@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 452,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hits_alg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hits_alg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10421,
+  "content_sha256": "389d833ca9ffa860c1896ed3967f3fbcbb491af064cd66cec7295b1e7f799dee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 337,
+    "non_empty_lines": 281,
+    "char_count": 10421,
+    "preview_lines": [
+      "\"\"\"Hubs and authorities analysis of graph structure.\"\"\"",
+      "import networkx as nx",
+      "__all__ = [\"hits\"]",
+      "@nx._dispatchable(preserve_edge_attrs={\"G\": {\"weight\": 1}})",
+      "def hits(G, max_iter=100, tol=1.0e-8, nstart=None, normalized=True):",
+      "    \"\"\"Returns HITS hubs and authorities values for nodes.",
+      "    The HITS algorithm computes two numbers for a node.",
+      "    Authorities estimates the node value based on the incoming links.",
+      "    Hubs estimates the node value based on outgoing links.",
+      "    Parameters"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "import numpy as np",
+      "import scipy as sp"
+    ],
+    "classes": [],
+    "functions": [
+      "hits",
+      "_hits_python",
+      "_hits_numpy",
+      "_hits_scipy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_452_389d833ca9ffa860_AI_Chariot_Legacy_666_1.0.0_20260508_hits_alg.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 422,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint\\langgraph\\cache\\memory\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3147,
+  "content_sha256": "2fd3cb76db8d992e8ede027a2f00f9b8e3141f231a8a0cd9cf8d64f0795b3585",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 63,
+    "char_count": 3144,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import datetime",
+      "import threading",
+      "from collections.abc import Mapping, Sequence",
+      "from langgraph.cache.base import BaseCache, FullKey, Namespace, ValueT",
+      "from langgraph.checkpoint.serde.base import SerializerProtocol",
+      "class InMemoryCache(BaseCache[ValueT]):",
+      "    def __init__(self, *, serde: SerializerProtocol | None = None):",
+      "        super().__init__(serde=serde)",
+      "        self._cache: dict[Namespace, dict[str, tuple[str, bytes, float | None]]] = {}"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import datetime",
+      "import threading",
+      "from collections.abc import Mapping, Sequence",
+      "from langgraph.cache.base import BaseCache, FullKey, Namespace, ValueT",
+      "from langgraph.checkpoint.serde.base import SerializerProtocol"
+    ],
+    "classes": [
+      "InMemoryCache"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_422_2fd3cb76db8d992e___init__.py.json"
+}

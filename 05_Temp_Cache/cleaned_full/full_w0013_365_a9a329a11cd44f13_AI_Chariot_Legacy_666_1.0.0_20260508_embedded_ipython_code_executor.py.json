@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 365,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_embedded_ipython_code_executor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_embedded_ipython_code_executor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8116,
+  "content_sha256": "a9a329a11cd44f132870bf6b8a8a08b60a2cc3cd00329c82cd2cf26f27d36c15",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 182,
+    "non_empty_lines": 162,
+    "char_count": 8116,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "#",
+      "# Portions derived from https://github.com/microsoft/autogen are under the MIT License.",
+      "# SPDX-License-Identifier: MIT",
+      "import base64",
+      "import json",
+      "import os",
+      "import re"
+    ],
+    "imports": [
+      "import base64",
+      "import json",
+      "import os",
+      "import re",
+      "import uuid",
+      "from pathlib import Path",
+      "from queue import Empty",
+      "from typing import Any",
+      "from pydantic import BaseModel, Field, field_validator",
+      "from ...doc_utils import export_module",
+      "from ...import_utils import optional_import_block, require_optional_import",
+      "from ..base import CodeBlock, CodeExtractor, IPythonCodeResult",
+      "from ..markdown_code_extractor import MarkdownCodeExtractor",
+      "from .import_utils import require_jupyter_kernel_gateway_installed",
+      "from jupyter_client import KernelManager  # type: ignore[attr-defined]",
+      "from jupyter_client.kernelspec import KernelSpecManager"
+    ],
+    "classes": [
+      "EmbeddedIPythonCodeExecutor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_365_a9a329a11cd44f13_AI_Chariot_Legacy_666_1.0.0_20260508_embedded_ipython_code_executor.py.json"
+}

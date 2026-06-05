@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\DeadlockDetection.h",
+  "name": "DeadlockDetection.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1970,
+  "content_sha256": "1abe63e5c082f2d335ea1d7e42d3c63c2f40dbbd1b1753b9a9cab91c709d5e47",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 40,
+    "char_count": 1970,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/Exception.h>",
+      "/// This file provides some simple utilities for detecting common deadlocks in",
+      "/// PyTorch.  For now, we focus exclusively on detecting Python GIL deadlocks,",
+      "/// as the GIL is a wide ranging lock that is taken out in many situations.",
+      "/// The basic strategy is before performing an operation that may block, you",
+      "/// can use TORCH_ASSERT_NO_GIL_WITHOUT_PYTHON_DEP() to assert that the GIL is",
+      "/// not held.  This macro is to be used in contexts where no static dependency",
+      "/// on Python is available (we will handle indirecting a virtual call for you).",
+      "///"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_250_1abe63e5c082f2d3_DeadlockDetection.h.json"
+}

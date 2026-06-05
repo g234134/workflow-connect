@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 431,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\cache_size.py",
+  "name": "cache_size.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7322,
+  "content_sha256": "aeeff516af90c10067b13fd44948e91aae049cc2177109167d55a4ea394f3d84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 138,
+    "char_count": 7322,
+    "preview_lines": [
+      "import logging",
+      "import types",
+      "import weakref",
+      "from dataclasses import dataclass",
+      "from . import config",
+      "log = logging.getLogger(__name__)",
+      "\"\"\"",
+      "[Note on cache size limit]",
+      "Background - TorchDynamo cache is a linked list. Each cache entry is a",
+      "(check_fn, out_code, next pointer). These are stored on the f_code's co_extra"
+    ],
+    "imports": [
+      "import logging",
+      "import types",
+      "import weakref",
+      "from dataclasses import dataclass",
+      "from . import config",
+      "from .eval_frame import get_saved_else_current_config_hash"
+    ],
+    "classes": [
+      "CacheSizeRelevantForFrame"
+    ],
+    "functions": [
+      "_get_weakref_from_f_locals",
+      "_is_same_cache_bucket",
+      "compute_cache_size",
+      "is_recompilation",
+      "exceeds_cache_size_limit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_431_aeeff516af90c100_cache_size.py.json"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 463,
+  "generated_at": "2026-05-08T18:48:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\evaluation\\scoring\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1146,
+  "content_sha256": "184a6b98fb070e552a7502c0eb74e4f2d9bfd7b54a20d2a743d0659b2b8f7f8b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 27,
+    "char_count": 1143,
+    "preview_lines": [
+      "\"\"\"Scoring evaluators.",
+      "This module contains evaluators for scoring on a 1-10 the output of models,",
+      "be they LLMs, Chains, or otherwise. This can be based on a variety of",
+      "criteria and or a reference answer.",
+      "Example:",
+      "    >>> from langchain_openai import ChatOpenAI",
+      "    >>> from langchain_classic.evaluation.scoring import ScoreStringEvalChain",
+      "    >>> model = ChatOpenAI(temperature=0, model_name=\"gpt-4\")",
+      "    >>> chain = ScoreStringEvalChain.from_llm(llm=model)",
+      "    >>> result = chain.evaluate_strings("
+    ],
+    "imports": [
+      "from langchain_classic.evaluation.scoring.eval_chain import ("
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_463_184a6b98fb070e55___init__.py.json"
+}

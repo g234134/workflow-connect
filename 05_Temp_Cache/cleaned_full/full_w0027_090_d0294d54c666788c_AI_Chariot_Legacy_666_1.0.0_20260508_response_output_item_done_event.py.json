@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 90,
+  "generated_at": "2026-05-08T18:46:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_response_output_item_done_event.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_response_output_item_done_event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 709,
+  "content_sha256": "d0294d54c666788c4a82194489df551a85a267def0a74d2121d3677afe2a043f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 16,
+    "char_count": 709,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "from .conversation_item import ConversationItem",
+      "__all__ = [\"ResponseOutputItemDoneEvent\"]",
+      "class ResponseOutputItemDoneEvent(BaseModel):",
+      "    event_id: str",
+      "    \"\"\"The unique ID of the server event.\"\"\"",
+      "    item: ConversationItem",
+      "    \"\"\"The item to add to the conversation.\"\"\""
+    ],
+    "imports": [
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "from .conversation_item import ConversationItem"
+    ],
+    "classes": [
+      "ResponseOutputItemDoneEvent"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_090_d0294d54c666788c_AI_Chariot_Legacy_666_1.0.0_20260508_response_output_item_done_event.py.json"
+}

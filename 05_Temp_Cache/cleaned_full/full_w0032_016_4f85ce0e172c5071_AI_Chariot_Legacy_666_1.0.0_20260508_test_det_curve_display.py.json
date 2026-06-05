@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_det_curve_display.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_det_curve_display.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4460,
+  "content_sha256": "4f85ce0e172c50711e26a1c8dee8ce6f3a2d1019b73b5dcaeae56b292cefdcdd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 131,
+    "non_empty_lines": 109,
+    "char_count": 4460,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.linear_model import LogisticRegression",
+      "from sklearn.metrics import DetCurveDisplay, det_curve",
+      "@pytest.mark.parametrize(\"constructor_name\", [\"from_estimator\", \"from_predictions\"])",
+      "@pytest.mark.parametrize(\"response_method\", [\"predict_proba\", \"decision_function\"])",
+      "@pytest.mark.parametrize(\"with_sample_weight\", [True, False])",
+      "@pytest.mark.parametrize(\"drop_intermediate\", [True, False])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.linear_model import LogisticRegression",
+      "from sklearn.metrics import DetCurveDisplay, det_curve",
+      "import matplotlib as mpl"
+    ],
+    "classes": [],
+    "functions": [
+      "test_det_curve_display",
+      "test_det_curve_display_default_name",
+      "test_y_score_and_y_pred_specified_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_016_4f85ce0e172c5071_AI_Chariot_Legacy_666_1.0.0_20260508_test_det_curve_display.py.json"
+}

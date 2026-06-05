@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 400,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_build.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_build.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2168,
+  "content_sha256": "f399239e3ea42d9a05afb469fc3a7462c7a02735d1980383dbbfa56f26c7b5ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 58,
+    "char_count": 2168,
+    "preview_lines": [
+      "from fontTools.varLib import _add_fvar, _add_avar, load_designspace",
+      "from fontTools.ttLib import newTable",
+      "import logging",
+      "log = logging.getLogger(\"fontTools.varLib.avar\")",
+      "def build(font, designspace_file):",
+      "    ds = load_designspace(designspace_file, require_sources=False)",
+      "    if not \"fvar\" in font:",
+      "        if \"name\" not in font:",
+      "            font[\"name\"] = newTable(\"name\")",
+      "        _add_fvar(font, ds.axes, ds.instances)"
+    ],
+    "imports": [
+      "from fontTools.varLib import _add_fvar, _add_avar, load_designspace",
+      "from fontTools.ttLib import newTable",
+      "import logging",
+      "from fontTools.ttLib import TTFont",
+      "from fontTools.misc.cliTools import makeOutputFileName",
+      "from fontTools import configLogger",
+      "import argparse",
+      "import sys",
+      "import sys"
+    ],
+    "classes": [],
+    "functions": [
+      "build",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_400_f399239e3ea42d9a_AI_Chariot_Legacy_666_1.0.0_20260508_build.py.json"
+}

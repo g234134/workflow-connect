@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 60,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:48:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\ops\\tensor.h",
+  "name": "tensor.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1661,
+  "content_sha256": "767b1c803c57f9107ea6f3318273c48eb221762f1893b564645b56730ad4a77c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 27,
+    "char_count": 1661,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <c10/core/ScalarType.h>",
+      "namespace at {",
+      "// These functions are defined in ATen/Utils.cpp.",
+      "#define TENSOR(T, S)                                                          \\",
+      "  TORCH_API Tensor tensor(ArrayRef<T> values, const TensorOptions& options);  \\",
+      "  inline Tensor tensor(                                                       \\",
+      "      std::initializer_list<T> values, const TensorOptions& options) {        \\",
+      "    return at::tensor(ArrayRef<T>(values), options);                          \\"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0060_163_767b1c803c57f910_tensor.h.json"
+}

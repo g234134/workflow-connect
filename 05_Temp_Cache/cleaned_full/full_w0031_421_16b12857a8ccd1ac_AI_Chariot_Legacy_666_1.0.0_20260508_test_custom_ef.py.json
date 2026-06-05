@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_custom_ef.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_custom_ef.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3398,
+  "content_sha256": "16b12857a8ccd1ac840111f99e8692b1955d8ecd96ec1e11e11d2b062e755a49",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 70,
+    "char_count": 3398,
+    "preview_lines": [
+      "from chromadb.api.types import EmbeddingFunction, Embeddable, Embeddings",
+      "import numpy as np",
+      "from typing import cast, Any",
+      "from chromadb.utils.embedding_functions import (",
+      "    register_embedding_function,",
+      "    known_embedding_functions,",
+      ")",
+      "class LegacyCustomEmbeddingFunction(EmbeddingFunction[Embeddable]):",
+      "    def __call__(self, input: Embeddable) -> Embeddings:",
+      "        return cast(Embeddings, np.array([1, 2, 3]).tolist())"
+    ],
+    "imports": [
+      "from chromadb.api.types import EmbeddingFunction, Embeddable, Embeddings",
+      "import numpy as np",
+      "from typing import cast, Any",
+      "from chromadb.utils.embedding_functions import ("
+    ],
+    "classes": [
+      "LegacyCustomEmbeddingFunction",
+      "CustomEmbeddingFunction",
+      "CustomEmbeddingFunctionWithRegistration"
+    ],
+    "functions": [
+      "test_legacy_custom_ef",
+      "test_custom_ef",
+      "test_custom_ef_registration"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_421_16b12857a8ccd1ac_AI_Chariot_Legacy_666_1.0.0_20260508_test_custom_ef.py.json"
+}

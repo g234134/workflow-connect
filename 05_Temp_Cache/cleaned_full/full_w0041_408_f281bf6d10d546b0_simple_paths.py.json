@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 408,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\simple_paths.py",
+  "name": "simple_paths.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31091,
+  "content_sha256": "f281bf6d10d546b04a5420c48d92c75b7432cebbf9295ca7a7e1e5d26e523660",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 966,
+    "non_empty_lines": 779,
+    "char_count": 31091,
+    "preview_lines": [
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "import networkx as nx",
+      "from networkx.algorithms.shortest_paths.weighted import _weight_function",
+      "from networkx.utils import not_implemented_for, pairwise",
+      "__all__ = [",
+      "    \"all_simple_paths\",",
+      "    \"is_simple_path\",",
+      "    \"shortest_simple_paths\",",
+      "    \"all_simple_edge_paths\","
+    ],
+    "imports": [
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "import networkx as nx",
+      "from networkx.algorithms.shortest_paths.weighted import _weight_function",
+      "from networkx.utils import not_implemented_for, pairwise"
+    ],
+    "classes": [
+      "PathBuffer"
+    ],
+    "functions": [
+      "is_simple_path",
+      "all_simple_paths",
+      "all_simple_edge_paths",
+      "_all_simple_edge_paths",
+      "shortest_simple_paths",
+      "_bidirectional_shortest_path",
+      "_bidirectional_pred_succ",
+      "_bidirectional_dijkstra"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_408_f281bf6d10d546b0_simple_paths.py.json"
+}

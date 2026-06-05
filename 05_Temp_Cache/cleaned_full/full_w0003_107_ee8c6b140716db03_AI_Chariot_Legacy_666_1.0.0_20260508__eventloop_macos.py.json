@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__eventloop_macos.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__eventloop_macos.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4550,
+  "content_sha256": "ee8c6b140716db03d073760ab661dce2b46d83764c7a5cb5388163650ee3260b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 174,
+    "non_empty_lines": 136,
+    "char_count": 4550,
+    "preview_lines": [
+      "\"\"\"Eventloop hook for OS X",
+      "Calls NSApp / CoreFoundation APIs via ctypes.",
+      "\"\"\"",
+      "# cribbed heavily from IPython.terminal.pt_inputhooks.osx",
+      "# obj-c boilerplate from appnope, used under BSD 2-clause",
+      "import ctypes",
+      "import ctypes.util",
+      "from threading import Event",
+      "objc = ctypes.cdll.LoadLibrary(ctypes.util.find_library(\"objc\"))  # type:ignore[arg-type]",
+      "void_p = ctypes.c_void_p"
+    ],
+    "imports": [
+      "import ctypes",
+      "import ctypes.util",
+      "from threading import Event"
+    ],
+    "classes": [],
+    "functions": [
+      "_utf8",
+      "n",
+      "C",
+      "_NSApp",
+      "_wake",
+      "stop",
+      "_stop_after",
+      "mainloop"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_107_ee8c6b140716db03_AI_Chariot_Legacy_666_1.0.0_20260508__eventloop_macos.py.json"
+}

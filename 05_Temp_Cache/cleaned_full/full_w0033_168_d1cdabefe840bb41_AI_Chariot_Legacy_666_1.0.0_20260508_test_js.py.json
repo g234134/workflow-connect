@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_js.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_js.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3990,
+  "content_sha256": "d1cdabefe840bb417f09a5c55709c0dae920e71a946061e608ea2fae6366e987",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 137,
+    "non_empty_lines": 108,
+    "char_count": 3990,
+    "preview_lines": [
+      "import socket",
+      "import threading",
+      "from http.server import BaseHTTPRequestHandler, HTTPServer",
+      "from pathlib import Path",
+      "import pytest",
+      "@pytest.fixture(scope=\"session\", autouse=True)",
+      "def check_playwright():",
+      "    \"\"\"Skip tests if playwright is not installed.",
+      "    This fixture is used by the next fixture (which is autouse) to skip all tests",
+      "    if playwright is not installed.\"\"\""
+    ],
+    "imports": [
+      "import socket",
+      "import threading",
+      "from http.server import BaseHTTPRequestHandler, HTTPServer",
+      "from pathlib import Path",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "check_playwright",
+      "local_server",
+      "_make_page",
+      "test_copy_paste",
+      "test_force_theme"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_168_d1cdabefe840bb41_AI_Chariot_Legacy_666_1.0.0_20260508_test_js.py.json"
+}

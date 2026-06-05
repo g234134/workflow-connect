@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 143,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_flatpages.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_flatpages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3552,
+  "content_sha256": "407facbb3b283c8312ae0c8747d3bcb8e7667c8901bffc372ccfa119f42f9d4f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 84,
+    "char_count": 3552,
+    "preview_lines": [
+      "from django import template",
+      "from django.conf import settings",
+      "from django.contrib.flatpages.models import FlatPage",
+      "from django.contrib.sites.shortcuts import get_current_site",
+      "register = template.Library()",
+      "class FlatpageNode(template.Node):",
+      "    def __init__(self, context_name, starts_with=None, user=None):",
+      "        self.context_name = context_name",
+      "        if starts_with:",
+      "            self.starts_with = template.Variable(starts_with)"
+    ],
+    "imports": [
+      "from django import template",
+      "from django.conf import settings",
+      "from django.contrib.flatpages.models import FlatPage",
+      "from django.contrib.sites.shortcuts import get_current_site"
+    ],
+    "classes": [
+      "FlatpageNode"
+    ],
+    "functions": [
+      "get_flatpages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_143_407facbb3b283c83_AI_Chariot_Legacy_666_1.0.0_20260508_flatpages.py.json"
+}

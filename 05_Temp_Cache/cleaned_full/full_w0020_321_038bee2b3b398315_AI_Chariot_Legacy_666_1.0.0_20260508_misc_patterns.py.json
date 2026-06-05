@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_misc_patterns.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_misc_patterns.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4902,
+  "content_sha256": "038bee2b3b398315d6a62e98247547701002d518f2c17d5eddf7c55de5553fcf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 131,
+    "non_empty_lines": 106,
+    "char_count": 4902,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from typing import Dict, Set, Tuple",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from torch._ops import OpOverload, OpOverloadPacket",
+      "from ..pattern_matcher import fwd_only, register_replacement",
+      "aten = torch.ops.aten",
+      "@functools.lru_cache(None)",
+      "def _misc_patterns_init():"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Dict, Set, Tuple",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from torch._ops import OpOverload, OpOverloadPacket",
+      "from ..pattern_matcher import fwd_only, register_replacement",
+      "from .joint_graph import patterns as joint_graph_patterns",
+      "from .post_grad import pass_patterns as post_grad_patterns_all"
+    ],
+    "classes": [
+      "NumpyCompatNormalization"
+    ],
+    "functions": [
+      "_misc_patterns_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_321_038bee2b3b398315_AI_Chariot_Legacy_666_1.0.0_20260508_misc_patterns.py.json"
+}

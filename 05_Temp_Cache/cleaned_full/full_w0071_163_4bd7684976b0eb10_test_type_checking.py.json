@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\test_type_checking.py",
+  "name": "test_type_checking.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5086,
+  "content_sha256": "4bd7684976b0eb1009e9487fb0fe059dce72b6ac9860d757d7a307abce184979",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 161,
+    "non_empty_lines": 109,
+    "char_count": 5083,
+    "preview_lines": [
+      "from dataclasses import dataclass",
+      "from operator import add",
+      "from typing import Annotated, Any",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "from langgraph.graph import StateGraph",
+      "from langgraph.types import Command",
+      "def test_typed_dict_state() -> None:"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from operator import add",
+      "from typing import Annotated, Any",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "from langgraph.graph import StateGraph",
+      "from langgraph.types import Command"
+    ],
+    "classes": [],
+    "functions": [
+      "test_typed_dict_state",
+      "test_dataclass_state",
+      "test_base_model_state",
+      "test_plain_class_not_allowed",
+      "test_input_state_specified",
+      "test_invoke_with_all_valid_types",
+      "test_add_node_with_explicit_input_schema"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_163_4bd7684976b0eb10_test_type_checking.py.json"
+}

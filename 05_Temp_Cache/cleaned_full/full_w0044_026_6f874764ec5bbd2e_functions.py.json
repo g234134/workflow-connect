@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:47:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\vector\\functions.py",
+  "name": "functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24810,
+  "content_sha256": "6f874764ec5bbd2efb48c71294257619368ecd68f44d0894b4368efdd863dd4c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 650,
+    "non_empty_lines": 550,
+    "char_count": 24810,
+    "preview_lines": [
+      "from functools import reduce",
+      "from sympy import (sympify, diff, sin, cos, Matrix, symbols,",
+      "                                Function, S, Symbol, linear_eq_to_matrix)",
+      "from sympy.integrals.integrals import integrate",
+      "from sympy.simplify.trigsimp import trigsimp",
+      "from .vector import Vector, _check_vector",
+      "from .frame import CoordinateSym, _check_frame",
+      "from .dyadic import Dyadic",
+      "from .printing import vprint, vsprint, vpprint, vlatex, init_vprinting",
+      "from sympy.utilities.iterables import iterable"
+    ],
+    "imports": [
+      "from functools import reduce",
+      "from sympy import (sympify, diff, sin, cos, Matrix, symbols,",
+      "from sympy.integrals.integrals import integrate",
+      "from sympy.simplify.trigsimp import trigsimp",
+      "from .vector import Vector, _check_vector",
+      "from .frame import CoordinateSym, _check_frame",
+      "from .dyadic import Dyadic",
+      "from .printing import vprint, vsprint, vpprint, vlatex, init_vprinting",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.misc import translate"
+    ],
+    "classes": [],
+    "functions": [
+      "cross",
+      "dot",
+      "express",
+      "time_derivative",
+      "outer",
+      "kinematic_equations",
+      "get_motion_params",
+      "partial_velocity",
+      "dynamicsymbols"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_026_6f874764ec5bbd2e_functions.py.json"
+}

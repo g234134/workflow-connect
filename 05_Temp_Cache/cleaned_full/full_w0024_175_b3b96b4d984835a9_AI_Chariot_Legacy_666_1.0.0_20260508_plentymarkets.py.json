@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 175,
+  "generated_at": "2026-05-08T18:45:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_plentymarkets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_plentymarkets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 737,
+  "content_sha256": "b3b96b4d984835a9222a395b3884937874d25ec364706f307ca704565414328b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 21,
+    "char_count": 737,
+    "preview_lines": [
+      "from json import dumps, loads",
+      "import re",
+      "def plentymarkets_compliance_fix(session):",
+      "    def _to_snake_case(n):",
+      "        return re.sub(\"(.)([A-Z][a-z]+)\", r\"\\1_\\2\", n).lower()",
+      "    def _compliance_fix(r):",
+      "        # Plenty returns the Token in CamelCase instead of _",
+      "        if (",
+      "            \"application/json\" in r.headers.get(\"content-type\", {})",
+      "            and r.status_code == 200"
+    ],
+    "imports": [
+      "from json import dumps, loads",
+      "import re"
+    ],
+    "classes": [],
+    "functions": [
+      "plentymarkets_compliance_fix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_175_b3b96b4d984835a9_AI_Chariot_Legacy_666_1.0.0_20260508_plentymarkets.py.json"
+}

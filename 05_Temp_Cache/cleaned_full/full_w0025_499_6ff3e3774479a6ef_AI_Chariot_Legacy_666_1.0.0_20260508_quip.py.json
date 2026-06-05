@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 499,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quip.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quip.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 647,
+  "content_sha256": "6ff3e3774479a6ef2b55e038a2731effe78353d60f50af5a228acec977fdb26d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 647,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.document_loaders.quip import QuipLoader",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {\"QuipLoader\": \"langchain_community.document_loaders.quip\"}",
+      "_import_attribute = create_importer(__package__, deprecated_lookups=DEPRECATED_LOOKUP)",
+      "def __getattr__(name: str) -> Any:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.document_loaders.quip import QuipLoader"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_499_6ff3e3774479a6ef_AI_Chariot_Legacy_666_1.0.0_20260508_quip.py.json"
+}

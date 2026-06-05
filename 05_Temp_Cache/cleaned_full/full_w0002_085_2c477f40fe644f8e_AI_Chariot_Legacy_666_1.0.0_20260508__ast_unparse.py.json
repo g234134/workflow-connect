@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ast_unparse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ast_unparse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40422,
+  "content_sha256": "2c477f40fe644f8e8454e8af97aaf3de90579bdce5ddfe597f29d3012d10443f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1161,
+    "non_empty_lines": 1016,
+    "char_count": 40422,
+    "preview_lines": [
+      "# This module contains ``ast.unparse()``, defined here",
+      "# to improve the import time for the ``ast`` module.",
+      "import sys",
+      "from _ast import *",
+      "from ast import NodeVisitor",
+      "from contextlib import contextmanager, nullcontext",
+      "from enum import IntEnum, auto, _simple_enum",
+      "# Large float and imaginary literals get turned into infinities in the AST.",
+      "# We unparse those infinities to INFSTR.",
+      "_INFSTR = \"1e\" + repr(sys.float_info.max_10_exp + 1)"
+    ],
+    "imports": [
+      "import sys",
+      "from _ast import *",
+      "from ast import NodeVisitor",
+      "from contextlib import contextmanager, nullcontext",
+      "from enum import IntEnum, auto, _simple_enum"
+    ],
+    "classes": [
+      "_Precedence",
+      "Unparser"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_085_2c477f40fe644f8e_AI_Chariot_Legacy_666_1.0.0_20260508__ast_unparse.py.json"
+}

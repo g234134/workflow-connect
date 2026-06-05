@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_var.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_var.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1594,
+  "content_sha256": "85ec4ffb4ab69cdf61fddca128b0aebea15780b0bd7bf1eba278bc2dd6f5e8aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 45,
+    "char_count": 1594,
+    "preview_lines": [
+      "from sympy.core.function import (Function, FunctionClass)",
+      "from sympy.core.symbol import (Symbol, var)",
+      "from sympy.testing.pytest import raises",
+      "def test_var():",
+      "    ns = {\"var\": var, \"raises\": raises}",
+      "    eval(\"var('a')\", ns)",
+      "    assert ns[\"a\"] == Symbol(\"a\")",
+      "    eval(\"var('b bb cc zz _x')\", ns)",
+      "    assert ns[\"b\"] == Symbol(\"b\")",
+      "    assert ns[\"bb\"] == Symbol(\"bb\")"
+    ],
+    "imports": [
+      "from sympy.core.function import (Function, FunctionClass)",
+      "from sympy.core.symbol import (Symbol, var)",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_var",
+      "test_var_return",
+      "test_var_accepts_comma",
+      "test_var_keywords",
+      "test_var_cls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_108_85ec4ffb4ab69cdf_AI_Chariot_Legacy_666_1.0.0_20260508_test_var.py.json"
+}

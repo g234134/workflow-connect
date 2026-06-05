@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 267,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_concatenate_chunks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_concatenate_chunks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1220,
+  "content_sha256": "039c2b0824d9332daa21ba755534590669286ac0ed5fc07b7da6d6777f6a6c16",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 31,
+    "char_count": 1220,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas.errors import DtypeWarning",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays import ArrowExtensionArray",
+      "from pandas.io.parsers.c_parser_wrapper import _concatenate_chunks",
+      "def test_concatenate_chunks_pyarrow():",
+      "    # GH#51876",
+      "    pa = pytest.importorskip(\"pyarrow\")",
+      "    chunks = ["
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas.errors import DtypeWarning",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays import ArrowExtensionArray",
+      "from pandas.io.parsers.c_parser_wrapper import _concatenate_chunks"
+    ],
+    "classes": [],
+    "functions": [
+      "test_concatenate_chunks_pyarrow",
+      "test_concatenate_chunks_pyarrow_strings"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_267_039c2b0824d9332d_AI_Chariot_Legacy_666_1.0.0_20260508_test_concatenate_chunks.py.json"
+}

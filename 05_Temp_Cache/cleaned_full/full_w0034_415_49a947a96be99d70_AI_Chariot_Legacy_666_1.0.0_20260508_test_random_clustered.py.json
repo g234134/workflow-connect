@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 415,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_random_clustered.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_random_clustered.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1297,
+  "content_sha256": "49a947a96be99d703742b0d13232f1d79764d9ce14b3c0a4e76725504468508f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 26,
+    "char_count": 1297,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "class TestRandomClusteredGraph:",
+      "    def test_custom_joint_degree_sequence(self):",
+      "        node = [1, 1, 1, 2, 1, 2, 0, 0]",
+      "        tri = [0, 0, 0, 0, 0, 1, 1, 1]",
+      "        joint_degree_sequence = zip(node, tri)",
+      "        G = nx.random_clustered_graph(joint_degree_sequence)",
+      "        assert G.number_of_nodes() == 8",
+      "        assert G.number_of_edges() == 7"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestRandomClusteredGraph"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_415_49a947a96be99d70_AI_Chariot_Legacy_666_1.0.0_20260508_test_random_clustered.py.json"
+}

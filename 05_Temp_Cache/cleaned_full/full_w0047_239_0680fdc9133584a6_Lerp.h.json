@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 239,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\Lerp.h",
+  "name": "Lerp.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1509,
+  "content_sha256": "0680fdc9133584a6714a006fc92985ecae22328bc18ed057cf7b1b9de83a40ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 36,
+    "char_count": 1509,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/native/DispatchStub.h>",
+      "#include <ATen/OpMathType.h>",
+      "#include <ATen/TensorIterator.h>",
+      "#include <c10/core/Scalar.h>",
+      "namespace at::native {",
+      "template <typename scalar_t>",
+      "C10_HOST_DEVICE C10_ALWAYS_INLINE bool is_lerp_weight_small(scalar_t weight) {",
+      "  return std::abs(weight) < scalar_t(0.5);",
+      "}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_239_0680fdc9133584a6_Lerp.h.json"
+}

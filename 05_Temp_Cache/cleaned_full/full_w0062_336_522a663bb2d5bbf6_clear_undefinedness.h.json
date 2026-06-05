@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 336,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\clear_undefinedness.h",
+  "name": "clear_undefinedness.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 899,
+  "content_sha256": "522a663bb2d5bbf6a43e14ab7baa946d9c910dbf45f5d8cbb6d0bfc1c0063fb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 20,
+    "char_count": 899,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/ATen.h>",
+      "#include <ATen/core/ivalue.h>",
+      "#include <ATen/core/jit_type.h>",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Undefinedness makes argument matching fail for regular tensor operations",
+      "// if 1+ arguments are undefined or possibly undefined tensors."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_336_522a663bb2d5bbf6_clear_undefinedness.h.json"
+}

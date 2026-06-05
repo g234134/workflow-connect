@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 112,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__aux.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__aux.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2352,
+  "content_sha256": "98fe1ba584f323e80cd544dc2f09e0d254ecce8588c029a9546354ca4bb7f4eb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 52,
+    "non_empty_lines": 40,
+    "char_count": 2352,
+    "preview_lines": [
+      "# SPDX-FileCopyrightText: 2026 geisserml <geisserml@gmail.com>",
+      "# SPDX-License-Identifier: Apache-2.0 OR BSD-3-Clause",
+      "import ctypes",
+      "import logging",
+      "import pypdfium2._helpers as pdfium",
+      "import pypdfium2.internal as pdfium_i",
+      "logger = logging.getLogger(\"pypdfium2_cli\")",
+      "class PdfSysfontListener (pdfium.PdfSysfontBase):",
+      "    def __init__(self, default=None, log_all=True):",
+      "        logger.debug(\"Installing sysfontinfo...\")"
+    ],
+    "imports": [
+      "import ctypes",
+      "import logging",
+      "import pypdfium2._helpers as pdfium",
+      "import pypdfium2.internal as pdfium_i"
+    ],
+    "classes": [
+      "PdfSysfontListener"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_112_98fe1ba584f323e8_AI_Chariot_Legacy_666_1.0.0_20260508__aux.py.json"
+}

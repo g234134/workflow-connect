@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rpc_agent_test_fixture.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rpc_agent_test_fixture.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1937,
+  "content_sha256": "ce1a735406abec6884ae80a4c15e18b962e71a71b5885438db3a3f5763cb7d50",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 51,
+    "char_count": 1937,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import os",
+      "from abc import ABC, abstractmethod",
+      "import torch.testing._internal.dist_utils",
+      "class RpcAgentTestFixture(ABC):",
+      "    @property",
+      "    def world_size(self) -> int:",
+      "        return 4",
+      "    @property",
+      "    def init_method(self):"
+    ],
+    "imports": [
+      "import os",
+      "from abc import ABC, abstractmethod",
+      "import torch.testing._internal.dist_utils"
+    ],
+    "classes": [
+      "RpcAgentTestFixture"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_398_ce1a735406abec68_AI_Chariot_Legacy_666_1.0.0_20260508_rpc_agent_test_fixture.py.json"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 364,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_masked.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_masked.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12722,
+  "content_sha256": "f5f5bada63b01f6a08fb5b5eccdaa5a6809e680892c2299400fdf7250e025fe7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 375,
+    "non_empty_lines": 318,
+    "char_count": 12722,
+    "preview_lines": [
+      "\"\"\"",
+      "This file contains a minimal set of tests for compliance with the extension",
+      "array interface test suite, and should contain no other tests.",
+      "The test suite for the full functionality of the array is located in",
+      "`pandas/tests/arrays/`.",
+      "The tests in this file are inherited from the BaseExtensionTests, and only",
+      "minimal tweaks should be applied to get the tests passing (by overwriting a",
+      "parent method).",
+      "Additional tests should either be added to one of the BaseExtensionTests",
+      "classes (if they are relevant for the extension interface for all dtypes), or"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas.compat import (",
+      "from pandas.compat.numpy import np_version_gt2",
+      "from pandas.core.dtypes.common import (",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.core.arrays.boolean import BooleanDtype",
+      "from pandas.core.arrays.floating import (",
+      "from pandas.core.arrays.integer import (",
+      "from pandas.tests.extension import base"
+    ],
+    "classes": [
+      "TestMaskedArrays"
+    ],
+    "functions": [
+      "make_data",
+      "make_float_data",
+      "make_bool_data",
+      "dtype",
+      "data",
+      "data_for_twos",
+      "data_missing",
+      "data_for_sorting",
+      "data_missing_for_sorting",
+      "na_cmp",
+      "data_for_grouping",
+      "test_cast_pointwise_result_all_na_respects_original_dtype"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_364_f5f5bada63b01f6a_AI_Chariot_Legacy_666_1.0.0_20260508_test_masked.py.json"
+}

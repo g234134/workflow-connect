@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\puiseux.py",
+  "name": "puiseux.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26518,
+  "content_sha256": "c1cff9c394725c77c0c02f4375efba79c3e6f72d73e430267ed86d499e770aa0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 795,
+    "non_empty_lines": 667,
+    "char_count": 26518,
+    "preview_lines": [
+      "\"\"\"",
+      "Puiseux rings. These are used by the ring_series module to represented",
+      "truncated Puiseux series. Elements of a Puiseux ring are like polynomials",
+      "except that the exponents can be negative or rational rather than just",
+      "non-negative integers.",
+      "\"\"\"",
+      "# Previously the ring_series module used PolyElement to represent Puiseux",
+      "# series. This is problematic because it means that PolyElement has to support",
+      "# negative and non-integer exponents which most polynomial representations do",
+      "# not support. This module provides an implementation of a ring for Puiseux"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from sympy.polys.domains import QQ",
+      "from sympy.polys.rings import PolyRing, PolyElement",
+      "from sympy.core.add import Add",
+      "from sympy.core.mul import Mul",
+      "from sympy.external.gmpy import gcd, lcm",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any, Unpack",
+      "from sympy.core.expr import Expr",
+      "from sympy.polys.domains import Domain",
+      "from collections.abc import Iterable, Iterator"
+    ],
+    "classes": [
+      "PuiseuxRing",
+      "PuiseuxPoly"
+    ],
+    "functions": [
+      "puiseux_ring",
+      "_div_poly_monom",
+      "_mul_poly_monom",
+      "_div_monom"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_114_c1cff9c394725c77_puiseux.py.json"
+}

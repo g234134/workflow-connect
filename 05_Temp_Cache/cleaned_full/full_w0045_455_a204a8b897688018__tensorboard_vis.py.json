@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 455,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\contrib\\_tensorboard_vis.py",
+  "name": "_tensorboard_vis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6058,
+  "content_sha256": "a204a8b897688018f4ea8d0c3cbb11c504905610862627b26256d5145e75f126",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 112,
+    "char_count": 6058,
+    "preview_lines": [
+      "import time",
+      "from collections import defaultdict",
+      "from functools import partial",
+      "from typing import DefaultDict",
+      "import torch",
+      "# Unfortunately it doesn't seem as if there was any way to get TensorBoard to do",
+      "# anything without having TF installed, and so this file has a hard dependency on it",
+      "# as well. It really is a debugging tool, so it doesn't matter.",
+      "try:",
+      "    from tensorflow.core.util import event_pb2"
+    ],
+    "imports": [
+      "import time",
+      "from collections import defaultdict",
+      "from functools import partial",
+      "from typing import DefaultDict",
+      "import torch",
+      "from tensorflow.core.util import event_pb2",
+      "from tensorflow.core.framework import graph_pb2",
+      "from tensorflow.python.summary.writer.writer import FileWriter"
+    ],
+    "classes": [],
+    "functions": [
+      "dump_tensorboard_summary",
+      "visualize",
+      "visualize_graph_executor",
+      "visualize_rec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_455_a204a8b897688018__tensorboard_vis.py.json"
+}

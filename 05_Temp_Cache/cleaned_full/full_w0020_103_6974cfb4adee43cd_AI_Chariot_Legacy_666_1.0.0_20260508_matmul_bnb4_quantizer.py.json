@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_matmul_bnb4_quantizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_matmul_bnb4_quantizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9263,
+  "content_sha256": "6974cfb4adee43cd184de4a77ff6ef0484ea7284e7bf1342cc996d038652f223",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 193,
+    "char_count": 9263,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation. All rights reserved.",
+      "# Licensed under the MIT License. See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "import argparse",
+      "import logging",
+      "import os",
+      "import numpy as np",
+      "import numpy.typing as npt"
+    ],
+    "imports": [
+      "import argparse",
+      "import logging",
+      "import os",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "import onnx",
+      "from onnx.onnx_pb import GraphProto, ModelProto, NodeProto, TensorProto",
+      "from onnxruntime.capi._pybind_state import quantize_matmul_bnb4",
+      "from .onnx_model import ONNXModel",
+      "from .quant_utils import attribute_to_kwarg"
+    ],
+    "classes": [
+      "MatMulBnb4Quantizer"
+    ],
+    "functions": [
+      "parse_args"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_103_6974cfb4adee43cd_AI_Chariot_Legacy_666_1.0.0_20260508_matmul_bnb4_quantizer.py.json"
+}

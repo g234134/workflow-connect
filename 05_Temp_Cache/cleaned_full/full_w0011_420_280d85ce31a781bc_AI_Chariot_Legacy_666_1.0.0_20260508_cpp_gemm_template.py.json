@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 420,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cpp_gemm_template.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cpp_gemm_template.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 47163,
+  "content_sha256": "280d85ce31a781bc8b7383997fe087d617a51a56427bc8806defc85ec91eb90d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1043,
+    "non_empty_lines": 951,
+    "char_count": 47163,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "import logging",
+      "import math",
+      "from functools import lru_cache",
+      "from typing import Any, Callable, cast, List, Optional, Set, Union",
+      "from unittest.mock import patch",
+      "import torch",
+      "import torch.utils",
+      "from ..._dynamo.utils import counters"
+    ],
+    "imports": [
+      "import contextlib",
+      "import logging",
+      "import math",
+      "from functools import lru_cache",
+      "from typing import Any, Callable, cast, List, Optional, Set, Union",
+      "from unittest.mock import patch",
+      "import torch",
+      "import torch.utils",
+      "from ..._dynamo.utils import counters",
+      "from .. import config, ir, lowering as L",
+      "from ..kernel.mm_common import mm_args",
+      "from ..select_algorithm import DataProcessorTemplateWrapper",
+      "from ..utils import cache_on_self, has_free_symbols, parallel_num_threads",
+      "from ..virtualized import ops, V",
+      "from .cpp import get_export_declaration",
+      "from .cpp_micro_gemm import CppMicroGemmAMX, create_micro_gemm, LayoutType",
+      "from .cpp_template import CppTemplate",
+      "from .cpp_template_kernel import CppTemplateKernel",
+      "from .cpp_utils import ("
+    ],
+    "classes": [
+      "CppPackedGemmTemplate"
+    ],
+    "functions": [
+      "get_padded_n"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_420_280d85ce31a781bc_AI_Chariot_Legacy_666_1.0.0_20260508_cpp_gemm_template.py.json"
+}

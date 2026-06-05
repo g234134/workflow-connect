@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ir_passes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ir_passes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1554,
+  "content_sha256": "94c985a58de535675366f1e799b75f51f5852cd8b1f0dbe7485c168e479294a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 29,
+    "char_count": 1554,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Sequence",
+      "from onnxscript import ir",
+      "logger = logging.getLogger(__name__)",
+      "def rename_inputs(model: ir.Model, new_names: Sequence[str]) -> None:",
+      "    # TODO: Ensure the names do not have duplicates",
+      "    for input, new_name in zip(model.graph.inputs, new_names):",
+      "        input.metadata_props[\"pkg.torch.onnx.original_node_name\"] = str(input.name)"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Sequence",
+      "from onnxscript import ir",
+      "from onnxscript.function_libs.torch_lib.ops import common as common_ops"
+    ],
+    "classes": [],
+    "functions": [
+      "rename_inputs",
+      "rename_outputs",
+      "add_torchlib_common_imports"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_409_94c985a58de53567_AI_Chariot_Legacy_666_1.0.0_20260508__ir_passes.py.json"
+}

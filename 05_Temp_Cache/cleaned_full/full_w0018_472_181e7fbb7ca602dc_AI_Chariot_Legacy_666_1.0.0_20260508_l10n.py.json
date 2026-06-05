@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_l10n.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_l10n.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1563,
+  "content_sha256": "181e7fbb7ca602dcf152d018f102dbfe9719af389ef59c4471afb536e2885c16",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 47,
+    "char_count": 1563,
+    "preview_lines": [
+      "from django.template import Library, Node, TemplateSyntaxError",
+      "from django.utils import formats",
+      "register = Library()",
+      "@register.filter(is_safe=False)",
+      "def localize(value):",
+      "    \"\"\"",
+      "    Force a value to be rendered as a localized value.",
+      "    \"\"\"",
+      "    return str(formats.localize(value, use_l10n=True))",
+      "@register.filter(is_safe=False)"
+    ],
+    "imports": [
+      "from django.template import Library, Node, TemplateSyntaxError",
+      "from django.utils import formats"
+    ],
+    "classes": [
+      "LocalizeNode"
+    ],
+    "functions": [
+      "localize",
+      "unlocalize",
+      "localize_tag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_472_181e7fbb7ca602dc_AI_Chariot_Legacy_666_1.0.0_20260508_l10n.py.json"
+}

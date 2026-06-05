@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 191,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_segment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_segment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35824,
+  "content_sha256": "22b6046129f03cfe552cec76637ce00c36c9495f777ceb4a61722c5f7b267d58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1013,
+    "non_empty_lines": 910,
+    "char_count": 35824,
+    "preview_lines": [
+      "from tenacity import retry, stop_after_attempt, retry_if_exception, wait_fixed",
+      "from chromadb.api import ServerAPI",
+      "from chromadb.api.collection_configuration import (",
+      "    CreateCollectionConfiguration,",
+      "    UpdateCollectionConfiguration,",
+      "    create_collection_configuration_to_json,",
+      ")",
+      "from chromadb.auth import UserIdentity",
+      "from chromadb.config import DEFAULT_DATABASE, DEFAULT_TENANT, Settings, System",
+      "from chromadb.db.system import SysDB"
+    ],
+    "imports": [
+      "from tenacity import retry, stop_after_attempt, retry_if_exception, wait_fixed",
+      "from chromadb.api import ServerAPI",
+      "from chromadb.api.collection_configuration import (",
+      "from chromadb.auth import UserIdentity",
+      "from chromadb.config import DEFAULT_DATABASE, DEFAULT_TENANT, Settings, System",
+      "from chromadb.db.system import SysDB",
+      "from chromadb.quota import QuotaEnforcer, Action",
+      "from chromadb.rate_limit import RateLimitEnforcer",
+      "from chromadb.segment import SegmentManager",
+      "from chromadb.execution.executor.abstract import Executor",
+      "from chromadb.execution.expression.operator import Scan, Filter, Limit, KNN, Projection",
+      "from chromadb.execution.expression.plan import CountPlan, GetPlan, KNNPlan",
+      "from chromadb.telemetry.opentelemetry import (",
+      "from chromadb.telemetry.product import ProductTelemetryClient",
+      "from chromadb.ingest import Producer",
+      "from chromadb.types import Collection as CollectionModel",
+      "from chromadb import __version__",
+      "from chromadb.errors import (",
+      "from chromadb.api.types import (",
+      "from chromadb.telemetry.product.events import ("
+    ],
+    "classes": [
+      "SegmentAPI"
+    ],
+    "functions": [
+      "check_index_name",
+      "rate_limit",
+      "_records"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_191_22b6046129f03cfe_AI_Chariot_Legacy_666_1.0.0_20260508_segment.py.json"
+}

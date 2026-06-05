@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_numpy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_numpy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19065,
+  "content_sha256": "8f0fa2123ef0540557779ae53b14c1307403eb79bdd2ae51050c6fd5e7bd74dc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 532,
+    "non_empty_lines": 446,
+    "char_count": 19065,
+    "preview_lines": [
+      "import itertools",
+      "import pytest",
+      "np = pytest.importorskip(\"numpy\")",
+      "npt = pytest.importorskip(\"numpy.testing\")",
+      "import networkx as nx",
+      "from networkx.generators.classic import barbell_graph, cycle_graph, path_graph",
+      "from networkx.utils import graphs_equal",
+      "class TestConvertNumpyArray:",
+      "    def setup_method(self):",
+      "        self.G1 = barbell_graph(10, 3)"
+    ],
+    "imports": [
+      "import itertools",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.generators.classic import barbell_graph, cycle_graph, path_graph",
+      "from networkx.utils import graphs_equal"
+    ],
+    "classes": [
+      "TestConvertNumpyArray"
+    ],
+    "functions": [
+      "multigraph_test_graph",
+      "test_numpy_multigraph",
+      "test_to_numpy_array_multigraph_nodelist",
+      "test_to_numpy_array_complex_weights",
+      "test_to_numpy_array_arbitrary_weights",
+      "test_to_numpy_array_multiweight_reduction",
+      "test_to_numpy_array_structured_dtype_attrs_from_fields",
+      "test_to_numpy_array_structured_dtype_single_attr_default",
+      "test_to_numpy_array_structured_dtype_single_attr",
+      "test_to_numpy_array_structured_dtype_multiple_fields",
+      "test_to_numpy_array_structured_dtype_scalar_nonedge",
+      "test_to_numpy_array_structured_dtype_nonedge_ary",
+      "test_to_numpy_array_structured_dtype_with_weight_raises",
+      "test_to_numpy_array_structured_multigraph_raises",
+      "test_from_numpy_array_nodelist_bad_size",
+      "test_from_numpy_array_nodelist",
+      "test_from_numpy_array_nodelist_directed",
+      "test_from_numpy_array_nodelist_multigraph",
+      "test_from_numpy_array_nodelist_rountrip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_331_8f0fa2123ef05405_AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_numpy.py.json"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\_content_store.py",
+  "name": "_content_store.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9289,
+  "content_sha256": "034be96815324b399df04cf44432655f5b48ce53ee6d4c0abceda4e6f195687d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 238,
+    "non_empty_lines": 212,
+    "char_count": 9289,
+    "preview_lines": [
+      "# This module provides a FAST (on GPU) content addressable store for storages",
+      "# (and tensors on top of them) with VERY WEAK portability guarantees (e.g.,",
+      "# don't expect CPU/CUDA to address to the same hash, don't expect it to be",
+      "# portable across devices) that is NOT cryptographically secure.  In return,",
+      "# we are able to hash 40G of tensor data on GPU in less than a second,",
+      "# compared to running SHA-1 in CPU which would a minute or so.  The primary",
+      "# use case is for efficiently snapshotting intermediate tensor data for",
+      "# offline debugging, but it's been put in this module in case you think of",
+      "# another use case for it.  The hash function could be replaced with a",
+      "# straight reimplementation of SHA-1, which would give us much stronger"
+    ],
+    "imports": [
+      "import ctypes",
+      "import functools",
+      "import hashlib",
+      "import os.path",
+      "import struct",
+      "from collections import defaultdict",
+      "from typing import Dict, Optional, Set",
+      "import torch",
+      "import torch._prims as prims",
+      "import torch._utils",
+      "import torch.nn.functional as F",
+      "from torch._C import default_generator",
+      "from torch.multiprocessing.reductions import StorageWeakRef",
+      "import torch._dynamo",
+      "from torch._dynamo.utils import is_compile_supported",
+      "import torch.cuda"
+    ],
+    "classes": [
+      "ContentStoreWriter",
+      "ContentStoreReader"
+    ],
+    "functions": [
+      "lazy_compile",
+      "hash_storage_kernel",
+      "hash_storage"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_123_034be96815324b39__content_store.py.json"
+}

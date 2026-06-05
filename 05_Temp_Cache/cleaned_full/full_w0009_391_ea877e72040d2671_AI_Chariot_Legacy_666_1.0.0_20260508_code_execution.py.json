@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 391,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_code_execution.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_code_execution.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12228,
+  "content_sha256": "ea877e72040d2671b45ee0a9ac0155ed69566fb59c60f07524dcc253c5a5be48",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 311,
+    "non_empty_lines": 260,
+    "char_count": 12228,
+    "preview_lines": [
+      "\"\"\"",
+      "Automatic Code Execution Handler for LiteLLM Skills",
+      "When `litellm_code_execution` tool is present, this handler automatically:",
+      "1. Makes the LLM call",
+      "2. Executes any code the model generates",
+      "3. Continues the conversation with results",
+      "4. Returns final response with generated files inline (base64)",
+      "This mimics Anthropic's behavior where code execution happens automatically.",
+      "Generated files are returned directly in the response - no separate storage needed.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import base64",
+      "import json",
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.litellm_proxy.skills.constants import (",
+      "import litellm",
+      "from litellm.llms.litellm_proxy.skills.sandbox_executor import ("
+    ],
+    "classes": [
+      "LiteLLMInternalTools",
+      "CodeExecutionHandler"
+    ],
+    "functions": [
+      "get_litellm_code_execution_tool",
+      "get_litellm_code_execution_tool_anthropic",
+      "has_code_execution_tool",
+      "add_code_execution_tool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_391_ea877e72040d2671_AI_Chariot_Legacy_666_1.0.0_20260508_code_execution.py.json"
+}

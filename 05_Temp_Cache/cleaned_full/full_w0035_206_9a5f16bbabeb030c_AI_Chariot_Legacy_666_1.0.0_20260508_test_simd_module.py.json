@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 206,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_simd_module.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_simd_module.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4055,
+  "content_sha256": "9a5f16bbabeb030c7b41bb3f9dfb76791d28dd3ba726e364113b55276ef5993e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 92,
+    "char_count": 4055,
+    "preview_lines": [
+      "import pytest",
+      "from numpy._core._simd import targets",
+      "\"\"\"",
+      "This testing unit only for checking the sanity of common functionality,",
+      "therefore all we need is just to take one submodule that represents any",
+      "of enabled SIMD extensions to run the test on it and the second submodule",
+      "required to run only one check related to the possibility of mixing",
+      "the data types among each submodule.",
+      "\"\"\"",
+      "npyvs = [npyv_mod for npyv_mod in targets.values() if npyv_mod and npyv_mod.simd]"
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy._core._simd import targets"
+    ],
+    "classes": [
+      "Test_SIMD_MODULE"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_206_9a5f16bbabeb030c_AI_Chariot_Legacy_666_1.0.0_20260508_test_simd_module.py.json"
+}

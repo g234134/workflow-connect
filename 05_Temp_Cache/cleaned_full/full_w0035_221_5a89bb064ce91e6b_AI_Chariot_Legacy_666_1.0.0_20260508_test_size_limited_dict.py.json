@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_size_limited_dict.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_size_limited_dict.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 765,
+  "content_sha256": "5a89bb064ce91e6bac1e2959cb4495dcf373870eee72e420aabc7cea37fc7aea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 17,
+    "char_count": 765,
+    "preview_lines": [
+      "import unittest",
+      "from parameterized import parameterized",
+      "from posthog import utils",
+      "class TestSizeLimitedDict(unittest.TestCase):",
+      "    @parameterized.expand([(10, 100), (5, 20), (20, 200)])",
+      "    def test_size_limited_dict(self, size: int, iterations: int) -> None:",
+      "        values = utils.SizeLimitedDict(size, lambda _: -1)",
+      "        for i in range(iterations):",
+      "            values[i] = i",
+      "            assert values[i] == i"
+    ],
+    "imports": [
+      "import unittest",
+      "from parameterized import parameterized",
+      "from posthog import utils"
+    ],
+    "classes": [
+      "TestSizeLimitedDict"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_221_5a89bb064ce91e6b_AI_Chariot_Legacy_666_1.0.0_20260508_test_size_limited_dict.py.json"
+}

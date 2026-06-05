@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 271,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_windows_console.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_windows_console.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22931,
+  "content_sha256": "ace5cf4f8947134db472bdb67a4544923e9fc96455ef6a350701ad782a3efbe5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 730,
+    "non_empty_lines": 601,
+    "char_count": 22931,
+    "preview_lines": [
+      "#   Copyright 2000-2004 Michael Hudson-Doyle <micahel@gmail.com>",
+      "#",
+      "#                        All Rights Reserved",
+      "#",
+      "#",
+      "# Permission to use, copy, modify, and distribute this software and",
+      "# its documentation for any purpose is hereby granted without fee,",
+      "# provided that the above copyright notice appear in all copies and",
+      "# that both that copyright notice and this permission notice appear in",
+      "# supporting documentation."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import io",
+      "import os",
+      "import sys",
+      "import ctypes",
+      "import types",
+      "from ctypes.wintypes import (",
+      "from ctypes import Structure, POINTER, Union",
+      "from .console import Event, Console",
+      "from .trace import trace",
+      "from .utils import wlen",
+      "from .windows_eventqueue import EventQueue",
+      "from ctypes import get_last_error, GetLastError, WinDLL, windll, WinError  # type: ignore[attr-defined]",
+      "from ctypes import CDLL as WinDLL, cdll as windll",
+      "import nt",
+      "from typing import IO"
+    ],
+    "classes": [
+      "_error",
+      "WindowsConsole",
+      "CONSOLE_SCREEN_BUFFER_INFO",
+      "CONSOLE_CURSOR_INFO",
+      "CHAR_INFO",
+      "Char",
+      "KeyEvent",
+      "WindowsBufferSizeEvent",
+      "ConsoleEvent",
+      "INPUT_RECORD"
+    ],
+    "functions": [
+      "_supports_vt"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_271_ace5cf4f8947134d_AI_Chariot_Legacy_666_1.0.0_20260508_windows_console.py.json"
+}

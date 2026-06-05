@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 70,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\lazy\\core\\ops\\arithmetic_ir_ops.h",
+  "name": "arithmetic_ir_ops.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 420,
+  "content_sha256": "fa5cf23b2667032ee4359eda568b2f1e9546f205487fc533a17cbe31d66f2f5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 10,
+    "char_count": 420,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/lazy/core/ir.h>",
+      "namespace torch {",
+      "namespace lazy {",
+      "TORCH_API NodePtr operator+(const Value& node1, const Value& node2);",
+      "TORCH_API NodePtr operator-(const Value& node1, const Value& node2);",
+      "TORCH_API NodePtr operator*(const Value& node1, const Value& node2);",
+      "TORCH_API NodePtr operator/(const Value& node1, const Value& node2);",
+      "} // namespace lazy",
+      "} // namespace torch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_070_fa5cf23b2667032e_arithmetic_ir_ops.h.json"
+}

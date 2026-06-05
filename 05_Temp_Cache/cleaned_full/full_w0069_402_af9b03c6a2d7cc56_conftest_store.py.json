@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\conftest_store.py",
+  "name": "conftest_store.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1493,
+  "content_sha256": "af9b03c6a2d7cc5652eaae052a25ed90045821b0dc9ecc9cc20a6a9c248140e4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 43,
+    "char_count": 1490,
+    "preview_lines": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from langgraph.store.base import BaseStore",
+      "from langgraph.store.memory import InMemoryStore",
+      "@contextmanager",
+      "def _store_memory() -> Iterator[BaseStore]:",
+      "    store = InMemoryStore()",
+      "    yield store",
+      "@asynccontextmanager",
+      "async def _store_memory_aio() -> AsyncIterator[BaseStore]:"
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from langgraph.store.base import BaseStore",
+      "from langgraph.store.memory import InMemoryStore"
+    ],
+    "classes": [],
+    "functions": [
+      "_store_memory",
+      "_store_postgres",
+      "_store_postgres_pipe",
+      "_store_postgres_pool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_402_af9b03c6a2d7cc56_conftest_store.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 154,
+  "generated_at": "2026-05-08T18:47:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\_core\\include\\numpy\\random\\bitgen.h",
+  "name": "bitgen.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 508,
+  "content_sha256": "fc7d2e5ea9a7b9be0fc6725674c59a36a7e9c850eed8a074b247f6c1ce6f8d47",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 15,
+    "char_count": 508,
+    "preview_lines": [
+      "#ifndef NUMPY_CORE_INCLUDE_NUMPY_RANDOM_BITGEN_H_",
+      "#define NUMPY_CORE_INCLUDE_NUMPY_RANDOM_BITGEN_H_",
+      "#pragma once",
+      "#include <stddef.h>",
+      "#include <stdbool.h>",
+      "#include <stdint.h>",
+      "/* Must match the declaration in numpy/random/<any>.pxd */",
+      "typedef struct bitgen {",
+      "  void *state;",
+      "  uint64_t (*next_uint64)(void *st);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_154_fc7d2e5ea9a7b9be_bitgen.h.json"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_logging\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 731,
+  "content_sha256": "d032b3040b362170c4eec3193f2a55ab7490ebfc699a20dea43f8ed7a616482a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 15,
+    "char_count": 731,
+    "preview_lines": [
+      "# Top level logging module for torch logging",
+      "# Design doc: https://docs.google.com/document/d/1ZRfTWKa8eaPq1AxaiHrq4ASTPouzzlPiuquSBEJYwS8/edit#",
+      "# Simple setup for onboarding (see above doc for more detail):",
+      "# 1. register any top-level log qualified name for your module in torch._logging._registrations (see there for examples)",
+      "# 2. register any artifacts (<artifact_name> below) in torch._logging._registrations",
+      "#   a. call getArtifactLogger(__name__, <artifact_name>) at your logging site instead of the standard logger to log your artifact",
+      "import torch._logging._registrations",
+      "from ._internal import (",
+      "    _init_logs,",
+      "    DEFAULT_LOGGING,"
+    ],
+    "imports": [
+      "import torch._logging._registrations",
+      "from ._internal import ("
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_195_d032b3040b362170___init__.py.json"
+}

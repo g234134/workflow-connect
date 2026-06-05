@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 24,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_uploadhandler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_uploadhandler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7184,
+  "content_sha256": "29b6d853d26dbc276aa8b8c62f7345a1be05de4b746d223bf8429580a1c838f8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 253,
+    "non_empty_lines": 207,
+    "char_count": 7184,
+    "preview_lines": [
+      "\"\"\"",
+      "Base file upload handler classes, and the built-in concrete subclasses",
+      "\"\"\"",
+      "import os",
+      "from io import BytesIO",
+      "from django.conf import settings",
+      "from django.core.files.uploadedfile import InMemoryUploadedFile, TemporaryUploadedFile",
+      "from django.utils.module_loading import import_string",
+      "__all__ = [",
+      "    \"UploadFileException\","
+    ],
+    "imports": [
+      "import os",
+      "from io import BytesIO",
+      "from django.conf import settings",
+      "from django.core.files.uploadedfile import InMemoryUploadedFile, TemporaryUploadedFile",
+      "from django.utils.module_loading import import_string"
+    ],
+    "classes": [
+      "UploadFileException",
+      "StopUpload",
+      "SkipFile",
+      "StopFutureHandlers",
+      "FileUploadHandler",
+      "TemporaryFileUploadHandler",
+      "MemoryFileUploadHandler"
+    ],
+    "functions": [
+      "load_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_024_29b6d853d26dbc27_AI_Chariot_Legacy_666_1.0.0_20260508_uploadhandler.py.json"
+}

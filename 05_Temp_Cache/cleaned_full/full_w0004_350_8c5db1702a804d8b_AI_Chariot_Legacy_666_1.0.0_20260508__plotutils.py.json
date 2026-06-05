@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__plotutils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__plotutils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7831,
+  "content_sha256": "8c5db1702a804d8b18bdc53d993dd3ad25b115aff4c0560c62dd7e43b2d7cede",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 274,
+    "non_empty_lines": 207,
+    "char_count": 7831,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy._lib.decorator import decorator as _decorator",
+      "__all__ = ['delaunay_plot_2d', 'convex_hull_plot_2d', 'voronoi_plot_2d']",
+      "@_decorator",
+      "def _held_figure(func, obj, ax=None, **kw):",
+      "    import matplotlib.pyplot as plt",
+      "    if ax is None:",
+      "        fig = plt.figure()",
+      "        ax = fig.gca()",
+      "        return func(obj, ax=ax, **kw)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy._lib.decorator import decorator as _decorator",
+      "import matplotlib.pyplot as plt",
+      "from matplotlib.collections import LineCollection"
+    ],
+    "classes": [],
+    "functions": [
+      "_held_figure",
+      "_adjust_bounds",
+      "delaunay_plot_2d",
+      "convex_hull_plot_2d",
+      "voronoi_plot_2d"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_350_8c5db1702a804d8b_AI_Chariot_Legacy_666_1.0.0_20260508__plotutils.py.json"
+}

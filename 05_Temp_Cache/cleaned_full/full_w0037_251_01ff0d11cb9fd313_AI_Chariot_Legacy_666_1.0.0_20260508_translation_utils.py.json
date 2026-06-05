@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_translation_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_translation_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23023,
+  "content_sha256": "01ff0d11cb9fd3138186544752cd3a923497930b1a98a0467acf0b6d23d785d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 755,
+    "non_empty_lines": 635,
+    "char_count": 23023,
+    "preview_lines": [
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "\"\"\"",
+      "Localization utilities to find available language packs and packages with",
+      "localization data.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import gettext",
+      "import importlib",
+      "import json"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import gettext",
+      "import importlib",
+      "import json",
+      "import locale",
+      "import os",
+      "import re",
+      "import sys",
+      "import traceback",
+      "from functools import lru_cache",
+      "from re import Pattern",
+      "from typing import Any",
+      "import babel",
+      "from packaging.version import parse as parse_version",
+      "from importlib_metadata import entry_points",
+      "from importlib.metadata import entry_points"
+    ],
+    "classes": [
+      "TranslationBundle",
+      "translator"
+    ],
+    "functions": [
+      "_get_default_schema_selectors",
+      "_prepare_schema_patterns",
+      "_get_installed_language_pack_locales",
+      "_get_installed_package_locales",
+      "is_valid_locale",
+      "get_display_name",
+      "merge_locale_data",
+      "get_installed_packages_locale",
+      "get_language_packs",
+      "get_language_pack"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_251_01ff0d11cb9fd313_AI_Chariot_Legacy_666_1.0.0_20260508_translation_utils.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9240,
+  "content_sha256": "7fe0eb3602f2f82edda3efd3025108e7c1fe76271553b66097a24e39fa6593d0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 276,
+    "non_empty_lines": 199,
+    "char_count": 9240,
+    "preview_lines": [
+      "\"\"\"",
+      "Where should I add a new type? `types_base.py` vs `types.py`",
+      "This file defines data model classes for torchgen typing system, as well as some base types such as int32_t.",
+      "`types.py` defines ATen Tensor type and some c10 types, along with signatures that use these types.",
+      "The difference between these two files, is `types_base.py` should be implementation-agnostic, meaning it shouldn't",
+      "contain any type definition that is tight to a specific C++ library (e.g., ATen), so that it can be easily reused",
+      "if we want to generate code for another C++ library.",
+      "Add new types to `types.py` if these types are ATen/c10 related.",
+      "Add new types to `types_base.py` if they are basic and not attached to ATen/c10.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from enum import auto, Enum",
+      "from typing import TYPE_CHECKING, Union",
+      "from torchgen.model import Argument, SelfArgument, TensorOptionsArguments"
+    ],
+    "classes": [
+      "SpecialArgName",
+      "BaseCppType",
+      "CType",
+      "BaseCType",
+      "ConstRefCType",
+      "VectorCType",
+      "ArrayCType",
+      "TupleCType",
+      "MutRefCType",
+      "NamedCType",
+      "Binding",
+      "Expr"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_377_7fe0eb3602f2f82e_AI_Chariot_Legacy_666_1.0.0_20260508_types_base.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_doc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_doc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5764,
+  "content_sha256": "f2c37974feb898656f006f3c5352f6891058ccdda4c9ecbac8e39423913be039",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 174,
+    "non_empty_lines": 138,
+    "char_count": 5764,
+    "preview_lines": [
+      "\"\"\"Any shareable docstring components for rolling/expanding/ewm\"\"\"",
+      "from __future__ import annotations",
+      "from textwrap import dedent",
+      "from pandas.core.shared_docs import _shared_docs",
+      "_shared_docs = dict(**_shared_docs)",
+      "def create_section_header(header: str) -> str:",
+      "    \"\"\"Create numpydoc section header\"\"\"",
+      "    return f\"{header}\\n{'-' * len(header)}\\n\"",
+      "template_header = \"\\nCalculate the {window_method} {aggregation_description}.\\n\\n\"",
+      "template_returns = dedent("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from textwrap import dedent",
+      "from pandas.core.shared_docs import _shared_docs"
+    ],
+    "classes": [],
+    "functions": [
+      "create_section_header",
+      "window_agg_numba_parameters"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_085_f2c37974feb89865_AI_Chariot_Legacy_666_1.0.0_20260508_doc.py.json"
+}

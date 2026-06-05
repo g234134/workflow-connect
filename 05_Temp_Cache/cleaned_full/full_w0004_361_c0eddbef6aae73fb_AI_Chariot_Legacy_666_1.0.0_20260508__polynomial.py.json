@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 361,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__polynomial.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__polynomial.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 52164,
+  "content_sha256": "c0eddbef6aae73fb041a49ab4a256aa897eeb7c30f75d51a051b57011834d7a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1255,
+    "non_empty_lines": 1096,
+    "char_count": 52164,
+    "preview_lines": [
+      "\"\"\"",
+      "This file contains preprocessing tools based on polynomials.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import collections",
+      "from itertools import chain, combinations",
+      "from itertools import combinations_with_replacement as combinations_w_r",
+      "from numbers import Integral",
+      "import numpy as np"
+    ],
+    "imports": [
+      "import collections",
+      "from itertools import chain, combinations",
+      "from itertools import combinations_with_replacement as combinations_w_r",
+      "from numbers import Integral",
+      "import numpy as np",
+      "from scipy import sparse",
+      "from scipy.interpolate import BSpline",
+      "from scipy.special import comb",
+      "from sklearn.base import BaseEstimator, TransformerMixin, _fit_context",
+      "from sklearn.preprocessing._csr_polynomial_expansion import (",
+      "from sklearn.utils import check_array",
+      "from sklearn.utils._array_api import (",
+      "from sklearn.utils._mask import _get_mask",
+      "from sklearn.utils._param_validation import Interval, StrOptions",
+      "from sklearn.utils.stats import _weighted_percentile",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "PolynomialFeatures",
+      "SplineTransformer"
+    ],
+    "functions": [
+      "_create_expansion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_361_c0eddbef6aae73fb_AI_Chariot_Legacy_666_1.0.0_20260508__polynomial.py.json"
+}

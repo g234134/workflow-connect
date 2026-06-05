@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 50,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_percolation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_percolation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4419,
+  "content_sha256": "60907c89881ba632771182bca65dba8929e381f16c2b7d6e7f2b511e75136181",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 101,
+    "char_count": 4415,
+    "preview_lines": [
+      "\"\"\"Percolation centrality measures.\"\"\"",
+      "import networkx as nx",
+      "from networkx.algorithms.centrality.betweenness import (",
+      "    _single_source_dijkstra_path_basic as dijkstra,",
+      ")",
+      "from networkx.algorithms.centrality.betweenness import (",
+      "    _single_source_shortest_path_basic as shortest_path,",
+      ")",
+      "__all__ = [\"percolation_centrality\"]",
+      "@nx._dispatchable(node_attrs=\"attribute\", edge_attrs=\"weight\")"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.algorithms.centrality.betweenness import (",
+      "from networkx.algorithms.centrality.betweenness import ("
+    ],
+    "classes": [],
+    "functions": [
+      "percolation_centrality",
+      "_accumulate_percolation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_050_60907c89881ba632_AI_Chariot_Legacy_666_1.0.0_20260508_percolation.py.json"
+}

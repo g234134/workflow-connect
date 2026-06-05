@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 2,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pattern_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pattern_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8602,
+  "content_sha256": "3384cc0e0e6ab2b463de26162754d86685f34cc6d8706e9b479d9e97bdae1513",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 209,
+    "non_empty_lines": 180,
+    "char_count": 8602,
+    "preview_lines": [
+      "from typing import Any, Callable, Dict, List, Set, Tuple, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization import FakeQuantizeBase, ObserverBase",
+      "from torch.ao.quantization.backend_config import get_native_backend_config",
+      "from torch.ao.quantization.fx.quantize_handler import _get_pattern_to_quantize_handlers",
+      "from torch.ao.quantization.utils import getattr_from_fqn",
+      "from torch.fx import GraphModule",
+      "from torch.fx.graph import Node"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Dict, List, Set, Tuple, Union",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization import FakeQuantizeBase, ObserverBase",
+      "from torch.ao.quantization.backend_config import get_native_backend_config",
+      "from torch.ao.quantization.fx.quantize_handler import _get_pattern_to_quantize_handlers",
+      "from torch.ao.quantization.utils import getattr_from_fqn",
+      "from torch.fx import GraphModule",
+      "from torch.fx.graph import Node",
+      "from .ns_types import NSNodeTargetType"
+    ],
+    "classes": [],
+    "functions": [
+      "get_type_a_related_to_b",
+      "get_reversed_fusions",
+      "end_node_matches_reversed_fusion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_002_3384cc0e0e6ab2b4_AI_Chariot_Legacy_666_1.0.0_20260508_pattern_utils.py.json"
+}

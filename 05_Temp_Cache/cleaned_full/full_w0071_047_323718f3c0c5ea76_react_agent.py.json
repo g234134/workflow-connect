@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 47,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\bench\\react_agent.py",
+  "name": "react_agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2596,
+  "content_sha256": "323718f3c0c5ea76731ee11693775fdc221778c8f9257f79d82aa7b67f694dbf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 66,
+    "char_count": 2593,
+    "preview_lines": [
+      "from typing import Any",
+      "from uuid import uuid4",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.fake_chat_models import (",
+      "    FakeMessagesListChatModel,",
+      ")",
+      "from langchain_core.messages import AIMessage, BaseMessage, HumanMessage",
+      "from langchain_core.outputs import ChatGeneration, ChatResult",
+      "from langchain_core.tools import StructuredTool",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from uuid import uuid4",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.fake_chat_models import (",
+      "from langchain_core.messages import AIMessage, BaseMessage, HumanMessage",
+      "from langchain_core.outputs import ChatGeneration, ChatResult",
+      "from langchain_core.tools import StructuredTool",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from langgraph.prebuilt.chat_agent_executor import create_react_agent",
+      "from langgraph.pregel import Pregel",
+      "import asyncio",
+      "import uvloop",
+      "from langgraph.checkpoint.memory import InMemorySaver"
+    ],
+    "classes": [],
+    "functions": [
+      "react_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_047_323718f3c0c5ea76_react_agent.py.json"
+}

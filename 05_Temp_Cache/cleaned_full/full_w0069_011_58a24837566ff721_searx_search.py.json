@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 11,
+  "generated_at": "2026-05-08T18:48:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\utilities\\searx_search.py",
+  "name": "searx_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 843,
+  "content_sha256": "58a24837566ff72170c92d7ac89efc1ef88ceb8b3ac397f6b4e1668ff7437eee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 20,
+    "char_count": 840,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.utilities import SearxSearchWrapper",
+      "    from langchain_community.utilities.searx_search import SearxResults",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"SearxResults\": \"langchain_community.utilities.searx_search\","
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.utilities import SearxSearchWrapper",
+      "from langchain_community.utilities.searx_search import SearxResults"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_011_58a24837566ff721_searx_search.py.json"
+}

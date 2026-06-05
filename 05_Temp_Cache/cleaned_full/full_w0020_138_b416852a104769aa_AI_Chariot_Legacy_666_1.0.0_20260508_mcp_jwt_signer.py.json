@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 138,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mcp_jwt_signer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mcp_jwt_signer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34731,
+  "content_sha256": "b416852a104769aa734dfa9f37c7037f72955bd3c70d10b062fa2babe0237374",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 891,
+    "non_empty_lines": 752,
+    "char_count": 34675,
+    "preview_lines": [
+      "\"\"\"",
+      "MCPJWTSigner — Built-in LiteLLM guardrail for zero trust MCP authentication.",
+      "Signs outbound MCP requests with a LiteLLM-issued RS256 JWT so that MCP servers",
+      "can trust a single signing authority (liteLLM) instead of every upstream IdP.",
+      "Usage in config.yaml:",
+      "    guardrails:",
+      "      - guardrail_name: \"mcp-jwt-signer\"",
+      "        litellm_params:",
+      "          guardrail: mcp_jwt_signer",
+      "          mode: \"pre_mcp_call\""
+    ],
+    "imports": [
+      "import base64",
+      "import hashlib",
+      "import os",
+      "import re",
+      "import time",
+      "from typing import Any, Dict, List, Optional, Union",
+      "import jwt",
+      "from cryptography.hazmat.primitives import serialization",
+      "from cryptography.hazmat.primitives.asymmetric import rsa",
+      "from cryptography.hazmat.primitives.asymmetric.rsa import RSAPrivateKey",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import DualCache",
+      "from litellm.integrations.custom_guardrail import (",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.types.utils import CallTypesLiteral",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.llms.custom_httpx.http_handler import ("
+    ],
+    "classes": [
+      "MCPJWTSigner"
+    ],
+    "functions": [
+      "get_mcp_jwt_signer",
+      "_load_private_key_from_env",
+      "_generate_rsa_key_pair",
+      "_int_to_base64url",
+      "_compute_kid"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_138_b416852a104769aa_AI_Chariot_Legacy_666_1.0.0_20260508_mcp_jwt_signer.py.json"
+}

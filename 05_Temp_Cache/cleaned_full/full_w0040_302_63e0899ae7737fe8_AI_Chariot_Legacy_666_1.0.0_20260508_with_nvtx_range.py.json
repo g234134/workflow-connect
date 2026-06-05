@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_with_nvtx_range.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_with_nvtx_range.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1337,
+  "content_sha256": "63e0899ae7737fe8f2610877e96e8aec021d2e9a5476b63bc95ee64044fa8640",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 33,
+    "char_count": 1337,
+    "preview_lines": [
+      "from typing import Any, Callable, Optional, Tuple, TypeVar",
+      "from ..model import Model",
+      "from ..util import use_nvtx_range",
+      "_ModelT = TypeVar(\"_ModelT\", bound=Model)",
+      "def with_nvtx_range(",
+      "    layer: _ModelT,",
+      "    name: Optional[str] = None,",
+      "    *,",
+      "    forward_color: int = -1,",
+      "    backprop_color: int = -1,"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Optional, Tuple, TypeVar",
+      "from ..model import Model",
+      "from ..util import use_nvtx_range"
+    ],
+    "classes": [],
+    "functions": [
+      "with_nvtx_range"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_302_63e0899ae7737fe8_AI_Chariot_Legacy_666_1.0.0_20260508_with_nvtx_range.py.json"
+}

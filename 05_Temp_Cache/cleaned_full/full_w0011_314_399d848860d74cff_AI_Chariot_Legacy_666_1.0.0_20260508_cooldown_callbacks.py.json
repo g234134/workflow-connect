@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 314,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cooldown_callbacks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cooldown_callbacks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3162,
+  "content_sha256": "399d848860d74cff5940825a406373fd332f13df9cf8164a61bb27f330625631",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 84,
+    "char_count": 3162,
+    "preview_lines": [
+      "\"\"\"",
+      "Callbacks triggered on cooling down deployments",
+      "\"\"\"",
+      "import copy",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "if TYPE_CHECKING:",
+      "    from litellm.router import Router as _Router",
+      "    LitellmRouter = _Router"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.router import Router as _Router",
+      "from litellm.integrations.prometheus import PrometheusLogger",
+      "from litellm.integrations.prometheus import PrometheusLogger"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_prometheus_logger_from_callbacks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_314_399d848860d74cff_AI_Chariot_Legacy_666_1.0.0_20260508_cooldown_callbacks.py.json"
+}

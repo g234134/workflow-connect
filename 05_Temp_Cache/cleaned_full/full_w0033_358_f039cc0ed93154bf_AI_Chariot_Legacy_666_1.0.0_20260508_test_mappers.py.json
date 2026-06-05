@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 358,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_mappers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_mappers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1706,
+  "content_sha256": "f039cc0ed93154bf6d7948e39fb6cde0681abb0950e12e8dd91d5015d8f945a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 41,
+    "char_count": 1706,
+    "preview_lines": [
+      "import numpy",
+      "import pytest",
+      "from thinc.layers import premap_ids, remap_ids, remap_ids_v2",
+      "@pytest.fixture",
+      "def keys():",
+      "    return numpy.array([4, 2, 6, 1, 8, 7, 9, 3, 30])",
+      "@pytest.fixture",
+      "def mapper(keys):",
+      "    return {int(k): int(v) for v, k in enumerate(keys)}",
+      "def test_premap(keys, mapper):"
+    ],
+    "imports": [
+      "import numpy",
+      "import pytest",
+      "from thinc.layers import premap_ids, remap_ids, remap_ids_v2"
+    ],
+    "classes": [],
+    "functions": [
+      "keys",
+      "mapper",
+      "test_premap",
+      "test_remap",
+      "test_remap_v2",
+      "test_remap_premap_eq",
+      "test_column"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_358_f039cc0ed93154bf_AI_Chariot_Legacy_666_1.0.0_20260508_test_mappers.py.json"
+}

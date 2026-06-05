@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_map.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_map.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3640,
+  "content_sha256": "b82c0762c44adf2af7745c030afe291e2badfe360925046c8e58d85340717696",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 110,
+    "non_empty_lines": 93,
+    "char_count": 3640,
+    "preview_lines": [
+      "# Copyright 2007 Google, Inc. All Rights Reserved.",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "\"\"\"Fixer that changes map(F, ...) into list(map(F, ...)) unless there",
+      "exists a 'from future_builtins import map' statement in the top-level",
+      "namespace.",
+      "As a special case, map(None, X) is changed into list(X).  (This is",
+      "necessary because the semantics are changed in this case -- the new",
+      "map(None, X) is equivalent to [(x,) for x in X].)",
+      "We avoid the transformation (except for the special case mentioned",
+      "above) if the map() call is directly contained in iter(<>), list(<>),"
+    ],
+    "imports": [
+      "from ..pgen2 import token",
+      "from .. import fixer_base",
+      "from ..fixer_util import Name, ArgList, Call, ListComp, in_special_context",
+      "from ..pygram import python_symbols as syms",
+      "from ..pytree import Node"
+    ],
+    "classes": [
+      "FixMap"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_087_b82c0762c44adf2a_AI_Chariot_Legacy_666_1.0.0_20260508_fix_map.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:47:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\mpmath\\tests\\test_diff.py",
+  "name": "test_diff.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2466,
+  "content_sha256": "aa3885f0dc50f2fb9eb99e591c63d0fa48dc8ff23b261fdf11d16d680f03cc42",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 57,
+    "char_count": 2466,
+    "preview_lines": [
+      "from mpmath import *",
+      "def test_diff():",
+      "    mp.dps = 15",
+      "    assert diff(log, 2.0, n=0).ae(log(2))",
+      "    assert diff(cos, 1.0).ae(-sin(1))",
+      "    assert diff(abs, 0.0) == 0",
+      "    assert diff(abs, 0.0, direction=1) == 1",
+      "    assert diff(abs, 0.0, direction=-1) == -1",
+      "    assert diff(exp, 1.0).ae(e)",
+      "    assert diff(exp, 1.0, n=5).ae(e)"
+    ],
+    "imports": [
+      "from mpmath import *"
+    ],
+    "classes": [],
+    "functions": [
+      "test_diff",
+      "test_diffs",
+      "test_taylor",
+      "test_diff_partial"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_242_aa3885f0dc50f2fb_test_diff.py.json"
+}

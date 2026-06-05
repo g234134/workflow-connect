@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transform_to_z3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transform_to_z3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15080,
+  "content_sha256": "925893358087eeac9007e8839764fe591f62f75ea0404c99ffe3ed7e42d20566",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 349,
+    "non_empty_lines": 270,
+    "char_count": 15080,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from torch.fx.experimental.migrate_gradual_types.constraint import Conj, Disj, T, F, BinConstraintT, BVar, is_bool_expr",
+      "from torch.fx.experimental.migrate_gradual_types.constraint import BinConstraintD, TVar, DVar",
+      "from torch.fx.experimental.migrate_gradual_types.constraint import Prod, is_algebraic_expression, is_dim",
+      "from torch.fx.experimental.migrate_gradual_types.constraint_generator import ConstraintGenerator",
+      "from torch.fx.experimental.migrate_gradual_types.constraint_transformation import transform_constraint",
+      "from torch.fx.experimental.migrate_gradual_types.operation import op_add, op_eq, op_neq, op_gt, op_lt",
+      "from torch.fx.experimental.migrate_gradual_types.operation import op_leq, op_sub, op_div, op_mul, op_mod",
+      "from torch.fx.tensor_type import TensorType, Dyn",
+      "try:"
+    ],
+    "imports": [
+      "from torch.fx.experimental.migrate_gradual_types.constraint import Conj, Disj, T, F, BinConstraintT, BVar, is_bool_expr",
+      "from torch.fx.experimental.migrate_gradual_types.constraint import BinConstraintD, TVar, DVar",
+      "from torch.fx.experimental.migrate_gradual_types.constraint import Prod, is_algebraic_expression, is_dim",
+      "from torch.fx.experimental.migrate_gradual_types.constraint_generator import ConstraintGenerator",
+      "from torch.fx.experimental.migrate_gradual_types.constraint_transformation import transform_constraint",
+      "from torch.fx.experimental.migrate_gradual_types.operation import op_add, op_eq, op_neq, op_gt, op_lt",
+      "from torch.fx.experimental.migrate_gradual_types.operation import op_leq, op_sub, op_div, op_mul, op_mod",
+      "from torch.fx.tensor_type import TensorType, Dyn",
+      "import z3  # type: ignore[import]",
+      "from torch.fx.experimental.migrate_gradual_types.z3_types import tensor_type, z3_dyn, D"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_231_925893358087eeac_AI_Chariot_Legacy_666_1.0.0_20260508_transform_to_z3.py.json"
+}

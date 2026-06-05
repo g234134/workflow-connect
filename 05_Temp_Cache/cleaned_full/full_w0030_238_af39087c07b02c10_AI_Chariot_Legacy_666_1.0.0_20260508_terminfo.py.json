@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_terminfo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_terminfo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18450,
+  "content_sha256": "af39087c07b02c10c845e646d98facf243df12359dbdf0446c9ad61df99ea612",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 488,
+    "non_empty_lines": 429,
+    "char_count": 18450,
+    "preview_lines": [
+      "\"\"\"Pure Python curses-like terminal capability queries.\"\"\"",
+      "from dataclasses import dataclass, field",
+      "import errno",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import struct",
+      "# Terminfo constants",
+      "MAGIC16 = 0o432  # Magic number for 16-bit terminfo format",
+      "MAGIC32 = 0o1036  # Magic number for 32-bit terminfo format"
+    ],
+    "imports": [
+      "from dataclasses import dataclass, field",
+      "import errno",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import struct"
+    ],
+    "classes": [
+      "TermInfo"
+    ],
+    "functions": [
+      "_get_terminfo_dirs",
+      "_validate_terminal_name_or_raise",
+      "_read_terminfo_file",
+      "tparm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_238_af39087c07b02c10_AI_Chariot_Legacy_666_1.0.0_20260508_terminfo.py.json"
+}

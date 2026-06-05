@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 300,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gte_mlx_model.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gte_mlx_model.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5403,
+  "content_sha256": "aa51ca120dfdfca11e846b0cd4ab67223c1765d51d2f7f665c32f5e718744b9b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 127,
+    "char_count": 5403,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "import json",
+      "from typing import List, Optional",
+      "import numpy as np",
+      "from huggingface_hub import snapshot_download",
+      "from pydantic import BaseModel",
+      "from transformers import BertTokenizer",
+      "from .utils import create_import_stub",
+      "try:"
+    ],
+    "imports": [
+      "import json",
+      "from typing import List, Optional",
+      "import numpy as np",
+      "from huggingface_hub import snapshot_download",
+      "from pydantic import BaseModel",
+      "from transformers import BertTokenizer",
+      "from .utils import create_import_stub",
+      "import mlx.core as mx",
+      "import mlx.nn as nn"
+    ],
+    "classes": [
+      "ModelConfig",
+      "TransformerEncoderLayer",
+      "TransformerEncoder",
+      "BertEmbeddings",
+      "Bert",
+      "Model"
+    ],
+    "functions": [
+      "average_pool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_300_aa51ca120dfdfca1_AI_Chariot_Legacy_666_1.0.0_20260508_gte_mlx_model.py.json"
+}

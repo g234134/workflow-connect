@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_buffer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_buffer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 736,
+  "content_sha256": "6753d47baa9276d53800d7cc1e33378272ed4cb98ab5d0e6734da60115250cdc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 20,
+    "char_count": 736,
+    "preview_lines": [
+      "from srsly.msgpack import packb, unpackb",
+      "def test_unpack_buffer():",
+      "    from array import array",
+      "    buf = array(\"b\")",
+      "    buf.frombytes(packb((b\"foo\", b\"bar\")))",
+      "    obj = unpackb(buf, use_list=1)",
+      "    assert [b\"foo\", b\"bar\"] == obj",
+      "def test_unpack_bytearray():",
+      "    buf = bytearray(packb((\"foo\", \"bar\")))",
+      "    obj = unpackb(buf, use_list=1)"
+    ],
+    "imports": [
+      "from srsly.msgpack import packb, unpackb",
+      "from array import array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_unpack_buffer",
+      "test_unpack_bytearray",
+      "test_unpack_memoryview"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_087_6753d47baa9276d5_AI_Chariot_Legacy_666_1.0.0_20260508_test_buffer.py.json"
+}

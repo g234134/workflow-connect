@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\matrices\\domainmatrix.py",
+  "name": "domainmatrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 115928,
+  "content_sha256": "32f8d647343894acd7dab0a5f2646da6221749eeb8d7fc7a38cad3afc8ac70f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 3983,
+    "non_empty_lines": 3092,
+    "char_count": 115915,
+    "preview_lines": [
+      "\"\"\"",
+      "Module for the DomainMatrix class.",
+      "A DomainMatrix represents a matrix with elements that are in a particular",
+      "Domain. Each DomainMatrix internally wraps a DDM which is used for the",
+      "lower-level operations. The idea is that the DomainMatrix class provides the",
+      "convenience routines for converting between Expr and the poly domains as well",
+      "as unifying matrices with different domains.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from collections import Counter"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import Counter",
+      "from functools import reduce",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from sympy.core.sympify import _sympify",
+      "from ..domains import Domain",
+      "from ..constructor import construct_domain",
+      "from .exceptions import (",
+      "from .domainscalar import DomainScalar",
+      "from sympy.polys.domains import ZZ, EXRAW, QQ",
+      "from sympy.polys.densearith import dup_mul",
+      "from sympy.polys.densebasic import dup_convert",
+      "from sympy.polys.densetools import (",
+      "from sympy.polys.factortools import dup_factor_list",
+      "from sympy.polys.polyutils import _sort_factors",
+      "from .ddm import DDM",
+      "from .sdm import SDM",
+      "from .dfm import DFM",
+      "from .rref import _dm_rref, _dm_rref_den"
+    ],
+    "classes": [
+      "DomainMatrix"
+    ],
+    "functions": [
+      "DM",
+      "_collect_factors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_083_32f8d647343894ac_domainmatrix.py.json"
+}

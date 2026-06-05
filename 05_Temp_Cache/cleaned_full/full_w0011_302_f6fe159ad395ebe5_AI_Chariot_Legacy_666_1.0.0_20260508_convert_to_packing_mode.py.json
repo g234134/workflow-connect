@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_convert_to_packing_mode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_convert_to_packing_mode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16804,
+  "content_sha256": "f6fe159ad395ebe593e05ae021020b4a5bb6849245c0d5d28928f55b99dbe848",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 385,
+    "non_empty_lines": 315,
+    "char_count": 16804,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "import argparse",
+      "import logging",
+      "import os",
+      "from constants import (",
+      "    AttentionInputIDs,",
+      "    AttentionOutputIDs,"
+    ],
+    "imports": [
+      "import argparse",
+      "import logging",
+      "import os",
+      "from constants import (",
+      "from onnx import helper, load_model",
+      "from onnx_model import NodeProto, OnnxModel",
+      "from shape_infer_helper import SymbolicShapeInferenceHelper"
+    ],
+    "classes": [
+      "PackingAttentionBase",
+      "PackingAttention",
+      "PackingMultiHeadAttention",
+      "PackingMode"
+    ],
+    "functions": [
+      "_parse_arguments",
+      "_setup_logger",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_302_f6fe159ad395ebe5_AI_Chariot_Legacy_666_1.0.0_20260508_convert_to_packing_mode.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 234,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sso_helper_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sso_helper_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 721,
+  "content_sha256": "3e94ab56c8e7f5155fa119f745613196b1d5a081a7e5a307ab42ad5d8c9bcb9b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 20,
+    "char_count": 721,
+    "preview_lines": [
+      "from typing import Dict, Union",
+      "from litellm.proxy._types import LitellmUserRoles",
+      "def check_is_admin_only_access(ui_access_mode: Union[str, Dict]) -> bool:",
+      "    \"\"\"Checks ui access mode is admin_only\"\"\"",
+      "    if isinstance(ui_access_mode, str):",
+      "        return ui_access_mode == \"admin_only\"",
+      "    else:",
+      "        return False",
+      "def has_admin_ui_access(user_role: str) -> bool:",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from typing import Dict, Union",
+      "from litellm.proxy._types import LitellmUserRoles"
+    ],
+    "classes": [],
+    "functions": [
+      "check_is_admin_only_access",
+      "has_admin_ui_access"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_234_3e94ab56c8e7f515_AI_Chariot_Legacy_666_1.0.0_20260508_sso_helper_utils.py.json"
+}

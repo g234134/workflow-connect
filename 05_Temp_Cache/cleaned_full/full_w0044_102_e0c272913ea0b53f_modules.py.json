@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\modules.py",
+  "name": "modules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 69243,
+  "content_sha256": "e0c272913ea0b53fcb0b4df72d6b074ff08cee713274b21201d434c80fdb8644",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2114,
+    "non_empty_lines": 1679,
+    "char_count": 69243,
+    "preview_lines": [
+      "r\"\"\"Modules in number fields.",
+      "The classes defined here allow us to work with finitely generated, free",
+      "modules, whose generators are algebraic numbers.",
+      "There is an abstract base class called :py:class:`~.Module`, which has two",
+      "concrete subclasses, :py:class:`~.PowerBasis` and :py:class:`~.Submodule`.",
+      "Every module is defined by its basis, or set of generators:",
+      "* For a :py:class:`~.PowerBasis`, the generators are the first $n$ powers",
+      "  (starting with the zeroth) of an algebraic integer $\\theta$ of degree $n$.",
+      "  The :py:class:`~.PowerBasis` is constructed by passing either the minimal",
+      "  polynomial of $\\theta$, or an :py:class:`~.AlgebraicField` having $\\theta$"
+    ],
+    "imports": [
+      "from sympy.core.intfunc import igcd, ilcm",
+      "from sympy.core.symbol import Dummy",
+      "from sympy.polys.polyclasses import ANP",
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.densetools import dup_clear_denoms",
+      "from sympy.polys.domains.algebraicfield import AlgebraicField",
+      "from sympy.polys.domains.finitefield import FF",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.matrices.domainmatrix import DomainMatrix",
+      "from sympy.polys.matrices.exceptions import DMBadInputError",
+      "from sympy.polys.matrices.normalforms import hermite_normal_form",
+      "from sympy.polys.polyerrors import CoercionFailed, UnificationFailed",
+      "from sympy.polys.polyutils import IntegerPowerable",
+      "from .exceptions import ClosureFailure, MissingUnityError, StructureError",
+      "from .utilities import AlgIntPowers, is_rat, get_num_denom"
+    ],
+    "classes": [
+      "Module",
+      "PowerBasis",
+      "Submodule",
+      "ModuleElement",
+      "PowerBasisElement",
+      "ModuleHomomorphism",
+      "ModuleEndomorphism",
+      "InnerEndomorphism",
+      "EndomorphismRing"
+    ],
+    "functions": [
+      "to_col",
+      "is_sq_maxrank_HNF",
+      "make_mod_elt",
+      "find_min_poly"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_102_e0c272913ea0b53f_modules.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_state_dict_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_state_dict_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11943,
+  "content_sha256": "e7595c021b927668cb04905b68063fc9bc4b7a248e32d5787e3c891eff7e0bc6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 316,
+    "non_empty_lines": 263,
+    "char_count": 11943,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import os",
+      "import warnings",
+      "from typing import Any, cast, Dict, Optional, Set, Union",
+      "from typing_extensions import deprecated",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed.checkpoint.default_planner import _EmptyStateDictLoadPlanner",
+      "from torch.distributed.checkpoint.logger import _dcp_method_logger"
+    ],
+    "imports": [
+      "import os",
+      "import warnings",
+      "from typing import Any, cast, Dict, Optional, Set, Union",
+      "from typing_extensions import deprecated",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed.checkpoint.default_planner import _EmptyStateDictLoadPlanner",
+      "from torch.distributed.checkpoint.logger import _dcp_method_logger",
+      "from torch.distributed.checkpoint.stateful import Stateful",
+      "from ._storage_utils import _storage_setup",
+      "from .default_planner import DefaultLoadPlanner",
+      "from .planner import LoadPlan, LoadPlanner",
+      "from .storage import StorageReader",
+      "from .utils import _all_gather_keys, _api_bc_check, _DistWrapper, _profile"
+    ],
+    "classes": [],
+    "functions": [
+      "load_state_dict",
+      "load",
+      "_load_state_dict",
+      "_load_state_dict_from_keys"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_284_e7595c021b927668_AI_Chariot_Legacy_666_1.0.0_20260508_state_dict_loader.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_minisat22_wrapper.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_minisat22_wrapper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1317,
+  "content_sha256": "b8835cbe42071966096fcbbe4343a09d281a1df55477db586056c1015362012a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 35,
+    "char_count": 1317,
+    "preview_lines": [
+      "from sympy.assumptions.cnf import EncodedCNF",
+      "def minisat22_satisfiable(expr, all_models=False, minimal=False):",
+      "    if not isinstance(expr, EncodedCNF):",
+      "        exprs = EncodedCNF()",
+      "        exprs.add_prop(expr)",
+      "        expr = exprs",
+      "    from pysat.solvers import Minisat22",
+      "    # Return UNSAT when False (encoded as 0) is present in the CNF",
+      "    if {0} in expr.data:",
+      "        if all_models:"
+    ],
+    "imports": [
+      "from sympy.assumptions.cnf import EncodedCNF",
+      "from pysat.solvers import Minisat22"
+    ],
+    "classes": [],
+    "functions": [
+      "minisat22_satisfiable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_304_b8835cbe42071966_AI_Chariot_Legacy_666_1.0.0_20260508_minisat22_wrapper.py.json"
+}

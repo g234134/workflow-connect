@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_solve.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_solve.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6558,
+  "content_sha256": "750d3cd79e8b2f07d80b530317383cc45b444c458c61c096b5644464484af59e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 146,
+    "char_count": 6558,
+    "preview_lines": [
+      "import logging",
+      "from typing import Dict, Optional, Tuple, Type",
+      "import sympy",
+      "from torch.utils._sympy.functions import FloorDiv",
+      "log = logging.getLogger(__name__)",
+      "_MIRROR_REL_OP: Dict[Type[sympy.Basic], Type[sympy.Rel]] = {",
+      "    sympy.Eq: sympy.Eq,",
+      "    sympy.Ne: sympy.Ne,",
+      "    sympy.Ge: sympy.Le,",
+      "    sympy.Gt: sympy.Lt,"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Dict, Optional, Tuple, Type",
+      "import sympy",
+      "from torch.utils._sympy.functions import FloorDiv"
+    ],
+    "classes": [],
+    "functions": [
+      "mirror_rel_op",
+      "try_solve",
+      "_try_isolate_lhs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_060_750d3cd79e8b2f07_AI_Chariot_Legacy_666_1.0.0_20260508_solve.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 374,
+  "generated_at": "2026-05-08T18:47:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\random\\_examples\\numba\\extending.py",
+  "name": "extending.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2045,
+  "content_sha256": "9a8d28e1533e2b5bd4431365fd4aabdf901c8fd51ec27920952efe7455fccaec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 62,
+    "char_count": 2045,
+    "preview_lines": [
+      "from timeit import timeit",
+      "import numba as nb",
+      "import numpy as np",
+      "from numpy.random import PCG64",
+      "bit_gen = PCG64()",
+      "next_d = bit_gen.cffi.next_double",
+      "state_addr = bit_gen.cffi.state_address",
+      "def normals(n, state):",
+      "    out = np.empty(n)",
+      "    for i in range((n + 1) // 2):"
+    ],
+    "imports": [
+      "from timeit import timeit",
+      "import numba as nb",
+      "import numpy as np",
+      "from numpy.random import PCG64"
+    ],
+    "classes": [],
+    "functions": [
+      "normals",
+      "numbacall",
+      "numpycall",
+      "bounded_uint",
+      "bounded_uints"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_374_9a8d28e1533e2b5b_extending.py.json"
+}

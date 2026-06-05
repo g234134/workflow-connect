@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_echo-server.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_echo-server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 482,
+  "content_sha256": "c98c0a5e29a0aa8ea01c58c682a8640036fa7d19dc4ab17e39ec17e948a76558",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 13,
+    "char_count": 482,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# From https://github.com/aaugustin/websockets/blob/main/example/echo.py",
+      "import asyncio",
+      "import os",
+      "import websockets",
+      "LOCAL_WS_SERVER_PORT = int(os.environ.get(\"LOCAL_WS_SERVER_PORT\", \"8765\"))",
+      "async def echo(websocket):",
+      "    async for message in websocket:",
+      "        await websocket.send(message)",
+      "async def main():"
+    ],
+    "imports": [
+      "import asyncio",
+      "import os",
+      "import websockets"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_285_c98c0a5e29a0aa8e_AI_Chariot_Legacy_666_1.0.0_20260508_echo-server.py.json"
+}

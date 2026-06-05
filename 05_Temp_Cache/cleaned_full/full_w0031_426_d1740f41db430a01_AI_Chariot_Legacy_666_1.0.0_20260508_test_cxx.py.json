@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 426,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cxx.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cxx.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3183,
+  "content_sha256": "d1740f41db430a010a55fa6e7a5101fbbf5feddd9f7bd40f80428209854023fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 63,
+    "char_count": 3183,
+    "preview_lines": [
+      "from sympy.core.numbers import Float, Integer, Rational",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions import beta, Ei, zeta, Max, Min, sqrt, riemann_xi, frac",
+      "from sympy.printing.cxx import CXX98CodePrinter, CXX11CodePrinter, CXX17CodePrinter, cxxcode",
+      "from sympy.codegen.cfunctions import log1p",
+      "x, y, u, v = symbols('x y u v')",
+      "def test_CXX98CodePrinter():",
+      "    assert CXX98CodePrinter().doprint(Max(x, 3)) in ('std::max(x, 3)', 'std::max(3, x)')",
+      "    assert CXX98CodePrinter().doprint(Min(x, 3, sqrt(x))) == 'std::min(3, std::min(x, std::sqrt(x)))'",
+      "    cxx98printer = CXX98CodePrinter()"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Float, Integer, Rational",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions import beta, Ei, zeta, Max, Min, sqrt, riemann_xi, frac",
+      "from sympy.printing.cxx import CXX98CodePrinter, CXX11CodePrinter, CXX17CodePrinter, cxxcode",
+      "from sympy.codegen.cfunctions import log1p"
+    ],
+    "classes": [],
+    "functions": [
+      "test_CXX98CodePrinter",
+      "test_CXX11CodePrinter",
+      "test_subclass_print_method",
+      "test_subclass_print_method__ns",
+      "test_CXX17CodePrinter",
+      "test_cxxcode",
+      "test_cxxcode_nested_minmax",
+      "test_subclass_Integer_Float"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_426_d1740f41db430a01_AI_Chariot_Legacy_666_1.0.0_20260508_test_cxx.py.json"
+}

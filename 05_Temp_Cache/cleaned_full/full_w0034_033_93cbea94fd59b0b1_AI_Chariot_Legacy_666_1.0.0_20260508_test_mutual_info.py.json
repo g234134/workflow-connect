@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 33,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_mutual_info.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_mutual_info.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10122,
+  "content_sha256": "93cbea94fd59b0b1d386154f232385548b7826c83c192db65b42b9e93120357c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 270,
+    "non_empty_lines": 213,
+    "char_count": 10122,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.datasets import make_classification, make_regression",
+      "from sklearn.feature_selection import mutual_info_classif, mutual_info_regression",
+      "from sklearn.feature_selection._mutual_info import _compute_mi",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import (",
+      "    assert_allclose,",
+      "    assert_array_equal,",
+      ")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.datasets import make_classification, make_regression",
+      "from sklearn.feature_selection import mutual_info_classif, mutual_info_regression",
+      "from sklearn.feature_selection._mutual_info import _compute_mi",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import (",
+      "from sklearn.utils.fixes import CSR_CONTAINERS"
+    ],
+    "classes": [],
+    "functions": [
+      "test_compute_mi_dd",
+      "test_compute_mi_cc",
+      "test_compute_mi_cd",
+      "test_compute_mi_cd_unique_label",
+      "test_mutual_info_classif_discrete",
+      "test_mutual_info_regression",
+      "test_mutual_info_classif_mixed",
+      "test_mutual_info_options",
+      "test_mutual_information_symmetry_classif_regression",
+      "test_mutual_info_regression_X_int_dtype",
+      "test_mutual_info_n_jobs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_033_93cbea94fd59b0b1_AI_Chariot_Legacy_666_1.0.0_20260508_test_mutual_info.py.json"
+}

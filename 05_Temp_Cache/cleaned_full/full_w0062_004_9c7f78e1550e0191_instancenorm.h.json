@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 4,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\api\\include\\torch\\nn\\modules\\instancenorm.h",
+  "name": "instancenorm.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 5593,
+  "content_sha256": "9c7f78e1550e0191bf164836c86cd285e9308bb0dd8a276c1c42a0410e15d508",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 131,
+    "char_count": 5593,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/nn/modules/batchnorm.h>",
+      "#include <torch/nn/options/instancenorm.h>",
+      "namespace torch {",
+      "namespace nn {",
+      "/// Base class for all (dimension-specialized) instance norm modules",
+      "template <size_t D, typename Derived>",
+      "class InstanceNormImpl",
+      "    : public torch::nn::NormImplBase<D, Derived, InstanceNormOptions> {",
+      " private:"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_004_9c7f78e1550e0191_instancenorm.h.json"
+}

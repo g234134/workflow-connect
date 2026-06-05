@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 214,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_listwise_rerank.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_listwise_rerank.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5224,
+  "content_sha256": "0721c61598c2e0e91e5244e3d05d4a4888123dda348ea9b5e0fff7aee5dfe0db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 146,
+    "non_empty_lines": 119,
+    "char_count": 5224,
+    "preview_lines": [
+      "\"\"\"Filter that uses an LLM to rerank documents listwise and select top-k.\"\"\"",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from langchain_core.callbacks import Callbacks",
+      "from langchain_core.documents import BaseDocumentCompressor, Document",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnableLambda, RunnablePassthrough",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "_default_system_tmpl = \"\"\"{context}"
+    ],
+    "imports": [
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "from langchain_core.callbacks import Callbacks",
+      "from langchain_core.documents import BaseDocumentCompressor, Document",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnableLambda, RunnablePassthrough",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "from langchain_classic.retrievers.document_compressors.listwise_rerank import (",
+      "from langchain_core.documents import Document",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [
+      "LLMListwiseRerank"
+    ],
+    "functions": [
+      "_get_prompt_input",
+      "_parse_ranking"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_214_0721c61598c2e0e9_AI_Chariot_Legacy_666_1.0.0_20260508_listwise_rerank.py.json"
+}

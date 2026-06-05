@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1103,
+  "content_sha256": "7c609e98fd57f4c070ac37ec4ca189ff5b31fb22b3dc3ca83afc5960e92f19a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 31,
+    "char_count": 1103,
+    "preview_lines": [
+      "import importlib",
+      "import os",
+      "import warnings",
+      "from aider.dump import dump  # noqa: F401",
+      "warnings.filterwarnings(\"ignore\", category=UserWarning, module=\"pydantic\")",
+      "AIDER_SITE_URL = \"https://aider.chat\"",
+      "AIDER_APP_NAME = \"Aider\"",
+      "os.environ[\"OR_SITE_URL\"] = AIDER_SITE_URL",
+      "os.environ[\"OR_APP_NAME\"] = AIDER_APP_NAME",
+      "os.environ[\"LITELLM_MODE\"] = \"PRODUCTION\""
+    ],
+    "imports": [
+      "import importlib",
+      "import os",
+      "import warnings",
+      "from aider.dump import dump  # noqa: F401"
+    ],
+    "classes": [
+      "LazyLiteLLM"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_260_7c609e98fd57f4c0_AI_Chariot_Legacy_666_1.0.0_20260508_llm.py.json"
+}

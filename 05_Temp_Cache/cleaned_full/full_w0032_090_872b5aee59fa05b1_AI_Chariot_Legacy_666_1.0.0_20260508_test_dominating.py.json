@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 90,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dominating.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dominating.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1228,
+  "content_sha256": "872b5aee59fa05b1da1a5a445256ba8d5ce1d8f46e4a3bee8cb4865eb9b065b7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 35,
+    "char_count": 1228,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def test_dominating_set():",
+      "    G = nx.gnp_random_graph(100, 0.1)",
+      "    D = nx.dominating_set(G)",
+      "    assert nx.is_dominating_set(G, D)",
+      "    D = nx.dominating_set(G, start_with=0)",
+      "    assert nx.is_dominating_set(G, D)",
+      "def test_complete():",
+      "    \"\"\"In complete graphs each node is a dominating set."
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dominating_set",
+      "test_complete",
+      "test_raise_dominating_set",
+      "test_is_dominating_set",
+      "test_wikipedia_is_dominating_set"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_090_872b5aee59fa05b1_AI_Chariot_Legacy_666_1.0.0_20260508_test_dominating.py.json"
+}

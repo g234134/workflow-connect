@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_debugger_r.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_debugger_r.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12115,
+  "content_sha256": "ddc797740231f068ca7c7c8610e799d72ad11af670d9bc0b6f9e04fe2ba222d1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 390,
+    "non_empty_lines": 295,
+    "char_count": 12115,
+    "preview_lines": [
+      "\"\"\"Support for remote Python debugging.",
+      "Some ASCII art to describe the structure:",
+      "       IN PYTHON SUBPROCESS          #             IN IDLE PROCESS",
+      "                                     #",
+      "                                     #        oid='gui_adapter'",
+      "                 +----------+        #       +------------+          +-----+",
+      "                 | GUIProxy |--remote#call-->| GUIAdapter |--calls-->| GUI |",
+      "+-----+--calls-->+----------+        #       +------------+          +-----+",
+      "| Idb |                               #                             /",
+      "+-----+<-calls--+------------+         #      +----------+<--calls-/"
+    ],
+    "imports": [
+      "import reprlib",
+      "import types",
+      "from idlelib import debugger",
+      "import __main__"
+    ],
+    "classes": [
+      "GUIProxy",
+      "IdbAdapter",
+      "FrameProxy",
+      "CodeProxy",
+      "DictProxy",
+      "GUIAdapter",
+      "IdbProxy"
+    ],
+    "functions": [
+      "wrap_frame",
+      "wrap_info",
+      "start_debugger",
+      "start_remote_debugger",
+      "close_remote_debugger",
+      "close_subprocess_debugger",
+      "restart_subprocess_debugger"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_274_ddc797740231f068_AI_Chariot_Legacy_666_1.0.0_20260508_debugger_r.py.json"
+}

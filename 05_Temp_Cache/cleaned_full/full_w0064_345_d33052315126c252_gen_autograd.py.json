@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 345,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\packaged\\autograd\\gen_autograd.py",
+  "name": "gen_autograd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4610,
+  "content_sha256": "d33052315126c252dfb8e0bca159970f61441701c0f8fbbedc2f17a1dfa3d644",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 119,
+    "char_count": 4610,
+    "preview_lines": [
+      "\"\"\"",
+      "To run this file by hand from the root of the PyTorch",
+      "repository, run:",
+      "python -m tools.autograd.gen_autograd \\",
+      "       aten/src/ATen/native/native_functions.yaml \\",
+      "       aten/src/ATen/native/tags.yaml \\",
+      "       $OUTPUT_DIR \\",
+      "       tools/autograd",
+      "Where $OUTPUT_DIR is where you would like the files to be",
+      "generated.  In the full build system, OUTPUT_DIR is"
+    ],
+    "imports": [
+      "import argparse",
+      "import os",
+      "from typing import List",
+      "from torchgen.api import cpp",
+      "from torchgen.api.autograd import (",
+      "from torchgen.gen import parse_native_yaml",
+      "from torchgen.selective_build.selector import SelectiveBuilder",
+      "from . import gen_python_functions",
+      "from .gen_autograd_functions import (",
+      "from .gen_inplace_or_view_type import gen_inplace_or_view_type",
+      "from .gen_trace_type import gen_trace_type",
+      "from .gen_variable_factories import gen_variable_factories",
+      "from .gen_variable_type import gen_variable_type",
+      "from .load_derivatives import load_derivatives"
+    ],
+    "classes": [],
+    "functions": [
+      "gen_autograd",
+      "gen_autograd_python",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_345_d33052315126c252_gen_autograd.py.json"
+}

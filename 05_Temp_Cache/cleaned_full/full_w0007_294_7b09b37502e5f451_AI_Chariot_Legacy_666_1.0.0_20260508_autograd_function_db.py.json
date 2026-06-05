@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 294,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_autograd_function_db.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_autograd_function_db.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20324,
+  "content_sha256": "7b09b37502e5f45125698ef3f28b88fcdc9a871e44e0839da984745f8dde0ed1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 635,
+    "non_empty_lines": 533,
+    "char_count": 20324,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import torch",
+      "from functools import partial",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.opinfo.core import (",
+      "    OpInfo,",
+      "    SampleInput,",
+      ")",
+      "from torch.testing._internal.common_dtype import all_types_and",
+      "import numpy as np"
+    ],
+    "imports": [
+      "import torch",
+      "from functools import partial",
+      "from torch.testing import make_tensor",
+      "from torch.testing._internal.opinfo.core import (",
+      "from torch.testing._internal.common_dtype import all_types_and",
+      "import numpy as np"
+    ],
+    "classes": [
+      "NumpyCube",
+      "CubeGenVmap",
+      "NumpyCubeNotComposable",
+      "NumpyMul",
+      "MulGenVmap",
+      "NumpyExp_",
+      "NumpySort",
+      "SortGenVmap",
+      "NumpyTake",
+      "TakeGenVmap",
+      "Select",
+      "SelectGenVmap",
+      "ScaleGradGenVmap",
+      "ZeroGradientsGenVmap",
+      "ForwardHasDefaultArgs"
+    ],
+    "functions": [
+      "to_numpy",
+      "sample_inputs_numpy_cube",
+      "sample_inputs_numpy_mul",
+      "sample_inputs_numpy_mul_scalar",
+      "sample_inputs_numpy_sort",
+      "sample_inputs_numpy_take",
+      "sample_inputs_select",
+      "sample_inputs_forward_default_args"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_294_7b09b37502e5f451_AI_Chariot_Legacy_666_1.0.0_20260508_autograd_function_db.py.json"
+}

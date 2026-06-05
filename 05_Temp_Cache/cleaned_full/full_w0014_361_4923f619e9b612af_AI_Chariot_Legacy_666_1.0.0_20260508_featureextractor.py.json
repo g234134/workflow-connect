@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 361,
+  "generated_at": "2026-05-08T18:45:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_featureextractor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_featureextractor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 980,
+  "content_sha256": "4923f619e9b612afa233d63c4978024a60f733b97389496029c7dd2fa1740662",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 23,
+    "char_count": 980,
+    "preview_lines": [
+      "from typing import Callable, List, Tuple, Union",
+      "from thinc.api import Model",
+      "from thinc.types import Ints2d",
+      "from ..tokens import Doc",
+      "def FeatureExtractor(",
+      "    columns: Union[List[str], List[int], List[Union[int, str]]],",
+      ") -> Model[List[Doc], List[Ints2d]]:",
+      "    return Model(\"extract_features\", forward, attrs={\"columns\": columns})",
+      "def forward(",
+      "    model: Model[List[Doc], List[Ints2d]], docs, is_train: bool"
+    ],
+    "imports": [
+      "from typing import Callable, List, Tuple, Union",
+      "from thinc.api import Model",
+      "from thinc.types import Ints2d",
+      "from ..tokens import Doc"
+    ],
+    "classes": [],
+    "functions": [
+      "FeatureExtractor",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_361_4923f619e9b612af_AI_Chariot_Legacy_666_1.0.0_20260508_featureextractor.py.json"
+}

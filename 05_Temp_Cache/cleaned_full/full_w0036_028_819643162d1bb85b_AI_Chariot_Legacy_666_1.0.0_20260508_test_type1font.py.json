@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_type1font.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_type1font.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6369,
+  "content_sha256": "819643162d1bb85bacfda0203ab9adc0aa9b0b7ebef3c524bccf007db72782ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 140,
+    "char_count": 6369,
+    "preview_lines": [
+      "import matplotlib._type1font as t1f",
+      "import os.path",
+      "import difflib",
+      "import pytest",
+      "def test_Type1Font():",
+      "    filename = os.path.join(os.path.dirname(__file__), 'cmr10.pfb')",
+      "    font = t1f.Type1Font(filename)",
+      "    slanted = font.transform({'slant': 1})",
+      "    condensed = font.transform({'extend': 0.5})",
+      "    with open(filename, 'rb') as fd:"
+    ],
+    "imports": [
+      "import matplotlib._type1font as t1f",
+      "import os.path",
+      "import difflib",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_Type1Font",
+      "test_Type1Font_2",
+      "test_tokenize",
+      "test_tokenize_errors",
+      "test_overprecision",
+      "test_encrypt_decrypt_roundtrip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_028_819643162d1bb85b_AI_Chariot_Legacy_666_1.0.0_20260508_test_type1font.py.json"
+}

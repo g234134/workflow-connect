@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\outputs\\test_chat_generation.py",
+  "name": "test_chat_generation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1167,
+  "content_sha256": "1ee5d3173b1e8e8e5f29b353bcbd94a51e3f7c810098ba46ca3e3f670fe99d4f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 33,
+    "char_count": 1164,
+    "preview_lines": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.outputs import ChatGeneration",
+      "@pytest.mark.parametrize(",
+      "    (\"content\", \"expected\"),",
+      "    [",
+      "        (\"foo\", \"foo\"),",
+      "        ([\"foo\"], \"foo\"),",
+      "        ([\"foo\", \"bar\"], \"foobar\"),"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.outputs import ChatGeneration"
+    ],
+    "classes": [],
+    "functions": [
+      "test_msg_with_text",
+      "test_msg_no_text"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_264_1ee5d3173b1e8e8e_test_chat_generation.py.json"
+}

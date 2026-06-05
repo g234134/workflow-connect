@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\prompts\\message.py",
+  "name": "message.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2752,
+  "content_sha256": "164af77fd7be2f8880afb9b05350044017ae929f7ac278bb1f8025bb6d1d22e0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 71,
+    "char_count": 2749,
+    "preview_lines": [
+      "\"\"\"Message prompt templates.\"\"\"",
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core.load import Serializable",
+      "from langchain_core.utils.interactive_env import is_interactive_env",
+      "if TYPE_CHECKING:",
+      "    from langchain_core.messages import BaseMessage",
+      "    from langchain_core.prompts.chat import ChatPromptTemplate",
+      "class BaseMessagePromptTemplate(Serializable, ABC):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core.load import Serializable",
+      "from langchain_core.utils.interactive_env import is_interactive_env",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.prompts.chat import ChatPromptTemplate",
+      "from langchain_core.prompts.chat import ChatPromptTemplate  # noqa: PLC0415"
+    ],
+    "classes": [
+      "BaseMessagePromptTemplate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_103_164af77fd7be2f88_message.py.json"
+}

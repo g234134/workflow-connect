@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_github_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_github_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4305,
+  "content_sha256": "81c5e3525f77f4dbf7caaaf51fd5384b3d0d8eb60794b0b7fe9bd7a599e69e44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 91,
+    "char_count": 4305,
+    "preview_lines": [
+      "\"\"\"GitHub repository content loader.\"\"\"",
+      "from typing import Any",
+      "from github import Github, GithubException",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "class GithubLoader(BaseLoader):",
+      "    \"\"\"Loader for GitHub repository content.\"\"\"",
+      "    def load(self, source: SourceContent, **kwargs: Any) -> LoaderResult:  # type: ignore[override]",
+      "        \"\"\"Load content from a GitHub repository.",
+      "        Args:"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from github import Github, GithubException",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent"
+    ],
+    "classes": [
+      "GithubLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_108_81c5e3525f77f4db_AI_Chariot_Legacy_666_1.0.0_20260508_github_loader.py.json"
+}

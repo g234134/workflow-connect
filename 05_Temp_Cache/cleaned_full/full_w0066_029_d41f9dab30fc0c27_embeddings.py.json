@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\embeddings\\embeddings.py",
+  "name": "embeddings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2486,
+  "content_sha256": "d41f9dab30fc0c27ddace1ad0b15b3b7ebfe9fa38349b709bbb832a1676c7a20",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 55,
+    "char_count": 2483,
+    "preview_lines": [
+      "\"\"\"**Embeddings** interface.\"\"\"",
+      "from abc import ABC, abstractmethod",
+      "from langchain_core.runnables.config import run_in_executor",
+      "class Embeddings(ABC):",
+      "    \"\"\"Interface for embedding models.",
+      "    This is an interface meant for implementing text embedding models.",
+      "    Text embedding models are used to map text to a vector (a point in n-dimensional",
+      "    space).",
+      "    Texts that are similar will usually be mapped to points that are close to each",
+      "    other in this space. The exact details of what's considered \"similar\" and how"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from langchain_core.runnables.config import run_in_executor"
+    ],
+    "classes": [
+      "Embeddings"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_029_d41f9dab30fc0c27_embeddings.py.json"
+}

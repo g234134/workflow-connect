@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 184,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_access_group_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_access_group_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25387,
+  "content_sha256": "747923a62d7c4fca3e94a1a8e99ec8f7f2cd5f366a1e3f6c672c061a7ec40c40",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 680,
+    "non_empty_lines": 601,
+    "char_count": 25383,
+    "preview_lines": [
+      "from typing import List, Set",
+      "from fastapi import APIRouter, Depends, HTTPException, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import (",
+      "    CommonProxyErrors,",
+      "    LiteLLM_AccessGroupTable,",
+      "    LitellmUserRoles,",
+      "    UserAPIKeyAuth,",
+      ")",
+      "from litellm.proxy.auth.auth_checks import ("
+    ],
+    "imports": [
+      "from typing import List, Set",
+      "from fastapi import APIRouter, Depends, HTTPException, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import (",
+      "from litellm.proxy.auth.auth_checks import (",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.db.exception_handler import PrismaDBExceptionHandler",
+      "from litellm.proxy.utils import get_prisma_client_or_throw",
+      "from litellm.types.access_group import (",
+      "from litellm.proxy.proxy_server import proxy_logging_obj, user_api_key_cache",
+      "from litellm.proxy.proxy_server import proxy_logging_obj, user_api_key_cache"
+    ],
+    "classes": [],
+    "functions": [
+      "_require_proxy_admin",
+      "_record_to_response",
+      "_record_to_access_group_table"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_184_747923a62d7c4fca_AI_Chariot_Legacy_666_1.0.0_20260508_access_group_endpoints.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 41,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_walk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_walk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6124,
+  "content_sha256": "19710e9c8bb5e6207d25e4d0d885950eb5a0e456424ea76845c97c8fe7355e2d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 172,
+    "char_count": 6124,
+    "preview_lines": [
+      "\"\"\"",
+      "Functions for *walking* the DOM.",
+      "!!! note",
+      "    For most purposes you would be better off using [query][textual.dom.DOMNode.query], which uses these functions internally.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from collections import deque",
+      "from operator import attrgetter",
+      "from typing import TYPE_CHECKING, Iterable, Iterator, TypeVar, overload",
+      "from textual.geometry import Shape"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import deque",
+      "from operator import attrgetter",
+      "from typing import TYPE_CHECKING, Iterable, Iterator, TypeVar, overload",
+      "from textual.geometry import Shape",
+      "from textual.dom import DOMNode",
+      "from textual.widget import Widget",
+      "from textual.dom import DOMNode"
+    ],
+    "classes": [],
+    "functions": [
+      "walk_depth_first",
+      "walk_breadth_first",
+      "walk_breadth_search_id",
+      "walk_selectable_widgets"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_041_19710e9c8bb5e620_AI_Chariot_Legacy_666_1.0.0_20260508_walk.py.json"
+}

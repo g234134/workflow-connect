@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\runtime\\custom_operator.h",
+  "name": "custom_operator.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1084,
+  "content_sha256": "53097285d1cddae9d7a0769178d03fe0168257652576322846c0837c7a393405",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 25,
+    "char_count": 1084,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/op_registration/op_registration.h>",
+      "#include <ATen/core/stack.h>",
+      "#include <torch/csrc/jit/runtime/operator.h>",
+      "namespace torch::jit {",
+      "/// Registration class for new operators. Effectively calls",
+      "/// `torch::jit::registerOperator` for every supplied operator, but allows doing",
+      "/// so in the global scope when a `RegisterOperators` object is assigned to a",
+      "/// static variable.",
+      "/// Note: This is *not* the custom operator API. If you want to register custom"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_448_53097285d1cddae9_custom_operator.h.json"
+}

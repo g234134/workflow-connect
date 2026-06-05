@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 219,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_operator_schemas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_operator_schemas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21286,
+  "content_sha256": "596da9ed79411cb42abb1a673dc849647fbf9a458ee4e54eaabf4fa0f8579c09",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 451,
+    "non_empty_lines": 388,
+    "char_count": 21286,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "import inspect",
+      "import numbers",
+      "import types",
+      "import typing",
+      "import enum",
+      "import warnings",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, NamedTuple, cast, TYPE_CHECKING",
+      "from torch._jit_internal import boolean_dispatched"
+    ],
+    "imports": [
+      "import torch",
+      "import inspect",
+      "import numbers",
+      "import types",
+      "import typing",
+      "import enum",
+      "import warnings",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, NamedTuple, cast, TYPE_CHECKING",
+      "from torch._jit_internal import boolean_dispatched",
+      "from ._compatibility import compatibility",
+      "from torch._ops import OpOverloadPacket, OpOverload",
+      "from .node import Argument",
+      "from inspect import Parameter"
+    ],
+    "classes": [
+      "ArgsKwargsPair",
+      "_FakeGlobalNamespace"
+    ],
+    "functions": [
+      "_nonzero_schemas",
+      "_torchscript_type_to_python_type",
+      "_torchscript_schema_to_signature_impl",
+      "_torchscript_schema_to_signature",
+      "check_for_mutable_operation",
+      "get_signature_for_torch_op",
+      "create_type_hint",
+      "type_matches",
+      "normalize_function",
+      "normalize_module",
+      "_args_kwargs_to_normalized_args_kwargs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_219_596da9ed79411cb4_AI_Chariot_Legacy_666_1.0.0_20260508_operator_schemas.py.json"
+}

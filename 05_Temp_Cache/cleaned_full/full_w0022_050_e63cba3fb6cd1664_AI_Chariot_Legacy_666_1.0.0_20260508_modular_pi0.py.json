@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 50,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_pi0.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_pi0.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28005,
+  "content_sha256": "e63cba3fb6cd16640220411da8c57fab8369fa4a7af4d813fc1fc92cb83c3ab0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 649,
+    "non_empty_lines": 560,
+    "char_count": 28005,
+    "preview_lines": [
+      "# Copyright 2025 Physical Intelligence and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "from collections.abc import Callable",
+      "import numpy as np",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from huggingface_hub.dataclasses import strict",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...cache_utils import Cache",
+      "from ...configuration_utils import PreTrainedConfig",
+      "from ...feature_extraction_utils import BatchFeature",
+      "from ...image_utils import ImageInput, make_nested_list_of_images",
+      "from ...masking_utils import create_bidirectional_mask",
+      "from ...modeling_outputs import BaseModelOutputWithPast, CausalLMOutputWithPast",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...processing_utils import ProcessingKwargs, Unpack",
+      "from ...tokenization_utils_base import PreTokenizedInput, TextInput",
+      "from ...utils import auto_docstring, can_return_tuple, logging",
+      "from ...utils.generic import maybe_autocast",
+      "from ...utils.import_utils import requires"
+    ],
+    "classes": [
+      "PI0ImageProcessor",
+      "PI0ProcessorKwargs",
+      "PI0Processor",
+      "PI0Config",
+      "PI0TimestepEmbeddings",
+      "PI0ActionTimeEmbedding",
+      "PI0PreTrainedModel",
+      "PI0Model",
+      "PI0ForConditionalGeneration"
+    ],
+    "functions": [
+      "blockwise_bidirectional_mask"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_050_e63cba3fb6cd1664_AI_Chariot_Legacy_666_1.0.0_20260508_modular_pi0.py.json"
+}

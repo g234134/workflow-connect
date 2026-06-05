@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_kauers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_kauers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1102,
+  "content_sha256": "67ce4585f5ce395922d0734678ae4110164ea64b81e929ca2b716a7cad7e68b4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 20,
+    "char_count": 1102,
+    "preview_lines": [
+      "from sympy.series.kauers import finite_diff",
+      "from sympy.series.kauers import finite_diff_kauers",
+      "from sympy.abc import x, y, z, m, n, w",
+      "from sympy.core.numbers import pi",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.concrete.summations import Sum",
+      "def test_finite_diff():",
+      "    assert finite_diff(x**2 + 2*x + 1, x) == 2*x + 3",
+      "    assert finite_diff(y**3 + 2*y**2 + 3*y + 5, y) == 3*y**2 + 7*y + 6",
+      "    assert finite_diff(z**2 - 2*z + 3, z) == 2*z - 1"
+    ],
+    "imports": [
+      "from sympy.series.kauers import finite_diff",
+      "from sympy.series.kauers import finite_diff_kauers",
+      "from sympy.abc import x, y, z, m, n, w",
+      "from sympy.core.numbers import pi",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.concrete.summations import Sum"
+    ],
+    "classes": [],
+    "functions": [
+      "test_finite_diff",
+      "test_finite_diff_kauers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_192_67ce4585f5ce3959_AI_Chariot_Legacy_666_1.0.0_20260508_test_kauers.py.json"
+}

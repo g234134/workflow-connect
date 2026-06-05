@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\pass\\numeric.py",
+  "name": "numeric.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1582,
+  "content_sha256": "656377316f0b93fa9eab1dd50bd70c39e9052b6d68d36c67929509ad35987942",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 62,
+    "char_count": 1582,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for :mod:`numpy._core.numeric`.",
+      "Does not include tests which fall under ``array_constructors``.",
+      "\"\"\"",
+      "from typing import Any",
+      "import numpy as np",
+      "class SubClass(np.ndarray[tuple[Any, ...], np.dtype[np.float64]]): ...",
+      "i8 = np.int64(1)",
+      "A = np.arange(27).reshape(3, 3, 3)",
+      "B = A.tolist()"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import numpy as np"
+    ],
+    "classes": [
+      "SubClass"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_465_656377316f0b93fa_numeric.py.json"
+}

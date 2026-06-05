@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 229,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multion_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multion_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2584,
+  "content_sha256": "335b68a06f641475bddb7cc4c42f0f38cba79376dbcf54fb4856db915c15dbdc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 69,
+    "char_count": 2584,
+    "preview_lines": [
+      "\"\"\"Multion tool spec.\"\"\"",
+      "import os",
+      "import subprocess",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import Field",
+      "class MultiOnTool(BaseTool):",
+      "    \"\"\"Tool to wrap MultiOn Browse Capabilities.\"\"\"",
+      "    name: str = \"Multion Browse Tool\"",
+      "    description: str = \"\"\"Multion gives the ability for LLMs to control web browsers using natural language instructions."
+    ],
+    "imports": [
+      "import os",
+      "import subprocess",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import Field",
+      "from multion.client import MultiOn",
+      "import click",
+      "from multion.client import MultiOn"
+    ],
+    "classes": [
+      "MultiOnTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_229_335b68a06f641475_AI_Chariot_Legacy_666_1.0.0_20260508_multion_tool.py.json"
+}

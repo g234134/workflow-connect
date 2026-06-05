@@ -1,0 +1,42 @@
+{
+  "artifact_id": "ART-REL-EXEC",
+  "ticket_id": "W4-A-K2-ROLLOUT-INTEGRATION",
+  "pilot_artifact_id": "W3-A-K2-ASK-ROLLOUT-PILOT",
+  "release_id": "w3a-p2-canary-YYYYMMDD",
+  "decision_ref": "07_art_rel_dec.json",
+  "target_audience_or_env": "staging-internal",
+  "published_at": "YYYY-MM-DDTHH:MM:SS+08:00",
+  "execution_evidence": {
+    "env_logical": "staging-internal",
+    "entrypoint": "ask_api",
+    "merge_interface": "ASK_MERGE_INTERFACE",
+    "canary_cohort_ref": "canary_env.md",
+    "shadow_run_ref": "shadow_run_01.md",
+    "pilot_stream_id": "W4-A-PILOT-RELEASE-STREAM-v0.1",
+    "run_id": "YYYY-MM-DD_HHmmss",
+    "canary_assignments": [
+      {
+        "task_id": "w4a-canary-sample-001",
+        "in_canary_cohort": false,
+        "would_primary_source": "ask"
+      }
+    ],
+    "metrics_ref": [
+      "eval_ci_check — exit 0, date range YYYY-MM-DD..YYYY-MM-DD",
+      "k2_shadow_spool — line count indexed (no path secrets)"
+    ],
+    "commands_run": [
+      {
+        "cmd": "python -m unittest tests.test_k2_merge_adapter tests.test_k2_ask_shadow -v",
+        "exit_ok": true,
+        "note": "Pre-window regression"
+      }
+    ],
+    "canary_requests": "indexed in canary_run_01.md"
+  },
+  "rollback_path_valid": false,
+  "rollback_path_valid_note": "W4-A v0.1 语义（W4-A-FIX-02）：false = 仅有文档/手动 rollback 路径（-Phase rollback 写 rollback_record.json），本轮 pilot 未建立完整自动 rollback 与端到端验证；true = 设计上 rollback 流程存在且已在 pilot 中验证最小 happy-path。sim 产出默认为 false；勿将 false 改为 true 以通过 gate。",
+  "not_in_scope": "No remote prod auto rollout; no Phase 3+ expansion; no merge adapter code change; no claim of fully automated rollback path (see rollback_path_valid_note)",
+  "executed_by_role": "release",
+  "message": "Internal canary window executed per W4-A v0.1 boundary — observability only; rollback_path_valid reflects doc/manual path status, not prod SLA."
+}

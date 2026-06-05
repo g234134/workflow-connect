@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 391,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_shellexecuteex.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_shellexecuteex.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 489,
+  "content_sha256": "c715ca7fd9304a654e1968b1d33d09dd7e323322fe3f43df0a110ece72f796ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 15,
+    "char_count": 489,
+    "preview_lines": [
+      "import win32con",
+      "from win32com.shell import shell, shellcon",
+      "def ExplorePIDL():",
+      "    pidl = shell.SHGetSpecialFolderLocation(0, shellcon.CSIDL_DESKTOP)",
+      "    print(\"The desktop is at\", shell.SHGetPathFromIDList(pidl))",
+      "    shell.ShellExecuteEx(",
+      "        fMask=shellcon.SEE_MASK_NOCLOSEPROCESS,",
+      "        nShow=win32con.SW_NORMAL,",
+      "        lpClass=\"folder\",",
+      "        lpVerb=\"explore\","
+    ],
+    "imports": [
+      "import win32con",
+      "from win32com.shell import shell, shellcon"
+    ],
+    "classes": [],
+    "functions": [
+      "ExplorePIDL"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_391_c715ca7fd9304a65_AI_Chariot_Legacy_666_1.0.0_20260508_shellexecuteex.py.json"
+}

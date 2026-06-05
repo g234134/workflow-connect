@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\pregel\\main.py",
+  "name": "main.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 154109,
+  "content_sha256": "0c75bafb2e040efea043b1aaf919de7a9df313b55422ee339f3ddb222fb4117a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 3773,
+    "non_empty_lines": 3427,
+    "char_count": 154106,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import concurrent",
+      "import concurrent.futures",
+      "import contextlib",
+      "import queue",
+      "import warnings",
+      "import weakref",
+      "from collections import defaultdict, deque",
+      "from collections.abc import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import concurrent",
+      "import concurrent.futures",
+      "import contextlib",
+      "import queue",
+      "import warnings",
+      "import weakref",
+      "from collections import defaultdict, deque",
+      "from collections.abc import (",
+      "from dataclasses import is_dataclass, replace",
+      "from functools import partial",
+      "from inspect import isclass",
+      "from typing import (",
+      "from uuid import UUID, uuid5",
+      "from langchain_core.globals import get_debug",
+      "from langchain_core.runnables import (",
+      "from langchain_core.runnables.base import Input, Output",
+      "from langchain_core.runnables.config import (",
+      "from langchain_core.runnables.graph import Graph"
+    ],
+    "classes": [
+      "NodeBuilder",
+      "Pregel"
+    ],
+    "functions": [
+      "_trigger_to_nodes",
+      "_output",
+      "_coerce_checkpoint_values",
+      "_build_server_info",
+      "_coerce_context"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_106_0c75bafb2e040efe_main.py.json"
+}

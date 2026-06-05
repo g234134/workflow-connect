@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_shared_paths.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_shared_paths.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1479,
+  "content_sha256": "0bce6c42b73a2d69065f550aef43271976a024e61d4ef7a175f09f3a2bc5fac7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 35,
+    "char_count": 1479,
+    "preview_lines": [
+      "import unittest",
+      "import pytest",
+      "from shapely.errors import GeometryTypeError",
+      "from shapely.geometry import GeometryCollection, LineString, MultiLineString, Point",
+      "from shapely.ops import shared_paths",
+      "class SharedPaths(unittest.TestCase):",
+      "    def test_shared_paths_forward(self):",
+      "        g1 = LineString([(0, 0), (10, 0), (10, 5), (20, 5)])",
+      "        g2 = LineString([(5, 0), (15, 0)])",
+      "        result = shared_paths(g1, g2)"
+    ],
+    "imports": [
+      "import unittest",
+      "import pytest",
+      "from shapely.errors import GeometryTypeError",
+      "from shapely.geometry import GeometryCollection, LineString, MultiLineString, Point",
+      "from shapely.ops import shared_paths"
+    ],
+    "classes": [
+      "SharedPaths"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_188_0bce6c42b73a2d69_AI_Chariot_Legacy_666_1.0.0_20260508_test_shared_paths.py.json"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nested_tensor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nested_tensor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21311,
+  "content_sha256": "00feb18b2664c6fd5831eb090a4075307bb1f3ee18c544c989f98a9dc534def9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 564,
+    "non_empty_lines": 473,
+    "char_count": 21311,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import *  # noqa: F403",
+      "from typing import Tuple",
+      "import torch",
+      "from torch._C import DispatchKey, DispatchKeySet",
+      "from torch._prims_common import is_expandable_to",
+      "from torch.utils.weak import WeakTensorKeyDictionary",
+      "_tensor_id_counter = 0",
+      "_tensor_symint_registry = WeakTensorKeyDictionary()",
+      "def get_tensor_symint(tensor, *, coeff=1):"
+    ],
+    "imports": [
+      "from typing import *  # noqa: F403",
+      "from typing import Tuple",
+      "import torch",
+      "from torch._C import DispatchKey, DispatchKeySet",
+      "from torch._prims_common import is_expandable_to",
+      "from torch.utils.weak import WeakTensorKeyDictionary",
+      "from torch._subclasses.fake_tensor import FakeTensor",
+      "from torch._subclasses.functional_tensor import mb_unwrap_functional_tensor"
+    ],
+    "classes": [
+      "NestedTensor",
+      "ViewBufferFromNested",
+      "ViewNestedFromBuffer"
+    ],
+    "functions": [
+      "get_tensor_symint",
+      "_get_sdpa_extreme_seqlen",
+      "_store_val_in_tensor",
+      "_load_val_from_tensor",
+      "buffer_from_jagged",
+      "jagged_from_list",
+      "jagged_from_tensor_and_lengths",
+      "_nt_view_dummy",
+      "nested_view_from_values_offsets",
+      "nested_view_from_values_offsets_lengths"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_357_00feb18b2664c6fd_AI_Chariot_Legacy_666_1.0.0_20260508_nested_tensor.py.json"
+}

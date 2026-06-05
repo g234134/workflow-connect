@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_include.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_include.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2377,
+  "content_sha256": "b53d207b33841cb05fd58134b0ae4007674e5bcd3c45651e3675e2168c855d39",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 58,
+    "char_count": 2377,
+    "preview_lines": [
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Match, Union",
+      "from ._base import BaseDirective, DirectivePlugin",
+      "if TYPE_CHECKING:",
+      "    from ..block_parser import BlockParser",
+      "    from ..core import BaseRenderer, BlockState",
+      "    from ..markdown import Markdown",
+      "class Include(DirectivePlugin):",
+      "    def parse(",
+      "        self, block: \"BlockParser\", m: Match[str], state: \"BlockState\""
+    ],
+    "imports": [
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Match, Union",
+      "from ._base import BaseDirective, DirectivePlugin",
+      "from ..block_parser import BlockParser",
+      "from ..core import BaseRenderer, BlockState",
+      "from ..markdown import Markdown"
+    ],
+    "classes": [
+      "Include"
+    ],
+    "functions": [
+      "render_html_include"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_409_b53d207b33841cb0_AI_Chariot_Legacy_666_1.0.0_20260508_include.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 160,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\agents\\output_parsers\\test_openai_functions.py",
+  "name": "test_openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3336,
+  "content_sha256": "98359f133c7e3bf3d0826e8625ce94420b5cc00eb7feb5b91d23b52e44a2c569",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 99,
+    "non_empty_lines": 81,
+    "char_count": 3333,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_core.agents import (",
+      "    AgentActionMessageLog,",
+      "    AgentFinish,",
+      ")",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage, SystemMessage",
+      "from langchain_classic.agents.output_parsers.openai_functions import (",
+      "    OpenAIFunctionsAgentOutputParser,",
+      ")"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_core.agents import (",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage, SystemMessage",
+      "from langchain_classic.agents.output_parsers.openai_functions import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_not_an_ai",
+      "test_model_response",
+      "test_func_call",
+      "test_func_call_no_args",
+      "test_func_call_oldstyle",
+      "test_func_call_invalid"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_160_98359f133c7e3bf3_test_openai_functions.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 143,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_libritts.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_libritts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6038,
+  "content_sha256": "f75129d8cab73b24ab7b6e469e25c12e64734f010f88a98c6aa5e7ce2ae7d316",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 168,
+    "non_empty_lines": 138,
+    "char_count": 6038,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Tuple, Union",
+      "import torchaudio",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_tar",
+      "URL = \"train-clean-100\"",
+      "FOLDER_IN_ARCHIVE = \"LibriTTS\""
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Tuple, Union",
+      "import torchaudio",
+      "from torch import Tensor",
+      "from torch.utils.data import Dataset",
+      "from torchaudio._internal import download_url_to_file",
+      "from torchaudio.datasets.utils import _extract_tar"
+    ],
+    "classes": [
+      "LIBRITTS"
+    ],
+    "functions": [
+      "load_libritts_item"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_143_f75129d8cab73b24_AI_Chariot_Legacy_666_1.0.0_20260508_libritts.py.json"
+}

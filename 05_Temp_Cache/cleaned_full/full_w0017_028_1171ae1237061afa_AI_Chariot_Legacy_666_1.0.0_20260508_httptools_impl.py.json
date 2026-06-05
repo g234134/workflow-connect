@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_httptools_impl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_httptools_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22286,
+  "content_sha256": "1171ae1237061afab40e0c299cb9b86237cc1831e87c8f34e2a6dfc35e2768b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 576,
+    "non_empty_lines": 496,
+    "char_count": 22286,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextvars",
+      "import http",
+      "import logging",
+      "import re",
+      "import sys",
+      "import urllib",
+      "from asyncio.events import TimerHandle",
+      "from collections import deque"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextvars",
+      "import http",
+      "import logging",
+      "import re",
+      "import sys",
+      "import urllib",
+      "from asyncio.events import TimerHandle",
+      "from collections import deque",
+      "from collections.abc import Callable",
+      "from typing import Any, Literal",
+      "import httptools",
+      "from uvicorn._types import (",
+      "from uvicorn.config import Config",
+      "from uvicorn.logging import TRACE_LOG_LEVEL",
+      "from uvicorn.protocols.http.flow_control import CLOSE_HEADER, HIGH_WATER_LIMIT, FlowControl, service_unavailable",
+      "from uvicorn.protocols.utils import get_client_addr, get_local_addr, get_path_with_query_string, get_remote_addr, is_ssl",
+      "from uvicorn.server import ServerState"
+    ],
+    "classes": [
+      "HttpToolsProtocol",
+      "RequestResponseCycle"
+    ],
+    "functions": [
+      "_get_status_line"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_028_1171ae1237061afa_AI_Chariot_Legacy_666_1.0.0_20260508_httptools_impl.py.json"
+}

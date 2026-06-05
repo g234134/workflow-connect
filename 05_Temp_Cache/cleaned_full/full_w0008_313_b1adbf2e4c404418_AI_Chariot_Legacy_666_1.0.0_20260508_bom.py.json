@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bom.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bom.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1489,
+  "content_sha256": "b1adbf2e4c4044182e955d88f1e809ad4d28949e2d0cf6c5a633a9a9f1d76dfa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 30,
+    "char_count": 1489,
+    "preview_lines": [
+      "\"\"\"Stage 1a: BOM (Byte Order Mark) detection.\"\"\"",
+      "from __future__ import annotations",
+      "from chardet.pipeline import DetectionResult",
+      "# Ordered longest-first so UTF-32 is checked before UTF-16",
+      "# (UTF-32-LE BOM starts with the same bytes as UTF-16-LE BOM)",
+      "_BOMS: tuple[tuple[bytes, str], ...] = (",
+      "    (b\"\\x00\\x00\\xfe\\xff\", \"utf-32\"),",
+      "    (b\"\\xff\\xfe\\x00\\x00\", \"utf-32\"),",
+      "    (b\"\\xef\\xbb\\xbf\", \"utf-8-sig\"),",
+      "    (b\"\\xfe\\xff\", \"utf-16\"),"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from chardet.pipeline import DetectionResult"
+    ],
+    "classes": [],
+    "functions": [
+      "detect_bom"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_313_b1adbf2e4c404418_AI_Chariot_Legacy_666_1.0.0_20260508_bom.py.json"
+}

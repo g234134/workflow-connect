@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sharding.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sharding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3638,
+  "content_sha256": "88e1041cd58da0df886775afd2ec87f482546a5c6e5118a43648de25267ae893",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 81,
+    "char_count": 3638,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from enum import IntEnum",
+      "from typing import Dict, Sized, Tuple",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe",
+      "__all__ = [",
+      "    \"SHARDING_PRIORITIES\",",
+      "    \"ShardingFilterIterDataPipe\",",
+      "]",
+      "class SHARDING_PRIORITIES(IntEnum):"
+    ],
+    "imports": [
+      "from enum import IntEnum",
+      "from typing import Dict, Sized, Tuple",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe"
+    ],
+    "classes": [
+      "SHARDING_PRIORITIES",
+      "_ShardingIterDataPipe",
+      "ShardingFilterIterDataPipe"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_370_88e1041cd58da0df_AI_Chariot_Legacy_666_1.0.0_20260508_sharding.py.json"
+}

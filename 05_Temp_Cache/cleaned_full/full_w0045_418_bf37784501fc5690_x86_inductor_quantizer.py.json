@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\quantizer\\x86_inductor_quantizer.py",
+  "name": "x86_inductor_quantizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42202,
+  "content_sha256": "bf37784501fc56907a6eaa209e5dc7748be17e52806d1dde906ccdb0485b6161",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 989,
+    "non_empty_lines": 892,
+    "char_count": 42202,
+    "preview_lines": [
+      "import copy",
+      "import functools",
+      "import itertools",
+      "import operator",
+      "from dataclasses import dataclass",
+      "from typing import Any, Dict, List, Optional, Sequence, Set, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.fake_quantize import FusedMovingAvgObsFakeQuantize",
+      "from torch.ao.quantization.observer import ("
+    ],
+    "imports": [
+      "import copy",
+      "import functools",
+      "import itertools",
+      "import operator",
+      "from dataclasses import dataclass",
+      "from typing import Any, Dict, List, Optional, Sequence, Set, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.fake_quantize import FusedMovingAvgObsFakeQuantize",
+      "from torch.ao.quantization.observer import (",
+      "from torch.ao.quantization.pt2e.graph_utils import find_sequential_partitions",
+      "from torch.ao.quantization.qconfig import _ObserverOrFakeQuantizeConstructor",
+      "from torch.ao.quantization.quantizer.quantizer import (",
+      "from torch.ao.quantization.quantizer.xnnpack_quantizer_utils import (",
+      "from torch.fx import Node",
+      "from torch.fx.passes.utils.source_matcher_utils import ("
+    ],
+    "classes": [
+      "_X86InductorQuantizationAnnotation",
+      "X86InductorQuantizer"
+    ],
+    "functions": [
+      "_mark_nodes_as_annotated",
+      "_is_node_annotated",
+      "_is_any_annotated",
+      "_is_all_annotated",
+      "_is_quantized_op_pt2e",
+      "_supported_quantized_operators",
+      "_get_supported_x86_inductor_config_and_operators",
+      "get_default_x86_inductor_quantization_config",
+      "_get_supported_config_and_operators"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_418_bf37784501fc5690_x86_inductor_quantizer.py.json"
+}

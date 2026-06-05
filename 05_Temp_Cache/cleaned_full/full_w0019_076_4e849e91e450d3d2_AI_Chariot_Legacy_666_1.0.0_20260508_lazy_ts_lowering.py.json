@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 76,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lazy_ts_lowering.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lazy_ts_lowering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1879,
+  "content_sha256": "4e849e91e450d3d27d34ebada980207d2c50432184956ab5f283d4fcb633a228",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 42,
+    "char_count": 1879,
+    "preview_lines": [
+      "from torchgen.api.lazy import LazyArgument, LazyIrSchema",
+      "from torchgen.api.types import OptionalCType",
+      "def ts_lowering_body(schema: LazyIrSchema) -> str:",
+      "    # for now, we just want one IR class decl and soon after also the method defs",
+      "    # and we use the functional version not out/inplace.",
+      "    emplace_arguments = []",
+      "    def get_value(arg: LazyArgument) -> str:",
+      "        if isinstance(arg.lazy_type, OptionalCType):",
+      "            return f\"has_{arg.name} ? loctx->GetOutputOp(operand(i++)) : nullptr\"",
+      "        return \"loctx->GetOutputOp(operand(i++))\""
+    ],
+    "imports": [
+      "from torchgen.api.lazy import LazyArgument, LazyIrSchema",
+      "from torchgen.api.types import OptionalCType"
+    ],
+    "classes": [],
+    "functions": [
+      "ts_lowering_body"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_076_4e849e91e450d3d2_AI_Chariot_Legacy_666_1.0.0_20260508_lazy_ts_lowering.py.json"
+}

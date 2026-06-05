@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 292,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_register_dispatch_key.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_register_dispatch_key.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41908,
+  "content_sha256": "d3bce1dc0e1cfdf0a2649bd2225bddd786063b5ec6b32cb3495748147ffb0ead",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1005,
+    "non_empty_lines": 898,
+    "char_count": 41908,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import itertools",
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import Literal, TYPE_CHECKING",
+      "import torchgen.api.cpp as cpp",
+      "import torchgen.api.meta as meta",
+      "import torchgen.api.structured as structured",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import itertools",
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import Literal, TYPE_CHECKING",
+      "import torchgen.api.cpp as cpp",
+      "import torchgen.api.meta as meta",
+      "import torchgen.api.structured as structured",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import (",
+      "from torchgen.context import method_with_native_function, native_function_manager",
+      "from torchgen.model import (",
+      "from torchgen.utils import assert_never, mapMaybe, Target",
+      "from torchgen.selective_build.selector import SelectiveBuilder"
+    ],
+    "classes": [
+      "RegisterDispatchKey",
+      "StructuredRegisterDispatchKey"
+    ],
+    "functions": [
+      "gen_registration_headers",
+      "gen_empty_impl_names",
+      "gen_create_out_helper",
+      "gen_maybe_create_proxy_helper",
+      "gen_resize_out_helper",
+      "gen_check_inplace_helper",
+      "gen_registration_helpers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_292_d3bce1dc0e1cfdf0_AI_Chariot_Legacy_666_1.0.0_20260508_register_dispatch_key.py.json"
+}

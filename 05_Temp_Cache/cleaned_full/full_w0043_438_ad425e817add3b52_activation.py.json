@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:47:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\biomechanics\\activation.py",
+  "name": "activation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25522,
+  "content_sha256": "ad425e817add3b52cf1e7cc9a5544062703a0ecbc5e3a9dd72d901b752470f02",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 869,
+    "non_empty_lines": 634,
+    "char_count": 25522,
+    "preview_lines": [
+      "r\"\"\"Activation dynamics for musclotendon models.",
+      "Musculotendon models are able to produce active force when they are activated,",
+      "which is when a chemical process has taken place within the muscle fibers",
+      "causing them to voluntarily contract. Biologically this chemical process (the",
+      "diffusion of :math:`\\textrm{Ca}^{2+}` ions) is not the input in the system,",
+      "electrical signals from the nervous system are. These are termed excitations.",
+      "Activation dynamics, which relates the normalized excitation level to the",
+      "normalized activation level, can be modeled by the models present in this",
+      "module.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from functools import cached_property",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.core.numbers import Float, Integer, Rational",
+      "from sympy.functions.elementary.hyperbolic import tanh",
+      "from sympy.matrices.dense import MutableDenseMatrix as Matrix, zeros",
+      "from sympy.physics.biomechanics._mixin import _NamedMixin",
+      "from sympy.physics.mechanics import dynamicsymbols"
+    ],
+    "classes": [
+      "ActivationBase",
+      "ZerothOrderActivation",
+      "FirstOrderActivationDeGroote2016"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_438_ad425e817add3b52_activation.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 233,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transformation_contextual.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transformation_contextual.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5034,
+  "content_sha256": "b9dabd2e62c3120a0b41c1ffbb16f211c0066685759251e16c52ba016e919f52",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 135,
+    "char_count": 5034,
+    "preview_lines": [
+      "\"\"\"",
+      "This module is used to transform the request and response for the Voyage contextualized embeddings API. ",
+      "This would be used for all the contextualized embeddings models in Voyage. ",
+      "\"\"\"",
+      "from typing import List, Optional, Union",
+      "import httpx",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.llms.base_llm.chat.transformation import BaseLLMException",
+      "from litellm.llms.base_llm.embedding.transformation import BaseEmbeddingConfig",
+      "from litellm.secret_managers.main import get_secret_str"
+    ],
+    "imports": [
+      "from typing import List, Optional, Union",
+      "import httpx",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.llms.base_llm.chat.transformation import BaseLLMException",
+      "from litellm.llms.base_llm.embedding.transformation import BaseEmbeddingConfig",
+      "from litellm.secret_managers.main import get_secret_str",
+      "from litellm.types.llms.openai import AllEmbeddingInputValues, AllMessageValues",
+      "from litellm.types.utils import EmbeddingResponse, Usage"
+    ],
+    "classes": [
+      "VoyageError",
+      "VoyageContextualEmbeddingConfig"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_233_b9dabd2e62c3120a_AI_Chariot_Legacy_666_1.0.0_20260508_transformation_contextual.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 38,
+  "generated_at": "2026-05-08T18:46:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_utils_tokenizers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_utils_tokenizers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 65803,
+  "content_sha256": "354caf3d9cef9589c688261631b265d61b1beef5449cece5d13957e48394d046",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1394,
+    "non_empty_lines": 1217,
+    "char_count": 65787,
+    "preview_lines": [
+      "# Copyright 2020 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "import os",
+      "from collections import defaultdict",
+      "from collections.abc import Iterable",
+      "from shutil import copyfile",
+      "from typing import Any",
+      "import tokenizers.pre_tokenizers as pre_tokenizers_fast",
+      "from huggingface_hub import is_offline_mode",
+      "from tokenizers import AddedToken, processors",
+      "from tokenizers import Encoding as EncodingFast",
+      "from tokenizers import Tokenizer as TokenizerFast",
+      "from tokenizers.decoders import Decoder as DecoderFast",
+      "from tokenizers.models import BPE, Unigram",
+      "from tokenizers.trainers import BpeTrainer, UnigramTrainer, WordLevelTrainer, WordPieceTrainer",
+      "from transformers.utils.hub import cached_file",
+      "from .convert_slow_tokenizer import SpmConverter",
+      "from .integrations.ggml import convert_gguf_tokenizer",
+      "from .modeling_gguf_pytorch_utils import load_gguf_checkpoint",
+      "from .tokenization_utils_base import ("
+    ],
+    "classes": [
+      "TokenizersBackend"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_038_354caf3d9cef9589_AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_utils_tokenizers.py.json"
+}

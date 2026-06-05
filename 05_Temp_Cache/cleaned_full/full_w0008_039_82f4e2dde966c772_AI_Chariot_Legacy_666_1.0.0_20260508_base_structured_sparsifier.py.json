@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 39,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_structured_sparsifier.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_structured_sparsifier.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11259,
+  "content_sha256": "82f4e2dde966c772da32ad43f02b375216f83d1f10f94be996e196726f9ce545",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 286,
+    "char_count": 11259,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from itertools import chain",
+      "from operator import getitem",
+      "from typing import Callable, Dict, Optional, Set, Tuple, Type, Union",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn",
+      "from torch.ao.pruning.sparsifier.base_sparsifier import BaseSparsifier",
+      "from torch.fx import symbolic_trace",
+      "from torch.nn.utils import parametrize"
+    ],
+    "imports": [
+      "from itertools import chain",
+      "from operator import getitem",
+      "from typing import Callable, Dict, Optional, Set, Tuple, Type, Union",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn",
+      "from torch.ao.pruning.sparsifier.base_sparsifier import BaseSparsifier",
+      "from torch.fx import symbolic_trace",
+      "from torch.nn.utils import parametrize",
+      "from .match_utils import apply_match, MatchAllNode",
+      "from .parametrization import BiasHook, FakeStructuredSparsity, module_contains_param",
+      "from .prune_functions import ("
+    ],
+    "classes": [
+      "BaseStructuredSparsifier"
+    ],
+    "functions": [
+      "_get_supported_structured_pruning_modules",
+      "_get_supported_activation_functions",
+      "_get_supported_activation_modules",
+      "_get_default_structured_pruning_patterns"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_039_82f4e2dde966c772_AI_Chariot_Legacy_666_1.0.0_20260508_base_structured_sparsifier.py.json"
+}

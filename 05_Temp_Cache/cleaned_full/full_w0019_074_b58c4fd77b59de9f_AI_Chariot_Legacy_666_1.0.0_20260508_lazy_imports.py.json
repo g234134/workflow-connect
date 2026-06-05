@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lazy_imports.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lazy_imports.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5764,
+  "content_sha256": "b58c4fd77b59de9f3e421fbe31ecb865766a4215a04006c8ef1601651ac1cf0d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 143,
+    "char_count": 5764,
+    "preview_lines": [
+      "import importlib",
+      "import importlib.util",
+      "import inspect",
+      "import os",
+      "import sys",
+      "import types",
+      "__all__ = [\"attach\", \"_lazy_import\"]",
+      "def attach(module_name, submodules=None, submod_attrs=None):",
+      "    \"\"\"Attach lazily loaded submodules, and functions or other attributes.",
+      "    Typically, modules import submodules and attributes as follows::"
+    ],
+    "imports": [
+      "import importlib",
+      "import importlib.util",
+      "import inspect",
+      "import os",
+      "import sys",
+      "import types",
+      "import mysubmodule",
+      "import anothersubmodule",
+      "from .foo import someattr",
+      "from numpy.lib import recfunctions",
+      "import scipy as sp"
+    ],
+    "classes": [
+      "DelayedImportErrorModule"
+    ],
+    "functions": [
+      "attach",
+      "_lazy_import"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_074_b58c4fd77b59de9f_AI_Chariot_Legacy_666_1.0.0_20260508_lazy_imports.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6373,
+  "content_sha256": "3d62a40c9f937516195be7099294526d4ef967904dd42788df55a9bd8809b463",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 165,
+    "non_empty_lines": 139,
+    "char_count": 6373,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.  See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "import os",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "import tempfile",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import onnx",
+      "import torch",
+      "from float16 import convert_float_to_float16",
+      "from onnx import ModelProto",
+      "from onnx_model import OnnxModel",
+      "from transformers import WhisperConfig",
+      "from whisper_inputs import get_model_dynamic_axes, get_sample_encoder_inputs",
+      "from onnxruntime import InferenceSession"
+    ],
+    "classes": [
+      "WhisperEncoder"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_181_3d62a40c9f937516_AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder.py.json"
+}

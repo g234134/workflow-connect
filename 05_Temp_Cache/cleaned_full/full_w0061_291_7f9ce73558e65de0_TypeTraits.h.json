@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\TypeTraits.h",
+  "name": "TypeTraits.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 5498,
+  "content_sha256": "7f9ce73558e65de019d74017043b797a4ce97ab577aecd0962d6c25a9bd9073b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 138,
+    "char_count": 5498,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/C++17.h>",
+      "namespace c10 {",
+      "namespace guts {",
+      "/**",
+      " * is_equality_comparable<T> is true_type iff the equality operator is defined",
+      " * for T.",
+      " */",
+      "template <class T, class Enable = void>",
+      "struct is_equality_comparable : std::false_type {};"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_291_7f9ce73558e65de0_TypeTraits.h.json"
+}

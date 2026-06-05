@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 160,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cudnn\\Utils.h",
+  "name": "Utils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 598,
+  "content_sha256": "83477859f4079846bfea4706600962786d9a11e762aeb727dbb58b165219b3ad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 17,
+    "char_count": 598,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <ATen/cuda/Exceptions.h>",
+      "#include <ATen/cudnn/cudnn-wrapper.h>",
+      "#include <ATen/cudnn/Handle.h>",
+      "namespace at { namespace native {",
+      "// cuDNN has a buggy check for tensor being contiguous (that is, it does",
+      "// not ignore stride for dimension that is equal to 0).  This function",
+      "// makes tensors which have zero stride contiguous, by setting the",
+      "// strides to 1 as cuDNN likes."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_160_83477859f4079846_Utils.h.json"
+}

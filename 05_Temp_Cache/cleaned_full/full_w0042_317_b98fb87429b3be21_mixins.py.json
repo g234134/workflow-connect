@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:47:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\lib\\mixins.py",
+  "name": "mixins.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7375,
+  "content_sha256": "b98fb87429b3be218fd64a5f92cc522e7fff100fe84f098bab2af80e5fca034e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 180,
+    "non_empty_lines": 153,
+    "char_count": 7375,
+    "preview_lines": [
+      "\"\"\"",
+      "Mixin classes for custom array types that don't inherit from ndarray.",
+      "\"\"\"",
+      "from numpy._core import umath as um",
+      "__all__ = ['NDArrayOperatorsMixin']",
+      "def _disables_array_ufunc(obj):",
+      "    \"\"\"True when __array_ufunc__ is set to None.\"\"\"",
+      "    try:",
+      "        return obj.__array_ufunc__ is None",
+      "    except AttributeError:"
+    ],
+    "imports": [
+      "from numpy._core import umath as um"
+    ],
+    "classes": [
+      "NDArrayOperatorsMixin"
+    ],
+    "functions": [
+      "_disables_array_ufunc",
+      "_binary_method",
+      "_reflected_binary_method",
+      "_inplace_binary_method",
+      "_numeric_methods",
+      "_unary_method"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_317_b98fb87429b3be21_mixins.py.json"
+}

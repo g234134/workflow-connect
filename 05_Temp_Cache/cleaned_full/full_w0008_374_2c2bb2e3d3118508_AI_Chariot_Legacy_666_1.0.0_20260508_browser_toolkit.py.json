@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 374,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_browser_toolkit.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_browser_toolkit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21286,
+  "content_sha256": "2c2bb2e3d3118508d277d27b0b3a29e1b6d03646575fc310bae3558b91ff51a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 618,
+    "non_empty_lines": 487,
+    "char_count": 21286,
+    "preview_lines": [
+      "\"\"\"Toolkit for navigating web with AWS browser.\"\"\"",
+      "import asyncio",
+      "import json",
+      "import logging",
+      "from typing import Any, cast",
+      "from urllib.parse import urlparse",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.aws.bedrock.browser.browser_session_manager import (",
+      "    BrowserSessionManager,"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "import logging",
+      "from typing import Any, cast",
+      "from urllib.parse import urlparse",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.aws.bedrock.browser.browser_session_manager import (",
+      "from crewai_tools.aws.bedrock.browser.utils import aget_current_page, get_current_page",
+      "import nest_asyncio  # type: ignore[import-untyped]",
+      "from playwright.sync_api import TimeoutError as PlaywrightTimeoutError"
+    ],
+    "classes": [
+      "NavigateToolInput",
+      "ClickToolInput",
+      "GetElementsToolInput",
+      "ExtractTextToolInput",
+      "ExtractHyperlinksToolInput",
+      "NavigateBackToolInput",
+      "CurrentWebPageToolInput",
+      "BrowserBaseTool",
+      "NavigateTool",
+      "ClickTool",
+      "NavigateBackTool",
+      "ExtractTextTool",
+      "ExtractHyperlinksTool",
+      "GetElementsTool",
+      "CurrentWebPageTool",
+      "BrowserToolkit"
+    ],
+    "functions": [
+      "create_browser_toolkit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_374_2c2bb2e3d3118508_AI_Chariot_Legacy_666_1.0.0_20260508_browser_toolkit.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 234,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_found_candidates.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_found_candidates.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6018,
+  "content_sha256": "f1b6580c264b5d274b1f2fecd68e5fe2bd791e62afa85521cc1510385db52ebe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 137,
+    "char_count": 6018,
+    "preview_lines": [
+      "\"\"\"Utilities to lazily create and visit candidates found.",
+      "Creating and visiting a candidate is a *very* costly operation. It involves",
+      "fetching, extracting, potentially building modules from source, and verifying",
+      "distribution metadata. It is therefore crucial for performance to keep",
+      "everything here lazy all the way down, so we only touch candidates that we",
+      "absolutely need, and not \"download the world\" when we only need one version of",
+      "something.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import logging"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from collections.abc import Iterator, Sequence",
+      "from typing import Any, Callable, Optional",
+      "from pip._vendor.packaging.version import _BaseVersion",
+      "from pip._internal.exceptions import MetadataInvalid",
+      "from .base import Candidate",
+      "from index come later in their normal ordering."
+    ],
+    "classes": [
+      "FoundCandidates"
+    ],
+    "functions": [
+      "_iter_built",
+      "_iter_built_with_prepended",
+      "_iter_built_with_inserted"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_234_f1b6580c264b5d27_AI_Chariot_Legacy_666_1.0.0_20260508_found_candidates.py.json"
+}

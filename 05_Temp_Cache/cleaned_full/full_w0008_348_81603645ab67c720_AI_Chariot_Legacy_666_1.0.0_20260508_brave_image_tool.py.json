@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 348,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_brave_image_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_brave_image_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1450,
+  "content_sha256": "81603645ab67c72048a5cbdbc7ac02cbb4f4a329aaae500d7631251688dba00d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 33,
+    "char_count": 1450,
+    "preview_lines": [
+      "from typing import Any",
+      "from pydantic import BaseModel",
+      "from crewai_tools.tools.brave_search_tool.base import BraveSearchToolBase",
+      "from crewai_tools.tools.brave_search_tool.schemas import (",
+      "    ImageSearchHeaders,",
+      "    ImageSearchParams,",
+      ")",
+      "class BraveImageSearchTool(BraveSearchToolBase):",
+      "    \"\"\"A tool that performs image searches using the Brave Search API.\"\"\"",
+      "    name: str = \"Brave Image Search\""
+    ],
+    "imports": [
+      "from typing import Any",
+      "from pydantic import BaseModel",
+      "from crewai_tools.tools.brave_search_tool.base import BraveSearchToolBase",
+      "from crewai_tools.tools.brave_search_tool.schemas import ("
+    ],
+    "classes": [
+      "BraveImageSearchTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_348_81603645ab67c720_AI_Chariot_Legacy_666_1.0.0_20260508_brave_image_tool.py.json"
+}

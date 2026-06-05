@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 306,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_statisticsPen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_statisticsPen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10120,
+  "content_sha256": "17f2636cdb6f6262746f715bbf7040dfe2d985e72874faf8b491106597782717",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 312,
+    "non_empty_lines": 254,
+    "char_count": 10120,
+    "preview_lines": [
+      "\"\"\"Pen calculating area, center of mass, variance and standard-deviation,",
+      "covariance and correlation, and slant, of glyph shapes.\"\"\"",
+      "from math import sqrt, degrees, atan",
+      "from fontTools.pens.basePen import BasePen, OpenContourError",
+      "from fontTools.pens.momentsPen import MomentsPen",
+      "__all__ = [\"StatisticsPen\", \"StatisticsControlPen\"]",
+      "class StatisticsBase:",
+      "    def __init__(self):",
+      "        self._zero()",
+      "    def _zero(self):"
+    ],
+    "imports": [
+      "from math import sqrt, degrees, atan",
+      "from fontTools.pens.basePen import BasePen, OpenContourError",
+      "from fontTools.pens.momentsPen import MomentsPen",
+      "from fontTools.pens.transformPen import TransformPen",
+      "from fontTools.misc.transform import Scale"
+    ],
+    "classes": [
+      "StatisticsBase",
+      "StatisticsPen",
+      "StatisticsControlPen"
+    ],
+    "functions": [
+      "_test",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_306_17f2636cdb6f6262_AI_Chariot_Legacy_666_1.0.0_20260508_statisticsPen.py.json"
+}

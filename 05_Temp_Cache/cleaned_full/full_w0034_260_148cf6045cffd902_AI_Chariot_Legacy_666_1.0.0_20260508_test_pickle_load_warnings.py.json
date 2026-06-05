@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_load_warnings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_load_warnings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2408,
+  "content_sha256": "148cf6045cffd9025975a63b6227ac317aa3aa18896f885433eeb804d2b7af59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 58,
+    "char_count": 2408,
+    "preview_lines": [
+      "import ast",
+      "import inspect",
+      "import pickle",
+      "from pathlib import Path",
+      "import pytest",
+      "from nltk.parse.chart import Chart",
+      "from nltk.picklesec import pickle_load",
+      "WARN_RE = r\"Security warning: loading pickles can execute arbitrary code\"",
+      "def test_pickle_load_emits_warning(tmp_path: Path):",
+      "    pkl = tmp_path / \"obj.pickle\""
+    ],
+    "imports": [
+      "import ast",
+      "import inspect",
+      "import pickle",
+      "from pathlib import Path",
+      "import pytest",
+      "from nltk.parse.chart import Chart",
+      "from nltk.picklesec import pickle_load",
+      "from nltk.parse import DependencyGraph",
+      "from nltk.parse.transitionparser import TransitionParser",
+      "import nltk.app.chartparser_app as chartparser_app"
+    ],
+    "classes": [],
+    "functions": [
+      "test_pickle_load_emits_warning",
+      "test_transitionparser_warns_on_model_unpickle",
+      "test_chartparser_app_uses_pickle_load_not_pickle_load_standard"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_260_148cf6045cffd902_AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_load_warnings.py.json"
+}

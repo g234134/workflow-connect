@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\backends\\mps\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1491,
+  "content_sha256": "aeacbec47f7ba80efe32639380e2016202c04151d38e9f2f68a4a210dc0cd37d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 33,
+    "char_count": 1491,
+    "preview_lines": [
+      "from functools import lru_cache as _lru_cache",
+      "import torch",
+      "from ...library import Library as _Library",
+      "__all__ = [\"is_built\", \"is_available\", \"is_macos13_or_newer\"]",
+      "def is_built() -> bool:",
+      "    r\"\"\"Return whether PyTorch is built with MPS support.",
+      "    Note that this doesn't necessarily mean MPS is available; just that",
+      "    if this PyTorch binary were run a machine with working MPS drivers",
+      "    and devices, we would be able to use it.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from functools import lru_cache as _lru_cache",
+      "import torch",
+      "from ...library import Library as _Library",
+      "from ..._decomp.decompositions import (",
+      "from ..._refs import native_group_norm as _native_group_norm, var_mean as _var_mean"
+    ],
+    "classes": [],
+    "functions": [
+      "is_built",
+      "is_available",
+      "is_macos13_or_newer",
+      "_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_448_aeacbec47f7ba80e___init__.py.json"
+}

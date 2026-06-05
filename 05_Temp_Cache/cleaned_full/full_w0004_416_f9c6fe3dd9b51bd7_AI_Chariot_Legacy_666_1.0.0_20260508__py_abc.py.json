@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 416,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__py_abc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__py_abc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6189,
+  "content_sha256": "f9c6fe3dd9b51bd7d93f867356e9d362600c924febfd903ee1c6e298860dca92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 147,
+    "non_empty_lines": 132,
+    "char_count": 6189,
+    "preview_lines": [
+      "from _weakrefset import WeakSet",
+      "def get_cache_token():",
+      "    \"\"\"Returns the current ABC cache token.",
+      "    The token is an opaque object (supporting equality testing) identifying the",
+      "    current version of the ABC cache for virtual subclasses. The token changes",
+      "    with every call to ``register()`` on any ABC.",
+      "    \"\"\"",
+      "    return ABCMeta._abc_invalidation_counter",
+      "class ABCMeta(type):",
+      "    \"\"\"Metaclass for defining Abstract Base Classes (ABCs)."
+    ],
+    "imports": [
+      "from _weakrefset import WeakSet"
+    ],
+    "classes": [
+      "ABCMeta"
+    ],
+    "functions": [
+      "get_cache_token"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_416_f9c6fe3dd9b51bd7_AI_Chariot_Legacy_666_1.0.0_20260508__py_abc.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_value_attrspec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_value_attrspec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 345,
+  "content_sha256": "3f7ca9c425ec6a4ca09cfd487571f5873c3955a60a18de34cf748ec0aeb520f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 11,
+    "char_count": 345,
+    "preview_lines": [
+      "import pytest",
+      "from . import util",
+      "class TestValueAttr(util.F2PyTest):",
+      "    sources = [util.getpath(\"tests\", \"src\", \"value_attrspec\", \"gh21665.f90\")]",
+      "    # gh-21665",
+      "    @pytest.mark.slow",
+      "    def test_gh21665(self):",
+      "        inp = 2",
+      "        out = self.module.fortfuncs.square(inp)",
+      "        exp_out = 4"
+    ],
+    "imports": [
+      "import pytest",
+      "from . import util"
+    ],
+    "classes": [
+      "TestValueAttr"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_105_3f7ca9c425ec6a4c_AI_Chariot_Legacy_666_1.0.0_20260508_test_value_attrspec.py.json"
+}

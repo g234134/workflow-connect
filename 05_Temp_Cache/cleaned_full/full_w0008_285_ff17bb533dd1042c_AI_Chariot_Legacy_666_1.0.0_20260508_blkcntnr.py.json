@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_blkcntnr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_blkcntnr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3525,
+  "content_sha256": "ff17bb533dd1042cf84cf297a48cd1c6d1a0fb560f6f78001bd62fb12532a0b5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 74,
+    "char_count": 3525,
+    "preview_lines": [
+      "# pyright: reportImportCycles=false",
+      "\"\"\"Block item container, used by body, cell, header, etc.",
+      "Block level items are things like paragraph and table, although there are a few other",
+      "specialized ones like structured document tags.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Iterator",
+      "from typing_extensions import TypeAlias",
+      "from docx.oxml.table import CT_Tbl",
+      "from docx.oxml.text.paragraph import CT_P"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Iterator",
+      "from typing_extensions import TypeAlias",
+      "from docx.oxml.table import CT_Tbl",
+      "from docx.oxml.text.paragraph import CT_P",
+      "from docx.shared import StoryChild",
+      "from docx.text.paragraph import Paragraph",
+      "import docx.types as t",
+      "from docx.oxml.comments import CT_Comment",
+      "from docx.oxml.document import CT_Body",
+      "from docx.oxml.section import CT_HdrFtr",
+      "from docx.oxml.table import CT_Tc",
+      "from docx.shared import Length",
+      "from docx.styles.style import ParagraphStyle",
+      "from docx.table import Table",
+      "from docx.table import Table",
+      "from docx.table import Table",
+      "from docx.table import Table"
+    ],
+    "classes": [
+      "BlockItemContainer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_285_ff17bb533dd1042c_AI_Chariot_Legacy_666_1.0.0_20260508_blkcntnr.py.json"
+}

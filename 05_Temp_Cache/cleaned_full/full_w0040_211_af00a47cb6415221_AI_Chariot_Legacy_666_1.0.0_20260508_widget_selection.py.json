@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_widget_selection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_widget_selection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24617,
+  "content_sha256": "af00a47cb6415221567561d1d1dc76969625fa1d4147f9507d0475ea85a753c0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 646,
+    "non_empty_lines": 520,
+    "char_count": 24617,
+    "preview_lines": [
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "\"\"\"Selection classes.",
+      "Represents an enumeration using a widget.",
+      "\"\"\"",
+      "from collections.abc import Iterable, Mapping",
+      "from itertools import chain",
+      "from .widget_description import DescriptionWidget, DescriptionStyle",
+      "from .valuewidget import ValueWidget",
+      "from .widget_core import CoreWidget"
+    ],
+    "imports": [
+      "from collections.abc import Iterable, Mapping",
+      "from itertools import chain",
+      "from .widget_description import DescriptionWidget, DescriptionStyle",
+      "from .valuewidget import ValueWidget",
+      "from .widget_core import CoreWidget",
+      "from .widget_style import Style",
+      "from .trait_types import InstanceDict, TypedTuple",
+      "from .widget import register, widget_serialization",
+      "from .widget_int import SliderStyle",
+      "from .docutils import doc_subst",
+      "from traitlets import (Unicode, Bool, Int, Any, Dict, TraitError, CaselessStrEnum,"
+    ],
+    "classes": [
+      "_Selection",
+      "_MultipleSelection",
+      "ToggleButtonsStyle",
+      "ToggleButtons",
+      "Dropdown",
+      "RadioButtons",
+      "Select",
+      "SelectMultiple",
+      "_SelectionNonempty",
+      "_MultipleSelectionNonempty",
+      "SelectionSlider",
+      "SelectionRangeSlider"
+    ],
+    "functions": [
+      "_exhaust_iterable",
+      "_make_options",
+      "findvalue"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_211_af00a47cb6415221_AI_Chariot_Legacy_666_1.0.0_20260508_widget_selection.py.json"
+}

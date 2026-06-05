@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 65,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_neighbors_pipeline.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_neighbors_pipeline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8403,
+  "content_sha256": "d38ac4b26d93b4e3bd16fe4b0bfdff8913bd73ffde8660ff39293518503f8861",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 256,
+    "non_empty_lines": 212,
+    "char_count": 8403,
+    "preview_lines": [
+      "\"\"\"",
+      "This is testing the equivalence between some estimators with internal nearest",
+      "neighbors computations, and the corresponding pipeline versions with",
+      "KNeighborsTransformer or RadiusNeighborsTransformer to precompute the",
+      "neighbors.",
+      "\"\"\"",
+      "import numpy as np",
+      "from sklearn.base import clone",
+      "from sklearn.cluster import DBSCAN, SpectralClustering",
+      "from sklearn.cluster.tests.common import generate_clustered_data"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from sklearn.base import clone",
+      "from sklearn.cluster import DBSCAN, SpectralClustering",
+      "from sklearn.cluster.tests.common import generate_clustered_data",
+      "from sklearn.datasets import make_blobs",
+      "from sklearn.manifold import TSNE, Isomap, SpectralEmbedding",
+      "from sklearn.neighbors import (",
+      "from sklearn.pipeline import make_pipeline",
+      "from sklearn.utils._testing import assert_array_almost_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_spectral_clustering",
+      "test_spectral_embedding",
+      "test_dbscan",
+      "test_isomap",
+      "test_tsne",
+      "test_lof_novelty_false",
+      "test_lof_novelty_true",
+      "test_kneighbors_regressor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_065_d38ac4b26d93b4e3_AI_Chariot_Legacy_666_1.0.0_20260508_test_neighbors_pipeline.py.json"
+}

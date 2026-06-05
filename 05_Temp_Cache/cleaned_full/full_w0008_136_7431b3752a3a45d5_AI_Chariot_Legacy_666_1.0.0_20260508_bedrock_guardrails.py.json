@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_guardrails.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_guardrails.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 59250,
+  "content_sha256": "7431b3752a3a45d50447e0cc5d66cd02766a7a4a0c572ce8e1da3eb27c845925",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1462,
+    "non_empty_lines": 1286,
+    "char_count": 59246,
+    "preview_lines": [
+      "# +-------------------------------------------------------------+",
+      "#",
+      "#           Use Bedrock Guardrails for your LLM calls",
+      "#",
+      "# +-------------------------------------------------------------+",
+      "#  Thank you users! We ❤️ you! - Krrish & Ishaan",
+      "import copy",
+      "import os",
+      "import sys",
+      "sys.path.insert("
+    ],
+    "imports": [
+      "import copy",
+      "import os",
+      "import sys",
+      "import json",
+      "import sys",
+      "from typing import (",
+      "import httpx",
+      "from fastapi import HTTPException",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching import DualCache",
+      "from litellm.exceptions import GuardrailInterventionNormalStringError",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail",
+      "from litellm.llms.bedrock.base_aws_llm import BaseAWSLLM",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.secret_managers.main import get_secret_str",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.llms.openai import AllMessageValues, ChatCompletionUserMessage",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.bedrock_guardrails import ("
+    ],
+    "classes": [
+      "GuardrailMessageFilterResult",
+      "BedrockGuardrail"
+    ],
+    "functions": [
+      "_redact_pii_matches"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_136_7431b3752a3a45d5_AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_guardrails.py.json"
+}

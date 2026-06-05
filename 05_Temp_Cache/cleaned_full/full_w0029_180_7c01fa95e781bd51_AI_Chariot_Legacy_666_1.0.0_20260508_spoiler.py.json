@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spoiler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spoiler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2823,
+  "content_sha256": "7c01fa95e781bd5194b5c6a303ba9690cf889503b226101ea7ed393be63e5a23",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 65,
+    "char_count": 2823,
+    "preview_lines": [
+      "import re",
+      "from typing import TYPE_CHECKING, Match",
+      "if TYPE_CHECKING:",
+      "    from ..block_parser import BlockParser",
+      "    from ..core import BaseRenderer, BlockState, InlineState",
+      "    from ..inline_parser import InlineParser",
+      "    from ..markdown import Markdown",
+      "__all__ = [\"spoiler\"]",
+      "_BLOCK_SPOILER_START = re.compile(r\"^ {0,3}! ?\", re.M)",
+      "_BLOCK_SPOILER_MATCH = re.compile(r\"^( {0,3}![^\\n]*\\n)+$\")"
+    ],
+    "imports": [
+      "import re",
+      "from typing import TYPE_CHECKING, Match",
+      "from ..block_parser import BlockParser",
+      "from ..core import BaseRenderer, BlockState, InlineState",
+      "from ..inline_parser import InlineParser",
+      "from ..markdown import Markdown"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_block_spoiler",
+      "parse_inline_spoiler",
+      "render_block_spoiler",
+      "render_inline_spoiler",
+      "spoiler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_180_7c01fa95e781bd51_AI_Chariot_Legacy_666_1.0.0_20260508_spoiler.py.json"
+}

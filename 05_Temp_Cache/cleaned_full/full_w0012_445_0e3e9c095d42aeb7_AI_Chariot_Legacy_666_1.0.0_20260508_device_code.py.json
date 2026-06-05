@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 445,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_device_code.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_device_code.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4265,
+  "content_sha256": "0e3e9c095d42aeb72dd45a2139e418f0e8fcb7d664437de57ab38e76d17102d1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 86,
+    "char_count": 4265,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import json",
+      "from typing import Callable",
+      "from oauthlib import common # noqa: TC001",
+      "from oauthlib.oauth2.rfc6749 import errors as rfc6749_errors",
+      "from oauthlib.oauth2.rfc6749.grant_types.base import GrantTypeBase",
+      "class DeviceCodeGrant(GrantTypeBase):",
+      "    def create_authorization_response(",
+      "        self, request: common.Request, token_handler: Callable",
+      "    ) -> tuple[dict, str, int]:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from typing import Callable",
+      "from oauthlib import common # noqa: TC001",
+      "from oauthlib.oauth2.rfc6749 import errors as rfc6749_errors",
+      "from oauthlib.oauth2.rfc6749.grant_types.base import GrantTypeBase"
+    ],
+    "classes": [
+      "DeviceCodeGrant"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_445_0e3e9c095d42aeb7_AI_Chariot_Legacy_666_1.0.0_20260508_device_code.py.json"
+}

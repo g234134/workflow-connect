@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_owlvit.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_owlvit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11244,
+  "content_sha256": "8aecab395c6bd63f7eee3a537298f6d9e06c3d58f5a43536db09213a49ad60d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 269,
+    "non_empty_lines": 212,
+    "char_count": 11244,
+    "preview_lines": [
+      "# Copyright 2022 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_transforms import center_to_corners_format",
+      "from ...image_utils import OPENAI_CLIP_MEAN, OPENAI_CLIP_STD, PILImageResampling",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring, logging",
+      "from ...utils.import_utils import requires",
+      "import torch",
+      "import torch",
+      "import torch",
+      "from .modeling_owlvit import OwlViTObjectDetectionOutput",
+      "import torch"
+    ],
+    "classes": [
+      "OwlViTImageProcessorPil"
+    ],
+    "functions": [
+      "_upcast",
+      "_scale_boxes",
+      "box_area",
+      "box_iou"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_280_8aecab395c6bd63f_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_owlvit.py.json"
+}

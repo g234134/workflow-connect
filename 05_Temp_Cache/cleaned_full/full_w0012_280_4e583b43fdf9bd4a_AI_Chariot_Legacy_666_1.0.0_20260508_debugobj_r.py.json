@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_debugobj_r.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_debugobj_r.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1082,
+  "content_sha256": "4e583b43fdf9bd4a731d70e074ee597aba03f3c8c36302bdc7e74650fb1fcc11",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 30,
+    "char_count": 1082,
+    "preview_lines": [
+      "from idlelib import rpc",
+      "def remote_object_tree_item(item):",
+      "    wrapper = WrappedObjectTreeItem(item)",
+      "    oid = id(wrapper)",
+      "    rpc.objecttable[oid] = wrapper",
+      "    return oid",
+      "class WrappedObjectTreeItem:",
+      "    # Lives in PYTHON subprocess",
+      "    def __init__(self, item):",
+      "        self.__item = item"
+    ],
+    "imports": [
+      "from idlelib import rpc",
+      "from unittest import main"
+    ],
+    "classes": [
+      "WrappedObjectTreeItem",
+      "StubObjectTreeItem"
+    ],
+    "functions": [
+      "remote_object_tree_item"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_280_4e583b43fdf9bd4a_AI_Chariot_Legacy_666_1.0.0_20260508_debugobj_r.py.json"
+}

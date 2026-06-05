@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dpll2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dpll2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21261,
+  "content_sha256": "10d7d25d7028a165b849a629cd389589a2974af177b616b6b47b9b4322e8b86c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 684,
+    "non_empty_lines": 539,
+    "char_count": 21261,
+    "preview_lines": [
+      "\"\"\"Implementation of DPLL algorithm",
+      "Features:",
+      "  - Clause learning",
+      "  - Watch literal scheme",
+      "  - VSIDS heuristic",
+      "References:",
+      "  - https://en.wikipedia.org/wiki/DPLL_algorithm",
+      "\"\"\"",
+      "from collections import defaultdict",
+      "from heapq import heappush, heappop"
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "from heapq import heappush, heappop",
+      "from sympy.core.sorting import ordered",
+      "from sympy.assumptions.cnf import EncodedCNF",
+      "from sympy.logic.algorithms.lra_theory import LRASolver"
+    ],
+    "classes": [
+      "SATSolver",
+      "Level"
+    ],
+    "functions": [
+      "dpll_satisfiable",
+      "_all_models"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_159_10d7d25d7028a165_AI_Chariot_Legacy_666_1.0.0_20260508_dpll2.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 403,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_sdists-v9\\pypi\\wget\\3.2\\YHsi3sJW_yD6O5hBuc2wL\\src\\setup.py",
+  "name": "setup.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1131,
+  "content_sha256": "c9107d4e66ce321ce5d315ad50bc13fd029f46bb3df0ba8431168a2997d6c11a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 31,
+    "char_count": 1131,
+    "preview_lines": [
+      "from distutils.core import setup",
+      "def get_version(relpath):",
+      "    \"\"\"read version info from file without importing it\"\"\"",
+      "    from os.path import dirname, join",
+      "    for line in open(join(dirname(__file__), relpath)):",
+      "        if '__version__' in line:",
+      "            if '\"' in line:",
+      "                # __version__ = \"0.9\"",
+      "                return line.split('\"')[1]",
+      "            elif \"'\" in line:"
+    ],
+    "imports": [
+      "from distutils.core import setup",
+      "from os.path import dirname, join"
+    ],
+    "classes": [],
+    "functions": [
+      "get_version"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_403_c9107d4e66ce321c_setup.py.json"
+}

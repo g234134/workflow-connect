@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 301,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_decompose_mem_bound_mm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_decompose_mem_bound_mm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4997,
+  "content_sha256": "1c3b754960d481117ef23760ac814d7be7f98db8a949618c0b80ed382f51a2ae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 126,
+    "char_count": 4997,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "from typing import List",
+      "import torch",
+      "from torch import Tensor",
+      "from torch._dynamo.utils import counters",
+      "from .. import config",
+      "from ..pattern_matcher import Arg, CallFunction, Match, register_graph_pattern",
+      "from .split_cat import construct_pattern_matcher_pass",
+      "aten = torch.ops.aten"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import List",
+      "import torch",
+      "from torch import Tensor",
+      "from torch._dynamo.utils import counters",
+      "from .. import config",
+      "from ..pattern_matcher import Arg, CallFunction, Match, register_graph_pattern",
+      "from .split_cat import construct_pattern_matcher_pass"
+    ],
+    "classes": [],
+    "functions": [
+      "check_device",
+      "realize_inputs",
+      "should_decompose_bmm",
+      "should_decompose_mm",
+      "is_node_meta_valid",
+      "print_decompose_pattern",
+      "decompose_bmm",
+      "decompose_addmm",
+      "decompose_mm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_301_1c3b754960d48111_AI_Chariot_Legacy_666_1.0.0_20260508_decompose_mem_bound_mm.py.json"
+}

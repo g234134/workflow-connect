@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 199,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_trans_null.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_trans_null.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1287,
+  "content_sha256": "9e2cbf8359f3b52d9b3ec20da8aeff8341dca48ff0ea12fe73cfe1aa90bb53bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 36,
+    "char_count": 1287,
+    "preview_lines": [
+      "# These are versions of the functions in django.utils.translation.trans_real",
+      "# that don't actually do anything. This is purely for performance, so that",
+      "# settings.USE_I18N = False can use this module rather than trans_real.py.",
+      "from django.conf import settings",
+      "def gettext(message):",
+      "    return message",
+      "gettext_noop = gettext_lazy = _ = gettext",
+      "def ngettext(singular, plural, number):",
+      "    if number == 1:",
+      "        return singular"
+    ],
+    "imports": [
+      "from django.conf import settings"
+    ],
+    "classes": [],
+    "functions": [
+      "gettext",
+      "ngettext",
+      "pgettext",
+      "npgettext",
+      "activate",
+      "deactivate",
+      "get_language",
+      "get_language_bidi",
+      "check_for_language",
+      "get_language_from_request",
+      "get_language_from_path",
+      "get_supported_language_variant"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_199_9e2cbf8359f3b52d_AI_Chariot_Legacy_666_1.0.0_20260508_trans_null.py.json"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 353,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\frozen_concat_linear.h",
+  "name": "frozen_concat_linear.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 290,
+  "content_sha256": "b80ecd92225f8c354c1debf10c7f24a2028f03954cb4932bc610ebe04f32e4e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 290,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Concats multiple linear ops with the same Tensor input",
+      "// into a single linear op.",
+      "TORCH_API bool FrozenConcatLinear(std::shared_ptr<Graph>& graph);",
+      "} // namespace jit",
+      "} // namespace torch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_353_b80ecd92225f8c35_frozen_concat_linear.h.json"
+}

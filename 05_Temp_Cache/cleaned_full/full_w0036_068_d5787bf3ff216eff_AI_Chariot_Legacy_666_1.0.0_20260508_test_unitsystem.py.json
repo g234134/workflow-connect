@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 68,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_unitsystem.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_unitsystem.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3254,
+  "content_sha256": "d5787bf3ff216effb23f8202588fdd52b3a79377229a5bcffd584ef845ce6bb4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 65,
+    "char_count": 3254,
+    "preview_lines": [
+      "from sympy.physics.units import DimensionSystem, joule, second, ampere",
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.singleton import S",
+      "from sympy.physics.units.definitions import c, kg, m, s",
+      "from sympy.physics.units.definitions.dimension_definitions import length, time",
+      "from sympy.physics.units.quantities import Quantity",
+      "from sympy.physics.units.unitsystem import UnitSystem",
+      "from sympy.physics.units.util import convert_to",
+      "def test_definition():",
+      "    # want to test if the system can have several units of the same dimension"
+    ],
+    "imports": [
+      "from sympy.physics.units import DimensionSystem, joule, second, ampere",
+      "from sympy.core.numbers import Rational",
+      "from sympy.core.singleton import S",
+      "from sympy.physics.units.definitions import c, kg, m, s",
+      "from sympy.physics.units.definitions.dimension_definitions import length, time",
+      "from sympy.physics.units.quantities import Quantity",
+      "from sympy.physics.units.unitsystem import UnitSystem",
+      "from sympy.physics.units.util import convert_to",
+      "from sympy.physics.units import volt, ohm"
+    ],
+    "classes": [],
+    "functions": [
+      "test_definition",
+      "test_str_repr",
+      "test_convert_to",
+      "test_extend",
+      "test_dim",
+      "test_is_consistent",
+      "test_get_units_non_prefixed",
+      "test_derived_units_must_exist_in_unit_system"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_068_d5787bf3ff216eff_AI_Chariot_Legacy_666_1.0.0_20260508_test_unitsystem.py.json"
+}

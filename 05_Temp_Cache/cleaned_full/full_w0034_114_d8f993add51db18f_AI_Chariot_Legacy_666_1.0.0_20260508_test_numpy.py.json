@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8843,
+  "content_sha256": "d8f993add51db18f650a92a02522b275fcdbd4c7c7a5b529c5187219a4e3a1bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 234,
+    "non_empty_lines": 201,
+    "char_count": 8843,
+    "preview_lines": [
+      "from unittest import TestCase",
+      "from numpy.testing import assert_equal, assert_array_equal",
+      "import numpy as np",
+      "from srsly import msgpack",
+      "class ThirdParty(object):",
+      "    def __init__(self, foo=b\"bar\"):",
+      "        self.foo = foo",
+      "    def __eq__(self, other):",
+      "        return isinstance(other, ThirdParty) and self.foo == other.foo",
+      "class test_numpy_msgpack(TestCase):"
+    ],
+    "imports": [
+      "from unittest import TestCase",
+      "from numpy.testing import assert_equal, assert_array_equal",
+      "import numpy as np",
+      "from srsly import msgpack"
+    ],
+    "classes": [
+      "ThirdParty",
+      "test_numpy_msgpack"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_114_d8f993add51db18f_AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy.py.json"
+}

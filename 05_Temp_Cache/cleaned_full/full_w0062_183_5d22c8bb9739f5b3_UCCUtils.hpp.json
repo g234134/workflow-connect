@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\UCCUtils.hpp",
+  "name": "UCCUtils.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 6547,
+  "content_sha256": "5d22c8bb9739f5b3f71018932494a71ff8accc0ea180b952b37e7ab16f12ae48",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 187,
+    "non_empty_lines": 162,
+    "char_count": 6547,
+    "preview_lines": [
+      "#pragma once",
+      "#ifdef USE_C10D_UCC",
+      "#include <torch/csrc/distributed/c10d/ProcessGroup.hpp>",
+      "#include <torch/csrc/distributed/c10d/Store.hpp>",
+      "#include <ucc/api/ucc.h>",
+      "namespace c10d {",
+      "// Macro to generate the error message on a non-successful UCC return value.",
+      "#define TORCH_UCC_GET_ERROR_MSG(_err, _error_msg, _result) \\",
+      "  do {                                                     \\",
+      "    _err = c10::str(                                       \\"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_183_5d22c8bb9739f5b3_UCCUtils.hpp.json"
+}

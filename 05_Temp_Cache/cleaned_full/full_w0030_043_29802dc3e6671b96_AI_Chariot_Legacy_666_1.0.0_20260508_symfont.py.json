@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 43,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_symfont.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_symfont.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7219,
+  "content_sha256": "29802dc3e6671b9611792f179120c8bf17356e5d31cd997e5b1e09ee4eeeecb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 242,
+    "non_empty_lines": 203,
+    "char_count": 7219,
+    "preview_lines": [
+      "from fontTools.pens.basePen import BasePen",
+      "from functools import partial",
+      "from itertools import count",
+      "import sympy as sp",
+      "import sys",
+      "n = 3  # Max Bezier degree; 3 for cubic, 2 for quadratic",
+      "t, x, y = sp.symbols(\"t x y\", real=True)",
+      "c = sp.symbols(\"c\", real=False)  # Complex representation instead of x/y",
+      "X = tuple(sp.symbols(\"x:%d\" % (n + 1), real=True))",
+      "Y = tuple(sp.symbols(\"y:%d\" % (n + 1), real=True))"
+    ],
+    "imports": [
+      "from fontTools.pens.basePen import BasePen",
+      "from functools import partial",
+      "from itertools import count",
+      "import sympy as sp",
+      "import sys",
+      "import cython",
+      "from fontTools.misc import cython"
+    ],
+    "classes": [
+      "_BezierFuncsLazy",
+      "GreenPen"
+    ],
+    "functions": [
+      "green",
+      "printGreenPen"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_043_29802dc3e6671b96_AI_Chariot_Legacy_666_1.0.0_20260508_symfont.py.json"
+}

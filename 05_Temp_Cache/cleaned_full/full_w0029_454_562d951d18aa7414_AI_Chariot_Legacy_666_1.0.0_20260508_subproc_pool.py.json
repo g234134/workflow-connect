@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 454,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_subproc_pool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_subproc_pool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11116,
+  "content_sha256": "562d951d18aa7414db909f128ffd2dfccadd600bbc9faa8c25bfaff808db7c32",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 255,
+    "char_count": 11116,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import itertools",
+      "import logging",
+      "import multiprocessing",
+      "import os",
+      "import pickle",
+      "import struct",
+      "import subprocess",
+      "import sys"
+    ],
+    "imports": [
+      "import functools",
+      "import itertools",
+      "import logging",
+      "import multiprocessing",
+      "import os",
+      "import pickle",
+      "import struct",
+      "import subprocess",
+      "import sys",
+      "import threading",
+      "import traceback",
+      "import typing",
+      "from concurrent.futures import Future, ProcessPoolExecutor",
+      "from concurrent.futures.process import BrokenProcessPool",
+      "from typing import Any, Callable, Dict",
+      "from torch._inductor import config",
+      "from torch._inductor.compile_worker.watchdog import _async_compile_initializer",
+      "from libfb.py.parutil import get_runtime_path"
+    ],
+    "classes": [
+      "_SubprocExceptionInfo",
+      "SubprocException",
+      "SubprocPool",
+      "SubprocMain",
+      "TestException"
+    ],
+    "functions": [
+      "_pack_msg",
+      "_unpack_msg",
+      "_send_msg",
+      "_recv_msg",
+      "_get_ld_library_path",
+      "_warm_process_pool",
+      "raise_testexc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_454_562d951d18aa7414_AI_Chariot_Legacy_666_1.0.0_20260508_subproc_pool.py.json"
+}

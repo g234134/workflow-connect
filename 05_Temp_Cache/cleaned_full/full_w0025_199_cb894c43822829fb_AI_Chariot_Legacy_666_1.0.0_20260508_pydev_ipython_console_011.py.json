@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 199,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydev_ipython_console_011.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydev_ipython_console_011.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21267,
+  "content_sha256": "cb894c43822829fbef81f1ede508b8fc3a2b9fc301445e9b712040f5b9315b8e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 504,
+    "non_empty_lines": 413,
+    "char_count": 21267,
+    "preview_lines": [
+      "# TODO that would make IPython integration better",
+      "# - show output other times then when enter was pressed",
+      "# - support proper exit to allow IPython to cleanup (e.g. temp files created with %edit)",
+      "# - support Ctrl-D (Ctrl-Z on Windows)",
+      "# - use IPython (numbered) prompts in PyDev",
+      "# - better integration of IPython and PyDev completions",
+      "# - some of the semantics on handling the code completion are not correct:",
+      "#   eg: Start a line with % and then type c should give %cd as a completion by it doesn't",
+      "#       however type %c and request completions and %cd is given as an option",
+      "#   eg: Completing a magic when user typed it without the leading % causes the % to be inserted"
+    ],
+    "imports": [
+      "from __future__ import print_function",
+      "import os",
+      "import sys",
+      "import codeop",
+      "import traceback",
+      "from IPython.core.error import UsageError",
+      "from IPython.core.completer import IPCompleter",
+      "from IPython.core.interactiveshell import InteractiveShell, InteractiveShellABC",
+      "from IPython.core.usage import default_banner_parts",
+      "from IPython.utils.strdispatch import StrDispatch",
+      "import IPython.core.release as IPythonRelease",
+      "from IPython.terminal.interactiveshell import TerminalInteractiveShell",
+      "from traitlets import CBool, Unicode",
+      "from IPython.utils.traitlets import CBool, Unicode",
+      "from IPython.core import release",
+      "from _pydev_bundle.pydev_imports import xmlrpclib",
+      "from pydev_ipython.inputhook import enable_gui as real_enable_gui"
+    ],
+    "classes": [
+      "PyDevIPCompleter",
+      "PyDevIPCompleter6",
+      "PyDevTerminalInteractiveShell",
+      "_PyDevFrontEnd",
+      "_PyDevFrontEndContainer"
+    ],
+    "functions": [
+      "show_in_pager",
+      "create_editor_hook",
+      "get_pydev_frontend"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_199_cb894c43822829fb_AI_Chariot_Legacy_666_1.0.0_20260508_pydev_ipython_console_011.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 461,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__layoutgrid.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__layoutgrid.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21676,
+  "content_sha256": "98507d6ac655a25d9a57d84b069767b6e1b9c758ac294ada8c5fb74d484282ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 547,
+    "non_empty_lines": 476,
+    "char_count": 21676,
+    "preview_lines": [
+      "\"\"\"",
+      "A layoutgrid is a nrows by ncols set of boxes, meant to be used by",
+      "`._constrained_layout`, each box is analogous to a subplotspec element of",
+      "a gridspec.",
+      "Each box is defined by left[ncols], right[ncols], bottom[nrows] and top[nrows],",
+      "and by two editable margins for each side.  The main margin gets its value",
+      "set by the size of ticklabels, titles, etc on each Axes that is in the figure.",
+      "The outer margin is the padding around the Axes, and space for any",
+      "colorbars.",
+      "The \"inner\" widths and heights of these boxes are then constrained to be the"
+    ],
+    "imports": [
+      "import itertools",
+      "import kiwisolver as kiwi",
+      "import logging",
+      "import numpy as np",
+      "import matplotlib as mpl",
+      "import matplotlib.patches as mpatches",
+      "from matplotlib.transforms import Bbox"
+    ],
+    "classes": [
+      "LayoutGrid"
+    ],
+    "functions": [
+      "seq_id",
+      "plot_children"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_461_98507d6ac655a25d_AI_Chariot_Legacy_666_1.0.0_20260508__layoutgrid.py.json"
+}

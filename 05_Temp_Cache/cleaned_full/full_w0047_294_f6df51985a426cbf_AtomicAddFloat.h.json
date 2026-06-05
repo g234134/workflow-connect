@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 294,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\AtomicAddFloat.h",
+  "name": "AtomicAddFloat.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 894,
+  "content_sha256": "f6df51985a426cbfb42e2e0ea5c4da8ec5d6fbf5b341af877802e5ed3b7b6d6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 30,
+    "char_count": 894,
+    "preview_lines": [
+      "#ifndef ATOMIC_ADD_FLOAT",
+      "#define ATOMIC_ADD_FLOAT",
+      "#if (defined(__x86_64__) || defined(__i386__) || defined(__aarch64__))",
+      "#include <ATen/native/cpu/Intrinsics.h>",
+      "#else",
+      "#define _mm_pause()",
+      "#endif",
+      "#include <atomic>",
+      "static inline void cpu_atomic_add_float(float* dst, float fvalue)",
+      "{"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_294_f6df51985a426cbf_AtomicAddFloat.h.json"
+}

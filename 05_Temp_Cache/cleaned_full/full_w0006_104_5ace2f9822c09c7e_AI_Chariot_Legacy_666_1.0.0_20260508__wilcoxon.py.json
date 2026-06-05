@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 104,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__wilcoxon.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__wilcoxon.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9641,
+  "content_sha256": "5ace2f9822c09c7e92900da110a87cbbf10d34a5b31e951c46d752f4a75e05b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 259,
+    "non_empty_lines": 208,
+    "char_count": 9641,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy import stats",
+      "from ._stats_py import _get_pvalue, _rankdata, _SimpleNormal",
+      "from . import _morestats",
+      "from ._axis_nan_policy import _broadcast_arrays",
+      "from ._hypotests import _get_wilcoxon_distr",
+      "from scipy._lib._util import _lazywhere, _get_nan",
+      "class WilcoxonDistribution:",
+      "    def __init__(self, n):",
+      "        n = np.asarray(n).astype(int, copy=False)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy import stats",
+      "from ._stats_py import _get_pvalue, _rankdata, _SimpleNormal",
+      "from . import _morestats",
+      "from ._axis_nan_policy import _broadcast_arrays",
+      "from ._hypotests import _get_wilcoxon_distr",
+      "from scipy._lib._util import _lazywhere, _get_nan"
+    ],
+    "classes": [
+      "WilcoxonDistribution"
+    ],
+    "functions": [
+      "_wilcoxon_iv",
+      "_wilcoxon_statistic",
+      "_correction_sign",
+      "_wilcoxon_nd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_104_5ace2f9822c09c7e_AI_Chariot_Legacy_666_1.0.0_20260508__wilcoxon.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 152,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\benchmark\\examples\\spectral_ops_fuzz_test.py",
+  "name": "spectral_ops_fuzz_test.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4829,
+  "content_sha256": "56f500729ad46b185d8c0e6555d0a9d72f982204abb2828d7b3a3f322b8f2d88",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 113,
+    "non_empty_lines": 98,
+    "char_count": 4829,
+    "preview_lines": [
+      "\"\"\"Microbenchmarks for the torch.fft module\"\"\"",
+      "from argparse import ArgumentParser",
+      "from collections import namedtuple",
+      "from collections.abc import Iterable",
+      "import torch",
+      "import torch.fft",
+      "from torch.utils import benchmark",
+      "from torch.utils.benchmark.op_fuzzers.spectral import SpectralOpFuzzer",
+      "def _dim_options(ndim):",
+      "    if ndim == 1:"
+    ],
+    "imports": [
+      "from argparse import ArgumentParser",
+      "from collections import namedtuple",
+      "from collections.abc import Iterable",
+      "import torch",
+      "import torch.fft",
+      "from torch.utils import benchmark",
+      "from torch.utils.benchmark.op_fuzzers.spectral import SpectralOpFuzzer"
+    ],
+    "classes": [],
+    "functions": [
+      "_dim_options",
+      "run_benchmark",
+      "_output_csv"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_152_56f500729ad46b18_spectral_ops_fuzz_test.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 300,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\test_pydantic_serde.py",
+  "name": "test_pydantic_serde.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1831,
+  "content_sha256": "08a6ae87158ff3f2d1d570cc65110bcbebd7f7a21545dc6808a58334a5e6d631",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 56,
+    "char_count": 1828,
+    "preview_lines": [
+      "\"\"\"Test pydantic SerDe.",
+      "A set of tests that verifies that Union discrimination works correctly with",
+      "the various pydantic base models.",
+      "These tests can uncover issues that will also arise during regular instantiation",
+      "of the models (i.e., not necessarily from loading or dumping JSON).",
+      "\"\"\"",
+      "import pytest",
+      "from pydantic import RootModel, ValidationError",
+      "from langchain_core.messages import (",
+      "    AIMessage,"
+    ],
+    "imports": [
+      "import pytest",
+      "from pydantic import RootModel, ValidationError",
+      "from langchain_core.messages import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_serde_any_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_300_08a6ae87158ff3f2_test_pydantic_serde.py.json"
+}

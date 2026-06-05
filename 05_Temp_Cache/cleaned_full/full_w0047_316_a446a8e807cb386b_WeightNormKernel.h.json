@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 316,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\WeightNormKernel.h",
+  "name": "WeightNormKernel.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 585,
+  "content_sha256": "a446a8e807cb386b9514b8327f04bb7379d380a574962443846f189342828cb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 15,
+    "char_count": 585,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/native/DispatchStub.h>",
+      "#include <cstdint>",
+      "namespace at {",
+      "class TensorBase;",
+      "}",
+      "namespace at { namespace native {",
+      "using weight_norm_fn = void(*)(",
+      "    TensorBase&, TensorBase&, const TensorBase&, const TensorBase&, int64_t);",
+      "using weight_norm_backward_fn = void(*)("
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_316_a446a8e807cb386b_WeightNormKernel.h.json"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_view.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_view.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 461,
+  "content_sha256": "99661c50d6be6ed5331b9685f7de0ad3038ea86e55d72ea0c5113687b19bf879",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 14,
+    "char_count": 461,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "class DynamicShapeView(torch.nn.Module):",
+      "    \"\"\"",
+      "    Dynamic shapes should be propagated to view arguments instead of being",
+      "    baked into the exported graph.",
+      "    \"\"\"",
+      "    def forward(self, x):",
+      "        new_x_shape = x.size()[:-1] + (2, 5)",
+      "        x = x.view(*new_x_shape)"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "DynamicShapeView"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_254_99661c50d6be6ed5_AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_shape_view.py.json"
+}

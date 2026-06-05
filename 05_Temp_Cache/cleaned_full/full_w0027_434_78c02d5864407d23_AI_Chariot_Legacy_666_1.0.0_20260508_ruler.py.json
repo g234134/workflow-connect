@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ruler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ruler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9142,
+  "content_sha256": "78c02d5864407d2337dda88979dd24e7ddb704492e315b0cab572df2f53eaa5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 275,
+    "non_empty_lines": 233,
+    "char_count": 9142,
+    "preview_lines": [
+      "\"\"\"",
+      "class Ruler",
+      "Helper class, used by [[MarkdownIt#core]], [[MarkdownIt#block]] and",
+      "[[MarkdownIt#inline]] to manage sequences of functions (rules):",
+      "- keep rules in defined order",
+      "- assign the name to each rule",
+      "- enable/disable rules",
+      "- add/replace rules",
+      "- allow assign rules to additional named chains (in the same)",
+      "- caching lists of active rules"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Iterable",
+      "from dataclasses import dataclass, field",
+      "from typing import TYPE_CHECKING, Generic, TypedDict, TypeVar",
+      "import warnings",
+      "from .utils import EnvType",
+      "from markdown_it import MarkdownIt"
+    ],
+    "classes": [
+      "Ruler",
+      "StateBase",
+      "RuleOptionsType",
+      "Rule",
+      "Ruler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_434_78c02d5864407d23_AI_Chariot_Legacy_666_1.0.0_20260508_ruler.py.json"
+}

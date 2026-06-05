@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_annotated_types.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_annotated_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3157,
+  "content_sha256": "ba4d8d000c6a88d10b2a388787287129a20e87c1759585bf2f3ad6dd7ee86417",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 58,
+    "char_count": 3157,
+    "preview_lines": [
+      "import sys",
+      "from typing import TYPE_CHECKING, Any, Dict, FrozenSet, NamedTuple, Type",
+      "from pydantic.v1.fields import Required",
+      "from pydantic.v1.main import BaseModel, create_model",
+      "from pydantic.v1.typing import is_typeddict, is_typeddict_special",
+      "if TYPE_CHECKING:",
+      "    from typing_extensions import TypedDict",
+      "if sys.version_info < (3, 11):",
+      "    def is_legacy_typeddict(typeddict_cls: Type['TypedDict']) -> bool:  # type: ignore[valid-type]",
+      "        return is_typeddict(typeddict_cls) and type(typeddict_cls).__module__ == 'typing'"
+    ],
+    "imports": [
+      "import sys",
+      "from typing import TYPE_CHECKING, Any, Dict, FrozenSet, NamedTuple, Type",
+      "from pydantic.v1.fields import Required",
+      "from pydantic.v1.main import BaseModel, create_model",
+      "from pydantic.v1.typing import is_typeddict, is_typeddict_special",
+      "from typing_extensions import TypedDict"
+    ],
+    "classes": [],
+    "functions": [
+      "create_model_from_typeddict",
+      "create_model_from_namedtuple"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_407_ba4d8d000c6a88d1_AI_Chariot_Legacy_666_1.0.0_20260508_annotated_types.py.json"
+}

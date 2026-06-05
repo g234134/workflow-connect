@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 91,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__async_pre_await.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__async_pre_await.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3465,
+  "content_sha256": "be4bf72008518552b3c6f5f276797b43b9bd323542db81343aebde56c2a8611b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 93,
+    "char_count": 3465,
+    "preview_lines": [
+      "\"\"\"Implementation of coroutines without using ``async def``/``await`` keywords.",
+      "``@asyncio.coroutine`` and ``yield from`` are  used here instead.",
+      "\"\"\"",
+      "import asyncio",
+      "import errno",
+      "import signal",
+      "from pexpect import EOF",
+      "@asyncio.coroutine",
+      "def expect_async(expecter, timeout=None):",
+      "    # First process data that was previously read - if it maches, we don't need"
+    ],
+    "imports": [
+      "import asyncio",
+      "import errno",
+      "import signal",
+      "from pexpect import EOF"
+    ],
+    "classes": [
+      "PatternWaiter"
+    ],
+    "functions": [
+      "expect_async",
+      "repl_run_command_async"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_091_be4bf72008518552_AI_Chariot_Legacy_666_1.0.0_20260508__async_pre_await.py.json"
+}

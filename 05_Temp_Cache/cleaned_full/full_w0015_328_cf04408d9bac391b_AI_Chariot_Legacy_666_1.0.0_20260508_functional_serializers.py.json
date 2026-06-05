@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 328,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_functional_serializers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_functional_serializers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18117,
+  "content_sha256": "cf04408d9bac391b446edc69554db4920f05a5e9b2673e05abac099359a9c184",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 470,
+    "non_empty_lines": 364,
+    "char_count": 18117,
+    "preview_lines": [
+      "\"\"\"This module contains related classes and functions for serialization.\"\"\"",
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from functools import partial, partialmethod",
+      "from typing import TYPE_CHECKING, Annotated, Any, Callable, Literal, TypeVar, overload",
+      "from pydantic_core import PydanticUndefined, core_schema",
+      "from pydantic_core.core_schema import SerializationInfo, SerializerFunctionWrapHandler, WhenUsed",
+      "from typing_extensions import TypeAlias",
+      "from . import PydanticUndefinedAnnotation",
+      "from ._internal import _decorators, _internal_dataclass"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from functools import partial, partialmethod",
+      "from typing import TYPE_CHECKING, Annotated, Any, Callable, Literal, TypeVar, overload",
+      "from pydantic_core import PydanticUndefined, core_schema",
+      "from pydantic_core.core_schema import SerializationInfo, SerializerFunctionWrapHandler, WhenUsed",
+      "from typing_extensions import TypeAlias",
+      "from . import PydanticUndefinedAnnotation",
+      "from ._internal import _decorators, _internal_dataclass",
+      "from .annotated_handlers import GetCoreSchemaHandler",
+      "from .errors import PydanticUserError",
+      "from typing import Annotated",
+      "from pydantic import BaseModel, PlainSerializer",
+      "from datetime import datetime, timezone",
+      "from typing import Annotated, Any",
+      "from pydantic import BaseModel, WrapSerializer"
+    ],
+    "classes": [
+      "PlainSerializer",
+      "WrapSerializer"
+    ],
+    "functions": [
+      "field_serializer",
+      "field_serializer",
+      "field_serializer",
+      "model_serializer",
+      "model_serializer",
+      "model_serializer",
+      "model_serializer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_328_cf04408d9bac391b_AI_Chariot_Legacy_666_1.0.0_20260508_functional_serializers.py.json"
+}

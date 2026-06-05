@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\matrices\\utilities.py",
+  "name": "utilities.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2117,
+  "content_sha256": "98c9cdb034f118aaa21b42404ec3385bd6f98e096169ccbebe6470d9a6688e06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 50,
+    "char_count": 2117,
+    "preview_lines": [
+      "from contextlib import contextmanager",
+      "from threading import local",
+      "from sympy.core.function import expand_mul",
+      "class DotProdSimpState(local):",
+      "    def __init__(self):",
+      "        self.state = None",
+      "_dotprodsimp_state = DotProdSimpState()",
+      "@contextmanager",
+      "def dotprodsimp(x):",
+      "    old = _dotprodsimp_state.state"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from threading import local",
+      "from sympy.core.function import expand_mul",
+      "from sympy.simplify.simplify import dotprodsimp as dps",
+      "from sympy.simplify.simplify import simplify"
+    ],
+    "classes": [
+      "DotProdSimpState"
+    ],
+    "functions": [
+      "dotprodsimp",
+      "_dotprodsimp",
+      "_get_intermediate_simp",
+      "_get_intermediate_simp_bool",
+      "_iszero",
+      "_is_zero_after_expand_mul",
+      "_simplify"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_389_98c9cdb034f118aa_utilities.py.json"
+}

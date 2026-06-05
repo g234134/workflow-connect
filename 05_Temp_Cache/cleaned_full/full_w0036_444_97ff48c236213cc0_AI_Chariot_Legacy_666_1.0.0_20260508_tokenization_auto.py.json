@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 444,
+  "generated_at": "2026-05-08T18:46:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_auto.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_auto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 45978,
+  "content_sha256": "97ff48c236213cc015a6c032320ee62fa67171efb54c5aaf65fe0759a1de60f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 877,
+    "non_empty_lines": 789,
+    "char_count": 45978,
+    "preview_lines": [
+      "# Copyright 2018 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import importlib",
+      "import json",
+      "import os",
+      "import sys",
+      "from collections import OrderedDict",
+      "from typing import Any",
+      "from transformers.utils.import_utils import is_mistral_common_available",
+      "from ...configuration_utils import PreTrainedConfig",
+      "from ...dynamic_module_utils import get_class_from_dynamic_module, resolve_trust_remote_code",
+      "from ...modeling_gguf_pytorch_utils import load_gguf_checkpoint",
+      "from ...tokenization_utils_base import TOKENIZER_CONFIG_FILE",
+      "from ...utils import (",
+      "from ...utils.hub import cached_file",
+      "from ..encoder_decoder import EncoderDecoderConfig",
+      "from .auto_factory import _LazyAutoMapping",
+      "from .configuration_auto import (",
+      "from ...tokenization_utils_tokenizers import TokenizersBackend",
+      "from ...tokenization_utils_sentencepiece import SentencePieceBackend"
+    ],
+    "classes": [
+      "AutoTokenizer"
+    ],
+    "functions": [
+      "load_vocab",
+      "load_merges",
+      "tokenizer_class_from_name",
+      "get_tokenizer_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_444_97ff48c236213cc0_AI_Chariot_Legacy_666_1.0.0_20260508_tokenization_auto.py.json"
+}

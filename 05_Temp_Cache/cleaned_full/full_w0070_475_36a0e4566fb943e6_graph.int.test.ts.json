@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 475,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\js-examples\\tests\\graph.int.test.ts",
+  "name": "graph.int.test.ts",
+  "extension": ".ts",
+  "original_type": "typescript",
+  "size_bytes": 735,
+  "content_sha256": "36a0e4566fb943e64f47bdcef1b8d1960b85647761a8834aec8dd05eb508e3ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 15,
+    "char_count": 735,
+    "preview_lines": [
+      "import { describe, it, expect } from \"@jest/globals\";",
+      "import { graph } from \"../src/agent/graph.js\";",
+      "describe(\"Graph\", () => {",
+      "  it(\"should process input through the graph\", async () => {",
+      "    const input = \"What is the capital of France?\";",
+      "    const result = await graph.invoke({ input });",
+      "    expect(result).toBeDefined();",
+      "    expect(typeof result).toBe(\"object\");",
+      "    expect(result.messages).toBeDefined();",
+      "    expect(Array.isArray(result.messages)).toBe(true);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_475_36a0e4566fb943e6_graph.int.test.ts.json"
+}

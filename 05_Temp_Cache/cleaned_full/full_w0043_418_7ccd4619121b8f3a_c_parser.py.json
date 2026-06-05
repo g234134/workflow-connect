@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:47:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\parsing\\c\\c_parser.py",
+  "name": "c_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38124,
+  "content_sha256": "7ccd4619121b8f3ad543b12b7e45b3e97cdf8efca6d37d013a85a540bc77ece7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1059,
+    "non_empty_lines": 851,
+    "char_count": 38124,
+    "preview_lines": [
+      "from sympy.external import import_module",
+      "import os",
+      "cin = import_module('clang.cindex', import_kwargs = {'fromlist': ['cindex']})",
+      "\"\"\"",
+      "This module contains all the necessary Classes and Function used to Parse C and",
+      "C++ code into SymPy expression",
+      "The module serves as a backend for SymPyExpression to parse C code",
+      "It is also dependent on Clang's AST and SymPy's Codegen AST.",
+      "The module only supports the features currently supported by the Clang and",
+      "codegen AST which will be updated as the development of codegen AST and this"
+    ],
+    "imports": [
+      "from sympy.external import import_module",
+      "import os",
+      "from sympy.codegen.ast import (Variable, Integer, Float,",
+      "from sympy.codegen.cnodes import (PreDecrement, PostDecrement,",
+      "from sympy.core import Add, Mod, Mul, Pow, Rel",
+      "from sympy.logic.boolalg import And, as_Boolean, Not, Or",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.core.sympify import sympify",
+      "from sympy.logic.boolalg import (false, true)",
+      "import sys",
+      "import tempfile"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_c"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_418_7ccd4619121b8f3a_c_parser.py.json"
+}

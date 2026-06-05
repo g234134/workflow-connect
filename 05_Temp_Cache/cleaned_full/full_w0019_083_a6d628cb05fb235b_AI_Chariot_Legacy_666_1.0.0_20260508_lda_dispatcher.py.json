@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lda_dispatcher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lda_dispatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11459,
+  "content_sha256": "a6d628cb05fb235bea18d12e6d02a07b0078bd378caf8b5f884c00d0a07b0699",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 328,
+    "non_empty_lines": 251,
+    "char_count": 11459,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2010 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Dispatcher process which orchestrates distributed Latent Dirichlet Allocation",
+      "(LDA, :class:`~gensim.models.ldamodel.LdaModel`) computations.",
+      "Run this script only once, on any node in your cluster.",
+      "Notes",
+      "-----"
+    ],
+    "imports": [
+      "import argparse",
+      "import os",
+      "import sys",
+      "import logging",
+      "import threading",
+      "import time",
+      "from queue import Queue",
+      "import Pyro4",
+      "from gensim import utils",
+      "from gensim.models.lda_worker import LDA_WORKER_PREFIX"
+    ],
+    "classes": [
+      "Dispatcher"
+    ],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_083_a6d628cb05fb235b_AI_Chariot_Legacy_666_1.0.0_20260508_lda_dispatcher.py.json"
+}

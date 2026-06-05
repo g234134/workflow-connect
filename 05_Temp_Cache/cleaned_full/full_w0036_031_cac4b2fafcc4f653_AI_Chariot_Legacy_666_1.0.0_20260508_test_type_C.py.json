@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 31,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_type_C.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_type_C.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 927,
+  "content_sha256": "cac4b2fafcc4f65370cc0ba7ae6be71642c1a09c05ed6d8e9fb429a92e91235b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 21,
+    "char_count": 927,
+    "preview_lines": [
+      "from sympy.liealgebras.cartan_type import CartanType",
+      "from sympy.matrices import Matrix",
+      "def test_type_C():",
+      "    c = CartanType(\"C4\")",
+      "    m = Matrix(4, 4, [2, -1, 0, 0, -1, 2, -1, 0, 0, -1, 2, -1, 0, 0, -2, 2])",
+      "    assert c.cartan_matrix() == m",
+      "    assert c.dimension() == 4",
+      "    assert c.simple_root(4) == [0, 0, 0, 2]",
+      "    assert c.roots() == 32",
+      "    assert c.basis() == 36"
+    ],
+    "imports": [
+      "from sympy.liealgebras.cartan_type import CartanType",
+      "from sympy.matrices import Matrix"
+    ],
+    "classes": [],
+    "functions": [
+      "test_type_C"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_031_cac4b2fafcc4f653_AI_Chariot_Legacy_666_1.0.0_20260508_test_type_C.py.json"
+}

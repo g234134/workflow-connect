@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\static_tracepoint.h",
+  "name": "static_tracepoint.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1110,
+  "content_sha256": "e631ec62716cf89a1dbf8100490beeefc7fad12c4ed2642c7726c41e3b62baa7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 26,
+    "char_count": 1110,
+    "preview_lines": [
+      "#pragma once",
+      "#if defined(__ELF__) && (defined(__x86_64__) || defined(__i386__)) && \\",
+      "    !(defined(TORCH_DISABLE_SDT) && TORCH_DISABLE_SDT)",
+      "#define TORCH_HAVE_SDT 1",
+      "#include <c10/util/static_tracepoint_elfx86.h>",
+      "#define TORCH_SDT(name, ...) \\",
+      "  TORCH_SDT_PROBE_N(         \\",
+      "      pytorch, name, 0, TORCH_SDT_NARG(0, ##__VA_ARGS__), ##__VA_ARGS__)",
+      "// Use TORCH_SDT_DEFINE_SEMAPHORE(name) to define the semaphore",
+      "// as global variable before using the TORCH_SDT_WITH_SEMAPHORE macro"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_329_e631ec62716cf89a_static_tracepoint.h.json"
+}

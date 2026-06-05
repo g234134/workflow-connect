@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_tuple_params.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_tuple_params.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5565,
+  "content_sha256": "f3307d4750d0657d9c42b857d5f37bdb5824f9358939da7d16d13f61eb8abc72",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 147,
+    "char_count": 5565,
+    "preview_lines": [
+      "\"\"\"Fixer for function definitions with tuple parameters.",
+      "def func(((a, b), c), d):",
+      "    ...",
+      "    ->",
+      "def func(x, d):",
+      "    ((a, b), c) = x",
+      "    ...",
+      "It will also support lambdas:",
+      "    lambda (x, y): x + y -> lambda t: t[0] + t[1]",
+      "    # The parens are a syntax error in Python 3"
+    ],
+    "imports": [
+      "from .. import pytree",
+      "from ..pgen2 import token",
+      "from .. import fixer_base",
+      "from ..fixer_util import Assign, Name, Newline, Number, Subscript, syms"
+    ],
+    "classes": [
+      "FixTupleParams"
+    ],
+    "functions": [
+      "func",
+      "func",
+      "is_docstring",
+      "simplify_args",
+      "find_params",
+      "map_to_index",
+      "tuple_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_117_f3307d4750d0657d_AI_Chariot_Legacy_666_1.0.0_20260508_fix_tuple_params.py.json"
+}

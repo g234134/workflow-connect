@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_indexerrors.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_indexerrors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4835,
+  "content_sha256": "950645ccf328746c090e1f243f153f1750890211495c0559a24df557a264272a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 100,
+    "char_count": 4835,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_raises, assert_raises_regex",
+      "class TestIndexErrors:",
+      "    '''Tests to exercise indexerrors not covered by other tests.'''",
+      "    def test_arraytypes_fasttake(self):",
+      "        'take from a 0-length dimension'",
+      "        x = np.empty((2, 3, 0, 4))",
+      "        assert_raises(IndexError, x.take, [0], axis=2)",
+      "        assert_raises(IndexError, x.take, [1], axis=2)",
+      "        assert_raises(IndexError, x.take, [0], axis=2, mode='wrap')"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_raises, assert_raises_regex"
+    ],
+    "classes": [
+      "TestIndexErrors"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_058_950645ccf328746c_AI_Chariot_Legacy_666_1.0.0_20260508_test_indexerrors.py.json"
+}

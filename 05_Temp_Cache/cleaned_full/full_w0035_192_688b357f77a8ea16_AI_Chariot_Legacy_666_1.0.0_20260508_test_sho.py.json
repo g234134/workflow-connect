@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sho.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sho.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 693,
+  "content_sha256": "688b357f77a8ea16f812b454f31aebfe1ff2853991c7e7d082ff67dbb49fb0b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 16,
+    "char_count": 693,
+    "preview_lines": [
+      "from sympy.core import symbols, Rational, Function, diff",
+      "from sympy.physics.sho import R_nl, E_nl",
+      "from sympy.simplify.simplify import simplify",
+      "def test_sho_R_nl():",
+      "    omega, r = symbols('omega r')",
+      "    l = symbols('l', integer=True)",
+      "    u = Function('u')",
+      "    # check that it obeys the Schrodinger equation",
+      "    for n in range(5):",
+      "        schreq = ( -diff(u(r), r, 2)/2 + ((l*(l + 1))/(2*r**2)"
+    ],
+    "imports": [
+      "from sympy.core import symbols, Rational, Function, diff",
+      "from sympy.physics.sho import R_nl, E_nl",
+      "from sympy.simplify.simplify import simplify"
+    ],
+    "classes": [],
+    "functions": [
+      "test_sho_R_nl",
+      "test_energy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_192_688b357f77a8ea16_AI_Chariot_Legacy_666_1.0.0_20260508_test_sho.py.json"
+}

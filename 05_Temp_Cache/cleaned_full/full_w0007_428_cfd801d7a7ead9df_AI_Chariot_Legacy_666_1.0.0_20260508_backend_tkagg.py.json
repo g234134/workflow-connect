@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkagg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkagg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 592,
+  "content_sha256": "cfd801d7a7ead9df8350da5b7920c32d669899cd09cf7703a8d9412a19d08347",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 15,
+    "char_count": 592,
+    "preview_lines": [
+      "from . import _backend_tk",
+      "from .backend_agg import FigureCanvasAgg",
+      "from ._backend_tk import _BackendTk, FigureCanvasTk",
+      "from ._backend_tk import (  # noqa: F401 # pylint: disable=W0611",
+      "    FigureManagerTk, NavigationToolbar2Tk)",
+      "class FigureCanvasTkAgg(FigureCanvasAgg, FigureCanvasTk):",
+      "    def draw(self):",
+      "        super().draw()",
+      "        self.blit()",
+      "    def blit(self, bbox=None):"
+    ],
+    "imports": [
+      "from . import _backend_tk",
+      "from .backend_agg import FigureCanvasAgg",
+      "from ._backend_tk import _BackendTk, FigureCanvasTk",
+      "from ._backend_tk import (  # noqa: F401 # pylint: disable=W0611"
+    ],
+    "classes": [
+      "FigureCanvasTkAgg",
+      "_BackendTkAgg"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_428_cfd801d7a7ead9df_AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkagg.py.json"
+}

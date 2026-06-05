@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 205,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_check_type_completeness.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_check_type_completeness.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9847,
+  "content_sha256": "dcc60fdeb341b7dc4e7286fe0c871d3eeac8db66a621e127bbe23b012100de4e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 247,
+    "non_empty_lines": 211,
+    "char_count": 9847,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "\"\"\"This is a file that wraps calls to `pyright --verifytypes`, achieving two things:",
+      "1. give an error if docstrings are missing.",
+      "    pyright will give a number of missing docstrings, and error messages, but not exit with a non-zero value.",
+      "2. filter out specific errors we don't care about.",
+      "    this is largely due to 1, but also because Trio does some very complex stuff and --verifytypes has few to no ways of ignoring specific errors.",
+      "If this check is giving you false alarms, you can ignore them by adding logic to `has_docstring_at_runtime`, in the main loop in `check_type`, or by updating the json file.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "# this file is not run as part of the tests, instead it's run standalone from check.sh"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import json",
+      "import subprocess",
+      "import sys",
+      "from pathlib import Path",
+      "import trio",
+      "import trio.testing"
+    ],
+    "classes": [],
+    "functions": [
+      "run_pyright",
+      "has_docstring_at_runtime",
+      "check_type",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_205_dcc60fdeb341b7dc_AI_Chariot_Legacy_666_1.0.0_20260508_check_type_completeness.py.json"
+}

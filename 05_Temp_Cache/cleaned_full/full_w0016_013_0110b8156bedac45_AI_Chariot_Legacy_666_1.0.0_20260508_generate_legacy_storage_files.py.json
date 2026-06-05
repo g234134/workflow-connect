@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 13,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generate_legacy_storage_files.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generate_legacy_storage_files.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13016,
+  "content_sha256": "0110b8156bedac45b1f162ea24b9da017fa662901d4ecb911889722c871b3f65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 421,
+    "non_empty_lines": 361,
+    "char_count": 13016,
+    "preview_lines": [
+      "\"\"\"",
+      "self-contained to write legacy storage pickle files",
+      "To use this script. Create an environment where you want",
+      "generate pickles, say its for 0.20.3, with your pandas clone",
+      "in ~/pandas",
+      ". activate pandas_0.20.3",
+      "cd ~/pandas/pandas",
+      "$ python -m tests.io.generate_legacy_storage_files \\",
+      "    tests/io/data/legacy_pickle/0.20.3/ pickle",
+      "This script generates a storage file for the current arch, system,"
+    ],
+    "imports": [
+      "from datetime import timedelta",
+      "import os",
+      "import pickle",
+      "import platform as pl",
+      "import sys",
+      "import numpy as np",
+      "import pandas",
+      "from pandas import (",
+      "from pandas.arrays import SparseArray",
+      "from pandas.tseries.offsets import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_create_sp_series",
+      "_create_sp_tsseries",
+      "_create_sp_frame",
+      "create_pickle_data",
+      "create_dataframe_all_types",
+      "platform_name",
+      "write_legacy_pickles",
+      "write_legacy_hdf",
+      "write_legacy_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_013_0110b8156bedac45_AI_Chariot_Legacy_666_1.0.0_20260508_generate_legacy_storage_files.py.json"
+}

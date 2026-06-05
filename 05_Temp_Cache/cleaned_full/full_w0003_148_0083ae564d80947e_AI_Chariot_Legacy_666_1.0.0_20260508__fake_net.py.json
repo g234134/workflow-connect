@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fake_net.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fake_net.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18284,
+  "content_sha256": "0083ae564d80947e862c5719d7c5a6e2f94afffbe8e34cf755b23a03b985ba4c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 584,
+    "non_empty_lines": 476,
+    "char_count": 18284,
+    "preview_lines": [
+      "# This should eventually be cleaned up and become public, but for right now I'm just",
+      "# implementing enough to test DTLS.",
+      "# TODO:",
+      "# - user-defined routers",
+      "# - TCP",
+      "# - UDP broadcast",
+      "from __future__ import annotations",
+      "import contextlib",
+      "import errno",
+      "import ipaddress"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import errno",
+      "import ipaddress",
+      "import os",
+      "import socket",
+      "import sys",
+      "from typing import TYPE_CHECKING, Any, NoReturn, TypeAlias, overload",
+      "import attrs",
+      "import trio",
+      "from trio._util import NoPublicConstructor, final",
+      "import builtins",
+      "from collections.abc import Iterable",
+      "from socket import AddressFamily, SocketKind",
+      "from types import TracebackType",
+      "from typing_extensions import Buffer, Self",
+      "from trio._socket import AddressFormat"
+    ],
+    "classes": [
+      "UDPEndpoint",
+      "UDPBinding",
+      "UDPPacket",
+      "FakeSocketFactory",
+      "FakeHostnameResolver",
+      "FakeNet",
+      "FakeSocket"
+    ],
+    "functions": [
+      "_family_for",
+      "_wildcard_ip_for",
+      "_localhost_ip_for",
+      "_fake_err",
+      "_scatter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_148_0083ae564d80947e_AI_Chariot_Legacy_666_1.0.0_20260508__fake_net.py.json"
+}

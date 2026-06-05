@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__nbit_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__nbit_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3152,
+  "content_sha256": "3e742dfd56c1297fd48f5ee0ff4c9fa14ab08746e73772c4c851e047a1b335ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 73,
+    "char_count": 3152,
+    "preview_lines": [
+      "\"\"\"A module with the precisions of generic `~numpy.number` types.\"\"\"",
+      "from typing import final",
+      "from numpy._utils import set_module",
+      "@final  # Disallow the creation of arbitrary `NBitBase` subclasses",
+      "@set_module(\"numpy.typing\")",
+      "class NBitBase:",
+      "    \"\"\"",
+      "    A type representing `numpy.number` precision during static type checking.",
+      "    Used exclusively for the purpose of static type checking, `NBitBase`",
+      "    represents the base of a hierarchical set of subclasses."
+    ],
+    "imports": [
+      "from typing import final",
+      "from numpy._utils import set_module"
+    ],
+    "classes": [
+      "NBitBase",
+      "_128Bit",
+      "_96Bit",
+      "_64Bit",
+      "_32Bit",
+      "_16Bit",
+      "_8Bit"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_183_3e742dfd56c1297f_AI_Chariot_Legacy_666_1.0.0_20260508__nbit_base.py.json"
+}

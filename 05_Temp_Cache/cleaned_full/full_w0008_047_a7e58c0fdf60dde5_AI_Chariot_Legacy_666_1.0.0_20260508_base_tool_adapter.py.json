@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 47,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_tool_adapter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_tool_adapter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1237,
+  "content_sha256": "a7e58c0fdf60dde574f7a8f9d2be9f59966cb2c36b08d8083d4c96d05ea71940",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 28,
+    "char_count": 1237,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from typing import TYPE_CHECKING, Any",
+      "from crewai.utilities.string_utils import sanitize_tool_name as _sanitize_tool_name",
+      "if TYPE_CHECKING:",
+      "    from crewai.tools.base_tool import BaseTool",
+      "class BaseToolAdapter(ABC):",
+      "    \"\"\"Base class for all tool adapters in CrewAI.",
+      "    This abstract class defines the common interface that all tool adapters",
+      "    must implement. It provides the structure for adapting CrewAI tools to"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from typing import TYPE_CHECKING, Any",
+      "from crewai.utilities.string_utils import sanitize_tool_name as _sanitize_tool_name",
+      "from crewai.tools.base_tool import BaseTool"
+    ],
+    "classes": [
+      "BaseToolAdapter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_047_a7e58c0fdf60dde5_AI_Chariot_Legacy_666_1.0.0_20260508_base_tool_adapter.py.json"
+}

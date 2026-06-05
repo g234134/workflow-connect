@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 8,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_approximants.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_approximants.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3181,
+  "content_sha256": "b44fa11eea16eb64091c30375a14655da4e4a24080383b35bd78238ab84e6224",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 91,
+    "char_count": 3181,
+    "preview_lines": [
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.polys.polytools import lcm",
+      "from sympy.utilities import public",
+      "@public",
+      "def approximants(l, X=Symbol('x'), simplify=False):",
+      "    \"\"\"",
+      "    Return a generator for consecutive Pade approximants for a series.",
+      "    It can also be used for computing the rational generating function of a",
+      "    series when possible, since the last approximant returned by the generator"
+    ],
+    "imports": [
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.polys.polytools import lcm",
+      "from sympy.utilities import public",
+      "from sympy.simplify import simplify as simp",
+      "from sympy.simplify.radsimp import denom"
+    ],
+    "classes": [],
+    "functions": [
+      "approximants"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_008_b44fa11eea16eb64_AI_Chariot_Legacy_666_1.0.0_20260508_approximants.py.json"
+}

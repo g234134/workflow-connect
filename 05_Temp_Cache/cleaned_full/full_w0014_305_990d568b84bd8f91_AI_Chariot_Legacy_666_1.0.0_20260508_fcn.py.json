@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fcn.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fcn.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9205,
+  "content_sha256": "990d568b84bd8f91ba3906cd722bb137055b27a7bd9a24f32168fa9941792700",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 232,
+    "non_empty_lines": 192,
+    "char_count": 9205,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Optional",
+      "from torch import nn",
+      "from ...transforms._presets import SemanticSegmentation",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _VOC_CATEGORIES",
+      "from .._utils import _ovewrite_value_param, handle_legacy_interface, IntermediateLayerGetter",
+      "from ..resnet import ResNet, resnet101, ResNet101_Weights, resnet50, ResNet50_Weights",
+      "from ._utils import _SimpleSegmentationModel",
+      "__all__ = [\"FCN\", \"FCN_ResNet50_Weights\", \"FCN_ResNet101_Weights\", \"fcn_resnet50\", \"fcn_resnet101\"]"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Optional",
+      "from torch import nn",
+      "from ...transforms._presets import SemanticSegmentation",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _VOC_CATEGORIES",
+      "from .._utils import _ovewrite_value_param, handle_legacy_interface, IntermediateLayerGetter",
+      "from ..resnet import ResNet, resnet101, ResNet101_Weights, resnet50, ResNet50_Weights",
+      "from ._utils import _SimpleSegmentationModel"
+    ],
+    "classes": [
+      "FCN",
+      "FCNHead",
+      "FCN_ResNet50_Weights",
+      "FCN_ResNet101_Weights"
+    ],
+    "functions": [
+      "_fcn_resnet",
+      "fcn_resnet50",
+      "fcn_resnet101"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_305_990d568b84bd8f91_AI_Chariot_Legacy_666_1.0.0_20260508_fcn.py.json"
+}

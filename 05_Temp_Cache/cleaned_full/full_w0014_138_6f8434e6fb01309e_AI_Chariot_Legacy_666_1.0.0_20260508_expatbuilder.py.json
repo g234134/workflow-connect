@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 138,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_expatbuilder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_expatbuilder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3732,
+  "content_sha256": "6f8434e6fb01309e52b6489315fe26cb6ac61a8d60672125fe10b931e1533800",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 85,
+    "char_count": 3732,
+    "preview_lines": [
+      "# defusedxml",
+      "#",
+      "# Copyright (c) 2013 by Christian Heimes <christian@python.org>",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "# See https://www.python.org/psf/license for licensing details.",
+      "\"\"\"Defused xml.dom.expatbuilder",
+      "\"\"\"",
+      "from __future__ import print_function, absolute_import",
+      "from xml.dom.expatbuilder import ExpatBuilder as _ExpatBuilder",
+      "from xml.dom.expatbuilder import Namespaces as _Namespaces"
+    ],
+    "imports": [
+      "from __future__ import print_function, absolute_import",
+      "from xml.dom.expatbuilder import ExpatBuilder as _ExpatBuilder",
+      "from xml.dom.expatbuilder import Namespaces as _Namespaces",
+      "from .common import DTDForbidden, EntitiesForbidden, ExternalReferenceForbidden"
+    ],
+    "classes": [
+      "DefusedExpatBuilder",
+      "DefusedExpatBuilderNS"
+    ],
+    "functions": [
+      "parse",
+      "parseString"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_138_6f8434e6fb01309e_AI_Chariot_Legacy_666_1.0.0_20260508_expatbuilder.py.json"
+}

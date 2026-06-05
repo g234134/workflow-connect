@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# 大唐三省六部 · 副艙（.venv_agency）依賴清單
+# 用途：agency-agents 子系統（CrewAI / ChromaDB / FastAPI）
+# 原則：版本精準鎖定；crewai 對 transitive deps 很敏感，
+#       任何升降都先到沙箱 venv 驗過再回寫。
+# 禁區：不要 `pip install -U`；升級流程：
+#       1) 新建臨時 venv → 2) 跑黃金樣本回歸 → 3) 過了再覆蓋 lock
+# ─────────────────────────────────────────────────────────────
+
+crewai==1.14.4
+crewai-tools==1.14.4
+
+# 向量庫（升前務必備份 03_RAG_Database/C2_核心知識庫 + Snapshots）
+chromadb==1.1.1
+
+# Dify / agency-agents 對外 API
+fastapi==0.136.0
+uvicorn==0.44.0
+
+# CrewAI / FastAPI 都會用到；明寫避免主艙與副艙版本漂移
+python-dotenv>=1.0,<2
+
+# 偵察兵裝：外部標案掃描（與 crewai-tools 已帶入的 bs4 對齊版本區間；明寫防漂移）
+beautifulsoup4>=4.12,<5
+# 瀏覽器級採集（與 httpx 並存；瀏覽器二進位需另執行 `python -m playwright install`）
+playwright>=1.49,<2

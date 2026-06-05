@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 319,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_predict_error_display.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_predict_error_display.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6176,
+  "content_sha256": "0c101955e445c011181e8003856b7ce5a5614886fc19e2d3c495d05232b8e736",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 149,
+    "char_count": 6176,
+    "preview_lines": [
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_diabetes",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.linear_model import Ridge",
+      "from sklearn.metrics import PredictionErrorDisplay",
+      "X, y = load_diabetes(return_X_y=True)",
+      "@pytest.fixture",
+      "def regressor_fitted():",
+      "    return Ridge().fit(X, y)"
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_diabetes",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.linear_model import Ridge",
+      "from sklearn.metrics import PredictionErrorDisplay"
+    ],
+    "classes": [],
+    "functions": [
+      "regressor_fitted",
+      "test_prediction_error_display_raise_error",
+      "test_from_estimator_not_fitted",
+      "test_prediction_error_display",
+      "test_plot_prediction_error_subsample",
+      "test_plot_prediction_error_ax",
+      "test_prediction_error_custom_artist"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_319_0c101955e445c011_AI_Chariot_Legacy_666_1.0.0_20260508_test_predict_error_display.py.json"
+}

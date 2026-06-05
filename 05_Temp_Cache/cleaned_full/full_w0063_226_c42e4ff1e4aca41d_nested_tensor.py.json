@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nested\\_internal\\nested_tensor.py",
+  "name": "nested_tensor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16458,
+  "content_sha256": "c42e4ff1e4aca41db3031d9964c4ee17829a6d89fa5d20d8bbb2a882cfc76f43",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 441,
+    "non_empty_lines": 382,
+    "char_count": 16458,
+    "preview_lines": [
+      "from typing import Tuple",
+      "import torch",
+      "from torch._C import DispatchKey, DispatchKeySet",
+      "from torch._prims_common import is_expandable_to",
+      "from torch.fx.experimental.symbolic_shapes import has_free_symbols",
+      "from torch.utils.weak import WeakTensorKeyDictionary",
+      "from typing import *  # noqa: F403",
+      "_tensor_id_counter = 0",
+      "_tensor_symint_registry = WeakTensorKeyDictionary()",
+      "def get_tensor_symint(tensor, *, coeff=1):"
+    ],
+    "imports": [
+      "from typing import Tuple",
+      "import torch",
+      "from torch._C import DispatchKey, DispatchKeySet",
+      "from torch._prims_common import is_expandable_to",
+      "from torch.fx.experimental.symbolic_shapes import has_free_symbols",
+      "from torch.utils.weak import WeakTensorKeyDictionary",
+      "from typing import *  # noqa: F403"
+    ],
+    "classes": [
+      "NestedTensor",
+      "ViewBufferFromNested",
+      "ViewNestedFromBuffer",
+      "ViewNonContiguousNestedFromBuffer"
+    ],
+    "functions": [
+      "get_tensor_symint",
+      "jagged_from_list",
+      "jagged_from_tensor_and_lengths",
+      "buffer_from_jagged"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_226_c42e4ff1e4aca41d_nested_tensor.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dedup_tensors.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dedup_tensors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2065,
+  "content_sha256": "f3436e6003d8afd449fcb3759feead8bf465dc0f8623623d9cc4aef17a970b63",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 48,
+    "char_count": 2065,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import dataclasses",
+      "import logging",
+      "from typing import Dict, List, TYPE_CHECKING",
+      "from torch.distributed.checkpoint.planner import SavePlan",
+      "if TYPE_CHECKING:",
+      "    from torch.distributed.checkpoint.metadata import MetadataIndex",
+      "__all__ = [\"dedup_tensors\"]",
+      "def init_logger() -> logging.Logger:",
+      "    logger = logging.getLogger(__name__)"
+    ],
+    "imports": [
+      "import dataclasses",
+      "import logging",
+      "from typing import Dict, List, TYPE_CHECKING",
+      "from torch.distributed.checkpoint.planner import SavePlan",
+      "from torch.distributed.checkpoint.metadata import MetadataIndex"
+    ],
+    "classes": [],
+    "functions": [
+      "init_logger",
+      "dedup_tensors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_458_f3436e6003d8afd4_AI_Chariot_Legacy_666_1.0.0_20260508__dedup_tensors.py.json"
+}

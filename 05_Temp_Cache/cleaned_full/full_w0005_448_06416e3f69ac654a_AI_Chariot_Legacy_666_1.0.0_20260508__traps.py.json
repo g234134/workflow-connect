@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__traps.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__traps.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12585,
+  "content_sha256": "06416e3f69ac654a7ef2fc8f28159f9d52aa561c9b954a090559543c5b5d62a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 318,
+    "non_empty_lines": 243,
+    "char_count": 12577,
+    "preview_lines": [
+      "\"\"\"These are the only functions that ever yield back to the task runner.\"\"\"",
+      "from __future__ import annotations",
+      "import enum",
+      "import types",
+      "# typing.Callable is necessary because collections.abc.Callable breaks",
+      "# test_static_tool_sees_all_symbols in 3.10.",
+      "from typing import (  # noqa: UP035",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Callable,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import enum",
+      "import types",
+      "from typing import (  # noqa: UP035",
+      "import attrs",
+      "import outcome",
+      "from . import _run",
+      "from collections.abc import Awaitable, Generator",
+      "from ._run import Task"
+    ],
+    "classes": [
+      "CancelShieldedCheckpoint",
+      "WaitTaskRescheduled",
+      "PermanentlyDetachCoroutineObject",
+      "Abort"
+    ],
+    "functions": [
+      "_real_async_yield"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_448_06416e3f69ac654a_AI_Chariot_Legacy_666_1.0.0_20260508__traps.py.json"
+}

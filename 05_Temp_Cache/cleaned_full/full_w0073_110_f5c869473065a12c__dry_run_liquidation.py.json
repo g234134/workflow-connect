@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 110,
+  "generated_at": "2026-05-08T18:49:14+00:00",
+  "source_path": "D:\\大唐三省六部\\04_Workflows\\_dry_run_liquidation.py",
+  "name": "_dry_run_liquidation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2962,
+  "content_sha256": "f5c869473065a12c2529d2a808d4ba72dbc0ee5140f0073187704d60481045ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 68,
+    "char_count": 2809,
+    "preview_lines": [
+      "# _dry_run_liquidation.py — 數據清算戰役·Dry-run 入口",
+      "# 1) 中書省立案（current_plan.json）",
+      "# 2) 兵部清算器 dry-run 掃描（liquidation_preview_<run_id>.json）",
+      "# 嚴禁任何物理位移；本檔僅讀取與寫報告。",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from collections import Counter",
+      "_workflows = os.path.dirname(os.path.abspath(__file__))"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from collections import Counter",
+      "from Liquidation_Agent import Liquidation_Agent  # type: ignore",
+      "from ZhongShu_Planner import ZhongShu_Planner  # type: ignore"
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_110_f5c869473065a12c__dry_run_liquidation.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 261,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lgmres.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lgmres.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7673,
+  "content_sha256": "eb929c9efc9b287aa6709557553bd08f37045cc4390bfd96f6f18903146458ea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 225,
+    "non_empty_lines": 174,
+    "char_count": 7673,
+    "preview_lines": [
+      "\"\"\"Tests for the linalg._isolve.lgmres module",
+      "\"\"\"",
+      "import threading",
+      "from numpy.testing import (assert_, assert_allclose, assert_equal,",
+      "                           suppress_warnings)",
+      "import pytest",
+      "from platform import python_implementation",
+      "import numpy as np",
+      "from numpy import zeros, array, allclose",
+      "from scipy.linalg import norm"
+    ],
+    "imports": [
+      "import threading",
+      "from numpy.testing import (assert_, assert_allclose, assert_equal,",
+      "import pytest",
+      "from platform import python_implementation",
+      "import numpy as np",
+      "from numpy import zeros, array, allclose",
+      "from scipy.linalg import norm",
+      "from scipy.sparse import csr_array, eye_array, random_array",
+      "from scipy.sparse.linalg._interface import LinearOperator",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.sparse.linalg._isolve import lgmres, gmres"
+    ],
+    "classes": [
+      "TestLGMRES"
+    ],
+    "functions": [
+      "matvec",
+      "cb",
+      "do_solve"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_261_eb929c9efc9b287a_AI_Chariot_Legacy_666_1.0.0_20260508_test_lgmres.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_executorch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_executorch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17528,
+  "content_sha256": "153f5712361e964f9cf94a9524fa7c31179eca6bb235898416bee2fff0054bfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 500,
+    "non_empty_lines": 458,
+    "char_count": 17528,
+    "preview_lines": [
+      "# TODO: rename executorch to qnnpack_executorch since executorch is a general runtime",
+      "# not a specific backend",
+      "import operator",
+      "from typing import List",
+      "import torch",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.ao.nn.quantized.reference as nnqr",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.fuser_method_mappings import ("
+    ],
+    "imports": [
+      "import operator",
+      "from typing import List",
+      "import torch",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.ao.nn.quantized.reference as nnqr",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.fuser_method_mappings import (",
+      "from ._common_operator_config_utils import _Conv2dMetadata",
+      "from .backend_config import (",
+      "from .qnnpack import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_get_linear_configs",
+      "_get_conv_configs",
+      "_get_binary_ops_configs",
+      "_get_share_qparams_ops_configs",
+      "_get_bn_configs",
+      "_get_cat_configs",
+      "_get_embedding_op_configs",
+      "get_executorch_backend_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_122_153f5712361e964f_AI_Chariot_Legacy_666_1.0.0_20260508_executorch.py.json"
+}

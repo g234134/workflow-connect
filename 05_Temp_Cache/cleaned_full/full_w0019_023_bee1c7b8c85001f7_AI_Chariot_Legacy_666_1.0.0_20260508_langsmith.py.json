@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 23,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_langsmith.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_langsmith.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20971,
+  "content_sha256": "bee1c7b8c85001f782850ca40aa22bec35f4fed0f7d648dc9f8c9a9db816a699",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 547,
+    "non_empty_lines": 482,
+    "char_count": 20971,
+    "preview_lines": [
+      "#### What this does ####",
+      "#    On success, logs events to Langsmith",
+      "import asyncio",
+      "import os",
+      "import random",
+      "import traceback",
+      "import types",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional"
+    ],
+    "imports": [
+      "import asyncio",
+      "import os",
+      "import random",
+      "import traceback",
+      "import types",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional",
+      "import httpx",
+      "from pydantic import BaseModel  # type: ignore",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_batch_logger import CustomBatchLogger",
+      "from litellm.integrations.langsmith_mock_client import (",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.integrations.langsmith import *",
+      "from litellm.types.utils import StandardCallbackDynamicParams, StandardLoggingPayload"
+    ],
+    "classes": [
+      "LangsmithLogger"
+    ],
+    "functions": [
+      "is_serializable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_023_bee1c7b8c85001f7_AI_Chariot_Legacy_666_1.0.0_20260508_langsmith.py.json"
+}

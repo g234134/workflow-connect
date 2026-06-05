@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 369,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_type_var.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_type_var.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4164,
+  "content_sha256": "0e1b05c9118d1f061fdeb59ad73616ff089840143ae74e68c5cc7619f5a6de80",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 104,
+    "char_count": 4164,
+    "preview_lines": [
+      "from jedi import debug",
+      "from jedi.inference.base_value import ValueSet, NO_VALUES, ValueWrapper",
+      "from jedi.inference.gradual.base import BaseTypingValue",
+      "class TypeVarClass(ValueWrapper):",
+      "    def py__call__(self, arguments):",
+      "        unpacked = arguments.unpack()",
+      "        key, lazy_value = next(unpacked, (None, None))",
+      "        var_name = self._find_string_name(lazy_value)",
+      "        # The name must be given, otherwise it's useless.",
+      "        if var_name is None or key is not None:"
+    ],
+    "imports": [
+      "from jedi import debug",
+      "from jedi.inference.base_value import ValueSet, NO_VALUES, ValueWrapper",
+      "from jedi.inference.gradual.base import BaseTypingValue"
+    ],
+    "classes": [
+      "TypeVarClass",
+      "TypeVar",
+      "TypeWrapper"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_369_0e1b05c9118d1f06_AI_Chariot_Legacy_666_1.0.0_20260508_type_var.py.json"
+}

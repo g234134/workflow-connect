@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_replace_view_ops_with_view_copy_ops_pass.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_replace_view_ops_with_view_copy_ops_pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2504,
+  "content_sha256": "ea2f254cf40e6ca0740c4961b46ee73714a86678cd327e45f53bbf53e36b07d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 48,
+    "char_count": 2504,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import Dict, Optional",
+      "import torch",
+      "from torch._ops import OpOverload, HigherOrderOperator",
+      "from torch._export.error import InternalError",
+      "from torch._export.pass_base import _ExportPassBaseDeprecatedDoNotUse",
+      "__all__ = [\"ReplaceViewOpsWithViewCopyOpsPass\"]",
+      "_NON_FUNCTIONAL_OPS_TO_FUNCTIONAL_OPS: Dict[OpOverload, OpOverload] = {",
+      "    torch.ops.aten._unsafe_view.default: torch.ops.aten.view_copy.default,",
+      "}"
+    ],
+    "imports": [
+      "from typing import Dict, Optional",
+      "import torch",
+      "from torch._ops import OpOverload, HigherOrderOperator",
+      "from torch._export.error import InternalError",
+      "from torch._export.pass_base import _ExportPassBaseDeprecatedDoNotUse"
+    ],
+    "classes": [
+      "ReplaceViewOpsWithViewCopyOpsPass"
+    ],
+    "functions": [
+      "is_view_op",
+      "get_view_copy_of_view_op"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_372_ea2f254cf40e6ca0_AI_Chariot_Legacy_666_1.0.0_20260508_replace_view_ops_with_view_copy_ops_pass.py.json"
+}

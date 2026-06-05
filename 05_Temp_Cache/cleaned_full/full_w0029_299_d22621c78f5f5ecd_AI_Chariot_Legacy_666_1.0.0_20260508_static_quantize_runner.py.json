@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 299,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_static_quantize_runner.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_static_quantize_runner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11341,
+  "content_sha256": "d22621c78f5f5ecd05dfcc2ca926bf872c803f56bf659c6a22110433b15a914d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 256,
+    "non_empty_lines": 239,
+    "char_count": 11341,
+    "preview_lines": [
+      "import argparse",
+      "import json",
+      "import os",
+      "import numpy as np",
+      "import onnx",
+      "import onnxruntime",
+      "from onnxruntime.quantization import QuantFormat, QuantType, StaticQuantConfig, quantize",
+      "from onnxruntime.quantization.calibrate import CalibrationDataReader, CalibrationMethod",
+      "class OnnxModelCalibrationDataReader(CalibrationDataReader):",
+      "    def __init__(self, model_path):"
+    ],
+    "imports": [
+      "import argparse",
+      "import json",
+      "import os",
+      "import numpy as np",
+      "import onnx",
+      "import onnxruntime",
+      "from onnxruntime.quantization import QuantFormat, QuantType, StaticQuantConfig, quantize",
+      "from onnxruntime.quantization.calibrate import CalibrationDataReader, CalibrationMethod"
+    ],
+    "classes": [
+      "OnnxModelCalibrationDataReader"
+    ],
+    "functions": [
+      "parse_arguments",
+      "get_tensor_quant_overrides",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_299_d22621c78f5f5ecd_AI_Chariot_Legacy_666_1.0.0_20260508_static_quantize_runner.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:45:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_field_mapping.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_field_mapping.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5538,
+  "content_sha256": "4760dc7b66fb0a71d7b0cdcc3f799067e2a1409739b4582a2bb47cf77416f4a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 167,
+    "non_empty_lines": 124,
+    "char_count": 5538,
+    "preview_lines": [
+      "\"\"\"",
+      "Field mapping utilities for evaluator input normalization.",
+      "This module provides synonym mapping to allow users to use flexible field names",
+      "in their task outputs, which are automatically normalized to match evaluator requirements.",
+      "\"\"\"",
+      "from typing import Dict, Any, Set, List",
+      "# Synonym groups - each group contains fields that can be used interchangeably",
+      "# The first field in each group is the \"canonical\" form that gets preserved",
+      "SYNONYM_GROUPS = [",
+      "    # Output/Response fields - the most common synonyms"
+    ],
+    "imports": [
+      "from typing import Dict, Any, Set, List"
+    ],
+    "classes": [],
+    "functions": [
+      "_build_synonym_map",
+      "get_synonyms",
+      "normalize_task_output",
+      "get_field_suggestions",
+      "format_field_help"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_394_4760dc7b66fb0a71_AI_Chariot_Legacy_666_1.0.0_20260508_field_mapping.py.json"
+}

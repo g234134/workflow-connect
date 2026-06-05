@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 384,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__covariance.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__covariance.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23157,
+  "content_sha256": "aaeb9477502a6dd096f5bf3792813f5c2e349c0c61b65009e0ce4ef0ea8bad88",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 633,
+    "non_empty_lines": 512,
+    "char_count": 23157,
+    "preview_lines": [
+      "from functools import cached_property",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from scipy.stats import _multivariate",
+      "__all__ = [\"Covariance\"]",
+      "class Covariance:",
+      "    \"\"\"",
+      "    Representation of a covariance matrix",
+      "    Calculations involving covariance matrices (e.g. data whitening,",
+      "    multivariate normal function evaluation) are often performed more"
+    ],
+    "imports": [
+      "from functools import cached_property",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from scipy.stats import _multivariate"
+    ],
+    "classes": [
+      "Covariance",
+      "CovViaPrecision",
+      "CovViaDiagonal",
+      "CovViaCholesky",
+      "CovViaEigendecomposition",
+      "CovViaPSD"
+    ],
+    "functions": [
+      "_dot_diag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_384_aaeb9477502a6dd0_AI_Chariot_Legacy_666_1.0.0_20260508__covariance.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\tool_call_limit.py",
+  "name": "tool_call_limit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19363,
+  "content_sha256": "a7bd2b7554a75e1d340249e64ea1c6f8cb3334ca30b318e31c5a305404c6bd3a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 488,
+    "non_empty_lines": 394,
+    "char_count": 19360,
+    "preview_lines": [
+      "\"\"\"Tool call limit middleware for agents.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Annotated, Any, Literal",
+      "from langchain_core.messages import AIMessage, ToolCall, ToolMessage",
+      "from langgraph.channels.untracked_value import UntrackedValue",
+      "from langgraph.typing import ContextT",
+      "from typing_extensions import NotRequired, override",
+      "from langchain.agents.middleware.types import (",
+      "    AgentMiddleware,",
+      "    AgentState,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Annotated, Any, Literal",
+      "from langchain_core.messages import AIMessage, ToolCall, ToolMessage",
+      "from langgraph.channels.untracked_value import UntrackedValue",
+      "from langgraph.typing import ContextT",
+      "from typing_extensions import NotRequired, override",
+      "from langchain.agents.middleware.types import (",
+      "from langgraph.runtime import Runtime",
+      "from langchain.agents.middleware.tool_call_limit import ToolCallLimitMiddleware",
+      "from langchain.agents import create_agent"
+    ],
+    "classes": [
+      "ToolCallLimitState",
+      "ToolCallLimitExceededError",
+      "ToolCallLimitMiddleware"
+    ],
+    "functions": [
+      "_build_tool_message_content",
+      "_build_final_ai_message_content"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_372_a7bd2b7554a75e1d_tool_call_limit.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 277,
+  "generated_at": "2026-05-08T18:44:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_OEOz.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_OEOz.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5054,
+  "content_sha256": "e086eec927038a18e4883dd125d01a59158d93ae90f147af38e2b76a6f9f31de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 143,
+    "char_count": 4800,
+    "preview_lines": [
+      "\"\"\"",
+      "dispatcher.py - 路由器（Ollama / SmartRouter / Cursor）",
+      "策略：",
+      "- 先用 task_scorer.score_task 取得 difficulty 與 route 建議",
+      "- route=ollama：打本機 Ollama /api/chat",
+      "- route=smartrouter：打 SmartRouter（OpenAI-compatible /v1/chat/completions）",
+      "- route=cursor：輸出「需要 Cursor 介入」的交接 JSON（不在這裡自動改檔）",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import json"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import time",
+      "from dataclasses import dataclass",
+      "from typing import Any, Dict, List, Optional",
+      "import httpx",
+      "from task_scorer import ScoreResult, score_task",
+      "import argparse"
+    ],
+    "classes": [
+      "DispatchResult"
+    ],
+    "functions": [
+      "_extract_openai_content",
+      "_call_smartrouter",
+      "_call_ollama",
+      "dispatch_task",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_277_e086eec927038a18_AI_Chariot_Legacy_666_1.0.0_20260508_OEOz.py.json"
+}

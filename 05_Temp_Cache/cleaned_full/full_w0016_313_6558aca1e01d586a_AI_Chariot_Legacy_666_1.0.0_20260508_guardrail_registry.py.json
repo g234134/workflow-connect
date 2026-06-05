@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_registry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_registry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27018,
+  "content_sha256": "6558aca1e01d586a79bcdf1ba8b3cca40113955c5db6a5757de67f5f6b5633ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 707,
+    "non_empty_lines": 587,
+    "char_count": 27018,
+    "preview_lines": [
+      "# litellm/proxy/guardrails/guardrail_registry.py",
+      "import importlib",
+      "import os",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Type, cast",
+      "import litellm",
+      "from litellm import Router",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail"
+    ],
+    "imports": [
+      "import importlib",
+      "import os",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Type, cast",
+      "import litellm",
+      "from litellm import Router",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm._uuid import uuid",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.secret_managers.main import get_secret",
+      "from litellm.types.guardrails import (",
+      "from litellm.proxy.guardrails.guardrail_hooks.grayswan import (",
+      "from .guardrail_initializers import ("
+    ],
+    "classes": [
+      "GuardrailRegistry",
+      "InMemoryGuardrailHandler"
+    ],
+    "functions": [
+      "get_guardrail_initializer_from_hooks",
+      "get_guardrail_class_from_hooks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_313_6558aca1e01d586a_AI_Chariot_Legacy_666_1.0.0_20260508_guardrail_registry.py.json"
+}

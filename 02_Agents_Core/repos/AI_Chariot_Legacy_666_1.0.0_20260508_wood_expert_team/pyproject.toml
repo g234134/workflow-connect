@@ -1,0 +1,28 @@
+[project]
+name = "wood_expert_team"
+version = "0.1.0"
+description = "wood_expert_team using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai-tools>=1.14.3",
+    "crewai[google-genai,tools]==1.14.3",
+    "firecrawl-py>=4.23.0",
+    "requests>=2.33.1",
+    "tavily-python>=0.7.23",
+]
+
+[project.scripts]
+wood_expert_team = "wood_expert_team.main:run"
+run_crew = "wood_expert_team.main:run"
+train = "wood_expert_team.main:train"
+replay = "wood_expert_team.main:replay"
+test = "wood_expert_team.main:test"
+run_with_trigger = "wood_expert_team.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

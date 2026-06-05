@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 32,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_and_compile_graph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_and_compile_graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12609,
+  "content_sha256": "8f18776793f5c000df3fc596ef9a9cb77b06874f9391886dc1e95836d340968f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 275,
+    "char_count": 12609,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"",
+      "This module dispatches the graphs to either the forward-only or joint compilation",
+      "pathways, taking into account the AOTConfig and the collected ViewAndMutationMetadata.",
+      "\"\"\"",
+      "import dataclasses",
+      "from typing import Any, List, Optional, Tuple",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "import torch.utils.dlpack"
+    ],
+    "imports": [
+      "import dataclasses",
+      "from typing import Any, List, Optional, Tuple",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "import torch.utils.dlpack",
+      "from torch import Tensor",
+      "from torch._dispatch.python import enable_python_dispatcher",
+      "from torch._dynamo.utils import lazy_format_graph_code",
+      "from torch._logging import getArtifactLogger, trace_structured",
+      "from torch._subclasses.functional_tensor import FunctionalTensorMode",
+      "from torch.fx.experimental.proxy_tensor import make_fx",
+      "from torch.utils._python_dispatch import _detect_infra_mode",
+      "from .. import config",
+      "from .functional_utils import (",
+      "from .schemas import AOTConfig, SubclassMeta, ViewAndMutationMeta",
+      "from .traced_function_transforms import (",
+      "from .utils import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_create_graph",
+      "aot_dispatch_base_graph",
+      "aot_dispatch_autograd_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_032_8f18776793f5c000_AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_and_compile_graph.py.json"
+}

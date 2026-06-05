@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 85,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_user_management_event_hooks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_user_management_event_hooks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7920,
+  "content_sha256": "ddb5de2ed82faed10b1d887ec7292464c18265b70ca804e18d58214bab479f6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 209,
+    "non_empty_lines": 189,
+    "char_count": 7920,
+    "preview_lines": [
+      "\"\"\"",
+      "Hooks that are triggered when a litellm user event occurs",
+      "\"\"\"",
+      "import asyncio",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime, timezone",
+      "from typing import Optional",
+      "from pydantic import BaseModel",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger"
+    ],
+    "imports": [
+      "import asyncio",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime, timezone",
+      "from typing import Optional",
+      "from pydantic import BaseModel",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import (",
+      "from litellm.proxy.management_helpers.audit_logs import create_audit_log_for_update",
+      "from litellm.proxy.proxy_server import litellm_proxy_admin_name, prisma_client",
+      "from litellm_enterprise.enterprise_callbacks.send_emails.base_email import (",
+      "from litellm.proxy.proxy_server import general_settings, proxy_logging_obj"
+    ],
+    "classes": [
+      "UserManagementEventHooks"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_085_ddb5de2ed82faed1_AI_Chariot_Legacy_666_1.0.0_20260508_user_management_event_hooks.py.json"
+}

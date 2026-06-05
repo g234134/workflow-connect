@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 11,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_crypto.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_crypto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2661,
+  "content_sha256": "33f369447ca854de7b27fa43427a0cd77e7ed97f067b511fe0bdb6e71ca4e15e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 58,
+    "char_count": 2661,
+    "preview_lines": [
+      "\"\"\"",
+      "Django's standard crypto functions and utilities.",
+      "\"\"\"",
+      "import hashlib",
+      "import hmac",
+      "import secrets",
+      "from django.conf import settings",
+      "from django.utils.encoding import force_bytes",
+      "class InvalidAlgorithm(ValueError):",
+      "    \"\"\"Algorithm is not supported by hashlib.\"\"\""
+    ],
+    "imports": [
+      "import hashlib",
+      "import hmac",
+      "import secrets",
+      "from django.conf import settings",
+      "from django.utils.encoding import force_bytes"
+    ],
+    "classes": [
+      "InvalidAlgorithm"
+    ],
+    "functions": [
+      "salted_hmac",
+      "get_random_string",
+      "constant_time_compare",
+      "pbkdf2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_011_33f369447ca854de_AI_Chariot_Legacy_666_1.0.0_20260508_crypto.py.json"
+}

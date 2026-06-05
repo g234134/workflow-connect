@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 437,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_resolver_types.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_resolver_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9940,
+  "content_sha256": "3135f3a853894b2d6235e63e39661be52dd774550249d0e0446b6c31ef6c5de7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 276,
+    "non_empty_lines": 215,
+    "char_count": 9016,
+    "preview_lines": [
+      "\"\"\"",
+      "Policy resolver type definitions.",
+      "These types are used for matching requests to policies and resolving",
+      "the final guardrails list.",
+      "\"\"\"",
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Optional",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "class PolicyMatchContext(BaseModel):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Optional",
+      "from pydantic import BaseModel, ConfigDict, Field"
+    ],
+    "classes": [
+      "PolicyMatchContext",
+      "ResolvedPolicy",
+      "PolicyScopeResponse",
+      "PolicyGuardrailsResponse",
+      "PolicyInfoResponse",
+      "PolicySummaryItem",
+      "PolicyListResponse",
+      "PolicyTestResponse",
+      "PolicyConditionRequest",
+      "PolicyCreateRequest",
+      "PolicyUpdateRequest",
+      "PolicyDBResponse",
+      "PolicyListDBResponse",
+      "PolicyAttachmentCreateRequest",
+      "PolicyAttachmentDBResponse",
+      "PolicyAttachmentListResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_437_3135f3a853894b2d_AI_Chariot_Legacy_666_1.0.0_20260508_resolver_types.py.json"
+}

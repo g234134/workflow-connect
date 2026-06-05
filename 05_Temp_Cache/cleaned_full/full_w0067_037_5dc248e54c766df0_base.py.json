@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\combine_documents\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10384,
+  "content_sha256": "5dc248e54c766df00a59b9055e4e851e7dbd4a738eaa9e019ff7e7252eac9848",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 278,
+    "non_empty_lines": 233,
+    "char_count": 10381,
+    "preview_lines": [
+      "\"\"\"Base interface for chains combining documents.\"\"\"",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForChainRun,",
+      "    CallbackManagerForChainRun,",
+      ")",
+      "from langchain_core.documents import Document",
+      "from langchain_core.prompts import BasePromptTemplate, PromptTemplate"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.documents import Document",
+      "from langchain_core.prompts import BasePromptTemplate, PromptTemplate",
+      "from langchain_core.runnables.config import RunnableConfig",
+      "from langchain_core.utils.pydantic import create_model",
+      "from langchain_text_splitters import RecursiveCharacterTextSplitter, TextSplitter",
+      "from pydantic import BaseModel, Field",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.base import Chain",
+      "from operator import itemgetter",
+      "from langchain_core.runnables import RunnableLambda, RunnableParallel"
+    ],
+    "classes": [
+      "BaseCombineDocumentsChain",
+      "AnalyzeDocumentChain"
+    ],
+    "functions": [
+      "_validate_prompt"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_037_5dc248e54c766df0_base.py.json"
+}

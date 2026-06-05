@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 228,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transform.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transform.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16314,
+  "content_sha256": "a42474b5b2b39a11fa72b07fac34f9867016c92ced5bf5ea2f479f98a395b025",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 516,
+    "non_empty_lines": 426,
+    "char_count": 16314,
+    "preview_lines": [
+      "\"\"\"Affine 2D transformation matrix class.",
+      "The Transform class implements various transformation matrix operations,",
+      "both on the matrix itself, as well as on 2D coordinates.",
+      "Transform instances are effectively immutable: all methods that operate on the",
+      "transformation itself always return a new instance. This has as the",
+      "interesting side effect that Transform instances are hashable, ie. they can be",
+      "used as dictionary keys.",
+      "This module exports the following symbols:",
+      "Transform",
+      "\tthis is the main class"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from typing import NamedTuple",
+      "from dataclasses import dataclass"
+    ],
+    "classes": [
+      "Transform",
+      "DecomposedTransform"
+    ],
+    "functions": [
+      "_normSinCos",
+      "Offset",
+      "Scale"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_228_a42474b5b2b39a11_AI_Chariot_Legacy_666_1.0.0_20260508_transform.py.json"
+}

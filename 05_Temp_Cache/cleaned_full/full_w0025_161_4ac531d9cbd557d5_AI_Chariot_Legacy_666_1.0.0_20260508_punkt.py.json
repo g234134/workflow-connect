@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 161,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_punkt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_punkt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 69206,
+  "content_sha256": "4ac531d9cbd557d5c16f74c81bba255b5a52e7c5182d17c3e60231b57a4948f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1831,
+    "non_empty_lines": 1537,
+    "char_count": 69206,
+    "preview_lines": [
+      "# Natural Language Toolkit: Punkt sentence tokenizer",
+      "#",
+      "# Copyright (C) 2001-2026 NLTK Project",
+      "# Algorithm: Kiss & Strunk (2006)",
+      "# Author: Willy <willy@csse.unimelb.edu.au> (original Python port)",
+      "#         Steven Bird <stevenbird1@gmail.com> (additions)",
+      "#         Edward Loper <edloper@gmail.com> (rewrite)",
+      "#         Joel Nothman <jnothman@student.usyd.edu.au> (almost rewrite)",
+      "#         Arthur Darcet <arthur@darcet.fr> (fixes)",
+      "#         Tom Aarsen <> (tackle ReDoS & performance issues)"
+    ],
+    "imports": [
+      "import math",
+      "import re",
+      "import string",
+      "from collections import defaultdict",
+      "from collections.abc import Iterator",
+      "from re import Match",
+      "from typing import Any, Dict, List, Optional, Tuple, Union",
+      "from nltk.probability import FreqDist",
+      "from nltk.tokenize.api import TokenizerI"
+    ],
+    "classes": [
+      "PunktLanguageVars",
+      "PunktParameters",
+      "PunktToken",
+      "PunktBaseClass",
+      "PunktTrainer",
+      "PunktSentenceTokenizer",
+      "PunktTokenizer"
+    ],
+    "functions": [
+      "_pair_iter",
+      "load_punkt_params",
+      "save_punkt_params",
+      "format_debug_decision",
+      "demo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_161_4ac531d9cbd557d5_AI_Chariot_Legacy_666_1.0.0_20260508_punkt.py.json"
+}

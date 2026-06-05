@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__messages.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__messages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13241,
+  "content_sha256": "59c4ab6e06c05a5c1b6fbe7d08ba96079be788be7f9f7380951452b3b32193b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 420,
+    "non_empty_lines": 336,
+    "char_count": 13241,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from types import TracebackType",
+      "from typing import TYPE_CHECKING, Any, Callable, cast",
+      "from typing_extensions import Self, Iterator, Awaitable, AsyncIterator, assert_never",
+      "import httpx",
+      "from ._types import (",
+      "    TextEvent,",
+      "    InputJsonEvent,",
+      "    MessageStopEvent,",
+      "    MessageStreamEvent,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from types import TracebackType",
+      "from typing import TYPE_CHECKING, Any, Callable, cast",
+      "from typing_extensions import Self, Iterator, Awaitable, AsyncIterator, assert_never",
+      "import httpx",
+      "from ._types import (",
+      "from ...types import Message, ContentBlock, RawMessageStreamEvent",
+      "from ..._utils import consume_sync_iterator, consume_async_iterator",
+      "from ..._models import build, construct_type",
+      "from ..._streaming import Stream, AsyncStream",
+      "from ..._client import Anthropic, AsyncAnthropic"
+    ],
+    "classes": [
+      "MessageStream",
+      "MessageStreamManager",
+      "AsyncMessageStream",
+      "AsyncMessageStreamManager"
+    ],
+    "functions": [
+      "build_events",
+      "accumulate_event"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_107_59c4ab6e06c05a5c_AI_Chariot_Legacy_666_1.0.0_20260508__messages.py.json"
+}

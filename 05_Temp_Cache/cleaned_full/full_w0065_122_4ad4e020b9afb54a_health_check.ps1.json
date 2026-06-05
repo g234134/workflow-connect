@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:48:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\health_check.ps1",
+  "name": "health_check.ps1",
+  "extension": ".ps1",
+  "original_type": "powershell",
+  "size_bytes": 2256,
+  "content_sha256": "4ad4e020b9afb54ab32b91fabab3232adf5ca9d05ebfbbe444cfd0e6d9bb8b52",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 36,
+    "char_count": 1940,
+    "preview_lines": [
+      "clear",
+      "Write-Host \"===============================================\" -ForegroundColor Cyan",
+      "Write-Host \"   🚀 666lag Agent 基地全自動健康檢查啟動\" -ForegroundColor Cyan",
+      "Write-Host \"===============================================\" -ForegroundColor Cyan",
+      "# --- 第一關：底層環境與 GPU ---",
+      "Write-Host \"`n[1/4] 正在檢查底層環境與 GPU...\" -ForegroundColor Yellow",
+      "nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader",
+      "python -c \"import torch; print(f'✅ Torch 版本: {torch.__version__}'); print(f'✅ CUDA 是否可用: {torch.cuda.is_available()}')\" 2>$null",
+      "# --- 第二關：橋接層健康度 (FastAPI) ---",
+      "Write-Host \"`n[2/4] 正在檢查 FastAPI (Port 8001)...\" -ForegroundColor Yellow"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_122_4ad4e020b9afb54a_health_check.ps1.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_postgres_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_postgres_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3802,
+  "content_sha256": "3e30a2aa6dfda04b19a3c0ab6ee063b550c6edfdcaa10cc43fb390f99a0820b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 80,
+    "char_count": 3802,
+    "preview_lines": [
+      "\"\"\"PostgreSQL database loader.\"\"\"",
+      "from typing import Any",
+      "from urllib.parse import urlparse",
+      "from psycopg2 import Error, connect",
+      "from psycopg2.extras import RealDictCursor",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "class PostgresLoader(BaseLoader):",
+      "    \"\"\"Loader for PostgreSQL database content.\"\"\"",
+      "    def load(self, source: SourceContent, **kwargs: Any) -> LoaderResult:  # type: ignore[override]"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from urllib.parse import urlparse",
+      "from psycopg2 import Error, connect",
+      "from psycopg2.extras import RealDictCursor",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent"
+    ],
+    "classes": [
+      "PostgresLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_293_3e30a2aa6dfda04b_AI_Chariot_Legacy_666_1.0.0_20260508_postgres_loader.py.json"
+}

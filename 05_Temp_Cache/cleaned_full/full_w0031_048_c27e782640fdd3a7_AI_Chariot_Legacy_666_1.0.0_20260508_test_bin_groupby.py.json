@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_bin_groupby.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_bin_groupby.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1553,
+  "content_sha256": "c27e782640fdd3a77e6cb3e2bb4c7091a0d53dfc1c6e6fe6fc377b66d5b82f8d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 57,
+    "char_count": 1553,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs import lib",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "def assert_block_lengths(x):",
+      "    assert len(x) == len(x._mgr.blocks[0].mgr_locs)",
+      "    return 0",
+      "def cumsum_max(x):",
+      "    x.cumsum().max()"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs import lib",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "assert_block_lengths",
+      "cumsum_max",
+      "test_mgr_locs_updated",
+      "test_generate_bins"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_048_c27e782640fdd3a7_AI_Chariot_Legacy_666_1.0.0_20260508_test_bin_groupby.py.json"
+}

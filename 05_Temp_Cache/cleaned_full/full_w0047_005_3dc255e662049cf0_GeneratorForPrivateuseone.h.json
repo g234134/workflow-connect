@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 5,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\GeneratorForPrivateuseone.h",
+  "name": "GeneratorForPrivateuseone.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1110,
+  "content_sha256": "3dc255e662049cf008cefb5bcd2f2d0bd6bc238f8b6a6e77432f959e97fa5f76",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 30,
+    "char_count": 1110,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Generator.h>",
+      "#include <c10/util/intrusive_ptr.h>",
+      "namespace at {",
+      "using GeneratorFuncType = std::function<at::Generator(c10::DeviceIndex)>;",
+      "c10::optional<GeneratorFuncType>& GetGeneratorPrivate();",
+      "class TORCH_API _GeneratorRegister {",
+      " public:",
+      "  explicit _GeneratorRegister(const GeneratorFuncType& func);",
+      "};"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_005_3dc255e662049cf0_GeneratorForPrivateuseone.h.json"
+}

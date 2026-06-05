@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1982,
+  "content_sha256": "93c79410122b46b18cb0163938e6835dd1a7414286c0321f43276e07a603dcdb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 41,
+    "char_count": 1982,
+    "preview_lines": [
+      "import os",
+      "import pytest",
+      "import fsspec",
+      "def test_move_raises_error_with_tmpdir(tmpdir):",
+      "    # Create a file in the temporary directory",
+      "    source = tmpdir.join(\"source_file.txt\")",
+      "    source.write(\"content\")",
+      "    # Define a destination that simulates a protected or invalid path",
+      "    destination = tmpdir.join(\"non_existent_directory/destination_file.txt\")",
+      "    # Instantiate the filesystem (assuming the local file system interface)"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "import fsspec"
+    ],
+    "classes": [],
+    "functions": [
+      "test_move_raises_error_with_tmpdir",
+      "test_move_raises_error_with_tmpdir_permission"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_253_93c79410122b46b1_AI_Chariot_Legacy_666_1.0.0_20260508_mv.py.json"
+}

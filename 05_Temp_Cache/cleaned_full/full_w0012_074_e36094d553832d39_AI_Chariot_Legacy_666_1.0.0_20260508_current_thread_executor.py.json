@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_current_thread_executor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_current_thread_executor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4157,
+  "content_sha256": "e36094d553832d393efcf622b1ef9c3f55e0c80bc8e438dcf1ff7ba3017376bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 108,
+    "char_count": 4157,
+    "preview_lines": [
+      "import sys",
+      "import threading",
+      "from collections import deque",
+      "from concurrent.futures import Executor, Future",
+      "from typing import Any, Callable, TypeVar",
+      "if sys.version_info >= (3, 10):",
+      "    from typing import ParamSpec",
+      "else:",
+      "    from typing_extensions import ParamSpec",
+      "_T = TypeVar(\"_T\")"
+    ],
+    "imports": [
+      "import sys",
+      "import threading",
+      "from collections import deque",
+      "from concurrent.futures import Executor, Future",
+      "from typing import Any, Callable, TypeVar",
+      "from typing import ParamSpec",
+      "from typing_extensions import ParamSpec"
+    ],
+    "classes": [
+      "_WorkItem",
+      "CurrentThreadExecutor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_074_e36094d553832d39_AI_Chariot_Legacy_666_1.0.0_20260508_current_thread_executor.py.json"
+}

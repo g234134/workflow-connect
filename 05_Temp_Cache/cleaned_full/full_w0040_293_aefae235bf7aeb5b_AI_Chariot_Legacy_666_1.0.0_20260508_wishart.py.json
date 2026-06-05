@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_wishart.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_wishart.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14056,
+  "content_sha256": "aefae235bf7aeb5bd02ebd6fceeb1aa9b8cbfa17287b71819303293c80d05372",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 339,
+    "non_empty_lines": 286,
+    "char_count": 14056,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import math",
+      "import warnings",
+      "from numbers import Number",
+      "from typing import Optional, Union",
+      "import torch",
+      "from torch import nan",
+      "from torch.distributions import constraints",
+      "from torch.distributions.exp_family import ExponentialFamily",
+      "from torch.distributions.multivariate_normal import _precision_to_scale_tril"
+    ],
+    "imports": [
+      "import math",
+      "import warnings",
+      "from numbers import Number",
+      "from typing import Optional, Union",
+      "import torch",
+      "from torch import nan",
+      "from torch.distributions import constraints",
+      "from torch.distributions.exp_family import ExponentialFamily",
+      "from torch.distributions.multivariate_normal import _precision_to_scale_tril",
+      "from torch.distributions.utils import lazy_property",
+      "from torch.types import _size"
+    ],
+    "classes": [
+      "Wishart"
+    ],
+    "functions": [
+      "_mvdigamma",
+      "_clamp_above_eps"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_293_aefae235bf7aeb5b_AI_Chariot_Legacy_666_1.0.0_20260508_wishart.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 327,
+  "generated_at": "2026-05-08T18:47:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\lib\\tests\\test_utils.py",
+  "name": "test_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2454,
+  "content_sha256": "f57b4301aefd3792ceaa92d41ca63cf1a8d1b98da02f344cc89d5daf2ff87645",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 61,
+    "char_count": 2454,
+    "preview_lines": [
+      "from io import StringIO",
+      "import pytest",
+      "import numpy as np",
+      "import numpy.lib._utils_impl as _utils_impl",
+      "from numpy.testing import assert_raises_regex",
+      "def test_assert_raises_regex_context_manager():",
+      "    with assert_raises_regex(ValueError, 'no deprecation warning'):",
+      "        raise ValueError('no deprecation warning')",
+      "def test_info_method_heading():",
+      "    # info(class) should only print \"Methods:\" heading if methods exist"
+    ],
+    "imports": [
+      "from io import StringIO",
+      "import pytest",
+      "import numpy as np",
+      "import numpy.lib._utils_impl as _utils_impl",
+      "from numpy.testing import assert_raises_regex"
+    ],
+    "classes": [],
+    "functions": [
+      "test_assert_raises_regex_context_manager",
+      "test_info_method_heading",
+      "test_drop_metadata",
+      "test_drop_metadata_identity_and_copy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_327_f57b4301aefd3792_test_utils.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\bench\\__main__.py",
+  "name": "__main__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15581,
+  "content_sha256": "ab33dbe9491e43ff27dbd5a434289d05ffcb7008b1ac1feb6621bf74844a76e9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 520,
+    "non_empty_lines": 493,
+    "char_count": 15578,
+    "preview_lines": [
+      "import random",
+      "from uuid import uuid4",
+      "from langchain_core.messages import HumanMessage",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from pyperf._runner import Runner",
+      "from uvloop import new_event_loop",
+      "from bench.fanout_to_subgraph import fanout_to_subgraph, fanout_to_subgraph_sync",
+      "from bench.pydantic_state import pydantic_state",
+      "from bench.react_agent import react_agent",
+      "from bench.sequential import create_sequential"
+    ],
+    "imports": [
+      "import random",
+      "from uuid import uuid4",
+      "from langchain_core.messages import HumanMessage",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from pyperf._runner import Runner",
+      "from uvloop import new_event_loop",
+      "from bench.fanout_to_subgraph import fanout_to_subgraph, fanout_to_subgraph_sync",
+      "from bench.pydantic_state import pydantic_state",
+      "from bench.react_agent import react_agent",
+      "from bench.sequential import create_sequential",
+      "from bench.serde_allowlist import collect_allowlist_large, collect_allowlist_small",
+      "from bench.wide_dict import wide_dict",
+      "from bench.wide_state import wide_state",
+      "from langgraph.graph import StateGraph",
+      "from langgraph.pregel import Pregel"
+    ],
+    "classes": [],
+    "functions": [
+      "run",
+      "run_first_event_latency",
+      "compile_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_044_ab33dbe9491e43ff___main__.py.json"
+}

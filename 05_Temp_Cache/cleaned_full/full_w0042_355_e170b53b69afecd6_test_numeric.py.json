@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:47:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\tests\\test_numeric.py",
+  "name": "test_numeric.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 465,
+  "content_sha256": "e170b53b69afecd6183f5b224fa234600cfe0ae865c3a64df43bb6166094cfc6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 13,
+    "char_count": 465,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal",
+      "class TestDot:",
+      "    def test_matscalar(self):",
+      "        b1 = np.matrix(np.ones((3, 3), dtype=complex))",
+      "        assert_equal(b1 * 1.0, b1)",
+      "def test_diagonal():",
+      "    b1 = np.matrix([[1, 2], [3, 4]])",
+      "    diag_b1 = np.matrix([[1, 4]])",
+      "    array_b1 = np.array([1, 4])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal"
+    ],
+    "classes": [
+      "TestDot"
+    ],
+    "functions": [
+      "test_diagonal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_355_e170b53b69afecd6_test_numeric.py.json"
+}

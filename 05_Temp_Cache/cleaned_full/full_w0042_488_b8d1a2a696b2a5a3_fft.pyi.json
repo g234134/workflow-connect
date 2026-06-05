@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\reveal\\fft.pyi",
+  "name": "fft.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 1638,
+  "content_sha256": "b8d1a2a696b2a5a3c7f599b068e5f03dd1d70e1fd35b804994492ff6274ad3c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 28,
+    "char_count": 1638,
+    "preview_lines": [
+      "from typing import Any, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "AR_f8: npt.NDArray[np.float64]",
+      "AR_c16: npt.NDArray[np.complex128]",
+      "AR_LIKE_f8: list[float]",
+      "assert_type(np.fft.fftshift(AR_f8), npt.NDArray[np.float64])",
+      "assert_type(np.fft.fftshift(AR_LIKE_f8, axes=0), npt.NDArray[Any])",
+      "assert_type(np.fft.ifftshift(AR_f8), npt.NDArray[np.float64])",
+      "assert_type(np.fft.ifftshift(AR_LIKE_f8, axes=0), npt.NDArray[Any])"
+    ],
+    "imports": [
+      "from typing import Any, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_488_b8d1a2a696b2a5a3_fft.pyi.json"
+}

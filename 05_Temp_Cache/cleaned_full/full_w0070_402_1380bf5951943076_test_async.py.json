@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-postgres\\tests\\test_async.py",
+  "name": "test_async.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13238,
+  "content_sha256": "1380bf5951943076b0d500d26334097ceeb2d8941174f295db1e1ad9a2c2a88c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 373,
+    "non_empty_lines": 327,
+    "char_count": 13235,
+    "preview_lines": [
+      "# type: ignore",
+      "from contextlib import asynccontextmanager",
+      "from typing import Any",
+      "from uuid import uuid4",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "    EXCLUDED_METADATA_KEYS,",
+      "    Checkpoint,",
+      "    CheckpointMetadata,"
+    ],
+    "imports": [
+      "from contextlib import asynccontextmanager",
+      "from typing import Any",
+      "from uuid import uuid4",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import (",
+      "from langgraph.checkpoint.serde.types import TASKS",
+      "from psycopg import AsyncConnection",
+      "from psycopg.rows import dict_row",
+      "from psycopg_pool import AsyncConnectionPool",
+      "from langgraph.checkpoint.postgres.aio import (",
+      "from tests.conftest import DEFAULT_POSTGRES_URI"
+    ],
+    "classes": [],
+    "functions": [
+      "_exclude_keys",
+      "test_data"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_402_1380bf5951943076_test_async.py.json"
+}

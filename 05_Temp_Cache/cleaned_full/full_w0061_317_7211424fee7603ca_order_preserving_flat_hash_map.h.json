@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\order_preserving_flat_hash_map.h",
+  "name": "order_preserving_flat_hash_map.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 67784,
+  "content_sha256": "7211424fee7603ca6776093c295957602ac088520c57ae0f8fa30262a55ffa57",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2232,
+    "non_empty_lines": 2124,
+    "char_count": 67784,
+    "preview_lines": [
+      "// Taken from",
+      "// https://github.com/skarupke/flat_hash_map/blob/2c4687431f978f02a3780e24b8b701d22aa32d9c/flat_hash_map.hpp",
+      "// with fixes applied:",
+      "// - https://github.com/skarupke/flat_hash_map/pull/25",
+      "// - https://github.com/skarupke/flat_hash_map/pull/26",
+      "// - replace size_t with uint64_t to fix it for 32bit",
+      "// - add \"GCC diagnostic\" pragma to ignore -Wshadow",
+      "// - make sherwood_v3_table::convertible_to_iterator public because GCC5 seems",
+      "// to have issues with it otherwise",
+      "// - fix compiler warnings in operator templated_iterator<const value_type>"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_317_7211424fee7603ca_order_preserving_flat_hash_map.h.json"
+}

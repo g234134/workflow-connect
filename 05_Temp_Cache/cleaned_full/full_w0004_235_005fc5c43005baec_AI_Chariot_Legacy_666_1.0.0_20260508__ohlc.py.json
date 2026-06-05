@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ohlc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ohlc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10695,
+  "content_sha256": "005fc5c43005baec4fcfce9d6af7a3ab540e3de66cc57fd686023bc8122b84db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 295,
+    "non_empty_lines": 248,
+    "char_count": 10695,
+    "preview_lines": [
+      "from plotly import exceptions",
+      "from plotly.graph_objs import graph_objs",
+      "from plotly.figure_factory import utils",
+      "# Default colours for finance charts",
+      "_DEFAULT_INCREASING_COLOR = \"#3D9970\"  # http://clrs.cc",
+      "_DEFAULT_DECREASING_COLOR = \"#FF4136\"",
+      "def validate_ohlc(open, high, low, close, direction, **kwargs):",
+      "    \"\"\"",
+      "    ohlc and candlestick specific validations",
+      "    Specifically, this checks that the high value is the greatest value and"
+    ],
+    "imports": [
+      "from plotly import exceptions",
+      "from plotly.graph_objs import graph_objs",
+      "from plotly.figure_factory import utils"
+    ],
+    "classes": [
+      "_OHLC"
+    ],
+    "functions": [
+      "validate_ohlc",
+      "make_increasing_ohlc",
+      "make_decreasing_ohlc",
+      "create_ohlc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_235_005fc5c43005baec_AI_Chariot_Legacy_666_1.0.0_20260508__ohlc.py.json"
+}

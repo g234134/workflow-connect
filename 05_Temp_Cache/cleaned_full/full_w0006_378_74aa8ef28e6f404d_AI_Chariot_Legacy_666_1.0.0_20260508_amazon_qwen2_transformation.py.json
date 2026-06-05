@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 378,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_amazon_qwen2_transformation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_amazon_qwen2_transformation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4024,
+  "content_sha256": "74aa8ef28e6f404da80d26434c2bd413cdc47c227032ee3f4af8c960c0442261",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 80,
+    "char_count": 4024,
+    "preview_lines": [
+      "\"\"\"",
+      "Handles transforming requests for `bedrock/invoke/{qwen2} models`",
+      "Inherits from `AmazonQwen3Config` since Qwen2 and Qwen3 architectures are mostly similar.",
+      "The main difference is in the response format: Qwen2 uses \"text\" field while Qwen3 uses \"generation\" field.",
+      "Qwen2 + Invoke API Tutorial: https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported-model.html",
+      "\"\"\"",
+      "from typing import Any, List, Optional",
+      "import httpx",
+      "from litellm.llms.bedrock.chat.invoke_transformations.amazon_qwen3_transformation import (",
+      "    AmazonQwen3Config,"
+    ],
+    "imports": [
+      "from typing import Any, List, Optional",
+      "import httpx",
+      "from litellm.llms.bedrock.chat.invoke_transformations.amazon_qwen3_transformation import (",
+      "from litellm.llms.bedrock.chat.invoke_transformations.base_invoke_transformation import (",
+      "from litellm.types.llms.openai import AllMessageValues",
+      "from litellm.types.utils import ModelResponse"
+    ],
+    "classes": [
+      "AmazonQwen2Config"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_378_74aa8ef28e6f404d_AI_Chariot_Legacy_666_1.0.0_20260508_amazon_qwen2_transformation.py.json"
+}

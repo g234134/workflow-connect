@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\sparse_adam.py",
+  "name": "sparse_adam.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7377,
+  "content_sha256": "77009c7d79ad1aea3a2f7597c2e33f5ba76b51c3c13ecd28420d3720a4bd58fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 127,
+    "char_count": 7377,
+    "preview_lines": [
+      "import torch",
+      "from . import _functional as F",
+      "from .optimizer import Optimizer, _maximize_doc",
+      "__all__ = ['SparseAdam']",
+      "class SparseAdam(Optimizer):",
+      "    def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8, maximize: bool = False):",
+      "        if not 0.0 < lr:",
+      "            raise ValueError(f\"Invalid learning rate: {lr}\")",
+      "        if not 0.0 < eps:",
+      "            raise ValueError(f\"Invalid epsilon value: {eps}\")"
+    ],
+    "imports": [
+      "import torch",
+      "from . import _functional as F",
+      "from .optimizer import Optimizer, _maximize_doc"
+    ],
+    "classes": [
+      "SparseAdam"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_465_77009c7d79ad1aea_sparse_adam.py.json"
+}

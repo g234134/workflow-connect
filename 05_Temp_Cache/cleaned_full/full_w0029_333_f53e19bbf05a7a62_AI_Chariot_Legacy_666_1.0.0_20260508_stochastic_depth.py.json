@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 333,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_stochastic_depth.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_stochastic_depth.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2302,
+  "content_sha256": "f53e19bbf05a7a629969f4a6470acf095af969a187f2d9b396c40064efb5ffe6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 53,
+    "char_count": 2302,
+    "preview_lines": [
+      "import torch",
+      "import torch.fx",
+      "from torch import nn, Tensor",
+      "from ..utils import _log_api_usage_once",
+      "def stochastic_depth(input: Tensor, p: float, mode: str, training: bool = True) -> Tensor:",
+      "    \"\"\"",
+      "    Implements the Stochastic Depth from `\"Deep Networks with Stochastic Depth\"",
+      "    <https://arxiv.org/abs/1603.09382>`_ used for randomly dropping residual",
+      "    branches of residual architectures.",
+      "    Args:"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.fx",
+      "from torch import nn, Tensor",
+      "from ..utils import _log_api_usage_once"
+    ],
+    "classes": [
+      "StochasticDepth"
+    ],
+    "functions": [
+      "stochastic_depth"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_333_f53e19bbf05a7a62_AI_Chariot_Legacy_666_1.0.0_20260508_stochastic_depth.py.json"
+}

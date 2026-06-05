@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_function.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_function.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34997,
+  "content_sha256": "6bb7ec9a674e497f8e61310fd11576eef8787bf8f2661f70e925f588004c56ad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1035,
+    "non_empty_lines": 896,
+    "char_count": 34997,
+    "preview_lines": [
+      "import random",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal, nodes_equal",
+      "def test_degree_histogram_empty():",
+      "    G = nx.Graph()",
+      "    assert nx.degree_histogram(G) == []",
+      "class TestFunction:",
+      "    def setup_method(self):",
+      "        self.G = nx.Graph({0: [1, 2, 3], 1: [1, 2, 0], 4: []}, name=\"Test\")"
+    ],
+    "imports": [
+      "import random",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal, nodes_equal"
+    ],
+    "classes": [
+      "TestFunction",
+      "TestCommonNeighbors"
+    ],
+    "functions": [
+      "test_degree_histogram_empty",
+      "test_set_node_attributes",
+      "test_set_node_attributes_ignores_extra_nodes",
+      "test_set_edge_attributes",
+      "test_set_edge_attributes_ignores_extra_edges",
+      "test_set_edge_attributes_multi",
+      "test_set_edge_attributes_multi_ignores_extra_edges",
+      "test_get_node_attributes",
+      "test_get_edge_attributes",
+      "test_remove_node_attributes",
+      "test_remove_edge_attributes",
+      "test_remove_multi_edge_attributes",
+      "test_is_empty",
+      "test_selfloops",
+      "test_selfloop_edges_attr",
+      "test_selfloop_edges_multi_with_data_and_keys",
+      "test_selfloops_removal",
+      "test_selfloops_removal_multi",
+      "test_pathweight",
+      "test_ispath",
+      "test_restricted_view",
+      "test_restricted_view_multi"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_338_6bb7ec9a674e497f_AI_Chariot_Legacy_666_1.0.0_20260508_test_function.py.json"
+}

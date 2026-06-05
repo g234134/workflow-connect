@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_collectives.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_collectives.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20065,
+  "content_sha256": "edcf39a1ad1f8bebb191b764b9f0ce0ad4698f0e7bbd992b4a8b00a7c5739e50",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 477,
+    "non_empty_lines": 437,
+    "char_count": 20065,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "from typing import cast, List, NamedTuple, Optional, Tuple, Union",
+      "import torch",
+      "import torch._dynamo.compiled_autograd as ca",
+      "import torch.distributed as dist",
+      "from torch.distributed.distributed_c10d import ReduceOp",
+      "from torch.distributed.tensor import DTensor",
+      "from ._fsdp_common import (",
+      "    _get_dim0_padded_size,",
+      "    _raise_assert_with_print,"
+    ],
+    "imports": [
+      "from typing import cast, List, NamedTuple, Optional, Tuple, Union",
+      "import torch",
+      "import torch._dynamo.compiled_autograd as ca",
+      "import torch.distributed as dist",
+      "from torch.distributed.distributed_c10d import ReduceOp",
+      "from torch.distributed.tensor import DTensor",
+      "from ._fsdp_common import (",
+      "from ._fsdp_param import FSDPParam, ShardedState"
+    ],
+    "classes": [
+      "AllGatherResult"
+    ],
+    "functions": [
+      "all_gather_copy_in_meta",
+      "all_gather_copy_in_cuda",
+      "split_with_sizes_copy",
+      "chunk_cat",
+      "foreach_all_gather",
+      "_get_param_all_gather_inputs",
+      "foreach_all_gather_copy_out",
+      "foreach_reduce",
+      "foreach_reduce_scatter_copy_in",
+      "_get_all_gather_input_metadatas",
+      "_get_gradient_divide_factors",
+      "_div_if_needed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_211_edcf39a1ad1f8beb_AI_Chariot_Legacy_666_1.0.0_20260508__fsdp_collectives.py.json"
+}

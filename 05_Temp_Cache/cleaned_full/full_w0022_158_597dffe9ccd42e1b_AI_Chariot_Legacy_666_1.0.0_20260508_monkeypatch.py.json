@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_monkeypatch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_monkeypatch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15500,
+  "content_sha256": "597dffe9ccd42e1bdcdf0485fb437c55eb1bbfdc0637777096261c0ef4fc11fb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 435,
+    "non_empty_lines": 355,
+    "char_count": 15500,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Monkeypatching and mocking functionality.\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Generator",
+      "from collections.abc import Mapping",
+      "from collections.abc import MutableMapping",
+      "from contextlib import contextmanager",
+      "import os",
+      "from pathlib import Path",
+      "import re"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Generator",
+      "from collections.abc import Mapping",
+      "from collections.abc import MutableMapping",
+      "from contextlib import contextmanager",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import sys",
+      "from typing import Any",
+      "from typing import final",
+      "from typing import overload",
+      "from typing import TypeVar",
+      "import warnings",
+      "from _pytest.deprecated import MONKEYPATCH_LEGACY_NAMESPACE_PACKAGES",
+      "from _pytest.fixtures import fixture",
+      "from _pytest.warning_types import PytestWarning",
+      "import functools",
+      "import os"
+    ],
+    "classes": [
+      "Notset",
+      "MonkeyPatch"
+    ],
+    "functions": [
+      "monkeypatch",
+      "resolve",
+      "annotated_getattr",
+      "derive_importpath"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_158_597dffe9ccd42e1b_AI_Chariot_Legacy_666_1.0.0_20260508_monkeypatch.py.json"
+}

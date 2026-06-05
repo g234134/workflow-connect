@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 261,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llm_caching_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llm_caching_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1305,
+  "content_sha256": "f24a0dbda12d909d69a524ee337c6b8ec2a485cfa108257cbd8b0b415524f6c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 29,
+    "char_count": 1305,
+    "preview_lines": [
+      "\"\"\"",
+      "Add the event loop to the cache key, to prevent event loop closed errors.",
+      "\"\"\"",
+      "import asyncio",
+      "from .in_memory_cache import InMemoryCache",
+      "class LLMClientCache(InMemoryCache):",
+      "    def update_cache_key_with_event_loop(self, key):",
+      "        \"\"\"",
+      "        Add the event loop to the cache key, to prevent event loop closed errors.",
+      "        If none, use the key as is."
+    ],
+    "imports": [
+      "import asyncio",
+      "from .in_memory_cache import InMemoryCache"
+    ],
+    "classes": [
+      "LLMClientCache"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_261_f24a0dbda12d909d_AI_Chariot_Legacy_666_1.0.0_20260508_llm_caching_handler.py.json"
+}

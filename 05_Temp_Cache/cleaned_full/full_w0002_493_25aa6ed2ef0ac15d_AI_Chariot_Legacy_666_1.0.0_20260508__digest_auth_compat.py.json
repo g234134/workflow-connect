@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 493,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__digest_auth_compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__digest_auth_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 910,
+  "content_sha256": "25aa6ed2ef0ac15dc815b462126cebc5547a33120d9e999b3d8784ab287fcdb3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 21,
+    "char_count": 910,
+    "preview_lines": [
+      "\"\"\"Provide a compatibility layer for requests.auth.HTTPDigestAuth.\"\"\"",
+      "import requests",
+      "class _ThreadingDescriptor(object):",
+      "    def __init__(self, prop, default):",
+      "        self.prop = prop",
+      "        self.default = default",
+      "    def __get__(self, obj, objtype=None):",
+      "        return getattr(obj._thread_local, self.prop, self.default)",
+      "    def __set__(self, obj, value):",
+      "        setattr(obj._thread_local, self.prop, value)"
+    ],
+    "imports": [
+      "import requests"
+    ],
+    "classes": [
+      "_ThreadingDescriptor",
+      "_HTTPDigestAuth"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_493_25aa6ed2ef0ac15d_AI_Chariot_Legacy_666_1.0.0_20260508__digest_auth_compat.py.json"
+}

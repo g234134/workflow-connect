@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 155,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dammit.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dammit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 57024,
+  "content_sha256": "64959af4adf65fa3768a614795ea94ab47a47f9f76c1e53596f50b37f5985989",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1516,
+    "non_empty_lines": 1333,
+    "char_count": 56876,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "\"\"\"Beautiful Soup bonus library: Unicode, Dammit",
+      "This library converts a bytestream to Unicode through any means",
+      "necessary. It is heavily based on code from Mark Pilgrim's `Universal",
+      "Feed Parser <https://pypi.org/project/feedparser/>`_, now maintained",
+      "by Kurt McKee. It does not rewrite the body of an XML or HTML document",
+      "to reflect a new encoding; that's the job of `TreeBuilder`.",
+      "\"\"\"",
+      "# Use of this source code is governed by the MIT license.",
+      "__license__ = \"MIT\""
+    ],
+    "imports": [
+      "from html.entities import codepoint2name",
+      "from collections import defaultdict",
+      "import codecs",
+      "from html.entities import html5",
+      "import re",
+      "from logging import Logger, getLogger",
+      "from types import ModuleType",
+      "from typing import (",
+      "from typing_extensions import Literal",
+      "from bs4._typing import (",
+      "import warnings",
+      "import cchardet # type:ignore",
+      "import chardet",
+      "import charset_normalizer # type:ignore"
+    ],
+    "classes": [
+      "EntitySubstitution",
+      "EncodingDetector",
+      "UnicodeDammit"
+    ],
+    "functions": [
+      "_chardet_dammit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_155_64959af4adf65fa3_AI_Chariot_Legacy_666_1.0.0_20260508_dammit.py.json"
+}

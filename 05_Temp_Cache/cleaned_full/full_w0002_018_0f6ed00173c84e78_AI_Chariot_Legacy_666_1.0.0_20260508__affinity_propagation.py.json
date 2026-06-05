@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 18,
+  "generated_at": "2026-05-08T18:44:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__affinity_propagation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__affinity_propagation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21359,
+  "content_sha256": "0f6ed00173c84e780d30fa4b61589e916051a8e2cd5e6d8ca9fb7c92d6cf8bb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 607,
+    "non_empty_lines": 503,
+    "char_count": 21359,
+    "preview_lines": [
+      "\"\"\"Affinity Propagation clustering algorithm.\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from sklearn._config import config_context",
+      "from sklearn.base import BaseEstimator, ClusterMixin, _fit_context",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.metrics import euclidean_distances, pairwise_distances_argmin"
+    ],
+    "imports": [
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from sklearn._config import config_context",
+      "from sklearn.base import BaseEstimator, ClusterMixin, _fit_context",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.metrics import euclidean_distances, pairwise_distances_argmin",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._param_validation import Interval, StrOptions, validate_params",
+      "from sklearn.utils.validation import check_is_fitted, validate_data"
+    ],
+    "classes": [
+      "AffinityPropagation"
+    ],
+    "functions": [
+      "_equal_similarities_and_preferences",
+      "_affinity_propagation",
+      "affinity_propagation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_018_0f6ed00173c84e78_AI_Chariot_Legacy_666_1.0.0_20260508__affinity_propagation.py.json"
+}

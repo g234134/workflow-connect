@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 390,
+  "generated_at": "2026-05-08T18:45:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_model_checks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_model_checks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11657,
+  "content_sha256": "d7913b9dd7c8a453ae1d1c0f3b3a753f81e37271b09759915a5a7b4d6fa8301c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 354,
+    "non_empty_lines": 292,
+    "char_count": 11657,
+    "preview_lines": [
+      "# What is this?",
+      "## Common checks for /v1/models and `/model/info`",
+      "from typing import Dict, List, Optional, Set",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import SpecialModelNames, UserAPIKeyAuth",
+      "from litellm.router import Router",
+      "from litellm.router_utils.fallback_event_handlers import get_fallback_model_group",
+      "from litellm.types.router import LiteLLM_Params",
+      "from litellm.utils import get_valid_models"
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional, Set",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import SpecialModelNames, UserAPIKeyAuth",
+      "from litellm.router import Router",
+      "from litellm.router_utils.fallback_event_handlers import get_fallback_model_group",
+      "from litellm.types.router import LiteLLM_Params",
+      "from litellm.utils import get_valid_models",
+      "from litellm.proxy.proxy_server import prisma_client"
+    ],
+    "classes": [],
+    "functions": [
+      "_check_wildcard_routing",
+      "get_provider_models",
+      "_get_models_from_access_groups",
+      "get_key_models",
+      "get_team_models",
+      "get_complete_model_list",
+      "get_known_models_from_wildcard",
+      "_get_wildcard_models",
+      "get_all_fallbacks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_390_d7913b9dd7c8a453_AI_Chariot_Legacy_666_1.0.0_20260508_model_checks.py.json"
+}

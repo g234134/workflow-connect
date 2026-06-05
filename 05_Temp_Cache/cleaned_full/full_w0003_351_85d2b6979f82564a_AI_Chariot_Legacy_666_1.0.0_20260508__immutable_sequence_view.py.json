@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__immutable_sequence_view.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__immutable_sequence_view.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1859,
+  "content_sha256": "85d2b6979f82564af035bdf92e70c0d0a58bcba76bad0b398b2bebcd95d25fb1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 48,
+    "char_count": 1859,
+    "preview_lines": [
+      "\"\"\"Provides an immutable sequence view class.\"\"\"",
+      "from __future__ import annotations",
+      "from sys import maxsize",
+      "from typing import TYPE_CHECKING, Generic, Iterator, Sequence, TypeVar, overload",
+      "T = TypeVar(\"T\")",
+      "class ImmutableSequenceView(Generic[T]):",
+      "    \"\"\"Class to wrap a sequence of some sort, but not allow modification.\"\"\"",
+      "    def __init__(self, wrap: Sequence[T]) -> None:",
+      "        \"\"\"Initialise the immutable sequence.",
+      "        Args:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from sys import maxsize",
+      "from typing import TYPE_CHECKING, Generic, Iterator, Sequence, TypeVar, overload"
+    ],
+    "classes": [
+      "ImmutableSequenceView"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_351_85d2b6979f82564a_AI_Chariot_Legacy_666_1.0.0_20260508__immutable_sequence_view.py.json"
+}

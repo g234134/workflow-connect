@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_perfmon.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_perfmon.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1233,
+  "content_sha256": "8e8840a85c373108c4a6dba855cee5f60f2c2ce424eb6e15780575099d939c2d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 29,
+    "char_count": 1233,
+    "preview_lines": [
+      "\"\"\"A COM Server which exposes the NT Performance monitor in a very rudimentary way",
+      "Usage from VB:",
+      "    set ob = CreateObject(\"Python.PerfmonQuery\")",
+      "    freeBytes = ob.Query(\"Memory\", \"Available Bytes\")",
+      "\"\"\"",
+      "import pythoncom",
+      "import win32pdhutil",
+      "import winerror",
+      "from win32com.server import register",
+      "from win32com.server.exception import COMException"
+    ],
+    "imports": [
+      "import pythoncom",
+      "import win32pdhutil",
+      "import winerror",
+      "from win32com.server import register",
+      "from win32com.server.exception import COMException"
+    ],
+    "classes": [
+      "PerfMonQuery"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_053_8e8840a85c373108_AI_Chariot_Legacy_666_1.0.0_20260508_perfmon.py.json"
+}

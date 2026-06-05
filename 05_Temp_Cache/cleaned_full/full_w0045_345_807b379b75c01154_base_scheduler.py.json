@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 345,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\pruning\\scheduler\\base_scheduler.py",
+  "name": "base_scheduler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6470,
+  "content_sha256": "807b379b75c0115403e576a80b75927ed3b21dda10ff91232da316bf070c040b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 159,
+    "non_empty_lines": 126,
+    "char_count": 6470,
+    "preview_lines": [
+      "from torch.ao.pruning import BaseSparsifier",
+      "from functools import wraps",
+      "import warnings",
+      "import weakref",
+      "__all__ = [\"BaseScheduler\"]",
+      "class BaseScheduler:",
+      "    def __init__(self, sparsifier, last_epoch=-1, verbose=False):",
+      "        # Attach sparsifier",
+      "        if not isinstance(sparsifier, BaseSparsifier):",
+      "            raise TypeError(f'{type(sparsifier).__name__} is not an instance of torch.ao.pruning.BaseSparsifier')"
+    ],
+    "imports": [
+      "from torch.ao.pruning import BaseSparsifier",
+      "from functools import wraps",
+      "import warnings",
+      "import weakref",
+      "from a call to :meth:`state_dict`."
+    ],
+    "classes": [
+      "BaseScheduler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_345_807b379b75c01154_base_scheduler.py.json"
+}

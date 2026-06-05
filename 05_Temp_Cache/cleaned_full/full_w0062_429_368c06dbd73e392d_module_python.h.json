@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 429,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\python\\module_python.h",
+  "name": "module_python.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 995,
+  "content_sha256": "368c06dbd73e392da6fa3f88fc8f8e015c744ed4f038eebf401598ec31bae836",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 29,
+    "char_count": 995,
+    "preview_lines": [
+      "#pragma once",
+      "#include <pybind11/pybind11.h>",
+      "#include <pybind11/stl.h>",
+      "#include <torch/csrc/jit/api/module.h>",
+      "#include <torch/csrc/utils/pybind.h>",
+      "namespace py = pybind11;",
+      "namespace torch::jit {",
+      "inline c10::optional<Module> as_module(py::handle obj) {",
+      "  static py::handle ScriptModule =",
+      "      py::module::import(\"torch.jit\").attr(\"ScriptModule\");"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_429_368c06dbd73e392d_module_python.h.json"
+}

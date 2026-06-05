@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 43,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_socket_pair.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_socket_pair.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1696,
+  "content_sha256": "1ffe6c59f6a1a0d41b5dc384fd9836645e5694feee4e6052df089187dd34995b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 37,
+    "char_count": 1696,
+    "preview_lines": [
+      "\"\"\"Pair of ZMQ inproc sockets used for communication between threads.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import zmq",
+      "from tornado.ioloop import IOLoop",
+      "from zmq.eventloop.zmqstream import ZMQStream",
+      "class SocketPair:",
+      "    \"\"\"Pair of ZMQ inproc sockets for one-direction communication between 2 threads.",
+      "    One of the threads is always the shell_channel_thread, the other may be the control",
+      "    thread, main thread or a subshell thread."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import zmq",
+      "from tornado.ioloop import IOLoop",
+      "from zmq.eventloop.zmqstream import ZMQStream"
+    ],
+    "classes": [
+      "SocketPair"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_043_1ffe6c59f6a1a0d4_AI_Chariot_Legacy_666_1.0.0_20260508_socket_pair.py.json"
+}

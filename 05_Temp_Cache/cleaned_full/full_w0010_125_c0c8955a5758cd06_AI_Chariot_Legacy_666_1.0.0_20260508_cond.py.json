@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 125,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cond.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cond.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21100,
+  "content_sha256": "c0c8955a5758cd0692cfefea84fb1662ab6919d89b8418f83f36d30d8cbc21b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 521,
+    "non_empty_lines": 426,
+    "char_count": 21100,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "import logging",
+      "import torch",
+      "import torch._subclasses.functional_tensor",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._C._functorch import (",
+      "    _add_batch_dim,",
+      "    get_unwrapped,"
+    ],
+    "imports": [
+      "import contextlib",
+      "import logging",
+      "import torch",
+      "import torch._subclasses.functional_tensor",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._C._functorch import (",
+      "from torch._dispatch.python import suspend_functionalization",
+      "from torch._functorch.utils import exposed_in",
+      "from torch._guards import detect_fake_mode",
+      "from torch._higher_order_ops.utils import (",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch._subclasses.functional_tensor import disable_functional_mode",
+      "from torch.fx.experimental.proxy_tensor import (",
+      "from torch.fx.passes.shape_prop import _extract_tensor_metadata",
+      "from torch.utils._python_dispatch import _get_current_dispatch_mode",
+      "from .utils import _from_fun, create_fw_bw_graph"
+    ],
+    "classes": [
+      "CondOp",
+      "CondAutogradOp"
+    ],
+    "functions": [
+      "cond",
+      "create_fw_bw_graph_branches",
+      "trace_cond",
+      "cond_op_dense",
+      "cond_autograd",
+      "inner",
+      "cond_fake_tensor_mode",
+      "cond_func",
+      "cond_batch_rule"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_125_c0c8955a5758cd06_AI_Chariot_Legacy_666_1.0.0_20260508_cond.py.json"
+}

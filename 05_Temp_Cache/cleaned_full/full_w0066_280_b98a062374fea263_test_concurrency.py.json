@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 280,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\runnables\\test_concurrency.py",
+  "name": "test_concurrency.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3960,
+  "content_sha256": "b98a062374fea2635c687bddee0dffbe6b1970c4d8ee0c62c9e2e1d0fbfee12e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 101,
+    "char_count": 3957,
+    "preview_lines": [
+      "\"\"\"Test concurrency behavior of batch and async batch operations.\"\"\"",
+      "import asyncio",
+      "import time",
+      "from threading import Lock",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig, RunnableLambda",
+      "@pytest.mark.asyncio",
+      "async def test_abatch_concurrency() -> None:",
+      "    \"\"\"Test that abatch respects max_concurrency.\"\"\""
+    ],
+    "imports": [
+      "import asyncio",
+      "import time",
+      "from threading import Lock",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.runnables import RunnableConfig, RunnableLambda"
+    ],
+    "classes": [],
+    "functions": [
+      "test_batch_concurrency",
+      "test_batch_as_completed_concurrency"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_280_b98a062374fea263_test_concurrency.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_owens_t.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_owens_t.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1845,
+  "content_sha256": "b28b6257146b8e84389588db6c1c7cf2740a1c41e1368c1f27b28f74833ebcd4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 41,
+    "char_count": 1844,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import scipy.special as sc",
+      "def test_symmetries():",
+      "    np.random.seed(1234)",
+      "    a, h = np.random.rand(100), np.random.rand(100)",
+      "    assert_equal(sc.owens_t(h, a), sc.owens_t(-h, a))",
+      "    assert_equal(sc.owens_t(h, a), -sc.owens_t(h, -a))",
+      "def test_special_cases():",
+      "    assert_equal(sc.owens_t(5, 0), 0)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import scipy.special as sc"
+    ],
+    "classes": [],
+    "functions": [
+      "test_symmetries",
+      "test_special_cases",
+      "test_nans",
+      "test_infs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_176_b28b6257146b8e84_AI_Chariot_Legacy_666_1.0.0_20260508_test_owens_t.py.json"
+}

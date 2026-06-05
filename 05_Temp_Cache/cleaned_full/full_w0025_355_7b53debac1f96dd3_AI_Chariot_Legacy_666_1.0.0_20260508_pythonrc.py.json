@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pythonrc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pythonrc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3016,
+  "content_sha256": "7b53debac1f96dd30df4d0ff07c225d9a7216d4c760569e2e2dc025e5ac908a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 68,
+    "char_count": 3016,
+    "preview_lines": [
+      "import platform",
+      "import sys",
+      "if sys.platform != \"win32\":",
+      "    import readline",
+      "original_ps1 = \">>> \"",
+      "is_wsl = \"microsoft-standard-WSL\" in platform.release()",
+      "class REPLHooks:",
+      "    def __init__(self):",
+      "        self.global_exit = None",
+      "        self.failure_flag = False"
+    ],
+    "imports": [
+      "import platform",
+      "import sys",
+      "import readline"
+    ],
+    "classes": [
+      "REPLHooks",
+      "PS1"
+    ],
+    "functions": [
+      "get_last_command"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_355_7b53debac1f96dd3_AI_Chariot_Legacy_666_1.0.0_20260508_pythonrc.py.json"
+}

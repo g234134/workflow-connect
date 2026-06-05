@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mm_plus_mm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mm_plus_mm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8048,
+  "content_sha256": "5de6a459324a6d436030671c9fda8379091e955a343f800a962ac7081e954362",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 248,
+    "non_empty_lines": 221,
+    "char_count": 8048,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import torch",
+      "from ..lowering import lowerings",
+      "from ..select_algorithm import (",
+      "    autotune_select_algorithm,",
+      "    ExternKernelChoice,",
+      "    TritonTemplate,",
+      ")",
+      "from ..utils import use_aten_gemm_kernels, use_triton_template"
+    ],
+    "imports": [
+      "import functools",
+      "import torch",
+      "from ..lowering import lowerings",
+      "from ..select_algorithm import (",
+      "from ..utils import use_aten_gemm_kernels, use_triton_template",
+      "from ..virtualized import V",
+      "from .mm_common import mm_args, mm_grid, mm_options",
+      "import triton"
+    ],
+    "classes": [],
+    "functions": [
+      "mm_configs",
+      "tuned_mm_plus_mm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_357_5de6a459324a6d43_AI_Chariot_Legacy_666_1.0.0_20260508_mm_plus_mm.py.json"
+}

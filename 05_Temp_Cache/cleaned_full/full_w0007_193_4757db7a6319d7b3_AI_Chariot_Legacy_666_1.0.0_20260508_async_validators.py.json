@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_async_validators.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_async_validators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2140,
+  "content_sha256": "4757db7a6319d7b34bd0805747c37b58a8f0971f60d4239c110f9dea983a21af",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 68,
+    "non_empty_lines": 53,
+    "char_count": 2140,
+    "preview_lines": [
+      "from typing import Callable, Any, TypeVar",
+      "from inspect import signature",
+      "from pydantic import ValidationInfo",
+      "ASYNC_VALIDATOR_KEY = \"__async_validator__\"",
+      "ASYNC_MODEL_VALIDATOR_KEY = \"__async_model_validator__\"",
+      "T = TypeVar(\"T\", bound=Callable[..., Any])",
+      "class AsyncValidationContext:",
+      "    context: dict[str, Any]",
+      "    def __init__(self, context: dict[str, Any]):",
+      "        self.context = context"
+    ],
+    "imports": [
+      "from typing import Callable, Any, TypeVar",
+      "from inspect import signature",
+      "from pydantic import ValidationInfo"
+    ],
+    "classes": [
+      "AsyncValidationContext"
+    ],
+    "functions": [
+      "async_field_validator",
+      "async_model_validator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_193_4757db7a6319d7b3_AI_Chariot_Legacy_666_1.0.0_20260508_async_validators.py.json"
+}

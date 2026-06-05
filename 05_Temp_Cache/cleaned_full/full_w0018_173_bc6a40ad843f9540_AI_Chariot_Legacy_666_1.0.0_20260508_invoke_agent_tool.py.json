@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 173,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_invoke_agent_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_invoke_agent_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7010,
+  "content_sha256": "bc6a40ad843f95400454a1135bdef817639f075f59342ae80a388a635c849ac0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 155,
+    "char_count": 7010,
+    "preview_lines": [
+      "from datetime import datetime, timezone",
+      "import json",
+      "import os",
+      "import time",
+      "from typing import Any",
+      "from crewai.tools import BaseTool",
+      "from dotenv import load_dotenv",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.aws.bedrock.exceptions import (",
+      "    BedrockAgentError,"
+    ],
+    "imports": [
+      "from datetime import datetime, timezone",
+      "import json",
+      "import os",
+      "import time",
+      "from typing import Any",
+      "from crewai.tools import BaseTool",
+      "from dotenv import load_dotenv",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.aws.bedrock.exceptions import (",
+      "import boto3",
+      "from botocore.exceptions import ClientError"
+    ],
+    "classes": [
+      "BedrockInvokeAgentToolInput",
+      "BedrockInvokeAgentTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_173_bc6a40ad843f9540_AI_Chariot_Legacy_666_1.0.0_20260508_invoke_agent_tool.py.json"
+}

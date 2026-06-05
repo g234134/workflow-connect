@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_legend_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_legend_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29872,
+  "content_sha256": "7a48594d3d57f7241ded334845dbbfbee8b9151d824e62343564c5253a85d4de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 812,
+    "non_empty_lines": 650,
+    "char_count": 29872,
+    "preview_lines": [
+      "\"\"\"",
+      "Default legend handlers.",
+      ".. important::",
+      "    This is a low-level legend API, which most end users do not need.",
+      "    We recommend that you are familiar with the :ref:`legend guide",
+      "    <legend_guide>` before reading this documentation.",
+      "Legend handlers are expected to be a callable object with a following",
+      "signature::",
+      "    legend_handler(legend, orig_handle, fontsize, handlebox)",
+      "Where *legend* is the legend itself, *orig_handle* is the original"
+    ],
+    "imports": [
+      "from itertools import cycle",
+      "import numpy as np",
+      "from matplotlib import cbook",
+      "from matplotlib.lines import Line2D",
+      "from matplotlib.patches import Rectangle",
+      "import matplotlib.collections as mcoll"
+    ],
+    "classes": [
+      "HandlerBase",
+      "HandlerNpoints",
+      "HandlerNpointsYoffsets",
+      "HandlerLine2DCompound",
+      "HandlerLine2D",
+      "HandlerPatch",
+      "HandlerStepPatch",
+      "HandlerLineCollection",
+      "HandlerRegularPolyCollection",
+      "HandlerPathCollection",
+      "HandlerCircleCollection",
+      "HandlerErrorbar",
+      "HandlerStem",
+      "HandlerTuple",
+      "HandlerPolyCollection"
+    ],
+    "functions": [
+      "update_from_first_child"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_106_7a48594d3d57f724_AI_Chariot_Legacy_666_1.0.0_20260508_legend_handler.py.json"
+}

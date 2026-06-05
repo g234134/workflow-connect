@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 326,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_client_ws.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_client_ws.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15537,
+  "content_sha256": "f43ada1eeba9b89713ecd3a0c9e1a697c481afb5790f9203e7ea626357d031d0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 428,
+    "non_empty_lines": 369,
+    "char_count": 15537,
+    "preview_lines": [
+      "\"\"\"WebSocket client for asyncio.\"\"\"",
+      "import asyncio",
+      "import sys",
+      "from types import TracebackType",
+      "from typing import Any, Optional, Type, cast",
+      "import attr",
+      "from ._websocket.reader import WebSocketDataQueue",
+      "from .client_exceptions import ClientError, ServerTimeoutError, WSMessageTypeError",
+      "from .client_reqrep import ClientResponse",
+      "from .helpers import calculate_timeout_when, set_result"
+    ],
+    "imports": [
+      "import asyncio",
+      "import sys",
+      "from types import TracebackType",
+      "from typing import Any, Optional, Type, cast",
+      "import attr",
+      "from ._websocket.reader import WebSocketDataQueue",
+      "from .client_exceptions import ClientError, ServerTimeoutError, WSMessageTypeError",
+      "from .client_reqrep import ClientResponse",
+      "from .helpers import calculate_timeout_when, set_result",
+      "from .http import (",
+      "from .http_websocket import _INTERNAL_RECEIVE_TYPES, WebSocketWriter",
+      "from .streams import EofStream",
+      "from .typedefs import (",
+      "import asyncio as async_timeout",
+      "import async_timeout"
+    ],
+    "classes": [
+      "ClientWSTimeout",
+      "ClientWebSocketResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_326_f43ada1eeba9b897_AI_Chariot_Legacy_666_1.0.0_20260508_client_ws.py.json"
+}

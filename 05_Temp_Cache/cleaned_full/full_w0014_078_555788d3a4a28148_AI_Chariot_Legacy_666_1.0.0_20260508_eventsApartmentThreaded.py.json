@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 78,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_eventsApartmentThreaded.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_eventsApartmentThreaded.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3764,
+  "content_sha256": "555788d3a4a281482d84f492f0f87be87fae62ea3779d8b6a832bd1756929627",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 78,
+    "char_count": 3764,
+    "preview_lines": [
+      "# A sample originally provided by Richard Bell, and modified by Mark Hammond.",
+      "# This sample demonstrates how to use COM events in an aparment-threaded",
+      "# world.  In this world, COM itself ensures that all calls to and events",
+      "# from an object happen on the same thread that created the object, even",
+      "# if they originated from different threads.  For this cross-thread",
+      "# marshalling to work, this main thread *must* run a \"message-loop\" (ie,",
+      "# a loop fetching and dispatching Windows messages).  Without such message",
+      "# processing, dead-locks can occur.",
+      "# See also eventsFreeThreaded.py for how to do this in a free-threaded",
+      "# world where these marshalling considerations do not exist."
+    ],
+    "imports": [
+      "import time",
+      "import pythoncom",
+      "import win32api",
+      "import win32com.client",
+      "import win32event"
+    ],
+    "classes": [
+      "ExplorerEvents"
+    ],
+    "functions": [
+      "WaitWhileProcessingMessages",
+      "TestExplorerEvents"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_078_555788d3a4a28148_AI_Chariot_Legacy_666_1.0.0_20260508_eventsApartmentThreaded.py.json"
+}

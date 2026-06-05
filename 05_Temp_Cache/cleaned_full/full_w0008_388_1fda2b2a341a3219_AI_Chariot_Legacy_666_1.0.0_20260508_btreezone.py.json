@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_btreezone.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_btreezone.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13082,
+  "content_sha256": "1fda2b2a341a3219cf8ed0211e9459955e7077dd4dd7b8aea8e993515cefeac5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 367,
+    "non_empty_lines": 322,
+    "char_count": 13082,
+    "preview_lines": [
+      "# Copyright (C) Dnspython Contributors, see LICENSE for text of ISC license",
+      "# A derivative of a dnspython VersionedZone and related classes, using a BTreeDict and",
+      "# a separate per-version delegation index.  These additions let us",
+      "#",
+      "# 1) Do efficient CoW versioning (useful for future online updates).",
+      "# 2) Maintain sort order",
+      "# 3) Allow delegations to be found easily",
+      "# 4) Handle glue",
+      "# 5) Add Node flags ORIGIN, DELEGATION, and GLUE whenever relevant.  The ORIGIN",
+      "#    flag is set at the origin node, the DELEGATION FLAG is set at delegation"
+    ],
+    "imports": [
+      "import enum",
+      "from dataclasses import dataclass",
+      "from typing import Callable, MutableMapping, Tuple, cast",
+      "import dns.btree",
+      "import dns.immutable",
+      "import dns.name",
+      "import dns.node",
+      "import dns.rdataclass",
+      "import dns.rdataset",
+      "import dns.rdatatype",
+      "import dns.versioned",
+      "import dns.zone"
+    ],
+    "classes": [
+      "NodeFlags",
+      "Node",
+      "ImmutableNode",
+      "Delegations",
+      "WritableVersion",
+      "Bounds",
+      "ImmutableVersion",
+      "Zone"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_388_1fda2b2a341a3219_AI_Chariot_Legacy_666_1.0.0_20260508_btreezone.py.json"
+}

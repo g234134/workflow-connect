@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__otel_exporter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__otel_exporter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32753,
+  "content_sha256": "db0a120e0869d4212f8805e3cff853608a244e87b887209c5aa9950593993b5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 866,
+    "non_empty_lines": 745,
+    "char_count": 32753,
+    "preview_lines": [
+      "\"\"\"OpenTelemetry exporter for LangSmith runs.\"\"\"",
+      "from __future__ import annotations",
+      "import datetime",
+      "import logging",
+      "import time",
+      "import uuid",
+      "import warnings",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "if TYPE_CHECKING:",
+      "    try:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import datetime",
+      "import logging",
+      "import time",
+      "import uuid",
+      "import warnings",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "from opentelemetry.context.context import Context  # type: ignore[import]",
+      "from opentelemetry.trace import Span  # type: ignore[import]",
+      "from langsmith import utils as ls_utils",
+      "from langsmith._internal import _orjson",
+      "from langsmith._internal._operations import (",
+      "from langsmith._internal._otel_utils import (",
+      "from opentelemetry import trace  # type: ignore[import]",
+      "from opentelemetry.context.context import Context  # type: ignore[import]",
+      "from opentelemetry.trace import (  # type: ignore[import]"
+    ],
+    "classes": [
+      "OTELExporter"
+    ],
+    "functions": [
+      "_import_otel_exporter",
+      "_otel_safe_attribute_value",
+      "_get_operation_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_284_db0a120e0869d421_AI_Chariot_Legacy_666_1.0.0_20260508__otel_exporter.py.json"
+}

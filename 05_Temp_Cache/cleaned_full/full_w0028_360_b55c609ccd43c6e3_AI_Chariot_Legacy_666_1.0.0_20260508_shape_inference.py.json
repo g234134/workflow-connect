@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_shape_inference.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_shape_inference.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9892,
+  "content_sha256": "b55c609ccd43c6e35db02c5acf7a5a8cf6cacf717c4bbd5ea6b23e82e3b4fd15",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 180,
+    "char_count": 9892,
+    "preview_lines": [
+      "# --------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft, Intel Corporation. All rights reserved.",
+      "# Licensed under the MIT License. See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "import tempfile",
+      "import traceback",
+      "from pathlib import Path",
+      "import onnx"
+    ],
+    "imports": [
+      "import logging",
+      "import tempfile",
+      "import traceback",
+      "from pathlib import Path",
+      "import onnx",
+      "import onnxruntime",
+      "from onnxruntime.tools.symbolic_shape_infer import SymbolicShapeInference",
+      "from onnxruntime.transformers.onnx_utils import extract_raw_data_from_model, has_external_data",
+      "from .fusions import ReplaceUpsampleWithResize",
+      "from .onnx_model import ONNXModel",
+      "from .quant_utils import add_pre_process_metadata, save_and_reload_model_with_shape_infer"
+    ],
+    "classes": [],
+    "functions": [
+      "quant_pre_process"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_360_b55c609ccd43c6e3_AI_Chariot_Legacy_666_1.0.0_20260508_shape_inference.py.json"
+}

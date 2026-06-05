@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 249,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__gb.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__gb.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 90083,
+  "content_sha256": "7f574a99a83342d7798c1a91584ad19ebd1814ad8676b888c755a356e84e60c0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2204,
+    "non_empty_lines": 1877,
+    "char_count": 90083,
+    "preview_lines": [
+      "\"\"\"Gradient Boosted Regression Trees.",
+      "This module contains methods for fitting gradient boosted regression trees for",
+      "both classification and regression.",
+      "The module structure is the following:",
+      "- The ``BaseGradientBoosting`` base class implements a common ``fit`` method",
+      "  for all the estimators in the module. Regression and classification",
+      "  only differ in the concrete ``LossFunction`` used.",
+      "- ``GradientBoostingClassifier`` implements gradient boosting for",
+      "  classification problems.",
+      "- ``GradientBoostingRegressor`` implements gradient boosting for"
+    ],
+    "imports": [
+      "import math",
+      "import warnings",
+      "from abc import ABCMeta, abstractmethod",
+      "from numbers import Integral, Real",
+      "from time import time",
+      "import numpy as np",
+      "from scipy.sparse import csc_matrix, csr_matrix, issparse",
+      "from sklearn._loss.loss import (",
+      "from sklearn.base import ClassifierMixin, RegressorMixin, _fit_context, is_classifier",
+      "from sklearn.dummy import DummyClassifier, DummyRegressor",
+      "from sklearn.ensemble._base import BaseEnsemble",
+      "from sklearn.ensemble._gradient_boosting import (",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.model_selection import train_test_split",
+      "from sklearn.preprocessing import LabelEncoder",
+      "from sklearn.tree import DecisionTreeRegressor",
+      "from sklearn.tree._tree import DOUBLE, DTYPE, TREE_LEAF",
+      "from sklearn.utils import check_array, check_random_state, column_or_1d",
+      "from sklearn.utils._param_validation import HasMethods, Interval, StrOptions",
+      "from sklearn.utils.multiclass import check_classification_targets"
+    ],
+    "classes": [
+      "VerboseReporter",
+      "BaseGradientBoosting",
+      "GradientBoostingClassifier",
+      "GradientBoostingRegressor"
+    ],
+    "functions": [
+      "_safe_divide",
+      "_init_raw_predictions",
+      "_update_terminal_regions",
+      "set_huber_delta"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_249_7f574a99a83342d7_AI_Chariot_Legacy_666_1.0.0_20260508__gb.py.json"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_packages.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_packages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 904,
+  "content_sha256": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 19,
+    "char_count": 904,
+    "preview_lines": [
+      "import sys",
+      "from .compat import chardet",
+      "# This code exists for backwards compatibility reasons.",
+      "# I don't like it either. Just look the other way. :)",
+      "for package in (\"urllib3\", \"idna\"):",
+      "    locals()[package] = __import__(package)",
+      "    # This traversal is apparently necessary such that the identities are",
+      "    # preserved (requests.packages.urllib3.* is urllib3.*)",
+      "    for mod in list(sys.modules):",
+      "        if mod == package or mod.startswith(f\"{package}.\"):"
+    ],
+    "imports": [
+      "import sys",
+      "from .compat import chardet"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_338_fe0d2067af355320_AI_Chariot_Legacy_666_1.0.0_20260508_packages.py.json"
+}

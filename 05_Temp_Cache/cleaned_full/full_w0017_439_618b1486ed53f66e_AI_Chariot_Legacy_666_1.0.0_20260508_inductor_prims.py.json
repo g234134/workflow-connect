@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 439,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_inductor_prims.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_inductor_prims.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5821,
+  "content_sha256": "618b1486ed53f66eb81d744a51a06310a0bc1a2dfec494c9dbab3f8fc384222e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 179,
+    "non_empty_lines": 146,
+    "char_count": 5821,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Optional, Sequence",
+      "import torch",
+      "from torch import _prims, Tensor",
+      "log = logging.getLogger(__name__)",
+      "def make_prim(",
+      "    schema: str,",
+      "    impl_aten,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Optional, Sequence",
+      "import torch",
+      "from torch import _prims, Tensor"
+    ],
+    "classes": [],
+    "functions": [
+      "make_prim",
+      "eager_force_stride",
+      "_low_memory_max_pool2d_with_offsets_aten",
+      "_low_memory_max_pool2d_offsets_to_indices_aten"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_439_618b1486ed53f66e_AI_Chariot_Legacy_666_1.0.0_20260508_inductor_prims.py.json"
+}

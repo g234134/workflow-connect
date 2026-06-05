@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 323,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ttx.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ttx.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17756,
+  "content_sha256": "0a97ceb445535c0bfbf573368e258aace1571c5b564b2027888802edbf6d59ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 479,
+    "non_empty_lines": 432,
+    "char_count": 17756,
+    "preview_lines": [
+      "\"\"\"\\",
+      "usage: ttx [options] inputfile1 [... inputfileN]",
+      "TTX -- From OpenType To XML And Back",
+      "If an input file is a TrueType or OpenType font file, it will be",
+      "decompiled to a TTX file (an XML-based text format).",
+      "If an input file is a TTX file, it will be compiled to whatever",
+      "format the data is in, a TrueType or OpenType/CFF font file.",
+      "A special input value of - means read from the standard input.",
+      "Output files are created so they are unique: an existing file is",
+      "never overwritten."
+    ],
+    "imports": [
+      "from fontTools.ttLib import OPTIMIZE_FONT_SPEED, TTFont, TTLibError",
+      "from fontTools.misc.macCreatorType import getMacCreatorAndType",
+      "from fontTools.unicode import setUnicodeData",
+      "from fontTools.misc.textTools import Tag, tostr",
+      "from fontTools.misc.timeTools import timestampSinceEpoch",
+      "from fontTools.misc.loggingTools import Timer",
+      "from fontTools.misc.cliTools import makeOutputFileName",
+      "import os",
+      "import sys",
+      "import getopt",
+      "import re",
+      "import logging",
+      "from fontTools import version"
+    ],
+    "classes": [
+      "Options"
+    ],
+    "functions": [
+      "ttList",
+      "ttDump",
+      "ttCompile",
+      "guessFileType",
+      "parseOptions",
+      "process",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_323_0a97ceb445535c0b_AI_Chariot_Legacy_666_1.0.0_20260508_ttx.py.json"
+}

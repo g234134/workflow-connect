@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\codegen\\cuda\\cuda_kernel.py",
+  "name": "cuda_kernel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11344,
+  "content_sha256": "690c42ec2fd8cf7c05aa8bcecfcb3f2076334d88b8a7c7f9ad5cf0532fc255ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 336,
+    "non_empty_lines": 274,
+    "char_count": 11344,
+    "preview_lines": [
+      "import logging",
+      "from typing import Callable, Dict, List, Optional, TYPE_CHECKING",
+      "from ... import ir",
+      "from ...autotune_process import CUDABenchmarkRequest",
+      "from ...ir import Buffer, CUDATemplateBuffer, IRNode, Layout, TensorBox",
+      "from ...select_algorithm import ChoiceCaller",
+      "from ...utils import sympy_product",
+      "from ...virtualized import V",
+      "from ..common import IndentedBuffer, Kernel, OpOverrides",
+      "from ..cpp import CppPrinter, DTYPE_TO_CPP"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Callable, Dict, List, Optional, TYPE_CHECKING",
+      "from ... import ir",
+      "from ...autotune_process import CUDABenchmarkRequest",
+      "from ...ir import Buffer, CUDATemplateBuffer, IRNode, Layout, TensorBox",
+      "from ...select_algorithm import ChoiceCaller",
+      "from ...utils import sympy_product",
+      "from ...virtualized import V",
+      "from ..common import IndentedBuffer, Kernel, OpOverrides",
+      "from ..cpp import CppPrinter, DTYPE_TO_CPP",
+      "from torch._inductor.codegen.cuda.cuda_template import CUDATemplate"
+    ],
+    "classes": [
+      "CUDAKernel",
+      "CUDATemplateKernel",
+      "CUDATemplateCaller"
+    ],
+    "functions": [
+      "_normalize_idx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_098_690c42ec2fd8cf7c_cuda_kernel.py.json"
+}

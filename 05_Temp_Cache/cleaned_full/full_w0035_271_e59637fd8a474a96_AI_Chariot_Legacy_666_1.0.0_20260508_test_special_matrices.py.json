@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 271,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_special_matrices.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_special_matrices.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25714,
+  "content_sha256": "e59637fd8a474a965d0783e739012a0ab2a4710107ba62c490da39fe87f3fec9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 640,
+    "non_empty_lines": 543,
+    "char_count": 25714,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy import arange, array, eye, copy, sqrt",
+      "from numpy.testing import (assert_equal, assert_array_equal,",
+      "                           assert_array_almost_equal, assert_allclose)",
+      "from pytest import raises as assert_raises",
+      "from scipy.fft import fft",
+      "from scipy.special import comb",
+      "from scipy.linalg import (toeplitz, hankel, circulant, hadamard, leslie, dft,",
+      "                          companion, kron, block_diag,"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy import arange, array, eye, copy, sqrt",
+      "from numpy.testing import (assert_equal, assert_array_equal,",
+      "from pytest import raises as assert_raises",
+      "from scipy.fft import fft",
+      "from scipy.special import comb",
+      "from scipy.linalg import (toeplitz, hankel, circulant, hadamard, leslie, dft,",
+      "from numpy.linalg import cond"
+    ],
+    "classes": [
+      "TestToeplitz",
+      "TestHankel",
+      "TestCirculant",
+      "TestHadamard",
+      "TestLeslie",
+      "TestCompanion",
+      "TestBlockDiag",
+      "TestKron",
+      "TestHelmert",
+      "TestHilbert",
+      "TestInvHilbert",
+      "TestPascal",
+      "TestConvolutionMatrix"
+    ],
+    "functions": [
+      "test_invpascal",
+      "test_dft",
+      "test_fiedler",
+      "test_fiedler_companion",
+      "test_batch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_271_e59637fd8a474a96_AI_Chariot_Legacy_666_1.0.0_20260508_test_special_matrices.py.json"
+}

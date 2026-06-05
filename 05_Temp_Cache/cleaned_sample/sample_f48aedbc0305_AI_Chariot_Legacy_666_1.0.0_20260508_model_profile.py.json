@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b2acafc815514942ab47ff963c67b987",
+  "generated_at": "2026-05-08T18:33:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_model_profile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_model_profile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4898,
+  "encoding": "utf-8-sig",
+  "sha256": "f48aedbc03059e4098a1a8267c1740954e88da8899120bab625b8dd9496eda98",
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 111,
+    "char_count": 4898,
+    "preview_lines": [
+      "\"\"\"Model profile types and utilities.\"\"\"",
+      "import logging",
+      "import warnings",
+      "from typing import get_type_hints",
+      "from pydantic import ConfigDict",
+      "from typing_extensions import TypedDict",
+      "logger = logging.getLogger(__name__)",
+      "class ModelProfile(TypedDict, total=False):",
+      "    \"\"\"Model profile.",
+      "    !!! warning \"Beta feature\""
+    ],
+    "imports": [
+      "import logging",
+      "import warnings",
+      "from typing import get_type_hints",
+      "from pydantic import ConfigDict",
+      "from typing_extensions import TypedDict"
+    ],
+    "classes": [
+      "ModelProfile"
+    ],
+    "functions": [
+      "_warn_unknown_profile_keys"
+    ]
+  },
+  "clean_status": "ok",
+  "warnings": [],
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_sample\\sample_f48aedbc0305_AI_Chariot_Legacy_666_1.0.0_20260508_model_profile.py.json"
+}

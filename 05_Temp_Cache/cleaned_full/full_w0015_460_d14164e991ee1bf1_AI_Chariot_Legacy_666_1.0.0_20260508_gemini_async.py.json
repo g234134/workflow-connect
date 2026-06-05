@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 460,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gemini_async.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gemini_async.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15108,
+  "content_sha256": "d14164e991ee1bf17b764c34dbc053c86c9b4e93ef20a48d7f0d3223f2dc88e3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 423,
+    "non_empty_lines": 364,
+    "char_count": 15108,
+    "preview_lines": [
+      "import os",
+      "import time",
+      "import uuid",
+      "from typing import Any, Dict, Optional",
+      "from posthog.ai.types import TokenUsage, StreamingEventData",
+      "from posthog.ai.utils import merge_system_prompt",
+      "try:",
+      "    from google import genai",
+      "except ImportError:",
+      "    raise ModuleNotFoundError("
+    ],
+    "imports": [
+      "import os",
+      "import time",
+      "import uuid",
+      "from typing import Any, Dict, Optional",
+      "from posthog.ai.types import TokenUsage, StreamingEventData",
+      "from posthog.ai.utils import merge_system_prompt",
+      "from google import genai",
+      "from posthog import setup",
+      "from posthog.ai.utils import (",
+      "from posthog.ai.gemini.gemini_converter import (",
+      "from posthog.ai.sanitization import sanitize_gemini",
+      "from posthog.client import Client as PostHogClient"
+    ],
+    "classes": [
+      "AsyncClient",
+      "AsyncModels"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_460_d14164e991ee1bf1_AI_Chariot_Legacy_666_1.0.0_20260508_gemini_async.py.json"
+}

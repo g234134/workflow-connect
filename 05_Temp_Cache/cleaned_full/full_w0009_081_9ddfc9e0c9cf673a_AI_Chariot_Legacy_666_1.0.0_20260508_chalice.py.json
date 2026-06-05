@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 81,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chalice.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chalice.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4663,
+  "content_sha256": "9ddfc9e0c9cf673a15747e0ce4757ffa58de4bc7dbc5eff90d798a266eb3a922",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 132,
+    "non_empty_lines": 111,
+    "char_count": 4663,
+    "preview_lines": [
+      "import sys",
+      "from functools import wraps",
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import Integration, DidNotEnable",
+      "from sentry_sdk.integrations.aws_lambda import _make_request_event_processor",
+      "from sentry_sdk.tracing import TransactionSource",
+      "from sentry_sdk.utils import (",
+      "    capture_internal_exceptions,",
+      "    event_from_exception,",
+      "    parse_version,"
+    ],
+    "imports": [
+      "import sys",
+      "from functools import wraps",
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import Integration, DidNotEnable",
+      "from sentry_sdk.integrations.aws_lambda import _make_request_event_processor",
+      "from sentry_sdk.tracing import TransactionSource",
+      "from sentry_sdk.utils import (",
+      "import chalice  # type: ignore",
+      "from chalice import __version__ as CHALICE_VERSION",
+      "from chalice import Chalice, ChaliceViewError",
+      "from chalice.app import EventSourceHandler as ChaliceEventSourceHandler  # type: ignore",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any",
+      "from typing import Dict",
+      "from typing import TypeVar",
+      "from typing import Callable",
+      "from chalice.app import RestAPIEventHandler"
+    ],
+    "classes": [
+      "EventSourceHandler",
+      "ChaliceIntegration"
+    ],
+    "functions": [
+      "_get_view_function_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_081_9ddfc9e0c9cf673a_AI_Chariot_Legacy_666_1.0.0_20260508_chalice.py.json"
+}

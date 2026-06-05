@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 121,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__backend_pdf_ps.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__backend_pdf_ps.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5968,
+  "content_sha256": "3349234293250680229ba3ddc3cbb716a508a17cf853046fe264b35cf24f238e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 189,
+    "non_empty_lines": 156,
+    "char_count": 5968,
+    "preview_lines": [
+      "\"\"\"",
+      "Common functionality between the PDF and PS backends.",
+      "\"\"\"",
+      "from io import BytesIO",
+      "import functools",
+      "import logging",
+      "from fontTools import subset",
+      "import matplotlib as mpl",
+      "from .. import font_manager, ft2font",
+      "from .._afm import AFM"
+    ],
+    "imports": [
+      "from io import BytesIO",
+      "import functools",
+      "import logging",
+      "from fontTools import subset",
+      "import matplotlib as mpl",
+      "from .. import font_manager, ft2font",
+      "from .._afm import AFM",
+      "from ..backend_bases import RendererBase"
+    ],
+    "classes": [
+      "CharacterTracker",
+      "RendererPDFPSBase"
+    ],
+    "functions": [
+      "_cached_get_afm_from_fname",
+      "get_glyphs_subset",
+      "font_as_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_121_3349234293250680_AI_Chariot_Legacy_666_1.0.0_20260508__backend_pdf_ps.py.json"
+}

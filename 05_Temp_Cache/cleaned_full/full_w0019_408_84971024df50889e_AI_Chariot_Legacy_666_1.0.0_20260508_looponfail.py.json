@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 408,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_looponfail.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_looponfail.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10143,
+  "content_sha256": "84971024df50889ecfd562daaf5f13dd64941f901f138c91611b9fa95bc65da4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 299,
+    "non_empty_lines": 254,
+    "char_count": 10143,
+    "preview_lines": [
+      "\"\"\"",
+      "Implement -f aka looponfailing for pytest.",
+      "NOTE that we try to avoid loading and depending on application modules",
+      "within the controlling process (the one that starts repeatedly test",
+      "processes) otherwise changes to source code can crash",
+      "the controlling process which should best never happen.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import os"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import os",
+      "from pathlib import Path",
+      "import sys",
+      "import time",
+      "from typing import Any",
+      "from _pytest._io import TerminalWriter",
+      "import execnet",
+      "import pytest",
+      "from xdist._path import visit_path",
+      "import os",
+      "import sys",
+      "from pytest import Config",
+      "from xdist.looponfail import WorkerFailSession"
+    ],
+    "classes": [
+      "RemoteControl",
+      "WorkerFailSession",
+      "StatRecorder"
+    ],
+    "functions": [
+      "pytest_addoption",
+      "pytest_cmdline_main",
+      "looponfail_main",
+      "repr_pytest_looponfailinfo",
+      "init_worker_session"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_408_84971024df50889e_AI_Chariot_Legacy_666_1.0.0_20260508_looponfail.py.json"
+}

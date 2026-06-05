@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_normalize_url.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_normalize_url.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2568,
+  "content_sha256": "6af3979cb77dc70e63535ab93cb7ed8c033da6f1b1f25f500c4926652cab3208",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 59,
+    "char_count": 2568,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable",
+      "from contextlib import suppress",
+      "import re",
+      "from urllib.parse import quote, unquote, urlparse, urlunparse  # noqa: F401",
+      "import mdurl",
+      "from .. import _punycode",
+      "RECODE_HOSTNAME_FOR = (\"http:\", \"https:\", \"mailto:\")",
+      "def normalizeLink(url: str) -> str:",
+      "    \"\"\"Normalize destination URLs in links"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable",
+      "from contextlib import suppress",
+      "import re",
+      "from urllib.parse import quote, unquote, urlparse, urlunparse  # noqa: F401",
+      "import mdurl",
+      "from .. import _punycode"
+    ],
+    "classes": [],
+    "functions": [
+      "normalizeLink",
+      "normalizeLinkText",
+      "validateLink"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_448_6af3979cb77dc70e_AI_Chariot_Legacy_666_1.0.0_20260508_normalize_url.py.json"
+}

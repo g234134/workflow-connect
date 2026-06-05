@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gql.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gql.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5003,
+  "content_sha256": "a0bb2c3a61d84387b4390d484deafc4f29efc8b5ed0d4a0cf57dbdf88b150242",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 168,
+    "non_empty_lines": 133,
+    "char_count": 5003,
+    "preview_lines": [
+      "import sentry_sdk",
+      "from sentry_sdk.utils import (",
+      "    event_from_exception,",
+      "    ensure_integration_enabled,",
+      "    parse_version,",
+      ")",
+      "from sentry_sdk.integrations import _check_minimum_version, DidNotEnable, Integration",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "try:",
+      "    import gql  # type: ignore[import-not-found]"
+    ],
+    "imports": [
+      "import sentry_sdk",
+      "from sentry_sdk.utils import (",
+      "from sentry_sdk.integrations import _check_minimum_version, DidNotEnable, Integration",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "import gql  # type: ignore[import-not-found]",
+      "from graphql import (",
+      "from gql.transport import Transport, AsyncTransport  # type: ignore[import-not-found]",
+      "from gql.transport.exceptions import TransportQueryError  # type: ignore[import-not-found]",
+      "from gql import GraphQLRequest",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any, Dict, Tuple, Union",
+      "from sentry_sdk._types import Event, EventProcessor"
+    ],
+    "classes": [
+      "GQLIntegration"
+    ],
+    "functions": [
+      "_data_from_document",
+      "_transport_method",
+      "_request_info_from_transport",
+      "_patch_execute",
+      "_make_gql_event_processor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_197_a0bb2c3a61d84387_AI_Chariot_Legacy_666_1.0.0_20260508_gql.py.json"
+}

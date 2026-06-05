@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:47:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\fsspec\\caching.py",
+  "name": "caching.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34023,
+  "content_sha256": "f08278ae07169efabf6ff0ea95c30627e2b9f5de036f93bd1b3f0f9004c0807a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1004,
+    "non_empty_lines": 851,
+    "char_count": 34023,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import collections",
+      "import functools",
+      "import logging",
+      "import math",
+      "import os",
+      "import threading",
+      "from collections import OrderedDict",
+      "from collections.abc import Callable",
+      "from concurrent.futures import Future, ThreadPoolExecutor"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import collections",
+      "import functools",
+      "import logging",
+      "import math",
+      "import os",
+      "import threading",
+      "from collections import OrderedDict",
+      "from collections.abc import Callable",
+      "from concurrent.futures import Future, ThreadPoolExecutor",
+      "from itertools import groupby",
+      "from operator import itemgetter",
+      "from typing import TYPE_CHECKING, Any, ClassVar, Generic, NamedTuple, TypeVar",
+      "import mmap",
+      "from typing_extensions import ParamSpec",
+      "import mmap",
+      "import tempfile"
+    ],
+    "classes": [
+      "BaseCache",
+      "MMapCache",
+      "ReadAheadCache",
+      "FirstChunkCache",
+      "BlockCache",
+      "BytesCache",
+      "AllBytes",
+      "KnownPartsOfAFile",
+      "UpdatableLRU",
+      "BackgroundBlockCache"
+    ],
+    "functions": [
+      "register_cache"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_159_f08278ae07169efa_caching.py.json"
+}

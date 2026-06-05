@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 369,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vector_store_files.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vector_store_files.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2479,
+  "content_sha256": "bf671fb63ea2433f0cb248985cb30af1a13f0bee0768568ed2f2c1ddaf88dfc8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 61,
+    "char_count": 2479,
+    "preview_lines": [
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Literal, Optional, Tuple, Union",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "class VectorStoreFileStatus(str, Enum):",
+      "    IN_PROGRESS = \"in_progress\"",
+      "    COMPLETED = \"completed\"",
+      "    FAILED = \"failed\"",
+      "    CANCELLED = \"cancelled\"",
+      "class VectorStoreFileChunkingStrategyType(str, Enum):"
+    ],
+    "imports": [
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Literal, Optional, Tuple, Union",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict"
+    ],
+    "classes": [
+      "VectorStoreFileStatus",
+      "VectorStoreFileChunkingStrategyType",
+      "VectorStoreFileStaticChunkingConfig",
+      "VectorStoreFileChunkingStrategy",
+      "VectorStoreFileObject",
+      "VectorStoreFileCreateRequest",
+      "VectorStoreFileUpdateRequest",
+      "VectorStoreFileListQueryParams",
+      "VectorStoreFileListResponse",
+      "VectorStoreFileDeleteResponse",
+      "VectorStoreFileContentTextPart",
+      "VectorStoreFileContentResponse",
+      "VectorStoreFileAuthCredentials"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_369_bf671fb63ea2433f_AI_Chariot_Legacy_666_1.0.0_20260508_vector_store_files.py.json"
+}

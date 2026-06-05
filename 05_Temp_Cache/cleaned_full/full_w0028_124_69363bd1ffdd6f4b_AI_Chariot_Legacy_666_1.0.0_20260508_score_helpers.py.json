@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_score_helpers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_score_helpers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4204,
+  "content_sha256": "69363bd1ffdd6f4b4ac9d150be2e0f6db07d86b2aed3c21a747f66029018cee4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 122,
+    "char_count": 4204,
+    "preview_lines": [
+      "import math",
+      "from typing import Any, Dict, List, Optional, TypedDict",
+      "from literalai.api.helpers import gql",
+      "from literalai.my_types import PaginatedResponse",
+      "from literalai.observability.filter import scores_filters, scores_order_by",
+      "from literalai.observability.step import Score, ScoreDict, ScoreType",
+      "def get_scores_helper(",
+      "    first: Optional[int] = None,",
+      "    after: Optional[str] = None,",
+      "    before: Optional[str] = None,"
+    ],
+    "imports": [
+      "import math",
+      "from typing import Any, Dict, List, Optional, TypedDict",
+      "from literalai.api.helpers import gql",
+      "from literalai.my_types import PaginatedResponse",
+      "from literalai.observability.filter import scores_filters, scores_order_by",
+      "from literalai.observability.step import Score, ScoreDict, ScoreType"
+    ],
+    "classes": [
+      "ScoreUpdate"
+    ],
+    "functions": [
+      "get_scores_helper",
+      "create_score_helper",
+      "create_scores_fields_builder",
+      "create_scores_args_builder",
+      "create_scores_query_builder",
+      "update_score_helper",
+      "delete_score_helper",
+      "check_scores_finite"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_124_69363bd1ffdd6f4b_AI_Chariot_Legacy_666_1.0.0_20260508_score_helpers.py.json"
+}

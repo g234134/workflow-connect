@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 13,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__unix_pipes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__unix_pipes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8236,
+  "content_sha256": "1358e2985ca285c15b47767924f8853d8101be7762b7c7b14d500437a6130282",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 197,
+    "non_empty_lines": 169,
+    "char_count": 8234,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import errno",
+      "import os",
+      "import sys",
+      "from typing import TYPE_CHECKING, Final as FinalType",
+      "import trio",
+      "from ._abc import Stream",
+      "from ._util import ConflictDetector, final",
+      "assert not TYPE_CHECKING or sys.platform != \"win32\"",
+      "# XX TODO: is this a good number? who knows... it does match the default Linux"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import errno",
+      "import os",
+      "import sys",
+      "from typing import TYPE_CHECKING, Final as FinalType",
+      "import trio",
+      "from ._abc import Stream",
+      "from ._util import ConflictDetector, final",
+      "from standard input, but it is only safe to do so with heavy caveats: your"
+    ],
+    "classes": [
+      "_FdHolder",
+      "FdStream"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_013_1358e2985ca285c1_AI_Chariot_Legacy_666_1.0.0_20260508__unix_pipes.py.json"
+}

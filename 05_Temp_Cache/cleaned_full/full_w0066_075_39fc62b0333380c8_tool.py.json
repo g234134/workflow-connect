@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 75,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\messages\\tool.py",
+  "name": "tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13647,
+  "content_sha256": "39fc62b0333380c8b6b4319c76242c1ee261c0f72b6b812c8bfa5e03fd808654",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 416,
+    "non_empty_lines": 329,
+    "char_count": 13644,
+    "preview_lines": [
+      "\"\"\"Messages for tools.\"\"\"",
+      "import json",
+      "from typing import Any, Literal, cast, overload",
+      "from uuid import UUID",
+      "from pydantic import Field, model_validator",
+      "from typing_extensions import NotRequired, TypedDict, override",
+      "from langchain_core.messages import content as types",
+      "from langchain_core.messages.base import BaseMessage, BaseMessageChunk, merge_content",
+      "from langchain_core.messages.content import InvalidToolCall",
+      "from langchain_core.utils._merge import merge_dicts, merge_obj"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Any, Literal, cast, overload",
+      "from uuid import UUID",
+      "from pydantic import Field, model_validator",
+      "from typing_extensions import NotRequired, TypedDict, override",
+      "from langchain_core.messages import content as types",
+      "from langchain_core.messages.base import BaseMessage, BaseMessageChunk, merge_content",
+      "from langchain_core.messages.content import InvalidToolCall",
+      "from langchain_core.utils._merge import merge_dicts, merge_obj",
+      "from langchain_core.messages import ToolMessage",
+      "from langchain_core.messages import ToolMessage"
+    ],
+    "classes": [
+      "ToolOutputMixin",
+      "ToolMessage",
+      "ToolMessageChunk",
+      "ToolCall",
+      "ToolCallChunk"
+    ],
+    "functions": [
+      "tool_call",
+      "tool_call_chunk",
+      "invalid_tool_call",
+      "default_tool_parser",
+      "default_tool_chunk_parser",
+      "_merge_status"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_075_39fc62b0333380c8_tool.py.json"
+}

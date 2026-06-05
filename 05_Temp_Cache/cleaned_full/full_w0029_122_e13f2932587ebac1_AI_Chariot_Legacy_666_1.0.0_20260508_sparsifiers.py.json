@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sparsifiers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sparsifiers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10048,
+  "content_sha256": "e13f2932587ebac107036fab64587e0a665b058f5d7172078e8a91fa8276852c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 296,
+    "non_empty_lines": 237,
+    "char_count": 10048,
+    "preview_lines": [
+      "\"\"\"Functions for computing sparsifiers of graphs.\"\"\"",
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for, py_random_state",
+      "__all__ = [\"spanner\"]",
+      "@not_implemented_for(\"directed\")",
+      "@not_implemented_for(\"multigraph\")",
+      "@py_random_state(3)",
+      "@nx._dispatchable(edge_attrs=\"weight\", returns_graph=True)",
+      "def spanner(G, stretch, weight=None, seed=None):"
+    ],
+    "imports": [
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for, py_random_state",
+      "from the paper."
+    ],
+    "classes": [],
+    "functions": [
+      "spanner",
+      "_setup_residual_graph",
+      "_lightest_edge_dicts",
+      "_add_edge_to_spanner"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_122_e13f2932587ebac1_AI_Chariot_Legacy_666_1.0.0_20260508_sparsifiers.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_wiener.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_wiener.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3209,
+  "content_sha256": "93d95def074fab99274ba723a348636bc6962fe71dc582864690d4d33ddcbcd2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 89,
+    "char_count": 3209,
+    "preview_lines": [
+      "import networkx as nx",
+      "def test_wiener_index_of_disconnected_graph():",
+      "    assert nx.wiener_index(nx.empty_graph(2)) == float(\"inf\")",
+      "def test_wiener_index_of_directed_graph():",
+      "    G = nx.complete_graph(3)",
+      "    H = nx.DiGraph(G)",
+      "    assert (2 * nx.wiener_index(G)) == nx.wiener_index(H)",
+      "def test_wiener_index_of_complete_graph():",
+      "    n = 10",
+      "    G = nx.complete_graph(n)"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_wiener_index_of_disconnected_graph",
+      "test_wiener_index_of_directed_graph",
+      "test_wiener_index_of_complete_graph",
+      "test_wiener_index_of_path_graph",
+      "test_schultz_and_gutman_index_of_disconnected_graph",
+      "test_schultz_and_gutman_index_of_complete_bipartite_graph_1",
+      "test_schultz_and_gutman_index_of_complete_bipartite_graph_2",
+      "test_schultz_and_gutman_index_of_complete_graph",
+      "test_schultz_and_gutman_index_of_odd_cycle_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_168_93d95def074fab99_AI_Chariot_Legacy_666_1.0.0_20260508_test_wiener.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\profiler\\unwind\\lexer.h",
+  "name": "lexer.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3165,
+  "content_sha256": "11eb58b3ecfae2d756e248b988b6ac2485e46b408424cafd9ee488e4f1ee79c9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 118,
+    "char_count": 3165,
+    "preview_lines": [
+      "#pragma once",
+      "#include <stdint.h>",
+      "#include <string.h>",
+      "#include <torch/csrc/profiler/unwind/dwarf_enums.h>",
+      "#include <torch/csrc/profiler/unwind/unwind_error.h>",
+      "struct Lexer {",
+      "  Lexer(void* data, void* base = nullptr)",
+      "      : next_((const char*)data), base_((int64_t)base) {}",
+      "  template <typename T>",
+      "  T read() {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_114_11eb58b3ecfae2d7_lexer.h.json"
+}

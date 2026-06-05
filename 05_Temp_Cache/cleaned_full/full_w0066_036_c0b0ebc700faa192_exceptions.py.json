@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\exceptions.py",
+  "name": "exceptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3959,
+  "content_sha256": "c0b0ebc700faa192d3a7990b6af30de0894cd1e9e905c62d42f044f82b180f3c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 85,
+    "char_count": 3956,
+    "preview_lines": [
+      "\"\"\"Custom **exceptions** for LangChain.\"\"\"",
+      "from enum import Enum",
+      "from typing import Any",
+      "class LangChainException(Exception):  # noqa: N818",
+      "    \"\"\"General LangChain exception.\"\"\"",
+      "class TracerException(LangChainException):",
+      "    \"\"\"Base class for exceptions in tracers module.\"\"\"",
+      "class OutputParserException(ValueError, LangChainException):  # noqa: N818",
+      "    \"\"\"Exception that output parsers should raise to signify a parsing error.",
+      "    This exists to differentiate parsing errors from other code or execution errors"
+    ],
+    "imports": [
+      "from enum import Enum",
+      "from typing import Any"
+    ],
+    "classes": [
+      "LangChainException",
+      "TracerException",
+      "OutputParserException",
+      "ContextOverflowError",
+      "ErrorCode"
+    ],
+    "functions": [
+      "create_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_036_c0b0ebc700faa192_exceptions.py.json"
+}

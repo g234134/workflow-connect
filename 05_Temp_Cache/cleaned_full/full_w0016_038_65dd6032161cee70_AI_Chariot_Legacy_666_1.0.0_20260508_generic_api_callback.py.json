@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 38,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generic_api_callback.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generic_api_callback.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15743,
+  "content_sha256": "65dd6032161cee70d2feab42527b21fe100b562657a2867b51d5e0d709a09a0b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 424,
+    "non_empty_lines": 355,
+    "char_count": 15743,
+    "preview_lines": [
+      "\"\"\"",
+      "Callback to log events to a Generic API Endpoint",
+      "- Creates a StandardLoggingPayload",
+      "- Adds to batch queue",
+      "- Flushes based on CustomBatchLogger settings",
+      "\"\"\"",
+      "import asyncio",
+      "import json",
+      "import os",
+      "import re"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "import os",
+      "import re",
+      "import traceback",
+      "from typing import Dict, List, Literal, Optional, Union",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm._uuid import uuid",
+      "from litellm.integrations.custom_batch_logger import CustomBatchLogger",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.utils import StandardLoggingPayload"
+    ],
+    "classes": [
+      "GenericAPILogger"
+    ],
+    "functions": [
+      "load_compatible_callbacks",
+      "is_callback_compatible",
+      "get_callback_config",
+      "substitute_env_variables"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_038_65dd6032161cee70_AI_Chariot_Legacy_666_1.0.0_20260508_generic_api_callback.py.json"
+}

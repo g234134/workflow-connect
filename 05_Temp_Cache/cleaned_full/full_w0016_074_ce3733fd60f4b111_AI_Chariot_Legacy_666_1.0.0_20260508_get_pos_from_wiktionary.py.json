@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_get_pos_from_wiktionary.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_get_pos_from_wiktionary.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2151,
+  "content_sha256": "ce3733fd60f4b11159f3a75c759ccae8e359a60e0225590a642346c992b63c04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 56,
+    "char_count": 2041,
+    "preview_lines": [
+      "def get_pos_from_wiktionary():",
+      "    import re",
+      "    from gensim.corpora.wikicorpus import extract_pages",
+      "    regex = re.compile(r\"==={{(\\w+)\\|el}}===\")",
+      "    regex2 = re.compile(r\"==={{(\\w+ \\w+)\\|el}}===\")",
+      "    # get words based on the Wiktionary dump",
+      "    # check only for specific parts",
+      "    # ==={{κύριο όνομα|el}}===",
+      "    expected_parts = [",
+      "        \"μετοχή\","
+    ],
+    "imports": [
+      "import re",
+      "from gensim.corpora.wikicorpus import extract_pages"
+    ],
+    "classes": [],
+    "functions": [
+      "get_pos_from_wiktionary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_074_ce3733fd60f4b111_AI_Chariot_Legacy_666_1.0.0_20260508_get_pos_from_wiktionary.py.json"
+}

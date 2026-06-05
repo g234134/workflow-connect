@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lemmatizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lemmatizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4067,
+  "content_sha256": "762f2fdbe7b5fe0109a1436375f4a682291da7cafa646d556dd21cb60e4964d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 93,
+    "char_count": 3785,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.tokens import Doc",
+      "pytestmark = pytest.mark.filterwarnings(\"ignore::DeprecationWarning\")",
+      "def test_ru_doc_lemmatization(ru_lemmatizer):",
+      "    words = [\"мама\", \"мыла\", \"раму\"]",
+      "    pos = [\"NOUN\", \"VERB\", \"NOUN\"]",
+      "    morphs = [",
+      "        \"Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing\",",
+      "        \"Aspect=Imp|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act\",",
+      "        \"Animacy=Anim|Case=Acc|Gender=Fem|Number=Sing\","
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.tokens import Doc"
+    ],
+    "classes": [],
+    "functions": [
+      "test_ru_doc_lemmatization",
+      "test_ru_lemmatizer_noun_lemmas",
+      "test_ru_lemmatizer_works_with_different_pos_homonyms",
+      "test_ru_lemmatizer_works_with_noun_homonyms",
+      "test_ru_lemmatizer_punct",
+      "test_ru_doc_lookup_lemmatization",
+      "test_ru_lookup_lemmatizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_253_762f2fdbe7b5fe01_AI_Chariot_Legacy_666_1.0.0_20260508_test_lemmatizer.py.json"
+}

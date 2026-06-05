@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_openapi_schema_compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_openapi_schema_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4288,
+  "content_sha256": "be7fa1da603c7a5990252d7f733492b87581e8fa07d34bc24e4f34b048c75d81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 106,
+    "non_empty_lines": 89,
+    "char_count": 4288,
+    "preview_lines": [
+      "\"\"\"",
+      "Utility module for handling OpenAPI schema generation compatibility with FastAPI 0.120+.",
+      "FastAPI 0.120+ has stricter schema generation that fails on certain types like openai.Timeout.",
+      "This module provides a compatibility layer to handle these cases gracefully.",
+      "\"\"\"",
+      "from typing import Any, Dict",
+      "from litellm._logging import verbose_proxy_logger",
+      "def get_openapi_schema_with_compat(",
+      "    get_openapi_func,",
+      "    title: str,"
+    ],
+    "imports": [
+      "from typing import Any, Dict",
+      "from litellm._logging import verbose_proxy_logger",
+      "from pydantic._internal._generate_schema import GenerateSchema",
+      "from pydantic_core import core_schema"
+    ],
+    "classes": [],
+    "functions": [
+      "get_openapi_schema_with_compat"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_181_be7fa1da603c7a59_AI_Chariot_Legacy_666_1.0.0_20260508_openapi_schema_compat.py.json"
+}

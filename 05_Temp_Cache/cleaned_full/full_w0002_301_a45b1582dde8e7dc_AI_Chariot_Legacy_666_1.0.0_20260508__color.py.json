@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 301,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__color.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__color.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17366,
+  "content_sha256": "a45b1582dde8e7dcbca77fc6c1e54d81e951db97169ef5c0b534b222fad902c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 376,
+    "non_empty_lines": 286,
+    "char_count": 17366,
+    "preview_lines": [
+      "import collections.abc",
+      "from typing import Any, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torchvision import transforms as _transforms",
+      "from torchvision.transforms.v2 import functional as F, Transform",
+      "from ._transform import _RandomApplyTransform",
+      "from ._utils import query_chw",
+      "class Grayscale(Transform):",
+      "    \"\"\"Convert images or videos to grayscale.",
+      "    If the input is a :class:`torch.Tensor`, it is expected"
+    ],
+    "imports": [
+      "import collections.abc",
+      "from typing import Any, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torchvision import transforms as _transforms",
+      "from torchvision.transforms.v2 import functional as F, Transform",
+      "from ._transform import _RandomApplyTransform",
+      "from ._utils import query_chw"
+    ],
+    "classes": [
+      "Grayscale",
+      "RandomGrayscale",
+      "RGB",
+      "ColorJitter",
+      "RandomChannelPermutation",
+      "RandomPhotometricDistort",
+      "RandomEqualize",
+      "RandomInvert",
+      "RandomPosterize",
+      "RandomSolarize",
+      "RandomAutocontrast",
+      "RandomAdjustSharpness"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_301_a45b1582dde8e7dc_AI_Chariot_Legacy_666_1.0.0_20260508__color.py.json"
+}

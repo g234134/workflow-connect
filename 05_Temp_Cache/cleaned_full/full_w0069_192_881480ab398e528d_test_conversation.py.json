@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\test_conversation.py",
+  "name": "test_conversation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6705,
+  "content_sha256": "881480ab398e528dcc7fc0126fb58a8e3a17b2531b041e6198aaf1f01ff27a67",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 171,
+    "non_empty_lines": 143,
+    "char_count": 6702,
+    "preview_lines": [
+      "\"\"\"Test conversation chain and memory.\"\"\"",
+      "import re",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models import LLM",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "from typing_extensions import override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.conversation.base import ConversationChain"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models import LLM",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "from typing_extensions import override",
+      "from langchain_classic.base_memory import BaseMemory",
+      "from langchain_classic.chains.conversation.base import ConversationChain",
+      "from langchain_classic.memory.buffer import ConversationBufferMemory",
+      "from langchain_classic.memory.buffer_window import ConversationBufferWindowMemory",
+      "from langchain_classic.memory.summary import ConversationSummaryMemory",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM"
+    ],
+    "classes": [
+      "DummyLLM"
+    ],
+    "functions": [
+      "test_memory_ai_prefix",
+      "test_memory_human_prefix",
+      "test_conversation_chain_errors_bad_prompt",
+      "test_conversation_chain_errors_bad_variable",
+      "test_conversation_memory",
+      "test_clearing_conversation_memory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_192_881480ab398e528d_test_conversation.py.json"
+}

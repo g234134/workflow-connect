@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\tool_calling_agent\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4239,
+  "content_sha256": "6d6ecbd5f5603b9c3b04dabb744cde2e21de385f2d2ada0a9fede7e7e0e833a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 99,
+    "char_count": 4236,
+    "preview_lines": [
+      "from collections.abc import Callable, Sequence",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.prompts.chat import ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_core.tools import BaseTool",
+      "from langchain_classic.agents.format_scratchpad.tools import (",
+      "    format_to_tool_messages,",
+      ")"
+    ],
+    "imports": [
+      "from collections.abc import Callable, Sequence",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.prompts.chat import ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnablePassthrough",
+      "from langchain_core.tools import BaseTool",
+      "from langchain_classic.agents.format_scratchpad.tools import (",
+      "from langchain_classic.agents.output_parsers.tools import ToolsAgentOutputParser",
+      "from langchain_classic.agents import (",
+      "from langchain_anthropic import ChatAnthropic",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.messages import AIMessage, HumanMessage"
+    ],
+    "classes": [],
+    "functions": [
+      "create_tool_calling_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_468_6d6ecbd5f5603b9c_base.py.json"
+}

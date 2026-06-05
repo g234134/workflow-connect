@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:47:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\polynomial\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6913,
+  "content_sha256": "ca738713531cf5e05930d96ba1a13d99e216ef0664be8edba468c58ed0c1fc05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 187,
+    "non_empty_lines": 155,
+    "char_count": 6901,
+    "preview_lines": [
+      "\"\"\"",
+      "A sub-package for efficiently dealing with polynomials.",
+      "Within the documentation for this sub-package, a \"finite power series,\"",
+      "i.e., a polynomial (also referred to simply as a \"series\") is represented",
+      "by a 1-D numpy array of the polynomial's coefficients, ordered from lowest",
+      "order term to highest.  For example, array([1,2,3]) represents",
+      "``P_0 + 2*P_1 + 3*P_2``, where P_n is the n-th order basis polynomial",
+      "applicable to the specific module in question, e.g., `polynomial` (which",
+      "\"wraps\" the \"standard\" basis) or `chebyshev`.  For optimal performance,",
+      "all operations on polynomials, including evaluation at an argument, are"
+    ],
+    "imports": [
+      "from .chebyshev import Chebyshev",
+      "from .hermite import Hermite",
+      "from .hermite_e import HermiteE",
+      "from .laguerre import Laguerre",
+      "from .legendre import Legendre",
+      "from .polynomial import Polynomial",
+      "from ._polybase import ABCPolyBase",
+      "from numpy._pytesttester import PytestTester"
+    ],
+    "classes": [],
+    "functions": [
+      "set_default_printstyle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_357_ca738713531cf5e0___init__.py.json"
+}

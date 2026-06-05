@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_patterns.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_patterns.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5485,
+  "content_sha256": "b6a86b721f0e21b801464f17723c5dd4314fb9594c5f3f80d33f57a636319565",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 184,
+    "non_empty_lines": 140,
+    "char_count": 5485,
+    "preview_lines": [
+      "\"\"\"",
+      "Prebuilt regex patterns for content filtering.",
+      "This module loads predefined regex patterns from patterns.json for detecting",
+      "sensitive information like SSNs, credit cards, API keys, etc.",
+      "\"\"\"",
+      "import json",
+      "import os",
+      "import re",
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Pattern"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import re",
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Pattern",
+      "import yaml"
+    ],
+    "classes": [
+      "PrebuiltPatternName"
+    ],
+    "functions": [
+      "_load_patterns_from_json",
+      "get_compiled_pattern",
+      "get_all_pattern_names",
+      "get_pattern_metadata",
+      "get_available_content_categories"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_003_b6a86b721f0e21b8_AI_Chariot_Legacy_666_1.0.0_20260508_patterns.py.json"
+}

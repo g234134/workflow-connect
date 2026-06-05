@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\swa_utils.pyi",
+  "name": "swa_utils.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 862,
+  "content_sha256": "57427fcf597fc6c80f1e7ef05e4732b01aa412047e531ab815bb31d47b46921c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 28,
+    "char_count": 862,
+    "preview_lines": [
+      "from typing import Any, Callable, Iterable, Union",
+      "from torch import device, Tensor",
+      "from torch.nn.modules import Module",
+      "from .lr_scheduler import _LRScheduler",
+      "from .optimizer import Optimizer",
+      "class AveragedModel(Module):",
+      "    def __init__(",
+      "        self,",
+      "        model: Module,",
+      "        device: Union[int, device] = ...,"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Iterable, Union",
+      "from torch import device, Tensor",
+      "from torch.nn.modules import Module",
+      "from .lr_scheduler import _LRScheduler",
+      "from .optimizer import Optimizer"
+    ],
+    "classes": [
+      "AveragedModel",
+      "SWALR"
+    ],
+    "functions": [
+      "update_bn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_468_57427fcf597fc6c8_swa_utils.pyi.json"
+}

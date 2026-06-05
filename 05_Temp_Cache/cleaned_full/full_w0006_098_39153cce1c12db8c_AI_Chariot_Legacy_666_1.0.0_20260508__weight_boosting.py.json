@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__weight_boosting.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__weight_boosting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40833,
+  "content_sha256": "39153cce1c12db8c40f09159de2f3910f5fce1a8a1196c77baad5e73dd48347d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1129,
+    "non_empty_lines": 894,
+    "char_count": 40833,
+    "preview_lines": [
+      "\"\"\"Weight Boosting.",
+      "This module contains weight boosting estimators for both classification and",
+      "regression.",
+      "The module structure is the following:",
+      "- The `BaseWeightBoosting` base class implements a common ``fit`` method",
+      "  for all the estimators in the module. Regression and classification",
+      "  only differ from each other in the loss function that is optimized.",
+      "- :class:`~sklearn.ensemble.AdaBoostClassifier` implements adaptive boosting",
+      "  (AdaBoost-SAMME) for classification problems.",
+      "- :class:`~sklearn.ensemble.AdaBoostRegressor` implements adaptive boosting"
+    ],
+    "imports": [
+      "import warnings",
+      "from abc import ABCMeta, abstractmethod",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from sklearn.base import (",
+      "from sklearn.ensemble._base import BaseEnsemble",
+      "from sklearn.metrics import accuracy_score, r2_score",
+      "from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor",
+      "from sklearn.utils import _safe_indexing, check_random_state",
+      "from sklearn.utils._param_validation import HasMethods, Interval, StrOptions",
+      "from sklearn.utils.extmath import softmax",
+      "from sklearn.utils.metadata_routing import (",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "BaseWeightBoosting",
+      "AdaBoostClassifier",
+      "AdaBoostRegressor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_098_39153cce1c12db8c_AI_Chariot_Legacy_666_1.0.0_20260508__weight_boosting.py.json"
+}

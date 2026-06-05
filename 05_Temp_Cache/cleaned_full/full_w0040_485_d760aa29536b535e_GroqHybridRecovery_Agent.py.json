@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 485,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\GroqHybridRecovery_Agent.py",
+  "name": "GroqHybridRecovery_Agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13038,
+  "content_sha256": "d760aa29536b535e57c3085a05333a475bfbcbcc222bcd1b66bd6152c9390f3e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 357,
+    "non_empty_lines": 318,
+    "char_count": 12841,
+    "preview_lines": [
+      "# GroqHybridRecovery_Agent.py — 混合雲·批量修復（本地 + Groq）",
+      "# 掃描 06_Exports_Output/Archive/format_error（含 unrecoverable）內非空 .json；",
+      "# 本地解碼／啟發式 → 失敗則 Groq 語義校準；成功者寫入 C2_核心知識庫。",
+      "# 選項 A：格式問題僅 json_format_warning，不寫 Failed（避免門下省誤封駁）。",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import re",
+      "import ssl",
+      "import sys"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import re",
+      "import ssl",
+      "import sys",
+      "import time",
+      "import urllib.error",
+      "import urllib.request",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Tuple",
+      "from Base_Agent import AgentStatus, Base_Agent  # type: ignore",
+      "from gov_paths import get_secret, get_tang_gov_root, resolve_agent_output_path  # type: ignore",
+      "from Recovery_Agent import ENCODING_FALLBACKS  # type: ignore",
+      "import json5  # type: ignore"
+    ],
+    "classes": [
+      "GroqHybridRecovery_Agent"
+    ],
+    "functions": [
+      "_ssl_ctx",
+      "_http_json",
+      "_decode_raw",
+      "_try_parse_json_text",
+      "_try_kit_line_json",
+      "_extract_json_from_llm",
+      "_try_json5"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_485_d760aa29536b535e_GroqHybridRecovery_Agent.py.json"
+}

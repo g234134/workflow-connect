@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 277,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_group_norm_expanded_weights.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_group_norm_expanded_weights.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3560,
+  "content_sha256": "f961eb8f4eba3fb7a2397100c83fb3e03fadf37dcc0741c2c213ea22ed2aaa21",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 104,
+    "non_empty_lines": 95,
+    "char_count": 3560,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import operator",
+      "from functools import reduce",
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from .expanded_weights_impl import ExpandedWeight, implements_per_sample_grads",
+      "from .expanded_weights_utils import (",
+      "    forward_helper,",
+      "    set_grad_sample_if_exists,"
+    ],
+    "imports": [
+      "import operator",
+      "from functools import reduce",
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from .expanded_weights_impl import ExpandedWeight, implements_per_sample_grads",
+      "from .expanded_weights_utils import ("
+    ],
+    "classes": [
+      "GroupNormPerSampleGrad"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_277_f961eb8f4eba3fb7_AI_Chariot_Legacy_666_1.0.0_20260508_group_norm_expanded_weights.py.json"
+}

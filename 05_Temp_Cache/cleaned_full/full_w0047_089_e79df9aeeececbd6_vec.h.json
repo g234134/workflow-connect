@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec.h",
+  "name": "vec.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1331,
+  "content_sha256": "e79df9aeeececbd62c1362308941406314157af303109e01878727e9e8e74798",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 36,
+    "char_count": 1331,
+    "preview_lines": [
+      "#pragma once",
+      "#if defined(CPU_CAPABILITY_AVX512)",
+      "#include <ATen/cpu/vec/vec512/vec512.h>",
+      "#else",
+      "#include <ATen/cpu/vec/vec256/vec256.h>",
+      "#endif",
+      "namespace at::vec {",
+      "// See Note [CPU_CAPABILITY namespace]",
+      "inline namespace CPU_CAPABILITY {",
+      "inline Vectorized<bool> convert_to_bool(Vectorized<int8_t> x) {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_089_e79df9aeeececbd6_vec.h.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__util.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1715,
+  "content_sha256": "4070683452187db013861a2d1f743c13669c15cf38c291b8f7e4febaed35ed91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 52,
+    "non_empty_lines": 38,
+    "char_count": 1715,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import stat",
+      "import sys",
+      "from errno import EACCES, EISDIR",
+      "from pathlib import Path",
+      "def raise_on_not_writable_file(filename: str) -> None:",
+      "    \"\"\"",
+      "    Raise an exception if attempting to open the file for writing would fail.",
+      "    This is done so files that will never be writable can be separated from files that are writable but currently"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import stat",
+      "import sys",
+      "from errno import EACCES, EISDIR",
+      "from pathlib import Path"
+    ],
+    "classes": [],
+    "functions": [
+      "raise_on_not_writable_file",
+      "ensure_directory_exists"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_037_4070683452187db0_AI_Chariot_Legacy_666_1.0.0_20260508__util.py.json"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 217,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cographs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cographs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 458,
+  "content_sha256": "2a1aafc75e553561e336431e129b22a37a09022f0aa2262a7d3a8a55b4164fd5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 13,
+    "char_count": 458,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.generators.cographs` module.\"\"\"",
+      "import networkx as nx",
+      "def test_random_cograph():",
+      "    n = 3",
+      "    G = nx.random_cograph(n)",
+      "    assert len(G) == 2**n",
+      "    # Every connected subgraph of G has diameter <= 2",
+      "    if nx.is_connected(G):",
+      "        assert nx.diameter(G) <= 2",
+      "    else:"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_random_cograph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_217_2a1aafc75e553561_AI_Chariot_Legacy_666_1.0.0_20260508_test_cographs.py.json"
+}

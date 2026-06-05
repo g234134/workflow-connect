@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 84,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_get_version.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_get_version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 492,
+  "content_sha256": "d02c56ff8d6ada19732311163a2bd409a630dc61624881f7d913d431c220c006",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 14,
+    "char_count": 492,
+    "preview_lines": [
+      "import os",
+      "import re",
+      "from pathlib import Path",
+      "def get_version():",
+      "    try:",
+      "        package_path = Path(__file__).parents[2]",
+      "        version_file = (package_path / \"__init__.py\").read_text()",
+      "        version_match = re.search(r\"^__version__ = ['\\\"]([^'\\\"]*)['\\\"]\", version_file, re.M)",
+      "        if version_match:",
+      "            return version_match.group(1).strip()"
+    ],
+    "imports": [
+      "import os",
+      "import re",
+      "from pathlib import Path"
+    ],
+    "classes": [],
+    "functions": [
+      "get_version"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_084_d02c56ff8d6ada19_AI_Chariot_Legacy_666_1.0.0_20260508_get_version.py.json"
+}

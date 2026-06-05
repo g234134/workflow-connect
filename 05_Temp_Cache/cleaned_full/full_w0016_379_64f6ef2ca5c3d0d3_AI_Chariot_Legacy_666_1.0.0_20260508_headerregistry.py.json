@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 379,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_headerregistry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_headerregistry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20637,
+  "content_sha256": "64f6ef2ca5c3d0d30b494e235e55477c6c8670b32b166f86415511bbf5c78fcf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 592,
+    "non_empty_lines": 458,
+    "char_count": 20637,
+    "preview_lines": [
+      "\"\"\"Representing and manipulating email headers via custom objects.",
+      "This module provides an implementation of the HeaderRegistry API.",
+      "The implementation is designed to flexibly follow RFC5322 rules.",
+      "Eventually HeaderRegistry will be a public API, but it isn't yet,",
+      "and will probably change some before that happens.",
+      "\"\"\"",
+      "from __future__ import unicode_literals",
+      "from __future__ import division",
+      "from __future__ import absolute_import",
+      "from future.builtins import super"
+    ],
+    "imports": [
+      "from __future__ import unicode_literals",
+      "from __future__ import division",
+      "from __future__ import absolute_import",
+      "from future.builtins import super",
+      "from future.builtins import str",
+      "from future.utils import text_to_native_str",
+      "from future.backports.email import utils",
+      "from future.backports.email import errors",
+      "from future.backports.email import _header_value_parser as parser"
+    ],
+    "classes": [
+      "Address",
+      "Group",
+      "BaseHeader",
+      "UnstructuredHeader",
+      "UniqueUnstructuredHeader",
+      "DateHeader",
+      "UniqueDateHeader",
+      "AddressHeader",
+      "UniqueAddressHeader",
+      "SingleAddressHeader",
+      "UniqueSingleAddressHeader",
+      "MIMEVersionHeader",
+      "ParameterizedMIMEHeader",
+      "ContentTypeHeader",
+      "ContentDispositionHeader",
+      "ContentTransferEncodingHeader",
+      "HeaderRegistry"
+    ],
+    "functions": [
+      "_reconstruct_header"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_379_64f6ef2ca5c3d0d3_AI_Chariot_Legacy_666_1.0.0_20260508_headerregistry.py.json"
+}

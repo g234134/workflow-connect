@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 200,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\documents\\test_document.py",
+  "name": "test_document.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 385,
+  "content_sha256": "3a5171077076255638e0ef29fe0be2c1238b66744f53094762e1c016bea12b73",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 10,
+    "char_count": 382,
+    "preview_lines": [
+      "from langchain_core.documents import Document",
+      "def test_init() -> None:",
+      "    for doc in [",
+      "        Document(page_content=\"foo\"),",
+      "        Document(page_content=\"foo\", metadata={\"a\": 1}),",
+      "        Document(page_content=\"foo\", id=None),",
+      "        Document(page_content=\"foo\", id=\"1\"),",
+      "        Document(page_content=\"foo\", id=1),",
+      "    ]:",
+      "        assert isinstance(doc, Document)"
+    ],
+    "imports": [
+      "from langchain_core.documents import Document"
+    ],
+    "classes": [],
+    "functions": [
+      "test_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_200_3a51710770762556_test_document.py.json"
+}

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(npm *)",
+      "Bash(where mcp-server-memory *)",
+      "WebFetch(domain:r.jina.ai)",
+      "Bash(curl *)",
+      "Bash(> final_cleaned.jsonl)",
+      "Bash(> failed_logs.jsonl)",
+      "Bash(pip install *)",
+      "Bash(./ag2_env/Scripts/python *)",
+      "Bash(docker-compose logs *)",
+      "Bash(docker-compose down *)",
+      "Bash(docker-compose up *)",
+      "Bash(docker-compose ps *)",
+      "Bash(taskkill /F /IM ollama.exe)",
+      "Bash(tasklist)",
+      "Bash(taskkill /F /PID 21612)",
+      "Bash(taskkill /F /PID 2068)",
+      "PowerShell(Stop-Process *)",
+      "PowerShell(Start-Process \"ollama app\")",
+      "Bash(docker exec ttyd *)",
+      "PowerShell(docker exec ttyd *)"
+    ]
+  }
+}

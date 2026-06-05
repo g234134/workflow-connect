@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 213,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_kurt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_kurt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2391,
+  "content_sha256": "11fc78cf3e31b695f7b261bebbdf10430ba35e48a76a009132ba5ff7cf2beb5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 73,
+    "char_count": 2391,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "def test_groupby_kurt_equivalence():",
+      "    # GH#40139",
+      "    # Test that that groupby kurt method (which uses libgroupby.group_kurt)",
+      "    #  matches the results of operating group-by-group (which uses nanops.nankurt)",
+      "    nrows = 1000"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "test_groupby_kurt_equivalence",
+      "test_groupby_kurt_arrow_float64",
+      "test_groupby_kurt_noskipna",
+      "test_groupby_kurt_all_ones"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_213_11fc78cf3e31b695_AI_Chariot_Legacy_666_1.0.0_20260508_test_kurt.py.json"
+}

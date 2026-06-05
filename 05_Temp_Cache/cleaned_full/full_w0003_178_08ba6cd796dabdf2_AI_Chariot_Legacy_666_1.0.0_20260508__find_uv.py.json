@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__find_uv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__find_uv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3139,
+  "content_sha256": "08ba6cd796dabdf285ac72ce6b0f747f6835f18df2e0b0bdca5237e68fea94a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 81,
+    "char_count": 3139,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "import sysconfig",
+      "class UvNotFound(FileNotFoundError): ...",
+      "def find_uv_bin() -> str:",
+      "    \"\"\"Return the uv binary path.\"\"\"",
+      "    uv_exe = \"uv\" + sysconfig.get_config_var(\"EXE\")",
+      "    targets = [",
+      "        # The scripts directory for the current Python"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "import sysconfig",
+      "from fnmatch import fnmatch"
+    ],
+    "classes": [
+      "UvNotFound"
+    ],
+    "functions": [
+      "find_uv_bin",
+      "_module_path",
+      "_matching_parents",
+      "_join",
+      "_user_scheme"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_178_08ba6cd796dabdf2_AI_Chariot_Legacy_666_1.0.0_20260508__find_uv.py.json"
+}

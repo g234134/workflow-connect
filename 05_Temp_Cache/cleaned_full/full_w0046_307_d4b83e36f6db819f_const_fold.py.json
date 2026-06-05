@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 307,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\experimental\\const_fold.py",
+  "name": "const_fold.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12174,
+  "content_sha256": "d4b83e36f6db819ff36625ab84023f06711583cfe1afe466d7f921b5ba7cc19c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 289,
+    "non_empty_lines": 249,
+    "char_count": 12174,
+    "preview_lines": [
+      "import re",
+      "from typing import Callable, Dict, Optional, Set, Union",
+      "import torch.fx",
+      "from torch.fx.node import map_arg",
+      "from torch.fx.passes.split_module import split_module",
+      "__all__ = ['FoldedGraphModule', 'get_unique_attr_name_in_module', 'split_const_subgraphs']",
+      "class FoldedGraphModule(torch.fx.GraphModule):",
+      "    \"\"\"",
+      "    FoldedGraphModule is a GraphModule which also contains another",
+      "    `const_subgraph_module` representing a subgraph which has all const attr"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Callable, Dict, Optional, Set, Union",
+      "import torch.fx",
+      "from torch.fx.node import map_arg",
+      "from torch.fx.passes.split_module import split_module"
+    ],
+    "classes": [
+      "FoldedGraphModule"
+    ],
+    "functions": [
+      "_inline_module",
+      "get_unique_attr_name_in_module",
+      "split_const_subgraphs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_307_d4b83e36f6db819f_const_fold.py.json"
+}

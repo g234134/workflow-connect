@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__param_server.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__param_server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2819,
+  "content_sha256": "1ab312fd09a303e5d2ba8ce3fae27064e2773ac8dd4102128c54711e209afb7d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 64,
+    "char_count": 2819,
+    "preview_lines": [
+      "from typing import Any, Dict, Optional, Tuple",
+      "from ..types import FloatsXd",
+      "from ..util import get_array_module",
+      "KeyT = Tuple[int, str]",
+      "class ParamServer:",
+      "    \"\"\"Serve parameters for a single process.\"\"\"",
+      "    _params: Dict[KeyT, FloatsXd] = {}",
+      "    _grads: Dict[KeyT, FloatsXd] = {}",
+      "    proxy: Optional[Any]",
+      "    def __init__("
+    ],
+    "imports": [
+      "from typing import Any, Dict, Optional, Tuple",
+      "from ..types import FloatsXd",
+      "from ..util import get_array_module"
+    ],
+    "classes": [
+      "ParamServer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_305_1ab312fd09a303e5_AI_Chariot_Legacy_666_1.0.0_20260508__param_server.py.json"
+}

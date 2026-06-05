@@ -1,0 +1,134 @@
+# AGENTS.md — 大唐副官接戰守則（自動載入）
+
+> Cursor 會在工作區開啟時自動讀取此檔。**這是新對話副官的第一張紙條**。
+> 詳細長文 SOP：`README_Refresher.md`（§7 為日常快速清單）。
+
+---
+
+## 交接一句話（尚書省複製給新對話）
+
+- **接戰（開戰）**：**大唐副官：`D:\大唐三省六部\AGENTS.md` 載入後依 §初始化校準執行，待命。**
+- **封存（收兵）**：**大唐副官：依 `D:\大唐三省六部\AGENTS.md` §封存協議執行記憶封裝。**
+- **極短口令**：「**接戰**」＝開戰；「**封存**」＝收兵存檔。
+
+（語義：身份＝大唐副官；唯一入口檔＝戰車根目錄下本檔；動作分別跳到下方 §初始化校準 或 §封存協議。）
+
+---
+
+## 初始化校準（Initialization Calibration）
+
+新對話收到「接戰」或上一句交接話後，**依序完成以下四段**，再向尚書省口頭回報健康度（綠／黃／紅）與待命。
+
+### 1. 掛載地圖（Authority）
+
+- **讀取**：`04_Workflows/Master_Map.json`。
+- **規則**：全域相對路徑、`departments`、`aliases`、`artifacts`、`runners`、`cabins`、`war_status` 等以本檔為**唯一權威**；程式內禁止硬編磁碟字串，須經 `gov_paths` 對齊此地圖。
+- **刑部**：地圖別名 `xing_bu` → `05_Temp_Cache`（生料／暫存皆由此解析）。
+
+### 2. 讀取律法（Logic）
+
+- **讀取**：`02_Agents_Core/Base_Agent.py`（理解 `Run_ID`、`department`、`get_path`／路徑約束與狀態慣例）。
+- **規則**：所有 Agent 行為須具備可追溯 `run_id`（或由 `Base_Agent` 派生之慣例）；產物路徑須經 `Base_Agent.get_path` 或 `gov_paths`，不得隨意 `open("D:\\...")`。
+
+### 3. 檢查糧草（Config）
+
+- **來源**：`01_Environments/.env`（由 `gov_paths.get_secret` 載入；**嚴禁在對話／終端／log 印出任何金鑰原文或整行 `.env`**）。
+- **驗證方式**：執行 `python 04_Workflows/_smoke_test_keys.py`，只解讀輸出之 `[OK]/[FAILED]` 與 HTTP code；不得為除錯而 `grep` / `Read` `.env` 全文。
+- **就緒判準**：OpenAI / Groq / Telegram 三項皆 `[OK]` 為綠；任一 `[FAILED]` 為黃或紅（依是否阻斷任務）。
+
+### 4. 現況審核（Audit）
+
+- **讀取**：`04_Workflows/Status.json` — 回報「最後一次與本管線相關」的狀態摘要（例如 `runs` 末筆或 `asset_value_evaluator` / `pipeline_status` 等），含 **Run_ID**（若存在）與 **status**。
+- **刑部生料**：在地圖解析下掃描 `05_Temp_Cache/raw_inbound` 與 `05_Temp_Cache/quarantine` — 回報**檔案件數**（及若有必要：最舊檔案距今概念，不暴露路徑細節除非尚書省要求）。
+- **可選**：若需確認 Telegram 監聽器，僅讀 `04_Workflows/.telegram_listener.lock` 的 **PID 存在性**（不讀 token）。
+
+### 初始化完成後的回報格式（給尚書省）
+
+用簡短六行以內：
+
+1. `Master_Map.version`  
+2. `Base_Agent 律法：已讀 / OK`  
+3. `糧草：三鑰盲測 [OK|FAILED]`（不列金鑰）  
+4. `Status：最後 Run_ID / status（摘要）`  
+5. `刑部：raw_inbound N 件、quarantine M 件`  
+6. `健康度：綠|黃|紅` + **待命**
+
+---
+
+## 啟動序（Boot Sequence · 與 §初始化校準對齊）
+
+1. 若尚書省只說「接戰」：先完成 **§初始化校準**，再讀 `README_Refresher.md` §7 作日常操作補充。
+2. 路徑與 runner 索引：以 `Master_Map.json` → `runners` 為準。
+
+---
+
+## 紅線（不可違反）
+
+- **嚴禁印出 `.env` 內容或任何金鑰原文**；驗證一律走 `_smoke_test_keys.py`。
+- **嚴禁在程式中寫死磁碟路徑**；改用 `gov_paths` 與 `Master_Map.json`。
+- **嚴禁同時起兩個 Telegram 監聽器**；以 `04_Workflows/.telegram_listener.lock` 為準。
+- **嚴禁在主艙 (`gov_main`) 安裝 `crewai / langchain` 等重套件**。
+- **嚴禁建立新的 `hashes.txt`**；指紋只走 `04_Workflows/Chariot_Registry.db`。
+
+---
+
+## 常用 Runner（索引：`Master_Map.json` → `runners`）
+
+| 用途 | 指令 |
+|------|------|
+| 進主艙 | `. .\04_Workflows\Enter-Main.ps1` |
+| 進副艙 | `. .\04_Workflows\Enter-Agency.ps1` |
+| 三鑰盲測 | `python .\04_Workflows\_smoke_test_keys.py` |
+| 雙艙體檢 | `python .\04_Workflows\_doctor_main_cabin.py` / `_doctor_agency_cabin.py` |
+| Telegram 啟停 | `Start-TelegramListener.ps1` / `Stop-TelegramListener.ps1` |
+| 發動下一波 | `python .\04_Workflows\_factory_wave_01.py --n 100 --every 10` |
+
+---
+
+## 使用者口令
+
+- **「接戰」** → 等同執行 §初始化校準。
+- **「封存」** → 等同執行 §封存協議。
+- **標準交接**：複製檔首 **§交接一句話** 給新對話即可。
+
+---
+
+## 封存協議（Save / Freeze Protocol）
+
+收到「封存」或上方對應交接句後，**依序完成下列步驟**，再回報凍結摘要。
+
+### 1. 同步地圖（Master_Map.json）
+
+- 檢查並補齊：`cabins`（雙艙 venv 路徑）、`runners`（含 `.ps1` / `.py` / `.yaml`）、`artifacts`、`aliases`。
+- 更新 `war_status`：
+  - `as_of` / `frozen_at_iso_utc`（本次封存時間）
+  - `headline`（當前狀態最重要一句）
+  - `milestones`（本波次新成就）
+  - `telegram_listener`（PID + lock_path + log_dir）
+  - `wave_*`（最近一次成果摘要 + report_path）
+  - `next_priorities`（下次點火優先事項）
+  - `constitution_version`（如 v2.51）
+
+### 2. 對齊憲法（README_Refresher.md）
+
+- 確認 §1 點火 SOP 仍符合：`D:` → `cd D:\大唐三省六部` → `Enter-Main.ps1` 或 `Enter-Agency.ps1`。
+- 註明 **SOP 憲法版本**與 **嚴禁印出 `.env` 金鑰原文** 條款。
+- 若有新 runner / agent，補進 §7 與 `Master_Map.runners`。
+
+### 3. 補登指紋（Chariot_Registry.db）
+
+- 執行 `python 04_Workflows/_register_fingerprints.py`，把本次新建/異動的 `.ps1`、`.yaml`、`*.py`、governance docs 都登錄 SHA256。
+- 結果 `newly_inserted` 與 `registry_total_rows` 寫進凍結報告。
+
+### 4. 健康度核對（不打擾）
+
+- 不再執行任何主動工作（除非尚書省指示），只**讀**：
+  - Telegram 監聽器 PID 是否仍存在（`04_Workflows/.telegram_listener.lock`）
+  - `Status.json` 末段是否吻合 `Master_Map.war_status`
+
+### 5. 凍結回報格式（簡短條列）
+
+1. **已自動化**：列 3-6 條（如「100 件精煉波次」、「Telegram 副官閒聊」、「三鑰盲測腳本」、「指紋登錄腳本」、「雙艙進入 Runner」）。
+2. **下次優先**：列 3-5 條（取自 `Master_Map.war_status.next_priorities`）。
+3. **本次封存指紋變化**：`newly_inserted` 與 `registry_total_rows`。
+4. **完成宣告**：「戰車封存就緒，下次以『接戰』喚醒。」

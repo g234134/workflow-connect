@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\middleware\\core\\test_overrides.py",
+  "name": "test_overrides.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16359,
+  "content_sha256": "e32a85ccae2e88dcd102697ab695256c22d12807116e454e7d7ede99f5cfd3e0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 442,
+    "non_empty_lines": 364,
+    "char_count": 16356,
+    "preview_lines": [
+      "\"\"\"Unit tests for override() methods on ModelRequest and ToolCallRequest.\"\"\"",
+      "from typing import Any",
+      "from unittest.mock import Mock",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import (",
+      "    AIMessage,",
+      "    AnyMessage,",
+      "    HumanMessage,",
+      "    SystemMessage,"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from unittest.mock import Mock",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import (",
+      "from langchain_core.tools import tool",
+      "from langchain.agents import AgentState",
+      "from langchain.agents.middleware.types import ModelRequest, ToolCallRequest"
+    ],
+    "classes": [
+      "TestModelRequestOverride",
+      "TestToolCallRequestOverride"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_410_e32a85ccae2e88dc_test_overrides.py.json"
+}

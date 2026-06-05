@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 422,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\proxy\\auth\\route_checks.py",
+  "name": "route_checks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2772,
+  "content_sha256": "59c147fb6ab523d429c845dfe8a58eeefccb4e88ccd7fb4b508dcbf770355607",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 60,
+    "char_count": 2748,
+    "preview_lines": [
+      "import os",
+      "from fastapi import HTTPException, status",
+      "class EnterpriseRouteChecks:",
+      "    @staticmethod",
+      "    def is_llm_api_route_disabled() -> bool:",
+      "        \"\"\"",
+      "        Check if llm api route is disabled",
+      "        \"\"\"",
+      "        from litellm.proxy._types import CommonProxyErrors",
+      "        from litellm.proxy.proxy_server import premium_user"
+    ],
+    "imports": [
+      "import os",
+      "from fastapi import HTTPException, status",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.proxy.proxy_server import premium_user",
+      "from litellm.secret_managers.main import get_secret_bool",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.proxy.proxy_server import premium_user",
+      "from litellm.secret_managers.main import get_secret_bool",
+      "from litellm.proxy.auth.route_checks import RouteChecks"
+    ],
+    "classes": [
+      "EnterpriseRouteChecks"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_422_59c147fb6ab523d4_route_checks.py.json"
+}

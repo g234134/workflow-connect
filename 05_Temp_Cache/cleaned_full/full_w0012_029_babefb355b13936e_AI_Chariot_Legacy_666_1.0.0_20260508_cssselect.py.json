@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cssselect.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cssselect.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3407,
+  "content_sha256": "babefb355b13936e3eb7fd40168e448df12aca17aec34d41446fbf39be430d06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 76,
+    "char_count": 3407,
+    "preview_lines": [
+      "\"\"\"CSS Selectors based on XPath.",
+      "This module supports selecting XML/HTML tags based on CSS selectors.",
+      "See the `CSSSelector` class for details.",
+      "This is a thin wrapper around cssselect 0.7 or later.",
+      "\"\"\"",
+      "from . import etree",
+      "try:",
+      "    import cssselect as external_cssselect",
+      "except ImportError:",
+      "    raise ImportError("
+    ],
+    "imports": [
+      "from . import etree",
+      "import cssselect as external_cssselect"
+    ],
+    "classes": [
+      "LxmlTranslator",
+      "LxmlHTMLTranslator",
+      "CSSSelector"
+    ],
+    "functions": [
+      "_make_lower_case"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_029_babefb355b13936e_AI_Chariot_Legacy_666_1.0.0_20260508_cssselect.py.json"
+}

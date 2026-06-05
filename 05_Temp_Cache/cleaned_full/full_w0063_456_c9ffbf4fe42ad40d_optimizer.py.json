@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 456,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\optimizer.py",
+  "name": "optimizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42772,
+  "content_sha256": "c9ffbf4fe42ad40dccf2fb8e7d22679ce3bd979d7b23adc0799660d21f786131",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 907,
+    "non_empty_lines": 760,
+    "char_count": 42772,
+    "preview_lines": [
+      "import math",
+      "import functools",
+      "import warnings",
+      "from collections import OrderedDict, defaultdict",
+      "from copy import deepcopy",
+      "from itertools import chain",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    DefaultDict,"
+    ],
+    "imports": [
+      "import math",
+      "import functools",
+      "import warnings",
+      "from collections import OrderedDict, defaultdict",
+      "from copy import deepcopy",
+      "from itertools import chain",
+      "from typing import (",
+      "from typing_extensions import ParamSpec, Self, TypeAlias",
+      "import torch",
+      "import torch.utils.hooks as hooks",
+      "from torch.utils.hooks import RemovableHandle",
+      "from torch.utils._foreach_utils import (",
+      "from torch._utils import is_compiling",
+      "from torch.utils._foreach_utils import _group_tensors_by_device_and_dtype",
+      "import torch._dynamo"
+    ],
+    "classes": [
+      "_RequiredParameter",
+      "Optimizer"
+    ],
+    "functions": [
+      "_use_grad_for_differentiable",
+      "_get_value",
+      "_stack_if_compiling",
+      "_dispatch_sqrt",
+      "_default_to_fused_or_foreach",
+      "_view_as_real",
+      "register_optimizer_step_pre_hook",
+      "register_optimizer_step_post_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_456_c9ffbf4fe42ad40d_optimizer.py.json"
+}

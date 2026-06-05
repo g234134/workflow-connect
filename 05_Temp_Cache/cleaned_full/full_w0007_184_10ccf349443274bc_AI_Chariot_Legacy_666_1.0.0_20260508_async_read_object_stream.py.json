@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 184,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_async_read_object_stream.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_async_read_object_stream.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 383,
+  "content_sha256": "10ccf349443274bcf475db8fc05e99e2d126d3becb453f1e01dadc0a33cae0e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 11,
+    "non_empty_lines": 9,
+    "char_count": 383,
+    "preview_lines": [
+      "import warnings",
+      "# Import everything from the new stable module",
+      "from google.cloud.storage.asyncio.async_read_object_stream import *  # noqa",
+      "warnings.warn(",
+      "    \"google.cloud.storage._experimental.asyncio.async_read_object_stream has been moved to google.cloud.storage.asyncio.async_read_object_stream. \"",
+      "    \"Please update your imports.\",",
+      "    DeprecationWarning,",
+      "    stacklevel=2,",
+      ")"
+    ],
+    "imports": [
+      "import warnings",
+      "from google.cloud.storage.asyncio.async_read_object_stream import *  # noqa"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_184_10ccf349443274bc_AI_Chariot_Legacy_666_1.0.0_20260508_async_read_object_stream.py.json"
+}

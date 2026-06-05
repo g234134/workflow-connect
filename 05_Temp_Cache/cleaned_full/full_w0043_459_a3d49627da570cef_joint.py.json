@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\mechanics\\joint.py",
+  "name": "joint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 84621,
+  "content_sha256": "a3d49627da570cefac561d2027a5532342e0634d7d805079c3914fd4f37ef942",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2188,
+    "non_empty_lines": 1877,
+    "char_count": 84618,
+    "preview_lines": [
+      "# coding=utf-8",
+      "from abc import ABC, abstractmethod",
+      "from sympy import pi, Derivative, Matrix",
+      "from sympy.core.function import AppliedUndef",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.mechanics.functions import _validate_coordinates",
+      "from sympy.physics.vector import (Vector, dynamicsymbols, cross, Point,",
+      "                                  ReferenceFrame)",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from sympy import pi, Derivative, Matrix",
+      "from sympy.core.function import AppliedUndef",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.mechanics.functions import _validate_coordinates",
+      "from sympy.physics.vector import (Vector, dynamicsymbols, cross, Point,",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning"
+    ],
+    "classes": [
+      "Joint",
+      "PinJoint",
+      "PrismaticJoint",
+      "CylindricalJoint",
+      "PlanarJoint",
+      "SphericalJoint",
+      "WeldJoint"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_459_a3d49627da570cef_joint.py.json"
+}

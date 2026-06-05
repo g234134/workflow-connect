@@ -1,0 +1,177 @@
+# GOV_CORE_OPERATING_MAP_v0.1 — 總部 × 暗部 × Gov Core × RAG 運作地圖
+
+本文件描述「總部（D:\大唐三省六部）與暗部核心（01_Environments/python_venvs/gov_core_system）在 Gov Core / RAG 任務下的運作模式」，提供人類與 Agent 的導航地圖。
+
+---
+
+## 0. 文件定位
+
+- 位置：`04_Workflows/Runbooks/GOV_CORE_OPERATING_MAP_v0.1.md`
+- 對象：
+  - HQ-Coordinator / Governance-Worker
+  - Gov Core / Infra / Data / RAG 相關 Agent
+- 關係：
+  - 憲法：`HARNESS_Constitution_v0.1.md` → 國家結構、禁區。
+  - 行為合約：`ENGINEERING_CONTRACT_v0.1.md` → 四大流派、12-rule。
+  - Conditions：`00_Agent_Work_Conditions.md` → Smoke 標準與前置條件。
+  - 本檔：描述主要板塊與工作流之間的「實際運作路線」。
+
+---
+
+## 1. 主要板塊與根路徑
+
+### 1.1 總部（HQ）
+
+- 實體根：`D:\大唐三省六部\`
+- 職責：
+  - 憲法、合約、規則（治理框架）。
+  - 黑板與戰報：
+    - `04_Workflows/00_Agent_Work_Conditions.md`
+    - `04_Workflows/00_Agent_Work_Progress.md`
+    - `04_Workflows/project_status/master_status.md`
+  - 知識與地圖：
+    - `Master_Map.json`（包含 `tang_gov_root` 等路徑）
+    - `07_Knowledge`（如有）
+- 對 Agent 的意義：
+  - **這裡是「地圖與制度」所在的地方**，進場前必讀。
+
+### 1.2 暗部核心（Gov Core System）
+
+- 實體根：`D:\大唐三省六部\01_Environments\python_venvs\gov_core_system\`
+- 結構：
+  - `core/` → Gov Core 核心程式：
+    - `infra_health.py`
+    - `data_pipeline.py`
+    - `orchestrator.py`
+    - `rag_backend.py`
+    - （未來）GraphRAG / langgraph_flow 相關。
+  - `Departments/` → 各類運維 / 工具 Agent：
+    - `04_Infrastructure/agents/`：
+      - `data_pipeline_agent.py`
+      - `orchestrator_agent.py`
+      - `rag_query_agent.py`
+    - `04_Infrastructure/scripts/`：
+      - `phase1_ingest_minimal.py`
+      - `phase1_verify.py`
+    - `docker-compose.yml`（Infra 服務）
+  - `.venv` / `Scripts/` → Python 執行環境。
+- 對 Agent 的意義：
+  - **這裡是實際跑程式與管線的地方**。
+
+---
+
+## 2. 任務起手式（總部視角）
+
+任何針對 Gov Core / RAG / GraphRAG 的任務，總部起手式建議流程：
+
+1. **讀制度與地圖**：
+   - `HARNESS_Constitution_v0.1.md`
+   - `ENGINEERING_CONTRACT_v0.1.md`
+   - `04_Workflows/00_Agent_Work_Conditions.md`
+   - `04_Workflows/WORKFLOW_INDEX.md`
+2. **查戰史與現況**：
+   - `04_Workflows/00_Agent_Work_Progress.md`（最近一次的 smoke 與重大事件）
+   - `04_Workflows/project_status/master_status.md`（最近一次 Gov Core 流程里程碑）
+3. **選擇對應工作流 / smoke**：
+   - 例如：
+     - 健康檢查 → Gov Core V1 最小 Smoke Test
+     - RAG 查詢 → RAG_Smoke_Test
+     - （未來）GraphRAG Job → 另立 runbook
+4. **派工至暗部**：
+   - 給出明確任務卡（如先前的 smoke test 任務卡），指定：
+     - 目的
+     - 可用入口
+     - 禁區
+     - 回報格式
+
+---
+
+## 3. 三條主幹路線（v0.1）
+
+### 3.1 路線 A：Gov Core V1 最小 Smoke Test
+
+- 功能：
+  - 驗證基礎底盤（Infra + Data + Governance）。
+- 步驟摘要：
+  1. Infra：
+     - `Scripts\python.exe core\infra_health.py`
+     - 期待：`all_ok=true, pg_ok, qdrant_ok, verify_ok`
+  2. Data（單檔 ingest）：
+     - `Scripts\python.exe Departments\04_Infrastructure\agents\data_pipeline_agent.py "<HQ_ROOT>\AGENTS.md"`
+     - 期待：`chunks>0, collection=document_chunks, ingest.ok=true, verify.ok=true`
+  3. Governance（ingest_verify）：
+     - `Scripts\python.exe Departments\04_Infrastructure\agents\orchestrator_agent.py ingest_verify "<HQ_ROOT>\AGENTS.md"`
+     - 期待：`ok=true, mode=ingest_verify, master_status.ok=true`
+- 證據：
+  - `RUNTIME_METRIC` 行
+  - `04_Workflows/project_status/master_status.md` 之 2026-05-17 區塊
+  - `00_Agent_Work_Progress.md` 中相應戰報
+
+### 3.2 路線 B：RAG_Smoke_Test（基礎查詢）
+
+- 功能：
+  - 驗證 RAG 查詢主線（document_chunks / AGENTS.md）。
+- 步驟摘要：
+  1. 前置 Infra health（可重用 A 路線 Step 0）
+  2. RAG 全鏈（answer）：
+     - `Scripts\python.exe Departments\04_Infrastructure\agents\rag_query_agent.py answer --top-k 3 "這個系統裡有哪些 Agent 和角色？"`
+     - 期待：
+       - `ok=true`
+       - `len(sources)>=1`
+       - 至少一筆 `sources[].doc_key` 指向 AGENTS ingest
+       - 有 `answer` 與 `RUNTIME_METRIC.duration_ms`
+  3. 檢索-only（可選）：
+     - `Scripts\python.exe Departments\04_Infrastructure\agents\rag_query_agent.py --top-k 3 "AGENTS.md 的開戰與封箱指令各是什麼？"`
+     - 期待：
+       - `len(hits)>=1`
+       - 命中 payload / documents_lookup 能證明來自 AGENTS.md
+- 證據：
+  - CLI 輸出、結構化 dict
+  - `00_Agent_Work_Progress.md` 中 2026-05-17 RAG_Smoke_Test 條目
+
+### 3.3 路線 C：GraphRAG / DarkOps（預留）
+
+- 目前狀態：
+  - GraphRAG：有相關檔案與結構，但尚未正式設計 smoke runbook。
+  - DarkOps：依憲法標為 Blocked；尚未設計「有限解禁、最小任務」的 workflow。
+- 原則：
+  - 在未有正式 runbook 與解禁決議前，不由一般任務直接觸碰 GraphRAG job / DarkOps 業務邏輯。
+
+---
+
+## 4. 禁區與停工條件（與憲法／合約對齊）
+
+在本運作地圖下，以下操作需**停工 + 回報**，不得自行執行：
+
+- 修改 `.env` 中任何敏感設定。
+- 修改 `runtime/checkpoints/**` 或清算／prune 類腳本。
+- 直接啟動 DarkOps 業務流程（除非憲法更新與尚書省明令）。
+- 執行尚未有 runbook 的 GraphRAG 大型 job。
+- 任意新增大量測試語料、導致索引膨脹。
+
+遇到以上情況時，工作流程：
+
+1. 停在當前步驟，不繼續深入。
+2. 在 `00_Agent_Work_Progress.md` 或指定 notes 中：
+   - 記錄：
+     - 試圖執行的操作
+     - 為何判定為禁區
+     - 建議的下一步（例如：需要新增 runbook / 需要憲法更新）
+3. 交由尚書省／總部審核。
+
+---
+
+## 5. 更新規則（v0.1）
+
+- 需更新本運作地圖的情況：
+  - 新增或修改核心工作流（例如 GraphRAG_Smoke_Test、DarkOps minimal test）。
+  - 改動既有主要入口（例如改變 RAG 查詢入口）。
+  - 憲法或合約發生重大版本更新，導致板塊或禁區邊界變動。
+- 更新流程建議：
+  1. 先在 `00_Agent_Work_Progress.md` 中記錄「為何要改運作地圖」。
+  2. 同步更新：
+     - 本檔 `GOV_CORE_OPERATING_MAP_vX.Y.md`
+     - `WORKFLOW_INDEX.md`
+     - 對應 runbook 與 Conditions。
+- 版本：
+  - 本檔目前為 `v0.1`，後續若只新增說明可升 `v0.1.1`；若流程本身有變更，則升 `v0.2`。

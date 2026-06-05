@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_s3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_s3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 908,
+  "content_sha256": "9ca12636bd3e97a023f8e721c031875cb8fac3611b67983601fbf9fb5693a160",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 26,
+    "char_count": 908,
+    "preview_lines": [
+      "from io import BytesIO",
+      "import pytest",
+      "from pandas import read_csv",
+      "@pytest.mark.parametrize(\"data\", [b\"foo,bar,baz\\n1,2,3\\n4,5,6\\n\", b\"just,the,header\\n\"])",
+      "def test_streaming_s3_objects(data):",
+      "    # GH 17135",
+      "    # botocore gained iteration support in 1.10.47, can now be used in read_*",
+      "    pytest.importorskip(\"botocore\", minversion=\"1.10.47\")",
+      "    from botocore.response import StreamingBody",
+      "    body = StreamingBody(BytesIO(data), content_length=len(data))"
+    ],
+    "imports": [
+      "from io import BytesIO",
+      "import pytest",
+      "from pandas import read_csv",
+      "from botocore.response import StreamingBody"
+    ],
+    "classes": [],
+    "functions": [
+      "test_streaming_s3_objects",
+      "test_read_with_and_without_creds_from_pub_bucket"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_071_9ca12636bd3e97a0_AI_Chariot_Legacy_666_1.0.0_20260508_test_s3.py.json"
+}

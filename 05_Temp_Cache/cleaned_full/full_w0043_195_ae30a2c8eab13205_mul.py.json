@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\mul.py",
+  "name": "mul.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 79201,
+  "content_sha256": "ae30a2c8eab1320513591f2c01c9a29517d02eea7dc2ff088fbb3b2487d49153",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2214,
+    "non_empty_lines": 1909,
+    "char_count": 79201,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, ClassVar",
+      "from collections import defaultdict",
+      "from functools import reduce",
+      "from itertools import product",
+      "import operator",
+      "from .sympify import sympify",
+      "from .basic import Basic, _args_sortkey",
+      "from .singleton import S",
+      "from .operations import AssocOp, AssocOpDispatcher"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, ClassVar",
+      "from collections import defaultdict",
+      "from functools import reduce",
+      "from itertools import product",
+      "import operator",
+      "from .sympify import sympify",
+      "from .basic import Basic, _args_sortkey",
+      "from .singleton import S",
+      "from .operations import AssocOp, AssocOpDispatcher",
+      "from .cache import cacheit",
+      "from .intfunc import integer_nthroot, trailing",
+      "from .logic import fuzzy_not, _fuzzy_group",
+      "from .expr import Expr",
+      "from .parameters import global_parameters",
+      "from .kind import KindDispatcher",
+      "from .traversal import bottom_up",
+      "from sympy.utilities.iterables import sift"
+    ],
+    "classes": [
+      "NC_Marker",
+      "Mul"
+    ],
+    "functions": [
+      "_mulsort",
+      "_unevaluated_Mul",
+      "prod",
+      "_keep_coeff",
+      "expand_2arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_195_ae30a2c8eab13205_mul.py.json"
+}

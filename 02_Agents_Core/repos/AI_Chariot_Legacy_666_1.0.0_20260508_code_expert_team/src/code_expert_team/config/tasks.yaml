@@ -1,0 +1,14 @@
+﻿analysis_task:
+  description: >
+    分析目前的網頁原始碼，重點檢查：
+    1. 標籤結構是否符合語義化。
+    2. 是否有冗餘的 CSS 或 JS 邏輯。
+    3. 載入速度是否有優化空間。
+  expected_output: >
+    一份條列式的代碼問題清單。
+
+optimization_task:
+  description: >
+    根據分析清單，提供改寫後的範例代碼，並解釋為何這樣改會更好。
+  expected_output: >
+    一份包含「修改前 vs 修改後」對照的 Markdown 優化建議書。

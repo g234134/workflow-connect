@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 201,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\pipeline\\sync\\_balance\\profile.py",
+  "name": "profile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3757,
+  "content_sha256": "2d6f3e5d35099151548dc0056c9983146f1aae03245d2663f8ff6f117056a409",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 116,
+    "non_empty_lines": 85,
+    "char_count": 3757,
+    "preview_lines": [
+      "# Copyright 2019 Kakao Brain",
+      "#",
+      "# Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "\"\"\"Per-layer profilers.\"\"\"",
+      "import copy",
+      "import time",
+      "from typing import Any, Generator, List, Union, Sequence"
+    ],
+    "imports": [
+      "import copy",
+      "import time",
+      "from typing import Any, Generator, List, Union, Sequence",
+      "import torch",
+      "from torch import Tensor",
+      "import torch.nn as nn",
+      "from ..microbatch import Batch"
+    ],
+    "classes": [],
+    "functions": [
+      "layerwise_sandbox",
+      "detach",
+      "profile_times",
+      "profile_sizes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_201_2d6f3e5d35099151_profile.py.json"
+}

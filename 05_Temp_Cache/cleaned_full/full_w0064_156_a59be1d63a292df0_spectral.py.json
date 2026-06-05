@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 156,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\benchmark\\op_fuzzers\\spectral.py",
+  "name": "spectral.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3690,
+  "content_sha256": "a59be1d63a292df0ea2227051308036ec6faa0ae6c5443a6be9691ef3894469f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 84,
+    "char_count": 3690,
+    "preview_lines": [
+      "import math",
+      "import torch",
+      "from torch.utils import benchmark",
+      "from torch.utils.benchmark import FuzzedParameter, FuzzedTensor, ParameterAlias",
+      "__all__ = ['SpectralOpFuzzer']",
+      "MIN_DIM_SIZE = 16",
+      "MAX_DIM_SIZE = 16 * 1024",
+      "def power_range(upper_bound, base):",
+      "    return (base ** i for i in range(int(math.log(upper_bound, base)) + 1))",
+      "# List of regular numbers from MIN_DIM_SIZE to MAX_DIM_SIZE"
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "from torch.utils import benchmark",
+      "from torch.utils.benchmark import FuzzedParameter, FuzzedTensor, ParameterAlias"
+    ],
+    "classes": [
+      "SpectralOpFuzzer"
+    ],
+    "functions": [
+      "power_range"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_156_a59be1d63a292df0_spectral.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\codegen\\tests\\test_applications.py",
+  "name": "test_applications.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2277,
+  "content_sha256": "445592ec4a04dc3cad52baf81f390f6976ceb67692b69cc96a554aad8d6b5511",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 49,
+    "char_count": 2277,
+    "preview_lines": [
+      "# This file contains tests that exercise multiple AST nodes",
+      "import tempfile",
+      "from sympy.external import import_module",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.utilities._compilation import compile_link_import_strings, has_c",
+      "from sympy.utilities._compilation.util import may_xfail",
+      "from sympy.testing.pytest import skip, skip_under_pyodide",
+      "from sympy.codegen.ast import (",
+      "    FunctionDefinition, FunctionPrototype, Variable, Pointer, real, Assignment,",
+      "    integer, CodeBlock, While"
+    ],
+    "imports": [
+      "import tempfile",
+      "from sympy.external import import_module",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.utilities._compilation import compile_link_import_strings, has_c",
+      "from sympy.utilities._compilation.util import may_xfail",
+      "from sympy.testing.pytest import skip, skip_under_pyodide",
+      "from sympy.codegen.ast import (",
+      "from sympy.codegen.cnodes import void, PreIncrement",
+      "from sympy.codegen.cutils import render_as_source_file"
+    ],
+    "classes": [],
+    "functions": [
+      "_mk_func1",
+      "_render_compile_import",
+      "test_copying_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_148_445592ec4a04dc3c_test_applications.py.json"
+}

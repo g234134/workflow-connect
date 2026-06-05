@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:44:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__rich_log.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__rich_log.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12192,
+  "content_sha256": "249e47fb1e891d1fb8fa358eea83f88501365967c648aa476e987d774687bcc6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 320,
+    "non_empty_lines": 268,
+    "char_count": 12192,
+    "preview_lines": [
+      "\"\"\"Provides a scrollable text-logging widget.\"\"\"",
+      "from __future__ import annotations",
+      "from collections import deque",
+      "from typing import TYPE_CHECKING, NamedTuple, Optional, cast",
+      "from rich.console import RenderableType",
+      "from rich.highlighter import Highlighter, ReprHighlighter",
+      "from rich.measure import measure_renderables",
+      "from rich.pretty import Pretty",
+      "from rich.protocol import is_renderable",
+      "from rich.segment import Segment"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import deque",
+      "from typing import TYPE_CHECKING, NamedTuple, Optional, cast",
+      "from rich.console import RenderableType",
+      "from rich.highlighter import Highlighter, ReprHighlighter",
+      "from rich.measure import measure_renderables",
+      "from rich.pretty import Pretty",
+      "from rich.protocol import is_renderable",
+      "from rich.segment import Segment",
+      "from rich.text import Text",
+      "from textual.cache import LRUCache",
+      "from textual.events import Resize",
+      "from textual.geometry import Size",
+      "from textual.reactive import var",
+      "from textual.scroll_view import ScrollView",
+      "from textual.strip import Strip",
+      "from typing_extensions import Self"
+    ],
+    "classes": [
+      "DeferredRender",
+      "RichLog"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_066_249e47fb1e891d1f_AI_Chariot_Legacy_666_1.0.0_20260508__rich_log.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:47:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\drawing\\tests\\test_image_comparison_pylab_mpl.py",
+  "name": "test_image_comparison_pylab_mpl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6340,
+  "content_sha256": "d94b46309169716886d2c42d5c8613d23d374362e11aa58cd86fa97ca6374b0d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 229,
+    "non_empty_lines": 205,
+    "char_count": 6340,
+    "preview_lines": [
+      "\"\"\"Unit tests for explicit image comparison with pytest-mpl.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "pytest.importorskip(\"pytest_mpl\")",
+      "mpl = pytest.importorskip(\"matplotlib\")",
+      "mpl.use(\"PS\")",
+      "plt = pytest.importorskip(\"matplotlib.pyplot\")",
+      "plt.rcParams[\"text.usetex\"] = False",
+      "np = pytest.importorskip(\"numpy\")",
+      "@pytest.mark.mpl_image_compare"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "import itertools as it"
+    ],
+    "classes": [],
+    "functions": [
+      "test_display_house_with_colors",
+      "test_display_labels_and_colors",
+      "test_display_complex",
+      "test_display_shortest_path",
+      "test_display_empty_graph",
+      "test_house_with_colors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_488_d94b463091697168_test_image_comparison_pylab_mpl.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\peephole_alias_sensitive.h",
+  "name": "peephole_alias_sensitive.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 452,
+  "content_sha256": "449c96186ea4dc9d20a97d66e10aea3f4ea866bb6b9c64bb12cc42dd2606479b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 13,
+    "char_count": 452,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Peephole Optimizes alias sensitive peepholes",
+      "// Currently this is invoked as part of PeepholeOptimize",
+      "// return true if graph is modified",
+      "// Optimizes on TensorType if shape_peepholes is true",
+      "TORCH_API bool PeepholeOptimizeAliasSensitive(",
+      "    const std::shared_ptr<Graph>& graph,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_387_449c96186ea4dc9d_peephole_alias_sensitive.h.json"
+}

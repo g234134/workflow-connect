@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 213,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__slsqp_py.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__slsqp_py.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19577,
+  "content_sha256": "0bfe592a9a00b94736ccd5ce157189593f78feef5bbf421d53f3ff730c329e05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 511,
+    "non_empty_lines": 439,
+    "char_count": 19577,
+    "preview_lines": [
+      "\"\"\"",
+      "This module implements the Sequential Least Squares Programming optimization",
+      "algorithm (SLSQP), originally developed by Dieter Kraft.",
+      "See http://www.netlib.org/toms/733",
+      "Functions",
+      "---------",
+      ".. autosummary::",
+      "   :toctree: generated/",
+      "    approx_jacobian",
+      "    fmin_slsqp"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.optimize._slsqp import slsqp",
+      "from numpy import (zeros, array, linalg, append, concatenate, finfo,",
+      "from ._optimize import (OptimizeResult, _check_unknown_options,",
+      "from ._numdiff import approx_derivative",
+      "from ._constraints import old_bound_to_new, _arr_to_scalar",
+      "from scipy._lib._array_api import array_namespace",
+      "from scipy._lib import array_api_extra as xpx"
+    ],
+    "classes": [],
+    "functions": [
+      "approx_jacobian",
+      "fmin_slsqp",
+      "_minimize_slsqp",
+      "_eval_constraint",
+      "_eval_con_normals"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_213_0bfe592a9a00b947_AI_Chariot_Legacy_666_1.0.0_20260508__slsqp_py.py.json"
+}

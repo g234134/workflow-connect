@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 453,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\output_parsers\\xml.py",
+  "name": "xml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4963,
+  "content_sha256": "c11e2972ef6bb2adb13c44d36b68043da470388ab29e3a60609dc6a9a90da1a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 105,
+    "char_count": 4960,
+    "preview_lines": [
+      "import re",
+      "from typing import Literal",
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from langchain_classic.agents import AgentOutputParser",
+      "def _unescape(text: str) -> str:",
+      "    \"\"\"Convert custom tag delimiters back into XML tags.\"\"\"",
+      "    replacements = {",
+      "        \"[[tool]]\": \"<tool>\","
+    ],
+    "imports": [
+      "import re",
+      "from typing import Literal",
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from langchain_classic.agents import AgentOutputParser"
+    ],
+    "classes": [
+      "XMLAgentOutputParser"
+    ],
+    "functions": [
+      "_unescape"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_453_c11e2972ef6bb2ad_xml.py.json"
+}

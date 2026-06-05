@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 417,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_data.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_data.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4201,
+  "content_sha256": "845164aa351449dc20932ba5a7ea7fe4b08c6afdc21cbfda0ecfc96dc41697f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 99,
+    "char_count": 4201,
+    "preview_lines": [
+      "\"\"\"Compute gammainc and gammaincc for large arguments and parameters",
+      "and save the values to data files for use in tests. We can't just",
+      "compare to mpmath's gammainc in test_mpmath.TestSystematic because it",
+      "would take too long.",
+      "Note that mpmath's gammainc is computed using hypercomb, but since it",
+      "doesn't allow the user to increase the maximum number of terms used in",
+      "the series it doesn't converge for many arguments. To get around this",
+      "we copy the mpmath implementation but use more terms.",
+      "This takes about 17 minutes to run on a 2.3 GHz Macbook Pro with 4GB",
+      "ram."
+    ],
+    "imports": [
+      "import os",
+      "from time import time",
+      "import numpy as np",
+      "from numpy import pi",
+      "from scipy.special._mptestutils import mpf2float",
+      "import mpmath as mp"
+    ],
+    "classes": [],
+    "functions": [
+      "gammainc",
+      "gammaincc",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_417_845164aa351449dc_AI_Chariot_Legacy_666_1.0.0_20260508_gammainc_data.py.json"
+}

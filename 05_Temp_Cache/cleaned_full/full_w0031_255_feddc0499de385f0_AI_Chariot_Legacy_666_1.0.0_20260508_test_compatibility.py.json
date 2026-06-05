@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_compatibility.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_compatibility.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2306,
+  "content_sha256": "feddc0499de385f00c9cdd6fa165fb3c33480f39fedcfa24909188753d71ef2d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 69,
+    "char_count": 2306,
+    "preview_lines": [
+      "from mpmath import *",
+      "from random import seed, randint, random",
+      "import math",
+      "# Test compatibility with Python floats, which are",
+      "# IEEE doubles (53-bit)",
+      "N = 5000",
+      "seed(1)",
+      "# Choosing exponents between roughly -140, 140 ensures that",
+      "# the Python floats don't overflow or underflow",
+      "xs = [(random()-1) * 10**randint(-140, 140) for x in range(N)]"
+    ],
+    "imports": [
+      "from mpmath import *",
+      "from random import seed, randint, random",
+      "import math"
+    ],
+    "classes": [],
+    "functions": [
+      "test_double_compatibility",
+      "test_sqrt",
+      "test_bugs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_255_feddc0499de385f0_AI_Chariot_Legacy_666_1.0.0_20260508_test_compatibility.py.json"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_higher_order_ops\\map.py",
+  "name": "map.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13788,
+  "content_sha256": "bf217689318446c6b5d54e09abdbf5ff68092f66e7984dedea285778d99bb6ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 361,
+    "non_empty_lines": 298,
+    "char_count": 13788,
+    "preview_lines": [
+      "from contextlib import nullcontext",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._dispatch.python import suspend_functionalization",
+      "from torch._functorch.aot_autograd import AOTConfig, create_joint, from_fun",
+      "from torch._higher_order_ops.cond import (",
+      "    _has_potential_branch_input_alias,",
+      "    _has_potential_branch_input_mutation,",
+      "    UnsupportedAliasMutationException,"
+    ],
+    "imports": [
+      "from contextlib import nullcontext",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._C import DispatchKey",
+      "from torch._dispatch.python import suspend_functionalization",
+      "from torch._functorch.aot_autograd import AOTConfig, create_joint, from_fun",
+      "from torch._higher_order_ops.cond import (",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch._subclasses.functional_tensor import (",
+      "from torch.fx.experimental.proxy_tensor import (",
+      "from torch.multiprocessing.reductions import StorageWeakRef"
+    ],
+    "classes": [
+      "MapWrapper",
+      "MapAutogradOp"
+    ],
+    "functions": [
+      "create_fw_bw_graph",
+      "map_wrapper",
+      "trace_map",
+      "_unstack_pytree",
+      "_stack_pytree",
+      "map_dense",
+      "map_autograd",
+      "map_proxy_torch_dispatch_mode",
+      "map_fake_tensor_mode",
+      "map_functionalize"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_083_bf217689318446c6_map.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_list2padded.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_list2padded.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 645,
+  "content_sha256": "ba0b9ea45085ceeec07f5b243c42a07518ed6d053465793cb898f07e44e1c4eb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 645,
+    "preview_lines": [
+      "from typing import Callable, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import List2d, Padded",
+      "InT = TypeVar(\"InT\", bound=List2d)",
+      "OutT = Padded",
+      "@registry.layers(\"list2padded.v1\")",
+      "def list2padded() -> Model[InT, OutT]:",
+      "    \"\"\"Create a layer to convert a list of array inputs into Padded.\"\"\"",
+      "    return Model(f\"list2padded\", forward)"
+    ],
+    "imports": [
+      "from typing import Callable, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import List2d, Padded"
+    ],
+    "classes": [],
+    "functions": [
+      "list2padded",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_194_ba0b9ea45085ceee_AI_Chariot_Legacy_666_1.0.0_20260508_list2padded.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_functorch\\benchmark_utils.py",
+  "name": "benchmark_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6279,
+  "content_sha256": "6ece5e044ea8e0962f5f3686b578abde5421ecc4cd99c3d9172745d11f7fad2b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 193,
+    "non_empty_lines": 144,
+    "char_count": 6279,
+    "preview_lines": [
+      "import contextlib",
+      "import time",
+      "import os",
+      "import json",
+      "import torch",
+      "from torch.profiler import profile, ProfilerActivity",
+      "def synchronize():",
+      "    pass",
+      "def dump_chrome_trace(f, input, trace_filename, optimize_ctx, activities, num_runs=1,",
+      "                      devices=None, kwargs_for_f=None, kwargs_for_profiler=None):"
+    ],
+    "imports": [
+      "import contextlib",
+      "import time",
+      "import os",
+      "import json",
+      "import torch",
+      "from torch.profiler import profile, ProfilerActivity"
+    ],
+    "classes": [],
+    "functions": [
+      "synchronize",
+      "dump_chrome_trace",
+      "get_chrome_trace_events",
+      "is_gpu_compute_event",
+      "get_sorted_gpu_events",
+      "get_duration",
+      "get_sorted_gpu_mm_conv_events",
+      "compute_utilization",
+      "benchmark_utilization"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_063_6ece5e044ea8e096_benchmark_utils.py.json"
+}

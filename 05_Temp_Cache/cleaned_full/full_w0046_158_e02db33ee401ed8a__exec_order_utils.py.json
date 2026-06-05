@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\fsdp\\_exec_order_utils.py",
+  "name": "_exec_order_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16459,
+  "content_sha256": "e02db33ee401ed8a8f898ab14cb3a8f79ef01cd7e9596cea5d83d8415963d351",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 364,
+    "non_empty_lines": 341,
+    "char_count": 16459,
+    "preview_lines": [
+      "import itertools",
+      "import warnings",
+      "from enum import auto, Enum",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.fsdp._traversal_utils as traversal_utils",
+      "import torch.nn as nn",
+      "from torch.distributed.fsdp._common_utils import _FSDPState, _get_param_to_fqns",
+      "from torch.distributed.fsdp._flat_param import FlatParamHandle"
+    ],
+    "imports": [
+      "import itertools",
+      "import warnings",
+      "from enum import auto, Enum",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.fsdp._traversal_utils as traversal_utils",
+      "import torch.nn as nn",
+      "from torch.distributed.fsdp._common_utils import _FSDPState, _get_param_to_fqns",
+      "from torch.distributed.fsdp._flat_param import FlatParamHandle"
+    ],
+    "classes": [
+      "_ExecOrderWarnStatus",
+      "_ExecOrderData"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_158_e02db33ee401ed8a__exec_order_utils.py.json"
+}

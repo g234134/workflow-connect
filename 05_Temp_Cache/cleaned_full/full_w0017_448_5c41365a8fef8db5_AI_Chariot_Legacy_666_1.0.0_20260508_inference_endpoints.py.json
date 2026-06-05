@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_inference_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_inference_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14500,
+  "content_sha256": "5c41365a8fef8db50f46b36fc4ce8fb45a34b0bf2427f911c1d3f84162bee5cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 456,
+    "non_empty_lines": 409,
+    "char_count": 14500,
+    "preview_lines": [
+      "\"\"\"CLI commands for Hugging Face Inference Endpoints.\"\"\"",
+      "import json",
+      "from typing import Annotated, Any, Optional",
+      "import typer",
+      "from huggingface_hub._inference_endpoints import InferenceEndpoint, InferenceEndpointScalingMetric",
+      "from huggingface_hub.errors import HfHubHTTPError",
+      "from ._cli_utils import (",
+      "    FormatOpt,",
+      "    OutputFormat,",
+      "    QuietOpt,"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Annotated, Any, Optional",
+      "import typer",
+      "from huggingface_hub._inference_endpoints import InferenceEndpoint, InferenceEndpointScalingMetric",
+      "from huggingface_hub.errors import HfHubHTTPError",
+      "from ._cli_utils import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_print_endpoint",
+      "ls",
+      "deploy",
+      "deploy_from_catalog",
+      "list_catalog",
+      "describe",
+      "update",
+      "delete",
+      "pause",
+      "resume",
+      "scale_to_zero"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_448_5c41365a8fef8db5_AI_Chariot_Legacy_666_1.0.0_20260508_inference_endpoints.py.json"
+}

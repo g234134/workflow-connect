@@ -1,0 +1,31 @@
+{
+  "artifact_id": "ART-REL-DEC",
+  "ticket_id": "W2-1-QA-REL",
+  "pilot_artifact_id": "W2-1-G8-RECON-PILOT",
+  "release_id": "W2-1-G8-RECON-PILOT-doc-auth-20260527",
+  "decision": "approve",
+  "release_scope": {
+    "summary": "G7↔G8 cross-reference cleanup — internal governance doc authority",
+    "files_effective": [
+      "workflow_v2/10_governance/G7_state_machine/20_entry_conditions.md",
+      "workflow_v2/10_governance/G7_state_machine/30_exit_and_transitions.md",
+      "workflow_v2/10_governance/G8_artifact_contract/30_engineering.md",
+      "workflow_v2/10_governance/G8_artifact_contract/README.md"
+    ],
+    "change_class": "CHG-GOV-DOC"
+  },
+  "scope": "internal-doc-authority",
+  "target_audience_or_env": "workflow_v2/10_governance/ readers",
+  "rollback_strategy_draft": "Forward-fix only: revert the four governance md files to pre-W2-1-ENG revision via VCS; no production traffic or CI gate affected. Re-open W2-1-ENG rework if cross-ref regression found during obs window.",
+  "qa_verdict_ref": {
+    "artifact": "06_art_qa_rev.json",
+    "ticket_id": "W2-1-QA-REL",
+    "verdict": "accepted_with_gaps",
+    "accepted": true
+  },
+  "dependencies_cleared": true,
+  "p0_blockers": [],
+  "decided_at": "2026-05-27",
+  "decided_by_role": "release",
+  "message": "Approve internal doc-authority release: QA accepted_with_gaps with known W2-3 deferrals only; not prod/CI enforcement."
+}

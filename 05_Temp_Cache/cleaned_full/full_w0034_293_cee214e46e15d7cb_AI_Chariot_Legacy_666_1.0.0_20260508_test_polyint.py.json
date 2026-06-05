@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_polyint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_polyint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38268,
+  "content_sha256": "cee214e46e15d7cb271ac40230d20aa2c66ca6184a9edd1f508f38e8d32d6048",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 972,
+    "non_empty_lines": 807,
+    "char_count": 38268,
+    "preview_lines": [
+      "import warnings",
+      "import io",
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "    xp_assert_equal, xp_assert_close, assert_array_almost_equal, assert_almost_equal",
+      ")",
+      "from pytest import raises as assert_raises",
+      "import pytest",
+      "from scipy.interpolate import (",
+      "    KroghInterpolator, krogh_interpolate,"
+    ],
+    "imports": [
+      "import warnings",
+      "import io",
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "from pytest import raises as assert_raises",
+      "import pytest",
+      "from scipy.interpolate import (",
+      "from scipy._lib._testutils import _run_concurrent_barrier"
+    ],
+    "classes": [
+      "TestKrogh",
+      "TestTaylor",
+      "TestBarycentric",
+      "TestPCHIP",
+      "TestCubicSpline",
+      "TestZeroSizeArrays"
+    ],
+    "functions": [
+      "check_shape",
+      "test_shapes",
+      "test_derivs_shapes",
+      "test_deriv_shapes",
+      "test_complex",
+      "test_CubicHermiteSpline_correctness",
+      "test_CubicHermiteSpline_error_handling",
+      "test_roots_extrapolate_gh_11185"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_293_cee214e46e15d7cb_AI_Chariot_Legacy_666_1.0.0_20260508_test_polyint.py.json"
+}

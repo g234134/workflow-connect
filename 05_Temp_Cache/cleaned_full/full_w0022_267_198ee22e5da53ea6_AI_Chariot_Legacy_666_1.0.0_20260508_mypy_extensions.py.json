@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 267,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mypy_extensions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mypy_extensions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7754,
+  "content_sha256": "198ee22e5da53ea6cb0fdd0f4e6d94fd2c40e0c6afbf0bf3a4cf0c112620a919",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 251,
+    "non_empty_lines": 180,
+    "char_count": 7754,
+    "preview_lines": [
+      "\"\"\"Defines experimental extensions to the standard \"typing\" module that are",
+      "supported by the mypy typechecker.",
+      "Example usage:",
+      "    from mypy_extensions import TypedDict",
+      "\"\"\"",
+      "from typing import Any, Dict",
+      "import sys",
+      "# _type_check is NOT a part of public typing API, it is used here only to mimic",
+      "# the (convenient) behavior of types provided by typing module.",
+      "from typing import _type_check  # type: ignore"
+    ],
+    "imports": [
+      "from mypy_extensions import TypedDict",
+      "from typing import Any, Dict",
+      "import sys",
+      "from typing import _type_check  # type: ignore",
+      "import warnings"
+    ],
+    "classes": [
+      "_TypedDictMeta",
+      "_DEPRECATED_NoReturn",
+      "_FlexibleAliasClsApplied",
+      "_FlexibleAliasCls",
+      "_NativeIntMeta",
+      "i64",
+      "i32",
+      "i16",
+      "u8"
+    ],
+    "functions": [
+      "_check_fails",
+      "_dict_new",
+      "_typeddict_new",
+      "Arg",
+      "DefaultArg",
+      "NamedArg",
+      "DefaultNamedArg",
+      "VarArg",
+      "KwArg",
+      "trait",
+      "mypyc_attr",
+      "_warn_deprecation",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_267_198ee22e5da53ea6_AI_Chariot_Legacy_666_1.0.0_20260508_mypy_extensions.py.json"
+}

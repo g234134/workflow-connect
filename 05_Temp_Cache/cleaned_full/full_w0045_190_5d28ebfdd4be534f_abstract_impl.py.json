@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_library\\abstract_impl.py",
+  "name": "abstract_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8058,
+  "content_sha256": "5d28ebfdd4be534fc00250ac9ed024f85bc787f7cacf44895f6d989ca3e4efe6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 206,
+    "non_empty_lines": 167,
+    "char_count": 8058,
+    "preview_lines": [
+      "import contextlib",
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Optional",
+      "import torch",
+      "from torch._library.utils import Kernel, RegistrationHandle",
+      "class AbstractImplHolder:",
+      "    \"\"\"A holder where one can register an abstract impl to.\"\"\"",
+      "    def __init__(self, qualname: str):",
+      "        self.qualname: str = qualname"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Optional",
+      "import torch",
+      "from torch._library.utils import Kernel, RegistrationHandle"
+    ],
+    "classes": [
+      "AbstractImplHolder",
+      "AbstractImplCtx"
+    ],
+    "functions": [
+      "construct_meta_kernel",
+      "get_none",
+      "set_ctx_getter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_190_5d28ebfdd4be534f_abstract_impl.py.json"
+}

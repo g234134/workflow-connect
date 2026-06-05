@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 99,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec256\\vec256_int.h",
+  "name": "vec256_int.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 60688,
+  "content_sha256": "866e9f7d53756180a8163bcb2661625f2684e63c096ae5e7c90625548aaf42de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1540,
+    "non_empty_lines": 1392,
+    "char_count": 60688,
+    "preview_lines": [
+      "#pragma once",
+      "// DO NOT DEFINE STATIC DATA IN THIS HEADER!",
+      "// See Note [Do not compile initializers with AVX]",
+      "#include <ATen/cpu/vec/intrinsics.h>",
+      "#include <ATen/cpu/vec/vec_base.h>",
+      "#include <c10/macros/Macros.h>",
+      "#include <c10/util/irange.h>",
+      "namespace at::vec {",
+      "inline namespace CPU_CAPABILITY {",
+      "#ifdef CPU_CAPABILITY_AVX2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_099_866e9f7d53756180_vec256_int.h.json"
+}

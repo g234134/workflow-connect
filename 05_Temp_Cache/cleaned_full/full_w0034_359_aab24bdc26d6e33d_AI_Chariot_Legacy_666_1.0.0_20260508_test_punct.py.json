@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 359,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_punct.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_punct.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4549,
+  "content_sha256": "aab24bdc26d6e33d8c86829a6abbecf9c01e5daf8c955011c09816e37028ad00",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 99,
+    "char_count": 4549,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.lang.punctuation import TOKENIZER_PREFIXES",
+      "from spacy.util import compile_prefix_regex",
+      "PUNCT_OPEN = [\"(\", \"[\", \"{\", \"*\"]",
+      "PUNCT_CLOSE = [\")\", \"]\", \"}\", \"*\"]",
+      "PUNCT_PAIRED = [(\"(\", \")\"), (\"[\", \"]\"), (\"{\", \"}\"), (\"*\", \"*\")]",
+      "@pytest.mark.parametrize(\"text\", [\"(\", \"((\", \"<\"])",
+      "def test_en_tokenizer_handles_only_punct(en_tokenizer, text):",
+      "    tokens = en_tokenizer(text)",
+      "    assert len(tokens) == len(text)"
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.lang.punctuation import TOKENIZER_PREFIXES",
+      "from spacy.util import compile_prefix_regex"
+    ],
+    "classes": [],
+    "functions": [
+      "test_en_tokenizer_handles_only_punct",
+      "test_en_tokenizer_splits_open_punct",
+      "test_en_tokenizer_splits_close_punct",
+      "test_en_tokenizer_splits_two_diff_open_punct",
+      "test_en_tokenizer_splits_two_diff_close_punct",
+      "test_en_tokenizer_splits_same_open_punct",
+      "test_en_tokenizer_splits_same_close_punct",
+      "test_en_tokenizer_splits_open_appostrophe",
+      "test_en_tokenizer_splits_double_end_quote",
+      "test_en_tokenizer_splits_open_close_punct",
+      "test_en_tokenizer_two_diff_punct",
+      "test_en_tokenizer_splits_pre_punct_regex",
+      "test_en_tokenizer_splits_bracket_period"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_359_aab24bdc26d6e33d_AI_Chariot_Legacy_666_1.0.0_20260508_test_punct.py.json"
+}

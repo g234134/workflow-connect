@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\agents\\output_parsers\\test_json.py",
+  "name": "test_json.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 769,
+  "content_sha256": "f1f12aabfc673500a2b43d1540e3002e182c3993c880c38e820d4edc501dcb3d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 24,
+    "char_count": 766,
+    "preview_lines": [
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from langchain_classic.agents.output_parsers.json import JSONAgentOutputParser",
+      "def test_tool_usage() -> None:",
+      "    parser = JSONAgentOutputParser()",
+      "    _input = \"\"\"    ```",
+      "{",
+      "  \"action\": \"search\",",
+      "  \"action_input\": \"2+2\"",
+      "}",
+      "```\"\"\""
+    ],
+    "imports": [
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from langchain_classic.agents.output_parsers.json import JSONAgentOutputParser"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tool_usage",
+      "test_finish"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_159_f1f12aabfc673500_test_json.py.json"
+}

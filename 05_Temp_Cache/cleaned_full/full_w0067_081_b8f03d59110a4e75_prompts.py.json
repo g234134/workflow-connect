@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 81,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\hyde\\prompts.py",
+  "name": "prompts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1972,
+  "content_sha256": "b8f03d59110a4e7535fe843dbab68ccec01593a785f38ae0b45687b869e813a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 45,
+    "char_count": 1969,
+    "preview_lines": [
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "web_search_template = \"\"\"Please write a passage to answer the question",
+      "Question: {QUESTION}",
+      "Passage:\"\"\"",
+      "web_search = PromptTemplate(template=web_search_template, input_variables=[\"QUESTION\"])",
+      "sci_fact_template = \"\"\"Please write a scientific paper passage to support/refute the claim",
+      "Claim: {Claim}",
+      "Passage:\"\"\"  # noqa: E501",
+      "sci_fact = PromptTemplate(template=sci_fact_template, input_variables=[\"Claim\"])",
+      "arguana_template = \"\"\"Please write a counter argument for the passage"
+    ],
+    "imports": [
+      "from langchain_core.prompts.prompt import PromptTemplate"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_081_b8f03d59110a4e75_prompts.py.json"
+}

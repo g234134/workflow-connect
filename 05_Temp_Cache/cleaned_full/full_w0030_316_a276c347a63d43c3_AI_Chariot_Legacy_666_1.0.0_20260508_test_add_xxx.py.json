@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 316,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_add_xxx.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_add_xxx.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5531,
+  "content_sha256": "a276c347a63d43c345008b59eb7cfed2ed97c9339229f7b71f9b93d0bb65486d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 184,
+    "non_empty_lines": 137,
+    "char_count": 5531,
+    "preview_lines": [
+      "# coding: utf-8",
+      "import re",
+      "import pytest  # NOQA",
+      "from .roundtrip import dedent",
+      "# from PyYAML docs",
+      "class Dice(tuple):",
+      "    def __new__(cls, a, b):",
+      "        return tuple.__new__(cls, [a, b])",
+      "    def __repr__(self):",
+      "        return \"Dice(%s,%s)\" % self"
+    ],
+    "imports": [
+      "import re",
+      "import pytest  # NOQA",
+      "from .roundtrip import dedent",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA"
+    ],
+    "classes": [
+      "Dice",
+      "Obj1",
+      "YAMLObj1"
+    ],
+    "functions": [
+      "dice_constructor",
+      "dice_representer",
+      "test_dice_constructor",
+      "test_dice_constructor_with_loader",
+      "test_dice_representer",
+      "test_dice_implicit_resolver",
+      "test_yaml_obj",
+      "test_yaml_obj_with_loader_and_dumper",
+      "test_issue_127"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_316_a276c347a63d43c3_AI_Chariot_Legacy_666_1.0.0_20260508_test_add_xxx.py.json"
+}

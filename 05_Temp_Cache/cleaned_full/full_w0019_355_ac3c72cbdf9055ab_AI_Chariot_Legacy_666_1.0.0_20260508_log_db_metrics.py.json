@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_log_db_metrics.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_log_db_metrics.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4821,
+  "content_sha256": "ac3c72cbdf9055ab207ad1e89d5276597396830f05620a9339adb008f88ad226",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 119,
+    "char_count": 4821,
+    "preview_lines": [
+      "\"\"\"",
+      "Handles logging DB success/failure to ServiceLogger()",
+      "ServiceLogger() then sends DB logs to Prometheus, OTEL, Datadog etc",
+      "\"\"\"",
+      "import asyncio",
+      "from datetime import datetime",
+      "from functools import wraps",
+      "from typing import Callable, Dict, Tuple",
+      "from litellm._service_logger import ServiceTypes",
+      "from litellm.litellm_core_utils.core_helpers import ("
+    ],
+    "imports": [
+      "import asyncio",
+      "from datetime import datetime",
+      "from functools import wraps",
+      "from typing import Callable, Dict, Tuple",
+      "from litellm._service_logger import ServiceTypes",
+      "from litellm.litellm_core_utils.core_helpers import (",
+      "from litellm.proxy.proxy_server import proxy_logging_obj",
+      "import httpx",
+      "from prisma.errors import PrismaError",
+      "from litellm.proxy.proxy_server import proxy_logging_obj"
+    ],
+    "classes": [],
+    "functions": [
+      "log_db_metrics",
+      "_is_exception_related_to_db"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_355_ac3c72cbdf9055ab_AI_Chariot_Legacy_666_1.0.0_20260508_log_db_metrics.py.json"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__operations.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__operations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14768,
+  "content_sha256": "147014aa7927f39007186c657302e82a4e62d9141306967e6749dcb8329b1a30",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 446,
+    "non_empty_lines": 394,
+    "char_count": 14768,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import itertools",
+      "import logging",
+      "import os",
+      "import uuid",
+      "from collections.abc import Iterable",
+      "from io import BufferedReader",
+      "from typing import Literal, Optional, Union, cast",
+      "from langsmith import schemas as ls_schemas",
+      "from langsmith._internal import _orjson"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import itertools",
+      "import logging",
+      "import os",
+      "import uuid",
+      "from collections.abc import Iterable",
+      "from io import BufferedReader",
+      "from typing import Literal, Optional, Union, cast",
+      "from langsmith import schemas as ls_schemas",
+      "from langsmith._internal import _orjson",
+      "from langsmith._internal._compressed_traces import CompressedTraces",
+      "from langsmith._internal._multipart import MultipartPart, MultipartPartsAndContext",
+      "from langsmith._internal._serde import dumps_json as _dumps_json"
+    ],
+    "classes": [
+      "SerializedRunOperation",
+      "SerializedFeedbackOperation"
+    ],
+    "functions": [
+      "serialize_feedback_dict",
+      "serialize_run_dict",
+      "combine_serialized_queue_operations",
+      "serialized_feedback_operation_to_multipart_parts_and_context",
+      "serialized_run_operation_to_multipart_parts_and_context",
+      "encode_multipart_parts_and_context",
+      "compress_multipart_parts_and_context"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_260_147014aa7927f390_AI_Chariot_Legacy_666_1.0.0_20260508__operations.py.json"
+}

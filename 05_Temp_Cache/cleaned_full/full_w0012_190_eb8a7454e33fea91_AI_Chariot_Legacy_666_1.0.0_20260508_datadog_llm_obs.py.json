@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_datadog_llm_obs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_datadog_llm_obs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35472,
+  "content_sha256": "eb8a7454e33fea9129961eac9463a5bcbfaabdc84940d70d23566de61c85f9d3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 852,
+    "non_empty_lines": 740,
+    "char_count": 35472,
+    "preview_lines": [
+      "\"\"\"",
+      "Implements logging integration with Datadog's LLM Observability Service",
+      "API Reference: https://docs.datadoghq.com/llm_observability/setup/api/?tab=example#api-standards",
+      "\"\"\"",
+      "import asyncio",
+      "import json",
+      "import os",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Literal, Optional, Union"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "import os",
+      "from litellm._uuid import uuid",
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Literal, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_batch_logger import CustomBatchLogger",
+      "from litellm.integrations.datadog.datadog_mock_client import (",
+      "from litellm.integrations.datadog.datadog_handler import (",
+      "from litellm.litellm_core_utils.dd_tracing import tracer",
+      "from litellm.litellm_core_utils.prompt_templates.common_utils import (",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.integrations.datadog_llm_obs import *",
+      "from litellm.types.utils import ("
+    ],
+    "classes": [
+      "DataDogLLMObsLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_190_eb8a7454e33fea91_AI_Chariot_Legacy_666_1.0.0_20260508_datadog_llm_obs.py.json"
+}

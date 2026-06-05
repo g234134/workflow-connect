@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 411,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cp932.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cp932.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1023,
+  "content_sha256": "99748e28113d2d49f5d666b49b78accd2c6e10a7852f7dd6dece9b5b71aa83c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 31,
+    "char_count": 1023,
+    "preview_lines": [
+      "#",
+      "# cp932.py: Python Unicode Codec for CP932",
+      "#",
+      "# Written by Hye-Shik Chang <perky@FreeBSD.org>",
+      "#",
+      "import _codecs_jp, codecs",
+      "import _multibytecodec as mbc",
+      "codec = _codecs_jp.getcodec('cp932')",
+      "class Codec(codecs.Codec):",
+      "    encode = codec.encode"
+    ],
+    "imports": [
+      "import _codecs_jp, codecs",
+      "import _multibytecodec as mbc"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamReader",
+      "StreamWriter"
+    ],
+    "functions": [
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_411_99748e28113d2d49_AI_Chariot_Legacy_666_1.0.0_20260508_cp932.py.json"
+}

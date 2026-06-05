@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\ops\\basic_strategy.py",
+  "name": "basic_strategy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6843,
+  "content_sha256": "77ddb43badb8321d9f57b0416470da0c5a17a6df2c28bc6ededb795c28399e24",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 184,
+    "non_empty_lines": 154,
+    "char_count": 6843,
+    "preview_lines": [
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import List, Tuple",
+      "from torch.distributed._tensor.op_schema import OpStrategy, PlacementStrategy",
+      "from torch.distributed._tensor.placement_types import (",
+      "    _Partial,",
+      "    DTensorSpec,",
+      "    Placement,",
+      "    Replicate,",
+      "    Shard,"
+    ],
+    "imports": [
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import List, Tuple",
+      "from torch.distributed._tensor.op_schema import OpStrategy, PlacementStrategy",
+      "from torch.distributed._tensor.placement_types import (",
+      "from torch.distributed.device_mesh import DeviceMesh"
+    ],
+    "classes": [
+      "EinsumDims"
+    ],
+    "functions": [
+      "gen_einsum_strategies"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_048_77ddb43badb8321d_basic_strategy.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 425,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cpp_template_kernel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cpp_template_kernel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15734,
+  "content_sha256": "47848851d65ec6fb8c24e77f069b5f3a25aadd6752096cb2a3d324666ac3220a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 384,
+    "non_empty_lines": 341,
+    "char_count": 15734,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import itertools",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "import sympy",
+      "from sympy.parsing.sympy_parser import parse_expr",
+      "import torch",
+      "from torch.utils._sympy.symbol import SymT",
+      "from .. import config, cpp_builder, ir, lowering as L",
+      "from ..autotune_process import CppBenchmarkRequest",
+      "from ..loop_body import LoopBody"
+    ],
+    "imports": [
+      "import itertools",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "import sympy",
+      "from sympy.parsing.sympy_parser import parse_expr",
+      "import torch",
+      "from torch.utils._sympy.symbol import SymT",
+      "from .. import config, cpp_builder, ir, lowering as L",
+      "from ..autotune_process import CppBenchmarkRequest",
+      "from ..loop_body import LoopBody",
+      "from ..select_algorithm import PartialRender",
+      "from ..utils import sympy_index_symbol, sympy_index_symbol_with_prefix",
+      "from ..virtualized import V",
+      "from .common import CppWrapperKernelArgs",
+      "from .cpp import CppKernel, CppKernelProxy, KernelGroup",
+      "from .cpp_utils import cexpr_index, DTYPE_TO_CPP, LocalBufferContext",
+      "from .cpp_wrapper_cpu import CppWrapperCpu"
+    ],
+    "classes": [
+      "CppTemplateKernel",
+      "CppTemplateCaller"
+    ],
+    "functions": [
+      "parse_expr_with_index_symbols",
+      "wrap_with_tensorbox"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_425_47848851d65ec6fb_AI_Chariot_Legacy_666_1.0.0_20260508_cpp_template_kernel.py.json"
+}

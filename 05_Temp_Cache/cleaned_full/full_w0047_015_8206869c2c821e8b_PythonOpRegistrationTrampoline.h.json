@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 15,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\PythonOpRegistrationTrampoline.h",
+  "name": "PythonOpRegistrationTrampoline.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 642,
+  "content_sha256": "8206869c2c821e8b37f63a2acf6c0edfc9e2a585ff78e6c4f7937eb55f986a5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 16,
+    "char_count": 642,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/dispatch/Dispatcher.h>",
+      "// TODO: this can probably live in c10",
+      "namespace at {",
+      "namespace impl {",
+      "class TORCH_API PythonOpRegistrationTrampoline final {",
+      "  static std::atomic<c10::impl::PyInterpreter*> interpreter_;",
+      "public:",
+      "  //  Returns true if you successfully registered yourself (that means",
+      "  //  you are in the hot seat for doing the operator registrations!)"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_015_8206869c2c821e8b_PythonOpRegistrationTrampoline.h.json"
+}

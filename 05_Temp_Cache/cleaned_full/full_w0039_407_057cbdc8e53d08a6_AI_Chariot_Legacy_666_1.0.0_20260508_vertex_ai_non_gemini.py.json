@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_non_gemini.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_non_gemini.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29923,
+  "content_sha256": "057cbdc8e53d08a6f5cf4ed6bd278e27807ff64887be7479b28f333b37373de9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 790,
+    "non_empty_lines": 713,
+    "char_count": 29923,
+    "preview_lines": [
+      "import json",
+      "import os",
+      "import time",
+      "from typing import Any, Callable, Optional, cast",
+      "import httpx",
+      "import litellm",
+      "from litellm.litellm_core_utils.core_helpers import map_finish_reason",
+      "from litellm.llms.bedrock.common_utils import ModelResponseIterator",
+      "from litellm.llms.custom_httpx.http_handler import _DEFAULT_TTL_FOR_HTTPX_CLIENTS",
+      "from litellm.types.llms.vertex_ai import *"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import time",
+      "from typing import Any, Callable, Optional, cast",
+      "import httpx",
+      "import litellm",
+      "from litellm.litellm_core_utils.core_helpers import map_finish_reason",
+      "from litellm.llms.bedrock.common_utils import ModelResponseIterator",
+      "from litellm.llms.custom_httpx.http_handler import _DEFAULT_TTL_FOR_HTTPX_CLIENTS",
+      "from litellm.types.llms.vertex_ai import *",
+      "from litellm.utils import CustomStreamWrapper, ModelResponse, Usage",
+      "import vertexai",
+      "import google.auth  # type: ignore",
+      "from google.cloud import aiplatform  # type: ignore",
+      "from google.cloud.aiplatform_v1beta1.types import (",
+      "from google.protobuf import json_format  # type: ignore",
+      "from google.protobuf.struct_pb2 import Value  # type: ignore",
+      "from vertexai.language_models import CodeGenerationModel, TextGenerationModel",
+      "from vertexai.preview.generative_models import GenerativeModel",
+      "from vertexai.preview.language_models import ChatModel, CodeChatModel"
+    ],
+    "classes": [
+      "VertexAIError",
+      "TextStreamer"
+    ],
+    "functions": [
+      "_get_client_cache_key",
+      "_get_client_from_cache",
+      "_set_client_in_cache",
+      "completion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_407_057cbdc8e53d08a6_AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_non_gemini.py.json"
+}

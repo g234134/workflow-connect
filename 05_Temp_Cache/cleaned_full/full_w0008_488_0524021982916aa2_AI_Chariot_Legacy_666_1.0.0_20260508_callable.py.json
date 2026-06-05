@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_callable.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_callable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5274,
+  "content_sha256": "0524021982916aa21d7dd689d3a970859ba7e0f706b73347795f5d4bfc74e2b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 151,
+    "char_count": 5274,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import inspect",
+      "from collections.abc import Awaitable, Callable, Coroutine",
+      "from contextlib import AsyncExitStack",
+      "from typing import Any, TypeAlias, cast, overload",
+      "from fast_depends import Provider",
+      "from pydantic import BaseModel, create_model",
+      "from typing_extensions import TypeVar as TypeVar313"
+    ],
+    "imports": [
+      "import inspect",
+      "from collections.abc import Awaitable, Callable, Coroutine",
+      "from contextlib import AsyncExitStack",
+      "from typing import Any, TypeAlias, cast, overload",
+      "from fast_depends import Provider",
+      "from pydantic import BaseModel, create_model",
+      "from typing_extensions import TypeVar as TypeVar313",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.utils import CONTEXT_OPTION_NAME, build_model",
+      "from .proto import ResponseProto",
+      "from .schema import ResponseSchema"
+    ],
+    "classes": [
+      "CallableResponse"
+    ],
+    "functions": [
+      "response_schema",
+      "response_schema",
+      "response_schema",
+      "response_schema",
+      "_unwrap_message_to_fast_depends_decorator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_488_0524021982916aa2_AI_Chariot_Legacy_666_1.0.0_20260508_callable.py.json"
+}

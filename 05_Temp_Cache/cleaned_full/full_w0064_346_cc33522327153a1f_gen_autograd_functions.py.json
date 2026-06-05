@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\packaged\\autograd\\gen_autograd_functions.py",
+  "name": "gen_autograd_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33003,
+  "content_sha256": "cc33522327153a1fa7fd9eb5641ffe7a821dfc1d0a76ed4287ebab93dcbabe4b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 912,
+    "non_empty_lines": 842,
+    "char_count": 33003,
+    "preview_lines": [
+      "# Generates C++ autograd functions for the derivatives of ATen operations",
+      "#",
+      "# This writes two files:",
+      "#  Functions.h/cpp: subclasses of autograd::Node",
+      "#  python_functions.h/cpp: Python bindings for the above classes",
+      "#",
+      "from typing import Dict, List, Sequence, Tuple",
+      "from torchgen.api.autograd import (",
+      "    Derivative,",
+      "    DifferentiabilityInfo,"
+    ],
+    "imports": [
+      "from typing import Dict, List, Sequence, Tuple",
+      "from torchgen.api.autograd import (",
+      "from torchgen.api.types import (",
+      "from torchgen.code_template import CodeTemplate",
+      "from torchgen.model import Argument, FunctionSchema",
+      "from torchgen.utils import FileManager",
+      "from .gen_inplace_or_view_type import VIEW_FUNCTIONS"
+    ],
+    "classes": [],
+    "functions": [
+      "get_infos_with_derivatives_list",
+      "gen_autograd_functions_lib",
+      "gen_autograd_functions_python",
+      "process_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_346_cc33522327153a1f_gen_autograd_functions.py.json"
+}

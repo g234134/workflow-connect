@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 307,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_rng.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_rng.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9450,
+  "content_sha256": "d6dafee81e8f6bbfa6845bd975a7bce96849f9c4aca08516f8ac73bc16c15a22",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 266,
+    "non_empty_lines": 217,
+    "char_count": 9450,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from collections import defaultdict",
+      "from typing import Callable, Dict",
+      "import torch",
+      "import torch._decomp as decomp",
+      "from torch._decomp import get_decompositions",
+      "from torch._ops import OpOverload",
+      "aten = torch.ops.aten"
+    ],
+    "imports": [
+      "import functools",
+      "from collections import defaultdict",
+      "from typing import Callable, Dict",
+      "import torch",
+      "import torch._decomp as decomp",
+      "from torch._decomp import get_decompositions",
+      "from torch._ops import OpOverload"
+    ],
+    "classes": [
+      "PhiloxState",
+      "PhiloxStateTracker"
+    ],
+    "functions": [
+      "register_rng_decomposition",
+      "throw_on_non_cuda",
+      "rand",
+      "rand_like",
+      "bernoulli_",
+      "bernoulli_p"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_307_d6dafee81e8f6bbf_AI_Chariot_Legacy_666_1.0.0_20260508_decompositions_for_rng.py.json"
+}

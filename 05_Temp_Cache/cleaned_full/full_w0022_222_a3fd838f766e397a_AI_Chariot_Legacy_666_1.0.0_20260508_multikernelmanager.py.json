@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multikernelmanager.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multikernelmanager.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22550,
+  "content_sha256": "a3fd838f766e397affcf151847be674c6b334b90836f266de73606fdbde706d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 623,
+    "non_empty_lines": 518,
+    "char_count": 22550,
+    "preview_lines": [
+      "\"\"\"A kernel manager for multiple kernels\"\"\"",
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import json",
+      "import os",
+      "import socket",
+      "import typing as t",
+      "import uuid"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import json",
+      "import os",
+      "import socket",
+      "import typing as t",
+      "import uuid",
+      "from functools import wraps",
+      "from pathlib import Path",
+      "import zmq",
+      "from traitlets import Any, Bool, Dict, DottedObjectName, Instance, Unicode, default, observe",
+      "from traitlets.config.configurable import LoggingConfigurable",
+      "from traitlets.utils.importstring import import_item",
+      "from .connect import KernelConnectionInfo",
+      "from .kernelspec import NATIVE_KERNEL_NAME, KernelSpecManager",
+      "from .manager import KernelManager",
+      "from .utils import ensure_async, run_sync, utcnow"
+    ],
+    "classes": [
+      "DuplicateKernelError",
+      "MultiKernelManager",
+      "AsyncMultiKernelManager"
+    ],
+    "functions": [
+      "kernel_method"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_222_a3fd838f766e397a_AI_Chariot_Legacy_666_1.0.0_20260508_multikernelmanager.py.json"
+}

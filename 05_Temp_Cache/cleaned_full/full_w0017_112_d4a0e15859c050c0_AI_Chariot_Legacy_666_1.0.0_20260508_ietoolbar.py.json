@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 112,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ietoolbar.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ietoolbar.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11148,
+  "content_sha256": "d4a0e15859c050c05e133a0a97e8bbf03439056a9768cf97f4b58fcfba1e37c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 368,
+    "non_empty_lines": 309,
+    "char_count": 11147,
+    "preview_lines": [
+      "# -*- coding: latin-1 -*-",
+      "# PyWin32 Internet Explorer Toolbar",
+      "#",
+      "# written by Leonard Ritter (paniq@gmx.net)",
+      "# and Robert Förtsch (info@robert-foertsch.com)",
+      "\"\"\"",
+      "This sample implements a simple IE Toolbar COM server",
+      "supporting Windows XP styles and access to",
+      "the IWebBrowser2 interface.",
+      "It also demonstrates how to hijack the parent window"
+    ],
+    "imports": [
+      "import array",
+      "import struct",
+      "import sys",
+      "import winreg",
+      "import commctrl",
+      "import pythoncom",
+      "import win32com",
+      "import win32con",
+      "import win32gui",
+      "import win32ui",
+      "from win32com.axcontrol import axcontrol",
+      "from win32com.client import Dispatch, gencache",
+      "from win32com.shell import shell",
+      "from win32com.shell.shellcon import DBIMF_VARIABLEHEIGHT"
+    ],
+    "classes": [
+      "WIN32STRUCT",
+      "TBBUTTON",
+      "Stub",
+      "IEToolbarCtrl",
+      "IEToolbar"
+    ],
+    "functions": [
+      "DllInstall",
+      "DllRegisterServer",
+      "DllUnregisterServer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_112_d4a0e15859c050c0_AI_Chariot_Legacy_666_1.0.0_20260508_ietoolbar.py.json"
+}

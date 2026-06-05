@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 386,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_qdrant_edge_storage.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_qdrant_edge_storage.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32783,
+  "content_sha256": "16ff1b14087f66df9200e0e29950aaf56cccf76727623ed07918f2b9c56aa1a6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 872,
+    "non_empty_lines": 786,
+    "char_count": 32783,
+    "preview_lines": [
+      "\"\"\"Qdrant Edge storage backend for the unified memory system.",
+      "Uses a write-local/sync-central pattern for safe multi-process access.",
+      "Each worker process writes to its own local shard (keyed by PID). Reads",
+      "fan out to both local and central shards, merging results. On close,",
+      "local records are flushed to the shared central shard.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import atexit",
+      "from datetime import datetime, timezone"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import atexit",
+      "from datetime import datetime, timezone",
+      "import logging",
+      "import os",
+      "from pathlib import Path",
+      "import shutil",
+      "from typing import Any, Final",
+      "import uuid",
+      "from qdrant_edge import (",
+      "from crewai.memory.types import MemoryRecord, ScopeInfo",
+      "from the first saved embedding when ``None``.",
+      "from crewai.utilities.paths import db_storage_path"
+    ],
+    "classes": [
+      "QdrantEdgeStorage"
+    ],
+    "functions": [
+      "_uuid_to_point_id",
+      "_build_scope_ancestors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_386_16ff1b14087f66df_AI_Chariot_Legacy_666_1.0.0_20260508_qdrant_edge_storage.py.json"
+}

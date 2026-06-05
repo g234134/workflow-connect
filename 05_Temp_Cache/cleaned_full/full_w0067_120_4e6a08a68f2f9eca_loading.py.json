@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\qa_with_sources\\loading.py",
+  "name": "loading.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8050,
+  "content_sha256": "4e6a08a68f2f9eca30d3e27828412c9ec86613a1b5965a35783c17175ad902fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 214,
+    "non_empty_lines": 195,
+    "char_count": 8047,
+    "preview_lines": [
+      "\"\"\"Load question answering with sources chains.\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from typing import Any, Protocol",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_classic.chains.combine_documents.base import BaseCombineDocumentsChain",
+      "from langchain_classic.chains.combine_documents.map_reduce import (",
+      "    MapReduceDocumentsChain,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from typing import Any, Protocol",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_classic.chains.combine_documents.base import BaseCombineDocumentsChain",
+      "from langchain_classic.chains.combine_documents.map_reduce import (",
+      "from langchain_classic.chains.combine_documents.map_rerank import (",
+      "from langchain_classic.chains.combine_documents.reduce import ReduceDocumentsChain",
+      "from langchain_classic.chains.combine_documents.refine import RefineDocumentsChain",
+      "from langchain_classic.chains.combine_documents.stuff import StuffDocumentsChain",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.qa_with_sources import (",
+      "from langchain_classic.chains.question_answering.map_rerank_prompt import ("
+    ],
+    "classes": [
+      "LoadingCallable"
+    ],
+    "functions": [
+      "_load_map_rerank_chain",
+      "_load_stuff_chain",
+      "_load_map_reduce_chain",
+      "_load_refine_chain",
+      "load_qa_with_sources_chain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_120_4e6a08a68f2f9eca_loading.py.json"
+}

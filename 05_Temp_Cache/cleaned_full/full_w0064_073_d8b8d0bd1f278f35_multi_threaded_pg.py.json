@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 73,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\distributed\\multi_threaded_pg.py",
+  "name": "multi_threaded_pg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16993,
+  "content_sha256": "d8b8d0bd1f278f359cd4f4ed8b50d0270f5f7fe31cc8fbd83afe44a123c89bb9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 473,
+    "non_empty_lines": 382,
+    "char_count": 16993,
+    "preview_lines": [
+      "import sys",
+      "import threading",
+      "from dataclasses import dataclass",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "from functools import partial, reduce",
+      "import torch",
+      "import torch.distributed as dist",
+      "import weakref",
+      "from torch._C._distributed_c10d import (",
+      "    _create_work_from_future,"
+    ],
+    "imports": [
+      "import sys",
+      "import threading",
+      "from dataclasses import dataclass",
+      "from typing import Dict, List, Optional, Tuple, Union",
+      "from functools import partial, reduce",
+      "import torch",
+      "import torch.distributed as dist",
+      "import weakref",
+      "from torch._C._distributed_c10d import (",
+      "from torch.distributed.distributed_c10d import _CollOp, _store_based_barrier, P2POp",
+      "from torch.futures import Future",
+      "from torch.utils import _pytree as pytree"
+    ],
+    "classes": [
+      "AllToAll",
+      "AllReduce",
+      "AllGather",
+      "Scatter",
+      "Gather",
+      "ReduceScatter",
+      "Broadcast",
+      "Collective",
+      "ProcessLocalGroup",
+      "WorldData",
+      "ThreadLocalWorld"
+    ],
+    "functions": [
+      "flatten_list",
+      "ret_work",
+      "binop_reduce",
+      "bitwise_reduce",
+      "_create_threaded_pg",
+      "_install_threaded_pg",
+      "_uninstall_threaded_pg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_073_d8b8d0bd1f278f35_multi_threaded_pg.py.json"
+}

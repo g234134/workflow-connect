@@ -1,0 +1,60 @@
+# Phase 3 / Phase 5 baseline alerts (dev/staging v1 · investigation only).
+# Canonical copy at chariot root; keep in sync with gov_core_system/config/alert_rules.example.yaml.
+# Loaded by alert_rule_loader when PG budget_rules empty (after local config YAML).
+# Production path: budget_rules table (Departments/05_Data_Vault/db).
+
+tier: dev_staging_v1
+investigation_only: true
+
+rules:
+  # 1) Token cost abnormal rise — 15m rolling sum vs typical window
+  - rule_name: token_cost_15m
+    enabled: true
+    comparison: above
+    unit: usd
+    window: 15m
+    min_samples: 3
+    warning_threshold: 0.02
+    critical_threshold: 0.05
+    metadata:
+      description: "Sum of total_cost_usd in 15m window; token spend spike"
+
+  # 2) Error rate above threshold
+  - rule_name: error_rate_15m
+    enabled: true
+    comparison: above
+    unit: ratio
+    window: 15m
+    min_samples: 5
+    warning_threshold: 0.08
+    critical_threshold: 0.12
+
+  # 3) External API / tool failures sustained
+  - rule_name: tool_failure_rate_15m
+    enabled: true
+    comparison: above
+    unit: ratio
+    window: 15m
+    min_samples: 5
+    warning_threshold: 0.15
+    critical_threshold: 0.25
+    metadata:
+      description: "Share of task_runs with error_type=tool_error in 15m window"
+
+  # Retained Phase 5 defaults (optional)
+  - rule_name: biz_success_rate_15m
+    enabled: true
+    comparison: below
+    unit: ratio
+    window: 15m
+    min_samples: 5
+    warning_threshold: 0.90
+    critical_threshold: 0.85
+
+  - rule_name: daily_cost_usd
+    enabled: true
+    comparison: above
+    unit: usd
+    window: 1d
+    warning_threshold: 40
+    critical_threshold: 50

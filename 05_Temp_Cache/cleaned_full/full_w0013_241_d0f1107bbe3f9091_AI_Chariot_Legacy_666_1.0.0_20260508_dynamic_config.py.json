@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_config.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_config.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5588,
+  "content_sha256": "d0f1107bbe3f90911b6fc333821fa4edb73691057687a2b061da377287c18bbb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 148,
+    "non_empty_lines": 117,
+    "char_count": 5588,
+    "preview_lines": [
+      "\"\"\"",
+      "Dynamic configuration class generator for JSON-based providers.",
+      "\"\"\"",
+      "from typing import Any, Coroutine, List, Literal, Optional, Tuple, Union, overload",
+      "from litellm.litellm_core_utils.prompt_templates.common_utils import (",
+      "    handle_messages_with_content_list_to_str_conversion,",
+      ")",
+      "from litellm.llms.openai.chat.gpt_transformation import OpenAIGPTConfig",
+      "from litellm.llms.openai_like.chat.transformation import OpenAILikeChatConfig",
+      "from litellm.secret_managers.main import get_secret_str"
+    ],
+    "imports": [
+      "from typing import Any, Coroutine, List, Literal, Optional, Tuple, Union, overload",
+      "from litellm.litellm_core_utils.prompt_templates.common_utils import (",
+      "from litellm.llms.openai.chat.gpt_transformation import OpenAIGPTConfig",
+      "from litellm.llms.openai_like.chat.transformation import OpenAILikeChatConfig",
+      "from litellm.secret_managers.main import get_secret_str",
+      "from litellm.types.llms.openai import AllMessageValues",
+      "from .json_loader import SimpleProviderConfig"
+    ],
+    "classes": [],
+    "functions": [
+      "create_config_class"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_241_d0f1107bbe3f9091_AI_Chariot_Legacy_666_1.0.0_20260508_dynamic_config.py.json"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_attributeruler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_attributeruler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13979,
+  "content_sha256": "c6f0b97f4481269db7ad25f1c984e62847ddc1fbd95ab03c9d09a964f8a146cb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 355,
+    "non_empty_lines": 300,
+    "char_count": 13979,
+    "preview_lines": [
+      "import importlib",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple, Union",
+      "import srsly",
+      "from .. import util",
+      "from ..errors import Errors",
+      "from ..language import Language",
+      "from ..matcher import Matcher",
+      "from ..scorer import Scorer",
+      "from ..symbols import IDS"
+    ],
+    "imports": [
+      "import importlib",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple, Union",
+      "import srsly",
+      "from .. import util",
+      "from ..errors import Errors",
+      "from ..language import Language",
+      "from ..matcher import Matcher",
+      "from ..scorer import Scorer",
+      "from ..symbols import IDS",
+      "from ..tokens import Doc, Span",
+      "from ..tokens._retokenize import normalize_token_attrs, set_token_attrs",
+      "from ..training import Example",
+      "from ..util import SimpleFrozenList",
+      "from ..vocab import Vocab",
+      "from .pipe import Pipe"
+    ],
+    "classes": [
+      "AttributeRuler"
+    ],
+    "functions": [
+      "attribute_ruler_score",
+      "make_attribute_ruler_scorer",
+      "_split_morph_attrs",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_223_c6f0b97f4481269d_AI_Chariot_Legacy_666_1.0.0_20260508_attributeruler.py.json"
+}

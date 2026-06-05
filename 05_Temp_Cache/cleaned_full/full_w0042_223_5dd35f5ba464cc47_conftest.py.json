@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:47:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\conftest.py",
+  "name": "conftest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8900,
+  "content_sha256": "5dd35f5ba464cc47dbb19cdd1b185e0319a20251fce2406e79929337be5647b7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 248,
+    "non_empty_lines": 207,
+    "char_count": 8900,
+    "preview_lines": [
+      "\"\"\"",
+      "Pytest configuration and fixtures for the Numpy test suite.",
+      "\"\"\"",
+      "import os",
+      "import sys",
+      "import tempfile",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "import hypothesis"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import tempfile",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "import hypothesis",
+      "import pytest",
+      "import numpy",
+      "from numpy._core._multiarray_tests import get_fpu_mode",
+      "from numpy.testing._private.utils import NOGIL_BUILD",
+      "from scipy_doctest.conftest import dt_config",
+      "import pytest_run_parallel  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "pytest_configure",
+      "pytest_addoption",
+      "pytest_sessionstart",
+      "pytest_terminal_summary",
+      "pytest_itemcollected",
+      "check_fpu_mode",
+      "add_np"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_223_5dd35f5ba464cc47_conftest.py.json"
+}

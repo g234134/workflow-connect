@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_edgebfs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_edgebfs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4702,
+  "content_sha256": "f28a650aed1f72ddd08a94f4241d3edbdd8403668e9bccd694c90f79d7deea26",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 147,
+    "non_empty_lines": 128,
+    "char_count": 4702,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.traversal.edgedfs import FORWARD, REVERSE",
+      "class TestEdgeBFS:",
+      "    @classmethod",
+      "    def setup_class(cls):",
+      "        cls.nodes = [0, 1, 2, 3]",
+      "        cls.edges = [(0, 1), (1, 0), (1, 0), (2, 0), (2, 1), (3, 1)]",
+      "    def test_empty(self):",
+      "        G = nx.Graph()"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.traversal.edgedfs import FORWARD, REVERSE"
+    ],
+    "classes": [
+      "TestEdgeBFS"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_126_f28a650aed1f72dd_AI_Chariot_Legacy_666_1.0.0_20260508_test_edgebfs.py.json"
+}

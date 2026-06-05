@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\conftest_store.py",
+  "name": "conftest_store.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4836,
+  "content_sha256": "72d7df4744782c5d1803cff0f888518f163503323109010332bf94f7a680ced0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 127,
+    "char_count": 4833,
+    "preview_lines": [
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from uuid import uuid4",
+      "from langgraph.store.memory import InMemoryStore",
+      "from langgraph.store.postgres import AsyncPostgresStore, PostgresStore",
+      "from psycopg import AsyncConnection, Connection",
+      "DEFAULT_POSTGRES_URI = \"postgres://postgres:postgres@localhost:5442/\"",
+      "@contextmanager",
+      "def _store_memory():",
+      "    store = InMemoryStore()",
+      "    yield store"
+    ],
+    "imports": [
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from uuid import uuid4",
+      "from langgraph.store.memory import InMemoryStore",
+      "from langgraph.store.postgres import AsyncPostgresStore, PostgresStore",
+      "from psycopg import AsyncConnection, Connection"
+    ],
+    "classes": [],
+    "functions": [
+      "_store_memory",
+      "_store_postgres",
+      "_store_postgres_pipe",
+      "_store_postgres_pool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_126_72d7df4744782c5d_conftest_store.py.json"
+}

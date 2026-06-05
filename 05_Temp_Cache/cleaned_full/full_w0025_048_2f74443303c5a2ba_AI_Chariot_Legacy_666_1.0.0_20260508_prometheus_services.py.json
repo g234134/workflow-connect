@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_services.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_services.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11340,
+  "content_sha256": "2f74443303c5a2ba4b3e85ee325e7ac3f8c104ca2d24fdfd68b2f5f992b41921",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 248,
+    "char_count": 11340,
+    "preview_lines": [
+      "# used for monitoring litellm services health on `/metrics` endpoint on LiteLLM Proxy",
+      "#### What this does ####",
+      "#    On success + failure, log events to Prometheus for litellm / adjacent services (litellm, redis, postgres, llm api providers)",
+      "from typing import Dict, List, Optional, Union",
+      "from litellm._logging import print_verbose, verbose_logger",
+      "from litellm.types.integrations.prometheus import LATENCY_BUCKETS",
+      "from litellm.types.services import (",
+      "    DEFAULT_SERVICE_CONFIGS,",
+      "    ServiceLoggerPayload,",
+      "    ServiceMetrics,"
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional, Union",
+      "from litellm._logging import print_verbose, verbose_logger",
+      "from litellm.types.integrations.prometheus import LATENCY_BUCKETS",
+      "from litellm.types.services import (",
+      "from prometheus_client import REGISTRY, Counter, Gauge, Histogram",
+      "from prometheus_client.gc_collector import Collector"
+    ],
+    "classes": [
+      "PrometheusServicesLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_048_2f74443303c5a2ba_AI_Chariot_Legacy_666_1.0.0_20260508_prometheus_services.py.json"
+}

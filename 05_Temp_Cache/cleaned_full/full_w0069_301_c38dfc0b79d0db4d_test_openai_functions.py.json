@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 301,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\runnables\\test_openai_functions.py",
+  "name": "test_openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3107,
+  "content_sha256": "c38dfc0b79d0db4de19a91961efa7c684801d47d9068bd4d273a6f4ae6ba1edc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 84,
+    "char_count": 3104,
+    "preview_lines": [
+      "from typing import Any",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, BaseMessage",
+      "from langchain_core.outputs import ChatGeneration, ChatResult",
+      "from pytest_mock import MockerFixture",
+      "from syrupy.assertion import SnapshotAssertion",
+      "from typing_extensions import override",
+      "from langchain_classic.runnables.openai_functions import OpenAIFunctionsRouter",
+      "class FakeChatOpenAI(BaseChatModel):"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, BaseMessage",
+      "from langchain_core.outputs import ChatGeneration, ChatResult",
+      "from pytest_mock import MockerFixture",
+      "from syrupy.assertion import SnapshotAssertion",
+      "from typing_extensions import override",
+      "from langchain_classic.runnables.openai_functions import OpenAIFunctionsRouter"
+    ],
+    "classes": [
+      "FakeChatOpenAI"
+    ],
+    "functions": [
+      "test_openai_functions_router"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_301_c38dfc0b79d0db4d_test_openai_functions.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_approx_clust_coeff.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_approx_clust_coeff.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1171,
+  "content_sha256": "3c639510a7f605c26ed6fbe366b813941069c0cf15eadef2080363c92f67585d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 28,
+    "char_count": 1171,
+    "preview_lines": [
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import average_clustering",
+      "# This approximation has to be exact in regular graphs",
+      "# with no triangles or with all possible triangles.",
+      "def test_petersen():",
+      "    # Actual coefficient is 0",
+      "    G = nx.petersen_graph()",
+      "    assert average_clustering(G, trials=len(G) // 2) == nx.average_clustering(G)",
+      "def test_petersen_seed():",
+      "    # Actual coefficient is 0"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import average_clustering"
+    ],
+    "classes": [],
+    "functions": [
+      "test_petersen",
+      "test_petersen_seed",
+      "test_tetrahedral",
+      "test_dodecahedral",
+      "test_empty",
+      "test_complete"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_387_3c639510a7f605c2_AI_Chariot_Legacy_666_1.0.0_20260508_test_approx_clust_coeff.py.json"
+}

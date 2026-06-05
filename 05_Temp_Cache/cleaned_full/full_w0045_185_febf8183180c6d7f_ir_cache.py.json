@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lazy\\ir_cache.py",
+  "name": "ir_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 334,
+  "content_sha256": "febf8183180c6d7f71e9d62d747f7ef7b5698c4670ec7199ca45e4e006d29e7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 334,
+    "preview_lines": [
+      "import torch._C._lazy",
+      "def dump(dot_file_name: str):",
+      "    \"\"\"Dump TrieCache in the dot format\"\"\"",
+      "    return torch._C._lazy._dump_ir_cache(dot_file_name)",
+      "def reset():",
+      "    \"\"\"Clear TrieCache. This is needed in testing to avoid",
+      "    node reusing between different tests.",
+      "    \"\"\"",
+      "    return torch._C._lazy._clear_ir_cache()"
+    ],
+    "imports": [
+      "import torch._C._lazy"
+    ],
+    "classes": [],
+    "functions": [
+      "dump",
+      "reset"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_185_febf8183180c6d7f_ir_cache.py.json"
+}

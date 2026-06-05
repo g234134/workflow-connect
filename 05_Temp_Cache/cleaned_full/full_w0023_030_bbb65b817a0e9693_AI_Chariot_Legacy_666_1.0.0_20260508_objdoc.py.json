@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_objdoc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_objdoc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1778,
+  "content_sha256": "bbb65b817a0e9693e27ee0e2d590acde8f2aeb0a8893a6983d803cc9d5930d33",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 42,
+    "char_count": 1778,
+    "preview_lines": [
+      "# This is a sample file, and shows the basic framework for using an \"Object\" based",
+      "# document, rather than a \"filename\" based document.",
+      "# This is referenced by the Pythonwin .html documentation.",
+      "# In the example below, the OpenObject() method is used instead of OpenDocumentFile,",
+      "# and all the core MFC document open functionality is retained.",
+      "import win32ui",
+      "from pywin.mfc import docview",
+      "class object_template(docview.DocTemplate):",
+      "    def __init__(self):",
+      "        docview.DocTemplate.__init__(self, None, None, None, object_view)"
+    ],
+    "imports": [
+      "import win32ui",
+      "from pywin.mfc import docview",
+      "import demoutils"
+    ],
+    "classes": [
+      "object_template",
+      "object_document",
+      "object_view"
+    ],
+    "functions": [
+      "demo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_030_bbb65b817a0e9693_AI_Chariot_Legacy_666_1.0.0_20260508_objdoc.py.json"
+}

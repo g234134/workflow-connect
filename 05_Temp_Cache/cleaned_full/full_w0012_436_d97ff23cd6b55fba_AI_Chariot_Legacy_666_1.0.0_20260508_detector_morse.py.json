@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_detector_morse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_detector_morse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8238,
+  "content_sha256": "d97ff23cd6b55fba02176b2f699bf0eddc0b472dff7206294baf6bd64bb83005",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 247,
+    "non_empty_lines": 211,
+    "char_count": 8238,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "\"\"\"Sentence segmentor \"DetectorMorse\" by Kyle Gorman",
+      "Thin wrappers by Hobson Lane",
+      "\"\"\"",
+      "# Copyright (c) 2014 Kyle Gorman <gormanky@ohsu.edu>",
+      "#",
+      "# Permission is hereby granted, free of charge, to any person obtaining a",
+      "# copy of this software and associated documentation files (the",
+      "# \"Software\"), to deal in the Software without restriction, including"
+    ],
+    "imports": [
+      "from __future__ import division, print_function, absolute_import  # , unicode_literals",
+      "from builtins import (  # noqa",
+      "from future import standard_library",
+      "from collections import namedtuple",
+      "import logging",
+      "from re import finditer, match, search",
+      "from .penn_treebank_tokenizer import word_tokenize",
+      "from nlup import case_feature, isnumberlike, listify, BinaryAveragedPerceptron, BinaryConfusion, IO, JSONable"
+    ],
+    "classes": [
+      "Detector"
+    ],
+    "functions": [
+      "slurp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_436_d97ff23cd6b55fba_AI_Chariot_Legacy_666_1.0.0_20260508_detector_morse.py.json"
+}

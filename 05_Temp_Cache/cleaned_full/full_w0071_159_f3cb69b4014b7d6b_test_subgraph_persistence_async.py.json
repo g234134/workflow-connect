@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\test_subgraph_persistence_async.py",
+  "name": "test_subgraph_persistence_async.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23299,
+  "content_sha256": "f3cb69b4014b7d6bd81c502a337734f32469c3f6b370460e7a4a2c18091806e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 662,
+    "non_empty_lines": 559,
+    "char_count": 23296,
+    "preview_lines": [
+      "\"\"\"Tests for subgraph persistence behavior (async).",
+      "Covers three checkpointer settings for subgraph state:",
+      "- checkpointer=False: no persistence, even when parent has a checkpointer",
+      "- checkpointer=None (default): \"stateless\" ??inherits parent checkpointer for",
+      "  interrupt support, but state resets each invocation. This is the common case",
+      "  when an agent is invoked from inside a tool used by another agent.",
+      "- checkpointer=True: \"stateful\" ??state accumulates across invocations on the same thread id",
+      "\"\"\"",
+      "import sys",
+      "from uuid import uuid4"
+    ],
+    "imports": [
+      "import sys",
+      "from uuid import uuid4",
+      "import pytest",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver",
+      "from typing_extensions import TypedDict",
+      "from langgraph.graph import START, StateGraph",
+      "from langgraph.graph.message import MessagesState",
+      "from langgraph.types import Command, Interrupt, interrupt",
+      "from tests.any_str import AnyStr"
+    ],
+    "classes": [
+      "ParentState"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_159_f3cb69b4014b7d6b_test_subgraph_persistence_async.py.json"
+}

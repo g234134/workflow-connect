@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 213,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multi_task.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multi_task.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9411,
+  "content_sha256": "bb01f30ecd1c6fc66ccc5d4a0d1759a2a599e21a683262078adaf3ba3a86a001",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 270,
+    "non_empty_lines": 233,
+    "char_count": 9411,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Callable, Iterable, List, Optional, Tuple, cast",
+      "import numpy",
+      "from thinc.api import (",
+      "    CosineDistance,",
+      "    L2Distance,",
+      "    LayerNorm,",
+      "    Linear,",
+      "    Maxout,",
+      "    Model,"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Callable, Iterable, List, Optional, Tuple, cast",
+      "import numpy",
+      "from thinc.api import (",
+      "from thinc.loss import Loss",
+      "from thinc.types import Floats2d, Ints1d",
+      "from ...attrs import ID, ORTH",
+      "from ...errors import Errors",
+      "from ...util import OOV_RANK",
+      "from ...vectors import Mode as VectorsMode",
+      "from ...tokens.doc import Doc  # noqa: F401",
+      "from ...vocab import Vocab  # noqa: F401"
+    ],
+    "classes": [
+      "_RandomWords"
+    ],
+    "functions": [
+      "create_pretrain_vectors",
+      "create_pretrain_characters",
+      "get_vectors_loss",
+      "get_characters_loss",
+      "build_multi_task_model",
+      "build_cloze_multi_task_model",
+      "build_cloze_characters_multi_task_model",
+      "build_masked_language_model",
+      "_apply_mask",
+      "_replace_word"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_213_bb01f30ecd1c6fc6_AI_Chariot_Legacy_666_1.0.0_20260508_multi_task.py.json"
+}

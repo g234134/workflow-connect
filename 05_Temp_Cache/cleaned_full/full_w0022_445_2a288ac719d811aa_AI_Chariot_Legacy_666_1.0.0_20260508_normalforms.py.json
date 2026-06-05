@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 445,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_normalforms.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_normalforms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3808,
+  "content_sha256": "2a288ac719d811aa00ef95098d8146a952e2a60ada3651b70e587d13673543b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 96,
+    "char_count": 3808,
+    "preview_lines": [
+      "'''Functions returning normal forms of matrices'''",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.matrices import DomainMatrix",
+      "from sympy.polys.matrices.normalforms import (",
+      "        smith_normal_form as _snf,",
+      "        invariant_factors as _invf,",
+      "        hermite_normal_form as _hnf,",
+      "    )",
+      "def _to_domain(m, domain=None):"
+    ],
+    "imports": [
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.matrices import DomainMatrix",
+      "from sympy.polys.matrices.normalforms import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_to_domain",
+      "smith_normal_form",
+      "invariant_factors",
+      "hermite_normal_form"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_445_2a288ac719d811aa_AI_Chariot_Legacy_666_1.0.0_20260508_normalforms.py.json"
+}

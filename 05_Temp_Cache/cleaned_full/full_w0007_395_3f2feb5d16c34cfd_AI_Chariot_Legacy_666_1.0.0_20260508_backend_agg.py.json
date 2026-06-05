@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 395,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_agg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_agg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19888,
+  "content_sha256": "3f2feb5d16c34cfd194ab341d8ee539a1e55f06e55f558971ff615e4f4d7f71c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 528,
+    "non_empty_lines": 436,
+    "char_count": 19888,
+    "preview_lines": [
+      "\"\"\"",
+      "An `Anti-Grain Geometry`_ (AGG) backend.",
+      "Features that are implemented:",
+      "* capstyles and join styles",
+      "* dashes",
+      "* linewidth",
+      "* lines, rectangles, ellipses",
+      "* clipping to a rectangle",
+      "* output to RGBA and Pillow-supported image formats",
+      "* alpha blending"
+    ],
+    "imports": [
+      "from contextlib import nullcontext",
+      "from math import radians, cos, sin",
+      "import numpy as np",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, cbook",
+      "from matplotlib.backend_bases import (",
+      "from matplotlib.font_manager import fontManager as _fontManager, get_font",
+      "from matplotlib.ft2font import LoadFlags",
+      "from matplotlib.mathtext import MathTextParser",
+      "from matplotlib.path import Path",
+      "from matplotlib.transforms import Bbox, BboxBase",
+      "from matplotlib.backends._backend_agg import RendererAgg as _RendererAgg"
+    ],
+    "classes": [
+      "RendererAgg",
+      "FigureCanvasAgg",
+      "_BackendAgg"
+    ],
+    "functions": [
+      "get_hinting_flag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_395_3f2feb5d16c34cfd_AI_Chariot_Legacy_666_1.0.0_20260508_backend_agg.py.json"
+}

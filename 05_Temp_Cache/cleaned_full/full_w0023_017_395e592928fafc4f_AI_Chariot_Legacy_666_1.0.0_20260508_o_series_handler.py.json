@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_o_series_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_o_series_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2531,
+  "content_sha256": "395e592928fafc4f88d25b3019b363e787f7ca171f475124fcb75e0f4e9e706d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 69,
+    "char_count": 2531,
+    "preview_lines": [
+      "\"\"\"",
+      "Handler file for calls to Azure OpenAI's o1/o3 family of models",
+      "Written separately to handle faking streaming for o1 and o3 models.",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, Union",
+      "import httpx",
+      "from litellm.types.utils import ModelResponse",
+      "from ...openai.openai import OpenAIChatCompletion",
+      "from ..common_utils import BaseAzureLLM",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, Union",
+      "import httpx",
+      "from litellm.types.utils import ModelResponse",
+      "from ...openai.openai import OpenAIChatCompletion",
+      "from ..common_utils import BaseAzureLLM",
+      "from aiohttp import ClientSession"
+    ],
+    "classes": [
+      "AzureOpenAIO1ChatCompletion"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_017_395e592928fafc4f_AI_Chariot_Legacy_666_1.0.0_20260508_o_series_handler.py.json"
+}

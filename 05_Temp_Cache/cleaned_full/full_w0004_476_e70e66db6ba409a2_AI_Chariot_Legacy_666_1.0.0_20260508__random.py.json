@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 476,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__random.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__random.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16263,
+  "content_sha256": "e70e66db6ba409a27532b0a34fd53bc9b3a48e7e28128d62f9a1036f8312cdc2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 381,
+    "non_empty_lines": 316,
+    "char_count": 16263,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import contextlib",
+      "import warnings",
+      "from typing import Dict, List, Optional",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch import Tensor",
+      "from torch.distributed.device_mesh import _get_device_handle, DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec"
+    ],
+    "imports": [
+      "import contextlib",
+      "import warnings",
+      "from typing import Dict, List, Optional",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch import Tensor",
+      "from torch.distributed.device_mesh import _get_device_handle, DeviceMesh",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "from torch.distributed.tensor.placement_types import Shard"
+    ],
+    "classes": [
+      "_RNGStateTracker",
+      "OffsetBasedRNGTracker",
+      "TensorParallelRNGTracker"
+    ],
+    "functions": [
+      "is_rng_supported_mesh",
+      "manual_seed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_476_e70e66db6ba409a2_AI_Chariot_Legacy_666_1.0.0_20260508__random.py.json"
+}

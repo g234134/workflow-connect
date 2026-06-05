@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_subclass.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_subclass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9622,
+  "content_sha256": "6d6bba5e8801eed41bf2f809aea5d7dc8c3c8915ddf9a3becf50173e7f506af2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 266,
+    "non_empty_lines": 211,
+    "char_count": 9622,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import torch",
+      "from copy import deepcopy",
+      "from torch.utils._pytree import tree_map",
+      "import torch.utils._pytree as pytree",
+      "# TODO: Move LoggingTensor here.",
+      "from torch.testing._internal.logging_tensor import LoggingTensor",
+      "# Base class for wrapper-style tensors.",
+      "class WrapperTensor(torch.Tensor):",
+      "    @staticmethod"
+    ],
+    "imports": [
+      "import torch",
+      "from copy import deepcopy",
+      "from torch.utils._pytree import tree_map",
+      "import torch.utils._pytree as pytree",
+      "from torch.testing._internal.logging_tensor import LoggingTensor"
+    ],
+    "classes": [
+      "WrapperTensor",
+      "DiagTensorBelow",
+      "SparseTensor",
+      "NonWrapperTensor",
+      "SubclassInfo",
+      "SubclassWithTensorFactory"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_028_6d6bba5e8801eed4_AI_Chariot_Legacy_666_1.0.0_20260508_common_subclass.py.json"
+}

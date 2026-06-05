@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_names.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_names.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6601,
+  "content_sha256": "7ab38650bc27a704086a5131a6f46384684dfd455a43457c07b2708652bddceb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 154,
+    "char_count": 6601,
+    "preview_lines": [
+      "import pytest",
+      "import pandas as pd",
+      "from pandas import MultiIndex",
+      "import pandas._testing as tm",
+      "def check_level_names(index, names):",
+      "    assert [level.name for level in index.levels] == list(names)",
+      "def test_slice_keep_name():",
+      "    x = MultiIndex.from_tuples([(\"a\", \"b\"), (1, 2), (\"c\", \"d\")], names=[\"x\", \"y\"])",
+      "    assert x[1:].names == x.names",
+      "def test_index_name_retained():"
+    ],
+    "imports": [
+      "import pytest",
+      "import pandas as pd",
+      "from pandas import MultiIndex",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "check_level_names",
+      "test_slice_keep_name",
+      "test_index_name_retained",
+      "test_changing_names",
+      "test_take_preserve_name",
+      "test_copy_names",
+      "test_names",
+      "test_duplicate_level_names_access_raises",
+      "test_get_names_from_levels",
+      "test_setting_names_from_levels_raises",
+      "test_name_mi_with_dict_like_duplicate_names",
+      "test_name_mi_with_dict_like",
+      "test_index_name_with_dict_like_raising",
+      "test_multiindex_name_and_level_raising"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_044_7ab38650bc27a704_AI_Chariot_Legacy_666_1.0.0_20260508_test_names.py.json"
+}

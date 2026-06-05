@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__mappings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__mappings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 620,
+  "content_sha256": "432aac6eb22c4eafa090706e93663488021a0365276380c8bd4a386d35b67742",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 17,
+    "char_count": 620,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "__all__ = [",
+      "    \"get_static_sparse_quantized_mapping\",",
+      "    \"get_dynamic_sparse_quantized_mapping\",",
+      "]",
+      "def get_static_sparse_quantized_mapping():",
+      "    import torch.ao.nn.sparse",
+      "    _static_sparse_quantized_mapping = {",
+      "        torch.nn.Linear: torch.ao.nn.sparse.quantized.Linear,",
+      "    }"
+    ],
+    "imports": [
+      "import torch.ao.nn.sparse",
+      "import torch.ao.nn.sparse"
+    ],
+    "classes": [],
+    "functions": [
+      "get_static_sparse_quantized_mapping",
+      "get_dynamic_sparse_quantized_mapping"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_066_432aac6eb22c4eaf_AI_Chariot_Legacy_666_1.0.0_20260508__mappings.py.json"
+}

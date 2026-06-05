@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 65,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_distributed_data_loop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_distributed_data_loop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16020,
+  "content_sha256": "38fb39f54ed9a74381dc23ba5f4a2b82f4efda009b401cc7885b02b13077304d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 429,
+    "non_empty_lines": 337,
+    "char_count": 16020,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# Copyright 2021 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import pickle",
+      "import tempfile",
+      "import warnings",
+      "from unittest.mock import Mock",
+      "import torch",
+      "from torch.utils.data import (",
+      "from accelerate.accelerator import Accelerator, DataLoaderConfiguration",
+      "from accelerate.utils.dataclasses import DistributedType"
+    ],
+    "classes": [
+      "DummyDataset",
+      "DummyIterableDataset"
+    ],
+    "functions": [
+      "create_accelerator",
+      "create_dataloader",
+      "verify_dataloader_batch_sizes",
+      "test_default_ensures_even_batch_sizes",
+      "test_can_disable_even_batches",
+      "test_can_join_uneven_inputs",
+      "test_join_raises_warning_for_non_ddp_distributed",
+      "test_join_can_override_even_batches",
+      "test_join_can_override_for_mixed_type_dataloaders",
+      "test_join_raises_warning_for_iterable_when_overriding_even_batches",
+      "test_pickle_accelerator",
+      "test_data_loader",
+      "_test_stateful_dataloader_resume",
+      "test_stateful_dataloader",
+      "_test_stateful_dataloader_save_state_resume",
+      "test_stateful_dataloader_save_state",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_065_38fb39f54ed9a743_AI_Chariot_Legacy_666_1.0.0_20260508_test_distributed_data_loop.py.json"
+}

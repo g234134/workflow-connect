@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_legend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_legend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 55343,
+  "content_sha256": "e4d0cf6d6aa488890fd45277b0b36a99ec368e43636b041fd86fc1a99346feee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1371,
+    "non_empty_lines": 1139,
+    "char_count": 55343,
+    "preview_lines": [
+      "\"\"\"",
+      "The legend module defines the Legend class, which is responsible for",
+      "drawing legends associated with Axes and/or figures.",
+      ".. important::",
+      "    It is unlikely that you would ever create a Legend instance manually.",
+      "    Most users would normally create a legend via the `~.Axes.legend`",
+      "    function. For more details on legends there is also a :ref:`legend guide",
+      "    <legend_guide>`.",
+      "The `Legend` class is a container of legend handles and legend texts.",
+      "The legend handler map specifies how to create legend handles from artists"
+    ],
+    "imports": [
+      "import itertools",
+      "import logging",
+      "import numbers",
+      "import time",
+      "import numpy as np",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, _docstring, cbook, colors, offsetbox",
+      "from matplotlib.artist import Artist, allow_rasterization",
+      "from matplotlib.cbook import silent_list",
+      "from matplotlib.font_manager import FontProperties",
+      "from matplotlib.lines import Line2D",
+      "from matplotlib.patches import (Patch, Rectangle, Shadow, FancyBboxPatch,",
+      "from matplotlib.collections import (",
+      "from matplotlib.text import Text",
+      "from matplotlib.transforms import Bbox, BboxBase, TransformedBbox",
+      "from matplotlib.transforms import BboxTransformTo, BboxTransformFrom",
+      "from matplotlib.offsetbox import (",
+      "from matplotlib.container import ErrorbarContainer, BarContainer, StemContainer",
+      "from . import legend_handler"
+    ],
+    "classes": [
+      "DraggableLegend",
+      "Legend"
+    ],
+    "functions": [
+      "_get_legend_handles",
+      "_get_legend_handles_labels",
+      "_parse_legend_args"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_105_e4d0cf6d6aa48889_AI_Chariot_Legacy_666_1.0.0_20260508_legend.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\callbacks\\test_stdout.py",
+  "name": "test_stdout.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1386,
+  "content_sha256": "00c545aa77e8784d7e4d9fe5d889dcd3301c0455f45ed1f9cd4c3ccc816e4a7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 37,
+    "char_count": 1383,
+    "preview_lines": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManagerForChainRun",
+      "from typing_extensions import override",
+      "from langchain_classic.callbacks import StdOutCallbackHandler",
+      "from langchain_classic.chains.base import Chain",
+      "class FakeChain(Chain):",
+      "    \"\"\"Fake chain class for testing purposes.\"\"\"",
+      "    be_correct: bool = True",
+      "    the_input_keys: list[str] = [\"foo\"]"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManagerForChainRun",
+      "from typing_extensions import override",
+      "from langchain_classic.callbacks import StdOutCallbackHandler",
+      "from langchain_classic.chains.base import Chain"
+    ],
+    "classes": [
+      "FakeChain"
+    ],
+    "functions": [
+      "test_stdoutcallback"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_183_00c545aa77e8784d_test_stdout.py.json"
+}

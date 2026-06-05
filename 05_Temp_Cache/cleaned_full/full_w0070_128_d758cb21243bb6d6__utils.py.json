@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\ollama\\langchain_ollama\\_utils.py",
+  "name": "_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5157,
+  "content_sha256": "d758cb21243bb6d6dc0f1ad1776d8d8e783937c64e5c2d395517aa5fc751e840",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 155,
+    "non_empty_lines": 125,
+    "char_count": 5154,
+    "preview_lines": [
+      "\"\"\"Utility function to validate Ollama models.\"\"\"",
+      "from __future__ import annotations",
+      "import base64",
+      "from urllib.parse import ParseResult, unquote, urlparse, urlunparse",
+      "from httpx import ConnectError",
+      "from ollama import Client, ResponseError",
+      "def validate_model(client: Client, model_name: str) -> None:",
+      "    \"\"\"Validate that a model exists in the local Ollama instance.",
+      "    Args:",
+      "        client: The Ollama client."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import base64",
+      "from urllib.parse import ParseResult, unquote, urlparse, urlunparse",
+      "from httpx import ConnectError",
+      "from ollama import Client, ResponseError"
+    ],
+    "classes": [],
+    "functions": [
+      "validate_model",
+      "_build_cleaned_url",
+      "parse_url_with_auth",
+      "merge_auth_headers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_128_d758cb21243bb6d6__utils.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\assumptions\\refine.py",
+  "name": "refine.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11946,
+  "content_sha256": "14dbf99de018261f8c82f9c70d9f3eb630bd44829c2316ab563e56884e049d88",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 405,
+    "non_empty_lines": 345,
+    "char_count": 11946,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import Callable",
+      "from sympy.core import S, Add, Expr, Basic, Mul, Pow, Rational",
+      "from sympy.core.logic import fuzzy_not",
+      "from sympy.logic.boolalg import Boolean",
+      "from sympy.assumptions import ask, Q  # type: ignore",
+      "def refine(expr, assumptions=True):",
+      "    \"\"\"",
+      "    Simplify an expression using assumptions.",
+      "    Explanation"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Callable",
+      "from sympy.core import S, Add, Expr, Basic, Mul, Pow, Rational",
+      "from sympy.core.logic import fuzzy_not",
+      "from sympy.logic.boolalg import Boolean",
+      "from sympy.assumptions import ask, Q  # type: ignore",
+      "from sympy.functions.elementary.complexes import Abs",
+      "from sympy.functions.elementary.complexes import Abs",
+      "from sympy.functions import sign"
+    ],
+    "classes": [],
+    "functions": [
+      "refine",
+      "refine_abs",
+      "refine_Pow",
+      "refine_atan2",
+      "refine_re",
+      "refine_im",
+      "refine_arg",
+      "_refine_reim",
+      "refine_sign",
+      "refine_matrixelement"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_124_14dbf99de018261f_refine.py.json"
+}

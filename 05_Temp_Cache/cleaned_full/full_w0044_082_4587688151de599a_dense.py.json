@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 82,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\matrices\\dense.py",
+  "name": "dense.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23217,
+  "content_sha256": "4587688151de599a1e3bde0e6a5d667f5b09be3f899b24bf6da462f3e77d466b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 824,
+    "non_empty_lines": 659,
+    "char_count": 23217,
+    "preview_lines": [
+      "\"\"\"",
+      "Module for the ddm_* routines for operating on a matrix in list of lists",
+      "matrix representation.",
+      "These routines are used internally by the DDM class which also provides a",
+      "friendlier interface for them. The idea here is to implement core matrix",
+      "routines in a way that can be applied to any simple list representation",
+      "without the need to use any particular matrix class. For example we can",
+      "compute the RREF of a matrix like:",
+      "    >>> from sympy.polys.matrices.dense import ddm_irref",
+      "    >>> M = [[1, 2, 3], [4, 5, 6]]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from operator import mul",
+      "from .exceptions import (",
+      "from typing import Sequence, TypeVar",
+      "from sympy.polys.matrices._typing import RingElement"
+    ],
+    "classes": [],
+    "functions": [
+      "ddm_transpose",
+      "ddm_iadd",
+      "ddm_isub",
+      "ddm_ineg",
+      "ddm_imul",
+      "ddm_irmul",
+      "ddm_imatmul",
+      "ddm_irref",
+      "ddm_irref_den",
+      "ddm_idet",
+      "ddm_iinv",
+      "ddm_ilu_split",
+      "ddm_ilu",
+      "ddm_ilu_solve",
+      "ddm_berk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_082_4587688151de599a_dense.py.json"
+}

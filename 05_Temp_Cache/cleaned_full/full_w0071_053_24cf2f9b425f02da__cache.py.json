@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\_internal\\_cache.py",
+  "name": "_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1233,
+  "content_sha256": "24cf2f9b425f02dace10f93d2c48b3ff2ab138d30b42a630ba25b03d227aaf1b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 25,
+    "char_count": 1230,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Hashable, Mapping, Sequence",
+      "from typing import Any",
+      "def _freeze(obj: Any, depth: int = 10) -> Hashable:",
+      "    if isinstance(obj, Hashable) or depth <= 0:",
+      "        # already hashable, no need to freeze",
+      "        return obj",
+      "    elif isinstance(obj, Mapping):",
+      "        # sort keys so {\"a\":1,\"b\":2} == {\"b\":2,\"a\":1}",
+      "        return tuple(sorted((k, _freeze(v, depth - 1)) for k, v in obj.items()))"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Hashable, Mapping, Sequence",
+      "from typing import Any",
+      "import pickle"
+    ],
+    "classes": [],
+    "functions": [
+      "_freeze",
+      "default_cache_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_053_24cf2f9b425f02da__cache.py.json"
+}

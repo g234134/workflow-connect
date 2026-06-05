@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\agent_toolkits\\spark\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 921,
+  "content_sha256": "f6855de78bf0792f3727ce482411bd9a626eeb53f278afc61add91c81e9634c2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 18,
+    "char_count": 918,
+    "preview_lines": [
+      "from typing import Any",
+      "def __getattr__(name: str) -> Any:",
+      "    \"\"\"Get attr name.\"\"\"",
+      "    if name == \"create_spark_dataframe_agent\":",
+      "        msg = (",
+      "            \"This agent has been moved to langchain_experimental. \"",
+      "            \"This agent relies on python REPL tool under the hood, so to use it \"",
+      "            \"safely please sandbox the python REPL. \"",
+      "            \"Read https://github.com/langchain-ai/langchain/blob/master/SECURITY.md \"",
+      "            \"and https://github.com/langchain-ai/langchain/discussions/11680\""
+    ],
+    "imports": [
+      "from typing import Any"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_394_f6855de78bf0792f___init__.py.json"
+}

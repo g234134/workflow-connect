@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\peephole_list_idioms.h",
+  "name": "peephole_list_idioms.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2075,
+  "content_sha256": "9b185b01cdafa6c20eb34f5a22afbd1111e958ab0b666f371a3ac787ca20e0de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 68,
+    "char_count": 2075,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Peephole Optimizes List ops such as len(li) and li[1].",
+      "// 1. Construct/Unpack optimizations",
+      "// Given a function like this:",
+      "//    def foo(a, b):",
+      "//        li = [a, b]",
+      "//        x, y = li"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_389_9b185b01cdafa6c2_peephole_list_idioms.h.json"
+}

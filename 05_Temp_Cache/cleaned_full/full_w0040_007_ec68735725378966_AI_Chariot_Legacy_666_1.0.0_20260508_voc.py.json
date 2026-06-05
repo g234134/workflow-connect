@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_voc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_voc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9059,
+  "content_sha256": "ec68735725378966c1cc5c9bd73763fbdc710922e640276284f3bfa3ce5276a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 224,
+    "non_empty_lines": 186,
+    "char_count": 9059,
+    "preview_lines": [
+      "import collections",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "from xml.etree.ElementTree import Element as ET_Element",
+      "try:",
+      "    from defusedxml.ElementTree import parse as ET_parse",
+      "except ImportError:",
+      "    from xml.etree.ElementTree import parse as ET_parse",
+      "from PIL import Image"
+    ],
+    "imports": [
+      "import collections",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "from xml.etree.ElementTree import Element as ET_Element",
+      "from defusedxml.ElementTree import parse as ET_parse",
+      "from xml.etree.ElementTree import parse as ET_parse",
+      "from PIL import Image",
+      "from .utils import download_and_extract_archive, verify_str_arg",
+      "from .vision import VisionDataset"
+    ],
+    "classes": [
+      "_VOCBase",
+      "VOCSegmentation",
+      "VOCDetection"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_007_ec68735725378966_AI_Chariot_Legacy_666_1.0.0_20260508_voc.py.json"
+}

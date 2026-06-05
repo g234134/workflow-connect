@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:46:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_retry_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_retry_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12989,
+  "content_sha256": "ce5491286b36e2f4c63e88a9478bbde498659d19f3c6b602f5675b4013b5b501",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 372,
+    "non_empty_lines": 313,
+    "char_count": 12989,
+    "preview_lines": [
+      "# Copyright 2017 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import random",
+      "import time",
+      "from enum import Enum",
+      "from typing import Any, Callable, Optional, Iterator, TYPE_CHECKING",
+      "import requests.exceptions",
+      "from google.api_core import exceptions",
+      "from google.auth import exceptions as auth_exceptions",
+      "import sys",
+      "from typing import Self",
+      "from typing_extensions import Self"
+    ],
+    "classes": [
+      "RetryFailureReason",
+      "_BaseRetry"
+    ],
+    "functions": [
+      "if_exception_type",
+      "exponential_sleep_generator",
+      "build_retry_error",
+      "_retry_error_helper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_167_ce5491286b36e2f4_AI_Chariot_Legacy_666_1.0.0_20260508_retry_base.py.json"
+}

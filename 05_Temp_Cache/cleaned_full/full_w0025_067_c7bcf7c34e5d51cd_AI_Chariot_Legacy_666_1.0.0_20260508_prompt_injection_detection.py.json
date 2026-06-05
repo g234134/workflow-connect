@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 67,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection_detection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection_detection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10555,
+  "content_sha256": "c7bcf7c34e5d51cd79d06649af4984989a32ce4f19037f76b1b2abdb8a4e6742",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 253,
+    "char_count": 10551,
+    "preview_lines": [
+      "# +------------------------------------+",
+      "#",
+      "#        Prompt Injection Detection",
+      "#",
+      "# +------------------------------------+",
+      "#  Thank you users! We ❤️ you! - Krrish & Ishaan",
+      "## Reject a call if it contains a prompt injection attack.",
+      "from difflib import SequenceMatcher",
+      "from typing import List, Literal, Optional",
+      "from fastapi import HTTPException"
+    ],
+    "imports": [
+      "from difflib import SequenceMatcher",
+      "from typing import List, Literal, Optional",
+      "from fastapi import HTTPException",
+      "import litellm",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.caching.caching import DualCache",
+      "from litellm.constants import DEFAULT_PROMPT_INJECTION_SIMILARITY_THRESHOLD",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.litellm_core_utils.prompt_templates.factory import (",
+      "from litellm.proxy._types import LiteLLMPromptInjectionParams, UserAPIKeyAuth",
+      "from litellm.router import Router",
+      "from litellm.utils import get_formatted_prompt"
+    ],
+    "classes": [
+      "_OPTIONAL_PromptInjectionDetection"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_067_c7bcf7c34e5d51cd_AI_Chariot_Legacy_666_1.0.0_20260508_prompt_injection_detection.py.json"
+}

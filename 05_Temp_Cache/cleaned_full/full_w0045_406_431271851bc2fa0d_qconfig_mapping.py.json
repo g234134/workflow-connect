@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\qconfig_mapping.py",
+  "name": "qconfig_mapping.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14948,
+  "content_sha256": "431271851bc2fa0d4b6fa544c115a75b263997273dd49d621302c094a293f8a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 350,
+    "non_empty_lines": 291,
+    "char_count": 14948,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections import OrderedDict",
+      "from typing import Any, Callable, Dict, Tuple, Union, List",
+      "import torch",
+      "from .fake_quantize import (",
+      "    default_weight_fake_quant,",
+      "    FixedQParamsFakeQuantize,",
+      ")",
+      "from .observer import (",
+      "    _PartialWrapper,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import OrderedDict",
+      "from typing import Any, Callable, Dict, Tuple, Union, List",
+      "import torch",
+      "from .fake_quantize import (",
+      "from .observer import (",
+      "from .qconfig import ("
+    ],
+    "classes": [
+      "QConfigMapping"
+    ],
+    "functions": [
+      "_get_default_qconfig_mapping",
+      "get_default_qconfig_mapping",
+      "get_default_qat_qconfig_mapping",
+      "_get_symmetric_qnnpack_qconfig_mapping",
+      "_get_symmetric_qnnpack_qat_qconfig_mapping",
+      "_get_default_qconfig_mapping_with_default_qconfig"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_406_431271851bc2fa0d_qconfig_mapping.py.json"
+}

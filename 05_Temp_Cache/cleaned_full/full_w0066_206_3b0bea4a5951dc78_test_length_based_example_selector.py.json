@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 206,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\example_selectors\\test_length_based_example_selector.py",
+  "name": "test_length_based_example_selector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2673,
+  "content_sha256": "3b0bea4a5951dc78748e9cd4006e77f0adaea2e1b7e10f62e3a4c0be85a7dfa5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 59,
+    "char_count": 2670,
+    "preview_lines": [
+      "\"\"\"Test functionality related to length based selector.\"\"\"",
+      "import pytest",
+      "from langchain_core.example_selectors import (",
+      "    LengthBasedExampleSelector,",
+      ")",
+      "from langchain_core.prompts import PromptTemplate",
+      "EXAMPLES = [",
+      "    {\"question\": \"Question: who are you?\\nAnswer: foo\"},",
+      "    {\"question\": \"Question: who are you?\\nAnswer: foo\"},",
+      "]"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_core.example_selectors import (",
+      "from langchain_core.prompts import PromptTemplate"
+    ],
+    "classes": [],
+    "functions": [
+      "selector",
+      "test_selector_valid",
+      "test_selector_add_example",
+      "test_selector_trims_one_example",
+      "test_selector_trims_all_examples",
+      "test_selector_empty_example"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_206_3b0bea4a5951dc78_test_length_based_example_selector.py.json"
+}

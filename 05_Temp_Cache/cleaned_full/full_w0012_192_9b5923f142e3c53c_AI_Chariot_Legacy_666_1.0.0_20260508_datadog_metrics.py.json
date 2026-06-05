@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_datadog_metrics.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_datadog_metrics.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9730,
+  "content_sha256": "9b5923f142e3c53c738313581e699b7b691e1cdadb45d607a01bc534cf2c670c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 236,
+    "char_count": 9730,
+    "preview_lines": [
+      "import asyncio",
+      "import gzip",
+      "import os",
+      "import time",
+      "from datetime import datetime",
+      "from typing import List, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_batch_logger import CustomBatchLogger",
+      "from litellm.integrations.datadog.datadog_handler import (",
+      "    get_datadog_env,"
+    ],
+    "imports": [
+      "import asyncio",
+      "import gzip",
+      "import os",
+      "import time",
+      "from datetime import datetime",
+      "from typing import List, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_batch_logger import CustomBatchLogger",
+      "from litellm.integrations.datadog.datadog_handler import (",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.integrations.base_health_check import IntegrationHealthCheckStatus",
+      "from litellm.types.integrations.datadog_metrics import (",
+      "from litellm.types.utils import StandardLoggingPayload"
+    ],
+    "classes": [
+      "DatadogMetricsLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_192_9b5923f142e3c53c_AI_Chariot_Legacy_666_1.0.0_20260508_datadog_metrics.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 386,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_model2vec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_model2vec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1843,
+  "content_sha256": "ec1ea36dcd85d56de52e6514d0294ac0dfc32b8e0ba05be857267894478a562a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 48,
+    "char_count": 1843,
+    "preview_lines": [
+      "\"\"\"Wrapper around model2vec embedding models.\"\"\"",
+      "from typing import List",
+      "from langchain_core.embeddings import Embeddings",
+      "class Model2vecEmbeddings(Embeddings):",
+      "    \"\"\"Model2Vec embedding models.",
+      "    Install model2vec first, run 'pip install -U model2vec'.",
+      "    The github repository for model2vec is : https://github.com/MinishLab/model2vec",
+      "    Example:",
+      "        .. code-block:: python",
+      "            from langchain_community.embeddings import Model2vecEmbeddings"
+    ],
+    "imports": [
+      "from typing import List",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_community.embeddings import Model2vecEmbeddings",
+      "from model2vec import StaticModel"
+    ],
+    "classes": [
+      "Model2vecEmbeddings"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_386_ec1ea36dcd85d56d_AI_Chariot_Legacy_666_1.0.0_20260508_model2vec.py.json"
+}

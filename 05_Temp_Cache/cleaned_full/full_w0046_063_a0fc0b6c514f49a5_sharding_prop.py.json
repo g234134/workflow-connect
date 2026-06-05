@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\sharding_prop.py",
+  "name": "sharding_prop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17442,
+  "content_sha256": "a0fc0b6c514f49a50d062d89b36d0891896316a4b0b45c25fbff414a08ba2892",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 387,
+    "non_empty_lines": 347,
+    "char_count": 17442,
+    "preview_lines": [
+      "from functools import lru_cache",
+      "from itertools import chain",
+      "from typing import Callable, cast, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch._ops import OpOverload",
+      "from torch._subclasses import FakeTensorMode",
+      "from torch.distributed._tensor.op_schema import (",
+      "    DTensorSpec,",
+      "    OpInfo,",
+      "    OpSchema,"
+    ],
+    "imports": [
+      "from functools import lru_cache",
+      "from itertools import chain",
+      "from typing import Callable, cast, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch._ops import OpOverload",
+      "from torch._subclasses import FakeTensorMode",
+      "from torch.distributed._tensor.op_schema import (",
+      "from torch.distributed._tensor.placement_types import TensorMeta",
+      "from torch.distributed.device_mesh import DeviceMesh"
+    ],
+    "classes": [
+      "ShardingPropagator"
+    ],
+    "functions": [
+      "_length"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_063_a0fc0b6c514f49a5_sharding_prop.py.json"
+}

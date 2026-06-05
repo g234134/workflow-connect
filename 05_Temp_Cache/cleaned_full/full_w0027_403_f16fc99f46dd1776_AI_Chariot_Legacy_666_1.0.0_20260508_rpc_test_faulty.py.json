@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 403,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rpc_test_faulty.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rpc_test_faulty.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8250,
+  "content_sha256": "f16fc99f46dd1776d65a1eed13ad8caebe4869366086d15929262899195117cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 218,
+    "non_empty_lines": 186,
+    "char_count": 8250,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import Dict, Tuple",
+      "import torch",
+      "import torch.distributed.rpc as rpc",
+      "from torch import Tensor",
+      "from torch.distributed.rpc import RRef",
+      "from torch.testing._internal.dist_utils import (",
+      "    dist_init,",
+      "    worker_name,",
+      "    wait_until_pending_futures_and_users_flushed"
+    ],
+    "imports": [
+      "from typing import Dict, Tuple",
+      "import torch",
+      "import torch.distributed.rpc as rpc",
+      "from torch import Tensor",
+      "from torch.distributed.rpc import RRef",
+      "from torch.testing._internal.dist_utils import (",
+      "from torch.testing._internal.distributed.rpc.rpc_agent_test_fixture import ("
+    ],
+    "classes": [
+      "JitFaultyAgentRpcTest"
+    ],
+    "functions": [
+      "two_args_two_kwargs",
+      "script_rpc_async_call",
+      "rpc_async_call_with_timeout",
+      "rpc_async_call_with_timeout_future_ret",
+      "rpc_async_call_future_ret",
+      "rref_to_here",
+      "rref_to_here_with_timeout",
+      "rpc_async_with_rref_arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_403_f16fc99f46dd1776_AI_Chariot_Legacy_666_1.0.0_20260508_rpc_test_faulty.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 455,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aoti_hipify_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aoti_hipify_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1328,
+  "content_sha256": "d17a82a72d0d1d729a105d9581da2681468643bcaa0d58d2e60a66ee54360b05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 23,
+    "char_count": 1328,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import re",
+      "import torch",
+      "from torch.utils.hipify.hipify_python import PYTORCH_MAP, PYTORCH_TRIE",
+      "# It is not a good idea to directly apply hipify_torch to codegen, which will be vulnerable to cases like:",
+      "#   \"...",
+      "#    from ..codecache import CudaKernelParamCache",
+      "#   ...\"",
+      "# In such cases, we do not need to hipify_torch the orignial class/file name in codegen/codecache",
+      "def maybe_hipify_code_wrapper(source_codes: str, force_hipify: bool = False) -> str:"
+    ],
+    "imports": [
+      "import re",
+      "import torch",
+      "from torch.utils.hipify.hipify_python import PYTORCH_MAP, PYTORCH_TRIE"
+    ],
+    "classes": [],
+    "functions": [
+      "maybe_hipify_code_wrapper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_455_d17a82a72d0d1d72_AI_Chariot_Legacy_666_1.0.0_20260508_aoti_hipify_utils.py.json"
+}

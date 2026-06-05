@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\test_qa_with_sources.py",
+  "name": "test_qa_with_sources.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4441,
+  "content_sha256": "509a3472184009d2d65e4e5fd1ef4e85fb321187f57e83badfdc5aa60f0dc6f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 91,
+    "char_count": 4438,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_classic.chains.qa_with_sources.base import QAWithSourcesChain",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM",
+      "@pytest.mark.parametrize(",
+      "    (\"text\", \"answer\", \"sources\"),",
+      "    [",
+      "        (",
+      "            \"This Agreement is governed by English law.\\nSOURCES: 28-pl\",",
+      "            \"This Agreement is governed by English law.\\n\",",
+      "            \"28-pl\","
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_classic.chains.qa_with_sources.base import QAWithSourcesChain",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM"
+    ],
+    "classes": [],
+    "functions": [
+      "test_spliting_answer_into_answer_and_sources"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_202_509a3472184009d2_test_qa_with_sources.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\boxing\\impl\\WrapFunctionIntoFunctor.h",
+  "name": "WrapFunctionIntoFunctor.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1345,
+  "content_sha256": "415574a46befc160044eafe893dfdd5d33e9ac40b5888e86bbc3335e0f76588c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 28,
+    "char_count": 1345,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/CompileTimeFunctionPointer.h>",
+      "namespace c10 {",
+      "namespace impl {",
+      "  namespace detail {",
+      "    template<class FuncPtr, class ReturnType, class ParameterList> class WrapFunctionIntoFunctor_ {};",
+      "    template<class FuncPtr, class ReturnType, class... Parameters>",
+      "    class WrapFunctionIntoFunctor_<FuncPtr, ReturnType, guts::typelist::typelist<Parameters...>> final : public c10::OperatorKernel {",
+      "    public:",
+      "      C10_ALWAYS_INLINE decltype(auto) operator()(Parameters... args) {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_040_415574a46befc160_WrapFunctionIntoFunctor.h.json"
+}

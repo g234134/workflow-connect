@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-postgres\\tests\\compose-postgres.yml",
+  "name": "compose-postgres.yml",
+  "extension": ".yml",
+  "original_type": "yaml",
+  "size_bytes": 462,
+  "content_sha256": "fd9065aead93ca9412bb05f1ee54670d7182adbb5c20b58922165899ef072351",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 17,
+    "char_count": 462,
+    "preview_lines": [
+      "services:",
+      "  postgres-test:",
+      "    image: pgvector/pgvector:pg${POSTGRES_VERSION:-16}",
+      "    ports:",
+      "      - \"5441:5432\"",
+      "    environment:",
+      "      POSTGRES_DB: postgres",
+      "      POSTGRES_USER: postgres",
+      "      POSTGRES_PASSWORD: postgres",
+      "    command: [\"postgres\", \"-c\", \"shared_preload_libraries=vector\"]"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_399_fd9065aead93ca94_compose-postgres.yml.json"
+}

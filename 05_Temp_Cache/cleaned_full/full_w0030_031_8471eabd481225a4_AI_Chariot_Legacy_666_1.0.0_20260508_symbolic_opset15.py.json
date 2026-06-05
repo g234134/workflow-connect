@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 31,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset15.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset15.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2952,
+  "content_sha256": "8471eabd481225a4f312cac8c5e20c6cb8ef1643f5b57cc8e41c6020f5580e6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 64,
+    "char_count": 2952,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"This file exports ONNX ops for opset 15.",
+      "Note [ONNX operators that are added/updated in opset 15]",
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "https://github.com/onnx/onnx/blob/master/docs/Changelog.md#version-15-of-the-default-onnx-operator-set",
+      "New operators:",
+      "    Bernoulli",
+      "    CastLike",
+      "    Optional",
+      "    OptionalGetElement"
+    ],
+    "imports": [
+      "import functools",
+      "import torch",
+      "from torch import _C",
+      "from torch.onnx import symbolic_helper, symbolic_opset9 as opset9",
+      "from torch.onnx._internal import jit_utils, registration"
+    ],
+    "classes": [],
+    "functions": [
+      "aten__is_",
+      "aten__isnot_",
+      "bernoulli",
+      "prim_unchecked_cast"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_031_8471eabd481225a4_AI_Chariot_Legacy_666_1.0.0_20260508_symbolic_opset15.py.json"
+}

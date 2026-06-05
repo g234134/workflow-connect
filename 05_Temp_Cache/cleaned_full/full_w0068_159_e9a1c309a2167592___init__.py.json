@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:48:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\retrievers\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6660,
+  "content_sha256": "e9a1c309a216759298888b75150674caacfc6e5e31a10f23808bd5e5cfe50d9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 159,
+    "char_count": 6657,
+    "preview_lines": [
+      "\"\"\"**Retriever** class returns Documents given a text **query**.",
+      "It is more general than a vector store. A retriever does not need to be able to",
+      "store documents, only to return (or retrieve) it. Vector stores can be used as",
+      "the backbone of a retriever, but there are other types of retrievers as well.",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api.module_import import create_importer",
+      "from langchain_classic.retrievers.contextual_compression import (",
+      "    ContextualCompressionRetriever,",
+      ")"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api.module_import import create_importer",
+      "from langchain_classic.retrievers.contextual_compression import (",
+      "from langchain_classic.retrievers.ensemble import EnsembleRetriever",
+      "from langchain_classic.retrievers.merger_retriever import MergerRetriever",
+      "from langchain_classic.retrievers.multi_query import MultiQueryRetriever",
+      "from langchain_classic.retrievers.multi_vector import MultiVectorRetriever",
+      "from langchain_classic.retrievers.parent_document_retriever import (",
+      "from langchain_classic.retrievers.re_phraser import RePhraseQueryRetriever",
+      "from langchain_classic.retrievers.self_query.base import SelfQueryRetriever",
+      "from langchain_classic.retrievers.time_weighted_retriever import (",
+      "from langchain_community.retrievers import ("
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_159_e9a1c309a2167592___init__.py.json"
+}

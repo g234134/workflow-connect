@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 269,
+  "generated_at": "2026-05-08T18:47:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\functions\\special\\bsplines.py",
+  "name": "bsplines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10060,
+  "content_sha256": "abb89949e10c951af1e60a573b3964e2e4933c8a2595db8d66e1b030707a7d13",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 348,
+    "non_empty_lines": 268,
+    "char_count": 10060,
+    "preview_lines": [
+      "from sympy.core import S, sympify",
+      "from sympy.core.symbol import (Dummy, symbols)",
+      "from sympy.functions import Piecewise, piecewise_fold",
+      "from sympy.logic.boolalg import And",
+      "from sympy.sets.sets import Interval",
+      "from functools import lru_cache",
+      "def _ivl(cond, x):",
+      "    \"\"\"return the interval corresponding to the condition",
+      "    Conditions in spline's Piecewise give the range over",
+      "    which an expression is valid like (lo <= x) & (x <= hi)."
+    ],
+    "imports": [
+      "from sympy.core import S, sympify",
+      "from sympy.core.symbol import (Dummy, symbols)",
+      "from sympy.functions import Piecewise, piecewise_fold",
+      "from sympy.logic.boolalg import And",
+      "from sympy.sets.sets import Interval",
+      "from functools import lru_cache"
+    ],
+    "classes": [],
+    "functions": [
+      "_ivl",
+      "_add_splines",
+      "bspline_basis",
+      "bspline_basis_set",
+      "interpolating_spline"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_269_abb89949e10c951a_bsplines.py.json"
+}

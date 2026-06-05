@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 82,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\algorithms\\ddp_comm_hooks\\quantization_hooks.py",
+  "name": "quantization_hooks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8421,
+  "content_sha256": "0b20e1ca90aac541265c66d0f6baf26b3dcca3e996e998904dd9a909dca62972",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 215,
+    "non_empty_lines": 174,
+    "char_count": 8421,
+    "preview_lines": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch import nn",
+      "def _quantize_per_tensor_cuda(x, scale, zero_point):",
+      "    y = torch.round(x / scale) + zero_point",
+      "    y = torch.clamp(y, 0, 255).to(torch.uint8)",
+      "    return y",
+      "def _dequantize_per_tensor_cuda(y, scale, zero_point):",
+      "    x = scale * (y.to(torch.float32) - zero_point)",
+      "    return x"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch import nn"
+    ],
+    "classes": [],
+    "functions": [
+      "_quantize_per_tensor_cuda",
+      "_dequantize_per_tensor_cuda",
+      "_quantize_per_channel_cuda",
+      "_dequantize_per_channel_cuda",
+      "_get_allgather_out_list",
+      "quantization_pertensor_hook",
+      "quantization_perchannel_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_082_0b20e1ca90aac541_quantization_hooks.py.json"
+}

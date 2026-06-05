@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\rpc\\_testing\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 489,
+  "content_sha256": "32f8f7fb77f64e4a9836cda31a2eababce0615af4648f32d41ac9e71194b0e58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 12,
+    "char_count": 489,
+    "preview_lines": [
+      "import torch",
+      "def is_available():",
+      "    return hasattr(torch._C, \"_faulty_agent_init\")",
+      "if is_available() and not torch._C._faulty_agent_init():",
+      "    raise RuntimeError(\"Failed to initialize torch.distributed.rpc._testing\")",
+      "if is_available():",
+      "    # Registers FAULTY_TENSORPIPE RPC backend.",
+      "    from . import faulty_agent_backend_registry",
+      "    from torch._C._distributed_rpc_testing import (",
+      "        FaultyTensorPipeRpcBackendOptions,"
+    ],
+    "imports": [
+      "import torch",
+      "from . import faulty_agent_backend_registry",
+      "from torch._C._distributed_rpc_testing import ("
+    ],
+    "classes": [],
+    "functions": [
+      "is_available"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_222_32f8f7fb77f64e4a___init__.py.json"
+}

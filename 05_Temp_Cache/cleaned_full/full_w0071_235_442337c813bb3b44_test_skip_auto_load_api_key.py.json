@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_skip_auto_load_api_key.py",
+  "name": "test_skip_auto_load_api_key.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3059,
+  "content_sha256": "442337c813bb3b44c5c79f24d46289d7955ef15ea39157211150705e549ea2e4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 54,
+    "char_count": 3056,
+    "preview_lines": [
+      "\"\"\"Tests for api_key parameter behavior.\"\"\"",
+      "import pytest",
+      "from langgraph_sdk import get_client, get_sync_client",
+      "class TestSkipAutoLoadApiKey:",
+      "    \"\"\"Test the api_key parameter's auto-loading behavior.\"\"\"",
+      "    @pytest.mark.asyncio",
+      "    async def test_get_client_loads_from_env_by_default(self, monkeypatch):",
+      "        \"\"\"Test that API key is loaded from environment by default.\"\"\"",
+      "        monkeypatch.setenv(\"LANGGRAPH_API_KEY\", \"test-key-from-env\")",
+      "        client = get_client(url=\"http://localhost:8123\")"
+    ],
+    "imports": [
+      "import pytest",
+      "from langgraph_sdk import get_client, get_sync_client"
+    ],
+    "classes": [
+      "TestSkipAutoLoadApiKey"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_235_442337c813bb3b44_test_skip_auto_load_api_key.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lancedb_adapter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lancedb_adapter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2081,
+  "content_sha256": "0915343158cd5182dfee0812e892886c70601ee0429e6241b2cdb243d4822709",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 52,
+    "char_count": 2081,
+    "preview_lines": [
+      "from collections.abc import Callable",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any",
+      "from crewai.utilities.lock_store import lock as store_lock",
+      "from lancedb import (  # type: ignore[import-untyped]",
+      "    connect as lancedb_connect,",
+      ")",
+      "from openai import Client as OpenAIClient",
+      "from pydantic import Field, PrivateAttr"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any",
+      "from crewai.utilities.lock_store import lock as store_lock",
+      "from lancedb import (  # type: ignore[import-untyped]",
+      "from openai import Client as OpenAIClient",
+      "from pydantic import Field, PrivateAttr",
+      "from crewai_tools.tools.rag.rag_tool import Adapter"
+    ],
+    "classes": [
+      "LanceDBAdapter"
+    ],
+    "functions": [
+      "_default_embedding_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_003_0915343158cd5182_AI_Chariot_Legacy_666_1.0.0_20260508_lancedb_adapter.py.json"
+}

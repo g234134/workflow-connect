@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\dead_code_elimination.h",
+  "name": "dead_code_elimination.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1626,
+  "content_sha256": "4043477a2d670214c0e4360c801eb302883ef080319d64ec4f3066a3761a1223",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 37,
+    "char_count": 1626,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// If given a top-level graph, DCE will construct do alias analysis that allows",
+      "// for \"smarter\" dead code elimination (we will eliminate mutable ops if we can",
+      "// prove the mutated values are not used). Otherwise, we will not allow DCE to",
+      "// eliminate mutable ops.",
+      "//",
+      "// So, prefer to use the graph version if you can."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_343_4043477a2d670214_dead_code_elimination.h.json"
+}

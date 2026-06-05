@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_indexing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_indexing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1962,
+  "content_sha256": "c63b5cd5a99c6ebe6c254f4005c529c3bd8f4442e4ede7cc3f6a073e3e44269d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 51,
+    "char_count": 1962,
+    "preview_lines": [
+      "import numpy",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from thinc.types import Pairs, Ragged",
+      "@pytest.fixture",
+      "def ragged():",
+      "    data = numpy.zeros((20, 4), dtype=\"f\")",
+      "    lengths = numpy.array([4, 2, 8, 1, 4], dtype=\"i\")",
+      "    data[0] = 0",
+      "    data[1] = 1"
+    ],
+    "imports": [
+      "import numpy",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from thinc.types import Pairs, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "ragged",
+      "test_ragged_empty",
+      "test_ragged_starts_ends",
+      "test_ragged_simple_index",
+      "test_ragged_slice_index",
+      "test_ragged_array_index",
+      "test_pairs_arrays"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_060_c63b5cd5a99c6ebe_AI_Chariot_Legacy_666_1.0.0_20260508_test_indexing.py.json"
+}

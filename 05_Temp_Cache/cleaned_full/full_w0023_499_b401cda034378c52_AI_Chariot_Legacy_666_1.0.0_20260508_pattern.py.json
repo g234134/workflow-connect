@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 499,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pattern.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pattern.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11510,
+  "content_sha256": "b401cda034378c52d21af0d87197db9fa765fa00b81d78740b6df670f86ed492",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 308,
+    "non_empty_lines": 257,
+    "char_count": 11510,
+    "preview_lines": [
+      "\"\"\" Statement->response mappings to select best response template for any statement \"\"\"",
+      "import regex",
+      "import logging",
+      "try:",
+      "    import exrex",
+      "except ImportError:",
+      "    class exrex:",
+      "        def getone(s):",
+      "            return s",
+      "REGEX_ALIASES = {"
+    ],
+    "imports": [
+      "import regex",
+      "import logging",
+      "import exrex"
+    ],
+    "classes": [
+      "PatternMap",
+      "CallbackDict",
+      "Responder"
+    ],
+    "functions": [
+      "expand_charclass",
+      "expand_pattern",
+      "truncate_pattern",
+      "exrex_pattern",
+      "regex_len",
+      "compile_pattern",
+      "remove_punc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_499_b401cda034378c52_AI_Chariot_Legacy_666_1.0.0_20260508_pattern.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_list2array.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_list2array.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 907,
+  "content_sha256": "ea35820ed809f3dd8194bcf46925e49648b636ee241b4b734c03794ac0801e1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 20,
+    "char_count": 907,
+    "preview_lines": [
+      "from typing import Callable, List, Tuple, TypeVar",
+      "from ..backends import NumpyOps",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d",
+      "NUMPY_OPS = NumpyOps()",
+      "OutT = TypeVar(\"OutT\", bound=Array2d)",
+      "InT = List[OutT]",
+      "@registry.layers(\"list2array.v1\")",
+      "def list2array() -> Model[InT, OutT]:"
+    ],
+    "imports": [
+      "from typing import Callable, List, Tuple, TypeVar",
+      "from ..backends import NumpyOps",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Array2d",
+      "from the ragged array. If sequences are already ragged, do nothing. A"
+    ],
+    "classes": [],
+    "functions": [
+      "list2array",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_193_ea35820ed809f3dd_AI_Chariot_Legacy_666_1.0.0_20260508_list2array.py.json"
+}

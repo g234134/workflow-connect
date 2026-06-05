@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_langsmith_tracing.py",
+  "name": "test_langsmith_tracing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4761,
+  "content_sha256": "036c4936fdf9e9ea23ba84d97827bb9524296fd6087d4c4d6d29f8837f69f158",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 146,
+    "non_empty_lines": 108,
+    "char_count": 4758,
+    "preview_lines": [
+      "\"\"\"Test that langsmith_tracing parameter is correctly mapped to langsmith_tracer in payloads.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from unittest.mock import AsyncMock, MagicMock",
+      "import pytest",
+      "from langgraph_sdk.schema import LangSmithTracing",
+      "@pytest.fixture",
+      "def tracing_config() -> LangSmithTracing:",
+      "    return LangSmithTracing(",
+      "        project_name=\"my-project\","
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from unittest.mock import AsyncMock, MagicMock",
+      "import pytest",
+      "from langgraph_sdk.schema import LangSmithTracing",
+      "from langgraph_sdk._async.runs import RunsClient",
+      "from langgraph_sdk._sync.runs import SyncRunsClient",
+      "from langgraph_sdk._sync.runs import SyncRunsClient",
+      "from langgraph_sdk._sync.runs import SyncRunsClient",
+      "from langgraph_sdk._sync.runs import SyncRunsClient"
+    ],
+    "classes": [
+      "TestLangSmithTracingPayload"
+    ],
+    "functions": [
+      "tracing_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_232_036c4936fdf9e9ea_test_langsmith_tracing.py.json"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\api\\open_meteo_docs.py",
+  "name": "open_meteo_docs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3436,
+  "content_sha256": "c2a5927ff9b00d91a45d8e1a203bdb08cf9872ff6d4482d2ad62fb15f7f59d54",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 28,
+    "char_count": 3427,
+    "preview_lines": [
+      "OPEN_METEO_DOCS = \"\"\"BASE URL: https://api.open-meteo.com/",
+      "API Documentation",
+      "The API endpoint /v1/forecast accepts a geographical coordinate, a list of weather variables and responds with a JSON hourly weather forecast for 7 days. Time always starts at 0:00 today and contains 168 hours. All URL parameters are listed below:",
+      "Parameter\tFormat\tRequired\tDefault\tDescription",
+      "latitude, longitude\tFloating point\tYes\t\tGeographical WGS84 coordinate of the location",
+      "hourly\tString array\tNo\t\tA list of weather variables which should be returned. Values can be comma separated, or multiple &hourly= parameter in the URL can be used.",
+      "daily\tString array\tNo\t\tA list of daily weather variable aggregations which should be returned. Values can be comma separated, or multiple &daily= parameter in the URL can be used. If daily weather variables are specified, parameter timezone is required.",
+      "current_weather\tBool\tNo\tfalse\tInclude current weather conditions in the JSON output.",
+      "temperature_unit\tString\tNo\tcelsius\tIf fahrenheit is set, all temperature values are converted to Fahrenheit.",
+      "windspeed_unit\tString\tNo\tkmh\tOther wind speed speed units: ms, mph and kn"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_026_c2a5927ff9b00d91_open_meteo_docs.py.json"
+}

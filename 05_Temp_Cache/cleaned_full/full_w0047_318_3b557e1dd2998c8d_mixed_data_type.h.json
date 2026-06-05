@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 318,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\mixed_data_type.h",
+  "name": "mixed_data_type.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1462,
+  "content_sha256": "3b557e1dd2998c8d433a374160f77196a693ae0398dc89cd76db453ed0843711",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 32,
+    "char_count": 1462,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "namespace at { namespace native {",
+      "inline ScalarType first_type() {",
+      "  return ScalarType::Undefined;",
+      "}",
+      "template <typename... Args>",
+      "inline ScalarType first_type(const Tensor& arg, const Args&... parameters) {",
+      "  return arg.defined() ? arg.scalar_type() : first_type(parameters...);",
+      "}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_318_3b557e1dd2998c8d_mixed_data_type.h.json"
+}

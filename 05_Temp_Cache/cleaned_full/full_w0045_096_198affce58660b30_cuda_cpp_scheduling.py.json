@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\codegen\\cuda\\cuda_cpp_scheduling.py",
+  "name": "cuda_cpp_scheduling.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9129,
+  "content_sha256": "198affce58660b30f752961e3b7e72e6f620ab4031780f7a5ec384023a9a8d2c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 188,
+    "char_count": 9129,
+    "preview_lines": [
+      "import logging",
+      "from typing import cast, List",
+      "from ...._dynamo.utils import counters",
+      "from ... import config, ir",
+      "from ...codecache import code_hash, get_path",
+      "from ...ir import ComputedBuffer, CUDATemplateBuffer, Pointwise",
+      "from ...scheduler import (",
+      "    BaseSchedulerNode,",
+      "    BaseScheduling,",
+      "    FusedSchedulerNode,"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import cast, List",
+      "from ...._dynamo.utils import counters",
+      "from ... import config, ir",
+      "from ...codecache import code_hash, get_path",
+      "from ...ir import ComputedBuffer, CUDATemplateBuffer, Pointwise",
+      "from ...scheduler import (",
+      "from ...utils import get_fused_kernel_name, get_kernel_metadata, sympy_product",
+      "from ...virtualized import V",
+      "from ..common import IndentedBuffer",
+      "from .cutlass_epilogue_gen import CUTLASSEVTOpNotImplementedError",
+      "from torch._inductor.codegen.cuda.cutlass_epilogue_gen import ("
+    ],
+    "classes": [
+      "CUDACPPScheduling"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_096_198affce58660b30_cuda_cpp_scheduling.py.json"
+}

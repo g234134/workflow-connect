@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\api\\include\\torch\\nn\\pimpl-inl.h",
+  "name": "pimpl-inl.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3270,
+  "content_sha256": "f9c75b4b16724edd0eae18588ded8c7071ae8ddb20316f4ae495b3f8c3e55297",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 61,
+    "char_count": 3270,
+    "preview_lines": [
+      "// This class exists  only to do SFINAE on abstract types `T` that are really",
+      "// `ModuleHolder<ModuleType>`, because there's no good way to say that `T` is a",
+      "// `ModuleHolder` over some unknown type `ModuleType`. With this, you can do",
+      "// `enable_if_t<is_base_of_v<ModuleHolderIndicator, T>>`.",
+      "struct ModuleHolderIndicator {};",
+      "// A type trait that is true for types that are `ModuleHolder`s.",
+      "template <typename T>",
+      "using is_module_holder = std::is_base_of<ModuleHolderIndicator, decay_t<T>>;",
+      "template <typename T>",
+      "using disable_if_module_holder_t = disable_if_t<is_module_holder<T>::value>;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_040_f9c75b4b16724edd_pimpl-inl.h.json"
+}

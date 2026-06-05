@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 385,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_health_app_factory.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_health_app_factory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 264,
+  "content_sha256": "69eef4b92cfad55f3f3a6d02297339c4075e3fe6916f3b69de87a926568286c9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 7,
+    "non_empty_lines": 6,
+    "char_count": 264,
+    "preview_lines": [
+      "from fastapi import FastAPI",
+      "from litellm.proxy.health_endpoints._health_endpoints import router as health_router",
+      "def build_health_app():",
+      "    health_app = FastAPI(title=\"LiteLLM Health Endpoints\")",
+      "    health_app.include_router(health_router)",
+      "    return health_app "
+    ],
+    "imports": [
+      "from fastapi import FastAPI",
+      "from litellm.proxy.health_endpoints._health_endpoints import router as health_router"
+    ],
+    "classes": [],
+    "functions": [
+      "build_health_app"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_385_69eef4b92cfad55f_AI_Chariot_Legacy_666_1.0.0_20260508_health_app_factory.py.json"
+}

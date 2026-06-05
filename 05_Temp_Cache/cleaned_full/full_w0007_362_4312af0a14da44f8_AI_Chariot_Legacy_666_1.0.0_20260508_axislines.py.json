@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 362,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_axislines.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_axislines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16556,
+  "content_sha256": "4312af0a14da44f8f4a2fbf176b7ebde93b31311087f9b2f0f0c5113b7a71178",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 479,
+    "non_empty_lines": 369,
+    "char_count": 16556,
+    "preview_lines": [
+      "\"\"\"",
+      "Axislines includes modified implementation of the Axes class. The",
+      "biggest difference is that the artists responsible for drawing the axis spine,",
+      "ticks, ticklabels and axis labels are separated out from Matplotlib's Axis",
+      "class. Originally, this change was motivated to support curvilinear",
+      "grid. Here are a few reasons that I came up with a new axes class:",
+      "* \"top\" and \"bottom\" x-axis (or \"left\" and \"right\" y-axis) can have",
+      "  different ticks (tick locations and labels). This is not possible",
+      "  with the current Matplotlib, although some twin axes trick can help.",
+      "* Curvilinear grid."
+    ],
+    "imports": [
+      "from the axis as some gridlines can never pass any axis.",
+      "import numpy as np",
+      "import matplotlib as mpl",
+      "from matplotlib import _api",
+      "import matplotlib.axes as maxes",
+      "from matplotlib.path import Path",
+      "from mpl_toolkits.axes_grid1 import mpl_axes",
+      "from .axisline_style import AxislineStyle  # noqa",
+      "from .axis_artist import AxisArtist, GridlinesCollection"
+    ],
+    "classes": [
+      "_AxisArtistHelperBase",
+      "_FixedAxisArtistHelperBase",
+      "_FloatingAxisArtistHelperBase",
+      "FixedAxisArtistHelperRectilinear",
+      "FloatingAxisArtistHelperRectilinear",
+      "AxisArtistHelper",
+      "AxisArtistHelperRectlinear",
+      "GridHelperBase",
+      "GridHelperRectlinear",
+      "Axes",
+      "AxesZero"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_362_4312af0a14da44f8_AI_Chariot_Legacy_666_1.0.0_20260508_axislines.py.json"
+}

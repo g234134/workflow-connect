@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unify_refinements.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unify_refinements.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3269,
+  "content_sha256": "761f74b81b31e36835042efe40bb13045cd4599f7fd3c5f0a8a3784790c02ff9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 103,
+    "char_count": 3269,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from torch.fx.experimental.graph_gradual_typechecker import Refine",
+      "from torch.fx.tensor_type import TensorType",
+      "from torch.fx.experimental.unification import Var, unify  # type: ignore[attr-defined]",
+      "def infer_symbolic_types_single_pass(traced):",
+      "    \"\"\"",
+      "    Calls our symbolic inferencer once.",
+      "    \"\"\"",
+      "    r = Refine(traced)",
+      "    r.refine()"
+    ],
+    "imports": [
+      "from torch.fx.experimental.graph_gradual_typechecker import Refine",
+      "from torch.fx.tensor_type import TensorType",
+      "from torch.fx.experimental.unification import Var, unify  # type: ignore[attr-defined]"
+    ],
+    "classes": [],
+    "functions": [
+      "infer_symbolic_types_single_pass",
+      "infer_symbolic_types",
+      "convert_eq",
+      "unify_eq",
+      "substitute_solution_one_type",
+      "substitute_all_types",
+      "check_for_type_equality"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_459_761f74b81b31e368_AI_Chariot_Legacy_666_1.0.0_20260508_unify_refinements.py.json"
+}

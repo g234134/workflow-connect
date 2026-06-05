@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 27,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_1.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_1.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6525,
+  "content_sha256": "a4aaa61a811e72aa598698149d12d4f670fe2e9b8941fa2bc63c568598fe0a00",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 162,
+    "non_empty_lines": 144,
+    "char_count": 6525,
+    "preview_lines": [
+      "import asyncio",
+      "import json",
+      "from typing import Generator",
+      "from .utils.lazy_import import lazy_import",
+      "uvicorn = lazy_import(\"uvicorn\")",
+      "fastapi = lazy_import(\"fastapi\")",
+      "def server(interpreter, host=\"0.0.0.0\", port=8000):",
+      "    FastAPI, Request, Response, WebSocket = (",
+      "        fastapi.FastAPI,",
+      "        fastapi.Request,"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "from typing import Generator",
+      "from .utils.lazy_import import lazy_import",
+      "import socket"
+    ],
+    "classes": [],
+    "functions": [
+      "server"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_027_a4aaa61a811e72aa_AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_1.py.json"
+}

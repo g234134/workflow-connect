@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\logger.hpp",
+  "name": "logger.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 4143,
+  "content_sha256": "79e4478c9def81dd79a448f07938bd5b14f0a9df1330a124a2d1879f4c4546fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 104,
+    "non_empty_lines": 89,
+    "char_count": 4143,
+    "preview_lines": [
+      "#include <c10/util/Logging.h>",
+      "#include <torch/csrc/distributed/c10d/reducer.hpp>",
+      "#include <mutex>",
+      "namespace c10d {",
+      "class TORCH_API Logger {",
+      " public:",
+      "  explicit Logger(std::shared_ptr<c10d::Reducer> reducer);",
+      "  // Set logging data that can be got during DistributedDataParallel",
+      "  // construction time.",
+      "  void set_construction_data_and_log("
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_194_79e4478c9def81dd_logger.hpp.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_grapheme.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_grapheme.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13405,
+  "content_sha256": "4d6af2652eb941af01c4fbce67a18c92140cab6830c9d065046f9e6b45244488",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 428,
+    "non_empty_lines": 339,
+    "char_count": 13402,
+    "preview_lines": [
+      "\"\"\"",
+      "Grapheme cluster segmentation following Unicode Standard Annex #29.",
+      "This module provides pure-Python implementation of the grapheme cluster boundary algorithm as",
+      "defined in UAX #29: Unicode Text Segmentation.",
+      "https://www.unicode.org/reports/tr29/",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "# std imports",
+      "from enum import IntEnum",
+      "from functools import lru_cache"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from enum import IntEnum",
+      "from functools import lru_cache",
+      "from typing import TYPE_CHECKING, Optional, NamedTuple",
+      "from .bisearch import bisearch as _bisearch",
+      "from .table_grapheme import (GRAPHEME_L,",
+      "from collections.abc import Iterator"
+    ],
+    "classes": [
+      "GCB",
+      "BreakResult"
+    ],
+    "functions": [
+      "_grapheme_cluster_break",
+      "_is_extended_pictographic",
+      "_is_incb_linker",
+      "_is_incb_consonant",
+      "_is_incb_extend",
+      "_simple_break_check",
+      "_should_break",
+      "iter_graphemes",
+      "_find_cluster_start",
+      "grapheme_boundary_before",
+      "iter_graphemes_reverse"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_240_4d6af2652eb941af_AI_Chariot_Legacy_666_1.0.0_20260508_grapheme.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ui_session_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ui_session_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2623,
+  "content_sha256": "bb1243a4aeaedd4703d46c1645e7f65851fa14e18ff6d91df14f0da5badd95fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 85,
+    "non_empty_lines": 68,
+    "char_count": 2623,
+    "preview_lines": [
+      "\"\"\"Helpers to resolve real team contexts for UI session tokens.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import List",
+      "from litellm._logging import verbose_logger",
+      "from litellm.constants import UI_SESSION_TOKEN_TEAM_ID",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "def clone_user_api_key_auth_with_team(",
+      "    user_api_key_auth: UserAPIKeyAuth,",
+      "    team_id: str,",
+      ") -> UserAPIKeyAuth:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import List",
+      "from litellm._logging import verbose_logger",
+      "from litellm.constants import UI_SESSION_TOKEN_TEAM_ID",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.auth_checks import get_user_object",
+      "from litellm.proxy.proxy_server import ("
+    ],
+    "classes": [],
+    "functions": [
+      "clone_user_api_key_auth_with_team"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_409_bb1243a4aeaedd47_AI_Chariot_Legacy_666_1.0.0_20260508_ui_session_utils.py.json"
+}

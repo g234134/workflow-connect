@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 24,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_safestring.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_safestring.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2178,
+  "content_sha256": "a5fae9177b8978059c17ed276883d1afa4230e899407cc9ce24d6048dfb31110",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 57,
+    "char_count": 2178,
+    "preview_lines": [
+      "\"\"\"",
+      "Functions for working with \"safe strings\": strings that can be displayed safely",
+      "without further escaping in HTML. Marking something as a \"safe string\" means",
+      "that the producer of the string has already turned characters that should not",
+      "be interpreted by the HTML engine (e.g. '<') into the appropriate entities.",
+      "\"\"\"",
+      "from functools import wraps",
+      "from django.utils.functional import keep_lazy",
+      "class SafeData:",
+      "    __slots__ = ()"
+    ],
+    "imports": [
+      "from functools import wraps",
+      "from django.utils.functional import keep_lazy"
+    ],
+    "classes": [
+      "SafeData",
+      "SafeString"
+    ],
+    "functions": [
+      "_safety_decorator",
+      "mark_safe"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_024_a5fae9177b897805_AI_Chariot_Legacy_666_1.0.0_20260508_safestring.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_getcwdu.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_getcwdu.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 451,
+  "content_sha256": "5bc5252f683a401e7d81c5911617c4af1a1bcdf99a51c4bf1cfccb00446ff220",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 15,
+    "char_count": 451,
+    "preview_lines": [
+      "\"\"\"",
+      "Fixer that changes os.getcwdu() to os.getcwd().",
+      "\"\"\"",
+      "# Author: Victor Stinner",
+      "# Local imports",
+      "from .. import fixer_base",
+      "from ..fixer_util import Name",
+      "class FixGetcwdu(fixer_base.BaseFix):",
+      "    BM_compatible = True",
+      "    PATTERN = \"\"\""
+    ],
+    "imports": [
+      "from .. import fixer_base",
+      "from ..fixer_util import Name"
+    ],
+    "classes": [
+      "FixGetcwdu"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_074_5bc5252f683a401e_AI_Chariot_Legacy_666_1.0.0_20260508_fix_getcwdu.py.json"
+}

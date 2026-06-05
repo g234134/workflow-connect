@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 442,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\test_kwargs_tool_runtime_injection.py",
+  "name": "test_kwargs_tool_runtime_injection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2069,
+  "content_sha256": "74abd10fd269f4992355bf0c927a161ca00b8e5c8001b4e3e76ceaa44171b600",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 45,
+    "char_count": 2066,
+    "preview_lines": [
+      "\"\"\"Test that config/runtime in args_schema aren't injected to **kwargs functions.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from langchain_core.messages import HumanMessage, ToolMessage",
+      "from langchain_core.tools import StructuredTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain.agents import create_agent",
+      "from tests.unit_tests.agents.model import FakeToolCallingModel",
+      "class ArgsSchema(BaseModel):",
+      "    \"\"\"Args schema with config and runtime fields.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from langchain_core.messages import HumanMessage, ToolMessage",
+      "from langchain_core.tools import StructuredTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain.agents import create_agent",
+      "from tests.unit_tests.agents.model import FakeToolCallingModel"
+    ],
+    "classes": [
+      "ArgsSchema"
+    ],
+    "functions": [
+      "test_config_and_runtime_not_injected_to_kwargs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_442_74abd10fd269f499_test_kwargs_tool_runtime_injection.py.json"
+}

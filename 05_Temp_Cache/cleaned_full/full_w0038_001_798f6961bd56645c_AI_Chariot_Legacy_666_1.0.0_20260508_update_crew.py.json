@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_update_crew.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_update_crew.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4649,
+  "content_sha256": "798f6961bd56645c7704eb92dacca96602cc94a98f7d40e0a3549c4cd14aaa4d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 102,
+    "char_count": 4649,
+    "preview_lines": [
+      "import os",
+      "import shutil",
+      "from typing import Any",
+      "import tomli_w",
+      "from crewai.cli.utils import read_toml",
+      "def update_crew() -> None:",
+      "    \"\"\"Update the pyproject.toml of the Crew project to use uv.\"\"\"",
+      "    migrate_pyproject(\"pyproject.toml\", \"pyproject.toml\")",
+      "def migrate_pyproject(input_file: str, output_file: str) -> None:",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import os",
+      "import shutil",
+      "from typing import Any",
+      "import tomli_w",
+      "from crewai.cli.utils import read_toml"
+    ],
+    "classes": [],
+    "functions": [
+      "update_crew",
+      "migrate_pyproject",
+      "parse_version"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_001_798f6961bd56645c_AI_Chariot_Legacy_666_1.0.0_20260508_update_crew.py.json"
+}

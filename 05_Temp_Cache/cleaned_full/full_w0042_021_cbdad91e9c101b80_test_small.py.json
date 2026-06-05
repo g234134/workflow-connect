@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 21,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\generators\\tests\\test_small.py",
+  "name": "test_small.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8074,
+  "content_sha256": "cbdad91e9c101b8063a7eb07269d7caccdc0d2e10639491b925aa525e735d5aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 186,
+    "char_count": 8074,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "null = nx.null_graph()",
+      "class TestGeneratorsSmall:",
+      "    def test__LCF_graph(self):",
+      "        # If n<=0, then return the null_graph",
+      "        G = nx.LCF_graph(-10, [1, 2], 100)",
+      "        assert nx.could_be_isomorphic(G, null)",
+      "        G = nx.LCF_graph(0, [1, 2], 3)",
+      "        assert nx.could_be_isomorphic(G, null)"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestGeneratorsSmall"
+    ],
+    "functions": [
+      "tests_raises_with_directed_create_using"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_021_cbdad91e9c101b80_test_small.py.json"
+}

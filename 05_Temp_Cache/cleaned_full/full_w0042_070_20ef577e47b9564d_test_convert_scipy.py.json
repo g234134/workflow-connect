@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 70,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\tests\\test_convert_scipy.py",
+  "name": "test_convert_scipy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10381,
+  "content_sha256": "20ef577e47b9564d120b873b511e186d032355906e003401b7fc2531a3b14d24",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 281,
+    "non_empty_lines": 235,
+    "char_count": 10381,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import graphs_equal",
+      "np = pytest.importorskip(\"numpy\")",
+      "sp = pytest.importorskip(\"scipy\")",
+      "class TestConvertScipy:",
+      "    def setup_method(self):",
+      "        self.G1 = nx.barbell_graph(10, 3)",
+      "        self.G2 = nx.cycle_graph(10, create_using=nx.DiGraph)",
+      "        self.G3 = self.create_weighted(nx.Graph())"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import graphs_equal"
+    ],
+    "classes": [
+      "TestConvertScipy"
+    ],
+    "functions": [
+      "test_from_scipy_sparse_array_formats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_070_20ef577e47b9564d_test_convert_scipy.py.json"
+}

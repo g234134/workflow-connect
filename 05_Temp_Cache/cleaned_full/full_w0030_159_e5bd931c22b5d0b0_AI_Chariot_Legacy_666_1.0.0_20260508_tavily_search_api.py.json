@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tavily_search_api.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tavily_search_api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 841,
+  "content_sha256": "e5bd931c22b5d0b0cf38757f363b0bb32ee466bb1489cfc600a85942dcb7c82e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 20,
+    "char_count": 841,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.retrievers import TavilySearchAPIRetriever",
+      "    from langchain_community.retrievers.tavily_search_api import SearchDepth",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"SearchDepth\": \"langchain_community.retrievers.tavily_search_api\","
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.retrievers import TavilySearchAPIRetriever",
+      "from langchain_community.retrievers.tavily_search_api import SearchDepth"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_159_e5bd931c22b5d0b0_AI_Chariot_Legacy_666_1.0.0_20260508_tavily_search_api.py.json"
+}

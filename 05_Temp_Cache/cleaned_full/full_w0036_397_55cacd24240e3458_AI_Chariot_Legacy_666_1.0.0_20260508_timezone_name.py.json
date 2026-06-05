@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 397,
+  "generated_at": "2026-05-08T18:46:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_timezone_name.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_timezone_name.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6111,
+  "content_sha256": "55cacd24240e3458cbc273808b53b0a86c6270001f7b5781f32500e88d35a8d0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 135,
+    "char_count": 6111,
+    "preview_lines": [
+      "\"\"\"Time zone name validation and serialization module.\"\"\"",
+      "from __future__ import annotations",
+      "import importlib",
+      "import sys",
+      "import warnings",
+      "from typing import Any, Callable, cast",
+      "from pydantic import GetCoreSchemaHandler, GetJsonSchemaHandler",
+      "from pydantic_core import PydanticCustomError, core_schema",
+      "def _is_available(name: str) -> bool:",
+      "    \"\"\"Check if a module is available for import.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import importlib",
+      "import sys",
+      "import warnings",
+      "from typing import Any, Callable, cast",
+      "from pydantic import GetCoreSchemaHandler, GetJsonSchemaHandler",
+      "from pydantic_core import PydanticCustomError, core_schema",
+      "from zoneinfo import available_timezones",
+      "from pytz import all_timezones",
+      "from pydantic_extra_types.timezone_name import TimeZoneName",
+      "from pydantic import BaseModel",
+      "from pydantic_extra_types.timezone_name import TimeZoneName, timezone_name_settings"
+    ],
+    "classes": [
+      "TimeZoneNameSettings",
+      "TimeZoneName"
+    ],
+    "functions": [
+      "_is_available",
+      "_tz_provider_from_zone_info",
+      "_tz_provider_from_pytz",
+      "_warn_about_pytz_usage",
+      "get_timezones",
+      "timezone_name_settings"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_397_55cacd24240e3458_AI_Chariot_Legacy_666_1.0.0_20260508_timezone_name.py.json"
+}

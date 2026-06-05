@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 322,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\experimental\\recording.py",
+  "name": "recording.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17784,
+  "content_sha256": "d6ba29a830c1b5846f739e6a8de6b7b2fcc4079a7f634333c83236788f7f9cbc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 453,
+    "non_empty_lines": 387,
+    "char_count": 17784,
+    "preview_lines": [
+      "import functools",
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "__all__ = [",
+      "    \"ShapeEnvEvent\",",
+      "    \"record_shapeenv_event\",",
+      "    \"replay_shape_env_events\","
+    ],
+    "imports": [
+      "import functools",
+      "import itertools",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch.fx.experimental.symbolic_shapes import ShapeEnv, SymTypes",
+      "from torch.fx.experimental.symbolic_shapes import ShapeEnv, SymTypes"
+    ],
+    "classes": [
+      "ShapeEnvEvent",
+      "FakeTensorMeta",
+      "NotEqualError"
+    ],
+    "functions": [
+      "_extract_shape_env_and_assert_equal",
+      "record_shapeenv_event",
+      "replay_shape_env_events",
+      "shape_env_check_state_equal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_322_d6ba29a830c1b584_recording.py.json"
+}

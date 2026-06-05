@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_busted_json.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_busted_json.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29170,
+  "content_sha256": "8a57cab03c888cdaef6dfa4981e7fe59565b6e55f214bc3d4f157d9f2b9e380d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 819,
+    "non_empty_lines": 718,
+    "char_count": 29158,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "import json",
+      "import re",
+      "class JsonFixError(Exception):",
+      "    pass",
+      "def log(obj):",
+      "    if isinstance(obj, (int, float)):",
+      "        print(obj)",
+      "    elif isinstance(obj, bool):",
+      "        print(obj)"
+    ],
+    "imports": [
+      "import json",
+      "import re"
+    ],
+    "classes": [
+      "JsonFixError",
+      "JsonParser"
+    ],
+    "functions": [
+      "log",
+      "log_jsons",
+      "log_jsons_in_json",
+      "is_json",
+      "log_pretty",
+      "repair_json",
+      "to_array_of_plain_strings_or_json",
+      "can_parse_json",
+      "first_json",
+      "last_json",
+      "largest_json",
+      "json_matching"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_055_8a57cab03c888cda_AI_Chariot_Legacy_666_1.0.0_20260508_fix_busted_json.py.json"
+}

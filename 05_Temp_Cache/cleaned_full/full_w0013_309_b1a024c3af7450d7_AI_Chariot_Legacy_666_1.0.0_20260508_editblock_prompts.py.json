@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 309,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_editblock_prompts.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_editblock_prompts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5723,
+  "content_sha256": "b1a024c3af7450d76500d144f2ae5ef2821cf9f1bcba009f20c4332db3ed9a28",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 135,
+    "char_count": 5723,
+    "preview_lines": [
+      "# flake8: noqa: E501",
+      "from . import shell",
+      "from .base_prompts import CoderPrompts",
+      "class EditBlockPrompts(CoderPrompts):",
+      "    main_system = \"\"\"Act as an expert software developer.",
+      "Always use best practices when coding.",
+      "Respect and use existing conventions, libraries, etc that are already present in the code base.",
+      "{final_reminders}",
+      "Take requests for changes to the supplied code.",
+      "If the request is ambiguous, ask questions."
+    ],
+    "imports": [
+      "from . import shell",
+      "from .base_prompts import CoderPrompts",
+      "from flask import Flask",
+      "import math",
+      "from flask import Flask",
+      "from hello import hello"
+    ],
+    "classes": [
+      "EditBlockPrompts"
+    ],
+    "functions": [
+      "factorial",
+      "hello",
+      "hello"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_309_b1a024c3af7450d7_AI_Chariot_Legacy_666_1.0.0_20260508_editblock_prompts.py.json"
+}

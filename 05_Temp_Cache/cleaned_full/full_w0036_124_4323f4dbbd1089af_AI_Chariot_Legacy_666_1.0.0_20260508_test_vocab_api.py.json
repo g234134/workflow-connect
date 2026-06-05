@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_vocab_api.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_vocab_api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2231,
+  "content_sha256": "4323f4dbbd1089af818a0c8faabf58c55bd7217307d689b4c6fcb785b66c853d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 83,
+    "non_empty_lines": 62,
+    "char_count": 2231,
+    "preview_lines": [
+      "import os",
+      "import pytest",
+      "from spacy.attrs import IS_ALPHA, LEMMA, ORTH",
+      "from spacy.lang.en import English",
+      "from spacy.parts_of_speech import NOUN, VERB",
+      "from spacy.vocab import Vocab",
+      "from ..util import make_tempdir",
+      "@pytest.mark.issue(1868)",
+      "def test_issue1868():",
+      "    \"\"\"Test Vocab.__contains__ works with int keys.\"\"\""
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from spacy.attrs import IS_ALPHA, LEMMA, ORTH",
+      "from spacy.lang.en import English",
+      "from spacy.parts_of_speech import NOUN, VERB",
+      "from spacy.vocab import Vocab",
+      "from ..util import make_tempdir"
+    ],
+    "classes": [],
+    "functions": [
+      "test_issue1868",
+      "test_vocab_api_neq",
+      "test_vocab_api_eq",
+      "test_vocab_api_shape_attr",
+      "test_vocab_api_symbols",
+      "test_vocab_api_contains",
+      "test_vocab_writing_system",
+      "test_to_disk",
+      "test_to_disk_exclude"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_124_4323f4dbbd1089af_AI_Chariot_Legacy_666_1.0.0_20260508_test_vocab_api.py.json"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:44:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__sanitizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__sanitizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23050,
+  "content_sha256": "3268a02f8068cf06c201dec4fda18650c4ab217bcda7cddb704a37e66c29704d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 621,
+    "non_empty_lines": 508,
+    "char_count": 23050,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "r\"\"\"",
+      "This module introduces CUDA Sanitizer, a tool for detecting synchronization errors between kernels ran on different streams.",
+      "It stores information on accesses to tensors to determine if they are synchronized",
+      "or not. When enabled in a python program and a possible data race is detected, a",
+      "detailed warning will be printed and the program will exit.",
+      "It can be enabled either by importing this module and calling",
+      ":func:`enable_cuda_sanitizer()` or by exporting the ``TORCH_CUDA_SANITIZER``",
+      "environment variable.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import enum",
+      "import functools",
+      "import inspect",
+      "import io",
+      "import logging",
+      "import sys",
+      "import textwrap",
+      "import traceback",
+      "from dataclasses import dataclass, field",
+      "from typing import Any, Dict, Iterator, List, Optional, Set, Tuple, TypeVar",
+      "import torch",
+      "import torch.cuda._gpu_trace as gpu_trace",
+      "from torch.utils import _pytree as pytree",
+      "from torch.utils._python_dispatch import TorchDispatchMode"
+    ],
+    "classes": [
+      "AccessType",
+      "Access",
+      "SynchronizationError",
+      "UnsynchronizedAccessError",
+      "CUDASanitizerErrors",
+      "TensorInfo",
+      "_TensorsAccessed",
+      "StreamSynchronizations",
+      "EventHandler",
+      "ArgumentHandler",
+      "CUDASanitizerDispatchMode",
+      "CUDASanitizer"
+    ],
+    "functions": [
+      "zip_by_key",
+      "zip_arguments",
+      "enable_cuda_sanitizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_098_3268a02f8068cf06_AI_Chariot_Legacy_666_1.0.0_20260508__sanitizer.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 336,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tvm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tvm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7143,
+  "content_sha256": "a4bcefed840c7a241392c7aa3a96d20ab340a53b76368202c296c184472f794b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 194,
+    "non_empty_lines": 169,
+    "char_count": 7143,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import functools",
+      "import importlib",
+      "import logging",
+      "import os",
+      "import sys",
+      "import tempfile",
+      "from types import MappingProxyType",
+      "from typing import Optional",
+      "import torch"
+    ],
+    "imports": [
+      "import functools",
+      "import importlib",
+      "import logging",
+      "import os",
+      "import sys",
+      "import tempfile",
+      "from types import MappingProxyType",
+      "from typing import Optional",
+      "import torch",
+      "from .common import device_from_inputs, fake_tensor_unsupported",
+      "from .registry import register_backend",
+      "import tvm  # type: ignore[import]",
+      "from tvm import relay  # type: ignore[import]",
+      "from tvm.contrib import graph_executor  # type: ignore[import]",
+      "from tvm import auto_scheduler",
+      "from tvm import meta_schedule as ms"
+    ],
+    "classes": [],
+    "functions": [
+      "tvm",
+      "has_tvm",
+      "llvm_target"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_336_a4bcefed840c7a24_AI_Chariot_Legacy_666_1.0.0_20260508_tvm.py.json"
+}

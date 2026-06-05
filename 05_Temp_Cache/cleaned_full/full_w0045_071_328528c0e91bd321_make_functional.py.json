@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_functorch\\make_functional.py",
+  "name": "make_functional.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23374,
+  "content_sha256": "328528c0e91bd321580012bee49751e52c91e0ec6c7a699ca55276f8e0b92013",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 615,
+    "non_empty_lines": 510,
+    "char_count": 23374,
+    "preview_lines": [
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "import copy",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Dict,"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import (",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch import Tensor",
+      "from torch.nn.utils._named_member_accessor import NamedMemberAccessor"
+    ],
+    "classes": [
+      "FunctionalModuleWithBuffers",
+      "FunctionalModule"
+    ],
+    "functions": [
+      "raise_parameter_tying_error",
+      "create_names_map",
+      "_extract_members",
+      "extract_weights",
+      "extract_buffers",
+      "load_weights",
+      "_swap_state",
+      "load_buffers",
+      "load_state",
+      "make_functional_deprecated_v1",
+      "make_functional_with_buffers_deprecated_v1",
+      "make_functional",
+      "make_functional_with_buffers",
+      "transpose_stack",
+      "combine_state_for_ensemble",
+      "functional_init",
+      "functional_init_with_buffers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_071_328528c0e91bd321_make_functional.py.json"
+}

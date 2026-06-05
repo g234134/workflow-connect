@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 312,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aiml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aiml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1085,
+  "content_sha256": "c9fbd4c69dbee93353b9fa080823e19e6284399724fe5d5b1bf84f3549942f48",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 1085,
+    "preview_lines": [
+      "from typing import Dict, Optional, Union",
+      "from typing_extensions import TypedDict",
+      "class AimlImageSize(TypedDict, total=False):",
+      "    \"\"\"Custom image size specification for AI/ML API\"\"\"",
+      "    width: int  # Must be multiple of 32, min 256, max 1440",
+      "    height: int  # Must be multiple of 32, min 256, max 1440",
+      "class AimlImageGenerationRequestParams(TypedDict, total=False):",
+      "    \"\"\"",
+      "    TypedDict for AI/ML flux image generation request parameters.",
+      "    Based on AI/ML API docs: https://api.aimlapi.com/v1/images/generations"
+    ],
+    "imports": [
+      "from typing import Dict, Optional, Union",
+      "from typing_extensions import TypedDict"
+    ],
+    "classes": [
+      "AimlImageSize",
+      "AimlImageGenerationRequestParams"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_312_c9fbd4c69dbee933_AI_Chariot_Legacy_666_1.0.0_20260508_aiml.py.json"
+}

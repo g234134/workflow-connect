@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ipapp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ipapp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12512,
+  "content_sha256": "7764688380d1915bf4fdf45ea993aea2b28c5c0b44aac0ac9303de8ed8e3d0b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 346,
+    "non_empty_lines": 302,
+    "char_count": 12512,
+    "preview_lines": [
+      "# encoding: utf-8",
+      "\"\"\"",
+      "The :class:`~traitlets.config.application.Application` object for the command",
+      "line :command:`ipython` program.",
+      "\"\"\"",
+      "# Copyright (c) IPython Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "import logging",
+      "import os",
+      "import sys"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "import sys",
+      "import warnings",
+      "from traitlets.config.loader import Config",
+      "from traitlets.config.application import boolean_flag, catch_config_error",
+      "from IPython.core import release",
+      "from IPython.core import usage",
+      "from IPython.core.completer import IPCompleter",
+      "from IPython.core.crashhandler import CrashHandler",
+      "from IPython.core.formatters import PlainTextFormatter",
+      "from IPython.core.history import HistoryManager",
+      "from IPython.core.application import (",
+      "from IPython.core.magic import MagicsManager",
+      "from IPython.core.magics import (",
+      "from IPython.core.shellapp import (",
+      "from IPython.extensions.storemagic import StoreMagics",
+      "from .interactiveshell import TerminalInteractiveShell",
+      "from IPython.paths import get_ipython_dir",
+      "from traitlets import ("
+    ],
+    "classes": [
+      "IPAppCrashHandler",
+      "LocateIPythonApp",
+      "TerminalIPythonApp"
+    ],
+    "functions": [
+      "load_default_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_190_7764688380d1915b_AI_Chariot_Legacy_666_1.0.0_20260508_ipapp.py.json"
+}

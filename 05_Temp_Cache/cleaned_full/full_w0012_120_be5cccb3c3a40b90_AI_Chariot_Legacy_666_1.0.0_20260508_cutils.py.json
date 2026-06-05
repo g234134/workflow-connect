@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cutils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cutils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 383,
+  "content_sha256": "be5cccb3c3a40b906ee2c20ff801769987ffb48a3b528e2bd83008fcb3616733",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 8,
+    "non_empty_lines": 7,
+    "char_count": 383,
+    "preview_lines": [
+      "from sympy.printing.c import C99CodePrinter",
+      "def render_as_source_file(content, Printer=C99CodePrinter, settings=None):",
+      "    \"\"\" Renders a C source file (with required #include statements) \"\"\"",
+      "    printer = Printer(settings or {})",
+      "    code_str = printer.doprint(content)",
+      "    includes = '\\n'.join(['#include <%s>' % h for h in printer.headers])",
+      "    return includes + '\\n\\n' + code_str"
+    ],
+    "imports": [
+      "from sympy.printing.c import C99CodePrinter"
+    ],
+    "classes": [],
+    "functions": [
+      "render_as_source_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_120_be5cccb3c3a40b90_AI_Chariot_Legacy_666_1.0.0_20260508_cutils.py.json"
+}

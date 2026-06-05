@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 101,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\pregel\\_runner.py",
+  "name": "_runner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28706,
+  "content_sha256": "b44aa920fea291d5302b8ae3da515bf973d7ac201c1cf04836f0d7d41ab5c47c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 768,
+    "non_empty_lines": 737,
+    "char_count": 28703,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import concurrent.futures",
+      "import inspect",
+      "import threading",
+      "import time",
+      "import weakref",
+      "from collections.abc import (",
+      "    AsyncIterator,",
+      "    Awaitable,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import concurrent.futures",
+      "import inspect",
+      "import threading",
+      "import time",
+      "import weakref",
+      "from collections.abc import (",
+      "from functools import partial",
+      "from typing import (",
+      "from langchain_core.callbacks import Callbacks",
+      "from langgraph._internal._constants import (",
+      "from langgraph._internal._future import chain_future, run_coroutine_threadsafe",
+      "from langgraph._internal._scratchpad import PregelScratchpad",
+      "from langgraph._internal._typing import MISSING",
+      "from langgraph.constants import TAG_HIDDEN",
+      "from langgraph.errors import GraphBubbleUp, GraphInterrupt",
+      "from langgraph.pregel._algo import Call",
+      "from langgraph.pregel._executor import Submit",
+      "from langgraph.pregel._retry import arun_with_retry, run_with_retry"
+    ],
+    "classes": [
+      "FuturesDict",
+      "PregelRunner"
+    ],
+    "functions": [
+      "_should_stop_others",
+      "_exception",
+      "_panic_or_proceed",
+      "_call",
+      "_acall"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_101_b44aa920fea291d5__runner.py.json"
+}

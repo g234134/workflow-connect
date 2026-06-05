@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 15,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel_attributes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel_attributes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3194,
+  "content_sha256": "6a1d8e76ac94de8be36bcd189e43e4e4611c67120feab73010cefcae2ab51b90",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 108,
+    "non_empty_lines": 89,
+    "char_count": 3194,
+    "preview_lines": [
+      "\"\"\"",
+      "If the LLM Obs has any specific attributes to log request or response, we can add them here.",
+      "Relevant Issue: https://github.com/BerriAI/litellm/issues/13764",
+      "\"\"\"",
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, Optional, Union",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from litellm.integrations.opentelemetry_utils.base_otel_llm_obs_attributes import (",
+      "    BaseLLMObsOTELAttributes,"
+    ],
+    "imports": [
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, Optional, Union",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from litellm.integrations.opentelemetry_utils.base_otel_llm_obs_attributes import (",
+      "from litellm.types.llms.openai import HttpxBinaryResponseContent, ResponsesAPIResponse",
+      "from litellm.types.utils import (",
+      "from opentelemetry.trace import Span"
+    ],
+    "classes": [
+      "LangfuseLLMObsOTELAttributes"
+    ],
+    "functions": [
+      "get_output_content_by_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_015_6a1d8e76ac94de8b_AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel_attributes.py.json"
+}

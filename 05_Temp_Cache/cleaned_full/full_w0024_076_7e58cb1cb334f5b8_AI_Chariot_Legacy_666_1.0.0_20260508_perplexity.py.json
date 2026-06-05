@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 76,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_perplexity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_perplexity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6723,
+  "content_sha256": "7e58cb1cb334f5b88e4212ff8ceb584043ee3ee544b2e56fbe7d04e2267443b2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 180,
+    "non_empty_lines": 155,
+    "char_count": 6723,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from collections.abc import Iterable, Sequence",
+      "from contextlib import ExitStack",
+      "from dataclasses import dataclass, field",
+      "from typing import Annotated, Any, Literal, TypeAlias",
+      "from perplexity import Perplexity",
+      "from perplexity.types import APIPublicSearchResult",
+      "from pydantic import Field"
+    ],
+    "imports": [
+      "from collections.abc import Iterable, Sequence",
+      "from contextlib import ExitStack",
+      "from dataclasses import dataclass, field",
+      "from typing import Annotated, Any, Literal, TypeAlias",
+      "from perplexity import Perplexity",
+      "from perplexity.types import APIPublicSearchResult",
+      "from pydantic import Field",
+      "from autogen.beta.annotations import Context, Variable",
+      "from autogen.beta.events import ImageInput, ToolResult",
+      "from autogen.beta.middleware import BaseMiddleware, ToolMiddleware",
+      "from autogen.beta.tools.builtin._resolve import resolve_variable",
+      "from autogen.beta.tools.final.function_tool import FunctionToolSchema, tool",
+      "from autogen.beta.tools.tool import Tool"
+    ],
+    "classes": [
+      "SearchResult",
+      "ImageMeta",
+      "SearchResponse",
+      "PerplexitySearchTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_076_7e58cb1cb334f5b8_AI_Chariot_Legacy_666_1.0.0_20260508_perplexity.py.json"
+}

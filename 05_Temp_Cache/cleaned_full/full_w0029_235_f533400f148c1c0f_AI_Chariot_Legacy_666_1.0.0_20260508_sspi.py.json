@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sspi.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sspi.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16036,
+  "content_sha256": "f533400f148c1c0f544295c40db03022308ebbe3822a9a3e6232602a9f41c5d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 413,
+    "non_empty_lines": 345,
+    "char_count": 16036,
+    "preview_lines": [
+      "\"\"\"",
+      "Helper classes for SSPI authentication via the win32security module.",
+      "SSPI authentication involves a token-exchange \"dance\", the exact details",
+      "of which depends on the authentication provider used.  There are also",
+      "a number of complex flags and constants that need to be used - in most",
+      "cases, there are reasonable defaults.",
+      "These classes attempt to hide these details from you until you really need",
+      "to know.  They are not designed to handle all cases, just the common ones.",
+      "If you need finer control than offered here, just use the win32security",
+      "functions directly."
+    ],
+    "imports": [
+      "import sspicon",
+      "import win32security"
+    ],
+    "classes": [
+      "_BaseAuth",
+      "ClientAuth",
+      "ServerAuth"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_235_f533400f148c1c0f_AI_Chariot_Legacy_666_1.0.0_20260508_sspi.py.json"
+}

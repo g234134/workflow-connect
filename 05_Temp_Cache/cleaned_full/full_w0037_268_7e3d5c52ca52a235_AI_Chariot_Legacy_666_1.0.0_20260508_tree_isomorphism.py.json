@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tree_isomorphism.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tree_isomorphism.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9454,
+  "content_sha256": "7e3d5c52ca52a23515c2601d58a1b35c41ea39ac143498337cef508c21273cbb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 217,
+    "char_count": 9454,
+    "preview_lines": [
+      "\"\"\"",
+      "An algorithm for finding if two undirected trees are isomorphic,",
+      "and if so returns an isomorphism between the two sets of nodes.",
+      "This algorithm uses a routine to tell if two rooted trees (trees with a",
+      "specified root node) are isomorphic, which may be independently useful.",
+      "This implements an algorithm from:",
+      "The Design and Analysis of Computer Algorithms",
+      "by Aho, Hopcroft, and Ullman",
+      "Addison-Wesley Publishing 1974",
+      "Example 3.2 pp. 84-86."
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.utils.decorators import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "root_trees",
+      "assign_levels",
+      "group_by_levels",
+      "generate_isomorphism",
+      "rooted_tree_isomorphism",
+      "tree_isomorphism"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_268_7e3d5c52ca52a235_AI_Chariot_Legacy_666_1.0.0_20260508_tree_isomorphism.py.json"
+}

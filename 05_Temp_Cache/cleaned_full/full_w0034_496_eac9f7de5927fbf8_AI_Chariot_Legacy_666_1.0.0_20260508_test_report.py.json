@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 496,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_report.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_report.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1138,
+  "content_sha256": "eac9f7de5927fbf849a39ff98bbbc63d9b6582e1748a47f1014ff4fc62e430da",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1138,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize import minimize, Bounds",
+      "def test_gh10880():",
+      "    # checks that verbose reporting works with trust-constr for",
+      "    # bound-constrained problems",
+      "    bnds = Bounds(1, 2)",
+      "    opts = {'maxiter': 1000, 'verbose': 2}",
+      "    minimize(lambda x: x**2, x0=2., method='trust-constr',",
+      "             bounds=bnds, options=opts)"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize import minimize, Bounds"
+    ],
+    "classes": [],
+    "functions": [
+      "test_gh10880",
+      "test_gh12922"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_496_eac9f7de5927fbf8_AI_Chariot_Legacy_666_1.0.0_20260508_test_report.py.json"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\monomials.py",
+  "name": "monomials.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18458,
+  "content_sha256": "e9c0c24d534d3c379e7b96edd114271ae627b0efdf79f8a81c0e661032874ae0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 628,
+    "non_empty_lines": 490,
+    "char_count": 18458,
+    "preview_lines": [
+      "\"\"\"Tools and arithmetics for monomials of distributed polynomials. \"\"\"",
+      "from itertools import combinations_with_replacement, product",
+      "from textwrap import dedent",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core import Mul, S, Tuple, sympify",
+      "from sympy.polys.polyerrors import ExactQuotientFailed",
+      "from sympy.polys.polyutils import PicklableWithSlots, dict_from_expr",
+      "from sympy.utilities import public",
+      "from sympy.utilities.iterables import is_sequence, iterable",
+      "@public"
+    ],
+    "imports": [
+      "from itertools import combinations_with_replacement, product",
+      "from textwrap import dedent",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core import Mul, S, Tuple, sympify",
+      "from sympy.polys.polyerrors import ExactQuotientFailed",
+      "from sympy.polys.polyutils import PicklableWithSlots, dict_from_expr",
+      "from sympy.utilities import public",
+      "from sympy.utilities.iterables import is_sequence, iterable",
+      "from sympy.functions.combinatorial.factorials import factorial"
+    ],
+    "classes": [
+      "MonomialOps",
+      "Monomial"
+    ],
+    "functions": [
+      "itermonomials",
+      "monomial_count",
+      "monomial_mul",
+      "monomial_div",
+      "monomial_ldiv",
+      "monomial_pow",
+      "monomial_gcd",
+      "monomial_lcm",
+      "monomial_divides",
+      "monomial_max",
+      "monomial_min",
+      "monomial_deg",
+      "term_div"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_098_e9c0c24d534d3c37_monomials.py.json"
+}

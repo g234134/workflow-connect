@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 41,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\readwrite\\gexf.py",
+  "name": "gexf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40438,
+  "content_sha256": "079ae3ed16b55c7499478a8ee434493001205b041f88bd082a513ce5fcd06794",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1084,
+    "non_empty_lines": 971,
+    "char_count": 40438,
+    "preview_lines": [
+      "\"\"\"Read and write graphs in GEXF format.",
+      ".. warning::",
+      "    This parser uses the standard xml library present in Python, which is",
+      "    insecure - see :external+python:mod:`xml` for additional information.",
+      "    Only parse GEFX files you trust.",
+      "GEXF (Graph Exchange XML Format) is a language for describing complex",
+      "network structures, their associated data and dynamics.",
+      "This implementation does not support mixed graphs (directed and",
+      "undirected edges together).",
+      "Format"
+    ],
+    "imports": [
+      "import itertools",
+      "import time",
+      "from xml.etree.ElementTree import (",
+      "import networkx as nx",
+      "from networkx.utils import open_file"
+    ],
+    "classes": [
+      "GEXF",
+      "GEXFWriter",
+      "GEXFReader"
+    ],
+    "functions": [
+      "write_gexf",
+      "generate_gexf",
+      "read_gexf",
+      "relabel_gexf_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_041_079ae3ed16b55c74_gexf.py.json"
+}

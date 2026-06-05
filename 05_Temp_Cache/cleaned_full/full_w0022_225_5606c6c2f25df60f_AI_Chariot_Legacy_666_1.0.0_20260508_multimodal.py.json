@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 225,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multimodal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multimodal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 982,
+  "content_sha256": "5606c6c2f25df60f3cd677f12a6d5693c5e6281672d2e84e9e97ffd877077258",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 19,
+    "char_count": 982,
+    "preview_lines": [
+      "\"\"\"Backwards compatibility module for instructor.multimodal.",
+      "This module provides lazy imports to maintain backwards compatibility.",
+      "\"\"\"",
+      "import warnings",
+      "def __getattr__(name: str):",
+      "    \"\"\"Lazy import to provide backward compatibility for multimodal imports.\"\"\"",
+      "    # Issue deprecation warning when accessing multimodal imports",
+      "    warnings.warn(",
+      "        \"Importing from 'instructor.multimodal' is deprecated and will be removed in v2.0.0. \"",
+      "        f\"Please update your imports to use 'instructor.processing.multimodal.{name}' instead:\\n\""
+    ],
+    "imports": [
+      "import warnings",
+      "from .processing import multimodal as processing_multimodal"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_225_5606c6c2f25df60f_AI_Chariot_Legacy_666_1.0.0_20260508_multimodal.py.json"
+}

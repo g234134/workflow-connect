@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 215,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_attachment_registry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_attachment_registry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15836,
+  "content_sha256": "97720a9a240cf53fba1810c10df6bcbe4e8877aadea09aeb80e23f143cdd3a4a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 444,
+    "non_empty_lines": 371,
+    "char_count": 15544,
+    "preview_lines": [
+      "\"\"\"",
+      "Attachment Registry - Manages policy attachments from YAML config.",
+      "Attachments define WHERE policies apply, separate from the policy definitions.",
+      "This allows the same policy to be attached to multiple scopes.",
+      "\"\"\"",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.types.proxy.policy_engine import (",
+      "    PolicyAttachment,"
+    ],
+    "imports": [
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.types.proxy.policy_engine import (",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.proxy.policy_engine.policy_matcher import PolicyMatcher"
+    ],
+    "classes": [
+      "AttachmentRegistry"
+    ],
+    "functions": [
+      "get_attachment_registry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_215_97720a9a240cf53f_AI_Chariot_Legacy_666_1.0.0_20260508_attachment_registry.py.json"
+}

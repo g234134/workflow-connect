@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_udiff_simple.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_udiff_simple.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 452,
+  "content_sha256": "523a2f10cfa3e7580b4593a910bfdd1715533ecd023304c924d7d421a30a884f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 10,
+    "char_count": 452,
+    "preview_lines": [
+      "from .udiff_coder import UnifiedDiffCoder",
+      "from .udiff_simple_prompts import UnifiedDiffSimplePrompts",
+      "class UnifiedDiffSimpleCoder(UnifiedDiffCoder):",
+      "    \"\"\"",
+      "    A coder that uses unified diff format for code modifications.",
+      "    This variant uses a simpler prompt that doesn't mention specific",
+      "    diff rules like using `@@ ... @@` lines or avoiding line numbers.",
+      "    \"\"\"",
+      "    edit_format = \"udiff-simple\"",
+      "    gpt_prompts = UnifiedDiffSimplePrompts()"
+    ],
+    "imports": [
+      "from .udiff_coder import UnifiedDiffCoder",
+      "from .udiff_simple_prompts import UnifiedDiffSimplePrompts"
+    ],
+    "classes": [
+      "UnifiedDiffSimpleCoder"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_398_523a2f10cfa3e758_AI_Chariot_Legacy_666_1.0.0_20260508_udiff_simple.py.json"
+}

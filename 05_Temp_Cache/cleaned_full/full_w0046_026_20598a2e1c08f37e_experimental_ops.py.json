@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_spmd\\experimental_ops.py",
+  "name": "experimental_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17799,
+  "content_sha256": "20598a2e1c08f37edcf242e0cd6fe84ae8be40ae773f67c5c0b2fa73d520f256",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 455,
+    "non_empty_lines": 408,
+    "char_count": 17799,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "from typing import cast, List, Optional, Sequence, Tuple",
+      "import torch",
+      "from torch.distributed._tensor.op_schema import OpSchema, OutputSharding",
+      "from torch.distributed._tensor.ops.common_rules import pointwise_rule",
+      "from torch.distributed._tensor.ops.utils import register_prop_rule",
+      "from torch.distributed._tensor.placement_types import (",
+      "    _Partial,",
+      "    DTensorSpec,",
+      "    Placement,"
+    ],
+    "imports": [
+      "from typing import cast, List, Optional, Sequence, Tuple",
+      "import torch",
+      "from torch.distributed._tensor.op_schema import OpSchema, OutputSharding",
+      "from torch.distributed._tensor.ops.common_rules import pointwise_rule",
+      "from torch.distributed._tensor.ops.utils import register_prop_rule",
+      "from torch.distributed._tensor.placement_types import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_prop__foreach_unaop",
+      "_prop__foreach_binop_list",
+      "_prop__foreach_binop_scalar",
+      "_prop__foreach_addcop_scalar",
+      "_prop__foreach_pow_scalar_and_tensor",
+      "_prop__fused_adam",
+      "_prop_nll_loss_forward",
+      "_prop_nll_loss_backward",
+      "_prop_stack",
+      "_prop_select",
+      "_prop_native_layer_norm",
+      "_prop_native_layer_norm_backward",
+      "_refine_sharding",
+      "prop_slice_scatter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_026_20598a2e1c08f37e_experimental_ops.py.json"
+}

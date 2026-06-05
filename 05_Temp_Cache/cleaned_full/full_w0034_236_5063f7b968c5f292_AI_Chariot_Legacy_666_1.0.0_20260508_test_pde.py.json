@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pde.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pde.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9257,
+  "content_sha256": "5063f7b968c5f2929081f3e27e675fbd2e544559b34a0ea6d8d912ecb1b39a2a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 198,
+    "char_count": 9257,
+    "preview_lines": [
+      "from sympy.core.function import (Derivative as D, Function)",
+      "from sympy.core.relational import Eq",
+      "from sympy.core.symbol import (Symbol, symbols)",
+      "from sympy.functions.elementary.exponential import (exp, log)",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.core import S",
+      "from sympy.solvers.pde import (pde_separate, pde_separate_add, pde_separate_mul,",
+      "    pdsolve, classify_pde, checkpdesol)",
+      "from sympy.testing.pytest import raises",
+      "a, b, c, x, y = symbols('a b c x y')"
+    ],
+    "imports": [
+      "from sympy.core.function import (Derivative as D, Function)",
+      "from sympy.core.relational import Eq",
+      "from sympy.core.symbol import (Symbol, symbols)",
+      "from sympy.functions.elementary.exponential import (exp, log)",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.core import S",
+      "from sympy.solvers.pde import (pde_separate, pde_separate_add, pde_separate_mul,",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_pde_separate_add",
+      "test_pde_separate",
+      "test_pde_separate_mul",
+      "test_issue_11726",
+      "test_pde_classify",
+      "test_checkpdesol",
+      "test_solvefun",
+      "test_pde_1st_linear_constant_coeff_homogeneous",
+      "test_pde_1st_linear_constant_coeff",
+      "test_pdsolve_all",
+      "test_pdsolve_variable_coeff"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_236_5063f7b968c5f292_AI_Chariot_Legacy_666_1.0.0_20260508_test_pde.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pofile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pofile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25437,
+  "content_sha256": "68dca76d7861ba5262cee2505182af8db57b92dc16a872c8342ccadcc7716581",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 752,
+    "non_empty_lines": 645,
+    "char_count": 25437,
+    "preview_lines": [
+      "\"\"\"",
+      "babel.messages.pofile",
+      "~~~~~~~~~~~~~~~~~~~~~",
+      "Reading and writing of files in the ``gettext`` PO (portable object)",
+      "format.",
+      ":copyright: (c) 2013-2026 by the Babel Team.",
+      ":license: BSD, see LICENSE for more details.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import os"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import re",
+      "from collections.abc import Iterable",
+      "from typing import TYPE_CHECKING, Literal",
+      "from babel.core import Locale",
+      "from babel.messages.catalog import Catalog, Message",
+      "from babel.util import TextWrapper",
+      "from typing import IO, AnyStr",
+      "from _typeshed import SupportsWrite"
+    ],
+    "classes": [
+      "PoFileError",
+      "_NormalizedString",
+      "PoFileParser"
+    ],
+    "functions": [
+      "unescape",
+      "denormalize",
+      "_extract_locations",
+      "read_po",
+      "escape",
+      "normalize",
+      "_enclose_filename_if_necessary",
+      "write_po",
+      "generate_po",
+      "_sort_messages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_211_68dca76d7861ba52_AI_Chariot_Legacy_666_1.0.0_20260508_pofile.py.json"
+}

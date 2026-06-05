@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_truediv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_truediv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 854,
+  "content_sha256": "4587c95f7f7e98d85e911137b23e531856572ab6b830bf6f1af39bb1162e0f79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 45,
+    "char_count": 854,
+    "preview_lines": [
+      "#this module tests that SymPy works with true division turned on",
+      "from sympy.core.numbers import (Float, Rational)",
+      "from sympy.core.symbol import Symbol",
+      "def test_truediv():",
+      "    assert 1/2 != 0",
+      "    assert Rational(1)/2 != 0",
+      "def dotest(s):",
+      "    x = Symbol(\"x\")",
+      "    y = Symbol(\"y\")",
+      "    l = ["
+    ],
+    "imports": [
+      "from sympy.core.numbers import (Float, Rational)",
+      "from sympy.core.symbol import Symbol"
+    ],
+    "classes": [],
+    "functions": [
+      "test_truediv",
+      "dotest",
+      "test_basic",
+      "test_ibasic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_014_4587c95f7f7e98d8_AI_Chariot_Legacy_666_1.0.0_20260508_test_truediv.py.json"
+}

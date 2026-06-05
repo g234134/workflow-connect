@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__graph_lasso.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__graph_lasso.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42058,
+  "content_sha256": "e2f4199df753231f94a2c69192795a483ee5417a7c42dc4eca76371ca207da58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1152,
+    "non_empty_lines": 975,
+    "char_count": 42058,
+    "preview_lines": [
+      "\"\"\"GraphicalLasso: sparse inverse covariance estimation with an l1-penalized",
+      "estimator.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import operator",
+      "import sys",
+      "import time",
+      "import warnings",
+      "from numbers import Integral, Real"
+    ],
+    "imports": [
+      "import operator",
+      "import sys",
+      "import time",
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from sklearn.base import _fit_context",
+      "from sklearn.covariance import EmpiricalCovariance, empirical_covariance, log_likelihood",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.linear_model import _cd_fast as cd_fast  # type: ignore[attr-defined]",
+      "from sklearn.linear_model import lars_path_gram",
+      "from sklearn.model_selection import check_cv, cross_val_score",
+      "from sklearn.utils import Bunch",
+      "from sklearn.utils._param_validation import Interval, StrOptions, validate_params",
+      "from sklearn.utils.metadata_routing import (",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "BaseGraphicalLasso",
+      "GraphicalLasso",
+      "GraphicalLassoCV"
+    ],
+    "functions": [
+      "_objective",
+      "_dual_gap",
+      "_graphical_lasso",
+      "alpha_max",
+      "graphical_lasso",
+      "graphical_lasso_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_284_e2f4199df753231f_AI_Chariot_Legacy_666_1.0.0_20260508__graph_lasso.py.json"
+}

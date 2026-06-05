@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lazy\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1838,
+  "content_sha256": "e139ee6082704146b620e67cdb8969fe5de3c6159615627bb5a8305f1c10e115",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 55,
+    "non_empty_lines": 39,
+    "char_count": 1838,
+    "preview_lines": [
+      "import threading",
+      "import torch._C._lazy",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten",
+      "from .closure import add_step_closure, run_step_closures",
+      "def mark_step(device: str = \"\", wait=False):",
+      "    \"\"\"Triggers a mark step, which amounts to",
+      "    - collecting a group of 'live' lazy tensors to index into the compilation cache",
+      "      (lowering/compiling their IR graphs if not cached)",
+      "    - kicking off execution of the compiled function",
+      "    - (optionally, wait=True) waiting for cpu-side execution to complete (does not sync the accelerator)"
+    ],
+    "imports": [
+      "import threading",
+      "import torch._C._lazy",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten",
+      "from .closure import add_step_closure, run_step_closures"
+    ],
+    "classes": [],
+    "functions": [
+      "mark_step",
+      "wait_device_ops",
+      "sync_multi",
+      "get_tensor_id",
+      "to_cpu",
+      "save"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_178_e139ee6082704146___init__.py.json"
+}

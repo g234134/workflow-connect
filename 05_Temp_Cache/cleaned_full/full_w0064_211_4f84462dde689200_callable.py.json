@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\datapipes\\map\\callable.py",
+  "name": "callable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1887,
+  "content_sha256": "4f84462dde6892003e23c8721bfe39be5cbb2d7ea709db75ee58f978c9584534",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 48,
+    "char_count": 1887,
+    "preview_lines": [
+      "from torch.utils.data.datapipes.utils.common import _check_unpickable_fn",
+      "from typing import Callable, TypeVar",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import MapDataPipe",
+      "__all__ = [\"MapperMapDataPipe\", \"default_fn\"]",
+      "T_co = TypeVar('T_co', covariant=True)",
+      "# Default function to return each item directly",
+      "# In order to keep datapipe picklable, eliminates the usage",
+      "# of python lambda function",
+      "def default_fn(data):"
+    ],
+    "imports": [
+      "from torch.utils.data.datapipes.utils.common import _check_unpickable_fn",
+      "from typing import Callable, TypeVar",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import MapDataPipe"
+    ],
+    "classes": [
+      "MapperMapDataPipe"
+    ],
+    "functions": [
+      "default_fn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_211_4f84462dde689200_callable.py.json"
+}

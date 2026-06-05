@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nonisomorphic_trees.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nonisomorphic_trees.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6453,
+  "content_sha256": "804eee3c1fae684eab11f6a29a647d6eaa1bb28e727257021babbccf06654b8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 171,
+    "char_count": 6453,
+    "preview_lines": [
+      "\"\"\"",
+      "Implementation of the Wright, Richmond, Odlyzko and McKay (WROM)",
+      "algorithm for the enumeration of all non-isomorphic free trees of a",
+      "given order.  Rooted trees are represented by level sequences, i.e.,",
+      "lists in which the i-th element specifies the distance of vertex i to",
+      "the root.",
+      "\"\"\"",
+      "__all__ = [\"nonisomorphic_trees\", \"number_of_nonisomorphic_trees\"]",
+      "import networkx as nx",
+      "@nx._dispatchable(graphs=None, returns_graph=True)"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "import warnings"
+    ],
+    "classes": [],
+    "functions": [
+      "nonisomorphic_trees",
+      "number_of_nonisomorphic_trees",
+      "_next_rooted_tree",
+      "_next_tree",
+      "_split_tree",
+      "_layout_to_matrix",
+      "_layout_to_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_434_804eee3c1fae684e_AI_Chariot_Legacy_666_1.0.0_20260508_nonisomorphic_trees.py.json"
+}

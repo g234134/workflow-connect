@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 216,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_particle.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_particle.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2682,
+  "content_sha256": "24be90000e93dcf390912bad527ba782b564477c6de99557fa1a7be7e12e7d0c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 70,
+    "char_count": 2682,
+    "preview_lines": [
+      "from sympy import symbols",
+      "from sympy.physics.mechanics import Point, Particle, ReferenceFrame, inertia",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy",
+      "def test_particle_default():",
+      "    # Test default",
+      "    p = Particle('P')",
+      "    assert p.name == 'P'",
+      "    assert p.mass == symbols('P_mass')",
+      "    assert p.masscenter.name == 'P_masscenter'"
+    ],
+    "imports": [
+      "from sympy import symbols",
+      "from sympy.physics.mechanics import Point, Particle, ReferenceFrame, inertia",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy"
+    ],
+    "classes": [],
+    "functions": [
+      "test_particle_default",
+      "test_particle",
+      "test_parallel_axis",
+      "test_deprecated_set_potential_energy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_216_24be90000e93dcf3_AI_Chariot_Legacy_666_1.0.0_20260508_test_particle.py.json"
+}

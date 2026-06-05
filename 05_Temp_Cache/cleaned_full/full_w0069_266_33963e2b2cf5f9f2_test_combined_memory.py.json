@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 266,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\memory\\test_combined_memory.py",
+  "name": "test_combined_memory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1756,
+  "content_sha256": "33963e2b2cf5f9f2108452a275f9a3f76b05f0e0eb84fa0f0b0295451d6e8b3b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 35,
+    "char_count": 1753,
+    "preview_lines": [
+      "\"\"\"Test for CombinedMemory class.\"\"\"",
+      "import re",
+      "import pytest",
+      "from langchain_classic.memory import CombinedMemory, ConversationBufferMemory",
+      "@pytest.fixture",
+      "def example_memory() -> list[ConversationBufferMemory]:",
+      "    example_1 = ConversationBufferMemory(memory_key=\"foo\")",
+      "    example_2 = ConversationBufferMemory(memory_key=\"bar\")",
+      "    example_3 = ConversationBufferMemory(memory_key=\"bar\")",
+      "    return [example_1, example_2, example_3]"
+    ],
+    "imports": [
+      "import re",
+      "import pytest",
+      "from langchain_classic.memory import CombinedMemory, ConversationBufferMemory"
+    ],
+    "classes": [],
+    "functions": [
+      "example_memory",
+      "test_basic_functionality",
+      "test_repeated_memory_var"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_266_33963e2b2cf5f9f2_test_combined_memory.py.json"
+}

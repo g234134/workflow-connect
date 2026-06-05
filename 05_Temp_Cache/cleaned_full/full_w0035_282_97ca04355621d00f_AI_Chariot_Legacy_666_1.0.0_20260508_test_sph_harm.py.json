@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 282,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sph_harm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sph_harm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3158,
+  "content_sha256": "97ca04355621d00f77e9b0722df22d3d1ffcbdb8f2b3482680e29fc86305469f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 64,
+    "char_count": 3158,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose, suppress_warnings",
+      "import scipy.special as sc",
+      "class TestSphHarm:",
+      "    @pytest.mark.slow",
+      "    def test_p(self):",
+      "        m_max = 20",
+      "        n_max = 10",
+      "        theta = np.linspace(0, np.pi)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose, suppress_warnings",
+      "import scipy.special as sc"
+    ],
+    "classes": [
+      "TestSphHarm"
+    ],
+    "functions": [
+      "test_first_harmonics"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_282_97ca04355621d00f_AI_Chariot_Legacy_666_1.0.0_20260508_test_sph_harm.py.json"
+}

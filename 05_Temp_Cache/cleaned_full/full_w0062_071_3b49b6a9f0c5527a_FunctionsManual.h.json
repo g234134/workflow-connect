@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\FunctionsManual.h",
+  "name": "FunctionsManual.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 33222,
+  "content_sha256": "3b49b6a9f0c5527ae92be42916bf4891bb7432e9f28579b51c5b231bade1fd06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1105,
+    "non_empty_lines": 1074,
+    "char_count": 33222,
+    "preview_lines": [
+      "#pragma once",
+      "// NB: Must be at the top of file to avoid including the deprecated \"math.h\".",
+      "// https://stackoverflow.com/questions/6563810/m-pi-works-with-math-h-but-not-with-cmath-in-visual-studio",
+      "#ifdef _MSC_VER",
+      "#ifndef _USE_MATH_DEFINES",
+      "#define _USE_MATH_DEFINES",
+      "#endif",
+      "#include <cmath>",
+      "#endif",
+      "#include <ATen/ATen.h>"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_071_3b49b6a9f0c5527a_FunctionsManual.h.json"
+}

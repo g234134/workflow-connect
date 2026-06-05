@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 476,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\TensorUtils.h",
+  "name": "TensorUtils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 5978,
+  "content_sha256": "31b820daacccbf7be8e4230664cf042442f339c36900fe3c5bc1cb98151a4865",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 164,
+    "char_count": 5978,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/DimVector.h>",
+      "#include <ATen/EmptyTensor.h>",
+      "#include <ATen/Tensor.h>",
+      "#include <ATen/TensorGeometry.h>",
+      "#include <ATen/Utils.h>",
+      "#include <utility>",
+      "// These functions are NOT in Utils.h, because this file has a dep on Tensor.h",
+      "#define TORCH_CHECK_TENSOR_ALL(cond, ...) \\",
+      "  TORCH_CHECK((cond)._is_all_true().item<bool>(), __VA_ARGS__);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_476_31b820daacccbf7b_TensorUtils.h.json"
+}

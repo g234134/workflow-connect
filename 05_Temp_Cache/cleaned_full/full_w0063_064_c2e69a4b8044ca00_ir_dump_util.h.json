@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\lazy\\core\\ir_dump_util.h",
+  "name": "ir_dump_util.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 721,
+  "content_sha256": "c2e69a4b8044ca008c867b99206e0daa6745a2dbf6460044d66ea0d191f51e7b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 22,
+    "char_count": 721,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/lazy/core/ir.h>",
+      "#include <string>",
+      "namespace torch {",
+      "namespace lazy {",
+      "class BackendDevice;",
+      "class TORCH_API DumpUtil {",
+      " public:",
+      "  static std::string ToDot(c10::ArrayRef<const Node*> nodes);",
+      "  static std::string PostOrderToDot("
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_064_c2e69a4b8044ca00_ir_dump_util.h.json"
+}

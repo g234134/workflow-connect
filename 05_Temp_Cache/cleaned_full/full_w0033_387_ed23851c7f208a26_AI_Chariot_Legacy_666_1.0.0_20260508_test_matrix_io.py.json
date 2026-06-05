@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_matrix_io.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_matrix_io.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3414,
+  "content_sha256": "ed23851c7f208a26b95dd9b942636ebb54abe6b2d8b4617dd7a89060fa88b095",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 86,
+    "char_count": 3414,
+    "preview_lines": [
+      "import os",
+      "import numpy as np",
+      "import tempfile",
+      "from pytest import raises as assert_raises",
+      "from numpy.testing import assert_equal, assert_",
+      "from scipy.sparse import (sparray, csc_matrix, csr_matrix, bsr_matrix, dia_matrix,",
+      "                          coo_matrix, dok_matrix, csr_array, save_npz, load_npz)",
+      "DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')",
+      "def _save_and_load(matrix):",
+      "    fd, tmpfile = tempfile.mkstemp(suffix='.npz')"
+    ],
+    "imports": [
+      "import os",
+      "import numpy as np",
+      "import tempfile",
+      "from pytest import raises as assert_raises",
+      "from numpy.testing import assert_equal, assert_",
+      "from scipy.sparse import (sparray, csc_matrix, csr_matrix, bsr_matrix, dia_matrix,"
+    ],
+    "classes": [],
+    "functions": [
+      "_save_and_load",
+      "_check_save_and_load",
+      "test_save_and_load_random",
+      "test_save_and_load_empty",
+      "test_save_and_load_one_entry",
+      "test_sparray_vs_spmatrix",
+      "test_malicious_load",
+      "test_py23_compatibility",
+      "test_implemented_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_387_ed23851c7f208a26_AI_Chariot_Legacy_666_1.0.0_20260508_test_matrix_io.py.json"
+}

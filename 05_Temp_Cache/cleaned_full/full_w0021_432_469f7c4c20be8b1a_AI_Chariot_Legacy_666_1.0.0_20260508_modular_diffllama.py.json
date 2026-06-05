@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:45:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_diffllama.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_diffllama.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18311,
+  "content_sha256": "469f7c4c20be8b1a3212c0f1c10fd718ed2c41cd386ea00487119f594c3a3cae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 417,
+    "non_empty_lines": 332,
+    "char_count": 18311,
+    "preview_lines": [
+      "# Copyright 2024 weak-kajuma and the HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# This code is based on Llama implementations in this library and Microsoft's",
+      "# Differential Transformer implementations.",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#"
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...cache_utils import Cache, StaticCache",
+      "from ...modeling_flash_attention_utils import _flash_attention_forward, flash_attn_supports_top_left_mask",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import logging",
+      "from ..gemma.modeling_gemma import GemmaForCausalLM",
+      "from ..llama.modeling_llama import (",
+      "from ..mistral.modeling_mistral import MistralMLP",
+      "from .configuration_diffllama import DiffLlamaConfig"
+    ],
+    "classes": [
+      "DiffLlamaMLP",
+      "DiffLlamaRotaryEmbedding",
+      "DiffLlamaAttention",
+      "DiffLlamaFlashAttention2",
+      "DiffLlamaSdpaAttention",
+      "DiffLlamaDecoderLayer",
+      "DiffLlamaPreTrainedModel",
+      "DiffLlamaModel",
+      "DiffLlamaForCausalLM",
+      "DiffLlamaForSequenceClassification",
+      "DiffLlamaForQuestionAnswering",
+      "DiffLlamaForTokenClassification"
+    ],
+    "functions": [
+      "lambda_init_fn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_432_469f7c4c20be8b1a_AI_Chariot_Legacy_666_1.0.0_20260508_modular_diffllama.py.json"
+}

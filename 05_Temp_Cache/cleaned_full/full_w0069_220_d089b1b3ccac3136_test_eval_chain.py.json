@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\evaluation\\agents\\test_eval_chain.py",
+  "name": "test_eval_chain.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6162,
+  "content_sha256": "d089b1b3ccac31365c110b752ab1390590d825ba47eaf8bce3ad89468ae7b28e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 198,
+    "non_empty_lines": 168,
+    "char_count": 6159,
+    "preview_lines": [
+      "\"\"\"Test agent trajectory evaluation chain.\"\"\"",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.tools import tool",
+      "from pydantic import Field",
+      "from typing_extensions import override"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.tools import tool",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from langchain_classic.evaluation.agents.trajectory_eval_chain import (",
+      "from tests.unit_tests.llms.fake_chat_model import FakeChatModel"
+    ],
+    "classes": [
+      "_FakeTrajectoryChatModel"
+    ],
+    "functions": [
+      "intermediate_steps",
+      "foo",
+      "test_trajectory_output_parser_parse",
+      "test_trajectory_eval_chain",
+      "test_trajectory_eval_chain_no_tools",
+      "test_old_api_works"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_220_d089b1b3ccac3136_test_eval_chain.py.json"
+}

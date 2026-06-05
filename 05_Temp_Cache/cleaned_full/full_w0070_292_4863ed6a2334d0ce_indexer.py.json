@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 292,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\standard-tests\\langchain_tests\\integration_tests\\indexer.py",
+  "name": "indexer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16182,
+  "content_sha256": "4863ed6a2334d0ce275cda888f81122e65ea89c41278f618288fe821ec9e74fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 398,
+    "non_empty_lines": 334,
+    "char_count": 16179,
+    "preview_lines": [
+      "\"\"\"Test suite to check index implementations.",
+      "Standard tests for the `DocumentIndex` abstraction",
+      "We don't recommend implementing externally managed `DocumentIndex` abstractions at this",
+      "time.",
+      "\"\"\"",
+      "import inspect",
+      "import uuid",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncGenerator, Generator",
+      "import pytest"
+    ],
+    "imports": [
+      "import inspect",
+      "import uuid",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncGenerator, Generator",
+      "import pytest",
+      "from langchain_core.documents import Document",
+      "from langchain_core.indexing.base import DocumentIndex"
+    ],
+    "classes": [
+      "DocumentIndexerTestSuite",
+      "AsyncDocumentIndexTestSuite"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_292_4863ed6a2334d0ce_indexer.py.json"
+}

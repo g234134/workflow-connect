@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sendchat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sendchat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1854,
+  "content_sha256": "1aae40e44da4120d0c3c4ded4caba5850b1eae85c2c2c1ad2c31ff3841c1dbee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 45,
+    "char_count": 1854,
+    "preview_lines": [
+      "from aider.dump import dump  # noqa: F401",
+      "from aider.utils import format_messages",
+      "def sanity_check_messages(messages):",
+      "    \"\"\"Check if messages alternate between user and assistant roles.",
+      "    System messages can be interspersed anywhere.",
+      "    Also verifies the last non-system message is from the user.",
+      "    Returns True if valid, False otherwise.\"\"\"",
+      "    last_role = None",
+      "    last_non_system_role = None",
+      "    for msg in messages:"
+    ],
+    "imports": [
+      "from aider.dump import dump  # noqa: F401",
+      "from aider.utils import format_messages"
+    ],
+    "classes": [],
+    "functions": [
+      "sanity_check_messages",
+      "ensure_alternating_roles"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_231_1aae40e44da4120d_AI_Chariot_Legacy_666_1.0.0_20260508_sendchat.py.json"
+}

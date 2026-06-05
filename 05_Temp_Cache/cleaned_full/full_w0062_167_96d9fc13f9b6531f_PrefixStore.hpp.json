@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\PrefixStore.hpp",
+  "name": "PrefixStore.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 1891,
+  "content_sha256": "96d9fc13f9b6531fc4f75c1f528c84a171200daf50199ae018ea5948246de617",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 42,
+    "char_count": 1891,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/distributed/c10d/Store.hpp>",
+      "#include <memory>",
+      "namespace c10d {",
+      "class TORCH_API PrefixStore : public Store {",
+      " public:",
+      "  explicit PrefixStore(std::string prefix, c10::intrusive_ptr<Store> store);",
+      "  using Store::set;",
+      "  void set(const std::string& key, const std::vector<uint8_t>& value) override;",
+      "  using Store::compareSet;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_167_96d9fc13f9b6531f_PrefixStore.hpp.json"
+}

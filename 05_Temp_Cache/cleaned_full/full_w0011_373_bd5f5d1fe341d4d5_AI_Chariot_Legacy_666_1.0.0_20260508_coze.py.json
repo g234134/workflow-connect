@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 373,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_coze.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_coze.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8492,
+  "content_sha256": "bd5f5d1fe341d4d5833fe36d101d6d159390dc63085d7e783683b85ad1c6ef1a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 255,
+    "non_empty_lines": 222,
+    "char_count": 8492,
+    "preview_lines": [
+      "import json",
+      "import logging",
+      "from typing import Any, Dict, Iterator, List, Mapping, Optional, Union",
+      "import requests",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import (",
+      "    BaseChatModel,",
+      "    generate_from_stream,",
+      ")",
+      "from langchain_core.messages import ("
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from typing import Any, Dict, Iterator, List, Mapping, Optional, Union",
+      "import requests",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.chat_models import (",
+      "from langchain_core.messages import (",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.utils import (",
+      "from pydantic import ConfigDict, Field, SecretStr, model_validator"
+    ],
+    "classes": [
+      "ChatCoze"
+    ],
+    "functions": [
+      "_convert_message_to_dict",
+      "_convert_dict_to_message",
+      "_convert_delta_to_message_chunk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_373_bd5f5d1fe341d4d5_AI_Chariot_Legacy_666_1.0.0_20260508_coze.py.json"
+}

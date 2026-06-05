@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_parser_frontends.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_parser_frontends.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11671,
+  "content_sha256": "c78cf01febc82fcfbed994b1de9d42f1038ed2b1b134903c946de76991c62d42",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 225,
+    "char_count": 11671,
+    "preview_lines": [
+      "from typing import Any, Callable, Dict, Optional, Collection, Union, TYPE_CHECKING",
+      "from .exceptions import ConfigurationError, GrammarError, assert_config",
+      "from .utils import get_regexp_width, Serialize, TextOrSlice, TextSlice, LarkInput",
+      "from .lexer import LexerThread, BasicLexer, ContextualLexer, Lexer",
+      "from .parsers import earley, xearley, cyk",
+      "from .parsers.lalr_parser import LALR_Parser",
+      "from .tree import Tree",
+      "from .common import LexerConf, ParserConf, _ParserArgType, _LexerArgType",
+      "if TYPE_CHECKING:",
+      "    from .parsers.lalr_analysis import ParseTableBase"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Dict, Optional, Collection, Union, TYPE_CHECKING",
+      "from .exceptions import ConfigurationError, GrammarError, assert_config",
+      "from .utils import get_regexp_width, Serialize, TextOrSlice, TextSlice, LarkInput",
+      "from .lexer import LexerThread, BasicLexer, ContextualLexer, Lexer",
+      "from .parsers import earley, xearley, cyk",
+      "from .parsers.lalr_parser import LALR_Parser",
+      "from .tree import Tree",
+      "from .common import LexerConf, ParserConf, _ParserArgType, _LexerArgType",
+      "from .parsers.lalr_analysis import ParseTableBase"
+    ],
+    "classes": [
+      "ParsingFrontend",
+      "PostLexConnector",
+      "EarleyRegexpMatcher",
+      "CYK_FrontEnd"
+    ],
+    "functions": [
+      "_wrap_lexer",
+      "_deserialize_parsing_frontend",
+      "_validate_frontend_args",
+      "_get_lexer_callbacks",
+      "create_basic_lexer",
+      "create_contextual_lexer",
+      "create_lalr_parser",
+      "create_earley_parser__dynamic",
+      "_match_earley_basic",
+      "create_earley_parser__basic",
+      "create_earley_parser",
+      "_construct_parsing_frontend"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_441_c78cf01febc82fcf_AI_Chariot_Legacy_666_1.0.0_20260508_parser_frontends.py.json"
+}

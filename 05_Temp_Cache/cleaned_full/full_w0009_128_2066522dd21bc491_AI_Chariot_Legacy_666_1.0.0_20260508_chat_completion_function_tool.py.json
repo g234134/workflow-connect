@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chat_completion_function_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chat_completion_function_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 513,
+  "content_sha256": "2066522dd21bc4916017e3f40d365e11a9c615c7f9894763e6c01877ee846d12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 10,
+    "char_count": 513,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel",
+      "from ..shared.function_definition import FunctionDefinition",
+      "__all__ = [\"ChatCompletionFunctionTool\"]",
+      "class ChatCompletionFunctionTool(BaseModel):",
+      "    \"\"\"A function tool that can be used to generate a response.\"\"\"",
+      "    function: FunctionDefinition",
+      "    type: Literal[\"function\"]",
+      "    \"\"\"The type of the tool. Currently, only `function` is supported.\"\"\""
+    ],
+    "imports": [
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel",
+      "from ..shared.function_definition import FunctionDefinition"
+    ],
+    "classes": [
+      "ChatCompletionFunctionTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_128_2066522dd21bc491_AI_Chariot_Legacy_666_1.0.0_20260508_chat_completion_function_tool.py.json"
+}

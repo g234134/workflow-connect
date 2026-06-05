@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__constrained_layout.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__constrained_layout.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31485,
+  "content_sha256": "5d7ff67a5a87ba4177b687840eea7040f94dffc504bf7fb218a951d00f769fbe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 805,
+    "non_empty_lines": 688,
+    "char_count": 31485,
+    "preview_lines": [
+      "\"\"\"",
+      "Adjust subplot layouts so that there are no overlapping Axes or Axes",
+      "decorations.  All Axes decorations are dealt with (labels, ticks, titles,",
+      "ticklabels) and some dependent artists are also dealt with (colorbar,",
+      "suptitle).",
+      "Layout is done via `~matplotlib.gridspec`, with one constraint per gridspec,",
+      "so it is possible to have overlapping Axes if the gridspecs overlap (i.e.",
+      "using `~matplotlib.gridspec.GridSpecFromSubplotSpec`).  Axes placed using",
+      "``figure.subplots()`` or ``figure.add_subplots()`` will participate in the",
+      "layout.  Axes manually placed via ``figure.add_axes()`` will not."
+    ],
+    "imports": [
+      "import logging",
+      "import numpy as np",
+      "from matplotlib import _api, artist as martist",
+      "import matplotlib.transforms as mtransforms",
+      "import matplotlib._layoutgrid as mlayoutgrid"
+    ],
+    "classes": [],
+    "functions": [
+      "do_constrained_layout",
+      "make_layoutgrids",
+      "make_layoutgrids_gs",
+      "check_no_collapsed_axes",
+      "compress_fixed_aspect",
+      "get_margin_from_padding",
+      "make_layout_margins",
+      "make_margin_suptitles",
+      "match_submerged_margins",
+      "get_cb_parent_spans",
+      "get_pos_and_bbox",
+      "reposition_axes",
+      "reposition_colorbar",
+      "reset_margins",
+      "colorbar_get_pad"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_349_5d7ff67a5a87ba41_AI_Chariot_Legacy_666_1.0.0_20260508__constrained_layout.py.json"
+}

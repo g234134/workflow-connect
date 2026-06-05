@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 186,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_beta_decorator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_beta_decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8570,
+  "content_sha256": "92b93db289c65ec858f03c76b1addaf23e29463734318e68bf923564ae97ea91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 253,
+    "non_empty_lines": 199,
+    "char_count": 8570,
+    "preview_lines": [
+      "\"\"\"Helper functions for marking parts of the LangChain API as beta.",
+      "This module was loosely adapted from matplotlib's [`_api/deprecation.py`](https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/_api/deprecation.py)",
+      "module.",
+      "!!! warning",
+      "    This module is for internal use only. Do not use it in your own code. We may change",
+      "    the API at any time with no warning.",
+      "\"\"\"",
+      "import contextlib",
+      "import functools",
+      "import inspect"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import warnings",
+      "from collections.abc import Callable, Generator",
+      "from typing import Any, TypeVar, cast",
+      "from langchain_core._api.internal import is_caller_internal"
+    ],
+    "classes": [
+      "LangChainBetaWarning"
+    ],
+    "functions": [
+      "beta",
+      "suppress_langchain_beta_warning",
+      "warn_beta",
+      "surface_langchain_beta_warnings"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_186_92b93db289c65ec8_AI_Chariot_Legacy_666_1.0.0_20260508_beta_decorator.py.json"
+}

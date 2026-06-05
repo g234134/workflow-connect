@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_ccallback.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_ccallback.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6379,
+  "content_sha256": "9256c430b776f10014cb31a9e99f3d16be85cd5ea32a79ae42e9b3a5ee1b5dca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 158,
+    "char_count": 6379,
+    "preview_lines": [
+      "from numpy.testing import assert_equal, assert_",
+      "from pytest import raises as assert_raises",
+      "import time",
+      "import pytest",
+      "import ctypes",
+      "import threading",
+      "from scipy._lib import _ccallback_c as _test_ccallback_cython",
+      "from scipy._lib import _test_ccallback",
+      "from scipy._lib._ccallback import LowLevelCallable",
+      "try:"
+    ],
+    "imports": [
+      "from numpy.testing import assert_equal, assert_",
+      "from pytest import raises as assert_raises",
+      "import time",
+      "import pytest",
+      "import ctypes",
+      "import threading",
+      "from scipy._lib import _ccallback_c as _test_ccallback_cython",
+      "from scipy._lib import _test_ccallback",
+      "from scipy._lib._ccallback import LowLevelCallable",
+      "import cffi"
+    ],
+    "classes": [],
+    "functions": [
+      "callback_python",
+      "_get_cffi_func",
+      "_get_ctypes_data",
+      "_get_cffi_data",
+      "test_callbacks",
+      "test_bad_callbacks",
+      "test_signature_override",
+      "test_threadsafety"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_142_9256c430b776f100_AI_Chariot_Legacy_666_1.0.0_20260508_test_ccallback.py.json"
+}

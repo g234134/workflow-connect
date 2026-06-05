@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_def_list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_def_list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4008,
+  "content_sha256": "8fa73f8f6274d5e8e5c022b05f6910b545505ad36289c519647929d349a2d0a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 111,
+    "char_count": 4008,
+    "preview_lines": [
+      "import re",
+      "from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Match",
+      "from ..util import strip_end",
+      "if TYPE_CHECKING:",
+      "    from ..block_parser import BlockParser",
+      "    from ..core import BaseRenderer, BlockState",
+      "    from ..markdown import Markdown",
+      "__all__ = [\"def_list\"]",
+      "# https://michelf.ca/projects/php-markdown/extra/#def-list",
+      "DEF_PATTERN = ("
+    ],
+    "imports": [
+      "import re",
+      "from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Match",
+      "from ..util import strip_end",
+      "from ..block_parser import BlockParser",
+      "from ..core import BaseRenderer, BlockState",
+      "from ..markdown import Markdown"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_def_list",
+      "_parse_def_item",
+      "_process_text",
+      "render_def_list",
+      "render_def_list_head",
+      "render_def_list_item",
+      "def_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_329_8fa73f8f6274d5e8_AI_Chariot_Legacy_666_1.0.0_20260508_def_list.py.json"
+}

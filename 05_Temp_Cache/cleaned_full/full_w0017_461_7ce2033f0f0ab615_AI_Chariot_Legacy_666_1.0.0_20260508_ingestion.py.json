@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 461,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ingestion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ingestion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11170,
+  "content_sha256": "7ce2033f0f0ab615fc66a055811c8353b1815b76d0d1b9b72dc3d6566b64e37d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 315,
+    "non_empty_lines": 260,
+    "char_count": 11170,
+    "preview_lines": [
+      "\"\"\"",
+      "Vertex AI RAG Engine Ingestion implementation.",
+      "Uses:",
+      "- litellm.files.acreate_file for uploading files to GCS",
+      "- Vertex AI RAG Engine REST API for importing files into corpus (via httpx)",
+      "Key differences from OpenAI:",
+      "- Files must be uploaded to GCS first (via litellm.files.acreate_file)",
+      "- Embedding is handled internally using text-embedding-005 by default",
+      "- Chunking configured via unified chunking_strategy in ingest_options",
+      "\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from typing import TYPE_CHECKING, Any, List, Optional, Tuple",
+      "from litellm import get_secret_str",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.vertex_ai.rag_engine.transformation import VertexAIRAGTransformation",
+      "from litellm.rag.ingestion.base_ingestion import BaseRAGIngestion",
+      "from litellm import Router",
+      "from litellm.types.rag import RAGIngestOptions",
+      "import litellm",
+      "from vertexai import init as vertexai_init",
+      "from vertexai import rag  # type: ignore[import-not-found]"
+    ],
+    "classes": [
+      "VertexAIRAGIngestion"
+    ],
+    "functions": [
+      "_get_str_or_none",
+      "_get_int"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_461_7ce2033f0f0ab615_AI_Chariot_Legacy_666_1.0.0_20260508_ingestion.py.json"
+}

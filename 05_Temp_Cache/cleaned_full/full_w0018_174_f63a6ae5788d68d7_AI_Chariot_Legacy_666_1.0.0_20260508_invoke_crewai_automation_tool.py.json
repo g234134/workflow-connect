@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 174,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_invoke_crewai_automation_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_invoke_crewai_automation_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6915,
+  "content_sha256": "f63a6ae5788d68d7e265a09ca868ce5a95ed8559c7cd207fa4638eccbe6112db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 157,
+    "char_count": 6915,
+    "preview_lines": [
+      "import time",
+      "from typing import Any",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field, create_model",
+      "import requests",
+      "class InvokeCrewAIAutomationInput(BaseModel):",
+      "    \"\"\"Input schema for InvokeCrewAIAutomationTool.\"\"\"",
+      "    prompt: str = Field(..., description=\"The prompt or query to send to the crew\")",
+      "class InvokeCrewAIAutomationTool(BaseTool):",
+      "    \"\"\"A CrewAI tool for invoking external crew/flows APIs."
+    ],
+    "imports": [
+      "import time",
+      "from typing import Any",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field, create_model",
+      "import requests"
+    ],
+    "classes": [
+      "InvokeCrewAIAutomationInput",
+      "InvokeCrewAIAutomationTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_174_f63a6ae5788d68d7_AI_Chariot_Legacy_666_1.0.0_20260508_invoke_crewai_automation_tool.py.json"
+}

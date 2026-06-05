@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_textpad.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_textpad.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7754,
+  "content_sha256": "6fd91c3fd9f4a6f213979a2c1df6b737c49c95d9c3acf22cf40cfdb1f88fb737",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 189,
+    "char_count": 7754,
+    "preview_lines": [
+      "\"\"\"Simple textbox editing widget with Emacs-like keybindings.\"\"\"",
+      "import curses",
+      "import curses.ascii",
+      "def rectangle(win, uly, ulx, lry, lrx):",
+      "    \"\"\"Draw a rectangle with corners at the provided upper-left",
+      "    and lower-right coordinates.",
+      "    \"\"\"",
+      "    win.vline(uly+1, ulx, curses.ACS_VLINE, lry - uly - 1)",
+      "    win.hline(uly, ulx+1, curses.ACS_HLINE, lrx - ulx - 1)",
+      "    win.hline(lry, ulx+1, curses.ACS_HLINE, lrx - ulx - 1)"
+    ],
+    "imports": [
+      "import curses",
+      "import curses.ascii"
+    ],
+    "classes": [
+      "Textbox"
+    ],
+    "functions": [
+      "rectangle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_305_6fd91c3fd9f4a6f2_AI_Chariot_Legacy_666_1.0.0_20260508_textpad.py.json"
+}

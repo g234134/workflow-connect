@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\profiler\\itt.py",
+  "name": "itt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1832,
+  "content_sha256": "71b6dc66a967ae1bf8c584b0ca1cbeb9fb5a46b594de713930c26d86a30ba14c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 58,
+    "char_count": 1832,
+    "preview_lines": [
+      "from contextlib import contextmanager",
+      "try:",
+      "    from torch._C import _itt",
+      "except ImportError:",
+      "    class _ITTStub:",
+      "        @staticmethod",
+      "        def _fail(*args, **kwargs):",
+      "            raise RuntimeError(",
+      "                \"ITT functions not installed. Are you sure you have a ITT build?\"",
+      "            )"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from torch._C import _itt"
+    ],
+    "classes": [],
+    "functions": [
+      "is_available",
+      "range_push",
+      "range_pop",
+      "mark",
+      "range"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_492_71b6dc66a967ae1b_itt.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 345,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_elicitation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_elicitation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6917,
+  "content_sha256": "7aeaa3a2d8a906ccec8ab759babaf67db29e99163047bfb39599628f031d48d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 190,
+    "non_empty_lines": 144,
+    "char_count": 6917,
+    "preview_lines": [
+      "\"\"\"Elicitation utilities for MCP servers.\"\"\"",
+      "from __future__ import annotations",
+      "import types",
+      "from collections.abc import Sequence",
+      "from typing import Generic, Literal, TypeVar, Union, get_args, get_origin",
+      "from pydantic import BaseModel",
+      "from mcp.server.session import ServerSession",
+      "from mcp.types import RequestId",
+      "ElicitSchemaModelT = TypeVar(\"ElicitSchemaModelT\", bound=BaseModel)",
+      "class AcceptedElicitation(BaseModel, Generic[ElicitSchemaModelT]):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import types",
+      "from collections.abc import Sequence",
+      "from typing import Generic, Literal, TypeVar, Union, get_args, get_origin",
+      "from pydantic import BaseModel",
+      "from mcp.server.session import ServerSession",
+      "from mcp.types import RequestId"
+    ],
+    "classes": [
+      "AcceptedElicitation",
+      "DeclinedElicitation",
+      "CancelledElicitation",
+      "AcceptedUrlElicitation"
+    ],
+    "functions": [
+      "_validate_elicitation_schema",
+      "_is_string_sequence",
+      "_is_primitive_field"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_345_7aeaa3a2d8a906cc_AI_Chariot_Legacy_666_1.0.0_20260508_elicitation.py.json"
+}

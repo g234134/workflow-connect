@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\backends\\backend_interface.h",
+  "name": "backend_interface.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1218,
+  "content_sha256": "bbd543c2ae3724888f923bbd36db2f959cf9b8ea4c6805c8d84a7604ed7183e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 28,
+    "char_count": 1218,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/custom_class.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Interface for a JIT backend.",
+      "class TORCH_API PyTorchBackendInterface : public torch::CustomClassHolder {",
+      " public:",
+      "  PyTorchBackendInterface() noexcept;",
+      "  ~PyTorchBackendInterface() override;",
+      "  // Returns true if the backend is available to process delegation calls."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_258_bbd543c2ae372488_backend_interface.h.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sanitization.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sanitization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6258,
+  "content_sha256": "2c1194fe2dbe9b094d1188c62b53365d7e5fa2e9de0f89f3c1754c7e5b0512e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 254,
+    "non_empty_lines": 183,
+    "char_count": 6258,
+    "preview_lines": [
+      "import os",
+      "import re",
+      "from typing import Any",
+      "from urllib.parse import urlparse",
+      "REDACTED_IMAGE_PLACEHOLDER = \"[base64 image redacted]\"",
+      "def _is_multimodal_enabled() -> bool:",
+      "    \"\"\"Check if multimodal capture is enabled via environment variable.\"\"\"",
+      "    return os.environ.get(\"_INTERNAL_LLMA_MULTIMODAL\", \"\").lower() in (",
+      "        \"true\",",
+      "        \"1\","
+    ],
+    "imports": [
+      "import os",
+      "import re",
+      "from typing import Any",
+      "from urllib.parse import urlparse"
+    ],
+    "classes": [],
+    "functions": [
+      "_is_multimodal_enabled",
+      "is_base64_data_url",
+      "is_valid_url",
+      "is_raw_base64",
+      "redact_base64_data_url",
+      "process_messages",
+      "sanitize_openai_image",
+      "sanitize_openai_response_image",
+      "sanitize_anthropic_image",
+      "sanitize_gemini_part",
+      "process_gemini_item",
+      "sanitize_langchain_image",
+      "sanitize_openai",
+      "sanitize_openai_response",
+      "sanitize_anthropic",
+      "sanitize_gemini",
+      "sanitize_langchain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_048_2c1194fe2dbe9b09_AI_Chariot_Legacy_666_1.0.0_20260508_sanitization.py.json"
+}

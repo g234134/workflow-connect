@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 84,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ibm2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ibm2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12224,
+  "content_sha256": "e0121a002805852d2748beb387146c4f10990665f02412be6f2fafe598e4f017",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 319,
+    "non_empty_lines": 261,
+    "char_count": 12223,
+    "preview_lines": [
+      "# Natural Language Toolkit: IBM Model 2",
+      "#",
+      "# Copyright (C) 2001-2013 NLTK Project",
+      "# Authors: Chin Yee Lee, Hengfeng Li, Ruxin Hou, Calvin Tanujaya Lim",
+      "# URL: <https://www.nltk.org/>",
+      "# For license information, see LICENSE.TXT",
+      "\"\"\"",
+      "Lexical translation model that considers word order.",
+      "IBM Model 2 improves on Model 1 by accounting for word order.",
+      "An alignment probability is introduced, a(i | j,l,m), which predicts"
+    ],
+    "imports": [
+      "import warnings",
+      "from collections import defaultdict",
+      "from nltk.translate import AlignedSent, Alignment, IBMModel, IBMModel1",
+      "from nltk.translate.ibm_model import Counts"
+    ],
+    "classes": [
+      "IBMModel2",
+      "Model2Counts"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_084_e0121a002805852d_AI_Chariot_Legacy_666_1.0.0_20260508_ibm2.py.json"
+}

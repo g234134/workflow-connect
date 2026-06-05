@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 227,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_bytecode_utils_py311.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_bytecode_utils_py311.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3705,
+  "content_sha256": "8094a2481fff7e8663d7ec64e9d6c55aeb5b78affa1a1a39def116c75f72dec4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 82,
+    "char_count": 3705,
+    "preview_lines": [
+      "from _pydevd_bundle.pydevd_constants import IS_PY311_OR_GREATER",
+      "import dis",
+      "from types import CodeType",
+      "from collections import namedtuple",
+      "DEBUG = False",
+      "_Pos = namedtuple(\"_Pos\", \"lineno endlineno startcol endcol\")",
+      "def _is_inside(item_pos: _Pos, container_pos: _Pos):",
+      "    if item_pos.lineno < container_pos.lineno or item_pos.endlineno > container_pos.endlineno:",
+      "        return False",
+      "    if item_pos.lineno == container_pos.lineno:"
+    ],
+    "imports": [
+      "from _pydevd_bundle.pydevd_constants import IS_PY311_OR_GREATER",
+      "import dis",
+      "from types import CodeType",
+      "from collections import namedtuple",
+      "import linecache",
+      "from .pydevd_bytecode_utils import Target",
+      "from .pydevd_bytecode_utils import _convert_target_to_variant"
+    ],
+    "classes": [],
+    "functions": [
+      "_is_inside",
+      "_get_smart_step_into_targets",
+      "calculate_smart_step_into_variants"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_227_8094a2481fff7e86_AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_bytecode_utils_py311.py.json"
+}

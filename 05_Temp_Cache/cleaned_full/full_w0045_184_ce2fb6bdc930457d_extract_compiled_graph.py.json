@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 184,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lazy\\extract_compiled_graph.py",
+  "name": "extract_compiled_graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8630,
+  "content_sha256": "ce2fb6bdc930457ddefd4dff62be5a0ffd52a457e8246d4aff05b32e24f65ceb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 182,
+    "char_count": 8630,
+    "preview_lines": [
+      "import copy",
+      "import dataclasses",
+      "import itertools",
+      "import os",
+      "from typing import Any, Callable, Dict, List",
+      "import torch",
+      "import torch._lazy as lazy",
+      "import torch._lazy.metrics as metrics",
+      "from torch import fx",
+      "from torch._lazy import computation, debug as lazy_debug"
+    ],
+    "imports": [
+      "import copy",
+      "import dataclasses",
+      "import itertools",
+      "import os",
+      "from typing import Any, Callable, Dict, List",
+      "import torch",
+      "import torch._lazy as lazy",
+      "import torch._lazy.metrics as metrics",
+      "from torch import fx",
+      "from torch._lazy import computation, debug as lazy_debug",
+      "from torch._lazy.tensor_factory_functions import tensor_factory_functions"
+    ],
+    "classes": [
+      "GraphInputMatcher",
+      "ReturnValueHandler"
+    ],
+    "functions": [
+      "force_lazy_device",
+      "get_fallback_ops",
+      "extract_compiled_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_184_ce2fb6bdc930457d_extract_compiled_graph.py.json"
+}

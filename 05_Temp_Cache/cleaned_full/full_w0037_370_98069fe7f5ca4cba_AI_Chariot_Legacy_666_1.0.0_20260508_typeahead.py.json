@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_typeahead.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_typeahead.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2545,
+  "content_sha256": "98069fe7f5ca4cba5aa35930f4e448ae1186133f60beee2873e89928a310cf79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 61,
+    "char_count": 2545,
+    "preview_lines": [
+      "r\"\"\"",
+      "Store input key strokes if we did read more than was required.",
+      "The input classes `Vt100Input` and `Win32Input` read the input text in chunks",
+      "of a few kilobytes. This means that if we read input from stdin, it could be",
+      "that we read a couple of lines (with newlines in between) at once.",
+      "This creates a problem: potentially, we read too much from stdin. Sometimes",
+      "people paste several lines at once because they paste input in a REPL and",
+      "expect each input() call to process one line. Or they rely on type ahead",
+      "because the application can't keep up with the processing.",
+      "However, we need to read input in bigger chunks. We need this mostly to support"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections import defaultdict",
+      "from ..key_binding import KeyPress",
+      "from .base import Input"
+    ],
+    "classes": [],
+    "functions": [
+      "store_typeahead",
+      "get_typeahead",
+      "clear_typeahead"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_370_98069fe7f5ca4cba_AI_Chariot_Legacy_666_1.0.0_20260508_typeahead.py.json"
+}

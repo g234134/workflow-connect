@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 424,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayprint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayprint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 51898,
+  "content_sha256": "50626994758e25a6996fa6d878a80ad1a9004db24ff65e87d8d0efb4bc1bde40",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1324,
+    "non_empty_lines": 1151,
+    "char_count": 51893,
+    "preview_lines": [
+      "import gc",
+      "import sys",
+      "import textwrap",
+      "import pytest",
+      "from hypothesis import given",
+      "from hypothesis.extra import numpy as hynp",
+      "import numpy as np",
+      "from numpy._core.arrayprint import _typelessdata",
+      "from numpy.testing import (",
+      "    HAS_REFCOUNT,"
+    ],
+    "imports": [
+      "import gc",
+      "import sys",
+      "import textwrap",
+      "import pytest",
+      "from hypothesis import given",
+      "from hypothesis.extra import numpy as hynp",
+      "import numpy as np",
+      "from numpy._core.arrayprint import _typelessdata",
+      "from numpy.testing import (",
+      "from numpy.testing._private.utils import run_threaded"
+    ],
+    "classes": [
+      "TestArrayRepr",
+      "TestComplexArray",
+      "TestArray2String",
+      "TestPrintOptions",
+      "TestContextManager"
+    ],
+    "functions": [
+      "test_unicode_object_array",
+      "test_scalar_repr_numbers",
+      "test_scalar_repr_special",
+      "test_scalar_void_float_str",
+      "test_printoptions_asyncio_safe",
+      "test_multithreaded_array_printing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_424_50626994758e25a6_AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayprint.py.json"
+}

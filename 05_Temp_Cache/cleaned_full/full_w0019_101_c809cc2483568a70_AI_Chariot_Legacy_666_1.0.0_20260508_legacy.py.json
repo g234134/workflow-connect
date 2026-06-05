@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 101,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_legacy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_legacy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1848,
+  "content_sha256": "c809cc2483568a7018c3a5df9d28eb2a7b2bf2d8b352389226bea75a584bdcbe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 39,
+    "char_count": 1848,
+    "preview_lines": [
+      "# Copyright 2017 Virgil Dupras",
+      "# This software is licensed under the \"BSD\" License as described in the \"LICENSE\" file,",
+      "# which should be included with this package. The terms are also available at",
+      "# http://www.hardcoded.net/licenses/bsd_license",
+      "from __future__ import unicode_literals",
+      "from ctypes import cdll, byref, Structure, c_char, c_char_p",
+      "from ctypes.util import find_library",
+      "from send2trash.compat import binary_type",
+      "from send2trash.util import preprocess_paths",
+      "Foundation = cdll.LoadLibrary(find_library(\"Foundation\"))"
+    ],
+    "imports": [
+      "from __future__ import unicode_literals",
+      "from ctypes import cdll, byref, Structure, c_char, c_char_p",
+      "from ctypes.util import find_library",
+      "from send2trash.compat import binary_type",
+      "from send2trash.util import preprocess_paths"
+    ],
+    "classes": [
+      "FSRef"
+    ],
+    "functions": [
+      "check_op_result",
+      "send2trash"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_101_c809cc2483568a70_AI_Chariot_Legacy_666_1.0.0_20260508_legacy.py.json"
+}

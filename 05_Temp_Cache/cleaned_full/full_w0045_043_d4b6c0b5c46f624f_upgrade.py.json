@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 43,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\serde\\upgrade.py",
+  "name": "upgrade.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10175,
+  "content_sha256": "d4b6c0b5c46f624fa758829523a047fecd18190bd2e1c6d4362c184f80184471",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 170,
+    "char_count": 10175,
+    "preview_lines": [
+      "import logging",
+      "from collections import defaultdict",
+      "from typing import Tuple, Dict, Optional, List",
+      "import torch",
+      "from torch._export import export",
+      "from torch._export.pass_base import _ExportPassBase",
+      "from torch._export.pass_infra.node_metadata import NodeMetadata",
+      "from torch._export.pass_infra.proxy_value import ProxyValue",
+      "from torch._subclasses import FakeTensor",
+      "from torch.fx.node import Target, Argument"
+    ],
+    "imports": [
+      "import logging",
+      "from collections import defaultdict",
+      "from typing import Tuple, Dict, Optional, List",
+      "import torch",
+      "from torch._export import export",
+      "from torch._export.pass_base import _ExportPassBase",
+      "from torch._export.pass_infra.node_metadata import NodeMetadata",
+      "from torch._export.pass_infra.proxy_value import ProxyValue",
+      "from torch._subclasses import FakeTensor",
+      "from torch.fx.node import Target, Argument",
+      "from torch.library import Library",
+      "from torch.utils._pytree import tree_unflatten",
+      "import torch._export.exported_program as ep",
+      "import re"
+    ],
+    "classes": [
+      "GraphModuleOpUpgrader"
+    ],
+    "functions": [
+      "get_target_version",
+      "get_upgraders"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_043_d4b6c0b5c46f624f_upgrade.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\runnables\\passthrough.py",
+  "name": "passthrough.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26815,
+  "content_sha256": "5f9bb625c24f39185f084935297af2166a35d4245bfd8dcb82e551c8ef22445d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 841,
+    "non_empty_lines": 707,
+    "char_count": 26812,
+    "preview_lines": [
+      "\"\"\"Implementation of the `RunnablePassthrough`.\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import inspect",
+      "import threading",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    cast,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import inspect",
+      "import threading",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import (",
+      "from pydantic import BaseModel, RootModel",
+      "from typing_extensions import override",
+      "from langchain_core.runnables.base import (",
+      "from langchain_core.runnables.config import (",
+      "from langchain_core.runnables.utils import (",
+      "from langchain_core.utils.aiter import atee",
+      "from langchain_core.utils.iter import safetee",
+      "from langchain_core.utils.pydantic import create_model_v2",
+      "from collections.abc import AsyncIterator, Iterator, Mapping",
+      "from langchain_core.callbacks.manager import (",
+      "from langchain_core.runnables.graph import Graph",
+      "from langchain_core.runnables import (",
+      "from langchain_core.runnables import RunnablePassthrough"
+    ],
+    "classes": [
+      "RunnablePassthrough",
+      "RunnableAssign",
+      "RunnablePick"
+    ],
+    "functions": [
+      "identity"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_120_5f9bb625c24f3918_passthrough.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 417,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__data_parallel_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__data_parallel_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1568,
+  "content_sha256": "06e4a46b3292ee7cd9b6265bc360ba20b8c3c7e975489f6ed9acdf73c1e00510",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 43,
+    "char_count": 1568,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import no_type_check, Optional, Tuple",
+      "import torch",
+      "from torch.distributed._functional_collectives import AsyncCollectiveTensor",
+      "from torch.distributed.tensor import DTensor",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec",
+      "@no_type_check",
+      "def sync_grad_hook(grad, *, device_handle=None, compute_stream=None):",
+      "    if isinstance(grad, AsyncCollectiveTensor):",
+      "        if compute_stream is not None:"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import no_type_check, Optional, Tuple",
+      "import torch",
+      "from torch.distributed._functional_collectives import AsyncCollectiveTensor",
+      "from torch.distributed.tensor import DTensor",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec"
+    ],
+    "classes": [],
+    "functions": [
+      "sync_grad_hook",
+      "_flatten_tensor",
+      "_unflatten_tensor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_417_06e4a46b3292ee7c_AI_Chariot_Legacy_666_1.0.0_20260508__data_parallel_utils.py.json"
+}

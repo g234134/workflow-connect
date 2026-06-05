@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__onenormest.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__onenormest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15947,
+  "content_sha256": "cb51c928d126da76422b0f9c343a2aba4e77359a05d6ed4f5a537c481ef40c3a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 467,
+    "non_empty_lines": 408,
+    "char_count": 15947,
+    "preview_lines": [
+      "\"\"\"Sparse block 1-norm estimator.",
+      "\"\"\"",
+      "import numpy as np",
+      "from scipy.sparse.linalg import aslinearoperator",
+      "__all__ = ['onenormest']",
+      "def onenormest(A, t=2, itmax=5, compute_v=False, compute_w=False):",
+      "    \"\"\"",
+      "    Compute a lower bound of the 1-norm of a sparse array.",
+      "    Parameters",
+      "    ----------"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.sparse.linalg import aslinearoperator"
+    ],
+    "classes": [],
+    "functions": [
+      "onenormest",
+      "_blocked_elementwise",
+      "sign_round_up",
+      "_max_abs_axis1",
+      "_sum_abs_axis0",
+      "elementary_vector",
+      "vectors_are_parallel",
+      "every_col_of_X_is_parallel_to_a_col_of_Y",
+      "column_needs_resampling",
+      "resample_column",
+      "less_than_or_close",
+      "_algorithm_2_2",
+      "_onenormest_core"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_242_cb51c928d126da76_AI_Chariot_Legacy_666_1.0.0_20260508__onenormest.py.json"
+}

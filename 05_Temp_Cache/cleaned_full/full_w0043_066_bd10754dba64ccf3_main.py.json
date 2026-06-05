@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 66,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\pydantic\\v1\\main.py",
+  "name": "main.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 45697,
+  "content_sha256": "bd10754dba64ccf3773f98a326573e72336e3be1dc88d3a90b86fc2b7cd99df7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1130,
+    "non_empty_lines": 992,
+    "char_count": 45697,
+    "preview_lines": [
+      "import sys",
+      "import warnings",
+      "from abc import ABCMeta",
+      "from copy import deepcopy",
+      "from enum import Enum",
+      "from functools import partial",
+      "from pathlib import Path",
+      "from types import FunctionType, prepare_class, resolve_bases",
+      "from typing import (",
+      "    TYPE_CHECKING,"
+    ],
+    "imports": [
+      "import sys",
+      "import warnings",
+      "from abc import ABCMeta",
+      "from copy import deepcopy",
+      "from enum import Enum",
+      "from functools import partial",
+      "from pathlib import Path",
+      "from types import FunctionType, prepare_class, resolve_bases",
+      "from typing import (",
+      "from typing_extensions import dataclass_transform",
+      "from pydantic.v1.class_validators import ValidatorGroup, extract_root_validators, extract_validators, inherit_validators",
+      "from pydantic.v1.config import BaseConfig, Extra, inherit_config, prepare_config",
+      "from pydantic.v1.error_wrappers import ErrorWrapper, ValidationError",
+      "from pydantic.v1.errors import ConfigError, DictError, ExtraError, MissingError",
+      "from pydantic.v1.fields import (",
+      "from pydantic.v1.json import custom_pydantic_encoder, pydantic_encoder",
+      "from pydantic.v1.parse import Protocol, load_file, load_str_bytes",
+      "from pydantic.v1.schema import default_ref_template, model_schema",
+      "from pydantic.v1.types import PyObject, StrBytes",
+      "from pydantic.v1.typing import ("
+    ],
+    "classes": [
+      "ModelMetaclass",
+      "BaseModel"
+    ],
+    "functions": [
+      "validate_custom_root_type",
+      "generate_hash_function",
+      "create_model",
+      "create_model",
+      "create_model",
+      "validate_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_066_bd10754dba64ccf3_main.py.json"
+}

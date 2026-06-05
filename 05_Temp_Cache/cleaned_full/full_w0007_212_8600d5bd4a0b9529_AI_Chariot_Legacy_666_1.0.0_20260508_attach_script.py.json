@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 212,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_attach_script.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_attach_script.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8228,
+  "content_sha256": "8600d5bd4a0b95298ae339135f072a517b027680e7757c885f9e76be164bab88",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 154,
+    "char_count": 8228,
+    "preview_lines": [
+      "def get_main_thread_instance(threading):",
+      "    if hasattr(threading, \"main_thread\"):",
+      "        return threading.main_thread()",
+      "    else:",
+      "        # On Python 2 we don't really have an API to get the main thread,",
+      "        # so, we just get it from the 'shutdown' bound method.",
+      "        return threading._shutdown.im_self",
+      "def get_main_thread_id(unlikely_thread_id=None):",
+      "    \"\"\"",
+      "    :param unlikely_thread_id:"
+    ],
+    "imports": [
+      "import sys",
+      "import os",
+      "import sys",
+      "import threading",
+      "import sys",
+      "from _pydev_bundle import pydev_log",
+      "from _pydev_bundle import pydev_log",
+      "from _pydev_bundle import pydev_log",
+      "from _pydev_bundle import pydev_log  # @Reimport",
+      "from _pydevd_bundle import pydevd_defaults",
+      "from _pydevd_bundle import pydevd_defaults",
+      "import pydevd",
+      "import traceback"
+    ],
+    "classes": [],
+    "functions": [
+      "get_main_thread_instance",
+      "get_main_thread_id",
+      "fix_main_thread_id",
+      "attach"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_212_8600d5bd4a0b9529_AI_Chariot_Legacy_666_1.0.0_20260508_attach_script.py.json"
+}

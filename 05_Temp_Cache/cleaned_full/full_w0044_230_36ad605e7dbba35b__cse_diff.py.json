@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 230,
+  "generated_at": "2026-05-08T18:47:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\simplify\\_cse_diff.py",
+  "name": "_cse_diff.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10479,
+  "content_sha256": "36ad605e7dbba35bfcdedfff49052e69c9cea21872c1adfdb9c3da4768c3e75f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 291,
+    "non_empty_lines": 219,
+    "char_count": 10479,
+    "preview_lines": [
+      "\"\"\"Module for differentiation using CSE.\"\"\"",
+      "from sympy import cse, Matrix, Derivative, MatrixBase",
+      "from sympy.utilities.iterables import iterable",
+      "def _remove_cse_from_derivative(replacements, reduced_expressions):",
+      "    \"\"\"",
+      "    This function is designed to postprocess the output of a common subexpression",
+      "    elimination (CSE) operation. Specifically, it removes any CSE replacement",
+      "    symbols from the arguments of ``Derivative`` terms in the expression. This",
+      "    is necessary to ensure that the forward Jacobian function correctly handles",
+      "    derivative terms."
+    ],
+    "imports": [
+      "from sympy import cse, Matrix, Derivative, MatrixBase",
+      "from sympy.utilities.iterables import iterable"
+    ],
+    "classes": [],
+    "functions": [
+      "_remove_cse_from_derivative",
+      "_forward_jacobian_cse",
+      "_forward_jacobian_norm_in_cse_out",
+      "_forward_jacobian"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_230_36ad605e7dbba35b__cse_diff.py.json"
+}

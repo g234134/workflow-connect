@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 131,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cond_predicate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cond_predicate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 688,
+  "content_sha256": "a63df0f53b2098cfd47df4139e01dbfd877e941c3d09b06b41d126ae1ee8bb7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 688,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "from functorch.experimental.control_flow import cond",
+      "class CondPredicate(torch.nn.Module):",
+      "    \"\"\"",
+      "    The conditional statement (aka predicate) passed to cond() must be one of the following:",
+      "      - torch.Tensor with a single element",
+      "      - boolean expression",
+      "    NOTE: If the `pred` is test on a dim with batch size < 2, it will be specialized.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import torch",
+      "from functorch.experimental.control_flow import cond"
+    ],
+    "classes": [
+      "CondPredicate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_131_a63df0f53b2098cf_AI_Chariot_Legacy_666_1.0.0_20260508_cond_predicate.py.json"
+}

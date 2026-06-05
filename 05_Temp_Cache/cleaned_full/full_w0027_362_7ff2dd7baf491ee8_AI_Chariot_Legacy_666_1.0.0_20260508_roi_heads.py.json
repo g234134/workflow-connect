@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 362,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_roi_heads.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_roi_heads.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34698,
+  "content_sha256": "7ff2dd7baf491ee80601a8865a1eae809f565134fc7fb227c4faf2fcc6718196",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 876,
+    "non_empty_lines": 717,
+    "char_count": 34698,
+    "preview_lines": [
+      "from typing import Dict, List, Optional, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from torchvision.ops import boxes as box_ops, roi_align",
+      "from . import _utils as det_utils",
+      "def fastrcnn_loss(class_logits, box_regression, labels, regression_targets):",
+      "    # type: (Tensor, Tensor, List[Tensor], List[Tensor]) -> Tuple[Tensor, Tensor]",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional, Tuple",
+      "import torch",
+      "import torch.nn.functional as F",
+      "import torchvision",
+      "from torch import nn, Tensor",
+      "from torchvision.ops import boxes as box_ops, roi_align",
+      "from . import _utils as det_utils"
+    ],
+    "classes": [
+      "RoIHeads"
+    ],
+    "functions": [
+      "fastrcnn_loss",
+      "maskrcnn_inference",
+      "project_masks_on_boxes",
+      "maskrcnn_loss",
+      "keypoints_to_heatmap",
+      "_onnx_heatmaps_to_keypoints",
+      "_onnx_heatmaps_to_keypoints_loop",
+      "heatmaps_to_keypoints",
+      "keypointrcnn_loss",
+      "keypointrcnn_inference",
+      "_onnx_expand_boxes",
+      "expand_boxes",
+      "expand_masks_tracing_scale",
+      "expand_masks",
+      "paste_mask_in_image",
+      "_onnx_paste_mask_in_image",
+      "_onnx_paste_masks_in_image_loop",
+      "paste_masks_in_image"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_362_7ff2dd7baf491ee8_AI_Chariot_Legacy_666_1.0.0_20260508_roi_heads.py.json"
+}

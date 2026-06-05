@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 228,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\perplexity\\tests\\integration_tests\\test_chat_models.py",
+  "name": "test_chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5307,
+  "content_sha256": "970838c29cd1ac3c31603d3c7f9f43b545a102e3ae560e79715fac8c01491e14",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 125,
+    "non_empty_lines": 104,
+    "char_count": 5304,
+    "preview_lines": [
+      "\"\"\"Integration tests for ChatPerplexity.\"\"\"",
+      "import os",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_perplexity import ChatPerplexity, MediaResponse, WebSearchOptions",
+      "@pytest.mark.skipif(not os.environ.get(\"PPLX_API_KEY\"), reason=\"PPLX_API_KEY not set\")",
+      "class TestChatPerplexityIntegration:",
+      "    def test_standard_generation(self) -> None:",
+      "        \"\"\"Test standard generation.\"\"\"",
+      "        chat = ChatPerplexity(model=\"sonar\", temperature=0)"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_perplexity import ChatPerplexity, MediaResponse, WebSearchOptions"
+    ],
+    "classes": [
+      "TestChatPerplexityIntegration"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_228_970838c29cd1ac3c_test_chat_models.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 359,
+  "generated_at": "2026-05-08T18:47:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\quantized\\PackedParams.h",
+  "name": "PackedParams.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 4886,
+  "content_sha256": "cd288e2099e7f2fe10063e1939401b7096ba69df77e18d30d65cb47558954a66",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 147,
+    "non_empty_lines": 133,
+    "char_count": 4886,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <ATen/core/ivalue.h>",
+      "struct LinearPackedParamsBase : public torch::jit::CustomClassHolder {",
+      "  virtual at::Tensor apply(",
+      "      at::Tensor input,",
+      "      double output_scale,",
+      "      int64_t output_zero_point) = 0;",
+      "  virtual at::Tensor apply_relu(",
+      "      at::Tensor input,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_359_cd288e2099e7f2fe_PackedParams.h.json"
+}

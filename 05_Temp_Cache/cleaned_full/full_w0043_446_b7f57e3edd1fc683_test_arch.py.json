@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:47:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\continuum_mechanics\\tests\\test_arch.py",
+  "name": "test_arch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2571,
+  "content_sha256": "b7f57e3edd1fc683ea603665e4b07a7a143884105596f79158bb045ddca8ff79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 54,
+    "char_count": 2571,
+    "preview_lines": [
+      "from sympy.physics.continuum_mechanics.arch import Arch",
+      "from sympy import Symbol, simplify",
+      "x = Symbol('x')",
+      "t = Symbol('t')",
+      "def test_arch_init():",
+      "    a = Arch((0,0),(10,0),crown_x=5,crown_y=5)",
+      "    assert a.get_loads == {'distributed': {}, 'concentrated': {}}",
+      "    assert a.reaction_force == {Symbol('R_A_x'):0, Symbol('R_A_y'):0, Symbol('R_B_x'):0, Symbol('R_B_y'):0}",
+      "    assert a.supports == {'left':'hinge', 'right':'hinge'}",
+      "    assert a.left_support == (0,0)"
+    ],
+    "imports": [
+      "from sympy.physics.continuum_mechanics.arch import Arch",
+      "from sympy import Symbol, simplify"
+    ],
+    "classes": [],
+    "functions": [
+      "test_arch_init",
+      "test_arch_support",
+      "test_arch_member",
+      "test_symbol_magnitude",
+      "test_forces"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_446_b7f57e3edd1fc683_test_arch.py.json"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 292,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_func_metadata.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_func_metadata.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22121,
+  "content_sha256": "ba7c3361e4eef09455c6a6197be8e208476d89ad8aa4e9ca1d6893117ba00637",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 533,
+    "non_empty_lines": 432,
+    "char_count": 22118,
+    "preview_lines": [
+      "import inspect",
+      "import json",
+      "from collections.abc import Awaitable, Callable, Sequence",
+      "from itertools import chain",
+      "from types import GenericAlias",
+      "from typing import Annotated, Any, cast, get_args, get_origin, get_type_hints",
+      "import pydantic_core",
+      "from pydantic import (",
+      "    BaseModel,",
+      "    ConfigDict,"
+    ],
+    "imports": [
+      "import inspect",
+      "import json",
+      "from collections.abc import Awaitable, Callable, Sequence",
+      "from itertools import chain",
+      "from types import GenericAlias",
+      "from typing import Annotated, Any, cast, get_args, get_origin, get_type_hints",
+      "import pydantic_core",
+      "from pydantic import (",
+      "from pydantic.fields import FieldInfo",
+      "from pydantic.json_schema import GenerateJsonSchema, JsonSchemaWarningKind",
+      "from typing_extensions import is_typeddict",
+      "from typing_inspection.introspection import (",
+      "from mcp.server.fastmcp.exceptions import InvalidSignature",
+      "from mcp.server.fastmcp.utilities.logging import get_logger",
+      "from mcp.server.fastmcp.utilities.types import Audio, Image",
+      "from mcp.types import CallToolResult, ContentBlock, TextContent",
+      "from function return values, whereas the lowlevel server simply serializes"
+    ],
+    "classes": [
+      "StrictJsonSchema",
+      "ArgModelBase",
+      "FuncMetadata"
+    ],
+    "functions": [
+      "func_metadata",
+      "_try_create_model_and_schema",
+      "_create_model_from_class",
+      "_create_model_from_typeddict",
+      "_create_wrapped_model",
+      "_create_dict_model",
+      "_convert_to_content"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_292_ba7c3361e4eef094_AI_Chariot_Legacy_666_1.0.0_20260508_func_metadata.py.json"
+}

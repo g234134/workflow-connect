@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dtype_ctypes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dtype_ctypes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3846,
+  "content_sha256": "7bc1207daa97889f3e5188bc14ce6c9bd5bc7a1aaf706feb4e90d139a2b04ca8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 99,
+    "char_count": 3846,
+    "preview_lines": [
+      "\"\"\"",
+      "Conversion from ctypes to dtype.",
+      "In an ideal world, we could achieve this through the PEP3118 buffer protocol,",
+      "something like::",
+      "    def dtype_from_ctypes_type(t):",
+      "        # needed to ensure that the shape of `t` is within memoryview.format",
+      "        class DummyStruct(ctypes.Structure):",
+      "            _fields_ = [('a', t)]",
+      "        # empty to avoid memory allocation",
+      "        ctype_0 = (DummyStruct * 0)()"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import ctypes",
+      "import ctypes",
+      "import _ctypes"
+    ],
+    "classes": [],
+    "functions": [
+      "_from_ctypes_array",
+      "_from_ctypes_structure",
+      "_from_ctypes_scalar",
+      "_from_ctypes_union",
+      "dtype_from_ctypes_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_040_7bc1207daa97889f_AI_Chariot_Legacy_666_1.0.0_20260508__dtype_ctypes.py.json"
+}

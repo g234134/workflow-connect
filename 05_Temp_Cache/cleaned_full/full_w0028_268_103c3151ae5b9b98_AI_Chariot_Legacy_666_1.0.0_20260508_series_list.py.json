@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_series_list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_series_list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1461,
+  "content_sha256": "103c3151ae5b9b98eb61c8bc4882bdb176bc80cbfc93b1a70949dd8b1839e60b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 30,
+    "char_count": 1461,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "import pyarrow as pa",
+      "import pyarrow.compute as pc",
+      "from narwhals._arrow.utils import ArrowSeriesNamespace, list_agg, list_sort",
+      "from narwhals._compliant.any_namespace import ListNamespace",
+      "from narwhals._utils import not_implemented",
+      "if TYPE_CHECKING:",
+      "    from narwhals._arrow.series import ArrowSeries",
+      "class ArrowSeriesListNamespace(ArrowSeriesNamespace, ListNamespace[\"ArrowSeries\"]):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "import pyarrow as pa",
+      "import pyarrow.compute as pc",
+      "from narwhals._arrow.utils import ArrowSeriesNamespace, list_agg, list_sort",
+      "from narwhals._compliant.any_namespace import ListNamespace",
+      "from narwhals._utils import not_implemented",
+      "from narwhals._arrow.series import ArrowSeries"
+    ],
+    "classes": [
+      "ArrowSeriesListNamespace"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_268_103c3151ae5b9b98_AI_Chariot_Legacy_666_1.0.0_20260508_series_list.py.json"
+}

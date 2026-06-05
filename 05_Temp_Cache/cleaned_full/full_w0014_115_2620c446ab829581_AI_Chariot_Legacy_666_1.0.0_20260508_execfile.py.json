@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_execfile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_execfile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12322,
+  "content_sha256": "2620c446ab829581d40b12045fd209123f7e2ebb9be04800b93048e04654245e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 329,
+    "non_empty_lines": 269,
+    "char_count": 12322,
+    "preview_lines": [
+      "# Licensed under the Apache License: http://www.apache.org/licenses/LICENSE-2.0",
+      "# For details: https://github.com/coveragepy/coveragepy/blob/main/NOTICE.txt",
+      "\"\"\"Execute files of Python code.\"\"\"",
+      "from __future__ import annotations",
+      "import importlib.machinery",
+      "import importlib.util",
+      "import inspect",
+      "import marshal",
+      "import os",
+      "import struct"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import importlib.machinery",
+      "import importlib.util",
+      "import inspect",
+      "import marshal",
+      "import os",
+      "import struct",
+      "import sys",
+      "from importlib.machinery import ModuleSpec",
+      "from types import CodeType, ModuleType",
+      "from typing import Any",
+      "from coverage.exceptions import CoverageException, NoCode, NoSource, _ExceptionDuringRun",
+      "from coverage.files import canonical_filename, python_reported_file",
+      "from coverage.misc import isolate_module",
+      "from coverage.python import get_python_source"
+    ],
+    "classes": [
+      "DummyLoader",
+      "PyRunner"
+    ],
+    "functions": [
+      "find_module",
+      "run_python_module",
+      "run_python_file",
+      "make_code_from_py",
+      "make_code_from_pyc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_115_2620c446ab829581_AI_Chariot_Legacy_666_1.0.0_20260508_execfile.py.json"
+}

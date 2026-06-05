@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 179,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_py3k.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_py3k.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3978,
+  "content_sha256": "c3920c20813a6253f7b10ce17beac23c2f769a803a82c7b3977ee71eafc0ab51",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 114,
+    "char_count": 3978,
+    "preview_lines": [
+      "\"\"\"",
+      "Python 3.X compatibility tools.",
+      "While this file was originally intended for Python 2 -> 3 transition,",
+      "it is now used to create a compatibility layer between different",
+      "minor versions of Python 3.",
+      "While the active version of numpy may not support a given version of python, we",
+      "allow downstream libraries to continue to use these shims for forward",
+      "compatibility with numpy while they transition their code to newer versions of",
+      "Python.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import sys",
+      "import os",
+      "from pathlib import Path",
+      "import io",
+      "import pickle5 as pickle",
+      "import pickle",
+      "from importlib.machinery import SourceFileLoader"
+    ],
+    "classes": [
+      "contextlib_nullcontext"
+    ],
+    "functions": [
+      "asunicode",
+      "asbytes",
+      "asstr",
+      "isfileobj",
+      "open_latin1",
+      "sixu",
+      "getexception",
+      "asbytes_nested",
+      "asunicode_nested",
+      "is_pathlib_path",
+      "npy_load_module"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_179_c3920c20813a6253_AI_Chariot_Legacy_666_1.0.0_20260508_py3k.py.json"
+}

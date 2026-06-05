@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unparse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unparse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20668,
+  "content_sha256": "103482cf5f2a060920cae624cbabad21bd18bf5a7ec3f909fd75ffa3593a0f7e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 745,
+    "non_empty_lines": 648,
+    "char_count": 20668,
+    "preview_lines": [
+      "# mypy: disable-error-code=no-untyped-def",
+      "# Because Python >3.9 doesn't support ast.unparse,",
+      "# we copied the unparse functionality from here:",
+      "# https://github.com/python/cpython/blob/3.8/Tools/parser/unparse.py",
+      "\"Usage: unparse.py <path to source file>\"",
+      "import ast",
+      "import io",
+      "import sys",
+      "import tokenize",
+      "# Large float and imaginary literals get turned into infinities in the AST."
+    ],
+    "imports": [
+      "import ast",
+      "import io",
+      "import sys",
+      "import tokenize"
+    ],
+    "classes": [
+      "Unparser"
+    ],
+    "functions": [
+      "interleave",
+      "roundtrip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_488_103482cf5f2a0609_AI_Chariot_Legacy_666_1.0.0_20260508_unparse.py.json"
+}

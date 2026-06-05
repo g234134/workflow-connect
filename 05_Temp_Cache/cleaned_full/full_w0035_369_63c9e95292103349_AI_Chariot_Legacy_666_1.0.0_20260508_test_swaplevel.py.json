@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 369,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_swaplevel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_swaplevel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1277,
+  "content_sha256": "63c9e9529210334952748c18edab8670b25a176d4939bf8a95553772f48bb0e8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 29,
+    "char_count": 1277,
+    "preview_lines": [
+      "import pytest",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "class TestSwaplevel:",
+      "    def test_swaplevel(self, multiindex_dataframe_random_data):",
+      "        frame = multiindex_dataframe_random_data",
+      "        swapped = frame[\"A\"].swaplevel()",
+      "        swapped2 = frame[\"A\"].swaplevel(0)",
+      "        swapped3 = frame[\"A\"].swaplevel(0, 1)",
+      "        swapped4 = frame[\"A\"].swaplevel(\"first\", \"second\")"
+    ],
+    "imports": [
+      "import pytest",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestSwaplevel"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_369_63c9e95292103349_AI_Chariot_Legacy_666_1.0.0_20260508_test_swaplevel.py.json"
+}

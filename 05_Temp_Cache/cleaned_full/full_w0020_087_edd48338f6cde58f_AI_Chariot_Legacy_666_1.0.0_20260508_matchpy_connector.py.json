@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_matchpy_connector.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_matchpy_connector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11948,
+  "content_sha256": "edd48338f6cde58fd75ba6c819534addd27e81575307f96227c3b9ac8a9ddbc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 273,
+    "char_count": 11948,
+    "preview_lines": [
+      "\"\"\"",
+      "The objects in this module allow the usage of the MatchPy pattern matching",
+      "library on SymPy expressions.",
+      "\"\"\"",
+      "import re",
+      "from typing import List, Callable, NamedTuple, Any, Dict",
+      "from sympy.core.sympify import _sympify",
+      "from sympy.external import import_module",
+      "from sympy.functions import (log, sin, cos, tan, cot, csc, sec, erf, gamma, uppergamma)",
+      "from sympy.functions.elementary.hyperbolic import acosh, asinh, atanh, acoth, acsch, asech, cosh, sinh, tanh, coth, sech, csch"
+    ],
+    "imports": [
+      "import re",
+      "from typing import List, Callable, NamedTuple, Any, Dict",
+      "from sympy.core.sympify import _sympify",
+      "from sympy.external import import_module",
+      "from sympy.functions import (log, sin, cos, tan, cot, csc, sec, erf, gamma, uppergamma)",
+      "from sympy.functions.elementary.hyperbolic import acosh, asinh, atanh, acoth, acsch, asech, cosh, sinh, tanh, coth, sech",
+      "from sympy.functions.elementary.trigonometric import atan, acsc, asin, acot, acos, asec",
+      "from sympy.functions.special.error_functions import fresnelc, fresnels, erfc, erfi, Ei",
+      "from sympy.core.add import Add",
+      "from sympy.core.basic import Basic",
+      "from sympy.core.expr import Expr",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.power import Pow",
+      "from sympy.core.relational import (Equality, Unequality)",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.functions.elementary.exponential import exp",
+      "from sympy.integrals.integrals import Integral",
+      "from sympy.printing.repr import srepr",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from matchpy import Operation, CommutativeOperation, AssociativeOperation, OneIdentityOperation"
+    ],
+    "classes": [
+      "_WildAbstract",
+      "WildDot",
+      "WildPlus",
+      "WildStar",
+      "ReplacementInfo",
+      "Replacer"
+    ],
+    "functions": [
+      "_get_srepr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_087_edd48338f6cde58f_AI_Chariot_Legacy_666_1.0.0_20260508_matchpy_connector.py.json"
+}

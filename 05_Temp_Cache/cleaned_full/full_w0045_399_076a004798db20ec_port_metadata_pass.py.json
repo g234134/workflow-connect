@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\pt2e\\port_metadata_pass.py",
+  "name": "port_metadata_pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8541,
+  "content_sha256": "076a004798db20ec9b31ad5cf2c7513b73d68f80f5960e18f88f377c9e8ec718",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 199,
+    "non_empty_lines": 171,
+    "char_count": 8541,
+    "preview_lines": [
+      "import logging",
+      "from typing import Optional",
+      "import torch",
+      "from torch._export.error import InternalError",
+      "from torch._export.pass_base import _ExportPassBase",
+      "from torch.ao.quantization.pt2e.utils import (",
+      "    _filter_sym_size_users,",
+      "    _find_q_dq_node_for_user,",
+      "    _is_valid_annotation,",
+      ")"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Optional",
+      "import torch",
+      "from torch._export.error import InternalError",
+      "from torch._export.pass_base import _ExportPassBase",
+      "from torch.ao.quantization.pt2e.utils import (",
+      "from torch.ao.quantization.quantizer import QuantizationSpecBase",
+      "from torch.fx.passes.infra.pass_base import PassResult",
+      "from collections import deque"
+    ],
+    "classes": [
+      "PortNodeMetaForQDQ"
+    ],
+    "functions": [
+      "_add_metadata",
+      "_has_quant_annotation",
+      "_find_choose_qparams_node",
+      "_port_metadata_for_input_quant_nodes",
+      "_port_metadata_for_output_quant_nodes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_399_076a004798db20ec_port_metadata_pass.py.json"
+}

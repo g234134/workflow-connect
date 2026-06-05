@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_louvain.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_louvain.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15365,
+  "content_sha256": "ce1e61d7a8515b3813bfd214a968a224a167b598506c1fc41cd6081958b03dab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 382,
+    "non_empty_lines": 333,
+    "char_count": 15360,
+    "preview_lines": [
+      "\"\"\"Function for detecting communities based on Louvain Community Detection",
+      "Algorithm\"\"\"",
+      "import itertools",
+      "from collections import defaultdict, deque",
+      "import networkx as nx",
+      "from networkx.algorithms.community import modularity",
+      "from networkx.utils import py_random_state",
+      "__all__ = [\"louvain_communities\", \"louvain_partitions\"]",
+      "@py_random_state(\"seed\")",
+      "@nx._dispatchable(edge_attrs=\"weight\")"
+    ],
+    "imports": [
+      "import itertools",
+      "from collections import defaultdict, deque",
+      "import networkx as nx",
+      "from networkx.algorithms.community import modularity",
+      "from networkx.utils import py_random_state",
+      "from $i$ to nodes in $C$, $k_i$ is the sum of the weights of the links incident to node $i$,"
+    ],
+    "classes": [],
+    "functions": [
+      "louvain_communities",
+      "louvain_partitions",
+      "_one_level",
+      "_neighbor_weights",
+      "_gen_graph",
+      "_convert_multigraph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_419_ce1e61d7a8515b38_AI_Chariot_Legacy_666_1.0.0_20260508_louvain.py.json"
+}

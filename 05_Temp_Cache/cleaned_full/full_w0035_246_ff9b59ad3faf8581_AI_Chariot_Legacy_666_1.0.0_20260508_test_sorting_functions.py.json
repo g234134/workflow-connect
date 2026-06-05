@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 246,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sorting_functions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sorting_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 625,
+  "content_sha256": "ff9b59ad3faf8581870c54022448f7556335090d25c1b65d5b8155bc6cf847f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 19,
+    "char_count": 625,
+    "preview_lines": [
+      "import pytest",
+      "from numpy import array_api as xp",
+      "@pytest.mark.parametrize(",
+      "    \"obj, axis, expected\",",
+      "    [",
+      "        ([0, 0], -1, [0, 1]),",
+      "        ([0, 1, 0], -1, [1, 0, 2]),",
+      "        ([[0, 1], [1, 1]], 0, [[1, 0], [0, 1]]),",
+      "        ([[0, 1], [1, 1]], 1, [[1, 0], [0, 1]]),",
+      "    ],"
+    ],
+    "imports": [
+      "import pytest",
+      "from numpy import array_api as xp"
+    ],
+    "classes": [],
+    "functions": [
+      "test_stable_desc_argsort"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_246_ff9b59ad3faf8581_AI_Chariot_Legacy_666_1.0.0_20260508_test_sorting_functions.py.json"
+}

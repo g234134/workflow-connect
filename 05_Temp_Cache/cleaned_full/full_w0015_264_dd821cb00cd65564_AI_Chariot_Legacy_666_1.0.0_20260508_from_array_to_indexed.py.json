@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_from_array_to_indexed.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_from_array_to_indexed.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3936,
+  "content_sha256": "dd821cb00cd6556411258412f74b8fbd297674ced9a8b57faadec4f7eb98536f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 77,
+    "char_count": 3936,
+    "preview_lines": [
+      "import collections.abc",
+      "import operator",
+      "from itertools import accumulate",
+      "from sympy import Mul, Sum, Dummy, Add",
+      "from sympy.tensor.array.expressions import PermuteDims, ArrayAdd, ArrayElementwiseApplyFunc, Reshape",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct, get_rank, ArrayContraction, \\",
+      "    ArrayDiagonal, get_shape, _get_array_element_or_slice, _ArrayExpr",
+      "from sympy.tensor.array.expressions.utils import _apply_permutation_to_list",
+      "def convert_array_to_indexed(expr, indices):",
+      "    return _ConvertArrayToIndexed().do_convert(expr, indices)"
+    ],
+    "imports": [
+      "import collections.abc",
+      "import operator",
+      "from itertools import accumulate",
+      "from sympy import Mul, Sum, Dummy, Add",
+      "from sympy.tensor.array.expressions import PermuteDims, ArrayAdd, ArrayElementwiseApplyFunc, Reshape",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct, get_rank, ArrayContraction, \\",
+      "from sympy.tensor.array.expressions.utils import _apply_permutation_to_list"
+    ],
+    "classes": [
+      "_ConvertArrayToIndexed"
+    ],
+    "functions": [
+      "convert_array_to_indexed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_264_dd821cb00cd65564_AI_Chariot_Legacy_666_1.0.0_20260508_from_array_to_indexed.py.json"
+}

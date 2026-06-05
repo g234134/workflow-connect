@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 367,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sharded_corpus.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sharded_corpus.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33889,
+  "content_sha256": "a148dfcc9e7fff80a5bdae26964303b286dd2255288f5ebc2174b069cc8ece56",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 818,
+    "non_empty_lines": 656,
+    "char_count": 33889,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Original author: Jan Hajic jr.",
+      "# Copyright (C) 2015 Radim Rehurek and gensim team.",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"",
+      "This module implements a corpus class that stores its data in separate files called",
+      "\"shards\". This is a compromise between speed (keeping the whole dataset",
+      "in memory) and memory footprint (keeping the data on disk and reading from it"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "import math",
+      "import time",
+      "import numpy",
+      "import scipy.sparse as sparse",
+      "import gensim",
+      "from gensim.corpora import IndexedCorpus",
+      "from gensim.interfaces import TransformedCorpus",
+      "import theano"
+    ],
+    "classes": [
+      "ShardedCorpus"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_367_a148dfcc9e7fff80_AI_Chariot_Legacy_666_1.0.0_20260508_sharded_corpus.py.json"
+}

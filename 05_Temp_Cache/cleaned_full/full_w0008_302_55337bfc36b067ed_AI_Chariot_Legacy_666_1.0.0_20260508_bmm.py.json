@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bmm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bmm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7002,
+  "content_sha256": "55337bfc36b067edcbf13ca7d35999195cb991d92a2c10ea8ffdba0f9560168e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 158,
+    "char_count": 7002,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "import torch",
+      "from .. import ir, lowering as L",
+      "from ..select_algorithm import (",
+      "    autotune_select_algorithm,",
+      "    ExternKernelChoice,",
+      "    TritonTemplate,",
+      ")",
+      "from ..utils import ("
+    ],
+    "imports": [
+      "import logging",
+      "import torch",
+      "from .. import ir, lowering as L",
+      "from ..select_algorithm import (",
+      "from ..utils import (",
+      "from ..virtualized import V",
+      "from .mm import _is_static_problem",
+      "from .mm_common import addmm_epilogue, mm_args, mm_configs, mm_options",
+      "from ..codegen.cuda.gemm_template import CUTLASS3xGemmTemplate"
+    ],
+    "classes": [],
+    "functions": [
+      "bmm_grid",
+      "tuned_bmm",
+      "tuned_baddbmm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_302_55337bfc36b067ed_AI_Chariot_Legacy_666_1.0.0_20260508_bmm.py.json"
+}

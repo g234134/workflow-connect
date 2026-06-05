@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 307,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lobpcg.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lobpcg.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43061,
+  "content_sha256": "261c66bd8815d7aa6f1d1cbb654459a0bb0806b1d7b27872362ae653e8d94884",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1110,
+    "non_empty_lines": 937,
+    "char_count": 43061,
+    "preview_lines": [
+      "\"\"\"",
+      "Locally Optimal Block Preconditioned Conjugate Gradient Method (LOBPCG).",
+      "References",
+      "----------",
+      ".. [1] A. V. Knyazev (2001),",
+      "       Toward the Optimal Preconditioned Eigensolver: Locally Optimal",
+      "       Block Preconditioned Conjugate Gradient Method.",
+      "       SIAM Journal on Scientific Computing 23, no. 2,",
+      "       pp. 517-541. :doi:`10.1137/S1064827500366124`",
+      ".. [2] A. V. Knyazev, I. Lashuk, M. E. Argentati, and E. Ovchinnikov (2007),"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy.linalg import (inv, eigh, cho_factor, cho_solve,",
+      "from scipy.sparse.linalg import LinearOperator",
+      "from scipy.sparse import issparse",
+      "from scipy.linalg import norm"
+    ],
+    "classes": [],
+    "functions": [
+      "_report_nonhermitian",
+      "_as2d",
+      "_makeMatMat",
+      "_matmul_inplace",
+      "_applyConstraints",
+      "_b_orthonormalize",
+      "_get_indx",
+      "_handle_gramA_gramB_verbosity",
+      "lobpcg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_307_261c66bd8815d7aa_AI_Chariot_Legacy_666_1.0.0_20260508_lobpcg.py.json"
+}

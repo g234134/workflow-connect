@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_asciiTable.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_asciiTable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 657,
+  "content_sha256": "c49b4e5b2e6501364920b22d53e03474ae3e8cd5c1072cf255678ef35156f277",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 17,
+    "char_count": 657,
+    "preview_lines": [
+      "from fontTools.misc.textTools import strjoin, tobytes, tostr",
+      "from . import DefaultTable",
+      "class asciiTable(DefaultTable.DefaultTable):",
+      "    def toXML(self, writer, ttFont):",
+      "        data = tostr(self.data)",
+      "        # removing null bytes. XXX needed??",
+      "        data = data.split(\"\\0\")",
+      "        data = strjoin(data)",
+      "        writer.begintag(\"source\")",
+      "        writer.newline()"
+    ],
+    "imports": [
+      "from fontTools.misc.textTools import strjoin, tobytes, tostr",
+      "from . import DefaultTable"
+    ],
+    "classes": [
+      "asciiTable"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_096_c49b4e5b2e650136_AI_Chariot_Legacy_666_1.0.0_20260508_asciiTable.py.json"
+}

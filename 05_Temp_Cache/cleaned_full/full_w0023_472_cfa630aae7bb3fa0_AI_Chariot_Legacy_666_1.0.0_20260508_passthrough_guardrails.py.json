@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_passthrough_guardrails.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_passthrough_guardrails.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12267,
+  "content_sha256": "cfa630aae7bb3fa0f19e85ea2bc6529ffe72857aa5b6c09e4e8e8025f845b201",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 333,
+    "non_empty_lines": 273,
+    "char_count": 12267,
+    "preview_lines": [
+      "\"\"\"",
+      "Passthrough Guardrails Helper Module",
+      "Handles guardrail execution for passthrough endpoints with:",
+      "- Opt-in model (guardrails only run when explicitly configured)",
+      "- Field-level targeting using JSONPath expressions",
+      "- Automatic inheritance from org/team/key levels when enabled",
+      "\"\"\"",
+      "from typing import Any, Dict, List, Optional, Union",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import ("
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Optional, Union",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import (",
+      "from litellm.proxy.pass_through_endpoints.jsonpath_extractor import JsonPathExtractor",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.proxy.pass_through_endpoints.passthrough_context import ("
+    ],
+    "classes": [
+      "PassthroughGuardrailHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_472_cfa630aae7bb3fa0_AI_Chariot_Legacy_666_1.0.0_20260508_passthrough_guardrails.py.json"
+}

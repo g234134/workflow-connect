@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 493,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\profiler\\profiler.py",
+  "name": "profiler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30569,
+  "content_sha256": "aca9451645eb681cbe4c667812144d0d21381543634914dde133fc902ab6bfc4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 754,
+    "non_empty_lines": 650,
+    "char_count": 30569,
+    "preview_lines": [
+      "import gzip",
+      "import json",
+      "import os",
+      "import tempfile",
+      "from enum import Enum",
+      "from functools import partial",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple",
+      "from warnings import warn",
+      "import torch",
+      "import torch.autograd.profiler as prof"
+    ],
+    "imports": [
+      "import gzip",
+      "import json",
+      "import os",
+      "import tempfile",
+      "from enum import Enum",
+      "from functools import partial",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple",
+      "from warnings import warn",
+      "import torch",
+      "import torch.autograd.profiler as prof",
+      "from torch._C import _get_privateuse1_backend_name",
+      "from torch._C._profiler import (",
+      "from torch.autograd import kineto_available, ProfilerActivity",
+      "from torch.profiler._memory_profiler import MemoryProfile, MemoryProfileTimeline",
+      "import torch._inductor.config as inductor_config"
+    ],
+    "classes": [
+      "_KinetoProfile",
+      "ProfilerAction",
+      "profile",
+      "ExecutionTraceObserver"
+    ],
+    "functions": [
+      "supported_activities",
+      "schedule",
+      "_default_schedule_fn",
+      "tensorboard_trace_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_493_aca9451645eb681c_profiler.py.json"
+}

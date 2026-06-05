@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 496,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_transforms.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_transforms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2055,
+  "content_sha256": "e207646a7843d9c9ef07aad795da19e192ba639e8ce0675444c7627aa0262e06",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 51,
+    "char_count": 2055,
+    "preview_lines": [
+      "import numpy",
+      "import pytest",
+      "from thinc.api import NumpyOps, Ragged, registry, strings2arrays",
+      "from ..util import get_data_checker",
+      "@pytest.fixture(params=[[], [(10, 2)], [(5, 3), (1, 3)], [(2, 3), (0, 3), (1, 3)]])",
+      "def shapes(request):",
+      "    return request.param",
+      "@pytest.fixture",
+      "def ops():",
+      "    return NumpyOps()"
+    ],
+    "imports": [
+      "import numpy",
+      "import pytest",
+      "from thinc.api import NumpyOps, Ragged, registry, strings2arrays",
+      "from ..util import get_data_checker"
+    ],
+    "classes": [],
+    "functions": [
+      "shapes",
+      "ops",
+      "list_data",
+      "ragged_data",
+      "padded_data",
+      "array_data",
+      "check_transform",
+      "test_list2array",
+      "test_list2ragged",
+      "test_list2padded",
+      "test_ragged2list",
+      "test_padded2list",
+      "test_strings2arrays"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_496_e207646a7843d9c9_AI_Chariot_Legacy_666_1.0.0_20260508_test_transforms.py.json"
+}

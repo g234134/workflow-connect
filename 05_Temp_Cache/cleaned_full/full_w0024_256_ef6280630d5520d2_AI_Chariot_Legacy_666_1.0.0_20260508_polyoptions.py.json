@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 256,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_polyoptions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_polyoptions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21670,
+  "content_sha256": "ef6280630d5520d2ed60f819c0877a82fcef81ced7d05afb2832094e21b058ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 786,
+    "non_empty_lines": 550,
+    "char_count": 21670,
+    "preview_lines": [
+      "\"\"\"Options manager for :class:`~.Poly` and public API functions. \"\"\"",
+      "from __future__ import annotations",
+      "__all__ = [\"Options\"]",
+      "from sympy.core import Basic, sympify",
+      "from sympy.polys.polyerrors import GeneratorsError, OptionError, FlagError",
+      "from sympy.utilities import numbered_symbols, topological_sort, public",
+      "from sympy.utilities.iterables import has_dups, is_sequence",
+      "import sympy.polys",
+      "import re",
+      "class Option:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from sympy.core import Basic, sympify",
+      "from sympy.polys.polyerrors import GeneratorsError, OptionError, FlagError",
+      "from sympy.utilities import numbered_symbols, topological_sort, public",
+      "from sympy.utilities.iterables import has_dups, is_sequence",
+      "import sympy.polys",
+      "import re"
+    ],
+    "classes": [
+      "Option",
+      "Flag",
+      "BooleanOption",
+      "OptionType",
+      "Options",
+      "Expand",
+      "Gens",
+      "Wrt",
+      "Sort",
+      "Order",
+      "Field",
+      "Greedy",
+      "Composite",
+      "Domain",
+      "Split",
+      "Gaussian",
+      "Extension",
+      "Modulus",
+      "Symmetric",
+      "Strict"
+    ],
+    "functions": [
+      "build_options",
+      "allowed_flags",
+      "set_defaults"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_256_ef6280630d5520d2_AI_Chariot_Legacy_666_1.0.0_20260508_polyoptions.py.json"
+}

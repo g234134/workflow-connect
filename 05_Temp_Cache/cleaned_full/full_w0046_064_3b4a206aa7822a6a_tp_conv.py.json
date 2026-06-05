@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\tp_conv.py",
+  "name": "tp_conv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10413,
+  "content_sha256": "3b4a206aa7822a6a44a040eb7ed3885809f518ca7bb759d0eee7c6ac0c60cbfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 277,
+    "non_empty_lines": 229,
+    "char_count": 10413,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "# implement matrix related ops for distributed tensor",
+      "from typing import cast, Dict, List, Tuple",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed._tensor.api as dtensor",
+      "aten = torch.ops.aten",
+      "def _requires_data_exchange(padding):",
+      "    # TODO: whether there requires data exchange is currently determined by padding",
+      "    return padding[1] != 0"
+    ],
+    "imports": [
+      "from typing import cast, Dict, List, Tuple",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed._tensor.api as dtensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_requires_data_exchange",
+      "_is_supported",
+      "_ring_send_recv_construct",
+      "_ring_send_recv_aggregate",
+      "tp_convolution",
+      "tp_convolution_backward",
+      "convolution_handler",
+      "convolution_backward_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_064_3b4a206aa7822a6a_tp_conv.py.json"
+}

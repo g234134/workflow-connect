@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 467,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\pass\\recfunctions.py",
+  "name": "recfunctions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5138,
+  "content_sha256": "f27ab0fa3f296e350da3a7fdd9f1630309b9ef3cc32cfd8fad8e837a1996bfc9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 123,
+    "char_count": 5138,
+    "preview_lines": [
+      "\"\"\"These tests are based on the doctests from `numpy/lib/recfunctions.py`.\"\"\"",
+      "from typing import Any, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "from numpy.lib import recfunctions as rfn",
+      "def test_recursive_fill_fields() -> None:",
+      "    a: npt.NDArray[np.void] = np.array(",
+      "        [(1, 10.0), (2, 20.0)],",
+      "        dtype=[(\"A\", np.int64), (\"B\", np.float64)],",
+      "    )"
+    ],
+    "imports": [
+      "from typing import Any, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "from numpy.lib import recfunctions as rfn"
+    ],
+    "classes": [],
+    "functions": [
+      "test_recursive_fill_fields",
+      "test_get_names",
+      "test_get_names_flat",
+      "test_flatten_descr",
+      "test_get_fieldstructure",
+      "test_merge_arrays",
+      "test_drop_fields",
+      "test_rename_fields",
+      "test_repack_fields",
+      "test_structured_to_unstructured",
+      "unstructured_to_structured",
+      "test_apply_along_fields",
+      "test_assign_fields_by_name",
+      "test_require_fields",
+      "test_stack_arrays",
+      "test_find_duplicates"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_467_f27ab0fa3f296e35_recfunctions.py.json"
+}

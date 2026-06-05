@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cost_calculation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cost_calculation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 628,
+  "content_sha256": "dcb0e824bec9ec38192c5bc0770deefe76917332ee8e371dc67f1eb34593638c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 16,
+    "char_count": 628,
+    "preview_lines": [
+      "\"\"\"",
+      "Helper util for handling amazon nova cost calculation",
+      "- e.g.: prompt caching",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Tuple",
+      "from litellm.litellm_core_utils.llm_cost_calc.utils import generic_cost_per_token",
+      "if TYPE_CHECKING:",
+      "    from litellm.types.utils import Usage",
+      "def cost_per_token(model: str, usage: \"Usage\") -> Tuple[float, float]:",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Tuple",
+      "from litellm.litellm_core_utils.llm_cost_calc.utils import generic_cost_per_token",
+      "from litellm.types.utils import Usage"
+    ],
+    "classes": [],
+    "functions": [
+      "cost_per_token"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_360_dcb0e824bec9ec38_AI_Chariot_Legacy_666_1.0.0_20260508_cost_calculation.py.json"
+}

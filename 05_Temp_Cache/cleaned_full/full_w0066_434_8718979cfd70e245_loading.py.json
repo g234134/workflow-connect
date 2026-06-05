@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\loading.py",
+  "name": "loading.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5034,
+  "content_sha256": "8718979cfd70e245f2979a893f63be072cc9abe7e9f7f6ccfef561ec6a116956",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 148,
+    "non_empty_lines": 125,
+    "char_count": 5031,
+    "preview_lines": [
+      "\"\"\"Functionality for loading agents.\"\"\"",
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import yaml",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.tools import Tool",
+      "from langchain_classic.agents.agent import BaseMultiActionAgent, BaseSingleActionAgent"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import yaml",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.tools import Tool",
+      "from langchain_classic.agents.agent import BaseMultiActionAgent, BaseSingleActionAgent",
+      "from langchain_classic.agents.types import AGENT_TO_CLASS",
+      "from langchain_classic.chains.loading import load_chain, load_chain_from_config"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_agent_from_tools",
+      "load_agent_from_config",
+      "load_agent",
+      "_load_agent_from_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_434_8718979cfd70e245_loading.py.json"
+}

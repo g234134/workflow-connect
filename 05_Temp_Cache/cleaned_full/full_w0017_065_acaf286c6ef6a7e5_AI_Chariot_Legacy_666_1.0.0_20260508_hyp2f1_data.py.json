@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 65,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hyp2f1_data.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hyp2f1_data.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15191,
+  "content_sha256": "acaf286c6ef6a7e526a5d8d2be14bafb19b80384d1b1cb1434030a3ae2995be4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 484,
+    "non_empty_lines": 428,
+    "char_count": 15191,
+    "preview_lines": [
+      "\"\"\"This script evaluates scipy's implementation of hyp2f1 against mpmath's.",
+      "Author: Albert Steppi",
+      "This script is long running and generates a large output file. With default",
+      "arguments, the generated file is roughly 700MB in size and it takes around",
+      "40 minutes using an Intel(R) Core(TM) i5-8250U CPU with n_jobs set to 8",
+      "(full utilization). There are optional arguments which can be used to restrict",
+      "(or enlarge) the computations performed. These are described below.",
+      "The output of this script can be analyzed to identify suitable test cases and",
+      "to find parameter and argument regions where hyp2f1 needs to be improved.",
+      "The script has one mandatory positional argument for specifying the path to"
+    ],
+    "imports": [
+      "import os",
+      "import csv",
+      "import argparse",
+      "import numpy as np",
+      "from itertools import product",
+      "from multiprocessing import Pool",
+      "from scipy.special import hyp2f1",
+      "from scipy.special.tests.test_hyp2f1 import mp_hyp2f1"
+    ],
+    "classes": [],
+    "functions": [
+      "get_region",
+      "get_result",
+      "get_result_no_mp",
+      "get_results",
+      "_make_hyp2f1_test_case",
+      "make_hyp2f1_test_cases",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_065_acaf286c6ef6a7e5_AI_Chariot_Legacy_666_1.0.0_20260508_hyp2f1_data.py.json"
+}

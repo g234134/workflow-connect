@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_context_menu.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_context_menu.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4540,
+  "content_sha256": "6c888f2668eb551eeaceaba4e39d8cff1ab8a9a7d3882c21fc24501a07dd7ab7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 104,
+    "char_count": 4540,
+    "preview_lines": [
+      "# A sample context menu handler.",
+      "# Adds a 'Hello from Python' menu entry to .py files.  When clicked, a",
+      "# simple message box is displayed.",
+      "#",
+      "# To demonstrate:",
+      "# * Execute this script to register the context menu.",
+      "# * Open Windows Explorer, and browse to a directory with a .py file.",
+      "# * Right-Click on a .py file - locate and click on 'Hello from Python' on",
+      "#   the context menu.",
+      "import pythoncom"
+    ],
+    "imports": [
+      "import pythoncom",
+      "import win32con",
+      "import win32gui",
+      "from win32com.shell import shell, shellcon",
+      "import winreg",
+      "import winreg",
+      "import errno",
+      "from win32com.server import register"
+    ],
+    "classes": [
+      "ShellExtension"
+    ],
+    "functions": [
+      "DllRegisterServer",
+      "DllUnregisterServer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_202_6c888f2668eb551e_AI_Chariot_Legacy_666_1.0.0_20260508_context_menu.py.json"
+}

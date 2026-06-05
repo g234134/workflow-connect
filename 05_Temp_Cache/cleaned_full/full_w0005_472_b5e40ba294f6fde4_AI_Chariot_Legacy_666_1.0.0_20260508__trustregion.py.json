@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__trustregion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__trustregion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11105,
+  "content_sha256": "b5e40ba294f6fde4aea5ecc13263dd5db0209237c3025f6293ee0cf23825eee8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 304,
+    "non_empty_lines": 258,
+    "char_count": 11105,
+    "preview_lines": [
+      "\"\"\"Trust-region optimization.\"\"\"",
+      "import math",
+      "import warnings",
+      "import numpy as np",
+      "import scipy.linalg",
+      "from ._optimize import (_check_unknown_options, _status_message,",
+      "                        OptimizeResult, _prepare_scalar_function,",
+      "                        _call_callback_maybe_halt)",
+      "from scipy.optimize._hessian_update_strategy import HessianUpdateStrategy",
+      "from scipy.optimize._differentiable_functions import FD_METHODS"
+    ],
+    "imports": [
+      "import math",
+      "import warnings",
+      "import numpy as np",
+      "import scipy.linalg",
+      "from ._optimize import (_check_unknown_options, _status_message,",
+      "from scipy.optimize._hessian_update_strategy import HessianUpdateStrategy",
+      "from scipy.optimize._differentiable_functions import FD_METHODS"
+    ],
+    "classes": [
+      "BaseQuadraticSubproblem"
+    ],
+    "functions": [
+      "_wrap_function",
+      "_minimize_trust_region"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_472_b5e40ba294f6fde4_AI_Chariot_Legacy_666_1.0.0_20260508__trustregion.py.json"
+}

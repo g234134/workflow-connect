@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\anthropic\\tests\\integration_tests\\test_standard.py",
+  "name": "test_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5567,
+  "content_sha256": "714a6078ffa1b629dcefbca8018a44af52303739d3c1efaada97ec94c24f33a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 153,
+    "char_count": 5564,
+    "preview_lines": [
+      "\"\"\"Standard LangChain interface tests.\"\"\"",
+      "from pathlib import Path",
+      "from typing import Literal, cast",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, BaseMessageChunk",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_anthropic import ChatAnthropic",
+      "REPO_ROOT_DIR = Path(__file__).parents[5]",
+      "MODEL = \"claude-haiku-4-5-20251001\""
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "from typing import Literal, cast",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, BaseMessageChunk",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_anthropic import ChatAnthropic"
+    ],
+    "classes": [
+      "TestAnthropicStandard",
+      "NativeStructuredOutputTests"
+    ],
+    "functions": [
+      "_invoke",
+      "test_native_structured_output"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_492_714a6078ffa1b629_test_standard.py.json"
+}

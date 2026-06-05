@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hard_swish_mobilenet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hard_swish_mobilenet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2264,
+  "content_sha256": "e3ce872c8816b1f204199d9266fc434bc4756d5224c5a3f77ff4bcb1477628b2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 61,
+    "char_count": 2264,
+    "preview_lines": [
+      "from typing import Callable, Optional, Tuple, cast",
+      "from ..config import registry",
+      "from ..initializers import he_normal_init, zero_init",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d",
+      "from ..util import get_width, partial",
+      "from .chain import chain",
+      "from .dropout import Dropout",
+      "from .layernorm import LayerNorm",
+      "@registry.layers(\"HardSwishMobilenet.v1\")"
+    ],
+    "imports": [
+      "from typing import Callable, Optional, Tuple, cast",
+      "from ..config import registry",
+      "from ..initializers import he_normal_init, zero_init",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d",
+      "from ..util import get_width, partial",
+      "from .chain import chain",
+      "from .dropout import Dropout",
+      "from .layernorm import LayerNorm"
+    ],
+    "classes": [],
+    "functions": [
+      "HardSwishMobilenet",
+      "forward",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_349_e3ce872c8816b1f2_AI_Chariot_Legacy_666_1.0.0_20260508_hard_swish_mobilenet.py.json"
+}

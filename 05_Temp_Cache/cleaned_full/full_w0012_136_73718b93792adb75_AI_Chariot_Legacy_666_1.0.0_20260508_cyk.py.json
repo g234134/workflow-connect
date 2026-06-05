@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cyk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cyk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12192,
+  "content_sha256": "73718b93792adb75f06fc32a50e8ef8afc0fe3cf0a258e8d516831a9e479f7cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 271,
+    "char_count": 12192,
+    "preview_lines": [
+      "\"\"\"This module implements a CYK parser.\"\"\"",
+      "# Author: https://github.com/ehudt (2018)",
+      "#",
+      "# Adapted by Erez",
+      "from collections import defaultdict",
+      "import itertools",
+      "from ..exceptions import ParseError",
+      "from ..lexer import Token",
+      "from ..tree import Tree",
+      "from ..grammar import Terminal as T, NonTerminal as NT, Symbol"
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "import itertools",
+      "from ..exceptions import ParseError",
+      "from ..lexer import Token",
+      "from ..tree import Tree",
+      "from ..grammar import Terminal as T, NonTerminal as NT, Symbol"
+    ],
+    "classes": [
+      "Rule",
+      "Grammar",
+      "RuleNode",
+      "Parser",
+      "CnfWrapper",
+      "UnitSkipRule"
+    ],
+    "functions": [
+      "match",
+      "print_parse",
+      "_parse",
+      "build_unit_skiprule",
+      "get_any_nt_unit_rule",
+      "_remove_unit_rule",
+      "_split",
+      "_term",
+      "_bin",
+      "_unit",
+      "to_cnf",
+      "unroll_unit_skiprule",
+      "revert_cnf"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_136_73718b93792adb75_AI_Chariot_Legacy_666_1.0.0_20260508_cyk.py.json"
+}

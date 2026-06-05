@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_perceptron.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_perceptron.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2696,
+  "content_sha256": "d206c63a91b45d95dd4c34dfb4a989e11683324012e28a5f0aa0a6fd08486988",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 65,
+    "char_count": 2696,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.linear_model import Perceptron",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import assert_allclose, assert_array_almost_equal",
+      "from sklearn.utils.fixes import CSR_CONTAINERS",
+      "iris = load_iris()",
+      "random_state = check_random_state(12)",
+      "indices = np.arange(iris.data.shape[0])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.linear_model import Perceptron",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._testing import assert_allclose, assert_array_almost_equal",
+      "from sklearn.utils.fixes import CSR_CONTAINERS"
+    ],
+    "classes": [
+      "MyPerceptron"
+    ],
+    "functions": [
+      "test_perceptron_accuracy",
+      "test_perceptron_correctness",
+      "test_undefined_methods",
+      "test_perceptron_l1_ratio"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_241_d206c63a91b45d95_AI_Chariot_Legacy_666_1.0.0_20260508_test_perceptron.py.json"
+}

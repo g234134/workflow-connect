@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 374,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_demo_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_demo_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29376,
+  "content_sha256": "9f3e50cd71f2d762795684afb7e94ac4bb7873f5457f9f0ad0e2378688993f50",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 778,
+    "non_empty_lines": 667,
+    "char_count": 29376,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "# Modified from TensorRT demo diffusion, which has the following license:",
+      "#",
+      "# SPDX-FileCopyrightText: Copyright (c) 1993-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");"
+    ],
+    "imports": [
+      "import argparse",
+      "import os",
+      "import sys",
+      "from importlib.metadata import PackageNotFoundError, version",
+      "from typing import Any",
+      "import controlnet_aux",
+      "import cv2",
+      "import numpy as np",
+      "import torch",
+      "from cuda import cudart",
+      "from diffusion_models import PipelineInfo",
+      "from engine_builder import EngineType, get_engine_paths, get_engine_type",
+      "from PIL import Image",
+      "from pipeline_stable_diffusion import StableDiffusionPipeline"
+    ],
+    "classes": [
+      "RawTextArgumentDefaultsHelpFormatter"
+    ],
+    "functions": [
+      "arg_parser",
+      "set_default_arguments",
+      "parse_arguments",
+      "max_batch",
+      "get_metadata",
+      "repeat_prompt",
+      "initialize_pipeline",
+      "load_pipelines",
+      "get_depth_image",
+      "get_canny_image",
+      "process_controlnet_images_xl",
+      "add_controlnet_arguments",
+      "process_controlnet_image",
+      "process_controlnet_arguments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_374_9f3e50cd71f2d762_AI_Chariot_Legacy_666_1.0.0_20260508_demo_utils.py.json"
+}

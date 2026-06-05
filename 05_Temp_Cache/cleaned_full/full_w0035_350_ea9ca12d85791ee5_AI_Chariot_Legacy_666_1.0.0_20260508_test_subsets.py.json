@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_subsets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_subsets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2635,
+  "content_sha256": "ea9ca12d85791ee5efc7adebfa01951ebf0b4ab1915dca43b9d8459fd7c1a97f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 53,
+    "char_count": 2635,
+    "preview_lines": [
+      "from sympy.combinatorics.subsets import Subset, ksubsets",
+      "from sympy.testing.pytest import raises",
+      "def test_subset():",
+      "    a = Subset(['c', 'd'], ['a', 'b', 'c', 'd'])",
+      "    assert a.next_binary() == Subset(['b'], ['a', 'b', 'c', 'd'])",
+      "    assert a.prev_binary() == Subset(['c'], ['a', 'b', 'c', 'd'])",
+      "    assert a.next_lexicographic() == Subset(['d'], ['a', 'b', 'c', 'd'])",
+      "    assert a.prev_lexicographic() == Subset(['c'], ['a', 'b', 'c', 'd'])",
+      "    assert a.next_gray() == Subset(['c'], ['a', 'b', 'c', 'd'])",
+      "    assert a.prev_gray() == Subset(['d'], ['a', 'b', 'c', 'd'])"
+    ],
+    "imports": [
+      "from sympy.combinatorics.subsets import Subset, ksubsets",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_subset",
+      "test_ksubsets"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_350_ea9ca12d85791ee5_AI_Chariot_Legacy_666_1.0.0_20260508_test_subsets.py.json"
+}

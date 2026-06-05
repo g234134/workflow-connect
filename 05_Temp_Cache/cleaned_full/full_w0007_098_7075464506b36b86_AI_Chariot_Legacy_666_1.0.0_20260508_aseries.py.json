@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 98,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aseries.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aseries.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 255,
+  "content_sha256": "7075464506b36b86b2a88ea38ba38736475010c57b064a387f8bee8366ee1106",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 10,
+    "non_empty_lines": 7,
+    "char_count": 255,
+    "preview_lines": [
+      "from sympy.core.sympify import sympify",
+      "def aseries(expr, x=None, n=6, bound=0, hir=False):",
+      "    \"\"\"",
+      "    See the docstring of Expr.aseries() for complete details of this wrapper.",
+      "    \"\"\"",
+      "    expr = sympify(expr)",
+      "    return expr.aseries(x, n, bound, hir)"
+    ],
+    "imports": [
+      "from sympy.core.sympify import sympify"
+    ],
+    "classes": [],
+    "functions": [
+      "aseries"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_098_7075464506b36b86_AI_Chariot_Legacy_666_1.0.0_20260508_aseries.py.json"
+}

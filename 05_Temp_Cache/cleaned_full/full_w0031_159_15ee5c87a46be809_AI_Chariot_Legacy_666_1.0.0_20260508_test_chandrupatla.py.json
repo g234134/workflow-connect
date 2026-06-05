@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_chandrupatla.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_chandrupatla.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40004,
+  "content_sha256": "15ee5c87a46be809b85030cf4e56632f56506112b1bd95366b85b18b5c729ef2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 984,
+    "non_empty_lines": 832,
+    "char_count": 40004,
+    "preview_lines": [
+      "import math",
+      "import pytest",
+      "import numpy as np",
+      "from scipy import stats, special",
+      "import scipy._lib._elementwise_iterative_method as eim",
+      "from scipy.conftest import array_api_compatible",
+      "from scipy._lib._array_api import array_namespace, is_cupy, is_numpy, xp_ravel, xp_size",
+      "from scipy._lib._array_api_no_0d import (xp_assert_close, xp_assert_equal,",
+      "                                         xp_assert_less)",
+      "from scipy.optimize.elementwise import find_minimum, find_root"
+    ],
+    "imports": [
+      "import math",
+      "import pytest",
+      "import numpy as np",
+      "from scipy import stats, special",
+      "import scipy._lib._elementwise_iterative_method as eim",
+      "from scipy.conftest import array_api_compatible",
+      "from scipy._lib._array_api import array_namespace, is_cupy, is_numpy, xp_ravel, xp_size",
+      "from scipy._lib._array_api_no_0d import (xp_assert_close, xp_assert_equal,",
+      "from scipy.optimize.elementwise import find_minimum, find_root",
+      "from scipy.optimize._tstutils import _CHANDRUPATLA_TESTS",
+      "from itertools import permutations",
+      "from .test_zeros import TestScalarRootFinders"
+    ],
+    "classes": [
+      "TestChandrupatlaMinimize",
+      "TestChandrupatla"
+    ],
+    "functions": [
+      "_vectorize",
+      "_wrap_chandrupatla",
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "_bracket_minimum"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_159_15ee5c87a46be809_AI_Chariot_Legacy_666_1.0.0_20260508_test_chandrupatla.py.json"
+}

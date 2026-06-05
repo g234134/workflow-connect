@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 439,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_crawl4ai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_crawl4ai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7648,
+  "content_sha256": "26660cb40f347f929a5700decd6e1953cddf9b8a6d4809b3cde036b087bfe9a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 184,
+    "non_empty_lines": 152,
+    "char_count": 7648,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import inspect",
+      "from typing import Annotated, Any, Optional",
+      "from pydantic import BaseModel",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ....interop import LiteLLmConfigFactory",
+      "from ....llm_config import LLMConfig"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Annotated, Any, Optional",
+      "from pydantic import BaseModel",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ....interop import LiteLLmConfigFactory",
+      "from ....llm_config import LLMConfig",
+      "from ... import Tool",
+      "from ...dependency_injection import Depends, on",
+      "from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig",
+      "from crawl4ai import LLMConfig as Crawl4aiLLMConfig",
+      "from crawl4ai.extraction_strategy import LLMExtractionStrategy"
+    ],
+    "classes": [
+      "Crawl4AITool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_439_26660cb40f347f92_AI_Chariot_Legacy_666_1.0.0_20260508_crawl4ai.py.json"
+}

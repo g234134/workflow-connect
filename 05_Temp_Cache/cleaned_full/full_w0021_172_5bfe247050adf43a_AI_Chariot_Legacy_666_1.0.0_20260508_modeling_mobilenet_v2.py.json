@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 172,
+  "generated_at": "2026-05-08T18:45:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilenet_v2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilenet_v2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21175,
+  "content_sha256": "5bfe247050adf43a4851cff949cae612eac099664397759c3658c0ec7ac99e26",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 603,
+    "non_empty_lines": 491,
+    "char_count": 21175,
+    "preview_lines": [
+      "# Copyright 2022 Apple Inc. and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import nn",
+      "from torch.nn import CrossEntropyLoss",
+      "from ...activations import ACT2FN",
+      "from ...modeling_outputs import (",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import auto_docstring, logging",
+      "from .configuration_mobilenet_v2 import MobileNetV2Config"
+    ],
+    "classes": [
+      "MobileNetV2ConvLayer",
+      "MobileNetV2InvertedResidual",
+      "MobileNetV2Stem",
+      "MobileNetV2PreTrainedModel",
+      "MobileNetV2Model",
+      "MobileNetV2ForImageClassification",
+      "MobileNetV2DeepLabV3Plus",
+      "MobileNetV2ForSemanticSegmentation"
+    ],
+    "functions": [
+      "make_divisible",
+      "apply_depth_multiplier",
+      "apply_tf_padding"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_172_5bfe247050adf43a_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilenet_v2.py.json"
+}

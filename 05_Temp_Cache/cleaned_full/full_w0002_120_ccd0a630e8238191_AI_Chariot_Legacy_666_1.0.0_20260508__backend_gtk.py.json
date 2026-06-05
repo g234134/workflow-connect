@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__backend_gtk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__backend_gtk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11274,
+  "content_sha256": "ccd0a630e82381919f0089710d4e29874d973124a7d30214a0f438c2c69e7808",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 331,
+    "non_empty_lines": 271,
+    "char_count": 11274,
+    "preview_lines": [
+      "\"\"\"",
+      "Common code for GTK3 and GTK4 backends.",
+      "\"\"\"",
+      "import logging",
+      "import sys",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, backend_tools, cbook",
+      "from matplotlib._pylab_helpers import Gcf",
+      "from matplotlib.backend_bases import (",
+      "    _Backend, FigureCanvasBase, FigureManagerBase, NavigationToolbar2,"
+    ],
+    "imports": [
+      "import logging",
+      "import sys",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, backend_tools, cbook",
+      "from matplotlib._pylab_helpers import Gcf",
+      "from matplotlib.backend_bases import (",
+      "from matplotlib.backend_tools import Cursors",
+      "import gi",
+      "from gi.repository import Gdk, Gio, GLib, Gtk"
+    ],
+    "classes": [
+      "TimerGTK",
+      "_FigureCanvasGTK",
+      "_FigureManagerGTK",
+      "_NavigationToolbar2GTK",
+      "RubberbandGTK",
+      "ConfigureSubplotsGTK",
+      "_BackendGTK"
+    ],
+    "functions": [
+      "_shutdown_application",
+      "_create_application",
+      "mpl_to_gtk_cursor_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_120_ccd0a630e8238191_AI_Chariot_Legacy_666_1.0.0_20260508__backend_gtk.py.json"
+}

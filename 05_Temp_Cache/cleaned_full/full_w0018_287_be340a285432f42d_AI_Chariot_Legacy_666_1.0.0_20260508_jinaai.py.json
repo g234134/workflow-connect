@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_jinaai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_jinaai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8418,
+  "content_sha256": "be340a285432f42d248b15e36ff83aeff064474d19884614a9e83835e644dea4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 232,
+    "non_empty_lines": 195,
+    "char_count": 8418,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "import os",
+      "import io",
+      "import base64",
+      "from urllib.parse import urlparse",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, ClassVar, List, Union, Optional, Any, Dict",
+      "import numpy as np",
+      "import pyarrow as pa"
+    ],
+    "imports": [
+      "import os",
+      "import io",
+      "import base64",
+      "from urllib.parse import urlparse",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, ClassVar, List, Union, Optional, Any, Dict",
+      "import numpy as np",
+      "import pyarrow as pa",
+      "from ..util import attempt_import_or_raise",
+      "from .base import EmbeddingFunction",
+      "from .registry import register",
+      "from .utils import api_key_not_found_help, TEXT, IMAGES, url_retrieve",
+      "import PIL"
+    ],
+    "classes": [
+      "JinaEmbeddings"
+    ],
+    "functions": [
+      "is_valid_url"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_287_be340a285432f42d_AI_Chariot_Legacy_666_1.0.0_20260508_jinaai.py.json"
+}

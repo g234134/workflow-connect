@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 233,
+  "generated_at": "2026-05-08T18:47:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\mpmath\\functions\\signals.py",
+  "name": "signals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 703,
+  "content_sha256": "10ba2dc10696d420e9bfe79e273399e5cdb73617da65c8fdfc691bde9b2f4b44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 32,
+    "non_empty_lines": 26,
+    "char_count": 703,
+    "preview_lines": [
+      "from .functions import defun_wrapped",
+      "@defun_wrapped",
+      "def squarew(ctx, t, amplitude=1, period=1):",
+      "    P = period",
+      "    A = amplitude",
+      "    return A*((-1)**ctx.floor(2*t/P))",
+      "@defun_wrapped",
+      "def trianglew(ctx, t, amplitude=1, period=1):",
+      "    A = amplitude",
+      "    P = period"
+    ],
+    "imports": [
+      "from .functions import defun_wrapped"
+    ],
+    "classes": [],
+    "functions": [
+      "squarew",
+      "trianglew",
+      "sawtoothw",
+      "unit_triangle",
+      "sigmoid"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_233_10ba2dc10696d420_signals.py.json"
+}

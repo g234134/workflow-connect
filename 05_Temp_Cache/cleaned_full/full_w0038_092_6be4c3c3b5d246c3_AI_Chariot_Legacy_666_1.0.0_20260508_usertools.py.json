@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_usertools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_usertools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3029,
+  "content_sha256": "6be4c3c3b5d246c3dd0447dfc4ea280d5e160c57ee5e73b9f0fef975c003f3b2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 85,
+    "char_count": 3029,
+    "preview_lines": [
+      "def monitor(f, input='print', output='print'):",
+      "    \"\"\"",
+      "    Returns a wrapped copy of *f* that monitors evaluation by calling",
+      "    *input* with every input (*args*, *kwargs*) passed to *f* and",
+      "    *output* with every value returned from *f*. The default action",
+      "    (specify using the special string value ``'print'``) is to print",
+      "    inputs and outputs to stdout, along with the total evaluation",
+      "    count::",
+      "        >>> from mpmath import *",
+      "        >>> mp.dps = 5; mp.pretty = False"
+    ],
+    "imports": [
+      "from timeit import default_timer as clock"
+    ],
+    "classes": [],
+    "functions": [
+      "monitor",
+      "timing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_092_6be4c3c3b5d246c3_AI_Chariot_Legacy_666_1.0.0_20260508_usertools.py.json"
+}

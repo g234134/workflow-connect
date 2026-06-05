@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 138,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\etcd_store.py",
+  "name": "etcd_store.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7131,
+  "content_sha256": "3b3242cade9f30a37517348b5c325c3ce856dced71b0ccdf21537e3c2be3043c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 167,
+    "char_count": 7131,
+    "preview_lines": [
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "import datetime",
+      "import random",
+      "import time",
+      "from base64 import b64decode, b64encode",
+      "from typing import Optional"
+    ],
+    "imports": [
+      "import datetime",
+      "import random",
+      "import time",
+      "from base64 import b64decode, b64encode",
+      "from typing import Optional",
+      "import etcd  # type: ignore[import]",
+      "from torch.distributed import Store"
+    ],
+    "classes": [
+      "EtcdStore"
+    ],
+    "functions": [
+      "cas_delay"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_138_3b3242cade9f30a3_etcd_store.py.json"
+}

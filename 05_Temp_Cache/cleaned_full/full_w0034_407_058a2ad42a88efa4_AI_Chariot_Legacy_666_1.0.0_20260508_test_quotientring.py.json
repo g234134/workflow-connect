@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_quotientring.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_quotientring.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1459,
+  "content_sha256": "058a2ad42a88efa4434a6d3141da75bfb0efd67e6c75c99eb3e6ffcbf01f5bed",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 52,
+    "non_empty_lines": 38,
+    "char_count": 1459,
+    "preview_lines": [
+      "\"\"\"Tests for quotient rings.\"\"\"",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.abc import x, y",
+      "from sympy.polys.polyerrors import NotReversible",
+      "from sympy.testing.pytest import raises",
+      "def test_QuotientRingElement():",
+      "    R = QQ.old_poly_ring(x)/[x**10]",
+      "    X = R.convert(x)",
+      "    assert X*(X + 1) == R.convert(x**2 + x)"
+    ],
+    "imports": [
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.abc import x, y",
+      "from sympy.polys.polyerrors import NotReversible",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_QuotientRingElement",
+      "test_QuotientRing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_407_058a2ad42a88efa4_AI_Chariot_Legacy_666_1.0.0_20260508_test_quotientring.py.json"
+}

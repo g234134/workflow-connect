@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 489,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__type_conversion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__type_conversion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2944,
+  "content_sha256": "cd6c186522e6fbb324ff44eb4a82431d7f4a7a5f9fcb2dfac0695861f684beec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 55,
+    "char_count": 2944,
+    "preview_lines": [
+      "from typing import Any, Dict, Optional, Union",
+      "import numpy as np",
+      "import PIL.Image",
+      "import torch",
+      "from torchvision import tv_tensors",
+      "from torchvision.transforms.v2 import functional as F, Transform",
+      "from torchvision.transforms.v2._utils import is_pure_tensor",
+      "class PILToTensor(Transform):",
+      "    \"\"\"Convert a PIL Image to a tensor of the same type - this does not scale values.",
+      "    This transform does not support torchscript."
+    ],
+    "imports": [
+      "from typing import Any, Dict, Optional, Union",
+      "import numpy as np",
+      "import PIL.Image",
+      "import torch",
+      "from torchvision import tv_tensors",
+      "from torchvision.transforms.v2 import functional as F, Transform",
+      "from torchvision.transforms.v2._utils import is_pure_tensor"
+    ],
+    "classes": [
+      "PILToTensor",
+      "ToImage",
+      "ToPILImage",
+      "ToPureTensor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_489_cd6c186522e6fbb3_AI_Chariot_Legacy_666_1.0.0_20260508__type_conversion.py.json"
+}

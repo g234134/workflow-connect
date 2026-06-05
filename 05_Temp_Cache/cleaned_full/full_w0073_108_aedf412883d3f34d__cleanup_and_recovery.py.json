@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 73,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:49:14+00:00",
+  "source_path": "D:\\大唐三省六部\\04_Workflows\\_cleanup_and_recovery.py",
+  "name": "_cleanup_and_recovery.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5584,
+  "content_sha256": "aedf412883d3f34d752f73a8f4e010ac0d521503a93ab5db074f7b38b0299ac8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 140,
+    "non_empty_lines": 122,
+    "char_count": 5439,
+    "preview_lines": [
+      "# _cleanup_and_recovery.py — 清算餘波·混合模式（甲+修復）",
+      "# 1) Cleanup_Agent：物理銷毀 14 件 0-byte 佔位空殼（cleanup_executed）",
+      "# 2) Recovery_Agent：對 797 件非 0-byte 進行一次性編碼／BOM 修復與重分類",
+      "# 3) 更新 Status.json：cleanup_last_wave + recovery_last_wave + pipeline_status=Success",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "import sys",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict",
+      "from gov_paths import (  # type: ignore",
+      "from Cleanup_Agent import Cleanup_Agent  # type: ignore",
+      "from Recovery_Agent import Recovery_Agent  # type: ignore"
+    ],
+    "classes": [],
+    "functions": [
+      "_utc_iso",
+      "_patch_status",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0073_108_aedf412883d3f34d__cleanup_and_recovery.py.json"
+}

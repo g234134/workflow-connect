@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 15,
+  "generated_at": "2026-05-08T18:46:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_hyperbolic_space.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_hyperbolic_space.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2598,
+  "content_sha256": "738c5027f6c14b8c6b323de97f1d4cb37a02dbf2f0b89b8d617359c6cf9c546f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 72,
+    "char_count": 2598,
+    "preview_lines": [
+      "r'''",
+      "unit test describing the hyperbolic half-plane with the Poincare metric. This",
+      "is a basic model of hyperbolic geometry on the (positive) half-space",
+      "{(x,y) \\in R^2 | y > 0}",
+      "with the Riemannian metric",
+      "ds^2 = (dx^2 + dy^2)/y^2",
+      "It has constant negative scalar curvature = -2",
+      "https://en.wikipedia.org/wiki/Poincare_half-plane_model",
+      "'''",
+      "from sympy.matrices.dense import diag"
+    ],
+    "imports": [
+      "from sympy.matrices.dense import diag",
+      "from sympy.diffgeom import (twoform_to_matrix,",
+      "import sympy.diffgeom.rn",
+      "from sympy.tensor.array import ImmutableDenseNDimArray"
+    ],
+    "classes": [],
+    "functions": [
+      "test_H2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_015_738c5027f6c14b8c_AI_Chariot_Legacy_666_1.0.0_20260508_test_hyperbolic_space.py.json"
+}

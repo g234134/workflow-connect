@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 315,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ttCollection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ttCollection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4088,
+  "content_sha256": "d7fc0caff38d8303d987ac1f6d2fdaee535e13623152a774dbd4c639b3ac5acd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 125,
+    "non_empty_lines": 95,
+    "char_count": 4088,
+    "preview_lines": [
+      "from fontTools.ttLib.ttFont import TTFont",
+      "from fontTools.ttLib.sfnt import readTTCHeader, writeTTCHeader",
+      "from io import BytesIO",
+      "import struct",
+      "import logging",
+      "log = logging.getLogger(__name__)",
+      "class TTCollection(object):",
+      "    \"\"\"Object representing a TrueType Collection / OpenType Collection.",
+      "    The main API is self.fonts being a list of TTFont instances.",
+      "    If shareTables is True, then different fonts in the collection"
+    ],
+    "imports": [
+      "from fontTools.ttLib.ttFont import TTFont",
+      "from fontTools.ttLib.sfnt import readTTCHeader, writeTTCHeader",
+      "from io import BytesIO",
+      "import struct",
+      "import logging",
+      "from fontTools.misc import xmlWriter",
+      "from fontTools import version"
+    ],
+    "classes": [
+      "TTCollection"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_315_d7fc0caff38d8303_AI_Chariot_Legacy_666_1.0.0_20260508_ttCollection.py.json"
+}

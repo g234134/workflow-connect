@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 303,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_loading.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_loading.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4883,
+  "content_sha256": "ad5200525ae9fef61a0f96298bf262a062f292b887a3398406f14eec2c9b6d24",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 148,
+    "non_empty_lines": 125,
+    "char_count": 4883,
+    "preview_lines": [
+      "\"\"\"Functionality for loading agents.\"\"\"",
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import yaml",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.tools import Tool",
+      "from langchain_classic.agents.agent import BaseMultiActionAgent, BaseSingleActionAgent"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import yaml",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.tools import Tool",
+      "from langchain_classic.agents.agent import BaseMultiActionAgent, BaseSingleActionAgent",
+      "from langchain_classic.agents.types import AGENT_TO_CLASS",
+      "from langchain_classic.chains.loading import load_chain, load_chain_from_config"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_agent_from_tools",
+      "load_agent_from_config",
+      "load_agent",
+      "_load_agent_from_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_303_ad5200525ae9fef6_AI_Chariot_Legacy_666_1.0.0_20260508_loading.py.json"
+}

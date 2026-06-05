@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 330,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pytest_helper.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pytest_helper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8287,
+  "content_sha256": "285151970b552c94a746e6334287b93880fa429942ec1cb382bde70a664957df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 246,
+    "non_empty_lines": 214,
+    "char_count": 8287,
+    "preview_lines": [
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import contextlib",
+      "import json",
+      "import os",
+      "import pathlib",
+      "from typing import Any, Optional",
+      "from pydantic import BaseModel, Field, SerializeAsAny",
+      "import pytest",
+      "import re",
+      "from .. import _common",
+      "from .. import _replay_api_client",
+      "from .. import types",
+      "from .._api_client import HttpOptions"
+    ],
+    "classes": [
+      "TestTableItem"
+    ],
+    "functions": [
+      "base_test_function",
+      "create_test_for_table_item",
+      "create_test_for_table",
+      "setup",
+      "exception_if_mldev",
+      "exception_if_vertex",
+      "snake_to_camel",
+      "camel_to_snake",
+      "get_value_ignore_key_case",
+      "camel_to_snake_all_keys"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_330_285151970b552c94_AI_Chariot_Legacy_666_1.0.0_20260508_pytest_helper.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 91,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\inductor_utils.py",
+  "name": "inductor_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1855,
+  "content_sha256": "5acc46182a3f33ca7a98aa8c331e7c16e216287f04bcb8e55dcb1fa10adc174c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 58,
+    "char_count": 1855,
+    "preview_lines": [
+      "import torch",
+      "import re",
+      "import unittest",
+      "from subprocess import CalledProcessError",
+      "from torch._inductor.codecache import CppCodeCache",
+      "from torch.utils._triton import has_triton",
+      "from torch.testing._internal.common_utils import (",
+      "    LazyVal,",
+      "    IS_FBCODE,",
+      ")"
+    ],
+    "imports": [
+      "import torch",
+      "import re",
+      "import unittest",
+      "from subprocess import CalledProcessError",
+      "from torch._inductor.codecache import CppCodeCache",
+      "from torch.utils._triton import has_triton",
+      "from torch.testing._internal.common_utils import (",
+      "from torch._dynamo.backends.registry import register_backend",
+      "from torch._inductor.compile_fx import compile_fx, count_bytes_inner",
+      "from torch.testing._internal.common_utils import TestCase"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cpu",
+      "count_bytes_inductor",
+      "_check_has_dynamic_shape",
+      "skipCUDAIf"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_091_5acc46182a3f33ca_inductor_utils.py.json"
+}

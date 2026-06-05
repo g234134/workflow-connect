@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_newstyle.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_newstyle.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 888,
+  "content_sha256": "efcb1acca3879bd0d4a0cc96e1576f42931766189c6d7ce8ad53d1841a5252b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 25,
+    "char_count": 888,
+    "preview_lines": [
+      "u\"\"\"",
+      "Fixer for \"class Foo: ...\" -> \"class Foo(object): ...\"",
+      "\"\"\"",
+      "from lib2to3 import fixer_base",
+      "from lib2to3.fixer_util import LParen, RParen, Name",
+      "from libfuturize.fixer_util import touch_import_top",
+      "def insert_object(node, idx):",
+      "    node.insert_child(idx, RParen())",
+      "    node.insert_child(idx, Name(u\"object\"))",
+      "    node.insert_child(idx, LParen())"
+    ],
+    "imports": [
+      "from lib2to3 import fixer_base",
+      "from lib2to3.fixer_util import LParen, RParen, Name",
+      "from libfuturize.fixer_util import touch_import_top"
+    ],
+    "classes": [
+      "FixNewstyle"
+    ],
+    "functions": [
+      "insert_object"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_092_efcb1acca3879bd0_AI_Chariot_Legacy_666_1.0.0_20260508_fix_newstyle.py.json"
+}

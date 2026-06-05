@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 77,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_injections.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_injections.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1286,
+  "content_sha256": "10e3468200543566954b08bcd7b0b32c16098244de845abcfa6f9076a7acf7ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 32,
+    "char_count": 1286,
+    "preview_lines": [
+      "\"\"\"Tests for functions that inject symbols into the global namespace. \"\"\"",
+      "from sympy.polys.rings import vring",
+      "from sympy.polys.fields import vfield",
+      "from sympy.polys.domains import QQ",
+      "def test_vring():",
+      "    ns = {'vring':vring, 'QQ':QQ}",
+      "    exec('R = vring(\"r\", QQ)', ns)",
+      "    exec('assert r == R.gens[0]', ns)",
+      "    exec('R = vring(\"rb rbb rcc rzz _rx\", QQ)', ns)",
+      "    exec('assert rb == R.gens[0]', ns)"
+    ],
+    "imports": [
+      "from sympy.polys.rings import vring",
+      "from sympy.polys.fields import vfield",
+      "from sympy.polys.domains import QQ"
+    ],
+    "classes": [],
+    "functions": [
+      "test_vring",
+      "test_vfield"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_077_10e3468200543566_AI_Chariot_Legacy_666_1.0.0_20260508_test_injections.py.json"
+}

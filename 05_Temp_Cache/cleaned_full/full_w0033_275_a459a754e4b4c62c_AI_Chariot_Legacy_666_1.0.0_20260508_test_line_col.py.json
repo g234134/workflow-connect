@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_line_col.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_line_col.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2210,
+  "content_sha256": "a459a754e4b4c62cbf914389fa106c5f1baf9584ed4c5b0261278aabec736a33",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 104,
+    "non_empty_lines": 92,
+    "char_count": 2210,
+    "preview_lines": [
+      "# coding: utf-8",
+      "import pytest  # NOQA",
+      "from .roundtrip import round_trip, dedent, round_trip_load, round_trip_dump  # NOQA",
+      "def load(s):",
+      "    return round_trip_load(dedent(s))",
+      "class TestLineCol:",
+      "    def test_item_00(self):",
+      "        data = load(",
+      "            \"\"\"",
+      "            - a"
+    ],
+    "imports": [
+      "import pytest  # NOQA",
+      "from .roundtrip import round_trip, dedent, round_trip_load, round_trip_dump  # NOQA"
+    ],
+    "classes": [
+      "TestLineCol"
+    ],
+    "functions": [
+      "load"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_275_a459a754e4b4c62c_AI_Chariot_Legacy_666_1.0.0_20260508_test_line_col.py.json"
+}

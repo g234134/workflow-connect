@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 282,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_trf_linear.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_trf_linear.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7891,
+  "content_sha256": "184306c8ca96c1a54b51aeec0a8f62c0399492e4fbe3aa1c8b588ae8a8e72500",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 249,
+    "non_empty_lines": 198,
+    "char_count": 7891,
+    "preview_lines": [
+      "\"\"\"The adaptation of Trust Region Reflective algorithm for a linear",
+      "least-squares problem.\"\"\"",
+      "import numpy as np",
+      "from numpy.linalg import norm",
+      "from scipy.linalg import qr, solve_triangular",
+      "from scipy.sparse.linalg import lsmr",
+      "from scipy.optimize import OptimizeResult",
+      "from .givens_elimination import givens_elimination",
+      "from .common import (",
+      "    EPS, step_size_to_bound, find_active_constraints, in_bounds,"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.linalg import norm",
+      "from scipy.linalg import qr, solve_triangular",
+      "from scipy.sparse.linalg import lsmr",
+      "from scipy.optimize import OptimizeResult",
+      "from .givens_elimination import givens_elimination",
+      "from .common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "regularized_lsq_with_qr",
+      "backtracking",
+      "select_step",
+      "trf_linear"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_282_184306c8ca96c1a5_AI_Chariot_Legacy_666_1.0.0_20260508_trf_linear.py.json"
+}

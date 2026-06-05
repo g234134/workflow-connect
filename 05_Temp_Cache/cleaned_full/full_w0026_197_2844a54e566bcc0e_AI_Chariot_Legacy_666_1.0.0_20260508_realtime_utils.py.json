@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_realtime_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_realtime_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 451,
+  "content_sha256": "2844a54e566bcc0efee5639b82b9b9bb6b3d9bc35ab23709b93d0721f4fa5a51",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 451,
+    "preview_lines": [
+      "from functools import lru_cache",
+      "from typing import Optional",
+      "from litellm.constants import _REALTIME_BODY_CACHE_SIZE",
+      "@lru_cache(maxsize=_REALTIME_BODY_CACHE_SIZE)",
+      "def _realtime_request_body(model: Optional[str]) -> bytes:",
+      "    \"\"\"",
+      "    Generate the realtime websocket request body. Cached with LRU semantics to avoid repeated",
+      "    string formatting work while keeping memory usage bounded.",
+      "    \"\"\"",
+      "    return f'{{\"model\": \"{model or \"\"}\"}}'.encode()"
+    ],
+    "imports": [
+      "from functools import lru_cache",
+      "from typing import Optional",
+      "from litellm.constants import _REALTIME_BODY_CACHE_SIZE"
+    ],
+    "classes": [],
+    "functions": [
+      "_realtime_request_body"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_197_2844a54e566bcc0e_AI_Chariot_Legacy_666_1.0.0_20260508_realtime_utils.py.json"
+}

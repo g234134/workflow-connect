@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_beamsearch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_beamsearch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3473,
+  "content_sha256": "567d14e16724f08092848006820bf7b55b505955b4001133fe1701b06aea97aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 71,
+    "char_count": 3473,
+    "preview_lines": [
+      "\"\"\"Basic algorithms for breadth-first searching the nodes of a graph.\"\"\"",
+      "import networkx as nx",
+      "__all__ = [\"bfs_beam_edges\"]",
+      "@nx._dispatchable",
+      "def bfs_beam_edges(G, source, value, width=None):",
+      "    \"\"\"Iterates over edges in a beam search.",
+      "    The beam search is a generalized breadth-first search in which only",
+      "    the \"best\" *w* neighbors of the current node are enqueued, where *w*",
+      "    is the beam width and \"best\" is an application-specific",
+      "    heuristic. In general, a beam search with a small beam width might"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "bfs_beam_edges"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_127_567d14e16724f080_AI_Chariot_Legacy_666_1.0.0_20260508_beamsearch.py.json"
+}

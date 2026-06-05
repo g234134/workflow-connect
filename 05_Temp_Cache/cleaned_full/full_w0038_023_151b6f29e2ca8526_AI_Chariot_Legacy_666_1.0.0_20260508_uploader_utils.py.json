@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 23,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_uploader_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_uploader_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19835,
+  "content_sha256": "151b6f29e2ca8526a417a2c61815e5c660ad193fdfb62c17b3ccfa40ae523902",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 537,
+    "non_empty_lines": 458,
+    "char_count": 19835,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "# Copyright 2021 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     https://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import abc",
+      "import contextlib",
+      "import json",
+      "import logging",
+      "import re",
+      "import time",
+      "from typing import Callable, Dict, Generator, List, Optional, Tuple",
+      "from absl import app",
+      "from google.api_core import exceptions",
+      "from google.cloud import storage",
+      "from google.cloud.aiplatform.compat.services import (",
+      "from google.cloud.aiplatform.compat.types import execution as gca_execution",
+      "from google.cloud.aiplatform.compat.types import tensorboard_run",
+      "from google.cloud.aiplatform.compat.types import tensorboard_service",
+      "from google.cloud.aiplatform.compat.types import tensorboard_time_series",
+      "from google.cloud.aiplatform.metadata import experiment_run_resource",
+      "from google.cloud.aiplatform.tensorboard import tensorboard_resource",
+      "import grpc",
+      "from tensorboard.util import tb_logging"
+    ],
+    "classes": [
+      "RateLimiter",
+      "ExistingResourceNotFoundError",
+      "RequestSender",
+      "OnePlatformResourceManager",
+      "TimeSeriesResourceManager"
+    ],
+    "functions": [
+      "reformat_run_name",
+      "get_source_bucket",
+      "request_logger",
+      "get_blob_storage_bucket_and_folder"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_023_151b6f29e2ca8526_AI_Chariot_Legacy_666_1.0.0_20260508_uploader_utils.py.json"
+}

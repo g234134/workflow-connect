@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 392,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_futures.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_futures.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14340,
+  "content_sha256": "f6daaf2a051fc61ea146811d7d4b4db1cac31d7f4777aa4d10617812d78bd943",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 430,
+    "non_empty_lines": 350,
+    "char_count": 14340,
+    "preview_lines": [
+      "\"\"\"A Future class similar to the one in PEP 3148.\"\"\"",
+      "__all__ = (",
+      "    'Future', 'wrap_future', 'isfuture',",
+      ")",
+      "import concurrent.futures",
+      "import contextvars",
+      "import logging",
+      "import sys",
+      "from types import GenericAlias",
+      "from . import base_futures"
+    ],
+    "imports": [
+      "import concurrent.futures",
+      "import contextvars",
+      "import logging",
+      "import sys",
+      "from types import GenericAlias",
+      "from . import base_futures",
+      "from . import events",
+      "from . import exceptions",
+      "from . import format_helpers"
+    ],
+    "classes": [
+      "Future"
+    ],
+    "functions": [
+      "_get_loop",
+      "_set_result_unless_cancelled",
+      "_convert_future_exc",
+      "_set_concurrent_future_state",
+      "_copy_future_state",
+      "_chain_future",
+      "wrap_future"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_392_f6daaf2a051fc61e_AI_Chariot_Legacy_666_1.0.0_20260508_futures.py.json"
+}

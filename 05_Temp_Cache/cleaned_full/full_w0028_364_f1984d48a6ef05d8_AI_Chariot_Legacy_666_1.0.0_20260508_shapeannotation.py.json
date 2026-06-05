@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 364,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_shapeannotation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_shapeannotation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9817,
+  "content_sha256": "f1984d48a6ef05d8cd5c2a89fb03f65f7fd3b57bf15d77bb1aec6fdd05a6ae51",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 246,
+    "non_empty_lines": 223,
+    "char_count": 9817,
+    "preview_lines": [
+      "# some functions defined here to avoid numpy import",
+      "def _mean(x):",
+      "    if len(x) == 0:",
+      "        raise ValueError(\"x must have positive length\")",
+      "    return float(sum(x)) / len(x)",
+      "def _argmin(x):",
+      "    return sorted(enumerate(x), key=lambda t: t[1])[0][0]",
+      "def _argmax(x):",
+      "    return sorted(enumerate(x), key=lambda t: t[1], reverse=True)[0][0]",
+      "def _df_anno(xanchor, yanchor, x, y):"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "_mean",
+      "_argmin",
+      "_argmax",
+      "_df_anno",
+      "_add_inside_to_position",
+      "_prepare_position",
+      "annotation_params_for_line",
+      "annotation_params_for_rect",
+      "axis_spanning_shape_annotation",
+      "split_dict_by_key_prefix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_364_f1984d48a6ef05d8_AI_Chariot_Legacy_666_1.0.0_20260508_shapeannotation.py.json"
+}

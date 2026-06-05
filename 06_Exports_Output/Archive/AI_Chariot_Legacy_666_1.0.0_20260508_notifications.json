@@ -1,0 +1,42 @@
+{
+	"notifications": [
+		{
+			"guid": "5a845e1f-9f50-41e4-b95e-63fdf12266e0",
+			"timestamp": 1777775480144,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"ephemeral": false,
+				"icon": "download",
+				"message": "Docker Desktop 4.71.0 is available.",
+				"actionText": "Download",
+				"action": {
+					"action": "update-available",
+					"params": {
+						"targetVersion": "4.71.0"
+					}
+				},
+				"type": "update"
+			}
+		},
+		{
+			"guid": "734efe78-034f-4deb-ba90-53a3b33bc403",
+			"timestamp": 1777775480165,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Sign in to share images and collaborate with your team",
+				"icon": "disconnected",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"ephemeral": false,
+				"title": "You are signed out",
+				"actionText": "Sign in",
+				"action": {
+					"action": "open-login",
+					"params": {}
+				}
+			}
+		}
+	]
+}

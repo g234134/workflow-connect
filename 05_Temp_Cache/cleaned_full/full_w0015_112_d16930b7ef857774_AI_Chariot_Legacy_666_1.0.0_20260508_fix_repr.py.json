@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 112,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_repr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_repr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 613,
+  "content_sha256": "d16930b7ef8577747cfef602aba854c64ce85d4ae1e54a18a456eaa202643e3d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 16,
+    "char_count": 613,
+    "preview_lines": [
+      "# Copyright 2006 Google, Inc. All Rights Reserved.",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "\"\"\"Fixer that transforms `xyzzy` into repr(xyzzy).\"\"\"",
+      "# Local imports",
+      "from .. import fixer_base",
+      "from ..fixer_util import Call, Name, parenthesize",
+      "class FixRepr(fixer_base.BaseFix):",
+      "    BM_compatible = True",
+      "    PATTERN = \"\"\"",
+      "              atom < '`' expr=any '`' >"
+    ],
+    "imports": [
+      "from .. import fixer_base",
+      "from ..fixer_util import Call, Name, parenthesize"
+    ],
+    "classes": [
+      "FixRepr"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_112_d16930b7ef857774_AI_Chariot_Legacy_666_1.0.0_20260508_fix_repr.py.json"
+}

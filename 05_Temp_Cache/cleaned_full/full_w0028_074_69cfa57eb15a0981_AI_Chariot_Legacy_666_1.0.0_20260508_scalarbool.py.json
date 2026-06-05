@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scalarbool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scalarbool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1571,
+  "content_sha256": "69cfa57eb15a0981e01ee5a68cd92f884a438f03241d7a7277822601a10848fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 38,
+    "char_count": 1571,
+    "preview_lines": [
+      "# coding: utf-8",
+      "from __future__ import print_function, absolute_import, division, unicode_literals",
+      "\"\"\"",
+      "You cannot subclass bool, and this is necessary for round-tripping anchored",
+      "bool values (and also if you want to preserve the original way of writing)",
+      "bool.__bases__ is type 'int', so that is what is used as the basis for ScalarBoolean as well.",
+      "You can use these in an if statement, but not when testing equivalence",
+      "\"\"\"",
+      "from .anchor import Anchor",
+      "if False:  # MYPY"
+    ],
+    "imports": [
+      "from __future__ import print_function, absolute_import, division, unicode_literals",
+      "from .anchor import Anchor",
+      "from typing import Text, Any, Dict, List  # NOQA"
+    ],
+    "classes": [
+      "ScalarBoolean"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_074_69cfa57eb15a0981_AI_Chariot_Legacy_666_1.0.0_20260508_scalarbool.py.json"
+}

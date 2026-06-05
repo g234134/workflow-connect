@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_task.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_task.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18750,
+  "content_sha256": "dd8a3609ad8bf08cdd1be7285fbc5e5d43608df92108879081e27c08030e11a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 585,
+    "non_empty_lines": 492,
+    "char_count": 18750,
+    "preview_lines": [
+      "\"\"\"A2A task utilities for server-side task management.\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import base64",
+      "from collections.abc import Callable, Coroutine",
+      "from datetime import datetime",
+      "from functools import wraps",
+      "import json",
+      "import logging",
+      "import os"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import base64",
+      "from collections.abc import Callable, Coroutine",
+      "from datetime import datetime",
+      "from functools import wraps",
+      "import json",
+      "import logging",
+      "import os",
+      "from typing import TYPE_CHECKING, Any, ParamSpec, TypeVar, cast",
+      "from urllib.parse import urlparse",
+      "from a2a.server.agent_execution import RequestContext",
+      "from a2a.server.events import EventQueue",
+      "from a2a.types import (",
+      "from a2a.utils import (",
+      "from a2a.utils.errors import ServerError",
+      "from aiocache import SimpleMemoryCache, caches  # type: ignore[import-untyped]",
+      "from pydantic import BaseModel",
+      "from typing_extensions import TypedDict",
+      "from crewai.a2a.utils.agent_card import _get_server_config"
+    ],
+    "classes": [
+      "RedisCacheConfig"
+    ],
+    "functions": [
+      "_parse_redis_url",
+      "cancellable",
+      "_convert_a2a_files_to_file_inputs",
+      "_extract_response_schema",
+      "_create_result_artifact",
+      "_build_task_description",
+      "list_tasks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_140_dd8a3609ad8bf08c_AI_Chariot_Legacy_666_1.0.0_20260508_task.py.json"
+}

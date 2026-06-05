@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 171,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\bundled_inputs.py",
+  "name": "bundled_inputs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22941,
+  "content_sha256": "236a8a1ba8e71f7d5d0d22136d09052500b0dfa386f7ab5085219981e9826530",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 471,
+    "non_empty_lines": 387,
+    "char_count": 22941,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "from typing import Any, TypeVar, Optional, Tuple, List, NamedTuple, Union, Sequence, Dict, Callable",
+      "import textwrap",
+      "import torch",
+      "from torch._C import TupleType, ListType",
+      "from torch.jit._recursive import wrap_cpp_module",
+      "T = TypeVar(\"T\")",
+      "MAX_RAW_TENSOR_SIZE = 16",
+      "class InflatableArg(NamedTuple):",
+      "    \"\"\"Helper type for bundled inputs."
+    ],
+    "imports": [
+      "from typing import Any, TypeVar, Optional, Tuple, List, NamedTuple, Union, Sequence, Dict, Callable",
+      "import textwrap",
+      "import torch",
+      "from torch._C import TupleType, ListType",
+      "from torch.jit._recursive import wrap_cpp_module"
+    ],
+    "classes": [
+      "InflatableArg"
+    ],
+    "functions": [
+      "bundle_inputs",
+      "augment_model_with_bundled_inputs",
+      "augment_many_model_functions_with_bundled_inputs",
+      "_inflate_expr",
+      "_get_bundled_inputs_attributes_and_methods",
+      "_get_inflate_helper_fn_name",
+      "bundle_randn",
+      "bundle_large_tensor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_171_236a8a1ba8e71f7d_bundled_inputs.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_checkpointing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_checkpointing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10699,
+  "content_sha256": "5c768d4669eb0117758b35c58d61a2e548d819ab3ee2fa9ac96e758c01c13c20",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 269,
+    "non_empty_lines": 233,
+    "char_count": 10699,
+    "preview_lines": [
+      "# Copyright 2022 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import argparse",
+      "import json",
+      "import os",
+      "import evaluate",
+      "import torch",
+      "from datasets import load_dataset",
+      "from torch.optim import AdamW",
+      "from torch.utils.data import DataLoader",
+      "from transformers import AutoModelForSequenceClassification, AutoTokenizer, get_linear_schedule_with_warmup, set_seed",
+      "from accelerate import Accelerator, DistributedType",
+      "from accelerate.utils.deepspeed import DummyOptim, DummyScheduler"
+    ],
+    "classes": [],
+    "functions": [
+      "get_dataloaders",
+      "evaluation_loop",
+      "training_function",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_167_5c768d4669eb0117_AI_Chariot_Legacy_666_1.0.0_20260508_test_checkpointing.py.json"
+}

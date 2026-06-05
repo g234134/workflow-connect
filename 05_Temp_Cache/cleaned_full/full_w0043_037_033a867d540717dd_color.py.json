@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\pydantic\\color.py",
+  "name": "color.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21481,
+  "content_sha256": "033a867d540717ddbf65cb4372e7b40cce324e9d8fead7a49304483535ab2c8a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 604,
+    "non_empty_lines": 509,
+    "char_count": 21481,
+    "preview_lines": [
+      "\"\"\"Color definitions are used as per the CSS3",
+      "[CSS Color Module Level 3](http://www.w3.org/TR/css3-color/#svg-color) specification.",
+      "A few colors have multiple names referring to the sames colors, eg. `grey` and `gray` or `aqua` and `cyan`.",
+      "In these cases the _last_ color when sorted alphabetically takes preferences,",
+      "eg. `Color((0, 255, 255)).as_named() == 'cyan'` because \"cyan\" comes after \"aqua\".",
+      "Warning: Deprecated",
+      "    The `Color` class is deprecated, use `pydantic_extra_types` instead.",
+      "    See [`pydantic-extra-types.Color`](../usage/types/extra_types/color_types.md)",
+      "    for more information.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import math",
+      "import re",
+      "from colorsys import hls_to_rgb, rgb_to_hls",
+      "from typing import Any, Callable, Optional, Union, cast",
+      "from pydantic_core import CoreSchema, PydanticCustomError, core_schema",
+      "from typing_extensions import deprecated",
+      "from ._internal import _repr",
+      "from ._internal._schema_generation_shared import GetJsonSchemaHandler as _GetJsonSchemaHandler",
+      "from .json_schema import JsonSchemaValue",
+      "from .warnings import PydanticDeprecatedSince20"
+    ],
+    "classes": [
+      "RGBA",
+      "Color"
+    ],
+    "functions": [
+      "parse_tuple",
+      "parse_str",
+      "ints_to_rgba",
+      "parse_color_value",
+      "parse_float_alpha",
+      "parse_hsl",
+      "float_to_255"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_037_033a867d540717dd_color.py.json"
+}

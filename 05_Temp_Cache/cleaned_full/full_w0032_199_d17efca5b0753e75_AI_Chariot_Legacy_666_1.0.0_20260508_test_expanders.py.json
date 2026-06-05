@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 199,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_expanders.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_expanders.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5602,
+  "content_sha256": "d17efca5b0753e75b8a716bb52f940e65ceaeaed1909f9ef30131826f2c7607d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 162,
+    "non_empty_lines": 118,
+    "char_count": 5602,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.generators.expanders` module.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "@pytest.mark.parametrize(\"n\", (2, 3, 5, 6, 10))",
+      "def test_margulis_gabber_galil_graph_properties(n):",
+      "    g = nx.margulis_gabber_galil_graph(n)",
+      "    assert g.number_of_nodes() == n * n",
+      "    for node in g:",
+      "        assert g.degree(node) == 8",
+      "        assert len(node) == 2"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_margulis_gabber_galil_graph_properties",
+      "test_margulis_gabber_galil_graph_eigvals",
+      "test_chordal_cycle_graph",
+      "test_paley_graph",
+      "test_maybe_regular_expander",
+      "test_is_regular_expander",
+      "test_random_regular_expander",
+      "test_random_regular_expander_explicit_construction",
+      "test_margulis_gabber_galil_graph_badinput",
+      "test_chordal_cycle_graph_badinput",
+      "test_paley_graph_badinput",
+      "test_maybe_regular_expander_badinput",
+      "test_is_regular_expander_badinput",
+      "test_random_regular_expander_badinput"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_199_d17efca5b0753e75_AI_Chariot_Legacy_666_1.0.0_20260508_test_expanders.py.json"
+}

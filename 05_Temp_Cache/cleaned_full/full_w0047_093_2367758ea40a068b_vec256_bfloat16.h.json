@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec256\\vec256_bfloat16.h",
+  "name": "vec256_bfloat16.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 40211,
+  "content_sha256": "2367758ea40a068bfb258a93161d4ae1f41f41546782ab221453bec81208e9bc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1090,
+    "non_empty_lines": 1022,
+    "char_count": 40211,
+    "preview_lines": [
+      "#pragma once",
+      "// DO NOT DEFINE STATIC DATA IN THIS HEADER!",
+      "// See Note [Do not compile initializers with AVX]",
+      "#include <ATen/cpu/vec/intrinsics.h>",
+      "#include <ATen/cpu/vec/vec_base.h>",
+      "#include <c10/util/irange.h>",
+      "#if defined(CPU_CAPABILITY_AVX2) && !defined(_MSC_VER)",
+      "#include <sleef.h>",
+      "#endif",
+      "#pragma GCC diagnostic push"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_093_2367758ea40a068b_vec256_bfloat16.h.json"
+}

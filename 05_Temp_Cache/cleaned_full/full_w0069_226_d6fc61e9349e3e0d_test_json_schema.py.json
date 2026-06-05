@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\evaluation\\parsing\\test_json_schema.py",
+  "name": "test_json_schema.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2510,
+  "content_sha256": "d6fc61e9349e3e0da809ee600ff89effafd47b4a6069cc5e04a79c5cad46ff4c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 65,
+    "char_count": 2507,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_classic.evaluation.parsing.json_schema import JsonSchemaEvaluator",
+      "@pytest.fixture",
+      "def json_schema_evaluator() -> JsonSchemaEvaluator:",
+      "    return JsonSchemaEvaluator()",
+      "@pytest.mark.requires(\"jsonschema\")",
+      "def test_json_schema_evaluator_requires_input(",
+      "    json_schema_evaluator: JsonSchemaEvaluator,",
+      ") -> None:",
+      "    assert json_schema_evaluator.requires_input is False"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_classic.evaluation.parsing.json_schema import JsonSchemaEvaluator"
+    ],
+    "classes": [],
+    "functions": [
+      "json_schema_evaluator",
+      "test_json_schema_evaluator_requires_input",
+      "test_json_schema_evaluator_requires_reference",
+      "test_json_schema_evaluator_evaluation_name",
+      "test_json_schema_evaluator_valid_prediction",
+      "test_json_schema_evaluator_invalid_prediction",
+      "test_json_schema_evaluator_missing_property"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_226_d6fc61e9349e3e0d_test_json_schema.py.json"
+}

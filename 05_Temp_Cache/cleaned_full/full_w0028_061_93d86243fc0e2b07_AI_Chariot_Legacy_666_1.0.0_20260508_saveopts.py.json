@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 61,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_saveopts.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_saveopts.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 678,
+  "content_sha256": "93d86243fc0e2b07975a0056579e3c3c84a614a7d82645765c7862f767a3cf9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 678,
+    "preview_lines": [
+      "from setuptools.command.setopt import edit_config, option_base",
+      "class saveopts(option_base):",
+      "    \"\"\"Save command-line options to a file\"\"\"",
+      "    description = \"save supplied options to setup.cfg or other config file\"",
+      "    def run(self) -> None:",
+      "        dist = self.distribution",
+      "        settings: dict[str, dict[str, str]] = {}",
+      "        for cmd in dist.command_options:",
+      "            if cmd == 'saveopts':",
+      "                continue  # don't save our own options!"
+    ],
+    "imports": [
+      "from setuptools.command.setopt import edit_config, option_base"
+    ],
+    "classes": [
+      "saveopts"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_061_93d86243fc0e2b07_AI_Chariot_Legacy_666_1.0.0_20260508_saveopts.py.json"
+}

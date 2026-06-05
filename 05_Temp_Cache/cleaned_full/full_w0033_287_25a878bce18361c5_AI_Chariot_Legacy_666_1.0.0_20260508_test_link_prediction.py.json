@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 287,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_link_prediction.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_link_prediction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20004,
+  "content_sha256": "25a878bce18361c59a3d297f886fb47ce5e786ee68f1feb071f6a44665ae5fb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 586,
+    "non_empty_lines": 484,
+    "char_count": 20004,
+    "preview_lines": [
+      "import math",
+      "from functools import partial",
+      "import pytest",
+      "import networkx as nx",
+      "def _test_func(G, ebunch, expected, predict_func, **kwargs):",
+      "    result = predict_func(G, ebunch, **kwargs)",
+      "    exp_dict = {tuple(sorted([u, v])): score for u, v, score in expected}",
+      "    res_dict = {tuple(sorted([u, v])): score for u, v, score in result}",
+      "    assert len(exp_dict) == len(res_dict)",
+      "    for p in exp_dict:"
+    ],
+    "imports": [
+      "import math",
+      "from functools import partial",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestResourceAllocationIndex",
+      "TestJaccardCoefficient",
+      "TestAdamicAdarIndex",
+      "TestCommonNeighborCentrality",
+      "TestPreferentialAttachment",
+      "TestCNSoundarajanHopcroft",
+      "TestRAIndexSoundarajanHopcroft",
+      "TestWithinInterCluster"
+    ],
+    "functions": [
+      "_test_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_287_25a878bce18361c5_AI_Chariot_Legacy_666_1.0.0_20260508_test_link_prediction.py.json"
+}

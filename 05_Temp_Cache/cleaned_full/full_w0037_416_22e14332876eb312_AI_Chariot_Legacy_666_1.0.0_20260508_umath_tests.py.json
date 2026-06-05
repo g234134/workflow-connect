@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 416,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_umath_tests.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_umath_tests.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 402,
+  "content_sha256": "22e14332876eb3123a8f9424f955981d1643204f34e9dcef8eed2a625bf099f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 10,
+    "char_count": 402,
+    "preview_lines": [
+      "\"\"\"",
+      "Shim for _umath_tests to allow a deprecation period for the new name.",
+      "\"\"\"",
+      "import warnings",
+      "# 2018-04-04, numpy 1.15.0",
+      "warnings.warn((\"numpy.core.umath_tests is an internal NumPy \"",
+      "               \"module and should not be imported. It will \"",
+      "               \"be removed in a future NumPy release.\"),",
+      "              category=DeprecationWarning, stacklevel=2)",
+      "from ._umath_tests import *"
+    ],
+    "imports": [
+      "import warnings",
+      "from ._umath_tests import *"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_416_22e14332876eb312_AI_Chariot_Legacy_666_1.0.0_20260508_umath_tests.py.json"
+}

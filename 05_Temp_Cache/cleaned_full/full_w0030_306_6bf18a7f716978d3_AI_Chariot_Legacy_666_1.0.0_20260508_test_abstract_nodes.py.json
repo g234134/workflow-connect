@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 306,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_abstract_nodes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_abstract_nodes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 451,
+  "content_sha256": "6bf18a7f716978d37ccdf31cf95f00692ad0b44235a222df24e728d952a248a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 12,
+    "char_count": 451,
+    "preview_lines": [
+      "from sympy.core.symbol import symbols",
+      "from sympy.codegen.abstract_nodes import List",
+      "def test_List():",
+      "    l = List(2, 3, 4)",
+      "    assert l == List(2, 3, 4)",
+      "    assert str(l) == \"[2, 3, 4]\"",
+      "    x, y, z = symbols('x y z')",
+      "    l = List(x**2,y**3,z**4)",
+      "    # contrary to python's built-in list, we can call e.g. \"replace\" on List.",
+      "    m = l.replace(lambda arg: arg.is_Pow and arg.exp>2, lambda p: p.base-p.exp)"
+    ],
+    "imports": [
+      "from sympy.core.symbol import symbols",
+      "from sympy.codegen.abstract_nodes import List"
+    ],
+    "classes": [],
+    "functions": [
+      "test_List"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_306_6bf18a7f716978d3_AI_Chariot_Legacy_666_1.0.0_20260508_test_abstract_nodes.py.json"
+}

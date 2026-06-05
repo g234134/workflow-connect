@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 32,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generative_ai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generative_ai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1507,
+  "content_sha256": "f9e478294c2106c2f8ae01e407280e6470aec6d894a7a6a2080b9a20cae4100d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 43,
+    "non_empty_lines": 37,
+    "char_count": 1507,
+    "preview_lines": [
+      "\"\"\"Google Generative AI embeddings provider.\"\"\"",
+      "from typing import Literal",
+      "from chromadb.utils.embedding_functions.google_embedding_function import (",
+      "    GoogleGenerativeAiEmbeddingFunction,",
+      ")",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider",
+      "class GenerativeAiProvider(BaseEmbeddingsProvider[GoogleGenerativeAiEmbeddingFunction]):",
+      "    \"\"\"Google Generative AI embeddings provider.\"\"\"",
+      "    embedding_callable: type[GoogleGenerativeAiEmbeddingFunction] = Field("
+    ],
+    "imports": [
+      "from typing import Literal",
+      "from chromadb.utils.embedding_functions.google_embedding_function import (",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider"
+    ],
+    "classes": [
+      "GenerativeAiProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_032_f9e478294c2106c2_AI_Chariot_Legacy_666_1.0.0_20260508_generative_ai.py.json"
+}

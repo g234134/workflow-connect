@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 412,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_yaml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_yaml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1031,
+  "content_sha256": "13fb01b745636e1a45caed4b302806db3d59b57eba0b26a3f989130a37534469",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 25,
+    "char_count": 1031,
+    "preview_lines": [
+      "\"\"\"Yaml utilities.\"\"\"",
+      "from __future__ import annotations",
+      "from pathlib import Path, PurePath",
+      "from typing import Any",
+      "from yaml import dump as ydump",
+      "from yaml import load as yload",
+      "try:",
+      "    from yaml import CSafeDumper as SafeDumper",
+      "    from yaml import CSafeLoader as SafeLoader",
+      "except ImportError:  # pragma: no cover"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from pathlib import Path, PurePath",
+      "from typing import Any",
+      "from yaml import dump as ydump",
+      "from yaml import load as yload",
+      "from yaml import CSafeDumper as SafeDumper",
+      "from yaml import CSafeLoader as SafeLoader",
+      "from yaml import SafeDumper, SafeLoader  # type:ignore[assignment]"
+    ],
+    "classes": [],
+    "functions": [
+      "loads",
+      "dumps",
+      "load",
+      "dump"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_412_13fb01b745636e1a_AI_Chariot_Legacy_666_1.0.0_20260508_yaml.py.json"
+}

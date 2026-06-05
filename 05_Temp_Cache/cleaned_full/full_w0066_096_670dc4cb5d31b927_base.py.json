@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\prompts\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16892,
+  "content_sha256": "670dc4cb5d31b92794ea4aafdcce8ffa151983dc2f33845b2968cb4372b24015",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 478,
+    "non_empty_lines": 389,
+    "char_count": 16889,
+    "preview_lines": [
+      "\"\"\"Base class for prompt templates.\"\"\"",
+      "from __future__ import annotations",
+      "import builtins  # noqa: TC003",
+      "import contextlib",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Mapping  # noqa: TC003",
+      "from functools import cached_property",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Any, Generic, TypeVar, cast"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import builtins  # noqa: TC003",
+      "import contextlib",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Mapping  # noqa: TC003",
+      "from functools import cached_property",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Any, Generic, TypeVar, cast",
+      "import yaml",
+      "from pydantic import BaseModel, ConfigDict, Field, model_validator",
+      "from typing_extensions import Self, override",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.exceptions import ErrorCode, create_message",
+      "from langchain_core.load import dumpd",
+      "from langchain_core.output_parsers.base import BaseOutputParser  # noqa: TC001",
+      "from langchain_core.prompt_values import (",
+      "from langchain_core.runnables import RunnableConfig, RunnableSerializable",
+      "from langchain_core.runnables.config import ensure_config",
+      "from langchain_core.utils.pydantic import create_model_v2"
+    ],
+    "classes": [
+      "BasePromptTemplate"
+    ],
+    "functions": [
+      "_get_document_info",
+      "format_document"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_096_670dc4cb5d31b927_base.py.json"
+}

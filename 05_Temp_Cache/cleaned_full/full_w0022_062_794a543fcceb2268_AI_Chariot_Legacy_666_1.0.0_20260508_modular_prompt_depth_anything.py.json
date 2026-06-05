@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_prompt_depth_anything.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_prompt_depth_anything.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13003,
+  "content_sha256": "794a543fcceb22688b472514cce15ce368678409df2100ee6d4cc6762c2390bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 328,
+    "non_empty_lines": 265,
+    "char_count": 13003,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Team. All rights reserved.",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,",
+      "# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+    ],
+    "imports": [
+      "import torch",
+      "import torch.nn as nn",
+      "from ...modeling_outputs import DepthEstimatorOutput",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...processing_utils import Unpack",
+      "from ...utils import TransformersKwargs, auto_docstring",
+      "from ...utils.generic import merge_with_config_defaults, torch_int",
+      "from ...utils.output_capturing import capture_outputs",
+      "from ..depth_anything.configuration_depth_anything import DepthAnythingConfig",
+      "from ..depth_anything.modeling_depth_anything import ("
+    ],
+    "classes": [
+      "PromptDepthAnythingConfig",
+      "PromptDepthAnythingLayer",
+      "PromptDepthAnythingFeatureFusionLayer",
+      "PromptDepthAnythingFeatureFusionStage",
+      "PromptDepthAnythingDepthEstimationHead",
+      "PromptDepthAnythingPreTrainedModel",
+      "PromptDepthAnythingReassembleLayer",
+      "PromptDepthAnythingReassembleStage",
+      "PromptDepthAnythingNeck",
+      "PromptDepthAnythingForDepthEstimation"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_062_794a543fcceb2268_AI_Chariot_Legacy_666_1.0.0_20260508_modular_prompt_depth_anything.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 165,
+  "generated_at": "2026-05-08T18:47:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\_core\\overrides.pyi",
+  "name": "overrides.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 1777,
+  "content_sha256": "ca258ce38a45f723c99f7f9539e6e3c6dc14d16f4fc87574431080da5903acc4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 37,
+    "char_count": 1777,
+    "preview_lines": [
+      "from collections.abc import Callable, Iterable",
+      "from typing import Any, Final, NamedTuple, ParamSpec, TypeAlias, TypeVar",
+      "from numpy._utils import set_module as set_module",
+      "_T = TypeVar(\"_T\")",
+      "_Tss = ParamSpec(\"_Tss\")",
+      "_FuncLikeT = TypeVar(\"_FuncLikeT\", bound=type | Callable[..., object])",
+      "_Dispatcher: TypeAlias = Callable[_Tss, Iterable[object]]",
+      "###",
+      "ARRAY_FUNCTIONS: set[Callable[..., Any]] = ...",
+      "array_function_like_doc: Final[str] = ..."
+    ],
+    "imports": [
+      "from collections.abc import Callable, Iterable",
+      "from typing import Any, Final, NamedTuple, ParamSpec, TypeAlias, TypeVar",
+      "from numpy._utils import set_module as set_module"
+    ],
+    "classes": [
+      "ArgSpec"
+    ],
+    "functions": [
+      "get_array_function_like_doc",
+      "finalize_array_function_like",
+      "verify_matching_signatures",
+      "array_function_dispatch",
+      "array_function_from_dispatcher"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_165_ca258ce38a45f723_overrides.pyi.json"
+}

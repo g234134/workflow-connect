@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_localized_names.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_localized_names.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2215,
+  "content_sha256": "f125573a6f18db20c5334e8299f3674d69937368cbe8827c5bc62f68085f723c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 51,
+    "char_count": 2215,
+    "preview_lines": [
+      "# A Python port of the MS knowledge base article Q157234",
+      "# \"How to deal with localized and renamed user and group names\"",
+      "# https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/157234",
+      "import sys",
+      "import pywintypes",
+      "from ntsecuritycon import (",
+      "    DOMAIN_ALIAS_RID_ADMINS,",
+      "    DOMAIN_USER_RID_ADMIN,",
+      "    SECURITY_BUILTIN_DOMAIN_RID,",
+      "    SECURITY_NT_AUTHORITY,"
+    ],
+    "imports": [
+      "import sys",
+      "import pywintypes",
+      "from ntsecuritycon import (",
+      "from win32net import NetUserModalsGet",
+      "from win32security import LookupAccountSid"
+    ],
+    "classes": [],
+    "functions": [
+      "LookupAliasFromRid",
+      "LookupUserGroupFromRid",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_340_f125573a6f18db20_AI_Chariot_Legacy_666_1.0.0_20260508_localized_names.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\messages\\block_translators\\bedrock_converse.py",
+  "name": "bedrock_converse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12844,
+  "content_sha256": "c3801ce0551dc0009860feefd58c72a493cf121e175bd3fad8556d1322c13e01",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 319,
+    "non_empty_lines": 263,
+    "char_count": 12841,
+    "preview_lines": [
+      "\"\"\"Derivations of standard content blocks from Amazon (Bedrock Converse) content.\"\"\"",
+      "import base64",
+      "from collections.abc import Iterator",
+      "from typing import Any, cast",
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_core.messages import content as types",
+      "def _bytes_to_b64_str(bytes_: bytes) -> str:",
+      "    return base64.b64encode(bytes_).decode(\"utf-8\")",
+      "def _populate_extras(",
+      "    standard_block: types.ContentBlock, block: dict[str, Any], known_fields: set[str]"
+    ],
+    "imports": [
+      "import base64",
+      "from collections.abc import Iterator",
+      "from typing import Any, cast",
+      "from langchain_core.messages import AIMessage, AIMessageChunk",
+      "from langchain_core.messages import content as types"
+    ],
+    "classes": [],
+    "functions": [
+      "_bytes_to_b64_str",
+      "_populate_extras",
+      "_convert_to_v1_from_converse_input",
+      "_convert_citation_to_v1",
+      "_convert_to_v1_from_converse",
+      "translate_content",
+      "translate_content_chunk",
+      "_register_bedrock_converse_translator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_063_c3801ce0551dc000_bedrock_converse.py.json"
+}

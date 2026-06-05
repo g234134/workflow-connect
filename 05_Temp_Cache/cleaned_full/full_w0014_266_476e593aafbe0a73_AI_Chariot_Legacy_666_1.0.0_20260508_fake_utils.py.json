@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 266,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fake_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fake_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7585,
+  "content_sha256": "476e593aafbe0a73b27bd5a6012b573b729a2fceea9542a423629f74000f2f56",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 197,
+    "non_empty_lines": 173,
+    "char_count": 7585,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._ops import OpOverload",
+      "from torch._subclasses.fake_tensor import (",
+      "    FakeTensorMode,",
+      "    tree_flatten_only,"
+    ],
+    "imports": [
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._ops import OpOverload",
+      "from torch._subclasses.fake_tensor import (",
+      "from torch.utils._python_dispatch import TorchDispatchMode",
+      "from torch.fx.experimental.symbolic_shapes import ShapeEnv"
+    ],
+    "classes": [
+      "CrossRefFakeMode"
+    ],
+    "functions": [
+      "outputs_alias_inputs",
+      "outputs_are_inputs",
+      "output_alias_each_other",
+      "is_sdpa_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_266_476e593aafbe0a73_AI_Chariot_Legacy_666_1.0.0_20260508_fake_utils.py.json"
+}

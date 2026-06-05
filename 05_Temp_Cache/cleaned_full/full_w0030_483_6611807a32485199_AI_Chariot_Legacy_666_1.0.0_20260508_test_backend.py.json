@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 483,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_backend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_backend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3419,
+  "content_sha256": "6611807a324851995088dbe228dc78aa676b463733de3575d1691697f09cab6e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 70,
+    "char_count": 3419,
+    "preview_lines": [
+      "import sys",
+      "import types",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas",
+      "pytestmark = pytest.mark.single_cpu",
+      "@pytest.fixture",
+      "def dummy_backend():",
+      "    db = types.ModuleType(\"pandas_dummy_backend\")",
+      "    setattr(db, \"plot\", lambda *args, **kwargs: \"used_dummy\")"
+    ],
+    "imports": [
+      "import sys",
+      "import types",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas"
+    ],
+    "classes": [],
+    "functions": [
+      "dummy_backend",
+      "restore_backend",
+      "test_backend_is_not_module",
+      "test_backend_is_correct",
+      "test_backend_can_be_set_in_plot_call",
+      "test_register_entrypoint",
+      "test_setting_backend_without_plot_raises",
+      "test_no_matplotlib_ok",
+      "test_extra_kinds_ok"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_483_6611807a32485199_AI_Chariot_Legacy_666_1.0.0_20260508_test_backend.py.json"
+}

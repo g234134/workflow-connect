@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__base_connection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__base_connection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5568,
+  "content_sha256": "4f57301f7461cecac187a073dc03865436e846c13bbde8a3a993d75d04d1d918",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 165,
+    "non_empty_lines": 136,
+    "char_count": 5568,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import typing",
+      "from .util.connection import _TYPE_SOCKET_OPTIONS",
+      "from .util.timeout import _DEFAULT_TIMEOUT, _TYPE_TIMEOUT",
+      "from .util.url import Url",
+      "_TYPE_BODY = typing.Union[bytes, typing.IO[typing.Any], typing.Iterable[bytes], str]",
+      "class ProxyConfig(typing.NamedTuple):",
+      "    ssl_context: ssl.SSLContext | None",
+      "    use_forwarding_for_https: bool",
+      "    assert_hostname: None | str | typing.Literal[False]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing",
+      "from .util.connection import _TYPE_SOCKET_OPTIONS",
+      "from .util.timeout import _DEFAULT_TIMEOUT, _TYPE_TIMEOUT",
+      "from .util.url import Url",
+      "import ssl",
+      "from typing import Protocol",
+      "from .response import BaseHTTPResponse"
+    ],
+    "classes": [
+      "ProxyConfig",
+      "_ResponseOptions"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_136_4f57301f7461ceca_AI_Chariot_Legacy_666_1.0.0_20260508__base_connection.py.json"
+}

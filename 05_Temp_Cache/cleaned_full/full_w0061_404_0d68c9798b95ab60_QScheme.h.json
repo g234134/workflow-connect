@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 404,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\QScheme.h",
+  "name": "QScheme.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 583,
+  "content_sha256": "0d68c9798b95ab600e2d41b3373ba23ede36e2d073060b0459f576b4c0c9a48e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 16,
+    "char_count": 583,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/python_headers.h>",
+      "#include <c10/core/QScheme.h>",
+      "#include <string>",
+      "constexpr int QSCHEME_NAME_LEN = 64;",
+      "struct THPQScheme {",
+      "  PyObject_HEAD at::QScheme qscheme;",
+      "  // NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays,modernize-avoid-c-arrays)",
+      "  char name[QSCHEME_NAME_LEN + 1];",
+      "};"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_404_0d68c9798b95ab60_QScheme.h.json"
+}

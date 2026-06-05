@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vertex_and_google_ai_studio_gemini.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vertex_and_google_ai_studio_gemini.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 123140,
+  "content_sha256": "b5e8a7b1663a4727d607d3661fd6f5d3f0e912145e62a3966e42fada332a199c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 3014,
+    "non_empty_lines": 2697,
+    "char_count": 123138,
+    "preview_lines": [
+      "# What is this?",
+      "## httpx client for vertex ai calls",
+      "## Initial implementation - covers gemini + image gen calls",
+      "import json",
+      "import time",
+      "from copy import deepcopy",
+      "from functools import partial",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,"
+    ],
+    "imports": [
+      "import json",
+      "import time",
+      "from copy import deepcopy",
+      "from functools import partial",
+      "from typing import (",
+      "import httpx  # type: ignore",
+      "import litellm",
+      "import litellm.litellm_core_utils",
+      "import litellm.litellm_core_utils.litellm_logging",
+      "from litellm import verbose_logger",
+      "from litellm._uuid import uuid",
+      "from litellm.constants import (",
+      "from litellm.litellm_core_utils.prompt_templates.factory import (",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig, BaseLLMException",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.llms.anthropic import AnthropicThinkingParam",
+      "from litellm.types.llms.gemini import BidiGenerateContentServerMessage",
+      "from litellm.types.llms.openai import (",
+      "from litellm.types.llms.vertex_ai import (",
+      "from litellm.types.utils import ("
+    ],
+    "classes": [
+      "VertexAIBaseConfig",
+      "VertexGeminiConfig",
+      "VertexLLM",
+      "ModelResponseIterator"
+    ],
+    "functions": [
+      "make_sync_call"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_409_b5e8a7b1663a4727_AI_Chariot_Legacy_666_1.0.0_20260508_vertex_and_google_ai_studio_gemini.py.json"
+}

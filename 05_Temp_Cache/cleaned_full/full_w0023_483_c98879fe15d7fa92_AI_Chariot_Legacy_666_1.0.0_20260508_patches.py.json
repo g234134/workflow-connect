@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 483,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_patches.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_patches.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10146,
+  "content_sha256": "c98879fe15d7fa921bf07c88b37eccc020fabd44de47dea0b317785b537e9a4c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 189,
+    "char_count": 10146,
+    "preview_lines": [
+      "import inspect",
+      "import sys",
+      "from .__wrapt__ import FunctionWrapper",
+      "# Helper functions for applying wrappers to existing functions.",
+      "def resolve_path(target, name):",
+      "    \"\"\"",
+      "    Resolves the dotted path supplied as `name` to an attribute on a target",
+      "    object. The `target` can be a module, class, or instance of a class. If the",
+      "    `target` argument is a string, it is assumed to be the name of a module,",
+      "    which will be imported if necessary and then used as the target object."
+    ],
+    "imports": [
+      "import inspect",
+      "import sys",
+      "from .__wrapt__ import FunctionWrapper"
+    ],
+    "classes": [
+      "AttributeWrapper"
+    ],
+    "functions": [
+      "resolve_path",
+      "apply_patch",
+      "wrap_object",
+      "wrap_object_attribute",
+      "function_wrapper",
+      "wrap_function_wrapper",
+      "patch_function_wrapper",
+      "transient_function_wrapper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_483_c98879fe15d7fa92_AI_Chariot_Legacy_666_1.0.0_20260508_patches.py.json"
+}

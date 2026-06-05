@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 375,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_img_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_img_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15127,
+  "content_sha256": "0f87e597ebe3c8f47cc39bd8cfa7d09c1413dd492dcdf305432515d6c97a47fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 397,
+    "non_empty_lines": 319,
+    "char_count": 15127,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "#",
+      "# Portions derived from  https://github.com/microsoft/autogen are under the MIT License.",
+      "# SPDX-License-Identifier: MIT",
+      "import base64",
+      "import copy",
+      "import os",
+      "import re"
+    ],
+    "imports": [
+      "import base64",
+      "import copy",
+      "import os",
+      "import re",
+      "from io import BytesIO",
+      "from math import ceil",
+      "from typing import Any, Union",
+      "import requests",
+      "from ...import_utils import optional_import_block, require_optional_import",
+      "from .. import utils",
+      "from PIL import Image"
+    ],
+    "classes": [],
+    "functions": [
+      "get_pil_image",
+      "get_image_data",
+      "llava_formatter",
+      "pil_to_data_uri",
+      "convert_base64_to_data_uri",
+      "gpt4v_formatter",
+      "extract_img_paths",
+      "_to_pil",
+      "message_formatter_pil_to_b64",
+      "num_tokens_from_gpt_image"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_375_0f87e597ebe3c8f4_AI_Chariot_Legacy_666_1.0.0_20260508_img_utils.py.json"
+}

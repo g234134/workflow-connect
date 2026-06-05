@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_exa.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_exa.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11271,
+  "content_sha256": "fc828205716ce384d4b88a03c39749e873da81f8ffa6835e0c0a8af5b0870d95",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 263,
+    "char_count": 11271,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from collections.abc import Iterable, Sequence",
+      "from dataclasses import dataclass, field",
+      "from typing import Annotated, Any, Literal, TypeAlias",
+      "from exa_py import Exa",
+      "from pydantic import Field",
+      "from autogen.beta.annotations import Context, Variable",
+      "from autogen.beta.events import ToolResult"
+    ],
+    "imports": [
+      "from collections.abc import Iterable, Sequence",
+      "from dataclasses import dataclass, field",
+      "from typing import Annotated, Any, Literal, TypeAlias",
+      "from exa_py import Exa",
+      "from pydantic import Field",
+      "from autogen.beta.annotations import Context, Variable",
+      "from autogen.beta.events import ToolResult",
+      "from autogen.beta.middleware import ToolMiddleware",
+      "from autogen.beta.tools.builtin._resolve import resolve_variable",
+      "from autogen.beta.tools.final import Toolkit, tool",
+      "from autogen.beta.tools.final.function_tool import FunctionTool"
+    ],
+    "classes": [
+      "ExaSearchResult",
+      "ExaSearchResponse",
+      "ExaContentResult",
+      "ExaAnswerCitation",
+      "ExaAnswerResult",
+      "ExaToolkit"
+    ],
+    "functions": [
+      "_clean"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_089_fc828205716ce384_AI_Chariot_Legacy_666_1.0.0_20260508_exa.py.json"
+}

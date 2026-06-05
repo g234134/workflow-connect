@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 38,
+  "generated_at": "2026-05-08T18:45:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_input_output_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_input_output_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21109,
+  "content_sha256": "ba594546521a2ad7ffa57740ac68be932eb01961e47467a308d1fa596f6d3017",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 493,
+    "non_empty_lines": 442,
+    "char_count": 21109,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"",
+      "This module is one of the analysis modules - it takes as input a function or graph",
+      "and some preexisting properties, and returns some data that is useful for deciding",
+      "how to further proceed with compilation or construct runtime wrappers.",
+      "In particular, the following analyses are provided:",
+      "1. Refine the view and mutation metadata collected previously - removing duplicate",
+      "   inputs or mapping views to their bases.",
+      "2. We also analyze the function signature for export graphs.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import itertools",
+      "from typing import Any, Dict, List, Optional, Tuple, Union",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch import Tensor",
+      "from torch._subclasses.functional_tensor import FunctionalTensor",
+      "from torch.fx.experimental.symbolic_shapes import is_concrete_int",
+      "from .. import config",
+      "from .collect_metadata_analysis import coerce_tangent",
+      "from .schemas import (",
+      "from .utils import strict_zip"
+    ],
+    "classes": [],
+    "functions": [
+      "remove_dupe_metadata",
+      "create_synthetic_base_metadata",
+      "_get_last_mem_address",
+      "_tensors_definitely_do_not_overlap",
+      "compute_overlapping_inputs",
+      "_graph_input_names",
+      "_graph_output_names",
+      "create_graph_signature"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_038_ba594546521a2ad7_AI_Chariot_Legacy_666_1.0.0_20260508_input_output_analysis.py.json"
+}

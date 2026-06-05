@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\device_interface.py",
+  "name": "device_interface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6653,
+  "content_sha256": "f496759264d42ee3a3c0812a79d7ac671db62afad7e10b716c2382e10573f2ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 191,
+    "non_empty_lines": 145,
+    "char_count": 6653,
+    "preview_lines": [
+      "import inspect",
+      "from typing import Any, Callable, Dict, Iterable, Optional, Tuple, Type, Union",
+      "import torch",
+      "from torch._streambase import _EventBase, _StreamBase",
+      "get_cuda_stream: Optional[Callable[[int], int]]",
+      "if torch.cuda._is_compiled():",
+      "    from torch._C import _cuda_getCurrentRawStream as get_cuda_stream",
+      "else:",
+      "    get_cuda_stream = None",
+      "_device_t = Union[torch.device, str, int, None]"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Any, Callable, Dict, Iterable, Optional, Tuple, Type, Union",
+      "import torch",
+      "from torch._streambase import _EventBase, _StreamBase",
+      "from torch._C import _cuda_getCurrentRawStream as get_cuda_stream"
+    ],
+    "classes": [
+      "DeviceInterfaceMeta",
+      "DeviceInterface",
+      "CudaInterface"
+    ],
+    "functions": [
+      "register_interface_for_device",
+      "get_interface_for_device",
+      "get_registered_device_interfaces"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_441_f496759264d42ee3_device_interface.py.json"
+}

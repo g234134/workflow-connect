@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 283,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pocketfft.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pocketfft.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25035,
+  "content_sha256": "9bdf074a3f5db872cfd880713979650c28fef7684dc421e0c455d7b84c60aa62",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 589,
+    "non_empty_lines": 523,
+    "char_count": 25035,
+    "preview_lines": [
+      "import queue",
+      "import threading",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.random import random",
+      "from numpy.testing import IS_WASM, assert_allclose, assert_array_equal, assert_raises",
+      "def fft1(x):",
+      "    L = len(x)",
+      "    phase = -2j * np.pi * (np.arange(L) / L)",
+      "    phase = np.arange(L).reshape(-1, 1) * phase"
+    ],
+    "imports": [
+      "import queue",
+      "import threading",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.random import random",
+      "from numpy.testing import IS_WASM, assert_allclose, assert_array_equal, assert_raises"
+    ],
+    "classes": [
+      "TestFFTShift",
+      "TestFFT1D",
+      "TestFFTThreadSafe"
+    ],
+    "functions": [
+      "fft1",
+      "test_fft_with_order",
+      "test_fft_output_order",
+      "test_irfft_with_n_1_regression",
+      "test_irfft_with_n_large_regression",
+      "test_fft_with_integer_or_bool_input"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_283_9bdf074a3f5db872_AI_Chariot_Legacy_666_1.0.0_20260508_test_pocketfft.py.json"
+}

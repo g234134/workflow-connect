@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 97,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mathml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mathml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 73558,
+  "content_sha256": "794af4991fdfb5d28863ed916e6f1b6a616a2899fb3216b90233e5ec1d16108e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2085,
+    "non_empty_lines": 1826,
+    "char_count": 73558,
+    "preview_lines": [
+      "\"\"\"",
+      "A MathML printer.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.printing.conventions import split_super_sub, requires_partial"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.printing.conventions import split_super_sub, requires_partial",
+      "from sympy.printing.precedence import \\",
+      "from sympy.printing.pretty.pretty_symbology import greek_unicode",
+      "from sympy.printing.printer import Printer, print_function",
+      "from mpmath.libmp import prec_to_dps, repr_dps, to_str as mlib_to_str",
+      "from xml.dom.minidom import Document, Text",
+      "from sympy.simplify import fraction"
+    ],
+    "classes": [
+      "MathMLPrinterBase",
+      "MathMLContentPrinter",
+      "MathMLPresentationPrinter"
+    ],
+    "functions": [
+      "mathml",
+      "print_mathml"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_097_794af4991fdfb5d2_AI_Chariot_Legacy_666_1.0.0_20260508_mathml.py.json"
+}

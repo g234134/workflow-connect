@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 500,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_shard\\sharded_tensor\\_ops\\tensor_ops.py",
+  "name": "tensor_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7921,
+  "content_sha256": "643377c2320e259bf13b07cf983b51bea2d5c716ca80878db2eec9c5e12a3331",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 215,
+    "non_empty_lines": 174,
+    "char_count": 7921,
+    "preview_lines": [
+      "import copy",
+      "import torch",
+      "from torch.distributed._shard.sharded_tensor import (",
+      "    _sharded_op_impl,",
+      "    Shard,",
+      "    ShardedTensor,",
+      ")",
+      "from ._common import (",
+      "    _register_sharded_op_on_local_shards,",
+      ")"
+    ],
+    "imports": [
+      "import copy",
+      "import torch",
+      "from torch.distributed._shard.sharded_tensor import (",
+      "from ._common import (",
+      "from torch.distributed._shard.common_op_utils import _register_default_op"
+    ],
+    "classes": [],
+    "functions": [
+      "tensor_device",
+      "st_is_meta",
+      "sharded_type_as_check",
+      "same_dtype",
+      "sharded_type_as",
+      "sharded_deepcopy",
+      "sharded_inplace_copy",
+      "sharded_clone",
+      "sharded_detach",
+      "tensor_requires_grad_set"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_500_643377c2320e259b_tensor_ops.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_higher_order_ops\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2194,
+  "content_sha256": "962903aa7766dfca7521675cb76ef239300d5a22c14c1c34a1ecc56b9ab7981c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 44,
+    "char_count": 2194,
+    "preview_lines": [
+      "from typing import Any, Callable",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._ops import HigherOrderOperator",
+      "def autograd_not_implemented_inner(",
+      "    operator: HigherOrderOperator, delayed_error: bool, *args: Any, **kwargs: Any",
+      ") -> Any:",
+      "    \"\"\"If autograd is enabled and any of the arguments require grad this will either",
+      "    raise an error or return a DelayedError depending on the value of delayed.",
+      "    Args:"
+    ],
+    "imports": [
+      "from typing import Any, Callable",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._ops import HigherOrderOperator"
+    ],
+    "classes": [],
+    "functions": [
+      "autograd_not_implemented_inner",
+      "autograd_not_implemented"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_086_962903aa7766dfca_utils.py.json"
+}

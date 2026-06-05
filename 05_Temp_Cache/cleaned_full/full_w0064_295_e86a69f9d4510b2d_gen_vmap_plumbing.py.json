@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 295,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\gen_vmap_plumbing.py",
+  "name": "gen_vmap_plumbing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9453,
+  "content_sha256": "e86a69f9d4510b2df5c7fbd773cd34c15bf8165418b434da3d447fcb2a9a7d3a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 265,
+    "non_empty_lines": 213,
+    "char_count": 9453,
+    "preview_lines": [
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import List, Optional, Sequence, Tuple",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import DispatcherSignature",
+      "from torchgen.context import method_with_native_function",
+      "from torchgen.model import (",
+      "    Argument,",
+      "    BaseTy,",
+      "    BaseType,"
+    ],
+    "imports": [
+      "import textwrap",
+      "from dataclasses import dataclass",
+      "from typing import List, Optional, Sequence, Tuple",
+      "from torchgen.api.translate import translate",
+      "from torchgen.api.types import DispatcherSignature",
+      "from torchgen.context import method_with_native_function",
+      "from torchgen.model import (",
+      "from torchgen.utils import mapMaybe"
+    ],
+    "classes": [
+      "ComputeBatchRulePlumbing"
+    ],
+    "functions": [
+      "is_tensor",
+      "is_optional_tensor",
+      "is_tensor_list",
+      "unwrap_tensor",
+      "unwrap_optional_tensor",
+      "gen_unwraps",
+      "gen_case_where_all_bdims_are_none",
+      "gen_returns",
+      "accepts_at_least_one_tensor_input",
+      "is_mutated_arg",
+      "gen_vmap_inplace_plumbing",
+      "gen_vmap_plumbing_no_returns",
+      "gen_vmap_plumbing",
+      "gen_all_vmap_plumbing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_295_e86a69f9d4510b2d_gen_vmap_plumbing.py.json"
+}

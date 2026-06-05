@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "run_id": "8f095afcee4a450395e95c8b56dfabed",
+  "generated_at": "2026-05-09T10:12:08+00:00",
+  "pool_size": 36236,
+  "sampled": 3,
+  "avg_score": 4.373,
+  "grades": {
+    "B": 1,
+    "D": 2
+  },
+  "by_type": {
+    "python": 1,
+    "toml": 1,
+    "json": 1
+  },
+  "top_tags": {
+    "type:python": 1,
+    "funcs:6": 1,
+    "type:toml": 1,
+    "summary_thin": 1,
+    "type:json": 1
+  },
+  "groq_calls": 1,
+  "groq_success": 1,
+  "rows": [
+    {
+      "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_190_5e6c5b6dce5a2471_AI_Chariot_Legacy_666_1.0.0_20260508_test_client_close.py.json",
+      "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_client_close.py",
+      "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_client_close.py",
+      "extension": ".py",
+      "original_type": "python",
+      "size_bytes": 7250,
+      "content_sha256": "5e6c5b6dce5a247170cc8fdc339c3081c7d0ed018453911e52b489e61a16fc5e",
+      "clean_status": "ok",
+      "local_score": 6.92,
+      "confidence": 0.95,
+      "tags": [
+        "type:python",
+        "funcs:6"
+      ],
+      "groq_used": false,
+      "groq_reason": null,
+      "groq_value": null,
+      "groq_rationale": null,
+      "final_score": 6.92,
+      "grade": "B"
+    },
+    {
+      "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0072_130_996a8a45dd8993a6_AI_Chariot_Legacy_666_1.0.0_20260508_omni.anim.graph.core.json.json",
+      "source_path": "D:\\大唐三省六部\\03_RAG_Database\\C2_核心知識庫\\AI_Chariot_Legacy_666_1.0.0_20260508_omni.anim.graph.core.json",
+      "name": "AI_Chariot_Legacy_666_1.0.0_20260508_omni.anim.graph.core.json",
+      "extension": ".json",
+      "original_type": "json",
+      "size_bytes": 1197,
+      "content_sha256": "996a8a45dd8993a6afbfaf73ac26915053cbeadf740ea6dff7375eb7071d5892",
+      "clean_status": "ok",
+      "local_score": 4.0,
+      "confidence": 0.95,
+      "tags": [
+        "type:json"
+      ],
+      "groq_used": true,
+      "groq_reason": "groq_ok",
+      "groq_value": 2.0,
+      "groq_rationale": "boilerplate JSON file",
+      "final_score": 3.2,
+      "grade": "D"
+    },
+    {
+      "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_006_97a228ef53300365_pyproject.toml.json",
+      "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\python-monorepo-example\\apps\\agent\\pyproject.toml",
+      "name": "pyproject.toml",
+      "extension": ".toml",
+      "original_type": "toml",
+      "size_bytes": 426,
+      "content_sha256": "97a228ef53300365ff697a98e2fb5ea744b2620a1b10f0d2a2ffb859bf4bcd24",
+      "clean_status": "ok",
+      "local_score": 3.0,
+      "confidence": 0.75,
+      "tags": [
+        "type:toml",
+        "summary_thin"
+      ],
+      "groq_used": false,
+      "groq_reason": null,
+      "groq_value": null,
+      "groq_rationale": null,
+      "final_score": 3.0,
+      "grade": "D"
+    }
+  ]
+}

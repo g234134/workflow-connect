@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_multigraph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_multigraph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18777,
+  "content_sha256": "d2f1503b744225a069cd7be74337566bfa982c7368fc8f432026213d924d50c9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 528,
+    "non_empty_lines": 459,
+    "char_count": 18777,
+    "preview_lines": [
+      "from collections import UserDict",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal",
+      "from .test_graph import BaseAttrGraphTester",
+      "from .test_graph import TestGraph as _TestGraph",
+      "class BaseMultiGraphTester(BaseAttrGraphTester):",
+      "    def test_has_edge(self):",
+      "        G = self.K3",
+      "        assert G.has_edge(0, 1)"
+    ],
+    "imports": [
+      "from collections import UserDict",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import edges_equal",
+      "from .test_graph import BaseAttrGraphTester",
+      "from .test_graph import TestGraph as _TestGraph"
+    ],
+    "classes": [
+      "BaseMultiGraphTester",
+      "TestMultiGraph",
+      "TestEdgeSubgraph",
+      "CustomDictClass",
+      "MultiGraphSubClass",
+      "TestMultiGraphSubclass"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_014_d2f1503b744225a0_AI_Chariot_Legacy_666_1.0.0_20260508_test_multigraph.py.json"
+}

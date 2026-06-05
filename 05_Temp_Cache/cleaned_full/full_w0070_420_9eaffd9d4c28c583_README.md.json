@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 420,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint\\README.md",
+  "name": "README.md",
+  "extension": ".md",
+  "original_type": "markdown",
+  "size_bytes": 4725,
+  "content_sha256": "9eaffd9d4c28c583d1c1a557c791ee39dfd68d2bf85dd79258bd828210bf510d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 66,
+    "char_count": 4725,
+    "preview_lines": [
+      "# LangGraph Checkpoint",
+      "This library defines the base interface for LangGraph checkpointers. Checkpointers provide a persistence layer for LangGraph. They allow you to interact with and manage the graph's state. When you use a graph with a checkpointer, the checkpointer saves a _checkpoint_ of the graph state at every superstep, enabling several powerful capabilities like human-in-the-loop, \"memory\" between interactions and more.",
+      "## Key concepts",
+      "### Checkpoint",
+      "Checkpoint is a snapshot of the graph state at a given point in time. Checkpoint tuple refers to an object containing checkpoint and the associated config, metadata and pending writes.",
+      "### Thread",
+      "Threads enable the checkpointing of multiple different runs, making them essential for multi-tenant chat applications and other scenarios where maintaining separate states is necessary. A thread is a unique ID assigned to a series of checkpoints saved by a checkpointer. When using a checkpointer, you must specify a `thread_id` and optionally `checkpoint_id` when running the graph.",
+      "- `thread_id` is simply the ID of a thread. This is always required.",
+      "- `checkpoint_id` can optionally be passed. This identifier refers to a specific checkpoint within a thread. This can be used to kick off a run of a graph from some point halfway through a thread.",
+      "You must pass these when invoking the graph as part of the configurable part of the config, e.g."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_420_9eaffd9d4c28c583_README.md.json"
+}

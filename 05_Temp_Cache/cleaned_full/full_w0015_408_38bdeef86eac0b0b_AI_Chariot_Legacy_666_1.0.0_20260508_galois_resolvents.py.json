@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 408,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_galois_resolvents.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_galois_resolvents.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25006,
+  "content_sha256": "38bdeef86eac0b0bd9b81bae6103b44292fec16c6d8f115a06355086d890fd9f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 676,
+    "non_empty_lines": 556,
+    "char_count": 25006,
+    "preview_lines": [
+      "r\"\"\"",
+      "Galois resolvents",
+      "Each of the functions in ``sympy.polys.numberfields.galoisgroups`` that",
+      "computes Galois groups for a particular degree $n$ uses resolvents. Given the",
+      "polynomial $T$ whose Galois group is to be computed, a resolvent is a",
+      "polynomial $R$ whose roots are defined as functions of the roots of $T$.",
+      "One way to compute the coefficients of $R$ is by approximating the roots of $T$",
+      "to sufficient precision. This module defines a :py:class:`~.Resolvent` class",
+      "that handles this job, determining the necessary precision, and computing $R$.",
+      "In some cases, the coefficients of $R$ are symmetric in the roots of $T$,"
+    ],
+    "imports": [
+      "from sympy.core.evalf import (",
+      "from sympy.core.symbol import symbols, Dummy",
+      "from sympy.polys.densetools import dup_eval",
+      "from sympy.polys.domains import ZZ",
+      "from sympy.polys.orderings import lex",
+      "from sympy.polys.polyroots import preprocess_roots",
+      "from sympy.polys.polytools import Poly",
+      "from sympy.polys.rings import xring",
+      "from sympy.polys.specialpolys import symmetric_poly",
+      "from sympy.utilities.lambdify import lambdify",
+      "from mpmath import MPContext",
+      "from mpmath.libmp.libmpf import prec_to_dps",
+      "from Galois theory that the coefficients of $R$ must lie in $\\mathbb{Z}$."
+    ],
+    "classes": [
+      "GaloisGroupException",
+      "ResolventException",
+      "Resolvent"
+    ],
+    "functions": [
+      "wrap",
+      "s_vars",
+      "sparse_symmetrize_resolvent_coeffs",
+      "define_resolvents",
+      "generate_lambda_lookup",
+      "get_resolvent_by_lookup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_408_38bdeef86eac0b0b_AI_Chariot_Legacy_666_1.0.0_20260508_galois_resolvents.py.json"
+}

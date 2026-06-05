@@ -1,0 +1,128 @@
+name: GOV gate metrics (W4-C)
+
+on:
+  pull_request:
+    paths:
+      - "workflow_v2/**"
+      - ".github/workflows/gov-gate-metrics.yml"
+  schedule:
+    # Nightly "ring" for Gate A + Gate B (UTC 01:15 daily)
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: Pipeline scenario label written into JSONL
+        type: choice
+        options:
+          - nightly
+          - manual
+          - agent
+        default: nightly
+      run_cross_ref:
+        description: Run wf_check_cross_ref.ps1 (G8Recon / CaseId=W2-1)
+        type: boolean
+        default: true
+      run_gate_risk_exit:
+        description: Run wf_gov_gate.ps1 -Gate GATE-RISK-EXIT (W2-3 pilot)
+        type: boolean
+        default: true
+      run_gate_rel_entry:
+        description: Run wf_gov_gate.ps1 -Gate GATE-REL-ENTRY (W2-1 + GOV artifact=W2-3)
+        type: boolean
+        default: true
+
+concurrency:
+  group: gov-gate-metrics-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  pr-cross-ref:
+    name: PR cross-ref (warning + metrics)
+    if: github.event_name == 'pull_request'
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Emit gov-metrics JSONL (PR)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          $ts = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd")
+          $jsonlPath = "workflow_v2/observability/gov_gate_metrics/$ts.jsonl"
+          powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_emit_gov_gate_metrics.ps1 `
+            -Pipeline pr `
+            -RunId "${{ github.run_id }}" `
+            -JsonlPath $jsonlPath `
+            -DoCrossRef
+
+      - name: Upload artifact (gov-gate-metrics)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gov-gate-metrics
+          path: workflow_v2/observability/gov_gate_metrics/*.jsonl
+          retention-days: 30
+
+  nightly-gates:
+    name: Nightly gate ring (cross-ref + Gate A + Gate B)
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scenario == 'nightly')
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Emit gov-metrics JSONL (nightly)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          $ts = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd")
+          $jsonlPath = "workflow_v2/observability/gov_gate_metrics/$ts.jsonl"
+          powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_emit_gov_gate_metrics.ps1 `
+            -Pipeline nightly `
+            -RunId "${{ github.run_id }}" `
+            -JsonlPath $jsonlPath `
+            -DoCrossRef `
+            -DoGateRiskExit `
+            -DoGateRelEntry
+
+      - name: Upload artifact (gov-gate-metrics)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gov-gate-metrics
+          path: workflow_v2/observability/gov_gate_metrics/*.jsonl
+          retention-days: 30
+
+  manual-or-agent:
+    name: Manual/agent gate run (metrics only)
+    if: github.event_name == 'workflow_dispatch' && (inputs.scenario == 'manual' || inputs.scenario == 'agent')
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Emit gov-metrics JSONL (manual/agent)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          $ts = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd")
+          $jsonlPath = "workflow_v2/observability/gov_gate_metrics/$ts.jsonl"
+          $pipeline = "${{ inputs.scenario }}"
+
+          $args = @(
+            "-Pipeline", $pipeline,
+            "-RunId", "${{ github.run_id }}",
+            "-JsonlPath", $jsonlPath
+          )
+          if ("${{ inputs.run_cross_ref }}" -eq "true") { $args += "-DoCrossRef" }
+          if ("${{ inputs.run_gate_risk_exit }}" -eq "true") { $args += "-DoGateRiskExit" }
+          if ("${{ inputs.run_gate_rel_entry }}" -eq "true") { $args += "-DoGateRelEntry" }
+
+          powershell -NoProfile -ExecutionPolicy Bypass -File workflow_v2/tools/wf_emit_gov_gate_metrics.ps1 @args
+
+      - name: Upload artifact (gov-gate-metrics)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gov-gate-metrics
+          path: workflow_v2/observability/gov_gate_metrics/*.jsonl
+          retention-days: 30
+

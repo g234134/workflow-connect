@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 327,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\packaged\\ATen\\templates\\RegisterDispatchDefinitions.ini",
+  "name": "RegisterDispatchDefinitions.ini",
+  "extension": ".ini",
+  "original_type": "ini",
+  "size_bytes": 500,
+  "content_sha256": "6e41fe1831266230806212f6c705fadfaf58c908d85ce6d61ae0335495ec2d92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 14,
+    "char_count": 500,
+    "preview_lines": [
+      "${ns_prologue}",
+      "// NB: TORCH_LIBRARY_IMPL must be in an anonymous namespace to avoid",
+      "// ambiguity with conflicting identifiers that may have been defined in",
+      "// at namespace already.",
+      "namespace {",
+      "${dispatch_helpers}",
+      "${dispatch_anonymous_definitions}",
+      "${static_init_dispatch_registrations}",
+      "} // anonymous namespace",
+      "${deferred_dispatch_registrations}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_327_6e41fe1831266230_RegisterDispatchDefinitions.ini.json"
+}

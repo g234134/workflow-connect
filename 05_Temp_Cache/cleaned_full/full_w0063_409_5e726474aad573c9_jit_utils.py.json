@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\jit_utils.py",
+  "name": "jit_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15177,
+  "content_sha256": "5e726474aad573c9de6eb9001e187e51133396d84f2e89a83790433ccec55544",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 399,
+    "non_empty_lines": 329,
+    "char_count": 15177,
+    "preview_lines": [
+      "\"\"\"Utilities for manipulating the torch.Graph object and the torchscript.\"\"\"",
+      "from __future__ import annotations",
+      "# TODO(justinchuby): Move more of the symbolic helper functions here and expose",
+      "# them to the user.",
+      "import dataclasses",
+      "import re",
+      "import typing",
+      "from typing import Any, Dict, Iterable, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch import _C"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "import re",
+      "import typing",
+      "from typing import Any, Dict, Iterable, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch import _C",
+      "from torch._C import _onnx as _C_onnx",
+      "from torch.onnx._globals import GLOBALS",
+      "from torch.onnx._internal import _beartype, registration"
+    ],
+    "classes": [
+      "GraphContext"
+    ],
+    "functions": [
+      "add_op_with_blocks",
+      "_add_op",
+      "_const_if_tensor",
+      "_create_node",
+      "_is_onnx_list",
+      "_scalar",
+      "_is_caffe2_aten_fallback",
+      "_add_attribute",
+      "_is_tensor",
+      "get_device_from_value",
+      "parse_node_kind",
+      "is_aten",
+      "is_prim",
+      "is_onnx"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_409_5e726474aad573c9_jit_utils.py.json"
+}

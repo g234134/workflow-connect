@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 24,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rag_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rag_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12805,
+  "content_sha256": "99085cc24bc134d13ee3fba78e2434f58d9b19e60791ffac3aba27715eb8548b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 351,
+    "non_empty_lines": 294,
+    "char_count": 12801,
+    "preview_lines": [
+      "from abc import ABC, abstractmethod",
+      "import os",
+      "from typing import Any, Literal, cast",
+      "from crewai.rag.core.base_embeddings_callable import EmbeddingFunction",
+      "from crewai.rag.embeddings.factory import build_embedder",
+      "from crewai.rag.embeddings.types import ProviderSpec",
+      "from crewai.tools import BaseTool",
+      "from pydantic import (",
+      "    BaseModel,",
+      "    ConfigDict,"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "import os",
+      "from typing import Any, Literal, cast",
+      "from crewai.rag.core.base_embeddings_callable import EmbeddingFunction",
+      "from crewai.rag.embeddings.factory import build_embedder",
+      "from crewai.rag.embeddings.types import ProviderSpec",
+      "from crewai.tools import BaseTool",
+      "from pydantic import (",
+      "from typing_extensions import Self, Unpack",
+      "from crewai_tools.tools.rag.types import (",
+      "from crewai_tools.adapters.crewai_rag_adapter import CrewAIRagAdapter"
+    ],
+    "classes": [
+      "Adapter",
+      "RagTool"
+    ],
+    "functions": [
+      "_validate_embedding_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_024_99085cc24bc134d1_AI_Chariot_Legacy_666_1.0.0_20260508_rag_tool.py.json"
+}

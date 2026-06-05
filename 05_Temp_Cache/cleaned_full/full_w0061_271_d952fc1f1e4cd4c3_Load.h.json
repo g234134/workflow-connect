@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 271,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\Load.h",
+  "name": "Load.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 942,
+  "content_sha256": "d952fc1f1e4cd4c3af430a6b6b6c6279b0e68b75c506abb9d5eea647556259bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 31,
+    "char_count": 942,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/macros/Macros.h>",
+      "#include <cstring>",
+      "namespace c10 {",
+      "namespace detail {",
+      "template <typename T>",
+      "struct LoadImpl {",
+      "  C10_HOST_DEVICE static T apply(const void* src) {",
+      "    return *reinterpret_cast<const T*>(src);",
+      "  }"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_271_d952fc1f1e4cd4c3_Load.h.json"
+}

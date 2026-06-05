@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 155,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_empty_polygons.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_empty_polygons.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 705,
+  "content_sha256": "346c26bb8ed830422553284cbbafb43614f0a677696f5d1df0838f8d9cc48fc5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 14,
+    "char_count": 705,
+    "preview_lines": [
+      "from shapely.geometry import MultiPolygon, Point, Polygon",
+      "def test_empty_polygon():",
+      "    \"\"\"No constructor arg makes an empty polygon geometry.\"\"\"",
+      "    assert Polygon().is_empty",
+      "def test_empty_multipolygon():",
+      "    \"\"\"No constructor arg makes an empty multipolygon geometry.\"\"\"",
+      "    assert MultiPolygon().is_empty",
+      "def test_multipolygon_empty_polygon():",
+      "    \"\"\"An empty polygon passed to MultiPolygon() makes an empty",
+      "    multipolygon geometry.\"\"\""
+    ],
+    "imports": [
+      "from shapely.geometry import MultiPolygon, Point, Polygon"
+    ],
+    "classes": [],
+    "functions": [
+      "test_empty_polygon",
+      "test_empty_multipolygon",
+      "test_multipolygon_empty_polygon",
+      "test_multipolygon_empty_among_polygon"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_155_346c26bb8ed83042_AI_Chariot_Legacy_666_1.0.0_20260508_test_empty_polygons.py.json"
+}

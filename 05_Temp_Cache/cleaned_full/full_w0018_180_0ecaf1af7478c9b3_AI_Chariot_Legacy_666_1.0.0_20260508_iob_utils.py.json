@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_iob_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_iob_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9315,
+  "content_sha256": "0ecaf1af7478c9b3d756dea9297bc62760dbc4a892c24c5c4d395c49ff468728",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 240,
+    "non_empty_lines": 209,
+    "char_count": 9313,
+    "preview_lines": [
+      "import warnings",
+      "from typing import Dict, Iterable, Iterator, List, Tuple, Union, cast",
+      "from ..errors import Errors, Warnings",
+      "from ..tokens import Doc, Span",
+      "def iob_to_biluo(tags: Iterable[str]) -> List[str]:",
+      "    out: List[str] = []",
+      "    tags = list(tags)",
+      "    while tags:",
+      "        out.extend(_consume_os(tags))",
+      "        out.extend(_consume_ent(tags))"
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import Dict, Iterable, Iterator, List, Tuple, Union, cast",
+      "from ..errors import Errors, Warnings",
+      "from ..tokens import Doc, Span"
+    ],
+    "classes": [],
+    "functions": [
+      "iob_to_biluo",
+      "biluo_to_iob",
+      "_consume_os",
+      "_consume_ent",
+      "doc_to_biluo_tags",
+      "_doc_to_biluo_tags_with_partial",
+      "offsets_to_biluo_tags",
+      "biluo_tags_to_spans",
+      "biluo_tags_to_offsets",
+      "tags_to_entities",
+      "split_bilu_label",
+      "remove_bilu_prefix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_180_0ecaf1af7478c9b3_AI_Chariot_Legacy_666_1.0.0_20260508_iob_utils.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_BlpImagePlugin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_BlpImagePlugin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17066,
+  "content_sha256": "1291e85528585f2a6ac671288924a19e00fb08f842798f1e7f0487d46e659d79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 498,
+    "non_empty_lines": 389,
+    "char_count": 17066,
+    "preview_lines": [
+      "\"\"\"",
+      "Blizzard Mipmap Format (.blp)",
+      "Jerome Leclanche <jerome@leclan.ch>",
+      "The contents of this file are hereby released in the public domain (CC0)",
+      "Full text of the CC0 license:",
+      "  https://creativecommons.org/publicdomain/zero/1.0/",
+      "BLP1 files, used mostly in Warcraft III, are not fully supported.",
+      "All types of BLP2 files used in World of Warcraft are supported.",
+      "The BLP file structure consists of a header, up to 16 mipmaps of the",
+      "texture"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "import os",
+      "import struct",
+      "from enum import IntEnum",
+      "from io import BytesIO",
+      "from typing import IO",
+      "from . import Image, ImageFile"
+    ],
+    "classes": [
+      "Format",
+      "Encoding",
+      "AlphaEncoding",
+      "BLPFormatError",
+      "BlpImageFile",
+      "_BLPBaseDecoder",
+      "BLP1Decoder",
+      "BLP2Decoder",
+      "BLPEncoder"
+    ],
+    "functions": [
+      "unpack_565",
+      "decode_dxt1",
+      "decode_dxt3",
+      "decode_dxt5",
+      "_accept",
+      "_save"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_044_1291e85528585f2a_AI_Chariot_Legacy_666_1.0.0_20260508_BlpImagePlugin.py.json"
+}

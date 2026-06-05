@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 186,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\decorators.py",
+  "name": "decorators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8759,
+  "content_sha256": "34ede87bbc883b8abee95bf2daf4e92004bc18623e2478c438419e02ff7bbe86",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 250,
+    "non_empty_lines": 193,
+    "char_count": 8759,
+    "preview_lines": [
+      "\"\"\"",
+      "SymPy core decorators.",
+      "The purpose of this module is to expose decorators without any other",
+      "dependencies, so that they can be easily imported anywhere in sympy/core.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from functools import wraps",
+      "from .sympify import SympifyError, sympify",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from functools import wraps",
+      "from .sympify import SympifyError, sympify",
+      "from typing import Callable, TypeVar, Union"
+    ],
+    "classes": [
+      "_SympifyWrapper"
+    ],
+    "functions": [
+      "_sympifyit",
+      "__sympifyit",
+      "call_highest_priority",
+      "sympify_method_args",
+      "sympify_return"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_186_34ede87bbc883b8a_decorators.py.json"
+}

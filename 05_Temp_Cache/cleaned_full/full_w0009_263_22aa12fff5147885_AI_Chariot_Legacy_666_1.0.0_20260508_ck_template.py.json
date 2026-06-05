@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 263,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ck_template.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ck_template.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3056,
+  "content_sha256": "22aa12fff514788511a45069f6610fbc4d36e3faf3a00a4ec97f6e02934ccf2c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 78,
+    "char_count": 3056,
+    "preview_lines": [
+      "import torch",
+      "from torch._inductor.codegen.rocm.rocm_template import ROCmTemplate",
+      "from torch._inductor.ir import IRNode",
+      "from torch._inductor.utils import IndentedBuffer",
+      "class CKTemplate(ROCmTemplate):",
+      "    \"\"\"",
+      "    Base class for generating CK templates, has common, i.e. non-gemm-specific, code generation logic",
+      "    \"\"\"",
+      "    _TORCH_DTYPE_TO_CK = {",
+      "        torch.float32: \"F32\","
+    ],
+    "imports": [
+      "import torch",
+      "from torch._inductor.codegen.rocm.rocm_template import ROCmTemplate",
+      "from torch._inductor.ir import IRNode",
+      "from torch._inductor.utils import IndentedBuffer"
+    ],
+    "classes": [
+      "CKTemplate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_263_22aa12fff5147885_AI_Chariot_Legacy_666_1.0.0_20260508_ck_template.py.json"
+}

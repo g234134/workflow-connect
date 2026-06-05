@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 191,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\datapipes\\dataframe\\dataframe_wrapper.py",
+  "name": "dataframe_wrapper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3313,
+  "content_sha256": "c23635eab50e6cac736d4b1ace1b8b28f005ef24fea7ff5ccded0e6c806862b7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 88,
+    "char_count": 3313,
+    "preview_lines": [
+      "_pandas = None",
+      "_WITH_PANDAS = None",
+      "def _try_import_pandas() -> bool:",
+      "    try:",
+      "        import pandas  # type: ignore[import]",
+      "        global _pandas",
+      "        _pandas = pandas",
+      "        return True",
+      "    except ImportError:",
+      "        return False"
+    ],
+    "imports": [
+      "import pandas  # type: ignore[import]"
+    ],
+    "classes": [
+      "PandasWrapper"
+    ],
+    "functions": [
+      "_try_import_pandas",
+      "_with_pandas",
+      "get_df_wrapper",
+      "set_df_wrapper",
+      "create_dataframe",
+      "is_dataframe",
+      "get_columns",
+      "is_column",
+      "concat",
+      "iterate",
+      "get_item",
+      "get_len"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_191_c23635eab50e6cac_dataframe_wrapper.py.json"
+}

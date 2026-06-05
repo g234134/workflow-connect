@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-05-08T17:48:57+00:00",
+  "finished_at": "2026-05-08T17:49:01+00:00",
+  "ok_count": 4,
+  "total": 7,
+  "rows": [
+    {
+      "api": "TELEGRAM_BOT_TOKEN",
+      "status": "OK",
+      "latency_ms": 866,
+      "note": "@MyppppAI_Bot id=8104938954",
+      "http": 200,
+      "group": "通訊"
+    },
+    {
+      "api": "GROQ_API_KEY",
+      "status": "Fail",
+      "latency_ms": 69,
+      "note": "{'_raw': 'error code: 1010'}",
+      "http": 403,
+      "group": "大腦"
+    },
+    {
+      "api": "QWEN_APIKEY",
+      "status": "OK",
+      "latency_ms": 561,
+      "note": "model=qwen-turbo tok=18 reply='Hello! How can I'",
+      "http": 200,
+      "group": "大腦"
+    },
+    {
+      "api": "NVIDIA_API_KEY",
+      "status": "Fail",
+      "latency_ms": 132,
+      "note": "{'status': 401, 'title': 'Unauthorized', 'detail': 'Authentication failed'}",
+      "http": 401,
+      "group": "大腦"
+    },
+    {
+      "api": "FIRECRAWL_API_KEY",
+      "status": "OK",
+      "latency_ms": 860,
+      "note": "credits_remaining=998",
+      "http": 200,
+      "group": "偵察"
+    },
+    {
+      "api": "TAVILY_API_KEY",
+      "status": "OK",
+      "latency_ms": 674,
+      "note": "results=1",
+      "http": 200,
+      "group": "偵察"
+    },
+    {
+      "api": "JINA_API_KEY",
+      "status": "Fail",
+      "latency_ms": 133,
+      "note": "{'_raw': 'error code: 1010'}",
+      "http": 403,
+      "group": "偵察"
+    }
+  ]
+}

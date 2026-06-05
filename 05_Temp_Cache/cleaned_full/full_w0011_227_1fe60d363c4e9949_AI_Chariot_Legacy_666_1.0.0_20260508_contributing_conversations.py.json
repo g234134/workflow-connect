@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 227,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_contributing_conversations.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_contributing_conversations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6352,
+  "content_sha256": "1fe60d363c4e99499b71bbded256f764dde4f90548c187e7c2c152b7bc0c7a40",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 193,
+    "non_empty_lines": 150,
+    "char_count": 6352,
+    "preview_lines": [
+      "import json",
+      "import os",
+      "import time",
+      "from typing import List, TypedDict",
+      "import pkg_resources",
+      "import requests",
+      "from interpreter.terminal_interface.profiles.profiles import write_key_to_profile",
+      "from interpreter.terminal_interface.utils.display_markdown_message import (",
+      "    display_markdown_message,",
+      ")"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import time",
+      "from typing import List, TypedDict",
+      "import pkg_resources",
+      "import requests",
+      "from interpreter.terminal_interface.profiles.profiles import write_key_to_profile",
+      "from interpreter.terminal_interface.utils.display_markdown_message import ("
+    ],
+    "classes": [
+      "ContributionCache"
+    ],
+    "functions": [
+      "display_contribution_message",
+      "display_contributing_current_message",
+      "send_past_conversations",
+      "set_send_future_conversations",
+      "user_wants_to_contribute_past",
+      "user_wants_to_contribute_future",
+      "contribute_conversation_launch_logic",
+      "contribute_past_and_future_logic",
+      "get_contribute_cache_contents",
+      "write_to_contribution_cache",
+      "get_all_conversations",
+      "is_list_of_lists",
+      "contribute_conversations"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_227_1fe60d363c4e9949_AI_Chariot_Legacy_666_1.0.0_20260508_contributing_conversations.py.json"
+}

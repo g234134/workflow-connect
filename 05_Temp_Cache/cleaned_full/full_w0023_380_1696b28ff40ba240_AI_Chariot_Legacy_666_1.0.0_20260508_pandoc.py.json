@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 380,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pandoc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pandoc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2867,
+  "content_sha256": "1696b28ff40ba24015b34ae307a65abbbb7595b0a7545e91665641b3464719d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 66,
+    "char_count": 2867,
+    "preview_lines": [
+      "\"\"\"",
+      "Convert between any two formats using pandoc,",
+      "and related filters",
+      "\"\"\"",
+      "import os",
+      "from pandocfilters import Image, applyJSONFilters  # type:ignore[import-untyped]",
+      "from nbconvert.utils.base import NbConvertBase",
+      "from nbconvert.utils.pandoc import pandoc",
+      "__all__ = [\"ConvertExplicitlyRelativePaths\", \"convert_pandoc\"]",
+      "def convert_pandoc(source, from_format, to_format, extra_args=None):"
+    ],
+    "imports": [
+      "import os",
+      "from pandocfilters import Image, applyJSONFilters  # type:ignore[import-untyped]",
+      "from nbconvert.utils.base import NbConvertBase",
+      "from nbconvert.utils.pandoc import pandoc"
+    ],
+    "classes": [
+      "ConvertExplicitlyRelativePaths"
+    ],
+    "functions": [
+      "convert_pandoc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_380_1696b28ff40ba240_AI_Chariot_Legacy_666_1.0.0_20260508_pandoc.py.json"
+}

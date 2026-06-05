@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 52,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ocr_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ocr_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3633,
+  "content_sha256": "5d20fa89dda674add62bbcff7dcf6d3aa2ed8784d4f95dfc54c662c98abc3762",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 80,
+    "char_count": 3633,
+    "preview_lines": [
+      "\"\"\"Optical Character Recognition (OCR) Tool.",
+      "This tool provides functionality for extracting text from images using supported LLMs. Make sure your model supports the `vision` feature.",
+      "\"\"\"",
+      "import base64",
+      "from typing import Any",
+      "from crewai.llm import LLM",
+      "from crewai.tools.base_tool import BaseTool",
+      "from crewai.utilities.types import LLMMessage",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.security.safe_path import validate_file_path"
+    ],
+    "imports": [
+      "import base64",
+      "from typing import Any",
+      "from crewai.llm import LLM",
+      "from crewai.tools.base_tool import BaseTool",
+      "from crewai.utilities.types import LLMMessage",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.security.safe_path import validate_file_path"
+    ],
+    "classes": [
+      "OCRToolSchema",
+      "OCRTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_052_5d20fa89dda674ad_AI_Chariot_Legacy_666_1.0.0_20260508_ocr_tool.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 156,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_a2a_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_a2a_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11942,
+  "content_sha256": "849d0eca045dba5bbecffe785139377f046b3449c439cfd98ce105b373705a1e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 347,
+    "non_empty_lines": 299,
+    "char_count": 11942,
+    "preview_lines": [
+      "\"\"\"",
+      "A2A Protocol endpoints for LiteLLM Proxy.",
+      "Allows clients to invoke agents through LiteLLM using the A2A protocol.",
+      "The A2A SDK can point to LiteLLM's URL and invoke agents registered with LiteLLM.",
+      "\"\"\"",
+      "import json",
+      "from typing import Optional",
+      "from fastapi import APIRouter, Depends, HTTPException, Request, Response",
+      "from fastapi.responses import JSONResponse, StreamingResponse",
+      "from litellm._logging import verbose_proxy_logger"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Optional",
+      "from fastapi import APIRouter, Depends, HTTPException, Request, Response",
+      "from fastapi.responses import JSONResponse, StreamingResponse",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.types.utils import all_litellm_params",
+      "from litellm.proxy.agent_endpoints.agent_registry import global_agent_registry",
+      "from litellm.a2a_protocol import asend_message_streaming",
+      "from litellm.a2a_protocol.main import A2A_SDK_AVAILABLE",
+      "from a2a.types import MessageSendParams, SendStreamingMessageRequest",
+      "from litellm.proxy.agent_endpoints.auth.agent_permission_handler import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_jsonrpc_error",
+      "_get_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_156_849d0eca045dba5b_AI_Chariot_Legacy_666_1.0.0_20260508_a2a_endpoints.py.json"
+}

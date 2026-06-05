@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 339,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_wrap_node.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_wrap_node.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 983,
+  "content_sha256": "c8bde06fcea9788dba184c710fef594651f212a9afa7080f9c139fa35529e704",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 23,
+    "char_count": 983,
+    "preview_lines": [
+      "import logging",
+      "from opentelemetry import context as context_api",
+      "from opentelemetry.context import attach, set_value",
+      "from opentelemetry.instrumentation.utils import (",
+      "    _SUPPRESS_INSTRUMENTATION_KEY,",
+      ")",
+      "from opentelemetry.instrumentation.haystack.utils import with_tracer_wrapper",
+      "from opentelemetry.semconv_ai import SpanAttributes, TraceloopSpanKindValues",
+      "logger = logging.getLogger(__name__)",
+      "@with_tracer_wrapper"
+    ],
+    "imports": [
+      "import logging",
+      "from opentelemetry import context as context_api",
+      "from opentelemetry.context import attach, set_value",
+      "from opentelemetry.instrumentation.utils import (",
+      "from opentelemetry.instrumentation.haystack.utils import with_tracer_wrapper",
+      "from opentelemetry.semconv_ai import SpanAttributes, TraceloopSpanKindValues"
+    ],
+    "classes": [],
+    "functions": [
+      "wrap"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_339_c8bde06fcea9788d_AI_Chariot_Legacy_666_1.0.0_20260508_wrap_node.py.json"
+}

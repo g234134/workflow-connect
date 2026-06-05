@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 427,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\symbolic_opset18.py",
+  "name": "symbolic_opset18.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1806,
+  "content_sha256": "a6d9de91dbf508fc619be688e8ca16147dae565d0e57bfb3dc4f1ebec7dfd403",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 57,
+    "char_count": 1806,
+    "preview_lines": [
+      "\"\"\"This file exports ONNX ops for opset 18.",
+      "Note [ONNX Operators that are added/updated in opset 18]",
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "https://github.com/onnx/onnx/blob/main/docs/Changelog.md#version-18-of-the-default-onnx-operator-set",
+      "New operators:",
+      "    CenterCropPad",
+      "    Col2Im",
+      "    Mish",
+      "    OptionalGetElement",
+      "    OptionalHasElement"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Sequence",
+      "from torch import _C",
+      "from torch.onnx import symbolic_helper",
+      "from torch.onnx._internal import _beartype, registration"
+    ],
+    "classes": [],
+    "functions": [
+      "col2im"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_427_a6d9de91dbf508fc_symbolic_opset18.py.json"
+}

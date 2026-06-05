@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\trace_rules.py",
+  "name": "trace_rules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 115053,
+  "content_sha256": "ddf200c94558baca6a5039c013e6e2be732fb50fa3ef671fab6c32faf6de2f05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2816,
+    "non_empty_lines": 2775,
+    "char_count": 115053,
+    "preview_lines": [
+      "import functools",
+      "import importlib",
+      "import sys",
+      "import types",
+      "import torch",
+      "from .allowed_functions import _disallowed_function_ids, is_user_defined_allowed",
+      "from .utils import hashable",
+      "from .variables import (",
+      "    SkipFilesVariable,",
+      "    TorchCtxManagerClassVariable,"
+    ],
+    "imports": [
+      "import functools",
+      "import importlib",
+      "import sys",
+      "import types",
+      "import torch",
+      "from .allowed_functions import _disallowed_function_ids, is_user_defined_allowed",
+      "from .utils import hashable",
+      "from .variables import ("
+    ],
+    "classes": [],
+    "functions": [
+      "get_torch_obj_rule_map",
+      "_load_obj_from_str",
+      "load_object",
+      "get_tensor_method",
+      "is_aten_op_or_tensor_method",
+      "lookup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_464_ddf200c94558baca_trace_rules.py.json"
+}

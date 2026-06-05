@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 214,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\datapipes\\map\\grouping.py",
+  "name": "grouping.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2512,
+  "content_sha256": "455edec131c7defb290e129cfccea68d56a09d310dce29436e08c261834b85ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 69,
+    "non_empty_lines": 58,
+    "char_count": 2512,
+    "preview_lines": [
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import MapDataPipe, DataChunk",
+      "from typing import List, Sized, TypeVar",
+      "__all__ = [\"BatcherMapDataPipe\", ]",
+      "T = TypeVar('T')",
+      "@functional_datapipe('batch')",
+      "class BatcherMapDataPipe(MapDataPipe[DataChunk]):",
+      "    r\"\"\"",
+      "    Create mini-batches of data (functional name: ``batch``).",
+      "    An outer dimension will be added as ``batch_size`` if ``drop_last`` is set to ``True``,"
+    ],
+    "imports": [
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import MapDataPipe, DataChunk",
+      "from typing import List, Sized, TypeVar"
+    ],
+    "classes": [
+      "BatcherMapDataPipe"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_214_455edec131c7defb_grouping.py.json"
+}

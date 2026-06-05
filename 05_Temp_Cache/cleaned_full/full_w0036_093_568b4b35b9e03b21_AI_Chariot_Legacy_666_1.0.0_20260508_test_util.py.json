@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_util.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1105,
+  "content_sha256": "568b4b35b9e03b2160d3714a553cc864a7781b3e143be74c12bd06faf1cc8ae2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 23,
+    "char_count": 1105,
+    "preview_lines": [
+      "import unittest",
+      "from .util import MemorySetup, Traversable",
+      "class TestMemoryTraversableImplementation(unittest.TestCase):",
+      "    def test_concrete_methods_are_not_overridden(self):",
+      "        \"\"\"`MemoryTraversable` must not override `Traversable` concrete methods.",
+      "        This test is not an attempt to enforce a particular `Traversable` protocol;",
+      "        it merely catches changes in the `Traversable` abstract/concrete methods",
+      "        that have not been mirrored in the `MemoryTraversable` subclass.",
+      "        \"\"\"",
+      "        traversable_concrete_methods = {"
+    ],
+    "imports": [
+      "import unittest",
+      "from .util import MemorySetup, Traversable"
+    ],
+    "classes": [
+      "TestMemoryTraversableImplementation"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_093_568b4b35b9e03b21_AI_Chariot_Legacy_666_1.0.0_20260508_test_util.py.json"
+}

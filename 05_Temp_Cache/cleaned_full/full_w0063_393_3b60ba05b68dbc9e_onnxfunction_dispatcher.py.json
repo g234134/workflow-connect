@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 393,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\fx\\onnxfunction_dispatcher.py",
+  "name": "onnxfunction_dispatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38795,
+  "content_sha256": "3b60ba05b68dbc9efa75803f6f8039d71a3af73a6a55e010db1fff0e3143f337",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 885,
+    "non_empty_lines": 782,
+    "char_count": 38795,
+    "preview_lines": [
+      "\"\"\"Dispatcher for AtenLib functions from onnx-script.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import operator",
+      "import types",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Dict,",
+      "    List,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import operator",
+      "import types",
+      "from typing import (",
+      "import torch",
+      "import torch._ops",
+      "import torch.fx",
+      "from torch.onnx._internal import _beartype",
+      "from torch.onnx._internal.fx import (",
+      "import onnxscript  # type: ignore[import]",
+      "from torch.onnx import OnnxRegistry",
+      "from onnxscript.function_libs.torch_lib import (  # type: ignore[import]"
+    ],
+    "classes": [
+      "OnnxFunctionDispatcher",
+      "_OnnxSchemaChecker"
+    ],
+    "functions": [
+      "_find_opschema_matched_symbolic_function_disagnostic_message_formatter",
+      "_find_operator_overloads_in_onnx_registry_disagnostic_message_formatter",
+      "_find_onnx_data_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_393_3b60ba05b68dbc9e_onnxfunction_dispatcher.py.json"
+}

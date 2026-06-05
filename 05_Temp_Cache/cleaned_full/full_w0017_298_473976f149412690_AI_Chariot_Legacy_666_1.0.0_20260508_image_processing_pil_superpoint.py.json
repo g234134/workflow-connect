@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_superpoint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_superpoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6544,
+  "content_sha256": "473976f1494126904bdef71fccb51dea312b6ed768c342a0ef03374be6aa6e75",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 135,
+    "char_count": 6544,
+    "preview_lines": [
+      "# Copyright 2024 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "import numpy as np",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_utils import PILImageResampling, SizeDict",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring",
+      "from ...utils.import_utils import requires",
+      "import torch",
+      "from .modeling_superpoint import SuperPointKeypointDescriptionOutput",
+      "import torch"
+    ],
+    "classes": [
+      "SuperPointImageProcessorKwargs",
+      "SuperPointImageProcessorPil"
+    ],
+    "functions": [
+      "is_grayscale",
+      "convert_to_grayscale"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_298_473976f149412690_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_superpoint.py.json"
+}

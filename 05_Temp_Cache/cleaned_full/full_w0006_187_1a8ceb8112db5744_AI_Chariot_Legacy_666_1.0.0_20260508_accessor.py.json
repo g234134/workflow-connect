@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 187,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_accessor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_accessor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17375,
+  "content_sha256": "1a8ceb8112db574473bdf95f3b71e2fc87c5265b5bd6308c69dd83ae8d3a5ee2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 588,
+    "non_empty_lines": 472,
+    "char_count": 17375,
+    "preview_lines": [
+      "\"\"\"",
+      "accessor.py contains base classes for implementing accessor properties",
+      "that can be mixed into or pinned onto other pandas classes.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import functools",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    final,",
+      ")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import functools",
+      "from typing import (",
+      "import warnings",
+      "from pandas.util._decorators import (",
+      "from pandas.util._exceptions import find_stack_level",
+      "from collections.abc import Callable",
+      "from pandas._typing import TypeT",
+      "from pandas import Index",
+      "from pandas.core.generic import NDFrame"
+    ],
+    "classes": [
+      "DirNamesMixin",
+      "PandasDelegate",
+      "Accessor"
+    ],
+    "functions": [
+      "delegate_names",
+      "_register_accessor",
+      "register_dataframe_accessor",
+      "register_series_accessor",
+      "register_index_accessor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_187_1a8ceb8112db5744_AI_Chariot_Legacy_666_1.0.0_20260508_accessor.py.json"
+}

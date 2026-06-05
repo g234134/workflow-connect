@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_flask.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_flask.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8519,
+  "content_sha256": "2861b625b730f5277000324b8391a606756add5cb02bba90c1d3eff7b4657660",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 265,
+    "non_empty_lines": 207,
+    "char_count": 8519,
+    "preview_lines": [
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import _check_minimum_version, DidNotEnable, Integration",
+      "from sentry_sdk.integrations._wsgi_common import (",
+      "    DEFAULT_HTTP_METHODS_TO_CAPTURE,",
+      "    RequestExtractor,",
+      ")",
+      "from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import SOURCE_FOR_STYLE",
+      "from sentry_sdk.utils import ("
+    ],
+    "imports": [
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import _check_minimum_version, DidNotEnable, Integration",
+      "from sentry_sdk.integrations._wsgi_common import (",
+      "from sentry_sdk.integrations.wsgi import SentryWsgiMiddleware",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import SOURCE_FOR_STYLE",
+      "from sentry_sdk.utils import (",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any, Callable, Dict, Union",
+      "from sentry_sdk._types import Event, EventProcessor",
+      "from sentry_sdk.integrations.wsgi import _ScopedResponse",
+      "from werkzeug.datastructures import FileStorage, ImmutableMultiDict",
+      "import flask_login  # type: ignore",
+      "from flask import Flask, Request  # type: ignore",
+      "from flask import request as flask_request",
+      "from flask.signals import (",
+      "from markupsafe import Markup",
+      "import blinker  # noqa",
+      "from quart import Quart  # type: ignore"
+    ],
+    "classes": [
+      "FlaskIntegration",
+      "FlaskRequestExtractor"
+    ],
+    "functions": [
+      "_add_sentry_trace",
+      "_set_transaction_name_and_source",
+      "_request_started",
+      "_make_request_event_processor",
+      "_capture_exception",
+      "_add_user_to_event"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_141_2861b625b730f527_AI_Chariot_Legacy_666_1.0.0_20260508_flask.py.json"
+}

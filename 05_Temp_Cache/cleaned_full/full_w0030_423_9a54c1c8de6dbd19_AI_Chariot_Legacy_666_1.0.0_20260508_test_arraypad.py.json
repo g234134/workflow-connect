@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arraypad.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arraypad.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 58043,
+  "content_sha256": "9a54c1c8de6dbd1952420dc918d63a1a444e2d2fd991789e4a406cb7e0ade079",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1427,
+    "non_empty_lines": 1230,
+    "char_count": 58043,
+    "preview_lines": [
+      "\"\"\"Tests for the array padding functions.",
+      "\"\"\"",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.lib._arraypad_impl import _as_pairs",
+      "from numpy.testing import assert_allclose, assert_array_equal, assert_equal",
+      "_numeric_dtypes = (",
+      "    np._core.sctypes[\"uint\"]",
+      "    + np._core.sctypes[\"int\"]",
+      "    + np._core.sctypes[\"float\"]"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.lib._arraypad_impl import _as_pairs",
+      "from numpy.testing import assert_allclose, assert_array_equal, assert_equal"
+    ],
+    "classes": [
+      "TestAsPairs",
+      "TestConditionalShortcuts",
+      "TestStatistic",
+      "TestConstant",
+      "TestLinearRamp",
+      "TestReflect",
+      "TestEmptyArray",
+      "TestSymmetric",
+      "TestWrap",
+      "TestEdge",
+      "TestEmpty",
+      "TestPadWidth"
+    ],
+    "functions": [
+      "test_legacy_vector_functionality",
+      "test_unicode_mode",
+      "test_object_input",
+      "test_kwargs",
+      "test_constant_zero_default",
+      "test_unsupported_mode",
+      "test_non_contiguous_array",
+      "test_memory_layout_persistence",
+      "test_dtype_persistence",
+      "test_pad_dict_pad_width"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_423_9a54c1c8de6dbd19_AI_Chariot_Legacy_666_1.0.0_20260508_test_arraypad.py.json"
+}

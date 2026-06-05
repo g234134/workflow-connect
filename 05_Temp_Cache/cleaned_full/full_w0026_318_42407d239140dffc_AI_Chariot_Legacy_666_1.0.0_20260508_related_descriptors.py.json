@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 318,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_related_descriptors.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_related_descriptors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 65626,
+  "content_sha256": "42407d239140dffc8bc1373ee6f2f11aeff3cfd256ebb518dc491271c9a3996c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1598,
+    "non_empty_lines": 1361,
+    "char_count": 65626,
+    "preview_lines": [
+      "\"\"\"",
+      "Accessors for related objects.",
+      "When a field defines a relation between two models, each model class provides",
+      "an attribute to access related instances of the other model class (unless the",
+      "reverse accessor has been disabled with related_name='+').",
+      "Accessors are implemented as descriptors in order to customize access and",
+      "assignment. This module defines the descriptor classes.",
+      "Forward accessors follow foreign keys. Reverse accessors trace them back. For",
+      "example, with the following models::",
+      "    class Parent(Model):"
+    ],
+    "imports": [
+      "from asgiref.sync import sync_to_async",
+      "from django.core.exceptions import FieldError",
+      "from django.db import (",
+      "from django.db.models import Manager, Q, Window, signals",
+      "from django.db.models.expressions import ColPairs",
+      "from django.db.models.fields.tuple_lookups import TupleIn",
+      "from django.db.models.functions import RowNumber",
+      "from django.db.models.lookups import GreaterThan, LessThanOrEqual",
+      "from django.db.models.query import QuerySet",
+      "from django.db.models.query_utils import DeferredAttribute",
+      "from django.db.models.utils import AltersData, resolve_callables",
+      "from django.utils.functional import cached_property"
+    ],
+    "classes": [
+      "ForeignKeyDeferredAttribute",
+      "ForwardManyToOneDescriptor",
+      "ForwardOneToOneDescriptor",
+      "ReverseOneToOneDescriptor",
+      "ReverseManyToOneDescriptor",
+      "ManyToManyDescriptor"
+    ],
+    "functions": [
+      "_filter_prefetch_queryset",
+      "_traverse_ancestors",
+      "create_reverse_many_to_one_manager",
+      "create_forward_many_to_many_manager"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_318_42407d239140dffc_AI_Chariot_Legacy_666_1.0.0_20260508_related_descriptors.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 229,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_smallworld.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_smallworld.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2405,
+  "content_sha256": "adf80d09153a605e797fcb02b80e56997e8c9a10dc8bcf536f88dacf800b8dc4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 56,
+    "char_count": 2405,
+    "preview_lines": [
+      "import pytest",
+      "pytest.importorskip(\"numpy\")",
+      "import random",
+      "import networkx as nx",
+      "from networkx import lattice_reference, omega, random_reference, sigma",
+      "rng = 42",
+      "def test_random_reference():",
+      "    G = nx.connected_watts_strogatz_graph(50, 6, 0.1, seed=rng)",
+      "    Gr = random_reference(G, niter=1, seed=rng)",
+      "    C = nx.average_clustering(G)"
+    ],
+    "imports": [
+      "import pytest",
+      "import random",
+      "import networkx as nx",
+      "from networkx import lattice_reference, omega, random_reference, sigma"
+    ],
+    "classes": [],
+    "functions": [
+      "test_random_reference",
+      "test_lattice_reference",
+      "test_sigma",
+      "test_omega",
+      "test_graph_no_edges"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_229_adf80d09153a605e_AI_Chariot_Legacy_666_1.0.0_20260508_test_smallworld.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 27,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rail_parser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rail_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 700,
+  "content_sha256": "e4f62d01a0a105912063686c3de7f77d055352e28307e8ab6411ffbda049e5c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 700,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.output_parsers.rail_parser import GuardrailsOutputParser",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"GuardrailsOutputParser\": \"langchain_community.output_parsers.rail_parser\",",
+      "}"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.output_parsers.rail_parser import GuardrailsOutputParser"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_027_e4f62d01a0a10591_AI_Chariot_Legacy_666_1.0.0_20260508_rail_parser.py.json"
+}

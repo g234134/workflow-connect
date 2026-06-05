@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 13,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_radau.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_radau.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20248,
+  "content_sha256": "568c52565214de8b3292443f617bf70525dc436e21317f3e4622a0b5f1dc0341",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 572,
+    "non_empty_lines": 473,
+    "char_count": 20248,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy.linalg import lu_factor, lu_solve",
+      "from scipy.sparse import csc_matrix, issparse, eye",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize._numdiff import group_columns",
+      "from .common import (validate_max_step, validate_tol, select_initial_step,",
+      "                     norm, num_jac, EPS, warn_extraneous,",
+      "                     validate_first_step)",
+      "from .base import OdeSolver, DenseOutput",
+      "S6 = 6 ** 0.5"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.linalg import lu_factor, lu_solve",
+      "from scipy.sparse import csc_matrix, issparse, eye",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize._numdiff import group_columns",
+      "from .common import (validate_max_step, validate_tol, select_initial_step,",
+      "from .base import OdeSolver, DenseOutput"
+    ],
+    "classes": [
+      "Radau",
+      "RadauDenseOutput"
+    ],
+    "functions": [
+      "solve_collocation_system",
+      "predict_factor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_013_568c52565214de8b_AI_Chariot_Legacy_666_1.0.0_20260508_radau.py.json"
+}

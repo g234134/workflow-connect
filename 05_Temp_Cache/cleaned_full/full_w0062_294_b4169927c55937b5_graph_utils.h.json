@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 294,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\ir\\graph_utils.h",
+  "name": "graph_utils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 554,
+  "content_sha256": "b4169927c55937b5a7658f14c0746185b7a1c7bf8818741c4b9df9d5e8cefd6c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 18,
+    "char_count": 554,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "#include <vector>",
+      "namespace torch {",
+      "namespace jit {",
+      "TORCH_API TypePtr getTensorType(const at::Tensor& t, bool complete);",
+      "TORCH_API TypePtr inferShapeAndTypeForInput(",
+      "    TypePtr input_type,",
+      "    Stack::const_iterator& s_iter,",
+      "    const Stack::const_iterator& s_iter_end,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_294_b4169927c55937b5_graph_utils.h.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\core\\Contiguity.h",
+  "name": "Contiguity.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3215,
+  "content_sha256": "10a29158d75e929bb3b7651595f6c1937da24b888c837e1ffaefd7b0f7e6dd21",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 119,
+    "char_count": 3215,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/ArrayRef.h>",
+      "#include <c10/util/SmallVector.h>",
+      "#include <c10/util/irange.h>",
+      "#include <algorithm>",
+      "#include <cstdint>",
+      "namespace c10 {",
+      "template <typename T>",
+      "bool _compute_contiguous(ArrayRef<T> sizes, ArrayRef<T> strides, T numel) {",
+      "  bool is_contiguous = true;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_159_10a29158d75e929b_Contiguity.h.json"
+}

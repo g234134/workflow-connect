@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 367,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_embedding_bag.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_embedding_bag.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18802,
+  "content_sha256": "b50f4fff4807dadc434375d27e1a09d4fef568e5a671ce53c64c58930f73b34b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 477,
+    "non_empty_lines": 432,
+    "char_count": 18802,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import cast, List",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch._C._distributed_c10d import ReduceOp",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec.api import custom_sharding_spec_op",
+      "from torch.distributed.nn.functional import all_gather, reduce_scatter",
+      "from ._common import ("
+    ],
+    "imports": [
+      "from typing import cast, List",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch._C._distributed_c10d import ReduceOp",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec.api import custom_sharding_spec_op",
+      "from torch.distributed.nn.functional import all_gather, reduce_scatter",
+      "from ._common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "sharded_embedding_bag",
+      "_validate_embedding_bag_param",
+      "_handle_col_wise_sharding",
+      "_handle_row_wise_sharding",
+      "_all_gather_embedding_bag_input"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_367_b50f4fff4807dadc_AI_Chariot_Legacy_666_1.0.0_20260508_embedding_bag.py.json"
+}

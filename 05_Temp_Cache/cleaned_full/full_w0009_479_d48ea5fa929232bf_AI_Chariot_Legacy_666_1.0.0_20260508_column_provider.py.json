@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 479,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_column_provider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_column_provider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3826,
+  "content_sha256": "d48ea5fa929232bfb4225b6517c4581edad0e6f20d3b27434abc9df6d2e5bf2d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 125,
+    "non_empty_lines": 107,
+    "char_count": 3826,
+    "preview_lines": [
+      "# A sample shell column provider",
+      "# Mainly ported from MSDN article:",
+      "#  Using Shell Column Handlers for Detailed File Information,",
+      "#  Raymond Chen, Microsoft Corporation, February 2000",
+      "#",
+      "# To demonstrate:",
+      "# * Execute this script to register the namespace.",
+      "# * Open Windows Explorer",
+      "# * Right-click an explorer column header - select \"More\"",
+      "# * Locate column 'pyc size' or 'pyo size', and add it to the view."
+    ],
+    "imports": [
+      "import os",
+      "import stat",
+      "import commctrl",
+      "import pythoncom",
+      "from pywintypes import IID",
+      "from win32com.shell import shell, shellcon",
+      "import winreg",
+      "import winreg",
+      "import errno",
+      "from win32com.server import register"
+    ],
+    "classes": [
+      "ColumnProvider"
+    ],
+    "functions": [
+      "DllRegisterServer",
+      "DllUnregisterServer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_479_d48ea5fa929232bf_AI_Chariot_Legacy_666_1.0.0_20260508_column_provider.py.json"
+}

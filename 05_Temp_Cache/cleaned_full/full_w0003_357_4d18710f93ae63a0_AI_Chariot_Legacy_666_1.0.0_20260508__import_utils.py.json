@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__import_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__import_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 402,
+  "content_sha256": "4d18710f93ae63a094a2c8a805d05c254b34a26ec820e36265d60057bcd0f233",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 13,
+    "char_count": 402,
+    "preview_lines": [
+      "from functools import cache",
+      "from typing import TYPE_CHECKING",
+      "if TYPE_CHECKING:",
+      "    from pydantic import BaseModel",
+      "    from pydantic.fields import FieldInfo",
+      "@cache",
+      "def import_cached_base_model() -> type['BaseModel']:",
+      "    from pydantic import BaseModel",
+      "    return BaseModel",
+      "@cache"
+    ],
+    "imports": [
+      "from functools import cache",
+      "from typing import TYPE_CHECKING",
+      "from pydantic import BaseModel",
+      "from pydantic.fields import FieldInfo",
+      "from pydantic import BaseModel",
+      "from pydantic.fields import FieldInfo"
+    ],
+    "classes": [],
+    "functions": [
+      "import_cached_base_model",
+      "import_cached_field_info"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_357_4d18710f93ae63a0_AI_Chariot_Legacy_666_1.0.0_20260508__import_utils.py.json"
+}

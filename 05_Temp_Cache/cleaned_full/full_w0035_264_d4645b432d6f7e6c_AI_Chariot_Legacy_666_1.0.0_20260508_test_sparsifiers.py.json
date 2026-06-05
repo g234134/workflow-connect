@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sparsifiers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sparsifiers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4044,
+  "content_sha256": "d4645b432d6f7e6c2fe9e5213f8228d1aca41f65724c97c55a69dcad7993aa2e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 138,
+    "non_empty_lines": 96,
+    "char_count": 4044,
+    "preview_lines": [
+      "\"\"\"Unit tests for the sparsifier computation functions.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state",
+      "_seed = 2",
+      "def _test_spanner(G, spanner, stretch, weight=None):",
+      "    \"\"\"Test whether a spanner is valid.",
+      "    This function tests whether the given spanner is a subgraph of the",
+      "    given graph G with the same node set. It also tests for all shortest",
+      "    paths whether they adhere to the given stretch."
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state"
+    ],
+    "classes": [],
+    "functions": [
+      "_test_spanner",
+      "_assign_random_weights",
+      "test_spanner_trivial",
+      "test_spanner_unweighted_complete_graph",
+      "test_spanner_weighted_complete_graph",
+      "test_spanner_unweighted_gnp_graph",
+      "test_spanner_weighted_gnp_graph",
+      "test_spanner_unweighted_disconnected_graph",
+      "test_spanner_invalid_stretch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_264_d4645b432d6f7e6c_AI_Chariot_Legacy_666_1.0.0_20260508_test_sparsifiers.py.json"
+}

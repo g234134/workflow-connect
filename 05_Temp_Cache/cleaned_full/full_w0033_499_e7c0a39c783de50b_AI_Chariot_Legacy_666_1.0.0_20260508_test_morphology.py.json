@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 499,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_morphology.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_morphology.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 131658,
+  "content_sha256": "e7c0a39c783de50bdaa7666e405452a9094f2fd408233f86bd495487dc56538f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2938,
+    "non_empty_lines": 2690,
+    "char_count": 131658,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "    is_cupy, is_numpy, is_torch, array_namespace,",
+      "    xp_assert_close, xp_assert_equal, assert_array_almost_equal",
+      ")",
+      "import pytest",
+      "from pytest import raises as assert_raises",
+      "from scipy import ndimage",
+      "from . import types",
+      "from scipy.conftest import array_api_compatible"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "import pytest",
+      "from pytest import raises as assert_raises",
+      "from scipy import ndimage",
+      "from . import types",
+      "from scipy.conftest import array_api_compatible"
+    ],
+    "classes": [
+      "TestNdimageMorphology",
+      "TestDilateFix",
+      "TestBinaryOpeningClosing"
+    ],
+    "functions": [
+      "test_binary_erosion_noninteger_iterations",
+      "test_binary_dilation_noninteger_iterations",
+      "test_binary_opening_noninteger_iterations",
+      "test_binary_closing_noninteger_iterations",
+      "test_binary_closing_noninteger_brute_force_passes_when_true",
+      "test_binary_input_as_output",
+      "test_binary_hit_or_miss_input_as_output",
+      "test_distance_transform_cdt_invalid_metric"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_499_e7c0a39c783de50b_AI_Chariot_Legacy_666_1.0.0_20260508_test_morphology.py.json"
+}

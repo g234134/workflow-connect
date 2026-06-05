@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 341,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_handlers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_handlers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13865,
+  "content_sha256": "96bb0fa8f9fb7149080e4a927663fd67d2f63995071060d7f98acfd1ca4df81b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 358,
+    "non_empty_lines": 296,
+    "char_count": 13865,
+    "preview_lines": [
+      "\"\"\"JupyterLab Server handlers\"\"\"",
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "from __future__ import annotations",
+      "import os",
+      "import pathlib",
+      "import warnings",
+      "from functools import lru_cache",
+      "from typing import TYPE_CHECKING, Any",
+      "from urllib.parse import urlparse"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import pathlib",
+      "import warnings",
+      "from functools import lru_cache",
+      "from typing import TYPE_CHECKING, Any",
+      "from urllib.parse import urlparse",
+      "from jupyter_server.base.handlers import FileFindHandler, JupyterHandler",
+      "from jupyter_server.extension.handler import ExtensionHandlerJinjaMixin, ExtensionHandlerMixin",
+      "from jupyter_server.utils import url_path_join as ujoin",
+      "from tornado import template, web",
+      "from .config import LabConfig, get_page_config, recursive_update",
+      "from .licenses_handler import LicensesHandler, LicensesManager",
+      "from .listings_handler import ListingsHandler, fetch_listings",
+      "from .settings_handler import SettingsHandler",
+      "from .settings_utils import _get_overrides",
+      "from .themes_handler import ThemesHandler",
+      "from .translations_handler import TranslationsHandler",
+      "from .workspaces_handler import WorkspacesHandler, WorkspacesManager",
+      "from .app import LabServerApp"
+    ],
+    "classes": [
+      "LabHandler",
+      "NotFoundHandler"
+    ],
+    "functions": [
+      "is_url",
+      "add_handlers",
+      "_camelCase"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_341_96bb0fa8f9fb7149_AI_Chariot_Legacy_666_1.0.0_20260508_handlers.py.json"
+}

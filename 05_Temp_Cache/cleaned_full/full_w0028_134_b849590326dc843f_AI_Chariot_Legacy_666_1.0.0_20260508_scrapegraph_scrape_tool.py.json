@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 134,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scrapegraph_scrape_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scrapegraph_scrape_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6398,
+  "content_sha256": "b849590326dc843f505e0d548839caf12f8137f6ac6e5cdd3b35a23fd62a0f81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 155,
+    "char_count": 6398,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "from typing import Any",
+      "from urllib.parse import urlparse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field, field_validator",
+      "class ScrapegraphError(Exception):",
+      "    \"\"\"Base exception for Scrapegraph-related errors.\"\"\"",
+      "class RateLimitError(ScrapegraphError):",
+      "    \"\"\"Raised when API rate limits are exceeded.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from typing import Any",
+      "from urllib.parse import urlparse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field, field_validator",
+      "from scrapegraph_py import Client",
+      "from scrapegraph_py.logger import (",
+      "import click",
+      "import subprocess",
+      "from scrapegraph_py import Client  # type: ignore[import-untyped]",
+      "from scrapegraph_py.logger import (  # type: ignore[import-untyped]"
+    ],
+    "classes": [
+      "ScrapegraphError",
+      "RateLimitError",
+      "FixedScrapegraphScrapeToolSchema",
+      "ScrapegraphScrapeToolSchema",
+      "ScrapegraphScrapeTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_134_b849590326dc843f_AI_Chariot_Legacy_666_1.0.0_20260508_scrapegraph_scrape_tool.py.json"
+}

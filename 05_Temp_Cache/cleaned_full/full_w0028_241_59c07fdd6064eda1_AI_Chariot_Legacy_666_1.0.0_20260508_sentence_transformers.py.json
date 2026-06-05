@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sentence_transformers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sentence_transformers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2719,
+  "content_sha256": "59c07fdd6064eda15b39eaa7e618cd5ba98c4b5f952d1c0d2e57017e247f9d0a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 72,
+    "char_count": 2719,
+    "preview_lines": [
+      "# SPDX-License-Identifier: Apache-2.0",
+      "# SPDX-FileCopyrightText: Copyright The LanceDB Authors",
+      "from typing import List, Union",
+      "import numpy as np",
+      "from ..util import attempt_import_or_raise",
+      "from .base import TextEmbeddingFunction",
+      "from .registry import register",
+      "from .utils import weak_lru",
+      "@register(\"sentence-transformers\")",
+      "class SentenceTransformerEmbeddings(TextEmbeddingFunction):"
+    ],
+    "imports": [
+      "from typing import List, Union",
+      "import numpy as np",
+      "from ..util import attempt_import_or_raise",
+      "from .base import TextEmbeddingFunction",
+      "from .registry import register",
+      "from .utils import weak_lru"
+    ],
+    "classes": [
+      "SentenceTransformerEmbeddings"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_241_59c07fdd6064eda1_AI_Chariot_Legacy_666_1.0.0_20260508_sentence_transformers.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_windows10.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_windows10.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4362,
+  "content_sha256": "c9fd22d7102cfa66ea382c2adb92bbf219098e3bb58d76796f47bec3d6920410",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 133,
+    "non_empty_lines": 106,
+    "char_count": 4362,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import sys",
+      "assert sys.platform == \"win32\"",
+      "from ctypes import byref, windll",
+      "from ctypes.wintypes import DWORD, HANDLE",
+      "from typing import Any, TextIO",
+      "from prompt_toolkit.data_structures import Size",
+      "from prompt_toolkit.win32_types import STD_OUTPUT_HANDLE",
+      "from .base import Output",
+      "from .color_depth import ColorDepth"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import sys",
+      "from ctypes import byref, windll",
+      "from ctypes.wintypes import DWORD, HANDLE",
+      "from typing import Any, TextIO",
+      "from prompt_toolkit.data_structures import Size",
+      "from prompt_toolkit.win32_types import STD_OUTPUT_HANDLE",
+      "from .base import Output",
+      "from .color_depth import ColorDepth",
+      "from .vt100 import Vt100_Output",
+      "from .win32 import Win32Output"
+    ],
+    "classes": [
+      "Windows10_Output"
+    ],
+    "functions": [
+      "is_win_vt100_enabled"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_270_c9fd22d7102cfa66_AI_Chariot_Legacy_666_1.0.0_20260508_windows10.py.json"
+}

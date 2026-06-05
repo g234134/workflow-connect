@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 386,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_repocard_data.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_repocard_data.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34079,
+  "content_sha256": "6b0852b0b44fadc14cf42bab07d9ab638d07d5b135e72ce85c34d52fad320f55",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 770,
+    "non_empty_lines": 673,
+    "char_count": 34077,
+    "preview_lines": [
+      "import copy",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass",
+      "from typing import Any, Optional, Union",
+      "from huggingface_hub.utils import logging, yaml_dump",
+      "logger = logging.get_logger(__name__)",
+      "@dataclass",
+      "class EvalResult:",
+      "    \"\"\"",
+      "    Flattened representation of individual evaluation results found in model-index of Model Cards."
+    ],
+    "imports": [
+      "import copy",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass",
+      "from typing import Any, Optional, Union",
+      "from huggingface_hub.utils import logging, yaml_dump"
+    ],
+    "classes": [
+      "EvalResult",
+      "CardData",
+      "ModelCardData",
+      "DatasetCardData",
+      "SpaceCardData"
+    ],
+    "functions": [
+      "_validate_eval_results",
+      "model_index_to_eval_results",
+      "_remove_none",
+      "eval_results_to_model_index",
+      "_to_unique_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_386_6b0852b0b44fadc1_AI_Chariot_Legacy_666_1.0.0_20260508_repocard_data.py.json"
+}

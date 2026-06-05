@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 210,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_beta_raw_content_block_start_event.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_beta_raw_content_block_start_event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 648,
+  "content_sha256": "b97a41f248a2f35cdfcfbc3b4219e5145a68c95c8f0e20f7fe6579020ebcffff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 13,
+    "char_count": 648,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Union",
+      "from typing_extensions import Literal, Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from ..._models import BaseModel",
+      "from .beta_text_block import BetaTextBlock",
+      "from .beta_tool_use_block import BetaToolUseBlock",
+      "__all__ = [\"BetaRawContentBlockStartEvent\", \"ContentBlock\"]",
+      "ContentBlock: TypeAlias = Annotated[Union[BetaTextBlock, BetaToolUseBlock], PropertyInfo(discriminator=\"type\")]",
+      "class BetaRawContentBlockStartEvent(BaseModel):"
+    ],
+    "imports": [
+      "from typing import Union",
+      "from typing_extensions import Literal, Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from ..._models import BaseModel",
+      "from .beta_text_block import BetaTextBlock",
+      "from .beta_tool_use_block import BetaToolUseBlock"
+    ],
+    "classes": [
+      "BetaRawContentBlockStartEvent"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_210_b97a41f248a2f35c_AI_Chariot_Legacy_666_1.0.0_20260508_beta_raw_content_block_start_event.py.json"
+}

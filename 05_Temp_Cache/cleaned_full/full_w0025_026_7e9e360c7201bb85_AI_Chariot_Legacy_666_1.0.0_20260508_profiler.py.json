@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_profiler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_profiler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13736,
+  "content_sha256": "7e9e360c7201bb855930325355c9449bcdd3121f873703d01b3d3f02fb4b3668",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 434,
+    "non_empty_lines": 359,
+    "char_count": 13736,
+    "preview_lines": [
+      "import argparse",
+      "import os",
+      "import numpy",
+      "import psutil",
+      "from onnx import TensorProto",
+      "\"\"\"",
+      "This profiler tool could run a transformer model and print out the kernel time spent on each Node of the model.",
+      "Example of profiling of longformer model:",
+      "    python profiler.py --model longformer-base-4096_fp32.onnx --batch_size 1 --sequence_length 4096 --global_length 8 --samples 1000 --thread_num 8 --dummy_inputs longformer --use_gpu",
+      "Example of importing profile result file from onnxruntime_perf_test:"
+    ],
+    "imports": [
+      "import argparse",
+      "import os",
+      "import numpy",
+      "import psutil",
+      "from onnx import TensorProto",
+      "from benchmark_helper import create_onnxruntime_session  # noqa: PLC0415"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_arguments",
+      "run_profile",
+      "get_dim_from_type_proto",
+      "get_shape_from_type_proto",
+      "create_dummy_inputs",
+      "create_bert_inputs",
+      "create_gpt2_inputs",
+      "create_longformer_inputs",
+      "run"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_026_7e9e360c7201bb85_AI_Chariot_Legacy_666_1.0.0_20260508_profiler.py.json"
+}

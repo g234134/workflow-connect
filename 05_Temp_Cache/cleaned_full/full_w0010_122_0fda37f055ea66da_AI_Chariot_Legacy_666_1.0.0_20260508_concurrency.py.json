@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_concurrency.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_concurrency.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1630,
+  "content_sha256": "0fda37f055ea66daadf67588cdeb473cea56f78aeea8b4bc84db6710811f1efd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 41,
+    "char_count": 1630,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import functools",
+      "import warnings",
+      "from collections.abc import AsyncIterator, Callable, Coroutine, Iterable, Iterator",
+      "from typing import ParamSpec, TypeVar",
+      "import anyio.to_thread",
+      "P = ParamSpec(\"P\")",
+      "T = TypeVar(\"T\")",
+      "async def run_until_first_complete(*args: tuple[Callable, dict]) -> None:  # type: ignore[type-arg]",
+      "    warnings.warn("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import functools",
+      "import warnings",
+      "from collections.abc import AsyncIterator, Callable, Coroutine, Iterable, Iterator",
+      "from typing import ParamSpec, TypeVar",
+      "import anyio.to_thread"
+    ],
+    "classes": [
+      "_StopIteration"
+    ],
+    "functions": [
+      "_next"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_122_0fda37f055ea66da_AI_Chariot_Legacy_666_1.0.0_20260508_concurrency.py.json"
+}

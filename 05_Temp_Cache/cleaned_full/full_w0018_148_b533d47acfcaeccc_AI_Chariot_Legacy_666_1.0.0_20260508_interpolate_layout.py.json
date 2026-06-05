@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_interpolate_layout.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_interpolate_layout.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3813,
+  "content_sha256": "b533d47acfcaeccc28a143bfc1a73d01e1445602f5b864b3e084d888e8b368c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 98,
+    "char_count": 3813,
+    "preview_lines": [
+      "\"\"\"",
+      "Interpolate OpenType Layout tables (GDEF / GPOS / GSUB).",
+      "\"\"\"",
+      "from fontTools.ttLib import TTFont",
+      "from fontTools.varLib import models, VarLibError, load_designspace, load_masters",
+      "from fontTools.varLib.merger import InstancerMerger",
+      "import os.path",
+      "import logging",
+      "from copy import deepcopy",
+      "from pprint import pformat"
+    ],
+    "imports": [
+      "from fontTools.ttLib import TTFont",
+      "from fontTools.varLib import models, VarLibError, load_designspace, load_masters",
+      "from fontTools.varLib.merger import InstancerMerger",
+      "import os.path",
+      "import logging",
+      "from copy import deepcopy",
+      "from pprint import pformat",
+      "from fontTools.designspaceLib import DesignSpaceDocument",
+      "from fontTools import configLogger",
+      "import argparse",
+      "import sys",
+      "import sys",
+      "import doctest"
+    ],
+    "classes": [],
+    "functions": [
+      "interpolate_layout",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_148_b533d47acfcaeccc_AI_Chariot_Legacy_666_1.0.0_20260508_interpolate_layout.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 184,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\unit_tests\\chat_models\\test_prompt_cache_key.py",
+  "name": "test_prompt_cache_key.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3381,
+  "content_sha256": "343f441e760010c934f012aeea7eebd9e0ac59f02ff706e8dcfd3d458c4d46e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 65,
+    "char_count": 3378,
+    "preview_lines": [
+      "\"\"\"Unit tests for prompt_cache_key parameter.\"\"\"",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_openai import ChatOpenAI",
+      "def test_prompt_cache_key_parameter_inclusion() -> None:",
+      "    \"\"\"Test that prompt_cache_key parameter is properly included in request payload.\"\"\"",
+      "    chat = ChatOpenAI(model=\"gpt-4o-mini\", max_completion_tokens=10)",
+      "    messages = [HumanMessage(\"Hello\")]",
+      "    payload = chat._get_request_payload(messages, prompt_cache_key=\"test-cache-key\")",
+      "    assert \"prompt_cache_key\" in payload",
+      "    assert payload[\"prompt_cache_key\"] == \"test-cache-key\""
+    ],
+    "imports": [
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [],
+    "functions": [
+      "test_prompt_cache_key_parameter_inclusion",
+      "test_prompt_cache_key_parameter_exclusion",
+      "test_prompt_cache_key_per_call",
+      "test_prompt_cache_key_model_kwargs",
+      "test_prompt_cache_key_responses_api"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_184_343f441e760010c9_test_prompt_cache_key.py.json"
+}

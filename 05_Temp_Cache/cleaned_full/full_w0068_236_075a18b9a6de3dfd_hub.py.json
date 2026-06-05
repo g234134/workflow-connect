@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:48:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\runnables\\hub.py",
+  "name": "hub.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1541,
+  "content_sha256": "075a18b9a6de3dfdeee8909231e4ce7256b40f13a5ad1e78baa3bd3901953fcb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 35,
+    "char_count": 1538,
+    "preview_lines": [
+      "from typing import Any",
+      "from langchain_core.runnables.base import RunnableBindingBase",
+      "from langchain_core.runnables.utils import Input, Output",
+      "class HubRunnable(RunnableBindingBase[Input, Output]):  # type: ignore[no-redef]",
+      "    \"\"\"An instance of a runnable stored in the LangChain Hub.\"\"\"",
+      "    owner_repo_commit: str",
+      "    def __init__(",
+      "        self,",
+      "        owner_repo_commit: str,",
+      "        *,"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.runnables.base import RunnableBindingBase",
+      "from langchain_core.runnables.utils import Input, Output",
+      "from langchain_classic.hub import pull"
+    ],
+    "classes": [
+      "HubRunnable"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_236_075a18b9a6de3dfd_hub.py.json"
+}

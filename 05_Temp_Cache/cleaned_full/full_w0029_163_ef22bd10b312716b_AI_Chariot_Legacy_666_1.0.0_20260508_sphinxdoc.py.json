@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sphinxdoc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sphinxdoc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5252,
+  "content_sha256": "ef22bd10b312716b664484dd5020776d6a95a404470fc44c7724c3db00bbc4ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 126,
+    "char_count": 5252,
+    "preview_lines": [
+      "\"\"\"Machinery for documenting traitlets config options with Sphinx.",
+      "This includes:",
+      "- A Sphinx extension defining directives and roles for config options.",
+      "- A function to generate an rst file given an Application instance.",
+      "To make this documentation, first set this module as an extension in Sphinx's",
+      "conf.py::",
+      "    extensions = [",
+      "        # ...",
+      "        'traitlets.config.sphinxdoc',",
+      "    ]"
+    ],
+    "imports": [
+      "from traitlets.config.sphinxdoc import write_doc",
+      "from myapp import MyApplication",
+      "from __future__ import annotations",
+      "import typing as t",
+      "from collections import defaultdict",
+      "from textwrap import dedent",
+      "from traitlets import HasTraits, Undefined",
+      "from traitlets.config.application import Application",
+      "from traitlets.utils.text import indent"
+    ],
+    "classes": [],
+    "functions": [
+      "setup",
+      "interesting_default_value",
+      "format_aliases",
+      "class_config_rst_doc",
+      "reverse_aliases",
+      "write_doc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_163_ef22bd10b312716b_AI_Chariot_Legacy_666_1.0.0_20260508_sphinxdoc.py.json"
+}

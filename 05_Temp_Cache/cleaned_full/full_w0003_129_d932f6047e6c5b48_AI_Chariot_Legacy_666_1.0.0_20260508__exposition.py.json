@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 129,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__exposition.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__exposition.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 250,
+  "content_sha256": "d932f6047e6c5b48ba1fb747928b7d6811fd2ddf88eb46b1e790ee6885a7125a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 8,
+    "non_empty_lines": 6,
+    "char_count": 250,
+    "preview_lines": [
+      "from twisted.internet import reactor",
+      "from twisted.web.wsgi import WSGIResource",
+      "from .. import exposition, REGISTRY",
+      "MetricsResource = lambda registry=REGISTRY: WSGIResource(",
+      "    reactor, reactor.getThreadPool(), exposition.make_wsgi_app(registry)",
+      ")"
+    ],
+    "imports": [
+      "from twisted.internet import reactor",
+      "from twisted.web.wsgi import WSGIResource",
+      "from .. import exposition, REGISTRY"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_129_d932f6047e6c5b48_AI_Chariot_Legacy_666_1.0.0_20260508__exposition.py.json"
+}

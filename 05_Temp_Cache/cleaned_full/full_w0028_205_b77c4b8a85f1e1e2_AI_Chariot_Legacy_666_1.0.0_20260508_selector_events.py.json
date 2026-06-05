@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 205,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_selector_events.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_selector_events.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 48332,
+  "content_sha256": "b77c4b8a85f1e1e2882a2bf3bd85a4b1c1fcfd7cb37ed0d8d8eb5f9a2ea44231",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1324,
+    "non_empty_lines": 1174,
+    "char_count": 48332,
+    "preview_lines": [
+      "\"\"\"Event loop using a selector and related classes.",
+      "A selector is a \"notify-when-ready\" multiplexer.  For a subclass which",
+      "also includes support for signal handling, see the unix_events sub-module.",
+      "\"\"\"",
+      "__all__ = 'BaseSelectorEventLoop',",
+      "import collections",
+      "import errno",
+      "import functools",
+      "import itertools",
+      "import os"
+    ],
+    "imports": [
+      "import collections",
+      "import errno",
+      "import functools",
+      "import itertools",
+      "import os",
+      "import selectors",
+      "import socket",
+      "import warnings",
+      "import weakref",
+      "import ssl",
+      "from . import base_events",
+      "from . import constants",
+      "from . import events",
+      "from . import futures",
+      "from . import protocols",
+      "from . import sslproto",
+      "from . import transports",
+      "from . import trsock",
+      "from .log import logger"
+    ],
+    "classes": [
+      "BaseSelectorEventLoop",
+      "_SelectorTransport",
+      "_SelectorSocketTransport",
+      "_SelectorDatagramTransport"
+    ],
+    "functions": [
+      "_test_selector_event"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_205_b77c4b8a85f1e1e2_AI_Chariot_Legacy_666_1.0.0_20260508_selector_events.py.json"
+}

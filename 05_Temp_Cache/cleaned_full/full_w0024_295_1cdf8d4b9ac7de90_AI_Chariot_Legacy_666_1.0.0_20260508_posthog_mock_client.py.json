@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 295,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_posthog_mock_client.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_posthog_mock_client.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 888,
+  "content_sha256": "1cdf8d4b9ac7de9090a741c04dc3160f1bad16ce013e6b22858fac4afa913b1f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 25,
+    "char_count": 888,
+    "preview_lines": [
+      "\"\"\"",
+      "Mock httpx client for PostHog integration testing.",
+      "This module intercepts PostHog API calls and returns successful mock responses,",
+      "allowing full code execution without making actual network calls.",
+      "Usage:",
+      "    Set POSTHOG_MOCK=true in environment variables or config to enable mock mode.",
+      "\"\"\"",
+      "from litellm.integrations.mock_client_factory import MockClientConfig, create_mock_client_factory",
+      "# Create mock client using factory",
+      "_config = MockClientConfig("
+    ],
+    "imports": [
+      "from litellm.integrations.mock_client_factory import MockClientConfig, create_mock_client_factory"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_295_1cdf8d4b9ac7de90_AI_Chariot_Legacy_666_1.0.0_20260508_posthog_mock_client.py.json"
+}

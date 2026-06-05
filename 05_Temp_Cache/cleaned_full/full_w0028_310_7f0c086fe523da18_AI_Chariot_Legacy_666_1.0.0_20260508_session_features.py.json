@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 310,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_session_features.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_session_features.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7870,
+  "content_sha256": "7f0c086fe523da18639eb13664e7c42f963952035af2083c4a2225e50a4df180",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 179,
+    "char_count": 7866,
+    "preview_lines": [
+      "\"\"\"",
+      "Experimental server session features for server→client task operations.",
+      "This module provides the server-side equivalent of ExperimentalClientFeatures,",
+      "allowing the server to send task-augmented requests to the client and poll for results.",
+      "WARNING: These APIs are experimental and may change without notice.",
+      "\"\"\"",
+      "from collections.abc import AsyncIterator",
+      "from typing import TYPE_CHECKING, Any, TypeVar",
+      "import mcp.types as types",
+      "from mcp.server.validation import validate_sampling_tools, validate_tool_use_result_messages"
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator",
+      "from typing import TYPE_CHECKING, Any, TypeVar",
+      "import mcp.types as types",
+      "from mcp.server.validation import validate_sampling_tools, validate_tool_use_result_messages",
+      "from mcp.shared.experimental.tasks.capabilities import (",
+      "from mcp.shared.experimental.tasks.polling import poll_until_terminal",
+      "from mcp.server.session import ServerSession"
+    ],
+    "classes": [
+      "ExperimentalServerSessionFeatures"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_310_7f0c086fe523da18_AI_Chariot_Legacy_666_1.0.0_20260508_session_features.py.json"
+}

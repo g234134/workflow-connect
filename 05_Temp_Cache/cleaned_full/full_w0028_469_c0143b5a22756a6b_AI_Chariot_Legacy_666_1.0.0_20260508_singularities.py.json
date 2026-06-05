@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_singularities.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_singularities.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12184,
+  "content_sha256": "c0143b5a22756a6b994ad049fa23138881c97b18f32471f0adcd2d5365d54f5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 406,
+    "non_empty_lines": 322,
+    "char_count": 12184,
+    "preview_lines": [
+      "\"\"\"",
+      "Singularities",
+      "=============",
+      "This module implements algorithms for finding singularities for a function",
+      "and identifying types of functions.",
+      "The differential calculus methods in this module include methods to identify",
+      "the following function types in the given ``Interval``:",
+      "- Increasing",
+      "- Strictly Increasing",
+      "- Decreasing"
+    ],
+    "imports": [
+      "from sympy.core.power import Pow",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.core.sympify import sympify",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.functions.elementary.trigonometric import sec, csc, cot, tan, cos",
+      "from sympy.functions.elementary.hyperbolic import (",
+      "from sympy.utilities.misc import filldedent",
+      "from sympy.solvers.solveset import solveset",
+      "from sympy.solvers.solveset import solveset"
+    ],
+    "classes": [],
+    "functions": [
+      "singularities",
+      "monotonicity_helper",
+      "is_increasing",
+      "is_strictly_increasing",
+      "is_decreasing",
+      "is_strictly_decreasing",
+      "is_monotonic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_469_c0143b5a22756a6b_AI_Chariot_Legacy_666_1.0.0_20260508_singularities.py.json"
+}

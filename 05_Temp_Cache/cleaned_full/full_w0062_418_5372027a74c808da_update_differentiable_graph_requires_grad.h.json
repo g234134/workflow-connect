@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\update_differentiable_graph_requires_grad.h",
+  "name": "update_differentiable_graph_requires_grad.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 760,
+  "content_sha256": "5372027a74c808da8fc5fdbfa6f6e049720812312c27d2eb602012b3d97cad95",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 16,
+    "char_count": 760,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// Because differentiable graphs detach the gradients of input Tensors,",
+      "// creating and inlining differentiable graphs changes the requires_grad",
+      "// property of tensors in the graph. This pass updates prim::profiles",
+      "// requires_grad to keep profiled properties up to date, it does not update",
+      "// grad properties of other nodes like graph inputs bc the only downstream",
+      "// user of the grad property is the profiling executor, which just uses"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_418_5372027a74c808da_update_differentiable_graph_requires_grad.h.json"
+}

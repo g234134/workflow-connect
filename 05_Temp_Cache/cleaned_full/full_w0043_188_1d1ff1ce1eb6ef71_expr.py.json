@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\expr.py",
+  "name": "expr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 143770,
+  "content_sha256": "1d1ff1ce1eb6ef714199d7cd6e8806ce45a8a9a23f93f09e20e9e99b2cf00ab4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 4194,
+    "non_empty_lines": 3479,
+    "char_count": 143770,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, overload",
+      "from collections.abc import Iterable, Mapping",
+      "from functools import reduce",
+      "import re",
+      "from .sympify import sympify, _sympify",
+      "from .basic import Basic, Atom",
+      "from .singleton import S",
+      "from .evalf import EvalfMixin, pure_complex, DEFAULT_MAXPREC",
+      "from .decorators import call_highest_priority, sympify_method_args, sympify_return"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, overload",
+      "from collections.abc import Iterable, Mapping",
+      "from functools import reduce",
+      "import re",
+      "from .sympify import sympify, _sympify",
+      "from .basic import Basic, Atom",
+      "from .singleton import S",
+      "from .evalf import EvalfMixin, pure_complex, DEFAULT_MAXPREC",
+      "from .decorators import call_highest_priority, sympify_method_args, sympify_return",
+      "from .cache import cacheit",
+      "from .logic import fuzzy_or, fuzzy_not",
+      "from .intfunc import mod_inverse",
+      "from .sorting import default_sort_key",
+      "from .kind import NumberKind",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.misc import as_int, func_name, filldedent",
+      "from sympy.utilities.iterables import has_variety, sift",
+      "from mpmath.libmp import mpf_log, prec_to_dps",
+      "from mpmath.libmp.libintmath import giant_steps"
+    ],
+    "classes": [
+      "Expr",
+      "AtomicExpr",
+      "UnevaluatedExpr",
+      "ExprBuilder"
+    ],
+    "functions": [
+      "_corem",
+      "_mag",
+      "unchanged"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_188_1d1ff1ce1eb6ef71_expr.py.json"
+}

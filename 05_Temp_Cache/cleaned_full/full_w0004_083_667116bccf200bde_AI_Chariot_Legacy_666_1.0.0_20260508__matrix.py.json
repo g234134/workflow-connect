@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__matrix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__matrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4573,
+  "content_sha256": "667116bccf200bde9031ec8df5d563b31028c278c7fd0539547e748d8dde3944",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 146,
+    "non_empty_lines": 117,
+    "char_count": 4573,
+    "preview_lines": [
+      "class spmatrix:",
+      "    \"\"\"This class provides a base class for all sparse matrix classes.",
+      "    It cannot be instantiated.  Most of the work is provided by subclasses.",
+      "    \"\"\"",
+      "    _allow_nd = (2,)",
+      "    @property",
+      "    def _bsr_container(self):",
+      "        from ._bsr import bsr_matrix",
+      "        return bsr_matrix",
+      "    @property"
+    ],
+    "imports": [
+      "from ._bsr import bsr_matrix",
+      "from ._coo import coo_matrix",
+      "from ._csc import csc_matrix",
+      "from ._csr import csr_matrix",
+      "from ._dia import dia_matrix",
+      "from ._dok import dok_matrix",
+      "from ._lil import lil_matrix",
+      "from .linalg import matrix_power"
+    ],
+    "classes": [
+      "spmatrix"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_083_667116bccf200bde_AI_Chariot_Legacy_666_1.0.0_20260508__matrix.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 463,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gemini_ingestion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gemini_ingestion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11339,
+  "content_sha256": "a0fcfda437b8e5ea64caf763b321c331c8844c37cb1dbb9b7df3e8c573f51378",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 327,
+    "non_empty_lines": 274,
+    "char_count": 11339,
+    "preview_lines": [
+      "\"\"\"",
+      "Gemini-specific RAG Ingestion implementation.",
+      "Gemini handles embedding and chunking internally when files are uploaded to File Search stores,",
+      "so this implementation skips the embedding step and directly uploads files.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, cast",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "    get_async_httpx_client,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple, cast",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.llms.gemini.common_utils import GeminiModelInfo",
+      "from litellm.rag.ingestion.base_ingestion import BaseRAGIngestion",
+      "from litellm import Router",
+      "from litellm.types.rag import RAGIngestOptions"
+    ],
+    "classes": [
+      "GeminiRAGIngestion"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_463_a0fcfda437b8e5ea_AI_Chariot_Legacy_666_1.0.0_20260508_gemini_ingestion.py.json"
+}

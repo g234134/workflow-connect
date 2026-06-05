@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_statistical.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_statistical.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1245,
+  "content_sha256": "0283c51faec1454e342d27fef19b3b90c4b7e6c981aac57f490538fe39a3b184",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 29,
+    "char_count": 1245,
+    "preview_lines": [
+      "\"\"\"Stage 3: Statistical bigram scoring.",
+      "Note: ``from __future__ import annotations`` is intentionally omitted because",
+      "this module is compiled with mypyc, which does not support PEP 563 string",
+      "annotations.",
+      "\"\"\"",
+      "from chardet.models import BigramProfile, score_best_language",
+      "from chardet.pipeline import DetectionResult",
+      "from chardet.registry import EncodingInfo",
+      "def score_candidates(",
+      "    data: bytes, candidates: tuple[EncodingInfo, ...]"
+    ],
+    "imports": [
+      "from chardet.models import BigramProfile, score_best_language",
+      "from chardet.pipeline import DetectionResult",
+      "from chardet.registry import EncodingInfo"
+    ],
+    "classes": [],
+    "functions": [
+      "score_candidates"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_304_0283c51faec1454e_AI_Chariot_Legacy_666_1.0.0_20260508_statistical.py.json"
+}

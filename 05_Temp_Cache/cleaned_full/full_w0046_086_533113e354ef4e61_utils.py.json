@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\algorithms\\model_averaging\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3093,
+  "content_sha256": "533113e354ef4e61efbad6de5d0be1fc35cd02ef34acfddf034618fe5c94a442",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 62,
+    "char_count": 3093,
+    "preview_lines": [
+      "# flake8: noqa C101",
+      "import itertools",
+      "from typing import Union, Iterable, Dict, Iterator",
+      "import torch",
+      "import torch.distributed as dist",
+      "# The two imports below are not always available depending on the",
+      "# USE_DISTRIBUTED compile flag. Make sure they raise import error",
+      "# if we're trying to use them.",
+      "from torch.distributed import ProcessGroup, group",
+      "__all__ = [\"average_parameters\", \"get_params_to_average\", \"average_parameters_or_parameter_groups\"]"
+    ],
+    "imports": [
+      "import itertools",
+      "from typing import Union, Iterable, Dict, Iterator",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed import ProcessGroup, group"
+    ],
+    "classes": [],
+    "functions": [
+      "average_parameters",
+      "get_params_to_average",
+      "average_parameters_or_parameter_groups"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_086_533113e354ef4e61_utils.py.json"
+}

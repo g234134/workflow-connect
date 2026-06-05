@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\solvers.py",
+  "name": "solvers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13520,
+  "content_sha256": "15aade2aa0d5542e8fd88e328ee762ff7092de4c7449b980cf793bcc79044e01",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 435,
+    "non_empty_lines": 341,
+    "char_count": 13520,
+    "preview_lines": [
+      "\"\"\"Low-level linear systems solver. \"\"\"",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.iterables import connected_components",
+      "from sympy.core.sympify import sympify",
+      "from sympy.core.numbers import Integer, Rational",
+      "from sympy.matrices.dense import MutableDenseMatrix",
+      "from sympy.polys.domains import ZZ, QQ",
+      "from sympy.polys.domains import EX",
+      "from sympy.polys.rings import sring",
+      "from sympy.polys.polyerrors import NotInvertible"
+    ],
+    "imports": [
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.iterables import connected_components",
+      "from sympy.core.sympify import sympify",
+      "from sympy.core.numbers import Integer, Rational",
+      "from sympy.matrices.dense import MutableDenseMatrix",
+      "from sympy.polys.domains import ZZ, QQ",
+      "from sympy.polys.domains import EX",
+      "from sympy.polys.rings import sring",
+      "from sympy.polys.polyerrors import NotInvertible",
+      "from sympy.polys.domainmatrix import DomainMatrix"
+    ],
+    "classes": [
+      "PolyNonlinearError",
+      "RawMatrix"
+    ],
+    "functions": [
+      "eqs_to_matrix",
+      "sympy_eqs_to_ring",
+      "solve_lin_sys",
+      "_solve_lin_sys",
+      "_solve_lin_sys_component"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_120_15aade2aa0d5542e_solvers.py.json"
+}

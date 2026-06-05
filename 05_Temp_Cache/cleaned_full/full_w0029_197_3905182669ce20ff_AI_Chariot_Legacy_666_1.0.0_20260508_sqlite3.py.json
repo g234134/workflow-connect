@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sqlite3.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sqlite3.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4273,
+  "content_sha256": "3905182669ce20ffd109b6bfdf349d161747d328976bf1ac687d843d1d62d32e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 114,
+    "char_count": 4273,
+    "preview_lines": [
+      "import os",
+      "import sqlite3",
+      "from pathlib import Path",
+      "from contextlib import suppress, closing",
+      "from collections.abc import MutableMapping",
+      "BUILD_TABLE = \"\"\"",
+      "  CREATE TABLE IF NOT EXISTS Dict (",
+      "    key BLOB UNIQUE NOT NULL,",
+      "    value BLOB NOT NULL",
+      "  )"
+    ],
+    "imports": [
+      "import os",
+      "import sqlite3",
+      "from pathlib import Path",
+      "from contextlib import suppress, closing",
+      "from collections.abc import MutableMapping"
+    ],
+    "classes": [
+      "error",
+      "_Database"
+    ],
+    "functions": [
+      "_normalize_uri",
+      "open"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_197_3905182669ce20ff_AI_Chariot_Legacy_666_1.0.0_20260508_sqlite3.py.json"
+}

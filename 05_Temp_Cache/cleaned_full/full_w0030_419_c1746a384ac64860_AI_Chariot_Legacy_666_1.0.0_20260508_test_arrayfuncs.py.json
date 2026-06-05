@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayfuncs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayfuncs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1366,
+  "content_sha256": "c1746a384ac6486010bad9a719d6aaa2deb9712c679bb6939ee908e02dd603af",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 29,
+    "char_count": 1366,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.utils._testing import assert_allclose",
+      "from sklearn.utils.arrayfuncs import _all_with_any_reduction_axis_1, min_pos",
+      "def test_min_pos():",
+      "    # Check that min_pos returns a positive value and that it's consistent",
+      "    # between float and double",
+      "    X = np.random.RandomState(0).randn(100)",
+      "    min_double = min_pos(X)",
+      "    min_float = min_pos(X.astype(np.float32))"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.utils._testing import assert_allclose",
+      "from sklearn.utils.arrayfuncs import _all_with_any_reduction_axis_1, min_pos"
+    ],
+    "classes": [],
+    "functions": [
+      "test_min_pos",
+      "test_min_pos_no_positive",
+      "test_all_with_any_reduction_axis_1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_419_c1746a384ac64860_AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayfuncs.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sequnpack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sequnpack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3760,
+  "content_sha256": "c1f5223251370749ae28b58fea98df0f7f8793e388598955eb83be34b3b5e00c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 111,
+    "char_count": 3760,
+    "preview_lines": [
+      "import io",
+      "import pytest",
+      "from srsly.msgpack import Unpacker, BufferFull",
+      "from srsly.msgpack import pack",
+      "from srsly.msgpack.exceptions import OutOfData",
+      "def test_partialdata():",
+      "    unpacker = Unpacker()",
+      "    unpacker.feed(b\"\\xa5\")",
+      "    with pytest.raises(StopIteration):",
+      "        next(iter(unpacker))"
+    ],
+    "imports": [
+      "import io",
+      "import pytest",
+      "from srsly.msgpack import Unpacker, BufferFull",
+      "from srsly.msgpack import pack",
+      "from srsly.msgpack.exceptions import OutOfData"
+    ],
+    "classes": [],
+    "functions": [
+      "test_partialdata",
+      "test_foobar",
+      "test_foobar_skip",
+      "test_maxbuffersize",
+      "test_readbytes",
+      "test_issue124",
+      "test_unpack_tell"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_150_c1f5223251370749_AI_Chariot_Legacy_666_1.0.0_20260508_test_sequnpack.py.json"
+}

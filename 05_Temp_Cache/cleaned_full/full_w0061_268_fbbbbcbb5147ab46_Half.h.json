@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\Half.h",
+  "name": "Half.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 19943,
+  "content_sha256": "fbbbbcbb5147ab46f9bb71b9f2653a2c2588d1f3eab14c58c82039ca0fec8b12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 506,
+    "non_empty_lines": 462,
+    "char_count": 19943,
+    "preview_lines": [
+      "#pragma once",
+      "/// Defines the Half type (half-precision floating-point) including conversions",
+      "/// to standard C types and basic arithmetic operations. Note that arithmetic",
+      "/// operations are implemented by converting to floating point and",
+      "/// performing the operation in float32, instead of using CUDA half intrinsics.",
+      "/// Most uses of this type within ATen are memory bound, including the",
+      "/// element-wise kernels, and the half intrinsics aren't efficient on all GPUs.",
+      "/// If you are writing a compute bound kernel, you can use the CUDA half",
+      "/// intrinsics directly on the Half type from device code.",
+      "#include <c10/macros/Macros.h>"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_268_fbbbbcbb5147ab46_Half.h.json"
+}

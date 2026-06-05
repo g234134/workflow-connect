@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 210,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_adadelta.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_adadelta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17094,
+  "content_sha256": "4808f6a614f9b8d311fe13a66a1a85e7022008fcb4a1faa1864442311be5d729",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 461,
+    "non_empty_lines": 406,
+    "char_count": 17094,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "from typing import Any, cast, Dict, List, Optional, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (",
+      "    _capturable_doc,",
+      "    _default_to_fused_or_foreach,",
+      "    _differentiable_doc,",
+      "    _disable_dynamo_if_unsupported,"
+    ],
+    "imports": [
+      "from typing import Any, cast, Dict, List, Optional, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import ("
+    ],
+    "classes": [
+      "Adadelta"
+    ],
+    "functions": [
+      "_single_tensor_adadelta",
+      "_multi_tensor_adadelta",
+      "adadelta"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_210_4808f6a614f9b8d3_AI_Chariot_Legacy_666_1.0.0_20260508_adadelta.py.json"
+}

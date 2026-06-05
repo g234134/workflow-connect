@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__shrunk_covariance.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__shrunk_covariance.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28901,
+  "content_sha256": "c49e30a32454ea1186edd02b33519913f79e20875d90c27db0bb70bd5b83c994",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 822,
+    "non_empty_lines": 666,
+    "char_count": 28901,
+    "preview_lines": [
+      "\"\"\"",
+      "Covariance estimators using shrinkage.",
+      "Shrinkage corresponds to regularising `cov` using a convex combination:",
+      "shrunk_cov = (1-shrinkage)*cov + shrinkage*structured_estimate.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "# avoid division truncation",
+      "import warnings",
+      "from numbers import Integral, Real"
+    ],
+    "imports": [
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "from sklearn.base import _fit_context",
+      "from sklearn.covariance import EmpiricalCovariance, empirical_covariance",
+      "from sklearn.utils import check_array",
+      "from sklearn.utils._param_validation import Interval, validate_params",
+      "from sklearn.utils.validation import validate_data"
+    ],
+    "classes": [
+      "ShrunkCovariance",
+      "LedoitWolf",
+      "OAS"
+    ],
+    "functions": [
+      "_ledoit_wolf",
+      "_oas",
+      "shrunk_covariance",
+      "ledoit_wolf_shrinkage",
+      "ledoit_wolf",
+      "oas"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_197_c49e30a32454ea11_AI_Chariot_Legacy_666_1.0.0_20260508__shrunk_covariance.py.json"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_project.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_project.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16543,
+  "content_sha256": "f6cd2cb7ea2143ac19f92c71b2d749bc5fb22598b691751b88536b2af0b3ae93",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 448,
+    "non_empty_lines": 384,
+    "char_count": 16543,
+    "preview_lines": [
+      "\"\"\"",
+      "Projects are a way to handle Python projects within Jedi. For simpler plugins",
+      "you might not want to deal with projects, but if you want to give the user more",
+      "flexibility to define sys paths and Python interpreters for a project,",
+      ":class:`.Project` is the perfect way to allow for that.",
+      "Projects can be saved to disk and loaded again, to allow project definitions to",
+      "be used across repositories.",
+      "\"\"\"",
+      "import json",
+      "from pathlib import Path"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "from itertools import chain",
+      "from jedi import debug",
+      "from jedi.api.environment import get_cached_default_environment, create_environment",
+      "from jedi.api.exceptions import WrongVersion",
+      "from jedi.api.completion import search_in_module",
+      "from jedi.api.helpers import split_search_string, get_module_names",
+      "from jedi.inference.imports import load_module_from_path, \\",
+      "from jedi.inference.sys_path import discover_buildout_paths",
+      "from jedi.inference.cache import inference_state_as_method_param_cache",
+      "from jedi.inference.references import recurse_find_python_folders_and_files, search_in_file_ios",
+      "from jedi.file_io import FolderIO",
+      "import resolution. It is mostly used as a parameter to :class:`.Script`."
+    ],
+    "classes": [
+      "Project"
+    ],
+    "functions": [
+      "_try_to_skip_duplicates",
+      "_remove_duplicates_from_path",
+      "_is_potential_project",
+      "_is_django_path",
+      "get_default_project",
+      "_remove_imports"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_037_f6cd2cb7ea2143ac_AI_Chariot_Legacy_666_1.0.0_20260508_project.py.json"
+}

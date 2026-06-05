@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 395,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_maxcut.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_maxcut.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2804,
+  "content_sha256": "53a08364548b7d80c823ed675fd5c1edabd2cf5d244f1f3cbcd6b3245a0b4359",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 70,
+    "char_count": 2804,
+    "preview_lines": [
+      "import random",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import maxcut",
+      "@pytest.mark.parametrize(",
+      "    \"f\", (nx.approximation.randomized_partitioning, nx.approximation.one_exchange)",
+      ")",
+      "@pytest.mark.parametrize(\"graph_constructor\", (nx.DiGraph, nx.MultiGraph))",
+      "def test_raises_on_directed_and_multigraphs(f, graph_constructor):",
+      "    G = graph_constructor([(0, 1), (1, 2)])"
+    ],
+    "imports": [
+      "import random",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import maxcut"
+    ],
+    "classes": [],
+    "functions": [
+      "test_raises_on_directed_and_multigraphs",
+      "_is_valid_cut",
+      "_cut_is_locally_optimal",
+      "test_random_partitioning",
+      "test_random_partitioning_all_to_one",
+      "test_one_exchange_basic",
+      "test_one_exchange_optimal",
+      "test_negative_weights"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_395_53a08364548b7d80_AI_Chariot_Legacy_666_1.0.0_20260508_test_maxcut.py.json"
+}

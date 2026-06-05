@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 14,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16997,
+  "content_sha256": "fb459192b815aec17d544289876d0c2cb8166272d6d5fbd589f7f39660f624a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 405,
+    "non_empty_lines": 349,
+    "char_count": 16997,
+    "preview_lines": [
+      "import base64",
+      "import json  # <--- NEW",
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.arize import _utils",
+      "from litellm.integrations.langfuse.langfuse_otel_attributes import (",
+      "    LangfuseLLMObsOTELAttributes,",
+      ")",
+      "from litellm.integrations.opentelemetry import OpenTelemetry, OpenTelemetryConfig"
+    ],
+    "imports": [
+      "import base64",
+      "import json  # <--- NEW",
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.arize import _utils",
+      "from litellm.integrations.langfuse.langfuse_otel_attributes import (",
+      "from litellm.integrations.opentelemetry import OpenTelemetry, OpenTelemetryConfig",
+      "from litellm.types.integrations.langfuse_otel import (",
+      "from litellm.types.utils import StandardCallbackDynamicParams",
+      "from opentelemetry.trace import Span as _Span",
+      "from litellm.integrations.langfuse.langfuse import (",
+      "from litellm.integrations.arize._utils import safe_set_attribute",
+      "from litellm.integrations.arize._utils import safe_set_attribute",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps"
+    ],
+    "classes": [
+      "LangfuseOtelLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_014_fb459192b815aec1_AI_Chariot_Legacy_666_1.0.0_20260508_langfuse_otel.py.json"
+}

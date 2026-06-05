@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mutator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mutator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20333,
+  "content_sha256": "d0cc72d9949f14f110ad93357c81f1675edfd14fdac4b5c0ad0edaa648e6d142",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 529,
+    "non_empty_lines": 476,
+    "char_count": 20333,
+    "preview_lines": [
+      "\"\"\"",
+      "Instantiate a variation font.  Run, eg:",
+      ".. code-block:: sh",
+      "    $ fonttools varLib.mutator ./NotoSansArabic-VF.ttf wght=140 wdth=85",
+      ".. warning::",
+      "   ``fontTools.varLib.mutator`` is deprecated in favor of :mod:`fontTools.varLib.instancer`",
+      "   which provides equivalent full instancing and also supports partial instancing.",
+      "   Please migrate CLI usage to ``fonttools varLib.instancer`` and API usage to",
+      "   :func:`fontTools.varLib.instancer.instantiateVariableFont`.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from fontTools.misc.fixedTools import floatToFixedToFloat, floatToFixed",
+      "from fontTools.misc.loggingTools import deprecateFunction",
+      "from fontTools.misc.roundTools import otRound",
+      "from fontTools.pens.boundsPen import BoundsPen",
+      "from fontTools.ttLib import TTFont, newTable",
+      "from fontTools.ttLib.tables import ttProgram",
+      "from fontTools.ttLib.tables._g_l_y_f import (",
+      "from fontTools.varLib.models import (",
+      "from fontTools.varLib.merger import MutatorMerger",
+      "from fontTools.varLib.varStore import VarStoreInstancer",
+      "from fontTools.varLib.mvar import MVAR_ENTRIES",
+      "from fontTools.varLib.iup import iup_delta",
+      "import fontTools.subset.cff",
+      "import os.path",
+      "import logging",
+      "from io import BytesIO"
+    ],
+    "classes": [],
+    "functions": [
+      "interpolate_cff2_PrivateDict",
+      "interpolate_cff2_charstrings",
+      "interpolate_cff2_metrics",
+      "instantiateVariableFont",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_252_d0cc72d9949f14f1_AI_Chariot_Legacy_666_1.0.0_20260508_mutator.py.json"
+}

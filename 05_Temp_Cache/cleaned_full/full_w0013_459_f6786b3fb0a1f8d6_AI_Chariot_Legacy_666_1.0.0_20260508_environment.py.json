@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_environment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_environment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 61513,
+  "content_sha256": "f6786b3fb0a1f8d6c65f4d30bf2af8cb2fae84d1ead8e09ceb48201ab9e2fdf9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1672,
+    "non_empty_lines": 1397,
+    "char_count": 61513,
+    "preview_lines": [
+      "\"\"\"Classes for managing templates and their runtime and compile time",
+      "options.",
+      "\"\"\"",
+      "import os",
+      "import typing",
+      "import typing as t",
+      "import weakref",
+      "from collections import ChainMap",
+      "from functools import lru_cache",
+      "from functools import partial"
+    ],
+    "imports": [
+      "import os",
+      "import typing",
+      "import typing as t",
+      "import weakref",
+      "from collections import ChainMap",
+      "from functools import lru_cache",
+      "from functools import partial",
+      "from functools import reduce",
+      "from types import CodeType",
+      "from markupsafe import Markup",
+      "from . import nodes",
+      "from .compiler import CodeGenerator",
+      "from .compiler import generate",
+      "from .defaults import BLOCK_END_STRING",
+      "from .defaults import BLOCK_START_STRING",
+      "from .defaults import COMMENT_END_STRING",
+      "from .defaults import COMMENT_START_STRING",
+      "from .defaults import DEFAULT_FILTERS  # type: ignore[attr-defined]",
+      "from .defaults import DEFAULT_NAMESPACE",
+      "from .defaults import DEFAULT_POLICIES"
+    ],
+    "classes": [
+      "Environment",
+      "Template",
+      "TemplateModule",
+      "TemplateExpression",
+      "TemplateStream"
+    ],
+    "functions": [
+      "get_spontaneous_environment",
+      "create_cache",
+      "copy_cache",
+      "load_extensions",
+      "_environment_config_check"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_459_f6786b3fb0a1f8d6_AI_Chariot_Legacy_666_1.0.0_20260508_environment.py.json"
+}

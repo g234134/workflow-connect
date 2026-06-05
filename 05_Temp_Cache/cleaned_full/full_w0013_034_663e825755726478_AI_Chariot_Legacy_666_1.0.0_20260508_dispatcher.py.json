@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dispatcher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dispatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18658,
+  "content_sha256": "663e825755726478634f4ab3f6def79db246e85d51ed7779c76349b719f435c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 521,
+    "non_empty_lines": 427,
+    "char_count": 18658,
+    "preview_lines": [
+      "import asyncio",
+      "import logging",
+      "import threading",
+      "import weakref",
+      "from asgiref.sync import async_to_sync, iscoroutinefunction, sync_to_async",
+      "from django.utils.inspect import func_accepts_kwargs",
+      "logger = logging.getLogger(\"django.dispatch\")",
+      "def _make_id(target):",
+      "    if hasattr(target, \"__func__\"):",
+      "        return (id(target.__self__), id(target.__func__))"
+    ],
+    "imports": [
+      "import asyncio",
+      "import logging",
+      "import threading",
+      "import weakref",
+      "from asgiref.sync import async_to_sync, iscoroutinefunction, sync_to_async",
+      "from django.utils.inspect import func_accepts_kwargs",
+      "from django.conf import settings"
+    ],
+    "classes": [
+      "Signal"
+    ],
+    "functions": [
+      "_make_id",
+      "receiver"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_034_663e825755726478_AI_Chariot_Legacy_666_1.0.0_20260508_dispatcher.py.json"
+}

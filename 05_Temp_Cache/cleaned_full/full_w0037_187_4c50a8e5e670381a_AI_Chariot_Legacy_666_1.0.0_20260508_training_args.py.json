@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 187,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_training_args.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_training_args.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 142678,
+  "content_sha256": "4c50a8e5e670381a93089e294ed3c7be32dc8a15c66d29dc7a611ebcf851cfdb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2868,
+    "non_empty_lines": 2571,
+    "char_count": 142567,
+    "preview_lines": [
+      "# Copyright 2020 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import contextlib",
+      "import json",
+      "import math",
+      "import os",
+      "import warnings",
+      "from dataclasses import asdict, dataclass, field, fields",
+      "from datetime import timedelta",
+      "from enum import Enum",
+      "from functools import cached_property",
+      "from typing import Any, Literal",
+      "from .debug_utils import DebugOption",
+      "from .trainer_utils import (",
+      "from .utils import (",
+      "from .utils.generic import strtobool",
+      "from .utils.import_utils import enable_tf32, is_optimum_neuron_available",
+      "import torch",
+      "import torch.distributed as dist",
+      "from accelerate.state import AcceleratorState, PartialState",
+      "from accelerate.utils import DistributedType",
+      "from .trainer_pt_utils import AcceleratorConfig"
+    ],
+    "classes": [
+      "OptimizerNames",
+      "TrainingArguments",
+      "ParallelMode"
+    ],
+    "functions": [
+      "_convert_str_dict",
+      "str_to_bool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_187_4c50a8e5e670381a_AI_Chariot_Legacy_666_1.0.0_20260508_training_args.py.json"
+}

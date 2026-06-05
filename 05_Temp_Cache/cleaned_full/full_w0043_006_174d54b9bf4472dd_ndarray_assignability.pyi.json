@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 6,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\reveal\\ndarray_assignability.pyi",
+  "name": "ndarray_assignability.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 2993,
+  "content_sha256": "174d54b9bf4472dd395c3f2acf5f275a96770338674edf938bcc2c44e6751d68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 82,
+    "non_empty_lines": 67,
+    "char_count": 2993,
+    "preview_lines": [
+      "from typing import Any, Protocol, TypeAlias, TypeVar, assert_type",
+      "import numpy as np",
+      "from numpy._typing import _64Bit",
+      "_T = TypeVar(\"_T\")",
+      "_T_co = TypeVar(\"_T_co\", covariant=True)",
+      "class CanAbs(Protocol[_T_co]):",
+      "    def __abs__(self, /) -> _T_co: ...",
+      "class CanInvert(Protocol[_T_co]):",
+      "    def __invert__(self, /) -> _T_co: ...",
+      "class CanNeg(Protocol[_T_co]):"
+    ],
+    "imports": [
+      "from typing import Any, Protocol, TypeAlias, TypeVar, assert_type",
+      "import numpy as np",
+      "from numpy._typing import _64Bit"
+    ],
+    "classes": [
+      "CanAbs",
+      "CanInvert",
+      "CanNeg",
+      "CanPos"
+    ],
+    "functions": [
+      "do_abs",
+      "do_invert",
+      "do_neg",
+      "do_pos"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_006_174d54b9bf4472dd_ndarray_assignability.pyi.json"
+}

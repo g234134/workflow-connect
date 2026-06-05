@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_xreadlines.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_xreadlines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 689,
+  "content_sha256": "e8c2f19f7047bfc7539fd78839929004d8fe0efba1fbcbd9d712d285e43834ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 689,
+    "preview_lines": [
+      "\"\"\"Fix \"for x in f.xreadlines()\" -> \"for x in f\".",
+      "This fixer will also convert g(f.xreadlines) into g(f.__iter__).\"\"\"",
+      "# Author: Collin Winter",
+      "# Local imports",
+      "from .. import fixer_base",
+      "from ..fixer_util import Name",
+      "class FixXreadlines(fixer_base.BaseFix):",
+      "    BM_compatible = True",
+      "    PATTERN = \"\"\"",
+      "    power< call=any+ trailer< '.' 'xreadlines' > trailer< '(' ')' > >"
+    ],
+    "imports": [
+      "from .. import fixer_base",
+      "from ..fixer_util import Name"
+    ],
+    "classes": [
+      "FixXreadlines"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_127_e8c2f19f7047bfc7_AI_Chariot_Legacy_666_1.0.0_20260508_fix_xreadlines.py.json"
+}

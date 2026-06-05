@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_statNames.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_statNames.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9497,
+  "content_sha256": "471c522df9278ae27d23569e5e22c47424bcb932f8c3de76ff90fd0d27e244ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 260,
+    "non_empty_lines": 219,
+    "char_count": 9497,
+    "preview_lines": [
+      "\"\"\"Compute name information for a given location in user-space coordinates",
+      "using STAT data. This can be used to fill-in automatically the names of an",
+      "instance:",
+      ".. code:: python",
+      "    instance = doc.instances[0]",
+      "    names = getStatNames(doc, instance.getFullUserLocation(doc))",
+      "    print(names.styleNames)",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from dataclasses import dataclass"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from typing import Dict, Literal, Optional, Tuple, Union",
+      "import logging",
+      "from fontTools.designspaceLib import ("
+    ],
+    "classes": [
+      "StatNames"
+    ],
+    "functions": [
+      "getStatNames",
+      "_getSortedAxisLabels",
+      "_getAxisLabelsForUserLocation",
+      "_getRibbiStyle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_275_471c522df9278ae2_AI_Chariot_Legacy_666_1.0.0_20260508_statNames.py.json"
+}

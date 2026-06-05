@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\fsdp\\_dynamo_utils.py",
+  "name": "_dynamo_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2692,
+  "content_sha256": "9b528b45d01696b9a46ccfca44678be2496f825e9feddeeb706bff48b0650f55",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 38,
+    "char_count": 2692,
+    "preview_lines": [
+      "from typing import Set",
+      "import torch.nn as nn",
+      "def _annotate_modules_for_dynamo(",
+      "    module: nn.Module,",
+      "    ignored_modules: Set[nn.Module],",
+      "    use_orig_params: bool,",
+      "):",
+      "    \"\"\"",
+      "    Annotates the submodules in ``module`` 's tree, except those in",
+      "    ``ignored_modules``, indicating that the submodules are FSDP-managed and"
+    ],
+    "imports": [
+      "from typing import Set",
+      "import torch.nn as nn"
+    ],
+    "classes": [],
+    "functions": [
+      "_annotate_modules_for_dynamo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_157_9b528b45d01696b9__dynamo_utils.py.json"
+}

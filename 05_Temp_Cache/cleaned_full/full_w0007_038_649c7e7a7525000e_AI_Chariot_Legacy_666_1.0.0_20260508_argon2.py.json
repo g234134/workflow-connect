@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 38,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_argon2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_argon2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 632,
+  "content_sha256": "649c7e7a7525000e28edbe3a0b5c25cc6fd7010416d3022416050a92b33fc00f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 13,
+    "char_count": 632,
+    "preview_lines": [
+      "# This file is dual licensed under the terms of the Apache License, Version",
+      "# 2.0, and the BSD License. See the LICENSE file in the root of this repository",
+      "# for complete details.",
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives.kdf import KeyDerivationFunction",
+      "Argon2d = rust_openssl.kdf.Argon2d",
+      "Argon2i = rust_openssl.kdf.Argon2i",
+      "Argon2id = rust_openssl.kdf.Argon2id",
+      "KeyDerivationFunction.register(Argon2d)"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from cryptography.hazmat.bindings._rust import openssl as rust_openssl",
+      "from cryptography.hazmat.primitives.kdf import KeyDerivationFunction"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_038_649c7e7a7525000e_AI_Chariot_Legacy_666_1.0.0_20260508_argon2.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__remove_redundancy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__remove_redundancy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19291,
+  "content_sha256": "c26dc14cd52c9d14ddf9e98a7a2153b2cebc2b4f5f207e08632151ecc0f77098",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 522,
+    "non_empty_lines": 436,
+    "char_count": 19291,
+    "preview_lines": [
+      "\"\"\"",
+      "Routines for removing redundant (linearly dependent) equations from linear",
+      "programming equality constraints.",
+      "\"\"\"",
+      "# Author: Matt Haberland",
+      "import numpy as np",
+      "from scipy.linalg import svd",
+      "from scipy.linalg.interpolative import interp_decomp",
+      "import scipy",
+      "from scipy.linalg.blas import dtrsm"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.linalg import svd",
+      "from scipy.linalg.interpolative import interp_decomp",
+      "import scipy",
+      "from scipy.linalg.blas import dtrsm"
+    ],
+    "classes": [],
+    "functions": [
+      "_row_count",
+      "_get_densest",
+      "_remove_zero_rows",
+      "bg_update_dense",
+      "_remove_redundancy_pivot_dense",
+      "_remove_redundancy_pivot_sparse",
+      "_remove_redundancy_svd",
+      "_remove_redundancy_id"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_030_c26dc14cd52c9d14_AI_Chariot_Legacy_666_1.0.0_20260508__remove_redundancy.py.json"
+}

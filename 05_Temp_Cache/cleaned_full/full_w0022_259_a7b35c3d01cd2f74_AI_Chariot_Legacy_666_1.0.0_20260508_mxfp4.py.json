@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mxfp4.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mxfp4.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28333,
+  "content_sha256": "a7b35c3d01cd2f744883c0913ede5b47a90d2c5ab66d31a2d82deb3bd2cffd35",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 712,
+    "non_empty_lines": 590,
+    "char_count": 28333,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from ..utils import is_torch_available, logging",
+      "import torch",
+      "from torch import nn",
+      "from contextlib import contextmanager",
+      "from ..core_model_loading import ConversionOps, _IdentityOp",
+      "from ..quantizers.quantizers_utils import get_module_from_name, should_convert_module",
+      "import torch"
+    ],
+    "classes": [
+      "Mxfp4Quantize",
+      "Mxfp4Dequantize",
+      "Mxfp4Deserialize",
+      "Mxfp4ReverseDeserialize",
+      "Mxfp4GptOssExperts"
+    ],
+    "functions": [
+      "on_device",
+      "quantize_to_mxfp4",
+      "swizzle_mxfp4",
+      "_convert_moe_packed_tensors",
+      "convert_moe_packed_tensors",
+      "routing_torch_dist",
+      "mlp_forward",
+      "dequantize",
+      "dequantize_convertops",
+      "load_and_swizzle_mxfp4",
+      "swizzle_mxfp4_convertops",
+      "replace_with_mxfp4_linear"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_259_a7b35c3d01cd2f74_AI_Chariot_Legacy_666_1.0.0_20260508_mxfp4.py.json"
+}

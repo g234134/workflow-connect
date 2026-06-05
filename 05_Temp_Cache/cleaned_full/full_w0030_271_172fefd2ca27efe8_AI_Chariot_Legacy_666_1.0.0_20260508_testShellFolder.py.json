@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 271,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testShellFolder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testShellFolder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 603,
+  "content_sha256": "172fefd2ca27efe8fe03a636dea56d523151dc0a1cf5a8ebb56a0c68a719ef65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 18,
+    "char_count": 603,
+    "preview_lines": [
+      "from win32com.shell import shell",
+      "from win32com.shell.shellcon import *",
+      "sf = shell.SHGetDesktopFolder()",
+      "print(\"Shell Folder is\", sf)",
+      "names = []",
+      "for i in sf:  # Magically calls EnumObjects",
+      "    name = sf.GetDisplayNameOf(i, SHGDN_NORMAL)",
+      "    names.append(name)",
+      "# And get the enumerator manually",
+      "enum = sf.EnumObjects(0, SHCONTF_FOLDERS | SHCONTF_NONFOLDERS | SHCONTF_INCLUDEHIDDEN)"
+    ],
+    "imports": [
+      "from win32com.shell import shell",
+      "from win32com.shell.shellcon import *"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_271_172fefd2ca27efe8_AI_Chariot_Legacy_666_1.0.0_20260508_testShellFolder.py.json"
+}

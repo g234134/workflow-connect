@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\tensor\\parallel\\_utils.py",
+  "name": "_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7543,
+  "content_sha256": "624d82e9301f6b7960ec7c8f493e0532fa29261edbe758b2f8576807c09d71ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 206,
+    "non_empty_lines": 173,
+    "char_count": 7543,
+    "preview_lines": [
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Optional, Tuple, Union",
+      "import torch",
+      "from torch.distributed._tensor import DeviceMesh, DTensor",
+      "from torch.distributed._tensor.placement_types import Placement",
+      "from torch.distributed.device_mesh import _mesh_resources",
+      "try:",
+      "    from torch._dynamo.external_utils import is_compiling as is_torchdynamo_compiling",
+      "except Exception:"
+    ],
+    "imports": [
+      "import functools",
+      "import warnings",
+      "from typing import Callable, Optional, Tuple, Union",
+      "import torch",
+      "from torch.distributed._tensor import DeviceMesh, DTensor",
+      "from torch.distributed._tensor.placement_types import Placement",
+      "from torch.distributed.device_mesh import _mesh_resources",
+      "from torch._dynamo.external_utils import is_compiling as is_torchdynamo_compiling"
+    ],
+    "classes": [],
+    "functions": [
+      "_deprecate_warnings",
+      "_prepare_input_validate",
+      "_prepare_output_validate",
+      "_create_1d_device_mesh",
+      "_validate_tp_mesh_dim"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_236_624d82e9301f6b79__utils.py.json"
+}

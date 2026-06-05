@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_core_functionalities.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_core_functionalities.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2899,
+  "content_sha256": "7a5663b07eb31a527e21584e8bca99f57db0b69a3f4340ef20424ce1ef3c00f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 72,
+    "char_count": 2899,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "from pandas.tests.copy_view.util import get_array",
+      "def test_assigning_to_same_variable_removes_references():",
+      "    df = DataFrame({\"a\": [1, 2, 3]})",
+      "    df = df.reset_index()",
+      "    assert df._mgr._has_no_reference(1)",
+      "    arr = get_array(df, \"a\")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "from pandas.tests.copy_view.util import get_array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_assigning_to_same_variable_removes_references",
+      "test_setitem_dont_track_unnecessary_references",
+      "test_setitem_with_view_copies",
+      "test_setitem_with_view_invalidated_does_not_copy",
+      "test_out_of_scope",
+      "test_delete",
+      "test_delete_reference"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_346_7a5663b07eb31a52_AI_Chariot_Legacy_666_1.0.0_20260508_test_core_functionalities.py.json"
+}

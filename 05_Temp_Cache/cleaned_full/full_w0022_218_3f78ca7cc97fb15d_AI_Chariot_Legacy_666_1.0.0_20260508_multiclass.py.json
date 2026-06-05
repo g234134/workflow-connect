@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multiclass.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multiclass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 45800,
+  "content_sha256": "3f78ca7cc97fb15d4dbef44caa94f412be678b20914ad37c135cf15fdd859552",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1289,
+    "non_empty_lines": 1063,
+    "char_count": 45800,
+    "preview_lines": [
+      "\"\"\"Multiclass learning algorithms.",
+      "- one-vs-the-rest / one-vs-all",
+      "- one-vs-one",
+      "- error correcting output codes",
+      "The estimators provided in this module are meta-estimators: they require a base",
+      "estimator to be provided in their constructor. For example, it is possible to",
+      "use these estimators to turn a binary classifier or a regressor into a",
+      "multiclass classifier. It is also possible to use these estimators with",
+      "multiclass estimators in the hope that their accuracy or runtime performance",
+      "improves."
+    ],
+    "imports": [
+      "import array",
+      "import itertools",
+      "import warnings",
+      "from numbers import Integral, Real",
+      "import numpy as np",
+      "import scipy.sparse as sp",
+      "from sklearn.base import (",
+      "from sklearn.metrics.pairwise import pairwise_distances_argmin",
+      "from sklearn.preprocessing import LabelBinarizer",
+      "from sklearn.utils import check_random_state",
+      "from sklearn.utils._param_validation import HasMethods, Interval",
+      "from sklearn.utils._tags import get_tags",
+      "from sklearn.utils.metadata_routing import (",
+      "from sklearn.utils.metaestimators import _safe_split, available_if",
+      "from sklearn.utils.multiclass import (",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "_ConstantPredictor",
+      "OneVsRestClassifier",
+      "OneVsOneClassifier",
+      "OutputCodeClassifier"
+    ],
+    "functions": [
+      "_fit_binary",
+      "_partial_fit_binary",
+      "_predict_binary",
+      "_threshold_for_binary_predict",
+      "_estimators_has",
+      "_fit_ovo_binary",
+      "_partial_fit_ovo_binary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_218_3f78ca7cc97fb15d_AI_Chariot_Legacy_666_1.0.0_20260508_multiclass.py.json"
+}

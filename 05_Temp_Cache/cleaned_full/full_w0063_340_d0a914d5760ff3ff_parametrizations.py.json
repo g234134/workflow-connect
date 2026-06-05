@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\utils\\parametrizations.py",
+  "name": "parametrizations.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25725,
+  "content_sha256": "d0a914d5760ff3ffa788ac552e4309265e12e3055e8ec57d7d152f321822cf79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 571,
+    "non_empty_lines": 480,
+    "char_count": 25725,
+    "preview_lines": [
+      "from enum import Enum, auto",
+      "import torch",
+      "from torch import Tensor",
+      "from ..utils import parametrize",
+      "from ..modules import Module",
+      "from .. import functional as F",
+      "from typing import Optional",
+      "__all__ = ['orthogonal', 'spectral_norm', 'weight_norm']",
+      "def _is_orthogonal(Q, eps=None):",
+      "    n, k = Q.size(-2), Q.size(-1)"
+    ],
+    "imports": [
+      "from enum import Enum, auto",
+      "import torch",
+      "from torch import Tensor",
+      "from ..utils import parametrize",
+      "from ..modules import Module",
+      "from .. import functional as F",
+      "from typing import Optional"
+    ],
+    "classes": [
+      "_OrthMaps",
+      "_Orthogonal",
+      "_WeightNorm",
+      "_SpectralNorm"
+    ],
+    "functions": [
+      "_is_orthogonal",
+      "_make_orthogonal",
+      "orthogonal",
+      "weight_norm",
+      "spectral_norm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_340_d0a914d5760ff3ff_parametrizations.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lstm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lstm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5828,
+  "content_sha256": "b94edaf26e3145b383a6dc4db47e462b91012176e0f7fceec756f40783532cb3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 178,
+    "non_empty_lines": 153,
+    "char_count": 5828,
+    "preview_lines": [
+      "import timeit",
+      "import numpy",
+      "import pytest",
+      "from thinc.api import LSTM, NumpyOps, Ops, PyTorchLSTM, fix_random_seed, with_padded",
+      "from thinc.compat import has_torch",
+      "@pytest.fixture(params=[1, 6])",
+      "def nI(request):",
+      "    return request.param",
+      "@pytest.fixture(params=[1, 2, 7, 9])",
+      "def nO(request):"
+    ],
+    "imports": [
+      "import timeit",
+      "import numpy",
+      "import pytest",
+      "from thinc.api import LSTM, NumpyOps, Ops, PyTorchLSTM, fix_random_seed, with_padded",
+      "from thinc.compat import has_torch"
+    ],
+    "classes": [],
+    "functions": [
+      "nI",
+      "nO",
+      "test_list2padded",
+      "test_LSTM_init_with_sizes",
+      "test_LSTM_fwd_bwd_shapes_simple",
+      "test_BiLSTM_fwd_bwd_shapes",
+      "test_LSTM_learns",
+      "test_benchmark_LSTM_fwd",
+      "test_lstm_init",
+      "test_pytorch_lstm_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_343_b94edaf26e3145b3_AI_Chariot_Legacy_666_1.0.0_20260508_test_lstm.py.json"
+}

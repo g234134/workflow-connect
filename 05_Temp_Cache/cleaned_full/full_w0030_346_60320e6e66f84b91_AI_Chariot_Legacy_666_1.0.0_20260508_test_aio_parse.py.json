@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_parse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_parse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 892,
+  "content_sha256": "60320e6e66f84b911f0f00273b0c6b957b0761b402de698c4efb54b661f24af8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 24,
+    "char_count": 892,
+    "preview_lines": [
+      "import os",
+      "import pytest",
+      "from dotenv import load_dotenv",
+      "from firecrawl import AsyncFirecrawl",
+      "from firecrawl.v2.types import Document, ScrapeOptions",
+      "load_dotenv()",
+      "API_KEY = (os.getenv(\"API_KEY\") or \"\").strip()",
+      "API_URL = (os.getenv(\"API_URL\") or \"\").strip()",
+      "@pytest.mark.skipif(",
+      "    not API_KEY or not API_URL,"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from dotenv import load_dotenv",
+      "from firecrawl import AsyncFirecrawl",
+      "from firecrawl.v2.types import Document, ScrapeOptions"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_346_60320e6e66f84b91_AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_parse.py.json"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ctc_decoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ctc_decoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20650,
+  "content_sha256": "c28c946830ae68c42a3d343bb8bb9cf7d9713003ac263e40c56c12f617fa24d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 568,
+    "non_empty_lines": 459,
+    "char_count": 20650,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import itertools as it",
+      "from abc import abstractmethod",
+      "from collections import namedtuple",
+      "from typing import Dict, List, NamedTuple, Optional, Tuple, Union",
+      "import torch",
+      "from flashlight.lib.text.decoder import (",
+      "    CriterionType as _CriterionType,",
+      "    LexiconDecoder as _LexiconDecoder,",
+      "    LexiconDecoderOptions as _LexiconDecoderOptions,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import itertools as it",
+      "from abc import abstractmethod",
+      "from collections import namedtuple",
+      "from typing import Dict, List, NamedTuple, Optional, Tuple, Union",
+      "import torch",
+      "from flashlight.lib.text.decoder import (",
+      "from flashlight.lib.text.dictionary import (",
+      "from torchaudio.utils import download_asset",
+      "from flashlight.lib.text.decoder.kenlm import KenLM as _KenLM",
+      "from flashlight.lib.text.decoder import KenLM as _KenLM"
+    ],
+    "classes": [
+      "CTCHypothesis",
+      "CTCDecoderLMState",
+      "CTCDecoderLM",
+      "CTCDecoder"
+    ],
+    "functions": [
+      "_construct_trie",
+      "_get_word_dict",
+      "ctc_decoder",
+      "_get_filenames",
+      "download_pretrained_files"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_399_c28c946830ae68c4_AI_Chariot_Legacy_666_1.0.0_20260508__ctc_decoder.py.json"
+}

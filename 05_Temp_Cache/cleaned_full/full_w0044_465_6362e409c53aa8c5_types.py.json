@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\types.py",
+  "name": "types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2263,
+  "content_sha256": "6362e409c53aa8c5ff171e6043965939202460127fefdfc44ac1fa0503ba5a26",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 69,
+    "char_count": 2263,
+    "preview_lines": [
+      "import dataclasses",
+      "import sys",
+      "import types",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Optional, Protocol, Union",
+      "from typing_extensions import TypeAlias",
+      "if sys.version_info >= (3, 11):",
+      "    from torch._C._dynamo import eval_frame",
+      "    DynamoFrameType: TypeAlias = eval_frame._PyInterpreterFrame",
+      "else:",
+      "    DynamoFrameType: TypeAlias = types.FrameType"
+    ],
+    "imports": [
+      "import dataclasses",
+      "import sys",
+      "import types",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Optional, Protocol, Union",
+      "from typing_extensions import TypeAlias",
+      "from torch._C._dynamo import eval_frame",
+      "import torch"
+    ],
+    "classes": [
+      "GuardFail",
+      "GuardFn",
+      "GuardedCode",
+      "DynamoCallbackFn",
+      "DynamoGuardHook",
+      "ProfilerStartHook",
+      "ProfilerEndHook",
+      "BytecodeHook"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_465_6362e409c53aa8c5_types.py.json"
+}

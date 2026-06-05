@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dviread.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dviread.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2764,
+  "content_sha256": "25e4ee03614c523d4575dc435415d4b67bd9613833b44f82c915cbfe6236d0fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 71,
+    "char_count": 2764,
+    "preview_lines": [
+      "import json",
+      "from pathlib import Path",
+      "import shutil",
+      "import matplotlib.dviread as dr",
+      "import pytest",
+      "def test_PsfontsMap(monkeypatch):",
+      "    monkeypatch.setattr(dr, 'find_tex_file', lambda x: x.decode())",
+      "    filename = str(Path(__file__).parent / 'baseline_images/dviread/test.map')",
+      "    fontmap = dr.PsfontsMap(filename)",
+      "    # Check all properties of a few fonts"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "import shutil",
+      "import matplotlib.dviread as dr",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_PsfontsMap",
+      "test_dviread"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_119_25e4ee03614c523d_AI_Chariot_Legacy_666_1.0.0_20260508_test_dviread.py.json"
+}

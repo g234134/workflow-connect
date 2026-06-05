@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 362,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_brightdata_serp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_brightdata_serp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8905,
+  "content_sha256": "43bb0ff415dba9dbb36b1f8c2e62d4a67e7f45770269806e8699425c546797d9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 202,
+    "char_count": 8905,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "from typing import Any",
+      "import urllib.parse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "import requests",
+      "class BrightDataConfig(BaseModel):",
+      "    API_URL: str = \"https://api.brightdata.com/request\"",
+      "    @classmethod"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from typing import Any",
+      "import urllib.parse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "import requests"
+    ],
+    "classes": [
+      "BrightDataConfig",
+      "BrightDataSearchToolSchema",
+      "BrightDataSearchTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_362_43bb0ff415dba9db_AI_Chariot_Legacy_666_1.0.0_20260508_brightdata_serp.py.json"
+}

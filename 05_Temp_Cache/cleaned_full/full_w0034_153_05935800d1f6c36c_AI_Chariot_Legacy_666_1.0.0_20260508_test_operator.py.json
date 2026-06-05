@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 153,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_operator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_operator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8164,
+  "content_sha256": "05935800d1f6c36c5f3a4a85037a084bf2a5d4a9f09c352ba15eddf6543721d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 263,
+    "non_empty_lines": 210,
+    "char_count": 8164,
+    "preview_lines": [
+      "from sympy.core.function import (Derivative, Function, diff)",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.numbers import (Integer, pi)",
+      "from sympy.core.symbol import (Symbol, symbols)",
+      "from sympy.functions.elementary.trigonometric import sin",
+      "from sympy.physics.quantum.qexpr import QExpr",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.hilbert import HilbertSpace",
+      "from sympy.physics.quantum.operator import (Operator, UnitaryOperator,",
+      "                                            HermitianOperator, OuterProduct,"
+    ],
+    "imports": [
+      "from sympy.core.function import (Derivative, Function, diff)",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.numbers import (Integer, pi)",
+      "from sympy.core.symbol import (Symbol, symbols)",
+      "from sympy.functions.elementary.trigonometric import sin",
+      "from sympy.physics.quantum.qexpr import QExpr",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.hilbert import HilbertSpace",
+      "from sympy.physics.quantum.operator import (Operator, UnitaryOperator,",
+      "from sympy.physics.quantum.state import Ket, Bra, Wavefunction",
+      "from sympy.physics.quantum.qapply import qapply",
+      "from sympy.physics.quantum.represent import represent",
+      "from sympy.physics.quantum.spin import JzKet, JzBra",
+      "from sympy.physics.quantum.trace import Tr",
+      "from sympy.matrices import eye"
+    ],
+    "classes": [
+      "CustomKet",
+      "CustomOp"
+    ],
+    "functions": [
+      "test_operator",
+      "test_operator_inv",
+      "test_hermitian",
+      "test_unitary",
+      "test_identity",
+      "test_outer_product",
+      "test_operator_dagger",
+      "test_differential_operator",
+      "test_eval_power"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_153_05935800d1f6c36c_AI_Chariot_Legacy_666_1.0.0_20260508_test_operator.py.json"
+}

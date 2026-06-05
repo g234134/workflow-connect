@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 412,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_builtin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_builtin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 84333,
+  "content_sha256": "d98bffb1173667afebfcd754f9a5d1f73f8f4a4945cdaced9de5fc55aacd8ab7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2109,
+    "non_empty_lines": 1872,
+    "char_count": 84333,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import itertools",
+      "import logging",
+      "import math",
+      "import operator",
+      "import types",
+      "from collections import defaultdict, OrderedDict"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import itertools",
+      "import logging",
+      "import math",
+      "import operator",
+      "import types",
+      "from collections import defaultdict, OrderedDict",
+      "from collections.abc import KeysView",
+      "from typing import Dict, List, TYPE_CHECKING",
+      "import torch",
+      "from torch import sym_float, sym_int",
+      "from torch.utils._python_dispatch import is_traceable_wrapper_subclass",
+      "from .. import config, variables",
+      "from ..exc import (",
+      "from ..guards import GuardBuilder, install_guard",
+      "from ..replay_record import DummyModule",
+      "from ..source import AttrSource, GetItemSource, is_constant_source, TypeSource",
+      "from ..utils import ("
+    ],
+    "classes": [
+      "BuiltinVariable"
+    ],
+    "functions": [
+      "dynamo_disable_grad"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_412_d98bffb1173667af_AI_Chariot_Legacy_666_1.0.0_20260508_builtin.py.json"
+}

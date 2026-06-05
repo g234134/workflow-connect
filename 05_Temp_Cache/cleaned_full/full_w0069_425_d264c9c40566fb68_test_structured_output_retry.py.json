@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 425,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\middleware\\implementations\\test_structured_output_retry.py",
+  "name": "test_structured_output_retry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12327,
+  "content_sha256": "d264c9c40566fb6875d2728858791ab0fd80306a1ab3bb690487f0a19a3f3189",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 369,
+    "non_empty_lines": 307,
+    "char_count": 12324,
+    "preview_lines": [
+      "\"\"\"Tests for StructuredOutputRetryMiddleware functionality.\"\"\"",
+      "from collections.abc import Callable",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_core.tools import tool",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from pydantic import BaseModel",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware.types import (",
+      "    AgentMiddleware,"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import pytest",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_core.tools import tool",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from pydantic import BaseModel",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware.types import (",
+      "from langchain.agents.structured_output import StructuredOutputError, ToolStrategy",
+      "from tests.unit_tests.agents.model import FakeToolCallingModel"
+    ],
+    "classes": [
+      "StructuredOutputRetryMiddleware",
+      "WeatherReport"
+    ],
+    "functions": [
+      "get_weather",
+      "test_structured_output_retry_first_attempt_invalid",
+      "test_structured_output_retry_exceeds_max_retries",
+      "test_structured_output_retry_succeeds_first_attempt",
+      "test_structured_output_retry_validation_error",
+      "test_structured_output_retry_zero_retries",
+      "test_structured_output_retry_preserves_messages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_425_d264c9c40566fb68_test_structured_output_retry.py.json"
+}

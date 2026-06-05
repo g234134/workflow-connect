@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_initialise.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_initialise.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3325,
+  "content_sha256": "fa1227cbce82957a37f62c61e624827d421ad9ffe1fdb80a4435bb82ab3e28b5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 91,
+    "char_count": 3325,
+    "preview_lines": [
+      "# Copyright Jonathan Hartley 2013. BSD 3-Clause license, see LICENSE file.",
+      "import atexit",
+      "import contextlib",
+      "import sys",
+      "from .ansitowin32 import AnsiToWin32",
+      "def _wipe_internal_state_for_tests():",
+      "    global orig_stdout, orig_stderr",
+      "    orig_stdout = None",
+      "    orig_stderr = None",
+      "    global wrapped_stdout, wrapped_stderr"
+    ],
+    "imports": [
+      "import atexit",
+      "import contextlib",
+      "import sys",
+      "from .ansitowin32 import AnsiToWin32"
+    ],
+    "classes": [],
+    "functions": [
+      "_wipe_internal_state_for_tests",
+      "reset_all",
+      "init",
+      "deinit",
+      "just_fix_windows_console",
+      "colorama_text",
+      "reinit",
+      "wrap_stream"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_468_fa1227cbce82957a_AI_Chariot_Legacy_666_1.0.0_20260508_initialise.py.json"
+}

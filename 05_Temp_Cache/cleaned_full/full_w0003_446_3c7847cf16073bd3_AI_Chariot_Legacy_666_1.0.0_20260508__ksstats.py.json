@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ksstats.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ksstats.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20739,
+  "content_sha256": "3c7847cf16073bd3be4a286e490f57ebfff09cd6edbfb16f2955697ff16c29a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 600,
+    "non_empty_lines": 518,
+    "char_count": 20739,
+    "preview_lines": [
+      "# Compute the two-sided one-sample Kolmogorov-Smirnov Prob(Dn <= d) where:",
+      "#    D_n = sup_x{|F_n(x) - F(x)|},",
+      "#    F_n(x) is the empirical CDF for a sample of size n {x_i: i=1,...,n},",
+      "#    F(x) is the CDF of a probability distribution.",
+      "#",
+      "# Exact methods:",
+      "# Prob(D_n >= d) can be computed via a matrix algorithm of Durbin[1]",
+      "#   or a recursion algorithm due to Pomeranz[2].",
+      "# Marsaglia, Tsang & Wang[3] gave a computation-efficient way to perform",
+      "#   the Durbin algorithm."
+    ],
+    "imports": [
+      "import numpy as np",
+      "import scipy.special",
+      "import scipy.special._ufuncs as scu",
+      "from scipy._lib._finite_differences import _derivative"
+    ],
+    "classes": [],
+    "functions": [
+      "_log_nfactorial_div_n_pow_n",
+      "_clip_prob",
+      "_select_and_clip_prob",
+      "_kolmogn_DMTW",
+      "_pomeranz_compute_j1j2",
+      "_kolmogn_Pomeranz",
+      "_kolmogn_PelzGood",
+      "_kolmogn",
+      "_kolmogn_p",
+      "_kolmogni",
+      "kolmogn",
+      "kolmognp",
+      "kolmogni"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_446_3c7847cf16073bd3_AI_Chariot_Legacy_666_1.0.0_20260508__ksstats.py.json"
+}

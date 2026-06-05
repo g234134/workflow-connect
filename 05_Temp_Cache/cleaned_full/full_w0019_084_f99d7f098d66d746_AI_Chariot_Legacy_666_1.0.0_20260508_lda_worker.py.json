@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 84,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lda_worker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lda_worker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7794,
+  "content_sha256": "f99d7f098d66d74647688409f83f4ccc6deb32a4464ee7139fc3b40643a9cb53",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 183,
+    "char_count": 7794,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2011 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Worker (\"slave\") process used in computing distributed Latent Dirichlet Allocation",
+      "(LDA, :class:`~gensim.models.ldamodel.LdaModel`).",
+      "Run this script on every node in your cluster. If you wish, you may even run it multiple times on a single machine,",
+      "to make better use of multiple cores (just beware that memory footprint increases accordingly).",
+      "How to use distributed :class:`~gensim.models.ldamodel.LdaModel`"
+    ],
+    "imports": [
+      "from __future__ import with_statement",
+      "import os",
+      "import sys",
+      "import logging",
+      "import threading",
+      "import tempfile",
+      "import argparse",
+      "import Queue",
+      "import queue as Queue",
+      "import Pyro4",
+      "from gensim.models import ldamodel",
+      "from gensim import utils"
+    ],
+    "classes": [
+      "Worker"
+    ],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_084_f99d7f098d66d746_AI_Chariot_Legacy_666_1.0.0_20260508_lda_worker.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_balance_sheets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_balance_sheets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2019,
+  "content_sha256": "29cb0a587aad7022036a10f83029d2456d2fff2ff7d2d4549aa49435765b13af",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 51,
+    "char_count": 2019,
+    "preview_lines": [
+      "from typing import Optional, Type",
+      "from langchain_core.callbacks import CallbackManagerForToolRun",
+      "from langchain_core.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper",
+      "class BalanceSheetsSchema(BaseModel):",
+      "    \"\"\"Input for BalanceSheets.\"\"\"",
+      "    ticker: str = Field(",
+      "        description=\"The ticker symbol to fetch balance sheets for.\",",
+      "    )"
+    ],
+    "imports": [
+      "from typing import Optional, Type",
+      "from langchain_core.callbacks import CallbackManagerForToolRun",
+      "from langchain_core.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper"
+    ],
+    "classes": [
+      "BalanceSheetsSchema",
+      "BalanceSheets"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_458_29cb0a587aad7022_AI_Chariot_Legacy_666_1.0.0_20260508_balance_sheets.py.json"
+}

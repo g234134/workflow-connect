@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_import_huggingface.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_import_huggingface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6080,
+  "content_sha256": "34c2ba62b0080df3b0f23d6d57edd74f0c7f9b06c91ef83c95d4eb016473b483",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 134,
+    "non_empty_lines": 117,
+    "char_count": 6080,
+    "preview_lines": [
+      "\"\"\"Import Hugging Face transformers's wav2vec2.0 pretrained weights to torchaudios's format.",
+      "\"\"\"",
+      "import logging",
+      "from typing import Any, Dict",
+      "import torch",
+      "from torch.nn import Module",
+      "from ..model import wav2vec2_model, Wav2Vec2Model, wavlm_model",
+      "_LG = logging.getLogger(__name__)",
+      "def _get_config(cfg):",
+      "    config = {"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Any, Dict",
+      "import torch",
+      "from torch.nn import Module",
+      "from ..model import wav2vec2_model, Wav2Vec2Model, wavlm_model"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_config",
+      "_get_config_wavlm",
+      "_build",
+      "transform_wavlm_encoder_state",
+      "import_huggingface_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_388_34c2ba62b0080df3_AI_Chariot_Legacy_666_1.0.0_20260508_import_huggingface.py.json"
+}

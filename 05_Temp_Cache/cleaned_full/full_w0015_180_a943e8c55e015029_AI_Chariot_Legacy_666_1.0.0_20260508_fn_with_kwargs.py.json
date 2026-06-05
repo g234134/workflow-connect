@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fn_with_kwargs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fn_with_kwargs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 761,
+  "content_sha256": "a943e8c55e0150290b7c4ce75b93e31cb620fa081aa79408f8816dccce05ab21",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 27,
+    "char_count": 761,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "class FnWithKwargs(torch.nn.Module):",
+      "    \"\"\"",
+      "    Keyword arguments are not supported at the moment.",
+      "    \"\"\"",
+      "    def forward(self, pos0, tuple0, *myargs, mykw0, **mykwargs):",
+      "        out = pos0",
+      "        for arg in tuple0:",
+      "            out = out * arg"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "FnWithKwargs"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_180_a943e8c55e015029_AI_Chariot_Legacy_666_1.0.0_20260508_fn_with_kwargs.py.json"
+}

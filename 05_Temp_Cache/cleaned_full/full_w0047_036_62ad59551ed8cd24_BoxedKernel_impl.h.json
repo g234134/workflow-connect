@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\boxing\\BoxedKernel_impl.h",
+  "name": "BoxedKernel_impl.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3360,
+  "content_sha256": "62ad59551ed8cd2405e8c5aa06655bb70764209111ca39bc309a8ddd2ede017b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 99,
+    "non_empty_lines": 83,
+    "char_count": 3360,
+    "preview_lines": [
+      "#pragma once",
+      "namespace c10 {",
+      "inline BoxedKernel::BoxedKernel()",
+      "    : functor_()",
+      ", boxed_kernel_func_(nullptr)",
+      "{}",
+      "inline BoxedKernel::BoxedKernel(std::unique_ptr<OperatorKernel> functor, InternalBoxedKernelFunction* boxed_kernel_func)",
+      ": functor_(std::move(functor))",
+      ", boxed_kernel_func_(boxed_kernel_func)",
+      "{}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_036_62ad59551ed8cd24_BoxedKernel_impl.h.json"
+}

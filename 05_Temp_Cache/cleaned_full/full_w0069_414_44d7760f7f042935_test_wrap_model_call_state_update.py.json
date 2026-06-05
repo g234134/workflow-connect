@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 414,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\middleware\\core\\test_wrap_model_call_state_update.py",
+  "name": "test_wrap_model_call_state_update.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 37387,
+  "content_sha256": "44d7760f7f04293589269519b5511babaa9f9a3fce5d69479f0a1faa487d9322",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 917,
+    "non_empty_lines": 745,
+    "char_count": 37384,
+    "preview_lines": [
+      "\"\"\"Unit tests for ExtendedModelResponse command support in wrap_model_call.",
+      "Tests that wrap_model_call middleware can return ExtendedModelResponse to provide",
+      "a Command alongside the model response. Commands are applied as separate state",
+      "updates through graph reducers (e.g. add_messages for messages).",
+      "\"\"\"",
+      "from collections.abc import Awaitable, Callable",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from langgraph.errors import InvalidUpdateError"
+    ],
+    "imports": [
+      "from collections.abc import Awaitable, Callable",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from langgraph.errors import InvalidUpdateError",
+      "from langgraph.types import Command",
+      "from langchain.agents import AgentState, create_agent",
+      "from langchain.agents.middleware.types import ("
+    ],
+    "classes": [
+      "TestBasicCommand",
+      "TestCustomStateField",
+      "TestBackwardsCompatibility",
+      "TestAsyncExtendedModelResponse",
+      "TestComposition",
+      "TestAsyncComposition",
+      "TestCommandGotoDisallowed",
+      "TestCommandResumeDisallowed",
+      "TestCommandGraphDisallowed"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_414_44d7760f7f042935_test_wrap_model_call_state_update.py.json"
+}

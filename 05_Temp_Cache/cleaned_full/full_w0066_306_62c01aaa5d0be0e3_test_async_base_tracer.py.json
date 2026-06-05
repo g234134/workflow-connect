@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 306,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\tracers\\test_async_base_tracer.py",
+  "name": "test_async_base_tracer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21970,
+  "content_sha256": "62c01aaa5d0be0e357c0b572e96587d4266e5ab687aecb87bf5a0d78f4f37df3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 615,
+    "non_empty_lines": 559,
+    "char_count": 21967,
+    "preview_lines": [
+      "\"\"\"Test Tracer classes.\"\"\"",
+      "from __future__ import annotations",
+      "from datetime import datetime, timezone",
+      "from typing import Any",
+      "from uuid import uuid4",
+      "import pytest",
+      "from freezegun import freeze_time",
+      "from langchain_core.callbacks import AsyncCallbackManager",
+      "from langchain_core.exceptions import TracerException",
+      "from langchain_core.messages import HumanMessage"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from datetime import datetime, timezone",
+      "from typing import Any",
+      "from uuid import uuid4",
+      "import pytest",
+      "from freezegun import freeze_time",
+      "from langchain_core.callbacks import AsyncCallbackManager",
+      "from langchain_core.exceptions import TracerException",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_core.outputs import LLMResult",
+      "from langchain_core.tracers._compat import pydantic_to_dict",
+      "from langchain_core.tracers.base import AsyncBaseTracer",
+      "from langchain_core.tracers.schemas import Run"
+    ],
+    "classes": [
+      "FakeAsyncTracer"
+    ],
+    "functions": [
+      "_compare_run_with_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_306_62c01aaa5d0be0e3_test_async_base_tracer.py.json"
+}

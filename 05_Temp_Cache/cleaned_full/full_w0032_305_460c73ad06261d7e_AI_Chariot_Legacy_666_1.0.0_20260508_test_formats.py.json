@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_formats.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_formats.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 295,
+  "content_sha256": "460c73ad06261d7e5bd42676b4dda6352a69149cf378e717ab977b40f74a66c3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 11,
+    "non_empty_lines": 9,
+    "char_count": 295,
+    "preview_lines": [
+      "from pandas.core.arrays import IntervalArray",
+      "def test_repr():",
+      "    # GH#25022",
+      "    arr = IntervalArray.from_tuples([(0, 1), (1, 2)])",
+      "    result = repr(arr)",
+      "    expected = (",
+      "        \"<IntervalArray>\\n[(0, 1], (1, 2]]\\nLength: 2, dtype: interval[int64, right]\"",
+      "    )",
+      "    assert result == expected"
+    ],
+    "imports": [
+      "from pandas.core.arrays import IntervalArray"
+    ],
+    "classes": [],
+    "functions": [
+      "test_repr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_305_460c73ad06261d7e_AI_Chariot_Legacy_666_1.0.0_20260508_test_formats.py.json"
+}

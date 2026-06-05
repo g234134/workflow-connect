@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 102,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\profiler\\kineto_shim.h",
+  "name": "kineto_shim.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 4219,
+  "content_sha256": "990c2483b26cd1c8141b59fc4fa2d21ed0f0e859cd0be28c88d10a4b0ff47a6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 151,
+    "non_empty_lines": 123,
+    "char_count": 4219,
+    "preview_lines": [
+      "#pragma once",
+      "#include <memory>",
+      "#include <string>",
+      "// Skip Kineto dependency on mobile unless explicitly asked for.",
+      "// When is it explicitly asked for?",
+      "//   KinetoEdgeCPUProfiler uses KinetoProfiler for cpu",
+      "//   event profiling. This has a dependency on cpu only libkineto",
+      "#if defined(USE_KINETO) && defined(C10_MOBILE) && \\",
+      "    !defined(EDGE_PROFILER_USE_KINETO)",
+      "#undef USE_KINETO"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_102_990c2483b26cd1c8_kineto_shim.h.json"
+}

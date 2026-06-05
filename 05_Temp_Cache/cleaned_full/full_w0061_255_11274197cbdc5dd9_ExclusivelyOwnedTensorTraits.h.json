@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\ExclusivelyOwnedTensorTraits.h",
+  "name": "ExclusivelyOwnedTensorTraits.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2226,
+  "content_sha256": "11274197cbdc5dd9859cc37dfabe5fb1ee1a9e9189f9c10b683ac2c5fdf2643e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 74,
+    "non_empty_lines": 64,
+    "char_count": 2226,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/TensorImpl.h>",
+      "#include <utility>",
+      "namespace c10 {",
+      "// Shared ExclusivelyOwnedTraits implementation between caffe2::Tensor and",
+      "// at::TensorBase.",
+      "template <typename TensorType>",
+      "struct ExclusivelyOwnedTensorTraits {",
+      "  using repr_type = TensorType;",
+      "  using pointer_type = TensorType*;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_255_11274197cbdc5dd9_ExclusivelyOwnedTensorTraits.h.json"
+}

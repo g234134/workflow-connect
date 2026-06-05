@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_slack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_slack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4007,
+  "content_sha256": "78ffccaf9b10a27627887c7140d1ae7b78e4d899083e63d6159a886319ceba2d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 102,
+    "char_count": 4007,
+    "preview_lines": [
+      "\"\"\"",
+      "Sends updates to a Slack app.",
+      "Usage:",
+      ">>> from tqdm.contrib.slack import tqdm, trange",
+      ">>> for i in trange(10, token='{token}', channel='{channel}'):",
+      "...     ...",
+      "![screenshot](https://tqdm.github.io/img/screenshot-slack.png)",
+      "\"\"\"",
+      "import logging",
+      "from os import getenv"
+    ],
+    "imports": [
+      "import logging",
+      "from os import getenv",
+      "from slack_sdk import WebClient",
+      "from ..auto import tqdm as tqdm_auto",
+      "from .utils_worker import MonoWorker"
+    ],
+    "classes": [
+      "SlackIO",
+      "tqdm_slack"
+    ],
+    "functions": [
+      "tsrange"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_001_78ffccaf9b10a276_AI_Chariot_Legacy_666_1.0.0_20260508_slack.py.json"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 208,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\pipeline\\sync\\pipe.py",
+  "name": "pipe.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18594,
+  "content_sha256": "f5a3f1aa85e19fdf1882bf4bd350626c067562c553298b77c995e17410a43dff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 490,
+    "non_empty_lines": 385,
+    "char_count": 18594,
+    "preview_lines": [
+      "# Copyright 2019 Kakao Brain",
+      "#",
+      "# Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "\"\"\"The Pipe interface.\"\"\"",
+      "from collections import OrderedDict",
+      "from typing import TYPE_CHECKING, Any, Iterable, Iterator, List, Optional, Union, Sequence, Tuple, cast",
+      "import torch"
+    ],
+    "imports": [
+      "from collections import OrderedDict",
+      "from typing import TYPE_CHECKING, Any, Iterable, Iterator, List, Optional, Union, Sequence, Tuple, cast",
+      "import torch",
+      "from torch import Tensor, nn",
+      "from torch.distributed.rpc import RRef",
+      "import torch.autograd",
+      "import torch.cuda",
+      "from . import microbatch",
+      "from .batchnorm import DeferredBatchNorm",
+      "from .pipeline import Pipeline",
+      "from .skip.layout import inspect_skip_layout",
+      "from .skip.skippable import verify_skippables",
+      "from .stream import AbstractStream, new_stream",
+      "from torch.distributed.pipeline.sync import Pipe",
+      "from torch.distributed.pipeline.sync.balance import balance_by_time"
+    ],
+    "classes": [
+      "BalanceError",
+      "PipeSequential",
+      "WithDevice",
+      "Pipe"
+    ],
+    "functions": [
+      "_recommend_auto_balance",
+      "_verify_module",
+      "_verify_splitting",
+      "_retrieve_device",
+      "_assemble_partition",
+      "_split_module"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_208_f5a3f1aa85e19fdf_pipe.py.json"
+}

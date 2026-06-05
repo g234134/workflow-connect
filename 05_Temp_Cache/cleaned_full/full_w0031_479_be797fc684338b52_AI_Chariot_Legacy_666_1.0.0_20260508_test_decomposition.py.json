@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 479,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_decomposition.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_decomposition.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1871,
+  "content_sha256": "be797fc684338b52e79592f6e6f5ce656c2f6969a89f7fb1db6d8e2ade1e0ea1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 60,
+    "char_count": 1871,
+    "preview_lines": [
+      "import networkx as nx",
+      "from networkx.algorithms.tree.decomposition import junction_tree",
+      "def test_junction_tree_directed_confounders():",
+      "    B = nx.DiGraph()",
+      "    B.add_edges_from([(\"A\", \"C\"), (\"B\", \"C\"), (\"C\", \"D\"), (\"C\", \"E\")])",
+      "    G = junction_tree(B)",
+      "    J = nx.Graph()",
+      "    J.add_edges_from(",
+      "        [",
+      "            ((\"C\", \"E\"), (\"C\",)),"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.algorithms.tree.decomposition import junction_tree"
+    ],
+    "classes": [],
+    "functions": [
+      "test_junction_tree_directed_confounders",
+      "test_junction_tree_directed_unconnected_nodes",
+      "test_junction_tree_directed_cascade",
+      "test_junction_tree_directed_unconnected_edges",
+      "test_junction_tree_undirected"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_479_be797fc684338b52_AI_Chariot_Legacy_666_1.0.0_20260508_test_decomposition.py.json"
+}

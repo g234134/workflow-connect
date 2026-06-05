@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 451,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gdb_lookup.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gdb_lookup.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3763,
+  "content_sha256": "818a6b374ccadd535bf0c30b0fbf17861fdfe231d42bd7069d8cffff7a571b97",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 92,
+    "char_count": 3763,
+    "preview_lines": [
+      "import gdb",
+      "import gdb.printing",
+      "import re",
+      "from gdb_providers import *",
+      "from rust_types import *",
+      "_gdb_version_matched = re.search(\"([0-9]+)\\\\.([0-9]+)\", gdb.VERSION)",
+      "gdb_version = (",
+      "    [int(num) for num in _gdb_version_matched.groups()] if _gdb_version_matched else []",
+      ")",
+      "def register_printers(objfile):"
+    ],
+    "imports": [
+      "import gdb",
+      "import gdb.printing",
+      "import re",
+      "from gdb_providers import *",
+      "from rust_types import *"
+    ],
+    "classes": [
+      "PrintByRustType",
+      "RustPrettyPrinter"
+    ],
+    "functions": [
+      "register_printers",
+      "is_hashbrown_hashmap",
+      "classify_rust_type",
+      "check_enum_discriminant",
+      "enum_provider",
+      "hashmap_provider",
+      "hashset_provider"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_451_818a6b374ccadd53_AI_Chariot_Legacy_666_1.0.0_20260508_gdb_lookup.py.json"
+}

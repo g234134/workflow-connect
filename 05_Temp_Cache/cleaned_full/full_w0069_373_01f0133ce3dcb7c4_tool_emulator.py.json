@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 373,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\tool_emulator.py",
+  "name": "tool_emulator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7678,
+  "content_sha256": "01f0133ce3dcb7c4bda178ef3cefd6ffe61cf21999949d9a498dfc5f3908b0e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 209,
+    "non_empty_lines": 160,
+    "char_count": 7675,
+    "preview_lines": [
+      "\"\"\"Tool emulator middleware for testing.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Generic",
+      "from langchain_core.language_models.chat_models import BaseChatModel",
+      "from langchain_core.messages import HumanMessage, ToolMessage",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, ContextT",
+      "from langchain.chat_models.base import init_chat_model",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Awaitable, Callable",
+      "    from langgraph.types import Command"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Generic",
+      "from langchain_core.language_models.chat_models import BaseChatModel",
+      "from langchain_core.messages import HumanMessage, ToolMessage",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, ContextT",
+      "from langchain.chat_models.base import init_chat_model",
+      "from collections.abc import Awaitable, Callable",
+      "from langgraph.types import Command",
+      "from langchain.agents.middleware.types import ToolCallRequest",
+      "from langchain.tools import BaseTool",
+      "from langchain.agents.middleware import LLMToolEmulator"
+    ],
+    "classes": [
+      "LLMToolEmulator"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_373_01f0133ce3dcb7c4_tool_emulator.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 200,
+  "generated_at": "2026-05-08T18:48:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chat_models\\pai_eas_endpoint.py",
+  "name": "pai_eas_endpoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 720,
+  "content_sha256": "7fa46b782eb84f7ab23525c56134ff9f57cdaba9aa80b2b213b56697b57f62e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 717,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.chat_models.pai_eas_endpoint import PaiEasChatEndpoint",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"PaiEasChatEndpoint\": \"langchain_community.chat_models.pai_eas_endpoint\",",
+      "}"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.chat_models.pai_eas_endpoint import PaiEasChatEndpoint"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_200_7fa46b782eb84f7a_pai_eas_endpoint.py.json"
+}

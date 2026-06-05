@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 206,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multi_kernel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multi_kernel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13882,
+  "content_sha256": "14775ba7806965a085ce8794d191c7216354a1dc3e03e7bbe2b0831f436ad8ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 385,
+    "non_empty_lines": 306,
+    "char_count": 13882,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import logging",
+      "import os",
+      "import pathlib",
+      "from typing import Any, List",
+      "from torch._inductor.metrics import get_metric_table, is_metric_table_enabled",
+      "from torch.utils._ordered_set import OrderedSet",
+      "from .. import config",
+      "from ..codecache import get_path, TritonFuture",
+      "from ..runtime.benchmarking import benchmarker"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "import pathlib",
+      "from typing import Any, List",
+      "from torch._inductor.metrics import get_metric_table, is_metric_table_enabled",
+      "from torch.utils._ordered_set import OrderedSet",
+      "from .. import config",
+      "from ..codecache import get_path, TritonFuture",
+      "from ..runtime.benchmarking import benchmarker",
+      "from ..utils import cache_on_self, IndentedBuffer",
+      "from ..virtualized import V",
+      "from .common import TensorArg"
+    ],
+    "classes": [
+      "MultiKernelState",
+      "MultiKernel",
+      "MultiKernelCall"
+    ],
+    "functions": [
+      "get_kernel_argdefs",
+      "_get_all_args",
+      "get_all_kernel_argdefs",
+      "get_all_call_args",
+      "get_numel_argdefs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_206_14775ba7806965a0_AI_Chariot_Legacy_666_1.0.0_20260508_multi_kernel.py.json"
+}

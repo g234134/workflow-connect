@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\db\\examples\\dynamic_shape_map.py",
+  "name": "dynamic_shape_map.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 436,
+  "content_sha256": "18dcc7b4bae2c0cf73069eb0c81436597f5705e12d543ad7654b4500e66307ff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 14,
+    "char_count": 436,
+    "preview_lines": [
+      "import torch",
+      "from torch._export.db.case import export_case",
+      "from functorch.experimental.control_flow import map",
+      "@export_case(",
+      "    example_inputs=(torch.ones(3, 2), torch.ones(2)),",
+      "    tags={\"torch.dynamic-shape\", \"torch.map\"},",
+      ")",
+      "def dynamic_shape_map(xs, y):",
+      "    \"\"\"",
+      "    functorch map() maps a function over the first tensor dimension."
+    ],
+    "imports": [
+      "import torch",
+      "from torch._export.db.case import export_case",
+      "from functorch.experimental.control_flow import map"
+    ],
+    "classes": [],
+    "functions": [
+      "dynamic_shape_map"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_007_18dcc7b4bae2c0cf_dynamic_shape_map.py.json"
+}

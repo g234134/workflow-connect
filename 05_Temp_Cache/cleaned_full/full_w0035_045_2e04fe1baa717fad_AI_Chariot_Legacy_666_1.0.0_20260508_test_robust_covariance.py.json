@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 45,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_robust_covariance.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_robust_covariance.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7720,
+  "content_sha256": "2e04fe1baa717fadcaceffa9fbf64a41f0a6d60533b61f5b3190f71da9166656",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 168,
+    "char_count": 7720,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import itertools",
+      "import numpy as np",
+      "import pytest",
+      "from sklearn import datasets",
+      "from sklearn.covariance import MinCovDet, empirical_covariance, fast_mcd",
+      "from sklearn.utils._testing import assert_array_almost_equal",
+      "X = datasets.load_iris().data",
+      "X_1d = X[:, 0]"
+    ],
+    "imports": [
+      "import itertools",
+      "import numpy as np",
+      "import pytest",
+      "from sklearn import datasets",
+      "from sklearn.covariance import MinCovDet, empirical_covariance, fast_mcd",
+      "from sklearn.utils._testing import assert_array_almost_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_mcd",
+      "test_fast_mcd_on_invalid_input",
+      "test_mcd_class_on_invalid_input",
+      "launch_mcd_on_dataset",
+      "test_mcd_issue1127",
+      "test_mcd_issue3367",
+      "test_mcd_support_covariance_is_zero",
+      "test_mcd_increasing_det_warning",
+      "test_mincovdet_bias_on_normal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_045_2e04fe1baa717fad_AI_Chariot_Legacy_666_1.0.0_20260508_test_robust_covariance.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_ws_comma.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_ws_comma.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1090,
+  "content_sha256": "5e7a16daec0b2619110516804bf90cac459a4d0315198fd4eff69c36c54378dd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 31,
+    "char_count": 1090,
+    "preview_lines": [
+      "\"\"\"Fixer that changes 'a ,b' into 'a, b'.",
+      "This also changes '{a :b}' into '{a: b}', but does not touch other",
+      "uses of colons.  It does not touch other uses of whitespace.",
+      "\"\"\"",
+      "from .. import pytree",
+      "from ..pgen2 import token",
+      "from .. import fixer_base",
+      "class FixWsComma(fixer_base.BaseFix):",
+      "    explicit = True # The user must ask for this fixers",
+      "    PATTERN = \"\"\""
+    ],
+    "imports": [
+      "from .. import pytree",
+      "from ..pgen2 import token",
+      "from .. import fixer_base"
+    ],
+    "classes": [
+      "FixWsComma"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_124_5e7a16daec0b2619_AI_Chariot_Legacy_666_1.0.0_20260508_fix_ws_comma.py.json"
+}

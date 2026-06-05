@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\datapipes\\iter\\filelister.py",
+  "name": "filelister.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2579,
+  "content_sha256": "fb85ad3e78ab01aaca689bd3dc1fc0137c3aadc7c0abd2be88099fbe231a47af",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 54,
+    "char_count": 2579,
+    "preview_lines": [
+      "from typing import Iterator, List, Sequence, Union",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe",
+      "from torch.utils.data.datapipes.iter import IterableWrapper",
+      "from torch.utils.data.datapipes.utils.common import get_file_pathnames_from_root",
+      "__all__ = [\"FileListerIterDataPipe\", ]",
+      "@functional_datapipe(\"list_files\")",
+      "class FileListerIterDataPipe(IterDataPipe[str]):",
+      "    r\"\"\"",
+      "    Given path(s) to the root directory, yields file pathname(s) (path + filename) of files within the root directory."
+    ],
+    "imports": [
+      "from typing import Iterator, List, Sequence, Union",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe",
+      "from torch.utils.data.datapipes.iter import IterableWrapper",
+      "from torch.utils.data.datapipes.utils.common import get_file_pathnames_from_root"
+    ],
+    "classes": [
+      "FileListerIterDataPipe"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_202_fb85ad3e78ab01aa_filelister.py.json"
+}

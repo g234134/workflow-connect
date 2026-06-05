@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 470,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\mechanics\\tests\\test_models.py",
+  "name": "test_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5078,
+  "content_sha256": "19cb1f0a6e46e0f3d8417b070a200a2357445b8d916993a1fb1e9a128b93628e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 98,
+    "char_count": 5078,
+    "preview_lines": [
+      "import sympy.physics.mechanics.models as models",
+      "from sympy import (cos, sin, Matrix, symbols, zeros)",
+      "from sympy.simplify.simplify import simplify",
+      "from sympy.physics.mechanics import (dynamicsymbols)",
+      "def test_multi_mass_spring_damper_inputs():",
+      "    c0, k0, m0 = symbols(\"c0 k0 m0\")",
+      "    g = symbols(\"g\")",
+      "    v0, x0, f0 = dynamicsymbols(\"v0 x0 f0\")",
+      "    kane1 = models.multi_mass_spring_damper(1)",
+      "    massmatrix1 = Matrix([[m0]])"
+    ],
+    "imports": [
+      "import sympy.physics.mechanics.models as models",
+      "from sympy import (cos, sin, Matrix, symbols, zeros)",
+      "from sympy.simplify.simplify import simplify",
+      "from sympy.physics.mechanics import (dynamicsymbols)"
+    ],
+    "classes": [],
+    "functions": [
+      "test_multi_mass_spring_damper_inputs",
+      "test_multi_mass_spring_damper_higher_order",
+      "test_n_link_pendulum_on_cart_inputs",
+      "test_n_link_pendulum_on_cart_higher_order"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_470_19cb1f0a6e46e0f3_test_models.py.json"
+}

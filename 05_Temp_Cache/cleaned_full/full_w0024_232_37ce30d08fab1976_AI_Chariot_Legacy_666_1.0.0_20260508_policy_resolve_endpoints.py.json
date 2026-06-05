@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_policy_resolve_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_policy_resolve_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14806,
+  "content_sha256": "37ce30d08fab1976a1b998b45ef9588e6598ec2969cc216f94290872fcde8a73",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 416,
+    "non_empty_lines": 352,
+    "char_count": 14178,
+    "preview_lines": [
+      "\"\"\"",
+      "Policy resolve and attachment impact estimation endpoints.",
+      "- /policies/resolve — debug which guardrails apply for a given context",
+      "- /policies/attachments/estimate-impact — preview blast radius before creating an attachment",
+      "\"\"\"",
+      "import json",
+      "from fastapi import APIRouter, Depends, HTTPException, Query",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.constants import MAX_POLICY_ESTIMATE_IMPACT_ROWS",
+      "from litellm.proxy._types import UserAPIKeyAuth"
+    ],
+    "imports": [
+      "import json",
+      "from fastapi import APIRouter, Depends, HTTPException, Query",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.constants import MAX_POLICY_ESTIMATE_IMPACT_ROWS",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.route_checks import RouteChecks",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.policy_engine.attachment_registry import get_attachment_registry",
+      "from litellm.proxy.policy_engine.policy_registry import get_policy_registry",
+      "from litellm.types.proxy.policy_engine import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_build_alias_where",
+      "_parse_metadata",
+      "_get_tags_from_metadata",
+      "_filter_keys_by_tags",
+      "_filter_teams_by_tags"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_232_37ce30d08fab1976_AI_Chariot_Legacy_666_1.0.0_20260508_policy_resolve_endpoints.py.json"
+}

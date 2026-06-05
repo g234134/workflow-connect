@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 356,
+  "generated_at": "2026-05-08T18:47:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\matrixlib\\tests\\test_regression.py",
+  "name": "test_regression.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 965,
+  "content_sha256": "dbe73807968a59bc9267de51946e56526f0e2c13bbb0bb4cdb323340cc0cbf45",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 25,
+    "char_count": 965,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_raises",
+      "class TestRegression:",
+      "    def test_kron_matrix(self):",
+      "        # Ticket #71",
+      "        x = np.matrix('[1 0; 1 0]')",
+      "        assert_equal(type(np.kron(x, x)), type(x))",
+      "    def test_matrix_properties(self):",
+      "        # Ticket #125",
+      "        a = np.matrix([1.0], dtype=float)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_raises"
+    ],
+    "classes": [
+      "TestRegression"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_356_dbe73807968a59bc_test_regression.py.json"
+}

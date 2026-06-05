@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 99,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__asyncio_loop.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__asyncio_loop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 597,
+  "content_sha256": "2daf17ccb8ef458a4d8b295990e1702ca81df9644c5f34d9640a04ce52faf306",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 17,
+    "char_count": 597,
+    "preview_lines": [
+      "import asyncio",
+      "import sys",
+      "def load_loop_functions():",
+      "    if sys.version_info >= (3, 7):",
+      "        def get_task_loop(task):",
+      "            return task.get_loop()",
+      "        get_running_loop = asyncio.get_running_loop",
+      "    else:",
+      "        def get_task_loop(task):",
+      "            return task._loop"
+    ],
+    "imports": [
+      "import asyncio",
+      "import sys"
+    ],
+    "classes": [],
+    "functions": [
+      "load_loop_functions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_099_2daf17ccb8ef458a_AI_Chariot_Legacy_666_1.0.0_20260508__asyncio_loop.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 131,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ElementTree.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ElementTree.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4640,
+  "content_sha256": "18b4aaa42cf9f285c63c6cb37ff1f296c3d2f7f75c1953f948de1d2bbcafc8fc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 125,
+    "char_count": 4640,
+    "preview_lines": [
+      "# defusedxml",
+      "#",
+      "# Copyright (c) 2013 by Christian Heimes <christian@python.org>",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "# See https://www.python.org/psf/license for licensing details.",
+      "\"\"\"Defused xml.etree.ElementTree facade",
+      "\"\"\"",
+      "from __future__ import print_function, absolute_import",
+      "import sys",
+      "import warnings"
+    ],
+    "imports": [
+      "from __future__ import print_function, absolute_import",
+      "import sys",
+      "import warnings",
+      "from xml.etree.ElementTree import ParseError",
+      "from xml.etree.ElementTree import TreeBuilder as _TreeBuilder",
+      "from xml.etree.ElementTree import parse as _parse",
+      "from xml.etree.ElementTree import tostring",
+      "from .common import PY3",
+      "import importlib",
+      "from xml.etree.ElementTree import XMLParser as _XMLParser",
+      "from xml.etree.ElementTree import iterparse as _iterparse",
+      "from .common import ("
+    ],
+    "classes": [
+      "DefusedXMLParser"
+    ],
+    "functions": [
+      "_get_py3_cls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_131_18b4aaa42cf9f285_AI_Chariot_Legacy_666_1.0.0_20260508_ElementTree.py.json"
+}

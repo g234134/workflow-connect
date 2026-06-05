@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 10,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_swap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_swap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14744,
+  "content_sha256": "35564c9a59e4771830c0dc39183adcf3068d11171d0aee76c9d1dc05d380fe1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 406,
+    "non_empty_lines": 349,
+    "char_count": 14734,
+    "preview_lines": [
+      "\"\"\"Swap edges in a graph.\"\"\"",
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state",
+      "__all__ = [\"double_edge_swap\", \"connected_double_edge_swap\", \"directed_edge_swap\"]",
+      "@nx.utils.not_implemented_for(\"undirected\")",
+      "@py_random_state(3)",
+      "@nx._dispatchable(mutates_input=True, returns_graph=True)",
+      "def directed_edge_swap(G, *, nswap=1, max_tries=100, seed=None):",
+      "    \"\"\"Swap three edges in a directed graph while keeping the node degrees fixed."
+    ],
+    "imports": [
+      "import math",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state"
+    ],
+    "classes": [],
+    "functions": [
+      "directed_edge_swap",
+      "double_edge_swap",
+      "connected_double_edge_swap"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_010_35564c9a59e47718_AI_Chariot_Legacy_666_1.0.0_20260508_swap.py.json"
+}

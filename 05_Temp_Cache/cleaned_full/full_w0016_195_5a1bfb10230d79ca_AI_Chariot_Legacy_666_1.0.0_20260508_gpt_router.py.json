@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gpt_router.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gpt_router.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13239,
+  "content_sha256": "5a1bfb10230d79ca99b583e8416c2c61463458491e87768990faa94bfbcc38a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 401,
+    "non_empty_lines": 341,
+    "char_count": 13239,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    AsyncGenerator,",
+      "    AsyncIterator,",
+      "    Callable,",
+      "    Dict,",
+      "    Generator,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import (",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models.chat_models import (",
+      "from langchain_core.language_models.llms import create_base_retry_decorator",
+      "from langchain_core.messages import AIMessageChunk, BaseMessage, BaseMessageChunk",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.utils import convert_to_secret_str, get_from_dict_or_env",
+      "from pydantic import BaseModel, Field, SecretStr, model_validator",
+      "from typing_extensions import Self",
+      "from langchain_community.adapters.openai import (",
+      "from langchain_community.chat_models.openai import _convert_delta_to_message_chunk",
+      "from gpt_router.models import ChunkedGenerationResponse, GenerationResponse",
+      "from gpt_router.models import GenerationParams, ModelGenerationRequest",
+      "from gpt_router import exceptions",
+      "from gpt_router.client import GPTRouterClient"
+    ],
+    "classes": [
+      "GPTRouterException",
+      "GPTRouterModel",
+      "GPTRouter"
+    ],
+    "functions": [
+      "get_ordered_generation_requests",
+      "_create_retry_decorator",
+      "completion_with_retry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_195_5a1bfb10230d79ca_AI_Chariot_Legacy_666_1.0.0_20260508_gpt_router.py.json"
+}

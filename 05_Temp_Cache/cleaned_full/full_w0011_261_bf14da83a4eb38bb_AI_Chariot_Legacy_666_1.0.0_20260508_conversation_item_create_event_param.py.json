@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 261,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event_param.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event_param.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1101,
+  "content_sha256": "bf14da83a4eb38bbb56dfe3a177994991925e5d77529be9b529eb98010d59a13",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 19,
+    "char_count": 1101,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from __future__ import annotations",
+      "from typing_extensions import Literal, Required, TypedDict",
+      "from .conversation_item_param import ConversationItemParam",
+      "__all__ = [\"ConversationItemCreateEventParam\"]",
+      "class ConversationItemCreateEventParam(TypedDict, total=False):",
+      "    item: Required[ConversationItemParam]",
+      "    \"\"\"The item to add to the conversation.\"\"\"",
+      "    type: Required[Literal[\"conversation.item.create\"]]",
+      "    \"\"\"The event type, must be `conversation.item.create`.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing_extensions import Literal, Required, TypedDict",
+      "from .conversation_item_param import ConversationItemParam"
+    ],
+    "classes": [
+      "ConversationItemCreateEventParam"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_261_bf14da83a4eb38bb_AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_create_event_param.py.json"
+}

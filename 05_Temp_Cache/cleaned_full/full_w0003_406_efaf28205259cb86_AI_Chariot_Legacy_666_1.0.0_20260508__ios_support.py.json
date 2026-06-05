@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ios_support.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ios_support.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2672,
+  "content_sha256": "efaf28205259cb869ba3ca8353f7b69c9d2d6ad465e22904f27122b12ac3f84a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 59,
+    "char_count": 2672,
+    "preview_lines": [
+      "import sys",
+      "try:",
+      "    from ctypes import cdll, c_void_p, c_char_p, util",
+      "except ImportError:",
+      "    # ctypes is an optional module. If it's not present, we're limited in what",
+      "    # we can tell about the system, but we don't want to prevent the module",
+      "    # from working.",
+      "    print(\"ctypes isn't available; iOS system calls will not be available\", file=sys.stderr)",
+      "    objc = None",
+      "else:"
+    ],
+    "imports": [
+      "import sys",
+      "from ctypes import cdll, c_void_p, c_char_p, util"
+    ],
+    "classes": [],
+    "functions": [
+      "get_platform_ios"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_406_efaf28205259cb86_AI_Chariot_Legacy_666_1.0.0_20260508__ios_support.py.json"
+}

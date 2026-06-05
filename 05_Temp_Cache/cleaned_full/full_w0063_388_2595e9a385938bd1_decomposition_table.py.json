@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\fx\\decomposition_table.py",
+  "name": "decomposition_table.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5251,
+  "content_sha256": "2595e9a385938bd14a336bb5b164c8ad45777be550630604b1ffba42da32c2bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 116,
+    "non_empty_lines": 99,
+    "char_count": 5251,
+    "preview_lines": [
+      "\"\"\"Dispatcher for AtenLib functions from onnx-script.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Callable, Dict, Set, Union",
+      "import torch",
+      "import torch._ops",
+      "import torch.fx",
+      "from torch.onnx._internal import _beartype",
+      "from torch.onnx._internal.fx import registration",
+      "# TODO: OnnxRegistry annotation: beartype is a runtime type checker for python3,",
+      "# so it doesn't work with TYPE_CHECKING"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Callable, Dict, Set, Union",
+      "import torch",
+      "import torch._ops",
+      "import torch.fx",
+      "from torch.onnx._internal import _beartype",
+      "from torch.onnx._internal.fx import registration"
+    ],
+    "classes": [],
+    "functions": [
+      "_create_onnx_supports_op_overload_table",
+      "create_onnx_friendly_decomposition_table"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_388_2595e9a385938bd1_decomposition_table.py.json"
+}

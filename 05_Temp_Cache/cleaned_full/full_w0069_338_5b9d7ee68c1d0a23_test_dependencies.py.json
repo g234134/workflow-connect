@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\test_dependencies.py",
+  "name": "test_dependencies.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2624,
+  "content_sha256": "5b9d7ee68c1d0a23159927e467ba75307ec056acb2bf72d3d0fa01ec6fbf3fe0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 69,
+    "char_count": 2621,
+    "preview_lines": [
+      "\"\"\"A unit test meant to catch accidental introduction of non-optional dependencies.\"\"\"",
+      "from collections.abc import Mapping",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import pytest",
+      "import toml",
+      "from packaging.requirements import Requirement",
+      "HERE = Path(__file__).parent",
+      "PYPROJECT_TOML = HERE / \"../../pyproject.toml\"",
+      "@pytest.fixture"
+    ],
+    "imports": [
+      "from collections.abc import Mapping",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import pytest",
+      "import toml",
+      "from packaging.requirements import Requirement"
+    ],
+    "classes": [],
+    "functions": [
+      "uv_conf",
+      "test_required_dependencies",
+      "test_test_group_dependencies"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_338_5b9d7ee68c1d0a23_test_dependencies.py.json"
+}

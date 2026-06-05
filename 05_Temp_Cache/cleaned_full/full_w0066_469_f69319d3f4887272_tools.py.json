@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\tools.py",
+  "name": "tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1498,
+  "content_sha256": "f69319d3f4887272afd75c0ae0f79d540d16cea7f304b36a6eee2bf10db0aa1d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 40,
+    "char_count": 1495,
+    "preview_lines": [
+      "\"\"\"Interface for tools.\"\"\"",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForToolRun,",
+      "    CallbackManagerForToolRun,",
+      ")",
+      "from langchain_core.tools import BaseTool, tool",
+      "from typing_extensions import override",
+      "class InvalidTool(BaseTool):",
+      "    \"\"\"Tool that is run when invalid tool name is encountered by agent.\"\"\"",
+      "    name: str = \"invalid_tool\""
+    ],
+    "imports": [
+      "from langchain_core.callbacks import (",
+      "from langchain_core.tools import BaseTool, tool",
+      "from typing_extensions import override"
+    ],
+    "classes": [
+      "InvalidTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_469_f69319d3f4887272_tools.py.json"
+}

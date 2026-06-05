@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 247,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_frame.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_frame.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10511,
+  "content_sha256": "494368eed1722dc5c4c8428ad521da3e633a3bdf584a919828d7f9918dce6e6f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 280,
+    "non_empty_lines": 243,
+    "char_count": 10359,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from narwhals._utils import Implementation, qualified_type_name",
+      "from narwhals.dataframe import DataFrame, LazyFrame",
+      "from narwhals.dependencies import is_narwhals_dataframe, is_narwhals_lazyframe",
+      "from narwhals.testing.asserts.series import assert_series_equal",
+      "from narwhals.testing.asserts.utils import (",
+      "    raise_assertion_error,",
+      "    raise_frame_assertion_error,",
+      ")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from narwhals._utils import Implementation, qualified_type_name",
+      "from narwhals.dataframe import DataFrame, LazyFrame",
+      "from narwhals.dependencies import is_narwhals_dataframe, is_narwhals_lazyframe",
+      "from narwhals.testing.asserts.series import assert_series_equal",
+      "from narwhals.testing.asserts.utils import (",
+      "from narwhals._typing import Arrow, IntoBackend, Pandas, Polars",
+      "from narwhals.typing import DataFrameT, LazyFrameT"
+    ],
+    "classes": [],
+    "functions": [
+      "assert_frame_equal",
+      "_check_correct_input_type",
+      "_assert_dataframe_equal",
+      "_check_schema_equal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_247_494368eed1722dc5_AI_Chariot_Legacy_666_1.0.0_20260508_frame.py.json"
+}

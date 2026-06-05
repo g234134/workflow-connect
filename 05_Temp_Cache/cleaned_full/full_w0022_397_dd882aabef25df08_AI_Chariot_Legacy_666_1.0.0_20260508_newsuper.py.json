@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 397,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_newsuper.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_newsuper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3849,
+  "content_sha256": "dd882aabef25df087d80dbc66d6e670224d84f95b1c6048a37a461363eea8bbe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 113,
+    "non_empty_lines": 87,
+    "char_count": 3849,
+    "preview_lines": [
+      "'''",
+      "This module provides a newsuper() function in Python 2 that mimics the",
+      "behaviour of super() in Python 3. It is designed to be used as follows:",
+      "    from __future__ import division, absolute_import, print_function",
+      "    from future.builtins import super",
+      "And then, for example:",
+      "    class VerboseList(list):",
+      "        def append(self, item):",
+      "            print('Adding an item')",
+      "            super().append(item)        # new simpler super() function"
+    ],
+    "imports": [
+      "from __future__ import division, absolute_import, print_function",
+      "from future.builtins import super",
+      "from __future__ import absolute_import",
+      "import sys",
+      "from types import FunctionType",
+      "from future.utils import PY3, PY26"
+    ],
+    "classes": [],
+    "functions": [
+      "newsuper",
+      "find_owner",
+      "superm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_397_dd882aabef25df08_AI_Chariot_Legacy_666_1.0.0_20260508_newsuper.py.json"
+}

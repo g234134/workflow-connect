@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 137,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__xet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__xet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8895,
+  "content_sha256": "bda11862b9b9956ed8fdc152a1d5e3c7f4df9e43a87c867e1a1fb856eeed1bfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 235,
+    "non_empty_lines": 199,
+    "char_count": 8895,
+    "preview_lines": [
+      "import time",
+      "from dataclasses import dataclass",
+      "from enum import Enum",
+      "from typing import Optional",
+      "import httpx",
+      "from .. import constants",
+      "from . import hf_raise_for_status, http_backoff, validate_hf_hub_args",
+      "XET_CONNECTION_INFO_SAFETY_PERIOD = 60  # seconds",
+      "XET_CONNECTION_INFO_CACHE_SIZE = 1_000",
+      "XET_CONNECTION_INFO_CACHE: dict[str, \"XetConnectionInfo\"] = {}"
+    ],
+    "imports": [
+      "import time",
+      "from dataclasses import dataclass",
+      "from enum import Enum",
+      "from typing import Optional",
+      "import httpx",
+      "from .. import constants",
+      "from . import hf_raise_for_status, http_backoff, validate_hf_hub_args"
+    ],
+    "classes": [
+      "XetTokenType",
+      "XetFileData",
+      "XetConnectionInfo"
+    ],
+    "functions": [
+      "parse_xet_file_data_from_response",
+      "parse_xet_connection_info_from_headers",
+      "refresh_xet_connection_info",
+      "fetch_xet_connection_info_from_repo_info",
+      "_fetch_xet_connection_info_with_url",
+      "_cache_key",
+      "_is_expired"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_137_bda11862b9b9956e_AI_Chariot_Legacy_666_1.0.0_20260508__xet.py.json"
+}

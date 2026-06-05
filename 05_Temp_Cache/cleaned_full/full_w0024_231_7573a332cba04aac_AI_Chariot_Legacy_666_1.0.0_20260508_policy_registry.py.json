@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_policy_registry.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_policy_registry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20292,
+  "content_sha256": "7573a332cba04aacfff3c0aeb6baf31a7f07f5382165850e42f207c14430a841",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 561,
+    "non_empty_lines": 476,
+    "char_count": 20000,
+    "preview_lines": [
+      "\"\"\"",
+      "Policy Registry - In-memory storage for policies.",
+      "Handles storing, retrieving, and managing policies.",
+      "Policies define WHAT guardrails to apply. WHERE they apply is defined",
+      "by policy_attachments (see AttachmentRegistry).",
+      "\"\"\"",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.types.proxy.policy_engine import ("
+    ],
+    "imports": [
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Optional",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.types.proxy.policy_engine import (",
+      "from litellm.proxy.utils import PrismaClient"
+    ],
+    "classes": [
+      "PolicyRegistry"
+    ],
+    "functions": [
+      "get_policy_registry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_231_7573a332cba04aac_AI_Chariot_Legacy_666_1.0.0_20260508_policy_registry.py.json"
+}

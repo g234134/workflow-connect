@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 119,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_nodes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_nodes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1658,
+  "content_sha256": "55c1bb786565cf1f6c48a469d67f737cad0d8e283163958e5ba17f9d09e79d2b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 43,
+    "char_count": 1658,
+    "preview_lines": [
+      "from itertools import product",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import (exp, log)",
+      "from sympy.printing.repr import srepr",
+      "from sympy.codegen.numpy_nodes import logaddexp, logaddexp2",
+      "x, y, z = symbols('x y z')",
+      "def test_logaddexp():",
+      "    lae_xy = logaddexp(x, y)",
+      "    ref_xy = log(exp(x) + exp(y))"
+    ],
+    "imports": [
+      "from itertools import product",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import (exp, log)",
+      "from sympy.printing.repr import srepr",
+      "from sympy.codegen.numpy_nodes import logaddexp, logaddexp2"
+    ],
+    "classes": [],
+    "functions": [
+      "test_logaddexp",
+      "test_logaddexp2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_119_55c1bb786565cf1f_AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_nodes.py.json"
+}

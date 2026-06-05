@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 8,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_trig.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_trig.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2404,
+  "content_sha256": "bc92fabbe5e420e7cc38002a014b3fc5f6dc253e021b71f017a899ddf3268232",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 60,
+    "char_count": 2404,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose, suppress_warnings",
+      "from scipy.special._ufuncs import _sinpi as sinpi",
+      "from scipy.special._ufuncs import _cospi as cospi",
+      "def test_integer_real_part():",
+      "    x = np.arange(-100, 101)",
+      "    y = np.hstack((-np.linspace(310, -30, 10), np.linspace(-30, 310, 10)))",
+      "    x, y = np.meshgrid(x, y)",
+      "    z = x + 1j*y"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose, suppress_warnings",
+      "from scipy.special._ufuncs import _sinpi as sinpi",
+      "from scipy.special._ufuncs import _cospi as cospi"
+    ],
+    "classes": [],
+    "functions": [
+      "test_integer_real_part",
+      "test_half_integer_real_part",
+      "test_intermediate_overlow",
+      "test_zero_sign"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_008_bc92fabbe5e420e7_AI_Chariot_Legacy_666_1.0.0_20260508_test_trig.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mobile_optimizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mobile_optimizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6632,
+  "content_sha256": "b3563792375c47cf1a9e328bc7202eca58eba430f60ab12f3a6a4cb555ddb0e9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 138,
+    "non_empty_lines": 114,
+    "char_count": 6632,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"This module contains utility method for mobile model optimization and lint.\"\"\"",
+      "import torch",
+      "from enum import Enum",
+      "from torch._C import _MobileOptimizerType as MobileOptimizerType",
+      "from typing import Optional, Set, List, AnyStr",
+      "class LintCode(Enum):",
+      "    BUNDLED_INPUT = 1",
+      "    REQUIRES_GRAD = 2",
+      "    DROPOUT = 3"
+    ],
+    "imports": [
+      "import torch",
+      "from enum import Enum",
+      "from torch._C import _MobileOptimizerType as MobileOptimizerType",
+      "from typing import Optional, Set, List, AnyStr"
+    ],
+    "classes": [
+      "LintCode"
+    ],
+    "functions": [
+      "optimize_for_mobile",
+      "generate_mobile_module_lints",
+      "_get_bundled_inputs_preserved_attributes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_370_b3563792375c47cf_AI_Chariot_Legacy_666_1.0.0_20260508_mobile_optimizer.py.json"
+}

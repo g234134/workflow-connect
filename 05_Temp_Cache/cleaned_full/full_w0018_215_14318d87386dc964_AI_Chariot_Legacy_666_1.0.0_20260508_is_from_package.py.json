@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 215,
+  "generated_at": "2026-05-08T18:45:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_is_from_package.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_is_from_package.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 420,
+  "content_sha256": "14318d87386dc964f0fdf5567bbe74b9f425b863c6943d4c0e33847b2277940e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 12,
+    "char_count": 420,
+    "preview_lines": [
+      "from types import ModuleType",
+      "from typing import Any",
+      "from .._mangling import is_mangled",
+      "def is_from_package(obj: Any) -> bool:",
+      "    \"\"\"",
+      "    Return whether an object was loaded from a package.",
+      "    Note: packaged objects from externed modules will return ``False``.",
+      "    \"\"\"",
+      "    if type(obj) == ModuleType:",
+      "        return is_mangled(obj.__name__)"
+    ],
+    "imports": [
+      "from types import ModuleType",
+      "from typing import Any",
+      "from .._mangling import is_mangled"
+    ],
+    "classes": [],
+    "functions": [
+      "is_from_package"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_215_14318d87386dc964_AI_Chariot_Legacy_666_1.0.0_20260508_is_from_package.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\prebuilt\\tests\\test_validation_node.py",
+  "name": "test_validation_node.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2510,
+  "content_sha256": "65ffc1658257fae1a058e9f326912585fb4b802625c0df35a0ec91ef2004807b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 73,
+    "char_count": 2507,
+    "preview_lines": [
+      "import sys",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.tools import tool as dec_tool",
+      "from pydantic import BaseModel",
+      "from pydantic.v1 import BaseModel as BaseModelV1",
+      "from langgraph.prebuilt import ValidationNode",
+      "pytestmark = pytest.mark.anyio",
+      "def my_function(some_val: int, some_other_val: str) -> str:"
+    ],
+    "imports": [
+      "import sys",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.tools import tool as dec_tool",
+      "from pydantic import BaseModel",
+      "from pydantic.v1 import BaseModel as BaseModelV1",
+      "from langgraph.prebuilt import ValidationNode"
+    ],
+    "classes": [
+      "MyModel",
+      "MyModelV1"
+    ],
+    "functions": [
+      "my_function",
+      "my_tool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_188_65ffc1658257fae1_test_validation_node.py.json"
+}

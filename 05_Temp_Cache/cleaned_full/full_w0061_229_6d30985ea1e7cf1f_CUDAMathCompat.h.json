@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 229,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\cuda\\CUDAMathCompat.h",
+  "name": "CUDAMathCompat.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3759,
+  "content_sha256": "6d30985ea1e7cf1f5acb930cc5490436000c32de3a47b52ef68fd2398300ac33",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 133,
+    "char_count": 3759,
+    "preview_lines": [
+      "#pragma once",
+      "/* This file defines math functions compatible across different gpu",
+      " * platforms (currently CUDA and HIP).",
+      " */",
+      "#if defined(__CUDACC__) || defined(__HIPCC__)",
+      "#include <c10/macros/Macros.h>",
+      "#include <c10/util/Exception.h>",
+      "#ifdef __HIPCC__",
+      "#define __MATH_FUNCTIONS_DECL__ inline C10_DEVICE",
+      "#else /* __HIPCC__ */"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_229_6d30985ea1e7cf1f_CUDAMathCompat.h.json"
+}

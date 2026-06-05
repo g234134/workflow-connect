@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 257,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aesaracode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aesaracode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18237,
+  "content_sha256": "3e79452c9b7cb549ab3b3e7f13799f78c1eaa3889703ca650eeb59d5f66973b7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 540,
+    "non_empty_lines": 417,
+    "char_count": 18237,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.utilities.iterables import is_sequence",
+      "import sympy",
+      "from functools import partial",
+      "aesara = import_module('aesara')",
+      "if aesara:",
+      "    aes = aesara.scalar"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.utilities.iterables import is_sequence",
+      "import sympy",
+      "from functools import partial",
+      "from aesara.tensor import nlinalg",
+      "from aesara.tensor.elemwise import Elemwise",
+      "from aesara.tensor.elemwise import DimShuffle"
+    ],
+    "classes": [
+      "AesaraPrinter"
+    ],
+    "functions": [
+      "aesara_code",
+      "dim_handling",
+      "aesara_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_257_3e79452c9b7cb549_AI_Chariot_Legacy_666_1.0.0_20260508_aesaracode.py.json"
+}

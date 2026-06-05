@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 6,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_daily_activity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_daily_activity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24866,
+  "content_sha256": "dc1d1ed88e59623e7656cc86ee55dc794410e5e8fa0c9a7761bfe42a981bca9f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 663,
+    "non_empty_lines": 586,
+    "char_count": 24866,
+    "preview_lines": [
+      "from datetime import datetime, timedelta",
+      "from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union",
+      "from fastapi import HTTPException, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.types.proxy.management_endpoints.common_daily_activity import (",
+      "    BreakdownMetrics,",
+      "    DailySpendData,",
+      "    DailySpendMetadata,"
+    ],
+    "imports": [
+      "from datetime import datetime, timedelta",
+      "from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union",
+      "from fastapi import HTTPException, status",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import CommonProxyErrors",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.types.proxy.management_endpoints.common_daily_activity import ("
+    ],
+    "classes": [],
+    "functions": [
+      "update_metrics",
+      "_is_user_agent_tag",
+      "compute_tag_metadata_totals",
+      "update_breakdown_metrics",
+      "_adjust_dates_for_timezone",
+      "_build_where_conditions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_006_dc1d1ed88e59623e_AI_Chariot_Legacy_666_1.0.0_20260508_common_daily_activity.py.json"
+}

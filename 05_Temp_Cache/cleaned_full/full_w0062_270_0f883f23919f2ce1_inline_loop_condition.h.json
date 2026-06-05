@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\frontend\\inline_loop_condition.h",
+  "name": "inline_loop_condition.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 368,
+  "content_sha256": "0f883f23919f2ce1fbab771da870b0fb0de6267faa6e9b6f0ebfd9c36610ed3e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 12,
+    "char_count": 368,
+    "preview_lines": [
+      "#pragma once",
+      "#include <functional>",
+      "#include <memory>",
+      "#include <string>",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "TORCH_API void InlineLoopCondition(std::shared_ptr<Graph>& graph);",
+      "TORCH_API void InlineBlockBeforeNode(Node* before_node, Block* block);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_270_0f883f23919f2ce1_inline_loop_condition.h.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 97,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\codegen\\cuda\\cuda_env.py",
+  "name": "cuda_env.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1182,
+  "content_sha256": "743b035f2e6c559917691f39082579e3cb55072366566ca75d0410ad8e945139",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 35,
+    "char_count": 1182,
+    "preview_lines": [
+      "import functools",
+      "import logging",
+      "from typing import Optional",
+      "import torch",
+      "from ... import config",
+      "log = logging.getLogger(__name__)",
+      "def get_cuda_arch() -> Optional[str]:",
+      "    try:",
+      "        cuda_arch = config.cuda.arch",
+      "        if cuda_arch is None:"
+    ],
+    "imports": [
+      "import functools",
+      "import logging",
+      "from typing import Optional",
+      "import torch",
+      "from ... import config",
+      "import subprocess"
+    ],
+    "classes": [],
+    "functions": [
+      "get_cuda_arch",
+      "get_cuda_version",
+      "nvcc_exist"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_097_743b035f2e6c5599_cuda_env.py.json"
+}

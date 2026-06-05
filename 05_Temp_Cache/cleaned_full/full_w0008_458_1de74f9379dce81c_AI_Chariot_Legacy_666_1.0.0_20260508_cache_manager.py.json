@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cache_manager.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cache_manager.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28683,
+  "content_sha256": "1de74f9379dce81c145d12949003fa5573f5b335602d9291b7e6c4595407228b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 533,
+    "non_empty_lines": 467,
+    "char_count": 28659,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from collections import deque",
+      "from collections.abc import Iterator",
+      "from math import ceil",
+      "from typing import TypeVar",
+      "import torch",
+      "from .requests import logger"
+    ],
+    "classes": [
+      "Block",
+      "BlockManager",
+      "CacheAllocator",
+      "FullAttentionCacheAllocator",
+      "SlidingAttentionCacheAllocator"
+    ],
+    "functions": [
+      "reverse_enumerate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_458_1de74f9379dce81c_AI_Chariot_Legacy_666_1.0.0_20260508_cache_manager.py.json"
+}

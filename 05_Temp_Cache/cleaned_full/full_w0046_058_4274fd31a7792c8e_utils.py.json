@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\ops\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6728,
+  "content_sha256": "4274fd31a7792c8ed9946dac3cd89549fc7fb023f415a9a96c3036a9b0921138",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 149,
+    "char_count": 6728,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import functools",
+      "import operator",
+      "from typing import cast, Iterable, List, Sequence, Tuple, Union",
+      "import torch",
+      "from torch.distributed._tensor._collective_utils import redistribute_cost",
+      "from torch.distributed._tensor.api import DTensor",
+      "from torch.distributed._tensor.op_schema import OpStrategy",
+      "from torch.distributed._tensor.placement_types import (",
+      "    _Partial,"
+    ],
+    "imports": [
+      "import functools",
+      "import operator",
+      "from typing import cast, Iterable, List, Sequence, Tuple, Union",
+      "import torch",
+      "from torch.distributed._tensor._collective_utils import redistribute_cost",
+      "from torch.distributed._tensor.api import DTensor",
+      "from torch.distributed._tensor.op_schema import OpStrategy",
+      "from torch.distributed._tensor.placement_types import ("
+    ],
+    "classes": [],
+    "functions": [
+      "register_prop_rule",
+      "register_op_strategy",
+      "as_list",
+      "normalize_dim",
+      "normalize_dims",
+      "normalize_to_torch_size",
+      "prod",
+      "is_tensor_shardable",
+      "is_tensor_dim_sharded",
+      "is_tensor_partial",
+      "infer_broadcast_dims_map",
+      "map_placements_after_broadcast",
+      "generate_redistribute_costs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_058_4274fd31a7792c8e_utils.py.json"
+}

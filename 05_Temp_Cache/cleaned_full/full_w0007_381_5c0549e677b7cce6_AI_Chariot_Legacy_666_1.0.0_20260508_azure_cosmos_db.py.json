@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 381,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_azure_cosmos_db.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_azure_cosmos_db.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 881,
+  "content_sha256": "5c0549e677b7cce659e0ed05530639e6d1b95c142e106cc27bb2224e55c6018f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 20,
+    "char_count": 881,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.vectorstores import AzureCosmosDBVectorSearch",
+      "    from langchain_community.vectorstores.azure_cosmos_db import CosmosDBSimilarityType",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"CosmosDBSimilarityType\": \"langchain_community.vectorstores.azure_cosmos_db\","
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.vectorstores import AzureCosmosDBVectorSearch",
+      "from langchain_community.vectorstores.azure_cosmos_db import CosmosDBSimilarityType"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_381_5c0549e677b7cce6_AI_Chariot_Legacy_666_1.0.0_20260508_azure_cosmos_db.py.json"
+}

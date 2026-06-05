@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 326,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oxylabs_google_search_scraper_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oxylabs_google_search_scraper_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5962,
+  "content_sha256": "d598acad2a45460a35fce7f4fb21d48f8fed39e2635d3ec812b36e7bda326aa1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 141,
+    "char_count": 5962,
+    "preview_lines": [
+      "from importlib.metadata import version",
+      "import json",
+      "import os",
+      "from platform import architecture, python_version",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "try:",
+      "    from oxylabs import RealtimeClient  # type: ignore[import-untyped]",
+      "    from oxylabs.sources.response import (  # type: ignore[import-untyped]"
+    ],
+    "imports": [
+      "from importlib.metadata import version",
+      "import json",
+      "import os",
+      "from platform import architecture, python_version",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "from oxylabs import RealtimeClient  # type: ignore[import-untyped]",
+      "from oxylabs.sources.response import (  # type: ignore[import-untyped]",
+      "from oxylabs import RealtimeClient",
+      "import click",
+      "import subprocess",
+      "from oxylabs import RealtimeClient"
+    ],
+    "classes": [
+      "OxylabsGoogleSearchScraperArgs",
+      "OxylabsGoogleSearchScraperConfig",
+      "OxylabsGoogleSearchScraperTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_326_d598acad2a45460a_AI_Chariot_Legacy_666_1.0.0_20260508_oxylabs_google_search_scraper_tool.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_module_loading.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_module_loading.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3820,
+  "content_sha256": "a196e7d0511d2357bf4253e9d1c50baca0d183cb24caba94360e9fffa77f2c1f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 90,
+    "char_count": 3820,
+    "preview_lines": [
+      "import copy",
+      "import os",
+      "import sys",
+      "from importlib import import_module",
+      "from importlib.util import find_spec as importlib_find",
+      "def cached_import(module_path, class_name):",
+      "    # Check whether module is loaded and fully initialized.",
+      "    if not (",
+      "        (module := sys.modules.get(module_path))",
+      "        and (spec := getattr(module, \"__spec__\", None))"
+    ],
+    "imports": [
+      "import copy",
+      "import os",
+      "import sys",
+      "from importlib import import_module",
+      "from importlib.util import find_spec as importlib_find",
+      "from django.apps import apps"
+    ],
+    "classes": [],
+    "functions": [
+      "cached_import",
+      "import_string",
+      "autodiscover_modules",
+      "module_has_submodule",
+      "module_dir"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_130_a196e7d0511d2357_AI_Chariot_Legacy_666_1.0.0_20260508_module_loading.py.json"
+}

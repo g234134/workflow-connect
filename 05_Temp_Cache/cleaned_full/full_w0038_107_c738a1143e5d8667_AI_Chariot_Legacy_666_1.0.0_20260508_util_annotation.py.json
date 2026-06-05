@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_util_annotation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_util_annotation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 478,
+  "content_sha256": "c738a1143e5d866736c02d5f12534c9f05caf469e922a43af57de2183a378bb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 12,
+    "char_count": 478,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import textwrap",
+      "import types",
+      "def get_code(source, *, filename=\"<string>\", function=False):",
+      "    source = textwrap.dedent(source).strip()",
+      "    code = compile(source, filename, \"exec\")",
+      "    if function:",
+      "        sub_code = [const for const in code.co_consts if isinstance(const, types.CodeType)]",
+      "        if len(sub_code) != 1:",
+      "            raise ValueError(\"unable to find function code\")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import textwrap",
+      "import types"
+    ],
+    "classes": [],
+    "functions": [
+      "get_code"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_107_c738a1143e5d8667_AI_Chariot_Legacy_666_1.0.0_20260508_util_annotation.py.json"
+}

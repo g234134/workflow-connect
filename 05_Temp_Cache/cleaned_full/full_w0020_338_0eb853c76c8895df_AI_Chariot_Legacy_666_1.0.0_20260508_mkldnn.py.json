@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mkldnn.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mkldnn.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8142,
+  "content_sha256": "0eb853c76c8895df8fa061ecd158c0d5756a1dcc8af677f4ff6016df548f7935",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 234,
+    "non_empty_lines": 193,
+    "char_count": 8142,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "class MkldnnLinear(torch.jit.ScriptModule):",
+      "    def __init__(self, dense_module, dtype):",
+      "        super().__init__()",
+      "        self.register_buffer('weight', dense_module.weight.to_mkldnn(dtype))",
+      "        if dense_module.bias is not None:",
+      "            # Bias can be fp32 or bf16 for OneDNN bf16 path, but for good accuracy,",
+      "            # we use fp32 dtype.",
+      "            self.register_buffer('bias', dense_module.bias.to_mkldnn())"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "MkldnnLinear",
+      "_MkldnnConvNd",
+      "MkldnnConv1d",
+      "MkldnnConv2d",
+      "MkldnnConv3d",
+      "MkldnnBatchNorm",
+      "MkldnnPrelu"
+    ],
+    "functions": [
+      "to_mkldnn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_338_0eb853c76c8895df_AI_Chariot_Legacy_666_1.0.0_20260508_mkldnn.py.json"
+}

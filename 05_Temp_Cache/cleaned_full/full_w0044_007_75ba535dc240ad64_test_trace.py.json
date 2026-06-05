@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\quantum\\tests\\test_trace.py",
+  "name": "test_trace.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3057,
+  "content_sha256": "75ba535dc240ad6451fc7879253bb2d862487e08d5a3acd2db4a3999d544187e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 81,
+    "char_count": 3057,
+    "preview_lines": [
+      "from sympy.core.containers import Tuple",
+      "from sympy.core.symbol import symbols",
+      "from sympy.matrices.dense import Matrix",
+      "from sympy.physics.quantum.trace import Tr",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy",
+      "def test_trace_new():",
+      "    a, b, c, d, Y = symbols('a b c d Y')",
+      "    A, B, C, D = symbols('A B C D', commutative=False)",
+      "    assert Tr(a + b) == a + b",
+      "    assert Tr(A + B) == Tr(A) + Tr(B)"
+    ],
+    "imports": [
+      "from sympy.core.containers import Tuple",
+      "from sympy.core.symbol import symbols",
+      "from sympy.matrices.dense import Matrix",
+      "from sympy.physics.quantum.trace import Tr",
+      "from sympy.testing.pytest import raises, warns_deprecated_sympy",
+      "from sympy.core.trace import Tr # noqa:F401"
+    ],
+    "classes": [],
+    "functions": [
+      "test_trace_new",
+      "test_trace_doit",
+      "test_permute",
+      "test_deprecated_core_trace"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_007_75ba535dc240ad64_test_trace.py.json"
+}

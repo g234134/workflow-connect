@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__decode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__decode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3004,
+  "content_sha256": "dd0fe00d0a94fff4ef0dbbbbc7e6fd2e36d5978416cb983fa85c258dcbaf37f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 104,
+    "non_empty_lines": 78,
+    "char_count": 3004,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import functools",
+      "import re",
+      "DECODE_DEFAULT_CHARS = \";/?:@&=+$,#\"",
+      "DECODE_COMPONENT_CHARS = \"\"",
+      "decode_cache: dict[str, list[str]] = {}",
+      "def get_decode_cache(exclude: str) -> Sequence[str]:",
+      "    if exclude in decode_cache:",
+      "        return decode_cache[exclude]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import functools",
+      "import re"
+    ],
+    "classes": [],
+    "functions": [
+      "get_decode_cache",
+      "decode",
+      "repl_func_with_cache"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_438_dd0fe00d0a94fff4_AI_Chariot_Legacy_666_1.0.0_20260508__decode.py.json"
+}

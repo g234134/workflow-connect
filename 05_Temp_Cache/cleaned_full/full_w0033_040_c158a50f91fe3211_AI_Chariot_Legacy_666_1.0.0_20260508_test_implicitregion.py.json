@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_implicitregion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_implicitregion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4028,
+  "content_sha256": "c158a50f91fe3211e25b9f104fa3f953bb93efd25d2879bd0fb2606688ba044e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 72,
+    "char_count": 4028,
+    "preview_lines": [
+      "from sympy.core.relational import Eq",
+      "from sympy.core.singleton import S",
+      "from sympy.abc import x, y, z, s, t",
+      "from sympy.sets import FiniteSet, EmptySet",
+      "from sympy.geometry import Point",
+      "from sympy.vector import ImplicitRegion",
+      "from sympy.testing.pytest import raises",
+      "def test_ImplicitRegion():",
+      "    ellipse = ImplicitRegion((x, y), (x**2/4 + y**2/16 - 1))",
+      "    assert ellipse.equation == x**2/4 + y**2/16 - 1"
+    ],
+    "imports": [
+      "from sympy.core.relational import Eq",
+      "from sympy.core.singleton import S",
+      "from sympy.abc import x, y, z, s, t",
+      "from sympy.sets import FiniteSet, EmptySet",
+      "from sympy.geometry import Point",
+      "from sympy.vector import ImplicitRegion",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_ImplicitRegion",
+      "test_regular_point",
+      "test_singular_points_and_multiplicty",
+      "test_rational_parametrization"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_040_c158a50f91fe3211_AI_Chariot_Legacy_666_1.0.0_20260508_test_implicitregion.py.json"
+}

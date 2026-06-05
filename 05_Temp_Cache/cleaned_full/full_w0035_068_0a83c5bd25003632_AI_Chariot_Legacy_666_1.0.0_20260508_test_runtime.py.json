@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 68,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_runtime.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_runtime.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3186,
+  "content_sha256": "0a83c5bd2500363205efede43cec465e6cc7ea448316ba8fababb4fff9dbc571",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 110,
+    "non_empty_lines": 81,
+    "char_count": 3186,
+    "preview_lines": [
+      "\"\"\"Test the runtime usage of `numpy.typing`.\"\"\"",
+      "from typing import (",
+      "    Any,",
+      "    NamedTuple,",
+      "    Union,  # pyright: ignore[reportDeprecated]",
+      "    get_args,",
+      "    get_origin,",
+      "    get_type_hints,",
+      ")",
+      "import pytest"
+    ],
+    "imports": [
+      "from typing import (",
+      "import pytest",
+      "import numpy as np",
+      "import numpy._typing as _npt",
+      "import numpy.typing as npt"
+    ],
+    "classes": [
+      "TypeTup",
+      "TestRuntimeProtocol"
+    ],
+    "functions": [
+      "_flatten_type_alias",
+      "test_get_args",
+      "test_get_origin",
+      "test_get_type_hints",
+      "test_get_type_hints_str",
+      "test_keys"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_068_0a83c5bd25003632_AI_Chariot_Legacy_666_1.0.0_20260508_test_runtime.py.json"
+}

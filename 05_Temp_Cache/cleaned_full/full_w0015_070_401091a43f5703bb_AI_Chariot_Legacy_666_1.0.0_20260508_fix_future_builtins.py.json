@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 70,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_builtins.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_builtins.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2027,
+  "content_sha256": "401091a43f5703bb5bb5f3f8c26385d835eab81e25abe7aea64423f90031a74b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 45,
+    "char_count": 2027,
+    "preview_lines": [
+      "\"\"\"",
+      "For the ``future`` package.",
+      "Adds this import line::",
+      "    from builtins import XYZ",
+      "for each of the functions XYZ that is used in the module.",
+      "Adds these imports after any other imports (in an initial block of them).",
+      "\"\"\"",
+      "from __future__ import unicode_literals",
+      "from lib2to3 import fixer_base",
+      "from lib2to3.pygram import python_symbols as syms"
+    ],
+    "imports": [
+      "from builtins import XYZ",
+      "from __future__ import unicode_literals",
+      "from lib2to3 import fixer_base",
+      "from lib2to3.pygram import python_symbols as syms",
+      "from lib2to3.fixer_util import Name, Call, in_special_context",
+      "from libfuturize.fixer_util import touch_import_top"
+    ],
+    "classes": [
+      "FixFutureBuiltins"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_070_401091a43f5703bb_AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_builtins.py.json"
+}

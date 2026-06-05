@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\test_interrupt_migration.py",
+  "name": "test_interrupt_migration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2405,
+  "content_sha256": "07dfd69337bf5a8beda10dffb64cf40588e20d84898e0cadbc07eb79cc73b509",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 34,
+    "char_count": 2402,
+    "preview_lines": [
+      "import warnings",
+      "import pytest",
+      "from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer",
+      "from langgraph.types import Interrupt",
+      "from langgraph.warnings import LangGraphDeprecatedSinceV10",
+      "@pytest.mark.filterwarnings(\"ignore:LangGraphDeprecatedSinceV10\")",
+      "def test_interrupt_legacy_ns() -> None:",
+      "    with warnings.catch_warnings():",
+      "        warnings.filterwarnings(\"ignore\", category=LangGraphDeprecatedSinceV10)",
+      "        old_interrupt = Interrupt("
+    ],
+    "imports": [
+      "import warnings",
+      "import pytest",
+      "from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer",
+      "from langgraph.types import Interrupt",
+      "from langgraph.warnings import LangGraphDeprecatedSinceV10"
+    ],
+    "classes": [],
+    "functions": [
+      "test_interrupt_legacy_ns",
+      "test_serialization_roundtrip",
+      "test_serialization_roundtrip_complex_ns"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_140_07dfd69337bf5a8b_test_interrupt_migration.py.json"
+}

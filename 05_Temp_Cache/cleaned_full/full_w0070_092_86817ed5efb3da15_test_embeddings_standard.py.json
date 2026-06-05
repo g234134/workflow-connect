@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\huggingface\\tests\\integration_tests\\test_embeddings_standard.py",
+  "name": "test_embeddings_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 893,
+  "content_sha256": "86817ed5efb3da15df382118f206875af9f19c5fa66c2857bcda614338817950",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 20,
+    "char_count": 890,
+    "preview_lines": [
+      "\"\"\"Test HuggingFace embeddings.\"\"\"",
+      "from langchain_tests.integration_tests import EmbeddingsIntegrationTests",
+      "from langchain_huggingface.embeddings import (",
+      "    HuggingFaceEmbeddings,",
+      "    HuggingFaceEndpointEmbeddings,",
+      ")",
+      "class TestHuggingFaceEmbeddings(EmbeddingsIntegrationTests):",
+      "    @property",
+      "    def embeddings_class(self) -> type[HuggingFaceEmbeddings]:",
+      "        return HuggingFaceEmbeddings"
+    ],
+    "imports": [
+      "from langchain_tests.integration_tests import EmbeddingsIntegrationTests",
+      "from langchain_huggingface.embeddings import ("
+    ],
+    "classes": [
+      "TestHuggingFaceEmbeddings",
+      "TestHuggingFaceEndpointEmbeddings"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_092_86817ed5efb3da15_test_embeddings_standard.py.json"
+}

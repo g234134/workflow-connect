@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 469,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_basePen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_basePen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17548,
+  "content_sha256": "5ab778c4d9766a91f87dda6408f6d5f33d10b8d5fb938e891f0ca565eafbd86d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 475,
+    "non_empty_lines": 384,
+    "char_count": 17548,
+    "preview_lines": [
+      "\"\"\"fontTools.pens.basePen.py -- Tools and base classes to build pen objects.",
+      "The Pen Protocol",
+      "A Pen is a kind of object that standardizes the way how to \"draw\" outlines:",
+      "it is a middle man between an outline and a drawing. In other words:",
+      "it is an abstraction for drawing outlines, making sure that outline objects",
+      "don't need to know the details about how and where they're being drawn, and",
+      "that drawings don't need to know the details of how outlines are stored.",
+      "The most basic pattern is this::",
+      "\toutline.draw(pen)  # 'outline' draws itself onto 'pen'",
+      "Pens can be used to render outlines to the screen, but also to construct"
+    ],
+    "imports": [
+      "from typing import Tuple, Dict",
+      "from fontTools.misc.loggingTools import LogMixin",
+      "from fontTools.misc.transform import DecomposedTransform, Identity"
+    ],
+    "classes": [
+      "PenError",
+      "OpenContourError",
+      "AbstractPen",
+      "NullPen",
+      "LoggingPen",
+      "MissingComponentError",
+      "DecomposingPen",
+      "BasePen",
+      "_TestPen"
+    ],
+    "functions": [
+      "decomposeSuperBezierSegment",
+      "decomposeQuadraticSegment"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_469_5ab778c4d9766a91_AI_Chariot_Legacy_666_1.0.0_20260508_basePen.py.json"
+}

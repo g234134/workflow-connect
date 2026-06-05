@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\fx_passes\\binary_folding.py",
+  "name": "binary_folding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10859,
+  "content_sha256": "ccc612a7909954654cbbcdbe93503e80991a42102ed2ca7ab7b6a20d75af1761",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 277,
+    "non_empty_lines": 241,
+    "char_count": 10859,
+    "preview_lines": [
+      "import functools",
+      "import itertools",
+      "import torch",
+      "from ..._dynamo.utils import counters",
+      "from ..pattern_matcher import Arg, CallFunction, KeywordArg",
+      "from .freezing_patterns import register_binary_folding_pattern",
+      "aten = torch.ops.aten",
+      "prims = torch.ops.prims",
+      "def mark_mixed_dtype_conv(conv):",
+      "    conv_dtype = conv.meta[\"val\"].dtype"
+    ],
+    "imports": [
+      "import functools",
+      "import itertools",
+      "import torch",
+      "from ..._dynamo.utils import counters",
+      "from ..pattern_matcher import Arg, CallFunction, KeywordArg",
+      "from .freezing_patterns import register_binary_folding_pattern"
+    ],
+    "classes": [],
+    "functions": [
+      "mark_mixed_dtype_conv",
+      "mark_mixed_dtype_allowed_convs",
+      "recover_original_precision_folded_convs",
+      "binary_folding_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_122_ccc612a790995465_binary_folding.py.json"
+}

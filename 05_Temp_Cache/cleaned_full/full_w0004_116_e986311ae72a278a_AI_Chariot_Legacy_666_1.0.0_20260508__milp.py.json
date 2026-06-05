@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__milp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__milp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15619,
+  "content_sha256": "e986311ae72a278a3734932e6d9fe9e00bccb1ff89857e599308fc5e65bdb53b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 392,
+    "non_empty_lines": 316,
+    "char_count": 15619,
+    "preview_lines": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy.sparse import csc_array, vstack, issparse",
+      "from scipy._lib._util import VisibleDeprecationWarning",
+      "from ._highspy._highs_wrapper import _highs_wrapper  # type: ignore[import-not-found,import-untyped]",
+      "from ._constraints import LinearConstraint, Bounds",
+      "from ._optimize import OptimizeResult",
+      "from ._linprog_highs import _highs_to_scipy_status_message",
+      "def _constraints_to_components(constraints):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy.sparse import csc_array, vstack, issparse",
+      "from scipy._lib._util import VisibleDeprecationWarning",
+      "from ._highspy._highs_wrapper import _highs_wrapper  # type: ignore[import-not-found,import-untyped]",
+      "from ._constraints import LinearConstraint, Bounds",
+      "from ._optimize import OptimizeResult",
+      "from ._linprog_highs import _highs_to_scipy_status_message"
+    ],
+    "classes": [],
+    "functions": [
+      "_constraints_to_components",
+      "_milp_iv",
+      "milp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_116_e986311ae72a278a_AI_Chariot_Legacy_666_1.0.0_20260508__milp.py.json"
+}

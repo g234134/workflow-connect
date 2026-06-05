@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\langgraph_sdk\\_async\\client.py",
+  "name": "client.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6328,
+  "content_sha256": "d8cf848fc4d7aae6434d82121969d31ff4d073bf0e6790ea827ce3058e67ed83",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 178,
+    "non_empty_lines": 147,
+    "char_count": 6325,
+    "preview_lines": [
+      "\"\"\"Async LangGraph client.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "from collections.abc import Mapping",
+      "from types import TracebackType",
+      "import httpx",
+      "from langgraph_sdk._async.assistants import AssistantsClient",
+      "from langgraph_sdk._async.cron import CronClient",
+      "from langgraph_sdk._async.http import HttpClient"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "from collections.abc import Mapping",
+      "from types import TracebackType",
+      "import httpx",
+      "from langgraph_sdk._async.assistants import AssistantsClient",
+      "from langgraph_sdk._async.cron import CronClient",
+      "from langgraph_sdk._async.http import HttpClient",
+      "from langgraph_sdk._async.runs import RunsClient",
+      "from langgraph_sdk._async.store import StoreClient",
+      "from langgraph_sdk._async.threads import ThreadsClient",
+      "from langgraph_sdk._shared.types import TimeoutTypes",
+      "from langgraph_sdk._shared.utilities import (",
+      "from langgraph_sdk import get_client",
+      "from langgraph_sdk import get_client",
+      "from langgraph_sdk import get_client",
+      "from langgraph_api.server import app  # type: ignore"
+    ],
+    "classes": [
+      "LangGraphClient"
+    ],
+    "functions": [
+      "get_client"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_194_d8cf848fc4d7aae6_client.py.json"
+}

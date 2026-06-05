@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 161,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_channel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_channel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23188,
+  "content_sha256": "91e73c5e7d4e5f9f28975d90088d1884894758efcbe0c18337e0681852b8828c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 750,
+    "non_empty_lines": 591,
+    "char_count": 23188,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import pytest",
+      "import trio",
+      "from trio import EndOfChannel, as_safe_channel, open_memory_channel",
+      "from ..testing import assert_checkpoints, wait_all_tasks_blocked",
+      "if sys.version_info < (3, 11):",
+      "    from exceptiongroup import ExceptionGroup",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import pytest",
+      "import trio",
+      "from trio import EndOfChannel, as_safe_channel, open_memory_channel",
+      "from ..testing import assert_checkpoints, wait_all_tasks_blocked",
+      "from exceptiongroup import ExceptionGroup",
+      "from collections.abc import AsyncGenerator"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_161_91e73c5e7d4e5f9f_AI_Chariot_Legacy_666_1.0.0_20260508_test_channel.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_egyptian_fraction.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_egyptian_fraction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2378,
+  "content_sha256": "b691dcc2d7aeb9001a85c3eabe0066e0cc2af9e7f37073a7f2695d8a3ca78e51",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 49,
+    "non_empty_lines": 43,
+    "char_count": 2378,
+    "preview_lines": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.ntheory.egyptian_fraction import egyptian_fraction",
+      "from sympy.core.add import Add",
+      "from sympy.testing.pytest import raises",
+      "from sympy.core.random import random_complex_number",
+      "def test_egyptian_fraction():",
+      "    def test_equality(r, alg=\"Greedy\"):",
+      "        return r == Add(*[Rational(1, i) for i in egyptian_fraction(r, alg)])",
+      "    r = random_complex_number(a=0, c=1, b=0, d=0, rational=True)",
+      "    assert test_equality(r)"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.ntheory.egyptian_fraction import egyptian_fraction",
+      "from sympy.core.add import Add",
+      "from sympy.testing.pytest import raises",
+      "from sympy.core.random import random_complex_number"
+    ],
+    "classes": [],
+    "functions": [
+      "test_egyptian_fraction",
+      "test_input"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_136_b691dcc2d7aeb900_AI_Chariot_Legacy_666_1.0.0_20260508_test_egyptian_fraction.py.json"
+}

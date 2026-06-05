@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 403,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__io_epoll.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__io_epoll.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17807,
+  "content_sha256": "7da665ef738566d4b440b065b487718ceca019422ee6ab35473b98faab51fd59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 385,
+    "non_empty_lines": 347,
+    "char_count": 17803,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import select",
+      "import sys",
+      "from collections import defaultdict",
+      "from typing import TYPE_CHECKING, Literal, TypeAlias",
+      "import attrs",
+      "from .. import _core",
+      "from ._io_common import wake_all",
+      "from ._run import Task, _public"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import select",
+      "import sys",
+      "from collections import defaultdict",
+      "from typing import TYPE_CHECKING, Literal, TypeAlias",
+      "import attrs",
+      "from .. import _core",
+      "from ._io_common import wake_all",
+      "from ._run import Task, _public",
+      "from ._wakeup_socketpair import WakeupSocketpair",
+      "from .._core import Abort, RaiseCancelT",
+      "from .._file_io import _HasFileNo"
+    ],
+    "classes": [
+      "EpollWaiters",
+      "_EpollStatistics",
+      "EpollIOManager"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_403_7da665ef738566d4_AI_Chariot_Legacy_666_1.0.0_20260508__io_epoll.py.json"
+}

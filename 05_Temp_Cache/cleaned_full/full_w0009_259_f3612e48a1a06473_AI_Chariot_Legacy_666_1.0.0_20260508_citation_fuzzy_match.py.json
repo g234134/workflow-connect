@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_citation_fuzzy_match.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_citation_fuzzy_match.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5615,
+  "content_sha256": "f3612e48a1a06473ae34d4c80ffb950d0f58ea168b2c770b80088a99dcf98916",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 137,
+    "char_count": 5615,
+    "preview_lines": [
+      "from collections.abc import Iterator",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseChatModel, BaseLanguageModel",
+      "from langchain_core.messages import HumanMessage, SystemMessage",
+      "from langchain_core.output_parsers.openai_functions import PydanticOutputFunctionsParser",
+      "from langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate",
+      "from langchain_core.runnables import Runnable",
+      "from pydantic import BaseModel, Field",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.openai_functions.utils import get_llm_kwargs"
+    ],
+    "imports": [
+      "from collections.abc import Iterator",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseChatModel, BaseLanguageModel",
+      "from langchain_core.messages import HumanMessage, SystemMessage",
+      "from langchain_core.output_parsers.openai_functions import PydanticOutputFunctionsParser",
+      "from langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate",
+      "from langchain_core.runnables import Runnable",
+      "from pydantic import BaseModel, Field",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.openai_functions.utils import get_llm_kwargs",
+      "import regex",
+      "from langchain_classic.chains import create_citation_fuzzy_match_runnable",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [
+      "FactWithEvidence",
+      "QuestionAnswer"
+    ],
+    "functions": [
+      "create_citation_fuzzy_match_runnable",
+      "create_citation_fuzzy_match_chain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_259_f3612e48a1a06473_AI_Chariot_Legacy_666_1.0.0_20260508_citation_fuzzy_match.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 498,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_escape_sequences.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_escape_sequences.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7639,
+  "content_sha256": "96d9258d0df7bbef6f67e3b5831844385383d1486ec13e6b3a5fea120ef6a74a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 194,
+    "non_empty_lines": 162,
+    "char_count": 7639,
+    "preview_lines": [
+      "r\"\"\"",
+      "Terminal escape sequence patterns.",
+      "This module provides regex patterns for matching terminal escape sequences. All patterns match",
+      "sequences that begin with ESC (``\\x1b``). Before calling re.match with these patterns, callers",
+      "should first check that the character at the current position is ESC for optimal performance.",
+      "\"\"\"",
+      "# std imports",
+      "import re",
+      "import typing",
+      "# local"
+    ],
+    "imports": [
+      "import re",
+      "import typing",
+      "from .sgr_state import _SGR_PATTERN"
+    ],
+    "classes": [],
+    "functions": [
+      "iter_sequences",
+      "strip_sequences"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_498_96d9258d0df7bbef_AI_Chariot_Legacy_666_1.0.0_20260508_escape_sequences.py.json"
+}

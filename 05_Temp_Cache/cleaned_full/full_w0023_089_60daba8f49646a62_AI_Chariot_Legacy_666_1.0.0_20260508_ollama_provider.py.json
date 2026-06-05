@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ollama_provider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ollama_provider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1004,
+  "content_sha256": "60daba8f49646a62667bd490bb057ab83cac3ebd638adcd6da023ddb62603fb5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 25,
+    "char_count": 1004,
+    "preview_lines": [
+      "\"\"\"Ollama embeddings provider.\"\"\"",
+      "from chromadb.utils.embedding_functions.ollama_embedding_function import (",
+      "    OllamaEmbeddingFunction,",
+      ")",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider",
+      "class OllamaProvider(BaseEmbeddingsProvider[OllamaEmbeddingFunction]):",
+      "    \"\"\"Ollama embeddings provider.\"\"\"",
+      "    embedding_callable: type[OllamaEmbeddingFunction] = Field(",
+      "        default=OllamaEmbeddingFunction, description=\"Ollama embedding function class\""
+    ],
+    "imports": [
+      "from chromadb.utils.embedding_functions.ollama_embedding_function import (",
+      "from pydantic import AliasChoices, Field",
+      "from crewai.rag.core.base_embeddings_provider import BaseEmbeddingsProvider"
+    ],
+    "classes": [
+      "OllamaProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_089_60daba8f49646a62_AI_Chariot_Legacy_666_1.0.0_20260508_ollama_provider.py.json"
+}

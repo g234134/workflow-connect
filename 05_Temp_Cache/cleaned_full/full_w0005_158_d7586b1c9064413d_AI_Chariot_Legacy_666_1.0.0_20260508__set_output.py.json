@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__set_output.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__set_output.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15272,
+  "content_sha256": "d7586b1c9064413d9a9f0364912540b44f4c56f8874d981cbd9f3bd8e11df90f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 460,
+    "non_empty_lines": 353,
+    "char_count": 15272,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import importlib",
+      "from functools import wraps",
+      "from typing import Protocol, runtime_checkable",
+      "import numpy as np",
+      "from scipy.sparse import issparse",
+      "from sklearn._config import get_config",
+      "from sklearn.utils._available_if import available_if",
+      "def check_library_installed(library):"
+    ],
+    "imports": [
+      "import importlib",
+      "from functools import wraps",
+      "from typing import Protocol, runtime_checkable",
+      "import numpy as np",
+      "from scipy.sparse import issparse",
+      "from sklearn._config import get_config",
+      "from sklearn.utils._available_if import available_if"
+    ],
+    "classes": [
+      "ContainerAdapterProtocol",
+      "PandasAdapter",
+      "PolarsAdapter",
+      "ContainerAdaptersManager",
+      "_SetOutputMixin"
+    ],
+    "functions": [
+      "check_library_installed",
+      "get_columns",
+      "_get_adapter_from_container",
+      "_get_container_adapter",
+      "_get_output_config",
+      "_wrap_data_with_container",
+      "_wrap_method_output",
+      "_auto_wrap_is_configured",
+      "_safe_set_output"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_158_d7586b1c9064413d_AI_Chariot_Legacy_666_1.0.0_20260508__set_output.py.json"
+}

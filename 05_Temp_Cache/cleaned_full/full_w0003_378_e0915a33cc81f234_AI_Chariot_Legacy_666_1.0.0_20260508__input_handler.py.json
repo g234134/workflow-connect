@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 378,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__input_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__input_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4422,
+  "content_sha256": "e0915a33cc81f234a01aa74ad3dfb1a345e8bc369a9fb4da1b16dc3c39341e31",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 132,
+    "non_empty_lines": 112,
+    "char_count": 4422,
+    "preview_lines": [
+      "\"\"\"Unified input handler for all platforms.\"\"\"",
+      "import sys",
+      "import unicodedata",
+      "class TextInputHandler:",
+      "    \"\"\"Input handler with platform-specific key code support.\"\"\"",
+      "    # Platform-specific key codes",
+      "    if sys.platform == \"win32\":",
+      "        # Windows uses \\xe0 prefix for special keys when using msvcrt.getwch",
+      "        DOWN_KEY = \"\\xe0P\"  # Down arrow",
+      "        UP_KEY = \"\\xe0H\"  # Up arrow"
+    ],
+    "imports": [
+      "import sys",
+      "import unicodedata"
+    ],
+    "classes": [
+      "TextInputHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_378_e0915a33cc81f234_AI_Chariot_Legacy_666_1.0.0_20260508__input_handler.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nmf.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nmf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29262,
+  "content_sha256": "90c14ace108568f490cc107c024eb69bef2fc9f94092e30106b7f25188fcda64",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 784,
+    "non_empty_lines": 609,
+    "char_count": 29262,
+    "preview_lines": [
+      "\"\"\"Online Non-Negative Matrix Factorization.",
+      "Implementation of the efficient incremental algorithm of Renbo Zhao, Vincent Y. F. Tan et al.",
+      "`[PDF] <https://arxiv.org/abs/1604.02634>`_.",
+      "This NMF implementation updates in a streaming fashion and works best with sparse corpora.",
+      "- W is a word-topic matrix",
+      "- h is a topic-document matrix",
+      "- v is an input corpus batch, word-document matrix",
+      "- A, B - matrices that accumulate information from every consecutive chunk. A = h.dot(ht), B = v.dot(ht).",
+      "The idea of the algorithm is as follows:",
+      ".. code-block:: text"
+    ],
+    "imports": [
+      "import collections.abc",
+      "import logging",
+      "import numpy as np",
+      "import scipy.sparse",
+      "from scipy.stats import halfnorm",
+      "from scipy.sparse import csc_matrix",
+      "from gensim import interfaces",
+      "from gensim import matutils",
+      "from gensim import utils",
+      "from gensim.interfaces import TransformedCorpus",
+      "from gensim.models import basemodel, CoherenceModel",
+      "from gensim.models.nmf_pgd import solve_h"
+    ],
+    "classes": [
+      "Nmf"
+    ],
+    "functions": [
+      "version_tuple"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_410_90c14ace108568f4_AI_Chariot_Legacy_666_1.0.0_20260508_nmf.py.json"
+}

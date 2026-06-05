@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 59,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\pydantic\\v1\\decorator.py",
+  "name": "decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10339,
+  "content_sha256": "cda6b1c71a163c29bcd7c0f56ecd3285aa518d79b7d95f06d191d609d335b970",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 264,
+    "non_empty_lines": 215,
+    "char_count": 10339,
+    "preview_lines": [
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING, Any, Callable, Dict, List, Mapping, Optional, Tuple, Type, TypeVar, Union, overload",
+      "from pydantic.v1 import validator",
+      "from pydantic.v1.config import Extra",
+      "from pydantic.v1.errors import ConfigError",
+      "from pydantic.v1.main import BaseModel, create_model",
+      "from pydantic.v1.typing import get_all_type_hints",
+      "from pydantic.v1.utils import to_camel",
+      "__all__ = ('validate_arguments',)",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING, Any, Callable, Dict, List, Mapping, Optional, Tuple, Type, TypeVar, Union, overload",
+      "from pydantic.v1 import validator",
+      "from pydantic.v1.config import Extra",
+      "from pydantic.v1.errors import ConfigError",
+      "from pydantic.v1.main import BaseModel, create_model",
+      "from pydantic.v1.typing import get_all_type_hints",
+      "from pydantic.v1.utils import to_camel",
+      "from pydantic.v1.typing import AnyCallable",
+      "from inspect import Parameter, signature"
+    ],
+    "classes": [
+      "ValidatedFunction"
+    ],
+    "functions": [
+      "validate_arguments",
+      "validate_arguments",
+      "validate_arguments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_059_cda6b1c71a163c29_decorator.py.json"
+}

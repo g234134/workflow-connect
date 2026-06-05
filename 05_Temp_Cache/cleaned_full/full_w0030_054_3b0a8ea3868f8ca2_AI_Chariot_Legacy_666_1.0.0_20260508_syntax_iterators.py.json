@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 54,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_syntax_iterators.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_syntax_iterators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2044,
+  "content_sha256": "3b0a8ea3868f8ca2b092f50d3e50ae04db5b4efb6dee79b3911c0322336cc363",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 49,
+    "non_empty_lines": 44,
+    "char_count": 2044,
+    "preview_lines": [
+      "from typing import Iterator, Tuple, Union",
+      "from ...errors import Errors",
+      "from ...symbols import NOUN, PROPN",
+      "from ...tokens import Doc, Span",
+      "def noun_chunks(doclike: Union[Doc, Span]) -> Iterator[Tuple[int, int, int]]:",
+      "    \"\"\"Detect base noun phrases from a dependency parse. Works on Doc and Span.\"\"\"",
+      "    # fmt: off",
+      "    labels = [\"nsubj\", \"nsubj:pass\", \"obj\", \"obl\", \"iobj\", \"ROOT\", \"appos\", \"nmod\", \"nmod:poss\"]",
+      "    # fmt: on",
+      "    doc = doclike.doc  # Ensure works on both Doc and Span."
+    ],
+    "imports": [
+      "from typing import Iterator, Tuple, Union",
+      "from ...errors import Errors",
+      "from ...symbols import NOUN, PROPN",
+      "from ...tokens import Doc, Span"
+    ],
+    "classes": [],
+    "functions": [
+      "noun_chunks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_054_3b0a8ea3868f8ca2_AI_Chariot_Legacy_666_1.0.0_20260508_syntax_iterators.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\mobile\\observer.h",
+  "name": "observer.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3747,
+  "content_sha256": "f66a9088e569588dc5eae6c71f5c6dd3c6c55390f62b5e8349bae01fbf31b2ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 110,
+    "non_empty_lines": 95,
+    "char_count": 3747,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/ThreadLocalDebugInfo.h>",
+      "#include <string>",
+      "#include <unordered_map>",
+      "#include <vector>",
+      "namespace torch {",
+      "class MobileDebugInfo : public c10::DebugInfoBase {",
+      " public:",
+      "  const std::string& getModelName() {",
+      "    return model_name_;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_317_f66a9088e569588d_observer.h.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 348,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_scrape.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_scrape.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4486,
+  "content_sha256": "c63097926a32a780156b62e20092a53183b30e71009de9e458c2b68e11e40fb5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 138,
+    "non_empty_lines": 119,
+    "char_count": 4486,
+    "preview_lines": [
+      "import os",
+      "import pytest",
+      "from dotenv import load_dotenv",
+      "from firecrawl import AsyncFirecrawl",
+      "from firecrawl.v2.types import Document",
+      "load_dotenv()",
+      "if not os.getenv(\"API_KEY\"):",
+      "    raise ValueError(\"API_KEY is not set\")",
+      "if not os.getenv(\"API_URL\"):",
+      "    raise ValueError(\"API_URL is not set\")"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from dotenv import load_dotenv",
+      "from firecrawl import AsyncFirecrawl",
+      "from firecrawl.v2.types import Document"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_348_c63097926a32a780_AI_Chariot_Legacy_666_1.0.0_20260508_test_aio_scrape.py.json"
+}

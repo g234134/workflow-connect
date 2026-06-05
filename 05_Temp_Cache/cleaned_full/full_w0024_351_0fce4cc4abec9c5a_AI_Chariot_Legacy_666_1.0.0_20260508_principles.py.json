@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_principles.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_principles.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21686,
+  "content_sha256": "0fce4cc4abec9c5a16a1d9f97c88c37c037f3fb1a74ba065987d3b821e24e9d4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 280,
+    "non_empty_lines": 277,
+    "char_count": 21686,
+    "preview_lines": [
+      "\"\"\"Constitutional principles.",
+      "Constitutional principles from https://arxiv.org/pdf/2212.08073.pdf (Bai et al. 2022)",
+      "UnifiedObjectives v0.2 principles (\"uo-*\") adapted from https://examine.dev/docs/Unified_objectives.pdf (Samwald et al. 2023).",
+      "\"\"\"",
+      "from langchain_classic.chains.constitutional_ai.models import ConstitutionalPrinciple",
+      "PRINCIPLES: dict[str, ConstitutionalPrinciple] = {",
+      "    \"harmful1\": ConstitutionalPrinciple(",
+      "        name=\"harmful1\",",
+      "        critique_request=\"Identify specific ways in which the assistant's last response is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.\",",
+      "        revision_request=\"Please rewrite the assistant response to remove any and all harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.\","
+    ],
+    "imports": [
+      "from langchain_classic.chains.constitutional_ai.models import ConstitutionalPrinciple"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_351_0fce4cc4abec9c5a_AI_Chariot_Legacy_666_1.0.0_20260508_principles.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 299,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_with_flatten_v2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_with_flatten_v2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2020,
+  "content_sha256": "6b5b48c1a908b954b29f137cd48caa6382d868a90afdec0677cbd3e67eb43552",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 51,
+    "char_count": 2020,
+    "preview_lines": [
+      "from typing import Any, Callable, List, Optional, Sequence, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "InItemT = TypeVar(\"InItemT\")",
+      "OutItemT = TypeVar(\"OutItemT\")",
+      "ItemT = TypeVar(\"ItemT\")",
+      "NestedT = List[List[ItemT]]",
+      "FlatT = List[ItemT]",
+      "@registry.layers(\"with_flatten.v2\")",
+      "def with_flatten_v2("
+    ],
+    "imports": [
+      "from typing import Any, Callable, List, Optional, Sequence, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model"
+    ],
+    "classes": [],
+    "functions": [
+      "with_flatten_v2",
+      "forward",
+      "_flatten",
+      "_unflatten",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_299_6b5b48c1a908b954_AI_Chariot_Legacy_666_1.0.0_20260508_with_flatten_v2.py.json"
+}

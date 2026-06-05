@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 82,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1001,
+  "content_sha256": "2664b47ae0a7c6eb3c7108dda6ba82f8e3142076c62567a3b33072533e9e8b6c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 25,
+    "char_count": 1001,
+    "preview_lines": [
+      "from io import StringIO",
+      "import pytest",
+      "from pandas import read_sas",
+      "import pandas._testing as tm",
+      "class TestSas:",
+      "    def test_sas_buffer_format(self):",
+      "        # see gh-14947",
+      "        b = StringIO(\"\")",
+      "        msg = (",
+      "            \"If this is a buffer object rather than a string \""
+    ],
+    "imports": [
+      "from io import StringIO",
+      "import pytest",
+      "from pandas import read_sas",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestSas"
+    ],
+    "functions": [
+      "test_sas_archive"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_082_2664b47ae0a7c6eb_AI_Chariot_Legacy_666_1.0.0_20260508_test_sas.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_auth_context.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_auth_context.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1696,
+  "content_sha256": "d2160352bd862f456a4d542d0826420e8a762701a8c7f22e0f45c16506eda53d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 37,
+    "char_count": 1696,
+    "preview_lines": [
+      "import contextvars",
+      "from starlette.types import ASGIApp, Receive, Scope, Send",
+      "from mcp.server.auth.middleware.bearer_auth import AuthenticatedUser",
+      "from mcp.server.auth.provider import AccessToken",
+      "# Create a contextvar to store the authenticated user",
+      "# The default is None, indicating no authenticated user is present",
+      "auth_context_var = contextvars.ContextVar[AuthenticatedUser | None](\"auth_context\", default=None)",
+      "def get_access_token() -> AccessToken | None:",
+      "    \"\"\"",
+      "    Get the access token from the current context."
+    ],
+    "imports": [
+      "import contextvars",
+      "from starlette.types import ASGIApp, Receive, Scope, Send",
+      "from mcp.server.auth.middleware.bearer_auth import AuthenticatedUser",
+      "from mcp.server.auth.provider import AccessToken"
+    ],
+    "classes": [
+      "AuthContextMiddleware"
+    ],
+    "functions": [
+      "get_access_token"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_252_d2160352bd862f45_AI_Chariot_Legacy_666_1.0.0_20260508_auth_context.py.json"
+}

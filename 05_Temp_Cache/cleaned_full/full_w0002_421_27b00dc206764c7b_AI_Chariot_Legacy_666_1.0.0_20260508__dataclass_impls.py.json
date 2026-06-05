@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dataclass_impls.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dataclass_impls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6874,
+  "content_sha256": "27b00dc206764c7b592fedae6ab6daf20b2f22fd04e7db10591a2eb9c51f10a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 190,
+    "non_empty_lines": 162,
+    "char_count": 6874,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Functions for synthesizing magic methods for JIT-compiled dataclasses",
+      "import ast",
+      "import dataclasses",
+      "import inspect",
+      "import os",
+      "from functools import partial",
+      "from typing import Callable, Dict, List",
+      "from torch._jit_internal import FAKE_FILENAME_PREFIX, is_optional",
+      "from torch._sources import ParsedDef, SourceContext"
+    ],
+    "imports": [
+      "import ast",
+      "import dataclasses",
+      "import inspect",
+      "import os",
+      "from functools import partial",
+      "from typing import Callable, Dict, List",
+      "from torch._jit_internal import FAKE_FILENAME_PREFIX, is_optional",
+      "from torch._sources import ParsedDef, SourceContext"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_fake_filename",
+      "compose_fn",
+      "synthesize__init__",
+      "synthesize__repr__",
+      "synthesize__hash__",
+      "synthesize_equality",
+      "synthesize_inequality",
+      "synthesize_comparison"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_421_27b00dc206764c7b_AI_Chariot_Legacy_666_1.0.0_20260508__dataclass_impls.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_importtools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_importtools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1394,
+  "content_sha256": "2ab7e89ed298bf5d54be96b3434bd2d6aca1c48be066b08e5e1d4915e0028dea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 36,
+    "char_count": 1394,
+    "preview_lines": [
+      "from sympy.external import import_module",
+      "from sympy.testing.pytest import warns",
+      "# fixes issue that arose in addressing issue 6533",
+      "def test_no_stdlib_collections():",
+      "    '''",
+      "    make sure we get the right collections when it is not part of a",
+      "    larger list",
+      "    '''",
+      "    import collections",
+      "    matplotlib = import_module('matplotlib',"
+    ],
+    "imports": [
+      "from sympy.external import import_module",
+      "from sympy.testing.pytest import warns",
+      "import collections",
+      "import collections",
+      "import collections"
+    ],
+    "classes": [],
+    "functions": [
+      "test_no_stdlib_collections",
+      "test_no_stdlib_collections2",
+      "test_no_stdlib_collections3",
+      "test_min_module_version_python3_basestring_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_046_2ab7e89ed298bf5d_AI_Chariot_Legacy_666_1.0.0_20260508_test_importtools.py.json"
+}

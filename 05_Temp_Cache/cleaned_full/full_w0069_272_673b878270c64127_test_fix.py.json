@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 272,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\output_parsers\\test_fix.py",
+  "name": "test_fix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7779,
+  "content_sha256": "673b878270c641274efe743302481d9ad82f8e111bb8122144e7bb31e93599e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 222,
+    "non_empty_lines": 195,
+    "char_count": 7776,
+    "preview_lines": [
+      "from datetime import datetime as dt",
+      "from datetime import timezone",
+      "from typing import Any, TypeVar",
+      "import pytest",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.output_parsers import BaseOutputParser",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnableLambda, RunnablePassthrough",
+      "from typing_extensions import override"
+    ],
+    "imports": [
+      "from datetime import datetime as dt",
+      "from datetime import timezone",
+      "from typing import Any, TypeVar",
+      "import pytest",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.output_parsers import BaseOutputParser",
+      "from langchain_core.prompts.prompt import PromptTemplate",
+      "from langchain_core.runnables import Runnable, RunnableLambda, RunnablePassthrough",
+      "from typing_extensions import override",
+      "from langchain_classic.output_parsers.boolean import BooleanOutputParser",
+      "from langchain_classic.output_parsers.datetime import DatetimeOutputParser",
+      "from langchain_classic.output_parsers.fix import OutputFixingParser",
+      "from langchain_classic.output_parsers.prompts import NAIVE_FIX_PROMPT"
+    ],
+    "classes": [
+      "SuccessfulParseAfterRetries",
+      "SuccessfulParseAfterRetriesWithGetFormatInstructions"
+    ],
+    "functions": [
+      "test_output_fixing_parser_parse",
+      "test_output_fixing_parser_from_llm",
+      "test_output_fixing_parser_parse_fail",
+      "test_output_fixing_parser_output_type",
+      "test_output_fixing_parser_parse_with_retry_chain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_272_673b878270c64127_test_fix.py.json"
+}

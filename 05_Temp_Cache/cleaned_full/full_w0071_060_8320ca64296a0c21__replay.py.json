@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\_internal\\_replay.py",
+  "name": "_replay.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3395,
+  "content_sha256": "8320ca64296a0c21e464dd46ce0ee197b136386c07f792b5f775050f3e2fc939",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 75,
+    "char_count": 3392,
+    "preview_lines": [
+      "\"\"\"Replay state for subgraph checkpoint loading during time-travel.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from langgraph._internal._constants import NS_END",
+      "if TYPE_CHECKING:",
+      "    from langchain_core.runnables import RunnableConfig",
+      "    from langgraph.checkpoint.base import BaseCheckpointSaver, CheckpointTuple",
+      "class ReplayState:",
+      "    \"\"\"Tracks which subgraphs have already loaded their pre-replay checkpoint.",
+      "    During a parent replay, each subgraph's first invocation should restore the"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from langgraph._internal._constants import NS_END",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver, CheckpointTuple"
+    ],
+    "classes": [
+      "ReplayState"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_060_8320ca64296a0c21__replay.py.json"
+}

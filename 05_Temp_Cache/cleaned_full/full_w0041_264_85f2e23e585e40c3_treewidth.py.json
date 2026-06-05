@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:47:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\treewidth.py",
+  "name": "treewidth.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8389,
+  "content_sha256": "85f2e23e585e40c37b306e82191e70ec0b1c29b2eede94cb358452d7748ed17a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 255,
+    "non_empty_lines": 191,
+    "char_count": 8389,
+    "preview_lines": [
+      "\"\"\"Functions for computing treewidth decomposition.",
+      "Treewidth of an undirected graph is a number associated with the graph.",
+      "It can be defined as the size of the largest vertex set (bag) in a tree",
+      "decomposition of the graph minus one.",
+      "`Wikipedia: Treewidth <https://en.wikipedia.org/wiki/Treewidth>`_",
+      "The notions of treewidth and tree decomposition have gained their",
+      "attractiveness partly because many graph and network problems that are",
+      "intractable (e.g., NP-hard) on arbitrary graphs become efficiently",
+      "solvable (e.g., with a linear time algorithm) when the treewidth of the",
+      "input graphs is bounded by a constant [1]_ [2]_."
+    ],
+    "imports": [
+      "import itertools",
+      "import sys",
+      "from heapq import heapify, heappop, heappush",
+      "import networkx as nx",
+      "from networkx.utils import not_implemented_for"
+    ],
+    "classes": [
+      "MinDegreeHeuristic"
+    ],
+    "functions": [
+      "treewidth_min_degree",
+      "treewidth_min_fill_in",
+      "min_fill_in_heuristic",
+      "treewidth_decomp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_264_85f2e23e585e40c3_treewidth.py.json"
+}

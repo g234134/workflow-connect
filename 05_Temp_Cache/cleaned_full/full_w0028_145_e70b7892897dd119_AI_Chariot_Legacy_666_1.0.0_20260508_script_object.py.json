@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 145,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_script_object.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_script_object.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2899,
+  "content_sha256": "e70b7892897dd119fd73dd5460c4c379438cf1ff6a19ce365587708e22f2c1ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 83,
+    "non_empty_lines": 65,
+    "char_count": 2899,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from typing import Dict",
+      "import torch",
+      "from ..exc import unimplemented, UnsafeScriptObjectError, Unsupported",
+      "from .base import VariableTracker",
+      "from .user_defined import UserDefinedObjectVariable",
+      "def _raise_hard_error_if_graph_break(reason):",
+      "    def deco(fn):"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Dict",
+      "import torch",
+      "from ..exc import unimplemented, UnsafeScriptObjectError, Unsupported",
+      "from .base import VariableTracker",
+      "from .user_defined import UserDefinedObjectVariable",
+      "from torch._higher_order_ops.torchbind import call_torchbind",
+      "from ..source import AttrSource",
+      "from .higher_order_ops import TorchHigherOrderOperatorVariable"
+    ],
+    "classes": [
+      "TorchScriptObjectVariable"
+    ],
+    "functions": [
+      "_raise_hard_error_if_graph_break"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_145_e70b7892897dd119_AI_Chariot_Legacy_666_1.0.0_20260508_script_object.py.json"
+}

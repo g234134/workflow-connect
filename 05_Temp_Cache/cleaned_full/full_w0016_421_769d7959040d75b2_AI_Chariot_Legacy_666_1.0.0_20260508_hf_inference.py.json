@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hf_inference.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hf_inference.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9534,
+  "content_sha256": "769d7959040d75b20984b891bc7dcf03ae75c5d7fb3a3331dd1ff56e32aa2f1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 228,
+    "non_empty_lines": 189,
+    "char_count": 9534,
+    "preview_lines": [
+      "import json",
+      "from functools import lru_cache",
+      "from pathlib import Path",
+      "from typing import Any, Optional, Union",
+      "from urllib.parse import urlparse, urlunparse",
+      "from huggingface_hub import constants",
+      "from huggingface_hub.hf_api import InferenceProviderMapping",
+      "from huggingface_hub.inference._common import (",
+      "    MimeBytes,",
+      "    RequestParameters,"
+    ],
+    "imports": [
+      "import json",
+      "from functools import lru_cache",
+      "from pathlib import Path",
+      "from typing import Any, Optional, Union",
+      "from urllib.parse import urlparse, urlunparse",
+      "from huggingface_hub import constants",
+      "from huggingface_hub.hf_api import InferenceProviderMapping",
+      "from huggingface_hub.inference._common import (",
+      "from huggingface_hub.inference._providers._common import TaskProviderHelper, filter_none",
+      "from huggingface_hub.utils import build_hf_headers, get_session, get_token, hf_raise_for_status",
+      "from huggingface_hub.hf_api import HfApi"
+    ],
+    "classes": [
+      "HFInferenceTask",
+      "HFInferenceBinaryInputTask",
+      "HFInferenceConversational",
+      "HFInferenceFeatureExtractionTask"
+    ],
+    "functions": [
+      "_build_chat_completion_url",
+      "_fetch_recommended_models",
+      "_check_supported_task"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_421_769d7959040d75b2_AI_Chariot_Legacy_666_1.0.0_20260508_hf_inference.py.json"
+}

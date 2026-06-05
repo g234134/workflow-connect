@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ssrf_protection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ssrf_protection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4611,
+  "content_sha256": "2055331e8f3991431cf8366593ef4b29f605985b8bb4ecfef87bb63623de3480",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 155,
+    "non_empty_lines": 126,
+    "char_count": 4611,
+    "preview_lines": [
+      "\"\"\"SSRF Protection - thin wrapper raising ValueError for internal callers.",
+      "Delegates all validation to `langchain_core._security._policy`.",
+      "\"\"\"",
+      "import os",
+      "import socket",
+      "from typing import Annotated, Any",
+      "from urllib.parse import urlparse",
+      "from pydantic import (",
+      "    AnyHttpUrl,",
+      "    BeforeValidator,"
+    ],
+    "imports": [
+      "import os",
+      "import socket",
+      "from typing import Annotated, Any",
+      "from urllib.parse import urlparse",
+      "from pydantic import (",
+      "from langchain_core._security._exceptions import SSRFBlockedError",
+      "from langchain_core._security._policy import (",
+      "from langchain_core._security._policy import (",
+      "from langchain_core._security._policy import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_policy_for",
+      "validate_safe_url",
+      "is_safe_url",
+      "_validate_url_ssrf_strict",
+      "_validate_url_ssrf_https_only",
+      "_validate_url_ssrf_relaxed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_260_2055331e8f399143_AI_Chariot_Legacy_666_1.0.0_20260508__ssrf_protection.py.json"
+}

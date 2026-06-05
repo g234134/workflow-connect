@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\passes\\graph_drawer.py",
+  "name": "graph_drawer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16895,
+  "content_sha256": "1f7e2737626c669248a97ded9c89bffbfbc97a775f351122c1686a9957f529df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 418,
+    "non_empty_lines": 364,
+    "char_count": 16895,
+    "preview_lines": [
+      "import hashlib",
+      "import torch",
+      "import torch.fx",
+      "from typing import Any, Dict, Optional, TYPE_CHECKING",
+      "from torch.fx.node import _get_qualified_name, _format_arg",
+      "from torch.fx.graph import _parse_stack_trace",
+      "from torch.fx.passes.shape_prop import TensorMetadata",
+      "from torch.fx._compatibility import compatibility",
+      "from itertools import chain",
+      "__all__ = ['FxGraphDrawer']"
+    ],
+    "imports": [
+      "import hashlib",
+      "import torch",
+      "import torch.fx",
+      "from typing import Any, Dict, Optional, TYPE_CHECKING",
+      "from torch.fx.node import _get_qualified_name, _format_arg",
+      "from torch.fx.graph import _parse_stack_trace",
+      "from torch.fx.passes.shape_prop import TensorMetadata",
+      "from torch.fx._compatibility import compatibility",
+      "from itertools import chain",
+      "import pydot"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_354_1f7e2737626c6692_graph_drawer.py.json"
+}

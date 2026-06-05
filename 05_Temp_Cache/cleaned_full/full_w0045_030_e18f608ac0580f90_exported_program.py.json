@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\exported_program.py",
+  "name": "exported_program.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18050,
+  "content_sha256": "e18f608ac0580f90a481faa8a304ccb27c3778b4f51b5b7143b47c02940b97f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 430,
+    "non_empty_lines": 372,
+    "char_count": 18050,
+    "preview_lines": [
+      "import copy",
+      "from collections import defaultdict",
+      "import dataclasses",
+      "from typing import Dict, List, Optional, Tuple",
+      "import warnings",
+      "import sympy",
+      "import torch",
+      "import torch.fx",
+      "import torch.utils._pytree as pytree",
+      "from torch._subclasses.fake_tensor import FakeTensor"
+    ],
+    "imports": [
+      "import copy",
+      "from collections import defaultdict",
+      "import dataclasses",
+      "from typing import Dict, List, Optional, Tuple",
+      "import warnings",
+      "import sympy",
+      "import torch",
+      "import torch.fx",
+      "import torch.utils._pytree as pytree",
+      "from torch._subclasses.fake_tensor import FakeTensor",
+      "from torch.fx.experimental.symbolic_shapes import SymInt",
+      "from torch.fx.graph import _PyTreeCodeGen, _PyTreeInfo",
+      "from torch.utils._sympy.value_ranges import ValueRanges",
+      "from torch._export.passes.add_runtime_assertions_for_constraints_pass import (",
+      "from torch.export.graph_signature import (",
+      "from torch.export.exported_program import (",
+      "from .utils import _check_input_constraints_pre_hook"
+    ],
+    "classes": [
+      "CallSpec",
+      "_StatefulGraphModuleFactory",
+      "_StatefulGraphModule"
+    ],
+    "functions": [
+      "_unlift",
+      "_construct_inp_pos_to_param_buffer_name",
+      "_create_stateful_graph_module",
+      "unlift_exported_program_lifted_states",
+      "_create_graph_module_for_export",
+      "_process_constraints"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_030_e18f608ac0580f90_exported_program.py.json"
+}

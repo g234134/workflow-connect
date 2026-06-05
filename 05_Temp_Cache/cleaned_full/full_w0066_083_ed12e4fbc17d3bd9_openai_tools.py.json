@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\output_parsers\\openai_tools.py",
+  "name": "openai_tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13584,
+  "content_sha256": "ed12e4fbc17d3bd9a93882bf23163d988c990cb6f3eff684af4dc40240e0b774",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 384,
+    "non_empty_lines": 323,
+    "char_count": 13579,
+    "preview_lines": [
+      "\"\"\"Parse tools for OpenAI tools output.\"\"\"",
+      "import copy",
+      "import json",
+      "import logging",
+      "from json import JSONDecodeError",
+      "from typing import Annotated, Any",
+      "from pydantic import SkipValidation, ValidationError",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage, InvalidToolCall",
+      "from langchain_core.messages.tool import invalid_tool_call"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "import logging",
+      "from json import JSONDecodeError",
+      "from typing import Annotated, Any",
+      "from pydantic import SkipValidation, ValidationError",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.messages import AIMessage, InvalidToolCall",
+      "from langchain_core.messages.tool import invalid_tool_call",
+      "from langchain_core.messages.tool import tool_call as create_tool_call",
+      "from langchain_core.output_parsers.transform import BaseCumulativeTransformOutputParser",
+      "from langchain_core.outputs import ChatGeneration, Generation",
+      "from langchain_core.utils.json import parse_partial_json",
+      "from langchain_core.utils.pydantic import ("
+    ],
+    "classes": [
+      "JsonOutputToolsParser",
+      "JsonOutputKeyToolsParser",
+      "PydanticToolsParser"
+    ],
+    "functions": [
+      "parse_tool_call",
+      "make_invalid_tool_call",
+      "parse_tool_calls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_083_ed12e4fbc17d3bd9_openai_tools.py.json"
+}

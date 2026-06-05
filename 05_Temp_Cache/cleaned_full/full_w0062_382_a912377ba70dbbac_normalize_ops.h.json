@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 382,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\normalize_ops.h",
+  "name": "normalize_ops.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 554,
+  "content_sha256": "a912377ba70dbbacbb047909506797539fa5f6dc686426d20a6c493f897f0b58",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 13,
+    "char_count": 554,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "// This pass converts aten ops to a normalized form. It is",
+      "// run immediately after IR generation in both the tracer and compiler,",
+      "// so downstream consumers of the IR do not need handle ops in their",
+      "// pre-normalized form.",
+      "// Currently only handles normalization of op aliases.",
+      "TORCH_API void NormalizeOps(const std::shared_ptr<Graph>& graph);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_382_a912377ba70dbbac_normalize_ops.h.json"
+}

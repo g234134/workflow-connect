@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\question_answering\\test_map_rerank_prompt.py",
+  "name": "test_map_rerank_prompt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 635,
+  "content_sha256": "31c91a30031f690db70e593a23a280deab8bea4b228f47f9b8955e4e1c070cf7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 15,
+    "char_count": 632,
+    "preview_lines": [
+      "\"\"\"Test map_rerank parser.\"\"\"",
+      "import pytest",
+      "from langchain_classic.chains.question_answering.map_rerank_prompt import output_parser",
+      "GOOD_SCORE = \"foo bar answer.\\nScore: 80\"",
+      "SCORE_WITH_EXPLANATION = (",
+      "    \"foo bar answer.\\n\"",
+      "    \"Score: 80 (fully answers the question, \"",
+      "    \"but could provide more detail on the specific error message)\"",
+      ")",
+      "@pytest.mark.parametrize(\"answer\", [GOOD_SCORE, SCORE_WITH_EXPLANATION])"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_classic.chains.question_answering.map_rerank_prompt import output_parser"
+    ],
+    "classes": [],
+    "functions": [
+      "test_parse_scores"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_188_31c91a30031f690d_test_map_rerank_prompt.py.json"
+}

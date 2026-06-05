@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\error.py",
+  "name": "error.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1832,
+  "content_sha256": "03065c181775cda3306a2a3b7a3944d3b6b28c3702dcfd6aab2a35873d8e5b2c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 40,
+    "char_count": 1826,
+    "preview_lines": [
+      "from enum import Enum",
+      "class ExportErrorType(Enum):",
+      "    # User providing invalid inputs to either tracer, or other public facing APIs",
+      "    INVALID_INPUT_TYPE = 1",
+      "    # User returning values from their models that we don’t support.",
+      "    INVALID_OUTPUT_TYPE = 2",
+      "    # Generated IR does not conform to Export IR Specification.",
+      "    VIOLATION_OF_SPEC = 3",
+      "    # User’s code contains types and functionalities we don’t support.",
+      "    NOT_SUPPORTED = 4"
+    ],
+    "imports": [
+      "from enum import Enum"
+    ],
+    "classes": [
+      "ExportErrorType",
+      "InternalError",
+      "ExportError"
+    ],
+    "functions": [
+      "internal_assert"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_029_03065c181775cda3_error.py.json"
+}

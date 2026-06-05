@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 278,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\pydantic_utils.py",
+  "name": "pydantic_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5143,
+  "content_sha256": "bb8eed6ce7b05ad880916af1b981350b8d0a69fb979ec391a545b3748e896eb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 150,
+    "non_empty_lines": 119,
+    "char_count": 5140,
+    "preview_lines": [
+      "from inspect import isclass",
+      "from typing import Any",
+      "from pydantic import BaseModel",
+      "from pydantic.v1 import BaseModel as BaseModelV1",
+      "# Function to replace allOf with $ref",
+      "def replace_all_of_with_ref(schema: Any) -> None:",
+      "    if isinstance(schema, dict):",
+      "        # If the schema has an allOf key with a single item that contains a $ref",
+      "        if (",
+      "            \"allOf\" in schema"
+    ],
+    "imports": [
+      "from inspect import isclass",
+      "from typing import Any",
+      "from pydantic import BaseModel",
+      "from pydantic.v1 import BaseModel as BaseModelV1"
+    ],
+    "classes": [],
+    "functions": [
+      "replace_all_of_with_ref",
+      "remove_all_none_default",
+      "_remove_enum",
+      "_schema",
+      "_remove_additionalproperties",
+      "_normalize_schema"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_278_bb8eed6ce7b05ad8_pydantic_utils.py.json"
+}

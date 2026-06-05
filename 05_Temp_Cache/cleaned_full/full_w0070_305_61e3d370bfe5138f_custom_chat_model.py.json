@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\standard-tests\\tests\\unit_tests\\custom_chat_model.py",
+  "name": "custom_chat_model.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7672,
+  "content_sha256": "61e3d370bfe5138fede976bb94b5b47ce0bfb06ab947781055c240d8074193f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 162,
+    "char_count": 7669,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, AIMessageChunk, BaseMessage",
+      "from langchain_core.messages.ai import UsageMetadata",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Iterator"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage, AIMessageChunk, BaseMessage",
+      "from langchain_core.messages.ai import UsageMetadata",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from collections.abc import Iterator",
+      "from langchain_core.callbacks import CallbackManagerForLLMRun"
+    ],
+    "classes": [
+      "ChatParrotLink"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_305_61e3d370bfe5138f_custom_chat_model.py.json"
+}

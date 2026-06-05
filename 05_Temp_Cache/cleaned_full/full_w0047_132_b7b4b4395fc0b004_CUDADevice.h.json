@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 132,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cuda\\CUDADevice.h",
+  "name": "CUDADevice.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 555,
+  "content_sha256": "b7b4b4395fc0b00468a5b7eab82ea11969cee0cd0f82fc0fc134d8067eb94910",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 15,
+    "char_count": 555,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/cuda/Exceptions.h>",
+      "#include <cuda.h>",
+      "#include <cuda_runtime.h>",
+      "namespace at::cuda {",
+      "inline Device getDeviceFromPtr(void* ptr) {",
+      "  cudaPointerAttributes attr{};",
+      "  AT_CUDA_CHECK(cudaPointerGetAttributes(&attr, ptr));",
+      "#if !defined(USE_ROCM)",
+      "  TORCH_CHECK(attr.type != cudaMemoryTypeUnregistered,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_132_b7b4b4395fc0b004_CUDADevice.h.json"
+}

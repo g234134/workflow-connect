@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_loggamma.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_loggamma.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2062,
+  "content_sha256": "49dc58888b6f8b147835a6ce28bc811eefa210fed1e7645ec3c37c6d9ba01f6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 49,
+    "char_count": 2062,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_",
+      "from scipy.special._testutils import FuncData",
+      "from scipy.special import gamma, gammaln, loggamma",
+      "def test_identities1():",
+      "    # test the identity exp(loggamma(z)) = gamma(z)",
+      "    x = np.array([-99.5, -9.5, -0.5, 0.5, 9.5, 99.5])",
+      "    y = x.copy()",
+      "    x, y = np.meshgrid(x, y)",
+      "    z = (x + 1J*y).flatten()"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_",
+      "from scipy.special._testutils import FuncData",
+      "from scipy.special import gamma, gammaln, loggamma"
+    ],
+    "classes": [],
+    "functions": [
+      "test_identities1",
+      "test_identities2",
+      "test_complex_dispatch_realpart",
+      "test_real_dispatch",
+      "test_gh_6536",
+      "test_branch_cut"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_321_49dc58888b6f8b14_AI_Chariot_Legacy_666_1.0.0_20260508_test_loggamma.py.json"
+}

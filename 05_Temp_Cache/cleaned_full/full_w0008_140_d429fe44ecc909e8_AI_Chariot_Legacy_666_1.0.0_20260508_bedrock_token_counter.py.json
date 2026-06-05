@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_token_counter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_token_counter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4008,
+  "content_sha256": "d429fe44ecc909e85679ecc86aa251991a39a0d24b7004c32175c39a2a46dfad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 94,
+    "char_count": 4008,
+    "preview_lines": [
+      "\"\"\"",
+      "Bedrock Token Counter implementation using the CountTokens API.",
+      "\"\"\"",
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.base_llm.base_utils import BaseTokenCounter",
+      "from litellm.llms.bedrock.common_utils import BedrockError, get_bedrock_base_model",
+      "from litellm.llms.bedrock.count_tokens.handler import BedrockCountTokensHandler",
+      "from litellm.types.utils import LlmProviders, TokenCountResponse",
+      "class BedrockTokenCounter(BaseTokenCounter):"
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Optional",
+      "from litellm._logging import verbose_logger",
+      "from litellm.llms.base_llm.base_utils import BaseTokenCounter",
+      "from litellm.llms.bedrock.common_utils import BedrockError, get_bedrock_base_model",
+      "from litellm.llms.bedrock.count_tokens.handler import BedrockCountTokensHandler",
+      "from litellm.types.utils import LlmProviders, TokenCountResponse"
+    ],
+    "classes": [
+      "BedrockTokenCounter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_140_d429fe44ecc909e8_AI_Chariot_Legacy_666_1.0.0_20260508_bedrock_token_counter.py.json"
+}

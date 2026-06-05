@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__modes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__modes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3075,
+  "content_sha256": "fc4880383f096fa5a915796ec247144f7102cff4c7f318c6bdb4251a4366e7d4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 83,
+    "char_count": 3075,
+    "preview_lines": [
+      "# This file is dual licensed under the terms of the Apache License, Version",
+      "# 2.0, and the BSD License. See the LICENSE file in the root of this repository",
+      "# for complete details.",
+      "from __future__ import annotations",
+      "import abc",
+      "from cryptography import utils",
+      "from cryptography.exceptions import UnsupportedAlgorithm, _Reasons",
+      "from cryptography.hazmat.primitives._cipheralgorithm import (",
+      "    BlockCipherAlgorithm,",
+      "    CipherAlgorithm,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "from cryptography import utils",
+      "from cryptography.exceptions import UnsupportedAlgorithm, _Reasons",
+      "from cryptography.hazmat.primitives._cipheralgorithm import ("
+    ],
+    "classes": [
+      "Mode",
+      "ModeWithInitializationVector",
+      "ModeWithTweak",
+      "ModeWithNonce",
+      "ModeWithAuthenticationTag"
+    ],
+    "functions": [
+      "_check_aes_key_length",
+      "_check_iv_length",
+      "_check_nonce_length",
+      "_check_iv_and_key_length"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_142_fc4880383f096fa5_AI_Chariot_Legacy_666_1.0.0_20260508__modes.py.json"
+}

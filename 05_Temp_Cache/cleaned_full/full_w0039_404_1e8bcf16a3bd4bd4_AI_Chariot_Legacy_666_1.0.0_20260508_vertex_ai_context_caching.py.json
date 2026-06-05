@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 404,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_context_caching.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_context_caching.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19562,
+  "content_sha256": "1e8bcf16a3bd4bd4cb8998f735255040c5557ef5ddaa336a5130e6b010ccade3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 546,
+    "non_empty_lines": 469,
+    "char_count": 19562,
+    "preview_lines": [
+      "from typing import List, Literal, Optional, Tuple, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.caching.caching import Cache, LiteLLMCacheType",
+      "from litellm.litellm_core_utils.litellm_logging import Logging",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "    AsyncHTTPHandler,",
+      "    HTTPHandler,",
+      "    get_async_httpx_client,",
+      ")"
+    ],
+    "imports": [
+      "from typing import List, Literal, Optional, Tuple, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.caching.caching import Cache, LiteLLMCacheType",
+      "from litellm.litellm_core_utils.litellm_logging import Logging",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.llms.openai.openai import AllMessageValues",
+      "from litellm.types.llms.vertex_ai import (",
+      "from ..common_utils import VertexAIError",
+      "from ..vertex_llm_base import VertexBase",
+      "from .transformation import ("
+    ],
+    "classes": [
+      "ContextCachingEndpoints"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_404_1e8bcf16a3bd4bd4_AI_Chariot_Legacy_666_1.0.0_20260508_vertex_ai_context_caching.py.json"
+}

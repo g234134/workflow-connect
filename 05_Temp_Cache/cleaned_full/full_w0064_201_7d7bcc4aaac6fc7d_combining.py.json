@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 201,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\datapipes\\iter\\combining.py",
+  "name": "combining.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27095,
+  "content_sha256": "7d7bcc4aaac6fc7d9e325b9e1b6d596e333d2fdf3b3eb5ed37efe1dba936cb4a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 639,
+    "non_empty_lines": 539,
+    "char_count": 27095,
+    "preview_lines": [
+      "import warnings",
+      "from abc import ABC, abstractmethod",
+      "from collections import deque",
+      "import copy as copymodule",
+      "from typing import Any, Callable, Iterator, List, Literal, Optional, Sized, Tuple, TypeVar, Deque",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes._hook_iterator import _SnapshotState",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe",
+      "from torch.utils.data.datapipes.utils.common import StreamWrapper, _check_unpickable_fn",
+      "__all__ = ["
+    ],
+    "imports": [
+      "import warnings",
+      "from abc import ABC, abstractmethod",
+      "from collections import deque",
+      "import copy as copymodule",
+      "from typing import Any, Callable, Iterator, List, Literal, Optional, Sized, Tuple, TypeVar, Deque",
+      "from torch.utils.data.datapipes._decorator import functional_datapipe",
+      "from torch.utils.data.datapipes._hook_iterator import _SnapshotState",
+      "from torch.utils.data.datapipes.datapipe import IterDataPipe",
+      "from torch.utils.data.datapipes.utils.common import StreamWrapper, _check_unpickable_fn"
+    ],
+    "classes": [
+      "ConcaterIterDataPipe",
+      "ForkerIterDataPipe",
+      "_ContainerTemplate",
+      "_ForkerIterDataPipe",
+      "_ChildDataPipe",
+      "DemultiplexerIterDataPipe",
+      "_DemultiplexerIterDataPipe",
+      "MultiplexerIterDataPipe",
+      "ZipperIterDataPipe"
+    ],
+    "functions": [
+      "_no_op"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_201_7d7bcc4aaac6fc7d_combining.py.json"
+}

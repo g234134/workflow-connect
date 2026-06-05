@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\language_models\\llms.py",
+  "name": "llms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 57145,
+  "content_sha256": "fac7ecf595c8e57f46a4d779f1f6f4a71a3d6cc29520fcd13cdbd5d2647d6b97",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1553,
+    "non_empty_lines": 1402,
+    "char_count": 57142,
+    "preview_lines": [
+      "\"\"\"Base interface for traditional large language models (LLMs) to expose.",
+      "These are traditionally older models (newer models generally are chat models).",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import functools",
+      "import inspect",
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import functools",
+      "import inspect",
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from pathlib import Path",
+      "from typing import (",
+      "import yaml",
+      "from pydantic import ConfigDict",
+      "from tenacity import (",
+      "from typing_extensions import override",
+      "from langchain_core.caches import BaseCache",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.globals import get_llm_cache",
+      "from langchain_core.language_models._utils import _filter_invocation_params_for_tracing",
+      "from langchain_core.language_models.base import (",
+      "from langchain_core.load import dumpd"
+    ],
+    "classes": [
+      "BaseLLM",
+      "LLM"
+    ],
+    "functions": [
+      "_log_error_once",
+      "create_base_retry_decorator",
+      "_resolve_cache",
+      "get_prompts",
+      "update_cache"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_048_fac7ecf595c8e57f_llms.py.json"
+}

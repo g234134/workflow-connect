@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 30,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\embeddings\\fake.py",
+  "name": "fake.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4018,
+  "content_sha256": "2a12d8696cf35f2f2b128cc50d1db2b6c08f733744b1e0564900164745368f47",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 129,
+    "non_empty_lines": 100,
+    "char_count": 4015,
+    "preview_lines": [
+      "\"\"\"Module contains a few fake embedding models for testing purposes.\"\"\"",
+      "# Please do not add additional fake embedding model implementations here.",
+      "import contextlib",
+      "import hashlib",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from langchain_core.embeddings import Embeddings",
+      "with contextlib.suppress(ImportError):",
+      "    import numpy as np",
+      "class FakeEmbeddings(Embeddings, BaseModel):"
+    ],
+    "imports": [
+      "import contextlib",
+      "import hashlib",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from langchain_core.embeddings import Embeddings",
+      "import numpy as np",
+      "from langchain_core.embeddings import FakeEmbeddings",
+      "from langchain_core.embeddings import DeterministicFakeEmbedding"
+    ],
+    "classes": [
+      "FakeEmbeddings",
+      "DeterministicFakeEmbedding"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_030_2a12d8696cf35f2f_fake.py.json"
+}

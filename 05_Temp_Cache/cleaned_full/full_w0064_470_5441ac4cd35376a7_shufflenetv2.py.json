@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 470,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\models\\shufflenetv2.py",
+  "name": "shufflenetv2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15852,
+  "content_sha256": "5441ac4cd35376a76ef26ec8eb6cd0b892bfe429044fed18e22c58049f90042b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 408,
+    "non_empty_lines": 343,
+    "char_count": 15852,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch import Tensor",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch import Tensor",
+      "from ..transforms._presets import ImageClassification",
+      "from ..utils import _log_api_usage_once",
+      "from ._api import register_model, Weights, WeightsEnum",
+      "from ._meta import _IMAGENET_CATEGORIES",
+      "from ._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "classes": [
+      "InvertedResidual",
+      "ShuffleNetV2",
+      "ShuffleNet_V2_X0_5_Weights",
+      "ShuffleNet_V2_X1_0_Weights",
+      "ShuffleNet_V2_X1_5_Weights",
+      "ShuffleNet_V2_X2_0_Weights"
+    ],
+    "functions": [
+      "channel_shuffle",
+      "_shufflenetv2",
+      "shufflenet_v2_x0_5",
+      "shufflenet_v2_x1_0",
+      "shufflenet_v2_x1_5",
+      "shufflenet_v2_x2_0"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_470_5441ac4cd35376a7_shufflenetv2.py.json"
+}

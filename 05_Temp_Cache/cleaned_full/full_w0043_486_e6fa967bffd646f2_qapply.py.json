@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 486,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\quantum\\qapply.py",
+  "name": "qapply.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9494,
+  "content_sha256": "e6fa967bffd646f26e0fab160b63530ded6a11c4e80464c66b27bd9738ab81fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 263,
+    "non_empty_lines": 215,
+    "char_count": 9494,
+    "preview_lines": [
+      "\"\"\"Logic for applying operators to states.",
+      "Todo:",
+      "* Sometimes the final result needs to be expanded, we should do this by hand.",
+      "\"\"\"",
+      "from sympy.concrete import Sum",
+      "from sympy.core.add import Add",
+      "from sympy.core.kind import NumberKind",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.power import Pow",
+      "from sympy.core.singleton import S"
+    ],
+    "imports": [
+      "from sympy.concrete import Sum",
+      "from sympy.core.add import Add",
+      "from sympy.core.kind import NumberKind",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.power import Pow",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sympify import sympify, _sympify",
+      "from sympy.physics.quantum.anticommutator import AntiCommutator",
+      "from sympy.physics.quantum.commutator import Commutator",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.innerproduct import InnerProduct",
+      "from sympy.physics.quantum.operator import OuterProduct, Operator",
+      "from sympy.physics.quantum.state import State, KetBase, BraBase, Wavefunction",
+      "from sympy.physics.quantum.tensorproduct import TensorProduct",
+      "from sympy.physics.quantum.density import Density"
+    ],
+    "classes": [],
+    "functions": [
+      "ip_doit_func",
+      "sum_doit_func",
+      "qapply",
+      "qapply_Mul"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_486_e6fa967bffd646f2_qapply.py.json"
+}

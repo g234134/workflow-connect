@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_plugin_pandas_types.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_plugin_pandas_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6753,
+  "content_sha256": "537f175d60085801ea0b606daf72ab74355f6cb9ce38033348ce48490edde5f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 178,
+    "non_empty_lines": 142,
+    "char_count": 6753,
+    "preview_lines": [
+      "import sys",
+      "from _pydevd_bundle.pydevd_constants import PANDAS_MAX_ROWS, PANDAS_MAX_COLS, PANDAS_MAX_COLWIDTH",
+      "from _pydevd_bundle.pydevd_extension_api import TypeResolveProvider, StrPresentationProvider",
+      "from _pydevd_bundle.pydevd_resolver import inspect, MethodWrapperType",
+      "from _pydevd_bundle.pydevd_utils import Timer",
+      "from .pydevd_helpers import find_mod_attr",
+      "from contextlib import contextmanager",
+      "def _get_dictionary(obj, replacements):",
+      "    ret = dict()",
+      "    cls = obj.__class__"
+    ],
+    "imports": [
+      "import sys",
+      "from _pydevd_bundle.pydevd_constants import PANDAS_MAX_ROWS, PANDAS_MAX_COLS, PANDAS_MAX_COLWIDTH",
+      "from _pydevd_bundle.pydevd_extension_api import TypeResolveProvider, StrPresentationProvider",
+      "from _pydevd_bundle.pydevd_resolver import inspect, MethodWrapperType",
+      "from _pydevd_bundle.pydevd_utils import Timer",
+      "from .pydevd_helpers import find_mod_attr",
+      "from contextlib import contextmanager",
+      "from pandas import get_option",
+      "from pandas import option_context"
+    ],
+    "classes": [
+      "PandasDataFrameTypeResolveProvider",
+      "PandasSeriesTypeResolveProvider",
+      "PandasStylerTypeResolveProvider"
+    ],
+    "functions": [
+      "_get_dictionary",
+      "customize_pandas_options"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_264_537f175d60085801_AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_plugin_pandas_types.py.json"
+}

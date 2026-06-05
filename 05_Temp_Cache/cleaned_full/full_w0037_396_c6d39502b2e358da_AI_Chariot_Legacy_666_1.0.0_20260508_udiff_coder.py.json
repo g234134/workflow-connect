@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 396,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_udiff_coder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_udiff_coder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11041,
+  "content_sha256": "c6d39502b2e358daa09f3da7bd0d62b24f94368de27166bc463774e6ab822592",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 429,
+    "non_empty_lines": 320,
+    "char_count": 11041,
+    "preview_lines": [
+      "import difflib",
+      "from itertools import groupby",
+      "from pathlib import Path",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .search_replace import (",
+      "    SearchTextNotUnique,",
+      "    all_preprocs,",
+      "    diff_lines,",
+      "    flexible_search_and_replace,"
+    ],
+    "imports": [
+      "import difflib",
+      "from itertools import groupby",
+      "from pathlib import Path",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .search_replace import (",
+      "from .udiff_prompts import UnifiedDiffPrompts"
+    ],
+    "classes": [
+      "UnifiedDiffCoder"
+    ],
+    "functions": [
+      "do_replace",
+      "collapse_repeats",
+      "apply_hunk",
+      "flexi_just_search_and_replace",
+      "make_new_lines_explicit",
+      "cleanup_pure_whitespace_lines",
+      "normalize_hunk",
+      "directly_apply_hunk",
+      "apply_partial_hunk",
+      "find_diffs",
+      "process_fenced_block",
+      "hunk_to_before_after"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_396_c6d39502b2e358da_AI_Chariot_Legacy_666_1.0.0_20260508_udiff_coder.py.json"
+}

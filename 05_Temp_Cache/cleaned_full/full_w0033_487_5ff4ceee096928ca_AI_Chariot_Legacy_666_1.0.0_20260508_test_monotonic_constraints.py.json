@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic_constraints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic_constraints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17386,
+  "content_sha256": "5ff4ceee096928ca41f46bcecda0fe9b136818c91d1c352a794712f33ce6a18e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 446,
+    "non_empty_lines": 381,
+    "char_count": 17386,
+    "preview_lines": [
+      "import re",
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.ensemble import (",
+      "    HistGradientBoostingClassifier,",
+      "    HistGradientBoostingRegressor,",
+      ")",
+      "from sklearn.ensemble._hist_gradient_boosting.common import (",
+      "    G_H_DTYPE,",
+      "    X_BINNED_DTYPE,"
+    ],
+    "imports": [
+      "import re",
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.ensemble import (",
+      "from sklearn.ensemble._hist_gradient_boosting.common import (",
+      "from sklearn.ensemble._hist_gradient_boosting.grower import TreeGrower",
+      "from sklearn.ensemble._hist_gradient_boosting.histogram import HistogramBuilder",
+      "from sklearn.ensemble._hist_gradient_boosting.splitting import (",
+      "from sklearn.utils._openmp_helpers import _openmp_effective_n_threads",
+      "from sklearn.utils._testing import _convert_container"
+    ],
+    "classes": [],
+    "functions": [
+      "is_increasing",
+      "is_decreasing",
+      "assert_leaves_values_monotonic",
+      "assert_children_values_monotonic",
+      "assert_children_values_bounded",
+      "test_nodes_values",
+      "test_predictions",
+      "test_input_error",
+      "test_input_error_related_to_feature_names",
+      "test_bounded_value_min_gain_to_split"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_487_5ff4ceee096928ca_AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic_constraints.py.json"
+}

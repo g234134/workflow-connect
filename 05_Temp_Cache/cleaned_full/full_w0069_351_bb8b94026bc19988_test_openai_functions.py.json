@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\utils\\test_openai_functions.py",
+  "name": "test_openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2286,
+  "content_sha256": "bb8b94026bc199885c3cbe2f33d0f9b18f1732f836a0b7106f915a388559bf2e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 61,
+    "char_count": 2283,
+    "preview_lines": [
+      "from langchain_core.utils.function_calling import convert_to_openai_function",
+      "from pydantic import BaseModel, Field",
+      "def test_convert_pydantic_to_openai_function() -> None:",
+      "    class Data(BaseModel):",
+      "        \"\"\"The data to return.\"\"\"",
+      "        key: str = Field(..., description=\"API key\")",
+      "        days: int = Field(default=0, description=\"Number of days to forecast\")",
+      "    actual = convert_to_openai_function(Data)",
+      "    expected = {",
+      "        \"name\": \"Data\","
+    ],
+    "imports": [
+      "from langchain_core.utils.function_calling import convert_to_openai_function",
+      "from pydantic import BaseModel, Field"
+    ],
+    "classes": [],
+    "functions": [
+      "test_convert_pydantic_to_openai_function",
+      "test_convert_pydantic_to_openai_function_nested"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_351_bb8b94026bc19988_test_openai_functions.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 374,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\passes\\utils\\source_matcher_utils.py",
+  "name": "source_matcher_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4936,
+  "content_sha256": "48dd859e8985389d4690a32d7d8c5aa68f027b3b5935d7443acbdc070bb62b5b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 115,
+    "char_count": 4936,
+    "preview_lines": [
+      "from dataclasses import dataclass, field",
+      "from torch.fx.graph import Graph",
+      "from torch.fx.node import Node",
+      "from torch.fx._compatibility import compatibility",
+      "from typing import Dict, List, Any, Type, Optional, Callable",
+      "import logging",
+      "import os",
+      "__all__ = ['get_source_partitions', 'check_subgraphs_connected', 'SourcePartition']",
+      "# Set`PYTORCH_MATCHER_LOGLEVEL=INFO` to see debug logs",
+      "def _init_logger():"
+    ],
+    "imports": [
+      "from dataclasses import dataclass, field",
+      "from torch.fx.graph import Graph",
+      "from torch.fx.node import Node",
+      "from torch.fx._compatibility import compatibility",
+      "from typing import Dict, List, Any, Type, Optional, Callable",
+      "import logging",
+      "import os"
+    ],
+    "classes": [
+      "SourcePartition"
+    ],
+    "functions": [
+      "_init_logger",
+      "get_source_partitions",
+      "check_subgraphs_connected"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_374_48dd859e8985389d_source_matcher_utils.py.json"
+}

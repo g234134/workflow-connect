@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 81,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\forward_grad.h",
+  "name": "forward_grad.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 9175,
+  "content_sha256": "ea87b027c41ef93eecacd0b667d67dc5152e2a17ad17e7b62c353ac9c4784227",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 182,
+    "char_count": 9175,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <unordered_set>",
+      "namespace torch {",
+      "namespace autograd {",
+      "// [ Using ForwardGrad ]",
+      "// ForwardGrad needs to be a shared_ptr to satisfy constraints of its inner",
+      "// design. But this shared_ptr must be uniquely associated with the object that",
+      "// stores it (as of writing, either AutogradMeta or SavedVariable). This object",
+      "// is called the \"owning object\" in the discussions below. This owning object"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_081_ea87b027c41ef93e_forward_grad.h.json"
+}

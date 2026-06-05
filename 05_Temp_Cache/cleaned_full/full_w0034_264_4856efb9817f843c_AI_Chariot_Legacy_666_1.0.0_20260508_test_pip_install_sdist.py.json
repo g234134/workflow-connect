@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pip_install_sdist.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pip_install_sdist.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8256,
+  "content_sha256": "4856efb9817f843cede8eb6c4391a314d9f19a827f78495fbe962c8b2c8627e8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 173,
+    "char_count": 8256,
+    "preview_lines": [
+      "# https://github.com/python/mypy/issues/16936",
+      "# mypy: disable-error-code=\"has-type\"",
+      "\"\"\"Integration tests for setuptools that focus on building packages via pip.",
+      "The idea behind these tests is not to exhaustively check all the possible",
+      "combinations of packages, operating systems, supporting libraries, etc, but",
+      "rather check a limited number of popular packages and how they interact with",
+      "the exposed public API. This way if any change in API is introduced, we hope to",
+      "identify backward compatibility problems before publishing a release.",
+      "The number of tested packages is purposefully kept small, to minimise duration",
+      "and the associated maintenance cost (changes in the way these packages define"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import shutil",
+      "import sys",
+      "from enum import Enum",
+      "from glob import glob",
+      "from hashlib import md5",
+      "from urllib.request import urlopen",
+      "import pytest",
+      "from packaging.requirements import Requirement",
+      "from .helpers import Archive, run"
+    ],
+    "classes": [],
+    "functions": [
+      "venv_python",
+      "_prepare",
+      "test_install_sdist",
+      "retrieve_sdist",
+      "retrieve_pypi_sdist_metadata",
+      "download",
+      "build_deps",
+      "_read_pyproject"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_264_4856efb9817f843c_AI_Chariot_Legacy_666_1.0.0_20260508_test_pip_install_sdist.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 470,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\variables\\builtin.py",
+  "name": "builtin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 65673,
+  "content_sha256": "494ac64bca5d3457900e76cca7d70229f0f9f68de385ba3da18644611e196605",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1682,
+    "non_empty_lines": 1495,
+    "char_count": 65673,
+    "preview_lines": [
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import itertools",
+      "import logging",
+      "import math",
+      "import operator",
+      "import types",
+      "from collections import defaultdict, OrderedDict",
+      "from typing import Dict, List"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import itertools",
+      "import logging",
+      "import math",
+      "import operator",
+      "import types",
+      "from collections import defaultdict, OrderedDict",
+      "from typing import Dict, List",
+      "import torch",
+      "from torch import sym_float, sym_int",
+      "from .. import config, polyfill, variables",
+      "from ..exc import (",
+      "from ..guards import GuardBuilder, install_guard",
+      "from ..replay_record import DummyModule",
+      "from ..source import AttrSource, GetItemSource, is_constant_source, TypeSource",
+      "from ..utils import (",
+      "from .base import MutableLocal, typestr, VariableTracker",
+      "from .constant import ConstantVariable"
+    ],
+    "classes": [
+      "BuiltinVariable"
+    ],
+    "functions": [
+      "_polyfill_call_impl",
+      "dynamo_disable_grad"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_470_494ac64bca5d3457_builtin.py.json"
+}

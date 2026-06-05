@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\polyutils.py",
+  "name": "polyutils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17248,
+  "content_sha256": "33c57e0f83647cc96c25ee0b780673963acce012a9d7442fbaebad77c926a771",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 584,
+    "non_empty_lines": 436,
+    "char_count": 17248,
+    "preview_lines": [
+      "\"\"\"Useful utilities for higher level polynomial classes. \"\"\"",
+      "from __future__ import annotations",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.core import (S, Add, Mul, Pow, Eq, Expr,",
+      "    expand_mul, expand_multinomial)",
+      "from sympy.core.exprtools import decompose_power, decompose_power_rat",
+      "from sympy.core.numbers import _illegal",
+      "from sympy.polys.polyerrors import PolynomialError, GeneratorsError",
+      "from sympy.polys.polyoptions import build_options",
+      "import re"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.core import (S, Add, Mul, Pow, Eq, Expr,",
+      "from sympy.core.exprtools import decompose_power, decompose_power_rat",
+      "from sympy.core.numbers import _illegal",
+      "from sympy.polys.polyerrors import PolynomialError, GeneratorsError",
+      "from sympy.polys.polyoptions import build_options",
+      "import re"
+    ],
+    "classes": [
+      "PicklableWithSlots",
+      "IntegerPowerable"
+    ],
+    "functions": [
+      "_nsort",
+      "_sort_gens",
+      "_unify_gens",
+      "_analyze_gens",
+      "_sort_factors",
+      "_not_a_coeff",
+      "_parallel_dict_from_expr_if_gens",
+      "_parallel_dict_from_expr_no_gens",
+      "_dict_from_expr_if_gens",
+      "_dict_from_expr_no_gens",
+      "parallel_dict_from_expr",
+      "_parallel_dict_from_expr",
+      "dict_from_expr",
+      "_dict_from_expr",
+      "expr_from_dict",
+      "_dict_reorder"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_113_33c57e0f83647cc9_polyutils.py.json"
+}

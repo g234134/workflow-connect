@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:48:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\uvicorn\\loops\\auto.py",
+  "name": "auto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 566,
+  "content_sha256": "a5d4ec31caa46c4f1fbdd3602ecd72e1cea1b2e379f7c9993923a50b46b6dd2e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 12,
+    "char_count": 566,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "from collections.abc import Callable",
+      "def auto_loop_factory(use_subprocess: bool = False) -> Callable[[], asyncio.AbstractEventLoop]:",
+      "    try:",
+      "        import uvloop  # noqa",
+      "    except ImportError:  # pragma: no cover",
+      "        from uvicorn.loops.asyncio import asyncio_loop_factory as loop_factory",
+      "        return loop_factory(use_subprocess=use_subprocess)",
+      "    else:  # pragma: no cover"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "from collections.abc import Callable",
+      "import uvloop  # noqa",
+      "from uvicorn.loops.asyncio import asyncio_loop_factory as loop_factory",
+      "from uvicorn.loops.uvloop import uvloop_loop_factory"
+    ],
+    "classes": [],
+    "functions": [
+      "auto_loop_factory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_026_a5d4ec31caa46c4f_auto.py.json"
+}

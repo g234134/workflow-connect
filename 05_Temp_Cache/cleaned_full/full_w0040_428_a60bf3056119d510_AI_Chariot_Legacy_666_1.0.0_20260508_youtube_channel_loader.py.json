@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_youtube_channel_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_youtube_channel_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6241,
+  "content_sha256": "a60bf3056119d5102cbd72d345237dfea73a55f6d454c0ce46839e83d3af1bae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 162,
+    "non_empty_lines": 132,
+    "char_count": 6241,
+    "preview_lines": [
+      "\"\"\"YouTube channel loader for extracting content from YouTube channels.\"\"\"",
+      "import re",
+      "from typing import Any",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "class YoutubeChannelLoader(BaseLoader):",
+      "    \"\"\"Loader for YouTube channels.\"\"\"",
+      "    def load(self, source: SourceContent, **kwargs: Any) -> LoaderResult:  # type: ignore[override]",
+      "        \"\"\"Load and extract content from a YouTube channel.",
+      "        Args:"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Any",
+      "from crewai_tools.rag.base_loader import BaseLoader, LoaderResult",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "from pytube import Channel  # type: ignore[import-untyped]",
+      "from pytube import YouTube",
+      "from youtube_transcript_api import YouTubeTranscriptApi"
+    ],
+    "classes": [
+      "YoutubeChannelLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_428_a60bf3056119d510_AI_Chariot_Legacy_666_1.0.0_20260508_youtube_channel_loader.py.json"
+}

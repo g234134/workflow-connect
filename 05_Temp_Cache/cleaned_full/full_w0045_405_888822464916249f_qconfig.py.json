@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 405,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\qconfig.py",
+  "name": "qconfig.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26384,
+  "content_sha256": "888822464916249f4d7b70d3de67ac6b6ddbb8973d3aa57b329fc862ef2b0ce5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 560,
+    "non_empty_lines": 485,
+    "char_count": 26384,
+    "preview_lines": [
+      "from collections import namedtuple",
+      "from typing import Optional, Any, Union, Type",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.ao.quantization.fake_quantize import (",
+      "    FakeQuantize,",
+      "    FakeQuantizeBase,",
+      "    default_fake_quant,",
+      "    default_dynamic_fake_quant,",
+      "    default_per_channel_weight_fake_quant,"
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "from typing import Optional, Any, Union, Type",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.ao.quantization.fake_quantize import (",
+      "from .observer import (",
+      "import warnings",
+      "import copy"
+    ],
+    "classes": [
+      "QConfig",
+      "QConfigDynamic"
+    ],
+    "functions": [
+      "get_default_qconfig",
+      "get_default_qat_qconfig",
+      "get_default_qconfig_dict",
+      "get_default_qat_qconfig_dict",
+      "_assert_valid_qconfig",
+      "_add_module_to_qconfig_obs_ctr",
+      "_obs_or_fq_ctr_equals",
+      "_partial_wrapper_equals",
+      "qconfig_equals",
+      "_activation_is_memoryless",
+      "_is_reuse_input_qconfig"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_405_888822464916249f_qconfig.py.json"
+}

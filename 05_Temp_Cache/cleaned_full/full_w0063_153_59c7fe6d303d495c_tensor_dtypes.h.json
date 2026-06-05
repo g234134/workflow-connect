@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 153,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\utils\\tensor_dtypes.h",
+  "name": "tensor_dtypes.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 272,
+  "content_sha256": "59c7fe6d303d495cc0f2b5e169e0fb3f173d0368d0b7fd1685b312dbdce0d5d8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 272,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/ATen.h>",
+      "#include <string>",
+      "#include <tuple>",
+      "namespace torch {",
+      "namespace utils {",
+      "std::pair<std::string, std::string> getDtypeNames(at::ScalarType scalarType);",
+      "void initializeDtypes();",
+      "} // namespace utils",
+      "} // namespace torch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_153_59c7fe6d303d495c_tensor_dtypes.h.json"
+}

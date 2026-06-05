@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 335,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__sysconfig.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__sysconfig.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7779,
+  "content_sha256": "f02a538edc5a0b31d20ab2a96b15a71c4eda29c26b4494669ed47564b572b0b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 218,
+    "non_empty_lines": 179,
+    "char_count": 7779,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "import sys",
+      "import sysconfig",
+      "from typing import Callable",
+      "from pip._internal.exceptions import InvalidSchemeCombination, UserInstallationInvalid",
+      "from pip._internal.models.scheme import SCHEME_KEYS, Scheme",
+      "from pip._internal.utils.virtualenv import running_under_virtualenv",
+      "from .base import change_root, get_major_minor_version, is_osx_framework"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "import sys",
+      "import sysconfig",
+      "from typing import Callable",
+      "from pip._internal.exceptions import InvalidSchemeCombination, UserInstallationInvalid",
+      "from pip._internal.models.scheme import SCHEME_KEYS, Scheme",
+      "from pip._internal.utils.virtualenv import running_under_virtualenv",
+      "from .base import change_root, get_major_minor_version, is_osx_framework"
+    ],
+    "classes": [],
+    "functions": [
+      "_should_use_osx_framework_prefix",
+      "_infer_prefix",
+      "_infer_user",
+      "_infer_home",
+      "get_scheme",
+      "get_bin_prefix",
+      "get_purelib",
+      "get_platlib"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_335_f02a538edc5a0b31_AI_Chariot_Legacy_666_1.0.0_20260508__sysconfig.py.json"
+}

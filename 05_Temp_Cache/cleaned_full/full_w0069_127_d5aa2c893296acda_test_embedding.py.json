@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\integration_tests\\evaluation\\embedding_distance\\test_embedding.py",
+  "name": "test_embedding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5206,
+  "content_sha256": "d5aa2c893296acda90c6bff4c3893e9d5fcdbafbc9affb2fc867c0eae8e46f4f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 150,
+    "non_empty_lines": 125,
+    "char_count": 5203,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from langchain_classic.evaluation.embedding_distance import (",
+      "    EmbeddingDistance,",
+      "    EmbeddingDistanceEvalChain,",
+      "    PairwiseEmbeddingDistanceEvalChain,",
+      ")",
+      "@pytest.fixture",
+      "def vectors() -> tuple[np.ndarray, np.ndarray]:",
+      "    \"\"\"Create two random vectors.\"\"\""
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from langchain_classic.evaluation.embedding_distance import (",
+      "from scipy.spatial.distance import euclidean",
+      "from scipy.spatial.distance import cityblock",
+      "from scipy.spatial.distance import chebyshev",
+      "from scipy.spatial.distance import hamming"
+    ],
+    "classes": [],
+    "functions": [
+      "vectors",
+      "pairwise_embedding_distance_eval_chain",
+      "embedding_distance_eval_chain",
+      "test_pairwise_embedding_distance_eval_chain_cosine_similarity",
+      "test_pairwise_embedding_distance_eval_chain_euclidean_distance",
+      "test_pairwise_embedding_distance_eval_chain_manhattan_distance",
+      "test_pairwise_embedding_distance_eval_chain_chebyshev_distance",
+      "test_pairwise_embedding_distance_eval_chain_hamming_distance",
+      "test_pairwise_embedding_distance_eval_chain_embedding_distance",
+      "test_embedding_distance_eval_chain"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_127_d5aa2c893296acda_test_embedding.py.json"
+}

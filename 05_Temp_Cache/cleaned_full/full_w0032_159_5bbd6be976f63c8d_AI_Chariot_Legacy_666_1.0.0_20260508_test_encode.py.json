@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_encode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_encode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9877,
+  "content_sha256": "5bbd6be976f63c8d695b869afa3558f42e344430fae8d5d67c194a33e5593a97",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 274,
+    "non_empty_lines": 226,
+    "char_count": 9877,
+    "preview_lines": [
+      "import pickle",
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.utils._encode import _check_unknown, _encode, _get_counts, _unique",
+      "@pytest.mark.parametrize(",
+      "    \"values, expected\",",
+      "    [",
+      "        (np.array([2, 1, 3, 1, 3], dtype=\"int64\"), np.array([1, 2, 3], dtype=\"int64\")),",
+      "        ("
+    ],
+    "imports": [
+      "import pickle",
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.utils._encode import _check_unknown, _encode, _get_counts, _unique"
+    ],
+    "classes": [],
+    "functions": [
+      "test_encode_util",
+      "test_encode_with_check_unknown",
+      "_assert_check_unknown",
+      "test_check_unknown",
+      "test_check_unknown_missing_values",
+      "test_unique_util_missing_values_objects",
+      "test_unique_util_missing_values_numeric",
+      "test_unique_util_with_all_missing_values",
+      "test_check_unknown_with_both_missing_values",
+      "test_get_counts"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_159_5bbd6be976f63c8d_AI_Chariot_Legacy_666_1.0.0_20260508_test_encode.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 425,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\symbolic_opset16.py",
+  "name": "symbolic_opset16.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6752,
+  "content_sha256": "5908d848b5a52281a6a2df913405f27737c5f8d36c1c178491d0c8f44de60718",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 187,
+    "non_empty_lines": 161,
+    "char_count": 6752,
+    "preview_lines": [
+      "\"\"\"This file exports ONNX ops for opset 16.",
+      "Note [ONNX Operators that are added/updated in opset 16]",
+      "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "https://github.com/onnx/onnx/blob/main/docs/Changelog.md#version-16-of-the-default-onnx-operator-set",
+      "New operators:",
+      "    GridSample https://github.com/onnx/onnx/pull/3557",
+      "Updated operators:",
+      "    Identity",
+      "    If",
+      "    LeakyRelu"
+    ],
+    "imports": [
+      "import functools",
+      "import torch",
+      "from torch.nn.functional import (",
+      "from torch.onnx import _type_utils, errors, symbolic_helper, utils",
+      "from torch.onnx._internal import _beartype, jit_utils, registration"
+    ],
+    "classes": [],
+    "functions": [
+      "grid_sampler",
+      "scatter_add",
+      "scatter_reduce"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_425_5908d848b5a52281_symbolic_opset16.py.json"
+}

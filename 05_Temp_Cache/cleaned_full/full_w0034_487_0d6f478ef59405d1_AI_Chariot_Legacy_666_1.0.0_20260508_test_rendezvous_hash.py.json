@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_rendezvous_hash.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_rendezvous_hash.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2317,
+  "content_sha256": "0d6f478ef59405d168631e1f16d262a91afe11bc992516615f9331c1501835fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 50,
+    "char_count": 2317,
+    "preview_lines": [
+      "from chromadb.utils.rendezvous_hash import assign, murmur3hasher",
+      "from math import sqrt",
+      "def test_rendezvous_hash() -> None:",
+      "    # Tests the assign works as expected",
+      "    members = [\"a\", \"b\", \"c\"]",
+      "    key = \"key\"",
+      "    def mock_hasher(member: str, key: str) -> int:",
+      "        return members.index(member)  # Highest index wins",
+      "    assert assign(key, members, mock_hasher, 1)[0] == \"c\"",
+      "def test_even_distribution() -> None:"
+    ],
+    "imports": [
+      "from chromadb.utils.rendezvous_hash import assign, murmur3hasher",
+      "from math import sqrt"
+    ],
+    "classes": [],
+    "functions": [
+      "test_rendezvous_hash",
+      "test_even_distribution",
+      "test_multi_assign_even_distribution"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_487_0d6f478ef59405d1_AI_Chariot_Legacy_666_1.0.0_20260508_test_rendezvous_hash.py.json"
+}

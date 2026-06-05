@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 187,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\prebuilt\\tests\\test_tool_node_validation_error_filtering.py",
+  "name": "test_tool_node_validation_error_filtering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15856,
+  "content_sha256": "0062061feb535628cee54f207433fe2f773fde94dc1e29f6b75d250ca898903b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 470,
+    "non_empty_lines": 390,
+    "char_count": 15853,
+    "preview_lines": [
+      "\"\"\"Unit tests for ValidationError filtering in ToolNode.",
+      "This module tests that validation errors are filtered to only include arguments",
+      "that the LLM controls. Injected arguments (InjectedState, InjectedStore,",
+      "ToolRuntime) are automatically provided by the system and should not appear in",
+      "validation error messages. This ensures the LLM receives focused, actionable",
+      "feedback about the parameters it can actually control, improving error correction",
+      "and reducing confusion from irrelevant system implementation details.",
+      "\"\"\"",
+      "from typing import Annotated",
+      "from unittest.mock import Mock"
+    ],
+    "imports": [
+      "from typing import Annotated",
+      "from unittest.mock import Mock",
+      "import pytest",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_core.runnables.config import RunnableConfig",
+      "from langchain_core.tools import tool as dec_tool",
+      "from langgraph.store.base import BaseStore",
+      "from langgraph.store.memory import InMemoryStore",
+      "from langgraph.prebuilt import InjectedState, InjectedStore, ToolNode, ToolRuntime",
+      "from langgraph.prebuilt.tool_node import ToolInvocationError"
+    ],
+    "classes": [],
+    "functions": [
+      "_create_mock_runtime",
+      "_create_config_with_runtime"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_187_0062061feb535628_test_tool_node_validation_error_filtering.py.json"
+}

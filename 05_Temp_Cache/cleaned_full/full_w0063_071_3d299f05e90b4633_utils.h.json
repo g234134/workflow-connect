@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\lazy\\core\\ops\\utils.h",
+  "name": "utils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1051,
+  "content_sha256": "3d299f05e90b4633b8d6a99a10c23de0d69f56a33fbd5b6dde5bdecf9e9f721b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 30,
+    "char_count": 1051,
+    "preview_lines": [
+      "#include <vector>",
+      "#include <torch/csrc/lazy/core/tensor_util.h>",
+      "#include <torch/csrc/lazy/core/util.h>",
+      "namespace torch {",
+      "namespace lazy {",
+      "TORCH_API bool StrideIsSupported(c10::ArrayRef<int64_t> stride);",
+      "TORCH_API std::vector<int64_t> GetArrayStridePermutation(",
+      "    c10::ArrayRef<int64_t> stride);",
+      "TORCH_API Shape MakeDiagonalShape(",
+      "    const Shape& shape,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_071_3d299f05e90b4633_utils.h.json"
+}

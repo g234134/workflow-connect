@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__gcrotmk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__gcrotmk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16291,
+  "content_sha256": "d4980a46321ceb5f8babd1325f7f44bd845501fba6420e5c67e69d1fb31d56da",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 503,
+    "non_empty_lines": 413,
+    "char_count": 16291,
+    "preview_lines": [
+      "# Copyright (C) 2015, Pauli Virtanen <pav@iki.fi>",
+      "# Distributed under the same license as SciPy.",
+      "import numpy as np",
+      "from numpy.linalg import LinAlgError",
+      "from scipy.linalg import (get_blas_funcs, qr, solve, svd, qr_insert, lstsq)",
+      "from .iterative import _get_atol_rtol",
+      "from scipy.sparse.linalg._isolve.utils import make_system",
+      "__all__ = ['gcrotmk']",
+      "def _fgmres(matvec, v0, m, atol, lpsolve=None, rpsolve=None, cs=(), outer_v=(),",
+      "            prepend_outer_v=False):"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.linalg import LinAlgError",
+      "from scipy.linalg import (get_blas_funcs, qr, solve, svd, qr_insert, lstsq)",
+      "from .iterative import _get_atol_rtol",
+      "from scipy.sparse.linalg._isolve.utils import make_system"
+    ],
+    "classes": [],
+    "functions": [
+      "_fgmres",
+      "gcrotmk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_250_d4980a46321ceb5f_AI_Chariot_Legacy_666_1.0.0_20260508__gcrotmk.py.json"
+}

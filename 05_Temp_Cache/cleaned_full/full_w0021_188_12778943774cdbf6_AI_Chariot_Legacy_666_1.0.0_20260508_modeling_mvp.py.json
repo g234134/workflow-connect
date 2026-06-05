@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:45:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mvp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mvp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 73048,
+  "content_sha256": "12778943774cdbf6c28c8f23d3a9d27ad16953ee0ee95cf12aa441e2faf4ba70",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1630,
+    "non_empty_lines": 1373,
+    "char_count": 73048,
+    "preview_lines": [
+      "# Copyright 2022 The Fairseq Authors and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "from torch import nn",
+      "from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss",
+      "from ... import initialization as init",
+      "from ...activations import ACT2FN",
+      "from ...cache_utils import Cache, DynamicCache, EncoderDecoderCache",
+      "from ...generation import GenerationMixin",
+      "from ...masking_utils import create_bidirectional_mask, create_causal_mask",
+      "from ...modeling_layers import GradientCheckpointingLayer",
+      "from ...modeling_outputs import (",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import auto_docstring, logging, torch_compilable_check",
+      "from .configuration_mvp import MvpConfig"
+    ],
+    "classes": [
+      "MvpLearnedPositionalEmbedding",
+      "MvpAttention",
+      "MvpEncoderLayer",
+      "MvpDecoderLayer",
+      "MvpClassificationHead",
+      "MvpPrompt",
+      "MvpPreTrainedModel",
+      "MvpEncoder",
+      "MvpDecoder",
+      "MvpModel",
+      "MvpForConditionalGeneration",
+      "MvpForSequenceClassification",
+      "MvpForQuestionAnswering",
+      "MvpDecoderWrapper",
+      "MvpForCausalLM"
+    ],
+    "functions": [
+      "shift_tokens_right"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_188_12778943774cdbf6_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mvp.py.json"
+}

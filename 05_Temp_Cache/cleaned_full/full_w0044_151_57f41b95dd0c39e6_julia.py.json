@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 151,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\julia.py",
+  "name": "julia.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23541,
+  "content_sha256": "57f41b95dd0c39e6c8913e159e6c8fe957486e0acf6aa96582392fede4aaf1b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 652,
+    "non_empty_lines": 519,
+    "char_count": 23541,
+    "preview_lines": [
+      "\"\"\"",
+      "Julia code printer",
+      "The `JuliaCodePrinter` converts SymPy expressions into Julia expressions.",
+      "A complete code generator, which uses `julia_code` extensively, can be found",
+      "in `sympy.utilities.codegen`.  The `codegen` module can be used to generate",
+      "complete source code files.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core import Mul, Pow, S, Rational"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core import Mul, Pow, S, Rational",
+      "from sympy.core.mul import _keep_coeff",
+      "from sympy.core.numbers import equal_valued",
+      "from sympy.printing.codeprinter import CodePrinter",
+      "from sympy.printing.precedence import precedence, PRECEDENCE",
+      "from re import search"
+    ],
+    "classes": [
+      "JuliaCodePrinter"
+    ],
+    "functions": [
+      "julia_code",
+      "print_julia_code"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_151_57f41b95dd0c39e6_julia.py.json"
+}

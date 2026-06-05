@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\language_models\\llms\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12476,
+  "content_sha256": "e57bf2b2e0b9dfdddedf0d1cd7b89dd2bc517770742c2277215ff566938b8ed4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 378,
+    "non_empty_lines": 308,
+    "char_count": 12473,
+    "preview_lines": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from typing import Any",
+      "import pytest",
+      "from typing_extensions import override",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForLLMRun,",
+      "    CallbackManagerForLLMRun,",
+      ")",
+      "from langchain_core.language_models import (",
+      "    LLM,"
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator, Iterator",
+      "from typing import Any",
+      "import pytest",
+      "from typing_extensions import override",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models import (",
+      "from langchain_core.language_models._utils import _filter_invocation_params_for_tracing",
+      "from langchain_core.outputs import Generation, GenerationChunk, LLMResult",
+      "from langchain_core.tracers.context import collect_runs",
+      "from tests.unit_tests.fake.callbacks import ("
+    ],
+    "classes": [
+      "FakeLLMWithInvocationParams"
+    ],
+    "functions": [
+      "test_batch",
+      "test_batch_size",
+      "test_get_ls_params",
+      "test_filter_invocation_params_for_tracing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_238_e57bf2b2e0b9dfdd_test_base.py.json"
+}

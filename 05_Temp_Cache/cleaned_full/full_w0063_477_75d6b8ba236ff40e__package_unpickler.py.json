@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 477,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\package\\_package_unpickler.py",
+  "name": "_package_unpickler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 991,
+  "content_sha256": "75d6b8ba236ff40e11a6b0dfeb9ae0eb5cc21b359794c5d65e8180ba23504458",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 20,
+    "char_count": 991,
+    "preview_lines": [
+      "import _compat_pickle",
+      "import pickle",
+      "from .importer import Importer",
+      "class PackageUnpickler(pickle._Unpickler):  # type: ignore[name-defined]",
+      "    \"\"\"Package-aware unpickler.",
+      "    This behaves the same as a normal unpickler, except it uses `importer` to",
+      "    find any global names that it encounters while unpickling.",
+      "    \"\"\"",
+      "    def __init__(self, importer: Importer, *args, **kwargs):",
+      "        super().__init__(*args, **kwargs)"
+    ],
+    "imports": [
+      "import _compat_pickle",
+      "import pickle",
+      "from .importer import Importer"
+    ],
+    "classes": [
+      "PackageUnpickler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_477_75d6b8ba236ff40e__package_unpickler.py.json"
+}

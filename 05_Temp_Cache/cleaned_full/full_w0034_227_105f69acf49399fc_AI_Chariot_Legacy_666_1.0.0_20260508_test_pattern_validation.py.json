@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 227,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pattern_validation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pattern_validation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4042,
+  "content_sha256": "105f69acf49399fcd0611ad7ae884f1c2de1ecb721593f45f774c8080c0f3a9e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 102,
+    "non_empty_lines": 92,
+    "char_count": 4042,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.errors import MatchPatternError",
+      "from spacy.matcher import Matcher",
+      "from spacy.schemas import validate_token_pattern",
+      "# (pattern, num errors with validation, num errors identified with minimal",
+      "#  checks)",
+      "TEST_PATTERNS = [",
+      "    # Bad patterns flagged in all cases",
+      "    ([{\"XX\": \"foo\"}], 1, 1),",
+      "    ([{\"IS_ALPHA\": {\"==\": True}}, {\"LIKE_NUM\": None}], 2, 1),"
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.errors import MatchPatternError",
+      "from spacy.matcher import Matcher",
+      "from spacy.schemas import validate_token_pattern"
+    ],
+    "classes": [],
+    "functions": [
+      "test_matcher_pattern_validation",
+      "test_pattern_validation",
+      "test_minimal_pattern_validation",
+      "test_pattern_errors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_227_105f69acf49399fc_AI_Chariot_Legacy_666_1.0.0_20260508_test_pattern_validation.py.json"
+}

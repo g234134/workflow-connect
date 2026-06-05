@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 291,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_triton_based_modules.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_triton_based_modules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10082,
+  "content_sha256": "9c782c6ad031e920e31774fd593d3e81cd70c93a4590cc6de48a316fe9fa6e7a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 264,
+    "non_empty_lines": 213,
+    "char_count": 10082,
+    "preview_lines": [
+      "from functools import partial",
+      "import torch",
+      "import torch.nn as nn",
+      "from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise",
+      "from bitsandbytes.triton.int8_matmul_mixed_dequantize import (",
+      "    int8_matmul_mixed_dequantize,",
+      ")",
+      "from bitsandbytes.triton.int8_matmul_rowwise_dequantize import (",
+      "    int8_matmul_rowwise_dequantize,",
+      ")"
+    ],
+    "imports": [
+      "from functools import partial",
+      "import torch",
+      "import torch.nn as nn",
+      "from bitsandbytes.triton.dequantize_rowwise import dequantize_rowwise",
+      "from bitsandbytes.triton.int8_matmul_mixed_dequantize import (",
+      "from bitsandbytes.triton.int8_matmul_rowwise_dequantize import (",
+      "from bitsandbytes.triton.quantize_columnwise_and_transpose import (",
+      "from bitsandbytes.triton.quantize_global import (",
+      "from bitsandbytes.triton.quantize_rowwise import quantize_rowwise",
+      "from bitsandbytes.triton.triton_utils import is_triton_available"
+    ],
+    "classes": [
+      "_switchback_global",
+      "_switchback_vectorrize",
+      "_switchback_global_mem_efficient",
+      "SwitchBackLinear",
+      "StandardLinearFunction",
+      "StandardLinear"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_291_9c782c6ad031e920_AI_Chariot_Legacy_666_1.0.0_20260508_triton_based_modules.py.json"
+}

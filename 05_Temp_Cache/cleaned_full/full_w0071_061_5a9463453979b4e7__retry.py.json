@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 61,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\langgraph\\_internal\\_retry.py",
+  "name": "_retry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 805,
+  "content_sha256": "5a9463453979b4e739756222f388e1afa1b8fa60f34002eaf884c6315dc9ed2a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 28,
+    "char_count": 802,
+    "preview_lines": [
+      "def default_retry_on(exc: Exception) -> bool:",
+      "    import httpx",
+      "    import requests",
+      "    if isinstance(exc, ConnectionError):",
+      "        return True",
+      "    if isinstance(exc, httpx.HTTPStatusError):",
+      "        return 500 <= exc.response.status_code < 600",
+      "    if isinstance(exc, requests.HTTPError):",
+      "        return 500 <= exc.response.status_code < 600 if exc.response else True",
+      "    if isinstance("
+    ],
+    "imports": [
+      "import httpx",
+      "import requests"
+    ],
+    "classes": [],
+    "functions": [
+      "default_retry_on"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_061_5a9463453979b4e7__retry.py.json"
+}

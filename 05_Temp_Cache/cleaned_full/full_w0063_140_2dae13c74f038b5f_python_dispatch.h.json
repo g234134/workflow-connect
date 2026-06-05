@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\utils\\python_dispatch.h",
+  "name": "python_dispatch.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 392,
+  "content_sha256": "2dae13c74f038b5f238384654496784f8b9a3d87b24012c295e82135816c46d2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 17,
+    "non_empty_lines": 13,
+    "char_count": 392,
+    "preview_lines": [
+      "#include <pybind11/pybind11.h>",
+      "#include <torch/csrc/utils/pybind.h>",
+      "namespace torch {",
+      "namespace impl {",
+      "namespace dispatch {",
+      "void initDispatchBindings(PyObject* module);",
+      "void python_op_registration_trampoline_impl(",
+      "    const c10::OperatorHandle& op,",
+      "    c10::DispatchKey key,",
+      "    torch::jit::Stack* stack);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_140_2dae13c74f038b5f_python_dispatch.h.json"
+}

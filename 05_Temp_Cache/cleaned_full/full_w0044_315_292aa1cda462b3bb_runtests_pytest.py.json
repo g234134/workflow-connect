@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 315,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\testing\\runtests_pytest.py",
+  "name": "runtests_pytest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17801,
+  "content_sha256": "292aa1cda462b3bb31d80c1cb56b0fe958c26c3720e82e54080a69fcb50d46e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 461,
+    "non_empty_lines": 378,
+    "char_count": 17801,
+    "preview_lines": [
+      "\"\"\"Backwards compatible functions for running tests from SymPy using pytest.",
+      "SymPy historically had its own testing framework that aimed to:",
+      "- be compatible with pytest;",
+      "- operate similarly (or identically) to pytest;",
+      "- not require any external dependencies;",
+      "- have all the functionality in one file only;",
+      "- have no magic, just import the test file and execute the test functions; and",
+      "- be portable.",
+      "To reduce the maintenance burden of developing an independent testing framework",
+      "and to leverage the benefits of existing Python testing infrastructure, SymPy"
+    ],
+    "imports": [
+      "import functools",
+      "import importlib.util",
+      "import os",
+      "import pathlib",
+      "import re",
+      "from fnmatch import fnmatch",
+      "from typing import List, Optional, Tuple",
+      "import pytest",
+      "from sympy.testing.runtests import test as test_sympy"
+    ],
+    "classes": [
+      "PytestPluginManager"
+    ],
+    "functions": [
+      "sympy_dir",
+      "update_args_with_paths",
+      "make_absolute_path",
+      "test",
+      "doctest"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_315_292aa1cda462b3bb_runtests_pytest.py.json"
+}

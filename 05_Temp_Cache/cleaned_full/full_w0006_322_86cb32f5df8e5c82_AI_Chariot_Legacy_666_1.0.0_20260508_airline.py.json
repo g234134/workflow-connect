@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 322,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_airline.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_airline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8444,
+  "content_sha256": "86cb32f5df8e5c8213119f4b8be1f3d2e1ae932c95dc0170d0870fd0271aecc5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 215,
+    "non_empty_lines": 200,
+    "char_count": 8434,
+    "preview_lines": [
+      "\"\"\"",
+      "Airline-specific competitor intent: other meaning (e.g. location/travel context) vs competitor airline.",
+      "Uses context-based disambiguation only: no hardcoded place lists. Detects travel-location",
+      "language (prepositions, travel verbs, booking/entry nouns) vs airline context (airways,",
+      "carrier, lounge, miles, etc.) and scores to decide OTHER_MEANING vs COMPETITOR.",
+      "When competitors is not provided, loads major_airlines.json and excludes the customer's",
+      "brand_self so all other major airlines are treated as competitors.",
+      "\"\"\"",
+      "import json",
+      "from pathlib import Path"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "from typing import Any, Dict, List, Set, Tuple",
+      "from litellm.proxy.guardrails.guardrail_hooks.litellm_content_filter.competitor_intent.base import ("
+    ],
+    "classes": [
+      "AirlineCompetitorIntentChecker"
+    ],
+    "functions": [
+      "_load_competitors_excluding_brand"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_322_86cb32f5df8e5c82_AI_Chariot_Legacy_666_1.0.0_20260508_airline.py.json"
+}

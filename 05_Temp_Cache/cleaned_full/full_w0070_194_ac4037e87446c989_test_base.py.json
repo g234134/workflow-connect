@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\unit_tests\\llms\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3808,
+  "content_sha256": "ac4037e87446c989f94c19b7a722201c68ca923bb18570ee478c763a14912dd3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 94,
+    "char_count": 3805,
+    "preview_lines": [
+      "import os",
+      "import pytest",
+      "from langchain_core.outputs import GenerationChunk",
+      "from langchain_openai import OpenAI",
+      "from langchain_openai.llms.base import _stream_response_to_generation_chunk",
+      "os.environ[\"OPENAI_API_KEY\"] = \"foo\"",
+      "def test_openai_model_param() -> None:",
+      "    llm = OpenAI(model=\"foo\")",
+      "    assert llm.model_name == \"foo\"",
+      "    llm = OpenAI(model_name=\"foo\")  # type: ignore[call-arg]"
+    ],
+    "imports": [
+      "import os",
+      "import pytest",
+      "from langchain_core.outputs import GenerationChunk",
+      "from langchain_openai import OpenAI",
+      "from langchain_openai.llms.base import _stream_response_to_generation_chunk"
+    ],
+    "classes": [],
+    "functions": [
+      "test_openai_model_param",
+      "test_openai_model_kwargs",
+      "test_openai_fields_in_model_kwargs",
+      "test_openai_incorrect_field",
+      "mock_completion",
+      "test_get_token_ids",
+      "test_custom_token_counting",
+      "test_stream_response_to_generation_chunk",
+      "test_generate_streaming_multiple_prompts_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_194_ac4037e87446c989_test_base.py.json"
+}

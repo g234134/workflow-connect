@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 484,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lago.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lago.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7003,
+  "content_sha256": "e4b7cb5096f25c0cad5c6e142e030840a0feb590a45392e5ea0ac93230e48b6b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 168,
+    "char_count": 7003,
+    "preview_lines": [
+      "# What is this?",
+      "## On Success events log cost to Lago - https://github.com/BerriAI/litellm/issues/3639",
+      "import json",
+      "import os",
+      "from litellm._uuid import uuid",
+      "from typing import Literal, Optional",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "from litellm._uuid import uuid",
+      "from typing import Literal, Optional",
+      "import httpx",
+      "import litellm",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "import datetime as dt",
+      "from datetime import datetime"
+    ],
+    "classes": [
+      "LagoLogger"
+    ],
+    "functions": [
+      "get_utc_datetime"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_484_e4b7cb5096f25c0c_AI_Chariot_Legacy_666_1.0.0_20260508_lago.py.json"
+}

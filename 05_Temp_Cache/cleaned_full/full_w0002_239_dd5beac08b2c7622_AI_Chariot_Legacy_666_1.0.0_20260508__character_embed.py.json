@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 239,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__character_embed.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__character_embed.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1985,
+  "content_sha256": "dd5beac08b2c7622dae2d5b68d2e9036e6804464b076ac74bb0b7cd60c7d5159",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 48,
+    "char_count": 1985,
+    "preview_lines": [
+      "from typing import List",
+      "from thinc.api import Model",
+      "from thinc.types import Floats2d",
+      "from ..tokens import Doc",
+      "def CharacterEmbed(nM: int, nC: int) -> Model[List[Doc], List[Floats2d]]:",
+      "    # nM: Number of dimensions per character. nC: Number of characters.",
+      "    return Model(",
+      "        \"charembed\",",
+      "        forward,",
+      "        init=init,"
+    ],
+    "imports": [
+      "from typing import List",
+      "from thinc.api import Model",
+      "from thinc.types import Floats2d",
+      "from ..tokens import Doc"
+    ],
+    "classes": [],
+    "functions": [
+      "CharacterEmbed",
+      "init",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_239_dd5beac08b2c7622_AI_Chariot_Legacy_666_1.0.0_20260508__character_embed.py.json"
+}

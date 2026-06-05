@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 32,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sndhdr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sndhdr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7448,
+  "content_sha256": "d1cb49f6545ef831a69322275ef26f6ca6964953e70d81a8a80fcca8d600ffc0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 271,
+    "non_empty_lines": 218,
+    "char_count": 7448,
+    "preview_lines": [
+      "\"\"\"Routines to help recognizing sound files.",
+      "Function whathdr() recognizes various types of sound file headers.",
+      "It understands almost all headers that SOX can decode.",
+      "The return tuple contains the following items, in this order:",
+      "- file type (as SOX understands it)",
+      "- sampling rate (0 if unknown or hard to decode)",
+      "- number of channels (0 if unknown or hard to decode)",
+      "- number of frames in the file (-1 if unknown or hard to decode)",
+      "- number of bits/sample, or 'U' for U-LAW, or 'A' for A-LAW",
+      "If the file doesn't have a recognizable type, it returns None."
+    ],
+    "imports": [
+      "import warnings",
+      "from collections import namedtuple",
+      "import aifc",
+      "import wave"
+    ],
+    "classes": [],
+    "functions": [
+      "what",
+      "whathdr",
+      "test_aifc",
+      "test_au",
+      "test_hcom",
+      "test_voc",
+      "test_wav",
+      "test_8svx",
+      "test_sndt",
+      "test_sndr",
+      "get_long_be",
+      "get_long_le",
+      "get_short_be",
+      "get_short_le",
+      "test",
+      "testall"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_032_d1cb49f6545ef831_AI_Chariot_Legacy_666_1.0.0_20260508_sndhdr.py.json"
+}

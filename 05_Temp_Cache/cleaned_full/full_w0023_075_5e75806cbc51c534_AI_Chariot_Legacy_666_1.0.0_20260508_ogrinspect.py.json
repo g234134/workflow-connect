@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 75,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ogrinspect.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ogrinspect.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6071,
+  "content_sha256": "5e75806cbc51c534af6ca4af8e078f37b0f5a3f129e2a5a4bccc15ac6d53a586",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 148,
+    "char_count": 6071,
+    "preview_lines": [
+      "import argparse",
+      "from django.contrib.gis import gdal",
+      "from django.core.management.base import BaseCommand, CommandError",
+      "from django.utils.inspect import get_func_args",
+      "class LayerOptionAction(argparse.Action):",
+      "    \"\"\"",
+      "    Custom argparse action for the `ogrinspect` `layer_key` keyword option",
+      "    which may be an integer or a string.",
+      "    \"\"\"",
+      "    def __call__(self, parser, namespace, value, option_string=None):"
+    ],
+    "imports": [
+      "import argparse",
+      "from django.contrib.gis import gdal",
+      "from django.core.management.base import BaseCommand, CommandError",
+      "from django.utils.inspect import get_func_args",
+      "from django.contrib.gis.utils.ogrinspect import _ogrinspect, mapping"
+    ],
+    "classes": [
+      "LayerOptionAction",
+      "ListOptionAction",
+      "Command"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_075_5e75806cbc51c534_AI_Chariot_Legacy_666_1.0.0_20260508_ogrinspect.py.json"
+}

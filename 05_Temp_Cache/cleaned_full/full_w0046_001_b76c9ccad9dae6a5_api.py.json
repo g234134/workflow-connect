@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_shard\\sharded_tensor\\api.py",
+  "name": "api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 52776,
+  "content_sha256": "b76c9ccad9dae6a5ff52e280c311942e5c1b17205314d317088cc4eb960e3768",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1252,
+    "non_empty_lines": 1082,
+    "char_count": 52776,
+    "preview_lines": [
+      "from __future__ import annotations  # type: ignore[attr-defined]",
+      "from dataclasses import dataclass",
+      "from typing import (",
+      "    Callable,",
+      "    Dict,",
+      "    List,",
+      "    Optional,",
+      "    Sequence,",
+      "    Tuple,",
+      "    cast,"
+    ],
+    "imports": [
+      "from __future__ import annotations  # type: ignore[attr-defined]",
+      "from dataclasses import dataclass",
+      "from typing import (",
+      "import copy",
+      "import warnings",
+      "from functools import reduce",
+      "import weakref",
+      "import threading",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed import rpc",
+      "from torch.distributed import distributed_c10d",
+      "from torch.distributed._shard.metadata import ShardMetadata",
+      "import torch.distributed._shard.sharding_spec as shard_spec",
+      "from torch.distributed._shard.sharding_spec.api import (",
+      "from torch.distributed._shard.sharding_spec._internals import (",
+      "from torch.distributed._shard._utils import (",
+      "from .metadata import TensorProperties, ShardedTensorMetadata",
+      "from .shard import Shard",
+      "from .reshard import reshuffle_local_shard, reshard_local_shard"
+    ],
+    "classes": [
+      "ShardedTensorBase",
+      "ShardedTensor"
+    ],
+    "functions": [
+      "_register_remote_shards",
+      "_create_tensor_from_params"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_001_b76c9ccad9dae6a5_api.py.json"
+}

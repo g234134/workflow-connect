@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 76,
+  "generated_at": "2026-05-08T18:48:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\autograd\\autograd_not_implemented_fallback.h",
+  "name": "autograd_not_implemented_fallback.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1201,
+  "content_sha256": "1b10fe877b74d0f20badcc11a0a0208aabd548b78f2de729cff741d815590c64",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 34,
+    "non_empty_lines": 26,
+    "char_count": 1201,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/library.h>",
+      "namespace torch {",
+      "namespace autograd {",
+      "// Default DispatchKey::Autograd fallback for built-in operators.",
+      "// Can be registered for custom operators.",
+      "TORCH_API torch::CppFunction autogradNotImplementedFallback();",
+      "// Default DispatchKey::AdInplaceOrView fallback for built-in operators",
+      "// Can be registered for custom operators.",
+      "TORCH_API torch::CppFunction autogradNotImplementedInplaceOrViewFallback();"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_076_1b10fe877b74d0f2_autograd_not_implemented_fallback.h.json"
+}

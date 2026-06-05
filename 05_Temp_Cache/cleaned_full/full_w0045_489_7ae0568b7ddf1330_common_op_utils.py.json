@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 489,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_shard\\common_op_utils.py",
+  "name": "common_op_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2210,
+  "content_sha256": "7ae0568b7ddf13300435fb99959834d1634b94bb32f3d149e2c223491ff8c762",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 50,
+    "char_count": 2210,
+    "preview_lines": [
+      "import torch",
+      "from torch.utils import _pytree as pytree",
+      "from typing import Optional",
+      "def _basic_validation(op, args=(), kwargs=None):",
+      "    \"\"\"",
+      "    Common validation across all ops go in here.",
+      "    \"\"\"",
+      "    from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "    if len(args) == 0 and (kwargs is None or len(kwargs) == 0):",
+      "        raise ValueError(f\" No input for '{op.__name__}'!\")"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.utils import _pytree as pytree",
+      "from typing import Optional",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_basic_validation",
+      "_register_default_op"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_489_7ae0568b7ddf1330_common_op_utils.py.json"
+}

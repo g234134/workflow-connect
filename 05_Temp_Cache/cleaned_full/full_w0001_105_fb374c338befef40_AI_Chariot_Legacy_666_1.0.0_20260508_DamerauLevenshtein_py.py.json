@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 105,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_DamerauLevenshtein_py.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_DamerauLevenshtein_py.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6591,
+  "content_sha256": "fb374c338befef40e4e551c085b8de0794e939debe6346c54b4b986d2041f459",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 233,
+    "non_empty_lines": 196,
+    "char_count": 6591,
+    "preview_lines": [
+      "# SPDX-License-Identifier: MIT",
+      "# Copyright (C) 2022 Max Bachmann",
+      "from __future__ import annotations",
+      "from rapidfuzz._common_py import conv_sequences",
+      "from rapidfuzz._utils import is_none, setupPandas",
+      "def _damerau_levenshtein_distance_zhao(s1, s2):",
+      "    maxVal = max(len(s1), len(s2)) + 1",
+      "    last_row_id = {}",
+      "    last_row_id_get = last_row_id.get",
+      "    size = len(s2) + 2"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from rapidfuzz._common_py import conv_sequences",
+      "from rapidfuzz._utils import is_none, setupPandas"
+    ],
+    "classes": [],
+    "functions": [
+      "_damerau_levenshtein_distance_zhao",
+      "distance",
+      "similarity",
+      "normalized_distance",
+      "normalized_similarity"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_105_fb374c338befef40_AI_Chariot_Legacy_666_1.0.0_20260508_DamerauLevenshtein_py.py.json"
+}

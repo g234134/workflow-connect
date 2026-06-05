@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\utils\\tests\\test_random_sequence.py",
+  "name": "test_random_sequence.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1502,
+  "content_sha256": "caf7d684940926a3355befdeb47a3b06c2d7035f1888770b685f887614b07180",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 40,
+    "char_count": 1502,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def test_degree_sequences():",
+      "    seq = nx.utils.powerlaw_sequence(10, seed=1)",
+      "    seq = nx.utils.powerlaw_sequence(10)",
+      "    assert len(seq) == 10",
+      "@pytest.mark.parametrize(",
+      "    (\"deg_seq\", \"valid\", \"reason\"),",
+      "    [",
+      "        ([], False, \"must have one more node\"),"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_degree_sequences",
+      "test_valid_degree_sequence",
+      "test_zipf_rv",
+      "test_random_weighted_sample",
+      "test_random_weighted_choice",
+      "test_random_sequence_low_precision"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_087_caf7d684940926a3_test_random_sequence.py.json"
+}

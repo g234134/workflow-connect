@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:47:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\linalg\\tests\\test_graphmatrix.py",
+  "name": "test_graphmatrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8655,
+  "content_sha256": "eb2f8349ecd7e6c9529acf0bb4425ca20808e303ff76e06aa1d35858a2af338c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 275,
+    "non_empty_lines": 247,
+    "char_count": 8655,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.exception import NetworkXError",
+      "np = pytest.importorskip(\"numpy\")",
+      "pytest.importorskip(\"scipy\")",
+      "def test_incidence_matrix_simple():",
+      "    deg = [3, 2, 2, 1, 0]",
+      "    G = nx.havel_hakimi_graph(deg)",
+      "    deg = [(1, 0), (1, 0), (1, 0), (2, 0), (1, 0), (2, 1), (0, 1), (0, 1)]",
+      "    MG = nx.random_clustered_graph(deg, seed=42)"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.exception import NetworkXError"
+    ],
+    "classes": [
+      "TestGraphMatrix"
+    ],
+    "functions": [
+      "test_incidence_matrix_simple"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_034_eb2f8349ecd7e6c9_test_graphmatrix.py.json"
+}

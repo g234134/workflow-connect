@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 311,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__parse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__parse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7100,
+  "content_sha256": "b2fb4bb7ae0a9e55119d8e0f070c6bb9d39cec95394e9b6ee210bb2f0513c015",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 177,
+    "char_count": 7100,
+    "preview_lines": [
+      "\"\"\"URL parsing utilities.\"\"\"",
+      "import re",
+      "import unicodedata",
+      "from functools import lru_cache",
+      "from urllib.parse import scheme_chars, uses_netloc",
+      "from ._quoters import QUOTER, UNQUOTER_PLUS",
+      "# Leading and trailing C0 control and space to be stripped per WHATWG spec.",
+      "# == \"\".join([chr(i) for i in range(0, 0x20 + 1)])",
+      "WHATWG_C0_CONTROL_OR_SPACE = (",
+      "    \"\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\\t\\n\\x0b\\x0c\\r\\x0e\\x0f\\x10\""
+    ],
+    "imports": [
+      "import re",
+      "import unicodedata",
+      "from functools import lru_cache",
+      "from urllib.parse import scheme_chars, uses_netloc",
+      "from ._quoters import QUOTER, UNQUOTER_PLUS"
+    ],
+    "classes": [],
+    "functions": [
+      "split_url",
+      "_check_netloc",
+      "split_netloc",
+      "unsplit_result",
+      "make_netloc",
+      "query_to_pairs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_311_b2fb4bb7ae0a9e55_AI_Chariot_Legacy_666_1.0.0_20260508__parse.py.json"
+}

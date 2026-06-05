@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 31,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__alignment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__alignment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4823,
+  "content_sha256": "e3a1a1b84614a88d6013ed94292bbd048405d50a59e72ba7512f09646649bacb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 101,
+    "char_count": 4823,
+    "preview_lines": [
+      "from dataclasses import dataclass",
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from torchaudio._extension import fail_if_no_align",
+      "__all__ = []",
+      "@fail_if_no_align",
+      "def forced_align(",
+      "    log_probs: Tensor,",
+      "    targets: Tensor,"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "from torch import Tensor",
+      "from torchaudio._extension import fail_if_no_align"
+    ],
+    "classes": [
+      "TokenSpan"
+    ],
+    "functions": [
+      "forced_align",
+      "merge_tokens"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_031_e3a1a1b84614a88d_AI_Chariot_Legacy_666_1.0.0_20260508__alignment.py.json"
+}

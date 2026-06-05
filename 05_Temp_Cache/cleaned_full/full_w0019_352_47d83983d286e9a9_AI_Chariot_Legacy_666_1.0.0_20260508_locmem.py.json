@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 352,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_locmem.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_locmem.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4036,
+  "content_sha256": "47d83983d286e9a93d1b5d91e1168c9d5abb7a5e62f495ee7e8bec84d44c3087",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 118,
+    "non_empty_lines": 100,
+    "char_count": 4036,
+    "preview_lines": [
+      "\"Thread-safe in-memory cache backend.\"",
+      "import pickle",
+      "import time",
+      "from collections import OrderedDict",
+      "from threading import Lock",
+      "from django.core.cache.backends.base import DEFAULT_TIMEOUT, BaseCache",
+      "# Global in-memory store of cache data. Keyed by name, to provide",
+      "# multiple named local memory caches.",
+      "_caches = {}",
+      "_expire_info = {}"
+    ],
+    "imports": [
+      "import pickle",
+      "import time",
+      "from collections import OrderedDict",
+      "from threading import Lock",
+      "from django.core.cache.backends.base import DEFAULT_TIMEOUT, BaseCache"
+    ],
+    "classes": [
+      "LocMemCache"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_352_47d83983d286e9a9_AI_Chariot_Legacy_666_1.0.0_20260508_locmem.py.json"
+}

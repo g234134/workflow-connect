@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 383,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\onednn_graph_fuser.h",
+  "name": "onednn_graph_fuser.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1512,
+  "content_sha256": "23f1e932f331c86f200eee2da312d291aea0fbeb7253169a6a3a584c2cc6096c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 52,
+    "char_count": 1512,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "#include <torch/csrc/jit/passes/pass_manager.h>",
+      "#include <ATen/Config.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "namespace fuser {",
+      "namespace onednn {",
+      "static std::atomic<bool> onednn_enabled{true};",
+      "static std::atomic<bool>& getLlgaEnabled() {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_383_23f1e932f331c86f_onednn_graph_fuser.h.json"
+}

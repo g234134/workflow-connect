@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 149,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\benchmark\\examples\\fuzzer.py",
+  "name": "fuzzer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2708,
+  "content_sha256": "288e38a0e78cf8f2211364a0ff4003b9b0fc8681f1c22d370c87976ce3a92090",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 85,
+    "non_empty_lines": 70,
+    "char_count": 2708,
+    "preview_lines": [
+      "\"\"\"Example of the Timer and Fuzzer APIs:",
+      "$ python -m examples.fuzzer",
+      "\"\"\"",
+      "import sys",
+      "import torch.utils.benchmark as benchmark_utils",
+      "def main():",
+      "    add_fuzzer = benchmark_utils.Fuzzer(",
+      "        parameters=[",
+      "            [",
+      "                benchmark_utils.FuzzedParameter("
+    ],
+    "imports": [
+      "import sys",
+      "import torch.utils.benchmark as benchmark_utils"
+    ],
+    "classes": [],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_149_288e38a0e78cf8f2_fuzzer.py.json"
+}

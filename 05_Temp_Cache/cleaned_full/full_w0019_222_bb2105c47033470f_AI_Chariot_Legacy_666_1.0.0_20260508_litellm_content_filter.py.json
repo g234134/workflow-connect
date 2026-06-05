@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_litellm_content_filter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_litellm_content_filter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3720,
+  "content_sha256": "bb2105c47033470fc7348395c4bae1d19ea3dbe58cbaf220144a0176cdc553ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 118,
+    "non_empty_lines": 96,
+    "char_count": 3720,
+    "preview_lines": [
+      "from enum import Enum",
+      "from typing import List, Literal, Optional, TypedDict, Union",
+      "from pydantic import Field",
+      "from litellm.types.llms.base import BaseLiteLLMOpenAIResponseObject",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.base import GuardrailConfigModel",
+      "# Detection type enum",
+      "class DetectionType(str, Enum):",
+      "    PATTERN = \"pattern\"",
+      "    BLOCKED_WORD = \"blocked_word\"",
+      "    CATEGORY_KEYWORD = \"category_keyword\""
+    ],
+    "imports": [
+      "from enum import Enum",
+      "from typing import List, Literal, Optional, TypedDict, Union",
+      "from pydantic import Field",
+      "from litellm.types.llms.base import BaseLiteLLMOpenAIResponseObject",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.base import GuardrailConfigModel"
+    ],
+    "classes": [
+      "DetectionType",
+      "PatternDetection",
+      "BlockedWordDetection",
+      "CategoryKeywordDetection",
+      "ContentFilterCategoryConfig",
+      "LitellmContentFilterGuardrailConfigModel"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_222_bb2105c47033470f_AI_Chariot_Legacy_666_1.0.0_20260508_litellm_content_filter.py.json"
+}

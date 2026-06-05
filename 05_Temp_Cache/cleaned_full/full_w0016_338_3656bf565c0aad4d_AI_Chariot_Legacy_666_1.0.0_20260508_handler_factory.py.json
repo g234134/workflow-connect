@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_handler_factory.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_handler_factory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14255,
+  "content_sha256": "3656bf565c0aad4de061e30626a9adde66968bec09ae428b13d5a7c3779895b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 405,
+    "non_empty_lines": 355,
+    "char_count": 14255,
+    "preview_lines": [
+      "\"\"\"",
+      "Factory for generating container proxy endpoints from JSON config.",
+      "This module reads the endpoints.json config and dynamically creates",
+      "FastAPI route handlers for ALL container file endpoints.",
+      "\"\"\"",
+      "import json",
+      "from pathlib import Path",
+      "from typing import Any, Dict, List",
+      "from fastapi import APIRouter, Depends, Request, Response",
+      "from fastapi.responses import ORJSONResponse"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "from typing import Any, Dict, List",
+      "from fastapi import APIRouter, Depends, Request, Response",
+      "from fastapi.responses import ORJSONResponse",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.common_request_processing import ProxyBaseLLMRequestProcessing",
+      "from litellm.proxy.common_utils.openai_endpoint_utils import (",
+      "from litellm.llms.openai.containers.transformation import OpenAIContainerConfig",
+      "from litellm.litellm_core_utils.litellm_logging import Logging",
+      "from litellm.llms.custom_httpx.llm_http_handler import BaseLLMHTTPHandler",
+      "from litellm.types.router import GenericLiteLLMParams"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_endpoints_config",
+      "get_all_route_types",
+      "_get_container_provider_config",
+      "_create_handler_for_path_params",
+      "register_container_file_endpoints"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_338_3656bf565c0aad4d_AI_Chariot_Legacy_666_1.0.0_20260508_handler_factory.py.json"
+}

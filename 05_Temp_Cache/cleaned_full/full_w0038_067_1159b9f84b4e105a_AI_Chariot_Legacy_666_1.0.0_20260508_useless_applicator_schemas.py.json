@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 67,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_useless_applicator_schemas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_useless_applicator_schemas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3342,
+  "content_sha256": "1159b9f84b4e105a0b3ff56dda3e12ac2c25c74e4d84fa8db9943a2c830fd437",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 106,
+    "non_empty_lines": 93,
+    "char_count": 3342,
+    "preview_lines": [
+      "\"\"\"",
+      "A benchmark for validation of applicators containing lots of useless schemas.",
+      "Signals a small possible optimization to remove all such schemas ahead of time.",
+      "\"\"\"",
+      "from pyperf import Runner",
+      "from jsonschema import Draft202012Validator as Validator",
+      "NUM_USELESS = 100000",
+      "subschema = {\"const\": 37}",
+      "valid = 37",
+      "invalid = 12"
+    ],
+    "imports": [
+      "from pyperf import Runner",
+      "from jsonschema import Draft202012Validator as Validator"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_067_1159b9f84b4e105a_AI_Chariot_Legacy_666_1.0.0_20260508_useless_applicator_schemas.py.json"
+}

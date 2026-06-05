@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\rings.py",
+  "name": "rings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 86080,
+  "content_sha256": "295740dc2d381b61f760df35accfbc391b141ea9a4b48af3d12d2d7f02f03788",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 3096,
+    "non_empty_lines": 2447,
+    "char_count": 86080,
+    "preview_lines": [
+      "\"\"\"Sparse polynomial rings. \"\"\"",
+      "from __future__ import annotations",
+      "from operator import add, mul, lt, le, gt, ge",
+      "from functools import reduce",
+      "from types import GeneratorType",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.expr import Expr",
+      "from sympy.core.intfunc import igcd",
+      "from sympy.core.symbol import Symbol, symbols as _symbols",
+      "from sympy.core.sympify import CantSympify, sympify"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from operator import add, mul, lt, le, gt, ge",
+      "from functools import reduce",
+      "from types import GeneratorType",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.expr import Expr",
+      "from sympy.core.intfunc import igcd",
+      "from sympy.core.symbol import Symbol, symbols as _symbols",
+      "from sympy.core.sympify import CantSympify, sympify",
+      "from sympy.ntheory.multinomial import multinomial_coefficients",
+      "from sympy.polys.compatibility import IPolys",
+      "from sympy.polys.constructor import construct_domain",
+      "from sympy.polys.densebasic import ninf, dmp_to_dict, dmp_from_dict",
+      "from sympy.polys.domains.domain import Domain",
+      "from sympy.polys.domains.domainelement import DomainElement",
+      "from sympy.polys.domains.polynomialring import PolynomialRing",
+      "from sympy.polys.heuristicgcd import heugcd",
+      "from sympy.polys.monomials import MonomialOps",
+      "from sympy.polys.orderings import lex, MonomialOrder",
+      "from sympy.polys.polyerrors import ("
+    ],
+    "classes": [
+      "PolyRing",
+      "PolyElement"
+    ],
+    "functions": [
+      "ring",
+      "xring",
+      "vring",
+      "sring",
+      "_parse_symbols"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_117_295740dc2d381b61_rings.py.json"
+}

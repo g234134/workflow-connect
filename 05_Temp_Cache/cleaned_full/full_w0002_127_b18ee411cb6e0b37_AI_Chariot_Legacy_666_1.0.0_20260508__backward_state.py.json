@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__backward_state.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__backward_state.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 994,
+  "content_sha256": "b18ee411cb6e0b3755649502ae19028020a4eb5f977a9198b919a636fe8d5bda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 21,
+    "char_count": 994,
+    "preview_lines": [
+      "import torch.fx",
+      "class BackwardState:",
+      "    \"\"\"",
+      "    BackwardState is used to pass Python hooks from the forwards pass",
+      "    into the backwards pass in Dynamo+Compiled Autograd.",
+      "    It is created by TorchDynamo and has special handling there.",
+      "    Dynamo will pass an empty BackwardState to the forwards, then populate",
+      "    members on it (via setattr) only after the forwards graph is finished.",
+      "    Later on, in CompileAutograd we will inline and add the needed guards",
+      "    on the BackwardState."
+    ],
+    "imports": [
+      "import torch.fx"
+    ],
+    "classes": [
+      "BackwardState"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_127_b18ee411cb6e0b37_AI_Chariot_Legacy_666_1.0.0_20260508__backward_state.py.json"
+}

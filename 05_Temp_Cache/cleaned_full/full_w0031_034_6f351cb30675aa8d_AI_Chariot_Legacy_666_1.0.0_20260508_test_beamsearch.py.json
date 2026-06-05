@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_beamsearch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_beamsearch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 900,
+  "content_sha256": "6f351cb30675aa8d1e70365848447fe1e9dbb16e928d3a5bff735bddfaa6900a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 900,
+    "preview_lines": [
+      "\"\"\"Unit tests for the beam search functions.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "def test_narrow():",
+      "    \"\"\"Tests that a narrow beam width may cause an incomplete search.\"\"\"",
+      "    # In this search, we enqueue only the neighbor 3 at the first",
+      "    # step, then only the neighbor 2 at the second step. Once at",
+      "    # node 2, the search chooses node 3, since it has a higher value",
+      "    # than node 1, but node 3 has already been visited, so the",
+      "    # search terminates."
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_narrow",
+      "test_wide"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_034_6f351cb30675aa8d_AI_Chariot_Legacy_666_1.0.0_20260508_test_beamsearch.py.json"
+}

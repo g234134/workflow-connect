@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\language_models\\chat_models\\test_benchmark.py",
+  "name": "test_benchmark.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 486,
+  "content_sha256": "47c3e752d73df766cb39bda8b52450deaae89125268661ef2ec522fa26113a9c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 483,
+    "preview_lines": [
+      "import time",
+      "from itertools import cycle",
+      "from langchain_core.language_models import GenericFakeChatModel",
+      "def test_benchmark_model() -> None:",
+      "    \"\"\"Add rate limiter.\"\"\"",
+      "    tic = time.time()",
+      "    model = GenericFakeChatModel(",
+      "        messages=cycle([\"hello\", \"world\", \"!\"]),",
+      "    )",
+      "    for _ in range(1_000):"
+    ],
+    "imports": [
+      "import time",
+      "from itertools import cycle",
+      "from langchain_core.language_models import GenericFakeChatModel"
+    ],
+    "classes": [],
+    "functions": [
+      "test_benchmark_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_235_47c3e752d73df766_test_benchmark.py.json"
+}

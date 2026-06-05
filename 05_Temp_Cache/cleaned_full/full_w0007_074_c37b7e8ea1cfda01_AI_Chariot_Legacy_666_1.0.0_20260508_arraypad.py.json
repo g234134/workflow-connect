@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_arraypad.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_arraypad.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32685,
+  "content_sha256": "c37b7e8ea1cfda01322ab9a16ba2264114dc6e1de96ca3a9acdabb0671cd2dc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 882,
+    "non_empty_lines": 734,
+    "char_count": 32685,
+    "preview_lines": [
+      "\"\"\"",
+      "The arraypad module contains a group of functions to pad values onto the edges",
+      "of an n-dimensional array.",
+      "\"\"\"",
+      "import numpy as np",
+      "from numpy.core.overrides import array_function_dispatch",
+      "from numpy.lib.index_tricks import ndindex",
+      "__all__ = ['pad']",
+      "###############################################################################",
+      "# Private utility functions."
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.core.overrides import array_function_dispatch",
+      "from numpy.lib.index_tricks import ndindex"
+    ],
+    "classes": [],
+    "functions": [
+      "_round_if_needed",
+      "_slice_at_axis",
+      "_view_roi",
+      "_pad_simple",
+      "_set_pad_area",
+      "_get_edges",
+      "_get_linear_ramps",
+      "_get_stats",
+      "_set_reflect_both",
+      "_set_wrap_both",
+      "_as_pairs",
+      "_pad_dispatcher",
+      "pad"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_074_c37b7e8ea1cfda01_AI_Chariot_Legacy_666_1.0.0_20260508_arraypad.py.json"
+}

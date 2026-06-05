@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 182,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder_decoder_init.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder_decoder_init.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16833,
+  "content_sha256": "026a5873097da6dfdddd4062d3718e29bccb7e245e57edacbc78fb578e6909f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 372,
+    "non_empty_lines": 325,
+    "char_count": 16833,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.  See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "import os",
+      "import tempfile",
+      "from itertools import chain",
+      "from pathlib import Path"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "import tempfile",
+      "from itertools import chain",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import onnx",
+      "import torch",
+      "from float16 import convert_float_to_float16",
+      "from onnx import ModelProto, ValueInfoProto",
+      "from onnx_model import OnnxModel",
+      "from transformers import WhisperConfig",
+      "from whisper_decoder import WhisperDecoder",
+      "from whisper_encoder import WhisperEncoder",
+      "from whisper_inputs import (",
+      "from onnxruntime import InferenceSession"
+    ],
+    "classes": [
+      "WhisperEncoderDecoderInit"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_182_026a5873097da6df_AI_Chariot_Legacy_666_1.0.0_20260508_whisper_encoder_decoder_init.py.json"
+}

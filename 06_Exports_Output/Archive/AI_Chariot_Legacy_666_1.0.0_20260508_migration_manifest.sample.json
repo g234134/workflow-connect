@@ -1,0 +1,45 @@
+{
+  "$comment": "複製為 migration_manifest.json 後依實際舊路徑修改。relativeTarget 為 DeployRoot 底下的相對路徑。",
+  "deployRoot": "D:\\大唐三省六部",
+  "items": [
+    {
+      "pattern": "**/.venv",
+      "relativeTarget": "01_Environments/python_venvs",
+      "note": "若有多個 venv，建議各自改名為專案資料夾再放入"
+    },
+    {
+      "pattern": "**/venv",
+      "relativeTarget": "01_Environments/python_venvs"
+    },
+    {
+      "pattern": "**/*.py",
+      "relativeTarget": "02_Agents_Core",
+      "preserveRelativeStructure": true,
+      "excludeDirs": ["venv", ".venv", "__pycache__", ".git"]
+    },
+    {
+      "pattern": "**/requirements*.txt",
+      "relativeTarget": "02_Agents_Core"
+    },
+    {
+      "pattern": "**/*cleaned*.*",
+      "relativeTarget": "03_RAG_Database/cleaned"
+    },
+    {
+      "pattern": "**/*REG*.log",
+      "relativeTarget": "03_RAG_Database/reg_logs"
+    },
+    {
+      "pattern": "**/Master_Map.json",
+      "relativeTarget": "04_Workflows/maps"
+    },
+    {
+      "pattern": "**/raw/**",
+      "relativeTarget": "05_Temp_Cache/raw_inbound"
+    },
+    {
+      "pattern": "**/export/**",
+      "relativeTarget": "06_Exports_Output/final"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b2acafc815514942ab47ff963c67b987",
+  "generated_at": "2026-05-08T18:33:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lazy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lazy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4329,
+  "encoding": "utf-8-sig",
+  "sha256": "1e7286365915fb4168b35512e6282191da6b44769fbd9265045e3cea8ef33423",
+  "content_summary": {
+    "line_count": 141,
+    "non_empty_lines": 112,
+    "char_count": 4329,
+    "preview_lines": [
+      "\"\"\"",
+      "Tools for lazy loading widgets.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from textual.widget import Widget",
+      "class Lazy(Widget):",
+      "    \"\"\"Wraps a widget so that it is mounted *lazily*.",
+      "    Lazy widgets are mounted after the first refresh. This can be used to display some parts of",
+      "    the UI very quickly, followed by the lazy widgets. Technically, this won't make anything",
+      "    faster, but it reduces the time the user sees a blank screen and will make apps feel"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from textual.widget import Widget"
+    ],
+    "classes": [
+      "Lazy",
+      "Reveal"
+    ],
+    "functions": []
+  },
+  "clean_status": "ok",
+  "warnings": [],
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_sample\\sample_1e7286365915_AI_Chariot_Legacy_666_1.0.0_20260508_lazy.py.json"
+}

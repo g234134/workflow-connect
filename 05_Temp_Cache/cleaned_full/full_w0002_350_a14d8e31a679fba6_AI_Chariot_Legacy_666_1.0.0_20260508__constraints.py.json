@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__constraints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__constraints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23489,
+  "content_sha256": "a14d8e31a679fba6dd13ad7014967d531b3439de2b648a41e9a436f7931bca48",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 594,
+    "non_empty_lines": 494,
+    "char_count": 23489,
+    "preview_lines": [
+      "\"\"\"Constraints definition for minimize.\"\"\"",
+      "import numpy as np",
+      "from ._hessian_update_strategy import BFGS",
+      "from ._differentiable_functions import (",
+      "    VectorFunction, LinearVectorFunction, IdentityVectorFunction)",
+      "from ._optimize import OptimizeWarning",
+      "from warnings import warn, catch_warnings, simplefilter, filterwarnings",
+      "from scipy.sparse import issparse",
+      "def _arr_to_scalar(x):",
+      "    # If x is a numpy array, return x.item().  This will"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from ._hessian_update_strategy import BFGS",
+      "from ._differentiable_functions import (",
+      "from ._optimize import OptimizeWarning",
+      "from warnings import warn, catch_warnings, simplefilter, filterwarnings",
+      "from scipy.sparse import issparse"
+    ],
+    "classes": [
+      "NonlinearConstraint",
+      "LinearConstraint",
+      "Bounds",
+      "PreparedConstraint"
+    ],
+    "functions": [
+      "_arr_to_scalar",
+      "new_bounds_to_old",
+      "old_bound_to_new",
+      "strict_bounds",
+      "new_constraint_to_old",
+      "old_constraint_to_new"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_350_a14d8e31a679fba6_AI_Chariot_Legacy_666_1.0.0_20260508__constraints.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:45:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_phototour.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_phototour.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8271,
+  "content_sha256": "c8443f5f56c325003eef4235c7b3d3cbb17e9829fa52b5bbd2e6d4fb3dc053c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 234,
+    "non_empty_lines": 191,
+    "char_count": 8271,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, List, Optional, Tuple, Union",
+      "import numpy as np",
+      "import torch",
+      "from PIL import Image",
+      "from .utils import download_url",
+      "from .vision import VisionDataset",
+      "class PhotoTour(VisionDataset):",
+      "    \"\"\"`Multi-view Stereo Correspondence <http://matthewalunbrown.com/patchdata/patchdata.html>`_ Dataset."
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, List, Optional, Tuple, Union",
+      "import numpy as np",
+      "import torch",
+      "from PIL import Image",
+      "from .utils import download_url",
+      "from .vision import VisionDataset",
+      "import zipfile"
+    ],
+    "classes": [
+      "PhotoTour"
+    ],
+    "functions": [
+      "read_image_file",
+      "read_info_file",
+      "read_matches_files"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_096_c8443f5f56c32500_AI_Chariot_Legacy_666_1.0.0_20260508_phototour.py.json"
+}

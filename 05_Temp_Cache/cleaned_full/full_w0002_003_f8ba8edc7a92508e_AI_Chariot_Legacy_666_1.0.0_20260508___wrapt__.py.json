@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:44:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508___wrapt__.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508___wrapt__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1431,
+  "content_sha256": "f8ba8edc7a92508e839e16e813b08cbe7f833be2ff1357a1e8889c9ce9b9fbec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 33,
+    "char_count": 1431,
+    "preview_lines": [
+      "\"\"\"This module is used to switch between C and Python implementations of the",
+      "wrappers.",
+      "\"\"\"",
+      "import os",
+      "from .wrappers import BoundFunctionWrapper, CallableObjectProxy, FunctionWrapper",
+      "from .wrappers import ObjectProxy as BaseObjectProxy",
+      "from .wrappers import PartialCallableObjectProxy, _FunctionWrapperBase",
+      "# Try to use C extensions if not disabled.",
+      "_using_c_extension = False",
+      "_use_extensions = not os.environ.get(\"WRAPT_DISABLE_EXTENSIONS\")"
+    ],
+    "imports": [
+      "import os",
+      "from .wrappers import BoundFunctionWrapper, CallableObjectProxy, FunctionWrapper",
+      "from .wrappers import ObjectProxy as BaseObjectProxy",
+      "from .wrappers import PartialCallableObjectProxy, _FunctionWrapperBase",
+      "from ._wrappers import (  # type: ignore[no-redef,import-not-found]",
+      "from ._wrappers import ObjectProxy as BaseObjectProxy  # type: ignore[no-redef]",
+      "from ._wrappers import (  # type: ignore[no-redef,import-not-found]"
+    ],
+    "classes": [],
+    "functions": [
+      "partial"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_003_f8ba8edc7a92508e_AI_Chariot_Legacy_666_1.0.0_20260508___wrapt__.py.json"
+}

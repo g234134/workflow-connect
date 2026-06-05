@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 245,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__onnx_supported_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__onnx_supported_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3429,
+  "content_sha256": "e91cf75b9e6cac09948067ec8674ab2df3088cd2ed3eeac6040263bb4b392d5c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 81,
+    "char_count": 3429,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import inspect",
+      "from typing import Dict, List, Union",
+      "from torch import _C",
+      "from torch.onnx import _constants",
+      "from torch.onnx._internal import registration",
+      "class _TorchSchema:",
+      "    def __init__(self, schema: Union[_C.FunctionSchema, str]) -> None:",
+      "        if isinstance(schema, _C.FunctionSchema):",
+      "            self.name: str = schema.name"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Dict, List, Union",
+      "from torch import _C",
+      "from torch.onnx import _constants",
+      "from torch.onnx._internal import registration"
+    ],
+    "classes": [
+      "_TorchSchema"
+    ],
+    "functions": [
+      "_symbolic_argument_count",
+      "all_forward_schemas",
+      "all_symbolics_schemas"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_245_e91cf75b9e6cac09_AI_Chariot_Legacy_666_1.0.0_20260508__onnx_supported_ops.py.json"
+}

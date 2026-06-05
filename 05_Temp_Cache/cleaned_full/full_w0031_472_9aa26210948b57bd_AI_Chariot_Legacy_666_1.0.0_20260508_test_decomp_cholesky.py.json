@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cholesky.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cholesky.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10011,
+  "content_sha256": "9aa26210948b57bd989e823d1edd294fa66d24381a44c5b554f95c4c750f0edd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 268,
+    "non_empty_lines": 225,
+    "char_count": 10011,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_array_almost_equal",
+      "from pytest import raises as assert_raises",
+      "from numpy import array, transpose, dot, conjugate, zeros_like, empty",
+      "from numpy.random import random",
+      "from scipy.linalg import (cholesky, cholesky_banded, cho_solve_banded,",
+      "     cho_factor, cho_solve)",
+      "from scipy.linalg._testutils import assert_no_overwrite",
+      "class TestCholesky:"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_array_almost_equal",
+      "from pytest import raises as assert_raises",
+      "from numpy import array, transpose, dot, conjugate, zeros_like, empty",
+      "from numpy.random import random",
+      "from scipy.linalg import (cholesky, cholesky_banded, cho_solve_banded,",
+      "from scipy.linalg._testutils import assert_no_overwrite"
+    ],
+    "classes": [
+      "TestCholesky",
+      "TestCholeskyBanded",
+      "TestOverwrite",
+      "TestChoFactor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_472_9aa26210948b57bd_AI_Chariot_Legacy_666_1.0.0_20260508_test_decomp_cholesky.py.json"
+}

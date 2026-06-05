@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_auth_checks_organization.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_auth_checks_organization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6460,
+  "content_sha256": "2c35ce9e7f6043b0f8cdb84917a6a1e8ca3819cf71bf6e95b12a4f17e271913c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 163,
+    "non_empty_lines": 133,
+    "char_count": 6460,
+    "preview_lines": [
+      "\"\"\"",
+      "Auth Checks for Organizations",
+      "\"\"\"",
+      "from typing import Dict, List, Optional, Tuple",
+      "from fastapi import status",
+      "from litellm.proxy._types import *",
+      "def organization_role_based_access_check(",
+      "    request_body: dict,",
+      "    user_object: Optional[LiteLLM_UserTable],",
+      "    route: str,"
+    ],
+    "imports": [
+      "from typing import Dict, List, Optional, Tuple",
+      "from fastapi import status",
+      "from litellm.proxy._types import *"
+    ],
+    "classes": [],
+    "functions": [
+      "organization_role_based_access_check",
+      "get_user_organization_info",
+      "_user_is_org_admin"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_251_2c35ce9e7f6043b0_AI_Chariot_Legacy_666_1.0.0_20260508_auth_checks_organization.py.json"
+}

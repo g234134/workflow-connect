@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 42,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\debug\\op_coverage.py",
+  "name": "op_coverage.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3176,
+  "content_sha256": "e8887e6832596796a6505782d30bd3b7758a7637df59162207929a2b72382235",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 74,
+    "char_count": 3176,
+    "preview_lines": [
+      "from operator import itemgetter",
+      "from functorch.compile import make_boxed_func",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch._functorch.compilers import aot_module",
+      "from torch._inductor.decomposition import select_decomp_table",
+      "from torch.distributed._tensor import DTensor",
+      "inductor_decomps = select_decomp_table()",
+      "graphs = []",
+      "def fwd_bwd_compiler(fx_g, _):"
+    ],
+    "imports": [
+      "from operator import itemgetter",
+      "from functorch.compile import make_boxed_func",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch._functorch.compilers import aot_module",
+      "from torch._inductor.decomposition import select_decomp_table",
+      "from torch.distributed._tensor import DTensor",
+      "import csv",
+      "from tabulate import tabulate"
+    ],
+    "classes": [],
+    "functions": [
+      "fwd_bwd_compiler",
+      "get_inductor_decomp_graphs",
+      "print_op_coverage_summary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_042_e8887e6832596796_op_coverage.py.json"
+}

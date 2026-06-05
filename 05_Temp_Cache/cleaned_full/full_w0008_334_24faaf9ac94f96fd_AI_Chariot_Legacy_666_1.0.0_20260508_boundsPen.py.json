@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 334,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_boundsPen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_boundsPen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3227,
+  "content_sha256": "24faaf9ac94f96fda481d9a1823789a3e09361b968c719246890fcc154d5a678",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 78,
+    "char_count": 3227,
+    "preview_lines": [
+      "from fontTools.misc.arrayTools import updateBounds, pointInRect, unionRect",
+      "from fontTools.misc.bezierTools import calcCubicBounds, calcQuadraticBounds",
+      "from fontTools.pens.basePen import BasePen",
+      "__all__ = [\"BoundsPen\", \"ControlBoundsPen\"]",
+      "class ControlBoundsPen(BasePen):",
+      "    \"\"\"Pen to calculate the \"control bounds\" of a shape. This is the",
+      "    bounding box of all control points, so may be larger than the",
+      "    actual bounding box if there are curves that don't have points",
+      "    on their extremes.",
+      "    When the shape has been drawn, the bounds are available as the"
+    ],
+    "imports": [
+      "from fontTools.misc.arrayTools import updateBounds, pointInRect, unionRect",
+      "from fontTools.misc.bezierTools import calcCubicBounds, calcQuadraticBounds",
+      "from fontTools.pens.basePen import BasePen"
+    ],
+    "classes": [
+      "ControlBoundsPen",
+      "BoundsPen"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_334_24faaf9ac94f96fd_AI_Chariot_Legacy_666_1.0.0_20260508_boundsPen.py.json"
+}

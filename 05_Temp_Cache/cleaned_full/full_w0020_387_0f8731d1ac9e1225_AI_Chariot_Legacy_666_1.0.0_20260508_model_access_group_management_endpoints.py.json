@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:45:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_model_access_group_management_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_model_access_group_management_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21822,
+  "content_sha256": "0f8731d1ac9e12258de6af83ad997766b97c8c59540f6d97da901998cbb429b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 688,
+    "non_empty_lines": 559,
+    "char_count": 21822,
+    "preview_lines": [
+      "\"\"\"",
+      "Allow proxy admin to manage model access groups",
+      "Endpoints here:",
+      "- POST /model_group/new - Create a new access group with multiple model names",
+      "\"\"\"",
+      "import json",
+      "from typing import Any, Dict, List, Tuple",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import UserAPIKeyAuth"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Any, Dict, List, Tuple",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.management_endpoints.model_management_endpoints import (",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm.types.proxy.management_endpoints.model_management_endpoints import ("
+    ],
+    "classes": [],
+    "functions": [
+      "validate_models_exist",
+      "add_access_group_to_deployment",
+      "remove_access_group_from_deployment"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_387_0f8731d1ac9e1225_AI_Chariot_Legacy_666_1.0.0_20260508_model_access_group_management_endpoints.py.json"
+}

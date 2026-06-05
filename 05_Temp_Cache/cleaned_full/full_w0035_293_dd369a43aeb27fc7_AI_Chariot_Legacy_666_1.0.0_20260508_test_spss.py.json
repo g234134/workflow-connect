@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_spss.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_spss.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6448,
+  "content_sha256": "dd369a43aeb27fc719ceeaa2cd3984c7005700803a45037dd2a802ac0b91e0e8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 131,
+    "char_count": 6444,
+    "preview_lines": [
+      "import datetime",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "pyreadstat = pytest.importorskip(\"pyreadstat\")",
+      "# TODO(CoW) - detection of chained assignment in cython",
+      "# https://github.com/pandas-dev/pandas/issues/51315",
+      "@pytest.mark.filterwarnings(\"ignore::pandas.errors.ChainedAssignmentError\")"
+    ],
+    "imports": [
+      "import datetime",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "from pandas.arrays import ArrowExtensionArray"
+    ],
+    "classes": [],
+    "functions": [
+      "test_spss_labelled_num",
+      "test_spss_labelled_num_na",
+      "test_spss_labelled_str",
+      "test_spss_kwargs",
+      "test_spss_umlauts",
+      "test_spss_usecols",
+      "test_spss_umlauts_dtype_backend",
+      "test_invalid_dtype_backend",
+      "test_spss_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_293_dd369a43aeb27fc7_AI_Chariot_Legacy_666_1.0.0_20260508_test_spss.py.json"
+}

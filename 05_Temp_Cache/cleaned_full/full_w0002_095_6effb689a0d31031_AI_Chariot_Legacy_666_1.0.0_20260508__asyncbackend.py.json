@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 95,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__asyncbackend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__asyncbackend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2403,
+  "content_sha256": "6effb689a0d31031f812cc76b5cd867950a76aa1edb10a9bdd65aaa186678330",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 68,
+    "char_count": 2403,
+    "preview_lines": [
+      "# Copyright (C) Dnspython Contributors, see LICENSE for text of ISC license",
+      "# This is a nullcontext for both sync and async.  3.7 has a nullcontext,",
+      "# but it is only for sync use.",
+      "class NullContext:",
+      "    def __init__(self, enter_result=None):",
+      "        self.enter_result = enter_result",
+      "    def __enter__(self):",
+      "        return self.enter_result",
+      "    def __exit__(self, exc_type, exc_value, traceback):",
+      "        pass"
+    ],
+    "imports": [],
+    "classes": [
+      "NullContext",
+      "Socket",
+      "DatagramSocket",
+      "StreamSocket",
+      "NullTransport",
+      "Backend"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_095_6effb689a0d31031_AI_Chariot_Legacy_666_1.0.0_20260508__asyncbackend.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 325,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__svmlight_format_io.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__svmlight_format_io.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21483,
+  "content_sha256": "e4920587e4b1c2a7e1193134094fad33b8fa9eaefb53a52163e2561e3da43676",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 590,
+    "non_empty_lines": 498,
+    "char_count": 21483,
+    "preview_lines": [
+      "\"\"\"This module implements a loader and dumper for the svmlight format",
+      "This format is a text-based format, with one sample per line. It does",
+      "not store zero valued features hence is suitable for sparse dataset.",
+      "The first element of each line can be used to store a target variable to",
+      "predict.",
+      "This format is used as the default format for both svmlight and the",
+      "libsvm command line programs.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause"
+    ],
+    "imports": [
+      "import os.path",
+      "from contextlib import closing",
+      "from numbers import Integral",
+      "import numpy as np",
+      "import scipy.sparse as sp",
+      "from sklearn import __version__",
+      "from sklearn.datasets._svmlight_format_fast import (",
+      "from sklearn.utils import check_array",
+      "from sklearn.utils._param_validation import (",
+      "from joblib import Memory",
+      "from sklearn.datasets import load_svmlight_file"
+    ],
+    "classes": [],
+    "functions": [
+      "load_svmlight_file",
+      "_gen_open",
+      "_open_and_load",
+      "load_svmlight_files",
+      "_dump_svmlight",
+      "dump_svmlight_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_325_e4920587e4b1c2a7_AI_Chariot_Legacy_666_1.0.0_20260508__svmlight_format_io.py.json"
+}

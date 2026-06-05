@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\tracers\\event_stream.py",
+  "name": "event_stream.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 36916,
+  "content_sha256": "4227e6afb86afad88e2ead09671ff4fcf960914a9d1ffd34cc5627711ff2af44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1100,
+    "non_empty_lines": 976,
+    "char_count": 36913,
+    "preview_lines": [
+      "\"\"\"Internal tracer to power the event stream API.\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextlib",
+      "import logging",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    TypedDict,",
+      "    TypeVar,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import contextlib",
+      "import logging",
+      "from typing import (",
+      "from typing_extensions import NotRequired, override",
+      "from langchain_core.callbacks.base import AsyncCallbackHandler, BaseCallbackManager",
+      "from langchain_core.messages import AIMessageChunk, BaseMessage, BaseMessageChunk",
+      "from langchain_core.outputs import (",
+      "from langchain_core.runnables import ensure_config",
+      "from langchain_core.runnables.schema import (",
+      "from langchain_core.runnables.utils import (",
+      "from langchain_core.tracers._streaming import _StreamingCallbackHandler",
+      "from langchain_core.tracers.log_stream import (",
+      "from langchain_core.tracers.memory_stream import _MemoryStream",
+      "from langchain_core.utils.aiter import aclosing",
+      "from langchain_core.utils.uuid import uuid7",
+      "from collections.abc import AsyncIterator, Iterator, Sequence",
+      "from uuid import UUID",
+      "from langchain_core.documents import Document"
+    ],
+    "classes": [
+      "RunInfo",
+      "_AstreamEventsCallbackHandler"
+    ],
+    "functions": [
+      "_assign_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_142_4227e6afb86afad8_event_stream.py.json"
+}

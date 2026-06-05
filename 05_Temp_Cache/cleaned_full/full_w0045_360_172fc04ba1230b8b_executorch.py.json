@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 360,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\backend_config\\executorch.py",
+  "name": "executorch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17447,
+  "content_sha256": "172fc04ba1230b8b9de3d0c5ab9e719bcb429a76232430dd6b4b8bbde47a05a0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 494,
+    "non_empty_lines": 451,
+    "char_count": 17447,
+    "preview_lines": [
+      "# TODO: rename executorch to qnnpack_executorch since executorch is a general runtime",
+      "# not a specific backend",
+      "import operator",
+      "from typing import List",
+      "import torch",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.ao.nn.quantized.reference as nnqr",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from ..fuser_method_mappings import ("
+    ],
+    "imports": [
+      "import operator",
+      "from typing import List",
+      "import torch",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.ao.nn.quantized.reference as nnqr",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from ..fuser_method_mappings import (",
+      "from ._common_operator_config_utils import _Conv2dMetadata",
+      "from .backend_config import (",
+      "from .qnnpack import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_get_linear_configs",
+      "_get_conv_configs",
+      "_get_binary_ops_configs",
+      "_get_share_qparams_ops_configs",
+      "_get_bn_configs",
+      "_get_cat_configs",
+      "_get_embedding_op_configs",
+      "get_executorch_backend_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_360_172fc04ba1230b8b_executorch.py.json"
+}

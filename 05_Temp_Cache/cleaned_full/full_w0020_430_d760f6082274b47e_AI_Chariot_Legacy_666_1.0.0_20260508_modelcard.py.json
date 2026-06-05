@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:45:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modelcard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modelcard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22230,
+  "content_sha256": "d760f6082274b47ea44fd1604f6c87c31c265d9e1538e4910f75f9f7654367ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 586,
+    "non_empty_lines": 492,
+    "char_count": 22230,
+    "preview_lines": [
+      "# Copyright 2018 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import os",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import httpx",
+      "import yaml",
+      "from huggingface_hub import is_offline_mode, model_info",
+      "from huggingface_hub.errors import OfflineModeIsEnabled",
+      "from huggingface_hub.utils import HFValidationError",
+      "from . import __version__",
+      "from .models.auto.modeling_auto import (",
+      "from .training_args import ParallelMode",
+      "from .utils import (",
+      "from datasets import Dataset, IterableDataset"
+    ],
+    "classes": [
+      "TrainingSummary"
+    ],
+    "functions": [
+      "_listify",
+      "_insert_values_as_list",
+      "infer_metric_tags_from_eval_results",
+      "_insert_value",
+      "is_hf_dataset",
+      "_get_mapping_values",
+      "parse_log_history",
+      "_maybe_round",
+      "_regular_table_line",
+      "_second_table_line",
+      "make_markdown_table",
+      "extract_hyperparameters_from_trainer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_430_d760f6082274b47e_AI_Chariot_Legacy_666_1.0.0_20260508_modelcard.py.json"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 177,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\integration_tests\\llms\\test_azure.py",
+  "name": "test_azure.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6033,
+  "content_sha256": "bc46fa0659dcf5b9346b461ae1bf53d9b3058c70310b83fb4beb46bb289771df",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 185,
+    "non_empty_lines": 142,
+    "char_count": 6030,
+    "preview_lines": [
+      "\"\"\"Test AzureOpenAI wrapper.\"\"\"",
+      "import os",
+      "from collections.abc import Generator",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.outputs import LLMResult",
+      "from langchain_openai import AzureOpenAI",
+      "from tests.unit_tests.fake.callbacks import FakeCallbackHandler",
+      "OPENAI_API_VERSION = os.environ.get(\"AZURE_OPENAI_API_VERSION\", \"\")"
+    ],
+    "imports": [
+      "import os",
+      "from collections.abc import Generator",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.outputs import LLMResult",
+      "from langchain_openai import AzureOpenAI",
+      "from tests.unit_tests.fake.callbacks import FakeCallbackHandler"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_llm",
+      "llm",
+      "test_openai_call",
+      "test_openai_streaming",
+      "test_openai_batch",
+      "test_openai_invoke",
+      "test_openai_multiple_prompts",
+      "test_openai_streaming_best_of_error",
+      "test_openai_streaming_n_error",
+      "test_openai_streaming_multiple_prompts_error",
+      "test_openai_streaming_call",
+      "test_openai_streaming_callback"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_177_bc46fa0659dcf5b9_test_azure.py.json"
+}

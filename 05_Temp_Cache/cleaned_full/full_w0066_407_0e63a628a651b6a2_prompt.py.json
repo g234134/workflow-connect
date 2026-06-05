@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\agent_toolkits\\vectorstore\\prompt.py",
+  "name": "prompt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 860,
+  "content_sha256": "0e63a628a651b6a2bda1cc299ebb0c16d81b293e29493fbe53506624ad2a037d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 11,
+    "non_empty_lines": 10,
+    "char_count": 857,
+    "preview_lines": [
+      "PREFIX = \"\"\"You are an agent designed to answer questions about sets of documents.",
+      "You have access to tools for interacting with the documents, and the inputs to the tools are questions.",
+      "Sometimes, you will be asked to provide sources for your questions, in which case you should use the appropriate tool to do so.",
+      "If the question does not seem relevant to any of the tools provided, just return \"I don't know\" as the answer.",
+      "\"\"\"  # noqa: E501",
+      "ROUTER_PREFIX = \"\"\"You are an agent designed to answer questions.",
+      "You have access to tools for interacting with different sources, and the inputs to the tools are questions.",
+      "Your main task is to decide which of the tools is relevant for answering question at hand.",
+      "For complex questions, you can break the question down into sub questions and use tools to answers the sub questions.",
+      "\"\"\"  # noqa: E501"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_407_0e63a628a651b6a2_prompt.py.json"
+}

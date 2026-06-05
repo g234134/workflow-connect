@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 426,
+  "generated_at": "2026-05-08T18:46:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rte_classify.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rte_classify.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6118,
+  "content_sha256": "461dc316a528a95d10aac53e10463e3783c4af08028eea6e584aad7367e38735",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 153,
+    "char_count": 6118,
+    "preview_lines": [
+      "# Natural Language Toolkit: RTE Classifier",
+      "#",
+      "# Copyright (C) 2001-2026 NLTK Project",
+      "# Author: Ewan Klein <ewan@inf.ed.ac.uk>",
+      "# URL: <https://www.nltk.org/>",
+      "# For license information, see LICENSE.TXT",
+      "\"\"\"",
+      "Simple classifier for RTE corpus.",
+      "It calculates the overlap in words and named entities between text and",
+      "hypothesis, and also whether there are words / named entities in the"
+    ],
+    "imports": [
+      "from nltk.classify.maxent import MaxentClassifier",
+      "from nltk.classify.util import accuracy",
+      "from nltk.tokenize import RegexpTokenizer",
+      "from nltk.corpus import wordnet as wn",
+      "from nltk.corpus import rte as rte_corpus"
+    ],
+    "classes": [
+      "RTEFeatureExtractor"
+    ],
+    "functions": [
+      "rte_features",
+      "rte_featurize",
+      "rte_classifier"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_426_461dc316a528a95d_AI_Chariot_Legacy_666_1.0.0_20260508_rte_classify.py.json"
+}

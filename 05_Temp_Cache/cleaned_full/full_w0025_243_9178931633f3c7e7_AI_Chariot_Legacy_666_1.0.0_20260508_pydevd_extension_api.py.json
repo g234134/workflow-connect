@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 243,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_extension_api.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_extension_api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4013,
+  "content_sha256": "9178931633f3c7e724dc1440b28f8f7d55f0996b28c236456a71dbde4f36ae5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 81,
+    "char_count": 4013,
+    "preview_lines": [
+      "import abc",
+      "from typing import Any",
+      "# borrowed from from six",
+      "def _with_metaclass(meta, *bases):",
+      "    \"\"\"Create a base class with a metaclass.\"\"\"",
+      "    class metaclass(meta):",
+      "        def __new__(cls, name, this_bases, d):",
+      "            return meta(name, bases, d)",
+      "    return type.__new__(metaclass, \"temporary_class\", (), {})",
+      "# ======================================================================================================================="
+    ],
+    "imports": [
+      "import abc",
+      "from typing import Any"
+    ],
+    "classes": [
+      "_AbstractResolver",
+      "_AbstractProvider",
+      "TypeResolveProvider",
+      "StrPresentationProvider",
+      "DebuggerEventHandler"
+    ],
+    "functions": [
+      "_with_metaclass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_243_9178931633f3c7e7_AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_extension_api.py.json"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 27,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__reloader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__reloader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15100,
+  "content_sha256": "229a4ede45ff1b1430695ea1f123d67b49524d2c3a91dfc7257a8b894851ec05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 465,
+    "non_empty_lines": 366,
+    "char_count": 15100,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import os",
+      "import subprocess",
+      "import sys",
+      "import threading",
+      "import time",
+      "import typing as t",
+      "from itertools import chain",
+      "from pathlib import PurePath"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import os",
+      "import subprocess",
+      "import sys",
+      "import threading",
+      "import time",
+      "import typing as t",
+      "from itertools import chain",
+      "from pathlib import PurePath",
+      "from ._internal import _log"
+    ],
+    "classes": [
+      "ReloaderLoop",
+      "StatReloaderLoop",
+      "WatchdogReloaderLoop"
+    ],
+    "functions": [
+      "_iter_module_paths",
+      "_remove_by_pattern",
+      "_find_stat_paths",
+      "_find_watchdog_paths",
+      "_find_common_roots",
+      "_get_args_for_reloading",
+      "ensure_echo_on",
+      "run_with_reloader"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_027_229a4ede45ff1b14_AI_Chariot_Legacy_666_1.0.0_20260508__reloader.py.json"
+}

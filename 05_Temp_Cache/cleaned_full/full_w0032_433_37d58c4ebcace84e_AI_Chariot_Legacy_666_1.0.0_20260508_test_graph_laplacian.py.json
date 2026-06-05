@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 433,
+  "generated_at": "2026-05-08T18:46:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_graph_laplacian.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_graph_laplacian.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11304,
+  "content_sha256": "37d58c4ebcace84e051e2b2eb95ce2bbea1f5bbc33808c65e2384ebb9748319b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 368,
+    "non_empty_lines": 321,
+    "char_count": 11304,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "from pytest import raises as assert_raises",
+      "from scipy import sparse",
+      "from scipy.sparse import csgraph",
+      "from scipy._lib._util import np_long, np_ulong",
+      "def check_int_type(mat):",
+      "    return np.issubdtype(mat.dtype, np.signedinteger) or np.issubdtype(",
+      "        mat.dtype, np_ulong"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "from pytest import raises as assert_raises",
+      "from scipy import sparse",
+      "from scipy.sparse import csgraph",
+      "from scipy._lib._util import np_long, np_ulong"
+    ],
+    "classes": [],
+    "functions": [
+      "check_int_type",
+      "test_laplacian_value_error",
+      "_explicit_laplacian",
+      "_check_symmetric_graph_laplacian",
+      "test_symmetric_graph_laplacian",
+      "_assert_allclose_sparse",
+      "_check_laplacian_dtype_none",
+      "_check_laplacian_dtype",
+      "test_asymmetric_laplacian",
+      "test_sparse_formats",
+      "test_laplacian_symmetrized",
+      "test_format",
+      "test_format_error_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_433_37d58c4ebcace84e_AI_Chariot_Legacy_666_1.0.0_20260508_test_graph_laplacian.py.json"
+}

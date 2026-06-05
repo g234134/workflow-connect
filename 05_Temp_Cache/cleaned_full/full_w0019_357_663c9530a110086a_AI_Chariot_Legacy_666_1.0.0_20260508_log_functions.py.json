@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_log_functions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_log_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1066,
+  "content_sha256": "663c9530a110086a621f547125edb1567a10b2dfb0586338e3da77a7d23c5a98",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 20,
+    "char_count": 1066,
+    "preview_lines": [
+      "\"\"\"Log functions for prometheus\"\"\"",
+      "from .metrics import HTTP_REQUEST_DURATION_SECONDS  # type:ignore[unused-ignore]",
+      "def prometheus_log_method(handler):",
+      "    \"\"\"",
+      "    Tornado log handler for recording RED metrics.",
+      "    We record the following metrics:",
+      "       Rate - the number of requests, per second, your services are serving.",
+      "       Errors - the number of failed requests per second.",
+      "       Duration - The amount of time each request takes expressed as a time interval.",
+      "    We use a fully qualified name of the handler as a label,"
+    ],
+    "imports": [
+      "from .metrics import HTTP_REQUEST_DURATION_SECONDS  # type:ignore[unused-ignore]"
+    ],
+    "classes": [],
+    "functions": [
+      "prometheus_log_method"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_357_663c9530a110086a_AI_Chariot_Legacy_666_1.0.0_20260508_log_functions.py.json"
+}

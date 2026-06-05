@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:47:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\geometry\\tests\\test_util.py",
+  "name": "test_util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7044,
+  "content_sha256": "b1b87542f9101b53aabc4fa4b787cd34890c5a73858b91296819a7652de9ccd7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 170,
+    "non_empty_lines": 150,
+    "char_count": 7044,
+    "preview_lines": [
+      "import pytest",
+      "from sympy.core.numbers import Float",
+      "from sympy.core.function import (Derivative, Function)",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.functions import exp, cos, sin, tan, cosh, sinh",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.geometry import Point, Point2D, Line, Polygon, Segment, convex_hull,\\",
+      "    intersection, centroid, Point3D, Line3D, Ray, Ellipse",
+      "from sympy.geometry.util import idiff, closest_points, farthest_points, _ordered_points, are_coplanar"
+    ],
+    "imports": [
+      "import pytest",
+      "from sympy.core.numbers import Float",
+      "from sympy.core.function import (Derivative, Function)",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.functions import exp, cos, sin, tan, cosh, sinh",
+      "from sympy.functions.elementary.miscellaneous import sqrt",
+      "from sympy.geometry import Point, Point2D, Line, Polygon, Segment, convex_hull,\\",
+      "from sympy.geometry.util import idiff, closest_points, farthest_points, _ordered_points, are_coplanar",
+      "from sympy.solvers.solvers import solve",
+      "from sympy.testing.pytest import raises",
+      "from sympy.core.random import randint",
+      "from sympy.utilities.iterables import subsets"
+    ],
+    "classes": [],
+    "functions": [
+      "test_idiff",
+      "test_intersection",
+      "test_convex_hull",
+      "test_centroid",
+      "test_farthest_points_closest_points",
+      "test_are_coplanar"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_298_b1b87542f9101b53_test_util.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 273,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testStorage.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testStorage.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3707,
+  "content_sha256": "acc7f703a48c3446677ee557f1628cc7f016469329f6c771d5cc2ed2d6836c59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 88,
+    "non_empty_lines": 79,
+    "char_count": 3707,
+    "preview_lines": [
+      "import unittest",
+      "import pythoncom",
+      "import win32api",
+      "import win32com.test.util",
+      "from win32com import storagecon",
+      "class TestEnum(win32com.test.util.TestCase):",
+      "    def testit(self):",
+      "        fname, tmp = win32api.GetTempFileName(win32api.GetTempPath(), \"stg\")",
+      "        m = storagecon.STGM_READWRITE | storagecon.STGM_SHARE_EXCLUSIVE",
+      "        ##  file, mode, format, attrs (always 0), IID (IStorage or IPropertySetStorage, storage options(only used with STGFMT_DOCFILE)"
+    ],
+    "imports": [
+      "import unittest",
+      "import pythoncom",
+      "import win32api",
+      "import win32com.test.util",
+      "from win32com import storagecon"
+    ],
+    "classes": [
+      "TestEnum"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_273_acc7f703a48c3446_AI_Chariot_Legacy_666_1.0.0_20260508_testStorage.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fetchers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fetchers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6954,
+  "content_sha256": "2630ac10ba1c6a5ba4926c0196781198ea6749f3c8197a76bd4f3e6d5dceb5c5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 181,
+    "char_count": 6954,
+    "preview_lines": [
+      "from numpy import array, frombuffer, load",
+      "from ._registry import registry, registry_urls",
+      "try:",
+      "    import pooch",
+      "except ImportError:",
+      "    pooch = None",
+      "    data_fetcher = None",
+      "else:",
+      "    data_fetcher = pooch.create(",
+      "        # Use the default cache folder for the operating system"
+    ],
+    "imports": [
+      "from numpy import array, frombuffer, load",
+      "from ._registry import registry, registry_urls",
+      "import pooch",
+      "import pickle"
+    ],
+    "classes": [],
+    "functions": [
+      "fetch_data",
+      "ascent",
+      "electrocardiogram",
+      "face"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_157_2630ac10ba1c6a5b_AI_Chariot_Legacy_666_1.0.0_20260508__fetchers.py.json"
+}

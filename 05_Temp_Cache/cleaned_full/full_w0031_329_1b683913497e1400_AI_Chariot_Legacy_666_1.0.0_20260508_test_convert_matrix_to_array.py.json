@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_matrix_to_array.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_matrix_to_array.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4595,
+  "content_sha256": "1b683913497e140070632428c1b28abcb70423c3558895da60b5b779411cbe3c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 98,
+    "char_count": 4595,
+    "preview_lines": [
+      "from sympy import Lambda, KroneckerProduct",
+      "from sympy.core.symbol import symbols, Dummy",
+      "from sympy.matrices.expressions.hadamard import (HadamardPower, HadamardProduct)",
+      "from sympy.matrices.expressions.inverse import Inverse",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol",
+      "from sympy.matrices.expressions.matpow import MatPow",
+      "from sympy.matrices.expressions.special import Identity",
+      "from sympy.matrices.expressions.trace import Trace",
+      "from sympy.matrices.expressions.transpose import Transpose",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct, ArrayContraction, \\"
+    ],
+    "imports": [
+      "from sympy import Lambda, KroneckerProduct",
+      "from sympy.core.symbol import symbols, Dummy",
+      "from sympy.matrices.expressions.hadamard import (HadamardPower, HadamardProduct)",
+      "from sympy.matrices.expressions.inverse import Inverse",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol",
+      "from sympy.matrices.expressions.matpow import MatPow",
+      "from sympy.matrices.expressions.special import Identity",
+      "from sympy.matrices.expressions.trace import Trace",
+      "from sympy.matrices.expressions.transpose import Transpose",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct, ArrayContraction, \\",
+      "from sympy.tensor.array.expressions.from_array_to_matrix import convert_array_to_matrix",
+      "from sympy.tensor.array.expressions.from_matrix_to_array import convert_matrix_to_array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_arrayexpr_convert_matrix_to_array"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_329_1b683913497e1400_AI_Chariot_Legacy_666_1.0.0_20260508_test_convert_matrix_to_array.py.json"
+}

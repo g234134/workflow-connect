@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fit.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fit.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 49964,
+  "content_sha256": "3a7ff2898d86a0354ca714037678b2c1df5dca7e5a30cd448ff107c727bb7f65",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1089,
+    "non_empty_lines": 934,
+    "char_count": 49964,
+    "preview_lines": [
+      "import os",
+      "import numpy as np",
+      "import numpy.testing as npt",
+      "from numpy.testing import assert_allclose, assert_equal",
+      "import pytest",
+      "from scipy import stats",
+      "from scipy.optimize import differential_evolution",
+      "from .test_continuous_basic import distcont",
+      "from scipy.stats._distn_infrastructure import FitError",
+      "from scipy.stats._distr_params import distdiscrete"
+    ],
+    "imports": [
+      "import os",
+      "import numpy as np",
+      "import numpy.testing as npt",
+      "from numpy.testing import assert_allclose, assert_equal",
+      "import pytest",
+      "from scipy import stats",
+      "from scipy.optimize import differential_evolution",
+      "from .test_continuous_basic import distcont",
+      "from scipy.stats._distn_infrastructure import FitError",
+      "from scipy.stats._distr_params import distdiscrete",
+      "from scipy.stats import goodness_of_fit"
+    ],
+    "classes": [
+      "TestFit",
+      "TestGoodnessOfFit",
+      "TestFitResult"
+    ],
+    "functions": [
+      "cases_test_cont_fit",
+      "test_cont_fit",
+      "_check_loc_scale_mle_fit",
+      "test_non_default_loc_scale_mle_fit",
+      "test_expon_fit",
+      "test_fit_error",
+      "test_nnlf_and_related_methods",
+      "cases_test_fit_mle",
+      "cases_test_fit_mse",
+      "cases_test_fitstart",
+      "test_fitstart",
+      "assert_nlff_less_or_close"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_285_3a7ff2898d86a035_AI_Chariot_Legacy_666_1.0.0_20260508_test_fit.py.json"
+}

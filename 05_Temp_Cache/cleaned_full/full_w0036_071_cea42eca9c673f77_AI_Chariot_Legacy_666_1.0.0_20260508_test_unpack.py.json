@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_unpack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_unpack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1890,
+  "content_sha256": "cea42eca9c673f77ffba683f23209165a9c989421b71b0db7b18e1b52f704784",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 70,
+    "non_empty_lines": 53,
+    "char_count": 1890,
+    "preview_lines": [
+      "from io import BytesIO",
+      "import sys",
+      "import pytest",
+      "from srsly.msgpack import Unpacker, packb, OutOfData, ExtType",
+      "def test_unpack_array_header_from_file():",
+      "    f = BytesIO(packb([1, 2, 3, 4]))",
+      "    unpacker = Unpacker(f)",
+      "    assert unpacker.read_array_header() == 4",
+      "    assert unpacker.unpack() == 1",
+      "    assert unpacker.unpack() == 2"
+    ],
+    "imports": [
+      "from io import BytesIO",
+      "import sys",
+      "import pytest",
+      "from srsly.msgpack import Unpacker, packb, OutOfData, ExtType"
+    ],
+    "classes": [],
+    "functions": [
+      "test_unpack_array_header_from_file",
+      "test_unpacker_hook_refcnt",
+      "test_unpacker_ext_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_071_cea42eca9c673f77_AI_Chariot_Legacy_666_1.0.0_20260508_test_unpack.py.json"
+}

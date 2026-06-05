@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 425,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\LegacyVmapMode.h",
+  "name": "LegacyVmapMode.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 953,
+  "content_sha256": "f0470b04bc4e9cf291541a9d1b5b8e6166b7ca2b686b370a705352596937de91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 19,
+    "char_count": 953,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/impl/LocalDispatchKeySet.h>",
+      "namespace at::impl {",
+      "// VmapMode contains a thread local count of how many nested vmaps",
+      "// we are currently inside. That number is known as the `vmap level`.",
+      "// VmapMode is used in the implementation of the Python `torch.vmap` API.",
+      "//",
+      "// NOTE: this is NOT the c++ api for torch.vmap. That doesn't exist yet.",
+      "struct TORCH_API VmapMode {",
+      "  // Returns the vmap level, aka the count of how many nested vmaps we're in."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_425_f0470b04bc4e9cf2_LegacyVmapMode.h.json"
+}

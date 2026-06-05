@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_raft.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_raft.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 40942,
+  "content_sha256": "a3dc09de3647f445b0265edf41879649d7973cc298399d19c26fa185c7aab959",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 947,
+    "non_empty_lines": 781,
+    "char_count": 40942,
+    "preview_lines": [
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch import Tensor",
+      "from torch.nn.modules.batchnorm import BatchNorm2d",
+      "from torch.nn.modules.instancenorm import InstanceNorm2d",
+      "from torchvision.ops import Conv2dNormActivation",
+      "from ...transforms._presets import OpticalFlow",
+      "from ...utils import _log_api_usage_once"
+    ],
+    "imports": [
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch import Tensor",
+      "from torch.nn.modules.batchnorm import BatchNorm2d",
+      "from torch.nn.modules.instancenorm import InstanceNorm2d",
+      "from torchvision.ops import Conv2dNormActivation",
+      "from ...transforms._presets import OpticalFlow",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._utils import handle_legacy_interface",
+      "from ._utils import grid_sample, make_coords_grid, upsample_flow"
+    ],
+    "classes": [
+      "ResidualBlock",
+      "BottleneckBlock",
+      "FeatureEncoder",
+      "MotionEncoder",
+      "ConvGRU",
+      "RecurrentBlock",
+      "FlowHead",
+      "UpdateBlock",
+      "MaskPredictor",
+      "CorrBlock",
+      "RAFT",
+      "Raft_Large_Weights",
+      "Raft_Small_Weights"
+    ],
+    "functions": [
+      "_pass_through_h",
+      "_raft",
+      "raft_large",
+      "raft_small"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_016_a3dc09de3647f445_AI_Chariot_Legacy_666_1.0.0_20260508_raft.py.json"
+}

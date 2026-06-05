@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\combinatorics\\perm_groups.py",
+  "name": "perm_groups.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 184825,
+  "content_sha256": "b1fd057f1989e6e582c25bf3443e66e471ddb86e6aa87ce1dd8d27d436b1e58a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 5459,
+    "non_empty_lines": 4525,
+    "char_count": 184825,
+    "preview_lines": [
+      "from math import factorial as _factorial, log, prod",
+      "from itertools import chain, product",
+      "from sympy.combinatorics import Permutation",
+      "from sympy.combinatorics.permutations import (_af_commutes_with, _af_invert,",
+      "    _af_rmul, _af_rmuln, _af_pow, Cycle)",
+      "from sympy.combinatorics.util import (_check_cycles_alt_sym,",
+      "    _distribute_gens_by_base, _orbits_transversals_from_bsgs,",
+      "    _handle_precomputed_bsgs, _base_ordering, _strong_gens_from_distr,",
+      "    _strip, _strip_af)",
+      "from sympy.core import Basic"
+    ],
+    "imports": [
+      "from math import factorial as _factorial, log, prod",
+      "from itertools import chain, product",
+      "from sympy.combinatorics import Permutation",
+      "from sympy.combinatorics.permutations import (_af_commutes_with, _af_invert,",
+      "from sympy.combinatorics.util import (_check_cycles_alt_sym,",
+      "from sympy.core import Basic",
+      "from sympy.core.random import _randrange, randrange, choice",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.core.sympify import _sympify",
+      "from sympy.functions.combinatorial.factorials import factorial",
+      "from sympy.ntheory import primefactors, sieve",
+      "from sympy.ntheory.factor_ import (factorint, multiplicity)",
+      "from sympy.ntheory.primetest import isprime",
+      "from sympy.utilities.iterables import has_variety, is_sequence, uniq"
+    ],
+    "classes": [
+      "PermutationGroup",
+      "SymmetricPermutationGroup",
+      "Coset"
+    ],
+    "functions": [
+      "_orbit",
+      "_orbits",
+      "_orbit_transversal",
+      "_stabilizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_159_b1fd057f1989e6e5_perm_groups.py.json"
+}

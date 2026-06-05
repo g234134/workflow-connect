@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 51,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tokentrim.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tokentrim.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6892,
+  "content_sha256": "2bada42a36f13dbb51b4ae46a4315ce996f5946c034a32bc3516cbc55477fd4e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 207,
+    "non_empty_lines": 161,
+    "char_count": 6892,
+    "preview_lines": [
+      "import tiktoken",
+      "from typing import List, Dict, Any, Tuple, Optional, Union",
+      "from .model_map import MODEL_MAX_TOKENS",
+      "from .format_function_calls import get_function_calls_token_count",
+      "MAX_ITERATIONS = 12",
+      "def get_encoding(model):",
+      "  # Attempt to get the encoding for the specified model",
+      "  if model == None:",
+      "    encoding = tiktoken.get_encoding(\"cl100k_base\")",
+      "  else:"
+    ],
+    "imports": [
+      "import tiktoken",
+      "from typing import List, Dict, Any, Tuple, Optional, Union",
+      "from .model_map import MODEL_MAX_TOKENS",
+      "from .format_function_calls import get_function_calls_token_count"
+    ],
+    "classes": [],
+    "functions": [
+      "get_encoding",
+      "num_tokens_from_messages",
+      "shorten_message_to_fit_limit",
+      "trim"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_051_2bada42a36f13dbb_AI_Chariot_Legacy_666_1.0.0_20260508_tokentrim.py.json"
+}

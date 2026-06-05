@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bdf.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bdf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17979,
+  "content_sha256": "8bf5c7d8296163176366eba76195f987b1dfa8b6cd41689bd9ea7cfcaaccdd0d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 478,
+    "non_empty_lines": 398,
+    "char_count": 17979,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy.linalg import lu_factor, lu_solve",
+      "from scipy.sparse import issparse, csc_matrix, eye",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize._numdiff import group_columns",
+      "from .common import (validate_max_step, validate_tol, select_initial_step,",
+      "                     norm, EPS, num_jac, validate_first_step,",
+      "                     warn_extraneous)",
+      "from .base import OdeSolver, DenseOutput",
+      "MAX_ORDER = 5"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.linalg import lu_factor, lu_solve",
+      "from scipy.sparse import issparse, csc_matrix, eye",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize._numdiff import group_columns",
+      "from .common import (validate_max_step, validate_tol, select_initial_step,",
+      "from .base import OdeSolver, DenseOutput"
+    ],
+    "classes": [
+      "BDF",
+      "BdfDenseOutput"
+    ],
+    "functions": [
+      "compute_R",
+      "change_D",
+      "solve_bdf_system"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_120_8bf5c7d829616317_AI_Chariot_Legacy_666_1.0.0_20260508_bdf.py.json"
+}

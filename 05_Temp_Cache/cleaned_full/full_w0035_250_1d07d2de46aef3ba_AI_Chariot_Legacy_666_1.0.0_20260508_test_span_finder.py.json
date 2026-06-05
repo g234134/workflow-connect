@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_span_finder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_span_finder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7669,
+  "content_sha256": "1d07d2de46aef3bae8826ce790dbc8a09c181f030e0d15631bab9278a6ef2c70",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 240,
+    "non_empty_lines": 209,
+    "char_count": 7669,
+    "preview_lines": [
+      "import pytest",
+      "from thinc.api import Config",
+      "from spacy import util",
+      "from spacy.lang.en import English",
+      "from spacy.language import Language",
+      "from spacy.pipeline.span_finder import span_finder_default_config",
+      "from spacy.tokens import Doc",
+      "from spacy.training import Example",
+      "from spacy.util import fix_random_seed, make_tempdir, registry",
+      "SPANS_KEY = \"pytest\""
+    ],
+    "imports": [
+      "import pytest",
+      "from thinc.api import Config",
+      "from spacy import util",
+      "from spacy.lang.en import English",
+      "from spacy.language import Language",
+      "from spacy.pipeline.span_finder import span_finder_default_config",
+      "from spacy.tokens import Doc",
+      "from spacy.training import Example",
+      "from spacy.util import fix_random_seed, make_tempdir, registry"
+    ],
+    "classes": [],
+    "functions": [
+      "make_examples",
+      "test_loss_alignment_example",
+      "test_span_finder_model",
+      "test_span_finder_component",
+      "test_set_annotations_span_lengths",
+      "test_overfitting_IO"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_250_1d07d2de46aef3ba_AI_Chariot_Legacy_666_1.0.0_20260508_test_span_finder.py.json"
+}

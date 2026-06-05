@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 475,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_horizontal_shard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_horizontal_shard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17170,
+  "content_sha256": "dea92e186397bae299c8a61eb44f210a7260d98fef9dbde0a286367a0541a7f5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 478,
+    "non_empty_lines": 394,
+    "char_count": 17170,
+    "preview_lines": [
+      "# ext/horizontal_shard.py",
+      "# Copyright (C) 2005-2026 the SQLAlchemy authors and contributors",
+      "# <see AUTHORS file>",
+      "#",
+      "# This module is part of SQLAlchemy and is released under",
+      "# the MIT License: https://www.opensource.org/licenses/mit-license.php",
+      "\"\"\"Horizontal sharding support.",
+      "Defines a rudimental 'horizontal sharding' system which allows a Session to",
+      "distribute queries and persistence operations across multiple databases.",
+      "For a usage example, see the :ref:`examples_sharding` example included in"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from typing import Callable",
+      "from typing import Dict",
+      "from typing import Iterable",
+      "from typing import Optional",
+      "from typing import Tuple",
+      "from typing import Type",
+      "from typing import TYPE_CHECKING",
+      "from typing import TypeVar",
+      "from typing import Union",
+      "from .. import event",
+      "from .. import exc",
+      "from .. import inspect",
+      "from .. import util",
+      "from ..orm import PassiveFlag",
+      "from ..orm._typing import OrmExecuteOptionsParameter",
+      "from ..orm.interfaces import ORMOption",
+      "from ..orm.mapper import Mapper",
+      "from ..orm.query import Query"
+    ],
+    "classes": [
+      "ShardChooser",
+      "IdentityChooser",
+      "ShardedQuery",
+      "ShardedSession",
+      "set_shard_id"
+    ],
+    "functions": [
+      "execute_and_instances"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_475_dea92e186397bae2_AI_Chariot_Legacy_666_1.0.0_20260508_horizontal_shard.py.json"
+}

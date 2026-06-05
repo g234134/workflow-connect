@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\deepseek\\tests\\unit_tests\\test_chat_models.py",
+  "name": "test_chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17900,
+  "content_sha256": "db8552281a228d5fc2f3cd8706fb40469980812c1006ca1b6ced28b4a2b7db5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 439,
+    "non_empty_lines": 369,
+    "char_count": 17897,
+    "preview_lines": [
+      "\"\"\"Test chat model integration.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any, Literal",
+      "from unittest.mock import MagicMock",
+      "from langchain_core.messages import AIMessageChunk, ToolMessage",
+      "from langchain_tests.unit_tests import ChatModelUnitTests",
+      "from openai import BaseModel",
+      "from openai.types.chat import ChatCompletionMessage",
+      "from pydantic import BaseModel as PydanticBaseModel",
+      "from pydantic import Field, SecretStr"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Literal",
+      "from unittest.mock import MagicMock",
+      "from langchain_core.messages import AIMessageChunk, ToolMessage",
+      "from langchain_tests.unit_tests import ChatModelUnitTests",
+      "from openai import BaseModel",
+      "from openai.types.chat import ChatCompletionMessage",
+      "from pydantic import BaseModel as PydanticBaseModel",
+      "from pydantic import Field, SecretStr",
+      "from langchain_deepseek.chat_models import DEFAULT_API_BASE, ChatDeepSeek"
+    ],
+    "classes": [
+      "MockOpenAIResponse",
+      "TestChatDeepSeekUnit",
+      "TestChatDeepSeekCustomUnit",
+      "SampleTool",
+      "TestChatDeepSeekStrictMode",
+      "TestChatDeepSeekAzureToolChoice"
+    ],
+    "functions": [
+      "test_profile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_026_db8552281a228d5f_test_chat_models.py.json"
+}

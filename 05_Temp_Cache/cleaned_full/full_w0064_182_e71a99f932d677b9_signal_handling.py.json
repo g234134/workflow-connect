@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 182,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\_utils\\signal_handling.py",
+  "name": "signal_handling.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3227,
+  "content_sha256": "e71a99f932d677b953062946da1fecbd92592565f76a0c8a50a42a66240cde12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 59,
+    "char_count": 3227,
+    "preview_lines": [
+      "r\"\"\"Signal handling for multiprocessing data loading.",
+      "NOTE [ Signal handling in multiprocessing data loading ]",
+      "In cases like DataLoader, if a worker process dies due to bus error/segfault",
+      "or just hang, the main process will hang waiting for data. This is difficult",
+      "to avoid on PyTorch side as it can be caused by limited shm, or other",
+      "libraries users call in the workers. In this file and `DataLoader.cpp`, we make",
+      "our best effort to provide some error message to users when such unfortunate",
+      "events happen.",
+      "When a _BaseDataLoaderIter starts worker processes, their pids are registered in a",
+      "defined in `DataLoader.cpp`: id(_BaseDataLoaderIter) => Collection[ Worker pids ]"
+    ],
+    "imports": [
+      "import signal",
+      "import threading",
+      "from . import IS_WINDOWS",
+      "from torch._C import _set_worker_pids, _remove_worker_pids  # noqa: F401",
+      "from torch._C import _error_if_any_worker_fails, _set_worker_signal_handlers  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "_set_SIGCHLD_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_182_e71a99f932d677b9_signal_handling.py.json"
+}

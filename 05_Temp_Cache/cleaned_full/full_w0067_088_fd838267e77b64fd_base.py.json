@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\llm_math\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11712,
+  "content_sha256": "fd838267e77b64fd8cb209fbed120afb1128269c35c810aab2e2056acd8bddaa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 315,
+    "non_empty_lines": 271,
+    "char_count": 11709,
+    "preview_lines": [
+      "\"\"\"Chain that interprets a prompt and executes python code to do math.\"\"\"",
+      "from __future__ import annotations",
+      "import math",
+      "import re",
+      "import warnings",
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForChainRun,",
+      "    CallbackManagerForChainRun,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "import re",
+      "import warnings",
+      "from typing import Any",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from pydantic import ConfigDict, model_validator",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.llm_math.prompt import PROMPT",
+      "import math",
+      "from typing import Annotated, Sequence",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.runnables import RunnableConfig",
+      "from langchain_core.tools import tool",
+      "from langchain_openai import ChatOpenAI",
+      "from langgraph.graph import END, StateGraph"
+    ],
+    "classes": [
+      "LLMMathChain"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_088_fd838267e77b64fd_base.py.json"
+}

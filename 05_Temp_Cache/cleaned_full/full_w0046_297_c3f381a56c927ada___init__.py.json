@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 297,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3899,
+  "content_sha256": "c3f381a56c927ada92969627f023676461894339592187e2ea1981aabdd19da9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 89,
+    "non_empty_lines": 76,
+    "char_count": 3899,
+    "preview_lines": [
+      "r'''",
+      "FX is a toolkit for developers to use to transform ``nn.Module``",
+      "instances. FX consists of three main components: a **symbolic tracer,**",
+      "an **intermediate representation**, and **Python code generation**. A",
+      "demonstration of these components in action:",
+      "::",
+      "    import torch",
+      "    # Simple module for demonstration",
+      "    class MyModule(torch.nn.Module):",
+      "        def __init__(self):"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.fx import symbolic_trace",
+      "from .graph_module import GraphModule",
+      "from ._symbolic_trace import symbolic_trace, Tracer, wrap, PH, ProxyableClassMeta",
+      "from .graph import Graph, CodeGen",
+      "from .node import Node, map_arg, has_side_effect",
+      "from .proxy import Proxy",
+      "from .interpreter import Interpreter as Interpreter, Transformer as Transformer",
+      "from .subgraph_rewriter import replace_pattern"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_297_c3f381a56c927ada___init__.py.json"
+}

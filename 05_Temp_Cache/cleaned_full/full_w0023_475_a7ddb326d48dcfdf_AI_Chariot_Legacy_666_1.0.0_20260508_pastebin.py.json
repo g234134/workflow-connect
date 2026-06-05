@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 475,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pastebin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pastebin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4155,
+  "content_sha256": "a7ddb326d48dcfdfb10c4173a90df37a662081745a0e7c43e97e08ca2b5ebdb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 98,
+    "char_count": 4155,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Submit failure or test session information to a pastebin service.\"\"\"",
+      "from __future__ import annotations",
+      "from io import StringIO",
+      "import tempfile",
+      "from typing import IO",
+      "from _pytest.config import Config",
+      "from _pytest.config import create_terminal_writer",
+      "from _pytest.config.argparsing import Parser",
+      "from _pytest.stash import StashKey"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from io import StringIO",
+      "import tempfile",
+      "from typing import IO",
+      "from _pytest.config import Config",
+      "from _pytest.config import create_terminal_writer",
+      "from _pytest.config.argparsing import Parser",
+      "from _pytest.stash import StashKey",
+      "from _pytest.terminal import TerminalReporter",
+      "import pytest",
+      "import re",
+      "from urllib.error import HTTPError",
+      "from urllib.parse import urlencode",
+      "from urllib.request import urlopen"
+    ],
+    "classes": [],
+    "functions": [
+      "pytest_addoption",
+      "pytest_configure",
+      "pytest_unconfigure",
+      "create_new_paste",
+      "pytest_terminal_summary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_475_a7ddb326d48dcfdf_AI_Chariot_Legacy_666_1.0.0_20260508_pastebin.py.json"
+}

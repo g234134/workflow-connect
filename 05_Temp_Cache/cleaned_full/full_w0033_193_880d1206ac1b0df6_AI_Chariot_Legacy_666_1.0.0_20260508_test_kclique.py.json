@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_kclique.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_kclique.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2413,
+  "content_sha256": "880d1206ac1b0df683daeeca33a71cb3a2df800418ff1c6b9d6d395084ffb450",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 75,
+    "char_count": 2413,
+    "preview_lines": [
+      "from itertools import combinations",
+      "import pytest",
+      "import networkx as nx",
+      "def test_overlapping_K5():",
+      "    G = nx.Graph()",
+      "    G.add_edges_from(combinations(range(5), 2))  # Add a five clique",
+      "    G.add_edges_from(combinations(range(2, 7), 2))  # Add another five clique",
+      "    c = list(nx.community.k_clique_communities(G, 4))",
+      "    assert c == [frozenset(range(7))]",
+      "    c = set(nx.community.k_clique_communities(G, 5))"
+    ],
+    "imports": [
+      "from itertools import combinations",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestZacharyKarateClub"
+    ],
+    "functions": [
+      "test_overlapping_K5",
+      "test_isolated_K5",
+      "test_bad_k"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_193_880d1206ac1b0df6_AI_Chariot_Legacy_666_1.0.0_20260508_test_kclique.py.json"
+}

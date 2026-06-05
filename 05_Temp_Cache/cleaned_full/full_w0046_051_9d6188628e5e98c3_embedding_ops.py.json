@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 51,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\ops\\embedding_ops.py",
+  "name": "embedding_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3834,
+  "content_sha256": "9d6188628e5e98c3329c7f7026e07f0f5b272c48f9fc5968ab9976d48fd8adba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 85,
+    "char_count": 3834,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "# implement matrix related ops for distributed tensor",
+      "import torch",
+      "from torch.distributed._tensor.op_schema import OpSchema, OutputSharding",
+      "from torch.distributed._tensor.ops.utils import register_prop_rule",
+      "from torch.distributed._tensor.placement_types import (",
+      "    _Partial,",
+      "    DTensorSpec,",
+      "    Replicate,",
+      "    Shard,"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.distributed._tensor.op_schema import OpSchema, OutputSharding",
+      "from torch.distributed._tensor.ops.utils import register_prop_rule",
+      "from torch.distributed._tensor.placement_types import ("
+    ],
+    "classes": [],
+    "functions": [
+      "embedding_rules",
+      "embedding_renorm_rules",
+      "embedding_dense_backward_rules"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_051_9d6188628e5e98c3_embedding_ops.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_c_parser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_c_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 89798,
+  "content_sha256": "dc504a18b8e3942deff1a7f00ff727311ebb226a18232ef76b858a411ea15fb8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2376,
+    "non_empty_lines": 2097,
+    "char_count": 89798,
+    "preview_lines": [
+      "# ------------------------------------------------------------------------------",
+      "# pycparser: c_parser.py",
+      "#",
+      "# Recursive-descent parser for the C language.",
+      "#",
+      "# Eli Bendersky [https://eli.thegreenplace.net/]",
+      "# License: BSD",
+      "# ------------------------------------------------------------------------------",
+      "from dataclasses import dataclass",
+      "from typing import ("
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from typing import (",
+      "from . import c_ast",
+      "from .c_lexer import CLexer, _Token",
+      "from .ast_transforms import fix_switch_cases, fix_atomic_specifiers"
+    ],
+    "classes": [
+      "Coord",
+      "ParseError",
+      "CParser",
+      "_TokenStream",
+      "_DeclSpec",
+      "_DeclInfo"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_448_dc504a18b8e3942d_AI_Chariot_Legacy_666_1.0.0_20260508_c_parser.py.json"
+}

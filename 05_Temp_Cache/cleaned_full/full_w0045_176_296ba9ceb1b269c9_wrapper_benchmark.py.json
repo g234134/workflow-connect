@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\wrapper_benchmark.py",
+  "name": "wrapper_benchmark.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10275,
+  "content_sha256": "296ba9ceb1b269c9e27af7800191cf194a8efcf38f81103c6bbb5ec61c955bda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 295,
+    "non_empty_lines": 251,
+    "char_count": 10275,
+    "preview_lines": [
+      "import dataclasses",
+      "import tempfile",
+      "from collections import defaultdict",
+      "import torch",
+      "from torch.autograd import DeviceType",
+      "from .utils import create_bandwidth_info_str, do_bench, get_num_bytes",
+      "_kernel_category_choices = [",
+      "    \"pointwise\",",
+      "    \"reduction\",",
+      "    \"persistent_reduction\","
+    ],
+    "imports": [
+      "import dataclasses",
+      "import tempfile",
+      "from collections import defaultdict",
+      "import torch",
+      "from torch.autograd import DeviceType",
+      "from .utils import create_bandwidth_info_str, do_bench, get_num_bytes",
+      "from torch._inductor.codecache import PyCodeCache",
+      "from torch._inductor.triton_heuristics import CachingAutotuner",
+      "from tabulate import tabulate"
+    ],
+    "classes": [
+      "ProfileEvent"
+    ],
+    "functions": [
+      "get_kernel_category_by_source_code",
+      "get_kernel_category",
+      "benchmark_all_kernels",
+      "parse_profile_event_list",
+      "compiled_module_main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_176_296ba9ceb1b269c9_wrapper_benchmark.py.json"
+}

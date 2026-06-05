@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 207,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\langgraph_sdk\\_sync\\http.py",
+  "name": "http.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10853,
+  "content_sha256": "49764c47c9ecef23a275f461b92cb01900bf7beedbbb24423a68dbcde89e36bf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 274,
+    "char_count": 10850,
+    "preview_lines": [
+      "\"\"\"Synchronous HTTP client for LangGraph API.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import sys",
+      "import warnings",
+      "from collections.abc import Callable, Iterator, Mapping",
+      "from typing import Any, cast",
+      "import httpx",
+      "import orjson",
+      "from langgraph_sdk._shared.utilities import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import sys",
+      "import warnings",
+      "from collections.abc import Callable, Iterator, Mapping",
+      "from typing import Any, cast",
+      "import httpx",
+      "import orjson",
+      "from langgraph_sdk._shared.utilities import (",
+      "from langgraph_sdk.errors import _raise_for_status_typed",
+      "from langgraph_sdk.schema import QueryParamTypes, StreamPart",
+      "from langgraph_sdk.sse import SSEDecoder, iter_lines_raw"
+    ],
+    "classes": [
+      "SyncHttpClient"
+    ],
+    "functions": [
+      "_encode_json",
+      "_decode_json"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_207_49764c47c9ecef23_http.py.json"
+}

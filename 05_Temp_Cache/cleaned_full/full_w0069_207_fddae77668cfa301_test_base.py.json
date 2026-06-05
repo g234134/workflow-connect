@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 207,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chat_models\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9905,
+  "content_sha256": "fddae77668cfa3019170f79bd0b4a10ab44f00ec49e2a00243ad7ad6f252397f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 290,
+    "non_empty_lines": 254,
+    "char_count": 9902,
+    "preview_lines": [
+      "import os",
+      "from unittest import mock",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import RunnableConfig, RunnableSequence",
+      "from pydantic import SecretStr",
+      "from langchain_classic.chat_models.base import __all__, init_chat_model",
+      "EXPECTED_ALL = [",
+      "    \"BaseChatModel\","
+    ],
+    "imports": [
+      "import os",
+      "from unittest import mock",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import RunnableConfig, RunnableSequence",
+      "from pydantic import SecretStr",
+      "from langchain_classic.chat_models.base import __all__, init_chat_model"
+    ],
+    "classes": [],
+    "functions": [
+      "test_all_imports",
+      "test_init_chat_model",
+      "test_init_missing_dep",
+      "test_init_unknown_provider",
+      "test_configurable",
+      "test_configurable_with_default"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_207_fddae77668cfa301_test_base.py.json"
+}

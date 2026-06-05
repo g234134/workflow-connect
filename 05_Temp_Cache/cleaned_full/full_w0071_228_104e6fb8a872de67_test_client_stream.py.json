@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 228,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\tests\\test_client_stream.py",
+  "name": "test_client_stream.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14979,
+  "content_sha256": "104e6fb8a872de678697ef2060b291dbc3b3e391bdde066b69515df6eb38c2d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 467,
+    "non_empty_lines": 389,
+    "char_count": 14976,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Iterator, Sequence",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import httpx",
+      "import pytest",
+      "from typing_extensions import assert_type",
+      "from langgraph_sdk._shared.utilities import _sse_to_v2_dict",
+      "from langgraph_sdk.client import HttpClient, SyncHttpClient",
+      "from langgraph_sdk.schema import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Iterator, Sequence",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import httpx",
+      "import pytest",
+      "from typing_extensions import assert_type",
+      "from langgraph_sdk._shared.utilities import _sse_to_v2_dict",
+      "from langgraph_sdk.client import HttpClient, SyncHttpClient",
+      "from langgraph_sdk.schema import (",
+      "from langgraph_sdk.sse import BytesLike, BytesLineDecoder, SSEDecoder"
+    ],
+    "classes": [
+      "AsyncListByteStream",
+      "ListByteStream"
+    ],
+    "functions": [
+      "iter_lines_raw",
+      "_assert_v2_shape",
+      "test_stream_sse",
+      "test_sync_http_client_stream_flushes_trailing_event",
+      "test_sync_http_client_stream_recovers_after_disconnect",
+      "test_sse_to_v2_dict_basic",
+      "test_sse_to_v2_dict_with_namespace",
+      "test_sse_to_v2_dict_with_multiple_ns",
+      "test_sse_to_v2_dict_end_event",
+      "test_sse_to_v2_dict_metadata_event",
+      "test_sse_to_v2_dict_messages_partial",
+      "test_sse_to_v2_dict_values_with_interrupts",
+      "test_sync_stream_v2_client_side_conversion",
+      "_check_v2_type_narrowing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_228_104e6fb8a872de67_test_client_stream.py.json"
+}

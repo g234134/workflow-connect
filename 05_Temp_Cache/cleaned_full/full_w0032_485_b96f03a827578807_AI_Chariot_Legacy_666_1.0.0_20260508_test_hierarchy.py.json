@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 485,
+  "generated_at": "2026-05-08T18:46:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_hierarchy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_hierarchy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1184,
+  "content_sha256": "b96f03a827578807b2a6434f29c0185fb696f3a09ac181fce10d1b5b87034d7a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 33,
+    "char_count": 1184,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "def test_hierarchy_undirected():",
+      "    G = nx.cycle_graph(5)",
+      "    pytest.raises(nx.NetworkXError, nx.flow_hierarchy, G)",
+      "def test_hierarchy_cycle():",
+      "    G = nx.cycle_graph(5, create_using=nx.DiGraph())",
+      "    assert nx.flow_hierarchy(G) == 0.0",
+      "def test_hierarchy_tree():",
+      "    G = nx.full_rary_tree(2, 16, create_using=nx.DiGraph())"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_hierarchy_undirected",
+      "test_hierarchy_cycle",
+      "test_hierarchy_tree",
+      "test_hierarchy_1",
+      "test_hierarchy_weight",
+      "test_hierarchy_empty_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_485_b96f03a827578807_AI_Chariot_Legacy_666_1.0.0_20260508_test_hierarchy.py.json"
+}

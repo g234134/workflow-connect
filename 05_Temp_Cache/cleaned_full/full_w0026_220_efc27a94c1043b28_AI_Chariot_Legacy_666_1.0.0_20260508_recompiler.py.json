@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_recompiler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_recompiler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 65509,
+  "content_sha256": "efc27a94c1043b28173668cdf7e7ce1453b78fb796fa21714abc5fbd06f9e1b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1598,
+    "non_empty_lines": 1472,
+    "char_count": 65509,
+    "preview_lines": [
+      "import io, os, sys, sysconfig",
+      "from . import ffiplatform, model",
+      "from .error import VerificationError",
+      "from .cffi_opcode import *",
+      "VERSION_BASE = 0x2601",
+      "VERSION_EMBEDDED = 0x2701",
+      "VERSION_CHAR16CHAR32 = 0x2801",
+      "USE_LIMITED_API = ((sys.platform != 'win32' or sys.version_info < (3, 0) or",
+      "                   sys.version_info >= (3, 5)) and",
+      "                   not sysconfig.get_config_var(\"Py_GIL_DISABLED\"))  # free-threaded doesn't yet support limited API"
+    ],
+    "imports": [
+      "import io, os, sys, sysconfig",
+      "from . import ffiplatform, model",
+      "from .error import VerificationError",
+      "from .cffi_opcode import *"
+    ],
+    "classes": [
+      "GlobalExpr",
+      "FieldExpr",
+      "StructUnionExpr",
+      "EnumExpr",
+      "TypenameExpr",
+      "Recompiler"
+    ],
+    "functions": [
+      "_is_file_like",
+      "_make_c_or_py_source",
+      "make_c_source",
+      "make_py_source",
+      "_modname_to_file",
+      "_patch_meth",
+      "_unpatch_meths",
+      "_patch_for_embedding",
+      "_patch_for_target",
+      "recompile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_220_efc27a94c1043b28_AI_Chariot_Legacy_666_1.0.0_20260508_recompiler.py.json"
+}

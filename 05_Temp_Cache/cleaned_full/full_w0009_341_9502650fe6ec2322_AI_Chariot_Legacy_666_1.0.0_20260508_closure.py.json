@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 341,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_closure.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_closure.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5587,
+  "content_sha256": "9502650fe6ec2322caad41e29ec281eae7b58dfd1a8b35329f8deb13fea6a411",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 135,
+    "non_empty_lines": 117,
+    "char_count": 5587,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import os",
+      "import threading",
+      "from queue import Empty as EmptyQueue, Queue",
+      "from torch._lazy.device_context import get_device_context",
+      "class ClosureHandler:",
+      "    def __init__(self) -> None:",
+      "        pass",
+      "    def run(self, closure):",
+      "        \"\"\"Run closure function"
+    ],
+    "imports": [
+      "import os",
+      "import threading",
+      "from queue import Empty as EmptyQueue, Queue",
+      "from torch._lazy.device_context import get_device_context"
+    ],
+    "classes": [
+      "ClosureHandler",
+      "AsyncClosureHandler"
+    ],
+    "functions": [
+      "add_step_closure",
+      "run_step_closures"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_341_9502650fe6ec2322_AI_Chariot_Legacy_666_1.0.0_20260508_closure.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_loader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_loader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1548,
+  "content_sha256": "645797dd5e5afd66f3f4e27a7b4c0c77a9292acb6f77ef61a313446a3d8478ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 40,
+    "non_empty_lines": 30,
+    "char_count": 1548,
+    "preview_lines": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Any",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.rag.misc import compute_sha256",
+      "from crewai_tools.rag.source_content import SourceContent",
+      "class LoaderResult(BaseModel):",
+      "    content: str = Field(description=\"The text content of the source\")",
+      "    source: str = Field(description=\"The source of the content\", default=\"unknown\")",
+      "    metadata: dict[str, Any] = Field(",
+      "        description=\"The metadata of the source\", default_factory=dict"
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from typing import Any",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.rag.misc import compute_sha256",
+      "from crewai_tools.rag.source_content import SourceContent"
+    ],
+    "classes": [
+      "LoaderResult",
+      "BaseLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_009_645797dd5e5afd66_AI_Chariot_Legacy_666_1.0.0_20260508_base_loader.py.json"
+}

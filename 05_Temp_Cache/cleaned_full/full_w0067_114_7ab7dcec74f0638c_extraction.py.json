@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 114,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\openai_tools\\extraction.py",
+  "name": "extraction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3485,
+  "content_sha256": "7ab7dcec74f0638c4ae173abbdc120e9dd7a6ba9a3b5c9f61893e5a08a1fd635",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 71,
+    "char_count": 3482,
+    "preview_lines": [
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers.openai_tools import PydanticToolsParser",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable",
+      "from langchain_core.utils.function_calling import (",
+      "    convert_to_openai_function as convert_pydantic_to_openai_function,",
+      ")",
+      "from pydantic import BaseModel",
+      "_EXTRACTION_TEMPLATE = \"\"\"Extract and save the relevant entities mentioned \\"
+    ],
+    "imports": [
+      "from langchain_core._api import deprecated",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers.openai_tools import PydanticToolsParser",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import Runnable",
+      "from langchain_core.utils.function_calling import (",
+      "from pydantic import BaseModel",
+      "from pydantic import BaseModel, Field",
+      "from langchain_anthropic import ChatAnthropic"
+    ],
+    "classes": [],
+    "functions": [
+      "create_extraction_chain_pydantic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_114_7ab7dcec74f0638c_extraction.py.json"
+}

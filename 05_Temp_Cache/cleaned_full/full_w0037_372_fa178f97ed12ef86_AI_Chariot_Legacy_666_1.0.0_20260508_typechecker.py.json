@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_typechecker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_typechecker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20003,
+  "content_sha256": "fa178f97ed12ef864f1621068e45f02a27a10142438e846459e15da5a6570bb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 566,
+    "non_empty_lines": 474,
+    "char_count": 19975,
+    "preview_lines": [
+      "\"\"\"",
+      "A structural type checker with clean separation of concerns.",
+      "The checker validates values against type annotations without requiring",
+      "the types to be instantiated. It supports standard library types, generics,",
+      "Union/Optional, Literal, Annotated, TypeVar, NewType, dataclasses, and",
+      "pydantic-compatible custom types.",
+      "Architecture:",
+      "    check_type          - entry point, dispatches to custom handlers or standard path",
+      "    get_annot_branches  - peels Union/Optional into flat alternatives",
+      "    check_branch        - outer_match then decompose+recurse"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import collections.abc",
+      "import inspect",
+      "import types",
+      "from dataclasses import dataclass, field, is_dataclass",
+      "from dataclasses import fields as dataclass_fields",
+      "from enum import Enum",
+      "from pathlib import PurePath",
+      "from types import GeneratorType",
+      "from typing import ("
+    ],
+    "classes": [
+      "TypeCheckError",
+      "Ctx",
+      "_AnySchemaHandler",
+      "_PydanticV1FieldShim"
+    ],
+    "functions": [
+      "check_type",
+      "check_branch",
+      "get_annot_branches",
+      "outer_match",
+      "_resolve_dataclass_hints",
+      "_has_strict_metadata",
+      "_strict_match",
+      "_pydantic_v2_match",
+      "_pydantic_v1_match",
+      "decompose"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_372_fa178f97ed12ef86_AI_Chariot_Legacy_666_1.0.0_20260508_typechecker.py.json"
+}

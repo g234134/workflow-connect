@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mimetypes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mimetypes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23037,
+  "content_sha256": "ed21537405f4b076318f966b810ae1d9415e16315603ad8003b1ecb24baf5950",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 656,
+    "non_empty_lines": 573,
+    "char_count": 23037,
+    "preview_lines": [
+      "\"\"\"Guess the MIME type of a file.",
+      "This module defines two useful functions:",
+      "guess_type(url, strict=True) -- guess the MIME type and encoding of a URL.",
+      "guess_extension(type, strict=True) -- guess the extension for a given MIME type.",
+      "It also contains the following, for tuning the behavior:",
+      "Data:",
+      "knownfiles -- list of files to parse",
+      "inited -- flag set when init() has been called",
+      "suffix_map -- dictionary mapping suffixes to suffixes",
+      "encodings_map -- dictionary mapping suffixes to encodings"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import posixpath",
+      "import urllib.parse",
+      "from _winapi import _mimetypes_read_windows_registry",
+      "import winreg as _winreg"
+    ],
+    "classes": [
+      "MimeTypes"
+    ],
+    "functions": [
+      "guess_type",
+      "guess_all_extensions",
+      "guess_extension",
+      "add_type",
+      "init",
+      "read_mime_types",
+      "_default_mime_types",
+      "_main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_293_ed21537405f4b076_AI_Chariot_Legacy_666_1.0.0_20260508_mimetypes.py.json"
+}

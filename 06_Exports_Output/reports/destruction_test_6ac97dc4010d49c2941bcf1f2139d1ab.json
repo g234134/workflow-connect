@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "started_at": "2026-05-08T18:34:53+00:00",
+  "finished_at": "2026-05-08T18:34:54+00:00",
+  "src_path": "D:\\大唐三省六部\\06_Exports_Output\\Archive\\format_error\\destruction_test.json",
+  "destination_candidates": [
+    "D:\\大唐三省六部\\03_RAG_Database\\C2_核心知識庫\\destruction_test.json"
+  ],
+  "agent_run_id": "6ac97dc4010d49c2941bcf1f2139d1ab",
+  "agent_summary": {
+    "run_id": "6ac97dc4010d49c2941bcf1f2139d1ab",
+    "target_count": 1,
+    "ok_local": 0,
+    "ok_groq": 1,
+    "failed": 0,
+    "groq_skipped": 0,
+    "success_rate": 1.0,
+    "completed_at": "2026-05-08T18:34:54+00:00"
+  },
+  "log_path": "D:\\大唐三省六部\\03_RAG_Database\\C3_Logs\\6ac97dc4010d49c2941bcf1f2139d1ab.jsonl",
+  "log_match": {
+    "events": [
+      {
+        "event": "hybrid_recovered",
+        "path": "D:\\大唐三省六部\\06_Exports_Output\\Archive\\format_error\\destruction_test.json",
+        "dst": "D:\\大唐三省六部\\03_RAG_Database\\C2_核心知識庫\\destruction_test.json",
+        "strategy": "groq_ok",
+        "encoding": "utf-16",
+        "via_groq": true,
+        "groq_reason": null,
+        "size_in": null,
+        "size_out": null
+      }
+    ],
+    "via_groq": true,
+    "warning_count": 0,
+    "groq_reasons": []
+  },
+  "before": {
+    "size_bytes": 506,
+    "first_120_bytes_hex": "feff00a4c3afc2bb252525434f525255505445445f4d414749435f4845414445522525250ae4ba82e7a2bce599aae99fb3efbc9ae4bda0e5a5bde4b896e7958c40404021212120e282acc2a3c2a520c2a7c2b6e280a0e280a10a2f2f206e6f74653a207468697320697320737570706f73656420746f2062",
+    "first_400_chars_latin1": "þÿ\u0000¤Ã¯Â»%%%CORRUPTED_MAGIC_HEADER%%%\näºç¢¼åªé³ï¼ä½ å¥½ä¸ç@@@!!! â¬Â£Â¥ Â§Â¶â â¡\n// note: this is supposed to be JSON but somebody fed it through a paper shredder\n   \"project\": \"tang_chariot,\n   \"version\" 1.2.3   description= production JSON crashed\n   modules : [ \"core\", \"rag\", \"agents\",\n   ; legacy //tail_garbage <<<<>>>>\n   \"owner\": { \"name\": 666LAG  username  ZXL95270  \n   \"tags\": [\"a"
+  },
+  "after": {
+    "path": "D:\\大唐三省六部\\03_RAG_Database\\C2_核心知識庫\\destruction_test.json",
+    "ok": true,
+    "size_bytes": 32,
+    "text": "{\n  \"name\": \"destruction_test\"\n}",
+    "encoding": "utf-8-sig"
+  },
+  "verdict": {
+    "groq_invoked": true,
+    "groq_only_path": true,
+    "stored_in_c2": true,
+    "success": true
+  }
+}

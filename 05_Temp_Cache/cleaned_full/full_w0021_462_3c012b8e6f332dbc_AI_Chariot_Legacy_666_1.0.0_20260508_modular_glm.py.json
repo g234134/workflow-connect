@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 462,
+  "generated_at": "2026-05-08T18:45:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_glm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_glm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5526,
+  "content_sha256": "3c012b8e6f332dbc8b7923e1af82517741c1d0c453b1ee24e040d6393baa83e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 146,
+    "non_empty_lines": 116,
+    "char_count": 5526,
+    "preview_lines": [
+      "# Copyright 2024 The GLM & ZhipuAI team and HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "import torch",
+      "import torch.nn as nn",
+      "from ...utils import logging",
+      "from ..llama.modeling_llama import (",
+      "from ..phi3.modeling_phi3 import Phi3MLP",
+      "from .configuration_glm import GlmConfig"
+    ],
+    "classes": [
+      "GlmMLP",
+      "GlmRotaryEmbedding",
+      "GlmAttention",
+      "GlmForCausalLM",
+      "GlmForSequenceClassification",
+      "GlmForTokenClassification"
+    ],
+    "functions": [
+      "rotate_half",
+      "apply_rotary_pos_emb"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_462_3c012b8e6f332dbc_AI_Chariot_Legacy_666_1.0.0_20260508_modular_glm.py.json"
+}

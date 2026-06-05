@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\matrices\\inverse.py",
+  "name": "inverse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13166,
+  "content_sha256": "6958c39ff4a36547e2fa374cff5b89eaeea5548b6ebdb9dbdc2a696b21d0f86b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 524,
+    "non_empty_lines": 402,
+    "char_count": 13166,
+    "preview_lines": [
+      "from sympy.polys.matrices.exceptions import DMNonInvertibleMatrixError",
+      "from sympy.polys.domains import EX",
+      "from .exceptions import MatrixError, NonSquareMatrixError, NonInvertibleMatrixError",
+      "from .utilities import _iszero",
+      "def _pinv_full_rank(M):",
+      "    \"\"\"Subroutine for full row or column rank matrices.",
+      "    For full row rank matrices, inverse of ``A * A.H`` Exists.",
+      "    For full column rank matrices, inverse of ``A.H * A`` Exists.",
+      "    This routine can apply for both cases by checking the shape",
+      "    and have small decision."
+    ],
+    "imports": [
+      "from sympy.polys.matrices.exceptions import DMNonInvertibleMatrixError",
+      "from sympy.polys.domains import EX",
+      "from .exceptions import MatrixError, NonSquareMatrixError, NonInvertibleMatrixError",
+      "from .utilities import _iszero",
+      "from .dense import Matrix"
+    ],
+    "classes": [],
+    "functions": [
+      "_pinv_full_rank",
+      "_pinv_rank_decomposition",
+      "_pinv_diagonalization",
+      "_pinv",
+      "_verify_invertible",
+      "_inv_ADJ",
+      "_inv_GE",
+      "_inv_LU",
+      "_inv_CH",
+      "_inv_LDL",
+      "_inv_QR",
+      "_try_DM",
+      "_use_exact_domain",
+      "_inv_DM",
+      "_inv_block",
+      "_inv"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_370_6958c39ff4a36547_inverse.py.json"
+}

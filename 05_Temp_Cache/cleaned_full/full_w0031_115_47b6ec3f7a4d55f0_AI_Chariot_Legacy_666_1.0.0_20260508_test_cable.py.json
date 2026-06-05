@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cable.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cable.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3831,
+  "content_sha256": "47b6ec3f7a4d55f0734ed5950bde46865afdd4cc9409ff9eb19a5d0e01ad9958",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 83,
+    "non_empty_lines": 71,
+    "char_count": 3831,
+    "preview_lines": [
+      "from sympy.physics.continuum_mechanics.cable import Cable",
+      "from sympy.core.symbol import Symbol",
+      "def test_cable():",
+      "    c = Cable(('A', 0, 10), ('B', 10, 10))",
+      "    assert c.supports == {'A': [0, 10], 'B': [10, 10]}",
+      "    assert c.left_support == [0, 10]",
+      "    assert c.right_support == [10, 10]",
+      "    assert c.loads == {'distributed': {}, 'point_load': {}}",
+      "    assert c.loads_position == {}",
+      "    assert c.length == 0"
+    ],
+    "imports": [
+      "from sympy.physics.continuum_mechanics.cable import Cable",
+      "from sympy.core.symbol import Symbol"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_115_47b6ec3f7a4d55f0_AI_Chariot_Legacy_666_1.0.0_20260508_test_cable.py.json"
+}

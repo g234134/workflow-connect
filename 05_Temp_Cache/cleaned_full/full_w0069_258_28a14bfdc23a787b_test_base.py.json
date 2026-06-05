@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\llms\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1368,
+  "content_sha256": "28a14bfdc23a787b277c8a61d13ea90d8a0a2c60af9167b48eeee564c44b9c45",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 38,
+    "char_count": 1365,
+    "preview_lines": [
+      "\"\"\"Test base LLM functionality.\"\"\"",
+      "from langchain_core.caches import InMemoryCache",
+      "from langchain_core.outputs import Generation, LLMResult",
+      "from langchain_classic.globals import get_llm_cache, set_llm_cache",
+      "from langchain_classic.llms.base import __all__",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM",
+      "EXPECTED_ALL = [",
+      "    \"BaseLLM\",",
+      "    \"LLM\",",
+      "    \"BaseLanguageModel\","
+    ],
+    "imports": [
+      "from langchain_core.caches import InMemoryCache",
+      "from langchain_core.outputs import Generation, LLMResult",
+      "from langchain_classic.globals import get_llm_cache, set_llm_cache",
+      "from langchain_classic.llms.base import __all__",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM"
+    ],
+    "classes": [],
+    "functions": [
+      "test_all_imports",
+      "test_caching"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_258_28a14bfdc23a787b_test_base.py.json"
+}

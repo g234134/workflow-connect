@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sse.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sse.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16432,
+  "content_sha256": "856ebc46717e2210d38fc8d69b5a4fd6504cad59cc5067b2d5af8559057f5d0f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 437,
+    "non_empty_lines": 362,
+    "char_count": 16432,
+    "preview_lines": [
+      "import asyncio",
+      "import logging",
+      "import signal",
+      "import threading",
+      "from dataclasses import dataclass, field",
+      "from datetime import datetime, timezone",
+      "from typing import (",
+      "    Any,",
+      "    AsyncIterable,",
+      "    Awaitable,"
+    ],
+    "imports": [
+      "import asyncio",
+      "import logging",
+      "import signal",
+      "import threading",
+      "from dataclasses import dataclass, field",
+      "from datetime import datetime, timezone",
+      "from typing import (",
+      "import anyio",
+      "from starlette.background import BackgroundTask",
+      "from starlette.concurrency import iterate_in_threadpool",
+      "from starlette.datastructures import MutableHeaders",
+      "from starlette.responses import Response",
+      "from starlette.types import Receive, Scope, Send, Message",
+      "from sse_starlette.event import ServerSentEvent, ensure_bytes",
+      "from uvicorn.main import Server"
+    ],
+    "classes": [
+      "_ShutdownState",
+      "SendTimeoutError",
+      "AppStatus",
+      "EventSourceResponse"
+    ],
+    "functions": [
+      "_get_shutdown_state",
+      "_get_uvicorn_server",
+      "_ensure_watcher_started_on_this_loop"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_223_856ebc46717e2210_AI_Chariot_Legacy_666_1.0.0_20260508_sse.py.json"
+}

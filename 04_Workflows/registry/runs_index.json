@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "project": "大唐三省六部",
+  "description": "Workflow run registry for summaries, traces, reports, and retained artifacts.",
+  "created_at": "2026-05-11T00:00:00Z",
+  "updated_at": "2026-05-11T00:50:05Z",
+  "runs": [
+    {
+      "run_id": "run_2026-05-11_0001",
+      "date": "2026-05-11",
+      "month_bucket": "2026-05",
+      "workflow_name": "初始化校準",
+      "status": "success",
+      "kind": "workflow_simulation_trace",
+      "retention": "keep_summary",
+      "path": "04_Workflows/runs/2026-05/run_2026-05-11_0001",
+      "files": {
+        "workflow_summary": "workflow_summary.json",
+        "execution_trace": "execution_trace.json",
+        "department_flows": "department_flows.json",
+        "final_report": null
+      },
+      "tags": [
+        "calibration",
+        "dry-run",
+        "接戰"
+      ],
+      "notes": "首筆由模擬重建的初始化校準 workflow run"
+    }
+  ]
+}

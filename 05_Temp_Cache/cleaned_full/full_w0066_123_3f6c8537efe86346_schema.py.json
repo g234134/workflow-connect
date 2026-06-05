@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\runnables\\schema.py",
+  "name": "schema.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6173,
+  "content_sha256": "3f6c8537efe86346dffe3122687b9626391736f2775954e99dcd28fcae7872a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 135,
+    "char_count": 6170,
+    "preview_lines": [
+      "\"\"\"Module contains typedefs that are used with `Runnable` objects.\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Literal",
+      "from typing_extensions import NotRequired, TypedDict",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Sequence",
+      "class EventData(TypedDict, total=False):",
+      "    \"\"\"Data associated with a streaming event.\"\"\"",
+      "    input: Any",
+      "    \"\"\"The input passed to the `Runnable` that generated the event."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Literal",
+      "from typing_extensions import NotRequired, TypedDict",
+      "from collections.abc import Sequence",
+      "from langchain_core.runnables import RunnableLambda",
+      "from `Tool`/`BaseTool`"
+    ],
+    "classes": [
+      "EventData",
+      "BaseStreamEvent",
+      "StandardStreamEvent",
+      "CustomStreamEvent"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_123_3f6c8537efe86346_schema.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_string_run_evaluator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_string_run_evaluator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18429,
+  "content_sha256": "341ef957f2fc42d8e9657dcb113071aeaa94b1a098e5528dbcf70b48a95ba6fe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 477,
+    "non_empty_lines": 417,
+    "char_count": 18429,
+    "preview_lines": [
+      "\"\"\"Run evaluator wrapper for string evaluators.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import uuid",
+      "from abc import abstractmethod",
+      "from typing import Any, cast",
+      "from langchain_core.callbacks.manager import (",
+      "    AsyncCallbackManagerForChainRun,",
+      "    CallbackManagerForChainRun,",
+      ")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import uuid",
+      "from abc import abstractmethod",
+      "from typing import Any, cast",
+      "from langchain_core.callbacks.manager import (",
+      "from langchain_core.load.dump import dumpd",
+      "from langchain_core.load.load import load",
+      "from langchain_core.load.serializable import Serializable",
+      "from langchain_core.messages import BaseMessage, get_buffer_string, messages_from_dict",
+      "from langsmith import EvaluationResult, RunEvaluator",
+      "from langsmith.schemas import DataType, Example, Run",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.evaluation.schema import StringEvaluator",
+      "from langchain_classic.schema import RUN_KEY"
+    ],
+    "classes": [
+      "StringRunMapper",
+      "LLMStringRunMapper",
+      "ChainStringRunMapper",
+      "ToolStringRunMapper",
+      "StringExampleMapper",
+      "StringRunEvaluatorChain"
+    ],
+    "functions": [
+      "_get_messages_from_run_dict"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_398_341ef957f2fc42d8_AI_Chariot_Legacy_666_1.0.0_20260508_string_run_evaluator.py.json"
+}

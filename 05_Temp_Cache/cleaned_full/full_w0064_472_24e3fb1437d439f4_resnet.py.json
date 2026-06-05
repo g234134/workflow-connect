@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\models\\video\\resnet.py",
+  "name": "resnet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17274,
+  "content_sha256": "24e3fb1437d439f4103fe8c4614bf34883abf4869ec65d8bde2521fabceba7dd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 503,
+    "non_empty_lines": 408,
+    "char_count": 17274,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional, Sequence, Tuple, Type, Union",
+      "import torch.nn as nn",
+      "from torch import Tensor",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _KINETICS400_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Callable, List, Optional, Sequence, Tuple, Type, Union",
+      "import torch.nn as nn",
+      "from torch import Tensor",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _KINETICS400_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "classes": [
+      "Conv3DSimple",
+      "Conv2Plus1D",
+      "Conv3DNoTemporal",
+      "BasicBlock",
+      "Bottleneck",
+      "BasicStem",
+      "R2Plus1dStem",
+      "VideoResNet",
+      "R3D_18_Weights",
+      "MC3_18_Weights",
+      "R2Plus1D_18_Weights"
+    ],
+    "functions": [
+      "_video_resnet",
+      "r3d_18",
+      "mc3_18",
+      "r2plus1d_18"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_472_24e3fb1437d439f4_resnet.py.json"
+}

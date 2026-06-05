@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec_base.h",
+  "name": "vec_base.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 41127,
+  "content_sha256": "a0f26c195541a1a3617f7ff6f491ff6da4311e7cdb668bf4fe6a31e4d34b8b47",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1078,
+    "non_empty_lines": 1016,
+    "char_count": 41127,
+    "preview_lines": [
+      "#pragma once",
+      "// DO NOT DEFINE STATIC DATA IN THIS HEADER!",
+      "// See Note [Do not compile initializers with AVX]",
+      "//",
+      "// Note [Do not compile initializers with AVX]",
+      "// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "// If you define a static initializer in this file, the initialization will use",
+      "// AVX instructions because these object files are compiled with AVX enabled.",
+      "// We need to avoid non-trivial global data in these architecture specific files",
+      "// because there's no way to guard the global initializers with CPU capability"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_123_a0f26c195541a1a3_vec_base.h.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 429,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_interface.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_interface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3094,
+  "content_sha256": "48a9a3e605c8dd1887279e3397c2248c3bd2803b847e4fa1bf2dac98a0decc61",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 67,
+    "char_count": 3094,
+    "preview_lines": [
+      "import ctypes",
+      "import numpy as np",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "pa = pytest.importorskip(\"pyarrow\")",
+      "@td.skip_if_no(\"pyarrow\", min_version=\"14.0\")",
+      "def test_dataframe_arrow_interface(using_infer_string):",
+      "    df = pd.DataFrame({\"a\": [1, 2, 3], \"b\": [\"a\", \"b\", \"c\"]})"
+    ],
+    "imports": [
+      "import ctypes",
+      "import numpy as np",
+      "import pytest",
+      "import pandas.util._test_decorators as td",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "ArrowArrayWrapper",
+      "ArrowStreamWrapper"
+    ],
+    "functions": [
+      "test_dataframe_arrow_interface",
+      "test_dataframe_to_arrow",
+      "test_dataframe_from_arrow"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_429_48a9a3e605c8dd18_AI_Chariot_Legacy_666_1.0.0_20260508_test_arrow_interface.py.json"
+}

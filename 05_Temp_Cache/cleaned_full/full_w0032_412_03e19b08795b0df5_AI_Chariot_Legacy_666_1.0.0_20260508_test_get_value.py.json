@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 412,
+  "generated_at": "2026-05-08T18:46:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_get_value.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_get_value.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 679,
+  "content_sha256": "03e19b08795b0df54f181d7474d1a71a0e03b6b2ab9516d1b2961fb834d498f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 18,
+    "char_count": 679,
+    "preview_lines": [
+      "import pytest",
+      "from pandas import (",
+      "    DataFrame,",
+      "    MultiIndex,",
+      ")",
+      "class TestGetValue:",
+      "    def test_get_set_value_no_partial_indexing(self):",
+      "        # partial w/ MultiIndex raise exception",
+      "        index = MultiIndex.from_tuples([(0, 1), (0, 2), (1, 1), (1, 2)])",
+      "        df = DataFrame(index=index, columns=range(4))"
+    ],
+    "imports": [
+      "import pytest",
+      "from pandas import ("
+    ],
+    "classes": [
+      "TestGetValue"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_412_03e19b08795b0df5_AI_Chariot_Legacy_666_1.0.0_20260508_test_get_value.py.json"
+}

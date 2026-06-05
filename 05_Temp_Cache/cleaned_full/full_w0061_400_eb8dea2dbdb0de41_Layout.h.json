@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 400,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\Layout.h",
+  "name": "Layout.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 562,
+  "content_sha256": "eb8dea2dbdb0de419284b73d4421001c4fd33a699791e7d0e6709393f9c59bc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 16,
+    "char_count": 562,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/python_headers.h>",
+      "#include <ATen/Layout.h>",
+      "#include <string>",
+      "const int LAYOUT_NAME_LEN = 64;",
+      "struct THPLayout {",
+      "  PyObject_HEAD at::Layout layout;",
+      "  // NOLINTNEXTLINE(cppcoreguidelines-avoid-c-arrays,modernize-avoid-c-arrays)",
+      "  char name[LAYOUT_NAME_LEN + 1];",
+      "};"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_400_eb8dea2dbdb0de41_Layout.h.json"
+}

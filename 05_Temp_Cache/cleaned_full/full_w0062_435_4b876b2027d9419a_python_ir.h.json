@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 435,
+  "generated_at": "2026-05-08T18:48:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\python\\python_ir.h",
+  "name": "python_ir.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1743,
+  "content_sha256": "4b876b2027d9419a856e9c580f1ee85472a09c0bebe855b78fd8d05e5b781cc0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 43,
+    "char_count": 1743,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "#include <torch/csrc/utils/object_ptr.h>",
+      "namespace torch::jit {",
+      "void initPythonIRBindings(PyObject* module);",
+      "// execute a Python function, used for Ops we can't optimize but that we want to",
+      "// optimize around",
+      "struct ConcretePythonOp : public PythonOp {",
+      "  static Symbol Kind;",
+      "  ConcretePythonOp(Graph* graph) : PythonOp(graph, ::c10::prim::PythonOp) {}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_435_4b876b2027d9419a_python_ir.h.json"
+}

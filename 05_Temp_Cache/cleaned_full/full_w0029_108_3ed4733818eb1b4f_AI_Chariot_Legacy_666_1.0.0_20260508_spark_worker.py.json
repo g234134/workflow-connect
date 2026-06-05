@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 108,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spark_worker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spark_worker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3632,
+  "content_sha256": "3ed4733818eb1b4fff02ef9489d77c70ee73a71f84258fc3d771fd086f74d111",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 82,
+    "char_count": 3632,
+    "preview_lines": [
+      "import sys",
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import Integration",
+      "from sentry_sdk.utils import (",
+      "    capture_internal_exceptions,",
+      "    exc_info_from_error,",
+      "    single_exception_from_error_tuple,",
+      "    walk_exception_chain,",
+      "    event_hint_with_exc_info,",
+      ")"
+    ],
+    "imports": [
+      "import sys",
+      "import sentry_sdk",
+      "from sentry_sdk.integrations import Integration",
+      "from sentry_sdk.utils import (",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any",
+      "from typing import Optional",
+      "from sentry_sdk._types import ExcInfo, Event, Hint",
+      "import pyspark.daemon as original_daemon",
+      "from pyspark.taskcontext import TaskContext",
+      "import pyspark.worker as original_worker"
+    ],
+    "classes": [
+      "SparkWorkerIntegration"
+    ],
+    "functions": [
+      "_capture_exception",
+      "_tag_task_context",
+      "_sentry_worker_main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_108_3ed4733818eb1b4f_AI_Chariot_Legacy_666_1.0.0_20260508_spark_worker.py.json"
+}

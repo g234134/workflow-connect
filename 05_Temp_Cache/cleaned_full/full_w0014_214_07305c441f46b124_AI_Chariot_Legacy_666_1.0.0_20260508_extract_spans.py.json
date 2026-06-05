@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 214,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_extract_spans.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_extract_spans.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2296,
+  "content_sha256": "07305c441f46b124b2a5c8c1a5cd9688e8ab5f75fec57fb463ab1213e80fcecc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 51,
+    "char_count": 2296,
+    "preview_lines": [
+      "from typing import Callable, List, Tuple",
+      "from thinc.api import Model, to_numpy",
+      "from thinc.types import Ints1d, Ragged",
+      "def extract_spans() -> Model[Tuple[Ragged, Ragged], Ragged]:",
+      "    \"\"\"Extract spans from a sequence of source arrays, as specified by an array",
+      "    of (start, end) indices. The output is a ragged array of the",
+      "    extracted spans.",
+      "    \"\"\"",
+      "    return Model(",
+      "        \"extract_spans\", forward, layers=[], refs={}, attrs={}, dims={}, init=init"
+    ],
+    "imports": [
+      "from typing import Callable, List, Tuple",
+      "from thinc.api import Model, to_numpy",
+      "from thinc.types import Ints1d, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "extract_spans",
+      "init",
+      "forward",
+      "_get_span_indices",
+      "_ensure_cpu"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_214_07305c441f46b124_AI_Chariot_Legacy_666_1.0.0_20260508_extract_spans.py.json"
+}

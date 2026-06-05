@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 477,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_modularity_max.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_modularity_max.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10617,
+  "content_sha256": "5d8c8fb839312f80981709e94dd53fa83e06c9da6a8224402093b708740dfe6e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 291,
+    "char_count": 10617,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.community import (",
+      "    greedy_modularity_communities,",
+      "    naive_greedy_modularity_communities,",
+      ")",
+      "@pytest.mark.parametrize(",
+      "    \"func\", (greedy_modularity_communities, naive_greedy_modularity_communities)",
+      ")",
+      "def test_modularity_communities(func):"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.community import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_modularity_communities",
+      "test_modularity_communities_categorical_labels",
+      "test_greedy_modularity_communities_components",
+      "test_greedy_modularity_communities_relabeled",
+      "test_greedy_modularity_communities_directed",
+      "test_modularity_communities_weighted",
+      "test_modularity_communities_floating_point",
+      "test_modularity_communities_directed_weighted",
+      "test_greedy_modularity_communities_multigraph",
+      "test_greedy_modularity_communities_multigraph_weighted",
+      "test_greed_modularity_communities_multidigraph",
+      "test_greed_modularity_communities_multidigraph_weighted",
+      "test_resolution_parameter_impact",
+      "test_cutoff_parameter",
+      "test_best_n",
+      "test_greedy_modularity_communities_corner_cases"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_477_5d8c8fb839312f80_AI_Chariot_Legacy_666_1.0.0_20260508_test_modularity_max.py.json"
+}

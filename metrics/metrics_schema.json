@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov-core/agent-metrics/v1",
+  "title": "Agent Metrics Record",
+  "description": "Per-task agent metrics schema for logging, aggregation, and Langfuse trace metadata alignment.",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "task_id",
+    "agent_name",
+    "start_time",
+    "success"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "description": "Unique identifier for one agent task invocation (maps to Langfuse session/thread or trace grouping key)."
+    },
+    "agent_name": {
+      "type": "string",
+      "description": "Logical agent or workflow name (e.g. ask_pipeline, data_pipeline_agent)."
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Task start timestamp (ISO 8601 UTC)."
+    },
+    "end_time": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Task end timestamp (ISO 8601 UTC); null while in progress."
+    },
+    "success": {
+      "type": "boolean",
+      "description": "Whether the task completed successfully (business outcome)."
+    },
+    "retry_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Number of retries after the initial attempt."
+    },
+    "step_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Count of logical steps (LLM rounds, graph nodes, or tool steps)."
+    },
+    "context_token_usage": {
+      "$ref": "#/$defs/context_token_usage"
+    },
+    "error_type": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/error_type_enum"
+        }
+      ],
+      "description": "Primary failure category when success is false; null on success."
+    },
+    "handoff_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Number of agent-to-agent or stage handoffs during the task."
+    },
+    "memory_hit_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Ratio of memory/RAG lookups that returned a hit (0–1). Mock until memory layer reports real hits."
+    },
+    "external_call_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Reserved (D5): HTTP/tool/API calls outside the LLM provider."
+    },
+    "trace_id": {
+      "type": ["string", "null"],
+      "description": "Optional Langfuse trace id for cross-linking."
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step_record"
+      },
+      "description": "Ordered step events for trace completeness (D4)."
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/error_record"
+      },
+      "description": "Error events captured during the task."
+    },
+    "trace_completeness": {
+      "$ref": "#/$defs/trace_completeness"
+    },
+    "success_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Derived for D1 rollups: 1.0 if success else 0.0 at task level; aggregate over windows separately."
+    }
+  },
+  "$defs": {
+    "error_type_enum": {
+      "type": "string",
+      "enum": [
+        "llm_error",
+        "tool_error",
+        "context_overflow",
+        "timeout",
+        "unknown"
+      ]
+    },
+    "context_token_usage": {
+      "type": "object",
+      "properties": {
+        "prompt_tokens": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "completion_tokens": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "total_tokens": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        }
+      },
+      "additionalProperties": false,
+      "description": "Cumulative token usage for the task (sum of steps)."
+    },
+    "step_record": {
+      "type": "object",
+      "required": ["step_index", "name", "timestamp"],
+      "properties": {
+        "step_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "name": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "duration_ms": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "token_delta": {
+          "$ref": "#/$defs/context_token_usage"
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "error_record": {
+      "type": "object",
+      "required": ["timestamp", "error_type"],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "error_type": {
+          "$ref": "#/$defs/error_type_enum"
+        },
+        "message": {
+          "type": "string"
+        },
+        "step_index": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "retryable": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "trace_completeness": {
+      "type": "object",
+      "description": "D4: fraction of required trace fields present on the task record.",
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "present": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "missing": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["score", "present", "missing", "required_fields"],
+      "additionalProperties": false
+    }
+  },
+  "dimension_mapping": {
+    "D1": {
+      "label": "Reliability & execution depth",
+      "description": "Task outcome, retries, and step volume.",
+      "metrics": ["success_rate", "retry_count", "step_count"],
+      "source_fields": ["success", "retry_count", "step_count"]
+    },
+    "D2": {
+      "label": "Context & memory efficiency",
+      "description": "Token budget and memory/RAG hit ratio.",
+      "metrics": ["context_token_usage", "memory_hit_rate"],
+      "source_fields": ["context_token_usage", "memory_hit_rate"]
+    },
+    "D3": {
+      "label": "Multi-agent coordination",
+      "description": "Handoffs between agents or pipeline stages.",
+      "metrics": ["handoff_count"],
+      "source_fields": ["handoff_count"]
+    },
+    "D4": {
+      "label": "Trace completeness",
+      "description": "Observability coverage via required field presence.",
+      "metrics": ["trace_completeness"],
+      "source_fields": [
+        "task_id",
+        "agent_name",
+        "start_time",
+        "end_time",
+        "success",
+        "step_count",
+        "context_token_usage",
+        "trace_id",
+        "steps"
+      ],
+      "completeness_required_fields": [
+        "task_id",
+        "agent_name",
+        "start_time",
+        "end_time",
+        "success",
+        "step_count",
+        "context_token_usage",
+        "trace_id"
+      ]
+    },
+    "D5": {
+      "label": "Failure taxonomy & external I/O",
+      "description": "Error classification and outbound call volume (reserved).",
+      "metrics": ["error_type", "external_call_count"],
+      "source_fields": ["error_type", "external_call_count", "errors"]
+    }
+  },
+  "langfuse_hints": {
+    "trace_metadata_keys": [
+      "task_id",
+      "agent_name",
+      "success",
+      "retry_count",
+      "step_count",
+      "handoff_count",
+      "memory_hit_rate",
+      "error_type",
+      "external_call_count",
+      "trace_completeness.score"
+    ],
+    "usage_mapping": {
+      "prompt_tokens": "context_token_usage.prompt_tokens",
+      "completion_tokens": "context_token_usage.completion_tokens",
+      "total_tokens": "context_token_usage.total_tokens"
+    },
+    "tags_template": ["gov-core", "agent:{agent_name}", "success:{success}"]
+  }
+}

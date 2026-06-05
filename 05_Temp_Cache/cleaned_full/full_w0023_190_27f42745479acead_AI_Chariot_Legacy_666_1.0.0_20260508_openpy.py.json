@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_openpy.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_openpy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3623,
+  "content_sha256": "27f42745479aceadfee96da3c844690114e0e322fc0d926ee340b81c6f5bbc7d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 106,
+    "non_empty_lines": 93,
+    "char_count": 3623,
+    "preview_lines": [
+      "\"\"\"",
+      "Tools to open .py files as Unicode, using the encoding specified within the file,",
+      "as per PEP 263.",
+      "Much of the code is taken from the tokenize module in Python 3.2.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import io",
+      "from collections.abc import Generator, Iterable",
+      "from io import TextIOWrapper, BytesIO",
+      "from pathlib import Path"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import io",
+      "from collections.abc import Generator, Iterable",
+      "from io import TextIOWrapper, BytesIO",
+      "from pathlib import Path",
+      "import re",
+      "from tokenize import open, detect_encoding",
+      "from urllib.request import urlopen"
+    ],
+    "classes": [],
+    "functions": [
+      "source_to_unicode",
+      "strip_encoding_cookie",
+      "read_py_file",
+      "read_py_url"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_190_27f42745479acead_AI_Chariot_Legacy_666_1.0.0_20260508_openpy.py.json"
+}

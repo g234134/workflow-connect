@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 79,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_eventsFreeThreaded.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_eventsFreeThreaded.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3556,
+  "content_sha256": "ec0d75c5ff350edc67fed2119bce15e26fc2d578dfa3fd495a0bcd515e30722f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 71,
+    "char_count": 3556,
+    "preview_lines": [
+      "# A sample originally provided by Richard Bell, and modified by Mark Hammond.",
+      "# This sample demonstrates how to use COM events in a free-threaded world.",
+      "# In this world, there is no need to marshall calls across threads, so",
+      "# no message loops are needed at all.  This means regular cross-thread",
+      "# sychronization can be used.  In this sample we just wait on win32 event",
+      "# objects.",
+      "# See also ieEventsApartmentThreaded.py for how to do this in an",
+      "# aparment-threaded world, where thread-marshalling complicates things.",
+      "# NOTE: This example uses Internet Explorer, but it should not be considerd",
+      "# a \"best-practices\" for writing against IE events, but for working with"
+    ],
+    "imports": [
+      "import sys",
+      "import pythoncom",
+      "import win32api",
+      "import win32com.client",
+      "import win32event"
+    ],
+    "classes": [
+      "ExplorerEvents"
+    ],
+    "functions": [
+      "TestExplorerEvents"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_079_ec0d75c5ff350edc_AI_Chariot_Legacy_666_1.0.0_20260508_eventsFreeThreaded.py.json"
+}

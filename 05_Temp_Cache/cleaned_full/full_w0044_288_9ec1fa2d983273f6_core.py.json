@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 288,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\strategies\\core.py",
+  "name": "core.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3956,
+  "content_sha256": "9ec1fa2d983273f6ac96fe0d6b95ef24c122cc2eae4b3b1c465556f75935a6ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 151,
+    "non_empty_lines": 119,
+    "char_count": 3956,
+    "preview_lines": [
+      "\"\"\" Generic SymPy-Independent Strategies \"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Callable, Mapping",
+      "from typing import TypeVar",
+      "from sys import stdout",
+      "_S = TypeVar('_S')",
+      "_T = TypeVar('_T')",
+      "def identity(x: _T) -> _T:",
+      "    return x",
+      "def exhaust(rule: Callable[[_T], _T]) -> Callable[[_T], _T]:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Callable, Mapping",
+      "from typing import TypeVar",
+      "from sys import stdout"
+    ],
+    "classes": [],
+    "functions": [
+      "identity",
+      "exhaust",
+      "memoize",
+      "condition",
+      "chain",
+      "debug",
+      "null_safe",
+      "tryit",
+      "do_one",
+      "switch",
+      "_identity",
+      "minimize"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_288_9ec1fa2d983273f6_core.py.json"
+}

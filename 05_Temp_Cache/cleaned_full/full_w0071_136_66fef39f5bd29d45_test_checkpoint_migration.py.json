@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\test_checkpoint_migration.py",
+  "name": "test_checkpoint_migration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 72339,
+  "content_sha256": "66fef39f5bd29d453a3b4860f3b1e834a6e68b19fe266660ec79fa97682b7ab0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1727,
+    "non_empty_lines": 1682,
+    "char_count": 72336,
+    "preview_lines": [
+      "import operator",
+      "import sys",
+      "import time",
+      "from collections import defaultdict",
+      "from typing import Annotated, Literal",
+      "import pytest",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver, CheckpointTuple",
+      "from typing_extensions import TypedDict",
+      "from langgraph._internal._config import patch_configurable",
+      "from langgraph.graph.state import StateGraph"
+    ],
+    "imports": [
+      "import operator",
+      "import sys",
+      "import time",
+      "from collections import defaultdict",
+      "from typing import Annotated, Literal",
+      "import pytest",
+      "from langgraph.checkpoint.base import BaseCheckpointSaver, CheckpointTuple",
+      "from typing_extensions import TypedDict",
+      "from langgraph._internal._config import patch_configurable",
+      "from langgraph.graph.state import StateGraph",
+      "from langgraph.pregel._checkpoint import copy_checkpoint",
+      "from langgraph.types import Command, Interrupt, PregelTask, StateSnapshot, interrupt",
+      "from tests.any_int import AnyInt",
+      "from tests.any_str import AnyDict, AnyObject, AnyStr"
+    ],
+    "classes": [],
+    "functions": [
+      "get_expected_history",
+      "make_state_graph",
+      "test_migrate_checkpoints",
+      "test_latest_checkpoint_state_graph",
+      "test_saved_checkpoint_state_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_136_66fef39f5bd29d45_test_checkpoint_migration.py.json"
+}

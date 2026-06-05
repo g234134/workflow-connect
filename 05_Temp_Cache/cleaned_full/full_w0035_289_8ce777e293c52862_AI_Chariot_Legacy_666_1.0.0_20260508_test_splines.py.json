@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 289,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_splines.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_splines.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2629,
+  "content_sha256": "8ce777e293c528623983e4767b508a1240d8ba5ad5df03701dba7a7b4d196337",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 56,
+    "char_count": 2629,
+    "preview_lines": [
+      "\"\"\"Tests for spline filtering.\"\"\"",
+      "import pytest",
+      "import numpy as np",
+      "from scipy._lib._array_api import assert_almost_equal",
+      "from scipy import ndimage",
+      "from scipy.conftest import array_api_compatible",
+      "skip_xp_backends = pytest.mark.skip_xp_backends",
+      "pytestmark = [array_api_compatible, pytest.mark.usefixtures(\"skip_xp_backends\"),",
+      "              skip_xp_backends(cpu_only=True, exceptions=['cupy', 'jax.numpy'],)]",
+      "def get_spline_knot_values(order):"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from scipy._lib._array_api import assert_almost_equal",
+      "from scipy import ndimage",
+      "from scipy.conftest import array_api_compatible"
+    ],
+    "classes": [],
+    "functions": [
+      "get_spline_knot_values",
+      "make_spline_knot_matrix",
+      "test_spline_filter_vs_matrix_solution"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_289_8ce777e293c52862_AI_Chariot_Legacy_666_1.0.0_20260508_test_splines.py.json"
+}

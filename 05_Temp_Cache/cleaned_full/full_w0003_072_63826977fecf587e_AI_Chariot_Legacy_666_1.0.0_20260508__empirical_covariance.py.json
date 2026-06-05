@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 72,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__empirical_covariance.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__empirical_covariance.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12680,
+  "content_sha256": "63826977fecf587e6e29ff9433816007ccc93b0306c7a24258fc192025364d3a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 368,
+    "non_empty_lines": 301,
+    "char_count": 12680,
+    "preview_lines": [
+      "\"\"\"",
+      "Maximum likelihood covariance estimator.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "# avoid division truncation",
+      "import warnings",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from sklearn import config_context"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from scipy import linalg",
+      "from sklearn import config_context",
+      "from sklearn.base import BaseEstimator, _fit_context",
+      "from sklearn.metrics.pairwise import pairwise_distances",
+      "from sklearn.utils import check_array, metadata_routing",
+      "from sklearn.utils._param_validation import validate_params",
+      "from sklearn.utils.extmath import fast_logdet",
+      "from sklearn.utils.validation import validate_data"
+    ],
+    "classes": [
+      "EmpiricalCovariance"
+    ],
+    "functions": [
+      "log_likelihood",
+      "empirical_covariance"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_072_63826977fecf587e_AI_Chariot_Legacy_666_1.0.0_20260508__empirical_covariance.py.json"
+}

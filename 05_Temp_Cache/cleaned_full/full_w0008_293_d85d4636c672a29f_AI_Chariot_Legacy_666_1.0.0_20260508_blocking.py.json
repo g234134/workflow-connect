@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_blocking.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_blocking.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3689,
+  "content_sha256": "d85d4636c672a29f2405af9d2830b952fc60651e94d0c7a470cd3be2b2f2491a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 108,
+    "non_empty_lines": 88,
+    "char_count": 3689,
+    "preview_lines": [
+      "\"\"\" Implements a fully blocking kernel client.",
+      "Useful for test suites and blocking terminal interfaces.",
+      "\"\"\"",
+      "import sys",
+      "# -----------------------------------------------------------------------------",
+      "#  Copyright (C) 2012  The IPython Development Team",
+      "#",
+      "#  Distributed under the terms of the BSD License.  The full license is in",
+      "#  the file LICENSE, distributed as part of this software.",
+      "# -----------------------------------------------------------------------------"
+    ],
+    "imports": [
+      "import sys",
+      "from queue import Empty, Queue",
+      "from traitlets import Type",
+      "from .channels import InProcessChannel",
+      "from .client import InProcessKernelClient"
+    ],
+    "classes": [
+      "BlockingInProcessChannel",
+      "BlockingInProcessStdInChannel",
+      "BlockingInProcessKernelClient"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_293_d85d4636c672a29f_AI_Chariot_Legacy_666_1.0.0_20260508_blocking.py.json"
+}

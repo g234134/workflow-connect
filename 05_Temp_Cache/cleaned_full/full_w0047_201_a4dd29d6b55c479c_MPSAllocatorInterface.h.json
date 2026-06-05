@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 201,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\mps\\MPSAllocatorInterface.h",
+  "name": "MPSAllocatorInterface.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2667,
+  "content_sha256": "a4dd29d6b55c479ce1e397fc1b3aac9e58c220f4be97a6c573d146b20f340925",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 52,
+    "char_count": 2666,
+    "preview_lines": [
+      "//  Copyright © 2023 Apple Inc.",
+      "#pragma once",
+      "#include <c10/core/Allocator.h>",
+      "#include <c10/util/Registry.h>",
+      "#include <ATen/core/ATen_fwd.h>",
+      "#define MB(x) (x * 1048576UL)",
+      "namespace at::mps {",
+      "// this is a public interface to access MPSAllocator.",
+      "// Do not declare methods that would depend on MPS or Metal frameworks.",
+      "class IMPSAllocator : public c10::Allocator {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_201_a4dd29d6b55c479c_MPSAllocatorInterface.h.json"
+}

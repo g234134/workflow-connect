@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_exec_plan.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_exec_plan.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10433,
+  "content_sha256": "6dd10974dee2e6173aa91280f864ede69f4a1d1aabb1f6868d90902ff5c1f50c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 337,
+    "non_empty_lines": 285,
+    "char_count": 10433,
+    "preview_lines": [
+      "# Licensed to the Apache Software Foundation (ASF) under one",
+      "# or more contributor license agreements.  See the NOTICE file",
+      "# distributed with this work for additional information",
+      "# regarding copyright ownership.  The ASF licenses this file",
+      "# to you under the Apache License, Version 2.0 (the",
+      "# \"License\"); you may not use this file except in compliance",
+      "# with the License.  You may obtain a copy of the License at",
+      "#",
+      "#   http://www.apache.org/licenses/LICENSE-2.0",
+      "#"
+    ],
+    "imports": [
+      "import pytest",
+      "import pyarrow as pa",
+      "import pyarrow.compute as pc",
+      "from .test_extension_type import IntegerType",
+      "import pyarrow.dataset as ds",
+      "from pyarrow.acero import _perform_join, _filter_table"
+    ],
+    "classes": [],
+    "functions": [
+      "test_joins_corner_cases",
+      "test_joins",
+      "test_table_join_collisions",
+      "test_table_join_keys_order",
+      "test_filter_table_errors",
+      "test_filter_table",
+      "test_filter_table_ordering",
+      "test_complex_filter_table",
+      "test_join_extension_array_column",
+      "test_group_by_ordering"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_197_6dd10974dee2e617_AI_Chariot_Legacy_666_1.0.0_20260508_test_exec_plan.py.json"
+}

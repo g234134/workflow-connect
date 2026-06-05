@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_find_afc_incompatible_tool_indexes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_find_afc_incompatible_tool_indexes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9576,
+  "content_sha256": "0add8f7e18a1306693c73d21518d11841a5c080fcbe93bea721459551a69c00e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 268,
+    "non_empty_lines": 237,
+    "char_count": 9576,
+    "preview_lines": [
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from typing import Any",
+      "import pytest",
+      "from ... import types",
+      "from ..._extra_utils import find_afc_incompatible_tool_indexes",
+      "from mcp import types as mcp_types",
+      "from mcp import ClientSession as McpClientSession",
+      "from ..._adapters import McpToGenAiToolAdapter",
+      "import sys"
+    ],
+    "classes": [
+      "MockMcpClientSession"
+    ],
+    "functions": [
+      "get_weather_tool",
+      "test_no_config_returns_empty_list",
+      "test_config_with_no_tools_returns_empty_list",
+      "test_empty_tools_list_returns_empty_list",
+      "test_all_compatible_tools_returns_empty_list_with_empty_fd",
+      "test_all_compatible_tools_returns_empty_list_with_none_fd",
+      "test_all_compatible_tools_returns_empty_list",
+      "test_single_incompatible_tool",
+      "test_multiple_incompatible_tools",
+      "test_mcp_tool_incompatible"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_274_0add8f7e18a13066_AI_Chariot_Legacy_666_1.0.0_20260508_test_find_afc_incompatible_tool_indexes.py.json"
+}

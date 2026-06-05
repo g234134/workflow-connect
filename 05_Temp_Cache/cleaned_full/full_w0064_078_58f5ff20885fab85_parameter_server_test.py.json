@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 78,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\distributed\\rpc\\examples\\parameter_server_test.py",
+  "name": "parameter_server_test.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4679,
+  "content_sha256": "58f5ff20885fab854e060004d63558a114b68930738d668c3d025921727e059b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 115,
+    "char_count": 4679,
+    "preview_lines": [
+      "# If you need to modify this file to make this test pass, please also apply same edits accordingly to",
+      "# https://github.com/pytorch/examples/blob/master/distributed/rpc/batch/parameter_server.py",
+      "# and https://pytorch.org/tutorials/intermediate/rpc_async_execution.html#batch-updating-parameter-server",
+      "import threading",
+      "from datetime import datetime",
+      "from time import perf_counter",
+      "import torch",
+      "import torch.distributed.rpc as rpc",
+      "import torch.nn as nn",
+      "from torch import optim"
+    ],
+    "imports": [
+      "import threading",
+      "from datetime import datetime",
+      "from time import perf_counter",
+      "import torch",
+      "import torch.distributed.rpc as rpc",
+      "import torch.nn as nn",
+      "from torch import optim",
+      "from torch.testing._internal.dist_utils import (",
+      "from torch.testing._internal.distributed.rpc.rpc_agent_test_fixture import RpcAgentTestFixture"
+    ],
+    "classes": [
+      "BatchUpdateParameterServer",
+      "Trainer",
+      "ParameterServerTest"
+    ],
+    "functions": [
+      "timed_log",
+      "run_trainer",
+      "run_ps"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_078_58f5ff20885fab85_parameter_server_test.py.json"
+}

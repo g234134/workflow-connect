@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 295,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aggregate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aggregate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5496,
+  "content_sha256": "8f916318a9a7c7b589e3a733ce7077b2cb38e75e4bf8409275f4822c43a7bbc2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 128,
+    "char_count": 5494,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "\"\"\"AggregateStrategy — organizes knowledge for sustained performance.",
+      "Aggregation extracts structured knowledge from raw events and writes it",
+      "to the knowledge store. This is the knowledge-organizing operation:",
+      "triggered at deterministic milestones to maintain agent effectiveness.",
+      "Unlike compaction (which removes), aggregation creates.",
+      "\"\"\"",
+      "from dataclasses import dataclass"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from datetime import datetime, timezone",
+      "from typing import Protocol, runtime_checkable",
+      "from fast_depends.pydantic import PydanticSerializer",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.config import ModelConfig",
+      "from autogen.beta.context import ConversationContext",
+      "from autogen.beta.events import BaseEvent, ModelRequest",
+      "from autogen.beta.stream import MemoryStream",
+      "from .knowledge import CONVERSATIONS_PREFIX, WORKING_MEMORY_PATH, KnowledgeStore"
+    ],
+    "classes": [
+      "AggregateStrategy",
+      "AggregateTrigger",
+      "ConversationSummaryAggregate",
+      "WorkingMemoryAggregate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_295_8f916318a9a7c7b5_AI_Chariot_Legacy_666_1.0.0_20260508_aggregate.py.json"
+}

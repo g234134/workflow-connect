@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spider_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spider_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7498,
+  "content_sha256": "732a5470ae183c3d79c5979bcfee4a8fdac06c6f8898e098d140fe79881d97a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 177,
+    "char_count": 7498,
+    "preview_lines": [
+      "import logging",
+      "import subprocess",
+      "from typing import Any, Literal",
+      "from urllib.parse import unquote, urlparse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "logger = logging.getLogger(__file__)",
+      "class SpiderToolSchema(BaseModel):",
+      "    \"\"\"Input schema for SpiderTool.\"\"\"",
+      "    website_url: str = Field("
+    ],
+    "imports": [
+      "import logging",
+      "import subprocess",
+      "from typing import Any, Literal",
+      "from urllib.parse import unquote, urlparse",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "from spider import Spider",
+      "import click",
+      "from spider import Spider  # type: ignore[import-untyped]"
+    ],
+    "classes": [
+      "SpiderToolSchema",
+      "SpiderToolConfig",
+      "SpiderTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_167_732a5470ae183c3d_AI_Chariot_Legacy_666_1.0.0_20260508_spider_tool.py.json"
+}

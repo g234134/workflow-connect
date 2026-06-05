@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_registration.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_registration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19640,
+  "content_sha256": "0f0ed1ee0df114f2d929c8b973da711a681aba1f1111cb64b5db475d2af86a8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 382,
+    "non_empty_lines": 308,
+    "char_count": 19640,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "from torch.overrides import (",
+      "    handle_torch_function,",
+      "    has_torch_function_unary,",
+      ")",
+      "from torch._C import _rename_privateuse1_backend, _get_privateuse1_backend_name",
+      "from typing import List, Optional, Union",
+      "__all__ = [\"rename_privateuse1_backend\", \"generate_methods_for_privateuse1_backend\"]",
+      "# TODO: Should use `torch._C._get_privateuse1_backend_name()` to get"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.overrides import (",
+      "from torch._C import _rename_privateuse1_backend, _get_privateuse1_backend_name",
+      "from typing import List, Optional, Union"
+    ],
+    "classes": [],
+    "functions": [
+      "rename_privateuse1_backend",
+      "_check_register_once",
+      "_normalization_device",
+      "_generate_tensor_methods_for_privateuse1_backend",
+      "_generate_module_methods_for_privateuse1_backend",
+      "_generate_packed_sequence_methods_for_privateuse1_backend",
+      "_generate_storage_methods_for_privateuse1_backend",
+      "generate_methods_for_privateuse1_backend",
+      "_get_custom_mod_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_423_0f0ed1ee0df114f2_AI_Chariot_Legacy_666_1.0.0_20260508_backend_registration.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\strategies\\branch\\tests\\test_core.py",
+  "name": "test_core.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2246,
+  "content_sha256": "db7290589c42ff64f56abc0c024b7da58d59b46e7d6af9714d97154e7f3550f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 81,
+    "char_count": 2246,
+    "preview_lines": [
+      "from sympy.strategies.branch.core import (",
+      "    exhaust, debug, multiplex, condition, notempty, chain, onaction, sfilter,",
+      "    yieldify, do_one, identity)",
+      "def posdec(x):",
+      "    if x > 0:",
+      "        yield x - 1",
+      "    else:",
+      "        yield x",
+      "def branch5(x):",
+      "    if 0 < x < 5:"
+    ],
+    "imports": [
+      "from sympy.strategies.branch.core import (",
+      "from io import StringIO"
+    ],
+    "classes": [],
+    "functions": [
+      "posdec",
+      "branch5",
+      "even",
+      "inc",
+      "one_to_n",
+      "test_exhaust",
+      "test_debug",
+      "test_multiplex",
+      "test_condition",
+      "test_sfilter",
+      "test_notempty",
+      "test_chain",
+      "test_onaction",
+      "test_yieldify",
+      "test_do_one"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_285_db7290589c42ff64_test_core.py.json"
+}

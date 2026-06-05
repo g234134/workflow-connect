@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_add_code_to_python_process.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_add_code_to_python_process.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23283,
+  "content_sha256": "d4e9e29a22585f692c573db6c5dc9d36115bc561425a04253b1ef7366beb3cff",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 606,
+    "non_empty_lines": 488,
+    "char_count": 23283,
+    "preview_lines": [
+      "r\"\"\"",
+      "Copyright: Brainwy Software Ltda.",
+      "License: EPL.",
+      "=============",
+      "Works for Windows by using an executable that'll inject a dll to a process and call a function.",
+      "Note: https://github.com/fabioz/winappdbg is used just to determine if the target process is 32 or 64 bits.",
+      "Works for Linux relying on gdb.",
+      "Limitations:",
+      "============",
+      "    Linux:"
+    ],
+    "imports": [
+      "import ctypes",
+      "import os",
+      "import struct",
+      "import subprocess",
+      "import sys",
+      "import time",
+      "from contextlib import contextmanager",
+      "import platform",
+      "import traceback",
+      "from winappdbg.win32.kernel32 import CreateEventA, WaitForSingleObject, CloseHandle"
+    ],
+    "classes": [],
+    "functions": [
+      "_create_win_event",
+      "is_python_64bit",
+      "get_target_filename",
+      "run_python_code_windows",
+      "_acquire_mutex",
+      "_win_write_to_shared_named_memory",
+      "run_python_code_linux",
+      "find_helper_script",
+      "run_python_code_mac",
+      "test",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_220_d4e9e29a22585f69_AI_Chariot_Legacy_666_1.0.0_20260508_add_code_to_python_process.py.json"
+}

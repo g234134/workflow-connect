@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 357,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\.github\\workflows\\require_issue_link.yml",
+  "name": "require_issue_link.yml",
+  "extension": ".yml",
+  "original_type": "yaml",
+  "size_bytes": 22365,
+  "content_sha256": "592e19a3da80e070676845b9df85a3e7f7119197a3bb49d0b817d86f912ab2ad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 467,
+    "non_empty_lines": 430,
+    "char_count": 21887,
+    "preview_lines": [
+      "# Require external PRs to reference an approved issue (e.g. Fixes #NNN) and",
+      "# the PR author to be assigned to that issue. On failure the PR is",
+      "# labeled \"missing-issue-link\", commented on, and closed.",
+      "#",
+      "# Maintainer override: an org member can reopen the PR or remove",
+      "# \"missing-issue-link\" — both add \"bypass-issue-check\" and reopen.",
+      "#",
+      "# Dependency: tag-external-prs.yml must apply the \"external\" label",
+      "# first. This workflow does NOT trigger on \"opened\" (new PRs have no labels",
+      "# yet, so the gate would always skip)."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_357_592e19a3da80e070_require_issue_link.yml.json"
+}

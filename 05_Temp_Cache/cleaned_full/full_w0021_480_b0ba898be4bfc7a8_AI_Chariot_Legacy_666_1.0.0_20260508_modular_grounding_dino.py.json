@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 480,
+  "generated_at": "2026-05-08T18:45:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_grounding_dino.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_grounding_dino.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8885,
+  "content_sha256": "b0ba898be4bfc7a8da7e6f433e516b8e94c5a1ec5f4f76215a37702f96890bdb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 159,
+    "char_count": 8885,
+    "preview_lines": [
+      "# Copyright 2025 the HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# This code is based on EleutherAI's GPT-NeoX library and the GPT-NeoX",
+      "# and OPT implementations in this library. It has been modified from its",
+      "# original forms to accommodate minor architectural differences compared",
+      "# to GPT-NeoX and OPT used by the Meta AI team that trained the model.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "import torch",
+      "from transformers.models.detr.image_processing_detr import DetrImageProcessor",
+      "from transformers.models.detr.image_processing_pil_detr import DetrImageProcessorPil",
+      "from ...image_transforms import center_to_corners_format",
+      "from ...utils import (",
+      "from ...utils.import_utils import requires",
+      "from .modeling_grounding_dino import GroundingDinoObjectDetectionOutput"
+    ],
+    "classes": [
+      "GroundingDinoImageProcessor",
+      "GroundingDinoImageProcessorPil"
+    ],
+    "functions": [
+      "_scale_boxes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_480_b0ba898be4bfc7a8_AI_Chariot_Legacy_666_1.0.0_20260508_modular_grounding_dino.py.json"
+}

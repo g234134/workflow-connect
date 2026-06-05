@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_success_no_plugin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_success_no_plugin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 441,
+  "content_sha256": "274eb3f9f099ce8f5c303c351815fdd36c0325a221d407d23ce2d71006d9220f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 441,
+    "preview_lines": [
+      "from thinc.api import Relu, Softmax, add, chain, reduce_max",
+      "good_model = chain(Relu(10), Relu(10), Softmax())",
+      "reveal_type(good_model)",
+      "good_model2 = add(Relu(10), Relu(10), Softmax())",
+      "reveal_type(good_model2)",
+      "bad_model_undetected = chain(Relu(10), Relu(10), reduce_max(), Softmax())",
+      "reveal_type(bad_model_undetected)",
+      "bad_model_undetected2 = add(Relu(10), Relu(10), reduce_max(), Softmax())",
+      "reveal_type(bad_model_undetected2)"
+    ],
+    "imports": [
+      "from thinc.api import Relu, Softmax, add, chain, reduce_max"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_472_274eb3f9f099ce8f_AI_Chariot_Legacy_666_1.0.0_20260508_success_no_plugin.py.json"
+}

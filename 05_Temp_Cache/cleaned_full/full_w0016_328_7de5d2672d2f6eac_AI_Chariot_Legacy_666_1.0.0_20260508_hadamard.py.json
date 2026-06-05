@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 328,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_hadamard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_hadamard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13920,
+  "content_sha256": "7de5d2672d2f6eac53ce0d0978b9a449e8221784f6bf974e75cbf45107332b7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 464,
+    "non_empty_lines": 373,
+    "char_count": 13920,
+    "preview_lines": [
+      "from collections import Counter",
+      "from sympy.core import Mul, sympify",
+      "from sympy.core.add import Add",
+      "from sympy.core.expr import ExprBuilder",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.matrices.expressions.matexpr import MatrixExpr",
+      "from sympy.matrices.expressions._shape import validate_matadd_integer as validate",
+      "from sympy.matrices.expressions.special import ZeroMatrix, OneMatrix",
+      "from sympy.strategies import ("
+    ],
+    "imports": [
+      "from collections import Counter",
+      "from sympy.core import Mul, sympify",
+      "from sympy.core.add import Add",
+      "from sympy.core.expr import ExprBuilder",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.functions.elementary.exponential import log",
+      "from sympy.matrices.expressions.matexpr import MatrixExpr",
+      "from sympy.matrices.expressions._shape import validate_matadd_integer as validate",
+      "from sympy.matrices.expressions.special import ZeroMatrix, OneMatrix",
+      "from sympy.strategies import (",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.matrices.expressions.transpose import transpose",
+      "from sympy.matrices.matrixbase import MatrixBase",
+      "from sympy.matrices.immutable import ImmutableMatrix",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayDiagonal",
+      "from sympy.tensor.array.expressions.array_expressions import ArrayTensorProduct",
+      "from sympy.matrices.expressions.matexpr import _make_matrix"
+    ],
+    "classes": [
+      "HadamardProduct",
+      "HadamardPower"
+    ],
+    "functions": [
+      "hadamard_product",
+      "canonicalize",
+      "hadamard_power"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_328_7de5d2672d2f6eac_AI_Chariot_Legacy_666_1.0.0_20260508_hadamard.py.json"
+}

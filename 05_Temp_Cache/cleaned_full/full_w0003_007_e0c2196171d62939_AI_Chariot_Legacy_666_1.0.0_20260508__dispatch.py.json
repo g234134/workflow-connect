@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 7,
+  "generated_at": "2026-05-08T18:44:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dispatch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dispatch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22038,
+  "content_sha256": "e0c2196171d62939b09d50131c9aea7850e8ed1a736c8314444de6bb758adbb2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 510,
+    "non_empty_lines": 462,
+    "char_count": 22038,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "import contextlib",
+      "import functools",
+      "import logging",
+      "import operator",
+      "import warnings",
+      "from typing import cast, Dict, List, Optional, Sequence, Tuple, TYPE_CHECKING",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.tensor._api as dtensor"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import logging",
+      "import operator",
+      "import warnings",
+      "from typing import cast, Dict, List, Optional, Sequence, Tuple, TYPE_CHECKING",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.tensor._api as dtensor",
+      "import torch.distributed.tensor._random as random",
+      "from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta",
+      "from torch.distributed.tensor._op_schema import (",
+      "from torch.distributed.tensor._random import is_rng_supported_mesh",
+      "from torch.distributed.tensor._redistribute import redistribute_local_tensor",
+      "from torch.distributed.tensor._sharding_prop import ShardingPropagator",
+      "from torch.distributed.tensor._tp_conv import (",
+      "from torch.distributed.tensor._utils import try_find_mesh_from_args",
+      "from torch.distributed.tensor.placement_types import Partial, Placement, Replicate",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from torch.utils import _cxx_pytree as pytree"
+    ],
+    "classes": [
+      "OpDispatcher"
+    ],
+    "functions": [
+      "decompose_handler",
+      "is_same_size_handler",
+      "found_inf_reduce_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_007_e0c2196171d62939_AI_Chariot_Legacy_666_1.0.0_20260508__dispatch.py.json"
+}

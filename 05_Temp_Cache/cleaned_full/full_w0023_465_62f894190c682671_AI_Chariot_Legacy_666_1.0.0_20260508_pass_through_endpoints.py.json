@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pass_through_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pass_through_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 702,
+  "content_sha256": "62f894190c6826716e2fbcd0a69884b549ae78b7323caed2fafc8a65e4c77941",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 20,
+    "char_count": 702,
+    "preview_lines": [
+      "\"\"\"",
+      "What is this? ",
+      "CRUD endpoints for managing pass-through endpoints",
+      "\"\"\"",
+      "from fastapi import APIRouter, Depends, Request, Response",
+      "from litellm.proxy._types import *",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "router = APIRouter()",
+      "@router.get(",
+      "    \"/config/pass_through_endpoints/settings\","
+    ],
+    "imports": [
+      "from fastapi import APIRouter, Depends, Request, Response",
+      "from litellm.proxy._types import *",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_465_62f894190c682671_AI_Chariot_Legacy_666_1.0.0_20260508_pass_through_endpoints.py.json"
+}

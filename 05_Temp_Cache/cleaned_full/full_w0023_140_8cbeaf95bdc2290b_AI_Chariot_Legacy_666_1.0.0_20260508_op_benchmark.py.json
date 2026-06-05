@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 140,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_op_benchmark.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_op_benchmark.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4332,
+  "content_sha256": "8cbeaf95bdc2290b2b7491ed20fca61d7a1595303dd081acf55cd9f966eff78b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 105,
+    "non_empty_lines": 85,
+    "char_count": 4332,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "\"\"\"Example use of Timer and op fuzzers to measure kernel performance.",
+      "$ python -m examples.op_benchmark",
+      "\"\"\"",
+      "import numpy as np",
+      "import torch",
+      "from torch.utils.benchmark import Timer",
+      "from torch.utils.benchmark.op_fuzzers.binary import BinaryOpFuzzer",
+      "from torch.utils.benchmark.op_fuzzers.unary import UnaryOpFuzzer",
+      "import operator"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import torch",
+      "from torch.utils.benchmark import Timer",
+      "from torch.utils.benchmark.op_fuzzers.binary import BinaryOpFuzzer",
+      "from torch.utils.benchmark.op_fuzzers.unary import UnaryOpFuzzer",
+      "import operator"
+    ],
+    "classes": [],
+    "functions": [
+      "assert_dicts_equal",
+      "run",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_140_8cbeaf95bdc2290b_AI_Chariot_Legacy_666_1.0.0_20260508_op_benchmark.py.json"
+}

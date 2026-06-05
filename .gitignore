@@ -1,0 +1,60 @@
+# 大唐三省六部 · 根 .gitignore
+# 規則：保密 (.env)、清掃 (.log / __pycache__)、隔離 (虛擬環境)
+
+# ── 密鑰 / 環境檔（嚴禁入庫） ──
+.env
+.env.*
+!.env.example
+**/.env
+!**/.env.example
+
+# ── 執行紀錄 / 暫存日誌 ──
+*.log
+*.log.*
+logs/
+
+# ── Python 快取 ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── 虛擬環境（雙艙與其它） ──
+python_venvs/
+.venv*/
+venv/
+env/
+
+# ── 鎖檔（執行期）/ 監聽器狀態 ──
+.telegram_listener.lock
+.telegram_listener_state.json
+
+# ── IDE / OS ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── 大型工件（按需放行） ──
+*.zip
+*.tar
+*.7z
+
+# 注意：lock 形式的 requirements 仍要入庫供他人重現
+!01_Environments/requirements.*.lock.txt
+
+# === Workflow Storage Ignore Rules ===
+# 僅忽略各 run 目錄內大型／易暴量原始材料；不針對 workflow_summary.json、execution_trace.json、*.md 報告等常規產物檔名。
+04_Workflows/runs/**/artifacts/
+04_Workflows/runs/**/raw_logs/
+04_Workflows/runs/**/screenshots/
+04_Workflows/runs/**/downloads/
+04_Workflows/runs/**/tool_raw_output.json
+04_Workflows/runs/**/debug_dump.json
+
+# P-line eval artifacts (dev/staging exports; may contain run metadata)
+artifacts/eval/*.jsonl
+!artifacts/eval/.gitkeep
+
+# Cursor hooks runtime state (B Hooks v0.1)
+.cursor/hooks_state/

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 452,
+  "generated_at": "2026-05-08T18:47:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\mst.py",
+  "name": "mst.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46145,
+  "content_sha256": "50c7929e7a4aacf7aaedaff0fed478d79c3d4ce2e5b66cee5f2232fc77ea6c05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1281,
+    "non_empty_lines": 1069,
+    "char_count": 46130,
+    "preview_lines": [
+      "\"\"\"",
+      "Algorithms for calculating min/max spanning trees/forests.",
+      "\"\"\"",
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "from math import isnan",
+      "from operator import itemgetter",
+      "from queue import PriorityQueue"
+    ],
+    "imports": [
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "from math import isnan",
+      "from operator import itemgetter",
+      "from queue import PriorityQueue",
+      "import networkx as nx",
+      "from networkx.utils import UnionFind, not_implemented_for, py_random_state"
+    ],
+    "classes": [
+      "EdgePartition",
+      "SpanningTreeIterator"
+    ],
+    "functions": [
+      "boruvka_mst_edges",
+      "kruskal_mst_edges",
+      "prim_mst_edges",
+      "minimum_spanning_edges",
+      "maximum_spanning_edges",
+      "minimum_spanning_tree",
+      "partition_spanning_tree",
+      "maximum_spanning_tree",
+      "random_spanning_tree",
+      "number_of_spanning_trees"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_452_50c7929e7a4aacf7_mst.py.json"
+}

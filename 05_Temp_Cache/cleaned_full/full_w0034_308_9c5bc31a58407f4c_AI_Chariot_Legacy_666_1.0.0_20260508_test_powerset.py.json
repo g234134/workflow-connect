@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 308,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_powerset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_powerset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4805,
+  "content_sha256": "9c5bc31a58407f4c06fa96673e48098dfc031eb4f076ba373182229f0cb19fde",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 141,
+    "non_empty_lines": 117,
+    "char_count": 4805,
+    "preview_lines": [
+      "from sympy.core.expr import unchanged",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.sets.contains import Contains",
+      "from sympy.sets.fancysets import Interval",
+      "from sympy.sets.powerset import PowerSet",
+      "from sympy.sets.sets import FiniteSet",
+      "from sympy.testing.pytest import raises, XFAIL",
+      "def test_powerset_creation():",
+      "    assert unchanged(PowerSet, FiniteSet(1, 2))"
+    ],
+    "imports": [
+      "from sympy.core.expr import unchanged",
+      "from sympy.core.singleton import S",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.sets.contains import Contains",
+      "from sympy.sets.fancysets import Interval",
+      "from sympy.sets.powerset import PowerSet",
+      "from sympy.sets.sets import FiniteSet",
+      "from sympy.testing.pytest import raises, XFAIL"
+    ],
+    "classes": [],
+    "functions": [
+      "test_powerset_creation",
+      "test_powerset_rewrite_FiniteSet",
+      "test_finiteset_rewrite_powerset",
+      "test_powerset__contains__",
+      "test_failing_powerset__contains__",
+      "test_powerset__len__",
+      "test_powerset__iter__",
+      "test_powerset_contains",
+      "test_powerset_method",
+      "test_is_subset"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_308_9c5bc31a58407f4c_AI_Chariot_Legacy_666_1.0.0_20260508_test_powerset.py.json"
+}

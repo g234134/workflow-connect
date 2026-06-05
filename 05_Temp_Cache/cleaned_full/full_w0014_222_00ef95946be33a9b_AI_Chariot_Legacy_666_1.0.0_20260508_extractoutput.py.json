@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 222,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_extractoutput.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_extractoutput.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6445,
+  "content_sha256": "00ef95946be33a9bbc2af0dc0e12e94172d906328d310dd9fecdcdad6a3e6481",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 150,
+    "non_empty_lines": 128,
+    "char_count": 6445,
+    "preview_lines": [
+      "\"\"\"A preprocessor that extracts all of the outputs from the",
+      "notebook file.  The extracted outputs are returned in the 'resources' dictionary.",
+      "\"\"\"",
+      "# Copyright (c) IPython Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "import json",
+      "import os",
+      "import sys",
+      "from binascii import a2b_base64",
+      "from mimetypes import guess_extension"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import sys",
+      "from binascii import a2b_base64",
+      "from mimetypes import guess_extension",
+      "from textwrap import dedent",
+      "from traitlets import Set, Unicode",
+      "from .base import Preprocessor"
+    ],
+    "classes": [
+      "ExtractOutputPreprocessor"
+    ],
+    "functions": [
+      "guess_extension_without_jpe",
+      "platform_utf_8_encode"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_222_00ef95946be33a9b_AI_Chariot_Legacy_666_1.0.0_20260508_extractoutput.py.json"
+}

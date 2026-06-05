@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 128,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__writers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__writers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5081,
+  "content_sha256": "a052a6e8fb637877db8f844b5fb541eca0dcd60218e778171b7fc747d96d9930",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 118,
+    "char_count": 5081,
+    "preview_lines": [
+      "# Code to read HTTP data",
+      "#",
+      "# Strategy: each writer takes an event + a write-some-bytes function, which is",
+      "# calls.",
+      "#",
+      "# WRITERS is a dict describing how to pick a reader. It maps states to either:",
+      "# - a writer",
+      "# - or, for body writers, a dict of framin-dependent writer factories",
+      "from typing import Any, Callable, Dict, List, Tuple, Type, Union",
+      "from ._events import Data, EndOfMessage, Event, InformationalResponse, Request, Response"
+    ],
+    "imports": [
+      "from typing import Any, Callable, Dict, List, Tuple, Type, Union",
+      "from ._events import Data, EndOfMessage, Event, InformationalResponse, Request, Response",
+      "from ._headers import Headers",
+      "from ._state import CLIENT, IDLE, SEND_BODY, SEND_RESPONSE, SERVER",
+      "from ._util import LocalProtocolError, Sentinel"
+    ],
+    "classes": [
+      "BodyWriter",
+      "ContentLengthWriter",
+      "ChunkedWriter",
+      "Http10Writer"
+    ],
+    "functions": [
+      "write_headers",
+      "write_request",
+      "write_any_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_128_a052a6e8fb637877_AI_Chariot_Legacy_666_1.0.0_20260508__writers.py.json"
+}

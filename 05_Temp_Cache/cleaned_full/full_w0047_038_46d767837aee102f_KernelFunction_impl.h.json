@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 38,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\boxing\\KernelFunction_impl.h",
+  "name": "KernelFunction_impl.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 10904,
+  "content_sha256": "46d767837aee102fd92291671c413ae287f05b24fe670026e57255de712e9da7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 189,
+    "char_count": 10904,
+    "preview_lines": [
+      "#include <ATen/core/boxing/impl/boxing.h>",
+      "#include <ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h>",
+      "#include <ATen/core/boxing/impl/WrapFunctionIntoFunctor.h>",
+      "#include <ATen/core/boxing/impl/WrapFunctionIntoRuntimeFunctor.h>",
+      "namespace c10 {",
+      "inline KernelFunction::KernelFunction()",
+      "    : boxed_kernel_func_()",
+      "    , unboxed_kernel_func_(nullptr)",
+      "    , sym_unboxed_kernel_func_(nullptr)",
+      "{}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_038_46d767837aee102f_KernelFunction_impl.h.json"
+}

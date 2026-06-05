@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 257,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testGatewayAddresses.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testGatewayAddresses.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5342,
+  "content_sha256": "7ec0e68d9bca6db4b287e60049502d32951eab6f2254486b67abe446ff364035",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 149,
+    "non_empty_lines": 113,
+    "char_count": 5342,
+    "preview_lines": [
+      "# The purpose of this test is to ensure that the gateways objects",
+      "# do the right thing WRT COM rules about object identity etc.",
+      "# Also includes a basic test that we support inheritance correctly in",
+      "# gateway interfaces.",
+      "# For our test, we create an object of type IID_IPersistStorage",
+      "# This interface derives from IPersist.",
+      "# Therefore, QI's for IID_IDispatch, IID_IUnknown, IID_IPersist and",
+      "# IID_IPersistStorage should all return the same gateway object.",
+      "#",
+      "# In addition, the interface should only need to declare itself as"
+    ],
+    "imports": [
+      "import pythoncom",
+      "from win32com.server.util import wrap",
+      "from .util import CheckClean"
+    ],
+    "classes": [
+      "Dummy",
+      "Dummy2",
+      "DelegatedDummy",
+      "Dummy3"
+    ],
+    "functions": [
+      "CheckSameCOMObject",
+      "CheckObjectIdentity",
+      "FailObjectIdentity",
+      "TestGatewayInheritance",
+      "TestMultiInterface",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_257_7ec0e68d9bca6db4_AI_Chariot_Legacy_666_1.0.0_20260508_testGatewayAddresses.py.json"
+}

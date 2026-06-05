@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 230,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\dynamo\\cpython_defs.h",
+  "name": "cpython_defs.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 560,
+  "content_sha256": "30c641b21851763a466b250f1ff6e51c45b56022c27eede4187aa487627558a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 13,
+    "char_count": 560,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/utils/python_compat.h>",
+      "// Functions that need to be copied from the CPython source",
+      "// should go in cpython_defs.c. Copying is required when, e.g.,",
+      "// we need to call internal CPython functions that are not exposed.",
+      "#if IS_PYTHON_3_11_PLUS",
+      "#include <internal/pycore_frame.h>",
+      "int THP_PyFrame_FastToLocalsWithError(_PyInterpreterFrame* frame);",
+      "PyFunctionObject* _PyFunction_CopyWithNewCode(",
+      "    PyFunctionObject* o,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_230_30c641b21851763a_cpython_defs.h.json"
+}

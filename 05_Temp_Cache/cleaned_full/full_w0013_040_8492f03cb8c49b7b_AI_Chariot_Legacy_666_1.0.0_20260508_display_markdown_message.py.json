@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_display_markdown_message.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_display_markdown_message.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 884,
+  "content_sha256": "8492f03cb8c49b7b1149f05809a8780589b23c215adeeefd57a33374480c2d28",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 23,
+    "char_count": 884,
+    "preview_lines": [
+      "from rich import print as rich_print",
+      "from rich.markdown import Markdown",
+      "from rich.rule import Rule",
+      "def display_markdown_message(message):",
+      "    \"\"\"",
+      "    Display markdown message. Works with multiline strings with lots of indentation.",
+      "    Will automatically make single line > tags beautiful.",
+      "    \"\"\"",
+      "    for line in message.split(\"\\n\"):",
+      "        line = line.strip()"
+    ],
+    "imports": [
+      "from rich import print as rich_print",
+      "from rich.markdown import Markdown",
+      "from rich.rule import Rule"
+    ],
+    "classes": [],
+    "functions": [
+      "display_markdown_message"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_040_8492f03cb8c49b7b_AI_Chariot_Legacy_666_1.0.0_20260508_display_markdown_message.py.json"
+}

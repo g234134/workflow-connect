@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 433,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ensemblelda.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ensemblelda.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 60758,
+  "content_sha256": "d48f873f92791de1998c8cff4613a33c2de0588a66c6f11f4e4256e4a7ce38e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1371,
+    "non_empty_lines": 1076,
+    "char_count": 60758,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Authors: Tobias Brigl <github.com/sezanzeb>, Alex Salles <alex.salles@gmail.com>,",
+      "# Alex Loosley <aloosley@alumni.brown.edu>, Data Reply Munich",
+      "# Copyright (C) 2021 Radim Rehurek <me@radimrehurek.com>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Ensemble Latent Dirichlet Allocation (eLDA), an algorithm for extracting reliable topics.",
+      "The aim of topic modelling is to find a set of topics that represent the global structure of a corpus of documents. One",
+      "issue that occurs with topics extracted from an NMF or LDA model is reproducibility. That is, if the topic model is"
+    ],
+    "imports": [
+      "import logging",
+      "import os",
+      "from multiprocessing import Process, Pipe, ProcessError",
+      "import importlib",
+      "from typing import Set, Optional, List",
+      "import numpy as np",
+      "from scipy.spatial.distance import cosine",
+      "from dataclasses import dataclass",
+      "from gensim import utils",
+      "from gensim.models import ldamodel, ldamulticore, basemodel",
+      "from gensim.utils import SaveLoad"
+    ],
+    "classes": [
+      "Topic",
+      "Cluster",
+      "EnsembleLda",
+      "CBDBSCAN"
+    ],
+    "functions": [
+      "_is_valid_core",
+      "_remove_from_all_sets",
+      "_contains_isolated_cores",
+      "_aggregate_topics",
+      "_group_by_labels",
+      "_teardown",
+      "mass_masking",
+      "rank_masking",
+      "_validate_clusters",
+      "_generate_topic_models_multiproc",
+      "_generate_topic_models",
+      "_generate_topic_models_worker",
+      "_calculate_asymmetric_distance_matrix_chunk",
+      "_asymmetric_distance_matrix_worker",
+      "_calculate_assymetric_distance_matrix_multiproc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_433_d48f873f92791de1_AI_Chariot_Legacy_666_1.0.0_20260508_ensemblelda.py.json"
+}

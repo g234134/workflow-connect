@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__highlevel_open_tcp_listeners.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__highlevel_open_tcp_listeners.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9994,
+  "content_sha256": "9e24a6820ac81c72fe515af0d5dddb001726cec526dab7bde374c7c336b7cd03",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 251,
+    "non_empty_lines": 202,
+    "char_count": 9986,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import errno",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import trio",
+      "from trio import TaskStatus",
+      "from . import socket as tsocket",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Awaitable, Callable",
+      "if sys.version_info < (3, 11):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import errno",
+      "import sys",
+      "from typing import TYPE_CHECKING",
+      "import trio",
+      "from trio import TaskStatus",
+      "from . import socket as tsocket",
+      "from collections.abc import Awaitable, Callable",
+      "from exceptiongroup import ExceptionGroup",
+      "from trio import SocketListener, SocketStream"
+    ],
+    "classes": [],
+    "functions": [
+      "_compute_backlog"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_313_9e24a6820ac81c72_AI_Chariot_Legacy_666_1.0.0_20260508__highlevel_open_tcp_listeners.py.json"
+}

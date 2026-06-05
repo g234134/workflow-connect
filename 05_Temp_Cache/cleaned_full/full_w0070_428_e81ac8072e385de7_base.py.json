@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:49:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint\\langgraph\\checkpoint\\serde\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2000,
+  "content_sha256": "e81ac8072e385de7dbc18f9d77746a026073f7a52ec453a699aafe049bfb7d00",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 40,
+    "char_count": 1997,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import Any, Protocol, runtime_checkable",
+      "class UntypedSerializerProtocol(Protocol):",
+      "    \"\"\"Protocol for serialization and deserialization of objects.\"\"\"",
+      "    def dumps(self, obj: Any) -> bytes: ...",
+      "    def loads(self, data: bytes) -> Any: ...",
+      "@runtime_checkable",
+      "class SerializerProtocol(Protocol):",
+      "    \"\"\"Protocol for serialization and deserialization of objects.",
+      "    - `dumps_typed`: Serialize an object to a tuple `(type, bytes)`."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Protocol, runtime_checkable"
+    ],
+    "classes": [
+      "UntypedSerializerProtocol",
+      "SerializerProtocol",
+      "SerializerCompat",
+      "CipherProtocol"
+    ],
+    "functions": [
+      "maybe_add_typed_methods"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_428_e81ac8072e385de7_base.py.json"
+}

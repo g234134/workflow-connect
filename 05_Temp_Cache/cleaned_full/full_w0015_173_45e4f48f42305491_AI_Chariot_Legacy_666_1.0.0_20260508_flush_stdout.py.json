@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 173,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_flush_stdout.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_flush_stdout.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3236,
+  "content_sha256": "45e4f48f423054911cb61ed5263db313a51c634395cf952dd6ba403676c2c984",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 75,
+    "char_count": 3236,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import errno",
+      "import os",
+      "import sys",
+      "from contextlib import contextmanager",
+      "from typing import IO, Iterator, TextIO",
+      "__all__ = [\"flush_stdout\"]",
+      "def flush_stdout(stdout: TextIO, data: str) -> None:",
+      "    # If the IO object has an `encoding` and `buffer` attribute, it means that",
+      "    # we can access the underlying BinaryIO object and write into it in binary"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import errno",
+      "import os",
+      "import sys",
+      "from contextlib import contextmanager",
+      "from typing import IO, Iterator, TextIO"
+    ],
+    "classes": [],
+    "functions": [
+      "flush_stdout",
+      "_blocking_io"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_173_45e4f48f42305491_AI_Chariot_Legacy_666_1.0.0_20260508_flush_stdout.py.json"
+}

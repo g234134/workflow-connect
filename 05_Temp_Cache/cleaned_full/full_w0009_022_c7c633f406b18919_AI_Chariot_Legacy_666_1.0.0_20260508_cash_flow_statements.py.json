@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 22,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cash_flow_statements.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cash_flow_statements.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2109,
+  "content_sha256": "c7c633f406b18919769a9acf8c2208fae7f778f76ef6524507cb8f64932afa4c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 51,
+    "char_count": 2109,
+    "preview_lines": [
+      "from typing import Optional, Type",
+      "from langchain_core.callbacks import CallbackManagerForToolRun",
+      "from langchain_core.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper",
+      "class CashFlowStatementsSchema(BaseModel):",
+      "    \"\"\"Input for CashFlowStatements.\"\"\"",
+      "    ticker: str = Field(",
+      "        description=\"The ticker symbol to fetch cash flow statements for.\",",
+      "    )"
+    ],
+    "imports": [
+      "from typing import Optional, Type",
+      "from langchain_core.callbacks import CallbackManagerForToolRun",
+      "from langchain_core.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "from langchain_community.utilities.financial_datasets import FinancialDatasetsAPIWrapper"
+    ],
+    "classes": [
+      "CashFlowStatementsSchema",
+      "CashFlowStatements"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_022_c7c633f406b18919_AI_Chariot_Legacy_666_1.0.0_20260508_cash_flow_statements.py.json"
+}

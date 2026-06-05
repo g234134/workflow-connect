@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:44:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__debug_backends.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__debug_backends.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 620,
+  "content_sha256": "474cc273f0a00ee6d89da19b4068e4d064e67791e5605a412f0ed64a5aa58e94",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 16,
+    "char_count": 620,
+    "preview_lines": [
+      "import numpy as np",
+      "class NumPyBackend:",
+      "    \"\"\"Backend that uses numpy.fft\"\"\"",
+      "    __ua_domain__ = \"numpy.scipy.fft\"",
+      "    @staticmethod",
+      "    def __ua_function__(method, args, kwargs):",
+      "        kwargs.pop(\"overwrite_x\", None)",
+      "        fn = getattr(np.fft, method.__name__, None)",
+      "        return (NotImplemented if fn is None",
+      "                else fn(*args, **kwargs))"
+    ],
+    "imports": [
+      "import numpy as np"
+    ],
+    "classes": [
+      "NumPyBackend",
+      "EchoBackend"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_436_474cc273f0a00ee6_AI_Chariot_Legacy_666_1.0.0_20260508__debug_backends.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_path.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_path.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1963,
+  "content_sha256": "1e766a61a45db3a57ace70f05a59856648066955dbcc26e34e5827c7a1e2531e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 49,
+    "char_count": 1963,
+    "preview_lines": [
+      "import io",
+      "import pathlib",
+      "import unittest",
+      "import importlib_resources as resources",
+      "from . import util",
+      "class CommonTests(util.CommonTests, unittest.TestCase):",
+      "    def execute(self, package, path):",
+      "        with resources.as_file(resources.files(package).joinpath(path)):",
+      "            pass",
+      "class PathTests:"
+    ],
+    "imports": [
+      "import io",
+      "import pathlib",
+      "import unittest",
+      "import importlib_resources as resources",
+      "from . import util"
+    ],
+    "classes": [
+      "CommonTests",
+      "PathTests",
+      "PathDiskTests",
+      "PathMemoryTests",
+      "PathZipTests"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_221_1e766a61a45db3a5_AI_Chariot_Legacy_666_1.0.0_20260508_test_path.py.json"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:47:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\nn\\intrinsic\\qat\\modules\\conv_fused.py",
+  "name": "conv_fused.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30331,
+  "content_sha256": "cda2cb658ff0c6fcc90b798fc59753f99119ef7dada7a06de0e16db37f86ee02",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 825,
+    "non_empty_lines": 717,
+    "char_count": 30331,
+    "preview_lines": [
+      "import math",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.ao.nn.intrinsic as nni",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.nn.functional as F",
+      "from torch.nn import init",
+      "from torch.nn.utils import fuse_conv_bn_weights",
+      "from torch.nn.modules.utils import _single, _pair, _triple",
+      "from torch.nn.parameter import Parameter"
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.ao.nn.intrinsic as nni",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.nn.functional as F",
+      "from torch.nn import init",
+      "from torch.nn.utils import fuse_conv_bn_weights",
+      "from torch.nn.modules.utils import _single, _pair, _triple",
+      "from torch.nn.parameter import Parameter",
+      "from typing import TypeVar"
+    ],
+    "classes": [
+      "_ConvBnNd",
+      "ConvBn1d",
+      "ConvBnReLU1d",
+      "ConvReLU1d",
+      "ConvBn2d",
+      "ConvBnReLU2d",
+      "ConvReLU2d",
+      "ConvBn3d",
+      "ConvBnReLU3d",
+      "ConvReLU3d"
+    ],
+    "functions": [
+      "update_bn_stats",
+      "freeze_bn_stats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_265_cda2cb658ff0c6fc_conv_fused.py.json"
+}

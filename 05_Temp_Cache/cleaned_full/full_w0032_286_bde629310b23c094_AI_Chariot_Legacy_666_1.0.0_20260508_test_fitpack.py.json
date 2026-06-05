@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 286,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fitpack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fitpack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17108,
+  "content_sha256": "bde629310b23c094c840952706d82f42ead7d729e07686908333dff6ff29be5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 519,
+    "non_empty_lines": 417,
+    "char_count": 17108,
+    "preview_lines": [
+      "import itertools",
+      "import os",
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "    xp_assert_equal, xp_assert_close, assert_almost_equal, assert_array_almost_equal",
+      ")",
+      "from pytest import raises as assert_raises",
+      "import pytest",
+      "from scipy._lib._testutils import check_free_memory",
+      "from scipy.interpolate import RectBivariateSpline"
+    ],
+    "imports": [
+      "import itertools",
+      "import os",
+      "import numpy as np",
+      "from scipy._lib._array_api import (",
+      "from pytest import raises as assert_raises",
+      "import pytest",
+      "from scipy._lib._testutils import check_free_memory",
+      "from scipy.interpolate import RectBivariateSpline",
+      "from scipy.interpolate import make_splrep",
+      "from scipy.interpolate._fitpack_py import (splrep, splev, bisplrep, bisplev,",
+      "from scipy.interpolate._dfitpack import regrid_smth",
+      "from scipy.interpolate._fitpack2 import dfitpack_int"
+    ],
+    "classes": [
+      "TestSmokeTests",
+      "TestSplev",
+      "TestSplder",
+      "TestSplint",
+      "TestBisplrep"
+    ],
+    "functions": [
+      "data_file",
+      "norm2",
+      "f1",
+      "makepairs",
+      "test_dblint",
+      "test_splev_der_k",
+      "test_splprep_segfault",
+      "test_bisplev_integer_overflow",
+      "test_gh_1766",
+      "test_spalde_scalar_input",
+      "test_spalde_nc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_286_bde629310b23c094_AI_Chariot_Legacy_666_1.0.0_20260508_test_fitpack.py.json"
+}

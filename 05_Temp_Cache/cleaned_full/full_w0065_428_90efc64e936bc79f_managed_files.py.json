@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 428,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\proxy\\hooks\\managed_files.py",
+  "name": "managed_files.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 51537,
+  "content_sha256": "90efc64e936bc79f097fb7484c2a151a46971b3e0f0f96347dd9ff2e63f41c60",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1236,
+    "non_empty_lines": 1087,
+    "char_count": 51537,
+    "preview_lines": [
+      "# What is this?",
+      "## This hook is used to check for LiteLLM managed files in the request body, and replace them with model-specific file id",
+      "import asyncio",
+      "import base64",
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Union, cast",
+      "from fastapi import HTTPException",
+      "import litellm",
+      "from litellm import Router, verbose_logger",
+      "from litellm._uuid import uuid"
+    ],
+    "imports": [
+      "import asyncio",
+      "import base64",
+      "import json",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Union, cast",
+      "from fastapi import HTTPException",
+      "import litellm",
+      "from litellm import Router, verbose_logger",
+      "from litellm._uuid import uuid",
+      "from litellm.caching.caching import DualCache",
+      "from litellm.integrations.custom_logger import CustomLogger",
+      "from litellm.litellm_core_utils.prompt_templates.common_utils import extract_file_data",
+      "from litellm.llms.base_llm.files.transformation import BaseFileEndpoints",
+      "from litellm.proxy._types import (",
+      "from litellm.proxy.openai_files_endpoints.common_utils import (",
+      "from litellm.types.llms.openai import (",
+      "from litellm.types.utils import (",
+      "from litellm.types.llms.openai import HttpxBinaryResponseContent",
+      "from opentelemetry.trace import Span as _Span",
+      "from litellm.proxy.utils import InternalUsageCache as _InternalUsageCache",
+      "from litellm.proxy.utils import PrismaClient as _PrismaClient"
+    ],
+    "classes": [
+      "_PROXY_LiteLLMManagedFiles"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_428_90efc64e936bc79f_managed_files.py.json"
+}

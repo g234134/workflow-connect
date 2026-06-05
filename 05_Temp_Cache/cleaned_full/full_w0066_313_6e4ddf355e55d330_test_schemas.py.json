@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\tracers\\test_schemas.py",
+  "name": "test_schemas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 507,
+  "content_sha256": "6e4ddf355e55d3309c2e39aad10efe88979c5edd92507fe98e4a9b8080474d6d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 12,
+    "char_count": 504,
+    "preview_lines": [
+      "from langchain_core.tracers import schemas",
+      "from langchain_core.tracers.schemas import __all__ as schemas_all",
+      "def test_public_api() -> None:",
+      "    \"\"\"Test for changes in the public API.\"\"\"",
+      "    expected_all = [",
+      "        \"Run\",",
+      "    ]",
+      "    assert sorted(schemas_all) == expected_all",
+      "    # Assert that the object is actually present in the schema module",
+      "    for module_name in expected_all:"
+    ],
+    "imports": [
+      "from langchain_core.tracers import schemas",
+      "from langchain_core.tracers.schemas import __all__ as schemas_all"
+    ],
+    "classes": [],
+    "functions": [
+      "test_public_api"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_313_6e4ddf355e55d330_test_schemas.py.json"
+}

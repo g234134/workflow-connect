@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 412,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\send_emails\\endpoints.py",
+  "name": "endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7017,
+  "content_sha256": "84e12933fabc30901794a30eb42f4a6e0bc356bfd816d177adebbd6e35e4a6c2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 166,
+    "char_count": 7017,
+    "preview_lines": [
+      "\"\"\"",
+      "Endpoints for managing email alerts on litellm",
+      "\"\"\"",
+      "import json",
+      "from typing import Dict",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm_enterprise.types.enterprise_callbacks.send_emails import (",
+      "    DefaultEmailSettings,",
+      "    EmailEvent,",
+      "    EmailEventSettings,"
+    ],
+    "imports": [
+      "import json",
+      "from typing import Dict",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm_enterprise.types.enterprise_callbacks.send_emails import (",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.proxy_server import prisma_client",
+      "from litellm.proxy.proxy_server import prisma_client",
+      "from litellm.proxy.proxy_server import prisma_client"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_412_84e12933fabc3090_endpoints.py.json"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 392,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\multipledispatch\\dispatcher.py",
+  "name": "dispatcher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12226,
+  "content_sha256": "036238ba9b78a8da259571a9c33aea83b334a0a1c9859c750543080678d1228c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 413,
+    "non_empty_lines": 324,
+    "char_count": 12226,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "import inspect",
+      "from .conflict import ordering, ambiguities, super_signature, AmbiguityWarning",
+      "from .utils import expand_tuples",
+      "import itertools as itl",
+      "class MDNotImplementedError(NotImplementedError):",
+      "    \"\"\" A NotImplementedError for multiple dispatch \"\"\"",
+      "### Functions for on_ambiguity",
+      "def ambiguity_warn(dispatcher, ambiguities):"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from warnings import warn",
+      "import inspect",
+      "from .conflict import ordering, ambiguities, super_signature, AmbiguityWarning",
+      "from .utils import expand_tuples",
+      "import itertools as itl"
+    ],
+    "classes": [
+      "MDNotImplementedError",
+      "RaiseNotImplementedError",
+      "Dispatcher",
+      "MethodDispatcher"
+    ],
+    "functions": [
+      "ambiguity_warn",
+      "ambiguity_register_error_ignore_dup",
+      "halt_ordering",
+      "restart_ordering",
+      "source",
+      "str_signature",
+      "warning_text"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_392_036238ba9b78a8da_dispatcher.py.json"
+}

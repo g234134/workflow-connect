@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_netrc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_netrc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6922,
+  "content_sha256": "229da6d0cbe6a10295be6c64ac3806420ea018124c09e4887410548fc2fc8b5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 172,
+    "char_count": 6922,
+    "preview_lines": [
+      "\"\"\"An object-oriented interface to .netrc files.\"\"\"",
+      "# Module and documentation by Eric S. Raymond, 21 Dec 1998",
+      "import os, stat",
+      "__all__ = [\"netrc\", \"NetrcParseError\"]",
+      "class NetrcParseError(Exception):",
+      "    \"\"\"Exception raised on syntax errors in the .netrc file.\"\"\"",
+      "    def __init__(self, msg, filename=None, lineno=None):",
+      "        self.filename = filename",
+      "        self.lineno = lineno",
+      "        self.msg = msg"
+    ],
+    "imports": [
+      "import os, stat",
+      "import pwd"
+    ],
+    "classes": [
+      "NetrcParseError",
+      "_netrclex",
+      "netrc"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_363_229da6d0cbe6a102_AI_Chariot_Legacy_666_1.0.0_20260508_netrc.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 397,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\astar.py",
+  "name": "astar.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8937,
+  "content_sha256": "d2912760dcc6ed9f3acd6ab215ed0e2fc1d39503bd3f08c3001cbfca90b7d3f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 239,
+    "non_empty_lines": 194,
+    "char_count": 8937,
+    "preview_lines": [
+      "\"\"\"Shortest paths and path lengths using the A* (\"A star\") algorithm.\"\"\"",
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "import networkx as nx",
+      "from networkx.algorithms.shortest_paths.weighted import _weight_function",
+      "__all__ = [\"astar_path\", \"astar_path_length\"]",
+      "@nx._dispatchable(edge_attrs=\"weight\", preserve_node_attrs=\"heuristic\")",
+      "def astar_path(G, source, target, heuristic=None, weight=\"weight\", *, cutoff=None):",
+      "    \"\"\"Returns a list of nodes in a shortest path between source and target",
+      "    using the A* (\"A-star\") algorithm."
+    ],
+    "imports": [
+      "from heapq import heappop, heappush",
+      "from itertools import count",
+      "import networkx as nx",
+      "from networkx.algorithms.shortest_paths.weighted import _weight_function",
+      "from the a node to the target.  The function takes",
+      "from the a node to the target.  The function takes"
+    ],
+    "classes": [],
+    "functions": [
+      "astar_path",
+      "astar_path_length"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_397_d2912760dcc6ed9f_astar.py.json"
+}

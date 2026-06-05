@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 427,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\fail\\histograms.pyi",
+  "name": "histograms.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 388,
+  "content_sha256": "be44a4d6fd4d6b85549d197033cb2a871a8f8e18361c7ffd62d5e760d10780f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 8,
+    "char_count": 388,
+    "preview_lines": [
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "AR_i8: npt.NDArray[np.int64]",
+      "AR_f8: npt.NDArray[np.float64]",
+      "np.histogram_bin_edges(AR_i8, range=(0, 1, 2))  # type: ignore[arg-type]",
+      "np.histogram(AR_i8, range=(0, 1, 2))  # type: ignore[arg-type]",
+      "np.histogramdd(AR_i8, range=(0, 1))  # type: ignore[arg-type]",
+      "np.histogramdd(AR_i8, range=[(0, 1, 2)])  # type: ignore[list-item]"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import numpy.typing as npt"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_427_be44a4d6fd4d6b85_histograms.pyi.json"
+}

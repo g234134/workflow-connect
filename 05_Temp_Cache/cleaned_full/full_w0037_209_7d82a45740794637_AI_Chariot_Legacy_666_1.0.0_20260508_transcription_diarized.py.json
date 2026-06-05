@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 209,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transcription_diarized.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transcription_diarized.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2374,
+  "content_sha256": "7d82a4574079463731f460bee937c93f84e349651b6c876f95ed526f70d0a762",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 46,
+    "char_count": 2374,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import List, Union, Optional",
+      "from typing_extensions import Literal, Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from ..._models import BaseModel",
+      "from .transcription_diarized_segment import TranscriptionDiarizedSegment",
+      "__all__ = [\"TranscriptionDiarized\", \"Usage\", \"UsageTokens\", \"UsageTokensInputTokenDetails\", \"UsageDuration\"]",
+      "class UsageTokensInputTokenDetails(BaseModel):",
+      "    \"\"\"Details about the input tokens billed for this request.\"\"\"",
+      "    audio_tokens: Optional[int] = None"
+    ],
+    "imports": [
+      "from typing import List, Union, Optional",
+      "from typing_extensions import Literal, Annotated, TypeAlias",
+      "from ..._utils import PropertyInfo",
+      "from ..._models import BaseModel",
+      "from .transcription_diarized_segment import TranscriptionDiarizedSegment"
+    ],
+    "classes": [
+      "UsageTokensInputTokenDetails",
+      "UsageTokens",
+      "UsageDuration",
+      "TranscriptionDiarized"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_209_7d82a45740794637_AI_Chariot_Legacy_666_1.0.0_20260508_transcription_diarized.py.json"
+}

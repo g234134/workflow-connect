@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 42,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_betweenness_centrality_subset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_betweenness_centrality_subset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12554,
+  "content_sha256": "1eb1cc72038bebd67acbaefd49ba992239103a7aab612cf6e20b75ec027dabea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 340,
+    "non_empty_lines": 313,
+    "char_count": 12554,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "class TestSubsetBetweennessCentrality:",
+      "    def test_K5(self):",
+      "        \"\"\"Betweenness Centrality Subset: K5\"\"\"",
+      "        G = nx.complete_graph(5)",
+      "        b = nx.betweenness_centrality_subset(",
+      "            G, sources=[0], targets=[1, 3], weight=None",
+      "        )",
+      "        b_answer = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestSubsetBetweennessCentrality",
+      "TestEdgeSubsetBetweennessCentrality"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_042_1eb1cc72038bebd6_AI_Chariot_Legacy_666_1.0.0_20260508_test_betweenness_centrality_subset.py.json"
+}

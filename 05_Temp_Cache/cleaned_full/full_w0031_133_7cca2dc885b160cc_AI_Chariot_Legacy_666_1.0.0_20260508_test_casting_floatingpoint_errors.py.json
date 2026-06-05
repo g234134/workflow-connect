@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_casting_floatingpoint_errors.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_casting_floatingpoint_errors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5230,
+  "content_sha256": "7cca2dc885b160cc49fe617bcd9320de3de5ee3f82ea77e6fd850fc35967e5d0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 117,
+    "char_count": 5230,
+    "preview_lines": [
+      "import pytest",
+      "from pytest import param",
+      "import numpy as np",
+      "from numpy.testing import IS_WASM",
+      "def values_and_dtypes():",
+      "    \"\"\"",
+      "    Generate value+dtype pairs that generate floating point errors during",
+      "    casts.  The invalid casts to integers will generate \"invalid\" value",
+      "    warnings, the float casts all generate \"overflow\".",
+      "    (The Python int/float paths don't need to get tested in all the same"
+    ],
+    "imports": [
+      "import pytest",
+      "from pytest import param",
+      "import numpy as np",
+      "from numpy.testing import IS_WASM"
+    ],
+    "classes": [],
+    "functions": [
+      "values_and_dtypes",
+      "check_operations",
+      "test_floatingpoint_errors_casting"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_133_7cca2dc885b160cc_AI_Chariot_Legacy_666_1.0.0_20260508_test_casting_floatingpoint_errors.py.json"
+}

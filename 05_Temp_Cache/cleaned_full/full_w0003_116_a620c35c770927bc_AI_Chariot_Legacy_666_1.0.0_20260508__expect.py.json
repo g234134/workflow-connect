@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__expect.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__expect.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15148,
+  "content_sha256": "a620c35c770927bc25839312978e24adc6460d8926143002e376b9fff1399e79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 465,
+    "non_empty_lines": 377,
+    "char_count": 15148,
+    "preview_lines": [
+      "\"\"\"Make approximate assertions as \"expectations\" on test results.",
+      "This module is designed to be used within test cases decorated with the",
+      "`@pytest.mark.decorator` decorator",
+      "It allows you to log scores about a test case and optionally make assertions that log as",
+      "\"expectation\" feedback to LangSmith.",
+      "Example:",
+      "    ```python",
+      "    import pytest",
+      "    from langsmith import expect",
+      "    @pytest.mark.langsmith"
+    ],
+    "imports": [
+      "import pytest",
+      "from langsmith import expect",
+      "from __future__ import annotations",
+      "import atexit",
+      "import inspect",
+      "from typing import (",
+      "from langsmith import client as ls_client",
+      "from langsmith import run_helpers as rh",
+      "from langsmith import run_trees as rt",
+      "from langsmith import utils as ls_utils",
+      "from langsmith._internal._edit_distance import EditDistanceConfig",
+      "from langsmith._internal._embedding_distance import EmbeddingConfig",
+      "from those passed in with the value None (which may have different behavior)."
+    ],
+    "classes": [
+      "_NULL_SENTRY",
+      "_Matcher",
+      "_Expect"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_116_a620c35c770927bc_AI_Chariot_Legacy_666_1.0.0_20260508__expect.py.json"
+}

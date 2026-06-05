@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_spider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_spider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3369,
+  "content_sha256": "66451990858164976cf7fb0282c1239ae589da76e3f2fa33a4b3cc65f9ed4bc5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 79,
+    "char_count": 3369,
+    "preview_lines": [
+      "from typing import Iterator, Literal, Optional",
+      "from langchain_core.document_loaders import BaseLoader",
+      "from langchain_core.documents import Document",
+      "from langchain_core.utils import get_from_env",
+      "class SpiderLoader(BaseLoader):",
+      "    \"\"\"Load web pages as Documents using Spider AI.",
+      "    Must have the Python package `spider-client` installed and a Spider API key.",
+      "    See https://spider.cloud for more.",
+      "    \"\"\"",
+      "    def __init__("
+    ],
+    "imports": [
+      "from typing import Iterator, Literal, Optional",
+      "from langchain_core.document_loaders import BaseLoader",
+      "from langchain_core.documents import Document",
+      "from langchain_core.utils import get_from_env",
+      "from spider import Spider"
+    ],
+    "classes": [
+      "SpiderLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_166_6645199085816497_AI_Chariot_Legacy_666_1.0.0_20260508_spider.py.json"
+}

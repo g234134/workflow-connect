@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_degree_seq.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_degree_seq.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30173,
+  "content_sha256": "f7b5d402981066ba52c725ce0e054b3fd76b5f9ac417e5dbe346d8a9a0464a3d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 867,
+    "non_empty_lines": 725,
+    "char_count": 30171,
+    "preview_lines": [
+      "\"\"\"Generate graphs with a given degree sequence or expected degree sequence.\"\"\"",
+      "import heapq",
+      "import math",
+      "from itertools import chain, combinations, zip_longest",
+      "from operator import itemgetter",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state, random_weighted_sample",
+      "__all__ = [",
+      "    \"configuration_model\",",
+      "    \"directed_configuration_model\","
+    ],
+    "imports": [
+      "import heapq",
+      "import math",
+      "from itertools import chain, combinations, zip_longest",
+      "from operator import itemgetter",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state, random_weighted_sample"
+    ],
+    "classes": [
+      "DegreeSequenceRandomGraph"
+    ],
+    "functions": [
+      "_to_stublist",
+      "_configuration_model",
+      "configuration_model",
+      "directed_configuration_model",
+      "expected_degree_graph",
+      "havel_hakimi_graph",
+      "directed_havel_hakimi_graph",
+      "degree_sequence_tree",
+      "random_degree_sequence_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_351_f7b5d402981066ba_AI_Chariot_Legacy_666_1.0.0_20260508_degree_seq.py.json"
+}

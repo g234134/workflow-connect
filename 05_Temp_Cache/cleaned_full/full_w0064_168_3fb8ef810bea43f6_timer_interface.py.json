@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\benchmark\\utils\\valgrind_wrapper\\timer_interface.py",
+  "name": "timer_interface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 37769,
+  "content_sha256": "3fb8ef810bea43f6e4cecfd2c4590b40698c6e7a15997e04b201ae7abf5bb8a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 906,
+    "non_empty_lines": 753,
+    "char_count": 37769,
+    "preview_lines": [
+      "\"\"\"Intermediate layer between `Timer` and `valgrind`.\"\"\"",
+      "import collections",
+      "import enum",
+      "import dataclasses",
+      "import itertools as it",
+      "import os",
+      "import pickle",
+      "import re",
+      "import shutil",
+      "import subprocess"
+    ],
+    "imports": [
+      "import collections",
+      "import enum",
+      "import dataclasses",
+      "import itertools as it",
+      "import os",
+      "import pickle",
+      "import re",
+      "import shutil",
+      "import subprocess",
+      "import sys",
+      "import textwrap",
+      "from typing import (",
+      "import torch",
+      "from torch.utils.benchmark.utils import common, cpp_jit",
+      "from torch.utils.benchmark.utils._stubs import CallgrindModuleType"
+    ],
+    "classes": [
+      "FunctionCount",
+      "FunctionCounts",
+      "CallgrindStats",
+      "Serialization",
+      "CopyIfCallgrind",
+      "GlobalsBridge",
+      "_ValgrindWrapper"
+    ],
+    "functions": [
+      "wrapper_singleton"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_168_3fb8ef810bea43f6_timer_interface.py.json"
+}

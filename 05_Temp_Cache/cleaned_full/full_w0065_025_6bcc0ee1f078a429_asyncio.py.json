@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 25,
+  "generated_at": "2026-05-08T18:48:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\uvicorn\\loops\\asyncio.py",
+  "name": "asyncio.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 333,
+  "content_sha256": "6bcc0ee1f078a4293e44b202abb0a71abfdcc5023b3012c98fe1a8e14425743f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 11,
+    "non_empty_lines": 8,
+    "char_count": 333,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import sys",
+      "from collections.abc import Callable",
+      "def asyncio_loop_factory(use_subprocess: bool = False) -> Callable[[], asyncio.AbstractEventLoop]:",
+      "    if sys.platform == \"win32\" and not use_subprocess:",
+      "        return asyncio.ProactorEventLoop",
+      "    return asyncio.SelectorEventLoop"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import sys",
+      "from collections.abc import Callable"
+    ],
+    "classes": [],
+    "functions": [
+      "asyncio_loop_factory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_025_6bcc0ee1f078a429_asyncio.py.json"
+}

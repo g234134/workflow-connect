@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 384,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_matrices.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_matrices.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7944,
+  "content_sha256": "ab2038325d82bcdbd6d37e25cc1d351bac1580dafb52b819aa1db090c5eda733",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 253,
+    "non_empty_lines": 233,
+    "char_count": 7944,
+    "preview_lines": [
+      "import pytest",
+      "import sys",
+      "from mpmath import *",
+      "def test_matrix_basic():",
+      "    A1 = matrix(3)",
+      "    for i in range(3):",
+      "        A1[i,i] = 1",
+      "    assert A1 == eye(3)",
+      "    assert A1 == matrix(A1)",
+      "    A2 = matrix(3, 2)"
+    ],
+    "imports": [
+      "import pytest",
+      "import sys",
+      "from mpmath import *",
+      "import numpy"
+    ],
+    "classes": [],
+    "functions": [
+      "test_matrix_basic",
+      "test_matmul",
+      "test_matrix_slices",
+      "test_matrix_power",
+      "test_matrix_transform",
+      "test_matrix_conjugate",
+      "test_matrix_creation",
+      "test_norms",
+      "test_vector",
+      "test_matrix_copy",
+      "test_matrix_numpy",
+      "test_interval_matrix_scalar_mult",
+      "test_interval_matrix_matrix_mult",
+      "test_matrix_conversion_to_iv",
+      "test_interval_matrix_mult_bug"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_384_ab2038325d82bcdb_AI_Chariot_Legacy_666_1.0.0_20260508_test_matrices.py.json"
+}

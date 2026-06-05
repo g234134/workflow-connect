@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pdftypes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pdftypes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12856,
+  "content_sha256": "b0f41844f49d43283562e5c55451a8054fe8548c3850742678277cfea33f23f6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 400,
+    "non_empty_lines": 338,
+    "char_count": 12856,
+    "preview_lines": [
+      "import io",
+      "import logging",
+      "import zlib",
+      "from collections.abc import Iterable",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Optional,",
+      "    Protocol,",
+      "    cast,"
+    ],
+    "imports": [
+      "import io",
+      "import logging",
+      "import zlib",
+      "from collections.abc import Iterable",
+      "from typing import (",
+      "from warnings import warn",
+      "from pdfminer import pdfexceptions, settings",
+      "from pdfminer.ascii85 import ascii85decode, asciihexdecode",
+      "from pdfminer.ccitt import ccittfaxdecode",
+      "from pdfminer.lzw import lzwdecode",
+      "from pdfminer.psparser import LIT, PSObject",
+      "from pdfminer.runlength import rldecode",
+      "from pdfminer.utils import apply_png_predictor, apply_tiff_predictor",
+      "from pdfminer.pdfdocument import PDFDocument"
+    ],
+    "classes": [
+      "DecipherCallable",
+      "PDFObject",
+      "PDFObjRef",
+      "PDFStream"
+    ],
+    "functions": [
+      "resolve1",
+      "resolve_all",
+      "decipher_all",
+      "int_value",
+      "float_value",
+      "num_value",
+      "uint_value",
+      "str_value",
+      "list_value",
+      "dict_value",
+      "stream_value",
+      "decompress_corrupted"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_034_b0f41844f49d4328_AI_Chariot_Legacy_666_1.0.0_20260508_pdftypes.py.json"
+}

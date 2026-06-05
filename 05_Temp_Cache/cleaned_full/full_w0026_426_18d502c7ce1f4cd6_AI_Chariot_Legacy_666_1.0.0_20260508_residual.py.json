@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 426,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_residual.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_residual.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2156,
+  "content_sha256": "18d502c7ce1f4cd6c3c7476a51a9d1bf5aef5e194ee8f169660998d5b7c0ecf2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 64,
+    "non_empty_lines": 55,
+    "char_count": 2156,
+    "preview_lines": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d, Floats3d, Floats4d, FloatsXd, Padded, Ragged",
+      "# fmt: off",
+      "InT = TypeVar(  ",
+      "    \"InT\", List[Floats1d], List[Floats2d], List[Floats3d], List[Floats4d], ",
+      "    Ragged, Padded, FloatsXd, Floats1d, Floats2d, Floats3d, Floats4d)",
+      "# fmt: on",
+      "@registry.layers(\"residual.v1\")"
+    ],
+    "imports": [
+      "from typing import Callable, List, Optional, Tuple, TypeVar",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats1d, Floats2d, Floats3d, Floats4d, FloatsXd, Padded, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "residual",
+      "forward",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_426_18d502c7ce1f4cd6_AI_Chariot_Legacy_666_1.0.0_20260508_residual.py.json"
+}

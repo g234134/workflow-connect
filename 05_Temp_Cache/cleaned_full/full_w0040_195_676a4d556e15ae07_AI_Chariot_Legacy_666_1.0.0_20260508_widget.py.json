@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 195,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_widget.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_widget.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35129,
+  "content_sha256": "676a4d556e15ae07e540c8d184fd45e196972211e6537f1e4ee5d836d90e54d1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 851,
+    "non_empty_lines": 728,
+    "char_count": 35127,
+    "preview_lines": [
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "\"\"\"Base Widget class.  Allows user to create widgets in the back-end that render",
+      "in the Jupyter notebook front-end.",
+      "\"\"\"",
+      "import os",
+      "import sys",
+      "import typing",
+      "from contextlib import contextmanager",
+      "from collections.abc import Iterable"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import typing",
+      "from contextlib import contextmanager",
+      "from collections.abc import Iterable",
+      "from IPython import get_ipython",
+      "from traitlets import (",
+      "from json import loads as jsonloads, dumps as jsondumps",
+      "from .. import comm",
+      "from base64 import standard_b64encode",
+      "from .utils import deprecation, _get_frame",
+      "from .._version import __protocol_version__, __control_protocol_version__, __jupyter_widgets_base_version__",
+      "import inspect",
+      "from traitlets import log"
+    ],
+    "classes": [
+      "LoggingHasTraits",
+      "CallbackDispatcher",
+      "WidgetRegistry",
+      "_staticproperty",
+      "Widget"
+    ],
+    "functions": [
+      "envset",
+      "_widget_to_json",
+      "_json_to_widget",
+      "_put_buffers",
+      "_separate_buffers",
+      "_remove_buffers",
+      "_buffer_list_equal",
+      "_show_traceback",
+      "register"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_195_676a4d556e15ae07_AI_Chariot_Legacy_666_1.0.0_20260508_widget.py.json"
+}

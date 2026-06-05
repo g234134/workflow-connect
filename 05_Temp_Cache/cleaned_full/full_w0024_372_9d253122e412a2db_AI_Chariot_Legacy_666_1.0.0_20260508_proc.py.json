@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_proc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_proc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2659,
+  "content_sha256": "9d253122e412a2dbda0d6efa8b4a1340033d699f4f5c12c500492d5a58d2282a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 83,
+    "non_empty_lines": 63,
+    "char_count": 2659,
+    "preview_lines": [
+      "import io",
+      "import os",
+      "import re",
+      "import sys",
+      "from ._core import Process",
+      "# FreeBSD: https://www.freebsd.org/cgi/man.cgi?query=procfs",
+      "# NetBSD: https://man.netbsd.org/NetBSD-9.3-STABLE/mount_procfs.8",
+      "# DragonFlyBSD: https://www.dragonflybsd.org/cgi/web-man?command=procfs",
+      "BSD_STAT_PPID = 2",
+      "# See https://docs.kernel.org/filesystems/proc.html"
+    ],
+    "imports": [
+      "import io",
+      "import os",
+      "import re",
+      "import sys",
+      "from ._core import Process"
+    ],
+    "classes": [
+      "ProcFormatError"
+    ],
+    "functions": [
+      "detect_proc",
+      "_use_bsd_stat_format",
+      "_get_ppid",
+      "_get_cmdline",
+      "iter_process_parents"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_372_9d253122e412a2db_AI_Chariot_Legacy_666_1.0.0_20260508_proc.py.json"
+}

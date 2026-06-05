@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 284,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__storage_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__storage_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1470,
+  "content_sha256": "38740bf572fc1f9cd849b671884680560f03c310e79ae8a0f9bbc238d854e17a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 49,
+    "non_empty_lines": 41,
+    "char_count": 1470,
+    "preview_lines": [
+      "import os",
+      "from typing import List, Type, Union",
+      "from .filesystem import FileSystemReader, FileSystemWriter",
+      "from .storage import StorageReader, StorageWriter",
+      "def _storage_setup(",
+      "    storage: Union[StorageReader, StorageWriter, None],",
+      "    checkpoint_id: Union[str, os.PathLike, None],",
+      "    reader: bool = False,",
+      ") -> Union[None, StorageReader, StorageWriter]:",
+      "    if storage:"
+    ],
+    "imports": [
+      "import os",
+      "from typing import List, Type, Union",
+      "from .filesystem import FileSystemReader, FileSystemWriter",
+      "from .storage import StorageReader, StorageWriter",
+      "from ._fsspec_filesystem import FsspecReader, FsspecWriter"
+    ],
+    "classes": [],
+    "functions": [
+      "_storage_setup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_284_38740bf572fc1f9c_AI_Chariot_Legacy_666_1.0.0_20260508__storage_utils.py.json"
+}

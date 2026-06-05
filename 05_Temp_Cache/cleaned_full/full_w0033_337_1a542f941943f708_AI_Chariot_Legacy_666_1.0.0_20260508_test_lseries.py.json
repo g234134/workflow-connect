@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 337,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lseries.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lseries.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1875,
+  "content_sha256": "1a542f941943f70874d8f3c13facd4f37c2686eaef194153b82469e38078b88e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 51,
+    "char_count": 1875,
+    "preview_lines": [
+      "from sympy.core.numbers import E",
+      "from sympy.core.singleton import S",
+      "from sympy.functions.elementary.exponential import exp",
+      "from sympy.functions.elementary.hyperbolic import tanh",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.series.order import Order",
+      "from sympy.abc import x, y",
+      "def test_sin():",
+      "    e = sin(x).lseries(x)",
+      "    assert next(e) == x"
+    ],
+    "imports": [
+      "from sympy.core.numbers import E",
+      "from sympy.core.singleton import S",
+      "from sympy.functions.elementary.exponential import exp",
+      "from sympy.functions.elementary.hyperbolic import tanh",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.series.order import Order",
+      "from sympy.abc import x, y"
+    ],
+    "classes": [],
+    "functions": [
+      "test_sin",
+      "test_cos",
+      "test_exp",
+      "test_exp2",
+      "test_simple",
+      "test_issue_5183",
+      "test_issue_6999"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_337_1a542f941943f708_AI_Chariot_Legacy_666_1.0.0_20260508_test_lseries.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\langchain_openai\\embeddings\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32189,
+  "content_sha256": "8cf85916c6c7366bcf4cd549dd98417b7e0b17c25d6a6c16e4176607f667784f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 814,
+    "non_empty_lines": 676,
+    "char_count": 32186,
+    "preview_lines": [
+      "\"\"\"Base classes for OpenAI embeddings.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import warnings",
+      "from collections.abc import Awaitable, Callable, Iterable, Mapping, Sequence",
+      "from typing import Any, Literal, cast",
+      "import openai",
+      "import tiktoken",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.runnables.config import run_in_executor"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import warnings",
+      "from collections.abc import Awaitable, Callable, Iterable, Mapping, Sequence",
+      "from typing import Any, Literal, cast",
+      "import openai",
+      "import tiktoken",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.runnables.config import run_in_executor",
+      "from langchain_core.utils import from_env, get_pydantic_field_names, secret_from_env",
+      "from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator",
+      "from typing_extensions import Self",
+      "from langchain_openai.chat_models._client_utils import _resolve_sync_and_async_api_keys",
+      "from env var `OPENAI_ORG_ID`.",
+      "from langchain_openai import OpenAIEmbeddings",
+      "from langchain_openai import OpenAIEmbeddings"
+    ],
+    "classes": [
+      "OpenAIEmbeddings"
+    ],
+    "functions": [
+      "_process_batched_chunked_embeddings"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_157_8cf85916c6c7366b_base.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\fx\\_model_report\\model_report_observer.py",
+  "name": "model_report_observer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12054,
+  "content_sha256": "a5eef58296d7d96f4ced16548a8bc2ab48eacd0c88971a9df6456dda3e7c1b7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 265,
+    "non_empty_lines": 206,
+    "char_count": 12054,
+    "preview_lines": [
+      "import torch",
+      "from torch.ao.quantization.observer import ObserverBase",
+      "class ModelReportObserver(ObserverBase):",
+      "    r\"\"\"This observer is used to record additional information regarding keeping track",
+      "    of S = average_batch_activation_range/epoch_activation_range.",
+      "    The purpose of this information is to prepare a report to present to users on whether",
+      "    Dynamic or Static Quantization is more appropriate for their model given the general",
+      "    distributions of their data.",
+      "    Args:",
+      "        ch_axis (int, optional): The channel axis for which the range and outlier stats are computed"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.ao.quantization.observer import ObserverBase"
+    ],
+    "classes": [
+      "ModelReportObserver"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_377_a5eef58296d7d96f_model_report_observer.py.json"
+}

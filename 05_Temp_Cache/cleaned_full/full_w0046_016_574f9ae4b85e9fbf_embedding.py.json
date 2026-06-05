@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_shard\\sharding_spec\\chunk_sharding_spec_ops\\embedding.py",
+  "name": "embedding.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11483,
+  "content_sha256": "574f9ae4b85e9fbf1c36f8955e7dfffdec08b3e46284be6baeb27c6bb28e4a60",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 293,
+    "non_empty_lines": 257,
+    "char_count": 11475,
+    "preview_lines": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec.api import custom_sharding_spec_op",
+      "from torch.distributed.nn.functional import all_gather, reduce_scatter",
+      "from ._common import (",
+      "    _all_gather_base_input,",
+      "    _handle_col_wise_sharding_base,",
+      "    _handle_max_norm_col_wise,"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.distributed._shard.sharded_tensor import ShardedTensor",
+      "from torch.distributed._shard.sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._shard.sharding_spec.api import custom_sharding_spec_op",
+      "from torch.distributed.nn.functional import all_gather, reduce_scatter",
+      "from ._common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "sharded_embedding",
+      "_validate_embedding_param",
+      "_handle_col_wise_sharding",
+      "_handle_row_wise_sharding"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_016_574f9ae4b85e9fbf_embedding.py.json"
+}

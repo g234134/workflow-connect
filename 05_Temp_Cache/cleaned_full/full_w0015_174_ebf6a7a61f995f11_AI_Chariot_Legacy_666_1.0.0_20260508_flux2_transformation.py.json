@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 174,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_flux2_transformation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_flux2_transformation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5649,
+  "content_sha256": "ebf6a7a61f995f11a1b43ea10c55341946865a77b9a1efb354f55dab069df187",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 173,
+    "non_empty_lines": 144,
+    "char_count": 5649,
+    "preview_lines": [
+      "import base64",
+      "from io import BufferedReader",
+      "from typing import Any, Dict, Optional, Tuple",
+      "from httpx._types import RequestFiles",
+      "import litellm",
+      "from litellm.llms.azure_ai.common_utils import AzureFoundryModelInfo",
+      "from litellm.llms.azure_ai.image_generation.flux_transformation import (",
+      "    AzureFoundryFluxImageGenerationConfig,",
+      ")",
+      "from litellm.llms.openai.image_edit.transformation import OpenAIImageEditConfig"
+    ],
+    "imports": [
+      "import base64",
+      "from io import BufferedReader",
+      "from typing import Any, Dict, Optional, Tuple",
+      "from httpx._types import RequestFiles",
+      "import litellm",
+      "from litellm.llms.azure_ai.common_utils import AzureFoundryModelInfo",
+      "from litellm.llms.azure_ai.image_generation.flux_transformation import (",
+      "from litellm.llms.openai.image_edit.transformation import OpenAIImageEditConfig",
+      "from litellm.secret_managers.main import get_secret_str",
+      "from litellm.types.images.main import ImageEditOptionalRequestParams",
+      "from litellm.types.llms.openai import FileTypes",
+      "from litellm.types.router import GenericLiteLLMParams"
+    ],
+    "classes": [
+      "AzureFoundryFlux2ImageEditConfig"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_174_ebf6a7a61f995f11_AI_Chariot_Legacy_666_1.0.0_20260508_flux2_transformation.py.json"
+}

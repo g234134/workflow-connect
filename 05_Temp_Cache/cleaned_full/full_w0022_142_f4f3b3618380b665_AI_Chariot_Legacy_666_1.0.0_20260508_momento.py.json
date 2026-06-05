@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_momento.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_momento.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 701,
+  "content_sha256": "f4f3b3618380b6659cb344cedd43ca85e0187af3a339cfce4305bc343695ce17",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 701,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.chat_message_histories import MomentoChatMessageHistory",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"MomentoChatMessageHistory\": \"langchain_community.chat_message_histories\",",
+      "}"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.chat_message_histories import MomentoChatMessageHistory"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_142_f4f3b3618380b665_AI_Chariot_Legacy_666_1.0.0_20260508_momento.py.json"
+}

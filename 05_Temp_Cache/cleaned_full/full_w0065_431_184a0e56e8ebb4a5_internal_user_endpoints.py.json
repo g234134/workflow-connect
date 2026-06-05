@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 431,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\proxy\\management_endpoints\\internal_user_endpoints.py",
+  "name": "internal_user_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2175,
+  "content_sha256": "184a0e56e8ebb4a5c31df928d8a41a2e7fa6b3ae3392eb4513d3cfe4884104b3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 59,
+    "char_count": 2175,
+    "preview_lines": [
+      "\"\"\"",
+      "Enterprise internal user management endpoints",
+      "\"\"\"",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.management_endpoints.internal_user_endpoints import user_api_key_auth",
+      "router = APIRouter()",
+      "@router.get(",
+      "    \"/user/available_users\",",
+      "    tags=[\"Internal User management\"],"
+    ],
+    "imports": [
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.proxy.management_endpoints.internal_user_endpoints import user_api_key_auth",
+      "from litellm.proxy._types import CommonProxyErrors, EnterpriseLicenseData",
+      "from litellm.proxy.proxy_server import (",
+      "from litellm.proxy.auth.auth_utils import _has_user_setup_sso"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_431_184a0e56e8ebb4a5_internal_user_endpoints.py.json"
+}

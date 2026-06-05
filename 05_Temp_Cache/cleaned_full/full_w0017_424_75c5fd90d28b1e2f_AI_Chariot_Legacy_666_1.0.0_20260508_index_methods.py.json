@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 424,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_index_methods.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_index_methods.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15434,
+  "content_sha256": "75c5fd90d28b1e2fd75e414704f4be7dc33e3da7982a45fcd239b3c42d2c8a24",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 469,
+    "non_empty_lines": 368,
+    "char_count": 15434,
+    "preview_lines": [
+      "\"\"\"Module with functions operating on IndexedBase, Indexed and Idx objects",
+      "    - Check shape conformance",
+      "    - Determine indices in resulting expression",
+      "    etc.",
+      "    Methods in this module could be implemented by calling methods on Expr",
+      "    objects instead.  When things stabilize this could be a useful",
+      "    refactoring.",
+      "\"\"\"",
+      "from functools import reduce",
+      "from sympy.core.function import Function"
+    ],
+    "imports": [
+      "from functools import reduce",
+      "from sympy.core.function import Function",
+      "from sympy.functions import exp, Piecewise",
+      "from sympy.tensor.indexed import Idx, Indexed",
+      "from sympy.utilities import sift",
+      "from collections import OrderedDict"
+    ],
+    "classes": [
+      "IndexConformanceException"
+    ],
+    "functions": [
+      "_unique_and_repeated",
+      "_remove_repeated",
+      "_get_indices_Mul",
+      "_get_indices_Pow",
+      "_get_indices_Add",
+      "get_indices",
+      "get_contraction_structure"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_424_75c5fd90d28b1e2f_AI_Chariot_Legacy_666_1.0.0_20260508_index_methods.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 324,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cuda\\CompositeRandomAccessor.h",
+  "name": "CompositeRandomAccessor.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 964,
+  "content_sha256": "3abb33c51a6dcc7fb409c12ceed54640e6e7048f689349d0be302f83c19b08aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 27,
+    "char_count": 964,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/native/CompositeRandomAccessorCommon.h>",
+      "#include <thrust/tuple.h>",
+      "namespace at { namespace native {",
+      "struct TupleInfoCPU {",
+      "  template <typename ...Types>",
+      "  using tuple = thrust::tuple<Types...>;",
+      "  template <typename ...Types>",
+      "  static constexpr auto tie(Types&... args) noexcept {",
+      "    return thrust::tie(args...);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_324_3abb33c51a6dcc7f_CompositeRandomAccessor.h.json"
+}

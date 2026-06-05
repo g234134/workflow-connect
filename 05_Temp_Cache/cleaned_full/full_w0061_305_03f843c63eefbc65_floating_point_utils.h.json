@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 305,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\floating_point_utils.h",
+  "name": "floating_point_utils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 817,
+  "content_sha256": "03f843c63eefbc65c13731d18a63fb0ee815fbd85b6ef47f739392cf226c749d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 34,
+    "char_count": 817,
+    "preview_lines": [
+      "#pragma once",
+      "#include <cstdint>",
+      "namespace c10::detail {",
+      "C10_HOST_DEVICE inline float fp32_from_bits(uint32_t w) {",
+      "#if defined(__OPENCL_VERSION__)",
+      "  return as_float(w);",
+      "#elif defined(__CUDA_ARCH__)",
+      "  return __uint_as_float((unsigned int)w);",
+      "#elif defined(__INTEL_COMPILER)",
+      "  return _castu32_f32(w);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_305_03f843c63eefbc65_floating_point_utils.h.json"
+}

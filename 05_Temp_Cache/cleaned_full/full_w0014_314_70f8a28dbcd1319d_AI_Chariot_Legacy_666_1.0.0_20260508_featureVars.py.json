@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 314,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_featureVars.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_featureVars.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26883,
+  "content_sha256": "70f8a28dbcd1319d008ae74134f845f171352e806be551a48e2c29c39374a0a4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 703,
+    "non_empty_lines": 580,
+    "char_count": 26883,
+    "preview_lines": [
+      "\"\"\"Module to build FeatureVariation tables:",
+      "https://docs.microsoft.com/en-us/typography/opentype/spec/chapter2#featurevariations-table",
+      "NOTE: The API is experimental and subject to change.",
+      "\"\"\"",
+      "from fontTools.misc.dictTools import hashdict",
+      "from fontTools.misc.intTools import bit_count",
+      "from fontTools.ttLib import newTable",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from fontTools.ttLib.ttVisitor import TTVisitor",
+      "from fontTools.otlLib.builder import buildLookup, buildSingleSubstSubtable"
+    ],
+    "imports": [
+      "from fontTools.misc.dictTools import hashdict",
+      "from fontTools.misc.intTools import bit_count",
+      "from fontTools.ttLib import newTable",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from fontTools.ttLib.ttVisitor import TTVisitor",
+      "from fontTools.otlLib.builder import buildLookup, buildSingleSubstSubtable",
+      "from collections import OrderedDict",
+      "from .errors import VarLibError, VarLibValidationError"
+    ],
+    "classes": [
+      "ShifterVisitor"
+    ],
+    "functions": [
+      "addFeatureVariations",
+      "_existingVariableFeatures",
+      "_checkSubstitutionGlyphsExist",
+      "overlayFeatureVariations",
+      "overlayBox",
+      "cleanupBox",
+      "addFeatureVariationsRaw",
+      "buildGSUB",
+      "makeSubstitutionsHashable",
+      "visit",
+      "visit",
+      "buildSubstitutionLookups",
+      "buildFeatureVariations",
+      "buildFeatureRecord",
+      "buildFeatureVariationRecord",
+      "buildFeatureTableSubstitutionRecord",
+      "buildConditionTable",
+      "findFeatureVariationRecord",
+      "sortFeatureList",
+      "remapFeatures",
+      "_remapLangSys"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_314_70f8a28dbcd1319d_AI_Chariot_Legacy_666_1.0.0_20260508_featureVars.py.json"
+}

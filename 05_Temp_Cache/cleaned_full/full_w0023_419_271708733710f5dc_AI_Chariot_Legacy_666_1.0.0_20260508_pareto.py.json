@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pareto.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pareto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2265,
+  "content_sha256": "271708733710f5dcc9cdd52b158be81b6af9dbb2e4c721c3d7f2f1e2e6fd4653",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 48,
+    "char_count": 2265,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from torch.distributions import constraints",
+      "from torch.distributions.exponential import Exponential",
+      "from torch.distributions.transformed_distribution import TransformedDistribution",
+      "from torch.distributions.transforms import AffineTransform, ExpTransform",
+      "from torch.distributions.utils import broadcast_all",
+      "__all__ = [\"Pareto\"]",
+      "class Pareto(TransformedDistribution):",
+      "    r\"\"\"",
+      "    Samples from a Pareto Type 1 distribution."
+    ],
+    "imports": [
+      "from torch.distributions import constraints",
+      "from torch.distributions.exponential import Exponential",
+      "from torch.distributions.transformed_distribution import TransformedDistribution",
+      "from torch.distributions.transforms import AffineTransform, ExpTransform",
+      "from torch.distributions.utils import broadcast_all"
+    ],
+    "classes": [
+      "Pareto"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_419_271708733710f5dc_AI_Chariot_Legacy_666_1.0.0_20260508_pareto.py.json"
+}

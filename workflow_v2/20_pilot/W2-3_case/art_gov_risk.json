@@ -1,0 +1,152 @@
+{
+  "artifact_id": "ART-GOV-RISK",
+  "schema_version": "0.1",
+  "ticket_id": "W3-C-GOV-RISK-PILOT",
+  "artifact_instance_id": "ART-GOV-RISK-W2-3-PILOT",
+  "imp_state_at_signoff": "IMP-RISK-VALIDATION",
+  "status": "signed",
+  "signed_at": "2026-05-27T18:00:00+08:00",
+  "signed_by_role": "governance",
+  "message": "Retrospective GOV sign-off for W2-1 RISK exit; NBT §6.3 satisfied via structured artifact; historical WR fallback documented",
+  "primary_change_class": "CHG-GOV-DOC",
+  "secondary_change_classes": [],
+  "risk_types": [
+    "blind_trust_evidence"
+  ],
+  "trigger_context": {
+    "imp_state": "IMP-RISK-VALIDATION",
+    "chg_refs": {
+      "primary": "CHG-GOV-DOC",
+      "secondary": []
+    },
+    "nbt_rule_refs": [
+      "NBT-AI-02",
+      "NBT-H-02",
+      "NBT-AI-01"
+    ],
+    "g10_sections": [
+      "§2.5",
+      "§3",
+      "§4.1",
+      "§5.3",
+      "§6.3"
+    ],
+    "imp_transition_target": "IMP-QA-READY"
+  },
+  "risk_items": [
+    {
+      "risk_id": "RISK-W2-1-001",
+      "risk_type": "blind_trust_evidence",
+      "severity": "low",
+      "summary": "IMP-RISK-VALIDATION exit used ART-ENG-WR §4+§7 interim对照 before ART-GOV-RISK existed (G8-6)",
+      "nbt_refs": [
+        "NBT-AI-02",
+        "NBT-H-02"
+      ],
+      "disposition": "accepted",
+      "owner": "governance",
+      "evidence_ref": "20_pilot/W2-1_case/05_art_eng_wr.md#§4-§7"
+    },
+    {
+      "risk_id": "RISK-W2-1-002",
+      "risk_type": "blind_trust_evidence",
+      "severity": "low",
+      "summary": "ART-GOV-RISK formally deferred at Eng; G7-2 entry placeholder until W2-3 contract landed",
+      "nbt_refs": [
+        "NBT-H-02"
+      ],
+      "disposition": "closed",
+      "owner": "governance",
+      "evidence_ref": "20_pilot/W2-1_case/W2-1_case.md#§3-IMP-REVIEW-READY→IMP-RISK-VALIDATION"
+    },
+    {
+      "risk_id": "RISK-W2-1-003",
+      "risk_type": "blind_trust_evidence",
+      "severity": "low",
+      "summary": "Checker gap GAP-GOV-RISK: formal GOV artifact missing at QA time; mitigated by independent grep (NBT-AI-01)",
+      "nbt_refs": [
+        "NBT-AI-01",
+        "NBT-AI-02"
+      ],
+      "disposition": "closed",
+      "owner": "qa",
+      "evidence_ref": "20_pilot/W2-1_case/06_art_qa_rev.json#gaps.GAP-GOV-RISK"
+    }
+  ],
+  "must_stop_work": false,
+  "escalation_path": [
+    "governance_owner",
+    "shangshu"
+  ],
+  "override_allowed": true,
+  "override_effective": false,
+  "nbt_validation": {
+    "checklist_id": "G10-2-§6.3-v0.1",
+    "all_required": true,
+    "fallback_used": true,
+    "items": [
+      {
+        "item_key": "no_blind_trust_release_basis",
+        "passed": true,
+        "nbt_ref": "§2.5",
+        "notes": "W2-1-QA-REL reran grep + manual diff; release not based on Eng ok:true alone (06_art_qa_rev NBT row)"
+      },
+      {
+        "item_key": "nbt_h_confirmed_or_na",
+        "passed": true,
+        "nbt_ref": "§3",
+        "notes": "CHG-GOV-DOC trivial doc ticket: NBT-H-01/05/08/13/14 N/A; no §7 override on W2-1 Eng"
+      },
+      {
+        "item_key": "no_active_denial",
+        "passed": true,
+        "nbt_ref": "§4.1",
+        "notes": "No guard deny/stop_work; QA verdict accepted_with_gaps (not rejected/blocked)"
+      },
+      {
+        "item_key": "g6_guard_checker_met",
+        "passed": true,
+        "nbt_ref": "G6-2",
+        "notes": "ACT-VERIFY via ART-ENG-EVD + checker AC-1–AC-4; guard recommended not mandatory for CHG-GOV-DOC"
+      },
+      {
+        "item_key": "context_deny_handled",
+        "passed": true,
+        "nbt_ref": "NBT-H-14",
+        "notes": "No context deny hit on W2-1; ART-ENG-CTX forbidden_zone_types declared only"
+      }
+    ]
+  },
+  "evidence_refs": [
+    {
+      "artifact_id": "ART-ENG-CTX",
+      "section_or_field": "primary_change_class",
+      "instance_ref": "W2-1-ENG-CTX-001"
+    },
+    {
+      "artifact_id": "ART-ENG-WR",
+      "section_or_field": "§4",
+      "instance_ref": "W2-1-WR-001"
+    },
+    {
+      "artifact_id": "ART-ENG-WR",
+      "section_or_field": "§7",
+      "instance_ref": "W2-1-WR-001"
+    },
+    {
+      "artifact_id": "ART-ENG-EVD",
+      "section_or_field": "commands",
+      "instance_ref": "W2-1-WR-001"
+    },
+    {
+      "artifact_id": "ART-QA-REV",
+      "section_or_field": "gaps",
+      "instance_ref": "W2-1-QA-REL-001"
+    }
+  ],
+  "wr_fallback": {
+    "wr_section_4": true,
+    "wr_section_7": true,
+    "reason": "W2-1 IMP-RISK-VALIDATION exit (2026-05-27) used WR §4 (ART-ENG-EVD) + §7 (override none) as interim machine-readable对照 per W2-1_case §3 and PM clarify defer; superseded by this pilot artifact for gate design validation only — does not retroactively change W2-1 imp_state or QA/REL verdicts."
+  }
+}

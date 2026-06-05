@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 186,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_lazy\\metrics.py",
+  "name": "metrics.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 539,
+  "content_sha256": "c98f1ff69b34824c1b54ad1b861420317092321dfa269f5761dd7e8942d3f58b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 13,
+    "char_count": 539,
+    "preview_lines": [
+      "import torch._C._lazy",
+      "def reset():",
+      "    \"\"\"Resets all metric counters.\"\"\"",
+      "    torch._C._lazy._reset_metrics()",
+      "def counter_names():",
+      "    \"\"\"Retrieves all the currently active counter names.\"\"\"",
+      "    return torch._C._lazy._counter_names()",
+      "def counter_value(name: str):",
+      "    \"\"\"Return the value of the counter with the speficied name\"\"\"",
+      "    return torch._C._lazy._counter_value(name)"
+    ],
+    "imports": [
+      "import torch._C._lazy"
+    ],
+    "classes": [],
+    "functions": [
+      "reset",
+      "counter_names",
+      "counter_value",
+      "metrics_report"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_186_c98f1ff69b34824c_metrics.py.json"
+}

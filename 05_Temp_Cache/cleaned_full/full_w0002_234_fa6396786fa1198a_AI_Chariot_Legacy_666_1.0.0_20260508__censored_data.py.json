@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 234,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__censored_data.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__censored_data.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18765,
+  "content_sha256": "fa6396786fa1198a82cfcb236c42e205e04e136d7ac12f0fb2f983f7d60d5710",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 459,
+    "non_empty_lines": 384,
+    "char_count": 18765,
+    "preview_lines": [
+      "import numpy as np",
+      "def _validate_1d(a, name, allow_inf=False):",
+      "    if np.ndim(a) != 1:",
+      "        raise ValueError(f'`{name}` must be a one-dimensional sequence.')",
+      "    if np.isnan(a).any():",
+      "        raise ValueError(f'`{name}` must not contain nan.')",
+      "    if not allow_inf and np.isinf(a).any():",
+      "        raise ValueError(f'`{name}` must contain only finite values.')",
+      "def _validate_interval(interval):",
+      "    interval = np.asarray(interval)"
+    ],
+    "imports": [
+      "import numpy as np"
+    ],
+    "classes": [
+      "CensoredData"
+    ],
+    "functions": [
+      "_validate_1d",
+      "_validate_interval",
+      "_validate_x_censored"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_234_fa6396786fa1198a_AI_Chariot_Legacy_666_1.0.0_20260508__censored_data.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__line_split.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__line_split.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 846,
+  "content_sha256": "be56d8b67535b0d3bc9f8080a4c0db53d3ead70999f7a016c6b5b849b70acd26",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 16,
+    "char_count": 846,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import re",
+      "# Pre-compile the regular expression and store it in a global constant",
+      "LINE_AND_ENDING_PATTERN = re.compile(r\"(.*?)(\\r\\n|\\r|\\n|$)\", re.S)",
+      "def line_split(input_string: str) -> list[tuple[str, str]]:",
+      "    r\"\"\"",
+      "    Splits an arbitrary string into a list of tuples, where each tuple contains a line of text and its line ending.",
+      "    Args:",
+      "        input_string (str): The string to split.",
+      "    Returns:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re"
+    ],
+    "classes": [],
+    "functions": [
+      "line_split"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_492_be56d8b67535b0d3_AI_Chariot_Legacy_666_1.0.0_20260508__line_split.py.json"
+}

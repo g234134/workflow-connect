@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\agents\\test_chat.py",
+  "name": "test_chat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1166,
+  "content_sha256": "62b661d7d869e9add1571d183517d9ac085d8a96355bbd3a45f72bf3c23ed5c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 46,
+    "non_empty_lines": 35,
+    "char_count": 1163,
+    "preview_lines": [
+      "\"\"\"Unittests for langchain.agents.chat package.\"\"\"",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_classic.agents.chat.output_parser import ChatOutputParser",
+      "output_parser = ChatOutputParser()",
+      "def get_action_and_input(text: str) -> tuple[str, str]:",
+      "    output = output_parser.parse(text)",
+      "    if isinstance(output, AgentAction):",
+      "        return output.tool, str(output.tool_input)",
+      "    return \"Final Answer\", output.return_values[\"output\"]",
+      "def test_parse_with_language() -> None:"
+    ],
+    "imports": [
+      "from langchain_core.agents import AgentAction",
+      "from langchain_classic.agents.chat.output_parser import ChatOutputParser"
+    ],
+    "classes": [],
+    "functions": [
+      "get_action_and_input",
+      "test_parse_with_language",
+      "test_parse_without_language"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_168_62b661d7d869e9ad_test_chat.py.json"
+}

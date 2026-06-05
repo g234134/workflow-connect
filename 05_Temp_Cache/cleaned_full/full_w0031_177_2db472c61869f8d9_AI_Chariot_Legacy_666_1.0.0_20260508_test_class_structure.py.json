@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 177,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_class_structure.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_class_structure.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1048,
+  "content_sha256": "2db472c61869f8d9e77c9da04e7d527658020509f6ae1c81ef10293a071dfeb3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 29,
+    "char_count": 1048,
+    "preview_lines": [
+      "from sympy.diffgeom import Manifold, Patch, CoordSystem, Point",
+      "from sympy.core.function import Function",
+      "from sympy.core.symbol import symbols",
+      "from sympy.testing.pytest import warns_deprecated_sympy",
+      "m = Manifold('m', 2)",
+      "p = Patch('p', m)",
+      "a, b = symbols('a b')",
+      "cs = CoordSystem('cs', p, [a, b])",
+      "x, y = symbols('x y')",
+      "f = Function('f')"
+    ],
+    "imports": [
+      "from sympy.diffgeom import Manifold, Patch, CoordSystem, Point",
+      "from sympy.core.function import Function",
+      "from sympy.core.symbol import symbols",
+      "from sympy.testing.pytest import warns_deprecated_sympy"
+    ],
+    "classes": [],
+    "functions": [
+      "test_point",
+      "test_subs",
+      "test_deprecated"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_177_2db472c61869f8d9_AI_Chariot_Legacy_666_1.0.0_20260508_test_class_structure.py.json"
+}

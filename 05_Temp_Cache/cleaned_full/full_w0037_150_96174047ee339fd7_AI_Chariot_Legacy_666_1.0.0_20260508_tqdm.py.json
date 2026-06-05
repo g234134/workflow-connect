@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tqdm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tqdm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10757,
+  "content_sha256": "96174047ee339fd71a6e50834badb8d3e3b6bdbe1b7537d36e3516ebce10588e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 308,
+    "non_empty_lines": 243,
+    "char_count": 10551,
+    "preview_lines": [
+      "# coding=utf-8",
+      "# Copyright 2021 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import io",
+      "import logging",
+      "import os",
+      "import warnings",
+      "from contextlib import contextmanager, nullcontext",
+      "from pathlib import Path",
+      "from typing import ContextManager, Iterator, Optional, Union",
+      "from tqdm.auto import tqdm as old_tqdm",
+      "from ..constants import HF_HUB_DISABLE_PROGRESS_BARS"
+    ],
+    "classes": [
+      "tqdm"
+    ],
+    "functions": [
+      "disable_progress_bars",
+      "enable_progress_bars",
+      "are_progress_bars_disabled",
+      "is_tqdm_disabled",
+      "tqdm_stream_file",
+      "_get_progress_bar_context"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_150_96174047ee339fd7_AI_Chariot_Legacy_666_1.0.0_20260508_tqdm.py.json"
+}

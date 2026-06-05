@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 192,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9668,
+  "content_sha256": "808a1d900245c8e2322826428f994094bee3223e64033ac36fe2bed8c14da656",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 345,
+    "non_empty_lines": 268,
+    "char_count": 9668,
+    "preview_lines": [
+      "# Lists",
+      "import logging",
+      "from ..common.utils import isStrSpace",
+      "from .state_block import StateBlock",
+      "LOGGER = logging.getLogger(__name__)",
+      "# Search `[-+*][\\n ]`, returns next pos after marker on success",
+      "# or -1 on fail.",
+      "def skipBulletListMarker(state: StateBlock, startLine: int) -> int:",
+      "    pos = state.bMarks[startLine] + state.tShift[startLine]",
+      "    maximum = state.eMarks[startLine]"
+    ],
+    "imports": [
+      "import logging",
+      "from ..common.utils import isStrSpace",
+      "from .state_block import StateBlock"
+    ],
+    "classes": [],
+    "functions": [
+      "skipBulletListMarker",
+      "skipOrderedListMarker",
+      "markTightParagraphs",
+      "list_block"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_192_808a1d900245c8e2_AI_Chariot_Legacy_666_1.0.0_20260508_list.py.json"
+}

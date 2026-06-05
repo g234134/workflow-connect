@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_embeddings_provider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_embeddings_provider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 746,
+  "content_sha256": "8701434934814055d38fffe7f731a8979e2b1f071f40a2d67ef54b2091cd0837",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 15,
+    "char_count": 746,
+    "preview_lines": [
+      "\"\"\"Base class for embedding providers.\"\"\"",
+      "from typing import Generic, TypeVar",
+      "from pydantic import Field",
+      "from pydantic_settings import BaseSettings, SettingsConfigDict",
+      "from crewai.rag.core.base_embeddings_callable import EmbeddingFunction",
+      "T = TypeVar(\"T\", bound=EmbeddingFunction)  # type: ignore[type-arg]",
+      "class BaseEmbeddingsProvider(BaseSettings, Generic[T]):",
+      "    \"\"\"Abstract base class for embedding providers.",
+      "    This class provides a common interface for dynamically loading and building",
+      "    embedding functions from various providers."
+    ],
+    "imports": [
+      "from typing import Generic, TypeVar",
+      "from pydantic import Field",
+      "from pydantic_settings import BaseSettings, SettingsConfigDict",
+      "from crewai.rag.core.base_embeddings_callable import EmbeddingFunction"
+    ],
+    "classes": [
+      "BaseEmbeddingsProvider"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_492_8701434934814055_AI_Chariot_Legacy_666_1.0.0_20260508_base_embeddings_provider.py.json"
+}

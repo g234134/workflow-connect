@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_run_eval.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_run_eval.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11464,
+  "content_sha256": "43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 310,
+    "non_empty_lines": 266,
+    "char_count": 11464,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "\"\"\"Run trigger evaluation for a skill description.",
+      "Tests whether a skill's description causes Claude to trigger (read the skill)",
+      "for a set of queries. Outputs results as JSON.",
+      "\"\"\"",
+      "import argparse",
+      "import json",
+      "import os",
+      "import select",
+      "import subprocess"
+    ],
+    "imports": [
+      "import argparse",
+      "import json",
+      "import os",
+      "import select",
+      "import subprocess",
+      "import sys",
+      "import time",
+      "import uuid",
+      "from concurrent.futures import ProcessPoolExecutor, as_completed",
+      "from pathlib import Path",
+      "from scripts.utils import parse_skill_md"
+    ],
+    "classes": [],
+    "functions": [
+      "find_project_root",
+      "run_single_query",
+      "run_eval",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_459_43e3b8f80dbf69c3_AI_Chariot_Legacy_666_1.0.0_20260508_run_eval.py.json"
+}

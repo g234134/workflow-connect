@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 39,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ccitt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ccitt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21178,
+  "content_sha256": "217f37b9a98d7c09a08567e43fa3eba0680abff8333efcb0b5a3fc2745d8dd4b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 601,
+    "non_empty_lines": 546,
+    "char_count": 21178,
+    "preview_lines": [
+      "# CCITT Fax decoder",
+      "#",
+      "# Bugs: uncompressed mode untested.",
+      "#",
+      "# cf.",
+      "#  ITU-T Recommendation T.4",
+      "#    \"Standardization of Group 3 facsimile terminals",
+      "#    for document transmission\"",
+      "#  ITU-T Recommendation T.6",
+      "#    \"FACSIMILE CODING SCHEMES AND CODING CONTROL FUNCTIONS"
+    ],
+    "imports": [
+      "import array",
+      "from collections.abc import Callable, Iterator, MutableSequence, Sequence",
+      "from typing import (",
+      "from pdfminer.pdfexceptions import PDFException, PDFValueError"
+    ],
+    "classes": [
+      "BitParser",
+      "CCITTG4Parser",
+      "CCITTFaxDecoder"
+    ],
+    "functions": [
+      "get_bytes",
+      "ccittfaxdecode",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_039_217f37b9a98d7c09_AI_Chariot_Legacy_666_1.0.0_20260508_ccitt.py.json"
+}

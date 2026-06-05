@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 188,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_cli_app.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_cli_app.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6085,
+  "content_sha256": "88cfd924dfcf779cb298b8563e89738aa968fd75ba999fb5a39a92cb593e85c3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 191,
+    "non_empty_lines": 160,
+    "char_count": 6085,
+    "preview_lines": [
+      "from pathlib import Path",
+      "from typing import Any, Dict",
+      "import pytest",
+      "import srsly",
+      "from typer.testing import CliRunner",
+      "from weasel import app",
+      "from weasel.cli.main import HELP",
+      "from weasel.util import get_git_version",
+      "runner = CliRunner()",
+      "@pytest.mark.parametrize(\"cmd\", [\"--help\"])"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "from typing import Any, Dict",
+      "import pytest",
+      "import srsly",
+      "from typer.testing import CliRunner",
+      "from weasel import app",
+      "from weasel.cli.main import HELP",
+      "from weasel.util import get_git_version"
+    ],
+    "classes": [],
+    "functions": [
+      "test_show_help",
+      "has_git",
+      "project_dir",
+      "test_project_document",
+      "test_project_assets",
+      "test_project_run",
+      "test_check_spacy_env_vars",
+      "test_project_clone",
+      "test_project_push_pull"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_188_88cfd924dfcf779c_AI_Chariot_Legacy_666_1.0.0_20260508_test_cli_app.py.json"
+}

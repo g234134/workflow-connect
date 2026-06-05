@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 269,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llm_http_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llm_http_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 335310,
+  "content_sha256": "d755637e9f1c459c5f3b5023155a9911adc6357d58e081ec1b3560085bd15802",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 9311,
+    "non_empty_lines": 8408,
+    "char_count": 335310,
+    "preview_lines": [
+      "import json",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    AsyncIterator,",
+      "    Coroutine,",
+      "    Dict,",
+      "    List,",
+      "    Literal,",
+      "    Optional,"
+    ],
+    "imports": [
+      "import json",
+      "from typing import (",
+      "import httpx  # type: ignore",
+      "from openai.types.file_deleted import FileDeleted",
+      "import litellm",
+      "import litellm.litellm_core_utils",
+      "import litellm.types",
+      "import litellm.types.utils",
+      "from litellm._logging import verbose_logger",
+      "from litellm.constants import REALTIME_WEBSOCKET_MAX_MESSAGE_SIZE_BYTES",
+      "from litellm.litellm_core_utils.realtime_streaming import RealTimeStreaming",
+      "from litellm.llms.base_llm.anthropic_messages.transformation import (",
+      "from litellm.llms.base_llm.audio_transcription.transformation import (",
+      "from litellm.llms.base_llm.base_model_iterator import MockResponseIterator",
+      "from litellm.llms.base_llm.batches.transformation import BaseBatchesConfig",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig",
+      "from litellm.llms.base_llm.containers.transformation import BaseContainerConfig",
+      "from litellm.llms.base_llm.embedding.transformation import BaseEmbeddingConfig",
+      "from litellm.llms.base_llm.files.transformation import BaseFilesConfig",
+      "from litellm.llms.base_llm.google_genai.transformation import ("
+    ],
+    "classes": [
+      "BaseLLMHTTPHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_269_d755637e9f1c459c_AI_Chariot_Legacy_666_1.0.0_20260508_llm_http_handler.py.json"
+}

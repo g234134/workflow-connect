@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_clustering.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_clustering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1847,
+  "content_sha256": "66ea35aa100b625eb00478c2268e369c1a01d0dc9a51adb313727e1818ebef51",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 49,
+    "char_count": 1847,
+    "preview_lines": [
+      "import itertools",
+      "from collections.abc import Hashable",
+      "from operator import itemgetter",
+      "from typing import Any, Callable, Dict, Iterable, List, Tuple, TypeVar, Union",
+      "from .._typing import T_num, T_obj",
+      "def cluster_list(xs: List[T_num], tolerance: T_num = 0) -> List[List[T_num]]:",
+      "    if tolerance == 0:",
+      "        return [[x] for x in sorted(xs)]",
+      "    if len(xs) < 2:",
+      "        return [[x] for x in sorted(xs)]"
+    ],
+    "imports": [
+      "import itertools",
+      "from collections.abc import Hashable",
+      "from operator import itemgetter",
+      "from typing import Any, Callable, Dict, Iterable, List, Tuple, TypeVar, Union",
+      "from .._typing import T_num, T_obj"
+    ],
+    "classes": [],
+    "functions": [
+      "cluster_list",
+      "make_cluster_dict",
+      "cluster_objects"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_363_66ea35aa100b625e_AI_Chariot_Legacy_666_1.0.0_20260508_clustering.py.json"
+}

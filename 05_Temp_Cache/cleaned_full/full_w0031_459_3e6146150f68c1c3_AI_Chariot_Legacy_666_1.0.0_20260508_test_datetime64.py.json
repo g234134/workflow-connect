@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_datetime64.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_datetime64.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 91277,
+  "content_sha256": "3e6146150f68c1c3fe6ed25946c3b37176e190851e138d47cecbbebc9646a5ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2500,
+    "non_empty_lines": 2093,
+    "char_count": 91277,
+    "preview_lines": [
+      "# Arithmetic tests for DataFrame/Series/Index/Array classes that should",
+      "# behave identically.",
+      "# Specifically for datetime64 and datetime64tz dtypes",
+      "from datetime import (",
+      "    datetime,",
+      "    time,",
+      "    timedelta,",
+      "    timezone,",
+      ")",
+      "from itertools import ("
+    ],
+    "imports": [
+      "from datetime import (",
+      "from itertools import (",
+      "import operator",
+      "import numpy as np",
+      "import pytest",
+      "from pandas._libs.tslibs.conversion import localize_pydatetime",
+      "from pandas._libs.tslibs.offsets import shift_months",
+      "import pandas as pd",
+      "from pandas import (",
+      "import pandas._testing as tm",
+      "from pandas.core import roperator",
+      "from pandas.tests.arithmetic.common import ("
+    ],
+    "classes": [
+      "TestDatetime64ArrayLikeComparisons",
+      "TestDatetime64SeriesComparison",
+      "TestDatetimeIndexComparisons",
+      "TestDatetime64Arithmetic",
+      "TestDatetime64DateOffsetArithmetic",
+      "TestDatetime64OverflowHandling",
+      "TestTimestampSeriesArithmetic",
+      "TestDatetimeIndexArithmetic"
+    ],
+    "functions": [
+      "test_shift_months",
+      "test_dt64arr_addsub_object_dtype_2d",
+      "test_non_nano_dt64_addsub_np_nat_scalars",
+      "test_non_nano_dt64_addsub_np_nat_scalars_unitless",
+      "test_non_nano_dt64_addsub_np_nat_scalars_unsupported_unit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_459_3e6146150f68c1c3_AI_Chariot_Legacy_666_1.0.0_20260508_test_datetime64.py.json"
+}

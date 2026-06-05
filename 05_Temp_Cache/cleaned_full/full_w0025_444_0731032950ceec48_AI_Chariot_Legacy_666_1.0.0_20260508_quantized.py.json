@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 444,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quantized.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quantized.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3293,
+  "content_sha256": "0731032950ceec486bf8d823cf1eb004702f0eacc28aac56bfcced20d8ae13c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 76,
+    "char_count": 3293,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "class QuantizedLinear(torch.jit.ScriptModule):",
+      "    def __init__(self, other):",
+      "        raise RuntimeError(",
+      "            \"torch.jit.QuantizedLinear is no longer supported. Please use \"",
+      "            \"torch.ao.nn.quantized.dynamic.Linear instead.\"",
+      "        )",
+      "# FP16 weights",
+      "class QuantizedLinearFP16(torch.jit.ScriptModule):"
+    ],
+    "imports": [
+      "import torch"
+    ],
+    "classes": [
+      "QuantizedLinear",
+      "QuantizedLinearFP16",
+      "QuantizedRNNCellBase",
+      "QuantizedRNNCell",
+      "QuantizedLSTMCell",
+      "QuantizedGRUCell",
+      "QuantizedRNNBase",
+      "QuantizedLSTM",
+      "QuantizedGRU"
+    ],
+    "functions": [
+      "quantize_rnn_cell_modules",
+      "quantize_linear_modules",
+      "quantize_rnn_modules"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_444_0731032950ceec48_AI_Chariot_Legacy_666_1.0.0_20260508_quantized.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fuser_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fuser_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9029,
+  "content_sha256": "93312062aa8ffd6cfab416fa9bdddaf7d1bbf4fd6692101cd75038e8aff038f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 236,
+    "non_empty_lines": 179,
+    "char_count": 9029,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import copy",
+      "from queue import SimpleQueue",
+      "from typing import List, Dict, Tuple",
+      "import torch.fx",
+      "from torch.fx.graph_module import GraphModule",
+      "from torch.fx.graph import Graph",
+      "from torch.fx.node import Node",
+      "from torch.fx.passes.tools_common import NodeList, NodeSet, legalize_graph",
+      "from torch.fx.passes.utils import lift_subgraph_as_module"
+    ],
+    "imports": [
+      "import copy",
+      "from queue import SimpleQueue",
+      "from typing import List, Dict, Tuple",
+      "import torch.fx",
+      "from torch.fx.graph_module import GraphModule",
+      "from torch.fx.graph import Graph",
+      "from torch.fx.node import Node",
+      "from torch.fx.passes.tools_common import NodeList, NodeSet, legalize_graph",
+      "from torch.fx.passes.utils import lift_subgraph_as_module",
+      "from torch.fx._compatibility import compatibility"
+    ],
+    "classes": [],
+    "functions": [
+      "topo_sort",
+      "validate_partition",
+      "fuse_as_graphmodule",
+      "insert_subgm",
+      "erase_nodes",
+      "fuse_by_partitions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_343_93312062aa8ffd6c_AI_Chariot_Legacy_666_1.0.0_20260508_fuser_utils.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pythonrational.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pythonrational.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4143,
+  "content_sha256": "bd8325393b98bdffb5e4fd27293166fae46b85473e9c214492a60500f2f1834f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 139,
+    "non_empty_lines": 108,
+    "char_count": 4143,
+    "preview_lines": [
+      "\"\"\"Tests for PythonRational type. \"\"\"",
+      "from sympy.polys.domains import PythonRational as QQ",
+      "from sympy.testing.pytest import raises",
+      "def test_PythonRational__init__():",
+      "    assert QQ(0).numerator == 0",
+      "    assert QQ(0).denominator == 1",
+      "    assert QQ(0, 1).numerator == 0",
+      "    assert QQ(0, 1).denominator == 1",
+      "    assert QQ(0, -1).numerator == 0",
+      "    assert QQ(0, -1).denominator == 1"
+    ],
+    "imports": [
+      "from sympy.polys.domains import PythonRational as QQ",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_PythonRational__init__",
+      "test_PythonRational__hash__",
+      "test_PythonRational__int__",
+      "test_PythonRational__float__",
+      "test_PythonRational__abs__",
+      "test_PythonRational__pos__",
+      "test_PythonRational__neg__",
+      "test_PythonRational__add__",
+      "test_PythonRational__sub__",
+      "test_PythonRational__mul__",
+      "test_PythonRational__truediv__",
+      "test_PythonRational__pow__",
+      "test_PythonRational__eq__",
+      "test_PythonRational__lt_le_gt_ge__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_377_bd8325393b98bdff_AI_Chariot_Legacy_666_1.0.0_20260508_test_pythonrational.py.json"
+}

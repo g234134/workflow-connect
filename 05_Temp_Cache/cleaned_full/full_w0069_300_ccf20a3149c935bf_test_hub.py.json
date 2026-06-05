@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 300,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\runnables\\test_hub.py",
+  "name": "test_hub.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2475,
+  "content_sha256": "ccf20a3149c935bf621c6f72c4d54a2f0332ed05f834a36b5e7693f515d24dbf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 82,
+    "non_empty_lines": 62,
+    "char_count": 2472,
+    "preview_lines": [
+      "from typing import Any",
+      "from unittest.mock import Mock, patch",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import ConfigurableField",
+      "from langchain_classic.runnables.hub import HubRunnable",
+      "@patch(\"langchain_classic.hub.pull\")",
+      "def test_hub_runnable(mock_pull: Mock) -> None:",
+      "    mock_pull.return_value = ChatPromptTemplate.from_messages(",
+      "        [",
+      "            (\"system\", \"a\"),"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from unittest.mock import Mock, patch",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_core.runnables import ConfigurableField",
+      "from langchain_classic.runnables.hub import HubRunnable"
+    ],
+    "classes": [],
+    "functions": [
+      "test_hub_runnable",
+      "repo_lookup",
+      "test_hub_runnable_configurable_alternative",
+      "test_hub_runnable_configurable_fields"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_300_ccf20a3149c935bf_test_hub.py.json"
+}

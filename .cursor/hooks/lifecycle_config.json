@@ -1,0 +1,101 @@
+{
+  "schema_version": "task-lifecycle-hooks-v0.1",
+  "state_dir": ".cursor/hooks_state",
+  "required_artifacts": [
+    {
+      "id": "agents",
+      "path": "AGENTS.md",
+      "label": "接戰入口（AGENTS.md）",
+      "tier": "P0"
+    },
+    {
+      "id": "constitution",
+      "path": "04_Workflows/HARNESS_CONSTITUTION.md",
+      "label": "憲法（禁區類型見 §7）",
+      "tier": "P0"
+    },
+    {
+      "id": "engineering_contract",
+      "path": "04_Workflows/ENGINEERING_CONTRACT.md",
+      "label": "工程合約",
+      "tier": "P0"
+    },
+    {
+      "id": "cursor_rules_mdc",
+      "path": ".cursor/rules/engineering-contract.mdc",
+      "label": "Cursor 執行規則（engineering-contract.mdc）",
+      "tier": "P0"
+    },
+    {
+      "id": "progress",
+      "path": "04_Workflows/00_Agent_Work_Progress.md",
+      "label": "全局 Progress",
+      "tier": "P1"
+    },
+    {
+      "id": "master_map",
+      "path": "04_Workflows/Master_Map.json",
+      "label": "路徑／runner 索引",
+      "tier": "P1"
+    },
+    {
+      "id": "ops_cycle",
+      "path": "04_Workflows/OPS_CYCLE.md",
+      "label": "營運週期／戰報制度",
+      "tier": "P1"
+    }
+  ],
+  "scope_hint": "僅改尚書省／任務卡明示範圍；他人 core 與他人 workspace 三件套禁止接管；Progress／Conditions 僅末尾追加。",
+  "forbidden_zone_hint": "憲法 §7 禁區類型（具體路徑見 INSTANCE_ANCHOR_TANG.md）：環境密鑰、venv 樹、未授權 runtime checkpoint、暗部破壞性維運、總部清算腳本；禁止輸出 .env／金鑰原文。",
+  "manual_decision_items": [
+    "是否已獲尚書省施工授權",
+    "是否觸及高風險禁區（需 override 留痕）",
+    "是否可標可交付（需 runner 證據，見 OPS_CYCLE）",
+    "是否 append 戰報至 00_Agent_Work_Progress.md"
+  ],
+  "risk_path_patterns": [
+    "\\.env",
+    "runtime[/\\\\]checkpoints",
+    "01_Environments[/\\\\]python_venvs",
+    "project_status[/\\\\]master_status\\.md",
+    "project_status[/\\\\]handoff\\.md",
+    "Chariot_Registry\\.db"
+  ],
+  "governance_path_patterns": [
+    "04_Workflows[/\\\\]00_Agent_Work_Progress\\.md",
+    "04_Workflows[/\\\\]00_Agent_Work_Conditions\\.md",
+    "04_Workflows[/\\\\]HARNESS_CONSTITUTION\\.md",
+    "04_Workflows[/\\\\]ENGINEERING_CONTRACT\\.md",
+    "AGENTS\\.md"
+  ],
+  "default_battle_report": {
+    "ticket_id": "HOOK-LIFECYCLE-DRAFT",
+    "role": "Cursor Agent（hook 草稿，待人工定稿）",
+    "status": "draft"
+  },
+  "test_suggestions": [
+    "python .cursor/hooks/smoke_test_hooks.py",
+    "python 04_Workflows/_ops_cycle.py validate-report --json .cursor/hooks_state/latest_battle_report_draft.json"
+  ],
+  "scope_ledger_path": ".cursor/scope_ledger.json",
+  "session_context_path": ".cursor/hooks_state/session_context.json",
+  "battle_report_draft_dir": ".cursor/hooks_state/battle_report_drafts",
+  "latest_battle_report_draft": ".cursor/hooks_state/latest_battle_report_draft.json",
+  "subagent_artifact_dir": ".cursor/hooks_state/subagent_out",
+  "run_queue_paths": [
+    "workflow_upgrade/90_run_queue.md"
+  ],
+  "ticket_id_patterns": [
+    "TEST-SUB-[0-9]{3}",
+    "HQ-[A-Z0-9-]+",
+    "[A-Z]+[-']?[0-9]+"
+  ],
+  "eligible_ticket_prefixes": [
+    "TEST-SUB-"
+  ],
+  "skip_path_patterns": [
+    "\\.env",
+    "runtime[/\\\\]checkpoints",
+    "01_Environments[/\\\\]python_venvs"
+  ]
+}

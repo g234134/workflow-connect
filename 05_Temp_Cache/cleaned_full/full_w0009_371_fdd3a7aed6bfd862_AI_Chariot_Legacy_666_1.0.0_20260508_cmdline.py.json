@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 371,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cmdline.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cmdline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 23542,
+  "content_sha256": "fdd3a7aed6bfd8621ef0983ed58d296f9bd68bc2fa413889cf2a13b87ad8adb3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 668,
+    "non_empty_lines": 593,
+    "char_count": 23541,
+    "preview_lines": [
+      "\"\"\"",
+      "    pygments.cmdline",
+      "    ~~~~~~~~~~~~~~~~",
+      "    Command line interface.",
+      "    :copyright: Copyright 2006-present by the Pygments team, see AUTHORS.",
+      "    :license: BSD, see LICENSE for details.",
+      "\"\"\"",
+      "import os",
+      "import sys",
+      "import shutil"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import shutil",
+      "import argparse",
+      "from textwrap import dedent",
+      "from pygments import __version__, highlight",
+      "from pygments.util import ClassNotFound, OptionError, docstring_headline, \\",
+      "from pygments.lexers import get_all_lexers, get_lexer_by_name, guess_lexer, \\",
+      "from pygments.lexers.special import TextLexer",
+      "from pygments.formatters.latex import LatexEmbeddedLexer, LatexFormatter",
+      "from pygments.formatters import get_all_formatters, get_formatter_by_name, \\",
+      "from pygments.formatters.terminal import TerminalFormatter",
+      "from pygments.formatters.terminal256 import Terminal256Formatter, TerminalTrueColorFormatter",
+      "from pygments.filters import get_all_filters, find_filter_class",
+      "from pygments.styles import get_all_styles, get_style_by_name",
+      "import json"
+    ],
+    "classes": [
+      "HelpFormatter"
+    ],
+    "functions": [
+      "_parse_options",
+      "_parse_filters",
+      "_print_help",
+      "_print_list",
+      "_print_list_as_json",
+      "main_inner",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_371_fdd3a7aed6bfd862_AI_Chariot_Legacy_666_1.0.0_20260508_cmdline.py.json"
+}

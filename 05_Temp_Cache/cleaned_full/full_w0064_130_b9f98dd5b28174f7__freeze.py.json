@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\_freeze.py",
+  "name": "_freeze.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10273,
+  "content_sha256": "b9f98dd5b28174f7ed60e3d583a040638864b6ad4e56283dc28f7e22ceeda11b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 289,
+    "non_empty_lines": 240,
+    "char_count": 10273,
+    "preview_lines": [
+      "\"\"\"",
+      "Freeze Python packages.",
+      "Freezing makes it possible to ship arbitrary Python modules as part of a C++",
+      "library. The Python source of the module is compiled to bytecode and written",
+      "to `.c` files, to be imported by Python's built-in FrozenImporter.",
+      "In a normal Python installation, FrozenImporter is only used to bootstrap the",
+      "initialization of the import machinery. Python's importers are defined in",
+      "Python (see `_bootstrap.py` and `_bootstrap_external.py`) but need to be",
+      "retrieved before any importers are available. Freezing the module bytecode",
+      "resolves this circular dependency."
+    ],
+    "imports": [
+      "import argparse",
+      "import functools",
+      "import itertools",
+      "import marshal",
+      "import os",
+      "import types",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import List"
+    ],
+    "classes": [
+      "FrozenModule",
+      "Freezer"
+    ],
+    "functions": [
+      "indent_msg",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_130_b9f98dd5b28174f7__freeze.py.json"
+}

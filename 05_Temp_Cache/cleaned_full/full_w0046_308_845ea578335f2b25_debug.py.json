@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 308,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\experimental\\debug.py",
+  "name": "debug.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 836,
+  "content_sha256": "845ea578335f2b2589ad2eeece6f489f2c662ada87a741eb46cf82efe92f317a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 26,
+    "char_count": 836,
+    "preview_lines": [
+      "import torch.fx as fx",
+      "def set_trace(gm: fx.GraphModule) -> fx.GraphModule:",
+      "    \"\"\"",
+      "    Sets a breakpoint in `gm`'s generated python code. It drops into pdb when",
+      "    `gm` gets run.",
+      "    Args:",
+      "        gm: graph module to insert breakpoint. It is then recompiled for it to",
+      "            take effect.",
+      "    Returns:",
+      "        the `gm` with breakpoint inserted."
+    ],
+    "imports": [
+      "import torch.fx as fx"
+    ],
+    "classes": [],
+    "functions": [
+      "set_trace"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_308_845ea578335f2b25_debug.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\language_models\\chat_models\\test_rate_limiting.py",
+  "name": "test_rate_limiting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9450,
+  "content_sha256": "8b1bcfd490e4fb1980b2a131bb3fee37dc1868ef4dc8907a5be51aab99fc04f7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 272,
+    "non_empty_lines": 236,
+    "char_count": 9447,
+    "preview_lines": [
+      "import time",
+      "import pytest",
+      "from blockbuster import BlockBuster",
+      "from langchain_core.caches import InMemoryCache",
+      "from langchain_core.language_models import GenericFakeChatModel",
+      "from langchain_core.load import dumps",
+      "from langchain_core.rate_limiters import InMemoryRateLimiter",
+      "@pytest.fixture(autouse=True)",
+      "def deactivate_blockbuster(blockbuster: BlockBuster) -> None:",
+      "    # Deactivate BlockBuster to not disturb the rate limiter timings"
+    ],
+    "imports": [
+      "import time",
+      "import pytest",
+      "from blockbuster import BlockBuster",
+      "from langchain_core.caches import InMemoryCache",
+      "from langchain_core.language_models import GenericFakeChatModel",
+      "from langchain_core.load import dumps",
+      "from langchain_core.rate_limiters import InMemoryRateLimiter"
+    ],
+    "classes": [
+      "SerializableModel"
+    ],
+    "functions": [
+      "deactivate_blockbuster",
+      "test_rate_limit_invoke",
+      "test_rate_limit_batch",
+      "test_rate_limit_stream",
+      "test_rate_limit_skips_cache",
+      "test_serialization_with_rate_limiter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_237_8b1bcfd490e4fb19_test_rate_limiting.py.json"
+}

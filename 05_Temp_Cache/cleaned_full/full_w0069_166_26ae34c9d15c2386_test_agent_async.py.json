@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 166,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\agents\\test_agent_async.py",
+  "name": "test_agent_async.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11987,
+  "content_sha256": "26ae34c9d15c23867dabb66f33281bb21e6191b64abb1a005c3ec44901f5586c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 367,
+    "non_empty_lines": 329,
+    "char_count": 11984,
+    "preview_lines": [
+      "\"\"\"Unit tests for agents.\"\"\"",
+      "from typing import Any",
+      "from langchain_core.agents import AgentAction, AgentStep",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import LLM",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from langchain_core.runnables.utils import add",
+      "from langchain_core.tools import Tool",
+      "from typing_extensions import override",
+      "from langchain_classic.agents import AgentExecutor, AgentType, initialize_agent"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.agents import AgentAction, AgentStep",
+      "from langchain_core.callbacks.manager import CallbackManagerForLLMRun",
+      "from langchain_core.language_models.llms import LLM",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from langchain_core.runnables.utils import add",
+      "from langchain_core.tools import Tool",
+      "from typing_extensions import override",
+      "from langchain_classic.agents import AgentExecutor, AgentType, initialize_agent",
+      "from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler"
+    ],
+    "classes": [
+      "FakeListLLM"
+    ],
+    "functions": [
+      "_get_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_166_26ae34c9d15c2386_test_agent_async.py.json"
+}

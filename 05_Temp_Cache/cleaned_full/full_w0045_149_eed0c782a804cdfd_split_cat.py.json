@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 149,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\fx_passes\\split_cat.py",
+  "name": "split_cat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 53613,
+  "content_sha256": "eed0c782a804cdfd59e09ccb13ea96518331c608ab42835b5cdfbb6c555671d2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1382,
+    "non_empty_lines": 1252,
+    "char_count": 53613,
+    "preview_lines": [
+      "import itertools",
+      "import logging",
+      "import operator",
+      "from typing import Any, Callable, List, Optional, Sequence, Set, Tuple, Union",
+      "from typing_extensions import TypeAlias",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from ..pattern_matcher import (",
+      "    Arg,",
+      "    CallFunction,"
+    ],
+    "imports": [
+      "import itertools",
+      "import logging",
+      "import operator",
+      "from typing import Any, Callable, List, Optional, Sequence, Set, Tuple, Union",
+      "from typing_extensions import TypeAlias",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from ..pattern_matcher import (",
+      "from .pre_grad import ("
+    ],
+    "classes": [
+      "TorchSplit",
+      "SplitCatSimplifier",
+      "UnbindCatRemover",
+      "GetItem"
+    ],
+    "functions": [
+      "_get_split_args_default",
+      "remove_split_with_size_one",
+      "normalize_split_base",
+      "normalize_split_default",
+      "normalize_cat_default",
+      "normalize_stack_default",
+      "find_next_users",
+      "normalize_squeeze_default",
+      "merge_splits",
+      "merge_split_squeeze",
+      "merge_unbind_stack",
+      "simplify_split_cat",
+      "safe_to_abort_node",
+      "remove_zeros",
+      "merge_getitem_cat",
+      "merge_stack_tahn_unbind"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_149_eed0c782a804cdfd_split_cat.py.json"
+}

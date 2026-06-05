@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 450,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_historyapp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_historyapp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5943,
+  "content_sha256": "41a060fe46e643083ef2209dd4d4158aa932c9842890c9effdea597be4c6bdc9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 124,
+    "char_count": 5943,
+    "preview_lines": [
+      "# encoding: utf-8",
+      "\"\"\"",
+      "An application for managing IPython history.",
+      "To be invoked as the `ipython history` subcommand.",
+      "\"\"\"",
+      "import sqlite3",
+      "from pathlib import Path",
+      "from traitlets.config.application import Application",
+      "from .application import BaseIPythonApplication",
+      "from traitlets import Bool, Int, Dict"
+    ],
+    "imports": [
+      "import sqlite3",
+      "from pathlib import Path",
+      "from traitlets.config.application import Application",
+      "from .application import BaseIPythonApplication",
+      "from traitlets import Bool, Int, Dict",
+      "from ..utils.io import ask_yes_no"
+    ],
+    "classes": [
+      "HistoryTrim",
+      "HistoryClear",
+      "HistoryApp"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_450_41a060fe46e64308_AI_Chariot_Legacy_666_1.0.0_20260508_historyapp.py.json"
+}

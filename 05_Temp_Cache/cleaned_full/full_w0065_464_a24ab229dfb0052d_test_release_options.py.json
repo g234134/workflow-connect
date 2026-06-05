@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:48:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\.github\\scripts\\test_release_options.py",
+  "name": "test_release_options.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1744,
+  "content_sha256": "a24ab229dfb0052d8a74fc051cd2c0ffadc37179e3d21a91a689bdc285a7d36d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 39,
+    "char_count": 1741,
+    "preview_lines": [
+      "\"\"\"Verify _release.yml dropdown options match actual package directories.\"\"\"",
+      "from pathlib import Path",
+      "import yaml",
+      "REPO_ROOT = Path(__file__).resolve().parents[2]",
+      "def _get_release_options() -> list[str]:",
+      "    workflow = REPO_ROOT / \".github\" / \"workflows\" / \"_release.yml\"",
+      "    with open(workflow) as f:",
+      "        data = yaml.safe_load(f)",
+      "    try:",
+      "        # PyYAML (YAML 1.1) parses the bare key `on` as boolean True"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "import yaml"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_release_options",
+      "_get_package_dirs",
+      "test_release_options_match_packages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_464_a24ab229dfb0052d_test_release_options.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 393,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_qfunctions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_qfunctions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7633,
+  "content_sha256": "6b710718a42dfe331de31f48efbd89cfe4c6167198f9aad6a8fbd91b3f5049ed",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 280,
+    "non_empty_lines": 230,
+    "char_count": 7633,
+    "preview_lines": [
+      "from .functions import defun, defun_wrapped",
+      "@defun",
+      "def qp(ctx, a, q=None, n=None, **kwargs):",
+      "    r\"\"\"",
+      "    Evaluates the q-Pochhammer symbol (or q-rising factorial)",
+      "    .. math ::",
+      "        (a; q)_n = \\prod_{k=0}^{n-1} (1-a q^k)",
+      "    where `n = \\infty` is permitted if `|q| < 1`. Called with two arguments,",
+      "    ``qp(a,q)`` computes `(a;q)_{\\infty}`; with a single argument, ``qp(q)``",
+      "    computes `(q;q)_{\\infty}`. The special case"
+    ],
+    "imports": [
+      "from .functions import defun, defun_wrapped"
+    ],
+    "classes": [],
+    "functions": [
+      "qp",
+      "qgamma",
+      "qfac",
+      "qhyper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_393_6b710718a42dfe33_AI_Chariot_Legacy_666_1.0.0_20260508_qfunctions.py.json"
+}

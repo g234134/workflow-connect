@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_operatorset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_operatorset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9563,
+  "content_sha256": "87c9e449ca50714cc23b7cde9aa2a98107c90d68816df8f7dc8273725e09dbfe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 279,
+    "non_empty_lines": 224,
+    "char_count": 9563,
+    "preview_lines": [
+      "\"\"\" A module for mapping operators to their corresponding eigenstates",
+      "and vice versa",
+      "It contains a global dictionary with eigenstate-operator pairings.",
+      "If a new state-operator pair is created, this dictionary should be",
+      "updated as well.",
+      "It also contains functions operators_to_state and state_to_operators",
+      "for mapping between the two. These can handle both classes and",
+      "instances of operators and states. See the individual function",
+      "descriptions for details.",
+      "TODO List:"
+    ],
+    "imports": [
+      "from sympy.physics.quantum.cartesian import (XOp, YOp, ZOp, XKet, PxOp, PxKet,",
+      "from sympy.physics.quantum.operator import Operator",
+      "from sympy.physics.quantum.state import StateBase, BraBase, Ket",
+      "from sympy.physics.quantum.spin import (JxOp, JyOp, JzOp, J2Op, JxKet, JyKet,"
+    ],
+    "classes": [],
+    "functions": [
+      "operators_to_state",
+      "state_to_operators",
+      "_make_default",
+      "_get_state",
+      "_get_ops",
+      "_make_set"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_224_87c9e449ca50714c_AI_Chariot_Legacy_666_1.0.0_20260508_operatorset.py.json"
+}

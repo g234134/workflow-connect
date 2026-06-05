@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\coordinate_descent_tuner.py",
+  "name": "coordinate_descent_tuner.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10626,
+  "content_sha256": "a3caa1aedca31910a5fd4d79172562f243368a3eb9e3518364da9b37e17ba323",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 315,
+    "non_empty_lines": 265,
+    "char_count": 10626,
+    "preview_lines": [
+      "import copy",
+      "import itertools",
+      "import logging",
+      "from typing import Callable, Optional",
+      "from torch.utils._triton import has_triton",
+      "from .utils import red_text, triton_config_to_hashable",
+      "if has_triton():",
+      "    import triton",
+      "else:",
+      "    triton = None"
+    ],
+    "imports": [
+      "import copy",
+      "import itertools",
+      "import logging",
+      "from typing import Callable, Optional",
+      "from torch.utils._triton import has_triton",
+      "from .utils import red_text, triton_config_to_hashable",
+      "import triton",
+      "from . import config as inductor_config"
+    ],
+    "classes": [
+      "CoordescTuner"
+    ],
+    "functions": [
+      "get_field",
+      "set_field"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_115_a3caa1aedca31910_coordinate_descent_tuner.py.json"
+}

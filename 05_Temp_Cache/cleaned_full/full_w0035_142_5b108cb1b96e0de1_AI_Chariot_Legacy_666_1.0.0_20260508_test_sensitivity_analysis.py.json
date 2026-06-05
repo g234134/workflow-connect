@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 142,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_sensitivity_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_sensitivity_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10988,
+  "content_sha256": "5b108cb1b96e0de14f154bc829fec3b9dbed45574c1d2326cf298f232668052b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 310,
+    "non_empty_lines": 254,
+    "char_count": 10988,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_array_less",
+      "import pytest",
+      "from scipy import stats",
+      "from scipy.stats import sobol_indices",
+      "from scipy.stats._resampling import BootstrapResult",
+      "from scipy.stats._sensitivity_analysis import (",
+      "    BootstrapSobolResult, f_ishigami, sample_AB, sample_A_B",
+      ")",
+      "@pytest.fixture(scope='session')"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_array_less",
+      "import pytest",
+      "from scipy import stats",
+      "from scipy.stats import sobol_indices",
+      "from scipy.stats._resampling import BootstrapResult",
+      "from scipy.stats._sensitivity_analysis import ("
+    ],
+    "classes": [
+      "TestSobolIndices"
+    ],
+    "functions": [
+      "ishigami_ref_indices",
+      "f_ishigami_vec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_142_5b108cb1b96e0de1_AI_Chariot_Legacy_666_1.0.0_20260508_test_sensitivity_analysis.py.json"
+}

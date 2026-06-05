@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:44:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__gemini.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__gemini.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26293,
+  "content_sha256": "c925eba4ed5de63e07ebef724dd782500910ab67ced8ea516415c23f5841be86",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 686,
+    "non_empty_lines": 598,
+    "char_count": 26289,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import base64",
+      "import functools",
+      "import logging",
+      "from collections.abc import Mapping",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Callable,",
+      "    Optional,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import base64",
+      "import functools",
+      "import logging",
+      "from collections.abc import Mapping",
+      "from typing import (",
+      "from typing_extensions import TypedDict",
+      "from langsmith import client as ls_client",
+      "from langsmith import run_helpers",
+      "from langsmith._internal._beta_decorator import warn_beta",
+      "from langsmith._internal._orjson import dumps as _dumps",
+      "from langsmith.schemas import InputTokenDetails, OutputTokenDetails, UsageMetadata",
+      "from google import genai  # type: ignore[import-untyped, attr-defined]"
+    ],
+    "classes": [
+      "TracingExtra"
+    ],
+    "functions": [
+      "_strip_none",
+      "_convert_config_for_tracing",
+      "_to_dict",
+      "_process_gemini_inputs",
+      "_infer_invocation_params",
+      "_create_usage_metadata",
+      "_process_generate_content_response",
+      "_reduce_generate_content_chunks",
+      "_get_wrapper",
+      "wrap_gemini"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_253_c925eba4ed5de63e_AI_Chariot_Legacy_666_1.0.0_20260508__gemini.py.json"
+}

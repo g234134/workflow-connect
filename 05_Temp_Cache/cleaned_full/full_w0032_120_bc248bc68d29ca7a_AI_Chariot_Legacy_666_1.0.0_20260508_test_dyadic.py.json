@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 120,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dyadic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dyadic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4265,
+  "content_sha256": "bc248bc68d29ca7ac7ac20a8ed2e3ddb9960461a129bf32be5884887fd5b61cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 104,
+    "char_count": 4265,
+    "preview_lines": [
+      "from sympy.core.numbers import (Float, pi)",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.matrices.immutable import ImmutableDenseMatrix as Matrix",
+      "from sympy.physics.vector import ReferenceFrame, dynamicsymbols, outer",
+      "from sympy.physics.vector.dyadic import _check_dyadic",
+      "from sympy.testing.pytest import raises",
+      "A = ReferenceFrame('A')",
+      "def test_dyadic():",
+      "    d1 = A.x | A.x"
+    ],
+    "imports": [
+      "from sympy.core.numbers import (Float, pi)",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.trigonometric import (cos, sin)",
+      "from sympy.matrices.immutable import ImmutableDenseMatrix as Matrix",
+      "from sympy.physics.vector import ReferenceFrame, dynamicsymbols, outer",
+      "from sympy.physics.vector.dyadic import _check_dyadic",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dyadic",
+      "test_dyadic_simplify",
+      "test_dyadic_subs",
+      "test_check_dyadic",
+      "test_dyadic_evalf",
+      "test_dyadic_xreplace"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_120_bc248bc68d29ca7a_AI_Chariot_Legacy_666_1.0.0_20260508_test_dyadic.py.json"
+}

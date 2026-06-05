@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 322,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\utils\\test_pydantic.py",
+  "name": "test_pydantic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5987,
+  "content_sha256": "4fa4baaf539eadcefd1d57862a4f2b99d1738f0f03af72c2029a8d10434fd80e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 207,
+    "non_empty_lines": 158,
+    "char_count": 5980,
+    "preview_lines": [
+      "\"\"\"Test for some custom pydantic decorators.\"\"\"",
+      "import sys",
+      "import warnings",
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "from pydantic.v1 import BaseModel as BaseModelV1",
+      "from langchain_core.utils.pydantic import (",
+      "    _create_subset_model_v2,",
+      "    create_model_v2,"
+    ],
+    "imports": [
+      "import sys",
+      "import warnings",
+      "from typing import Any",
+      "import pytest",
+      "from pydantic import BaseModel, ConfigDict, Field",
+      "from pydantic.v1 import BaseModel as BaseModelV1",
+      "from langchain_core.utils.pydantic import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_pre_init_decorator",
+      "test_pre_init_decorator_with_more_defaults",
+      "test_with_aliases",
+      "test_is_basemodel_subclass",
+      "test_is_basemodel_instance",
+      "test_with_field_metadata",
+      "test_fields_pydantic_v2_proper",
+      "test_fields_pydantic_v1_from_2",
+      "test_create_model_v2",
+      "test_create_subset_model_v2_preserves_default_factory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_322_4fa4baaf539eadce_test_pydantic.py.json"
+}

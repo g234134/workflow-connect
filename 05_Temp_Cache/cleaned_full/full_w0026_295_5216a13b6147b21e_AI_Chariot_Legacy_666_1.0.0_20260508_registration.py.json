@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 295,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_registration.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_registration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3071,
+  "content_sha256": "5216a13b6147b21e285dab18bbddb241267c824e6130771b6eafd92a193c6dda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 87,
+    "non_empty_lines": 65,
+    "char_count": 3071,
+    "preview_lines": [
+      "\"\"\"Module for handling ATen to ONNX functions registration.\"\"\"",
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from typing import TYPE_CHECKING",
+      "# We can only import onnx from this module in a type-checking context to ensure that",
+      "# 'import torch.onnx' continues to work without having 'onnx' installed. We fully",
+      "# 'import onnx' inside of dynamo_export (by way of _assert_dependencies).",
+      "if TYPE_CHECKING:",
+      "    import types",
+      "    import onnxscript  # type: ignore[import]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from typing import TYPE_CHECKING",
+      "import types",
+      "import onnxscript  # type: ignore[import]",
+      "import torch._ops"
+    ],
+    "classes": [
+      "ONNXFunction",
+      "OpName"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_295_5216a13b6147b21e_AI_Chariot_Legacy_666_1.0.0_20260508_registration.py.json"
+}

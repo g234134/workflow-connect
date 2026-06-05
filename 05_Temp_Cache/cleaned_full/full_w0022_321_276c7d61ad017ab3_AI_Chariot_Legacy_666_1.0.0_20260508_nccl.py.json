@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nccl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nccl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4701,
+  "content_sha256": "276c7d61ad017ab30171197a7b7d4d7e2f39262892caeb2057f47943dd031866",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 151,
+    "non_empty_lines": 123,
+    "char_count": 4701,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import collections",
+      "import warnings",
+      "from typing import Optional, Sequence, Union",
+      "import torch.cuda",
+      "__all__ = [\"all_reduce\", \"reduce\", \"broadcast\", \"all_gather\", \"reduce_scatter\"]",
+      "SUM = 0  # ncclRedOp_t",
+      "def is_available(tensors):",
+      "    if not hasattr(torch._C, \"_nccl_all_reduce\"):",
+      "        warnings.warn(\"PyTorch is not compiled with NCCL support\")"
+    ],
+    "imports": [
+      "import collections",
+      "import warnings",
+      "from typing import Optional, Sequence, Union",
+      "import torch.cuda"
+    ],
+    "classes": [],
+    "functions": [
+      "is_available",
+      "version",
+      "unique_id",
+      "init_rank",
+      "_check_sequence_type",
+      "all_reduce",
+      "reduce",
+      "broadcast",
+      "all_gather",
+      "reduce_scatter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_321_276c7d61ad017ab3_AI_Chariot_Legacy_666_1.0.0_20260508_nccl.py.json"
+}

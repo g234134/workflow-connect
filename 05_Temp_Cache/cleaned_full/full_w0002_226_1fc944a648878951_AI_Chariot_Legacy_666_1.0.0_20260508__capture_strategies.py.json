@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 226,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__capture_strategies.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__capture_strategies.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12813,
+  "content_sha256": "1fc944a648878951b00ef011262512e406de874fa24ab38d4b6c707159330aea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 361,
+    "non_empty_lines": 303,
+    "char_count": 12797,
+    "preview_lines": [
+      "\"\"\"Strategies for capturing ExportedPrograms.\"\"\"",
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import abc",
+      "import dataclasses",
+      "import datetime",
+      "import pathlib",
+      "from typing import Any, Callable, TYPE_CHECKING",
+      "import torch",
+      "from torch._export import converter as _torchscript_converter"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "import dataclasses",
+      "import datetime",
+      "import pathlib",
+      "from typing import Any, Callable, TYPE_CHECKING",
+      "import torch",
+      "from torch._export import converter as _torchscript_converter",
+      "from torch.utils import _pytree",
+      "import os"
+    ],
+    "classes": [
+      "Result",
+      "CaptureStrategy",
+      "TorchExportStrategy",
+      "TorchExportNonStrictStrategy",
+      "JitTraceConvertStrategy",
+      "LegacyDynamoStrategy"
+    ],
+    "functions": [
+      "_verbose_printer",
+      "_take_first_line"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_226_1fc944a648878951_AI_Chariot_Legacy_666_1.0.0_20260508__capture_strategies.py.json"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\query_constructor\\base.py",
+  "name": "base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14361,
+  "content_sha256": "3d9580d427d4959c66954419013eb210297a64fde90d79d0e8a450fffd68169f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 381,
+    "non_empty_lines": 345,
+    "char_count": 14358,
+    "preview_lines": [
+      "\"\"\"LLM Chain for turning a user text query into a structured query.\"\"\"",
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Callable, Sequence",
+      "from typing import Any, cast",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import BaseOutputParser",
+      "from langchain_core.output_parsers.json import parse_and_check_json_markdown"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Callable, Sequence",
+      "from typing import Any, cast",
+      "from langchain_core._api import deprecated",
+      "from langchain_core.exceptions import OutputParserException",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.output_parsers import BaseOutputParser",
+      "from langchain_core.output_parsers.json import parse_and_check_json_markdown",
+      "from langchain_core.prompts import BasePromptTemplate",
+      "from langchain_core.prompts.few_shot import FewShotPromptTemplate",
+      "from langchain_core.runnables import Runnable",
+      "from langchain_core.structured_query import (",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.llm import LLMChain",
+      "from langchain_classic.chains.query_constructor.parser import get_parser",
+      "from langchain_classic.chains.query_constructor.prompt import (",
+      "from langchain_classic.chains.query_constructor.schema import AttributeInfo"
+    ],
+    "classes": [
+      "StructuredQueryOutputParser"
+    ],
+    "functions": [
+      "fix_filter_directive",
+      "_format_attribute_info",
+      "construct_examples",
+      "get_query_constructor_prompt",
+      "load_query_constructor_chain",
+      "load_query_constructor_runnable"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_127_3d9580d427d4959c_base.py.json"
+}

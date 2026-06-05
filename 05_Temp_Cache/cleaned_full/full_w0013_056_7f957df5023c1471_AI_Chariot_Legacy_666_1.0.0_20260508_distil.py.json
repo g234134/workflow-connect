@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 56,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_distil.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_distil.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9660,
+  "content_sha256": "7f957df5023c1471d01f56904df03cb23a09a4a15248452b054aabc9b4176661",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 290,
+    "non_empty_lines": 246,
+    "char_count": 9660,
+    "preview_lines": [
+      "import enum",
+      "import json",
+      "import uuid",
+      "import logging",
+      "import inspect",
+      "import functools",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Optional,"
+    ],
+    "imports": [
+      "import enum",
+      "import json",
+      "import uuid",
+      "import logging",
+      "import inspect",
+      "import functools",
+      "from typing import (",
+      "from typing_extensions import ParamSpec, NotRequired",
+      "from openai.types.chat.chat_completion import ChatCompletion",
+      "from openai.types.chat.chat_completion_message_param import ChatCompletionMessageParam",
+      "from pydantic import BaseModel, validate_call",
+      "from openai import OpenAI",
+      "from .processing.function_calls import openai_schema"
+    ],
+    "classes": [
+      "OpenAIChatKwargs",
+      "FinetuneFormat",
+      "Instructions"
+    ],
+    "functions": [
+      "get_signature_from_fn",
+      "format_function",
+      "is_return_type_base_model_or_instance"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_056_7f957df5023c1471_AI_Chariot_Legacy_666_1.0.0_20260508_distil.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:48:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\tools\\openapi\\utils\\openapi_utils.py",
+  "name": "openapi_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 875,
+  "content_sha256": "296b038d28dac4d2418d48da96083088d21b2e78f5bbd554d8636639367f62cb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 21,
+    "char_count": 872,
+    "preview_lines": [
+      "\"\"\"Utility functions for parsing an OpenAPI spec. Kept for backwards compat.\"\"\"",
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.tools import OpenAPISpec",
+      "    from langchain_community.utilities.openapi import HTTPVerb",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.tools import OpenAPISpec",
+      "from langchain_community.utilities.openapi import HTTPVerb"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_406_296b038d28dac4d2_openapi_utils.py.json"
+}

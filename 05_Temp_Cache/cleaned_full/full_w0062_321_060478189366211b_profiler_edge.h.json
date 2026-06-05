@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 321,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\mobile\\profiler_edge.h",
+  "name": "profiler_edge.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 4657,
+  "content_sha256": "060478189366211bc3e9a6be9d89aa70a301b079f776bfa482adf358211f4ba5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 119,
+    "non_empty_lines": 109,
+    "char_count": 4657,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/autograd/profiler_kineto.h>",
+      "#include <torch/csrc/jit/mobile/module.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "namespace mobile {",
+      "// If we dont have kineto available then edge profiler does not",
+      "// work since it relies on Kineto",
+      "#ifdef USE_KINETO",
+      "class TORCH_API KinetoEdgeCPUProfiler {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_321_060478189366211b_profiler_edge.h.json"
+}

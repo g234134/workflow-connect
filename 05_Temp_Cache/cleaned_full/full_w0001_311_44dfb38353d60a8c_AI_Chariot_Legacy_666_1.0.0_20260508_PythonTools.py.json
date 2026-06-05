@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 311,
+  "generated_at": "2026-05-08T18:44:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_PythonTools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_PythonTools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1224,
+  "content_sha256": "44dfb38353d60a8c991dfe73878672066bd2a4ad8b2cd666a8c30a9d60760aba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 37,
+    "char_count": 1224,
+    "preview_lines": [
+      "import sys",
+      "import time",
+      "class Tools:",
+      "    _public_methods_ = [\"reload\", \"adddir\", \"echo\", \"sleep\"]",
+      "    def reload(self, module):",
+      "        if module in sys.modules:",
+      "            from importlib import reload",
+      "            reload(sys.modules[module])",
+      "            return \"reload succeeded.\"",
+      "        return \"no reload performed.\""
+    ],
+    "imports": [
+      "import sys",
+      "import time",
+      "from importlib import reload",
+      "from win32com.server.register import RegisterServer, UnregisterServer"
+    ],
+    "classes": [
+      "Tools"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_311_44dfb38353d60a8c_AI_Chariot_Legacy_666_1.0.0_20260508_PythonTools.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 329,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\liealgebras\\tests\\test_type_E.py",
+  "name": "test_type_E.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 987,
+  "content_sha256": "210e3a068ef92a2bf3d0ee3998d28dbc33bc8de9fb5f6370c55053c2faf9950a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 21,
+    "char_count": 987,
+    "preview_lines": [
+      "from sympy.liealgebras.cartan_type import CartanType",
+      "from sympy.matrices import Matrix",
+      "from sympy.core.backend import Rational",
+      "def test_type_E():",
+      "    c = CartanType(\"E6\")",
+      "    m = Matrix(6, 6, [2, 0, -1, 0, 0, 0, 0, 2, 0, -1, 0, 0,",
+      "        -1, 0, 2, -1, 0, 0, 0, -1, -1, 2, -1, 0, 0, 0, 0,",
+      "        -1, 2, -1, 0, 0, 0, 0, -1, 2])",
+      "    assert c.cartan_matrix() == m",
+      "    assert c.dimension() == 8"
+    ],
+    "imports": [
+      "from sympy.liealgebras.cartan_type import CartanType",
+      "from sympy.matrices import Matrix",
+      "from sympy.core.backend import Rational"
+    ],
+    "classes": [],
+    "functions": [
+      "test_type_E"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_329_210e3a068ef92a2b_test_type_E.py.json"
+}

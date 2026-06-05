@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_writer_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_writer_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1742,
+  "content_sha256": "2512697124d0d0a9a1e39bc999024b5cd50697f27fbcf73c79c3055c5ad4c03b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 39,
+    "char_count": 1742,
+    "preview_lines": [
+      "import os",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "class S3WriterToolInput(BaseModel):",
+      "    \"\"\"Input schema for S3WriterTool.\"\"\"",
+      "    file_path: str = Field(",
+      "        ..., description=\"S3 file path (e.g., 's3://bucket-name/file-name')\"",
+      "    )",
+      "    content: str = Field(..., description=\"Content to write to the file\")",
+      "class S3WriterTool(BaseTool):"
+    ],
+    "imports": [
+      "import os",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "import boto3",
+      "from botocore.exceptions import ClientError"
+    ],
+    "classes": [
+      "S3WriterToolInput",
+      "S3WriterTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_355_2512697124d0d0a9_AI_Chariot_Legacy_666_1.0.0_20260508_writer_tool.py.json"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_entityruler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_entityruler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20756,
+  "content_sha256": "4f39406fcae122cf5dd6ef2087222d5f6c1321475742a1998fc080e73f5623cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 509,
+    "non_empty_lines": 447,
+    "char_count": 20756,
+    "preview_lines": [
+      "import importlib",
+      "import warnings",
+      "from collections import defaultdict",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Union",
+      "import srsly",
+      "from ..errors import Errors, Warnings",
+      "from ..language import Language",
+      "from ..matcher import Matcher, PhraseMatcher",
+      "from ..matcher.levenshtein import levenshtein_compare"
+    ],
+    "imports": [
+      "import importlib",
+      "import warnings",
+      "from collections import defaultdict",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Union",
+      "import srsly",
+      "from ..errors import Errors, Warnings",
+      "from ..language import Language",
+      "from ..matcher import Matcher, PhraseMatcher",
+      "from ..matcher.levenshtein import levenshtein_compare",
+      "from ..scorer import get_ner_prf",
+      "from ..tokens import Doc, Span",
+      "from ..training import Example",
+      "from ..util import SimpleFrozenList, ensure_path, from_disk, to_disk",
+      "from .pipe import Pipe"
+    ],
+    "classes": [
+      "EntityRuler"
+    ],
+    "functions": [
+      "entity_ruler_score",
+      "make_entity_ruler_scorer",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_441_4f39406fcae122cf_AI_Chariot_Legacy_666_1.0.0_20260508_entityruler.py.json"
+}

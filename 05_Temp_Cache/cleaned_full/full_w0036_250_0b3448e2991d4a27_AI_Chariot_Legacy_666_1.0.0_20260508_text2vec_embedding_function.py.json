@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_text2vec_embedding_function.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_text2vec_embedding_function.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3171,
+  "content_sha256": "0b3448e2991d4a2747884f3e08f5c06d86081c524b5b7639fdafccfa30b95707",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 69,
+    "char_count": 3171,
+    "preview_lines": [
+      "from chromadb.api.types import EmbeddingFunction, Space, Embeddings, Documents",
+      "from chromadb.utils.embedding_functions.schemas import validate_config_schema",
+      "from typing import List, Dict, Any",
+      "import numpy as np",
+      "class Text2VecEmbeddingFunction(EmbeddingFunction[Documents]):",
+      "    \"\"\"",
+      "    This class is used to generate embeddings for a list of texts using the Text2Vec model.",
+      "    \"\"\"",
+      "    def __init__(self, model_name: str = \"shibing624/text2vec-base-chinese\"):",
+      "        \"\"\""
+    ],
+    "imports": [
+      "from chromadb.api.types import EmbeddingFunction, Space, Embeddings, Documents",
+      "from chromadb.utils.embedding_functions.schemas import validate_config_schema",
+      "from typing import List, Dict, Any",
+      "import numpy as np",
+      "from text2vec import SentenceModel"
+    ],
+    "classes": [
+      "Text2VecEmbeddingFunction"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_250_0b3448e2991d4a27_AI_Chariot_Legacy_666_1.0.0_20260508_text2vec_embedding_function.py.json"
+}

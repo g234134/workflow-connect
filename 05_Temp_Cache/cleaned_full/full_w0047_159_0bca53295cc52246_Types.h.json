@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cudnn\\Types.h",
+  "name": "Types.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 336,
+  "content_sha256": "0bca53295cc522468cb4d5fd064ff2ab573feb9fb1d7d8bac8be74b6082ae597",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 9,
+    "char_count": 336,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/cudnn/cudnn-wrapper.h>",
+      "#include <ATen/Tensor.h>",
+      "namespace at { namespace native {",
+      "TORCH_CUDA_CPP_API cudnnDataType_t",
+      "getCudnnDataTypeFromScalarType(const at::ScalarType dtype);",
+      "cudnnDataType_t getCudnnDataType(const at::Tensor& tensor);",
+      "int64_t cudnn_version();",
+      "}}  // namespace at::cudnn"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_159_0bca53295cc52246_Types.h.json"
+}

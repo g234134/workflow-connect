@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 61,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_except.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_except.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3344,
+  "content_sha256": "7ff6f560c3c3d7a5d9ceef5ba31c556341f7ce1bc1b52d96b063f6c2c4765651",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 73,
+    "char_count": 3344,
+    "preview_lines": [
+      "\"\"\"Fixer for except statements with named exceptions.",
+      "The following cases will be converted:",
+      "- \"except E, T:\" where T is a name:",
+      "    except E as T:",
+      "- \"except E, T:\" where T is not a name, tuple or list:",
+      "        except E as t:",
+      "            T = t",
+      "    This is done because the target of an \"except\" clause must be a",
+      "    name.",
+      "- \"except E, T:\" where T is a tuple or list literal:"
+    ],
+    "imports": [
+      "from .. import pytree",
+      "from ..pgen2 import token",
+      "from .. import fixer_base",
+      "from ..fixer_util import Assign, Attr, Name, is_tuple, is_list, syms"
+    ],
+    "classes": [
+      "FixExcept"
+    ],
+    "functions": [
+      "find_excepts"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_061_7ff6f560c3c3d7a5_AI_Chariot_Legacy_666_1.0.0_20260508_fix_except.py.json"
+}

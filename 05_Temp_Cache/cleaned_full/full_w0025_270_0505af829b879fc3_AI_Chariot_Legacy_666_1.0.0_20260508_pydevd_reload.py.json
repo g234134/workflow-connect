@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 270,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_reload.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_reload.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16212,
+  "content_sha256": "0505af829b879fc3a7a2ee86ab9d85687fdba2fa5616297a331e84eeb28f6cd4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 433,
+    "non_empty_lines": 322,
+    "char_count": 16212,
+    "preview_lines": [
+      "\"\"\"",
+      "Based on the python xreload.",
+      "Changes",
+      "======================",
+      "1. we don't recreate the old namespace from new classes. Rather, we keep the existing namespace,",
+      "load a new version of it and update only some of the things we can inplace. That way, we don't break",
+      "things such as singletons or end up with a second representation of the same class in memory.",
+      "2. If we find it to be a __metaclass__, we try to update it as a regular class.",
+      "3. We don't remove old attributes (and leave them lying around even if they're no longer used).",
+      "4. Reload hooks were changed"
+    ],
+    "imports": [
+      "from _pydev_bundle.pydev_imports import execfile",
+      "from _pydevd_bundle import pydevd_dont_trace",
+      "import types",
+      "from _pydev_bundle import pydev_log",
+      "from _pydevd_bundle.pydevd_constants import get_global_debugger"
+    ],
+    "classes": [
+      "Reload"
+    ],
+    "functions": [
+      "write_err",
+      "notify_info0",
+      "notify_info",
+      "notify_info2",
+      "notify_error",
+      "code_objects_equal",
+      "xreload"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_270_0505af829b879fc3_AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_reload.py.json"
+}

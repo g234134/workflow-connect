@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 426,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_signal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_signal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4296,
+  "content_sha256": "bc9626053d04a218301078485f3fe87d9bc7d3e04c550ccbcc69e5d407c08b04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 137,
+    "non_empty_lines": 104,
+    "char_count": 4296,
+    "preview_lines": [
+      "\"\"\"",
+      "Signals are a simple pub-sub mechanism.",
+      "DOMNodes can subscribe to a signal, which will invoke a callback when the signal is published.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Awaitable, Callable, Generic, TypeVar, Union",
+      "from weakref import WeakKeyDictionary, ref",
+      "import rich.repr",
+      "from textual import log",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Awaitable, Callable, Generic, TypeVar, Union",
+      "from weakref import WeakKeyDictionary, ref",
+      "import rich.repr",
+      "from textual import log",
+      "from textual.dom import DOMNode"
+    ],
+    "classes": [
+      "SignalError",
+      "Signal"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_426_bc9626053d04a218_AI_Chariot_Legacy_666_1.0.0_20260508_signal.py.json"
+}

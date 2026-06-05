@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\numpy.py",
+  "name": "numpy.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21049,
+  "content_sha256": "2a9abec929104912980b1b60419122ff8963dc498aec582f6c3253cef07bed37",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 541,
+    "non_empty_lines": 443,
+    "char_count": 21049,
+    "preview_lines": [
+      "from sympy.core import S",
+      "from sympy.core.function import Lambda",
+      "from sympy.core.power import Pow",
+      "from .pycode import PythonCodePrinter, _known_functions_math, _print_known_const, _print_known_func, _unpack_integral_limits, ArrayPrinter",
+      "from .codeprinter import CodePrinter",
+      "_not_in_numpy = 'erf erfc factorial gamma loggamma'.split()",
+      "_in_numpy = [(k, v) for k, v in _known_functions_math.items() if k not in _not_in_numpy]",
+      "_known_functions_numpy = dict(_in_numpy, **{",
+      "    'acos': 'arccos',",
+      "    'acosh': 'arccosh',"
+    ],
+    "imports": [
+      "from sympy.core import S",
+      "from sympy.core.function import Lambda",
+      "from sympy.core.power import Pow",
+      "from .pycode import PythonCodePrinter, _known_functions_math, _print_known_const, _print_known_func, _unpack_integral_li",
+      "from .codeprinter import CodePrinter",
+      "from sympy.abc import i, j",
+      "from sympy.logic.boolalg import ITE, simplify_logic"
+    ],
+    "classes": [
+      "NumPyPrinter",
+      "SciPyPrinter",
+      "CuPyPrinter",
+      "JaxPrinter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_157_2a9abec929104912_numpy.py.json"
+}

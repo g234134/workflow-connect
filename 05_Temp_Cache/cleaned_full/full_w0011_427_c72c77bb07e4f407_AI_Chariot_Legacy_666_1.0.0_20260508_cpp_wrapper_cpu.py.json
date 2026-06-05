@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 427,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cpp_wrapper_cpu.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cpp_wrapper_cpu.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 117072,
+  "content_sha256": "c72c77bb07e4f407fef420ccf9f9b71ea52c40f68d392ae14b613d492ec6ed9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2595,
+    "non_empty_lines": 2374,
+    "char_count": 117072,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "import math",
+      "import os",
+      "import sys",
+      "from itertools import count",
+      "from typing import Dict, List, Optional, Tuple",
+      "import sympy",
+      "from sympy import Expr",
+      "import torch"
+    ],
+    "imports": [
+      "import functools",
+      "import math",
+      "import os",
+      "import sys",
+      "from itertools import count",
+      "from typing import Dict, List, Optional, Tuple",
+      "import sympy",
+      "from sympy import Expr",
+      "import torch",
+      "import torch._inductor.async_compile  # noqa: F401 required to warm up AsyncCompile pools",
+      "import torch._ops",
+      "from torch._inductor.codegen.debug_utils import IntermediateValueDebuggingLevel",
+      "from torch.fx.experimental.symbolic_shapes import ConvertIntKey, DivideByKey, SymTypes",
+      "from .. import config, ir",
+      "from ..utils import _align, ALIGN_BYTES, cache_on_self, sympy_product",
+      "from ..virtualized import V",
+      "from .aoti_hipify_utils import maybe_hipify_code_wrapper",
+      "from .common import IndentedBuffer",
+      "from .cpp_utils import (",
+      "from .wrapper import EnterSubgraphLine, ExitSubgraphLine, WrapperCodeGen"
+    ],
+    "classes": [
+      "CppWrapperCpu"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_427_c72c77bb07e4f407_AI_Chariot_Legacy_666_1.0.0_20260508_cpp_wrapper_cpu.py.json"
+}

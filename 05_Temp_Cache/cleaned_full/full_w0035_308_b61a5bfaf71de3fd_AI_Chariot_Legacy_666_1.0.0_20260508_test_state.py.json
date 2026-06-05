@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 308,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_state.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_state.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1973,
+  "content_sha256": "b61a5bfaf71de3fdfd9a28edab153a1c252ff337d189ace516d014877d836225",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 62,
+    "char_count": 1973,
+    "preview_lines": [
+      "import pytest",
+      "from spacy.pipeline._parser_internals.stateclass import StateClass",
+      "from spacy.tokens.doc import Doc",
+      "from spacy.vocab import Vocab",
+      "@pytest.fixture",
+      "def vocab():",
+      "    return Vocab()",
+      "@pytest.fixture",
+      "def doc(vocab):",
+      "    return Doc(vocab, words=[\"a\", \"b\", \"c\", \"d\"])"
+    ],
+    "imports": [
+      "import pytest",
+      "from spacy.pipeline._parser_internals.stateclass import StateClass",
+      "from spacy.tokens.doc import Doc",
+      "from spacy.vocab import Vocab"
+    ],
+    "classes": [],
+    "functions": [
+      "vocab",
+      "doc",
+      "test_init_state",
+      "test_push_pop",
+      "test_stack_depth",
+      "test_H",
+      "test_L",
+      "test_R"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_308_b61a5bfaf71de3fd_AI_Chariot_Legacy_666_1.0.0_20260508_test_state.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_explode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_explode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8952,
+  "content_sha256": "6f84390c01a679c3c4b115ccfdc3533cfc9e475197f3c3701c0a964454337174",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 307,
+    "non_empty_lines": 274,
+    "char_count": 8952,
+    "preview_lines": [
+      "import re",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "def test_error():",
+      "    df = pd.DataFrame(",
+      "        {\"A\": pd.Series([[0, 1, 2], np.nan, [], (3, 4)], index=list(\"abcd\")), \"B\": 1}",
+      "    )",
+      "    with pytest.raises("
+    ],
+    "imports": [
+      "import re",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [],
+    "functions": [
+      "test_error",
+      "test_error_multi_columns",
+      "test_basic",
+      "test_multi_index_rows",
+      "test_multi_index_columns",
+      "test_usecase",
+      "test_duplicate_index",
+      "test_ignore_index",
+      "test_explode_sets",
+      "test_multi_columns",
+      "test_multi_columns_nan_empty",
+      "test_str_dtype"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_203_6f84390c01a679c3_AI_Chariot_Legacy_666_1.0.0_20260508_test_explode.py.json"
+}

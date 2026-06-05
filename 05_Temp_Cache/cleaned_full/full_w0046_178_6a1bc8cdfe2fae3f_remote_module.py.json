@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\nn\\api\\remote_module.py",
+  "name": "remote_module.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31986,
+  "content_sha256": "6a1bc8cdfe2fae3fbc8fecd1ae6a585205c8bda51db7955927c124661e85176e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 760,
+    "non_empty_lines": 625,
+    "char_count": 31986,
+    "preview_lines": [
+      "#!/usr/bin/python3",
+      "import collections",
+      "import io",
+      "import sys",
+      "import types",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Dict,",
+      "    Iterator,"
+    ],
+    "imports": [
+      "import collections",
+      "import io",
+      "import sys",
+      "import types",
+      "from typing import (",
+      "import torch",
+      "import torch.distributed.rpc as rpc",
+      "from torch import Tensor, device, dtype, nn",
+      "from torch.distributed.nn.jit import instantiator",
+      "from torch.distributed import _remote_device",
+      "from torch.distributed.rpc.internal import _internal_rpc_pickler",
+      "from torch.nn import Module",
+      "from torch.nn.parameter import Parameter",
+      "from torch.utils.hooks import RemovableHandle"
+    ],
+    "classes": [
+      "_RemoteModule",
+      "RemoteModule"
+    ],
+    "functions": [
+      "_instantiate_template",
+      "_create_module",
+      "_create_module_with_interface",
+      "_param_rrefs",
+      "_raise_not_supported",
+      "_remote_module_receiver",
+      "_remote_module_reducer",
+      "_recursive_script_module_receiver",
+      "_recursive_script_module_reducer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_178_6a1bc8cdfe2fae3f_remote_module.py.json"
+}

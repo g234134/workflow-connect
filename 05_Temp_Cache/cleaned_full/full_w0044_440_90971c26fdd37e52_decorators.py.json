@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 440,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\decorators.py",
+  "name": "decorators.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9470,
+  "content_sha256": "90971c26fdd37e5208146109604eb2c14de344f1ba6efd5efbb036d873a9f5a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 226,
+    "char_count": 9470,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING",
+      "import torch",
+      "from . import allowed_functions",
+      "from .eval_frame import DisableContext, innermost_fn, RunOnlyContext",
+      "from .exc import IncorrectUsage",
+      "if TYPE_CHECKING:",
+      "    from torch._C._dynamo.eval_frame import (  # noqa: F401",
+      "        reset_code,",
+      "        set_eval_frame,",
+      "        set_guard_error_hook,"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "import torch",
+      "from . import allowed_functions",
+      "from .eval_frame import DisableContext, innermost_fn, RunOnlyContext",
+      "from .exc import IncorrectUsage",
+      "from torch._C._dynamo.eval_frame import (  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "run",
+      "disable",
+      "skip",
+      "assume_constant_result",
+      "allow_in_graph",
+      "_disallow_in_graph_helper",
+      "disallow_in_graph",
+      "graph_break",
+      "forbid_in_graph",
+      "mark_dynamic",
+      "maybe_mark_dynamic",
+      "mark_static",
+      "mark_static_address",
+      "_allow_in_graph_einops"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_440_90971c26fdd37e52_decorators.py.json"
+}

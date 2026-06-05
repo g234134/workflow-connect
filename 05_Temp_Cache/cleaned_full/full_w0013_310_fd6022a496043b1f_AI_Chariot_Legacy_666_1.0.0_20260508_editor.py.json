@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 310,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_editor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_editor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4364,
+  "content_sha256": "fd6022a496043b1faaebd98fa7f847010db27dea199250588d2d2b4cbc421c40",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 147,
+    "non_empty_lines": 119,
+    "char_count": 4364,
+    "preview_lines": [
+      "\"\"\"",
+      "Editor module for handling system text editor interactions.",
+      "This module provides functionality to:",
+      "- Discover and launch the system's configured text editor",
+      "- Create and manage temporary files for editing",
+      "- Handle editor preferences from environment variables",
+      "- Support cross-platform editor operations",
+      "\"\"\"",
+      "import os",
+      "import platform"
+    ],
+    "imports": [
+      "import os",
+      "import platform",
+      "import subprocess",
+      "import tempfile",
+      "from rich.console import Console",
+      "from aider.dump import dump  # noqa"
+    ],
+    "classes": [],
+    "functions": [
+      "print_status_message",
+      "write_temp_file",
+      "get_environment_editor",
+      "discover_editor",
+      "pipe_editor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_310_fd6022a496043b1f_AI_Chariot_Legacy_666_1.0.0_20260508_editor.py.json"
+}

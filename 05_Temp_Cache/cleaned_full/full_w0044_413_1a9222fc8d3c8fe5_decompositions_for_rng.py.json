@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 413,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_decomp\\decompositions_for_rng.py",
+  "name": "decompositions_for_rng.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9378,
+  "content_sha256": "1a9222fc8d3c8fe5996efd32e19d77d60e973eedab42a5089fb83d996e2f07c2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 263,
+    "non_empty_lines": 215,
+    "char_count": 9378,
+    "preview_lines": [
+      "import functools",
+      "from collections import defaultdict",
+      "from typing import Callable, Dict",
+      "import torch",
+      "import torch._decomp as decomp",
+      "from torch._decomp import get_decompositions",
+      "from torch._ops import OpOverload",
+      "aten = torch.ops.aten",
+      "rng_decompositions: Dict[str, Dict[OpOverload, Callable]] = defaultdict(dict)",
+      "def register_rng_decomposition(aten_op):"
+    ],
+    "imports": [
+      "import functools",
+      "from collections import defaultdict",
+      "from typing import Callable, Dict",
+      "import torch",
+      "import torch._decomp as decomp",
+      "from torch._decomp import get_decompositions",
+      "from torch._ops import OpOverload"
+    ],
+    "classes": [
+      "PhiloxState",
+      "PhiloxStateTracker"
+    ],
+    "functions": [
+      "register_rng_decomposition",
+      "throw_on_non_cuda",
+      "rand",
+      "rand_like",
+      "bernoulli_",
+      "bernoulli_p"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_413_1a9222fc8d3c8fe5_decompositions_for_rng.py.json"
+}

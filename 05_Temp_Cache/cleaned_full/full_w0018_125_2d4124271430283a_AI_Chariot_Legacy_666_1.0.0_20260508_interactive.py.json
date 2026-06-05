@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 125,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_interactive.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_interactive.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16655,
+  "content_sha256": "2d4124271430283a0b5193c584685cdb11792a9826902b27afa10416d59e6bfe",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 466,
+    "non_empty_lines": 380,
+    "char_count": 16655,
+    "preview_lines": [
+      "\"\"\"Interactive HTML renderer for Flow structure visualization.\"\"\"",
+      "import json",
+      "from pathlib import Path",
+      "import tempfile",
+      "from typing import Any, ClassVar",
+      "import webbrowser",
+      "from jinja2 import Environment, FileSystemLoader, nodes, select_autoescape",
+      "from jinja2.ext import Extension",
+      "from jinja2.parser import Parser",
+      "from crewai.flow.visualization.builder import calculate_execution_paths"
+    ],
+    "imports": [
+      "import json",
+      "from pathlib import Path",
+      "import tempfile",
+      "from typing import Any, ClassVar",
+      "import webbrowser",
+      "from jinja2 import Environment, FileSystemLoader, nodes, select_autoescape",
+      "from jinja2.ext import Extension",
+      "from jinja2.parser import Parser",
+      "from crewai.flow.visualization.builder import calculate_execution_paths",
+      "from crewai.flow.visualization.types import FlowStructure"
+    ],
+    "classes": [
+      "CSSExtension",
+      "JSExtension"
+    ],
+    "functions": [
+      "calculate_node_positions",
+      "render_interactive"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_125_2d4124271430283a_AI_Chariot_Legacy_666_1.0.0_20260508_interactive.py.json"
+}

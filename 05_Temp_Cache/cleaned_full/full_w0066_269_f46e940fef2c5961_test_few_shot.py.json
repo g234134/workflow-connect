@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 269,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\prompts\\test_few_shot.py",
+  "name": "test_few_shot.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18403,
+  "content_sha256": "f46e940fef2c59616a8f0392f4e432d7bbcf62200c5c891e82d5088747ebb1bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 543,
+    "non_empty_lines": 475,
+    "char_count": 18400,
+    "preview_lines": [
+      "\"\"\"Test few shot prompt template.\"\"\"",
+      "import re",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "import pytest",
+      "from typing_extensions import override",
+      "from langchain_core.example_selectors import BaseExampleSelector",
+      "from langchain_core.messages import AIMessage, HumanMessage, SystemMessage",
+      "from langchain_core.prompts import (",
+      "    AIMessagePromptTemplate,"
+    ],
+    "imports": [
+      "import re",
+      "from collections.abc import Sequence",
+      "from typing import Any",
+      "import pytest",
+      "from typing_extensions import override",
+      "from langchain_core.example_selectors import BaseExampleSelector",
+      "from langchain_core.messages import AIMessage, HumanMessage, SystemMessage",
+      "from langchain_core.prompts import (",
+      "from langchain_core.prompts.chat import SystemMessagePromptTemplate",
+      "from langchain_core.prompts.few_shot import (",
+      "from langchain_core.prompts.prompt import PromptTemplate"
+    ],
+    "classes": [
+      "AsIsSelector",
+      "AsyncAsIsSelector"
+    ],
+    "functions": [
+      "example_jinja2_prompt",
+      "test_suffix_only",
+      "test_auto_infer_input_variables",
+      "test_prompt_missing_input_variables",
+      "test_partial_init_string",
+      "test_partial_init_func",
+      "test_partial",
+      "test_prompt_jinja2_functionality",
+      "test_prompt_jinja2_missing_input_variables",
+      "test_prompt_jinja2_extra_input_variables",
+      "test_few_shot_prompt_template_with_selector",
+      "test_few_shot_chat_message_prompt_template_with_selector",
+      "test_few_shot_chat_message_prompt_template_infer_input_variables"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_269_f46e940fef2c5961_test_few_shot.py.json"
+}

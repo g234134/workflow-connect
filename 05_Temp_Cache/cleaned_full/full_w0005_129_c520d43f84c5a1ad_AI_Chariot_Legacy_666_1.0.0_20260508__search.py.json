@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 129,
+  "generated_at": "2026-05-08T18:44:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__search.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 82327,
+  "content_sha256": "c520d43f84c5a1ad45b6f544da69b801fa7d0b4b0ba8ebb2d9189c5708b2742c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2006,
+    "non_empty_lines": 1664,
+    "char_count": 82327,
+    "preview_lines": [
+      "\"\"\"",
+      "The :mod:`sklearn.model_selection._search` includes utilities to fine-tune the",
+      "parameters of an estimator.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import numbers",
+      "import operator",
+      "import time",
+      "import warnings"
+    ],
+    "imports": [
+      "import numbers",
+      "import operator",
+      "import time",
+      "import warnings",
+      "from abc import ABCMeta, abstractmethod",
+      "from collections import defaultdict",
+      "from collections.abc import Iterable, Mapping, Sequence",
+      "from copy import deepcopy",
+      "from functools import partial, reduce",
+      "from inspect import signature",
+      "from itertools import product",
+      "import numpy as np",
+      "from numpy.ma import MaskedArray",
+      "from scipy.stats import rankdata",
+      "from sklearn.base import (",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.metrics import check_scoring",
+      "from sklearn.metrics._scorer import (",
+      "from sklearn.model_selection._split import check_cv",
+      "from sklearn.model_selection._validation import ("
+    ],
+    "classes": [
+      "ParameterGrid",
+      "ParameterSampler",
+      "BaseSearchCV",
+      "GridSearchCV",
+      "RandomizedSearchCV"
+    ],
+    "functions": [
+      "_check_refit",
+      "_search_estimator_has",
+      "_yield_masked_array_for_each_param"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_129_c520d43f84c5a1ad_AI_Chariot_Legacy_666_1.0.0_20260508__search.py.json"
+}

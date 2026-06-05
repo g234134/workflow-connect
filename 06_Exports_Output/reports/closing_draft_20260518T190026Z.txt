@@ -1,0 +1,39 @@
+【結案報告草案 · v2.56】
+生成時間：2026-05-18T19:00:26+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 8 條
+二、雜訊過濾率（示意）：92.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bridgetower.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bridgetower.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_m2m_100.py | score=8.66 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_m2m_100.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_client_reqrep.py | score=8.35 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_client_reqrep.py
+4. test_middleware_backwards_compat.py | score=8.3 | sim=None% | D:\大唐三省六部\02_Agents_Core\repos\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\libs\langchain_v1\tests\unit_tests\agents\middleware_typing\test_middleware_backwards_compat.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_test_spherical_bessel.py | score=8.24 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_spherical_bessel.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_httputil_test.py | score=8.03 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_httputil_test.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_test_assert_almost_equal.py | score=7.96 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_assert_almost_equal.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_rv_interface.py | score=7.51 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_rv_interface.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）採用內部平台進行數據處理
+  · 共掃描100筆數據，平均值為4.801，分級結果為B：54、A：8、D：34、C：4
+  · 精英資產匹配數量為8，掃描率為0.0%，高產出率為true
+  · 檔案處理數量為400，精英資產數量為0，耗時0.042秒
+  · 雜訊過濾率為92.0%，虛擬節省金額為0.11
+
+六、使用建議：
+  · 根據數據結果，建議優化資產分級標準以提高精英資產匹配率
+  · 增加掃描率以提高數據覆蓋率
+  · 優化檔案處理流程以減少耗時
+  · 調整雜訊過濾參數以提高過濾率
+  · 根據虛擬節省金額，評估資產清算的成本效益
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個內部平台的數據清算任務，目的是優化資產分級標準和提高精英資產匹配率。根據數據結果，共掃描100筆數據，平均值為4.801，分級結果為B：54、A：8、D：34、C：4。精英資產匹配數量為8，掃描率為0.0%，高產出率為true。檔案處理數量為400，精英資產數量為0，耗時0.042秒。雜訊過濾率為92.0%，虛擬節省金額為0.11。建議根據數據結果，優化資產分級標準、增加掃描率、優化檔案處理流程、調整雜訊過濾參數和評估資產清算的成本效益。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

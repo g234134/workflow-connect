@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 124,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cversions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cversions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 360,
+  "content_sha256": "1484afd5de11f75ec18b9c498ca2b2f0ba3a025164574d16bd2a01ee5dda700e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 9,
+    "char_count": 360,
+    "preview_lines": [
+      "\"\"\"Simple script to compute the api hash of the current API.",
+      "The API has is defined by numpy_api_order and ufunc_api_order.",
+      "\"\"\"",
+      "from os.path import dirname",
+      "from code_generators.genapi import fullapi_hash",
+      "from code_generators.numpy_api import full_api",
+      "if __name__ == '__main__':",
+      "    curdir = dirname(__file__)",
+      "    print(fullapi_hash(full_api))"
+    ],
+    "imports": [
+      "from os.path import dirname",
+      "from code_generators.genapi import fullapi_hash",
+      "from code_generators.numpy_api import full_api"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_124_1484afd5de11f75e_AI_Chariot_Legacy_666_1.0.0_20260508_cversions.py.json"
+}

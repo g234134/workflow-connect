@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_server_extension.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_server_extension.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5514,
+  "content_sha256": "76a367a0514ac7a09043e124cdf2ccdc34e1f5874fc75ce403dc664691419482",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 128,
+    "char_count": 5514,
+    "preview_lines": [
+      "\"\"\"A2UI server extension for the A2A protocol.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Any",
+      "from crewai.a2a.extensions.a2ui.models import A2UIResponse, extract_a2ui_json_objects",
+      "from crewai.a2a.extensions.a2ui.v0_9 import (",
+      "    extract_a2ui_v09_json_objects,",
+      ")",
+      "from crewai.a2a.extensions.a2ui.validator import (",
+      "    A2UIValidationError,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from typing import Any",
+      "from crewai.a2a.extensions.a2ui.models import A2UIResponse, extract_a2ui_json_objects",
+      "from crewai.a2a.extensions.a2ui.v0_9 import (",
+      "from crewai.a2a.extensions.a2ui.validator import (",
+      "from crewai.a2a.extensions.server import ExtensionContext, ServerExtension"
+    ],
+    "classes": [
+      "A2UIServerExtension"
+    ],
+    "functions": [
+      "_build_data_part",
+      "_build_data_part_v09"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_285_76a367a0514ac7a0_AI_Chariot_Legacy_666_1.0.0_20260508_server_extension.py.json"
+}

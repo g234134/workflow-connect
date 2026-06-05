@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 139,
+  "generated_at": "2026-05-08T18:47:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\categories\\diagram_drawing.py",
+  "name": "diagram_drawing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 95173,
+  "content_sha256": "95f476f5fe905feacaf9c080a26fb6991278c4bca18b9e5c87dd42c843c25c04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2580,
+    "non_empty_lines": 2170,
+    "char_count": 95173,
+    "preview_lines": [
+      "r\"\"\"",
+      "This module contains the functionality to arrange the nodes of a",
+      "diagram on an abstract grid, and then to produce a graphical",
+      "representation of the grid.",
+      "The currently supported back-ends are Xy-pic [Xypic].",
+      "Layout Algorithm",
+      "================",
+      "This section provides an overview of the algorithms implemented in",
+      ":class:`DiagramGrid` to lay out diagrams.",
+      "The first step of the algorithm is the removal composite and identity"
+    ],
+    "imports": [
+      "from sympy.categories import (CompositeMorphism, IdentityMorphism,",
+      "from sympy.core import Dict, Symbol, default_sort_key",
+      "from sympy.printing.latex import latex",
+      "from sympy.sets import FiniteSet",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from itertools import chain"
+    ],
+    "classes": [
+      "_GrowableGrid",
+      "DiagramGrid",
+      "ArrowStringDescription",
+      "XypicDiagramDrawer"
+    ],
+    "functions": [
+      "xypic_draw_diagram",
+      "preview_diagram"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_139_95f476f5fe905fea_diagram_drawing.py.json"
+}

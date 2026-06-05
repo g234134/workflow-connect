@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testExchange.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testExchange.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3361,
+  "content_sha256": "e957ec079057f13ce3011e47c54646ffc106c4b961a4ad3bf6c3621673c550dc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 98,
+    "char_count": 3361,
+    "preview_lines": [
+      "# TestExchange = Exchange Server Dump",
+      "# Note that this code uses \"CDO\", which is unlikely to get the best choice.",
+      "# You should use the Outlook object model, or",
+      "# the win32com.mapi examples for a low-level interface.",
+      "import os",
+      "import pythoncom",
+      "from win32com.client import gencache",
+      "ammodule = None  # was the generated module!",
+      "def GetDefaultProfileName():",
+      "    import win32api"
+    ],
+    "imports": [
+      "import os",
+      "import pythoncom",
+      "from win32com.client import gencache",
+      "import win32api",
+      "import win32con",
+      "from .util import CheckClean"
+    ],
+    "classes": [],
+    "functions": [
+      "GetDefaultProfileName",
+      "DumpFolder",
+      "DumpFolders",
+      "TestAddress",
+      "TestUser",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_254_e957ec079057f13c_AI_Chariot_Legacy_666_1.0.0_20260508_testExchange.py.json"
+}

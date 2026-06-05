@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 183,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_access_group.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_access_group.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1261,
+  "content_sha256": "6b3b54e32ecb60d9dd799a808fe0f693df080fac2d9be87b1b4e1837b0379ade",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 32,
+    "char_count": 1261,
+    "preview_lines": [
+      "from datetime import datetime",
+      "from typing import List, Optional",
+      "from pydantic import BaseModel",
+      "class AccessGroupCreateRequest(BaseModel):",
+      "    access_group_name: str",
+      "    description: Optional[str] = None",
+      "    access_model_names: Optional[List[str]] = None",
+      "    access_mcp_server_ids: Optional[List[str]] = None",
+      "    access_agent_ids: Optional[List[str]] = None",
+      "    assigned_team_ids: Optional[List[str]] = None"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from typing import List, Optional",
+      "from pydantic import BaseModel"
+    ],
+    "classes": [
+      "AccessGroupCreateRequest",
+      "AccessGroupUpdateRequest",
+      "AccessGroupResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_183_6b3b54e32ecb60d9_AI_Chariot_Legacy_666_1.0.0_20260508_access_group.py.json"
+}

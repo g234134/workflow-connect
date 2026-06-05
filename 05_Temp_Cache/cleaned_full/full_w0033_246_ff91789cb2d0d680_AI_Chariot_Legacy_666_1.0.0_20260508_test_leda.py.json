@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 246,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_leda.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_leda.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1392,
+  "content_sha256": "ff91789cb2d0d6801940c66d4d0a059dc64bd0e73e22cced14182511d41e1f79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 26,
+    "char_count": 1392,
+    "preview_lines": [
+      "import io",
+      "import networkx as nx",
+      "class TestLEDA:",
+      "    def test_parse_leda(self):",
+      "        data = \"\"\"#header section         \\nLEDA.GRAPH \\nstring\\nint\\n-1\\n#nodes section\\n5 \\n|{v1}| \\n|{v2}| \\n|{v3}| \\n|{v4}| \\n|{v5}| \\n\\n#edges section\\n7 \\n1 2 0 |{4}| \\n1 3 0 |{3}| \\n2 3 0 |{2}| \\n3 4 0 |{3}| \\n3 5 0 |{7}| \\n4 5 0 |{6}| \\n5 1 0 |{foo}|\"\"\"",
+      "        G = nx.parse_leda(data)",
+      "        G = nx.parse_leda(data.split(\"\\n\"))",
+      "        assert sorted(G.nodes()) == [\"v1\", \"v2\", \"v3\", \"v4\", \"v5\"]",
+      "        assert sorted(G.edges(data=True)) == [",
+      "            (\"v1\", \"v2\", {\"label\": \"4\"}),"
+    ],
+    "imports": [
+      "import io",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestLEDA"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_246_ff91789cb2d0d680_AI_Chariot_Legacy_666_1.0.0_20260508_test_leda.py.json"
+}

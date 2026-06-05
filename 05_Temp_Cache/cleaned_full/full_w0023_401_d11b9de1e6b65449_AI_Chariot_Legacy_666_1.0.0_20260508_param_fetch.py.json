@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 401,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_param_fetch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_param_fetch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3593,
+  "content_sha256": "d11b9de1e6b6544928caad4ea1a2c8d6f6a3dba67d3fa8b741cc118c223ca240",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 58,
+    "char_count": 3593,
+    "preview_lines": [
+      "from torch.fx.graph_module import GraphModule",
+      "from typing import Any, Callable, Dict, List, Tuple, Type",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.fx._compatibility import compatibility",
+      "__all__ = ['default_matching', 'extract_attrs_for_lowering', 'lift_lowering_attrs_to_nodes']",
+      "# Matching method matches the attribute name of current version to the attribute name of `target_version`",
+      "@compatibility(is_backward_compatible=False)",
+      "def default_matching(name: str, target_version: int) -> str:",
+      "    \"\"\"Default matching method"
+    ],
+    "imports": [
+      "from torch.fx.graph_module import GraphModule",
+      "from typing import Any, Callable, Dict, List, Tuple, Type",
+      "import torch",
+      "import torch.nn as nn",
+      "from torch.fx._compatibility import compatibility"
+    ],
+    "classes": [],
+    "functions": [
+      "default_matching",
+      "extract_attrs_for_lowering",
+      "lift_lowering_attrs_to_nodes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_401_d11b9de1e6b65449_AI_Chariot_Legacy_666_1.0.0_20260508_param_fetch.py.json"
+}

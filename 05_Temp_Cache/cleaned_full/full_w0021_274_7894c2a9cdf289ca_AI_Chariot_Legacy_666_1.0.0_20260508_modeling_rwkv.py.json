@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:45:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_rwkv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_rwkv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32121,
+  "content_sha256": "7894c2a9cdf289ca1fd971525bba9d2d32c39db828138285006f3661e9440724",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 758,
+    "non_empty_lines": 628,
+    "char_count": 32121,
+    "preview_lines": [
+      "# Copyright 2023 Bo Peng and HuggingFace Inc. team.",
+      "# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import math",
+      "from dataclasses import dataclass",
+      "import torch",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...generation import GenerationMixin",
+      "from ...modeling_layers import GradientCheckpointingLayer",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import (",
+      "from .configuration_rwkv import RwkvConfig",
+      "from ...integrations.hub_kernels import get_kernel"
+    ],
+    "classes": [
+      "RwkvLinearAttention",
+      "RwkvSelfAttention",
+      "RwkvFeedForward",
+      "RwkvBlock",
+      "RwkvPreTrainedModel",
+      "RwkvOutput",
+      "RwkvCausalLMOutput",
+      "RwkvModel",
+      "RwkvForCausalLM"
+    ],
+    "functions": [
+      "load_wkv_cuda_kernel",
+      "rwkv_linear_attention_cpu",
+      "rwkv_linear_attention"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_274_7894c2a9cdf289ca_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_rwkv.py.json"
+}

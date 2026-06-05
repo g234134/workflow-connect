@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__elffile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__elffile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3211,
+  "content_sha256": "fac2a4a6d62acd8c36fb1dd007225ae66078adf3d6bb5a719191d1c755801426",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 108,
+    "non_empty_lines": 87,
+    "char_count": 3211,
+    "preview_lines": [
+      "\"\"\"",
+      "ELF file parser.",
+      "This provides a class ``ELFFile`` that parses an ELF executable in a similar",
+      "interface to ``ZipFile``. Only the read interface is implemented.",
+      "ELF header: https://refspecs.linuxfoundation.org/elf/gabi4+/ch4.eheader.html",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import enum",
+      "import os",
+      "import struct"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import enum",
+      "import os",
+      "import struct",
+      "from typing import IO"
+    ],
+    "classes": [
+      "ELFInvalid",
+      "EIClass",
+      "EIData",
+      "EMachine",
+      "ELFFile"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_063_fac2a4a6d62acd8c_AI_Chariot_Legacy_666_1.0.0_20260508__elffile.py.json"
+}

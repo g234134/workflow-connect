@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_json_tracker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_json_tracker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4832,
+  "content_sha256": "3b94325d9d8cab3073b86fc3733337cb71029f82a74cd0a222e7d6df08876aee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 138,
+    "non_empty_lines": 110,
+    "char_count": 4824,
+    "preview_lines": [
+      "\"\"\"",
+      "JSON Completeness Tracker for Partial Streaming.",
+      "Tracks which parts of accumulated JSON are \"closed\" (complete) vs \"open\" (incomplete).",
+      "Uses jiter for parsing and a simple heuristic: if a value has a next sibling,",
+      "it must be complete (because jiter had to finish parsing it to find the next one).",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from jiter import from_json",
+      "def is_json_complete(json_str: str) -> bool:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from jiter import from_json"
+    ],
+    "classes": [
+      "JsonCompleteness"
+    ],
+    "functions": [
+      "is_json_complete"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_340_3b94325d9d8cab30_AI_Chariot_Legacy_666_1.0.0_20260508_json_tracker.py.json"
+}

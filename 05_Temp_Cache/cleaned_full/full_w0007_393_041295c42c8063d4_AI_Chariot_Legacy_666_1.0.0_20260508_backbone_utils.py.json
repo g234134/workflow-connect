@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 393,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backbone_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backbone_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10792,
+  "content_sha256": "041295c42c8063d43c25838b437a006d62717239f91c06cf7807036fee49a150",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 244,
+    "non_empty_lines": 213,
+    "char_count": 10792,
+    "preview_lines": [
+      "import warnings",
+      "from typing import Callable, Dict, List, Optional, Union",
+      "from torch import nn, Tensor",
+      "from torchvision.ops import misc as misc_nn_ops",
+      "from torchvision.ops.feature_pyramid_network import ExtraFPNBlock, FeaturePyramidNetwork, LastLevelMaxPool",
+      "from .. import mobilenet, resnet",
+      "from .._api import _get_enum_from_fn, WeightsEnum",
+      "from .._utils import handle_legacy_interface, IntermediateLayerGetter",
+      "class BackboneWithFPN(nn.Module):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import Callable, Dict, List, Optional, Union",
+      "from torch import nn, Tensor",
+      "from torchvision.ops import misc as misc_nn_ops",
+      "from torchvision.ops.feature_pyramid_network import ExtraFPNBlock, FeaturePyramidNetwork, LastLevelMaxPool",
+      "from .. import mobilenet, resnet",
+      "from .._api import _get_enum_from_fn, WeightsEnum",
+      "from .._utils import handle_legacy_interface, IntermediateLayerGetter"
+    ],
+    "classes": [
+      "BackboneWithFPN"
+    ],
+    "functions": [
+      "resnet_fpn_backbone",
+      "_resnet_fpn_extractor",
+      "_validate_trainable_layers",
+      "mobilenet_backbone",
+      "_mobilenet_extractor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_393_041295c42c8063d4_AI_Chariot_Legacy_666_1.0.0_20260508_backbone_utils.py.json"
+}

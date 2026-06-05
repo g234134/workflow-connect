@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 324,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_efficiency_measures.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_efficiency_measures.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4741,
+  "content_sha256": "54a6cb28981d21b9e8f989c968b68266ded33575e740f773f0df7db890a8ef8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 167,
+    "non_empty_lines": 134,
+    "char_count": 4741,
+    "preview_lines": [
+      "\"\"\"Provides functions for computing the efficiency of nodes and graphs.\"\"\"",
+      "import networkx as nx",
+      "from networkx.exception import NetworkXNoPath",
+      "from ..utils import not_implemented_for",
+      "__all__ = [\"efficiency\", \"local_efficiency\", \"global_efficiency\"]",
+      "@not_implemented_for(\"directed\")",
+      "@nx._dispatchable",
+      "def efficiency(G, u, v):",
+      "    \"\"\"Returns the efficiency of a pair of nodes in a graph.",
+      "    The *efficiency* of a pair of nodes is the multiplicative inverse of the"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.exception import NetworkXNoPath",
+      "from ..utils import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "efficiency",
+      "global_efficiency",
+      "local_efficiency"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_324_54a6cb28981d21b9_AI_Chariot_Legacy_666_1.0.0_20260508_efficiency_measures.py.json"
+}

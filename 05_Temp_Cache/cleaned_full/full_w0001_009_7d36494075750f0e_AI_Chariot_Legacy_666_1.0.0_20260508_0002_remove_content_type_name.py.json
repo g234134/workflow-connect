@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_0002_remove_content_type_name.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_0002_remove_content_type_name.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1199,
+  "content_sha256": "7d36494075750f0ed3c0f68d0cb1548eba59cc593f52f691f6cc37a043083766",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 37,
+    "char_count": 1199,
+    "preview_lines": [
+      "from django.db import migrations, models",
+      "def add_legacy_name(apps, schema_editor):",
+      "    alias = schema_editor.connection.alias",
+      "    ContentType = apps.get_model(\"contenttypes\", \"ContentType\")",
+      "    for ct in ContentType.objects.using(alias):",
+      "        try:",
+      "            ct.name = apps.get_model(ct.app_label, ct.model)._meta.object_name",
+      "        except LookupError:",
+      "            ct.name = ct.model",
+      "        ct.save()"
+    ],
+    "imports": [
+      "from django.db import migrations, models"
+    ],
+    "classes": [
+      "Migration"
+    ],
+    "functions": [
+      "add_legacy_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_009_7d36494075750f0e_AI_Chariot_Legacy_666_1.0.0_20260508_0002_remove_content_type_name.py.json"
+}

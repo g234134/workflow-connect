@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_counter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_counter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2081,
+  "content_sha256": "3ce39e12afc0f01138a3f882871ca919cbd9c926d864832b347d581a7ad01bdd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 68,
+    "char_count": 2081,
+    "preview_lines": [
+      "from __future__ import division",
+      "import pytest",
+      "from preshed.counter import PreshCounter",
+      "def test_count():",
+      "    counter = PreshCounter()",
+      "    assert counter[12] == 0",
+      "    counter.inc(12, 1)",
+      "    assert counter[12] == 1",
+      "    counter.inc(14, 10)",
+      "    counter.inc(9, 10)"
+    ],
+    "imports": [
+      "from __future__ import division",
+      "import pytest",
+      "from preshed.counter import PreshCounter",
+      "import os"
+    ],
+    "classes": [],
+    "functions": [
+      "test_count",
+      "test_unsmooth_prob",
+      "test_smooth_prob",
+      "test_large_freqs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_363_3ce39e12afc0f011_AI_Chariot_Legacy_666_1.0.0_20260508_test_counter.py.json"
+}

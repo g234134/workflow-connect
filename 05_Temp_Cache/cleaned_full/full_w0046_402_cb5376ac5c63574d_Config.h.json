@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\Config.h",
+  "name": "Config.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 792,
+  "content_sha256": "cb5376ac5c63574d694ad7a14ddfc31f459e4050f7ca34ef9e08d61003be7246",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 20,
+    "char_count": 792,
+    "preview_lines": [
+      "#pragma once",
+      "// Test these using #if AT_MKL_ENABLED(), not #ifdef, so that it's",
+      "// obvious if you forgot to include Config.h",
+      "//    c.f. https://stackoverflow.com/questions/33759787/generating-an-error-if-checked-boolean-macro-is-not-defined",
+      "//",
+      "// DO NOT put the macros for CUDA libraries in this file; they belong in cuda/CUDAConfig.h",
+      "#define AT_MKLDNN_ENABLED() 1",
+      "#define AT_MKLDNN_ACL_ENABLED() 0",
+      "#define AT_MKL_ENABLED() 1",
+      "#define AT_MKL_SEQUENTIAL() 0"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_402_cb5376ac5c63574d_Config.h.json"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 342,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\utils\\prune.py",
+  "name": "prune.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 59206,
+  "content_sha256": "347a691c8897ec1eed321647965bc46ec0922eae3868f52731b5c01c5e985711",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1379,
+    "non_empty_lines": 1131,
+    "char_count": 59206,
+    "preview_lines": [
+      "r\"\"\"Pruning methods.\"\"\"",
+      "import numbers",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Iterable",
+      "from typing import Tuple",
+      "import torch",
+      "class BasePruningMethod(ABC):",
+      "    r\"\"\"Abstract base class for creation of new pruning techniques.",
+      "    Provides a skeleton for customization requiring the overriding of methods",
+      "    such as :meth:`compute_mask` and :meth:`apply`."
+    ],
+    "imports": [
+      "import numbers",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import Iterable",
+      "from typing import Tuple",
+      "import torch"
+    ],
+    "classes": [
+      "BasePruningMethod",
+      "PruningContainer",
+      "Identity",
+      "RandomUnstructured",
+      "L1Unstructured",
+      "RandomStructured",
+      "LnStructured",
+      "CustomFromMask"
+    ],
+    "functions": [
+      "identity",
+      "random_unstructured",
+      "l1_unstructured",
+      "random_structured",
+      "ln_structured",
+      "global_unstructured",
+      "custom_from_mask",
+      "remove",
+      "is_pruned",
+      "_validate_pruning_amount_init",
+      "_validate_pruning_amount",
+      "_validate_structured_pruning",
+      "_compute_nparams_toprune",
+      "_validate_pruning_dim",
+      "_compute_norm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_342_347a691c8897ec1e_prune.py.json"
+}

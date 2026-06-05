@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_collection.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_collection.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2284,
+  "content_sha256": "665eb0325c93515aea787e1040e2c5c97310fbc266a86818d84cf968225cb3d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 62,
+    "char_count": 2284,
+    "preview_lines": [
+      "from concurrent.futures import ThreadPoolExecutor",
+      "import uuid",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.errors import ChromaError, UniqueConstraintError",
+      "def test_duplicate_collection_create(",
+      "    client: ClientAPI,",
+      ") -> None:",
+      "    client.reset()",
+      "    client.create_collection(",
+      "        name=\"test\","
+    ],
+    "imports": [
+      "from concurrent.futures import ThreadPoolExecutor",
+      "import uuid",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.errors import ChromaError, UniqueConstraintError"
+    ],
+    "classes": [],
+    "functions": [
+      "test_duplicate_collection_create",
+      "test_not_existing_collection_delete",
+      "test_multithreaded_get_or_create"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_220_665eb0325c93515a_AI_Chariot_Legacy_666_1.0.0_20260508_test_collection.py.json"
+}

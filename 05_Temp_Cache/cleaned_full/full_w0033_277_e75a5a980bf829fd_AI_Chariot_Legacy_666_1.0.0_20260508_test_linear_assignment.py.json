@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 277,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_linear_assignment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_linear_assignment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4201,
+  "content_sha256": "e75a5a980bf829fd33aea21493193ef22155178fa2652e85f02c551f58742750",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 116,
+    "non_empty_lines": 91,
+    "char_count": 4201,
+    "preview_lines": [
+      "# Author: Brian M. Clapper, G. Varoquaux, Lars Buitinck",
+      "# License: BSD",
+      "from numpy.testing import assert_array_equal",
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize import linear_sum_assignment",
+      "from scipy.sparse import random",
+      "from scipy.sparse._sputils import matrix",
+      "from scipy.sparse.csgraph import min_weight_full_bipartite_matching",
+      "from scipy.sparse.csgraph.tests.test_matching import ("
+    ],
+    "imports": [
+      "from numpy.testing import assert_array_equal",
+      "import pytest",
+      "import numpy as np",
+      "from scipy.optimize import linear_sum_assignment",
+      "from scipy.sparse import random",
+      "from scipy.sparse._sputils import matrix",
+      "from scipy.sparse.csgraph import min_weight_full_bipartite_matching",
+      "from scipy.sparse.csgraph.tests.test_matching import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_linear_sum_assignment_input_shape",
+      "test_linear_sum_assignment_input_object",
+      "test_linear_sum_assignment_input_bool",
+      "test_linear_sum_assignment_input_string",
+      "test_linear_sum_assignment_input_nan",
+      "test_linear_sum_assignment_input_neginf",
+      "test_linear_sum_assignment_input_inf",
+      "test_constant_cost_matrix",
+      "test_linear_sum_assignment_trivial_cost",
+      "test_linear_sum_assignment_small_inputs",
+      "test_two_methods_give_same_result_on_many_sparse_inputs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_277_e75a5a980bf829fd_AI_Chariot_Legacy_666_1.0.0_20260508_test_linear_assignment.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_filter_links.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_filter_links.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1556,
+  "content_sha256": "04c84430942f74614264bee88fb8d987deacc1d1b170797a54ebb75721b1c1bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 41,
+    "non_empty_lines": 32,
+    "char_count": 1556,
+    "preview_lines": [
+      "\"\"\"A pandoc filter used in converting notebooks to Latex.",
+      "Converts links between notebooks to Latex cross-references.",
+      "\"\"\"",
+      "import re",
+      "from pandocfilters import RawInline, applyJSONFilters, stringify  # type:ignore[import-untyped]",
+      "def resolve_references(source):",
+      "    \"\"\"",
+      "    This applies the resolve_one_reference to the text passed in via the source argument.",
+      "    This expects content in the form of a string encoded JSON object as represented",
+      "    internally in ``pandoc``."
+    ],
+    "imports": [
+      "import re",
+      "from pandocfilters import RawInline, applyJSONFilters, stringify  # type:ignore[import-untyped]"
+    ],
+    "classes": [],
+    "functions": [
+      "resolve_references",
+      "resolve_one_reference"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_490_04c84430942f7461_AI_Chariot_Legacy_666_1.0.0_20260508_filter_links.py.json"
+}

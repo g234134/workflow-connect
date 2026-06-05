@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_usps.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_usps.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3596,
+  "content_sha256": "bdaced30f535f289ceffbb565d458d43442c3cf628c4607eddaed8880de962bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 77,
+    "char_count": 3596,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Optional, Tuple, Union",
+      "import numpy as np",
+      "from PIL import Image",
+      "from .utils import download_url",
+      "from .vision import VisionDataset",
+      "class USPS(VisionDataset):",
+      "    \"\"\"`USPS <https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass.html#usps>`_ Dataset.",
+      "    The data-format is : [label [index:value ]*256 \\\\n] * num_lines, where ``label`` lies in ``[1, 10]``."
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from typing import Any, Callable, Optional, Tuple, Union",
+      "import numpy as np",
+      "from PIL import Image",
+      "from .utils import download_url",
+      "from .vision import VisionDataset",
+      "import bz2"
+    ],
+    "classes": [
+      "USPS"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_093_bdaced30f535f289_AI_Chariot_Legacy_666_1.0.0_20260508_usps.py.json"
+}

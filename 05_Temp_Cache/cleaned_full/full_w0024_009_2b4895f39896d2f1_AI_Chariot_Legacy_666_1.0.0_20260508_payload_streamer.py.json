@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_payload_streamer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_payload_streamer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2289,
+  "content_sha256": "2b4895f39896d2f106deb0e4728a6bba276ca729f342faf05bc989be03c78ac8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 56,
+    "char_count": 2289,
+    "preview_lines": [
+      "\"\"\"",
+      "Payload implementation for coroutines as data provider.",
+      "As a simple case, you can upload data from file::",
+      "   @aiohttp.streamer",
+      "   async def file_sender(writer, file_name=None):",
+      "      with open(file_name, 'rb') as f:",
+      "          chunk = f.read(2**16)",
+      "          while chunk:",
+      "              await writer.write(chunk)",
+      "              chunk = f.read(2**16)"
+    ],
+    "imports": [
+      "import types",
+      "import warnings",
+      "from typing import Any, Awaitable, Callable, Dict, Tuple",
+      "from .abc import AbstractStreamWriter",
+      "from .payload import Payload, payload_type"
+    ],
+    "classes": [
+      "_stream_wrapper",
+      "streamer",
+      "StreamWrapperPayload",
+      "StreamPayload"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_009_2b4895f39896d2f1_AI_Chariot_Legacy_666_1.0.0_20260508_payload_streamer.py.json"
+}

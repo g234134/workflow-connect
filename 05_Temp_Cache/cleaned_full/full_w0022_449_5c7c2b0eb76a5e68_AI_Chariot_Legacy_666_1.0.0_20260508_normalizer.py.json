@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 449,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_normalizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_normalizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5591,
+  "content_sha256": "5c7c2b0eb76a5e68bb8a2ec8cf133e180685361637023b8e0493a971f22680b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 198,
+    "non_empty_lines": 152,
+    "char_count": 5591,
+    "preview_lines": [
+      "from contextlib import contextmanager",
+      "from typing import Dict, List, Any",
+      "class _NormalizerMeta(type):",
+      "    rule_value_classes: Any",
+      "    rule_type_classes: Any",
+      "    def __new__(cls, name, bases, dct):",
+      "        new_cls = type.__new__(cls, name, bases, dct)",
+      "        new_cls.rule_value_classes = {}",
+      "        new_cls.rule_type_classes = {}",
+      "        return new_cls"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from typing import Dict, List, Any"
+    ],
+    "classes": [
+      "_NormalizerMeta",
+      "Normalizer",
+      "NormalizerConfig",
+      "Issue",
+      "Rule",
+      "RefactoringNormalizer"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_449_5c7c2b0eb76a5e68_AI_Chariot_Legacy_666_1.0.0_20260508_normalizer.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_const_fold.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_const_fold.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12437,
+  "content_sha256": "6d807b2f8c32bbcb07ab869117ad664d8554c5dfdd0228391dfa32539a046fe6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 292,
+    "non_empty_lines": 252,
+    "char_count": 12437,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import re",
+      "from typing import Callable, Dict, Optional, Set, Union",
+      "import torch.fx",
+      "from torch.fx.node import map_arg",
+      "from torch.fx.passes.split_module import split_module",
+      "__all__ = ['FoldedGraphModule', 'get_unique_attr_name_in_module', 'split_const_subgraphs']",
+      "class FoldedGraphModule(torch.fx.GraphModule):",
+      "    \"\"\"",
+      "    FoldedGraphModule is a GraphModule which also contains another"
+    ],
+    "imports": [
+      "import re",
+      "from typing import Callable, Dict, Optional, Set, Union",
+      "import torch.fx",
+      "from torch.fx.node import map_arg",
+      "from torch.fx.passes.split_module import split_module"
+    ],
+    "classes": [
+      "FoldedGraphModule"
+    ],
+    "functions": [
+      "_inline_module",
+      "get_unique_attr_name_in_module",
+      "split_const_subgraphs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_130_6d807b2f8c32bbcb_AI_Chariot_Legacy_666_1.0.0_20260508_const_fold.py.json"
+}

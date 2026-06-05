@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:46:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_solve_toeplitz.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_solve_toeplitz.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5272,
+  "content_sha256": "70fa2d7d777aed2c51ddee137b357d0d69ddf0b4930d688bf6d7a212c0144e98",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 150,
+    "non_empty_lines": 122,
+    "char_count": 5272,
+    "preview_lines": [
+      "\"\"\"Test functions for linalg._solve_toeplitz module",
+      "\"\"\"",
+      "import numpy as np",
+      "from scipy.linalg._solve_toeplitz import levinson",
+      "from scipy.linalg import solve, toeplitz, solve_toeplitz, matmul_toeplitz",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import pytest",
+      "from pytest import raises as assert_raises",
+      "def test_solve_equivalence():",
+      "    # For toeplitz matrices, solve_toeplitz() should be equivalent to solve()."
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.linalg._solve_toeplitz import levinson",
+      "from scipy.linalg import solve, toeplitz, solve_toeplitz, matmul_toeplitz",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "import pytest",
+      "from pytest import raises as assert_raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_solve_equivalence",
+      "test_multiple_rhs",
+      "test_native_list_arguments",
+      "test_zero_diag_error",
+      "test_wikipedia_counterexample",
+      "test_reflection_coeffs",
+      "test_unstable",
+      "test_empty",
+      "test_nd_FutureWarning"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_238_70fa2d7d777aed2c_AI_Chariot_Legacy_666_1.0.0_20260508_test_solve_toeplitz.py.json"
+}

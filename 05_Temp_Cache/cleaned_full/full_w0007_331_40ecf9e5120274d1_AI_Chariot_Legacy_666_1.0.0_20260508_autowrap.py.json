@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_autowrap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_autowrap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41270,
+  "content_sha256": "40ecf9e5120274d16af35327984216d3111ccb9f128a5267d564975ea0d7783f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1133,
+    "non_empty_lines": 957,
+    "char_count": 41270,
+    "preview_lines": [
+      "\"\"\"Module for compiling codegen output, and wrap the binary for use in",
+      "python.",
+      ".. note:: To use the autowrap module it must first be imported",
+      "   >>> from sympy.utilities.autowrap import autowrap",
+      "This module provides a common interface for different external backends, such",
+      "as f2py, fwrap, Cython, SWIG(?) etc. (Currently only f2py and Cython are",
+      "implemented) The goal is to provide access to compiled binaries of acceptable",
+      "performance with a one-button user interface, e.g.,",
+      "    >>> from sympy.abc import x,y",
+      "    >>> expr = (x - y)**25"
+    ],
+    "imports": [
+      "import sys",
+      "import os",
+      "import shutil",
+      "import tempfile",
+      "from subprocess import STDOUT, CalledProcessError, check_output",
+      "from string import Template",
+      "from warnings import warn",
+      "from sympy.core.cache import cacheit",
+      "from sympy.core.function import Lambda",
+      "from sympy.core.relational import Eq",
+      "from sympy.core.symbol import Dummy, Symbol",
+      "from sympy.tensor.indexed import Idx, IndexedBase",
+      "from sympy.utilities.codegen import (make_routine, get_code_generator,",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.lambdify import implemented_function",
+      "from sympy.utilities.decorator import doctest_depends_on"
+    ],
+    "classes": [
+      "CodeWrapError",
+      "CodeWrapper",
+      "DummyWrapper",
+      "CythonCodeWrapper",
+      "F2PyCodeWrapper",
+      "UfuncifyCodeWrapper"
+    ],
+    "functions": [
+      "_infer_language",
+      "_validate_backend_language",
+      "autowrap",
+      "binary_function",
+      "ufuncify"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_331_40ecf9e5120274d1_AI_Chariot_Legacy_666_1.0.0_20260508_autowrap.py.json"
+}

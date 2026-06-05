@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b2acafc815514942ab47ff963c67b987",
+  "generated_at": "2026-05-08T18:33:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\fx\\fuse_handler.py",
+  "name": "fuse_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4808,
+  "encoding": "utf-8-sig",
+  "sha256": "67a3623436a54877d3d146fdf45dd8fa21201aaf54722f5250c1a91930e0cfa2",
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 108,
+    "char_count": 4808,
+    "preview_lines": [
+      "import torch",
+      "from torch.ao.quantization.backend_config import BackendConfig",
+      "from torch.fx.graph import Node, Graph",
+      "from ..utils import _parent_name, NodePattern, Pattern",
+      "from ..fuser_method_mappings import get_fuser_method_new",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Callable, Dict, List, Union",
+      "from .custom_config import FuseCustomConfig",
+      "from .match_utils import MatchAllNode",
+      "from torch.nn.utils.parametrize import type_before_parametrizations"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.ao.quantization.backend_config import BackendConfig",
+      "from torch.fx.graph import Node, Graph",
+      "from ..utils import _parent_name, NodePattern, Pattern",
+      "from ..fuser_method_mappings import get_fuser_method_new",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Callable, Dict, List, Union",
+      "from .custom_config import FuseCustomConfig",
+      "from .match_utils import MatchAllNode",
+      "from torch.nn.utils.parametrize import type_before_parametrizations"
+    ],
+    "classes": [
+      "FuseHandler",
+      "DefaultFuseHandler"
+    ],
+    "functions": [
+      "_get_fusion_pattern_to_fuse_handler_cls"
+    ]
+  },
+  "clean_status": "ok",
+  "warnings": [],
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_sample\\sample_67a3623436a5_fuse_handler.py.json"
+}

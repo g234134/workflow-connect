@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_svd_error.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_svd_error.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7584,
+  "content_sha256": "e5cc399eca1203ec6e7747f54bcae3d757e6992ab79f755de01ff328c9a107f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 194,
+    "non_empty_lines": 163,
+    "char_count": 7584,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2011 Radim Rehurek <radimrehurek@seznam.cz>",
+      "\"\"\"USAGE: %(program)s MATRIX.mm [CLIP_DOCS] [CLIP_TERMS]",
+      "Check truncated SVD error for the algo in gensim, using a given corpus. This script",
+      "runs the decomposition with several internal parameters (number of requested factors,",
+      "iterative chunk size) and reports error for each parameter combination.",
+      "The number of input documents is clipped to the first CLIP_DOCS. Similarly,",
+      "only the first CLIP_TERMS are considered (features with id >= CLIP_TERMS are"
+    ],
+    "imports": [
+      "from __future__ import print_function, with_statement",
+      "import logging",
+      "import os",
+      "import sys",
+      "import time",
+      "import bz2",
+      "import itertools",
+      "import numpy as np",
+      "import scipy.linalg",
+      "import gensim",
+      "from sparsesvd import sparsesvd"
+    ],
+    "classes": [
+      "ClippedCorpus"
+    ],
+    "functions": [
+      "norm2",
+      "rmse",
+      "print_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_001_e5cc399eca1203ec_AI_Chariot_Legacy_666_1.0.0_20260508_svd_error.py.json"
+}

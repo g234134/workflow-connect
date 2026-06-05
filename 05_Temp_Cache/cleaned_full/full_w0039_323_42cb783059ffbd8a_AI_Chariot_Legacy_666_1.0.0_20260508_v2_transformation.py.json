@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 323,
+  "generated_at": "2026-05-08T18:46:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_v2_transformation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_v2_transformation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14110,
+  "content_sha256": "42cb783059ffbd8aca8770b3fa7aadf9ef15e37e3bac964dda54dd49b5bab1ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 357,
+    "non_empty_lines": 319,
+    "char_count": 14110,
+    "preview_lines": [
+      "import time",
+      "from typing import TYPE_CHECKING, Any, AsyncIterator, Iterator, List, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.llms.base_llm.chat.transformation import BaseLLMException",
+      "from litellm.types.llms.cohere import CohereV2ChatResponse",
+      "from litellm.types.llms.openai import (",
+      "    AllMessageValues, ",
+      "    ChatCompletionToolCallChunk,",
+      "    ChatCompletionAnnotation,"
+    ],
+    "imports": [
+      "import time",
+      "from typing import TYPE_CHECKING, Any, AsyncIterator, Iterator, List, Optional, Union",
+      "import httpx",
+      "import litellm",
+      "from litellm.llms.base_llm.chat.transformation import BaseLLMException",
+      "from litellm.types.llms.cohere import CohereV2ChatResponse",
+      "from litellm.types.llms.openai import (",
+      "from litellm.llms.openai.chat.gpt_transformation import OpenAIGPTConfig",
+      "from litellm.types.utils import ModelResponse, Usage",
+      "from ..common_utils import CohereError",
+      "from ..common_utils import CohereV2ModelResponseIterator",
+      "from ..common_utils import validate_environment as cohere_validate_environment",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as _LiteLLMLoggingObj"
+    ],
+    "classes": [
+      "CohereV2ChatConfig"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_323_42cb783059ffbd8a_AI_Chariot_Legacy_666_1.0.0_20260508_v2_transformation.py.json"
+}

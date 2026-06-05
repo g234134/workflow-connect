@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 186,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_content_processor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_content_processor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2076,
+  "content_sha256": "37183020515d445de04caaf075594c84d924cc07436cfe3f69964ec52e09486a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 54,
+    "char_count": 2076,
+    "preview_lines": [
+      "\"\"\"Content processor provider for extensible content processing.\"\"\"",
+      "from contextvars import ContextVar",
+      "from typing import Any, Protocol, runtime_checkable",
+      "@runtime_checkable",
+      "class ContentProcessorProvider(Protocol):",
+      "    \"\"\"Protocol for content processing during task execution.\"\"\"",
+      "    def process(self, content: str, context: dict[str, Any] | None = None) -> str:",
+      "        \"\"\"Process content before use.",
+      "        Args:",
+      "            content: The content to process."
+    ],
+    "imports": [
+      "from contextvars import ContextVar",
+      "from typing import Any, Protocol, runtime_checkable"
+    ],
+    "classes": [
+      "ContentProcessorProvider",
+      "NoOpContentProcessor"
+    ],
+    "functions": [
+      "get_processor",
+      "set_processor",
+      "process_content"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_186_37183020515d445d_AI_Chariot_Legacy_666_1.0.0_20260508_content_processor.py.json"
+}

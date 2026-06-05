@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_version.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1798,
+  "content_sha256": "1210c01446a63429910222445121ad3dadb5222a4e0d6adfe8c37605e9b46b3f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 41,
+    "char_count": 1798,
+    "preview_lines": [
+      "\"\"\"",
+      "Check the numpy version is valid.",
+      "Note that a development version is marked by the presence of 'dev0' or '+'",
+      "in the version string, all else is treated as a release. The version string",
+      "itself is set from the output of ``git describe`` which relies on tags.",
+      "Examples",
+      "--------",
+      "Valid Development: 1.22.0.dev0 1.22.0.dev0+5-g7999db4df2 1.22.0+5-g7999db4df2",
+      "Valid Release: 1.21.0.rc1, 1.21.0.b1, 1.21.0",
+      "Invalid: 1.22.0.dev, 1.22.0.dev0-5-g7999db4dfB, 1.21.0.d1, 1.21.a"
+    ],
+    "imports": [
+      "import re",
+      "import numpy as np",
+      "from numpy.testing import assert_"
+    ],
+    "classes": [],
+    "functions": [
+      "test_valid_numpy_version",
+      "test_short_version",
+      "test_version_module"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_123_1210c01446a63429_AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_version.py.json"
+}

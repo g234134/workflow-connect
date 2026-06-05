@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_win32.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_win32.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9697,
+  "content_sha256": "0dad5f6860cea623d5ec60ab5944b13c93a5328430b84807e0974584a84577fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 304,
+    "non_empty_lines": 232,
+    "char_count": 9697,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import ctypes",
+      "import msvcrt",
+      "import sys",
+      "import threading",
+      "from asyncio import AbstractEventLoop, run_coroutine_threadsafe",
+      "from ctypes import Structure, Union, byref, wintypes",
+      "from ctypes.wintypes import BOOL, CHAR, DWORD, HANDLE, SHORT, UINT, WCHAR, WORD",
+      "from typing import IO, TYPE_CHECKING, Callable, List, Optional",
+      "from textual import constants"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import ctypes",
+      "import msvcrt",
+      "import sys",
+      "import threading",
+      "from asyncio import AbstractEventLoop, run_coroutine_threadsafe",
+      "from ctypes import Structure, Union, byref, wintypes",
+      "from ctypes.wintypes import BOOL, CHAR, DWORD, HANDLE, SHORT, UINT, WCHAR, WORD",
+      "from typing import IO, TYPE_CHECKING, Callable, List, Optional",
+      "from textual import constants",
+      "from textual._xterm_parser import XTermParser",
+      "from textual.events import Event, Resize",
+      "from textual.geometry import Size",
+      "from textual.app import App"
+    ],
+    "classes": [
+      "COORD",
+      "uChar",
+      "KEY_EVENT_RECORD",
+      "MOUSE_EVENT_RECORD",
+      "WINDOW_BUFFER_SIZE_RECORD",
+      "MENU_EVENT_RECORD",
+      "FOCUS_EVENT_RECORD",
+      "InputEvent",
+      "INPUT_RECORD",
+      "EventMonitor"
+    ],
+    "functions": [
+      "set_console_mode",
+      "get_console_mode",
+      "enable_application_mode",
+      "wait_for_handles"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_231_0dad5f6860cea623_AI_Chariot_Legacy_666_1.0.0_20260508_win32.py.json"
+}

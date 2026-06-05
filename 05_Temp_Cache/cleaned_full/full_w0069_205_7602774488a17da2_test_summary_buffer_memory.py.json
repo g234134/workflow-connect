@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 205,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\chains\\test_summary_buffer_memory.py",
+  "name": "test_summary_buffer_memory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2960,
+  "content_sha256": "7602774488a17da2f68ea209a90d74574096e6ea093a472edb1e54a682b0e37f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 53,
+    "char_count": 2957,
+    "preview_lines": [
+      "\"\"\"Test memory functionality.\"\"\"",
+      "from langchain_classic.memory.summary_buffer import ConversationSummaryBufferMemory",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM",
+      "def test_summary_buffer_memory_no_buffer_yet() -> None:",
+      "    \"\"\"Test ConversationSummaryBufferMemory when no inputs put in buffer yet.\"\"\"",
+      "    memory = ConversationSummaryBufferMemory(llm=FakeLLM(), memory_key=\"baz\")",
+      "    output = memory.load_memory_variables({})",
+      "    assert output == {\"baz\": \"\"}",
+      "async def test_summary_buffer_memory_no_buffer_yet_async() -> None:",
+      "    \"\"\"Test ConversationSummaryBufferMemory when no inputs put in buffer yet.\"\"\""
+    ],
+    "imports": [
+      "from langchain_classic.memory.summary_buffer import ConversationSummaryBufferMemory",
+      "from tests.unit_tests.llms.fake_llm import FakeLLM"
+    ],
+    "classes": [],
+    "functions": [
+      "test_summary_buffer_memory_no_buffer_yet",
+      "test_summary_buffer_memory_buffer_only",
+      "test_summary_buffer_memory_summary"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_205_7602774488a17da2_test_summary_buffer_memory.py.json"
+}

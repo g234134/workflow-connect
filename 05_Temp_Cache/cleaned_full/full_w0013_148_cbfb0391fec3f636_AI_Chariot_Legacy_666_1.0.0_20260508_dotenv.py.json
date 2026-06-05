@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dotenv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dotenv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5888,
+  "content_sha256": "cbfb0391fec3f6364440990a0de1963279d56d1f498642fe66ef2d492b934517",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 168,
+    "non_empty_lines": 146,
+    "char_count": 5888,
+    "preview_lines": [
+      "\"\"\"Dotenv file settings source.\"\"\"",
+      "from __future__ import annotations as _annotations",
+      "import os",
+      "import warnings",
+      "from collections.abc import Mapping",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Any",
+      "from dotenv import dotenv_values",
+      "from pydantic._internal._typing_extra import (  # type: ignore[attr-defined]",
+      "    get_origin,"
+    ],
+    "imports": [
+      "from __future__ import annotations as _annotations",
+      "import os",
+      "import warnings",
+      "from collections.abc import Mapping",
+      "from pathlib import Path",
+      "from typing import TYPE_CHECKING, Any",
+      "from dotenv import dotenv_values",
+      "from pydantic._internal._typing_extra import (  # type: ignore[attr-defined]",
+      "from typing_inspection.introspection import is_union_origin",
+      "from ..types import ENV_FILE_SENTINEL, DotenvType",
+      "from ..utils import (",
+      "from .env import EnvSettingsSource",
+      "from pydantic_settings.main import BaseSettings"
+    ],
+    "classes": [
+      "DotEnvSettingsSource"
+    ],
+    "functions": [
+      "read_env_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_148_cbfb0391fec3f636_AI_Chariot_Legacy_666_1.0.0_20260508_dotenv.py.json"
+}

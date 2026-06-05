@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 16,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_s3d.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_s3d.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8034,
+  "content_sha256": "467fa2ca93f5de3ac44c06a9d50778358ea4929603b925e31a410a6433b17a62",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 188,
+    "char_count": 8034,
+    "preview_lines": [
+      "from functools import partial",
+      "from typing import Any, Callable, Optional",
+      "import torch",
+      "from torch import nn",
+      "from torchvision.ops.misc import Conv3dNormActivation",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _KINETICS400_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from typing import Any, Callable, Optional",
+      "import torch",
+      "from torch import nn",
+      "from torchvision.ops.misc import Conv3dNormActivation",
+      "from ...transforms._presets import VideoClassification",
+      "from ...utils import _log_api_usage_once",
+      "from .._api import register_model, Weights, WeightsEnum",
+      "from .._meta import _KINETICS400_CATEGORIES",
+      "from .._utils import _ovewrite_named_param, handle_legacy_interface"
+    ],
+    "classes": [
+      "TemporalSeparableConv",
+      "SepInceptionBlock3D",
+      "S3D",
+      "S3D_Weights"
+    ],
+    "functions": [
+      "s3d"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_016_467fa2ca93f5de3a_AI_Chariot_Legacy_666_1.0.0_20260508_s3d.py.json"
+}

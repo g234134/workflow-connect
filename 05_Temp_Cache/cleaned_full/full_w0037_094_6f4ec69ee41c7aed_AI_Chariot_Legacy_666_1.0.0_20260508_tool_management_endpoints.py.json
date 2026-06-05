@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 94,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_management_endpoints.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_management_endpoints.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21632,
+  "content_sha256": "6f4ec69ee41c7aed2ec4b13e5ba85baab86649da7c50604e3e56f6b419d5b346",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 605,
+    "non_empty_lines": 554,
+    "char_count": 21628,
+    "preview_lines": [
+      "\"\"\"",
+      "TOOL POLICY MANAGEMENT",
+      "All /tool management endpoints",
+      "GET  /v1/tool/list              - List all discovered tools and their policies",
+      "GET  /v1/tool/policy/options    - List available input/output policy options with descriptions",
+      "GET  /v1/tool/{tool_name}       - Get a single tool's details",
+      "POST /v1/tool/policy            - Update the input_policy / output_policy for a tool",
+      "\"\"\"",
+      "import uuid",
+      "from datetime import datetime, timezone"
+    ],
+    "imports": [
+      "import uuid",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any, List, Optional",
+      "from fastapi import APIRouter, Depends, HTTPException, Query",
+      "from litellm.proxy.utils import PrismaClient",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy._types import CommonProxyErrors, UserAPIKeyAuth",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.types.tool_management import (",
+      "from litellm.proxy.db.tool_registry_writer import list_tools as db_list_tools",
+      "from litellm.proxy.proxy_server import prisma_client",
+      "from litellm.proxy.db.tool_registry_writer import get_tool as db_get_tool",
+      "from litellm.proxy.db.tool_registry_writer import list_overrides_for_tool",
+      "from litellm.proxy.proxy_server import prisma_client",
+      "import json"
+    ],
+    "classes": [],
+    "functions": [
+      "_input_snippet_for_tool_log",
+      "_snippet_str"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_094_6f4ec69ee41c7aed_AI_Chariot_Legacy_666_1.0.0_20260508_tool_management_endpoints.py.json"
+}

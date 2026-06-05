@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_import_fairseq.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_import_fairseq.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9411,
+  "content_sha256": "b28ed3fa8b43342b1352dcc9454145196c9dd1c696977458fd46c53312780c91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 213,
+    "non_empty_lines": 186,
+    "char_count": 9411,
+    "preview_lines": [
+      "\"\"\"Import fariseq's wav2vec2.0 pretrained weights to torchaudios's format.",
+      "For this module to work, you need `fairseq`.",
+      "\"\"\"",
+      "import re",
+      "from torch.nn import Module",
+      "from ..model import wav2vec2_model, Wav2Vec2Model",
+      "def _parse_config(w2v_model):",
+      "    encoder = w2v_model.encoder",
+      "    conv_layers = w2v_model.feature_extractor.conv_layers",
+      "    extractor_mode = \"layer_norm\""
+    ],
+    "imports": [
+      "import re",
+      "from torch.nn import Module",
+      "from ..model import wav2vec2_model, Wav2Vec2Model"
+    ],
+    "classes": [],
+    "functions": [
+      "_parse_config",
+      "_map_key",
+      "_convert_state_dict",
+      "import_fairseq_model",
+      "_import_wav2vec2_finetuning",
+      "_import_wav2vec2_pretraining",
+      "_import_hubert_finetuning",
+      "_import_hubert_pretraining"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_387_b28ed3fa8b43342b_AI_Chariot_Legacy_666_1.0.0_20260508_import_fairseq.py.json"
+}

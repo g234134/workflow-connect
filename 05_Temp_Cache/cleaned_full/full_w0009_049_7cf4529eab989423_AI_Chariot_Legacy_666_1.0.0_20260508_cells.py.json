@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cells.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cells.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12335,
+  "content_sha256": "7cf4529eab989423b84c782652890e24e84d95cc7c0b8359d97bfd24cffb19b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 352,
+    "non_empty_lines": 284,
+    "char_count": 12335,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from operator import itemgetter",
+      "from typing import Callable, NamedTuple, Sequence, Tuple",
+      "from rich._unicode_data import load as load_cell_table",
+      "CellSpan = Tuple[int, int, int]",
+      "_span_get_cell_len = itemgetter(2)",
+      "# Ranges of unicode ordinals that produce a 1-cell wide character",
+      "# This is non-exhaustive, but covers most common Western characters",
+      "_SINGLE_CELL_UNICODE_RANGES: list[tuple[int, int]] = ["
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from operator import itemgetter",
+      "from typing import Callable, NamedTuple, Sequence, Tuple",
+      "from rich._unicode_data import load as load_cell_table"
+    ],
+    "classes": [
+      "CellTable"
+    ],
+    "functions": [
+      "get_character_cell_size",
+      "cached_cell_len",
+      "cell_len",
+      "_cell_len",
+      "split_graphemes",
+      "_split_text",
+      "split_text",
+      "set_cell_size",
+      "chop_cells"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_049_7cf4529eab989423_AI_Chariot_Legacy_666_1.0.0_20260508_cells.py.json"
+}

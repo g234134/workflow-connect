@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:45:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_ctrl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_ctrl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27007,
+  "content_sha256": "99e5b63bac5e507b48680c0f5125cb277c6b2dd9380983ef058066581ece8048",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 683,
+    "non_empty_lines": 557,
+    "char_count": 27007,
+    "preview_lines": [
+      "# Copyright 2018 Salesforce and HuggingFace Inc. team.",
+      "# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import torch",
+      "from torch import nn",
+      "from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss",
+      "from ... import initialization as init",
+      "from ...cache_utils import Cache, DynamicCache",
+      "from ...generation import GenerationMixin",
+      "from ...modeling_outputs import BaseModelOutputWithPast, CausalLMOutputWithPast, SequenceClassifierOutput",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import (",
+      "from .configuration_ctrl import CTRLConfig"
+    ],
+    "classes": [
+      "MultiHeadAttention",
+      "EncoderLayer",
+      "CTRLPreTrainedModel",
+      "CTRLModel",
+      "CTRLLMHeadModel",
+      "CTRLForSequenceClassification"
+    ],
+    "functions": [
+      "angle_defn",
+      "positional_encoding",
+      "scaled_dot_product_attention",
+      "point_wise_feed_forward_network"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_490_99e5b63bac5e507b_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_ctrl.py.json"
+}

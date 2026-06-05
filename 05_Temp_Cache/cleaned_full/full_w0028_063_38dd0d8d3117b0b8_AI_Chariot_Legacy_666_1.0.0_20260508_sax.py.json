@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sax.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sax.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9991,
+  "content_sha256": "38dd0d8d3117b0b8b2130b841993d72763cc9a9622a7b1b2aac7970d1dc4e196",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 285,
+    "non_empty_lines": 237,
+    "char_count": 9991,
+    "preview_lines": [
+      "\"\"\"",
+      "SAX-based adapter to copy trees from/to the Python standard library.",
+      "Use the `ElementTreeContentHandler` class to build an ElementTree from",
+      "SAX events.",
+      "Use the `ElementTreeProducer` class or the `saxify()` function to fire",
+      "the SAX events of an ElementTree against a SAX ContentHandler.",
+      "See https://lxml.de/sax.html",
+      "\"\"\"",
+      "from xml.sax.handler import ContentHandler",
+      "from lxml import etree"
+    ],
+    "imports": [
+      "from xml.sax.handler import ContentHandler",
+      "from lxml import etree",
+      "from lxml.etree import ElementTree, SubElement",
+      "from lxml.etree import Comment, ProcessingInstruction",
+      "from types import GenericAlias as _GenericAlias",
+      "from xml.sax.xmlreader import AttributesNSImpl as attr_class"
+    ],
+    "classes": [
+      "SaxError",
+      "ElementTreeContentHandler",
+      "ElementTreeProducer"
+    ],
+    "functions": [
+      "_getNsTag",
+      "saxify"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_063_38dd0d8d3117b0b8_AI_Chariot_Legacy_666_1.0.0_20260508_sax.py.json"
+}

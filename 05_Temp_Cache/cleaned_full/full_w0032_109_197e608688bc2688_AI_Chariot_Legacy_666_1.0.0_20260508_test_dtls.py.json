@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 109,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dtls.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dtls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 36040,
+  "content_sha256": "197e608688bc26883bbb7364d36bc855de9d0a82f0ff48ee1a1c9283b7b2836d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 950,
+    "non_empty_lines": 774,
+    "char_count": 36040,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import random",
+      "from contextlib import asynccontextmanager",
+      "from itertools import count",
+      "from typing import TYPE_CHECKING, NoReturn",
+      "import attrs",
+      "import pytest",
+      "from trio._tests.pytest_plugin import skip_if_optional_else_raise",
+      "try:",
+      "    import trustme"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import random",
+      "from contextlib import asynccontextmanager",
+      "from itertools import count",
+      "from typing import TYPE_CHECKING, NoReturn",
+      "import attrs",
+      "import pytest",
+      "from trio._tests.pytest_plugin import skip_if_optional_else_raise",
+      "import trustme",
+      "from OpenSSL import SSL",
+      "import trio",
+      "import trio.testing",
+      "from trio import DTLSChannel, DTLSEndpoint",
+      "from trio.testing._fake_net import FakeNet, UDPPacket",
+      "from .._core._tests.tutil import binds_ipv6, gc_collect_harder, slow",
+      "from collections.abc import AsyncGenerator"
+    ],
+    "classes": [],
+    "functions": [
+      "server_ctx",
+      "client_ctx_fn",
+      "client_ctx",
+      "endpoint",
+      "test_gc_after_trio_exits"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_109_197e608688bc2688_AI_Chariot_Legacy_666_1.0.0_20260508_test_dtls.py.json"
+}

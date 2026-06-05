@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_detr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_detr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 48454,
+  "content_sha256": "1ad69f64fd5b7acbefc778f1e881eae1617dacda151e8dc2b8db06c829cf0b70",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1136,
+    "non_empty_lines": 976,
+    "char_count": 48454,
+    "preview_lines": [
+      "# Copyright 2024 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import pathlib",
+      "from typing import Any, Optional",
+      "import numpy as np",
+      "from ...image_processing_backends import PilBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import (",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import (",
+      "from ...utils.import_utils import requires",
+      "import PIL.Image",
+      "from pycocotools import mask as coco_mask"
+    ],
+    "classes": [
+      "DetrImageProcessorKwargs",
+      "DetrImageProcessorPil"
+    ],
+    "functions": [
+      "convert_coco_poly_to_mask",
+      "prepare_coco_detection_annotation",
+      "masks_to_boxes",
+      "rgb_to_id",
+      "prepare_coco_panoptic_annotation",
+      "binary_mask_to_rle",
+      "check_segment_validity",
+      "compute_segments",
+      "convert_segmentation_to_rle",
+      "remove_low_and_no_objects"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_240_1ad69f64fd5b7acb_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_detr.py.json"
+}

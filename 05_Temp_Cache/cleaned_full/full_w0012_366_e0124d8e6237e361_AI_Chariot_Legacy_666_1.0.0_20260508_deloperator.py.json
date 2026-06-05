@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_deloperator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_deloperator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3191,
+  "content_sha256": "e0124d8e6237e361e455199e424a9abaabe26cab1fd873aece49d04df40c9298",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 91,
+    "char_count": 3191,
+    "preview_lines": [
+      "from sympy.core import Basic",
+      "from sympy.vector.operators import gradient, divergence, curl",
+      "class Del(Basic):",
+      "    \"\"\"",
+      "    Represents the vector differential operator, usually represented in",
+      "    mathematical expressions as the 'nabla' symbol.",
+      "    \"\"\"",
+      "    def __new__(cls):",
+      "        obj = super().__new__(cls)",
+      "        obj._name = \"delop\""
+    ],
+    "imports": [
+      "from sympy.core import Basic",
+      "from sympy.vector.operators import gradient, divergence, curl"
+    ],
+    "classes": [
+      "Del"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_366_e0124d8e6237e361_AI_Chariot_Legacy_666_1.0.0_20260508_deloperator.py.json"
+}

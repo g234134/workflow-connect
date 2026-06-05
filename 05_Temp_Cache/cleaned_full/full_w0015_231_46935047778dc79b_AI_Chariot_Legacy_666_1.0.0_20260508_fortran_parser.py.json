@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fortran_parser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fortran_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11483,
+  "content_sha256": "46935047778dc79be07f376dd271190c2079ea417ffd29d831aa96377ce56b4d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 347,
+    "non_empty_lines": 271,
+    "char_count": 11483,
+    "preview_lines": [
+      "from sympy.external import import_module",
+      "lfortran = import_module('lfortran')",
+      "if lfortran:",
+      "    from sympy.codegen.ast import (Variable, IntBaseType, FloatBaseType, String,",
+      "                                   Return, FunctionDefinition, Assignment)",
+      "    from sympy.core import Add, Mul, Integer, Float",
+      "    from sympy.core.symbol import Symbol",
+      "    asr_mod = lfortran.asr",
+      "    asr = lfortran.asr.asr",
+      "    src_to_ast = lfortran.ast.src_to_ast"
+    ],
+    "imports": [
+      "from sympy.external import import_module",
+      "from sympy.codegen.ast import (Variable, IntBaseType, FloatBaseType, String,",
+      "from sympy.core import Add, Mul, Integer, Float",
+      "from sympy.core.symbol import Symbol"
+    ],
+    "classes": [],
+    "functions": [
+      "call_visitor",
+      "src_to_sympy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_231_46935047778dc79b_AI_Chariot_Legacy_666_1.0.0_20260508_fortran_parser.py.json"
+}

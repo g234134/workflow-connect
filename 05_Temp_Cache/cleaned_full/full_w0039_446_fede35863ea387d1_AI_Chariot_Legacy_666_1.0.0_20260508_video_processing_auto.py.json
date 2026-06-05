@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_auto.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_auto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20039,
+  "content_sha256": "fede35863ea387d178afc997cafc6c8bebce7ea06d8f33abdc0644a6d0813320",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 407,
+    "non_empty_lines": 345,
+    "char_count": 20039,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import importlib",
+      "import os",
+      "from collections import OrderedDict",
+      "from typing import TYPE_CHECKING",
+      "from ...configuration_utils import PreTrainedConfig",
+      "from ...dynamic_module_utils import get_class_from_dynamic_module, resolve_trust_remote_code",
+      "from ...utils import (",
+      "from ...utils.import_utils import requires",
+      "from ...video_processing_utils import BaseVideoProcessor",
+      "from .auto_factory import _LazyAutoMapping",
+      "from .auto_mappings import VIDEO_PROCESSOR_MAPPING_NAMES",
+      "from .configuration_auto import (",
+      "from transformers import AutoVideoProcessor"
+    ],
+    "classes": [
+      "AutoVideoProcessor"
+    ],
+    "functions": [
+      "video_processor_class_from_name",
+      "get_video_processor_config"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_446_fede35863ea387d1_AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_auto.py.json"
+}

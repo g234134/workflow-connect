@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__oauth.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__oauth.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18694,
+  "content_sha256": "394f6dd8d73ae1da2303ecf68395c11c2e32aa0cd49105d8eb87d835625314c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 460,
+    "non_empty_lines": 394,
+    "char_count": 18694,
+    "preview_lines": [
+      "import datetime",
+      "import hashlib",
+      "import logging",
+      "import os",
+      "import time",
+      "import urllib.parse",
+      "import warnings",
+      "from dataclasses import dataclass",
+      "from typing import TYPE_CHECKING, Literal, Optional, Union",
+      "from . import constants"
+    ],
+    "imports": [
+      "import datetime",
+      "import hashlib",
+      "import logging",
+      "import os",
+      "import time",
+      "import urllib.parse",
+      "import warnings",
+      "from dataclasses import dataclass",
+      "from typing import TYPE_CHECKING, Literal, Optional, Union",
+      "from . import constants",
+      "from .hf_api import whoami",
+      "from .utils import experimental, get_token",
+      "import fastapi",
+      "from huggingface_hub import attach_huggingface_oauth, parse_huggingface_oauth",
+      "from starlette.middleware.sessions import SessionMiddleware"
+    ],
+    "classes": [
+      "OAuthOrgInfo",
+      "OAuthUserInfo",
+      "OAuthInfo"
+    ],
+    "functions": [
+      "attach_huggingface_oauth",
+      "parse_huggingface_oauth",
+      "_add_oauth_routes",
+      "_add_mocked_oauth_routes",
+      "_generate_redirect_uri",
+      "_get_redirect_target",
+      "_get_mocked_oauth_info",
+      "_get_oauth_uris"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_224_394f6dd8d73ae1da_AI_Chariot_Legacy_666_1.0.0_20260508__oauth.py.json"
+}

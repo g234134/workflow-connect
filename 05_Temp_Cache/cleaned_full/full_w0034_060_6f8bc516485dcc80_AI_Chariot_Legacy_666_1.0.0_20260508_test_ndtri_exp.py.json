@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtri_exp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtri_exp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3802,
+  "content_sha256": "6f8bc516485dcc80d636098a384cb952344262d1ec764a1a6ac462fcbf65cc83",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 82,
+    "char_count": 3802,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "from scipy.special import log_ndtr, ndtri_exp",
+      "from scipy.special._testutils import assert_func_equal",
+      "def log_ndtr_ndtri_exp(y):",
+      "    return log_ndtr(ndtri_exp(y))",
+      "@pytest.fixture(scope=\"class\")",
+      "def uniform_random_points():",
+      "    random_state = np.random.RandomState(1234)"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_equal, assert_allclose",
+      "from scipy.special import log_ndtr, ndtri_exp",
+      "from scipy.special._testutils import assert_func_equal"
+    ],
+    "classes": [
+      "TestNdtriExp"
+    ],
+    "functions": [
+      "log_ndtr_ndtri_exp",
+      "uniform_random_points"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_060_6f8bc516485dcc80_AI_Chariot_Legacy_666_1.0.0_20260508_test_ndtri_exp.py.json"
+}

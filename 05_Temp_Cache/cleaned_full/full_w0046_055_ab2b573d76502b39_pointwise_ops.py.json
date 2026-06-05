@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 55,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\ops\\pointwise_ops.py",
+  "name": "pointwise_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19305,
+  "content_sha256": "ab2b573d76502b39f6ea867ef5de00af9a245c6741ed02ad20f7381316058797",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 629,
+    "non_empty_lines": 586,
+    "char_count": 19305,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "from typing import List, Tuple",
+      "import torch",
+      "from torch.distributed._tensor.op_schema import (",
+      "    _is_inplace_op,",
+      "    _is_out_variant_op,",
+      "    OpSchema,",
+      "    OpStrategy,",
+      "    PlacementStrategy,",
+      "    RuntimeSchemaInfo,"
+    ],
+    "imports": [
+      "from typing import List, Tuple",
+      "import torch",
+      "from torch.distributed._tensor.op_schema import (",
+      "from torch.distributed._tensor.ops.utils import (",
+      "from torch.distributed._tensor.placement_types import (",
+      "from torch.distributed.device_mesh import DeviceMesh"
+    ],
+    "classes": [],
+    "functions": [
+      "pointwise_strategy",
+      "linear_pointwise_strategy",
+      "foreach_list_strategy",
+      "foreach_list_linear_strategy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_055_ab2b573d76502b39_pointwise_ops.py.json"
+}

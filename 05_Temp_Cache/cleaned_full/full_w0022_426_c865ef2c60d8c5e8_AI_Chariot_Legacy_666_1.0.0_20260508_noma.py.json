@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 426,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_noma.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_noma.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32476,
+  "content_sha256": "c865ef2c60d8c5e8f094a75904dc169ae1d51414dcb04cf1ca6ea084972455ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 901,
+    "non_empty_lines": 769,
+    "char_count": 32476,
+    "preview_lines": [
+      "# +-------------------------------------------------------------+",
+      "#",
+      "#           Noma Security Guardrail Integration for LiteLLM",
+      "#                       https://noma.security",
+      "#",
+      "# +-------------------------------------------------------------+",
+      "import asyncio",
+      "import json",
+      "import os",
+      "from datetime import datetime"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "import os",
+      "from datetime import datetime",
+      "from typing import (",
+      "from urllib.parse import urljoin",
+      "from fastapi import HTTPException",
+      "import litellm",
+      "from litellm import DualCache, ModelResponse",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.completion_extras.litellm_responses_transformation.transformation import (",
+      "from litellm.integrations.custom_guardrail import CustomGuardrail",
+      "from litellm.llms.base_llm.base_model_iterator import MockResponseIterator",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.main import stream_chunk_builder",
+      "from litellm.proxy._types import UserAPIKeyAuth",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.utils import (",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.base import GuardrailConfigModel"
+    ],
+    "classes": [
+      "NomaBlockedMessage",
+      "NomaGuardrail"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_426_c865ef2c60d8c5e8_AI_Chariot_Legacy_666_1.0.0_20260508_noma.py.json"
+}

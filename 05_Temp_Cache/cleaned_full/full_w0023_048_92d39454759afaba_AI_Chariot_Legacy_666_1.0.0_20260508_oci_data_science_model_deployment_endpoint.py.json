@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 48,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oci_data_science_model_deployment_endpoint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oci_data_science_model_deployment_endpoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33397,
+  "content_sha256": "92d39454759afaba4e7b7e0f114fe88d7a7ad67acc85605b0df67ad298e7cce4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 970,
+    "non_empty_lines": 790,
+    "char_count": 33397,
+    "preview_lines": [
+      "# Copyright (c) 2023, 2024, Oracle and/or its affiliates.",
+      "\"\"\"LLM for OCI data science model deployment endpoint.\"\"\"",
+      "import json",
+      "import logging",
+      "import traceback",
+      "from typing import (",
+      "    Any,",
+      "    AsyncIterator,",
+      "    Callable,",
+      "    Dict,"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "import traceback",
+      "from typing import (",
+      "import aiohttp",
+      "import requests",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models.llms import BaseLLM, create_base_retry_decorator",
+      "from langchain_core.load.serializable import Serializable",
+      "from langchain_core.outputs import Generation, GenerationChunk, LLMResult",
+      "from langchain_core.utils import get_from_dict_or_env",
+      "from pydantic import Field, model_validator",
+      "from langchain_community.utilities.requests import Requests",
+      "import ads"
+    ],
+    "classes": [
+      "TokenExpiredError",
+      "ServerError",
+      "BaseOCIModelDeployment",
+      "OCIModelDeploymentLLM",
+      "OCIModelDeploymentTGI",
+      "OCIModelDeploymentVLLM"
+    ],
+    "functions": [
+      "_create_retry_decorator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_048_92d39454759afaba_AI_Chariot_Legacy_666_1.0.0_20260508_oci_data_science_model_deployment_endpoint.py.json"
+}

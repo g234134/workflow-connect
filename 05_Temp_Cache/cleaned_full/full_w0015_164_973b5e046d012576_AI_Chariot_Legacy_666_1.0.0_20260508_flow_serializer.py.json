@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 164,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_flow_serializer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_flow_serializer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19478,
+  "content_sha256": "973b5e046d0125768f279415ad160b60f6bbd1cce1a4087765a6ae4cc78565f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 620,
+    "non_empty_lines": 498,
+    "char_count": 19478,
+    "preview_lines": [
+      "\"\"\"Flow structure serializer for introspecting Flow classes.",
+      "This module provides the flow_structure() function that analyzes a Flow class",
+      "and returns a JSON-serializable dictionary describing its graph structure.",
+      "This is used by Studio UI to render a visual flow graph.",
+      "Example:",
+      "    >>> from crewai.flow import Flow, start, listen",
+      "    >>> from crewai.flow.flow_serializer import flow_structure",
+      "    >>>",
+      "    >>> class MyFlow(Flow):",
+      "    ...     @start()"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import inspect",
+      "import logging",
+      "import re",
+      "import textwrap",
+      "from typing import Any, TypedDict, get_args, get_origin",
+      "from pydantic import BaseModel",
+      "from pydantic_core import PydanticUndefined",
+      "from crewai.flow.flow_wrappers import ("
+    ],
+    "classes": [
+      "MethodInfo",
+      "EdgeInfo",
+      "StateFieldInfo",
+      "StateSchemaInfo",
+      "FlowStructureInfo"
+    ],
+    "functions": [
+      "_get_method_type",
+      "_has_human_feedback",
+      "_detect_crew_reference",
+      "_extract_trigger_methods",
+      "_extract_router_paths",
+      "_extract_all_methods_from_condition",
+      "_generate_edges",
+      "_extract_state_schema",
+      "_detect_flow_inputs",
+      "flow_structure"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_164_973b5e046d012576_AI_Chariot_Legacy_666_1.0.0_20260508_flow_serializer.py.json"
+}

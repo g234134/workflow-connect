@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 165,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_orderings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_orderings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4254,
+  "content_sha256": "6ddb08b2a253149095c993513001950d7564efd95dc3dae60067a34bf97028fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 124,
+    "non_empty_lines": 92,
+    "char_count": 4254,
+    "preview_lines": [
+      "\"\"\"Tests of monomial orderings. \"\"\"",
+      "from sympy.polys.orderings import (",
+      "    monomial_key, lex, grlex, grevlex, ilex, igrlex,",
+      "    LexOrder, InverseOrder, ProductOrder, build_product_order,",
+      ")",
+      "from sympy.abc import x, y, z, t",
+      "from sympy.core import S",
+      "from sympy.testing.pytest import raises",
+      "def test_lex_order():",
+      "    assert lex((1, 2, 3)) == (1, 2, 3)"
+    ],
+    "imports": [
+      "from sympy.polys.orderings import (",
+      "from sympy.abc import x, y, z, t",
+      "from sympy.core import S",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_lex_order",
+      "test_grlex_order",
+      "test_grevlex_order",
+      "test_InverseOrder",
+      "test_ProductOrder",
+      "test_monomial_key",
+      "test_build_product_order"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_165_6ddb08b2a2531490_AI_Chariot_Legacy_666_1.0.0_20260508_test_orderings.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 33,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sam2_image_onnx_predictor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sam2_image_onnx_predictor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12702,
+  "content_sha256": "6c1f9fedb8bb3526f45d578003a277bfd8e430c2431dd1e64b93dd5f550ed275",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 279,
+    "non_empty_lines": 240,
+    "char_count": 12702,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (R) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "import logging",
+      "import numpy as np",
+      "import torch",
+      "from PIL.Image import Image",
+      "from sam2.modeling.sam2_base import SAM2Base",
+      "from sam2.sam2_image_predictor import SAM2ImagePredictor"
+    ],
+    "imports": [
+      "import logging",
+      "import numpy as np",
+      "import torch",
+      "from PIL.Image import Image",
+      "from sam2.modeling.sam2_base import SAM2Base",
+      "from sam2.sam2_image_predictor import SAM2ImagePredictor",
+      "from sam2_utils import decoder_shape_dict, encoder_shape_dict",
+      "from onnxruntime import InferenceSession",
+      "from onnxruntime.transformers.io_binding_helper import CudaSession"
+    ],
+    "classes": [
+      "SAM2ImageOnnxPredictor"
+    ],
+    "functions": [
+      "create_ort_session",
+      "create_session"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_033_6c1f9fedb8bb3526_AI_Chariot_Legacy_666_1.0.0_20260508_sam2_image_onnx_predictor.py.json"
+}

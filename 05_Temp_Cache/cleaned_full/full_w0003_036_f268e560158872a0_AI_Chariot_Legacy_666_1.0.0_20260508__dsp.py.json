@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__dsp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__dsp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17071,
+  "content_sha256": "f268e560158872a0e275f96fbd962d508d48731e61101932404e1712b0dc1cac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 433,
+    "non_empty_lines": 349,
+    "char_count": 17071,
+    "preview_lines": [
+      "import warnings",
+      "from typing import List, Optional, Union",
+      "import torch",
+      "from torchaudio.functional import fftconvolve",
+      "def oscillator_bank(",
+      "    frequencies: torch.Tensor,",
+      "    amplitudes: torch.Tensor,",
+      "    sample_rate: float,",
+      "    reduction: str = \"sum\",",
+      "    dtype: Optional[torch.dtype] = torch.float64,"
+    ],
+    "imports": [
+      "import warnings",
+      "from typing import List, Optional, Union",
+      "import torch",
+      "from torchaudio.functional import fftconvolve"
+    ],
+    "classes": [],
+    "functions": [
+      "oscillator_bank",
+      "adsr_envelope",
+      "extend_pitch",
+      "sinc_impulse_response",
+      "frequency_impulse_response",
+      "_overlap_and_add",
+      "filter_waveform",
+      "exp_sigmoid"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_036_f268e560158872a0_AI_Chariot_Legacy_666_1.0.0_20260508__dsp.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 118,
+  "generated_at": "2026-05-08T18:45:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_yolos.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_yolos.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13228,
+  "content_sha256": "f1185d96424dc46ee06b3ae5d9cb14eecace2030a279a0713f4cea1e56d1093a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 288,
+    "non_empty_lines": 242,
+    "char_count": 13228,
+    "preview_lines": [
+      "from typing import Optional",
+      "import numpy as np",
+      "import torch",
+      "from torch import nn",
+      "from torchvision.transforms.v2 import functional as tvF",
+      "from transformers.models.detr.image_processing_detr import DetrImageProcessor",
+      "from transformers.models.detr.image_processing_pil_detr import DetrImageProcessorPil",
+      "from ...image_transforms import center_to_corners_format",
+      "from ...image_utils import PILImageResampling, SizeDict, get_image_size_for_max_height_width",
+      "from ...utils import TensorType, logging, requires_backends"
+    ],
+    "imports": [
+      "from typing import Optional",
+      "import numpy as np",
+      "import torch",
+      "from torch import nn",
+      "from torchvision.transforms.v2 import functional as tvF",
+      "from transformers.models.detr.image_processing_detr import DetrImageProcessor",
+      "from transformers.models.detr.image_processing_pil_detr import DetrImageProcessorPil",
+      "from ...image_transforms import center_to_corners_format",
+      "from ...image_utils import PILImageResampling, SizeDict, get_image_size_for_max_height_width",
+      "from ...utils import TensorType, logging, requires_backends"
+    ],
+    "classes": [
+      "YolosImageProcessor",
+      "YolosImageProcessorPil"
+    ],
+    "functions": [
+      "get_size_with_aspect_ratio_yolos"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_118_f1185d96424dc46e_AI_Chariot_Legacy_666_1.0.0_20260508_modular_yolos.py.json"
+}

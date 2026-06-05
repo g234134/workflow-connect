@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\tracers\\evaluation.py",
+  "name": "evaluation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8454,
+  "content_sha256": "d9881b4551c7925e7f38b3a408d71cfaefe264481c57f8c89929d230e999728b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 226,
+    "non_empty_lines": 193,
+    "char_count": 8451,
+    "preview_lines": [
+      "\"\"\"A tracer that runs evaluators over completed runs.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import threading",
+      "import weakref",
+      "from concurrent.futures import Future, ThreadPoolExecutor, wait",
+      "from typing import TYPE_CHECKING, Any, cast",
+      "from uuid import UUID",
+      "import langsmith",
+      "from langsmith.evaluation.evaluator import EvaluationResult, EvaluationResults"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import threading",
+      "import weakref",
+      "from concurrent.futures import Future, ThreadPoolExecutor, wait",
+      "from typing import TYPE_CHECKING, Any, cast",
+      "from uuid import UUID",
+      "import langsmith",
+      "from langsmith.evaluation.evaluator import EvaluationResult, EvaluationResults",
+      "from langchain_core.tracers import langchain as langchain_tracer",
+      "from langchain_core.tracers._compat import run_copy",
+      "from langchain_core.tracers.base import BaseTracer",
+      "from langchain_core.tracers.context import tracing_v2_enabled",
+      "from langchain_core.tracers.langchain import _get_executor",
+      "from collections.abc import Sequence",
+      "from langchain_core.tracers.schemas import Run"
+    ],
+    "classes": [
+      "EvaluatorCallbackHandler"
+    ],
+    "functions": [
+      "wait_for_all_evaluators"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_141_d9881b4551c7925e_evaluation.py.json"
+}

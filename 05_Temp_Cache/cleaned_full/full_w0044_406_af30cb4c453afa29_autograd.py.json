@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_custom_op\\autograd.py",
+  "name": "autograd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12065,
+  "content_sha256": "af30cb4c453afa299d58f348ce7b6e9be49ef249701b1293d1f5bca0522567b5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 274,
+    "non_empty_lines": 236,
+    "char_count": 12065,
+    "preview_lines": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from collections import namedtuple",
+      "import functools",
+      "# NOTE [CustomOp autograd kernel indirection]",
+      "# We register `inner` as the autograd kernel for this custom_op.",
+      "# `inner` either calls the autograd formula registered by the user,",
+      "# or goes into an `autograd_not_implemented` kernel.",
+      "#",
+      "# The reason why this indirection exists is"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from collections import namedtuple",
+      "import functools"
+    ],
+    "classes": [],
+    "functions": [
+      "autograd_kernel_indirection",
+      "autograd_not_implemented",
+      "mark_non_differentiable",
+      "construct_autograd_kernel",
+      "gen_autograd_function",
+      "namedtuple_args_cls",
+      "namedtuple_args",
+      "validate_grad_inputs_dict",
+      "grad_inputs_dict_to_flat_tuple",
+      "save_pytree_for_backward",
+      "unpack_saved"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_406_af30cb4c453afa29_autograd.py.json"
+}

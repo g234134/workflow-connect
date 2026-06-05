@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cudagraph_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cudagraph_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11207,
+  "content_sha256": "c466bc2d036d37222016167532d2299bcea201d3f4ea88c1c86b00e7bcefb283",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 330,
+    "non_empty_lines": 255,
+    "char_count": 11207,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from enum import Enum",
+      "from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from torch._inductor.utils import InputType",
+      "perf_hint_log = torch._logging.getArtifactLogger(__name__, \"perf_hints\")",
+      "static_inputs_log = torch._logging.getArtifactLogger("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from enum import Enum",
+      "from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Union",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from torch._inductor.utils import InputType"
+    ],
+    "classes": [
+      "FunctionID",
+      "PlaceholderInfo",
+      "WrappedFunction",
+      "BoxedDeviceIndex",
+      "CheckInvariantStatus",
+      "CudagraphCachedInfo"
+    ],
+    "functions": [
+      "get_mutating_use_stack_trace_from_node",
+      "get_mutating_use_stack_trace",
+      "to_placeholder_info",
+      "get_placeholder_info",
+      "format_default_skip_message",
+      "get_mutation_stack_trace",
+      "check_for_mutation",
+      "_get_use_stack_trace",
+      "check_multiple_devices_or_any_cpu_nodes",
+      "check_lowering_disable_cudagraph",
+      "log_cudagraph_skip_and_bump_counter",
+      "check_for_mutation_ignore_cuda_graph_managed_tensor",
+      "get_placeholder_stack_trace",
+      "log_data_ptr_mismatch",
+      "maybe_warning_due_to_dynamic_shape"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_060_c466bc2d036d3722_AI_Chariot_Legacy_666_1.0.0_20260508_cudagraph_utils.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "intake_id": "preview-basic-001",
+  "product_sku": "CLEAN-BASIC",
+  "intake_status": "complete",
+  "completed_at": "2026-06-04T14:30:00Z",
+  "client_ref": "qa-test-basic-acme",
+  "data_sources": [
+    {
+      "source_id": "app-logs-june",
+      "kind": "cleaned_full",
+      "stored_logical_path": "cleaned_full/app_logs_june.csv",
+      "content_sha256": "aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899",
+      "file_format": "csv",
+      "encoding": "utf-8",
+      "compression": "gzip",
+      "size_bytes": 2411724,
+      "row_count_estimate": 50000
+    }
+  ],
+  "data_profile": {
+    "data_source_type": "log",
+    "file_format": "csv",
+    "encoding": "utf-8",
+    "compression": "gzip",
+    "file_size_bytes": 2411724,
+    "row_count_estimate": 50000
+  },
+  "schema_definition": {
+    "schema_ref": "auto_inferred://app_logs_standard",
+    "record_id_field": "request_id",
+    "required_fields": ["timestamp", "level", "message"],
+    "pii_fields": []
+  },
+  "security_compliance": {
+    "contains_pii": false,
+    "dpa_signed": false,
+    "business_rules": [],
+    "user_acknowledged_limitations": true
+  },
+  "enrich_configuration": null,
+  "scheduling": {
+    "deadline_utc": "2026-06-07T23:59:59Z",
+    "priority": "standard"
+  },
+  "provenance": {
+    "source_channel": "cli",
+    "dialogue_turns": 3,
+    "gate_decision": "accepted"
+  }
+}

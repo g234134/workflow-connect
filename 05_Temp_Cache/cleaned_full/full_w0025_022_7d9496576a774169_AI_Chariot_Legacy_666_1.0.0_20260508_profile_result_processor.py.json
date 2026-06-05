@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 22,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_profile_result_processor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_profile_result_processor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12940,
+  "content_sha256": "7d9496576a77416906d9c82a7c4b75742f6b8259d8f1482f8825ace96e1a81e9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 358,
+    "non_empty_lines": 284,
+    "char_count": 12927,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation. All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "\"\"\"This profiler result processor print out the kernel time spent on each Node of the model.",
+      "Example of importing profile result file from onnxruntime_perf_test:",
+      "    python profile_result_processor.py --input profile_2021-10-25_12-02-41.json",
+      "\"\"\"",
+      "import argparse",
+      "import json"
+    ],
+    "imports": [
+      "import argparse",
+      "import json"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_arguments",
+      "load_profile_json",
+      "parse_kernel_results",
+      "parse_node_results",
+      "group_node_results",
+      "process_results"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_022_7d9496576a774169_AI_Chariot_Legacy_666_1.0.0_20260508_profile_result_processor.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\polys\\tests\\test_puiseux.py",
+  "name": "test_puiseux.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7304,
+  "content_sha256": "e0f9c1749b980d692ef25e898360ec9fbba6835e2575805dbc7aad55a6842db1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 177,
+    "char_count": 7304,
+    "preview_lines": [
+      "#",
+      "# Tests for PuiseuxRing and PuiseuxPoly",
+      "#",
+      "from sympy.testing.pytest import raises",
+      "from sympy import ZZ, QQ, ring",
+      "from sympy.polys.puiseux import PuiseuxRing, PuiseuxPoly, puiseux_ring",
+      "from sympy.abc import x, y",
+      "def test_puiseux_ring():",
+      "    R, px = puiseux_ring('x', QQ)",
+      "    R2, px2 = puiseux_ring([x], QQ)"
+    ],
+    "imports": [
+      "from sympy.testing.pytest import raises",
+      "from sympy import ZZ, QQ, ring",
+      "from sympy.polys.puiseux import PuiseuxRing, PuiseuxPoly, puiseux_ring",
+      "from sympy.abc import x, y"
+    ],
+    "classes": [],
+    "functions": [
+      "test_puiseux_ring",
+      "test_puiseux_ring_attributes",
+      "test_puiseux_ring_methods",
+      "test_puiseux_poly",
+      "test_puiseux_poly_normalization",
+      "test_puiseux_poly_monoms",
+      "test_puiseux_poly_repr",
+      "test_puiseux_poly_unify",
+      "test_puiseux_poly_arit",
+      "test_puiseux_poly_div",
+      "test_puiseux_poly_pow",
+      "test_puiseux_poly_diff"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_133_e0f9c1749b980d69_test_puiseux.py.json"
+}

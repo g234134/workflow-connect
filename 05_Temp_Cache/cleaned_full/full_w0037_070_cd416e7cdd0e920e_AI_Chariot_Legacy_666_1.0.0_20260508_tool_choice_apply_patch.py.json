@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 70,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_choice_apply_patch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_choice_apply_patch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 404,
+  "content_sha256": "cd416e7cdd0e920e3402438cdd09b3531b515f80d02b0479d9f61061d4031029",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 8,
+    "char_count": 404,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel",
+      "__all__ = [\"ToolChoiceApplyPatch\"]",
+      "class ToolChoiceApplyPatch(BaseModel):",
+      "    \"\"\"Forces the model to call the apply_patch tool when executing a tool call.\"\"\"",
+      "    type: Literal[\"apply_patch\"]",
+      "    \"\"\"The tool to call. Always `apply_patch`.\"\"\""
+    ],
+    "imports": [
+      "from typing_extensions import Literal",
+      "from ..._models import BaseModel"
+    ],
+    "classes": [
+      "ToolChoiceApplyPatch"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_070_cd416e7cdd0e920e_AI_Chariot_Legacy_666_1.0.0_20260508_tool_choice_apply_patch.py.json"
+}

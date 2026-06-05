@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 317,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aioodbc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aioodbc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6048,
+  "content_sha256": "dcc24bf5bc2bd68579b5f0ef18ebb6a0585c3810f3439cc75d7535389cdce981",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 194,
+    "non_empty_lines": 153,
+    "char_count": 6048,
+    "preview_lines": [
+      "# connectors/aioodbc.py",
+      "# Copyright (C) 2005-2026 the SQLAlchemy authors and contributors",
+      "# <see AUTHORS file>",
+      "#",
+      "# This module is part of SQLAlchemy and is released under",
+      "# the MIT License: https://www.opensource.org/licenses/mit-license.php",
+      "# mypy: ignore-errors",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from .asyncio import AsyncAdapt_dbapi_connection"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING",
+      "from .asyncio import AsyncAdapt_dbapi_connection",
+      "from .asyncio import AsyncAdapt_dbapi_cursor",
+      "from .asyncio import AsyncAdapt_dbapi_ss_cursor",
+      "from .asyncio import AsyncAdaptFallback_dbapi_connection",
+      "from .pyodbc import PyODBCConnector",
+      "from .. import pool",
+      "from .. import util",
+      "from ..util.concurrency import await_fallback",
+      "from ..util.concurrency import await_only",
+      "from ..engine.interfaces import ConnectArgsType",
+      "from ..engine.url import URL"
+    ],
+    "classes": [
+      "AsyncAdapt_aioodbc_cursor",
+      "AsyncAdapt_aioodbc_ss_cursor",
+      "AsyncAdapt_aioodbc_connection",
+      "AsyncAdaptFallback_aioodbc_connection",
+      "AsyncAdapt_aioodbc_dbapi",
+      "aiodbcConnector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_317_dcc24bf5bc2bd685_AI_Chariot_Legacy_666_1.0.0_20260508_aioodbc.py.json"
+}

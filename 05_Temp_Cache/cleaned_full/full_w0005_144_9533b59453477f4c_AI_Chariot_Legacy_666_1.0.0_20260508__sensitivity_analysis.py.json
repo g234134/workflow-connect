@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 144,
+  "generated_at": "2026-05-08T18:44:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__sensitivity_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__sensitivity_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25754,
+  "content_sha256": "9533b59453477f4ce92c0f7a5545ef69499de77976421fb2995f7a272cea246a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 713,
+    "non_empty_lines": 583,
+    "char_count": 25754,
+    "preview_lines": [
+      "import inspect",
+      "from dataclasses import dataclass",
+      "from typing import TYPE_CHECKING, Any",
+      "from collections.abc import Callable",
+      "import numpy as np",
+      "from scipy.stats._common import ConfidenceInterval",
+      "from scipy.stats._qmc import check_random_state",
+      "from scipy.stats._resampling import BootstrapResult",
+      "from scipy.stats import qmc, bootstrap",
+      "from scipy._lib._util import _transition_to_rng"
+    ],
+    "imports": [
+      "import inspect",
+      "from dataclasses import dataclass",
+      "from typing import TYPE_CHECKING, Any",
+      "from collections.abc import Callable",
+      "import numpy as np",
+      "from scipy.stats._common import ConfidenceInterval",
+      "from scipy.stats._qmc import check_random_state",
+      "from scipy.stats._resampling import BootstrapResult",
+      "from scipy.stats import qmc, bootstrap",
+      "from scipy._lib._util import _transition_to_rng",
+      "import numpy.typing as npt",
+      "from scipy._lib._util import DecimalNumber, IntNumber"
+    ],
+    "classes": [
+      "BootstrapSobolResult",
+      "SobolResult"
+    ],
+    "functions": [
+      "f_ishigami",
+      "sample_A_B",
+      "sample_AB",
+      "saltelli_2010",
+      "sobol_indices"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_144_9533b59453477f4c_AI_Chariot_Legacy_666_1.0.0_20260508__sensitivity_analysis.py.json"
+}

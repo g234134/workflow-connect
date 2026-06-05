@@ -1,0 +1,57 @@
+{
+  "intake_id": "preview-enrich-001",
+  "product_sku": "CLEAN-ENRICH",
+  "intake_status": "complete",
+  "completed_at": "2026-06-04T14:35:00Z",
+  "client_ref": "qa-test-enrich-crm",
+  "data_sources": [
+    {
+      "source_id": "customers-may",
+      "kind": "cleaned_full",
+      "stored_logical_path": "cleaned_full/customers_may.csv",
+      "content_sha256": "11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff",
+      "file_format": "csv",
+      "encoding": "utf-8",
+      "compression": "none",
+      "size_bytes": 1843200,
+      "row_count_estimate": 12000
+    }
+  ],
+  "data_profile": {
+    "data_source_type": "crm",
+    "file_format": "csv",
+    "encoding": "utf-8",
+    "compression": "none",
+    "file_size_bytes": 1843200,
+    "row_count_estimate": 12000
+  },
+  "schema_definition": {
+    "schema_ref": "auto_inferred://customer_csv",
+    "record_id_field": "customer_id",
+    "required_fields": ["customer_id", "name", "address_raw"],
+    "pii_fields": ["name", "phone", "address_raw"]
+  },
+  "security_compliance": {
+    "contains_pii": true,
+    "dpa_signed": true,
+    "business_rules": [],
+    "user_acknowledged_limitations": true
+  },
+  "enrich_configuration": {
+    "enrich_plan_ref": "enrich_plan://address_std_v1",
+    "enrich_apis": ["address_standardization"],
+    "api_key_status": "ready",
+    "fallback_policy": "lenient",
+    "dedup_strategy": "exact",
+    "dedup_key_fields": ["customer_id"]
+  },
+  "scheduling": {
+    "deadline_utc": "2026-06-09T23:59:59Z",
+    "priority": "standard"
+  },
+  "provenance": {
+    "source_channel": "api",
+    "dialogue_turns": 5,
+    "gate_decision": "accepted"
+  }
+}

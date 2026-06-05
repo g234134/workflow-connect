@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_export_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_export_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7601,
+  "content_sha256": "cd19d24132c970e4b47cdb44da614aa18a1c77ce664a0584e844a46d36530e7b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 222,
+    "non_empty_lines": 178,
+    "char_count": 7601,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import types",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.utils import _assert_and_get_unique_device",
+      "__all__ = [",
+      "    \"model_is_exported\",",
+      "]",
+      "class _WrapperModule(torch.nn.Module):",
+      "    \"\"\"Class to wrap a callable in an :class:`torch.nn.Module`. Use this if you"
+    ],
+    "imports": [
+      "import types",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch.ao.quantization.utils import _assert_and_get_unique_device",
+      "from .utils import _get_aten_graph_module_for_pattern",
+      "from torch.fx.subgraph_rewriter import replace_pattern_with_filters",
+      "from .utils import _get_aten_graph_module_for_pattern",
+      "from torch.fx.subgraph_rewriter import replace_pattern_with_filters"
+    ],
+    "classes": [
+      "_WrapperModule"
+    ],
+    "functions": [
+      "model_is_exported",
+      "_replace_dropout",
+      "_replace_batchnorm",
+      "_move_exported_model_to_eval",
+      "_move_exported_model_to_train",
+      "_allow_exported_model_train_eval"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_163_cd19d24132c970e4_AI_Chariot_Legacy_666_1.0.0_20260508_export_utils.py.json"
+}

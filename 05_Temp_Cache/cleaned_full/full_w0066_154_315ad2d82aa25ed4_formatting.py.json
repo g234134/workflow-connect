@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 154,
+  "generated_at": "2026-05-08T18:48:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\utils\\formatting.py",
+  "name": "formatting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3141,
+  "content_sha256": "315ad2d82aa25ed40b7bafbd86af49fab0833b8ff747d1757b3dc4514e9584b9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 63,
+    "char_count": 3138,
+    "preview_lines": [
+      "\"\"\"Utilities for formatting strings.\"\"\"",
+      "from collections.abc import Mapping, Sequence",
+      "from string import Formatter",
+      "from typing import Any",
+      "class StrictFormatter(Formatter):",
+      "    \"\"\"A string formatter that enforces keyword-only argument substitution.",
+      "    This formatter extends Python's built-in `string.Formatter` to provide stricter",
+      "    validation for prompt template formatting. It ensures that all variable",
+      "    substitutions use keyword arguments rather than positional arguments, which improves",
+      "    clarity and reduces errors when formatting prompt templates."
+    ],
+    "imports": [
+      "from collections.abc import Mapping, Sequence",
+      "from string import Formatter",
+      "from typing import Any"
+    ],
+    "classes": [
+      "StrictFormatter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_154_315ad2d82aa25ed4_formatting.py.json"
+}

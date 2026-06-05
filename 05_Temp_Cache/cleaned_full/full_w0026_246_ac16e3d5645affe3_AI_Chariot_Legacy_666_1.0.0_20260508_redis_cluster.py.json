@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 246,
+  "generated_at": "2026-05-08T18:46:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_redis_cluster.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_redis_cluster.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3530,
+  "content_sha256": "ac16e3d5645affe34047ab53407290305e345a3bcd6faa3a168a23226204d376",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 92,
+    "char_count": 3530,
+    "preview_lines": [
+      "\"\"\"",
+      "Instrumentation for RedisCluster",
+      "This is part of the main redis-py client.",
+      "https://github.com/redis/redis-py/blob/master/redis/cluster.py",
+      "\"\"\"",
+      "from sentry_sdk.integrations.redis._sync_common import (",
+      "    patch_redis_client,",
+      "    patch_redis_pipeline,",
+      ")",
+      "from sentry_sdk.integrations.redis.modules.queries import _set_db_data_on_span"
+    ],
+    "imports": [
+      "from sentry_sdk.integrations.redis._sync_common import (",
+      "from sentry_sdk.integrations.redis.modules.queries import _set_db_data_on_span",
+      "from sentry_sdk.integrations.redis.utils import _parse_rediscluster_command",
+      "from sentry_sdk.utils import capture_internal_exceptions",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any",
+      "from redis import RedisCluster",
+      "from redis.asyncio.cluster import (",
+      "from sentry_sdk.tracing import Span",
+      "from redis import RedisCluster, cluster",
+      "from redis.asyncio import cluster as async_cluster",
+      "from sentry_sdk.integrations.redis._async_common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_set_async_cluster_db_data",
+      "_set_async_cluster_pipeline_db_data",
+      "_set_cluster_db_data",
+      "_patch_redis_cluster"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_246_ac16e3d5645affe3_AI_Chariot_Legacy_666_1.0.0_20260508_redis_cluster.py.json"
+}

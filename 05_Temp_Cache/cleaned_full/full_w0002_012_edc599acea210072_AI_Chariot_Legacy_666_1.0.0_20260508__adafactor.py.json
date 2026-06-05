@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 12,
+  "generated_at": "2026-05-08T18:44:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__adafactor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__adafactor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29021,
+  "content_sha256": "edc599acea2100727cf37b9e8753b59fc26d7ee6717159b3ee2a7c972aa95bcf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 656,
+    "non_empty_lines": 581,
+    "char_count": 29021,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "from typing import cast, Dict, List, Optional, Tuple, TYPE_CHECKING, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (",
+      "    _disable_dynamo_if_unsupported,",
+      "    _get_scalar_dtype,",
+      "    _maximize_doc,",
+      "    Optimizer,"
+    ],
+    "imports": [
+      "from typing import cast, Dict, List, Optional, Tuple, TYPE_CHECKING, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import ("
+    ],
+    "classes": [
+      "Adafactor"
+    ],
+    "functions": [
+      "_single_tensor_adafactor",
+      "_group_tensors_by_device_dtype_and_is_multidim",
+      "_multi_tensor_adafactor",
+      "adafactor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_012_edc599acea210072_AI_Chariot_Legacy_666_1.0.0_20260508__adafactor.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_arize_phoenix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_arize_phoenix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5045,
+  "content_sha256": "ce9a0fac3a42069b339a9a07083ec5cb88d5505d2106e92b98869a946f9f19f9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 102,
+    "char_count": 5045,
+    "preview_lines": [
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.arize import _utils",
+      "from litellm.integrations.arize._utils import ArizeOTELAttributes",
+      "from litellm.types.integrations.arize_phoenix import ArizePhoenixConfig",
+      "from litellm.integrations.opentelemetry import OpenTelemetry",
+      "if TYPE_CHECKING:",
+      "    from opentelemetry.trace import Span as _Span",
+      "    from litellm.integrations.opentelemetry import OpenTelemetryConfig as _OpenTelemetryConfig"
+    ],
+    "imports": [
+      "import os",
+      "from typing import TYPE_CHECKING, Any, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.integrations.arize import _utils",
+      "from litellm.integrations.arize._utils import ArizeOTELAttributes",
+      "from litellm.types.integrations.arize_phoenix import ArizePhoenixConfig",
+      "from litellm.integrations.opentelemetry import OpenTelemetry",
+      "from opentelemetry.trace import Span as _Span",
+      "from litellm.integrations.opentelemetry import OpenTelemetryConfig as _OpenTelemetryConfig",
+      "from litellm.types.integrations.arize import Protocol as _Protocol",
+      "from litellm.integrations.opentelemetry_utils.base_otel_llm_obs_attributes import safe_set_attribute"
+    ],
+    "classes": [
+      "ArizePhoenixLogger"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_053_ce9a0fac3a42069b_AI_Chariot_Legacy_666_1.0.0_20260508_arize_phoenix.py.json"
+}

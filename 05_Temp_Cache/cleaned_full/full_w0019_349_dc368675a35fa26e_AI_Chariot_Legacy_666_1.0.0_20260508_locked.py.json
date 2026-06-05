@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_locked.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_locked.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2290,
+  "content_sha256": "dc368675a35fa26e073c360169494510a8d624dc6cca532e95d8d5dc61cbc921",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 47,
+    "char_count": 2290,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from typing import Any",
+      "from .base import ChangeCallback, ChangeSubscription, KnowledgeStore",
+      "class LockedKnowledgeStore:",
+      "    \"\"\"Wraps a KnowledgeStore with a Lock for concurrent access safety.",
+      "    Reads are not locked (safe for concurrent access on all backends).",
+      "    Writes and deletes acquire the lock.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "from typing import Any",
+      "from .base import ChangeCallback, ChangeSubscription, KnowledgeStore"
+    ],
+    "classes": [
+      "LockedKnowledgeStore"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_349_dc368675a35fa26e_AI_Chariot_Legacy_666_1.0.0_20260508_locked.py.json"
+}

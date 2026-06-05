@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\redistribute.py",
+  "name": "redistribute.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9992,
+  "content_sha256": "37536c2ba6d1f2f299bb42d0c4fdb3bb1fe2dff64d007cc5b09eb5dcf9e36255",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 251,
+    "non_empty_lines": 218,
+    "char_count": 9992,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "from typing import cast, Dict, List, Tuple",
+      "import torch",
+      "import torch.distributed._tensor.api as dtensor",
+      "from torch.distributed._tensor.placement_types import (",
+      "    _Partial,",
+      "    DTensorSpec,",
+      "    Placement,",
+      "    Replicate,",
+      "    Shard,"
+    ],
+    "imports": [
+      "from typing import cast, Dict, List, Tuple",
+      "import torch",
+      "import torch.distributed._tensor.api as dtensor",
+      "from torch.distributed._tensor.placement_types import (",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "from collections import defaultdict"
+    ],
+    "classes": [
+      "Redistribute"
+    ],
+    "functions": [
+      "_replicate_then_shard",
+      "_decompose_reshard",
+      "redistribute_local_tensor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_062_37536c2ba6d1f2f2_redistribute.py.json"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 397,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_versioncontrol.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_versioncontrol.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22599,
+  "content_sha256": "31afc7319055bde4a4798bf169cbea7ae8e791221a1755e3c53b12dc1c1c27c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 695,
+    "non_empty_lines": 586,
+    "char_count": 22599,
+    "preview_lines": [
+      "\"\"\"Handles all VCS (version control) support\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "import shutil",
+      "import sys",
+      "import urllib.parse",
+      "from collections.abc import Iterable, Iterator, Mapping",
+      "from dataclasses import dataclass, field",
+      "from typing import ("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import os",
+      "import shutil",
+      "import sys",
+      "import urllib.parse",
+      "from collections.abc import Iterable, Iterator, Mapping",
+      "from dataclasses import dataclass, field",
+      "from typing import (",
+      "from pip._internal.cli.spinners import SpinnerInterface",
+      "from pip._internal.exceptions import BadCommand, InstallationError",
+      "from pip._internal.utils.misc import (",
+      "from pip._internal.utils.subprocess import ("
+    ],
+    "classes": [
+      "RemoteNotFoundError",
+      "RemoteNotValidError",
+      "RevOptions",
+      "VcsSupport",
+      "VersionControl"
+    ],
+    "functions": [
+      "is_url",
+      "make_vcs_requirement_url",
+      "find_path_to_project_root_from_repo_root"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_397_31afc7319055bde4_AI_Chariot_Legacy_666_1.0.0_20260508_versioncontrol.py.json"
+}

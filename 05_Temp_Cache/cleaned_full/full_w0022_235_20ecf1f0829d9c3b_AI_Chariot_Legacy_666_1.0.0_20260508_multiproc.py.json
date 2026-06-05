@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multiproc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multiproc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4295,
+  "content_sha256": "20ecf1f0829d9c3bd8802fefdada10ddb18e4c9b2a083ce9cf8c53db223e4e91",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 91,
+    "char_count": 4295,
+    "preview_lines": [
+      "# Licensed under the Apache License: http://www.apache.org/licenses/LICENSE-2.0",
+      "# For details: https://github.com/coveragepy/coveragepy/blob/main/NOTICE.txt",
+      "\"\"\"Monkey-patching to add multiprocessing support for coverage.py\"\"\"",
+      "from __future__ import annotations",
+      "import multiprocessing",
+      "import multiprocessing.process",
+      "import os",
+      "import os.path",
+      "import sys",
+      "import traceback"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import multiprocessing",
+      "import multiprocessing.process",
+      "import os",
+      "import os.path",
+      "import sys",
+      "import traceback",
+      "from typing import Any",
+      "from coverage.debug import DebugControl",
+      "from coverage import Coverage  # avoid circular import",
+      "from multiprocessing import spawn"
+    ],
+    "classes": [
+      "ProcessWithCoverage",
+      "Stowaway"
+    ],
+    "functions": [
+      "patch_multiprocessing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_235_20ecf1f0829d9c3b_AI_Chariot_Legacy_666_1.0.0_20260508_multiproc.py.json"
+}

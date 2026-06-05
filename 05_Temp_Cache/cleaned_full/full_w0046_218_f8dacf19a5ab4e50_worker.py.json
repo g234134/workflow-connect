@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\pipeline\\sync\\worker.py",
+  "name": "worker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4463,
+  "content_sha256": "f8dacf19a5ab4e50bfd9a4aa3302adb6e96d8f375dc7f8504ee7a3fb2726e1bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 132,
+    "non_empty_lines": 100,
+    "char_count": 4463,
+    "preview_lines": [
+      "# Copyright 2019 Kakao Brain",
+      "#",
+      "# Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "\"\"\"Multithreading in pipeline parallelism.\"\"\"",
+      "from contextlib import contextmanager",
+      "from queue import Queue",
+      "import sys"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from queue import Queue",
+      "import sys",
+      "from threading import Thread",
+      "from types import TracebackType",
+      "from typing import TYPE_CHECKING, Callable, Dict, Generator, List, Optional, Tuple, Type, Union, cast",
+      "import torch",
+      "from .microbatch import Batch",
+      "from .stream import AbstractStream, use_device, use_stream"
+    ],
+    "classes": [
+      "Task"
+    ],
+    "functions": [
+      "worker",
+      "create_workers",
+      "spawn_workers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_218_f8dacf19a5ab4e50_worker.py.json"
+}

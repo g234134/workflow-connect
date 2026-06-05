@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_clearml.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_clearml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11524,
+  "content_sha256": "a0eea729081aa17de90615577d17005444b2ecc7db1ddfbb805964d84b674e75",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 310,
+    "non_empty_lines": 275,
+    "char_count": 11524,
+    "preview_lines": [
+      "from typing import Dict, Any, Tuple, Callable, List, Optional, IO",
+      "from types import ModuleType",
+      "import os",
+      "import sys",
+      "from spacy import Language",
+      "from spacy.util import SimpleFrozenList",
+      "from .util import dict_to_dot, dot_to_dict, matcher_for_regex_patterns",
+      "from .util import setup_default_console_logger, LoggerT",
+      "# entry point: spacy.ClearMLLogger.v2",
+      "def clearml_logger_v2("
+    ],
+    "imports": [
+      "from typing import Dict, Any, Tuple, Callable, List, Optional, IO",
+      "from types import ModuleType",
+      "import os",
+      "import sys",
+      "from spacy import Language",
+      "from spacy.util import SimpleFrozenList",
+      "from .util import dict_to_dot, dot_to_dict, matcher_for_regex_patterns",
+      "from .util import setup_default_console_logger, LoggerT",
+      "import clearml",
+      "from clearml import Task, Dataset, OutputModel  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "clearml_logger_v2",
+      "clearml_logger_v1",
+      "_import_clearml",
+      "_setup_clearml",
+      "_log_step_clearml",
+      "_finalize_clearml",
+      "_log_custom_stats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_281_a0eea729081aa17d_AI_Chariot_Legacy_666_1.0.0_20260508_clearml.py.json"
+}

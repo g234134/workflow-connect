@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 383,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_emformer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_emformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38650,
+  "content_sha256": "59b69e65cacf14e38b9f88a0ab0784d007ee17f490669aa0ed73c612197b0bc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 884,
+    "non_empty_lines": 785,
+    "char_count": 38650,
+    "preview_lines": [
+      "import math",
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "__all__ = [\"Emformer\"]",
+      "def _lengths_to_padding_mask(lengths: torch.Tensor) -> torch.Tensor:",
+      "    batch_size = lengths.shape[0]",
+      "    max_length = int(torch.max(lengths).item())",
+      "    padding_mask = torch.arange(max_length, device=lengths.device, dtype=lengths.dtype).expand(",
+      "        batch_size, max_length",
+      "    ) >= lengths.unsqueeze(1)"
+    ],
+    "imports": [
+      "import math",
+      "from typing import List, Optional, Tuple",
+      "import torch"
+    ],
+    "classes": [
+      "_EmformerAttention",
+      "_EmformerLayer",
+      "_EmformerImpl",
+      "Emformer"
+    ],
+    "functions": [
+      "_lengths_to_padding_mask",
+      "_gen_padding_mask",
+      "_get_activation_module",
+      "_get_weight_init_gains",
+      "_gen_attention_mask_block"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_383_59b69e65cacf14e3_AI_Chariot_Legacy_666_1.0.0_20260508_emformer.py.json"
+}

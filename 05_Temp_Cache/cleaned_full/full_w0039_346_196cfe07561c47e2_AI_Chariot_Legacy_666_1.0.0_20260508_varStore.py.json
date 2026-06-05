@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_varStore.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_varStore.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24808,
+  "content_sha256": "196cfe07561c47e267221d9a0e679083adb51831018fd338a4a61c6d9ada037c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 739,
+    "non_empty_lines": 590,
+    "char_count": 24808,
+    "preview_lines": [
+      "from fontTools.misc.roundTools import noRound, otRound",
+      "from fontTools.misc.intTools import bit_count",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from fontTools.varLib.models import supportScalar",
+      "from fontTools.varLib.builder import (",
+      "    buildVarRegionList,",
+      "    buildVarStore,",
+      "    buildVarRegion,",
+      "    buildVarData,",
+      ")"
+    ],
+    "imports": [
+      "from fontTools.misc.roundTools import noRound, otRound",
+      "from fontTools.misc.intTools import bit_count",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from fontTools.varLib.models import supportScalar",
+      "from fontTools.varLib.builder import (",
+      "from functools import partial",
+      "from collections import defaultdict",
+      "from heapq import heappush, heappop"
+    ],
+    "classes": [
+      "OnlineVarStoreBuilder",
+      "VarStoreInstancer",
+      "_Encoding",
+      "_EncodingDict"
+    ],
+    "functions": [
+      "_getLocationKey",
+      "VarData_addItem",
+      "VarRegion_get_support",
+      "VarStore___bool__",
+      "VarStore_subset_varidxes",
+      "VarStore_prune_regions",
+      "_visit",
+      "_Device_recordVarIdx",
+      "Object_collect_device_varidxes",
+      "_Device_mapVarIdx",
+      "Object_remap_device_varidxes",
+      "VarStore_optimize",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_346_196cfe07561c47e2_AI_Chariot_Legacy_666_1.0.0_20260508_varStore.py.json"
+}

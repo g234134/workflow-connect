@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 434,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lra_satask.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lra_satask.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9563,
+  "content_sha256": "1659a22c446c8fa27dc3abf2830104127ee9c863e70f42643c414476813b6df3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 231,
+    "char_count": 9563,
+    "preview_lines": [
+      "from sympy.assumptions.assume import global_assumptions",
+      "from sympy.assumptions.cnf import CNF, EncodedCNF",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.logic.inference import satisfiable",
+      "from sympy.logic.algorithms.lra_theory import UnhandledInput, ALLOWED_PRED",
+      "from sympy.matrices.kind import MatrixKind",
+      "from sympy.core.kind import NumberKind",
+      "from sympy.assumptions.assume import AppliedPredicate",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S"
+    ],
+    "imports": [
+      "from sympy.assumptions.assume import global_assumptions",
+      "from sympy.assumptions.cnf import CNF, EncodedCNF",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.logic.inference import satisfiable",
+      "from sympy.logic.algorithms.lra_theory import UnhandledInput, ALLOWED_PRED",
+      "from sympy.matrices.kind import MatrixKind",
+      "from sympy.core.kind import NumberKind",
+      "from sympy.assumptions.assume import AppliedPredicate",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S"
+    ],
+    "classes": [],
+    "functions": [
+      "lra_satask",
+      "check_satisfiability",
+      "_preprocess",
+      "_pred_to_binrel",
+      "get_all_pred_and_expr_from_enc_cnf",
+      "extract_pred_from_old_assum"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_434_1659a22c446c8fa2_AI_Chariot_Legacy_666_1.0.0_20260508_lra_satask.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 446,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\adamw.py",
+  "name": "adamw.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 28953,
+  "content_sha256": "a44f3ca5a8904a840aae257aaa5113540e365c5a1dc2bceaa3e9124c4b247ff0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 687,
+    "non_empty_lines": 599,
+    "char_count": 28953,
+    "preview_lines": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _get_value, _dispatch_sqrt,",
+      "                        _stack_if_compiling, _capturable_doc, _differentiable_doc, _foreach_doc,",
+      "                        _fused_doc, _maximize_doc, _default_to_fused_or_foreach, ParamsT, _view_as_real)",
+      "from typing import List, Optional, Tuple, Union",
+      "from torch.utils._foreach_utils import _get_fused_kernels_supported_devices",
+      "__all__ = [\"AdamW\", \"adamw\"]",
+      "class AdamW(Optimizer):",
+      "    def __init__("
+    ],
+    "imports": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _get_value, _dispatch_sqrt,",
+      "from typing import List, Optional, Tuple, Union",
+      "from torch.utils._foreach_utils import _get_fused_kernels_supported_devices"
+    ],
+    "classes": [
+      "AdamW"
+    ],
+    "functions": [
+      "adamw",
+      "_single_tensor_adamw",
+      "_multi_tensor_adamw",
+      "_fused_adamw"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_446_a44f3ca5a8904a84_adamw.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\prebuilt\\tests\\conftest_checkpointer.py",
+  "name": "conftest_checkpointer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6089,
+  "content_sha256": "88c3ea2a137d00b28b0ce2d986975d53dc1d9934e1d96b3070db47c9f73d6658",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 177,
+    "non_empty_lines": 154,
+    "char_count": 6086,
+    "preview_lines": [
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from uuid import uuid4",
+      "from langgraph.checkpoint.postgres import PostgresSaver",
+      "from langgraph.checkpoint.postgres.aio import AsyncPostgresSaver",
+      "from langgraph.checkpoint.sqlite import SqliteSaver",
+      "from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver",
+      "from psycopg import AsyncConnection, Connection",
+      "from psycopg_pool import AsyncConnectionPool, ConnectionPool",
+      "from tests.memory_assert import MemorySaverAssertImmutable",
+      "DEFAULT_POSTGRES_URI = \"postgres://postgres:postgres@localhost:5442/\""
+    ],
+    "imports": [
+      "from contextlib import asynccontextmanager, contextmanager",
+      "from uuid import uuid4",
+      "from langgraph.checkpoint.postgres import PostgresSaver",
+      "from langgraph.checkpoint.postgres.aio import AsyncPostgresSaver",
+      "from langgraph.checkpoint.sqlite import SqliteSaver",
+      "from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver",
+      "from psycopg import AsyncConnection, Connection",
+      "from psycopg_pool import AsyncConnectionPool, ConnectionPool",
+      "from tests.memory_assert import MemorySaverAssertImmutable"
+    ],
+    "classes": [],
+    "functions": [
+      "_checkpointer_memory",
+      "_checkpointer_sqlite",
+      "_checkpointer_postgres",
+      "_checkpointer_postgres_pipe",
+      "_checkpointer_postgres_pool"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_176_88c3ea2a137d00b2_conftest_checkpointer.py.json"
+}

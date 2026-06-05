@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 359,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\libshm.h",
+  "name": "libshm.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 815,
+  "content_sha256": "4cda048d2158eaf99ff698b5966f05d2a2e4fd2b613312c31864eb74a7a883b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 36,
+    "non_empty_lines": 28,
+    "char_count": 815,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/MapAllocator.h>",
+      "#ifdef __cplusplus",
+      "#ifdef SHM_EXPORTS",
+      "#define SHM_API __declspec(dllexport)",
+      "#else",
+      "#define SHM_API __declspec(dllimport)",
+      "#endif",
+      "SHM_API void libshm_init(const char* manager_exec_path);",
+      "class SHM_API THManagedMapAllocator : public at::RefcountedMapAllocator {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_359_4cda048d2158eaf9_libshm.h.json"
+}

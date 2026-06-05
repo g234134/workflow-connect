@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 492,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_runtests_pytest.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_runtests_pytest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18327,
+  "content_sha256": "3aa32ea0f2953ac20c8a23258c037007c42ea6692383f4aeb2d5b17b95b6461a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 475,
+    "non_empty_lines": 388,
+    "char_count": 18327,
+    "preview_lines": [
+      "\"\"\"Backwards compatible functions for running tests from SymPy using pytest.",
+      "SymPy historically had its own testing framework that aimed to:",
+      "- be compatible with pytest;",
+      "- operate similarly (or identically) to pytest;",
+      "- not require any external dependencies;",
+      "- have all the functionality in one file only;",
+      "- have no magic, just import the test file and execute the test functions; and",
+      "- be portable.",
+      "To reduce the maintence burden of developing an independent testing framework",
+      "and to leverage the benefits of existing Python testing infrastructure, SymPy"
+    ],
+    "imports": [
+      "import functools",
+      "import importlib.util",
+      "import os",
+      "import pathlib",
+      "import re",
+      "from fnmatch import fnmatch",
+      "from typing import List, Optional, Tuple",
+      "import pytest",
+      "from sympy.testing.runtests import test as test_sympy"
+    ],
+    "classes": [
+      "PytestPluginManager"
+    ],
+    "functions": [
+      "sympy_dir",
+      "update_args_with_rootdir",
+      "update_args_with_paths",
+      "make_absolute_path",
+      "test",
+      "doctest"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_492_3aa32ea0f2953ac2_AI_Chariot_Legacy_666_1.0.0_20260508_runtests_pytest.py.json"
+}

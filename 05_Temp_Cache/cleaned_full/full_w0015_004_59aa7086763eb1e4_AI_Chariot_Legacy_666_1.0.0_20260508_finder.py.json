@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 4,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_finder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_finder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5286,
+  "content_sha256": "59aa7086763eb1e42a5584e41936c4df945299be9a8cd2b88480a186c925f101",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 120,
+    "char_count": 5286,
+    "preview_lines": [
+      "\"\"\"",
+      "Searching for names with given scope and name. This is very central in Jedi and",
+      "Python. The name resolution is quite complicated with descripter,",
+      "``__getattribute__``, ``__getattr__``, ``global``, etc.",
+      "If you want to understand name resolution, please read the first few chapters",
+      "in http://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/.",
+      "Flow checks",
+      "+++++++++++",
+      "Flow checks are not really mature. There's only a check for ``isinstance``.  It",
+      "would check whether a flow has the form of ``if isinstance(a, type_or_tuple)``."
+    ],
+    "imports": [
+      "from parso.python.tree import Name",
+      "from jedi import settings",
+      "from jedi.inference.arguments import TreeArguments",
+      "from jedi.inference.value import iterable",
+      "from jedi.inference.base_value import NO_VALUES",
+      "from jedi.parser_utils import is_scope"
+    ],
+    "classes": [],
+    "functions": [
+      "filter_name",
+      "_remove_del_stmt",
+      "check_flow_information",
+      "_get_isinstance_trailer_arglist",
+      "_check_isinstance_type",
+      "_get_call_string"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_004_59aa7086763eb1e4_AI_Chariot_Legacy_666_1.0.0_20260508_finder.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\core\\coreerrors.py",
+  "name": "coreerrors.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 642,
+  "content_sha256": "8a60fd4c22fe50433986b1dca8641b6df2dec9909224cc7abc1d4d0502134084",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 14,
+    "char_count": 642,
+    "preview_lines": [
+      "\"\"\"Definitions of common exceptions for :mod:`sympy.core` module. \"\"\"",
+      "from typing import Callable",
+      "class BaseCoreError(Exception):",
+      "    \"\"\"Base class for core related exceptions. \"\"\"",
+      "class NonCommutativeExpression(BaseCoreError):",
+      "    \"\"\"Raised when expression didn't have commutative property. \"\"\"",
+      "class LazyExceptionMessage:",
+      "    \"\"\"Wrapper class that lets you specify an expensive to compute",
+      "    error message that is only evaluated if the error is rendered.\"\"\"",
+      "    callback: Callable[[], str]"
+    ],
+    "imports": [
+      "from typing import Callable"
+    ],
+    "classes": [
+      "BaseCoreError",
+      "NonCommutativeExpression",
+      "LazyExceptionMessage"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_185_8a60fd4c22fe5043_coreerrors.py.json"
+}

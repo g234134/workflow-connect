@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lll.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lll.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3550,
+  "content_sha256": "a79abfadbe50bc0b87b064590333f625ffe1daf742fc17b843ada591a6315be7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 80,
+    "char_count": 3550,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from math import floor as mfloor",
+      "from sympy.polys.domains import ZZ, QQ",
+      "from sympy.polys.matrices.exceptions import DMRankError, DMShapeError, DMValueError, DMDomainError",
+      "def _ddm_lll(x, delta=QQ(3, 4), return_transform=False):",
+      "    if QQ(1, 4) >= delta or delta >= QQ(1, 1):",
+      "        raise DMValueError(\"delta must lie in range (0.25, 1)\")",
+      "    if x.shape[0] > x.shape[1]:",
+      "        raise DMShapeError(\"input matrix must have shape (m, n) with m <= n\")",
+      "    if x.domain != ZZ:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from math import floor as mfloor",
+      "from sympy.polys.domains import ZZ, QQ",
+      "from sympy.polys.matrices.exceptions import DMRankError, DMShapeError, DMValueError, DMDomainError"
+    ],
+    "classes": [],
+    "functions": [
+      "_ddm_lll",
+      "ddm_lll",
+      "ddm_lll_transform"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_259_a79abfadbe50bc0b_AI_Chariot_Legacy_666_1.0.0_20260508_lll.py.json"
+}

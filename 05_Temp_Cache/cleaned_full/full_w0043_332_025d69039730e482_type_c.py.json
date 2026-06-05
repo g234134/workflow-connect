@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 332,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\liealgebras\\type_c.py",
+  "name": "type_c.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4426,
+  "content_sha256": "025d69039730e482a3bc1cf1f4b74c391779f89657800d2468cbfc687867609d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 169,
+    "non_empty_lines": 132,
+    "char_count": 4426,
+    "preview_lines": [
+      "from .cartan_type import Standard_Cartan",
+      "from sympy.core.backend import eye",
+      "class TypeC(Standard_Cartan):",
+      "    def __new__(cls, n):",
+      "        if n < 3:",
+      "            raise ValueError(\"n cannot be less than 3\")",
+      "        return Standard_Cartan.__new__(cls, \"C\", n)",
+      "    def dimension(self):",
+      "        \"\"\"Dimension of the vector space V underlying the Lie algebra",
+      "        Examples"
+    ],
+    "imports": [
+      "from .cartan_type import Standard_Cartan",
+      "from sympy.core.backend import eye"
+    ],
+    "classes": [
+      "TypeC"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_332_025d69039730e482_type_c.py.json"
+}

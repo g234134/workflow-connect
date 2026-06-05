@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 463,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_kronecker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_kronecker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13404,
+  "content_sha256": "933087a970ed71919540f967e76d657cde6b79d3708fa2235c9c236effc39218",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 434,
+    "non_empty_lines": 352,
+    "char_count": 13404,
+    "preview_lines": [
+      "\"\"\"Implementation of the Kronecker product\"\"\"",
+      "from functools import reduce",
+      "from math import prod",
+      "from sympy.core import Mul, sympify",
+      "from sympy.functions import adjoint",
+      "from sympy.matrices.exceptions import ShapeError",
+      "from sympy.matrices.expressions.matexpr import MatrixExpr",
+      "from sympy.matrices.expressions.transpose import transpose",
+      "from sympy.matrices.expressions.special import Identity",
+      "from sympy.matrices.matrixbase import MatrixBase"
+    ],
+    "imports": [
+      "from functools import reduce",
+      "from math import prod",
+      "from sympy.core import Mul, sympify",
+      "from sympy.functions import adjoint",
+      "from sympy.matrices.exceptions import ShapeError",
+      "from sympy.matrices.expressions.matexpr import MatrixExpr",
+      "from sympy.matrices.expressions.transpose import transpose",
+      "from sympy.matrices.expressions.special import Identity",
+      "from sympy.matrices.matrixbase import MatrixBase",
+      "from sympy.strategies import (",
+      "from sympy.strategies.traverse import bottom_up",
+      "from sympy.utilities import sift",
+      "from .matadd import MatAdd",
+      "from .matmul import MatMul",
+      "from .matpow import MatPow",
+      "from .trace import trace",
+      "from .determinant import det, Determinant",
+      "from sympy.matrices.expressions.inverse import Inverse"
+    ],
+    "classes": [
+      "KroneckerProduct"
+    ],
+    "functions": [
+      "kronecker_product",
+      "validate",
+      "extract_commutative",
+      "matrix_kronecker_product",
+      "explicit_kronecker_product",
+      "_kronecker_dims_key",
+      "kronecker_mat_add",
+      "kronecker_mat_mul",
+      "kronecker_mat_pow",
+      "combine_kronecker"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_463_933087a970ed7191_AI_Chariot_Legacy_666_1.0.0_20260508_kronecker.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__cobyqa_py.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__cobyqa_py.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3043,
+  "content_sha256": "11ee94349d54ebc4d938313859ad95b13e3cb50a352223bff38076244e5159b6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 63,
+    "char_count": 3043,
+    "preview_lines": [
+      "import numpy as np",
+      "from threading import Lock",
+      "from ._optimize import _check_unknown_options",
+      "COBYQA_LOCK = Lock()",
+      "def _minimize_cobyqa(fun, x0, args=(), bounds=None, constraints=(),",
+      "                     callback=None, disp=False, maxfev=None, maxiter=None,",
+      "                     f_target=-np.inf, feasibility_tol=1e-8,",
+      "                     initial_tr_radius=1.0, final_tr_radius=1e-6, scale=False,",
+      "                     **unknown_options):",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import numpy as np",
+      "from threading import Lock",
+      "from ._optimize import _check_unknown_options",
+      "from .._lib.cobyqa import minimize  # import here to avoid circular imports"
+    ],
+    "classes": [],
+    "functions": [
+      "_minimize_cobyqa"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_293_11ee94349d54ebc4_AI_Chariot_Legacy_666_1.0.0_20260508__cobyqa_py.py.json"
+}

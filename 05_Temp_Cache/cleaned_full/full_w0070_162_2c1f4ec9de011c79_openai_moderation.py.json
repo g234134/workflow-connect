@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 162,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\langchain_openai\\middleware\\openai_moderation.py",
+  "name": "openai_moderation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15886,
+  "content_sha256": "2c1f4ec9de011c79943a7f8925a1a0094a653b3d8eff6c113962eff302ab4a0b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 484,
+    "non_empty_lines": 393,
+    "char_count": 15883,
+    "preview_lines": [
+      "\"\"\"Agent middleware that integrates OpenAI's moderation endpoint.\"\"\"",
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Sequence",
+      "from typing import TYPE_CHECKING, Any, Literal, cast",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, hook_config",
+      "from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage",
+      "from openai import AsyncOpenAI, OpenAI",
+      "from openai.types import Moderation, ModerationModel",
+      "if TYPE_CHECKING:  # pragma: no cover"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Sequence",
+      "from typing import TYPE_CHECKING, Any, Literal, cast",
+      "from langchain.agents.middleware.types import AgentMiddleware, AgentState, hook_config",
+      "from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, ToolMessage",
+      "from openai import AsyncOpenAI, OpenAI",
+      "from openai.types import Moderation, ModerationModel",
+      "from langgraph.runtime import Runtime"
+    ],
+    "classes": [
+      "OpenAIModerationError",
+      "OpenAIModerationMiddleware"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_162_2c1f4ec9de011c79_openai_moderation.py.json"
+}

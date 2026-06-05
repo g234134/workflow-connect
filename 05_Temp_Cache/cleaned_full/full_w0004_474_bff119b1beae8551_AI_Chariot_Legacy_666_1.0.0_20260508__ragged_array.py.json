@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 474,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ragged_array.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ragged_array.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17920,
+  "content_sha256": "bff119b1beae855180fa720fe0ef98930bccca578611fbc3f57e95f7acf5ea4b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 475,
+    "non_empty_lines": 377,
+    "char_count": 17920,
+    "preview_lines": [
+      "\"\"\"Provides a conversion to / from a ragged array representation of geometries.",
+      "A ragged (or \"jagged\") array is an irregular array of arrays of which each",
+      "element can have a different length. As a result, such an array cannot be",
+      "represented as a standard, rectangular nD array.",
+      "The coordinates of geometries can be represented as arrays of arrays of",
+      "coordinate pairs (possibly multiple levels of nesting, depending on the",
+      "geometry type).",
+      "Geometries, as a ragged array of coordinates, can be efficiently represented",
+      "as contiguous arrays of coordinates provided that there is another data",
+      "structure that keeps track of which range of coordinate values corresponds"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from shapely import creation, geos_version",
+      "from shapely._geometry import (",
+      "from shapely._geometry_helpers import (",
+      "from shapely.coordinates import get_coordinates",
+      "from shapely.predicates import is_empty, is_missing"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_arrays_point",
+      "_indices_to_offsets",
+      "_get_arrays_multipoint",
+      "_get_arrays_linestring",
+      "_get_arrays_multilinestring",
+      "_get_arrays_polygon",
+      "_get_arrays_multipolygon",
+      "to_ragged_array",
+      "_point_from_flatcoords",
+      "_multipoint_from_flatcoords",
+      "_linestring_from_flatcoords",
+      "_multilinestrings_from_flatcoords",
+      "_polygon_from_flatcoords",
+      "_multipolygons_from_flatcoords",
+      "from_ragged_array"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_474_bff119b1beae8551_AI_Chariot_Legacy_666_1.0.0_20260508__ragged_array.py.json"
+}

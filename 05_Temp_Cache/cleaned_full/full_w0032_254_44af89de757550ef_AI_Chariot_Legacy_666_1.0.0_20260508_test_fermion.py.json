@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_fermion.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_fermion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1636,
+  "content_sha256": "44af89de757550effd479532ac1229fea7d65fee62675e766a8c849652964887",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 43,
+    "char_count": 1636,
+    "preview_lines": [
+      "from pytest import raises",
+      "import sympy",
+      "from sympy.physics.quantum import Dagger, AntiCommutator, qapply",
+      "from sympy.physics.quantum.fermion import FermionOp",
+      "from sympy.physics.quantum.fermion import FermionFockKet, FermionFockBra",
+      "from sympy import Symbol",
+      "def test_fermionoperator():",
+      "    c = FermionOp('c')",
+      "    d = FermionOp('d')",
+      "    assert isinstance(c, FermionOp)"
+    ],
+    "imports": [
+      "from pytest import raises",
+      "import sympy",
+      "from sympy.physics.quantum import Dagger, AntiCommutator, qapply",
+      "from sympy.physics.quantum.fermion import FermionOp",
+      "from sympy.physics.quantum.fermion import FermionFockKet, FermionFockBra",
+      "from sympy import Symbol"
+    ],
+    "classes": [],
+    "functions": [
+      "test_fermionoperator",
+      "test_fermion_states",
+      "test_power"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_254_44af89de757550ef_AI_Chariot_Legacy_666_1.0.0_20260508_test_fermion.py.json"
+}

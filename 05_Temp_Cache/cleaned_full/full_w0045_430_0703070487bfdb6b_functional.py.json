@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\autograd\\functional.py",
+  "name": "functional.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 53460,
+  "content_sha256": "0703070487bfdb6b5e0aebdc9e87065ba8a41563e08dee63ebcf767246bc4495",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1182,
+    "non_empty_lines": 1034,
+    "char_count": 53460,
+    "preview_lines": [
+      "from typing import List, Tuple",
+      "import torch",
+      "from torch._vmap_internals import _vmap",
+      "from . import forward_ad as fwAD",
+      "__all__ = [\"vjp\", \"jvp\", \"jacobian\", \"hessian\", \"hvp\", \"vhp\"]",
+      "# Utility functions",
+      "def _as_tuple_nocheck(x):",
+      "    if isinstance(x, tuple):",
+      "        return x",
+      "    elif isinstance(x, list):"
+    ],
+    "imports": [
+      "from typing import List, Tuple",
+      "import torch",
+      "from torch._vmap_internals import _vmap",
+      "from . import forward_ad as fwAD"
+    ],
+    "classes": [],
+    "functions": [
+      "_as_tuple_nocheck",
+      "_as_tuple",
+      "_tuple_postprocess",
+      "_grad_preprocess",
+      "_grad_postprocess",
+      "_validate_v",
+      "_check_requires_grad",
+      "_autograd_grad",
+      "_fill_in_zeros",
+      "vjp",
+      "jvp",
+      "_construct_standard_basis_for",
+      "_jacfwd",
+      "jacobian",
+      "hessian",
+      "vhp",
+      "hvp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_430_0703070487bfdb6b_functional.py.json"
+}

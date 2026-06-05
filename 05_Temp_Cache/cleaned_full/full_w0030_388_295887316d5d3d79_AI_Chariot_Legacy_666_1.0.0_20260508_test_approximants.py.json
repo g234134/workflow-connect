@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_approximants.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_approximants.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1012,
+  "content_sha256": "295887316d5d3d79fbc5a3d886d4d0f4bfd6b4b2e4a0889ceb27c59f067c43bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 21,
+    "char_count": 1012,
+    "preview_lines": [
+      "from sympy.series import approximants",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.combinatorial.factorials import binomial",
+      "from sympy.functions.combinatorial.numbers import (fibonacci, lucas)",
+      "def test_approximants():",
+      "    x, t = symbols(\"x,t\")",
+      "    g = [lucas(k) for k in range(16)]",
+      "    assert list(approximants(g)) == (",
+      "        [2, -4/(x - 2), (5*x - 2)/(3*x - 1), (x - 2)/(x**2 + x - 1)] )",
+      "    g = [lucas(k)+fibonacci(k+2) for k in range(16)]"
+    ],
+    "imports": [
+      "from sympy.series import approximants",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.combinatorial.factorials import binomial",
+      "from sympy.functions.combinatorial.numbers import (fibonacci, lucas)"
+    ],
+    "classes": [],
+    "functions": [
+      "test_approximants"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_388_295887316d5d3d79_AI_Chariot_Legacy_666_1.0.0_20260508_test_approximants.py.json"
+}

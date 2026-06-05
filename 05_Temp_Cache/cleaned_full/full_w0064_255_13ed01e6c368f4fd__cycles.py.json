@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\viz\\_cycles.py",
+  "name": "_cycles.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15124,
+  "content_sha256": "13ed01e6c368f4fd37fa6d0dab45ca001c58f236c35b427bdfada6e660e8642c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 447,
+    "non_empty_lines": 384,
+    "char_count": 15124,
+    "preview_lines": [
+      "import gc",
+      "import sys",
+      "from typing import Any, Dict, List, NamedTuple, Optional, Tuple",
+      "import types",
+      "import weakref",
+      "import json",
+      "from tempfile import NamedTemporaryFile",
+      "import torch",
+      "from torch.cuda._memory_viz import _frames_fmt, _block_extra",
+      "import atexit"
+    ],
+    "imports": [
+      "import gc",
+      "import sys",
+      "from typing import Any, Dict, List, NamedTuple, Optional, Tuple",
+      "import types",
+      "import weakref",
+      "import json",
+      "from tempfile import NamedTemporaryFile",
+      "import torch",
+      "from torch.cuda._memory_viz import _frames_fmt, _block_extra",
+      "import atexit",
+      "import logging"
+    ],
+    "classes": [
+      "Node"
+    ],
+    "functions": [
+      "observe_garbage",
+      "_get_cell_type",
+      "annotated_references",
+      "object_annotation",
+      "create_graph",
+      "escape",
+      "is_cuda_tensor",
+      "cuda_allocation_context",
+      "to_dot",
+      "to_html",
+      "observe_tensor_cycles",
+      "warn_tensor_cycles"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_255_13ed01e6c368f4fd__cycles.py.json"
+}

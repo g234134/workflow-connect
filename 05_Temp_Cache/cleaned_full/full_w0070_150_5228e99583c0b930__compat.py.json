@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\langchain_openai\\chat_models\\_compat.py",
+  "name": "_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20434,
+  "content_sha256": "5228e99583c0b930fcaa299a2f1666209a80c8371b2faa8c56d1ebee099555cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 499,
+    "non_empty_lines": 440,
+    "char_count": 20427,
+    "preview_lines": [
+      "\"\"\"Converts between AIMessage output formats, governed by `output_version`.",
+      "`output_version` is an attribute on ChatOpenAI.",
+      "Supported values are `None`, `'v0'`, and `'responses/v1'`.",
+      "`'v0'` corresponds to the format as of `ChatOpenAI` v0.3. For the Responses API, it",
+      "stores reasoning and tool outputs in `AIMessage.additional_kwargs`:",
+      "```python",
+      "AIMessage(",
+      "    content=[",
+      "        {\"type\": \"text\", \"text\": \"Hello, world!\", \"annotations\": [{\"type\": \"foo\"}]}",
+      "    ],"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from collections.abc import Iterable, Iterator",
+      "from typing import Any, cast",
+      "from langchain_core.messages import AIMessage, is_data_content_block",
+      "from langchain_core.messages import content as types"
+    ],
+    "classes": [],
+    "functions": [
+      "_convert_to_v03_ai_message",
+      "_convert_from_v1_to_chat_completions",
+      "_convert_annotation_from_v1",
+      "_implode_reasoning_blocks",
+      "_consolidate_calls",
+      "_convert_from_v1_to_responses"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_150_5228e99583c0b930__compat.py.json"
+}

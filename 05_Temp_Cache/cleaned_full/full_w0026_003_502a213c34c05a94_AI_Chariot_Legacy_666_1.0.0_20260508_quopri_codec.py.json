@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_quopri_codec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_quopri_codec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1525,
+  "content_sha256": "502a213c34c05a94ed063ee03f47680bd6efbb35036e06fb4dc809bf398cfa64",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 45,
+    "char_count": 1525,
+    "preview_lines": [
+      "\"\"\"Codec for quoted-printable encoding.",
+      "This codec de/encodes from bytes to bytes.",
+      "\"\"\"",
+      "import codecs",
+      "import quopri",
+      "from io import BytesIO",
+      "def quopri_encode(input, errors='strict'):",
+      "    assert errors == 'strict'",
+      "    f = BytesIO(input)",
+      "    g = BytesIO()"
+    ],
+    "imports": [
+      "import codecs",
+      "import quopri",
+      "from io import BytesIO"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamWriter",
+      "StreamReader"
+    ],
+    "functions": [
+      "quopri_encode",
+      "quopri_decode",
+      "getregentry"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_003_502a213c34c05a94_AI_Chariot_Legacy_666_1.0.0_20260508_quopri_codec.py.json"
+}

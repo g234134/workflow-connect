@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 491,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\anthropic\\tests\\integration_tests\\test_llms.py",
+  "name": "test_llms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2545,
+  "content_sha256": "9a2f72b0eda1ea353e4dcd1832a7755e130e4a709694e7937c63a467b977e10a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 58,
+    "char_count": 2542,
+    "preview_lines": [
+      "\"\"\"Test Anthropic API wrapper.\"\"\"",
+      "from collections.abc import Generator",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.outputs import LLMResult",
+      "from langchain_anthropic import AnthropicLLM",
+      "from tests.unit_tests._utils import FakeCallbackHandler",
+      "MODEL = \"claude-sonnet-4-5-20250929\"",
+      "@pytest.mark.requires(\"anthropic\")",
+      "def test_anthropic_model_name_param() -> None:"
+    ],
+    "imports": [
+      "from collections.abc import Generator",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.outputs import LLMResult",
+      "from langchain_anthropic import AnthropicLLM",
+      "from tests.unit_tests._utils import FakeCallbackHandler"
+    ],
+    "classes": [],
+    "functions": [
+      "test_anthropic_model_name_param",
+      "test_anthropic_model_param",
+      "test_anthropic_call",
+      "test_anthropic_streaming",
+      "test_anthropic_streaming_callback"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_491_9a2f72b0eda1ea35_test_llms.py.json"
+}

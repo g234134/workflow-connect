@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 467,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fileinput.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fileinput.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15714,
+  "content_sha256": "b0cd2a3f01c96f594b6038e52bd83d489bfa081cc757103c70aab4e5b2c4fe1f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 442,
+    "non_empty_lines": 384,
+    "char_count": 15714,
+    "preview_lines": [
+      "\"\"\"Helper class to quickly write a loop over all standard input files.",
+      "Typical use is:",
+      "    import fileinput",
+      "    for line in fileinput.input(encoding=\"utf-8\"):",
+      "        process(line)",
+      "This iterates over the lines of all files listed in sys.argv[1:],",
+      "defaulting to sys.stdin if the list is empty.  If a filename is '-' it",
+      "is also replaced by sys.stdin and the optional arguments mode and",
+      "openhook are ignored.  To specify an alternative list of filenames,",
+      "pass it as the argument to input().  A single file name is also allowed."
+    ],
+    "imports": [
+      "import fileinput",
+      "import io",
+      "import sys, os",
+      "from types import GenericAlias"
+    ],
+    "classes": [
+      "FileInput"
+    ],
+    "functions": [
+      "input",
+      "close",
+      "nextfile",
+      "filename",
+      "lineno",
+      "filelineno",
+      "fileno",
+      "isfirstline",
+      "isstdin",
+      "hook_compressed",
+      "hook_encoded",
+      "_test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_467_b0cd2a3f01c96f59_AI_Chariot_Legacy_666_1.0.0_20260508_fileinput.py.json"
+}

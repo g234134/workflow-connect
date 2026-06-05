@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 294,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\test_globals.py",
+  "name": "test_globals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1075,
+  "content_sha256": "3c482454d2908dd6bbe1375eb5b9e290fd5dfbbc953bcfa24217c67e52d2857a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 23,
+    "char_count": 1072,
+    "preview_lines": [
+      "import langchain_core",
+      "from langchain_core.callbacks.manager import _get_debug",
+      "from langchain_core.globals import get_debug, set_debug",
+      "def test_debug_is_settable_via_setter() -> None:",
+      "    previous_value = langchain_core.globals._debug",
+      "    previous_fn_reading = _get_debug()",
+      "    assert previous_value == previous_fn_reading",
+      "    # Flip the value of the flag.",
+      "    set_debug(not previous_value)",
+      "    new_value = langchain_core.globals._debug"
+    ],
+    "imports": [
+      "import langchain_core",
+      "from langchain_core.callbacks.manager import _get_debug",
+      "from langchain_core.globals import get_debug, set_debug"
+    ],
+    "classes": [],
+    "functions": [
+      "test_debug_is_settable_via_setter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_294_3c482454d2908dd6_test_globals.py.json"
+}

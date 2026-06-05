@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 228,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\rpc\\functions.py",
+  "name": "functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7409,
+  "content_sha256": "682632cff15fc17f96ee5ebea734d83c74fa778297709b5d59726fa620debe9f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 154,
+    "char_count": 7409,
+    "preview_lines": [
+      "import functools",
+      "def async_execution(fn):",
+      "    r\"\"\"",
+      "    A decorator for a function indicating that the return value of the function",
+      "    is guaranteed to be a :class:`~torch.futures.Future` object and this",
+      "    function can run asynchronously on the RPC callee. More specifically, the",
+      "    callee extracts the :class:`~torch.futures.Future` returned by the wrapped",
+      "    function and installs subsequent processing steps as a callback to that",
+      "    :class:`~torch.futures.Future`. The installed callback will read the value",
+      "    from the :class:`~torch.futures.Future` when completed and send the"
+    ],
+    "imports": [
+      "import functools",
+      "from the :class:`~torch.futures.Future` when completed and send the"
+    ],
+    "classes": [],
+    "functions": [
+      "async_execution"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_228_682632cff15fc17f_functions.py.json"
+}

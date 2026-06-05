@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_enable_iterative_imputer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_enable_iterative_imputer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1740,
+  "content_sha256": "77bf84b9d57e71abd7f1f27b9d63d47e354497cf619b48272e9b292b46627236",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 41,
+    "char_count": 1740,
+    "preview_lines": [
+      "\"\"\"Tests for making sure experimental imports work as expected.\"\"\"",
+      "import textwrap",
+      "import pytest",
+      "from sklearn.utils._testing import assert_run_python_script_without_output",
+      "from sklearn.utils.fixes import _IS_WASM",
+      "@pytest.mark.xfail(_IS_WASM, reason=\"cannot start subprocess\")",
+      "def test_imports_strategies():",
+      "    # Make sure different import strategies work or fail as expected.",
+      "    # Since Python caches the imported modules, we need to run a child process",
+      "    # for every test case. Else, the tests would not be independent"
+    ],
+    "imports": [
+      "import textwrap",
+      "import pytest",
+      "from sklearn.utils._testing import assert_run_python_script_without_output",
+      "from sklearn.utils.fixes import _IS_WASM",
+      "from sklearn.experimental import enable_iterative_imputer",
+      "from sklearn.impute import IterativeImputer",
+      "import sklearn.ensemble",
+      "from sklearn.experimental import enable_iterative_imputer",
+      "from sklearn.impute import IterativeImputer",
+      "import pytest",
+      "from sklearn.impute import IterativeImputer",
+      "import sklearn.experimental",
+      "from sklearn.impute import IterativeImputer"
+    ],
+    "classes": [],
+    "functions": [
+      "test_imports_strategies"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_157_77bf84b9d57e71ab_AI_Chariot_Legacy_666_1.0.0_20260508_test_enable_iterative_imputer.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 444,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\backends\\cudnn\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6737,
+  "content_sha256": "4cb88da94c4af5bc149ff560a3bbb54e56c2f1292812066089840d04da6cca12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 205,
+    "non_empty_lines": 175,
+    "char_count": 6737,
+    "preview_lines": [
+      "import os",
+      "import sys",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "import torch",
+      "from torch.backends import __allow_nonbracketed_mutation, ContextProp, PropModule",
+      "try:",
+      "    from torch._C import _cudnn",
+      "except ImportError:",
+      "    _cudnn = None  # type: ignore[assignment]"
+    ],
+    "imports": [
+      "import os",
+      "import sys",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "import torch",
+      "from torch.backends import __allow_nonbracketed_mutation, ContextProp, PropModule",
+      "from torch._C import _cudnn"
+    ],
+    "classes": [
+      "CudnnModule"
+    ],
+    "functions": [
+      "version",
+      "is_available",
+      "is_acceptable",
+      "set_flags",
+      "flags"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_444_4cb88da94c4af5bc___init__.py.json"
+}

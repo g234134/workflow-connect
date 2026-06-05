@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 110,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\checkpoint\\utils.py",
+  "name": "utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13201,
+  "content_sha256": "fd09c04d42fc0e02dd822848bc7b2da7e931615fe0c9aeda326ffac935111267",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 400,
+    "non_empty_lines": 336,
+    "char_count": 13201,
+    "preview_lines": [
+      "import os",
+      "import io",
+      "import itertools",
+      "from typing import (",
+      "    List,",
+      "    Callable,",
+      "    Optional,",
+      "    Union,",
+      "    TypeVar,",
+      "    Dict,"
+    ],
+    "imports": [
+      "import os",
+      "import io",
+      "import itertools",
+      "from typing import (",
+      "import torch.distributed as dist",
+      "from .api import (",
+      "import torch",
+      "from torch.distributed._shard.sharded_tensor import (",
+      "from torch.distributed._shard.sharded_tensor.shard import Shard",
+      "from torch.distributed._tensor import DTensor",
+      "from .metadata import ("
+    ],
+    "classes": [
+      "_DistWrapper",
+      "_ReaderView"
+    ],
+    "functions": [
+      "_get_failure_dict",
+      "_all_gather_keys",
+      "_find_shard",
+      "find_tensor_shard",
+      "find_state_dict_object",
+      "_element_wise_add",
+      "_element_wise_sub",
+      "_create_file_view",
+      "_normalize_device_info"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_110_fd09c04d42fc0e02_utils.py.json"
+}

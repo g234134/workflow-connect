@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_numba_.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_numba_.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4923,
+  "content_sha256": "dc3953e4354b442d29ca7917bbafa7953e461a2f200ecee3304a8bb190713ba7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 151,
+    "char_count": 4923,
+    "preview_lines": [
+      "\"\"\"Common utilities for Numba operations with groupby ops\"\"\"",
+      "from __future__ import annotations",
+      "import functools",
+      "import inspect",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      ")",
+      "import numpy as np",
+      "from pandas.compat._optional import import_optional_dependency"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import functools",
+      "import inspect",
+      "from typing import (",
+      "import numpy as np",
+      "from pandas.compat._optional import import_optional_dependency",
+      "from pandas.core.util.numba_ import (",
+      "from collections.abc import Callable",
+      "from pandas._typing import Scalar",
+      "import numba",
+      "import numba"
+    ],
+    "classes": [],
+    "functions": [
+      "validate_udf",
+      "generate_numba_agg_func",
+      "generate_numba_transform_func"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_488_dc3953e4354b442d_AI_Chariot_Legacy_666_1.0.0_20260508_numba_.py.json"
+}

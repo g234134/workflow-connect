@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 274,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__stats_mstats_common.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__stats_mstats_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11860,
+  "content_sha256": "bb30f68b68628145fcfb07bbb0c049d512c6b8841e27414c825c2f3a6d1ddac3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 253,
+    "char_count": 11860,
+    "preview_lines": [
+      "import warnings",
+      "import numpy as np",
+      "from . import distributions",
+      "from .._lib._bunch import _make_tuple_bunch",
+      "from ._stats_pythran import siegelslopes as siegelslopes_pythran",
+      "__all__ = ['_find_repeats', 'theilslopes', 'siegelslopes']",
+      "# This is not a namedtuple for backwards compatibility. See PR #12983",
+      "TheilslopesResult = _make_tuple_bunch('TheilslopesResult',",
+      "                                      ['slope', 'intercept',",
+      "                                       'low_slope', 'high_slope'])"
+    ],
+    "imports": [
+      "import warnings",
+      "import numpy as np",
+      "from . import distributions",
+      "from .._lib._bunch import _make_tuple_bunch",
+      "from ._stats_pythran import siegelslopes as siegelslopes_pythran"
+    ],
+    "classes": [],
+    "functions": [
+      "theilslopes",
+      "_find_repeats",
+      "siegelslopes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_274_bb30f68b68628145_AI_Chariot_Legacy_666_1.0.0_20260508__stats_mstats_common.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 443,
+  "generated_at": "2026-05-08T18:44:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__pytest_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__pytest_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 354,
+  "content_sha256": "3518fdd274dc1314bef11d8ff0cd70626f6ca1d86b4e5abbe1149de19be34111",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 11,
+    "char_count": 354,
+    "preview_lines": [
+      "import sys",
+      "def is_pytest_compatible() -> bool:",
+      "    \"\"\" returns true if executing can be used for expressions inside assert statements which are rewritten by pytest",
+      "    \"\"\"",
+      "    if sys.version_info < (3, 11):",
+      "        return False",
+      "    try:",
+      "        import pytest",
+      "    except ImportError:",
+      "        return False"
+    ],
+    "imports": [
+      "import sys",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "is_pytest_compatible"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_443_3518fdd274dc1314_AI_Chariot_Legacy_666_1.0.0_20260508__pytest_utils.py.json"
+}

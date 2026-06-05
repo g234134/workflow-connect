@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 258,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_api.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 891,
+  "content_sha256": "bf02701a7d5f0b86cf480f8e6d48d356bb009e217fa60d354ab618ab70fbf624",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 17,
+    "char_count": 891,
+    "preview_lines": [
+      "from .._pickle_api import pickle_dumps, pickle_loads",
+      "def test_pickle_dumps():",
+      "    data = {\"hello\": \"world\", \"test\": 123}",
+      "    expected = [",
+      "        b\"\\x80\\x04\\x95\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00}\\x94(\\x8c\\x05hello\\x94\\x8c\\x05world\\x94\\x8c\\x04test\\x94K{u.\",",
+      "        b\"\\x80\\x04\\x95\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00}\\x94(\\x8c\\x04test\\x94K{\\x8c\\x05hello\\x94\\x8c\\x05world\\x94u.\",",
+      "        b\"\\x80\\x02}q\\x00(X\\x04\\x00\\x00\\x00testq\\x01K{X\\x05\\x00\\x00\\x00helloq\\x02X\\x05\\x00\\x00\\x00worldq\\x03u.\",",
+      "        b\"\\x80\\x05\\x95\\x1e\\x00\\x00\\x00\\x00\\x00\\x00\\x00}\\x94(\\x8c\\x05hello\\x94\\x8c\\x05world\\x94\\x8c\\x04test\\x94K{u.\",",
+      "    ]",
+      "    msg = pickle_dumps(data)"
+    ],
+    "imports": [
+      "from .._pickle_api import pickle_dumps, pickle_loads"
+    ],
+    "classes": [],
+    "functions": [
+      "test_pickle_dumps",
+      "test_pickle_loads"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_258_bf02701a7d5f0b86_AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle_api.py.json"
+}

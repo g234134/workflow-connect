@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 68,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:48:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\runnables\\openai_functions.py",
+  "name": "openai_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2022,
+  "content_sha256": "1010abf3e24ebfd5c5a20b73c5b5ac7b62c09b0e9a88a0ebd36c0e378963c486",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 45,
+    "char_count": 2019,
+    "preview_lines": [
+      "from collections.abc import Callable, Mapping",
+      "from operator import itemgetter",
+      "from typing import Any",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.output_parsers.openai_functions import JsonOutputFunctionsParser",
+      "from langchain_core.runnables import RouterRunnable, Runnable",
+      "from langchain_core.runnables.base import RunnableBindingBase",
+      "from typing_extensions import TypedDict",
+      "class OpenAIFunction(TypedDict):",
+      "    \"\"\"A function description for `ChatOpenAI`.\"\"\""
+    ],
+    "imports": [
+      "from collections.abc import Callable, Mapping",
+      "from operator import itemgetter",
+      "from typing import Any",
+      "from langchain_core.messages import BaseMessage",
+      "from langchain_core.output_parsers.openai_functions import JsonOutputFunctionsParser",
+      "from langchain_core.runnables import RouterRunnable, Runnable",
+      "from langchain_core.runnables.base import RunnableBindingBase",
+      "from typing_extensions import TypedDict"
+    ],
+    "classes": [
+      "OpenAIFunction",
+      "OpenAIFunctionsRouter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0068_237_1010abf3e24ebfd5_openai_functions.py.json"
+}

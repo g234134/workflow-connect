@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 139,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_torchbind_impls.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_torchbind_impls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3963,
+  "content_sha256": "a0b9b1bb0ce72d0a47a4a99af13be67836b09ed789ffeca128816394018e4416",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 133,
+    "non_empty_lines": 101,
+    "char_count": 3963,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "from typing import Optional",
+      "import torch",
+      "_TORCHBIND_IMPLS_INITIALIZED = False",
+      "_TENSOR_QUEUE_GLOBAL_TEST: Optional[torch.ScriptObject] = None",
+      "def init_torchbind_implementations():",
+      "    global _TORCHBIND_IMPLS_INITIALIZED",
+      "    global _TENSOR_QUEUE_GLOBAL_TEST",
+      "    if _TORCHBIND_IMPLS_INITIALIZED:"
+    ],
+    "imports": [
+      "import contextlib",
+      "from typing import Optional",
+      "import torch",
+      "import unittest",
+      "from torch.testing._internal.common_utils import (  # type: ignore[attr-defined]"
+    ],
+    "classes": [],
+    "functions": [
+      "init_torchbind_implementations",
+      "_empty_tensor_queue",
+      "register_fake_operators",
+      "register_fake_classes",
+      "load_torchbind_test_lib",
+      "_register_py_impl_temporarily"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_139_a0b9b1bb0ce72d0a_AI_Chariot_Legacy_666_1.0.0_20260508_torchbind_impls.py.json"
+}

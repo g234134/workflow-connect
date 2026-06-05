@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9551,
+  "content_sha256": "a437e41ecc438672b54cf19320215ec9970d44faaa7a3b7645e7e803ee9960c2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 256,
+    "non_empty_lines": 209,
+    "char_count": 9539,
+    "preview_lines": [
+      "# This is a websocket interpreter, TTS and STT disabled.",
+      "# It makes a websocket on a port that sends/receives LMC messages in *streaming* format.",
+      "### You MUST send a start and end flag with each message! For example: ###",
+      "\"\"\"",
+      "{\"role\": \"user\", \"type\": \"message\", \"start\": True})",
+      "{\"role\": \"user\", \"type\": \"message\", \"content\": \"hi\"})",
+      "{\"role\": \"user\", \"type\": \"message\", \"end\": True})",
+      "\"\"\"",
+      "import asyncio",
+      "import json"
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "import time",
+      "import traceback",
+      "from typing import Any, Dict, List",
+      "from fastapi import FastAPI, Header, WebSocket",
+      "from fastapi.middleware.cors import CORSMiddleware",
+      "from pydantic import BaseModel",
+      "from uvicorn import Config, Server"
+    ],
+    "classes": [
+      "Settings",
+      "AsyncInterpreter"
+    ],
+    "functions": [
+      "server"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_028_a437e41ecc438672_AI_Chariot_Legacy_666_1.0.0_20260508_archived_server_2.py.json"
+}

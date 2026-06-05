@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 486,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7007,
+  "content_sha256": "e719444ab40e11c15676bd220773a2a49b40ebe473ae253762ad8e40680fd0ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 160,
+    "char_count": 7007,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import (",
+      "    Index,",
+      "    MultiIndex,",
+      ")",
+      "def test_is_monotonic_increasing_lexsorted(lexsorted_two_level_string_multiindex):",
+      "    # string ordering",
+      "    mi = lexsorted_two_level_string_multiindex",
+      "    assert mi.is_monotonic_increasing is False"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from pandas import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_monotonic_increasing_lexsorted",
+      "test_is_monotonic_increasing",
+      "test_is_monotonic_decreasing",
+      "test_is_strictly_monotonic_increasing",
+      "test_is_strictly_monotonic_decreasing",
+      "test_is_monotonic_with_nans"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_486_e719444ab40e11c1_AI_Chariot_Legacy_666_1.0.0_20260508_test_monotonic.py.json"
+}

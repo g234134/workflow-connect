@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 457,
+  "generated_at": "2026-05-08T18:45:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_partitioner_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_partitioner_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12715,
+  "content_sha256": "e33db578b1fcbb6c17a69ab08ae8b488610968a869b33de1926931fe8c67c3b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 318,
+    "non_empty_lines": 284,
+    "char_count": 12715,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from enum import Enum",
+      "from typing import NamedTuple, Dict, List, Set",
+      "from torch.fx.node import Node, map_arg",
+      "class Partition:",
+      "    \"\"\"Partition class contains all the information about an individual partition.",
+      "    It also provides necessary methods for manipulation the partition.",
+      "    \"\"\"",
+      "    def __init__(self, partition_id: int) -> None:",
+      "        self.nodes: Set[Node] = set()"
+    ],
+    "imports": [
+      "from enum import Enum",
+      "from typing import NamedTuple, Dict, List, Set",
+      "from torch.fx.node import Node, map_arg"
+    ],
+    "classes": [
+      "Partition",
+      "Device",
+      "NodeLatency",
+      "PartitionLatency",
+      "PartitionMode",
+      "PartitionerConfig"
+    ],
+    "functions": [
+      "get_extra_size_of",
+      "get_latency_of_one_partition",
+      "get_partition_to_latency_mapping",
+      "get_comm_latency_between",
+      "get_latency_of_partitioned_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_457_e33db578b1fcbb6c_AI_Chariot_Legacy_666_1.0.0_20260508_partitioner_utils.py.json"
+}

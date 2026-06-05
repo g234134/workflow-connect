@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_arpack.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_arpack.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 68869,
+  "content_sha256": "2e330fdb7971add4b9ba949626b25427fae74607eee401b1f3ef9cd1c3f18c12",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1700,
+    "non_empty_lines": 1467,
+    "char_count": 68869,
+    "preview_lines": [
+      "\"\"\"",
+      "Find a few eigenvectors and eigenvalues of a matrix.",
+      "Uses ARPACK: https://github.com/opencollab/arpack-ng",
+      "\"\"\"",
+      "# Wrapper implementation notes",
+      "#",
+      "# ARPACK Entry Points",
+      "# -------------------",
+      "# The entry points to ARPACK are",
+      "# - (s,d)seupd : single and double precision symmetric matrix"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import warnings",
+      "from scipy.sparse.linalg._interface import aslinearoperator, LinearOperator",
+      "from scipy.sparse import eye, issparse",
+      "from scipy.linalg import eig, eigh, lu_factor, lu_solve",
+      "from scipy.sparse._sputils import (",
+      "from scipy.sparse.linalg import gmres, splu",
+      "from scipy._lib._util import _aligned_zeros",
+      "from scipy._lib._threadsafety import ReentrancyLock",
+      "from . import _arpack"
+    ],
+    "classes": [
+      "ArpackError",
+      "ArpackNoConvergence",
+      "_ArpackParams",
+      "_SymmetricArpackParams",
+      "_UnsymmetricArpackParams",
+      "SpLuInv",
+      "LuInv",
+      "IterInv",
+      "IterOpInv"
+    ],
+    "functions": [
+      "choose_ncv",
+      "gmres_loose",
+      "_fast_spmatrix_to_csc",
+      "get_inv_matvec",
+      "get_OPinv_matvec",
+      "eigs",
+      "eigsh"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_058_2e330fdb7971add4_AI_Chariot_Legacy_666_1.0.0_20260508_arpack.py.json"
+}

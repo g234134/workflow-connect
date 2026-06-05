@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 363,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reorderGlyphs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reorderGlyphs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10656,
+  "content_sha256": "3c01efa21e32377bbefda0c0087f07d517ac54c0a6544ecaa79fe620a006d132",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 285,
+    "non_empty_lines": 236,
+    "char_count": 10656,
+    "preview_lines": [
+      "\"\"\"Reorder glyphs in a font.\"\"\"",
+      "__author__ = \"Rod Sheeter\"",
+      "# See https://docs.google.com/document/d/1h9O-C_ndods87uY0QeIIcgAMiX2gDTpvO_IhMJsKAqs/",
+      "# for details.",
+      "from fontTools import ttLib",
+      "from fontTools.ttLib.tables import otBase",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from collections import deque"
+    ],
+    "imports": [
+      "from fontTools import ttLib",
+      "from fontTools.ttLib.tables import otBase",
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from abc import ABC, abstractmethod",
+      "from dataclasses import dataclass",
+      "from collections import deque",
+      "from typing import ("
+    ],
+    "classes": [
+      "ReorderRule",
+      "ReorderCoverage",
+      "ReorderList"
+    ],
+    "functions": [
+      "_sort_by_gid",
+      "_get_dotted_attr",
+      "_bfs_base_table",
+      "_traverse_ot_data",
+      "reorderGlyphs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_363_3c01efa21e32377b_AI_Chariot_Legacy_666_1.0.0_20260508_reorderGlyphs.py.json"
+}

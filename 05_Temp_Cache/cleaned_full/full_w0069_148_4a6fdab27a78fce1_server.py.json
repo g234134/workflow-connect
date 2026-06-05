@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\mock_servers\\robot\\server.py",
+  "name": "server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6095,
+  "content_sha256": "4a6fdab27a78fce1ef0aa9eb80c95144780b8f58d3bae90f72caf3b40c010fee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 206,
+    "non_empty_lines": 162,
+    "char_count": 6092,
+    "preview_lines": [
+      "\"\"\"A mock Robot server.\"\"\"",
+      "from enum import Enum",
+      "from typing import Annotated, Any",
+      "from uuid import uuid4",
+      "import uvicorn",
+      "from fastapi import FastAPI, HTTPException, Query",
+      "from fastapi.middleware.cors import CORSMiddleware",
+      "from fastapi.openapi.utils import get_openapi",
+      "from pydantic import BaseModel, Field",
+      "PORT = 7289"
+    ],
+    "imports": [
+      "from enum import Enum",
+      "from typing import Annotated, Any",
+      "from uuid import uuid4",
+      "import uvicorn",
+      "from fastapi import FastAPI, HTTPException, Query",
+      "from fastapi.middleware.cors import CORSMiddleware",
+      "from fastapi.openapi.utils import get_openapi",
+      "from pydantic import BaseModel, Field"
+    ],
+    "classes": [
+      "StateItems",
+      "Direction",
+      "Style",
+      "Cautiousness",
+      "WalkInput",
+      "PublicCues",
+      "SecretPassPhrase"
+    ],
+    "functions": [
+      "custom_openapi"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_148_4a6fdab27a78fce1_server.py.json"
+}

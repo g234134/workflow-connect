@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 130,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_glue_catalog.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_glue_catalog.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4459,
+  "content_sha256": "c5857e205dc7d00b81d86a7100caf8b3ea358e3fab941d44fc78fcab64643803",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 104,
+    "char_count": 4459,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Dict, Iterator, List, Optional",
+      "from langchain_core.documents import Document",
+      "from langchain_community.document_loaders.base import BaseLoader",
+      "if TYPE_CHECKING:",
+      "    from boto3.session import Session",
+      "class GlueCatalogLoader(BaseLoader):",
+      "    \"\"\"Load table schemas from AWS Glue.",
+      "    This loader fetches the schema of each table within a specified AWS Glue database.",
+      "    The schema details include column names and their data types, similar to pandas"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any, Dict, Iterator, List, Optional",
+      "from langchain_core.documents import Document",
+      "from langchain_community.document_loaders.base import BaseLoader",
+      "from boto3.session import Session",
+      "import boto3"
+    ],
+    "classes": [
+      "GlueCatalogLoader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_130_c5857e205dc7d00b_AI_Chariot_Legacy_666_1.0.0_20260508_glue_catalog.py.json"
+}

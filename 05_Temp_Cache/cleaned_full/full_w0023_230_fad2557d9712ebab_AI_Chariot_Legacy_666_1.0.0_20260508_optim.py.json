@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 230,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_optim.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_optim.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 46715,
+  "content_sha256": "fad2557d9712ebabdf418ae2dbddc4e01c7bd7456a613f8dd346d837abe9a3d2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1203,
+    "non_empty_lines": 1091,
+    "char_count": 46715,
+    "preview_lines": [
+      "import inspect",
+      "import numpy as np",
+      "from scipy.linalg import qr",
+      "from ..utils import get_arrays_tol",
+      "TINY = np.finfo(float).tiny",
+      "EPS = np.finfo(float).eps",
+      "def tangential_byrd_omojokun(grad, hess_prod, xl, xu, delta, debug, **kwargs):",
+      "    r\"\"\"",
+      "    Minimize approximately a quadratic function subject to bound constraints in",
+      "    a trust region."
+    ],
+    "imports": [
+      "import inspect",
+      "import numpy as np",
+      "from scipy.linalg import qr",
+      "from ..utils import get_arrays_tol"
+    ],
+    "classes": [],
+    "functions": [
+      "tangential_byrd_omojokun",
+      "constrained_tangential_byrd_omojokun",
+      "normal_byrd_omojokun",
+      "qr_tangential_byrd_omojokun",
+      "qr_normal_byrd_omojokun",
+      "_alpha_tr",
+      "_argmax",
+      "_argmin"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_230_fad2557d9712ebab_AI_Chariot_Legacy_666_1.0.0_20260508_optim.py.json"
+}

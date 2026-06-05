@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:46:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tiktoken.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tiktoken.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1993,
+  "content_sha256": "1b7b5502c00d5f45b2bc3c7868d29aacf07b97d44d849d6086f23b8b9729dea4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 42,
+    "char_count": 1993,
+    "preview_lines": [
+      "from pathlib import Path",
+      "from typing import Any",
+      "from transformers.convert_slow_tokenizer import TikTokenConverter",
+      "from transformers.tokenization_utils_tokenizers import TIKTOKEN_VOCAB_FILE, TOKENIZER_FILE",
+      "def convert_tiktoken_to_fast(encoding: Any, output_dir: str):",
+      "    \"\"\"",
+      "    Converts given `tiktoken` encoding to `PretrainedTokenizerFast` and saves the configuration of converted tokenizer",
+      "    on disk.",
+      "    Args:",
+      "        encoding (`str` or `tiktoken.Encoding`):"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "from typing import Any",
+      "from transformers.convert_slow_tokenizer import TikTokenConverter",
+      "from transformers.tokenization_utils_tokenizers import TIKTOKEN_VOCAB_FILE, TOKENIZER_FILE",
+      "from tiktoken import get_encoding",
+      "from tiktoken.load import dump_tiktoken_bpe"
+    ],
+    "classes": [],
+    "functions": [
+      "convert_tiktoken_to_fast"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_366_1b7b5502c00d5f45_AI_Chariot_Legacy_666_1.0.0_20260508_tiktoken.py.json"
+}

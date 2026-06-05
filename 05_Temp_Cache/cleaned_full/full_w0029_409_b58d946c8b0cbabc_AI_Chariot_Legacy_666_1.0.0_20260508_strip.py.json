@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 409,
+  "generated_at": "2026-05-08T18:46:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_strip.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_strip.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26717,
+  "content_sha256": "b58d946c8b0cbabc879bb2f4d3c6d191a6f7667fe6d04338e9f6e4345379525f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 817,
+    "non_empty_lines": 690,
+    "char_count": 26717,
+    "preview_lines": [
+      "\"\"\"",
+      "This module contains the `Strip` class and related objects.",
+      "A `Strip` contains the result of rendering a widget.",
+      "See [Line API](/guide/widgets#line-api) for how to use Strips.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from typing import Any, Iterable, Iterator, Sequence",
+      "import rich.repr",
+      "from rich.cells import cell_len, set_cell_size"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from typing import Any, Iterable, Iterator, Sequence",
+      "import rich.repr",
+      "from rich.cells import cell_len, set_cell_size",
+      "from rich.color import ColorSystem",
+      "from rich.console import Console, ConsoleOptions, RenderResult",
+      "from rich.measure import Measurement",
+      "from rich.segment import Segment",
+      "from rich.style import Style, StyleType",
+      "from textual._segment_tools import index_to_cell_position, line_pad",
+      "from textual.cache import FIFOCache",
+      "from textual.color import Color",
+      "from textual.css.types import AlignHorizontal, AlignVertical",
+      "from textual.filter import LineFilter"
+    ],
+    "classes": [
+      "StripRenderable",
+      "Strip"
+    ],
+    "functions": [
+      "get_line_length"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_409_b58d946c8b0cbabc_AI_Chariot_Legacy_666_1.0.0_20260508_strip.py.json"
+}

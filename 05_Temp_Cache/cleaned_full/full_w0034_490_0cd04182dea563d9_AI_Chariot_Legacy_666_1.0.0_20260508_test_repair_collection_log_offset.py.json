@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 490,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_repair_collection_log_offset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_repair_collection_log_offset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2665,
+  "content_sha256": "0cd04182dea563d914388c5aa0f26a36653c3939f7347a3dbab6531ef7e63ba8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 73,
+    "non_empty_lines": 60,
+    "char_count": 2665,
+    "preview_lines": [
+      "# Add some records, wait for compaction, then roll back the log offset.",
+      "# Poll the log for up to 30s to see if the offset gets repaired.",
+      "import grpc",
+      "import random",
+      "import time",
+      "from typing import cast, List, Any, Dict",
+      "import numpy as np",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.proto.logservice_pb2 import InspectLogStateRequest, UpdateCollectionLogOffsetRequest",
+      "from chromadb.proto.logservice_pb2_grpc import LogServiceStub"
+    ],
+    "imports": [
+      "import grpc",
+      "import random",
+      "import time",
+      "from typing import cast, List, Any, Dict",
+      "import numpy as np",
+      "from chromadb.api import ClientAPI",
+      "from chromadb.proto.logservice_pb2 import InspectLogStateRequest, UpdateCollectionLogOffsetRequest",
+      "from chromadb.proto.logservice_pb2_grpc import LogServiceStub",
+      "from chromadb.test.conftest import (",
+      "from chromadb.test.utils.wait_for_version_increase import wait_for_version_increase"
+    ],
+    "classes": [],
+    "functions": [
+      "test_repair_collection_log_offset"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_490_0cd04182dea563d9_AI_Chariot_Legacy_666_1.0.0_20260508_test_repair_collection_log_offset.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\cpu\\LogAddExp.h",
+  "name": "LogAddExp.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2519,
+  "content_sha256": "324dd222a9bffbc573fef9d483160ea8f34850cbc0b5414a6ab93270af3827ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 54,
+    "char_count": 2519,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/complex.h>",
+      "#include <ATen/NumericUtils.h>",
+      "namespace at { namespace native {",
+      "inline namespace CPU_CAPABILITY {",
+      "// custom min and max to be used in logcumsumexp for complex arguments",
+      "template <typename scalar_t>",
+      "std::pair<c10::complex<scalar_t>, c10::complex<scalar_t>> _logcumsumexp_minmax(c10::complex<scalar_t> x, c10::complex<scalar_t> y) {",
+      "  if (at::_isnan(y)) {  // either real is nan or imag is nan",
+      "    return std::make_pair(y, y);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_304_324dd222a9bffbc5_LogAddExp.h.json"
+}

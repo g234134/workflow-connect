@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 290,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test__pep440.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test__pep440.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2344,
+  "content_sha256": "e004ba521921c5f56abd97d99b1334a6020ebd055b0233dd58ddd8b607d75a46",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 67,
+    "non_empty_lines": 45,
+    "char_count": 2344,
+    "preview_lines": [
+      "from pytest import raises as assert_raises",
+      "from scipy._lib._pep440 import Version, parse",
+      "def test_main_versions():",
+      "    assert Version('1.8.0') == Version('1.8.0')",
+      "    for ver in ['1.9.0', '2.0.0', '1.8.1']:",
+      "        assert Version('1.8.0') < Version(ver)",
+      "    for ver in ['1.7.0', '1.7.1', '0.9.9']:",
+      "        assert Version('1.8.0') > Version(ver)",
+      "def test_version_1_point_10():",
+      "    # regression test for gh-2998."
+    ],
+    "imports": [
+      "from pytest import raises as assert_raises",
+      "from scipy._lib._pep440 import Version, parse"
+    ],
+    "classes": [],
+    "functions": [
+      "test_main_versions",
+      "test_version_1_point_10",
+      "test_alpha_beta_rc",
+      "test_dev_version",
+      "test_dev_a_b_rc_mixed",
+      "test_dev0_version",
+      "test_dev0_a_b_rc_mixed",
+      "test_raises",
+      "test_legacy_version"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_290_e004ba521921c5f5_AI_Chariot_Legacy_666_1.0.0_20260508_test__pep440.py.json"
+}

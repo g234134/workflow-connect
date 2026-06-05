@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 220,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\perplexity\\langchain_perplexity\\chat_models.py",
+  "name": "chat_models.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32842,
+  "content_sha256": "36059aa1ca7de99996904ac17e979361ffca8b1fd007c2b8e8082982d7849df7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 812,
+    "non_empty_lines": 678,
+    "char_count": 32839,
+    "preview_lines": [
+      "\"\"\"Wrapper around Perplexity APIs.\"\"\"",
+      "from __future__ import annotations",
+      "import logging",
+      "from collections.abc import AsyncIterator, Iterator, Mapping",
+      "from operator import itemgetter",
+      "from typing import Any, Literal, TypeAlias, cast",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForLLMRun,",
+      "    CallbackManagerForLLMRun,",
+      ")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from collections.abc import AsyncIterator, Iterator, Mapping",
+      "from operator import itemgetter",
+      "from typing import Any, Literal, TypeAlias, cast",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.language_models import (",
+      "from langchain_core.language_models.chat_models import (",
+      "from langchain_core.messages import (",
+      "from langchain_core.messages.ai import (",
+      "from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult",
+      "from langchain_core.runnables import Runnable, RunnableMap, RunnablePassthrough",
+      "from langchain_core.utils import get_pydantic_field_names, secret_from_env",
+      "from langchain_core.utils.function_calling import convert_to_json_schema",
+      "from langchain_core.utils.pydantic import is_basemodel_subclass",
+      "from perplexity import AsyncPerplexity, Perplexity",
+      "from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator",
+      "from typing_extensions import Self",
+      "from langchain_perplexity.data._profiles import _PROFILES",
+      "from langchain_perplexity.output_parsers import ("
+    ],
+    "classes": [
+      "ChatPerplexity"
+    ],
+    "functions": [
+      "_get_default_model_profile",
+      "_is_pydantic_class",
+      "_create_usage_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_220_36059aa1ca7de999_chat_models.py.json"
+}

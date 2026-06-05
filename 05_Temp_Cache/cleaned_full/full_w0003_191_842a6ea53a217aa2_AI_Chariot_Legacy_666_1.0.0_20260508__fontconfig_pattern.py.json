@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 191,
+  "generated_at": "2026-05-08T18:44:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__fontconfig_pattern.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__fontconfig_pattern.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4365,
+  "content_sha256": "842a6ea53a217aa249a4849510ddc536fe966593d56a828ebaa18c983dd6c61e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 96,
+    "char_count": 4365,
+    "preview_lines": [
+      "\"\"\"",
+      "A module for parsing and generating `fontconfig patterns`_.",
+      ".. _fontconfig patterns:",
+      "   https://www.freedesktop.org/software/fontconfig/fontconfig-user.html",
+      "\"\"\"",
+      "# This class logically belongs in `matplotlib.font_manager`, but placing it",
+      "# there would have created cyclical dependency problems, because it also needs",
+      "# to be available from `matplotlib.rcsetup` (for parsing matplotlibrc files).",
+      "from functools import lru_cache, partial",
+      "import re"
+    ],
+    "imports": [
+      "from functools import lru_cache, partial",
+      "import re",
+      "from pyparsing import ("
+    ],
+    "classes": [],
+    "functions": [
+      "_make_fontconfig_parser",
+      "parse_fontconfig_pattern",
+      "generate_fontconfig_pattern"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_191_842a6ea53a217aa2_AI_Chariot_Legacy_666_1.0.0_20260508__fontconfig_pattern.py.json"
+}

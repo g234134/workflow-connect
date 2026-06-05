@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 177,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\_utils\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1647,
+  "content_sha256": "9c0cf0bea644f71845b1bc2de179bdb2e63553babea90b080f66ffd9ea0836b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 34,
+    "char_count": 1647,
+    "preview_lines": [
+      "r\"\"\"Utility classes & functions for data loading. Code in this folder is mostly used by ../dataloder.py.",
+      "A lot of multiprocessing is used in data loading, which only supports running",
+      "functions defined in global environment (py2 can't serialize static methods).",
+      "Therefore, for code tidiness we put these functions into different files in this",
+      "folder.",
+      "\"\"\"",
+      "import sys",
+      "import atexit",
+      "# old private location of the ExceptionWrapper that some users rely on:",
+      "from torch._utils import ExceptionWrapper"
+    ],
+    "imports": [
+      "import sys",
+      "import atexit",
+      "from torch._utils import ExceptionWrapper",
+      "import numpy",
+      "from . import worker, signal_handling, pin_memory, collate, fetch"
+    ],
+    "classes": [],
+    "functions": [
+      "_set_python_exit_flag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_177_9c0cf0bea644f718___init__.py.json"
+}

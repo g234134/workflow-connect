@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 308,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_minres.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_minres.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11259,
+  "content_sha256": "7df8a5ba64f219aaefd06669378ab401b963ec996f4ed08d104a43f32b7280fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 372,
+    "non_empty_lines": 306,
+    "char_count": 11259,
+    "preview_lines": [
+      "from numpy import inner, zeros, inf, finfo",
+      "from numpy.linalg import norm",
+      "from math import sqrt",
+      "from .utils import make_system",
+      "__all__ = ['minres']",
+      "def minres(A, b, x0=None, *, rtol=1e-5, shift=0.0, maxiter=None,",
+      "           M=None, callback=None, show=False, check=False):",
+      "    \"\"\"",
+      "    Use MINimum RESidual iteration to solve Ax=b",
+      "    MINRES minimizes norm(Ax - b) for a real symmetric matrix A.  Unlike"
+    ],
+    "imports": [
+      "from numpy import inner, zeros, inf, finfo",
+      "from numpy.linalg import norm",
+      "from math import sqrt",
+      "from .utils import make_system"
+    ],
+    "classes": [],
+    "functions": [
+      "minres"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_308_7df8a5ba64f219aa_AI_Chariot_Legacy_666_1.0.0_20260508_minres.py.json"
+}

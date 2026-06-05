@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fx_minifier.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fx_minifier.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17870,
+  "content_sha256": "09b155bd20100cb090d33ee64b25c8abfb00229169300866e539ee0ae5d274da",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 501,
+    "non_empty_lines": 417,
+    "char_count": 17870,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import copy",
+      "import math",
+      "import os",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from functools import partial, wraps",
+      "from typing import Callable, List",
+      "import torch",
+      "import torch.fx as fx"
+    ],
+    "imports": [
+      "import copy",
+      "import math",
+      "import os",
+      "import sys",
+      "from dataclasses import dataclass",
+      "from functools import partial, wraps",
+      "from typing import Callable, List",
+      "import torch",
+      "import torch.fx as fx",
+      "from torch.hub import tqdm",
+      "from torch.multiprocessing.reductions import StorageWeakRef",
+      "from torch.utils._content_store import ContentStoreWriter",
+      "from .compile_utils import get_outputs, get_placeholders",
+      "from torch_xla.stablehlo import save_torch_model_as_stablehlo"
+    ],
+    "classes": [
+      "LoadTensorMeta",
+      "ConcreteProp",
+      "ReproState"
+    ],
+    "functions": [
+      "is_load_tensor_node",
+      "_convert_node_to_placeholder",
+      "create_minified_hlo_graph",
+      "dump_state",
+      "is_power_of_two",
+      "minifier"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_399_09b155bd20100cb0_AI_Chariot_Legacy_666_1.0.0_20260508_fx_minifier.py.json"
+}

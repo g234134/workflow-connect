@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 351,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_jsonref.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_jsonref.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18003,
+  "content_sha256": "6f741033a8910e8ec89b1a18f805ec24617c3448dc2ce81d129c838afaa60bf2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 578,
+    "non_empty_lines": 493,
+    "char_count": 18003,
+    "preview_lines": [
+      "import functools",
+      "import json",
+      "import warnings",
+      "from collections.abc import Mapping, MutableMapping, Sequence",
+      "from urllib import parse as urlparse",
+      "from urllib.parse import unquote",
+      "from urllib.request import urlopen",
+      "try:",
+      "    # If requests >=1.0 is available, we will use it",
+      "    import requests"
+    ],
+    "imports": [
+      "import functools",
+      "import json",
+      "import warnings",
+      "from collections.abc import Mapping, MutableMapping, Sequence",
+      "from urllib import parse as urlparse",
+      "from urllib.parse import unquote",
+      "from urllib.request import urlopen",
+      "import requests",
+      "from proxytypes import LazyProxy"
+    ],
+    "classes": [
+      "JsonRefError",
+      "JsonRef",
+      "URIDict"
+    ],
+    "functions": [
+      "jsonloader",
+      "_walk_refs",
+      "replace_refs",
+      "_replace_refs",
+      "load",
+      "loads",
+      "load_uri",
+      "dump",
+      "dumps",
+      "_ref_encoder_factory"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_351_6f741033a8910e8e_AI_Chariot_Legacy_666_1.0.0_20260508_jsonref.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 379,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_replwrap.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_replwrap.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5951,
+  "content_sha256": "fc8e4f0e8849e6a596897ccef694b7da47dc565949cae9e0b9bae7e7f0137156",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 136,
+    "non_empty_lines": 114,
+    "char_count": 5951,
+    "preview_lines": [
+      "\"\"\"Generic wrapper for read-eval-print-loops, a.k.a. interactive shells",
+      "\"\"\"",
+      "import os.path",
+      "import signal",
+      "import sys",
+      "import pexpect",
+      "PY3 = (sys.version_info[0] >= 3)",
+      "if PY3:",
+      "    basestring = str",
+      "PEXPECT_PROMPT = u'[PEXPECT_PROMPT>'"
+    ],
+    "imports": [
+      "import os.path",
+      "import signal",
+      "import sys",
+      "import pexpect",
+      "from ._async import repl_run_command_async"
+    ],
+    "classes": [
+      "REPLWrapper"
+    ],
+    "functions": [
+      "python",
+      "_repl_sh",
+      "bash",
+      "zsh"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_379_fc8e4f0e8849e6a5_AI_Chariot_Legacy_666_1.0.0_20260508_replwrap.py.json"
+}

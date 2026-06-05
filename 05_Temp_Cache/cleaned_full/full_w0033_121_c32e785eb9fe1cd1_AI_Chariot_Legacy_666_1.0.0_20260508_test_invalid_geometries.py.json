@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 121,
+  "generated_at": "2026-05-08T18:46:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_invalid_geometries.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_invalid_geometries.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 917,
+  "content_sha256": "c32e785eb9fe1cd1fe34714cf799e5a2d22a8c9caf80ed390a95d346895ffa83",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 19,
+    "char_count": 917,
+    "preview_lines": [
+      "\"\"\"Test recovery from operation on invalid geometries\"\"\"",
+      "import unittest",
+      "import pytest",
+      "import shapely",
+      "from shapely.errors import TopologicalError",
+      "from shapely.geometry import Polygon",
+      "class InvalidGeometriesTestCase(unittest.TestCase):",
+      "    def test_invalid_intersection(self):",
+      "        # Make a self-intersecting polygon",
+      "        polygon_invalid = Polygon([(0, 0), (1, 1), (1, -1), (0, 1), (0, 0)])"
+    ],
+    "imports": [
+      "import unittest",
+      "import pytest",
+      "import shapely",
+      "from shapely.errors import TopologicalError",
+      "from shapely.geometry import Polygon"
+    ],
+    "classes": [
+      "InvalidGeometriesTestCase"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_121_c32e785eb9fe1cd1_AI_Chariot_Legacy_666_1.0.0_20260508_test_invalid_geometries.py.json"
+}

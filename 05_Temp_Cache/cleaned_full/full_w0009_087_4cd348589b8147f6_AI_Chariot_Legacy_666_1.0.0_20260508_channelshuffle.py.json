@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_channelshuffle.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_channelshuffle.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1604,
+  "content_sha256": "4cd348589b8147f6457c4e76dea7794c4e2b7a17e7b4dd51d1f1871e6f26e647",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 43,
+    "char_count": 1604,
+    "preview_lines": [
+      "import torch.nn.functional as F",
+      "from torch import Tensor",
+      "from .module import Module",
+      "__all__ = [\"ChannelShuffle\"]",
+      "class ChannelShuffle(Module):",
+      "    r\"\"\"Divides and rearranges the channels in a tensor.",
+      "    This operation divides the channels in a tensor of shape :math:`(N, C, *)`",
+      "    into g groups as :math:`(N, \\frac{C}{g}, g, *)` and shuffles them,",
+      "    while retaining the original tensor shape in the final output.",
+      "    Args:"
+    ],
+    "imports": [
+      "import torch.nn.functional as F",
+      "from torch import Tensor",
+      "from .module import Module"
+    ],
+    "classes": [
+      "ChannelShuffle"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_087_4cd348589b8147f6_AI_Chariot_Legacy_666_1.0.0_20260508_channelshuffle.py.json"
+}

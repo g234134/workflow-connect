@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_qmc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_qmc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 59018,
+  "content_sha256": "3fa8476e62a1ef117db04756d7b9919d8758bf2f019937ca0e2ac5a6a610c8a1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1489,
+    "non_empty_lines": 1224,
+    "char_count": 59018,
+    "preview_lines": [
+      "import os",
+      "from collections import Counter",
+      "from itertools import combinations, product",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import (assert_allclose, assert_equal, assert_array_equal, ",
+      "    assert_array_less)",
+      "from scipy.spatial import distance",
+      "from scipy.stats import shapiro",
+      "from scipy.stats._sobol import _test_find_index"
+    ],
+    "imports": [
+      "import os",
+      "from collections import Counter",
+      "from itertools import combinations, product",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import (assert_allclose, assert_equal, assert_array_equal,",
+      "from scipy.spatial import distance",
+      "from scipy.stats import shapiro",
+      "from scipy.stats._sobol import _test_find_index",
+      "from scipy.stats import qmc",
+      "from scipy.stats._qmc import ("
+    ],
+    "classes": [
+      "TestUtils",
+      "TestVDC",
+      "RandomEngine",
+      "QMCEngineTests",
+      "TestHalton",
+      "TestLHS",
+      "TestSobol",
+      "TestPoisson",
+      "TestMultinomialQMC",
+      "TestNormalQMC",
+      "TestMultivariateNormalQMC",
+      "TestLloyd"
+    ],
+    "functions": [
+      "test_subclassing_QMCEngine",
+      "test_raises",
+      "test_integers",
+      "test_integers_nd",
+      "l2_norm",
+      "test_deterministic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_389_3fa8476e62a1ef11_AI_Chariot_Legacy_666_1.0.0_20260508_test_qmc.py.json"
+}

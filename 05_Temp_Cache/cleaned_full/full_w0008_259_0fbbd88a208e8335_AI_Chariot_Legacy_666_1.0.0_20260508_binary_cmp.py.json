@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_binary_cmp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_binary_cmp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2833,
+  "content_sha256": "0fbbd88a208e8335a59c3eed397a993b92e0c4ce76ecbf47b97c292ac3683a9d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 61,
+    "char_count": 2833,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.distributed_c10d as distributed_c10d",
+      "from torch.distributed._shard.sharded_tensor import _sharded_op_impl, ShardedTensor",
+      "def _communicate_result(result, pg):",
+      "    # Gather results from all ranks.",
+      "    if result:",
+      "        result_tensor = torch.ones(1, device=torch.device(torch.cuda.current_device()))",
+      "    else:"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed.distributed_c10d as distributed_c10d",
+      "from torch.distributed._shard.sharded_tensor import _sharded_op_impl, ShardedTensor"
+    ],
+    "classes": [],
+    "functions": [
+      "_communicate_result",
+      "binary_cmp",
+      "equal",
+      "allclose"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_259_0fbbd88a208e8335_AI_Chariot_Legacy_666_1.0.0_20260508_binary_cmp.py.json"
+}

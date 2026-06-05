@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\fx\\analysis\\unsupported_nodes.py",
+  "name": "unsupported_nodes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3472,
+  "content_sha256": "2454645f7a1ecda9118a6ff7abb434a10fe310aaa07315e22605e2a8aa908b5c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 71,
+    "char_count": 3472,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from typing import Dict",
+      "from torch.onnx._internal.fx import _pass, diagnostics, registration",
+      "@dataclasses.dataclass",
+      "class UnsupportedFxNodesAnalysisResult(_pass.AnalysisResult):",
+      "    unsupported_op_to_target_mapping: Dict[str, Dict[str, None]]",
+      "class UnsupportedFxNodesAnalysis(_pass.Analysis):",
+      "    \"\"\"An analysis that detects unsupported FX nodes in the graph.\"\"\"",
+      "    def _lint("
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "from typing import Dict",
+      "from torch.onnx._internal.fx import _pass, diagnostics, registration"
+    ],
+    "classes": [
+      "UnsupportedFxNodesAnalysisResult",
+      "UnsupportedFxNodesAnalysis"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_387_2454645f7a1ecda9_unsupported_nodes.py.json"
+}

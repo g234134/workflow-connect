@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 156,
+  "generated_at": "2026-05-08T18:47:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\mathml.py",
+  "name": "mathml.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 76634,
+  "content_sha256": "513ee0e39a0b4eabe7ac2d485197aacb01d357af8b50295fb8e17f53800c95a2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2157,
+    "non_empty_lines": 1894,
+    "char_count": 76634,
+    "preview_lines": [
+      "\"\"\"",
+      "A MathML printer.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.printing.conventions import split_super_sub, requires_partial"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from sympy.core.mul import Mul",
+      "from sympy.core.singleton import S",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.core.sympify import sympify",
+      "from sympy.printing.conventions import split_super_sub, requires_partial",
+      "from sympy.printing.precedence import \\",
+      "from sympy.printing.pretty.pretty_symbology import greek_unicode",
+      "from sympy.printing.printer import Printer, print_function",
+      "from mpmath.libmp import prec_to_dps, repr_dps, to_str as mlib_to_str",
+      "from xml.dom.minidom import Document, Text",
+      "from sympy.simplify import fraction"
+    ],
+    "classes": [
+      "MathMLPrinterBase",
+      "MathMLContentPrinter",
+      "MathMLPresentationPrinter"
+    ],
+    "functions": [
+      "mathml",
+      "print_mathml"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_156_513ee0e39a0b4eab_mathml.py.json"
+}

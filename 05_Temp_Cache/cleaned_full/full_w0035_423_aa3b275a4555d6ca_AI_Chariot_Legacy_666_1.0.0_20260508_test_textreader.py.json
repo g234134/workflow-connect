@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:46:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_textreader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_textreader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12091,
+  "content_sha256": "aa3b275a4555d6ca0d6b37b361863ac84aba5e69b2262fc0b4a9247734223272",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 386,
+    "non_empty_lines": 315,
+    "char_count": 12091,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests the TextReader class in parsers.pyx, which",
+      "is integral to the C engine in parsers.py",
+      "\"\"\"",
+      "from io import (",
+      "    BytesIO,",
+      "    StringIO,",
+      ")",
+      "import numpy as np",
+      "import pytest"
+    ],
+    "imports": [
+      "from io import (",
+      "import numpy as np",
+      "import pytest",
+      "import pandas._libs.parsers as parser",
+      "from pandas._libs.parsers import TextReader",
+      "from pandas.errors import ParserWarning",
+      "from pandas import DataFrame",
+      "import pandas._testing as tm",
+      "from pandas.io.parsers import (",
+      "from pandas.io.parsers.c_parser_wrapper import ensure_dtype_objs"
+    ],
+    "classes": [
+      "TestTextReader"
+    ],
+    "functions": [
+      "assert_array_dicts_equal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_423_aa3b275a4555d6ca_AI_Chariot_Legacy_666_1.0.0_20260508_test_textreader.py.json"
+}

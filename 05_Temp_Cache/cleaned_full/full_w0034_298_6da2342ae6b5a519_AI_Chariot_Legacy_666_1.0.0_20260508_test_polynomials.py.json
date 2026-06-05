@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_polynomials.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_polynomials.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1983,
+  "content_sha256": "6da2342ae6b5a519e0442e92726e60451c22d5b9748844f9fd7c68dc06533f70",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 43,
+    "char_count": 1983,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.algorithms.polynomials` module.\"\"\"",
+      "import pytest",
+      "import networkx as nx",
+      "sympy = pytest.importorskip(\"sympy\")",
+      "# Mapping of input graphs to a string representation of their tutte polynomials",
+      "_test_tutte_graphs = {",
+      "    nx.complete_graph(1): \"1\",",
+      "    nx.complete_graph(4): \"x**3 + 3*x**2 + 4*x*y + 2*x + y**3 + 3*y**2 + 2*y\",",
+      "    nx.cycle_graph(5): \"x**4 + x**3 + x**2 + x + y\",",
+      "    nx.diamond_graph(): \"x**3 + 2*x**2 + 2*x*y + x + y**2 + y\","
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tutte_polynomial",
+      "test_tutte_polynomial_disjoint",
+      "test_chromatic_polynomial",
+      "test_chromatic_polynomial_disjoint"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_298_6da2342ae6b5a519_AI_Chariot_Legacy_666_1.0.0_20260508_test_polynomials.py.json"
+}

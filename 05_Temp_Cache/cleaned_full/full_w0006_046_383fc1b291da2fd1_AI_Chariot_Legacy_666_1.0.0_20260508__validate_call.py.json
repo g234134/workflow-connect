@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 46,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__validate_call.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__validate_call.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5366,
+  "content_sha256": "383fc1b291da2fd14acd9f57ae7761884b8c9e3177491209507b70bfac947df5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 141,
+    "non_empty_lines": 116,
+    "char_count": 5366,
+    "preview_lines": [
+      "from __future__ import annotations as _annotations",
+      "import functools",
+      "import inspect",
+      "from collections.abc import Awaitable",
+      "from functools import partial",
+      "from typing import Any, Callable",
+      "import pydantic_core",
+      "from ..config import ConfigDict",
+      "from ..plugin._schema_validator import create_schema_validator",
+      "from ._config import ConfigWrapper"
+    ],
+    "imports": [
+      "from __future__ import annotations as _annotations",
+      "import functools",
+      "import inspect",
+      "from collections.abc import Awaitable",
+      "from functools import partial",
+      "from typing import Any, Callable",
+      "import pydantic_core",
+      "from ..config import ConfigDict",
+      "from ..plugin._schema_validator import create_schema_validator",
+      "from ._config import ConfigWrapper",
+      "from ._generate_schema import GenerateSchema, ValidateCallSupportedTypes",
+      "from ._namespace_utils import MappingNamespace, NsResolver, ns_for_function",
+      "from ._typing_extra import signature_no_eval"
+    ],
+    "classes": [
+      "ValidateCallWrapper"
+    ],
+    "functions": [
+      "extract_function_name",
+      "extract_function_qualname",
+      "update_wrapper_attributes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_046_383fc1b291da2fd1_AI_Chariot_Legacy_666_1.0.0_20260508__validate_call.py.json"
+}

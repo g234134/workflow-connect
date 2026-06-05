@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__beta_messages.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__beta_messages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3197,
+  "content_sha256": "0a53cbdb552b45b27d335d06f0f71195afc5bbd1a858dff8db4154bb0f756e66",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 66,
+    "char_count": 3197,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from __future__ import annotations",
+      "from ... import _legacy_response",
+      "from ..._compat import cached_property",
+      "from ..._resource import SyncAPIResource, AsyncAPIResource",
+      "from ..._response import to_streamed_response_wrapper, async_to_streamed_response_wrapper",
+      "from ...resources.beta import Messages as FirstPartyMessagesAPI, AsyncMessages as FirstPartyAsyncMessagesAPI",
+      "__all__ = [\"Messages\", \"AsyncMessages\"]",
+      "class Messages(SyncAPIResource):",
+      "    create = FirstPartyMessagesAPI.create"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from ... import _legacy_response",
+      "from ..._compat import cached_property",
+      "from ..._resource import SyncAPIResource, AsyncAPIResource",
+      "from ..._response import to_streamed_response_wrapper, async_to_streamed_response_wrapper",
+      "from ...resources.beta import Messages as FirstPartyMessagesAPI, AsyncMessages as FirstPartyAsyncMessagesAPI"
+    ],
+    "classes": [
+      "Messages",
+      "AsyncMessages",
+      "MessagesWithRawResponse",
+      "AsyncMessagesWithRawResponse",
+      "MessagesWithStreamingResponse",
+      "AsyncMessagesWithStreamingResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_159_0a53cbdb552b45b2_AI_Chariot_Legacy_666_1.0.0_20260508__beta_messages.py.json"
+}

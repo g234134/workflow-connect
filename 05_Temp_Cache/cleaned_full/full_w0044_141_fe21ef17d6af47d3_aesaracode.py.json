@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 141,
+  "generated_at": "2026-05-08T18:47:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\printing\\aesaracode.py",
+  "name": "aesaracode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18921,
+  "content_sha256": "fe21ef17d6af47d30688e9f12c8c28836339ad4c212d1b7e6ddb1b7091de3bfb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 563,
+    "non_empty_lines": 437,
+    "char_count": 18921,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import math",
+      "from typing import Any",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.iterables import is_sequence",
+      "import sympy",
+      "from functools import partial",
+      "aesara = import_module('aesara')"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from typing import Any",
+      "from sympy.external import import_module",
+      "from sympy.printing.printer import Printer",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.utilities.iterables import is_sequence",
+      "import sympy",
+      "from functools import partial",
+      "from aesara.tensor import nlinalg",
+      "from aesara.tensor.elemwise import Elemwise",
+      "from aesara.tensor.elemwise import DimShuffle"
+    ],
+    "classes": [
+      "AesaraPrinter"
+    ],
+    "functions": [
+      "aesara_code",
+      "dim_handling",
+      "aesara_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_141_fe21ef17d6af47d3_aesaracode.py.json"
+}

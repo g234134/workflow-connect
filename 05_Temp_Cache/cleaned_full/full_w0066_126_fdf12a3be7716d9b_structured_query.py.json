@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\structured_query.py",
+  "name": "structured_query.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5335,
+  "content_sha256": "fdf12a3be7716d9b00ac4e9ed9ecd5a410f963bca5fcf79f407b2bfd96562ec9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 203,
+    "non_empty_lines": 153,
+    "char_count": 5332,
+    "preview_lines": [
+      "\"\"\"Internal representation of a structured query language.\"\"\"",
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from enum import Enum",
+      "from typing import TYPE_CHECKING, Any",
+      "from pydantic import BaseModel",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Sequence",
+      "class Visitor(ABC):",
+      "    \"\"\"Defines interface for IR translation using a visitor pattern.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from abc import ABC, abstractmethod",
+      "from enum import Enum",
+      "from typing import TYPE_CHECKING, Any",
+      "from pydantic import BaseModel",
+      "from collections.abc import Sequence"
+    ],
+    "classes": [
+      "Visitor",
+      "Expr",
+      "Operator",
+      "Comparator",
+      "FilterDirective",
+      "Comparison",
+      "Operation",
+      "StructuredQuery"
+    ],
+    "functions": [
+      "_to_snake_case"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_126_fdf12a3be7716d9b_structured_query.py.json"
+}

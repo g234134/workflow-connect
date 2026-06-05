@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 100,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_policy_guardrail.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_policy_guardrail.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9096,
+  "content_sha256": "281bb5f17b911934ac616226e7d2712858959b50f78bbe90ca4720dce21c43c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 233,
+    "non_empty_lines": 206,
+    "char_count": 9094,
+    "preview_lines": [
+      "\"\"\"",
+      "Tool Policy Guardrail",
+      "Reads input_policy / output_policy from LiteLLM_ToolTable and enforces them.",
+      "Input policy values:",
+      "  \"untrusted\" - allow through (default for newly discovered tools)",
+      "  \"trusted\"   - only allow if conversation contains no untrusted tool output",
+      "  \"blocked\"   - raise HTTPException, preventing the tool call",
+      "Output policy values:",
+      "  \"untrusted\" - output may be tainted (default)",
+      "  \"trusted\"   - output is verified safe"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Tuple",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "from litellm.proxy.guardrails.tool_name_extraction import extract_request_tool_names",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.utils import GenericGuardrailAPIInputs",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.proxy.db.tool_registry_writer import get_tool_policy_registry"
+    ],
+    "classes": [
+      "ToolPolicyGuardrail"
+    ],
+    "functions": [
+      "_get_request_object_permission_ids",
+      "_get_request_route_from_data",
+      "_resolve_tool_names_from_messages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_100_281bb5f17b911934_AI_Chariot_Legacy_666_1.0.0_20260508_tool_policy_guardrail.py.json"
+}

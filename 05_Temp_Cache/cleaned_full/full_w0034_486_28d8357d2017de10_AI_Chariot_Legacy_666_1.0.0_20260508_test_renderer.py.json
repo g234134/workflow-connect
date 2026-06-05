@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 486,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_renderer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_renderer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2980,
+  "content_sha256": "28d8357d2017de10053ad1f281fd3357b94780a0f25f2a068615d7daea4d9aa7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 66,
+    "char_count": 2980,
+    "preview_lines": [
+      "import matplotlib.pyplot as plt",
+      "import plotly.tools as tls",
+      "def test_native_legend_enabled_when_matplotlib_legend_present():",
+      "    \"\"\"Test that when matplotlib legend is present, Plotly uses native legend.\"\"\"",
+      "    fig, ax = plt.subplots()",
+      "    ax.plot([0, 1], [0, 1], label=\"Line 1\")",
+      "    ax.plot([0, 1], [1, 0], label=\"Line 2\")",
+      "    ax.legend()",
+      "    plotly_fig = tls.mpl_to_plotly(fig)",
+      "    # Should enable native legend"
+    ],
+    "imports": [
+      "import matplotlib.pyplot as plt",
+      "import plotly.tools as tls"
+    ],
+    "classes": [],
+    "functions": [
+      "test_native_legend_enabled_when_matplotlib_legend_present",
+      "test_no_fake_legend_shapes_with_native_legend",
+      "test_legend_disabled_when_no_matplotlib_legend",
+      "test_legend_disabled_when_matplotlib_legend_not_visible",
+      "test_multiple_traces_native_legend"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_486_28d8357d2017de10_AI_Chariot_Legacy_666_1.0.0_20260508_test_renderer.py.json"
+}

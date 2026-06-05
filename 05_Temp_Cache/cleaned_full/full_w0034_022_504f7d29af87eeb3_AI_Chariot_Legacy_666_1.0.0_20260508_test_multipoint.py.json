@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 22,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_multipoint.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_multipoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3140,
+  "content_sha256": "504f7d29af87eeb34ceed62ab85987cffb3798547bcc5a81f8592cefb6bea5d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 74,
+    "char_count": 3140,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "import shapely",
+      "from shapely import MultiPoint, Point",
+      "from shapely.errors import EmptyPartError",
+      "from shapely.geometry.base import dump_coords",
+      "from shapely.tests.geometry.test_multi import MultiGeometryTestCase",
+      "class TestMultiPoint(MultiGeometryTestCase):",
+      "    def test_multipoint(self):",
+      "        # From coordinate tuples"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "import shapely",
+      "from shapely import MultiPoint, Point",
+      "from shapely.errors import EmptyPartError",
+      "from shapely.geometry.base import dump_coords",
+      "from shapely.tests.geometry.test_multi import MultiGeometryTestCase"
+    ],
+    "classes": [
+      "TestMultiPoint"
+    ],
+    "functions": [
+      "test_multipoint_array_coercion",
+      "test_numpy_object_array",
+      "test_len_raises"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_022_504f7d29af87eeb3_AI_Chariot_Legacy_666_1.0.0_20260508_test_multipoint.py.json"
+}

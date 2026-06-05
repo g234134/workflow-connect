@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 205,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_operation_grouping.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_operation_grouping.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6727,
+  "content_sha256": "186d975d69cee9423031352e19a9b83dd5189b66166bfbdc263f457e6bad184d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 178,
+    "non_empty_lines": 129,
+    "char_count": 6723,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from autogen.import_utils import optional_import_block",
+      "with optional_import_block() as result:",
+      "    from fastapi_code_generator.parser import OpenAPIParser, Operation",
+      "    from fastapi_code_generator.visitor import Visitor"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from pathlib import Path",
+      "from autogen.import_utils import optional_import_block",
+      "from fastapi_code_generator.parser import OpenAPIParser, Operation",
+      "from fastapi_code_generator.visitor import Visitor",
+      "from pydantic import BaseModel",
+      "from autogen.agentchat.conversable_agent import ConversableAgent",
+      "from autogen.llm_config import LLMConfig"
+    ],
+    "classes": [
+      "Group",
+      "GroupSuggestions",
+      "GroupNames"
+    ],
+    "functions": [
+      "set_llm_config",
+      "chunk_list",
+      "discover_groups",
+      "assign_operation_to_group",
+      "refine_group_names",
+      "custom_visitor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_205_186d975d69cee942_AI_Chariot_Legacy_666_1.0.0_20260508_operation_grouping.py.json"
+}

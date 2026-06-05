@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:46:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_syntax_helpers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_syntax_helpers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4072,
+  "content_sha256": "775d776cfc5aa23f93147cca7a7a0c362452e4d85537c2453aaab5478557ce29",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 100,
+    "char_count": 4072,
+    "preview_lines": [
+      "from lark import Lark, ParseTree, exceptions",
+      "from pathlib import Path",
+      "from rfc3987_syntax.utils import load_grammar",
+      "RFC3987_SYNTAX_PARSER_TYPE: str = \"earley\"",
+      "RFC3987_SYNTAX_GRAMMAR_PATH: Path = Path(__file__).parent / \"syntax_rfc3987.lark\"",
+      "RFC3987_SYNTAX_TERMS: list[str] = [",
+      "    \"iri\",",
+      "    \"iri_reference\",",
+      "    \"absolute_iri\",",
+      "    \"scheme\","
+    ],
+    "imports": [
+      "from lark import Lark, ParseTree, exceptions",
+      "from pathlib import Path",
+      "from rfc3987_syntax.utils import load_grammar"
+    ],
+    "classes": [],
+    "functions": [
+      "parse",
+      "is_valid_syntax",
+      "make_syntax_validator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_053_775d776cfc5aa23f_AI_Chariot_Legacy_666_1.0.0_20260508_syntax_helpers.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 232,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sslproto.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sslproto.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31899,
+  "content_sha256": "6c7fa1b81dc41850281cbf284c99ca18e824939fa5778860327040f3a80f6218",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 929,
+    "non_empty_lines": 775,
+    "char_count": 31899,
+    "preview_lines": [
+      "# Contains code from https://github.com/MagicStack/uvloop/tree/v0.16.0",
+      "# SPDX-License-Identifier: PSF-2.0 AND (MIT OR Apache-2.0)",
+      "# SPDX-FileCopyrightText: Copyright (c) 2015-2021 MagicStack Inc.  http://magic.io",
+      "import collections",
+      "import enum",
+      "import warnings",
+      "try:",
+      "    import ssl",
+      "except ImportError:  # pragma: no cover",
+      "    ssl = None"
+    ],
+    "imports": [
+      "import collections",
+      "import enum",
+      "import warnings",
+      "import ssl",
+      "from . import constants",
+      "from . import exceptions",
+      "from . import protocols",
+      "from . import transports",
+      "from .log import logger"
+    ],
+    "classes": [
+      "SSLProtocolState",
+      "AppProtocolState",
+      "_SSLProtocolTransport",
+      "SSLProtocol"
+    ],
+    "functions": [
+      "_create_transport_context",
+      "add_flowcontrol_defaults"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_232_6c7fa1b81dc41850_AI_Chariot_Legacy_666_1.0.0_20260508_sslproto.py.json"
+}

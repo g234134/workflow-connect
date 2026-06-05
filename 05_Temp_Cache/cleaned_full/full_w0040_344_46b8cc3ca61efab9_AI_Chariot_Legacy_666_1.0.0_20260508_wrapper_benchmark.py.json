@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 344,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_wrapper_benchmark.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_wrapper_benchmark.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10764,
+  "content_sha256": "46b8cc3ca61efab9dc5c8435ee7b8d75cef364ec794dec8d05e6bdc3a8582dee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 315,
+    "non_empty_lines": 268,
+    "char_count": 10764,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import dataclasses",
+      "import tempfile",
+      "from collections import defaultdict",
+      "import torch",
+      "from torch.autograd import DeviceType",
+      "from .runtime.benchmarking import benchmarker",
+      "from .runtime.runtime_utils import create_bandwidth_info_str, get_num_bytes",
+      "_kernel_category_choices = [",
+      "    \"foreach\","
+    ],
+    "imports": [
+      "import dataclasses",
+      "import tempfile",
+      "from collections import defaultdict",
+      "import torch",
+      "from torch.autograd import DeviceType",
+      "from .runtime.benchmarking import benchmarker",
+      "from .runtime.runtime_utils import create_bandwidth_info_str, get_num_bytes",
+      "from torch._inductor.runtime.triton_heuristics import CachingAutotuner",
+      "from torch._inductor.codecache import PyCodeCache",
+      "from tabulate import tabulate"
+    ],
+    "classes": [
+      "ProfileEvent"
+    ],
+    "functions": [
+      "get_kernel_category_by_source_code",
+      "get_kernel_category",
+      "get_triton_kernel",
+      "benchmark_all_kernels",
+      "parse_profile_event_list",
+      "compiled_module_main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_344_46b8cc3ca61efab9_AI_Chariot_Legacy_666_1.0.0_20260508_wrapper_benchmark.py.json"
+}

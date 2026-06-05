@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 341,
+  "generated_at": "2026-05-08T18:44:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_S_V_G_.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_S_V_G_.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7899,
+  "content_sha256": "3ba0229348fbb74d8e0ec651c08fed254c0d250899dc3977a313ea421c915c7f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 192,
+    "char_count": 7899,
+    "preview_lines": [
+      "\"\"\"Compiles/decompiles SVG table.",
+      "https://docs.microsoft.com/en-us/typography/opentype/spec/svg",
+      "The XML format is:",
+      ".. code-block:: xml",
+      "\t<SVG>",
+      "\t\t<svgDoc endGlyphID=\"1\" startGlyphID=\"1\">",
+      "\t\t\t<![CDATA[ <complete SVG doc> ]]",
+      "\t\t</svgDoc>",
+      "\t...",
+      "\t\t<svgDoc endGlyphID=\"n\" startGlyphID=\"m\">"
+    ],
+    "imports": [
+      "from fontTools.misc.textTools import bytesjoin, safeEval, strjoin, tobytes, tostr",
+      "from fontTools.misc import sstruct",
+      "from . import DefaultTable",
+      "from collections.abc import Sequence",
+      "from dataclasses import dataclass, astuple",
+      "from io import BytesIO",
+      "import struct",
+      "import logging",
+      "import gzip",
+      "import gzip"
+    ],
+    "classes": [
+      "table_S_V_G_",
+      "DocumentIndexEntry",
+      "SVGDocument"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_341_3ba0229348fbb74d_AI_Chariot_Legacy_666_1.0.0_20260508_S_V_G_.py.json"
+}

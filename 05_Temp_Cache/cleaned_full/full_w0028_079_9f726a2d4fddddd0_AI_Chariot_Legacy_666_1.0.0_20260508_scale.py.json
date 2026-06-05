@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 79,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scale.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scale.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26924,
+  "content_sha256": "9f726a2d4fddddd00aacfd6e3b99538a95446b18222e10d1dac4a4f1301713f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 767,
+    "non_empty_lines": 615,
+    "char_count": 26924,
+    "preview_lines": [
+      "\"\"\"",
+      "Scales define the distribution of data values on an axis, e.g. a log scaling.",
+      "The mapping is implemented through `.Transform` subclasses.",
+      "The following scales are built-in:",
+      ".. _builtin_scales:",
+      "============= ===================== ================================ =================================",
+      "Name          Class                 Transform                        Inverted transform",
+      "============= ===================== ================================ =================================",
+      "\"asinh\"       `AsinhScale`          `AsinhTransform`                 `InvertedAsinhTransform`",
+      "\"function\"    `FuncScale`           `FuncTransform`                  `FuncTransform`"
+    ],
+    "imports": [
+      "import inspect",
+      "import textwrap",
+      "import numpy as np",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, _docstring",
+      "from matplotlib.ticker import (",
+      "from matplotlib.transforms import Transform, IdentityTransform"
+    ],
+    "classes": [
+      "ScaleBase",
+      "LinearScale",
+      "FuncTransform",
+      "FuncScale",
+      "LogTransform",
+      "InvertedLogTransform",
+      "LogScale",
+      "FuncScaleLog",
+      "SymmetricalLogTransform",
+      "InvertedSymmetricalLogTransform",
+      "SymmetricalLogScale",
+      "AsinhTransform",
+      "InvertedAsinhTransform",
+      "AsinhScale",
+      "LogitTransform",
+      "LogisticTransform",
+      "LogitScale"
+    ],
+    "functions": [
+      "get_scale_names",
+      "scale_factory",
+      "register_scale",
+      "_get_scale_docs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_079_9f726a2d4fddddd0_AI_Chariot_Legacy_666_1.0.0_20260508_scale.py.json"
+}

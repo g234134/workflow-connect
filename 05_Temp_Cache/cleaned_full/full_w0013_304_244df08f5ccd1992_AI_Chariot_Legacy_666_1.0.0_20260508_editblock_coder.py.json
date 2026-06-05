@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 304,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_editblock_coder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_editblock_coder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19616,
+  "content_sha256": "244df08f5ccd19928bcdac1901ae591a7a786d12a6f70d31400baaefb5a136a3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 657,
+    "non_empty_lines": 493,
+    "char_count": 19616,
+    "preview_lines": [
+      "import difflib",
+      "import math",
+      "import re",
+      "import sys",
+      "from difflib import SequenceMatcher",
+      "from pathlib import Path",
+      "from aider import utils",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .editblock_prompts import EditBlockPrompts"
+    ],
+    "imports": [
+      "import difflib",
+      "import math",
+      "import re",
+      "import sys",
+      "from difflib import SequenceMatcher",
+      "from pathlib import Path",
+      "from aider import utils",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .editblock_prompts import EditBlockPrompts"
+    ],
+    "classes": [
+      "EditBlockCoder"
+    ],
+    "functions": [
+      "prep",
+      "perfect_or_whitespace",
+      "perfect_replace",
+      "replace_most_similar_chunk",
+      "try_dotdotdots",
+      "replace_part_with_missing_leading_whitespace",
+      "match_but_for_leading_whitespace",
+      "replace_closest_edit_distance",
+      "strip_quoted_wrapping",
+      "do_replace",
+      "strip_filename",
+      "find_original_update_blocks",
+      "find_filename",
+      "find_similar_lines",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_304_244df08f5ccd1992_AI_Chariot_Legacy_666_1.0.0_20260508_editblock_coder.py.json"
+}

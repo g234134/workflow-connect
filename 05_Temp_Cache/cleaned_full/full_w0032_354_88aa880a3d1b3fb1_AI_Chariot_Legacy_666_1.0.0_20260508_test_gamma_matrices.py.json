@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_gamma_matrices.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_gamma_matrices.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14722,
+  "content_sha256": "88aa880a3d1b3fb10ad2c4ae605b0f74f9034db1c66ba27f2cc3d9033bf58f8a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 427,
+    "non_empty_lines": 343,
+    "char_count": 14722,
+    "preview_lines": [
+      "from sympy.matrices.dense import eye, Matrix",
+      "from sympy.tensor.tensor import tensor_indices, TensorHead, tensor_heads, \\",
+      "    TensExpr, canon_bp",
+      "from sympy.physics.hep.gamma_matrices import GammaMatrix as G, LorentzIndex, \\",
+      "    kahane_simplify, gamma_trace, _simplify_single_line, simplify_gamma_expression",
+      "from sympy import Symbol",
+      "def _is_tensor_eq(arg1, arg2):",
+      "    arg1 = canon_bp(arg1)",
+      "    arg2 = canon_bp(arg2)",
+      "    if isinstance(arg1, TensExpr):"
+    ],
+    "imports": [
+      "from sympy.matrices.dense import eye, Matrix",
+      "from sympy.tensor.tensor import tensor_indices, TensorHead, tensor_heads, \\",
+      "from sympy.physics.hep.gamma_matrices import GammaMatrix as G, LorentzIndex, \\",
+      "from sympy import Symbol"
+    ],
+    "classes": [],
+    "functions": [
+      "_is_tensor_eq",
+      "execute_gamma_simplify_tests_for_function",
+      "test_kahane_algorithm",
+      "test_kahane_simplify1",
+      "test_gamma_matrix_class",
+      "test_gamma_matrix_trace",
+      "test_bug_13636"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_354_88aa880a3d1b3fb1_AI_Chariot_Legacy_666_1.0.0_20260508_test_gamma_matrices.py.json"
+}

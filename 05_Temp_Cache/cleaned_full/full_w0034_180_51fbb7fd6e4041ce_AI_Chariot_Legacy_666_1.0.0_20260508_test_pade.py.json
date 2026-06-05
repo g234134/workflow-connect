@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 180,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pade.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pade.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3975,
+  "content_sha256": "51fbb7fd6e4041cef8f562d34fba20896fd58b49987f3e48010615eca8dbe9b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 82,
+    "char_count": 3975,
+    "preview_lines": [
+      "import numpy as np",
+      "from scipy.interpolate import pade",
+      "from scipy._lib._array_api import (",
+      "    xp_assert_equal, assert_array_almost_equal",
+      ")",
+      "def test_pade_trivial():",
+      "    nump, denomp = pade([1.0], 0)",
+      "    xp_assert_equal(nump.c, np.asarray([1.0]))",
+      "    xp_assert_equal(denomp.c, np.asarray([1.0]))",
+      "    nump, denomp = pade([1.0], 0, 0)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from scipy.interpolate import pade",
+      "from scipy._lib._array_api import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_pade_trivial",
+      "test_pade_4term_exp",
+      "test_pade_ints",
+      "test_pade_complex"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_180_51fbb7fd6e4041ce_AI_Chariot_Legacy_666_1.0.0_20260508_test_pade.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_min_dependencies_readme.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_min_dependencies_readme.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5280,
+  "content_sha256": "1be2da6ff0b88e0c9455cdfc552f0f5db54ea07bb8dd4281f8914c14698d253a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 143,
+    "non_empty_lines": 112,
+    "char_count": 5280,
+    "preview_lines": [
+      "\"\"\"Tests for the minimum dependencies in README.rst and pyproject.toml\"\"\"",
+      "import os",
+      "import re",
+      "from collections import defaultdict",
+      "from pathlib import Path",
+      "import pytest",
+      "import sklearn",
+      "from sklearn._min_dependencies import dependent_packages",
+      "from sklearn.utils.fixes import parse_version",
+      "min_depencies_tag_to_packages_without_version = defaultdict(list)"
+    ],
+    "imports": [
+      "import os",
+      "import re",
+      "from collections import defaultdict",
+      "from pathlib import Path",
+      "import pytest",
+      "import sklearn",
+      "from sklearn._min_dependencies import dependent_packages",
+      "from sklearn.utils.fixes import parse_version"
+    ],
+    "classes": [],
+    "functions": [
+      "test_min_dependencies_readme",
+      "check_pyproject_section",
+      "test_min_dependencies_pyproject_toml"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_438_1be2da6ff0b88e0c_AI_Chariot_Legacy_666_1.0.0_20260508_test_min_dependencies_readme.py.json"
+}

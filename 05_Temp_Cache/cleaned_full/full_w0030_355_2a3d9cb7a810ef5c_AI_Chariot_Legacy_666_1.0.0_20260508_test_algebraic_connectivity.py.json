@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 355,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_algebraic_connectivity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_algebraic_connectivity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13737,
+  "content_sha256": "2a3d9cb7a810ef5c5714feeeb006c52c9c43ed976d4f39de1e214940ea150944",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 402,
+    "non_empty_lines": 360,
+    "char_count": 13737,
+    "preview_lines": [
+      "from math import sqrt",
+      "import pytest",
+      "np = pytest.importorskip(\"numpy\")",
+      "import networkx as nx",
+      "methods = (\"tracemin_pcg\", \"tracemin_lu\", \"lanczos\", \"lobpcg\")",
+      "def test_algebraic_connectivity_tracemin_chol():",
+      "    \"\"\"Test that \"tracemin_chol\" raises an exception.\"\"\"",
+      "    pytest.importorskip(\"scipy\")",
+      "    G = nx.barbell_graph(5, 4)",
+      "    with pytest.raises(nx.NetworkXError):"
+    ],
+    "imports": [
+      "from math import sqrt",
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestAlgebraicConnectivity",
+      "TestSpectralOrdering"
+    ],
+    "functions": [
+      "test_algebraic_connectivity_tracemin_chol",
+      "test_fiedler_vector_tracemin_chol",
+      "test_spectral_ordering_tracemin_chol",
+      "test_fiedler_vector_tracemin_unknown",
+      "test_spectral_bisection",
+      "check_eigenvector"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_355_2a3d9cb7a810ef5c_AI_Chariot_Legacy_666_1.0.0_20260508_test_algebraic_connectivity.py.json"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "run_id": "b2acafc815514942ab47ff963c67b987",
+  "generated_at": "2026-05-08T18:33:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_test.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_test.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2651,
+  "encoding": "utf-8-sig",
+  "sha256": "30d79030b037a0150233c4d2c8d6c143fb96d270dcd4611961d35d53078f026e",
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 71,
+    "char_count": 2651,
+    "preview_lines": [
+      "import networkx as nx",
+      "class BaseTestAttributeMixing:",
+      "    @classmethod",
+      "    def setup_class(cls):",
+      "        G = nx.Graph()",
+      "        G.add_nodes_from([0, 1], fish=\"one\")",
+      "        G.add_nodes_from([2, 3], fish=\"two\")",
+      "        G.add_nodes_from([4], fish=\"red\")",
+      "        G.add_nodes_from([5], fish=\"blue\")",
+      "        G.add_edges_from([(0, 1), (2, 3), (0, 4), (2, 5)])"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [
+      "BaseTestAttributeMixing",
+      "BaseTestDegreeMixing"
+    ],
+    "functions": []
+  },
+  "clean_status": "ok",
+  "warnings": [],
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_sample\\sample_30d79030b037_AI_Chariot_Legacy_666_1.0.0_20260508_base_test.py.json"
+}

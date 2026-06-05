@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_combsimp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_combsimp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3605,
+  "content_sha256": "5d93b23fcab1a30b1735baed7548a29d415351abb80d9be2be677ef82c3c2679",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 114,
+    "non_empty_lines": 88,
+    "char_count": 3605,
+    "preview_lines": [
+      "from sympy.core import Mul",
+      "from sympy.core.function import count_ops",
+      "from sympy.core.traversal import preorder_traversal, bottom_up",
+      "from sympy.functions.combinatorial.factorials import binomial, factorial",
+      "from sympy.functions import gamma",
+      "from sympy.simplify.gammasimp import gammasimp, _gammasimp",
+      "from sympy.utilities.timeutils import timethis",
+      "@timethis('combsimp')",
+      "def combsimp(expr):",
+      "    r\"\"\""
+    ],
+    "imports": [
+      "from sympy.core import Mul",
+      "from sympy.core.function import count_ops",
+      "from sympy.core.traversal import preorder_traversal, bottom_up",
+      "from sympy.functions.combinatorial.factorials import binomial, factorial",
+      "from sympy.functions import gamma",
+      "from sympy.simplify.gammasimp import gammasimp, _gammasimp",
+      "from sympy.utilities.timeutils import timethis"
+    ],
+    "classes": [],
+    "functions": [
+      "combsimp",
+      "_gamma_as_comb"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_488_5d93b23fcab1a30b_AI_Chariot_Legacy_666_1.0.0_20260508_combsimp.py.json"
+}

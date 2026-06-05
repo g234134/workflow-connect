@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 5,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_crowdstrike_aidr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_crowdstrike_aidr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13556,
+  "content_sha256": "35b4f4465950725be9e82325b364ca0133096c8ad7d6a96bdcc017e6bf3df09a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 359,
+    "non_empty_lines": 307,
+    "char_count": 13556,
+    "preview_lines": [
+      "import os",
+      "from typing import TYPE_CHECKING, Literal, Optional, Type",
+      "from typing_extensions import Any, override",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "    CustomGuardrail,",
+      "    log_guardrail_information,",
+      ")",
+      "from litellm.llms.custom_httpx.http_handler import ("
+    ],
+    "imports": [
+      "import os",
+      "from typing import TYPE_CHECKING, Literal, Optional, Type",
+      "from typing_extensions import Any, override",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.proxy.common_utils.callback_utils import (",
+      "from litellm.types.utils import GenericGuardrailAPIInputs",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj",
+      "from litellm.types.proxy.guardrails.guardrail_hooks.base import GuardrailConfigModel"
+    ],
+    "classes": [
+      "CrowdStrikeAIDRGuardrailMissingSecrets",
+      "CrowdStrikeAIDRHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_005_35b4f4465950725b_AI_Chariot_Legacy_666_1.0.0_20260508_crowdstrike_aidr.py.json"
+}

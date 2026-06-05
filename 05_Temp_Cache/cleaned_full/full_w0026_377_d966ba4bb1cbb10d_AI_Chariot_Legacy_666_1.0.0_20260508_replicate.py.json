@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_replicate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_replicate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6104,
+  "content_sha256": "d966ba4bb1cbb10dd285f6b064eb8af0c410b6eaa992193e98f36ab47b5d93c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 126,
+    "char_count": 6104,
+    "preview_lines": [
+      "from typing import Any, Optional, Union",
+      "from huggingface_hub.hf_api import InferenceProviderMapping",
+      "from huggingface_hub.inference._common import RequestParameters, _as_dict, _as_url",
+      "from huggingface_hub.inference._providers._common import TaskProviderHelper, filter_none",
+      "from huggingface_hub.utils import get_session",
+      "_PROVIDER = \"replicate\"",
+      "_BASE_URL = \"https://api.replicate.com\"",
+      "class ReplicateTask(TaskProviderHelper):",
+      "    def __init__(self, task: str):",
+      "        super().__init__(provider=_PROVIDER, base_url=_BASE_URL, task=task)"
+    ],
+    "imports": [
+      "from typing import Any, Optional, Union",
+      "from huggingface_hub.hf_api import InferenceProviderMapping",
+      "from huggingface_hub.inference._common import RequestParameters, _as_dict, _as_url",
+      "from huggingface_hub.inference._providers._common import TaskProviderHelper, filter_none",
+      "from huggingface_hub.utils import get_session"
+    ],
+    "classes": [
+      "ReplicateTask",
+      "ReplicateTextToImageTask",
+      "ReplicateTextToSpeechTask",
+      "ReplicateAutomaticSpeechRecognitionTask",
+      "ReplicateImageToImageTask"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_377_d966ba4bb1cbb10d_AI_Chariot_Legacy_666_1.0.0_20260508_replicate.py.json"
+}

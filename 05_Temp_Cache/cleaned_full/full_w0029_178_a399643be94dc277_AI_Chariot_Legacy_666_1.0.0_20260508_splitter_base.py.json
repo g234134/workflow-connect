@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_splitter_base.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_splitter_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34261,
+  "content_sha256": "a399643be94dc277397de1a2720d9a6cee0b54bf97fa35bcce934b0a9229fc8b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 898,
+    "non_empty_lines": 739,
+    "char_count": 34261,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import argparse",
+      "import copy",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass",
+      "from typing import NamedTuple, Sequence, Iterable, Any, List, Dict, Optional, Tuple",
+      "import logging",
+      "import torch",
+      "from torch.fx.passes.graph_manipulation import get_size_of_node",
+      "from torch.fx.node import map_arg"
+    ],
+    "imports": [
+      "import argparse",
+      "import copy",
+      "from collections import defaultdict",
+      "from dataclasses import dataclass",
+      "from typing import NamedTuple, Sequence, Iterable, Any, List, Dict, Optional, Tuple",
+      "import logging",
+      "import torch",
+      "from torch.fx.passes.graph_manipulation import get_size_of_node",
+      "from torch.fx.node import map_arg",
+      "from torch.fx._compatibility import compatibility",
+      "from .operator_support import (",
+      "from .graph_drawer import FxGraphDrawer",
+      "from .shape_prop import ShapeProp",
+      "from .split_utils import split_by_tags",
+      "from .tools_common import ("
+    ],
+    "classes": [
+      "_SplitterSettingBase",
+      "FxNetAccNodesFinder",
+      "FxNetSplitterInternalError",
+      "Subgraph",
+      "SplitResult",
+      "_SplitterBase"
+    ],
+    "functions": [
+      "generate_inputs_for_submodules"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_178_a399643be94dc277_AI_Chariot_Legacy_666_1.0.0_20260508_splitter_base.py.json"
+}

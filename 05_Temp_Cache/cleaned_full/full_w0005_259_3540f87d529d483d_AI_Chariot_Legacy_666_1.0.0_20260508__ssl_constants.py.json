@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__ssl_constants.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__ssl_constants.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1130,
+  "content_sha256": "3540f87d529d483d36ae2efe75bd2d9ced15a8b3fd687bb3992b5c5bbb40974f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 24,
+    "char_count": 1130,
+    "preview_lines": [
+      "import ssl",
+      "import sys",
+      "import typing",
+      "# Hold on to the original class so we can create it consistently",
+      "# even if we inject our own SSLContext into the ssl module.",
+      "_original_SSLContext = ssl.SSLContext",
+      "_original_super_SSLContext = super(_original_SSLContext, _original_SSLContext)",
+      "# CPython is known to be good, but non-CPython implementations",
+      "# may implement SSLContext differently so to be safe we don't",
+      "# subclass the SSLContext."
+    ],
+    "imports": [
+      "import ssl",
+      "import sys",
+      "import typing"
+    ],
+    "classes": [],
+    "functions": [
+      "_set_ssl_context_verify_mode"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_259_3540f87d529d483d_AI_Chariot_Legacy_666_1.0.0_20260508__ssl_constants.py.json"
+}

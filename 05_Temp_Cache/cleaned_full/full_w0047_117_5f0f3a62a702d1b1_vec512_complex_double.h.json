@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 117,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec512\\vec512_complex_double.h",
+  "name": "vec512_complex_double.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 24018,
+  "content_sha256": "5f0f3a62a702d1b1e4a22c14cc6849f26a8b4f2cdf634b074ea6cd4b49503c13",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 512,
+    "non_empty_lines": 481,
+    "char_count": 24018,
+    "preview_lines": [
+      "#pragma once",
+      "// DO NOT DEFINE STATIC DATA IN THIS HEADER!",
+      "// See Note [Do not compile initializers with AVX]",
+      "#include <c10/util/complex.h>",
+      "#include <c10/util/irange.h>",
+      "#include <ATen/cpu/vec/intrinsics.h>",
+      "#include <ATen/cpu/vec/vec_base.h>",
+      "#if defined(CPU_CAPABILITY_AVX512) && !defined(_MSC_VER)",
+      "#include <sleef.h>",
+      "#endif"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_117_5f0f3a62a702d1b1_vec512_complex_double.h.json"
+}

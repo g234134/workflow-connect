@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:44:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__tqdm_pandas.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__tqdm_pandas.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 888,
+  "content_sha256": "73d8e9b5482280de9ac510e145de1189ff7c4e6c5ea297359c5345848a5b1541",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 20,
+    "char_count": 888,
+    "preview_lines": [
+      "import sys",
+      "__author__ = \"github.com/casperdcl\"",
+      "__all__ = ['tqdm_pandas']",
+      "def tqdm_pandas(tclass, **tqdm_kwargs):",
+      "    \"\"\"",
+      "    Registers the given `tqdm` instance with",
+      "    `pandas.core.groupby.DataFrameGroupBy.progress_apply`.",
+      "    \"\"\"",
+      "    from tqdm import TqdmDeprecationWarning",
+      "    if isinstance(tclass, type) or (getattr(tclass, '__name__', '').startswith("
+    ],
+    "imports": [
+      "import sys",
+      "from tqdm import TqdmDeprecationWarning"
+    ],
+    "classes": [],
+    "functions": [
+      "tqdm_pandas"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_432_73d8e9b5482280de_AI_Chariot_Legacy_666_1.0.0_20260508__tqdm_pandas.py.json"
+}

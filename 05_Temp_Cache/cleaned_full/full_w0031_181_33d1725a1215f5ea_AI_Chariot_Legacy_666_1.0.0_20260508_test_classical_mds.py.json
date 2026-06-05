@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 181,
+  "generated_at": "2026-05-08T18:46:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_classical_mds.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_classical_mds.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2048,
+  "content_sha256": "33d1725a1215f5eada492b897efa5d78ef13b9ed69b25e3bdc2c1f57d2043eb0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 68,
+    "non_empty_lines": 45,
+    "char_count": 2048,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.decomposition import PCA",
+      "from sklearn.manifold import ClassicalMDS",
+      "from sklearn.metrics import euclidean_distances",
+      "def test_classical_mds_equivalent_to_pca():",
+      "    X, _ = load_iris(return_X_y=True)",
+      "    cmds = ClassicalMDS(n_components=2, metric=\"euclidean\")"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_allclose",
+      "from sklearn.datasets import load_iris",
+      "from sklearn.decomposition import PCA",
+      "from sklearn.manifold import ClassicalMDS",
+      "from sklearn.metrics import euclidean_distances"
+    ],
+    "classes": [],
+    "functions": [
+      "test_classical_mds_equivalent_to_pca",
+      "test_classical_mds_equivalent_on_data_and_distances",
+      "test_classical_mds_wrong_inputs",
+      "test_classical_mds_metric_params"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_181_33d1725a1215f5ea_AI_Chariot_Legacy_666_1.0.0_20260508_test_classical_mds.py.json"
+}

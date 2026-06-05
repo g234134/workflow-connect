@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 429,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkcairo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkcairo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 845,
+  "content_sha256": "25a1865e1f18e45c1566d82bc88b9c37de353a57ff3e7e9fe117bb56ec65d7e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 20,
+    "char_count": 845,
+    "preview_lines": [
+      "import sys",
+      "import numpy as np",
+      "from . import _backend_tk",
+      "from .backend_cairo import cairo, FigureCanvasCairo",
+      "from ._backend_tk import _BackendTk, FigureCanvasTk",
+      "class FigureCanvasTkCairo(FigureCanvasCairo, FigureCanvasTk):",
+      "    def draw(self):",
+      "        width = int(self.figure.bbox.width)",
+      "        height = int(self.figure.bbox.height)",
+      "        surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, width, height)"
+    ],
+    "imports": [
+      "import sys",
+      "import numpy as np",
+      "from . import _backend_tk",
+      "from .backend_cairo import cairo, FigureCanvasCairo",
+      "from ._backend_tk import _BackendTk, FigureCanvasTk"
+    ],
+    "classes": [
+      "FigureCanvasTkCairo",
+      "_BackendTkCairo"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_429_25a1865e1f18e45c_AI_Chariot_Legacy_666_1.0.0_20260508_backend_tkcairo.py.json"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 57,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_configuration_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_configuration_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 63447,
+  "content_sha256": "acaf7df8cffd60f0e45d19a23addd77881722369473865c63db3e17dea3ed94c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1355,
+    "non_empty_lines": 1130,
+    "char_count": 63447,
+    "preview_lines": [
+      "# Copyright 2018 The Google AI Language Team Authors and The HuggingFace Inc. team.",
+      "# Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "import math",
+      "import os",
+      "from collections.abc import Sequence",
+      "from dataclasses import MISSING, dataclass, fields",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING, Any, ClassVar, Literal, TypeVar, Union",
+      "from huggingface_hub import create_repo",
+      "from huggingface_hub.dataclasses import strict",
+      "from packaging import version",
+      "from typing_extensions import dataclass_transform",
+      "from . import __version__",
+      "from .dynamic_module_utils import custom_object_save",
+      "from .generation.configuration_utils import GenerationConfig",
+      "from .modeling_gguf_pytorch_utils import load_gguf_checkpoint",
+      "from .modeling_rope_utils import RotaryEmbeddingConfigMixin",
+      "from .utils import (",
+      "from .utils.generic import is_timm_config_dict",
+      "import torch"
+    ],
+    "classes": [
+      "PreTrainedConfig"
+    ],
+    "functions": [
+      "wrap_init_to_accept_kwargs",
+      "get_configuration_file",
+      "recursive_diff_dict",
+      "layer_type_validation"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_057_acaf7df8cffd60f0_AI_Chariot_Legacy_666_1.0.0_20260508_configuration_utils.py.json"
+}

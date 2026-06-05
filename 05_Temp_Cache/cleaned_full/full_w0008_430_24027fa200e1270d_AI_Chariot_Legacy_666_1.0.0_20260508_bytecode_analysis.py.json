@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bytecode_analysis.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bytecode_analysis.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9003,
+  "content_sha256": "24027fa200e1270d06fc0d8e17ef1546d1c7ef1de3bdfa888b7cd2e2cca387b8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 257,
+    "non_empty_lines": 213,
+    "char_count": 9003,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import bisect",
+      "import dataclasses",
+      "import dis",
+      "import sys",
+      "from typing import Any, Set, Union",
+      "TERMINAL_OPCODES = {",
+      "    dis.opmap[\"RETURN_VALUE\"],",
+      "    dis.opmap[\"JUMP_FORWARD\"],",
+      "    dis.opmap[\"RAISE_VARARGS\"],"
+    ],
+    "imports": [
+      "import bisect",
+      "import dataclasses",
+      "import dis",
+      "import sys",
+      "from typing import Any, Set, Union"
+    ],
+    "classes": [
+      "ReadsWrites",
+      "FixedPointBox",
+      "StackSize"
+    ],
+    "functions": [
+      "get_indexof",
+      "remove_dead_code",
+      "remove_pointless_jumps",
+      "propagate_line_nums",
+      "remove_extra_line_nums",
+      "livevars_analysis",
+      "stacksize_analysis"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_430_24027fa200e1270d_AI_Chariot_Legacy_666_1.0.0_20260508_bytecode_analysis.py.json"
+}

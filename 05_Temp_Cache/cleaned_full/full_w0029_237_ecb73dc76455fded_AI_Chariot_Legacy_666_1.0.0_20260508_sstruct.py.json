@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:46:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sstruct.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sstruct.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7236,
+  "content_sha256": "ecb73dc76455fded89bd223803f46cd2d335999a63620fe80092a13ff17dcedb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 190,
+    "char_count": 7236,
+    "preview_lines": [
+      "\"\"\"sstruct.py -- SuperStruct",
+      "Higher level layer on top of the struct module, enabling to",
+      "bind names to struct elements. The interface is similar to",
+      "struct, except the objects passed and returned are not tuples",
+      "(or argument lists), but dictionaries or instances.",
+      "Just like struct, we use fmt strings to describe a data",
+      "structure, except we use one line per element. Lines are",
+      "separated by newlines or semi-colons. Each line contains",
+      "either one of the special struct characters ('@', '=', '<',",
+      "'>' or '!') or a 'name:formatchar' combo (eg. 'myFloat:f')."
+    ],
+    "imports": [
+      "from fontTools.misc.fixedTools import fixedToFloat as fi2fl, floatToFixed as fl2fi",
+      "from fontTools.misc.textTools import tobytes, tostr",
+      "import struct",
+      "import re"
+    ],
+    "classes": [
+      "Error"
+    ],
+    "functions": [
+      "pack",
+      "unpack",
+      "unpack2",
+      "calcsize",
+      "getformat",
+      "_test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_237_ecb73dc76455fded_AI_Chariot_Legacy_666_1.0.0_20260508_sstruct.py.json"
+}

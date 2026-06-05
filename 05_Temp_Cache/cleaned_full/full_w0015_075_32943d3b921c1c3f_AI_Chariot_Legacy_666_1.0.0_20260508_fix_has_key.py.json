@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 75,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_has_key.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_has_key.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3196,
+  "content_sha256": "32943d3b921c1c3f0d3776d19e5120806990b817bc99a7e22799847abfda1f63",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 95,
+    "char_count": 3196,
+    "preview_lines": [
+      "# Copyright 2006 Google, Inc. All Rights Reserved.",
+      "# Licensed to PSF under a Contributor Agreement.",
+      "\"\"\"Fixer for has_key().",
+      "Calls to .has_key() methods are expressed in terms of the 'in'",
+      "operator:",
+      "    d.has_key(k) -> k in d",
+      "CAVEATS:",
+      "1) While the primary target of this fixer is dict.has_key(), the",
+      "   fixer will change any has_key() method call, regardless of its",
+      "   class."
+    ],
+    "imports": [
+      "from .. import pytree",
+      "from .. import fixer_base",
+      "from ..fixer_util import Name, parenthesize"
+    ],
+    "classes": [
+      "FixHasKey"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_075_32943d3b921c1c3f_AI_Chariot_Legacy_666_1.0.0_20260508_fix_has_key.py.json"
+}

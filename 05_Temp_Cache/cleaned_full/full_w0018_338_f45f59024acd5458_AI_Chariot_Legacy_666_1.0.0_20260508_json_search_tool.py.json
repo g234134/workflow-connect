@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 338,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_json_search_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_json_search_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1592,
+  "content_sha256": "f45f59024acd545883d406ee0018f5bf0a2ad16e5f9562d46afa46c9efd514f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 51,
+    "non_empty_lines": 39,
+    "char_count": 1592,
+    "preview_lines": [
+      "from typing import Any",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.tools.rag.rag_tool import RagTool",
+      "class FixedJSONSearchToolSchema(BaseModel):",
+      "    \"\"\"Input for JSONSearchTool.\"\"\"",
+      "    search_query: str = Field(",
+      "        ...,",
+      "        description=\"Mandatory search query you want to use to search the JSON's content\",",
+      "    )",
+      "class JSONSearchToolSchema(FixedJSONSearchToolSchema):"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from pydantic import BaseModel, Field",
+      "from crewai_tools.tools.rag.rag_tool import RagTool"
+    ],
+    "classes": [
+      "FixedJSONSearchToolSchema",
+      "JSONSearchToolSchema",
+      "JSONSearchTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_338_f45f59024acd5458_AI_Chariot_Legacy_666_1.0.0_20260508_json_search_tool.py.json"
+}

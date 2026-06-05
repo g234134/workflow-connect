@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_glove2word2vec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_glove2word2vec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4111,
+  "content_sha256": "ec7095ef5f073cfe12e6edbb10f058be2a2cf23c35f1f13e55522c2a065413e7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 95,
+    "char_count": 4111,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2016 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Copyright (C) 2016 Manas Ranjan Kar <manasrkar91@gmail.com>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"This script allows to convert GloVe vectors into the word2vec. Both files are",
+      "presented in text format and almost identical except that word2vec includes",
+      "number of vectors and its dimension which is only difference regard to GloVe.",
+      "Notes"
+    ],
+    "imports": [
+      "import sys",
+      "import logging",
+      "import argparse",
+      "from gensim import utils",
+      "from gensim.utils import deprecated",
+      "from gensim.models.keyedvectors import KeyedVectors"
+    ],
+    "classes": [],
+    "functions": [
+      "get_glove_info",
+      "glove2word2vec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_127_ec7095ef5f073cfe_AI_Chariot_Legacy_666_1.0.0_20260508_glove2word2vec.py.json"
+}

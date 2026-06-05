@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lbfgsb_hessinv.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lbfgsb_hessinv.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1180,
+  "content_sha256": "f3f06f8f49290759af2b77e6877bffbec602ac7f221539e66958ea7b51274860",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 43,
+    "non_empty_lines": 29,
+    "char_count": 1180,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "import scipy.linalg",
+      "from scipy.optimize import minimize",
+      "def test_1():",
+      "    def f(x):",
+      "        return x**4, 4*x**3",
+      "    for gtol in [1e-8, 1e-12, 1e-20]:",
+      "        for maxcor in range(20, 35):",
+      "            result = minimize(fun=f, jac=True, method='L-BFGS-B', x0=20,"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_allclose",
+      "import scipy.linalg",
+      "from scipy.optimize import minimize"
+    ],
+    "classes": [],
+    "functions": [
+      "test_1",
+      "test_2"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_238_f3f06f8f49290759_AI_Chariot_Legacy_666_1.0.0_20260508_test_lbfgsb_hessinv.py.json"
+}

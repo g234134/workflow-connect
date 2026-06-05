@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 295,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_polymatrix.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_polymatrix.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7353,
+  "content_sha256": "a65d95acdfddd9718e547bef02768d43391d153750823b7d78f828e35b28051b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 185,
+    "non_empty_lines": 145,
+    "char_count": 7353,
+    "preview_lines": [
+      "from sympy.testing.pytest import raises",
+      "from sympy.polys.polymatrix import PolyMatrix",
+      "from sympy.polys import Poly",
+      "from sympy.core.singleton import S",
+      "from sympy.matrices.dense import Matrix",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.abc import x, y",
+      "def _test_polymatrix():",
+      "    pm1 = PolyMatrix([[Poly(x**2, x), Poly(-x, x)], [Poly(x**3, x), Poly(-1 + x, x)]])"
+    ],
+    "imports": [
+      "from sympy.testing.pytest import raises",
+      "from sympy.polys.polymatrix import PolyMatrix",
+      "from sympy.polys import Poly",
+      "from sympy.core.singleton import S",
+      "from sympy.matrices.dense import Matrix",
+      "from sympy.polys.domains.integerring import ZZ",
+      "from sympy.polys.domains.rationalfield import QQ",
+      "from sympy.abc import x, y"
+    ],
+    "classes": [],
+    "functions": [
+      "_test_polymatrix",
+      "test_polymatrix_constructor",
+      "test_polymatrix_eq",
+      "test_polymatrix_from_Matrix",
+      "test_polymatrix_repr",
+      "test_polymatrix_getitem",
+      "test_polymatrix_arithmetic",
+      "test_polymatrix_manipulations",
+      "test_polymatrix_ones_zeros",
+      "test_polymatrix_rref",
+      "test_polymatrix_nullspace"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_295_a65d95acdfddd971_AI_Chariot_Legacy_666_1.0.0_20260508_test_polymatrix.py.json"
+}

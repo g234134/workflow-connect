@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 411,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nmslib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nmslib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9847,
+  "content_sha256": "062bc67d5ab1c5c24a98a43e3013705e760c87792da7227ea89d74c8fc9c6285",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 244,
+    "non_empty_lines": 197,
+    "char_count": 9847,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2019 Radim Rehurek <me@radimrehurek.com>",
+      "# Copyright (C) 2019 Masahiro Kazama <kazama.masa@gmail.com>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"",
+      "This module integrates `NMSLIB <https://github.com/nmslib/nmslib>`_ fast similarity",
+      "search with Gensim's :class:`~gensim.models.word2vec.Word2Vec`, :class:`~gensim.models.doc2vec.Doc2Vec`,",
+      ":class:`~gensim.models.fasttext.FastText` and :class:`~gensim.models.keyedvectors.KeyedVectors`",
+      "vector embeddings."
+    ],
+    "imports": [
+      "from __future__ import absolute_import",
+      "import numpy as np",
+      "import pickle as _pickle",
+      "import sys",
+      "from smart_open import open",
+      "import nmslib",
+      "from gensim import utils",
+      "from gensim.models.doc2vec import Doc2Vec",
+      "from gensim.models.word2vec import Word2Vec",
+      "from gensim.models.fasttext import FastText",
+      "from gensim.models import KeyedVectors",
+      "from :class:`~gensim.models.word2vec.Word2Vec`, :class:`~gensim.models.doc2vec.Doc2Vec`,"
+    ],
+    "classes": [
+      "NmslibIndexer"
+    ],
+    "functions": [
+      "check_nmslib_compatibility"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_411_062bc67d5ab1c5c2_AI_Chariot_Legacy_666_1.0.0_20260508_nmslib.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_tools\\math\\compute_currency_conversion.py",
+  "name": "compute_currency_conversion.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 851,
+  "content_sha256": "942d2e9d8fdad4a22dd4fe366096d7a9602c1509feb022b19a46179cfc36056d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 17,
+    "char_count": 851,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "@with_requirements([\"sympy\"])",
+      "def compute_currency_conversion(amount, exchange_rate):",
+      "    \"\"\"Compute the currency conversion of the given amount using the provided exchange rate.",
+      "    Args:",
+      "    amount (float): The amount to be converted.",
+      "    exchange_rate (float): The exchange rate to use for the conversion, represented as the amount of second currency equivalent to one unit of the first currency."
+    ],
+    "imports": [
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "from sympy import Rational"
+    ],
+    "classes": [],
+    "functions": [
+      "compute_currency_conversion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_436_942d2e9d8fdad4a2_compute_currency_conversion.py.json"
+}

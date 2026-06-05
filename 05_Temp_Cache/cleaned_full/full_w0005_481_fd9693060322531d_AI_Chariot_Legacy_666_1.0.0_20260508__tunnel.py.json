@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 481,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__tunnel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__tunnel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14898,
+  "content_sha256": "fd9693060322531d2c5fcb0b14de12650ec47d85023a6484a1db622a1aef5556",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 484,
+    "non_empty_lines": 387,
+    "char_count": 14894,
+    "preview_lines": [
+      "\"\"\"TCP tunnel for accessing services running inside sandboxes.",
+      "Establishes a WebSocket connection to the daemon's ``/tunnel`` endpoint,",
+      "runs a yamux multiplexing session on top, and forwards local TCP connections",
+      "through yamux streams to the target port inside the sandbox.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import logging",
+      "import socket",
+      "import struct"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import logging",
+      "import socket",
+      "import struct",
+      "import threading",
+      "import time",
+      "from collections.abc import Mapping",
+      "from typing import TYPE_CHECKING, Any, Optional",
+      "from langsmith.sandbox._helpers import merge_headers",
+      "from langsmith.sandbox._yamux import YamuxSession, YamuxStream",
+      "from websockets.sync.client import connect as ws_connect"
+    ],
+    "classes": [
+      "_WSAdapter",
+      "Tunnel",
+      "AsyncTunnel"
+    ],
+    "functions": [
+      "_write_connect_header",
+      "_read_status",
+      "_bridge",
+      "_ensure_websockets"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_481_fd9693060322531d_AI_Chariot_Legacy_666_1.0.0_20260508__tunnel.py.json"
+}

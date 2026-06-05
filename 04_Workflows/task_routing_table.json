@@ -1,0 +1,160 @@
+{
+  "routing_schema_version": "v1",
+  "ticket": "HQ-P3-TASK-ROUTING",
+  "phase": "Phase 3",
+  "authority": "04_Workflows/TASK_ROUTING.md",
+  "default_route": {
+    "task_type": "hq.coordination",
+    "worker": "HQ-Coordinator",
+    "cabin": null,
+    "domain": "HQ",
+    "dark_agent": null,
+    "runners": [],
+    "enter_runner": null
+  },
+  "phase_gates": {
+    "dark_ops_worker": "blocked"
+  },
+  "routes": [
+    {
+      "task_type": "hq.coordination",
+      "worker": "HQ-Coordinator",
+      "cabin": null,
+      "domain": "HQ",
+      "dark_agent": null,
+      "runners": [],
+      "enter_runner": null,
+      "keywords": ["協調", "任務卡", "驗收定義", "phase", "門檻", "coordinator"]
+    },
+    {
+      "task_type": "hq.governance",
+      "worker": "HQ-Governance-Worker",
+      "cabin": null,
+      "domain": "HQ",
+      "dark_agent": null,
+      "runners": ["harness_constitution", "engineering_contract", "department_map"],
+      "enter_runner": null,
+      "keywords": ["黑板", "progress", "conditions", "master_map", "agents.md", "治理", "governance", "定稿", "w0", "w1", "w2", "w3", "w5"]
+    },
+    {
+      "task_type": "hq.tooling",
+      "worker": "HQ-Tooling-Worker",
+      "cabin": null,
+      "domain": "HQ",
+      "dark_agent": null,
+      "runners": ["hq_config_root", "hq_mcp_registry", "hq_playwright_mcp"],
+      "enter_runner": null,
+      "keywords": ["mcp", "tooling", "工具層", "playwright", "9router", "graphify", "superpowers", "agentmemory"]
+    },
+    {
+      "task_type": "hq.qa",
+      "worker": "QA-Reviewer",
+      "cabin": null,
+      "domain": "HQ",
+      "dark_agent": null,
+      "runners": [],
+      "enter_runner": null,
+      "keywords": ["盲測", "qa", "唯讀驗證", "review", "w4"]
+    },
+    {
+      "task_type": "chariot.smoke",
+      "worker": "HQ-Governance-Worker",
+      "cabin": null,
+      "domain": "Chariot",
+      "dark_agent": null,
+      "runners": ["smoke_test_keys", "smoke_test_keys_extended"],
+      "enter_runner": null,
+      "keywords": ["smoke", "盲測金鑰", "三鑰", "_smoke_test_keys"]
+    },
+    {
+      "task_type": "chariot.factory",
+      "worker": "HQ-Governance-Worker",
+      "cabin": "gov_main",
+      "domain": "Chariot",
+      "dark_agent": null,
+      "runners": ["factory_wave_01", "launch_warpath", "register_fingerprints_baseline"],
+      "enter_runner": "enter_main",
+      "keywords": ["wave", "精煉", "warpath", "factory", "清洗", "registry", "指紋", "inbound"]
+    },
+    {
+      "task_type": "chariot.scout",
+      "worker": "HQ-Governance-Worker",
+      "cabin": "gov_agency",
+      "domain": "Chariot",
+      "dark_agent": null,
+      "runners": ["scout_engine_py", "scout_engine_start"],
+      "enter_runner": "enter_agency",
+      "keywords": ["scout", "偵察", "playwright", "beautifulsoup", "agency"]
+    },
+    {
+      "task_type": "chariot.telegram",
+      "worker": "HQ-Governance-Worker",
+      "cabin": "gov_main",
+      "domain": "Chariot",
+      "dark_agent": null,
+      "runners": ["telegram_listener_start", "telegram_listener_stop"],
+      "enter_runner": "enter_main",
+      "keywords": ["telegram", "監聽", "listener"]
+    },
+    {
+      "task_type": "dark.infra",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "Infra",
+      "runners": ["docker_compose_gov_core_system", "gov_core_orchestration_smoke"],
+      "enter_runner": null,
+      "keywords": ["postgres", "qdrant", "docker", "infra", "health", "phase1_verify"]
+    },
+    {
+      "task_type": "dark.data",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "Data",
+      "runners": ["pipeline_meta_sdk", "code_cleaner_throttled_agent"],
+      "enter_runner": null,
+      "keywords": ["ingest", "verify", "data_pipeline", "pipeline_meta", "清洗戰役"]
+    },
+    {
+      "task_type": "dark.rag",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "RAG",
+      "runners": [],
+      "enter_runner": null,
+      "keywords": ["rag", "retrieval", "graphrag", "向量", "qdrant query"]
+    },
+    {
+      "task_type": "dark.orchestration",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "Governance",
+      "runners": ["gov_core_orchestration_main", "gov_core_checkpoint_module"],
+      "enter_runner": null,
+      "keywords": ["orchestrator", "langgraph", "checkpoint", "編排", "ingest_verify"]
+    },
+    {
+      "task_type": "dark.governance",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "Governance",
+      "runners": ["gov_core_orchestration_main"],
+      "enter_runner": null,
+      "keywords": ["master_status", "handoff", "gov agent", "dark_ops"]
+    },
+    {
+      "task_type": "dark.smoke",
+      "worker": "DarkOps-Worker",
+      "cabin": "gov_core_system",
+      "domain": "Dark",
+      "dark_agent": "Governance",
+      "runners": ["gov_core_orchestration_smoke"],
+      "enter_runner": null,
+      "keywords": ["gov core", "gov_core", "暗部 smoke", "統包艙"]
+    }
+  ]
+}

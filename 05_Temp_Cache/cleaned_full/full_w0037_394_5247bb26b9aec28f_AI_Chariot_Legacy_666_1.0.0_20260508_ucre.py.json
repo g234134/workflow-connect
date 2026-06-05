@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ucre.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ucre.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7103,
+  "content_sha256": "5247bb26b9aec28ff2587271d3ea76a946bffb2bdd42e83dcbda9630e2bbf2fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 264,
+    "non_empty_lines": 228,
+    "char_count": 7103,
+    "preview_lines": [
+      "from uc_micro.categories import Cc, Cf, P, Z",
+      "from uc_micro.properties import Any",
+      "SRC_ANY = Any.REGEX",
+      "SRC_CC = Cc.REGEX",
+      "SRC_CF = Cf.REGEX",
+      "SRC_P = P.REGEX",
+      "SRC_Z = Z.REGEX",
+      "# \\p{\\Z\\P\\Cc\\CF} (white spaces + control + format + punctuation)",
+      "SRC_ZPCC = \"|\".join([SRC_Z, SRC_P, SRC_CC])",
+      "# \\p{\\Z\\Cc} (white spaces + control)"
+    ],
+    "imports": [
+      "from uc_micro.categories import Cc, Cf, P, Z",
+      "from uc_micro.properties import Any"
+    ],
+    "classes": [],
+    "functions": [
+      "_re_host_terminator",
+      "_re_src_path",
+      "build_re"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_394_5247bb26b9aec28f_AI_Chariot_Legacy_666_1.0.0_20260508_ucre.py.json"
+}

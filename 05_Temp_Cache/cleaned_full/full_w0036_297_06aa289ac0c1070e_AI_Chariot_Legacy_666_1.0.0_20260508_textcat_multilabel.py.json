@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 297,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_textcat_multilabel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_textcat_multilabel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5651,
+  "content_sha256": "06aa289ac0c1070ebd50f52becfa99dc3b49e5b629522fd41d419797c77278b4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 176,
+    "non_empty_lines": 148,
+    "char_count": 5651,
+    "preview_lines": [
+      "import importlib",
+      "from itertools import islice",
+      "from typing import Any, Callable, Dict, Iterable, Optional",
+      "from thinc.api import Config, Model",
+      "from ..errors import Errors",
+      "from ..language import Language",
+      "from ..scorer import Scorer",
+      "from ..training import Example, validate_get_examples",
+      "from ..vocab import Vocab",
+      "from .textcat import TextCategorizer"
+    ],
+    "imports": [
+      "import importlib",
+      "from itertools import islice",
+      "from typing import Any, Callable, Dict, Iterable, Optional",
+      "from thinc.api import Config, Model",
+      "from ..errors import Errors",
+      "from ..language import Language",
+      "from ..scorer import Scorer",
+      "from ..training import Example, validate_get_examples",
+      "from ..vocab import Vocab",
+      "from .textcat import TextCategorizer"
+    ],
+    "classes": [
+      "MultiLabel_TextCategorizer"
+    ],
+    "functions": [
+      "textcat_multilabel_score",
+      "make_textcat_multilabel_scorer",
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_297_06aa289ac0c1070e_AI_Chariot_Legacy_666_1.0.0_20260508_textcat_multilabel.py.json"
+}

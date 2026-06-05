@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_getpass.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_getpass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5990,
+  "content_sha256": "e74fd445337ff503223dd8aa4bdd7d04917067d00c796a10bedb7a1381a4960a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 185,
+    "non_empty_lines": 156,
+    "char_count": 5990,
+    "preview_lines": [
+      "\"\"\"Utilities to get a password and/or the current user name.",
+      "getpass(prompt[, stream]) - Prompt for a password, with echo turned off.",
+      "getuser() - Get the user name from the environment or password database.",
+      "GetPassWarning - This UserWarning is issued when getpass() cannot prevent",
+      "                 echoing of the password contents while reading.",
+      "On Windows, the msvcrt module will be used.",
+      "\"\"\"",
+      "# Authors: Piers Lauder (original)",
+      "#          Guido van Rossum (Windows support and cleanup)",
+      "#          Gregory P. Smith (tty support & GetPassWarning)"
+    ],
+    "imports": [
+      "import contextlib",
+      "import io",
+      "import os",
+      "import sys",
+      "import warnings",
+      "import pwd",
+      "import termios",
+      "import msvcrt"
+    ],
+    "classes": [
+      "GetPassWarning"
+    ],
+    "functions": [
+      "unix_getpass",
+      "win_getpass",
+      "fallback_getpass",
+      "_raw_input",
+      "getuser"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_092_e74fd445337ff503_AI_Chariot_Legacy_666_1.0.0_20260508_getpass.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 154,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_operatorordering.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_operatorordering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2003,
+  "content_sha256": "485bc97eb071ade320301dcf1295c6713bceff5d773e2d4ef89728f80f7f6952",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 38,
+    "char_count": 2003,
+    "preview_lines": [
+      "from sympy.physics.quantum import Dagger",
+      "from sympy.physics.quantum.boson import BosonOp",
+      "from sympy.physics.quantum.fermion import FermionOp",
+      "from sympy.physics.quantum.operatorordering import (normal_order,",
+      "                                                 normal_ordered_form)",
+      "def test_normal_order():",
+      "    a = BosonOp('a')",
+      "    c = FermionOp('c')",
+      "    assert normal_order(a * Dagger(a)) == Dagger(a) * a",
+      "    assert normal_order(Dagger(a) * a) == Dagger(a) * a"
+    ],
+    "imports": [
+      "from sympy.physics.quantum import Dagger",
+      "from sympy.physics.quantum.boson import BosonOp",
+      "from sympy.physics.quantum.fermion import FermionOp",
+      "from sympy.physics.quantum.operatorordering import (normal_order,"
+    ],
+    "classes": [],
+    "functions": [
+      "test_normal_order",
+      "test_normal_ordered_form"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_154_485bc97eb071ade3_AI_Chariot_Legacy_666_1.0.0_20260508_test_operatorordering.py.json"
+}

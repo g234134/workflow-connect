@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 176,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py",
+  "name": "api.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11424,
+  "content_sha256": "9d2290ebcd5c04633da10d6b4b9c3576a50a0926fff6cd3e731e1e257dc62b8f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 288,
+    "non_empty_lines": 252,
+    "char_count": 11424,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "import sys",
+      "import uuid",
+      "from dataclasses import dataclass, field",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union"
+    ],
+    "imports": [
+      "import sys",
+      "import uuid",
+      "from dataclasses import dataclass, field",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Union",
+      "import torch.distributed.elastic.rendezvous.registry as rdzv_registry",
+      "from torch.distributed.elastic import events, metrics",
+      "from torch.distributed.elastic.agent.server.api import WorkerSpec",
+      "from torch.distributed.elastic.agent.server.local_elastic_agent import LocalElasticAgent",
+      "from torch.distributed.elastic.multiprocessing import SignalException, Std",
+      "from torch.distributed.elastic.multiprocessing.errors import ChildFailedError",
+      "from torch.distributed.elastic.rendezvous import RendezvousParameters",
+      "from torch.distributed.elastic.rendezvous.utils import parse_rendezvous_endpoint",
+      "from torch.distributed.elastic.utils.logging import get_logger"
+    ],
+    "classes": [
+      "LaunchConfig",
+      "elastic_launch"
+    ],
+    "functions": [
+      "_get_entrypoint_name",
+      "_get_addr_and_port",
+      "launch_agent"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_176_9d2290ebcd5c0463_api.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 18,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_arc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_arc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5966,
+  "content_sha256": "fa353b17780efc37533ba32b0db38bc6614167f87979bd3612add9fc86b7e4dc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 154,
+    "non_empty_lines": 119,
+    "char_count": 5966,
+    "preview_lines": [
+      "\"\"\"Convert SVG Path's elliptical arcs to Bezier curves.",
+      "The code is mostly adapted from Blink's SVGPathNormalizer::DecomposeArcToCubic",
+      "https://github.com/chromium/chromium/blob/93831f2/third_party/",
+      "blink/renderer/core/svg/svg_path_parser.cc#L169-L278",
+      "\"\"\"",
+      "from fontTools.misc.transform import Identity, Scale",
+      "from math import atan2, ceil, cos, fabs, isfinite, pi, radians, sin, sqrt, tan",
+      "TWO_PI = 2 * pi",
+      "PI_OVER_TWO = 0.5 * pi",
+      "def _map_point(matrix, pt):"
+    ],
+    "imports": [
+      "from fontTools.misc.transform import Identity, Scale",
+      "from math import atan2, ceil, cos, fabs, isfinite, pi, radians, sin, sqrt, tan"
+    ],
+    "classes": [
+      "EllipticalArc"
+    ],
+    "functions": [
+      "_map_point"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_018_fa353b17780efc37_AI_Chariot_Legacy_666_1.0.0_20260508_arc.py.json"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 279,
+  "generated_at": "2026-05-08T18:48:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\nn\\parallel\\comm.py",
+  "name": "comm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10882,
+  "content_sha256": "e5173f49815049e9adae33a16a704e0abeb39553648361f51638e79f3b7eeda8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 236,
+    "non_empty_lines": 205,
+    "char_count": 10882,
+    "preview_lines": [
+      "import warnings",
+      "import torch",
+      "from torch.cuda import nccl",
+      "from torch._utils import _take_tensors, _flatten_dense_tensors, \\",
+      "    _unflatten_dense_tensors, _reorder_tensors_as, _get_device_index, _handle_complex",
+      "from typing import List",
+      "def broadcast(tensor, devices=None, *, out=None):",
+      "    r\"\"\"Broadcasts a tensor to specified GPU devices.",
+      "    Args:",
+      "        tensor (Tensor): tensor to broadcast. Can be on CPU or GPU."
+    ],
+    "imports": [
+      "import warnings",
+      "import torch",
+      "from torch.cuda import nccl",
+      "from torch._utils import _take_tensors, _flatten_dense_tensors, \\",
+      "from typing import List"
+    ],
+    "classes": [],
+    "functions": [
+      "broadcast",
+      "broadcast_coalesced",
+      "reduce_add",
+      "reduce_add_coalesced",
+      "scatter",
+      "gather"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_279_e5173f49815049e9_comm.py.json"
+}

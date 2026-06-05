@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 170,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_benchmark_sam2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_benchmark_sam2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22468,
+  "content_sha256": "d8006cd2fcf50796cdd0469151432cb6f99ecf8863b75e6d78b2b73dda8409c8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 638,
+    "non_empty_lines": 544,
+    "char_count": 22468,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "\"\"\"",
+      "Benchmark performance of SAM2 encoder with ORT or PyTorch. See benchmark_sam2.sh for usage.",
+      "\"\"\"",
+      "import argparse",
+      "import csv",
+      "import statistics"
+    ],
+    "imports": [
+      "import argparse",
+      "import csv",
+      "import statistics",
+      "import time",
+      "from collections.abc import Mapping",
+      "from datetime import datetime",
+      "import torch",
+      "from image_decoder import SAM2ImageDecoder",
+      "from image_encoder import SAM2ImageEncoder",
+      "from sam2_utils import decoder_shape_dict, encoder_shape_dict, load_sam2_model",
+      "from onnxruntime import InferenceSession, SessionOptions, get_available_providers",
+      "from onnxruntime.transformers.io_binding_helper import CudaSession",
+      "import nvtx  # noqa: PLC0415",
+      "from cuda import cudart  # noqa: PLC0415"
+    ],
+    "classes": [
+      "TestConfig",
+      "OrtTestSession"
+    ],
+    "functions": [
+      "create_ort_session",
+      "create_session",
+      "measure_latency",
+      "run_torch",
+      "run_test",
+      "run_perf_test",
+      "_parse_arguments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_170_d8006cd2fcf50796_AI_Chariot_Legacy_666_1.0.0_20260508_benchmark_sam2.py.json"
+}

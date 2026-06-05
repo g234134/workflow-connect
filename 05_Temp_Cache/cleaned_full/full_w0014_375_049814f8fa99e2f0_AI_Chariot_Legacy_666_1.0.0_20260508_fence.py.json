@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 375,
+  "generated_at": "2026-05-08T18:45:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fence.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fence.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2537,
+  "content_sha256": "049814f8fa99e2f0250aa19cadcf14b5d2e9249c8c79158df86f8ea7ecf1acc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 101,
+    "non_empty_lines": 71,
+    "char_count": 2537,
+    "preview_lines": [
+      "# fences (``` lang, ~~~ lang)",
+      "import logging",
+      "from .state_block import StateBlock",
+      "LOGGER = logging.getLogger(__name__)",
+      "def fence(state: StateBlock, startLine: int, endLine: int, silent: bool) -> bool:",
+      "    LOGGER.debug(\"entering fence: %s, %s, %s, %s\", state, startLine, endLine, silent)",
+      "    haveEndMarker = False",
+      "    pos = state.bMarks[startLine] + state.tShift[startLine]",
+      "    maximum = state.eMarks[startLine]",
+      "    if state.is_code_block(startLine):"
+    ],
+    "imports": [
+      "import logging",
+      "from .state_block import StateBlock"
+    ],
+    "classes": [],
+    "functions": [
+      "fence"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_375_049814f8fa99e2f0_AI_Chariot_Legacy_666_1.0.0_20260508_fence.py.json"
+}

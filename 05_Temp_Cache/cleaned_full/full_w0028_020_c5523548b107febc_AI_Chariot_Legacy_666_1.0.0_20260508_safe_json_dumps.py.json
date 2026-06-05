@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 20,
+  "generated_at": "2026-05-08T18:46:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_safe_json_dumps.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_safe_json_dumps.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1922,
+  "content_sha256": "c5523548b107febc7e170b2ec030a99559671ceb335223f0d1dd0c50e43761a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 52,
+    "non_empty_lines": 47,
+    "char_count": 1922,
+    "preview_lines": [
+      "import json",
+      "from typing import Any, Union",
+      "from litellm.constants import DEFAULT_MAX_RECURSE_DEPTH",
+      "def safe_dumps(data: Any, max_depth: int = DEFAULT_MAX_RECURSE_DEPTH) -> str:",
+      "    \"\"\"",
+      "    Recursively serialize data while detecting circular references.",
+      "    If a circular reference is detected then a marker string is returned.",
+      "    \"\"\"",
+      "    def _serialize(obj: Any, seen: set, depth: int) -> Any:",
+      "        # Check for maximum depth."
+    ],
+    "imports": [
+      "import json",
+      "from typing import Any, Union",
+      "from litellm.constants import DEFAULT_MAX_RECURSE_DEPTH"
+    ],
+    "classes": [],
+    "functions": [
+      "safe_dumps"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_020_c5523548b107febc_AI_Chariot_Legacy_666_1.0.0_20260508_safe_json_dumps.py.json"
+}

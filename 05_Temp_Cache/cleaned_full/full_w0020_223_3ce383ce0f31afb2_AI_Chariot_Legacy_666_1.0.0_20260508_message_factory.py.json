@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:45:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_message_factory.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_message_factory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8271,
+  "content_sha256": "3ce383ce0f31afb27660bed682d59e272db72807e3ab3da6794ce69885030fa1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 233,
+    "non_empty_lines": 189,
+    "char_count": 8271,
+    "preview_lines": [
+      "# Protocol Buffers - Google's data interchange format",
+      "# Copyright 2008 Google Inc.  All rights reserved.",
+      "#",
+      "# Use of this source code is governed by a BSD-style",
+      "# license that can be found in the LICENSE file or at",
+      "# https://developers.google.com/open-source/licenses/bsd",
+      "\"\"\"Provides a factory class for generating dynamic messages.",
+      "The easiest way to use this class is if you have access to the FileDescriptor",
+      "protos containing the messages you want to create you can just do the following:",
+      "message_classes = message_factory.GetMessages(iterable_of_file_descriptors)"
+    ],
+    "imports": [
+      "import warnings",
+      "from google.protobuf.internal import api_implementation",
+      "from google.protobuf import descriptor_pool",
+      "from google.protobuf import message",
+      "from google.protobuf.internal import python_message as message_impl",
+      "from google.protobuf.pyext import cpp_message as message_impl  # pylint: disable=g-import-not-at-top"
+    ],
+    "classes": [
+      "MessageFactory"
+    ],
+    "functions": [
+      "GetMessageClass",
+      "GetMessageClassesForFiles",
+      "_InternalCreateMessageClass",
+      "GetMessages"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_223_3ce383ce0f31afb2_AI_Chariot_Legacy_666_1.0.0_20260508_message_factory.py.json"
+}

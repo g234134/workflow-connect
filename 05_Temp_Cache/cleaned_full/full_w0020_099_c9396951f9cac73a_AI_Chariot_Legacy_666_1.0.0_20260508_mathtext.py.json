@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 99,
+  "generated_at": "2026-05-08T18:45:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mathtext.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mathtext.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5104,
+  "content_sha256": "c9396951f9cac73ac597b5cd8f2b82fb1301067c54b9f53a195c10ca1400236a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 140,
+    "non_empty_lines": 114,
+    "char_count": 5104,
+    "preview_lines": [
+      "r\"\"\"",
+      "A module for parsing a subset of the TeX math syntax and rendering it to a",
+      "Matplotlib backend.",
+      "For a tutorial of its usage, see :ref:`mathtext`.  This",
+      "document is primarily concerned with implementation details.",
+      "The module uses pyparsing_ to parse the TeX expression.",
+      ".. _pyparsing: https://pypi.org/project/pyparsing/",
+      "The Bakoma distribution of the TeX Computer Modern fonts, and STIX",
+      "fonts are supported.  There is experimental support for using",
+      "arbitrary fonts, but results may vary without proper tweaking and"
+    ],
+    "imports": [
+      "import functools",
+      "import logging",
+      "import matplotlib as mpl",
+      "from matplotlib import _api, _mathtext",
+      "from matplotlib.ft2font import LoadFlags",
+      "from matplotlib.font_manager import FontProperties",
+      "from ._mathtext import (  # noqa: F401, reexported API",
+      "from matplotlib.backends import backend_agg",
+      "from matplotlib import figure"
+    ],
+    "classes": [
+      "MathTextParser"
+    ],
+    "functions": [
+      "math_to_image"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_099_c9396951f9cac73a_AI_Chariot_Legacy_666_1.0.0_20260508_mathtext.py.json"
+}

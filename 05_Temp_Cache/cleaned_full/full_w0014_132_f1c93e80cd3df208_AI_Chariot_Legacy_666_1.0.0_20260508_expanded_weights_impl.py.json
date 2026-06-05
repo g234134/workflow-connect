@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 132,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_impl.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_impl.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6320,
+  "content_sha256": "f1c93e80cd3df208b8f27d54c2a07a4c8b1a1f2861e1cc635172af033501ba79",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 182,
+    "non_empty_lines": 150,
+    "char_count": 6320,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import functools",
+      "from contextlib import contextmanager",
+      "from typing import Callable, Dict",
+      "import torch",
+      "from torch._decomp import decomposition_table",
+      "from torch.utils._pytree import tree_map_only",
+      "HANDLED_FUNCTIONS: Dict[Callable, torch.autograd.Function] = {}",
+      "aten = torch._ops.ops.aten",
+      "# __torch_function__ runs before the pydispatcher so we need to manually use the same"
+    ],
+    "imports": [
+      "import functools",
+      "from contextlib import contextmanager",
+      "from typing import Callable, Dict",
+      "import torch",
+      "from torch._decomp import decomposition_table",
+      "from torch.utils._pytree import tree_map_only"
+    ],
+    "classes": [
+      "ExpandedWeight"
+    ],
+    "functions": [
+      "batch_second",
+      "allow_smaller_batches",
+      "setup_rnn",
+      "implements_per_sample_grads"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_132_f1c93e80cd3df208_AI_Chariot_Legacy_666_1.0.0_20260508_expanded_weights_impl.py.json"
+}

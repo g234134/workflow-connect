@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_logistic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_logistic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 634,
+  "content_sha256": "284142a362717c9c9415e1bd93e28af34027559ed01729f91ad1cc3b2d642c7c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 634,
+    "preview_lines": [
+      "from typing import Callable, Tuple",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d",
+      "InT = Floats2d",
+      "OutT = Floats2d",
+      "@registry.layers(\"Logistic.v1\")",
+      "def Logistic() -> Model[InT, OutT]:",
+      "    \"\"\"Deprecated in favor of `sigmoid_activation` layer, for more consistent",
+      "    naming."
+    ],
+    "imports": [
+      "from typing import Callable, Tuple",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d"
+    ],
+    "classes": [],
+    "functions": [
+      "Logistic",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_388_284142a362717c9c_AI_Chariot_Legacy_666_1.0.0_20260508_logistic.py.json"
+}

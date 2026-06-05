@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 496,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__typing_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__typing_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 392,
+  "content_sha256": "44bb7dba589ca75e75c99711345dac97136432e1a632138b30cc5614ed0885c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 9,
+    "char_count": 392,
+    "preview_lines": [
+      "\"\"\"Miscellaneous utilities to aid with typing.\"\"\"",
+      "from typing import Optional, TypeVar",
+      "# Helper to turn Optional[T] into T when we know None either isn't",
+      "# possible or should trigger an exception.",
+      "T = TypeVar(\"T\")",
+      "def not_none(obj: Optional[T]) -> T:",
+      "    if obj is None:",
+      "        raise TypeError(\"Invariant encountered: value was None when it should not be\")",
+      "    return obj"
+    ],
+    "imports": [
+      "from typing import Optional, TypeVar"
+    ],
+    "classes": [],
+    "functions": [
+      "not_none"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_496_44bb7dba589ca75e_AI_Chariot_Legacy_666_1.0.0_20260508__typing_utils.py.json"
+}

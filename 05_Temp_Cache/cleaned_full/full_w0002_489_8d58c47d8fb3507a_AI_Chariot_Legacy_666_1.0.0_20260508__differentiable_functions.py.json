@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 489,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__differentiable_functions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__differentiable_functions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25616,
+  "content_sha256": "8d58c47d8fb3507a666013580b94b97b48cea76aa9fd4cbefa7e98d22933671f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 694,
+    "non_empty_lines": 582,
+    "char_count": 25616,
+    "preview_lines": [
+      "import numpy as np",
+      "import scipy.sparse as sps",
+      "from ._numdiff import approx_derivative, group_columns",
+      "from ._hessian_update_strategy import HessianUpdateStrategy",
+      "from scipy.sparse.linalg import LinearOperator",
+      "from scipy._lib._array_api import array_namespace",
+      "from scipy._lib import array_api_extra as xpx",
+      "FD_METHODS = ('2-point', '3-point', 'cs')",
+      "def _wrapper_fun(fun, args=()):",
+      "    ncalls = [0]"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import scipy.sparse as sps",
+      "from ._numdiff import approx_derivative, group_columns",
+      "from ._hessian_update_strategy import HessianUpdateStrategy",
+      "from scipy.sparse.linalg import LinearOperator",
+      "from scipy._lib._array_api import array_namespace",
+      "from scipy._lib import array_api_extra as xpx"
+    ],
+    "classes": [
+      "ScalarFunction",
+      "VectorFunction",
+      "LinearVectorFunction",
+      "IdentityVectorFunction"
+    ],
+    "functions": [
+      "_wrapper_fun",
+      "_wrapper_grad",
+      "_wrapper_hess"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_489_8d58c47d8fb3507a_AI_Chariot_Legacy_666_1.0.0_20260508__differentiable_functions.py.json"
+}

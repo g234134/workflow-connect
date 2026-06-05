@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_req_dependency_group.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_req_dependency_group.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3145,
+  "content_sha256": "3eb58ab65c08f316d69d610a8d7b3d464ae9431dbf874d8005e7d84f465d7908",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 71,
+    "char_count": 3145,
+    "preview_lines": [
+      "from collections.abc import Iterable, Iterator",
+      "from typing import Any",
+      "from pip._vendor.packaging.dependency_groups import DependencyGroupResolver",
+      "from pip._vendor.packaging.errors import ExceptionGroup",
+      "from pip._internal.exceptions import InstallationError",
+      "from pip._internal.utils.compat import tomllib",
+      "def parse_dependency_groups(groups: list[tuple[str, str]]) -> list[str]:",
+      "    \"\"\"",
+      "    Parse dependency groups data as provided via the CLI, in a `[path:]group` syntax.",
+      "    Raises InstallationErrors if anything goes wrong."
+    ],
+    "imports": [
+      "from collections.abc import Iterable, Iterator",
+      "from typing import Any",
+      "from pip._vendor.packaging.dependency_groups import DependencyGroupResolver",
+      "from pip._vendor.packaging.errors import ExceptionGroup",
+      "from pip._internal.exceptions import InstallationError",
+      "from pip._internal.utils.compat import tomllib"
+    ],
+    "classes": [],
+    "functions": [
+      "parse_dependency_groups",
+      "_resolve_all_groups",
+      "_build_resolvers",
+      "_load_pyproject"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_402_3eb58ab65c08f316_AI_Chariot_Legacy_666_1.0.0_20260508_req_dependency_group.py.json"
+}

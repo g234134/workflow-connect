@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__windows_color.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__windows_color.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2022,
+  "content_sha256": "674cf47ec28e36399bf59d790fc0427411a6f672796a67ef08176ccb51553b5b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 61,
+    "non_empty_lines": 50,
+    "char_count": 2022,
+    "preview_lines": [
+      "\"\"\"ctypes hackery to enable color processing on windows.",
+      "See: https://github.com/pre-commit/pre-commit/blob/cb40e96/pre_commit/color.py",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import sys",
+      "if sys.platform == \"win32\":  # pragma: no cover (windows)",
+      "    def _enable() -> None:",
+      "        from ctypes import POINTER",
+      "        from ctypes import windll",
+      "        from ctypes import WinError"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import sys",
+      "from ctypes import POINTER",
+      "from ctypes import windll",
+      "from ctypes import WinError",
+      "from ctypes import WINFUNCTYPE",
+      "from ctypes.wintypes import BOOL",
+      "from ctypes.wintypes import DWORD",
+      "from ctypes.wintypes import HANDLE"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_116_674cf47ec28e3639_AI_Chariot_Legacy_666_1.0.0_20260508__windows_color.py.json"
+}

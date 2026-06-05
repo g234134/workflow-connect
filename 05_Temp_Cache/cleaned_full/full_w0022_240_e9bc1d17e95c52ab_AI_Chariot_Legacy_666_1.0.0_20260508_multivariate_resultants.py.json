@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 240,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_resultants.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_resultants.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15248,
+  "content_sha256": "e9bc1d17e95c52ab4aa150eb9ce2a19bf3f23dfa3cc34632cbf1ad1126ad405c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 473,
+    "non_empty_lines": 379,
+    "char_count": 15248,
+    "preview_lines": [
+      "\"\"\"",
+      "This module contains functions for two multivariate resultants. These",
+      "are:",
+      "- Dixon's resultant.",
+      "- Macaulay's resultant.",
+      "Multivariate resultants are used to identify whether a multivariate",
+      "system has common roots. That is when the resultant is equal to zero.",
+      "\"\"\"",
+      "from math import prod",
+      "from sympy.core.mul import Mul"
+    ],
+    "imports": [
+      "from math import prod",
+      "from sympy.core.mul import Mul",
+      "from sympy.matrices.dense import (Matrix, diag)",
+      "from sympy.polys.polytools import (Poly, degree_list, rem)",
+      "from sympy.simplify.simplify import simplify",
+      "from sympy.tensor.indexed import IndexedBase",
+      "from sympy.polys.monomials import itermonomials, monomial_deg",
+      "from sympy.polys.orderings import monomial_key",
+      "from sympy.polys.polytools import poly_from_expr, total_degree",
+      "from sympy.functions.combinatorial.factorials import binomial",
+      "from itertools import combinations_with_replacement",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning"
+    ],
+    "classes": [
+      "DixonResultant",
+      "MacaulayResultant"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_240_e9bc1d17e95c52ab_AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_resultants.py.json"
+}

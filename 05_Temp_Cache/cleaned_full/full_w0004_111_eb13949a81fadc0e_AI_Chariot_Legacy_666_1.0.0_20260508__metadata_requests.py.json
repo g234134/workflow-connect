@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 111,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__metadata_requests.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__metadata_requests.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 61587,
+  "content_sha256": "eb13949a81fadc0e210d146ec3132061c4bb92fa5afd937699a033317947e784",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1646,
+    "non_empty_lines": 1333,
+    "char_count": 61587,
+    "preview_lines": [
+      "\"\"\"",
+      "Metadata Routing Utility",
+      "In order to better understand the components implemented in this file, one",
+      "needs to understand their relationship to one another.",
+      "The only relevant public API for end users are the ``set_{method}_request`` methods,",
+      "e.g. ``estimator.set_fit_request(sample_weight=True)``. However, third-party",
+      "developers and users who implement custom meta-estimators, need to deal with",
+      "the objects implemented in this file.",
+      "The routing is coordinated by building ``MetadataRequest`` objects",
+      "for objects that consume metadata, and ``MetadataRouter`` objects for objects that"
+    ],
+    "imports": [
+      "import inspect",
+      "from collections import defaultdict, namedtuple",
+      "from copy import deepcopy",
+      "from typing import TYPE_CHECKING, Optional, Union",
+      "from warnings import warn",
+      "from sklearn import get_config",
+      "from sklearn.exceptions import UnsetMetadataPassedError",
+      "from sklearn.utils._bunch import Bunch"
+    ],
+    "classes": [
+      "_RoutingNotSupportedMixin",
+      "MethodMetadataRequest",
+      "MetadataRequest",
+      "MethodMapping",
+      "MetadataRouter",
+      "RequestMethod",
+      "_MetadataRequester"
+    ],
+    "functions": [
+      "_routing_repr",
+      "_routing_enabled",
+      "_raise_for_params",
+      "_raise_for_unsupported_routing",
+      "request_is_alias",
+      "request_is_valid",
+      "get_routing_for_object",
+      "process_routing"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_111_eb13949a81fadc0e_AI_Chariot_Legacy_666_1.0.0_20260508__metadata_requests.py.json"
+}

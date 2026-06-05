@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 76,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__voting.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__voting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25632,
+  "content_sha256": "799ebf0009310f49d5544a850bd27d2cfd354fa8b3c6f2628cacd46ad3d3127e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 734,
+    "non_empty_lines": 593,
+    "char_count": 25632,
+    "preview_lines": [
+      "\"\"\"",
+      "Soft Voting/Majority Rule classifier and Voting regressor.",
+      "This module contains:",
+      " - A Soft Voting/Majority Rule classifier for classification estimators.",
+      " - A Voting regressor for regression estimators.",
+      "\"\"\"",
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "from abc import abstractmethod",
+      "from numbers import Integral"
+    ],
+    "imports": [
+      "from abc import abstractmethod",
+      "from numbers import Integral",
+      "import numpy as np",
+      "from sklearn.base import (",
+      "from sklearn.ensemble._base import _BaseHeterogeneousEnsemble, _fit_single_estimator",
+      "from sklearn.exceptions import NotFittedError",
+      "from sklearn.preprocessing import LabelEncoder",
+      "from sklearn.utils import Bunch",
+      "from sklearn.utils._param_validation import StrOptions",
+      "from sklearn.utils._repr_html.estimator import _VisualBlock",
+      "from sklearn.utils.metadata_routing import (",
+      "from sklearn.utils.metaestimators import available_if",
+      "from sklearn.utils.multiclass import type_of_target",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "_BaseVoting",
+      "VotingClassifier",
+      "VotingRegressor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_076_799ebf0009310f49_AI_Chariot_Legacy_666_1.0.0_20260508__voting.py.json"
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_execute.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_execute.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4600,
+  "content_sha256": "399e31e5988164494c326af8ca9e9e5839056146119c89a4765de470dc9993d0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 125,
+    "non_empty_lines": 102,
+    "char_count": 4600,
+    "preview_lines": [
+      "# Copyright (c) IPython Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "\"\"\"Module containing a preprocessor that executes the code cells",
+      "and updates outputs\"\"\"",
+      "from __future__ import annotations",
+      "import typing as t",
+      "from warnings import warn",
+      "from jupyter_client.manager import KernelManager",
+      "from nbclient.client import NotebookClient",
+      "from nbclient.client import execute as _execute"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing as t",
+      "from warnings import warn",
+      "from jupyter_client.manager import KernelManager",
+      "from nbclient.client import NotebookClient",
+      "from nbclient.client import execute as _execute",
+      "from nbclient.exceptions import CellExecutionError  # noqa: F401",
+      "from nbformat import NotebookNode",
+      "from .base import Preprocessor"
+    ],
+    "classes": [
+      "ExecutePreprocessor"
+    ],
+    "functions": [
+      "executenb"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_116_399e31e598816449_AI_Chariot_Legacy_666_1.0.0_20260508_execute.py.json"
+}

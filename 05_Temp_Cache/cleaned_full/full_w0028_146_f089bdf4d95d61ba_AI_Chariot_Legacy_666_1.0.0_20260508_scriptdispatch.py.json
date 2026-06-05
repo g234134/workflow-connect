@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 146,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scriptdispatch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scriptdispatch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3856,
+  "content_sha256": "f089bdf4d95d61bac500cb1ffe4826dce934d191833cd295a4bf33ba5a7b8b8c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 103,
+    "non_empty_lines": 82,
+    "char_count": 3856,
+    "preview_lines": [
+      "\"\"\"dynamic dispatch objects for AX Script.",
+      "This is an IDispatch object that a scripting host may use to",
+      "query and invoke methods on the main script.  Not may hosts use",
+      "this yet, so it is not well tested!",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import types",
+      "import pythoncom",
+      "import win32com.server.policy",
+      "import win32com.server.util"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import types",
+      "import pythoncom",
+      "import win32com.server.policy",
+      "import win32com.server.util",
+      "import winerror",
+      "from win32com.client import Dispatch",
+      "from win32com.server.exception import COMException"
+    ],
+    "classes": [
+      "ScriptDispatch",
+      "StrictDynamicPolicy"
+    ],
+    "functions": [
+      "_wrap",
+      "MakeScriptDispatch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_146_f089bdf4d95d61ba_AI_Chariot_Legacy_666_1.0.0_20260508_scriptdispatch.py.json"
+}

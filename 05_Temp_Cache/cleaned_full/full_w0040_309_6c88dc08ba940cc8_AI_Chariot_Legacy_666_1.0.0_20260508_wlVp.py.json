@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 309,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_wlVp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_wlVp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1206,
+  "content_sha256": "6c88dc08ba940cc8f270da502a2e4ea3d859b013ff35b8491763bbffe594986e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 31,
+    "char_count": 975,
+    "preview_lines": [
+      "from fastapi import FastAPI, HTTPException",
+      "import uvicorn",
+      "import dify_api  # 這裡正式引入你的業務邏輯檔案",
+      "app = FastAPI(title=\"666lag 專業木地板 Agent\")",
+      "@app.get(\"/\")",
+      "def health_check():",
+      "    return {",
+      "        \"status\": \"online\",",
+      "        \"owner\": \"666lag\",",
+      "        \"hardware\": \"RTX 2060 Ready\","
+    ],
+    "imports": [
+      "from fastapi import FastAPI, HTTPException",
+      "import uvicorn",
+      "import dify_api  # 這裡正式引入你的業務邏輯檔案"
+    ],
+    "classes": [],
+    "functions": [
+      "health_check"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_309_6c88dc08ba940cc8_AI_Chariot_Legacy_666_1.0.0_20260508_wlVp.py.json"
+}

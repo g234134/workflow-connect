@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 127,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\fx_passes\\joint_graph.py",
+  "name": "joint_graph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10838,
+  "content_sha256": "cbd3e3448543ec363934414793f612fa4a234276d18bf263694fae8fd97b08f8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 323,
+    "non_empty_lines": 263,
+    "char_count": 10838,
+    "preview_lines": [
+      "import logging",
+      "import typing",
+      "from collections import Counter",
+      "from typing import Dict, Set",
+      "import torch",
+      "import torch._guards",
+      "from torch._inductor.constant_folding import ConstantFolder",
+      "from torch.multiprocessing.reductions import StorageWeakRef",
+      "from .. import config",
+      "from ..pattern_matcher import ("
+    ],
+    "imports": [
+      "import logging",
+      "import typing",
+      "from collections import Counter",
+      "from typing import Dict, Set",
+      "import torch",
+      "import torch._guards",
+      "from torch._inductor.constant_folding import ConstantFolder",
+      "from torch.multiprocessing.reductions import StorageWeakRef",
+      "from .. import config",
+      "from ..pattern_matcher import (",
+      "from .replace_random import replace_random_passes",
+      "from .fuse_attention import _sfdp_init",
+      "from .misc_patterns import _misc_patterns_init",
+      "from .pad_mm import _pad_mm_init"
+    ],
+    "classes": [
+      "UniformValueConstantFolder"
+    ],
+    "functions": [
+      "lazy_init",
+      "remove_no_ops",
+      "remove_redundant_views",
+      "constant_fold_uniform_value",
+      "joint_graph_passes",
+      "pointless_convert",
+      "pointless_view"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_127_cbd3e3448543ec36_joint_graph.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 41,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\boxing\\impl\\WrapFunctionIntoRuntimeFunctor.h",
+  "name": "WrapFunctionIntoRuntimeFunctor.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1493,
+  "content_sha256": "6f13adc0cb4317f9c84fbc21493b58f680987e4253214da7d644305df97f05cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 39,
+    "non_empty_lines": 32,
+    "char_count": 1493,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/util/TypeTraits.h>",
+      "namespace c10 {",
+      "namespace impl {",
+      "  namespace detail {",
+      "    template<class FuncType, class ReturnType, class ParameterList> class WrapFunctionIntoRuntimeFunctor_ {};",
+      "    template<class FuncType, class ReturnType, class... Parameters>",
+      "    class WrapFunctionIntoRuntimeFunctor_<FuncType, ReturnType, guts::typelist::typelist<Parameters...>> final : public c10::OperatorKernel {",
+      "    public:",
+      "      template<class FuncType_>"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_041_6f13adc0cb4317f9_WrapFunctionIntoRuntimeFunctor.h.json"
+}

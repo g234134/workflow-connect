@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 350,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_variables.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_variables.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2348,
+  "content_sha256": "083d2a5cebefa41deae51a4140c0fda97eaf1d7ed2c96f92ba2c063054a5b74f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 64,
+    "char_count": 2348,
+    "preview_lines": [
+      "import re",
+      "from abc import ABCMeta, abstractmethod",
+      "from typing import Iterator, Mapping, Optional, Pattern",
+      "_posix_variable: Pattern[str] = re.compile(",
+      "    r\"\"\"",
+      "    \\$\\{",
+      "        (?P<name>[^\\}:]*)",
+      "        (?::-",
+      "            (?P<default>[^\\}]*)",
+      "        )?"
+    ],
+    "imports": [
+      "import re",
+      "from abc import ABCMeta, abstractmethod",
+      "from typing import Iterator, Mapping, Optional, Pattern"
+    ],
+    "classes": [
+      "Atom",
+      "Literal",
+      "Variable"
+    ],
+    "functions": [
+      "parse_variables"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_350_083d2a5cebefa41d_AI_Chariot_Legacy_666_1.0.0_20260508_variables.py.json"
+}

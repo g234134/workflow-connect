@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 405,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\Size.h",
+  "name": "Size.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 443,
+  "content_sha256": "4a5191170452a4d5af1645c99fd455c209da37feca5efcb2b5d791e4a17b0ada",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 443,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/autograd/variable.h>",
+      "#include <torch/csrc/python_headers.h>",
+      "#include <cstdint>",
+      "extern PyTypeObject THPSizeType;",
+      "#define THPSize_Check(obj) (Py_TYPE(obj) == &THPSizeType)",
+      "PyObject* THPSize_New(const torch::autograd::Variable& t);",
+      "PyObject* THPSize_NewFromSizes(int64_t dim, const int64_t* sizes);",
+      "PyObject* THPSize_NewFromSymSizes(const at::Tensor& t);",
+      "void THPSize_init(PyObject* module);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_405_4a5191170452a4d5_Size.h.json"
+}

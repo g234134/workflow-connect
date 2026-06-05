@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 28,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oauth_providers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oauth_providers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30813,
+  "content_sha256": "f892960e8a4ce90088bf587b533917dc0acf7b74f7859a579894a5cb1ea18281",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 856,
+    "non_empty_lines": 737,
+    "char_count": 30813,
+    "preview_lines": [
+      "import base64",
+      "import os",
+      "import urllib.parse",
+      "from typing import Dict, List, Optional, Tuple",
+      "import httpx",
+      "from fastapi import HTTPException",
+      "from chainlit.secret import random_secret",
+      "from chainlit.user import User",
+      "ACCESS_TOKEN_MISSING = \"Access token missing in the response\"",
+      "class OAuthProvider:"
+    ],
+    "imports": [
+      "import base64",
+      "import os",
+      "import urllib.parse",
+      "from typing import Dict, List, Optional, Tuple",
+      "import httpx",
+      "from fastapi import HTTPException",
+      "from chainlit.secret import random_secret",
+      "from chainlit.user import User"
+    ],
+    "classes": [
+      "OAuthProvider",
+      "GithubOAuthProvider",
+      "GoogleOAuthProvider",
+      "AzureADOAuthProvider",
+      "AzureADHybridOAuthProvider",
+      "OktaOAuthProvider",
+      "Auth0OAuthProvider",
+      "DescopeOAuthProvider",
+      "AWSCognitoOAuthProvider",
+      "GitlabOAuthProvider",
+      "KeycloakOAuthProvider",
+      "GenericOAuthProvider"
+    ],
+    "functions": [
+      "get_oauth_provider",
+      "get_configured_oauth_providers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_028_f892960e8a4ce900_AI_Chariot_Legacy_666_1.0.0_20260508_oauth_providers.py.json"
+}

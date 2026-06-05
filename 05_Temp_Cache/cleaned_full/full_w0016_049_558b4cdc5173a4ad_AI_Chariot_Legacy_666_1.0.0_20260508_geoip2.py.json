@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:45:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_geoip2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_geoip2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8743,
+  "content_sha256": "558b4cdc5173a4adea6f6223595e0c7659bdcdd1cffce03d78f149b30c17bc29",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 230,
+    "non_empty_lines": 190,
+    "char_count": 8743,
+    "preview_lines": [
+      "\"\"\"",
+      "This module houses the GeoIP2 object, a wrapper for the MaxMind GeoIP2(R)",
+      "Python API (https://geoip2.readthedocs.io/). This is an alternative to the",
+      "Python GeoIP2 interface provided by MaxMind.",
+      "GeoIP(R) is a registered trademark of MaxMind, Inc.",
+      "For IP-based geolocation, this module requires the GeoLite2 Country and City",
+      "datasets, in binary format (CSV will not work!). The datasets may be",
+      "downloaded from MaxMind at https://dev.maxmind.com/geoip/geoip2/geolite2/.",
+      "Grab GeoLite2-Country.mmdb.gz and GeoLite2-City.mmdb.gz, and unzip them in the",
+      "directory corresponding to settings.GEOIP_PATH."
+    ],
+    "imports": [
+      "import ipaddress",
+      "import socket",
+      "from django.conf import settings",
+      "from django.core.exceptions import ValidationError",
+      "from django.core.validators import validate_ipv46_address",
+      "from django.utils._os import to_path",
+      "from django.utils.functional import cached_property",
+      "import geoip2.database"
+    ],
+    "classes": [
+      "GeoIP2Exception",
+      "GeoIP2"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_049_558b4cdc5173a4ad_AI_Chariot_Legacy_666_1.0.0_20260508_geoip2.py.json"
+}

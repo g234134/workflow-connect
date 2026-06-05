@@ -1,0 +1,51 @@
+# model_registry.yaml — v2.54 Groq「免費用量保護」配額與計價參考
+# 官方模型清單：https://console.groq.com/docs/models
+#
+# 重要：Groq 官方 Qwen3-32B 的 MODEL ID 為「qwen/qwen3-32b」，不是「qwen-32b」。
+#       下列 aliases 僅供相容舊 .env / 口語簡寫，執行時會正規化為 groq_model_id。
+
+version: "2.54"
+sources:
+  groq_models: "https://console.groq.com/docs/models"
+
+# 美元→台幣（僅供「省下多少錢」示意；可自行調整）
+fx:
+  twd_per_usd: 32.0
+
+# 429 / RPM 擠爆時自動降級順序（勿改拼錯官方 ID）
+failover_chain:
+  - llama-3.3-70b-versatile   # 主彈
+  - qwen/qwen3-32b            # 備援（官方 ID）
+  - llama-3.1-8b-instant      # 急時輕量
+
+# 下列 RPM/RPD/TPM 為尚書省指定之「免費層」保守護欄（與 Developer 方案網頁表格數字可能不同，以本檔為程式唯一來源）
+models:
+  llama-3.3-70b-versatile:
+    groq_model_id: llama-3.3-70b-versatile
+    RPM: 30
+    RPD: 100000
+    TPM: 6000
+    pricing_usd_per_1m_tokens:
+      input: 0.59   # 官方標價（Console Models 表）
+      output: 0.79
+
+  qwen/qwen3-32b:
+    groq_model_id: qwen/qwen3-32b
+    aliases:
+      - qwen-32b
+      - qwen3-32b
+    RPM: 60
+    RPD: 500000
+    TPM: 6000
+    pricing_usd_per_1m_tokens:
+      input: 0.29
+      output: 0.59
+
+  llama-3.1-8b-instant:
+    groq_model_id: llama-3.1-8b-instant
+    RPM: 30
+    RPD: 500000
+    TPM: 6000
+    pricing_usd_per_1m_tokens:
+      input: 0.05
+      output: 0.08

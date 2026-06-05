@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:45:15+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fuse_modules.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fuse_modules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7080,
+  "content_sha256": "7bc51b53b7982b5bfcfa3a6baa3cc545b17a0eea159b2ea490a29d2204395832",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 218,
+    "non_empty_lines": 183,
+    "char_count": 7080,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import copy",
+      "from typing import List, Optional",
+      "import torch.nn as nn",
+      "# for backward compatibility",
+      "from torch.ao.quantization.fuser_method_mappings import (  # noqa: F401  # noqa: F401",
+      "    fuse_conv_bn,",
+      "    fuse_conv_bn_relu,",
+      "    get_fuser_method,",
+      ")"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import List, Optional",
+      "import torch.nn as nn",
+      "from torch.ao.quantization.fuser_method_mappings import (  # noqa: F401  # noqa: F401",
+      "from torch.nn.utils.parametrize import type_before_parametrizations"
+    ],
+    "classes": [],
+    "functions": [
+      "_get_module",
+      "_set_module",
+      "fuse_known_modules",
+      "_fuse_modules_helper",
+      "_fuse_modules",
+      "fuse_modules",
+      "fuse_modules_qat"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_340_7bc51b53b7982b5b_AI_Chariot_Legacy_666_1.0.0_20260508_fuse_modules.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 307,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_coder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_coder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5317,
+  "content_sha256": "8554a34b3e95cffbea990aadd9e85e50062d60c63b395d52f412e23d3aae519b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 141,
+    "non_empty_lines": 121,
+    "char_count": 5317,
+    "preview_lines": [
+      "import json",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .editblock_coder import do_replace",
+      "from .editblock_func_prompts import EditBlockFunctionPrompts",
+      "class EditBlockFunctionCoder(Coder):",
+      "    functions = [",
+      "        dict(",
+      "            name=\"replace_lines\",",
+      "            description=\"create or update one or more files\","
+    ],
+    "imports": [
+      "import json",
+      "from ..dump import dump  # noqa: F401",
+      "from .base_coder import Coder",
+      "from .editblock_coder import do_replace",
+      "from .editblock_func_prompts import EditBlockFunctionPrompts"
+    ],
+    "classes": [
+      "EditBlockFunctionCoder"
+    ],
+    "functions": [
+      "get_arg"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_307_8554a34b3e95cffb_AI_Chariot_Legacy_666_1.0.0_20260508_editblock_func_coder.py.json"
+}

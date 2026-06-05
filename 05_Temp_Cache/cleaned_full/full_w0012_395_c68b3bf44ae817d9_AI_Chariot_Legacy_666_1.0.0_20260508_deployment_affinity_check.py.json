@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 395,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_deployment_affinity_check.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_deployment_affinity_check.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21895,
+  "content_sha256": "c68b3bf44ae817d9d9948da94e2c6824c18eef3e6bd488ba5724d478b4b94448",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 555,
+    "non_empty_lines": 477,
+    "char_count": 21893,
+    "preview_lines": [
+      "\"\"\"",
+      "Unified deployment affinity (session stickiness) for the Router.",
+      "Features (independently enable-able):",
+      "1. Responses API continuity: when a `previous_response_id` is provided, route to the",
+      "   deployment that generated the original response (highest priority).",
+      "2. API-key affinity: map an API key hash -> deployment id for a TTL and re-use that",
+      "   deployment for subsequent requests to the same router deployment model name",
+      "   (alias-safe, aligns to `model_map_information.model_map_key`).",
+      "This is designed to support \"implicit prompt caching\" scenarios (no explicit cache_control),",
+      "where routing to a consistent deployment is still beneficial."
+    ],
+    "imports": [
+      "import hashlib",
+      "from typing import Any, Dict, List, Optional, Tuple, cast",
+      "from typing_extensions import TypedDict",
+      "from litellm._logging import verbose_router_logger",
+      "from litellm.caching.dual_cache import DualCache",
+      "from litellm.integrations.custom_logger import CustomLogger, Span",
+      "from litellm.responses.utils import ResponsesAPIRequestUtils",
+      "from litellm.types.llms.openai import AllMessageValues",
+      "from litellm.types.utils import CallTypes"
+    ],
+    "classes": [
+      "DeploymentAffinityCacheValue",
+      "DeploymentAffinityCheck"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_395_c68b3bf44ae817d9_AI_Chariot_Legacy_666_1.0.0_20260508_deployment_affinity_check.py.json"
+}

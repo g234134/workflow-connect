@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testSHFileOperation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testSHFileOperation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2167,
+  "content_sha256": "476132cfb10763e7587b90013a8f2575aa9485e45012671f7522266638d9da49",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 64,
+    "char_count": 2167,
+    "preview_lines": [
+      "import os",
+      "import win32api",
+      "from win32com.shell import shell, shellcon",
+      "def testSHFileOperation(file_cnt):",
+      "    temp_dir = os.environ[\"temp\"]",
+      "    orig_fnames = [",
+      "        win32api.GetTempFileName(temp_dir, \"sfo\")[0] for x in range(file_cnt)",
+      "    ]",
+      "    new_fnames = [",
+      "        os.path.join(temp_dir, \"copy of \" + os.path.split(orig_fnames[x])[1])"
+    ],
+    "imports": [
+      "import os",
+      "import win32api",
+      "from win32com.shell import shell, shellcon"
+    ],
+    "classes": [],
+    "functions": [
+      "testSHFileOperation",
+      "testSHNAMEMAPPINGS"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_268_476132cfb10763e7_AI_Chariot_Legacy_666_1.0.0_20260508_testSHFileOperation.py.json"
+}

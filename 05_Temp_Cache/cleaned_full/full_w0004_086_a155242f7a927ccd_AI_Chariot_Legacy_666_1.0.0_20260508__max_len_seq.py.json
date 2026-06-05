@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__max_len_seq.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__max_len_seq.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5199,
+  "content_sha256": "a155242f7a927ccd7f143598fc07142397c58b6bc1407d1fd625e20d53ab21b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 139,
+    "non_empty_lines": 115,
+    "char_count": 5199,
+    "preview_lines": [
+      "# Author: Eric Larson",
+      "# 2014",
+      "\"\"\"Tools for MLS generation\"\"\"",
+      "import numpy as np",
+      "from ._max_len_seq_inner import _max_len_seq_inner",
+      "__all__ = ['max_len_seq']",
+      "# These are definitions of linear shift register taps for use in max_len_seq()",
+      "_mls_taps = {2: [1], 3: [2], 4: [3], 5: [3], 6: [5], 7: [6], 8: [7, 6, 1],",
+      "             9: [5], 10: [7], 11: [9], 12: [11, 10, 4], 13: [12, 11, 8],",
+      "             14: [13, 12, 2], 15: [14], 16: [15, 13, 4], 17: [14],"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from ._max_len_seq_inner import _max_len_seq_inner"
+    ],
+    "classes": [],
+    "functions": [
+      "max_len_seq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_086_a155242f7a927ccd_AI_Chariot_Legacy_666_1.0.0_20260508__max_len_seq.py.json"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 408,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_request_context.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_request_context.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8448,
+  "content_sha256": "3001fb67e5e87b4bc437370fb6ee3f9551b2c03647a7eec569427c6d80edf09a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 238,
+    "non_empty_lines": 191,
+    "char_count": 8448,
+    "preview_lines": [
+      "\"\"\"",
+      "Experimental request context features.",
+      "This module provides the Experimental class which gives access to experimental",
+      "features within a request context, such as task-augmented request handling.",
+      "WARNING: These APIs are experimental and may change without notice.",
+      "\"\"\"",
+      "from collections.abc import Awaitable, Callable",
+      "from dataclasses import dataclass, field",
+      "from typing import Any",
+      "from mcp.server.experimental.task_context import ServerTaskContext"
+    ],
+    "imports": [
+      "from collections.abc import Awaitable, Callable",
+      "from dataclasses import dataclass, field",
+      "from typing import Any",
+      "from mcp.server.experimental.task_context import ServerTaskContext",
+      "from mcp.server.experimental.task_support import TaskSupport",
+      "from mcp.server.session import ServerSession",
+      "from mcp.shared.exceptions import McpError",
+      "from mcp.shared.experimental.tasks.helpers import MODEL_IMMEDIATE_RESPONSE_KEY, is_terminal",
+      "from mcp.types import ("
+    ],
+    "classes": [
+      "Experimental"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_408_3001fb67e5e87b4b_AI_Chariot_Legacy_666_1.0.0_20260508_request_context.py.json"
+}

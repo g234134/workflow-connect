@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 41,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\common_cuda.py",
+  "name": "common_cuda.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10446,
+  "content_sha256": "200d5e8a91e861aecb34c38fae1762d3c95e7ea83e447f6b89bb869e80b63bfa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 247,
+    "non_empty_lines": 201,
+    "char_count": 10446,
+    "preview_lines": [
+      "r\"\"\"This file is allowed to initialize CUDA context when imported.\"\"\"",
+      "import functools",
+      "import torch",
+      "import torch.cuda",
+      "from torch.testing._internal.common_utils import LazyVal, TEST_NUMBA, TEST_WITH_ROCM, TEST_CUDA, IS_WINDOWS",
+      "import inspect",
+      "import contextlib",
+      "CUDA_ALREADY_INITIALIZED_ON_IMPORT = torch.cuda.is_initialized()",
+      "TEST_MULTIGPU = TEST_CUDA and torch.cuda.device_count() >= 2",
+      "CUDA_DEVICE = torch.device(\"cuda:0\") if TEST_CUDA else None"
+    ],
+    "imports": [
+      "import functools",
+      "import torch",
+      "import torch.cuda",
+      "from torch.testing._internal.common_utils import LazyVal, TEST_NUMBA, TEST_WITH_ROCM, TEST_CUDA, IS_WINDOWS",
+      "import inspect",
+      "import contextlib",
+      "import numba.cuda"
+    ],
+    "classes": [],
+    "functions": [
+      "initialize_cuda_context_rng",
+      "tf32_is_not_fp32",
+      "tf32_off",
+      "tf32_on",
+      "tf32_on_and_off",
+      "with_tf32_off",
+      "_get_magma_version",
+      "_get_torch_cuda_version",
+      "_get_torch_rocm_version",
+      "_check_cusparse_generic_available",
+      "_check_hipsparse_generic_available",
+      "_create_scaling_models_optimizers",
+      "_create_scaling_case"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_041_200d5e8a91e861ae_common_cuda.py.json"
+}

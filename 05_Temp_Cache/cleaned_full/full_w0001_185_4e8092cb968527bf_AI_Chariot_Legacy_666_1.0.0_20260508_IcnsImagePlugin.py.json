@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 185,
+  "generated_at": "2026-05-08T18:44:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_IcnsImagePlugin.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_IcnsImagePlugin.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12798,
+  "content_sha256": "4e8092cb968527bffa9e266ccc53917c232bf3f5393babe0775447315aff27fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 401,
+    "non_empty_lines": 347,
+    "char_count": 12798,
+    "preview_lines": [
+      "#",
+      "# The Python Imaging Library.",
+      "# $Id$",
+      "#",
+      "# macOS icns file decoder, based on icns.py by Bob Ippolito.",
+      "#",
+      "# history:",
+      "# 2004-10-09 fl   Turned into a PIL plugin; removed 2.3 dependencies.",
+      "# 2020-04-04      Allow saving on all operating systems.",
+      "#"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import io",
+      "import os",
+      "import struct",
+      "import sys",
+      "from typing import IO",
+      "from . import Image, ImageFile, PngImagePlugin, features",
+      "from . import Jpeg2KImagePlugin"
+    ],
+    "classes": [
+      "IcnsFile",
+      "IcnsImageFile"
+    ],
+    "functions": [
+      "nextheader",
+      "read_32t",
+      "read_32",
+      "read_mk",
+      "read_png_or_jpeg2000",
+      "_save",
+      "_accept"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_185_4e8092cb968527bf_AI_Chariot_Legacy_666_1.0.0_20260508_IcnsImagePlugin.py.json"
+}

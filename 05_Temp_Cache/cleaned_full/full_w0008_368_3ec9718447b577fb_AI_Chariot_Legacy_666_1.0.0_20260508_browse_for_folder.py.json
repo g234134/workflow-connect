@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 368,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_browse_for_folder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_browse_for_folder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1547,
+  "content_sha256": "3ec9718447b577fb173e3e868b34241fbcf460935b2acec8c702db8145a0dca5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 45,
+    "non_empty_lines": 39,
+    "char_count": 1547,
+    "preview_lines": [
+      "# A couple of samples using SHBrowseForFolder",
+      "import os",
+      "import win32gui",
+      "from win32com.shell import shell, shellcon",
+      "# A callback procedure - called by SHBrowseForFolder",
+      "def BrowseCallbackProc(hwnd, msg, lp, data):",
+      "    if msg == shellcon.BFFM_INITIALIZED:",
+      "        win32gui.SendMessage(hwnd, shellcon.BFFM_SETSELECTION, 1, data)",
+      "    elif msg == shellcon.BFFM_SELCHANGED:",
+      "        # Set the status text of the"
+    ],
+    "imports": [
+      "import os",
+      "import win32gui",
+      "from win32com.shell import shell, shellcon"
+    ],
+    "classes": [],
+    "functions": [
+      "BrowseCallbackProc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_368_3ec9718447b577fb_AI_Chariot_Legacy_666_1.0.0_20260508_browse_for_folder.py.json"
+}

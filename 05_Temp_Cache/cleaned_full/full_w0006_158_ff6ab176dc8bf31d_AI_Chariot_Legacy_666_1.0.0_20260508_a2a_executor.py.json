@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 158,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_a2a_executor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_a2a_executor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12575,
+  "content_sha256": "ff6ab176dc8bf31dcfc3109de344f158fbe3f30e3f86a6a670fd3ab311f2ddb9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 302,
+    "non_empty_lines": 251,
+    "char_count": 12575,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from __future__ import annotations",
+      "\"\"\"A2A executor that preserves A2UI DataParts in responses.",
+      "Extends the standard ``AutogenAgentExecutor`` to parse agent responses for",
+      "A2UI JSON content, split into ``TextPart`` + ``DataPart``, and publish both",
+      "through the A2A artifact. Also handles A2UI extension negotiation.",
+      "Requires the ``a2a`` extra: ``pip install ag2[a2a]``",
+      "\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import logging",
+      "from datetime import datetime, timezone",
+      "from typing import TYPE_CHECKING, Any",
+      "from uuid import uuid4",
+      "from ....import_utils import optional_import_block",
+      "from a2a.server.agent_execution import AgentExecutor, RequestContext",
+      "from a2a.server.events import EventQueue",
+      "from a2a.server.tasks import TaskUpdater",
+      "from a2a.types import DataPart, InternalError, Message, Part, Task, TaskState, TaskStatus, TextPart",
+      "from a2a.utils.errors import ServerError",
+      "from ....a2a.utils import (  # type: ignore[attr-defined]",
+      "from ....agentchat.remote import AgentService",
+      "from ....a2a.constants import A2UI_MIME_TYPE",
+      "from .a2a_helpers import (",
+      "from .response_parser import A2UIResponseParser",
+      "from ....agentchat.conversable_agent import ConversableAgent",
+      "from .actions import A2UIAction"
+    ],
+    "classes": [
+      "A2UIAgentExecutor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_158_ff6ab176dc8bf31d_AI_Chariot_Legacy_666_1.0.0_20260508_a2a_executor.py.json"
+}

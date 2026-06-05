@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 112,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2743,
+  "content_sha256": "960ff9987a30449d24c76865b8c62171d88572d1d9ca2f0215cf5f4fc0a44300",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 82,
+    "non_empty_lines": 65,
+    "char_count": 2743,
+    "preview_lines": [
+      "import abc",
+      "import os",
+      "import struct",
+      "import subprocess",
+      "from google.auth import exceptions",
+      "from google.oauth2.webauthn_types import GetRequest, GetResponse",
+      "class WebAuthnHandler(abc.ABC):",
+      "    @abc.abstractmethod",
+      "    def is_available(self) -> bool:",
+      "        \"\"\"Check whether this WebAuthn handler is available\"\"\""
+    ],
+    "imports": [
+      "import abc",
+      "import os",
+      "import struct",
+      "import subprocess",
+      "from google.auth import exceptions",
+      "from google.oauth2.webauthn_types import GetRequest, GetResponse"
+    ],
+    "classes": [
+      "WebAuthnHandler",
+      "PluginHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_112_960ff9987a30449d_AI_Chariot_Legacy_666_1.0.0_20260508_webauthn_handler.py.json"
+}

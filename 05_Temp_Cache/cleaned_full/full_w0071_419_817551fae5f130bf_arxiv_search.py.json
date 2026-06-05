@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:49:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_tools\\information_retrieval\\arxiv_search.py",
+  "name": "arxiv_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2062,
+  "content_sha256": "817551fae5f130bf44a1c7b93bde81b804af1de3303082d2767a0c170d79b6aa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 53,
+    "non_empty_lines": 44,
+    "char_count": 2062,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "@with_requirements([\"arxiv\"])",
+      "def arxiv_search(query, max_results=10, sortby=\"relevance\"):",
+      "    \"\"\"Search for articles on arXiv based on the given query.",
+      "    Args:",
+      "        query (str): The search query.",
+      "        max_results (int, optional): The maximum number of results to retrieve. Defaults to 10."
+    ],
+    "imports": [
+      "from autogen.coding.func_with_reqs import with_requirements",
+      "import arxiv"
+    ],
+    "classes": [],
+    "functions": [
+      "arxiv_search"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_419_817551fae5f130bf_arxiv_search.py.json"
+}

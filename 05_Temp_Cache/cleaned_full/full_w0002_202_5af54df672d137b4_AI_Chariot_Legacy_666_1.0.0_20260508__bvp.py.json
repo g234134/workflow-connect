@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:44:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__bvp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__bvp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 42051,
+  "content_sha256": "5af54df672d137b4b7472220eac919e2a86948f8dc1ce2d14b87d8fc1bf9d15d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1154,
+    "non_empty_lines": 932,
+    "char_count": 42051,
+    "preview_lines": [
+      "\"\"\"Boundary value problem solver.\"\"\"",
+      "from warnings import warn",
+      "import numpy as np",
+      "from numpy.linalg import pinv",
+      "from scipy.sparse import coo_matrix, csc_matrix",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize import OptimizeResult",
+      "EPS = np.finfo(float).eps",
+      "def estimate_fun_jac(fun, x, y, p, f0=None):",
+      "    \"\"\"Estimate derivatives of an ODE system rhs with forward differences."
+    ],
+    "imports": [
+      "from warnings import warn",
+      "import numpy as np",
+      "from numpy.linalg import pinv",
+      "from scipy.sparse import coo_matrix, csc_matrix",
+      "from scipy.sparse.linalg import splu",
+      "from scipy.optimize import OptimizeResult"
+    ],
+    "classes": [
+      "BVPResult"
+    ],
+    "functions": [
+      "estimate_fun_jac",
+      "estimate_bc_jac",
+      "compute_jac_indices",
+      "stacked_matmul",
+      "construct_global_jac",
+      "collocation_fun",
+      "prepare_sys",
+      "solve_newton",
+      "print_iteration_header",
+      "print_iteration_progress",
+      "estimate_rms_residuals",
+      "create_spline",
+      "modify_mesh",
+      "wrap_functions",
+      "solve_bvp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_202_5af54df672d137b4_AI_Chariot_Legacy_666_1.0.0_20260508__bvp.py.json"
+}

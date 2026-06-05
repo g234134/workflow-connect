@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:49:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\evaluation\\string_distance\\test_base.py",
+  "name": "test_base.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4353,
+  "content_sha256": "863731f18852c97d0b345ac72a19e183e1d3d5c23497c2ec74b8c5c3f3861062",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 103,
+    "char_count": 4286,
+    "preview_lines": [
+      "import pytest",
+      "from langchain_classic.evaluation.string_distance import (",
+      "    PairwiseStringDistanceEvalChain,",
+      "    StringDistance,",
+      "    StringDistanceEvalChain,",
+      ")",
+      "@pytest.mark.requires(\"rapidfuzz\")",
+      "@pytest.mark.parametrize(\"distance\", list(StringDistance))",
+      "def test_zero_distance(distance: StringDistance) -> None:",
+      "    eval_chain = StringDistanceEvalChain(distance=distance)"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_classic.evaluation.string_distance import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_zero_distance",
+      "test_zero_distance_pairwise",
+      "test_non_zero_distance",
+      "test_non_zero_distance_pairwise"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_231_863731f18852c97d_test_base.py.json"
+}

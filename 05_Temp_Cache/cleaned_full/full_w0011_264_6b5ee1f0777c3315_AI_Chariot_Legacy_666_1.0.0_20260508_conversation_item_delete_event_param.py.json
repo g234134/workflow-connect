@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_delete_event_param.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_delete_event_param.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 569,
+  "content_sha256": "6b5ee1f0777c33151b5d3e8d420f18a53af5202b75ced45e7297ee907c38837e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 11,
+    "char_count": 569,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from __future__ import annotations",
+      "from typing_extensions import Literal, Required, TypedDict",
+      "__all__ = [\"ConversationItemDeleteEventParam\"]",
+      "class ConversationItemDeleteEventParam(TypedDict, total=False):",
+      "    item_id: Required[str]",
+      "    \"\"\"The ID of the item to delete.\"\"\"",
+      "    type: Required[Literal[\"conversation.item.delete\"]]",
+      "    \"\"\"The event type, must be `conversation.item.delete`.\"\"\"",
+      "    event_id: str"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing_extensions import Literal, Required, TypedDict"
+    ],
+    "classes": [
+      "ConversationItemDeleteEventParam"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_264_6b5ee1f0777c3315_AI_Chariot_Legacy_666_1.0.0_20260508_conversation_item_delete_event_param.py.json"
+}

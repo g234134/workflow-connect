@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:46:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tag_based_routing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tag_based_routing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5599,
+  "content_sha256": "15a0ee601cc266118245fab302be20bca80459bec9fb381d5388fcde5680056f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 158,
+    "non_empty_lines": 128,
+    "char_count": 5599,
+    "preview_lines": [
+      "\"\"\"",
+      "Use this to route requests between Teams",
+      "- If tags in request is a subset of tags in deployment, return deployment",
+      "- if deployments are set with default tags, return all default deployment",
+      "- If no default_deployments are set, return all deployments",
+      "\"\"\"",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.types.router import RouterErrors",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional, Union",
+      "from litellm._logging import verbose_logger",
+      "from litellm.types.router import RouterErrors",
+      "from litellm.router import Router as _Router"
+    ],
+    "classes": [],
+    "functions": [
+      "is_valid_deployment_tag",
+      "_get_tags_from_request_kwargs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_113_15a0ee601cc26611_AI_Chariot_Legacy_666_1.0.0_20260508_tag_based_routing.py.json"
+}

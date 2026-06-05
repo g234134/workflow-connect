@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 314,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_stochastic_optimizers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_stochastic_optimizers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4249,
+  "content_sha256": "a18057e9313084496f18cc8c78072ada23398a0dc2d5ff468752fafd2171c833",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 89,
+    "char_count": 4249,
+    "preview_lines": [
+      "import numpy as np",
+      "from sklearn.neural_network._stochastic_optimizers import (",
+      "    AdamOptimizer,",
+      "    BaseOptimizer,",
+      "    SGDOptimizer,",
+      ")",
+      "from sklearn.utils._testing import assert_array_equal",
+      "shapes = [(4, 6), (6, 8), (7, 8, 9)]",
+      "def test_base_optimizer():",
+      "    for lr in [10**i for i in range(-3, 4)]:"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from sklearn.neural_network._stochastic_optimizers import (",
+      "from sklearn.utils._testing import assert_array_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_base_optimizer",
+      "test_sgd_optimizer_no_momentum",
+      "test_sgd_optimizer_momentum",
+      "test_sgd_optimizer_trigger_stopping",
+      "test_sgd_optimizer_nesterovs_momentum",
+      "test_adam_optimizer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_314_a18057e931308449_AI_Chariot_Legacy_666_1.0.0_20260508_test_stochastic_optimizers.py.json"
+}

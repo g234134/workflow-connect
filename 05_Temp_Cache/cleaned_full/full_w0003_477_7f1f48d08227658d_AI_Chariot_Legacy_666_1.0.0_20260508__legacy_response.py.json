@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 477,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__legacy_response.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__legacy_response.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16237,
+  "content_sha256": "7f1f48d08227658d73af66d49a9a96d9951c2fd256db14ba4b836a16ec2174f3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 488,
+    "non_empty_lines": 381,
+    "char_count": 16237,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import inspect",
+      "import logging",
+      "import datetime",
+      "import functools",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Union,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import inspect",
+      "import logging",
+      "import datetime",
+      "import functools",
+      "from typing import (",
+      "from typing_extensions import Awaitable, ParamSpec, override, deprecated, get_origin",
+      "import anyio",
+      "import httpx",
+      "import pydantic",
+      "from ._types import NoneType",
+      "from ._utils import is_given, extract_type_arg, is_annotated_type, is_type_alias_type",
+      "from ._models import BaseModel, is_basemodel, add_request_id",
+      "from ._constants import RAW_RESPONSE_HEADER",
+      "from ._streaming import Stream, AsyncStream, is_stream_class_type, extract_stream_chunk_type",
+      "from ._exceptions import APIResponseValidationError",
+      "from ._models import FinalRequestOptions",
+      "from ._base_client import BaseClient",
+      "from openai import BaseModel"
+    ],
+    "classes": [
+      "LegacyAPIResponse",
+      "MissingStreamClassError",
+      "HttpxBinaryResponseContent"
+    ],
+    "functions": [
+      "to_raw_response_wrapper",
+      "async_to_raw_response_wrapper"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_477_7f1f48d08227658d_AI_Chariot_Legacy_666_1.0.0_20260508__legacy_response.py.json"
+}

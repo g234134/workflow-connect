@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 249,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_feature_hasher.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_feature_hasher.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5709,
+  "content_sha256": "6c5ffa97fa4052716814a38906932a9af9e2d81b610058127221287ffef8823b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 171,
+    "non_empty_lines": 127,
+    "char_count": 5709,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.feature_extraction import FeatureHasher",
+      "from sklearn.feature_extraction._hashing_fast import transform as _hashing_transform",
+      "def test_feature_hasher_dicts():",
+      "    feature_hasher = FeatureHasher(n_features=16)",
+      "    assert \"dict\" == feature_hasher.input_type",
+      "    raw_X = [{\"foo\": \"bar\", \"dada\": 42, \"tzara\": 37}, {\"foo\": \"baz\", \"gaga\": \"string1\"}]",
+      "    X1 = FeatureHasher(n_features=16).transform(raw_X)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.feature_extraction import FeatureHasher",
+      "from sklearn.feature_extraction._hashing_fast import transform as _hashing_transform"
+    ],
+    "classes": [],
+    "functions": [
+      "test_feature_hasher_dicts",
+      "test_feature_hasher_strings",
+      "test_feature_hasher_single_string",
+      "test_hashing_transform_seed",
+      "test_feature_hasher_pairs",
+      "test_feature_hasher_pairs_with_string_values",
+      "test_hash_empty_input",
+      "test_hasher_zeros",
+      "test_hasher_alternate_sign",
+      "test_hash_collisions",
+      "test_feature_hasher_requires_fit_tag",
+      "test_feature_hasher_transform_without_fit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_249_6c5ffa97fa405271_AI_Chariot_Legacy_666_1.0.0_20260508_test_feature_hasher.py.json"
+}

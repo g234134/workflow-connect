@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_videomt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_videomt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15131,
+  "content_sha256": "f624154dc3dc02b0ad6962f9d93718d19f59927d74e95f16ec3e59057b740178",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 364,
+    "non_empty_lines": 300,
+    "char_count": 15131,
+    "preview_lines": [
+      "# Copyright 2026 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from ...image_utils import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD, PILImageResampling",
+      "from ...utils import is_torch_available, requires_backends",
+      "from ...video_processing_utils import BaseVideoProcessor",
+      "import torch",
+      "import torch.nn.functional as F"
+    ],
+    "classes": [
+      "VideomtVideoProcessor"
+    ],
+    "functions": [
+      "check_segment_validity",
+      "compute_segments"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_465_f624154dc3dc02b0_AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_videomt.py.json"
+}

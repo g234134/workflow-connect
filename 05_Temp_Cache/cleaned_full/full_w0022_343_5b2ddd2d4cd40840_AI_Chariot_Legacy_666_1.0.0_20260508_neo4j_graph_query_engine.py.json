@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 343,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_neo4j_graph_query_engine.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_neo4j_graph_query_engine.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11103,
+  "content_sha256": "5b2ddd2d4cd408409aa7eb7178230d7f880bfb822d8f0f607247a1dcd3077023",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 263,
+    "non_empty_lines": 229,
+    "char_count": 11103,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import os",
+      "from typing import Any, Optional, TypeAlias",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from .document import Document, DocumentType",
+      "from .graph_query_engine import GraphStoreQueryResult",
+      "with optional_import_block():",
+      "    from llama_index.core import PropertyGraphIndex, SimpleDirectoryReader"
+    ],
+    "imports": [
+      "import os",
+      "from typing import Any, Optional, TypeAlias",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from .document import Document, DocumentType",
+      "from .graph_query_engine import GraphStoreQueryResult",
+      "from llama_index.core import PropertyGraphIndex, SimpleDirectoryReader",
+      "from llama_index.core.base.embeddings.base import BaseEmbedding",
+      "from llama_index.core.chat_engine.types import ChatMode",
+      "from llama_index.core.indices.property_graph import (",
+      "from llama_index.core.indices.property_graph.transformations.schema_llm import Triple",
+      "from llama_index.core.llms import LLM",
+      "from llama_index.core.readers.json import JSONReader",
+      "from llama_index.core.schema import Document as LlamaDocument",
+      "from llama_index.core.schema import TransformComponent",
+      "from llama_index.embeddings.openai import OpenAIEmbedding",
+      "from llama_index.graph_stores.neo4j import Neo4jPropertyGraphStore",
+      "from llama_index.llms.openai import OpenAI",
+      "from the input documents using llamIndex extractors.\\n",
+      "from the property graph to generate a response."
+    ],
+    "classes": [
+      "Neo4jGraphQueryEngine"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_343_5b2ddd2d4cd40840_AI_Chariot_Legacy_666_1.0.0_20260508_neo4j_graph_query_engine.py.json"
+}

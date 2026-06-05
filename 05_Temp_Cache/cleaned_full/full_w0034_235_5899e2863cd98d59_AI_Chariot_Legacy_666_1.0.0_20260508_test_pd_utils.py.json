@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 235,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pd_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pd_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1687,
+  "content_sha256": "5899e2863cd98d59aa773500bb22095623baee265b06cc976eb9f365aa7dff86",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 47,
+    "non_empty_lines": 38,
+    "char_count": 1687,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.inspection._pd_utils import _check_feature_names, _get_feature_index",
+      "from sklearn.utils._testing import _convert_container",
+      "@pytest.mark.parametrize(",
+      "    \"feature_names, array_type, expected_feature_names\",",
+      "    [",
+      "        (None, \"array\", [\"x0\", \"x1\", \"x2\"]),",
+      "        (None, \"dataframe\", [\"a\", \"b\", \"c\"]),",
+      "        (np.array([\"a\", \"b\", \"c\"]), \"array\", [\"a\", \"b\", \"c\"]),"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from sklearn.inspection._pd_utils import _check_feature_names, _get_feature_index",
+      "from sklearn.utils._testing import _convert_container"
+    ],
+    "classes": [],
+    "functions": [
+      "test_check_feature_names",
+      "test_check_feature_names_error",
+      "test_get_feature_index",
+      "test_get_feature_names_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_235_5899e2863cd98d59_AI_Chariot_Legacy_666_1.0.0_20260508_test_pd_utils.py.json"
+}

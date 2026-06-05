@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:47:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\mechanics\\inertia.py",
+  "name": "inertia.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6172,
+  "content_sha256": "14a7046e960fc7fdba2d2f6c4a9f2572c27cdeca6ac12608cb1339abfcf59980",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 199,
+    "non_empty_lines": 155,
+    "char_count": 6172,
+    "preview_lines": [
+      "from sympy import sympify",
+      "from sympy.physics.vector import Point, Dyadic, ReferenceFrame, outer",
+      "from collections import namedtuple",
+      "__all__ = ['inertia', 'inertia_of_point_mass', 'Inertia']",
+      "def inertia(frame, ixx, iyy, izz, ixy=0, iyz=0, izx=0):",
+      "    \"\"\"Simple way to create inertia Dyadic object.",
+      "    Explanation",
+      "    ===========",
+      "    Creates an inertia Dyadic based on the given tensor values and a body-fixed",
+      "    reference frame."
+    ],
+    "imports": [
+      "from sympy import sympify",
+      "from sympy.physics.vector import Point, Dyadic, ReferenceFrame, outer",
+      "from collections import namedtuple"
+    ],
+    "classes": [
+      "Inertia"
+    ],
+    "functions": [
+      "inertia",
+      "inertia_of_point_mass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_458_14a7046e960fc7fd_inertia.py.json"
+}

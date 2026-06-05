@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__iotools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__iotools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31776,
+  "content_sha256": "621ef122ee4e9d23678f6697fb25bcbe224d1cd0b7de78420d9b5a7a9f13b331",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 900,
+    "non_empty_lines": 771,
+    "char_count": 31776,
+    "preview_lines": [
+      "\"\"\"A collection of functions designed to help I/O with ascii files.",
+      "\"\"\"",
+      "__docformat__ = \"restructuredtext en\"",
+      "import itertools",
+      "import numpy as np",
+      "import numpy._core.numeric as nx",
+      "from numpy._utils import asbytes, asunicode",
+      "def _decode_line(line, encoding=None):",
+      "    \"\"\"Decode bytes from binary input streams.",
+      "    Defaults to decoding from 'latin1'."
+    ],
+    "imports": [
+      "import itertools",
+      "import numpy as np",
+      "import numpy._core.numeric as nx",
+      "from numpy._utils import asbytes, asunicode"
+    ],
+    "classes": [
+      "LineSplitter",
+      "NameValidator",
+      "ConverterError",
+      "ConverterLockError",
+      "ConversionWarning",
+      "StringConverter"
+    ],
+    "functions": [
+      "_decode_line",
+      "_is_string_like",
+      "_is_bytes_like",
+      "has_nested_fields",
+      "flatten_dtype",
+      "str2bool",
+      "easy_dtype"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_407_621ef122ee4e9d23_AI_Chariot_Legacy_666_1.0.0_20260508__iotools.py.json"
+}

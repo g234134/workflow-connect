@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 440,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gcp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gcp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5644,
+  "content_sha256": "ddb161ef9699a7a9a69f5d958a143270d0fee422e09d85a0e8705f36f215dba5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 152,
+    "non_empty_lines": 120,
+    "char_count": 5644,
+    "preview_lines": [
+      "from __future__ import annotations as _annotations",
+      "from collections.abc import Iterator, Mapping",
+      "from functools import cached_property",
+      "from typing import TYPE_CHECKING, Optional",
+      "from .env import EnvSettingsSource",
+      "if TYPE_CHECKING:",
+      "    from google.auth import default as google_auth_default",
+      "    from google.auth.credentials import Credentials",
+      "    from google.cloud.secretmanager import SecretManagerServiceClient",
+      "    from pydantic_settings.main import BaseSettings"
+    ],
+    "imports": [
+      "from __future__ import annotations as _annotations",
+      "from collections.abc import Iterator, Mapping",
+      "from functools import cached_property",
+      "from typing import TYPE_CHECKING, Optional",
+      "from .env import EnvSettingsSource",
+      "from google.auth import default as google_auth_default",
+      "from google.auth.credentials import Credentials",
+      "from google.cloud.secretmanager import SecretManagerServiceClient",
+      "from pydantic_settings.main import BaseSettings",
+      "from google.auth import default as google_auth_default",
+      "from google.auth.credentials import Credentials",
+      "from google.cloud.secretmanager import SecretManagerServiceClient"
+    ],
+    "classes": [
+      "GoogleSecretManagerMapping",
+      "GoogleSecretManagerSettingsSource"
+    ],
+    "functions": [
+      "import_gcp_secret_manager"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_440_ddb161ef9699a7a9_AI_Chariot_Legacy_666_1.0.0_20260508_gcp.py.json"
+}

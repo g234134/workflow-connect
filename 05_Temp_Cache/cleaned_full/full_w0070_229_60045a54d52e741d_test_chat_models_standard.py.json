@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 229,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\perplexity\\tests\\integration_tests\\test_chat_models_standard.py",
+  "name": "test_chat_models_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 957,
+  "content_sha256": "60045a54d52e741df08e6700ddf4b4d53bd0571a1a0372064c8d3f14119985e5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 19,
+    "char_count": 954,
+    "preview_lines": [
+      "\"\"\"Standard LangChain interface tests.\"\"\"",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_perplexity import ChatPerplexity",
+      "class TestPerplexityStandard(ChatModelIntegrationTests):",
+      "    @property",
+      "    def chat_model_class(self) -> type[BaseChatModel]:",
+      "        return ChatPerplexity",
+      "    @property"
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_perplexity import ChatPerplexity"
+    ],
+    "classes": [
+      "TestPerplexityStandard"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_229_60045a54d52e741d_test_chat_models_standard.py.json"
+}

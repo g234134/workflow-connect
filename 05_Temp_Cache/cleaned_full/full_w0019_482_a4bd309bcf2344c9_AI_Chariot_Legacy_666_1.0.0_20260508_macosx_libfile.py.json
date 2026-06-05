@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 482,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_macosx_libfile.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_macosx_libfile.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16712,
+  "content_sha256": "a4bd309bcf2344c97fe004a01a5360fe6cfaf599afe719bc2529232ddc32bc84",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 486,
+    "non_empty_lines": 415,
+    "char_count": 16712,
+    "preview_lines": [
+      "\"\"\"",
+      "IMPORTANT: DO NOT IMPORT THIS MODULE DIRECTLY.",
+      "THIS IS ONLY KEPT IN PLACE FOR BACKWARDS COMPATIBILITY WITH",
+      "setuptools.command.bdist_wheel.",
+      "This module contains function to analyse dynamic library",
+      "headers to extract system information",
+      "Currently only for MacOSX",
+      "Library file on macosx system starts with Mach-O or Fat field.",
+      "This can be distinguish by first 32 bites and it is called magic number.",
+      "Proper value of magic number is with suffix _MAGIC. Suffix _CIGAM means"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import ctypes",
+      "import os",
+      "import sys",
+      "from io import BufferedIOBase",
+      "from typing import TYPE_CHECKING",
+      "from typing import Union"
+    ],
+    "classes": [],
+    "functions": [
+      "swap32",
+      "get_base_class_and_magic_number",
+      "read_data",
+      "extract_macosx_min_system_version",
+      "read_mach_header",
+      "parse_version",
+      "calculate_macosx_platform_tag"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_482_a4bd309bcf2344c9_AI_Chariot_Legacy_666_1.0.0_20260508_macosx_libfile.py.json"
+}

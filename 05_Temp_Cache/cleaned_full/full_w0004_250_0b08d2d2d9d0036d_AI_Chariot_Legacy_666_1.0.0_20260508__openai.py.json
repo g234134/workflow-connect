@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__openai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__openai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21639,
+  "content_sha256": "0b08d2d2d9d0036dc41e6d5493ebd65a91d46629b847e2ab37d225fe90793a68",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 648,
+    "non_empty_lines": 570,
+    "char_count": 21639,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import functools",
+      "import logging",
+      "from collections import defaultdict",
+      "from collections.abc import Mapping",
+      "from typing import (",
+      "    TYPE_CHECKING,",
+      "    Any,",
+      "    Callable,",
+      "    Optional,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import functools",
+      "import logging",
+      "from collections import defaultdict",
+      "from collections.abc import Mapping",
+      "from typing import (",
+      "from typing_extensions import TypedDict",
+      "from langsmith import client as ls_client",
+      "from langsmith import run_helpers",
+      "from langsmith.schemas import InputTokenDetails, OutputTokenDetails, UsageMetadata",
+      "from openai import AsyncOpenAI, OpenAI",
+      "from openai.types.chat.chat_completion_chunk import (",
+      "from openai.types.completion import Completion",
+      "from openai.types.responses import ResponseStreamEvent  # type: ignore",
+      "from openai._types import NotGiven, Omit"
+    ],
+    "classes": [
+      "TracingExtra"
+    ],
+    "functions": [
+      "_get_omit_types",
+      "_strip_not_given",
+      "_process_inputs",
+      "_infer_invocation_params",
+      "_reduce_choices",
+      "_reduce_chat",
+      "_reduce_completions",
+      "_create_usage_metadata",
+      "_process_chat_completion",
+      "_get_wrapper",
+      "_get_parse_wrapper",
+      "_reduce_response_events",
+      "wrap_openai",
+      "_process_responses_api_output"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_250_0b08d2d2d9d0036d_AI_Chariot_Legacy_666_1.0.0_20260508__openai.py.json"
+}

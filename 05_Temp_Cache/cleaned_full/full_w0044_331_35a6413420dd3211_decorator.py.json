@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 331,
+  "generated_at": "2026-05-08T18:47:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\utilities\\decorator.py",
+  "name": "decorator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11184,
+  "content_sha256": "35a6413420dd3211b8ff77ac10e2d909b55072396dbe2de5acc2110aa7b07d1e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 339,
+    "non_empty_lines": 268,
+    "char_count": 11184,
+    "preview_lines": [
+      "\"\"\"Useful utility decorators. \"\"\"",
+      "from typing import TypeVar",
+      "import sys",
+      "import types",
+      "import inspect",
+      "from functools import wraps, update_wrapper",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "T = TypeVar('T')",
+      "\"\"\"A generic type\"\"\"",
+      "def threaded_factory(func, use_add):"
+    ],
+    "imports": [
+      "from typing import TypeVar",
+      "import sys",
+      "import types",
+      "import inspect",
+      "from functools import wraps, update_wrapper",
+      "from sympy.utilities.exceptions import sympy_deprecation_warning",
+      "from sympy.core import sympify",
+      "from sympy.matrices import MatrixBase",
+      "from sympy.utilities.iterables import iterable",
+      "import mpmath",
+      "from sympy.testing.runtests import DependencyError, SymPyDocTests, PyTestReporter # lazy import"
+    ],
+    "classes": [
+      "no_attrs_in_subclass"
+    ],
+    "functions": [
+      "threaded_factory",
+      "threaded",
+      "xthreaded",
+      "conserve_mpmath_dps",
+      "doctest_depends_on",
+      "public",
+      "memoize_property",
+      "deprecated"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_331_35a6413420dd3211_decorator.py.json"
+}

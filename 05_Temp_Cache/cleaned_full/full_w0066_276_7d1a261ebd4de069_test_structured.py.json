@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 276,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\prompts\\test_structured.py",
+  "name": "test_structured.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4680,
+  "content_sha256": "7d1a261ebd4de069084591075ad32c8497f68deb5fa89dc8ec7a48933f38798f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 143,
+    "non_empty_lines": 111,
+    "char_count": 4677,
+    "preview_lines": [
+      "from functools import partial",
+      "from inspect import isclass",
+      "from typing import Any, cast",
+      "import pytest",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from langchain_core.language_models import FakeListChatModel",
+      "from langchain_core.load.dump import dumps",
+      "from langchain_core.load.load import loads",
+      "from langchain_core.messages import HumanMessage"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from inspect import isclass",
+      "from typing import Any, cast",
+      "import pytest",
+      "from pydantic import BaseModel",
+      "from typing_extensions import override",
+      "from langchain_core.language_models import FakeListChatModel",
+      "from langchain_core.load.dump import dumps",
+      "from langchain_core.load.load import loads",
+      "from langchain_core.messages import HumanMessage",
+      "from langchain_core.prompts.structured import StructuredPrompt",
+      "from langchain_core.runnables.base import Runnable, RunnableLambda",
+      "from langchain_core.utils.mustache import ChevronError"
+    ],
+    "classes": [
+      "FakeStructuredChatModel"
+    ],
+    "functions": [
+      "_fake_runnable",
+      "test_structured_prompt_pydantic",
+      "test_structured_prompt_dict",
+      "test_structured_prompt_kwargs",
+      "test_structured_prompt_template_format",
+      "test_structured_prompt_template_empty_vars"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_276_7d1a261ebd4de069_test_structured.py.json"
+}

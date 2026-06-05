@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 407,
+  "generated_at": "2026-05-08T18:46:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ui_login.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ui_login.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7974,
+  "content_sha256": "2ef5c1cd238daf7bae29a3bda14ab087b4b2272d5628eab7d5e6c6a3c2f0bc81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 269,
+    "non_empty_lines": 237,
+    "char_count": 7971,
+    "preview_lines": [
+      "import os",
+      "from litellm.proxy.utils import get_custom_url",
+      "url_to_redirect_to = os.getenv(\"PROXY_BASE_URL\", \"\")",
+      "server_root_path = os.getenv(\"SERVER_ROOT_PATH\", \"\")",
+      "if server_root_path != \"\":",
+      "    url_to_redirect_to += server_root_path",
+      "url_to_redirect_to += \"/login\"",
+      "new_ui_login_url = get_custom_url(\"\", \"ui/login\")",
+      "def build_ui_login_form(show_deprecation_banner: bool = False) -> str:",
+      "    banner_html = ("
+    ],
+    "imports": [
+      "import os",
+      "from litellm.proxy.utils import get_custom_url"
+    ],
+    "classes": [],
+    "functions": [
+      "build_ui_login_form"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_407_2ef5c1cd238daf7b_AI_Chariot_Legacy_666_1.0.0_20260508_ui_login.py.json"
+}

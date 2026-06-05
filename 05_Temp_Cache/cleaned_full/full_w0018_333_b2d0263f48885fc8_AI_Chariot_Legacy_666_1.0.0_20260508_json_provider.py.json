@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 333,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_json_provider.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_json_provider.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5304,
+  "content_sha256": "b2d0263f48885fc8b86525f099c1d0388aea57a19e85fe763622497b1cb24964",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 167,
+    "non_empty_lines": 133,
+    "char_count": 5304,
+    "preview_lines": [
+      "\"\"\"Filesystem JSON state provider.\"\"\"",
+      "from __future__ import annotations",
+      "from datetime import datetime, timezone",
+      "import glob",
+      "import logging",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Literal",
+      "import uuid",
+      "import aiofiles"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from datetime import datetime, timezone",
+      "import glob",
+      "import logging",
+      "import os",
+      "from pathlib import Path",
+      "from typing import Literal",
+      "import uuid",
+      "import aiofiles",
+      "import aiofiles.os",
+      "from crewai.state.provider.core import BaseProvider"
+    ],
+    "classes": [
+      "JsonProvider"
+    ],
+    "functions": [
+      "_safe_branch",
+      "_build_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_333_b2d0263f48885fc8_AI_Chariot_Legacy_666_1.0.0_20260508_json_provider.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\VariableHooksInterface.h",
+  "name": "VariableHooksInterface.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3580,
+  "content_sha256": "c375a2a599dbfdf49f4a51117f40dd361c468987a6f5e2eb68acea3fbe539bfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 65,
+    "char_count": 3580,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/macros/Export.h>",
+      "#include <ATen/core/Tensor.h>",
+      "// A little explanation about why this file exists at all.  We have",
+      "// a few methods on Tensor class which require access to reified access to",
+      "// AutogradMeta.  In open source, this isn't a big deal: we just access",
+      "// torch/csrc/autograd/variable.h from aten/src/ATen/core/Tensor.cpp and",
+      "// we can put the definitions inline.  This is because everything gets balled",
+      "// into a single dynamic library in the end.",
+      "//"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_029_c375a2a599dbfdf4_VariableHooksInterface.h.json"
+}

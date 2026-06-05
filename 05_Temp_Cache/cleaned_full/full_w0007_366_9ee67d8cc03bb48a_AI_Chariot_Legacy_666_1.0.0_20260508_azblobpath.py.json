@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 366,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_azblobpath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_azblobpath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3702,
+  "content_sha256": "9ee67d8cc03bb48a30e439e0b457698b99900fcf80e5ce40dcf0504fcd50e468",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 112,
+    "non_empty_lines": 89,
+    "char_count": 3702,
+    "preview_lines": [
+      "import os",
+      "from pathlib import Path",
+      "from tempfile import TemporaryDirectory",
+      "from typing import Any, Optional, TYPE_CHECKING",
+      "from cloudpathlib.exceptions import CloudPathIsADirectoryError",
+      "try:",
+      "    from azure.core.exceptions import ResourceNotFoundError",
+      "except ImportError:",
+      "    pass",
+      "from ..cloudpath import CloudPath, NoStatError, register_path_class"
+    ],
+    "imports": [
+      "import os",
+      "from pathlib import Path",
+      "from tempfile import TemporaryDirectory",
+      "from typing import Any, Optional, TYPE_CHECKING",
+      "from cloudpathlib.exceptions import CloudPathIsADirectoryError",
+      "from azure.core.exceptions import ResourceNotFoundError",
+      "from ..cloudpath import CloudPath, NoStatError, register_path_class",
+      "from .azblobclient import AzureBlobClient"
+    ],
+    "classes": [
+      "AzureBlobPath"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_366_9ee67d8cc03bb48a_AI_Chariot_Legacy_666_1.0.0_20260508_azblobpath.py.json"
+}

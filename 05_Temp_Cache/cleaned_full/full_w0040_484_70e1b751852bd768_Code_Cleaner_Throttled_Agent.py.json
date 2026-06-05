@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 484,
+  "generated_at": "2026-05-08T18:47:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\Code_Cleaner_Throttled_Agent.py",
+  "name": "Code_Cleaner_Throttled_Agent.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26510,
+  "content_sha256": "70e1b751852bd76872312ce6bd795ef1473121994adb5adbfc90e96b290bb218",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 683,
+    "non_empty_lines": 617,
+    "char_count": 26193,
+    "preview_lines": [
+      "# Code_Cleaner_Throttled_Agent.py — 兵部·全量清剿（節流模式）",
+      "# SHA256 內容去重 · 0-byte / 低價值暫存排除 · 500 件一波 · 狀態持久化 ·",
+      "# Groq 僅限 (.py/.php/.json*) 且本地 json+json5+啟發式全敗後 · 連續 10 次 Groq 失敗熔斷 + Telegram 報警。",
+      "from __future__ import annotations",
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "import re",
+      "import ssl"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "import re",
+      "import ssl",
+      "import sys",
+      "import time",
+      "import urllib.error",
+      "import urllib.request",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Dict, List, Optional, Set, Tuple",
+      "from Base_Agent import AgentStatus, Base_Agent  # type: ignore",
+      "from gov_paths import (  # type: ignore",
+      "from Code_Cleaner_Agent import (  # type: ignore",
+      "from GroqHybridRecovery_Agent import (  # type: ignore",
+      "from Recovery_Agent import ENCODING_FALLBACKS  # type: ignore"
+    ],
+    "classes": [
+      "Code_Cleaner_Throttled_Agent"
+    ],
+    "functions": [
+      "_utc_iso",
+      "_decode_full",
+      "_sha256_bytes",
+      "_groq_json_repair",
+      "_groq_recover_decode_fail",
+      "_telegram_alert",
+      "_sanitize_filename",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_484_70e1b751852bd768_Code_Cleaner_Throttled_Agent.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 265,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_orderings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_orderings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8500,
+  "content_sha256": "20589eca3e0b9056bb3438864d90f7570518ee648ddc61234e12a4d33e56275b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 216,
+    "char_count": 8500,
+    "preview_lines": [
+      "\"\"\"Definitions of monomial orderings. \"\"\"",
+      "from __future__ import annotations",
+      "__all__ = [\"lex\", \"grlex\", \"grevlex\", \"ilex\", \"igrlex\", \"igrevlex\"]",
+      "from sympy.core import Symbol",
+      "from sympy.utilities.iterables import iterable",
+      "class MonomialOrder:",
+      "    \"\"\"Base class for monomial orderings. \"\"\"",
+      "    alias: str | None = None",
+      "    is_global: bool | None = None",
+      "    is_default = False"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from sympy.core import Symbol",
+      "from sympy.utilities.iterables import iterable"
+    ],
+    "classes": [
+      "MonomialOrder",
+      "LexOrder",
+      "GradedLexOrder",
+      "ReversedGradedLexOrder",
+      "ProductOrder",
+      "InverseOrder",
+      "_ItemGetter"
+    ],
+    "functions": [
+      "monomial_key",
+      "build_product_order"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_265_20589eca3e0b9056_AI_Chariot_Legacy_666_1.0.0_20260508_orderings.py.json"
+}

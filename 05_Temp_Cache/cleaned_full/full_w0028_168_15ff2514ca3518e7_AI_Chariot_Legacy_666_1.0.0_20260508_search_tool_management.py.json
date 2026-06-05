@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:46:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_search_tool_management.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_search_tool_management.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20003,
+  "content_sha256": "15ff2514ca3518e708f4c3e8b91b0eb545840ba6493da783c594d7be3dca40f1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 622,
+    "non_empty_lines": 529,
+    "char_count": 20003,
+    "preview_lines": [
+      "\"\"\"",
+      "CRUD ENDPOINTS FOR SEARCH TOOLS",
+      "\"\"\"",
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Union",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from pydantic import BaseModel",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.search_endpoints.search_tool_registry import SearchToolRegistry"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from typing import Any, Dict, List, Union",
+      "from fastapi import APIRouter, Depends, HTTPException",
+      "from pydantic import BaseModel",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.proxy.auth.user_api_key_auth import user_api_key_auth",
+      "from litellm.proxy.search_endpoints.search_tool_registry import SearchToolRegistry",
+      "from litellm.types.search import (",
+      "from litellm.types.utils import SearchProviders",
+      "from litellm.litellm_core_utils.litellm_logging import _get_masked_values",
+      "from litellm.proxy.proxy_server import prisma_client, proxy_config"
+    ],
+    "classes": [
+      "CreateSearchToolRequest",
+      "UpdateSearchToolRequest",
+      "TestSearchToolConnectionRequest"
+    ],
+    "functions": [
+      "_convert_datetime_to_str"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_168_15ff2514ca3518e7_AI_Chariot_Legacy_666_1.0.0_20260508_search_tool_management.py.json"
+}

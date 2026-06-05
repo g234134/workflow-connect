@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 461,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 39198,
+  "content_sha256": "e98e834ecb1cbe365a5b3c5e6dd76e16c06f7e9433d3e9dd39793eb0a285ff4d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 845,
+    "non_empty_lines": 731,
+    "char_count": 39198,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "import warnings",
+      "from collections.abc import Callable",
+      "from functools import partial",
+      "from typing import Any",
+      "import numpy as np",
+      "from huggingface_hub import create_repo, is_offline_mode",
+      "from huggingface_hub.dataclasses import validate_typed_dict",
+      "from .dynamic_module_utils import custom_object_save",
+      "from .image_processing_backends import TorchvisionBackend",
+      "from .image_processing_utils import BatchFeature",
+      "from .image_utils import (",
+      "from .processing_utils import Unpack, VideosKwargs",
+      "from .utils import (",
+      "from .utils.hub import cached_file",
+      "from .utils.import_utils import requires",
+      "from .video_utils import (",
+      "import torch",
+      "import torchvision.transforms.v2.functional as tvF"
+    ],
+    "classes": [
+      "BaseVideoProcessor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_461_e98e834ecb1cbe36_AI_Chariot_Legacy_666_1.0.0_20260508_video_processing_utils.py.json"
+}

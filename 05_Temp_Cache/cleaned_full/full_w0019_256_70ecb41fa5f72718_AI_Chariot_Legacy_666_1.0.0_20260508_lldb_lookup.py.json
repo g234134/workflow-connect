@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 256,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lldb_lookup.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lldb_lookup.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6029,
+  "content_sha256": "70ecb41fa5f72718d5ef10a12f038d00de5616de1e5ac0fec4ee145625152916",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 118,
+    "char_count": 6029,
+    "preview_lines": [
+      "import lldb",
+      "from lldb_providers import *",
+      "from rust_types import RustType, classify_struct, classify_union",
+      "# BACKCOMPAT: rust 1.35",
+      "def is_hashbrown_hashmap(hash_map: lldb.SBValue) -> bool:",
+      "    return len(hash_map.type.fields) == 1",
+      "def classify_rust_type(type: lldb.SBType) -> str:",
+      "    type_class = type.GetTypeClass()",
+      "    if type_class == lldb.eTypeClassStruct:",
+      "        return classify_struct(type.name, type.fields)"
+    ],
+    "imports": [
+      "import lldb",
+      "from lldb_providers import *",
+      "from rust_types import RustType, classify_struct, classify_union"
+    ],
+    "classes": [],
+    "functions": [
+      "is_hashbrown_hashmap",
+      "classify_rust_type",
+      "summary_lookup",
+      "synthetic_lookup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_256_70ecb41fa5f72718_AI_Chariot_Legacy_666_1.0.0_20260508_lldb_lookup.py.json"
+}

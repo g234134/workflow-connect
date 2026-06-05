@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 40,
+  "generated_at": "2026-05-08T18:45:55+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_projections.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_projections.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13576,
+  "content_sha256": "fb5c382dbc2b16741cf31321a328816b3bbe60dc9d0eabc370150c36cbbbcb1f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 407,
+    "non_empty_lines": 351,
+    "char_count": 13576,
+    "preview_lines": [
+      "\"\"\"Basic linear factorizations needed by the solver.\"\"\"",
+      "from scipy.sparse import (bmat, csc_matrix, eye, issparse)",
+      "from scipy.sparse.linalg import LinearOperator",
+      "import scipy.linalg",
+      "import scipy.sparse.linalg",
+      "try:",
+      "    from sksparse.cholmod import cholesky_AAt",
+      "    sksparse_available = True",
+      "except ImportError:",
+      "    import warnings"
+    ],
+    "imports": [
+      "from scipy.sparse import (bmat, csc_matrix, eye, issparse)",
+      "from scipy.sparse.linalg import LinearOperator",
+      "import scipy.linalg",
+      "import scipy.sparse.linalg",
+      "from sksparse.cholmod import cholesky_AAt",
+      "import warnings",
+      "import numpy as np",
+      "from warnings import warn",
+      "from [1]_."
+    ],
+    "classes": [],
+    "functions": [
+      "orthogonality",
+      "normal_equation_projections",
+      "augmented_system_projections",
+      "qr_factorization_projections",
+      "svd_factorization_projections",
+      "projections"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_040_fb5c382dbc2b1674_AI_Chariot_Legacy_666_1.0.0_20260508_projections.py.json"
+}

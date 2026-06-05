@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:44:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__learnable_fake_quantize.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__learnable_fake_quantize.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8110,
+  "content_sha256": "e087c516a7258f67c2a5937f882dde1bfda5e441dcac06dcd21d9e09f269cb5d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 202,
+    "non_empty_lines": 171,
+    "char_count": 8110,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import List",
+      "import torch",
+      "from torch.nn.parameter import Parameter",
+      "__all__: List[str] = []",
+      "class _LearnableFakeQuantize(torch.ao.quantization.FakeQuantizeBase):",
+      "    r\"\"\"Generalized extension of the FakeQuantize module in fake_quantize.py.",
+      "    This is an extension of the FakeQuantize module in fake_quantize.py, which",
+      "    supports more generalized lower-bit quantization and supports learning of the scale",
+      "    and zero point parameters through backpropagation."
+    ],
+    "imports": [
+      "from typing import List",
+      "import torch",
+      "from torch.nn.parameter import Parameter"
+    ],
+    "classes": [
+      "_LearnableFakeQuantize"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_472_e087c516a7258f67_AI_Chariot_Legacy_666_1.0.0_20260508__learnable_fake_quantize.py.json"
+}

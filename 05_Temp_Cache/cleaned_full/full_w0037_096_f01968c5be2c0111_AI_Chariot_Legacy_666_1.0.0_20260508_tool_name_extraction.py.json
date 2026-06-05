@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_name_extraction.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_name_extraction.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3224,
+  "content_sha256": "f01968c5be2c011116fc3456e358cb5b60c2c2867150420a5bb7f41f2247f9d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 91,
+    "non_empty_lines": 77,
+    "char_count": 3224,
+    "preview_lines": [
+      "\"\"\"",
+      "Extract tool names from request body by route/call type.",
+      "Used by auth (check_tools_allowlist) and ToolPolicyGuardrail so tool-format",
+      "knowledge lives in one place. Uses guardrail translation handlers where available,",
+      "with standalone extractors for generate_content and MCP.",
+      "\"\"\"",
+      "from typing import Any, Dict, List",
+      "from litellm.litellm_core_utils.api_route_to_call_types import get_call_types_for_route",
+      "from litellm.llms import load_guardrail_translation_mappings",
+      "from litellm.types.utils import CallTypes"
+    ],
+    "imports": [
+      "from typing import Any, Dict, List",
+      "from litellm.litellm_core_utils.api_route_to_call_types import get_call_types_for_route",
+      "from litellm.llms import load_guardrail_translation_mappings",
+      "from litellm.types.utils import CallTypes"
+    ],
+    "classes": [],
+    "functions": [
+      "_extract_generate_content_tool_names",
+      "_extract_mcp_tool_names",
+      "_register_standalone_extractors",
+      "extract_request_tool_names"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_096_f01968c5be2c0111_AI_Chariot_Legacy_666_1.0.0_20260508_tool_name_extraction.py.json"
+}

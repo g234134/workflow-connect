@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 22,
+  "generated_at": "2026-05-08T18:45:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_manticore_search.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_manticore_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12258,
+  "content_sha256": "34d10c5b358bcf3594d345bafaa796cc7e13177dc209b0db928ae9ce9bd98f44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 374,
+    "non_empty_lines": 318,
+    "char_count": 12258,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import json",
+      "import logging",
+      "import uuid",
+      "from hashlib import sha1",
+      "from typing import Any, Dict, Iterable, List, Optional, Type",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.vectorstores import VectorStore",
+      "from pydantic_settings import BaseSettings, SettingsConfigDict"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import logging",
+      "import uuid",
+      "from hashlib import sha1",
+      "from typing import Any, Dict, Iterable, List, Optional, Type",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.vectorstores import VectorStore",
+      "from pydantic_settings import BaseSettings, SettingsConfigDict",
+      "from langchain_community.vectorstores import Manticore",
+      "from langchain_community.embeddings.openai import OpenAIEmbeddings",
+      "import manticoresearch.api as ENDPOINTS",
+      "import manticoresearch.api_client as API",
+      "from tqdm import tqdm"
+    ],
+    "classes": [
+      "ManticoreSearchSettings",
+      "ManticoreSearch"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_022_34d10c5b358bcf35_AI_Chariot_Legacy_666_1.0.0_20260508_manticore_search.py.json"
+}

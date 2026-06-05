@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 157,
+  "generated_at": "2026-05-08T18:45:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_planar_drawing.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_planar_drawing.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 16254,
+  "content_sha256": "017ba84f7685804b4278c9c0694b11aa3c4200174d619f0ea3db0638a050b68d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 464,
+    "non_empty_lines": 389,
+    "char_count": 16254,
+    "preview_lines": [
+      "from collections import defaultdict",
+      "import networkx as nx",
+      "__all__ = [\"combinatorial_embedding_to_pos\"]",
+      "def combinatorial_embedding_to_pos(embedding, fully_triangulate=False):",
+      "    \"\"\"Assigns every node a (x, y) position based on the given embedding",
+      "    The algorithm iteratively inserts nodes of the input graph in a certain",
+      "    order and rearranges previously inserted nodes so that the planar drawing",
+      "    stays valid. This is done efficiently by only maintaining relative",
+      "    positions during the node placements and calculating the absolute positions",
+      "    at the end. For more information see [1]_."
+    ],
+    "imports": [
+      "from collections import defaultdict",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "combinatorial_embedding_to_pos",
+      "set_position",
+      "get_canonical_ordering",
+      "triangulate_face",
+      "triangulate_embedding",
+      "make_bi_connected"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_157_017ba84f7685804b_AI_Chariot_Legacy_666_1.0.0_20260508_planar_drawing.py.json"
+}

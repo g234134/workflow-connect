@@ -1,0 +1,11 @@
+date,job_name,task_id,trace_id,tags,score,ideal_verdict,actual_verdict,gate_result,dryrun_rule,enf_rule_hits,source_kind,source_file
+2026-05-24,k2_shadow,shadow-retry,trace-shadow-retry,high_retry,1,,warn,needs_review,,,eval_export,artifacts/eval/eval_export_v1_shadow_nightly.20260531.jsonl
+2026-05-24,k2_shadow,shadow-greeting,trace-shadow-greeting,,1,,allow,pass,,,eval_export,artifacts/eval/eval_export_v1_shadow_nightly.20260531.jsonl
+2026-05-24,eval_export_v1_shadow_nightly,shadow-merge-2,tr-sk-2,,0.92,,allow,pass,,,eval_export,artifacts/eval/eval_export_v1_shadow_nightly.20260531.jsonl
+2026-05-24,eval_export_v1_shadow_nightly,shadow-k2-flow-1,tr-sk-1,,0.95,,allow,pass,,,eval_export,artifacts/eval/eval_export_v1_shadow_nightly.20260531.jsonl
+2026-05-30,20260530T222742Z,prod-shadow-1bab7f91d5-k2,4603e6cbc8934f0281ec4cdd67a74b36,,1,allow,allow,pass,gate_ok_score_high,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl
+2026-05-30,20260530T222742Z,prod-shadow-9469a97892-k2,778f26830a4b4026a233dbeb651a616f,,1,allow,allow,pass,gate_ok_score_high,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl
+2026-05-30,20260530T222742Z,shadow-greeting,trace-shadow-greeting,,1,allow,allow,pass,gate_ok_score_high,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl
+2026-05-30,20260530T222742Z,shadow-k2-flow-1,tr-sk-1,,0.95,allow,allow,pass,gate_ok_score_high,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl
+2026-05-30,20260530T222742Z,shadow-merge-2,tr-sk-2,,0.92,allow,allow,pass,gate_ok_score_high,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl
+2026-05-30,20260530T222742Z,shadow-retry,trace-shadow-retry,high_retry,1,warn,warn,needs_review,gate_fail_needs_review,,dryrun,observability/dryrun/20260530T222742Z_per_record.jsonl

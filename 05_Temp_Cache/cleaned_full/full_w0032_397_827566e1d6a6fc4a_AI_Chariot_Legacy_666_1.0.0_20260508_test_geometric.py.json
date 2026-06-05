@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 397,
+  "generated_at": "2026-05-08T18:46:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_geometric.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_geometric.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18087,
+  "content_sha256": "827566e1d6a6fc4afcf18c1a3693590ba9a32637e0c0c621c8b3ad53da0f9f5a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 488,
+    "non_empty_lines": 390,
+    "char_count": 18087,
+    "preview_lines": [
+      "import math",
+      "import random",
+      "from itertools import combinations",
+      "import pytest",
+      "import networkx as nx",
+      "def l1dist(x, y):",
+      "    return sum(abs(a - b) for a, b in zip(x, y))",
+      "class TestRandomGeometricGraph:",
+      "    \"\"\"Unit tests for :func:`~networkx.random_geometric_graph`\"\"\"",
+      "    def test_number_of_nodes(self):"
+    ],
+    "imports": [
+      "import math",
+      "import random",
+      "from itertools import combinations",
+      "import pytest",
+      "import networkx as nx",
+      "import string",
+      "import string"
+    ],
+    "classes": [
+      "TestRandomGeometricGraph",
+      "TestSoftRandomGeometricGraph",
+      "TestGeographicalThresholdGraph",
+      "TestWaxmanGraph",
+      "TestNavigableSmallWorldGraph",
+      "TestThresholdedRandomGeometricGraph"
+    ],
+    "functions": [
+      "l1dist",
+      "join",
+      "test_geometric_edges_pos_attribute",
+      "test_geometric_edges_raises_no_pos",
+      "test_number_of_nodes_S1",
+      "test_set_attributes_S1",
+      "test_mean_kappas_mean_degree_S1",
+      "test_dict_kappas_S1",
+      "test_beta_clustering_S1",
+      "test_wrong_parameters_S1",
+      "test_negative_beta_S1",
+      "test_non_zero_clustering_beta_lower_one_S1",
+      "test_mean_degree_influence_on_connectivity_S1",
+      "test_compare_mean_kappas_different_gammas_S1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_397_827566e1d6a6fc4a_AI_Chariot_Legacy_666_1.0.0_20260508_test_geometric.py.json"
+}

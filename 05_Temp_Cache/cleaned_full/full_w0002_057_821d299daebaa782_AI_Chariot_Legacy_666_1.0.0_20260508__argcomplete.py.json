@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 57,
+  "generated_at": "2026-05-08T18:44:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__argcomplete.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__argcomplete.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3776,
+  "content_sha256": "821d299daebaa782d56f60fc493e39ebc586c6f7489c64f8de6eac95886a36a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 90,
+    "char_count": 3776,
+    "preview_lines": [
+      "\"\"\"Allow bash-completion for argparse with argcomplete if installed.",
+      "Needs argcomplete>=0.5.6 for python 3.2/3.3 (older versions fail",
+      "to find the magic string, so _ARGCOMPLETE env. var is never set, and",
+      "this does not need special code).",
+      "Function try_argcomplete(parser) should be called directly before",
+      "the call to ArgumentParser.parse_args().",
+      "The filescompleter is what you normally would use on the positional",
+      "arguments specification, in order to get \"dirname/\" after \"dirn<TAB>\"",
+      "instead of the default \"dirname \":",
+      "   optparser.add_argument(Config._file_or_dir, nargs='*').completer=filescompleter"
+    ],
+    "imports": [
+      "from _argcomplete import try_argcomplete, filescompleter",
+      "from __future__ import annotations",
+      "import argparse",
+      "from glob import glob",
+      "import os",
+      "import sys",
+      "from typing import Any",
+      "import argcomplete.completers"
+    ],
+    "classes": [
+      "FastFilesCompleter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_057_821d299daebaa782_AI_Chariot_Legacy_666_1.0.0_20260508__argcomplete.py.json"
+}

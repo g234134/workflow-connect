@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:44:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_UoyX.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_UoyX.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3139,
+  "content_sha256": "91abe8c8e9e812624ede3ebd6d5cd3c4de0ce03a59795af44f7bdd640baed986",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 76,
+    "char_count": 2621,
+    "preview_lines": [
+      "\"\"\"",
+      "cleaner_core.py",
+      "用 LiteLLM 的 Fallbacks / Retries 方式，集中管理「模型故障轉移」與「重試」。",
+      "設計目標：",
+      "- 把原本散落在各處的「切模型 / 重試 / timeout」集中到一個地方",
+      "- 呼叫端只要給 messages 與想要的主要模型即可",
+      "- 可搭配 SmartRouter（OPENAI_API_BASE 指到 http://127.0.0.1:8000/v1）或直接走各家 API",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import os"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from dataclasses import dataclass",
+      "from typing import Any, Dict, List, Optional",
+      "import litellm  # type: ignore"
+    ],
+    "classes": [
+      "LLMFallbackPlan"
+    ],
+    "functions": [
+      "_load_litellm",
+      "smart_completion",
+      "default_smartrouter_plan"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_465_91abe8c8e9e81262_AI_Chariot_Legacy_666_1.0.0_20260508_UoyX.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\data\\_utils\\collate.py",
+  "name": "collate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13043,
+  "content_sha256": "b937274c1038587874341d26b1e5698694afef2cfcad0d714e3cfda86cbd0b2f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 277,
+    "non_empty_lines": 231,
+    "char_count": 13043,
+    "preview_lines": [
+      "r\"\"\"Contains definitions of the methods used by the _BaseDataLoaderIter workers.",
+      "These methods are used to collate samples fetched from dataset into Tensor(s).",
+      "These **needs** to be in global scope since Py2 doesn't support serializing",
+      "static methods.",
+      "`default_collate` and `default_convert` are exposed to users via 'dataloader.py'.",
+      "\"\"\"",
+      "import collections",
+      "import contextlib",
+      "import re",
+      "import torch"
+    ],
+    "imports": [
+      "import collections",
+      "import contextlib",
+      "import re",
+      "import torch",
+      "from typing import Callable, Dict, Optional, Tuple, Type, Union"
+    ],
+    "classes": [],
+    "functions": [
+      "default_convert",
+      "collate",
+      "collate_tensor_fn",
+      "collate_numpy_array_fn",
+      "collate_numpy_scalar_fn",
+      "collate_float_fn",
+      "collate_int_fn",
+      "collate_str_fn",
+      "default_collate"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_178_b937274c10385878_collate.py.json"
+}

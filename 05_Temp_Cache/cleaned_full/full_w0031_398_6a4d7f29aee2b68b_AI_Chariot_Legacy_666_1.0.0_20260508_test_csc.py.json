@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:46:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_csc.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_csc.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3056,
+  "content_sha256": "6a4d7f29aee2b68bea3daf4d96d9d1827331ff2be334dc3ab05b0f6884996725",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 82,
+    "char_count": 3056,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_array_almost_equal, assert_",
+      "from scipy.sparse import csr_matrix, csc_matrix, lil_matrix",
+      "import pytest",
+      "def test_csc_getrow():",
+      "    N = 10",
+      "    np.random.seed(0)",
+      "    X = np.random.random((N, N))",
+      "    X[X > 0.7] = 0",
+      "    Xcsc = csc_matrix(X)"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_array_almost_equal, assert_",
+      "from scipy.sparse import csr_matrix, csc_matrix, lil_matrix",
+      "import pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_csc_getrow",
+      "test_csc_getcol",
+      "test_csc_empty_slices",
+      "test_argmax_overflow"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_398_6a4d7f29aee2b68b_AI_Chariot_Legacy_666_1.0.0_20260508_test_csc.py.json"
+}

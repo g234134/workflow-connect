@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 69,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_django_4_0.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_django_4_0.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 657,
+  "content_sha256": "dacee59bd2d9d0dae16984abc3563998c90be410baf124be4f20fe4ca7336c42",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 17,
+    "char_count": 657,
+    "preview_lines": [
+      "from django.conf import settings",
+      "from .. import Error, Tags, register",
+      "@register(Tags.compatibility)",
+      "def check_csrf_trusted_origins(app_configs, **kwargs):",
+      "    errors = []",
+      "    for origin in settings.CSRF_TRUSTED_ORIGINS:",
+      "        if \"://\" not in origin:",
+      "            errors.append(",
+      "                Error(",
+      "                    \"As of Django 4.0, the values in the CSRF_TRUSTED_ORIGINS \""
+    ],
+    "imports": [
+      "from django.conf import settings",
+      "from .. import Error, Tags, register"
+    ],
+    "classes": [],
+    "functions": [
+      "check_csrf_trusted_origins"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_069_dacee59bd2d9d0da_AI_Chariot_Legacy_666_1.0.0_20260508_django_4_0.py.json"
+}

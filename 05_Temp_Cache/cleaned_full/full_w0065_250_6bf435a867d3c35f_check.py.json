@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 250,
+  "generated_at": "2026-05-08T18:48:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\src\\check.py",
+  "name": "check.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 672,
+  "content_sha256": "6bf435a867d3c35f6709d5638c8cb7f3949ee4843cca81d75116b101ae901fd7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 18,
+    "char_count": 605,
+    "preview_lines": [
+      "import os",
+      "import platform",
+      "import importlib.metadata",
+      "def check_env():",
+      "    print(f\"--- 系統環境偵測 ---\")",
+      "    print(f\"作業系統: {platform.system()} {platform.version()}\")",
+      "    print(f\"Python 版本: {platform.python_version()}\")",
+      "    # 定義要檢查的關鍵套件",
+      "    packages = [\"crewai\", \"langchain\", \"pydantic\", \"ollama\", \"chromadb\"]",
+      "    print(f\"\\n--- 已安裝套件清單 ---\")"
+    ],
+    "imports": [
+      "import os",
+      "import platform",
+      "import importlib.metadata"
+    ],
+    "classes": [],
+    "functions": [
+      "check_env"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_250_6bf435a867d3c35f_check.py.json"
+}

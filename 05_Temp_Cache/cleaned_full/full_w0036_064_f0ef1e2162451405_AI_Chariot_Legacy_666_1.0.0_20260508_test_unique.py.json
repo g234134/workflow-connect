@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 64,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_unique.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_unique.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1874,
+  "content_sha256": "f0ef1e21624514054283b8460285dece15ff9b91d2341bdccc5e9096be44148e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 54,
+    "non_empty_lines": 40,
+    "char_count": 1874,
+    "preview_lines": [
+      "import numpy as np",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.utils._unique import attach_unique, cached_unique",
+      "from sklearn.utils.validation import check_array",
+      "def test_attach_unique_attaches_unique_to_array():",
+      "    arr = np.array([1, 2, 2, 3, 4, 4, 5])",
+      "    arr_ = attach_unique(arr)",
+      "    assert_array_equal(arr_.dtype.metadata[\"unique\"], np.array([1, 2, 3, 4, 5]))",
+      "    assert_array_equal(arr_, arr)",
+      "def test_cached_unique_returns_cached_unique():"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.testing import assert_array_equal",
+      "from sklearn.utils._unique import attach_unique, cached_unique",
+      "from sklearn.utils.validation import check_array"
+    ],
+    "classes": [],
+    "functions": [
+      "test_attach_unique_attaches_unique_to_array",
+      "test_cached_unique_returns_cached_unique",
+      "test_attach_unique_not_ndarray",
+      "test_attach_unique_returns_view",
+      "test_attach_unique_return_tuple",
+      "test_check_array_keeps_unique"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_064_f0ef1e2162451405_AI_Chariot_Legacy_666_1.0.0_20260508_test_unique.py.json"
+}

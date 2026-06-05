@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:47:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\physics\\mechanics\\system.py",
+  "name": "system.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 59457,
+  "content_sha256": "56c3cf41f26cd2004b28960d43664b983f7c2562ddd48672d10191c08db5fd33",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1553,
+    "non_empty_lines": 1298,
+    "char_count": 59457,
+    "preview_lines": [
+      "from functools import wraps",
+      "from sympy.core.basic import Basic",
+      "from sympy.matrices.immutable import ImmutableMatrix",
+      "from sympy.matrices.dense import Matrix, eye, zeros",
+      "from sympy.core.containers import OrderedSet",
+      "from sympy.physics.mechanics.actuator import ActuatorBase",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.mechanics.functions import (",
+      "    Lagrangian, _validate_coordinates, find_dynamicsymbols)",
+      "from sympy.physics.mechanics.joint import Joint"
+    ],
+    "imports": [
+      "from functools import wraps",
+      "from sympy.core.basic import Basic",
+      "from sympy.matrices.immutable import ImmutableMatrix",
+      "from sympy.matrices.dense import Matrix, eye, zeros",
+      "from sympy.core.containers import OrderedSet",
+      "from sympy.physics.mechanics.actuator import ActuatorBase",
+      "from sympy.physics.mechanics.body_base import BodyBase",
+      "from sympy.physics.mechanics.functions import (",
+      "from sympy.physics.mechanics.joint import Joint",
+      "from sympy.physics.mechanics.kane import KanesMethod",
+      "from sympy.physics.mechanics.lagrange import LagrangesMethod",
+      "from sympy.physics.mechanics.loads import _parse_load, gravity",
+      "from sympy.physics.mechanics.method import _Methods",
+      "from sympy.physics.mechanics.particle import Particle",
+      "from sympy.physics.vector import Point, ReferenceFrame, dynamicsymbols",
+      "from sympy.utilities.iterables import iterable",
+      "from sympy.utilities.misc import filldedent"
+    ],
+    "classes": [
+      "System",
+      "SymbolicSystem"
+    ],
+    "functions": [
+      "_reset_eom_method"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_465_56c3cf41f26cd200_system.py.json"
+}

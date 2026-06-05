@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:45:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_vit_msn.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_vit_msn.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22169,
+  "content_sha256": "1477afae66e7ce8bc520f7382ed5e11964454270f6b4bca45838c123ebc639bb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 545,
+    "non_empty_lines": 438,
+    "char_count": 22169,
+    "preview_lines": [
+      "# Copyright 2022 Facebook AI and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import collections.abc",
+      "from collections.abc import Callable",
+      "import torch",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...activations import ACT2FN",
+      "from ...modeling_layers import GradientCheckpointingLayer",
+      "from ...modeling_outputs import BaseModelOutput, ImageClassifierOutput",
+      "from ...modeling_utils import ALL_ATTENTION_FUNCTIONS, PreTrainedModel",
+      "from ...processing_utils import Unpack",
+      "from ...utils import TransformersKwargs, auto_docstring, logging, torch_int",
+      "from ...utils.generic import can_return_tuple, merge_with_config_defaults",
+      "from ...utils.output_capturing import capture_outputs",
+      "from .configuration_vit_msn import ViTMSNConfig"
+    ],
+    "classes": [
+      "ViTMSNEmbeddings",
+      "ViTMSNPatchEmbeddings",
+      "ViTMSNSelfAttention",
+      "ViTMSNSelfOutput",
+      "ViTMSNAttention",
+      "ViTMSNIntermediate",
+      "ViTMSNOutput",
+      "ViTMSNLayer",
+      "ViTMSNEncoder",
+      "ViTMSNPreTrainedModel",
+      "ViTMSNModel",
+      "ViTMSNForImageClassification"
+    ],
+    "functions": [
+      "eager_attention_forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_349_1477afae66e7ce8b_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_vit_msn.py.json"
+}

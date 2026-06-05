@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 231,
+  "generated_at": "2026-05-08T18:45:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_poolformer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_poolformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14451,
+  "content_sha256": "6fe5178acb8673d4284f078687162d9ca705908066ae289a5d40ef67006056ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 382,
+    "non_empty_lines": 302,
+    "char_count": 14451,
+    "preview_lines": [
+      "# Copyright 2022 Sea AI Lab and The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import collections.abc",
+      "import torch",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...activations import ACT2FN",
+      "from ...modeling_outputs import BaseModelOutputWithNoAttention, ImageClassifierOutputWithNoAttention",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import auto_docstring, logging",
+      "from .configuration_poolformer import PoolFormerConfig"
+    ],
+    "classes": [
+      "PoolFormerDropPath",
+      "PoolFormerEmbeddings",
+      "PoolFormerGroupNorm",
+      "PoolFormerPooling",
+      "PoolFormerOutput",
+      "PoolFormerLayer",
+      "PoolFormerEncoder",
+      "PoolFormerPreTrainedModel",
+      "PoolFormerModel",
+      "PoolFormerFinalPooler",
+      "PoolFormerForImageClassification"
+    ],
+    "functions": [
+      "drop_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_231_6fe5178acb8673d4_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_poolformer.py.json"
+}

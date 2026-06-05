@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 218,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pass_manager.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pass_manager.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1957,
+  "content_sha256": "223464dd5f82a3175fd333fdf9d61c78096f674afe31f19b15d75f11b747a63b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 46,
+    "char_count": 1957,
+    "preview_lines": [
+      "import unittest",
+      "from ..pass_manager import (",
+      "    inplace_wrapper,",
+      "    PassManager,",
+      "    these_before_those_pass_constraint,",
+      "    this_before_that_pass_constraint,",
+      ")",
+      "class TestPassManager(unittest.TestCase):",
+      "    def test_pass_manager_builder(self) -> None:",
+      "        passes = [lambda x: 2 * x for _ in range(10)]"
+    ],
+    "imports": [
+      "import unittest",
+      "from ..pass_manager import ("
+    ],
+    "classes": [
+      "TestPassManager"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_218_223464dd5f82a317_AI_Chariot_Legacy_666_1.0.0_20260508_test_pass_manager.py.json"
+}

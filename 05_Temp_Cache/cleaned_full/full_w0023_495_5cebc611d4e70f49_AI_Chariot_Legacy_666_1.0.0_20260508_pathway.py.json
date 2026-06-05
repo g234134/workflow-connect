@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 495,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pathway.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pathway.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7708,
+  "content_sha256": "5cebc611d4e70f4913e89c12039e2d87d32f51c4585ea39964092db2ff3da41c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 228,
+    "non_empty_lines": 193,
+    "char_count": 7708,
+    "preview_lines": [
+      "\"\"\"",
+      "Pathway Vector Store client.",
+      "The Pathway Vector Server is a pipeline written in the Pathway framweork which indexes",
+      "all files in a given folder, embeds them, and builds a vector index. The pipeline reacts",
+      "to changes in source files, automatically updating appropriate index entries.",
+      "The PathwayVectorClient implements the LangChain VectorStore interface and queries the",
+      "PathwayVectorServer to retrieve up-to-date documents.",
+      "You can use the client with managed instances of Pathway Vector Store, or run your own",
+      "instance as described at https://pathway.com/developers/user-guide/llm-xpack/vectorstore_pipeline/",
+      "\"\"\""
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "from typing import Any, Callable, Iterable, List, Optional, Tuple",
+      "import requests",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.vectorstores import VectorStore"
+    ],
+    "classes": [
+      "_VectorStoreClient",
+      "PathwayVectorClient"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_495_5cebc611d4e70f49_AI_Chariot_Legacy_666_1.0.0_20260508_pathway.py.json"
+}

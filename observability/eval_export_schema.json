@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov-core/eval-export/v1",
+  "title": "Eval Gate Export Line",
+  "description": "One JSONL line produced by observability/eval_exporter.py (schema_version eval_export/v1).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "gate_result",
+    "tags",
+    "reasons",
+    "metrics",
+    "exported_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "eval_export/v1"
+    },
+    "trace_id": {
+      "type": ["string", "null"]
+    },
+    "task_id": {
+      "type": ["string", "null"]
+    },
+    "timestamp": {
+      "type": ["string", "null"],
+      "description": "From record end_time, start_time, or timestamp."
+    },
+    "exported_at": {
+      "type": "string",
+      "description": "ISO 8601 UTC when the export line was built."
+    },
+    "gate_result": {
+      "type": "string",
+      "enum": ["pass", "needs_review"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "success": { "type": ["boolean", "null"] },
+        "retry_count": { "type": "integer" },
+        "handoff_count": { "type": "integer" },
+        "error_type": { "type": ["string", "null"] },
+        "context_tokens_total": { "type": "integer" },
+        "trace_completeness_score": { "type": ["number", "null"] },
+        "agent_name": { "type": "string" },
+        "step_count": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "source_ref": {
+      "type": "object",
+      "properties": {
+        "task_id": { "type": "string" },
+        "trace_id": { "type": "string" },
+        "line_index": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based line in exporter input JSONL (ibridge/intermediate), not eval export output line. Optional traceability only; not used by gate/CI. Smoke fixture (artifacts/eval/smoke_eval_results.jsonl): points to tests/fixtures/eval/ibridge_records.jsonl; manually corrected in fixtures; smoke_ibridge_records row order may differ."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

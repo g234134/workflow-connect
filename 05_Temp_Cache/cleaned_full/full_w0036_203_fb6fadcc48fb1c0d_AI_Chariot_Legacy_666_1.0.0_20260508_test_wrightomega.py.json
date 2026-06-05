@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 203,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_wrightomega.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_wrightomega.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3677,
+  "content_sha256": "fb6fadcc48fb1c0db5c53a3f5ad094e6773aac90d3f53af467d2230367f7f663",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 117,
+    "non_empty_lines": 98,
+    "char_count": 3677,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_allclose",
+      "import scipy.special as sc",
+      "from scipy.special._testutils import assert_func_equal",
+      "def test_wrightomega_nan():",
+      "    pts = [complex(np.nan, 0),",
+      "           complex(0, np.nan),",
+      "           complex(np.nan, np.nan),",
+      "           complex(np.nan, 1),"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_allclose",
+      "import scipy.special as sc",
+      "from scipy.special._testutils import assert_func_equal"
+    ],
+    "classes": [],
+    "functions": [
+      "test_wrightomega_nan",
+      "test_wrightomega_inf_branch",
+      "test_wrightomega_inf",
+      "test_wrightomega_singular",
+      "test_wrightomega_real_infinities",
+      "test_wrightomega_real_nan",
+      "test_wrightomega_real_series_crossover",
+      "test_wrightomega_exp_approximation_crossover",
+      "test_wrightomega_real_versus_complex"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_203_fb6fadcc48fb1c0d_AI_Chariot_Legacy_666_1.0.0_20260508_test_wrightomega.py.json"
+}

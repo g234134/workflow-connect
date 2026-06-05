@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 399,
+  "generated_at": "2026-05-08T18:46:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_versionpredicate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_versionpredicate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5205,
+  "content_sha256": "a81590eb04e3d76383cada13988c9d79f218da36f8b98d6c75b81bb8b9fe2093",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 139,
+    "char_count": 5205,
+    "preview_lines": [
+      "\"\"\"Module for parsing and testing package version predicate strings.\"\"\"",
+      "import operator",
+      "import re",
+      "from . import version",
+      "re_validPackage = re.compile(r\"(?i)^\\s*([a-z_]\\w*(?:\\.[a-z_]\\w*)*)(.*)\", re.ASCII)",
+      "# (package) (rest)",
+      "re_paren = re.compile(r\"^\\s*\\((.*)\\)\\s*$\")  # (list) inside of parentheses",
+      "re_splitComparison = re.compile(r\"^\\s*(<=|>=|<|>|!=|==)\\s*([^\\s,]+)\\s*$\")",
+      "# (comp) (version)",
+      "def splitUp(pred):"
+    ],
+    "imports": [
+      "import operator",
+      "import re",
+      "from . import version"
+    ],
+    "classes": [
+      "VersionPredicate"
+    ],
+    "functions": [
+      "splitUp",
+      "split_provision"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_399_a81590eb04e3d763_AI_Chariot_Legacy_666_1.0.0_20260508_versionpredicate.py.json"
+}

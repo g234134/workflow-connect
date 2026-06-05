@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 377,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_api_key_handling.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_api_key_handling.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1303,
+  "content_sha256": "88d687a7acdcf5b230a4ddc3762581d91ce4d23ec708fed5829444ff56f23587",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 31,
+    "char_count": 1303,
+    "preview_lines": [
+      "import sys",
+      "from pathlib import Path",
+      "import pytest",
+      "ROOT = Path(__file__).resolve().parents[1]",
+      "if str(ROOT) not in sys.path:",
+      "    sys.path.insert(0, str(ROOT))",
+      "from firecrawl.v2.client import FirecrawlClient",
+      "from firecrawl.v2.client_async import AsyncFirecrawlClient",
+      "@pytest.fixture(autouse=True)",
+      "def clear_firecrawl_api_key_env(monkeypatch):"
+    ],
+    "imports": [
+      "import sys",
+      "from pathlib import Path",
+      "import pytest",
+      "from firecrawl.v2.client import FirecrawlClient",
+      "from firecrawl.v2.client_async import AsyncFirecrawlClient"
+    ],
+    "classes": [],
+    "functions": [
+      "clear_firecrawl_api_key_env",
+      "test_cloud_requires_api_key",
+      "test_self_host_allows_missing_api_key",
+      "test_async_cloud_requires_api_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_377_88d687a7acdcf5b2_AI_Chariot_Legacy_666_1.0.0_20260508_test_api_key_handling.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\pruning\\scheduler\\cubic_scheduler.py",
+  "name": "cubic_scheduler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3980,
+  "content_sha256": "eeecbf7cda8d9e46fd6d61167c7b6f2a966a62606410790296f82bddad4427ee",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 107,
+    "non_empty_lines": 90,
+    "char_count": 3980,
+    "preview_lines": [
+      "import warnings",
+      "from .base_scheduler import BaseScheduler",
+      "__all__ = [\"CubicSL\"]",
+      "def _clamp(x, lo, hi):",
+      "    return max(lo, min(hi, x))",
+      "class CubicSL(BaseScheduler):",
+      "    r\"\"\"Sets the sparsity level of each parameter group to the final sl",
+      "    plus a given exponential function.",
+      "    .. math::",
+      "        s_i = s_f + (s_0 - s_f) \\cdot \\left( 1 - \\frac{t - t_0}{n\\Delta t} \\right)^3"
+    ],
+    "imports": [
+      "import warnings",
+      "from .base_scheduler import BaseScheduler"
+    ],
+    "classes": [
+      "CubicSL"
+    ],
+    "functions": [
+      "_clamp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_346_eeecbf7cda8d9e46_cubic_scheduler.py.json"
+}

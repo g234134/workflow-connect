@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 332,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_clipboard.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_clipboard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3051,
+  "content_sha256": "525ae9ce9f56cbb5d739eb3b40d3a9b3a3b7b2cdbff2b79c5ee605e3dbc88f8b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 102,
+    "non_empty_lines": 82,
+    "char_count": 3051,
+    "preview_lines": [
+      "\"\"\" Utilities for accessing the platform's clipboard.",
+      "\"\"\"",
+      "import os",
+      "import subprocess",
+      "from IPython.core.error import TryNext",
+      "import IPython.utils.py3compat as py3compat",
+      "class ClipboardEmpty(ValueError):",
+      "    pass",
+      "def win32_clipboard_get():",
+      "    \"\"\" Get the current clipboard's text on Windows."
+    ],
+    "imports": [
+      "import os",
+      "import subprocess",
+      "from IPython.core.error import TryNext",
+      "import IPython.utils.py3compat as py3compat",
+      "import win32clipboard",
+      "from tkinter import Tk, TclError"
+    ],
+    "classes": [
+      "ClipboardEmpty"
+    ],
+    "functions": [
+      "win32_clipboard_get",
+      "osx_clipboard_get",
+      "tkinter_clipboard_get",
+      "wayland_clipboard_get"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_332_525ae9ce9f56cbb5_AI_Chariot_Legacy_666_1.0.0_20260508_clipboard.py.json"
+}

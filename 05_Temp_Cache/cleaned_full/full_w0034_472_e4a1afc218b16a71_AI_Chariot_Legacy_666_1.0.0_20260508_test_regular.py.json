@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 472,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_regular.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_regular.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2626,
+  "content_sha256": "e4a1afc218b16a7122808d0a81e509d6158fc3b61119980d6eb32429c9dd7793",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 92,
+    "non_empty_lines": 73,
+    "char_count": 2626,
+    "preview_lines": [
+      "import pytest",
+      "import networkx",
+      "import networkx as nx",
+      "import networkx.algorithms.regular as reg",
+      "import networkx.generators as gen",
+      "class TestKFactor:",
+      "    def test_k_factor_trivial(self):",
+      "        g = gen.cycle_graph(4)",
+      "        f = reg.k_factor(g, 2)",
+      "        assert g.edges == f.edges"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx",
+      "import networkx as nx",
+      "import networkx.algorithms.regular as reg",
+      "import networkx.generators as gen"
+    ],
+    "classes": [
+      "TestKFactor",
+      "TestIsRegular",
+      "TestIsKRegular"
+    ],
+    "functions": [
+      "test_is_regular_empty_graph_raises"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_472_e4a1afc218b16a71_AI_Chariot_Legacy_666_1.0.0_20260508_test_regular.py.json"
+}

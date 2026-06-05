@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 45,
+  "generated_at": "2026-05-08T18:46:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_socket_server.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_socket_server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6535,
+  "content_sha256": "cb4d623dcf943e520cdc30093416ccade4acfea32e44002398a877dc87a1fed8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 199,
+    "non_empty_lines": 167,
+    "char_count": 6535,
+    "preview_lines": [
+      "\"\"\"A sample socket server and client using SSPI authentication and encryption.",
+      "You must run with either 'client' or 'server' as arguments.  A server must be",
+      "running before a client can connect.",
+      "To use with Kerberos you should include in the client options",
+      "--target-spn=username, where 'username' is the user under which the server is",
+      "being run.",
+      "Running either the client or server as a different user can be informative.",
+      "A command-line such as the following may be useful:",
+      "`runas /user:{user} {fqp}\\\\python.exe {fqp}\\\\socket_server.py --wait client|server`",
+      "{fqp} should specify the relevant fully-qualified path names."
+    ],
+    "imports": [
+      "import http.client  # sorry, this demo needs 2.3+",
+      "import optparse",
+      "import socketserver",
+      "import struct",
+      "import traceback",
+      "import sspi",
+      "import win32api"
+    ],
+    "classes": [
+      "SSPISocketServer"
+    ],
+    "functions": [
+      "GetUserName",
+      "_send_msg",
+      "_get_msg",
+      "serve",
+      "sspi_client"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_045_cb4d623dcf943e52_AI_Chariot_Legacy_666_1.0.0_20260508_socket_server.py.json"
+}

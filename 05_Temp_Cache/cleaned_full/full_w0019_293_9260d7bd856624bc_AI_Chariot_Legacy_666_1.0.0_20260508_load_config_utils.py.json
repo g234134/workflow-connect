@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 293,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_load_config_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_load_config_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5852,
+  "content_sha256": "9260d7bd856624bc8a7d5c9a79021f1e8a08c98a9193fc61221dd2089cd1f127",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 171,
+    "non_empty_lines": 134,
+    "char_count": 5852,
+    "preview_lines": [
+      "import os",
+      "import yaml",
+      "from litellm._logging import verbose_proxy_logger",
+      "def get_file_contents_from_s3(bucket_name, object_key):",
+      "    try:",
+      "        # v0 rely on boto3 for authentication - allowing boto3 to handle IAM credentials etc",
+      "        import boto3",
+      "        from botocore.credentials import Credentials",
+      "        from litellm.main import bedrock_converse_chat_completion",
+      "        credentials: Credentials = bedrock_converse_chat_completion.get_credentials()"
+    ],
+    "imports": [
+      "import os",
+      "import yaml",
+      "from litellm._logging import verbose_proxy_logger",
+      "import boto3",
+      "from botocore.credentials import Credentials",
+      "from litellm.main import bedrock_converse_chat_completion",
+      "from litellm.integrations.gcs_bucket.gcs_bucket import GCSBucketLogger",
+      "import boto3",
+      "from botocore.credentials import Credentials",
+      "from litellm.llms.bedrock.base_aws_llm import BaseAWSLLM",
+      "from litellm.integrations.gcs_bucket.gcs_bucket import GCSBucketLogger"
+    ],
+    "classes": [],
+    "functions": [
+      "get_file_contents_from_s3",
+      "download_python_file_from_s3"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_293_9260d7bd856624bc_AI_Chariot_Legacy_666_1.0.0_20260508_load_config_utils.py.json"
+}

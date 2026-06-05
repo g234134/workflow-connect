@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 345,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_setuptools_frontend.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_setuptools_frontend.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3485,
+  "content_sha256": "9b597d347b9ac23d694a7719782f3671425f770c626ff0bb25251bff61216d43",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 108,
+    "non_empty_lines": 77,
+    "char_count": 3485,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from babel.messages import frontend",
+      "try:",
+      "    # See: https://setuptools.pypa.io/en/latest/deprecated/distutils-legacy.html",
+      "    from setuptools import Command",
+      "    try:",
+      "        from setuptools.errors import BaseError, OptionError, SetupError",
+      "    except ImportError:  # Error aliases only added in setuptools 59 (2021-11).",
+      "        OptionError = SetupError = BaseError = Exception",
+      "except ImportError:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from babel.messages import frontend",
+      "from setuptools import Command",
+      "from setuptools.errors import BaseError, OptionError, SetupError",
+      "from distutils.cmd import Command",
+      "from distutils.errors import DistutilsSetupError as SetupError",
+      "from babel.messages.setuptools_frontend import compile_catalog",
+      "from babel.messages.setuptools_frontend import extract_messages",
+      "from babel.messages.setuptools_frontend import init_catalog",
+      "from babel.messages.setuptools_frontend import update_catalog"
+    ],
+    "classes": [
+      "compile_catalog",
+      "extract_messages",
+      "init_catalog",
+      "update_catalog"
+    ],
+    "functions": [
+      "check_message_extractors"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_345_9b597d347b9ac23d_AI_Chariot_Legacy_666_1.0.0_20260508_setuptools_frontend.py.json"
+}

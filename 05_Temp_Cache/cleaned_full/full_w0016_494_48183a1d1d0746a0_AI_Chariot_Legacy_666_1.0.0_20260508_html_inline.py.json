@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 494,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_html_inline.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_html_inline.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1130,
+  "content_sha256": "48183a1d1d0746a09dae491e73475f398b90740ab27de2d114b790820b608ef8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 43,
+    "non_empty_lines": 32,
+    "char_count": 1130,
+    "preview_lines": [
+      "# Process html tags",
+      "from ..common.html_re import HTML_TAG_RE",
+      "from ..common.utils import isLinkClose, isLinkOpen",
+      "from .state_inline import StateInline",
+      "def isLetter(ch: int) -> bool:",
+      "    lc = ch | 0x20  # to lower case",
+      "    # /* a */ and /* z */",
+      "    return (lc >= 0x61) and (lc <= 0x7A)",
+      "def html_inline(state: StateInline, silent: bool) -> bool:",
+      "    pos = state.pos"
+    ],
+    "imports": [
+      "from ..common.html_re import HTML_TAG_RE",
+      "from ..common.utils import isLinkClose, isLinkOpen",
+      "from .state_inline import StateInline"
+    ],
+    "classes": [],
+    "functions": [
+      "isLetter",
+      "html_inline"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_494_48183a1d1d0746a0_AI_Chariot_Legacy_666_1.0.0_20260508_html_inline.py.json"
+}

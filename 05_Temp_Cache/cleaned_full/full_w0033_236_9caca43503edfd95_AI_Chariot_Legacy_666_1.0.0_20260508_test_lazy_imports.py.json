@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 236,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_lazy_imports.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_lazy_imports.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2680,
+  "content_sha256": "9caca43503edfd957c271087fc4930c1c3cd6b20206464157fcf5ef08eee2252",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 80,
+    "char_count": 2680,
+    "preview_lines": [
+      "import importlib",
+      "import sys",
+      "import types",
+      "import pytest",
+      "import networkx.lazy_imports as lazy",
+      "def test_lazy_import_basics():",
+      "    math = lazy._lazy_import(\"math\")",
+      "    anything_not_real = lazy._lazy_import(\"anything_not_real\")",
+      "    # Now test that accessing attributes does what it should",
+      "    assert math.sin(math.pi) == pytest.approx(0, 1e-6)"
+    ],
+    "imports": [
+      "import importlib",
+      "import sys",
+      "import types",
+      "import pytest",
+      "import networkx.lazy_imports as lazy"
+    ],
+    "classes": [],
+    "functions": [
+      "test_lazy_import_basics",
+      "test_lazy_import_impact_on_sys_modules",
+      "test_lazy_import_nonbuiltins",
+      "test_lazy_attach"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_236_9caca43503edfd95_AI_Chariot_Legacy_666_1.0.0_20260508_test_lazy_imports.py.json"
+}

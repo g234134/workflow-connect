@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_rag.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_rag.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9932,
+  "content_sha256": "a5d61a286e291823a09b228c8e0f09c24515631ce6e19e913316e4498edf8cad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 271,
+    "non_empty_lines": 193,
+    "char_count": 9932,
+    "preview_lines": [
+      "\"\"\"",
+      "Type definitions for RAG (Retrieval Augmented Generation) Ingest API.",
+      "\"\"\"",
+      "from typing import Any, Dict, List, Literal, Optional, Union",
+      "from pydantic import BaseModel, ConfigDict",
+      "from typing_extensions import TypedDict",
+      "from litellm.types.utils import ModelResponse",
+      "class RAGChunkingStrategy(TypedDict, total=False):",
+      "    \"\"\"",
+      "    Chunking strategy config for RAG ingest using RecursiveCharacterTextSplitter."
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Literal, Optional, Union",
+      "from pydantic import BaseModel, ConfigDict",
+      "from typing_extensions import TypedDict",
+      "from litellm.types.utils import ModelResponse",
+      "from litellm.types.rag import RAGIngestOptions, OpenAIVectorStoreOptions",
+      "from litellm.types.rag import RAGIngestOptions, BedrockVectorStoreOptions"
+    ],
+    "classes": [
+      "RAGChunkingStrategy",
+      "RAGIngestOCROptions",
+      "RAGIngestEmbeddingOptions",
+      "OpenAIVectorStoreOptions",
+      "BedrockVectorStoreOptions",
+      "VertexAIVectorStoreOptions",
+      "S3VectorsVectorStoreOptions",
+      "RAGIngestOptions",
+      "RAGIngestResponse",
+      "RAGIngestRequest",
+      "RAGRetrievalConfig",
+      "RAGRerankConfig",
+      "RAGQueryRequest",
+      "RAGQueryResponse"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_017_a5d61a286e291823_AI_Chariot_Legacy_666_1.0.0_20260508_rag.py.json"
+}

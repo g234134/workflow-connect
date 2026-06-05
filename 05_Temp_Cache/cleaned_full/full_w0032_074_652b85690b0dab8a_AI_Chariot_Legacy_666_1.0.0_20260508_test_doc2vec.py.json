@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 74,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_doc2vec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_doc2vec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 38940,
+  "content_sha256": "652b85690b0dab8a5b667fc9ae24a0f3b6a1caecceded102de60d3fbf67009d6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 873,
+    "non_empty_lines": 722,
+    "char_count": 38922,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2010 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"",
+      "Automated tests for checking transformation algorithms (the models package).",
+      "\"\"\"",
+      "from __future__ import with_statement, division",
+      "import logging"
+    ],
+    "imports": [
+      "from __future__ import with_statement, division",
+      "import logging",
+      "import unittest",
+      "import os",
+      "from collections import namedtuple",
+      "import numpy as np",
+      "from testfixtures import log_capture",
+      "from gensim import utils",
+      "from gensim.models import doc2vec, keyedvectors",
+      "from gensim.test.utils import datapath, get_tmpfile, temporary_file, common_texts as raw_sentences"
+    ],
+    "classes": [
+      "DocsLeeCorpus",
+      "TestDoc2VecModel",
+      "ConcatenatedDoc2Vec",
+      "ConcatenatedDocvecs"
+    ],
+    "functions": [
+      "load_on_instance",
+      "save_lee_corpus_as_line_sentence",
+      "read_su_sentiment_rotten_tomatoes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_074_652b85690b0dab8a_AI_Chariot_Legacy_666_1.0.0_20260508_test_doc2vec.py.json"
+}

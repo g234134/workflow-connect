@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:46:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_before_send.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_before_send.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5941,
+  "content_sha256": "1954b167b9a77bf9c478882d5029a6c6b67e4d8a05c18ca300ffe4d7de5b9bb1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 171,
+    "non_empty_lines": 135,
+    "char_count": 5941,
+    "preview_lines": [
+      "import unittest",
+      "import mock",
+      "from posthog.client import Client",
+      "from posthog.test.test_utils import FAKE_TEST_API_KEY",
+      "class TestClient(unittest.TestCase):",
+      "    @classmethod",
+      "    def setUpClass(cls):",
+      "        # This ensures no real HTTP POST requests are made",
+      "        cls.client_post_patcher = mock.patch(\"posthog.client.batch_post\")",
+      "        cls.consumer_post_patcher = mock.patch(\"posthog.consumer.batch_post\")"
+    ],
+    "imports": [
+      "import unittest",
+      "import mock",
+      "from posthog.client import Client",
+      "from posthog.test.test_utils import FAKE_TEST_API_KEY"
+    ],
+    "classes": [
+      "TestClient"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_035_1954b167b9a77bf9_AI_Chariot_Legacy_666_1.0.0_20260508_test_before_send.py.json"
+}

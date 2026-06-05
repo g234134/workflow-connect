@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 438,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_inductor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_inductor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 303,
+  "content_sha256": "cbfd6d8c51b783c02bba6f67366f49978af5b89870098e4687d7f8bb9620321c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 7,
+    "char_count": 303,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "from torch._dynamo import register_backend",
+      "@register_backend",
+      "def inductor(*args, **kwargs):",
+      "    # do import here to avoid loading inductor into memory when it is not used",
+      "    from torch._inductor.compile_fx import compile_fx",
+      "    return compile_fx(*args, **kwargs)"
+    ],
+    "imports": [
+      "from torch._dynamo import register_backend",
+      "from torch._inductor.compile_fx import compile_fx"
+    ],
+    "classes": [],
+    "functions": [
+      "inductor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_438_cbfd6d8c51b783c0_AI_Chariot_Legacy_666_1.0.0_20260508_inductor.py.json"
+}

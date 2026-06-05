@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_custom_ops.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_custom_ops.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35002,
+  "content_sha256": "0709778d5fa75834cbf919ec552459e69dca338e870a5eaaf305170a639f0ed5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 835,
+    "non_empty_lines": 725,
+    "char_count": 35002,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "import inspect",
+      "import logging",
+      "import weakref",
+      "from contextlib import contextmanager",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Dict,"
+    ],
+    "imports": [
+      "import inspect",
+      "import logging",
+      "import weakref",
+      "from contextlib import contextmanager",
+      "from typing import (",
+      "import torch",
+      "from torch import _C, _ops, Tensor",
+      "from torch.utils._exposed_in import exposed_in",
+      "from . import autograd, utils",
+      "import torch"
+    ],
+    "classes": [
+      "CustomOpDef"
+    ],
+    "functions": [
+      "custom_op",
+      "get_library_allowing_overwrite",
+      "iter_tensors",
+      "_maybe_get_opdef"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_103_0709778d5fa75834_AI_Chariot_Legacy_666_1.0.0_20260508_custom_ops.py.json"
+}

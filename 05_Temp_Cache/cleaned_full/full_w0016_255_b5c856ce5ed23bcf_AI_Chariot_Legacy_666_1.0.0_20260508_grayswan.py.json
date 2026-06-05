@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_grayswan.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_grayswan.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26131,
+  "content_sha256": "b5c856ce5ed23bcf14b38c973b1c82a2d5063452ff12d2648c598e37cb4b2550",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 670,
+    "non_empty_lines": 579,
+    "char_count": 26131,
+    "preview_lines": [
+      "\"\"\"Gray Swan Cygnal guardrail integration.\"\"\"",
+      "import os",
+      "import time",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "    CustomGuardrail,",
+      "    ModifyResponseException",
+      ")"
+    ],
+    "imports": [
+      "import os",
+      "import time",
+      "from typing import TYPE_CHECKING, Any, Dict, List, Literal, Optional",
+      "from fastapi import HTTPException",
+      "from litellm._logging import verbose_proxy_logger",
+      "from litellm.integrations.custom_guardrail import (",
+      "from litellm.litellm_core_utils.safe_json_dumps import safe_dumps",
+      "from litellm.litellm_core_utils.safe_json_loads import safe_json_loads",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.types.guardrails import GuardrailEventHooks",
+      "from litellm.types.utils import GenericGuardrailAPIInputs",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as LiteLLMLoggingObj"
+    ],
+    "classes": [
+      "GraySwanGuardrailMissingSecrets",
+      "GraySwanGuardrailAPIError",
+      "GraySwanGuardrail"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_255_b5c856ce5ed23bcf_AI_Chariot_Legacy_666_1.0.0_20260508_grayswan.py.json"
+}

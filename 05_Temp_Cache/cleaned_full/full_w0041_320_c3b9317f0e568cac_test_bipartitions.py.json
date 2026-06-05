@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 320,
+  "generated_at": "2026-05-08T18:47:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\tests\\test_bipartitions.py",
+  "name": "test_bipartitions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4639,
+  "content_sha256": "c3b9317f0e568cacc8a2c09dab7787b2fb98854a0495a3bd43794ad24572360e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 157,
+    "non_empty_lines": 116,
+    "char_count": 4639,
+    "preview_lines": [
+      "from itertools import permutations",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.community import (",
+      "    greedy_node_swap_bipartition,",
+      "    kernighan_lin_bisection,",
+      ")",
+      "def assert_partition_equal(x, y):",
+      "    assert set(map(frozenset, x)) == set(map(frozenset, y))",
+      "def test_partition():"
+    ],
+    "imports": [
+      "from itertools import permutations",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.community import ("
+    ],
+    "classes": [],
+    "functions": [
+      "assert_partition_equal",
+      "test_partition",
+      "test_partition_argument",
+      "test_partition_argument_non_integer_nodes",
+      "test_seed_argument",
+      "test_non_disjoint_partition",
+      "test_kernighan_lin_too_many_blocks",
+      "test_multigraph",
+      "test_max_iter_argument",
+      "test_weight_function",
+      "test_spectral_bipartition",
+      "test_karate_club",
+      "test_greedy_bipartition",
+      "test_greedy_non_disjoint_partition",
+      "test_greedy_node_swap_too_many_blocks",
+      "test_greedy_multigraph_disallowed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_320_c3b9317f0e568cac_test_bipartitions.py.json"
+}

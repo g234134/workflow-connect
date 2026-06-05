@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 325,
+  "generated_at": "2026-05-08T18:47:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\tests\\test_utils.py",
+  "name": "test_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 704,
+  "content_sha256": "828983eab16001acb0c53d588dd8b8a3363ed6b0b48a76b88e07ef59e0afc061",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 26,
+    "non_empty_lines": 17,
+    "char_count": 704,
+    "preview_lines": [
+      "\"\"\"Unit tests for the :mod:`networkx.algorithms.community.utils` module.\"\"\"",
+      "import networkx as nx",
+      "def test_is_partition():",
+      "    G = nx.empty_graph(3)",
+      "    assert nx.community.is_partition(G, [{0, 1}, {2}])",
+      "    assert nx.community.is_partition(G, ({0, 1}, {2}))",
+      "    assert nx.community.is_partition(G, ([0, 1], [2]))",
+      "    assert nx.community.is_partition(G, [[0, 1], [2]])",
+      "def test_not_covering():",
+      "    G = nx.empty_graph(3)"
+    ],
+    "imports": [
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_partition",
+      "test_not_covering",
+      "test_not_disjoint",
+      "test_not_node"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_325_828983eab16001ac_test_utils.py.json"
+}

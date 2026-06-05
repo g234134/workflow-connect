@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 312,
+  "generated_at": "2026-05-08T18:45:23+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_poolformer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_poolformer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5388,
+  "content_sha256": "7c08a9c70232f98f540c3507d9e17c81c138a83ae77acb4c631cc8fb960d7948",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 135,
+    "non_empty_lines": 118,
+    "char_count": 5388,
+    "preview_lines": [
+      "# Copyright 2022 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import torch",
+      "from torchvision.transforms.v2 import functional as tvF",
+      "from ...image_processing_backends import TorchvisionBackend",
+      "from ...image_processing_utils import BatchFeature",
+      "from ...image_transforms import get_resize_output_image_size, group_images_by_shape, reorder_images",
+      "from ...image_utils import (",
+      "from ...processing_utils import ImagesKwargs, Unpack",
+      "from ...utils import TensorType, auto_docstring"
+    ],
+    "classes": [
+      "PoolFormerImageProcessorKwargs",
+      "PoolFormerImageProcessor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_312_7c08a9c70232f98f_AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_poolformer.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 324,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__patch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__patch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3401,
+  "content_sha256": "f106ce1e52b11db5dd6f36d256ca534fa35efa0a6b0c8ca8888dd813ab7745f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 71,
+    "char_count": 3401,
+    "preview_lines": [
+      "import functools",
+      "from urllib3 import __version__ as urllib3version  # type: ignore[import-untyped]",
+      "from urllib3 import connection  # type: ignore[import-untyped]",
+      "def _ensure_str(s, encoding=\"utf-8\", errors=\"strict\") -> str:",
+      "    if isinstance(s, str):",
+      "        return s",
+      "    if isinstance(s, bytes):",
+      "        return s.decode(encoding, errors)",
+      "    return str(s)",
+      "# Copied from https://github.com/urllib3/urllib3/blob/1c994dfc8c5d5ecaee8ed3eb585d4785f5febf6e/src/urllib3/connection.py#L231"
+    ],
+    "imports": [
+      "import functools",
+      "from urllib3 import __version__ as urllib3version  # type: ignore[import-untyped]",
+      "from urllib3 import connection  # type: ignore[import-untyped]",
+      "from packaging import version"
+    ],
+    "classes": [],
+    "functions": [
+      "_ensure_str",
+      "request",
+      "patch_urllib3"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_324_f106ce1e52b11db5_AI_Chariot_Legacy_666_1.0.0_20260508__patch.py.json"
+}

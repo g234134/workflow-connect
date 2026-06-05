@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 346,
+  "generated_at": "2026-05-08T18:44:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__iforest.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__iforest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25249,
+  "content_sha256": "c7e51d2a06dc9029ec90bd55d6419ca2ed614a32b0d4a5f91bee06c4bce2ec33",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 681,
+    "non_empty_lines": 553,
+    "char_count": 25249,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "import numbers",
+      "import threading",
+      "from numbers import Integral, Real",
+      "from warnings import warn",
+      "import numpy as np",
+      "from scipy.sparse import issparse",
+      "from sklearn.base import OutlierMixin, _fit_context",
+      "from sklearn.ensemble._bagging import BaseBagging"
+    ],
+    "imports": [
+      "import numbers",
+      "import threading",
+      "from numbers import Integral, Real",
+      "from warnings import warn",
+      "import numpy as np",
+      "from scipy.sparse import issparse",
+      "from sklearn.base import OutlierMixin, _fit_context",
+      "from sklearn.ensemble._bagging import BaseBagging",
+      "from sklearn.tree import ExtraTreeRegressor",
+      "from sklearn.tree._tree import DTYPE as tree_dtype",
+      "from sklearn.utils import check_array, check_random_state, gen_batches",
+      "from sklearn.utils._chunking import get_chunk_n_rows",
+      "from sklearn.utils._param_validation import Interval, RealNotInt, StrOptions",
+      "from sklearn.utils.parallel import Parallel, delayed",
+      "from sklearn.utils.validation import ("
+    ],
+    "classes": [
+      "IsolationForest"
+    ],
+    "functions": [
+      "_parallel_compute_tree_depths",
+      "_average_path_length"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_346_c7e51d2a06dc9029_AI_Chariot_Legacy_666_1.0.0_20260508__iforest.py.json"
+}

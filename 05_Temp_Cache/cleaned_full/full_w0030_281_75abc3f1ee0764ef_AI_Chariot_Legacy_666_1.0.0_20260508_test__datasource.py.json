@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test__datasource.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test__datasource.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10892,
+  "content_sha256": "75abc3f1ee0764ef08cdc4a9941eb0fa3dc6d77dcbd0050101ad863002698186",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 328,
+    "non_empty_lines": 261,
+    "char_count": 10892,
+    "preview_lines": [
+      "import os",
+      "import urllib.request as urllib_request",
+      "from shutil import rmtree",
+      "from tempfile import NamedTemporaryFile, mkdtemp, mkstemp",
+      "from urllib.error import URLError",
+      "from urllib.parse import urlparse",
+      "import pytest",
+      "import numpy.lib._datasource as datasource",
+      "from numpy.testing import assert_, assert_equal, assert_raises",
+      "def urlopen_stub(url, data=None):"
+    ],
+    "imports": [
+      "import os",
+      "import urllib.request as urllib_request",
+      "from shutil import rmtree",
+      "from tempfile import NamedTemporaryFile, mkdtemp, mkstemp",
+      "from urllib.error import URLError",
+      "from urllib.parse import urlparse",
+      "import pytest",
+      "import numpy.lib._datasource as datasource",
+      "from numpy.testing import assert_, assert_equal, assert_raises",
+      "import gzip",
+      "import bz2"
+    ],
+    "classes": [
+      "TestDataSourceOpen",
+      "TestDataSourceExists",
+      "TestDataSourceAbspath",
+      "TestRepositoryAbspath",
+      "TestRepositoryExists",
+      "TestOpenFunc"
+    ],
+    "functions": [
+      "urlopen_stub",
+      "setup_module",
+      "teardown_module",
+      "valid_textfile",
+      "invalid_textfile",
+      "valid_httpurl",
+      "invalid_httpurl",
+      "valid_baseurl",
+      "invalid_baseurl",
+      "valid_httpfile",
+      "invalid_httpfile",
+      "test_del_attr_handling"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_281_75abc3f1ee0764ef_AI_Chariot_Legacy_666_1.0.0_20260508_test__datasource.py.json"
+}

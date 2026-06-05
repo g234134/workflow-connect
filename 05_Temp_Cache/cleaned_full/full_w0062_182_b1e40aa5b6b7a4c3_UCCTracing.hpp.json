@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 182,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\UCCTracing.hpp",
+  "name": "UCCTracing.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 2359,
+  "content_sha256": "b1e40aa5b6b7a4c3ee9a8606051c3cb581b4b7a46c1f99ca6e84a32ad74e208d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 58,
+    "non_empty_lines": 50,
+    "char_count": 2359,
+    "preview_lines": [
+      "#pragma once",
+      "#ifdef USE_C10D_UCC",
+      "#include <torch/csrc/distributed/c10d/UCCUtils.hpp>",
+      "namespace c10d {",
+      "#define RECORD_COMMS_TRACE(                                                    \\",
+      "    _comms_tracer, _work, _opType, _rank, _comm_size, _inTensors, _outTensors) \\",
+      "  do {                                                                         \\",
+      "    if (torch_ucc_config.enable_comms_logger) {                                \\",
+      "      _comms_tracer->recordComms(                                              \\",
+      "          opTypeToString(_opType),                                             \\"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_182_b1e40aa5b6b7a4c3_UCCTracing.hpp.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 173,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_benchmarking.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_benchmarking.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7884,
+  "content_sha256": "fe9690435e8ce612aefbc652c3e60e375f6c7a39eaa1e1b357f13ed04cf797f8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 204,
+    "non_empty_lines": 166,
+    "char_count": 7884,
+    "preview_lines": [
+      "import time",
+      "from functools import cached_property, wraps",
+      "from itertools import chain",
+      "from statistics import median",
+      "from typing import Any, Callable, Dict, List, Tuple",
+      "from typing_extensions import Concatenate, ParamSpec, Self, TypeVar",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "logger = torch._logging.getArtifactLogger(__name__, \"benchmarking\")",
+      "MILLISECONDS_PER_SECOND = 1000"
+    ],
+    "imports": [
+      "import time",
+      "from functools import cached_property, wraps",
+      "from itertools import chain",
+      "from statistics import median",
+      "from typing import Any, Callable, Dict, List, Tuple",
+      "from typing_extensions import Concatenate, ParamSpec, Self, TypeVar",
+      "import torch",
+      "from torch._dynamo.utils import counters",
+      "from triton.testing import do_bench"
+    ],
+    "classes": [
+      "Benchmarker",
+      "TritonBenchmarker"
+    ],
+    "functions": [
+      "maybe_time",
+      "count"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_173_fe9690435e8ce612_AI_Chariot_Legacy_666_1.0.0_20260508_benchmarking.py.json"
+}

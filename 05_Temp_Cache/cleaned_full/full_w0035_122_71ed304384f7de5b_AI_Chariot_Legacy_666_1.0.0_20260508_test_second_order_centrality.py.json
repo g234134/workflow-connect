@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 122,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_second_order_centrality.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_second_order_centrality.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1999,
+  "content_sha256": "71ed304384f7de5bb6df0b24cc6527052ed7e0148e0e5bc05f54b92b194bcce0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 82,
+    "non_empty_lines": 56,
+    "char_count": 1999,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for second order centrality.",
+      "\"\"\"",
+      "import pytest",
+      "pytest.importorskip(\"numpy\")",
+      "pytest.importorskip(\"scipy\")",
+      "import networkx as nx",
+      "def test_empty():",
+      "    with pytest.raises(nx.NetworkXException):",
+      "        G = nx.empty_graph()"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "test_empty",
+      "test_non_connected",
+      "test_non_negative_edge_weights",
+      "test_weight_attribute",
+      "test_one_node_graph",
+      "test_P3",
+      "test_K3",
+      "test_ring_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_122_71ed304384f7de5b_AI_Chariot_Legacy_666_1.0.0_20260508_test_second_order_centrality.py.json"
+}

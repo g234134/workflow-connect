@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "f9a77b425ffb424da571a5d6c2c9b533",
+  "wave": 1,
+  "idx_in_wave": 19,
+  "generated_at": "2026-05-08T18:44:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_0011_update_proxy_permissions.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_0011_update_proxy_permissions.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2860,
+  "content_sha256": "85a5dde708dc4b6111e1bc71ce723ecfba7b1f8aedecfd130900ff7782765436",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 76,
+    "non_empty_lines": 66,
+    "char_count": 2860,
+    "preview_lines": [
+      "import sys",
+      "from django.core.management.color import color_style",
+      "from django.db import IntegrityError, migrations, transaction",
+      "from django.db.models import Q",
+      "WARNING = \"\"\"",
+      "    A problem arose migrating proxy model permissions for {old} to {new}.",
+      "      Permission(s) for {new} already existed.",
+      "      Codenames Q: {query}",
+      "    Ensure to audit ALL permissions for {old} and {new}.",
+      "\"\"\""
+    ],
+    "imports": [
+      "import sys",
+      "from django.core.management.color import color_style",
+      "from django.db import IntegrityError, migrations, transaction",
+      "from django.db.models import Q"
+    ],
+    "classes": [
+      "Migration"
+    ],
+    "functions": [
+      "update_proxy_model_permissions",
+      "revert_proxy_model_permissions"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0001_019_85a5dde708dc4b61_AI_Chariot_Legacy_666_1.0.0_20260508_0011_update_proxy_permissions.py.json"
+}

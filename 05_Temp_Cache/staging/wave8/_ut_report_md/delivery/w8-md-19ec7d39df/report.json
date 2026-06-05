@@ -1,0 +1,56 @@
+{
+  "schema_version": "wave7_report_v0.1",
+  "job_id": "w8-md-19ec7d39df",
+  "summary": {
+    "job_id": "w8-md-19ec7d39df",
+    "sku": "CLEAN-BASIC",
+    "accepted_units": 1,
+    "rejected_units": 0,
+    "total_rows": 1,
+    "billing_units": {
+      "U": 1,
+      "L": 0
+    },
+    "qa_status": "pass",
+    "cost": {
+      "billing_table_version": "w6_billing_v0.1",
+      "currency": "USD",
+      "line_items": [
+        {
+          "sku": "CLEAN-BASIC",
+          "unit": "U",
+          "quantity": 1,
+          "unit_price": null,
+          "amount": null,
+          "formula_ref": "R2_A4_3_amount_basic_or_enrich_u"
+        }
+      ],
+      "amount_basic": null,
+      "amount_enrich": null,
+      "amount_total": null,
+      "minimum_fee_adjustment": null,
+      "chargeable_hint": false
+    },
+    "chargeable_hint": false
+  },
+  "qa": {
+    "manifest_integrity": {
+      "ok": true,
+      "checked_rows": 1,
+      "failed_rows": 0,
+      "failed_checks": 0
+    },
+    "failures": [],
+    "sample_validation": {
+      "status": "skipped",
+      "ok": true,
+      "reason": "Wave 7: M2 sample_validation deferred to Wave 8",
+      "N": null,
+      "sample_size": null,
+      "seed": null,
+      "failed_checks": 0,
+      "failures": []
+    },
+    "overall_ok": true
+  }
+}

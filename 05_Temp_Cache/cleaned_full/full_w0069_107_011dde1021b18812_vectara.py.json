@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:49:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\vectorstores\\vectara.py",
+  "name": "vectara.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 824,
+  "content_sha256": "011dde1021b18812885e6dd47b4bf978e1af10328d276485368560269c7ce38c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 20,
+    "char_count": 821,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "if TYPE_CHECKING:",
+      "    from langchain_community.vectorstores import Vectara",
+      "    from langchain_community.vectorstores.vectara import VectaraRetriever",
+      "# Create a way to dynamically look up deprecated imports.",
+      "# Used to consolidate logic for raising deprecation warnings and",
+      "# handling optional imports.",
+      "DEPRECATED_LOOKUP = {",
+      "    \"Vectara\": \"langchain_community.vectorstores\","
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any",
+      "from langchain_classic._api import create_importer",
+      "from langchain_community.vectorstores import Vectara",
+      "from langchain_community.vectorstores.vectara import VectaraRetriever"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_107_011dde1021b18812_vectara.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 277,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_portalocker.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_portalocker.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3945,
+  "content_sha256": "07efdfcee41ab96c56fa15716ae4351b4f52cc9132e02280c40d9fb3cf3cb7ca",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 120,
+    "non_empty_lines": 97,
+    "char_count": 3945,
+    "preview_lines": [
+      "import os",
+      "import typing",
+      "from . import constants",
+      "from . import exceptions",
+      "# Alias for readability. Due to import recursion issues we cannot do:",
+      "# from .constants import LockFlags",
+      "LockFlags = constants.LockFlags",
+      "if os.name == 'nt':  # pragma: no cover",
+      "    import msvcrt",
+      "    import pywintypes"
+    ],
+    "imports": [
+      "import os",
+      "import typing",
+      "from . import constants",
+      "from . import exceptions",
+      "import msvcrt",
+      "import pywintypes",
+      "import win32con",
+      "import win32file",
+      "import winerror",
+      "import fcntl"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_277_07efdfcee41ab96c_AI_Chariot_Legacy_666_1.0.0_20260508_portalocker.py.json"
+}

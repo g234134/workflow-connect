@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 113,
+  "generated_at": "2026-05-08T18:47:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\cpu\\vec\\vec256\\vsx\\vsx_helpers.h",
+  "name": "vsx_helpers.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 20453,
+  "content_sha256": "663a2474cc591f024b026147b35c4949a6352d9b5f7efc6a3fe9f1f81faa4fce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 473,
+    "non_empty_lines": 424,
+    "char_count": 20453,
+    "preview_lines": [
+      "#pragma once",
+      "#include <cstdint>",
+      "#include <c10/macros/Macros.h>",
+      "#include <ATen/cpu/vec/intrinsics.h>",
+      "#if defined(__clang__)",
+      "typedef __vector __bool char vbool8;",
+      "typedef __vector __bool short vbool16;",
+      "typedef __vector __bool int vbool32;",
+      "typedef __vector __bool long long vbool64;",
+      "using vint8    = __attribute__((vector_size(16))) signed char;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_113_663a2474cc591f02_vsx_helpers.h.json"
+}

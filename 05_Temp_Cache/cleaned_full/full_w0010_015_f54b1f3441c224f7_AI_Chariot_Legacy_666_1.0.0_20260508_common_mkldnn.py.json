@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 15,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_mkldnn.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_mkldnn.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2392,
+  "content_sha256": "f54b1f3441c224f7fc95db8990663bc0ee3f8b3f770f48e50fc7e1b55371fb5b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 63,
+    "char_count": 2392,
+    "preview_lines": [
+      "# mypy: ignore-errors",
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import torch",
+      "# Test whether hardware BF32 math mode enabled. It is enabled only on:",
+      "# - MKLDNN is available",
+      "# - BF16 is supported by MKLDNN",
+      "def bf32_is_not_fp32():",
+      "    if not torch.backends.mkldnn.is_available():"
+    ],
+    "imports": [
+      "import contextlib",
+      "import functools",
+      "import inspect",
+      "import torch"
+    ],
+    "classes": [],
+    "functions": [
+      "bf32_is_not_fp32",
+      "bf32_off",
+      "bf32_on",
+      "bf32_on_and_off"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_015_f54b1f3441c224f7_AI_Chariot_Legacy_666_1.0.0_20260508_common_mkldnn.py.json"
+}

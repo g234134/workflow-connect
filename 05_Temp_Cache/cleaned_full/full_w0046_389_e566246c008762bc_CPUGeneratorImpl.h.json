@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\CPUGeneratorImpl.h",
+  "name": "CPUGeneratorImpl.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 1587,
+  "content_sha256": "e566246c008762bc68b052eceb12e5c4def8eb337a36efc0d06720d1ee637200",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 49,
+    "non_empty_lines": 40,
+    "char_count": 1587,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Generator.h>",
+      "#include <ATen/core/MT19937RNGEngine.h>",
+      "#include <c10/core/GeneratorImpl.h>",
+      "#include <c10/util/Optional.h>",
+      "namespace at {",
+      "struct TORCH_API CPUGeneratorImpl : public c10::GeneratorImpl {",
+      "  // Constructors",
+      "  CPUGeneratorImpl(uint64_t seed_in = default_rng_seed_val);",
+      "  ~CPUGeneratorImpl() override = default;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_389_e566246c008762bc_CPUGeneratorImpl.h.json"
+}

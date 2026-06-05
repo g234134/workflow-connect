@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 152,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ast_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ast_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2117,
+  "content_sha256": "8f09f8e2870d4216466df705b04667c22fe01af3db360ce343ed11b84b700f32",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 44,
+    "char_count": 2117,
+    "preview_lines": [
+      "\"\"\"",
+      "    Module of utilities for transforming a lark.Tree into a custom Abstract Syntax Tree (AST defined in classes)",
+      "\"\"\"",
+      "import inspect, re",
+      "import types",
+      "from typing import Optional, Callable",
+      "from lark import Transformer, v_args",
+      "class Ast:",
+      "    \"\"\"Abstract class",
+      "    Subclasses will be collected by `create_transformer()`"
+    ],
+    "imports": [
+      "import inspect, re",
+      "import types",
+      "from typing import Optional, Callable",
+      "from lark import Transformer, v_args"
+    ],
+    "classes": [
+      "Ast",
+      "AsList",
+      "WithMeta"
+    ],
+    "functions": [
+      "camel_to_snake",
+      "create_transformer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_152_8f09f8e2870d4216_AI_Chariot_Legacy_666_1.0.0_20260508_ast_utils.py.json"
+}

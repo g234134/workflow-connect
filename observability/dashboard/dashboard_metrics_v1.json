@@ -1,0 +1,102 @@
+{
+  "version": "dashboard-metrics-v1",
+  "tier": "dev_staging_v1",
+  "description": "Dashboard-ready panel definitions (no UI). Consumes gov_core monitoring API or PG aggregates.",
+  "data_sources": {
+    "cost_trend": {
+      "type": "http",
+      "path": "/monitoring/cost-trend",
+      "params": { "days": 7 }
+    },
+    "error_trend": {
+      "type": "http",
+      "path": "/monitoring/error-trend",
+      "params": { "hours": 24 }
+    },
+    "overview": {
+      "type": "http",
+      "path": "/monitoring/overview"
+    },
+    "dashboard_summary": {
+      "type": "http",
+      "path": "/monitoring/dashboard-summary"
+    },
+    "agent_metrics_jsonl": {
+      "type": "file",
+      "path_pattern": "workflow_v2/observability/gov_gate_metrics/local.jsonl",
+      "note": "M-line agent-metrics-v1 task_end events when PG unavailable"
+    }
+  },
+  "panels": [
+    {
+      "id": "token_cost_per_day",
+      "title": "Token cost / day",
+      "type": "timeseries",
+      "unit": "usd",
+      "source": "cost_trend",
+      "series_key": "series",
+      "x_field": "date",
+      "y_field": "cost_usd",
+      "secondary_y": { "field": "tokens", "label": "tokens" }
+    },
+    {
+      "id": "request_count",
+      "title": "Request count",
+      "type": "stat",
+      "source": "overview",
+      "value_path": "kpis.task_count",
+      "fallback_source": "cost_trend",
+      "fallback_aggregate": "sum(task_count)"
+    },
+    {
+      "id": "error_rate",
+      "title": "Error rate",
+      "type": "gauge",
+      "unit": "ratio",
+      "source": "overview",
+      "value_path": "kpis.error_rate",
+      "thresholds": { "warning": 0.1, "critical": 0.15 }
+    },
+    {
+      "id": "major_agent_success_rate",
+      "title": "Major agent success rate",
+      "type": "bar",
+      "unit": "ratio",
+      "source": "dashboard_summary",
+      "value_path": "ask_pipeline.success_rate",
+      "group_by": "agent_name",
+      "agents": [
+        "ask_pipeline",
+        "rag_query_agent",
+        "tool_selector_agent",
+        "tool_executor_agent",
+        "data_pipeline_agent"
+      ]
+    }
+  ],
+  "prometheus_hints": {
+    "note": "When Prometheus is adopted, map gov-trace-v2 log events or PG task_runs to these names.",
+    "metrics": [
+      {
+        "name": "gov_request_total",
+        "type": "counter",
+        "labels": ["agent_name", "workflow_name", "status"]
+      },
+      {
+        "name": "gov_request_errors_total",
+        "type": "counter",
+        "labels": ["error_type", "tool_name"]
+      },
+      {
+        "name": "gov_token_cost_usd_total",
+        "type": "counter",
+        "labels": ["agent_name", "workflow_name"]
+      },
+      {
+        "name": "gov_request_duration_ms",
+        "type": "histogram",
+        "labels": ["agent_name", "workflow_name"]
+      }
+    ]
+  }
+}

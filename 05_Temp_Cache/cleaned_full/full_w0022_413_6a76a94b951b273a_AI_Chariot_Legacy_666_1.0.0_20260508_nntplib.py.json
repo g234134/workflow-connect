@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 413,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nntplib.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nntplib.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41087,
+  "content_sha256": "6a76a94b951b273aa87335d7c9c4d7273e4c59485c784b057f681443b32d9004",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1093,
+    "non_empty_lines": 973,
+    "char_count": 41087,
+    "preview_lines": [
+      "\"\"\"An NNTP client class based on:",
+      "- RFC 977: Network News Transfer Protocol",
+      "- RFC 2980: Common NNTP Extensions",
+      "- RFC 3977: Network News Transfer Protocol (version 2)",
+      "Example:",
+      ">>> from nntplib import NNTP",
+      ">>> s = NNTP('news')",
+      ">>> resp, count, first, last, name = s.group('comp.lang.python')",
+      ">>> print('Group', name, 'has', count, 'articles, range', first, 'to', last)",
+      "Group comp.lang.python has 51 articles, range 5770 to 5821"
+    ],
+    "imports": [
+      "import re",
+      "import socket",
+      "import collections",
+      "import datetime",
+      "import sys",
+      "import warnings",
+      "import ssl",
+      "from email.header import decode_header as _email_decode_header",
+      "from socket import _GLOBAL_DEFAULT_TIMEOUT"
+    ],
+    "classes": [
+      "NNTPError",
+      "NNTPReplyError",
+      "NNTPTemporaryError",
+      "NNTPPermanentError",
+      "NNTPProtocolError",
+      "NNTPDataError",
+      "NNTP"
+    ],
+    "functions": [
+      "decode_header",
+      "_parse_overview_fmt",
+      "_parse_overview",
+      "_parse_datetime",
+      "_unparse_datetime"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_413_6a76a94b951b273a_AI_Chariot_Legacy_666_1.0.0_20260508_nntplib.py.json"
+}

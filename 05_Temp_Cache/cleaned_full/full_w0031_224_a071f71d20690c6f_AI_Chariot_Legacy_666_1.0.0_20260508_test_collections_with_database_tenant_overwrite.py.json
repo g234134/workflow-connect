@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 224,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_collections_with_database_tenant_overwrite.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_collections_with_database_tenant_overwrite.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7927,
+  "content_sha256": "a071f71d20690c6f72b2adbe5ccce23ab0b91090aa5b7aeb884d1c8e3a5b1e04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 214,
+    "non_empty_lines": 183,
+    "char_count": 7927,
+    "preview_lines": [
+      "from typing import Dict, Optional, Tuple",
+      "from overrides import overrides",
+      "from hypothesis.stateful import (",
+      "    initialize,",
+      "    invariant,",
+      "    rule,",
+      "    run_state_machine_as_test,",
+      ")",
+      "import uuid",
+      "import logging"
+    ],
+    "imports": [
+      "from typing import Dict, Optional, Tuple",
+      "from overrides import overrides",
+      "from hypothesis.stateful import (",
+      "import uuid",
+      "import logging",
+      "import pytest",
+      "from chromadb.api import AdminAPI",
+      "from chromadb.api.client import AdminClient, Client",
+      "from chromadb.config import Settings, System",
+      "from chromadb.test.conftest import (",
+      "from chromadb.test.property.test_collections_with_database_tenant import (",
+      "import chromadb.test.property.strategies as strategies",
+      "import numpy",
+      "import chromadb.api.types as types"
+    ],
+    "classes": [
+      "SingletonTenantDatabaseCollectionStateMachine"
+    ],
+    "functions": [
+      "_singleton_and_root_clients",
+      "test_collections_with_tenant_database_overwrite",
+      "test_repeat_failure"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_224_a071f71d20690c6f_AI_Chariot_Legacy_666_1.0.0_20260508_test_collections_with_database_tenant_overwrite.py.json"
+}

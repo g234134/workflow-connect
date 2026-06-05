@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_envelope.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_envelope.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7309,
+  "content_sha256": "7fca8856eaf10f6b220bd991cba582875e88dcc0187fb80a9935a68b90d56591",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 205,
+    "non_empty_lines": 182,
+    "char_count": 7309,
+    "preview_lines": [
+      "\"\"\"",
+      "The GDAL/OGR library uses an Envelope structure to hold the bounding",
+      "box information for a geometry. The envelope (bounding box) contains",
+      "two pairs of coordinates, one for the lower left coordinate and one",
+      "for the upper right coordinate:",
+      "                          +----------o Upper right; (max_x, max_y)",
+      "                          |          |",
+      "                          |          |",
+      "                          |          |",
+      "Lower left (min_x, min_y) o----------+"
+    ],
+    "imports": [
+      "from ctypes import Structure, c_double",
+      "from django.contrib.gis.gdal.error import GDALException"
+    ],
+    "classes": [
+      "OGREnvelope",
+      "Envelope"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_458_7fca8856eaf10f6b_AI_Chariot_Legacy_666_1.0.0_20260508_envelope.py.json"
+}

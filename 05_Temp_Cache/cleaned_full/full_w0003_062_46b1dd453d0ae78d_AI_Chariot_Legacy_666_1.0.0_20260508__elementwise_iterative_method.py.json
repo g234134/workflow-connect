@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__elementwise_iterative_method.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__elementwise_iterative_method.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15634,
+  "content_sha256": "46b1dd453d0ae78daef693d973f4304b57f33e3735b78b0eaac0506db27af02b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 357,
+    "non_empty_lines": 308,
+    "char_count": 15634,
+    "preview_lines": [
+      "# `_elementwise_iterative_method.py` includes tools for writing functions that",
+      "# - are vectorized to work elementwise on arrays,",
+      "# - implement non-trivial, iterative algorithms with a callback interface, and",
+      "# - return rich objects with iteration count, termination status, etc.",
+      "#",
+      "# Examples include:",
+      "# `scipy.optimize._chandrupatla._chandrupatla for scalar rootfinding,",
+      "# `scipy.optimize._chandrupatla._chandrupatla_minimize for scalar minimization,",
+      "# `scipy.optimize._differentiate._differentiate for numerical differentiation,",
+      "# `scipy.optimize._bracket._bracket_root for finding rootfinding brackets,"
+    ],
+    "imports": [
+      "import math",
+      "import numpy as np",
+      "from ._util import _RichResult, _call_callback_maybe_halt",
+      "from ._array_api import array_namespace, xp_size"
+    ],
+    "classes": [],
+    "functions": [
+      "_initialize",
+      "_loop",
+      "_check_termination",
+      "_update_active",
+      "_prepare_result"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_062_46b1dd453d0ae78d_AI_Chariot_Legacy_666_1.0.0_20260508__elementwise_iterative_method.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 266,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_filestring_sandbox.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_filestring_sandbox.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2069,
+  "content_sha256": "6a52aa844fb74863fc9a409932c80567ad12cde8665fb8d52bbf917e0b49abe4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 49,
+    "char_count": 2067,
+    "preview_lines": [
+      "import io",
+      "import os",
+      "import pytest",
+      "from nltk.util import filestring",
+      "def test_reads_allowed_file(tmp_path):",
+      "    \"\"\"filestring should read files inside allowed_dir\"\"\"",
+      "    allowed_dir = tmp_path / \"allowed\"",
+      "    allowed_dir.mkdir()",
+      "    f = allowed_dir / \"example.txt\"",
+      "    f.write_text(\"hello world\")"
+    ],
+    "imports": [
+      "import io",
+      "import os",
+      "import pytest",
+      "from nltk.util import filestring"
+    ],
+    "classes": [],
+    "functions": [
+      "test_reads_allowed_file",
+      "test_rejects_parent_traversal",
+      "test_rejects_symlink_escape",
+      "test_preserves_file_like_objects",
+      "test_encoding_fallback"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_266_6a52aa844fb74863_AI_Chariot_Legacy_666_1.0.0_20260508_test_filestring_sandbox.py.json"
+}

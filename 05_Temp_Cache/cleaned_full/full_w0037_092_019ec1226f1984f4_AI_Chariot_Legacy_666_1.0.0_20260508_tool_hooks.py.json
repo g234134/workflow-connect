@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 92,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_hooks.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_hooks.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10522,
+  "content_sha256": "019ec1226f1984f4715ddccb2018e9c30786e556652b22715a869ff03883c29f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 313,
+    "non_empty_lines": 252,
+    "char_count": 10522,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from crewai.events.event_listener import event_listener",
+      "from crewai.hooks.types import (",
+      "    AfterToolCallHookCallable,",
+      "    AfterToolCallHookType,",
+      "    BeforeToolCallHookCallable,",
+      "    BeforeToolCallHookType,",
+      ")",
+      "from crewai.utilities.printer import PRINTER"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "from crewai.events.event_listener import event_listener",
+      "from crewai.hooks.types import (",
+      "from crewai.utilities.printer import PRINTER",
+      "from crewai.agent import Agent",
+      "from crewai.agents.agent_builder.base_agent import BaseAgent",
+      "from crewai.crew import Crew",
+      "from crewai.task import Task",
+      "from crewai.tools.structured_tool import CrewStructuredTool"
+    ],
+    "classes": [
+      "ToolCallHookContext"
+    ],
+    "functions": [
+      "register_before_tool_call_hook",
+      "register_after_tool_call_hook",
+      "get_before_tool_call_hooks",
+      "get_after_tool_call_hooks",
+      "unregister_before_tool_call_hook",
+      "unregister_after_tool_call_hook",
+      "clear_before_tool_call_hooks",
+      "clear_after_tool_call_hooks",
+      "clear_all_tool_call_hooks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_092_019ec1226f1984f4_AI_Chariot_Legacy_666_1.0.0_20260508_tool_hooks.py.json"
+}

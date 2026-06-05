@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 38,
+  "idx_in_wave": 87,
+  "generated_at": "2026-05-08T18:46:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_user_session.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_user_session.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4873,
+  "content_sha256": "44e3513fc62234b1bdd5e5ebdeac65ceba2683bf2f707ad36cb57f68f1843f08",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 153,
+    "non_empty_lines": 118,
+    "char_count": 4873,
+    "preview_lines": [
+      "from typing import Callable, Dict, Generic, Optional, TypeVar",
+      "from chainlit.context import context",
+      "user_sessions: Dict[str, Dict] = {}",
+      "T = TypeVar(\"T\")",
+      "class UserSession:",
+      "    \"\"\"",
+      "    Developer facing user session class.",
+      "    Useful for the developer to store user specific data between calls.",
+      "    \"\"\"",
+      "    def get(self, key, default=None):"
+    ],
+    "imports": [
+      "from typing import Callable, Dict, Generic, Optional, TypeVar",
+      "from chainlit.context import context"
+    ],
+    "classes": [
+      "UserSession",
+      "SessionAccessor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0038_087_44e3513fc62234b1_AI_Chariot_Legacy_666_1.0.0_20260508_user_session.py.json"
+}

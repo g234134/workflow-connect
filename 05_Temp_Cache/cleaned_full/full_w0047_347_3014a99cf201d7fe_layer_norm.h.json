@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 347,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\layer_norm.h",
+  "name": "layer_norm.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 2896,
+  "content_sha256": "3014a99cf201d7fe2617e1feaa09888055e1a109ec774d674c4b4a1437774805",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 100,
+    "non_empty_lines": 85,
+    "char_count": 2896,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/core/Tensor.h>",
+      "#include <ATen/native/DispatchStub.h>",
+      "#include <c10/util/accumulate.h>",
+      "namespace at::native {",
+      "namespace {",
+      "C10_ALWAYS_INLINE std::pair<int64_t, int64_t> _check_layer_norm_inputs(",
+      "    const Tensor& input,",
+      "    IntArrayRef normalized_shape,",
+      "    const Tensor& weight /* optional */,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_347_3014a99cf201d7fe_layer_norm.h.json"
+}

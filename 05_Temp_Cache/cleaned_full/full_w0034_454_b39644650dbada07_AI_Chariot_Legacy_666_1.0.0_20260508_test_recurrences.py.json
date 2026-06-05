@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 454,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_recurrences.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_recurrences.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3019,
+  "content_sha256": "b39644650dbada072704ba428c956678a953290072453401adcf8df69ff85bc7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 48,
+    "char_count": 3019,
+    "preview_lines": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.functions.combinatorial.numbers import fibonacci",
+      "from sympy.core import S, symbols",
+      "from sympy.testing.pytest import raises",
+      "from sympy.discrete.recurrences import linrec",
+      "def test_linrec():",
+      "    assert linrec(coeffs=[1, 1], init=[1, 1], n=20) == 10946",
+      "    assert linrec(coeffs=[1, 2, 3, 4, 5], init=[1, 1, 0, 2], n=10) == 1040",
+      "    assert linrec(coeffs=[0, 0, 11, 13], init=[23, 27], n=25) == 59628567384",
+      "    assert linrec(coeffs=[0, 0, 1, 1, 2], init=[1, 5, 3], n=15) == 165"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Rational",
+      "from sympy.functions.combinatorial.numbers import fibonacci",
+      "from sympy.core import S, symbols",
+      "from sympy.testing.pytest import raises",
+      "from sympy.discrete.recurrences import linrec"
+    ],
+    "classes": [],
+    "functions": [
+      "test_linrec"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_454_b39644650dbada07_AI_Chariot_Legacy_666_1.0.0_20260508_test_recurrences.py.json"
+}

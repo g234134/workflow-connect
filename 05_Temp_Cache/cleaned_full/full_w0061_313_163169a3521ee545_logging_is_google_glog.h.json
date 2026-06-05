@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 313,
+  "generated_at": "2026-05-08T18:48:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\util\\logging_is_google_glog.h",
+  "name": "logging_is_google_glog.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 3903,
+  "content_sha256": "163169a3521ee545427227907b263243a8d11811caef533ac75908052512941b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 109,
+    "non_empty_lines": 92,
+    "char_count": 3903,
+    "preview_lines": [
+      "#ifndef C10_UTIL_LOGGING_IS_GOOGLE_GLOG_H_",
+      "#define C10_UTIL_LOGGING_IS_GOOGLE_GLOG_H_",
+      "#include <map>",
+      "#include <set>",
+      "#include <vector>",
+      "#include <iomanip> // because some of the caffe2 code uses e.g. std::setw",
+      "// Using google glog. For glog 0.3.2 versions, stl_logging.h needs to be before",
+      "// logging.h to actually use stl_logging. Because template magic.",
+      "// In addition, we do not do stl logging in .cu files because nvcc does not like",
+      "// it. Some mobile platforms do not like stl_logging, so we add an"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_313_163169a3521ee545_logging_is_google_glog.h.json"
+}

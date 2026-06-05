@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 419,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_index_command.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_index_command.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7094,
+  "content_sha256": "3d370a49df89ddb51a9730cef6436f6779841a22578b1df64387cfc24c525c87",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 168,
+    "char_count": 7094,
+    "preview_lines": [
+      "\"\"\"",
+      "Contains command classes which may interact with an index / the network.",
+      "Unlike its sister module, req_command, this module still uses lazy imports",
+      "so commands which don't always hit the network (e.g. list w/o --outdated or",
+      "--uptodate) don't need waste time importing PipSession and friends.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import contextlib",
+      "import logging",
+      "import os"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import logging",
+      "import os",
+      "from collections.abc import Iterator",
+      "from functools import lru_cache",
+      "from optparse import Values",
+      "from typing import TYPE_CHECKING",
+      "from pip._vendor import certifi",
+      "from pip._internal.cli.base_command import Command",
+      "from pip._internal.cli.command_context import CommandContextMixIn",
+      "from ssl import SSLContext",
+      "from pip._vendor.packaging.utils import NormalizedName",
+      "from pip._internal.network.session import PipSession",
+      "from pip._internal.self_outdated_check import UpgradePrompt",
+      "import ssl",
+      "from pip._vendor import truststore",
+      "from pip._internal.network.session import PipSession",
+      "from pip._internal.self_outdated_check import pip_self_version_check_fetch",
+      "from pip._internal.self_outdated_check import pip_self_version_check_emit"
+    ],
+    "classes": [
+      "SessionCommandMixin",
+      "IndexGroupCommand"
+    ],
+    "functions": [
+      "_create_truststore_ssl_context",
+      "_pip_self_version_check_fetch",
+      "_pip_self_version_check_emit"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_419_3d370a49df89ddb5_AI_Chariot_Legacy_666_1.0.0_20260508_index_command.py.json"
+}

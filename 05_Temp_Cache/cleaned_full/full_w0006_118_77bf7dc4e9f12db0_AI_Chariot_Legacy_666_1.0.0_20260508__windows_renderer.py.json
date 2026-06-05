@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 118,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__windows_renderer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__windows_renderer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2759,
+  "content_sha256": "77bf7dc4e9f12db0820b31aef7e53b60b988424c6dc5020115043a8aee2f7927",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 52,
+    "char_count": 2759,
+    "preview_lines": [
+      "from typing import Iterable, Sequence, Tuple, cast",
+      "from rich._win32_console import LegacyWindowsTerm, WindowsCoordinates",
+      "from rich.segment import ControlCode, ControlType, Segment",
+      "def legacy_windows_render(buffer: Iterable[Segment], term: LegacyWindowsTerm) -> None:",
+      "    \"\"\"Makes appropriate Windows Console API calls based on the segments in the buffer.",
+      "    Args:",
+      "        buffer (Iterable[Segment]): Iterable of Segments to convert to Win32 API calls.",
+      "        term (LegacyWindowsTerm): Used to call the Windows Console API.",
+      "    \"\"\"",
+      "    for text, style, control in buffer:"
+    ],
+    "imports": [
+      "from typing import Iterable, Sequence, Tuple, cast",
+      "from rich._win32_console import LegacyWindowsTerm, WindowsCoordinates",
+      "from rich.segment import ControlCode, ControlType, Segment"
+    ],
+    "classes": [],
+    "functions": [
+      "legacy_windows_render"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_118_77bf7dc4e9f12db0_AI_Chariot_Legacy_666_1.0.0_20260508__windows_renderer.py.json"
+}

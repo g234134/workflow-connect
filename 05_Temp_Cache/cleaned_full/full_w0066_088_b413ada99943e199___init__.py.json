@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 88,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\outputs\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2186,
+  "content_sha256": "b413ada99943e199a2062e70ea5ec14d38de2bfa1649ee083cbf148817056115",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 51,
+    "char_count": 2183,
+    "preview_lines": [
+      "\"\"\"Output classes.",
+      "Used to represent the output of a language model call and the output of a chat.",
+      "The top container for information is the `LLMResult` object. `LLMResult` is used by both",
+      "chat models and LLMs. This object contains the output of the language model and any",
+      "additional information that the model provider wants to return.",
+      "When invoking models via the standard runnable methods (e.g. invoke, batch, etc.):",
+      "- Chat models will return `AIMessage` objects.",
+      "- LLMs will return regular text strings.",
+      "In addition, users can access the raw output of either LLMs or chat models via",
+      "callbacks. The `on_chat_model_end` and `on_llm_end` callbacks will return an `LLMResult`"
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING",
+      "from langchain_core._import_utils import import_attr",
+      "from langchain_core.outputs.chat_generation import (",
+      "from langchain_core.outputs.chat_result import ChatResult",
+      "from langchain_core.outputs.generation import Generation, GenerationChunk",
+      "from langchain_core.outputs.llm_result import LLMResult",
+      "from langchain_core.outputs.run_info import RunInfo"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__",
+      "__dir__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_088_b413ada99943e199___init__.py.json"
+}

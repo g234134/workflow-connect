@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 144,
+  "generated_at": "2026-05-08T18:45:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_licenses_app.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_licenses_app.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2963,
+  "content_sha256": "efdd167d85539851fe671685a6655363977cc9fad4e35d6da57cd573917c8566",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 99,
+    "non_empty_lines": 76,
+    "char_count": 2963,
+    "preview_lines": [
+      "# Copyright (c) Jupyter Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "\"\"\"A license reporting CLI",
+      "Mostly ready-to-use, the downstream must provide the location of the application's",
+      "static resources. Licenses from an app's federated_extensions will also be discovered",
+      "as configured in `labextensions_path` and `extra_labextensions_path`.",
+      "    from traitlets import default",
+      "    from jupyterlab_server import LicensesApp",
+      "    class MyLicensesApp(LicensesApp):",
+      "        version = \"0.1.0\""
+    ],
+    "imports": [
+      "from traitlets import default",
+      "from jupyterlab_server import LicensesApp",
+      "from typing import Any",
+      "from jupyter_core.application import JupyterApp, base_aliases, base_flags",
+      "from traitlets import Bool, Enum, Instance, Unicode",
+      "from ._version import __version__",
+      "from .config import LabConfig",
+      "from .licenses_handler import LicensesManager"
+    ],
+    "classes": [
+      "LicensesApp"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_144_efdd167d85539851_AI_Chariot_Legacy_666_1.0.0_20260508_licenses_app.py.json"
+}

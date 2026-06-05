@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 359,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\_execution.py",
+  "name": "_execution.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14586,
+  "content_sha256": "1d9e091a397e47e94ec182b76673318edc21416fa83ec6466d1875be3bdb61f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 385,
+    "non_empty_lines": 333,
+    "char_count": 14583,
+    "preview_lines": [
+      "\"\"\"Execution policies for the persistent shell middleware.\"\"\"",
+      "from __future__ import annotations",
+      "import abc",
+      "import json",
+      "import os",
+      "import shutil",
+      "import subprocess",
+      "import sys",
+      "import typing",
+      "from collections.abc import Mapping, Sequence"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import abc",
+      "import json",
+      "import os",
+      "import shutil",
+      "import subprocess",
+      "import sys",
+      "import typing",
+      "from collections.abc import Mapping, Sequence",
+      "from dataclasses import dataclass, field",
+      "from pathlib import Path",
+      "import resource",
+      "from collections.abc import Mapping, Sequence",
+      "from pathlib import Path"
+    ],
+    "classes": [
+      "BaseExecutionPolicy",
+      "HostExecutionPolicy",
+      "CodexSandboxExecutionPolicy",
+      "DockerExecutionPolicy"
+    ],
+    "functions": [
+      "_launch_subprocess"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_359_1d9e091a397e47e9__execution.py.json"
+}

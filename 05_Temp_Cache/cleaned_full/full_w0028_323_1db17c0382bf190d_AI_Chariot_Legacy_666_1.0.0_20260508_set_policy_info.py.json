@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 323,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_set_policy_info.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_set_policy_info.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 936,
+  "content_sha256": "1db17c0382bf190d7e9546633303431e48254166f081d9de245650ab7f1be84c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 20,
+    "char_count": 936,
+    "preview_lines": [
+      "import win32security",
+      "policy_handle = win32security.GetPolicyHandle(\"rupole\", win32security.POLICY_ALL_ACCESS)",
+      "event_audit_info = win32security.LsaQueryInformationPolicy(",
+      "    policy_handle, win32security.PolicyAuditEventsInformation",
+      ")",
+      "print(event_audit_info)",
+      "new_audit_info = list(event_audit_info[1])",
+      "new_audit_info[win32security.AuditCategoryPolicyChange] = (",
+      "    win32security.POLICY_AUDIT_EVENT_SUCCESS | win32security.POLICY_AUDIT_EVENT_FAILURE",
+      ")"
+    ],
+    "imports": [
+      "import win32security"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_323_1db17c0382bf190d_AI_Chariot_Legacy_666_1.0.0_20260508_set_policy_info.py.json"
+}

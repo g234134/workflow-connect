@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 33,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_interface.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_interface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6479,
+  "content_sha256": "380e2dd57417ed0aa6de91a14d960a9e8e1cff36c872fa525acb4efcb5c8551a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 185,
+    "non_empty_lines": 152,
+    "char_count": 6479,
+    "preview_lines": [
+      "# This file contains utilities for testing the dispatching feature",
+      "# A full test of all dispatchable algorithms is performed by",
+      "# modifying the pytest invocation and setting an environment variable",
+      "# NETWORKX_TEST_BACKEND=nx_loopback pytest",
+      "# This is comprehensive, but only tests the `test_override_dispatch`",
+      "# function in networkx.classes.backends.",
+      "# To test the `_dispatchable` function directly, several tests scattered throughout",
+      "# NetworkX have been augmented to test normal and dispatch mode.",
+      "# Searching for `dispatch_interface` should locate the specific tests.",
+      "import networkx as nx"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx import DiGraph, Graph, MultiDiGraph, MultiGraph, PlanarEmbedding",
+      "from networkx.classes.reportviews import NodeView"
+    ],
+    "classes": [
+      "LoopbackGraph",
+      "LoopbackDiGraph",
+      "LoopbackMultiGraph",
+      "LoopbackMultiDiGraph",
+      "LoopbackPlanarEmbedding",
+      "LoopbackBackendInterface"
+    ],
+    "functions": [
+      "convert"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_033_380e2dd57417ed0a_AI_Chariot_Legacy_666_1.0.0_20260508_dispatch_interface.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_standard_library.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_standard_library.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 733,
+  "content_sha256": "155b5f945b77f1e7c77bf4845fa9379ba21802d2968c0e2b00f66b942bfac80d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 17,
+    "char_count": 733,
+    "preview_lines": [
+      "\"\"\"",
+      "For the ``future`` package.",
+      "Changes any imports needed to reflect the standard library reorganization. Also",
+      "Also adds these import lines:",
+      "    from future import standard_library",
+      "    standard_library.install_aliases()",
+      "after any __future__ imports but before any other imports.",
+      "\"\"\"",
+      "from lib2to3.fixes.fix_imports import FixImports",
+      "from libfuturize.fixer_util import touch_import_top"
+    ],
+    "imports": [
+      "from future import standard_library",
+      "from lib2to3.fixes.fix_imports import FixImports",
+      "from libfuturize.fixer_util import touch_import_top"
+    ],
+    "classes": [
+      "FixFutureStandardLibrary"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_071_155b5f945b77f1e7_AI_Chariot_Legacy_666_1.0.0_20260508_fix_future_standard_library.py.json"
+}

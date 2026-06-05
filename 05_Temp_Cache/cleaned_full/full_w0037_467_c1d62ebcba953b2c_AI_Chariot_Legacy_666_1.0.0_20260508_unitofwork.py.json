@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 467,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unitofwork.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unitofwork.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 27829,
+  "content_sha256": "c1d62ebcba953b2c4b3ee82a57d2562e043d713dfd9341ab71e8762e4ced88a9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 796,
+    "non_empty_lines": 658,
+    "char_count": 27829,
+    "preview_lines": [
+      "# orm/unitofwork.py",
+      "# Copyright (C) 2005-2026 the SQLAlchemy authors and contributors",
+      "# <see AUTHORS file>",
+      "#",
+      "# This module is part of SQLAlchemy and is released under",
+      "# the MIT License: https://www.opensource.org/licenses/mit-license.php",
+      "# mypy: ignore-errors",
+      "\"\"\"The internals for the unit of work system.",
+      "The session's flush() process passes objects to a contextual object",
+      "here, which assembles flush tasks based on mappers and their properties,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "from typing import Dict",
+      "from typing import Optional",
+      "from typing import Set",
+      "from typing import TYPE_CHECKING",
+      "from . import attributes",
+      "from . import exc as orm_exc",
+      "from . import util as orm_util",
+      "from .. import event",
+      "from .. import util",
+      "from ..util import topological",
+      "from .dependency import DependencyProcessor",
+      "from .interfaces import MapperProperty",
+      "from .mapper import Mapper",
+      "from .session import Session",
+      "from .session import SessionTransaction",
+      "from .state import InstanceState"
+    ],
+    "classes": [
+      "UOWTransaction",
+      "IterateMappersMixin",
+      "Preprocess",
+      "PostSortRec",
+      "ProcessAll",
+      "PostUpdateAll",
+      "SaveUpdateAll",
+      "DeleteAll",
+      "ProcessState",
+      "SaveUpdateState",
+      "DeleteState"
+    ],
+    "functions": [
+      "track_cascade_events"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_467_c1d62ebcba953b2c_AI_Chariot_Legacy_666_1.0.0_20260508_unitofwork.py.json"
+}

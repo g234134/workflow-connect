@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 372,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_anticommutator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_anticommutator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1304,
+  "content_sha256": "7245872b040588031670369849aff6eaf8bf188b2fb37dbfd0eeb6239946b2bf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 37,
+    "char_count": 1304,
+    "preview_lines": [
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.symbol import symbols",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.anticommutator import AntiCommutator as AComm",
+      "from sympy.physics.quantum.operator import Operator",
+      "a, b, c = symbols('a,b,c')",
+      "A, B, C, D = symbols('A,B,C,D', commutative=False)",
+      "def test_anticommutator():",
+      "    ac = AComm(A, B)",
+      "    assert isinstance(ac, AComm)"
+    ],
+    "imports": [
+      "from sympy.core.numbers import Integer",
+      "from sympy.core.symbol import symbols",
+      "from sympy.physics.quantum.dagger import Dagger",
+      "from sympy.physics.quantum.anticommutator import AntiCommutator as AComm",
+      "from sympy.physics.quantum.operator import Operator"
+    ],
+    "classes": [
+      "Foo",
+      "Bar",
+      "Tam"
+    ],
+    "functions": [
+      "test_anticommutator",
+      "test_commutator_identities",
+      "test_anticommutator_dagger",
+      "test_eval_commutator"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_372_7245872b04058803_AI_Chariot_Legacy_666_1.0.0_20260508_test_anticommutator.py.json"
+}

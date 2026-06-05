@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 432,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\agents\\middleware_typing\\test_middleware_backwards_compat.py",
+  "name": "test_middleware_backwards_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10143,
+  "content_sha256": "2bc6a6b80e94a3a0166efa29b4e522e4455de5124795b8b3da5dbe1a23a6f4d2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 275,
+    "non_empty_lines": 221,
+    "char_count": 10140,
+    "preview_lines": [
+      "\"\"\"Test backwards compatibility for middleware type parameters.",
+      "This file verifies that middlewares written BEFORE the ResponseT change still work.",
+      "All patterns that were valid before should remain valid.",
+      "Run type check: uv run --group typing mypy <this file>",
+      "Run tests: uv run --group test pytest <this file> -v",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Any",
+      "import pytest",
+      "from langchain_core.language_models.fake_chat_models import GenericFakeChatModel",
+      "from langchain_core.messages import AIMessage, HumanMessage",
+      "from typing_extensions import TypedDict",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware.types import (",
+      "from collections.abc import Awaitable, Callable",
+      "from langgraph.runtime import Runtime"
+    ],
+    "classes": [
+      "OldStyleMiddleware1",
+      "OldStyleMiddleware2",
+      "OldStyleMiddleware3",
+      "MyContext",
+      "OldStyleMiddleware4",
+      "OldStyleAsyncMiddleware",
+      "OldStyleModelResponseMiddleware"
+    ],
+    "functions": [
+      "old_style_decorator",
+      "fake_model",
+      "test_old_pattern_1_unparameterized",
+      "test_old_pattern_2_two_params",
+      "test_old_pattern_3_explicit_none",
+      "test_old_pattern_4_specific_context",
+      "test_old_pattern_5_decorator",
+      "test_old_pattern_7_model_response_unparameterized",
+      "test_multiple_old_style_middlewares",
+      "test_model_response_backwards_compat",
+      "test_model_request_backwards_compat"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_432_2bc6a6b80e94a3a0_test_middleware_backwards_compat.py.json"
+}

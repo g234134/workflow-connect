@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 290,
+  "generated_at": "2026-05-08T18:46:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_serverless.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_serverless.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1621,
+  "content_sha256": "79949dd0d3d8066dd919d6059836255c3b400ff3defda50657bedb0b3261a042",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 48,
+    "char_count": 1621,
+    "preview_lines": [
+      "import sys",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING",
+      "import sentry_sdk",
+      "from sentry_sdk.utils import event_from_exception, reraise",
+      "if TYPE_CHECKING:",
+      "    from typing import Any, Callable, Optional, TypeVar, Union, overload",
+      "    F = TypeVar(\"F\", bound=Callable[..., Any])",
+      "else:",
+      "    def overload(x: \"F\") -> \"F\":"
+    ],
+    "imports": [
+      "import sys",
+      "from functools import wraps",
+      "from typing import TYPE_CHECKING",
+      "import sentry_sdk",
+      "from sentry_sdk.utils import event_from_exception, reraise",
+      "from typing import Any, Callable, Optional, TypeVar, Union, overload"
+    ],
+    "classes": [],
+    "functions": [
+      "serverless_function",
+      "serverless_function",
+      "serverless_function",
+      "_capture_and_reraise"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_290_79949dd0d3d8066d_AI_Chariot_Legacy_666_1.0.0_20260508_serverless.py.json"
+}

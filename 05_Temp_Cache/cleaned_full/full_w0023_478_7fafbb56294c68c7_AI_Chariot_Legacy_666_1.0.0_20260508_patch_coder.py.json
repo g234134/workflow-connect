@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 478,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_patch_coder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_patch_coder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30288,
+  "content_sha256": "7fafbb56294c68c79871915080855617271e3e8e887d9eabf43413e43a528411",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 706,
+    "non_empty_lines": 603,
+    "char_count": 30286,
+    "preview_lines": [
+      "import pathlib",
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from typing import Dict, List, Optional, Tuple",
+      "from .base_coder import Coder",
+      "from .patch_prompts import PatchPrompts",
+      "# --------------------------------------------------------------------------- #",
+      "#  Domain objects & Exceptions (Adapted from apply_patch.py)",
+      "# --------------------------------------------------------------------------- #",
+      "class DiffError(ValueError):"
+    ],
+    "imports": [
+      "import pathlib",
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from typing import Dict, List, Optional, Tuple",
+      "from .base_coder import Coder",
+      "from .patch_prompts import PatchPrompts"
+    ],
+    "classes": [
+      "DiffError",
+      "ActionType",
+      "Chunk",
+      "PatchAction",
+      "Patch",
+      "PatchCoder"
+    ],
+    "functions": [
+      "_norm",
+      "find_context_core",
+      "find_context",
+      "peek_next_section",
+      "identify_files_needed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_478_7fafbb56294c68c7_AI_Chariot_Legacy_666_1.0.0_20260508_patch_coder.py.json"
+}

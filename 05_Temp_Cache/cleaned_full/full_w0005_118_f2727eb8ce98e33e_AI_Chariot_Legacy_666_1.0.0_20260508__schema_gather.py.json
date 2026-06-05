@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 118,
+  "generated_at": "2026-05-08T18:44:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__schema_gather.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__schema_gather.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9052,
+  "content_sha256": "f2727eb8ce98e33eb1a5ab271a89c432e6ed3555ff9b179e44316677fa8c54b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 212,
+    "non_empty_lines": 177,
+    "char_count": 9052,
+    "preview_lines": [
+      "# pyright: reportTypedDictNotRequiredAccess=false, reportGeneralTypeIssues=false, reportArgumentType=false, reportAttributeAccessIssue=false",
+      "from __future__ import annotations",
+      "from dataclasses import dataclass, field",
+      "from typing import TypedDict",
+      "from pydantic_core.core_schema import (",
+      "    ComputedField,",
+      "    CoreSchema,",
+      "    DefinitionReferenceSchema,",
+      "    SerSchema,",
+      "    iter_union_choices,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass, field",
+      "from typing import TypedDict",
+      "from pydantic_core.core_schema import (",
+      "from typing_extensions import TypeAlias"
+    ],
+    "classes": [
+      "GatherResult",
+      "MissingDefinitionError",
+      "GatherContext"
+    ],
+    "functions": [
+      "traverse_metadata",
+      "traverse_definition_ref",
+      "traverse_schema",
+      "gather_schemas_for_cleaning"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_118_f2727eb8ce98e33e_AI_Chariot_Legacy_666_1.0.0_20260508__schema_gather.py.json"
+}

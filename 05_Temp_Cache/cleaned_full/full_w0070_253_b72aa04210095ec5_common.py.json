@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\qdrant\\tests\\integration_tests\\common.py",
+  "name": "common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3426,
+  "content_sha256": "b72aa04210095ec50da20472fded5543f0116a42d1e70dddfbe4a24d93e2630c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 67,
+    "char_count": 3423,
+    "preview_lines": [
+      "import requests  # type: ignore[import-untyped]",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_qdrant import SparseEmbeddings, SparseVector",
+      "def qdrant_running_locally() -> bool:",
+      "    \"\"\"Check if Qdrant is running at http://localhost:6333.\"\"\"",
+      "    try:",
+      "        response = requests.get(\"http://localhost:6333\", timeout=10.0)",
+      "        response_json = response.json()",
+      "        return response_json.get(\"title\") == \"qdrant - vector search engine\""
+    ],
+    "imports": [
+      "import requests  # type: ignore[import-untyped]",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_qdrant import SparseEmbeddings, SparseVector"
+    ],
+    "classes": [
+      "ConsistentFakeEmbeddings",
+      "ConsistentFakeSparseEmbeddings"
+    ],
+    "functions": [
+      "qdrant_running_locally",
+      "assert_documents_equals"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_253_b72aa04210095ec5_common.py.json"
+}

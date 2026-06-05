@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:45:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_fallback.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_fallback.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33319,
+  "content_sha256": "1003fa83d37bb535af4f0d3546d9d75dd620fb3667db515c1957dd06277c6948",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 929,
+    "non_empty_lines": 816,
+    "char_count": 33319,
+    "preview_lines": [
+      "\"\"\"Fallback pure Python implementation of msgpack\"\"\"",
+      "import struct",
+      "import sys",
+      "from datetime import datetime as _DateTime",
+      "if hasattr(sys, \"pypy_version_info\"):",
+      "    from __pypy__ import newlist_hint",
+      "    from __pypy__.builders import BytesBuilder",
+      "    _USING_STRINGBUILDER = True",
+      "    class BytesIO:",
+      "        def __init__(self, s=b\"\"):"
+    ],
+    "imports": [
+      "import struct",
+      "import sys",
+      "from datetime import datetime as _DateTime",
+      "from __pypy__ import newlist_hint",
+      "from __pypy__.builders import BytesBuilder",
+      "from io import BytesIO",
+      "from .exceptions import BufferFull, ExtraData, FormatError, OutOfData, StackError",
+      "from .ext import ExtType, Timestamp"
+    ],
+    "classes": [
+      "Unpacker",
+      "Packer"
+    ],
+    "functions": [
+      "_check_type_strict",
+      "_get_data_from_buffer",
+      "unpackb"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_275_1003fa83d37bb535_AI_Chariot_Legacy_666_1.0.0_20260508_fallback.py.json"
+}

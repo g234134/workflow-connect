@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\utils\\pycfunction_helpers.h",
+  "name": "pycfunction_helpers.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 398,
+  "content_sha256": "db12d4a6fdd419d2679aea7212a9c14b46e727783238598f0eb8a33cc530adb8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 13,
+    "non_empty_lines": 10,
+    "char_count": 398,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/macros/Macros.h>",
+      "#include <Python.h>",
+      "inline PyCFunction castPyCFunctionWithKeywords(PyCFunctionWithKeywords func) {",
+      "  C10_DIAGNOSTIC_PUSH_AND_IGNORED_IF_DEFINED(\"-Wcast-function-type\")",
+      "  C10_DIAGNOSTIC_PUSH_AND_IGNORED_IF_DEFINED(\"-Wcast-function-type-strict\")",
+      "  return reinterpret_cast<PyCFunction>(func);",
+      "  C10_DIAGNOSTIC_POP()",
+      "  C10_DIAGNOSTIC_POP()",
+      "}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_136_db12d4a6fdd419d2_pycfunction_helpers.h.json"
+}

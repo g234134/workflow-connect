@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 340,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\unit_tests\\test_globals.py",
+  "name": "test_globals.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2848,
+  "content_sha256": "997a458491eeccb9c79c4ce16875053e8d3663a68cd8552cc8ca698ad77bc741",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 83,
+    "non_empty_lines": 61,
+    "char_count": 2845,
+    "preview_lines": [
+      "import warnings",
+      "from langchain_core.globals import get_debug as core_get_debug",
+      "from langchain_core.globals import get_verbose as core_get_verbose",
+      "from langchain_core.globals import set_debug as core_set_debug",
+      "from langchain_core.globals import set_verbose as core_set_verbose",
+      "from langchain_classic.globals import get_debug, get_verbose, set_debug, set_verbose",
+      "def test_no_warning() -> None:",
+      "    with warnings.catch_warnings():",
+      "        warnings.simplefilter(\"error\")",
+      "        get_debug()"
+    ],
+    "imports": [
+      "import warnings",
+      "from langchain_core.globals import get_debug as core_get_debug",
+      "from langchain_core.globals import get_verbose as core_get_verbose",
+      "from langchain_core.globals import set_debug as core_set_debug",
+      "from langchain_core.globals import set_verbose as core_set_verbose",
+      "from langchain_classic.globals import get_debug, get_verbose, set_debug, set_verbose",
+      "from langchain_core import globals as langchain_globals",
+      "from langchain_core.callbacks.manager import _get_debug",
+      "from langchain_core import globals as langchain_globals",
+      "from langchain_classic.chains.base import _get_verbosity"
+    ],
+    "classes": [],
+    "functions": [
+      "test_no_warning",
+      "test_debug_is_settable_via_setter",
+      "test_verbose_is_settable_via_setter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_340_997a458491eeccb9_test_globals.py.json"
+}

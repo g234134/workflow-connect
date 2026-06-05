@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 31,
+  "idx_in_wave": 289,
+  "generated_at": "2026-05-08T18:46:22+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_construct.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_construct.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 39305,
+  "content_sha256": "25044484565f8dd22a5de9d77f190ea3b8c8a1df132abd9df21f86f484957a97",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 872,
+    "non_empty_lines": 733,
+    "char_count": 39305,
+    "preview_lines": [
+      "\"\"\"test sparse matrix construction functions\"\"\"",
+      "import numpy as np",
+      "from numpy import array",
+      "from numpy.testing import (assert_equal, assert_,",
+      "        assert_array_equal, assert_array_almost_equal_nulp)",
+      "import pytest",
+      "from pytest import raises as assert_raises",
+      "from scipy._lib._testutils import check_free_memory",
+      "from scipy.sparse import (csr_matrix, coo_matrix,",
+      "                          csr_array, coo_array,"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy import array",
+      "from numpy.testing import (assert_equal, assert_,",
+      "import pytest",
+      "from pytest import raises as assert_raises",
+      "from scipy._lib._testutils import check_free_memory",
+      "from scipy.sparse import (csr_matrix, coo_matrix,",
+      "from scipy.sparse._construct import rand as sprand"
+    ],
+    "classes": [
+      "TestConstructUtils"
+    ],
+    "functions": [
+      "_sprandn",
+      "_sprandn_array",
+      "test_diags_array"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0031_289_25044484565f8dd2_AI_Chariot_Legacy_666_1.0.0_20260508_test_construct.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:48:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\packaged\\autograd\\templates\\Functions.cpp",
+  "name": "Functions.cpp",
+  "extension": ".cpp",
+  "original_type": "cpp",
+  "size_bytes": 643,
+  "content_sha256": "20544777824795a27eb831f79a33b3c5162f8296fab19274d99f854a49939642",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 14,
+    "char_count": 643,
+    "preview_lines": [
+      "#include \"torch/csrc/autograd/FunctionsManual.h\"",
+      "#include \"torch/csrc/dynamo/compiled_autograd.h\"",
+      "// ${generated_comment}",
+      "// The manual function definitions that used to be here are now in torch/csrc/autograd/FunctionsManual.cpp",
+      "// This speeds up re-compilation and allow to share these implementations so that they can be",
+      "// used for forward mode AD formulas as well.",
+      "using namespace torch::autograd::generated::details;",
+      "using at::Tensor;",
+      "using at::Scalar;",
+      "using at::IntArrayRef;"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_354_20544777824795a2_Functions.cpp.json"
+}

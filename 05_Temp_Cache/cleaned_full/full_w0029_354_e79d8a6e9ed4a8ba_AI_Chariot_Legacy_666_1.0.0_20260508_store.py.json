@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 29,
+  "idx_in_wave": 354,
+  "generated_at": "2026-05-08T18:46:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_store.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_store.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3808,
+  "content_sha256": "e79d8a6e9ed4a8ba08aee3d99eb224645bb99b48a2433d2ab8db8738a23e62db",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 156,
+    "non_empty_lines": 119,
+    "char_count": 3808,
+    "preview_lines": [
+      "\"\"\"",
+      "TaskStore - Abstract interface for task state storage.",
+      "\"\"\"",
+      "from abc import ABC, abstractmethod",
+      "from mcp.types import Result, Task, TaskMetadata, TaskStatus",
+      "class TaskStore(ABC):",
+      "    \"\"\"",
+      "    Abstract interface for task state storage.",
+      "    This is a pure storage interface - it doesn't manage execution.",
+      "    Implementations can use in-memory storage, databases, Redis, etc."
+    ],
+    "imports": [
+      "from abc import ABC, abstractmethod",
+      "from mcp.types import Result, Task, TaskMetadata, TaskStatus"
+    ],
+    "classes": [
+      "TaskStore"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0029_354_e79d8a6e9ed4a8ba_AI_Chariot_Legacy_666_1.0.0_20260508_store.py.json"
+}

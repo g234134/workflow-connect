@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 239,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_normal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_normal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11094,
+  "content_sha256": "969c9920a86a836fcff88323f300dfab1faea04d883d74ba10acd72d0c2df314",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 265,
+    "non_empty_lines": 228,
+    "char_count": 11094,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import math",
+      "import torch",
+      "from torch.distributions import constraints",
+      "from torch.distributions.distribution import Distribution",
+      "from torch.distributions.utils import _standard_normal, lazy_property",
+      "from torch.types import _size",
+      "__all__ = [\"MultivariateNormal\"]",
+      "def _batch_mv(bmat, bvec):",
+      "    r\"\"\""
+    ],
+    "imports": [
+      "import math",
+      "import torch",
+      "from torch.distributions import constraints",
+      "from torch.distributions.distribution import Distribution",
+      "from torch.distributions.utils import _standard_normal, lazy_property",
+      "from torch.types import _size"
+    ],
+    "classes": [
+      "MultivariateNormal"
+    ],
+    "functions": [
+      "_batch_mv",
+      "_batch_mahalanobis",
+      "_precision_to_scale_tril"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_239_969c9920a86a836f_AI_Chariot_Legacy_666_1.0.0_20260508_multivariate_normal.py.json"
+}

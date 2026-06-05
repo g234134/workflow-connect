@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 209,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_format_function_calls.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_format_function_calls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2745,
+  "content_sha256": "1fcfa324bf181e7c68ebcc062812fa9ecacb74470f17518baa69d1dd6415fc41",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 70,
+    "char_count": 2745,
+    "preview_lines": [
+      "import json",
+      "import textwrap",
+      "# reference:",
+      "# https://gist.github.com/CGamesPlay/dd4f108f27e2eec145eedf5c717318f5",
+      "# https://community.openai.com/t/how-to-calculate-the-tokens-when-using-function-call/266573/24",
+      "# Function overhead is 16: 3 for the system message plus this template.",
+      "FUNCTION_HEADER_STR = \"\"\"# Tools",
+      "## functions",
+      "namespace functions {",
+      "} // namespace functions\"\"\""
+    ],
+    "imports": [
+      "import json",
+      "import textwrap"
+    ],
+    "classes": [],
+    "functions": [
+      "resolve_ref",
+      "format_enum",
+      "format_default",
+      "format_object",
+      "format_schema",
+      "format_tool",
+      "get_function_calls_token_count"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_209_1fcfa324bf181e7c_AI_Chariot_Legacy_666_1.0.0_20260508_format_function_calls.py.json"
+}

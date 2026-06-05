@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 36,
+  "generated_at": "2026-05-08T18:45:21+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_huey.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_huey.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5348,
+  "content_sha256": "18eb251b1b987eb74f2eac7fe0c58e1ffb5dc309db0fbd9291375cf8ff2e17cd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 166,
+    "non_empty_lines": 131,
+    "char_count": 5348,
+    "preview_lines": [
+      "import sys",
+      "from datetime import datetime",
+      "import sentry_sdk",
+      "from sentry_sdk.api import continue_trace, get_baggage, get_traceparent",
+      "from sentry_sdk.consts import OP, SPANSTATUS",
+      "from sentry_sdk.integrations import DidNotEnable, Integration",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import (",
+      "    BAGGAGE_HEADER_NAME,",
+      "    SENTRY_TRACE_HEADER_NAME,"
+    ],
+    "imports": [
+      "import sys",
+      "from datetime import datetime",
+      "import sentry_sdk",
+      "from sentry_sdk.api import continue_trace, get_baggage, get_traceparent",
+      "from sentry_sdk.consts import OP, SPANSTATUS",
+      "from sentry_sdk.integrations import DidNotEnable, Integration",
+      "from sentry_sdk.scope import should_send_default_pii",
+      "from sentry_sdk.tracing import (",
+      "from sentry_sdk.utils import (",
+      "from typing import TYPE_CHECKING",
+      "from typing import Any, Callable, Optional, Union, TypeVar",
+      "from sentry_sdk._types import EventProcessor, Event, Hint",
+      "from sentry_sdk.utils import ExcInfo",
+      "from huey.api import Huey, Result, ResultGroup, Task, PeriodicTask",
+      "from huey.exceptions import CancelExecution, RetryTask, TaskLockedException"
+    ],
+    "classes": [
+      "HueyIntegration"
+    ],
+    "functions": [
+      "patch_enqueue",
+      "_make_event_processor",
+      "_capture_exception",
+      "_wrap_task_execute",
+      "patch_execute"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_036_18eb251b1b987eb7_AI_Chariot_Legacy_666_1.0.0_20260508_huey.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 356,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pytorch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pytorch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9621,
+  "content_sha256": "0620320d53b03542f99a6cced9db6e9926676717093358590c700b6428fa2e96",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 255,
+    "non_empty_lines": 217,
+    "char_count": 9621,
+    "preview_lines": [
+      "import contextlib",
+      "import itertools",
+      "from io import BytesIO",
+      "from typing import Any, Callable, Dict, Optional, cast",
+      "import srsly",
+      "from ..backends import CupyOps, context_pools, get_current_ops, set_gpu_allocator",
+      "from ..compat import torch",
+      "from ..optimizers import Optimizer",
+      "from ..types import ArgsKwargs, FloatsXd",
+      "from ..util import ("
+    ],
+    "imports": [
+      "import contextlib",
+      "import itertools",
+      "from io import BytesIO",
+      "from typing import Any, Callable, Dict, Optional, cast",
+      "import srsly",
+      "from ..backends import CupyOps, context_pools, get_current_ops, set_gpu_allocator",
+      "from ..compat import torch",
+      "from ..optimizers import Optimizer",
+      "from ..types import ArgsKwargs, FloatsXd",
+      "from ..util import (",
+      "from .pytorch_grad_scaler import PyTorchGradScaler",
+      "from .shim import Shim",
+      "from cupy import get_default_memory_pool"
+    ],
+    "classes": [
+      "PyTorchShim"
+    ],
+    "functions": [
+      "default_serialize_torch_model",
+      "default_deserialize_torch_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_356_0620320d53b03542_AI_Chariot_Legacy_666_1.0.0_20260508_pytorch.py.json"
+}

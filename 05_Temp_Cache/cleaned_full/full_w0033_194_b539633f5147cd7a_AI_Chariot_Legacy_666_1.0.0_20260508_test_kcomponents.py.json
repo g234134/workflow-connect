@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 194,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_kcomponents.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_kcomponents.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9346,
+  "content_sha256": "b539633f5147cd7ad4c22fa8073e4041c89b470d4d811e0de541346b63ab3940",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 262,
+    "char_count": 9346,
+    "preview_lines": [
+      "# Test for approximation to k-components algorithm",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import k_components",
+      "from networkx.algorithms.approximation.kcomponents import _AntiGraph, _same",
+      "def build_k_number_dict(k_components):",
+      "    k_num = {}",
+      "    for k, comps in sorted(k_components.items()):",
+      "        for comp in comps:",
+      "            for node in comp:"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.approximation import k_components",
+      "from networkx.algorithms.approximation.kcomponents import _AntiGraph, _same"
+    ],
+    "classes": [
+      "TestAntiGraph"
+    ],
+    "functions": [
+      "build_k_number_dict",
+      "graph_example_1",
+      "torrents_and_ferraro_graph",
+      "_check_connectivity",
+      "test_torrents_and_ferraro_graph",
+      "test_example_1",
+      "test_karate_0",
+      "test_karate_1",
+      "test_example_1_detail_3_and_4",
+      "test_directed",
+      "test_same"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_194_b539633f5147cd7a_AI_Chariot_Legacy_666_1.0.0_20260508_test_kcomponents.py.json"
+}

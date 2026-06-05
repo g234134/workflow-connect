@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 58,
+  "generated_at": "2026-05-08T18:48:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\langchain_core\\messages\\ai.py",
+  "name": "ai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29065,
+  "content_sha256": "9ec1e7d282944f122a7f634cb21102a8fd19f182ebc6a0fe0c5132c449df1d59",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 840,
+    "non_empty_lines": 699,
+    "char_count": 29062,
+    "preview_lines": [
+      "\"\"\"AI message.\"\"\"",
+      "import itertools",
+      "import json",
+      "import logging",
+      "import operator",
+      "from collections.abc import Sequence",
+      "from typing import Any, Literal, cast, overload",
+      "from pydantic import Field, model_validator",
+      "from typing_extensions import NotRequired, Self, TypedDict, override",
+      "from langchain_core.messages import content as types"
+    ],
+    "imports": [
+      "import itertools",
+      "import json",
+      "import logging",
+      "import operator",
+      "from collections.abc import Sequence",
+      "from typing import Any, Literal, cast, overload",
+      "from pydantic import Field, model_validator",
+      "from typing_extensions import NotRequired, Self, TypedDict, override",
+      "from langchain_core.messages import content as types",
+      "from langchain_core.messages.base import (",
+      "from langchain_core.messages.content import InvalidToolCall",
+      "from langchain_core.messages.tool import (",
+      "from langchain_core.messages.tool import invalid_tool_call as create_invalid_tool_call",
+      "from langchain_core.messages.tool import tool_call as create_tool_call",
+      "from langchain_core.messages.tool import tool_call_chunk as create_tool_call_chunk",
+      "from langchain_core.utils._merge import merge_dicts, merge_lists",
+      "from langchain_core.utils.json import parse_partial_json",
+      "from langchain_core.utils.usage import _dict_int_op",
+      "from langchain_core.utils.utils import LC_AUTO_PREFIX, LC_ID_PREFIX"
+    ],
+    "classes": [
+      "InputTokenDetails",
+      "OutputTokenDetails",
+      "UsageMetadata",
+      "AIMessage",
+      "AIMessageChunk"
+    ],
+    "functions": [
+      "add_ai_message_chunks",
+      "add_usage",
+      "subtract_usage"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_058_9ec1e7d282944f12_ai.py.json"
+}

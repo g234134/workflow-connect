@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 146,
+  "generated_at": "2026-05-08T18:49:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\tests\\integration_tests\\test_hub.py",
+  "name": "test_hub.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 937,
+  "content_sha256": "8145d4d22c189e1bb400eb1e665f4b74efc48455f869e9497bcc6d124e42e735",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 19,
+    "char_count": 934,
+    "preview_lines": [
+      "import os",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_classic import hub",
+      "def test_hub_pull_public_prompt() -> None:",
+      "    prompt = hub.pull(\"efriis/my-first-prompt\")",
+      "    assert isinstance(prompt, ChatPromptTemplate)",
+      "    assert prompt.metadata is not None",
+      "    assert prompt.metadata[\"lc_hub_owner\"] == \"efriis\"",
+      "    assert prompt.metadata[\"lc_hub_repo\"] == \"my-first-prompt\"",
+      "    assert ("
+    ],
+    "imports": [
+      "import os",
+      "from langchain_core.prompts import ChatPromptTemplate",
+      "from langchain_classic import hub"
+    ],
+    "classes": [],
+    "functions": [
+      "test_hub_pull_public_prompt",
+      "test_hub_pull_private_prompt"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_146_8145d4d22c189e1b_test_hub.py.json"
+}

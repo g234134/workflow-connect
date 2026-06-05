@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 441,
+  "generated_at": "2026-05-08T18:46:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_token_monitor.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_token_monitor.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2924,
+  "content_sha256": "6e61a0909505f4200d9d7b2503de759119ba44bd799ef87412d6e99cd0756371",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 85,
+    "non_empty_lines": 71,
+    "char_count": 2922,
+    "preview_lines": [
+      "# Copyright (c) 2026, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "\"\"\"TokenMonitor — tracks cumulative token usage and alerts when thresholds are exceeded.\"\"\"",
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelResponse, ObserverAlert, Severity, TaskCompleted",
+      "from autogen.beta.watch import EventWatch",
+      "from .observer import BaseObserver",
+      "class TokenMonitor(BaseObserver):",
+      "    \"\"\"Tracks cumulative token usage and alerts when thresholds are exceeded."
+    ],
+    "imports": [
+      "from autogen.beta.annotations import Context",
+      "from autogen.beta.events import BaseEvent, ModelResponse, ObserverAlert, Severity, TaskCompleted",
+      "from autogen.beta.watch import EventWatch",
+      "from .observer import BaseObserver"
+    ],
+    "classes": [
+      "TokenMonitor"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_441_6e61a0909505f420_AI_Chariot_Legacy_666_1.0.0_20260508_token_monitor.py.json"
+}

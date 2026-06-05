@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 319,
+  "generated_at": "2026-05-08T18:46:39+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_store_backends.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_store_backends.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3057,
+  "content_sha256": "0f22b57fb3d348f12bce1936ee0691a0c7b6510aecb48cfa7e7bd987884a21fd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 75,
+    "char_count": 3057,
+    "preview_lines": [
+      "try:",
+      "    # Python 2.7: use the C pickle to speed up",
+      "    # test_concurrency_safe_write which pickles big python objects",
+      "    import cPickle as cpickle",
+      "except ImportError:",
+      "    import pickle as cpickle",
+      "import functools",
+      "import time",
+      "from pickle import PicklingError",
+      "import pytest"
+    ],
+    "imports": [
+      "import cPickle as cpickle",
+      "import pickle as cpickle",
+      "import functools",
+      "import time",
+      "from pickle import PicklingError",
+      "import pytest",
+      "from joblib import Parallel, delayed",
+      "from joblib._store_backends import (",
+      "from joblib.backports import concurrency_safe_rename",
+      "from joblib.test.common import with_multiprocessing",
+      "from joblib.testing import parametrize, timeout"
+    ],
+    "classes": [],
+    "functions": [
+      "write_func",
+      "load_func",
+      "concurrency_safe_write_rename",
+      "test_concurrency_safe_write",
+      "test_warning_on_dump_failure",
+      "test_warning_on_pickling_error"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_319_0f22b57fb3d348f1_AI_Chariot_Legacy_666_1.0.0_20260508_test_store_backends.py.json"
+}

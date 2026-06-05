@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_backend_cairo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_backend_cairo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18618,
+  "content_sha256": "021e4cf393e96bccd818eb4b3a2cd6d20ce5b63b376f89c3e7aa8579047bf795",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 529,
+    "non_empty_lines": 445,
+    "char_count": 18618,
+    "preview_lines": [
+      "\"\"\"",
+      "A Cairo backend for Matplotlib",
+      "==============================",
+      ":Author: Steve Chaplin and others",
+      "This backend depends on cairocffi or pycairo.",
+      "\"\"\"",
+      "import functools",
+      "import gzip",
+      "import math",
+      "import numpy as np"
+    ],
+    "imports": [
+      "import functools",
+      "import gzip",
+      "import math",
+      "import numpy as np",
+      "import cairo",
+      "import cairocffi as cairo",
+      "from .. import _api, cbook, font_manager",
+      "from matplotlib.backend_bases import (",
+      "from matplotlib.font_manager import ttfFontProperty",
+      "from matplotlib.path import Path",
+      "from matplotlib.transforms import Affine2D"
+    ],
+    "classes": [
+      "RendererCairo",
+      "GraphicsContextCairo",
+      "_CairoRegion",
+      "FigureCanvasCairo",
+      "_BackendCairo"
+    ],
+    "functions": [
+      "_set_rgba",
+      "_append_path",
+      "_cairo_font_args_from_font_prop"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_398_021e4cf393e96bcc_AI_Chariot_Legacy_666_1.0.0_20260508_backend_cairo.py.json"
+}

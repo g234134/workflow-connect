@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 303,
+  "generated_at": "2026-05-08T18:45:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_powershell.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_powershell.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2193,
+  "content_sha256": "9f70973dcdb79f97da1e4c1473b68eece8682d7b18028341c87140d80461fa53",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 75,
+    "non_empty_lines": 57,
+    "char_count": 2193,
+    "preview_lines": [
+      "import os",
+      "import platform",
+      "import shutil",
+      "from .subprocess_language import SubprocessLanguage",
+      "class PowerShell(SubprocessLanguage):",
+      "    file_extension = \"ps1\"",
+      "    name = \"PowerShell\"",
+      "    def __init__(self):",
+      "        super().__init__()",
+      "        # Determine the start command based on the platform (use \"powershell\" for Windows)"
+    ],
+    "imports": [
+      "import os",
+      "import platform",
+      "import shutil",
+      "from .subprocess_language import SubprocessLanguage"
+    ],
+    "classes": [
+      "PowerShell"
+    ],
+    "functions": [
+      "preprocess_powershell",
+      "add_active_line_prints",
+      "wrap_in_try_catch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_303_9f70973dcdb79f97_AI_Chariot_Legacy_666_1.0.0_20260508_powershell.py.json"
+}

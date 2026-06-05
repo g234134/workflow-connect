@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 125,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_console_formatter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_console_formatter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 61878,
+  "content_sha256": "5730e2c49d3c3aa5379b069d5e7d7ec463e0a1e08302b5b25190f844bc880c25",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1802,
+    "non_empty_lines": 1507,
+    "char_count": 61633,
+    "preview_lines": [
+      "from contextvars import ContextVar",
+      "import os",
+      "import threading",
+      "from typing import Any, ClassVar, cast",
+      "from rich.console import Console",
+      "from rich.live import Live",
+      "from rich.panel import Panel",
+      "from rich.text import Text",
+      "from crewai.cli.version import is_current_version_yanked, is_newer_version_available",
+      "_disable_version_check: ContextVar[bool] = ContextVar("
+    ],
+    "imports": [
+      "from contextvars import ContextVar",
+      "import os",
+      "import threading",
+      "from typing import Any, ClassVar, cast",
+      "from rich.console import Console",
+      "from rich.live import Live",
+      "from rich.panel import Panel",
+      "from rich.text import Text",
+      "from crewai.cli.version import is_current_version_yanked, is_newer_version_available",
+      "from crewai.events.listeners.tracing.trace_listener import (",
+      "from crewai.events.listeners.tracing.utils import ("
+    ],
+    "classes": [
+      "ConsoleFormatter"
+    ],
+    "functions": [
+      "set_suppress_console_output",
+      "should_suppress_console_output"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_125_5730e2c49d3c3aa5_AI_Chariot_Legacy_666_1.0.0_20260508_console_formatter.py.json"
+}

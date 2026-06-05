@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\prompts\\test_string.py",
+  "name": "test_string.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3201,
+  "content_sha256": "f125b034234708546ced7b357ae3cc5a796283e73be044f465a6c472cfb3d9dd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 90,
+    "non_empty_lines": 73,
+    "char_count": 3198,
+    "preview_lines": [
+      "import pytest",
+      "from packaging import version",
+      "from langchain_core.prompts.string import (",
+      "    check_valid_template,",
+      "    get_template_variables,",
+      "    mustache_schema,",
+      ")",
+      "from langchain_core.utils.formatting import formatter",
+      "from langchain_core.utils.pydantic import PYDANTIC_VERSION",
+      "PYDANTIC_VERSION_AT_LEAST_29 = version.parse(\"2.9\") <= PYDANTIC_VERSION"
+    ],
+    "imports": [
+      "import pytest",
+      "from packaging import version",
+      "from langchain_core.prompts.string import (",
+      "from langchain_core.utils.formatting import formatter",
+      "from langchain_core.utils.pydantic import PYDANTIC_VERSION"
+    ],
+    "classes": [],
+    "functions": [
+      "test_mustache_schema_parent_child",
+      "test_get_template_variables_mustache_nested",
+      "test_get_template_variables_rejects_nested_replacement_field_in_format_spec",
+      "test_formatter_rejects_nested_replacement_field_in_format_spec",
+      "test_check_valid_template_rejects_nested_replacement_field_in_format_spec",
+      "test_f_string_templates_allow_safe_format_specs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_275_f125b03423470854_test_string.py.json"
+}

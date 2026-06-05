@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\package\\package_importer.py",
+  "name": "package_importer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 31554,
+  "content_sha256": "350c980abe6bd2f39fe30a8a76afaabe250daeea18698b3f81a9891709ea8c34",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 760,
+    "non_empty_lines": 639,
+    "char_count": 31554,
+    "preview_lines": [
+      "import builtins",
+      "import importlib",
+      "import importlib.machinery",
+      "import inspect",
+      "import io",
+      "import linecache",
+      "import os.path",
+      "import types",
+      "from contextlib import contextmanager",
+      "from pathlib import Path"
+    ],
+    "imports": [
+      "import builtins",
+      "import importlib",
+      "import importlib.machinery",
+      "import inspect",
+      "import io",
+      "import linecache",
+      "import os.path",
+      "import types",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "from typing import Any, BinaryIO, Callable, cast, Dict, Iterable, List, Optional, Union",
+      "from weakref import WeakValueDictionary",
+      "import torch",
+      "from torch.serialization import _get_restore_location, _maybe_decode_ascii",
+      "from ._directory_reader import DirectoryReader",
+      "from ._importlib import (",
+      "from ._mangling import demangle, PackageMangler",
+      "from ._package_unpickler import PackageUnpickler",
+      "from .file_structure_representation import _create_directory_from_file_list, Directory",
+      "from .glob_group import GlobPattern"
+    ],
+    "classes": [
+      "PackageImporter",
+      "_PathNode",
+      "_PackageNode",
+      "_ModuleNode",
+      "_ExternNode",
+      "_PackageResourceReader"
+    ],
+    "functions": [
+      "_patched_getfile"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_487_350c980abe6bd2f3_package_importer.py.json"
+}

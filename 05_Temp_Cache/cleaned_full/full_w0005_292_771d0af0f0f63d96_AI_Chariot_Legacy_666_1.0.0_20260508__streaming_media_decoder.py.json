@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 292,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_decoder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_decoder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 35354,
+  "content_sha256": "771d0af0f0f63d963bc916351bf02cfbff3e2f24032dd61f4593d6d649ab260d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 978,
+    "non_empty_lines": 761,
+    "char_count": 35354,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import BinaryIO, Dict, Iterator, Optional, Tuple, TypeVar, Union",
+      "import torch",
+      "import torio",
+      "from torch.utils._pytree import tree_map",
+      "ffmpeg_ext = torio._extension.lazy_import_ffmpeg_ext()",
+      "__all__ = ["
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from dataclasses import dataclass",
+      "from pathlib import Path",
+      "from typing import BinaryIO, Dict, Iterator, Optional, Tuple, TypeVar, Union",
+      "import torch",
+      "import torio",
+      "from torch.utils._pytree import tree_map"
+    ],
+    "classes": [
+      "SourceStream",
+      "SourceAudioStream",
+      "SourceVideoStream",
+      "OutputStream",
+      "OutputAudioStream",
+      "OutputVideoStream",
+      "ChunkTensorBase",
+      "ChunkTensor",
+      "StreamingMediaDecoder"
+    ],
+    "functions": [
+      "_parse_si",
+      "_parse_oi",
+      "_get_afilter_desc",
+      "_get_vfilter_desc",
+      "_format_doc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_292_771d0af0f0f63d96_AI_Chariot_Legacy_666_1.0.0_20260508__streaming_media_decoder.py.json"
+}

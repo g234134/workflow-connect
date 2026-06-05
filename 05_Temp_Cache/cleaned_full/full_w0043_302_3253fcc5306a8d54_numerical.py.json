@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 302,
+  "generated_at": "2026-05-08T18:47:17+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\holonomic\\numerical.py",
+  "name": "numerical.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2625,
+  "content_sha256": "3253fcc5306a8d542a335fa3c2f892ff23c808a8fab4456c6bd7fac3230249fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 98,
+    "non_empty_lines": 74,
+    "char_count": 2625,
+    "preview_lines": [
+      "\"\"\"Numerical Methods for Holonomic Functions\"\"\"",
+      "from sympy.core.sympify import sympify",
+      "from sympy.holonomic.holonomic import DMFsubs",
+      "from mpmath import mp",
+      "def _evalf(func, points, derivatives=False, method='RK4'):",
+      "    \"\"\"",
+      "    Numerical methods for numerical integration along a given set of",
+      "    points in the complex plane.",
+      "    \"\"\"",
+      "    ann = func.annihilator"
+    ],
+    "imports": [
+      "from sympy.core.sympify import sympify",
+      "from sympy.holonomic.holonomic import DMFsubs",
+      "from mpmath import mp"
+    ],
+    "classes": [],
+    "functions": [
+      "_evalf",
+      "_euler",
+      "_rk4"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_302_3253fcc5306a8d54_numerical.py.json"
+}

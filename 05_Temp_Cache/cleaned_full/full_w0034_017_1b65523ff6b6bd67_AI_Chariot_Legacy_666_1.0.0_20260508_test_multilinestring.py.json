@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 17,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_multilinestring.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_multilinestring.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2911,
+  "content_sha256": "1b65523ff6b6bd672fd5f017c8c4361319ce785874f9a171d246fe32d613bef5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 77,
+    "non_empty_lines": 63,
+    "char_count": 2911,
+    "preview_lines": [
+      "import numpy as np",
+      "import pytest",
+      "from shapely import LineString, MultiLineString",
+      "from shapely.errors import EmptyPartError",
+      "from shapely.geometry.base import dump_coords",
+      "from shapely.tests.geometry.test_multi import MultiGeometryTestCase",
+      "class TestMultiLineString(MultiGeometryTestCase):",
+      "    def test_multilinestring(self):",
+      "        # From coordinate tuples",
+      "        geom = MultiLineString([[(1.0, 2.0), (3.0, 4.0)]])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "import pytest",
+      "from shapely import LineString, MultiLineString",
+      "from shapely.errors import EmptyPartError",
+      "from shapely.geometry.base import dump_coords",
+      "from shapely.tests.geometry.test_multi import MultiGeometryTestCase"
+    ],
+    "classes": [
+      "TestMultiLineString"
+    ],
+    "functions": [
+      "test_numpy_object_array"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_017_1b65523ff6b6bd67_AI_Chariot_Legacy_666_1.0.0_20260508_test_multilinestring.py.json"
+}

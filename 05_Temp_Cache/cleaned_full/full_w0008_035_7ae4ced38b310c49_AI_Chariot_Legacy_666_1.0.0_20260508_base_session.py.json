@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_session.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_session.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1491,
+  "content_sha256": "7ae4ced38b310c4934968bd4dfc6b64cb61724103e83a9f37bd6aca8ad8fa0d5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 48,
+    "non_empty_lines": 37,
+    "char_count": 1491,
+    "preview_lines": [
+      "\"\"\"",
+      "This module allows importing AbstractBaseSession even",
+      "when django.contrib.sessions is not in INSTALLED_APPS.",
+      "\"\"\"",
+      "from django.db import models",
+      "from django.utils.translation import gettext_lazy as _",
+      "class BaseSessionManager(models.Manager):",
+      "    def encode(self, session_dict):",
+      "        \"\"\"",
+      "        Return the given session dictionary serialized and encoded as a string."
+    ],
+    "imports": [
+      "from django.db import models",
+      "from django.utils.translation import gettext_lazy as _"
+    ],
+    "classes": [
+      "BaseSessionManager",
+      "AbstractBaseSession"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_035_7ae4ced38b310c49_AI_Chariot_Legacy_666_1.0.0_20260508_base_session.py.json"
+}

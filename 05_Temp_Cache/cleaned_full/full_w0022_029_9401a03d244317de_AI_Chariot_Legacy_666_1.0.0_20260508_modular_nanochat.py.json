@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 29,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_nanochat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_nanochat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8475,
+  "content_sha256": "9401a03d244317ded4629994ba503eef30e7565042f5ac891ded852e6f438dfc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 235,
+    "non_empty_lines": 185,
+    "char_count": 8475,
+    "preview_lines": [
+      "# Copyright 2025 The HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import math",
+      "from collections.abc import Callable",
+      "import torch",
+      "import torch.nn as nn",
+      "from ... import initialization as init",
+      "from ...cache_utils import Cache, DynamicCache",
+      "from ...masking_utils import create_causal_mask",
+      "from ...modeling_outputs import BaseModelOutputWithPast, CausalLMOutputWithPast",
+      "from ...modeling_utils import ALL_ATTENTION_FUNCTIONS, PreTrainedModel",
+      "from ...processing_utils import Unpack",
+      "from ...utils import TransformersKwargs, auto_docstring",
+      "from ..clip.modeling_clip import CLIPMLP",
+      "from ..gemma2.modeling_gemma2 import Gemma2ForCausalLM",
+      "from ..llama.modeling_llama import (",
+      "from ..llama4.modeling_llama4 import Llama4TextL2Norm",
+      "from ..qwen3.modeling_qwen3 import Qwen3Attention",
+      "from .configuration_nanochat import NanoChatConfig"
+    ],
+    "classes": [
+      "NanoChatRMSNorm",
+      "NanoChatRotaryEmbedding",
+      "NanoChatAttention",
+      "NanoChatMLP",
+      "NanoChatDecoderLayer",
+      "NanoChatPreTrainedModel",
+      "NanoChatModel",
+      "NanoChatForCausalLM"
+    ],
+    "functions": [
+      "rotate_half"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_029_9401a03d244317de_AI_Chariot_Legacy_666_1.0.0_20260508_modular_nanochat.py.json"
+}

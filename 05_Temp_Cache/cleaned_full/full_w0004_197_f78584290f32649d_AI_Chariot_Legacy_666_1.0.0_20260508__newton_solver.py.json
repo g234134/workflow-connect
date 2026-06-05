@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 197,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__newton_solver.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__newton_solver.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26017,
+  "content_sha256": "f78584290f32649dc9c1a0f9ca6ad2a772c0ecf6f6656235f85d01766dcf519a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 631,
+    "non_empty_lines": 549,
+    "char_count": 26017,
+    "preview_lines": [
+      "# Authors: The scikit-learn developers",
+      "# SPDX-License-Identifier: BSD-3-Clause",
+      "\"\"\"",
+      "Newton solver for Generalized Linear Models",
+      "\"\"\"",
+      "import warnings",
+      "from abc import ABC, abstractmethod",
+      "import numpy as np",
+      "import scipy.linalg",
+      "import scipy.optimize"
+    ],
+    "imports": [
+      "import warnings",
+      "from abc import ABC, abstractmethod",
+      "import numpy as np",
+      "import scipy.linalg",
+      "import scipy.optimize",
+      "from sklearn._loss.loss import HalfSquaredError",
+      "from sklearn.exceptions import ConvergenceWarning",
+      "from sklearn.linear_model._linear_loss import LinearModelLoss",
+      "from sklearn.utils.fixes import _get_additional_lbfgs_options_dict",
+      "from sklearn.utils.optimize import _check_optimize_result"
+    ],
+    "classes": [
+      "NewtonSolver",
+      "NewtonCholeskySolver"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_197_f78584290f32649d_AI_Chariot_Legacy_666_1.0.0_20260508__newton_solver.py.json"
+}

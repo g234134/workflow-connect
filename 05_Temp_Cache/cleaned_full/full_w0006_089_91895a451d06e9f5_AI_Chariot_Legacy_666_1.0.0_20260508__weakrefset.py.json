@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__weakrefset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__weakrefset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5893,
+  "content_sha256": "91895a451d06e9f521a1171b31b9b19bc9740f35af00d4fa106338ab7167c9ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 205,
+    "non_empty_lines": 168,
+    "char_count": 5893,
+    "preview_lines": [
+      "# Access WeakSet through the weakref module.",
+      "# This code is separated-out because it is needed",
+      "# by abc.py to load everything else at startup.",
+      "from _weakref import ref",
+      "from types import GenericAlias",
+      "__all__ = ['WeakSet']",
+      "class _IterationGuard:",
+      "    # This context manager registers itself in the current iterators of the",
+      "    # weak container, such as to delay all removals until the context manager",
+      "    # exits."
+    ],
+    "imports": [
+      "from _weakref import ref",
+      "from types import GenericAlias"
+    ],
+    "classes": [
+      "_IterationGuard",
+      "WeakSet"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_089_91895a451d06e9f5_AI_Chariot_Legacy_666_1.0.0_20260508__weakrefset.py.json"
+}

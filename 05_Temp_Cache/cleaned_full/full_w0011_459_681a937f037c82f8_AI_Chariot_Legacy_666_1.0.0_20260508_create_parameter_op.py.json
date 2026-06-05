@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 459,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_create_parameter_op.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_create_parameter_op.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2073,
+  "content_sha256": "681a937f037c82f8480a9b0564adc6816ecdcfbb8f92617a3ebaee3fc075dc5e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 44,
+    "char_count": 2073,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import threading",
+      "from contextlib import contextmanager",
+      "import torch",
+      "doc = \"\"\"",
+      "This is used when dynamo traces torch.nn.Parameter, which normally would not trace properly",
+      "with AOTAutograd.  We instead create a placeholder torch.nn.Parameter before the graph, which",
+      "becomes a graph arg and has no storage backing it.  At the point in the graph where the parameter",
+      "actually should be created we mutate this sacrificial placeholder into it.  This allows gradients",
+      "to flow into the parameter as if it were an input to the graph (which is the only thing we are"
+    ],
+    "imports": [
+      "import threading",
+      "from contextlib import contextmanager",
+      "import torch"
+    ],
+    "classes": [
+      "TracableCreateParameter"
+    ],
+    "functions": [
+      "tracable_create_parameter",
+      "new_parameter_placeholder",
+      "do_not_convert_to_tracable_parameter",
+      "can_convert_to_tracable_parameter"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_459_681a937f037c82f8_AI_Chariot_Legacy_666_1.0.0_20260508_create_parameter_op.py.json"
+}

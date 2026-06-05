@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 382,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cobylb.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cobylb.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 41478,
+  "content_sha256": "3d6a7fa5b33dddf4f4b72789ecc94280776adf8b29a7689d6bc65fcc08e7882d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 714,
+    "non_empty_lines": 633,
+    "char_count": 41478,
+    "preview_lines": [
+      "'''",
+      "This module performs the major calculations of COBYLA.",
+      "Translated from Zaikun Zhang's modern-Fortran reference implementation in PRIMA.",
+      "Dedicated to late Professor M. J. D. Powell FRS (1936--2015).",
+      "Python translation by Nickolai Belakovski.",
+      "'''",
+      "import numpy as np",
+      "from ..common.checkbreak import checkbreak_con",
+      "from ..common.consts import REALMAX, EPS, DEBUGGING, MIN_MAXFILT",
+      "from ..common.infos import INFO_DEFAULT, MAXTR_REACHED, DAMAGING_ROUNDING, \\"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from ..common.checkbreak import checkbreak_con",
+      "from ..common.consts import REALMAX, EPS, DEBUGGING, MIN_MAXFILT",
+      "from ..common.infos import INFO_DEFAULT, MAXTR_REACHED, DAMAGING_ROUNDING, \\",
+      "from ..common.evaluate import evaluate",
+      "from ..common.history import savehist",
+      "from ..common.linalg import isinv, matprod, inprod, norm, primasum, primapow2",
+      "from ..common.message import fmsg, retmsg, rhomsg",
+      "from ..common.ratio import redrat",
+      "from ..common.redrho import redrho",
+      "from ..common.selectx import savefilt, selectx",
+      "from .update import updatepole, findpole, updatexfc",
+      "from .geometry import setdrop_tr, geostep",
+      "from .trustregion import trstlp, trrad",
+      "from .initialize import initxfc, initfilt"
+    ],
+    "classes": [],
+    "functions": [
+      "cobylb",
+      "getcpen",
+      "fcratio"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_382_3d6a7fa5b33dddf4_AI_Chariot_Legacy_666_1.0.0_20260508_cobylb.py.json"
+}

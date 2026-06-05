@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_graphviews.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_graphviews.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8520,
+  "content_sha256": "ba55132e8cc42bf863ff84c61dd82fc6f791dbeadbf76435e238f11f8a07e06a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 269,
+    "non_empty_lines": 216,
+    "char_count": 8520,
+    "preview_lines": [
+      "\"\"\"View of Graphs as SubGraph, Reverse, Directed, Undirected.",
+      "In some algorithms it is convenient to temporarily morph",
+      "a graph to exclude some nodes or edges. It should be better",
+      "to do that via a view than to remove and then re-add.",
+      "In other algorithms it is convenient to temporarily morph",
+      "a graph to reverse directed edges, or treat a directed graph",
+      "as undirected, etc. This module provides those graph views.",
+      "The resulting views are essentially read-only graphs that",
+      "report data from the original graph object. We provide an",
+      "attribute G._graph which points to the underlying graph object."
+    ],
+    "imports": [
+      "from the graph class, we short-cut the chain by returning a",
+      "import networkx as nx",
+      "from networkx.classes.coreviews import (",
+      "from networkx.classes.filters import no_filter",
+      "from networkx.exception import NetworkXError",
+      "from networkx.utils import not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "generic_graph_view",
+      "subgraph_view",
+      "reverse_view"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_252_ba55132e8cc42bf8_AI_Chariot_Legacy_666_1.0.0_20260508_graphviews.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 402,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\fx\\passes\\virtualization.py",
+  "name": "virtualization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3964,
+  "content_sha256": "bcfba8b16f6ab7ac10d347700757e68b30afbf5cff5297f3bcb524695ad01046",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 79,
+    "char_count": 3964,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "import torch.fx",
+      "from torch.onnx._internal import _beartype",
+      "from torch.onnx._internal.fx import _pass",
+      "class MovePlaceholderToFront(_pass.Transform):",
+      "    \"\"\"This pass move all placeholder nodes to the front of the graph node list.",
+      "    In torch.fx.Graph, placeholder is a special assignment node. If it's not",
+      "    executed in the beginning, it could overwrite values computed by upstream"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import List, Optional, Tuple",
+      "import torch",
+      "import torch.fx",
+      "from torch.onnx._internal import _beartype",
+      "from torch.onnx._internal.fx import _pass"
+    ],
+    "classes": [
+      "MovePlaceholderToFront",
+      "ReplaceGetAttrWithPlaceholder"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_402_bcfba8b16f6ab7ac_virtualization.py.json"
+}

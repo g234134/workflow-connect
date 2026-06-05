@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:47:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\starlette\\middleware\\__init__.py",
+  "name": "__init__.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1349,
+  "content_sha256": "04e4673a3d27d262f5396514b353cb4eed520129af4fc90410303a71bba1b8fa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 27,
+    "char_count": 1349,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from collections.abc import Awaitable, Callable, Iterator",
+      "from typing import Any, ParamSpec, Protocol",
+      "P = ParamSpec(\"P\")",
+      "_Scope = Any",
+      "_Receive = Callable[[], Awaitable[Any]]",
+      "_Send = Callable[[Any], Awaitable[None]]",
+      "# Since `starlette.types.ASGIApp` type differs from `ASGIApplication` from `asgiref`",
+      "# we need to define a more permissive version of ASGIApp that doesn't cause type errors.",
+      "_ASGIApp = Callable[[_Scope, _Receive, _Send], Awaitable[None]]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Awaitable, Callable, Iterator",
+      "from typing import Any, ParamSpec, Protocol"
+    ],
+    "classes": [
+      "_MiddlewareFactory",
+      "Middleware"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_089_04e4673a3d27d262___init__.py.json"
+}

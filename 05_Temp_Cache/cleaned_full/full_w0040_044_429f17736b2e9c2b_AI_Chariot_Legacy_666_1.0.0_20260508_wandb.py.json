@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_wandb.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_wandb.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15879,
+  "content_sha256": "429f17736b2e9c2b32de921763270d97656917994b624a5b70d12887f24b451f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 432,
+    "non_empty_lines": 364,
+    "char_count": 15879,
+    "preview_lines": [
+      "\"\"\"",
+      "A logger that logs training activity to Weights and Biases.",
+      "\"\"\"",
+      "from typing import Dict, Any, Tuple, Callable, List, IO, Optional",
+      "from types import ModuleType",
+      "import sys",
+      "from spacy import Language",
+      "from spacy.util import SimpleFrozenList",
+      "from .util import dict_to_dot, dot_to_dict, matcher_for_regex_patterns",
+      "from .util import setup_default_console_logger, LoggerT"
+    ],
+    "imports": [
+      "from typing import Dict, Any, Tuple, Callable, List, IO, Optional",
+      "from types import ModuleType",
+      "import sys",
+      "from spacy import Language",
+      "from spacy.util import SimpleFrozenList",
+      "from .util import dict_to_dot, dot_to_dict, matcher_for_regex_patterns",
+      "from .util import setup_default_console_logger, LoggerT"
+    ],
+    "classes": [],
+    "functions": [
+      "wandb_logger_v5",
+      "wandb_logger_v4",
+      "wandb_logger_v3",
+      "wandb_logger_v2",
+      "wandb_logger_v1",
+      "_import_wandb",
+      "_setup_wandb",
+      "_log_scores",
+      "_log_model_artifact",
+      "_log_dir_artifact",
+      "_log_custom_stats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_044_429f17736b2e9c2b_AI_Chariot_Legacy_666_1.0.0_20260508_wandb.py.json"
+}

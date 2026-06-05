@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:47:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\external\\pythonmpq.py",
+  "name": "pythonmpq.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11259,
+  "content_sha256": "0c1418759b0251a8ea223579102629ce90926dee1147daabe03d71fd94ee65a6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 341,
+    "non_empty_lines": 291,
+    "char_count": 11259,
+    "preview_lines": [
+      "\"\"\"",
+      "PythonMPQ: Rational number type based on Python integers.",
+      "This class is intended as a pure Python fallback for when gmpy2 is not",
+      "installed. If gmpy2 is installed then its mpq type will be used instead. The",
+      "mpq type is around 20x faster. We could just use the stdlib Fraction class",
+      "here but that is slower:",
+      "    from fractions import Fraction",
+      "    from sympy.external.pythonmpq import PythonMPQ",
+      "    nums = range(1000)",
+      "    dens = range(5, 1005)"
+    ],
+    "imports": [
+      "from fractions import Fraction",
+      "from sympy.external.pythonmpq import PythonMPQ",
+      "from __future__ import annotations",
+      "import operator",
+      "from math import gcd",
+      "from decimal import Decimal",
+      "from fractions import Fraction",
+      "import sys",
+      "from typing import Type"
+    ],
+    "classes": [
+      "PythonMPQ"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_241_0c1418759b0251a8_pythonmpq.py.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 178,
+  "generated_at": "2026-05-08T18:45:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_memgraph.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_memgraph.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12045,
+  "content_sha256": "ce4ec1396560160aef7e8abbcb399d40a3052ea9654e99a782f8dcedeec06a83",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 316,
+    "non_empty_lines": 272,
+    "char_count": 12045,
+    "preview_lines": [
+      "\"\"\"Question answering over a graph.\"\"\"",
+      "from __future__ import annotations",
+      "import re",
+      "from typing import Any, Dict, List, Optional, Union",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_core.callbacks import CallbackManagerForChainRun",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import (",
+      "    AIMessage,",
+      "    BaseMessage,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re",
+      "from typing import Any, Dict, List, Optional, Union",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_core.callbacks import CallbackManagerForChainRun",
+      "from langchain_core.language_models import BaseLanguageModel",
+      "from langchain_core.messages import (",
+      "from langchain_core.output_parsers import StrOutputParser",
+      "from langchain_core.prompts import (",
+      "from langchain_core.runnables import Runnable",
+      "from pydantic import Field",
+      "from langchain_community.chains.graph_qa.prompts import (",
+      "from langchain_community.graphs.memgraph_graph import MemgraphGraph"
+    ],
+    "classes": [
+      "MemgraphQAChain"
+    ],
+    "functions": [
+      "extract_cypher",
+      "get_function_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_178_ce4ec1396560160a_AI_Chariot_Legacy_666_1.0.0_20260508_memgraph.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 78,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_chained.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_chained.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 680,
+  "content_sha256": "8868afa4d6875058c1fde6b4f8700f85c9a6e822fcaa70dfdbbd0f4a3ec9c2e1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 14,
+    "char_count": 680,
+    "preview_lines": [
+      "from typing import ClassVar",
+      "from fsspec import AbstractFileSystem",
+      "__all__ = (\"ChainedFileSystem\",)",
+      "class ChainedFileSystem(AbstractFileSystem):",
+      "    \"\"\"Chained filesystem base class.",
+      "    A chained filesystem is designed to be layered over another FS.",
+      "    This is useful to implement things like caching.",
+      "    This base class does very little on its own, but is used as a marker",
+      "    that the class is designed for chaining.",
+      "    Right now this is only used in `url_to_fs` to provide the path argument"
+    ],
+    "imports": [
+      "from typing import ClassVar",
+      "from fsspec import AbstractFileSystem"
+    ],
+    "classes": [
+      "ChainedFileSystem"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_078_8868afa4d6875058_AI_Chariot_Legacy_666_1.0.0_20260508_chained.py.json"
+}

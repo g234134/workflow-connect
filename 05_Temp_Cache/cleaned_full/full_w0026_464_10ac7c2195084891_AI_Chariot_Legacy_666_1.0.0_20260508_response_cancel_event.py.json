@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:46:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_response_cancel_event.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_response_cancel_event.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 637,
+  "content_sha256": "10ac7c2195084891dd97eff7b42747b73d8120d43ce53abfa1c69d9ec1063d29",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 15,
+    "char_count": 637,
+    "preview_lines": [
+      "# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.",
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel",
+      "__all__ = [\"ResponseCancelEvent\"]",
+      "class ResponseCancelEvent(BaseModel):",
+      "    type: Literal[\"response.cancel\"]",
+      "    \"\"\"The event type, must be `response.cancel`.\"\"\"",
+      "    event_id: Optional[str] = None",
+      "    \"\"\"Optional client-generated ID used to identify this event.\"\"\""
+    ],
+    "imports": [
+      "from typing import Optional",
+      "from typing_extensions import Literal",
+      "from ...._models import BaseModel"
+    ],
+    "classes": [
+      "ResponseCancelEvent"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_464_10ac7c2195084891_AI_Chariot_Legacy_666_1.0.0_20260508_response_cancel_event.py.json"
+}

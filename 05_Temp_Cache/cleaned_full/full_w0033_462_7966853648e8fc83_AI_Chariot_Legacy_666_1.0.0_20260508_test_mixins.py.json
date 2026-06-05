@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 462,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_mixins.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_mixins.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7224,
+  "content_sha256": "7966853648e8fc83e53f8fbb4feb22b6966a84082350e8ea92095468f21d5970",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 215,
+    "non_empty_lines": 174,
+    "char_count": 7224,
+    "preview_lines": [
+      "import numbers",
+      "import operator",
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_raises",
+      "# NOTE: This class should be kept as an exact copy of the example from the",
+      "# docstring for NDArrayOperatorsMixin.",
+      "class ArrayLike(np.lib.mixins.NDArrayOperatorsMixin):",
+      "    def __init__(self, value):",
+      "        self.value = np.asarray(value)",
+      "    # One might also consider adding the built-in list type to this"
+    ],
+    "imports": [
+      "import numbers",
+      "import operator",
+      "import numpy as np",
+      "from numpy.testing import assert_, assert_equal, assert_raises"
+    ],
+    "classes": [
+      "ArrayLike",
+      "TestNDArrayOperatorsMixin"
+    ],
+    "functions": [
+      "wrap_array_like",
+      "_assert_equal_type_and_value"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_462_7966853648e8fc83_AI_Chariot_Legacy_666_1.0.0_20260508_test_mixins.py.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ragged2list.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ragged2list.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 799,
+  "content_sha256": "5a76ebcf8531aa5172174f7a05dc7a746da5c3fc2f68dc7da2eda7ab811e3aef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 17,
+    "char_count": 799,
+    "preview_lines": [
+      "from typing import Callable, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ListXd, Ragged",
+      "InT = Ragged",
+      "OutT = TypeVar(\"OutT\", bound=ListXd)",
+      "@registry.layers(\"ragged2list.v1\")",
+      "def ragged2list() -> Model[InT, OutT]:",
+      "    \"\"\"Transform sequences from a ragged format into lists.\"\"\"",
+      "    return Model(\"ragged2list\", forward)"
+    ],
+    "imports": [
+      "from typing import Callable, Tuple, TypeVar, cast",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import ListXd, Ragged"
+    ],
+    "classes": [],
+    "functions": [
+      "ragged2list",
+      "forward"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_026_5a76ebcf8531aa51_AI_Chariot_Legacy_666_1.0.0_20260508_ragged2list.py.json"
+}

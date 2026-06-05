@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 242,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_win32evtlogutil.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_win32evtlogutil.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7827,
+  "content_sha256": "fcb4d12bc8d9f060dac78c6fecab18d3d6e076e883ed3a799701f390d4cce7c5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 225,
+    "non_empty_lines": 196,
+    "char_count": 7827,
+    "preview_lines": [
+      "\"\"\"Event Log Utilities - helper for win32evtlog.pyd\"\"\"",
+      "import win32api",
+      "import win32con",
+      "import win32evtlog",
+      "import winerror",
+      "error = win32api.error  # Re-exported alias (The error the evtlog module raises).",
+      "langid = win32api.MAKELANGID(win32con.LANG_NEUTRAL, win32con.SUBLANG_NEUTRAL)",
+      "def AddSourceToRegistry(",
+      "    appName,",
+      "    msgDLL=None,"
+    ],
+    "imports": [
+      "import win32api",
+      "import win32con",
+      "import win32evtlog",
+      "import winerror"
+    ],
+    "classes": [],
+    "functions": [
+      "AddSourceToRegistry",
+      "RemoveSourceFromRegistry",
+      "ReportEvent",
+      "FormatMessage",
+      "SafeFormatMessage",
+      "FeedEventLogRecords"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_242_fcb4d12bc8d9f060_AI_Chariot_Legacy_666_1.0.0_20260508_win32evtlogutil.py.json"
+}

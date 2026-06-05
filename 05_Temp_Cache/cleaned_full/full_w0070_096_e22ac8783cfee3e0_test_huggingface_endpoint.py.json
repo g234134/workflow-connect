@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 96,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\huggingface\\tests\\unit_tests\\test_huggingface_endpoint.py",
+  "name": "test_huggingface_endpoint.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2557,
+  "content_sha256": "e22ac8783cfee3e0bfbaef0e5b53626391c4b4f2113416222a6b6b8880fc1ddb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 78,
+    "non_empty_lines": 64,
+    "char_count": 2554,
+    "preview_lines": [
+      "\"\"\"Tests for HuggingFaceEndpoint with local/custom endpoint_url (no HF API calls).\"\"\"",
+      "from unittest.mock import MagicMock, patch",
+      "import pytest",
+      "from langchain_huggingface.llms.huggingface_endpoint import (",
+      "    HuggingFaceEndpoint,",
+      "    _is_huggingface_hosted_url,",
+      ")",
+      "@pytest.mark.parametrize(",
+      "    (\"url\", \"expected\"),",
+      "    ["
+    ],
+    "imports": [
+      "from unittest.mock import MagicMock, patch",
+      "import pytest",
+      "from langchain_huggingface.llms.huggingface_endpoint import ("
+    ],
+    "classes": [],
+    "functions": [
+      "test_is_huggingface_hosted_url",
+      "test_local_endpoint_does_not_pass_api_key",
+      "test_huggingface_hosted_endpoint_keeps_api_key"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_096_e22ac8783cfee3e0_test_huggingface_endpoint.py.json"
+}

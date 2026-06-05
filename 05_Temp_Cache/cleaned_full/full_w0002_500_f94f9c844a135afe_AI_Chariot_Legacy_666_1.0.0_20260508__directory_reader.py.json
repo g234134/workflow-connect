@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 500,
+  "generated_at": "2026-05-08T18:44:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__directory_reader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__directory_reader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1987,
+  "content_sha256": "f94f9c844a135afee6aa7cde21558a4e6288b531a185dcdba2849d32b00d1369",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 50,
+    "char_count": 1987,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import os.path",
+      "from glob import glob",
+      "from typing import cast",
+      "import torch",
+      "from torch.types import Storage",
+      "__serialization_id_record_name__ = \".data/serialization_id\"",
+      "# because get_storage_from_record returns a tensor!?",
+      "class _HasStorage:",
+      "    def __init__(self, storage):"
+    ],
+    "imports": [
+      "import os.path",
+      "from glob import glob",
+      "from typing import cast",
+      "import torch",
+      "from torch.types import Storage"
+    ],
+    "classes": [
+      "_HasStorage",
+      "DirectoryReader"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_500_f94f9c844a135afe_AI_Chariot_Legacy_666_1.0.0_20260508__directory_reader.py.json"
+}

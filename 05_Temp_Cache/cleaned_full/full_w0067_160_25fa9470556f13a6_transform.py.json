@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 160,
+  "generated_at": "2026-05-08T18:48:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\transform.py",
+  "name": "transform.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2368,
+  "content_sha256": "25fa9470556f13a69dea21e49cdbc1c88bc24c6cbbe98a16fa50a14a89965575",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 65,
+    "char_count": 2365,
+    "preview_lines": [
+      "\"\"\"Chain that runs an arbitrary python function.\"\"\"",
+      "import functools",
+      "import logging",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Any",
+      "from langchain_core.callbacks import (",
+      "    AsyncCallbackManagerForChainRun,",
+      "    CallbackManagerForChainRun,",
+      ")",
+      "from pydantic import Field"
+    ],
+    "imports": [
+      "import functools",
+      "import logging",
+      "from collections.abc import Awaitable, Callable",
+      "from typing import Any",
+      "from langchain_core.callbacks import (",
+      "from pydantic import Field",
+      "from typing_extensions import override",
+      "from langchain_classic.chains.base import Chain",
+      "from langchain_classic.chains import TransformChain"
+    ],
+    "classes": [
+      "TransformChain"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_160_25fa9470556f13a6_transform.py.json"
+}

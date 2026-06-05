@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 498,
+  "generated_at": "2026-05-08T18:45:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__tzpath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__tzpath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5388,
+  "content_sha256": "5dc473af6f6ae35e5531cc9705a1e4923aa07e7d35f6b4c275b90c6a3c2591c4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 181,
+    "non_empty_lines": 133,
+    "char_count": 5388,
+    "preview_lines": [
+      "import os",
+      "import sysconfig",
+      "def _reset_tzpath(to=None, stacklevel=4):",
+      "    global TZPATH",
+      "    tzpaths = to",
+      "    if tzpaths is not None:",
+      "        if isinstance(tzpaths, (str, bytes)):",
+      "            raise TypeError(",
+      "                f\"tzpaths must be a list or tuple, \"",
+      "                + f\"not {type(tzpaths)}: {tzpaths!r}\""
+    ],
+    "imports": [
+      "import os",
+      "import sysconfig",
+      "import warnings",
+      "from importlib import resources"
+    ],
+    "classes": [
+      "InvalidTZPathWarning"
+    ],
+    "functions": [
+      "_reset_tzpath",
+      "reset_tzpath",
+      "_parse_python_tzpath",
+      "_get_invalid_paths_message",
+      "find_tzfile",
+      "_validate_tzfile_path",
+      "available_timezones"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_498_5dc473af6f6ae35e_AI_Chariot_Legacy_666_1.0.0_20260508__tzpath.py.json"
+}

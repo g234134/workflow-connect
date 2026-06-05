@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:45:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_health_check_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_health_check_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 924,
+  "content_sha256": "002a73919f7e2df8926e66a38d5e65fb858dd67c7526dc678c36d3a2ab1e828d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 21,
+    "char_count": 924,
+    "preview_lines": [
+      "\"\"\"",
+      "Utils used for litellm.ahealth_check()",
+      "\"\"\"",
+      "def _filter_model_params(model_params: dict) -> dict:",
+      "    \"\"\"Remove 'messages' param from model params.\"\"\"",
+      "    return {k: v for k, v in model_params.items() if k != \"messages\"}",
+      "def _create_health_check_response(response_headers: dict) -> dict:",
+      "    response = {}",
+      "    if (",
+      "        response_headers.get(\"x-ratelimit-remaining-requests\", None) is not None"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "_filter_model_params",
+      "_create_health_check_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_389_002a73919f7e2df8_AI_Chariot_Legacy_666_1.0.0_20260508_health_check_utils.py.json"
+}

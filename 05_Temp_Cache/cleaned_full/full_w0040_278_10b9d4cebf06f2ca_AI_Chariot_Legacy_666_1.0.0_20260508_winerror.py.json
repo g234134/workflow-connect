@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 278,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_winerror.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_winerror.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 290139,
+  "content_sha256": "10b9d4cebf06f2ca75762cdd82b3ddf2d3a2d99e2343b528b9ecb4db56f62e55",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 7361,
+    "non_empty_lines": 7310,
+    "char_count": 290139,
+    "preview_lines": [
+      "\"\"\"Error related constants for win32",
+      "Generated from winerror.h and cderror.h\"\"\"",
+      "import warnings",
+      "# Private so h2py ignored it",
+      "def __HRESULT_FROM_WIN32(x: int) -> int:",
+      "    return x if x <= 0 else ((x & 0x0000FFFF) | (FACILITY_WIN32 << 16) | -2147483648)",
+      "def __HRESULT_FROM_SETUPAPI(x: int):",
+      "    APPLICATION_ERROR_MASK = 0x20000000  # From winnt.h",
+      "    ERROR_SEVERITY_ERROR = -1073741824  # From winnt.h",
+      "    return ("
+    ],
+    "imports": [
+      "import warnings"
+    ],
+    "classes": [],
+    "functions": [
+      "__HRESULT_FROM_WIN32",
+      "__HRESULT_FROM_SETUPAPI",
+      "__getattr__",
+      "SUCCEEDED",
+      "FAILED",
+      "HRESULT_CODE",
+      "SCODE_CODE",
+      "HRESULT_FACILITY",
+      "SCODE_FACILITY",
+      "HRESULT_SEVERITY",
+      "SCODE_SEVERITY",
+      "HRESULT_FROM_WIN32",
+      "HRESULT_FROM_NT",
+      "GetScode",
+      "ResultFromScode",
+      "HRESULT_FROM_SETUPAPI",
+      "FILTER_HRESULT_FROM_FLT_NTSTATUS"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_278_10b9d4cebf06f2ca_AI_Chariot_Legacy_666_1.0.0_20260508_winerror.py.json"
+}

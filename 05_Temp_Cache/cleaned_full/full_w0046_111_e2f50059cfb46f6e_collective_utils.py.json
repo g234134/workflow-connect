@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 111,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\collective_utils.py",
+  "name": "collective_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7461,
+  "content_sha256": "e2f50059cfb46f6e5f53ad6bcdbeb225854bdd4e1b99977e3057c8d296b77454",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 211,
+    "non_empty_lines": 179,
+    "char_count": 7461,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "\"\"\"",
+      "A set of primitive functions for performing collective ops.",
+      "Each should also handle single rank scenario.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, cast, Generic, List, Optional, Tuple, TypeVar, Union",
+      "import torch.distributed as dist",
+      "T = TypeVar(\"T\")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from typing import Any, Callable, cast, Generic, List, Optional, Tuple, TypeVar, Union",
+      "import torch.distributed as dist"
+    ],
+    "classes": [
+      "SyncPayload"
+    ],
+    "functions": [
+      "broadcast",
+      "all_gather",
+      "all_gather_object_enforce_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_111_e2f50059cfb46f6e_collective_utils.py.json"
+}

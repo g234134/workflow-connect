@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vitality.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vitality.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2289,
+  "content_sha256": "f0cd5cb9b23274ee3d125da4c150944476765300ad7c65457864bcf8962dd64a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 76,
+    "non_empty_lines": 60,
+    "char_count": 2289,
+    "preview_lines": [
+      "\"\"\"",
+      "Vitality measures.",
+      "\"\"\"",
+      "from functools import partial",
+      "import networkx as nx",
+      "__all__ = [\"closeness_vitality\"]",
+      "@nx._dispatchable(edge_attrs=\"weight\")",
+      "def closeness_vitality(G, node=None, weight=None, wiener_index=None):",
+      "    \"\"\"Returns the closeness vitality for nodes in the graph.",
+      "    The *closeness vitality* of a node, defined in Section 3.6.2 of [1],"
+    ],
+    "imports": [
+      "from functools import partial",
+      "import networkx as nx"
+    ],
+    "classes": [],
+    "functions": [
+      "closeness_vitality"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_001_f0cd5cb9b23274ee_AI_Chariot_Legacy_666_1.0.0_20260508_vitality.py.json"
+}

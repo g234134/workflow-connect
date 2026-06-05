@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:45:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_onnx_mini_lm_l6_v2.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_onnx_mini_lm_l6_v2.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14237,
+  "content_sha256": "d58d471e1c28ec647545be4af6e901a43b5de324edc352753b206c604d447dae",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 364,
+    "non_empty_lines": 310,
+    "char_count": 14237,
+    "preview_lines": [
+      "import hashlib",
+      "import importlib",
+      "import logging",
+      "import os",
+      "import tarfile",
+      "import sys",
+      "from functools import cached_property",
+      "from pathlib import Path",
+      "from typing import List, Dict, Any, Optional, cast",
+      "import numpy as np"
+    ],
+    "imports": [
+      "import hashlib",
+      "import importlib",
+      "import logging",
+      "import os",
+      "import tarfile",
+      "import sys",
+      "from functools import cached_property",
+      "from pathlib import Path",
+      "from typing import List, Dict, Any, Optional, cast",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "import httpx",
+      "from tenacity import retry, retry_if_exception, stop_after_attempt, wait_random",
+      "from chromadb.api.types import Documents, Embeddings, EmbeddingFunction, Space",
+      "from chromadb.utils.embedding_functions.schemas import validate_config_schema"
+    ],
+    "classes": [
+      "ONNXMiniLM_L6_V2"
+    ],
+    "functions": [
+      "_verify_sha256"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_106_d58d471e1c28ec64_AI_Chariot_Legacy_666_1.0.0_20260508_onnx_mini_lm_l6_v2.py.json"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 228,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_control.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_control.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6475,
+  "content_sha256": "1e7b2b6854f305a5100f3289597b1f3eff8f3e6806ca94a04afee800d69c92ab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 176,
+    "char_count": 6472,
+    "preview_lines": [
+      "import time",
+      "from typing import TYPE_CHECKING, Callable, Dict, Iterable, List, Union, Final",
+      "from .segment import ControlCode, ControlType, Segment",
+      "if TYPE_CHECKING:",
+      "    from .console import Console, ConsoleOptions, RenderResult",
+      "STRIP_CONTROL_CODES: Final = [",
+      "    7,  # Bell",
+      "    8,  # Backspace",
+      "    11,  # Vertical tab",
+      "    12,  # Form feed"
+    ],
+    "imports": [
+      "import time",
+      "from typing import TYPE_CHECKING, Callable, Dict, Iterable, List, Union, Final",
+      "from .segment import ControlCode, ControlType, Segment",
+      "from .console import Console, ConsoleOptions, RenderResult"
+    ],
+    "classes": [
+      "Control"
+    ],
+    "functions": [
+      "strip_control_codes",
+      "escape_control_codes"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_228_1e7b2b6854f305a5_AI_Chariot_Legacy_666_1.0.0_20260508_control.py.json"
+}

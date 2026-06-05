@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 312,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cookies.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cookies.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18590,
+  "content_sha256": "6cd8be8aa123e0d3d9d34fa86feac7bf392f39bccdde5129830de0ea9692dd7c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 561,
+    "non_empty_lines": 451,
+    "char_count": 18590,
+    "preview_lines": [
+      "\"\"\"",
+      "requests.cookies",
+      "~~~~~~~~~~~~~~~~",
+      "Compatibility code to be able to use `http.cookiejar.CookieJar` with requests.",
+      "requests.utils imports from here, so be careful with imports.",
+      "\"\"\"",
+      "import calendar",
+      "import copy",
+      "import time",
+      "from ._internal_utils import to_native_string"
+    ],
+    "imports": [
+      "import calendar",
+      "import copy",
+      "import time",
+      "from ._internal_utils import to_native_string",
+      "from .compat import Morsel, MutableMapping, cookielib, urlparse, urlunparse",
+      "import threading",
+      "import dummy_threading as threading"
+    ],
+    "classes": [
+      "MockRequest",
+      "MockResponse",
+      "CookieConflictError",
+      "RequestsCookieJar"
+    ],
+    "functions": [
+      "extract_cookies_to_jar",
+      "get_cookie_header",
+      "remove_cookie_by_name",
+      "_copy_cookie_jar",
+      "create_cookie",
+      "morsel_to_cookie",
+      "cookiejar_from_dict",
+      "merge_cookies"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_312_6cd8be8aa123e0d3_AI_Chariot_Legacy_666_1.0.0_20260508_cookies.py.json"
+}

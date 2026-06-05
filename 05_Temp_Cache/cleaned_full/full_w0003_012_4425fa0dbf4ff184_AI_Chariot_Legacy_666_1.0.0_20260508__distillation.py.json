@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 12,
+  "generated_at": "2026-05-08T18:44:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__distillation.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__distillation.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6008,
+  "content_sha256": "4425fa0dbf4ff184872713b4d841be7329c9d58d0eccf949a57d3e35dc81099c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 141,
+    "non_empty_lines": 129,
+    "char_count": 6008,
+    "preview_lines": [
+      "from typing import Optional, Union",
+      "from google.cloud import aiplatform",
+      "from google.cloud.aiplatform import initializer as aiplatform_initializer",
+      "from vertexai.language_models import _language_models",
+      "from vertexai.language_models import _language_models as tuning",
+      "_DISTILLATION_PIPELINE_URI = (",
+      "    \"https://us-kfp.pkg.dev/ml-pipeline/distillation/distillation/v1.0.0\"",
+      ")",
+      "class DistillationMixin:",
+      "    def distill_from("
+    ],
+    "imports": [
+      "from typing import Optional, Union",
+      "from google.cloud import aiplatform",
+      "from google.cloud.aiplatform import initializer as aiplatform_initializer",
+      "from vertexai.language_models import _language_models",
+      "from vertexai.language_models import _language_models as tuning"
+    ],
+    "classes": [
+      "DistillationMixin"
+    ],
+    "functions": [
+      "submit_distillation_pipeline_job"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_012_4425fa0dbf4ff184_AI_Chariot_Legacy_666_1.0.0_20260508__distillation.py.json"
+}

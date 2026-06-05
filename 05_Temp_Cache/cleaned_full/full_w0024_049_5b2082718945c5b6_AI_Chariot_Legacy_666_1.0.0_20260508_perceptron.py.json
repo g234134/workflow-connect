@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 49,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_perceptron.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_perceptron.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14681,
+  "content_sha256": "5b2082718945c5b6e70c0d406f1f6e4c43c68d24f25201b5546f70da6d21c155",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 407,
+    "non_empty_lines": 338,
+    "char_count": 14681,
+    "preview_lines": [
+      "# This module is a port of the Textblob Averaged Perceptron Tagger",
+      "# Author: Matthew Honnibal <honnibal+gh@gmail.com>,",
+      "#         Long Duong <longdt219@gmail.com> (NLTK port)",
+      "# URL: <https://github.com/sloria/textblob-aptagger>",
+      "#      <https://www.nltk.org/>",
+      "# Copyright 2013 Matthew Honnibal",
+      "# NLTK modifications Copyright 2015 The NLTK Project",
+      "#",
+      "# This module is provided under the terms of the MIT License.",
+      "import json"
+    ],
+    "imports": [
+      "import json",
+      "import logging",
+      "import os",
+      "import random",
+      "from collections import defaultdict",
+      "from os.path import join as path_join",
+      "from pathlib import Path",
+      "from tempfile import gettempdir",
+      "from nltk import jsontags",
+      "from nltk.data import FileSystemPathPointer, find, open_datafile",
+      "from nltk.tag.api import TaggerI",
+      "import numpy as np"
+    ],
+    "classes": [
+      "AveragedPerceptron",
+      "PerceptronTagger"
+    ],
+    "functions": [
+      "_pc",
+      "_train_and_test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_049_5b2082718945c5b6_AI_Chariot_Legacy_666_1.0.0_20260508_perceptron.py.json"
+}

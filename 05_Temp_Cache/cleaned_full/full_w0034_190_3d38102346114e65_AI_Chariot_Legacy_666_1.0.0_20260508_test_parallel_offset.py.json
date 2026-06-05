@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 190,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_parallel_offset.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_parallel_offset.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2392,
+  "content_sha256": "3d38102346114e654e677849bc0f266c86abbfa5757b2fcfbd8403c044c50028",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 51,
+    "char_count": 2392,
+    "preview_lines": [
+      "import unittest",
+      "import pytest",
+      "from shapely.geometry import LinearRing, LineString",
+      "from shapely.testing import assert_geometries_equal",
+      "@pytest.mark.parametrize(\"distance\", [float(\"nan\"), float(\"inf\")])",
+      "def test_non_finite_distance(distance):",
+      "    g = LineString([(0, 0), (10, 0)])",
+      "    with pytest.raises(ValueError, match=\"distance must be finite\"):",
+      "        g.parallel_offset(distance)",
+      "class OperationsTestCase(unittest.TestCase):"
+    ],
+    "imports": [
+      "import unittest",
+      "import pytest",
+      "from shapely.geometry import LinearRing, LineString",
+      "from shapely.testing import assert_geometries_equal"
+    ],
+    "classes": [
+      "OperationsTestCase"
+    ],
+    "functions": [
+      "test_non_finite_distance"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_190_3d38102346114e65_AI_Chariot_Legacy_666_1.0.0_20260508_test_parallel_offset.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 60,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\placement_types.py",
+  "name": "placement_types.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21125,
+  "content_sha256": "20f8953d14d13c08a997b301a41f93b8f528bf55f650530fd5792381bce80b87",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 578,
+    "non_empty_lines": 492,
+    "char_count": 21125,
+    "preview_lines": [
+      "# Copyright (c) Meta Platforms, Inc. and affiliates",
+      "from dataclasses import dataclass",
+      "from typing import Any, cast, List, NamedTuple, Optional, Tuple",
+      "import torch",
+      "import torch.distributed._functional_collectives as funcol",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from torch.distributed._tensor._collective_utils import mesh_broadcast, mesh_scatter",
+      "from torch.distributed.device_mesh import DeviceMesh",
+      "class Placement:",
+      "    # base class Placement type"
+    ],
+    "imports": [
+      "from dataclasses import dataclass",
+      "from typing import Any, cast, List, NamedTuple, Optional, Tuple",
+      "import torch",
+      "import torch.distributed._functional_collectives as funcol",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from torch.distributed._tensor._collective_utils import mesh_broadcast, mesh_scatter",
+      "from torch.distributed.device_mesh import DeviceMesh"
+    ],
+    "classes": [
+      "Placement",
+      "Shard",
+      "Replicate",
+      "_Partial",
+      "TensorMeta",
+      "DTensorSpec"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_060_20f8953d14d13c08_placement_types.py.json"
+}

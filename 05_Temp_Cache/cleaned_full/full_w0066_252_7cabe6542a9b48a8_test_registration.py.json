@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 252,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\messages\\block_translators\\test_registration.py",
+  "name": "test_registration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1114,
+  "content_sha256": "7cabe6542a9b48a8a411a2df0032b9f89fa2f1e93c0815d02d71ac16cb5eda1c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 29,
+    "non_empty_lines": 21,
+    "char_count": 1111,
+    "preview_lines": [
+      "import pkgutil",
+      "from pathlib import Path",
+      "import pytest",
+      "from langchain_core.messages.block_translators import PROVIDER_TRANSLATORS",
+      "def test_all_providers_registered() -> None:",
+      "    \"\"\"Test that all block translators implemented in langchain-core are registered.",
+      "    If this test fails, it is likely that a block translator is implemented but not",
+      "    registered on import. Check that the provider is included in",
+      "    `langchain_core.messages.block_translators.__init__._register_translators`.",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import pkgutil",
+      "from pathlib import Path",
+      "import pytest",
+      "from langchain_core.messages.block_translators import PROVIDER_TRANSLATORS"
+    ],
+    "classes": [],
+    "functions": [
+      "test_all_providers_registered"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_252_7cabe6542a9b48a8_test_registration.py.json"
+}

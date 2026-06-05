@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 489,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\db\\case.py",
+  "name": "case.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5452,
+  "content_sha256": "2ffa88e35b8ec138aae03159da2fb39b3833896c3f4a2f4806ae48957332e217",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 145,
+    "char_count": 5452,
+    "preview_lines": [
+      "import inspect",
+      "import re",
+      "import string",
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Optional, Set, Tuple, Union",
+      "import torch",
+      "_TAGS: Dict[str, Dict[str, Any]] = {",
+      "    \"torch\": {",
+      "        \"cond\": {},"
+    ],
+    "imports": [
+      "import inspect",
+      "import re",
+      "import string",
+      "from dataclasses import dataclass, field",
+      "from enum import Enum",
+      "from typing import Any, Dict, List, Optional, Set, Tuple, Union",
+      "import torch"
+    ],
+    "classes": [
+      "SupportLevel",
+      "ExportArgs",
+      "ExportCase"
+    ],
+    "functions": [
+      "check_inputs_type",
+      "_validate_tag",
+      "register_db_case",
+      "to_snake_case",
+      "_make_export_case",
+      "export_case",
+      "export_rewrite_case",
+      "normalize_inputs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_489_2ffa88e35b8ec138_case.py.json"
+}

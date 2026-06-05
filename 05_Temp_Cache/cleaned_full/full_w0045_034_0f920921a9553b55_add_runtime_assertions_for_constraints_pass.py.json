@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 34,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\passes\\add_runtime_assertions_for_constraints_pass.py",
+  "name": "add_runtime_assertions_for_constraints_pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13931,
+  "content_sha256": "0f920921a9553b55ac6a63929ae9555a6e1bfa508d6dc2c979ab479a810efc05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 312,
+    "non_empty_lines": 272,
+    "char_count": 13931,
+    "preview_lines": [
+      "import copy",
+      "import math",
+      "import operator",
+      "import traceback",
+      "from collections import OrderedDict",
+      "from functools import partial",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Set, Tuple",
+      "import sympy",
+      "import torch",
+      "import torch.fx"
+    ],
+    "imports": [
+      "import copy",
+      "import math",
+      "import operator",
+      "import traceback",
+      "from collections import OrderedDict",
+      "from functools import partial",
+      "from typing import Any, Callable, Dict, List, NamedTuple, Set, Tuple",
+      "import sympy",
+      "import torch",
+      "import torch.fx",
+      "from torch.fx.experimental.symbolic_shapes import SymInt",
+      "from torch._export.pass_base import _ExportPassBase, ProxyValue, PassResult",
+      "from torch._subclasses.fake_tensor import FakeTensor",
+      "from torch.utils._sympy.value_ranges import ValueRanges"
+    ],
+    "classes": [
+      "InputDim",
+      "_AddRuntimeAssertionsForInlineConstraintsPass",
+      "_AddRuntimeAssertionsForConstraintsPass"
+    ],
+    "functions": [
+      "_convert_to_int",
+      "_convert_range_to_int"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_034_0f920921a9553b55_add_runtime_assertions_for_constraints_pass.py.json"
+}

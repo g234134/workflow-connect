@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 241,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_optimizers.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_optimizers.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12234,
+  "content_sha256": "45a39c136ffa89ba70d4c648efea6dc7628582a48b5199461827198cfa103036",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 355,
+    "non_empty_lines": 324,
+    "char_count": 12234,
+    "preview_lines": [
+      "import math",
+      "from collections import defaultdict",
+      "from typing import Dict, List, Optional, Tuple, Union, cast",
+      "from .backends import get_array_ops",
+      "from .config import registry",
+      "from .types import FloatsXd, Generator",
+      "KeyT = Tuple[int, str]",
+      "FloatOrSeq = Union[float, List[float], Generator]",
+      "IntOrSeq = Union[int, List[int], Generator]",
+      "SGD_DEFAULTS: Dict[str, Union[float, bool, int]] = {"
+    ],
+    "imports": [
+      "import math",
+      "from collections import defaultdict",
+      "from typing import Dict, List, Optional, Tuple, Union, cast",
+      "from .backends import get_array_ops",
+      "from .config import registry",
+      "from .types import FloatsXd, Generator"
+    ],
+    "classes": [
+      "Optimizer"
+    ],
+    "functions": [
+      "RAdam",
+      "Adam",
+      "SGD"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_241_45a39c136ffa89ba_AI_Chariot_Legacy_666_1.0.0_20260508_optimizers.py.json"
+}

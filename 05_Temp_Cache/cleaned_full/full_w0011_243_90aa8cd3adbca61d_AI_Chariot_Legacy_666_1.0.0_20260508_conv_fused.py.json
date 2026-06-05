@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 243,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_conv_fused.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_conv_fused.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32304,
+  "content_sha256": "90aa8cd3adbca61d0ee139799f8fa20369899d27cf06950400196e1b33bd3363",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1050,
+    "non_empty_lines": 930,
+    "char_count": 32304,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import math",
+      "from typing import TypeVar",
+      "import torch",
+      "import torch.ao.nn.intrinsic as nni",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.nn import init",
+      "from torch.nn.modules.utils import _pair, _single, _triple"
+    ],
+    "imports": [
+      "import math",
+      "from typing import TypeVar",
+      "import torch",
+      "import torch.ao.nn.intrinsic as nni",
+      "import torch.ao.nn.qat as nnqat",
+      "import torch.nn as nn",
+      "import torch.nn.functional as F",
+      "from torch.nn import init",
+      "from torch.nn.modules.utils import _pair, _single, _triple",
+      "from torch.nn.parameter import Parameter",
+      "from torch.nn.utils import fuse_conv_bn_weights"
+    ],
+    "classes": [
+      "_ConvBnNd",
+      "ConvBn1d",
+      "ConvBnReLU1d",
+      "ConvReLU1d",
+      "ConvBn2d",
+      "ConvBnReLU2d",
+      "ConvReLU2d",
+      "ConvBn3d",
+      "ConvBnReLU3d",
+      "ConvReLU3d"
+    ],
+    "functions": [
+      "update_bn_stats",
+      "freeze_bn_stats"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_243_90aa8cd3adbca61d_AI_Chariot_Legacy_666_1.0.0_20260508_conv_fused.py.json"
+}

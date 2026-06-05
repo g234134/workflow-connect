@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 39,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_export\\passes\\replace_sym_size_ops_pass.py",
+  "name": "replace_sym_size_ops_pass.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 628,
+  "content_sha256": "ad285f881fedfb985a39f8e135c86029ad6d988b7083a901b736d6d5b4547919",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 14,
+    "char_count": 628,
+    "preview_lines": [
+      "from typing import Dict",
+      "import torch",
+      "replacements: Dict[torch._ops.OpOverloadPacket, torch._ops.OpOverload] = {",
+      "    torch.ops.aten.sym_size: torch.ops.aten.sym_size.int,",
+      "    torch.ops.aten.sym_stride: torch.ops.aten.sym_stride.int,",
+      "    torch.ops.aten.sym_numel: torch.ops.aten.sym_numel.default,",
+      "}",
+      "def _replace_sym_size_ops_pass(gm: torch.fx.GraphModule):",
+      "    for module in gm.modules():",
+      "        if not isinstance(module, torch.fx.GraphModule):"
+    ],
+    "imports": [
+      "from typing import Dict",
+      "import torch"
+    ],
+    "classes": [],
+    "functions": [
+      "_replace_sym_size_ops_pass"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_039_ad285f881fedfb98_replace_sym_size_ops_pass.py.json"
+}

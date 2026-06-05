@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 449,
+  "generated_at": "2026-05-08T18:47:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\mutation_guard.py",
+  "name": "mutation_guard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3614,
+  "content_sha256": "3ced27930b20bf852ae07e0b4347f2c6da2a26060a8244006beb6222e1225fd8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 93,
+    "char_count": 3614,
+    "preview_lines": [
+      "# mypy: disable-error-code=\"method-assign\"",
+      "import functools",
+      "import weakref",
+      "import torch.nn",
+      "from torch.nn import Module",
+      "from .utils import ExactWeakKeyDictionary, is_lazy_module",
+      "class MutationTracker:",
+      "    db = ExactWeakKeyDictionary()",
+      "    def __init__(self):",
+      "        self.mutation_count = 0"
+    ],
+    "imports": [
+      "import functools",
+      "import weakref",
+      "import torch.nn",
+      "from torch.nn import Module",
+      "from .utils import ExactWeakKeyDictionary, is_lazy_module"
+    ],
+    "classes": [
+      "MutationTracker",
+      "GenerationTracker"
+    ],
+    "functions": [
+      "watch",
+      "ensure_patched",
+      "is_dynamic_nn_module",
+      "install_generation_tagging_init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_449_3ced27930b20bf85_mutation_guard.py.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 449,
+  "generated_at": "2026-05-08T18:48:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\output_parsers\\react_json_single_input.py",
+  "name": "react_json_single_input.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2766,
+  "content_sha256": "e85a072c423abf09eadc347c086b370552782c837e3e5d2e9fd5431f6909f1d7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 86,
+    "non_empty_lines": 70,
+    "char_count": 2763,
+    "preview_lines": [
+      "import json",
+      "import re",
+      "from re import Pattern",
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from langchain_core.exceptions import OutputParserException",
+      "from typing_extensions import override",
+      "from langchain_classic.agents.agent import AgentOutputParser",
+      "from langchain_classic.agents.chat.prompt import FORMAT_INSTRUCTIONS",
+      "FINAL_ANSWER_ACTION = \"Final Answer:\"",
+      "class ReActJsonSingleInputOutputParser(AgentOutputParser):"
+    ],
+    "imports": [
+      "import json",
+      "import re",
+      "from re import Pattern",
+      "from langchain_core.agents import AgentAction, AgentFinish",
+      "from langchain_core.exceptions import OutputParserException",
+      "from typing_extensions import override",
+      "from langchain_classic.agents.agent import AgentOutputParser",
+      "from langchain_classic.agents.chat.prompt import FORMAT_INSTRUCTIONS"
+    ],
+    "classes": [
+      "ReActJsonSingleInputOutputParser"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_449_e85a072c423abf09_react_json_single_input.py.json"
+}

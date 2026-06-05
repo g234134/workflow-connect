@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 365,
+  "generated_at": "2026-05-08T18:45:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_proactor_events.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_proactor_events.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 33500,
+  "content_sha256": "62d15e99315cae52e8548f487391ae6c46827bf8e5b4bcf3382c777a494a759b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 897,
+    "non_empty_lines": 766,
+    "char_count": 33500,
+    "preview_lines": [
+      "\"\"\"Event loop using a proactor and related classes.",
+      "A proactor is a \"notify-on-completion\" multiplexer.  Currently a",
+      "proactor is only implemented on Windows with IOCP.",
+      "\"\"\"",
+      "__all__ = 'BaseProactorEventLoop',",
+      "import io",
+      "import os",
+      "import socket",
+      "import warnings",
+      "import signal"
+    ],
+    "imports": [
+      "import io",
+      "import os",
+      "import socket",
+      "import warnings",
+      "import signal",
+      "import threading",
+      "import collections",
+      "from . import base_events",
+      "from . import constants",
+      "from . import futures",
+      "from . import exceptions",
+      "from . import protocols",
+      "from . import sslproto",
+      "from . import transports",
+      "from . import trsock",
+      "from .log import logger"
+    ],
+    "classes": [
+      "_ProactorBasePipeTransport",
+      "_ProactorReadPipeTransport",
+      "_ProactorBaseWritePipeTransport",
+      "_ProactorWritePipeTransport",
+      "_ProactorDatagramTransport",
+      "_ProactorDuplexPipeTransport",
+      "_ProactorSocketTransport",
+      "BaseProactorEventLoop"
+    ],
+    "functions": [
+      "_set_socket_extra"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_365_62d15e99315cae52_AI_Chariot_Legacy_666_1.0.0_20260508_proactor_events.py.json"
+}

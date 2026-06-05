@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 356,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_axes_size.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_axes_size.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7713,
+  "content_sha256": "500110fadd2a7899507306dbad8e2d2b636e49685e17251722493805409ab877",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 271,
+    "non_empty_lines": 208,
+    "char_count": 7713,
+    "preview_lines": [
+      "\"\"\"",
+      "Provides classes of simple units that will be used with `.AxesDivider`",
+      "class (or others) to determine the size of each Axes. The unit",
+      "classes define `get_size` method that returns a tuple of two floats,",
+      "meaning relative and absolute sizes, respectively.",
+      "Note that this class is nothing more than a simple tuple of two",
+      "floats. Take a look at the Divider class to see how these two",
+      "values are used.",
+      "Once created, the unit classes can be modified by simple arithmetic",
+      "operations: addition /subtraction with another unit type or a real number and scaling"
+    ],
+    "imports": [
+      "from numbers import Real",
+      "from matplotlib import _api",
+      "from matplotlib.axes import Axes"
+    ],
+    "classes": [
+      "_Base",
+      "Add",
+      "Fixed",
+      "Scaled",
+      "AxesX",
+      "AxesY",
+      "MaxExtent",
+      "MaxWidth",
+      "MaxHeight",
+      "Fraction",
+      "_AxesDecorationsSize"
+    ],
+    "functions": [
+      "_get_axes_aspect",
+      "from_any"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_356_500110fadd2a7899_AI_Chariot_Legacy_666_1.0.0_20260508_axes_size.py.json"
+}

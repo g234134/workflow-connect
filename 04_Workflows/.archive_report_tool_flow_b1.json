@@ -1,0 +1,29 @@
+{
+  "ticket_id": "HQ-TOOL-LAYER-B1",
+  "role": "大唐副官",
+  "status": "done",
+  "date_local": "2026-05-22",
+  "executed": [
+    "core/minimal_orchestration_bridge.py — B1 lane (_is_b1_report_file_only_tool_flow_whitelisted, whitelist_lane)",
+    "tests/test_minimal_orchestration_bridge_tool_flow_b1.py — 新增 7 例",
+    "04_Workflows/SPEC_tool_catalog_and_selector_v1.md §10 — B1 一行",
+    "gov_core_system: python -m unittest tests.test_tool_flow_bridge tests.test_minimal_orchestration_bridge_tool_flow tests.test_minimal_orchestration_bridge_tool_flow_b1 -v",
+    "gov_core_system: python -m unittest discover -s tests -p test_tool*.py -v"
+  ],
+  "results": {
+    "scope": "Phase B1 report_organize.file-only Tool Flow whitelist（第二波）；info_query 白名單邏輯未改",
+    "bridge_lane": "B1_report_file_only",
+    "selector_rule": "S8 (file.io → llm.ask), human_review_required false",
+    "unittest_bridge_b1": "15/15 OK (tool_flow_bridge 3 + info_query bridge 5 + B1 7)",
+    "unittest_test_tool_star": "45/45 OK",
+    "info_query_regression": "tests.test_minimal_orchestration_bridge_tool_flow 全通過"
+  },
+  "metrics": {
+    "tests_bridge_and_b1": 15,
+    "tests_test_tool_glob": 45
+  },
+  "blockers": "無。生產放行待確認：file.io.read executor 非 stub（bridge 僅路由，測試 mock run_tool_flow）。",
+  "next_steps": "尚書省裁決 B1 生產門檻後啟用流量；Phase C/D（small_automation/browser_task）不在本票範圍。",
+  "runbook_delta": "無 Runbook 結構變更；SPEC §10 已追加 B1 索引行。",
+  "forbidden_zone_note": "本輪未觸 .env、venv 樹、runtime/checkpoints、暗部破壞性維運；未改 selector/executor 核心。"
+}

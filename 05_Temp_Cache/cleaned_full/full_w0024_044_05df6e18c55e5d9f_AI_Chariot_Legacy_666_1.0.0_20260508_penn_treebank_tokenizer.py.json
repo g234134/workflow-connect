@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 24,
+  "idx_in_wave": 44,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_penn_treebank_tokenizer.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_penn_treebank_tokenizer.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3674,
+  "content_sha256": "05df6e18c55e5d9f4abc97e1b001dcb772de6a3d1cbf9120ab2b677715602df9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 87,
+    "char_count": 3674,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "\"\"\" Penn Treebank tokenizer, adapted from *nltk.tokenize.treebank.py*",
+      "by Kyle Gorman, which in turn is adapted from an infamous sed script by Robert McIntyre.",
+      "Even ignoring the reduced import overhead, this is about half again faster than",
+      "the NLTK version; don't ask me why.",
+      "Examples:",
+      "    >>> s = \\'\\'\\'Good muffins cost $3.88\\\\nin New York.  Please buy me\\\\ntwo of them.\\\\nThanks.\\'\\'\\'",
+      "    >>> word_tokenize(s)",
+      "    ['Good', 'muffins', 'cost', '$', '3.88', 'in', 'New', 'York.', 'Please', 'buy', 'me', 'two', 'of', 'them.', 'Thanks', '.']"
+    ],
+    "imports": [
+      "from __future__ import division, print_function, absolute_import  # , unicode_literals",
+      "from builtins import (  # noqa",
+      "from future import standard_library",
+      "from re import sub"
+    ],
+    "classes": [],
+    "functions": [
+      "word_tokenize"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0024_044_05df6e18c55e5d9f_AI_Chariot_Legacy_666_1.0.0_20260508_penn_treebank_tokenizer.py.json"
+}

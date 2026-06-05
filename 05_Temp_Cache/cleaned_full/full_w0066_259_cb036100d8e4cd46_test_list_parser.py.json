@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 259,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\output_parsers\\test_list_parser.py",
+  "name": "test_list_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10948,
+  "content_sha256": "cb036100d8e4cd46331b7b0345a65c19114a7f2c664403fc773346be9cd6eb67",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 269,
+    "char_count": 10945,
+    "preview_lines": [
+      "from collections.abc import AsyncIterator, Iterable",
+      "from typing import TypeVar",
+      "from langchain_core.output_parsers.list import (",
+      "    CommaSeparatedListOutputParser,",
+      "    MarkdownListOutputParser,",
+      "    NumberedListOutputParser,",
+      ")",
+      "from langchain_core.runnables.utils import aadd, add",
+      "def test_single_item() -> None:",
+      "    \"\"\"Test that a string with a single item is parsed to a list with that item.\"\"\""
+    ],
+    "imports": [
+      "from collections.abc import AsyncIterator, Iterable",
+      "from typing import TypeVar",
+      "from langchain_core.output_parsers.list import (",
+      "from langchain_core.runnables.utils import aadd, add"
+    ],
+    "classes": [],
+    "functions": [
+      "test_single_item",
+      "test_multiple_items_with_spaces",
+      "test_multiple_items",
+      "test_multiple_items_with_comma",
+      "test_numbered_list",
+      "test_markdown_list"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_259_cb036100d8e4cd46_test_list_parser.py.json"
+}

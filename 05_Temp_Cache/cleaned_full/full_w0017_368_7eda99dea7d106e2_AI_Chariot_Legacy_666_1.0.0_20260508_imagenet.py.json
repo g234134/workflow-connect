@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 368,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_imagenet.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_imagenet.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8910,
+  "content_sha256": "7eda99dea7d106e2fe7c00171633702b337dd8a753fef4be3d4a8896715431f0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 219,
+    "non_empty_lines": 172,
+    "char_count": 8910,
+    "preview_lines": [
+      "import os",
+      "import shutil",
+      "import tempfile",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "from typing import Any, Dict, Iterator, List, Optional, Tuple, Union",
+      "import torch",
+      "from .folder import ImageFolder",
+      "from .utils import check_integrity, extract_archive, verify_str_arg",
+      "ARCHIVE_META = {"
+    ],
+    "imports": [
+      "import os",
+      "import shutil",
+      "import tempfile",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "from typing import Any, Dict, Iterator, List, Optional, Tuple, Union",
+      "import torch",
+      "from .folder import ImageFolder",
+      "from .utils import check_integrity, extract_archive, verify_str_arg",
+      "import scipy.io as sio"
+    ],
+    "classes": [
+      "ImageNet"
+    ],
+    "functions": [
+      "load_meta_file",
+      "_verify_archive",
+      "parse_devkit_archive",
+      "parse_train_archive",
+      "parse_val_archive"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_368_7eda99dea7d106e2_AI_Chariot_Legacy_666_1.0.0_20260508_imagenet.py.json"
+}

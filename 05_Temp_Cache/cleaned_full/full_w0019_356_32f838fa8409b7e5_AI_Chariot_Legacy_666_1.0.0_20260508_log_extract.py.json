@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 356,
+  "generated_at": "2026-05-08T18:45:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_log_extract.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_log_extract.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3895,
+  "content_sha256": "32f838fa8409b7e549669960aaa69b100616c586a6dfc1f1db06cfeb10b18a00",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 114,
+    "non_empty_lines": 98,
+    "char_count": 3895,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from contextlib import contextmanager",
+      "from typing import Any, List, Tuple, cast",
+      "import random",
+      "import torch",
+      "import time",
+      "from torch.utils.benchmark import Timer",
+      "def extract_ir(filename: str) -> List[str]:",
+      "    BEGIN = \"<GRAPH_EXPORT>\"",
+      "    END = \"</GRAPH_EXPORT>\""
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from typing import Any, List, Tuple, cast",
+      "import random",
+      "import torch",
+      "import time",
+      "from torch.utils.benchmark import Timer"
+    ],
+    "classes": [],
+    "functions": [
+      "extract_ir",
+      "make_tensor_from_type",
+      "load_graph_and_inputs",
+      "time_cuda",
+      "time_cpu",
+      "run_test",
+      "no_fuser",
+      "run_baseline_no_fusion",
+      "run_nnc",
+      "run_nvfuser"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_356_32f838fa8409b7e5_AI_Chariot_Legacy_666_1.0.0_20260508_log_extract.py.json"
+}

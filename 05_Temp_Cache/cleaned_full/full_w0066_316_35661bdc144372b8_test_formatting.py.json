@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 316,
+  "generated_at": "2026-05-08T18:48:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\core\\tests\\unit_tests\\utils\\test_formatting.py",
+  "name": "test_formatting.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5420,
+  "content_sha256": "35661bdc144372b8e0a7e026df514e4bf124b4fadc1d932e0da4cef1a12b23d4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 127,
+    "non_empty_lines": 103,
+    "char_count": 5405,
+    "preview_lines": [
+      "\"\"\"Tests for langchain_core.utils.formatting.\"\"\"",
+      "import pytest",
+      "from langchain_core.utils.formatting import StrictFormatter, formatter",
+      "class TestStrictFormatter:",
+      "    \"\"\"Tests for the `StrictFormatter` class.\"\"\"",
+      "    def test_vformat_with_keyword_args(self) -> None:",
+      "        \"\"\"Test that `vformat` works with keyword arguments.\"\"\"",
+      "        fmt = StrictFormatter()",
+      "        result = fmt.vformat(\"Hello, {name}!\", [], {\"name\": \"World\"})",
+      "        assert result == \"Hello, World!\""
+    ],
+    "imports": [
+      "import pytest",
+      "from langchain_core.utils.formatting import StrictFormatter, formatter"
+    ],
+    "classes": [
+      "TestStrictFormatter",
+      "TestFormatterSingleton"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_316_35661bdc144372b8_test_formatting.py.json"
+}

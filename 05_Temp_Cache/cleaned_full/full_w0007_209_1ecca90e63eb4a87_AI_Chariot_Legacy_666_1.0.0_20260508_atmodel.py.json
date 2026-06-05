@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 209,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_atmodel.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_atmodel.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 55443,
+  "content_sha256": "1ecca90e63eb4a87702e9a4f9ea24a851ece8c618c61cc2e3e3e5b9ad1e3f208",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1207,
+    "non_empty_lines": 1005,
+    "char_count": 55443,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Copyright (C) 2016 Radim Rehurek <radimrehurek@seznam.cz>",
+      "# Copyright (C) 2016 Olavur Mortensen <olavurmortensen@gmail.com>",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Author-topic model.",
+      "This module trains the author-topic model on documents and corresponding author-document dictionaries.",
+      "The training is online and is constant in memory w.r.t. the number of documents.",
+      "The model is *not* constant in memory w.r.t. the number of authors."
+    ],
+    "imports": [
+      "import logging",
+      "from itertools import chain",
+      "from copy import deepcopy",
+      "from shutil import copyfile",
+      "from os.path import isfile",
+      "from os import remove",
+      "import numpy as np  # for arrays, array broadcasting etc.",
+      "from scipy.special import gammaln  # gamma function utils",
+      "from gensim import utils",
+      "from gensim.models import LdaModel",
+      "from gensim.models.ldamodel import LdaState",
+      "from gensim.matutils import dirichlet_expectation, mean_absolute_difference",
+      "from gensim.corpora import MmCorpus"
+    ],
+    "classes": [
+      "AuthorTopicState",
+      "AuthorTopicModel"
+    ],
+    "functions": [
+      "construct_doc2author",
+      "construct_author2doc"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_209_1ecca90e63eb4a87_AI_Chariot_Legacy_666_1.0.0_20260508_atmodel.py.json"
+}

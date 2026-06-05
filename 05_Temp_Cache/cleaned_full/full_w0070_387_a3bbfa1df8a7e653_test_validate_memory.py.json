@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 387,
+  "generated_at": "2026-05-08T18:49:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\checkpoint-conformance\\tests\\test_validate_memory.py",
+  "name": "test_validate_memory.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 645,
+  "content_sha256": "a3bbfa1df8a7e6537cdd593cd00c5725bc39815ec7a6de1dda8226e9da0be840",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 642,
+    "preview_lines": [
+      "\"\"\"Self-tests: run the conformance suite against InMemorySaver.\"\"\"",
+      "from __future__ import annotations",
+      "import pytest",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from langgraph.checkpoint.conformance import checkpointer_test, validate",
+      "@checkpointer_test(name=\"InMemorySaver\")",
+      "async def memory_checkpointer():",
+      "    yield InMemorySaver()",
+      "@pytest.mark.asyncio",
+      "async def test_validate_memory_base():"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import pytest",
+      "from langgraph.checkpoint.memory import InMemorySaver",
+      "from langgraph.checkpoint.conformance import checkpointer_test, validate"
+    ],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_387_a3bbfa1df8a7e653_test_validate_memory.py.json"
+}

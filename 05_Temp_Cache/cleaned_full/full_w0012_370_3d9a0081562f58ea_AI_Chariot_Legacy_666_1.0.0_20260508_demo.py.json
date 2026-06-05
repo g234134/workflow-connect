@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 370,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_demo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_demo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24502,
+  "content_sha256": "3d9a0081562f58ea8e278945cc99796b5e319f232cccf745470211224b8cfdba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 672,
+    "non_empty_lines": 524,
+    "char_count": 24502,
+    "preview_lines": [
+      "\"\"\"Module for interactive demos using IPython.",
+      "This module implements a few classes for running Python scripts interactively",
+      "in IPython for demonstrations.  With very simple markup (a few tags in",
+      "comments), you can control points where the script stops executing and returns",
+      "control to IPython.",
+      "Provided classes",
+      "----------------",
+      "The classes are (see their docstrings for further details):",
+      " - Demo: pure python demos",
+      " - IPythonDemo: demos with input to be processed by IPython as if it had been"
+    ],
+    "imports": [
+      "from IPython.lib.demo import Demo",
+      "import os",
+      "import re",
+      "import shlex",
+      "import sys",
+      "import pygments",
+      "from pathlib import Path",
+      "from IPython.utils.text import marquee",
+      "from IPython.utils import openpy",
+      "from IPython.utils import py3compat"
+    ],
+    "classes": [
+      "DemoError",
+      "Demo",
+      "IPythonDemo",
+      "LineDemo",
+      "IPythonLineDemo",
+      "ClearMixin",
+      "ClearDemo",
+      "ClearIPDemo"
+    ],
+    "functions": [
+      "re_mark",
+      "slide"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_370_3d9a0081562f58ea_AI_Chariot_Legacy_666_1.0.0_20260508_demo.py.json"
+}

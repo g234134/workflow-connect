@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_rbfinterp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_rbfinterp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19628,
+  "content_sha256": "4bf21d8805a35adfb04d81d8b29c321e77066166727beb5dee8c6eccedaf6ccd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 534,
+    "non_empty_lines": 425,
+    "char_count": 19628,
+    "preview_lines": [
+      "import pickle",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.linalg import LinAlgError",
+      "from scipy._lib._array_api import xp_assert_close",
+      "from scipy.stats.qmc import Halton",
+      "from scipy.spatial import cKDTree  # type: ignore[attr-defined]",
+      "from scipy.interpolate._rbfinterp import (",
+      "    _AVAILABLE, _SCALE_INVARIANT, _NAME_TO_MIN_DEGREE, _monomial_powers,",
+      "    RBFInterpolator"
+    ],
+    "imports": [
+      "import pickle",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.linalg import LinAlgError",
+      "from scipy._lib._array_api import xp_assert_close",
+      "from scipy.stats.qmc import Halton",
+      "from scipy.spatial import cKDTree  # type: ignore[attr-defined]",
+      "from scipy.interpolate._rbfinterp import (",
+      "from scipy.interpolate import _rbfinterp_pythran",
+      "from scipy._lib._testutils import _run_concurrent_barrier"
+    ],
+    "classes": [
+      "_TestRBFInterpolator",
+      "TestRBFInterpolatorNeighborsNone",
+      "TestRBFInterpolatorNeighbors20",
+      "TestRBFInterpolatorNeighborsInf"
+    ],
+    "functions": [
+      "_vandermonde",
+      "_1d_test_function",
+      "_2d_test_function",
+      "_is_conditionally_positive_definite",
+      "test_conditionally_positive_definite"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_430_4bf21d8805a35adf_AI_Chariot_Legacy_666_1.0.0_20260508_test_rbfinterp.py.json"
+}

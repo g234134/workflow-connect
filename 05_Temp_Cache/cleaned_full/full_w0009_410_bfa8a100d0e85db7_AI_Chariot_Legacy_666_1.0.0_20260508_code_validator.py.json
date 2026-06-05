@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 410,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_code_validator.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_code_validator.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2634,
+  "content_sha256": "bfa8a100d0e85db711a265ae2ad108efa5f524c5fa3cbeb0e8401a805c6981e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 63,
+    "non_empty_lines": 56,
+    "char_count": 2634,
+    "preview_lines": [
+      "import re",
+      "from typing import List, Tuple",
+      "# Security validation patterns",
+      "FORBIDDEN_PATTERNS: List[Tuple[str, str]] = [",
+      "    # Import statements",
+      "    (r\"\\bimport\\s+\", \"import statements are not allowed\"),",
+      "    (r\"\\bfrom\\s+\\w+\\s+import\\b\", \"from...import statements are not allowed\"),",
+      "    (r\"__import__\\s*\\(\", \"__import__() is not allowed\"),",
+      "    # Dangerous builtins",
+      "    (r\"\\bexec\\s*\\(\", \"exec() is not allowed\"),"
+    ],
+    "imports": [
+      "import re",
+      "from typing import List, Tuple"
+    ],
+    "classes": [
+      "CustomCodeValidationError"
+    ],
+    "functions": [
+      "validate_custom_code"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_410_bfa8a100d0e85db7_AI_Chariot_Legacy_666_1.0.0_20260508_code_validator.py.json"
+}

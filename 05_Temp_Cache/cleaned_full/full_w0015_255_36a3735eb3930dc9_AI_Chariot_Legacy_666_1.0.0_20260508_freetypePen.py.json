@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 255,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_freetypePen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_freetypePen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20370,
+  "content_sha256": "36a3735eb3930dc9281f837a58b9e3f8abb119c83acfb0e5a9209f9a9abca801",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 462,
+    "non_empty_lines": 405,
+    "char_count": 20338,
+    "preview_lines": [
+      "# -*- coding: utf-8 -*-",
+      "\"\"\"Pen to rasterize paths with FreeType.\"\"\"",
+      "__all__ = [\"FreeTypePen\"]",
+      "import os",
+      "import ctypes",
+      "import platform",
+      "import subprocess",
+      "import collections",
+      "import math",
+      "import freetype"
+    ],
+    "imports": [
+      "import os",
+      "import ctypes",
+      "import platform",
+      "import subprocess",
+      "import collections",
+      "import math",
+      "import freetype",
+      "from freetype.raw import FT_Outline_Get_Bitmap, FT_Outline_Get_BBox, FT_Outline_Get_CBox",
+      "from freetype.ft_types import FT_Pos",
+      "from freetype.ft_structs import FT_Vector, FT_BBox, FT_Bitmap, FT_Outline",
+      "from freetype.ft_enums import (",
+      "from freetype.ft_errors import FT_Exception",
+      "from fontTools.pens.basePen import BasePen, PenError",
+      "from fontTools.misc.roundTools import otRound",
+      "from fontTools.misc.transform import Transform",
+      "from fontTools.ttLib import TTFont",
+      "from fontTools.pens.freetypePen import FreeTypePen",
+      "from fontTools.misc.transform import Offset",
+      "import uharfbuzz as hb",
+      "from fontTools.pens.freetypePen import FreeTypePen"
+    ],
+    "classes": [
+      "FreeTypePen"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_255_36a3735eb3930dc9_AI_Chariot_Legacy_666_1.0.0_20260508_freetypePen.py.json"
+}

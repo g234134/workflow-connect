@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_composio_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_composio_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4089,
+  "content_sha256": "779075d4aa719584c0c3adf7a93ecc277c3f806771e1bfe112e29304fe70ba0f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 128,
+    "non_empty_lines": 106,
+    "char_count": 4089,
+    "preview_lines": [
+      "\"\"\"Composio tools wrapper.\"\"\"",
+      "import typing as t",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import Field",
+      "import typing_extensions as te",
+      "class ComposioTool(BaseTool):",
+      "    \"\"\"Wrapper for composio tools.\"\"\"",
+      "    composio_action: t.Callable[..., t.Any]",
+      "    env_vars: list[EnvVar] = Field(",
+      "        default_factory=lambda: ["
+    ],
+    "imports": [
+      "import typing as t",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import Field",
+      "import typing_extensions as te",
+      "from composio import Action",
+      "from composio.client.collections import ConnectedAccountModel",
+      "from composio import Action, ComposioToolSet",
+      "from composio.constants import DEFAULT_ENTITY_ID",
+      "from composio.utils.shared import json_schema_to_model",
+      "from composio import ComposioToolSet"
+    ],
+    "classes": [
+      "ComposioTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_093_779075d4aa719584_AI_Chariot_Legacy_666_1.0.0_20260508_composio_tool.py.json"
+}

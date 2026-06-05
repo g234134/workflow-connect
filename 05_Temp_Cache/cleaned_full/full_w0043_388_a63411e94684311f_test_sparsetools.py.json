@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:47:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\sympy\\matrices\\tests\\test_sparsetools.py",
+  "name": "test_sparsetools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4877,
+  "content_sha256": "a63411e94684311f76368941fc8199f549a4e853d98ef234be4d457781ff0b92",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 132,
+    "non_empty_lines": 125,
+    "char_count": 4877,
+    "preview_lines": [
+      "from sympy.matrices.sparsetools import _doktocsr, _csrtodok, banded",
+      "from sympy.matrices.dense import (Matrix, eye, ones, zeros)",
+      "from sympy.matrices import SparseMatrix",
+      "from sympy.testing.pytest import raises",
+      "def test_doktocsr():",
+      "    a = SparseMatrix([[1, 2, 0, 0], [0, 3, 9, 0], [0, 1, 4, 0]])",
+      "    b = SparseMatrix(4, 6, [10, 20, 0, 0, 0, 0, 0, 30, 0, 40, 0, 0, 0, 0, 50,",
+      "        60, 70, 0, 0, 0, 0, 0, 0, 80])",
+      "    c = SparseMatrix(4, 4, [0, 0, 0, 0, 0, 12, 0, 2, 15, 0, 12, 0, 0, 0, 0, 4])",
+      "    d = SparseMatrix(10, 10, {(1, 1): 12, (3, 5): 7, (7, 8): 12})"
+    ],
+    "imports": [
+      "from sympy.matrices.sparsetools import _doktocsr, _csrtodok, banded",
+      "from sympy.matrices.dense import (Matrix, eye, ones, zeros)",
+      "from sympy.matrices import SparseMatrix",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_doktocsr",
+      "test_csrtodok",
+      "test_banded"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_388_a63411e94684311f_test_sparsetools.py.json"
+}

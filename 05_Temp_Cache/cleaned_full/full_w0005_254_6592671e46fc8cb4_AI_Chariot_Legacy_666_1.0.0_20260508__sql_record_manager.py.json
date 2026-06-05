@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:44:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__sql_record_manager.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__sql_record_manager.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 21158,
+  "content_sha256": "6592671e46fc8cb40e3e3ef9c1dc5d2be4866906617cdcfdec5cda449a69af8a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 532,
+    "non_empty_lines": 462,
+    "char_count": 21158,
+    "preview_lines": [
+      "\"\"\"Implementation of a record management layer in SQLAlchemy.",
+      "The management layer uses SQLAlchemy to track upserted records.",
+      "Currently, this layer only works with SQLite; hopwever, should be adaptable",
+      "to other SQL implementations with minimal effort.",
+      "Currently, includes an implementation that uses SQLAlchemy which should",
+      "allow it to work with a variety of SQL as a backend.",
+      "* Each key is associated with an updated_at field.",
+      "* This filed is updated whenever the key is updated.",
+      "* Keys can be listed based on the updated at field.",
+      "* Keys can be deleted."
+    ],
+    "imports": [
+      "import contextlib",
+      "import decimal",
+      "import uuid",
+      "from collections.abc import AsyncGenerator, Generator, Sequence",
+      "from typing import Any",
+      "from langchain_core.indexing import RecordManager",
+      "from sqlalchemy import (",
+      "from sqlalchemy.engine import URL, Engine",
+      "from sqlalchemy.ext.asyncio import (",
+      "from sqlalchemy.orm import Query, Session, declarative_base, sessionmaker",
+      "from sqlalchemy.ext.asyncio import async_sessionmaker"
+    ],
+    "classes": [
+      "UpsertionRecord",
+      "SQLRecordManager"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_254_6592671e46fc8cb4_AI_Chariot_Legacy_666_1.0.0_20260508__sql_record_manager.py.json"
+}

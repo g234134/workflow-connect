@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_duplicate_labels.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_duplicate_labels.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13611,
+  "content_sha256": "c1be026a6ec83d1cb1adb324f114192bfadbcaf49e7fccd6eb599f53c3069ed7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 390,
+    "non_empty_lines": 344,
+    "char_count": 13611,
+    "preview_lines": [
+      "\"\"\"Tests dealing with the NDFrame.allows_duplicates.\"\"\"",
+      "import operator",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm",
+      "not_implemented = pytest.mark.xfail(reason=\"Not implemented.\")",
+      "# ----------------------------------------------------------------------------",
+      "# Preservation",
+      "class TestPreserves:"
+    ],
+    "imports": [
+      "import operator",
+      "import numpy as np",
+      "import pytest",
+      "import pandas as pd",
+      "import pandas._testing as tm"
+    ],
+    "classes": [
+      "TestPreserves",
+      "TestRaises"
+    ],
+    "functions": [
+      "test_raises_basic",
+      "test_format_duplicate_labels_message",
+      "test_format_duplicate_labels_message_multi",
+      "test_dataframe_insert_raises",
+      "test_inplace_raises",
+      "test_pickle"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_115_c1be026a6ec83d1c_AI_Chariot_Legacy_666_1.0.0_20260508_test_duplicate_labels.py.json"
+}

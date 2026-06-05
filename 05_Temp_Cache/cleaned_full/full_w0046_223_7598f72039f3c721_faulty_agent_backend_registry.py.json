@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\rpc\\_testing\\faulty_agent_backend_registry.py",
+  "name": "faulty_agent_backend_registry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1702,
+  "content_sha256": "7598f72039f3c7219b53f79e1aee52b8ee65b7e2d90e616db3457b3de7e5a456",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 62,
+    "non_empty_lines": 51,
+    "char_count": 1702,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "import torch.distributed as dist",
+      "import torch.distributed.rpc as rpc",
+      "def _faulty_tensorpipe_construct_rpc_backend_options_handler(",
+      "    rpc_timeout,",
+      "    init_method,",
+      "    num_worker_threads,",
+      "    messages_to_fail,",
+      "    messages_to_delay,",
+      "    num_fail_sends,"
+    ],
+    "imports": [
+      "import torch.distributed as dist",
+      "import torch.distributed.rpc as rpc",
+      "from . import FaultyTensorPipeRpcBackendOptions",
+      "from . import FaultyTensorPipeAgent",
+      "from . import FaultyTensorPipeRpcBackendOptions",
+      "from torch.distributed.rpc import api"
+    ],
+    "classes": [],
+    "functions": [
+      "_faulty_tensorpipe_construct_rpc_backend_options_handler",
+      "_faulty_tensorpipe_init_backend_handler"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_223_7598f72039f3c721_faulty_agent_backend_registry.py.json"
+}

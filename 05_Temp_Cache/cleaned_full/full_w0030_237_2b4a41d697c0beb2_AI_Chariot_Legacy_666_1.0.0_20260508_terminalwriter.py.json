@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_terminalwriter.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_terminalwriter.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8994,
+  "content_sha256": "2b4a41d697c0beb281585011292a1b438c168b4a5d9a205a19bddafeffc00234",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 258,
+    "non_empty_lines": 219,
+    "char_count": 8994,
+    "preview_lines": [
+      "\"\"\"Helper functions for writing to terminals and files.\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import os",
+      "import shutil",
+      "import sys",
+      "from typing import final",
+      "from typing import Literal",
+      "from typing import TextIO",
+      "import pygments"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Sequence",
+      "import os",
+      "import shutil",
+      "import sys",
+      "from typing import final",
+      "from typing import Literal",
+      "from typing import TextIO",
+      "import pygments",
+      "from pygments.formatters.terminal import TerminalFormatter",
+      "from pygments.lexer import Lexer",
+      "from pygments.lexers.diff import DiffLexer",
+      "from pygments.lexers.python import PythonLexer",
+      "from ..compat import assert_never",
+      "from .wcwidth import wcswidth",
+      "import colorama"
+    ],
+    "classes": [
+      "TerminalWriter"
+    ],
+    "functions": [
+      "get_terminal_width",
+      "should_do_markup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_237_2b4a41d697c0beb2_AI_Chariot_Legacy_666_1.0.0_20260508_terminalwriter.py.json"
+}

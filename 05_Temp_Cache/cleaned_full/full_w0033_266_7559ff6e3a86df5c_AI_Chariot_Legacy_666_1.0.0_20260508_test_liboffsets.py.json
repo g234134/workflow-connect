@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 266,
+  "generated_at": "2026-05-08T18:46:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_liboffsets.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_liboffsets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5097,
+  "content_sha256": "7559ff6e3a86df5c69b4794e7eddea593d041400db1f92cefe967a80b0e5d990",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 172,
+    "non_empty_lines": 139,
+    "char_count": 5097,
+    "preview_lines": [
+      "\"\"\"",
+      "Tests for helper functions in the cython tslibs.offsets",
+      "\"\"\"",
+      "from datetime import datetime",
+      "import pytest",
+      "from pandas._libs.tslibs.ccalendar import (",
+      "    get_firstbday,",
+      "    get_lastbday,",
+      ")",
+      "import pandas._libs.tslibs.offsets as liboffsets"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "import pytest",
+      "from pandas._libs.tslibs.ccalendar import (",
+      "import pandas._libs.tslibs.offsets as liboffsets",
+      "from pandas._libs.tslibs.offsets import roll_qtrday",
+      "from pandas import Timestamp"
+    ],
+    "classes": [],
+    "functions": [
+      "day_opt",
+      "test_get_last_bday",
+      "test_get_first_bday",
+      "test_shift_month_dt",
+      "test_shift_month_ts",
+      "test_shift_month_error",
+      "test_roll_qtrday_year",
+      "test_roll_qtrday_year2",
+      "test_get_day_of_month_error",
+      "test_roll_qtr_day_not_mod_unequal",
+      "test_roll_qtr_day_mod_equal",
+      "test_roll_convention"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_266_7559ff6e3a86df5c_AI_Chariot_Legacy_666_1.0.0_20260508_test_liboffsets.py.json"
+}

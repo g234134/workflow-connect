@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 453,
+  "generated_at": "2026-05-08T18:46:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_simple_type.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_simple_type.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5929,
+  "content_sha256": "9344c7ea5473bd3471e75907160154e3a4067f3e78d8eef7bbe081c5316e1768",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 176,
+    "non_empty_lines": 140,
+    "char_count": 5929,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from inspect import isclass",
+      "import typing",
+      "from pydantic import BaseModel, create_model",
+      "from enum import Enum",
+      "from typing import TYPE_CHECKING",
+      "from instructor.dsl.partial import Partial",
+      "if TYPE_CHECKING:",
+      "    pass",
+      "T = typing.TypeVar(\"T\")"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from inspect import isclass",
+      "import typing",
+      "from pydantic import BaseModel, create_model",
+      "from enum import Enum",
+      "from typing import TYPE_CHECKING",
+      "from instructor.dsl.partial import Partial",
+      "from ..processing.function_calls import OpenAISchema",
+      "import sys",
+      "import types",
+      "import sys"
+    ],
+    "classes": [
+      "AdapterBase",
+      "ModelAdapter"
+    ],
+    "functions": [
+      "validateIsSubClass",
+      "is_simple_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_453_9344c7ea5473bd34_AI_Chariot_Legacy_666_1.0.0_20260508_simple_type.py.json"
+}

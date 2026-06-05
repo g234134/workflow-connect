@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:47:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_inductor\\kernel\\mm.py",
+  "name": "mm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10755,
+  "content_sha256": "8bc3b2fff624672e67f93b846835f41d41e9230bd499ba3e62030cf955309f23",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 314,
+    "non_empty_lines": 267,
+    "char_count": 10755,
+    "preview_lines": [
+      "import functools",
+      "import logging",
+      "from typing import Any, Dict, List, Optional",
+      "import torch",
+      "from torch._inductor.virtualized import V",
+      "from .. import config as inductor_config",
+      "from ..codegen.cuda.gemm_template import CUTLASSGemmTemplate",
+      "from ..lowering import register_lowering",
+      "from ..select_algorithm import (",
+      "    autotune_select_algorithm,"
+    ],
+    "imports": [
+      "import functools",
+      "import logging",
+      "from typing import Any, Dict, List, Optional",
+      "import torch",
+      "from torch._inductor.virtualized import V",
+      "from .. import config as inductor_config",
+      "from ..codegen.cuda.gemm_template import CUTLASSGemmTemplate",
+      "from ..lowering import register_lowering",
+      "from ..select_algorithm import (",
+      "from ..utils import (",
+      "from .mm_common import (",
+      "from torch._inductor.ir import FixedLayout, FlexibleLayout"
+    ],
+    "classes": [],
+    "functions": [
+      "_is_int8_mat",
+      "bias_addmm",
+      "tuned_mm",
+      "tuned_int_mm",
+      "tuned_addmm",
+      "fallback_mixed_mm",
+      "_is_sm7x_or_older_gpu",
+      "tuned_mixed_mm",
+      "tuned_fused_int_mm_mul"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_159_8bc3b2fff624672e_mm.py.json"
+}

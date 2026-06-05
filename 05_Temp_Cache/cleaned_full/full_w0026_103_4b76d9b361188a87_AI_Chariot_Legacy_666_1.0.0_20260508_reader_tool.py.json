@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 103,
+  "generated_at": "2026-05-08T18:46:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reader_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reader_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1666,
+  "content_sha256": "4b76d9b361188a87a2cba37dbefd49086e776223c7405709812fb1085fc46fc5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 38,
+    "char_count": 1666,
+    "preview_lines": [
+      "import os",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "class S3ReaderToolInput(BaseModel):",
+      "    \"\"\"Input schema for S3ReaderTool.\"\"\"",
+      "    file_path: str = Field(",
+      "        ..., description=\"S3 file path (e.g., 's3://bucket-name/file-name')\"",
+      "    )",
+      "class S3ReaderTool(BaseTool):",
+      "    name: str = \"S3 Reader Tool\""
+    ],
+    "imports": [
+      "import os",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field",
+      "import boto3",
+      "from botocore.exceptions import ClientError"
+    ],
+    "classes": [
+      "S3ReaderToolInput",
+      "S3ReaderTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_103_4b76d9b361188a87_AI_Chariot_Legacy_666_1.0.0_20260508_reader_tool.py.json"
+}

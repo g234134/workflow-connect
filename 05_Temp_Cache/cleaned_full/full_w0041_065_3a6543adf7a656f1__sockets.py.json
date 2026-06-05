@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 65,
+  "generated_at": "2026-05-08T18:47:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\anyio\\abc\\_sockets.py",
+  "name": "_sockets.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13124,
+  "content_sha256": "3a6543adf7a656f17d7392b5b6906043257a7e7e6fd17c821312c0a81386cfda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 399,
+    "non_empty_lines": 308,
+    "char_count": 13124,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import errno",
+      "import socket",
+      "from abc import abstractmethod",
+      "from collections.abc import Callable, Collection, Mapping",
+      "from contextlib import AsyncExitStack",
+      "from io import IOBase",
+      "from ipaddress import IPv4Address, IPv6Address",
+      "from socket import AddressFamily",
+      "from typing import Any, TypeAlias, TypeVar"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import errno",
+      "import socket",
+      "from abc import abstractmethod",
+      "from collections.abc import Callable, Collection, Mapping",
+      "from contextlib import AsyncExitStack",
+      "from io import IOBase",
+      "from ipaddress import IPv4Address, IPv6Address",
+      "from socket import AddressFamily",
+      "from typing import Any, TypeAlias, TypeVar",
+      "from .._core._eventloop import get_async_backend",
+      "from .._core._typedattr import (",
+      "from ._streams import ByteStream, Listener, UnreliableObjectStream",
+      "from ._tasks import TaskGroup",
+      "from .._core._sockets import convert_ipv6_sockaddr as convert"
+    ],
+    "classes": [
+      "SocketAttribute",
+      "_SocketProvider",
+      "SocketStream",
+      "UNIXSocketStream",
+      "SocketListener",
+      "UDPSocket",
+      "ConnectedUDPSocket",
+      "UNIXDatagramSocket",
+      "ConnectedUNIXDatagramSocket"
+    ],
+    "functions": [
+      "_validate_socket"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_065_3a6543adf7a656f1__sockets.py.json"
+}

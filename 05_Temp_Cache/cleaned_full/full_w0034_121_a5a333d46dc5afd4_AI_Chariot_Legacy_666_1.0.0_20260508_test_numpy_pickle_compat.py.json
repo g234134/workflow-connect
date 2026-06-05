@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 121,
+  "generated_at": "2026-05-08T18:46:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_pickle_compat.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_pickle_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 609,
+  "content_sha256": "a5a333d46dc5afd48776316629c1b579ce81e61fd2f9713a591b5f1e65fdaf9d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 13,
+    "char_count": 609,
+    "preview_lines": [
+      "\"\"\"Test the old numpy pickler, compatibility version.\"\"\"",
+      "# numpy_pickle is not a drop-in replacement of pickle, as it takes",
+      "# filenames instead of open files as arguments.",
+      "from joblib import numpy_pickle_compat",
+      "def test_z_file(tmpdir):",
+      "    # Test saving and loading data with Zfiles.",
+      "    filename = tmpdir.join(\"test.pkl\").strpath",
+      "    data = numpy_pickle_compat.asbytes(\"Foo, \\n Bar, baz, \\n\\nfoobar\")",
+      "    with open(filename, \"wb\") as f:",
+      "        numpy_pickle_compat.write_zfile(f, data)"
+    ],
+    "imports": [
+      "from joblib import numpy_pickle_compat"
+    ],
+    "classes": [],
+    "functions": [
+      "test_z_file"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_121_a5a333d46dc5afd4_AI_Chariot_Legacy_666_1.0.0_20260508_test_numpy_pickle_compat.py.json"
+}

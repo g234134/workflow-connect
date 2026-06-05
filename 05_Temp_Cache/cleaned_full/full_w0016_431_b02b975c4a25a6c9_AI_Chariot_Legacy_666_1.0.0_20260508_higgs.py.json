@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 431,
+  "generated_at": "2026-05-08T18:45:20+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_higgs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_higgs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 30612,
+  "content_sha256": "b02b975c4a25a6c91000cab6e9c7deb7c8e2bc3d31a38ada6ee9c6bb1ee35435",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 632,
+    "non_empty_lines": 589,
+    "char_count": 30612,
+    "preview_lines": [
+      "# Copyright 2024 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from math import sqrt",
+      "from ..quantizers.quantizers_utils import should_convert_module",
+      "from ..utils import is_flute_available, is_hadamard_available, is_torch_available, logging",
+      "import torch",
+      "import torch.nn as nn",
+      "from flute.integrations.higgs import prepare_data_transposed",
+      "from flute.tune import TuneMetaData, qgemm_v2",
+      "from fast_hadamard_transform import hadamard_transform"
+    ],
+    "classes": [
+      "HiggsLinear"
+    ],
+    "functions": [
+      "pad_to_block",
+      "get_higgs_grid",
+      "quantize_with_higgs",
+      "replace_with_higgs_linear",
+      "dequantize_higgs"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_431_b02b975c4a25a6c9_AI_Chariot_Legacy_666_1.0.0_20260508_higgs.py.json"
+}

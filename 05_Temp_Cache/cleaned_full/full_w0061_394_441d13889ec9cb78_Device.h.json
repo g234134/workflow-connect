@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 394,
+  "generated_at": "2026-05-08T18:48:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\Device.h",
+  "name": "Device.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 504,
+  "content_sha256": "441d13889ec9cb78a395a9fa029f7e6bfd1b959efdabd45e5a3df42901d5a204",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 14,
+    "char_count": 504,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/python_headers.h>",
+      "#include <ATen/Device.h>",
+      "// NOLINTNEXTLINE(cppcoreguidelines-pro-type-member-init)",
+      "struct TORCH_API THPDevice {",
+      "  PyObject_HEAD at::Device device;",
+      "};",
+      "TORCH_API extern PyTypeObject THPDeviceType;",
+      "inline bool THPDevice_Check(PyObject* obj) {"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_394_441d13889ec9cb78_Device.h.json"
+}

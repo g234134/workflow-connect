@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 211,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__normalization.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__normalization.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5798,
+  "content_sha256": "d47d185dd0ae56451c357db342a0f2a9afb87960bc548e6f5a3186b1b8fb9fc2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 180,
+    "non_empty_lines": 152,
+    "char_count": 5798,
+    "preview_lines": [
+      "\"\"\"",
+      "Helpers for normalization as expected in wheel/sdist/module file names",
+      "and core metadata",
+      "\"\"\"",
+      "import re",
+      "from typing import TYPE_CHECKING",
+      "import packaging",
+      "# https://packaging.python.org/en/latest/specifications/core-metadata/#name",
+      "_VALID_NAME = re.compile(r\"^([A-Z0-9]|[A-Z0-9][A-Z0-9._-]*[A-Z0-9])$\", re.IGNORECASE)",
+      "_UNSAFE_NAME_CHARS = re.compile(r\"[^A-Z0-9._-]+\", re.IGNORECASE)"
+    ],
+    "imports": [
+      "import re",
+      "from typing import TYPE_CHECKING",
+      "import packaging",
+      "from packaging.licenses import ("
+    ],
+    "classes": [],
+    "functions": [
+      "safe_identifier",
+      "safe_name",
+      "safe_version",
+      "best_effort_version",
+      "safe_extra",
+      "filename_component",
+      "filename_component_broken",
+      "safer_name",
+      "safer_best_effort_version",
+      "_missing_canonicalize_license_expression"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_211_d47d185dd0ae5645_AI_Chariot_Legacy_666_1.0.0_20260508__normalization.py.json"
+}

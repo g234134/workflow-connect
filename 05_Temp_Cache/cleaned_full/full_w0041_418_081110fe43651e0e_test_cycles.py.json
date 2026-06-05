@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 418,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tests\\test_cycles.py",
+  "name": "test_cycles.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 34851,
+  "content_sha256": "081110fe43651e0e4f1dbf6f28c4bda2dfa5a94bafb3f70081a3ed9c4427efa8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 984,
+    "non_empty_lines": 830,
+    "char_count": 34851,
+    "preview_lines": [
+      "import random",
+      "from itertools import chain, islice, tee",
+      "from math import inf",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.traversal.edgedfs import FORWARD, REVERSE",
+      "def check_independent(basis):",
+      "    if len(basis) == 0:",
+      "        return",
+      "    np = pytest.importorskip(\"numpy\")"
+    ],
+    "imports": [
+      "import random",
+      "from itertools import chain, islice, tee",
+      "from math import inf",
+      "import pytest",
+      "import networkx as nx",
+      "from networkx.algorithms.traversal.edgedfs import FORWARD, REVERSE"
+    ],
+    "classes": [
+      "TestCycles",
+      "TestCycleEnumeration",
+      "TestFindCycle",
+      "TestMinimumCycleBasis",
+      "TestGirth"
+    ],
+    "functions": [
+      "check_independent",
+      "pairwise",
+      "cycle_edges",
+      "directed_cycle_edgeset",
+      "undirected_cycle_edgeset",
+      "multigraph_cycle_edgeset",
+      "assert_basis_equal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_418_081110fe43651e0e_test_cycles.py.json"
+}

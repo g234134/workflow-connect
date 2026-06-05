@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 202,
+  "generated_at": "2026-05-08T18:46:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_explain.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_explain.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5586,
+  "content_sha256": "aa943b82a7863451ed4c289038b7a6181925980badfce83874a020fa334eece5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 145,
+    "non_empty_lines": 128,
+    "char_count": 5586,
+    "preview_lines": [
+      "import re",
+      "import string",
+      "import hypothesis",
+      "import hypothesis.strategies",
+      "import pytest",
+      "import spacy",
+      "from spacy.tokenizer import Tokenizer",
+      "from spacy.util import get_lang_class",
+      "# Only include languages with no external dependencies",
+      "# \"is\" seems to confuse importlib, so we're also excluding it for now"
+    ],
+    "imports": [
+      "import re",
+      "import string",
+      "import hypothesis",
+      "import hypothesis.strategies",
+      "import pytest",
+      "import spacy",
+      "from spacy.tokenizer import Tokenizer",
+      "from spacy.util import get_lang_class"
+    ],
+    "classes": [],
+    "functions": [
+      "test_tokenizer_explain",
+      "test_tokenizer_explain_special_matcher",
+      "test_tokenizer_explain_special_matcher_whitespace",
+      "sentence_strategy",
+      "test_tokenizer_explain_fuzzy"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_202_aa943b82a7863451_AI_Chariot_Legacy_666_1.0.0_20260508_test_explain.py.json"
+}

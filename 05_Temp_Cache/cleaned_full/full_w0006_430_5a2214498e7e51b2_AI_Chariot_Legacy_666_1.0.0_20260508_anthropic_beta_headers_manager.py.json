@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 430,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_beta_headers_manager.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_beta_headers_manager.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6356,
+  "content_sha256": "5a2214498e7e51b2dd32b29eb8eb2d289120d44c244cb0218f7032b72c38bfb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 221,
+    "non_empty_lines": 170,
+    "char_count": 6356,
+    "preview_lines": [
+      "\"\"\"",
+      "Centralized manager for Anthropic beta headers across different providers.",
+      "This module provides utilities to:",
+      "1. Load beta header configuration from JSON (lists unsupported headers per provider)",
+      "2. Filter out unsupported beta headers",
+      "3. Handle provider-specific header name mappings (e.g., advanced-tool-use -> tool-search-tool)",
+      "Design:",
+      "- JSON config lists UNSUPPORTED headers for each provider",
+      "- Headers not in the unsupported list are passed through",
+      "- Header mappings allow renaming headers for specific providers"
+    ],
+    "imports": [
+      "import json",
+      "import os",
+      "from typing import Dict, List, Optional, Set",
+      "from litellm.litellm_core_utils.litellm_logging import verbose_logger"
+    ],
+    "classes": [],
+    "functions": [
+      "_load_beta_headers_config",
+      "get_provider_name",
+      "filter_and_transform_beta_headers",
+      "is_beta_header_supported",
+      "get_provider_beta_header",
+      "update_headers_with_filtered_beta",
+      "get_unsupported_headers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_430_5a2214498e7e51b2_AI_Chariot_Legacy_666_1.0.0_20260508_anthropic_beta_headers_manager.py.json"
+}

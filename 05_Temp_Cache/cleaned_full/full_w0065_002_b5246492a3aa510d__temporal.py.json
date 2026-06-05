@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 2,
+  "generated_at": "2026-05-08T18:48:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\functional\\_temporal.py",
+  "name": "_temporal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1163,
+  "content_sha256": "b5246492a3aa510d105e310d17cd85d7a125d7e274203a052881feb2cfdca42e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 18,
+    "char_count": 1163,
+    "preview_lines": [
+      "import torch",
+      "from torchvision import tv_tensors",
+      "from torchvision.utils import _log_api_usage_once",
+      "from ._utils import _get_kernel, _register_kernel_internal",
+      "def uniform_temporal_subsample(inpt: torch.Tensor, num_samples: int) -> torch.Tensor:",
+      "    \"\"\"See :class:`~torchvision.transforms.v2.UniformTemporalSubsample` for details.\"\"\"",
+      "    if torch.jit.is_scripting():",
+      "        return uniform_temporal_subsample_video(inpt, num_samples=num_samples)",
+      "    _log_api_usage_once(uniform_temporal_subsample)",
+      "    kernel = _get_kernel(uniform_temporal_subsample, type(inpt))"
+    ],
+    "imports": [
+      "import torch",
+      "from torchvision import tv_tensors",
+      "from torchvision.utils import _log_api_usage_once",
+      "from ._utils import _get_kernel, _register_kernel_internal"
+    ],
+    "classes": [],
+    "functions": [
+      "uniform_temporal_subsample",
+      "uniform_temporal_subsample_video"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_002_b5246492a3aa510d__temporal.py.json"
+}

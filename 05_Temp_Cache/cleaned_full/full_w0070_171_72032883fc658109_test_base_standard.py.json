@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 171,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\integration_tests\\chat_models\\test_base_standard.py",
+  "name": "test_base_standard.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3675,
+  "content_sha256": "72032883fc6581099ba21e5af6f1321b66cf07a5a60f6b70e8e22893498c68cb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 121,
+    "non_empty_lines": 96,
+    "char_count": 3672,
+    "preview_lines": [
+      "\"\"\"Standard LangChain interface tests\"\"\"",
+      "from pathlib import Path",
+      "from typing import Literal, cast",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_openai import ChatOpenAI",
+      "REPO_ROOT_DIR = Path(__file__).parents[6]",
+      "class TestOpenAIStandard(ChatModelIntegrationTests):"
+    ],
+    "imports": [
+      "from pathlib import Path",
+      "from typing import Literal, cast",
+      "import pytest",
+      "from langchain_core.language_models import BaseChatModel",
+      "from langchain_core.messages import AIMessage",
+      "from langchain_tests.integration_tests import ChatModelIntegrationTests",
+      "from langchain_openai import ChatOpenAI"
+    ],
+    "classes": [
+      "TestOpenAIStandard"
+    ],
+    "functions": [
+      "_invoke",
+      "test_audio_model"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_171_72032883fc658109_test_base_standard.py.json"
+}

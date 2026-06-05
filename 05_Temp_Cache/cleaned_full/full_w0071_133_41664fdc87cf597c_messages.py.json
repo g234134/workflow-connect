@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:49:11+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\langgraph\\tests\\messages.py",
+  "name": "messages.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1516,
+  "content_sha256": "41664fdc87cf597ccaacdb1d262807f91efe9e48fa267bce15ac477324b9288a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 50,
+    "non_empty_lines": 36,
+    "char_count": 1513,
+    "preview_lines": [
+      "\"\"\"Redefined messages as a work-around for pydantic issue with AnyStr.",
+      "The code below creates version of pydantic models",
+      "that will work in unit tests with AnyStr as id field",
+      "Please note that the `id` field is assigned AFTER the model is created",
+      "to workaround an issue with pydantic ignoring the __eq__ method on",
+      "subclassed strings.",
+      "\"\"\"",
+      "from typing import Any",
+      "from langchain_core.documents import Document",
+      "from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage, ToolMessage"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.documents import Document",
+      "from langchain_core.messages import AIMessage, AIMessageChunk, HumanMessage, ToolMessage",
+      "from tests.any_str import AnyStr"
+    ],
+    "classes": [],
+    "functions": [
+      "_AnyIdDocument",
+      "_AnyIdAIMessage",
+      "_AnyIdAIMessageChunk",
+      "_AnyIdHumanMessage",
+      "_AnyIdToolMessage"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_133_41664fdc87cf597c_messages.py.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 349,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\mps\\MPSGraphVenturaOps.h",
+  "name": "MPSGraphVenturaOps.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 9666,
+  "content_sha256": "ec919945a7f18e88f4105256ad5df9430fd1afd2fad00a3cac8e896c56b39c49",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 144,
+    "non_empty_lines": 120,
+    "char_count": 9666,
+    "preview_lines": [
+      "#pragma once",
+      "#include <MetalPerformanceShadersGraph/MetalPerformanceShadersGraph.h>",
+      "// TODO: Remove me when moved to MacOS 13",
+      "@interface MPSGraph (VenturaOps)",
+      "#if !defined(__MAC_13_0) && \\",
+      "    (!defined(MAC_OS_X_VERSION_13_0) || (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_13_0))",
+      "typedef NS_ENUM(NSUInteger, MPSGraphResizeNearestRoundingMode)",
+      "{",
+      "    MPSGraphResizeNearestRoundingModeRoundPreferCeil   =  0L,",
+      "    MPSGraphResizeNearestRoundingModeRoundPreferFloor  =  1L,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_349_ec919945a7f18e88_MPSGraphVenturaOps.h.json"
+}

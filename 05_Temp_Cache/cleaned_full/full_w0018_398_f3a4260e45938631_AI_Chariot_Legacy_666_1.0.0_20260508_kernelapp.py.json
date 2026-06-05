@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 398,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_kernelapp.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_kernelapp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 29071,
+  "content_sha256": "f3a4260e45938631cc098cbd102170a93eac177a2ca1d8e08bd847c0830d36e2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 755,
+    "non_empty_lines": 647,
+    "char_count": 29071,
+    "preview_lines": [
+      "\"\"\"An Application for launching a kernel\"\"\"",
+      "# Copyright (c) IPython Development Team.",
+      "# Distributed under the terms of the Modified BSD License.",
+      "from __future__ import annotations",
+      "import atexit",
+      "import errno",
+      "import logging",
+      "import os",
+      "import signal",
+      "import sys"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import atexit",
+      "import errno",
+      "import logging",
+      "import os",
+      "import signal",
+      "import sys",
+      "import traceback",
+      "import typing as t",
+      "from functools import partial",
+      "from io import FileIO, TextIOWrapper",
+      "from logging import StreamHandler",
+      "from pathlib import Path",
+      "import zmq",
+      "from IPython.core.application import (  # type:ignore[attr-defined]",
+      "from IPython.core.profiledir import ProfileDir",
+      "from IPython.core.shellapp import InteractiveShellApp, shell_aliases, shell_flags",
+      "from jupyter_client.connect import ConnectionFileMixin",
+      "from jupyter_client.session import Session, session_aliases, session_flags",
+      "from jupyter_core.paths import jupyter_runtime_dir"
+    ],
+    "classes": [
+      "IPKernelApp"
+    ],
+    "functions": [
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_398_f3a4260e45938631_AI_Chariot_Legacy_666_1.0.0_20260508_kernelapp.py.json"
+}

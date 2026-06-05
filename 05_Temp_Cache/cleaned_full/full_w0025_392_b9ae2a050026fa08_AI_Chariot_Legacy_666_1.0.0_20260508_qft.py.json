@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 392,
+  "generated_at": "2026-05-08T18:45:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_qft.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_qft.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6425,
+  "content_sha256": "b9ae2a050026fa08bddb79514713a001e6d3b130a847dde9cfc6473d705d72eb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 215,
+    "non_empty_lines": 172,
+    "char_count": 6425,
+    "preview_lines": [
+      "\"\"\"An implementation of qubits and gates acting on them.",
+      "Todo:",
+      "* Update docstrings.",
+      "* Update tests.",
+      "* Implement apply using decompose.",
+      "* Implement represent using decompose or something smarter. For this to",
+      "  work we first have to implement represent for SWAP.",
+      "* Decide if we want upper index to be inclusive in the constructor.",
+      "* Fix the printing of Rk gates in plotting.",
+      "\"\"\""
+    ],
+    "imports": [
+      "from sympy.core.expr import Expr",
+      "from sympy.core.numbers import (I, Integer, pi)",
+      "from sympy.core.symbol import Symbol",
+      "from sympy.functions.elementary.exponential import exp",
+      "from sympy.matrices.dense import Matrix",
+      "from sympy.functions import sqrt",
+      "from sympy.physics.quantum.qapply import qapply",
+      "from sympy.physics.quantum.qexpr import QuantumError, QExpr",
+      "from sympy.matrices import eye",
+      "from sympy.physics.quantum.tensorproduct import matrix_tensor_product",
+      "from sympy.physics.quantum.gate import (",
+      "from sympy.functions.elementary.complexes import sign"
+    ],
+    "classes": [
+      "RkGate",
+      "Fourier",
+      "QFT",
+      "IQFT"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_392_b9ae2a050026fa08_AI_Chariot_Legacy_666_1.0.0_20260508_qft.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 62,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tool_call_cost_tracking.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tool_call_cost_tracking.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26708,
+  "content_sha256": "68ac5651acfca7d52a31b758209d6336b098fa2de0ddc5eb855f44498041157b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 718,
+    "non_empty_lines": 625,
+    "char_count": 26708,
+    "preview_lines": [
+      "\"\"\"",
+      "Helper utilities for tracking the cost of built-in tools.",
+      "\"\"\"",
+      "from typing import Any, Dict, List, Literal, Optional, Tuple",
+      "import litellm",
+      "from litellm.constants import OPENAI_FILE_SEARCH_COST_PER_1K_CALLS",
+      "from litellm.types.llms.openai import (",
+      "    FileSearchTool,",
+      "    ResponsesAPIResponse,",
+      "    WebSearchOptions,"
+    ],
+    "imports": [
+      "from typing import Any, Dict, List, Literal, Optional, Tuple",
+      "import litellm",
+      "from litellm.constants import OPENAI_FILE_SEARCH_COST_PER_1K_CALLS",
+      "from litellm.types.llms.openai import (",
+      "from litellm.types.utils import (",
+      "from litellm.llms import get_cost_for_web_search_request"
+    ],
+    "classes": [
+      "StandardBuiltInToolCostTracking"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_062_68ac5651acfca7d5_AI_Chariot_Legacy_666_1.0.0_20260508_tool_call_cost_tracking.py.json"
+}

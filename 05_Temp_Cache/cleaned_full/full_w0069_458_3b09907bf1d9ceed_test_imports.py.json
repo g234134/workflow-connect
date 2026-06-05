@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 458,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\tests\\unit_tests\\test_imports.py",
+  "name": "test_imports.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2164,
+  "content_sha256": "3b09907bf1d9ceedbf13b70d6c1e3aa8c0d5aa782fc5e07031329af76286698b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 56,
+    "non_empty_lines": 46,
+    "char_count": 2161,
+    "preview_lines": [
+      "import importlib",
+      "import warnings",
+      "from pathlib import Path",
+      "# Attempt to recursively import all modules in langchain",
+      "PKG_ROOT = Path(__file__).parent.parent.parent",
+      "def test_import_all() -> None:",
+      "    \"\"\"Generate the public API for this package.\"\"\"",
+      "    with warnings.catch_warnings():",
+      "        warnings.filterwarnings(action=\"ignore\", category=UserWarning)",
+      "        library_code = PKG_ROOT / \"langchain\""
+    ],
+    "imports": [
+      "import importlib",
+      "import warnings",
+      "from pathlib import Path"
+    ],
+    "classes": [],
+    "functions": [
+      "test_import_all",
+      "test_import_all_using_dir"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_458_3b09907bf1d9ceed_test_imports.py.json"
+}

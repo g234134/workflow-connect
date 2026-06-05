@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 17,
+  "idx_in_wave": 400,
+  "generated_at": "2026-05-08T18:45:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_in_flight_requests_middleware.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_in_flight_requests_middleware.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3165,
+  "content_sha256": "fd1082c92dd844837dacfa02cf64546a73d3180c82d2874e85866827b29ce361",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 68,
+    "char_count": 3161,
+    "preview_lines": [
+      "\"\"\"",
+      "Tracks the number of HTTP requests currently in-flight on this uvicorn worker.",
+      "Used by /health/backlog to expose per-pod queue depth, and emitted as the",
+      "Prometheus gauge `litellm_in_flight_requests`.",
+      "\"\"\"",
+      "import os",
+      "from typing import Any, Optional",
+      "from starlette.types import ASGIApp, Receive, Scope, Send",
+      "class InFlightRequestsMiddleware:",
+      "    \"\"\""
+    ],
+    "imports": [
+      "import os",
+      "from typing import Any, Optional",
+      "from starlette.types import ASGIApp, Receive, Scope, Send",
+      "from prometheus_client import Gauge"
+    ],
+    "classes": [
+      "InFlightRequestsMiddleware"
+    ],
+    "functions": [
+      "get_in_flight_requests"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0017_400_fd1082c92dd84483_AI_Chariot_Legacy_666_1.0.0_20260508_in_flight_requests_middleware.py.json"
+}

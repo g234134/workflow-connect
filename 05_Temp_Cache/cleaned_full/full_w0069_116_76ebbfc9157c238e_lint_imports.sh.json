@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 116,
+  "generated_at": "2026-05-08T18:49:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\scripts\\lint_imports.sh",
+  "name": "lint_imports.sh",
+  "extension": ".sh",
+  "original_type": "shell",
+  "size_bytes": 3035,
+  "content_sha256": "76ebbfc9157c238e9ca7158e3c57a9e2d42415d16a455b069e62d2b1878891de",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 38,
+    "non_empty_lines": 33,
+    "char_count": 3035,
+    "preview_lines": [
+      "#!/bin/bash",
+      "set -eu",
+      "# Initialize a variable to keep track of errors",
+      "errors=0",
+      "# Check the conditions",
+      "git grep '^from langchain import' langchain_classic | grep -vE 'from langchain import (__version__|hub)' && errors=$((errors+1))",
+      "git grep '^from langchain\\.' langchain_classic/load | grep -vE 'from langchain.(load|_api)' && errors=$((errors+1))",
+      "git grep '^from langchain\\.' langchain_classic/utils | grep -vE 'from langchain.(utils|_api)' && errors=$((errors+1))",
+      "git grep '^from langchain\\.' langchain_classic/schema | grep -vE 'from langchain.(utils|schema|load|env|_api)' && errors=$((errors+1))",
+      "git grep '^from langchain\\.' langchain_classic/adapters | grep -vE 'from langchain.(utils|schema|load|_api)' && errors=$((errors+1))"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_116_76ebbfc9157c238e_lint_imports.sh.json"
+}

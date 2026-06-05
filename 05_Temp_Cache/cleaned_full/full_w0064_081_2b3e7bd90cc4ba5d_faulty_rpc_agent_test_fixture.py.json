@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 81,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\testing\\_internal\\distributed\\rpc\\faulty_rpc_agent_test_fixture.py",
+  "name": "faulty_rpc_agent_test_fixture.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2255,
+  "content_sha256": "2b3e7bd90cc4ba5d8ffc2a9dd4702781aa011c2c865093c58f9d7f806be85c05",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 60,
+    "non_empty_lines": 52,
+    "char_count": 2255,
+    "preview_lines": [
+      "import torch.distributed.rpc as rpc",
+      "import torch.distributed.rpc._testing  # noqa: F401",
+      "from torch.testing._internal.distributed.rpc.rpc_agent_test_fixture import (",
+      "    RpcAgentTestFixture,",
+      ")",
+      "# The following message types are currently retried in the RREF protocol and",
+      "# distributed autograd. Thus only these messages should be tested with the",
+      "# Faulty RPC Agent.",
+      "retryable_message_types = [\"RREF_FORK_REQUEST\",",
+      "                           \"RREF_CHILD_ACCEPT\","
+    ],
+    "imports": [
+      "import torch.distributed.rpc as rpc",
+      "import torch.distributed.rpc._testing  # noqa: F401",
+      "from torch.testing._internal.distributed.rpc.rpc_agent_test_fixture import ("
+    ],
+    "classes": [
+      "FaultyRpcAgentTestFixture"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_081_2b3e7bd90cc4ba5d_faulty_rpc_agent_test_fixture.py.json"
+}

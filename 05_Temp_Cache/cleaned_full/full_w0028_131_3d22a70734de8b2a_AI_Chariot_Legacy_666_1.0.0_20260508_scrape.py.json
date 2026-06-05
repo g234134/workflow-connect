@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 131,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scrape.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scrape.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8325,
+  "content_sha256": "3d22a70734de8b2a824d45580816430bca27437f46567c69074116c2fed006cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 284,
+    "non_empty_lines": 219,
+    "char_count": 8325,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "import re",
+      "import sys",
+      "import pypandoc",
+      "from aider import __version__, urls, utils",
+      "from aider.dump import dump  # noqa: F401",
+      "aider_user_agent = f\"Aider/{__version__} +{urls.website}\"",
+      "# Playwright is nice because it has a simple way to install dependencies on most",
+      "# platforms.",
+      "def check_env():"
+    ],
+    "imports": [
+      "import re",
+      "import sys",
+      "import pypandoc",
+      "from aider import __version__, urls, utils",
+      "from aider.dump import dump  # noqa: F401",
+      "from playwright.sync_api import sync_playwright",
+      "import playwright  # noqa: F401",
+      "from playwright.sync_api import Error as PlaywrightError",
+      "from playwright.sync_api import TimeoutError as PlaywrightTimeoutError",
+      "from playwright.sync_api import sync_playwright",
+      "import httpx"
+    ],
+    "classes": [
+      "Scraper"
+    ],
+    "functions": [
+      "check_env",
+      "has_playwright",
+      "install_playwright",
+      "slimdown_html",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_131_3d22a70734de8b2a_AI_Chariot_Legacy_666_1.0.0_20260508_scrape.py.json"
+}

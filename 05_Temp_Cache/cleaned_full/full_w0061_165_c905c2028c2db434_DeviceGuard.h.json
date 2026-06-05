@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 61,
+  "idx_in_wave": 165,
+  "generated_at": "2026-05-08T18:48:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\c10\\core\\DeviceGuard.h",
+  "name": "DeviceGuard.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 7749,
+  "content_sha256": "c905c2028c2db434d16033ce45c1a969afc335efb1540e0cbfc08a9bf35f413c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 195,
+    "non_empty_lines": 169,
+    "char_count": 7749,
+    "preview_lines": [
+      "#pragma once",
+      "#include <c10/core/impl/InlineDeviceGuard.h>",
+      "namespace c10 {",
+      "/// RAII guard that sets a certain default device in its constructor, and",
+      "/// changes it back to the device that was originally active upon destruction.",
+      "///",
+      "/// The device is always reset to the one that was active at the time of",
+      "/// construction of the guard. Even if you `set_device` after construction, the",
+      "/// destructor will still reset the device to the one that was active at",
+      "/// construction time."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0061_165_c905c2028c2db434_DeviceGuard.h.json"
+}

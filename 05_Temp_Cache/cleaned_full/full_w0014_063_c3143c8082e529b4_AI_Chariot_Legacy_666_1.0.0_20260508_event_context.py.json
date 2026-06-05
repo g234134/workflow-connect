@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 63,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_event_context.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_event_context.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11227,
+  "content_sha256": "c3143c8082e529b4369624189aeaeb0f3837e54e7cb49fb1d0a18fe80f444472",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 339,
+    "non_empty_lines": 275,
+    "char_count": 11227,
+    "preview_lines": [
+      "\"\"\"Event context management for parent-child relationship tracking.\"\"\"",
+      "from collections.abc import Generator",
+      "from contextlib import contextmanager",
+      "import contextvars",
+      "from dataclasses import dataclass",
+      "from enum import Enum",
+      "from crewai.events.utils.console_formatter import ConsoleFormatter",
+      "class MismatchBehavior(Enum):",
+      "    \"\"\"Behavior when event pairs don't match.\"\"\"",
+      "    WARN = \"warn\""
+    ],
+    "imports": [
+      "from collections.abc import Generator",
+      "from contextlib import contextmanager",
+      "import contextvars",
+      "from dataclasses import dataclass",
+      "from enum import Enum",
+      "from crewai.events.utils.console_formatter import ConsoleFormatter"
+    ],
+    "classes": [
+      "MismatchBehavior",
+      "EventContextConfig",
+      "StackDepthExceededError",
+      "EventPairingError",
+      "EmptyStackError"
+    ],
+    "functions": [
+      "get_current_parent_id",
+      "get_enclosing_parent_id",
+      "get_last_event_id",
+      "reset_last_event_id",
+      "set_last_event_id",
+      "get_triggering_event_id",
+      "set_triggering_event_id",
+      "triggered_by_scope",
+      "restore_event_scope",
+      "push_event_scope",
+      "pop_event_scope",
+      "handle_empty_pop",
+      "handle_mismatch",
+      "event_scope"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_063_c3143c8082e529b4_AI_Chariot_Legacy_666_1.0.0_20260508_event_context.py.json"
+}

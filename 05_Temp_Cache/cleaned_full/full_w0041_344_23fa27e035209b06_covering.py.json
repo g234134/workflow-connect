@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 344,
+  "generated_at": "2026-05-08T18:47:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\algorithms\\covering.py",
+  "name": "covering.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5278,
+  "content_sha256": "23fa27e035209b06ed6e8faa941ab861684eb0d8ee48709f54664d00bf9279fb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 120,
+    "char_count": 5278,
+    "preview_lines": [
+      "\"\"\"Functions related to graph covers.\"\"\"",
+      "from functools import partial",
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import arbitrary_element, not_implemented_for",
+      "__all__ = [\"min_edge_cover\", \"is_edge_cover\"]",
+      "@not_implemented_for(\"directed\")",
+      "@not_implemented_for(\"multigraph\")",
+      "@nx._dispatchable",
+      "def min_edge_cover(G, matching_algorithm=None):"
+    ],
+    "imports": [
+      "from functools import partial",
+      "from itertools import chain",
+      "import networkx as nx",
+      "from networkx.utils import arbitrary_element, not_implemented_for"
+    ],
+    "classes": [],
+    "functions": [
+      "min_edge_cover",
+      "is_edge_cover"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_344_23fa27e035209b06_covering.py.json"
+}

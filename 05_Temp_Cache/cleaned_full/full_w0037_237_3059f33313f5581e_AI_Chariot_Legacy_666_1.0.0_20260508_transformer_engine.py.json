@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 237,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_transformer_engine.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_transformer_engine.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7537,
+  "content_sha256": "3059f33313f5581ed472ee7aa97b6724f848efcf73c68206e9d3a6cd0bb722ba",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 186,
+    "non_empty_lines": 146,
+    "char_count": 7537,
+    "preview_lines": [
+      "# Copyright 2022 The HuggingFace Team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from types import MethodType",
+      "import torch.nn as nn",
+      "from .imports import is_hpu_available, is_transformer_engine_available",
+      "from .operations import GatheredParameters",
+      "import intel_transformer_engine as te",
+      "import transformer_engine.pytorch as te",
+      "import intel_transformer_engine as te",
+      "import transformer_engine.pytorch as te",
+      "from intel_transformer_engine import fp8_autocast",
+      "from transformer_engine.pytorch import fp8_autocast",
+      "import intel_transformer_engine.recipe as te_recipe",
+      "import transformer_engine.common.recipe as te_recipe",
+      "from transformer_engine.pytorch.fp8 import check_mxfp8_support"
+    ],
+    "classes": [],
+    "functions": [
+      "convert_model",
+      "has_transformer_engine_layers",
+      "contextual_fp8_autocast",
+      "apply_fp8_autowrap"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_237_3059f33313f5581e_AI_Chariot_Legacy_666_1.0.0_20260508_transformer_engine.py.json"
+}

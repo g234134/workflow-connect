@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 253,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testDynamic.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testDynamic.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2774,
+  "content_sha256": "ab22a01569aaaef0dc50335c12badf56f2f8772d473b63c3bcd2e05b5f6e38b1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 84,
+    "non_empty_lines": 66,
+    "char_count": 2774,
+    "preview_lines": [
+      "# Test dynamic policy, and running object table.",
+      "import pythoncom",
+      "import pywintypes",
+      "import winerror",
+      "from win32com.server.exception import COMException",
+      "iid = pywintypes.IID(\"{b48969a0-784b-11d0-ae71-d23f56000000}\")",
+      "class VeryPermissive:",
+      "    def _dynamic_(self, name, lcid, wFlags, args):",
+      "        if wFlags & pythoncom.DISPATCH_METHOD:",
+      "            return getattr(self, name)(*args)"
+    ],
+    "imports": [
+      "import pythoncom",
+      "import pywintypes",
+      "import winerror",
+      "from win32com.server.exception import COMException",
+      "import win32com.server.policy",
+      "import win32com.server.util",
+      "import win32com.client.dynamic"
+    ],
+    "classes": [
+      "VeryPermissive"
+    ],
+    "functions": [
+      "Test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_253_ab22a01569aaaef0_AI_Chariot_Legacy_666_1.0.0_20260508_testDynamic.py.json"
+}

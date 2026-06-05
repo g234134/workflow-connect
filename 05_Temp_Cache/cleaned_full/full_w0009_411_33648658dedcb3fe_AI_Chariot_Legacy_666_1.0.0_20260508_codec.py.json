@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 411,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_codec.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_codec.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3438,
+  "content_sha256": "33648658dedcb3fe81df6426293c9337ac50199798420436c225f7fc347a9681",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 122,
+    "non_empty_lines": 92,
+    "char_count": 3438,
+    "preview_lines": [
+      "import codecs",
+      "import re",
+      "from typing import Any, Optional, Tuple",
+      "from .core import IDNAError, alabel, decode, encode, ulabel",
+      "_unicode_dots_re = re.compile(\"[\\u002e\\u3002\\uff0e\\uff61]\")",
+      "class Codec(codecs.Codec):",
+      "    def encode(self, data: str, errors: str = \"strict\") -> Tuple[bytes, int]:",
+      "        if errors != \"strict\":",
+      "            raise IDNAError('Unsupported error handling \"{}\"'.format(errors))",
+      "        if not data:"
+    ],
+    "imports": [
+      "import codecs",
+      "import re",
+      "from typing import Any, Optional, Tuple",
+      "from .core import IDNAError, alabel, decode, encode, ulabel"
+    ],
+    "classes": [
+      "Codec",
+      "IncrementalEncoder",
+      "IncrementalDecoder",
+      "StreamWriter",
+      "StreamReader"
+    ],
+    "functions": [
+      "search_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_411_33648658dedcb3fe_AI_Chariot_Legacy_666_1.0.0_20260508_codec.py.json"
+}

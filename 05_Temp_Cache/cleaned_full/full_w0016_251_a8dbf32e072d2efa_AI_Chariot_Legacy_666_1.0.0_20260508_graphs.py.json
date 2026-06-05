@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 251,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_graphs.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_graphs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22687,
+  "content_sha256": "a8dbf32e072d2efa5d85d8c84ae518c0fe774ccdcf4e0495b888594ea73fcf37",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 491,
+    "non_empty_lines": 403,
+    "char_count": 22687,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import gc",
+      "import typing",
+      "import torch",
+      "from .._utils import _dummy_type",
+      "if not hasattr(torch._C, \"_CudaStreamBase\"):",
+      "    # Define dummy base classes",
+      "    torch._C.__dict__[\"_CUDAGraph\"] = _dummy_type(\"_CUDAGraph\")",
+      "    torch._C.__dict__[\"_graph_pool_handle\"] = _dummy_type(\"_graph_pool_handle\")",
+      "    torch._C.__dict__[\"_cuda_isCurrentStreamCapturing\"] = _dummy_type("
+    ],
+    "imports": [
+      "import gc",
+      "import typing",
+      "import torch",
+      "from .._utils import _dummy_type",
+      "from torch._C import (  # noqa: F401"
+    ],
+    "classes": [
+      "CUDAGraph",
+      "graph"
+    ],
+    "functions": [
+      "is_current_stream_capturing",
+      "graph_pool_handle",
+      "make_graphed_callables"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_251_a8dbf32e072d2efa_AI_Chariot_Legacy_666_1.0.0_20260508_graphs.py.json"
+}

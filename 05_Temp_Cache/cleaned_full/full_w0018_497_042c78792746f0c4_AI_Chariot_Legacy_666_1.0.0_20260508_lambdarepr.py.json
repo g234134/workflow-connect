@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 497,
+  "generated_at": "2026-05-08T18:45:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_lambdarepr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_lambdarepr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8305,
+  "content_sha256": "042c78792746f0c43c652515d655847770b36d9e0888c89df934f13e857a1475",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 251,
+    "non_empty_lines": 212,
+    "char_count": 8305,
+    "preview_lines": [
+      "from .pycode import (",
+      "    PythonCodePrinter,",
+      "    MpmathPrinter,",
+      ")",
+      "from .numpy import NumPyPrinter  # NumPyPrinter is imported for backward compatibility",
+      "from sympy.core.sorting import default_sort_key",
+      "__all__ = [",
+      "    'PythonCodePrinter',",
+      "    'MpmathPrinter',  # MpmathPrinter is published for backward compatibility",
+      "    'NumPyPrinter',"
+    ],
+    "imports": [
+      "from .pycode import (",
+      "from .numpy import NumPyPrinter  # NumPyPrinter is imported for backward compatibility",
+      "from sympy.core.sorting import default_sort_key",
+      "from sympy.functions.elementary.piecewise import Piecewise"
+    ],
+    "classes": [
+      "LambdaPrinter",
+      "NumExprPrinter",
+      "IntervalPrinter"
+    ],
+    "functions": [
+      "lambdarepr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_497_042c78792746f0c4_AI_Chariot_Legacy_666_1.0.0_20260508_lambdarepr.py.json"
+}

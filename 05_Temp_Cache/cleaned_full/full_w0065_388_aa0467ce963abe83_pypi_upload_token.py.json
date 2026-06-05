@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\secrets_plugins\\pypi_upload_token.py",
+  "name": "pypi_upload_token.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 440,
+  "content_sha256": "aa0467ce963abe83e20eecedb0852e6b1bba9845b27140cbab00bcd404ceeec5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 13,
+    "char_count": 440,
+    "preview_lines": [
+      "\"\"\"",
+      "This plugin searches for PyPI Upload Tokens.",
+      "\"\"\"",
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector",
+      "class PyPiUploadTokenDetector(RegexBasedDetector):",
+      "    \"\"\"Scans for PyPI Upload Tokens.\"\"\"",
+      "    @property",
+      "    def secret_type(self) -> str:",
+      "        return \"PyPI Upload Token\""
+    ],
+    "imports": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector"
+    ],
+    "classes": [
+      "PyPiUploadTokenDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_388_aa0467ce963abe83_pypi_upload_token.py.json"
+}

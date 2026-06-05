@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 464,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_uniqued.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_uniqued.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2126,
+  "content_sha256": "9e1382490d2123433a0347b2a8e1159d1b87c215f6e146710a4979429d52cfbd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 54,
+    "char_count": 2126,
+    "preview_lines": [
+      "from typing import Callable, Optional, Tuple",
+      "import numpy",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d, Ints2d",
+      "InT = Ints2d",
+      "OutT = Floats2d",
+      "@registry.layers(\"uniqued.v1\")",
+      "def uniqued(layer: Model, *, column: int = 0) -> Model[InT, OutT]:",
+      "    \"\"\"Group inputs to a layer, so that the layer only has to compute for the"
+    ],
+    "imports": [
+      "from typing import Callable, Optional, Tuple",
+      "import numpy",
+      "from ..config import registry",
+      "from ..model import Model",
+      "from ..types import Floats2d, Ints2d"
+    ],
+    "classes": [],
+    "functions": [
+      "uniqued",
+      "forward",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_464_9e1382490d212343_AI_Chariot_Legacy_666_1.0.0_20260508_uniqued.py.json"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 39,
+  "idx_in_wave": 478,
+  "generated_at": "2026-05-08T18:46:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_vikingdb.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_vikingdb.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15520,
+  "content_sha256": "25c25e8011ca25c6f3b49446117b0df9a822a39c47ce436b81407f517d9c2296",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 431,
+    "non_empty_lines": 392,
+    "char_count": 15520,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import logging",
+      "import uuid",
+      "from typing import Any, List, Optional, Tuple",
+      "import numpy as np",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.vectorstores import VectorStore",
+      "from typing_extensions import Self",
+      "from langchain_community.vectorstores.utils import maximal_marginal_relevance"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import uuid",
+      "from typing import Any, List, Optional, Tuple",
+      "import numpy as np",
+      "from langchain_core.documents import Document",
+      "from langchain_core.embeddings import Embeddings",
+      "from langchain_core.vectorstores import VectorStore",
+      "from typing_extensions import Self",
+      "from langchain_community.vectorstores.utils import maximal_marginal_relevance",
+      "from volcengine.viking_db import Collection, VikingDBService",
+      "from volcengine.viking_db import Field, FieldType",
+      "from volcengine.viking_db import VectorIndexParams",
+      "from volcengine.viking_db import Data"
+    ],
+    "classes": [
+      "VikingDBConfig",
+      "VikingDB"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0039_478_25c25e8011ca25c6_AI_Chariot_Legacy_666_1.0.0_20260508_vikingdb.py.json"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 361,
+  "generated_at": "2026-05-08T18:49:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain_v1\\langchain\\agents\\middleware\\_retry.py",
+  "name": "_retry.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3959,
+  "content_sha256": "334a9a3c1c67c9b3f33f25f1430ee63e64e8cf9c1a767058e667ae300993c6c9",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 123,
+    "non_empty_lines": 99,
+    "char_count": 3954,
+    "preview_lines": [
+      "\"\"\"Shared retry utilities for agent middleware.",
+      "This module contains common constants, utilities, and logic used by both",
+      "model and tool retry middleware implementations.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import random",
+      "from collections.abc import Callable",
+      "from typing import Literal",
+      "# Type aliases",
+      "RetryOn = tuple[type[Exception], ...] | Callable[[Exception], bool]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import random",
+      "from collections.abc import Callable",
+      "from typing import Literal"
+    ],
+    "classes": [],
+    "functions": [
+      "validate_retry_params",
+      "should_retry_exception",
+      "calculate_delay"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_361_334a9a3c1c67c9b3__retry.py.json"
+}

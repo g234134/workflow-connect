@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 3,
+  "idx_in_wave": 97,
+  "generated_at": "2026-05-08T18:44:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__evals_data_converters.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__evals_data_converters.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 37844,
+  "content_sha256": "71ba2de9fa9a6a86560de0e4929a882135c5768b4d46f9460758efb83865882d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 918,
+    "non_empty_lines": 821,
+    "char_count": 37844,
+    "preview_lines": [
+      "# Copyright 2025 Google LLC",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "import logging",
+      "from typing import Any, Optional, Union",
+      "from google.genai import _common",
+      "from google.genai import types as genai_types",
+      "from pydantic import ValidationError",
+      "from typing_extensions import override",
+      "from . import _evals_utils",
+      "from . import _observability_data_converter",
+      "from . import types"
+    ],
+    "classes": [
+      "EvalDatasetSchema",
+      "_GeminiEvalDataConverter",
+      "_FlattenEvalDataConverter",
+      "_OpenAIDataConverter"
+    ],
+    "functions": [
+      "_create_placeholder_response_candidate",
+      "auto_detect_dataset_schema",
+      "get_dataset_converter",
+      "_get_content_text",
+      "_get_text_from_reference",
+      "_validate_case_consistency",
+      "merge_evaluation_datasets",
+      "merge_response_datasets_into_canonical_format"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_097_71ba2de9fa9a6a86_AI_Chariot_Legacy_666_1.0.0_20260508__evals_data_converters.py.json"
+}

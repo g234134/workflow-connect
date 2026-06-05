@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 285,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_migrate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_migrate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4497,
+  "content_sha256": "a3e8a89b386d0ba37a5f91f918396043f40e688a2f136600f681dcfed200523f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 164,
+    "non_empty_lines": 113,
+    "char_count": 4497,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "import shutil",
+      "import tarfile",
+      "import platform",
+      "import subprocess",
+      "from typing import TYPE_CHECKING, List",
+      "from pathlib import Path",
+      "from argparse import ArgumentParser"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "import sys",
+      "import shutil",
+      "import tarfile",
+      "import platform",
+      "import subprocess",
+      "from typing import TYPE_CHECKING, List",
+      "from pathlib import Path",
+      "from argparse import ArgumentParser",
+      "import httpx",
+      "from .._errors import CLIError, SilentCLIError",
+      "from .._models import BaseModel",
+      "from argparse import _SubParsersAction"
+    ],
+    "classes": [
+      "GritArgs",
+      "MigrateArgs"
+    ],
+    "functions": [
+      "register",
+      "grit",
+      "migrate",
+      "_cache_dir",
+      "_debug",
+      "install",
+      "_move_files_recursively",
+      "_get_arch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_285_a3e8a89b386d0ba3_AI_Chariot_Legacy_666_1.0.0_20260508_migrate.py.json"
+}

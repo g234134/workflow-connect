@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 42,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:47:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\generators\\internet_as_graphs.py",
+  "name": "internet_as_graphs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14226,
+  "content_sha256": "46e8445bdad0f1fe55cde23265ee86a925a0c4ab4c56ec2a9f3bf49655b715e6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 443,
+    "non_empty_lines": 358,
+    "char_count": 14226,
+    "preview_lines": [
+      "\"\"\"Generates graphs resembling the Internet Autonomous System network\"\"\"",
+      "import networkx as nx",
+      "from networkx.utils import py_random_state",
+      "__all__ = [\"random_internet_as_graph\"]",
+      "def uniform_int_from_avg(a, m, seed):",
+      "    \"\"\"Pick a random integer with uniform probability.",
+      "    Returns a random integer uniformly taken from a distribution with",
+      "    minimum value 'a' and average value 'm', X~U(a,b), E[X]=m, X in N where",
+      "    b = 2*m - a.",
+      "    Notes"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx.utils import py_random_state",
+      "from math import floor"
+    ],
+    "classes": [
+      "AS_graph_generator"
+    ],
+    "functions": [
+      "uniform_int_from_avg",
+      "choose_pref_attach",
+      "random_internet_as_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0042_003_46e8445bdad0f1fe_internet_as_graphs.py.json"
+}

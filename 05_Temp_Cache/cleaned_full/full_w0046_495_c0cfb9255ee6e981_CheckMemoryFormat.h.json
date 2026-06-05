@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 495,
+  "generated_at": "2026-05-08T18:47:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\core\\CheckMemoryFormat.h",
+  "name": "CheckMemoryFormat.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 889,
+  "content_sha256": "c0cfb9255ee6e981e8823fb9ace3eadcab2c60224218237236a1b111a985392c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 22,
+    "char_count": 889,
+    "preview_lines": [
+      "#include <c10/core/TensorOptions.h>",
+      "namespace c10 { namespace impl {",
+      "inline c10::optional<MemoryFormat>",
+      "check_tensor_options_and_extract_memory_format(",
+      "    const TensorOptions& options,",
+      "    c10::optional<MemoryFormat> memory_format) {",
+      "  TORCH_CHECK(",
+      "      options.requires_grad_opt() == c10::nullopt ||",
+      "      options.requires_grad_opt().value() == false,",
+      "      \"Operators taking TensorOptions cannot take a TensorOptions with \""
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_495_c0cfb9255ee6e981_CheckMemoryFormat.h.json"
+}

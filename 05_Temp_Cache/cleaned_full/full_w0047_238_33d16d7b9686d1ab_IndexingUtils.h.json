@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 47,
+  "idx_in_wave": 238,
+  "generated_at": "2026-05-08T18:47:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\ATen\\native\\IndexingUtils.h",
+  "name": "IndexingUtils.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 5730,
+  "content_sha256": "33d16d7b9686d1ab1a95ec514ebb49e8251a2b2196403acfa2e7e6b5cc8d8a44",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 145,
+    "char_count": 5730,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/ExpandUtils.h>",
+      "#include <ATen/native/CanUse32BitIndexMath.h>",
+      "#include <ATen/native/TensorIterator.h>",
+      "#include <ATen/core/IListRef.h>",
+      "#include <c10/util/irange.h>",
+      "namespace at::native {",
+      "[[noreturn]]",
+      "static void invalid_mask(const Tensor & self, int64_t idx, const Tensor & mask, int64_t maskIdx) {",
+      "  TORCH_CHECK_INDEX(false, \"The shape of the mask \", mask.sizes(), \" at index \", maskIdx,"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0047_238_33d16d7b9686d1ab_IndexingUtils.h.json"
+}

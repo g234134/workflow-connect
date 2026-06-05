@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 272,
+  "generated_at": "2026-05-08T18:45:49+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_orm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_orm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6322,
+  "content_sha256": "15cf8f5a738db038f3a40c280ab07ac90da549cbccd402d19518db609f214f9c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 227,
+    "non_empty_lines": 171,
+    "char_count": 6322,
+    "preview_lines": [
+      "# testing/fixtures/orm.py",
+      "# Copyright (C) 2005-2026 the SQLAlchemy authors and contributors",
+      "# <see AUTHORS file>",
+      "#",
+      "# This module is part of SQLAlchemy and is released under",
+      "# the MIT License: https://www.opensource.org/licenses/mit-license.php",
+      "# mypy: ignore-errors",
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import sqlalchemy as sa"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any",
+      "import sqlalchemy as sa",
+      "from .base import TestBase",
+      "from .sql import TablesTest",
+      "from .. import assertions",
+      "from .. import config",
+      "from .. import schema",
+      "from ..entities import BasicEntity",
+      "from ..entities import ComparableEntity",
+      "from ..util import adict",
+      "from ... import orm",
+      "from ...orm import DeclarativeBase",
+      "from ...orm import events as orm_events",
+      "from ...orm import registry"
+    ],
+    "classes": [
+      "ORMTest",
+      "MappedTest",
+      "DeclarativeMappedTest",
+      "RemoveORMEventsGlobally"
+    ],
+    "functions": [
+      "fixture_session",
+      "close_all_sessions",
+      "stop_test_class_inside_fixtures",
+      "after_test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_272_15cf8f5a738db038_AI_Chariot_Legacy_666_1.0.0_20260508_orm.py.json"
+}

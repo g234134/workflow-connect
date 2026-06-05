@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 488,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\anthropic\\scripts\\check_version.py",
+  "name": "check_version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2312,
+  "content_sha256": "e8e1572e92f177856f4b97e4ff303d4b5b377d59d66471736b06e8b42d055212",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 65,
+    "non_empty_lines": 47,
+    "char_count": 2309,
+    "preview_lines": [
+      "\"\"\"Check version consistency between `pyproject.toml` and `_version.py`.",
+      "This script validates that the version defined in pyproject.toml matches the",
+      "`__version__` variable in `langchain_anthropic/_version.py`. Intended for use as a",
+      "pre-commit hook to prevent version mismatches.",
+      "\"\"\"",
+      "import re",
+      "import sys",
+      "from pathlib import Path",
+      "def get_pyproject_version(pyproject_path: Path) -> str | None:",
+      "    \"\"\"Extract version from `pyproject.toml`.\"\"\""
+    ],
+    "imports": [
+      "import re",
+      "import sys",
+      "from pathlib import Path"
+    ],
+    "classes": [],
+    "functions": [
+      "get_pyproject_version",
+      "get_version_py_version",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_488_e8e1572e92f17785_check_version.py.json"
+}

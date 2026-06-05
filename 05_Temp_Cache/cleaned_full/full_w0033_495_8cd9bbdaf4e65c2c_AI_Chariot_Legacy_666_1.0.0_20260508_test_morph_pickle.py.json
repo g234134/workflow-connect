@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 495,
+  "generated_at": "2026-05-08T18:46:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_morph_pickle.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_morph_pickle.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 693,
+  "content_sha256": "8cd9bbdaf4e65c2c54ff5c2ffd986cc82820493e89bd714f0621600ef108cae4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 17,
+    "char_count": 693,
+    "preview_lines": [
+      "import pickle",
+      "import pytest",
+      "from spacy.morphology import Morphology",
+      "from spacy.strings import StringStore",
+      "@pytest.fixture",
+      "def morphology():",
+      "    morphology = Morphology(StringStore())",
+      "    morphology.add(\"Feat1=Val1|Feat2=Val2\")",
+      "    morphology.add(\"Feat3=Val3|Feat4=Val4\")",
+      "    return morphology"
+    ],
+    "imports": [
+      "import pickle",
+      "import pytest",
+      "from spacy.morphology import Morphology",
+      "from spacy.strings import StringStore"
+    ],
+    "classes": [],
+    "functions": [
+      "morphology",
+      "test_morphology_pickle_roundtrip"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_495_8cd9bbdaf4e65c2c_AI_Chariot_Legacy_666_1.0.0_20260508_test_morph_pickle.py.json"
+}

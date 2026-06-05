@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 262,
+  "generated_at": "2026-05-08T18:47:29+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\nn\\intrinsic\\modules\\fused.py",
+  "name": "fused.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9530,
+  "content_sha256": "278229e1fe8d0e6bc7c2572dad22818d231ad42bfe50f8a7fc2316f5ece08099",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 160,
+    "non_empty_lines": 137,
+    "char_count": 9530,
+    "preview_lines": [
+      "import torch",
+      "from torch.nn import Conv1d, Conv2d, Conv3d, ReLU, Linear, BatchNorm1d, BatchNorm2d, BatchNorm3d",
+      "from torch.nn.utils.parametrize import type_before_parametrizations",
+      "__all__ = ['ConvReLU1d', 'ConvReLU2d', 'ConvReLU3d', 'LinearReLU', 'ConvBn1d', 'ConvBn2d',",
+      "           'ConvBnReLU1d', 'ConvBnReLU2d', 'ConvBn3d', 'ConvBnReLU3d', 'BNReLU2d', 'BNReLU3d',",
+      "           'LinearBn1d', 'LinearLeakyReLU', 'LinearTanh', 'ConvAdd2d', 'ConvAddReLU2d']",
+      "# Used for identifying intrinsic modules used in quantization",
+      "class _FusedModule(torch.nn.Sequential):",
+      "    pass",
+      "class ConvReLU1d(_FusedModule):"
+    ],
+    "imports": [
+      "import torch",
+      "from torch.nn import Conv1d, Conv2d, Conv3d, ReLU, Linear, BatchNorm1d, BatchNorm2d, BatchNorm3d",
+      "from torch.nn.utils.parametrize import type_before_parametrizations"
+    ],
+    "classes": [
+      "_FusedModule",
+      "ConvReLU1d",
+      "ConvReLU2d",
+      "ConvReLU3d",
+      "LinearReLU",
+      "ConvBn1d",
+      "ConvBn2d",
+      "ConvBnReLU1d",
+      "ConvBnReLU2d",
+      "ConvBn3d",
+      "ConvBnReLU3d",
+      "BNReLU2d",
+      "BNReLU3d",
+      "LinearBn1d",
+      "LinearLeakyReLU",
+      "LinearTanh",
+      "ConvAdd2d",
+      "ConvAddReLU2d"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_262_278229e1fe8d0e6b_fused.py.json"
+}

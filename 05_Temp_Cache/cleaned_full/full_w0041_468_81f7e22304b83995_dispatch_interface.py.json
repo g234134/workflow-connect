@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 41,
+  "idx_in_wave": 468,
+  "generated_at": "2026-05-08T18:47:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\networkx\\classes\\tests\\dispatch_interface.py",
+  "name": "dispatch_interface.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6823,
+  "content_sha256": "81f7e22304b839958a2204647ef8218b141db39858d2d3c18bcea9d25a55ede6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 192,
+    "non_empty_lines": 158,
+    "char_count": 6823,
+    "preview_lines": [
+      "# This file contains utilities for testing the dispatching feature",
+      "# A full test of all dispatchable algorithms is performed by",
+      "# modifying the pytest invocation and setting an environment variable",
+      "# NETWORKX_TEST_BACKEND=nx_loopback pytest",
+      "# This is comprehensive, but only tests the `test_override_dispatch`",
+      "# function in networkx.classes.backends.",
+      "# To test the `_dispatchable` function directly, several tests scattered throughout",
+      "# NetworkX have been augmented to test normal and dispatch mode.",
+      "# Searching for `dispatch_interface` should locate the specific tests.",
+      "import networkx as nx"
+    ],
+    "imports": [
+      "import networkx as nx",
+      "from networkx import DiGraph, Graph, MultiDiGraph, MultiGraph, PlanarEmbedding",
+      "from networkx.classes.reportviews import NodeView"
+    ],
+    "classes": [
+      "LoopbackGraph",
+      "LoopbackDiGraph",
+      "LoopbackMultiGraph",
+      "LoopbackMultiDiGraph",
+      "LoopbackPlanarEmbedding",
+      "LoopbackBackendInterface"
+    ],
+    "functions": [
+      "convert"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0041_468_81f7e22304b83995_dispatch_interface.py.json"
+}

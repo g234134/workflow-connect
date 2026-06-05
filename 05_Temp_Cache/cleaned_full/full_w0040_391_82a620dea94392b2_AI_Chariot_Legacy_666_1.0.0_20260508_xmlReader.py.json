@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 391,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_xmlReader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_xmlReader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6768,
+  "content_sha256": "82a620dea94392b2ac3b9e433da27e754d22e6b96da998272a5ad7991d99edd4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 166,
+    "char_count": 6768,
+    "preview_lines": [
+      "from fontTools import ttLib",
+      "from fontTools.misc.textTools import safeEval",
+      "from fontTools.ttLib.tables.DefaultTable import DefaultTable",
+      "import sys",
+      "import os",
+      "import logging",
+      "log = logging.getLogger(__name__)",
+      "class TTXParseError(Exception):",
+      "    pass",
+      "BUFSIZE = 0x4000"
+    ],
+    "imports": [
+      "from fontTools import ttLib",
+      "from fontTools.misc.textTools import safeEval",
+      "from fontTools.ttLib.tables.DefaultTable import DefaultTable",
+      "import sys",
+      "import os",
+      "import logging",
+      "from fontTools.misc.loggingTools import deprecateArgument",
+      "from xml.parsers.expat import ParserCreate"
+    ],
+    "classes": [
+      "TTXParseError",
+      "XMLReader",
+      "ProgressPrinter"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_391_82a620dea94392b2_AI_Chariot_Legacy_666_1.0.0_20260508_xmlReader.py.json"
+}

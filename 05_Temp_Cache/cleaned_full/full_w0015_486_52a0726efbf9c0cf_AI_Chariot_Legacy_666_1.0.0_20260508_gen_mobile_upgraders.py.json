@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 486,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gen_mobile_upgraders.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gen_mobile_upgraders.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13104,
+  "content_sha256": "52a0726efbf9c0cf2c3ac4e402de3b84a8aff1d1fc46dd5ab3460f950403dd45",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 395,
+    "non_empty_lines": 332,
+    "char_count": 13104,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "from __future__ import annotations",
+      "import os",
+      "from enum import Enum",
+      "from operator import itemgetter",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import torch",
+      "from torch.jit.generate_bytecode import generate_upgraders_bytecode",
+      "from torchgen.code_template import CodeTemplate"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import os",
+      "from enum import Enum",
+      "from operator import itemgetter",
+      "from pathlib import Path",
+      "from typing import Any",
+      "import torch",
+      "from torch.jit.generate_bytecode import generate_upgraders_bytecode",
+      "from torchgen.code_template import CodeTemplate",
+      "from torchgen.operator_versions.gen_mobile_upgraders_constant import ("
+    ],
+    "classes": [
+      "ByteCode"
+    ],
+    "functions": [
+      "construct_instruction",
+      "construct_constants",
+      "construct_operators",
+      "construct_types",
+      "construct_register_size",
+      "construct_version_maps",
+      "get_upgrader_bytecode_function_to_index_map",
+      "write_cpp",
+      "sort_upgrader",
+      "main"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_486_52a0726efbf9c0cf_AI_Chariot_Legacy_666_1.0.0_20260508_gen_mobile_upgraders.py.json"
+}

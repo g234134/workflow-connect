@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 404,
+  "generated_at": "2026-05-08T18:48:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\onnx\\_internal\\fx\\registration.py",
+  "name": "registration.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3471,
+  "content_sha256": "6ff0d06370f4d42dd2cf7162414099ed056463dc27dbbd2f1327549a1d854956",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 74,
+    "char_count": 3471,
+    "preview_lines": [
+      "\"\"\"Module for handling ATen to ONNX functions registration.\"\"\"",
+      "from __future__ import annotations",
+      "import dataclasses",
+      "import types",
+      "from typing import Optional, TYPE_CHECKING, Union",
+      "import torch._ops",
+      "from torch.onnx._internal import _beartype",
+      "# We can only import onnx from this module in a type-checking context to ensure that",
+      "# 'import torch.onnx' continues to work without having 'onnx' installed. We fully",
+      "# 'import onnx' inside of dynamo_export (by way of _assert_dependencies)."
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import dataclasses",
+      "import types",
+      "from typing import Optional, TYPE_CHECKING, Union",
+      "import torch._ops",
+      "from torch.onnx._internal import _beartype",
+      "import onnxscript  # type: ignore[import]"
+    ],
+    "classes": [
+      "ONNXFunction",
+      "OpName"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_404_6ff0d06370f4d42d_registration.py.json"
+}

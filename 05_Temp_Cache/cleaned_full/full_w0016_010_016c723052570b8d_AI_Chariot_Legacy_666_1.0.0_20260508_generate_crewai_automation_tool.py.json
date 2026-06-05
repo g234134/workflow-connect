@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 10,
+  "generated_at": "2026-05-08T18:45:16+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_generate_crewai_automation_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_generate_crewai_automation_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3005,
+  "content_sha256": "016c723052570b8df721ff3e203fde5bddd13db90c147c40141a88f320255936",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 72,
+    "non_empty_lines": 62,
+    "char_count": 3005,
+    "preview_lines": [
+      "import os",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "import requests",
+      "class GenerateCrewaiAutomationToolSchema(BaseModel):",
+      "    prompt: str = Field(",
+      "        description=\"The prompt to generate the CrewAI automation, e.g. 'Generate a CrewAI automation that will scrape the website and store the data in a database.'\"",
+      "    )",
+      "    organization_id: str | None = Field("
+    ],
+    "imports": [
+      "import os",
+      "from typing import Any",
+      "from crewai.tools import BaseTool, EnvVar",
+      "from pydantic import BaseModel, Field",
+      "import requests"
+    ],
+    "classes": [
+      "GenerateCrewaiAutomationToolSchema",
+      "GenerateCrewaiAutomationTool"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_010_016c723052570b8d_AI_Chariot_Legacy_666_1.0.0_20260508_generate_crewai_automation_tool.py.json"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 290,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_names.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_names.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 15338,
+  "content_sha256": "be61e2ec966587e3786a6c4a75a4c9fb90cdf660c9f169e1fecf56d602404386",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 388,
+    "non_empty_lines": 323,
+    "char_count": 15338,
+    "preview_lines": [
+      "\"\"\"Helpers for instantiating name table records.\"\"\"",
+      "from contextlib import contextmanager",
+      "from copy import deepcopy",
+      "from enum import IntEnum",
+      "import re",
+      "class NameID(IntEnum):",
+      "    FAMILY_NAME = 1",
+      "    SUBFAMILY_NAME = 2",
+      "    UNIQUE_FONT_IDENTIFIER = 3",
+      "    FULL_FONT_NAME = 4"
+    ],
+    "imports": [
+      "from contextlib import contextmanager",
+      "from copy import deepcopy",
+      "from enum import IntEnum",
+      "import re",
+      "from . import log",
+      "from . import AxisLimits, axisValuesFromAxisLimits"
+    ],
+    "classes": [
+      "NameID"
+    ],
+    "functions": [
+      "getVariationNameIDs",
+      "pruningUnusedNames",
+      "updateNameTable",
+      "checkAxisValuesExist",
+      "_sortAxisValues",
+      "_updateNameRecords",
+      "_isRibbi",
+      "_updateNameTableStyleRecords",
+      "_updatePSNameRecord",
+      "_updateUniqueIdNameRecord",
+      "_fontVersion"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_290_be61e2ec966587e3_AI_Chariot_Legacy_666_1.0.0_20260508_names.py.json"
+}

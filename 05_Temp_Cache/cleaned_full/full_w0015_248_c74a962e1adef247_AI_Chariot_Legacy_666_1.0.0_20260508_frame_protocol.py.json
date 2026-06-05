@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 248,
+  "generated_at": "2026-05-08T18:45:14+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_frame_protocol.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_frame_protocol.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24083,
+  "content_sha256": "c74a962e1adef2477eea231ca4359d5df69fc8feef6327a7158200e1f69a4262",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 698,
+    "non_empty_lines": 560,
+    "char_count": 24083,
+    "preview_lines": [
+      "\"\"\"",
+      "wsproto/frame_protocol",
+      "~~~~~~~~~~~~~~~~~~~~~~",
+      "WebSocket frame protocol implementation.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import contextlib",
+      "import os",
+      "import struct",
+      "from codecs import IncrementalDecoder, getincrementaldecoder"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import contextlib",
+      "import os",
+      "import struct",
+      "from codecs import IncrementalDecoder, getincrementaldecoder",
+      "from enum import IntEnum",
+      "from typing import TYPE_CHECKING, NamedTuple",
+      "from collections.abc import Generator",
+      "from .extensions import Extension  # pragma: no cover"
+    ],
+    "classes": [
+      "XorMaskerSimple",
+      "XorMaskerNull",
+      "Opcode",
+      "CloseReason",
+      "ParseFailed",
+      "RsvBits",
+      "Header",
+      "Frame",
+      "Buffer",
+      "MessageDecoder",
+      "FrameDecoder",
+      "FrameProtocol"
+    ],
+    "functions": [
+      "_truncate_utf8"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_248_c74a962e1adef247_AI_Chariot_Legacy_666_1.0.0_20260508_frame_protocol.py.json"
+}

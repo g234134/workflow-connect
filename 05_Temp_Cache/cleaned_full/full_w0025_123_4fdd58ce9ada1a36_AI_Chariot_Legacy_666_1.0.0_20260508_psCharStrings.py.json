@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:45:56+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_psCharStrings.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_psCharStrings.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 44979,
+  "content_sha256": "4fdd58ce9ada1a36770a1acce7ab7e282a04b84efd3af3ead6d240dea632c035",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1511,
+    "non_empty_lines": 1276,
+    "char_count": 44979,
+    "preview_lines": [
+      "\"\"\"psCharStrings.py -- module implementing various kinds of CharStrings:",
+      "CFF dictionary data and Type1/Type2 CharStrings.",
+      "\"\"\"",
+      "from fontTools.misc.fixedTools import (",
+      "    fixedToFloat,",
+      "    floatToFixed,",
+      "    floatToFixedToStr,",
+      "    strToFixedToFloat,",
+      ")",
+      "from fontTools.misc.textTools import bytechr, byteord, bytesjoin, strjoin"
+    ],
+    "imports": [
+      "from fontTools.misc.fixedTools import (",
+      "from fontTools.misc.textTools import bytechr, byteord, bytesjoin, strjoin",
+      "from fontTools.pens.boundsPen import BoundsPen",
+      "import struct",
+      "import logging"
+    ],
+    "classes": [
+      "CharStringCompileError",
+      "SimpleT2Decompiler",
+      "T2StackUseExtractor",
+      "T2WidthExtractor",
+      "T2OutlineExtractor",
+      "T1OutlineExtractor",
+      "T2CharString",
+      "T1CharString",
+      "DictDecompiler"
+    ],
+    "functions": [
+      "read_operator",
+      "read_byte",
+      "read_smallInt1",
+      "read_smallInt2",
+      "read_shortInt",
+      "read_longInt",
+      "read_fixed1616",
+      "read_reserved",
+      "read_realNumber",
+      "buildOperatorDict",
+      "getIntEncoder",
+      "encodeFixed",
+      "encodeFloat",
+      "calcSubrBias"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_123_4fdd58ce9ada1a36_AI_Chariot_Legacy_666_1.0.0_20260508_psCharStrings.py.json"
+}

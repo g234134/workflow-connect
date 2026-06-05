@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 167,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_google_search.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_google_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3835,
+  "content_sha256": "9df5f183eeb03c8af130435e1ce0fbdc87115a6f219510e9f50574a2d5a26453",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 93,
+    "non_empty_lines": 76,
+    "char_count": 3835,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import logging",
+      "from typing import Annotated, Any",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ... import Depends, Tool",
+      "from ...dependency_injection import on",
+      "with optional_import_block():"
+    ],
+    "imports": [
+      "import logging",
+      "from typing import Annotated, Any",
+      "from ....doc_utils import export_module",
+      "from ....import_utils import optional_import_block, require_optional_import",
+      "from ... import Depends, Tool",
+      "from ...dependency_injection import on",
+      "from googleapiclient.discovery import build"
+    ],
+    "classes": [
+      "GoogleSearchTool"
+    ],
+    "functions": [
+      "_execute_query",
+      "_google_search"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_167_9df5f183eeb03c8a_AI_Chariot_Legacy_666_1.0.0_20260508_google_search.py.json"
+}

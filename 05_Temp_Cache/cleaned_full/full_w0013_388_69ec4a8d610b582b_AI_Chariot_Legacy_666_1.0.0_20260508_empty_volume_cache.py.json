@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 388,
+  "generated_at": "2026-05-08T18:45:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_empty_volume_cache.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_empty_volume_cache.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7830,
+  "content_sha256": "69ec4a8d610b582b8c70ade2e3a2a243b0e4d3a9c5be57fdb1bf6b4f81915637",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 188,
+    "non_empty_lines": 163,
+    "char_count": 7830,
+    "preview_lines": [
+      "# A sample implementation of IEmptyVolumeCache - see",
+      "# https://learn.microsoft.com/en-ca/windows/win32/lwef/disk-cleanup for an overview.",
+      "#",
+      "# * Execute this script to register the handler",
+      "# * Start the \"disk cleanup\" tool - look for \"pywin32 compiled files\"",
+      "import os",
+      "import stat",
+      "import sys",
+      "import pythoncom",
+      "import win32gui"
+    ],
+    "imports": [
+      "import os",
+      "import stat",
+      "import sys",
+      "import pythoncom",
+      "import win32gui",
+      "import winerror",
+      "from win32com.server.exception import COMException",
+      "from win32com.shell import shell, shellcon",
+      "import winreg",
+      "import winreg",
+      "import errno",
+      "from win32com.server import register"
+    ],
+    "classes": [
+      "EmptyVolumeCache"
+    ],
+    "functions": [
+      "DllRegisterServer",
+      "DllUnregisterServer"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_388_69ec4a8d610b582b_AI_Chariot_Legacy_666_1.0.0_20260508_empty_volume_cache.py.json"
+}

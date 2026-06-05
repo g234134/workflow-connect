@@ -1,0 +1,15 @@
+# 01_Environments · 局部 .gitignore（吏部）
+# 此處集中保管真鑰與虛擬環境，務必嚴守。
+
+# 真鑰（永遠不入庫，範本 .env.example 已搬至 secrets_templates/）
+.env
+.env.*
+!secrets_templates/.env.example
+
+# 虛擬環境（雙艙）— 太大、與機器強相關，靠 requirements.*.lock.txt 重現
+python_venvs/
+conda_envs/
+
+# 日誌 / 快取
+*.log
+__pycache__/

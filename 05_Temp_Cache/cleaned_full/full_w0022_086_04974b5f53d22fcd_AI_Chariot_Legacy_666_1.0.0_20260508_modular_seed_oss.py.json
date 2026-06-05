@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 86,
+  "generated_at": "2026-05-08T18:45:43+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_seed_oss.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_seed_oss.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7269,
+  "content_sha256": "04974b5f53d22fcd74483d2dc768b746fce1bfb166b8c6f8a6a541cbe0e0b0b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 201,
+    "non_empty_lines": 157,
+    "char_count": 7269,
+    "preview_lines": [
+      "# Copyright 2025 Bytedance-Seed Ltd and the HuggingFace Inc. team. All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#",
+      "# Unless required by applicable law or agreed to in writing, software",
+      "# distributed under the License is distributed on an \"AS IS\" BASIS,"
+    ],
+    "imports": [
+      "from collections.abc import Callable",
+      "import torch",
+      "import torch.nn as nn",
+      "from ...activations import ACT2FN",
+      "from ...cache_utils import Cache",
+      "from ...modeling_outputs import CausalLMOutputWithPast",
+      "from ...modeling_utils import ALL_ATTENTION_FUNCTIONS",
+      "from ...processing_utils import Unpack",
+      "from ...utils import TransformersKwargs, logging",
+      "from ..llama.modeling_llama import (",
+      "from .configuration_seed_oss import SeedOssConfig"
+    ],
+    "classes": [
+      "SeedOssRMSNorm",
+      "SeedOssMLP",
+      "SeedOssAttention",
+      "SeedOssDecoderLayer",
+      "SeedOssPreTrainedModel",
+      "SeedOssModel",
+      "SeedOssForCausalLM",
+      "SeedOssForSequenceClassification",
+      "SeedOssForTokenClassification",
+      "SeedOssForQuestionAnswering"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_086_04974b5f53d22fcd_AI_Chariot_Legacy_666_1.0.0_20260508_modular_seed_oss.py.json"
+}

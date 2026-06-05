@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 45,
+  "idx_in_wave": 375,
+  "generated_at": "2026-05-08T18:47:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\ao\\quantization\\fx\\_model_report\\detector.py",
+  "name": "detector.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 75411,
+  "content_sha256": "2d8db632c3775a8c81ff5f2bdf86f10afdbd753bd8831e5cb23e3183c18fa53a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1539,
+    "non_empty_lines": 1216,
+    "char_count": 75411,
+    "preview_lines": [
+      "from typing import Any, Dict, Set, Tuple, Callable, List",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.ao.nn.qat as nnqat",
+      "from abc import ABC, abstractmethod",
+      "from torch.ao.quantization.fake_quantize import FakeQuantize",
+      "from torch.ao.quantization.fx.graph_module import GraphModule",
+      "from torch.ao.quantization.fx._model_report.model_report_observer import ModelReportObserver",
+      "from torch.ao.quantization.qconfig import (",
+      "    QConfig,"
+    ],
+    "imports": [
+      "from typing import Any, Dict, Set, Tuple, Callable, List",
+      "import torch",
+      "import torch.nn as nn",
+      "import torch.ao.nn.qat as nnqat",
+      "from abc import ABC, abstractmethod",
+      "from torch.ao.quantization.fake_quantize import FakeQuantize",
+      "from torch.ao.quantization.fx.graph_module import GraphModule",
+      "from torch.ao.quantization.fx._model_report.model_report_observer import ModelReportObserver",
+      "from torch.ao.quantization.qconfig import (",
+      "from torch.ao.quantization.observer import (",
+      "from torch.ao.quantization.fx._equalize import (",
+      "from torch.ao.quantization.observer import _is_activation_post_process"
+    ],
+    "classes": [
+      "DetectorQConfigInfo",
+      "DetectorBase",
+      "PerChannelDetector",
+      "DynamicStaticDetector",
+      "InputWeightEqualizationDetector",
+      "OutlierDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0045_375_2d8db632c3775a8c_detector.py.json"
+}

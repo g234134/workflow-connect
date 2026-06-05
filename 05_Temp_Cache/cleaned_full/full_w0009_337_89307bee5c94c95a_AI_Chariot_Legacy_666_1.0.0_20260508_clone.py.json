@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 337,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_clone.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_clone.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5025,
+  "content_sha256": "89307bee5c94c95ad63d3d74a45d952b28b3b314b1543c5ffdfeb53887bda30b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 126,
+    "non_empty_lines": 113,
+    "char_count": 5025,
+    "preview_lines": [
+      "import re",
+      "import subprocess",
+      "from pathlib import Path",
+      "from typing import Optional",
+      "import typer",
+      "from wasabi import msg",
+      "from .. import about",
+      "from ..util import ensure_path, get_git_version, git_checkout, git_repo_branch_exists",
+      "from .main import COMMAND, PROJECT_FILE, Arg, Opt, _get_parent_command, app",
+      "DEFAULT_REPO = about.__projects__"
+    ],
+    "imports": [
+      "import re",
+      "import subprocess",
+      "from pathlib import Path",
+      "from typing import Optional",
+      "import typer",
+      "from wasabi import msg",
+      "from .. import about",
+      "from ..util import ensure_path, get_git_version, git_checkout, git_repo_branch_exists",
+      "from .main import COMMAND, PROJECT_FILE, Arg, Opt, _get_parent_command, app"
+    ],
+    "classes": [],
+    "functions": [
+      "project_clone_cli",
+      "project_clone",
+      "check_clone"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_337_89307bee5c94c95a_AI_Chariot_Legacy_666_1.0.0_20260508_clone.py.json"
+}

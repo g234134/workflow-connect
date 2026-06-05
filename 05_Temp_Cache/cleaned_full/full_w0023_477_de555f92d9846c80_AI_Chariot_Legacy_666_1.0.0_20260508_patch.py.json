@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 477,
+  "generated_at": "2026-05-08T18:45:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_patch.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_patch.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10298,
+  "content_sha256": "de555f92d9846c80d130e2405026f60456e1f04eb31bf9717b5965b2f199e5cc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 313,
+    "non_empty_lines": 258,
+    "char_count": 10298,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from functools import wraps",
+      "from typing import (",
+      "    Any,",
+      "    Callable,",
+      "    Protocol,",
+      "    TypeVar,",
+      "    overload,",
+      ")",
+      "from collections.abc import Awaitable"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import wraps",
+      "from typing import (",
+      "from collections.abc import Awaitable",
+      "from typing_extensions import ParamSpec",
+      "from openai import AsyncOpenAI, OpenAI  # type: ignore[import-not-found]",
+      "from pydantic import BaseModel  # type: ignore[import-not-found]",
+      "from ..processing.response import handle_response_model",
+      "from .retry import retry_async, retry_sync",
+      "from ..utils import is_async",
+      "from .hooks import Hooks",
+      "from ..templating import handle_templating",
+      "from ..mode import Mode",
+      "import logging",
+      "from tenacity import (  # type: ignore[import-not-found]",
+      "from .exceptions import ConfigurationError",
+      "import warnings",
+      "from ..cache import BaseCache, make_cache_key, load_cached_response"
+    ],
+    "classes": [
+      "InstructorChatCompletionCreate",
+      "AsyncInstructorChatCompletionCreate"
+    ],
+    "functions": [
+      "handle_context",
+      "patch",
+      "patch",
+      "patch",
+      "patch",
+      "patch",
+      "apatch"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_477_de555f92d9846c80_AI_Chariot_Legacy_666_1.0.0_20260508_patch.py.json"
+}

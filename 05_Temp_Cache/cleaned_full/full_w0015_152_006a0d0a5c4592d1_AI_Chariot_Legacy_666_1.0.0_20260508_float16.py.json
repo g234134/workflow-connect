@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 15,
+  "idx_in_wave": 152,
+  "generated_at": "2026-05-08T18:45:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_float16.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_float16.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25190,
+  "content_sha256": "006a0d0a5c4592d18abd83ff9aa71bb8e63c76e2b335a33a63c3e998ac905dfb",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 509,
+    "non_empty_lines": 442,
+    "char_count": 25186,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.",
+      "# --------------------------------------------------------------------------",
+      "# This file is modified from https://github.com/microsoft/onnxconverter-common/blob/master/onnxconverter_common/float16.py",
+      "# Modifications:",
+      "# (1) Update default value of min_positive_val and max_finite_val",
+      "# (2) keep_io_types can be list of names",
+      "# (3) convert initializers if needed to preserve precision",
+      "# (4) add force_fp16_initializers option"
+    ],
+    "imports": [
+      "import itertools",
+      "import logging",
+      "import os",
+      "import tempfile",
+      "import numpy as np",
+      "import onnx",
+      "from onnx import AttributeProto, GraphProto, ModelProto, NodeProto, TensorProto, helper, numpy_helper",
+      "from onnx.shape_inference import infer_shapes, infer_shapes_path",
+      "from packaging import version"
+    ],
+    "classes": [
+      "InitializerTracker"
+    ],
+    "functions": [
+      "_npfloat16_to_int",
+      "convert_np_to_float16",
+      "convert_tensor_float_to_float16",
+      "make_value_info_from_tensor",
+      "convert_float_to_float16",
+      "float_to_float16_max_diff"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0015_152_006a0d0a5c4592d1_AI_Chariot_Legacy_666_1.0.0_20260508_float16.py.json"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 254,
+  "generated_at": "2026-05-08T18:49:07+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\qdrant\\tests\\integration_tests\\conftest.py",
+  "name": "conftest.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 507,
+  "content_sha256": "6f2323991705e24f713dfce0614dd6ef84468925b424140fbd3dfc65b598ceb6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 10,
+    "char_count": 504,
+    "preview_lines": [
+      "import os",
+      "from qdrant_client import QdrantClient",
+      "from tests.integration_tests.fixtures import qdrant_locations",
+      "def pytest_runtest_teardown() -> None:",
+      "    \"\"\"Clean up all collections after the each test.\"\"\"",
+      "    for location in qdrant_locations():",
+      "        client = QdrantClient(location=location, api_key=os.getenv(\"QDRANT_API_KEY\"))",
+      "        collections = client.get_collections().collections",
+      "        for collection in collections:",
+      "            client.delete_collection(collection.name)"
+    ],
+    "imports": [
+      "import os",
+      "from qdrant_client import QdrantClient",
+      "from tests.integration_tests.fixtures import qdrant_locations"
+    ],
+    "classes": [],
+    "functions": [
+      "pytest_runtest_teardown"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_254_6f2323991705e24f_conftest.py.json"
+}

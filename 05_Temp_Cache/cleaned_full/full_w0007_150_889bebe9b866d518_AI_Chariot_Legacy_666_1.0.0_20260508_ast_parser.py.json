@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ast_parser.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ast_parser.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2734,
+  "content_sha256": "889bebe9b866d518cce6b856cd90387382c64c7e650056b3379ceef32f2af9a6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 64,
+    "char_count": 2734,
+    "preview_lines": [
+      "\"\"\"",
+      "This module implements the functionality to take any Python expression as a",
+      "string and fix all numbers and other things before evaluating it,",
+      "thus",
+      "1/2",
+      "returns",
+      "Integer(1)/Integer(2)",
+      "We use the ast module for this. It is well documented at docs.python.org.",
+      "Some tips to understand how this works: use dump() to get a nice",
+      "representation of any node. Then write a string of what you want to get,"
+    ],
+    "imports": [
+      "from sympy.core.basic import Basic",
+      "from sympy.core.sympify import SympifyError",
+      "from ast import parse, NodeTransformer, Call, Name, Load, \\"
+    ],
+    "classes": [
+      "Transform"
+    ],
+    "functions": [
+      "parse_expr"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_150_889bebe9b866d518_AI_Chariot_Legacy_666_1.0.0_20260508_ast_parser.py.json"
+}

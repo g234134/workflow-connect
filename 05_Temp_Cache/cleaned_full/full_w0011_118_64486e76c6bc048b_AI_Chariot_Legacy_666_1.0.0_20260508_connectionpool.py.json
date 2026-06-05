@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 11,
+  "idx_in_wave": 118,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_connectionpool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_connectionpool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 43371,
+  "content_sha256": "64486e76c6bc048b9b0f63345e8c4106c8f16ec5f0320512707ee843d8be8f56",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1178,
+    "non_empty_lines": 987,
+    "char_count": 43371,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import errno",
+      "import logging",
+      "import queue",
+      "import sys",
+      "import typing",
+      "import warnings",
+      "import weakref",
+      "from socket import timeout as SocketTimeout",
+      "from types import TracebackType"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import errno",
+      "import logging",
+      "import queue",
+      "import sys",
+      "import typing",
+      "import warnings",
+      "import weakref",
+      "from socket import timeout as SocketTimeout",
+      "from types import TracebackType",
+      "from ._base_connection import _TYPE_BODY",
+      "from ._collections import HTTPHeaderDict",
+      "from ._request_methods import RequestMethods",
+      "from .connection import (",
+      "from .connection import port_by_scheme as port_by_scheme",
+      "from .exceptions import (",
+      "from .response import BaseHTTPResponse",
+      "from .util.connection import is_connection_dropped",
+      "from .util.proxy import connection_requires_http_tunnel",
+      "from .util.request import _TYPE_BODY_POSITION, set_file_position"
+    ],
+    "classes": [
+      "ConnectionPool",
+      "HTTPConnectionPool",
+      "HTTPSConnectionPool"
+    ],
+    "functions": [
+      "connection_from_url",
+      "_normalize_host",
+      "_normalize_host",
+      "_normalize_host",
+      "_url_from_pool",
+      "_close_pool_connections"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0011_118_64486e76c6bc048b_AI_Chariot_Legacy_666_1.0.0_20260508_connectionpool.py.json"
+}

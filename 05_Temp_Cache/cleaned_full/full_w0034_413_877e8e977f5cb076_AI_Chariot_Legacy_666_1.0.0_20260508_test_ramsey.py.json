@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 413,
+  "generated_at": "2026-05-08T18:46:35+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_ramsey.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_ramsey.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1143,
+  "content_sha256": "877e8e977f5cb076c8a130c1c5bc4c827e37ef58955066776b637a97b779ea52",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 31,
+    "non_empty_lines": 26,
+    "char_count": 1143,
+    "preview_lines": [
+      "import networkx as nx",
+      "import networkx.algorithms.approximation as apxa",
+      "def test_ramsey():",
+      "    # this should only find the complete graph",
+      "    graph = nx.complete_graph(10)",
+      "    c, i = apxa.ramsey_R2(graph)",
+      "    cdens = nx.density(graph.subgraph(c))",
+      "    assert cdens == 1.0, \"clique not correctly found by ramsey!\"",
+      "    idens = nx.density(graph.subgraph(i))",
+      "    assert idens == 0.0, \"i-set not correctly found by ramsey!\""
+    ],
+    "imports": [
+      "import networkx as nx",
+      "import networkx.algorithms.approximation as apxa"
+    ],
+    "classes": [],
+    "functions": [
+      "test_ramsey"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_413_877e8e977f5cb076_AI_Chariot_Legacy_666_1.0.0_20260508_test_ramsey.py.json"
+}

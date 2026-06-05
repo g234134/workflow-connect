@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 23,
+  "idx_in_wave": 83,
+  "generated_at": "2026-05-08T18:45:47+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_oldstr.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_oldstr.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4333,
+  "content_sha256": "26e17c541048e0e192819dcfca153a2f14808937c45b3747531d07c20d775926",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 135,
+    "non_empty_lines": 113,
+    "char_count": 4333,
+    "preview_lines": [
+      "\"\"\"",
+      "Pure-Python implementation of a Python 2-like str object for Python 3.",
+      "\"\"\"",
+      "from numbers import Integral",
+      "from past.utils import PY2, with_metaclass",
+      "if PY2:",
+      "    from collections import Iterable",
+      "else:",
+      "    from collections.abc import Iterable",
+      "_builtin_bytes = bytes"
+    ],
+    "imports": [
+      "from numbers import Integral",
+      "from past.utils import PY2, with_metaclass",
+      "from collections import Iterable",
+      "from collections.abc import Iterable"
+    ],
+    "classes": [
+      "BaseOldStr",
+      "oldstr"
+    ],
+    "functions": [
+      "unescape"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0023_083_26e17c541048e0e1_AI_Chariot_Legacy_666_1.0.0_20260508_oldstr.py.json"
+}

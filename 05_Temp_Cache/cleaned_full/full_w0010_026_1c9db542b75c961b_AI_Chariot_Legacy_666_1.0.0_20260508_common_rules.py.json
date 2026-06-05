@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 10,
+  "idx_in_wave": 26,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_common_rules.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_common_rules.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5173,
+  "content_sha256": "1c9db542b75c961b061e3f3cdc06f7dfbf9b4a53d9a293c02f35c830d7e44fa7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 143,
+    "non_empty_lines": 131,
+    "char_count": 5173,
+    "preview_lines": [
+      "\"\"\"",
+      "Build common block mechanism for f2py2e.",
+      "Copyright 1999 -- 2011 Pearu Peterson all rights reserved.",
+      "Copyright 2011 -- present NumPy Developers.",
+      "Permission to use, modify, and distribute this software is given under the",
+      "terms of the NumPy License",
+      "NO WARRANTY IS EXPRESSED OR IMPLIED.  USE AT YOUR OWN RISK.",
+      "\"\"\"",
+      "from . import __version__",
+      "f2py_version = __version__.version"
+    ],
+    "imports": [
+      "from . import __version__",
+      "from . import capi_maps, func2subr",
+      "from .auxfuncs import getuseblocks, hasbody, hascommon, hasnote, isintent_hide, outmess",
+      "from .crackfortran import rmbadname"
+    ],
+    "classes": [],
+    "functions": [
+      "findcommonblocks",
+      "buildhooks"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0010_026_1c9db542b75c961b_AI_Chariot_Legacy_666_1.0.0_20260508_common_rules.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 207,
+  "generated_at": "2026-05-08T18:44:53+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__node_metadata_hook.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__node_metadata_hook.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2513,
+  "content_sha256": "4b9e781daed5e1f732bfa4237d53d445448b0303b4f0d49f0d586e0faa1bced6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 80,
+    "non_empty_lines": 67,
+    "char_count": 2513,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "import contextlib",
+      "import torch",
+      "from torch.fx.graph_module import GraphModule",
+      "_EMPTY_NN_MODULE_STACK_KEY = \"_empty_nn_module_stack_from_metadata_hook\"",
+      "def _node_metadata_hook(node: torch.fx.Node, stack_trace: str) -> None:",
+      "    \"\"\"",
+      "    Hook for adding the appropriate metadata to nodes that are created during a",
+      "    pass using graph.create_node. An example of how to use it:",
+      "    ```"
+    ],
+    "imports": [
+      "import contextlib",
+      "import torch",
+      "from torch.fx.graph_module import GraphModule"
+    ],
+    "classes": [],
+    "functions": [
+      "_node_metadata_hook",
+      "_set_node_metadata_hook"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_207_4b9e781daed5e1f7_AI_Chariot_Legacy_666_1.0.0_20260508__node_metadata_hook.py.json"
+}

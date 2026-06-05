@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 421,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayobject.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayobject.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3431,
+  "content_sha256": "c4cdcd4aaa14b8f25819fff5bfb0c6d3f83ed4909eabb2a77af6c89658126e2f",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 72,
+    "char_count": 3431,
+    "preview_lines": [
+      "import sys",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import HAS_REFCOUNT, assert_array_equal",
+      "def test_matrix_transpose_raises_error_for_1d():",
+      "    msg = \"matrix transpose with ndim < 2 is undefined\"",
+      "    arr = np.arange(48)",
+      "    with pytest.raises(ValueError, match=msg):",
+      "        arr.mT",
+      "def test_matrix_transpose_equals_transpose_2d():"
+    ],
+    "imports": [
+      "import sys",
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import HAS_REFCOUNT, assert_array_equal"
+    ],
+    "classes": [
+      "MyArr",
+      "MyArrNoWrap"
+    ],
+    "functions": [
+      "test_matrix_transpose_raises_error_for_1d",
+      "test_matrix_transpose_equals_transpose_2d",
+      "test_matrix_transpose_equals_swapaxes",
+      "test_array_wrap",
+      "test_cleanup_with_refs_non_contig"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_421_c4cdcd4aaa14b8f2_AI_Chariot_Legacy_666_1.0.0_20260508_test_arrayobject.py.json"
+}

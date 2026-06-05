@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 268,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_window.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_window.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 505,
+  "content_sha256": "fe38b882854a913e183d3c996bf234376c869b005f075fcb0c6d1649719b9a5a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 20,
+    "non_empty_lines": 13,
+    "char_count": 505,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Generic",
+      "from narwhals._compliant.typing import NativeExprT_co",
+      "if TYPE_CHECKING:",
+      "    from collections.abc import Sequence",
+      "__all__ = [\"WindowInputs\"]",
+      "class WindowInputs(Generic[NativeExprT_co]):",
+      "    __slots__ = (\"order_by\", \"partition_by\")",
+      "    def __init__(",
+      "        self, partition_by: Sequence[str | NativeExprT_co], order_by: Sequence[str]"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import TYPE_CHECKING, Generic",
+      "from narwhals._compliant.typing import NativeExprT_co",
+      "from collections.abc import Sequence"
+    ],
+    "classes": [
+      "WindowInputs"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_268_fe38b882854a913e_AI_Chariot_Legacy_666_1.0.0_20260508_window.py.json"
+}

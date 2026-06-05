@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 153,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\autograd\\rpc_messages\\propagate_gradients_resp.h",
+  "name": "propagate_gradients_resp.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 828,
+  "content_sha256": "be142fbce5ed2bf528d53e03f77ea2ce6ad9c012c1be2dd3736d99d2206ed747",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 24,
+    "non_empty_lines": 20,
+    "char_count": 828,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/distributed/rpc/message.h>",
+      "#include <torch/csrc/distributed/rpc/rpc_command_base.h>",
+      "namespace torch {",
+      "namespace distributed {",
+      "namespace autograd {",
+      "// Response for the PropagateGradients call. Currently, this class is mostly",
+      "// just a placeholder and sends an empty message over the wire. The purpose of",
+      "// this RPC command is to indicate whether or not the PropagateGradientsReq call",
+      "// was successfully or not."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_153_be142fbce5ed2bf5_propagate_gradients_resp.h.json"
+}

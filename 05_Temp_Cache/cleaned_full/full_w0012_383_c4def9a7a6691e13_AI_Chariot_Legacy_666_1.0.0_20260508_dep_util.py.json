@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 383,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dep_util.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dep_util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 349,
+  "content_sha256": "c4def9a7a6691e13221c473eae92f65e29494329c79c336269f1ed79a678b635",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 11,
+    "char_count": 349,
+    "preview_lines": [
+      "import warnings",
+      "from . import _modified",
+      "def __getattr__(name):",
+      "    if name not in ['newer', 'newer_group', 'newer_pairwise']:",
+      "        raise AttributeError(name)",
+      "    warnings.warn(",
+      "        \"dep_util is Deprecated. Use functions from setuptools instead.\",",
+      "        DeprecationWarning,",
+      "        stacklevel=2,",
+      "    )"
+    ],
+    "imports": [
+      "import warnings",
+      "from . import _modified"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_383_c4def9a7a6691e13_AI_Chariot_Legacy_666_1.0.0_20260508_dep_util.py.json"
+}

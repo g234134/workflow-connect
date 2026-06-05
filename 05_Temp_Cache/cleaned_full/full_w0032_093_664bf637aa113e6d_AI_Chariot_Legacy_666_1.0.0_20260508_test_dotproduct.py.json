@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 93,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dotproduct.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dotproduct.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1171,
+  "content_sha256": "664bf637aa113e6d3eb0de0f170b1516b33963faafe31da05aa410403f3a8416",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 35,
+    "non_empty_lines": 28,
+    "char_count": 1171,
+    "preview_lines": [
+      "from sympy.core.expr import unchanged",
+      "from sympy.core.mul import Mul",
+      "from sympy.matrices import Matrix",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol",
+      "from sympy.matrices.expressions.dotproduct import DotProduct",
+      "from sympy.testing.pytest import raises",
+      "A = Matrix(3, 1, [1, 2, 3])",
+      "B = Matrix(3, 1, [1, 3, 5])",
+      "C = Matrix(4, 1, [1, 2, 4, 5])",
+      "D = Matrix(2, 2, [1, 2, 3, 4])"
+    ],
+    "imports": [
+      "from sympy.core.expr import unchanged",
+      "from sympy.core.mul import Mul",
+      "from sympy.matrices import Matrix",
+      "from sympy.matrices.expressions.matexpr import MatrixSymbol",
+      "from sympy.matrices.expressions.dotproduct import DotProduct",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_docproduct",
+      "test_dotproduct_symbolic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_093_664bf637aa113e6d_AI_Chariot_Legacy_666_1.0.0_20260508_test_dotproduct.py.json"
+}

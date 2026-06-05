@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 43,
+  "idx_in_wave": 4,
+  "generated_at": "2026-05-08T18:47:13+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\numpy\\typing\\tests\\data\\reveal\\multiarray.pyi",
+  "name": "multiarray.pyi",
+  "extension": ".pyi",
+  "original_type": "python_stub",
+  "size_bytes": 8250,
+  "content_sha256": "0bfbb6ebfda5bee861df1e73cbea9072d18ed64b3580cb02fe94370ed5e1bb9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 197,
+    "non_empty_lines": 154,
+    "char_count": 8250,
+    "preview_lines": [
+      "import datetime as dt",
+      "from typing import Any, Literal, TypeVar, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt",
+      "_ScalarT_co = TypeVar(\"_ScalarT_co\", bound=np.generic, covariant=True)",
+      "class SubClass(npt.NDArray[_ScalarT_co]): ...",
+      "subclass: SubClass[np.float64]",
+      "AR_f8: npt.NDArray[np.float64]",
+      "AR_i8: npt.NDArray[np.int64]",
+      "AR_u1: npt.NDArray[np.uint8]"
+    ],
+    "imports": [
+      "import datetime as dt",
+      "from typing import Any, Literal, TypeVar, assert_type",
+      "import numpy as np",
+      "import numpy.typing as npt"
+    ],
+    "classes": [
+      "SubClass"
+    ],
+    "functions": [
+      "func11",
+      "func21",
+      "func12"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0043_004_0bfbb6ebfda5bee8_multiarray.pyi.json"
+}

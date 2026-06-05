@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 221,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\rpc\\tensorpipe_agent.h",
+  "name": "tensorpipe_agent.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 17920,
+  "content_sha256": "df555cac683e7881160884b650cb97035c7c70fedd431dc9fbcc6e1c789f63c0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 495,
+    "non_empty_lines": 405,
+    "char_count": 17920,
+    "preview_lines": [
+      "#pragma once",
+      "#ifdef USE_TENSORPIPE",
+      "#include <atomic>",
+      "#include <thread>",
+      "#include <c10/core/thread_pool.h>",
+      "#include <torch/csrc/distributed/c10d/PrefixStore.hpp>",
+      "#include <torch/csrc/distributed/c10d/Store.hpp>",
+      "#include <torch/csrc/distributed/rpc/rpc_agent.h>",
+      "// Forward-declare the TensorPipe classes we need, to avoid including its",
+      "// headers in PyTorch's ones and thus have it become a public dependency."
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_221_df555cac683e7881_tensorpipe_agent.h.json"
+}

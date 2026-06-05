@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 436,
+  "generated_at": "2026-05-08T18:47:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_z3_wrapper.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_z3_wrapper.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3747,
+  "content_sha256": "98599fec358357466eef4d3a11d14ae2a1034cfeec7e6717adf19990c2bdeefa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 115,
+    "non_empty_lines": 89,
+    "char_count": 3747,
+    "preview_lines": [
+      "from sympy.printing.smtlib import smtlib_code",
+      "from sympy.assumptions.assume import AppliedPredicate",
+      "from sympy.assumptions.cnf import EncodedCNF",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.core import Add, Mul",
+      "from sympy.core.relational import Equality, LessThan, GreaterThan, StrictLessThan, StrictGreaterThan",
+      "from sympy.functions.elementary.complexes import Abs",
+      "from sympy.functions.elementary.exponential import Pow",
+      "from sympy.functions.elementary.miscellaneous import Min, Max",
+      "from sympy.logic.boolalg import And, Or, Xor, Implies"
+    ],
+    "imports": [
+      "from sympy.printing.smtlib import smtlib_code",
+      "from sympy.assumptions.assume import AppliedPredicate",
+      "from sympy.assumptions.cnf import EncodedCNF",
+      "from sympy.assumptions.ask import Q",
+      "from sympy.core import Add, Mul",
+      "from sympy.core.relational import Equality, LessThan, GreaterThan, StrictLessThan, StrictGreaterThan",
+      "from sympy.functions.elementary.complexes import Abs",
+      "from sympy.functions.elementary.exponential import Pow",
+      "from sympy.functions.elementary.miscellaneous import Min, Max",
+      "from sympy.logic.boolalg import And, Or, Xor, Implies",
+      "from sympy.logic.boolalg import Not, ITE",
+      "from sympy.assumptions.relation.equality import StrictGreaterThanPredicate, StrictLessThanPredicate, GreaterThanPredicat",
+      "from sympy.external import import_module"
+    ],
+    "classes": [],
+    "functions": [
+      "z3_satisfiable",
+      "z3_model_to_sympy_model",
+      "clause_to_assertion",
+      "encoded_cnf_to_z3_solver"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_436_98599fec35835746_AI_Chariot_Legacy_666_1.0.0_20260508_z3_wrapper.py.json"
+}

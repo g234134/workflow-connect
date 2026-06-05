@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 66,
+  "idx_in_wave": 460,
+  "generated_at": "2026-05-08T18:48:50+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\agents\\schema.py",
+  "name": "schema.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1259,
+  "content_sha256": "c6304033ff9989a6b41a87930b01be1f97235c9aeb3ad7136d7fff26d21c6516",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 37,
+    "non_empty_lines": 31,
+    "char_count": 1256,
+    "preview_lines": [
+      "from typing import Any",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.prompts.chat import ChatPromptTemplate",
+      "from typing_extensions import override",
+      "class AgentScratchPadChatPromptTemplate(ChatPromptTemplate):",
+      "    \"\"\"Chat prompt template for the agent scratchpad.\"\"\"",
+      "    @classmethod",
+      "    @override",
+      "    def is_lc_serializable(cls) -> bool:",
+      "        return False"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from langchain_core.agents import AgentAction",
+      "from langchain_core.prompts.chat import ChatPromptTemplate",
+      "from typing_extensions import override"
+    ],
+    "classes": [
+      "AgentScratchPadChatPromptTemplate"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0066_460_c6304033ff9989a6_schema.py.json"
+}

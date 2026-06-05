@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 341,
+  "generated_at": "2026-05-08T18:45:28+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_json_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_json_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1373,
+  "content_sha256": "f935013eb8a8594a7fac7d0b67bb8b291eed4a4fb5dc85a756f330d9fa7e4b04",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 42,
+    "non_empty_lines": 32,
+    "char_count": 1373,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "from typing import Any",
+      "from .import_utils import optional_import_block, require_optional_import",
+      "with optional_import_block():",
+      "    from jsonschema import Draft7Validator, RefResolver",
+      "__all__ = [\"resolve_json_references\"]",
+      "@require_optional_import(\"jsonschema\", \"gemini\")",
+      "def resolve_json_references(schema: dict[str, Any]) -> dict[str, Any]:"
+    ],
+    "imports": [
+      "from typing import Any",
+      "from .import_utils import optional_import_block, require_optional_import",
+      "from jsonschema import Draft7Validator, RefResolver"
+    ],
+    "classes": [],
+    "functions": [
+      "resolve_json_references"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_341_f935013eb8a8594a_AI_Chariot_Legacy_666_1.0.0_20260508_json_utils.py.json"
+}

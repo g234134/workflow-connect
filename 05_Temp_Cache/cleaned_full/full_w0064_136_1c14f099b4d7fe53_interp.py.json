@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 136,
+  "generated_at": "2026-05-08T18:48:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\utils\\_sympy\\interp.py",
+  "name": "interp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3329,
+  "content_sha256": "1c14f099b4d7fe53d1d242748f6f50ad666f6407c80442aaeffe3e9b72f8b33c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 111,
+    "non_empty_lines": 95,
+    "char_count": 3329,
+    "preview_lines": [
+      "\"\"\"",
+      "This is a simple interpreter for Sympy expressions that dispatches to",
+      "classes following the torch._inductor.virtualized calling convention.",
+      "For directness, the interpreter takes the handler directly rather than",
+      "consulting the TLS.  It does not use most of the methods on the full",
+      "handler; only those with corresponding Sympy expressions.  To see an example",
+      "of a full handler, see torch.utils._sympy.value_ranges.ValueRangeAnalysis.",
+      "\"\"\"",
+      "import functools",
+      "from typing import Any, Dict, Union"
+    ],
+    "imports": [
+      "import functools",
+      "from typing import Any, Dict, Union",
+      "import sympy",
+      "from sympy.logic.boolalg import Boolean as SympyBoolean, BooleanAtom",
+      "import torch",
+      "from .functions import ("
+    ],
+    "classes": [],
+    "functions": [
+      "handlers",
+      "sympy_interp"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_136_1c14f099b4d7fe53_interp.py.json"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 65,
+  "idx_in_wave": 336,
+  "generated_at": "2026-05-08T18:48:44+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_enterprise\\litellm_enterprise\\enterprise_callbacks\\secrets_plugins\\datadog_access_token.py",
+  "name": "datadog_access_token.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 622,
+  "content_sha256": "1c1d8f84fab723878132df697a7320bd727dffade7179ac284fb0909c69ed251",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 23,
+    "non_empty_lines": 17,
+    "char_count": 622,
+    "preview_lines": [
+      "\"\"\"",
+      "This plugin searches for Datadog Access Tokens.",
+      "\"\"\"",
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector",
+      "class DatadogAccessTokenDetector(RegexBasedDetector):",
+      "    \"\"\"Scans for Datadog Access Tokens.\"\"\"",
+      "    @property",
+      "    def secret_type(self) -> str:",
+      "        return \"Datadog Access Token\""
+    ],
+    "imports": [
+      "import re",
+      "from detect_secrets.plugins.base import RegexBasedDetector"
+    ],
+    "classes": [
+      "DatadogAccessTokenDetector"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0065_336_1c1d8f84fab72387_datadog_access_token.py.json"
+}

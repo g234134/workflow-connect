@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 389,
+  "generated_at": "2026-05-08T18:46:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_reportLabPen.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_reportLabPen.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2145,
+  "content_sha256": "bd5446d38e0bbd4bc5b6aad11584623054bf5121c0780bf3f72f7eefffd66d8e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 79,
+    "non_empty_lines": 60,
+    "char_count": 2145,
+    "preview_lines": [
+      "from fontTools.pens.basePen import BasePen",
+      "from reportlab.graphics.shapes import Path",
+      "__all__ = [\"ReportLabPen\"]",
+      "class ReportLabPen(BasePen):",
+      "    \"\"\"A pen for drawing onto a ``reportlab.graphics.shapes.Path`` object.\"\"\"",
+      "    def __init__(self, glyphSet, path=None):",
+      "        BasePen.__init__(self, glyphSet)",
+      "        if path is None:",
+      "            path = Path()",
+      "        self.path = path"
+    ],
+    "imports": [
+      "from fontTools.pens.basePen import BasePen",
+      "from reportlab.graphics.shapes import Path",
+      "import sys",
+      "from fontTools.ttLib import TTFont",
+      "from reportlab.lib import colors",
+      "from reportlab.graphics import renderPM",
+      "from reportlab.graphics.shapes import Group, Drawing, scale"
+    ],
+    "classes": [
+      "ReportLabPen"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_389_bd5446d38e0bbd4b_AI_Chariot_Legacy_666_1.0.0_20260508_reportLabPen.py.json"
+}

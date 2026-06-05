@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "dbd7632cd9f441749d44b8094ce722da",
+  "wave": 2,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:44:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__collections.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__collections.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17595,
+  "content_sha256": "52f57b52ab464d229dbf0f0dfcbc56b848a464b9b9801d7315f4d9607f4a8409",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 487,
+    "non_empty_lines": 402,
+    "char_count": 17595,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import typing",
+      "from collections import OrderedDict",
+      "from enum import Enum, auto",
+      "from threading import RLock",
+      "if typing.TYPE_CHECKING:",
+      "    # We can only import Protocol if TYPE_CHECKING because it's a development",
+      "    # dependency, and is not available at runtime.",
+      "    from typing import Protocol",
+      "    from typing_extensions import Self"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import typing",
+      "from collections import OrderedDict",
+      "from enum import Enum, auto",
+      "from threading import RLock",
+      "from typing import Protocol",
+      "from typing_extensions import Self"
+    ],
+    "classes": [
+      "_Sentinel",
+      "RecentlyUsedContainer",
+      "HTTPHeaderDictItemView",
+      "HTTPHeaderDict"
+    ],
+    "functions": [
+      "ensure_can_construct_http_header_dict"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0002_298_52f57b52ab464d22_AI_Chariot_Legacy_666_1.0.0_20260508__collections.py.json"
+}

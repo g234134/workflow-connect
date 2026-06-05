@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 171,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_set_name.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_set_name.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 595,
+  "content_sha256": "a10264c877909c030a6225c34e955daa711bcd2d6b6c415ce8ad9adbda123eda",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 21,
+    "non_empty_lines": 17,
+    "char_count": 595,
+    "preview_lines": [
+      "from datetime import datetime",
+      "from pandas import Series",
+      "class TestSetName:",
+      "    def test_set_name(self):",
+      "        ser = Series([1, 2, 3])",
+      "        ser2 = ser._set_name(\"foo\")",
+      "        assert ser2.name == \"foo\"",
+      "        assert ser.name is None",
+      "        assert ser is not ser2",
+      "    def test_set_name_attribute(self):"
+    ],
+    "imports": [
+      "from datetime import datetime",
+      "from pandas import Series"
+    ],
+    "classes": [
+      "TestSetName"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_171_a10264c877909c03_AI_Chariot_Legacy_666_1.0.0_20260508_test_set_name.py.json"
+}

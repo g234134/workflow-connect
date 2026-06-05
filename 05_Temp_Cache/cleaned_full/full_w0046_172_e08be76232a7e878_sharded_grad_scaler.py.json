@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 172,
+  "generated_at": "2026-05-08T18:47:32+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\fsdp\\sharded_grad_scaler.py",
+  "name": "sharded_grad_scaler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 17631,
+  "content_sha256": "e08be76232a7e878d395153ad706cff33d7feac26ab4a4e2baba24601dd8c5ec",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 384,
+    "non_empty_lines": 329,
+    "char_count": 17631,
+    "preview_lines": [
+      "import logging",
+      "from collections import abc, defaultdict",
+      "from typing import Any, Dict, Iterable, List, Optional, overload, Sequence, Tuple, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.cuda.amp.grad_scaler import _MultiDeviceReplicator, GradScaler, OptState",
+      "from torch.distributed.distributed_c10d import ProcessGroup",
+      "log = logging.getLogger(__name__)",
+      "def _refresh_per_optimizer_state() -> Dict[str, Any]:",
+      "    return {\"stage\": OptState.READY, \"found_inf_per_device\": {}}"
+    ],
+    "imports": [
+      "import logging",
+      "from collections import abc, defaultdict",
+      "from typing import Any, Dict, Iterable, List, Optional, overload, Sequence, Tuple, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "from torch.cuda.amp.grad_scaler import _MultiDeviceReplicator, GradScaler, OptState",
+      "from torch.distributed.distributed_c10d import ProcessGroup"
+    ],
+    "classes": [
+      "_GeneralMultiDeviceReplicator",
+      "ShardedGradScaler"
+    ],
+    "functions": [
+      "_refresh_per_optimizer_state",
+      "_is_supported_device"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_172_e08be76232a7e878_sharded_grad_scaler.py.json"
+}

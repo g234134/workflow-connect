@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 44,
+  "idx_in_wave": 485,
+  "generated_at": "2026-05-08T18:47:27+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\_dynamo\\variables\\torch_function.py",
+  "name": "torch_function.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9346,
+  "content_sha256": "0208219ff21314a7e35daa0d4212c7cd9ca4e0b841c752c0469d0dbf88c2fece",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 236,
+    "non_empty_lines": 190,
+    "char_count": 9346,
+    "preview_lines": [
+      "import inspect",
+      "from typing import Dict, List",
+      "import torch.utils._pytree as pytree",
+      "from torch.overrides import _get_overloaded_args, get_default_nowrap_functions",
+      "from ..exc import unimplemented",
+      "from ..guards import GuardBuilder, install_guard",
+      "from ..source import AttrSource, GlobalSource",
+      "from ..utils import is_tensor_base_attr_getter",
+      "from .base import VariableTracker",
+      "from .constant import ConstantVariable"
+    ],
+    "imports": [
+      "import inspect",
+      "from typing import Dict, List",
+      "import torch.utils._pytree as pytree",
+      "from torch.overrides import _get_overloaded_args, get_default_nowrap_functions",
+      "from ..exc import unimplemented",
+      "from ..guards import GuardBuilder, install_guard",
+      "from ..source import AttrSource, GlobalSource",
+      "from ..utils import is_tensor_base_attr_getter",
+      "from .base import VariableTracker",
+      "from .constant import ConstantVariable",
+      "from .lists import TupleVariable",
+      "from .tensor import TensorVariable",
+      "from .user_defined import UserDefinedClassVariable",
+      "import torch",
+      "from .builder import SourcelessBuilder, VariableBuilder",
+      "import torch",
+      "import torch",
+      "from .builder import SourcelessBuilder"
+    ],
+    "classes": [
+      "TensorWithTFOverrideVariable"
+    ],
+    "functions": [
+      "is_torch_function_user_object",
+      "_is_attr_overidden",
+      "call_torch_function",
+      "build_torch_function_fn",
+      "can_dispatch_torch_function",
+      "dispatch_torch_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0044_485_0208219ff21314a7_torch_function.py.json"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 67,
+  "idx_in_wave": 148,
+  "generated_at": "2026-05-08T18:48:51+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\langchain\\langchain_classic\\chains\\router\\multi_retrieval_prompt.py",
+  "name": "multi_retrieval_prompt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1112,
+  "content_sha256": "448065d979281ce70c085da0709130d7c3dffed1964eb85b540235ae6618a1ce",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 30,
+    "non_empty_lines": 24,
+    "char_count": 1109,
+    "preview_lines": [
+      "\"\"\"Prompt for the router chain in the multi-retrieval qa chain.\"\"\"",
+      "MULTI_RETRIEVAL_ROUTER_TEMPLATE = \"\"\"\\",
+      "Given a query to a question answering system select the system best suited \\",
+      "for the input. You will be given the names of the available systems and a description \\",
+      "of what questions the system is best suited for. You may also revise the original \\",
+      "input if you think that revising it will ultimately lead to a better response.",
+      "<< FORMATTING >>",
+      "Return a markdown code snippet with a JSON object formatted to look like:",
+      "```json",
+      "{{{{"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0067_148_448065d979281ce7_multi_retrieval_prompt.py.json"
+}

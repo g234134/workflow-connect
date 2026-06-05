@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 465,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_cache_tools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_cache_tools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 948,
+  "content_sha256": "871bca0ddb964aff96687e2881925a770aacda3d5a1c7873d084d9613828bee8",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 28,
+    "non_empty_lines": 22,
+    "char_count": 948,
+    "preview_lines": [
+      "from pydantic import BaseModel, Field",
+      "from crewai.agents.cache.cache_handler import CacheHandler",
+      "from crewai.tools.structured_tool import CrewStructuredTool",
+      "from crewai.utilities.string_utils import sanitize_tool_name",
+      "class CacheTools(BaseModel):",
+      "    \"\"\"Default tools to hit the cache.\"\"\"",
+      "    name: str = \"Hit Cache\"",
+      "    cache_handler: CacheHandler = Field(",
+      "        description=\"Cache Handler for the crew\",",
+      "        default_factory=CacheHandler,"
+    ],
+    "imports": [
+      "from pydantic import BaseModel, Field",
+      "from crewai.agents.cache.cache_handler import CacheHandler",
+      "from crewai.tools.structured_tool import CrewStructuredTool",
+      "from crewai.utilities.string_utils import sanitize_tool_name"
+    ],
+    "classes": [
+      "CacheTools"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_465_871bca0ddb964aff_AI_Chariot_Legacy_666_1.0.0_20260508_cache_tools.py.json"
+}

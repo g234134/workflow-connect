@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 16,
+  "idx_in_wave": 189,
+  "generated_at": "2026-05-08T18:45:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_gpt2_parity.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_gpt2_parity.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18248,
+  "content_sha256": "03deb72682b5cd06fa5201543a9d6cb6baa3a09fe5650da9beb14b6b452320c0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 513,
+    "non_empty_lines": 414,
+    "char_count": 18248,
+    "preview_lines": [
+      "# -------------------------------------------------------------------------",
+      "# Copyright (c) Microsoft Corporation.  All rights reserved.",
+      "# Licensed under the MIT License.  See License.txt in the project root for",
+      "# license information.",
+      "# --------------------------------------------------------------------------",
+      "# This script uses different configurations in mixed precision conversion for GPT-2 model, and",
+      "# measures the inference latency, top 1 match rate (compared to PyTorch FP32 model) and ONNX model size.",
+      "# It outputs a csv file with Mann-Whitney U test and T-Test on each pair of experiments, where",
+      "# pvalue < 0.05 means two experiments have significant difference on top 1 match rate.",
+      "# User could use this script to select the best mixed precision model according to these metrics."
+    ],
+    "imports": [
+      "import argparse",
+      "import csv",
+      "import datetime",
+      "import json",
+      "import logging",
+      "import os",
+      "import onnx",
+      "import scipy.stats",
+      "from benchmark_helper import get_ort_environment_variables, setup_logger",
+      "from convert_to_onnx import main",
+      "from gpt2_helper import PRETRAINED_GPT2_MODELS, Gpt2Helper",
+      "from onnx_model import OnnxModel",
+      "import csv  # noqa: PLC0415"
+    ],
+    "classes": [
+      "ParityTask"
+    ],
+    "functions": [
+      "parse_arguments",
+      "load_results_from_csv",
+      "get_latency",
+      "score",
+      "print_wins",
+      "run_significance_test",
+      "get_last_matmul_node_name",
+      "get_mixed_precision_parameters",
+      "run_candidate",
+      "get_baselines",
+      "run_tuning_step0",
+      "run_tuning_step1",
+      "run_tuning_step2",
+      "run_parity"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0016_189_03deb72682b5cd06_AI_Chariot_Legacy_666_1.0.0_20260508_gpt2_parity.py.json"
+}

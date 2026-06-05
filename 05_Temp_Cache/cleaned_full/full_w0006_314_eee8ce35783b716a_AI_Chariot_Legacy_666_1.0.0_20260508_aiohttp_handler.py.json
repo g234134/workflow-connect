@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 314,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_aiohttp_handler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_aiohttp_handler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 25027,
+  "content_sha256": "eee8ce35783b716ab6a5e7aeb723d1bb135e9a4191c71c3f9444aa5d790d16be",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 722,
+    "non_empty_lines": 660,
+    "char_count": 25027,
+    "preview_lines": [
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, Tuple, Union, cast",
+      "import aiohttp",
+      "import httpx  # type: ignore",
+      "from aiohttp import ClientSession, FormData",
+      "import litellm",
+      "import litellm.litellm_core_utils",
+      "import litellm.types",
+      "import litellm.types.utils",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig",
+      "from litellm.llms.base_llm.image_variations.transformation import ("
+    ],
+    "imports": [
+      "from typing import TYPE_CHECKING, Any, Callable, Optional, Tuple, Union, cast",
+      "import aiohttp",
+      "import httpx  # type: ignore",
+      "from aiohttp import ClientSession, FormData",
+      "import litellm",
+      "import litellm.litellm_core_utils",
+      "import litellm.types",
+      "import litellm.types.utils",
+      "from litellm.llms.base_llm.chat.transformation import BaseConfig",
+      "from litellm.llms.base_llm.image_variations.transformation import (",
+      "from litellm.llms.custom_httpx.http_handler import (",
+      "from litellm.llms.custom_httpx.aiohttp_transport import LiteLLMAiohttpTransport",
+      "from litellm.types.llms.openai import FileTypes",
+      "from litellm.types.utils import HttpHandlerRequestFields, ImageResponse, LlmProviders",
+      "from litellm.utils import CustomStreamWrapper, ModelResponse, ProviderConfigManager",
+      "from litellm.litellm_core_utils.litellm_logging import Logging as _LiteLLMLoggingObj",
+      "import asyncio"
+    ],
+    "classes": [
+      "BaseLLMAIOHTTPHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_314_eee8ce35783b716a_AI_Chariot_Legacy_666_1.0.0_20260508_aiohttp_handler.py.json"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 65,
+  "generated_at": "2026-05-08T18:49:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\groq\\langchain_groq\\_compat.py",
+  "name": "_compat.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2676,
+  "content_sha256": "c6a575802448501dbf688e635b03e9fece091f779889e27bf0783ae1dfa67570",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 71,
+    "non_empty_lines": 60,
+    "char_count": 2673,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import json",
+      "from typing import Any, cast",
+      "from langchain_core.messages import content as types",
+      "def _convert_from_v1_to_groq(",
+      "    content: list[types.ContentBlock],",
+      "    model_provider: str | None,",
+      ") -> tuple[list[dict[str, Any] | str], dict]:",
+      "    new_content: list = []",
+      "    new_additional_kwargs: dict = {}"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "from typing import Any, cast",
+      "from langchain_core.messages import content as types"
+    ],
+    "classes": [],
+    "functions": [
+      "_convert_from_v1_to_groq"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_065_c6a575802448501d__compat.py.json"
+}

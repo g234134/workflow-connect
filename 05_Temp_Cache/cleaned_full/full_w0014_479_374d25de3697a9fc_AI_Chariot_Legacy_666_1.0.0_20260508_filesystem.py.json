@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 479,
+  "generated_at": "2026-05-08T18:45:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_filesystem.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_filesystem.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2965,
+  "content_sha256": "374d25de3697a9fc0f6df28f4d1650dba4c1e07724faa02c358083ad2130b9c6",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 97,
+    "non_empty_lines": 76,
+    "char_count": 2965,
+    "preview_lines": [
+      "import os",
+      "import shutil",
+      "import stat",
+      "import sys",
+      "import tempfile",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "from typing import Any, Generator, Iterator, Union",
+      "from ..errors import Warnings"
+    ],
+    "imports": [
+      "import os",
+      "import shutil",
+      "import stat",
+      "import sys",
+      "import tempfile",
+      "import warnings",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "from typing import Any, Generator, Iterator, Union",
+      "from ..errors import Warnings",
+      "from cloudpathlib import AnyPath  # noqa: F811"
+    ],
+    "classes": [],
+    "functions": [
+      "working_dir",
+      "make_tempdir",
+      "is_cwd",
+      "ensure_path",
+      "ensure_pathy",
+      "is_subpath_of"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_479_374d25de3697a9fc_AI_Chariot_Legacy_666_1.0.0_20260508_filesystem.py.json"
+}

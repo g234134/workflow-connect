@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 298,
+  "generated_at": "2026-05-08T18:46:42+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_textcorpus.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_textcorpus.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 24536,
+  "content_sha256": "a5453965400e1c99c7b6cf2bbc3710850db57d642331e39a8132722b703f4daa",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 616,
+    "non_empty_lines": 497,
+    "char_count": 24536,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "# -*- coding: utf-8 -*-",
+      "#",
+      "# Licensed under the GNU LGPL v2.1 - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html",
+      "\"\"\"Module provides some code scaffolding to simplify use of built dictionary for constructing BoW vectors.",
+      "Notes",
+      "-----",
+      "Text corpora usually reside on disk, as text files in one format or another In a common scenario,",
+      "we need to build a dictionary (a `word->integer id` mapping), which is then used to construct sparse bag-of-word vectors",
+      "(= iterable of `(word_id, word_weight)`)."
+    ],
+    "imports": [
+      "from __future__ import with_statement",
+      "import logging",
+      "import os",
+      "import random",
+      "import re",
+      "import sys",
+      "from gensim import interfaces, utils",
+      "from gensim.corpora.dictionary import Dictionary",
+      "from gensim.parsing.preprocessing import (",
+      "from gensim.utils import deaccent, simple_tokenize",
+      "from smart_open import open"
+    ],
+    "classes": [
+      "TextCorpus",
+      "TextDirectoryCorpus"
+    ],
+    "functions": [
+      "walk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_298_a5453965400e1c99_AI_Chariot_Legacy_666_1.0.0_20260508_textcorpus.py.json"
+}

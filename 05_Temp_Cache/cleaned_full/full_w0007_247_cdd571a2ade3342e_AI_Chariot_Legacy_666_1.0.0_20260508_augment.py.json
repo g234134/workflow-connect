@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 247,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_augment.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_augment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13434,
+  "content_sha256": "cdd571a2ade3342eb71746c2176232c677e7060081030691979ed1fc6c10eecc",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 344,
+    "non_empty_lines": 312,
+    "char_count": 13434,
+    "preview_lines": [
+      "import itertools",
+      "import random",
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Callable, Dict, Iterator, List, Optional, Tuple",
+      "from .example import Example",
+      "from .iob_utils import _doc_to_biluo_tags_with_partial, split_bilu_label",
+      "if TYPE_CHECKING:",
+      "    from ..language import Language  # noqa: F401",
+      "def create_combined_augmenter(",
+      "    lower_level: float,"
+    ],
+    "imports": [
+      "import itertools",
+      "import random",
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Callable, Dict, Iterator, List, Optional, Tuple",
+      "from .example import Example",
+      "from .iob_utils import _doc_to_biluo_tags_with_partial, split_bilu_label",
+      "from ..language import Language  # noqa: F401"
+    ],
+    "classes": [],
+    "functions": [
+      "create_combined_augmenter",
+      "combined_augmenter",
+      "create_orth_variants_augmenter",
+      "create_lower_casing_augmenter",
+      "dont_augment",
+      "lower_casing_augmenter",
+      "make_lowercase_variant",
+      "orth_variants_augmenter",
+      "make_orth_variants",
+      "make_whitespace_variant",
+      "construct_modified_raw_text"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_247_cdd571a2ade3342e_AI_Chariot_Legacy_666_1.0.0_20260508_augment.py.json"
+}

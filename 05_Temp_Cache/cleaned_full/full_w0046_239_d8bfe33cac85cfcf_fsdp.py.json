@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 239,
+  "generated_at": "2026-05-08T18:47:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\tensor\\parallel\\fsdp.py",
+  "name": "fsdp.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 14081,
+  "content_sha256": "d8bfe33cac85cfcfca50f26e814e02c8f70f82b7735ed5ca5ad0af9a7b5d60bd",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 391,
+    "non_empty_lines": 323,
+    "char_count": 14081,
+    "preview_lines": [
+      "import copy",
+      "from typing import Any, cast, List, Optional, Tuple",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed._shard.sharding_spec as shard_spec",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from torch.distributed._shard.sharded_tensor import (",
+      "    Shard,",
+      "    ShardedTensor,",
+      "    ShardedTensorMetadata,"
+    ],
+    "imports": [
+      "import copy",
+      "from typing import Any, cast, List, Optional, Tuple",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.distributed._shard.sharding_spec as shard_spec",
+      "import torch.distributed.distributed_c10d as c10d",
+      "from torch.distributed._shard.sharded_tensor import (",
+      "from torch.distributed._shard.sharding_spec import ShardMetadata",
+      "from torch.distributed._shard.sharding_spec.chunk_sharding_spec import ChunkShardingSpec",
+      "from torch.distributed._tensor import DeviceMesh, DTensor, Replicate, Shard as DShard",
+      "from torch.distributed.device_mesh import _mesh_resources",
+      "from torch.distributed.fsdp._common_utils import _set_fsdp_flattened",
+      "from torch.distributed.fsdp._fsdp_extensions import FSDPExtensions",
+      "from torch.distributed.fsdp._shard_utils import _create_chunk_sharded_tensor",
+      "from torch.distributed.remote_device import _remote_device",
+      "from torch.distributed.tensor.parallel._data_parallel_utils import ("
+    ],
+    "classes": [
+      "DTensorExtensions"
+    ],
+    "functions": [
+      "_get_box",
+      "_get_box_for",
+      "_get_local_box",
+      "_create_shard_md_from_dt",
+      "_create_sharded_tensor_md_from_dt",
+      "_get_dt_pg",
+      "_rewrite_spec_if_needed",
+      "_chunk_tensor",
+      "_chunk_dtensor",
+      "_pre_load_state_dict",
+      "_all_gather_dtensor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_239_d8bfe33cac85cfcf_fsdp.py.json"
+}

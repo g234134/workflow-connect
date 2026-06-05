@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 33,
+  "idx_in_wave": 307,
+  "generated_at": "2026-05-08T18:46:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_local_feature_flags.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_local_feature_flags.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19842,
+  "content_sha256": "3233a111d651ed39725bea51000c5327991f0040373b8d187bbe9b402f00a2f4",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 469,
+    "non_empty_lines": 389,
+    "char_count": 19842,
+    "preview_lines": [
+      "import asyncio",
+      "import pytest",
+      "import respx",
+      "import httpx",
+      "import threading",
+      "from unittest.mock import Mock, patch",
+      "from typing import Dict, Optional, List",
+      "from itertools import chain, repeat",
+      "from .types import LocalFlagsConfig, ExperimentationFlag, RuleSet, Variant, Rollout, FlagTestUsers, ExperimentationFlags, VariantOverride, SelectedVariant",
+      "from .local_feature_flags import LocalFeatureFlagsProvider"
+    ],
+    "imports": [
+      "import asyncio",
+      "import pytest",
+      "import respx",
+      "import httpx",
+      "import threading",
+      "from unittest.mock import Mock, patch",
+      "from typing import Dict, Optional, List",
+      "from itertools import chain, repeat",
+      "from .types import LocalFlagsConfig, ExperimentationFlag, RuleSet, Variant, Rollout, FlagTestUsers, ExperimentationFlags",
+      "from .local_feature_flags import LocalFeatureFlagsProvider"
+    ],
+    "classes": [
+      "TestLocalFeatureFlagsProviderAsync",
+      "TestLocalFeatureFlagsProviderSync"
+    ],
+    "functions": [
+      "create_test_flag",
+      "create_flags_response"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0033_307_3233a111d651ed39_AI_Chariot_Legacy_666_1.0.0_20260508_test_local_feature_flags.py.json"
+}

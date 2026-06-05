@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 487,
+  "generated_at": "2026-05-08T18:48:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\_auto_augment.py",
+  "name": "_auto_augment.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 32407,
+  "content_sha256": "fa93359e10a169853ad4a2b806783c511a389b4a55603be95ac0c016243b3148",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 627,
+    "non_empty_lines": 553,
+    "char_count": 32407,
+    "preview_lines": [
+      "import math",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Type, Union",
+      "import PIL.Image",
+      "import torch",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten, TreeSpec",
+      "from torchvision import transforms as _transforms, tv_tensors",
+      "from torchvision.transforms import _functional_tensor as _FT",
+      "from torchvision.transforms.v2 import AutoAugmentPolicy, functional as F, InterpolationMode, Transform",
+      "from torchvision.transforms.v2.functional._geometry import _check_interpolation",
+      "from torchvision.transforms.v2.functional._meta import get_size"
+    ],
+    "imports": [
+      "import math",
+      "from typing import Any, Callable, Dict, List, Optional, Tuple, Type, Union",
+      "import PIL.Image",
+      "import torch",
+      "from torch.utils._pytree import tree_flatten, tree_unflatten, TreeSpec",
+      "from torchvision import transforms as _transforms, tv_tensors",
+      "from torchvision.transforms import _functional_tensor as _FT",
+      "from torchvision.transforms.v2 import AutoAugmentPolicy, functional as F, InterpolationMode, Transform",
+      "from torchvision.transforms.v2.functional._geometry import _check_interpolation",
+      "from torchvision.transforms.v2.functional._meta import get_size",
+      "from torchvision.transforms.v2.functional._utils import _FillType, _FillTypeJIT",
+      "from ._utils import _get_fill, _setup_fill_arg, check_type, is_pure_tensor"
+    ],
+    "classes": [
+      "_AutoAugmentBase",
+      "AutoAugment",
+      "RandAugment",
+      "TrivialAugmentWide",
+      "AugMix"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_487_fa93359e10a16985__auto_augment.py.json"
+}

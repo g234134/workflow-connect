@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 163,
+  "generated_at": "2026-05-08T18:48:30+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\distributed\\c10d\\GroupRegistry.hpp",
+  "name": "GroupRegistry.hpp",
+  "extension": ".hpp",
+  "original_type": "cpp_header",
+  "size_bytes": 360,
+  "content_sha256": "f209a589f2b0b6116e354ab814d98d6869e438f12f0a40b3833a029e0b1fcdea",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 14,
+    "non_empty_lines": 9,
+    "char_count": 360,
+    "preview_lines": [
+      "#pragma once",
+      "#include <torch/csrc/distributed/c10d/ProcessGroup.hpp>",
+      "namespace c10d {",
+      "C10_EXPORT void register_process_group(",
+      "    const std::string& group_name,",
+      "    c10::intrusive_ptr<c10d::ProcessGroup> group);",
+      "C10_EXPORT c10::intrusive_ptr<c10d::ProcessGroup> resolve_process_group(",
+      "    const std::string& group_name);",
+      "} // namespace c10d"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_163_f209a589f2b0b611_GroupRegistry.hpp.json"
+}

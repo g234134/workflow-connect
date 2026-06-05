@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 1,
+  "generated_at": "2026-05-08T18:49:10+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\cli\\langgraph_cli\\util.py",
+  "name": "util.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 994,
+  "content_sha256": "93b4991ad3b779ef5a3014f5ecc32ee25b2a5ae1cb2bfb8d23bb353080883dc1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 27,
+    "non_empty_lines": 22,
+    "char_count": 989,
+    "preview_lines": [
+      "\"\"\"General-purpose utilities shared across the LangGraph CLI.\"\"\"",
+      "import click",
+      "def clean_empty_lines(input_str: str):",
+      "    return \"\\n\".join(filter(None, input_str.splitlines()))",
+      "def warn_non_wolfi_distro(config_json: dict) -> None:",
+      "    \"\"\"Show warning if image_distro is not set to 'wolfi'.\"\"\"",
+      "    image_distro = config_json.get(\"image_distro\", \"debian\")  # Default is debian",
+      "    if image_distro != \"wolfi\":",
+      "        click.secho(",
+      "            \"??  Security Recommendation: Consider switching to Wolfi Linux for enhanced security.\","
+    ],
+    "imports": [
+      "import click"
+    ],
+    "classes": [],
+    "functions": [
+      "clean_empty_lines",
+      "warn_non_wolfi_distro"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_001_93b4991ad3b779ef_util.py.json"
+}

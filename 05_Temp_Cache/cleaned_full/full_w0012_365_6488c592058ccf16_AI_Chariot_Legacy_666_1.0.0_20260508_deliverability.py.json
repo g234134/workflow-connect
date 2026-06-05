@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 365,
+  "generated_at": "2026-05-08T18:45:05+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_deliverability.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_deliverability.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7216,
+  "content_sha256": "6488c592058ccf161ec5a9f02a1ad11cb4e78d632a951e5bd25b4e9e5034bbe1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 159,
+    "non_empty_lines": 127,
+    "char_count": 7216,
+    "preview_lines": [
+      "from typing import Any, List, Optional, Tuple, TypedDict",
+      "import ipaddress",
+      "from .exceptions import EmailUndeliverableError",
+      "import dns.resolver",
+      "import dns.exception",
+      "def caching_resolver(*, timeout: Optional[int] = None, cache: Any = None, dns_resolver: Optional[dns.resolver.Resolver] = None) -> dns.resolver.Resolver:",
+      "    if timeout is None:",
+      "        from . import DEFAULT_TIMEOUT",
+      "        timeout = DEFAULT_TIMEOUT",
+      "    resolver = dns_resolver or dns.resolver.Resolver()"
+    ],
+    "imports": [
+      "from typing import Any, List, Optional, Tuple, TypedDict",
+      "import ipaddress",
+      "from .exceptions import EmailUndeliverableError",
+      "import dns.resolver",
+      "import dns.exception",
+      "from . import DEFAULT_TIMEOUT",
+      "from . import DEFAULT_TIMEOUT"
+    ],
+    "classes": [],
+    "functions": [
+      "caching_resolver",
+      "validate_email_deliverability"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_365_6488c592058ccf16_AI_Chariot_Legacy_666_1.0.0_20260508_deliverability.py.json"
+}

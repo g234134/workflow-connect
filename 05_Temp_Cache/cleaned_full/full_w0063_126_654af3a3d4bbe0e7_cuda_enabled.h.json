@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 126,
+  "generated_at": "2026-05-08T18:48:33+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\utils\\cuda_enabled.h",
+  "name": "cuda_enabled.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 207,
+  "content_sha256": "654af3a3d4bbe0e7b4b3368079d7d5948484bf35ade1267666a6bc5061e441a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 15,
+    "non_empty_lines": 12,
+    "char_count": 207,
+    "preview_lines": [
+      "#pragma once",
+      "namespace torch {",
+      "namespace utils {",
+      "static inline bool cuda_enabled() {",
+      "#ifdef USE_CUDA",
+      "  return true;",
+      "#else",
+      "  return false;",
+      "#endif",
+      "}"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_126_654af3a3d4bbe0e7_cuda_enabled.h.json"
+}

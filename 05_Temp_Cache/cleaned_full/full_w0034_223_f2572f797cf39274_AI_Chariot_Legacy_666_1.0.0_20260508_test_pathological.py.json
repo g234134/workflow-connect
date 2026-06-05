@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 223,
+  "generated_at": "2026-05-08T18:46:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pathological.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pathological.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1088,
+  "content_sha256": "f2572f797cf3927407ff4d3d90d4efadfe1a02bfaa81ab6b5cf12e459b71438c",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 33,
+    "non_empty_lines": 25,
+    "char_count": 1088,
+    "preview_lines": [
+      "\"\"\" Test reading of files not conforming to matlab specification",
+      "We try and read any file that matlab reads, these files included",
+      "\"\"\"",
+      "from os.path import dirname, join as pjoin",
+      "from numpy.testing import assert_",
+      "from pytest import raises as assert_raises",
+      "from scipy.io.matlab._mio import loadmat",
+      "TEST_DATA_PATH = pjoin(dirname(__file__), 'data')",
+      "def test_multiple_fieldnames():",
+      "    # Example provided by Dharhas Pothina"
+    ],
+    "imports": [
+      "from os.path import dirname, join as pjoin",
+      "from numpy.testing import assert_",
+      "from pytest import raises as assert_raises",
+      "from scipy.io.matlab._mio import loadmat"
+    ],
+    "classes": [],
+    "functions": [
+      "test_multiple_fieldnames",
+      "test_malformed1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_223_f2572f797cf39274_AI_Chariot_Legacy_666_1.0.0_20260508_test_pathological.py.json"
+}

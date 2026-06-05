@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 204,
+  "generated_at": "2026-05-08T18:45:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydev_monkey_qt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydev_monkey_qt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7530,
+  "content_sha256": "e1e77a5dd27bf54135bf36b3d3d067c7672551d9535693c3af86919ef698c8cf",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 220,
+    "non_empty_lines": 163,
+    "char_count": 7530,
+    "preview_lines": [
+      "from __future__ import nested_scopes",
+      "from _pydev_bundle._pydev_saved_modules import threading",
+      "import os",
+      "from _pydev_bundle import pydev_log",
+      "def set_trace_in_qt():",
+      "    from _pydevd_bundle.pydevd_comm import get_global_debugger",
+      "    py_db = get_global_debugger()",
+      "    if py_db is not None:",
+      "        threading.current_thread()  # Create the dummy thread for qt.",
+      "        py_db.enable_tracing()"
+    ],
+    "imports": [
+      "from __future__ import nested_scopes",
+      "from _pydev_bundle._pydev_saved_modules import threading",
+      "import os",
+      "from _pydev_bundle import pydev_log",
+      "from _pydevd_bundle.pydevd_comm import get_global_debugger",
+      "import PySide2  # @UnresolvedImport @UnusedImport",
+      "import Pyside  # @UnresolvedImport @UnusedImport",
+      "import PyQt5  # @UnresolvedImport @UnusedImport",
+      "import PyQt4  # @UnresolvedImport @UnusedImport",
+      "import PySide2.QtCore  # @UnresolvedImport",
+      "import PySide.QtCore  # @UnresolvedImport",
+      "import PyQt5.QtCore  # @UnresolvedImport",
+      "import PyQt4.QtCore  # @UnresolvedImport",
+      "from _pydev_bundle._pydev_sys_patch import patch_sys_module, patch_reload, cancel_patches_in_sys_module",
+      "import builtins  # Py3"
+    ],
+    "classes": [],
+    "functions": [
+      "set_trace_in_qt",
+      "patch_qt",
+      "_patch_import_to_patch_pyqt_on_import",
+      "_internal_patch_qt"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_204_e1e77a5dd27bf541_AI_Chariot_Legacy_666_1.0.0_20260508_pydev_monkey_qt.py.json"
+}

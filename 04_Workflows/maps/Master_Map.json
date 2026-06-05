@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Master_Map",
+  "version": "1.0.0",
+  "description": "Paths for agents / RAG / workflows — edit for your project.",
+  "paths": {
+    "environments": "01_Environments",
+    "agents_core": "02_Agents_Core",
+    "rag_database": "03_RAG_Database",
+    "workflows": "04_Workflows",
+    "temp_cache": "05_Temp_Cache",
+    "exports": "06_Exports_Output"
+  },
+  "notes": [
+    "Optional: diktahq/edikt ADR / INV under 04_Workflows/governance_edikt.",
+    "Inbound raw files -> 05_Temp_Cache/raw_inbound; suspect -> quarantine."
+  ]
+}

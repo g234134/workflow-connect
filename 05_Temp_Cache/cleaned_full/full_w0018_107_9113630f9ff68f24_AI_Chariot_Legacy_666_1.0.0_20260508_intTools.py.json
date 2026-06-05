@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 18,
+  "idx_in_wave": 107,
+  "generated_at": "2026-05-08T18:45:26+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_intTools.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_intTools.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 611,
+  "content_sha256": "9113630f9ff68f24caa34ec2d2c153d234f775c5675395c62448db5c212b9b81",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 16,
+    "char_count": 611,
+    "preview_lines": [
+      "__all__ = [\"popCount\", \"bit_count\", \"bit_indices\"]",
+      "try:",
+      "    bit_count = int.bit_count",
+      "except AttributeError:",
+      "    def bit_count(v):",
+      "        return bin(v).count(\"1\")",
+      "\"\"\"Return number of 1 bits (population count) of the absolute value of an integer.",
+      "See https://docs.python.org/3.10/library/stdtypes.html#int.bit_count",
+      "\"\"\"",
+      "popCount = bit_count  # alias"
+    ],
+    "imports": [],
+    "classes": [],
+    "functions": [
+      "bit_indices"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0018_107_9113630f9ff68f24_AI_Chariot_Legacy_666_1.0.0_20260508_intTools.py.json"
+}

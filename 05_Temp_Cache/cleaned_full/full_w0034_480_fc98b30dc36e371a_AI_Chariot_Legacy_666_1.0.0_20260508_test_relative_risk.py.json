@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 34,
+  "idx_in_wave": 480,
+  "generated_at": "2026-05-08T18:46:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_relative_risk.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_relative_risk.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3741,
+  "content_sha256": "fc98b30dc36e371a844398fd7cda9bbe1bb45f16bc6240d49418af553b329216",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 95,
+    "non_empty_lines": 77,
+    "char_count": 3741,
+    "preview_lines": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_equal",
+      "from scipy.stats.contingency import relative_risk",
+      "# Test just the calculation of the relative risk, including edge",
+      "# cases that result in a relative risk of 0, inf or nan.",
+      "@pytest.mark.parametrize(",
+      "    'exposed_cases, exposed_total, control_cases, control_total, expected_rr',",
+      "    [(1, 4, 3, 8, 0.25 / 0.375),",
+      "     (0, 10, 5, 20, 0),"
+    ],
+    "imports": [
+      "import pytest",
+      "import numpy as np",
+      "from numpy.testing import assert_allclose, assert_equal",
+      "from scipy.stats.contingency import relative_risk"
+    ],
+    "classes": [],
+    "functions": [
+      "test_relative_risk",
+      "test_relative_risk_confidence_interval",
+      "test_relative_risk_ci_conflevel0",
+      "test_relative_risk_ci_conflevel1",
+      "test_relative_risk_ci_edge_cases_00",
+      "test_relative_risk_ci_edge_cases_01",
+      "test_relative_risk_ci_edge_cases_10",
+      "test_relative_risk_bad_value",
+      "test_relative_risk_bad_type"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0034_480_fc98b30dc36e371a_AI_Chariot_Legacy_666_1.0.0_20260508_test_relative_risk.py.json"
+}

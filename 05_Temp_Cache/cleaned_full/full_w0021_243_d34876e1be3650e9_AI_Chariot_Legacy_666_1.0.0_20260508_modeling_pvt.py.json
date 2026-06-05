@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 21,
+  "idx_in_wave": 243,
+  "generated_at": "2026-05-08T18:45:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_pvt.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_pvt.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 22517,
+  "content_sha256": "d34876e1be3650e9d219e7c188b664048080bdaaa42b187eefe85f1a43287434",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 551,
+    "non_empty_lines": 457,
+    "char_count": 22517,
+    "preview_lines": [
+      "# Copyright 2023 Authors: Wenhai Wang, Enze Xie, Xiang Li, Deng-Ping Fan,",
+      "# Kaitao Song, Ding Liang, Tong Lu, Ping Luo, Ling Shao and The HuggingFace Inc. team.",
+      "# All rights reserved.",
+      "#",
+      "# Licensed under the Apache License, Version 2.0 (the \"License\");",
+      "# you may not use this file except in compliance with the License.",
+      "# You may obtain a copy of the License at",
+      "#",
+      "#     http://www.apache.org/licenses/LICENSE-2.0",
+      "#"
+    ],
+    "imports": [
+      "import collections",
+      "import math",
+      "from collections.abc import Iterable",
+      "import torch",
+      "import torch.nn.functional as F",
+      "from torch import nn",
+      "from ... import initialization as init",
+      "from ...activations import ACT2FN",
+      "from ...modeling_outputs import BaseModelOutput, ImageClassifierOutput",
+      "from ...modeling_utils import PreTrainedModel",
+      "from ...utils import auto_docstring, logging",
+      "from .configuration_pvt import PvtConfig"
+    ],
+    "classes": [
+      "PvtDropPath",
+      "PvtPatchEmbeddings",
+      "PvtSelfOutput",
+      "PvtEfficientSelfAttention",
+      "PvtAttention",
+      "PvtFFN",
+      "PvtLayer",
+      "PvtEncoder",
+      "PvtPreTrainedModel",
+      "PvtModel",
+      "PvtForImageClassification"
+    ],
+    "functions": [
+      "drop_path"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0021_243_d34876e1be3650e9_AI_Chariot_Legacy_666_1.0.0_20260508_modeling_pvt.py.json"
+}

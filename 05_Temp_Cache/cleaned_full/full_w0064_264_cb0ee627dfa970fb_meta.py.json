@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 264,
+  "generated_at": "2026-05-08T18:48:38+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchgen\\api\\meta.py",
+  "name": "meta.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 494,
+  "content_sha256": "cb0ee627dfa970fb222b536f28e9bcad31bdcbc22279a959a2138aed28a40d34",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 12,
+    "non_empty_lines": 9,
+    "char_count": 494,
+    "preview_lines": [
+      "from torchgen.model import NativeFunctionsGroup",
+      "# Follows dispatcher calling convention, but:",
+      "#   - Mutable arguments not allowed.  Meta functions are always",
+      "#     written in functional form.  Look at FunctionSchema.signature()",
+      "#   - No tensor returns; instead we return a TensorMeta describing",
+      "#     the tensor in question",
+      "def name(g: NativeFunctionsGroup) -> str:",
+      "    # use the overload name from the functional version",
+      "    return str(g.functional.func.name).replace(\".\", \"_\")"
+    ],
+    "imports": [
+      "from torchgen.model import NativeFunctionsGroup"
+    ],
+    "classes": [],
+    "functions": [
+      "name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_264_cb0ee627dfa970fb_meta.py.json"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 364,
+  "generated_at": "2026-05-08T18:47:34+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\fx\\passes\\shape_prop.py",
+  "name": "shape_prop.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7296,
+  "content_sha256": "2eb373ab158a47f7e2a9e1ca229cc7087b14de7d18f116d64073b51a9fc54b88",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 193,
+    "non_empty_lines": 165,
+    "char_count": 7296,
+    "preview_lines": [
+      "import torch",
+      "import torch.fx",
+      "import traceback",
+      "from torch._dispatch.python import enable_python_dispatcher",
+      "from torch.fx.node import Node, map_aggregate",
+      "from typing import Any, Tuple, NamedTuple, Optional, Dict",
+      "from torch.fx._compatibility import compatibility",
+      "from torch._guards import detect_fake_mode",
+      "__all__ = ['TensorMetadata', 'ShapeProp']",
+      "@compatibility(is_backward_compatible=True)"
+    ],
+    "imports": [
+      "import torch",
+      "import torch.fx",
+      "import traceback",
+      "from torch._dispatch.python import enable_python_dispatcher",
+      "from torch.fx.node import Node, map_aggregate",
+      "from typing import Any, Tuple, NamedTuple, Optional, Dict",
+      "from torch.fx._compatibility import compatibility",
+      "from torch._guards import detect_fake_mode",
+      "from torch._dynamo.utils import deepcopy_to_fake_tensor"
+    ],
+    "classes": [
+      "TensorMetadata",
+      "ShapeProp"
+    ],
+    "functions": [
+      "_extract_tensor_metadata"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_364_2eb373ab158a47f7_shape_prop.py.json"
+}

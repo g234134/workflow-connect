@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 133,
+  "generated_at": "2026-05-08T18:46:58+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_webhookhandler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_webhookhandler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7986,
+  "content_sha256": "c6b0f84e85cca7826966482698dcebee1eb2f8f1504c0f922b6738faa2e0b371",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 223,
+    "non_empty_lines": 191,
+    "char_count": 7986,
+    "preview_lines": [
+      "#!/usr/bin/env python",
+      "#",
+      "# A library that provides a Python interface to the Telegram Bot API",
+      "# Copyright (C) 2015-2026",
+      "# Leandro Toledo de Souza <devs@python-telegram-bot.org>",
+      "#",
+      "# This program is free software: you can redistribute it and/or modify",
+      "# it under the terms of the GNU Lesser Public License as published by",
+      "# the Free Software Foundation, either version 3 of the License, or",
+      "# (at your option) any later version."
+    ],
+    "imports": [
+      "import asyncio",
+      "import json",
+      "from http import HTTPStatus",
+      "from pathlib import Path",
+      "from socket import socket",
+      "from ssl import SSLContext",
+      "from types import TracebackType",
+      "from typing import TYPE_CHECKING",
+      "import tornado.web",
+      "from tornado.httpserver import HTTPServer",
+      "from tornado.netutil import bind_unix_socket",
+      "from telegram import Update",
+      "from telegram._utils.logging import get_logger",
+      "from telegram.ext._extbot import ExtBot",
+      "from telegram import Bot"
+    ],
+    "classes": [
+      "WebhookServer",
+      "WebhookAppClass",
+      "TelegramHandler"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_133_c6b0f84e85cca782_AI_Chariot_Legacy_666_1.0.0_20260508_webhookhandler.py.json"
+}

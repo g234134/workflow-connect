@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 275,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nadam.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nadam.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 26856,
+  "content_sha256": "0031c373ecf0c5325fd02dcb596fd2685e75b62f0f1530a21446b47a1355b805",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 649,
+    "non_empty_lines": 582,
+    "char_count": 26856,
+    "preview_lines": [
+      "# mypy: allow-untyped-decorators",
+      "# mypy: allow-untyped-defs",
+      "r\"\"\"Implementation for the NAdam algorithm.\"\"\"",
+      "from typing import cast, List, Optional, Tuple, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (",
+      "    _capturable_doc,",
+      "    _default_to_fused_or_foreach,",
+      "    _differentiable_doc,"
+    ],
+    "imports": [
+      "from typing import cast, List, Optional, Tuple, Union",
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import ("
+    ],
+    "classes": [
+      "NAdam"
+    ],
+    "functions": [
+      "_single_tensor_nadam",
+      "_multi_tensor_nadam",
+      "nadam"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_275_0031c373ecf0c532_AI_Chariot_Legacy_666_1.0.0_20260508_nadam.py.json"
+}

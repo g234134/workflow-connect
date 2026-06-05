@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 25,
+  "idx_in_wave": 483,
+  "generated_at": "2026-05-08T18:45:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_query_information.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_query_information.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 837,
+  "content_sha256": "22aad0cb1cdc502677aec556fbc3dfd6fcec9beb19ba52cd8320e43622eec55d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 25,
+    "non_empty_lines": 20,
+    "char_count": 837,
+    "preview_lines": [
+      "import win32api",
+      "import win32security",
+      "import winerror",
+      "from ntsecuritycon import TOKEN_QUERY, TokenUser",
+      "# This is a Python implementation of win32api.GetDomainName()",
+      "def GetDomainName():",
+      "    try:",
+      "        tok = win32security.OpenThreadToken(win32api.GetCurrentThread(), TOKEN_QUERY, 1)",
+      "    except win32api.error as details:",
+      "        if details[0] != winerror.ERROR_NO_TOKEN:"
+    ],
+    "imports": [
+      "import win32api",
+      "import win32security",
+      "import winerror",
+      "from ntsecuritycon import TOKEN_QUERY, TokenUser"
+    ],
+    "classes": [],
+    "functions": [
+      "GetDomainName"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0025_483_22aad0cb1cdc5026_AI_Chariot_Legacy_666_1.0.0_20260508_query_information.py.json"
+}

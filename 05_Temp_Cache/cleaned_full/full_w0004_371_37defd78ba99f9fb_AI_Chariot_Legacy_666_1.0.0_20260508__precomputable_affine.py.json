@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 371,
+  "generated_at": "2026-05-08T18:44:54+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__precomputable_affine.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__precomputable_affine.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5917,
+  "content_sha256": "37defd78ba99f9fbfef086b42e3e867ccd3e86d53d466a025a3fb3103b2b530a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 161,
+    "non_empty_lines": 141,
+    "char_count": 5917,
+    "preview_lines": [
+      "from thinc.api import Model, normal_init",
+      "def PrecomputableAffine(nO, nI, nF, nP, dropout=0.1):",
+      "    model = Model(",
+      "        \"precomputable_affine\",",
+      "        forward,",
+      "        init=init,",
+      "        dims={\"nO\": nO, \"nI\": nI, \"nF\": nF, \"nP\": nP},",
+      "        params={\"W\": None, \"b\": None, \"pad\": None},",
+      "        attrs={\"dropout_rate\": dropout},",
+      "    )"
+    ],
+    "imports": [
+      "from thinc.api import Model, normal_init"
+    ],
+    "classes": [],
+    "functions": [
+      "PrecomputableAffine",
+      "forward",
+      "_backprop_precomputable_affine_padding",
+      "init"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_371_37defd78ba99f9fb_AI_Chariot_Legacy_666_1.0.0_20260508__precomputable_affine.py.json"
+}

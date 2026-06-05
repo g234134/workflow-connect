@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 64,
+  "idx_in_wave": 401,
+  "generated_at": "2026-05-08T18:48:40+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torchvision\\datasets\\folder.py",
+  "name": "folder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 12227,
+  "content_sha256": "3dd07caf99a30590b8206ad5cd17027fbcf01c5d2917745508917c9b5485bc32",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 317,
+    "non_empty_lines": 249,
+    "char_count": 12159,
+    "preview_lines": [
+      "import os",
+      "import os.path",
+      "from typing import Any, Callable, cast, Dict, List, Optional, Tuple, Union",
+      "from PIL import Image",
+      "from .vision import VisionDataset",
+      "def has_file_allowed_extension(filename: str, extensions: Union[str, Tuple[str, ...]]) -> bool:",
+      "    \"\"\"Checks if a file is an allowed extension.",
+      "    Args:",
+      "        filename (string): path to a file",
+      "        extensions (tuple of strings): extensions to consider (lowercase)"
+    ],
+    "imports": [
+      "import os",
+      "import os.path",
+      "from typing import Any, Callable, cast, Dict, List, Optional, Tuple, Union",
+      "from PIL import Image",
+      "from .vision import VisionDataset"
+    ],
+    "classes": [
+      "DatasetFolder",
+      "ImageFolder"
+    ],
+    "functions": [
+      "has_file_allowed_extension",
+      "is_image_file",
+      "find_classes",
+      "make_dataset",
+      "pil_loader",
+      "accimage_loader",
+      "default_loader"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0064_401_3dd07caf99a30590_folder.py.json"
+}

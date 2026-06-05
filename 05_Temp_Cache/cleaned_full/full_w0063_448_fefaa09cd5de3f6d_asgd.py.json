@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 63,
+  "idx_in_wave": 448,
+  "generated_at": "2026-05-08T18:48:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\optim\\asgd.py",
+  "name": "asgd.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 13666,
+  "content_sha256": "fefaa09cd5de3f6d8e008c532aa77ca0888f11ee5dfba7cf79409617e8a03e9a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 392,
+    "non_empty_lines": 339,
+    "char_count": 13666,
+    "preview_lines": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _get_value, _default_to_fused_or_foreach,",
+      "                        _differentiable_doc, _foreach_doc, _maximize_doc, _capturable_doc, _view_as_real)",
+      "from torch._utils import is_compiling",
+      "from typing import List, Optional",
+      "__all__ = [\"ASGD\", \"asgd\"]",
+      "def _to_tensor(x, device=None):",
+      "    if not isinstance(x, torch.Tensor):",
+      "        return torch.tensor(x, device=device)"
+    ],
+    "imports": [
+      "import torch",
+      "from torch import Tensor",
+      "from .optimizer import (Optimizer, _use_grad_for_differentiable, _get_value, _default_to_fused_or_foreach,",
+      "from torch._utils import is_compiling",
+      "from typing import List, Optional"
+    ],
+    "classes": [
+      "ASGD"
+    ],
+    "functions": [
+      "_to_tensor",
+      "asgd",
+      "_single_tensor_asgd",
+      "_multi_tensor_asgd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0063_448_fefaa09cd5de3f6d_asgd.py.json"
+}

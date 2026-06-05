@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 71,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_scalar.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_scalar.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9948,
+  "content_sha256": "0ffccab3b82b8552ebfe1e6d5ba92f6e313b29497e638371b5662c2efda44731",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 381,
+    "non_empty_lines": 293,
+    "char_count": 9948,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import re",
+      "from enum import Enum, unique",
+      "from fractions import Fraction",
+      "from functools import lru_cache",
+      "from typing import Iterable, NamedTuple",
+      "import rich.repr",
+      "from textual.geometry import Offset, Size, clamp",
+      "class ScalarError(Exception):",
+      "    \"\"\"Base class for exceptions raised by the Scalar class.\"\"\""
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import re",
+      "from enum import Enum, unique",
+      "from fractions import Fraction",
+      "from functools import lru_cache",
+      "from typing import Iterable, NamedTuple",
+      "import rich.repr",
+      "from textual.geometry import Offset, Size, clamp"
+    ],
+    "classes": [
+      "ScalarError",
+      "ScalarResolveError",
+      "ScalarParseError",
+      "Unit",
+      "Scalar",
+      "ScalarOffset"
+    ],
+    "functions": [
+      "_resolve_cells",
+      "_resolve_fraction",
+      "_resolve_width",
+      "_resolve_height",
+      "_resolve_view_width",
+      "_resolve_view_height",
+      "get_symbols",
+      "percentage_string_to_float"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_071_0ffccab3b82b8552_AI_Chariot_Legacy_666_1.0.0_20260508_scalar.py.json"
+}

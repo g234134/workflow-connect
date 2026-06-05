@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 262,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_traversal.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_traversal.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8776,
+  "content_sha256": "0b878a8aa3078a3c604eaed9123afbbf6d9f00d3fe8845f29f59b02a1d1dd52a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 300,
+    "non_empty_lines": 242,
+    "char_count": 8776,
+    "preview_lines": [
+      "from .basic import Basic",
+      "from .sorting import ordered",
+      "from .sympify import sympify",
+      "from sympy.utilities.iterables import iterable",
+      "def iterargs(expr):",
+      "    \"\"\"Yield the args of a Basic object in a breadth-first traversal.",
+      "    Depth-traversal stops if `arg.args` is either empty or is not",
+      "    an iterable.",
+      "    Examples",
+      "    ========"
+    ],
+    "imports": [
+      "from .basic import Basic",
+      "from .sorting import ordered",
+      "from .sympify import sympify",
+      "from sympy.utilities.iterables import iterable"
+    ],
+    "classes": [
+      "preorder_traversal"
+    ],
+    "functions": [
+      "iterargs",
+      "iterfreeargs",
+      "use",
+      "walk",
+      "bottom_up",
+      "postorder_traversal"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_262_0b878a8aa3078a3c_AI_Chariot_Legacy_666_1.0.0_20260508_traversal.py.json"
+}

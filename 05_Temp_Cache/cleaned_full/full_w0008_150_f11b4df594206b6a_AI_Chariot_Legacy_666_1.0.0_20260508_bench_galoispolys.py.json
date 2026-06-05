@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 150,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bench_galoispolys.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bench_galoispolys.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1502,
+  "content_sha256": "f11b4df594206b6a31b1c54f3e4306076f43cfc51bb24312daccd8b6a67af6ed",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 66,
+    "non_empty_lines": 38,
+    "char_count": 1502,
+    "preview_lines": [
+      "\"\"\"Benchmarks for polynomials over Galois fields. \"\"\"",
+      "from sympy.polys.galoistools import gf_from_dict, gf_factor_sqf",
+      "from sympy.polys.domains import ZZ",
+      "from sympy.core.numbers import pi",
+      "from sympy.ntheory.generate import nextprime",
+      "def gathen_poly(n, p, K):",
+      "    return gf_from_dict({n: K.one, 1: K.one, 0: K.one}, p, K)",
+      "def shoup_poly(n, p, K):",
+      "    f = [K.one] * (n + 1)",
+      "    for i in range(1, n + 1):"
+    ],
+    "imports": [
+      "from sympy.polys.galoistools import gf_from_dict, gf_factor_sqf",
+      "from sympy.polys.domains import ZZ",
+      "from sympy.core.numbers import pi",
+      "from sympy.ntheory.generate import nextprime"
+    ],
+    "classes": [],
+    "functions": [
+      "gathen_poly",
+      "shoup_poly",
+      "genprime",
+      "timeit_gathen_poly_f10_zassenhaus",
+      "timeit_gathen_poly_f10_shoup",
+      "timeit_gathen_poly_f20_zassenhaus",
+      "timeit_gathen_poly_f20_shoup",
+      "timeit_shoup_poly_F10_zassenhaus",
+      "timeit_shoup_poly_F10_shoup",
+      "timeit_shoup_poly_F20_zassenhaus",
+      "timeit_shoup_poly_F20_shoup"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_150_f11b4df594206b6a_AI_Chariot_Legacy_666_1.0.0_20260508_bench_galoispolys.py.json"
+}

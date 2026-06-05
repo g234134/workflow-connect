@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 281,
+  "generated_at": "2026-05-08T18:46:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_trf.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_trf.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20037,
+  "content_sha256": "041b315235998f375520b53e66bf7cb775a2c921ff314229fae9c2425440a3a5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 560,
+    "non_empty_lines": 440,
+    "char_count": 20037,
+    "preview_lines": [
+      "\"\"\"Trust Region Reflective algorithm for least-squares optimization.",
+      "The algorithm is based on ideas from paper [STIR]_. The main idea is to",
+      "account for the presence of the bounds by appropriate scaling of the variables (or,",
+      "equivalently, changing a trust-region shape). Let's introduce a vector v:",
+      "           | ub[i] - x[i], if g[i] < 0 and ub[i] < np.inf",
+      "    v[i] = | x[i] - lb[i], if g[i] > 0 and lb[i] > -np.inf",
+      "           | 1,           otherwise",
+      "where g is the gradient of a cost function and lb, ub are the bounds. Its",
+      "components are distances to the bounds at which the anti-gradient points (if",
+      "this distance is finite). Define a scaling matrix D = diag(v**0.5)."
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.linalg import norm",
+      "from scipy.linalg import svd, qr",
+      "from scipy.sparse.linalg import lsmr",
+      "from scipy.optimize import OptimizeResult",
+      "from .common import ("
+    ],
+    "classes": [],
+    "functions": [
+      "trf",
+      "select_step",
+      "trf_bounds",
+      "trf_no_bounds"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_281_041b315235998f37_AI_Chariot_Legacy_666_1.0.0_20260508_trf.py.json"
+}

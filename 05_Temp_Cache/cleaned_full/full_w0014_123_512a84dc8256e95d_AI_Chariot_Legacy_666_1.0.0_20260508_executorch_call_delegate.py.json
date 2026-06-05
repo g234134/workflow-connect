@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:45:09+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_executorch_call_delegate.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_executorch_call_delegate.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 6138,
+  "content_sha256": "512a84dc8256e95d09dd07c771df44affeeeb4c118555536b394681f278285ef",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 138,
+    "char_count": 6138,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "# Copyright (c) Meta Platforms, Inc. and affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "# pyre-strict",
+      "from __future__ import annotations",
+      "from typing import Any, cast",
+      "import torch"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, cast",
+      "import torch",
+      "import torch.utils._pytree as pytree",
+      "from torch._ops import HigherOrderOperator",
+      "from torch._subclasses.fake_tensor import FakeTensorMode",
+      "from torch.fx.experimental.proxy_tensor import (",
+      "from torch.utils._pytree import tree_flatten"
+    ],
+    "classes": [
+      "ExecutorchCallDelegate"
+    ],
+    "functions": [
+      "trace_call_delegate",
+      "call_delegate_cpu",
+      "call_delegate_autograd",
+      "call_delegate_proxy_torch_dispatch_mode",
+      "call_delegate_fake_tensor_mode",
+      "call_delegate_functionalize",
+      "is_lowered_module",
+      "get_lowered_module_name"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_123_512a84dc8256e95d_AI_Chariot_Legacy_666_1.0.0_20260508_executorch_call_delegate.py.json"
+}

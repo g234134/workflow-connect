@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 20,
+  "idx_in_wave": 330,
+  "generated_at": "2026-05-08T18:45:36+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_mistralai.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_mistralai.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18712,
+  "content_sha256": "7f2872714414a73554e76011efc0a9059ef082e7fbcf6a65550f20f091065eab",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 518,
+    "non_empty_lines": 462,
+    "char_count": 18712,
+    "preview_lines": [
+      "import time",
+      "from typing import TYPE_CHECKING, AsyncGenerator, Dict, Generator, Union",
+      "from literalai.instrumentation import MISTRALAI_PROVIDER",
+      "from literalai.requirements import check_all_requirements",
+      "if TYPE_CHECKING:",
+      "    from literalai.client import LiteralClient",
+      "from literalai.context import active_steps_var, active_thread_var",
+      "from literalai.helper import ensure_values_serializable",
+      "from literalai.observability.generation import (",
+      "    ChatGeneration,"
+    ],
+    "imports": [
+      "import time",
+      "from typing import TYPE_CHECKING, AsyncGenerator, Dict, Generator, Union",
+      "from literalai.instrumentation import MISTRALAI_PROVIDER",
+      "from literalai.requirements import check_all_requirements",
+      "from literalai.client import LiteralClient",
+      "from literalai.context import active_steps_var, active_thread_var",
+      "from literalai.helper import ensure_values_serializable",
+      "from literalai.observability.generation import (",
+      "from literalai.wrappers import AfterContext, BeforeContext, wrap_all",
+      "import inspect"
+    ],
+    "classes": [],
+    "functions": [
+      "instrument_mistralai"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0020_330_7f2872714414a735_AI_Chariot_Legacy_666_1.0.0_20260508_mistralai.py.json"
+}

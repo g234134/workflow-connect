@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 406,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_nl2sql_tool.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_nl2sql_tool.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 18790,
+  "content_sha256": "df9a395570c3530b7e6bc0b1ebfd48ba2415920df6ab4da626e98fcc5aad7b43",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 516,
+    "non_empty_lines": 439,
+    "char_count": 18756,
+    "preview_lines": [
+      "from collections.abc import Iterator",
+      "import logging",
+      "import os",
+      "import re",
+      "from typing import Any",
+      "try:",
+      "    from typing import Self",
+      "except ImportError:",
+      "    from typing_extensions import Self",
+      "from crewai.tools import BaseTool"
+    ],
+    "imports": [
+      "from collections.abc import Iterator",
+      "import logging",
+      "import os",
+      "import re",
+      "from typing import Any",
+      "from typing import Self",
+      "from typing_extensions import Self",
+      "from crewai.tools import BaseTool",
+      "from pydantic import BaseModel, Field, model_validator",
+      "from sqlalchemy import create_engine, text",
+      "from sqlalchemy.orm import sessionmaker"
+    ],
+    "classes": [
+      "NL2SQLToolInput",
+      "NL2SQLTool"
+    ],
+    "functions": [
+      "_iter_as_paren_matches",
+      "_detect_writable_cte",
+      "_skip_string_literal",
+      "_find_matching_close_paren",
+      "_extract_main_query_after_cte",
+      "_resolve_explain_command"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_406_df9a395570c3530b_AI_Chariot_Legacy_666_1.0.0_20260508_nl2sql_tool.py.json"
+}

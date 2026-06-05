@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 19,
+  "idx_in_wave": 289,
+  "generated_at": "2026-05-08T18:45:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_llms.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_llms.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 55589,
+  "content_sha256": "f9ae951a8e5fcfa4689a0e641ce82a6035dbc6574c95e54db3a04dbe07dbdab5",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1553,
+    "non_empty_lines": 1402,
+    "char_count": 55589,
+    "preview_lines": [
+      "\"\"\"Base interface for traditional large language models (LLMs) to expose.",
+      "These are traditionally older models (newer models generally are chat models).",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import asyncio",
+      "import functools",
+      "import inspect",
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import asyncio",
+      "import functools",
+      "import inspect",
+      "import json",
+      "import logging",
+      "from abc import ABC, abstractmethod",
+      "from collections.abc import AsyncIterator, Callable, Iterator, Sequence",
+      "from pathlib import Path",
+      "from typing import (",
+      "import yaml",
+      "from pydantic import ConfigDict",
+      "from tenacity import (",
+      "from typing_extensions import override",
+      "from langchain_core.caches import BaseCache",
+      "from langchain_core.callbacks import (",
+      "from langchain_core.globals import get_llm_cache",
+      "from langchain_core.language_models._utils import _filter_invocation_params_for_tracing",
+      "from langchain_core.language_models.base import (",
+      "from langchain_core.load import dumpd"
+    ],
+    "classes": [
+      "BaseLLM",
+      "LLM"
+    ],
+    "functions": [
+      "_log_error_once",
+      "create_base_retry_decorator",
+      "_resolve_cache",
+      "get_prompts",
+      "update_cache"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0019_289_f9ae951a8e5fcfa4_AI_Chariot_Legacy_666_1.0.0_20260508_llms.py.json"
+}

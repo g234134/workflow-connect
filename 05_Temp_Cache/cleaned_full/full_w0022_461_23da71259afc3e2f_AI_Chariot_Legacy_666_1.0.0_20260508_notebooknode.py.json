@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 461,
+  "generated_at": "2026-05-08T18:45:46+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_notebooknode.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_notebooknode.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1654,
+  "content_sha256": "23da71259afc3e2fe2b652f63cc44b458013cdb035ce0b546fb442f3e2d1cb74",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 52,
+    "non_empty_lines": 42,
+    "char_count": 1654,
+    "preview_lines": [
+      "\"\"\"NotebookNode - adding attribute access to dicts\"\"\"",
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from ._struct import Struct",
+      "class NotebookNode(Struct):",
+      "    \"\"\"A dict-like node with attribute-access\"\"\"",
+      "    def __setitem__(self, key, value):",
+      "        \"\"\"Set an item on the notebook.\"\"\"",
+      "        if isinstance(value, Mapping) and not isinstance(value, NotebookNode):",
+      "            value = from_dict(value)"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from collections.abc import Mapping",
+      "from ._struct import Struct"
+    ],
+    "classes": [
+      "NotebookNode"
+    ],
+    "functions": [
+      "from_dict"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_461_23da71259afc3e2f_AI_Chariot_Legacy_666_1.0.0_20260508_notebooknode.py.json"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 14,
+  "idx_in_wave": 9,
+  "generated_at": "2026-05-08T18:45:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_etcd_server.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_etcd_server.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 8685,
+  "content_sha256": "c40a4bf2f450906934c36c5ec0221c1c59fde5935179054730c0e6f3100e4012",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 248,
+    "non_empty_lines": 206,
+    "char_count": 8685,
+    "preview_lines": [
+      "#!/usr/bin/env python3",
+      "# mypy: allow-untyped-defs",
+      "# Copyright (c) Facebook, Inc. and its affiliates.",
+      "# All rights reserved.",
+      "#",
+      "# This source code is licensed under the BSD-style license found in the",
+      "# LICENSE file in the root directory of this source tree.",
+      "import atexit",
+      "import logging",
+      "import os"
+    ],
+    "imports": [
+      "import atexit",
+      "import logging",
+      "import os",
+      "import shlex",
+      "import shutil",
+      "import socket",
+      "import subprocess",
+      "import tempfile",
+      "import time",
+      "from typing import Optional, TextIO, Union",
+      "import etcd  # type: ignore[import]"
+    ],
+    "classes": [
+      "EtcdServer"
+    ],
+    "functions": [
+      "find_free_port",
+      "stop_etcd"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0014_009_c40a4bf2f4509069_AI_Chariot_Legacy_666_1.0.0_20260508_etcd_server.py.json"
+}

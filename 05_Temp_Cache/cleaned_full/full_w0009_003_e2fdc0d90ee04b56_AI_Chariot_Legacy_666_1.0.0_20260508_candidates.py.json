@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 9,
+  "idx_in_wave": 3,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_candidates.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_candidates.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 20912,
+  "content_sha256": "e2fdc0d90ee04b56b5b5b31ba61a3d1e58855b87d198716ece3f1f6bb4e167a7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 599,
+    "non_empty_lines": 498,
+    "char_count": 20912,
+    "preview_lines": [
+      "from __future__ import annotations",
+      "import logging",
+      "import sys",
+      "from collections.abc import Iterable",
+      "from typing import TYPE_CHECKING, Any, Union, cast",
+      "from pip._vendor.packaging.requirements import InvalidRequirement",
+      "from pip._vendor.packaging.utils import NormalizedName, canonicalize_name",
+      "from pip._vendor.packaging.version import Version",
+      "from pip._internal.exceptions import (",
+      "    FailedToPrepareCandidate,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "import sys",
+      "from collections.abc import Iterable",
+      "from typing import TYPE_CHECKING, Any, Union, cast",
+      "from pip._vendor.packaging.requirements import InvalidRequirement",
+      "from pip._vendor.packaging.utils import NormalizedName, canonicalize_name",
+      "from pip._vendor.packaging.version import Version",
+      "from pip._internal.exceptions import (",
+      "from pip._internal.metadata import BaseDistribution",
+      "from pip._internal.models.link import Link, links_equivalent",
+      "from pip._internal.models.wheel import Wheel",
+      "from pip._internal.req.constructors import (",
+      "from pip._internal.req.req_install import InstallRequirement",
+      "from pip._internal.utils.direct_url_helpers import direct_url_from_link",
+      "from pip._internal.utils.misc import normalize_version_info",
+      "from .base import Candidate, Requirement, format_name",
+      "from .factory import Factory"
+    ],
+    "classes": [
+      "_InstallRequirementBackedCandidate",
+      "LinkCandidate",
+      "EditableCandidate",
+      "AlreadyInstalledCandidate",
+      "ExtrasCandidate",
+      "RequiresPythonCandidate"
+    ],
+    "functions": [
+      "as_base_candidate",
+      "make_install_req_from_link",
+      "make_install_req_from_editable",
+      "_make_install_req_from_dist"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0009_003_e2fdc0d90ee04b56_AI_Chariot_Legacy_666_1.0.0_20260508_candidates.py.json"
+}

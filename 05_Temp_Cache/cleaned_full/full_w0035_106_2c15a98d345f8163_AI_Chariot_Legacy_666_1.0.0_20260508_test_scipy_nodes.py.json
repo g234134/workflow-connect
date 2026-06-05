@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 35,
+  "idx_in_wave": 106,
+  "generated_at": "2026-05-08T18:46:37+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy_nodes.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy_nodes.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1495,
+  "content_sha256": "2c15a98d345f81637934b4dc84b644a7a9bb20cb6eec76e22a8ced2dce8a3466",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 44,
+    "non_empty_lines": 37,
+    "char_count": 1495,
+    "preview_lines": [
+      "from itertools import product",
+      "from sympy.core.power import Pow",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import exp, log",
+      "from sympy.functions.elementary.trigonometric import cos",
+      "from sympy.core.numbers import pi",
+      "from sympy.codegen.scipy_nodes import cosm1, powm1",
+      "x, y, z = symbols('x y z')",
+      "def test_cosm1():",
+      "    cm1_xy = cosm1(x*y)"
+    ],
+    "imports": [
+      "from itertools import product",
+      "from sympy.core.power import Pow",
+      "from sympy.core.symbol import symbols",
+      "from sympy.functions.elementary.exponential import exp, log",
+      "from sympy.functions.elementary.trigonometric import cos",
+      "from sympy.core.numbers import pi",
+      "from sympy.codegen.scipy_nodes import cosm1, powm1"
+    ],
+    "classes": [],
+    "functions": [
+      "test_cosm1",
+      "test_powm1"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0035_106_2c15a98d345f8163_AI_Chariot_Legacy_666_1.0.0_20260508_test_scipy_nodes.py.json"
+}

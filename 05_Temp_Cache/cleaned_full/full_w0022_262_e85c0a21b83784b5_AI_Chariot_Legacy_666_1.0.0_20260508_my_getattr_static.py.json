@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 22,
+  "idx_in_wave": 262,
+  "generated_at": "2026-05-08T18:45:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_my_getattr_static.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_my_getattr_static.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4161,
+  "content_sha256": "e85c0a21b83784b5e063ca2768afcbd65c9124a8cb54d1a082ce52cfaba158c7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 140,
+    "non_empty_lines": 113,
+    "char_count": 4161,
+    "preview_lines": [
+      "import types",
+      "from pure_eval.utils import of_type, CannotEval",
+      "_sentinel = object()",
+      "def _static_getmro(klass):",
+      "    return type.__dict__['__mro__'].__get__(klass)",
+      "def _check_instance(obj, attr):",
+      "    instance_dict = {}",
+      "    try:",
+      "        instance_dict = object.__getattribute__(obj, \"__dict__\")",
+      "    except AttributeError:"
+    ],
+    "imports": [
+      "import types",
+      "from pure_eval.utils import of_type, CannotEval"
+    ],
+    "classes": [
+      "_foo"
+    ],
+    "functions": [
+      "_static_getmro",
+      "_check_instance",
+      "_check_class",
+      "_is_type",
+      "_shadowed_dict",
+      "getattr_static",
+      "_resolve_descriptor"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0022_262_e85c0a21b83784b5_AI_Chariot_Legacy_666_1.0.0_20260508_my_getattr_static.py.json"
+}

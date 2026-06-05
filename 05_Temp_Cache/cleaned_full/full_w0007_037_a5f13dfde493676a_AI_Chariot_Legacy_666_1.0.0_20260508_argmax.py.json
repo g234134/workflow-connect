@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 7,
+  "idx_in_wave": 37,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_argmax.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_argmax.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 589,
+  "content_sha256": "a5f13dfde493676a2d4e451c5b094b8bb1c92ad375d241397362f3d127950034",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 18,
+    "non_empty_lines": 13,
+    "char_count": 589,
+    "preview_lines": [
+      "from .base_operator import QuantOperatorBase",
+      "# Use the quantized tensor as input without DQ.",
+      "class QArgMax(QuantOperatorBase):",
+      "    def __init__(self, onnx_quantizer, onnx_node):",
+      "        super().__init__(onnx_quantizer, onnx_node)",
+      "    def quantize(self):",
+      "        node = self.node",
+      "        quantized_input_value = self.quantizer.find_quantized_value(node.input[0])",
+      "        if quantized_input_value is None:",
+      "            self.quantizer.new_nodes += [node]"
+    ],
+    "imports": [
+      "from .base_operator import QuantOperatorBase"
+    ],
+    "classes": [
+      "QArgMax"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0007_037_a5f13dfde493676a_AI_Chariot_Legacy_666_1.0.0_20260508_argmax.py.json"
+}

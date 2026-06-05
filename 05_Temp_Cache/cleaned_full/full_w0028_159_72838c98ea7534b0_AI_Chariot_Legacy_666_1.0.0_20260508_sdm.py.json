@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 28,
+  "idx_in_wave": 159,
+  "generated_at": "2026-05-08T18:46:08+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_sdm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_sdm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 63554,
+  "content_sha256": "72838c98ea7534b08c4ff02da8d603cca016de41ec6e0d845324cf26daeaed78",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 2164,
+    "non_empty_lines": 1740,
+    "char_count": 63554,
+    "preview_lines": [
+      "\"\"\"",
+      "Module for the SDM class.",
+      "\"\"\"",
+      "from operator import add, neg, pos, sub, mul",
+      "from collections import defaultdict",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from sympy.utilities.iterables import _strongly_connected_components",
+      "from .exceptions import DMBadInputError, DMDomainError, DMShapeError",
+      "from sympy.polys.domains import QQ"
+    ],
+    "imports": [
+      "from operator import add, neg, pos, sub, mul",
+      "from collections import defaultdict",
+      "from sympy.external.gmpy import GROUND_TYPES",
+      "from sympy.utilities.decorator import doctest_depends_on",
+      "from sympy.utilities.iterables import _strongly_connected_components",
+      "from .exceptions import DMBadInputError, DMDomainError, DMShapeError",
+      "from sympy.polys.domains import QQ",
+      "from .ddm import DDM"
+    ],
+    "classes": [
+      "SDM"
+    ],
+    "functions": [
+      "binop_dict",
+      "unop_dict",
+      "sdm_transpose",
+      "sdm_dotvec",
+      "sdm_matvecmul",
+      "sdm_matmul",
+      "sdm_matmul_exraw",
+      "sdm_irref",
+      "sdm_rref_den",
+      "sdm_nullspace_from_rref",
+      "sdm_particular_from_rref",
+      "sdm_berk"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0028_159_72838c98ea7534b0_AI_Chariot_Legacy_666_1.0.0_20260508_sdm.py.json"
+}

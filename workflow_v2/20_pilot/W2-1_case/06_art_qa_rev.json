@@ -1,0 +1,87 @@
+{
+  "artifact_id": "ART-QA-REV",
+  "ticket_id": "W2-1-QA-REL",
+  "pilot_artifact_id": "W2-1-G8-RECON-PILOT",
+  "ok": true,
+  "accepted": true,
+  "verdict": "accepted_with_gaps",
+  "role": "qa",
+  "reviewed_at": "2026-05-27",
+  "scope_check": {
+    "within_ticket": true,
+    "primary_change_class": "CHG-GOV-DOC",
+    "in_scope_confirmed": true,
+    "extra_files": [],
+    "notes": "Diff limited to G7-2/3, G8-3 §2, G8 README, W2-1 case Eng artifacts; no production code or governance semantics rewrite."
+  },
+  "evidence": [
+    {
+      "id": "AC-1",
+      "command": "rg \"ART-REL-RECORD\" workflow_v2/10_governance/G7_state_machine/20_entry_conditions.md",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "0 matches; IMP-RELEASED entry references ART-REL-EXEC (G7-2 §4 line ~174)"
+    },
+    {
+      "id": "AC-2",
+      "command": "rg \"待 G8-\" workflow_v2/10_governance/G7_state_machine/",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "0 matches in 20_entry_conditions.md + 30_exit_and_transitions.md"
+    },
+    {
+      "id": "AC-3",
+      "command": "rg \"待 G10-2\" workflow_v2/10_governance/G7_state_machine/30_exit_and_transitions.md",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "0 matches; IMP-RISK-VALIDATION exit cites G10-2 20_no_blind_trust.md §5.3"
+    },
+    {
+      "id": "AC-4",
+      "command": "rg \"10_states\" workflow_v2/10_governance/G8_artifact_contract/30_engineering.md ; rg \"10_workflow_states\" same file",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "10_states: 0 matches; 10_workflow_states: 2 matches (§2 header + revision log)"
+    },
+    {
+      "id": "AC-5",
+      "command": "manual diff review: G7-3 §2.1 jump table, G6 refs, IMP exit logic",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "Cross-ref edits only; no change to skip-gate matrix semantics or CHG definitions"
+    },
+    {
+      "id": "NBT",
+      "command": "Independent re-run of Eng §4 commands; read G7/G8 diff sections (not Eng ok:true alone)",
+      "ran": true,
+      "exit_ok": true,
+      "key_output": "G10-2 NBT-AI-01/02/RT-03 satisfied — checker evidence independent of ART-ENG-EVD claims"
+    }
+  ],
+  "dod_checklist": {
+    "context_source": true,
+    "incremental_honest": true,
+    "debugging_evidence": true,
+    "no_forbidden_zone": true
+  },
+  "gaps": [
+    {
+      "id": "GAP-GOV-RISK",
+      "summary": "ART-GOV-RISK formal artifact deferred to W2-3; G7-2 IMP-RISK-VALIDATION entry still lists ART-GOV-RISK placeholder",
+      "severity": "low",
+      "owner_ticket": "W2-3",
+      "blocks_release": false,
+      "mitigation": "W2-1 used WR §4+§7 + G10-2 §6.3 interim对照 per PM clarify defer"
+    },
+    {
+      "id": "GAP-G10-TODO",
+      "summary": "G10-2 §7 T1 still mentions stale 待 G10-2 in G7-3 (fixed in body; TODO row not updated)",
+      "severity": "low",
+      "owner_ticket": "W2-3 or CHK-W1",
+      "blocks_release": false
+    }
+  ],
+  "risks": [],
+  "follow_up_tickets": ["W2-2", "W2-3"],
+  "message": "QA accepts Eng diff for internal doc-authority release with documented deferrals; all AC-1–AC-4 pass on independent grep; proceed to ART-REL-DEC approve."
+}

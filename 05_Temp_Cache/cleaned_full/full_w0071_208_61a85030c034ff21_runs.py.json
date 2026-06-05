@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 71,
+  "idx_in_wave": 208,
+  "generated_at": "2026-05-08T18:49:12+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\\libs\\sdk-py\\langgraph_sdk\\_sync\\runs.py",
+  "name": "runs.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 48700,
+  "content_sha256": "61a85030c034ff217242d73a7535c6ffab0edd8702d8b0bfc7078ca4e307aa94",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1162,
+    "non_empty_lines": 1066,
+    "char_count": 48697,
+    "preview_lines": [
+      "\"\"\"Synchronous client for managing runs in LangGraph.\"\"\"",
+      "from __future__ import annotations",
+      "import builtins",
+      "import warnings",
+      "from collections.abc import Callable, Iterator, Mapping, Sequence",
+      "from typing import Any, Literal, overload",
+      "import httpx",
+      "from langgraph_sdk._shared.utilities import (",
+      "    _get_run_metadata_from_response,",
+      "    _sse_to_v2_dict,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import builtins",
+      "import warnings",
+      "from collections.abc import Callable, Iterator, Mapping, Sequence",
+      "from typing import Any, Literal, overload",
+      "import httpx",
+      "from langgraph_sdk._shared.utilities import (",
+      "from langgraph_sdk._sync.http import SyncHttpClient",
+      "from langgraph_sdk.schema import ("
+    ],
+    "classes": [
+      "SyncRunsClient"
+    ],
+    "functions": [
+      "_wrap_stream_v2_sync"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0071_208_61a85030c034ff21_runs.py.json"
+}

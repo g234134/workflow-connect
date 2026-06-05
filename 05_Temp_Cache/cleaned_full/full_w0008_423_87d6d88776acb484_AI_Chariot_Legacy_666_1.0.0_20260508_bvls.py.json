@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 423,
+  "generated_at": "2026-05-08T18:45:03+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_bvls.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_bvls.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 5378,
+  "content_sha256": "87d6d88776acb4846f32d306821b441a91b97c3b21ef848c45b9a01771cdf183",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 183,
+    "non_empty_lines": 139,
+    "char_count": 5378,
+    "preview_lines": [
+      "\"\"\"Bounded-variable least-squares algorithm.\"\"\"",
+      "import numpy as np",
+      "from numpy.linalg import norm, lstsq",
+      "from scipy.optimize import OptimizeResult",
+      "from .common import print_header_linear, print_iteration_linear",
+      "def compute_kkt_optimality(g, on_bound):",
+      "    \"\"\"Compute the maximum violation of KKT conditions.\"\"\"",
+      "    g_kkt = g * on_bound",
+      "    free_set = on_bound == 0",
+      "    g_kkt[free_set] = np.abs(g[free_set])"
+    ],
+    "imports": [
+      "import numpy as np",
+      "from numpy.linalg import norm, lstsq",
+      "from scipy.optimize import OptimizeResult",
+      "from .common import print_header_linear, print_iteration_linear"
+    ],
+    "classes": [],
+    "functions": [
+      "compute_kkt_optimality",
+      "bvls"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_423_87d6d88776acb484_AI_Chariot_Legacy_666_1.0.0_20260508_bvls.py.json"
+}

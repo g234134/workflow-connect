@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 256,
+  "generated_at": "2026-05-08T18:46:18+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_testGIT.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_testGIT.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4766,
+  "content_sha256": "cc12ba64f54033ad542fd13555f0ae5a980405744d88c0cda54065f7de733c8a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 142,
+    "non_empty_lines": 115,
+    "char_count": 4766,
+    "preview_lines": [
+      "\"\"\"Testing pasing object between multiple COM threads",
+      "Uses standard COM marshalling to pass objects between threads.  Even",
+      "though Python generally seems to work when you just pass COM objects",
+      "between threads, it shouldn't.",
+      "This shows the \"correct\" way to do it.",
+      "It shows that although we create new threads to use the Python.Interpreter,",
+      "COM marshalls back all calls to that object to the main Python thread,",
+      "which must be running a message loop (as this sample does).",
+      "When this test is run in \"free threaded\" mode (at this stage, you must",
+      "manually mark the COM objects as \"ThreadingModel=Free\", or run from a"
+    ],
+    "imports": [
+      "import _thread",
+      "import traceback",
+      "import pythoncom",
+      "import win32api",
+      "import win32com.client",
+      "import win32event",
+      "import winerror"
+    ],
+    "classes": [],
+    "functions": [
+      "TestInterp",
+      "TestInterpInThread",
+      "CreateGIT",
+      "DoTestInterpInThread",
+      "BeginThreadsSimpleMarshal",
+      "test"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_256_cc12ba64f54033ad_AI_Chariot_Legacy_666_1.0.0_20260508_testGIT.py.json"
+}

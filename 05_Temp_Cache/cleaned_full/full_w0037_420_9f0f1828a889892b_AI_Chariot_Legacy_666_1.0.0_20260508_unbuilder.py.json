@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 420,
+  "generated_at": "2026-05-08T18:46:48+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_unbuilder.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_unbuilder.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2223,
+  "content_sha256": "9f0f1828a889892b1900f72f3f346f5cefa8667bd6982584ed8f2753583be621",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 81,
+    "non_empty_lines": 63,
+    "char_count": 2223,
+    "preview_lines": [
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from .table_builder import TableUnbuilder",
+      "def unbuildColrV1(layerList, baseGlyphList):",
+      "    layers = []",
+      "    if layerList:",
+      "        layers = layerList.Paint",
+      "    unbuilder = LayerListUnbuilder(layers)",
+      "    return {",
+      "        rec.BaseGlyph: unbuilder.unbuildPaint(rec.Paint)",
+      "        for rec in baseGlyphList.BaseGlyphPaintRecord"
+    ],
+    "imports": [
+      "from fontTools.ttLib.tables import otTables as ot",
+      "from .table_builder import TableUnbuilder",
+      "from pprint import pprint",
+      "import sys",
+      "from fontTools.ttLib import TTFont"
+    ],
+    "classes": [
+      "LayerListUnbuilder"
+    ],
+    "functions": [
+      "unbuildColrV1",
+      "_flatten_layers"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_420_9f0f1828a889892b_AI_Chariot_Legacy_666_1.0.0_20260508_unbuilder.py.json"
+}

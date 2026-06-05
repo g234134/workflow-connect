@@ -1,0 +1,577 @@
+{
+  "version": "2.65",
+  "title": "Master_Map",
+  "description": "六部相對路徑（相對於 tang_gov_root）。tang_gov_root 為空則以本檔所在 04_Workflows 的上一層目錄為根。v2.5 註冊 agency-agents 與 crawl4ai_home；指紋由 Chariot_Registry.db 統管。v2.51 註記雙艙虛擬環境、金鑰輪換、.gitignore。v2.53 一鍵指揮系統 Launch-Warpath 與 Windows 任務排程 Tang_Chariot_Auto_Refine。v2.54 Groq 智慧撥彈（model_registry.yaml + RPM/RPD/TPM 護欄 + 429 自動換模型）。v2.55 刑部生料哨兵 _inbound_watchdog.py（watchdog→指紋 pending）、Status.business_metrics、副艙 beautifulsoup4+playwright。v2.55b 前線偵察兵 _scout_engine.py（Playwright→market_scout JSON、scout_last_pipeline、Telegram Inline）。v2.56 elite_cache.json（_build_elite_index）+ 結案報告器 _report_generator.py（Groq 70b 彈夾、v2.54 費率戰報）+ Telegram scout:confirm 一鍵結案草案；match_against_registry 優先走快取全量比對。v2.57 gov_core_system 統包艙（Departments 01–05）+ docker-compose（Postgres/Qdrant）+ _smoke_test_keys_extended.py（多供應商盲測，不含 Gemini）。v2.58 碼源清洗戰役 v2 正式命名 + jobs/events metadata 層（SQLite SDK pipeline_meta.py，落於 Departments/05_Data_Vault/pipeline_meta/）+ Code_Cleaner_Throttled_Agent 接入 job_run 寫帳本 + 新部門 06_Strategy + Postgres 占位密碼輪替（compose env_file + POSTGRES_PASSWORD 強隨機 32 字元落 .env） + upstream docs 同步器 _download_dept_docs.py + 通用部門引用掃描器 _scan_dept_refs.py。v2.59 封存 wave：Chariot_Registry 全量指紋掃描（20074 targets）+ registry 列數快照；gov_core checkpoint 目錄維運腳本 prune_checkpoints.ps1 與 README 入 runners。",
+  "tang_gov_root": "",
+  "departments": {
+    "01_Environments": "01_Environments",
+    "02_Agents_Core": "02_Agents_Core",
+    "03_RAG_Database": "03_RAG_Database",
+    "04_Workflows": "04_Workflows",
+    "05_Temp_Cache": "05_Temp_Cache",
+    "06_Exports_Output": "06_Exports_Output"
+  },
+  "aliases": {
+    "environments": "01_Environments",
+    "agents_core": "02_Agents_Core",
+    "rag_database": "03_RAG_Database",
+    "workflows": "04_Workflows",
+    "temp_cache": "05_Temp_Cache",
+    "exports": "06_Exports_Output",
+    "li_bu": "01_Environments",
+    "bing_bu": "02_Agents_Core",
+    "hu_bu": "03_RAG_Database",
+    "xing_bu": "05_Temp_Cache",
+    "gong_bu": "06_Exports_Output",
+    "hq_config": "01_Environments/config",
+    "hq_tools": "01_Environments/config/tools",
+    "hq_mcp": "01_Environments/config/mcp",
+    "hq_services": "01_Environments/config/services"
+  },
+  "artifacts": {
+    "master_map": "04_Workflows/Master_Map.json",
+    "current_plan": "04_Workflows/current_plan.json",
+    "status_json": "04_Workflows/Status.json",
+    "maps_legacy": "04_Workflows/maps/Master_Map.json",
+    "chariot_registry": "04_Workflows/Chariot_Registry.db",
+    "cursor_agent_rules": "04_Workflows/CURSOR_AGENT_RULES.md",
+    "engineering_contract_mdc": ".cursor/rules/engineering-contract.mdc",
+    "task_routing_table": "04_Workflows/task_routing_table.json",
+    "task_routing_policy": "04_Workflows/TASK_ROUTING.md",
+    "ops_cycle_schema": "04_Workflows/ops_cycle_schema.json",
+    "ops_cycle_policy": "04_Workflows/OPS_CYCLE.md",
+    "agent_work_progress": "04_Workflows/00_Agent_Work_Progress.md",
+    "project_status_master": "04_Workflows/project_status/master_status.md",
+    "agent_work_conditions": "04_Workflows/00_Agent_Work_Conditions.md",
+    "ops_reviews_dir": "04_Workflows/project_status/reviews",
+    "workflow_index": "04_Workflows/WORKFLOW_INDEX.md",
+    "data_vault_readme": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/README.md",
+    "phase8_6_bridge_spec": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
+    "phase8_6a_bridge_api_spec": "04_Workflows/PHASE8_6A_MINIMAL_BRIDGE_API_ENDPOINT_MVP_v0.1.md"
+  },
+  "index_catalog": [
+    {
+      "id": "phase5_task_locks_probe",
+      "path_key": "data_vault_readme",
+      "path": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/README.md",
+      "workflow_index_section": "1.3",
+      "summary": "05_Data_Vault/README.md：Phase 5 probe、task_runs / seed_pg 鎖排查與 shortest-path 驗收 Runbook。"
+    },
+    {
+      "id": "minimal_intake_browser_bridge",
+      "path_key": "phase8_6_bridge_spec",
+      "path": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
+      "workflow_index_section": "1.4",
+      "summary": "Phase 8.6/8.6a minimal_intake_browser bridge：intake（7.5）→ phase6_5_pre_state（6.5）→ optional browser（8.5）；POST /api/orchestration/bridge → run_minimal_orchestration_bridge()。HTTP 細節見 phase8_6a_bridge_api_spec。"
+    }
+  ],
+  "sub_directories": {
+    "01_Environments": {
+      "config": "config",
+      "config_cursor": "config/cursor",
+      "config_tools": "config/tools",
+      "config_mcp": "config/mcp",
+      "config_services": "config/services",
+      "python_venvs": "python_venvs",
+      "staging_reserved": "05_Temp_Cache/staging/reserved"
+    },
+    "02_Agents_Core": {
+      "repos": "repos",
+      "agency_agents": "agency-agents"
+    },
+    "05_Temp_Cache": {
+      "raw_inbound": "raw_inbound",
+      "quarantine": "quarantine",
+      "cleaned_sample": "cleaned_sample",
+      "cleaned_full": "cleaned_full",
+      "staging_wave7": "staging/wave7",
+      "crawl4ai_home": "crawl4ai_home"
+    },
+    "03_RAG_Database": {
+      "c3_logs": "C3_Logs",
+      "snapshots": "Snapshots",
+      "c2_core": "C2_核心知識庫"
+    },
+    "06_Exports_Output": {
+      "final": "final",
+      "archive": "Archive",
+      "reports": "reports",
+      "wave7_delivery": "wave7/delivery"
+    }
+  },
+  "wave7_paths": {
+    "cleaned_full": {
+      "department": "05_Temp_Cache",
+      "sub_type": "cleaned_full"
+    },
+    "staging_root": {
+      "department": "05_Temp_Cache",
+      "sub_type": "staging_wave7"
+    },
+    "delivery_root": {
+      "department": "06_Exports_Output",
+      "sub_type": "wave7_delivery"
+    }
+  },
+  "wave7_bootstrap": {
+    "cabin_default": "gov_core_system",
+    "core_imports": [
+      "core.envelope_writer",
+      "core.wave6_manifest_writer",
+      "core.wave6_qa_manifest_m1",
+      "core.wave6_intake_gate"
+    ],
+    "schema_files": {
+      "envelope_v2": "01_Environments/python_venvs/gov_core_system/shared/schemas/envelope_v2.json"
+    }
+  },
+  "notes": [
+    "開發規範：新 Agent 啟動前必讀 02_Agents_Core\\Agent_SOP_Template.md，嚴格遵循兵裝調用與節流原則。",
+    "禁止在程式中寫死磁碟路徑；請使用 02_Agents_Core/gov_paths.py。",
+    "密鑰僅來自 01_Environments/.env（由 gov_paths 載入）。任何工具/腳本均不得將金鑰原文輸出。",
+    "部門內子目錄名稱以 sub_directories 為準；Agent 產出路徑請統一經 Base_Agent.get_path(department, sub_type)。",
+    "內容指紋去重統一改由 04_Workflows/Chariot_Registry.db 管理；舊 hashes.txt 已遷移並停用，禁止新建。",
+    "路徑解析：agency-agents → resolve_agent_output_path(..., '02_Agents_Core', 'agency_agents')；Crawl4AI → CRAWL4AI_HOME 或 05_Temp_Cache/crawl4ai_home（見 gov_paths.get_crawl4ai_home）。",
+    "v2.51：雙艙虛擬環境就位於 01_Environments/python_venvs/gov_main 與 gov_agency；版本鎖位於 01_Environments/requirements.*.lock.txt。",
+    "v2.51：根與 01_Environments 已部署 .gitignore，永久排除 .env / *.log / __pycache__ / python_venvs/。",
+    "v2.53：Launch-Warpath.ps1（4 段：體檢→登錄→精煉→報喜）+ Setup-Schedule.ps1 註冊 Tang_Chariot_Auto_Refine（每日 03:00 + 登入；SYSTEM；2h ExecutionTimeLimit；Transcript→ scheduler/last_run.log）。",
+    "v2.54：Groq 智慧撥彈以 01_Environments/config/model_registry.yaml 為唯一配額來源；_tang_http.json_request_dual_ssl(groq_chat_failover=True) 觸發 429 自動切換 70b → qwen/qwen3-32b → llama-3.1-8b-instant；RPD 計次持久化於 06_Exports_Output/reports/groq_quota_state.json。",
+    "v2.54：Telegram 戰報新增『今日彈藥餘裕』（依 RPD 剩餘 %）與『本次精煉花費：$0 元（免費），省下 [X] 元』（依 Groq 標價 × twd_per_usd）。",
+    "v2.55：raw_inbound 哨兵（watchdog）觸發 _register_fingerprints.py --clean-status pending；Chariot_Registry.register_raw_inbound_pending 不從 indexed 降級；Status.json 新增 business_metrics（potential_case_sources / estimated_roi_rate）；副艙納入 beautifulsoup4、playwright（瀏覽器請 playwright install）。",
+    "v2.56：elite_cache.json（_build_elite_index）+ scout_last_pipeline + _report_generator 結案草案 + Telegram scout:confirm。",
+    "v2.57：gov_core_system venv + Departments（01_Orchestration…05_Data_Vault）；docker-compose.yml 於該艙 Departments/04_Infrastructure；擴充盲測 _smoke_test_keys_extended.py（無 Gemini）；根目錄 requirements.txt 為 pip freeze 備份。",
+    "交接：新對話尚書省一句話——「大唐副官：D:\\大唐三省六部\\AGENTS.md 載入後依 §初始化校準執行，待命。」副官須先讀該檔再動作；細節見 README_Refresher.md §7。",
+    "v2.60：總部工具層 01_Environments/config/（Superpowers/Graphify/9Router/Playwright MCP/Agentmemory Docker）；暗部 gov_core_system venv 禁裝 HQ 工具；Cursor mcp.json 於使用者家目錄。",
+    "v2.62：Phase 3 任務路由制度（HQ-P3-TASK-ROUTING）：TASK_ROUTING.md + task_routing_table.json + 02_Agents_Core/task_routing.py + runners.route_task_py。",
+    "v2.63：Phase 4 營運週期制度（HQ-P4-OPS-CYCLE）：OPS_CYCLE.md + ops_cycle_schema.json + 02_Agents_Core/ops_cycle.py + runners.ops_cycle_py + project_status/reviews/。",
+    "v2.64：05_Data_Vault/README.md — Phase 5 probe、task_runs / seed_pg 鎖排查與 shortest-path 驗收 Runbook（WORKFLOW_INDEX §1.3；index_catalog.phase5_task_locks_probe）。",
+    "v2.65：Phase 8.6i — minimal_intake_browser bridge 索引登錄（WORKFLOW_INDEX §1.4；index_catalog.minimal_intake_browser_bridge；runners：phase8_6_minimal_bridge_spec、phase8_6a_bridge_api_spec、minimal_orchestration_bridge_core、app_api_orchestration_bridge_unittest）。"
+  ],
+  "cabins": {
+    "gov_main": {
+      "venv_dir": "01_Environments/python_venvs/gov_main",
+      "python": "01_Environments/python_venvs/gov_main/Scripts/python.exe",
+      "requirements_src": "01_Environments/requirements.main.txt",
+      "requirements_lock": "01_Environments/requirements.main.lock.txt",
+      "purpose": "工廠主線：Cleaner / Recovery / Indexing / Telegram_Listener / Asset_Value_Evaluator / Wave runners"
+    },
+    "gov_agency": {
+      "venv_dir": "01_Environments/python_venvs/gov_agency",
+      "python": "01_Environments/python_venvs/gov_agency/Scripts/python.exe",
+      "requirements_src": "01_Environments/requirements.agency.txt",
+      "requirements_lock": "01_Environments/requirements.agency.lock.txt",
+      "purpose": "副艙：CrewAI / ChromaDB / FastAPI / agency-agents / BeautifulSoup+Playwright 偵察與 Wave 級任務發起"
+    },
+    "gov_core_system": {
+      "venv_dir": "01_Environments/python_venvs/gov_core_system",
+      "python": "01_Environments/python_venvs/gov_core_system/Scripts/python.exe",
+      "requirements_src": "requirements.txt",
+      "requirements_lock": "requirements.txt",
+      "purpose": "統包艙（CrewAI/LangChain/pandas 等）：venv 內 Departments 01–05；docker-compose（Postgres+Qdrant）在 Departments/04_Infrastructure；資料卷對應 05_Data_Vault。勿與 gov_main 混淆；根目錄 requirements.txt 為該艙 pip freeze 備份。"
+    }
+  },
+  "runners": {
+    "enter_main": "04_Workflows/Enter-Main.ps1",
+    "enter_agency": "04_Workflows/Enter-Agency.ps1",
+    "telegram_listener_start": "04_Workflows/Start-TelegramListener.ps1",
+    "telegram_listener_stop": "04_Workflows/Stop-TelegramListener.ps1",
+    "smoke_test_keys": "04_Workflows/_smoke_test_keys.py",
+    "smoke_test_keys_extended": "04_Workflows/_smoke_test_keys_extended.py",
+    "doctor_main_cabin": "04_Workflows/_doctor_main_cabin.py",
+    "doctor_agency_cabin": "04_Workflows/_doctor_agency_cabin.py",
+    "factory_wave_01": "04_Workflows/_factory_wave_01.py",
+    "factory_pipeline_yaml": "01_Environments/config/factory_pipeline.yaml",
+    "model_registry_groq": "01_Environments/config/model_registry.yaml",
+    "readme_handoff": "README_Refresher.md",
+    "register_fingerprints_baseline": "04_Workflows/_register_fingerprints.py",
+    "inbound_watchdog_py": "04_Workflows/_inbound_watchdog.py",
+    "inbound_watchdog_start": "04_Workflows/Start-InboundWatchdog.ps1",
+    "scout_engine_py": "04_Workflows/_scout_engine.py",
+    "scout_engine_start": "04_Workflows/Start-ScoutEngine.ps1",
+    "build_elite_index": "04_Workflows/_build_elite_index.py",
+    "report_generator_closeout": "04_Workflows/_report_generator.py",
+    "integration_v256_closeout": "04_Workflows/_integration_v256_scout_closeout.py",
+    "launch_warpath": "04_Workflows/Launch-Warpath.ps1",
+    "setup_schedule_warpath": "04_Workflows/Setup-Schedule.ps1",
+    "stop_warpath_schedule": "04_Workflows/Stop-WarpathSchedule.ps1",
+    "scheduler_last_run_log": "06_Exports_Output/reports/scheduler/last_run.log",
+    "scheduler_setup_audit_log": "06_Exports_Output/reports/scheduler/setup_register.log",
+    "warpath_alert": "04_Workflows/_warpath_alert.py",
+    "tang_http_smart_failover": "04_Workflows/_tang_http.py",
+    "groq_quota_state": "06_Exports_Output/reports/groq_quota_state.json",
+    "docker_compose_gov_core_system": "01_Environments/python_venvs/gov_core_system/Departments/04_Infrastructure/docker-compose.yml",
+    "requirements_gov_core_freeze": "requirements.txt",
+    "code_cleaning_pipeline_v2_spec": "01_Environments/python_venvs/gov_core_system/Departments/06_Strategy/code_cleaning_pipeline_v2.md",
+    "pipeline_meta_sdk": "02_Agents_Core/pipeline_meta.py",
+    "pipeline_meta_init": "04_Workflows/_init_pipeline_meta.py",
+    "pipeline_meta_db": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/pipeline_meta/code_cleaning_pipeline_v2_meta.db",
+    "pipeline_meta_readme": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/pipeline_meta/README.md",
+    "data_vault_readme": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/README.md",
+    "phase5_live_pg_soak": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/phase5_live_pg_soak.py",
+    "phase8_6_minimal_bridge_spec": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
+    "phase8_6a_bridge_api_spec": "04_Workflows/PHASE8_6A_MINIMAL_BRIDGE_API_ENDPOINT_MVP_v0.1.md",
+    "minimal_orchestration_bridge_core": "01_Environments/python_venvs/gov_core_system/core/minimal_orchestration_bridge.py",
+    "app_api_orchestration_bridge_unittest": "01_Environments/python_venvs/gov_core_system/tests/test_app_api_orchestration_bridge.py",
+    "code_cleaner_throttled_agent": "02_Agents_Core/Code_Cleaner_Throttled_Agent.py",
+    "download_dept_docs": "04_Workflows/_download_dept_docs.py",
+    "scan_dept_refs": "04_Workflows/_scan_dept_refs.py",
+    "rotate_postgres_password": "04_Workflows/_rotate_postgres_password.py",
+    "gov_core_orchestration_smoke": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/smoke_test.py",
+    "gov_core_orchestration_main": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/main.py",
+    "gov_core_checkpoint_module": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/workflow/checkpoint.py",
+    "gov_core_prune_checkpoints_ps1": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/scripts/prune_checkpoints.ps1",
+    "gov_core_checkpoint_readme": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/README_gov_core_checkpoint.md",
+    "agents_md": "AGENTS.md",
+    "hq_config_root": "01_Environments/config",
+    "hq_superpowers": "01_Environments/config/cursor/superpowers",
+    "hq_graphify": "01_Environments/config/tools/graphify",
+    "hq_9router": "01_Environments/config/tools/9router",
+    "hq_spec_kit_reserved": "01_Environments/config/tools/spec-kit",
+    "hq_playwright_mcp": "01_Environments/config/mcp/playwright",
+    "hq_mcp_registry": "01_Environments/config/mcp/_registry",
+    "hq_agentmemory_service": "01_Environments/config/services/agentmemory",
+    "hq_agentmemory_compose": "01_Environments/config/services/agentmemory/repo/docker-compose.yml",
+    "hq_reserved_cloakbrowser": "05_Temp_Cache/staging/reserved/cloakbrowser",
+    "hq_reserved_multica": "05_Temp_Cache/staging/reserved/multica",
+    "cursor_agent_rules": "04_Workflows/CURSOR_AGENT_RULES.md",
+    "engineering_contract_mdc": ".cursor/rules/engineering-contract.mdc",
+    "harness_constitution": "04_Workflows/HARNESS_CONSTITUTION.md",
+    "engineering_contract": "04_Workflows/ENGINEERING_CONTRACT.md",
+    "department_map": "04_Workflows/DEPARTMENT_MAP.md",
+    "instance_anchor_tang": "04_Workflows/INSTANCE_ANCHOR_TANG.md",
+    "route_task_py": "04_Workflows/_route_task.py",
+    "task_routing_policy": "04_Workflows/TASK_ROUTING.md",
+    "task_routing_table": "04_Workflows/task_routing_table.json",
+    "ops_cycle_py": "04_Workflows/_ops_cycle.py",
+    "ops_cycle_policy": "04_Workflows/OPS_CYCLE.md",
+    "ops_cycle_schema": "04_Workflows/ops_cycle_schema.json",
+    "wave7_runner_bootstrap": "04_Workflows/_wave7_runner_bootstrap.py",
+    "wave7_run_job": "04_Workflows/_wave7_run_job.py",
+    "wave7_regression_gate": "04_Workflows/_wave7_regression_gate.py",
+    "core_agent_smoke": "04_Workflows/_core_agent_smoke.py"
+  },
+  "gov_core_system_departments": {
+    "01_Orchestration": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration",
+    "02_Brain_GraphRAG": "01_Environments/python_venvs/gov_core_system/Departments/02_Brain_GraphRAG",
+    "03_Observability": "01_Environments/python_venvs/gov_core_system/Departments/03_Observability",
+    "04_Infrastructure": "01_Environments/python_venvs/gov_core_system/Departments/04_Infrastructure",
+    "05_Data_Vault": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault",
+    "06_Strategy": "01_Environments/python_venvs/gov_core_system/Departments/06_Strategy"
+  },
+  "secrets_status": {
+    "rotated_at": "2026-05-09",
+    "verification": "_smoke_test_keys.py；選用 _smoke_test_keys_extended.py（多供應商，不含 Gemini）@ 04_Workflows",
+    "providers": {
+      "OPENAI_API_KEY": "rotated_and_verified",
+      "GROQ_API_KEY": "rotated_and_verified",
+      "TELEGRAM_BOT_TOKEN": "rotated_and_verified"
+    },
+    "policy": "盲測：嚴禁將金鑰字串輸出至 stdout/stderr 或事件 log；驗證僅以 [OK]/[FAILED]+HTTP code 表達。"
+  },
+  "war_status": {
+    "as_of": "2026-05-17",
+    "frozen_at_iso_utc": "2026-05-17T09:30:38Z",
+    "constitution_version": "v2.61",
+    "headline": "v2.61 封存（2026-05-17 UTC）：Phase 2 工程規則轉制完成（CURSOR_AGENT_RULES.md + engineering-contract.mdc，81 段 alwaysApply）；Gov Core V1 smoke 基線維持；精煉 run_id=c0fa044a…；Telegram lock 仍缺席。",
+    "milestones": [
+      "2026-05-17 (封存 Phase 2B)：04_Workflows/CURSOR_AGENT_RULES.md + .cursor/rules/engineering-contract.mdc（自 ENGINEERING_CONTRACT 條文化）；指紋 newly_inserted={governance_doc:4}，registry_total_rows=36468。",
+      "2026-05-17 (封存)：Chariot_Registry 全艦掃描 20074 targets，failures=0，registry_total_rows=36464，newly_inserted={governance_doc:2}。",
+      "2026-05-17：Status.json 末筆 Asset_Value_Evaluator run_id=c0fa044acf1c40c1a3570fd5d5abbcac（sampled=100，avg=5.019，A/B/C/D=8/56/7/29）。",
+      "2026-05-17：HARNESS/CONTRACT/Conditions/WORKFLOW_INDEX/OPERATING_MAP 七步校準入場口令已綁定尚書省（擴展於 AGENTS.md 四步初始化）。",
+      "v2.60 (2026-05-16)：總部工具集中區 01_Environments/config/（cursor、tools、mcp、services）+ 刑部預留 staging/reserved（cloakbrowser、multica）。",
+      "v2.60：Superpowers — 手動落地 %USERPROFILE%\\.cursor\\plugins\\superpowers（v5.1.0）；總部登記於 config/cursor/superpowers/。",
+      "v2.60：Graphify — uv tool install graphifyy 0.8.5；graphify cursor install → config/tools/graphify/.cursor/rules/graphify.mdc。",
+      "v2.60：9Router — 區域 npm 0.4.50 @ config/tools/9router；未改 Cursor 模型路由。",
+      "v2.60：Playwright MCP — %USERPROFILE%\\.cursor\\mcp.json 新增 npx @playwright/mcp；chromium 已裝。",
+      "v2.60：Agentmemory — docker compose @ config/services/agentmemory/repo（tonyzorin/agentmemory）；MCP http://127.0.0.1:8006/mcp；三容器 healthy。",
+      "v2.60：封存指紋掃描 20074 targets，failures=0，registry_total_rows=36462，newly_inserted={}。",
+      "雙艙 venv 建置：gov_main / gov_agency；鎖檔位於 01_Environments/requirements.*.lock.txt。",
+      "三鑰盲測：OpenAI / Groq / Telegram = [OK]（_smoke_test_keys.py，無金鑰輸出）。",
+      "v2.53 一鍵指揮系統 Launch-Warpath.ps1：體檢→登錄→精煉→報喜；錯誤攔截 + Telegram 警告。",
+      "v2.54 Groq 智慧撥彈：model_registry.yaml（RPM/RPD/TPM 護欄）+ 429 自動換 70b → qwen/qwen3-32b → 8b-instant。",
+      "v2.55/v2.55b：刑部 inbound_watchdog + 偵察兵 _scout_engine + scout_last_pipeline + Telegram callback_query。",
+      "v2.56：elite_cache + _report_generator 結案草案（Groq 彈夾）+ Telegram scout:confirm。",
+      "v2.57 封存：gov_core_system + Departments 01–05 + docker-compose.yml；_smoke_test_keys_extended.py；指紋補登。",
+      "v2.58 (本次)：碼源清洗戰役 v2 正式命名 — 任務說明檔 Departments/06_Strategy/code_cleaning_pipeline_v2.md（六小節：輸入/成功/失敗/目標/未來/附註）。",
+      "v2.58 (本次)：pipeline_meta SDK — 02_Agents_Core/pipeline_meta.py（init_db/start_job/record_event/update_job_counts/finish_job/job_run context manager）；零依賴 stdlib + WAL；DB 落於 Departments/05_Data_Vault/pipeline_meta/code_cleaning_pipeline_v2_meta.db；含 jobs(17 欄) + events(8 欄) + 8 索引。",
+      "v2.58 (本次)：N1 接戰 — Code_Cleaner_Throttled_Agent.run() 已用 job_run 包覆；6 種事件 (raw_scan_started / raw_scan_completed / wave_started / wave_completed / format_error_archived / pipeline_started|finished|aborted) 於既有 checkpoint 自然植入；crash-safety 由 SDK context manager 保證（例外即 status=failed + notes=exc）；煙測 A 成功 5 events / B 例外 3 events + status='failed' 通過。",
+      "v2.58 (本次)：06_Strategy 新部門 — Departments 編號對齊 (02_Strategy → 06_Strategy)，0 殘留引用；通用部門引用掃描器 _scan_dept_refs.py（支援 --needle / --db / --limit）。",
+      "v2.58 (本次)：Postgres 占位密碼輪替 — docker-compose.yml db_postgres 改用 env_file + ${POSTGRES_PASSWORD:?must_set_in_env}；POSTGRES_PASSWORD 強隨機 32 字元 [A-Za-z0-9] 落 01_Environments/.env（無明文外洩，由 _rotate_postgres_password.py 寫入）；Docker daemon 上線後需以 --env-file 指定路徑才能正確 interpolation。",
+      "v2.58 (本次)：Telegram 監聽器復活 — 舊 PID 7856 已死、鎖檔缺失；以 Start-TelegramListener.ps1 重啟得新 PID 7716（since 2026-05-11T01:14:55Z）；雙向 /ping + Groq 閒聊測試通過。",
+      "v2.58 (本次)：upstream docs 同步器 _download_dept_docs.py（stdlib urllib、零依賴）— 拉 LangGraph / GraphRAG / Langfuse 7 篇文件落 Departments/01_Orchestration、02_Brain_GraphRAG、03_Observability，總計 ~1.05 MB。",
+      "v2.58 (封存補記)：Code_Cleaner_Throttled_Agent — 可選 Langfuse root span（_lf_* helpers；langfuse 未安裝/停用/無金鑰 → no-op），finally 安全 flush/shutdown。",
+      "v2.58 (封存補記 2026-05-13)：gov_core_system — 01_Orchestration LangGraph StateGraph（start→retrieve_context→decide→finish）+ workflow/checkpoint.py JSON mock（僅存 gov_core_system/runtime/checkpoints）+ main --resume / smoke 雙次驗證；trace_helper 增 log_checkpoint_saved|log_checkpoint_loaded；compat_legacy 保留。",
+      "v2.59 (封存 2026-05-13 UTC)：_register_fingerprints.py 全艦掃描 20074 targets，failures=0，registry_total_rows=36461，newly_inserted={}（本波無新增列）。",
+      "v2.59 (封存)：gov_core 01_Orchestration/scripts/prune_checkpoints.ps1（PS5.1 相容、Unicode 路徑列舉、CONFIRM_DELETE 門檻）+ README_gov_core_checkpoint.md；prune 日誌 runtime/checkpoints/prune.log；06_Strategy 交付快照與 strategy README 副本已落磁碟（見前波補記）。",
+      "2026-05-13：gov_core prune_checkpoints（quarantine 版）驗證 — 7 件 checkpoint JSON 入 runtime/checkpoints/quarantine/20260513；deliverables：gov_core_prune_verify_20260513_171446.txt、gov_core_prune_audit_20260513_171446.md、gov_core_prune_archive_*.md。",
+      "2026-05-13：Master_Map 條目 quarantine_auto_2026-05-13 — audits／archives、state=done；封存協議同步 war_status。",
+      "2026-05-13：封存協議 — Master_Map.json 去除 UTF-8 BOM，恢復 gov_paths / Chariot_Registry 讀取。"
+    ],
+    "gov_core_orchestration": {
+      "summary": "LangGraph StateGraph + JSON checkpoint mock；不觸 05_Data_Vault",
+      "checkpoint_root_relative": "01_Environments/python_venvs/gov_core_system/runtime/checkpoints",
+      "smoke_relative": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/smoke_test.py",
+      "main_relative": "01_Environments/python_venvs/gov_core_system/Departments/01_Orchestration/main.py",
+      "langgraph_pip": "langgraph==1.2.0（gov_core_system venv，已核准個案安裝）"
+    },
+    "hq_tools": {
+      "config_root_relative": "01_Environments/config",
+      "cursor_mcp_json_note": "使用者層 %USERPROFILE%\\.cursor\\mcp.json（非戰車相對路徑）",
+      "dark_venv_policy": "嚴禁 pip/uv 進 01_Environments/python_venvs/gov_core_system",
+      "superpowers": {
+        "hq_registry": "01_Environments/config/cursor/superpowers",
+        "plugins_path": "%USERPROFILE%/.cursor/plugins/superpowers",
+        "version": "5.1.0"
+      },
+      "graphify": {
+        "version": "0.8.5",
+        "install": "uv tool install graphifyy",
+        "cli": "%USERPROFILE%/.local/bin/graphify.exe"
+      },
+      "9router": {
+        "version": "0.4.50",
+        "install": "local npm @ config/tools/9router"
+      },
+      "playwright_mcp": {
+        "command": "npx -y @playwright/mcp@latest"
+      },
+      "agentmemory": {
+        "compose": "01_Environments/config/services/agentmemory/repo/docker-compose.yml",
+        "mcp_url": "http://127.0.0.1:8006/mcp",
+        "mcp_port": 8006,
+        "containers": [
+          "agentmemory-app",
+          "agentmemory-postgres",
+          "agentmemory-redis"
+        ],
+        "status_at_freeze": "healthy"
+      },
+      "reserved_not_started": [
+        "05_Temp_Cache/staging/reserved/cloakbrowser",
+        "05_Temp_Cache/staging/reserved/multica",
+        "01_Environments/config/tools/spec-kit"
+      ]
+    },
+    "telegram_listener": {
+      "pid": 13536,
+      "lock_path": "04_Workflows/.telegram_listener.lock",
+      "lock_exists_at_freeze": true,
+      "lock_checked_iso_utc": "2026-06-05T03:04:30Z",
+      "log_dir": "06_Exports_Output/reports/telegram_listener",
+      "last_known_pid": 13536,
+      "last_known_started_iso_utc": "2026-06-05T03:02:42+00:00",
+      "last_error_log": "06_Exports_Output/reports/telegram_listener/listener_20260605_110242.err.log",
+      "last_error_summary": "Revived 2026-06-05T03:04:30Z: long-poll loop active PID 13536; post-start err log clean (no RemoteDisconnected). getMe OK; outbound sendMessage OK. Handler /ping smoke pong · 2026-06-05T03:03:40+00:00. Client E2E /ping: 尚書省 runbook 步驟 6 待補確認。",
+      "remediation": "下次召喚副官時，先跑 04_Workflows/Start-TelegramListener.ps1 復活；中期建議補 Watchdog_Sentinel 偵測 RemoteDisconnected 並自動重啟。"
+    },
+    "scheduler": {
+      "task_name": "Tang_Chariot_Auto_Refine",
+      "principal": "SYSTEM",
+      "run_level": "Highest",
+      "execution_time_limit": "PT2H",
+      "triggers": [
+        "Daily 03:00",
+        "AtLogOn"
+      ],
+      "audit_log": "06_Exports_Output/reports/scheduler/setup_register.log",
+      "last_run_log": "06_Exports_Output/reports/scheduler/last_run.log"
+    },
+    "groq_quota_protection": {
+      "registry_yaml": "01_Environments/config/model_registry.yaml",
+      "state_json": "06_Exports_Output/reports/groq_quota_state.json",
+      "failover_chain": [
+        "llama-3.3-70b-versatile",
+        "qwen/qwen3-32b",
+        "llama-3.1-8b-instant"
+      ],
+      "fx_twd_per_usd": 32.0,
+      "policy": "RPM/RPD/TPM 由 model_registry.yaml 為唯一程式來源；429 / RPM 觸發即降級下一彈夾；401/403 不重試。"
+    },
+    "wave_01": {
+      "run_id": "25c67a4d7c1b4d3eac5dbb59fcc9fe0a",
+      "agent": "Asset_Value_Evaluator_Agent",
+      "pool_size": 36236,
+      "sampled": 100,
+      "avg_score": 5.101,
+      "grades": {
+        "A": 10,
+        "B": 55,
+        "C": 4,
+        "D": 31
+      },
+      "groq_calls": 7,
+      "groq_success": 7,
+      "report_path": "06_Exports_Output/reports/asset_value_eval_25c67a4d7c1b4d3eac5dbb59fcc9fe0a.json"
+    },
+    "wave_02_interactive": {
+      "run_id": "b72997a2bf254c2dbb7d5685ddfe74f0",
+      "agent": "Asset_Value_Evaluator_Agent",
+      "trigger": "Launch-Warpath.ps1 -WaveN 100（互動）",
+      "pool_size": 36236,
+      "sampled": 100,
+      "avg_score": 5.186,
+      "grades": {
+        "A": 8,
+        "B": 60,
+        "C": 4,
+        "D": 28
+      },
+      "groq_calls": 9,
+      "groq_success": 9,
+      "failover_429_observed": false,
+      "report_path": "06_Exports_Output/reports/asset_value_eval_b72997a2bf254c2dbb7d5685ddfe74f0.json"
+    },
+    "wave_02_scheduled": {
+      "run_id": "c78fbe28750b4cfdb6f98b72a6add013",
+      "agent": "Asset_Value_Evaluator_Agent",
+      "trigger": "Task Scheduler: Tang_Chariot_Auto_Refine（SYSTEM 03:45）",
+      "pool_size": 36236,
+      "sampled": 100,
+      "avg_score": 5.067,
+      "grades": {
+        "A": 12,
+        "B": 51,
+        "C": 5,
+        "D": 32
+      },
+      "groq_calls": 13,
+      "groq_success": 13,
+      "report_path": "06_Exports_Output/reports/asset_value_eval_c78fbe28750b4cfdb6f98b72a6add013.json"
+    },
+    "wave_phase2_harness": {
+      "summary": "Phase 2B — ENGINEERING_CONTRACT → Cursor rules",
+      "human_readable": "04_Workflows/CURSOR_AGENT_RULES.md",
+      "cursor_rule": ".cursor/rules/engineering-contract.mdc",
+      "rule_segments": 81,
+      "always_apply": true,
+      "mother_contract": "04_Workflows/ENGINEERING_CONTRACT.md",
+      "constitution": "04_Workflows/HARNESS_CONSTITUTION.md",
+      "freeze_run_id": "freeze_phase2_20260517"
+    },
+    "next_priorities": [
+      "Phase 2 裁決：尚書省確認 CURSOR_AGENT_RULES / engineering-contract.mdc 是否升格定稿；新 Agent 對話驗證 Rules 面板 engineering-contract always applied。",
+      "W0 索引：`_PORTABLE_CORE_INDEX.md` 是否補 Phase 2 規則路徑引用。",
+      "Phase 8：Spec-Kit — 於 01_Environments/config/tools/spec-kit 建立獨立 uv/.venv，安裝 specify CLI；仍禁暗部 venv。",
+      "Cursor 驗收：新 Agent 問 Superpowers；MCP 面板確認 playwright + agentmemory（:8006）Connected。",
+      "Agentmemory 規則：尚書省確認後才複製 rules/cursor.mdc 至專案；現階段僅 MCP 預留。",
+      "Telegram 監聽器：lock 缺席 — 下次接戰先 Start-TelegramListener.ps1。",
+      "gov_core 編排：以 LangGraph 官方 MemorySaver / SqliteSaver 取代 JSON mock checkpointer；compile(checkpointer=…) 與 GraphState 序列化對齊；另凍一份 gov_core_system 專用 requirements.constraints。",
+      "gov_core Docker：04_Infrastructure Postgres+Qdrant compose（與總部 agentmemory 服務分離；密碼見 01_Environments/.env）。",
+      "N1.5 動態 triggered_by：把 Code_Cleaner_Throttled_Agent 的 triggered_by='manual' 改為讀 os.environ['TRIGGERED_BY']，由 Launch-Warpath.ps1 / 排程腳本注入 (scheduler / telegram / watchdog)。",
+      "N4 metadata 查詢 CLI：建 _pipeline_meta_query.py（--recent-jobs N、--events JOB_ID、--errors-since T），方便 tail 觀察。",
+      "N3 JSONL 影子寫：events.jsonl 影子追加，提供 tail -f 即時觀察視窗（不參與查詢、純 debug）。",
+      "N2 殭屍 reaper：_pipeline_meta_janitor.py — 掃 status='running' 且 updated_at 逾時的 job，標 partial 並補 pipeline_aborted 事件。",
+      "Schema_Sentry：cleaned_full 出站前 pydantic / schema 校驗，未過進 quarantine（可結合 format_error_archived 事件）。",
+      "Groq quota：以 API 回應 header / dashboard 自動校準 RPM/RPD（v2.54b）。",
+      "Watchdog_Sentinel：Status.json 與 lockfile 老化偵測 + 自癒重啟（Telegram listener 已驗證實戰價值）。",
+      "副艙 playwright：於 gov_agency 執行 `python -m playwright install`（chromium）佈署瀏覽器二進位。",
+      "首次真實 N1 點火：建議 --max-waves 1 --wave-size 50 小量驗 jobs+events，再放手 wave_size=500 大跑。",
+      {
+        "id": "quarantine_auto_2026-05-13",
+        "audits": [
+          {
+            "verify_report_path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\gov_core_prune_verify_20260513_171446.txt",
+            "quarantine_count": 7,
+            "prune_log_tail": "[2026-05-13T01:42:37Z] === prune session start mode=DRY_RUN keep=120 total_json=7 to_delete=0 ===\n[2026-05-13T01:42:37Z] === nothing to do ===\n[2026-05-13T01:42:50Z] === prune session start mode=DRY_RUN keep=5 total_json=7 to_delete=2 ===\n[2026-05-13T01:42:50Z] CANDIDATE_DELETE D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\9a5b5754855f4dc09bf7ed85363dd786--20260513T010035Z.json\n[2026-05-13T01:42:50Z] CANDIDATE_DELETE D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\9a5b5754855f4dc09bf7ed85363dd786--20260513T010028Z.json\n[2026-05-13T01:42:50Z] === DRY_RUN end (no deletes) ===\n[2026-05-13T01:44:36Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:44:36Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:44:47Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:44:47Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:45:01Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:45:01Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:46:08Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:46:08Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:46:29Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:46:29Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:46:39Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:46:39Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:46:51Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:46:51Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:47:08Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:47:08Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:47:36Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:47:36Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:47:53Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:47:53Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:48:01Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:48:01Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:48:09Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:48:09Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:48:21Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:48:21Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:48:43Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:48:43Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:49:02Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:49:02Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:49:18Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:49:18Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:49:24Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:49:24Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:49:35Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:49:35Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:49:53Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:49:53Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:50:22Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:50:22Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:51:39Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:51:39Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:51:47Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:51:47Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:51:59Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:51:59Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:52:45Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:52:45Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:53:07Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:53:07Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:53:15Z] prune_checkpoints started. DryRun: True\n[2026-05-13T01:53:15Z] No candidate JSON checkpoint files found.\n[2026-05-13T01:53:23Z] prune_checkp",
+            "quarantine_sample": [
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\3be897fc73414b3ca8cb79fc047b90be--20260513T012740Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:27:40Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\3be897fc73414b3ca8cb79fc047b90be--20260513T012741Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:27:41Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\9a5b5754855f4dc09bf7ed85363dd786--20260513T010028Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:00:28Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\9a5b5754855f4dc09bf7ed85363dd786--20260513T010035Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:00:35Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\9a5b5754855f4dc09bf7ed85363dd786--20260513T010050Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:00:50Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\bb078df65c904772828950da7d56dc1a--20260513T012633Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:26:33Z"
+              },
+              {
+                "FullName": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\runtime\\checkpoints\\quarantine\\20260513\\bb078df65c904772828950da7d56dc1a--20260513T012634Z.json",
+                "Length": 589,
+                "LastWriteTimeUtc": "2026-05-13T01:26:34Z"
+              }
+            ],
+            "time_utc": "2026-05-13T09:19:32Z",
+            "audit_id": "prune_verify_2026-05-13T171446Z",
+            "summary": "Prune verify executed: KeepNewest=1, ExecuteDelete run; 7 checkpoint JSON files were moved to quarantine on 2026-05-13.",
+            "verify_report_bytes": 10097
+          }
+        ],
+        "state": "done",
+        "done_at": "2026-05-13T09:00:35Z",
+        "done_by": "ops",
+        "headline": "Quarantine 自動化 — 已納入短期實作",
+        "as_of": "2026-05-13T08:49:41Z",
+        "attachments": [
+          {
+            "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\quarantine_auto_ticket_2026-05-13.md",
+            "bytes": 2707
+          },
+          {
+            "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\01_Orchestration\\scripts\\prune_checkpoints.ps1",
+            "bytes": 5601
+          },
+          {
+            "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\quarantine_deploy_and_acceptance_2026-05-13.md",
+            "bytes": 1369
+          },
+          {
+            "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\gov_core_prune_dryrun_20260513_023838.txt",
+            "bytes": 6892
+          }
+        ],
+        "owner": [
+          "ops",
+          "gov_core_orch_lead"
+        ],
+        "note": "Quarantine 自動化已核准短期實作（Owner: ops, gov_core_orch_lead）。UTC anchored: 2026-05-13T02:38:11Z\nDry-run schedule registered: gov_core_prune_dryrun_daily (daily, 14:00 local). Dry-run deliverables will be stored in Departments/06_Strategy/deliverables.\nNext: implement quarantine move + retention (7 days) and test ExecuteDelete in dev before enabling production auto-delete.\n[AUDIT] marked done by ops at 2026-05-13T09:00:35Z\n[audit] prune verify executed at 2026-05-13T09:19:32Z; quarantine_count=7; verify_report=gov_core_prune_verify_20260513_171446.txt\n[archive] prune verify archived at 2026-05-13T09:29:16Z; archive_id=archive_prune_verify_2026-05-13T172916Z",
+        "archives": [
+          {
+            "verify_report": {
+              "bytes": 10097,
+              "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\gov_core_prune_verify_20260513_171446.txt"
+            },
+            "archived_at": "2026-05-13T09:29:16Z",
+            "audit_md": {
+              "bytes": 5923,
+              "path": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system\\Departments\\06_Strategy\\deliverables\\gov_core_prune_audit_20260513_171446.md"
+            },
+            "reason": "保留並監控：驗證結果與稽核憑證已存入 deliverables，quarantine 內檔案保留 7 天",
+            "archive_id": "archive_prune_verify_2026-05-13T172916Z",
+            "master_map_backup": {
+              "bytes": 46358,
+              "path": "D:\\大唐三省六部\\04_Workflows\\Master_Map.json.bak"
+            },
+            "note": "Archived by gov_core_orch_lead; quarantine files retained under runtime\\\\checkpoints\\\\quarantine\\\\20260513",
+            "archived_by": "gov_core_orch_lead"
+          }
+        ]
+      }
+    ]
+  },
+  "handoff": {
+    "engage_oneliner": "大唐副官：D:\\大唐三省六部\\AGENTS.md 載入後依 §初始化校準執行，待命。",
+    "engage_short": "接戰",
+    "save_oneliner": "大唐副官：依 D:\\大唐三省六部\\AGENTS.md §封存協議執行記憶封裝。",
+    "save_short": "封存"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 89,
+  "generated_at": "2026-05-08T18:46:25+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_dominance.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_dominance.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9194,
+  "content_sha256": "415063dd26ab64d9b9ed829abce2c5b70538df19f87f170453a7219f619fb9ac",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 286,
+    "non_empty_lines": 257,
+    "char_count": 9194,
+    "preview_lines": [
+      "import pytest",
+      "import networkx as nx",
+      "class TestImmediateDominators:",
+      "    def test_exceptions(self):",
+      "        G = nx.Graph()",
+      "        G.add_node(0)",
+      "        pytest.raises(nx.NetworkXNotImplemented, nx.immediate_dominators, G, 0)",
+      "        G = nx.MultiGraph(G)",
+      "        pytest.raises(nx.NetworkXNotImplemented, nx.immediate_dominators, G, 0)",
+      "        G = nx.DiGraph([[0, 0]])"
+    ],
+    "imports": [
+      "import pytest",
+      "import networkx as nx"
+    ],
+    "classes": [
+      "TestImmediateDominators",
+      "TestDominanceFrontiers"
+    ],
+    "functions": []
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_089_415063dd26ab64d9_AI_Chariot_Legacy_666_1.0.0_20260508_test_dominance.py.json"
+}

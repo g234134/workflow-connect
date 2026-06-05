@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 12,
+  "idx_in_wave": 200,
+  "generated_at": "2026-05-08T18:45:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_dataloader.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_dataloader.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 77967,
+  "content_sha256": "d76481c6d5e03e2c8f4a508fa4581fa7eae7a99ebc6acc1ec9b6720b9f08c8e3",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1604,
+    "non_empty_lines": 1470,
+    "char_count": 77967,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "r\"\"\"Definition of the DataLoader and associated iterators that subclass _BaseDataLoaderIter.",
+      "To support these two classes, in `./_utils` we define many utility methods and",
+      "functions to be run in multiprocessing. E.g., the data loading worker loop is",
+      "in `./_utils/worker.py`.",
+      "\"\"\"",
+      "import functools",
+      "import itertools",
+      "import logging",
+      "import multiprocessing as python_multiprocessing"
+    ],
+    "imports": [
+      "import functools",
+      "import itertools",
+      "import logging",
+      "import multiprocessing as python_multiprocessing",
+      "import os",
+      "import queue",
+      "import threading",
+      "import warnings",
+      "from typing import Any, Callable, Generic, Iterable, List, Optional, TypeVar, Union",
+      "import torch",
+      "import torch.distributed as dist",
+      "import torch.utils.data.graph_settings",
+      "from torch._utils import ExceptionWrapper",
+      "from torch.utils.data import _utils",
+      "from torch.utils.data.datapipes.datapipe import (",
+      "from torch.utils.data.dataset import Dataset, IterableDataset",
+      "from torch.utils.data.sampler import (",
+      "from workers. Should always be non-negative. (default: ``0``)"
+    ],
+    "classes": [
+      "_DatasetKind",
+      "_InfiniteConstantSampler",
+      "DataLoader",
+      "_BaseDataLoaderIter",
+      "_SingleProcessDataLoaderIter",
+      "_MultiProcessingDataLoaderIter"
+    ],
+    "functions": [
+      "_get_distributed_settings",
+      "_sharding_worker_init_fn",
+      "_share_dist_seed"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0012_200_d76481c6d5e03e2c_AI_Chariot_Legacy_666_1.0.0_20260508_dataloader.py.json"
+}

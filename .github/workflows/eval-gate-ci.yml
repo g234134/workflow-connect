@@ -1,0 +1,584 @@
+# P+ eval_gate: unit tests + eval_ci_check (PR) + prod shadow nightly (Phase 1 gate)
+
+name: Eval gate CI
+
+
+
+on:
+
+  push:
+
+  pull_request:
+
+  schedule:
+
+    # Prod shadow eval gate — Phase 1 K-2 playbook (UTC 06:00 daily)
+
+    - cron: "0 6 * * *"
+
+  workflow_dispatch:
+
+    inputs:
+
+      eval_input:
+
+        description: Path to ibridge_records JSONL (repo-relative)
+
+        type: string
+
+        default: artifacts/eval/ibridge_records.latest.jsonl
+
+      max_needs_review_ratio:
+
+        description: Fail when needs_review ratio exceeds this value
+
+        type: string
+
+        default: "0.72"
+
+      fail_on_tags:
+
+        description: Comma-separated tags that fail CI (empty to disable)
+
+        type: string
+
+        default: ""
+
+      use_fixture:
+
+        description: Use tests/fixtures/eval/ibridge_records.jsonl (overrides eval_input)
+
+        type: boolean
+
+        default: false
+
+      run_shadow_nightly:
+
+        description: Run shadow export + Phase 1 nightly gate (0.60 + infra_risk)
+
+        type: boolean
+
+        default: false
+
+
+
+concurrency:
+
+  group: eval-gate-ci-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+
+  cancel-in-progress: true
+
+
+
+jobs:
+
+  eval-gate:
+
+    name: P+ eval gate (PR / push)
+
+    if: github.event_name != 'schedule'
+
+    runs-on: ubuntu-latest
+
+    env:
+
+      # ENF: CI always runs shadow preview (non-blocking); override per workflow/branch if needed
+      GOV_ENF_ENABLE: "1"
+      GOV_ENF_BLOCKING_CANARY: "0"
+      EVAL_CI_INPUT: artifacts/eval/ibridge_records.latest.jsonl
+
+      EVAL_CI_LIMIT: "50"
+
+      EVAL_CI_MAX_NEEDS_REVIEW_RATIO: "0.72"
+
+      EVAL_CI_FAIL_ON_TAGS: ""
+
+    steps:
+
+      - name: Checkout
+
+        uses: actions/checkout@v4
+
+
+
+      - name: Set up Python
+
+        uses: actions/setup-python@v5
+
+        with:
+
+          python-version: "3.12"
+
+
+
+      - name: ENF flags audit (non-fatal)
+
+        shell: bash
+
+        run: python -m observability.enf_config
+
+
+
+      - name: Resolve eval CI parameters
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          INPUT="${EVAL_CI_INPUT}"
+
+          RATIO="${EVAL_CI_MAX_NEEDS_REVIEW_RATIO}"
+
+          TAGS="${EVAL_CI_FAIL_ON_TAGS}"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+
+            if [[ "${{ inputs.use_fixture }}" == "true" ]]; then
+
+              INPUT="tests/fixtures/eval/ibridge_records.jsonl"
+
+            else
+
+              INPUT="${{ inputs.eval_input }}"
+
+            fi
+
+            RATIO="${{ inputs.max_needs_review_ratio }}"
+
+            TAGS="${{ inputs.fail_on_tags }}"
+
+          fi
+
+          echo "EVAL_CI_INPUT=${INPUT}" >> "${GITHUB_ENV}"
+
+          echo "EVAL_CI_MAX_NEEDS_REVIEW_RATIO=${RATIO}" >> "${GITHUB_ENV}"
+
+          echo "EVAL_CI_FAIL_ON_TAGS=${TAGS}" >> "${GITHUB_ENV}"
+
+
+
+      - name: P+ eval unit tests
+
+        run: >-
+
+          python -m unittest
+
+          tests.test_eval_exporter
+
+          tests.test_eval_ci_check
+
+          tests.test_eval_gate
+
+          tests.test_ibridge_exporter
+
+          -v
+
+
+
+      - name: Eval gate CI check
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          ARGS=(
+
+            -m observability.eval_ci_check
+
+            "${EVAL_CI_INPUT}"
+
+            --limit "${EVAL_CI_LIMIT}"
+
+            --max-needs-review-ratio "${EVAL_CI_MAX_NEEDS_REVIEW_RATIO}"
+
+          )
+
+          if [[ -n "${EVAL_CI_FAIL_ON_TAGS}" ]]; then
+
+            ARGS+=(--fail-on-tags "${EVAL_CI_FAIL_ON_TAGS}")
+
+          fi
+
+          python "${ARGS[@]}"
+
+
+
+  shadow-spool-smoke:
+
+
+
+    name: Shadow spool script smoke (LF / Two-Pool)
+
+
+
+    if: github.event_name != 'schedule'
+
+
+
+    runs-on: ubuntu-latest
+
+
+
+    steps:
+
+
+
+      - name: Checkout
+
+
+
+        uses: actions/checkout@v4
+
+
+
+      - name: Install jq
+
+
+
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq jq
+
+
+
+      - name: Assert build_shadow_spool.sh has Unix line endings
+
+
+
+        run: sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
+
+
+
+      - name: Two-Pool spool smoke (fixture JSONL)
+
+
+
+        shell: bash
+
+
+
+        run: |
+
+
+
+          set -euo pipefail
+
+
+
+          chmod +x scripts/build_shadow_spool.sh
+
+
+
+          mkdir -p artifacts/eval/smoke
+
+
+
+          export SHADOW_BATCH=tests/fixtures/eval/shadow_batch_spool_smoke.jsonl
+
+
+
+          export SHADOW_SPOOL=artifacts/eval/smoke/k2_shadow_spool_smoke.jsonl
+
+
+
+          export SHADOW_BASELINE_LIMIT=20
+
+
+
+          export SHADOW_RISK_RETAIN_LIMIT=3
+
+
+
+          export SHADOW_RISK_TAGS=infra_risk,high_retry
+
+
+
+          bash scripts/build_shadow_spool.sh
+
+
+
+          test -s "${SHADOW_SPOOL}"
+
+
+
+          LINES=$(wc -l < "${SHADOW_SPOOL}")
+
+
+
+          echo "spool_lines=${LINES}"
+
+
+
+          if [[ "${LINES}" -lt 1 ]]; then
+
+
+
+            echo "spool empty or missing lines" >&2
+
+
+
+            exit 1
+
+
+
+          fi
+
+
+  eval-shadow-nightly:
+
+    name: P+ prod shadow nightly (Phase 1)
+
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_shadow_nightly == true)
+
+    runs-on: ubuntu-latest
+
+    env:
+
+      # ENF: nightly shadow gate — enabled, shadow-only (no blocking canary in Phase 1)
+      GOV_ENF_ENABLE: "1"
+      GOV_ENF_BLOCKING_CANARY: "0"
+      SHADOW_SPOOL: artifacts/eval/k2_shadow_spool.jsonl
+
+      SHADOW_SPOOL_BOOTSTRAP: tests/fixtures/eval/shadow_raw_records.jsonl
+
+      SHADOW_BATCH_DIR: artifacts/eval
+
+      SHADOW_BASELINE_LIMIT: "20"
+
+      SHADOW_RISK_RETAIN_LIMIT: "3"
+
+      SHADOW_RISK_TAGS: "infra_risk,high_retry"
+
+      SHADOW_EXPORT_OUT: artifacts/eval/shadow_ibridge_records.latest.jsonl
+
+      EVAL_CI_LIMIT: "100"
+
+      EVAL_CI_MAX_NEEDS_REVIEW_RATIO: "0.60"
+
+      EVAL_CI_FAIL_ON_TAGS: "infra_risk"
+
+    steps:
+
+      - name: Checkout
+
+        uses: actions/checkout@v4
+
+
+
+      - name: Set up Python
+
+        uses: actions/setup-python@v5
+
+        with:
+
+          python-version: "3.12"
+
+
+
+      - name: ENF flags audit (non-fatal)
+
+        shell: bash
+
+        run: python -m observability.enf_config
+
+
+
+      - name: Seed shadow batch when absent from checkout
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          mkdir -p "${SHADOW_BATCH_DIR}"
+
+          if compgen -G "${SHADOW_BATCH_DIR}/shadow_batch_*.jsonl" > /dev/null; then
+
+            echo "[SHADOW-PIPELINE] seed: skip (batch already present)"
+
+            exit 0
+
+          fi
+
+          python - <<'PY'
+
+          import json
+
+          from pathlib import Path
+
+          rows = [
+
+              {"ok": True, "record": {"task_id": "shadow-k2-flow-1", "trace_id": "tr-sk-1", "end_time": "2026-05-30T10:00:00Z", "success": True, "retry_count": 0, "handoff_count": 0, "error_type": None, "context_token_usage": {"total_tokens": 800}, "trace_completeness": {"score": 0.95}}},
+
+              {"task_id": "shadow-merge-2", "trace_id": "tr-sk-2", "end_time": "2026-05-30T10:01:00Z", "k2_metrics_record": {"retry_count": 1, "handoff_count": 1, "success": True, "trace_completeness": {"score": 0.92}, "context_token_usage": {"total_tokens": 1200}}},
+
+              {"case_name": "shadow-greeting", "end_time": "2026-05-30T10:02:00Z", "k2_summary": {"pipeline": "k2", "ok": True, "retry_count": 0, "handoff_count": 0, "error_type": None, "tags": []}},
+
+              {"case_name": "shadow-retry", "end_time": "2026-05-30T10:03:00Z", "k2_summary": {"pipeline": "k2", "ok": True, "retry_count": 2, "handoff_count": 0, "error_type": None, "tags": ["high_retry"]}},
+
+              {"schema": "k2_prod_shadow/v1", "task_id": "prod-shadow-9469a97892-k2", "trace_id": "778f26830a4b4026a233dbeb651a616f", "end_time": "2026-05-30T17:45:43.383431+00:00", "timestamp": "2026-05-30T17:45:43.383431+00:00", "case_name": "prod-shadow-nightly-20260530", "primary_source": "ask", "ask_summary": {"pipeline": "ask", "ok": False, "status": "fail", "message_preview": "healthcheck failed", "retry_count": 0, "error_type": "health_node: healthcheck failed", "tags": []}, "k2_summary": {"pipeline": "k2", "ok": True, "status": "success", "retry_count": 1, "error_type": None, "tags": ["infra_risk"]}, "k2_merge": {"strategy_version": "v0.1", "gate_result": "needs_review", "k2_eval_tags": ["infra_risk"]}},
+
+              {"schema": "k2_prod_shadow/v1", "task_id": "prod-shadow-1bab7f91d5-k2", "trace_id": "4603e6cbc8934f0281ec4cdd67a74b36", "end_time": "2026-05-30T17:51:54.195315+00:00", "timestamp": "2026-05-30T17:51:54.195315+00:00", "case_name": "prod-shadow-nightly-20260530-b", "primary_source": "ask", "ask_summary": {"pipeline": "ask", "ok": False, "status": "fail", "message_preview": "healthcheck failed", "retry_count": 0, "error_type": "health_node: healthcheck failed", "tags": []}, "k2_summary": {"pipeline": "k2", "ok": True, "status": "success", "retry_count": 0, "error_type": None, "tags": ["infra_risk"]}, "k2_merge": {"strategy_version": "v0.1", "gate_result": "needs_review", "k2_eval_tags": ["infra_risk"]}},
+
+          ]
+
+          out = Path("artifacts/eval/shadow_batch_ci_seed.jsonl")
+
+          out.parent.mkdir(parents=True, exist_ok=True)
+
+          with out.open("w", encoding="utf-8") as fh:
+
+              for row in rows:
+
+                  fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+          print(f"[SHADOW-PIPELINE] seed: wrote {out} ({len(rows)} records)")
+
+          PY
+
+
+
+      - name: Fetch latest shadow batch (real data before fixture)
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          bash scripts/fetch_latest_shadow_batch.sh
+
+
+
+      - name: Bootstrap shadow spool from fixture (fallback)
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          mkdir -p "$(dirname "${SHADOW_SPOOL}")"
+
+          if [[ ! -s "${SHADOW_SPOOL}" ]]; then
+
+            cp "${SHADOW_SPOOL_BOOTSTRAP}" "${SHADOW_SPOOL}"
+
+            echo "[SHADOW-PIPELINE] mode=fixture"
+
+          fi
+
+
+
+      - name: Export prod shadow spool to flat ibridge JSONL
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          python -m observability.ibridge_exporter \
+
+            --source shadow \
+
+            --profile shadow \
+
+            --force \
+
+            "${SHADOW_SPOOL}" \
+
+            -o "${SHADOW_EXPORT_OUT}" \
+
+            --no-latest
+
+
+
+      - name: P+ eval unit tests
+
+        run: >-
+
+          python -m unittest
+
+          tests.test_eval_exporter
+
+          tests.test_eval_ci_check
+
+          tests.test_eval_gate
+
+          tests.test_ibridge_exporter
+
+          -v
+
+
+
+      - name: Phase 1 shadow eval_ci_check
+
+        continue-on-error: true
+
+        shell: bash
+
+        run: |
+
+          set -euo pipefail
+
+          python -m observability.eval_ci_check \
+
+            "${SHADOW_EXPORT_OUT}" \
+
+            --limit "${EVAL_CI_LIMIT}" \
+
+            --max-needs-review-ratio "${EVAL_CI_MAX_NEEDS_REVIEW_RATIO}" \
+
+            --fail-on-tags "${EVAL_CI_FAIL_ON_TAGS}"
+
+
+
+      - name: Export eval_export/v1 (shadow nightly artefact)
+
+        continue-on-error: true
+
+        shell: bash
+
+        env:
+
+          EVAL_EXPORT_INPUT: ${{ env.SHADOW_EXPORT_OUT }}
+
+        run: bash scripts/run_eval_exporter_nightly.sh
+
+
+
+      - name: Dry-run governance log (logging-only)
+
+        continue-on-error: true
+
+        shell: bash
+
+        run: |
+
+          python -m tools.dryrun_ci_wrapper \
+
+            --input "${SHADOW_EXPORT_OUT}" \
+
+            --output-dir observability/dryrun
+
+
+
+      - name: Enforcement Preview (Phase A)
+
+        continue-on-error: true
+
+        shell: bash
+
+        run: |
+
+          python -m tools.enf_preview_wrapper \
+
+            --input-dir observability/dryrun \
+
+            --min-score 0.7
+
+

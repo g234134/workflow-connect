@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 6,
+  "idx_in_wave": 450,
+  "generated_at": "2026-05-08T18:45:01+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_anypath.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_anypath.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 3707,
+  "content_sha256": "c0386c6b2235fd447e436091b51d17035ad2c3a41016dc90ebfbe98fccd6a47b",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 96,
+    "non_empty_lines": 80,
+    "char_count": 3707,
+    "preview_lines": [
+      "import os",
+      "from abc import ABC",
+      "from pathlib import Path",
+      "from typing import Any, Union",
+      "from .cloudpath import InvalidPrefixError, CloudPath",
+      "from .exceptions import AnyPathTypeError",
+      "from .url_utils import path_from_fileurl",
+      "class AnyPath(ABC):",
+      "    \"\"\"Polymorphic virtual superclass for CloudPath and pathlib.Path. Constructing an instance will",
+      "    automatically dispatch to CloudPath or Path based on the input. It also supports both"
+    ],
+    "imports": [
+      "import os",
+      "from abc import ABC",
+      "from pathlib import Path",
+      "from typing import Any, Union",
+      "from .cloudpath import InvalidPrefixError, CloudPath",
+      "from .exceptions import AnyPathTypeError",
+      "from .url_utils import path_from_fileurl",
+      "from pydantic_core import core_schema"
+    ],
+    "classes": [
+      "AnyPath"
+    ],
+    "functions": [
+      "to_anypath"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0006_450_c0386c6b2235fd44_AI_Chariot_Legacy_666_1.0.0_20260508_anypath.py.json"
+}

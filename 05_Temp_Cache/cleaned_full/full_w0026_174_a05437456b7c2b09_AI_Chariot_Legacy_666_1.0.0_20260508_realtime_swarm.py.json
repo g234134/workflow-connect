@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 26,
+  "idx_in_wave": 174,
+  "generated_at": "2026-05-08T18:46:00+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_realtime_swarm.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_realtime_swarm.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 19656,
+  "content_sha256": "a05437456b7c2b0961c5bc0178b4fd285ebb1caf281a5b4da0166f6a54fdff4d",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 533,
+    "non_empty_lines": 439,
+    "char_count": 19656,
+    "preview_lines": [
+      "# Copyright (c) 2023 - 2025, AG2ai, Inc., AG2ai open-source projects maintainers and core contributors",
+      "#",
+      "# SPDX-License-Identifier: Apache-2.0",
+      "import logging",
+      "import uuid",
+      "import warnings",
+      "from collections import defaultdict",
+      "from collections.abc import Callable",
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Any, Optional, TypeVar"
+    ],
+    "imports": [
+      "import logging",
+      "import uuid",
+      "import warnings",
+      "from collections import defaultdict",
+      "from collections.abc import Callable",
+      "from functools import partial",
+      "from typing import TYPE_CHECKING, Any, Optional, TypeVar",
+      "import anyio",
+      "from anyio import create_task_group, from_thread",
+      "from autogen.agentchat.group.guardrails import Guardrail, GuardrailResult",
+      "from ....agentchat.contrib.swarm_agent import AfterWorkOption, initiate_swarm_chat",
+      "from ....cache import AbstractCache",
+      "from ....code_utils import content_str",
+      "from ....doc_utils import export_module",
+      "from ....fast_depends.utils import asyncify",
+      "from ... import Agent, ChatResult, ConversableAgent, LLMAgent",
+      "from ...utils import consolidate_chat_info, gather_usage_summary",
+      "from .clients import Role",
+      "from .realtime_agent import RealtimeAgent"
+    ],
+    "classes": [
+      "SwarmableAgent",
+      "SwarmableRealtimeAgent"
+    ],
+    "functions": [
+      "message_to_dict",
+      "parse_oai_message",
+      "register_swarm"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0026_174_a05437456b7c2b09_AI_Chariot_Legacy_666_1.0.0_20260508_realtime_swarm.py.json"
+}

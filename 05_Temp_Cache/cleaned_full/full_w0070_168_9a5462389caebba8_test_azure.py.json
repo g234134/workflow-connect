@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 70,
+  "idx_in_wave": 168,
+  "generated_at": "2026-05-08T18:49:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\openai\\tests\\integration_tests\\chat_models\\test_azure.py",
+  "name": "test_azure.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 10691,
+  "content_sha256": "9a5462389caebba8dc947adf3a089656542769d943c41e43b31a56fab3a559c1",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 300,
+    "non_empty_lines": 242,
+    "char_count": 10688,
+    "preview_lines": [
+      "\"\"\"Test AzureChatOpenAI wrapper.\"\"\"",
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.messages import (",
+      "    AIMessageChunk,",
+      "    BaseMessage,"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import json",
+      "import os",
+      "from typing import Any",
+      "import pytest",
+      "from langchain_core.callbacks import CallbackManager",
+      "from langchain_core.messages import (",
+      "from langchain_core.outputs import ChatGeneration, ChatResult, LLMResult",
+      "from pydantic import BaseModel",
+      "from langchain_openai import AzureChatOpenAI",
+      "from tests.unit_tests.fake.callbacks import FakeCallbackHandler"
+    ],
+    "classes": [
+      "Foo"
+    ],
+    "functions": [
+      "_get_llm",
+      "llm",
+      "test_chat_openai",
+      "test_chat_openai_generate",
+      "test_chat_openai_multiple_completions",
+      "test_chat_openai_streaming",
+      "test_chat_openai_streaming_generation_info",
+      "test_openai_streaming",
+      "test_openai_batch",
+      "test_openai_invoke",
+      "test_json_mode",
+      "test_stream_response_format"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0070_168_9a5462389caebba8_test_azure.py.json"
+}

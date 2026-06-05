@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 8,
+  "idx_in_wave": 53,
+  "generated_at": "2026-05-08T18:45:02+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_base_utils.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_base_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 7364,
+  "content_sha256": "a1f4677ddc69b3baf8f6edff9aee2aba9125a9083ee35334a8634031b9f3d371",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 225,
+    "non_empty_lines": 188,
+    "char_count": 7364,
+    "preview_lines": [
+      "\"\"\"",
+      "Utility functions for base LLM classes.",
+      "\"\"\"",
+      "import copy",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Dict, List, Optional, Type, Union",
+      "from openai.lib import _parsing, _pydantic",
+      "from pydantic import BaseModel",
+      "from litellm._logging import verbose_logger"
+    ],
+    "imports": [
+      "import copy",
+      "import json",
+      "from abc import ABC, abstractmethod",
+      "from typing import Any, Dict, List, Optional, Type, Union",
+      "from openai.lib import _parsing, _pydantic",
+      "from pydantic import BaseModel",
+      "from litellm._logging import verbose_logger",
+      "from litellm.types.llms.openai import AllMessageValues, ChatCompletionToolCallChunk",
+      "from litellm.types.utils import Message, ProviderSpecificModelInfo, TokenCountResponse"
+    ],
+    "classes": [
+      "BaseTokenCounter",
+      "BaseLLMModelInfo"
+    ],
+    "functions": [
+      "_convert_tool_response_to_message",
+      "_dict_to_response_format_helper",
+      "type_to_response_format_param",
+      "map_developer_role_to_system_role"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0008_053_a1f4677ddc69b3ba_AI_Chariot_Legacy_666_1.0.0_20260508_base_utils.py.json"
+}

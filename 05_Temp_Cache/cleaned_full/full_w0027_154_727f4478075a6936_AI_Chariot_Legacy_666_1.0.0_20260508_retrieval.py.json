@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 27,
+  "idx_in_wave": 154,
+  "generated_at": "2026-05-08T18:46:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_retrieval.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_retrieval.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2729,
+  "content_sha256": "727f4478075a6936e7303742e094488621295c38df95174708e2c5af0d5984b0",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 94,
+    "non_empty_lines": 69,
+    "char_count": 2729,
+    "preview_lines": [
+      "\"\"\"",
+      "Helpers related to (dynamic) resource retrieval.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from typing import TYPE_CHECKING",
+      "import json",
+      "try:",
+      "    from typing_extensions import TypeVar",
+      "except ImportError:  # pragma: no cover"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from functools import lru_cache",
+      "from typing import TYPE_CHECKING",
+      "import json",
+      "from typing_extensions import TypeVar",
+      "from typing import TypeVar",
+      "from referencing import Resource",
+      "from collections.abc import Callable",
+      "from referencing.typing import URI, D, Retrieve",
+      "from referencing import Registry",
+      "from referencing.typing import URI",
+      "import referencing.retrieval"
+    ],
+    "classes": [],
+    "functions": [
+      "to_cached_resource"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0027_154_727f4478075a6936_AI_Chariot_Legacy_666_1.0.0_20260508_retrieval.py.json"
+}

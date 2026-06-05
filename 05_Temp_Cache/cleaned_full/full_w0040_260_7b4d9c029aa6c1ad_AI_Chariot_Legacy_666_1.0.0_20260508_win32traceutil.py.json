@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 40,
+  "idx_in_wave": 260,
+  "generated_at": "2026-05-08T18:46:59+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_win32traceutil.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_win32traceutil.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1661,
+  "content_sha256": "7b4d9c029aa6c1adc70aa4e539a7fca9be779ad7dc38e23276bdd817a8bd68ad",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 59,
+    "non_empty_lines": 46,
+    "char_count": 1661,
+    "preview_lines": [
+      "# This is a helper for the win32trace module",
+      "# If imported from a normal Python program, it sets up sys.stdout and sys.stderr",
+      "# so output goes to the collector.",
+      "# If run from the command line, it creates a collector loop.",
+      "# Eg:",
+      "# C:>start win32traceutil.py (or python.exe win32traceutil.py)",
+      "# will start a process with a (pretty much) blank screen.",
+      "#",
+      "# then, switch to a DOS prompt, and type:",
+      "# C:>python.exe"
+    ],
+    "imports": [
+      "import win32trace",
+      "import sys",
+      "import win32api"
+    ],
+    "classes": [],
+    "functions": [
+      "RunAsCollector",
+      "SetupForPrint"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_260_7b4d9c029aa6c1ad_AI_Chariot_Legacy_666_1.0.0_20260508_win32traceutil.py.json"
+}

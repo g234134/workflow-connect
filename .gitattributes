@@ -1,0 +1,4 @@
+# Shadow pipeline shell scripts must stay LF for Linux CI (W5-A-RUNTIME-03-SHADOW-SAMPLING-FIX-CRLF-01)
+scripts/check_line_endings.sh text eol=lf
+scripts/build_shadow_spool.sh text eol=lf
+scripts/fetch_latest_shadow_batch.sh text eol=lf

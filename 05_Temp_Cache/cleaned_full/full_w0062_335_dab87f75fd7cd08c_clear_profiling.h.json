@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 62,
+  "idx_in_wave": 335,
+  "generated_at": "2026-05-08T18:48:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\passes\\clear_profiling.h",
+  "name": "clear_profiling.h",
+  "extension": ".h",
+  "original_type": "c_header",
+  "size_bytes": 512,
+  "content_sha256": "dab87f75fd7cd08c699babecb9f5ae07c0aa49a0b9c4862d121e795c43306991",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 19,
+    "non_empty_lines": 14,
+    "char_count": 512,
+    "preview_lines": [
+      "#pragma once",
+      "#include <ATen/ATen.h>",
+      "#include <ATen/core/ivalue.h>",
+      "#include <ATen/core/jit_type.h>",
+      "#include <torch/csrc/Export.h>",
+      "#include <torch/csrc/jit/ir/ir.h>",
+      "namespace torch {",
+      "namespace jit {",
+      "TORCH_API void unprofileGraphInputs(const std::shared_ptr<Graph>& graph);",
+      "TORCH_API void unprofileBlock(Block* start_block);"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0062_335_dab87f75fd7cd08c_clear_profiling.h.json"
+}

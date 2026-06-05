@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 32,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:46:24+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_digits.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_digits.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 1968,
+  "content_sha256": "9ab4dfc1ba0c090922384a4c81883c36b935d96139a44b6999b42d85156de177",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 55,
+    "non_empty_lines": 46,
+    "char_count": 1968,
+    "preview_lines": [
+      "from sympy.ntheory import count_digits, digits, is_palindromic",
+      "from sympy.core.intfunc import num_digits",
+      "from sympy.testing.pytest import raises",
+      "def test_num_digits():",
+      "    # depending on whether one rounds up or down or uses log or log10,",
+      "    # one or more of these will fail if you don't check for the off-by",
+      "    # one condition",
+      "    assert num_digits(2, 2) == 2",
+      "    assert num_digits(2**48 - 1, 2) == 48",
+      "    assert num_digits(1000, 10) == 4"
+    ],
+    "imports": [
+      "from sympy.ntheory import count_digits, digits, is_palindromic",
+      "from sympy.core.intfunc import num_digits",
+      "from sympy.testing.pytest import raises"
+    ],
+    "classes": [],
+    "functions": [
+      "test_num_digits",
+      "test_digits",
+      "test_count_digits",
+      "test_is_palindromic"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0032_035_9ab4dfc1ba0c0909_AI_Chariot_Legacy_666_1.0.0_20260508_test_digits.py.json"
+}

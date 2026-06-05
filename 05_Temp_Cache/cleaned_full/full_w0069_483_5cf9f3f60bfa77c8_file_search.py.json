@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 69,
+  "idx_in_wave": 483,
+  "generated_at": "2026-05-08T18:49:04+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\\libs\\partners\\anthropic\\langchain_anthropic\\middleware\\file_search.py",
+  "name": "file_search.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11584,
+  "content_sha256": "5cf9f3f60bfa77c895a11c1633fc4275a33c38e3923e2791e4d098882ab016f2",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 354,
+    "non_empty_lines": 274,
+    "char_count": 11581,
+    "preview_lines": [
+      "\"\"\"File search middleware for Anthropic text editor and memory tools.",
+      "This module provides Glob and Grep search tools that operate on files stored",
+      "in state or filesystem.",
+      "\"\"\"",
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import re",
+      "from pathlib import Path, PurePosixPath",
+      "from typing import TYPE_CHECKING, Literal, cast",
+      "if TYPE_CHECKING:"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "import fnmatch",
+      "import re",
+      "from pathlib import Path, PurePosixPath",
+      "from typing import TYPE_CHECKING, Literal, cast",
+      "from typing import Any",
+      "from langchain.agents.middleware.types import AgentMiddleware",
+      "from langchain.tools import ToolRuntime, tool",
+      "from langchain_anthropic.middleware.anthropic_tools import AnthropicToolsState",
+      "from langchain.agents import create_agent",
+      "from langchain.agents.middleware import ("
+    ],
+    "classes": [
+      "StateFileSearchMiddleware"
+    ],
+    "functions": [
+      "_expand_include_patterns",
+      "_is_valid_include_pattern",
+      "_match_include_pattern"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0069_483_5cf9f3f60bfa77c8_file_search.py.json"
+}

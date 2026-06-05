@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 13,
+  "idx_in_wave": 282,
+  "generated_at": "2026-05-08T18:45:06+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_ebay.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_ebay.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 832,
+  "content_sha256": "35153120c29530fd1050bbabf5112eb6cc9922a20ffc0c0e00d8e58e2f598001",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 22,
+    "non_empty_lines": 16,
+    "char_count": 832,
+    "preview_lines": [
+      "import json",
+      "def ebay_compliance_fix(session):",
+      "    def _compliance_fix(response):",
+      "        token = json.loads(response.text)",
+      "        # eBay responds with non-compliant token types.",
+      "        # https://developer.ebay.com/api-docs/static/oauth-client-credentials-grant.html",
+      "        # https://developer.ebay.com/api-docs/static/oauth-auth-code-grant-request.html",
+      "        # Modify these to be \"Bearer\".",
+      "        if token.get(\"token_type\") in [\"Application Access Token\", \"User Access Token\"]:",
+      "            token[\"token_type\"] = \"Bearer\""
+    ],
+    "imports": [
+      "import json"
+    ],
+    "classes": [],
+    "functions": [
+      "ebay_compliance_fix"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0013_282_35153120c29530fd_AI_Chariot_Legacy_666_1.0.0_20260508_ebay.py.json"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 37,
+  "idx_in_wave": 123,
+  "generated_at": "2026-05-08T18:46:45+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_tools_common.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_tools_common.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 11426,
+  "content_sha256": "19527c0ec6ec284f8941aef0d16ee0d49f7def7f78d1b4c196afba4ef7c7be94",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 303,
+    "non_empty_lines": 258,
+    "char_count": 11426,
+    "preview_lines": [
+      "# mypy: allow-untyped-defs",
+      "from typing import List, Tuple, Union, Dict, Any, Set, Mapping, Optional",
+      "import collections",
+      "from dataclasses import dataclass",
+      "import operator",
+      "import torch",
+      "import torch.fx",
+      "from torch.fx.node import _get_qualified_name",
+      "from torch.fx._compatibility import compatibility",
+      "__all__ = ['get_acc_ops_name', 'get_node_target', 'is_node_output_tensor', 'FxNetAccFusionsFinder', 'legalize_graph']"
+    ],
+    "imports": [
+      "from typing import List, Tuple, Union, Dict, Any, Set, Mapping, Optional",
+      "import collections",
+      "from dataclasses import dataclass",
+      "import operator",
+      "import torch",
+      "import torch.fx",
+      "from torch.fx.node import _get_qualified_name",
+      "from torch.fx._compatibility import compatibility"
+    ],
+    "classes": [
+      "FxNetAccFusionsFinder"
+    ],
+    "functions": [
+      "get_acc_ops_name",
+      "get_node_target",
+      "is_node_output_tensor",
+      "legalize_graph"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0037_123_19527c0ec6ec284f_AI_Chariot_Legacy_666_1.0.0_20260508_tools_common.py.json"
+}

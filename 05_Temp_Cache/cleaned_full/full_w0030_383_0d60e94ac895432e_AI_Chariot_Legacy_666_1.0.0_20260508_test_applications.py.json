@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 30,
+  "idx_in_wave": 383,
+  "generated_at": "2026-05-08T18:46:19+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_applications.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_applications.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 2189,
+  "content_sha256": "0d60e94ac895432ed2ea98e705212b5b10e93c34512cbf277133165b0688dd1e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 57,
+    "non_empty_lines": 48,
+    "char_count": 2189,
+    "preview_lines": [
+      "# This file contains tests that exercise multiple AST nodes",
+      "import tempfile",
+      "from sympy.external import import_module",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.utilities._compilation import compile_link_import_strings, has_c",
+      "from sympy.utilities._compilation.util import may_xfail",
+      "from sympy.testing.pytest import skip",
+      "from sympy.codegen.ast import (",
+      "    FunctionDefinition, FunctionPrototype, Variable, Pointer, real, Assignment,",
+      "    integer, CodeBlock, While"
+    ],
+    "imports": [
+      "import tempfile",
+      "from sympy.external import import_module",
+      "from sympy.printing.codeprinter import ccode",
+      "from sympy.utilities._compilation import compile_link_import_strings, has_c",
+      "from sympy.utilities._compilation.util import may_xfail",
+      "from sympy.testing.pytest import skip",
+      "from sympy.codegen.ast import (",
+      "from sympy.codegen.cnodes import void, PreIncrement",
+      "from sympy.codegen.cutils import render_as_source_file"
+    ],
+    "classes": [],
+    "functions": [
+      "_mk_func1",
+      "_render_compile_import",
+      "test_copying_function"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0030_383_0d60e94ac895432e_AI_Chariot_Legacy_666_1.0.0_20260508_test_applications.py.json"
+}

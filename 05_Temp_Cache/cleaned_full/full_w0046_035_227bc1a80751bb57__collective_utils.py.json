@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 46,
+  "idx_in_wave": 35,
+  "generated_at": "2026-05-08T18:47:31+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\repos\\AI_Chariot_Agency_Core_1.2.0_20260508_agency-agents\\.venv\\Lib\\site-packages\\torch\\distributed\\_tensor\\_collective_utils.py",
+  "name": "_collective_utils.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 9908,
+  "content_sha256": "227bc1a80751bb57448ea84f8a585b5a26c8a4af8efca40fe4a072023623c263",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 287,
+    "non_empty_lines": 248,
+    "char_count": 9908,
+    "preview_lines": [
+      "import logging",
+      "import math",
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.distributed._tensor.placement_types as placement_types",
+      "from torch.distributed.device_mesh import _mesh_resources, DeviceMesh",
+      "from torch.distributed.distributed_c10d import (",
+      "    all_to_all,",
+      "    broadcast,",
+      "    get_global_rank,"
+    ],
+    "imports": [
+      "import logging",
+      "import math",
+      "from typing import List, Optional",
+      "import torch",
+      "import torch.distributed._tensor.placement_types as placement_types",
+      "from torch.distributed.device_mesh import _mesh_resources, DeviceMesh",
+      "from torch.distributed.distributed_c10d import ("
+    ],
+    "classes": [],
+    "functions": [
+      "mesh_scatter",
+      "mesh_broadcast",
+      "mesh_all_to_all",
+      "spec_to_bytes",
+      "get_bandwidth_factor",
+      "allgather_cost",
+      "allreduce_cost",
+      "reduce_scatter_cost",
+      "redistribute_cost"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0046_035_227bc1a80751bb57__collective_utils.py.json"
+}

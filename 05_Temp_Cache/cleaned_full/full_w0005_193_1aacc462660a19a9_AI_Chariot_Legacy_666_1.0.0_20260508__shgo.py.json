@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 5,
+  "idx_in_wave": 193,
+  "generated_at": "2026-05-08T18:44:57+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__shgo.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__shgo.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 63999,
+  "content_sha256": "1aacc462660a19a991a579effcd86b7fe3452eaae18072ce22d4ec763754dbf7",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 1600,
+    "non_empty_lines": 1349,
+    "char_count": 63999,
+    "preview_lines": [
+      "\"\"\"shgo: The simplicial homology global optimisation algorithm.\"\"\"",
+      "from collections import namedtuple",
+      "import time",
+      "import logging",
+      "import warnings",
+      "import sys",
+      "import numpy as np",
+      "from scipy import spatial",
+      "from scipy.optimize import OptimizeResult, minimize, Bounds",
+      "from scipy.optimize._optimize import MemoizeJac"
+    ],
+    "imports": [
+      "from collections import namedtuple",
+      "import time",
+      "import logging",
+      "import warnings",
+      "import sys",
+      "import numpy as np",
+      "from scipy import spatial",
+      "from scipy.optimize import OptimizeResult, minimize, Bounds",
+      "from scipy.optimize._optimize import MemoizeJac",
+      "from scipy.optimize._constraints import new_bounds_to_old",
+      "from scipy.optimize._minimize import standardize_constraints",
+      "from scipy._lib._util import _FunctionWrapper",
+      "from scipy.optimize._shgo_lib._complex import Complex"
+    ],
+    "classes": [
+      "SHGO",
+      "LMap",
+      "LMapCache"
+    ],
+    "functions": [
+      "shgo"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0005_193_1aacc462660a19a9_AI_Chariot_Legacy_666_1.0.0_20260508__shgo.py.json"
+}

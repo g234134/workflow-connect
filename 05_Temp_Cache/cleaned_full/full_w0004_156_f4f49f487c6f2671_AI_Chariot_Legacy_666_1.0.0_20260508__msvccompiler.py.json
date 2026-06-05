@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 4,
+  "idx_in_wave": 156,
+  "generated_at": "2026-05-08T18:44:52+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__msvccompiler.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508__msvccompiler.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 335,
+  "content_sha256": "f4f49f487c6f2671e740be92ab3e17733ee2681213eb6a7a061790cc6b12970a",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 16,
+    "non_empty_lines": 11,
+    "char_count": 335,
+    "preview_lines": [
+      "import warnings",
+      "from .compilers.C import msvc",
+      "__all__ = [\"MSVCCompiler\"]",
+      "MSVCCompiler = msvc.Compiler",
+      "def __getattr__(name):",
+      "    if name == '_get_vc_env':",
+      "        warnings.warn(",
+      "            \"_get_vc_env is private; find an alternative (pypa/distutils#340)\"",
+      "        )",
+      "        return msvc._get_vc_env"
+    ],
+    "imports": [
+      "import warnings",
+      "from .compilers.C import msvc"
+    ],
+    "classes": [],
+    "functions": [
+      "__getattr__"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0004_156_f4f49f487c6f2671_AI_Chariot_Legacy_666_1.0.0_20260508__msvccompiler.py.json"
+}

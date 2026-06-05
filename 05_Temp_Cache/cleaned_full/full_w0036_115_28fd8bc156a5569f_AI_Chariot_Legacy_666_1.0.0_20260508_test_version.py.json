@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "run_id": "0210d9e423ea4ca8933a30b4207aaa6e",
+  "wave": 36,
+  "idx_in_wave": 115,
+  "generated_at": "2026-05-08T18:46:41+00:00",
+  "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_version.py",
+  "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_version.py",
+  "extension": ".py",
+  "original_type": "python",
+  "size_bytes": 4518,
+  "content_sha256": "28fd8bc156a5569ff34205bc6e0c292d9154e317e870ae6959956db808a6cd9e",
+  "encoding": "utf-8-sig",
+  "parse_strategy": null,
+  "groq_used": false,
+  "groq_reason": null,
+  "clean_status": "ok",
+  "warnings": [],
+  "content_summary": {
+    "line_count": 175,
+    "non_empty_lines": 157,
+    "char_count": 4518,
+    "preview_lines": [
+      "# coding: utf-8",
+      "import pytest  # NOQA",
+      "from .roundtrip import dedent, round_trip, round_trip_load",
+      "def load(s, version=None):",
+      "    import srsly.ruamel_yaml  # NOQA",
+      "    return srsly.ruamel_yaml.round_trip_load(dedent(s), version)",
+      "class TestVersions:",
+      "    def test_explicit_1_2(self):",
+      "        r = load(",
+      "            \"\"\"\\"
+    ],
+    "imports": [
+      "import pytest  # NOQA",
+      "from .roundtrip import dedent, round_trip, round_trip_load",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA",
+      "import srsly.ruamel_yaml  # NOQA"
+    ],
+    "classes": [
+      "TestVersions",
+      "TestIssue62"
+    ],
+    "functions": [
+      "load"
+    ]
+  },
+  "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0036_115_28fd8bc156a5569f_AI_Chariot_Legacy_666_1.0.0_20260508_test_version.py.json"
+}

@@ -2116,6 +2116,50 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 
 ---
 
+## WAVE-B-P2-KB-SELECTOR-HOOK-MIN（kb_index_status 只读 selector 降级规则）
+
+**日期**：2026-06-05  
+**角色**：Knowledge / Selector Engineer  
+**票號**：`WAVE-B-P2-KB-SELECTOR-HOOK-MIN`  
+**狀態**：**done**
+
+### 範圍與目的
+
+- 依 `W3-B_kb_contract.md` §5.4 实作 **Wave B 最小** W3-B-SELECTOR-HOOK：`decide_kb_index_tool_gate(kb_index_status, tool_name)` 纯函数。
+- `missing` → block `repo_*` retrieve/graph 工具；`stale` → degrade；`ready` → allow；非 repo 工具始终 allow。
+- **Wave B 仅 bootstrap 规则 hook**；prod 默认启用（从案卷自动读取 `kb_index_status`）留 **Wave C** 决策。
+
+### 主要變更
+
+| 檔案 | 動作 | 說明 |
+|----|----|----|
+| `core/kb_index_selector_hook.py` | 新增 | `decide_kb_index_tool_gate`、`is_repo_index_gated_tool`；feature flag 常量 |
+| `core/ask_rag_selector.py` | 修改 | test harness：`apply_kb_index_tool_gate_from_hints`（注入 `selector_hints.kb_index_status`） |
+| `tests/test_kb_index_selector_hook.py` | 新增 | missing/stale/ready × repo/non-repo + 未知 status + hint 整合 |
+| `workflow_v2/20_pilot/W3-B_kb_contract.md` | 修改 | §5.4.1 实作路径 + §5.4.2 truth table |
+| `docs/WAVE_B_EXECUTION_PLAN.md` | 修改 | 本票标 **done** |
+
+### 測試結果
+
+- `python -m unittest tests.test_kb_index_selector_hook -v` → **Ran 13 tests … OK**
+- `python -m unittest tests.test_ask_selector_and_answer tests.test_context_subagent_routing -v` → 无 regression（见下方 CI 证据）
+
+### CI / 執行證據
+
+| 項 | 值 |
+|----|----|
+| CI | 本票 **未改** workflow |
+| 本地 smoke | 见上列 unittest 命令 |
+| Run URL | — |
+
+### 備註
+
+- **Feature flag**：`GOV_KB_INDEX_SELECTOR_HOOK_ENABLED` 默认 **0**（OFF）；ask 主路径 **未** 自动调用 hook。
+- **Wave C 留项**：从案卷／ENG-CTX 镜像读取 `kb_index_status`、prod selector 接线、`decision_log` 写入 trace。
+- test harness 用法：`apply_kb_index_tool_gate_from_hints("repo_code_retrieve_smoke", selector_hints={"kb_index_status": "missing"})` → `decision=block`。
+
+---
+
 ## WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP（eval gate 匯出報表與 CI 可視化）
 
 **日期**：2026-06-05  
@@ -2133,17 +2177,20 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 
 | 檔案 | 動作 | 說明 |
 |----|----|----|
+| `observability/eval_stats.py` | 修改 | `build_stats_summary` 頂層 JSON schema（`sample_count`／`tag_counts`／`suggested_thresholds`） |
 | `observability/eval_report.py` | 新增 | `write_eval_report` → stable summary dict + `.md`/`.json` |
 | `tests/test_eval_report.py` | 新增 | 形狀／寫檔／空 export 測試（4 cases） |
-| `.github/workflows/eval-gate-ci.yml` | 修改 | PR + nightly 生成報表並 `upload-artifact` |
+| `tests/test_eval_stats.py` | 修改 | `test_build_stats_summary_flat_schema` |
+| `.github/workflows/eval-gate-ci.yml` | 修改 | PR + nightly 生成報表並 `upload-artifact`；unittest 含 `test_eval_stats`／`test_eval_report` |
 | `observability/eval_export.md` | 修改 | Wave B report CLI 與 CI artifact 名稱 |
 | `observability/eval_stats_report.md` | 修改 | 交叉引用 `eval_report` 產物 |
 | `docs/WAVE_B_EXECUTION_PLAN.md` | 修改 | 本票 **done** 條目 |
 
 ### 測試結果
 
+- `python -m observability.eval_stats artifacts/eval/eval_export_v1_shadow_nightly.latest.jsonl --format json` → `ok=true`，`sample_count=4`，`needs_review_ratio=0.25`，`tag_counts={high_retry:1}`
 - `python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval` → `ok=true`，`sample_count=3`，`needs_review_ratio=0.6667`
-- `python -m unittest tests.test_eval_report tests.test_eval_stats tests.test_eval_exporter tests.test_eval_ci_check tests.test_eval_gate -v` → **33 tests OK**
+- `python -m unittest tests.test_eval_report tests.test_eval_stats tests.test_eval_exporter tests.test_eval_ci_check tests.test_eval_gate -v` → **34 tests OK**
 
 ### CI / 執行證據
 

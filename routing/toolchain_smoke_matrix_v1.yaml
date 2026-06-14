@@ -1,0 +1,146 @@
+schema_version: toolchain_smoke_matrix_v1
+matrix_revision: "2026-06-11"
+description: >
+  Machine-readable Phase 6 tool-chain smoke matrix (WB-T7).
+  SSOT for WB-T4 dashboard verification commands and Wave C agent gate assumptions.
+  Aligns gate_class with docs/phase3-5-cost-model-governance-contract-v1.md §2.
+  Does NOT add PR mandatory checks; execution uses existing scripts/unittest only.
+
+ssot_for:
+  - docs/toolchain-health-dashboard-v1.md
+  - docs/phase6-int-regression-gate-contract-v1.md
+
+gate_class_values:
+  - mandatory
+  - optional
+  - shadow
+
+tier_values:
+  - local_recommended
+  - optional_ci
+  - release_only
+
+entries:
+  - smoke_id: TS-W3TL-UNIT
+    command: >-
+      python -m unittest tests.test_tabular_tool_catalog tests.test_tabular_tool_selector
+      tests.test_tabular_tool_executor tests.test_tabular_outbox_consumer -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 45
+    wa_t3_gate_id: null
+    source_ticket: W3-TL-T1/T2/T3/T4
+    notes: W3-TL four-piece unittest; Tabular tool layer contract smoke.
+
+  - smoke_id: TS-ROUTING-EVAL-UNIT
+    command: python -m unittest tests.test_routing_eval_runner -v
+    tier: optional_ci
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 20
+    wa_t3_gate_id: OG-ROUTING-EVAL-DRYRUN
+    source_ticket: W4-T2
+    notes: Routing eval runner contract; also runs inside eval-gate PR job as optional class.
+
+  - smoke_id: TS-ROUTING-EVAL-DRYRUN
+    command: python scripts/run_routing_eval.py --dry-run --format json
+    tier: optional_ci
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 15
+    wa_t3_gate_id: OG-ROUTING-EVAL-DRYRUN
+    source_ticket: W4-T2/W4-T4
+    notes: Dry-run only; no --execute; PR eval-gate step but WA-T3 optional classification.
+
+  - smoke_id: TS-AGENT-LINES-CI
+    command: python scripts/run_agent_lines_ci_suite.py --scope all --format json --no-ci-summary
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 120
+    wa_t3_gate_id: OG-AGENT-LINES-CI
+    source_ticket: W10-T1
+    notes: Agent lines CI suite; optional pre-release (W10-T1); never PR mandatory trio.
+
+  - smoke_id: TS-AGENT-LINES-CI-UNIT
+    command: python -m unittest tests.test_agent_lines_ci_suite_v1 -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 30
+    wa_t3_gate_id: OG-AGENT-LINES-CI
+    source_ticket: W10-T1
+    notes: Agent lines CI contract unittest companion to TS-AGENT-LINES-CI.
+
+  - smoke_id: TS-AGENT-LINES-METRICS
+    command: python scripts/analyze_agent_lines_metrics.py --format json --no-write
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 10
+    wa_t3_gate_id: OG-AGENT-LINES-METRICS
+    source_ticket: W10-T2
+    notes: Offline metrics scan; read-only outbox aggregation.
+
+  - smoke_id: TS-AGENT-LINES-AUDIT
+    command: python scripts/run_agent_audit_quickview.py --case-ref demo_phase --format json
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 10
+    wa_t3_gate_id: null
+    source_ticket: W10-T3
+    notes: Read-only audit quickview CLI; does not mutate outbox or mainline.
+
+  - smoke_id: TS-AGENT-LINES-MONTHLY
+    command: python scripts/generate_agent_lines_monthly_report.py --no-write --format json
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 10
+    wa_t3_gate_id: null
+    source_ticket: W11-T3
+    notes: Exit 1 when metrics empty is tolerated by toolchain dashboard.
+
+  - smoke_id: TS-TOOLCHAIN-DASHBOARD-DRYRUN
+    command: python scripts/run_toolchain_health_dashboard.py --format json --dry-run --no-write
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 5
+    wa_t3_gate_id: null
+    source_ticket: WB-T4
+    notes: WB-T4 dashboard read-only assembly; stdout schema_version toolchain_health_v1.
+
+  - smoke_id: TS-TOOLCHAIN-DASHBOARD-UNIT
+    command: python -m unittest tests.test_toolchain_health_dashboard_v1 -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 25
+    wa_t3_gate_id: null
+    source_ticket: WB-T4
+    notes: Dashboard contract unittest; companion to TS-TOOLCHAIN-DASHBOARD-DRYRUN.
+
+  - smoke_id: TS-WF-STATUS-HELP
+    command: python -m observability.wf_status_summary --help
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 2
+    wa_t3_gate_id: null
+    source_ticket: WB-T4
+    notes: Optional wf block; --help only for matrix existence check.
+
+  - smoke_id: TS-MVP-MAINLINE
+    command: python scripts/run_mvp_mainline_regression.py -v
+    tier: release_only
+    gate_class: optional
+    blocks_mainline: true
+    estimated_seconds: 90
+    wa_t3_gate_id: null
+    source_ticket: W1-T3B
+    notes: >
+      Release checklist mandatory; not in PR CI mandatory trio.
+      blocks_mainline=true when interpreting Tabular MVP mainline readiness.

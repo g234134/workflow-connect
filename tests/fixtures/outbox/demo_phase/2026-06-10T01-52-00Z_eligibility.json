@@ -1,0 +1,20 @@
+{
+  "schema_version": "tabular_outbox_v1",
+  "case_ref": "demo_phase",
+  "run_id": "2026-06-10T01-52-00Z_eligibility",
+  "tool_id": "validate.eligibility",
+  "started_at": "2026-06-10T01:52:00Z",
+  "finished_at": "2026-06-10T01:52:01Z",
+  "ok": true,
+  "exit_code": 2,
+  "message": "eligibility gate completed with exit_code=2",
+  "artifacts": [
+    {
+      "kind": "report",
+      "path": "cases/demo_phase/reports/eligibility_result.json",
+      "logical_key": "eligibility_result"
+    }
+  ],
+  "dry_run": false,
+  "outbox_path": "outbox/demo_phase/2026-06-10T01-52-00Z_eligibility.json"
+}

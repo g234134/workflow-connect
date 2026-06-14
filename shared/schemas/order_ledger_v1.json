@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "order_ledger_v1.json",
+  "title": "OrderLedgerRecordV1",
+  "description": "WC-T4 minimal order intake ledger record (no payment gateway).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "order_id",
+    "ticket_id",
+    "ticket_ref",
+    "amount_minor",
+    "currency",
+    "order_status",
+    "created_at",
+    "idempotency_key"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "order_ledger_v1"
+    },
+    "order_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ticket_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ticket_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "amount_minor": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "order_status": {
+      "type": "string",
+      "enum": ["DRAFT"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

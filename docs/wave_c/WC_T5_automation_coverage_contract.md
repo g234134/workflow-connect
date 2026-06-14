@@ -62,6 +62,8 @@
 | `wc.m2.order.create` | 为 ticket 创建 order 记录（dry-run 默认隔离） | auto | medium | `scripts/run_order_intake.py` | `python scripts/run_order_intake.py create --ticket WC-T4-INT --amount-minor 10000 --currency TWD --ticket-path tests/fixtures/order_ledger/WC-T4-INT_state.md --dry-run` |
 | `wc.m2.order.lookup` | 按 order_id 或 ticket_id 查询 order | auto | low | `scripts/run_order_intake.py` | `python scripts/run_order_intake.py lookup --ticket-id WC-T4-INT --jsonl-path artifacts/order_ledger/orders.jsonl` |
 | `wc.m2.order.list` | 列出 ledger 中全部 order | auto | low | `scripts/run_order_intake.py` | `python scripts/run_order_intake.py list --jsonl-path artifacts/order_ledger/orders.jsonl` |
+| `wc.m2.loop.order_handoff` | eligibility + dispatch context + order + order comms 单票闭环 | auto | medium | `scripts/run_control_plane_order_handoff.py` | `python scripts/run_control_plane_order_handoff.py --ticket WC-T4 --amount-minor 10000 --currency TWD --ticket-path tests/fixtures/order_ledger/ticket_ready_for_order.md --dry-run` |
+| `wc.m2.comms.order_event` | order intake 结果 → comms JSONL（created/replay/rejected） | auto | low | `scripts/run_control_plane_order_handoff.py` | `python -m unittest tests.test_control_plane_order_handoff.TestOrderCommsPayload -v` |
 | `wc.m2.state.write_ticket` | 自动写 live `*_state.md` STATE 区块 | forbidden | high | — | —（禁止自动化；仅 Orchestrator HITL 手工编辑） |
 | `wc.m2.chat.open_cursor` | 调用 Cursor API 自动开 chat | forbidden | high | — | —（禁止；Multi-Chat 仍人工开 chat） |
 
@@ -190,6 +192,22 @@ python -m unittest tests.test_ticket_eligibility tests.test_dispatch_cards tests
       "risk_class": "low",
       "cli_entry": "scripts/run_order_intake.py",
       "verification_command": "python scripts/run_order_intake.py list --jsonl-path artifacts/order_ledger/orders.jsonl"
+    },
+    {
+      "path_id": "wc.m2.loop.order_handoff",
+      "description": "Single-ticket handoff: eligibility + dispatch context + order + comms",
+      "automation_tier": "auto",
+      "risk_class": "medium",
+      "cli_entry": "scripts/run_control_plane_order_handoff.py",
+      "verification_command": "python scripts/run_control_plane_order_handoff.py --ticket WC-T4 --amount-minor 10000 --currency TWD --ticket-path tests/fixtures/order_ledger/ticket_ready_for_order.md --dry-run"
+    },
+    {
+      "path_id": "wc.m2.comms.order_event",
+      "description": "Emit comms JSONL for order intake outcomes",
+      "automation_tier": "auto",
+      "risk_class": "low",
+      "cli_entry": "scripts/run_control_plane_order_handoff.py",
+      "verification_command": "python -m unittest tests.test_control_plane_order_handoff.TestOrderCommsPayload -v"
     },
     {
       "path_id": "wc.m2.state.write_ticket",

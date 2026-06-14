@@ -1,0 +1,22 @@
+{
+  "schema_version": "case-eligibility-result-v0.1",
+  "status": "review_needed",
+  "checked_at": "2026-06-14T01:19:15.408764+00:00",
+  "case_id": "demo_phase",
+  "client_ref": "internal-demo",
+  "dimensions_summary": {
+    "provenance": "accepted",
+    "sensitivity": "accepted",
+    "structure": "accepted",
+    "scale": "review_needed",
+    "schema": "accepted",
+    "encoding": "accepted"
+  },
+  "reasons": [
+    "rows<100",
+    "size<1024"
+  ],
+  "human_readable": "Case needs manual review before cleaning",
+  "reason_code": "rows<100",
+  "source": "p2_case_eligibility"
+}

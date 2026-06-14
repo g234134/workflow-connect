@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "schema_version": "c2-demo-v1",
+    "job_id": "case-2026-0001",
+    "report_type": "clean_basic_demo",
+    "generated_at": "2026-06-14T01:19:20.737510+00:00",
+    "disclaimer": "Demo only; manual review required; not production SLA pipeline",
+    "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md"
+  },
+  "case_id": "2026-0001",
+  "client_ref": "sampleco",
+  "product_sku": "CLEAN-BASIC",
+  "generated_at": "2026-06-14T01:19:20.737510+00:00",
+  "summary": {
+    "job_id": "case-2026-0001",
+    "sku": "CLEAN-BASIC",
+    "total_rows": 115,
+    "accepted_rows": 8,
+    "accepted_units": 8,
+    "rejected_rows": 1,
+    "rejected_units": 1,
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "chargeable_hint": false
+  },
+  "product_metrics": {
+    "total_rows": 115,
+    "accepted_rows": 8,
+    "rejected_rows": 1,
+    "duplicate_rows_found": 2,
+    "duplicate_rows_removed": 106,
+    "missing_rate_by_field": {
+      "Phase": {
+        "before": 0.0087,
+        "after": 0.0
+      },
+      "名稱": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "之前": {
+        "before": 0.1478,
+        "after": 0.125
+      },
+      "現在（建議）": {
+        "before": 0.2,
+        "after": 0.0
+      }
+    },
+    "anomaly_count_by_rule": {
+      "percent_out_of_range_0_100": 20
+    },
+    "format_fixes_applied": {
+      "phase_name_normalized": 7,
+      "name_trimmed": 0,
+      "percent_symbol_removed": 91
+    }
+  },
+  "cleaning_stats": {
+    "row_counts": {
+      "intake": 115,
+      "after_dedup": 114,
+      "ok": 8,
+      "rejected": 1
+    },
+    "missing_value_stats": [
+      {
+        "field": "Phase",
+        "missing_before": 1,
+        "missing_after": 0,
+        "rate_before": 0.0087,
+        "rate_after": 0.0
+      },
+      {
+        "field": "名稱",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "之前",
+        "missing_before": 17,
+        "missing_after": 1,
+        "rate_before": 0.1478,
+        "rate_after": 0.125
+      },
+      {
+        "field": "現在（建議）",
+        "missing_before": 23,
+        "missing_after": 0,
+        "rate_before": 0.2,
+        "rate_after": 0.0
+      }
+    ],
+    "product_metrics": {
+      "total_rows": 115,
+      "accepted_rows": 8,
+      "rejected_rows": 1,
+      "duplicate_rows_found": 2,
+      "duplicate_rows_removed": 106,
+      "missing_rate_by_field": {
+        "Phase": {
+          "before": 0.0087,
+          "after": 0.0
+        },
+        "名稱": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "之前": {
+          "before": 0.1478,
+          "after": 0.125
+        },
+        "現在（建議）": {
+          "before": 0.2,
+          "after": 0.0
+        }
+      },
+      "anomaly_count_by_rule": {
+        "percent_out_of_range_0_100": 20
+      },
+      "format_fixes_applied": {
+        "phase_name_normalized": 7,
+        "name_trimmed": 0,
+        "percent_symbol_removed": 91
+      }
+    }
+  },
+  "issues_summary": {
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 1,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 20,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 5,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 4"
+      },
+      {
+        "row": 7,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 6"
+      },
+      {
+        "row": 16,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 7"
+      },
+      {
+        "row": 17,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 8"
+      },
+      {
+        "row": 20,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 3"
+      }
+    ]
+  },
+  "stats": {
+    "row_counts": {
+      "intake": 115,
+      "after_dedup": 114,
+      "ok": 8,
+      "rejected": 1
+    },
+    "missing_value_stats": [
+      {
+        "field": "Phase",
+        "missing_before": 1,
+        "missing_after": 0,
+        "rate_before": 0.0087,
+        "rate_after": 0.0
+      },
+      {
+        "field": "名稱",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "之前",
+        "missing_before": 17,
+        "missing_after": 1,
+        "rate_before": 0.1478,
+        "rate_after": 0.125
+      },
+      {
+        "field": "現在（建議）",
+        "missing_before": 23,
+        "missing_after": 0,
+        "rate_before": 0.2,
+        "rate_after": 0.0
+      }
+    ],
+    "processing_time_ms": 0
+  },
+  "errors": {
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 1,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 20,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 5,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 4"
+      },
+      {
+        "row": 7,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 6"
+      },
+      {
+        "row": 16,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 7"
+      },
+      {
+        "row": 17,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 8"
+      },
+      {
+        "row": 20,
+        "field": "現在（建議）",
+        "value": 105.0,
+        "phase": "Phase 3"
+      }
+    ]
+  },
+  "next_steps": {
+    "for_customer": [
+      "Review Phase 4 row: 現在（建議）=105 exceeds 0–100; decide truncate, NULL, or waive.",
+      "Confirm dedup rule (keep highest 現在（建議）) matches business expectation."
+    ],
+    "recommended_actions": [
+      {
+        "action": "review_warnings",
+        "priority": "medium",
+        "reason": "range anomaly retained"
+      }
+    ]
+  },
+  "cleaning_rules_applied": [
+    {
+      "rule": "normalize_phase_name",
+      "description": "Phase N casing unified"
+    },
+    {
+      "rule": "dedup_by_phase",
+      "description": "Keep row with max 現在（建議）"
+    },
+    {
+      "rule": "drop_missing_phase",
+      "description": "Reject rows with empty Phase"
+    },
+    {
+      "rule": "parse_percent",
+      "description": "Strip % and store 0–100 numeric"
+    },
+    {
+      "rule": "flag_out_of_range",
+      "description": "Mark 0–100 violations; do not auto-truncate in demo"
+    }
+  ],
+  "output_guard": {
+    "guard_version": "output-guard-v0.1",
+    "ratio": 0.0696,
+    "input_rows": 115,
+    "output_rows": 8,
+    "threshold": 0.5,
+    "status": "warning",
+    "notes": [
+      "output_rows (8) / input_rows (115) = 0.0696 below MVP threshold 0.5; manual review recommended",
+      "schema probe flagged ambiguous export pattern; see schema_flags"
+    ],
+    "schema_flags": [
+      "multi_row_export",
+      "schema_ambiguous"
+    ]
+  }
+}

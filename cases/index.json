@@ -1,0 +1,102 @@
+{
+  "schema_version": "gov-cases-index-v0.1",
+  "updated_at": "2026-06-14T01:35:29Z",
+  "disclaimer": "Stub registry for Wave 2 MVP; not a production job queue.",
+  "naming": {
+    "client_ref": "lowercase [a-z0-9-]; customer or project slug",
+    "case_id": "lowercase [a-z0-9-]; batch or ticket slug",
+    "legacy_demo": "cases/demo_phase/ kept for C2-D1 backward anchor"
+  },
+  "template_path": "cases/_TEMPLATE_case",
+  "required_paths": [
+    "intake.json",
+    "raw/",
+    "cleaned/",
+    "reports/",
+    "delivery_signoff.md"
+  ],
+  "cases": [
+    {
+      "case_dir": "cases/demo_phase",
+      "client_ref": "internal-demo",
+      "case_id": "demo_phase",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_notes": [
+        "phase_like",
+        "phase_demo"
+      ],
+      "gate_status": "review_needed",
+      "cleaning_profile": "phase_demo_v1",
+      "cleaning_rules_applied": [
+        "normalize_phase_name",
+        "dedup_by_phase",
+        "drop_missing_phase",
+        "parse_percent",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.7143,
+      "known_limits": [
+        "legacy_demo_path",
+        "phase_one_row_per_phase_value",
+        "not_prod_pipeline",
+        "rows<100",
+        "size<1024",
+        "pass_with_warnings",
+        "manual_review_required"
+      ],
+      "intake_path": "cases/demo_phase/intake.json",
+      "status": "demo_anchor",
+      "source_file": "raw/Phase.csv",
+      "notes": "C2-D1 demo; internal structure aligned with _TEMPLATE_case"
+    },
+    {
+      "case_dir": "cases/sampleco/2026-0001",
+      "client_ref": "sampleco",
+      "case_id": "2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_notes": [
+        "phase_like",
+        "multi_row_export",
+        "schema_ambiguous"
+      ],
+      "gate_status": "accepted",
+      "cleaning_profile": "clean_basic_demo",
+      "cleaning_rules_applied": [
+        "normalize_phase_name",
+        "dedup_by_phase",
+        "drop_missing_phase",
+        "parse_percent",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.0696,
+      "known_limits": [
+        "multi_row_milestone_export",
+        "phase_dedup_semantics_unstable",
+        "marginal_cleaning_quality",
+        "multi_row_export",
+        "schema_ambiguous",
+        "pass_with_warnings",
+        "low_accepted_ratio"
+      ],
+      "intake_path": "cases/sampleco/2026-0001/intake.json",
+      "notes": "First real-sample experiment; gate accepted but cleaning quality marginal (115 intake → 8 accepted; pass_with_warnings)",
+      "source_file": "raw/sampleco_milestone_export.csv"
+    }
+  ]
+}

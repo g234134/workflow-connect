@@ -1,0 +1,28 @@
+{
+  "case_id": "<case_id>",
+  "client_ref": "<client_ref>",
+  "data_file": "raw/<primary.csv>",
+  "file_format": "csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "scale": {
+    "row_count": null,
+    "file_size_bytes": null
+  },
+  "schema": {
+    "field_count": null,
+    "primary_key": "<id_column_or_null>",
+    "pii_fields": []
+  },
+  "provenance": {
+    "source_type": "owned",
+    "data_owner": "<team_or_client>"
+  },
+  "sensitivity": "internal",
+  "structure": "text_only",
+  "security_compliance": {
+    "contains_pii": false,
+    "user_acknowledged_limitations": true
+  },
+  "cleaning_goals": "<brief goals for analyst>"
+}

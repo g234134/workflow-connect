@@ -2204,3 +2204,536 @@ sh scripts/check_line_endings.sh scripts/build_shadow_spool.sh
 
 - 未修改 `eval_ci_check` 預設 threshold（PR 仍 0.72；nightly 仍 0.60 + `infra_risk`）。
 - 本地產物 `artifacts/eval/eval_report.latest.*` 可重跑覆寫，**不**強制 commit。
+
+---
+
+## WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE — 複驗（2026-06-05 本輪）
+
+**狀態**：**done**（複驗通過；計數已刷新）
+
+### Wave B bootstrap scope（凍結）
+
+| 項 | 值 |
+|----|-----|
+| **subtrees** | `core`、`subagents`、`context`、`observability`、`04_Workflows` |
+| **root files** | `AGENTS.md` |
+| **include_globs** | `*.py`、`*.md` |
+| **exclude_dir_names** | `__pycache__`、`.git`、`.venv`、`node_modules`、`.pytest_cache`、`.mypy_cache`、`venv` |
+| **exclude_globs** | `*.pyc`、`*.sample.json` |
+| **scope_digest** | `7fdcc419ac8fa8069c12ed85cd868734508bf072b8afefd876af37c8c002f3a5` |
+
+### 執行證據（本輪）
+
+| 步驟 | 命令 | 關鍵結果 |
+|------|------|----------|
+| index job | `python workflow_v2/kb/repo_index_bootstrap.py run --case W2-1` | `ok=true`；`file_count=190`；`chunk_count=1204` |
+| sync | `wf_kb_index_sync.ps1` → `W2-1_case` | 案卷 `kb_index_status=ready` |
+| gate | `wf_kb_index_gate.ps1 -TargetImpState IMP-AI-READY` | `verdict=allow` |
+| RAG smoke | `python workflow_v2/kb/rag_index_smoke.py "AGENTS.md"` | `ok=true`；`hit_count=5`；首 hit `AGENTS.md` |
+| unittest | `python -m unittest tests.test_kb_index_bootstrap -v` | **10/10 OK**（含 case↔status 一致性） |
+
+### 治理掛載
+
+- `04_Workflows/00_Agent_Work_Conditions.md`：P2 KB Index Smoke 標準
+- `docs/WAVE_B_EXECUTION_PLAN.md`：Wave B 小結「repo index bootstrap done」
+- `workflow_upgrade/90_run_queue.md`：本票 **DONE**
+- `workflow_v2/90_run_queue.md`：本票 **DONE**
+
+---
+
+## WAVE-B-P1-TRACE-QUERY-CLI（gov-trace-v2 本地 trace 查詢 CLI）
+
+**日期**：2026-06-05  
+**角色**：Observability Engineer  
+**票號**：`WAVE-B-P1-TRACE-QUERY-CLI`  
+**狀態**：**done**
+
+### 範圍與目的
+
+- 提供只讀 CLI，依 `trace_id`／`task_id`／`session_id` 從 gov-trace-v2 JSONL 追查事件，補 Phase 3 調查工具收口。
+- 不依賴 Langfuse API 或 PG；`query_traces()` dict 可供後續 `eval_trace_correlate` 重用。
+
+### 主要變更
+
+| 檔案 | 動作 | 說明 |
+|----|----|----|
+| `observability/trace_query.py` | 新增 | `query_traces()` + `python -m observability.trace_query` CLI |
+| `tests/fixtures/trace/sample_traces.jsonl` | 新增 | 5 行 fixture（2 traces，含 span_end） |
+| `tests/test_trace_query.py` | 新增 | trace/task/session 匹配、零匹配、缺檔、event filter（9 cases） |
+| `docs/observability.md` | 修改 | §7 Local trace lookup + 追查流程範例 |
+| `docs/WAVE_B_EXECUTION_PLAN.md` | 修改 | 本票 **done** 條目 |
+| `workflow_upgrade/90_run_queue.md` | 修改 | Wave B 隊列登錄 DONE |
+
+### Demo（fixture）
+
+**輸入**：
+
+```bash
+python -m observability.trace_query \
+  --file tests/fixtures/trace/sample_traces.jsonl \
+  --trace-id trace-wb-fixture-001 \
+  --format json
+```
+
+**輸出摘要**：`ok=true`，`matches=3`，`summary.event_counts={trace_start:1, span_end:1, trace_end:1}`，`task_id=task-wb-001`，時間窗 `2026-06-05T08:00:00Z` → `08:00:02Z`。
+
+**不存在 id**：`--trace-id does-not-exist` → `ok=true`，`matches=0`，`message=no matching trace events`。
+
+### 測試結果
+
+- `python -m observability.trace_query --help` → 列出 `--file`、`--trace-id`、`--task-id`、`--session-id`、`--format`、`--limit`
+- `python -m unittest tests.test_trace_query tests.test_trace_schema tests.test_logging_adapter tests.test_trace_middleware -v` → **Ran 22 tests … OK**
+
+### 備註
+
+- 預設 JSONL 邏輯路徑 `runtime/task_traces.jsonl`；實例路徑待 Master_Map 接線後可不傳 `--file`。
+- Wave C 留項：PG + Langfuse unified query；`WAVE-B-P2-EVAL-TRACE-CORRELATE` 已消費本 CLI 內部 API（`iter_trace_events` / `_build_summary`）。
+
+---
+
+## WAVE-B-P2-EVAL-TRACE-CORRELATE（eval_export 與 trace 關聯追查）
+
+**日期**：2026-06-05  
+**角色**：Observability / Eval Gate Engineer  
+**票號**：`WAVE-B-P2-EVAL-TRACE-CORRELATE`  
+**狀態**：**done**
+
+### 範圍與目的
+
+- 在 eval_export 列上追加 gov-trace-v2 trace 摘要 join，讓 `needs_review` / `infra_risk` 個案無需手動 copy-paste id 到 `trace_query`。
+- 復用 `trace_query` 內部 JSONL 讀取與 summary 邏輯；不改 eval_gate 規則或 export schema。
+
+### 主要變更
+
+| 檔案 | 動作 | 說明 |
+|----|----|----|
+| `observability/eval_trace_correlate.py` | 新增 | `correlate_exports()` + CLI；join 優先序 trace_id > task_id > session_id |
+| `tests/test_eval_trace_correlate.py` | 新增 | 有 trace／無 trace／join 優先序／端到端 trace_query 驗證（12 cases） |
+| `tests/fixtures/trace/sample_traces.jsonl` | 修改 | 增 `tr-3` / `t-infra` trace_start + trace_end（對齊 eval sample `infra_risk` 列） |
+| `observability/eval_export.md` | 修改 | § eval / trace correlate 流程 |
+| `observability/eval_stats_report.md` | 修改 | 交叉引用 correlate CLI |
+| `docs/WAVE_B_EXECUTION_PLAN.md` | 修改 | 本票 **done** 條目 |
+| `_workflow_upgrade/90_run_queue.md` | 修改 | Wave B 隊列登錄 DONE |
+
+### 端到端 Demo（fixture）
+
+**1. 從 export 挑 `infra_risk` / `needs_review` 列並 correlate**：
+
+```bash
+python -m observability.eval_trace_correlate \
+  --eval tests/fixtures/eval/eval_export_sample.jsonl \
+  --trace tests/fixtures/trace/sample_traces.jsonl \
+  --format json
+```
+
+**輸出摘要**：`ok=true`，`row_count=2`，`trace_found_count=1`。  
+- `t-infra`（line 1）：`trace_found=true`，`join_key=trace_id`，`trace_summary.event_count=2`，`last_event.error_type=timeout`。  
+- `t-retry`（line 2）：`trace_found=false`，`message=no trace events for join keys (...)`，整體不 crash。
+
+**2. 用 trace_query 驗證 `t-infra` 的 trace_id**：
+
+```bash
+python -m observability.trace_query \
+  --file tests/fixtures/trace/sample_traces.jsonl \
+  --trace-id tr-3 \
+  --format json
+```
+
+**輸出摘要**：`ok=true`，`matches=2`，`summary.event_counts={trace_start:1, trace_end:1}`，與 correlate `trace_summary` 一致。
+
+### 測試結果
+
+- `python -m observability.eval_trace_correlate --eval tests/fixtures/eval/eval_export_sample.jsonl --trace tests/fixtures/trace/sample_traces.jsonl --format json` → `ok=true`，`rows>=1`，`trace_found=true` 含 `trace_summary`
+- `python -m unittest tests.test_eval_trace_correlate tests.test_trace_query -v` → **21 tests OK**
+
+### CI / 執行證據
+
+| 項 | 值 |
+|----|----|
+| CI 掛載 | **未**（Wave C 可選 nightly correlate artifact） |
+| Run URL | — |
+
+### 備註
+
+- 預設 `--only-flagged`（`needs_review` 或 `--fail-on-tags infra_risk`）；`--no-only-flagged` 處理全部 export 列。
+- `eval_export_sample.jsonl` **未改** id（仍 `tr-3` / `t-infra`）；僅 trace fixture 補齊對應事件。
+
+---
+
+## Wave B-Final
+
+## B-F1 · Skill Catalog / Gov Tool Registry v1
+
+**日期**：2026-06-07 · **票號**：B-F1 · **狀態**：accepted_with_gaps（Reviewer 無阻擋項）
+
+**交付**：Gov Tool Catalog v1 — `skills/gov_tool_card_schema.json`（`gov_tool_card_v1`）、11 張 `skills/gov_cards/*.json`（obs eval×6、trace、wf summary、kb index×3）、`skills/gov_tool_registry.py`（list／validate CLI）、`docs/SKILL_CATALOG_OVERVIEW.md`（`tool_id` 權威索引）、`tests/test_gov_tool_registry.py`。`kb.index.selector_gate` 標 **skeleton**（reference only）；`obs.eval.triage` 標 **composite**（`depends_on`: correlate + trace.query）。未改 Wave B CLI 執行邏輯。
+
+**驗收**：`python -m skills.gov_tool_registry validate` → `ok=True total=11 passed=11 failed=0`；`python -m unittest tests.test_gov_tool_registry -v` → **8/8 OK**。11 `tool_id` 與 Overview 索引表、`_REQUIRED_TOOL_IDS`、registry list 輸出一致；對照 `WAVE_B_EXECUTION_PLAN` 各票模組無捏造。
+
+**已知缺口（非阻擋）**：主艙未安裝 `jsonschema`，validate 走 `_manual_schema_errors` fallback（靜默降級風險）；`kb.index.selector_gate` 的 `review_status: approved` 與 `skeleton: true` 語意略衝；catalog `validate` 尚未接入 CI；`kb.index.rag_smoke` verify_command 語意略混（建議 Overview 加註）。
+
+**對下游**：B-F3 Routing Policy、C1-P2 戰報模板應引用本 catalog 之 Gov `tool_id`，非 Wave8 `skill_id` 或暱稱。
+
+**下一步**：Wave C 小票掛 CI validate（gov venv + jsonschema）；prod selector 接線（`GOV_KB_INDEX_SELECTOR_HOOK_ENABLED`）；可選輕修卡面 `review_status`／Overview 註記。
+
+---
+
+## B-F2 · Agent Roles / Engineering Contract 明文化
+
+**日期**：2026-06-07 · **票號**：B-F2 · **狀態**：accepted_with_gaps（blocking_issues: 無，risk_level: low）
+
+將 C1-P1／B-F1 實戰中的 Multi-Chat 四角色分工正式寫入 `.cursor/rules/multi_chat_roles.mdc`（責任／禁區／路徑邊界／與 CONTRACT 關係）、`04_Workflows/tickets/README.md`（區塊讀寫表、B→C→D→O 主流程、`needs_changes` 迴圈）、四份角色 instruction 模板，並於 `AGENTS.md` 新增第 10 步 Multi-Chat 校準。Reviewer 結論 **accepted_with_gaps**（無 blocking）。
+
+**意義**：之後每張票可用 `<ticket_id>_state.md`＋角色模板跑多 chat 流水線，各 chat 只寫己區塊、以 state 為 SSOT，降低 handoff 搬運成本。
+
+**剩餘 gaps（非阻擋，後續票處理）**：（1）`§Implementer` Blocked Paths 對合約正文括註「B-F2」易誤讀，應改為「僅尚書省或 Governance 票可動」；（2）Orchestrator「O 確認後追加 Progress」與 Scribe「可直接末尾追加」／`AGENTS.md` §封存協議敘事略不一致，建議統一；（3）`tickets/README.md` 模板索引可點連結待 B-F3；（4）文書票 B_REPORT 驗證證據可補「已讀檔路徑」錨點。
+
+---
+
+## B-F3 · Routing Policy 文檔＋可調參 v1
+
+**日期**：2026-06-07  
+**票號**：B-F3  
+**狀態**：**accepted**（Reviewer 可接受，已知缺口不阻擋交付）
+
+### 交付物
+
+| 檔案 | 說明 |
+|------|------|
+| `config/routing_policy.yaml` | Routing Policy v1 主配置（tools=6、routes=2） |
+| `core/routing_policy_loader.py` | 載入／驗證／查詢 API + validate / resolve-route CLI |
+| `docs/ROUTING_POLICY_GUIDE.md` | Policy 結構、字段說明、與 B-F1 Catalog / Wave B 的關係 |
+| `tests/test_routing_policy_loader.py` | 合法／非法 config、skeleton / composite / undeclared tool 等測試 |
+
+### 驗證結果
+
+- `python -m core.routing_policy_loader validate` → `ok=True`，`total_tools=6`，`total_routes=2`，`errors=0`
+- `python -m unittest tests.test_routing_policy_loader -v` → **10/10 OK**
+- `python -m skills.gov_tool_registry validate` → **11/11 OK**
+- `python -m unittest tests.test_gov_tool_registry -v` → **8/8 OK**
+
+### Known gaps（已知缺口，非阻擋）
+
+- 尚未針對「`enabled=false` 的工具誤被放入 route steps」撰寫專項單測；validator 已有邏輯，後續可補測試。
+- 尚未對 CLI `main()` 的 exit code 撰寫單測，目前僅手動驗證合法／非法 config 的 exit 0 / 1 行為。
+- 尚未將 `python -m core.routing_policy_loader validate` 接入 CI workflow（留給 Wave C 小票處理）。
+
+### 對下游的意義
+
+- Wave C 可以透過修改 `config/routing_policy.yaml`（而非改程式碼），調整 Wave B eval / wf summary / kb index 的路由編排。
+- 所有 `tool_id` 均來自 B-F1 Gov Catalog，routing 層與工具層對齊；skeleton / composite 工具（例如 `kb.index.selector_gate`、`obs.eval.triage`）的使用規範已在 loader / validator 層明確約束。
+
+---
+
+## Wave C
+
+## C1-P1 · AI Workflow 偵錯與健檢服務 · Product Definition v1
+
+**日期**：2026-06-07 · **票號**：C1-P1 · **狀態**：accepted_with_gaps（Reviewer 無阻擋項）
+
+**交付**：新建 `docs/PRODUCT_AI_WORKFLOW_DIAGNOSTIC.md`（Product Spec v1 初稿，§1–§7 齊全：服務介紹、輸入、交付物、範圍限制、high-level 流程、文件索引、版本後續）。
+
+**對齊**：能力表與 Wave B 已交付工具一致（eval export/report、correlate、trace query、wf status summary、kb bootstrap+smoke）；未交付項（selector_gate skeleton、Langfuse/PG 統一 API、dashboard、prod selector）誠實標 ❌；無定價／SLA／代維運承諾。
+
+**驗收**：文書票，cross-check `SKILL_CATALOG_OVERVIEW.md` 11 tool_id；結構對照 FRAME AcceptanceCriteria 通過。
+
+**輕微缺口（留 C1-P2）**：§1.1「信心區間」用語、§4.1 `trace_query` 暱稱宜統一為 `tool_id`；§5 執行步驟待詳化 runbook／戰報模板。
+
+**下一步**：C1-P2 詳化 §5；可選輕修統一術語；定價／Wave C 計畫另票。
+
+---
+
+## C1-P2 · AI Workflow 偵錯與健檢服務 · Execution Plan / Runbook v0.1
+
+**日期**：2026-06-07 · **票號**：C1-P2 · **狀態**：accepted_with_gaps
+
+**交付**：
+- 新建 `docs/WAVE_C_EXECUTION_PLAN.md`（Step 0-4 runbook：Intake → 工具選擇 → Wave B CLI 執行 → 戰報彙整 → Internal Review）
+- 輕修 `docs/PRODUCT_AI_WORKFLOW_DIAGNOSTIC.md` §5/§6/§7（增加 Execution Plan 連結、對內/對外分界、與 Wave B/C docs 交叉索引）
+
+**對齊**：
+- WAVE_C_EXECUTION_PLAN ↔ Product Spec §5：high-level steps 詳化為可操作 CLI
+- WAVE_C_EXECUTION_PLAN ↔ WAVE_B_EXECUTION_PLAN：Step 2 CLI 範例全部引用 Wave B 已交付命令
+- WAVE_C_EXECUTION_PLAN ↔ SKILL_CATALOG_OVERVIEW：引用全部 11 個 Gov tool_id，`kb.index.selector_gate` 標 skeleton
+- WAVE_C_EXECUTION_PLAN ↔ ROUTING_POLICY_GUIDE：引用 `wave_b.eval_report`、`wave_b.kb_index_bootstrap` 路由
+
+**實際接案的意義**：
+從「spec 說我們能做什麼」變成「runbook 告訴你怎麼做」。執行者現在可以：
+1. 開啟 WAVE_C_EXECUTION_PLAN.md 依 Step 0-4 逐步執行
+2. 每步都有明確的 CLI 命令（來自 Wave B 已驗證的工具）
+3. 知道哪些步驟需要人工判讀（標註 [ ] 檢查點）
+4. 產出標準化戰報並寫入 `00_Agent_Work_Progress.md`
+
+**輕微缺口（非阻擋）**：
+- 目前 v0.1 為人工執行 CLI，尚未自動化 pipeline
+- `kb.index.selector_gate` 為 skeleton，未納入 Step 2 執行列表
+- 戰報模板與 OPS_CYCLE JSON schema 對齊留 C1-P4
+
+**下一步**：
+- C1-P3：自動化 Pipeline CLI（將 Step 2 多個 CLI 包裝成單一 runner）
+- C1-P4：標準戰報模板與 OPS_CYCLE 對齊
+- C1-P5：CI 整合與 Nightly 健檢
+
+---
+
+## Wave 1–2 收口 · Governance / Observability / PR Smoke（W1-T1 / W1-T2 / W2-T1）+ Wave C / DEMO（C2-P1 / DEMO-1）
+
+**日期**：2026-06-07 · **票號**：W1-T1、W1-T2、W2-T1、C2-P1、DEMO-1 · **執行角色**：Scribe（依 ticket STATE / C_REPORT / D_REPORT 回寫）  
+**狀態依據**：`04_Workflows/tickets/W1-T1_state.md`（accepted）· `04_Workflows/tickets/W1-T2_state.md`（Reviewer 二輪 accepted）· `04_Workflows/tickets/W2-T1_state.md`（accepted_with_gaps）· `04_Workflows/tickets/C2-P1_state.md`（accepted_with_gaps）· `04_Workflows/tickets/DEMO-1_state.md`（accepted）· `artifacts/monitoring/pg_ingest_soak.latest.json` · `artifacts/control_plane/dispatch_plan.latest.md`
+
+> **未來實作票前置假設**：以下段落為下游票可安全依賴的驗收口徑與邊界裁決，非單純「done」標記。引用驗收門檻時請對齊 `docs/GOVERNANCE_ONBOARDING_v1.md`（W1-T1）· `docs/observability.md` §4.2.1（W1-T2）· `docs/testing.md` §5–§6（W2-T1）· `docs/PRODUCT_TABULAR_CLEANING.md`（C2-P1）。
+
+### Wave 1（W1-T1 · 治理入口收口與 OPS 一鍵自檢）
+
+**一句話**：新 Agent 可依 README Start Here 四鏈 + `docs/GOVERNANCE_ONBOARDING_v1.md` 完成接戰對齊；`python 04_Workflows/_ops_cycle.py checklist --mode full` 一鍵驗證 archive 步驟 + Wave 1 四檢（三鑰 smoke、routing policy、eval-gate 子集、DarkOps gate blocked 預期 pass）。Reviewer 二輪 **accepted**。
+
+**驗收命令**：`python 04_Workflows/_ops_cycle.py checklist --mode full` → exit 0；`wave1_readiness.ok: true`。樣本 schema：`artifacts/ops/checklist_full.sample.json`。
+
+**下游可假設**：接戰初始化有機器化自檢入口；`master_status`／`handoff` 自動寫回仍留 Wave 2（非本票範圍）。
+
+### Wave 1（W1-T2 · Monitoring PG Ingest 收口）
+
+**一句話**：live ask 流量後，**Langfuse traces → `sync_traces` → Postgres `task_runs`** 管線已接通；`04_Workflows/_phase5_pg_ingest_soak.py` n=20 cohort 經 Reviewer 獨立複驗（含 06:51 UTC 二次 cohort），**pg/langfuse 20/20 對齊**，解除 Wave 4A「API 200 但 PG 0 列」斷層。**不宣稱 production-ready**；`daily_cost_summary` 統一留 W1-T3。
+
+**關鍵指標**（權威 artifact：`artifacts/monitoring/pg_ingest_soak.latest.json`）：
+
+| 欄位 | 門檻（§4.2.1） | 實測 |
+|------|----------------|------|
+| `ingest_ok` | `true` | **true** |
+| `pg_task_runs_count` | ≥ 18（n=20） | **20** |
+| `langfuse_trace_count` | 同 cohort | **20** |
+| `gap_pg_vs_langfuse` | ≤ 2 | **0** |
+| integration test | ≥ 1 全綠 | `pytest tests/test_monitoring_ingest_integration.py` → **3 passed** |
+
+**驗收命令**（soak 複跑前提：gov_core venv python + runtime `GOV_CORE_MONITORING_INGEST_ENABLED=1`；`.env` 未寫入該鍵屬已知 ops 口徑）：
+
+```powershell
+python 04_Workflows/_phase5_pg_ingest_soak.py --n 20 --base-url http://127.0.0.1:8000 --pretty
+cd 01_Environments/python_venvs/gov_core_system
+python -m pytest tests/test_monitoring_ingest_integration.py -q
+```
+
+**Reviewer 已接受之邊界行為**（不構成阻塞；下游票勿將下列現象誤判為 regress）：
+
+1. **Langfuse HTTP 429**（observations/traces Public API rate limit）：soak 期間 stderr 可見多次 429，但 `ingest_sync.errors=[]`、最終 PG/Langfuse count 仍全量對齊 — **已知邊界，已由 Reviewer 接受**。
+2. **`jsonl_trace_end_count=0`**：ask 管線尚未寫入 `runtime/task_traces.jsonl`；JSONL 僅 Phase D **診斷源**。權威驗收口徑為 **Langfuse API → `sync_traces` → PG**；診斷源缺席但權威源完整 — **已由 Reviewer 接受**。
+
+**下游可假設**：W1-T2 前「ingest 斷層」已收口；新票若需 JSONL 診斷接線或 Langfuse `usage` metadata 補全，應**另開票**，勿重開 W1-T2。
+
+### Wave 2（W2-T1 · Core Agent Smoke PR 門禁）
+
+**一句話**：`.github/workflows/core-agent-smoke.yml` 已落地；PR 路徑 job **`Agent workflow smoke (PR tier)`**（workflow id `agent-smoke-pr`）執行 `python 04_Workflows/_core_agent_smoke.py --tier PR -v`，覆蓋 7 個 ROOT agent workflow 模組（含 AC 必達：`test_context_entry`、`test_eval_gate`、`test_hq_task_routing_smoke`）。本地 `--tier PR` 已驗：**exit 0、78 tests、`ok: true`**。失敗時產 `smoke_ci_summary.json`（含 `failed_modules[]`、`duration_ms`）並上傳 artifact（14 天）。
+
+**與其他 gate 分工**（詳見 `docs/testing.md` §5.1）：PR smoke ≠ Release 就緒 — 發版前仍須 W2-T4 Wave7 Tier-A；Dark / DARK_FULL 僅 `workflow_dispatch`，**非** PR 預設。
+
+**Branch protection（尚未啟用）**：state / CI log **無**「已設 required check」證據。建議後續由 **repo admin** 於 **Settings → Branches → Branch protection rules** 將 check 名 **`Agent workflow smoke (PR tier)`** 設為 required（與 `eval-gate-ci.yml` 並行）。**勿在戰報中宣稱 branch protection 已打開**，除非 ops 留痕確認。
+
+**Reviewer gap（accepted_with_gaps，不阻塞票面）**：尚無含本版 workflow 的**首次 PR 綠色 CI run** URL（`W2-T1_state.md` O_NOTES 仍占位）。merge 含 workflow 的 PR 後，ops／implementer 應將實際 Actions run URL 填入 ticket O_NOTES Run Log。
+
+**下游可假設**：PR tier smoke 契約與 docs 已對齊；新票可引用 `--tier PR` 模組清單與 exit code 表。首次 CI 實戰與 branch protection 為 **ops follow-up**，非 W2-T1 重開條件。
+
+### Wave C（C2-P1 · 一般表格清洗 Product Spec v1）
+
+**一句話**：新建 `docs/PRODUCT_TABULAR_CLEANING.md`（§1–§7 齊全）— Wave C 第二條對外產品線就緒（姊妹於 C1 AI workflow 健檢）。定義四類清洗（缺失／重複／異常／格式）、品質報告前後指標、Wave 6 CLEAN-BASIC ✅／ENRICH／OCR ❌ 誠實邊界。Reviewer **accepted_with_gaps**（無阻擋項）；§3.1 指標命名與 deliverable templates 逐欄對照留 C2-P2。
+
+**下游可假設**：表格清洗案可對齊本 spec 接案與驗收；C2-D1 可依賴 C2-P1 解除 dependency 阻塞。
+
+### DEMO（DEMO-1 · Multi-Chat ticket state 基礎設施）
+
+**一句話**：四角色 instruction 模板 + `04_Workflows/tickets/README.md` 直接讀寫流程就緒；本 DEMO 票展示 FRAME／STATE／B／C／D 完整範例。Reviewer **accepted**。後續真實票各角色只寫允許區塊，copy/paste 為備援。
+
+### Scribe TODO（建議，非阻塞）
+
+| 項 | 建議動作 | 依據 |
+|----|----------|------|
+| 首次 CI 綠 run URL | merge 後填 `W2-T1_state.md` O_NOTES `_TBD_` 列 | C_REPORT gap |
+| Branch protection | admin 啟用 required check `Agent workflow smoke (PR tier)` | W2-T1 Rollout / Ops Notes |
+| Langfuse `usage` 缺口 | 另開 metadata 補全票（soak message 有 `missing_field_summary`） | W1-T2 C_REPORT suggestions |
+| JSONL diagnostic 接線 | 另開 ask 管線票（不影響 §4.2.1 權威口徑） | W1-T2 accepted_boundary_notes |
+| archive_checklist 路徑 hygiene | 另開小票統一相對路徑輸出 | W1-T1 C_REPORT suggestions |
+| C2-P2 runbook | 詳化 §5 五步 + 指標命名對照 templates | C2-P1 D_REPORT follow-up |
+
+---
+
+## 最小接案 MVP · Wave 1–4 阶段判定（Orchestrator + Reviewer · 2026-06-08）
+
+**阶段一句话**：MVP 主链已完工，当前重点是为真实使用补护栏与轻量记忆，而非扩功能。
+
+**Progress 摘要（可粘贴 Wave 概览）**
+
+最小接案 MVP 已形成一条可复现的最短闭环：白名单低风险单表 CSV 经 `intake.json` → P2 eligibility gate → `--case-dir` 清洗 → delivery bundle，可用 `scripts/run_case_e2e_validation.py` 一键验收（DoD：`docs/MVP_CASE_E2E_DoD_v0.1.md`）。Wave 1 完成模块盘点与范围收口；Wave 2 落盘 `cases/` 结构、gate CLI、参数化 runner 与交付包；Wave 3 打通 E2E 与 `new_cleaning_case.py` 人工接案入口。`cases/demo_phase` 与 `cases/sampleco/2026-0001` 均已跑通全链：后者为首个真实样本实验——流程与 artifact 齐全，gate 判 `accepted`，但 Phase 专用 dedup/percent 规则对多行 milestone 导出表语义不稳（115 行 intake → 8 行 accepted，`qa_status=pass_with_warnings`），清洗质量仅勉强可用。Wave 4（轻量记忆与验收）仍为 **partial**：尚无「查历史案例 / 规则 / 模板 / 已知限制」的轻量索引，真实样本下的 schema 不匹配与低 output 比例仍可能静默通过 gate。后续规划应围绕护栏与记忆层，不新增 MVP 主链功能。
+
+**Wave 状态表**
+
+| Wave | 主题 | 状态 | 备注 |
+|------|------|------|------|
+| Wave 1 | 盘点与收口 | **done** | 八类模块 reuse 地图、in/out scope、Wave 2 P1–P4 缺口已列；Reviewer `accepted_with_minor_edits`（`W-MVP-W1-INVENTORY`） |
+| Wave 2 | 最小入口 | **done** | P1 case 结构 + intake SSOT、P2 gate CLI、P3 `--case-dir` runner、P4 bundle/signoff 均已实装并在 `demo_phase` 验证 |
+| Wave 3 | 执行闭环 | **done** | E2E 驱动 + DoD v0.1（`W-MVP-W3-E2E-VALIDATION` Reviewer accept）；Intake CLI（`new_cleaning_case.py`）可建案并可选 `--run-gate` |
+| Wave 4 | 轻量记忆与验收 | **partial** | MVP 主链验收口径已立，但轻量 case/规则记忆层空白；真实样本护栏未覆盖 schema 语义不匹配、低 accepted 比例仍 pass 等缺口 |
+
+**Wave 4 剩余 scope（高层，供子票引用）**
+
+- **轻量记忆层**：只读索引——可查历史案例目录、已用清洗规则、交付模板与已知限制（如 Phase demo 规则适用范围）；不建重型 RAG、不接 long-term agent memory。
+- **真实样本护栏**：gate/QA 须能识别 intake schema 与 runner 假设不一致、accepted_rows 占 intake 比例过低仍 `pass_with_warnings` 等情形，并强制 `review_needed` 或 blocked，而非静默放行。
+- **验收视角**：Wave 4 结束时，可对外 demo 一笔真实低风险小案（如经护栏修正后的 sampleco 类案），并能明确陈述「会做什么 / 不会做什么」（无 UI、无 prod 链、无 SLA）。
+
+**依据**：`W-MVP-W1`～`W-MVP-W3-*` ticket STATE/B_REPORT · `docs/MVP_CASE_E2E_DoD_v0.1.md` · `cases/sampleco/2026-0001/reports/report.json`（115→8 rows · `pass_with_warnings`）· `cases/README.md`
+
+---
+
+## 2026-06-10 · W1-T1B · 治理合約與禁區規則收斂
+
+W1-T1B（治理合約收斂）：`docs/governance-constitution-v1.md` active snapshot 就緒 — Agent 接戰可優先讀 §5 + 當次票 FRAME，免全 repo 掃描；母本未替換。Reviewer `accepted_with_gaps`，Q1–Q5 待確認項留後續票。
+
+---
+
+## 2026-06-10 · Wave 2 收口 · Intake Routing Catalog + Routing Eval（W2-T1 / W2-T2）
+
+- `[W2-T1-intake-routing-catalog] done` · 建立跨 family routing catalog（Tabular / Gov / product card / hq_routing）；新增 `docs/intake-routing-catalog-v1.md` + `routing/intake_routing_catalog_v1.yaml` + `tests/test_intake_routing_catalog.py`（10/10 OK）。Orchestrator accepted。
+- `[W2-T2-routing-eval] done` · 建立 routing eval 指南 + eval cases（Tabular demo_phase/sampleco + Gov eval + mainline regression）；新增 `docs/routing-eval-guide-v1.md` + `routing/routing_eval_cases_v1.yaml` + `tests/test_routing_eval_cases.py`（8/8 OK；與 T1 合計 18/18 OK）。Orchestrator accepted。
+- **索引**：`04_Workflows/WORKFLOW_INDEX.md` §1.5 已登錄 Intake / Routing Catalog 與 Routing Eval Guide & Cases 兩條。
+
+---
+
+## 2026-06-10 · Wave Dashboard · Tabular MVP Wave 1–3-TL 完成度總覽（Orchestrator）
+
+**權威索引**：`docs/WAVE_PROGRESS_DASHBOARD.md`（**≠** Observability `docs/WAVE1-3_HISTORY_STATUS.md`；**≠** 上文「最小接案 MVP · Wave 1–4」）
+
+| Wave | 狀態（原文） | 關鍵交付 |
+|------|----------------|----------|
+| Wave 1 | **done** — MVP 主鏈與治理 | `docs/governance-constitution-v1.md` · `docs/mvp-standard-trace-path.md` · `docs/mvp-mainline-regression.md` |
+| Wave 2 | **done** — Intake / Routing / Eval（W2-T1 + W2-T2-routing-eval） | `docs/intake-routing-catalog-v1.md` · `routing/intake_routing_catalog_v1.yaml` · `docs/routing-eval-guide-v1.md` · `routing/routing_eval_cases_v1.yaml` |
+| Wave 3-TL | **3/4 done** — T1–T3 `accepted_with_gaps`；**T4 not_started** | `docs/tabular-tool-catalog-v1.md` · `docs/tabular-tool-selector-spec.md` · `docs/tabular-tool-outbox-spec.md` |
+
+**Wave 1 一句話**：治理收斂視圖就緒；tabular MVP 標準 trace spec 與一鍵主鏈回歸（`demo_phase` + `sampleco/2026-0001`）已交付。
+
+**Wave 2 一句話**：跨 family routing catalog（規則索引）與 routing eval cases（事後對照卷）已交付；不實作 routing engine。
+
+**Wave 3-TL 一句話**：Catalog → Selector → Executor + Outbox 三件套已實作；outbox replay／Local UI（T4）尚未開票。
+
+**驗證**：見 Dashboard「驗證命令」— `run_mvp_mainline_regression.py` · `tests.test_intake_routing_catalog` + `tests.test_routing_eval_cases` · Tabular 三件套 unittest。
+
+---
+
+## 2026-06-11 · Toolchain Wave B（WB-T1–WB-T7）
+
+**日期**：2026-06-11 · **票號**：WB-T1–WB-T7 · **WB-T8**（review closure）· **執行角色**：Scribe（依 ticket STATE / C_REPORT / WB-T6 D_REPORT 回寫）
+
+**狀態依據**：`04_Workflows/tickets/WB-T1-tool-catalog-and-selector-contract-v1_state.md` ～ `WB-T7-phase6-toolchain-smoke-matrix-extension-v1_state.md`（Reviewer：**T1–T6 · T8 `accepted_with_gaps`** · **T7 `accepted`**）· `04_Workflows/tickets/WB-T8-toolchain-wave-b-review-and-progress-closure-v1_state.md`（Reviewer **`accepted_with_gaps`**）· `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/WAVE_B_TOOLCHAIN_EXECUTION_PLAN.md` · `docs/wave-b-toolchain-readme-v1.md`
+
+**一句話**：在 W3-TL / W9-T3 / W10–W12 既有實作之上，Toolchain Wave B 已交付跨軌 **contract SSOT**（catalog/selector · executor/sandbox · outbox_layer_v1 · toolchain_health_v1 · audit quickview spec · toolchain_smoke_matrix_v1）及 **WB-T6** 收口 readme／執行計劃／Dashboard 索引；語義均為 **plan_only / optional gate / investigation-only**，**不改** MVP 主鏈預設行為。Reviewer 批量驗收 **108/108 OK**（2026-06-11）；**WB-T8** closure handoff 已就緒。
+
+### 完成能力範圍（WB-T1–T7）
+
+| 票號 | Reviewer | 能力 | 交付 SSOT |
+|------|----------|------|-----------|
+| **WB-T1** | accepted_with_gaps | catalog/selector · 四軌 `tool_id` + `governed_by` · `plan_only` dict | `docs/tool-catalog-and-selector-contract-v1.md` |
+| **WB-T2** | accepted_with_gaps | executor/sandbox · 四級 `execution_mode` + allowlist 矩陣 | `docs/tool-executor-and-sandbox-safety-contract-v1.md` |
+| **WB-T3** | accepted_with_gaps | outbox_layer_v1 · 六命名空間 · feedback · case history join | `docs/outbox-and-feedback-layer-contract-v1.md` · `docs/schemas/outbox_layer_v1.json` |
+| **WB-T4** | accepted_with_gaps | toolchain_health_v1 · 離線健康摘要 · optional gate | `docs/toolchain-health-dashboard-v1.md` · `scripts/run_toolchain_health_dashboard.py` |
+| **WB-T5** | accepted_with_gaps | audit quickview spec · `sections[]` / `timeline[]` / `gaps[]` | `docs/audit-quickview-and-case-history-spec-v1.md` |
+| **WB-T6** | accepted_with_gaps | 收口 readme + 執行計劃 + Phase% 索引 + Wave C 依賴表 | `docs/wave-b-toolchain-readme-v1.md` · `docs/WAVE_B_TOOLCHAIN_EXECUTION_PLAN.md` |
+| **WB-T7** | **accepted** | toolchain_smoke_matrix_v1 · P6 附錄 A | `routing/toolchain_smoke_matrix_v1.yaml` |
+
+**WB-T8**（`toolchain-wave-b-review-and-progress-closure-v1`）：closure handoff 已交付（逐票檢查表 · Wave C 邊界 · P0/P1/P2 補動作 · Reviewer/Scribe/Orchestrator 收尾步驟）— Reviewer **`accepted_with_gaps`**。
+
+### Phase 完成度（本輪目標區間 · SSOT）
+
+**權威索引**：`docs/WAVE_PROGRESS_DASHBOARD.md`（Phase% **唯一 SSOT**；readme／執行計劃僅引用）。
+
+| Phase | 基線 → **本輪目標** | 主要票 |
+|-------|---------------------|--------|
+| **P8.5** 底層 Runbook 索引 | 55% → **72%** | WB-T6 |
+| **P8.6** Tool Catalog SSOT | 65% → **85%** | WB-T1 |
+| **P8.7** Selector 推薦契約 | 60% → **85%** | WB-T1 |
+| **P8.8** Executor / Sandbox | 58% → **82%** | WB-T2 |
+| **P8.9** Outbox / Feedback | 40% → **80%** | WB-T3 · WB-T5 |
+| **P5** Dashboard / 離線健康度 | 70% → **85%** | WB-T4 · WB-T5 |
+| **P6** 測試觀測面 extension | 84% → **88%** | WB-T7 · WB-T4 · WA-T6 |
+
+### 驗證命令
+
+```bash
+python -m unittest tests.test_tool_catalog_and_selector_contract_v1 \
+  tests.test_tool_executor_and_sandbox_contract_v1 \
+  tests.test_outbox_and_feedback_layer_contract_v1 \
+  tests.test_toolchain_health_dashboard_v1 \
+  tests.test_audit_quickview_and_case_history_spec_v1 \
+  tests.test_phase6_toolchain_smoke_matrix_v1 -v
+python scripts/run_toolchain_health_dashboard.py --format json --dry-run
+python scripts/run_agent_audit_quickview.py --case-ref demo_phase --format json
+```
+
+### Wave C 可引用邊界（`WAVE_B_TOOLCHAIN_EXECUTION_PLAN.md` §5 · `wave-b-toolchain-readme-v1.md`）
+
+**可假設（contract 已交付 · Reviewer 已关票）**：四軌 `tool_id`／`governed_by`；Selector `plan_only` 之 `candidate_tools[]`／`planned_tools[]`；四級 `execution_mode` 與 case allowlist；戰車根 `outbox/` 六命名空間與 `schema_id`；`toolchain_health_v1` 離線聚合；Audit quickview 形狀；`toolchain_smoke_matrix_v1.yaml` 之 tier／`gate_class`／`blocks_mainline`；trace 建議鍵 `case_ref` + `task_type` + `selector_rule_id`。
+
+**禁止假設（除非另票）**：Selector 已接 prod blocking INT／delivery gate；Tabular E2E 預設驅動 selector；Non-Tabular stub 已接 heavy processor；Toolchain dashboard 為 PR required check 或 SLA 欄位；`orchestration_bridge_outbox` 與戰車根 outbox 已合併 replay；P6 smoke matrix 已有 mandatory CI runner。**Wave C 入口**：`docs/WAVE_C_EXECUTION_PLAN.md` — Observability（`obs.*`／`kb.*`）與 Toolchain **分軌**。
+
+**下一步（P0）**：Scribe 完善各票 D_REPORT；Orchestrator 將 WB-T1–T8 `overall_status` → `done` 并补 WB-T8 索引（README／执行计划／WORKFLOW_INDEX）。
+
+---
+
+## 2026-06-11 · Toolchain Wave B（WB-T1–WB-T7）
+
+Toolchain Wave B 已在既有 W3-TL / W9-T3 / W10–W12 實作之上，交付工具鏈 contract SSOT（catalog/selector · executor/sandbox · outbox_layer_v1 · toolchain_health_v1 · audit quickview spec · toolchain_smoke_matrix_v1）與 Wave B readme / execution plan / Dashboard 索引，語義均維持 plan_only / optional gate / investigation-only，不改 MVP 主鏈行為。Phase P8.5 / P8.6–8.9 / P5 / P6 進度已依 docs/WAVE_PROGRESS_DASHBOARD.md 達成本輪目標，Wave C 可直接依 WAVE_B_TOOLCHAIN_EXECUTION_PLAN.md §5 與 wave-b-toolchain-readme-v1.md 所列可假設能力啟動後續工作，WB-T8 作為 closure handoff 票待 Reviewer/Scribe 收口。
+
+---
+
+## 2026-06-11 · WC-PRE-01 · Wave B doc hygiene + Wave C PRE 启动
+
+Toolchain Wave B（WB-T1–T8）文档与票务 hygiene 已由 **WC-PRE-01** 收口：各票 D_REPORT 补齐、Dashboard Wave A/Toolchain 分栏与执行计划 §1 索引对齐。Wave C 前置票 **WC-PRE-01～07** 已建档（PRE-02～07 为 draft）；contract/impl gap 后续由 PRE-02～07 承接，不阻塞 Wave C C1 契约层引用。
+
+---
+
+## 2026-06-12 · WC-PRE-01～05 · Reviewer 关票 · Wave C 前置能力就绪
+
+**WC-PRE-01～05** 已由 Reviewer 验收关票（01/02/03 **accepted**；04/05 **accepted_with_gaps**），可作 Wave C 前置能力基础：selector 显式 `plan_only`、executor subprocess 600s timeout、audit investigation view CLI、toolchain smoke matrix 本地 runner。**WC-PRE-06/07** 仍为治理与 CI 升级提案／设计路径，未改任何 CI required 或 SLA。Wave C 票务可以开始依赖 Wave B / WC-PRE 已交付能力，但**不得**假设 PROD gate / `OG-TOOLCHAIN-HEALTH` / mandatory smoke CI 已经开启。
+
+---
+
+## 2026-06-11 · Wave C · WC-C1-01 toolchain local gaps quickview
+
+**票號**：WC-C1-01 · **Phase**：Wave C C1 核心票 · **Reviewer**：**accepted_with_gaps**（owner: orchestrator）
+
+- **交付**：`scripts/run_toolchain_local_gaps_quickview.py` · `docs/toolchain-local-gaps-quickview-v1.md` · `tests/test_toolchain_local_gaps_quickview_v1.py`（17/17 OK）。
+- **能力**：本地 only、只讀 gaps 聚合（selector `plan_only` · executor timeout 契約 · audit investigation · smoke matrix dry-run）；可選 `--include-health-dashboard` 嵌入 WB-T4 摘要；頂層 `gate_class=optional` · `blocks_mainline=false`。
+- **用途**：開票前或除錯時，`python scripts/run_toolchain_local_gaps_quickview.py --format json [--case-ref demo_phase] [--include-health-dashboard]` 快速盤點 toolchain gaps；聚合 WC-PRE-02～05 與 WB-T4 只讀入口。
+- **邊界**：**不得**當 PR required / CI gate；`OG-TOOLCHAIN-HEALTH` required 與 mandatory smoke CI 仍 **blocked** 於 WC-PRE-06/07 批文後治理票。非 blocking gaps：`--include-health-dashboard` 有實作路徑但缺 live import 整合測；`--write` artifact 路徑未完全覆蓋。
+- **索引**：`04_Workflows/tickets/README.md` §Wave C C1 · `04_Workflows/WORKFLOW_INDEX.md` §1.27。
+
+---
+
+---
+
+## 2026-06-14 · 多 Lane 收口（Lane A/B/C/D · Orchestrator + Scribe · 本輪增量）
+
+**狀態依據**：各 lane `*_state.md` B/C/D_REPORT · 本輪 unittest smoke（2026-06-14 实跑）· **未**脑补 CI gate / 批文 / PR policy。
+
+**一句話**：四 lane **implemented + tested** 为主，但 **非 full done**——W4-MEM-01 / WC-T1-INTEGRATION 仍 **Reviewer pending**；Lane B L2 / mandatory smoke CI 与 Lane A 护栏升格仍 **blocked_on_approval** 或 **design draft only**。
+
+| Lane | 票 / 能力 | 實作 | 測試 | Review / Approval | 未完成 |
+|------|-----------|------|------|-------------------|--------|
+| **A** | W4-MEM-01 | done | **10/10 OK** | **Reviewer pending** | Reviewer 關票 |
+| **A** | W4-GUARD-01 | **design draft only** | n/a | **blocked_on_approval** | IMPL 待批文；**非** gate 已升格 |
+| **B** | WC-IMPL-L1 | done | **17/17 OK** · exit 0 non-blocking | **accepted** | — |
+| **B** | WC-IMPL-L2 · SMOKE-CI-L1 · PRE-06/07 | **FRAME / design only** | n/a | **blocked_on_approval** | **非** mandatory smoke CI 已開 |
+| **C** | T1–T4 · T3 · SMOKE nightly | done | 含于 **62/62 OK** | done / accepted | — |
+| **C** | WC-T1-INTEGRATION | done | 含于 **62/62 OK** | **Reviewer pending** | Reviewer 關票 |
+| **C** | T5 · T6 · T7 | done | 含于 **62/62 OK** | accepted · **accepted_with_gaps** | v2 path_id · reports fixture |
+| **C** | E2E / nightly | 脚本可跑 | **optional · non-gating** | n/a | **≠ INT Tier-A** |
+| **D** | W3-TL-T4 + replay | done | **22/22 OK** | **accepted_with_gaps** | Local UI / Langfuse / re-execute **out of scope** |
+
+**本輪 smoke 命令与结果**
+
+```bash
+python -m unittest tests.test_lookup_case_history tests.test_build_cases_index -v          # Lane A · 10 OK
+python -m unittest tests.test_toolchain_governance_snapshot_v1 -v                        # Lane B · 17 OK
+python -m unittest tests.test_ticket_eligibility tests.test_dispatch_cards tests.test_ticket_comms tests.test_order_ledger tests.test_wc_t5_automation_coverage_contract_v1 tests.test_distill_control_plane_skills_lite tests.test_run_wc_m2_e2e_walkthrough -v  # Lane C · 62 OK
+python -m unittest tests.test_tabular_outbox_consumer tests.test_build_tabular_outbox_replay_report -v  # Lane D · 22 OK
+```
+
+**索引更新（doc-only）**：`docs/WAVE_PROGRESS_DASHBOARD.md` 分票四欄收口表 · `docs/wave_c/overview.md` v0.3 · `04_Workflows/tickets/README.md` Lane A / WC-T 索引。
+
+**下一步優先（索引）**：① W4-MEM-01 Reviewer ② WC-T1-INTEGRATION Reviewer ③ WC-T6-v2 / WC-T7-v2 gaps ④ approval 後 governance / guard 升格项。

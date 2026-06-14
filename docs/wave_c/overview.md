@@ -1,9 +1,10 @@
 # Wave C 总览 — 进度跟踪与沟通索引
 
-> **成文日期**：2026-06-13  
+> **成文日期**：2026-06-13（**v0.3 · 2026-06-14** 多 lane 收口同步）  
 > **角色**：Orchestrator / 文档工程师进度索引（doc-only）  
 > **SSOT**：票级细节见 `04_Workflows/tickets/*_state.md`；Toolchain 能力边界见 `docs/wave-b-toolchain-readme-v1.md` §Wave C 可假设能力  
-> **机器可读状态**：见文末 `WAVE_C_TICKET_REGISTRY` 注释块（脚本可 grep / 替换 `status=` 字段）
+> **机器可读状态**：见文末 `WAVE_C_TICKET_REGISTRY` 注释块（脚本可 grep / 替换 `status=` 字段）  
+> **多 lane 索引**：Lane B/C 收口表见 `docs/WAVE_PROGRESS_DASHBOARD.md` §多 Lane 本輪收口
 
 ---
 
@@ -32,25 +33,26 @@ Wave C 在 Wave B Toolchain（WB-T1–T8）与 Observability 产品基线（C1 A
 | **M2** | 智能接单与订单 | WC-T1～T4 · WC-IMPL-L1 · dispatch_executor 栈 | eligibility / comms / dispatch cards / order intake 可本地跑通；Multi-Chat handoff 可脚本化；governance snapshot L1 advisory 落地 |
 | **M3** | 治理升格与 Wave C 收口 | WC-PRE-06/07 L2 批文后 · WC-T5～T7 · C1-P3+ | 自动化覆盖率契约；skill distillation lite；E2E walkthrough + INT gate 对齐；可选 L2 health/smoke gate |
 
-### M2 达成情况（2026-06-13）
+### M2 达成情况（2026-06-14）
 
 | 状态 | 票号 | 交付物摘要 |
 |------|------|------------|
-| **已达成** | **WC-T1** | `ticket_eligibility` + CLI；dispatch cards eligibility gate（WC-T1-INTEGRATION） |
+| **已达成** | **WC-T1** | `ticket_eligibility` + CLI；dispatch cards eligibility gate（**WC-T1-INTEGRATION** · implementer done · Reviewer pending） |
 | **已达成** | **WC-T2** | STATE 变更 comms payload + file-log sender + `run_ticket_state_update_with_comms.py` |
+| **已达成** | **WC-T3** | Dispatch cards MVP（**W-next-DISPATCH-CARDS-MVP** · done · accepted） |
 | **已达成** | **WC-T4** | Order/job intake v0.1 · `run_order_intake.py` · JSONL ledger |
 | **已达成** | **WC-IMPL-L1** | Governance snapshot L1 advisory（MissingSignalRules · non-blocking exit 0） |
-| **进行中** | **WC-T3** | Dispatch cards MVP（`W-next-DISPATCH-CARDS-MVP` · 待 Reviewer 关票） |
+| **已达成** | **WC-SMOKE-M2-NIGHTLY** | `run_wave_c_nightly_smoke.sh` · overview §Nightly smoke（**optional** 本地晚间扫） |
 
-**M2 尾项**：WC-T3 关票后 M2 主体可宣告收口；M2 E2E 验收见 [`WC_T7_e2e_walkthrough_runbook.md`](WC_T7_e2e_walkthrough_runbook.md)（Control Plane 链 · **≠** INT Tier-A）。
+**M2 主体**：已收口；M2 E2E 验收见 [`WC_T7_e2e_walkthrough_runbook.md`](WC_T7_e2e_walkthrough_runbook.md)（Control Plane 链 · **≠** INT Tier-A）。
 
 ### M3 范围（留给 T5–T7 + L2）
 
 | 分轨 | 票号 | 主题 |
 |------|------|------|
-| Control Plane 契约 | **WC-T5** | 自动化覆盖率 / 风险边界契约（哪些路径 auto vs HITL vs forbidden）；**T5 交付**：`WC_T5_automation_coverage_contract.md` + `test_wc_t5_automation_coverage_contract_v1.py` |
-| Control Plane 学习 | **WC-T6** | Skill distillation / learning lite（从 ticket handoff 提炼可复用 skill 片段）— **v0.1 骨架进行中**（`distill_control_plane_skills_lite.py` + fixture unittest） |
-| 集成与收口 | **WC-T7** | E2E walkthrough 制度化 + INT gate 边界对齐 → [`WC_T7_e2e_walkthrough_runbook.md`](WC_T7_e2e_walkthrough_runbook.md) |
+| Control Plane 契约 | **WC-T5** | 自动化覆盖率 / 风险边界契约 — **done · accepted** · `WC_T5_automation_coverage_contract.md` + `test_wc_t5_automation_coverage_contract_v1.py` |
+| Control Plane 学习 | **WC-T6** | Skill distillation lite — **done · accepted_with_gaps** · `distill_control_plane_skills_lite.py` + fixture unittest |
+| 集成与收口 | **WC-T7** | E2E walkthrough + INT gate 对齐 — **done · accepted_with_gaps** · `WC_T7_e2e_walkthrough_runbook.md` + `run_wc_m2_e2e_walkthrough.py` |
 | 治理升格（批文门控） | **WC-PRE-06 L2** · **WC-PRE-07 L2** · **WC-IMPL-L2**（若另开） | PR required health/smoke gate；**须**尚書省 `approval_status=approved` |
 | Observability 产品 | **C1-P3+** | C1 诊断 pipeline / 产品交付包（与 WC-T 分轨，不 merge 票号） |
 
@@ -109,13 +111,15 @@ python -m unittest tests.test_toolchain_local_gaps_quickview_v1 -v
 |------|----------|------|--------|
 | **WC-T1** | Ticket eligibility：基于 `*_state.md` 判断 implementer/reviewer/scribe 是否可接单 | Done | TBD |
 | **WC-T2** | Minimal ticket comms：STATE 变更时生成结构化通讯 payload + file-log sender | Done | TBD |
-| **WC-T3** | Dispatch cards：由 dispatch plan 自动生成 Multi-Chat `*.cursor.md` 指令卡 | In Progress | TBD |
+| **WC-T3** | Dispatch cards：由 dispatch plan 自动生成 Multi-Chat `*.cursor.md` 指令卡 | Done | TBD |
 | **WC-T4** | Order / job intake model：外部请求 → ticket/job 结构化记录与只读 intake CLI | Done | TBD |
-| **WC-T5** | 自动化覆盖率 / 风险边界契约：Control Plane 路径 auto·HITL·forbidden 矩阵 + 可验证断言 | In Progress | TBD |
-| **WC-T6** | Skill distillation / learning lite：从 dispatch·comms·STATE handoff 提炼可复用 skill 片段 | In Progress | TBD |
-| **WC-T7** | E2E walkthrough 制度化 + INT gate 边界对齐（M2 链 × Tier-A 契约 cross-ref） | In Progress | TBD |
+| **WC-T5** | 自动化覆盖率 / 风险边界契约：Control Plane 路径 auto·HITL·forbidden 矩阵 + 可验证断言 | Done | TBD |
+| **WC-T6** | Skill distillation / learning lite：从 dispatch·comms·STATE handoff 提炼可复用 skill 片段 | Done · accepted_with_gaps | TBD |
+| **WC-T7** | E2E walkthrough 制度化 + INT gate 边界对齐（M2 链 × Tier-A 契约 cross-ref） | Done · accepted_with_gaps | TBD |
+| **WC-SMOKE-M2-NIGHTLY** | 本地晚间 smoke 脚本收编（WC-DEMO-1 · artifacts/e2e） | Done | TBD |
+| **WC-T1-INTEGRATION** | eligibility 接入 dispatch cards 首入口（`--eligibility-gate`） | In Progress · Reviewer pending | TBD |
 
-**快速验证（T1/T2/T4 已交付 · T3 代码已存在待关票）**
+**快速验证（M2/M3 已交付项）**
 
 ```bash
 python scripts/run_ticket_eligibility.py --ticket W1-T2 --requested-role reviewer --format json
@@ -137,13 +141,13 @@ python -m unittest tests.test_distill_control_plane_skills_lite -v
 
 **文档**：`docs/wave_c/WC_T1_eligibility.md` · `docs/wave_c/WC_T2_comms_minimal.md` · `docs/wave_c/WC_T4_order_ledger_design.md` · `docs/wave_c/WC_T5_automation_coverage_contract.md` · `docs/wave_c/WC_T6_skill_distillation_lite.md` · `docs/wave_c/WC_T7_e2e_walkthrough_runbook.md` · `docs/control_plane_dispatch_executor.md`
 
-**WC-T5 快速验证（In Progress）**
+**WC-T5 快速验证**
 
 ```bash
 python -m unittest tests.test_wc_t5_automation_coverage_contract_v1 -v
 ```
 
-> **注**：WC-T3 实现对应 `W-next-DISPATCH-CARDS-MVP`（`04_Workflows/_dispatch_cards.py`）；票 state 仍为 `draft`，本总览标 **In Progress** 直至 Reviewer 关票。WC-T4 v0.1 最小路径已实装（真实 ticket state → order/ledger）；Outbox / REST / 支付等 deferred 见设计稿 §10。WC-T5 契约文档 + coverage 测试已落盘；WC-T7 runbook v0.1 + 可选 runner `scripts/run_wc_m2_e2e_walkthrough.py` 已落盘（`04_Workflows/tickets/WC-T7_state.md`）。
+> **注**：WC-T3 实现对应 `W-next-DISPATCH-CARDS-MVP`（`04_Workflows/_dispatch_cards.py`）；**已 Reviewer 关票**。WC-T1-INTEGRATION 实现 eligibility gate（implementer done · Reviewer pending）。WC-T4 v0.1 最小路径已实装；Outbox / REST / 支付等 deferred 见设计稿 §10。WC-T5 **accepted**；WC-T6/T7 **accepted_with_gaps**（v2 跟进 path_id · reports fixture）。
 
 ---
 
@@ -164,11 +168,13 @@ python -m unittest tests.test_wc_t5_automation_coverage_contract_v1 -v
 <!-- ticket:WC-C1-01 status=Done owner=TBD milestone=M1 -->
 <!-- ticket:WC-T1 status=Done owner=TBD milestone=M2 -->
 <!-- ticket:WC-T2 status=Done owner=TBD milestone=M2 -->
-<!-- ticket:WC-T3 status=In Progress owner=TBD milestone=M2 -->
+<!-- ticket:WC-T3 status=Done owner=TBD milestone=M2 -->
 <!-- ticket:WC-T4 status=Done owner=TBD milestone=M2 -->
-<!-- ticket:WC-T5 status=In Progress owner=TBD milestone=M3 -->
-<!-- ticket:WC-T6 status=In Progress owner=TBD milestone=M3 -->
-<!-- ticket:WC-T7 status=In Progress owner=TBD milestone=M3 -->
+<!-- ticket:WC-T5 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-T6 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-T7 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-SMOKE-M2-NIGHTLY status=Done owner=TBD milestone=M2 -->
+<!-- ticket:WC-T1-INTEGRATION status=In Progress owner=TBD milestone=M2 -->
 
 ---
 
@@ -206,14 +212,30 @@ bash scripts/run_wave_c_nightly_smoke.sh
 ---
 
 ## Wave C M3 self-check (T5/T6/T7)
-> **性质**：2026-06-13 M3 自检快照（实现 vs FRAME）；非 merge gate。细节见各票 `*_state.md` 与 FRAME 契约。
+> **性质**：2026-06-14 多 lane 收口快照；非 merge gate。细节见各票 `*_state.md`。  
+> **摘要**：M3 契约骨架 **implemented + tested**，但 T6/T7 为 **accepted_with_gaps**——v2 须补 path_id 全映射、reports fixture、runbook path_id 附录；**不是** full M3 done。
 
-- **WC-T5**：契约文档 + 14 路径 JSON 附录 + 结构契约测试已齐，AC 主体满足；待补 T6 `cp.*`↔`wc.m2.*` 映射、verification 真跑 smoke、Reviewer 关票。
-- **WC-T6**：distill CLI + fixture + unittest 已绿，设计稿示例完备；待补 state B_REPORT、reports fixture/`--reports-dir` 测试、与 T5 正式 path_id 对齐。
-- **WC-T7**：runbook + INT 对齐 + runner 骨架已落盘，overview M2 已收口；待补 `WC-DEMO-1` 模板票、runner unittest、dry-run 零写盘与 T5 path_id 映射。
+- **WC-T5**：**done · accepted** — 契约文档 + `wc_t5_paths_v0.1` JSON 附录 + 结构契约测试已齐；deferred：T6/T7 完整 path_id 映射表写入 runbook。
+- **WC-T6**：**done · accepted_with_gaps** — distill CLI + cards/comms fixture + 4 tests OK；deferred：reports fixture · `--reports-dir` unittest · T5 全量 canonical 映射（**WC-T6-v2**）。
+- **WC-T7**：**done · accepted_with_gaps** — runbook + INT 对齐 + runner dry-run UT + `WC-DEMO-1` fixture；deferred：runbook T5 path_id 附录 · `--execute` 全自动 STATE（forbidden · HITL）（**WC-T7-v2**）。
+- **WC-T1-INTEGRATION**：**implementer done · Reviewer pending** — eligibility gate 已接入 dispatch cards；**非** M2 全关。
+
+## Wave C Phase 2 · Lane B Governance（2026-06-14 快照）
+
+> **诚实边界**：Phase 2 Governance **目前仅 L1 advisory 已落地**（implemented + tested + Reviewer accepted）。L2 selective mandatory 与 mandatory smoke CI **尚未升格**——相关票均为 FRAME / design draft · **blocked_on_approval**；**不得**假设 PR required 或 branch protection 已改。
+
+| 票号 | 状态 | 交付 / 边界 |
+|------|------|-------------|
+| **WC-IMPL-L1** | **done · implemented · accepted** | L1 advisory · MissingSignalRules v1 · **CI 仍 non-blocking exit 0** |
+| **WC-IMPL-L2** | **frame_frozen_pending_governance** | L2 hard assert **设计稿 only** · 未改 branch protection |
+| **WC-IMPL-SMOKE-CI-L1** | **frame_ready · blocked_on_approval** | optional_ci smoke step 提案 · CH-32～34 |
+| **WC-PRE-06** | **design_ready · pending_approval** | `toolchain-observability-governance-upgrade-v1.md` |
+| **WC-PRE-07** | **design_draft · blocked_on_approval** | smoke mandatory CI 设计稿 · 无批文不得改 PR required |
+
+**观察期**：L1 自 2026-06-13 起算（见 `WC-IMPL-L1` D_REPORT）；L2 升格须 G1–G8 + 尚書省 `approval_status.L2=approved`。
 
 ## Wave C Phase 1 completion (Control Plane M2 + Governance v0.1)
-> **宣告日**：2026-06-XX（宣告时替换为实际日期）  
+> **宣告日**：2026-06-14  
 > **性质**：Wave C Control Plane Phase 1 里程碑宣告；票级 SSOT 仍以 `04_Workflows/tickets/*_state.md` 为准。
 
 ### 范围（本阶段已交付）
@@ -225,9 +247,10 @@ bash scripts/run_wave_c_nightly_smoke.sh
 | **运营工具** | 本地 nightly smoke（`WC-DEMO-1` · 隔离 `artifacts/e2e/`） | `scripts/run_wave_c_nightly_smoke.sh` · overview 本页 §Nightly smoke |
 
 ### 状态（宣告日快照）
-- Phase 1 视为完成：Control Plane M2 主链 + governance snapshot L1 advisory + T5/T6/T7 文档与脚本骨架已可重复验证。
-- 关键实现票（T1/T2/T3/T4、WC-IMPL-L1、WC-T5/T6/T7、WC-SMOKE-M2-NIGHTLY）由 Reviewer 评为 `accepted` 或 `accepted_with_gaps`，gaps 保留在各票 C_REPORT。
-- L2 selective mandatory：WC-PRE-06/07 与 WC-IMPL-L2 FRAME 已冻结，处于 L1→L2 观察期；未改任何 PR required / mandatory CI。
+- Phase 1 视为完成：**implemented + tested** 可重复验证（M2 主链 + L1 advisory + T5/T6/T7 骨架）。
+- **不是 full done**：W4-MEM-01 / WC-T1-INTEGRATION 仍 **Reviewer pending**；T6/T7 **accepted_with_gaps**；L2 / guard 升格 **blocked_on_approval**。
+- 关键实现票（T1/T2/T3/T4、WC-IMPL-L1、WC-T5/T6/T7、WC-SMOKE-M2-NIGHTLY）Reviewer 结论为 `accepted` 或 `accepted_with_gaps`，gaps 保留在各票 C_REPORT。
+- L2 selective mandatory：WC-PRE-06/07 与 WC-IMPL-L2 FRAME 已冻结，处于 L1→L2 观察期；**未**改任何 PR required / mandatory CI。
 
 ### 本阶段不含
 - L2 merge gate（OG-TOOLCHAIN-HEALTH PR required · smoke 白名单 mandatory CI）。
@@ -235,14 +258,14 @@ bash scripts/run_wave_c_nightly_smoke.sh
 - Observability 产品轨 C1-P3+（与 WC-T 分轨，票号不合并）。
 - 自动写 live `*_state.md`、自动开 Cursor chat、无 HITL 关票。
 
-### 下一步（Phase 2 起点）
-- 按各票 C_REPORT 补完 gaps（T5↔T6 path_id 映射、T6 reports fixture、T7 runner unittest 等）。
+### 下一步（Phase 2 · 本轮回档后）
+- **必做**：WC-T1-INTEGRATION Reviewer 关票；T6-v2 / T7-v2 gaps（path_id · reports fixture）。
+- **blocked_on_approval**：WC-PRE-06/07 L2 · WC-IMPL-L2 · WC-IMPL-SMOKE-CI-L1。
 - 观察期内仅本地/nightly 验证，仍保持 optional / non-gating。
-- L2 升格通过 WC-PRE-06/07 rollout + 尚書省批文，Observability 继续走 C1-P3+ 票。
-- Scribe 在 Progress 末尾追加 Phase 1 snapshot，并保持本页 registry 与票状态同步。
+- Lane A（最小接案 MVP Wave 4）：W4-MEM-01 Reviewer · W4-GUARD-01-IMPL（批文后）— 见 `docs/WAVE_PROGRESS_DASHBOARD.md` 多 Lane 收口表。
 
-### Wave C 运营期工作模式（Phase 1 宣告后草案）
-> 生效自 2026-06-XX（宣告时替换为实际日期）  
+### Wave C 运营期工作模式（Phase 1 宣告后）
+> 生效自 2026-06-14  
 > 默认语义：本地 optional · non-blocking · investigation-only；E2E / nightly 不接 PR required。
 
 #### 频率
@@ -285,10 +308,12 @@ bash scripts/run_wave_c_nightly_smoke.sh
 
 | 分轨 | 已完成 | 进行中 | 待办 | 合计 |
 |------|--------|--------|------|------|
-| WC-PRE / IMPL | 7 | 1 | 0 | 8 |
+| WC-PRE / IMPL | 8 | 0 | 0 | 8 |
 | WC-C1 | 1 | 0 | 0 | 1 |
-| WC-T | 3 | 2 | 2 | 7 |
-| **合计** | **11** | **3** | **2** | **16** |
+| WC-T + SMOKE + INTEGRATION | 8 | 1 | 0 | 9 |
+| **合计** | **17** | **1** | **0** | **18** |
+
+> **进行中**：WC-T1-INTEGRATION（Reviewer pending）。**blocked_on_approval**（不计入待办实施）：WC-PRE-06 L2 · WC-IMPL-L2 · WC-IMPL-SMOKE-CI-L1。
 
 ---
 
@@ -335,12 +360,14 @@ bash scripts/run_wave_c_nightly_smoke.sh
 <!-- ticket:WC-C1-01 status=Done owner=TBD milestone=M1 -->
 <!-- ticket:WC-T1 status=Done owner=TBD milestone=M2 -->
 <!-- ticket:WC-T2 status=Done owner=TBD milestone=M2 -->
-<!-- ticket:WC-T3 status=In Progress owner=TBD milestone=M2 -->
+<!-- ticket:WC-T3 status=Done owner=TBD milestone=M2 -->
 <!-- ticket:WC-T4 status=Done owner=TBD milestone=M2 -->
-<!-- ticket:WC-T5 status=In Progress owner=TBD milestone=M3 -->
-<!-- ticket:WC-T6 status=In Progress owner=TBD milestone=M3 -->
-<!-- ticket:WC-T7 status=In Progress owner=TBD milestone=M3 -->
+<!-- ticket:WC-T5 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-T6 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-T7 status=Done owner=TBD milestone=M3 -->
+<!-- ticket:WC-SMOKE-M2-NIGHTLY status=Done owner=TBD milestone=M2 -->
+<!-- ticket:WC-T1-INTEGRATION status=In Progress owner=TBD milestone=M2 -->
 
 ---
 
-*Wave C Overview · v0.2 · 2026-06-13 · doc-only · 状态以 registry 与 `*_state.md` 交叉校验*
+*Wave C Overview · v0.3 · 2026-06-14 · doc-only · 状态以 registry 与 `*_state.md` 交叉校验*

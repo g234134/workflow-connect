@@ -90,11 +90,11 @@
 
 ## C_REPORT
 
-- conclusion: <!-- pending -->
-- blocking_issues: <!-- 无 -->
-- checks_summary: <!-- 对照 FRAME AC-1～AC-6 -->
-- risk_level: <!-- low | medium | high -->
-- suggestions: <!-- 无 -->
+- conclusion: **pending** · Reviewer 关票前置
+- blocking_issues: 无（implementer 侧）
+- checks_summary: <!-- 2026-06-14 多 lane 收口：implementer done · unittest 21/21 OK（dispatch_cards + ticket_eligibility）；待对照 AC-1～AC-6 -->
+- risk_level: low
+- suggestions: AC-6 `control_plane_dispatch_executor.md` 文档可 Scribe 或 follow-up
 
 ---
 

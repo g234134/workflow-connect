@@ -737,9 +737,15 @@ def write_toolchain_governance_snapshot_artifacts(
         format_toolchain_governance_snapshot_markdown(payload),
         encoding="utf-8",
     )
+    log_path = output_dir / "governance_advisory.log"
+    log_path.write_text(
+        "\n".join(format_ci_log_summary_lines(payload)) + "\n",
+        encoding="utf-8",
+    )
     return {
         "json": _rel_path(json_path, repo_root),
         "markdown": _rel_path(md_path, repo_root),
+        "advisory_log": _rel_path(log_path, repo_root),
     }
 
 
@@ -753,37 +759,56 @@ def print_github_advisory_annotations(findings: List[Dict[str, Any]]) -> None:
         print(f"::warning title={code}::{message}")
 
 
-def print_ci_log_summary(payload: Dict[str, Any]) -> None:
+def format_ci_log_summary_lines(payload: Dict[str, Any]) -> List[str]:
+    """Plain-text CI log lines (L0 snapshot trailer + L1 advisory block)."""
     paths = payload.get("output_paths") or {}
     coverage = payload.get("coverage") or {}
     health = payload.get("toolchain_health_embed") or {}
     errors = payload.get("recent_errors") or []
     findings = payload.get("advisory_findings") or []
     advisory_level = payload.get("advisory_level", "none")
-    print("=== Toolchain governance snapshot (non-blocking · WC-PRE-06/07 L0) ===")
-    print(f"ok={payload.get('ok')} ci_context={payload.get('ci_context')}")
-    print(
-        f"smoke_entries={coverage.get('smoke_entries_total')} "
-        f"health_score={health.get('aggregated_health_score')} "
-        f"sections_populated={health.get('sections_populated')}"
-    )
-    print(f"recent_errors={len(errors)}")
+    lines = [
+        "=== Toolchain governance snapshot (non-blocking · WC-PRE-06/07 L0) ===",
+        f"ok={payload.get('ok')} ci_context={payload.get('ci_context')}",
+        (
+            f"smoke_entries={coverage.get('smoke_entries_total')} "
+            f"health_score={health.get('aggregated_health_score')} "
+            f"sections_populated={health.get('sections_populated')}"
+        ),
+        f"recent_errors={len(errors)}",
+    ]
     if paths:
-        print(f"artifact_json={paths.get('json')}")
-        print(f"artifact_markdown={paths.get('markdown')}")
-    print("This step does not affect PR gate pass/fail.")
-    print("=== end governance snapshot ===")
-    print("=== L1 governance advisory (non-blocking · WC-IMPL-L1) ===")
-    print(f"advisory_level={advisory_level}")
-    print(f"advisory_summary={payload.get('advisory_summary')}")
-    print(f"advisory_findings={len(findings)}")
+        lines.append(f"artifact_json={paths.get('json')}")
+        lines.append(f"artifact_markdown={paths.get('markdown')}")
+        if paths.get("advisory_log"):
+            lines.append(f"artifact_advisory_log={paths.get('advisory_log')}")
+    lines.extend(
+        [
+            "This step does not affect PR gate pass/fail.",
+            "=== end governance snapshot ===",
+            "=== L1 governance advisory (non-blocking · WC-IMPL-L1) ===",
+            f"advisory_level={advisory_level}",
+            f"advisory_summary={payload.get('advisory_summary')}",
+            f"advisory_findings={len(findings)}",
+        ]
+    )
     for item in findings:
-        print(
+        lines.append(
             f"  [{item.get('severity')}] {item.get('code')}: {item.get('message')}"
         )
-    print_github_advisory_annotations(findings)
-    print("L1 advisory does not affect PR gate pass/fail.")
-    print("=== end L1 advisory ===")
+    lines.extend(
+        [
+            "L1 advisory does not affect PR gate pass/fail.",
+            "=== end L1 advisory ===",
+        ]
+    )
+    return lines
+
+
+def print_ci_log_summary(payload: Dict[str, Any]) -> None:
+    for line in format_ci_log_summary_lines(payload):
+        print(line)
+    print_github_advisory_annotations(payload.get("advisory_findings") or [])
 
 
 def main(argv: Optional[List[str]] = None) -> int:

@@ -84,6 +84,7 @@
 - artifacts:
   - `output/toolchain/governance_snapshot.json`（含 `advisory_level` / `advisory_findings` / `advisory_summary`）
   - `output/toolchain/governance_snapshot.md`（Advisory 节）
+  - `output/toolchain/governance_advisory.log`（L1 CI log 镜像 · WC-IMPL-L1 增量）
 - verification:
   - `python -m unittest tests.test_toolchain_governance_snapshot_v1 -v` → 全绿（17 tests）
   - `python scripts/generate_toolchain_governance_snapshot.py --ci-context eval-gate-pr --write --non-blocking --print-ci-summary` → JSON 含 advisory 字段；stdout 含 L1 block

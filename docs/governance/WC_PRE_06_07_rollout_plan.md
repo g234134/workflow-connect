@@ -193,6 +193,7 @@ python scripts/run_toolchain_smoke_matrix.py --tier optional_ci --format json
 
 - `eval-gate-ci.yml` / `core-agent-smoke.yml` 既有 snapshot step：`--print-ci-summary` 输出 L0 trailer + **L1 advisory block**。
 - 对 `severity=critical` finding 打印 GitHub `::warning title=<code>::<message>`。
+- **`--write` 产出** `output/toolchain/governance_snapshot.{json,md}` + **`governance_advisory.log`**（L1 CI log 镜像）。
 - **`--non-blocking` 下 exit 0 不变**；step `continue-on-error: true` 不变。
 
 #### 验证
@@ -203,6 +204,8 @@ python scripts/generate_toolchain_governance_snapshot.py --ci-context eval-gate-
 ```
 
 ### Phase 4 — CI L2 Required（WC-PRE-06 L2 + WC-PRE-07 Phase 2 · 须 L1 门槛 + 新批文）
+
+> **2026-06-13**：`WC-IMPL-L2` FRAME 已冻结（`frame_frozen_pending_governance`）；设计稿 `docs/governance/WC_TOOLCHAIN_GOVERNANCE_L2_design_draft.md`。**本节 CH-40～45 未授权施工**——须 `approval_status.L2=approved` + G1–G8 + rollback 演练。
 
 | # | 标题 | 影响范围 | 负责人角色 | 复杂度 |
 |---|------|----------|------------|--------|
@@ -423,4 +426,20 @@ python 04_Workflows/_wave7_regression_gate.py --tier A
 
 ---
 
-*WC-PRE-06/07 Rollout Plan · doc-only · 2026-06-13 · 未改 CI · 未改 P3.5 正文*
+*WC-PRE-06/07 Rollout Plan · doc-only · 2026-06-13 · 未改 CI required · 未改 P3.5 正文*
+
+---
+
+## 8. Phase 2 可施工清单（Lane B · 2026-06-13）
+
+> **原则**：L1 = advisory / non-blocking；L2 selective mandatory **未实装**；**不得**宣称 branch protection 已升格。
+
+| 票号 | 状态 | 可并行 | 摘要 |
+|------|------|--------|------|
+| **WC-IMPL-L1** | **done** | — | snapshot `advisory_*` + MissingSignalRules v1 + artifact/log |
+| **WC-IMPL-SMOKE-CI-L1** | frame_ready · blocked_on_approval | 与 WC-IMPL-HOOKS | optional_ci smoke step · CH-32～34 |
+| **WC-IMPL-L2** | frame_frozen_pending_governance | 与 HOOKS（启用前须 merged） | hard assert 草案 · **不**改 branch protection |
+
+**L2 制度 SSOT**：`docs/governance/WC_TOOLCHAIN_GOVERNANCE_L2_design_draft.md` · `04_Workflows/tickets/WC-IMPL-L2_state.md`
+
+**blocked_on_approval**：`approval_status.L1`（SMOKE-CI-L1）· `approval_status.L2` + G1–G8 + rollback 演练（L2 实施）

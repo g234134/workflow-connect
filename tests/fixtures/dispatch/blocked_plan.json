@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "generated_at": "2026-06-13T12:00:00+00:00",
+  "tickets_scanned": 1,
+  "runnable_now": [
+    {
+      "ticket_id": "TEST-BLK",
+      "title": "Blocked infra ticket",
+      "overall_status": "blocked",
+      "current_owner": "implementer",
+      "source_path": "tests/fixtures/dispatch/blocked_ticket.md"
+    }
+  ],
+  "suggested_next": [
+    {
+      "ticket_id": "TEST-BLK",
+      "recommended_role": "implementer",
+      "reason": "blocked fixture for eligibility gate",
+      "commands": [],
+      "blocked_by": [],
+      "expected_output": "B_REPORT updated",
+      "bucket": "runnable_now"
+    }
+  ],
+  "warnings": []
+}

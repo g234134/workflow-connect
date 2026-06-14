@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "generated_at": "2026-06-07T12:00:00+00:00",
+  "tickets_scanned": 2,
+  "runnable_now": [
+    {
+      "ticket_id": "CARD-GOOD",
+      "title": "Good card fixture",
+      "overall_status": "in_progress",
+      "current_owner": "implementer",
+      "source_path": "tests/fixtures/dispatch/card_ticket_good.md"
+    }
+  ],
+  "suggested_next": [
+    {
+      "ticket_id": "CARD-GOOD",
+      "recommended_role": "implementer",
+      "reason": "in_progress fixture",
+      "commands": [
+        "Open Implementer chat; read tests/fixtures/dispatch/card_ticket_good.md"
+      ],
+      "blocked_by": [],
+      "expected_output": "B_REPORT updated",
+      "bucket": "runnable_now"
+    },
+    {
+      "ticket_id": "CARD-WARN",
+      "recommended_role": "implementer",
+      "reason": "draft without paths",
+      "commands": [
+        "python -m unittest tests.test_dispatch_cards -v"
+      ],
+      "blocked_by": [],
+      "expected_output": "B_REPORT updated",
+      "bucket": "draft"
+    }
+  ],
+  "warnings": []
+}

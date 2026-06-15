@@ -2711,7 +2711,7 @@ Toolchain Wave B（WB-T1–T8）文档与票务 hygiene 已由 **WC-PRE-01** 收
 
 **狀態依據**：各 lane `*_state.md` B/C/D_REPORT · 本輪 unittest smoke（2026-06-14 实跑）· **未**脑补 CI gate / 批文 / PR policy。
 
-**一句話**：四 lane **implemented + tested** 为主，但 **非 full done**——W4-MEM-01 / WC-T1-INTEGRATION 仍 **Reviewer pending**；Lane B L2 / mandatory smoke CI 与 Lane A 护栏升格仍 **blocked_on_approval** 或 **design draft only**。
+**一句話**：四 lane **implemented + tested** 为主，但 **非 full done**——W4-MEM-01 仍 **Reviewer pending**；WC-T1-INTEGRATION **accepted_with_gaps**（AC-6 doc 已补）；Lane B L2 / mandatory smoke CI 与 Lane A 护栏升格仍 **blocked_on_approval** 或 **design draft only**。
 
 | Lane | 票 / 能力 | 實作 | 測試 | Review / Approval | 未完成 |
 |------|-----------|------|------|-------------------|--------|
@@ -2720,7 +2720,7 @@ Toolchain Wave B（WB-T1–T8）文档与票务 hygiene 已由 **WC-PRE-01** 收
 | **B** | WC-IMPL-L1 | done | **17/17 OK** · exit 0 non-blocking | **accepted** | — |
 | **B** | WC-IMPL-L2 · SMOKE-CI-L1 · PRE-06/07 | **FRAME / design only** | n/a | **blocked_on_approval** | **非** mandatory smoke CI 已開 |
 | **C** | T1–T4 · T3 · SMOKE nightly | done | 含于 **62/62 OK** | done / accepted | — |
-| **C** | WC-T1-INTEGRATION | done | 含于 **62/62 OK** | **Reviewer pending** | Reviewer 關票 |
+| **C** | WC-T1-INTEGRATION | done | 含于 **62/62 OK** | **accepted_with_gaps** · Scribe AC-6 doc 已补 | 入口 B/C deferred · 可选 UT |
 | **C** | T5 · T6 · T7 | done | 含于 **62/62 OK** | accepted · **accepted_with_gaps** | v2 path_id · reports fixture |
 | **C** | E2E / nightly | 脚本可跑 | **optional · non-gating** | n/a | **≠ INT Tier-A** |
 | **D** | W3-TL-T4 + replay | done | **22/22 OK** | **accepted_with_gaps** | Local UI / Langfuse / re-execute **out of scope** |
@@ -2736,4 +2736,247 @@ python -m unittest tests.test_tabular_outbox_consumer tests.test_build_tabular_o
 
 **索引更新（doc-only）**：`docs/WAVE_PROGRESS_DASHBOARD.md` 分票四欄收口表 · `docs/wave_c/overview.md` v0.3 · `04_Workflows/tickets/README.md` Lane A / WC-T 索引。
 
-**下一步優先（索引）**：① W4-MEM-01 Reviewer ② WC-T1-INTEGRATION Reviewer ③ WC-T6-v2 / WC-T7-v2 gaps ④ approval 後 governance / guard 升格项。
+**下一步優先（索引）**：① ~~WC-T1-INTEGRATION Reviewer~~ **已关票 (accepted_with_gaps · AC-6 doc 已补)** ② W4-MEM-01 Reviewer ③ ~~WC-T6-T7-v2~~ **已关票 (v2)** ④ approval 後 governance / guard 升格项。
+
+---
+
+## 2026-06-14 · WC-T6-T7-v2 · Lane C M3 gap closure（Scribe 收口）
+
+**票號**：WC-T6-T7-v2 · **Phase**：Wave C · Control Plane · Lane C · M3 · **Reviewer**：**accepted_with_gaps** · **Scribe**：done
+
+**完成情况（v0.1 → v2）**
+
+| Lane | 父票 | v2 交付 | 验证 |
+|------|------|---------|------|
+| **A · WC-T6** | WC-T6 v0.1 accepted_with_gaps | `tests/fixtures/skill_distillation/reports/`（3 伪造 `*_state.md`）· `--reports-dir` 专项 UT · `PATH_ID_MAPPING` + `cp.ticket_state.b_report` fallback 文档化 | `python -m unittest tests.test_distill_control_plane_skills_lite -v` → **10/10 OK** |
+| **B · WC-T7** | WC-T7 v0.1 accepted_with_gaps | `WC_T7_e2e_walkthrough_runbook.md` 附录「WC-T5 path_id 对照表」（表 A/B · forbidden/HITL 行）· doc regression UT | `python -m unittest tests.test_run_wc_m2_e2e_walkthrough -v` → **5/5 OK** |
+
+**Deferred gaps（NonScope · 不阻塞 v2 关票）**
+
+- runner `--execute` 全自动写 live `*_state.md`（forbidden · HITL）
+- 生产 `artifacts/**` 增量扫描 · `--json-out` 落盘样本 · LLM 摘要 / 自动写 `.cursor/skills`
+- T6 forbidden 路径 severity 与 WC-T5 矩阵联动（design §7）
+- Control Plane E2E / nightly **≠** INT Tier-A；**非** PR required gate
+
+**Follow-up 建议**
+
+1. **WC-T1-INTEGRATION** Reviewer 关票（M2 最后一项 pending）
+2. **W4-MEM-01** Reviewer 关票（Lane A）
+3. 若需进一步升格：另开票处理 `--execute` HITL 链或生产 artifacts 扫描；须保持 optional / non-gating
+4. L2 governance / mandatory smoke CI 仍 **blocked_on_approval**（WC-PRE-06/07 · WC-IMPL-L2）
+
+**索引**：`04_Workflows/tickets/WC-T6-T7-v2_state.md` · `docs/wave_c/overview.md` §M3 self-check · `docs/wave_c/WC_T6_skill_distillation_lite.md` · `docs/wave_c/WC_T7_e2e_walkthrough_runbook.md`
+
+---
+
+## 2026-06-14 · WC-T1-INTEGRATION · Lane C M2 eligibility gate 关票（Orchestrator + Scribe 收口）
+
+**票號**：WC-T1-INTEGRATION · **Phase**：Wave C · Control Plane · M2 · **Reviewer**：**accepted_with_gaps** · **Scribe**：done
+
+- **Reviewer**：AC-1～AC-5 PASS；AC-6 文档 GAP（与 B_REPORT deferred 一致）；无 boundary violation；21/21 UT OK。
+- **Scribe 收口**：`docs/control_plane_dispatch_executor.md` § Dispatch Cards 已增 **Eligibility gate** 小節（`--eligibility-gate` / `--force-eligibility` / summary 字段）；STATE `overall_status: accepted_with_gaps`；Dashboard 分票表已更新。
+- **验证**：`python -m unittest tests.test_dispatch_cards tests.test_ticket_eligibility -v` → **21/21 OK**（与 Lane C smoke 62/62 OK 一致）。
+- **Deferred（NonScope）**：入口 B hook 硬闸 · 入口 C `build_dispatch_plan` annotate · 可选 UT unresolved-dependency + gate=block。
+
+**索引**：`04_Workflows/tickets/WC-T1-INTEGRATION_state.md` · `docs/control_plane_dispatch_executor.md` · `docs/wave_c/WC_T1_eligibility.md` §8
+
+---
+
+## 2026-06-14 · W4-MEM-01 · Lane A case memory index（Reviewer + Scribe 收口）
+
+**票號**：W4-MEM-01 · **Phase**：最小接案 MVP · Wave 4 · Lane A · **Reviewer**：**accepted_with_gaps** · **Scribe**：done
+
+**完成情况**
+
+- index enriched 字段已落盘：`cleaning_profile` · `cleaning_rules_applied` · `delivery_template_ref` · `schema_notes` · `qa_status` · `accepted_ratio`（`cases/index.json` refresh）
+- sampleco `known_limits`：`multi_row_export`（schema_notes 等价）+ `low_accepted_ratio`（`accepted_ratio=0.0696`）
+- lookup `--verbose` 返回 rules + template + qa 字段；spec → `docs/case-history-lookup-spec-v0.1.md`
+- `python -m unittest tests.test_lookup_case_history tests.test_build_cases_index -v` → **10/10 OK**（2026-06-14）
+
+**Deferred gaps（NonScope · 不阻塞关票）**
+
+- 自动 glob 登记 `cases/<client>/<id>/`（见 execution plan T4）
+- `schema_fingerprint` 字段（ORCH FRAME 可选）
+- temp-dir index refresh 专项 UT
+
+**Follow-up 建议**
+
+- 可选 **W4-MEM-02**：glob 自动登记 + temp-dir index refresh UT + `schema_fingerprint`
+- **WC-T1-INTEGRATION** Reviewer 关票（Lane C M2 最后一项 pending）
+
+**索引**：`04_Workflows/tickets/W4-MEM-01_state.md` · `docs/case-history-lookup-spec-v0.1.md` · `docs/WAVE_PROGRESS_DASHBOARD.md` Lane A / W4-MEM-01
+
+---
+
+## 2026-06-14 · WC-GOV-EXEC-ARTIFACTS-LLM · CP-AUTO 治理契约 FRAME（Scribe + Reviewer 收口）
+
+**票號**：WC-GOV-EXEC-ARTIFACTS-LLM · **Phase**：Wave C · Control Plane · Lane C · M4 Governance · **Reviewer**：**frame_ready** · **Scribe**：done
+
+**完成情况**
+
+- 新建 `docs/governance/WC_GOV_EXEC_ARTIFACTS_LLM_governance_contract.md` — CP-AUTO L0→L3 分级契约 SSOT
+- 承接 WC-T6-T7-v2 deferred 四项（`--execute` · artifacts · `--json-out` · LLM · CI/INT 升格）
+- `docs/wave_c/overview.md` M4 治理行已链至本契约
+- **本票无脚本 / tests / workflows 施工**
+
+**Reviewer 结论**
+
+- Verdict: **frame_ready** · Risk: **low**
+- WC-T5 `wc.m2.state.write_ticket` / `wc.m2.chat.open_cursor` L0–L2 保持 forbidden，与 automation coverage contract 无冲突
+- CP-AUTO L3 与 WC-PRE-06/07 toolchain L2 分轨已三处声明
+
+**Follow-up 建议**
+
+- Orchestrator 确认 `frame_frozen` 后可开 `WC-GOV-EXEC-ARTIFACTS-LLM-IMPL-L1`（L1 · 无批文）
+- L2 须 `approval_status.CP_AUTO_L2=approved`；L3 须 `CP_AUTO_L3=approved` + 独立子票
+
+**索引**：`04_Workflows/tickets/WC-GOV-EXEC-ARTIFACTS-LLM_state.md` · `docs/governance/WC_GOV_EXEC_ARTIFACTS_LLM_governance_contract.md`
+
+---
+
+- 2026-06-15 · BATCH-MVP-01 · batch_subtask schema + loader MVP 完成；preferred_model required；12/12 tests OK（gov_core venv）。
+
+---
+
+## 2026-06-15 · Reviewer Sprint 落地 · 7 張優先票 state 更新 + Wave 進度回寫
+
+**背景**：根據「Reviewer Sprint 落地分析結果」與「Wave 1–5 進度回寫草稿」，執行兩線並行更新。
+
+**工作線 R：7 張優先票 state 更新**
+
+| 票號 | Reviewer 結論 | 關鍵更新 |
+|------|--------------|----------|
+| **W6-T1** | `accepted_with_gaps` | Skill Card A/B 10 欄位模板已初版完成；Skill Map 8 步驟已對齊現行 pipeline；待後續 Sprint 追加「實戰回填」與更多樣本（非 blocking） |
+| **W6-T8** | `accepted` | 回歸 CLI 與 test 全綠；不改 mainline regression 行為，只增加實驗回歸 hook |
+| **W2-T2-routing-eval** | `accepted` | 與對應 tests/docs/yaml 成功對齊，無 blocking gap |
+| **W2-T1-intake-routing-catalog** | `accepted` | 與對應 tests/docs/yaml 成功對齊，無 blocking gap |
+| **W7-T1** | `accepted_with_gaps` | extended fixtures C/D 已接入；`experiment_line_only` 明確標記，不進 mainline；未來 wave 可視需要增加更多 sample（非 blocking） |
+| **W7-T3** | `accepted` | controlled notify experiment 僅作用於 allowlist + dry-run 預設，external dispatch 仍 disabled |
+| **W8-T3** | `accepted_with_gaps` | 一鍵 approval CLI 實測通過；Checkpoint/resume_context 寫入格式已驗證；與 orchestrator 的 full integration 留待後續票（非 blocking） |
+
+**工作線 W：Wave 進度 patch 回寫**
+
+| 檔案 | 更新內容 |
+|------|----------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | 新增「Wave 1–5 進度（2026-06-15 快照）」表格與驗證命令索引（位於「多 Lane 本輪收口」前） |
+| `docs/wave_c/overview.md` | 新增「Wave C 與全局 Wave 的關係」表格（Wave 1–5 主幹 → Wave 6–8 實驗線 → Wave 9+ Non-Tabular） |
+
+**文案自查**：所有新加內容避免「Wave X 已完成」「CI 已 blocking merge」「L2 已實裝」等 overclaim；使用「主幹已跑通」「部分票待 Reviewer」「部分 design-only」等語氣。
+
+**變更檔案清單**：
+- `04_Workflows/tickets/W6-T1-skill-card-and-skill-map-v1_state.md`（新增 C_REPORT）
+- `04_Workflows/tickets/W6-T8-agent-standard-case-experiment-regression-v1_state.md`（reviewer: accepted）
+- `04_Workflows/tickets/W2-T2-routing-eval_state.md`（C_REPORT 補充）
+- `04_Workflows/tickets/W2-T1-intake-routing-catalog_state.md`（C_REPORT 補充）
+- `04_Workflows/tickets/W7-T1-extend-agent-standard-line-more-fixtures_state.md`（reviewer: accepted_with_gaps）
+- `04_Workflows/tickets/W7-T3-controlled-delivery-and-notify-experiment-v1_state.md`（reviewer: accepted）
+- `04_Workflows/tickets/W8-T3-delivery-approval-one-click-cli-v1_state.md`（reviewer: accepted_with_gaps）
+- `docs/WAVE_PROGRESS_DASHBOARD.md`（新增 Wave 1–5 進度表）
+- `docs/wave_c/overview.md`（新增 Wave C 與全局 Wave 關係表）
+- `04_Workflows/00_Agent_Work_Progress.md`（本條目）
+
+---
+
+## 2026-06-15 · C2 Reviewer Sprint · C2-P2/C2-D1 收口 + Wave 2/5 註解
+
+**背景**：本輪 Reviewer Sprint **重點落地 C2 產品線**兩張票；W2-T2（Multi-Chat 參照）／W3-T1（Tool Catalog 權威化）／W5-T1（Skill Registry 管道）維持 **draft**，排入下輪 Implementer Sprint。
+
+**工作線 R · C2 票 state 收口**
+
+| 票號 | Reviewer 結論 | STATE 更新 |
+|------|--------------|------------|
+| **C2-P2** | `accepted_with_gaps` | `reviewer: done` · `overall_status: accepted_with_gaps` · 交棒 Scribe |
+| **C2-D1** | `accepted_with_gaps` | `implementer: done` · `reviewer: done` · `overall_status: accepted_with_gaps` · 交棒 Scribe |
+
+**Reviewer 要點（保守）**
+
+- C2-P2：四階段 runbook + 4 簽核點 + pseudo CLI `--stage all/intake` → `ok: true`；**deferred**：JSON Schema／sidecar／prod pipeline（**out of scope**）。
+- C2-D1：demo 錨點 + `report.json` product_metrics 對齊 C2-P1；重跑須 `--force`（eligibility gate，Walkthrough doc **deferred**）。
+- **無 blocking**；**未**改 `core/*`／CI gate。
+
+**工作線 W · Wave docs**
+
+| 檔案 | 更新 |
+|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | Wave 2／Wave 5 保守註解；Wave 1–5 快照表補 draft 票說明 |
+| `docs/wave_c/overview.md` | 新增 C2 索引表（C2-P2/C2-D1：`in_review` → **`accepted_with_gaps`**） |
+| `04_Workflows/00_Agent_Work_Progress.md` | 本條目 |
+
+**下輪（索引）**：Scribe 填 C2-P2/C2-D1 D_REPORT；Implementer 施工 W2-T2／W3-T1／W5-T1（Skill Registry）draft 票。
+
+**變更檔案**：`04_Workflows/tickets/C2-P2_state.md` · `C2-D1_state.md` · `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/wave_c/overview.md` · 本檔。
+
+---
+
+## 2026-06-15 · Wave 2/3/5 三票 Reviewer→Scribe 收口（Multi-Chat）
+
+- **W2-T2**（Multi-Chat 參照票）：Reviewer `needs_changes` → **`accepted_with_gaps`** · Orchestrator 關票 — 子票 W2-REF-001 + `docs/testing.md` §9 + `tickets/README.md` walkthrough 已交付 · **deferred**：子票 C/D 關票、state lint CI、history migration、routing eval 專用 state
+- **W3-T1**（Tool Catalog SSOT · Phase 8.8）：Reviewer `needs_changes` → **`accepted_with_gaps`** · Orchestrator 關票 — SSOT 四檔 JSON/loader/authority doc/tests 6/6 OK · **deferred**：selector `enabled:false`、暗部 sync、MCP、Wave8 SKU
+- **W5-T1**（Skill Registry 管道）：Reviewer `needs_changes` → **`accepted_with_gaps`** · Orchestrator 關票 — registry + CLI + tests 6+6 OK · **deferred**：selector 消費 registry、runbook 同步、cards↔registry sync（**非** intake decision rules 票）
+
+**工作線 O · Orchestrator STATE 關票**
+
+| 票號 | overall_status | next_action 摘要 |
+|------|----------------|------------------|
+| **W2-T2** | `accepted_with_gaps` | 子票 W2-REF-001 C/D/O · state lint CI · history migration |
+| **W3-T1** | `accepted_with_gaps` | selector 整合 · 暗部 sync · MCP · Wave8 SKU |
+| **W5-T1** | `accepted_with_gaps` | selector 消費 registry · runbook 同步 · cards↔registry sync |
+
+**工作線 W · Wave docs**
+
+| 檔案 | 更新 |
+|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | Wave 2 / Wave 3-TL / Wave 5 註解更新 + Wave 1–5 快照表三票狀態 |
+| `04_Workflows/00_Agent_Work_Progress.md` | 本條目 |
+
+**變更檔案**：`04_Workflows/tickets/W2-T2_state.md` · `W3-T1_state.md` · `W5-T1_state.md` · `docs/WAVE_PROGRESS_DASHBOARD.md` · 本檔。
+
+---
+
+## 2026-06-15 · Wave 7/8 三票 Reviewer→Scribe 收口（Multi-Chat routine）
+
+- **W7-T2**（run mode coverage）：implementer done → **`accepted_with_gaps`** · Orchestrator 關票 — `run_path_profile`（demo_phase→bundle · sampleco→CP-B）+ `--run-mode run-all-allowed` + eval guide §2.4 + 31 tests OK · **deferred**：CI nightly `run-all-allowed`（W10-T1 helper）、production v2 default run mode、extended fixtures run（W8-T1）
+- **W8-T2**（decision rules v2）：implementer done → **`accepted_with_gaps`** · Orchestrator 關票 — `routing/intake_decision_rules_v2.py` + A/B/C/D profile tiers + shadow hook metadata + demo `--use-v2` opt-in + 29 tests OK · **deferred**：non-Tabular shadow pipeline 實作（W9 票）、demo CLI v2 預設升格
+- **W8-T4**（Non-Tabular shadow blueprint）：design-only → **`accepted_with_gaps`** · Orchestrator 關票 — `docs/non-tabular-shadow-flow-blueprint-v1.md` §1–§6 + 9 張 Wave 9 建議票 · **deferred**：W9-T1~T9 實作、W9-T5/T6 fixtures、heavy tool executor
+
+**工作線 O · Orchestrator STATE 關票**
+
+| 票號 | overall_status | next_action 摘要 |
+|------|----------------|------------------|
+| **W7-T2** | `accepted_with_gaps` | CI nightly · v2 default run mode · extended fixtures run |
+| **W8-T2** | `accepted_with_gaps` | shadow pipeline 實作 · demo CLI v2 預設升格 |
+| **W8-T4** | `accepted_with_gaps` | Wave 9 實作票 · real fixtures · executor |
+
+**工作線 W · Wave docs**
+
+| 檔案 | 更新 |
+|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | Wave 7 / Wave 8 註解更新 + 三票表格狀態 |
+| `04_Workflows/00_Agent_Work_Progress.md` | 本條目 |
+
+**變更檔案**：`04_Workflows/tickets/W7-T2-increase-agent-run-mode-coverage-v1_state.md` · `W8-T2-decision-rules-v2-profile-and-reject-reduction_state.md` · `W8-T4-non-tabular-shadow-flow-blueprint-v1_state.md` · `docs/WAVE_PROGRESS_DASHBOARD.md` · 本檔。
+
+---
+
+## 2026-06-15 · Wave 9 三票 Reviewer→Scribe 收口（Multi-Chat routine）
+
+- **W9-T2**（non-tabular decision rules）：implementer done → **`accepted_with_gaps`** · Orchestrator 關票 — v2 `non_tabular.*` NT-A/NT-B helper + R-NT1 reject + Tabular regression 15/15 OK · **deferred**：W9-T5/T6 fixtures、W9-T4 glue 消費 planned_tools、W9-T1 catalog 強制整合
+- **W9-T3**（tool catalog + selector stub）：implementer done → **`accepted_with_gaps`** · Orchestrator 關票 — `non_tabular_tool_catalog_v1.json` + `select_non_tabular_tools` stub + 9/9 tests OK（symbolic only）· **deferred**：executor/outbox、W9-T5/T6 fixtures
+- **W9-T4**（orchestrator preview）：implementer done → **`accepted_with_gaps`** · Orchestrator 關票 — preview CLI + glue + sandbox outbox + 11/11 tests OK（preview-only · execution=stub）· **deferred**：real fixtures、heavy tool executor、主鏈整合
+
+**工作線 O · Orchestrator STATE 關票**
+
+| 票號 | overall_status | next_action 摘要 |
+|------|----------------|------------------|
+| **W9-T2** | `accepted_with_gaps` | W9-T5/T6 fixtures · glue planned_tools · catalog 整合 |
+| **W9-T3** | `accepted_with_gaps` | glue 整合 · fixtures · executor/outbox |
+| **W9-T4** | `accepted_with_gaps` | real fixtures · heavy executor · 主鏈整合 |
+
+**工作線 W · Wave docs**
+
+| 檔案 | 更新 |
+|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | Wave 9 註解更新 + 三票表格狀態 |
+| `04_Workflows/00_Agent_Work_Progress.md` | 本條目 |
+
+**變更檔案**：`04_Workflows/tickets/W9-T2-non-tabular-decision-rules-v1_state.md` · `W9-T3-non-tabular-tool-catalog-and-selector-stub-v1_state.md` · `W9-T4-non-tabular-orchestrator-preview-v1_state.md` · `docs/WAVE_PROGRESS_DASHBOARD.md` · 本檔。

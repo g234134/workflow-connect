@@ -1,0 +1,268 @@
+# P8.5 (Phase 8.5): orchestration bridge Smoke A + B — CI advisory (non-blocking).
+# Smoke A: test_minimal_orchestration_bridge (14/14). Smoke B: test_app_api_orchestration_bridge (7/7).
+# Skips gracefully when gov_core_system deps unavailable. Does not gate merge. Smoke C remains manual.
+# Scenario 1 (default): happy path 14/14 + 7/7. Scenario 2 (workflow_dispatch input): deps-gate skip probe.
+
+name: P85 Bridge Smoke CI (advisory)
+
+on:
+  schedule:
+    # Daily advisory track (UTC 06:00)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: "Smoke scenario — default=Scenario 1 (14/14 + 7/7); scenario2=deps skip probe (exit 0)"
+        required: false
+        default: default
+        type: choice
+        options:
+          - default
+          - scenario2
+  pull_request:
+    paths:
+      - ".github/workflows/bridge-smoke.yml"
+      - "01_Environments/python_venvs/gov_core_system/tests/test_minimal_orchestration_bridge.py"
+      - "01_Environments/python_venvs/gov_core_system/tests/fixtures/orchestration_bridge/**"
+      - "01_Environments/python_venvs/gov_core_system/core/minimal_orchestration_bridge.py"
+      - "01_Environments/python_venvs/gov_core_system/core/schemas/orchestration_bridge.py"
+      - "01_Environments/python_venvs/gov_core_system/core/browser_actions.py"
+      - "01_Environments/python_venvs/gov_core_system/core/browser_runner.py"
+      - "01_Environments/python_venvs/gov_core_system/core/intake_decider.py"
+      - "01_Environments/python_venvs/gov_core_system/core/orchestration_bridge_outbox.py"
+      - "01_Environments/python_venvs/gov_core_system/tests/test_app_api_orchestration_bridge.py"
+      - "01_Environments/python_venvs/gov_core_system/app_api.py"
+      - "docs/phase8_5-bridge-smoke-runbook-v1.md"
+
+concurrency:
+  group: p85-bridge-smoke-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  p85-bridge-smoke-a:
+    name: P85 Bridge Smoke A (advisory · 14/14)
+    if: github.event_name != 'workflow_dispatch' || github.event.inputs.scenario != 'scenario2'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      GOV_CORE_ORCHESTRATION_BRIDGE_OUTBOX_PG_ENABLED: "false"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: P85 Bridge Smoke A (unittest · advisory)
+        id: smoke_a
+        shell: bash
+        run: |
+          set -uo pipefail
+          GOV_CORE="01_Environments/python_venvs/gov_core_system"
+
+          if [[ ! -d "${GOV_CORE}" ]]; then
+            echo "::notice title=Bridge Smoke Skipped::bridge smoke skipped: gov_core_system venv not built"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=gov_core_system directory missing" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          set +e
+          pip install -q -r requirements-ci-minimal.txt
+          MINIMAL_EXIT=$?
+          pip install -q -r "${GOV_CORE}/requirements.txt"
+          FULL_EXIT=$?
+          set -e
+
+          if [[ "${MINIMAL_EXIT}" -ne 0 && "${FULL_EXIT}" -ne 0 ]]; then
+            echo "::notice title=Bridge Smoke Skipped::bridge smoke skipped: gov_core_system venv not built (pip install failed)"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=pip install failed" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          cd "${GOV_CORE}"
+
+          if ! python -c "import fastapi" 2>/dev/null; then
+            echo "::notice title=Bridge Smoke Skipped::bridge smoke skipped: fastapi not available"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=fastapi not available" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          if ! python -c "from core.minimal_orchestration_bridge import run_minimal_orchestration_bridge" 2>/dev/null; then
+            echo "::notice title=Bridge Smoke Skipped::bridge smoke skipped: gov_core_system core imports not available"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=core imports not available" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          echo "skipped=false" >> "${GITHUB_OUTPUT}"
+          set +e
+          python -m unittest tests.test_minimal_orchestration_bridge -v | tee bridge_smoke_a.log
+          TEST_EXIT=$?
+          set -e
+
+          if [[ "${TEST_EXIT}" -ne 0 ]]; then
+            echo "::warning title=Bridge Smoke A failed (advisory)::test_minimal_orchestration_bridge did not pass 14/14 (exit ${TEST_EXIT}); non-blocking"
+            exit "${TEST_EXIT}"
+          fi
+
+          echo "Bridge Smoke A passed: test_minimal_orchestration_bridge 14/14 OK"
+
+      - name: Upload bridge smoke A log (advisory)
+        if: always() && steps.smoke_a.outputs.skipped != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: p85-bridge-smoke-a-${{ github.run_id }}
+          path: 01_Environments/python_venvs/gov_core_system/bridge_smoke_a.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  p85-bridge-smoke-b:
+    name: P85 Bridge Smoke B (advisory · HTTP API)
+    if: github.event_name != 'workflow_dispatch' || github.event.inputs.scenario != 'scenario2'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      GOV_CORE_ORCHESTRATION_BRIDGE_OUTBOX_PG_ENABLED: "false"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          pip install -q -r requirements-ci-minimal.txt || true
+          pip install -q -r 01_Environments/python_venvs/gov_core_system/requirements.txt || true
+
+      - name: P85 Bridge Smoke B (unittest · advisory)
+        id: smoke_b
+        shell: bash
+        run: |
+          set -uo pipefail
+          GOV_CORE="01_Environments/python_venvs/gov_core_system"
+
+          if [[ ! -d "${GOV_CORE}" ]]; then
+            echo "::notice title=Bridge Smoke B skipped::reason=gov_core_system directory missing"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=gov_core_system directory missing" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          if ! python -c "import fastapi" 2>/dev/null; then
+            echo "::notice title=Bridge Smoke B skipped::reason=fastapi not available"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=fastapi not available" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          cd "${GOV_CORE}"
+
+          if ! python -c "import tests.test_app_api_orchestration_bridge" 2>/dev/null; then
+            echo "::notice title=Bridge Smoke B skipped::reason=tests.test_app_api_orchestration_bridge import failed"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=test module import failed" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          echo "skipped=false" >> "${GITHUB_OUTPUT}"
+          set +e
+          python -m unittest tests.test_app_api_orchestration_bridge -v | tee bridge_smoke_b.log
+          TEST_EXIT=$?
+          set -e
+
+          if [[ "${TEST_EXIT}" -ne 0 ]]; then
+            echo "::warning title=Bridge Smoke B failed (advisory)::test_app_api_orchestration_bridge did not pass 7/7 (exit ${TEST_EXIT}); non-blocking"
+            exit "${TEST_EXIT}"
+          fi
+
+          echo "Bridge Smoke B passed: test_app_api_orchestration_bridge 7/7 OK"
+
+      - name: Upload bridge smoke B log (advisory)
+        if: always() && steps.smoke_b.outputs.skipped != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: p85-bridge-smoke-b-${{ github.run_id }}
+          path: 01_Environments/python_venvs/gov_core_system/bridge_smoke_b.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  p85-bridge-smoke-a-scenario2:
+    name: P85 Bridge Smoke A Scenario 2 (advisory · deps skip probe)
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.scenario == 'scenario2'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      GOV_CORE_ORCHESTRATION_BRIDGE_OUTBOX_PG_ENABLED: "false"
+      P85_BRIDGE_SMOKE_SCENARIO: "2"
+      P85_BRIDGE_SMOKE_FORCE_SKIP: "missing_dir"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: P85 Bridge Smoke A Scenario 2 (deps skip · advisory)
+        id: smoke_a_s2
+        shell: bash
+        run: |
+          set -uo pipefail
+          echo "::notice title=Bridge Smoke Scenario 2::Scenario 2 skipped by design (gov_core_system directory missing — Smoke A deps gate probe)"
+          GOV_CORE="/tmp/p85-scenario2-force-missing-gov-core-${GITHUB_RUN_ID}"
+
+          if [[ ! -d "${GOV_CORE}" ]]; then
+            echo "::notice title=Bridge Smoke Skipped::bridge smoke skipped: gov_core_system venv not built"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=gov_core_system directory missing" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          echo "::warning title=Bridge Smoke A Scenario 2 unexpected::deps gate probe did not skip; GOV_CORE exists at ${GOV_CORE}"
+          exit 1
+
+  p85-bridge-smoke-b-scenario2:
+    name: P85 Bridge Smoke B Scenario 2 (advisory · deps skip probe)
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.scenario == 'scenario2'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      GOV_CORE_ORCHESTRATION_BRIDGE_OUTBOX_PG_ENABLED: "false"
+      P85_BRIDGE_SMOKE_SCENARIO: "2"
+      P85_BRIDGE_SMOKE_FORCE_SKIP: "missing_dir"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: P85 Bridge Smoke B Scenario 2 (deps skip · advisory)
+        id: smoke_b_s2
+        shell: bash
+        run: |
+          set -uo pipefail
+          echo "::notice title=Bridge Smoke Scenario 2::Scenario 2 skipped by design (gov_core_system directory missing — Smoke B deps gate probe)"
+          GOV_CORE="/tmp/p85-scenario2-force-missing-gov-core-${GITHUB_RUN_ID}"
+
+          if [[ ! -d "${GOV_CORE}" ]]; then
+            echo "::notice title=Bridge Smoke B skipped::reason=gov_core_system directory missing"
+            echo "skipped=true" >> "${GITHUB_OUTPUT}"
+            echo "skip_reason=gov_core_system directory missing" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          echo "::warning title=Bridge Smoke B Scenario 2 unexpected::deps gate probe did not skip; GOV_CORE exists at ${GOV_CORE}"
+          exit 1

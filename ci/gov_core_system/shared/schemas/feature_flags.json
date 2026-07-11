@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/feature_flags/v1",
+  "title": "GovCoreFeatureFlagRegistry",
+  "description": "Env-based feature flags. Authoritative runtime registry: core/feature_flags_registry.py. All defaults must be off.",
+  "type": "object",
+  "required": ["feature_flags_schema_version", "flags"],
+  "properties": {
+    "feature_flags_schema_version": { "const": "v1" },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["env_key", "owner", "purpose", "default", "rollout_phase", "removal_condition"],
+        "properties": {
+          "env_key": {
+            "type": "string",
+            "pattern": "^GOV_CORE_[A-Z0-9_]+$",
+            "description": "Environment variable name; prefix GOV_CORE_ required."
+          },
+          "owner": { "type": "string" },
+          "purpose": { "type": "string" },
+          "default": { "enum": ["off"] },
+          "rollout_phase": { "type": "string" },
+          "removal_condition": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

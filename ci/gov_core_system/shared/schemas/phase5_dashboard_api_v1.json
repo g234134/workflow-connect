@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core/phase5_dashboard_api_v1.json",
+  "title": "Gov Core Monitoring Dashboard API v1",
+  "description": "dev/staging v1 · NOT production-ready. Read-only JSON contract for GET /monitoring/* consumed by static/monitoring/dashboard.html. Pydantic authority: core/schemas/monitoring.py",
+  "type": "object",
+  "properties": {
+    "tier": { "const": "dev_staging_v1" },
+    "routes": {
+      "type": "object",
+      "properties": {
+        "dashboard_summary": {
+          "type": "object",
+          "description": "GET /monitoring/dashboard-summary — aggregated bundle with meta.windows and meta.sources (dev/staging v1)",
+          "required": ["ok"],
+          "properties": {
+            "ok": { "type": "boolean" },
+            "meta": { "type": "object" },
+            "system_health": { "type": "object" },
+            "ask_pipeline": { "type": "object" },
+            "cost": { "type": "object" },
+            "errors": { "type": "object" },
+            "dlq": { "type": "object" },
+            "alerts": { "type": "array" }
+          }
+        },
+        "overview": {
+          "type": "object",
+          "description": "GET /monitoring/overview — health KPIs: task_count, success_rate, p95_latency_ms, total_cost_usd, dlq_backlog, budget, cost",
+          "required": ["ok"],
+          "properties": {
+            "ok": { "type": "boolean" },
+            "message": { "type": "string" },
+            "date": { "type": "string", "format": "date" },
+            "security": { "$ref": "#/$defs/security_hooks_status" },
+            "kpis": { "$ref": "#/$defs/overview_kpis" }
+          }
+        },
+        "cost_trend": {
+          "type": "object",
+          "description": "GET /monitoring/cost-trend?days=7",
+          "properties": {
+            "ok": { "type": "boolean" },
+            "days": { "type": "integer" },
+            "series": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["date", "cost_usd", "tokens", "task_count", "success_count"],
+                "properties": {
+                  "date": { "type": "string" },
+                  "cost_usd": { "type": "number" },
+                  "tokens": { "type": "integer" },
+                  "task_count": { "type": "integer" },
+                  "success_count": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "error_trend": {
+          "type": "object",
+          "description": "GET /monitoring/error-trend?hours=24",
+          "properties": {
+            "ok": { "type": "boolean" },
+            "hours": { "type": "integer" },
+            "series": { "type": "array" },
+            "recent_errors": { "type": "array" }
+          }
+        },
+        "dlq": {
+          "type": "object",
+          "description": "GET /monitoring/dlq?limit=50",
+          "properties": {
+            "ok": { "type": "boolean" },
+            "total": { "type": "integer" },
+            "items": { "type": "array" }
+          }
+        },
+        "alerts": {
+          "type": "object",
+          "description": "GET /monitoring/alerts",
+          "properties": {
+            "ok": { "type": "boolean" },
+            "items": {
+              "type": "array",
+              "items": { "$ref": "alert_event_v1.json" }
+            }
+          }
+        },
+        "alerts_evaluate": {
+          "type": "object",
+          "description": "POST /monitoring/alerts/evaluate — dev/staging on-demand evaluator",
+          "properties": {
+            "ok": { "type": "boolean" },
+            "alerts_fired": { "type": "array" },
+            "evaluated_at": { "type": "string", "format": "date-time" }
+          }
+        },
+        "security_status": {
+          "$ref": "#/$defs/security_hooks_status"
+        },
+        "dashboard_html": {
+          "type": "string",
+          "const": "/monitoring/dashboard",
+          "description": "Static shell; Agent A must not change CSS in parallel UI work"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "security_hooks_status": {
+      "type": "object",
+      "required": ["ok", "tier", "production_ready"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "phase": { "type": "string" },
+        "tier": { "const": "dev_staging_v1" },
+        "production_ready": { "const": false },
+        "pii_redaction_enabled": { "type": "boolean" },
+        "encryption_hook": { "type": "string" },
+        "encryption_hook_mode": { "type": "string", "enum": ["noop", "stub", "kms"] },
+        "langfuse_scrub_enabled": { "type": "boolean" },
+        "logger_sanitize_enforced": { "type": "boolean" },
+        "logger_sanitize_installed": { "type": "boolean" },
+        "pii_policy_config_loaded": { "type": "boolean" }
+      }
+    },
+    "overview_kpis": {
+      "type": "object",
+      "properties": {
+        "task_count": { "type": "integer" },
+        "success_rate": { "type": "number" },
+        "p95_latency_ms": { "type": ["number", "null"] },
+        "total_cost_usd": { "type": "number" },
+        "dlq_backlog": { "type": "integer" },
+        "budget": { "type": "object" },
+        "cost": { "type": "object" }
+      }
+    }
+  }
+}

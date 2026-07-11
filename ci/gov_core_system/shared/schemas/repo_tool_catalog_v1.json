@@ -1,0 +1,499 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/repo_tool_catalog/v1",
+  "title": "RepoToolCatalogV1",
+  "description": "Week 2 / 戰線 A — repo pipeline tool catalog (conceptual specs; no execution in catalog layer).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "catalog_revision", "tier", "tools"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "repo_tool_catalog_v1" },
+    "catalog_revision": { "type": "string", "maxLength": 32 },
+    "tier": { "type": "string", "const": "week2_a_v0.1" },
+    "tools": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 32,
+      "items": { "type": "object" }
+    }
+  },
+  "schema_version": "repo_tool_catalog_v1",
+  "catalog_revision": "a-w2-1.0.0",
+  "tier": "week2_a_v0.1",
+  "tools": [
+    {
+      "tool_id": "repo_index_v1_job",
+      "human_name": "Repo Index Job (v1)",
+      "description": "Scan Python sources under a repo root, persist file-level manifest to Data Vault (repo_index_jobs / repo_index_manifest) and write manifest.v0.json artifact.",
+      "intent_tags": ["repo_index", "manifest", "week1", "batch", "codebase"],
+      "input_schema": {
+        "required": ["repo_root"],
+        "properties": {
+          "repo_root": { "type": "string", "description": "Absolute or resolved repo root to index" },
+          "subtree": { "type": "string", "description": "Optional path relative to repo_root to limit scan" },
+          "job_id": { "type": "string", "format": "uuid", "description": "Existing job UUID when re-running" }
+        },
+        "examples": [
+          { "repo_root": "<repo_root>", "subtree": "core" }
+        ]
+      },
+      "output_schema": {
+        "required": ["ok", "message", "job_id"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "message": { "type": "string" },
+          "job_id": { "type": "string" },
+          "status": { "type": "string", "enum": ["queued", "running", "completed", "failed"] },
+          "manifest_artifact_rel": { "type": "string" },
+          "graph_artifact_rel": { "type": "string" },
+          "files_indexed": { "type": "integer" }
+        },
+        "examples": [
+          {
+            "ok": true,
+            "message": "repo_index job completed",
+            "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada",
+            "status": "completed",
+            "files_indexed": 42
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "kind": "env",
+          "key": "DATABASE_URL",
+          "description": "PostgreSQL DSN for repo_index_jobs / repo_index_manifest",
+          "required": true
+        },
+        {
+          "kind": "db_table",
+          "key": "repo_index_jobs",
+          "description": "Schema 011_repo_index_schema applied",
+          "required": true
+        }
+      ],
+      "cost_class": "medium",
+      "latency_class": "batch_seconds",
+      "failure_modes": [
+        "schema_apply_failed",
+        "repo_root_not_found",
+        "scan_empty_subtree",
+        "job_not_found"
+      ],
+      "structured_error_refs": [
+        {
+          "code": "repo_index.schema_unavailable",
+          "message_hint": "DATABASE_URL missing or PG unreachable",
+          "retryable": true
+        },
+        {
+          "code": "repo_index.job_failed",
+          "message_hint": "Job row status=failed; see notes envelope",
+          "retryable": false
+        }
+      ],
+      "side_effects": {
+        "writes_db": true,
+        "writes_artifact": true,
+        "calls_external_api": false,
+        "external_services": []
+      },
+      "observability_fields": [
+        "job_id",
+        "job_type",
+        "status",
+        "files_indexed",
+        "manifest_artifact_rel",
+        "graph_artifact_rel",
+        "latency_ms"
+      ],
+      "example_calls": [
+        {
+          "summary": "Create and run index in one call",
+          "params": { "repo_root": "<repo_root>", "subtree": "core" },
+          "implementation_ref": "core.repo_index_job.run_repo_index"
+        }
+      ],
+      "usage_notes": "Week 1 frozen job_type=repo_index_v1. Graph file path is reserved; graph build is a separate tool (code_graph_builder_v0_1).",
+      "enabled": true,
+      "implementation_ref": "core.repo_index_job"
+    },
+    {
+      "tool_id": "code_graph_builder_v0_1",
+      "human_name": "Code Graph Builder (v0.1)",
+      "description": "Build file-level code graph (file:<repo_rel> nodes, imports/contains edges) from a completed repo_index_v1 manifest; writes graph.v0.json.",
+      "intent_tags": ["code_graph", "static_analysis", "imports", "week1"],
+      "input_schema": {
+        "required": ["job_id"],
+        "properties": {
+          "job_id": { "type": "string", "format": "uuid" },
+          "repo_root": { "type": "string", "description": "Optional override; defaults via find_repo_root" }
+        },
+        "examples": [
+          { "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada" }
+        ]
+      },
+      "output_schema": {
+        "required": ["ok", "message", "job_id"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "message": { "type": "string" },
+          "job_id": { "type": "string" },
+          "graph_artifact_rel": { "type": "string" },
+          "node_count": { "type": "integer" },
+          "edge_count": { "type": "integer" },
+          "graph_schema_version": { "type": "string", "const": "v0.1" }
+        },
+        "examples": [
+          {
+            "ok": true,
+            "message": "graph built",
+            "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada",
+            "node_count": 120,
+            "edge_count": 340
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "kind": "job_status",
+          "key": "repo_index_v1:completed",
+          "description": "repo_index_jobs row status=completed for job_id",
+          "required": true
+        },
+        {
+          "kind": "artifact",
+          "key": "manifest.v0.json",
+          "description": "artifacts/repo_index/<job_id>/manifest.v0.json exists",
+          "required": true
+        }
+      ],
+      "cost_class": "low",
+      "latency_class": "batch_seconds",
+      "failure_modes": [
+        "manifest_missing",
+        "manifest_empty",
+        "ast_parse_errors_partial",
+        "graph_write_failed"
+      ],
+      "structured_error_refs": [
+        {
+          "code": "graph.manifest_not_found",
+          "message_hint": "Run repo_index_v1_job first",
+          "retryable": false
+        }
+      ],
+      "side_effects": {
+        "writes_db": false,
+        "writes_artifact": true,
+        "calls_external_api": false,
+        "external_services": []
+      },
+      "observability_fields": [
+        "job_id",
+        "graph_artifact_rel",
+        "node_count",
+        "edge_count",
+        "graph_schema_version",
+        "latency_ms"
+      ],
+      "example_calls": [
+        {
+          "summary": "Build graph for completed index job",
+          "params": { "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada" },
+          "implementation_ref": "core.code_graph.build_code_graph_for_job"
+        }
+      ],
+      "usage_notes": "Frozen graph_schema_version=v0.1. Does not modify graphrag_grag1 / GRAG-1 pipelines.",
+      "enabled": true,
+      "implementation_ref": "core.code_graph"
+    },
+    {
+      "tool_id": "repo_chunks_embed_v1",
+      "human_name": "Repo Chunks Embed & Upsert",
+      "description": "Chunk manifest file contents, embed via OpenAI, upsert vectors into Qdrant collection repo_chunks.",
+      "intent_tags": ["embed", "qdrant", "repo_chunks", "week1", "batch"],
+      "input_schema": {
+        "required": ["job_id"],
+        "properties": {
+          "job_id": { "type": "string", "format": "uuid" },
+          "collection": { "type": "string", "default": "repo_chunks" },
+          "max_files": { "type": "integer", "minimum": 1 }
+        },
+        "examples": [
+          { "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada", "collection": "repo_chunks" }
+        ]
+      },
+      "output_schema": {
+        "required": ["ok", "message", "job_id"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "message": { "type": "string" },
+          "job_id": { "type": "string" },
+          "collection": { "type": "string" },
+          "files_embedded": { "type": "integer" },
+          "points_upserted": { "type": "integer" }
+        },
+        "examples": [
+          {
+            "ok": true,
+            "message": "embed complete",
+            "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada",
+            "collection": "repo_chunks",
+            "files_embedded": 10,
+            "points_upserted": 48
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "kind": "job_status",
+          "key": "repo_index_v1:completed",
+          "description": "Manifest rows available for job_id",
+          "required": true
+        },
+        {
+          "kind": "env",
+          "key": "OPENAI_API_KEY",
+          "description": "Embedding API key",
+          "required": true
+        },
+        {
+          "kind": "env",
+          "key": "QDRANT_URL",
+          "description": "Qdrant HTTP endpoint",
+          "required": true
+        },
+        {
+          "kind": "qdrant_collection",
+          "key": "repo_chunks",
+          "description": "Target vector collection (created if missing per embed module)",
+          "required": true
+        }
+      ],
+      "cost_class": "high",
+      "latency_class": "batch_minutes",
+      "failure_modes": [
+        "missing_openai_key",
+        "qdrant_unreachable",
+        "embed_api_error",
+        "empty_manifest"
+      ],
+      "structured_error_refs": [
+        {
+          "code": "repo_embed.qdrant_down",
+          "message_hint": "Qdrant connection refused",
+          "retryable": true
+        }
+      ],
+      "side_effects": {
+        "writes_db": false,
+        "writes_artifact": false,
+        "calls_external_api": true,
+        "external_services": ["openai", "qdrant"]
+      },
+      "observability_fields": [
+        "job_id",
+        "collection",
+        "files_embedded",
+        "points_upserted",
+        "embed_model",
+        "latency_ms"
+      ],
+      "example_calls": [
+        {
+          "summary": "Embed manifest for job into repo_chunks",
+          "params": { "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada" },
+          "implementation_ref": "core.repo_chunks_embed.embed_repo_chunks_for_job"
+        }
+      ],
+      "usage_notes": "Does not touch document_chunks or Postgres documents table. Chunk sizes align with core.data_pipeline.",
+      "enabled": true,
+      "implementation_ref": "core.repo_chunks_embed"
+    },
+    {
+      "tool_id": "repo_code_retrieve_smoke",
+      "human_name": "Repo Code Retrieve (Smoke)",
+      "description": "Semantic search over repo_chunks collection; Week 1 smoke gate requires at least one hit with path metadata.",
+      "intent_tags": ["retrieve", "semantic_search", "repo_chunks", "smoke", "read_only"],
+      "input_schema": {
+        "required": ["query"],
+        "properties": {
+          "query": { "type": "string", "maxLength": 8000 },
+          "top_k": { "type": "integer", "minimum": 1, "maximum": 50, "default": 3 },
+          "collection": { "type": "string", "default": "repo_chunks" }
+        },
+        "examples": [
+          { "query": "repo_index_job", "top_k": 3 }
+        ]
+      },
+      "output_schema": {
+        "required": ["ok", "message", "hits"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "message": { "type": "string" },
+          "collection": { "type": "string" },
+          "query": { "type": "string" },
+          "top_k": { "type": "integer" },
+          "hits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "score": { "type": "number" },
+                "path": { "type": "string" },
+                "repo_rel_path": { "type": "string" },
+                "job_id": { "type": "string" }
+              }
+            }
+          }
+        },
+        "examples": [
+          {
+            "ok": true,
+            "message": "retrieve ok",
+            "collection": "repo_chunks",
+            "query": "repo_index_job",
+            "top_k": 3,
+            "hits": [{ "path": "core/repo_index_job.py", "score": 0.82 }]
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "kind": "qdrant_collection",
+          "key": "repo_chunks",
+          "description": "Collection populated by repo_chunks_embed_v1",
+          "required": true
+        },
+        {
+          "kind": "env",
+          "key": "OPENAI_API_KEY",
+          "description": "Query embedding",
+          "required": true
+        },
+        {
+          "kind": "env",
+          "key": "QDRANT_URL",
+          "description": "Qdrant HTTP endpoint",
+          "required": true
+        }
+      ],
+      "cost_class": "low",
+      "latency_class": "interactive",
+      "failure_modes": [
+        "empty_query",
+        "qdrant_search_failed",
+        "no_hits",
+        "missing_dependency"
+      ],
+      "structured_error_refs": [
+        {
+          "code": "repo_retrieve.no_hits",
+          "message_hint": "Smoke gate: ok=false when hits empty",
+          "retryable": true
+        }
+      ],
+      "side_effects": {
+        "writes_db": false,
+        "writes_artifact": false,
+        "calls_external_api": true,
+        "external_services": ["openai", "qdrant"]
+      },
+      "observability_fields": [
+        "collection",
+        "query",
+        "top_k",
+        "hit_count",
+        "top_score",
+        "top_path",
+        "latency_ms"
+      ],
+      "example_calls": [
+        {
+          "summary": "Smoke retrieve after embed",
+          "params": { "query": "repo_index_job", "top_k": 3 },
+          "implementation_ref": "core.repo_retrieve.repo_chunks_smoke_retrieve_and_verify"
+        }
+      ],
+      "usage_notes": "Read-only. Used by rag_query_agent repo mode and test_repo_retrieve. Does not invoke ask_rag_selector.",
+      "enabled": true,
+      "implementation_ref": "core.repo_retrieve"
+    },
+    {
+      "tool_id": "repo_graph_manifest_read",
+      "human_name": "Repo Graph / Manifest Read",
+      "description": "Load manifest.v0.json or graph.v0.json artifacts for a job_id without mutating index, graph, or vector store.",
+      "intent_tags": ["read_only", "artifact", "debug", "inspection"],
+      "input_schema": {
+        "required": ["job_id", "artifact_kind"],
+        "properties": {
+          "job_id": { "type": "string", "format": "uuid" },
+          "artifact_kind": { "type": "string", "enum": ["manifest", "graph"] },
+          "repo_root": { "type": "string" }
+        },
+        "examples": [
+          { "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada", "artifact_kind": "graph" }
+        ]
+      },
+      "output_schema": {
+        "required": ["ok", "message"],
+        "properties": {
+          "ok": { "type": "boolean" },
+          "message": { "type": "string" },
+          "artifact_rel": { "type": "string" },
+          "node_count": { "type": "integer" },
+          "edge_count": { "type": "integer" },
+          "file_count": { "type": "integer" }
+        },
+        "examples": [
+          {
+            "ok": true,
+            "message": "graph loaded",
+            "artifact_rel": "artifacts/repo_index/<job_id>/graph.v0.json",
+            "node_count": 120,
+            "edge_count": 340
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "kind": "artifact",
+          "key": "artifacts/repo_index/<job_id>/",
+          "description": "Target artifact file exists for job_id",
+          "required": true
+        }
+      ],
+      "cost_class": "trivial",
+      "latency_class": "interactive",
+      "failure_modes": ["artifact_missing", "invalid_json", "unsupported_artifact_kind"],
+      "structured_error_refs": [
+        {
+          "code": "artifact.not_found",
+          "message_hint": "Build index/graph before read",
+          "retryable": false
+        }
+      ],
+      "side_effects": {
+        "writes_db": false,
+        "writes_artifact": false,
+        "calls_external_api": false,
+        "external_services": []
+      },
+      "observability_fields": ["job_id", "artifact_kind", "artifact_rel", "latency_ms"],
+      "example_calls": [
+        {
+          "summary": "Load graph artifact for inspection",
+          "params": {
+            "job_id": "d0c27b3b-47ef-4efc-8d33-3de356f97ada",
+            "artifact_kind": "graph"
+          },
+          "implementation_ref": "core.code_graph.load_manifest_artifact"
+        }
+      ],
+      "usage_notes": "Conceptual read tool for Selector planning and debug; pairs with code_graph_builder_v0_1 output paths.",
+      "enabled": true,
+      "implementation_ref": "core.code_graph"
+    }
+  ]
+}

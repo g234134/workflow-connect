@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/phase6_5/events/v1",
+  "title": "Phase65EventsV1",
+  "description": "Phase 6.5 MVP event envelope and payloads (strict). Tier: mvp_v0.1 · NOT production-ready.",
+  "$defs": {
+    "SchemaVersionV1": {
+      "type": "string",
+      "const": "v1"
+    },
+    "IsoDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "UuidString": {
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "EntityType": {
+      "type": "string",
+      "enum": [
+        "lead",
+        "requirement_profile",
+        "order",
+        "job",
+        "run",
+        "delivery",
+        "invoice",
+        "payment",
+        "skill_card",
+        "skill_run",
+        "replay_event"
+      ]
+    },
+    "EventType": {
+      "type": "string",
+      "enum": [
+        "lead.created",
+        "lead.qualified",
+        "lead.archived",
+        "requirement_profile.created",
+        "requirement_profile.updated",
+        "order.placed",
+        "order.confirmed",
+        "order.cancelled",
+        "job.created",
+        "job.started",
+        "job.completed",
+        "run.started",
+        "run.completed",
+        "run.failed",
+        "delivery.submitted",
+        "delivery.accepted",
+        "invoice.issued",
+        "invoice.voided",
+        "payment.initiated",
+        "payment.captured",
+        "payment.failed",
+        "skill_card.published",
+        "skill_card.deprecated",
+        "skill_run.started",
+        "skill_run.completed",
+        "skill_run.failed",
+        "replay_event.recorded"
+      ]
+    },
+    "EventMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string", "maxLength": 64 },
+        "trace_id": { "type": "string", "maxLength": 200 },
+        "actor_ref": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "GenericEntityPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "changes": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "number", "boolean", "null"] }
+        }
+      }
+    },
+    "LeadCreatedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "properties": {
+        "source": { "type": "string", "maxLength": 64 }
+      }
+    },
+    "OrderPlacedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order_id", "lead_id"],
+      "properties": {
+        "order_id": { "$ref": "#/$defs/UuidString" },
+        "lead_id": { "$ref": "#/$defs/UuidString" }
+      }
+    },
+    "JobStartedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["job_id", "order_id"],
+      "properties": {
+        "job_id": { "$ref": "#/$defs/UuidString" },
+        "order_id": { "$ref": "#/$defs/UuidString" }
+      }
+    },
+    "RunCompletedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run_id", "job_id"],
+      "properties": {
+        "run_id": { "$ref": "#/$defs/UuidString" },
+        "job_id": { "$ref": "#/$defs/UuidString" },
+        "duration_ms": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "PaymentCapturedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["payment_id", "invoice_id", "amount"],
+      "properties": {
+        "payment_id": { "$ref": "#/$defs/UuidString" },
+        "invoice_id": { "$ref": "#/$defs/UuidString" },
+        "amount": { "type": "number", "minimum": 0 }
+      }
+    },
+    "SkillRunStartedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skill_run_id", "skill_card_id"],
+      "properties": {
+        "skill_run_id": { "$ref": "#/$defs/UuidString" },
+        "skill_card_id": { "$ref": "#/$defs/UuidString" },
+        "run_id": { "$ref": "#/$defs/UuidString" }
+      }
+    },
+    "ReplayRecordedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["replay_event_id", "target_entity_type", "target_entity_id"],
+      "properties": {
+        "replay_event_id": { "$ref": "#/$defs/UuidString" },
+        "target_entity_type": { "$ref": "#/$defs/EntityType" },
+        "target_entity_id": { "$ref": "#/$defs/UuidString" },
+        "causation_event_id": { "$ref": "#/$defs/UuidString" }
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "entity_type",
+    "entity_id",
+    "occurred_at",
+    "schema_version",
+    "payload",
+    "metadata"
+  ],
+  "properties": {
+    "event_id": { "$ref": "#/$defs/UuidString" },
+    "event_type": { "$ref": "#/$defs/EventType" },
+    "entity_type": { "$ref": "#/$defs/EntityType" },
+    "entity_id": { "$ref": "#/$defs/UuidString" },
+    "occurred_at": { "$ref": "#/$defs/IsoDateTime" },
+    "schema_version": { "$ref": "#/$defs/SchemaVersionV1" },
+    "payload": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "metadata": { "$ref": "#/$defs/EventMetadata" }
+  }
+}

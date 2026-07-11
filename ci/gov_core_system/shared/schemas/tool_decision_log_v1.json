@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/tool_decision_log/v1",
+  "title": "ToolDecisionLogV1",
+  "description": "Phase 8.9 tool selector decision record for trace alignment and Learning Mode (read-only aggregate). Tier: mvp_v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "decision_id",
+    "work_order_id",
+    "created_at",
+    "selector_rule_id",
+    "request_type",
+    "task_summary",
+    "candidate_tools",
+    "selected_tools",
+    "rejected_tools",
+    "reasons",
+    "human_review_required",
+    "needs_tools"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "tool_decision_log_v1" },
+    "decision_id": { "type": "string", "minLength": 8, "maxLength": 64 },
+    "work_order_id": { "type": "string", "minLength": 8, "maxLength": 64 },
+    "trace_id": { "type": ["string", "null"], "maxLength": 128 },
+    "observation_id": { "type": ["string", "null"], "maxLength": 128 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "selector_rule_id": {
+      "type": "string",
+      "pattern": "^S([1-9]|1[0-2])$"
+    },
+    "request_type": {
+      "type": "string",
+      "enum": ["info_query", "small_automation", "browser_task", "report_organize", "other"]
+    },
+    "task_summary": { "type": "string", "maxLength": 300 },
+    "gate_scores_snapshot": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roi_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "risk_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "cost_level": { "type": "string", "enum": ["low", "med", "high"] },
+        "cost_estimate_usd": { "type": "number", "minimum": 0 }
+      }
+    },
+    "candidate_tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tool_id", "eligible"],
+        "properties": {
+          "tool_id": { "type": "string" },
+          "eligible": { "type": "boolean" },
+          "filter_reason": { "type": "string", "maxLength": 128 }
+        }
+      }
+    },
+    "selected_tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tool_id", "priority", "params"],
+        "properties": {
+          "tool_id": { "type": "string" },
+          "priority": { "type": "integer", "minimum": 0, "maximum": 9 },
+          "params": { "type": "object" },
+          "cost_hint_usd": { "type": "number", "minimum": 0 },
+          "risk_level": { "type": "string", "enum": ["low", "med", "high", "critical"] }
+        }
+      }
+    },
+    "rejected_tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tool_id", "reason_code", "reason"],
+        "properties": {
+          "tool_id": { "type": "string" },
+          "reason_code": {
+            "type": "string",
+            "enum": [
+              "disabled_in_catalog",
+              "risk_budget_exceeded",
+              "cost_budget_exceeded",
+              "request_type_mismatch",
+              "gate_deferred",
+              "missing_input",
+              "superseded_by_rule",
+              "force_no_tools",
+              "human_review_only"
+            ]
+          },
+          "reason": { "type": "string", "maxLength": 500 }
+        }
+      }
+    },
+    "reasons": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 500 },
+      "maxItems": 32
+    },
+    "estimates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cost_usd": { "type": "number", "minimum": 0 },
+        "risk_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "latency_ms_p95": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "human_review_required": { "type": "boolean" },
+    "needs_tools": { "type": "boolean" },
+    "actual_outcome": {
+      "type": "string",
+      "enum": ["success", "failed", "skipped", "pending"]
+    },
+    "actual_cost_usd": { "type": "number", "minimum": 0 },
+    "actual_latency_ms": { "type": "integer", "minimum": 0 },
+    "actual_tools_used": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "structured_error_refs": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 64 }
+    },
+    "extensions": { "type": "object" }
+  }
+}

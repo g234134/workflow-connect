@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/tool_catalog/v1",
+  "title": "ToolCatalogV1",
+  "description": "Phase 8.8 finite tool pool (static catalog). Tier: mvp_v0.1 · NOT production-ready. No dynamic tool installation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "catalog_revision", "tier", "tools"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "tool_catalog_v1" },
+    "catalog_revision": { "type": "string", "maxLength": 32 },
+    "tier": { "type": "string", "const": "mvp_v0.1" },
+    "policy_defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_tools_per_task": { "type": "integer", "minimum": 1, "maximum": 8, "default": 3 },
+        "default_selector_version": { "type": "string", "const": "tool_selection_v1" }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 16,
+      "items": { "$ref": "#/$defs/ToolDefinition" }
+    }
+  },
+  "$defs": {
+    "RiskLevel": {
+      "type": "string",
+      "enum": ["low", "med", "high", "critical"]
+    },
+    "CostLevel": {
+      "type": "string",
+      "enum": ["low", "med", "high"]
+    },
+    "ToolType": {
+      "type": "string",
+      "enum": ["llm", "code", "browser", "data", "file", "notify", "retrieval", "human"]
+    },
+    "OutputShape": {
+      "type": "string",
+      "enum": ["text", "json", "table", "artifact_ref", "empty"]
+    },
+    "ToolDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool_id",
+        "type",
+        "enabled",
+        "input_schema",
+        "expected_output",
+        "cost_hint",
+        "risk_level",
+        "latency_hint",
+        "tags",
+        "executor_binding",
+        "retry_profile"
+      ],
+      "properties": {
+        "tool_id": { "type": "string", "pattern": "^[a-z][a-z0-9_.]{2,48}$" },
+        "type": { "$ref": "#/$defs/ToolType" },
+        "display_name": { "type": "string", "maxLength": 64 },
+        "enabled": { "type": "boolean" },
+        "input_schema": { "type": "object" },
+        "expected_output": { "type": "object" },
+        "cost_hint": { "type": "object" },
+        "risk_level": { "$ref": "#/$defs/RiskLevel" },
+        "latency_hint": { "type": "object" },
+        "tags": { "type": "array", "items": { "type": "string", "maxLength": 32 }, "maxItems": 24 },
+        "executor_binding": { "type": "object" },
+        "retry_profile": { "type": "object" },
+        "extensions": { "type": "object" }
+      }
+    }
+  },
+  "schema_version": "tool_catalog_v1",
+  "catalog_revision": "1.0.0",
+  "tier": "mvp_v0.1",
+  "policy_defaults": {
+    "max_tools_per_task": 3,
+    "default_selector_version": "tool_selection_v1"
+  },
+  "tools": [
+    {
+      "tool_id": "llm.ask",
+      "type": "llm",
+      "display_name": "LLM Ask",
+      "enabled": true,
+      "input_schema": {
+        "required": ["query_text"],
+        "properties": {
+          "query_text": { "type": "string", "maxLength": 16000 },
+          "context_refs": { "type": "array", "items": { "type": "string" } },
+          "max_answer_tokens": { "type": "integer", "minimum": 1, "maximum": 32000 }
+        },
+        "examples": [
+          {
+            "query_text": "Summarize intake gate rules for info_query.",
+            "context_refs": ["collection:gov_docs"],
+            "max_answer_tokens": 2000
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "text",
+        "fields": ["answer_text", "sources"]
+      },
+      "cost_hint": {
+        "unit": "per_invocation",
+        "estimate_usd_p50": 0.02,
+        "cost_level": "med"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 3000, "p95_ms": 12000 },
+      "tags": ["llm", "rag", "info_query", "default"],
+      "executor_binding": {
+        "runner": "ask_pipeline",
+        "mode": "ask"
+      },
+      "retry_profile": {
+        "default_retryable": true,
+        "max_attempts_hint": 2
+      }
+    },
+    {
+      "tool_id": "rag.retrieve",
+      "type": "retrieval",
+      "display_name": "RAG Retrieve",
+      "enabled": true,
+      "input_schema": {
+        "required": ["query_text"],
+        "properties": {
+          "query_text": { "type": "string", "maxLength": 8000 },
+          "context_refs": { "type": "array", "items": { "type": "string" } },
+          "top_k": { "type": "integer", "minimum": 1, "maximum": 50, "default": 8 }
+        },
+        "examples": [
+          {
+            "query_text": "intake gate ROI scoring",
+            "context_refs": ["collection:gov_docs"],
+            "top_k": 8
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["chunks", "sources"]
+      },
+      "cost_hint": {
+        "unit": "per_invocation",
+        "estimate_usd_p50": 0.005,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 800, "p95_ms": 4000 },
+      "tags": ["retrieval", "embedding", "info_query"],
+      "executor_binding": {
+        "runner": "ask_pipeline",
+        "mode": "retrieve_only"
+      },
+      "retry_profile": {
+        "default_retryable": true,
+        "max_attempts_hint": 2
+      }
+    },
+    {
+      "tool_id": "code.runner",
+      "type": "code",
+      "display_name": "Code Runner",
+      "enabled": true,
+      "input_schema": {
+        "required": ["automation_goal"],
+        "properties": {
+          "automation_goal": { "type": "string", "maxLength": 4000 },
+          "input_artifact_hints": { "type": "array", "items": { "type": "string" } },
+          "runtime_profile": { "type": "string", "enum": ["inline", "batch"] },
+          "estimated_runtime_sec": { "type": "integer", "minimum": 0, "maximum": 3600 }
+        },
+        "examples": [
+          {
+            "automation_goal": "Convert inbound CSV to normalized JSON",
+            "input_artifact_hints": ["artifact:inbound_csv"],
+            "runtime_profile": "inline",
+            "estimated_runtime_sec": 120
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "artifact_ref",
+        "fields": ["exit_code", "stdout_ref", "stderr_ref"]
+      },
+      "cost_hint": {
+        "unit": "per_invocation",
+        "estimate_usd_p50": 0.03,
+        "cost_level": "med"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 5000, "p95_ms": 60000 },
+      "tags": ["automation", "small_automation", "script"],
+      "executor_binding": {
+        "runner": "chariot.factory",
+        "sandbox": "restricted"
+      },
+      "retry_profile": {
+        "default_retryable": false,
+        "max_attempts_hint": 1
+      }
+    },
+    {
+      "tool_id": "browser.dom_task",
+      "type": "browser",
+      "display_name": "Browser DOM Task",
+      "enabled": true,
+      "input_schema": {
+        "required": ["browser_plan"],
+        "properties": {
+          "browser_plan": { "type": "object" },
+          "target_url_or_app": { "type": "string", "maxLength": 512 },
+          "requires_login": { "type": "boolean", "default": false },
+          "step_count_hint": { "type": "integer", "minimum": 1, "maximum": 100 }
+        },
+        "examples": [
+          {
+            "browser_plan": { "plan_id": "plan_demo", "steps": [{ "action": "open", "selector": "#app" }] },
+            "target_url_or_app": "https://example.internal/app",
+            "requires_login": false,
+            "step_count_hint": 3
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["plan_id", "steps_completed", "dom_snapshots"]
+      },
+      "cost_hint": {
+        "unit": "per_step",
+        "estimate_usd_p50": 0.04,
+        "cost_level": "med"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 8000, "p95_ms": 45000 },
+      "tags": ["browser", "dom", "browser_task", "phase8_5"],
+      "executor_binding": {
+        "runner": "browser_runner",
+        "adapter": "in_memory_v0"
+      },
+      "retry_profile": {
+        "default_retryable": false,
+        "max_attempts_hint": 1
+      }
+    },
+    {
+      "tool_id": "db.read_query",
+      "type": "data",
+      "display_name": "DB Read Query",
+      "enabled": true,
+      "input_schema": {
+        "required": ["query_template_id", "params"],
+        "properties": {
+          "query_template_id": { "type": "string", "maxLength": 64 },
+          "params": { "type": "object" },
+          "row_limit": { "type": "integer", "minimum": 1, "maximum": 10000, "default": 500 }
+        },
+        "examples": [
+          {
+            "query_template_id": "report_default_v1",
+            "params": { "dataset_hint": "monthly_sales" },
+            "row_limit": 500
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "table",
+        "fields": ["rows", "row_count", "columns"]
+      },
+      "cost_hint": {
+        "unit": "per_query",
+        "estimate_usd_p50": 0.001,
+        "cost_level": "low"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 200, "p95_ms": 3000 },
+      "tags": ["database", "read_only", "report_organize"],
+      "executor_binding": {
+        "runner": "dark.data",
+        "access": "read_only"
+      },
+      "retry_profile": {
+        "default_retryable": true,
+        "max_attempts_hint": 2
+      }
+    },
+    {
+      "tool_id": "file.io",
+      "type": "file",
+      "display_name": "File IO",
+      "enabled": true,
+      "input_schema": {
+        "required": ["operation", "logical_paths"],
+        "properties": {
+          "operation": { "type": "string", "enum": ["read", "write", "list"] },
+          "logical_paths": { "type": "array", "items": { "type": "string" }, "maxItems": 32 },
+          "encoding": { "type": "string", "default": "utf-8" }
+        },
+        "examples": [
+          {
+            "operation": "read",
+            "logical_paths": ["artifact:inbound_table"],
+            "encoding": "utf-8"
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "artifact_ref",
+        "fields": ["artifacts", "bytes_read"]
+      },
+      "cost_hint": {
+        "unit": "per_invocation",
+        "estimate_usd_p50": 0.0005,
+        "cost_level": "low"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 100, "p95_ms": 2000 },
+      "tags": ["file", "report_organize", "artifact"],
+      "executor_binding": {
+        "runner": "gov_paths",
+        "resolve": "logical_only"
+      },
+      "retry_profile": {
+        "default_retryable": false,
+        "max_attempts_hint": 1
+      }
+    },
+    {
+      "tool_id": "notify.channel",
+      "type": "notify",
+      "display_name": "Notify Channel",
+      "enabled": true,
+      "input_schema": {
+        "required": ["channel", "message_body"],
+        "properties": {
+          "channel": { "type": "string", "enum": ["telegram", "webhook", "cli"] },
+          "message_body": { "type": "string", "maxLength": 4096 },
+          "recipient_ref": { "type": "string", "maxLength": 128 }
+        },
+        "examples": [
+          {
+            "channel": "telegram",
+            "message_body": "Task completed; see work order summary.",
+            "recipient_ref": "channel:ops"
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["delivery_id", "status"]
+      },
+      "cost_hint": {
+        "unit": "per_message",
+        "estimate_usd_p50": 0.0001,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 500, "p95_ms": 5000 },
+      "tags": ["notification", "telegram", "webhook"],
+      "executor_binding": {
+        "runner": "notification_dispatcher"
+      },
+      "retry_profile": {
+        "default_retryable": true,
+        "max_attempts_hint": 3
+      }
+    },
+    {
+      "tool_id": "human.review_checkpoint",
+      "type": "human",
+      "display_name": "Human Review Checkpoint",
+      "enabled": true,
+      "input_schema": {
+        "required": ["review_reason"],
+        "properties": {
+          "review_reason": { "type": "string", "maxLength": 500 },
+          "suggested_actions": { "type": "array", "items": { "type": "string" } }
+        },
+        "examples": [
+          {
+            "review_reason": "pending_review: moderate ROI or elevated risk",
+            "suggested_actions": ["approve", "reject"]
+          }
+        ]
+      },
+      "expected_output": {
+        "shape": "empty",
+        "fields": ["decision", "reviewer_id", "reviewed_at"]
+      },
+      "cost_hint": {
+        "unit": "per_checkpoint",
+        "estimate_usd_p50": 0,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 0, "p95_ms": 0 },
+      "tags": ["human", "interrupt", "pending_review", "wave4b"],
+      "executor_binding": {
+        "runner": "interrupt_service",
+        "wave": "4b"
+      },
+      "retry_profile": {
+        "default_retryable": false,
+        "max_attempts_hint": 0
+      }
+    }
+  ]
+}

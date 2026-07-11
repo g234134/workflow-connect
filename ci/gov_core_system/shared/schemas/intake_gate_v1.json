@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/intake_gate/v1",
+  "title": "IntakeGateV1",
+  "description": "Phase 7.5 intake/gate wire contract (data-cleaning MVP). Aligns gate decisions with Phase 6.5 lead / requirement_profile / order pre-states. Tier: mvp_v0.1 · NOT production-ready.",
+  "$defs": {
+    "SchemaVersion": {
+      "type": "string",
+      "const": "intake_gate_v1"
+    },
+    "GateDecision": {
+      "type": "string",
+      "enum": ["accept", "reject", "defer"]
+    },
+    "WorkCategory": {
+      "type": "string",
+      "enum": ["data_cleaning", "other", "unknown"]
+    },
+    "SourceChannel": {
+      "type": "string",
+      "enum": ["telegram", "cli", "watchdog", "api", "unknown"]
+    },
+    "Phase65EntityType": {
+      "type": "string",
+      "enum": ["lead", "requirement_profile", "order"]
+    },
+    "Phase65LeadStatus": {
+      "type": "string",
+      "enum": ["draft", "qualified", "archived"]
+    },
+    "Phase65RequirementProfileStatus": {
+      "type": "string",
+      "enum": ["draft", "active", "closed"]
+    },
+    "Phase65OrderStatus": {
+      "type": "string",
+      "enum": ["draft", "placed", "confirmed", "cancelled"]
+    },
+    "Phase65EventType": {
+      "type": "string",
+      "enum": [
+        "lead.created",
+        "lead.qualified",
+        "lead.archived",
+        "requirement_profile.created",
+        "requirement_profile.updated",
+        "order.placed",
+        "order.confirmed",
+        "order.cancelled"
+      ]
+    },
+    "IntakeFieldPath": {
+      "type": "string",
+      "description": "Logical intake path, e.g. intake.description",
+      "maxLength": 128
+    },
+    "EntityFieldPath": {
+      "type": "string",
+      "description": "Phase 6.5 entity field path per phase6_5_entities_v1.json",
+      "maxLength": 128
+    },
+    "FieldMapping": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/EntityFieldPath"
+      },
+      "description": "Map intake logical paths → Phase 6.5 entity field paths"
+    },
+    "GateCheckItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "passed"],
+      "properties": {
+        "id": { "type": "string", "maxLength": 64 },
+        "passed": { "type": "boolean" },
+        "detail": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "EntityPreStateHint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_type", "pre_status", "field_mapping"],
+      "properties": {
+        "entity_type": { "$ref": "#/$defs/Phase65EntityType" },
+        "pre_status": {
+          "type": "string",
+          "description": "Expected status before downstream mutation (Phase 6.5 enum for that entity)"
+        },
+        "next_status": {
+          "type": ["string", "null"],
+          "description": "Target status after gate decision is applied"
+        },
+        "next_event_type": {
+          "anyOf": [{ "$ref": "#/$defs/Phase65EventType" }, { "type": "null" }],
+          "description": "Suggested Phase 6.5 event to emit when promoting this entity"
+        },
+        "field_mapping": { "$ref": "#/$defs/FieldMapping" },
+        "notes": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "Phase65PreStateBundle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contract_tier", "entities_schema_version", "decision"],
+      "properties": {
+        "contract_tier": { "type": "string", "const": "mvp_v0.1" },
+        "entities_schema_version": { "type": "string", "const": "v1" },
+        "events_schema_version": { "type": "string", "const": "v1" },
+        "decision": { "$ref": "#/$defs/GateDecision" },
+        "lead": {
+          "anyOf": [{ "$ref": "#/$defs/EntityPreStateHint" }, { "type": "null" }]
+        },
+        "requirement_profile": {
+          "anyOf": [{ "$ref": "#/$defs/EntityPreStateHint" }, { "type": "null" }]
+        },
+        "order": {
+          "anyOf": [{ "$ref": "#/$defs/EntityPreStateHint" }, { "type": "null" }]
+        },
+        "authority": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "entities_json": { "const": "shared/schemas/phase6_5_entities_v1.json" },
+            "events_json": { "const": "shared/schemas/phase6_5_events_v1.json" },
+            "python_contract": { "const": "core.contracts.phase6_5_data_contract" }
+          }
+        }
+      }
+    },
+    "IntakeGateRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": { "type": "string", "maxLength": 4000 },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "maxItems": 32
+        },
+        "explicit_task_type": { "type": "string", "maxLength": 64 },
+        "source_channel": { "$ref": "#/$defs/SourceChannel" },
+        "file_extension_hints": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 16 },
+          "maxItems": 32
+        },
+        "inbound_path_hint": {
+          "type": "string",
+          "maxLength": 256,
+          "description": "Logical/relative path only; no disk absolute paths"
+        },
+        "batch_size_hint": { "type": ["integer", "null"], "minimum": 1 }
+      },
+      "anyOf": [
+        { "required": ["description"], "properties": { "description": { "minLength": 1 } } },
+        { "required": ["explicit_task_type"], "properties": { "explicit_task_type": { "minLength": 1 } } },
+        { "required": ["tags"], "properties": { "tags": { "minItems": 1 } } }
+      ]
+    },
+    "IntakeGateResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ok",
+        "decision",
+        "work_category",
+        "confidence",
+        "message",
+        "gate_checks",
+        "reasons",
+        "schema_version",
+        "phase6_5_pre_state"
+      ],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "decision": { "$ref": "#/$defs/GateDecision" },
+        "work_category": { "$ref": "#/$defs/WorkCategory" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "message": { "type": "string", "maxLength": 500 },
+        "suggested_task_type": { "type": ["string", "null"], "maxLength": 64 },
+        "suggested_pipeline": { "type": ["string", "null"], "maxLength": 128 },
+        "gate_checks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/GateCheckItem" }
+        },
+        "reasons": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 }
+        },
+        "schema_version": { "$ref": "#/$defs/SchemaVersion" },
+        "phase6_5_pre_state": { "$ref": "#/$defs/Phase65PreStateBundle" }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "title": "Request",
+      "$ref": "#/$defs/IntakeGateRequest"
+    },
+    {
+      "title": "Result",
+      "$ref": "#/$defs/IntakeGateResult"
+    }
+  ]
+}

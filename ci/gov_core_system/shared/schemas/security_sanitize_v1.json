@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core/security_sanitize_v1.json",
+  "title": "Gov Core Security Sanitize Helper v1",
+  "description": "dev/staging v1 · NOT production-ready. Interface contract for PII redaction before API export, monitoring reads, and observability logs.",
+  "type": "object",
+  "properties": {
+    "tier": { "const": "dev_staging_v1" },
+    "production_ready": { "const": false },
+    "python_authority": {
+      "const": "core.security_compliance",
+      "description": "PIIMasker, SanitizeHelper (sanitize_mapping_for_export), EncryptionHook"
+    },
+    "methods": {
+      "type": "object",
+      "properties": {
+        "mask_text": { "description": "Mask PII in a single string" },
+        "sanitize_mapping_for_export": {
+          "description": "Recursive redact for dict/list payloads (alias: redact_dict)"
+        },
+        "sanitize_for_log": {
+          "description": "Same as sanitize_mapping_for_export; used by observability_v2.log_event"
+        },
+        "is_pii_redaction_enabled": { "description": "Env GOV_CORE_PII_REDACTION_ENABLED, default true" },
+        "get_pii_denylist_keys": {
+          "description": "Default denylist + GOV_CORE_PII_DENYLIST_EXTRA (comma-separated keys)"
+        },
+        "get_pii_allowlist_keys": {
+          "description": "Default allowlist + GOV_CORE_PII_ALLOWLIST_EXTRA (comma-separated keys)"
+        },
+        "get_encryption_hook": { "description": "noop | stub | kms EncryptionHook" },
+        "sanitize_langfuse_outbound": { "description": "Langfuse SDK metadata / limited I/O scrub" },
+        "sanitize_ingest_errors": { "description": "monitoring ingest errors[] scrub" },
+        "install_gov_core_logger_sanitize": { "description": "gov_core logger namespace filter" }
+      }
+    },
+    "env_flags": {
+      "type": "object",
+      "properties": {
+        "GOV_CORE_PII_REDACTION_ENABLED": { "default": "true" },
+        "GOV_CORE_LANGFUSE_SCRUB_ENABLED": { "default": "true" },
+        "GOV_CORE_LOGGER_SANITIZE_ENFORCED": { "default": "true" },
+        "GOV_CORE_PII_POLICY_CONFIG": { "description": "Path to JSON denylist/allowlist policy" },
+        "GOV_CORE_PII_DENYLIST_EXTRA": { "description": "Extra field names to always mask" },
+        "GOV_CORE_PII_ALLOWLIST_EXTRA": { "description": "Extra field names to never redact" },
+        "GOV_CORE_ENCRYPTION_HOOK_MODE": { "enum": ["noop", "stub", "kms"] },
+        "GOV_CORE_ENCRYPTION_STUB_ENABLED": { "description": "Legacy alias for stub mode" },
+        "GOV_CORE_KMS_POC_ENABLED": { "description": "Dev/staging KMS PoC switch" },
+        "GOV_CORE_KMS_POC_KEY": { "description": "Local symmetric secret for KMS PoC" },
+        "GOV_CORE_KMS_KEY_ID": { "description": "CMK for cloud kms hook (production)" }
+      }
+    },
+    "wired_paths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Minimum integration: monitoring read models, error_adapter finalize, observability_v2 structured logs"
+    }
+  }
+}

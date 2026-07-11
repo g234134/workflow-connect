@@ -1,0 +1,325 @@
+"""
+Canonical field and env naming for gov_core (single source of truth).
+
+Packages A–D MUST import via ``core.gov_core_contracts`` (re-exports this module).
+Do not duplicate string literals for schema versions or wire keys.
+"""
+
+from __future__ import annotations
+
+import re
+
+# --- Schema versions ---
+TRACE_SCHEMA_VERSION = "v1"
+ERROR_SCHEMA_VERSION = "v1"
+TASK_COSTS_SCHEMA_VERSION = "v1"
+BUDGET_CONFIG_SCHEMA_VERSION = "v1"
+CHECKPOINT_CONFIG_SCHEMA_VERSION = "v1"
+DLQ_SCHEMA_VERSION = "v1"
+FEATURE_FLAGS_SCHEMA_VERSION = "v1"
+PHASE6_5_ENTITIES_SCHEMA_VERSION = "v1"
+PHASE6_5_EVENTS_SCHEMA_VERSION = "v1"
+
+# --- Loggers ---
+LOG_NAMESPACE = "gov_core"
+LOG_LOGGER_OBSERVABILITY = f"{LOG_NAMESPACE}.observability"
+LOG_LOGGER_BUDGET = f"{LOG_NAMESPACE}.budget"
+LOG_LOGGER_COST = f"{LOG_NAMESPACE}.cost"
+LOG_LOGGER_ERRORS = f"{LOG_NAMESPACE}.errors"
+LOG_LOGGER_RETRY = f"{LOG_NAMESPACE}.retry"
+
+# --- Cross-cutting correlation ids ---
+FIELD_TRACE_ID = "trace_id"
+FIELD_SESSION_ID = "session_id"
+FIELD_TASK_ID = "task_id"
+FIELD_WORKFLOW_ID = "workflow_id"
+FIELD_DEPARTMENT = "department"
+FIELD_STATUS = "status"
+FIELD_RELEASE = "release"
+FIELD_HUMAN_REVIEW_REQUIRED = "human_review_required"
+FIELD_HANDOFF_STATUS = "handoff_status"
+FIELD_IDEMPOTENCY_KEY = "idempotency_key"
+HEADER_IDEMPOTENCY_KEY = "X-Idempotency-Key"
+
+# --- Idempotency statuses (Phase 5 Sprint 2) ---
+STATUS_IDEMPOTENCY_PROCESSING = "processing"
+STATUS_IDEMPOTENCY_COMPLETED = "completed"
+STATUS_IDEMPOTENCY_FAILED = "failed"
+ENV_IDEMPOTENCY_TTL_HOURS = "GOV_CORE_IDEMPOTENCY_TTL_HOURS"
+DEFAULT_IDEMPOTENCY_TTL_HOURS = 24
+FIELD_CREATED_AT = "created_at"
+FIELD_UPDATED_AT = "updated_at"
+FIELD_RECORDED_AT = "recorded_at"
+
+# --- Phase 6.5 data contract (entities + events) ---
+FIELD_RECORD_ID = "id"
+FIELD_SCHEMA_VERSION = "schema_version"
+FIELD_LEAD_ID = "lead_id"
+FIELD_REQUIREMENT_PROFILE_ID = "requirement_profile_id"
+FIELD_ORDER_ID = "order_id"
+FIELD_JOB_ID = "job_id"
+FIELD_RUN_ID = "run_id"
+FIELD_INVOICE_ID = "invoice_id"
+FIELD_SKILL_CARD_ID = "skill_card_id"
+FIELD_SKILL_RUN_ID = "skill_run_id"
+FIELD_TARGET_ENTITY_TYPE = "target_entity_type"
+FIELD_TARGET_ENTITY_ID = "target_entity_id"
+FIELD_EVENT_ID = "event_id"
+FIELD_EVENT_TYPE = "event_type"
+FIELD_ENTITY_TYPE = "entity_type"
+FIELD_ENTITY_ID = "entity_id"
+FIELD_OCCURRED_AT = "occurred_at"
+FIELD_PAYLOAD = "payload"
+FIELD_METADATA = "metadata"
+FIELD_CONTACT_REF = "contact_ref"
+FIELD_OWNER_REF = "owner_ref"
+FIELD_SOURCE = "source"
+FIELD_REPLAY_KIND = "replay_kind"
+FIELD_SNAPSHOT_REF = "snapshot_ref"
+FIELD_CAUSATION_EVENT_ID = "causation_event_id"
+
+# --- DLQ manual retry (Phase 7) ---
+ENV_DLQ_MAX_RETRIES = "GOV_CORE_DLQ_MAX_RETRIES"
+DEFAULT_DLQ_MAX_RETRIES = 3
+FIELD_RETRIED_AT = "retried_at"
+FIELD_DLQ_STATUS = "dlq_status"
+FIELD_NEXT_RETRY_AT = "next_retry_at"
+DLQ_STATUS_PENDING = "pending"
+DLQ_STATUS_RETRIED = "retried"
+
+# --- DLQ auto retry scheduler (Phase 8 Wave 4a) ---
+ENV_DLQ_AUTO_RETRY_ENABLED = "GOV_CORE_DLQ_AUTO_RETRY_ENABLED"
+ENV_DLQ_AUTO_RETRY_INTERVAL_SECONDS = "GOV_CORE_DLQ_AUTO_RETRY_INTERVAL_SECONDS"
+DEFAULT_DLQ_AUTO_RETRY_INTERVAL_SECONDS = 60
+
+# --- Human-in-the-loop interrupt service (Phase 8 Wave 4b) ---
+FIELD_INTERRUPT_STATUS = "interrupt_status"
+FIELD_INTERRUPT_NODE = "interrupt_node"
+INTERRUPT_STATUS_WAITING_HUMAN = "waiting_human"
+INTERRUPT_STATUS_RESUMED = "resumed"
+INTERRUPT_STATUS_REJECTED = "rejected"
+
+# --- Admin / DLQ API (Phase 5 Sprint 2) ---
+HEADER_ADMIN_TOKEN = "X-Admin-Token"
+ENV_ADMIN_TOKEN = "GOV_CORE_ADMIN_TOKEN"
+ENV_DLQ_PG_QUERY_ENABLED = "GOV_CORE_DLQ_PG_QUERY_ENABLED"
+FIELD_AGENT_NAME = "agent_name"
+FIELD_MODEL_NAME = "model_name"
+
+# --- Cost / tokens ---
+FIELD_INPUT_TOKENS = "input_tokens"
+FIELD_OUTPUT_TOKENS = "output_tokens"
+FIELD_TOTAL_TOKENS = "total_tokens"
+FIELD_TOTAL_COST_USD = "total_cost_usd"
+FIELD_DURATION_MS = "duration_ms"
+FIELD_EXECUTION_TIME_SEC = "execution_time_sec"
+FIELD_SUCCESS = "success"
+FIELD_TIMESTAMP = "timestamp"
+
+# --- Retry / errors ---
+FIELD_RETRY_COUNT = "retry_count"
+FIELD_ERROR_TYPE = "error_type"
+FIELD_RETRYABLE = "retryable"
+
+# --- Retry policy env (Phase 8 Wave 3) ---
+ENV_RETRY_MAX_ATTEMPTS = "GOV_CORE_RETRY_MAX_ATTEMPTS"
+ENV_RETRY_BASE_DELAY_MS = "GOV_CORE_RETRY_BASE_DELAY_MS"
+ENV_RETRY_MAX_DELAY_MS = "GOV_CORE_RETRY_MAX_DELAY_MS"
+DEFAULT_RETRY_MAX_ATTEMPTS = 3
+DEFAULT_RETRY_BASE_DELAY_MS = 200
+DEFAULT_RETRY_MAX_DELAY_MS = 5000
+# Legacy backoff env (Phase 3); read as fallback when base delay unset
+ENV_RETRY_BACKOFF_MS = "GOV_CORE_RETRY_BACKOFF_MS"
+ENV_RETRY_BACKOFF_MULTIPLIER = "GOV_CORE_RETRY_BACKOFF_MULTIPLIER"
+
+# --- Checkpoint / interrupt / DLQ ---
+FIELD_CHECKPOINT_KEY = "checkpoint_key"
+FIELD_INTERRUPT_REASON = "interrupt_reason"
+FIELD_DLQ_REASON = "dlq_reason"
+
+# --- Langfuse limits ---
+LANGFUSE_SESSION_ID_MAX_LEN = 200
+LANGFUSE_PROPAGATED_VALUE_MAX_LEN = 200
+LANGFUSE_PROPAGATED_KEY_PATTERN = re.compile(r"^[A-Za-z0-9_]{1,64}$")
+
+# --- Feature flag env keys ---
+ENV_FEATURE_OBSERVABILITY_V2 = "GOV_CORE_OBSERVABILITY_V2"
+ENV_FEATURE_BUDGET = "GOV_CORE_BUDGET_ENABLED"
+ENV_FEATURE_STRUCTURED_ERRORS = "GOV_CORE_STRUCTURED_ERRORS"
+ENV_FEATURE_RETRY_POLICY = "GOV_CORE_RETRY_POLICY_ENABLED"
+ENV_RETRY_POLICY_ENABLED = ENV_FEATURE_RETRY_POLICY
+ENV_FEATURE_DLQ = "GOV_CORE_DLQ_ENABLED"
+ENV_FEATURE_INTERRUPT = "GOV_CORE_INTERRUPT_ENABLED"
+ENV_FEATURE_AUTO_RECOVERY = "GOV_CORE_AUTO_RECOVERY_ENABLED"
+
+# --- Auto-recovery metadata (Wave 3 / Chat C) ---
+META_KEY_AUTO_RECOVERY_APPLIED = "auto_recovery_applied"
+META_KEY_AUTO_RECOVERY_OUTCOME = "auto_recovery_outcome"
+META_KEY_AUTO_RECOVERY_STRATEGY = "auto_recovery_strategy"
+META_KEY_AUTO_RECOVERY_RECOVERED = "auto_recovery_recovered"
+STRATEGY_IMMEDIATE_RETRY = "immediate_retry"
+
+# --- Budget env keys (Package B) ---
+ENV_DAILY_BUDGET_USD = "GOV_CORE_DAILY_BUDGET_USD"
+ENV_WEEKLY_BUDGET_USD = "GOV_CORE_WEEKLY_BUDGET_USD"
+ENV_BUDGET_WEEKLY_LIMIT = "GOV_CORE_BUDGET_WEEKLY_LIMIT"
+DEFAULT_BUDGET_WEEKLY_LIMIT_USD: float = 100.0
+ENV_PER_TASK_BUDGET_USD = "GOV_CORE_PER_TASK_BUDGET_USD"
+ENV_BUDGET_WARN_THRESHOLDS = "GOV_CORE_BUDGET_WARN_THRESHOLDS"
+ENV_BUDGET_LIMIT_USD = "GOV_CORE_BUDGET_LIMIT_USD"
+ENV_BUDGET_WARN_THRESHOLD_USD = "GOV_CORE_BUDGET_WARN_THRESHOLD_USD"
+
+# --- task_costs persistence (Phase 5) ---
+ENV_TASK_COSTS_PG_ENABLED = "GOV_CORE_TASK_COSTS_PG_ENABLED"
+ENV_TASK_COSTS_JSONL_ENABLED = "GOV_CORE_TASK_COSTS_JSONL_ENABLED"
+
+# --- Observability dict keys ---
+OBS_KEY_TRACE_ID = FIELD_TRACE_ID
+OBS_KEY_TRACE_SCHEMA_VERSION = "trace_schema_version"
+OBS_KEY_LANGFUSE_ENABLED = "langfuse_enabled"
+OBS_KEY_SESSION_ID = FIELD_SESSION_ID
+OBS_KEY_LANGFUSE_PROPAGATE_SESSION_ID = "langfuse_propagate_session_id"
+OBS_KEY_TAGS = "tags"
+OBS_KEY_TASK_ID = FIELD_TASK_ID
+OBS_KEY_WORKFLOW_ID = FIELD_WORKFLOW_ID
+
+# --- Structured error dict keys ---
+ERR_KEY_SCHEMA_VERSION = "error_schema_version"
+ERR_KEY_CODE = "code"
+ERR_KEY_ERROR_TYPE = FIELD_ERROR_TYPE
+ERR_KEY_MESSAGE = "message"
+ERR_KEY_NODE = "node"
+ERR_KEY_RETRYABLE = FIELD_RETRYABLE
+ERR_KEY_DETAILS = "details"
+ERR_KEY_SUCCESS = "success"
+ERR_KEY_ERROR_MESSAGE = "error_message"
+ERR_KEY_ERROR_CONTEXT = "error_context"
+ERR_KEY_SOURCE_AGENT = "source_agent"
+
+# --- Validation / API envelope (Package C) ---
+VAL_KEY_SEMANTIC_SUCCESS = "semantic_success"
+VAL_KEY_BUSINESS_FAILURE = "business_failure"
+VAL_KEY_VALIDATION_ERRORS = "validation_errors"
+VAL_KEY_STRUCTURED_ERRORS = "structured_errors"
+
+# --- task_costs record keys ---
+TC_KEY_SCHEMA_VERSION = "task_costs_schema_version"
+TC_KEY_TASK_ID = FIELD_TASK_ID
+TC_KEY_TRACE_ID = FIELD_TRACE_ID
+TC_KEY_SESSION_ID = FIELD_SESSION_ID
+TC_KEY_WORKFLOW_ID = FIELD_WORKFLOW_ID
+TC_KEY_AGENT_NAME = FIELD_AGENT_NAME
+TC_KEY_MODEL_NAME = FIELD_MODEL_NAME
+TC_KEY_INPUT_TOKENS = FIELD_INPUT_TOKENS
+TC_KEY_OUTPUT_TOKENS = FIELD_OUTPUT_TOKENS
+TC_KEY_TOTAL_TOKENS = FIELD_TOTAL_TOKENS
+TC_KEY_TOTAL_COST_USD = FIELD_TOTAL_COST_USD
+TC_KEY_DURATION_MS = FIELD_DURATION_MS
+TC_KEY_EXECUTION_TIME_SEC = FIELD_EXECUTION_TIME_SEC
+TC_KEY_SUCCESS = FIELD_SUCCESS
+TC_KEY_TIMESTAMP = FIELD_TIMESTAMP
+TC_KEY_RETRY_COUNT = FIELD_RETRY_COUNT
+
+# --- budget config / snapshot keys ---
+BUDGET_KEY_SCHEMA_VERSION = "budget_schema_version"
+BUDGET_KEY_RUN_ID = "run_id"
+BUDGET_KEY_TASK_ID = FIELD_TASK_ID
+BUDGET_KEY_LIMIT_USD = "limit_usd"
+BUDGET_KEY_SPENT_USD = "spent_usd"
+BUDGET_KEY_TOTAL_COST_USD = FIELD_TOTAL_COST_USD
+BUDGET_KEY_ACTION = "action"
+BUDGET_KEY_SCOPE = "scope"
+BUDGET_KEY_DAILY_BUDGET_USD = "daily_budget_usd"
+BUDGET_KEY_WEEKLY_BUDGET_USD = "weekly_budget_usd"
+BUDGET_KEY_PER_TASK_BUDGET_USD = "per_task_budget_usd"
+BUDGET_KEY_WARN_THRESHOLDS = "warn_thresholds"
+BUDGET_KEY_UTILIZATION = "utilization"
+BUDGET_KEY_STATUS = "status"
+BUDGET_KEY_MESSAGE = "message"
+
+# Budget actions / statuses
+BUDGET_ACTION_ALLOW = "allow"
+BUDGET_ACTION_WARN = "warn"
+BUDGET_ACTION_WARN_HIGH = "warn_high"
+BUDGET_ACTION_BLOCK = "block"
+BUDGET_SCOPE_PER_TASK = "per_task"
+BUDGET_SCOPE_DAILY = "daily"
+BUDGET_SCOPE_WEEKLY = "weekly"
+
+# --- checkpoint / retry snapshot ---
+CP_KEY_SCHEMA_VERSION = "checkpoint_config_schema_version"
+CP_KEY_RUN_ID = "run_id"
+CP_KEY_TASK_ID = FIELD_TASK_ID
+CP_KEY_ATTEMPT = "attempt"
+CP_KEY_RETRY_COUNT = FIELD_RETRY_COUNT
+CP_KEY_MAX_ATTEMPTS = "max_attempts"
+CP_KEY_BACKOFF_MS = "backoff_ms"
+CP_KEY_CHECKPOINT_KEY = FIELD_CHECKPOINT_KEY
+CP_KEY_INTERRUPT_REASON = FIELD_INTERRUPT_REASON
+
+# --- DLQ record ---
+DLQ_KEY_SCHEMA_VERSION = "dlq_schema_version"
+DLQ_KEY_RUN_ID = "run_id"
+DLQ_KEY_TASK_ID = FIELD_TASK_ID
+DLQ_KEY_TRACE_ID = FIELD_TRACE_ID
+DLQ_KEY_ERROR_CODE = "code"
+DLQ_KEY_ERROR_TYPE = FIELD_ERROR_TYPE
+DLQ_KEY_DLQ_REASON = FIELD_DLQ_REASON
+DLQ_KEY_PAYLOAD_REF = "payload_ref"
+
+# --- Aliases ---
+WORKFLOW_ID_ALIAS_STATE_KEY = "mode"
+TASK_ID_ALIAS_RUN_ID = BUDGET_KEY_RUN_ID
+ERROR_TYPE_ALIAS_CODE = ERR_KEY_CODE
+TOTAL_COST_ALIAS_SPENT_USD = BUDGET_KEY_SPENT_USD
+RETRY_COUNT_ALIAS_ATTEMPT = CP_KEY_ATTEMPT
+
+LANGFUSE_PROPAGATED_METADATA_ALLOWED_KEYS: frozenset[str] = frozenset(
+    {
+        OBS_KEY_TRACE_SCHEMA_VERSION,
+        OBS_KEY_TRACE_ID,
+        OBS_KEY_SESSION_ID,
+        OBS_KEY_TASK_ID,
+        OBS_KEY_WORKFLOW_ID,
+        TC_KEY_AGENT_NAME,
+        TC_KEY_MODEL_NAME,
+        TC_KEY_INPUT_TOKENS,
+        TC_KEY_OUTPUT_TOKENS,
+        TC_KEY_TOTAL_TOKENS,
+        TC_KEY_TOTAL_COST_USD,
+        FIELD_RETRY_COUNT,
+        ERR_KEY_ERROR_TYPE,
+        ERR_KEY_CODE,
+        ERR_KEY_RETRYABLE,
+        BUDGET_KEY_SCHEMA_VERSION,
+        BUDGET_KEY_RUN_ID,
+        BUDGET_KEY_ACTION,
+        CP_KEY_SCHEMA_VERSION,
+        CP_KEY_ATTEMPT,
+        CP_KEY_CHECKPOINT_KEY,
+        CP_KEY_INTERRUPT_REASON,
+        "mode",
+        "env",
+        "pipeline_ok",
+        "answer_ok",
+        "pg_ok",
+        FIELD_DEPARTMENT,
+        FIELD_STATUS,
+        FIELD_RELEASE,
+        FIELD_HUMAN_REVIEW_REQUIRED,
+        FIELD_HANDOFF_STATUS,
+        "tool_decision_id",
+        "selector_rule_id",
+        "selected_tool_ids_csv",
+    }
+)
+
+# --- Langfuse / monitoring trace naming (LF-1) ---
+TRACE_NAME_ASK_PIPELINE = "ask_pipeline"
+TRACE_NAME_INGEST_VERIFY_PIPELINE = "ingest_verify_pipeline"
+STEP_NAME_HEALTH = "health_check"
+STEP_NAME_RETRIEVE = "retrieve"
+STEP_NAME_ANSWER = "answer"
+STEP_NAME_INGEST = "ingest"
+STEP_NAME_VERIFY = "verify"
+STEP_NAME_TOOL_SELECTOR = "tool_selector"

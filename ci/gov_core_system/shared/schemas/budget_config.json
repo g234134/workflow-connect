@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/budget_config/v1",
+  "title": "GovCoreBudgetSnapshot",
+  "description": "In-memory budget snapshot (core/budget.py). run_id is the task/run correlation id; total_cost_usd aliases spent_usd for cross-service queries.",
+  "type": "object",
+  "required": ["budget_schema_version", "run_id", "spent_usd", "action"],
+  "properties": {
+    "budget_schema_version": { "const": "v1" },
+    "run_id": { "type": "string", "maxLength": 200 },
+    "task_id": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Optional explicit task_id; when omitted consumers may use run_id."
+    },
+    "limit_usd": { "type": ["number", "null"], "minimum": 0 },
+    "spent_usd": { "type": "number", "minimum": 0 },
+    "total_cost_usd": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Canonical name; equals spent_usd in current implementation."
+    },
+    "action": { "enum": ["allow", "warn", "block"] },
+    "enabled": { "type": "boolean" },
+    "warn_threshold_usd": { "type": ["number", "null"], "minimum": 0 },
+    "projected_usd": { "type": "number", "minimum": 0 }
+  },
+  "additionalProperties": true
+}

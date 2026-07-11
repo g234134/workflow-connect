@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/intake_schema/v1",
+  "title": "IntakeSchemaV1",
+  "description": "Phase 7.5 min-loop intake wire contract. Tier: min_loop_v0.1 · NOT production-ready. Per-type payload rules are enforced in Python (core/schemas/intake_schema.py).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "work_order_id", "request_type", "description"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "intake_schema_v1" },
+    "work_order_id": { "type": "string", "minLength": 8, "maxLength": 64 },
+    "request_type": {
+      "type": "string",
+      "enum": ["info_query", "small_automation", "browser_task", "report_organize", "other"]
+    },
+    "description": { "type": "string", "maxLength": 8000 },
+    "source_channel": {
+      "type": "string",
+      "enum": ["telegram", "cli", "watchdog", "api", "unknown"],
+      "default": "unknown"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 32
+    },
+    "submitter_id": { "type": "string", "maxLength": 128 },
+    "deadline_hint": { "type": "string" },
+    "type_payload": {
+      "type": "object",
+      "description": "Discriminated by request_type; validated in Pydantic"
+    },
+    "gate_hints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "force_accept": { "type": "boolean", "default": false },
+        "force_review": { "type": "boolean", "default": false },
+        "budget_cap_usd": { "type": "number", "minimum": 0 }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Forward-compatible bag"
+    }
+  }
+}

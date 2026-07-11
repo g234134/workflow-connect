@@ -1,0 +1,18 @@
+{
+  "$schema": "gov_core/pii_policy_v1",
+  "version": 1,
+  "description": "Example denylist/allowlist extension for dev/staging. Copy to a writable path and set GOV_CORE_PII_POLICY_CONFIG.",
+  "denylist_keys": [
+    "partner_secret",
+    "raw_user_query"
+  ],
+  "allowlist_keys": [
+    "partner_ref",
+    "billing_account_id"
+  ],
+  "warnings": [
+    "Allowlist keys skip ALL redaction — only add stable identifiers, never free-text user fields.",
+    "Denylist keys mask string values only; nested objects still get heuristic scan unless the key is listed.",
+    "Do not commit production-specific keys to the repo; use env-specific copies outside git."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/error/v1",
+  "title": "GovCoreStructuredError",
+  "description": "Unified structured error (API structured_errors[]). Wire keys from shared/naming.py.",
+  "type": "object",
+  "required": ["error_schema_version", "code", "message", "node", "retryable"],
+  "properties": {
+    "error_schema_version": { "const": "v1" },
+    "code": {
+      "type": "string",
+      "description": "Machine-readable error code (HEALTH_FAILED, INGEST_FAILED, …). Langfuse error_type should use the same value."
+    },
+    "error_type": {
+      "type": "string",
+      "description": "Alias for code when emitting Langfuse metadata only; not required on API if code is set."
+    },
+    "message": { "type": "string" },
+    "node": { "type": "string", "description": "LangGraph node id (e.g. health_node)." },
+    "retryable": { "type": "boolean" },
+    "details": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": false
+}

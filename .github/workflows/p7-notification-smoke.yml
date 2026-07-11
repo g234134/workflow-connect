@@ -44,6 +44,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install P7 smoke deps
+        shell: bash
+        run: |
+          set -euo pipefail
+          pip install -q pyyaml
+          if [[ -f requirements-ci-minimal.txt ]]; then
+            pip install -q -r requirements-ci-minimal.txt || true
+          fi
+
       - name: Start localhost webhook mock (sandbox only)
         shell: bash
         run: |

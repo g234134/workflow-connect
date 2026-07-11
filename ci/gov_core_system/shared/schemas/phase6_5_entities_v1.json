@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/phase6_5/entities/v1",
+  "title": "Phase65EntitiesV1",
+  "description": "Phase 6.5 MVP domain entities (strict). Tier: mvp_v0.1 · NOT production-ready.",
+  "$defs": {
+    "SchemaVersionV1": {
+      "type": "string",
+      "const": "v1"
+    },
+    "IsoDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "UuidString": {
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "OpaqueRef": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "RequirementConstraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "budget_usd_max": { "type": "number", "minimum": 0 },
+        "deadline_at": { "$ref": "#/$defs/IsoDateTime" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 64 },
+          "maxItems": 32
+        }
+      }
+    },
+    "OrderLineItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sku", "quantity"],
+      "properties": {
+        "sku": { "type": "string", "maxLength": 64 },
+        "quantity": { "type": "integer", "minimum": 1 },
+        "unit_price": { "type": "number", "minimum": 0 }
+      }
+    },
+    "SkillCardSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": { "type": "string", "maxLength": 500 },
+        "input_schema_ref": { "$ref": "#/$defs/OpaqueRef" },
+        "output_schema_ref": { "$ref": "#/$defs/OpaqueRef" }
+      }
+    },
+    "EntityRecordBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "id", "status", "created_at", "updated_at"],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/SchemaVersionV1" },
+        "id": { "$ref": "#/$defs/UuidString" },
+        "status": { "type": "string", "maxLength": 32 },
+        "created_at": { "$ref": "#/$defs/IsoDateTime" },
+        "updated_at": { "$ref": "#/$defs/IsoDateTime" },
+        "trace_id": { "type": "string", "maxLength": 200 }
+      }
+    },
+    "lead": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source", "contact_ref", "owner_ref"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["draft", "qualified", "archived"]
+            },
+            "source": { "type": "string", "maxLength": 64 },
+            "contact_ref": { "$ref": "#/$defs/OpaqueRef" },
+            "owner_ref": { "$ref": "#/$defs/OpaqueRef" }
+          }
+        }
+      ]
+    },
+    "requirement_profile": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lead_id", "summary", "constraints"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["draft", "active", "closed"]
+            },
+            "lead_id": { "$ref": "#/$defs/UuidString" },
+            "summary": { "type": "string", "maxLength": 2000 },
+            "constraints": { "$ref": "#/$defs/RequirementConstraints" }
+          }
+        }
+      ]
+    },
+    "order": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lead_id", "line_items", "currency"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["draft", "placed", "confirmed", "cancelled"]
+            },
+            "lead_id": { "$ref": "#/$defs/UuidString" },
+            "requirement_profile_id": { "$ref": "#/$defs/UuidString" },
+            "line_items": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/OrderLineItem" }
+            },
+            "currency": { "type": "string", "minLength": 3, "maxLength": 3 }
+          }
+        }
+      ]
+    },
+    "job": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order_id", "job_type", "priority"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["created", "started", "completed", "cancelled"]
+            },
+            "order_id": { "$ref": "#/$defs/UuidString" },
+            "job_type": { "type": "string", "maxLength": 64 },
+            "priority": { "type": "string", "enum": ["low", "normal", "high"] }
+          }
+        }
+      ]
+    },
+    "run": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["job_id", "run_kind"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["pending", "running", "completed", "failed"]
+            },
+            "job_id": { "$ref": "#/$defs/UuidString" },
+            "run_kind": { "type": "string", "maxLength": 64 },
+            "started_at": { "$ref": "#/$defs/IsoDateTime" },
+            "ended_at": { "$ref": "#/$defs/IsoDateTime" }
+          }
+        }
+      ]
+    },
+    "delivery": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["job_id", "artifact_refs"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["pending", "submitted", "accepted", "rejected"]
+            },
+            "job_id": { "$ref": "#/$defs/UuidString" },
+            "artifact_refs": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/OpaqueRef" },
+              "maxItems": 64
+            },
+            "accepted_at": { "$ref": "#/$defs/IsoDateTime" }
+          }
+        }
+      ]
+    },
+    "invoice": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order_id", "amount", "currency", "issued_at"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["draft", "issued", "voided"]
+            },
+            "order_id": { "$ref": "#/$defs/UuidString" },
+            "amount": { "type": "number", "minimum": 0 },
+            "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+            "issued_at": { "$ref": "#/$defs/IsoDateTime" }
+          }
+        }
+      ]
+    },
+    "payment": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["invoice_id", "amount", "currency", "method"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["initiated", "captured", "failed"]
+            },
+            "invoice_id": { "$ref": "#/$defs/UuidString" },
+            "amount": { "type": "number", "minimum": 0 },
+            "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+            "method": { "type": "string", "maxLength": 32 },
+            "paid_at": { "$ref": "#/$defs/IsoDateTime" }
+          }
+        }
+      ]
+    },
+    "skill_card": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["skill_key", "version", "spec"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["draft", "published", "deprecated"]
+            },
+            "skill_key": { "type": "string", "maxLength": 128 },
+            "version": { "type": "string", "maxLength": 32 },
+            "spec": { "$ref": "#/$defs/SkillCardSpec" }
+          }
+        }
+      ]
+    },
+    "skill_run": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["skill_card_id", "input_ref"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["pending", "running", "completed", "failed"]
+            },
+            "skill_card_id": { "$ref": "#/$defs/UuidString" },
+            "run_id": { "$ref": "#/$defs/UuidString" },
+            "job_id": { "$ref": "#/$defs/UuidString" },
+            "input_ref": { "$ref": "#/$defs/OpaqueRef" },
+            "output_ref": { "$ref": "#/$defs/OpaqueRef" }
+          }
+        }
+      ]
+    },
+    "replay_event": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityRecordBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_entity_type", "target_entity_id", "replay_kind", "snapshot_ref"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["recorded"]
+            },
+            "target_entity_type": {
+              "type": "string",
+              "enum": [
+                "lead",
+                "requirement_profile",
+                "order",
+                "job",
+                "run",
+                "delivery",
+                "invoice",
+                "payment",
+                "skill_card",
+                "skill_run",
+                "replay_event"
+              ]
+            },
+            "target_entity_id": { "$ref": "#/$defs/UuidString" },
+            "replay_kind": { "type": "string", "maxLength": 64 },
+            "snapshot_ref": { "$ref": "#/$defs/OpaqueRef" },
+            "causation_event_id": { "$ref": "#/$defs/UuidString" }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core/alert_event_v1.json",
+  "title": "Gov Core Alert Event v1",
+  "description": "dev/staging v1 · NOT production-ready. Persisted row shape for alert_events + API/notifier payloads.",
+  "type": "object",
+  "required": ["rule_name", "severity", "message"],
+  "properties": {
+    "id": { "type": "integer", "description": "alert_events.id (read API only)" },
+    "rule_name": {
+      "type": "string",
+      "description": "budget_rules.rule_name e.g. p95_latency_15m, biz_success_rate_15m, avg_cost_15m, dlq_backlog"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["warning", "critical"],
+      "description": "Canonical enum — see core.contracts.phase5_monitoring.AlertSeverity"
+    },
+    "message": { "type": "string" },
+    "metric_value": { "type": "number" },
+    "threshold_value": { "type": "number" },
+    "fired_at": { "type": "string", "format": "date-time" },
+    "resolved_at": { "type": ["string", "null"], "format": "date-time" },
+    "metadata": { "type": "object", "additionalProperties": true },
+    "tier": {
+      "type": "string",
+      "const": "dev_staging_v1",
+      "description": "Notifier envelope only"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/checkpoint_state/v1",
+  "title": "GovCoreCheckpointAndRecoveryState",
+  "description": "Checkpoint adapter snapshot + interrupt/retry metadata. JSON file checkpoints under runtime/checkpoints/ remain governed by Departments README (not this schema).",
+  "type": "object",
+  "required": ["checkpoint_config_schema_version"],
+  "properties": {
+    "checkpoint_config_schema_version": { "const": "v1" },
+    "run_id": { "type": "string", "maxLength": 200 },
+    "task_id": { "type": "string", "maxLength": 200 },
+    "attempt": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based attempt; maps to retry_count as attempt - 1 when retry_count is used in traces."
+    },
+    "retry_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "0-based retry count for Langfuse metadata."
+    },
+    "max_attempts": { "type": "integer", "minimum": 1 },
+    "backoff_ms": { "type": "integer", "minimum": 0 },
+    "checkpoint_key": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "LangGraph thread / checkpoint id when available."
+    },
+    "interrupt_reason": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Human-readable reason when graph interrupted or stopped early."
+    },
+    "checkpointer_backend": { "type": "string" },
+    "mirror_json": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

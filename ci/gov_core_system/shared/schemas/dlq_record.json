@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/dlq/v1",
+  "title": "GovCoreDlqRecord",
+  "description": "Dead-letter record for non-recoverable failures (E package wires sink).",
+  "type": "object",
+  "required": ["dlq_schema_version", "dlq_reason"],
+  "properties": {
+    "dlq_schema_version": { "const": "v1" },
+    "run_id": { "type": "string", "maxLength": 200 },
+    "task_id": { "type": "string", "maxLength": 200 },
+    "trace_id": { "type": "string", "maxLength": 200 },
+    "code": { "type": "string", "maxLength": 200 },
+    "error_type": { "type": "string", "maxLength": 200 },
+    "dlq_reason": { "type": "string", "maxLength": 200 },
+    "payload_ref": { "type": "string", "maxLength": 500 }
+  },
+  "additionalProperties": false
+}

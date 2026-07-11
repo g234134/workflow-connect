@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/orchestration_bridge/v1",
+  "title": "OrchestrationBridgeV1",
+  "description": "Phase 8.6 minimal orchestration bridge (intake gate + optional browser plan). Tier: mvp_v0.1 · NOT production-ready.",
+  "$defs": {
+    "SchemaVersion": {
+      "type": "string",
+      "const": "orchestration_bridge_v1"
+    },
+    "FlowId": {
+      "type": "string",
+      "const": "minimal_intake_browser"
+    },
+    "BrowserSkipReason": {
+      "type": "string",
+      "enum": [
+        "no_browser_section",
+        "no_plan",
+        "gate_not_accept",
+        "intake_failed"
+      ]
+    },
+    "BridgeStageName": {
+      "type": "string",
+      "enum": ["intake", "browser"]
+    },
+    "BridgeStage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "ok", "skipped", "message"],
+      "properties": {
+        "name": { "$ref": "#/$defs/BridgeStageName" },
+        "ok": { "type": "boolean" },
+        "skipped": { "type": "boolean" },
+        "message": { "type": "string", "maxLength": 2000 },
+        "decision": {
+          "type": ["string", "null"],
+          "enum": ["accept", "reject", "defer", null]
+        }
+      }
+    },
+    "BrowserBridgeSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "plan": {
+          "type": "object",
+          "description": "Phase 8.5 browser plan (plan_id, stop_on_error, steps[])",
+          "properties": {
+            "plan_id": { "type": "string", "maxLength": 128 },
+            "stop_on_error": { "type": "boolean" },
+            "steps": {
+              "type": "array",
+              "items": { "type": "object" }
+            }
+          }
+        },
+        "force_browser": {
+          "type": "boolean",
+          "default": false,
+          "description": "When true, run plan even if intake decision is not accept"
+        }
+      }
+    },
+    "OrchestrationBridgeRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intake"],
+      "properties": {
+        "intake": {
+          "type": "object",
+          "description": "Phase 7.5 IntakeGateRequest fields (see intake_gate_v1.json)"
+        },
+        "browser": { "$ref": "#/$defs/BrowserBridgeSection" }
+      }
+    },
+    "BrowserBridgeResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skipped"],
+      "properties": {
+        "skipped": { "type": "boolean" },
+        "skip_reason": {
+          "anyOf": [{ "$ref": "#/$defs/BrowserSkipReason" }, { "type": "null" }]
+        },
+        "plan_id": { "type": ["string", "null"], "maxLength": 128 },
+        "validated": { "type": ["boolean", "null"] },
+        "result": {
+          "type": ["object", "null"],
+          "description": "Phase 8.5 run_plan output when not skipped"
+        }
+      }
+    },
+    "OrchestrationBridgeResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ok",
+        "message",
+        "schema_version",
+        "flow",
+        "intake",
+        "phase6_5_pre_state",
+        "browser",
+        "stages"
+      ],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "message": { "type": "string", "maxLength": 2000 },
+        "schema_version": { "$ref": "#/$defs/SchemaVersion" },
+        "flow": { "$ref": "#/$defs/FlowId" },
+        "intake": {
+          "type": "object",
+          "description": "Full Phase 7.5 intake gate dict (intake_gate_v1)"
+        },
+        "phase6_5_pre_state": {
+          "description": "Duplicate of intake.phase6_5_pre_state for downstream consumers",
+          "type": ["object", "null"]
+        },
+        "browser": { "$ref": "#/$defs/BrowserBridgeResult" },
+        "stages": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/BridgeStage" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/OrchestrationBridgeRequest" },
+    { "$ref": "#/$defs/OrchestrationBridgeResult" }
+  ]
+}

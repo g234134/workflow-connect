@@ -1,0 +1,77 @@
+# P6 (Phase 6): INT regression gate nightly — Track B (mandatory per governance_decision_p6_int_gate_2026-06-27).
+# Runs Wave 6/7/8 Tier-A assembly regression via _wave7_regression_gate.py.
+# Does NOT block PR merge. Scheduled UTC 07:00 (after eval-gate shadow nightly 06:00).
+# Design SSOT: docs/ci-design-p6-int-gate-v1.md · Ticket: WF-P6-INT-CI-LANDING
+
+name: P6 INT gate nightly
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: INT tier (A, B, ALL)
+        type: choice
+        options:
+          - A
+          - B
+          - ALL
+        default: A
+
+concurrency:
+  group: p6-int-gate-nightly-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  int-regression-nightly:
+    name: INT Tier-A nightly (Track B)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install gov_core CI dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          GOV_CORE="01_Environments/python_venvs/gov_core_system"
+          pip install -q -r requirements-ci-minimal.txt
+          if [[ -f "${GOV_CORE}/requirements.txt" ]]; then
+            pip install -q -r "${GOV_CORE}/requirements.txt"
+          fi
+
+      - name: Wave 6/7/8 INT regression (Tier-A)
+        id: int_gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          TIER="${{ github.event_name == 'workflow_dispatch' && inputs.tier || 'A' }}"
+          OUT_DIR="artifacts/p6-int-gate"
+          OUT_FILE="${OUT_DIR}/nightly.json"
+          mkdir -p "${OUT_DIR}"
+          set +e
+          python 04_Workflows/_wave7_regression_gate.py --tier "${TIER}" --pretty | tee "${OUT_FILE}"
+          GATE_EXIT=$?
+          set -e
+          echo "gate_exit=${GATE_EXIT}" >> "${GITHUB_OUTPUT}"
+          echo "gate_tier=${TIER}" >> "${GITHUB_OUTPUT}"
+          if [[ "${GATE_EXIT}" -eq 2 ]]; then
+            echo "::error title=INT gate infrastructure failure::exit code 2 — venv/map bootstrap (contract §2.3)"
+          fi
+          exit "${GATE_EXIT}"
+
+      - name: Upload INT gate nightly artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p6-int-gate-nightly-${{ github.run_id }}
+          path: artifacts/p6-int-gate/nightly.json
+          if-no-files-found: warn
+          retention-days: 30

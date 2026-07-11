@@ -1,0 +1,116 @@
+# Wave-G / WD-P7-T3 AC-7: P7 orchestrator notification full-chain smoke (advisory only).
+# Runs unittest smoke modules with sandbox env + localhost mock webhook.
+# Non-blocking: continue-on-error at job level — not a branch protection required check.
+
+name: P7 notification smoke (advisory)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/p7-notification-smoke.yml"
+      - "delivery/notification_*.py"
+      - "routing/notification_handlers_v1.yaml"
+      - "scripts/run_agent_standard_case_experiment.py"
+      - "tests/test_orchestrator_dispatch_full_smoke_v1.py"
+      - "tests/test_orchestrator_notifications.py"
+      - "tests/test_notification_webhook_dispatch_v1.py"
+      - "cases/**"
+  schedule:
+    # Daily advisory smoke (UTC 04:00)
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: p7-notification-smoke-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  p7-notification-smoke:
+    name: P7 notification smoke (advisory)
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    env:
+      GOV_NOTIFICATION_GATEWAY_ENABLED: "1"
+      GOV_NOTIFICATION_DISPATCH_ENABLED: "1"
+      GOV_NOTIFICATION_WEBHOOK_ENABLED: "1"
+      GOV_NOTIFICATION_WEBHOOK_URL: "http://127.0.0.1:8080/webhook"
+      GOV_NOTIFICATION_WEBHOOK_CASE_ALLOWLIST: "demo_*,additional_*"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Start localhost webhook mock (sandbox only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY' &
+          from http.server import BaseHTTPRequestHandler, HTTPServer
+
+          class WebhookMockHandler(BaseHTTPRequestHandler):
+              def do_POST(self) -> None:
+                  length = int(self.headers.get("Content-Length", 0))
+                  self.rfile.read(length)
+                  self.send_response(200)
+                  self.send_header("Content-Type", "application/json")
+                  self.end_headers()
+                  self.wfile.write(b'{"status":"ok"}')
+
+              def log_message(self, format: str, *args: object) -> None:
+                  pass
+
+          HTTPServer(("127.0.0.1", 8080), WebhookMockHandler).serve_forever()
+          PY
+          echo "MOCK_PID=$!" >> "${GITHUB_ENV}"
+          python - <<'PY'
+          import socket
+          import time
+
+          for _ in range(30):
+              try:
+                  with socket.create_connection(("127.0.0.1", 8080), timeout=0.5):
+                      print("[P7-SMOKE] localhost webhook mock ready on :8080")
+                      break
+              except OSError:
+                  time.sleep(0.2)
+          else:
+              raise SystemExit("localhost webhook mock failed to bind :8080")
+          PY
+
+      - name: P7 notification full-chain smoke (unittest)
+        id: smoke
+        shell: bash
+        run: |
+          set -euo pipefail
+          START_MS=$(python -c "import time; print(int(time.time()*1000))")
+          set +e
+          python -m unittest \
+            tests.test_orchestrator_dispatch_full_smoke_v1 \
+            tests.test_orchestrator_notifications \
+            tests.test_notification_webhook_dispatch_v1 \
+            -v | tee p7_notification_smoke.log
+          SMOKE_EXIT=$?
+          set -e
+          END_MS=$(python -c "import time; print(int(time.time()*1000))")
+          echo "smoke_exit=${SMOKE_EXIT}" >> "${GITHUB_OUTPUT}"
+          echo "duration_ms=$(( END_MS - START_MS ))" >> "${GITHUB_OUTPUT}"
+          exit "${SMOKE_EXIT}"
+
+      - name: Emit advisory warning on failure
+        if: steps.smoke.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "::warning title=P7 notification smoke (advisory)::Non-blocking smoke failed (exit=${{ steps.smoke.outputs.smoke_exit }}). See job log / artifact p7-notification-smoke-*. This job does not block merge."
+
+      - name: Upload P7 smoke log (advisory)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p7-notification-smoke-${{ github.run_id }}
+          path: p7_notification_smoke.log
+          if-no-files-found: warn
+          retention-days: 14

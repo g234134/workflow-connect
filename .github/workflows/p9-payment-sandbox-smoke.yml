@@ -1,0 +1,147 @@
+# Wave-P9: sandbox payment happy-path smoke — CI advisory (non-blocking).
+# Runs WC-DEMO-1 with --include-payment (DRAFT→PAID) under GOV_PAYMENT_SANDBOX_ENABLED=1.
+# Sandbox-only: mock adapter · artifacts/e2e/WC-DEMO-1/; does NOT touch prod ledger/provider.
+# NOT a required / merge-blocking check.
+
+name: P9 payment sandbox smoke (advisory)
+
+on:
+  schedule:
+    # Every two days at 07:00 UTC (advisory regression track; offset from WC M2 fixture job)
+    - cron: "0 7 */2 * *"
+  workflow_dispatch:
+    inputs:
+      run_unittest:
+        description: Also run payment sandbox + walkthrough unit tests
+        type: boolean
+        default: true
+  pull_request:
+    paths:
+      - ".github/workflows/p9-payment-sandbox-smoke.yml"
+      - "scripts/run_wc_m2_e2e_walkthrough.py"
+      - "scripts/run_order_intake.py"
+      - "04_Workflows/order_ledger/payment_adapter.py"
+      - "04_Workflows/order_ledger/service.py"
+      - "04_Workflows/order_ledger/store.py"
+      - "tests/test_run_wc_m2_e2e_walkthrough.py"
+      - "tests/test_payment_sandbox_adapter.py"
+      - "tests/fixtures/e2e_walkthrough/**"
+      - "docs/wave_c/WC_T7_e2e_walkthrough_runbook.md"
+
+concurrency:
+  group: p9-payment-sandbox-smoke-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  p9-payment-sandbox-smoke:
+    name: P9 payment sandbox smoke (advisory)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify WC-DEMO-1 HITL fixtures exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          FIXTURE_DIR="tests/fixtures/e2e_walkthrough"
+          for f in \
+            WC-DEMO-1_before_review.md \
+            WC-DEMO-1_state_review.md \
+            WC-DEMO-1_state_ready_for_order.md
+          do
+            test -f "${FIXTURE_DIR}/${f}" || { echo "missing fixture: ${FIXTURE_DIR}/${f}"; exit 1; }
+          done
+          echo "HITL fixtures OK under ${FIXTURE_DIR}/"
+
+      - name: P9 sandbox payment happy-path (WC-DEMO-1 · DRAFT→PAID)
+        id: payment_smoke
+        shell: bash
+        env:
+          GOV_PAYMENT_SANDBOX_ENABLED: "1"
+        run: |
+          set -euo pipefail
+          START_MS=$(python -c "import time; print(int(time.time()*1000))")
+          set +e
+          python scripts/run_wc_m2_e2e_walkthrough.py \
+            --ticket WC-DEMO-1 \
+            --artifacts-root artifacts/e2e \
+            --execute \
+            --use-hitl-fixtures \
+            --include-payment \
+            --json | tee p9_payment_sandbox_smoke_result.json
+          WALKTHROUGH_EXIT=$?
+          set -e
+          END_MS=$(python -c "import time; print(int(time.time()*1000))")
+          export WALKTHROUGH_EXIT START_MS END_MS
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          raw = Path("p9_payment_sandbox_smoke_result.json").read_text(encoding="utf-8").strip()
+          walkthrough = json.loads(raw) if raw else {"ok": False, "message": "empty stdout"}
+          order_status = walkthrough.get("order_status")
+          paid_ok = walkthrough.get("ok") is True and order_status == "PAID"
+          summary = {
+              "workflow_name": "P9 payment sandbox smoke (advisory)",
+              "job_name": "p9-payment-sandbox-smoke",
+              "trigger": os.environ.get("GITHUB_EVENT_NAME", ""),
+              "ticket_id": "WC-DEMO-1",
+              "mode": "execute --use-hitl-fixtures --include-payment",
+              "advisory": True,
+              "non_blocking": True,
+              "sandbox_only": True,
+              "ok": int(os.environ["WALKTHROUGH_EXIT"]) == 0 and paid_ok,
+              "walkthrough_ok": walkthrough.get("ok") is True,
+              "order_status": order_status,
+              "expected_order_status": "PAID",
+              "duration_ms": int(os.environ["END_MS"]) - int(os.environ["START_MS"]),
+              "github_run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "github_sha": os.environ.get("GITHUB_SHA", ""),
+              "walkthrough_result": walkthrough,
+          }
+          Path("p9_payment_sandbox_smoke_summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(summary, ensure_ascii=False))
+          if not summary["ok"]:
+              print(
+                  "::warning title=P9 payment sandbox smoke (advisory)::"
+                  "sandbox payment happy-path failed; non-blocking advisory only"
+              )
+          sys.exit(0)
+          PY
+
+      - name: Payment sandbox unit tests
+        if: >-
+          github.event_name != 'workflow_dispatch'
+          || inputs.run_unittest
+        shell: bash
+        run: >-
+          python -m unittest tests.test_run_wc_m2_e2e_walkthrough
+          tests.test_payment_sandbox_adapter -v
+
+      - name: Emit structured failure summary
+        if: failure()
+        shell: bash
+        run: |
+          echo "::group::p9-payment-sandbox-smoke summary"
+          cat p9_payment_sandbox_smoke_summary.json 2>/dev/null || cat p9_payment_sandbox_smoke_result.json 2>/dev/null || true
+          echo "::endgroup::"
+
+      - name: Upload P9 payment sandbox smoke artifacts (advisory)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p9-payment-sandbox-smoke-${{ github.run_id }}
+          path: |
+            p9_payment_sandbox_smoke_summary.json
+            p9_payment_sandbox_smoke_result.json
+            artifacts/e2e/WC-DEMO-1/**
+          if-no-files-found: warn
+          retention-days: 14

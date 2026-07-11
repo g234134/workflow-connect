@@ -1,0 +1,186 @@
+schema_version: intake_routing_catalog_v1
+catalog_revision: "2026-06-10"
+description: >
+  Cross-family intake routing catalog (rules + index only).
+  Maps task_type to tool family, tool_ids, and entrypoints for Wave 2 T2 routing/eval tests.
+  Does NOT replace Gov routing_policy, Tabular selector, or HQ route_task.
+
+tool_families:
+  tabular_mvp:
+    ssot_doc: docs/tabular-tool-catalog-v1.md
+    ssot_machine: tools/tabular_tool_catalog_v1.json
+    id_pattern: "^(intake|validate|clean|export|orchestrate|index|lookup|plan|ui)\\."
+  gov_registry:
+    ssot_doc: docs/SKILL_CATALOG_OVERVIEW.md
+    ssot_machine: skills/gov_cards/
+    id_pattern: "^(obs|kb)\\."
+  product_skill_card:
+    ssot_doc: skills/cards/
+    id_pattern: "^skill-clean-"
+    routing_note: "Narrative SKU only; must NOT appear in routes[].tool_ids"
+  phase_8_8_spec:
+    ssot_doc: 04_Workflows/SPEC_tool_catalog_and_selector_v1.md
+    id_pattern: "^llm\\."
+    routing_note: "Draft orchestration layer; out of scope for v1 routes"
+  hq_ops:
+    routing_note: "Governance runners without gov_tool_card tool_id"
+  hq_routing:
+    ssot_doc: 04_Workflows/TASK_ROUTING.md
+    ssot_machine: 04_Workflows/task_routing_table.json
+  h_line_context:
+    ssot_doc: context/context_entry_contract.md
+    entry_module: core/context_entry.py
+  h_line_subagent:
+    ssot_doc: AGENTS.md
+    routing_note: "signal_only; not HQ route_task task_type"
+
+routes:
+  - task_type: tabular.cleaning.mvp
+    display_name: Tabular MVP case E2E (gate → clean → bundle)
+    trigger:
+      - agent
+      - cli
+      - local_ui
+    preferred_tool_family: tabular_mvp
+    entrypoint: scripts/run_case_e2e_validation.py
+    entrypoint_cli: "python scripts/run_case_e2e_validation.py --case-dir <case_dir> [--json] [--force-review]"
+    tool_ids:
+      - validate.eligibility
+      - clean.phase_demo
+      - export.delivery_bundle
+    orchestration_tool_id: orchestrate.e2e
+    trace_authority: docs/mvp-standard-trace-path.md
+    eval_profile: none
+    notes:
+      - "Prefer orchestrate.e2e for one-shot; individual tool_ids for stepwise debugging"
+      - "demo_phase requires --force on clean; see mvp-standard-trace-path §3"
+
+  - task_type: tabular.cleaning.regression
+    display_name: MVP mainline regression (demo_phase + sampleco)
+    trigger:
+      - ci
+      - reviewer
+    preferred_tool_family: tabular_mvp
+    entrypoint: scripts/run_mvp_mainline_regression.py
+    entrypoint_cli: "python scripts/run_mvp_mainline_regression.py [-v]"
+    tool_ids:
+      - orchestrate.mainline_regression
+    chains:
+      - orchestrate.e2e
+    trace_authority: docs/mvp-mainline-regression.md
+    eval_profile: none
+
+  - task_type: tabular.intake.new_case
+    display_name: Manual new cleaning case intake
+    trigger:
+      - agent
+      - cli
+    preferred_tool_family: tabular_mvp
+    entrypoint: scripts/new_cleaning_case.py
+    tool_ids:
+      - intake.new_case
+    eval_profile: none
+
+  - task_type: gov.observability.eval
+    display_name: Wave B eval export + report + workflow status
+    trigger:
+      - ci
+      - agent
+    preferred_tool_family: gov_registry
+    policy_route_id: wave_b.eval_report
+    policy_ssot: config/routing_policy.yaml
+    tool_ids:
+      - obs.eval.export
+      - obs.eval.report
+      - obs.wf.status_summary
+    optional_tool_ids:
+      - obs.eval.ci_check
+      - obs.eval.stats
+    eval_profile: eval_gate_v1
+    notes:
+      - "eval_profile placeholder for W2-T2; CI also runs obs.eval.ci_check separately"
+
+  - task_type: gov.observability.trace_triage
+    display_name: Eval flagged rows correlate + trace lookup
+    trigger:
+      - agent
+      - ops
+    preferred_tool_family: gov_registry
+    tool_ids:
+      - obs.eval.correlate
+      - obs.trace.query
+    eval_profile: none
+    notes:
+      - "Do NOT use composite obs.eval.triage as a prod route step; expand to underlying tools"
+
+  - task_type: kb.index.bootstrap
+    display_name: HQ offline KB index bootstrap + rag smoke
+    trigger:
+      - agent
+      - ci
+    preferred_tool_family: gov_registry
+    policy_route_id: wave_b.kb_index_bootstrap
+    policy_ssot: config/routing_policy.yaml
+    tool_ids:
+      - kb.index.bootstrap
+      - kb.index.rag_smoke
+    eval_profile: none
+    forbidden_tool_ids:
+      - kb.index.selector_gate
+    notes:
+      - "kb.index.selector_gate is skeleton; must not appear in prod route steps until Wave C"
+
+  - task_type: governance.check.full
+    display_name: OPS cycle full checklist (接战自检)
+    trigger:
+      - agent
+    preferred_tool_family: hq_ops
+    entrypoint: 04_Workflows/_ops_cycle.py
+    entrypoint_cli: "python 04_Workflows/_ops_cycle.py checklist --mode full"
+    tool_ids: []
+    checklist_ids:
+      - smoke_keys
+      - routing_policy_validate
+      - eval_gate_ci_subset
+      - darkops_route_gate
+    eval_profile: none
+
+  - task_type: governance.route.resolve
+    display_name: HQ task routing resolve (派工)
+    trigger:
+      - orchestrator
+    preferred_tool_family: hq_routing
+    entrypoint: 04_Workflows/_route_task.py
+    entrypoint_cli: "python 04_Workflows/_route_task.py --type <hq_task_type>"
+    example_hq_task_types:
+      - hq.governance
+      - hq.coordination
+      - dark.infra
+    tool_ids: []
+    eval_profile: none
+    notes:
+      - "dark.* routes return assignable false when DarkOps blocked; do not fake green"
+
+  - task_type: ask.h_line.context
+    display_name: ask / LangGraph rooted context entry (H线)
+    trigger:
+      - api
+      - langgraph
+    preferred_tool_family: h_line_context
+    entrypoint: core/context_entry.py
+    entrypoint_symbol: build_rooted_context
+    tool_ids: []
+    eval_profile: none
+    notes:
+      - "Mandatory for new ask-like flows; see context_entry_contract.md"
+
+  - task_type: ask.h_line.monitoring_sidecar
+    display_name: Monitoring subagent signal_only sidecar
+    trigger:
+      - ask_pipeline
+    preferred_tool_family: h_line_subagent
+    entrypoint: subagents/monitoring_executor.py
+    tool_ids: []
+    eval_profile: none
+    notes:
+      - "Not HQ route_task; triggered by context routing signals (C-1 + O-2)"

@@ -29,6 +29,11 @@ class OrderLedgerStore(ABC):
     def put(self, order: OrderRecord) -> None:
         raise NotImplementedError
 
+    @abstractmethod
+    def update(self, order: OrderRecord) -> None:
+        """Persist an updated order record (e.g. status transition)."""
+        raise NotImplementedError
+
 
 class InMemoryOrderLedgerStore(OrderLedgerStore):
     """In-process store keyed by order_id and ticket_id."""
@@ -50,6 +55,10 @@ class InMemoryOrderLedgerStore(OrderLedgerStore):
         self._by_order_id[order.order_id] = order
         self._by_ticket_id[order.ticket_id] = order
 
+    def update(self, order: OrderRecord) -> None:
+        self._by_order_id[order.order_id] = order
+        self._by_ticket_id[order.ticket_id] = order
+
 
 class JsonlFileStore(OrderLedgerStore):
     """Append-only JSONL file with in-memory index (reload on init)."""
@@ -68,7 +77,7 @@ class JsonlFileStore(OrderLedgerStore):
                 continue
             raw = json.loads(line)
             record = OrderRecord.from_dict(raw)
-            self._memory.put(record)
+            self._memory.update(record)
 
     def get_by_order_id(self, order_id: str) -> OrderRecord | None:
         return self._memory.get_by_order_id(order_id)
@@ -83,8 +92,17 @@ class JsonlFileStore(OrderLedgerStore):
         existing = self._memory.get_by_ticket_id(order.ticket_id)
         if existing is not None:
             return
+        self._append_line(order)
+        self._memory.put(order)
+
+    def update(self, order: OrderRecord) -> None:
+        if self._memory.get_by_order_id(order.order_id) is None:
+            raise KeyError(f"order_not_found:{order.order_id}")
+        self._append_line(order)
+        self._memory.update(order)
+
+    def _append_line(self, order: OrderRecord) -> None:
         self.jsonl_path.parent.mkdir(parents=True, exist_ok=True)
         payload: dict[str, Any] = order.to_dict()
         with self.jsonl_path.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(payload, ensure_ascii=False) + "\n")
-        self._memory.put(order)

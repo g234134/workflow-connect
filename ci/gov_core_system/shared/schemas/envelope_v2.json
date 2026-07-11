@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_core://schemas/wave6/envelope_v2",
+  "title": "Wave6EnvelopeV2",
+  "description": "Wave 6 per-file delivery envelope v2.0. Per-file truth only; no billable_u / billable_l.",
+  "$defs": {
+    "SchemaVersion": {
+      "type": "string",
+      "const": "2.0"
+    },
+    "EnrichmentSchemaVersion": {
+      "type": "string",
+      "const": "enrichment_v0.1"
+    },
+    "Hex64": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "CleanStatus": {
+      "type": "string",
+      "enum": ["ok", "rejected", "parse_failed", "skipped"]
+    },
+    "ContentKind": {
+      "type": "string",
+      "enum": ["code", "doc", "config", "binary_like", "unknown"]
+    },
+    "ReviewPriority": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "EnrichmentProvenance": {
+      "type": "string",
+      "enum": ["rules", "llm", "mixed"]
+    },
+    "LogicalPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "pattern": "^(?![A-Za-z]:[\\\\/])(?!.*://)(?!\\\\\\\\).+$"
+    },
+    "ContentSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["line_count", "char_count", "imports", "preview_lines"],
+      "properties": {
+        "line_count": { "type": "integer", "minimum": 0 },
+        "char_count": { "type": "integer", "minimum": 0 },
+        "imports": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 256 }
+        },
+        "preview_lines": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "maxLength": 1000 }
+        }
+      }
+    },
+    "EnrichmentSignals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["has_parse_warnings", "used_llm", "line_count", "import_count"],
+      "properties": {
+        "has_parse_warnings": { "type": "boolean" },
+        "used_llm": { "type": "boolean" },
+        "line_count": { "type": "integer", "minimum": 0 },
+        "import_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "EnrichmentBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "present", "domain_tags"],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/EnrichmentSchemaVersion" },
+        "present": { "type": "boolean" },
+        "detected_language": { "type": ["string", "null"], "maxLength": 32 },
+        "domain_tags": {
+          "type": "array",
+          "maxItems": 8,
+          "items": { "type": "string", "maxLength": 64 }
+        },
+        "content_kind": {
+          "anyOf": [{ "$ref": "#/$defs/ContentKind" }, { "type": "null" }]
+        },
+        "quality_score": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "review_priority": {
+          "anyOf": [{ "$ref": "#/$defs/ReviewPriority" }, { "type": "null" }]
+        },
+        "enrichment_provenance": {
+          "anyOf": [{ "$ref": "#/$defs/EnrichmentProvenance" }, { "type": "null" }]
+        },
+        "signals": {
+          "anyOf": [{ "$ref": "#/$defs/EnrichmentSignals" }, { "type": "null" }]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "present": { "const": true }
+            }
+          },
+          "then": {
+            "required": [
+              "detected_language",
+              "content_kind",
+              "quality_score",
+              "review_priority",
+              "enrichment_provenance",
+              "signals"
+            ],
+            "properties": {
+              "detected_language": { "type": "string", "minLength": 1, "maxLength": 32 },
+              "content_kind": { "$ref": "#/$defs/ContentKind" },
+              "quality_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+              "review_priority": { "$ref": "#/$defs/ReviewPriority" },
+              "enrichment_provenance": { "$ref": "#/$defs/EnrichmentProvenance" },
+              "signals": { "$ref": "#/$defs/EnrichmentSignals" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "present": { "const": false }
+            }
+          },
+          "then": {
+            "properties": {
+              "detected_language": { "type": "null" },
+              "content_kind": { "type": "null" },
+              "quality_score": { "type": "null" },
+              "review_priority": { "type": "null" },
+              "enrichment_provenance": { "type": "null" },
+              "signals": { "type": "null" }
+            }
+          }
+        }
+      ]
+    },
+    "EnvelopeBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "file_id",
+        "content_sha256",
+        "clean_status",
+        "name",
+        "extension",
+        "original_type",
+        "size_bytes",
+        "stored_logical_path",
+        "content_summary",
+        "groq_used",
+        "warnings"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/SchemaVersion" },
+        "file_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "content_sha256": { "$ref": "#/$defs/Hex64" },
+        "clean_status": { "$ref": "#/$defs/CleanStatus" },
+        "name": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "extension": { "type": "string", "minLength": 1, "maxLength": 32 },
+        "original_type": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "size_bytes": { "type": "integer", "minimum": 0 },
+        "encoding": { "type": ["string", "null"], "maxLength": 64 },
+        "stored_logical_path": { "$ref": "#/$defs/LogicalPath" },
+        "content_summary": { "$ref": "#/$defs/ContentSummary" },
+        "groq_used": { "type": "boolean" },
+        "groq_reason": { "type": ["string", "null"], "maxLength": 256 },
+        "parse_strategy": { "type": ["string", "null"], "maxLength": 128 },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 256 }
+        }
+      }
+    },
+    "BasicEnvelopeV2": {
+      "allOf": [
+        { "$ref": "#/$defs/EnvelopeBase" },
+        {
+          "type": "object",
+          "properties": {
+            "groq_used": { "const": false }
+          },
+          "not": {
+            "required": ["enrichment"]
+          }
+        }
+      ]
+    },
+    "EnrichEnvelopeV2": {
+      "allOf": [
+        { "$ref": "#/$defs/EnvelopeBase" },
+        {
+          "type": "object",
+          "required": ["enrichment"],
+          "properties": {
+            "enrichment": { "$ref": "#/$defs/EnrichmentBlock" }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "clean_status": { "const": "ok" }
+            }
+          },
+          "then": {
+            "properties": {
+              "enrichment": {
+                "allOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "present": { "const": true }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "title": "BASIC",
+      "$ref": "#/$defs/BasicEnvelopeV2"
+    },
+    {
+      "title": "ENRICH",
+      "$ref": "#/$defs/EnrichEnvelopeV2"
+    }
+  ]
+}

@@ -21,9 +21,18 @@ def _insert_gov_core_from_master_map(workflows_dir: Path) -> Path:
     if not venv_rel:
         raise RuntimeError("Master_Map.cabins.gov_core_system.venv_dir missing")
     gov_core = (repo_root / str(venv_rel).replace("\\", "/")).resolve()
+    if not (gov_core / "core").is_dir():
+        raise RuntimeError(
+            "gov_core_system core package missing under "
+            f"{venv_rel} (land source for CI; venv Scripts/Lib stay gitignored)"
+        )
     gov_s = str(gov_core)
     if gov_s not in sys.path:
         sys.path.insert(0, gov_s)
+    # Repo root second: HQ packages (delivery/routing/…) when tests need them.
+    root_s = str(repo_root.resolve())
+    if root_s not in sys.path:
+        sys.path.append(root_s)
     return gov_core
 
 

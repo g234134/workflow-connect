@@ -1,0 +1,253 @@
+{
+  "schema_version": "tabular_tool_catalog_v1",
+  "catalog_revision": "2026-06-10",
+  "description": "Tabular MVP tool layer SSOT (intake / gate / clean / bundle / E2E + aux). Excludes Gov Registry and Phase 8.8 orchestration tools.",
+  "tools": [
+    {
+      "tool_id": "intake.new_case",
+      "type": "intake",
+      "display_name": "New Cleaning Case",
+      "module_path": "scripts/new_cleaning_case.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/new_cleaning_case.py --client-ref <ref> --product-sku <sku> --source-file <path> [--run-gate]",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "creates_case_dir": true,
+        "needs_intake": false,
+        "formats": ["csv", "tsv", "txt"],
+        "optional_flags": ["--run-gate", "--encoding", "--delimiter", "--file-format"]
+      },
+      "risk_notes": [
+        "manual_intake_only",
+        "does_not_run_cleaning_or_bundle",
+        "demo_walkthrough_often_skips"
+      ],
+      "verify_command": "python -m unittest tests.test_new_cleaning_case -v"
+    },
+    {
+      "tool_id": "validate.eligibility",
+      "type": "validation",
+      "display_name": "Case Eligibility Gate (P2)",
+      "module_path": "scripts/check_case_eligibility.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/check_case_eligibility.py --case-dir <case_dir> [--json]",
+      "applicable_conditions": {
+        "case_dir_required": true,
+        "needs_intake": true,
+        "needs_raw_data": true,
+        "formats": ["csv", "tsv"],
+        "exit_codes": {
+          "0": "accepted",
+          "1": "rejected",
+          "2": "review_needed"
+        }
+      },
+      "risk_notes": [
+        "manual_mvp_gate",
+        "review_needed_requires_human_or_force_for_cleaning"
+      ],
+      "verify_command": "python -m unittest tests.test_case_eligibility -v"
+    },
+    {
+      "tool_id": "clean.phase_demo",
+      "type": "cleaning",
+      "display_name": "Phase Demo Tabular Cleaning (P3)",
+      "module_path": "notebooks/csv_cleaning/clean_phase_demo.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python notebooks/csv_cleaning/clean_phase_demo.py --case-dir <case_dir> [--skip-eligibility] [--force]",
+      "applicable_conditions": {
+        "case_dir_required": true,
+        "needs_intake": true,
+        "needs_raw_data": true,
+        "formats": ["csv"],
+        "schema_tight": true,
+        "phase_like_columns": ["Phase", "名稱", "之前", "現在（建議）"]
+      },
+      "risk_notes": [
+        "phase_like_only",
+        "demo_non_prod",
+        "not_general_clean_pipeline",
+        "review_needed_cases_need_force_flag"
+      ],
+      "verify_command": "python -m unittest tests.test_case_runner -v"
+    },
+    {
+      "tool_id": "export.delivery_bundle",
+      "type": "export",
+      "display_name": "Case Delivery Bundle (P4)",
+      "module_path": "scripts/build_case_delivery_bundle.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/build_case_delivery_bundle.py --case-dir <case_dir> [--json] [--refresh-eligibility]",
+      "applicable_conditions": {
+        "case_dir_required": true,
+        "needs_intake": true,
+        "prefers_cleaned_csv": true,
+        "prefers_report_json": true,
+        "invokes_output_guard": true
+      },
+      "risk_notes": [
+        "bundle_structure_mvp_v0.1",
+        "output_guard_sidecar_does_not_block_exit"
+      ],
+      "verify_command": "python -m unittest tests.test_case_delivery_bundle -v"
+    },
+    {
+      "tool_id": "validate.output_guard",
+      "type": "validation",
+      "display_name": "Output Row-Ratio Guard",
+      "module_path": "notebooks/csv_cleaning/output_guard.py",
+      "entry_kind": "python_module",
+      "entrypoint": "compute_output_guard",
+      "enabled": true,
+      "cli_invocation": null,
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "invoked_by": ["export.delivery_bundle"],
+        "needs_report_json": true,
+        "standalone_cli": false
+      },
+      "risk_notes": [
+        "sidecar_observation_only",
+        "does_not_alter_cleaning_or_bundle_exit_codes",
+        "ratio_warning_expected_for_sampleco"
+      ],
+      "verify_command": "python -m unittest tests.test_output_guard -v"
+    },
+    {
+      "tool_id": "orchestrate.e2e",
+      "type": "orchestration",
+      "display_name": "Case E2E Validation Driver",
+      "module_path": "scripts/run_case_e2e_validation.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/run_case_e2e_validation.py --case-dir <case_dir> [--json] [--force-review]",
+      "applicable_conditions": {
+        "case_dir_required": true,
+        "needs_intake": true,
+        "needs_raw_data": true,
+        "chains": ["validate.eligibility", "clean.phase_demo", "export.delivery_bundle"],
+        "non_single_step": true
+      },
+      "risk_notes": [
+        "orchestration_not_single_step_tool",
+        "default_force_review_for_demo_phase",
+        "does_not_modify_underlying_tool_semantics"
+      ],
+      "verify_command": "python scripts/run_case_e2e_validation.py --case-dir cases/demo_phase --json"
+    },
+    {
+      "tool_id": "index.cases",
+      "type": "helper",
+      "display_name": "Cases Index Refresh",
+      "module_path": "scripts/build_cases_index.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/build_cases_index.py [--json]",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "read_only_scan": true,
+        "writes_cases_index_json": true
+      },
+      "risk_notes": [
+        "read_only_case_scan",
+        "not_hard_gate"
+      ],
+      "verify_command": "python scripts/build_cases_index.py --json"
+    },
+    {
+      "tool_id": "lookup.history",
+      "type": "helper",
+      "display_name": "Case History Lookup",
+      "module_path": "scripts/lookup_case_history.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/lookup_case_history.py --list-all | --client-ref <ref> | --product-sku <sku>",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "needs_cases_index": true,
+        "read_only": true
+      },
+      "risk_notes": [
+        "read_only_lookup",
+        "requires_prior_index_refresh"
+      ],
+      "verify_command": "python scripts/lookup_case_history.py --list-all"
+    },
+    {
+      "tool_id": "plan.cleaning_stages",
+      "type": "helper",
+      "display_name": "Tabular Cleaning Plan (Runbook Planner)",
+      "module_path": "notebooks/csv_cleaning/run_tabular_cleaning_plan.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python notebooks/csv_cleaning/run_tabular_cleaning_plan.py [--stage <name>] [--json]",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "lists_stages_only": true,
+        "does_not_run_cleaning": true
+      },
+      "risk_notes": [
+        "internal_only",
+        "not_prod_pipeline",
+        "non_sla",
+        "checklist_planner_only"
+      ],
+      "verify_command": "python notebooks/csv_cleaning/run_tabular_cleaning_plan.py --json"
+    },
+    {
+      "tool_id": "ui.local",
+      "type": "helper",
+      "display_name": "Local MVP Web UI",
+      "module_path": "app/local_ui.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python app/local_ui.py [--port 8765]",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "wraps_tools": ["lookup.history", "intake.new_case", "orchestrate.e2e", "index.cases"],
+        "localhost_only": true
+      },
+      "risk_notes": [
+        "not_prod",
+        "single_user_localhost",
+        "subprocess_wrapper_only"
+      ],
+      "verify_command": "manual: python app/local_ui.py --port 8765 (localhost smoke; no dedicated unittest)"
+    },
+    {
+      "tool_id": "orchestrate.mainline_regression",
+      "type": "orchestration",
+      "display_name": "MVP Mainline Regression Runner",
+      "module_path": "scripts/run_mvp_mainline_regression.py",
+      "entry_kind": "python_cli",
+      "entrypoint": "main",
+      "enabled": true,
+      "cli_invocation": "python scripts/run_mvp_mainline_regression.py [-v]",
+      "applicable_conditions": {
+        "case_dir_required": false,
+        "chains": ["orchestrate.e2e"],
+        "fixtures": ["cases/demo_phase", "cases/sampleco/2026-0001"],
+        "non_single_step": true
+      },
+      "risk_notes": [
+        "regression_orchestration_not_single_step",
+        "wraps_tests_test_mvp_mainline",
+        "run_before_merge_after_tabular_changes"
+      ],
+      "verify_command": "python scripts/run_mvp_mainline_regression.py -v"
+    }
+  ]
+}

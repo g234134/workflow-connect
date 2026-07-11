@@ -1,0 +1,69 @@
+# Intake Gate Policy SSOT v1 (P75-G3)
+# Aligns with intake_decision_rules_v2 tier A/B/C/D and PM-D2/D3/D4/D6 defaults.
+
+policy_version: intake_gate_policy_v1
+schema_version: intake_gate_policy_v1
+
+defaults:
+  unsupported_task_type: reject
+  non_tabular_without_extended_flag: reject
+  unknown_client: review_needed
+
+allowlist_tiers:
+  - profile_id: demo_phase
+    tier: A
+    maturity: stable
+    match:
+      case_ids: [demo_phase]
+      client_refs: [internal-demo]
+  - profile_id: sampleco
+    tier: B
+    maturity: stable
+    match:
+      client_refs: [sampleco]
+  - profile_id: additional_demo
+    tier: C
+    maturity: experimental
+    requires_extended_fixture_flag: true
+    match:
+      case_ids: [additional_demo]
+      client_refs: [additional-demo]
+  - profile_id: sandbox_client
+    tier: D
+    maturity: experimental
+    requires_extended_fixture_flag: true
+    match:
+      case_ids: [sandbox_client]
+      client_refs: [sandbox-client]
+
+supported_task_types:
+  tabular:
+    - tabular.cleaning.mvp
+    - tabular.cleaning.regression
+    - tabular.intake.new_case
+  non_tabular:
+    - non_tabular.document.extract
+    - non_tabular.log.analyze
+    - non_tabular.generic.transform
+
+deny_rules:
+  - rule_id: POLICY-DENY-PHI
+    reason_code: policy_deny_phi
+    match:
+      sensitivity_values: [phi]
+      intake_flags: [contains_phi, phi_declared]
+  - rule_id: POLICY-DENY-WEB-SCRAPING
+    reason_code: policy_deny_web_scraping
+    match:
+      provenance_source_types: [web_scraping]
+  - rule_id: POLICY-DENY-AUDIO-VIDEO
+    reason_code: policy_deny_audio_video
+    match:
+      structure_values: [audio_video]
+  - rule_id: POLICY-DENY-SCALE
+    reason_code: policy_deny_scale_exceeds
+    match:
+      scale_limits:
+        max_row_count: 10000000
+        max_file_size_bytes: 10737418240
+        max_batch_files: 1000

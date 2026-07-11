@@ -28,6 +28,10 @@ jobs:
     name: INT Tier-A nightly (Track B)
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      # Source-only gov_core tree (Scripts/Lib remain gitignored). CLI also inserts this path.
+      PYTHONPATH: ${{ github.workspace }}/01_Environments/python_venvs/gov_core_system:${{ github.workspace }}
+      TANG_GOV_ROOT: ${{ github.workspace }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,6 +40,43 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Materialize gov_core source (CI mirror → Master_Map path)
+        shell: bash
+        run: |
+          set -euo pipefail
+          MIRROR="ci/gov_core_system"
+          GOV_CORE="01_Environments/python_venvs/gov_core_system"
+          test -d "${MIRROR}/core" || {
+            echo "::error title=P6 INT infra::missing CI mirror ${MIRROR}/core"
+            exit 2
+          }
+          mkdir -p "$(dirname "${GOV_CORE}")"
+          rm -rf "${GOV_CORE}"
+          cp -a "${MIRROR}" "${GOV_CORE}"
+          echo "materialized ${GOV_CORE} from ${MIRROR}"
+
+      - name: Verify gov_core source visibility
+        shell: bash
+        run: |
+          set -euo pipefail
+          GOV_CORE="01_Environments/python_venvs/gov_core_system"
+          test -d "${GOV_CORE}/core" || {
+            echo "::error title=P6 INT infra::missing ${GOV_CORE}/core on checkout (source must be landed; venv tree stays gitignored)"
+            exit 2
+          }
+          test -f "${GOV_CORE}/core/wave7_regression_gate.py" || {
+            echo "::error title=P6 INT infra::missing core.wave7_regression_gate on checkout"
+            exit 2
+          }
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          gov = Path("01_Environments/python_venvs/gov_core_system").resolve()
+          sys.path.insert(0, str(gov))
+          import core.wave7_regression_gate as g
+          print("core_ok", getattr(g, "__file__", "?"))
+          PY
 
       - name: Install gov_core CI dependencies
         shell: bash

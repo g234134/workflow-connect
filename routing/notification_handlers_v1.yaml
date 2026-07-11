@@ -1,0 +1,40 @@
+schema_version: notification_handlers_v1
+description: >
+  Local downstream handler registry for W6-T10 workflow notification events (P8.9-T3).
+  Handlers are Python callables invoked post-emit by notification_gateway_v1 (fail-open).
+  HTTP webhook sinks belong to P8.9-T4 — not registered here.
+
+handlers:
+  - handler_id: bundle_ready_log_v1
+    description: Log delivery.bundle_ready locally and record downstream ack
+    event_types:
+      - delivery.bundle_ready
+    entrypoint: delivery.notification_dispatch_v1:handle_bundle_ready_log
+
+  - handler_id: controlled_notify_bundle_ready_v1
+    description: >
+      W7-T3 controlled notify experiment on delivery.bundle_ready when
+      GOV_CONTROLLED_NOTIFY_ON_DISPATCH=1 (sandbox allowlist only)
+    event_types:
+      - delivery.bundle_ready
+    entrypoint: delivery.notification_dispatch_v1:handle_controlled_notify_bundle_ready
+    enabled_when: controlled_notify_on_dispatch
+
+  - handler_id: run_terminal_log_v1
+    description: Log run.completed / run.blocked and record downstream ack
+    event_types:
+      - run.completed
+      - run.blocked
+    entrypoint: delivery.notification_dispatch_v1:handle_run_terminal_log
+
+  - handler_id: webhook_dispatch_v1
+    description: >
+      Webhook HTTP POST sink (WD-P7-T2). Sends to mock/test endpoint when
+      GOV_NOTIFICATION_WEBHOOK_ENABLED=1 and case_ref matches allowlist.
+      Fail-open: errors never block main flow. Sandbox-only (localhost/127.0.0.1).
+    event_types:
+      - delivery.bundle_ready
+      - checkpoint.approved
+      - run.completed
+    entrypoint: delivery.notification_dispatch_v1:handle_webhook_dispatch
+    enabled_when: webhook_dispatch

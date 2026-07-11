@@ -1,0 +1,29 @@
+{
+  "case_id": "additional_demo",
+  "client_ref": "additional-demo",
+  "product_sku": "CLEAN-BASIC",
+  "data_file": "raw/Phase_extended.csv",
+  "file_format": "csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "scale": {
+    "row_count": 12,
+    "file_size_bytes": 420
+  },
+  "schema": {
+    "field_count": 4,
+    "primary_key": null,
+    "pii_fields": []
+  },
+  "provenance": {
+    "source_type": "owned",
+    "data_owner": "internal"
+  },
+  "sensitivity": "internal",
+  "structure": "text_only",
+  "security_compliance": {
+    "contains_pii": false,
+    "user_acknowledged_limitations": true
+  },
+  "cleaning_goals": "W7-T1 experiment-line fixture: extended Phase table (<100 rows, review_needed gate)"
+}

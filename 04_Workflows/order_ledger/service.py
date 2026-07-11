@@ -8,7 +8,7 @@ from typing import Any
 from dispatch_executor import TicketRecord
 
 from order_ledger.gates import is_ready_for_order, validate_amount_minor, validate_currency
-from order_ledger.models import OrderRecord, build_order_id
+from order_ledger.models import OrderRecord, build_order_id, is_valid_transition, normalize_order_status
 from order_ledger.store import OrderLedgerStore
 
 
@@ -120,4 +120,64 @@ def list_orders(store: OrderLedgerStore) -> dict[str, Any]:
         "message": "orders_listed",
         "count": len(orders),
         "orders": orders,
+    }
+
+
+def transition_order(
+    store: OrderLedgerStore,
+    order_id: str,
+    to_status: str,
+    *,
+    actor: str = "cli",
+    reason: str = "manual_transition",
+    provider_ref: str = "",
+) -> dict[str, Any]:
+    """Transition order status along sandbox state machine; fail-closed on illegal jumps."""
+    found = store.get_by_order_id(order_id)
+    if found is None:
+        return {"ok": False, "message": "order_not_found", "order_id": order_id}
+
+    current = normalize_order_status(found.order_status)
+    target = normalize_order_status(to_status)
+
+    if current == target:
+        return {
+            "ok": True,
+            "message": "already_in_status",
+            "replay": True,
+            "order": found.to_dict(),
+        }
+
+    if not is_valid_transition(current, target):
+        return {
+            "ok": False,
+            "message": "invalid_transition",
+            "order_id": order_id,
+            "from_status": current,
+            "to_status": target,
+        }
+
+    updated = OrderRecord(
+        order_id=found.order_id,
+        ticket_id=found.ticket_id,
+        ticket_ref=found.ticket_ref,
+        amount_minor=found.amount_minor,
+        currency=found.currency,
+        order_status=target,
+        created_at=found.created_at,
+        idempotency_key=found.idempotency_key,
+        schema_version=found.schema_version,
+        transitioned_at=_utc_now_iso(),
+        actor=(actor or "cli").strip() or "cli",
+        reason=(reason or "manual_transition").strip() or "manual_transition",
+        provider_ref=(provider_ref or "").strip(),
+    )
+    store.update(updated)
+    return {
+        "ok": True,
+        "message": "order_transitioned",
+        "replay": False,
+        "from_status": current,
+        "to_status": target,
+        "order": updated.to_dict(),
     }

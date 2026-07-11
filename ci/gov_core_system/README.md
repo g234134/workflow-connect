@@ -8,3 +8,6 @@ Portable **source-only** mirror for P6 INT nightly/PR workflows.
 - **CI**: workflows copy this tree onto the Master_Map cabin path before running the gate.
 
 Do not treat this mirror as the DarkOps edit surface — edit the cabin, then refresh this mirror when landing CI assets.
+
+Includes a stub `pyvenv.cfg` so INT bootstrap marker checks pass; this is **not** a provisioned interpreter tree.
+

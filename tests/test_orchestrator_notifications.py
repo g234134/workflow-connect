@@ -20,6 +20,33 @@ _CLI_PATH = _REPO_ROOT / "scripts" / "run_agent_standard_case_experiment.py"
 _DEMO_PHASE = "cases/demo_phase"
 _ADDITIONAL_DEMO = "cases/additional_demo"
 
+_NOTIFICATION_ENV_KEYS = (
+    "GOV_NOTIFICATION_GATEWAY_ENABLED",
+    "GOV_NOTIFICATION_DISPATCH_ENABLED",
+    "GOV_NOTIFICATION_WEBHOOK_ENABLED",
+    "GOV_NOTIFICATION_WEBHOOK_CASE_ALLOWLIST",
+    "GOV_NOTIFICATION_WEBHOOK_URL",
+)
+
+
+def _snapshot_env(keys: tuple[str, ...]) -> dict[str, str | None]:
+    return {key: os.environ.get(key) for key in keys}
+
+
+def _restore_env(snapshot: dict[str, str | None]) -> None:
+    for key, val in snapshot.items():
+        if val is None:
+            os.environ.pop(key, None)
+        else:
+            os.environ[key] = val
+
+
+def _clear_notification_env() -> dict[str, str | None]:
+    snap = _snapshot_env(_NOTIFICATION_ENV_KEYS)
+    for key in _NOTIFICATION_ENV_KEYS:
+        os.environ.pop(key, None)
+    return snap
+
 
 def _load_cli_module():
     spec = importlib.util.spec_from_file_location(
@@ -155,47 +182,51 @@ class TestOrchestratorNotifications(unittest.TestCase):
 
     def test_disable_notifications_no_events_emitted(self) -> None:
         """AC-2: notifications disabled → no intake.gate_decision or delivery.bundle_ready."""
-        with tempfile.TemporaryDirectory() as tmp:
-            outbox = Path(tmp) / "outbox"
-            result = self.cli.run_agent_standard_case_experiment(
-                "tabular.cleaning.mvp",
-                _ADDITIONAL_DEMO,
-                mode="run",
-                auto_approve_intake=True,
-                sandbox_end_to_end=True,
-                outbox_root_override=str(outbox),
-                notifications_enabled=False,  # Disabled
-            )
-
-            # Verify orchestrator still succeeded (fail-open)
-            self.assertTrue(result.get("ok"))
-            self.assertEqual(result.get("final_status"), "sandbox_e2e_complete")
-
-            # Verify no notification events were written
-            notifications_dir = outbox / "notifications"
-            if notifications_dir.exists():
-                event_files = list(notifications_dir.rglob("*.json"))
-                self.assertEqual(
-                    len(event_files),
-                    0,
-                    f"Expected no notification files when disabled, found: {event_files}",
+        snap = _clear_notification_env()
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                outbox = Path(tmp) / "outbox"
+                result = self.cli.run_agent_standard_case_experiment(
+                    "tabular.cleaning.mvp",
+                    _ADDITIONAL_DEMO,
+                    mode="run",
+                    auto_approve_intake=True,
+                    sandbox_end_to_end=True,
+                    outbox_root_override=str(outbox),
+                    notifications_enabled=False,  # Disabled
                 )
 
-            # Verify JSONL does not exist or is empty
-            jsonl_path = outbox / "notification_events.jsonl"
-            if jsonl_path.exists():
-                content = jsonl_path.read_text(encoding="utf-8").strip()
-                self.assertEqual(
-                    content,
-                    "",
-                    "Expected empty JSONL when notifications disabled",
-                )
+                # Verify orchestrator still succeeded (fail-open)
+                self.assertTrue(result.get("ok"))
+                self.assertEqual(result.get("final_status"), "sandbox_e2e_complete")
 
-            # Specifically verify no intake.gate_decision or delivery.bundle_ready
-            intake_events = self._find_notification_events(outbox, "intake.gate_decision")
-            bundle_events = self._find_notification_events(outbox, "delivery.bundle_ready")
-            self.assertEqual(len(intake_events), 0, "Expected no intake.gate_decision when disabled")
-            self.assertEqual(len(bundle_events), 0, "Expected no delivery.bundle_ready when disabled")
+                # Verify no notification events were written
+                notifications_dir = outbox / "notifications"
+                if notifications_dir.exists():
+                    event_files = list(notifications_dir.rglob("*.json"))
+                    self.assertEqual(
+                        len(event_files),
+                        0,
+                        f"Expected no notification files when disabled, found: {event_files}",
+                    )
+
+                # Verify JSONL does not exist or is empty
+                jsonl_path = outbox / "notification_events.jsonl"
+                if jsonl_path.exists():
+                    content = jsonl_path.read_text(encoding="utf-8").strip()
+                    self.assertEqual(
+                        content,
+                        "",
+                        "Expected empty JSONL when notifications disabled",
+                    )
+
+                # Specifically verify no intake.gate_decision or delivery.bundle_ready
+                intake_events = self._find_notification_events(outbox, "intake.gate_decision")
+                bundle_events = self._find_notification_events(outbox, "delivery.bundle_ready")
+                self.assertEqual(len(intake_events), 0, "Expected no intake.gate_decision when disabled")
+                self.assertEqual(len(bundle_events), 0, "Expected no delivery.bundle_ready when disabled")
+        finally:
+            _restore_env(snap)
 
     def test_notification_failure_does_not_block_orchestrator(self) -> None:
         """AC-3: notification errors fail-open → orchestrator ok stays true."""
@@ -329,28 +360,32 @@ class TestOrchestratorNotificationEnvGate(unittest.TestCase):
 
     def test_cli_flag_overrides_env_disable(self) -> None:
         """--enable-notifications flag works independently."""
-        with tempfile.TemporaryDirectory() as tmp:
-            outbox = Path(tmp) / "outbox"
+        snap = _clear_notification_env()
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                outbox = Path(tmp) / "outbox"
 
-            # Env var not set, but CLI flag enabled
-            result = self.cli.run_agent_standard_case_experiment(
-                "tabular.cleaning.mvp",
-                _DEMO_PHASE,
-                mode="run",
-                auto_approve_intake=True,
-                outbox_root_override=str(outbox),
-                notifications_enabled=True,  # CLI flag on
-            )
+                # Env var not set, but CLI flag enabled
+                result = self.cli.run_agent_standard_case_experiment(
+                    "tabular.cleaning.mvp",
+                    _DEMO_PHASE,
+                    mode="run",
+                    auto_approve_intake=True,
+                    outbox_root_override=str(outbox),
+                    notifications_enabled=True,  # CLI flag on
+                )
 
-            # Verify orchestrator succeeded
-            self.assertTrue(result.get("ok"))
+                # Verify orchestrator succeeded
+                self.assertTrue(result.get("ok"))
 
-            # Verify notifications were emitted
-            notifications_dir = outbox / "notifications"
-            self.assertTrue(
-                notifications_dir.exists() or (outbox / "notification_events.jsonl").exists(),
-                "Expected notifications to be emitted when CLI flag enabled",
-            )
+                # Verify notifications were emitted
+                notifications_dir = outbox / "notifications"
+                self.assertTrue(
+                    notifications_dir.exists() or (outbox / "notification_events.jsonl").exists(),
+                    "Expected notifications to be emitted when CLI flag enabled",
+                )
+        finally:
+            _restore_env(snap)
 
 
 if __name__ == "__main__":

@@ -29,12 +29,9 @@ jobs:
     name: P7 notification smoke (advisory)
     continue-on-error: true
     runs-on: ubuntu-latest
-    env:
-      GOV_NOTIFICATION_GATEWAY_ENABLED: "1"
-      GOV_NOTIFICATION_DISPATCH_ENABLED: "1"
-      GOV_NOTIFICATION_WEBHOOK_ENABLED: "1"
-      GOV_NOTIFICATION_WEBHOOK_URL: "http://127.0.0.1:8080/webhook"
-      GOV_NOTIFICATION_WEBHOOK_CASE_ALLOWLIST: "demo_*,additional_*"
+    # Intentionally NO job-level GOV_NOTIFICATION_* here: gate-off / disable tests
+    # assert env-cleared behavior. Tests that need gates set env via patch.dict /
+    # subprocess env themselves (see test_orchestrator_* modules).
     steps:
       - name: Checkout
         uses: actions/checkout@v4

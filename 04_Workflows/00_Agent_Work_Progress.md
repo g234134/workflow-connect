@@ -5770,3 +5770,121 @@ pm start 正式版（仍 EPERM）· ≠ agentmemory:8006（未監聽）
 2. 若要修 Eval gate schedule：授權 commit/push `eval-gate-ci.yml`
 3. Round-2 仍 DEFER ≥07-18
 
+
+---
+
+## 2026-07-12 · Eval gate 回綠（選項 1）
+
+**模式**：HQ-Coordinator · 尚書省授權 push + 選項 1 快速回綠
+**狀態依據**：QUEUE · 前輪 RED runs 29194987569 / 29194997274
+
+### 做了什麼
+
+1. Push 5084170b（總檔案紀錄 A/B′/B3 + P6 DAY2 + eval-gate 初修）
+2. 驗證 RED：W1-T3 測試模組未入庫（	est_wf_status_summary / 	est_eval_trace_correlate）
+3. **選項 1**：回退至 3dd2a9c68 suite 形狀 + 僅保留反斜線續行空行修復 → commit  e850e5b8 · push · dispatch
+
+### 驗證
+
+- Push run 29195099663 **success**（unit tests + shadow spool smoke）
+- Dispatch run 29195101744 **success**（同上；shadow nightly skipped）
+- remaining_broken continuations = 0 · 無 W1-T3 未入庫引用
+
+### non_claims
+
+≠ W1-T3 完整落地 · ≠ Phase% uplift · ≠ P6 DAY3 · ≠ Round-2 GO · ≠ schedule 已再跑（下次 UTC 06:00）
+
+### 下一步
+
+1. Human：續盯 P6 DAY3–7
+2. 若要落地 W1-T3：另開票入庫 tests／fixtures／scripts
+3. Round-2 仍 DEFER ≥07-18
+
+
+---
+
+## 2026-07-12 · 續作盤點收口（READY=0 · 下一波接手）
+
+**模式**：HQ-Coordinator／Implementer · 尚書省「能做的做完／不能做的整理」
+**狀態依據**：boot `hq.coordination` · QUEUE stats ready=0 · Progress 前輪 Eval gate 回綠 · `W1-T3_state.md`
+
+### 做了什麼
+
+1. 接戰 bootstrap：`assignable=true` · DarkOps 未解禁 · 主線 **READY=0**
+2. 盤點 QUEUE／Progress／transcripts：AI 可執行主線票已清空；priority_next 僅 human（P6 DAY3–7 · Round-2 DEFER）
+3. **可獨立驗證**：本機 `python -m unittest tests.test_wf_status_summary tests.test_eval_trace_correlate -v` → **25 tests OK**
+4. 回寫 `04_Workflows/tickets/W1-T3_state.md`：STATE→`blocked_remote_land` · LANDING checklist · Run Log
+5. 回寫 `04_Workflows/command_queue/QUEUE.yaml`：新增 `W1-T3-CI-LAND`（BLOCKED · commit-push-auth）· priority_next seq3 · stats blocked 9→10
+
+### 驗證
+
+- W1-T3 本機 unittest：**25 OK**
+- QUEUE CLI：`ready=0` · `blocked=10`（含新 LAND 票）
+- P6：仍 **2/7** · 最近 schedule GREEN=`29186698130` · **尚無 DAY3**（待次日 cron）
+- Eval gate 遠端：仍綠（`0e850e5b8` · `29195099663`／`29195101744`）· **不含** W1-T3 模組引用
+
+### non_claims
+
+≠ W1-T3 remote land／commit／push · ≠ P6 DAY3 回填 · ≠ Round-2 GO · ≠ Phase% uplift · ≠ 暗部施工
+
+### 下一波接手（結構化 · 不能做）
+
+| ID | 現狀 | 阻塞 | 下一棒 | 路徑 | verify |
+|----|------|------|--------|------|--------|
+| P6-nightly-continue | 綠日鐘 **2/7** | 環境／時間（等 DAY3+ schedule） | Human 盯 cron → Scribe 回填 | `docs/p6-int-nightly-monitor-v1.md` · `tickets/WF-P6-INT-NIGHTLY-MONITOR_state.md` | `gh run list --workflow p6-int-gate-nightly.yml` |
+| P7-Round-2 | DEFER | 決策 · earliest 07-18 · 五頂未齊 | 尚書省 ≥07-18 再裁 | QUEUE `global_blocked.P7-Round-2` | — |
+| W1-T3-CI-LAND | 本機綠 · 遠端缺 3 檔 | **授權** commit/push | 授權後 Implementer 依 LANDING | `tickets/W1-T3_state.md` · 3× untracked | unittest 25 + eval-gate dispatch |
+| WC-PRE / G1-T3 / G6-T1 | BLOCKED | 批文 defer ≥14d | 尚書省 H5 | 對應 `tickets/FP-G*_state.md` | — |
+| FP-G2-T5 | BLOCKED | PM smoke_corpus | PM／尚書省 H7 | full-phase G2 | — |
+| FP-G9/G10 unplanned | NOT_PLANNED | Round-2／PM-D7／WC-PRE | 勿派 AI | QUEUE `unplanned_backlog` | — |
+
+### 建議下一波第一棒口令
+
+```
+python .\04_Workflows\_boot_context.py --text "W1-T3-CI-LAND：授權後入庫未追蹤模組並恢復 eval-gate；或 Scribe 回填 P6 DAY3" --pretty
+```
+
+### 須尚書省裁決
+
+1. **是否授權** W1-T3-CI-LAND commit/push（3 未追蹤檔 + observability.md diff + 恢復 yml）
+2. P6 DAY3–7 續由 human 盯（無需 AI 空轉）
+3. Round-2 維持 DEFER 至 ≥07-18（勿提前 execute）
+
+
+---
+
+## 2026-07-12 · W1-T3-CI-LAND 授權入庫完成
+
+**模式**：Implementer · 尚書省**明示授權** W1-T3-CI-LAND 入庫
+**狀態依據**：`tickets/W1-T3_state.md` LANDING · 本輪授權指令
+
+### 做了什麼
+
+1. 本機驗證：`python -m unittest tests.test_wf_status_summary tests.test_eval_trace_correlate -v` → **25 OK**
+2. 入庫 commit `d6a9c373c`：`wf_status_summary` + 兩測 + scoped `docs/observability.md` §9 + 恢復 eval-gate W1-T3 步驟
+3. 首推 CI RED（缺 fixtures／`eval_*` API 依賴）→ 補 commit `bde9a8ea4`（`eval_report`／`eval_exporter`／`eval_stats` + trace／case_index fixtures）
+4. Push `main` + `workflow_dispatch` → **兩邊 success**
+5. 回寫 STATE→`done` · QUEUE `W1-T3-CI-LAND`→DONE · 記錄 defer 裁決
+
+### 驗證
+
+- Push run `29195842807` **success**（unit + W1-T3 artifact steps + shadow spool smoke）
+- Dispatch run `29195843133` **success**
+- 全 eval-gate 本機 suite 抽測 **74 OK**（含既有 + W1-T3）
+
+### 尚書省裁決留痕（本輪）
+
+- **同意**：W1-T3-CI-LAND 入庫（已執行）
+- **仍 defer／等時間**：**P6 DAY3+** 綠日鐘續收（現 **2/7**）；**Round-2** 維持 DEFER · earliest **07-18**
+- **未做**：P6 Round-2 execute · 暗部 · Phase% uplift
+
+### non_claims
+
+≠ Reviewer C_REPORT 必簽 · ≠ P6 DAY3 已回填 · ≠ Round-2 GO · ≠ Phase% uplift
+
+### 下一步
+
+1. Human：續盯 P6 DAY3–7 schedule
+2. 可選：Reviewer 簽 `W1-T3_state.md` C_REPORT
+3. Round-2 仍 ≥07-18 再裁
+

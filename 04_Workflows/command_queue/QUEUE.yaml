@@ -62,6 +62,12 @@ session:
     Tier-A 112/112 · 2/7 · ≠ uplift。
   eval_gate_backslash_fix_local_2026_07_12: eval-gate-ci.yml 修續行反斜線後空行（本機未
     commit／push）· schedule 29184918432 曾 RED（--source command not found）。
+  eval_gate_restore_green_2026_07_12: 選項1回綠 · commit 0e850e5b8 · push+dispatch PASS
+    29195099663／29195101744 · 撤回未入庫 W1-T3 引用 · ≠ schedule 再跑／W1-T3 落地。
+  continue_drain_2026_07_12: 續作盤點 · READY=0 · AI 主線無票 · 本機驗 W1-T3 25 OK ·
+    STATE→blocked_remote_land · 下一波須授權 LAND 或 human 盯 P6 DAY3。
+  w1_t3_ci_land_done_2026_07_12: 尚書省授權 · commits d6a9c373c／bde9a8ea4 · CI PASS
+    29195842807／29195843133 · W1-T3-CI-LAND DONE · P6 DAY3／Round-2 仍 defer。
   oa_unify_note: Multi-Chat 代號一律 O（Orchestrator／Operator）；廢止 A。
   boot_light_note: _boot_context.py --mode light --ticket-id --role；預設仍 full。
 stats:
@@ -70,7 +76,7 @@ stats:
   doing: 0
   planned: 0
   blocked: 9
-  done: 48
+  done: 49
   not_planned: 5
   deferred: 0
   archived_done: 48
@@ -325,6 +331,25 @@ queue:
   - P6-nightly-7d
   next_action: DAY1 GREEN · 續收 DAY2–7 · 滿窗後治理 uplift
   human_seq: H2
+- id: W1-T3-CI-LAND
+  wave: W1
+  group: obs
+  title: W1-T3 未追蹤模組入庫 + 恢復 eval-gate 步驟
+  status: DONE
+  lifecycle_phase: D
+  phase_targets:
+  - P3.5
+  state_file: 04_Workflows/tickets/W1-T3_state.md
+  frame_ref: 04_Workflows/tickets/W1-T3_state.md#LANDING
+  next_action: landed · CI green · 可選 Reviewer C_REPORT · ≠ P6 DAY3／Round-2
+  evidence:
+    commits:
+    - d6a9c373c
+    - bde9a8ea4
+    runs:
+    - 29195842807
+    - 29195843133
+  closure_tag: branch_ai_closed
 unplanned_backlog:
 - id: FP-G10-S15-notify
   group: G10

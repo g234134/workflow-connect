@@ -5515,3 +5515,258 @@ P6 開窗 ≠ 綠日已起算 ≠ 83→91
 ### 下一步
 尚書省／Scribe 二次回填；P7 11 條 AssertionError 另票或授權再修（非缺檔）
 
+
+---
+
+## 2026-07-12 · H3 Scribe 二次回填 + P7 另票
+
+**模式**：Scribe + Orchestrator · HQ-Coordinator  
+**依據**：尚書省「P6／P9 可回填；P7 11 AssertionError 另票；繼續工作」· DarkOps 未改 · **未改** Phase%
+
+### Run 表（二次）
+
+| 項 | run_id | URL | 結果 |
+|----|--------|-----|------|
+| **P9 sandbox** | 29159159265 | https://github.com/g234134/workflow-connect/actions/runs/29159159265 | **PASS** |
+| **P6 nightly** | 29159219832 | https://github.com/g234134/workflow-connect/actions/runs/29159219832 | **PASS** · Tier-A **112/112** · **DAY1 GREEN** |
+| **P7 advisory** | 29159219044 | https://github.com/g234134/workflow-connect/actions/runs/29159219044 | **job FAIL** · 51/11 AssertionError（非缺檔）· continue-on-error → run success |
+
+### 已更新
+
+- docs/p6-int-nightly-monitor-v1.md — 綠日鐘**已起** · 1/7 · DAY0 RED 不計
+- docs/ga-remote-closure-checklist-v1.md · docs/P7_ADVISORY_CI_INDEX.md · docs/p8_p89_evidence_index_v1.md（P9 交叉）
+- WF-P6-INT-NIGHTLY-MONITOR · WH-P9-CI-payment-sandbox-smoke-v1 STATE／D_REPORT
+- **新票** W2-P7-ADV-assertion-fix-v1 · rame_ready · QUEUE READY
+- QUEUE.yaml · priority_next → P7 assertion-fix
+
+### non_claims
+
+P6 DAY1 ≠ 7/7 ≠ 83→91  
+P9 PASS ≠ prod provider ≠ required CI  
+P7 另票 ≠ Round-2 GO ≠ Phase closure
+
+### 下一步
+
+1. **Implementer**：W2-P7-ADV-assertion-fix-v1（優先假設：job-level GOV_NOTIFICATION_* env 污染 gate-off 測試）
+2. **Human**：P6 續收 DAY2–7 · Round-2 仍 DEFER（≥07-18）
+
+
+---
+
+## 2026-07-12 · W2-P7-ADV-assertion-fix-v1 · done_with_gaps
+
+**模式**：Multi-Chat O/B/C/D 同輪 · HQ-Coordinator  
+**票**：`W2-P7-ADV-assertion-fix-v1` · wave W2 · lifecycle O · evidence_tier CI-advisory  
+**依據**：尚書省「繼續工作」· 二次 GA `29159219044` 11 AssertionError 另票
+
+### 根因（一句）
+
+遠端缺 `clean_phase_demo.py` 等 CLI → Python exit 2，誤讀為 gate AssertionError；job-level `GOV_NOTIFICATION_*` 為次因。
+
+### 變更（工作樹 · 未 commit）
+
+- `scripts/run_agent_standard_case_experiment.py` — 缺 cleaning CLI 或 `GOV_P7_SMOKE_STUB_TOOLS=1` 時 stub
+- `.github/workflows/p7-notification-smoke.yml` — 移除 job-level `GOV_NOTIFICATION_*`；維持 continue-on-error / sandbox
+- `tests/test_orchestrator_notifications.py` — disable／CLI 測試顯式清 env
+
+### 驗證
+
+- `python -m unittest` 三模組 → **Ran 51 · OK**
+- 同上 + stub + 模擬 CI job env → **Ran 51 · OK**
+- Reviewer：`accepted_with_gaps`（AC-5 遠端 re-dispatch pending）
+
+### non_claims
+
+本機綠 ≠ 遠端 job pass ≠ Round-2 GO ≠ required CI ≠ Phase% ≠ stub=真實 cleaning GA
+
+### 下一步
+
+1. **尚書省**：授權 commit/push 本票三檔 → `workflow_dispatch` → 回填 AC-5 run_url
+2. **Human**：P6 DAY2–7 · Round-2 DEFER（≥07-18）
+
+
+---
+
+## 2026-07-12 · W5-T6 DONE + P7 push 授權開工
+
+**模式**：same_chat O/B/C/D · HQ-Coordinator  
+**依據**：尚書省「開始吧」· W5-T6 READY · P7 push 授權 · P6 綠日鐘續盯
+
+### W5-T6（doc/spec）
+
+- schema master + playbook §3 納入 
+elay_mode／waiting_ops／ops_checklist／current_owner: ops
+- Reviewer：**accepted** · QUEUE → archive
+- **non_claims**：≠ Phase% · ≠ Round-2 GO · ≠ 歷史票已回填
+
+### P7 assertion-fix（ops）
+
+- 授權 commit/push 三檔 + workflow_dispatch（本輪執行中）
+
+### P6
+
+- DAY1 GREEN 維持 · 續收 DAY2–7 · Round-2 DEFER（≥07-18）· uplift 滿窗再裁
+
+
+---
+
+## 2026-07-12 · 三線開工收口（W5-T6 · P7 AC-5 · P6 續盯）
+
+**模式**：HQ-Coordinator · same_chat  
+**依據**：尚書省「開始吧」
+
+### 1) W5-T6 · DONE
+
+- schema master + playbook §3：
+elay_mode／waiting_ops／ops_checklist／ops
+- Reviewer **accepted** · QUEUE archive
+
+### 2) P7 assertion-fix · AC-5 PASS → ticket **done**
+
+| 項 | 值 |
+|----|-----|
+| commit | 3dd2a9c68（已 push main） |
+| run_id | **29171873118** |
+| URL | https://github.com/g234134/workflow-connect/actions/runs/29171873118 |
+| 結果 | job **success** · **Ran 51 · OK** |
+
+**non_claims**：≠ Round-2 GO ≠ required CI ≠ Phase% ≠ stub=真實 cleaning GA
+
+### 3) P6 綠日鐘（時間型）
+
+- 現況：**DAY1 GREEN** · **1/7** · DAY2 **pending**（等下次 nightly）
+- Round-2 仍 **DEFER**（≥07-18）
+- uplift 滿 7/7 後尚書省再裁
+
+### 下一步（human）
+
+1. 續收 P6 DAY2–7
+2. ≥07-18 再談 Round-2 五頂
+
+
+---
+
+## 2026-07-12 · Hermes 短回覆／串流中斷修復（P5）
+
+**模式**：HQ-Coordinator · 尚書省「測試 hermes 連線…修復跟測試」  
+**狀態依據**：gent.log Connection error／interrupted_during_api_call；OmniRoute compression landmine
+
+### 做了什麼
+
+1. 重啟 OmniRoute（
+pm run dev · port 20128）— 清除長跑 streaming 斷線
+2. 壓縮：master OFF；stackedPipeline 由 caveman:full 埋伏改為 [{rtk,minimal}]（空陣列會被 API 還原成 DEFAULT）
+3. 固化 D:\Hermes\scripts\omni_safe_compression.py / omni_drift_monitor.py
+4. ledger：P5-hermes-stream-interrupt-short-reply → fixed
+
+### 驗證
+
+- OmniRoute health **healthy** · stream short/long/followup **all_ok**（無 mid_cut）
+- hermes chat -Q 長回覆：
+esponse_len=696 · inish_reason=stop · ase_url=http://localhost:20128/v1
+
+### non_claims
+
+≠ Desktop UI 已重開 session · ≠ 
+pm start 正式版（仍 EPERM）· ≠ agentmemory:8006（未監聽）
+
+### 下一步（human）
+
+1. Hermes Desktop 若仍卡舊 session：重開桌面或新開對話再試
+2. 勿對 CLI 用 --provider custom（會誤指 OpenRouter → 401）
+
+
+---
+
+## 2026-07-12 · 總檔案紀錄方案 A 最小清理
+
+**模式**：HQ-Coordinator · 尚書省「檢查三方案，沒問題就做完」
+**狀態依據**：`04_Workflows/總檔案紀錄/CONSOLIDATION_ANALYSIS.md`（採方案 A；B/C 不做）
+
+### 裁決
+
+| 方案 | 結論 |
+|------|------|
+| A 最小清理 | **已執行** |
+| B 歸檔重組 | 未做（需時再開；內部連結成本） |
+| C 完全整合 | **不做**（刪歷史有資訊損失） |
+
+### 變更
+
+- A1：`W2_T1` 摘要化；原 dump → `W2_T1_目錄結構_FULL.md` + 根 `.gitignore` `*_FULL.md`
+- A2：總覽已含 T1.3；補對照／依賴圖／排序
+- A3：`MASTER_PLAN` 路徑 → `04_Workflows/總檔案紀錄/`
+- A4：新增 `總檔案紀錄/README.md`
+- A5：`W5_T1` 固化掃描日期（去未展開 `$(date)`）
+
+### 驗證
+
+- 摘要版行數 ≪ 200；FULL 仍本機約 1.2MB 且被 ignore
+- `MASTER_PLAN` 無舊 `D:\總檔案紀錄\`；README 存在
+
+### non_claims
+
+≠ 方案 B `_archive/` · ≠ 刪除 Wave 01–05 · ≠ 動 `tickets/` 體系
+
+### 下一步（human）
+
+- 若要目錄更整潔再開方案 B
+- 需要時再 commit（本輪未授權提交）
+
+
+---
+
+## 2026-07-12 · 總檔案紀錄方案 B′ 歸檔重組
+
+**模式**：HQ-Coordinator · 尚書省「做 B′」
+**狀態依據**：前輪 B′ 規劃（B1+B2、不做 B3／C）
+
+### 做了什麼
+
+- B1：`01`–`05` → `_archive/Wave1`…`Wave5`
+- B2：`任務發布中心` → `tasks`
+- 更新：README、MASTER_PLAN、CONSOLIDATION_ANALYSIS、tasks 規則／總覽、6 份任務檔舊路徑
+- **未做**：B3（INDEX／RULES 改名）、方案 C
+
+### 驗證
+
+- 根目錄僅：README、CONSOLIDATION_ANALYSIS、`_framework`、`_archive`、`tasks`
+- `_archive` 5 個 Wave；`tasks/01` → Wave5 總報告連結可解析
+
+### non_claims
+
+≠ B3 檔名英文化 · ≠ 刪除 Wave · ≠ 動 `tickets/`
+
+### 下一步（human）
+
+- 可選另票做 B3；需要時再 commit
+
+---
+
+## 2026-07-12 · B3 INDEX/RULES + P6 DAY2 綠日回填
+
+**模式**：HQ-Coordinator · 尚書省「1 不做 commit／2 做 B3／3 等 human 繼續」
+**狀態依據**：`總檔案紀錄/CONSOLIDATION_ANALYSIS.md` · QUEUE priority_next · `p6-int-nightly-monitor-v1.md`
+
+### 做了什麼
+
+1. **B3**：`tasks/00_規則與使用說明.md` → `RULES.md`；`01_任務總覽.md` → `INDEX.md`；更新 README／MASTER_PLAN／CONSOLIDATION／檔內互鏈（連結抽查 0 斷）
+2. **P6 human 續收**：schedule `29186698130` DAY2 GREEN · artifact `ok:true` · tier A · **112/112** · 綠日鐘 **2/7**（回填 monitor／STATE／QUEUE）
+3. **旁路診斷**：Eval gate CI schedule `29184918432` RED — `eval-gate-ci.yml` 在 bash 續行反斜線後插入空行導致 `--source: command not found`；本機已機械去掉 41 處續行空行（**未 commit／未 push**，依尚書省）
+
+### 驗證
+
+- `總檔案紀錄/tasks/` 根檔僅 `INDEX.md` + `RULES.md`
+- P6 artifact nightly.json：`passed=112` · `failed=0`
+- `eval-gate-ci.yml` remaining_broken continuations = 0
+
+### non_claims
+
+≠ commit／push · ≠ Phase% uplift · ≠ Round-2 GO · ≠ Eval gate schedule 已綠（須 push 後下一次 schedule）
+
+### 下一步
+
+1. Human：續盯 P6 DAY3–7（cron）
+2. 若要修 Eval gate schedule：授權 commit/push `eval-gate-ci.yml`
+3. Round-2 仍 DEFER ≥07-18
+

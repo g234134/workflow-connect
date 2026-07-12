@@ -1,0 +1,682 @@
+schema_version: v1-archive
+parent: 04_Workflows/command_queue/QUEUE.yaml
+last_sync: '2026-07-12'
+note: DONE / DONE_WITH_GAPS 歸檔；活躍索引見 QUEUE.yaml。關票時 Orchestrator 將列移入本檔。
+stats:
+  archived_total: 48
+  done: 48
+  done_with_gaps: 0
+queue:
+- id: W5-T6-ticket-schema-relay-ops-ssot-v1
+  wave: W5
+  group: G5
+  title: Schema SSOT：relay_mode / awaiting_ops / ops_checklist
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/W5-T6-ticket-schema-relay-ops-ssot-v1_state.md
+  frame_ref: docs/ticket-schema-master-v1.md
+  blocked_by: []
+  next_action: 無 · Reviewer accepted · ≠ Phase%／Round-2
+- id: W1-P75-POLICY-DENY-MVP-v1
+  wave: W1
+  group: G7
+  title: policy deny 路徑 doc + 最小 runtime 探針
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7.5
+  state_file: 04_Workflows/tickets/W1-P75-POLICY-DENY-MVP-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W1-P75-POLICY-DENY-MVP-v1
+  next_action: 無 · Reviewer accepted
+- id: W1-P75-TRACE-UPSTREAM-v1
+  wave: W1
+  group: G7
+  title: gate→outbox→MP-SMOKE 上游 trace 契約
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7.5
+  state_file: 04_Workflows/tickets/W1-P75-TRACE-UPSTREAM-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W1-P75-TRACE-UPSTREAM-v1
+  blocked_by: []
+  next_action: 無 · overall_status done
+- id: W1-P75-INTAKE-CLI-MVP-v1
+  wave: W1
+  group: G7
+  title: intake CLI 完整度 doc + 最小上游接線
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7.5
+  state_file: 04_Workflows/tickets/W1-P75-INTAKE-CLI-MVP-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W1-P75-INTAKE-CLI-MVP-v1
+  depends_on: []
+  next_action: 無 · overall_status done
+- id: W1-P75-UPSTREAM-ENTRY-INDEX-v1
+  wave: W1
+  group: G7
+  title: P7.5 上游入口索引 doc-only
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7.5
+  state_file: 04_Workflows/tickets/W1-P75-UPSTREAM-ENTRY-INDEX-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W1-P75-UPSTREAM-ENTRY-INDEX-v1
+  depends_on:
+  - W1-P75-TRACE-UPSTREAM-v1
+  next_action: 無 · overall_status done · Wave 1 G7 四票齊
+- id: W2-P7-matrix-G1-G5-resume-loop-v1
+  wave: W2
+  group: G7
+  title: G-1〜G-5 resume-loop MVP spec + test matrix
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7
+  - P7.5
+  state_file: 04_Workflows/tickets/W2-P7-matrix-G1-G5-resume-loop-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W2-P7-matrix-G1-G5-resume-loop-v1
+  next_action: 无 · overall_status done（2026-07-09 AC-6 TRACE gap closed · runtime
+    impl 另票）
+- id: W2-P7-advisory-ci-ssot-index-v1
+  wave: W2
+  group: G7
+  title: P7 advisory CI 誠實索引 doc-only
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7
+  state_file: 04_Workflows/tickets/W2-P7-advisory-ci-ssot-index-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W2-P7-advisory-ci-ssot-index-v1
+  next_action: 无 · overall_status done（2026-06-26 已收口 · QUEUE 2026-07-09 同步）
+- id: W2-P7-ADV-assertion-fix-v1
+  wave: W2
+  group: G7
+  title: P7 advisory CI 11 AssertionError 修復（非缺檔）
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P7
+  state_file: 04_Workflows/tickets/W2-P7-ADV-assertion-fix-v1_state.md
+  frame_ref: 04_Workflows/tickets/W2-P7-ADV-assertion-fix-v1_state.md#FRAME
+  depends_on:
+  - W2-P7-advisory-ci-ssot-index-v1
+  blocked_by: []
+  next_action: 無 · AC-5 PASS run_id=29171873118 · Ran 51 OK
+  ticket_class: build
+  evidence_ref: commit 3dd2a9c68 · remote 29171873118 job PASS
+- id: W3-P8-ADV-advisory-ci-ssot-index-v1
+  wave: W3
+  group: G8
+  title: P8 advisory CI SSOT 索引
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8
+  - P8.9
+  state_file: 04_Workflows/tickets/W3-P8-ADV-advisory-ci-ssot-index-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W3-P8-ADV-advisory-ci-ssot-index-v1
+  next_action: 无 · overall_status done（2026-07-09 · INDEX §1.46）
+- id: W3-P89-EVD-scenario1-bridge-evidence-index-v1
+  wave: W3
+  group: G9
+  title: Scenario1/bridge Evidence Index 三層 SSOT
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8
+  - P8.9
+  state_file: 04_Workflows/tickets/W3-P89-EVD-scenario1-bridge-evidence-index-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W3-P89-EVD-scenario1-bridge-evidence-index-v1
+  next_action: 无 · overall_status done（2026-07-10 · Reviewer accepted）
+- id: W3-P89-OBS-delivery-trace-contract-v1
+  wave: W3
+  group: G9
+  title: P8/P8.9 交付鏈 observability contract
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8
+  - P8.9
+  state_file: 04_Workflows/tickets/W3-P89-OBS-delivery-trace-contract-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W3-P89-OBS-delivery-trace-contract-v1
+  next_action: 无 · overall_status done（2026-07-10 · contract + cross-ref）
+- id: W3-P89-SSOT-state-dashboard-alignment-v1
+  wave: W3
+  group: G9
+  title: P8/P8.9 子票 STATE 與 Dashboard 對齊
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8
+  - P8.9
+  state_file: 04_Workflows/tickets/W3-P89-SSOT-state-dashboard-alignment-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W3-P89-SSOT-state-dashboard-alignment-v1
+  next_action: 无 · overall_status done（2026-07-10 · 五 STATE + Dashboard/INDEX）
+- id: W3-P8-BRG-bridge-advisory-crossref-v1
+  wave: W3
+  group: G8
+  title: minimal bridge 與 P8 交付鏈 advisory cross-ref
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8
+  state_file: 04_Workflows/tickets/W3-P8-BRG-bridge-advisory-crossref-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W3-P8-BRG-bridge-advisory-crossref-v1
+  next_action: 无 · overall_status done（2026-07-10 · Reviewer accepted）
+- id: FP-G2-index-job
+  wave: full-phase
+  group: G2
+  title: G2 母票 · 规模化 index job arrange
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/FP-G2-index-job_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G2
+  next_action: arranged · 子票見 T1–T5 · 下一 execute=T1
+- id: FP-G2-T2-phase2-index-contract-gap-audit-v1
+  wave: full-phase
+  group: G2
+  title: WA-T1 contract vs 实际能力 gap 审计 doc
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/FP-G2-T2-phase2-index-contract-gap-audit-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G2
+  depends_on:
+  - WA-T1
+  next_action: 无 · overall_status done（2026-07-10 · gap-audit）
+- id: FP-G2-T1-index-job-scheduler-hook-v1
+  wave: full-phase
+  group: G2
+  title: index job 触发 hook 设计 + skeleton CLI
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/FP-G2-T1-index-job-scheduler-hook-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G2
+  depends_on:
+  - WA-T1
+  next_action: 无 · overall_status done（2026-07-10 · skeleton dry-run · Reviewer accepted）
+- id: FP-G2-T3-rag-e2e-answer-frame-v1
+  wave: full-phase
+  group: G2
+  title: RAG E2E 问答 FRAME（planning）
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/FP-G2-T3-rag-e2e-answer-frame-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G2
+  depends_on:
+  - FP-G2-T2-phase2-index-contract-gap-audit-v1
+  next_action: 无 · overall_status done（2026-07-10 · planning doc · Reviewer accepted）
+- id: FP-G2-T4-graphrag-jobs-state-machine-v1
+  wave: full-phase
+  group: G2
+  title: graphrag_jobs 状态机设计 doc
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/FP-G2-T4-graphrag-jobs-state-machine-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G2
+  next_action: 无 · overall_status done（2026-07-10 · 状态机设计 doc · Reviewer accepted）
+- id: W4-P9-CI-FIRST-RUN-SPEC-v1
+  wave: W4
+  group: G9
+  title: P9 CI 首跑 human dispatch spec
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P9
+  state_file: 04_Workflows/tickets/WH-P9-CI-payment-sandbox-smoke-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W4-P9-CI-FIRST-RUN-SPEC-v1
+  blocked_by: []
+  human_seq: H1
+  next_action: 无 · GA-remote PASS 29159159265 · ≠ prod · INDEX 一句可另票
+  closure_tag: branch_ai_closed
+- id: W5-T1-multi-chat-commands-v1
+  wave: W5
+  group: G4
+  title: Multi-Chat commands + Wave Master slash
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P4
+  - P10
+  state_file: 04_Workflows/tickets/W5-T1-multi-chat-commands-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md
+  next_action: 无 · overall_status done
+- id: W5-T2-wave-master-ticket-template-v1
+  wave: W5
+  group: G4
+  title: ticket schema 模板 + Reviewer 附页
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P4
+  - P10
+  state_file: 04_Workflows/tickets/W5-T2-wave-master-ticket-template-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md
+  next_action: 无 · overall_status done · W5-T4 附页另票
+- id: W5-T3-evidence-ingestion-observer-v1
+  wave: W5
+  group: G3
+  title: smoke/B_REPORT/run URL 证据汇入 observer
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P10
+  - P10.5
+  state_file: 04_Workflows/tickets/W5-T3-evidence-ingestion-observer-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W5-T3-evidence-ingestion-observer-v1
+  next_action: 无 · overall_status done（2026-07-09 · spec+CLI skeleton · unittest 4/4）
+- id: W5-T4-wave-plan-reviewer-checklist-v1
+  wave: W5
+  group: G4
+  title: Master Plan Review checklist + rollup inspector
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P10
+  state_file: 04_Workflows/tickets/W5-T4-wave-plan-reviewer-checklist-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W5-T4-wave-plan-reviewer-checklist-v1
+  next_action: 无 · overall_status done（2026-07-09 · 消费 W5-T3）
+- id: W5-T5-cross-wave-playbook-index-v1
+  wave: W5
+  group: G4
+  title: Wave Master / Wave-next / skill 索引汇整
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P10
+  state_file: 04_Workflows/tickets/W5-T5-cross-wave-playbook-index-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W5-T5-cross-wave-playbook-index-v1
+  next_action: 无 · overall_status done · INDEX §1.55 + Dashboard 叙事
+- id: FP-G6-T2-release-sanity-runbook-v1
+  wave: full-phase
+  group: G6
+  title: MP+MC+CI-SMOKE release 前 runbook 單頁 SSOT
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/FP-G6-T2-release-sanity-runbook-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G6
+  depends_on: []
+  next_action: 无 · overall_status done（2026-07-10 · Reviewer accepted · Scribe 封存）
+  closure_tag: branch_ai_closed
+- id: FP-G6-T4-inspector-overclaim-spotcheck-v1
+  wave: full-phase
+  group: G6
+  title: wave-next inspector 抽样对照清单（Reviewer 用）
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/FP-G6-T4-inspector-overclaim-spotcheck-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G6
+  depends_on: []
+  next_action: 无 · overall_status done（2026-07-10 · Reviewer accepted · Scribe 封存）
+  closure_tag: branch_ai_closed
+- id: FP-G6-T3-agent-lines-nightly-deferred-index-v1
+  wave: full-phase
+  group: G6
+  title: run-all-allowed nightly CI deferred 索引
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/FP-G6-T3-agent-lines-nightly-deferred-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G6
+  depends_on: []
+  next_action: 无 · overall_status done（2026-07-10 · Reviewer accepted · Scribe 封存）
+  closure_tag: branch_ai_closed
+- id: FP-G1-T1-governance-dual-unblock-frame-v1
+  wave: full-phase
+  group: G1
+  title: governance_dual 解阻 FRAME（五頂 checklist）
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P7
+  - P3.5
+  state_file: 04_Workflows/tickets/FP-G1-T1-governance-dual-unblock-frame-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G1
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G1
+  next_action: 无 · overall_status done · branch_ai_closed
+- id: FP-G1-T2-wc-pre-06-07-approval-tracker-v1
+  wave: full-phase
+  group: G1
+  title: WC-PRE-06/07 批文追踪 SSOT
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P3.5
+  - P10
+  state_file: 04_Workflows/tickets/FP-G1-T2-wc-pre-06-07-approval-tracker-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G1
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G1
+  next_action: 无 · overall_status done · branch_ai_closed
+- id: FP-G1-T4-eval-gate-k2-enf-crossref-index-v1
+  wave: full-phase
+  group: G1
+  title: P3.5 eval-gate / K-2 / ENF 交叉索引
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P3.5
+  state_file: 04_Workflows/tickets/FP-G1-T4-eval-gate-k2-enf-crossref-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G1
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G1
+  next_action: 无 · overall_status done · branch_ai_closed
+- id: FP-G1-T5-constitution-progress-append-protocol-v1
+  wave: full-phase
+  group: G1
+  title: Progress/Dashboard 寫入邊界協議
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P1
+  - P10
+  state_file: 04_Workflows/tickets/FP-G1-T5-constitution-progress-append-protocol-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G1
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G1
+  next_action: 无 · overall_status done · branch_ai_closed
+- id: FP-G5-T1-fleet-metrics-dashboard-doc-v1
+  wave: full-phase
+  group: G5
+  title: MC-METRICS fleet 视图 operator doc
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P5
+  state_file: 04_Workflows/tickets/FP-G5-T1-fleet-metrics-dashboard-doc-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G5
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G5
+  next_action: 无 · done · branch_ai_closed
+  closure_tag: branch_ai_closed
+  artifact: docs/fleet-metrics-dashboard-operator-v1.md
+- id: FP-G5-T2-grafana-pg-soak-placeholder-index-v1
+  wave: full-phase
+  group: G5
+  title: Grafana/PG soak deferred 索引
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P5
+  state_file: 04_Workflows/tickets/FP-G5-T2-grafana-pg-soak-placeholder-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G5
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G5
+  next_action: 无 · done · 实际 soak 仍 infra
+  closure_tag: branch_ai_closed
+  artifact: docs/grafana-pg-soak-deferred-index-v1.md
+- id: FP-G5-T3-progress-append-template-v1
+  wave: full-phase
+  group: G5
+  title: lane chat Progress 末尾模板
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P5
+  state_file: 04_Workflows/tickets/FP-G5-T3-progress-append-template-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G5
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G5
+  next_action: 无 · done · branch_ai_closed
+  closure_tag: branch_ai_closed
+  artifact: docs/lane-progress-append-template-v1.md
+- id: FP-G5-T4-audit-quickview-fleet-extension-v1
+  wave: full-phase
+  group: G5
+  title: audit quickview 多 case 聚合 FRAME
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P5
+  state_file: 04_Workflows/tickets/FP-G5-T4-audit-quickview-fleet-extension-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G5
+  depends_on:
+  - FP-G5-T1-fleet-metrics-dashboard-doc-v1
+  parallel_ok: false
+  branch_chat: G5
+  next_action: 无 · done · runtime 聚合另票
+  closure_tag: branch_ai_closed
+  artifact: docs/audit-quickview-fleet-extension-frame-v1.md
+  promoted_when: FP-G5-T1 overall_status=done
+- id: FP-G3-T2-p89-delivery-observability-contract-v1
+  wave: full-phase
+  group: G3
+  title: P8/P8.9 delivery observability（已由 W3-P89-OBS 覆蓋）
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P3
+  - P8.9
+  state_file: 04_Workflows/tickets/W3-P89-OBS-delivery-trace-contract-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G3
+  next_action: 无 · 併入 W3-P89-OBS done · 勿重開
+  closure_tag: branch_ai_closed
+  superseded_by: W3-P89-OBS-delivery-trace-contract-v1
+- id: FP-G3-T1-evidence-tier-ssot-v1
+  wave: full-phase
+  group: G3
+  title: L-local / CI-advisory / GA-remote 证据 tier 统一 SSOT
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P3
+  state_file: 04_Workflows/tickets/FP-G3-T1-evidence-tier-ssot-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G3
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G3
+  arrange_seq: 1
+  next_action: 无 · overall_status done（2026-07-10 · evidence-tier SSOT）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G3-T4-trace-canonical-schema-append-v1
+  wave: full-phase
+  group: G3
+  title: 新 trace 字段必须增 §Canonical schema 流程 doc
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P3
+  state_file: 04_Workflows/tickets/FP-G3-T4-trace-canonical-schema-append-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G3
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G3
+  arrange_seq: 2
+  next_action: 无 · overall_status done（2026-07-10 · canonical append process）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G3-T3-langfuse-pg-alignment-deferred-index-v1
+  wave: full-phase
+  group: G3
+  title: Langfuse/PG 对齐 deferred 项索引 + 解阻条件
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P3
+  state_file: 04_Workflows/tickets/FP-G3-T3-langfuse-pg-alignment-deferred-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G3
+  depends_on:
+  - FP-G3-T1-evidence-tier-ssot-v1
+  parallel_ok: false
+  branch_chat: G3
+  arrange_seq: 10
+  next_action: 无 · overall_status done（2026-07-10 · deferred index · ≠ 真接）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G4-T1-dual-cp-narrative-alignment-v1
+  wave: full-phase
+  group: G4
+  title: W-MASTER-full-phase vs wave-plan vs W-ORCH 叙事对齐 doc
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P4
+  state_file: 04_Workflows/tickets/FP-G4-T1-dual-cp-narrative-alignment-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G4
+  depends_on:
+  - W5-T5-cross-wave-playbook-index-v1
+  parallel_ok: true
+  branch_chat: G4
+  arrange_seq: 3
+  next_action: 无 · overall_status done（2026-07-10 · dual CP 敘事）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G4-T2-dispatch-cards-eligibility-ut-v1
+  wave: full-phase
+  group: G4
+  title: dispatch eligibility unresolved-dependency UT
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P4
+  state_file: 04_Workflows/tickets/FP-G4-T2-dispatch-cards-eligibility-ut-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G4
+  depends_on:
+  - WC-T1-INTEGRATION
+  parallel_ok: true
+  branch_chat: G4
+  arrange_seq: 11
+  next_action: 无 · overall_status done（2026-07-11 · unresolved-dep UT）
+  closure_tag: branch_ai_closed
+  ticket_class: build
+- id: FP-G9-T1-toolchain-runtime-gap-audit-v1
+  wave: full-phase
+  group: G9
+  title: WB-T1–T3 contract vs runtime gap 审计
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P8.6
+  - P8.7
+  - P8.8
+  state_file: 04_Workflows/tickets/FP-G9-T1-toolchain-runtime-gap-audit-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G9
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G9
+  arrange_seq: 4
+  next_action: 无 · overall_status done（2026-07-10 · gap audit）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G9-T4-tabular-vs-phase88-tool-layer-index-v1
+  wave: full-phase
+  group: G9
+  title: W3-TL vs Phase 8.8 分轨禁止合并索引
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P8.8
+  state_file: 04_Workflows/tickets/FP-G9-T4-tabular-vs-phase88-tool-layer-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G9
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G9
+  arrange_seq: 5
+  next_action: 无 · overall_status done（2026-07-10 · 分軌索引）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G9-T3-p9-prod-ledger-gap-index-v1
+  wave: full-phase
+  group: G9
+  title: P9 prod provider/ledger gap 索引
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P9
+  state_file: 04_Workflows/tickets/FP-G9-T3-p9-prod-ledger-gap-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G9
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G9
+  arrange_seq: 6
+  next_action: 无 · overall_status done（2026-07-10 · P9 gap index）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: W4-P85-bridge-prod-gap-index-v1
+  wave: W4
+  group: G8
+  title: bridge stub vs prod browser 差距索引
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P8.5
+  state_file: 04_Workflows/tickets/W4-P85-bridge-prod-gap-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G8
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G8
+  arrange_seq: 7
+  next_action: 无 · overall_status done（2026-07-10 · stub vs prod browser）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G10-T3-automation-blueprint-gap-index-v1
+  wave: full-phase
+  group: G10
+  title: blueprint v2 G8-1–G8-10 缺口索引
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P10
+  state_file: 04_Workflows/tickets/FP-G10-T3-automation-blueprint-gap-index-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G10
+  depends_on:
+  - W5-T4-wave-plan-reviewer-checklist-v1
+  parallel_ok: true
+  branch_chat: G10
+  arrange_seq: 8
+  next_action: 无 · overall_status done（2026-07-10 · G8-1–10 gap index）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: FP-G10-T2-wc-t6-t7-v2-mapping-frame-v1
+  wave: full-phase
+  group: G10
+  title: WC-T6/T7 v2 全量 path_id mapping FRAME
+  status: DONE
+  lifecycle_phase: B
+  phase_targets:
+  - P10.5
+  state_file: 04_Workflows/tickets/FP-G10-T2-wc-t6-t7-v2-mapping-frame-v1_state.md
+  frame_ref: W-MASTER-full-phase-plan_state.md#G10
+  depends_on: []
+  parallel_ok: true
+  branch_chat: G10
+  arrange_seq: 9
+  next_action: 无 · overall_status done（2026-07-10 · mapping FRAME · ≠ runtime）
+  closure_tag: branch_ai_closed
+  ticket_class: doc/spec
+- id: WF-P6-INT-CI-LANDING
+  wave: tactical
+  group: G6
+  title: P6 INT gate CI workflow landing
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/WF-P6-INT-CI-LANDING_state.md
+  next_action: done_with_gaps · 待 merge/GA 首跑

@@ -411,6 +411,107 @@ def suggest_ci_thresholds(
     }
 
 
+_KB_INDEX_BUCKET_ORDER: Final[tuple[str, ...]] = ("ready", "stale", "missing", "null", "not_set")
+
+
+def _kb_index_bucket_key(line: dict[str, Any]) -> str:
+    if "kb_index_status" not in line:
+        return "not_set"
+    raw = line.get("kb_index_status")
+    if raw is None:
+        return "null"
+    status = str(raw).strip().lower()
+    if status in {"ready", "stale", "missing"}:
+        return status
+    return "not_set"
+
+
+def compute_index_context_breakdown(paths: list[Path]) -> dict[str, Any]:
+    """
+    Bucket eval_export lines by ``kb_index_status`` for report observability.
+
+    Rows without the field use bucket ``not_set``; explicit JSON null uses ``null``.
+    """
+    buckets: dict[str, dict[str, int]] = {
+        key: {"sample_count": 0, "needs_review_count": 0, "pass_count": 0}
+        for key in _KB_INDEX_BUCKET_ORDER
+    }
+    rows_with_field = 0
+
+    for path in paths:
+        if not path.exists():
+            continue
+        for line, _, _ in iter_export_lines(path):
+            bucket = _kb_index_bucket_key(line)
+            if bucket not in buckets:
+                buckets[bucket] = {"sample_count": 0, "needs_review_count": 0, "pass_count": 0}
+            if "kb_index_status" in line:
+                rows_with_field += 1
+            buckets[bucket]["sample_count"] += 1
+            gate_result = line.get("gate_result")
+            if gate_result == "needs_review":
+                buckets[bucket]["needs_review_count"] += 1
+            elif gate_result == "pass":
+                buckets[bucket]["pass_count"] += 1
+
+    breakdown: list[dict[str, Any]] = []
+    for key in _KB_INDEX_BUCKET_ORDER:
+        row = buckets.get(key)
+        if not row or row["sample_count"] == 0:
+            continue
+        total = row["sample_count"]
+        needs = row["needs_review_count"]
+        breakdown.append(
+            {
+                "kb_index_status": None if key == "null" else key,
+                "sample_count": total,
+                "needs_review_count": needs,
+                "needs_review_ratio": round(needs / total, 4) if total else 0.0,
+                "pass_count": row["pass_count"],
+            }
+        )
+
+    return {
+        "buckets": breakdown,
+        "rows_with_kb_index_status": rows_with_field,
+        "observability_only": True,
+        "note": "Index context is observability-only; does not affect eval_gate or selector hook.",
+    }
+
+
+def build_stats_summary(result: dict[str, Any]) -> dict[str, Any]:
+    """Flat summary dict for automation (CI, eval_report, JSON consumers)."""
+    stats = result.get("stats") or {}
+    overall = stats.get("overall") or {}
+    rec = result.get("recommendations") or {}
+    ratio_rec = rec.get("max_needs_review_ratio") or {}
+    suggested_cli = rec.get("suggested_cli") or {}
+
+    fail_tags = [
+        item["tag"]
+        for item in (rec.get("fail_on_tags") or [])
+        if isinstance(item, dict) and item.get("action") == "fail" and item.get("tag")
+    ]
+
+    return {
+        "ok": bool(result.get("ok")),
+        "message": result.get("message", ""),
+        "sample_count": int(overall.get("total", 0)),
+        "needs_review_count": int(overall.get("needs_review_count", 0)),
+        "needs_review_ratio": float(overall.get("needs_review_ratio", 0.0)),
+        "tag_counts": dict(overall.get("tag_counts") or {}),
+        "suggested_thresholds": {
+            "max_needs_review_ratio_range": ratio_rec.get("suggested_range"),
+            "max_needs_review_ratio_observed": ratio_rec.get("observed"),
+            "fail_on_tags": fail_tags,
+            "confidence": rec.get("confidence"),
+            "suggested_cli": suggested_cli,
+        },
+        "analyzed_at": stats.get("analyzed_at"),
+        "input_files": list(stats.get("input_files") or []),
+    }
+
+
 def format_text_report(result: dict[str, Any]) -> str:
     """Human-readable table for pasting into battle reports."""
     lines: list[str] = []
@@ -570,7 +671,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.format == "text":
         print(format_text_report(result))
     else:
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        summary = build_stats_summary(result)
+        payload = {**summary, "stats": result.get("stats"), "recommendations": result.get("recommendations")}
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
 
     if args.write_report is not None:
         args.write_report.parent.mkdir(parents=True, exist_ok=True)

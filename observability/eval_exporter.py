@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Final, Iterator, Literal
@@ -16,6 +17,8 @@ from typing import Any, Final, Iterator, Literal
 from observability.eval_gate import evaluate_task_record
 
 SCHEMA_VERSION: Final[str] = "eval_export/v1"
+KB_INDEX_EXPORT_ENV: Final[str] = "GOV_EVAL_EXPORT_KB_INDEX_STATUS"
+_VALID_KB_INDEX_STATUS: Final[frozenset[str]] = frozenset({"ready", "stale", "missing"})
 GateResult = Literal["pass", "needs_review"]
 GateFilter = Literal["all", "pass", "needs_review"]
 
@@ -75,12 +78,127 @@ def gate_result_label(gate: dict[str, Any]) -> GateResult:
     return "pass" if gate.get("pass") else "needs_review"
 
 
+def kb_index_export_enabled() -> bool:
+    """True when ``GOV_EVAL_EXPORT_KB_INDEX_STATUS`` is explicitly on (default off)."""
+    return os.environ.get(KB_INDEX_EXPORT_ENV, "0").strip().lower() in {"1", "true", "yes"}
+
+
+def load_case_index_map(path: Path | None) -> dict[str, Any]:
+    """
+    Load ``case_id → kb_index_status`` (or nested dict with ``kb_index_status`` / ``kb_index_job_id``).
+
+    Returns empty dict when ``path`` is None or missing.
+    """
+    if path is None or not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"{path}: case-index-map root must be object")
+    return data
+
+
+def _record_case_id(record: dict[str, Any]) -> str | None:
+    for container in (record, record.get("metadata") if isinstance(record.get("metadata"), dict) else {}):
+        if not isinstance(container, dict):
+            continue
+        raw = container.get("case_id")
+        if raw is not None and str(raw).strip():
+            return str(raw).strip()
+    return None
+
+
+def _normalize_kb_index_status(raw: Any) -> str | None:
+    if raw is None:
+        return None
+    status = str(raw).strip().lower()
+    if not status or status == "null":
+        return None
+    if status in _VALID_KB_INDEX_STATUS:
+        return status
+    return None
+
+
+def _case_map_entry(entry: Any) -> tuple[str | None, str | None]:
+    if isinstance(entry, dict):
+        status = _normalize_kb_index_status(entry.get("kb_index_status"))
+        job_id = entry.get("kb_index_job_id")
+        job_str = str(job_id).strip() if job_id is not None and str(job_id).strip() else None
+        return status, job_str
+    return _normalize_kb_index_status(entry), None
+
+
+def resolve_kb_index_context(
+    record: dict[str, Any],
+    *,
+    case_index_map: dict[str, Any] | None = None,
+) -> dict[str, str | None]:
+    """
+    Resolve optional kb index fields for export sidecar.
+
+    Priority (frozen):
+    1. ``metadata.kb_index_status`` / ``metadata.kb_index_job_id``
+    2. ``selector_hints.kb_index_status`` / ``selector_hints.kb_index_job_id``
+    3. ``--case-index-map`` entry for ``case_id`` (status and optional job_id)
+    """
+    status: str | None = None
+    job_id: str | None = None
+
+    metadata = record.get("metadata")
+    if isinstance(metadata, dict):
+        status = _normalize_kb_index_status(metadata.get("kb_index_status"))
+        raw_job = metadata.get("kb_index_job_id")
+        if raw_job is not None and str(raw_job).strip():
+            job_id = str(raw_job).strip()
+
+    hints = record.get("selector_hints")
+    if isinstance(hints, dict):
+        if status is None:
+            status = _normalize_kb_index_status(hints.get("kb_index_status"))
+        if job_id is None:
+            raw_job = hints.get("kb_index_job_id")
+            if raw_job is not None and str(raw_job).strip():
+                job_id = str(raw_job).strip()
+
+    if case_index_map:
+        case_id = _record_case_id(record)
+        if case_id and case_id in case_index_map:
+            mapped_status, mapped_job = _case_map_entry(case_index_map[case_id])
+            if status is None:
+                status = mapped_status
+            if job_id is None:
+                job_id = mapped_job
+
+    return {"kb_index_status": status, "kb_index_job_id": job_id}
+
+
+def attach_kb_index_to_trace_metadata(
+    export_line: dict[str, Any],
+    kb_index_status: str | None,
+) -> dict[str, Any]:
+    """
+    Mirror ``kb_index_status`` onto export line sidecar fields (observability only).
+
+    Does not modify gov-trace-v2 middleware or default trace JSONL writes.
+    """
+    if kb_index_status is None or not str(kb_index_status).strip():
+        return export_line
+    line = dict(export_line)
+    status = str(kb_index_status).strip()
+    source_ref = dict(line.get("source_ref") or {})
+    source_ref["kb_index_status"] = status
+    line["source_ref"] = source_ref
+    line["trace_metadata_sidecar"] = {"kb_index_status": status}
+    return line
+
+
 def build_export_line(
     record: dict[str, Any],
     *,
     gate: dict[str, Any] | None = None,
     line_index: int | None = None,
     exported_at: str | None = None,
+    include_kb_index: bool = False,
+    case_index_map: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """
     Build one JSONL export object (eval_export/v1).
@@ -113,6 +231,14 @@ def build_export_line(
         source_ref["line_index"] = line_index
     if source_ref:
         line["source_ref"] = source_ref
+
+    if include_kb_index:
+        kb_ctx = resolve_kb_index_context(record, case_index_map=case_index_map)
+        line["kb_index_status"] = kb_ctx["kb_index_status"]
+        if kb_ctx["kb_index_job_id"]:
+            line["kb_index_job_id"] = kb_ctx["kb_index_job_id"]
+        if kb_ctx["kb_index_status"]:
+            line = attach_kb_index_to_trace_metadata(line, kb_ctx["kb_index_status"])
 
     return line
 
@@ -197,6 +323,8 @@ def export_eval_jsonl(
     output_path: Path,
     *,
     gate_filter: GateFilter = "all",
+    include_kb_index: bool | None = None,
+    case_index_map: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """
     Run eval_gate on all records under ``input_path`` and write JSONL.
@@ -212,11 +340,17 @@ def export_eval_jsonl(
     written = 0
     skipped_filter = 0
     total_read = 0
+    kb_enabled = kb_index_export_enabled() if include_kb_index is None else include_kb_index
 
     with output_path.open("w", encoding="utf-8", newline="\n") as out_f:
         for record, line_index in iter_records(input_path):
             total_read += 1
-            export_line = build_export_line(record, line_index=line_index)
+            export_line = build_export_line(
+                record,
+                line_index=line_index,
+                include_kb_index=kb_enabled,
+                case_index_map=case_index_map,
+            )
             if not _matches_filter(export_line["gate_result"], gate_filter):
                 skipped_filter += 1
                 continue
@@ -234,6 +368,7 @@ def export_eval_jsonl(
         "total_read": total_read,
         "output_path": str(output_path),
         "gate_filter": gate_filter,
+        "kb_index_export_enabled": kb_enabled,
     }
 
 
@@ -260,15 +395,23 @@ def _build_cli() -> argparse.ArgumentParser:
         dest="gate_filter",
         help="Only write rows matching gate_result (default: all)",
     )
+    parser.add_argument(
+        "--case-index-map",
+        type=Path,
+        default=None,
+        help="Optional JSON map case_id → kb_index_status (Wave B P3 sidecar)",
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     args = _build_cli().parse_args(argv)
+    case_map = load_case_index_map(args.case_index_map) if args.case_index_map else None
     result = export_eval_jsonl(
         args.input_path,
         args.output,
         gate_filter=args.gate_filter,
+        case_index_map=case_map,
     )
     print(json.dumps(result, ensure_ascii=False))
     return 0 if result.get("ok") else 1

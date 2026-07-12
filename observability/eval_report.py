@@ -17,50 +17,40 @@ import json
 from pathlib import Path
 from typing import Any, Final
 
-from observability.eval_stats import analyze_export_files, format_text_report
+from observability.eval_stats import (
+    analyze_export_files,
+    build_stats_summary,
+    compute_index_context_breakdown,
+    format_text_report,
+)
 
 REPORT_JSON_NAME: Final[str] = "eval_report.latest.json"
 REPORT_MD_NAME: Final[str] = "eval_report.latest.md"
 
 
-def build_report_summary(analysis: dict[str, Any]) -> dict[str, Any]:
+def build_report_summary(analysis: dict[str, Any], *, export_paths: list[Path] | None = None) -> dict[str, Any]:
     """Stable summary dict for automation and CI artifact consumers."""
-    stats = analysis.get("stats") or {}
-    overall = stats.get("overall") or {}
-    rec = analysis.get("recommendations") or {}
-    ratio_rec = rec.get("max_needs_review_ratio") or {}
-    suggested_cli = rec.get("suggested_cli") or {}
-
-    fail_tags = [
-        item["tag"]
-        for item in (rec.get("fail_on_tags") or [])
-        if isinstance(item, dict) and item.get("action") == "fail" and item.get("tag")
-    ]
-
-    tag_counts = dict(overall.get("tag_counts") or {})
+    base = build_stats_summary(analysis)
+    tag_counts = dict(base.get("tag_counts") or {})
     top_tags = sorted(tag_counts.items(), key=lambda x: (-x[1], x[0]))[:10]
+    path_args = export_paths or [Path(p) for p in (base.get("input_files") or [])]
+    index_context = compute_index_context_breakdown(path_args) if path_args else {
+        "buckets": [],
+        "rows_with_kb_index_status": 0,
+        "observability_only": True,
+        "note": "Index context is observability-only; does not affect eval_gate or selector hook.",
+    }
 
     return {
-        "ok": bool(analysis.get("ok")),
-        "message": analysis.get("message", ""),
-        "sample_count": int(overall.get("total", 0)),
-        "needs_review_count": int(overall.get("needs_review_count", 0)),
-        "needs_review_ratio": float(overall.get("needs_review_ratio", 0.0)),
-        "tag_counts": tag_counts,
+        **base,
         "top_tags": [{"tag": tag, "count": count} for tag, count in top_tags],
-        "suggested_thresholds": {
-            "max_needs_review_ratio_range": ratio_rec.get("suggested_range"),
-            "max_needs_review_ratio_observed": ratio_rec.get("observed"),
-            "fail_on_tags": fail_tags,
-            "confidence": rec.get("confidence"),
-        },
-        "analyzed_at": stats.get("analyzed_at"),
-        "input_files": list(stats.get("input_files") or []),
+        "index_context_breakdown": index_context,
         "reproduce_command": (
             "python -m observability.eval_report "
-            + " ".join(f'"{p}"' for p in (stats.get("input_files") or []))
+            + " ".join(f'"{p}"' for p in path_args)
+            + " --out-dir artifacts/eval"
         ),
-        "suggested_cli": suggested_cli,
+        "suggested_cli": (base.get("suggested_thresholds") or {}).get("suggested_cli") or {},
     }
 
 
@@ -78,6 +68,16 @@ def format_markdown_report(summary: dict[str, Any], analysis: dict[str, Any]) ->
     else:
         ratio_range_text = "n/a"
     fail_tags = st.get("fail_on_tags") or []
+    index_ctx = summary.get("index_context_breakdown") or {}
+    index_buckets = index_ctx.get("buckets") or []
+    if index_buckets:
+        index_rows = "\n".join(
+            f"| `{b.get('kb_index_status', 'null')}` | {b.get('sample_count', 0)} | "
+            f"{b.get('needs_review_count', 0)} | {float(b.get('needs_review_ratio', 0.0)):.1%} |"
+            for b in index_buckets
+        )
+    else:
+        index_rows = "| *(no kb_index_status on export lines)* | 0 | 0 | n/a |"
 
     lines = [
         "# Eval gate report (Wave B bootstrap)",
@@ -92,6 +92,14 @@ def format_markdown_report(summary: dict[str, Any], analysis: dict[str, Any]) ->
         f"- **Confidence**: {st.get('confidence', 'n/a')}",
         f"- **Suggested max-needs-review-ratio range**: {ratio_range_text}",
         f"- **Suggested fail-on-tags**: {', '.join(fail_tags) if fail_tags else '(none)'}",
+        "",
+        "### Index context",
+        "",
+        "> Observability only — not eval_gate rules and not prod selector hook.",
+        "",
+        "| kb_index_status | Samples | needs_review | Ratio |",
+        "|-----------------|---------|--------------|-------|",
+        index_rows,
         "",
         "## Tag histogram (top)",
         "",
@@ -123,7 +131,7 @@ def write_eval_report(
 ) -> dict[str, Any]:
     """Analyze export file(s) and write ``eval_report.latest.{json,md}``."""
     analysis = analyze_export_files(export_paths, min_samples_for_recommendations=min_samples)
-    summary = build_report_summary(analysis)
+    summary = build_report_summary(analysis, export_paths=export_paths)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     json_path = out_dir / REPORT_JSON_NAME

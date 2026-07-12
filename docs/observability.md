@@ -185,12 +185,151 @@ python Departments/05_Data_Vault/monitoring_alert_smoke.py
 
 ---
 
-## 9. Wave A — P5 live soak ticket（手動，非 PR gate）
+## 9. CI observability artifacts (W1-T3 · eval-gate-ci)
+
+> **Ticket**: W1-T3 · **Scope**: PR/push `eval-gate` job + nightly shadow job  
+> **Non-goals**: Grafana/Slack; Langfuse unified API; prod selector wiring; eval gate threshold changes
+
+Nightly/PR runs produce a **one-page governance bundle** so reviewers can triage without hunting scattered logs.
+
+### 9.1 Producer (CI job)
+
+| Job | Workflow | Trigger |
+|-----|----------|---------|
+| `eval-gate` | `.github/workflows/eval-gate-ci.yml` | `push`, `pull_request`, `workflow_dispatch` |
+| `eval-shadow-nightly` | same | `schedule` (UTC 06:00), `workflow_dispatch` + `run_shadow_nightly` |
+
+**Fixed fixture paths (PR job — investigation-only ratios)**:
+
+| Input | Path |
+|-------|------|
+| eval export | `tests/fixtures/eval/eval_export_sample.jsonl` |
+| trace JSONL | `tests/fixtures/trace/sample_traces.jsonl` |
+| index status | `workflow_v2/20_pilot/W3-B/index_status_W2-1.json` |
+| ibridge (kb sidecar) | `tests/fixtures/eval/ibridge_records.jsonl` |
+| case index map | `tests/fixtures/eval/case_index_map_W2-1.json` |
+
+Nightly uses shadow export when present; falls back to the eval fixture above.
+
+### 9.2 Artifact index
+
+| Artifact | Path | Producer CLI | Top-level `ok` |
+|----------|------|--------------|----------------|
+| Eval gate report | `artifacts/eval/eval_report.latest.{json,md}` | `python -m observability.eval_report` | `gate.ok` in JSON |
+| WF status summary | `artifacts/wf/wf_status_summary.latest.{json,md}` | `python -m observability.wf_status_summary` | `ok` |
+| Eval/trace correlate | `artifacts/eval/eval_trace_correlate.latest.json` | `python -m observability.eval_trace_correlate --format json` | `ok` |
+| Flagged triage appendix | `artifacts/eval/eval_trace_correlate.latest.triage.md` | `… --format triage-md` | *(markdown; parse JSON sibling)* |
+| kb_index sidecar sample | `artifacts/eval/eval_export_kb_index_sidecar.latest.jsonl` | `GOV_EVAL_EXPORT_KB_INDEX_STATUS=1 python -m observability.eval_exporter` | per-line `kb_index_status` or `n/a` bucket |
+
+**CI upload names**: `eval-gate-observability-pr` (PR), `eval-gate-observability-nightly` (schedule).
+
+### 9.3 `wf_status_summary.latest.json` schema (stable keys)
+
+```json
+{
+  "ok": true,
+  "message": "wf status summary assembled",
+  "gate": {
+    "ok": true,
+    "sample_count": 3,
+    "needs_review_count": 2,
+    "needs_review_ratio": 0.6667,
+    "tag_counts": {},
+    "top_tags": []
+  },
+  "index_cases": [
+    {
+      "case_id": "W2-1",
+      "kb_index_status": "ready",
+      "job_id": "…",
+      "file_count": 0,
+      "chunk_count": 0,
+      "last_updated": "…"
+    }
+  ],
+  "trace_join_stats": {
+    "row_count": 2,
+    "trace_found_count": 1,
+    "hit_rate": 0.5,
+    "status": "ok"
+  },
+  "generated_at": "2026-06-07T12:00:00Z",
+  "inputs": { "eval_export": "…", "trace_jsonl": "…", "index_status": ["…"] }
+}
+```
+
+**Daily read order**: `gate.needs_review_ratio` → `index_cases[].kb_index_status` → `trace_join_stats.hit_rate`.
+
+### 9.4 `eval_trace_correlate.latest.json` schema (flagged rows)
+
+```json
+{
+  "ok": true,
+  "message": "correlated 2 eval row(s); trace_found=1",
+  "row_count": 2,
+  "trace_found_count": 1,
+  "rows": [
+    {
+      "eval_line_index": 1,
+      "gate_result": "needs_review",
+      "tags": ["infra_risk"],
+      "trace_found": true,
+      "join_key": "trace_id",
+      "triage": {
+        "why_flagged": "error_type=timeout",
+        "kb_index_status": "ready",
+        "trace_ref": { "trace_found": true }
+      }
+    }
+  ]
+}
+```
+
+`triage-md` mirrors `rows[]` for human review; **investigation-only** on small fixtures (needs_review ratio unstable).
+
+### 9.5 Local reproduce (same as CI)
+
+```powershell
+# Gate report
+python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+
+# One-page WF summary
+python -m observability.wf_status_summary `
+  --eval tests/fixtures/eval/eval_export_sample.jsonl `
+  --index-status workflow_v2/20_pilot/W3-B/index_status_W2-1.json `
+  --trace-jsonl tests/fixtures/trace/sample_traces.jsonl `
+  --out-dir artifacts/wf
+
+# Flagged triage appendix
+python -m observability.eval_trace_correlate `
+  --eval tests/fixtures/eval/eval_export_sample.jsonl `
+  --trace tests/fixtures/trace/sample_traces.jsonl `
+  --format triage-md `
+  -o artifacts/eval/eval_trace_correlate.latest.triage.md
+
+# kb_index sidecar (default OFF in prod export; ON in CI check)
+$env:GOV_EVAL_EXPORT_KB_INDEX_STATUS = "1"
+python -m observability.eval_exporter tests/fixtures/eval/ibridge_records.jsonl `
+  -o artifacts/eval/eval_export_kb_index_sidecar.latest.jsonl `
+  --case-index-map tests/fixtures/eval/case_index_map_W2-1.json
+
+python -m unittest tests.test_wf_status_summary tests.test_eval_trace_correlate -v
+```
+
+### 9.6 Ingest soak cross-ref (W1-T2)
+
+PG/Langfuse ingest verification stays in `artifacts/monitoring/pg_ingest_soak.latest.json` (manual/live soak, **not** uploaded by eval-gate-ci). W1-T3 CI bundle answers **eval gate + trace join + index**; ingest 三源 gap 見 W1-T2 soak artifact（`artifacts/monitoring/pg_ingest_soak.latest.json`）；§4.2.1 文檔可另票入庫。
+
+---
+
+---
+
+## 10. Wave A — P5 live soak ticket（手動，非 PR gate）
 
 > **票號**：`WAVE-A-P5-LIVE-SOAK` · 細則：`gov_core_system/Departments/05_Data_Vault/WAVE_A_P5_LIVE_SOAK_TICKET.md`  
 > **目的**：用最小流量驗證 PG `task_runs`、monitoring API 與三條 baseline 告警**可被評估**（觸發 critical 為可選）。
 
-### 9.1 有 PG（推薦關票路徑）
+### 10.1 有 PG（推薦關票路徑）
 
 前置：`DATABASE_URL` 已設；在 **gov_core_system venv 根** 執行。
 
@@ -229,7 +368,7 @@ python Departments/05_Data_Vault/phase5_live_pg_soak.py --probe --base-url http:
 - `steps.monitoring_api.routes.overview.task_count` > 0
 - `steps.alert_evaluate.baseline_missing` = `[]`（含 `token_cost_15m`、`error_rate_15m`、`tool_failure_rate_15m`）
 
-### 9.2 無 PG（本地離線）
+### 10.2 無 PG（本地離線）
 
 無法寫入 `task_runs` 或跑 live soak；僅驗契約與 evaluator 邏輯：
 
@@ -243,7 +382,7 @@ python -m unittest tests.test_trace_schema tests.test_logging_adapter -v
 
 `run_alert_evaluation.py` 在無 `DATABASE_URL` 時 exit 1（預期）；YAML fallback 行為見 `phase5_alerting_v1.md`。
 
-### 9.3 合成樣本語意（seed）
+### 10.3 合成樣本語意（seed）
 
 `seed_task_runs_smoke.py` 預設寫入 7 列（近 15m 時間窗）：
 
@@ -255,9 +394,9 @@ python -m unittest tests.test_trace_schema tests.test_logging_adapter -v
 
 ---
 
-## 8. Related docs
-
+## 11. Related docs
 - `observability/eval_pipeline.md` — eval / shadow export  
 - `gov_core_system/output/phase5_alerting_v1.md` — notifier matrix  
 - `metrics/metric_definition.md` — D1–D5 field reference  
 - `AGENTS.md` — Monitoring Graph L0 (separate from this baseline)
+- `docs/observability.md` §9 — W1-T3 CI observability artifacts

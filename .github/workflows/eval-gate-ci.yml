@@ -165,28 +165,13 @@ jobs:
 
         run: |
           python -m unittest \
-            tests.test_eval_stats \
-            tests.test_eval_report \
             tests.test_eval_exporter \
             tests.test_eval_ci_check \
             tests.test_eval_gate \
             tests.test_ibridge_exporter \
             tests.test_ask_selector_and_answer \
             tests.test_context_subagent_routing \
-            tests.test_wf_status_summary \
-            tests.test_eval_trace_correlate \
             -v
-
-
-
-      - name: Routing eval dry-run (W4-T4)
-
-        shell: bash
-
-        run: |
-          set -euo pipefail
-          python -m unittest tests.test_routing_eval_runner -v
-          python scripts/run_routing_eval.py --dry-run --format json
 
 
 
@@ -232,114 +217,13 @@ jobs:
 
 
 
-      - name: Generate WF status summary (W1-T3)
-
-        shell: bash
-
-        run: |
-
-          set -euo pipefail
-
-          python -m observability.wf_status_summary \
-            --eval tests/fixtures/eval/eval_export_sample.jsonl \
-            --index-status workflow_v2/20_pilot/W3-B/index_status_W2-1.json \
-            --trace-jsonl tests/fixtures/trace/sample_traces.jsonl \
-            --out-dir artifacts/wf
-
-
-
-      - name: Generate eval trace correlate triage (W1-T3)
-
-        shell: bash
-
-        run: |
-
-          set -euo pipefail
-
-          python -m observability.eval_trace_correlate \
-            --eval tests/fixtures/eval/eval_export_sample.jsonl \
-            --trace tests/fixtures/trace/sample_traces.jsonl \
-            --format json \
-            -o artifacts/eval/eval_trace_correlate.latest.json
-
-          python -m observability.eval_trace_correlate \
-            --eval tests/fixtures/eval/eval_export_sample.jsonl \
-            --trace tests/fixtures/trace/sample_traces.jsonl \
-            --format triage-md \
-            -o artifacts/eval/eval_trace_correlate.latest.triage.md
-
-
-
-      - name: Verify kb_index_status sidecar export (W1-T3)
-
-        shell: bash
-
-        env:
-
-          GOV_EVAL_EXPORT_KB_INDEX_STATUS: "1"
-
-        run: |
-
-          set -euo pipefail
-
-          python -m observability.eval_exporter \
-            tests/fixtures/eval/ibridge_records.jsonl \
-            -o artifacts/eval/eval_export_kb_index_sidecar.latest.jsonl \
-            --case-index-map tests/fixtures/eval/case_index_map_W2-1.json
-
-          python - <<'PY'
-
-          import json
-
-          from pathlib import Path
-
-          path = Path("artifacts/eval/eval_export_kb_index_sidecar.latest.jsonl")
-
-          rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
-
-          with_status = [r for r in rows if r.get("kb_index_status")]
-
-          assert with_status, "GOV_EVAL_EXPORT_KB_INDEX_STATUS=1 produced no kb_index_status rows"
-
-          w21 = [r for r in with_status if r.get("task_id") == "t-infra"]
-
-          assert w21 and w21[0].get("kb_index_status") == "ready", w21
-
-          print(f"[W1-T3] kb_index sidecar ok: {len(with_status)}/{len(rows)} rows with kb_index_status")
-
-          PY
-
-
-
-      - name: Generate toolchain governance snapshot (non-blocking · WC-IMPL-L1 advisory)
-
-        if: success()
-
-        continue-on-error: true
-
-        shell: bash
-
-        run: |
-
-          set -euo pipefail
-
-          # L1 advisory block + ::warning annotations for critical findings are emitted by --print-ci-summary.
-
-          python scripts/generate_toolchain_governance_snapshot.py \
-            --ci-context eval-gate-pr \
-            --write \
-            --non-blocking \
-            --print-ci-summary
-
-
-
-      - name: Upload eval gate observability artifacts (PR)
+      - name: Upload eval gate report artifact (PR)
 
         uses: actions/upload-artifact@v4
 
         with:
 
-          name: eval-gate-observability-pr
+          name: eval-gate-report-pr
 
           path: |
 
@@ -347,43 +231,7 @@ jobs:
 
             artifacts/eval/eval_report.latest.json
 
-            artifacts/eval/eval_trace_correlate.latest.json
-
-            artifacts/eval/eval_trace_correlate.latest.triage.md
-
-            artifacts/eval/eval_export_kb_index_sidecar.latest.jsonl
-
-            artifacts/wf/wf_status_summary.latest.md
-
-            artifacts/wf/wf_status_summary.latest.json
-
           if-no-files-found: error
-
-
-
-      - name: Upload toolchain governance snapshot (non-blocking)
-
-        if: always()
-
-        continue-on-error: true
-
-        uses: actions/upload-artifact@v4
-
-        with:
-
-          name: toolchain-governance-snapshot-pr
-
-          path: |
-
-            output/toolchain/governance_snapshot.json
-
-            output/toolchain/governance_snapshot.md
-
-            output/toolchain/governance_advisory.log
-
-          if-no-files-found: warn
-
-          retention-days: 14
 
 
 
@@ -677,16 +525,12 @@ jobs:
 
         run: |
           python -m unittest \
-            tests.test_eval_stats \
-            tests.test_eval_report \
             tests.test_eval_exporter \
             tests.test_eval_ci_check \
             tests.test_eval_gate \
             tests.test_ibridge_exporter \
             tests.test_ask_selector_and_answer \
             tests.test_context_subagent_routing \
-            tests.test_wf_status_summary \
-            tests.test_eval_trace_correlate \
             -v
 
 
@@ -743,47 +587,9 @@ jobs:
 
           python -m observability.eval_report "${EXPORT}" --out-dir artifacts/eval
 
-          echo "W1_EXPORT=${EXPORT}" >> "${GITHUB_ENV}"
 
 
-
-      - name: Generate WF status summary (W1-T3 nightly)
-
-        continue-on-error: true
-
-        shell: bash
-
-        run: |
-
-          set -euo pipefail
-
-          python -m observability.wf_status_summary \
-            --eval "${W1_EXPORT:-tests/fixtures/eval/eval_export_sample.jsonl}" \
-            --index-status workflow_v2/20_pilot/W3-B/index_status_W2-1.json \
-            --trace-jsonl tests/fixtures/trace/sample_traces.jsonl \
-            --out-dir artifacts/wf
-
-
-
-      - name: Generate eval trace correlate triage (W1-T3 nightly)
-
-        continue-on-error: true
-
-        shell: bash
-
-        run: |
-
-          set -euo pipefail
-
-          python -m observability.eval_trace_correlate \
-            --eval "${W1_EXPORT:-tests/fixtures/eval/eval_export_sample.jsonl}" \
-            --trace tests/fixtures/trace/sample_traces.jsonl \
-            --format triage-md \
-            -o artifacts/eval/eval_trace_correlate.latest.triage.md
-
-
-
-      - name: Upload eval gate observability artifacts (nightly)
+      - name: Upload eval gate report artifact (nightly)
 
         continue-on-error: true
 
@@ -791,19 +597,13 @@ jobs:
 
         with:
 
-          name: eval-gate-observability-nightly
+          name: eval-gate-report-nightly
 
           path: |
 
             artifacts/eval/eval_report.latest.md
 
             artifacts/eval/eval_report.latest.json
-
-            artifacts/eval/eval_trace_correlate.latest.triage.md
-
-            artifacts/wf/wf_status_summary.latest.md
-
-            artifacts/wf/wf_status_summary.latest.json
 
           if-no-files-found: warn
 

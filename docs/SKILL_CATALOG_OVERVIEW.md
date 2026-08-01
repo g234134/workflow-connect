@@ -44,7 +44,7 @@ Format: `<domain>.<action>.<target>`
 | `obs.trace.query` | — | Read-only gov-trace-v2 JSONL lookup | `observability/trace_query.py` | python_cli | `unittest tests.test_trace_query` |
 | `obs.wf.status_summary` | — | One-page Gate / Index / Trace status | `observability/wf_status_summary.py` | python_cli | `unittest tests.test_wf_status_summary` |
 | `kb.index.bootstrap` | — | HQ offline repo index bootstrap (gov scope) | `workflow_v2/kb/repo_index_bootstrap.py` | python_cli | `unittest tests.test_kb_index_bootstrap` |
-| `kb.index.rag_smoke` | — | Manifest keyword smoke (no PG/Qdrant) | `workflow_v2/kb/rag_index_smoke.py` | python_cli | `unittest tests.test_kb_index_bootstrap` |
+| `kb.index.rag_smoke` | — | Manifest keyword smoke (no PG/Qdrant) | `workflow_v2/kb/rag_index_smoke.py` | python_cli | `unittest tests.test_kb_index_bootstrap`（覆蓋於此，見 test_kb_index_bootstrap 內 rag_smoke 用例） |
 | `kb.index.selector_gate` | **skeleton** | Pure-function gate reference only; **Wave C prod 接線留項** — not wired into ask selector by this catalog | `core/kb_index_selector_hook.py` | python_module | `unittest tests.test_kb_index_selector_hook` |
 | `obs.eval.triage` | **composite** | Orchestrates correlate + trace query for flagged rows; no standalone module | *(none)* | composite | `unittest tests.test_eval_trace_correlate tests.test_trace_query` |
 

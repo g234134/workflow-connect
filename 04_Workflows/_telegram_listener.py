@@ -1,6 +1,8 @@
-# _telegram_listener.py — 上行通信員入口（簡薄包裝）
+# _telegram_listener.py — 上行通信員入口（CLI wrapper）
 # python _telegram_listener.py --mode once   # 消化 pending 即退出
 # python _telegram_listener.py --mode loop   # 常駐長輪詢
+#
+# 薄層委託 Telegram_Listener_Agent.main()；此處僅保留為 PowerShell 相容入口。
 
 from __future__ import annotations
 

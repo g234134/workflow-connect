@@ -40,15 +40,16 @@
 
 ## STATE
 
-- overall_status: in_progress
-- current_owner: implementer
-- next_action: Reviewer 对照 AC；Scribe 可选引用 spec 更新 walkthrough
-- last_updated: 2026-06-13 · implementer
+- overall_status: accepted_with_gaps
+- overall_status_rationale: FRAME AC 全满足（index enriched 字段 · sampleco known_limits · lookup `--verbose` · unittest 10/10）；deferred（glob 自动登记 · `schema_fingerprint` · temp-dir index refresh UT）与 FRAME NonScope / B_REPORT deferred_items 一致，**不阻塞** v0.1 关票。
+- current_owner: orchestrator
+- next_action: closed · W4-MEM-01 accepted_with_gaps；可选 follow-up **W4-MEM-02**（glob 自动登记 + temp-dir index refresh UT + schema_fingerprint）
+- last_updated: 2026-06-14 · orchestrator + scribe
 - status_by_role:
   - orchestrator: done
   - implementer: done
-  - reviewer: pending
-  - scribe: pending
+  - reviewer: done
+  - scribe: done
 
 ---
 
@@ -83,10 +84,31 @@ python -m unittest tests.test_lookup_case_history tests.test_build_cases_index -
 
 ## C_REPORT
 
-<!-- Reviewer pending · 2026-06-14 多 lane 收口：implementer done + unittest 10/10 OK（2026-06-14 smoke）；待对照 FRAME AC 关票。不得自行升格 overall_status → done。 -->
+- conclusion: accepted_with_gaps
+- blocking_issues: 无（FRAME AC 全满足；无 AllowedPaths 越界；无须返工 code）
+- checks_summary: |
+  - AC-1（index enriched 字段）：PASS — `cases/index.json` 含 `cleaning_profile` / `cleaning_rules_applied` / `delivery_template_ref` / `schema_notes` / `qa_status` / `accepted_ratio`。
+  - AC-2（sampleco known_limits）：PASS — `multi_row_export`（schema_notes 等價） + `low_accepted_ratio`；`accepted_ratio=0.0696` < 0.1。
+  - AC-3（lookup --verbose）：PASS — `test_verbose_includes_rules_and_template`；Reviewer 复跑 `python scripts/lookup_case_history.py --client-ref sampleco --verbose` 含 rules + template + qa 字段。
+  - AC-4（unittest 全绿）：PASS — `python -m unittest tests.test_lookup_case_history tests.test_build_cases_index -v` → **10/10 OK**（2026-06-14）。
+  - Boundary：PASS — 变更限于 AllowedPaths；未觸 `core/*` · `clean_phase_demo.py` · 制度檔。
+  - Spec 對齊：PASS — `docs/case-history-lookup-spec-v0.1.md` 與 CLI/字段表一致；deferred（glob 自動登記、schema_fingerprint）與 FRAME NonScope 一致。
+- risk_level: low
+- suggestions: |
+  1. Orchestrator 更新 STATE：`reviewer: done` · `overall_status` → done 或 accepted_with_gaps。
+  2. Scribe 在 Progress / Dashboard 補上 W4-MEM-01 Reviewer 關票條目。
+  3. 可選 follow-up 票：W4-MEM-02（glob 自動登記 + temp-dir index refresh UT + schema_fingerprint）。
+- reviewed_by: reviewer
+- reviewed_at: 2026-06-14
 
 ---
 
 ## D_REPORT
 
-<!-- Scribe 填 -->
+- docs_updates:
+  - `docs/WAVE_PROGRESS_DASHBOARD.md` — Lane A 分票收口表 · 最小接案 MVP Wave 4 分栏 W4-MEM-01 → **accepted_with_gaps**；下一步索引移除 Reviewer 關票项
+  - `04_Workflows/00_Agent_Work_Progress.md` — 2026-06-14 W4-MEM-01 Reviewer 关票条目（append）
+- progress_entry: W4-MEM-01 关票：只读 case 记忆索引 enriched 字段与 lookup `--verbose` 已验证（10/10 UT）；glob 自动登记 · schema_fingerprint deferred → W4-MEM-02。
+- followup_suggestions:
+  - **W4-MEM-02**：glob 自动登记 `cases/<client>/<id>/` · temp-dir index refresh UT · `schema_fingerprint` 字段
+  - Progress Wave 4 partial → done 收口（可与 W4-MEM-02 Scribe 合并）

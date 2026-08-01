@@ -16,6 +16,11 @@ Usage:
         --draft skills/drafts/bad-draft.json \\
         --review-notes "scope too broad"
 
+    python 04_Workflows/_wave8_skill_card_review_queue.py list-approved --pretty
+
+    python 04_Workflows/_wave8_skill_card_review_queue.py promote-from-queue \\
+        --draft skills/cards/promote-me.json --pretty
+
 Exit codes:
     0 — success
     1 — validation, I/O, or JSON parse error
@@ -57,6 +62,13 @@ def rejected_dir(skills_root: Path) -> Path:
     return skills_root / "rejected"
 
 
+def approved_registry_path(skills_root: Path) -> Path:
+    return skills_root / "approved_registry.json"
+
+
+_DEFAULT_REGISTRY_SCHEMA = "approved_skill_registry_v1"
+
+
 def _utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
@@ -76,6 +88,139 @@ def load_draft_json(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise ValueError("draft root must be a JSON object")
     return data
+
+
+def _review_status(doc: dict[str, Any]) -> str | None:
+    meta = doc.get("card_meta")
+    if isinstance(meta, dict) and meta.get("review_status") is not None:
+        return str(meta["review_status"])
+    status = doc.get("review_status")
+    return str(status) if status is not None else None
+
+
+def _skill_id(doc: dict[str, Any]) -> str | None:
+    meta = doc.get("card_meta")
+    if isinstance(meta, dict) and meta.get("skill_id"):
+        return str(meta["skill_id"])
+    skill_id = doc.get("skill_id")
+    return str(skill_id) if skill_id else None
+
+
+def _skill_version(doc: dict[str, Any]) -> str:
+    meta = doc.get("card_meta")
+    if isinstance(meta, dict) and meta.get("version"):
+        return str(meta["version"])
+    return str(doc.get("version") or "0.1.0")
+
+
+def _has_applicable_scenarios(doc: dict[str, Any]) -> bool:
+    scenarios = doc.get("applicable_scenarios")
+    return isinstance(scenarios, list) and len(scenarios) > 0
+
+
+def _load_registry(skills_root: Path) -> dict[str, Any]:
+    path = approved_registry_path(skills_root)
+    if not path.is_file():
+        return {
+            "schema_version": _DEFAULT_REGISTRY_SCHEMA,
+            "registry_revision": "1.0.0",
+            "approved": [],
+        }
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("approved_registry.json root must be a JSON object")
+    approved = data.get("approved")
+    if not isinstance(approved, list):
+        raise ValueError("approved_registry.json approved must be an array")
+    return data
+
+
+def _save_registry(skills_root: Path, doc: dict[str, Any]) -> None:
+    path = approved_registry_path(skills_root)
+    _write_json(path, doc)
+
+
+def list_approved(*, skills_root: Path) -> dict[str, Any]:
+    """Return approved skill registry entries (index/metadata SSOT)."""
+    registry = _load_registry(skills_root)
+    approved = registry.get("approved", [])
+    return {
+        "ok": True,
+        "registry_path": str(approved_registry_path(skills_root)),
+        "schema_version": registry.get("schema_version"),
+        "registry_revision": registry.get("registry_revision"),
+        "count": len(approved),
+        "approved": approved,
+    }
+
+
+def promote_from_queue(
+    card_path: str | Path,
+    *,
+    skills_root: Path,
+) -> dict[str, Any]:
+    """
+    Promote an approved skill card into approved_registry.json.
+
+    Card must have review_status=approved and non-empty applicable_scenarios.
+    Does not move files; use approve/reject for draft queue moves.
+    """
+    src = Path(card_path).resolve()
+    doc = load_draft_json(src)
+    review_status = _review_status(doc)
+    if review_status != "approved":
+        return {
+            "ok": False,
+            "message": f"card review_status must be approved, got {review_status!r}",
+            "skill_id": _skill_id(doc),
+        }
+
+    skill_id = _skill_id(doc)
+    if not skill_id:
+        return {"ok": False, "message": "card missing skill_id"}
+
+    if not _has_applicable_scenarios(doc):
+        return {
+            "ok": False,
+            "message": "card incomplete: applicable_scenarios required for registry",
+            "skill_id": skill_id,
+            "selector_eligible": False,
+        }
+
+    version = _skill_version(doc)
+    reviewed_at = doc.get("reviewed_at") or _utc_now_iso()
+    registry = _load_registry(skills_root)
+    approved_list: list[dict[str, Any]] = list(registry.get("approved", []))
+
+    for entry in approved_list:
+        if isinstance(entry, dict) and entry.get("skill_id") == skill_id:
+            return {
+                "ok": True,
+                "skipped": True,
+                "message": f"skill_id already in registry: {skill_id}",
+                "skill_id": skill_id,
+                "version": entry.get("version", version),
+            }
+
+    entry = {
+        "skill_id": skill_id,
+        "version": version,
+        "approved_at": reviewed_at,
+        "source_card_path": str(src),
+        "selector_eligible": True,
+    }
+    approved_list.append(entry)
+    registry["approved"] = approved_list
+    _save_registry(skills_root, registry)
+
+    return {
+        "ok": True,
+        "skipped": False,
+        "skill_id": skill_id,
+        "version": version,
+        "approved_at": reviewed_at,
+        "registry_path": str(approved_registry_path(skills_root)),
+    }
 
 
 def _draft_summary(path: Path, data: dict[str, Any]) -> dict[str, Any]:
@@ -274,6 +419,23 @@ def main(argv: list[str] | None = None) -> int:
         help="Optional reviewer notes stored on the card",
     )
 
+    sub.add_parser(
+        "list-approved",
+        help="List entries in skills/approved_registry.json",
+        parents=[common],
+    )
+
+    promote_p = sub.add_parser(
+        "promote-from-queue",
+        help="Promote approved card into approved_registry.json",
+        parents=[common],
+    )
+    promote_p.add_argument(
+        "--draft",
+        required=True,
+        help="Path to approved card JSON (typically under skills/cards/)",
+    )
+
     args = parser.parse_args(argv)
     skills_root = resolve_skills_root(args.skills_root)
 
@@ -298,6 +460,17 @@ def main(argv: list[str] | None = None) -> int:
             )
             _emit_result(payload, pretty=args.pretty)
             return 0
+        if args.command == "list-approved":
+            payload = list_approved(skills_root=skills_root)
+            _emit_result(payload, pretty=args.pretty)
+            return 0
+        if args.command == "promote-from-queue":
+            payload = promote_from_queue(
+                args.draft,
+                skills_root=skills_root,
+            )
+            _emit_result(payload, pretty=args.pretty)
+            return 0 if payload.get("ok") else 1
     except FileNotFoundError as exc:
         print(f"[ERROR] {exc}", file=sys.stderr)
         return 1

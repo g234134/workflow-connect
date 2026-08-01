@@ -36,11 +36,11 @@
 
 ## 清洗动作摘要
 
-- `normalize_phase_name`: Phase N casing unified
-- `dedup_by_phase`: Keep row with max 現在（建議）
-- `drop_missing_phase`: Reject rows with empty Phase
-- `parse_percent`: Strip % and store 0–100 numeric
-- `flag_out_of_range`: Mark 0–100 violations; do not auto-truncate in demo
+- `normalize_phase_name`: normalize phase name
+- `dedup_by_phase`: dedup by phase
+- `drop_missing_phase`: drop missing phase
+- `parse_percent`: parse percent
+- `flag_out_of_range`: flag out of range
 
 ## 已知限制 / 注意事项
 

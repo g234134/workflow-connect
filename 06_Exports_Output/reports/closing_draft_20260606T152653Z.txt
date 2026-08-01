@@ -1,0 +1,39 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-06T15:26:53+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 8 條
+二、雜訊過濾率（示意）：92.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_qwen3_next.py | score=8.798 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_qwen3_next.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_value.py | score=8.62 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_value.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_system_attributes.py | score=7.92 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_system_attributes.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_reshape.py | score=7.9 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_reshape.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_hilbert.py | score=7.78 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_hilbert.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508__message.py | score=7.7 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__message.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_sparsefuncs.py | score=7.65 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_sparsefuncs.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_test_threads.py | score=7.5 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_threads.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）採用內部波次平台進行數據清算
+  · 樣本數為100，平均值為5.391，等級分布為B：64，A：8，D：25，C：3
+  · 掃描了36,236個池中的100個數據，覆蓋率為0.0%，是高產出任務
+  · 精英資產匹配數為8，檔案數為400，精英數為0，耗時0.042秒
+  · 噪音過濾率為92.0%，虛擬節省金額為0.11
+
+六、使用建議：
+  · 建議使用內部波次平台進行數據清算，以提高效率和精度
+  · 根據等級分布，優先處理B級和D級數據，以提高整體效率
+  · 增加樣本數和掃描數，以提高覆蓋率和精度
+  · 優化噪音過濾算法，以提高過濾率和節省金額
+  · 監控和分析虛擬節省金額，以優化資源分配
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個高產出任務，採用內部波次平台進行數據清算。樣本數為100，平均值為5.391，等級分布為B：64，A：8，D：25，C：3。掃描了36,236個池中的100個數據，覆蓋率為0.0%，是高產出任務。精英資產匹配數為8，檔案數為400，精英數為0，耗時0.042秒。噪音過濾率為92.0%，虛擬節省金額為0.11。建議使用內部波次平台進行數據清算，優先處理B級和D級數據，增加樣本數和掃描數，以提高覆蓋率和精度。同時，優化噪音過濾算法，以提高過濾率和節省金額。監控和分析虛擬節省金額，以優化資源分配。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

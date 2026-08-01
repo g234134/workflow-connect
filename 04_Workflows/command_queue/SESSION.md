@@ -796,3 +796,41 @@ human-blocked ���Ω|�Ѭ٥t���FT5 �� BLOCKED on PM
 **摘要**：B3 INDEX/RULES 改名完成；P6 schedule DAY2 GREEN `29186698130` → **2/7**；eval-gate-ci 續行空行本機已修、未 commit。
 **non_claims**：≠ uplift · ≠ Round-2 · ≠ push Eval gate fix
 
+
+---
+
+## 2026-07-13 · W4-P85-S2-GA-RUNBOOK DONE · continue
+
+**模式**：execute · same_chat O→B→C→D · HQ-Coordinator  
+**依據**：尚書省「繼續工作」· READY=0 · 解鎖 post-GA runbook 票
+
+### 交付
+1. `W4-P85-S2-GA-RUNBOOK-v1` → **DONE**（Reviewer accepted）
+2. runbook §0.3 checklist + Recorded GA · ops-run Evidence Schema · INDEX Smoke A 20/20
+3. QUEUE SSOT 日同步 07-13 · avg≈54% · Phase% **本票 Δ+0**
+4. Progress 末尾已 append（含 Phase 影響）
+
+### Phase 影響（本輪）
+| Phase | baseline | proposed_delta | 實際上調 |
+|-------|----------|----------------|----------|
+| P8.5 | 18%（07-13） | +0 | 否 |
+
+（同日更早 W-PROG：P8.5 **+8**→18% · P9 **+2**→22%）
+
+### 下一張（建議）
+**角色**：orchestrator → implementer  
+**票號**：W4-P85-P9-EVIDENCE-SSOT-v1  
+**依據**：兩線 URL 已齊（P85 `29157178993` · P9 `29159159265`）
+
+**non_claims**：≠ Phase% 寫入 · ≠ Round-2 · ≠ required CI · ≠ prod browser
+
+
+---
+
+## 2026-07-13 · W4-P85-P9-EVIDENCE-SSOT DONE
+
+**模式**：execute · same_chat  
+**交付**：Evidence SSOT complete（P85 `29157178993` · P9 `29159159265`）· Phase% Δ+0／+0  
+**priority_next**：仍 human（P6-nightly · Round-2 DEFER）  
+**non_claims**：≠ Phase% 寫入 · ≠ Round-2 · ≠ required CI
+

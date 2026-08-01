@@ -1,0 +1,73 @@
+# =============================================================================
+# D:\ Root 整合方案 — 以大唐三省六部為主體
+# 建立日期: 2026-07-12
+# 最後更新: 2026-07-25 (v3 — Wave 6 整合完成)
+# 狀態: completed
+# Owner: hermes
+# =============================================================================
+
+meta:
+  id: D20260725_ROOT_CONSOLIDATION_v3
+  title: "D:\\ 根目錄整合 — 以大唐三省六部為主體"
+  status: completed
+  created_at: 2026-07-12
+  completed_at: 2026-07-25
+  owner: hermes
+  wave: 6
+  report: "04_Workflows/總檔案紀錄/_archive/Wave6-D槽整合/W6_T3_整合執行報告.md"
+
+current_layout:
+  items:
+    - "大唐三省六部/"     # 主體 SSOT (~20 GB)
+    - "Hermes/"           # Tools 衛星 — 邏輯歸屬已登記
+    - "_infra/"           # Tools 衛星 — OmniRoute (port 20128)
+    - "遊戲庫/"             # 遊戲 (~37 GB)
+    - "SteamLibrary/"     # 遊戲 (~3.7 GB)
+    - "AI_HUB/"           # 殘留 — chrome MCP 鎖檔，待手動刪
+
+removed_2026_07_25:
+  - "tmp/"               # → 05_Temp_Cache/scratch/
+  - "hermes-workspace/"  # → 04_Workflows/plans|project_status + 07_Knowledge/runbooks
+  - "666LAG_Backup/"     # → 06_Exports_Output/backups/personal/
+  - "u5927/"             # 誤建測試，已刪
+  - "鉍戲庫/"             # 空 stub，已刪
+
+target_layout:
+  keep_untouched:
+    - "大唐三省六部/"
+    - "Hermes/"
+    - "_infra/"
+    - "遊戲庫/"
+    - "SteamLibrary/"
+    - "$RECYCLE.BIN/"
+    - "System Volume Information/"
+
+  absorbed_into_大唐:
+    - source: "D:\\tmp"
+      target: "05_Temp_Cache/scratch/"
+    - source: "D:\\hermes-workspace"
+      target: "04_Workflows/plans/hermes/, project_status/hermes_milestones/, 07_Knowledge/runbooks/hermes/"
+    - source: "D:\\666LAG_Backup"
+      target: "06_Exports_Output/backups/personal/openclaw_sandbox_test/"
+    - source: "hermes-workspace/legacy/crew_demo"
+      target: "02_Projects/crew_demo/"
+
+  external_satellites:
+    hermes:
+      root: "D:/Hermes"
+      registered_in: "04_Workflows/Master_Map.json"
+    omniroute:
+      root: "D:/_infra"
+      registered_in: "04_Workflows/Master_Map.json"
+
+  pending_delete:
+    - "AI_HUB/"  # chrome-devtools-mcp profile locked
+
+conclusion: |
+  Wave 6 整合完成。D:\ 非遊戲工作資料已歸檔至大唐三省六部。
+  Hermes 與 _infra 保留根目錄，邏輯歸屬登記於 Master_Map v2.67。
+  唯一待辦：關閉 Chrome MCP 後刪除 AI_HUB 殘留目錄。
+
+rollback:
+  manifest: "06_Exports_Output/reports/consolidation/manifest_pre_consolidation_20260725_092730.json"
+  note: "使用 manifest SHA256 可還原搬移前狀態"

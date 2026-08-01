@@ -1,0 +1,145 @@
+﻿{
+  "ok": true,
+  "mode": "execute",
+  "ticket_id": "WC-DEMO-1",
+  "artifact_dir": "artifacts/e2e/WC-DEMO-1",
+  "runbook": "docs/wave_c/WC_T7_e2e_walkthrough_runbook.md",
+  "steps": [
+    {
+      "step_id": "0",
+      "title": "Environment check",
+      "status": "skipped",
+      "reason": "missing prerequisite: 04_Workflows/tickets/WC-DEMO-1_state.md"
+    },
+    {
+      "step_id": "2",
+      "title": "Dispatch cards + eligibility gate",
+      "status": "ok",
+      "commands": [
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"generated_at\": \"2026-06-23T20:15:39.338654+00:00\",\n  \"plan_snapshot\": \"artifacts/control_plane/dispatch_plan.latest.json\",\n  \"cards_generated\": 0,\n  \"cards_skipped\": 0,\n  \"warnings\": [\n    \"ticket_not_found_or_role_filtered:WC-DEMO-1\"\n  ],\n  \"cards\": [],\n  \"dry_run\": false,\n  \"role_filter\": \"implementer\",\n  \"limit\": 5,\n  \"eligibility_gate\": \"block\",\n  \"eligibility_blocked\": []\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_dispatch_cards.py' --refresh-plan --ticket WC-DEMO-1 --role implementer --eligibility-gate block --out-dir artifacts/e2e/WC-DEMO-1/cards/ --json-summary artifacts/e2e/WC-DEMO-1/dispatch_cards_run.json --pretty",
+          "ran": true
+        }
+      ]
+    },
+    {
+      "step_id": "3-hitl",
+      "title": "HITL: edit STATE to review/reviewer (see runbook 禮3)",
+      "status": "fixture",
+      "note": "Skipped manual HITL; pre-recorded snapshots materialized from tests/fixtures/e2e_walkthrough/"
+    },
+    {
+      "step_id": "3",
+      "title": "Comms JSONL (after before_review + live state differ)",
+      "status": "ok",
+      "commands": [
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"written_to_file_log\",\n  \"ticket_id\": \"WC-DEMO-1\",\n  \"sent\": true,\n  \"payload\": {\n    \"schema_version\": \"ticket_comms_v0.1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"title\": \"[WC-DEMO-1] Under Review\",\n    \"summary\": \"Ticket WC-DEMO-1: status in progress ??under review; owner now reviewer; implementation in_review; next: Reviewer validates comms JSONL for WC-DEMO-1 E2E demo.\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_review.md\",\n    \"status\": {\n      \"before\": {\n        \"overall_status\": \"in_progress\",\n        \"current_owner\": \"implementer\"\n      },\n      \"after\": {\n        \"overall_status\": \"review\",\n        \"current_owner\": \"reviewer\"\n      }\n    },\n    \"changed_fields\": [\n      \"overall_status\",\n      \"implementation_status\",\n      \"current_owner\",\n      \"next_action\",\n      \"status_by_role\"\n    ],\n    \"diff\": {\n      \"changed_fields\": [\n        \"overall_status\",\n        \"implementation_status\",\n        \"current_owner\",\n        \"next_action\",\n        \"status_by_role\"\n      ],\n      \"before\": {\n        \"overall_status\": \"in_progress\",\n        \"implementation_status\": \"in_progress\",\n        \"current_owner\": \"implementer\",\n        \"next_action\": \"ready_for_e2e_walkthrough ??Implementer runs M2 E2E smoke per WC-T7 runbook\",\n        \"status_by_role\": {\n          \"orchestrator\": \"done\",\n          \"implementer\": \"in_progress\",\n          \"reviewer\": \"pending\",\n          \"scribe\": \"n/a\"\n        }\n      },\n      \"after\": {\n        \"overall_status\": \"review\",\n        \"implementation_status\": \"in_review\",\n        \"current_owner\": \"reviewer\",\n        \"next_action\": \"Reviewer validates comms JSONL for WC-DEMO-1 E2E demo\",\n        \"status_by_role\": {\n          \"orchestrator\": \"done\",\n          \"implementer\": \"done\",\n          \"reviewer\": \"in_progress\",\n          \"scribe\": \"n/a\"\n        }\n      }\n    },\n    \"generated_at\": \"2026-06-23T20:15:39Z\"\n  },\n  \"send_result\": {\n    \"ok\": true,\n    \"message\": \"written_to_file_log\",\n    \"channel\": \"file_log\",\n    \"artifact_path\": \"artifacts/e2e/WC-DEMO-1/comms/ticket_comms.jsonl\",\n    \"ticket_id\": \"WC-DEMO-1\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_ticket_state_update_with_comms.py' --before artifacts/e2e/WC-DEMO-1/before_review.md --after artifacts/e2e/WC-DEMO-1/state_review.md --outbox-dir artifacts/e2e/WC-DEMO-1/comms",
+          "ran": true
+        }
+      ]
+    },
+    {
+      "step_id": "4-hitl",
+      "title": "HITL: edit STATE to ready_for_order (see runbook 禮4)",
+      "status": "fixture",
+      "note": "Skipped manual HITL; pre-recorded snapshots materialized from tests/fixtures/e2e_walkthrough/"
+    },
+    {
+      "step_id": "4",
+      "title": "Order create + lookup + replay",
+      "status": "ok",
+      "commands": [
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"order_created\",\n  \"replay\": false,\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"DRAFT\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"\",\n    \"actor\": \"\",\n    \"reason\": \"\",\n    \"provider_ref\": \"\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl create --ticket WC-DEMO-1 --amount-minor 10000 --currency TWD --ticket-path artifacts/e2e/WC-DEMO-1/state_ready_for_order.md",
+          "ran": true
+        },
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"order_found\",\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"DRAFT\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"\",\n    \"actor\": \"\",\n    \"reason\": \"\",\n    \"provider_ref\": \"\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl lookup --ticket-id WC-DEMO-1",
+          "ran": true
+        },
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"order_exists\",\n  \"replay\": true,\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"DRAFT\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"\",\n    \"actor\": \"\",\n    \"reason\": \"\",\n    \"provider_ref\": \"\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl create --ticket WC-DEMO-1 --amount-minor 10000 --currency TWD --ticket-path artifacts/e2e/WC-DEMO-1/state_ready_for_order.md",
+          "ran": true
+        }
+      ]
+    },
+    {
+      "step_id": "6-payment",
+      "title": "Sandbox payment: transition ??pay ??PAID lookup (WC-M3 禮4.2 繚 demo only)",
+      "status": "ok",
+      "commands": [
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"order_transitioned\",\n  \"replay\": false,\n  \"from_status\": \"DRAFT\",\n  \"to_status\": \"PENDING_PAYMENT\",\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"PENDING_PAYMENT\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"2026-06-23T20:15:39Z\",\n    \"actor\": \"m2-walkthrough\",\n    \"reason\": \"sandbox_execute\",\n    \"provider_ref\": \"\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl transition --order-id ORD-WC-DEMO-1 --to pending_payment --actor m2-walkthrough --reason sandbox_execute",
+          "ran": true
+        },
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"charge_succeeded\",\n  \"payment_result\": {\n    \"status\": \"paid\",\n    \"provider_ref\": \"SANDBOX-REF-ORD-WC-DEMO-1-bb19748c\",\n    \"simulated\": true\n  },\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"PAID\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"2026-06-23T20:15:40Z\",\n    \"actor\": \"sandbox-adapter\",\n    \"reason\": \"sandbox_charge_ok\",\n    \"provider_ref\": \"SANDBOX-REF-ORD-WC-DEMO-1-bb19748c\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl pay --order-id ORD-WC-DEMO-1",
+          "ran": true,
+          "env": {
+            "GOV_PAYMENT_SANDBOX_ENABLED": "1"
+          }
+        },
+        {
+          "exit_code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"message\": \"order_found\",\n  \"order\": {\n    \"order_id\": \"ORD-WC-DEMO-1\",\n    \"ticket_id\": \"WC-DEMO-1\",\n    \"ticket_ref\": \"artifacts/e2e/WC-DEMO-1/state_ready_for_order.md\",\n    \"amount_minor\": 10000,\n    \"currency\": \"TWD\",\n    \"order_status\": \"PAID\",\n    \"created_at\": \"2026-06-23T20:15:39Z\",\n    \"idempotency_key\": \"WC-DEMO-1\",\n    \"schema_version\": \"order_ledger_v1\",\n    \"transitioned_at\": \"2026-06-23T20:15:40Z\",\n    \"actor\": \"sandbox-adapter\",\n    \"reason\": \"sandbox_charge_ok\",\n    \"provider_ref\": \"SANDBOX-REF-ORD-WC-DEMO-1-bb19748c\"\n  }\n}\n",
+          "stderr": "",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' 'D:\\憭批?銝??剝\\scripts\\run_order_intake.py' --jsonl-path artifacts/e2e/WC-DEMO-1/orders.jsonl lookup --order-id ORD-WC-DEMO-1",
+          "ran": true
+        }
+      ]
+    },
+    {
+      "step_id": "5",
+      "title": "Module unittest cross-check",
+      "status": "ok",
+      "commands": [
+        {
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": "test_numeric_wave (tests.test_ticket_eligibility.TestInferWavePhase.test_numeric_wave) ... ok\ntest_wave_b_ticket (tests.test_ticket_eligibility.TestInferWavePhase.test_wave_b_ticket) ... ok\ntest_eligible_implementer_in_progress (tests.test_ticket_eligibility.TestTicketEligibility.test_eligible_implementer_in_progress) ... ok\ntest_eligible_reviewer_in_review (tests.test_ticket_eligibility.TestTicketEligibility.test_eligible_reviewer_in_review) ... ok\ntest_eligible_scribe_on_done_ticket (tests.test_ticket_eligibility.TestTicketEligibility.test_eligible_scribe_on_done_ticket) ... ok\ntest_ineligible_blocked_status (tests.test_ticket_eligibility.TestTicketEligibility.test_ineligible_blocked_status) ... ok\ntest_ineligible_done_ticket (tests.test_ticket_eligibility.TestTicketEligibility.test_ineligible_done_ticket) ... ok\ntest_ineligible_implementer_during_review_gate (tests.test_ticket_eligibility.TestTicketEligibility.test_ineligible_implementer_during_review_gate) ... ok\ntest_ineligible_unresolved_dependency (tests.test_ticket_eligibility.TestTicketEligibility.test_ineligible_unresolved_dependency) ... ok\ntest_check_demo_ticket (tests.test_ticket_eligibility.TestTicketEligibilityLiveLoad.test_check_demo_ticket) ... ok\ntest_force_eligibility_override_in_block_mode (tests.test_dispatch_cards.TestDispatchCardsEligibilityGate.test_force_eligibility_override_in_block_mode) ... ok\ntest_gate_block_skips_ineligible_ticket (tests.test_dispatch_cards.TestDispatchCardsEligibilityGate.test_gate_block_skips_ineligible_ticket) ... ok\ntest_gate_off_generates_despite_ineligible (tests.test_dispatch_cards.TestDispatchCardsEligibilityGate.test_gate_off_generates_despite_ineligible) ... ok\ntest_gate_warn_generates_with_warning (tests.test_dispatch_cards.TestDispatchCardsEligibilityGate.test_gate_warn_generates_with_warning) ... ok\ntest_dry_run_writes_no_files (tests.test_dispatch_cards.TestDispatchCardsGeneration.test_dry_run_writes_no_files) ... ok\ntest_happy_path_writes_card_with_provenance (tests.test_dispatch_cards.TestDispatchCardsGeneration.test_happy_path_writes_card_with_provenance) ... ok\ntest_parse_warning_in_card (tests.test_dispatch_cards.TestDispatchCardsGeneration.test_parse_warning_in_card) ... ok\ntest_ticket_state_mtime_unchanged (tests.test_dispatch_cards.TestDispatchCardsGeneration.test_ticket_state_mtime_unchanged) ... ok\ntest_live_plan_implementer_cards (tests.test_dispatch_cards.TestDispatchCardsLive.test_live_plan_implementer_cards) ... ok\ntest_role_filter_excludes_scribe (tests.test_dispatch_cards.TestDispatchCardsSelection.test_role_filter_excludes_scribe) ... ok\ntest_select_runnable_and_draft (tests.test_dispatch_cards.TestDispatchCardsSelection.test_select_runnable_and_draft) ... ok\ntest_build_payload_shape (tests.test_ticket_comms.TestMessageGenerator.test_build_payload_shape) ... ok\ntest_snapshot_from_ticket_record_fixture (tests.test_ticket_comms.TestMessageGenerator.test_snapshot_from_ticket_record_fixture) ... ok\ntest_summary_mentions_status_transition (tests.test_ticket_comms.TestMessageGenerator.test_summary_mentions_status_transition) ... ok\ntest_file_log_sender_appends_jsonl (tests.test_ticket_comms.TestSender.test_file_log_sender_appends_jsonl) ... ok\ntest_null_sender_dry_run (tests.test_ticket_comms.TestSender.test_null_sender_dry_run) ... ok\ntest_detects_overall_status_and_owner (tests.test_ticket_comms.TestStateDiff.test_detects_overall_status_and_owner) ... ok\ntest_detects_status_by_role_change (tests.test_ticket_comms.TestStateDiff.test_detects_status_by_role_change) ... ok\ntest_no_change_returns_empty_diff (tests.test_ticket_comms.TestStateDiff.test_no_change_returns_empty_diff) ... ok\ntest_blocked_transition_from_fixture (tests.test_ticket_comms.TestTransitionHook.test_blocked_transition_from_fixture) ... ok\ntest_emit_writes_on_status_change (tests.test_ticket_comms.TestTransitionHook.test_emit_writes_on_status_change) ... ok\ntest_mismatch_ticket_id_fails (tests.test_ticket_comms.TestTransitionHook.test_mismatch_ticket_id_fails) ... ok\ntest_no_change_skips_send (tests.test_ticket_comms.TestTransitionHook.test_no_change_skips_send) ... ok\ntest_cli_writes_ticket_comms_v01_jsonl (tests.test_ticket_state_update_cli.TestTicketStateUpdateCli.test_cli_writes_ticket_comms_v01_jsonl) ... ok\ntest_dry_run_skips_jsonl (tests.test_ticket_state_update_cli.TestTicketStateUpdateCli.test_dry_run_skips_jsonl) ... ok\ntest_idempotent_replay (tests.test_order_ledger.TestCreateOrder.test_idempotent_replay) ... ok\ntest_jsonl_round_trip (tests.test_order_ledger.TestCreateOrder.test_jsonl_round_trip) ... ok\ntest_normal_create (tests.test_order_ledger.TestCreateOrder.test_normal_create) ... ok\ntest_not_ready_rejected (tests.test_order_ledger.TestCreateOrder.test_not_ready_rejected) ... ok\ntest_not_ready_ticket (tests.test_order_ledger.TestReadyForOrderGate.test_not_ready_ticket) ... ok\ntest_ready_keyword (tests.test_order_ledger.TestReadyForOrderGate.test_ready_keyword) ... ok\ntest_status_alt_review (tests.test_order_ledger.TestReadyForOrderGate.test_status_alt_review) ... ok\ntest_amount_minor_not_positive (tests.test_order_ledger.TestValidation.test_amount_minor_not_positive) ... ok\ntest_invalid_currency (tests.test_order_ledger.TestValidation.test_invalid_currency) ... ok\ntest_cli_create_lookup_round_trip (tests.test_order_ledger_integration.TestOrderLedgerIntegration.test_cli_create_lookup_round_trip) ... ok\ntest_load_ticket_default_path_without_ticket_path_arg (tests.test_order_ledger_integration.TestOrderLedgerIntegration.test_load_ticket_default_path_without_ticket_path_arg) ... ok\ntest_not_ready_rejected_on_real_shape_fixture (tests.test_order_ledger_integration.TestOrderLedgerIntegration.test_not_ready_rejected_on_real_shape_fixture) ... ok\ntest_real_ticket_fixture_ready_gate_and_create (tests.test_order_ledger_integration.TestOrderLedgerIntegration.test_real_ticket_fixture_ready_gate_and_create) ... ok\n\n----------------------------------------------------------------------\nRan 48 tests in 0.660s\n\nOK\n",
+          "ok": true,
+          "command": "'C:\\Python314\\python.exe' -m unittest tests.test_ticket_eligibility tests.test_dispatch_cards tests.test_ticket_comms tests.test_ticket_state_update_cli tests.test_order_ledger tests.test_order_ledger_integration -v",
+          "ran": true
+        }
+      ]
+    }
+  ],
+  "include_payment": true,
+  "order_status": "PAID",
+  "hitl_fixtures": {
+    "before_review.md": "artifacts/e2e/WC-DEMO-1/before_review.md",
+    "state_review.md": "artifacts/e2e/WC-DEMO-1/state_review.md",
+    "state_ready_for_order.md": "artifacts/e2e/WC-DEMO-1/state_ready_for_order.md"
+  },
+  "use_hitl_fixtures": true
+}

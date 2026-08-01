@@ -1,0 +1,24 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.triage",
+  "title": "Flagged eval triage (composite)",
+  "brief": "Composite triage workflow: use obs.eval.correlate (--format triage-md) plus obs.trace.query (--format triage) on flagged eval rows. No standalone module.",
+  "domain": "obs",
+  "module_path": null,
+  "entry_kind": "composite",
+  "entrypoint": null,
+  "inputs": [
+    "eval_export.jsonl",
+    "gov-trace-v2.jsonl",
+    "flagged rows (needs_review or fail-on-tags)"
+  ],
+  "outputs": [
+    "triage-md correlate appendix",
+    "per-trace triage one-liner"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_trace_correlate tests.test_trace_query -v",
+  "wave_ticket": "WAVE-B-P3-FLAGGED-TRIAGE-ENRICH",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer", "implementer"],
+  "depends_on": ["obs.eval.correlate", "obs.trace.query"]
+}

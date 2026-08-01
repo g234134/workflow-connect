@@ -1,8 +1,9 @@
-"""Shared helpers for cases/index.json refresh and lookup (Wave 4A MEMO · W4-MEM-01)."""
+"""Shared helpers for cases/index.json refresh and lookup (Wave 4A MEMO · W4-MEM-01/02)."""
 
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -13,17 +14,19 @@ _REPO_ROOT = Path(__file__).resolve().parents[1]
 _DEFAULT_INDEX_PATH = _REPO_ROOT / "cases" / "index.json"
 _CSV_CLEANING = _REPO_ROOT / "notebooks" / "csv_cleaning"
 
-# Frozen registry for Wave 4A MVP; lookup reads index only — does not scan cases/.
+# Anchor registry (W4-MEM-01); W4-MEM-02 merges with glob discovery under cases/.
 REGISTERED_CASE_DIRS: tuple[str, ...] = (
     "cases/demo_phase",
     "cases/sampleco/2026-0001",
+    "cases/internal-approved/2026-0001",
 )
 
 _DEFAULT_DELIVERY_TEMPLATE = "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md"
 
 _CLEANING_PROFILE_BY_CASE: dict[str, str] = {
     "cases/demo_phase": "phase_demo_v1",
-    "cases/sampleco/2026-0001": "clean_basic_demo",
+    "cases/sampleco/2026-0001": "sampleco_order_profile",
+    "cases/internal-approved/2026-0001": "generic_low_risk_profile",
 }
 
 _STATIC_KNOWN_LIMITS: dict[str, list[str]] = {
@@ -36,10 +39,16 @@ _STATIC_KNOWN_LIMITS: dict[str, list[str]] = {
         "phase_dedup_semantics_unstable",
         "marginal_cleaning_quality",
     ],
+    "cases/internal-approved/2026-0001": [
+        "internal_use_only",
+        "source_derived_from_demo_phase",
+        "rows<100",
+        "manual_payment_and_external_delivery_required",
+    ],
 }
 
 _INDEX_DISCLAIMER = "Stub registry for Wave 2 MVP; not a production job queue."
-_LOOKUP_NOTE = "只登记 demo_phase, sampleco/2026-0001"
+_LOOKUP_NOTE = "anchors + glob under cases/ (excl. _TEMPLATE / _* stubs); W4-MEM-02"
 
 
 def repo_root() -> Path:
@@ -48,6 +57,49 @@ def repo_root() -> Path:
 
 def default_index_path() -> Path:
     return _DEFAULT_INDEX_PATH
+
+
+def schema_fingerprint(headers: list[str] | None) -> str | None:
+    """Stable short fingerprint: sorted headers joined by | → sha256 hex[:16]."""
+    if not headers:
+        return None
+    cleaned = [str(h).strip() for h in headers if str(h).strip()]
+    if not cleaned:
+        return None
+    payload = "|".join(sorted(cleaned))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def _is_excluded_case_rel(case_rel: str) -> bool:
+    """Exclude template / underscore stub trees (e.g. _TEMPLATE_case, _experiment_samples)."""
+    parts = case_rel.replace("\\", "/").split("/")
+    return any(part.startswith("_") for part in parts)
+
+
+def discover_case_dirs(repo_root: Path | None = None) -> list[str]:
+    """Merge REGISTERED anchors with glob of cases/*/intake.json and cases/*/*/intake.json."""
+    root = repo_root or _REPO_ROOT
+    cases_root = root / "cases"
+    found: set[str] = set()
+
+    for anchor in REGISTERED_CASE_DIRS:
+        found.add(anchor.replace("\\", "/"))
+
+    if cases_root.is_dir():
+        for pattern in ("*/intake.json", "*/*/intake.json"):
+            for intake_path in sorted(cases_root.glob(pattern)):
+                case_dir = intake_path.parent
+                try:
+                    rel = case_dir.relative_to(root).as_posix()
+                except ValueError:
+                    continue
+                if _is_excluded_case_rel(rel):
+                    continue
+                found.add(rel)
+
+    anchors = [a.replace("\\", "/") for a in REGISTERED_CASE_DIRS]
+    extras = sorted(p for p in found if p not in anchors)
+    return anchors + extras
 
 
 def _read_intake(case_dir: Path) -> dict[str, Any] | None:
@@ -289,12 +341,15 @@ def build_case_entry(case_rel: str, repo_root: Path | None = None) -> dict[str, 
         if isinstance(ref, str) and ref.strip():
             template_ref = ref.strip()
 
+    schema_headers = read_schema_headers(case_dir, intake)
+
     entry: dict[str, Any] = {
         "case_dir": case_key,
         "client_ref": client_ref.strip(),
         "case_id": case_id.strip(),
         "product_sku": product_sku.strip(),
-        "schema_headers": read_schema_headers(case_dir, intake),
+        "schema_headers": schema_headers,
+        "schema_fingerprint": schema_fingerprint(schema_headers),
         "schema_notes": schema_notes,
         "gate_status": gate_status,
         "cleaning_profile": _CLEANING_PROFILE_BY_CASE.get(case_key, "unknown"),
@@ -345,6 +400,7 @@ def _match_summary(item: dict[str, Any], *, verbose: bool) -> dict[str, Any]:
         base.update(
             {
                 "schema_headers": item.get("schema_headers") if isinstance(item.get("schema_headers"), list) else [],
+                "schema_fingerprint": item.get("schema_fingerprint"),
                 "schema_notes": item.get("schema_notes") if isinstance(item.get("schema_notes"), list) else [],
                 "cleaning_rules_applied": item.get("cleaning_rules_applied")
                 if isinstance(item.get("cleaning_rules_applied"), list)
@@ -362,13 +418,13 @@ def refresh_cases_index(
     index_path: Path | None = None,
     repo_root: Path | None = None,
 ) -> dict[str, Any]:
-    """Scan registered case dirs and write cases/index.json."""
+    """Discover case dirs (anchors + glob) and write cases/index.json."""
     root = repo_root or _REPO_ROOT
     path = index_path or (root / "cases" / "index.json")
 
     entries: list[dict[str, Any]] = []
     skipped: list[str] = []
-    for case_rel in REGISTERED_CASE_DIRS:
+    for case_rel in discover_case_dirs(root):
         entry = build_case_entry(case_rel, root)
         if entry:
             entries.append(entry)

@@ -1,0 +1,49 @@
+{
+  "schema": "p2_sandbox_index_manifest_v1",
+  "run_id": "20260715T001539Z",
+  "fixture": "tests/fixtures/index_job_hook_thin_v1",
+  "fixture_digest": "46b284f92f73bf87",
+  "sandbox": true,
+  "writes_production_index": false,
+  "collection": "sandbox_local_stub",
+  "jobs": [
+    {
+      "job_id": "fixture.doc.sample",
+      "pipeline": "document_chunks",
+      "mode": "sandbox_local_write",
+      "writes_index": true,
+      "source_rel": "sample.txt",
+      "notes": "sandbox execute · local artifact only · ≠ production Qdrant/PG/core ingest"
+    },
+    {
+      "job_id": "fixture.repo.sample",
+      "pipeline": "repo_chunks",
+      "mode": "sandbox_local_write",
+      "writes_index": true,
+      "source_rel": "sample.txt",
+      "notes": "sandbox execute · local artifact only · ≠ production Qdrant/PG/core ingest"
+    }
+  ],
+  "chunks": [
+    {
+      "job_id": "fixture.doc.sample",
+      "pipeline": "document_chunks",
+      "source_rel": "sample.txt",
+      "text_preview": "sample fixture document for FP-G2-T6 thin runtime dry-run.\nNot a production corpus. Do not ingest.\n",
+      "char_count": 99,
+      "sandbox": true,
+      "writes_production_index": false
+    },
+    {
+      "job_id": "fixture.repo.sample",
+      "pipeline": "repo_chunks",
+      "source_rel": "sample.txt",
+      "text_preview": "sample fixture document for FP-G2-T6 thin runtime dry-run.\nNot a production corpus. Do not ingest.\n",
+      "char_count": 99,
+      "sandbox": true,
+      "writes_production_index": false
+    }
+  ],
+  "cleanup": "Remove directory artifacts/p2_sandbox_index/20260715T001539Z (or entire artifacts/p2_sandbox_index)",
+  "reversible": true
+}

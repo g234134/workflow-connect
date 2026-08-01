@@ -1,0 +1,26 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.correlate",
+  "title": "Eval–trace correlate",
+  "brief": "Join flagged eval_export rows to gov-trace-v2 JSONL. Supports triage-md output for needs_review triage workflows.",
+  "domain": "obs",
+  "module_path": "observability/eval_trace_correlate.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.eval_trace_correlate --eval tests/fixtures/eval/eval_export_sample.jsonl --trace tests/fixtures/trace/sample_traces.jsonl --format triage-md",
+  "inputs": [
+    "--eval eval_export.jsonl",
+    "--trace gov-trace-v2.jsonl",
+    "--format json|jsonl|triage-md",
+    "--only-needs-review"
+  ],
+  "outputs": [
+    "correlated rows dict",
+    "triage-md appendix (when --format triage-md)"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_trace_correlate -v",
+  "wave_ticket": "WAVE-B-P2-EVAL-TRACE-CORRELATE",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer", "implementer"],
+  "depends_on": ["obs.eval.export", "obs.trace.query"]
+}

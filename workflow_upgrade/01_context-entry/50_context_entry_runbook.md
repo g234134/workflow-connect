@@ -391,12 +391,13 @@ python -m unittest tests.test_context_subagent_routing tests.test_monitoring_exe
 
 > **制度定位**：本閘門屬 **L0 控制器**，控制「能否在 HTTP 回應看內部 observability state」。**非**業務 contract 層；**開啟閘門 ≠ 准許業務依賴欄位 ≠ SLA 承諾**。
 
-**合併決策（C 線 · 2026-05-25）**：**現階段不合併** env／query 為單一 `GOV_CORE_API_EXPOSE_OBSERVABILITY`（程式維持 A／B 線已交付之雙閘門）。制度上視兩者為 **同一 L0 Observability Gate 的兩個 surface**，共用下列規則；未來可單開 `OBS-GATE-1` 票加 umbrella alias，**不得**在未改程式前假設已合併。
+**合併決策（C 線 · 2026-05-25；OBS-GATE-1 · 2026-07-29）**：制度上視兩者為 **同一 L0 Observability Gate 的兩個 surface**，共用下列規則。**OBS-GATE-1 已落地**：可選伺服器 env `GOV_CORE_API_EXPOSE_OBSERVABILITY=1` 作為 **umbrella**（OR 滿足任一 surface 的伺服器半閘門）；**舊** `GOV_CORE_API_EXPOSE_MONITORING_GRAPH`／`GOV_CORE_API_EXPOSE_IBRIDGE` **仍完全相容**。每 surface **仍須**各自 query opt-in（`?expose_monitoring_graph=true`／`?expose_ibridge=true`）。**未**合併為單一 query；**仍** L0 only（≠ L1／L2）。
 
 | Surface | 伺服器 env（預設 **0**） | 請求 query（須顯式 opt-in） | 暴露內容 | 敏感度 |
 |---------|-------------------------|----------------------------|----------|--------|
 | **monitoring_graph** | `GOV_CORE_API_EXPOSE_MONITORING_GRAPH=1` | `?expose_monitoring_graph=true` | 頂層 **`monitoring_graph`** 精簡摘要 | 中（whitelist 後） |
 | **ibridge** | `GOV_CORE_API_EXPOSE_IBRIDGE=1` | `?expose_ibridge=true` | 頂層 **`ibridge_v0`**（含 K-1 側車全量） | 高 |
+| **umbrella（OBS-GATE-1）** | `GOV_CORE_API_EXPOSE_OBSERVABILITY=1` | （仍用上列各 surface query） | 僅滿足**伺服器**半閘門；不單獨暴露鍵 | 同 surface |
 
 > **注意（HTTP `monitoring_graph` 閘門 ≠ 有資料）**  
 > 僅啟用 surface A（`GOV_CORE_API_EXPOSE_MONITORING_GRAPH=1` + `?expose_monitoring_graph=true`）**不**保證回應含頂層 `monitoring_graph` 鍵。頂層摘要仍須同時滿足 **管線前提**（下表該列）：  
@@ -577,7 +578,7 @@ python -m unittest tests.test_context_subagent_routing tests.test_monitoring_exe
 | L1 shadow 寫入點（selector 後 vs enrich 內）最終裁定 | **設計稿傾向 A** · 實作票待定 |
 | L2 SLO gate／`slo_verdict` | **錨點 only** · `M-GOV-L2` + §6.8.5；**禁止、未實作、未排期** |
 | `slo_verdict` 與 Infra alert evaluate 分工 | **未開票** · `M-GOV-L2` 實作票 |
-| 合併 HTTP 閘門為 `GOV_CORE_API_EXPOSE_OBSERVABILITY` | **未決** · 建議 `OBS-GATE-1`；現程式維持雙閘門 |
+| 合併 HTTP 閘門為 `GOV_CORE_API_EXPOSE_OBSERVABILITY` | **已決（OBS-GATE-1 · 2026-07-29）** · umbrella env OR 舊雙閘門；query 仍分 surface · L0 only |
 | prod 大規模開 L0 是否需尚書省報備 | **建議** off 為常態；大規模 observability 可報備 |
 | 與 K-2 shadow 共用匯出（`ibridge_exporter`） | **未決** |
 | **哪一版才考慮 L1 shadow** | **未排期**；預設 v0.2 LangGraph 仍 **L0**；L1 最早在 M-GOV-L1 票 + §6.8.4 門檻滿足後 |

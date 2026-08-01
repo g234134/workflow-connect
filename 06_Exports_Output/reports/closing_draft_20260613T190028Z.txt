@@ -1,0 +1,33 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-13T19:00:28+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 6 條
+二、雜訊過濾率（示意）：94.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_attributes.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_attributes.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508__split.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__split.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_asyn.py | score=8.05 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_asyn.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_rootoftools.py | score=7.83 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_rootoftools.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_gettext.py | score=7.75 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_gettext.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_starlite.py | score=7.7 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_starlite.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）
+  · Run_ID=5389815ca2c64585847f21243ae79336
+  · 精煉波次過程中，共掃描100個樣本，平均值為4.454
+
+六、使用建議：
+  · 根據match_report數據，建議優化coverage_pct以提高精煉效率
+  · elite_assets_matched數量為6，建議進一步分析以優化資產配置
+  · noise_filter_rate_pct_hint為94.0，建議調整noise filter參數以提高精煉準確度
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個大規模的數據清算任務，目的是優化資產配置和提高精煉效率。根據match_report數據，共掃描100個樣本，平均值為4.454，elite_assets_matched數量為6。noise_filter_rate_pct_hint為94.0，表明noise filter參數需要調整以提高精煉準確度。建議優化coverage_pct、調整noise filter參數和進一步分析elite_assets_matched數據，以提高精煉效率和優化資產配置。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

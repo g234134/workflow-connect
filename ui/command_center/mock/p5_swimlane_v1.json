@@ -1,0 +1,205 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_b_p5_swimlane_v1",
+  "demo": true,
+  "read_only": true,
+  "host": "ui/command_center",
+  "visual_ssot": "docs/ui-templates/unified_P5.png",
+  "generated_at": "2026-07-27T23:58:00+08:00",
+  "message": "W4-UI-B P5 swimlane workbench mock (demo · read_only · ≠ live API)",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "多任務 Agent 協作作業台",
+    "subtitle": "泳道 · 交接 · 審核 · 交付（mock）",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "2026-07-27 23:58:00 UTC+8",
+    "operator": "指揮官 · 系統管理員"
+  },
+  "nav": [
+    {"id": "p1", "label": "總覽", "href": "p1.html", "active": false},
+    {"id": "p5", "label": "協作作業台", "href": "p5.html", "active": true},
+    {"id": "p4", "label": "三省六部", "href": "p4.html", "active": false},
+    {"id": "p3", "label": "暗部執行", "href": "p3.html", "active": false},
+    {"id": "p2", "label": "技能與資源", "href": "p2.html", "active": false},
+    {"id": "settings", "label": "設定", "href": "settings.html", "active": false}
+  ],
+  "kpis": [
+    {"id": "running", "label": "執行中任務", "value": "12", "delta": "↑ 20% 較昨日", "tone": "up", "icon": "pulse"},
+    {"id": "handoff", "label": "等待中交接", "value": "8", "delta": "↑ 14% 較昨日", "tone": "up", "icon": "clock"},
+    {"id": "review", "label": "審核中節點", "value": "15", "delta": "↓ 6% 較昨日", "tone": "down", "icon": "user"},
+    {"id": "done", "label": "已完成任務", "value": "128", "delta": "↑ 18% 較昨日", "tone": "up", "icon": "check"},
+    {"id": "avg_time", "label": "平均處理時間", "value": "24.6 分", "delta": "↓ 8% 較昨日", "tone": "up", "icon": "timer"},
+    {"id": "alerts", "label": "告警數量", "value": "7", "delta": "↑ 12% 較昨日", "tone": "down", "icon": "alert"},
+    {"id": "paid", "label": "已收款", "value": "5", "delta": "↑ 25% 較昨日", "tone": "up", "icon": "coin"}
+  ],
+  "swimlane": {
+    "stages": [
+      {"id": "coord", "label": "主控協調", "sub": "接單與分流"},
+      {"id": "plan", "label": "任務規劃", "sub": "拆解與排序"},
+      {"id": "data", "label": "資料處理", "sub": "清洗與整理"},
+      {"id": "tool", "label": "工具執行", "sub": "模型與工具調用"},
+      {"id": "review", "label": "審核驗證", "sub": "品質與風險檢查"},
+      {"id": "deliver", "label": "交付回寫", "sub": "輸出與狀態沉澱"},
+      {"id": "accept", "label": "驗收請款", "sub": "終點"}
+    ],
+    "legend": [
+      {"id": "idle", "label": "未開始", "color": "gray"},
+      {"id": "running", "label": "進行中", "color": "blue"},
+      {"id": "waiting", "label": "等待", "color": "yellow"},
+      {"id": "done", "label": "完成", "color": "green"},
+      {"id": "error", "label": "異常", "color": "red"}
+    ],
+    "tasks": [
+      {
+        "id": "A20250526001",
+        "name": "任務 A",
+        "status_label": "執行中",
+        "priority": "高",
+        "priority_tone": "high",
+        "cells": [
+          {"stage": "coord", "state": "done"},
+          {"stage": "plan", "state": "done"},
+          {"stage": "data", "state": "done"},
+          {"stage": "tool", "state": "done"},
+          {"stage": "review", "state": "waiting", "label": "等待審核"},
+          {"stage": "deliver", "state": "idle"},
+          {"stage": "accept", "state": "idle"}
+        ],
+        "terminal": {"label": "待驗收", "count": 2, "tone": "yellow"}
+      },
+      {
+        "id": "B20250526002",
+        "name": "任務 B",
+        "status_label": "執行中",
+        "priority": "中",
+        "priority_tone": "mid",
+        "cells": [
+          {"stage": "coord", "state": "done"},
+          {"stage": "plan", "state": "done"},
+          {"stage": "data", "state": "done"},
+          {"stage": "tool", "state": "running", "label": "42%", "progress": 42},
+          {"stage": "review", "state": "idle"},
+          {"stage": "deliver", "state": "idle"},
+          {"stage": "accept", "state": "idle"}
+        ],
+        "terminal": {"label": "待請款", "count": 3, "tone": "blue"}
+      },
+      {
+        "id": "C20250526003",
+        "name": "任務 C",
+        "status_label": "異常",
+        "priority": "高",
+        "priority_tone": "high",
+        "cells": [
+          {"stage": "coord", "state": "done"},
+          {"stage": "plan", "state": "done"},
+          {"stage": "data", "state": "error", "label": "失敗"},
+          {"stage": "tool", "state": "waiting", "label": "重試中 (2/3)"},
+          {"stage": "review", "state": "idle"},
+          {"stage": "deliver", "state": "idle"},
+          {"stage": "accept", "state": "idle"}
+        ],
+        "terminal": {"label": "收款中", "count": 2, "tone": "gold"}
+      },
+      {
+        "id": "D20250526004",
+        "name": "任務 D",
+        "status_label": "已完成",
+        "priority": "低",
+        "priority_tone": "low",
+        "cells": [
+          {"stage": "coord", "state": "done"},
+          {"stage": "plan", "state": "done"},
+          {"stage": "data", "state": "done"},
+          {"stage": "tool", "state": "done"},
+          {"stage": "review", "state": "done"},
+          {"stage": "deliver", "state": "done"},
+          {"stage": "accept", "state": "done"}
+        ],
+        "terminal": {"label": "已結案", "count": 12, "tone": "green"}
+      }
+    ]
+  },
+  "business_summary": [
+    {"label": "待請款", "value": 9, "delta": "↑ 2", "tone": "up"},
+    {"label": "收款中", "value": 5, "delta": "↑ 1", "tone": "up"},
+    {"label": "已結案", "value": 34, "delta": "↑ 4", "tone": "up"},
+    {"label": "人工介入", "value": 2, "delta": "↓ 1", "tone": "down"}
+  ],
+  "ops_monitor": [
+    {"label": "卡住任務", "value": 3, "link": "查看詳情 ›"},
+    {"label": "等待回覆", "value": 5, "link": "查看詳情 ›"},
+    {"label": "重試中", "value": 4, "link": "查看詳情 ›"},
+    {"label": "異常技能", "value": 3, "link": "查看詳情 ›"}
+  ],
+  "skills_top": [
+    {"name": "資料清洗", "count": 86},
+    {"name": "資訊擷取", "count": 72},
+    {"name": "摘要生成", "count": 61},
+    {"name": "風險檢查", "count": 48},
+    {"name": "格式轉換", "count": 35}
+  ],
+  "tools": [
+    {"name": "資料庫查詢", "status": "green", "label": "正常"},
+    {"name": "檔案處理", "status": "green", "label": "正常"},
+    {"name": "網頁擷取", "status": "yellow", "label": "延遲"},
+    {"name": "流程引擎", "status": "green", "label": "正常"},
+    {"name": "通知推送", "status": "green", "label": "正常"}
+  ],
+  "models": [
+    {"name": "GPT-4o", "status": "green", "latency": "0.7s"},
+    {"name": "Claude 3.5 Sonnet", "status": "green", "latency": "1.1s"},
+    {"name": "Gemini 1.5 Pro", "status": "green", "latency": "1.6s"}
+  ],
+  "apis": [
+    {"name": "內部 API · gate", "status": "green", "success_rate": "99.9%"},
+    {"name": "內部 API · notify", "status": "green", "success_rate": "99.2%"},
+    {"name": "第三方 API · A", "status": "yellow", "success_rate": "96.1%"},
+    {"name": "第三方 API · B", "status": "green", "success_rate": "98.4%"}
+  ],
+  "operator_fields": {
+    "ok": true,
+    "schema_version": "p89_operator_fields_v1",
+    "read_only": true,
+    "demo": true,
+    "case_ref": "demo_phase",
+    "message": "P8.9 five-key subset sidecar on P5 (mock · ≠ live)",
+    "count": 2,
+    "fields": [
+      "event_id",
+      "ack_status",
+      "handler_id",
+      "dispatch_registry_hit",
+      "dlq_flag"
+    ],
+    "rows": [
+      {
+        "event_id": "evt-p5-001",
+        "ack_status": "acked",
+        "handler_id": "webhook_dispatch_v1",
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      },
+      {
+        "event_id": "evt-p5-002",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      }
+    ]
+  },
+  "non_claims": [
+    "≠ live API／prod／live SLO",
+    "≠ 金鑰原文",
+    "≠ DarkOps／暗部 core 改寫",
+    "≠ Grafana",
+    "≠ Dashboard Phase% authorize",
+    "≠ Operator UI 全量交付"
+  ]
+}

@@ -66,6 +66,8 @@ API handler 內以 `IntakeGateRequest.model_validate` 驗證 `intake`（回 **42
 
 ## 5. 驗收
 
+> **Smoke runbook（複製即用）**：`docs/phase8_5-bridge-smoke-runbook-v1.md` — 暗部 cwd、unittest、可選 live curl。
+
 ```text
 cd <gov_core_system 根>
 python -m unittest tests.test_app_api_orchestration_bridge -v

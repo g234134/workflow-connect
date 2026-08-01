@@ -1,6 +1,6 @@
 {
   "schema_version": "gov-cases-index-v0.1",
-  "updated_at": "2026-06-14T01:35:29Z",
+  "updated_at": "2026-07-28T11:42:52Z",
   "disclaimer": "Stub registry for Wave 2 MVP; not a production job queue.",
   "naming": {
     "client_ref": "lowercase [a-z0-9-]; customer or project slug",
@@ -27,6 +27,7 @@
         "之前",
         "現在（建議）"
       ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
       "schema_notes": [
         "phase_like",
         "phase_demo"
@@ -68,13 +69,14 @@
         "之前",
         "現在（建議）"
       ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
       "schema_notes": [
         "phase_like",
         "multi_row_export",
         "schema_ambiguous"
       ],
       "gate_status": "accepted",
-      "cleaning_profile": "clean_basic_demo",
+      "cleaning_profile": "sampleco_order_profile",
       "cleaning_rules_applied": [
         "normalize_phase_name",
         "dedup_by_phase",
@@ -97,6 +99,242 @@
       "intake_path": "cases/sampleco/2026-0001/intake.json",
       "notes": "First real-sample experiment; gate accepted but cleaning quality marginal (115 intake → 8 accepted; pass_with_warnings)",
       "source_file": "raw/sampleco_milestone_export.csv"
+    },
+    {
+      "case_dir": "cases/internal-approved/2026-0001",
+      "client_ref": "internal-approved",
+      "case_id": "2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
+      "schema_notes": [
+        "phase_like"
+      ],
+      "gate_status": "review_needed",
+      "cleaning_profile": "generic_low_risk_profile",
+      "cleaning_rules_applied": [
+        "trim_text_fields",
+        "dedup_by_primary_key",
+        "drop_missing_primary_key",
+        "parse_numeric",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.8571,
+      "known_limits": [
+        "internal_use_only",
+        "source_derived_from_demo_phase",
+        "rows<100",
+        "manual_payment_and_external_delivery_required",
+        "size<1024",
+        "pass_with_warnings"
+      ],
+      "intake_path": "cases/internal-approved/2026-0001/intake.json",
+      "source_file": "raw/Phase.csv"
+    },
+    {
+      "case_dir": "cases/acme/2026-0001",
+      "client_ref": "acme",
+      "case_id": "2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
+      "schema_notes": [
+        "phase_like"
+      ],
+      "gate_status": "not_run",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": null,
+      "accepted_ratio": null,
+      "known_limits": [],
+      "intake_path": "cases/acme/2026-0001/intake.json",
+      "source_file": "raw/Phase.csv"
+    },
+    {
+      "case_dir": "cases/additional_demo",
+      "client_ref": "additional-demo",
+      "case_id": "additional_demo",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
+      "schema_notes": [
+        "phase_like"
+      ],
+      "gate_status": "review_needed",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [
+        "normalize_phase_name",
+        "dedup_by_phase",
+        "drop_missing_phase",
+        "parse_percent",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.9167,
+      "known_limits": [
+        "rows<100",
+        "size<1024",
+        "pass_with_warnings"
+      ],
+      "intake_path": "cases/additional_demo/intake.json",
+      "source_file": "raw/Phase_extended.csv"
+    },
+    {
+      "case_dir": "cases/docu-corp/2026-0001",
+      "client_ref": "docu-corp",
+      "case_id": "docu-2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [],
+      "schema_fingerprint": null,
+      "schema_notes": [],
+      "gate_status": "not_run",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": null,
+      "accepted_ratio": null,
+      "known_limits": [],
+      "intake_path": "cases/docu-corp/2026-0001/intake.json"
+    },
+    {
+      "case_dir": "cases/internal/generic-low-risk",
+      "client_ref": "internal",
+      "case_id": "generic-low-risk",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "order_id",
+        "product",
+        "amount",
+        "notes"
+      ],
+      "schema_fingerprint": "34465616d52df2d4",
+      "schema_notes": [
+        "schema_mismatch",
+        "missing_required_columns"
+      ],
+      "gate_status": "review_needed",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [
+        "trim_text_fields",
+        "dedup_by_primary_key",
+        "drop_missing_primary_key",
+        "parse_numeric",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.7143,
+      "known_limits": [
+        "rows<100",
+        "size<1024",
+        "schema_header_mismatch",
+        "schema_mismatch",
+        "pass_with_warnings"
+      ],
+      "intake_path": "cases/internal/generic-low-risk/intake.json",
+      "source_file": "raw/simple_orders.csv"
+    },
+    {
+      "case_dir": "cases/log-analytics-co/2026-0001",
+      "client_ref": "log-analytics-co",
+      "case_id": "logs-2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [],
+      "schema_fingerprint": null,
+      "schema_notes": [],
+      "gate_status": "not_run",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": null,
+      "accepted_ratio": null,
+      "known_limits": [],
+      "intake_path": "cases/log-analytics-co/2026-0001/intake.json"
+    },
+    {
+      "case_dir": "cases/reviewer-test/2026-0001",
+      "client_ref": "reviewer-test",
+      "case_id": "2026-0001",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "﻿Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_fingerprint": "ab75b2b3a22359b8",
+      "schema_notes": [
+        "schema_mismatch",
+        "missing_required_columns"
+      ],
+      "gate_status": "not_run",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": null,
+      "accepted_ratio": null,
+      "known_limits": [
+        "schema_mismatch"
+      ],
+      "intake_path": "cases/reviewer-test/2026-0001/intake.json",
+      "source_file": "raw/sampleco_milestone_export.csv"
+    },
+    {
+      "case_dir": "cases/sandbox_client",
+      "client_ref": "sandbox-client",
+      "case_id": "sandbox_client",
+      "product_sku": "CLEAN-BASIC",
+      "schema_headers": [
+        "Phase",
+        "名稱",
+        "之前",
+        "現在（建議）"
+      ],
+      "schema_fingerprint": "7ab2b3063f5f3eba",
+      "schema_notes": [
+        "phase_like",
+        "multi_row_export",
+        "schema_ambiguous"
+      ],
+      "gate_status": "not_run",
+      "cleaning_profile": "unknown",
+      "cleaning_rules_applied": [
+        "normalize_phase_name",
+        "dedup_by_phase",
+        "drop_missing_phase",
+        "parse_percent",
+        "flag_out_of_range"
+      ],
+      "delivery_template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+      "qa_status": "pass_with_warnings",
+      "accepted_ratio": 0.1455,
+      "known_limits": [
+        "multi_row_export",
+        "schema_ambiguous",
+        "pass_with_warnings",
+        "low_accepted_ratio"
+      ],
+      "intake_path": "cases/sandbox_client/intake.json",
+      "source_file": "raw/sandbox_milestone_export.csv"
     }
   ]
 }

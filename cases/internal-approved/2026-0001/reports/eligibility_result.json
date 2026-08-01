@@ -1,0 +1,22 @@
+{
+  "schema_version": "case-eligibility-result-v0.1",
+  "status": "review_needed",
+  "checked_at": "2026-07-22T13:08:00.130407+00:00",
+  "case_id": "2026-0001",
+  "client_ref": "internal-approved",
+  "dimensions_summary": {
+    "provenance": "accepted",
+    "sensitivity": "accepted",
+    "structure": "accepted",
+    "scale": "review_needed",
+    "schema": "accepted",
+    "encoding": "accepted"
+  },
+  "reasons": [
+    "rows<100",
+    "size<1024"
+  ],
+  "human_readable": "Case needs manual review before cleaning",
+  "reason_code": "rows<100",
+  "source": "p2_case_eligibility"
+}

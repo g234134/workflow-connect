@@ -65,9 +65,34 @@
           "type": "integer",
           "minimum": 1,
           "description": "1-based line in exporter input JSONL (ibridge/intermediate), not eval export output line. Optional traceability only; not used by gate/CI. Smoke fixture (artifacts/eval/smoke_eval_results.jsonl): points to tests/fixtures/eval/ibridge_records.jsonl; manually corrected in fixtures; smoke_ibridge_records row order may differ."
+        },
+        "kb_index_status": {
+          "type": "string",
+          "enum": ["ready", "stale", "missing"],
+          "description": "Optional Wave B P3 trace sidecar mirror on source_ref."
         }
       },
       "additionalProperties": false
+    },
+    "trace_metadata_sidecar": {
+      "type": "object",
+      "properties": {
+        "kb_index_status": {
+          "type": "string",
+          "enum": ["ready", "stale", "missing"]
+        }
+      },
+      "additionalProperties": false,
+      "description": "Optional Wave B P3 observability mirror; does not write gov-trace-v2 JSONL."
+    },
+    "kb_index_status": {
+      "type": ["string", "null"],
+      "enum": ["ready", "stale", "missing", null],
+      "description": "Optional Wave B P3 observability sidecar; present only when GOV_EVAL_EXPORT_KB_INDEX_STATUS=1."
+    },
+    "kb_index_job_id": {
+      "type": "string",
+      "description": "Optional repo index job id aligned with case index_status (Wave B P3)."
     }
   },
   "additionalProperties": false

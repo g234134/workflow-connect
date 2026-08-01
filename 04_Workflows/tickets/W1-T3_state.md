@@ -57,13 +57,13 @@
 
 - overall_status: done
 - implementation_status: landed_ci_green
-- current_owner: reviewer（可選簽 C_REPORT）
-- next_action: 可選 Reviewer 簽 C_REPORT；**P6 DAY3／Round-2 仍 defer／等時間**（非本票）
-- last_updated: 2026-07-12 · implementer（尚書省授權 W1-T3-CI-LAND）
+- current_owner: none
+- next_action: 無（C_REPORT 已簽）；**P6 DAY3／Round-2 仍 defer／等時間**（非本票）
+- last_updated: 2026-07-13 · reviewer（C_REPORT）
 - status_by_role:
   - orchestrator: done
   - implementer: done — land + CI green
-  - reviewer: pending（可選）
+  - reviewer: done — C_REPORT accepted
   - scribe: done — Progress／QUEUE 本輪回填
 - land_evidence:
   - auth: 尚書省明示同意 W1-T3-CI-LAND 入庫（2026-07-12）
@@ -127,11 +127,15 @@
 
 ## C_REPORT
 
-- conclusion: <!-- Reviewer 填：accepted | accepted_with_gaps | needs_changes | rejected -->
-- blocking_issues: <!-- Reviewer 填；無則「無」 -->
-- checks_summary: <!-- Reviewer 填：對照 FRAME 邊界與 AcceptanceCriteria -->
-- risk_level: <!-- Reviewer 填：low | medium | high -->
-- suggestions: <!-- Reviewer 填；無則「無」 -->
+- conclusion: accepted
+- blocking_issues: 無
+- checks_summary: |
+    對照 FRAME AC：本機 unittest 25 OK（land 證據）· 遠端 eval-gate push `29195842807` success · dispatch `29195843133` success（含 W1-T3 artifact 步驟）。
+    Scope 邊界：僅 eval-gate CI artifact + observability §9 + 觀測模組／fixtures；未改 eval gate 閾值、selector、routing_policy。
+    NonScope 維持：Grafana／Slack／Langfuse 統一 API／prod selector 未碰。
+    Rule-11：遠端 CI 綠 + land commits `d6a9c373c`／`bde9a8ea4` 可重跑驗證；≠ Phase% uplift。
+- risk_level: low
+- suggestions: 無必須 follow-up；P6 DAY3／Round-2 仍屬他票 defer，勿併入本票。
 
 ---
 
@@ -173,3 +177,4 @@
 | 2026-07-12 | implementer | 續作盤點：本機 25 OK；3 檔未追蹤；遠端回綠無 W1-T3；STATE→blocked_remote_land | Progress 末尾 · QUEUE note |
 | 2026-07-12 | 尚書省 | 授權 W1-T3-CI-LAND 入庫（僅本票；P6/Round-2 仍等） | 本輪指令 |
 | 2026-07-12 | implementer | land `d6a9c373c`+`bde9a8ea4` · CI green `29195842807`/`29195843133` · STATE→done | 本檔 · Progress |
+| 2026-07-13 | reviewer | C_REPORT **accepted** · 對照 CI `29195842807`/`29195843133` · ≠ Phase% | 本檔 C_REPORT |

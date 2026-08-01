@@ -1,0 +1,35 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-26T19:01:30+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 8 條
+二、雜訊過濾率（示意）：92.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508__agent_engines_utils.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__agent_engines_utils.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_six.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_six.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_modular_pp_lcnet.py | score=8.75 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modular_pp_lcnet.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_test_direct.py | score=8.53 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_direct.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_fsdp_utils.py | score=8.1 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_fsdp_utils.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_gen_executorch.py | score=8.0 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_gen_executorch.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_varStore.py | score=7.87 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_varStore.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_message_pump.py | score=7.7 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_message_pump.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）使用內部波次平台進行數據清算
+  · 共掃描100筆數據，平均值為5.042，分級分布為B：56，C：5，D：31，A：8
+  · 精英資產匹配數為8，掃描率為0.0%，高產出率為true
+
+六、使用建議：
+  · 根據數據清算結果，建議優化資產分級和匹配算法以提高精英資產匹配率
+  · 考慮增加掃描率和數據樣本量以提高數據清算的準確性
+  · 使用內部波次平台進行數據清算可以提高效率和降低成本
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）使用內部波次平台進行數據清算，共掃描100筆數據，平均值為5.042，分級分布為B：56，C：5，D：31，A：8。精英資產匹配數為8，掃描率為0.0%，高產出率為true。根據數據清算結果，建議優化資產分級和匹配算法以提高精英資產匹配率，考慮增加掃描率和數據樣本量以提高數據清算的準確性。使用內部波次平台進行數據清算可以提高效率和降低成本。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

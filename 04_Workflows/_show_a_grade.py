@@ -1,3 +1,5 @@
+# _show_a_grade.py — Ad-hoc A-grade 報表腳本（可手動刪除）
+# 非 pipeline 模組，不自動載入。若不再使用可安全刪除。
 import json
 import os
 import sys

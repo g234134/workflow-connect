@@ -1,0 +1,90 @@
+{
+  "schema_version": "wc_pre_07_approval_workflow_policy_v1",
+  "policy_revision": "2026-06-26",
+  "status": "design_only",
+  "ticket_id": "WC-PRE-07",
+  "wave5_ticket_id": "W5-WC-PRE-07-approval-workflow-v1",
+  "approval_status": {
+    "proposal_review": "pending",
+    "L1_optional_ci_advisory": "pending",
+    "L2_mandatory_whitelist": "pending",
+    "note": "No human approval granted. Does NOT enable PR required checks."
+  },
+  "approvers": {
+    "L1": {
+      "roles": [
+        "尚書省"
+      ],
+      "minimum_evidence": [
+        "WC-IMPL-SMOKE-CI-L1 frame frozen",
+        "optional_ci local dry-run green",
+        "wc_pre_approval_id in Progress append"
+      ]
+    },
+    "L2": {
+      "roles": [
+        "尚書省",
+        "治理委員会"
+      ],
+      "minimum_evidence": [
+        "21d L1 observation",
+        "flake_rate_pct < 5",
+        "rollback drill logged",
+        "wc_pre_approval_id in Progress append"
+      ]
+    }
+  },
+  "approval_artifacts": {
+    "primary_template": "docs/governance/WC_PRE_07_approval_template.md",
+    "design_spec": "docs/toolchain-smoke-mandatory-ci-runner-v1.md",
+    "progress_append_required": true,
+    "email_or_meeting_ref_optional": true,
+    "run_url_not_valid_approval_evidence": true
+  },
+  "trace_fields": {
+    "wc_pre_approval_id": "WC-PRE-07-APPROVAL-YYYYMMDD-NNN",
+    "approval_status.L1": "pending | approved | rolled_back",
+    "approval_status.L2": "pending | approved | rolled_back",
+    "mandatory_ci_scope": "comma-separated smoke_id whitelist at L2",
+    "implementation_tickets": {
+      "L1": "WC-IMPL-SMOKE-CI-L1",
+      "L2": "WC-IMPL-SMOKE-CI-L2"
+    }
+  },
+  "workflow_mount_design": {
+    "file": ".github/workflows/eval-gate-ci.yml",
+    "job": "eval-gate",
+    "implementation_status": "not_applied",
+    "L1_command": "python scripts/run_toolchain_smoke_matrix.py --tier optional_ci --format json",
+    "L2_smoke_ids": [
+      "TS-TOOLCHAIN-DASHBOARD-UNIT",
+      "TS-W3TL-UNIT"
+    ],
+    "L2_excluded_smoke_ids": [
+      "TS-ROUTING-EVAL-UNIT",
+      "TS-ROUTING-EVAL-DRYRUN",
+      "TS-MVP-MAINLINE",
+      "TS-AGENT-LINES-CI"
+    ]
+  },
+  "non_claims": [
+    "Mandatory smoke CI is NOT live on PR path.",
+    "Does NOT enable prod selector or P10 runtime closure.",
+    "Does NOT approve WC-PRE-06 L2 health gate.",
+    "Does NOT replace eval-gate mandatory trio.",
+    "INT Tier-A is out of scope (CH-50)."
+  ],
+  "future_observability": {
+    "dashboard_section": "WAVE_PROGRESS_DASHBOARD.md Lane B WC-PRE-07 row",
+    "state_fields": [
+      "approval_status.L1",
+      "approval_status.L2",
+      "wc_pre_approval_id",
+      "mandatory_ci_scope"
+    ],
+    "ci_signals": [
+      "smoke_ci_summary.json artifact",
+      "governance_advisory.log MS-OPTIONAL-CI-GAP"
+    ]
+  }
+}

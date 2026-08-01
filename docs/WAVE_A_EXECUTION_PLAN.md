@@ -2,23 +2,26 @@
 
 > **角色**：總調度 Architect + PM + Repo Orchestrator  
 > **掃描日**：2026-06-05  
-> **最後更新**：2026-06-05（Wave A 小結 · P3 Done · P5 ≥85% 收口寫回）  
+> **最後更新**：2026-06-10（WA-T6 · P6 ~84% · WA-T3 · P3.5 ~83%）  
 > **狀態依據**：`04_Workflows/00_Agent_Work_Progress.md`、`04_Workflows/project_status/master_status.md`、`workflow_v2/99_latest_status.md`、`00_master_plan.md`、`docs/observability.md`  
 > **原則**：小步提交、每步可獨立驗證；不宣稱 production-ready 除非有 runner／命令證據。
 
 ---
 
-## 0. 波段 A 狀態快照（2026-06-05 更新）
+## 0. 波段 A 狀態快照（2026-06-10 更新）
 
 | Phase | 目標 | **當前狀態** | 證據摘要 |
 |-------|------|--------------|----------|
 | **P3 Trace** | 完成 | **Done** | `gov-trace-v2`：`observability/trace_schema.py` + `trace_schema_v2.json`；`logging_adapter`／`trace_middleware`；`docs/observability.md`；`python -m unittest tests.test_trace_schema tests.test_logging_adapter tests.test_trace_middleware` → **13/13 OK** |
+| **P3.5 Cost/Model/Risk Gov** | ~83% | **~83%** | WA-T3：`docs/phase3-5-cost-model-governance-contract-v1.md`（gate SSOT）；`tests/test_phase3_5_governance_contract_v1.py`；**不含** prod canary 授权 |
 | **P5 Dashboard/Alert** | ≥85% | **≥85%** | `observability/dashboard/dashboard_metrics_v1.json`；`alert_rules_phase3_phase5.yaml`；暗部 `monitoring_alerts.py` 三規則 + `config/alert_rules.example.yaml`；`run_alert_evaluation.py --notifier console` |
 | P1 治理 | 完成 | ~92% | 待 README／WORKFLOW_INDEX |
-| P2 知識/Index | ≥85% | ~72% | 待真實 index job |
-| P6 測試/CI | ≥85% | ~76% | 待 wave-a-smoke CI |
+| P2 知識/Index | ≥85% | **~82%** | `docs/phase2-knowledge-indexing-contract-v1.md` · `python -m unittest tests.test_phase2_knowledge_indexing_contract_v1 -v` |
+| P6 測試/CI | ≥85% | **~84%** | INT gate contract SSOT + unittest；PR smoke/eval 已绿 ≠ INT Tier-A |
 
-**P3 延伸（非阻塞波段 A）**：Phase 3.5 — Langfuse 欄位對齊；Prometheus exporter；Grafana JSON；**PG live soak**（亦列 P5 placeholder）。
+> **命名空間**：**P3** = Trace 契約 Done；**P3.5** = 成本／模型／风险 **gate 分类**（本表）；**P5** = Dashboard／Alert ≥85%。三者不互相替代。
+
+**P3.5 殘留（→ 未來小票，非 WA-T3）**：Langfuse 欄位對齊；Prometheus exporter；Grafana JSON；**PG live soak**（亦列 P5 placeholder）；`daily_cost_summary` vs `task_runs` 统一。
 
 **P5 placeholder（下一階段小票）**：Prometheus 實 exporter · Grafana 匯入 · PG live soak（n≥100）。
 
@@ -54,10 +57,10 @@
 | Phase（波段 A 口徑） | 你給的基線 | 倉庫裁決 | 主要證據 |
 |---------------------|------------|----------|----------|
 | **P1 治理層** | 90% → 100% | **~92%** — 定稿令已發，運營閉環未收口 | `HQ_PHASE1_FINALIZATION_ORDER.md`（2026-05-19 Done）；`WORKFLOW_INDEX` 仍標 runbook TODO（實檔已在 `runbooks/`） |
-| **P2 知識層與 Indexing** | 70% → ≥85% | **~72%** — ingest/RAG smoke 強；repo index 弱 | Progress R1/R2/D3 Done；`W3-B_kb_contract.md`；`index_status_W2-1.json` 樣本化 |
+| **P2 知識層與 Indexing** | 70% → ≥85% | **~82%** — contract SSOT + unittest；ingest/RAG smoke 強；全 repo index 仍弱 | `docs/phase2-knowledge-indexing-contract-v1.md`；`tests/test_phase2_knowledge_indexing_contract_v1.py`；Progress R1/R2/D3 Done；W3-B pilot catalogued |
 | **P3 可觀測性與 Trace** | 85% → 100% | **Done** | `docs/observability.md`；gov-trace-v2；單測 13/13（2026-06-05 複驗） |
 | **P5 儀表板與告警** | 72% → ≥85% | **≥85%** | `dashboard_metrics_v1.json` + `alert_rules_phase3_phase5.yaml` + evaluator 接線 |
-| **P6 自動化測試與驗證** | 74% → ≥85% | **~76%** — 測試多、CI 窄 | 兩條 GH workflow；暗部 107+ 測試曾全綠，**未**納入 PR 門禁矩陣 |
+| **P6 自動化測試與驗證** | 72% → ≥85% | **~84%** | `docs/phase6-int-regression-gate-contract-v1.md`；`tests/test_phase6_int_regression_gate_contract_v1.py`；PR CI 窄（smoke + eval）；INT Tier-A local mandatory |
 
 > **命名提醒**：暗部 `output/phase5-8_roadmap.md` 的 **Phase 6 = 成本硬化（已 ACCEPT）**，與本計畫 **「P6 自動化測試」** 不同軸，下文 P6 均指測試／CI。
 
@@ -238,6 +241,15 @@ gantt
 
 - **治理收口線**：戰車根 `README.md` 入口頁（A-P0-3）、`WORKFLOW_INDEX` ↔ runbooks 對齊（A-P0-1）、`.github/workflows/wave-a-smoke.yml` 波段 A CI 最小矩陣（A-P0-4）；收口後新 session 可僅讀 README + AGENTS + runbook 開工。
 - **能力擴張線**：Phase 4 多 agent 協作（Cursor subagents 編排深化），或 K-2 接單／canary 前置能力（`K2-phase1-remote-rollout` 施工、`K2-rollout-governance` 7 日觀測达标后 Phase 2 canary 草案送审）。
+
+### Phase 4 — Multi-Agent Collaboration Contract（WA-T4）
+
+| 项 | 完成度 | 说明 |
+|----|--------|------|
+| **Phase 4 Multi-Chat contract** | **75% → 85%** | **WA-T4 done**（implementer）：`docs/phase4-multi-agent-collaboration-contract-v1.md` + `tests/test_phase4_multi_agent_contract_v1.py`；W5-T0 三 docs §0 指针；`tickets/README.md` contract 对齐；WORKFLOW_INDEX 层级（contract > spec > runbook） |
+| 剩余 15% | — | Reviewer 验收 WA-T4；可选 Scribe Progress append；runtime Multi-Chat 合并派工 **out of scope** |
+
+验证：`python -m unittest tests.test_phase4_multi_agent_contract_v1 -v`
 
 ---
 

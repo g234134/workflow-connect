@@ -1,0 +1,98 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Local MVP UI" [level=1] [ref=e3]
+    - paragraph [ref=e4]: MVP case workbench — CLI wrapper only
+    - alert [ref=e5]:
+      - strong [ref=e6]: NOT PRODUCTION
+      - text: · Single-user · Local only · No auth · No SLA
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "A. Lookup" [level=2] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - text: client_ref
+          - textbox "client_ref" [ref=e12]:
+            - /placeholder: sampleco
+            - text: sampleco
+        - generic [ref=e13]:
+          - text: product_sku
+          - textbox "product_sku" [ref=e14]:
+            - /placeholder: optional
+        - generic [ref=e15]:
+          - text: schema_headers
+          - textbox "schema_headers" [ref=e16]:
+            - /placeholder: Phase,名稱 (comma-separated)
+        - generic [ref=e17]:
+          - checkbox "List all cases" [ref=e18]
+          - text: List all cases
+        - generic [ref=e19]:
+          - button "Run Lookup" [active] [ref=e20] [cursor=pointer]
+          - button "Refresh Index" [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - heading "B. New Case + Gate" [level=2] [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - text: source file path
+          - textbox "source file path" [ref=e26]:
+            - /placeholder: cases/_experiment_samples/sampleco_milestone_export.csv
+        - generic [ref=e27]:
+          - text: client_ref
+          - textbox "client_ref" [ref=e28]:
+            - /placeholder: acme
+        - generic [ref=e29]:
+          - text: product_sku
+          - textbox "product_sku" [ref=e30]: CLEAN-BASIC
+        - generic [ref=e31]:
+          - text: encoding
+          - textbox "encoding" [ref=e32]: utf-8
+        - generic [ref=e33]:
+          - text: delimiter
+          - textbox "delimiter" [ref=e34]: ","
+        - generic [ref=e35]:
+          - text: file_format
+          - textbox "file_format" [ref=e36]:
+            - /placeholder: "optional: csv, tsv"
+        - generic [ref=e37]:
+          - checkbox "Run gate after create" [checked] [ref=e38]
+          - text: Run gate after create
+        - button "Create Case + Gate" [ref=e40] [cursor=pointer]
+    - generic [ref=e41]:
+      - heading "C. Existing Case E2E" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - text: case_dir
+          - textbox "case_dir" [ref=e45]:
+            - /placeholder: cases/demo_phase
+        - generic [ref=e46]:
+          - button "demo_phase" [ref=e47] [cursor=pointer]
+          - button "sampleco/2026-0001" [ref=e48] [cursor=pointer]
+          - button "Run E2E" [ref=e49] [cursor=pointer]
+    - generic [ref=e50]:
+      - heading "D. Results" [level=2] [ref=e51]
+      - generic [ref=e54]:
+        - generic [ref=e55]: "action: lookup"
+        - generic [ref=e56]: "ok: true"
+      - generic [ref=e57]:
+        - heading "Lookup matches" [level=3] [ref=e58]
+        - table [ref=e60]:
+          - rowgroup [ref=e61]:
+            - row "case_dir client_ref case_id product_sku gate_status known_limits" [ref=e62]:
+              - columnheader "case_dir" [ref=e63]
+              - columnheader "client_ref" [ref=e64]
+              - columnheader "case_id" [ref=e65]
+              - columnheader "product_sku" [ref=e66]
+              - columnheader "gate_status" [ref=e67]
+              - columnheader "known_limits" [ref=e68]
+          - rowgroup [ref=e69]:
+            - row "cases/sampleco/2026-0001 sampleco CLEAN-BASIC accepted" [ref=e70]:
+              - cell "cases/sampleco/2026-0001" [ref=e71]
+              - cell "sampleco" [ref=e72]
+              - cell [ref=e73]
+              - cell "CLEAN-BASIC" [ref=e74]
+              - cell "accepted" [ref=e75]:
+                - generic [ref=e76]: accepted
+              - cell [ref=e77]
+        - paragraph [ref=e78]: "match_count: 1"
+      - group [ref=e79]:
+        - generic "Raw JSON" [ref=e80]
+  - contentinfo [ref=e53]: Wraps scripts/lookup_case_history.py · new_cleaning_case.py · run_case_e2e_validation.py — no core pipeline changes.

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗部執行與交付閉環</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0c12;color:#e2e4ea;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;background:#0d1017;border-right:1px solid #1a1e2a;display:flex;flex-direction:column;flex-shrink:0}
+.sidebar-brand{padding:16px 14px;font-size:13px;font-weight:700;color:#a0d2db;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;gap:8px}
+.brand-icon{font-size:16px}
+.sidebar-nav{flex:1;padding:8px 0;overflow-y:auto}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 14px;color:#8a8fa0;text-decoration:none;font-size:13px;transition:all .15s;border-left:3px solid transparent}
+.nav-item:hover{background:#131620;color:#e2e4ea}
+.nav-item.active{background:#131620;color:#a0d2db;border-left-color:#3b82f6;font-weight:600}
+.nav-icon{width:18px;text-align:center;font-size:13px;flex-shrink:0}
+.sidebar-footer{padding:12px 14px;border-top:1px solid #1a1e2a;font-size:12px;color:#5a5e6e;display:flex;align-items:center;gap:8px}
+.header{height:48px;background:#0d1017;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.header-title{font-size:15px;font-weight:600;color:#a0d2db}
+.header-sub{font-size:11px;color:#5a5e6e}
+.header-right{font-size:11px;color:#5a5e6e;text-align:right}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.content{flex:1;padding:16px 20px;overflow-y:auto}
+.section{background:#0d1017;border:1px solid #1a1e2a;border-radius:8px;padding:16px;margin-bottom:16px}
+.section-title{font-size:13px;font-weight:600;color:#a0d2db;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0}
+.dot-green{background:#22c55e}
+.dot-yellow{background:#eab308}
+.dot-red{background:#ef4444}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:#6a6e7e;padding:6px 8px;border-bottom:1px solid #1a1e2a;font-weight:500}
+td{padding:6px 8px;border-bottom:1px solid #111320;color:#c0c4cc}
+tr:hover td{background:#131620}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.flow-closed{display:flex;align-items:stretch;gap:12px;overflow-x:auto;padding:8px 0}
+.flow-box{background:#131620;border:1px solid #1a1e2a;border-radius:8px;padding:14px;min-width:200px;flex:1}
+.flow-box-title{font-size:12px;font-weight:600;color:#a0d2db;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.flow-box-item{font-size:12px;color:#c0c4cc;padding:3px 0;display:flex;justify-content:space-between}
+.flow-box-item span:last-child{color:#6a6e7e}
+.flow-arrow-h{display:flex;align-items:center;color:#3b82f6;font-size:20px;flex-shrink:0}
+.module-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.module-card{background:#131620;border:1px solid #1a1e2a;border-radius:6px;padding:10px 12px}
+.module-name{font-size:12px;font-weight:600;color:#e2e4ea;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.module-stat{font-size:11px;color:#6a6e7e}
+.monitor-card{background:#131620;border:1px solid #1a1e2a;border-radius:6px;padding:12px;margin-bottom:8px}
+.monitor-label{font-size:11px;color:#6a6e7e}
+.monitor-value{font-size:18px;font-weight:700;color:#e2e4ea}
+.monitor-delta{font-size:11px;margin-top:2px}
+.status-badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:500}
+.badge-green{background:#0a2e1a;color:#22c55e}
+.badge-blue{background:#0a1e3a;color:#3b82f6}
+@media(max-width:1200px){.module-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.sidebar{width:56px}.sidebar-brand span:last-child,.nav-item span:last-child,.sidebar-footer span:last-child{display:none}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-brand"><span class="brand-icon">⚔</span><span>三省六部指揮中心</span></div>
+  <nav class="sidebar-nav">
+    <a href="page01.html" class="nav-item"><span class="nav-icon">🏠</span><span>總覽</span></a>
+    <a href="page04.html" class="nav-item"><span class="nav-icon">🏛</span><span>三省六部</span></a>
+    <a href="page03.html" class="nav-item active"><span class="nav-icon">🛡</span><span>暗部執行</span></a>
+    <a href="page02.html" class="nav-item"><span class="nav-icon">⚡</span><span>技能與資源</span></a>
+    <a href="page01.html" class="nav-item"><span class="nav-icon">⚙</span><span>設定</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="nav-icon">👤</span><span>指揮官 · 系統管理員</span></div>
+</aside>
+<div class="main">
+  <div class="header">
+    <div>
+      <div class="header-title">暗部執行與交付閉環 <span class="status-badge badge-green" style="margin-left:8px">● 系統運行中</span></div>
+      <div class="header-sub">統一指揮·協同作戰·高效治理</div>
+    </div>
+    <div class="header-right">
+      <div>運行時間：32天14小時</div>
+      <div>全域成功率：94.2% · 今日總執行：2,041次</div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- Dark Module Panel -->
+    <div class="section">
+      <div class="section-title">🛡 暗部執行層模組面板</div>
+      <div class="module-grid">
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>流程編排</div><div class="module-stat">健康：良好 · 今日執行：352</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>圖譜推理</div><div class="module-stat">健康：良好 · 今日執行：428</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>結構記憶</div><div class="module-stat">健康：良好 · 今日執行：298</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>語意記憶</div><div class="module-stat">健康：良好 · 今日執行：274</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>追蹤觀測</div><div class="module-stat">健康：良好 · 今日執行：386</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>對外介面</div><div class="module-stat">健康：良好 · 今日狀態：正常</div></div>
+        <div class="module-card"><div class="module-name"><span class="dot dot-green"></span>虛擬環境</div><div class="module-stat">健康：良好 · 今日狀態：就緒</div></div>
+      </div>
+    </div>
+
+    <!-- Closed Loop Flow -->
+    <div class="section">
+      <div class="section-title">🔄 流程閉環視圖</div>
+      <div class="flow-closed">
+        <div class="flow-box">
+          <div class="flow-box-title">📤 六部輸出</div>
+          <div class="flow-box-item"><span>刑部</span><span>352</span></div>
+          <div class="flow-box-item"><span>工部</span><span>428</span></div>
+          <div class="flow-box-item"><span>兵部</span><span>298</span></div>
+          <div class="flow-box-item"><span>禮部</span><span>274</span></div>
+          <div class="flow-box-item"><span>戶部</span><span>303</span></div>
+          <div class="flow-box-item"><span>吏部</span><span>386</span></div>
+          <div class="flow-box-item" style="border-top:1px solid #1a1e2a;margin-top:4px;padding-top:6px;font-weight:600"><span>合計</span><span style="color:#a0d2db">2,041</span></div>
+        </div>
+        <div class="flow-arrow-h">→</div>
+        <div class="flow-box">
+          <div class="flow-box-title">🛡 暗部執行層</div>
+          <div class="flow-box-item"><span>狀態</span><span style="color:#22c55e">● 運行中</span></div>
+          <div class="flow-box-item"><span>今日執行</span><span>2,041</span></div>
+          <div class="flow-box-item"><span>成功率</span><span style="color:#22c55e">94.2%</span></div>
+        </div>
+        <div class="flow-arrow-h">→</div>
+        <div class="flow-box">
+          <div class="flow-box-title">📚 門下經驗</div>
+          <div class="flow-box-item"><span>SOP數</span><span>1,240</span></div>
+          <div class="flow-box-item"><span>案例沉澱數</span><span>8,756</span></div>
+          <div class="flow-box-item"><span>今日新增規則</span><span>37</span></div>
+        </div>
+        <div class="flow-arrow-h">→</div>
+        <div class="flow-box">
+          <div class="flow-box-title">📁 交付層</div>
+          <div class="flow-box-item"><span>待交付</span><span style="color:#eab308">89</span></div>
+          <div class="flow-box-item"><span>驗收中</span><span style="color:#3b82f6">42</span></div>
+          <div class="flow-box-item"><span>已完成</span><span style="color:#22c55e">1,910</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real-time Monitoring -->
+    <div class="grid-2">
+      <div class="section">
+        <div class="section-title">📡 即時監控</div>
+        <div class="grid-2">
+          <div class="monitor-card"><div class="monitor-label">追蹤健康</div><div class="monitor-value" style="color:#22c55e">94.2%</div><div class="monitor-delta" style="color:#22c55e">↑ 5.7% 較昨日</div></div>
+          <div class="monitor-card"><div class="monitor-label">失敗節點</div><div class="monitor-value">7</div><div class="monitor-delta" style="color:#22c55e">↓ 2 較昨日</div></div>
+          <div class="monitor-card"><div class="monitor-label">重試次數</div><div class="monitor-value">124</div><div class="monitor-delta" style="color:#ef4444">↑ 18 較昨日</div></div>
+          <div class="monitor-card"><div class="monitor-label">告警</div><div class="monitor-value" style="color:#eab308">7</div><div class="monitor-delta" style="color:#6a6e7e">高2 中3 低2</div></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">🖥 虛擬環境狀態</div>
+        <div style="display:flex;flex-direction:column;gap:12px;padding:8px 0">
+          <div><div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">狀態</div><div style="font-size:18px;font-weight:700;color:#22c55e">● 就緒</div></div>
+          <div><div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">可用實例</div><div style="font-size:18px;font-weight:700">18 / 20</div></div>
+          <div><div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">資源使用率</div><div style="font-size:18px;font-weight:700">62%</div><div class="progress-bar" style="margin-top:6px"><div class="progress-fill progress-blue" style="width:62%"></div></div></div>
+          <div><div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">資料更新時間</div><div style="font-size:13px;color:#c0c4cc">14:32:18</div></div>
+          <div><div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">資料來源</div><div style="font-size:13px;color:#c0c4cc">暗部執行層監控中心</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

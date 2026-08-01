@@ -1,5 +1,5 @@
 {
-  "version": "2.65",
+  "version": "2.67",
   "title": "Master_Map",
   "description": "六部相對路徑（相對於 tang_gov_root）。tang_gov_root 為空則以本檔所在 04_Workflows 的上一層目錄為根。v2.5 註冊 agency-agents 與 crawl4ai_home；指紋由 Chariot_Registry.db 統管。v2.51 註記雙艙虛擬環境、金鑰輪換、.gitignore。v2.53 一鍵指揮系統 Launch-Warpath 與 Windows 任務排程 Tang_Chariot_Auto_Refine。v2.54 Groq 智慧撥彈（model_registry.yaml + RPM/RPD/TPM 護欄 + 429 自動換模型）。v2.55 刑部生料哨兵 _inbound_watchdog.py（watchdog→指紋 pending）、Status.business_metrics、副艙 beautifulsoup4+playwright。v2.55b 前線偵察兵 _scout_engine.py（Playwright→market_scout JSON、scout_last_pipeline、Telegram Inline）。v2.56 elite_cache.json（_build_elite_index）+ 結案報告器 _report_generator.py（Groq 70b 彈夾、v2.54 費率戰報）+ Telegram scout:confirm 一鍵結案草案；match_against_registry 優先走快取全量比對。v2.57 gov_core_system 統包艙（Departments 01–05）+ docker-compose（Postgres/Qdrant）+ _smoke_test_keys_extended.py（多供應商盲測，不含 Gemini）。v2.58 碼源清洗戰役 v2 正式命名 + jobs/events metadata 層（SQLite SDK pipeline_meta.py，落於 Departments/05_Data_Vault/pipeline_meta/）+ Code_Cleaner_Throttled_Agent 接入 job_run 寫帳本 + 新部門 06_Strategy + Postgres 占位密碼輪替（compose env_file + POSTGRES_PASSWORD 強隨機 32 字元落 .env） + upstream docs 同步器 _download_dept_docs.py + 通用部門引用掃描器 _scan_dept_refs.py。v2.59 封存 wave：Chariot_Registry 全量指紋掃描（20074 targets）+ registry 列數快照；gov_core checkpoint 目錄維運腳本 prune_checkpoints.ps1 與 README 入 runners。",
   "tang_gov_root": "",
@@ -28,6 +28,23 @@
     "hq_mcp": "01_Environments/config/mcp",
     "hq_services": "01_Environments/config/services"
   },
+  "external_satellites": {
+    "hermes": {
+      "root": "D:/Hermes",
+      "domain": "Tools",
+      "role": "Hermes Agent runtime (Nous Research)",
+      "hardcoded_refs": [
+        "04_Workflows/cross_agent_fix_ledger.yaml",
+        "07_Knowledge/commercial/telegram_order_bot.py"
+      ]
+    },
+    "omniroute": {
+      "root": "D:/_infra",
+      "domain": "Tools",
+      "role": "OmniRoute API gateway (port 20128)",
+      "legacy_root": "D:/總大腦加免費token/OmniRoute"
+    }
+  },
   "artifacts": {
     "master_map": "04_Workflows/Master_Map.json",
     "current_plan": "04_Workflows/current_plan.json",
@@ -47,9 +64,24 @@
     "workflow_index": "04_Workflows/WORKFLOW_INDEX.md",
     "data_vault_readme": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/README.md",
     "phase8_6_bridge_spec": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
-    "phase8_6a_bridge_api_spec": "04_Workflows/PHASE8_6A_MINIMAL_BRIDGE_API_ENDPOINT_MVP_v0.1.md"
+    "phase8_6a_bridge_api_spec": "04_Workflows/PHASE8_6A_MINIMAL_BRIDGE_API_ENDPOINT_MVP_v0.1.md",
+    "phase8_5_bridge_smoke_runbook": "docs/phase8_5-bridge-smoke-runbook-v1.md"
   },
   "index_catalog": [
+    {
+      "id": "gov_core_smoke",
+      "keywords": ["gov core smoke", "gov core", "ingest_verify", "infra health"],
+      "workflow_index_section": "1.1",
+      "read_first": ["04_Workflows/runbooks/GOV_CORE_SMOKE_TEST_RUNBOOK_v0.1.md"],
+      "summary": "Gov Core V1 最小 Smoke Test runbook"
+    },
+    {
+      "id": "tabular_mvp",
+      "keywords": ["tabular", "清洗", "delivery", "sampleco", "demo_phase"],
+      "workflow_index_section": "1.7",
+      "read_first": ["docs/TABULAR_MVP_SSOT.md"],
+      "summary": "Tabular MVP 產品主線 SSOT"
+    },
     {
       "id": "phase5_task_locks_probe",
       "path_key": "data_vault_readme",
@@ -62,7 +94,7 @@
       "path_key": "phase8_6_bridge_spec",
       "path": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
       "workflow_index_section": "1.4",
-      "summary": "Phase 8.6/8.6a minimal_intake_browser bridge：intake（7.5）→ phase6_5_pre_state（6.5）→ optional browser（8.5）；POST /api/orchestration/bridge → run_minimal_orchestration_bridge()。HTTP 細節見 phase8_6a_bridge_api_spec。"
+      "summary": "Phase 8.6/8.6a minimal_intake_browser bridge：intake（7.5）→ phase6_5_pre_state（6.5）→ optional browser（8.5）；POST /api/orchestration/bridge → run_minimal_orchestration_bridge()。Smoke 見 phase8_5_bridge_smoke_runbook；HTTP 細節見 phase8_6a_bridge_api_spec。"
     }
   ],
   "sub_directories": {
@@ -145,7 +177,8 @@
     "v2.62：Phase 3 任務路由制度（HQ-P3-TASK-ROUTING）：TASK_ROUTING.md + task_routing_table.json + 02_Agents_Core/task_routing.py + runners.route_task_py。",
     "v2.63：Phase 4 營運週期制度（HQ-P4-OPS-CYCLE）：OPS_CYCLE.md + ops_cycle_schema.json + 02_Agents_Core/ops_cycle.py + runners.ops_cycle_py + project_status/reviews/。",
     "v2.64：05_Data_Vault/README.md — Phase 5 probe、task_runs / seed_pg 鎖排查與 shortest-path 驗收 Runbook（WORKFLOW_INDEX §1.3；index_catalog.phase5_task_locks_probe）。",
-    "v2.65：Phase 8.6i — minimal_intake_browser bridge 索引登錄（WORKFLOW_INDEX §1.4；index_catalog.minimal_intake_browser_bridge；runners：phase8_6_minimal_bridge_spec、phase8_6a_bridge_api_spec、minimal_orchestration_bridge_core、app_api_orchestration_bridge_unittest）。"
+    "v2.65：Phase 8.6i — minimal_intake_browser bridge 索引登錄（WORKFLOW_INDEX §1.4；index_catalog.minimal_intake_browser_bridge；runners：phase8_6_minimal_bridge_spec、phase8_6a_bridge_api_spec、minimal_orchestration_bridge_core、app_api_orchestration_bridge_unittest）。",
+    "v2.66：Wave-D P8.5 bridge smoke 收口（WD-P85-T2）— docs/phase8_5-bridge-smoke-runbook-v1.md；runners：phase8_5_bridge_smoke_runbook、bridge_smoke_unittest、bridge_smoke_http；WORKFLOW_INDEX §1.4 TODO 清除。"
   ],
   "cabins": {
     "gov_main": {
@@ -210,6 +243,9 @@
     "phase5_live_pg_soak": "01_Environments/python_venvs/gov_core_system/Departments/05_Data_Vault/phase5_live_pg_soak.py",
     "phase8_6_minimal_bridge_spec": "04_Workflows/PHASE8_6_MINIMAL_ORCHESTRATION_BRIDGE_MVP_v0.1.md",
     "phase8_6a_bridge_api_spec": "04_Workflows/PHASE8_6A_MINIMAL_BRIDGE_API_ENDPOINT_MVP_v0.1.md",
+    "phase8_5_bridge_smoke_runbook": "docs/phase8_5-bridge-smoke-runbook-v1.md",
+    "bridge_smoke_unittest": "01_Environments/python_venvs/gov_core_system/tests/test_minimal_orchestration_bridge.py",
+    "bridge_smoke_http": "01_Environments/python_venvs/gov_core_system/tests/test_app_api_orchestration_bridge.py",
     "minimal_orchestration_bridge_core": "01_Environments/python_venvs/gov_core_system/core/minimal_orchestration_bridge.py",
     "app_api_orchestration_bridge_unittest": "01_Environments/python_venvs/gov_core_system/tests/test_app_api_orchestration_bridge.py",
     "code_cleaner_throttled_agent": "02_Agents_Core/Code_Cleaner_Throttled_Agent.py",
@@ -243,6 +279,11 @@
     "task_routing_policy": "04_Workflows/TASK_ROUTING.md",
     "task_routing_table": "04_Workflows/task_routing_table.json",
     "ops_cycle_py": "04_Workflows/_ops_cycle.py",
+    "boot_context_py": "04_Workflows/_boot_context.py",
+    "phase_pct_apply_py": "04_Workflows/_phase_pct_apply.py",
+    "wave_progress_dashboard": "docs/WAVE_PROGRESS_DASHBOARD.md",
+    "phase_progress_impact_protocol": "docs/phase-progress-impact-protocol-v1.md",
+    "governance_onboarding": "docs/GOVERNANCE_ONBOARDING_v1.md",
     "ops_cycle_policy": "04_Workflows/OPS_CYCLE.md",
     "ops_cycle_schema": "04_Workflows/ops_cycle_schema.json",
     "wave7_runner_bootstrap": "04_Workflows/_wave7_runner_bootstrap.py",
@@ -269,11 +310,14 @@
     "policy": "盲測：嚴禁將金鑰字串輸出至 stdout/stderr 或事件 log；驗證僅以 [OK]/[FAILED]+HTTP code 表達。"
   },
   "war_status": {
-    "as_of": "2026-05-17",
-    "frozen_at_iso_utc": "2026-05-17T09:30:38Z",
-    "constitution_version": "v2.61",
-    "headline": "v2.61 封存（2026-05-17 UTC）：Phase 2 工程規則轉制完成（CURSOR_AGENT_RULES.md + engineering-contract.mdc，81 段 alwaysApply）；Gov Core V1 smoke 基線維持；精煉 run_id=c0fa044a…；Telegram lock 仍缺席。",
+    "as_of": "2026-07-28",
+    "frozen_at_iso_utc": "2026-07-28T10:06:17Z",
+    "constitution_version": "v2.64",
+    "headline": "v2.64（2026-07-28）：DEFER Round-2／H2（review_by=2026-08-11）· P6 83→91 authorize · QUEUE tip#1=P6-nightly-continue · TABULAR_SIDELINE 旁線票已開（≠ Phase%）· war_status 敘事對齊；H2–H5／execute 仍 armed-not-run · ≠ prod／required CI／Round-2 GO／DarkOps。相對 v2.63（2026-07-28）。",
     "milestones": [
+      "2026-07-28 (v2.64)：尚書省口令 WAR_BUMP_v2.64 + TABULAR_SIDELINE。交付：war_status v2.63→v2.64（DEFER Round-2／H2 review_by=2026-08-11 · P6 Dashboard 91 · tip#1=P6-nightly-continue）· 旁線票 TABULAR-SIDELINE-mainline-regression-2026-07-28 開票（≠ Phase%）。non_claims：≠ Round-2 GO · ≠ UNLOCK／假 host · ≠ execute S1–S4 · ≠ 新 P6 uplift · ≠ DarkOps。",
+      "2026-07-28 (v2.63)：尚書省指派 stage-wave6-authorize／stage-h1-countersign／W4-UI-G。交付：command_center P1–P5 live 投影（F+G）· H1 GOV-DUAL approved · `_phase_pct_apply` W-PROG-Wave6（P1+1／P2+2／P4+1／P5+1／P7.5+2）· Dashboard SSOT 日 07-28。non_claims：≠ Round-2 GO · ≠ H2–H5 解阻 · ≠ Operator prod · ≠ DarkOps。",
+      "2026-07-13 (v2.62)：尚書省授權升版 war_status + 再算 Phase%（相對 06-27→07-13 工作流完善盤點）。編排層：W5-T1～T6 Multi-Chat／Wave Master · `_boot_context.py` · command_queue A/B′/B3 · FP-PHASE-IMPACT／W-PROG。證據：Wave4 P85/P9 evidence SSOT complete（runs 29157178993／29159159265）。Phase% SSOT：`docs/WAVE_PROGRESS_DASHBOARD.md`（W-PROG-B · P8.5 18→20 · P9 22→24 · P4 75→77 · P10 35→37）。non_claims：≠ prod browser · ≠ required CI · ≠ Round-2 GO · ≠ P9 prod 金流。",
       "2026-05-17 (封存 Phase 2B)：04_Workflows/CURSOR_AGENT_RULES.md + .cursor/rules/engineering-contract.mdc（自 ENGINEERING_CONTRACT 條文化）；指紋 newly_inserted={governance_doc:4}，registry_total_rows=36468。",
       "2026-05-17 (封存)：Chariot_Registry 全艦掃描 20074 targets，failures=0，registry_total_rows=36464，newly_inserted={governance_doc:2}。",
       "2026-05-17：Status.json 末筆 Asset_Value_Evaluator run_id=c0fa044acf1c40c1a3570fd5d5abbcac（sampled=100，avg=5.019，A/B/C/D=8/56/7/29）。",

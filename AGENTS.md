@@ -7,7 +7,7 @@
 
 ## 交接一句話（尚書省複製給新對話）
 
-- **接戰（開戰）**：**大唐副官：`D:\大唐三省六部\AGENTS.md` 載入後依 §初始化校準執行，待命。**
+- **接戰（開戰）**：**大唐副官：`AGENTS.md` 載入後跑 `python 04_Workflows/_boot_context.py --text "<指令>" --pretty`，依 `read_plan` 讀檔，待命。**
 - **封存（收兵）**：**大唐副官：依 `D:\大唐三省六部\AGENTS.md` §封存協議執行記憶封裝。**
 - **極短口令**：「**接戰**」＝開戰；「**封存**」＝收兵存檔。
 
@@ -15,63 +15,95 @@
 
 ---
 
-§初始化校準 — 進場流程
+§初始化校準 — 三層接戰（精簡版）
 
-大唐副官：每次接戰前，依下列順序完成校準，方可動用暗部工作流——
+> **精簡對照表**：`docs/GOVERNANCE_ONBOARDING_v1.md`  
+> **禁止**接戰時全文順讀九份制度檔；以 **Tier 1 CLI** 產出 `read_plan` 後再讀。
 
-1. 憲法校準  
-   - 讀取：`04_Workflows/HARNESS_CONSTITUTION.md`（Phase 1 定稿；禁區**類型**見 §7）  
-   - 確認自身角色、授權邊界與禁區（DarkOps、runtime/checkpoints、.env 等）；具體路徑見 `04_Workflows/INSTANCE_ANCHOR_TANG.md` §4。
+### Tier 0 — 自動載入（零額外讀檔）
 
-2. 合約校準  
-   - 讀取：`04_Workflows/ENGINEERING_CONTRACT.md`  
-   - 確認執行時遵守四大工程流派與 12-rule（先 Context / Source，後 Incremental / Debugging）。
+- 本檔 `AGENTS.md`（紅線、Monitoring Graph L0 等）
+- `.cursor/rules/engineering-contract.mdc`（四流派、12-rule、Work Report）
+- **非治理票不必讀** `ENGINEERING_CONTRACT.md` 全文（與 `.mdc` 重複）
 
-3. 條件校準  
-   - 讀取：`04_Workflows/00_Agent_Work_Conditions.md`  
-   - 了解當前適用的 Smoke Test 標準（Gov Core V1 底盤、RAG v0.1 等）。
+### Tier 1 — CLI Bootstrap（接戰必跑 · 一條命令）
 
-4. 地圖校準  
-   - 讀取：`04_Workflows/WORKFLOW_INDEX.md`  
-   - 確認本次任務要走哪條工作流、對應哪一份 runbook。
+尚書省下達任務後，**先跑 CLI**，再依 JSON 的 `read_plan` 讀檔：
 
-5. 路線校準  
-   - 讀取：`04_Workflows/Runbooks/GOV_CORE_OPERATING_MAP_v0.1.md`  
-   - 了解總部（`D:\大唐三省六部\`）與暗部（`01_Environments\python_venvs\gov_core_system\`）之間的實際路徑與禁區。
+```powershell
+python .\04_Workflows\_boot_context.py --text "<尚書省指令摘要>" --pretty
+```
 
-6. 工作流校準  
-   - 讀取當前任務對應之 runbook：  
-     - 例如：`GOV_CORE_SMOKE_TEST_RUNBOOK_v0.1.md`、`RAG_SMOKE_TEST_RUNBOOK_v0.1.md`。  
-   - 確認實際 CLI 步驟與驗收條件。
+等價別名：
 
-7. 戰史校準  
-   - 讀取：  
-     - `04_Workflows/00_Agent_Work_Progress.md`（最近幾條戰報）  
-     - `04_Workflows/project_status/master_status.md`（最近里程碑）  
-   - 了解此工作流最近一次的實際執行情況與已知風險。
+```powershell
+python .\04_Workflows\_ops_cycle.py bootstrap --text "<尚書省指令摘要>" --pretty
+```
 
-8. 任務路由校準（Phase 3）  
-   - 讀取：`04_Workflows/TASK_ROUTING.md`（任務類型 → worker／cabin 制度）。  
-   - 尚書省下達任務時，執行路由解析（擇一）：  
-     - `python .\04_Workflows\_route_task.py --type <task_type>`  
-     - `python .\04_Workflows\_route_task.py --text "<任務描述>"`  
-   - 若回傳 `assignable: false`（例如 DarkOps 閘門 blocked），不得派工施工；須回報尚書省或寫入 Progress 阻塞項。
+| JSON 鍵 | 用途 |
+|---------|------|
+| `read_plan` | **本輪必讀**路徑 + `scope`（§7 only / 末尾 N 行 / full） |
+| `skip` | **本輪不必讀**（如 WORKFLOW_INDEX 全文、OPS_CYCLE 全文） |
+| `route` | worker／cabin／`assignable`／`blocked`／`runner_paths` |
+| `progress_tail` | Progress **末段**（預設 80 行；勿讀 25 萬字全文） |
+| `workflow_index_hint` | 僅讀 `WORKFLOW_INDEX.md` 所列 **§1.x 節** |
+| `war_status` | `Master_Map.war_status.headline` 快照 |
 
-9. 營運週期校準（Phase 4）  
-   - 讀取：`04_Workflows/OPS_CYCLE.md`（戰報／封存／回顧制度）。  
-   - 接戰時確認最近戰報與 `project_status/master_status.md`；收兵時依 §封存協議，並用 CLI 自檢：  
-     - `python .\04_Workflows\_ops_cycle.py validate-report --json <戰報.json>`  
-     - `python .\04_Workflows\_ops_cycle.py checklist --mode full`  
-     - `python .\04_Workflows\_ops_cycle.py append-report --json <戰報.json>`（可先 `--dry-run`）  
-   - 階段結束可建回顧稿：`python .\04_Workflows\_ops_cycle.py new-review --type phase_gate --project <專案> --ticket <票號>`
+- 若 `assignable: false`（例如 DarkOps blocked）→ **不得施工**；回報尚書省或 Progress 末尾寫阻塞。
+- **可選**完整環境自檢（非每次接戰必跑）：  
+  `python .\04_Workflows\_ops_cycle.py checklist --mode full --pretty`
 
-大唐副官：`D:\大唐三省六部\AGENTS.md` 載入後，依本「§初始化校準」完成九步校準，方可切換至 `01_Environments\python_venvs\gov_core_system` 執行暗部 CLI。
+### Tier 2 — 最小讀檔（一般施工票 · 由 boot 預設併入 `read_plan`）
+
+| 路徑 | 讀法 |
+|------|------|
+| `HARNESS_CONSTITUTION.md` | **僅 §7 禁區類型** |
+| `00_Agent_Work_Progress.md` | **僅末尾**（boot 已附 `progress_tail`） |
+| `project_status/master_status.md` | **最近 1 段**里程碑 |
+
+### Tier 3 — 任務 scoped 讀（boot 依 `--text`／`task_type` 追加）
+
+- 任務 runbook（如 `runbooks/GOV_CORE_SMOKE_TEST_RUNBOOK_v0.1.md`）
+- `WORKFLOW_INDEX.md` **對應 §1.x 一節**（禁止讀 72KB 全文）
+- Tabular 主線 → `docs/TABULAR_MVP_SSOT.md`（關鍵字 `tabular`／`delivery` 等）
+- 暗部路徑 → `runbooks/GOV_CORE_OPERATING_MAP_v0.1.md`（僅 `cabin=gov_core_system` 且未 blocked）
+- **跨端缺陷／Hermes↔Cursor 相交修復** → `04_Workflows/cross_agent_fix_ledger.yaml`（見下方 §Cross-Agent Fix Ledger）
+
+### Tier 4 — 全文制度（僅治理／guard／跨域票）
+
+- 完整 `HARNESS_CONSTITUTION.md`、`ENGINEERING_CONTRACT.md`
+- `DEPARTMENT_MAP.md`、`INSTANCE_ANCHOR_TANG.md`、`_PORTABLE_CORE_INDEX.md`
+- boot 對 `hq.governance` 等 task_type 會自動升級至 Tier 4
+
+### Multi-Chat 追加（B-F2）
+
+尚書省啟動 Multi-Chat 時，boot 命中關鍵字或 Orchestrator／Operator（**O**；廢止 **A**）明示後追加：
+
+- `.cursor/rules/multi_chat_roles.mdc`（對應角色小節）
+- Subagents 流水線仍依 `.cursor/agents/DISPATCH_GUIDE.md`
+
+**續棒輕量 boot**（同一票下一棒；預設仍用完整 `--mode full`）：
+
+```powershell
+python .\04_Workflows\_boot_context.py --mode light --ticket-id <TICKET-ID> --role <orchestrator|implementer|reviewer|scribe> --pretty
+```
+
+只讀該票 `*_state.md` + `multi_chat_roles.mdc` 對應 §角色；跳過 Progress／憲法全文。高風險或新 session 仍用 full。
+### 封存時（非接戰）
+
+- 讀 `OPS_CYCLE.md` 或跑：  
+  `python .\04_Workflows\_ops_cycle.py checklist --mode minimal`  
+  `python .\04_Workflows\_ops_cycle.py validate-report --json <戰報.json>`  
+  `python .\04_Workflows\_ops_cycle.py append-report --json <戰報.json>`
+
+大唐副官：完成 **Tier 1 CLI** 並依 `read_plan` 讀檔後，方可切換至暗部 `gov_core_system` 執行 CLI。
+
 ---
 
 ## 啟動序（Boot Sequence · 與 §初始化校準對齊）
 
-1. 若尚書省只說「接戰」：先完成 **§初始化校準**，再讀 `README_Refresher.md` §7 作日常操作補充。
-2. 路徑與 runner 索引：以 `Master_Map.json` → `runners` 為準。
+1. 若尚書省只說「接戰」：跑 **§初始化校準 Tier 1** `_boot_context.py`（無具體任務時 `--text "接戰待命"`），再讀 `README_Refresher.md` §7。
+2. 路徑與 runner 索引：以 `Master_Map.json` → `runners` 為準；接戰讀檔計畫以 `_boot_context.py` JSON 為準。
 
 ---
 
@@ -82,6 +114,22 @@
 - **嚴禁同時起兩個 Telegram 監聽器**；以 `04_Workflows/.telegram_listener.lock` 為準。
 - **嚴禁在主艙 (`gov_main`) 安裝 `crewai / langchain` 等重套件**。
 - **嚴禁建立新的 `hashes.txt`**；指紋只走 `04_Workflows/Chariot_Registry.db`。
+
+---
+
+## Cross-Agent Fix Ledger（Hermes ↔ Cursor）
+
+> **SSOT**：`04_Workflows/cross_agent_fix_ledger.yaml`  
+> **用途**：兩邊日誌可以不同；**缺陷已修／待修**必須同一份。不以聊天結論或零散 log 覆蓋 ledger。
+
+| 時機 | MUST |
+|------|------|
+| **開工前** | 讀 ledger。`status=fixed` 且 `verify_cmd` 通過 → **禁止**重開同 `id`；驗證失敗 → 改 `needs_reverify` 並更新 `owner_last`。 |
+| **收工後** | 更新該筆：`status`／`owner_last`／`source_of_truth`／`evidence`／`verify_cmd`／`touched_paths`／`updated_at`；Progress 或票 STATE **只 append 一行**摘要。 |
+| **衝突** | 同 `id` 兩端結論不同 → `partial` 或 `needs_reverify`；**以實際執行 `verify_cmd` 為裁判**。 |
+| **佔坑** | 改相交檔（`04_Workflows/_build_*`、reports、scout 等）前填 `claim_owner`；收工清空或更新，避免 Hermes／Cursor 並行覆蓋。 |
+
+關鍵字觸發（建議讀 ledger）：`hermes`、`fix ledger`、`elite_cache`、`local_similarity`、`P1`–`P4`、跨端修復。
 
 ---
 
@@ -196,6 +244,63 @@
 
 ---
 
+## 多智囊團路由（Multi-Advisory Council）
+
+> **SSOT**：`docs/multi_advisory_council_v1.md` · Router：`core/advisory_council_router.py`  
+> **用途**：Orchestrator 依任務類型自動指派到對應智囊團（LC/LG/MCP/OBS/TOOL/MOD）
+
+### 六大智囊團
+
+| 代號 | 智囊團 | 核心模組 | 現有對應 |
+|------|--------|----------|----------|
+| LC | LangChain | prompts, tools, memory, agents | `core.coding_agent_router.py` |
+| LG | LangGraph | graph, state, node, edge | `core.langgraph_flow_k1/k2.py` |
+| MCP | MCP Protocol | stdio, sse, streamable_http | `01_Environments/config/mcp/` |
+| OBS | Observability | LangSmith, Langfuse, tracing | `core.monitoring_graph.py` |
+| TOOL | Tool Chain | Terminal, Chrome, DB, File | `core.infra_health.py` · `data_pipeline_agent.py` |
+| MOD | Model Router | 通義千問, Claude, GPT-4, Ollama | `core.coding_agent_router.py` |
+
+### 路由規則
+
+| 任務類型 | 智囊團 | 備註 |
+|----------|--------|------|
+| `prompt_design` | LC | prompt engineering |
+| `tool_definition` | LC + MCP | LangChain tool + MCP 接線 |
+| `workflow_design` | LG | LangGraph 編排 |
+| `external_integration` | MCP | 外部工具整合 |
+| `tracing_setup` | OBS | observability / L0–L2 |
+| `terminal_automation` | TOOL | 基礎工具鏈 |
+| `model_selection` | MOD | 模型選型路由 |
+| `end_to_end_pipeline` | LC + LG + TOOL + OBS | 跨智囊團協作 |
+
+### 使用方式
+
+```python
+from core.advisory_council_router import AdvisoryCouncilRouter
+
+router = AdvisoryCouncilRouter()
+result = router.route_task("workflow_design", payload={"task_id": "T1", ...})
+
+# result:
+# {
+#   "task_type": "workflow_design",
+#   "councils": ["langgraph"],
+#   "council_labels": ["LangGraph 智囊團"],
+#   "results": {"langgraph": {"status": "dispatched", ...}},
+#   "merged": {"all_ok": True, ...},
+#   "error": None
+# }
+```
+
+### 與 Phase 4 Contract 對齊
+
+- Orchestrator (O) → `route_task()` 指派智囊團
+- Implementer (B) → 施工於 LC / LG / MCP / TOOL
+- Reviewer (C) → OBS 評估指標 + 原審查流程
+- Scribe (D) → 全智囊團通用
+
+---
+
 ## 常用 Runner（索引：`Master_Map.json` → `runners`）
 
 | 用途 | 指令 |
@@ -206,7 +311,9 @@
 | 雙艙體檢 | `python .\04_Workflows\_doctor_main_cabin.py` / `_doctor_agency_cabin.py` |
 | Telegram 啟停 | `Start-TelegramListener.ps1` / `Stop-TelegramListener.ps1` |
 | 發動下一波 | `python .\04_Workflows\_factory_wave_01.py --n 100 --every 10` |
-| 任務路由 | `python .\04_Workflows\_route_task.py --type hq.governance` |
+| **接戰 bootstrap** | `python .\04_Workflows\_boot_context.py --text "<指令>" --pretty` |
+| **續棒 light boot** | `python .\04_Workflows\_boot_context.py --mode light --ticket-id <ID> --role <角色> --pretty` |
+| 任務路由 | `python .\04_Workflows\_route_task.py --type hq.governance --paths` |
 | 營運週期 | `python .\04_Workflows\_ops_cycle.py checklist --mode full` |
 
 ---

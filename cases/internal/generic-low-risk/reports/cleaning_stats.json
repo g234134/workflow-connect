@@ -1,0 +1,125 @@
+{
+  "ok": true,
+  "cleaning_profile_id": "generic_low_risk_profile",
+  "before": {
+    "row_count": 7,
+    "column_count": 4,
+    "missing_by_column": {
+      "order_id": {
+        "count": 1,
+        "rate": 0.1429
+      },
+      "product": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "amount": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "notes": {
+        "count": 1,
+        "rate": 0.1429
+      }
+    },
+    "duplicate_full_rows": 0,
+    "duplicate_primary_keys": 1,
+    "primary_key_value_counts": {
+      "ORD-001": 2,
+      "ORD-002": 1,
+      "ORD-003": 1,
+      "ORD-004": 1,
+      "ORD-005": 1
+    },
+    "format_issues": [
+      {
+        "row": 8,
+        "field": "amount",
+        "issue": "unparseable:abc",
+        "value": "abc"
+      }
+    ],
+    "range_issues": [
+      {
+        "row": 7,
+        "field": "amount",
+        "value": 99999.0,
+        "issue": "above_max"
+      }
+    ],
+    "cleaning_profile_id": "generic_low_risk_profile"
+  },
+  "after": {
+    "row_count": 5,
+    "column_count": 4,
+    "missing_by_column": {
+      "order_id": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "product": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "amount": {
+        "count": 1,
+        "rate": 0.2
+      },
+      "notes": {
+        "count": 1,
+        "rate": 0.2
+      }
+    },
+    "duplicate_full_rows": 0,
+    "duplicate_primary_keys": 0,
+    "primary_key_value_counts": {
+      "ORD-001": 1,
+      "ORD-002": 1,
+      "ORD-003": 1,
+      "ORD-004": 1,
+      "ORD-005": 1
+    },
+    "format_issues": [],
+    "range_issues": [
+      {
+        "row": 5,
+        "field": "amount",
+        "value": 99999.0,
+        "issue": "above_max"
+      }
+    ],
+    "cleaning_profile_id": "generic_low_risk_profile"
+  },
+  "clean_meta": {
+    "dropped_rows": [
+      {
+        "row": 5,
+        "reason": "missing_order_id",
+        "field": "order_id"
+      }
+    ],
+    "deduped_rows": [
+      {
+        "_source_row": 2,
+        "_flags": [],
+        "order_id": "ORD-001",
+        "product": "Widget A",
+        "amount": 100.5,
+        "notes": "First order",
+        "_dedupe_action": "dropped_older"
+      }
+    ],
+    "range_flags": [
+      {
+        "row": 7,
+        "field": "amount",
+        "value": 99999.0
+      }
+    ],
+    "output_row_count": 5,
+    "cleaning_profile_id": "generic_low_risk_profile",
+    "dedup_keys": [
+      "order_id"
+    ]
+  }
+}

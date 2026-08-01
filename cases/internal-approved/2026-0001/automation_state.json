@@ -1,0 +1,33 @@
+{
+  "schema_version": "tabular-automation-state-v1",
+  "case_id": "2026-0001",
+  "automation_status": "idle",
+  "start_requested_by": null,
+  "stop_requested_by": null,
+  "pause_reason": null,
+  "resume_requested_by": null,
+  "last_transition_ts": "2026-07-22T13:15:35+00:00",
+  "current_step": "delivery",
+  "allowed_to_auto_proceed": false,
+  "requires_hitl_checkpoint": false,
+  "checkpoint_a_status": "not_required",
+  "checkpoint_b_status": "approved",
+  "checkpoint_a_decided_by": null,
+  "checkpoint_b_decided_by": null,
+  "checkpoint_a_decided_at": null,
+  "checkpoint_b_decided_at": null,
+  "checkpoint_resume_step": null,
+  "last_error": null,
+  "last_error_at": null,
+  "retry_count": 0,
+  "dlq_status": "none",
+  "delivery": {
+    "delivery_approval_status": "approved",
+    "delivery_approved_by": "user-authorized-lead",
+    "delivery_approved_at": "2026-07-22T13:15:35Z",
+    "delivery_bundle_path": "reports/report.json",
+    "delivery_ready": true,
+    "signoff_recorded": true,
+    "readiness_gaps": []
+  }
+}

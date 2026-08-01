@@ -1,0 +1,244 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_d_p3_dark_loop_v1",
+  "demo": true,
+  "read_only": true,
+  "host": "ui/command_center",
+  "visual_ssot": "docs/ui-templates/unified_P3.png",
+  "generated_at": "2026-07-28T00:45:00+08:00",
+  "message": "W4-UI-D P3 dark execution loop mock (demo · read_only · ≠ live API · ≠ DarkOps)",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "暗部執行與交付閉環",
+    "subtitle": "統一指揮 · 協同作戰 · 高效治理（mock · 只讀）",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "2026-07-28 00:45:00 UTC+8",
+    "operator": "指揮官 · 系統管理員",
+    "system_status": "系統運行中",
+    "system_status_tone": "green"
+  },
+  "nav": [
+    {"id": "p1", "label": "總覽", "href": "p1.html", "active": false},
+    {"id": "p5", "label": "協作作業台", "href": "p5.html", "active": false},
+    {"id": "p4", "label": "三省六部", "href": "p4.html", "active": false},
+    {"id": "p3", "label": "暗部執行", "href": "p3.html", "active": true},
+    {"id": "p2", "label": "技能與資源", "href": "p2.html", "active": false},
+    {"id": "settings", "label": "設定", "href": "settings.html", "active": false}
+  ],
+  "modules": [
+    {
+      "id": "orchestrate",
+      "name": "流程編排",
+      "icon": "flow",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日執行",
+      "metric_value": "352"
+    },
+    {
+      "id": "graph_reason",
+      "name": "圖譜推理",
+      "icon": "graph",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日執行",
+      "metric_value": "428"
+    },
+    {
+      "id": "struct_memory",
+      "name": "結構記憶",
+      "icon": "cube",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日執行",
+      "metric_value": "298"
+    },
+    {
+      "id": "semantic_memory",
+      "name": "語意記憶",
+      "icon": "brain",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日執行",
+      "metric_value": "274"
+    },
+    {
+      "id": "observe",
+      "name": "追蹤觀測",
+      "icon": "target",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日執行",
+      "metric_value": "386"
+    },
+    {
+      "id": "external_api",
+      "name": "對外介面",
+      "icon": "globe",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日狀態",
+      "metric_value": "正常"
+    },
+    {
+      "id": "venv",
+      "name": "虛擬環境",
+      "icon": "box",
+      "health": "良好",
+      "status": "green",
+      "metric_label": "今日狀態",
+      "metric_value": "就緒"
+    }
+  ],
+  "loop_flow": {
+    "title": "流程閉環視圖",
+    "backflow_label": "回流優化 · 持續學習",
+    "stages": [
+      {
+        "id": "ministries_out",
+        "label": "六部輸出",
+        "icon": "board",
+        "items": [
+          {"label": "刑部", "value": "352"},
+          {"label": "工部", "value": "428"},
+          {"label": "兵部", "value": "298"},
+          {"label": "禮部", "value": "274"},
+          {"label": "戶部", "value": "303"},
+          {"label": "吏部", "value": "386"}
+        ],
+        "footer": {"label": "合計", "value": "2,041", "tone": "accent"}
+      },
+      {
+        "id": "dark_exec",
+        "label": "暗部執行層",
+        "icon": "shield",
+        "highlight": true,
+        "items": [
+          {"label": "狀態", "value": "運行中", "tone": "green"},
+          {"label": "今日執行", "value": "2,041"},
+          {"label": "成功率", "value": "94.2%", "tone": "green"}
+        ]
+      },
+      {
+        "id": "knowledge",
+        "label": "門下經驗",
+        "icon": "scroll",
+        "items": [
+          {"label": "SOP 數", "value": "1,240"},
+          {"label": "案例沉澱數", "value": "8,756"},
+          {"label": "今日新增規則", "value": "37"}
+        ]
+      },
+      {
+        "id": "delivery",
+        "label": "交付層",
+        "icon": "box",
+        "items": [
+          {"label": "待交付", "value": "89", "tone": "yellow"},
+          {"label": "驗收中", "value": "42", "tone": "blue"},
+          {"label": "已完成", "value": "1,910", "tone": "green"}
+        ]
+      }
+    ]
+  },
+  "side_monitor": {
+    "title": "即時監控",
+    "cards": [
+      {
+        "id": "track_health",
+        "label": "追蹤健康",
+        "icon": "pulse",
+        "value": "94.2%",
+        "status_label": "良好",
+        "status": "green",
+        "delta": "較昨日 ↑ 5.7%",
+        "delta_tone": "up"
+      },
+      {
+        "id": "failed_nodes",
+        "label": "失敗節點",
+        "icon": "alert",
+        "value": "7",
+        "delta": "較昨日 ↓ 2",
+        "delta_tone": "up"
+      },
+      {
+        "id": "retries",
+        "label": "重試次數",
+        "icon": "timer",
+        "value": "124",
+        "delta": "較昨日 ↑ 18",
+        "delta_tone": "down"
+      },
+      {
+        "id": "alerts",
+        "label": "告警",
+        "icon": "alert",
+        "value": "7",
+        "status": "yellow",
+        "breakdown": "高 2 · 中 3 · 低 2",
+        "delta": "高2 中3 低2",
+        "delta_tone": "flat"
+      },
+      {
+        "id": "venv_status",
+        "label": "虛擬環境狀態",
+        "icon": "box",
+        "value": "就緒",
+        "status": "green",
+        "status_label": "就緒",
+        "instances": "18 / 20",
+        "resource_pct": 62,
+        "resource_label": "資源使用率 62%"
+      }
+    ]
+  },
+  "footer_strip": {
+    "uptime": "運行時間：32天14小時",
+    "global_success": "全域成功率：94.2%",
+    "today_exec": "今日總執行：2,041次",
+    "updated_at": "資料更新：14:32:18",
+    "source": "資料來源：暗部執行層監控中心（mock）"
+  },
+  "operator_fields": {
+    "ok": true,
+    "schema_version": "p89_operator_fields_v1",
+    "demo": true,
+    "read_only": true,
+    "fields": [
+      "event_id",
+      "ack_status",
+      "handler_id",
+      "dispatch_registry_hit",
+      "dlq_flag"
+    ],
+    "rows": [
+      {
+        "event_id": "evt-p3-loop-001",
+        "ack_status": "acked",
+        "handler_id": "dark.observe",
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      },
+      {
+        "event_id": "evt-p3-loop-002",
+        "ack_status": "pending",
+        "handler_id": "dark.retry",
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      }
+    ]
+  },
+  "non_claims": [
+    "≠ live API / Grafana",
+    "≠ 金鑰原文",
+    "≠ DarkOps / 暗部 core",
+    "≠ Dashboard Phase% authorize",
+    "≠ Operator UI 全量交付"
+  ]
+}

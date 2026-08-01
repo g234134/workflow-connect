@@ -229,6 +229,8 @@ class GroqQuotaTracker:
             while dq and now - dq[0][0] > 60.0:
                 dq.popleft()
             dq.append((now, tok))
+        # 立即持久化，避免 report_generator 讀到舊狀態（解決 P3：餘額永遠 100%）
+        self.persist()
 
     def rpd_snapshot_lines(self) -> List[str]:
         """各模型 RPD 剩餘百分比（簡短）。"""

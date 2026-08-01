@@ -2,6 +2,20 @@
 
 輕量 handoff 機制：四角色 **直接讀寫同一份** `*_state.md`，人工只負責「開下一個 chat + 指定角色」，不再搬運 REPORT 區塊。
 
+## 總指揮官隊列（安排任務入口）
+
+尚書省說「**安排任務**」時，**先讀** `04_Workflows/command_queue/`（`QUEUE.yaml` + `README.md`），再按需下鑽本目錄子票：
+
+```powershell
+python 04_Workflows/_command_queue.py --pretty
+```
+
+**跨端缺陷 SSOT**（Hermes↔Cursor）：`04_Workflows/cross_agent_fix_ledger.yaml` — 已修／待修以 ledger + `verify_cmd` 為準；相關票例：`P4-LOCAL-SIMILARITY-v1_state.md`。
+
+- **規劃 FRAME 正文 SSOT**：`W-MASTER-wave-plan_state.md` · `W-MASTER-full-phase-plan_state.md`
+- **當次取捨與 priority**：`command_queue/QUEUE.yaml`（不重複 FRAME 全文）
+- **Cursor slash**：`/arrange-tasks`
+
 ## 這是做什麼的
 
 - **單一真相來源（SSOT）**：每張票一份 `04_Workflows/tickets/<ticket_id>_state.md`。
@@ -111,6 +125,22 @@ Orchestrator 建 state 檔 → 填 FRAME、初始化 STATE
 ## 簡短範例（DEMO-1）
 
 見 `DEMO-1_state.md`：示範多角色**依序直接回寫**同一份 state；B_REPORT 已填，STATE 展示交棒欄位。
+
+## Walkthrough 參照票（W2-REF-001）
+
+> **母票**：`W2-T2_state.md` · **子票**：`W2-REF-001_state.md`
+
+除 DEMO-1 虛構示範外，**W2-REF-001** 為真實小票 walkthrough：為 `docs/testing.md` 補 Multi-Chat Ticket State 驗收一節。
+
+| 步驟 | 路徑 / 動作 |
+|------|-------------|
+| 開票 | Orchestrator 建 `W2-REF-001_state.md`（複製 `_templates/ticket_state.template.md`） |
+| 施工 | Implementer 改 `docs/testing.md` §9、回寫子票 B_REPORT |
+| 審查 | Reviewer 只寫 C_REPORT（**不改 code**） |
+| loop-back | C 標 `needs_changes` → B **追加** B_REPORT（不刪舊段）→ 第二輪 C |
+| 收口 | Scribe D_REPORT → Orchestrator 更新 STATE `overall_status: done` |
+
+**必須 Write state**：Implementer / Reviewer / Scribe 各角色須 **直接更新** `*_state.md` 對應區塊；禁止只在 chat 貼 REPORT 代替寫檔。驗收細則見 `docs/testing.md` §9。
 
 ## 注意事項
 

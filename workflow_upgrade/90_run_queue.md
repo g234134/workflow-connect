@@ -112,7 +112,7 @@
 
 | ID | Title | Line | Status | Depends on | Notes |
 |----|-------|------|--------|------------|-------|
-| OBS-GATE-1 | 統一 HTTP observability 閘門 alias（可選） | C | TODO | C-GOV | 程式票；`GOV_CORE_API_EXPOSE_OBSERVABILITY` umbrella；保留既有雙閘門向後相容 |
+| OBS-GATE-1 | 統一 HTTP observability 閘門 alias（可選） | C | DONE | C-GOV | 2026-07-29 全授權 · umbrella env + UT · 舊雙閘門相容 · L0 only |
 | M-GOV-L1 | L1 shadow selector／advisory 實作 | O | TODO | C-GOV | 須 §6.8.4 門檻 + 尚書省批文 |
 | M-GOV-L2 | L2 SLO gate／hard policy 實作 | O | TODO | M-GOV-L1 | 須 §6.8.5 門檻 + gating 批文 + rollback 演練 |
 
@@ -203,6 +203,16 @@ LSP · 跨語言 symbol · graph→retrieve 擴展 · 接 ask 主線 selector ·
 
 ---
 
+## Wave B — 知識層 bootstrap（HQ 側車）
+
+| ID | Title | Line | Status | Depends on | Output File | Notes |
+|----|-------|------|--------|------------|-------------|-------|
+| WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE | 治理關鍵 subtree 真實 index 回填（W2-1 閉環） | B/KB | DONE | W4-B-INDEX-INTEGRATION | `workflow_v2/kb/wave_b_gov_scope.json`；`workflow_v2/kb/repo_index_bootstrap.py`；`workflow_v2/20_pilot/W3-B/index_status_W2-1.json`；`workflow_v2/20_pilot/W3-B/index_manifest_W2-1.json` | 2026-06-05：HQ bootstrap（無 PG/Qdrant）；`file_count=190`，`chunk_count=1204`；sync/gate/RAG smoke 全綠；暗部替換留 Wave C |
+| WAVE-B-P1-TRACE-QUERY-CLI | gov-trace-v2 本地 JSONL trace 查詢 CLI | B/Obs | DONE | P3 Trace schema | `observability/trace_query.py`；`tests/fixtures/trace/sample_traces.jsonl`；`tests/test_trace_query.py`；`docs/observability.md` §7 | 2026-06-05：`query_traces()` + CLI；fixture `trace-wb-fixture-001` → 3 events；單測 22/22 OK（含 trace schema／adapter／middleware）；PG／Langfuse 留 Wave C |
+| WAVE-B-P3-WF-STATUS-SUMMARY-CLI | Gate / Index / Trace 一頁總覽 CLI | B/Obs | DONE | WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP；WAVE-B-P2-EVAL-TRACE-CORRELATE | `observability/wf_status_summary.py`；`tests/test_wf_status_summary.py`；`docs/observability.md` §8 | 2026-06-05：只讀組裝 gate + index + trace join；單測 6/6 OK；CI artifact 留 Wave C |
+
+---
+
 ## 變更紀錄
 
 | 日期 | 變更 |
@@ -223,3 +233,6 @@ LSP · 跨語言 symbol · graph→retrieve 擴展 · 接 ask 主線 selector ·
 | 2026-05-25 | A 線 Week 1：HQ-A 凍結 `repo_index_v1`／`repo_chunks`／`graph.v0.json` v0.1；隊列登錄 A-W1-A／B／C + QA-A-W1 |
 | 2026-05-25 | A-W1-A → BLOCKED（**IMPLEMENTED_WAITING_DB**）：實作交付；待 PG 四步驗收後方可解阻 A-W1-B/C |
 | 2026-06-05 | K 線對帳：`WAVE-CORE-P0-PHASE1-ROLLOUT-DECISION` Option A — Phase 1 **local-only gate**；新增 P1 `K2-phase1-remote-rollout`；見 `_workflow_upgrade/90_run_queue.md` 與根 `00_master_plan.md` §4.8 |
+| 2026-06-05 | Wave B：`WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE` → DONE；治理 subtree bootstrap + W2-1 sync/gate/RAG smoke |
+| 2026-06-05 | Wave B：`WAVE-B-P1-TRACE-QUERY-CLI` → DONE；gov-trace-v2 JSONL 本地只讀追查 CLI + fixture 單測 |
+| 2026-06-05 | Wave B P3：`WAVE-B-P3-WF-STATUS-SUMMARY-CLI` → DONE；Gate / Index / Trace 一頁總覽 CLI + 單測 6/6 |

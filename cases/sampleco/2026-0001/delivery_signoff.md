@@ -9,8 +9,8 @@
 | client_ref | sampleco |
 | product_sku | CLEAN-BASIC |
 | job_id | `<job_id>` |
-| lead_approval | _pending — manual entry_ |
-| delivered_at | _pending — manual entry_ |
+| lead_approval | `approved by regression_smoke` |
+| delivered_at | `2026-07-28T10:07:43Z` |
 
 ## Stage D checklist (C2-P2 §19.1)
 
@@ -49,10 +49,10 @@
 
 | Field | Value |
 |-------|-------|
-| reviewer | _pending — manual entry_ |
-| signer (Lead) | _pending — manual entry_ |
-| signed_at | _pending — manual entry_ |
-| bundle_built_at | _pending_ |
+| reviewer | `regression_smoke` |
+| signer (Lead) | `regression_smoke` |
+| signed_at | `2026-07-28T10:07:43Z` |
+| bundle_built_at | `2026-07-28T10:07:43Z` |
 
 ## Exceptions / notes
 

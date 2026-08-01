@@ -1,0 +1,468 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_g_p2_live_projection_v1",
+  "demo": false,
+  "read_only": true,
+  "host": "ui/command_center",
+  "visual_ssot": "docs/ui-templates/unified_P2.png",
+  "generated_at": "2026-07-28T01:12:18+0800",
+  "message": "W4-UI-G P2 live projection (CLI overlay · read_only · fallback-mock available · ≠ Grafana/PG soak/Operator prod)",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文；驗收語意見 _smoke_test_keys.py"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "技能管理與資源治理",
+    "subtitle": "統一指揮 · 協同作戰 · 高效治理（live · 只讀）",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "2026-07-28 01:12:18 UTC+8",
+    "operator": "指揮官 · 系統管理員"
+  },
+  "nav": [
+    {
+      "id": "p1",
+      "label": "總覽",
+      "href": "p1.html",
+      "active": false
+    },
+    {
+      "id": "p5",
+      "label": "協作作業台",
+      "href": "p5.html",
+      "active": false
+    },
+    {
+      "id": "p4",
+      "label": "三省六部",
+      "href": "p4.html",
+      "active": false
+    },
+    {
+      "id": "p3",
+      "label": "暗部執行",
+      "href": "p3.html",
+      "active": false
+    },
+    {
+      "id": "p2",
+      "label": "技能與資源",
+      "href": "p2.html",
+      "active": true
+    },
+    {
+      "id": "settings",
+      "label": "設定",
+      "href": "settings.html",
+      "active": false
+    }
+  ],
+  "skill_ministries": [
+    {
+      "id": "xing",
+      "name": "刑部",
+      "icon": "shield",
+      "mounted_skills": 24,
+      "modules": [
+        "案件研判",
+        "風險評估",
+        "規則引擎"
+      ],
+      "health": "良好",
+      "health_status": "green",
+      "anomaly_count": 1
+    },
+    {
+      "id": "gong",
+      "name": "工部",
+      "icon": "cube",
+      "mounted_skills": 18,
+      "modules": [
+        "管線編排",
+        "構建驗證",
+        "部署閘門"
+      ],
+      "health": "良好",
+      "health_status": "green",
+      "anomaly_count": 0
+    },
+    {
+      "id": "bing",
+      "name": "兵部",
+      "icon": "target",
+      "mounted_skills": 21,
+      "modules": [
+        "戰情彙整",
+        "調度路由",
+        "壓力演練"
+      ],
+      "health": "中等",
+      "health_status": "yellow",
+      "anomaly_count": 2
+    },
+    {
+      "id": "li_ritual",
+      "name": "禮部",
+      "icon": "scroll",
+      "mounted_skills": 15,
+      "modules": [
+        "文檔規範",
+        "儀式檢查",
+        "對外敘事"
+      ],
+      "health": "良好",
+      "health_status": "green",
+      "anomaly_count": 0
+    },
+    {
+      "id": "hu",
+      "name": "戶部",
+      "icon": "coin",
+      "mounted_skills": 19,
+      "modules": [
+        "配額治理",
+        "成本歸因",
+        "用量預測"
+      ],
+      "health": "良好",
+      "health_status": "green",
+      "anomaly_count": 1
+    },
+    {
+      "id": "li_personnel",
+      "name": "吏部",
+      "icon": "people",
+      "mounted_skills": 16,
+      "modules": [
+        "角色映射",
+        "權限矩陣",
+        "交接清單"
+      ],
+      "health": "中等",
+      "health_status": "yellow",
+      "anomaly_count": 3
+    }
+  ],
+  "skill_module_map": {
+    "title": "技能 ↔ 執行模組 對應映射表",
+    "columns": [
+      "技能名稱",
+      "所屬部門",
+      "技能類型",
+      "對應執行模組",
+      "狀態",
+      "最後更新"
+    ],
+    "rows": [
+      {
+        "skill": "案件風險評估",
+        "dept": "刑部",
+        "type": "分析類",
+        "module": "風險評估模組 v2.3",
+        "status": "啟用",
+        "status_tone": "cyan",
+        "updated_at": "2026-07-28 00:58"
+      },
+      {
+        "skill": "管線健康巡檢",
+        "dept": "工部",
+        "type": "運維類",
+        "module": "構建驗證模組 v1.8",
+        "status": "啟用",
+        "status_tone": "cyan",
+        "updated_at": "2026-07-28 00:42"
+      },
+      {
+        "skill": "戰情摘要生成",
+        "dept": "兵部",
+        "type": "生成類",
+        "module": "戰情彙整模組 v1.4",
+        "status": "降級",
+        "status_tone": "yellow",
+        "updated_at": "2026-07-27 23:10"
+      },
+      {
+        "skill": "配額預警",
+        "dept": "戶部",
+        "type": "治理類",
+        "module": "用量預測模組 v0.9",
+        "status": "啟用",
+        "status_tone": "cyan",
+        "updated_at": "2026-07-28 00:15"
+      },
+      {
+        "skill": "交接清單核對",
+        "dept": "吏部",
+        "type": "協作類",
+        "module": "交接清單模組 v1.1",
+        "status": "維護",
+        "status_tone": "gray",
+        "updated_at": "2026-07-27 21:40"
+      }
+    ],
+    "footer_link": "查看完整對應關係 →"
+  },
+  "resource_governance": {
+    "deploy_mix": {
+      "title": "部署環境占比",
+      "local_pct": 38,
+      "cloud_pct": 62,
+      "local_label": "本地環境",
+      "cloud_label": "雲端環境"
+    },
+    "api_today": {
+      "title": "今日 API 消耗量",
+      "value": "12,430",
+      "delta": "+15.2%",
+      "delta_tone": "up",
+      "sparkline": [
+        42,
+        48,
+        45,
+        55,
+        62,
+        58,
+        70,
+        68,
+        75,
+        80,
+        78,
+        88
+      ]
+    },
+    "token_today": {
+      "title": "今日 Token 使用量",
+      "value": "24.68M",
+      "delta": "+10.7%",
+      "delta_tone": "up",
+      "sparkline": [
+        30,
+        35,
+        40,
+        38,
+        45,
+        52,
+        50,
+        58,
+        62,
+        60,
+        68,
+        72
+      ]
+    },
+    "cloud_breakdown": {
+      "title": "雲端服務分項消耗",
+      "items": [
+        {
+          "name": "語言模型服務",
+          "count": "8,520",
+          "pct": 68.6
+        },
+        {
+          "name": "向量檢索服務",
+          "count": "1,840",
+          "pct": 14.8
+        },
+        {
+          "name": "文件解析服務",
+          "count": "980",
+          "pct": 7.9
+        },
+        {
+          "name": "影像分析服務",
+          "count": "640",
+          "pct": 5.1
+        },
+        {
+          "name": "其他服務",
+          "count": "450",
+          "pct": 3.6
+        }
+      ]
+    },
+    "key_vault": {
+      "title": "金鑰庫",
+      "columns": [
+        "API Key 名稱",
+        "服務類型",
+        "剩餘配額",
+        "日限制",
+        "狀態"
+      ],
+      "rows": [
+        {
+          "name_masked": "LLM-Primary-Key *********",
+          "service": "語言模型",
+          "quota_left": "62%",
+          "daily_limit": "2.0M tok",
+          "status": "正常",
+          "status_tone": "green"
+        },
+        {
+          "name_masked": "Embed-Index-Key *********",
+          "service": "向量檢索",
+          "quota_left": "41%",
+          "daily_limit": "500K req",
+          "status": "警示",
+          "status_tone": "yellow"
+        },
+        {
+          "name_masked": "DocParse-Key *********",
+          "service": "文件解析",
+          "quota_left": "88%",
+          "daily_limit": "10K doc",
+          "status": "正常",
+          "status_tone": "green"
+        },
+        {
+          "name_masked": "Vision-Aux-Key *********",
+          "service": "影像分析",
+          "quota_left": "12%",
+          "daily_limit": "2K img",
+          "status": "異常",
+          "status_tone": "red"
+        }
+      ],
+      "footer_link": "管理金鑰策略與配額 →",
+      "policy_note": "僅遮罩展示 · ≠ 明文 · ≠ .env 讀取"
+    }
+  },
+  "operator_fields": {
+    "ok": true,
+    "schema_version": "p89_operator_fields_v1",
+    "read_only": true,
+    "demo": false,
+    "case_ref": "demo_phase",
+    "message": "P8.9 five-key live projection overlay (read_only · ≠ prod Operator)",
+    "count": 8,
+    "fields": [
+      "event_id",
+      "ack_status",
+      "handler_id",
+      "dispatch_registry_hit",
+      "dlq_flag"
+    ],
+    "rows": [
+      {
+        "event_id": "217f0cd1-4ead-4d54-9454-de9c40efa543",
+        "event_type": "intake.gate_decision",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": false,
+        "registered_handler_ids": [],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "3376ab19-ce2b-4128-bba5-ec6305adc77c",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "a062089c-907a-4ada-8d90-5ae0201b94b3",
+        "event_type": "run.completed",
+        "ack_status": "acked",
+        "handler_id": "run_terminal_log_v1",
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "run_terminal_log_v1",
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "bacb9507-1505-4f30-9aa9-3145f475b267",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "40c0b99c-2c0b-4d41-9de0-8c4001c29941",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "92dec3b0-9dfc-44d7-9c3d-a5b71189e63a",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "a559388f-7f1b-4258-a4bf-c40bfc3e4769",
+        "event_type": "intake.gate_decision",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": false,
+        "registered_handler_ids": [],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "f38afeff-6c94-456f-acd5-8436614635e3",
+        "event_type": "run.completed",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "run_terminal_log_v1",
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      }
+    ],
+    "source": "delivery.p89_operator_fields_v1"
+  },
+  "non_claims": [
+    "≠ Grafana",
+    "≠ PG soak",
+    "≠ DarkOps 解禁",
+    "≠ 金鑰明文",
+    "≠ Operator prod",
+    "≠ Phase% authorize",
+    "≠ Round-2 GO",
+    "≠ live SLO 承諾"
+  ],
+  "data_source": "live_projection",
+  "live_overlays": {
+    "p89_operator_fields": {
+      "ok": true,
+      "count": 8,
+      "case_ref": "demo_phase"
+    },
+    "command_queue": {
+      "ok": true,
+      "ready_count": 0,
+      "blocked_count": 8,
+      "priority_next_ids": [
+        "human-H2-infra-spec",
+        "P6-nightly-continue",
+        "P7-Round-2-defer",
+        "WAVE6-unified-close"
+      ],
+      "note": "read-only QUEUE narrative · ≠ Round-2 execute"
+    },
+    "metrics_note": "toolchain /metrics stub narrative only · ≠ Prometheus soak claim",
+    "gate_note": "P7.5 gate/alerts/sink contract alignment · file_stub · ≠ prod alert sink"
+  }
+}

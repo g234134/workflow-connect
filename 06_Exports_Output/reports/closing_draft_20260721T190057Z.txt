@@ -1,0 +1,38 @@
+【結案報告草案 · v2.56】
+生成時間：2026-07-21T19:00:57+00:00
+
+一、處理總量：池 36245 件；本次比對掃描/快取 100 條；A 級命中 11 條
+二、雜訊過濾率（示意）：99.89%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_run_list_response.py | score=8.8 | sim=0.83% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_run_list_response.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilevit.py | score=8.8 | sim=0.79% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mobilevit.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bridgetower.py | score=8.8 | sim=0.73% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bridgetower.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_fused.py | score=8.8 | sim=1.98% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_fused.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_systems.py | score=8.8 | sim=1.4% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_systems.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_granite_speech.py | score=8.44 | sim=0.75% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_granite_speech.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_holiday.py | score=7.99 | sim=1.35% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_holiday.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_cpp_micro_gemm.py | score=7.97 | sim=1.75% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_cpp_micro_gemm.py
+9. llms.py | score=7.65 | sim=1.89% | D:\大唐三省六部\02_Agents_Core\repos\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\libs\core\langchain_core\language_models\llms.py
+10. AI_Chariot_Legacy_666_1.0.0_20260508_grpc_helpers.py | score=7.59 | sim=0.98% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_grpc_helpers.py
+11. AI_Chariot_Legacy_666_1.0.0_20260508_genai_tuning_service.py | score=7.59 | sim=1.55% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_genai_tuning_service.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）
+  · 使用 internal_wave 平台進行數據清算
+  · 樣本數為 100，平均值為 5.622
+
+六、使用建議：
+  · 根據數據清算結果進行資產優化
+  · 使用精煉波次進行 Asset_Value 的精煉
+  · 監控 noise_filter_rate_pct_hint 來優化數據清算過程
+
+七、摘要：
+本次全量數據清算大戰役（Asset_Value 精煉波次）使用 internal_wave 平台進行數據清算，樣本數為 100，平均值為 5.622。數據清算結果顯示，精煉波次對 Asset_Value 的精煉具有重要作用。根據數據清算結果，建議進行資產優化，使用精煉波次進行 Asset_Value 的精煉，並監控 noise_filter_rate_pct_hint 來優化數據清算過程。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

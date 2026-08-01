@@ -1,5 +1,8 @@
 # Knowledge Layer — Phase 2 單一主方案
 
+> **实现细节**：本檔 `knowledge-layer.md` 描述雙 pipeline 技術實作與 CLI 入口。  
+> **收录契约**：`docs/phase2-knowledge-indexing-contract-v1.md`（Phase 2 SSOT：什么算被收录、登记流程、Wave/Phase 标注）。
+>
 > **版本**：v0.1（Phase 2 收尾）  
 > **更新**：2026-06-05  
 > **角色**：Knowledge Layer Engineer / Data Pipeline Engineer 接戰入口  
@@ -301,6 +304,8 @@ Ask 主路：`core/retrieve_core.perform_retrieve_query` → LangGraph `retrieve
 | `workflow_v2/20_pilot/W3-B/W3-B_index_pipeline_runbook.md` | 案卷 KB 回填 |
 | `04_Workflows/SPEC_repo_tool_catalog_v1.md` | Repo 工具 catalog |
 | `04_Workflows/00_Agent_Work_Progress.md` | D1/D2/D3、R1/R2 實測證據 |
+| `docs/phase2-knowledge-indexing-contract-v1.md` | Phase 2 **收录契约** SSOT（indexed/catalogued/excluded；登记流程） |
+| `04_Workflows/tickets/WA-T1-phase2-knowledge-indexing-contract-v1_state.md` | WA-T1 票 state |
 | `docs/architecture.md` | 系統分層總覽 |
 
 ---

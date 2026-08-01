@@ -1,0 +1,39 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-09T14:45:16+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 12 條
+二、雜訊過濾率（示意）：88.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_maskformer_swin.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_maskformer_swin.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_test_morestats.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_morestats.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_markdown.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_markdown.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_moonshine_streaming.py | score=8.798 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_moonshine_streaming.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508__validators.py | score=8.52 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__validators.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle.py | score=8.4 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_test_encryption.py | score=7.94 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_encryption.py
+8. __init__.py | score=7.84 | sim=None% | D:\大唐三省六部\02_Agents_Core\repos\AI_Chariot_Legacy_666_1.0.0_20260508_langgraph\libs\checkpoint\langgraph\checkpoint\base\__init__.py
+9. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_upernet.py | score=7.67 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_upernet.py
+10. AI_Chariot_Legacy_666_1.0.0_20260508_cse_main.py | score=7.62 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_cse_main.py
+11. AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_oneformer.py | score=7.6 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_oneformer.py
+12. AI_Chariot_Legacy_666_1.0.0_20260508_realtime_swarm.py | score=7.51 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_realtime_swarm.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）採用內部波次平台
+  · 樣本數為100，平均值為5.504，等級分布為D：24，B：60，C：4，A：12
+  · 掃描數為100，精英資產匹配數為12，池大小為36236
+
+六、使用建議：
+  · 根據match_report數據，優先考慮高產出率的資產
+  · 結合noise_filter_rate_pct_hint數據，調整噪音過濾率以優化結果
+  · 利用virtual_savings_twd_hint數據，評估虛擬儲蓄的潛在收益
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個內部波次平台的數據清算任務，樣本數為100，平均值為5.504。根據match_report數據，精英資產匹配數為12，池大小為36236。結合noise_filter_rate_pct_hint和virtual_savings_twd_hint數據，可以優化結果和評估虛擬儲蓄的潛在收益。這個任務的目標是優化資產的分配和管理，提高產出率和儲蓄率。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

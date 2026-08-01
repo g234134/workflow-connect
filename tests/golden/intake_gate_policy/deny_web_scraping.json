@@ -1,0 +1,41 @@
+{
+  "decision": "reject",
+  "reason_codes": [
+    "policy_deny_web_scraping",
+    "supported_task",
+    "unknown_client_profile"
+  ],
+  "gate_checks": [
+    {
+      "rule_id": "POLICY-DENY-PHI",
+      "passed": true,
+      "detail": "deny rule not matched"
+    },
+    {
+      "rule_id": "POLICY-DENY-WEB-SCRAPING",
+      "passed": false,
+      "detail": "provenance.source_type=web_scraping"
+    },
+    {
+      "rule_id": "POLICY-DENY-AUDIO-VIDEO",
+      "passed": true,
+      "detail": "deny rule not matched"
+    },
+    {
+      "rule_id": "POLICY-DENY-SCALE",
+      "passed": true,
+      "detail": "deny rule not matched"
+    },
+    {
+      "rule_id": "POLICY-TASK-01",
+      "passed": true,
+      "detail": "task_type=tabular.cleaning.mvp supported in tabular set"
+    },
+    {
+      "rule_id": "POLICY-UNKNOWN-01",
+      "passed": false,
+      "detail": "profile=synthetic not in allowlist tiers"
+    }
+  ],
+  "policy_version": "intake_gate_policy_v1"
+}

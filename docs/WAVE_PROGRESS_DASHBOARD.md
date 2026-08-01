@@ -35,17 +35,118 @@
 
 ## Phase 完成度表（Toolchain + 跨轨 · SSOT）
 
-> **口径**：本表为 **Phase% 唯一 SSOT**；readme / 执行计划 **仅引用**。`cases/demo_phase/raw/Phase.csv` 为 Tabular 输入 maturity 范例，**不是**本表数据源。
+> **口径**：本表为 **Phase% 唯一 SSOT**；readme / 执行计划 **仅引用**。`cases/demo_phase/raw/Phase.csv` 为 Tabular 输入 maturity 范例，**不是**本表数据源。  
+> **结构 / 权责 / P5·P6 指标槽**：`docs/wave-progress-dashboard-skeleton-v1.md`（数字轨 vs 叙事轨 · **不重算 %**）。  
+> **最近寫入（2026-07-13）**：W-PROG A/B · triple／P8 鏈 · wave013 · `P8 92→100`（via `_phase_pct_apply.py`）；數字以下方「当前」列／Gauge 為準。
 
-| Phase | 基线 | **本轮目标** | 主要票 | 证据摘要 |
-|-------|------|-------------|--------|----------|
-| **P8.5** 底層 Runbook 索引 | 55% | **72%** | **WB-T6** | `WAVE_B_TOOLCHAIN_EXECUTION_PLAN.md` · `wave-b-toolchain-readme-v1.md` · WORKFLOW_INDEX §1.26 |
-| **P8.6** Tool Catalog SSOT | 65% | **85%** | WB-T1 | `tool-catalog-and-selector-contract-v1.md` |
-| **P8.7** Selector 推荐契约 | 60% | **85%** | WB-T1 | 同上 §4 |
-| **P8.8** Executor / Sandbox | 58% | **82%** | WB-T2 | `tool-executor-and-sandbox-safety-contract-v1.md` |
-| **P8.9** Outbox / Feedback | 40% | **80%** | WB-T3 · WB-T5 | `outbox-and-feedback-layer-contract-v1.md` · audit spec join §4 |
-| **P5** Dashboard / 离线健康度 | 70% | **85%** | WB-T4 · WB-T5 | `toolchain-health-dashboard-v1.md` · `audit-quickview-and-case-history-spec-v1.md` |
-| **P6** 测试观测面 extension | 84% | **88%** | WB-T7 · WB-T4 · WA-T6 | `routing/toolchain_smoke_matrix_v1.yaml` · Phase 6 附录 A |
+| Phase | 基线（06-12） | 当前（07-13 · W-PROG-wave013） | 主要票 | 证据摘要 |
+|-------|-------------|---------------------------|--------|----------|
+| **P1** 治理層 | ~92% | **91%** | W1-T1B · WA-T3 | `governance-constitution-v1.md` · `ENGINEERING_CONTRACT.md` · 本轮无新票 |
+| **P2** 知識層 / Index | 65%→82% | **68%** | WA-T1 · **C2-P2 Tabular** · **FP-G2-T6** | `phase2-knowledge-indexing-contract-v1.md` · Tabular 子域 C2-P2 · **index hook thin runtime**（fixture dry-run · ≠ prod ingest）· 全局 RAG job 仍 gap |
+| **P3** 可觀測性 / Trace | Done | **82%** | WA-T3 · trace v2 · **C2-P2 Tabular** | `docs/observability.md` · gov-trace-v2 13/13 · **Tabular 子域**：automation run log + ops summary · Langfuse/PG 对齐仍 deferred |
+| **P4** 多智能體協作 | 75%→85% | **78%** | WA-T4 · W5-T0 · **W5-T1 Multi-Chat** | `phase4-multi-agent-collaboration-contract-v1.md` · **07-13 W-PROG-B +2**：ticket commands／skill／`multi_chat_roles.mdc` 落地（編排層 · ≠ prod multi-agent runtime） |
+| **P5** Dashboard / 离线健康度 | 70%→85% | **73%** | WB-T4 · **MP-METRICS-HTTP** · **P5-metrics stub** | toolchain health + **metrics HTTP** `GET /metrics` + Grafana/JSON 對照 stub；Grafana/PG soak 仍 placeholder · **W-PROG-wave013 +2** |
+| **P6** 测试 / 回归 gate | 84%→88% | **91%** | WB-T7 · **WF-P6-INT-CI-LANDING** · **C2-P2 Tabular** | INT gate contract · Tier-A live 112/112 · **Track B nightly + Track A PR optional CI landed**（`p6-int-gate-nightly.yml` · `p6-int-gate-pr-optional.yml` · **非** PR mandatory）· 綠日鐘 **≥7/7 已滿**（DAY7=`29568619424`）· 裁決包 `docs/governance/p6_uplift_decision_pack_83_to_91_v1.md` · **83→91 待尚書省再簽**（≠ 自動 uplift） |
+| **P7** 自動客戶溝通 | ~48%→52% | **30%** | **WD-P7-T*** · **WH-P7-NOTIF-*** · **WH-P7-PROD-*** | **Round-1 local slot validated**（run_id `20260623T165252Z` · S1–S4 GO · simulated governance_dual）；**H1 approved** `GOV-DUAL-APPROVAL-2026-07-13-01`（具名 2026-07-28 · war_status v2.63）；**Round-2 execute-v2 仍 `blocked`／armed-not-run**（H2–H5：Infra／Security／allowlist／receiver · 無 P-GO）；sandbox **~90%** · prod phase-1 adapter+unittest **ready**。**≠ Round-2 GO · ≠ prod-ready · ≠ 客戶 staging endpoint**；required CI **未落地** |
+| **P7.5** Intake Gate | ~62%→75% | **51%** | **P75-G2/G3/G4 · P75-REG · P75-G5 · P75-G6/G7 · W3-SMOKE** | gate layer + policy + notify + E2E + SLO probe + **alert sink + HTTP gate stub + 煙霧串線**；UI／prod alert 未做 · **W-PROG-wave013 +3** |
+| **P8** 商業化交付 / Operator | ~68%→78% | **100%** | **P8-T2 · P8-T2b · P8-T2c · P8-T3-mock · P8-API · MP-SMOKE** · **BATCH-MVP-02/03/04** | backlog + batch/resume + **checkpoint preview** · **notify mock／DLQ／replay**（≠ prod webhook · ≠ 真 Worker）· HTTP API · Tabular · batch mock E2E |
+| **P8.5** Browser / Computer Use | 55%→72% | **20%** | **WD-P85-T*** · **WH-P85-*** | **Scenario1 / CI-LAND OK**；dom-port + CI 17→20 + run-record；**W-PROG-B +2**：Scenario2 **GA-remote recorded**（run `29157178993` · evidence SSOT complete）· ops-run **`done`**；bridge **≠ prod browser · ≠ required CI · ≠ Playwright** |
+| **P8.6** Tool Catalog SSOT | 65%→85% | **66%** | WB-T1 · **P868 inspect** | `tool-catalog-and-selector-contract-v1.md` · runtime inspect catalog · **W-PROG-wave013 +1** |
+| **P8.7** Selector 推荐契约 | 60%→85% | **61%** | WB-T1 · **P868 inspect** | 同上 §4 · selector `plan_only` inspect · **W-PROG-wave013 +1** |
+| **P8.8** Executor / Sandbox | 58%→82% | **59%** | WB-T2 · **P868 inspect** | `tool-executor-and-sandbox-safety-contract-v1.md` · executor `dry_run` inspect · **W-PROG-wave013 +1** |
+| **P8.9** Outbox / Feedback | 40%→72% | **41%** | **P8.9-T1/T2/T3 · P8.9-REG · MP-METRICS · WD-P7-T2 · P89-W2** | consumer + feedback ack + **dispatch registry** + metrics；**T4=WD-P7-T2 webhook sandbox landed**；operator fields 投影；**W-PROG-wave013 +1**；仍缺 staging／prod SLA · Wave 4 UI |
+| **P9** 訂單 / 金流閉環 | ~55%→58% | **24%** | WC-T1–T7 · **WD-P9-T1/T2** · **WH-P9-M2-INT** · **WH-P9-CI-*** | sandbox happy-path + advisory CI landing + 本地 21/21；**W-PROG-B +2**：首跑 **RUN_URL recorded**（`29159159265` · evidence SSOT complete）；**≠ required · ≠ merge gate · ≠ prod／INT**；prod provider／ledger **仍 gap** |
+| **P10** 95% 全自動化閉環 | ~45% | **37%** | W6–W8 · W7-T4 · **W5 Wave Master** · **C2-P2 Tabular** | 實驗線 auto ≈86.7% · Tabular near-auto；**W-PROG-B +2**：Wave Master templates／commands／INDEX §1.55／ticket schema relay（編排資產 · **≠** P10 runtime 95%／prod 閉環） |
+| **P10.5** 學習 / Skill 蒸餾 | ~28% | **30%** | WC-T6 · W5-T1 registry | `distill_control_plane_skills_lite` skeleton · 无 prod 蒸馏闭环 |
+
+### Phase Completion Gauge（2026-07-28 · W-PROG · `_phase_pct_apply`）
+
+> **口径**：下列 `completion` 为 **全局 Phase%**（本表「当前」列）；**≠** Tabular 子域独立 Phase%。`cases/demo_phase/raw/Phase.csv` 为 Tabular 输入 maturity 范例，**不是**本表数据源。
+
+| Phase | completion | prev | delta |
+|-------|------------|------|-------|
+| P1 治理層 | **91%** | 90% | **+1%** |
+| P2 知識層 / Index | **68%** | 66% | **+2%** |
+| P3 可觀測性 / Trace | **82%** | 82% | 0 |
+| P3.5 成本 / 模型治理 | **55%** | 55% | 0 |
+| P4 多智能體協作 | **78%** | 77% | **+1%** |
+| P5 Dashboard / 离线健康度 | **73%** | 72% | **+1%** |
+| P6 测试 / 回归 gate | **91%** | 83% | **+8%** |
+| P7 自動客戶溝通 | **30%** | 30% | 0 |
+| P7.5 Intake Gate | **51%** | 49% | **+2%** |
+| P8 商業化交付 / Operator | **100%** | 92% | **+8%** |
+| P8.5 Browser / Computer Use | **20%** | 18% | **+2%** |
+| P8.6 Tool Catalog SSOT | **66%** | 65% | **+1%** |
+| P8.7 Selector 推荐契约 | **61%** | 60% | **+1%** |
+| P8.8 Executor / Sandbox | **59%** | 58% | **+1%** |
+| P8.9 Outbox / Feedback | **41%** | 40% | **+1%** |
+| P9 訂單 / 金流閉環 | **24%** | 22% | **+2%** |
+| P10 95% 全自動化閉環 | **37%** | 35% | **+2%** |
+| P10.5 學習 / Skill 蒸餾 | **30%** | 30% | 0 |
+
+**单行索引（playbook / Progress 可引用）**：
+
+- Phase 1: completion **91%** (prev 90%, delta **+1%**)
+- Phase 2: completion **68%** (prev 66%, delta **+2%**)
+- Phase 3: completion **82%** (prev 82%, delta 0)
+- Phase 3.5: completion **55%** (prev 55%, delta 0)
+- Phase 4: completion **78%** (prev 77%, delta **+1%**)
+- Phase 5: completion **73%** (prev 72%, delta **+1%**)
+- Phase 6: completion **91%** (prev 83%, delta **+8%**)
+- Phase 7: completion **30%** (prev 30%, delta 0)
+- Phase 7.5: completion **51%** (prev 49%, delta **+2%**)
+- Phase 8: completion **100%** (prev 92%, delta **+8%**)
+- Phase 8.5: completion **20%** (prev 18%, delta **+2%**)
+- Phase 8.6: completion **66%** (prev 65%, delta **+1%**)
+- Phase 8.7: completion **61%** (prev 60%, delta **+1%**)
+- Phase 8.8: completion **59%** (prev 58%, delta **+1%**)
+- Phase 8.9: completion **41%** (prev 40%, delta **+1%**)
+- Phase 9: completion **24%** (prev 22%, delta **+2%**)
+- Phase 10: completion **37%** (prev 35%, delta **+2%**)
+- Phase 10.5: completion **30%** (prev 30%, delta 0)
+
+
+### Phase 完成度进度条（2026-07-28 · W-PROG · `_phase_pct_apply` · 人读 Gauge）
+
+> **bar**：20 格 · `█` = 已完成 · `░` = 未完成 · **≠** CI gate · **≠** Tabular 子域独立 Phase%
+
+- Phase 1 治理層：上一版 90% → 目前版 91%（**+1**）  
+  `██████████████████░░` **91%**
+- Phase 2 知識層 / Index：上一版 66% → 目前版 68%（**+2**）  
+  `██████████████░░░░░░` **68%**
+- Phase 3 可觀測性 / Trace：上一版 82% → 目前版 82%（调整 0）  
+  `████████████████░░░░` **82%**
+- Phase 3.5 成本 / 模型治理：上一版 55% → 目前版 55%（调整 0）  
+  `███████████░░░░░░░░░` **55%**
+- Phase 4 多智能體協作：上一版 77% → 目前版 78%（**+1**）  
+  `████████████████░░░░` **78%**
+- Phase 5 Dashboard / 离线健康度：上一版 72% → 目前版 73%（**+1**）  
+  `███████████████░░░░░` **73%**
+- Phase 6 测试 / 回归 gate：上一版 83% → 目前版 91%（**+8**）  
+  `██████████████████░░` **91%**
+- Phase 7 自動客戶溝通：上一版 30% → 目前版 30%（调整 0）  
+  `██████░░░░░░░░░░░░░░` **30%**
+- Phase 7.5 Intake Gate：上一版 49% → 目前版 51%（**+2**）  
+  `██████████░░░░░░░░░░` **51%**
+- Phase 8 商業化交付 / Operator：上一版 92% → 目前版 100%（**+8**）  
+  `████████████████████` **100%**
+- Phase 8.5 Browser / Computer Use：上一版 18% → 目前版 20%（**+2**）  
+  `████░░░░░░░░░░░░░░░░` **20%**
+- Phase 8.6 Tool Catalog SSOT：上一版 65% → 目前版 66%（**+1**）  
+  `█████████████░░░░░░░` **66%**
+- Phase 8.7 Selector 推荐契约：上一版 60% → 目前版 61%（**+1**）  
+  `████████████░░░░░░░░` **61%**
+- Phase 8.8 Executor / Sandbox：上一版 58% → 目前版 59%（**+1**）  
+  `████████████░░░░░░░░` **59%**
+- Phase 8.9 Outbox / Feedback：上一版 40% → 目前版 41%（**+1**）  
+  `████████░░░░░░░░░░░░` **41%**
+- Phase 9 訂單 / 金流閉環：上一版 22% → 目前版 24%（**+2**）  
+  `█████░░░░░░░░░░░░░░░` **24%**
+- Phase 10 95% 全自動化閉環：上一版 35% → 目前版 37%（**+2**）  
+  `███████░░░░░░░░░░░░░` **37%**
+- Phase 10.5 學習 / Skill 蒸餾：上一版 30% → 目前版 30%（调整 0）  
+  `██████░░░░░░░░░░░░░░` **30%**
+
 
 ---
 
@@ -59,9 +160,50 @@
 | **Wave 4** | Routing ↔ Tool Layer 銜接 | **4/4 done** | W4-T1 · W4-T2 · W4-T3-A · W4-T4-routing-ci-hooks | `docs/routing-tool-layer-glue-v1.md` · `docs/routing-eval-runner-v1.md` · `docs/tabular-intake-tool-path-v1.md` · `docs/tabular-mvp-release-checklist.md` · `.github/workflows/eval-gate-ci.yml`（W4-T4 dry-run step） |
 | **Wave 5** | Multi-Agent Collaboration & Decision Helper | **W5-T0 done / W5-T1 implementer done / W5-T1B done** | W5-T0-multi-agent-collaboration-docs · W5-T1-intake-decision-rules-v1 · W5-T1B-intake-decision-agent-entry | `docs/multi-agent-collaboration-spec-v1.md` · `docs/intake-decision-rules-v1.md` · `routing/intake_decision_rules_v1.py` · `scripts/run_agent_intake_decision_demo.py` |
 | **Phase 4** | Multi-Agent Collaboration **Contract** | **WA-T4 done · 75%→85%** | **WA-T4-phase4-multi-agent-collaboration-contract-v1** | **`docs/phase4-multi-agent-collaboration-contract-v1.md`** · `tests/test_phase4_multi_agent_contract_v1.py` |
-| **Wave 6** | Skill Card & Agent Standard Line | **multiple done / Reviewer pending** | W6-T1–T9 · W6-T3–T8 | docs/skill-cards-v1.md · docs/agent-run-standard-case-experiment-v1.md · docs/agent-standard-line-governance-view-v1.md |
+| **Wave 6** | Skill Card & Agent Standard Line | **W6-T5/T6/T10 done · accepted_with_gaps** | W6-T1–T10 · W6-T3–T8 | docs/skill-cards-v1.md · docs/agent-run-standard-case-experiment-v1.md · **W6-T5/T6 整合層 checkpoint 行為修復完成**（outbox-root fallback · auto_approve skip）；gap=path 語義文件化 · orchestrator redirect 可選 |
 | **Wave 7** | Run Path · Fixtures · Controlled Notify · v2 設計收斂 | **W7-T1–T3 implementer done / W7-T4 design done** | W7-T1 · W7-T2 · W7-T3 · **W7-T4** | `docs/ninety-five-percent-automation-blueprint-v2.md` · `docs/skill-cards-v2.md` · `docs/skill-map-v2.md` · `docs/agent-standard-line-governance-view-v2.md` · `delivery/controlled_notify_experiment_v1.py` |
 | **Wave 8** | Experimental Fixture Run Paths · Delivery Approval CLI | **W8-T1 done · W8-T3 implementer done** | W8-T1 · **W8-T3** | `scripts/run_delivery_approval_cli.py` · `docs/delivery-approval-one-click-cli-v1.md` |
+| **Wave 9** | Non-Tabular Shadow · Controlled Walkthrough | **W9-NT done · accepted** | W9-T2–T6 · **W9-NT** | NT fixtures + preview CLI · **README v2 §3.5 8 步 walkthrough**（docu-corp + log-analytics-co） |
+| **Wave 10** | Agent Lines CI · Registry · Metrics | **W10-T2 registry done · accepted_with_gaps** | W10-T1 · **W10-T2-selector** · W10-T3/T4 | `run_agent_lines_ci_suite.py` · **registry fail-closed policy 已落地**（env gate 預設 off · strict opt-in） |
+
+---
+
+## Agent Lines v1 必做圈 — 進度快照（2026-06-16）
+
+> **口径**：Tabular Standard Line v2 + Non-Tabular shadow v1 + CI/registry/guard 最小可交付子集；票級細節見各 `*_state.md` C/D_REPORT。
+
+| 必做項 | 票 | Reviewer | 一句摘要 |
+|--------|-----|----------|----------|
+| Checkpoint A/B 整合層修復 | **W6-T5** · **W6-T6** | `accepted_with_gaps` | outbox-root 三層 fallback + `needs_review`+`auto_approve` skip 已入整合層；9/9 + 11/11 unittest · orchestrator 24/24 OK |
+| Orchestrator ↔ 整合層接線 | **W6-T10** | `accepted_with_gaps` | S4/S12 改接 W6-T5/W6-T6；**deferred** 縮至 path 語義文件 · sandbox e2e CP-B · S15 notify |
+| NT controlled walkthrough | **W9-NT** | **`accepted`** | 8 步命令鏈 · NT-A/B 雙 fixture · audit quickview · **README v2 §3.5** |
+| Registry fail-closed policy | **W10-T2-selector** | `accepted_with_gaps` | Tabular selector 只讀消費 `approved_registry.json` · `TABULAR_APPROVED_REGISTRY_*` env gate **預設關** · strict fail-closed opt-in · 16/16 OK |
+| Experimental fixture guard T1 | **W4-GUARD-01** | **accepted_with_gaps（T1）** · **G2–G4 opt-in DONE** | T1：`additional_demo`/`sandbox_client` 需 `--include-extended-fixtures`；G2–G4：`FP-G1-T3` opt-in · 預設 off · ≠ required CI（2026-07-28 全開） |
+
+**後續工作（建議）**（來源：W6-T10 `C_REPORT` / `B_REPORT` · W6-T5/T6 `C_REPORT` suggestions）
+
+| 建議票 | 說明 |
+|--------|------|
+| **W6-T10-cleanup-orchestrator-checkpoint-workarounds-v1** | 收斂 W6-T10 orchestrator workaround：移除 auto-approve bypass 與 outbox redirect；改為 `maybe_create_checkpoint_a/b(..., auto_approve=auto_approve_*)` 並直接傳 `outbox_root_override`；更新 `test_custom_outbox_root_*` docstring（W6-T5/W6-T6 整合層 fix 已 landed · C_REPORT 優先 follow-up；文件層 LEGACY 標註已完成，runtime 收斂留本票） |
+| **W6-T10-cleanup-v2-remove-legacy-redirect** | 完整移除 Issue 2 LEGACY redirect（L487–502、L664–682）；直接傳 `outbox_root_override` 至整合層；更新測試使 external outbox 路徑與 caller 預期一致（B_REPORT · partial cleanup 後拆票） |
+| **W12-T2-sandbox-e2e-checkpoint-b-full-integration-v1**（**done**） | sandbox e2e 已接 `maybe_create_checkpoint_b`（W12-T2 · 2026-07-28 全開收口 · 舊敘事「僅 can_proceed」作廢） |
+| **checkpoint_path 語義文件化**（W6-T5/T6 `C_REPORT` · **done**） | 票 `W6-T5-T6-docs-checkpoint-path-semantics-v1` **DONE** · A/B docs §7 三層 fallback + consumer 已落地（B4 verify-and-close · cross-ref） |
+| **preview `checkpoint_b_status` 補 `integration_layer`**（**done**） | 票 `preview-checkpoint-b-status-integration-layer-v1` · preview／早期退出對齊 |
+
+### Agent Lines v1 後續待排票池（建議優先序）
+
+> **口徑**：僅收錄「後續工作（建議）」表與 W6-T10 / W6-T5 / W6-T6 / W12-T2 之 `C_REPORT`／`B_REPORT` 明確 suggestion／deferred；**不含**已 landed 的 W6-T5/T6 整合層 bugfix（auto-approve skip · outbox-root fallback）。
+
+| 票名 | 類型 | 來源 | 建議優先級 | 一句摘要 |
+|------|------|------|------------|----------|
+| **W6-T10-cleanup-orchestrator-checkpoint-workarounds-v1** | cleanup | W6-T10 `C_REPORT` · 後續工作表 | **High** | 收斂 orchestrator 雙重 enforcement：移除 auto-approve bypass 與 outbox redirect，改 `maybe_create_checkpoint_a/b(..., auto_approve=*)` 並直接傳 `outbox_root_override`；更新 `test_custom_outbox_root_*` docstring（文件層 LEGACY 標註已完成，runtime 收斂留本票） |
+| **W6-T10-cleanup-v2-remove-legacy-redirect** | cleanup | W6-T10 `B_REPORT` · 後續工作表 | **High** | 完整移除 Issue 2 LEGACY redirect（L487–502、L664–682）；直接傳 `outbox_root_override` 至整合層；更新測試使 external outbox 路徑與 caller 預期一致 |
+| **W12-T2-sandbox-e2e-checkpoint-b-full-integration-v1** | feature | W6-T10 `C_REPORT`／`B_REPORT` · 後續工作表 | **done** | 完整 `maybe_create_checkpoint_b` 寫檔路徑 · 2026-07-28 全開收口 |
+| **checkpoint_path 語義文件化**（`W6-T5-T6-docs-checkpoint-path-semantics-v1`） | docs | W6-T5/T6 `C_REPORT` · 後續工作表 | **done** | A/B docs §7 三層 fallback + consumer 已落地 · B4 verify-and-close（≠ Phase%／runtime） |
+| **preview `checkpoint_b_status` 補 `integration_layer`** | docs/code | W6-T10 `C_REPORT` 小缺口 | **done** | `preview-checkpoint-b-status-integration-layer-v1` · 早期退出亦補欄位 |
+| **S8–S10 主鏈真實執行 · S15 notify gateway** | feature | W6-T10 `C_REPORT` deferred · FRAME NonScope | **Low** | 實驗線 S8–S10 真實執行與 S15 通知閘道；維持 deferred，不阻擋 Agent Lines v1 必做圈 |
+
+**Agent Lines v1 故事位置**：Wave 6 完成 HITL 整合層與 orchestrator 接線（實驗線可 preview/run CP-A/B）；Wave 9 提供 Non-Tabular 一線 walkthrough；Wave 10 落地 registry 策略層（prod gate 仍 off）；Lane A **W4-GUARD-01 T1** 防止 extended fixture 默認混入 regression。
 
 **驗證命令（本地 smoke）**
 
@@ -246,7 +388,7 @@ python scripts/run_agent_audit_quickview.py --case-ref demo_phase --format json
 
 ---
 
-## Phase 4 — Multi-Agent Collaboration Contract · **85%**（WA-T4 done · 75%→85%）
+## Phase 4 — Multi-Agent Collaboration Contract · **75%**（WA-T4 done · 75%→85%）
 
 **一句話**：在 W5-T0 三份 docs + `multi_chat_roles.mdc` 之上，升格 **Phase 4 contract SSOT**（四角色 contract 表、O→B→C→D 工作流、routing 决策树、STATE 写入冻结）；Wave B/C 可直接引用 contract 假设。
 
@@ -267,22 +409,25 @@ python -m unittest tests.test_phase4_multi_agent_contract_v1 -v
 
 ---
 
-## Wave 6 — Skill Card & Skill Map · **W6-T1 implementer done / Reviewer pending**
+## Wave 6 — Skill Card & Agent Standard Line · **W6-T5/T6/T10 done · accepted_with_gaps**
 
-**一句話**：將 Wave 1–5 穩定的 Tabular MVP 工作流抽象為 **Skill Cards**（可重用工作流卡片），並建立 **Skill Map**（模組 → 流程步驟映射），供未來 Agent 快速定位實作入口。
+**一句話（Agent Lines v1）**：Wave 6 是 Tabular **Agent Standard Line** 的 HITL 與 orchestrator 主幹——**W6-T5/T6 整合層 checkpoint 行為已修復**（`accepted_with_gaps`：path 語義文件化 · orchestrator redirect 可選）；W6-T10 已接線 S4/S12；Skill Cards/Map 與 15 步實驗線設計供一線定位入口；sandbox e2e 與 S15 notify 仍 out of scope。
 
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
 | **W6-T1-skill-card-and-skill-map-v1** | implementer done · Reviewer pending | Skill Cards（2 張）+ Skill Map（8 步驟）：\| `docs/skill-cards-v1.md` — Card A: demo_phase、Card B: sampleco/2026-0001（10 欄位模板）\| `docs/skill-map-v1.md` — intake → decision → glue → selector → executor → outbox → inspect → release 映射表 \| 純文檔、不改程式碼 |
 | **W6-T2** | planned · not_started | 延伸 Skill Card（可選新案例，如 `acme/2026-0001` 或其他 schema 類型）|
 | **W6-T3-agent-run-standard-case-experiment-v1** | **design · in_progress** | 15 步標準實驗線設計（S1 Intake → S15 Notify）：\| docs/agent-run-standard-case-experiment-v1.md — 完整流程規格、Checkpoint A/B 整合、驅動者分布 \| 限定 demo_phase / sampleco 案型、設計 only（無程式碼）、預留實作票（W6-T5 Checkpoint A, W6-T8 Checkpoint B 等）|
-| **W6-T6-integrate-checkpoint-b-delivery-gate** | **implementer done · Reviewer pending** | Checkpoint B 整合層（工具層）：\| `hitl/checkpoint_b_integration_v1.py` — output_guard → checkpoint B → `delivery_plan` \| `docs/checkpoint-b-integration-v1.md` \| `tests/test_checkpoint_b_integration_v1.py` \| 不接 client notify、不改主鏈 delivery |
+| **W6-T6-integrate-checkpoint-b-delivery-gate** | **done · `accepted_with_gaps`** | Checkpoint B 整合層：\| `hitl/checkpoint_b_integration_v1.py` — output_guard → checkpoint B → `delivery_plan` \| outbox-root 三層 fallback（2026-06-16）\| 11/11 unittest OK · **gap**：`checkpoint_path` 語義文件化 · orchestrator redirect 可選 |
 || **W6-T7-experiment-eval-and-replay-guide-v1** | **implementer done · Reviewer pending** | 實驗線驗收、replay、失敗分析完整指南：\| `docs/agent-run-experiment-eval-guide-v1.md` — §1-§6 完整（三級成功定義 Preview/Auto/Full HITL、五階段 replay Decision/CP-A/Route/CP-B/Delivery、六類失敗 F1-F6 診斷順序、G1-G7 升級條件）\| 純文檔、不改程式碼 |
-| **W6-T5-integrate-checkpoint-a-intake-confirmation** | **implementer done · Reviewer pending** | Checkpoint A 整合層：\| `hitl/checkpoint_a_integration_v1.py` — `build_checkpoint_a_payload` / `maybe_create_checkpoint_a` / `resume_plan_from_checkpoint_a` \| `docs/checkpoint-a-integration-v1.md` \| `tests/test_checkpoint_a_integration_v1.py` — demo_phase / sampleco / approve·revise·reject \| 僅 outbox/ 寫入；不改主鏈/UI |
+| **W6-T5-integrate-checkpoint-a-intake-confirmation** | **done · `accepted_with_gaps`** | Checkpoint A 整合層：\| `maybe_create_checkpoint_a` — outbox-root fallback + `needs_review`+`auto_approve` skip（不寫檔）\| 9/9 unittest OK · orchestrator 24/24 OK · **gap**：path 語義 consumer 規則 · orchestrator `.temp_test_outbox_area` redirect 可選 |
 | **W6-T4-agent-run-standard-case-orchestrator-v1** | **implementer done · Reviewer pending** | Agent-run 標準案實驗線 orchestrator CLI：\| `scripts/run_agent_standard_case_experiment.py` — preview/run 串接 W5-T1B + W4-T1 + W4-T3 + W5-T2B \| `docs/agent-run-standard-case-orchestrator-v1.md` · `tests/test_agent_standard_case_experiment.py` |
+| **W6-T10-orchestrator-checkpoint-wiring-v1** | done · **`accepted_with_gaps`** | S4/S12 改接 W6-T5/W6-T6 整合層（移除 inline checkpoint 邏輯）· preview 不寫 outbox · run 依整合層觸發寫 A/B · 24/24 unittest OK · **deferred**（2026-06-16 縮減）：path 語義文件 · sandbox e2e CP-B 完整寫檔 · S15 notify |
 | **W6-T8-agent-standard-case-experiment-regression-v1** | **implementer done · Reviewer pending** | 實驗線輕量回歸鉤子：\| `scripts/run_agent_standard_case_regression.py` — 一鍵 demo_phase + sampleco preview \| JSON 寫入 `outbox/agent_experiment_regression/` \| `docs/agent-standard-case-regression-v1.md` · `tests/test_agent_standard_case_regression.py` \| 不改 MVP mainline regression |
 | **W6-T9-agent-standard-line-governance-view-v1** | **design done** | 治理觀點文檔：\| `docs/agent-standard-line-governance-view-v1.md` — 15 步決策權分佈（S1-S15 人類/Agent 權責） / 10 類 audit log 檔案清單 / R1-R5 風險 safeguard 分層 / 95%→100% 升級路徑治理原則 \| 純文檔、無程式碼變更 |
 | **W7-T2-increase-agent-run-mode-coverage-v1** | done · `accepted_with_gaps` | Run 模式覆蓋擴大：\| `scripts/run_agent_standard_case_experiment.py` — per-case run_path_profile（demo_phase→bundle；sampleco→checkpoint_b）\| `scripts/run_agent_standard_case_regression.py` — `--run-mode run-all-allowed` \| `docs/agent-run-experiment-eval-guide-v1.md` §2.4 \| `tests/test_agent_standard_case_experiment.py` · `tests/test_agent_standard_case_regression.py`（31 tests OK） |
+
+> **註（Wave 6 · 2026-06-16 · Agent Lines v1 必做圈）**：**W6-T5** / **W6-T6** Reviewer **`accepted_with_gaps`** — 整合層 outbox-root 三層 fallback + `needs_review`+`auto_approve` skip 已落地（9/9 + 11/11 OK；orchestrator 24/24 OK）。**gap**：`checkpoint_path` 語義文件化 · W6-T10 orchestrator redirect 可選保留。**W6-T10** deferred 自 outbox/auto_approve bugfix 縮減至 path 語義 · sandbox e2e CP-B · S15 notify。
 
 **Skill Card 對照**
 
@@ -363,12 +508,13 @@ python scripts/run_delivery_approval_cli.py --case-dir cases/demo_phase --action
 
 ---
 
-## Wave 9 — Non-Tabular Shadow Preview
+## Wave 9 — Non-Tabular Shadow Preview · **W9-NT walkthrough done**
 
-**一句話**：W9-T4 preview orchestrator CLI 串接 non-tabular decision v2 + glue + selector stub；sandbox outbox only，不執行 heavy tools、不碰 Tabular 主鏈。
+**一句話（Agent Lines v1）**：Wave 9 把 Non-Tabular shadow 從 blueprint 推進到 **一線可複製 walkthrough**——fixtures（W9-T5/T6）+ preview CLI（W9-T4）+ **W9-NT 8 步命令鏈**（`accepted` · README v2 §3.5）；heavy execute / OCR 仍 deferred。
 
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
+| **W9-NT-CONTROLLED-WALKTHROUGH-V1** | **done · `accepted`** | 8 步 walkthrough（unittest → preview → audit quickview）· NT-A `docu-corp` + NT-B `log-analytics-co` · **README v2 §3.5** · shadow-only · **deferred**：OCR / run mode / CP-A/B |
 | **W9-T4-non-tabular-orchestrator-preview-v1** | done · `accepted_with_gaps` | `run_non_tabular_experiment_preview.py` · glue + selector stub · NT-A/NT-B preview · sandbox outbox · 11/11 tests OK · blocked for non-`non_tabular.*` |
 
 **驗證命令**
@@ -378,36 +524,43 @@ python -m unittest tests.test_non_tabular_orchestrator_preview_v1 -v
 python scripts/run_non_tabular_experiment_preview.py --task-type non_tabular.document.extract --case-dir cases/_experiment_samples/nt_docu_stub --format json
 ```
 
-**票 state**：`04_Workflows/tickets/W9-T4-non-tabular-orchestrator-preview-v1_state.md`
+**票 state**：`04_Workflows/tickets/W9-NT-CONTROLLED-WALKTHROUGH-V1_state.md` · `04_Workflows/tickets/W9-T4-non-tabular-orchestrator-preview-v1_state.md`
 
 ---
 
-## Wave 9 — Non-Tabular Shadow Implementation (start)
+## Wave 9 — Non-Tabular Shadow Implementation · **fixtures + decision + walkthrough**
 
-**一句話**：承接 W8-T4 藍圖，Wave 9 逐步實作 non-tabular family；W9-T2 先交付 v2 decision helper（NT-A/NT-B），Tabular 主鏈不變。
+**一句話（Agent Lines v1）**：承接 W8-T4 藍圖，Wave 9 逐步實作 non-tabular family；**W9-NT controlled walkthrough v1 已交付**（一線 8 步 · README v2 §3.5）；W9-T2/T3/T4/T5/T6 覆蓋 decision · selector stub · preview · 真實 fixtures。
 
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
 | **W9-T1-non-tabular-routing-catalog-v1** | **implementer done · Reviewer pending** | Catalog spec + YAML skeleton：\| docs/non-tabular-routing-catalog-v1.md — NT-A/NT-B 案型規格、routing 欄位定義、與 Tabular 差異對照 \| routing/non_tabular_routing_catalog_v1.yaml — 3 entries (NT-A, NT-B, generic)，symbolic tool names \| **設計層 only**，無 executable glue |
 | **W9-T2-non-tabular-decision-rules-v1** | done · `accepted_with_gaps` | `evaluate_intake_decision_v2` 支援 `non_tabular.*` · NT-A/NT-B profile · R-NT1 `reject` · Tabular regression 15/15 OK |
 | **W9-T3-non-tabular-tool-catalog-and-selector-stub-v1** | done · `accepted_with_gaps` | `non_tabular_tool_catalog_v1.json`（NT-A ×2 + NT-B ×2）· `select_non_tabular_tools` stub · symbolic `planned_tools` only · 9/9 tests OK |
+| **W9-T5-non-tabular-fixture-docu-corp-v1** | implementer done · Reviewer pending | NT-A fixture → `cases/docu-corp/2026-0001`（intake + `raw/documents/sample_brief.md`）· v2 decision NT-A / `needs_review` · `tests/test_non_tabular_fixture_docu_corp_v1.py`（4/4 OK） |
+| **W9-T6-non-tabular-fixture-log-analytics-co-v1** | done · `accepted_with_gaps` | NT-B fixture → `cases/log-analytics-co/2026-0001`（intake + `raw/server_logs/app_server.log`）· v2 decision NT-B / `needs_review` · `tests/test_non_tabular_fixture_log_analytics_co_v1.py`（4/4 OK） |
 
 **驗證命令**
 
 ```bash
 python -m unittest tests.test_intake_decision_rules_v2 tests.test_non_tabular_tool_selector_v1 -v
 python scripts/run_agent_intake_decision_demo.py --task-type non_tabular.document.extract --case-dir cases/docu-corp/2026-0001 --use-v2 --format json
+
+# Wave 9 NT-A/NT-B fixtures（W9-T5 / W9-T6）
+python -m unittest tests.test_non_tabular_fixture_docu_corp_v1 tests.test_non_tabular_fixture_log_analytics_co_v1 -v
+python routing/intake_decision_rules_v2.py --task-type non-tabular.document.clean_and_annotate --case-dir cases/docu-corp/2026-0001 --json
+python routing/intake_decision_rules_v2.py --task-type non_tabular.log.analyze --case-dir cases/log-analytics-co/2026-0001 --json
 ```
 
-**票 state**：`04_Workflows/tickets/W9-T2-non-tabular-decision-rules-v1_state.md` · **`04_Workflows/tickets/W9-T3-non-tabular-tool-catalog-and-selector-stub-v1_state.md`** · **`04_Workflows/tickets/W9-T4-non-tabular-orchestrator-preview-v1_state.md`**
+**票 state**：`04_Workflows/tickets/W9-T2-non-tabular-decision-rules-v1_state.md` · **`04_Workflows/tickets/W9-T3-non-tabular-tool-catalog-and-selector-stub-v1_state.md`** · **`04_Workflows/tickets/W9-T4-non-tabular-orchestrator-preview-v1_state.md`** · **`04_Workflows/tickets/W9-T5-non-tabular-fixture-docu-corp-v1_state.md`** · **`04_Workflows/tickets/W9-T6-non-tabular-fixture-log-analytics-co-v1_state.md`**
 
-> **註（Wave 9 · 2026-06-15 · 更新）**：**W9-T2** / **W9-T3** / **W9-T4** Reviewer **`accepted_with_gaps` · Orchestrator 已關票**。**W9-T2** — v2 `non_tabular.*` NT-A/NT-B decision helper + R-NT1 reject + Tabular regression 15/15 OK。**W9-T3** — `non_tabular_tool_catalog_v1.json` + selector stub + 9/9 tests OK（symbolic only）。**W9-T4** — preview CLI + glue + sandbox outbox + 11/11 tests OK（preview-only · execution=stub）。**deferred**：real docu-corp/log-analytics fixtures（W9-T5/T6）、heavy tool executor、主鏈整合、optional CI helper（W10-T1）。**不得**宣稱 Wave 9 完成；W9-T1 等仍可有 `Reviewer pending`。
+> **註（Wave 9 · 2026-06-16 · Agent Lines v1 必做圈）**：**W9-NT-CONTROLLED-WALKTHROUGH-V1** Reviewer **`accepted`** — 8 步命令鏈 · NT-A/B 雙 fixture · audit quickview `flow_family: non_tabular` · **README v2 §3.5**。**deferred**：OCR（W9-T7）· run mode（W12-T3）· CP-A/B（NT shadow 設計如此）。
 
 ---
 
-## Wave 10 — Agent Lines CI Integration
+## Wave 10 — Agent Lines CI Integration · **W10-T2 registry done**
 
-**一句話**：W10-T1 新增可選 CI helper，合併 Tabular Agent Standard Line（run-all-allowed）與 Non-Tabular Preview（NT-A/NT-B）；寫入 `outbox/agent_ci/` 摘要 JSON；**不**改 MVP mainline regression。
+**一句話（Agent Lines v1）**：Wave 10 把 Agent Lines 接入 **可選 CI / 離線觀測 / registry 治理**——W10-T1 CI suite 合併 Tabular+NT preview；**W10-T2-selector registry fail-closed policy 已落地**（env gate 預設 off · strict opt-in · prod gate 仍 off）；metrics/audit/readme 供一線運維入口。
 
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
@@ -421,6 +574,18 @@ python scripts/run_agent_lines_ci_suite.py --scope all --format json
 ```
 
 **票 state**：`04_Workflows/tickets/W10-T1-integrate-agent-lines-into-ci-v1_state.md`
+
+| 票號 | 狀態 | 交付摘要 |
+|------|------|----------|
+| **W10-T2-selector-consumes-approved-registry-v1** | **done · `accepted_with_gaps`** | Tabular selector 只讀消費 `skills/approved_registry.json` · env `TABULAR_APPROVED_REGISTRY_ENABLED`（**預設關**）· `TABULAR_APPROVED_REGISTRY_STRICT` fail-closed **opt-in** · 16/16 unittest OK · **deferred**：degrade-open 策略 · 靜態 map 依賴 · non-tabular 未接 · **prod gate 預設仍 off** |
+
+**驗證命令（W10-T2 · selector registry）**
+
+```bash
+python -m unittest tests.test_tabular_tool_selector_approved_registry_v1 tests.test_tabular_tool_selector -v
+```
+
+**票 state（W10-T2 · selector registry）**：`04_Workflows/tickets/W10-T2-selector-consumes-approved-registry-v1_state.md`
 
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
@@ -645,12 +810,12 @@ python -m unittest tests.test_intake_decision_rules_v1 tests.test_agent_intake_d
 | Lane | 票号 | 實作完成 | 測試狀態 | Reviewer or Approval | 尚未完成 |
 |------|------|----------|----------|----------------------|----------|
 | **A** | **W4-MEM-01** | **yes** — `cases_index_lib` enriched · lookup `--verbose` · spec v0.1 | **tested** — `test_lookup_case_history` + `test_build_cases_index` **10/10 OK**（2026-06-14 smoke） | **accepted_with_gaps**（Reviewer 已关 · 2026-06-14） | glob 自動登記 · `schema_fingerprint` deferred → **W4-MEM-02** |
-| **A** | **W4-GUARD-01** | **no** — **design draft only**（G1–G4 提案 · 接入點矩陣） | **n/a** — 未改 gate／E2E exit | **blocked_on_approval**（IMPL 待 `W4-GUARD-01-IMPL` + 尚書省裁定 T1–T3） | 護欄升格施工；**不得**寫成 gate 已升格 |
+| **A** | **W4-GUARD-01** | **yes** — **T1 IMPL done**（experimental fixture guard · regression entry） | **tested** — guard 6 tests + regression 17/17 OK | **Reviewer pending**（T1 guard 已 IMPL；G2–G4 升格仍 deferred） | G2–G4 schema/ratio 升格 · `--strict-guards` · CI 接入 |
 | **B** | **WC-IMPL-L1** | **yes** — L1 advisory · MissingSignalRules v1 · artifact + log | **tested** — `test_toolchain_governance_snapshot_v1` **17/17 OK**；CLI **non-blocking exit 0** | **accepted**（Reviewer 已关） | L2 觀察期證據累積（非本票） |
 | **B** | **WC-IMPL-L2** | **no** — **FRAME / design only** | **n/a** | **blocked_on_approval** · `frame_frozen_pending_governance` | G1–G8 + `approval_status.L2=approved` 後方可施工 |
 | **B** | **WC-IMPL-SMOKE-CI-L1** | **no** — **FRAME / design only** | **n/a** | **blocked_on_approval** · `frame_ready` | optional_ci workflow 接線；**不得**假設 PR required 已開 |
 | **B** | **WC-PRE-06** | **no** — design_ready | **n/a** | **pending_approval** | L2 health gate 升格提案 |
-| **B** | **WC-PRE-07** | **no** — design_draft | **n/a** | **blocked_on_approval** | mandatory smoke CI 设计稿；无批文不得改 PR required |
+| **B** | **WC-PRE-07** | **no** — design_ready（W5 doc bundle） | **n/a** | **blocked_on_approval** | mandatory smoke CI 设计稿 `docs/toolchain-smoke-mandatory-ci-runner-v1.md` + `WC_PRE_07_approval_template.md`；无批文不得改 PR required · 见 W5-WC-PRE-07 |
 | **C** | **WC-T1** · **WC-T2** · **WC-T3** · **WC-T4** · **WC-SMOKE-M2-NIGHTLY** | **yes** — M2 主链已落盘 | **tested** — eligibility / dispatch / comms / order / nightly 模块 UT 含于 Lane C smoke **62/62 OK** | **done**（T3 = `W-next-DISPATCH-CARDS-MVP` **accepted**） | — |
 | **C** | **WC-T1-INTEGRATION** | **yes** — eligibility gate 接入 `_dispatch_cards.py` | **tested** — `test_dispatch_cards` + `test_ticket_eligibility` **21/21 OK**；含于 Lane C **62/62 OK** | **accepted_with_gaps**（Reviewer 2026-06-14；AC-6 doc 已由 Scribe 补） | 可选 UT：unresolved-dependency + gate=block；入口 B/C deferred |
 | **C** | **WC-T5** | **yes** — 覆盖率契约 + JSON 附录 | **tested** — `test_wc_t5_automation_coverage_contract_v1` 含于 **62/62 OK** | **accepted** | T6/T7 全量 path_id 映射 deferred |
@@ -663,7 +828,7 @@ python -m unittest tests.test_intake_decision_rules_v1 tests.test_agent_intake_d
 
 | Lane | 主題 | 本輪狀態 |
 |------|------|----------|
-| **A** | 最小接案 MVP · 輕量記憶／護欄 | 記憶層 **accepted_with_gaps**（W4-MEM-01 已关）；護欄 **design draft only** |
+| **A** | 最小接案 MVP · 輕量記憶／護欄 | 記憶層 **accepted_with_gaps**（W4-MEM-01 已关）；**W4-GUARD-01 T1 guard IMPL done**（extended fixtures 需 `--include-extended-fixtures`） |
 | **B** | Wave C Phase 2 Governance | **L1 advisory implemented + tested**；L2 / mandatory smoke CI **FRAME · blocked_on_approval** |
 | **C** | Control Plane 商業化閉環 | M2 **done** · **WC-T1-INTEGRATION accepted_with_gaps** · M3 契约 **accepted / accepted_with_gaps** |
 | **D** | Tabular W3-TL-T4 | **4/4 done** · replay follow-up 已落盘 · unittest 全綠 · 已知 gaps 不含 Local UI |
@@ -695,10 +860,12 @@ python scripts/build_tabular_outbox_replay_report.py --case-ref demo_phase --out
 
 ## 最小接案 MVP · Wave 4（Lane A · ≠ Tabular Wave 4）
 
+**一句話（Agent Lines v1）**：Lane A 護欄 **T1 已 IMPL**——extended fixtures 不得默認混入 regression；G2–G4 真樣本升格仍待批文。
+
 | 票號 | 狀態 | 交付摘要 |
 |------|------|----------|
 | **W4-MEM-01** | **done** · Reviewer **`accepted_with_gaps`** | 只讀 case 記憶索引 enriched 字段 → `docs/case-history-lookup-spec-v0.1.md` · `cases/index.json` refresh · lookup `--verbose`；gaps → **W4-MEM-02** |
-| **W4-GUARD-01** | **design draft** | 真樣本護欄升格 **提案**（G1–G4 對照表 · 接入點矩陣）；**未**改 gate／E2E exit；IMPL 待尚書省裁定 T1–T3 |
+| **W4-GUARD-01** | **T1 IMPL done · Reviewer pending** | `enforce_fixture_guard()` @ `run_agent_standard_case_regression.py` — **`additional_demo`/`sandbox_client` 需顯式 `--include-extended-fixtures`**；stable 錨點不受影響 · 17 tests OK · README v2 §2.3 · **deferred**：G2–G4 schema/ratio 升格 · `--strict-guards` |
 
 **票 state**：`04_Workflows/tickets/W4-MEM-01_state.md` · `04_Workflows/tickets/W4-GUARD-01_state.md`
 
@@ -710,7 +877,7 @@ python scripts/build_tabular_outbox_replay_report.py --case-ref demo_phase --out
 |------|------|------|------|
 | **1** | ~~WC-T1-INTEGRATION Reviewer 關票~~ · AC-6 doc 已补 | Lane C | **已关票 · accepted_with_gaps** |
 | **2** | ~~W4-MEM-01 Reviewer 關票~~ · ~~WC-T6-v2 / WC-T7-v2 gaps~~ | Lane A / C | **已关票** |
-| **3** | approval 後才可動：WC-PRE-06/07 L2 · WC-IMPL-L2 · WC-IMPL-SMOKE-CI-L1 · W4-GUARD-01-IMPL | Lane B / A | **blocked_on_approval** |
+| **3** | approval 後才可動：WC-PRE-06/07 L2 · WC-IMPL-L2 · WC-IMPL-SMOKE-CI-L1 · **W4-GUARD-01 G2–G4 升格** | Lane B / A | **blocked_on_approval** |
 | 可選 | W3-TL-T4 follow-up：`app/local_ui.py` 嵌入 replay report；`events.jsonl` streaming tail | Wave 3-TL | 可延後 |
 | 可選 | W1-T1B-FOLLOWUP（§6.2 Q1–Q5） | Wave 1 | 可延後 |
 | 可選 | routing eval 專用 state 檔（與 Multi-Chat W2-T2 區隔） | Wave 2 | 可延後 |
@@ -760,7 +927,7 @@ python -m unittest tests.test_phase6_int_regression_gate_contract_v1 -v
 |------|------|-------|----------|
 | **WB-T5-audit-quickview-and-case-history-spec-v1** | **done** · accepted_with_gaps | **P5 audit 70%→82% · P8.9 join 40%→75%** | `docs/audit-quickview-and-case-history-spec-v1.md` · `tests/test_audit_quickview_and_case_history_spec_v1.py` · README v2 §4 指針 |
 
-**Phase 5 Audit 觀測面**：**70% → 82%**（本票 codify；與 WB-T4 疊加後 dashboard 軸仍 **85%**）  
+**Phase 5 Audit 觀測面**：**70% → 82%**（本票 codify；與 WB-T4 疊加後 dashboard 軸仍 **70%**）  
 **Phase 8.9 case-history join 語意**：**40% → 75%**（audit spec §4 + WB-T3 §5 交叉引用）
 
 **驗證命令**
@@ -810,4 +977,4 @@ python 04_Workflows/_ops_cycle.py checklist --mode full
 
 ---
 
-*WAVE-PROGRESS-DASHBOARD · Tabular MVP + Toolchain Wave B + Multi-Lane 收口 · 2026-06-14 · Orchestrator*
+*WAVE-PROGRESS-DASHBOARD · Tabular MVP + Toolchain Wave B + Multi-Lane 收口 · **Phase% SSOT 2026-07-13 · W-PROG-B**（P8.5 **20%** · P9 **24%** · P4 **77%** · P10 **37%** · prev=同日 W-PROG A · 見 Progress／`W-PROG-war-status-phase-refresh-2026-07-13_state.md`）*

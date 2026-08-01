@@ -322,7 +322,7 @@
 
 **Gap / follow-up（执行后填写）**：
 
-- [GAP-1] 90_run_queue.md 因累積 patch 導致格式汙染 → 建議比對 `/mnt/d/hermes-workspace/milestones/CHK-W4/90_run_queue.cleaned.v1.md` 後覆蓋
+- [GAP-1] 90_run_queue.md 因累積 patch 導致格式汙染 → 建議比對 `04_Workflows/project_status/hermes_milestones/CHK-W4/90_run_queue.cleaned.v1.md` 後覆蓋
 
 ---
 

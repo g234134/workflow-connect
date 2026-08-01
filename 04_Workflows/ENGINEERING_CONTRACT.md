@@ -159,6 +159,81 @@
 | 6.3 | Debugging-Driven |
 | 6.4 | 全流派收斂 + §4.5 閘門 |
 
+### 6.6 架構師守則（短版）· ENGINEERING ARCHITECT GUIDE — SHORT VERSION
+
+> **適用**：Orchestrator 開票後之 **O → B → C → D** Multi-Chat 模式（FRAME/STATE/B/C/D_REPORT）。  
+> **細則 SSOT**：`docs/phase4-multi-agent-collaboration-contract-v1.md`、`.cursor/rules/multi_chat_roles.mdc`、`04_Workflows/tickets/_templates/ticket_state.template.md`。  
+> **本節定位**：工程師／Reviewer 可操作的短準則；不重複上述檔案之完整角色表。
+
+#### 6.6.1 角色分工
+
+- **Orchestrator（O）**：建 `<ticket_id>_state.md`；撰寫並凍結 **FRAME**（Goal／Scope／NonScope／AllowedPaths／BlockedPaths／Dependencies／AcceptanceCriteria）與 **STATE**（`overall_status`、`current_owner`、`next_action`）。開票前完成路徑盤點（FILE_MAP 語意＝FRAME 內 AllowedPaths／BlockedPaths 清單，非另建第二份地圖）。讀 B/C/D_REPORT 後更新 STATE、關票；**不**繞過 Reviewer 標 done。
+- **Worker / Implementer（B）**：**只**在 FRAME.AllowedPaths 內改檔；起手對照 FRAME + 合約 12-rule；施工後寫 **B_REPORT**（`changed_files`、`verification`、`behavior_notes`）。**不**改 FRAME／STATE／C/D_REPORT。
+- **Reviewer（C）**：唯讀審查 diff 與 B_REPORT；用 FRAME 的 NonScope、AllowedPaths、BlockedPaths、AcceptanceCriteria 逐項對照；寫 **C_REPORT**（`conclusion`、`blocking_issues`、`checks_summary`）。**不**改 code／docs 實體。
+- **Scribe（D）**：讀 B/C_REPORT；寫 **D_REPORT**；更新 `docs/*` 交叉引用；**末尾追加** `00_Agent_Work_Progress.md`（不重排歷史段）。**不**改 code／tests／FRAME／STATE。
+
+#### 6.6.2 邊界與自由度
+
+**架構紅線（必須寫進 FRAME.NonScope／BlockedPaths，Worker 無自行解讀空間）**
+
+- 憲法 §7 禁區類型（env 密鑰、venv 樹、未授權 checkpoint、暗部破壞性維運等）。
+- 治理母本：`HARNESS_CONSTITUTION.md`、`ENGINEERING_CONTRACT.md`、`AGENTS.md`、`.cursor/rules/*`（除非票 scope 明示授權）。
+- 全局 live STATE：`00_Agent_Work_Progress.md`（非 Scribe 末尾追加）、`project_status/master_status.md`、`handoff.md`。
+- CI／L2／L3 門檻：`.github/workflows/*`、branch protection、eval-gate 規則（除非票 AC 明示納入）。
+- 他人 `core`、FRAME／STATE 區塊、跨票 AllowedPaths 外路徑。
+
+**實作自由區（架構師只給 AC，不寫死做法）**
+
+- AllowedPaths 內：函數拆分、內部命名、log 欄位格式、測試檔名與 fixture 組織、錯誤訊息措辭（不違 `dict` 契約）。
+- 達成同一 AC 的多種等價實作路徑，只要 diff 留在 AllowedPaths 且 verification 可重跑。
+
+**控制力道**：高風險區（治理、安全、CI、全局狀態）→ FRAME 寫死 + Reviewer 必查；低風險區（AllowedPaths 內實作細節）→ AC 描述結果，Worker 自決方案並在 B_REPORT 留痕。
+
+**Orchestrator 開票 checklist（紅線 → FRAME）**
+- 對照上文 **架構紅線五類**（憲法 §7 禁區、治理母本、全局 live STATE、CI／L2／L3、他人 core／FRAME／跨票路徑），**逐條**決定：寫入本票 **BlockedPaths**（具體 glob／區塊），或於 FRAME 附註「**引用 §6.6.2 預設紅線**」。
+- **禁止**紅線僅存在合約、卻未反映在具體票 FRAME 的 BlockedPaths 或等價附註；Reviewer 可拒收 FRAME 未覆蓋之本票觸線風險。
+- Step B 前 O 自檢：五類均已映射；未映射項須補 FRAME 後再凍結。
+
+#### 6.6.3 FRAME 標準結構與責任
+
+| 欄位 | 內容要點 |
+|------|----------|
+| **Goal** | 一句話可驗收目標 |
+| **Scope** | MUST（必做）／MAY（可做）條列 |
+| **NonScope** | 明確不做、不含鄰票 |
+| **AllowedPaths** | 可改路徑（glob 或目錄；宜具體到檔案層） |
+| **BlockedPaths** | 禁止路徑與區塊（含 FRAME/STATE） |
+| **Dependencies** | 前置票、阻塞項、必讀 doc |
+| **AcceptanceCriteria** | 可重跑驗收的完成條件（見 §6.6.5） |
+
+**Fixture 邊界（AllowedPaths／NonScope）**
+- **AllowedPaths 可含**只讀或測試用 fixture 子樹（例如 `cases/demo_phase/**`）；列路徑時宜標明 glob 或目錄，並在 **NonScope** 明示 fixture 可否改內容。
+- **Orchestrator 開票時**於 NonScope 二選一寫清（或等價表述）：①「本票 fixture **只讀**，不改實際 case 內容」；②「允許在 **指定 fixture 子樹** 下增／改測試 case」。未明示時 Reviewer 依 **只讀** 審查。
+- Worker **不得**在 AllowedPaths 未列或未授權寫入的 fixture 上施工；需改 fixture 邊界時走 §6.6.3「修改 FRAME」流程。
+
+- **撰寫責任**：僅 **Orchestrator**；開票後、Step B 前凍結。
+- **遵守義務**：Worker 施工與 Reviewer 審查**均以 FRAME 為準**；plan／brief 與 FRAME 衝突時 **以 ticket state 的 FRAME 為權威**。
+- **修改 FRAME**：① 施工前 — Orchestrator 可直接修訂並更新 `last_updated`；② 施工中發現 FRAME 不足 — Worker 在 B_REPORT 提議，**Orchestrator + Reviewer 同意**後由 O 改 FRAME，必要時退回重跑 B；③ C_REPORT 為 `rejected` — O 評估重開票或修 FRAME 後重走 B→C→D→O。
+
+#### 6.6.4 Worker 遇到缺口時的行為準則
+
+1. **BlockedPaths／NonScope 才能解的問題**（例如需改 CI、動治理檔、擴路徑）→ **禁止** workaround；在 B_REPORT 標阻塞，回報 Orchestrator。
+2. **AllowedPaths 內、AC 未寫死細節** → 可先選方案實作；完成後在 `behavior_notes` 說明取捨與替代方案。
+3. **灰區（不確定是否踩線）** → 先列 **1–2 個方案 + 利弊 + 建議**，再向 Orchestrator／Reviewer 請示；**禁止**空手套白狼式「請指示」。
+4. **依賴缺失** → 回傳 skeleton 或 `ok: false` + `message`（Rule 9）；不假裝成功。
+5. **AC 與路徑矛盾** → 回報建議調整 AC 或 FRAME，**不**繞過 BlockedPaths 硬做。
+6. **發現跨票需求** → 寫入 `deferred_items`，不順手擴 scope（Rule 3）。
+7. **驗證失敗** → B_REPORT `verification` 附命令與失敗語意；不自行標 done，等 C 判定。
+8. **灰區需擴 AllowedPaths 才能驗 AC** → **禁止** Worker 自行擴路徑、改 fixture 或 workaround；應在 B_REPORT 提案由 **Orchestrator + Reviewer** 依 §6.6.3 修訂 FRAME（含 AllowedPaths／NonScope fixture 語意）。若 O／C 決定**不擴**，將該需求寫入 **deferred_items**（優先於硬做或靜默降 scope）；**不得**在未修 FRAME 前宣稱 AC 已達成。
+
+#### 6.6.5 AC 與適應度函數
+
+- **AC 是架構方向的適應度函數（fitness functions）**：描述「驗收時應觀測到的結果」，而非逐步操作腳本。
+- **寫法**：偏好可重跑命令 + 預期結果語意（例如「`pytest tests/test_foo.py` 全綠」「`dict` 含 `ok: true`」），避免「必須用函數 X 實作」除非架構硬約束。
+- **數量**：票級 AC 建議 **3–7 條**；系統級 AC（跨票不變量，如禁硬編路徑、禁改 FRAME）引用合約 Rule／憲法 §7，不重複發明。
+- **層級**：票級 AC 驗本票 diff；系統級 AC 由 Reviewer 對照 `ENGINEERING_CONTRACT.md` 12-rule 與 FRAME 邊界一併查。
+- **僵化 AC**：若 Worker 判定 AC 在 NonScope／BlockedPaths 內**無法達成**，應在 B_REPORT 提議修訂 AC 或拆票，**禁止**靜默繞過。
+
 ---
 
 ## 7. 交付物定義與審稿／裁決

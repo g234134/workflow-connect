@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技能管理與資源治理</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0c12;color:#e2e4ea;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;background:#0d1017;border-right:1px solid #1a1e2a;display:flex;flex-direction:column;flex-shrink:0}
+.sidebar-brand{padding:16px 14px;font-size:13px;font-weight:700;color:#a0d2db;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;gap:8px}
+.brand-icon{font-size:16px}
+.sidebar-nav{flex:1;padding:8px 0;overflow-y:auto}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 14px;color:#8a8fa0;text-decoration:none;font-size:13px;transition:all .15s;border-left:3px solid transparent}
+.nav-item:hover{background:#131620;color:#e2e4ea}
+.nav-item.active{background:#131620;color:#a0d2db;border-left-color:#3b82f6;font-weight:600}
+.nav-icon{width:18px;text-align:center;font-size:13px;flex-shrink:0}
+.sidebar-footer{padding:12px 14px;border-top:1px solid #1a1e2a;font-size:12px;color:#5a5e6e;display:flex;align-items:center;gap:8px}
+.header{height:48px;background:#0d1017;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.header-title{font-size:15px;font-weight:600;color:#a0d2db}
+.header-sub{font-size:11px;color:#5a5e6e}
+.header-right{font-size:11px;color:#5a5e6e;text-align:right}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.content{flex:1;padding:16px 20px;overflow-y:auto}
+.section{background:#0d1017;border:1px solid #1a1e2a;border-radius:8px;padding:16px;margin-bottom:16px}
+.section-title{font-size:13px;font-weight:600;color:#a0d2db;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0}
+.dot-green{background:#22c55e}
+.dot-yellow{background:#eab308}
+.dot-red{background:#ef4444}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:#6a6e7e;padding:6px 8px;border-bottom:1px solid #1a1e2a;font-weight:500}
+td{padding:6px 8px;border-bottom:1px solid #111320;color:#c0c4cc}
+tr:hover td{background:#131620}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:500}
+.badge-green{background:#0a2e1a;color:#22c55e}
+.badge-blue{background:#0a1e3a;color:#3b82f6}
+.badge-yellow{background:#2e2a0a;color:#eab308}
+.badge-red{background:#2e0a0a;color:#ef4444}
+.badge-gray{background:#1a1e2a;color:#6a6e7e}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.dept-skill{background:#131620;border:1px solid #1a1e2a;border-radius:6px;padding:12px}
+.dept-name{font-size:13px;font-weight:600;color:#e2e4ea;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.dept-count{font-size:11px;color:#6a6e7e;margin-bottom:4px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.skill-tag{background:#1a1e2a;border-radius:3px;padding:2px 6px;font-size:10px;color:#8a8fa0}
+.progress-bar{height:6px;background:#1a1e2a;border-radius:3px;overflow:hidden;margin-top:4px}
+.progress-fill{height:100%;border-radius:3px}
+.progress-green{background:#22c55e}
+.progress-blue{background:#3b82f6}
+.progress-yellow{background:#eab308}
+.link-row{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:11px;color:#3b82f6;cursor:pointer}
+@media(max-width:1200px){.grid-2,.grid-3{grid-template-columns:1fr}}
+@media(max-width:768px){.sidebar{width:56px}.sidebar-brand span:last-child,.nav-item span:last-child,.sidebar-footer span:last-child{display:none}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-brand"><span class="brand-icon">⚔</span><span>三省六部指揮中心</span></div>
+  <nav class="sidebar-nav">
+    <a href="page01.html" class="nav-item"><span class="nav-icon">🏠</span><span>總覽</span></a>
+    <a href="page04.html" class="nav-item"><span class="nav-icon">🏛</span><span>三省六部</span></a>
+    <a href="page03.html" class="nav-item"><span class="nav-icon">🛡</span><span>暗部執行</span></a>
+    <a href="page02.html" class="nav-item active"><span class="nav-icon">⚡</span><span>技能與資源</span></a>
+    <a href="page01.html" class="nav-item"><span class="nav-icon">⚙</span><span>設定</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="nav-icon">👤</span><span>指揮官 · 系統管理員</span></div>
+</aside>
+<div class="main">
+  <div class="header">
+    <div>
+      <div class="header-title">技能管理與資源治理</div>
+      <div class="header-sub">統一指揮、協同作戰、高效治理</div>
+    </div>
+    <div class="header-right">
+      <div>亞洲 / 台北</div>
+      <div>2025/05/26 14:32:18 UTC+8</div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- Department Skill Counts -->
+    <div class="section">
+      <div class="section-title">⚡ 技能管理 — 各部技能掛載概覽</div>
+      <div class="grid-3">
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-green"></span>刑部</div><div class="dept-count">已掛載：24 · 異常：1</div><div class="skill-tags"><span class="skill-tag">案件研判</span><span class="skill-tag">風險評估</span><span class="skill-tag">規則引擎</span></div></div>
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-green"></span>工部</div><div class="dept-count">已掛載：28 · 異常：0</div><div class="skill-tags"><span class="skill-tag">流程編排</span><span class="skill-tag">資源調度</span><span class="skill-tag">自動化執行</span></div></div>
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-yellow"></span>兵部</div><div class="dept-count">已掛載：22 · 異常：2</div><div class="skill-tags"><span class="skill-tag">人員調度</span><span class="skill-tag">任務分配</span><span class="skill-tag">戰情分析</span></div></div>
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-green"></span>禮部</div><div class="dept-count">已掛載：18 · 異常：0</div><div class="skill-tags"><span class="skill-tag">文書校核</span><span class="skill-tag">合規檢查</span><span class="skill-tag">通報管理</span></div></div>
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-yellow"></span>戶部</div><div class="dept-count">已掛載：21 · 異常：1</div><div class="skill-tags"><span class="skill-tag">資源管理</span><span class="skill-tag">預算控制</span><span class="skill-tag">成本分析</span></div></div>
+        <div class="dept-skill"><div class="dept-name"><span class="dot dot-red"></span>吏部</div><div class="dept-count">已掛載：26 · 異常：3</div><div class="skill-tags"><span class="skill-tag">人事管理</span><span class="skill-tag">績效追蹤</span><span class="skill-tag">組織協同</span></div></div>
+      </div>
+    </div>
+
+    <!-- Resource Governance -->
+    <div class="grid-2">
+      <div class="section">
+        <div class="section-title">☁ 資源治理</div>
+        <div style="margin-bottom:12px">
+          <div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">部署環境占比</div>
+          <div style="display:flex;gap:12px;font-size:13px"><span>本地環境：<strong style="color:#e2e4ea">38%</strong></span><span>雲端環境：<strong style="color:#e2e4ea">62%</strong></span></div>
+          <div class="progress-bar" style="margin-top:6px"><div class="progress-fill progress-blue" style="width:62%"></div></div>
+        </div>
+        <div style="margin-bottom:12px">
+          <div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">今日API消耗量</div>
+          <div style="font-size:18px;font-weight:700">12,430次 <span style="font-size:11px;color:#22c55e">↑ 15.2%</span></div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:#6a6e7e;margin-bottom:4px">今日Token使用量</div>
+          <div style="font-size:18px;font-weight:700">24.68M <span style="font-size:11px;color:#22c55e">↑ 10.7%</span></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">📊 雲端服務分項消耗（今日）</div>
+        <table>
+          <tr><th>服務</th><th>次數</th><th>占比</th></tr>
+          <tr><td>語言模型服務</td><td>8,540</td><td>68.6%</td></tr>
+          <tr><td>向量檢索服務</td><td>2,340</td><td>18.8%</td></tr>
+          <tr><td>文件解析服務</td><td>980</td><td>7.9%</td></tr>
+          <tr><td>影像分析服務</td><td>430</td><td>3.5%</td></tr>
+          <tr><td>其他服務</td><td>140</td><td>1.2%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Skill-Module Mapping Table -->
+    <div class="section">
+      <div class="section-title">🔗 技能 ↔ 執行模組對應映射表 <span style="margin-left:auto;font-size:11px;color:#3b82f6;cursor:pointer">查看完整對應關係 →</span></div>
+      <table>
+        <tr><th>技能名稱</th><th>所屬部門</th><th>技能類型</th><th>對應執行模組</th><th>狀態</th><th>最後更新</th></tr>
+        <tr><td>案件風險評估</td><td>刑部</td><td>分析類</td><td>風險評估模組 v2.3</td><td><span class="badge badge-green">啓用</span></td><td>2025/05/26 13:58</td></tr>
+        <tr><td>流程自動化執行</td><td>工部</td><td>執行類</td><td>流程引擎模組 v1.9</td><td><span class="badge badge-green">啟用</span></td><td>2025/05/26 14:05</td></tr>
+        <tr><td>戰情分析</td><td>兵部</td><td>分析類</td><td>戰情分析模組 v3.1</td><td><span class="badge badge-green">啟用</span></td><td>2025/05/26 13:41</td></tr>
+        <tr><td>合規檢查</td><td>禮部</td><td>檢核類</td><td>合規檢查模組 v2.0</td><td><span class="badge badge-green">啟用</span></td><td>2025/05/26 12:33</td></tr>
+        <tr><td>預算控制</td><td>戶部</td><td>管理類</td><td>預算控制模組 v1.4</td><td><span class="badge badge-yellow">警示</span></td><td>2025/05/26 11:22</td></tr>
+        <tr><td>組織協同</td><td>吏部</td><td>協同類</td><td>協同管理模組 v2.2</td><td><span class="badge badge-yellow">警示</span></td><td>2025/05/26 10:17</td></tr>
+      </table>
+    </div>
+
+    <!-- API Key Vault -->
+    <div class="section">
+      <div class="section-title">🔑 免費金鑰庫 <span style="margin-left:auto;font-size:11px;color:#3b82f6;cursor:pointer">管理金鑰策略與配額 →</span></div>
+      <table>
+        <tr><th>API Key 名稱</th><th>服務類型</th><th>剩餘配額</th><th>日限制</th><th>狀態</th></tr>
+        <tr><td>LLM-Primary-Key</td><td>語言模型服務</td><td>1,240,000 / 2,000,000</td><td>2,000,000</td><td><span class="badge badge-green">正常</span></td></tr>
+        <tr><td>Vector-Search-Key</td><td>向量檢索服務</td><td>480,000 / 800,000</td><td>800,000</td><td><span class="badge badge-green">正常</span></td></tr>
+        <tr><td>Doc-Parse-Key</td><td>文件解析服務</td><td>190,000 / 300,000</td><td>300,000</td><td><span class="badge badge-green">正常</span></td></tr>
+        <tr><td>Vision-Analyze-Key</td><td>影像分析服務</td><td>85,000 / 150,000</td><td>150,000</td><td><span class="badge badge-yellow">警示</span></td></tr>
+        <tr><td>General-Service-Key</td><td>其他服務</td><td>12,000 / 50,000</td><td>50,000</td><td><span class="badge badge-red">異常</span></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

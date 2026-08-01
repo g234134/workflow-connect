@@ -1,0 +1,33 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-14T19:00:25+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 6 條
+二、雜訊過濾率（示意）：94.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_schema.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_pydevd_schema.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bloom.py | score=8.67 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_bloom.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_modular_lfm2_moe.py | score=8.63 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modular_lfm2_moe.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_test_voting.py | score=8.5 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_voting.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_quant_modules.py | score=8.24 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_quant_modules.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_demo.py | score=8.0 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_demo.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）採用內部波次平台
+  · 樣本數為100，平均值為5.521，等級分布為B：69，D：22，C：3，A：6
+  · 掃描數為100，池大小為36236，精英資產匹配數為6
+
+六、使用建議：
+  · 根據match_report數據，優先考慮高產出率的資產
+  · 使用noise_filter_rate_pct_hint指標，過濾掉低質量的數據
+  · 結合elite_index_stats數據，優化資產配置和管理
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個內部波次平台的數據清算項目，目的是優化資產配置和管理。根據match_report數據，項目掃描了100個樣本，平均值為5.521，等級分布為B：69，D：22，C：3，A：6。精英資產匹配數為6，池大小為36236。結合noise_filter_rate_pct_hint指標和elite_index_stats數據，項目可以過濾掉低質量的數據，優化資產配置和管理，從而實現虛擬節約新台幣0.11的目標。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

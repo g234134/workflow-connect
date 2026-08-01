@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chariot/p5_metrics_grafana_stub_v1.json",
+  "title": "P5 Metrics Grafana Stub v1",
+  "description": "Local Grafana/JSON对照 stub for Wave 4. NOT a live Grafana deployment or PG soak. Aggregates toolchain health + metrics scrape shape + alert budget narrative.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "ok",
+    "mode",
+    "generated_at",
+    "health",
+    "metrics",
+    "alert_budget_summary",
+    "doc"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "p5_metrics_grafana_stub_v1"
+    },
+    "ok": { "type": "boolean" },
+    "mode": {
+      "type": "string",
+      "const": "local_stub"
+    },
+    "generated_at": { "type": "string" },
+    "case_ref": { "type": "string" },
+    "health": {
+      "type": "object",
+      "required": ["ok", "source"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "source": { "type": "string" },
+        "sections_ok": { "type": ["integer", "null"] },
+        "aggregated_health_score": { "type": ["number", "null"] },
+        "gate_class": { "type": ["string", "null"] },
+        "message": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["scrape_ok", "source"],
+      "properties": {
+        "scrape_ok": { "type": "boolean" },
+        "source": { "type": "string" },
+        "http_status": { "type": ["integer", "null"] },
+        "has_error_comment": { "type": "boolean" },
+        "prometheus_line_count": { "type": ["integer", "null"] },
+        "std_case_metrics_v1": { "type": "object" },
+        "message": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "alert_budget_summary": {
+      "type": "object",
+      "required": ["source", "warn_count", "critical_count", "total_events"],
+      "properties": {
+        "source": { "type": "string" },
+        "warn_count": { "type": "integer", "minimum": 0 },
+        "critical_count": { "type": "integer", "minimum": 0 },
+        "total_events": { "type": "integer", "minimum": 0 },
+        "note": { "type": "string" },
+        "path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "grafana_read_hints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": { "type": "string" },
+          "panel_role": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "artifact_path": { "type": ["string", "null"] },
+    "doc": { "type": "string" },
+    "message": { "type": "string" },
+    "non_claims": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

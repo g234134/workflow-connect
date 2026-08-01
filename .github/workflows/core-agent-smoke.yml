@@ -34,7 +34,7 @@ concurrency:
 
 jobs:
   agent-smoke-pr:
-    name: Agent workflow smoke (PR / ROOT)
+    name: Agent workflow smoke (PR tier)
     if: >-
       github.event_name != 'workflow_dispatch'
       || (github.event_name == 'workflow_dispatch' && (inputs.tier == 'PR' || inputs.tier == 'ROOT'))
@@ -49,7 +49,91 @@ jobs:
           python-version: "3.12"
 
       - name: Core agent smoke (tier PR)
-        run: python 04_Workflows/_core_agent_smoke.py --tier PR -v
+        id: smoke
+        shell: bash
+        run: |
+          set -euo pipefail
+          START_MS=$(python -c "import time; print(int(time.time()*1000))")
+          set +e
+          python 04_Workflows/_core_agent_smoke.py --tier PR -v | tee smoke_result_raw.json
+          SMOKE_EXIT=$?
+          set -e
+          END_MS=$(python -c "import time; print(int(time.time()*1000))")
+          export SMOKE_EXIT START_MS END_MS
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          raw = Path("smoke_result_raw.json").read_text(encoding="utf-8").strip()
+          smoke = json.loads(raw) if raw else {"ok": False, "message": "empty stdout"}
+          failed_tests = smoke.get("failed_tests") or []
+          seen = set()
+          failed_modules = []
+          for rec in failed_tests:
+              tid = str(rec.get("test_id") or "")
+              mod = tid.rsplit(".", 1)[0] if "." in tid else tid
+              key = (mod, tid)
+              if key in seen:
+                  continue
+              seen.add(key)
+              failed_modules.append({
+                  "module": mod,
+                  "test_id": tid,
+                  "kind": rec.get("kind"),
+                  "message": rec.get("message"),
+              })
+          summary = {
+              "workflow_name": "Core agent smoke",
+              "job_name": "agent-smoke-pr",
+              "tier": "PR",
+              "ok": SMOKE_EXIT == 0 and smoke.get("ok") is True,
+              "duration_ms": int(os.environ["END_MS"]) - int(os.environ["START_MS"]),
+              "github_run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "github_sha": os.environ.get("GITHUB_SHA", ""),
+              "smoke_result": smoke,
+              "failed_modules": failed_modules,
+          }
+          Path("smoke_ci_summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(summary, ensure_ascii=False))
+          sys.exit(int(os.environ["SMOKE_EXIT"]))
+          PY
+
+      - name: Emit structured failure summary
+        if: failure()
+        shell: bash
+        run: |
+          echo "::group::core-agent-smoke summary"
+          cat smoke_ci_summary.json 2>/dev/null || cat smoke_result_raw.json 2>/dev/null || true
+          echo "::endgroup::"
+
+      - name: Generate toolchain governance snapshot (non-blocking · WC-IMPL-L1 advisory)
+        if: success()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          # L1 advisory block + ::warning annotations for critical findings are emitted by --print-ci-summary.
+          python scripts/generate_toolchain_governance_snapshot.py \
+            --ci-context core-agent-smoke-pr \
+            --smoke-results-json smoke_ci_summary.json \
+            --write \
+            --non-blocking \
+            --print-ci-summary
+
+      - name: Upload smoke CI summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-agent-smoke-pr-${{ github.run_id }}
+          path: |
+            smoke_ci_summary.json
+            smoke_result_raw.json
+            output/toolchain/governance_snapshot.json
+            output/toolchain/governance_snapshot.md
+            output/toolchain/governance_advisory.log
+          if-no-files-found: warn
+          retention-days: 14
 
   agent-smoke-dark:
     name: Agent workflow smoke (DARK — tool + API shape)

@@ -1,0 +1,216 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_c_p4_command_desk_v1",
+  "demo": true,
+  "read_only": true,
+  "host": "ui/command_center",
+  "visual_ssot": "docs/ui-templates/unified_P4.png",
+  "generated_at": "2026-07-28T00:20:00+08:00",
+  "message": "W4-UI-C P4 provinces command desk mock (demo · read_only · ≠ live API)",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "三省六部指揮台",
+    "subtitle": "治理中樞 · 協同作戰 · 高效治理（mock）",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "2026-07-28 00:20:00 UTC+8",
+    "operator": "指揮官 · 系統管理員"
+  },
+  "nav": [
+    {"id": "p1", "label": "總覽", "href": "p1.html", "active": false},
+    {"id": "p5", "label": "協作作業台", "href": "p5.html", "active": false},
+    {"id": "p4", "label": "三省六部", "href": "p4.html", "active": true},
+    {"id": "p3", "label": "暗部執行", "href": "p3.html", "active": false},
+    {"id": "p2", "label": "技能與資源", "href": "p2.html", "active": false},
+    {"id": "settings", "label": "設定", "href": "settings.html", "active": false}
+  ],
+  "provinces": {
+    "entry_nodes": [
+      {"id": "chat", "label": "聊天入口", "icon": "chat", "hint": "接單入口"},
+      {"id": "prince", "label": "太子", "icon": "crown", "hint": "決策輔助"}
+    ],
+    "zhongshu": {
+      "id": "zhongshu",
+      "name": "中書省",
+      "role": "策略規劃與任務整理中心",
+      "metrics": [
+        {"label": "策略研擬", "value": "12"},
+        {"label": "任務整合", "value": "18"},
+        {"label": "資源評估", "value": "09"},
+        {"label": "風險預判", "value": "07"}
+      ]
+    },
+    "menxia": {
+      "id": "menxia",
+      "name": "門下省",
+      "role": "審核 · 覆核 · 把關驗證節點",
+      "metrics": [
+        {"label": "審核中", "value": "12", "tone": "yellow"},
+        {"label": "覆核中", "value": "06", "tone": "blue"},
+        {"label": "驗證中", "value": "08", "tone": "cyan"},
+        {"label": "退回中", "value": "03", "tone": "red"}
+      ]
+    },
+    "shangshu": {
+      "id": "shangshu",
+      "name": "尚書省",
+      "tag": "派工中心",
+      "role": "統籌派工 · 資源協調 · 速度監控",
+      "kpis": [
+        {"label": "總任務數", "value": "128", "delta": "+12%"},
+        {"label": "執行中", "value": "86", "delta": "+8%"},
+        {"label": "已完成", "value": "32", "delta": "+15%"},
+        {"label": "執行率", "value": "67%", "progress": 67}
+      ]
+    }
+  },
+  "ministries": [
+    {
+      "id": "li",
+      "name": "吏部",
+      "tasks": 26,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["人事管理", "績效追蹤"],
+      "agent": "吏部·景明"
+    },
+    {
+      "id": "xing",
+      "name": "刑部",
+      "tasks": 28,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["案件研判", "風險評估"],
+      "agent": "刑部·玄衡"
+    },
+    {
+      "id": "gong",
+      "name": "工部",
+      "tasks": 36,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["流程編排", "資源調度"],
+      "agent": "工部·匠心"
+    },
+    {
+      "id": "bing",
+      "name": "兵部",
+      "tasks": 24,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["兵情分析", "戰備演練"],
+      "agent": "兵部·破陣"
+    },
+    {
+      "id": "li_rites",
+      "name": "禮部",
+      "tasks": 18,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["文書審核", "合規檢查"],
+      "agent": "禮部·清儀"
+    },
+    {
+      "id": "hu",
+      "name": "戶部",
+      "tasks": 32,
+      "status": "green",
+      "status_label": "運作正常",
+      "skills": ["資源管理", "預算控制"],
+      "agent": "戶部·豐年"
+    }
+  ],
+  "task_monitor": {
+    "title": "任務監控",
+    "queues": [
+      {
+        "id": "assigning",
+        "label": "派案中",
+        "count": 12,
+        "tone": "cyan",
+        "icon": "assign",
+        "items": [
+          {"id": "J20250526031", "title": "刑部 · 案件研判任務 #J20250526031"},
+          {"id": "G20250526017", "title": "工部 · 流程自動化 #G20250526017"},
+          {"id": "B20250526021", "title": "兵部 · 人員調度 #B20250526021"}
+        ]
+      },
+      {
+        "id": "pending_verify",
+        "label": "待驗證",
+        "count": 18,
+        "tone": "blue",
+        "icon": "verify",
+        "items": [
+          {"id": "L20250526009", "title": "文書審核任務 #L20250526009"},
+          {"id": "H20250526014", "title": "戶部預算覆核 #H20250526014"},
+          {"id": "R20250526005", "title": "禮部合規檢查 #R20250526005"}
+        ]
+      },
+      {
+        "id": "ready_deliver",
+        "label": "即將交付",
+        "count": 24,
+        "tone": "green",
+        "icon": "deliver",
+        "items": [
+          {"id": "G20250526008", "title": "自動化執行任務 #G20250526008"},
+          {"id": "A20250526002", "title": "吏部績效彙整 #A20250526002"},
+          {"id": "X20250526011", "title": "刑部結案交付 #X20250526011"}
+        ]
+      },
+      {
+        "id": "alerts",
+        "label": "告警",
+        "count": 7,
+        "tone": "red",
+        "icon": "alert",
+        "items": [
+          {"id": "AL-01", "title": "資源使用率超過 85%", "severity": true},
+          {"id": "AL-02", "title": "戰情資料延遲 > 15 分鐘", "severity": true},
+          {"id": "AL-03", "title": "門下省退回佇列升高", "severity": false}
+        ]
+      }
+    ]
+  },
+  "operator_fields": {
+    "ok": true,
+    "schema_version": "p89_operator_fields_v1",
+    "demo": true,
+    "read_only": true,
+    "fields": [
+      "event_id",
+      "ack_status",
+      "handler_id",
+      "dispatch_registry_hit",
+      "dlq_flag"
+    ],
+    "rows": [
+      {
+        "event_id": "evt-p4-desk-001",
+        "ack_status": "acked",
+        "handler_id": "shangshu.dispatch",
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      },
+      {
+        "event_id": "evt-p4-desk-002",
+        "ack_status": "pending",
+        "handler_id": "menxia.verify",
+        "dispatch_registry_hit": true,
+        "dlq_flag": false
+      }
+    ]
+  },
+  "non_claims": [
+    "≠ live API / Grafana",
+    "≠ 金鑰原文",
+    "≠ DarkOps / 暗部 core",
+    "≠ Dashboard Phase% authorize",
+    "≠ Operator UI 全量交付"
+  ]
+}

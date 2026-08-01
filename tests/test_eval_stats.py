@@ -9,6 +9,7 @@ from pathlib import Path
 
 from observability.eval_stats import (
     analyze_export_files,
+    build_stats_summary,
     format_text_report,
     iter_export_lines,
     suggest_ci_thresholds,
@@ -70,6 +71,18 @@ class TestEvalStats(unittest.TestCase):
         rec = suggest_ci_thresholds(overall, min_samples_for_recommendations=1)
         fail_tags = [x["tag"] for x in rec["fail_on_tags"] if x["action"] == "fail"]
         self.assertIn("infra_risk", fail_tags)
+
+    def test_build_stats_summary_flat_schema(self) -> None:
+        result = analyze_export_files([_SAMPLE], min_samples_for_recommendations=1)
+        summary = build_stats_summary(result)
+        self.assertTrue(summary["ok"])
+        self.assertEqual(summary["sample_count"], 3)
+        self.assertAlmostEqual(summary["needs_review_ratio"], 2 / 3, places=4)
+        self.assertIn("infra_risk", summary["tag_counts"])
+        st = summary["suggested_thresholds"]
+        self.assertIn("max_needs_review_ratio_range", st)
+        self.assertIn("fail_on_tags", st)
+        self.assertIn("infra_risk", st["fail_on_tags"])
 
     def test_format_text_report_serializable(self) -> None:
         result = analyze_export_files([_SAMPLE], min_samples_for_recommendations=1)

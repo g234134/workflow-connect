@@ -1,0 +1,23 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.report",
+  "title": "Eval gate report (Markdown + JSON)",
+  "brief": "Build eval gate report artifacts from eval_export JSONL. Produces artifacts/eval/eval_report.latest.{md,json}.",
+  "domain": "obs",
+  "module_path": "observability/eval_report.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval",
+  "inputs": [
+    "eval_export.jsonl",
+    "--out-dir"
+  ],
+  "outputs": [
+    "artifacts/eval/eval_report.latest.md",
+    "artifacts/eval/eval_report.latest.json"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_report -v",
+  "wave_ticket": "WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer", "scribe"]
+}

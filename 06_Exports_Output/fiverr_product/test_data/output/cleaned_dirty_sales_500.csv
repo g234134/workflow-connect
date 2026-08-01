@@ -1,0 +1,501 @@
+id,sales_rep,region,product,deal_amount,close_date,status,commission_pct,notes
+1,JOHN SMITH,North,Service X,3400.0,01/15/2026,CLOSED,0.05,
+10,JOHN SMITH,,Widget B,,,Pending,0.1,Follow up
+100,John Smith,WEST,widget a,1250.0,,pending,,Follow up
+101,MIKE CHEN,East,Widget B,1250.0,"Jan 15, 2026",Closed,0.05,
+102,mike chen,WEST,widget a,,,Closed,0.1,
+103,Sara Lee,north,WIDGET C,,,,,
+104,sara lee,West,,2100.0,15-01-2026,pending,,
+105,mike chen,South,Widget A,,,closed,,
+106,sara lee,South,widget a,890.0,01/15/2026,CLOSED,,
+107,John Smith,North,,2100.0,,Closed,0.15,
+108,sara lee,South,Service X,2100.0,2026-01-15,Pending,0.15,whitespace
+109,sara lee,east,widget a,,01/15/2026,CLOSED,0.15,
+11,mike chen,South,WIDGET C,1500.0,"Jan 15, 2026",Closed,0.1,
+110,JOHN SMITH,North,Widget B,-50.0,,pending,,
+111,MIKE CHEN,South,,-50.0,,Closed,,
+112,john smith,east,Service Y,,"Jan 15, 2026",Closed,0.05,
+113,john smith,South,Widget A,890.0,15-01-2026,Closed,0.15,
+114,mike chen,WEST,widget a,2100.0,"Jan 15, 2026",,0.15,Urgent deal
+115,JOHN SMITH,NORTH,Service Y,75000.0,,Closed,0.15,whitespace
+116,mike chen,West,Widget A,2100.0,2026-01-15,Cancelled,0.15,Urgent deal
+117,JOHN SMITH,east,Widget A,1500.0,,Closed,,
+118,sara lee,West,Service Y,,15-01-2026,Closed,,
+119,sara lee,South,Widget B,-50.0,15-01-2026,Closed,0.05,
+12,,east,Service X,,01/15/2026,Cancelled,0.1,whitespace
+120,sara lee,NORTH,Service X,,2026-01-15,,0.05,
+121,JOHN SMITH,WEST,widget a,1500.0,01/15/2026,Closed,0.05,Urgent deal
+122,Sara Lee,east,Widget A,2100.0,01/15/2026,Closed,,
+123,mike chen,South,Widget B,,"Jan 15, 2026",,0.15,
+124,Sara Lee,North,Service X,-50.0,,Closed,,
+125,MIKE CHEN,West,Widget A,0.0,"Jan 15, 2026",,,Urgent deal
+126,sara lee,South,,3400.0,15-01-2026,Closed,0.15,whitespace
+127,MIKE CHEN,east,,1500.0,,CLOSED,,
+128,John Smith,West,Service Y,,15-01-2026,closed,,Follow up
+129,john smith,NORTH,,1500.0,01/15/2026,closed,,Urgent deal
+13,MIKE CHEN,east,Widget A,890.0,"Jan 15, 2026",CLOSED,0.1,whitespace
+130,,,,1500.0,2026-01-15,Cancelled,,whitespace
+131,mike chen,East,Widget A,,2026-01-15,closed,0.1,whitespace
+132,Sara Lee,South,widget a,75000.0,2026-01-15,closed,,
+133,Sara Lee,North,Widget A,0.0,2026-01-15,pending,0.15,Urgent deal
+134,mike chen,NORTH,WIDGET C,,15-01-2026,CLOSED,0.1,
+135,JOHN SMITH,,,,,Pending,,
+136,John Smith,South,Widget A,1500.0,"Jan 15, 2026",Closed,0.15,whitespace
+137,john smith,WEST,Service X,1500.0,,CLOSED,0.05,Follow up
+138,,,Service X,1500.0,15-01-2026,pending,,Urgent deal
+139,sara lee,east,Widget A,,01/15/2026,,,Urgent deal
+14,Sara Lee,,,,15-01-2026,Cancelled,0.1,
+140,Sara Lee,South,Widget A,1500.0,15-01-2026,pending,0.05,
+141,john smith,,Widget A,-50.0,01/15/2026,Cancelled,0.1,whitespace
+142,sara lee,,Service X,1500.0,,CLOSED,0.05,
+143,john smith,South,Widget A,1250.0,,Cancelled,0.05,
+144,JOHN SMITH,South,Service Y,75000.0,01/15/2026,Pending,0.1,
+145,,West,Service X,890.0,"Jan 15, 2026",Closed,,Urgent deal
+146,,north,Widget A,,01/15/2026,Pending,,whitespace
+147,mike chen,West,Service Y,,15-01-2026,Closed,0.15,
+148,JOHN SMITH,WEST,Service Y,1500.0,,pending,,Follow up
+149,,north,WIDGET C,2100.0,2026-01-15,Cancelled,,
+15,MIKE CHEN,north,Widget A,,01/15/2026,CLOSED,,whitespace
+150,JOHN SMITH,WEST,Service X,1500.0,15-01-2026,closed,0.1,
+151,john smith,South,Widget A,,2026-01-15,Pending,,
+152,mike chen,WEST,Service Y,1500.0,,,,whitespace
+153,John Smith,east,widget a,2100.0,,,0.15,
+154,,South,Widget A,2100.0,01/15/2026,Cancelled,0.05,whitespace
+155,,West,Service Y,1250.0,15-01-2026,pending,0.1,
+156,MIKE CHEN,north,WIDGET C,1500.0,,Closed,0.05,Urgent deal
+157,sara lee,NORTH,WIDGET C,,,Pending,,
+158,sara lee,East,Widget B,,2026-01-15,pending,,
+159,John Smith,West,Service X,890.0,2026-01-15,Closed,0.1,
+16,mike chen,,widget a,75000.0,15-01-2026,Closed,,Urgent deal
+160,,South,Service Y,1250.0,01/15/2026,pending,0.05,
+161,mike chen,West,widget a,,15-01-2026,Closed,,Urgent deal
+162,JOHN SMITH,WEST,WIDGET C,,2026-01-15,pending,,whitespace
+163,john smith,North,Widget A,75000.0,15-01-2026,closed,,whitespace
+164,MIKE CHEN,north,widget a,0.0,,CLOSED,0.05,
+165,Sara Lee,,Service Y,75000.0,,pending,,
+166,mike chen,north,widget a,1500.0,,Pending,,Follow up
+167,sara lee,east,Service Y,2100.0,15-01-2026,,0.05,
+168,,east,Service Y,1500.0,"Jan 15, 2026",Cancelled,0.1,whitespace
+169,MIKE CHEN,north,widget a,,2026-01-15,,0.05,whitespace
+17,john smith,north,Service X,1500.0,"Jan 15, 2026",closed,0.15,Follow up
+170,,NORTH,Widget A,,,Cancelled,0.05,
+171,mike chen,East,,1250.0,"Jan 15, 2026",pending,0.15,
+172,sara lee,NORTH,Widget A,3400.0,2026-01-15,Cancelled,,
+173,,north,Service X,,01/15/2026,,,
+174,john smith,,Service X,1250.0,01/15/2026,pending,0.05,Urgent deal
+175,,East,Widget A,890.0,01/15/2026,,0.05,
+176,john smith,north,WIDGET C,75000.0,15-01-2026,Closed,0.15,
+177,,South,Service Y,,,closed,0.05,
+178,John Smith,,Widget A,1500.0,2026-01-15,pending,,whitespace
+179,mike chen,WEST,Widget A,75000.0,"Jan 15, 2026",Pending,,
+18,John Smith,WEST,Widget A,-50.0,,CLOSED,,
+180,JOHN SMITH,East,,,"Jan 15, 2026",Closed,,whitespace
+181,Sara Lee,North,WIDGET C,75000.0,,Closed,0.05,
+182,Sara Lee,South,Widget B,-50.0,"Jan 15, 2026",Cancelled,0.05,
+183,MIKE CHEN,east,Widget B,890.0,15-01-2026,Pending,,
+184,,north,,1250.0,15-01-2026,Closed,,
+185,,,,,15-01-2026,,0.15,
+186,mike chen,North,Service Y,890.0,,Closed,,whitespace
+187,,north,,,01/15/2026,,,Follow up
+188,JOHN SMITH,east,Service X,0.0,01/15/2026,Cancelled,,
+189,JOHN SMITH,West,widget a,,,Pending,,Urgent deal
+19,Sara Lee,West,WIDGET C,890.0,"Jan 15, 2026",CLOSED,,
+190,,NORTH,WIDGET C,,01/15/2026,pending,0.1,
+191,John Smith,north,Widget B,1500.0,15-01-2026,Closed,,
+192,MIKE CHEN,,Service Y,1500.0,"Jan 15, 2026",CLOSED,,
+193,MIKE CHEN,WEST,Service X,-50.0,,Closed,0.15,
+194,JOHN SMITH,South,Widget A,2100.0,2026-01-15,Closed,0.15,Urgent deal
+195,JOHN SMITH,north,,2100.0,,Closed,,
+196,sara lee,East,Widget A,,01/15/2026,Closed,,
+197,,north,Widget B,1250.0,01/15/2026,Closed,,
+198,John Smith,East,Service Y,-50.0,15-01-2026,,,Urgent deal
+199,john smith,East,widget a,0.0,2026-01-15,,0.15,Urgent deal
+2,JOHN SMITH,,,1250.0,2026-01-15,closed,0.1,
+20,john smith,,Service Y,2100.0,2026-01-15,closed,0.15,Urgent deal
+200,John Smith,East,widget a,,,CLOSED,0.15,Urgent deal
+201,mike chen,NORTH,widget a,-50.0,,,0.05,Urgent deal
+202,John Smith,West,widget a,1500.0,,,,Urgent deal
+203,john smith,East,Service X,890.0,01/15/2026,Cancelled,,Follow up
+204,sara lee,South,Widget B,890.0,2026-01-15,pending,,
+205,john smith,East,Widget B,,15-01-2026,CLOSED,0.1,
+206,John Smith,WEST,Widget A,75000.0,"Jan 15, 2026",Pending,,
+207,Sara Lee,WEST,WIDGET C,,01/15/2026,pending,,Follow up
+208,sara lee,East,Widget A,2100.0,"Jan 15, 2026",,,
+209,mike chen,NORTH,WIDGET C,,01/15/2026,pending,0.05,whitespace
+21,sara lee,North,WIDGET C,,2026-01-15,closed,0.05,Follow up
+210,MIKE CHEN,East,widget a,,2026-01-15,pending,0.05,
+211,Sara Lee,WEST,Widget B,75000.0,2026-01-15,Pending,,Follow up
+212,,North,,1250.0,15-01-2026,Cancelled,0.1,Follow up
+213,JOHN SMITH,East,WIDGET C,1250.0,"Jan 15, 2026",closed,,whitespace
+214,,NORTH,Widget B,1250.0,"Jan 15, 2026",Closed,0.05,
+215,MIKE CHEN,WEST,Widget A,,2026-01-15,pending,0.1,
+216,mike chen,north,Service X,3400.0,"Jan 15, 2026",closed,0.05,
+217,mike chen,,Widget A,,2026-01-15,Closed,,
+218,john smith,West,WIDGET C,890.0,"Jan 15, 2026",,0.05,
+219,,South,,890.0,,closed,,Urgent deal
+22,JOHN SMITH,West,Widget B,890.0,,Closed,,
+220,JOHN SMITH,West,Widget A,75000.0,15-01-2026,Closed,0.05,Follow up
+221,,South,Widget A,0.0,2026-01-15,Cancelled,0.1,whitespace
+222,JOHN SMITH,,Service Y,890.0,2026-01-15,Cancelled,,Urgent deal
+223,John Smith,WEST,Widget A,1500.0,01/15/2026,CLOSED,0.05,whitespace
+224,MIKE CHEN,North,Service X,3400.0,2026-01-15,Pending,0.05,Urgent deal
+225,Sara Lee,West,,,15-01-2026,pending,0.05,whitespace
+226,sara lee,South,Service Y,1250.0,,Cancelled,0.15,
+227,,east,,2100.0,15-01-2026,Cancelled,0.1,Follow up
+228,MIKE CHEN,East,Service X,,,,0.05,Follow up
+229,John Smith,West,Service X,0.0,2026-01-15,closed,0.15,whitespace
+23,Sara Lee,West,,3400.0,,Pending,0.05,Urgent deal
+230,Sara Lee,South,Widget A,,,,0.1,whitespace
+231,MIKE CHEN,East,Widget A,1250.0,,Cancelled,,Follow up
+232,Sara Lee,North,widget a,1500.0,,,0.15,
+233,John Smith,North,Widget B,,,Closed,0.05,
+234,JOHN SMITH,South,Service Y,0.0,15-01-2026,Closed,,
+235,MIKE CHEN,East,Service Y,2100.0,2026-01-15,CLOSED,,Urgent deal
+236,mike chen,East,Service X,3400.0,2026-01-15,Closed,0.05,
+237,MIKE CHEN,West,,,2026-01-15,pending,,Urgent deal
+238,MIKE CHEN,South,Service X,2100.0,01/15/2026,closed,0.1,
+239,MIKE CHEN,NORTH,Widget A,,,Cancelled,0.05,Urgent deal
+24,mike chen,East,Widget A,,15-01-2026,closed,0.1,
+240,JOHN SMITH,West,Service X,-50.0,01/15/2026,CLOSED,,Urgent deal
+241,sara lee,north,WIDGET C,890.0,01/15/2026,Closed,0.05,Urgent deal
+242,,WEST,Widget B,,2026-01-15,closed,0.15,Follow up
+243,MIKE CHEN,West,,75000.0,,closed,0.1,Urgent deal
+244,JOHN SMITH,WEST,Widget A,1500.0,,Cancelled,0.1,
+245,John Smith,NORTH,,,2026-01-15,closed,,
+246,Sara Lee,NORTH,Widget B,0.0,,Pending,0.15,
+247,Sara Lee,north,Service X,3400.0,,pending,0.1,whitespace
+248,Sara Lee,,widget a,,,CLOSED,,
+249,John Smith,NORTH,Service Y,,2026-01-15,Closed,0.05,
+25,JOHN SMITH,East,Widget A,,,Pending,,
+250,Sara Lee,South,,,,Closed,,whitespace
+251,Sara Lee,South,Widget A,3400.0,,,0.15,Follow up
+252,JOHN SMITH,North,Widget B,2100.0,15-01-2026,Closed,,
+253,,,Widget B,0.0,,Cancelled,0.05,Urgent deal
+254,mike chen,NORTH,Service Y,,,closed,0.15,
+255,MIKE CHEN,north,Service X,2100.0,01/15/2026,CLOSED,0.05,
+256,Sara Lee,east,,3400.0,01/15/2026,Cancelled,,whitespace
+257,,South,Widget B,2100.0,,Closed,,Urgent deal
+258,MIKE CHEN,North,widget a,75000.0,,Closed,0.1,
+259,,North,Widget A,-50.0,15-01-2026,Closed,0.15,
+26,john smith,north,Widget A,3400.0,2026-01-15,Closed,,Urgent deal
+260,john smith,north,,890.0,"Jan 15, 2026",Cancelled,,Follow up
+261,,North,,1250.0,,Pending,0.15,
+262,Sara Lee,north,,,15-01-2026,pending,,
+263,JOHN SMITH,NORTH,widget a,75000.0,"Jan 15, 2026",Cancelled,,Urgent deal
+264,John Smith,South,,,2026-01-15,Closed,0.05,
+265,,WEST,Widget A,890.0,,CLOSED,0.15,
+266,,NORTH,,,,pending,,Urgent deal
+267,MIKE CHEN,,Service X,2100.0,2026-01-15,Cancelled,0.15,whitespace
+268,JOHN SMITH,east,Service X,1500.0,2026-01-15,Closed,0.15,whitespace
+269,sara lee,North,Widget A,890.0,,,0.1,whitespace
+27,JOHN SMITH,West,WIDGET C,-50.0,,Closed,0.1,
+270,sara lee,North,widget a,3400.0,2026-01-15,Closed,0.15,Follow up
+271,John Smith,east,WIDGET C,75000.0,,Closed,,whitespace
+272,john smith,NORTH,WIDGET C,,"Jan 15, 2026",Closed,,Follow up
+273,,NORTH,Widget A,,"Jan 15, 2026",Cancelled,0.05,whitespace
+274,Sara Lee,,Widget A,3400.0,01/15/2026,pending,,Urgent deal
+275,sara lee,South,Service X,3400.0,,Closed,0.15,Follow up
+276,,West,Service X,-50.0,2026-01-15,,,Urgent deal
+277,John Smith,South,Widget A,-50.0,,closed,0.15,Follow up
+278,Sara Lee,WEST,WIDGET C,3400.0,,pending,,whitespace
+279,Sara Lee,NORTH,widget a,,,Pending,0.1,
+28,John Smith,,Widget A,3400.0,15-01-2026,,0.1,
+280,sara lee,South,Widget A,,15-01-2026,Cancelled,0.05,Follow up
+281,JOHN SMITH,NORTH,Widget A,,01/15/2026,,0.05,Follow up
+282,MIKE CHEN,South,Service X,0.0,"Jan 15, 2026",Closed,,
+283,sara lee,West,Widget A,890.0,15-01-2026,CLOSED,0.05,Follow up
+284,MIKE CHEN,NORTH,Service X,1250.0,2026-01-15,pending,,
+285,JOHN SMITH,East,Service X,2100.0,,Closed,0.1,
+286,MIKE CHEN,South,WIDGET C,,"Jan 15, 2026",CLOSED,0.05,Follow up
+287,Sara Lee,NORTH,Widget A,0.0,"Jan 15, 2026",Pending,0.1,
+288,mike chen,east,Service Y,,15-01-2026,closed,0.1,
+289,MIKE CHEN,East,WIDGET C,1250.0,"Jan 15, 2026",,0.1,Follow up
+29,JOHN SMITH,east,Service Y,75000.0,15-01-2026,Closed,,whitespace
+290,Sara Lee,East,Service X,,,Closed,0.15,whitespace
+291,,South,Widget A,1500.0,2026-01-15,Closed,0.15,
+292,mike chen,West,Service X,,,pending,0.15,
+293,sara lee,South,Widget B,2100.0,01/15/2026,Closed,0.05,
+294,,east,Widget A,,,Pending,,
+295,JOHN SMITH,West,Widget A,,,Cancelled,0.05,
+296,JOHN SMITH,North,WIDGET C,,,CLOSED,0.1,Urgent deal
+297,MIKE CHEN,north,WIDGET C,,15-01-2026,closed,,Follow up
+298,john smith,WEST,Widget B,,15-01-2026,Closed,,
+299,MIKE CHEN,South,Widget A,75000.0,"Jan 15, 2026",Closed,0.05,
+3,john smith,West,WIDGET C,1500.0,,,0.1,Follow up
+30,john smith,north,Widget A,75000.0,,Cancelled,,
+300,JOHN SMITH,North,,0.0,,closed,,
+301,JOHN SMITH,WEST,Widget A,-50.0,15-01-2026,CLOSED,,
+302,mike chen,East,,2100.0,15-01-2026,,0.05,whitespace
+303,John Smith,East,widget a,890.0,,,,
+304,sara lee,North,Widget A,-50.0,15-01-2026,,,Follow up
+305,sara lee,South,Widget A,0.0,01/15/2026,pending,0.1,whitespace
+306,JOHN SMITH,North,,,2026-01-15,Pending,0.1,
+307,JOHN SMITH,,Widget A,2100.0,,Closed,0.1,whitespace
+308,john smith,east,Widget A,3400.0,,Pending,,
+309,John Smith,West,Service X,3400.0,,Cancelled,,
+31,sara lee,South,WIDGET C,,15-01-2026,CLOSED,,
+310,,South,Service X,890.0,,Pending,,Urgent deal
+311,Sara Lee,North,Widget B,1500.0,,,,Follow up
+312,john smith,East,,,"Jan 15, 2026",,,
+313,Sara Lee,east,Widget B,,15-01-2026,Pending,,
+314,Sara Lee,NORTH,Widget A,1250.0,,,,
+315,John Smith,east,WIDGET C,-50.0,01/15/2026,Cancelled,0.05,
+316,MIKE CHEN,East,widget a,,,Pending,0.05,Urgent deal
+317,mike chen,,Widget A,,01/15/2026,Pending,,
+318,,South,Widget A,3400.0,01/15/2026,closed,0.05,Follow up
+319,sara lee,,WIDGET C,75000.0,01/15/2026,Cancelled,,Urgent deal
+32,Sara Lee,WEST,WIDGET C,,15-01-2026,closed,0.05,whitespace
+320,mike chen,WEST,Service Y,-50.0,"Jan 15, 2026",Cancelled,,Follow up
+321,MIKE CHEN,north,Widget A,0.0,01/15/2026,Cancelled,0.15,Follow up
+322,john smith,,WIDGET C,890.0,2026-01-15,pending,,
+323,mike chen,South,Widget B,3400.0,"Jan 15, 2026",Pending,,
+324,sara lee,WEST,Service Y,-50.0,15-01-2026,Closed,,
+325,,NORTH,Widget B,,15-01-2026,CLOSED,,whitespace
+326,john smith,West,Widget A,,,Closed,,
+327,mike chen,NORTH,WIDGET C,,,CLOSED,0.05,
+328,MIKE CHEN,East,Widget A,,,Closed,0.05,Follow up
+329,john smith,North,,1250.0,2026-01-15,pending,,Urgent deal
+33,john smith,north,WIDGET C,890.0,15-01-2026,Closed,,
+330,john smith,West,,890.0,2026-01-15,closed,,
+331,sara lee,South,Service X,0.0,"Jan 15, 2026",,0.05,Urgent deal
+332,mike chen,WEST,WIDGET C,3400.0,"Jan 15, 2026",closed,0.05,whitespace
+333,john smith,north,,75000.0,15-01-2026,Closed,0.05,whitespace
+334,john smith,NORTH,widget a,2100.0,15-01-2026,Cancelled,,
+335,john smith,South,WIDGET C,,15-01-2026,pending,0.05,
+336,Sara Lee,West,Widget A,890.0,"Jan 15, 2026",Closed,0.1,
+337,John Smith,east,widget a,-50.0,01/15/2026,Pending,,Follow up
+338,,east,Widget B,,,Cancelled,0.05,
+339,mike chen,South,widget a,0.0,,,,Urgent deal
+34,mike chen,North,Widget B,75000.0,2026-01-15,,0.15,Follow up
+340,john smith,South,Widget A,2100.0,01/15/2026,Cancelled,,Follow up
+341,mike chen,NORTH,,,,pending,,
+342,JOHN SMITH,north,Service X,890.0,15-01-2026,CLOSED,0.05,Follow up
+343,,East,widget a,,2026-01-15,pending,,Urgent deal
+344,Sara Lee,north,Widget B,,01/15/2026,,,
+345,mike chen,north,Widget A,,"Jan 15, 2026",closed,,
+346,,east,Widget A,-50.0,15-01-2026,,,
+347,sara lee,,Widget B,1500.0,15-01-2026,CLOSED,0.1,Urgent deal
+348,Sara Lee,South,Widget A,890.0,2026-01-15,CLOSED,,Urgent deal
+349,mike chen,South,Widget A,,"Jan 15, 2026",pending,0.1,whitespace
+35,Sara Lee,east,Widget A,890.0,01/15/2026,pending,0.1,
+350,MIKE CHEN,,WIDGET C,2100.0,2026-01-15,CLOSED,0.15,
+351,mike chen,East,,0.0,15-01-2026,Cancelled,,whitespace
+352,John Smith,South,Service Y,,,Pending,,Urgent deal
+353,John Smith,east,Service Y,-50.0,,Closed,,
+354,,east,Service X,75000.0,"Jan 15, 2026",closed,,
+355,John Smith,West,Widget A,2100.0,,Pending,,Urgent deal
+356,JOHN SMITH,east,Widget A,890.0,,pending,0.1,Urgent deal
+357,John Smith,east,,,15-01-2026,Closed,,Follow up
+358,mike chen,West,Widget A,0.0,,closed,0.05,
+359,,NORTH,Widget A,,,,,Urgent deal
+36,john smith,East,Widget A,1250.0,,Closed,,
+360,mike chen,north,Widget A,,"Jan 15, 2026",Pending,,whitespace
+361,sara lee,WEST,Service Y,75000.0,15-01-2026,CLOSED,0.15,
+362,MIKE CHEN,north,Service X,75000.0,2026-01-15,closed,,whitespace
+363,John Smith,East,Service X,0.0,15-01-2026,Pending,,Follow up
+364,,WEST,widget a,2100.0,,Closed,0.15,
+365,Sara Lee,North,widget a,1250.0,"Jan 15, 2026",closed,0.05,
+366,sara lee,West,Widget B,,01/15/2026,Cancelled,,Follow up
+367,MIKE CHEN,South,,1500.0,01/15/2026,CLOSED,0.05,whitespace
+368,mike chen,east,Widget A,,01/15/2026,Closed,,Follow up
+369,mike chen,North,WIDGET C,3400.0,"Jan 15, 2026",closed,,
+37,John Smith,North,widget a,890.0,2026-01-15,closed,0.05,
+370,John Smith,East,Service Y,3400.0,15-01-2026,closed,0.15,whitespace
+371,MIKE CHEN,West,Service Y,,15-01-2026,,,
+372,,East,Widget A,,01/15/2026,pending,,
+373,JOHN SMITH,NORTH,Service Y,,01/15/2026,pending,0.05,
+374,,NORTH,,75000.0,,CLOSED,,Follow up
+375,mike chen,NORTH,Widget A,1500.0,,CLOSED,,
+376,MIKE CHEN,South,Widget B,890.0,"Jan 15, 2026",Closed,,
+377,,North,Widget A,890.0,01/15/2026,,,
+378,MIKE CHEN,east,Widget A,75000.0,,Closed,,
+379,JOHN SMITH,,Widget A,3400.0,"Jan 15, 2026",Closed,0.15,
+38,mike chen,north,WIDGET C,,,Closed,,
+380,Sara Lee,NORTH,Widget A,,,Closed,,
+381,JOHN SMITH,,widget a,-50.0,,Cancelled,,
+382,MIKE CHEN,West,WIDGET C,75000.0,2026-01-15,Pending,0.15,
+383,MIKE CHEN,South,Service Y,,15-01-2026,closed,,
+384,sara lee,,Service Y,,,,0.1,
+385,John Smith,South,WIDGET C,1250.0,,Cancelled,,Urgent deal
+386,John Smith,East,Service X,-50.0,,pending,,
+387,JOHN SMITH,NORTH,,1250.0,"Jan 15, 2026",CLOSED,0.05,
+388,sara lee,NORTH,Service Y,3400.0,,,,
+389,Sara Lee,east,,2100.0,2026-01-15,closed,,
+39,mike chen,,Service Y,-50.0,01/15/2026,Cancelled,0.1,Urgent deal
+390,Sara Lee,East,Widget A,2100.0,"Jan 15, 2026",Closed,,whitespace
+391,JOHN SMITH,WEST,Service Y,,,,0.1,Follow up
+392,sara lee,WEST,Service X,0.0,"Jan 15, 2026",Cancelled,,
+393,John Smith,,Widget A,0.0,,Closed,0.05,
+394,MIKE CHEN,North,widget a,890.0,15-01-2026,Closed,0.05,Follow up
+395,sara lee,NORTH,Service X,890.0,"Jan 15, 2026",closed,0.05,Urgent deal
+396,Sara Lee,north,Service Y,1500.0,,CLOSED,0.05,Follow up
+397,Sara Lee,South,,1500.0,2026-01-15,closed,0.05,
+398,MIKE CHEN,north,Widget B,,01/15/2026,Closed,0.05,
+399,,north,,890.0,15-01-2026,closed,0.1,Follow up
+4,Sara Lee,North,Widget B,75000.0,"Jan 15, 2026",pending,0.1,
+40,mike chen,NORTH,Service X,2100.0,"Jan 15, 2026",closed,0.05,Follow up
+400,JOHN SMITH,north,widget a,0.0,"Jan 15, 2026",pending,0.1,Follow up
+401,John Smith,NORTH,widget a,,,Closed,,whitespace
+402,John Smith,WEST,Service Y,3400.0,,CLOSED,,
+403,MIKE CHEN,South,widget a,,01/15/2026,closed,,whitespace
+404,mike chen,East,,0.0,01/15/2026,Pending,0.15,whitespace
+405,JOHN SMITH,South,Service X,1250.0,,pending,0.1,
+406,sara lee,east,Service X,1500.0,2026-01-15,Pending,,Follow up
+407,JOHN SMITH,South,Widget A,1500.0,,closed,,
+408,,East,Widget B,75000.0,,,0.15,
+409,John Smith,WEST,widget a,1250.0,,closed,0.05,Urgent deal
+41,JOHN SMITH,north,WIDGET C,,"Jan 15, 2026",CLOSED,0.15,
+410,sara lee,North,Widget A,75000.0,,pending,0.05,whitespace
+411,mike chen,east,,,,CLOSED,0.15,
+412,Sara Lee,north,WIDGET C,890.0,,Cancelled,,
+413,JOHN SMITH,South,,3400.0,2026-01-15,Pending,0.05,Follow up
+414,JOHN SMITH,WEST,Widget A,-50.0,,CLOSED,0.05,
+415,John Smith,North,Widget B,2100.0,"Jan 15, 2026",pending,0.1,Urgent deal
+416,John Smith,South,widget a,1250.0,"Jan 15, 2026",,0.15,
+417,JOHN SMITH,South,widget a,2100.0,15-01-2026,Cancelled,0.05,Follow up
+418,John Smith,East,Widget B,-50.0,2026-01-15,closed,0.1,whitespace
+419,john smith,North,Widget A,3400.0,2026-01-15,Closed,0.15,Follow up
+42,sara lee,East,Service X,890.0,15-01-2026,pending,,whitespace
+420,John Smith,NORTH,Widget A,,,,0.1,Urgent deal
+421,sara lee,east,Service Y,-50.0,2026-01-15,Cancelled,0.05,
+422,john smith,NORTH,WIDGET C,,2026-01-15,,0.05,Follow up
+423,Sara Lee,South,Service Y,,,Closed,0.05,Urgent deal
+424,sara lee,South,Service X,,01/15/2026,Closed,0.15,
+425,MIKE CHEN,South,WIDGET C,890.0,2026-01-15,,0.05,
+426,,North,Service Y,1250.0,,,,whitespace
+427,Sara Lee,north,WIDGET C,,01/15/2026,,,
+428,John Smith,South,widget a,1250.0,01/15/2026,,0.05,Urgent deal
+429,MIKE CHEN,north,widget a,,01/15/2026,,0.05,
+43,john smith,West,Service X,1500.0,2026-01-15,CLOSED,0.15,
+430,john smith,east,Widget B,3400.0,"Jan 15, 2026",pending,,Urgent deal
+431,mike chen,East,Service Y,2100.0,"Jan 15, 2026",Pending,0.05,
+432,John Smith,,widget a,890.0,2026-01-15,CLOSED,,Follow up
+433,,east,widget a,,"Jan 15, 2026",Pending,,Urgent deal
+434,MIKE CHEN,South,widget a,,01/15/2026,pending,,whitespace
+435,john smith,South,Service Y,890.0,2026-01-15,Pending,0.15,Follow up
+436,john smith,South,Service X,890.0,2026-01-15,,,Follow up
+437,sara lee,north,Widget A,,01/15/2026,closed,0.05,
+438,sara lee,NORTH,WIDGET C,75000.0,"Jan 15, 2026",closed,,
+439,Sara Lee,north,Widget A,,01/15/2026,Closed,,
+44,JOHN SMITH,West,Widget B,-50.0,"Jan 15, 2026",Pending,0.05,Urgent deal
+440,JOHN SMITH,East,widget a,1250.0,15-01-2026,Closed,0.1,
+441,mike chen,east,Widget A,1250.0,15-01-2026,,0.1,Urgent deal
+442,sara lee,NORTH,Service X,-50.0,15-01-2026,CLOSED,0.05,
+443,sara lee,South,Widget A,75000.0,,Closed,0.05,
+444,Sara Lee,east,Widget B,75000.0,01/15/2026,Pending,0.05,
+445,john smith,east,Service Y,2100.0,,Closed,0.15,
+446,,east,Service X,890.0,2026-01-15,Cancelled,,
+447,john smith,South,Widget A,2100.0,,Cancelled,,
+448,sara lee,NORTH,widget a,3400.0,,Pending,0.15,
+449,john smith,South,,0.0,01/15/2026,CLOSED,0.1,
+45,sara lee,South,Widget A,-50.0,2026-01-15,closed,0.05,Follow up
+450,,East,Widget A,0.0,,CLOSED,,
+451,MIKE CHEN,West,Service X,890.0,15-01-2026,Closed,0.05,
+452,sara lee,,WIDGET C,1250.0,,Closed,0.05,Urgent deal
+453,sara lee,NORTH,Service Y,890.0,"Jan 15, 2026",Closed,0.05,
+454,John Smith,north,Service Y,,"Jan 15, 2026",,,
+455,,South,Service Y,890.0,01/15/2026,,,whitespace
+456,MIKE CHEN,East,Widget B,,,Cancelled,0.1,whitespace
+457,John Smith,east,Service X,-50.0,01/15/2026,CLOSED,0.05,
+458,mike chen,,Widget A,890.0,,Cancelled,,
+459,sara lee,,widget a,2100.0,01/15/2026,Cancelled,0.05,
+46,Sara Lee,North,Widget A,0.0,01/15/2026,pending,0.1,whitespace
+460,sara lee,East,Service Y,890.0,,closed,,whitespace
+461,,WEST,Widget A,-50.0,01/15/2026,Pending,0.05,
+462,,South,widget a,1250.0,2026-01-15,,,whitespace
+463,mike chen,NORTH,,2100.0,15-01-2026,Cancelled,,Follow up
+464,JOHN SMITH,WEST,WIDGET C,890.0,15-01-2026,closed,,
+465,Sara Lee,North,Service Y,-50.0,2026-01-15,closed,0.15,
+466,mike chen,NORTH,widget a,,2026-01-15,Cancelled,,
+467,MIKE CHEN,North,,1500.0,01/15/2026,,0.1,
+468,JOHN SMITH,East,WIDGET C,3400.0,15-01-2026,pending,0.05,Urgent deal
+469,Sara Lee,South,widget a,1250.0,15-01-2026,Closed,0.1,
+47,MIKE CHEN,West,,,2026-01-15,closed,0.05,whitespace
+470,,North,,,"Jan 15, 2026",Closed,0.1,
+471,john smith,South,Widget B,1500.0,"Jan 15, 2026",closed,,
+472,Sara Lee,east,Widget A,2100.0,,pending,0.05,whitespace
+473,mike chen,NORTH,Service Y,75000.0,"Jan 15, 2026",CLOSED,,
+474,Sara Lee,WEST,Widget A,-50.0,01/15/2026,pending,,
+475,John Smith,north,widget a,1500.0,"Jan 15, 2026",,,
+476,sara lee,West,Widget A,75000.0,,,,whitespace
+477,MIKE CHEN,,WIDGET C,2100.0,"Jan 15, 2026",closed,,whitespace
+478,john smith,West,Widget B,,15-01-2026,CLOSED,0.1,
+479,sara lee,NORTH,Widget A,75000.0,2026-01-15,,0.1,whitespace
+48,John Smith,West,Widget A,0.0,,CLOSED,,
+480,John Smith,,Service X,0.0,,closed,0.05,Follow up
+481,mike chen,West,Service Y,-50.0,,Closed,,
+482,mike chen,north,,890.0,01/15/2026,closed,0.05,
+483,JOHN SMITH,South,Service Y,75000.0,"Jan 15, 2026",,0.05,Follow up
+484,MIKE CHEN,North,Widget B,-50.0,15-01-2026,CLOSED,,
+485,mike chen,North,,0.0,,Pending,0.05,whitespace
+486,MIKE CHEN,South,Service Y,1250.0,"Jan 15, 2026",pending,0.15,Urgent deal
+487,MIKE CHEN,north,WIDGET C,890.0,"Jan 15, 2026",Closed,,Urgent deal
+488,Sara Lee,east,widget a,3400.0,15-01-2026,Pending,,Follow up
+489,MIKE CHEN,West,Service Y,1250.0,,CLOSED,0.05,Urgent deal
+49,john smith,South,Service Y,1250.0,"Jan 15, 2026",Pending,0.05,
+490,mike chen,NORTH,Widget A,890.0,01/15/2026,Pending,,
+491,sara lee,North,Widget A,1250.0,"Jan 15, 2026",Pending,0.15,Urgent deal
+492,MIKE CHEN,West,,1500.0,2026-01-15,Closed,0.1,Urgent deal
+493,MIKE CHEN,,Widget A,890.0,15-01-2026,Cancelled,0.15,
+494,Sara Lee,north,Service X,1250.0,15-01-2026,Closed,0.1,
+495,sara lee,South,WIDGET C,1500.0,01/15/2026,pending,0.05,Follow up
+496,john smith,North,Widget A,890.0,,CLOSED,,
+497,sara lee,South,Service X,1500.0,"Jan 15, 2026",,,Urgent deal
+498,MIKE CHEN,South,WIDGET C,2100.0,"Jan 15, 2026",,,
+499,john smith,West,Service Y,,,pending,0.15,whitespace
+5,,north,widget a,75000.0,2026-01-15,Cancelled,,Urgent deal
+50,JOHN SMITH,East,,,,CLOSED,0.1,
+500,JOHN SMITH,WEST,widget a,0.0,"Jan 15, 2026",Cancelled,,Urgent deal
+51,John Smith,east,Widget A,890.0,,Cancelled,,Follow up
+52,sara lee,South,Widget B,,15-01-2026,Closed,,Follow up
+53,sara lee,South,Widget A,0.0,"Jan 15, 2026",Pending,0.1,
+54,sara lee,east,Service Y,-50.0,2026-01-15,pending,0.15,whitespace
+55,mike chen,West,Service Y,1250.0,2026-01-15,pending,0.1,
+56,Sara Lee,North,widget a,,15-01-2026,Cancelled,0.05,Urgent deal
+57,mike chen,,widget a,75000.0,,Pending,0.15,
+58,mike chen,North,WIDGET C,0.0,15-01-2026,closed,0.05,Urgent deal
+59,,north,Service X,,"Jan 15, 2026",,0.15,Follow up
+6,Sara Lee,North,Widget A,,2026-01-15,,0.05,
+60,Sara Lee,West,Widget B,3400.0,15-01-2026,,0.05,whitespace
+61,John Smith,,Service X,75000.0,,Closed,0.15,Urgent deal
+62,sara lee,east,Service Y,2100.0,15-01-2026,Closed,0.05,
+63,MIKE CHEN,NORTH,widget a,-50.0,,Cancelled,0.05,
+64,Sara Lee,South,WIDGET C,890.0,2026-01-15,Closed,0.1,Follow up
+65,JOHN SMITH,WEST,,1500.0,,Pending,0.05,whitespace
+66,mike chen,WEST,,3400.0,01/15/2026,Closed,,
+67,mike chen,South,Widget B,,15-01-2026,Closed,,
+68,JOHN SMITH,WEST,Widget B,2100.0,,Cancelled,,Follow up
+69,mike chen,West,Widget A,890.0,,Closed,,Urgent deal
+7,Sara Lee,,Service Y,,01/15/2026,closed,0.05,whitespace
+70,sara lee,South,Widget A,1500.0,01/15/2026,pending,,
+71,Sara Lee,South,Service X,0.0,"Jan 15, 2026",closed,0.1,
+72,sara lee,east,Widget B,3400.0,2026-01-15,,,Urgent deal
+73,MIKE CHEN,east,Widget A,3400.0,15-01-2026,,,
+74,john smith,,,2100.0,2026-01-15,Cancelled,0.15,Follow up
+75,mike chen,West,WIDGET C,2100.0,01/15/2026,pending,,Follow up
+76,john smith,east,Service Y,1500.0,,,0.05,
+77,MIKE CHEN,NORTH,Widget A,75000.0,,Closed,0.05,whitespace
+78,mike chen,NORTH,Widget A,890.0,2026-01-15,pending,,Urgent deal
+79,sara lee,WEST,Service Y,0.0,15-01-2026,pending,,Follow up
+8,sara lee,South,widget a,3400.0,2026-01-15,,0.15,Follow up
+80,Sara Lee,north,Widget A,1250.0,,Closed,0.15,
+81,JOHN SMITH,North,Widget A,3400.0,01/15/2026,Closed,,
+82,sara lee,NORTH,Widget A,1500.0,2026-01-15,Pending,,whitespace
+83,Sara Lee,East,Widget B,,,closed,,
+84,Sara Lee,north,Widget A,-50.0,,,,whitespace
+85,sara lee,north,WIDGET C,,,pending,,whitespace
+86,JOHN SMITH,,Widget A,0.0,,,0.05,Urgent deal
+87,JOHN SMITH,West,Service Y,1250.0,15-01-2026,Closed,0.05,Follow up
+88,,WEST,Widget B,75000.0,01/15/2026,pending,,
+89,MIKE CHEN,WEST,,,"Jan 15, 2026",Cancelled,,
+9,,NORTH,Service Y,0.0,01/15/2026,pending,0.05,whitespace
+90,JOHN SMITH,South,Widget A,3400.0,15-01-2026,,0.15,
+91,MIKE CHEN,East,Widget B,2100.0,01/15/2026,Cancelled,,Urgent deal
+92,,South,Service X,,2026-01-15,Pending,0.05,
+93,mike chen,WEST,WIDGET C,2100.0,,Closed,,
+94,JOHN SMITH,South,WIDGET C,75000.0,,Pending,0.15,whitespace
+95,,WEST,Service Y,75000.0,,Cancelled,0.15,whitespace
+96,MIKE CHEN,South,Service X,-50.0,01/15/2026,closed,0.05,
+97,,north,Widget B,3400.0,01/15/2026,Closed,0.15,whitespace
+98,Sara Lee,north,WIDGET C,-50.0,01/15/2026,Cancelled,0.1,Urgent deal
+99,john smith,West,Widget B,-50.0,2026-01-15,Closed,,Urgent deal

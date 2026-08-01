@@ -1,0 +1,213 @@
+{
+  "schema_version": "tool_catalog_v1",
+  "catalog_revision": "1.0.0",
+  "tier": "mvp_v0.1",
+  "policy_defaults": {
+    "max_tools_per_task": 3
+  },
+  "tools": [
+    {
+      "tool_id": "llm.ask",
+      "type": "llm",
+      "display_name": "RAG Ask",
+      "enabled": true,
+      "input_schema": {
+        "required": ["query"],
+        "properties": {
+          "query": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "text",
+        "fields": ["answer"]
+      },
+      "cost_hint": {
+        "unit": "request",
+        "estimate_usd_p50": 0.02,
+        "cost_level": "med"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 800, "p95_ms": 3000 },
+      "tags": ["rag", "qa"],
+      "executor_binding": { "runner": "ask_pipeline" }
+    },
+    {
+      "tool_id": "rag.retrieve",
+      "type": "retrieval",
+      "display_name": "Retrieve Only",
+      "enabled": true,
+      "input_schema": {
+        "required": ["query"],
+        "properties": {
+          "query": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["chunks", "sources"]
+      },
+      "cost_hint": {
+        "unit": "request",
+        "estimate_usd_p50": 0.005,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 400, "p95_ms": 1500 },
+      "tags": ["rag", "retrieve"],
+      "executor_binding": { "runner": "ask_pipeline.retrieve" }
+    },
+    {
+      "tool_id": "code.runner",
+      "type": "code",
+      "display_name": "Code Runner",
+      "enabled": true,
+      "input_schema": {
+        "required": ["script_ref"],
+        "properties": {
+          "script_ref": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["exit_code", "stdout"]
+      },
+      "cost_hint": {
+        "unit": "invocation",
+        "estimate_usd_p50": 0.01,
+        "cost_level": "med"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 2000, "p95_ms": 10000 },
+      "tags": ["automation"],
+      "executor_binding": { "runner": "chariot.factory" }
+    },
+    {
+      "tool_id": "browser.dom_task",
+      "type": "browser",
+      "display_name": "Browser DOM Task",
+      "enabled": false,
+      "input_schema": {
+        "required": ["dom_plan"],
+        "properties": {
+          "dom_plan": { "type": "object" }
+        }
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["steps_completed"]
+      },
+      "cost_hint": {
+        "unit": "session",
+        "estimate_usd_p50": 0.05,
+        "cost_level": "med"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 5000, "p95_ms": 20000 },
+      "tags": ["browser"],
+      "executor_binding": { "runner": "browser_runner" }
+    },
+    {
+      "tool_id": "db.read_query",
+      "type": "data",
+      "display_name": "Read-only DB Query",
+      "enabled": true,
+      "input_schema": {
+        "required": ["sql", "params"],
+        "properties": {
+          "sql": { "type": "string" },
+          "params": { "type": "object" }
+        }
+      },
+      "expected_output": {
+        "shape": "table",
+        "fields": ["rows"]
+      },
+      "cost_hint": {
+        "unit": "query",
+        "estimate_usd_p50": 0.001,
+        "cost_level": "low"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 300, "p95_ms": 2000 },
+      "tags": ["data"],
+      "executor_binding": { "runner": "dark.data" }
+    },
+    {
+      "tool_id": "file.io",
+      "type": "file",
+      "display_name": "Logical File I/O",
+      "enabled": true,
+      "input_schema": {
+        "required": ["logical_path", "operation"],
+        "properties": {
+          "logical_path": { "type": "string" },
+          "operation": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "artifact_ref",
+        "fields": ["artifact_id"]
+      },
+      "cost_hint": {
+        "unit": "operation",
+        "estimate_usd_p50": 0.0,
+        "cost_level": "low"
+      },
+      "risk_level": "med",
+      "latency_hint": { "p50_ms": 100, "p95_ms": 500 },
+      "tags": ["file"],
+      "executor_binding": { "runner": "gov_paths" }
+    },
+    {
+      "tool_id": "notify.channel",
+      "type": "notify",
+      "display_name": "Notify Channel",
+      "enabled": true,
+      "input_schema": {
+        "required": ["channel", "message"],
+        "properties": {
+          "channel": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "empty",
+        "fields": []
+      },
+      "cost_hint": {
+        "unit": "message",
+        "estimate_usd_p50": 0.0,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 200, "p95_ms": 1000 },
+      "tags": ["notify"],
+      "executor_binding": { "runner": "telegram" }
+    },
+    {
+      "tool_id": "human.review_checkpoint",
+      "type": "human",
+      "display_name": "Human Review Checkpoint",
+      "enabled": true,
+      "input_schema": {
+        "required": ["checkpoint_id"],
+        "properties": {
+          "checkpoint_id": { "type": "string" }
+        }
+      },
+      "expected_output": {
+        "shape": "json",
+        "fields": ["decision"]
+      },
+      "cost_hint": {
+        "unit": "checkpoint",
+        "estimate_usd_p50": 0.0,
+        "cost_level": "low"
+      },
+      "risk_level": "low",
+      "latency_hint": { "p50_ms": 0, "p95_ms": 0 },
+      "tags": ["hitl"],
+      "executor_binding": { "runner": "interrupt_service" }
+    }
+  ]
+}

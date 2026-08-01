@@ -1,0 +1,35 @@
+【結案報告草案 · v2.56】
+生成時間：2026-07-05T16:37:28+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 8 條
+二、雜訊過濾率（示意）：92.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_raises.py | score=8.5 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_raises.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_modular_mistral.py | score=8.25 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modular_mistral.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508_safety_types.py | score=8.11 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_safety_types.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_package_importer.py | score=8.05 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_package_importer.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508_modular_camembert.py | score=7.78 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_modular_camembert.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_metrics_core.py | score=7.77 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_metrics_core.py
+7. chat_models.py | score=7.7 | sim=None% | D:\大唐三省六部\02_Agents_Core\repos\AI_Chariot_Legacy_666_1.0.0_20260508_langchain\libs\partners\groq\langchain_groq\chat_models.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_test_read.py | score=7.51 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_read.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）
+  · 使用內部平台 internal_wave 進行數據清算
+  · 樣本數為 100，平均值為 4.859，分級分布為 B：51、A：8、C：10、D：31
+
+六、使用建議：
+  · 根據 match_report 結果，優先使用高產出率的資產
+  · 使用 noise_filter_rate_pct_hint 來過濾掉不必要的數據
+  · 根據 elite_index_stats 結果，優化文件處理流程以提高效率
+
+七、摘要：
+本次全量數據清算大戰役（Asset_Value 精煉波次）使用內部平台 internal_wave 進行數據清算，樣本數為 100，平均值為 4.859，分級分布為 B：51、A：8、C：10、D：31。match_report 結果顯示，高產出率的資產有 8 個，掃描了 100 個數據，池大小為 36236。elite_index_stats 結果顯示，已處理 400 個文件，耗時 0.042 秒。根據 noise_filter_rate_pct_hint 和 virtual_savings_twd_hint 的結果，建議優先使用高產出率的資產，過濾掉不必要的數據，優化文件處理流程以提高效率。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

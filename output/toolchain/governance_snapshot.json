@@ -1,0 +1,177 @@
+{
+  "ok": true,
+  "schema_version": "toolchain_governance_snapshot_v1",
+  "generated_at": "2026-06-13T05:22:48Z",
+  "gate_class": "optional",
+  "blocks_mainline": false,
+  "non_blocking": true,
+  "ci_context": "eval-gate-pr",
+  "github_run_id": null,
+  "github_sha": null,
+  "message": "governance snapshot assembled (12 matrix entries; observed passed=2 failed=0 not_observed=10)",
+  "coverage": {
+    "smoke_entries_total": 12,
+    "by_tier": {
+      "local_recommended": 9,
+      "optional_ci": 2,
+      "release_only": 1
+    },
+    "by_gate_class": {
+      "optional": 12
+    },
+    "blocks_mainline_count": 1,
+    "mandatory_count": 0,
+    "optional_count": 12,
+    "shadow_count": 0
+  },
+  "smoke_matrix": {
+    "loaded_ok": true,
+    "load_message": "dry-run listed 12 entries",
+    "matrix_schema_version": "toolchain_smoke_matrix_v1",
+    "matrix_revision": "2026-06-11",
+    "source_yaml": "routing/toolchain_smoke_matrix_v1.yaml"
+  },
+  "components": [
+    {
+      "smoke_id": "TS-W3TL-UNIT",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-ROUTING-EVAL-UNIT",
+      "tier": "optional_ci",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "passed",
+      "last_observed_at": "2026-06-13T05:22:48Z",
+      "source": "ci_context:eval-gate-pr",
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-ROUTING-EVAL-DRYRUN",
+      "tier": "optional_ci",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "passed",
+      "last_observed_at": "2026-06-13T05:22:48Z",
+      "source": "ci_context:eval-gate-pr",
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-AGENT-LINES-CI",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-AGENT-LINES-CI-UNIT",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-AGENT-LINES-METRICS",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-AGENT-LINES-AUDIT",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-AGENT-LINES-MONTHLY",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-TOOLCHAIN-DASHBOARD-DRYRUN",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-TOOLCHAIN-DASHBOARD-UNIT",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-WF-STATUS-HELP",
+      "tier": "local_recommended",
+      "gate_class": "optional",
+      "blocks_mainline": false,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    },
+    {
+      "smoke_id": "TS-MVP-MAINLINE",
+      "tier": "release_only",
+      "gate_class": "optional",
+      "blocks_mainline": true,
+      "last_result": "not_observed",
+      "last_observed_at": null,
+      "source": null,
+      "error_summary": null
+    }
+  ],
+  "recent_errors": [],
+  "toolchain_health_embed": {
+    "ok": true,
+    "schema_version": "toolchain_health_v1",
+    "gate_class": "optional",
+    "blocks_mainline": false,
+    "dry_run": true,
+    "aggregated_health_score": 95,
+    "sections_populated": 5,
+    "sections_ok": 5,
+    "degraded_sections": [],
+    "message": "toolchain health dashboard assembled (5/5 core sections populated; score=95)"
+  },
+  "output_paths": {
+    "json": "output/toolchain/governance_snapshot.json",
+    "markdown": "output/toolchain/governance_snapshot.md",
+    "advisory_log": "output/toolchain/governance_advisory.log"
+  },
+  "advisory_level": "none",
+  "advisory_findings": [],
+  "advisory_summary": "No missing-signal advisories detected"
+}

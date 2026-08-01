@@ -464,6 +464,130 @@ class TestDispatchCardsEligibilityGate(unittest.TestCase):
 
 
 
+class TestDispatchCardsEligibilityUnresolvedDep(unittest.TestCase):
+
+    """FP-G4-T2: unresolved-dependency + eligibility-gate=block (WC-T1 deferred UT)."""
+
+    def setUp(self) -> None:
+
+        self._tmp = tempfile.TemporaryDirectory()
+
+        self.tmp_repo = Path(self._tmp.name)
+
+        tickets_dir = self.tmp_repo / "04_Workflows" / "tickets"
+
+        tickets_dir.mkdir(parents=True)
+
+        dep_src = _FIXTURES / "dep_unresolved_ticket.md"
+
+        (tickets_dir / "TEST-DEP_state.md").write_text(
+
+            dep_src.read_text(encoding="utf-8"),
+
+            encoding="utf-8",
+
+        )
+
+        self.tickets_dir = tickets_dir
+
+        self.plan_path = _FIXTURES / "dep_unresolved_plan.json"
+
+        self.out_dir = self.tmp_repo / "artifacts" / "control_plane" / "cards"
+
+
+
+    def tearDown(self) -> None:
+
+        self._tmp.cleanup()
+
+
+
+    def _run(self, *, gate: str = "block", force: bool = False, dry_run: bool = True) -> dict:
+
+        return generate_cards(
+
+            self.tmp_repo,
+
+            plan_path=self.plan_path,
+
+            out_dir=self.out_dir,
+
+            role="implementer",
+
+            limit=5,
+
+            ticket_id="TEST-DEP",
+
+            dry_run=dry_run,
+
+            eligibility_gate=gate,
+
+            force_eligibility=force,
+
+        )
+
+
+
+    def test_gate_block_skips_unresolved_dependency(self) -> None:
+
+        summary = self._run(gate="block")
+
+        self.assertEqual(summary["cards_generated"], 0)
+
+        self.assertEqual(summary["cards_skipped"], 1)
+
+        self.assertEqual(summary["eligibility_gate"], "block")
+
+        blocked = summary["eligibility_blocked"]
+
+        self.assertEqual(len(blocked), 1)
+
+        self.assertEqual(blocked[0]["ticket_id"], "TEST-DEP")
+
+        self.assertTrue(
+
+            any(r.startswith("dependency_unresolved:") for r in blocked[0]["reasons"])
+
+        )
+
+        self.assertTrue(
+
+            any("dependency_unresolved:W9-T9" in r for r in blocked[0]["reasons"])
+
+        )
+
+        self.assertTrue(any("eligibility_blocked:TEST-DEP" in w for w in summary["warnings"]))
+
+
+
+    def test_gate_block_allows_when_dependency_done(self) -> None:
+
+        prereq = _FIXTURES / "dep_done_prereq.md"
+
+        (self.tickets_dir / "W9-T9_state.md").write_text(
+
+            prereq.read_text(encoding="utf-8"),
+
+            encoding="utf-8",
+
+        )
+
+        summary = self._run(gate="block", dry_run=False)
+
+        self.assertEqual(summary["cards_generated"], 1)
+
+        self.assertEqual(summary["cards_skipped"], 0)
+
+        self.assertEqual(summary.get("eligibility_blocked", []), [])
+
+        card_path = self.out_dir / "TEST-DEP__implementer.cursor.md"
+
+        self.assertTrue(card_path.is_file())
+
+
+
+
+
 class TestDispatchCardsLive(unittest.TestCase):
 
     def test_live_plan_implementer_cards(self) -> None:

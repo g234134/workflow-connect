@@ -1,0 +1,472 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_f_p1_live_projection_v1",
+  "demo": false,
+  "read_only": true,
+  "host": "ui/command_center",
+  "visual_ssot": "docs/ui-templates/unified_P1.png",
+  "generated_at": "2026-07-28T01:12:17+0800",
+  "message": "W4-UI-F P1 live projection (CLI overlay · read_only · fallback-mock available · ≠ Grafana/PG soak/Operator prod)",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文；驗收語意見 _smoke_test_keys.py"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "全局總覽主頁",
+    "subtitle": "三省六部工作流指揮台",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "2026-07-28 01:12:17 UTC+8",
+    "operator": "指揮官 · 系統管理員"
+  },
+  "nav": [
+    {
+      "id": "p1",
+      "label": "總覽",
+      "href": "p1.html",
+      "active": true
+    },
+    {
+      "id": "p5",
+      "label": "協作作業台",
+      "href": "p5.html",
+      "active": false
+    },
+    {
+      "id": "p4",
+      "label": "三省六部",
+      "href": "p4.html",
+      "active": false
+    },
+    {
+      "id": "p3",
+      "label": "暗部執行",
+      "href": "p3.html",
+      "active": false
+    },
+    {
+      "id": "p2",
+      "label": "技能與資源",
+      "href": "p2.html",
+      "active": false
+    },
+    {
+      "id": "settings",
+      "label": "設定",
+      "href": "settings.html",
+      "active": false
+    }
+  ],
+  "kpis": [
+    {
+      "id": "workflows_running",
+      "label": "執行中工作流",
+      "value": "126",
+      "delta": "↑ 12.4% 較昨日",
+      "tone": "up",
+      "icon": "pulse"
+    },
+    {
+      "id": "task_completion_rate",
+      "label": "今日任務完成率",
+      "value": "72.6%",
+      "delta": "↑ 8.7% 較昨日",
+      "tone": "up",
+      "icon": "check"
+    },
+    {
+      "id": "dark_health",
+      "label": "暗部健康",
+      "value": "94.2%",
+      "delta": "↑ 5.7% 較昨日",
+      "tone": "up",
+      "icon": "pulse"
+    },
+    {
+      "id": "pending_delivery",
+      "label": "待交付任務",
+      "value": "8",
+      "delta": "QUEUE blocked（只讀投影）",
+      "tone": "down",
+      "icon": "clock"
+    },
+    {
+      "id": "local_ops_ratio",
+      "label": "本地作業占比",
+      "value": "62%",
+      "delta": "↑ 6.3% 較昨日",
+      "tone": "up",
+      "icon": "timer"
+    },
+    {
+      "id": "cloud_api_usage",
+      "label": "雲端API今日用量",
+      "value": "12,430次",
+      "delta": "↑ 15.2% 較昨日",
+      "tone": "up",
+      "icon": "pulse"
+    },
+    {
+      "id": "quota_remaining",
+      "label": "額度剩餘（遮罩）",
+      "value": "1,240 / 5,000",
+      "delta": "↓ 4.1% 較昨日",
+      "tone": "down",
+      "key_related": true,
+      "icon": "coin"
+    },
+    {
+      "id": "alert_count",
+      "label": "告警數量",
+      "value": "7",
+      "delta": "↑ 1.3% 較昨日",
+      "tone": "down",
+      "icon": "alert"
+    }
+  ],
+  "flow": [
+    {
+      "id": "chat",
+      "label": "聊天入口",
+      "icon": "chat"
+    },
+    {
+      "id": "prince",
+      "label": "太子",
+      "icon": "crown"
+    },
+    {
+      "id": "zhongshu",
+      "label": "中書省",
+      "icon": "scroll"
+    },
+    {
+      "id": "menxia",
+      "label": "門下省",
+      "icon": "stamp"
+    },
+    {
+      "id": "shangshu",
+      "label": "尚書省",
+      "icon": "board"
+    },
+    {
+      "id": "liubu",
+      "label": "六部",
+      "icon": "people"
+    },
+    {
+      "id": "dark",
+      "label": "暗部執行層",
+      "icon": "shield",
+      "highlight": true
+    },
+    {
+      "id": "delivery",
+      "label": "交付層",
+      "icon": "box"
+    }
+  ],
+  "departments": [
+    {
+      "id": "li",
+      "name": "吏部",
+      "status": "green",
+      "label": "運作正常"
+    },
+    {
+      "id": "xing",
+      "name": "刑部",
+      "status": "yellow",
+      "label": "待覆核"
+    },
+    {
+      "id": "gong",
+      "name": "工部",
+      "status": "green",
+      "label": "運作正常"
+    },
+    {
+      "id": "bing",
+      "name": "兵部",
+      "status": "red",
+      "label": "告警"
+    },
+    {
+      "id": "li_rites",
+      "name": "禮部",
+      "status": "green",
+      "label": "運作正常"
+    },
+    {
+      "id": "hu",
+      "name": "戶部",
+      "status": "green",
+      "label": "運作正常"
+    }
+  ],
+  "dark_modules": [
+    {
+      "id": "orch",
+      "name": "流程編排",
+      "status": "green",
+      "label": "良好"
+    },
+    {
+      "id": "graph",
+      "name": "圖譜推理",
+      "status": "green",
+      "label": "良好"
+    },
+    {
+      "id": "struct_mem",
+      "name": "結構記憶",
+      "status": "yellow",
+      "label": "注意"
+    },
+    {
+      "id": "sem_mem",
+      "name": "語意記憶",
+      "status": "green",
+      "label": "良好"
+    },
+    {
+      "id": "obs",
+      "name": "追蹤觀測",
+      "status": "green",
+      "label": "良好"
+    },
+    {
+      "id": "iface",
+      "name": "對外介面",
+      "status": "green",
+      "label": "良好"
+    },
+    {
+      "id": "venv",
+      "name": "虛擬環境",
+      "status": "green",
+      "label": "良好"
+    }
+  ],
+  "activity": [
+    {
+      "time": "14:31:45",
+      "tag": "success",
+      "tag_label": "成功",
+      "msg": "任務更新：刑部 - 案件研判任務 #J20250526031 已完成交付"
+    },
+    {
+      "time": "14:30:12",
+      "tag": "success",
+      "tag_label": "成功",
+      "msg": "任務更新：工部 - 流程自動化任務 #G20250526017 執行完成"
+    },
+    {
+      "time": "14:28:09",
+      "tag": "info",
+      "tag_label": "資訊",
+      "msg": "系統事件：雲端 API 用量達到今日配額的 75%"
+    },
+    {
+      "time": "14:25:33",
+      "tag": "running",
+      "tag_label": "執行中",
+      "msg": "任務更新：兵部 - 人員調度任務 #B20250526021 執行中"
+    },
+    {
+      "time": "14:24:18",
+      "tag": "alert",
+      "tag_label": "告警",
+      "msg": "告警通知：暗部健康度下降至 94.2%，建議檢查資源負載"
+    },
+    {
+      "time": "14:22:07",
+      "tag": "info",
+      "tag_label": "資訊",
+      "msg": "系統事件：額度剩餘低於 25%（金鑰已遮罩），建議及時補充"
+    },
+    {
+      "time": "14:20:55",
+      "tag": "warn",
+      "tag_label": "待處理",
+      "msg": "任務更新：禮部 - 文書審核任務 #L20250526009 需要人工覆核"
+    },
+    {
+      "time": "14:18:36",
+      "tag": "info",
+      "tag_label": "資訊",
+      "msg": "系統事件：系統備份完成，備份檔案大小 2.4GB"
+    }
+  ],
+  "operator_fields": {
+    "ok": true,
+    "schema_version": "p89_operator_fields_v1",
+    "read_only": true,
+    "demo": false,
+    "case_ref": "demo_phase",
+    "message": "P8.9 five-key live projection overlay (read_only · ≠ prod Operator)",
+    "count": 8,
+    "fields": [
+      "event_id",
+      "ack_status",
+      "handler_id",
+      "dispatch_registry_hit",
+      "dlq_flag"
+    ],
+    "rows": [
+      {
+        "event_id": "217f0cd1-4ead-4d54-9454-de9c40efa543",
+        "event_type": "intake.gate_decision",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": false,
+        "registered_handler_ids": [],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "3376ab19-ce2b-4128-bba5-ec6305adc77c",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "a062089c-907a-4ada-8d90-5ae0201b94b3",
+        "event_type": "run.completed",
+        "ack_status": "acked",
+        "handler_id": "run_terminal_log_v1",
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "run_terminal_log_v1",
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "bacb9507-1505-4f30-9aa9-3145f475b267",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "40c0b99c-2c0b-4d41-9de0-8c4001c29941",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "92dec3b0-9dfc-44d7-9c3d-a5b71189e63a",
+        "event_type": "checkpoint.approved",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "a559388f-7f1b-4258-a4bf-c40bfc3e4769",
+        "event_type": "intake.gate_decision",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": false,
+        "registered_handler_ids": [],
+        "dlq_flag": false
+      },
+      {
+        "event_id": "f38afeff-6c94-456f-acd5-8436614635e3",
+        "event_type": "run.completed",
+        "ack_status": "pending_ack",
+        "handler_id": null,
+        "dispatch_registry_hit": true,
+        "registered_handler_ids": [
+          "run_terminal_log_v1",
+          "webhook_dispatch_v1"
+        ],
+        "dlq_flag": false
+      }
+    ],
+    "source": "delivery.p89_operator_fields_v1"
+  },
+  "phase_field_drafts": {
+    "p75_intake_gate": {
+      "status": "skeleton",
+      "fields": {
+        "gate.decision": "allow",
+        "slo.latency_ms_p95": 420,
+        "slo.error_rate": 0.012,
+        "sink.mode": "file_stub",
+        "sink.last_delivered_at": "2026-07-27T15:00:00Z"
+      },
+      "note": "計劃 §2.1 placeholder · Wave4-A 僅展示"
+    },
+    "p5_health": {
+      "status": "skeleton",
+      "fields": {
+        "health.ok": true,
+        "metrics.scrape_ok": true,
+        "alert_budget_summary": "within_budget"
+      },
+      "note": "計劃 §2.3 placeholder · ≠ Grafana"
+    },
+    "p8_delivery": {
+      "status": "skeleton",
+      "fields": {
+        "backlog.status": "healthy",
+        "checkpoint_preview": "cp-demo-…",
+        "notify.delivery_state": "queued",
+        "worker.job_id": "job-demo-…"
+      },
+      "note": "計劃 §2.4 placeholder"
+    }
+  },
+  "non_claims": [
+    "≠ Grafana",
+    "≠ PG soak",
+    "≠ DarkOps 解禁",
+    "≠ 金鑰明文",
+    "≠ Operator prod",
+    "≠ Phase% authorize",
+    "≠ Round-2 GO",
+    "≠ live SLO 承諾"
+  ],
+  "data_source": "live_projection",
+  "live_overlays": {
+    "p89_operator_fields": {
+      "ok": true,
+      "count": 8,
+      "case_ref": "demo_phase"
+    },
+    "command_queue": {
+      "ok": true,
+      "ready_count": 0,
+      "blocked_count": 8,
+      "priority_next_ids": [
+        "human-H2-infra-spec",
+        "P6-nightly-continue",
+        "P7-Round-2-defer",
+        "WAVE6-unified-close"
+      ],
+      "note": "read-only QUEUE narrative · ≠ Round-2 execute"
+    },
+    "metrics_note": "toolchain /metrics stub narrative only · ≠ Prometheus soak claim",
+    "gate_note": "P7.5 gate/alerts/sink contract alignment · file_stub · ≠ prod alert sink"
+  }
+}

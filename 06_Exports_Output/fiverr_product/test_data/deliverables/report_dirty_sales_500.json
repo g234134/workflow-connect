@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "schema_version": "c2-demo-v1",
+    "job_id": "test-fiverr_sales_v1",
+    "report_type": "clean_basic_generic",
+    "cleaning_profile_id": "fiverr_sales_v1",
+    "generated_at": "2026-07-19T22:50:33.679143+00:00",
+    "disclaimer": "Generic low-risk profile; manual review recommended for first use",
+    "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+    "cleaning_profile_ref": "docs/tabular-cleaning-profiles-v1.md"
+  },
+  "case_id": "unknown",
+  "client_ref": "unknown",
+  "product_sku": "CLEAN-BASIC",
+  "generated_at": "2026-07-19T22:50:33.679143+00:00",
+  "summary": {
+    "job_id": "test-fiverr_sales_v1",
+    "sku": "CLEAN-BASIC",
+    "total_rows": 515,
+    "accepted_rows": 500,
+    "accepted_units": 500,
+    "rejected_rows": 0,
+    "rejected_units": 0,
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "chargeable_hint": false
+  },
+  "product_metrics": {
+    "total_rows": 515,
+    "accepted_rows": 500,
+    "rejected_rows": 0,
+    "duplicate_rows_found": 15,
+    "duplicate_rows_removed": 15,
+    "missing_rate_by_field": {
+      "id": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "sales_rep": {
+        "before": 0.1262,
+        "after": 0.128
+      },
+      "region": {
+        "before": 0.0913,
+        "after": 0.09
+      },
+      "product": {
+        "before": 0.1223,
+        "after": 0.126
+      },
+      "deal_amount": {
+        "before": 0.1922,
+        "after": 0.276
+      },
+      "close_date": {
+        "before": 0.3204,
+        "after": 0.32
+      },
+      "status": {
+        "before": 0.1592,
+        "after": 0.156
+      },
+      "commission_pct": {
+        "before": 0.1262,
+        "after": 0.45
+      },
+      "notes": {
+        "before": 0.5068,
+        "after": 0.512
+      }
+    },
+    "anomaly_count_by_rule": {
+      "numeric_out_of_range": 95,
+      "format_unparseable": 213
+    },
+    "format_fixes_applied": {
+      "text_trimmed": 88,
+      "numeric_parsed": 653
+    }
+  },
+  "cleaning_stats": {
+    "row_counts": {
+      "intake": 515,
+      "after_dedup": 515,
+      "ok": 500,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "id",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "sales_rep",
+        "missing_before": 65,
+        "missing_after": 64,
+        "rate_before": 0.1262,
+        "rate_after": 0.128
+      },
+      {
+        "field": "region",
+        "missing_before": 47,
+        "missing_after": 45,
+        "rate_before": 0.0913,
+        "rate_after": 0.09
+      },
+      {
+        "field": "product",
+        "missing_before": 63,
+        "missing_after": 63,
+        "rate_before": 0.1223,
+        "rate_after": 0.126
+      },
+      {
+        "field": "deal_amount",
+        "missing_before": 99,
+        "missing_after": 138,
+        "rate_before": 0.1922,
+        "rate_after": 0.276
+      },
+      {
+        "field": "close_date",
+        "missing_before": 165,
+        "missing_after": 160,
+        "rate_before": 0.3204,
+        "rate_after": 0.32
+      },
+      {
+        "field": "status",
+        "missing_before": 82,
+        "missing_after": 78,
+        "rate_before": 0.1592,
+        "rate_after": 0.156
+      },
+      {
+        "field": "commission_pct",
+        "missing_before": 65,
+        "missing_after": 225,
+        "rate_before": 0.1262,
+        "rate_after": 0.45
+      },
+      {
+        "field": "notes",
+        "missing_before": 261,
+        "missing_after": 256,
+        "rate_before": 0.5068,
+        "rate_after": 0.512
+      }
+    ],
+    "product_metrics": {
+      "total_rows": 515,
+      "accepted_rows": 500,
+      "rejected_rows": 0,
+      "duplicate_rows_found": 15,
+      "duplicate_rows_removed": 15,
+      "missing_rate_by_field": {
+        "id": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "sales_rep": {
+          "before": 0.1262,
+          "after": 0.128
+        },
+        "region": {
+          "before": 0.0913,
+          "after": 0.09
+        },
+        "product": {
+          "before": 0.1223,
+          "after": 0.126
+        },
+        "deal_amount": {
+          "before": 0.1922,
+          "after": 0.276
+        },
+        "close_date": {
+          "before": 0.3204,
+          "after": 0.32
+        },
+        "status": {
+          "before": 0.1592,
+          "after": 0.156
+        },
+        "commission_pct": {
+          "before": 0.1262,
+          "after": 0.45
+        },
+        "notes": {
+          "before": 0.5068,
+          "after": 0.512
+        }
+      },
+      "anomaly_count_by_rule": {
+        "numeric_out_of_range": 95,
+        "format_unparseable": 213
+      },
+      "format_fixes_applied": {
+        "text_trimmed": 88,
+        "numeric_parsed": 653
+      }
+    }
+  },
+  "issues_summary": {
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 95,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 11,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 12,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 17,
+        "field": "deal_amount",
+        "value": 75000.0
+      },
+      {
+        "row": 18,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 19,
+        "field": "deal_amount",
+        "value": 75000.0
+      }
+    ]
+  },
+  "stats": {
+    "row_counts": {
+      "intake": 515,
+      "after_dedup": 515,
+      "ok": 500,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "id",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "sales_rep",
+        "missing_before": 65,
+        "missing_after": 64,
+        "rate_before": 0.1262,
+        "rate_after": 0.128
+      },
+      {
+        "field": "region",
+        "missing_before": 47,
+        "missing_after": 45,
+        "rate_before": 0.0913,
+        "rate_after": 0.09
+      },
+      {
+        "field": "product",
+        "missing_before": 63,
+        "missing_after": 63,
+        "rate_before": 0.1223,
+        "rate_after": 0.126
+      },
+      {
+        "field": "deal_amount",
+        "missing_before": 99,
+        "missing_after": 138,
+        "rate_before": 0.1922,
+        "rate_after": 0.276
+      },
+      {
+        "field": "close_date",
+        "missing_before": 165,
+        "missing_after": 160,
+        "rate_before": 0.3204,
+        "rate_after": 0.32
+      },
+      {
+        "field": "status",
+        "missing_before": 82,
+        "missing_after": 78,
+        "rate_before": 0.1592,
+        "rate_after": 0.156
+      },
+      {
+        "field": "commission_pct",
+        "missing_before": 65,
+        "missing_after": 225,
+        "rate_before": 0.1262,
+        "rate_after": 0.45
+      },
+      {
+        "field": "notes",
+        "missing_before": 261,
+        "missing_after": 256,
+        "rate_before": 0.5068,
+        "rate_after": 0.512
+      }
+    ],
+    "processing_time_ms": 0
+  },
+  "errors": {
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 95,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 11,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 12,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 17,
+        "field": "deal_amount",
+        "value": 75000.0
+      },
+      {
+        "row": 18,
+        "field": "deal_amount",
+        "value": -50.0
+      },
+      {
+        "row": 19,
+        "field": "deal_amount",
+        "value": 75000.0
+      }
+    ]
+  },
+  "next_steps": {
+    "for_customer": [
+      "Review flagged numeric anomalies and unparseable values.",
+      "Confirm dedup rule (keep highest numeric compare column) matches business expectation."
+    ],
+    "recommended_actions": [
+      {
+        "action": "review_warnings",
+        "priority": "medium",
+        "reason": "generic profile first-run review"
+      }
+    ]
+  },
+  "cleaning_rules_applied": [
+    {
+      "rule": "trim_whitespace",
+      "description": "trim whitespace"
+    },
+    {
+      "rule": "deduplicate_by_pk",
+      "description": "deduplicate by pk"
+    },
+    {
+      "rule": "flag_numeric_outliers",
+      "description": "flag numeric outliers"
+    },
+    {
+      "rule": "normalize_category_casing",
+      "description": "normalize category casing"
+    },
+    {
+      "rule": "drop_blank_pk",
+      "description": "drop blank pk"
+    }
+  ],
+  "cleaning_profile_id": "fiverr_sales_v1"
+}

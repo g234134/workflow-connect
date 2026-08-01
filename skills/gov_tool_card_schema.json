@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gov_tool_card_v1",
+  "title": "Gov Tool Card v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "tool_id",
+    "title",
+    "brief",
+    "domain",
+    "module_path",
+    "entry_kind",
+    "entrypoint",
+    "inputs",
+    "outputs",
+    "verify_command",
+    "wave_ticket",
+    "review_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "gov_tool_card_v1"
+    },
+    "tool_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(\\.[a-z][a-z0-9_]*){2,}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "brief": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["obs", "kb", "route"]
+    },
+    "module_path": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "entry_kind": {
+      "type": "string",
+      "enum": ["python_module", "python_cli", "composite"]
+    },
+    "entrypoint": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "cli_invocation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "verify_command": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wave_ticket": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["approved", "draft", "rejected"]
+    },
+    "applicable_roles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["orchestrator", "implementer", "reviewer", "scribe"]
+      },
+      "uniqueItems": true
+    },
+    "depends_on": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "skeleton": {
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "entry_kind": { "const": "python_cli" } },
+        "required": ["entry_kind"]
+      },
+      "then": {
+        "required": ["cli_invocation"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "entry_kind": { "const": "composite" } },
+        "required": ["entry_kind"]
+      },
+      "then": {
+        "properties": {
+          "module_path": { "type": "null" },
+          "entrypoint": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entry_kind": { "enum": ["python_module", "python_cli"] }
+        },
+        "required": ["entry_kind"]
+      },
+      "then": {
+        "properties": {
+          "module_path": { "type": "string", "minLength": 1 },
+          "entrypoint": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+# W10-T1: Agent Lines CI suite — optional PR path + nightly regression hook.
+# Runs scripts/run_agent_lines_ci_suite.py (tabular run-all-allowed + NT preview).
+# Complements core-agent-smoke.yml and eval-gate-ci.yml; does not gate mainline by default.
+
+name: Agent Lines CI
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/agent-lines-ci.yml"
+      - "scripts/run_agent_lines_ci_suite.py"
+      - "scripts/run_agent_standard_case_regression.py"
+      - "scripts/run_agent_standard_case_experiment.py"
+      - "scripts/run_non_tabular_experiment_preview.py"
+      - "cases/**"
+      - "tests/test_agent_lines_ci_suite_v1.py"
+      - "tests/test_agent_standard_case_regression.py"
+      - "tests/test_agent_standard_case_experiment.py"
+      - "tests/test_non_tabular_orchestrator_preview_v1.py"
+  schedule:
+    # Nightly agent-lines regression track (UTC 05:30 daily)
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Agent line scope (tabular · non_tabular · all)
+        type: choice
+        options:
+          - all
+          - tabular
+          - non_tabular
+        default: all
+      include_extended_fixtures:
+        description: Tabular scope — also run additional_demo and sandbox_client
+        type: boolean
+        default: false
+      use_stub_fixtures:
+        description: Non-tabular scope — use NT stub fixtures instead of W9 real fixtures
+        type: boolean
+        default: false
+
+concurrency:
+  group: agent-lines-ci-${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  agent-lines-ci-pr:
+    name: Agent Lines CI suite (PR · path-filtered)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Agent Lines CI unit tests
+        shell: bash
+        run: python -m unittest tests.test_agent_lines_ci_suite_v1 -v
+
+      - name: Agent Lines CI suite (scope all)
+        id: suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          START_MS=$(python -c "import time; print(int(time.time()*1000))")
+          set +e
+          python scripts/run_agent_lines_ci_suite.py --scope all --format json | tee agent_lines_ci_result.json
+          SUITE_EXIT=$?
+          set -e
+          END_MS=$(python -c "import time; print(int(time.time()*1000))")
+          export SUITE_EXIT START_MS END_MS
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          raw = Path("agent_lines_ci_result.json").read_text(encoding="utf-8").strip()
+          suite = json.loads(raw) if raw else {"ok": False, "message": "empty stdout"}
+          summary = {
+              "workflow_name": "Agent Lines CI",
+              "job_name": "agent-lines-ci-pr",
+              "trigger": "pull_request",
+              "scope": "all",
+              "ok": int(os.environ["SUITE_EXIT"]) == 0 and suite.get("ok") is True,
+              "duration_ms": int(os.environ["END_MS"]) - int(os.environ["START_MS"]),
+              "github_run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "github_sha": os.environ.get("GITHUB_SHA", ""),
+              "suite_result": suite,
+          }
+          Path("agent_lines_ci_summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(summary, ensure_ascii=False))
+          sys.exit(int(os.environ["SUITE_EXIT"]))
+          PY
+
+      - name: Emit structured failure summary
+        if: failure()
+        shell: bash
+        run: |
+          echo "::group::agent-lines-ci summary"
+          cat agent_lines_ci_summary.json 2>/dev/null || cat agent_lines_ci_result.json 2>/dev/null || true
+          echo "::endgroup::"
+
+      - name: Upload Agent Lines CI artifacts (PR)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-lines-ci-pr-${{ github.run_id }}
+          path: |
+            agent_lines_ci_summary.json
+            agent_lines_ci_result.json
+            outbox/agent_ci/*.json
+            outbox/agent_experiment_regression/*.json
+            outbox/non_tabular_experiment/*.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  agent-lines-ci-nightly:
+    name: Agent Lines CI suite (nightly)
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Agent Lines CI unit tests
+        shell: bash
+        run: python -m unittest tests.test_agent_lines_ci_suite_v1 -v
+
+      - name: Agent Lines CI suite (scope all · extended fixtures)
+        id: suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          START_MS=$(python -c "import time; print(int(time.time()*1000))")
+          set +e
+          python scripts/run_agent_lines_ci_suite.py \
+            --scope all \
+            --include-extended-fixtures \
+            --format json | tee agent_lines_ci_result.json
+          SUITE_EXIT=$?
+          set -e
+          END_MS=$(python -c "import time; print(int(time.time()*1000))")
+          export SUITE_EXIT START_MS END_MS
+          python - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          raw = Path("agent_lines_ci_result.json").read_text(encoding="utf-8").strip()
+          suite = json.loads(raw) if raw else {"ok": False, "message": "empty stdout"}
+          summary = {
+              "workflow_name": "Agent Lines CI",
+              "job_name": "agent-lines-ci-nightly",
+              "trigger": "schedule",
+              "scope": "all",
+              "include_extended_fixtures": True,
+              "ok": int(os.environ["SUITE_EXIT"]) == 0 and suite.get("ok") is True,
+              "duration_ms": int(os.environ["END_MS"]) - int(os.environ["START_MS"]),
+              "github_run_id": os.environ.get("GITHUB_RUN_ID", ""),
+              "github_sha": os.environ.get("GITHUB_SHA", ""),
+              "suite_result": suite,
+          }
+          Path("agent_lines_ci_summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(summary, ensure_ascii=False))
+          sys.exit(int(os.environ["SUITE_EXIT"]))
+          PY
+
+      - name: Emit structured failure summary
+        if: failure()
+        shell: bash
+        run: |
+          echo "::group::agent-lines-ci summary"
+          cat agent_lines_ci_summary.json 2>/dev/null || cat agent_lines_ci_result.json 2>/dev/null || true
+          echo "::endgroup::"
+
+      - name: Upload Agent Lines CI artifacts (nightly)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-lines-ci-nightly-${{ github.run_id }}
+          path: |
+            agent_lines_ci_summary.json
+            agent_lines_ci_result.json
+            outbox/agent_ci/*.json
+            outbox/agent_experiment_regression/*.json
+            outbox/non_tabular_experiment/*.json
+          if-no-files-found: warn
+          retention-days: 30
+
+  agent-lines-ci-manual:
+    name: Agent Lines CI suite (manual dispatch)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    env:
+      AGENT_LINES_CI_USE_STUB_FIXTURES: ${{ inputs.use_stub_fixtures && '1' || '0' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Agent Lines CI suite (dispatch)
+        id: suite
+        shell: bash
+        env:
+          SCOPE: ${{ inputs.scope }}
+          INCLUDE_EXTENDED: ${{ inputs.include_extended_fixtures }}
+        run: |
+          set -euo pipefail
+          ARGS=(--scope "${SCOPE}" --format json)
+          if [[ "${INCLUDE_EXTENDED}" == "true" ]]; then
+            ARGS+=(--include-extended-fixtures)
+          fi
+          python scripts/run_agent_lines_ci_suite.py "${ARGS[@]}" | tee agent_lines_ci_result.json
+          python -c "import json,sys; d=json.load(open('agent_lines_ci_result.json')); sys.exit(0 if d.get('ok') else 1)"
+
+      - name: Upload Agent Lines CI artifacts (manual)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-lines-ci-manual-${{ github.run_id }}
+          path: |
+            agent_lines_ci_result.json
+            outbox/agent_ci/*.json
+            outbox/agent_experiment_regression/*.json
+            outbox/non_tabular_experiment/*.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "intake_gate_http_request_v1.json",
+  "title": "Intake Gate HTTP stub request v1",
+  "type": "object",
+  "required": ["task_type", "case_dir"],
+  "additionalProperties": true,
+  "properties": {
+    "task_type": { "type": "string", "minLength": 1 },
+    "case_dir": { "type": "string", "minLength": 1 },
+    "mode": { "type": "string", "enum": ["preview", "run"], "default": "preview" },
+    "policy_path": { "type": ["string", "null"] },
+    "outbox_root": { "type": ["string", "null"] },
+    "enable_notifications": { "type": "boolean", "default": false },
+    "include_extended_fixtures": { "type": "boolean", "default": false },
+    "no_v1_fallback": { "type": "boolean", "default": false },
+    "flags": { "type": "object", "additionalProperties": true }
+  }
+}

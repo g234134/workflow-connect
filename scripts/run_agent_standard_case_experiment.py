@@ -1904,6 +1904,7 @@ def run_agent_standard_case_experiment(
             "checkpoint_id": CHECKPOINT_B_ID,
             "status": "not_applicable",
             "would_trigger": False,
+            "integration_layer": "hitl.checkpoint_b_integration_v1",
         }
         base["final_status"] = "blocked"
         base["notes"] = ["experiment stopped at S3: decision=reject"]
@@ -1959,6 +1960,7 @@ def run_agent_standard_case_experiment(
             "status": "not_applicable",
             "would_trigger": False,
             "message": "blocked at S6: selector/registry fail-closed",
+            "integration_layer": "hitl.checkpoint_b_integration_v1",
         }
         base["output_guard"] = None
         base["final_status"] = "blocked_at_selector_registry"

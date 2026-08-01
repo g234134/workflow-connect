@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 import tempfile
 import unittest
@@ -25,6 +26,7 @@ from workflow_v2.kb.repo_index_bootstrap import (  # noqa: E402
 from workflow_v2.kb.rag_index_smoke import run_smoke, search_manifest  # noqa: E402
 
 _PILOT_STATUS = _REPO_ROOT / "workflow_v2/20_pilot/W3-B/index_status_W2-1.json"
+_PILOT_CASE = _REPO_ROOT / "workflow_v2/20_pilot/W2-1_case/W2-1_case.md"
 _SCOPE_CONFIG = _REPO_ROOT / "workflow_v2/kb/wave_b_gov_scope.json"
 
 
@@ -146,6 +148,28 @@ class TestLoadScopeConfig(unittest.TestCase):
         loaded = load_scope_config(_REPO_ROOT, "workflow_v2/kb/wave_b_gov_scope.json")
         self.assertTrue(loaded["ok"])
         self.assertIn("core", loaded["scope"]["kb_index_subtrees"])
+
+
+class TestCaseStatusConsistency(unittest.TestCase):
+    def _case_field(self, case_text: str, field: str) -> str:
+        pattern = rf"\|\s*\*\*`{re.escape(field)}`\*\*\s*\|\s*`([^`]*)`\s*\|"
+        match = re.search(pattern, case_text)
+        self.assertIsNotNone(match, f"{field} not found in case markdown")
+        return match.group(1).strip()  # type: ignore[union-attr]
+
+    def test_w2_1_case_kb_index_matches_status_json(self) -> None:
+        if not _PILOT_STATUS.is_file() or not _PILOT_CASE.is_file():
+            self.skipTest("pilot status or case markdown not present")
+        status = json.loads(_PILOT_STATUS.read_text(encoding="utf-8"))
+        mapped = fields_from_status(
+            status,
+            status_rel="workflow_v2/20_pilot/W3-B/index_status_W2-1.json",
+        )
+        self.assertTrue(mapped["ok"])
+        case_text = _PILOT_CASE.read_text(encoding="utf-8")
+        for key, expected in mapped["fields"].items():
+            actual = self._case_field(case_text, key)
+            self.assertEqual(actual, expected, f"mismatch on {key}")
 
 
 if __name__ == "__main__":

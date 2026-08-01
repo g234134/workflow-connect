@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chariot/p75_alert_sink_event_v1.json",
+  "title": "P7.5 Alert Sink Event v1",
+  "description": "Local alert sink envelope for Intake Gate SLO/alerts. L-local only. NOT production PagerDuty/Slack. Distinct from dark-ops alert_event_v1 (mappable severity only).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_id",
+    "source",
+    "severity",
+    "code",
+    "message",
+    "fired_at",
+    "sink"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "p75_alert_sink_event_v1"
+    },
+    "event_id": { "type": "string", "minLength": 8 },
+    "source": {
+      "type": "string",
+      "description": "Producer id, e.g. intake_slo_alert_probe_v1"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["warn", "critical"],
+      "description": "Maps from probe alert.level (warn|critical). Dark-ops warning≈warn."
+    },
+    "code": { "type": "string" },
+    "message": { "type": "string" },
+    "detail": { "type": "string" },
+    "fired_at": { "type": "string", "format": "date-time" },
+    "probe_snapshot": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional trimmed probe slo/alerts context"
+    },
+    "sink": {
+      "type": "object",
+      "required": ["mode", "delivered"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["file", "stub_http"]
+        },
+        "delivered": { "type": "boolean" },
+        "path": { "type": ["string", "null"] },
+        "http_status": { "type": ["integer", "null"] },
+        "target": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

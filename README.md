@@ -1,7 +1,25 @@
 # 大唐三省六部 — AI Workflow 治理基线
 
+> **新接战副官**：先读下方 **Start Here** 四链，再执行 OPS 一键自检。
+
+## Start Here
+
+| 优先 | 文件 | 用途 |
+|:----:|------|------|
+| 1 | [`AGENTS.md`](./AGENTS.md) | 接战／封存口令与 §初始化校准（权威入口） |
+| 2 | [`README_Refresher.md`](./README_Refresher.md) | 日常 SOP 与点火指令速查 |
+| 3 | [`04_Workflows/_PORTABLE_CORE_INDEX.md`](./04_Workflows/_PORTABLE_CORE_INDEX.md) | W0 可移植核心 vs 实例锚点分流 |
+| 4 | [`04_Workflows/Master_Map.json`](./04_Workflows/Master_Map.json) | 路径、runners、cabins 权威索引 |
+
+**一键自检**：`python 04_Workflows/_ops_cycle.py checklist --mode full`  
+**接战对照表**：[`docs/GOVERNANCE_ONBOARDING_v1.md`](./docs/GOVERNANCE_ONBOARDING_v1.md)
+
+---
+
+## 延伸阅读
+
 > **版本**: Phase 1 Governance Baseline  
-> **更新**: 2026-06-05  
+> **更新**: 2026-06-07  
 > **宪章**: 详见 `AGENTS.md` 与 `HARNESS_CONSTITUTION.md`
 
 ---
@@ -66,8 +84,8 @@
 ### 3.2 快速启动
 
 ```powershell
-# 1. 进入项目目录
-cd D:\大唐三省六部
+# 1. 进入项目目录（战車根；路径见 Master_Map.json）
+cd <repo-root>
 
 # 2. 复制环境变量模板
 copy .env.example .env

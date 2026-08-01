@@ -372,6 +372,19 @@
 
 **暗部 venv 政策**：嚴禁 pip／uv 向 `gov_core_system` 安裝 HQ 工具套件（地圖 `war_status.hq_tools.dark_venv_policy`）。
 
+### 12.1 D 槽外部錨點（Tools 域衛星 · Wave 6）
+
+> 物理路徑在 D:\ 根目錄；邏輯歸屬見 `Master_Map.json` → `external_satellites`（v2.67+）。
+
+| 衛星鍵 | 絕對路徑 | 角色 |
+|--------|----------|------|
+| **hermes** | `D:\Hermes\` | Hermes Agent runtime（gateway、MCP、skills、memories） |
+| **omniroute** | `D:\_infra\` | OmniRoute API gateway（port **20128**） |
+
+**硬編碼引用（勿搬移目錄）**：`04_Workflows/cross_agent_fix_ledger.yaml`、`07_Knowledge/commercial/telegram_order_bot.py`。
+
+**legacy 路徑**：OmniRoute 曾位於 `D:\總大腦加免費token\OmniRoute`（已不存在）。
+
 ---
 
 ## 13. 本戰車錨點（一頁總表）

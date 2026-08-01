@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1280px; height:769px; background:#0f0f1a; font-family:'Segoe UI',system-ui,sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; }
+
+.title { color:#fff; font-size:38px; font-weight:800; text-align:center; margin-bottom:6px; }
+.title span { color:#3a7bd5; }
+.subtitle { color:#8888aa; font-size:16px; text-align:center; margin-bottom:52px; }
+
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; width:860px; }
+
+.card { background:#1a1a2e; border:1px solid #252540; border-radius:20px; padding:36px 32px; display:flex; align-items:flex-start; gap:20px; transition:all 0.3s; }
+.card:hover { border-color:#3a7bd5; }
+
+.icon-box { width:64px; height:64px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:32px; flex-shrink:0; }
+.icon-box.blue { background:rgba(58,123,213,0.15); }
+.icon-box.green { background:rgba(0,230,118,0.15); }
+.icon-box.red { background:rgba(233,69,96,0.15); }
+.icon-box.purple { background:rgba(168,85,247,0.15); }
+
+.card-text h3 { color:#fff; font-size:20px; font-weight:700; margin-bottom:6px; }
+.card-text p { color:#8888aa; font-size:13px; line-height:1.5; }
+
+.bottom-bar { position:absolute; bottom:0; left:0; right:0; background:#12121c; padding:18px 40px; display:flex; justify-content:center; gap:40px; }
+.stat { color:#8888aa; font-size:14px; }
+.stat strong { color:#fff; font-weight:700; }
+.stat .num { color:#3a7bd5; font-size:22px; font-weight:800; margin-right:6px; }
+</style>
+</head>
+<body>
+<div class="title">Why <span>Choose</span> Me</div>
+<div class="subtitle">Professional data cleaning you can trust</div>
+
+<div class="grid">
+  <div class="card">
+    <div class="icon-box green">✅</div>
+    <div class="card-text">
+      <h3>Zero Data Loss</h3>
+      <p>Every single row is preserved. I never delete your data — only clean and improve it.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box blue">🔒</div>
+    <div class="card-text">
+      <h3>100% Confidential</h3>
+      <p>Your files are processed locally and deleted after delivery. No storage, no sharing.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box red">⚡</div>
+    <div class="card-text">
+      <h3>Fast Delivery</h3>
+      <p>Most jobs completed in 2-4 hours. Rush delivery available for urgent requests.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="icon-box purple">🔄</div>
+    <div class="card-text">
+      <h3>Free Revisions</h3>
+      <p>Not satisfied? I'll revise until it's perfect — at no extra charge.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="stat"><span class="num">36K+</span> Files Cleaned</div>
+  <div class="stat"><span class="num">100%</span> Client Satisfaction</div>
+  <div class="stat"><span class="num">&lt;4h</span> Average Delivery</div>
+  <div class="stat"><span class="num">$0</span> Data Breach Risk</div>
+</div>
+</body>
+</html>

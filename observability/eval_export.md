@@ -1,6 +1,6 @@
 # eval_gate export & CI (v1)
 
-> **Modules**: `observability/eval_exporter.py`, `observability/eval_ci_check.py`, `observability/eval_stats.py`, `observability/eval_report.py`  
+> **Modules**: `observability/eval_exporter.py`, `observability/eval_ci_check.py`, `observability/eval_stats.py`, `observability/eval_report.py`, `observability/eval_trace_correlate.py`, `observability/wf_status_summary.py`  
 > **Schema**: `observability/eval_export_schema.json` (`eval_export/v1`)  
 > **Gate logic**: `observability/eval_gate.py` → `evaluate_task_record` (unchanged)  
 > **Distribution / CI thresholds (analysis only)**: `observability/eval_stats_report.md`  
@@ -26,6 +26,97 @@ python -m observability.eval_report artifacts/eval/eval_export_v1_shadow_nightly
 
 ---
 
+## WF status summary (`WAVE-B-P3-WF-STATUS-SUMMARY-CLI`)
+
+One-page **Executive summary** across gate report, index status, and trace join stats (read-only assembly):
+
+```bash
+python -m observability.wf_status_summary \
+  --eval tests/fixtures/eval/eval_export_sample.jsonl \
+  --index-status workflow_v2/20_pilot/W3-B/index_status_W2-1.json \
+  --trace-jsonl tests/fixtures/trace/sample_traces.jsonl \
+  --out-dir artifacts/wf
+```
+
+**Output**: `artifacts/wf/wf_status_summary.latest.{md,json}` — see `docs/observability.md` §8.
+
+**Suggested follow-up**: wire summary artifact into CI (not in scope for this ticket).
+
+---
+
+## eval / trace correlate (`WAVE-B-P2-EVAL-TRACE-CORRELATE`)
+
+Join `eval_export/v1` rows with local `gov-trace-v2` JSONL so `needs_review` / `infra_risk` rows show trace summaries without manual ID copy-paste into `trace_query`.
+
+**Join key priority** (first match wins):
+
+1. `trace_id` (from row or `source_ref.trace_id`)
+2. `task_id` (from row or `source_ref.task_id`)
+3. `session_id` (from row or `source_ref.session_id`)
+
+**Default scope**: only **flagged** rows — `gate_result=needs_review` or tags intersecting `--fail-on-tags` (default `infra_risk`). Use `--no-only-flagged` to correlate every export line.
+
+```bash
+# Fixture smoke (JSON envelope)
+python -m observability.eval_trace_correlate \
+  --eval tests/fixtures/eval/eval_export_sample.jsonl \
+  --trace tests/fixtures/trace/sample_traces.jsonl \
+  --format json
+
+# Markdown appendix for ops triage
+python -m observability.eval_trace_correlate \
+  --eval tests/fixtures/eval/eval_export_sample.jsonl \
+  --trace tests/fixtures/trace/sample_traces.jsonl \
+  --format markdown \
+  -o artifacts/eval/eval_trace_correlate.latest.md
+
+# Per-row JSONL (one correlated object per line)
+python -m observability.eval_trace_correlate \
+  --eval artifacts/eval/eval_results.latest.jsonl \
+  --trace runtime/task_traces.jsonl \
+  --format jsonl \
+  --no-only-flagged
+```
+
+**Output fields** (each correlated row): `gate_result`, `tags`, `join_key` / `join_value`, `trace_found`, `message`, and when matched `trace_summary` (`event_count`, `first_event`, `last_event`, `trace_completeness` from gov-trace-v2).
+
+**Follow-up**: after correlate, verify a single trace with `python -m observability.trace_query --trace-id <id> --file <trace.jsonl>`.
+
+### Flagged triage enrich (`WAVE-B-P3-FLAGGED-TRIAGE-ENRICH`)
+
+One-page **triage** view for `needs_review` rows: gate reasons + trace summary + `kb_index_status` (from eval export when present; otherwise `unknown`).
+
+| Control | Default | Notes |
+|---------|---------|--------|
+| `--format triage-md` | — | Fixed block per flagged row (tags, reasons, join, trace, index) |
+| `--only-needs-review` | **true** | Only `gate_result=needs_review` (narrower than `--only-flagged`) |
+| JSON / JSONL rows | — | Each row includes stable `triage` sub-object: `why_flagged`, `primary_tags`, `trace_ref`, `kb_index_status` |
+
+**Reviewer workflow (3 commands)**:
+
+```bash
+GOV_EVAL_EXPORT_KB_INDEX_STATUS=1 \
+  python -m observability.eval_exporter tests/fixtures/eval/ibridge_records.jsonl \
+  --case-index-map tests/fixtures/eval/case_index_map_W2-1.json \
+  -o /tmp/e.jsonl
+
+python -m observability.eval_trace_correlate \
+  --eval /tmp/e.jsonl \
+  --trace tests/fixtures/trace/sample_traces.jsonl \
+  --format triage-md
+
+python -m observability.trace_query \
+  --file tests/fixtures/trace/sample_traces.jsonl \
+  --trace-id tr-3 \
+  --format triage
+```
+
+When `GOV_EVAL_EXPORT_KB_INDEX_STATUS=1`, export lines also mirror `kb_index_status` to `source_ref.kb_index_status` and `trace_metadata_sidecar` (observability only — does **not** write gov-trace-v2 JSONL).
+
+**Wave C 留项**: nightly artifact upload, Langfuse deep links, Web UI.
+
+---
+
 ## JSONL line schema (`eval_export/v1`)
 
 Each line is a compact eval result (not a full `ibridge_record`):
@@ -40,6 +131,42 @@ Each line is a compact eval result (not a full `ibridge_record`):
 | `tags` / `reasons` | From `evaluate_task_record` |
 | `metrics` | Summary only: `retry_count`, `handoff_count`, `error_type`, `context_tokens_total`, `trace_completeness_score`, optional `agent_name`, `step_count` |
 | `source_ref` | Optional join keys (`task_id`, `trace_id`, `line_index`) |
+| `kb_index_status` | **Optional** (Wave B P3): `ready` \| `stale` \| `missing` \| `null` — only when `GOV_EVAL_EXPORT_KB_INDEX_STATUS=1` |
+| `kb_index_job_id` | **Optional** (Wave B P3): repo index job id aligned with case `index_status_*.json` |
+
+---
+
+## kb_index_status export sidecar (`WAVE-B-P3-KB-INDEX-EVAL-OBSERVABILITY`)
+
+**Observability only** — does **not** change `eval_gate` rules, `eval_ci_check` thresholds, or prod selector hook (`GOV_KB_INDEX_SELECTOR_HOOK_ENABLED` stays default **0**).
+
+| Control | Default | Notes |
+|---------|---------|--------|
+| `GOV_EVAL_EXPORT_KB_INDEX_STATUS` | `0` (off) | Set `1` to attach `kb_index_status` / optional `kb_index_job_id` on export lines |
+| `--case-index-map` | *(none)* | JSON `case_id → kb_index_status` or nested `{kb_index_status, kb_index_job_id}` |
+
+**Resolution priority** (frozen):
+
+1. `metadata.kb_index_status` / `metadata.kb_index_job_id`
+2. `selector_hints.kb_index_status` / `selector_hints.kb_index_job_id`
+3. `--case-index-map` entry for record `case_id`
+
+**Report**: `eval_report` adds **Index context** subsection (`index_context_breakdown` in JSON) — per-status sample counts and `needs_review` ratios. See `observability/eval_stats_report.md`.
+
+```bash
+# Flag off (default) — no new fields on export lines
+python -m observability.eval_exporter tests/fixtures/eval/ibridge_records.jsonl -o /tmp/eval.jsonl
+
+# Flag on — W2-1 fixture map + metadata on t-infra row
+GOV_EVAL_EXPORT_KB_INDEX_STATUS=1 \
+  python -m observability.eval_exporter tests/fixtures/eval/ibridge_records.jsonl \
+  --case-index-map tests/fixtures/eval/case_index_map_W2-1.json \
+  -o /tmp/eval_kb.jsonl
+
+python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+```
+
+**Wave C 留项**: auto wiring from case / ENG-CTX at runtime; trace JSONL mirror implemented as export-line sidecar only (see `WAVE-B-P3-FLAGGED-TRIAGE-ENRICH`).
 
 ---
 

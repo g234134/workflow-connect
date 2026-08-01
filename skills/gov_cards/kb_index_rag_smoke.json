@@ -1,0 +1,24 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "kb.index.rag_smoke",
+  "title": "KB manifest RAG smoke",
+  "brief": "Keyword smoke test against pilot index manifest (no PG/Qdrant). Expect hits>=1 for known governance terms.",
+  "domain": "kb",
+  "module_path": "workflow_v2/kb/rag_index_smoke.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python workflow_v2/kb/rag_index_smoke.py \"AGENTS.md\" --top-k 5",
+  "inputs": [
+    "query string",
+    "--top-k",
+    "index_manifest_W2-1.json (implicit)"
+  ],
+  "outputs": [
+    "smoke result dict (hits, sources)"
+  ],
+  "verify_command": "python -m unittest tests.test_kb_index_bootstrap -v",
+  "wave_ticket": "WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE",
+  "review_status": "approved",
+  "applicable_roles": ["implementer", "reviewer"],
+  "depends_on": ["kb.index.bootstrap"]
+}

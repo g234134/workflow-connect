@@ -162,10 +162,14 @@ Or `POST /monitoring/alerts/evaluate`.
 
 ## 7. Verification
 
+> **Local harden（P3-TRACE-LOCAL-HARDEN-v1）**：fixture 契約 + `trace_query` smoke 一入口見 `docs/p3-trace-local-harden-v1.md`（`python scripts/run_p3_trace_local_harden_v1.py --format text`）。≠ Langfuse／PG 升格。  
+> **Langfuse↔PG FRAME（P3-LANGFUSE-PG-ALIGN-FRAME-v1）**：planning only 見 `docs/p3-langfuse-pg-align-frame-v1.md`（deferred 索引 `docs/langfuse-pg-alignment-deferred-index-v1.md`）。≠ 真對齊／≠ 真 PG。
+
 **Chariot root (no PG):**
 
 ```powershell
 python -m unittest tests.test_trace_schema tests.test_logging_adapter tests.test_trace_middleware -v
+python -m unittest tests.test_p3_trace_local_harden_v1 -v
 ```
 
 **Dark — alert logic only (no PG):**
@@ -259,6 +263,8 @@ Nightly uses shadow export when present; falls back to the eval fixture above.
 ```
 
 **Daily read order**: `gate.needs_review_ratio` → `index_cases[].kb_index_status` → `trace_join_stats.hit_rate`.
+
+> **Index obs footnote（P2-INDEX-OBS-FOOTNOTE-v1）**：上表 `index_cases`／`kb_index_status` 为 Wave B eval／pilot 侧车就绪度，**≠** contract §6.4 全库 ingest `run_id`↔`agent_runs` SSOT。边界与 **GAP-OBS-INDEX** 见 `docs/phase2-index-obs-footnote-v1.md`。
 
 ### 9.4 `eval_trace_correlate.latest.json` schema (flagged rows)
 

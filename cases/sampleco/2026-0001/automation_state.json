@@ -1,0 +1,36 @@
+{
+  "schema_version": "tabular-automation-state-v1",
+  "case_id": "2026-0001",
+  "automation_status": "completed",
+  "start_requested_by": "regression_smoke",
+  "stop_requested_by": null,
+  "pause_reason": null,
+  "resume_requested_by": "regression_smoke",
+  "last_transition_ts": "2026-07-28T10:07:43+00:00",
+  "current_step": "delivery",
+  "allowed_to_auto_proceed": true,
+  "requires_hitl_checkpoint": false,
+  "checkpoint_a_status": "approved",
+  "checkpoint_b_status": "approved",
+  "checkpoint_a_decided_by": "regression_smoke",
+  "checkpoint_b_decided_by": "regression_smoke",
+  "checkpoint_a_decided_at": "2026-07-28T10:07:42+00:00",
+  "checkpoint_b_decided_at": "2026-07-28T10:07:42+00:00",
+  "checkpoint_resume_step": "approved_for_delivery",
+  "last_error": null,
+  "last_error_at": "2026-07-28T10:07:42+00:00",
+  "retry_count": 0,
+  "dlq_status": "none",
+  "delivery": {
+    "delivery_approval_status": "approved",
+    "delivery_approved_by": "regression_smoke",
+    "delivery_approved_at": "2026-07-28T10:07:43Z",
+    "delivery_bundle_path": "reports/report.json",
+    "delivery_ready": false,
+    "signoff_recorded": false,
+    "readiness_gaps": [
+      "output_guard:output_guard.warning",
+      "warning_guard:partial_ready_internal_only"
+    ]
+  }
+}

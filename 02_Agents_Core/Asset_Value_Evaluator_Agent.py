@@ -45,17 +45,11 @@ from gov_paths import (  # type: ignore
 GROQ_WHITELIST_EXT = {".py", ".php", ".json", ".jsonc", ".json5", ".yml", ".yaml", ".toml"}
 
 DIFFICULT_CASE_LIBRARY = "difficult_case_library.json"
-LOCAL_JUDGE_RULES = "local_judge_rules.json"
 
 
 def _case_library_path(dest_root: str) -> str:
     d = resolve_agent_output_path(dest_root, "06_Exports_Output", "reports")
     return os.path.join(d, DIFFICULT_CASE_LIBRARY)
-
-
-def _local_judge_rules_path(dest_root: str) -> str:
-    d = resolve_agent_output_path(dest_root, "06_Exports_Output", "reports")
-    return os.path.join(d, LOCAL_JUDGE_RULES)
 
 
 def _norm_judge_path(p: Any) -> str:
@@ -126,53 +120,6 @@ def _lookup_case_entry(
             return by_path[p]
     return None
 
-
-def _load_local_judge_rules(dest_root: str) -> Dict[str, Any]:
-    p = _local_judge_rules_path(dest_root)
-    if not os.path.isfile(p):
-        return {}
-    try:
-        with open(p, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data if isinstance(data, dict) else {}
-    except Exception:  # noqa: BLE001
-        return {}
-
-
-def _local_judge_match(
-    rules: Dict[str, Any],
-    *,
-    ext: str,
-    otype: str,
-    local_score: float,
-    confidence: float,
-    ambiguous: bool,
-) -> Tuple[bool, str]:
-    """曾高失敗率之灰區特徵 → 跳過雲端，改走本地策略。"""
-    if not ambiguous or not rules:
-        return False, ""
-    profiles = rules.get("dodge_profiles") or []
-    if not isinstance(profiles, list):
-        return False, ""
-    ex = ext.lower()
-    ot = (otype or "unknown").lower()
-    for pr in profiles:
-        if not isinstance(pr, dict):
-            continue
-        if str(pr.get("extension") or "").lower() != ex:
-            continue
-        if str(pr.get("original_type") or "").lower() != ot:
-            continue
-        lo = float(pr.get("local_score_min", 0))
-        hi = float(pr.get("local_score_max", 10))
-        if not (lo <= local_score <= hi):
-            continue
-        ch = float(pr.get("confidence_max", 1.0))
-        if confidence > ch:
-            continue
-        rid = str(pr.get("rule_id") or "dodge")
-        return True, f"local_judge:{rid}"
-    return False, ""
 
 # 本地評分權重
 TYPE_BASE = {
@@ -739,8 +686,6 @@ class Asset_Value_Evaluator_Agent:
         case_by_sha, case_by_path = _load_difficult_case_library(self.dest_root)
         case_library_size = len(case_by_sha)
         case_library_hits = 0
-        local_judge_skips = 0
-        judge_rules = _load_local_judge_rules(self.dest_root)
 
         rows: List[Dict[str, Any]] = []
         groq_calls = 0
@@ -780,15 +725,6 @@ class Asset_Value_Evaluator_Agent:
             sha_key = str(rec.get("content_sha256") or "").strip().lower()
             cached = _lookup_case_entry(case_by_sha, case_by_path, rec, fp, sha_key)
 
-            dodge, dodge_reason = _local_judge_match(
-                judge_rules,
-                ext=ext,
-                otype=otype or "unknown",
-                local_score=float(local_score),
-                confidence=float(confidence),
-                ambiguous=bool(ambiguous),
-            )
-
             if (
                 ext in GROQ_WHITELIST_EXT
                 and ambiguous
@@ -801,81 +737,7 @@ class Asset_Value_Evaluator_Agent:
                 groq_reason = "case_library_hit"
                 case_library_hit = True
                 case_library_hits += 1
-            elif ext in GROQ_WHITELIST_EXT and ambiguous and dodge:
-                mul = float((judge_rules.get("defaults") or {}).get("local_score_multiplier", 1.0))
-                groq_reason = dodge_reason or "local_judge_skip_cloud"
-                local_judge_skips += 1
-                adj = round(min(10.0, max(0.0, local_score * mul)), 3)
-                # 本地修正策略：不呼叫雲端，以調整後本地分數作為最終分（略保守）
-                final_score = adj
-                grade = _grade(final_score)
-                grade_counter[grade] += 1
-                type_counter[otype or "unknown"] += 1
-                for t in tags:
-                    tag_counter[t] += 1
-                row = {
-                    "stored_path": rec.get("stored_path") or fp,
-                    "source_path": rec.get("source_path"),
-                    "name": rec.get("name"),
-                    "extension": ext,
-                    "original_type": otype,
-                    "size_bytes": rec.get("size_bytes"),
-                    "content_sha256": rec.get("content_sha256"),
-                    "clean_status": rec.get("clean_status"),
-                    "local_score": local_score,
-                    "confidence": confidence,
-                    "tags": tags,
-                    "groq_used": False,
-                    "groq_reason": groq_reason,
-                    "groq_value": None,
-                    "groq_rationale": None,
-                    "case_library_hit": False,
-                    "local_judge_skip": True,
-                    "final_score": final_score,
-                    "grade": grade,
-                }
-                rows.append(row)
-                if rec.get("content_sha256"):
-                    self.registry.add(
-                        str(rec["content_sha256"]),
-                        agent=self.AGENT_NAME,
-                        source_path=rec.get("source_path"),
-                        clean_status=str(rec.get("clean_status") or "ok"),
-                        extension=ext,
-                        original_type=otype,
-                    )
-                if self.progress_every and (len(rows) % self.progress_every == 0):
-                    processed = len(rows)
-                    avg_so_far = round(
-                        sum(r.get("final_score", 0) or 0 for r in rows) / max(1, processed),
-                        3,
-                    )
-                    state = {
-                        "wave": "wave_01",
-                        "phase": "running",
-                        "processed": processed,
-                        "of": n,
-                        "pool_size": pool_size,
-                        "avg_so_far": avg_so_far,
-                        "grades_so_far": dict(grade_counter),
-                        "groq_calls": groq_calls,
-                        "groq_success": groq_success,
-                        "case_library_hits": case_library_hits,
-                        "local_judge_skips": local_judge_skips,
-                        "updated_at": _utc_iso(),
-                    }
-                    self._patch_status({**state, "status": "Running"})
-                    if self.progress_callback is not None:
-                        try:
-                            self.progress_callback(state)
-                        except Exception as e:  # noqa: BLE001
-                            self.agent.log_event(
-                                event="evaluator_progress_callback_failed",
-                                error=repr(e),
-                                processed=processed,
-                            )
-                continue
-            elif ext in GROQ_WHITELIST_EXT and ambiguous:
+            if ext in GROQ_WHITELIST_EXT and ambiguous:
                 groq_calls += 1
                 used_groq = True
                 gv, rationale, groq_reason = _groq_value_call(rec)
@@ -908,7 +770,6 @@ class Asset_Value_Evaluator_Agent:
                 "groq_value": groq_value,
                 "groq_rationale": rationale,
                 "case_library_hit": case_library_hit,
-                "local_judge_skip": False,
                 "final_score": final_score,
                 "grade": grade,
             }
@@ -942,7 +803,6 @@ class Asset_Value_Evaluator_Agent:
                     "groq_calls": groq_calls,
                     "groq_success": groq_success,
                     "case_library_hits": case_library_hits,
-                    "local_judge_skips": local_judge_skips,
                     "updated_at": _utc_iso(),
                 }
                 self._patch_status({**state, "status": "Running"})
@@ -974,7 +834,6 @@ class Asset_Value_Evaluator_Agent:
             "groq_success": groq_success,
             "case_library_loaded": case_library_size,
             "case_library_hits": case_library_hits,
-            "local_judge_skips": local_judge_skips,
             "evaluate_duration_sec": evaluate_duration_sec,
             "rows": rows_sorted,
         }
@@ -995,7 +854,7 @@ class Asset_Value_Evaluator_Agent:
             "groq_success": groq_success,
             "case_library_loaded": case_library_size,
             "case_library_hits": case_library_hits,
-            "local_judge_skips": local_judge_skips,
+            "local_judge_skips": 0,
             "evaluate_duration_sec": evaluate_duration_sec,
             "report_path": report_path,
             "updated_at": _utc_iso(),
@@ -1012,7 +871,7 @@ class Asset_Value_Evaluator_Agent:
             f"Run_ID={self.agent.run_id}\n"
             f"取樣 {len(sampled)}/{pool_size}  平均分 {avg_score}\n"
             f"等級分布 {dict(grade_counter)}\n"
-            f"Groq 呼叫 {groq_calls}（成功 {groq_success}） 案例庫命中 {case_library_hits} 本地預判閃避 {local_judge_skips}\n"
+            f"Groq 呼叫 {groq_calls}（成功 {groq_success}） 案例庫命中 {case_library_hits}\\n"
             f"{ammo_line}\n"
             f"{cost_line}\n"
             "Top5:\n" + "\n".join(top5)
@@ -1040,7 +899,6 @@ class Asset_Value_Evaluator_Agent:
             "groq_success": groq_success,
             "case_library_loaded": case_library_size,
             "case_library_hits": case_library_hits,
-            "local_judge_skips": local_judge_skips,
             "evaluate_duration_sec": evaluate_duration_sec,
             "report_path": report_path,
         }

@@ -1,7 +1,7 @@
 """_build_elite_index.py — v2.56 A 級資產快速索引（elite_cache.json）。
 
 掃描 05_Temp_Cache/cleaned_full 下 JSON；僅收錄 clean_status 符合允許清單（預設 indexed,ok）
-且啟發式 Score > 9 之條目，寫入 06_Exports_Output/reports/elite_cache.json 供 ROI 全量比對。
+且啟發式 Score > 7.5 且 grade=A 之條目，寫入 06_Exports_Output/reports/elite_cache.json 供 ROI 全量比對。
 """
 from __future__ import annotations
 
@@ -24,6 +24,9 @@ from Asset_Value_Evaluator_Agent import (  # type: ignore
     _grade,
 )
 from gov_paths import get_tang_gov_root, resolve_agent_output_path  # type: ignore
+
+# A 級 elite 收錄門檻：實際分數上限約 8.8，舊值 9.0 導致 elite_cache 永遠為空（P1）
+ELITE_MIN_HEURISTIC_SCORE = 7.5
 
 
 def _utc_iso() -> str:
@@ -82,7 +85,7 @@ def main() -> int:
             continue
         hscore, _conf, tags = _heuristic_score(rec)
         gr = _grade(hscore)
-        if not (hscore > 9.0 and gr == "A"):
+        if not (hscore > ELITE_MIN_HEURISTIC_SCORE and gr == "A"):
             continue
         blob = _flatten_summary_for_match(rec.get("content_summary"))
         blob = blob or str(rec.get("source_path") or rec.get("name") or "")
@@ -114,7 +117,7 @@ def main() -> int:
         "tang_gov_root": root.replace("\\", "/"),
         "cleaned_full": cleaned.replace("\\", "/"),
         "allow_status": sorted(allow),
-        "min_heuristic_score": 9.0,
+        "min_heuristic_score": ELITE_MIN_HEURISTIC_SCORE,
         "stats": {
             "files_seen": files_seen,
             "elite_count": len(entries),

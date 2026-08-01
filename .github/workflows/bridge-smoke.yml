@@ -1,7 +1,7 @@
 # P8.5 (Phase 8.5): orchestration bridge Smoke A + B — CI advisory (non-blocking).
-# Smoke A: test_minimal_orchestration_bridge (14/14). Smoke B: test_app_api_orchestration_bridge (7/7).
+# Smoke A: test_minimal_orchestration_bridge (20/20). Smoke B: test_app_api_orchestration_bridge (7/7).
 # Skips gracefully when gov_core_system deps unavailable. Does not gate merge. Smoke C remains manual.
-# Scenario 1 (default): happy path 14/14 + 7/7. Scenario 2 (workflow_dispatch input): deps-gate skip probe.
+# Scenario 1 (default): happy path 20/20 + 7/7. Scenario 2 (workflow_dispatch input): deps-gate skip probe.
 
 name: P85 Bridge Smoke CI (advisory)
 
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       scenario:
-        description: "Smoke scenario — default=Scenario 1 (14/14 + 7/7); scenario2=deps skip probe (exit 0)"
+        description: "Smoke scenario — default=Scenario 1 (20/20 + 7/7); scenario2=deps skip probe (exit 0)"
         required: false
         default: default
         type: choice
@@ -24,7 +24,9 @@ on:
       - ".github/workflows/bridge-smoke.yml"
       - "01_Environments/python_venvs/gov_core_system/tests/test_minimal_orchestration_bridge.py"
       - "01_Environments/python_venvs/gov_core_system/tests/fixtures/orchestration_bridge/**"
+      - "01_Environments/python_venvs/gov_core_system/tests/fixtures/browser_dom/**"
       - "01_Environments/python_venvs/gov_core_system/core/minimal_orchestration_bridge.py"
+      - "01_Environments/python_venvs/gov_core_system/core/orchestration_bridge_run_record.py"
       - "01_Environments/python_venvs/gov_core_system/core/schemas/orchestration_bridge.py"
       - "01_Environments/python_venvs/gov_core_system/core/browser_actions.py"
       - "01_Environments/python_venvs/gov_core_system/core/browser_runner.py"
@@ -40,7 +42,7 @@ concurrency:
 
 jobs:
   p85-bridge-smoke-a:
-    name: P85 Bridge Smoke A (advisory · 14/14)
+    name: P85 Bridge Smoke A (advisory · 20/20)
     if: github.event_name != 'workflow_dispatch' || github.event.inputs.scenario != 'scenario2'
     runs-on: ubuntu-latest
     continue-on-error: true
@@ -106,11 +108,11 @@ jobs:
           set -e
 
           if [[ "${TEST_EXIT}" -ne 0 ]]; then
-            echo "::warning title=Bridge Smoke A failed (advisory)::test_minimal_orchestration_bridge did not pass 14/14 (exit ${TEST_EXIT}); non-blocking"
+            echo "::warning title=Bridge Smoke A failed (advisory)::test_minimal_orchestration_bridge did not pass 20/20 (exit ${TEST_EXIT}); non-blocking"
             exit "${TEST_EXIT}"
           fi
 
-          echo "Bridge Smoke A passed: test_minimal_orchestration_bridge 14/14 OK"
+          echo "Bridge Smoke A passed: test_minimal_orchestration_bridge 20/20 OK"
 
       - name: Upload bridge smoke A log (advisory)
         if: always() && steps.smoke_a.outputs.skipped != 'true'

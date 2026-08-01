@@ -1,0 +1,156 @@
+# Tabular tri-case HITL matrix — smoke terminal states (spec-only)
+# Ticket: TAB-S5-WS-A-T3
+# NON-CLAIM: not a runtime prod gate; does not modify driver / DLQ behavior.
+
+schema_version: tabular_tri_case_hitl_matrix_v1
+ticket_id: TAB-S5-WS-A-T3
+spec_doc: docs/tabular-tri-case-hitl-matrix-v1.md
+smoke_registry_module: scripts.run_tabular_mainline_regression_smoke
+smoke_registry_attr: SMOKE_CASES
+verify_lib_module: scripts.tabular_regression_smoke_lib
+verify_lib_fn: verify_case_regression
+
+non_claims:
+  - spec and trace contract only; not runtime prod gate
+  - does not claim prod closure or Phase% uplift
+  - does not claim 7x24 no-HITL operation
+  - does not claim prod notification delivery
+  - pause intermediate states are runtime smoke responsibility; not yaml hard assertions
+
+required_case_ids:
+  - demo_phase
+  - "2026-0001"
+  - generic-low-risk
+
+verify_domain:
+  automation_status: completed
+  checkpoint_a_status_allowed:
+    - approved
+    - not_required
+  checkpoint_b_status_allowed:
+    - approved
+    - not_required
+  current_step_allowed:
+    - checkpoint_b
+    - delivery
+    - approved_for_delivery
+  required_artifacts:
+    - report_json
+    - delivery_signoff
+    - cleaned_csv
+
+extensions:
+  ws_b_boundary:
+    readonly_fields:
+      - dlq_status
+      - dlq/
+    tri_case_smoke_happy_path:
+      dlq_status: none
+    ws_b_constraints:
+      - must not rewrite stuck/DLQ semantics before matrix freeze
+      - fleet aggregation must align with matrix terminal states
+    narrative_only_fields:
+      - pause_reason
+      - stuck
+    known_limits:
+      - id: run_log_cp_b_awaiting_hitl_vs_state
+        ref: docs/tabular-mainline-e2e-verification-report-v1.md §6
+        disposition: document only; driver fix deferred to T7
+        note: run-log checkpoint_b may show awaiting_hitl while automation_state.checkpoint_b_status is approved
+
+regression_gates:
+  gate_1:
+    command: python scripts/run_demo_phase_regression_smoke.py --json
+    scope: single-case HITL smoke anchor
+  gate_2:
+    command: python scripts/run_tabular_mainline_regression_smoke.py --json
+    scope: tri-case main-chain smoke
+  gate_3:
+    command: python scripts/run_mvp_mainline_regression.py -v
+    scope: gate to clean to bundle E2E without control plane
+  contract_tests:
+    command: python -m unittest tests.test_tabular_tri_case_hitl_matrix_v1 -v
+    scope: matrix yaml / SMOKE_CASES drift only
+
+entries:
+  demo_phase:
+    case_id: demo_phase
+    case_dir: cases/demo_phase
+    force_driver: true
+    expected_delivery_ready: true
+    cleaning_profile_id: phase_demo_v1
+    gate_status: review_needed
+    output_guard:
+      status: ok
+    checkpoint_a_status: approved
+    checkpoint_b_status: approved
+    checkpoint_b_status_also_valid:
+      - not_required
+    current_step: delivery
+    automation_status: completed
+    dlq_status: none
+    verify_assertions:
+      - "verify_case_regression: automation_status=completed"
+      - "verify_case_regression: checkpoint_a_status in {approved, not_required}"
+      - "verify_case_regression: checkpoint_b_status in {approved, not_required}"
+      - "verify_case_regression: current_step in {checkpoint_b, delivery, approved_for_delivery}"
+      - "verify_case_regression: expected_delivery_ready=true"
+      - "verify_case_regression: e2e step completed in automation_run_log"
+      - "verify_case_regression: report_json, delivery_signoff, cleaned/*_cleaned.csv present"
+    smoke_path_notes: >-
+      force_driver=true bypasses CP-A pause in smoke; without force CP-A pauses at
+      review_needed gate. CP-B may auto-skip (not_required) when output_guard ok;
+      regression smoke may also end with checkpoint_b_status=approved after approve-b path.
+      Both terminal CP-B values pass verify_case_regression.
+
+  "2026-0001":
+    case_id: "2026-0001"
+    case_dir: cases/sampleco/2026-0001
+    force_driver: false
+    expected_delivery_ready: false
+    cleaning_profile_id: sampleco_order_profile
+    gate_status: accepted
+    output_guard:
+      status: warning
+    checkpoint_a_status: approved
+    checkpoint_b_status: approved
+    current_step: delivery
+    automation_status: completed
+    dlq_status: none
+    verify_assertions:
+      - "verify_case_regression: automation_status=completed"
+      - "verify_case_regression: checkpoint_a_status in {approved, not_required}"
+      - "verify_case_regression: checkpoint_b_status in {approved, not_required}"
+      - "verify_case_regression: current_step in {checkpoint_b, delivery, approved_for_delivery}"
+      - "verify_case_regression: expected_delivery_ready=false (output_guard.warning by design)"
+      - "verify_case_regression: e2e step completed in automation_run_log"
+      - "verify_case_regression: report_json, delivery_signoff, cleaned/*_cleaned.csv present"
+    smoke_path_notes: >-
+      CP-A and CP-B both require HITL in smoke (force_driver=false). Human approve-b
+      completes chain; delivery_ready stays false per tabular_warning_guard_lib partial_ready policy.
+
+  generic-low-risk:
+    case_id: generic-low-risk
+    case_dir: cases/internal/generic-low-risk
+    force_driver: false
+    expected_delivery_ready: true
+    cleaning_profile_id: generic_low_risk_profile
+    gate_status: review_needed
+    output_guard:
+      status: ok
+    checkpoint_a_status: approved
+    checkpoint_b_status: approved
+    current_step: delivery
+    automation_status: completed
+    dlq_status: none
+    verify_assertions:
+      - "verify_case_regression: automation_status=completed"
+      - "verify_case_regression: checkpoint_a_status in {approved, not_required}"
+      - "verify_case_regression: checkpoint_b_status in {approved, not_required}"
+      - "verify_case_regression: current_step in {checkpoint_b, delivery, approved_for_delivery}"
+      - "verify_case_regression: expected_delivery_ready=true"
+      - "verify_case_regression: e2e step completed in automation_run_log"
+      - "verify_case_regression: report_json, delivery_signoff, cleaned/*_cleaned.csv present"
+    smoke_path_notes: >-
+      force_driver=false; gate review_needed (rows<100). Terminal CP-A/B both approved
+      per cases/internal/generic-low-risk/automation_state.json after Gate 2 — not demo CP-B auto-skip.

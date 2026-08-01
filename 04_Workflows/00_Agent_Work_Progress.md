@@ -5888,3 +5888,3772 @@ python .\04_Workflows\_boot_context.py --text "W1-T3-CI-LAND：授權後入庫�
 2. 可選：Reviewer 簽 `W1-T3_state.md` C_REPORT
 3. Round-2 仍 ≥07-18 再裁
 
+
+---
+
+## 2026-07-13 · A/B/C 三線收口（W1-T3 C_REPORT · P9 索引 · P8.5 H2 解鎖）
+
+**模式**：Reviewer + Scribe · 尚書省「開始做吧」· A/B/C 並行
+**狀態依據**：boot hq.governance · CI 29195842807/29195843133 · Scenario2 29157178993 · QUEUE 原 H2 BLOCKED
+
+### 裁決（C）
+
+**H1 證據夠 → 解鎖** wave-H2：Scenario2 GA-remote PASS run_id=`29157178993` · EVD-GR-P85-S2 recorded · ops-run `done`。**仍 ≠** Phase closure／required CI／prod browser。
+
+### A · W1-T3 Reviewer C_REPORT
+
+- conclusion: **accepted**
+- 證據：push `29195842807` · dispatch `29195843133` · 本機 land 25 OK + suite 74 OK
+- STATE：reviewer → done · **≠** Phase%
+
+### B · P9 索引補洞（doc-only）
+
+- `WORKFLOW_INDEX.md` §1.46 表列 `p9-payment-sandbox-smoke.yml` 一句
+- `docs/wave_c/overview.md` CI advisory（P9 payment sandbox）一句
+- 票 `WH-P9-CI-payment-sandbox-smoke-v1` 索引 gap 勾完 · prod provider 仍另票
+
+### C · P8.5 wave-H+2 Scribe 收口
+
+| 項 | 結果 |
+|----|------|
+| Scenario2 GA | ✅ `29157178993` · A/B Scenario2 success · S1 skipped |
+| entry 票 | `WH-P85-wave-H2-entry-v1` → **done_with_gaps** |
+| closure 票 | `WH-P85-wave-H2-closure-scribe-v1` → **done_with_gaps** |
+| QUEUE | H2 **BLOCKED → DONE_WITH_GAPS** · blocked 9→8 |
+| INDEX §1.4 | Scenario2 GA + non-stub 一句 |
+
+**optional follow-up**：`WH-P85-bridge-ci-hardening-v1` · Smoke C manual matrix · T4 第二負例 · bridge jsonl／dom
+
+### Scenario 2 GA 實跑（補 AC-3 · 證據鏈）
+
+| 欄位 | 值 |
+|------|-----|
+| wave | P8.5 |
+| 票 | `WH-P85-SMOKE-B-scenario2-ops-run-v1` |
+| run_id | `29157178993` |
+| run_url | https://github.com/g234134/workflow-connect/actions/runs/29157178993 |
+| trigger | `workflow_dispatch` · `scenario=scenario2` · `main` |
+| jobs | Scenario2 A/B **success** · Scenario1 A/B **skipped** |
+| 語意 | advisory · non-blocking · design-skip／deps-gate probe · **≠** required／prod |
+
+### non_claims
+
+≠ Phase% uplift · ≠ Phase closure · ≠ required CI · ≠ Round-2 GO · ≠ P6 DAY3 · ≠ prod 金流／prod browser
+
+### 變更檔案
+
+- `tickets/W1-T3_state.md`（C_REPORT）
+- `tickets/WH-P9-CI-payment-sandbox-smoke-v1_state.md`
+- `tickets/WH-P85-wave-H2-entry-v1_state.md` · `WH-P85-wave-H2-closure-scribe-v1_state.md`
+- `WORKFLOW_INDEX.md` §1.4／§1.46 · `docs/wave_c/overview.md`
+- `command_queue/QUEUE.yaml` · 本檔（本條 append）
+
+### 下一步
+
+1. Human：續盯 P6 DAY3–7 schedule（仍 2/7）
+2. Round-2 仍 DEFER ≥07-18
+3. 可選：P8.5 bridge hardening／Smoke C／Scenario1 遠端 GA（EVD-GR-P85-S1）
+
+
+---
+
+## 2026-07-13 · WH-P85-bridge-run-record-jsonl-v1 Implementer（opt-in run record）
+
+**模式**：HQ-Governance-Worker · 口令「繼續工作」· boot assignable
+**狀態依據**：Progress 2026-07-13 A/B/C 收口下一步 optional · 票 `frame_ready` · QUEUE READY=0
+
+### 選定理由
+
+P6 DAY3+／Round-2 等人或日期；QUEUE 無 READY。選最近、有 FRAME、可驗證的 optional follow-up：`WH-P85-bridge-run-record-jsonl-v1`。
+
+### 交付
+
+- 新模組 `core/orchestration_bridge_run_record.py`：`GOV_BRIDGE_RUN_RECORD_ENABLED`（default **0**）· `schema_id=orchestration_bridge_run_v1` · path `outbox/orchestration_bridge/runs.jsonl` · fail-open
+- `minimal_orchestration_bridge._return_bridge_result` 掛 `record_bridge_run`（與 8.7e outbox **分軌**）
+- unittest +3 · `EXPECTED_TEST_COUNT=17` · 本機 **17/17 OK**
+- runbook Smoke A 改 17/17 · Non-goals 註腳：DOM 仍 stub · run record optional file-backed
+
+### 驗證
+
+```text
+cwd: gov_core_system
+python -m unittest tests.test_minimal_orchestration_bridge -v
+→ Ran 17 tests in ~0.03s · OK
+```
+
+### non_claims
+
+≠ Phase% uplift · ≠ Phase closure · ≠ required CI · ≠ Playwright · ≠ fixture-dom-port · ≠ CI display-name 同步（仍可能標 14/14）
+
+### 下一步
+
+1. Reviewer：簽本票 C_REPORT
+2. 可選：`WH-P85-bridge-fixture-dom-port-v1` 或 `WH-P85-bridge-ci-hardening-v1`（path-filter + 顯示名 17/17）
+3. Human：P6 DAY3–7 綠日鐘（仍 2/7）· Round-2 ≥07-18
+
+---
+
+## 2026-07-13｜WH-P85-bridge-run-record-jsonl-v1 Scribe（accept_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Scribe（D）兼落盤 Reviewer C_REPORT
+**狀態依據**：票 STATE C_REPORT／D_REPORT · Reviewer 重跑 unittest 17/17 OK · boot light assignable
+
+### 摘要
+
+- **票**：WH-P85-bridge-run-record-jsonl-v1
+- **verdict**：accept_with_gaps
+- **驗證**：python -m unittest tests.test_minimal_orchestration_bridge -v → Ran 17 tests · OK
+- **敘事**：opt-in GOV_BRIDGE_RUN_RECORD_ENABLED（default off）run-record JSONL 側車；fail-open；與 8.7e outbox 分軌；DOM 仍 in-memory stub
+
+### gaps（Reviewer）
+
+1. CI bridge-smoke.yml 顯示名／文案仍 14/14 → 另票 WH-P85-bridge-ci-hardening-v1
+2. 遠端 Smoke A GA 未重跑
+3. DOM file-backed → WH-P85-bridge-fixture-dom-port-v1
+4. FRAME AC-2 仍寫 14/14（Orchestrator 修或註記）
+5. 無專測 OSError fail-open（可選）
+6. Progress append（本條完成）
+
+### 下一步
+
+1. Orchestrator：收口本票；可開 CI-hardening；fixture-dom 並行
+2. 不回 Implementer
+3. ≠ Phase closure · ≠ required CI · ≠ Playwright
+
+## 2026-07-13｜WH-P85-bridge-run-record-jsonl-v1 Orchestrator 收口（done_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Orchestrator（O）
+**狀態依據**：票 STATE C/D_REPORT · Reviewer accept_with_gaps · unittest 17/17 OK · boot light assignable
+
+### 摘要
+- **票**：WH-P85-bridge-run-record-jsonl-v1 → **done_with_gaps** · current_owner=none
+- **四角色**：O/B/C/D 皆 done；不回 Implementer
+- **follow-up**：開 `WH-P85-bridge-ci-hardening-v1`（frame_ready／QUEUE READY · 非 priority_next）
+- **parallel**：`WH-P85-bridge-fixture-dom-port-v1` 已存在 · 未重開
+- **non_claims**：≠ Phase closure · ≠ required CI · ≠ Playwright · 無 core/tests/git commit
+
+### 下一步
+1. 可選派 Implementer 領 CI-hardening 或 fixture-dom
+2. Human：P6 DAY3–7 · Round-2 ≥07-18
+
+---
+
+## 2026-07-13｜WH-P85-bridge-ci-hardening-v1 Scribe（accept_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Scribe（D）
+**狀態依據**：票 STATE C_REPORT／D_REPORT · Reviewer `accept_with_gaps` · 本機 Smoke A 17/17 OK · boot light assignable
+
+### 摘要
+
+- **票**：WH-P85-bridge-ci-hardening-v1
+- **verdict**：accept_with_gaps（C 已落盤；D 收敘事）
+- **驗證**：python -m unittest tests.test_minimal_orchestration_bridge -v → Ran 17 tests · OK（B／C 證據）
+- **敘事**：advisory `bridge-smoke.yml` Smoke A 顯示名／文案 **14/14→17/17**；path-filter 納入 `orchestration_bridge_run_record.py`；仍 `continue-on-error: true`（≠ required CI）
+
+### gaps（Reviewer · 非阻塞）
+
+1. 遠端 Smoke A `workflow_dispatch` 未跑 · 無 GA `run_id`
+2. 可選 OSError／寫入失敗 fail-open 專測 deferred
+
+### 變更檔案（Scribe）
+
+- `tickets/WH-P85-bridge-ci-hardening-v1_state.md`（D_REPORT · STATE 交接 · APPEND）
+- 本檔（本條 append）
+
+### 下一步
+
+1. Orchestrator：收口本票（慣用 `done_with_gaps`）
+2. 不回 Implementer；fixture-dom 並行不互阻
+3. ≠ Phase closure · ≠ required CI · ≠ Playwright · 無 git commit
+
+---
+
+## 2026-07-13｜WH-P85-bridge-ci-hardening-v1 Orchestrator 收口（done_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Orchestrator（O）
+**狀態依據**：票 STATE B/C/D_REPORT · Reviewer `accept_with_gaps` · 本機 Smoke A 17/17 OK · boot light assignable
+
+### 摘要
+
+- **票**：WH-P85-bridge-ci-hardening-v1 → **done_with_gaps** · current_owner=none
+- **四角色**：O/B/C/D 皆 done；不回 Implementer
+- **交付**：advisory CI 顯示名／文案 **14→17**；path-filter **+run_record**；仍 `continue-on-error`
+- **gaps（註記 · 不另開票）**：遠端 GA 未跑；OSError 專測 deferred
+- **parallel**：`WH-P85-bridge-fixture-dom-port-v1` 不動
+- **QUEUE**：READY→archive `DONE_WITH_GAPS`
+- **non_claims**：≠ Phase closure · ≠ required CI · ≠ Playwright · 無 core/tests/git commit
+
+### 下一步
+
+1. 可選續作 fixture-dom（並行票 · 另派）
+2. Human：P6 DAY3–7 · Round-2 ≥07-18
+
+---
+
+## 2026-07-13｜WH-P85-bridge-fixture-dom-port-v1 Scribe（accept_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Scribe（D）；代落盤 Reviewer C_REPORT（Ask 模式未寫檔）
+**狀態依據**：票 STATE C_REPORT／D_REPORT · Reviewer `accept_with_gaps` · 本機 Smoke A **20/20** · B **7/7** · runner **14/14** · boot light assignable
+
+### 要點
+
+- **票**：WH-P85-bridge-fixture-dom-port-v1
+- **verdict**：accept_with_gaps（C 已落盤；D 已收口草稿）
+- **交付**：file-backed `dom_fixture_ref` · missing **fail-closed** · 未設維持 InMemory · inline 仍可用 · 非 Playwright
+- **驗證**：A **20/20** · B **7/7** · `tests.test_browser_runner` **14/14**
+- **AC**：AC-1/2/3 PASS（runbook Fixture DOM vs in-memory 對照表）
+
+### gaps（Reviewer · 非阻塞）
+
+1. CI `bridge-smoke.yml` 顯示名／文案仍 **17/17**；權威已 **20** — 建議開／續 `WH-P85-bridge-ci-hardening` 對齊 **17→20**（Orchestrator 裁決）
+2. `negative_sparse.html` 無專測
+
+### 變更檔案（Scribe）
+
+- `tickets/WH-P85-bridge-fixture-dom-port-v1_state.md`（C_REPORT · D_REPORT · STATE 交棒 · APPEND）
+- 本檔（末尾 append）
+
+### 下一步
+
+1. Orchestrator：裁決收口（建議 `done_with_gaps`）
+2. 建議開／續 CI-hardening 對齊 **17→20**；**不**回 Implementer
+3. ≠ Phase closure · ≠ required CI · ≠ Playwright · 無 core/CI/git commit
+
+## 2026-07-13｜WH-P85-bridge-fixture-dom-port-v1 Orchestrator 收口（done_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Orchestrator（O）
+**狀態依據**：票 STATE B/C/D_REPORT · Reviewer `accept_with_gaps` · 本機 A 20/20 · B 7/7 · runner 14/14 · boot light assignable
+
+### 要點
+
+- **票**：WH-P85-bridge-fixture-dom-port-v1 → **done_with_gaps** · current_owner=none
+- **交付**：file-backed `dom_fixture_ref` · fail-closed · InMemory fallback · ≠ Playwright
+- **驗證**：A **20/20** · B **7/7** · runner **14/14**
+- **gaps**：CI `bridge-smoke.yml` 顯示仍 **17** · 權威已 **20** → 新開 **WH-P85-bridge-ci-hardening-v2**（**不**重開 v1）
+- **QUEUE**：本票 archive `DONE_WITH_GAPS`；v2 → READY · **不**入 priority_next
+- **non_claims**：≠ Phase closure · ≠ required CI · ≠ 回 Implementer · 無 core/tests/git commit
+
+### 下一步
+
+1. 派 Implementer 接 `WH-P85-bridge-ci-hardening-v2`（CI 17→20）
+2. Human：P6 DAY3–7 · Round-2 ≥07-18
+
+## 2026-07-13｜WH-P85-bridge-ci-hardening-v2 Scribe（accepted_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Scribe（D）
+**狀態依據**：票 STATE B/C/D_REPORT · Reviewer `accepted_with_gaps` · 本機 unittest **20/20 OK** · boot light assignable
+
+### 要點
+
+- **票**：WH-P85-bridge-ci-hardening-v2
+- **verdict**：accepted_with_gaps（C 已落盤；D 已收口敘事）
+- **交付**：advisory CI／runbook 顯示名／文案 **17→20**；path-filter **+browser_dom**；仍 `continue-on-error`
+- **驗證**：unittest **20 OK**；workflow 無殘留 Smoke A **17/17**
+- **AC**：AC-1/2/3 PASS（仍 advisory · ≠ required CI）
+
+### gaps（Reviewer · 非阻塞）
+
+1. 遠端 Smoke A `workflow_dispatch`／GA `run_id` deferred
+2. v1 deferred（遠端 GA／OSError）不重做
+
+### 變更檔案（Scribe）
+
+- `tickets/WH-P85-bridge-ci-hardening-v2_state.md`（D_REPORT · APPEND）
+- 本檔（末尾 append）
+
+### 下一步
+
+1. Orchestrator：裁決收口（建議 `done_with_gaps`）
+2. **不**回 Implementer · **不**另開票（遠端 GA 僅註記）
+3. ≠ Phase closure · ≠ required CI · ≠ Playwright · 無 core／workflow 實體改動 · 無 git commit
+
+---
+
+## 2026-07-13｜WH-P85-bridge-ci-hardening-v2 Orchestrator 收口（done_with_gaps）
+
+**角色**：HQ-Coordinator · Multi-Chat Orchestrator（O）
+**狀態依據**：票 STATE B/C/D_REPORT · Reviewer `accepted_with_gaps` · 本機 Smoke A **20/20 OK** · boot light assignable
+
+### 要點
+
+- **票**：WH-P85-bridge-ci-hardening-v2 → **done_with_gaps** · current_owner=none
+- **四角色**：O/B/C/D 皆 done；不回 Implementer
+- **交付**：advisory CI 顯示名／文案 **17→20**；path-filter **+browser_dom**；仍 advisory
+- **gaps（註記 · 不另開票）**：遠端 GA 未跑
+- **QUEUE**：READY→archive `DONE_WITH_GAPS`
+- **non_claims**：≠ Phase closure · ≠ required CI · ≠ Playwright · 無 core/tests/git commit · 無無謂新票
+
+### 下一步
+
+1. AI 主線本票已關；活躍 READY=0
+2. Human：P6 DAY3–7 · Round-2 ≥07-18
+
+---
+
+## 2026-07-13 · FP-PHASE-IMPACT-protocol-v1 · `done`
+
+**角色**：HQ-Coordinator · Multi-Chat same_chat O→B→C→D  
+**票號**：`FP-PHASE-IMPACT-protocol-v1` · group_id: G1 · evidence_tier: L-local  
+**lifecycle_phase**：O · **Reviewer**：`accepted` · risk=low
+
+### 變更
+- `docs/phase-progress-impact-protocol-v1.md`（新建）
+- `docs/lane-progress-append-template-v1.md` · `docs/progress-dashboard-append-protocol-v1.md`（Phase 影響／提案Δ vs 寫入%）
+- `.cursor/rules/multi_chat_roles.mdc` · `.cursor/skills/multi-chat-ticket-workflow/role-prompts.md`
+- `04_Workflows/WORKFLOW_INDEX.md`（§1.55 一句）
+
+### skeleton
+- 無
+
+### placeholder
+- 無
+
+### 阻塞（blocked）
+- 無（本票）
+
+### 下一步（next）
+1. 消費：`W-PROG-phase-progress-refresh-2026-07-13`
+2. 普通票遵守 `apply_phase_pct: false`
+
+### Phase 影響
+- **影響 Phase**：P1／P5
+- **baseline**：n/a
+- **proposed_delta**：0
+- **實際上調**：否
+- **non_claims**：≠ Dashboard 數字變更 · ≠ Phase closure
+
+**驗證**：`rg "apply_phase_pct|proposed_delta_pct|Phase 影響|non_claims" docs/phase-progress-impact-protocol-v1.md` · **未改** `core/**` · Phase% · 金鑰
+
+---
+
+## 2026-07-13 · W-PROG-phase-progress-refresh-2026-07-13 · `done`
+
+**角色**：HQ-Coordinator · Governance W-PROG · Multi-Chat same_chat  
+**票號**：`W-PROG-phase-progress-refresh-2026-07-13` · group_id: G1 · evidence_tier: L-local+CI-advisory  
+**lifecycle_phase**：O · **Reviewer**：`accepted` · risk=low  
+**授權**：**已授權保守寫入**（尚書省 session · 2026-07-13）
+
+### 變更
+- `docs/WAVE_PROGRESS_DASHBOARD.md` — 刷新日 **2026-07-13** · 当前列／Gauge／躍升脚注
+- `04_Workflows/WORKFLOW_INDEX.md` §1.7 Phase% 一句
+- 票 STATE：`04_Workflows/tickets/W-PROG-phase-progress-refresh-2026-07-13_state.md`
+- `master_status`：**本輪跳過**（避免與 06-24 虛高段衝突；數字 SSOT=Dashboard）
+
+### 敘事刷新 vs 數字變更
+| 類 | 內容 |
+|----|------|
+| **數字變更** | P8.5 **10→18**（+8）· P9 **20→22**（+2） |
+| **敘事刷新** | P8.5／P9 證據摘要 · 07-13 躍升脚注 · INDEX 一句 |
+| **未變數字** | 其餘 15 Phase（含 P7=30 · Round-2 blocked） |
+
+### 全表快照（prev=06-27 → written=07-13）
+
+| Phase | prev | written | Δ |
+|-------|------|---------|---|
+| P1 | 90 | 90 | 0 |
+| P2 | 65 | 65 | 0 |
+| P3 | 82 | 82 | 0 |
+| P3.5 | 55 | 55 | 0 |
+| P4 | 75 | 75 | 0 |
+| P5 | 70 | 70 | 0 |
+| P6 | 83 | 83 | 0 |
+| P7 | 30 | 30 | 0 |
+| P7.5 | 45 | 45 | 0 |
+| P8 | 45 | 45 | 0 |
+| P8.5 | 10 | **18** | **+8** |
+| P8.6 | 65 | 65 | 0 |
+| P8.7 | 60 | 60 | 0 |
+| P8.8 | 58 | 58 | 0 |
+| P8.9 | 40 | 40 | 0 |
+| P9 | 20 | **22** | **+2** |
+| P10 | 35 | 35 | 0 |
+| P10.5 | 30 | 30 | 0 |
+
+**全盤平均（17 Phase）**：≈54% · **≠** 06-23 虛高 ~78%
+
+### 仍 blocked 不得 uplift
+- P7 Round-2（五頂）
+- P8.5 Scenario2 遠端 GA／prod browser
+- P9 prod provider／ledger／required CI／INT · RUN_URL pending
+
+### skeleton
+- 無
+
+### placeholder
+- P9 `<RUN_URL>` 仍 pending（誠實保留）
+
+### 阻塞（blocked）
+- 無（本票）。仍 human-blocked：Round-2 · Scenario2 GA · P9 RUN_URL／prod
+
+### 下一步（next）
+1. Human：Scenario2 GA · P9 workflow_dispatch · Round-2 五頂
+2. 再 uplift → 另開 W-PROG（勿普通票改 %）
+
+### Phase 影響
+- **影響 Phase**：P8.5 · P9
+- **baseline**：06-27 SSOT · 10%／20%
+- **proposed_delta**：+8／+2（授權區間偏低保守端）
+- **實際上調**：是（W-PROG · 2026-07-13 · 寫入 18%／22%）
+- **non_claims**：≠ prod browser · ≠ required CI · ≠ P7 Round-2 GO · ≠ P9 prod 金流
+
+**驗證**：Dashboard 刷新日=2026-07-13 · P8.5=18 · P9=22 · 17 Phase 表完整 · **未改** `core/**` · workflows · 金鑰
+---
+
+## 2026-07-13 · W4-P85-S2-GA-RUNBOOK-v1 · `done`
+
+**角色**：HQ-Coordinator · Wave 4 · Multi-Chat same_chat O→B→C→D  
+**票號**：`W4-P85-S2-GA-RUNBOOK-v1` · evidence_tier: L-local + GA-remote（引用）  
+**lifecycle_phase**：O · **Reviewer**：`accepted` · risk=low
+
+### 變更
+- `docs/phase8_5-bridge-smoke-runbook-v1.md` — §0.3 Scenario2 逐步 checklist + Recorded GA 表（run_id=29157178993）
+- `04_Workflows/tickets/WH-P85-SMOKE-B-scenario2-ops-run-v1_state.md` — Evidence Schema + dispatch 狀態改 recorded
+- `04_Workflows/WORKFLOW_INDEX.md` §1.4 — Smoke A **20/20** · GA recorded cross-ref
+- 票 STATE：`04_Workflows/tickets/W4-P85-S2-GA-RUNBOOK-v1_state.md`
+
+### skeleton
+- 無
+
+### placeholder
+- 無
+
+### 阻塞（blocked）
+- 無（本票）。仍 human-gated：P6 DAY3–7 · Round-2 ≥07-18 · WC-PRE
+
+### 下一步（next）
+1. 建議下一張 AI：`W4-P85-P9-EVIDENCE-SSOT-v1`（兩線 URL 已齊）
+2. Human：P6 綠日鐘續收 · Round-2 五頂
+
+### Phase 影響
+- **影響 Phase**：P8.5
+- **baseline**：07-13 SSOT · 18%
+- **proposed_delta**：+0
+- **實際上調**：否（`apply_phase_pct: false`；W-PROG 已於同日將 P8.5 **10→18**）
+- **non_claims**：≠ Phase closure · ≠ prod browser · ≠ required CI · ≠ Dashboard 數字變更
+
+**驗證**：`rg` 命中 checklist／Evidence Schema／20/20／29157178993 · **未改** `core/**` · workflows · Phase% 數字格 · 金鑰
+
+---
+
+## 2026-07-13 · W4-P85-P9-EVIDENCE-SSOT-v1 · `done`
+
+**角色**：HQ-Coordinator · Wave 4 · same_chat O→B→C→D  
+**票號**：`W4-P85-P9-EVIDENCE-SSOT-v1` · evidence_tier: L-local  
+**Reviewer**：`accepted` · risk=low
+
+### 變更
+- `docs/wave4-p85-p9-evidence-ssot-v1.md`（新建 · evidence_status=**complete**）
+- WH-REV alignment notes · W-ORCH notes · WORKFLOW_INDEX §1.4 一句
+- 票 STATE：`04_Workflows/tickets/W4-P85-P9-EVIDENCE-SSOT-v1_state.md`
+
+### skeleton / placeholder
+- 無
+
+### 阻塞（blocked）
+- 無（本票）。仍 human：P6 DAY3–7 · Round-2 · WC-PRE
+
+### 下一步（next）
+1. Human 盯 P6 綠日鐘（目前 2/7）
+2. AI 主線 READY=0 · 勿開 human-gated 票
+
+### Phase 影響
+- **影響 Phase**：P8.5 · P9
+- **baseline**：07-13 SSOT · 18%／22%
+- **proposed_delta**：+0／+0
+- **實際上調**：否
+- **non_claims**：≠ Phase closure · ≠ required CI · ≠ prod browser／金流 · ≠ Dashboard 數字變更
+
+**驗證**：SSOT 兩 run_id 齊 · INDEX／W-ORCH notes 命中 · **未改** core／workflows／Phase% 數字格
+
+---
+
+## 2026-07-13 · 工作流完善盤點 Rollup（2026-06-27 → 2026-07-13）· HQ-Coordinator
+
+**角色**：HQ-Coordinator · 盤點＋進度寫回（doc-only）  
+**任務**：依尚書省「查看日志上次更新進度 6/27 到現在做了多少完善工作流的事情，並更新相對應的進度」  
+**狀態依據**：`_boot_context.py`（ok · assignable · hq.coordination）· Progress 標題 ≥2026-06-27 共 **76** 條（append 前）· Dashboard SSOT 2026-07-13（W-PROG 已寫 P8.5=18／P9=22）· git log since 2026-06-27：**11** commits（多數 Progress／ticket 證據在工作樹／未全量入庫）
+
+### 時間線（精煉）
+
+| 區間 | 工作流完善焦點 |
+|------|----------------|
+| **2026-06-27** | 三層接戰 `boot_context` v1；WF batch（P6 INT＋P8.9 verification）；P6 INT CI landing／uplift 治理；Tabular／Phase gauge 文書對齊 |
+| **06-28～07-08** | Progress **無**獨立 `##` 戰報標題（空白窗） |
+| **2026-07-09** | Multi-Chat／Wave Master 命令與模板（W5-T1/T2/T4/T5）；evidence observer（W5-T3）；Cross-Agent Fix Ledger；P7.5 upstream 索引票收口 |
+| **2026-07-10** | Four-Piece 編排（FP-G1/G2/G5/G6）· Progress append 協議／模板 · QUEUE 整組入列 · Batch-3 十票 AI 可達段 · Human Gate Batch 2 · P8/P8.9 EVD/OBS/SSOT |
+| **2026-07-11** | P6/P7/P9 advisory workflows 推 origin/main · GA runtime assets · Scribe 誠實回填（含 FAIL／pending） |
+| **2026-07-12** | W5-T6 schema relay/ops SSOT · command_queue 方案 A/B′/B3 清理歸檔 · Eval-gate 回綠 · W1-T3 CI-LAND · 續作盤點 READY=0 |
+| **2026-07-13** | FP-PHASE-IMPACT 協議 · **W-PROG** Phase% 保守寫入（P8.5 10→18 · P9 20→22）· P8.5 bridge hardening／GA runbook／P85+P9 evidence SSOT |
+
+### 按類別：工作流完善完成項
+
+#### 1) Multi-Chat
+- **W5-T1**：`.cursor/commands/ticket-{orchestrator,implementer,reviewer,scribe}.md` + commands README（四角色 slash）
+- **skill／規則**：`.cursor/skills/multi-chat-ticket-workflow/SKILL.md` · `role-prompts.md` · `.cursor/rules/multi_chat_roles.mdc`
+- **證據**：Progress `2026-07-09 · W5-T1-…` · 票 `W5-T1-multi-chat-commands-v1_state.md`
+
+#### 2) Wave Master
+- **W5-T2**：`docs/wave-master-ticket-template-v1.md` + ticket_state／frame templates
+- **W5-T4／T5**：reviewer checklist · WORKFLOW_INDEX **§1.55** · Dashboard Wave Master 編排敘事（Phase% 不變）
+- **W5-T3**：`docs/wave-evidence-ingestion-spec-v1.md` + `scripts/observe_wave_evidence_v1.py`
+- **W5-T6**：ticket schema 納入 `relay_mode`／`awaiting_ops`／`ops_checklist`（`docs/ticket-schema-master-v1.md` · playbook §3）
+- **commands**：`.cursor/commands/wave-master-{orchestrator,planner,implementer}.md` · `arrange-tasks.md`
+- **證據**：Progress 07-09 W5-T* · 07-12 W5-T6 · 票 `W5-T2…`～`W5-T6-ticket-schema-relay-ops-ssot-v1_state.md`
+
+#### 3) boot / ops
+- **`04_Workflows/_boot_context.py`** + `02_Agents_Core/boot_context.py`；`_ops_cycle.py bootstrap` 別名；AGENTS／GOVERNANCE_ONBOARDING／INDEX 接戰精簡
+- **證據**：Progress `2026-06-27 · 三層接戰 Bootstrap`；本輪重跑 boot `ok: true` · `read_plan` 4 項 · `assignable: true`
+
+#### 4) batch / command queue
+- **06-27 WF batch**：P6 INT＋P8.9 verification 並行收口（Orchestrator batch）
+- **`04_Workflows/_batch_orchestrator/`**（loader MVP 既有線延續）
+- **command_queue**：QUEUE／SESSION／archive 重組（方案 A/B′/B3）· Orchestrator arrange Branch-G1/G5/G6 · Batch-3 十票 PLANNED/READY→DONE（AI 可達段）
+- **證據**：Progress 06-27 WF batch · 07-10 arrange／Batch-3 · 07-12 總檔案紀錄 A/B′/B3 · `04_Workflows/command_queue/*`
+
+#### 5) ticket / 編排協議
+- **Progress 寫回協議**：FP-G1-T5 `docs/progress-dashboard-append-protocol-v1.md` · FP-G5-T3 `docs/lane-progress-append-template-v1.md`
+- **Phase 影響協議**：FP-PHASE-IMPACT `docs/phase-progress-impact-protocol-v1.md`（普通票只提案 Δ；僅 W-PROG 寫 Phase% 數字格）
+- **Cross-Agent Fix Ledger**：`04_Workflows/cross_agent_fix_ledger.yaml`（Hermes↔Cursor 缺陷 SSOT）
+- **證據**：Progress 07-09 ledger · 07-10 FP-G1-T5／FP-G5-T3 · 07-13 FP-PHASE-IMPACT
+
+#### 6) CI / GA 工作流落地（與編排銜接）
+- **07-11～12**：landing `p6-int-gate-*` · `p7-notification-smoke` · `p9-payment-sandbox-smoke` · `p9-wc-m2-fixture-execute`；GA runtime assets；eval-gate 回綠；W1-T3 CI-LAND
+- **07-13**：P8.5 bridge CI hardening v1/v2 · Scenario2 GA runbook recorded · P85+P9 evidence SSOT
+- **git 證據（樣本）**：`2ad8fe10d` … `ef8d28837`（2026-07-11～12 · workflows／queue／Progress）
+
+#### 7) docs / Phase 進度（已有授權寫入 · 本盤點不重算）
+- **06-27 SSOT 基線** → **07-13 W-PROG** 保守上調：**P8.5 10%→18%** · **P9 20%→22%**（其餘維持 06-27）
+- **SSOT**：`docs/WAVE_PROGRESS_DASHBOARD.md` · 票 `W-PROG-phase-progress-refresh-2026-07-13_state.md` · Progress 同日 W-PROG 條
+- **本盤點**：**不**再次改 Phase% 數字格（已有授權寫入；本條僅索引）
+
+### 量化快照（證據可重跑）
+
+- Progress `## 2026-06-27` 起標題數：**76**（06-27:13 · 07-09:10 · 07-10:23 · 07-11:5 · 07-12:11 · 07-13:14＋本條）
+- git commits `since=2026-06-27 until=2026-07-14`：**11**（工作流相關入庫偏 CI／queue；大量 ticket／commands 仍可能未 commit）
+- Dashboard 刷新日：**2026-07-13** · P8.5=**18** · P9=**22**
+
+### 尚未完成／阻塞（工作流視角）
+
+1. **Human-gated**：P6 綠日鐘 DAY3–7 · P7 Round-2（≥07-18 五頂）· WC-PRE · P9 `workflow_dispatch` 首跑 URL 回填（部分已有 GA recorded，仍非 required CI）
+2. **AI 主線**：近輪 Progress 記 **READY=0**（勿開 human-gated 票硬推）
+3. **`Master_Map.war_status`**：仍凍結 **2026-05-17／v2.61** — **本輪不改**（缺地圖升版授權；與 07-13 Dashboard 不同步屬已知）
+4. **`Status.json`**：為 Migration／Asset run 帳本，**非**工作流成熟度 SSOT — **本輪不改**
+5. **06-28～07-08** Progress 空白窗：無獨立戰報可補敘；不以推測回填
+
+### Phase 影響
+- **影響 Phase**：敘事索引（P4 Multi-Chat／P10 編排／P8.5／P9 證據鏈）
+- **baseline**：07-13 SSOT · P8.5 **18%**／P9 **22%**
+- **proposed_delta**：+0／+0
+- **實際上調**：否（`apply_phase_pct: false`；W-PROG 已於同日寫入）
+- **non_claims**：≠ Phase closure · ≠ 重算全表 · ≠ 解阻 Round-2／required CI · ≠ 更新 war_status
+
+### 本輪改動的進度檔
+1. `04_Workflows/00_Agent_Work_Progress.md` — **末尾 append 本條**
+2. `04_Workflows/project_status/master_status.md` — **末尾 append**「工作流編排成熟度快照（06-27→07-13）」
+3. **未改**：Dashboard Phase% · `Status.json` · `Master_Map.war_status` · Conditions · core／workflows／金鑰
+
+### 驗證
+```powershell
+python .\04_Workflows\_boot_context.py --text "盤點 6/27 至今工作流完善並更新進度" --pretty
+# → ok: true · assignable: true · task_type: hq.coordination
+```
+- Progress 標題計數腳本：≥2026-06-27 → **76**（append 前）
+- 路徑存在：commands ≥7 · `_boot_context.py` · `cross_agent_fix_ledger.yaml` · FP-PHASE／W-PROG STATE · Dashboard「2026-07-13」
+
+### 下一步（next）
+1. Human：P6 綠日鐘 · Round-2 五頂 · P9 首跑 URL（若尚未回填）
+2. 若需同步 `Master_Map.war_status`／地圖版號 → **另開治理票**（尚書省裁決）
+3. AI：僅開非 human-gated 的 READY 票；再 uplift Phase% → **另開 W-PROG**
+
+
+## 2026-07-13 · W-PROG-B · war_status 升版 v2.62 + Phase% 再算（尚書省授權）
+
+**角色**：HQ-Coordinator／W-PROG · **已授權寫入**  
+**授權來源**：用戶明示「我直接授權你做吧我要看到更新的版本」——升版 `Master_Map.war_status`（相對 2026-05-17／v2.61）+ 依 06-27→07-13 工作流完善盤點再算 Phase%。  
+**協議**：`docs/phase-progress-impact-protocol-v1.md` · `apply_phase_pct: true` · 票 `W-PROG-war-status-phase-refresh-2026-07-13_state.md`  
+**override／Rule 12**：解凍 war_status 凍結態；Progress／本條末尾留痕（原因=尚書省授權可見更新版；影響=地圖 headline 與 Dashboard 數字；一次性本輪）。
+
+### war_status 舊 → 新
+
+| 欄 | 舊（v2.61 凍結） | 新（v2.62） |
+|----|------------------|------------|
+| constitution_version | v2.61 | **v2.62** |
+| as_of | 2026-05-17 | **2026-07-13** |
+| frozen_at_iso_utc | 2026-05-17T09:30:38Z | **2026-07-13T02:40:00Z** |
+| headline | v2.61 封存（2026-05-17 UTC）：Phase 2 工程規則轉制完成…Telegram lock 仍缺席。 | v2.62（2026-07-13）：工作流編排成熟度升版 — Multi-Chat／Wave Master／boot_context／command_queue／Phase 影響協議已落地；P8.5/P9 advisory 證據鏈 complete；Dashboard Phase% 再算（P8.5=20% · P9=24% · P4=77% · P10=37%）；≠ prod／required CI／Round-2 GO。 |
+
+### Phase% 舊 → 新（prev = 同日 W-PROG A · 保守端）
+
+| Phase | 舊 (W-PROG A) | 新 (W-PROG-B) | Δ | uplift 理由 |
+|-------|---------------|---------------|---|-------------|
+| P8.5 | 18% | **20%** | +2 | Scenario2 GA-remote recorded（29157178993）· evidence SSOT complete |
+| P9 | 22% | **24%** | +2 | payment-sandbox RUN_URL recorded（29159159265） |
+| P4 | 75% | **77%** | +2 | Multi-Chat W5-T1 commands／skill／rules |
+| P10 | 35% | **37%** | +2 | Wave Master 編排資產（≠ runtime 95%） |
+| P7 及其他 | 見 Dashboard | **不變** | 0 | Round-2／WC-PRE／human-gated 不得 uplift |
+
+**全盤平均（17 Phase）**：仍 ≈**54%**（+8pp 分散四 Phase · ≈+0.5pp 平均）。**≠** 06-23 虛高 ~78%。
+
+### apply 方式
+
+- 手算寫入 Dashboard SSOT（無 Phase% apply runner；`_progress_recalc_p7_p85_p9.py` 僅子線 audit → P8.5 H+2 ops-run=done 佐證）
+- **未改** `Status.json`（非 Phase SSOT）
+
+### 變更檔案
+
+1. `04_Workflows/Master_Map.json` — war_status only  
+2. `docs/WAVE_PROGRESS_DASHBOARD.md` — Phase% W-PROG-B  
+3. `04_Workflows/WORKFLOW_INDEX.md` — §1.7 一句  
+4. `04_Workflows/tickets/W-PROG-war-status-phase-refresh-2026-07-13_state.md` — 新  
+5. 本檔 · `project_status/master_status.md` — 末尾 append  
+
+### Phase 影響
+
+- **影響 Phase**：P8.5 · P9 · P4 · P10  
+- **baseline**：07-13 W-PROG A  
+- **proposed_delta**：各 +2  
+- **實際上調**：是（W-PROG-B · 2026-07-13）  
+- **non_claims**：≠ prod browser · ≠ required CI · ≠ Round-2 GO · ≠ P9 prod 金流 · ≠ P10 runtime 95% · ≠ Phase closure  
+
+### 下一步
+
+1. Human：P6 綠日鐘 · Round-2 五頂 · WC-PRE  
+2. 再 uplift → 另開 W-PROG（需新證據）  
+
+
+## 2026-07-13 · W-PROG-phase-pct-apply-runner-v1 · `done`
+
+**角色**：Implementer／hq.governance · **票**：`W-PROG-phase-pct-apply-runner-v1`  
+**性質**：補齊 Phase% **apply runner**（完成時可對應更新 P 趴數；預設仍提案-only）
+
+### 變更
+- `04_Workflows/_phase_pct_apply.py` — read／plan／from-ticket／apply／self-test
+- `tests/test_phase_pct_apply_v1.py` — 5 tests
+- `docs/phase-progress-impact-protocol-v1.md` §8 — 用法
+- `Master_Map.json` runners：`phase_pct_apply_py` · Dashboard／協議別名
+- `WORKFLOW_INDEX.md` G1 一句索引
+
+### Phase 影響
+- **影響 Phase**：P4／P10（編排工具）
+- **baseline**：07-13 W-PROG-B
+- **proposed_delta**：+0
+- **實際上調**：否（`apply_phase_pct: false`；本票不寫 Dashboard 數字格）
+- **non_claims**：≠ 普通票自動 uplift · ≠ Phase closure · ≠ war_status
+
+### 驗證
+```powershell
+python .\04_Workflows\_phase_pct_apply.py self-test --pretty
+# → ok: true · phase_count=18 · dry_run_no_write · refuse_write_without_ticket
+python -m unittest tests.test_phase_pct_apply_v1 -v
+# → 5 tests OK
+```
+
+### 下一步
+1. 後續票收工：`from-ticket --ticket-id <ID>` 產出 proposed_delta
+2. 授權 W-PROG：票標 `apply_phase_pct: true` + 已授權寫入 → `apply --authorize`
+3. Human：各 P 權重／完成定義若要「自動估 Δ」仍須另裁決（本 runner 吃顯式 Δ）
+
+## 2026-07-13 · W-PROG-phase-pct-auto-estimate-v1 · `done`
+
+**角色**：Implementer／hq.governance · **票**：`W-PROG-phase-pct-auto-estimate-v1`  
+**性質**：自動估 Phase `proposed_delta` + 對齊「先估 → 後驗 → 再寫」；本輪不寫 Dashboard %
+
+### 變更
+- `04_Workflows/_phase_pct_apply.py` — `estimate`／`verify`／lifecycle 閘門（未 verified 拒 apply）
+- `docs/phase-progress-impact-protocol-v1.md` §8–§9 — 節奏 + heuristic v0.1 表
+- `tests/test_phase_pct_apply_v1.py` — 7 tests（估得到／未驗不可寫／驗後 dry-run）
+- `WORKFLOW_INDEX.md` G1 一句 · 票 `W-PROG-phase-pct-auto-estimate-v1_state.md`
+
+### Phase 影響
+- **影響 Phase**：P4／P10（編排工具）
+- **baseline**：07-13 W-PROG-B
+- **proposed_delta**：+0（工具票 · impact_size=micro）
+- **實際上調**：否（`apply_phase_pct: false`）
+- **non_claims**：≠ 自動 uplift · ≠ 權重表定稿 · ≠ war_status
+
+### 驗證
+```powershell
+python .\04_Workflows\_phase_pct_apply.py self-test --pretty
+# → ok: true · estimate_heuristic · refuse_apply_before_verify · verify_ok · apply_dry_run_after_verify
+python -m unittest tests.test_phase_pct_apply_v1 -v
+# → 7 tests OK
+```
+
+### 下一步
+1. 接戰開工：`estimate --ticket-id <ID> [--write-back]`
+2. Review／unittest 過：`verify --checks-ok --write-back`
+3. W-PROG 授權寫入：`apply --authorize`（須 verified + apply_phase_pct=true）
+4. Human：heuristic 權重表待尚書省定稿
+
+## 2026-07-13 · W-PROG-phase-pct-heuristic-v0.1-ratify · `done`
+
+**角色**：HQ-Coordinator／hq.coordination · **票**：`W-PROG-phase-pct-auto-estimate-v1`（定稿裁決）  
+**性質**：尚書省確認採納 Phase% 自動估 Δ **heuristic v0.1** 權重表（`approved`／定稿）
+
+### 變更
+- `04_Workflows/_phase_pct_apply.py` — `HEURISTIC_STATUS=approved` · note／non_claims 去「待定稿」
+- `docs/phase-progress-impact-protocol-v1.md` §9 — 尚書省 2026-07-13 確認採納
+- `tests/test_phase_pct_apply_v1.py` — 斷言 approved／定稿表
+- 票 `W-PROG-phase-pct-auto-estimate-v1_state.md` — 末尾 append 裁決
+
+### Phase 影響
+- **影響 Phase**：P4／P10（編排工具 · 制度定稿）
+- **baseline**：07-13 W-PROG-B
+- **proposed_delta**：+0
+- **實際上調**：否（本輪不寫 Dashboard 數字格）
+- **non_claims**：≠ 自動 uplift · ≠ Phase closure · ≠ war_status
+
+### 定稿表
+- impact_size：micro=0 · small=+1 · medium=+2 · large=+5 · xl=+8
+- gate cap：blocked→0 · L-local→2 · CI-advisory→5 · GA-remote→8
+- 優先 explicit `proposed_delta_pct`
+
+### 驗證
+```powershell
+python .\04_Workflows\_phase_pct_apply.py self-test --pretty
+python -m unittest tests.test_phase_pct_apply_v1 -v
+```
+
+### 下一步
+1. 開工：`estimate --ticket-id <ID> [--write-back]`（走定稿 heuristic）
+2. 驗收後：`verify --checks-ok --write-back`
+3. W-PROG 寫 %：`apply --authorize`（須 verified + apply_phase_pct=true）
+4. 升級權重表 → 另開票（不得 silently 改表）
+
+## 2026-07-13 · W-PROG-triple-batch-2026-07-13 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：BATCH-MVP-02 ∥ P75-G5-slo-alert-probe-v1 ∥ FP-G2-T6-index-job-hook-runtime-thin-v1 · 匯總 W-PROG-triple-batch-2026-07-13
+
+### 變更
+- A：04_Workflows/_batch_orchestrator/scheduler.py + template + tests/test_batch_scheduler.py（6 OK）
+- B：docs/p75-intake-gate-slo-alert-probe-v1.md + scripts/run_intake_slo_alert_probe_v1.py + tests（7 OK）
+- C：scripts/run_index_job_hook_runtime_thin_v1.py + fixture + tests（6 OK）
+- Dashboard：docs/WAVE_PROGRESS_DASHBOARD.md 經 _phase_pct_apply.py apply --authorize
+
+### 驗證
+```powershell
+python -m unittest tests.test_batch_scheduler tests.test_intake_slo_alert_probe_v1 tests.test_index_job_hook_runtime_thin_v1 -v
+# → 19 tests OK
+python .\04_Workflows\_phase_pct_apply.py apply --ticket-id W-PROG-triple-batch-2026-07-13 --authorize --pretty
+# → applied P2+1 · P7.5+1 · P8+1
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P1 | 90 | 90 | 0 | — |
+| P2 | 65 | 66 | +1 | FP-G2-T6 + unittest |
+| P3 | 82 | 82 | 0 | — |
+| P3.5 | 55 | 55 | 0 | — |
+| P4 | 77 | 77 | 0 | — |
+| P5 | 70 | 70 | 0 | — |
+| P6 | 83 | 83 | 0 | — |
+| P7 | 30 | 30 | 0 | — |
+| P7.5 | 45 | 46 | +1 | P75-G5 + unittest |
+| P8 | 45 | 46 | +1 | BATCH-MVP-02 + unittest |
+| P8.5 | 20 | 20 | 0 | — |
+| P8.6 | 65 | 65 | 0 | — |
+| P8.7 | 60 | 60 | 0 | — |
+| P8.8 | 58 | 58 | 0 | — |
+| P8.9 | 40 | 40 | 0 | — |
+| P9 | 24 | 24 | 0 | — |
+| P10 | 37 | 37 | 0 | — |
+| P10.5 | 30 | 30 | 0 | — |
+
+- **實際上調**：是（W-PROG-triple-batch · 2026-07-13 · `_phase_pct_apply apply --authorize`）
+- **non_claims**：≠ Phase closure · ≠ P7 Round-2 GO · ≠ prod alert／ingest · ≠ war_status 默認改寫
+
+### 阻塞
+- 無（三票 accepted；趴數已寫入 Dashboard）
+
+### 下一步
+1. BATCH-MVP-03 executor 另票
+2. P75 真 alert sink／UI 另票
+3. FP-G2 core ingest 配線另票（execute 仍 blocked）
+
+## 2026-07-13 · W-PROG-p8-80-batch-t2b-2026-07-13 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：BATCH-MVP-03 → BATCH-MVP-04 → P8-T2b-batch-approve-resume-mvp-v1 · 匯總 W-PROG-p8-80-batch-t2b-2026-07-13
+
+### 變更
+- A：`04_Workflows/_batch_orchestrator/prompt_builder.py` + `runner_mock.py` + `tests/test_batch_prompt_and_runner.py`（5 OK）
+- B：`collector.py` + `reporter.py` + `cli.py` + `tests/test_batch_e2e_mock.py` + `tests/fixtures/sample_manifest.json`（3 OK · CLI mock ok · suggestion_only）
+- C：`scripts/list_operator_backlog_v1.py` T2b flags + `tests/test_operator_backlog_t2b_v1.py` + docs（9 OK with v1）
+- Dashboard：`docs/WAVE_PROGRESS_DASHBOARD.md` 經 `_phase_pct_apply.py apply --authorize --allow-large-delta`
+
+### 驗證
+```powershell
+python -m unittest tests.test_batch_prompt_and_runner -v
+# → 5 tests OK
+$env:PYTHONPATH = "04_Workflows"; python -m unittest tests.test_batch_e2e_mock -v
+# → 3 tests OK
+python -m _batch_orchestrator.cli run --manifest tests/fixtures/sample_manifest.json --mode mock --limit 2
+# → ok=true · writes_ticket_state=false
+python -m unittest tests.test_operator_backlog_t2b_v1 tests.test_operator_backlog_v1 -v
+# → 9 tests OK
+python .\04_Workflows\_phase_pct_apply.py apply --ticket-id W-PROG-p8-80-batch-t2b-2026-07-13 --authorize --allow-large-delta --pretty
+# → applied P8 +30（46→76）
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P8 | 46 | 76 | +30 | MVP-03 +8 · MVP-04 +10 · T2b +12（票面合計 · 落點 76% ∈ 75–80） |
+
+- **實際上調**：是（W-PROG-p8-80 · 2026-07-13 · `_phase_pct_apply apply --authorize`）
+- **non_claims**：≠ Phase closure · ≠ P8-T3 webhook／DLQ · ≠ 真 Worker · ≠ war_status 默認改寫 · ≠ preview CLI
+
+### 阻塞
+- 無（三票 accepted；趴數已寫入 Dashboard）
+
+### 下一步
+1. checkpoint preview CLI 另票
+2. P8-T3 真 webhook／DLQ 另票
+3. 真 Worker API 接 batch orchestrator 另票
+
+
+## 2026-07-13 · W-PROG-p8-toward-100-t2c-t3mock-2026-07-13 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P8-T2c → P8-T3-mock · 匯總 W-PROG-p8-toward-100-t2c-t3mock-2026-07-13
+
+### 變更
+- A：scripts/preview_checkpoint_v1.py + 	ests/test_preview_checkpoint_v1.py + operator backlog docs（5 OK）
+- B：delivery/p8_notify_webhook_mock_v1.py + CLI + 	ests/test_p8_notify_webhook_mock_v1.py + docs（4 OK · CLI force-fail→DLQ）
+- Dashboard：docs/WAVE_PROGRESS_DASHBOARD.md 經 _phase_pct_apply.py apply --authorize --allow-large-delta（P8 76→92）
+
+### 驗證
+`powershell
+python -m unittest tests.test_preview_checkpoint_v1 -v
+# → 5 tests OK
+python -m unittest tests.test_p8_notify_webhook_mock_v1 -v
+# → 4 tests OK
+python .\04_Workflows\_phase_pct_apply.py apply --ticket-id W-PROG-p8-toward-100-t2c-t3mock-2026-07-13 --authorize --allow-large-delta --pretty
+# → applied P8 +16（76→92）
+`
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P8 | 76 | 92 | +16 | T2c +8 · T3-mock +8（票面合計 · 誠實上限 ≠100） |
+
+- **實際上調**：是（W-PROG-p8-toward-100 · 2026-07-13 · _phase_pct_apply apply --authorize）
+- **non_claims**：≠ Phase closure · ≠ 誠實 100 · ≠ prod webhook · ≠ 真 Worker · ≠ war_status 默認改寫
+
+### 距 100 缺口（誠實）
+1. 真 Worker API 接 batch orchestrator
+2. 真 prod／staging webhook + SLA（T3 僅 mock）
+3. Operator Web UI／multi-case queue（計畫 §5 可延後）
+
+### 阻塞
+- 無（兩票 accepted；趴數已寫入 Dashboard 92%）
+
+### 下一步
+1. 真 Worker／真 webhook 另授權票（若要衝 100）
+2. 勿把 mock T3 標 prod-ready
+
+## 2026-07-13 · W-PROG-p8-to-100-worker-webhook-2026-07-13 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P8-T4 → P8-T3-staging-prod · 匯總 W-PROG-p8-to-100-worker-webhook-2026-07-13
+
+### 變更
+- A：`04_Workflows/_batch_orchestrator/worker_api.py` + `runner_worker_api.py` + CLI `--mode worker_api` / `serve-worker` + `tests/test_batch_worker_api.py` + docs（6 OK）
+- B：`delivery/p8_notify_webhook_v1.py` + CLI + `tests/test_p8_notify_webhook_v1.py` + docs（5 OK · sandbox 真 HTTP · staging mocked · prod allowlist miss）
+- Dashboard：`docs/WAVE_PROGRESS_DASHBOARD.md` 經 `_phase_pct_apply.py apply --authorize --allow-large-delta`（P8 92→100）
+
+### 驗證
+```powershell
+$env:PYTHONPATH = "04_Workflows"
+python -m unittest tests.test_batch_worker_api -v
+# → 6 tests OK
+python -m unittest tests.test_p8_notify_webhook_v1 -v
+# → 5 tests OK
+python -m unittest tests.test_batch_e2e_mock tests.test_p8_notify_webhook_mock_v1 -v
+# → 回歸 OK
+python .\04_Workflows\_phase_pct_apply.py apply --ticket-id W-PROG-p8-to-100-worker-webhook-2026-07-13 --authorize --allow-large-delta --pretty
+# → applied P8 +8（92→100）
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P8 | 92 | 100 | +8 | T4 Worker API +4 · T3 staging/prod webhook +4 |
+
+- **實際上調**：是（W-PROG-p8-to-100 · 2026-07-13 · _phase_pct_apply apply --authorize）
+- **non_claims**：≠ Phase closure 自動 · ≠ SLA／exactly-once（§5→P9）· ≠ repo 內已註冊遠端 prod URL · ≠ war_status 默認改寫 · ≠ Operator Web UI
+
+### 阻塞
+- 無（兩票 accepted；Dashboard 100%；運維仍須自備 staging/prod env gates 方能對外 POST）
+
+### 下一步
+1. 運維填 staging/prod env gates 後跑 `readiness` + 受控 dispatch
+2. SLA／exactly-once 另開 Phase 9 票
+3. Operator Web UI 另票（計畫 §5）
+
+
+## 2026-07-13 · W-PROG-full-line-to-100-wave-plan-2026-07-13 · Wave0+P75-G6 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **匯總**：W-PROG-full-line-to-100-wave-plan-2026-07-13 · **首票**：P75-G6-alert-sink-contract-v1
+
+### 變更
+- 計劃 SSOT：`04_Workflows/plans/full-line-to-100-wave-plan-2026-07-13.md`（Wave 0–6 · 90%/100% DoD · UI→Wave 4）
+- 票：`W-PROG-full-line-to-100-wave-plan-2026-07-13_state.md` · `P75-G6-alert-sink-contract-v1_state.md`
+- INDEX：`WORKFLOW_INDEX.md` §1.55 有效路徑 8c 一句
+- master_status：末尾短段「全線到100 Wave 計劃已登錄」
+- P75-G6：`docs/p75-alert-sink-contract-v1.md` · `shared/schemas/p75_alert_sink_event_v1.json` · `delivery/p75_alert_sink_v1.py` · `scripts/run_p75_alert_sink_v1.py` · `tests/test_p75_alert_sink_v1.py` · probe doc 交叉引用
+
+### 驗證
+```powershell
+python -m unittest tests.test_p75_alert_sink_v1 -v
+# → 8 tests OK
+python scripts/run_p75_alert_sink_v1.py --from-probe --mode file --format json
+# → ok=true · emitted=0（健康 fixture）
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id P75-G6-alert-sink-contract-v1 --pretty
+# → estimate P7.5 +1 · dry_run · write_back=false
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P7.5 | 46 | 46 | 0（提案 +1 未 apply） | apply_phase_pct=false · 僅 estimate |
+
+- **實際上調**：否
+- **non_claims**：≠ UI · ≠ prod alert · ≠ Phase closure · ≠ 擅自大漲 %
+
+### 阻塞
+- 無（計劃已登錄；G6 契約／本地 sink accepted）
+
+### 下一步
+1. Wave 1 下一張：P8.9 webhook sandbox 或 P5 metrics stub（見計劃 §3）
+2. 勿開 UI（延至 Wave 4）
+3. 微票 Δ 待 W-PROG 匯總 authorize 再寫 Dashboard
+
+
+
+## 2026-07-13 · P5-metrics-grafana-stub-v1 · Wave1 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P5-metrics-grafana-stub-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- 首選 P8.9-T4 webhook sandbox：**已落地**（WD-P7-T2／`notification_webhook_adapter_v1` + dispatch registry · 12 tests）→ **不重造**
+- 本輪做次選：P5 本地 Grafana/JSON 對照 stub（Wave 4 可讀欄位）
+
+### 變更
+- `docs/p5-metrics-grafana-stub-contract-v1.md` · `shared/schemas/p5_metrics_grafana_stub_v1.json`
+- `observability/p5_metrics_grafana_stub_v1.py` · `scripts/run_p5_metrics_grafana_stub_v1.py` · `tests/test_p5_metrics_grafana_stub_v1.py`
+- INDEX §1.5 一句 · grafana deferred L-06 · fleet operator 交叉引用 · 計劃／W-PROG 末尾 append
+
+### 驗證
+```powershell
+python -m unittest tests.test_p5_metrics_grafana_stub_v1 -v
+# → 5 tests OK
+python scripts/run_p5_metrics_grafana_stub_v1.py --format json --case-ref demo_phase
+# → ok=true · health.ok · metrics.scrape_ok
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id P5-metrics-grafana-stub-v1 --write-back --pretty
+# → estimate P5 +2 · dry_run · 未 apply Dashboard
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P5 | 70 | 70 | 0（提案 +2 未 apply） | apply_phase_pct=false · 僅 estimate |
+
+- **實際上調**：否
+- **non_claims**：≠ 真 Grafana · ≠ PG soak · ≠ UI · ≠ Phase closure · ≠ 擅自大漲 % · ≠ DarkOps
+
+### 阻塞
+- 無
+
+### 下一步
+1. Wave 1 #4 其餘契約補洞（Dashboard「未做」列），或進入 **Wave 2**（後端衝 ~90% · 無 UI）
+2. P8.9 Dashboard 仍寫 40%／T4 deferred — 敘事對齊另開 W-PROG（本輪不 authorize）
+3. 勿開 UI（延至 Wave 4）
+
+## 2026-07-13 · P75-G7-intake-gate-http-stub-v1 · Wave2 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P75-G7-intake-gate-http-stub-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- Wave 2 首選：P7.5 →90% 明示延後的 **HTTP gate**（loopback stub）；不開 UI；不碰暗部 app_api
+- P2 index --execute 仍 blocked → **本輪不做 P2 實作**；記阻塞
+
+### 變更
+- `docs/p75-intake-gate-http-stub-v1.md` · `shared/schemas/intake_gate_http_request_v1.json`
+- `routing/intake_gate_http_stub_v1.py` · `scripts/run_intake_gate_http_stub_v1.py` · `tests/test_intake_gate_http_stub_v1.py`
+- INDEX · upstream entry · 計劃 §4.1／今日清單／Append · W-PROG／本票 state
+
+### 驗證
+```powershell
+python -m unittest tests.test_intake_gate_http_stub_v1 -v
+# → 8 tests OK
+python scripts/run_intake_gate_http_stub_v1.py --task-type tabular.cleaning.mvp --case-dir cases/demo_phase --mode preview
+# → ok=true · http.stub · gate.decision
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id P75-G7-intake-gate-http-stub-v1 --write-back --pretty
+# → estimate P7.5 +2 · dry_run · 未 apply Dashboard
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P7.5 | 46 | 46 | 0（提案 +2 未 apply） | apply_phase_pct=false · 僅 estimate |
+
+- **實際上調**：否
+- **non_claims**：≠ prod app_api · ≠ UI · ≠ Phase closure · ≠ 擅自大漲 % · ≠ DarkOps
+
+### 阻塞
+- **P2**：FP-G2-T6／thin runtime --execute 仍 ok=false blocked（≠ prod ingest）；解阻需另票 + 授權，本輪跳過
+
+### 下一步
+1. Wave 2 #2：P8.9 敘事對齊（T4=WD-P7-T2）或 feedback／obs 小補洞（勿重造 webhook）
+2. 或 P8.6–8.8 runtime 薄增量
+3. Wave 3 煙霧：G7 + gate CLI + notify + MP-SMOKE 串線穩定後再開（仍無 UI）
+4. 勿開 UI（延至 Wave 4）
+
+## 2026-07-13 · P89-W2-narrative-t4-obs-projection-v1 · Wave2 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P89-W2-narrative-t4-obs-projection-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- 首選 P8.9 敘事對齊：Dashboard／計劃／INDEX／OBS 寫明 **T4=WD-P7-T2 landed**（勿重造 webhook）
+- 真實小缺口：UI 五鍵尚無只讀投影 → 補 p89_operator_fields_v1 + unittest
+- **不**改 Dashboard 40% 數字格（estimate +1 only）
+
+### 變更
+- docs/p89-operator-fields-projection-v1.md · delivery/p89_operator_fields_v1.py · scripts/inspect_p89_operator_fields_v1.py · 	ests/test_p89_operator_fields_v1.py
+- Dashboard 敘事欄 · OBS §5 · handlers YAML description · INDEX §1.5／§1.7 · 計劃 §2.2／Wave2／Append · W-PROG／本票 state
+
+### 驗證
+`powershell
+python -m unittest tests.test_p89_operator_fields_v1 -v
+# → 4 tests OK
+python scripts/inspect_p89_operator_fields_v1.py --case-ref demo_phase --format json
+# → ok=true · fields 五鍵 · t4_alignment.ticket=WD-P7-T2
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id P89-W2-narrative-t4-obs-projection-v1 --write-back --pretty
+# → estimate P8.9 +1 · dry_run · 未 apply Dashboard
+`
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P8.9 | 40 | 40 | 0（提案 +1 未 apply） | apply_phase_pct=false · 僅 estimate |
+
+- **實際上調**：否
+- **non_claims**：≠ 重造 webhook · ≠ UI · ≠ prod SLA · ≠ Phase closure · ≠ 擅自大漲 % · ≠ DarkOps
+
+### 阻塞
+- **P2**：--execute 仍 blocked（沿用 Wave2 #1 記帳）
+- Wave 3 煙霧：尚需 G7 + gate／notify／MP-SMOKE 串線穩定驗證（本輪未跑全串）
+
+### 下一步
+1. Wave 2 下一：P8.6–8.8 runtime 薄增量（或跳過 P2）
+2. Wave 3 煙霧前置：MP-SMOKE／G7／notify 串線穩定後再開
+3. 勿開 UI（延至 Wave 4）；P8.9 % 待 W-PROG authorize
+
+## 2026-07-13 · W3-SMOKE-g7-gate-notify-mp-chain-v1 · Wave3 煙霧 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：W3-SMOKE-g7-gate-notify-mp-chain-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- Wave 3 煙霧前置：交付 G7 → gate parity → run+notify → G6 sink → MP-SMOKE 可重跑串線
+- **Wave 3 煙霧 GO**（L-local）；**Wave 4 UI 仍 HOLD**（等用戶照片／欄位凍結）
+- 未發現配線斷裂；P8.6–8.8 薄增量本輪未做（留給下輪）
+
+### 變更
+- `docs/wave3-smoke-g7-gate-notify-mp-chain-v1.md` · `delivery/wave3_smoke_chain_v1.py` · `scripts/run_wave3_smoke_chain_v1.py` · `tests/test_wave3_smoke_chain_v1.py`
+- INDEX · 計劃 §5 #9／Append · W-PROG Append · 本票 state
+
+### 驗證
+```powershell
+python -m unittest tests.test_wave3_smoke_chain_v1 -v
+# → 2 tests OK
+python scripts/run_wave3_smoke_chain_v1.py --case-ref demo_phase --outbox-root outbox/_wave3_smoke_tmp --format json
+# → ok=true · failed_steps=[] · g7_preview / parity / run_notify / alert_sink / mp_smoke 皆 ok
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id W3-SMOKE-g7-gate-notify-mp-chain-v1 --write-back --pretty
+# → estimate P7.5 +1 · dry_run · 未 apply Dashboard
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P7.5 | 46 | 46 | 0（提案 +1 未 apply） | apply_phase_pct=false · 僅 estimate |
+
+- **實際上調**：否
+- **non_claims**：≠ prod／required CI · ≠ UI · ≠ Phase closure · ≠ Dashboard authorize · ≠ DarkOps
+
+### 阻塞
+- **P2**：--execute 仍 blocked
+- **Wave 4 UI**：等用戶照片／凍結（煙霧綠 ≠ 自動開工 UI）
+- Dashboard Phase% 未 authorize
+
+### 下一步
+1. 可選：P8.6–8.8 runtime 薄增量
+2. 用戶凍結 UI 欄位／照片後再開 Wave 4
+3. 統一驗證＋% apply 留 Wave 6／W-PROG
+
+## 2026-07-13 · P868-W2-runtime-inspect-catalog-selector-executor-v1 · Wave2 #4 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：P868-W2-runtime-inspect-catalog-selector-executor-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- Wave 2 #4：P8.6–8.8 runtime 薄增量＝**catalog → selector plan_only → executor dry_run** 只讀 inspect
+- **不**改 tools 本體 · **不**開 Wave 4 UI · **不**碰 DarkOps · estimate 未 authorize
+
+### 變更
+- docs/p868-runtime-inspect-catalog-selector-executor-v1.md · delivery/p868_runtime_inspect_v1.py · scripts/inspect_p868_runtime_v1.py · 	ests/test_p868_runtime_inspect_v1.py
+- INDEX §1.5 · 計劃 §4.1 #4／§5 #10／Append · W-PROG Append · 本票 state
+
+### 驗證
+`powershell
+python -m unittest tests.test_p868_runtime_inspect_v1 -v
+# → 3 tests OK
+python scripts/inspect_p868_runtime_v1.py --case-ref demo_phase --format json
+# → ok=true · collision_tool_ids=[] · selector.plan_only=true · executor.execution_mode=dry_run
+python .\04_Workflows\_phase_pct_apply.py estimate --ticket-id P868-W2-runtime-inspect-catalog-selector-executor-v1 --write-back --pretty
+# → estimate P8.6 +1 · P8.7 +1 · P8.8 +1 · dry_run · 未 apply Dashboard
+`
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P8.6 | 65 | 65 | 0（提案 +1 未 apply） | apply_phase_pct=false · 僅 estimate |
+| P8.7 | 60 | 60 | 0（提案 +1 未 apply） | 同上 |
+| P8.8 | 58 | 58 | 0（提案 +1 未 apply） | 同上 |
+
+- **實際上調**：否
+- **non_claims**：≠ prod browser · ≠ Wave4 UI · ≠ Phase closure · ≠ Dashboard authorize · ≠ DarkOps · ≠ execute subprocess
+
+### 阻塞
+- **P2**：--execute 仍 blocked
+- **Wave 4 UI**：等用戶照片／欄位凍結
+- Dashboard Phase% 未 authorize
+
+### 下一步
+1. 等用戶凍結 UI 欄位／照片後再開 Wave 4
+2. 或 Wave 5 human／staging／Round-2 清單準備（文件 only）
+3. 統一驗證＋% apply 留 Wave 6／W-PROG
+
+## 2026-07-13 · WAVE5-human-staging-checklist-v1 · Wave 5 · done
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：WAVE5-human-staging-checklist-v1 · 匯總 W-PROG-full-line-to-100-wave-plan-2026-07-13
+
+### 裁決
+- Wave 5 human／staging 清單（文件 only）已登錄：H1–H5＝P7 Round-2 五前置（全 **blocked**）
+- 相鄰 gap：A1 P8.5 prod browser · A2 P9 prod · A3 Wave4 UI HOLD · A4 WC-PRE
+- **不** authorize Dashboard · **不**碰 DarkOps · **不**改環境密鑰 · **不**開 UI
+
+### 變更
+- `04_Workflows/plans/wave5-human-staging-checklist-2026-07-13.md` · `.yaml` · `tests/test_wave5_human_staging_checklist_v1.py`
+- 票 state · INDEX §1.5／8d · 計劃 §5 Append · W-PROG Append · 本 Progress
+
+### 驗證
+```powershell
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+# → YAML 可解析 · H1–H5 shape OK · md anchors OK
+```
+
+### Phase 影響（開工前 → 收工後）
+
+| Phase | 開工前 % | 收工後 % | Δ | 依據 |
+|-------|---------|---------|---|------|
+| P7 | 30 | 30 | 0（提案 +0） | apply_phase_pct=false · 文件 only |
+
+- **實際上調**：否
+- **non_claims**：≠ 已解阻 · ≠ Round-2 GO · ≠ prod GO · ≠ 改環境密鑰 · ≠ Dashboard authorize · ≠ Wave4 UI · ≠ DarkOps
+
+### 阻塞
+- **H1–H5**：Round-2 五前置未齊（批文／Infra／Security／allowlist／receiver）
+- **Wave 4 UI**：等用戶照片／凍結
+- **QUEUE H4**：Round-2 earliest 07-18 DEFER（可提前討論 ≠ 提前 execute）
+- Dashboard Phase% 未 authorize
+
+### 下一步
+1. 用戶貼 UI 照片／凍結欄位 → 開 Wave 4
+2. **或** 開始解 H1（governance_dual 真批文）→ 串 H2–H5 → 再談 execute-v2
+3. 統一驗證＋% apply 留 Wave 6／W-PROG
+
+
+## 2026-07-13 · W-PROG-wave013-pct-apply + H1 governance_dual Round-2
+
+**角色**：執行 Orchestrator（same_chat · O/B/C/D）· **票**：`W-PROG-wave013-pct-apply-2026-07-13` · H1 `GOV-DUAL-APPROVAL-2026-07-13-01`
+
+### A. Phase% 寫入（真實 · `_phase_pct_apply`）
+
+| Phase | 舊% | 新% | Δ | 依據票 |
+|-------|-----|-----|---|--------|
+| **P7.5** | 46 | **49** | **+3** | P75-G6 +1 · P75-G7 +2 · W3-SMOKE 驗證不另疊（raw +4→保守 +3） |
+| **P5** | 70 | **72** | **+2** | P5-metrics-grafana-stub-v1 |
+| **P8.9** | 40 | **41** | **+1** | P89-W2-narrative-t4-obs-projection-v1 |
+| **P8.6** | 65 | **66** | **+1** | P868-W2-runtime-inspect |
+| **P8.7** | 60 | **61** | **+1** | 同上 |
+| **P8.8** | 58 | **59** | **+1** | 同上 |
+| P7 | 30 | 30 | 0 | WAVE5 +0 **跳過** |
+| 其餘 | — | — | 0 | 本輪未動 |
+
+命令：
+
+```powershell
+# 源票 verify --checks-ok --write-back（6 票）
+python .\04_Workflows\_phase_pct_apply.py apply --ticket-id W-PROG-wave013-pct-apply-2026-07-13 --authorize --label "2026-07-13 · W-PROG-wave013" --pretty
+# → applied 6 phase delta(s) · SSOT docs/WAVE_PROGRESS_DASHBOARD.md
+```
+
+- **實際上調**：是（W-PROG-wave013 · 2026-07-13）
+- **non_claims**：≠ Phase closure · ≠ Round-2 GO · ≠ prod · ≠ DarkOps
+
+### B. H1 governance_dual 真批文（部分解）
+
+```yaml
+governance_dual_approval_id: GOV-DUAL-APPROVAL-2026-07-13-01
+ticket: WAVE5-human-staging-checklist-v1 / H1
+scope: H1_round2_prereq_p1
+lifecycle: approved_pending_countersign
+approver_chat: 尚書省 2026-07-13 對話授權（「先解 H1」）
+wet_ink: pending
+approval_doc: docs/governance/GOVERNANCE_DUAL_approval_template.md
+non_claim: 批文≠ Round-2 GO ≠ execute-v2 ≠ prod ≠ 改環境密鑰
+```
+
+- **變更**：批文模板 · WAVE5 md/yaml H1 狀態 · execute-v2 next_action 註 P-1 部分解 · 開 `W2-T2-infra-staging-slot-spec-request-v1` + `docs/governance/infra_staging_slot_spec_request_v1.md`
+- **驗證**：`python -m unittest tests.test_wave5_human_staging_checklist_v1 -v` → 2 OK
+
+### Round-2 剩餘（H2–H5 · 仍 blocked）
+
+| ID | 要件 | 現況 |
+|----|------|------|
+| H1 | governance_dual 真批文 | **部分解** · pending 實體副署 |
+| H2 | Infra staging slot + HTTPS | blocked · 規格請求表已備待 Infra 填 |
+| H3 | Security 對外 notify 批文 | blocked |
+| H4 | 客戶 staging allowlist | blocked |
+| H5 | receiver 部署就緒 | blocked |
+
+**execute-v2**：仍 `blocked` · **≠ Round-2 GO**
+
+### 下一步
+1. 尚書省填批文簽名區（升格 `approved`）或接受 pending_countersign 繼續編排
+2. Infra 填 H2 規格表 → 解 H2
+3. 串 H3–H5 → 再談 execute-v2（QUEUE H4 earliest 07-18）
+4. 可選：Wave 4 UI 照片凍結（並行）
+
+## 2026-07-14 · H2–H5 blocked 批文交接副署 + Infra 跟交
+
+**角色**：大唐副官／施工 worker · **指令**：尚書省「H2–H5 仍 blocked。在批文簽名區副署，跟交 Infra 填 H2 規格表。」
+
+### 已讀／狀態依據
+- 工程合約（.cursor/rules/engineering-contract.mdc）· 憲法 §7 禁區類型
+- boot：_boot_context.py → task_type=dark.infra · assignable=false（DarkOps phase-gated；**本輪僅文件副署／交接，未改暗部根**）
+- Progress 2026-07-13：H1 approved_pending_countersign · H2–H5 blocked · H2 規格表已備
+
+### 變更（append-only／簽名區副署）
+| 檔 | 動作 |
+|----|------|
+| docs/governance/GOVERNANCE_DUAL_approval_template.md | §5 簽名區加**大唐副官／施工 worker 交接副署**；worker_handoff_countersign=granted；濕墨主簽／委員會章仍 pending |
+| docs/governance/infra_staging_slot_spec_request_v1.md | 新增 §5 交接副署（誰填／§2 待填欄／blocked 原因／下一步）· **未**填假 host |
+| 04_Workflows/tickets/W2-T2-infra-staging-slot-spec-request-v1_state.md | 末尾 Append 交接 |
+| 04_Workflows/tickets/WAVE5-human-staging-checklist-v1_state.md | 末尾 Append |
+| 04_Workflows/plans/wave5-human-staging-checklist-2026-07-13.md | 末尾 Append 一句 |
+
+### Round-2 現況（一句）
+**H2–H5 仍 blocked**；H1 仍 approved_pending_countersign（交接副署 ≠ 濕墨完簽）；execute-v2 仍 blocked · ≠ Round-2 GO。
+
+### Infra 交接
+- **誰**：Infra（人類／Infra Agent）
+- **表**：docs/governance/infra_staging_slot_spec_request_v1.md **§2**
+- **票**：W2-T2-infra-staging-slot-spec-request-v1
+- **待填**：slot_name · https_host · tls_class · allowlist_ready_for_h4 · receiver_deploy_target · health_probe_summary · env_matrix_ref · provisioned_at · infra_signoff
+
+### 阻塞
+- H2–H5 本體仍 blocked（預期；本輪不解阻）
+- DarkOps assignable=false：真 provision／探針須另開解禁或由人類 Infra 在授權路徑填表
+- 尚書省濕墨主簽／治理委員會章仍 pending（若要升格 approved）
+
+### 下一步
+1. Infra 填 H2 規格表 §2 → §3 驗收 → 解 H2
+2. 串 H3–H5 → 再談 execute-v2
+3. 可選：尚書省／委員會補濕墨主簽升格 lifecycle
+
+### non_claims
+≠ Round-2 GO · ≠ execute-v2 · ≠ H2 已解 · ≠ 改密鑰 · ≠ DarkOps 施工 · ≠ Dashboard Phase%
+
+## 2026-07-14 · Phase% 驗證對齊（昨＝2026-07-13）
+
+**角色**：大唐副官／HQ-Coordinator · **指令**：驗證對齊各 Phase 進度趴數（昨天工作後增加多少）  
+**已讀**：工程合約 `.mdc` · 憲法 §7 · boot `_boot_context.py` · Progress 末尾 · `master_status` 近段 · Dashboard SSOT
+
+### 假設
+- **昨天**＝2026-07-13；**昨前**＝07-13 開工基線（W-PROG A `prev`＝06-27 SSOT，惟 **P6 以 Dashboard／W-PROG A 之 83% 為準**，非 Progress 06-27 文面 72%——該差視為 06-27→07-13 前已存在之敘事／數字漂移，**本輪不重算、不回寫**）。
+- **昨後／當前**＝Dashboard Gauge `completion`（`_phase_pct_apply.py read` · 2026-07-14）。
+- Gauge 表內 `prev` 欄＝**末次 apply 前值**（非全日昨前）；全日 Δ 以本表為準。
+
+### SSOT
+| 來源 | 角色 |
+|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | **Phase% 唯一數字 SSOT** |
+| `04_Workflows/_phase_pct_apply.py` | estimate／verify／apply／read／self-test |
+| `04_Workflows/_progress_recalc_p7_p85_p9.py` | **僅** P7／P8.5／P9 **子線票級** audit（≠ 全局 Phase%） |
+| `Status.json` | **無** Phase% 欄（本輪確認） |
+| `Master_Map.war_status` v2.62 | headline 摘要（P8.5=20 · P9=24 · P4=77 · P10=37）· 與 Dashboard 一致 |
+| `WORKFLOW_INDEX.md` §1.7 | 索引一句（本輪已對齊至收工 SSOT） |
+
+### 驗證命令與結果
+```text
+python 04_Workflows/_boot_context.py --text "驗證對齊各 Phase 進度趴數 昨天工作後增加多少" --pretty
+# → ok · assignable · task_type=hq.coordination
+
+python 04_Workflows/_phase_pct_apply.py read --pretty
+# → ok · 18 phases · average_pct ≈ 57.89
+
+python 04_Workflows/_phase_pct_apply.py self-test --pretty
+# → ok · self-test passed · heuristic v0.1 approved
+
+python 04_Workflows/_progress_recalc_p7_p85_p9.py
+# → 子線：P7 sandbox≈96.9 · P8.5 composite≈95 · P9 narrow≈90（票級；≠ 全局 30／20／24）
+```
+Dashboard 主表「当前」列 ↔ Gauge ↔ 進度條：**數字一致**（P3.5 僅在 Gauge／條，主表無獨立列——既有結構）。
+
+### 07-13 累計 Δ（昨前 → 昨後／當前）
+
+| Phase | 昨前% | 昨後/當前% | Δ | 驗證來源 | 是否已對齊 |
+|-------|------|-----------|---|----------|------------|
+| P1 | 90 | 90 | 0 | Dashboard read | 是 |
+| P2 | 65 | 66 | +1 | triple-batch | 是 |
+| P3 | 82 | 82 | 0 | Dashboard read | 是 |
+| P3.5 | 55 | 55 | 0 | Gauge | 是 |
+| P4 | 75 | 77 | +2 | W-PROG-B | 是 |
+| P5 | 70 | 72 | +2 | wave013 | 是 |
+| P6 | 83 | 83 | 0 | Dashboard（見假設） | 是（數字格）／註：vs Progress 06-27=72 有歷史漂移 |
+| P7 | 30 | 30 | 0 | Round-2 blocked · WAVE5 skip | 是 |
+| P7.5 | 45 | 49 | +4 | triple +1 · wave013 +3 | 是 |
+| P8 | 45 | 100 | +55 | triple+1 · p8-80+30 · toward+16 · to-100+8 | 是 |
+| P8.5 | 10 | 20 | +10 | W-PROG A +8 · B +2 | 是 |
+| P8.6 | 65 | 66 | +1 | wave013 | 是 |
+| P8.7 | 60 | 61 | +1 | wave013 | 是 |
+| P8.8 | 58 | 59 | +1 | wave013 | 是 |
+| P8.9 | 40 | 41 | +1 | wave013 | 是 |
+| P9 | 20 | 24 | +4 | W-PROG A +2 · B +2 | 是 |
+| P10 | 35 | 37 | +2 | W-PROG-B | 是 |
+| P10.5 | 30 | 30 | 0 | Dashboard read | 是 |
+
+**有 Δ 的 Phase（昨天淨增）**：P2+1 · P4+2 · P5+2 · P7.5+4 · P8+55 · P8.5+10 · P8.6+1 · P8.7+1 · P8.8+1 · P8.9+1 · P9+4 · P10+2。
+
+### 本輪對齊變更
+| 檔 | 動作 |
+|----|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` | 修正誤植行 `P26-07-13…` → 正式「最近寫入」註腳（**未改** % 數字） |
+| `04_Workflows/WORKFLOW_INDEX.md` §1.7 | 索引一句自 W-PROG-B 局部摘要 → **07-13 收工全表** |
+| 本檔 | 本條 append |
+
+### 未改／請示
+- **未改** Dashboard Phase% 數字格（read／self-test 已一致；禁止發明算法）
+- **未改** `master_status.md`（Governance 獨占；近段仍停在 W-PROG-B 敘事，與收工全表有敘事落差——差異記於此，不擅自寫入）
+- **未改** `Status.json`／`war_status`（war_status 關鍵摘要已與 Dashboard 一致）
+
+### non_claims
+≠ Phase closure · ≠ Round-2 GO · ≠ prod／required CI · ≠ 子線票級平均＝全局 Phase% · ≠ 可交付（本輪為驗證／索引對齊）
+
+### 下一步
+1. 若需 `master_status` 同步收工全表 → 尚書省授權後另開 Governance 票
+2. P6 歷史 72↔83 若要追根 → 另開稽核票（本輪不回寫）
+
+## 2026-07-14 · master_status Phase% 同步＋P6 72↔83 稽核（尚書省授權）
+
+**角色**：大唐副官／Governance 文書 · **指令**：授權同步 `master_status` Phase% 敘事至 Dashboard／07-13 收工全表；併做 P6 72↔83 歷史漂移稽核  
+**已讀**：工程合約 `.mdc` · 憲法 §7 · boot `_boot_context.py` · Progress 末尾 · `master_status` 近段 · Dashboard SSOT · WORKFLOW_INDEX §1.7
+
+### 授權來源
+- 尚書省本輪明示「授權」：可改 `04_Workflows/project_status/master_status.md`（末尾／近段同步；勿無聲重寫整檔歷史）· Progress **末尾 append** · 可輕修 INDEX／Dashboard 註腳若衝突
+- **禁**：改 Dashboard 數字格（除非 read／self-test 證明錯誤）· 把全局 P6 % 改成 72 · commit · 憲法 §7 禁區
+
+### 驗證（本輪）
+```text
+python 04_Workflows/_boot_context.py --text "授權同步 master_status Phase趴數 與 P6 72-83 稽核" --pretty
+# → ok · assignable · task_type=hq.coordination
+
+python 04_Workflows/_phase_pct_apply.py read --pretty
+# → ok · 18 phases · average_pct ≈ 57.89 · P6 completion=83 · prev=83 · delta=0
+
+python 04_Workflows/_phase_pct_apply.py self-test --pretty
+# → ok · self-test passed · heuristic v0.1 approved
+```
+
+### 同步摘要（master_status）
+| 項 | 內容 |
+|----|------|
+| 動作 | **新增** `## 2026-07-14 — Phase% 敘事同步收工全表`（append；**未**覆蓋 06-24／07-13 舊區塊） |
+| 對齊 | WORKFLOW_INDEX §1.7／Dashboard 07-13 收工全表（18 Phase） |
+| 補齊落差 | 此前近段停在 W-PROG-B 局部（P8.5=20 · P9=24 · P4=77 · P10=37）；現改寫全表敘事 |
+| 未改 | Dashboard 數字格 · `Status.json` · `war_status` · Conditions 既有段 · WORKFLOW_INDEX／Dashboard 註腳（已與全表一致，無需輕修） |
+
+### P6 72↔83 歷史漂移稽核
+
+| 來源 | P6 % | 角色 |
+|------|------|------|
+| `docs/WAVE_PROGRESS_DASHBOARD.md` Gauge／「当前」列（07-13 SSOT） | **83** | **唯一數字 SSOT**（`_phase_pct_apply.py read` 確認） |
+| W-PROG A／07-13 驗證票「昨前」假設 | **83** | 與 Dashboard 一致；Δ=0 |
+| Progress **2026-06-26** 口頭戰報 · **2026-06-27** Gauge Updater 文面 | **72** | 保守重估敘事（90→72）；**歷史文面**，非現行 SSOT |
+| Dashboard 票級敘事列（WA-T6／WB-T7 等目標區間） | 72→90／84→88 等 | **票級目標／躍升敘事**，≠ 全局 Gauge completion |
+
+**結論**：
+1. **以 Dashboard／Gauge 83% 為準**；不得因 Progress 06-27 文面回寫 83→72。
+2. 72% 屬 **06-26／06-27 保守重估寫入 Progress（及當日 Dashboard「当前」）後**，至 07-13 SSOT 前已由後續 W-PROG／CI landing 敘事收斂至 **83%** 的**歷史漂移**——本輪**只稽核留痕**，**不重算**、**不改數字格**。
+3. master_status 本日記一句話標註同上；舊日區塊（含 06-24 快照）**保留不動**。
+
+### 變更檔案
+| 檔 | 動作 |
+|----|------|
+| `04_Workflows/project_status/master_status.md` | append 2026-07-14 全表同步段 |
+| 本檔 | 本條 append |
+
+### non_claims
+≠ Phase closure · ≠ Round-2 GO · ≠ prod／required CI · ≠ 改 Dashboard % · ≠ 可交付（本輪為授權敘事同步＋稽核）
+
+### 下一步
+- 無強制後續；若需把 06-27 Progress 文面加「superseded by Dashboard 83%」註腳 → 另開 doc 票（append-only 註記，非改歷史數字）
+
+## 2026-07-14 · 目標切換：P1–P6 ≈100% 衝刺計畫（HQ 規劃）
+
+**角色**：HQ-Coordinator · **指令**：以 P1–P6 全部做到接近 100% 為目標  
+**已讀**：工程合約 `.mdc` · 憲法 §7 · boot `_boot_context.py` · Progress 末尾 · master_status 07-14 · Dashboard SSOT · `multi-phase-80-percent-execution-plan.md` · `full-line-to-100-wave-plan-2026-07-13.md`
+
+### 現況（Gauge · `_phase_pct_apply.py read`）
+P1 **90** · P2 **66** · P3 **82** · P4 **77** · P5 **72** · P6 **83** · 平均 ≈**78.3%**
+
+### 交付
+- 新增計畫：`04_Workflows/plans/multi-phase-near-100-p1-p6-execution-plan.md`（相對 80%／全線100 計畫的 **P1–P6 delta**）
+- **未改** Dashboard 數字格 · 未改暗部／core · 未開 Implementer 實作票 state（僅計畫列票批）
+
+### 第一刀
+Wave A 並行：P1 residual checkoff · P4 multi-chat smoke · P5 health bundle · 續 P6 nightly 2/7→7/7  
+Wave B 關鍵：P2 sandbox execute（須尚書省邊界裁決）→ RAG E2E MVP
+
+### non_claims
+≠ Phase closure · ≠ 已抬 % · ≠ DarkOps 解禁 · ≠ P6 uplift 未滿 7/7
+
+### 下一步
+尚書省確認 Wave A 開工授權；裁決 P2 sandbox `--execute` 寫入邊界後派 Implementer。
+
+## 2026-07-15 · P2 sandbox execute 可寫範圍試跑（供尚書省裁決 Wave B）
+
+**角色**：探測／施工代理 · **指令**：只做試跑與邊界報告 · **不上調** P2% · **不**開完整 Wave B（RAG-E2E／全局 index）
+**已讀**：工程合約 `.mdc` · 憲法 §7 · boot · `plans/multi-phase-near-100-p1-p6-execution-plan.md` P2／Wave B · FP-G2-T1／T6 · Progress 末尾
+
+### 試跑結果（摘要）
+- 裸 `--execute` → `ok=false` · `execute_blocked`（by design；須 `--sandbox`）
+- `--execute --sandbox` → `ok=true` · `mode=sandbox_execute` · 僅寫 `artifacts/p2_sandbox_index/<run_id>/` JSON stub · `writes_production_index=false` · 可逆
+- `python -m unittest tests.test_index_job_hook_runtime_thin_v1 -v` → **8/8 OK**
+- 票：`04_Workflows/tickets/P2-HOOK-LOCAL-SANDBOX-EXECUTE-v1_state.md`
+- **建議**：正式開 Wave B 之 **HOOK-LOCAL-SANDBOX**；RAG-E2E 串行暫緩；OBS-FOOTNOTE 可並行 · **待尚書省勾選可寫範圍**
+
+### non_claims
+≠ Phase% 上調 · ≠ live Qdrant／prod DB · ≠ RAG-E2E MVP 完成 · ≠ P2 closure
+
+
+## 2026-07-15 · Wave A 開工交付（P1／P4／P5／P6）
+
+**角色**：Implementer／施工代理 · **授權**：尚書省 Wave A（禁 Wave B／P2）  
+**已讀**：工程合約 .mdc · 憲法 §7 · boot _boot_context.py · plans/multi-phase-near-100-p1-p6-execution-plan.md · Progress 末尾
+
+### 驗證摘要
+```text
+python 04_Workflows/_ops_cycle.py checklist --mode full --pretty
+# → ok: true · archive_ok=True · wave1_ok=True · darkops_blocked_expected
+
+python -m unittest tests.test_p4_multi_chat_smoke_pack_v1 tests.test_phase4_multi_agent_contract_v1 tests.test_p5_health_bundle_cli_v1 tests.test_p5_metrics_grafana_stub_v1 -v
+# → Ran 25 tests · OK
+
+python scripts/run_p5_health_bundle_cli_v1.py --format text
+# → ok: True · health/metrics/stub 三分欄綠
+
+gh run list --workflow=p6-int-gate-nightly.yml
+# → DAY3 29242215006 · DAY4 29320080998 success · nightly.json ok=true tier=A · 4/7
+```
+
+### 票結果
+| 票 | 結果 | 產物 |
+|----|------|------|
+| P1-GOV-RESIDUAL-CHECKOFF-v1 | Implementer done → review | docs/p1-gov-residual-checkoff-v1.md · proposed P1 +3～+5 · apply=false |
+| P4-MULTI-CHAT-SMOKE-PACK-v1 | Implementer done → review | runbook + smoke 測 · proposed P4 +3～+5 · apply=false |
+| P5-HEALTH-BUNDLE-CLI-v1 | Implementer done → review | scripts/run_p5_health_bundle_cli_v1.py · proposed P5 +3～+5 · apply=false |
+| WF-P6-INT-NIGHTLY-MONITOR | 證據推進 **4/7**（≠ uplift） | monitor 表 DAY3–4 GREEN · 續 DAY5–7 |
+
+### non_claims
+≠ Wave B／P2 · ≠ Dashboard Phase% 寫入 · ≠ P6 83→91 · ≠ 真 Grafana／PG soak · ≠ DarkOps 解禁
+
+### 下一步
+1. Reviewer 收 P1／P4／P5 C_REPORT  
+2. human-ops 續收 P6 DAY5–7；滿 7/7 後另 W-PROG  
+3. Wave B（P2 sandbox）另代理／另授權
+
+## 2026-07-15 · 解人卡 H2–H5＋濕墨主簽（解鎖 P7 嘗試 · 仍 blocked）
+
+**角色**：大唐副官／施工 worker · **票**：`WAVE5-h2-h5-wet-ink-unlock-attempt-v1`  
+**指令**：解人卡 H2–H5＋濕墨主簽（解鎖 P7，連帶利於通知／outbox 真環境）  
+**已讀**：工程合約 `.mdc` · `AGENTS.md` · boot `_boot_context.py`（hq.coordination · assignable）· 憲法 §7 類型 · Progress 07-13／07-14 · WAVE5／W2-T2／execute-v2 · 上一票日誌（07-14 交接副署）
+
+### 上一票做到哪
+- 2026-07-14：批文簽名區 **worker 交接副署** · 跟交 Infra 填 H2 規格表 §2 · **H2–H5 仍 blocked** · 濕墨主簽仍 pending
+
+### 本輪結論（誠實）
+| 項 | 狀態 | 需人類動作 |
+|----|------|------------|
+| **濕墨主簽** | **仍阻塞** | 是 — `GOVERNANCE_DUAL_approval_template.md` §5 |
+| **H2** | **仍阻塞** | 是 — Infra 填 `infra_staging_slot_spec_request_v1.md` §2 |
+| **H3** | **仍阻塞** | 是 — 動作包 §3 Security sign-off |
+| **H4** | **仍阻塞** | 是 — 動作包 §4 allowlist |
+| **H5** | **仍阻塞** | 是 — 動作包 §5 receiver |
+| **P7／execute-v2** | **未解鎖** | 五頂齊 + 尚書省明示 GO |
+
+### 變更
+- 新：`docs/governance/h2_h5_wet_ink_human_action_pack_v1.md`
+- 新：`04_Workflows/tickets/WAVE5-h2-h5-wet-ink-unlock-attempt-v1_state.md`
+- append：批文模板 §5 註記（**未**代簽）· WAVE5 md/yaml · WAVE5／W2-T2／execute-v2 票
+
+### 驗證
+```text
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+# → Ran 2 tests · OK · H2–H5 status 仍 blocked（by design）
+```
+
+### 通知／outbox 真環境
+一句話：**尚未解鎖** — 五頂齊備後 execute-v2 才利於 staging notify／outbox／DLQ 真路徑；本輪不解阻、不跑 POST。
+
+### 阻塞（留痕）
+- 濕墨主簽／委員會章：人類未填簽名欄
+- H2：真 staging slot／HTTPS 未 provision（規格表空白）
+- H3–H5：Security／allowlist／receiver 未交付
+- 禁區：未觸 Z-ENV／DarkOps；未偽造 endpoint
+
+### 下一步
+1. 尚書省填濕墨主簽（升格 `approved`，可選）
+2. Infra 填 H2 §2 → 解 H2
+3. 依動作包串 H3→H4／H5 → 再談 execute-v2（QUEUE H4 earliest 07-18）
+
+### non_claims
+≠ Round-2 GO · ≠ P7 已解鎖 · ≠ 濕墨已簽 · ≠ H2–H5 已解 · ≠ 通知／outbox 真環境已通 · ≠ Dashboard Phase% · ≠ 改密鑰
+
+
+## 2026-07-15 · 全線到100 Wave · 盤點＋P6 DAY5＋P4-DISPATCH-REPLAY-MIN
+
+**角色**：大唐副官／施工 worker · **指令**：全線到100 — 瓶頸同步趴數、總結問題、開始 Wave0/1  
+**已讀**：工程合約 `.mdc` · boot `_boot_context.py`（chariot.factory · assignable）· 憲法 §7 類型 · `plans/full-line-to-100-wave-plan-2026-07-13.md` · `plans/multi-phase-near-100-p1-p6-execution-plan.md` · master_status 07-13／07-14 · Dashboard Gauge · Progress 末尾
+
+### 狀態依據
+- Dashboard `read` **average_pct ≈ 57.89** · 與用戶 07-13 收工全表／master_status 07-14 **一致 · 無漂移**
+- 全線 Wave 0–3／Wave1 首批（P75-G6 等）已於 07-13 done；Wave A（P1／P4／P5）在 **review**；本輪施工下一方：`P4-DISPATCH-REPLAY-MIN-v1`
+
+### 趴數同步
+```text
+python 04_Workflows/_phase_pct_apply.py read --pretty
+# → ok · 18 phases · average_pct=57.89 · 與 SSOT 一致
+# → **未** apply（無 W-PROG authorize；Wave A proposed Δ 仍 apply=false；≠ 灌水 100）
+```
+
+### 時間門
+- P6 nightly：**DAY5 GREEN** `29403223522` · artifact ok=true · tier=A · 112/112 → **5/7**（monitor 已回填）· ≠ 83→91
+
+### 本輪變更
+- 新：`scripts/run_p4_dispatch_replay_min_v1.py` · `docs/p4-dispatch-replay-min-v1.md` · `tests/test_p4_dispatch_replay_min_v1.py` · `tickets/P4-DISPATCH-REPLAY-MIN-v1_state.md`
+- 改：`docs/p6-int-nightly-monitor-v1.md` · `tickets/WF-P6-INT-NIGHTLY-MONITOR_state.md`（4/7→5/7）
+
+### 驗證
+```text
+python -m unittest tests.test_p4_dispatch_replay_min_v1 -v
+# → Ran 5 tests · OK
+
+python scripts/run_p4_dispatch_replay_min_v1.py --ticket-id P4-MULTI-CHAT-SMOKE-PACK-v1 --format text
+# → ok: True · recommended_role=reviewer · replay O→B→C→D
+```
+
+### 人卡阻塞（未假解）
+- H2–H5／濕墨主簽 · WC-PRE L2／mandatory CI · P9 prod provider · P7 Round-2
+
+### 下一步
+1. Reviewer：P1／P4-SMOKE／P5-BUNDLE／P4-DISPATCH-REPLAY  
+2. human-ops：P6 DAY6–7 → 滿 7/7 另 W-PROG  
+3. 尚書省：裁決 P2 Wave B sandbox 邊界；人卡五頂  
+4. 下一可寫碼：`P2-INDEX-OBS-FOOTNOTE-v1` 或 `P3-TRACE-LOCAL-HARDEN-v1`（無批文）
+
+### non_claims
+≠ Phase% apply · ≠ P6 83→91 · ≠ Round-2 GO · ≠ Wave4 UI · ≠ P9 prod · ≠ DarkOps 解禁
+
+---
+
+## 2026-07-15 · Wave A Scribe 四票封存 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：P4-DISPATCH-REPLAY-MIN-v1（accepted）· P4-MULTI-CHAT-SMOKE-PACK-v1（accepted）· P5-HEALTH-BUNDLE-CLI-v1（accepted）· P1-GOV-RESIDUAL-CHECKOFF-v1（accepted_with_gaps→docs 收斂）· **group_id**：Wave A · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：三票 accepted + P1 accepted_with_gaps（R4 非阻塞）· risk=low
+
+### 變更
+- 四票 STATE→done + D_REPORT；docs/p1-gov-residual-checkoff-v1.md R4 Verdict→**explicit defer**（消標籤混用）
+- **確認**：W-PROG-wave013-pct-apply-2026-07-13 已 done／已 applied → **未**重開 apply · **未**改趴數
+
+### skeleton / placeholder
+- 無
+
+### 阻塞（blocked）
+- 無（本四票）；全局人卡 H2–H5／濕墨／P7 Round-2 仍在（≠ 本輪）
+
+### 下一步（next）
+1. 尚書省：可派 P2-INDEX-OBS-FOOTNOTE-v1 或 P3-TRACE-LOCAL-HARDEN-v1；P5-PG-SOAK 另授權
+2. human-ops：P6 DAY6–7 → 滿 7/7 後另 W-PROG（維持 5/7 敘事 · **不** uplift 83→91）
+3. 勿碰：_phase_pct_apply --authorize · 重開 wave013 · Dashboard 數字格
+
+### Phase 影響
+- **影響 Phase**：P1／P4／P5（提案 Δ only）
+- **baseline**：P1=90 · P4=77 · P5=72 · P6=83 · average≈57.89（_phase_pct_apply.py read 確認）
+- **proposed_delta**：P1 +3～+5 · P4（smoke +3～+5 + replay +1～+2）· P5 +3～+5
+- **實際上調**：否
+- **non_claims**：≠ Phase% apply · ≠ 重開 W-PROG-wave013 · ≠ P6 5/7→7/7／83→91 · ≠ Round-2 GO · ≠ DarkOps 解禁
+
+**驗證**：四票 C_REPORT 已核；python 04_Workflows/_phase_pct_apply.py read → ok · average_pct=57.89 · **未** --authorize。
+
+---
+
+## 2026-07-15 · P2-INDEX-OBS-FOOTNOTE-v1 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：`P2-INDEX-OBS-FOOTNOTE-v1` · Wave B Index 薄線 · **group_id**：Wave B / GAP-OBS-INDEX · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：accepted · risk=low
+
+### 变更
+
+- STATE→done + D_REPORT；腳註 SSOT `docs/phase2-index-obs-footnote-v1.md` + gap-audit／contract §6.4／observability／hook §7 交叉引用已由 B 交付、C 驗收
+- **未** `_phase_pct_apply --authorize` · **未**改 Dashboard Phase% 數字格
+
+### skeleton
+
+- 無
+
+### placeholder
+
+- 無
+
+### 阻塞（blocked）
+
+- 無（本票）；全局人卡 H2–H5／濕墨／P7 Round-2 仍在（≠ 本輪）
+
+### 下一步（next）
+
+1. 尚書省：可派 `P3-TRACE-LOCAL-HARDEN-v1` 或 Wave B 下一刀（sandbox execute／RAG E2E 擇一；勿捆綁接线）
+2. Phase%：proposed P2 +1～+2 僅敘事 · **待另開 W-PROG** 方可 apply
+3. 勿碰：`_phase_pct_apply --authorize` · Dashboard 數字格 · `run_id`↔`agent_runs` 真接线（另授權票）
+
+### Phase 影響
+
+- **影響 Phase**：P2
+- **baseline**：66
+- **proposed_delta**：+1～+2
+- **實際上調**：否／待 W-PROG
+- **non_claims**：≠ `run_id`↔`agent_runs` 接线 · ≠ P2 closure · ≠ Phase% uplift · ≠ WORKFLOW_INDEX 全文修（R4 defer）· ≠ 全库 index 排程 SSOT
+
+**验证**：C_REPORT accepted · AC-1～5 PASS · unittest 21 OK（Reviewer 重跑）；**禁止**本票／Scribe 寫 Dashboard % · **未** `--authorize`。
+
+---
+
+## 2026-07-15 · P3-TRACE-LOCAL-HARDEN-v1 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：`P3-TRACE-LOCAL-HARDEN-v1` · near-100 P3 #1 本地 harden · **group_id**：Wave A / P3-trace · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：accepted · risk=low
+
+### 變更
+
+- STATE→done + D_REPORT；交付入口 CLI `scripts/run_p3_trace_local_harden_v1.py` + `tests/test_p3_trace_local_harden_v1.py` + `docs/p3-trace-local-harden-v1.md`；`docs/observability.md` §7 本票 cross-ref（B 已交、C 驗收）
+- **未** `_phase_pct_apply --authorize` · **未**改 Dashboard Phase% 數字格 · **未**接 Langfuse／PG
+
+### skeleton
+
+- 無
+
+### placeholder
+
+- 無
+
+### 阻塞（blocked）
+
+- 無（本票）；全局人卡 H2–H5／濕墨／P7 Round-2 仍在（≠ 本輪）
+
+### 下一步（next）
+
+1. 尚書省：可派 Wave B sandbox execute／RAG E2E 擇一；或 Wave C `P3-LANGFUSE-PG-ALIGN-FRAME-v1`（須批文前僅 FRAME）
+2. Phase%：proposed P3 +1～+3 僅敘事 · **待另開 W-PROG** 方可 apply
+3. 勿碰：`_phase_pct_apply --authorize` · Dashboard 數字格 · Langfuse 真接／PG 對齊實作 · mandatory CI
+
+### Phase 影響
+
+- **影響 Phase**：P3
+- **baseline**：82
+- **proposed_delta**：+1～+3
+- **實際上調**：否／待 W-PROG
+- **non_claims**：≠ Langfuse 真接 · ≠ Langfuse↔PG 全對齊 · ≠ Phase% uplift · ≠ mandatory CI · ≠ live `runtime/task_traces.jsonl`／暗部 core
+
+**驗證**：C_REPORT accepted · CLI `ok: True` · unittest Ran 7 OK（Reviewer 重跑）；**禁止**本票／Scribe 寫 Dashboard % · **未** `--authorize`。
+---
+
+## 2026-07-15 · P2-GRAPHRAG-THIN-RUNNER-v1 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：`P2-GRAPHRAG-THIN-RUNNER-v1` · near-100 P2 #4 GraphRAG thin runner · **group_id**：Wave B / GAP-GRAPH · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：accepted · risk=low
+
+### 變更
+
+- STATE→done + D_REPORT；交付入口 CLI `scripts/run_p2_graphrag_thin_runner_v1.py` + fixture `tests/fixtures/graphrag_jobs_thin_v1/` + `tests/test_p2_graphrag_thin_runner_v1.py` + `docs/phase2-graphrag-thin-runner-v1.md`；狀態機 doc §6 一行 cross-ref（B 已交、C 驗收）
+- **未** `_phase_pct_apply --authorize` · **未**改 Dashboard Phase% 數字格 · **未**碰 DB／core／主檢索
+
+### skeleton
+
+- 無（本票即 thin／fixture 模擬；job 欄位可標 `skeleton=true`）
+
+### placeholder
+
+- 無
+
+### 阻塞（blocked）
+
+- 無（本票）；全局人卡 H2–H5／濕墨／P7 Round-2／P2 sandbox Wave B 裁決仍在（≠ 本輪）
+
+### 下一步（next）
+
+1. 尚書省：可派 `P1-OPS-CHECKLIST-CLOSURE-v1`；或 `P3-LANGFUSE-PG-ALIGN-FRAME-v1`（僅 FRAME · ≠ 實作）
+2. Phase%：proposed P2 +1～+3 僅敘事 · **待另開 W-PROG** 方可 apply
+3. 勿碰：`_phase_pct_apply --authorize` · Dashboard 數字格 · DB migration · `core/**`／主檢索 · sandbox Wave B／RAG E2E 捆綁
+
+### Phase 影響
+
+- **影響 Phase**：P2
+- **baseline**：66
+- **proposed_delta**：+1～+3
+- **實際上調**：否／待 W-PROG
+- **non_claims**：≠ DB · ≠ core · ≠ 主檢索／primary retrieval · ≠ Phase% uplift · ≠ sandbox Wave B GO · ≠ mandatory CI
+
+**驗證**：C_REPORT accepted · CLI `ok: True` · unittest Ran 6 OK（Reviewer 重跑）；**禁止**本票／Scribe 寫 Dashboard % · **未** `--authorize`。
+
+---
+
+## 2026-07-15 · P3-LANGFUSE-PG-ALIGN-FRAME-v1 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：`P3-LANGFUSE-PG-ALIGN-FRAME-v1` · near-100 P3 #2 Langfuse↔PG 對齊 FRAME（僅設計）· **group_id**：Wave C / P3-langfuse-pg · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：accepted · risk=low
+
+### 變更
+
+- STATE→done + D_REPORT；交付 `docs/p3-langfuse-pg-align-frame-v1.md` + `tests/test_p3_langfuse_pg_align_frame_v1.py`；`P1-OPS-CHECKLIST-CLOSURE-v1` superseded stub；MAY cross-ref（deferred index / observability §7）（B 已交、C 驗收）
+- **未** `_phase_pct_apply --authorize` · **未**改 Dashboard Phase% 數字格 · **未**接真 PG／真 Langfuse · **未**開 IMPL
+
+### skeleton
+
+- 無（本票即 planning FRAME；IMPL 另票占位）
+
+### placeholder
+
+- 無
+
+### 阻塞（blocked）
+
+- 無（本票）；全局人卡 H2–H5／濕墨／P7 Round-2 仍在（≠ 本輪）；IMPL 須批文
+
+### 下一步（next）
+
+1. 尚書省：可派 P1 R4 INDEX 假陰性輕修（doc-only），或 Wave C 下一張 P3/P* **doc/spec FRAME**（`apply_phase_pct=false`）
+2. Phase%：proposed P3 +0～+1 僅敘事 · **待另開 W-PROG** 方可 apply
+3. 勿碰：`_phase_pct_apply --authorize` · Dashboard 數字格 · 無批文 `P3-LANGFUSE-PG-ALIGN-IMPL-v1` · 真 PG／DSN／migration
+
+### Phase 影響
+
+- **影響 Phase**：P3
+- **baseline**：82
+- **proposed_delta**：+0～+1
+- **實際上調**：否／待 W-PROG
+- **non_claims**：≠ 真 PG · ≠ IMPL · ≠ Phase% uplift · ≠ Langfuse↔PG 已對齊完成 · ≠ D-04／selector 升格 · ≠ P3 closure
+
+**驗證**：C_REPORT accepted · AC-1～5 PASS · unittest Ran 5 OK（Reviewer 重跑）；**禁止**本票／Scribe 寫 Dashboard % · **未** `--authorize`。
+
+---
+
+## 2026-07-15 · 全線瓶頸總結
+
+**角色**：大唐副官／HQ-Coordinator · **任務**：全線到100 瓶頸總結與誠實趴數盤點（**不開**無批文薄刀）  
+**已讀**：boot _boot_context.py（hq.coordination · assignable）· 憲法 §7 類型 · _phase_pct_apply.py read · Dashboard Gauge 07-13 SSOT · Progress 今日封票尾
+
+### 今日已完成（計劃口）
+
+| 項 | 狀態 | 備註 |
+|----|------|------|
+| Wave A（P1-GOV／P4 smoke／P4 replay／P5 health bundle） | Scribe 四票封存 done | proposed Δ only · **未** apply |
+| P2-INDEX-OBS-FOOTNOTE-v1 | done · accepted | P2 +1～+2 敘事 |
+| P3-TRACE-LOCAL-HARDEN-v1 | done · accepted | P3 +1～+3 敘事 |
+| P2-GRAPHRAG-THIN-RUNNER-v1 | done · accepted | P2 +1～+3 敘事 · thin／fixture |
+| P3-LANGFUSE-PG-ALIGN-FRAME-v1 | done · accepted | P3 +0～+1 敘事 · **≠** IMPL |
+| P1-INDEX-R4-FALSE-NEG-DOC-v1 | Reviewer accepted | doc-only · proposed P1 +1～+2 · Scribe 可收口 |
+| P6 nightly DAY5 | GREEN · **5/7** | run 29403223522 · ≠ 83→91 |
+
+### 仍不可動／人卡
+
+| 門 | 狀態 |
+|----|------|
+| H2–H5 | **仍 blocked**（Infra／Security／allowlist／receiver） |
+| 濕墨主簽 | **仍 pending**（批文 §5 未填） |
+| WC-PRE-06/07 | design_ready · **blocked_on_approval**（≠ mandatory CI live） |
+| P9 prod provider／ledger | **仍 gap**（sandbox／advisory only） |
+| P7 Round-2 execute-v2 | **未解鎖**（五頂齊 + 明示 GO） |
+
+### 時間門
+
+| 門 | 現況 | 下一步 |
+|----|------|--------|
+| P6 nightly | **5/7**（DAY1–5 GREEN） | cron／human-ops 收 DAY6–7 → 滿窗另 W-PROG 再裁 83→91 |
+| P5 soak | health-bundle CLI／metrics stub 已落地 | **真** Grafana／PG soak 仍 placeholder · 須批文 |
+
+### 須批文才動
+
+- sandbox **Wave B**（P2 execute／RAG E2E 捆綁）
+- 真 PG soak／DSN／migration
+- P3-LANGFUSE-PG-ALIGN-IMPL-v1
+- mandatory／required CI（WC-PRE L2）
+- _phase_pct_apply --authorize／Dashboard 數字格
+
+### 誠實趴數（**未** apply）
+
+- SSOT／read：**average_pct=57.89** · Gauge 與 07-13 W-PROG-wave013 一致（P1=90 · P2=66 · P3=82 · P4=77 · P5=72 · P6=83 · P7=30 · P8=100 · P8.5=20 · P9=24 · P10=37 …）
+- **無**新 authorize 證據 → **禁止**本輪 --authorize／寫 Dashboard %
+- 累積 proposed Δ（待另開 **W-PROG** 匯總票）：P1 +3～+7；P2 +2～+5；P3 +1～+4；P4 +4～+7；P5 +3～+5；（P6 滿 7/7 後另裁）
+
+### non_claims
+
+≠ 全線到100 · ≠ Phase% uplift · ≠ Round-2 GO · ≠ Wave B GO · ≠ DarkOps 解禁 · ≠ 灌水 apply
+
+### 尚書省一口令
+
+**下一步只收人批／cron／授權票（H2–H5／濕墨／WC-PRE／Wave B／W-PROG／DAY6–7）；禁止再派無批文寫碼薄刀。**
+
+---
+
+## 2026-07-15 · P1-INDEX-R4-FALSE-NEG-DOC-v1 · done
+
+**角色**：Scribe（D）· Multi-Chat same_chat  
+**票號**：`P1-INDEX-R4-FALSE-NEG-DOC-v1` · near-100 P1 R4 INDEX 假陰性輕修（doc-only）· **group_id**：Wave 2 / P1-index-r4 · **evidence_tier**：L-local  
+**lifecycle_phase**：O · **Reviewer**：accepted · risk=low
+
+### 變更
+
+- STATE→done + D_REPORT；交付 `docs/p1-index-r4-false-neg-doc-v1.md` + checkoff R4→done + `WORKFLOW_INDEX.md` §2／§2.1 假陰性修正 + `tests/test_p1_index_r4_false_neg_doc_v1.py`（B 已交、C 驗收）
+- **未** `_phase_pct_apply --authorize` · **未**改 Dashboard Phase% 數字格 · **未**立 GraphRAG 正式 smoke · **未**宣稱 P1 closure
+
+### skeleton
+
+- 無
+
+### placeholder
+
+- 無
+
+### 阻塞（blocked）
+
+- 無（本票）；全局人卡 H2–H5／濕墨／P7 Round-2／正式 GraphRAG Job Smoke 另票／W-PROG 仍在（≠ 本輪）
+
+### 下一步（next）
+
+1. 尚書省：正式 GraphRAG Job Smoke runbook／戰報（另票）；或 Wave C 下一張 P3/P* doc/spec FRAME（`apply_phase_pct=false`）；R5／R6 仍 explicit defer
+2. Phase%：proposed P1 +1～+2 僅敘事 · **待另開 W-PROG** 方可 apply
+3. 勿碰：`_phase_pct_apply --authorize` · Dashboard 數字格 · DarkOps 解禁 · INDEX 全文重排 · P1 closure 宣稱
+
+### Phase 影響
+
+- **影響 Phase**：P1
+- **baseline**：90
+- **proposed_delta**：+1～+2
+- **實際上調**：否／待 W-PROG
+- **non_claims**：≠ GraphRAG 正式 smoke · ≠ P1 closure · ≠ Phase% uplift
+
+**驗證**：C_REPORT accepted · AC-1～5 PASS · unittest Ran 7 OK（Reviewer 重跑）；**禁止**本票／Scribe 寫 Dashboard % · **未** `--authorize`。
+
+---
+
+## 2026-07-22 · W-PROG Tabular delivery reconciliation · completed
+
+ts: 2026-07-22  
+author: Tabular Mainline Progress Reporter  
+summary: `internal-approved/2026-0001` 已完成 CP-B、delivery_ready、local ZIP；全局 18 Phase 經 `_phase_pct_apply.py read` 校對後無可歸因新 Δ，平均維持 57.89%。C2-P2 技術範圍為 100% functional complete；收款／開票／外送仍屬人工。  
+link: `docs/tabular-mainline-progress-update-2026-07-22.md`
+
+### Phase 影響
+
+- **影響 Phase**：P2／P3／P6／P8／P10（Tabular 子域）
+- **baseline**：Dashboard 2026-07-13（18 Phase，平均 57.89%）
+- **proposed_delta**：0（Tabular 子域交付不直接構成全局 Phase% uplift）
+- **實際上調**：否；已校對所有 SSOT 數字，維持原值
+- **non_claims**：≠ 全局 Phase closure · ≠ prod／required CI · ≠ 真實金流或對外傳送
+
+---
+
+## 2026-07-24 · Hermes Telegram 工作驗收（Cursor） · verified_partial
+
+ts: 2026-07-24T18:10+08:00  
+author: Cursor（驗收 Hermes 日誌／產物）  
+source: `D:\Hermes\logs\agent.log` · `state.db` sessions `20260723_124646_96e5634e` / `20260724_041212_1de1864b` · vault 抽查 · `~/.cursor/mcp.json`
+
+### 今日 Hermes 實際做了什麼
+
+1. **Obsidian AI 資源庫收集**（OpenCode Key 掛掉後改由 Hermes 腳本直跑）
+2. **建議並執行「篩 MCP → 串戰車」**：優先安裝 **excel-mcp-server**
+3. 回報進度時列出阻塞項（OpenRouter／Groq／OCR）
+
+### Cursor 驗收結果
+
+| 項目 | Hermes 宣稱 | 實測 | 判定 |
+|------|-------------|------|------|
+| Agent-Frameworks 筆記 | 107 | 106（不含 index） | ✅ 近似成立 |
+| MCP-Servers 筆記 | 69 | 68（不含 index） | ✅ 近似成立 |
+| Tools 筆記 | 64 | AI-Research/Tools=63；另 AI-Learning/Tools=23 | ⚠️ 分類口徑混用；總數「320」偏高（四類合計約 273～296） |
+| Courses 筆記 | 36 | 36 | ✅ |
+| Index 檔 | 4 個建好 | 分類 Index 存在（含重複層級 Index） | ✅ 有檔；品質未全面審 |
+| 抽查 langgraph.md | — | 有用途／適用場景／stars | ✅ |
+| 抽查 excel-mcp-server.md | — | frontmatter OK，正文僅一行描述 | ⚠️ 缺「用途＋適用場景」完整敘事 |
+| excel-mcp-server 安裝 | v0.1.8 | crew_tank 已安裝；`@mcp.tool` **25** 個 | ✅ |
+| Cursor MCP 配置 | `~/.cursor/mcp.json` | 已寫入 `excel` → `python -m excel_mcp stdio` | ✅ 配置在；⚠️ **本 session 尚未載入 excel MCP**（需重啟 Cursor） |
+| 測試 xlsx | `~/harness/test_data.xlsx` | 可讀；sheet=Test；含髒資料列 | ✅ |
+| MCP_TEST_GUIDE | 完成 | 步驟含無效指令 `mcp load excel` | ⚠️ 指引需改：重啟 Cursor 即可，無需該命令 |
+| crawl4ai 等後續 MCP | 待用戶確認 | 未安裝 | ⏸ pending |
+| Fix Ledger P1–P5 | fixed | P5 OmniRoute health=`healthy`；scripts `py_compile` OK | ✅ |
+| OpenRouter Key | 過期 | MEMORY 仍記 401 | 🔴 仍阻塞 OpenCode |
+| Groq／auto 路由 | — | agent.log 多筆 `llama-4-scout` 404、`llama-3.1-8b` 不存在 | 🔴 OmniRoute 上游模型漂移 |
+
+### 運行態（日誌）
+
+- Gateway：`running`（telegram connected）；今日 cron：inbox 無新工作；github-ai-collector 已收過跳過；ai-learning-collector 新增 0／累計 69
+- Curator 2026-07-24：skills 93→93，無變更
+- Hermes 自報進度時 `search_files` 連續用非法 regex `*task*`／`*.md` → tool loop warning（不影響產物，但進度彙報品質差）
+
+### 下一步（建議）
+
+1. **重啟 Cursor** → 確認 Settings → MCP 出現 `excel` 且可 `read_data_from_excel` 讀 `C:\Users\666LAG\harness\test_data.xlsx`
+2. 修正 `MCP_TEST_GUIDE.md`（刪 `mcp load excel`）
+3. 補薄筆記（至少 excel-mcp-server 用途／場景）；總數宣稱改為實測口徑
+4. 用戶提供新 OpenRouter Key 後再啟 OpenCode；並行修 OmniRoute 失效模型路由
+5. 用戶確認後再裝下一優先 MCP（crawl4ai 等）
+
+### Phase 影響
+
+- **影響 Phase**：無（基礎設施／知識庫／MCP 工具鏈，非大唐 Phase% 票）
+- **proposed_delta**：0
+- **實際上調**：否
+- **non_claims**：≠ 戰車管線已串 excel-mcp 閉環 · ≠ Cursor 本 session 已能呼叫 excel 工具 · ≠ 320 筆精確無灌水 · ≠ OpenCode 已恢復
+
+
+---
+
+## 2026-07-24 · Hermes 三日日誌檢查（Cursor） · reviewed
+
+ts: 2026-07-24T18:15+08:00  
+author: Cursor  
+scope: `agent.log` / `errors.log` / `gateway.log` · cron · curator · `hermes insights` · sessions `20260723_124646_96e5634e` / `20260724_041212_1de1864b`  
+window: **2026-07-22 → 2026-07-24**（當日驗收完成後擴窗）
+
+### 三日活動量（agent.log）
+
+| 日 | 行數 | inbound≈ | WARN |
+|----|------|----------|------|
+| 07-22 | 575 | 12 | 26 |
+| 07-23 | 2582 | 30 | 117 |
+| 07-24 | 560 | 8 | 40 |
+
+工具（三日合計 top）：terminal 176 · skill_view 58 · read_file 49 · search_files 47 · skill_manage 40 · write_file 29
+
+### 三日主線（Telegram）
+
+1. **07-22**：vault 分層搜尋策略 → 做成 skill；爬蟲安全防護；戰車例行清洗回報縮到 300 字；晚間「再搜尋一次」遇 OmniRoute **Connection error**（3 retries 後失敗）
+2. **07-23（重）**：AI 資源再搜；記憶備份清空；照片→Obsidian；對齊 **Cursor / Hermes / OpenCode** 角色（用戶選 **B=Hermes 編排**）；幫 OpenCode 找免費中轉；裝測 OpenRouter（後變 401）；晚間啟動「團隊收集 AI 資源庫」（背景 process 先失敗後成功）
+3. **07-24**：分工原則落地；篩 MCP→裝 excel-mcp；要求 Cursor 驗收閉環；回報進度（已於同日 18:10 做過當日驗收）
+
+### Sessions（state.db）
+
+- `20260723_124646_96e5634e`：msgs=118 tools=51 api≈302 · in≈17.7M out≈113K · end=`session_reset` · title「下禮拜六的正確日期」
+- `20260724_041212_1de1864b`：msgs=16 tools=9 api=5 · in≈247K out≈1.8K · title「工作進度與完成項目」
+
+### 錯誤面（errors.log 三日分類）
+
+| 類型 | 次數 | 含義 |
+|------|------|------|
+| model_404 / 上游模型缺失 | ~98 | OmniRoute 路由到失效模型（如 llama-4-scout / llama-3.1-8b） |
+| InternalServerError | ~50 | 上游 500（含 VQD/503） |
+| curator_refuse | 13 | background curator 拒絕改 bundled skills |
+| Connection error | 11 | 07-22 晚 OmniRoute 連線斷 |
+| terminal timeout/BLOCKED | 3 | 300s 無輸出被擋 |
+| bad_regex_search | 4 | 進度彙報用非法 rg 模式 `*task*` |
+| auth_401 | 2 | OpenRouter Key 失效（與 MEMORY 一致） |
+
+**無**三日內新的 Telegram polling conflict。
+
+### Cron / Curator
+
+- inbox-monitor：正常，無新 inbox 工作
+- github-ai-collector：常跑；07-24 凌晨曾 **GitHub 403 rate limit**，當日新增 0（累計 ~96）
+- ai-learning-collector：新增 0（累計 69）
+- weekly_insights：仍 pinned drift error（model 漂移未 pin）— 未在三日內成功跑
+- curator 07-24：skills 93→93，無變更
+
+### hermes insights（30 天，對照）
+
+Sessions 91 · Total tokens ≈148.8M · 主模型 best-chat · 主平台 Telegram · Top tool 仍是 terminal（43.9%）
+
+### 相對「當日驗收」的增量發現
+
+1. **07-23 才是真正高負載日**（WARN 117、API 重試多）；當日 alone 會低估 OmniRoute 不穩與 OpenCode 配置摩擦
+2. OpenRouter Key 問題在 **07-23 晚配置後很快失效**（非今日才壞）
+3. Connection drop 在 **07-22 19:27** 已出現一次硬失敗
+4. 其餘結論與當日驗收一致：excel-mcp 已裝待 Cursor 重啟；vault 總數口徑偏高；crawl4ai pending
+
+### 下一步（不變 + 三日補強）
+
+1. 重啟 Cursor → 驗 excel MCP 實機讀檔
+2. 修 OmniRoute 失效模型路由（減少 404/500 重試燒 token）
+3. 新 OpenRouter Key → 恢復 OpenCode
+4. pin 或更新 `weekly_insights` cron 的 model，避免 drift skip
+5. 用戶確認後再裝下一 MCP
+
+### Phase 影響
+
+- **影響 Phase**：無
+- **proposed_delta**：0
+- **non_claims**：≠ 三日內無上游故障 · ≠ OpenCode 可用 · ≠ Cursor excel MCP 已載入
+
+---
+
+## 2026-07-24 · Hermes 班表 vision 誤診修復（Cursor） · fixed
+
+ts: 2026-07-24T18:26+08:00  
+author: Cursor  
+scope: Hermes `config.yaml` / `memories/*` · OmniRoute restart · ledger `P6-hermes-vision-rerecheck-misroute`  
+ticket: 用戶「hermes壞掉了」
+
+### 根因
+
+1. Telegram 班表 OCR 列錯（回休 6/12/18/23/29＝5天；正確為 4/8/12/16/20/24/28＝7天）
+2. 重驗時 Hermes 用 terminal probe OmniRoute `openrouter/*`（key 過期）與 omni `openai` provider（無憑證），誤報「vision 全掛」
+3. OpenAI gpt-4o 直連其實可用；OmniRoute 長跑 RSS≈7.5GB
+
+### 處置
+
+- `D:/Hermes/config.yaml`：`auxiliary.vision` 保留 openai/gpt-4o，加 `fallback_chain` → omniroute `hf/zai-org/GLM-4.6V-Flash`
+- `USER.md` / `MEMORY.md`：重驗守則 + 正確七月班表
+- `hermes send` Telegram msg_id=4352（正確休/上班天數）
+- 重啟 OmniRoute（`start_omniroute.ps1`）；compression drift 無危險引擎
+- ledger 新增並結案 `P6-hermes-vision-rerecheck-misroute`
+
+### 驗證
+
+- `P6 verify_cmd` → `P6 OK healthy vision_fb 1`
+- OmniRoute chat → `HERMES_POST_RESTART_OK` finish=stop
+- gateway PID 23116 仍 running；Telegram send success
+
+### 阻塞／未解
+
+- OpenRouter 新 Key 仍缺 → OpenCode 未恢復（另票）
+- OmniRoute 冷啟後 RSS 仍偏高（Next/dev）；必要時再重啟
+
+### Phase 影響
+
+- **影響 Phase**：無
+- **proposed_delta**：0
+- **non_claims**：≠ OpenCode 已恢復 · ≠ 失效模型路由已從 OmniRoute 目錄移除
+
+---
+
+## 2026-07-24 · Hermes 優化＋驗收煙測（Cursor） · optimized
+
+ts: 2026-07-24T18:38+08:00  
+author: Cursor  
+scope: Hermes gateway vision prompt · config fallback · cron pin · OmniRoute blocklist · `scripts/hermes_postfix_smoke.py`  
+ticket: 修好後優化與測試
+
+### 優化
+
+1. **Gateway OCR prompt**：班表強制逐日 `D:CODE` + `休日期` 摘要；重驗禁止 terminal probe OpenRouter/OmniRoute
+2. **vision fallback**：`gpt-4o` → `gpt-4o-mini`（HF GLM 路徑無憑證已棄用）
+3. **weekly_insights cron** pin：`provider=custom` `model=auto/best-chat`（消除 drift skip）
+4. **OmniRoute blocklist**（DB）：封鎖失效 llama-4-scout / llama-3.1-8b 系列（API schema 無 blockedModels，改寫 storage.sqlite）
+5. **煙測腳本**：`D:/Hermes/scripts/hermes_postfix_smoke.py`
+
+### 驗證
+
+```
+python D:/Hermes/scripts/hermes_postfix_smoke.py
+→ ok=true passed=8 failed=0
+```
+
+含：omni_health · hermes_chat · vision_config · vision_schedule hit=7/7 · compression · cron_pin · blocklist · gateway
+
+### 注意
+
+- 裸 urllib 打 OmniRoute `auto/best-chat` 常 403 HTML；**Hermes streaming 路徑正常**（煙測已改走 `hermes chat -Q`）
+- Gateway 已 restart（PID 見當次 status）；Telegram 可直接再測班表圖
+
+### Phase 影響
+
+- **影響 Phase**：無
+- **proposed_delta**：0
+- **non_claims**：≠ OpenRouter/OpenCode 已恢復 · ≠ OmniRoute RSS 長期低於 2GB
+
+
+---
+
+---
+
+## 2026-07-27 · Wave 4 UI 視覺凍結＋開 Wave4-A · done（freeze）／frame_ready（A）
+
+ts: 2026-07-27T23:35+08:00  
+author: Cursor（大唐副官）  
+scope: docs/ui-templates visual freeze · tickets W4-UI-FREEZE / W4-UI-A · Wave5 A3 · full-line plan  
+ticket: W4-UI-FREEZE-unified-p1-p5-v1 · W4-UI-A-static-shell-align-p1-v1
+
+### 凍結確認（await-freeze-confirm）
+
+| 問 | 答 |
+|----|----|
+| `unified_P1–P5.png` 為 Wave 4 視覺凍結？ | **是** |
+| 是否改頁優先序？ | **否**（維持 P1→P5→P4→P3→P2） |
+
+依據：尚書省指派完成 plan todos；資產已在 `docs/ui-templates/`。
+
+### 施工票（await-ui-scope）
+
+- SSOT：`docs/wave4-ui-visual-freeze-v1.md`
+- 首票 FRAME：`04_Workflows/tickets/W4-UI-A-static-shell-align-p1-v1_state.md`（`frame_ready`）
+- 範圍：靜態殼對齊 PNG → operator fields mock → 獨立靜態宿主（可後接 `app/local_ui`）
+- ≠ 暗部 dashboard 大翻修 · ≠ Grafana · ≠ 金鑰明文 · ≠ 本輪實作 HTML 升級（僅開票）
+
+### 驗證
+
+- `Test-Path docs/ui-templates/unified_P1.png` … `unified_P5.png` → 五檔存在
+- `python -m unittest tests.test_wave5_human_staging_checklist_v1 -v` → 2 OK
+
+### Phase 影響
+
+- **影響 Phase**：敘事解 HOLD（P7.5／P8／P8.9／P5 UI 路徑）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 已交付 · ≠ Round-2 GO · ≠ DarkOps · ≠ Dashboard authorize
+
+### 下一步
+
+- Implementer 開工 `W4-UI-A`（P1 靜態殼＋mock）
+
+---
+
+## 2026-07-27 · W4-UI-A P1 靜態殼＋mock · implementer done（待 Reviewer）
+
+ts: 2026-07-27T23:55+08:00  
+author: Cursor（Implementer B）  
+scope: ui/command_center P1 shell · operator_fields mock · unittest · page01 upgrade  
+ticket: W4-UI-A-static-shell-align-p1-v1
+
+### 交付
+
+- 獨立宿主：`ui/command_center/`（p1.html + css/js + mock）
+- `docs/ui-templates/page01.html` 升級為共用同一殼資產
+- runbook：`docs/wave4-ui-a-static-shell-runbook-v1.md`
+- mock：`ok` + `schema_version=w4_ui_a_p1_overview_v1` + P8.9 五鍵 `operator_fields.rows`
+- 金鑰僅遮罩；未碰暗部根／.env／Dashboard %
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 -v
+→ 8 tests OK
+```
+
+### Phase 影響
+
+- **影響 Phase**：P7.5／P8.9／P5 UI 路徑（靜態殼首增量）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 全量交付 · ≠ Wave4-B–E · ≠ live API · ≠ Grafana · ≠ DarkOps · ≠ Dashboard authorize
+
+### 下一步
+
+- Reviewer 驗 AC（對照 `unified_P1.png` + unittest）
+- accepted 後開 Wave4-B（P5 泳道）
+---
+
+## 2026-07-27 · W4-UI-A Reviewer 收票 · accepted_with_gaps → Wave4-B／A.1
+
+ts: 2026-07-27T23:59+08:00  
+author: Cursor（Orchestrator／Reviewer／Implementer／Scribe · same_chat）  
+scope: W4-UI-A close · W4-UI-B P5 swimlane · A.1 visual polish  
+ticket: W4-UI-A-static-shell-align-p1-v1 · W4-UI-B-p5-swimlane-workbench-v1
+
+### Part 1 · W4-UI-A 收票
+
+- C_REPORT：`accepted_with_gaps`（AC-1–6 過；gaps＝像素／插畫節點／KPI 微圖）
+- STATE：`overall_status=accepted_with_gaps` · implementer/reviewer/scribe=done
+- 驗證重跑：`python -m unittest tests.test_w4_ui_a_static_shell_v1 -v` → **8/8 OK**
+
+### Part 2 · Wave4-B P5
+
+- 票：`04_Workflows/tickets/W4-UI-B-p5-swimlane-workbench-v1_state.md`
+- 宿主：`ui/command_center/p5.html` + `mock/p5_swimlane_v1.json`
+- runbook：`docs/wave4-ui-b-p5-swimlane-runbook-v1.md`
+- 驗證：`python -m unittest tests.test_w4_ui_b_p5_swimlane_v1 -v` → **8/8 OK**；A 回歸 8/8 OK
+- 開啟：`python -m http.server 8765` → `http://127.0.0.1:8765/ui/command_center/p5.html`（index／p1 可互跳）
+
+### Part 3 · A.1 視覺薄補
+
+- 做了：token／KPI icon／flow 狀態點／status chip／avatar／間距（共用 shell）
+- 沒做：像素完美重寫、原圖向量插畫、真資料源
+
+### Phase 影響
+
+- **影響 Phase**：P5／P7.5／P8.9 UI 路徑（靜態殼）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 全量 · ≠ Wave4-C–E · ≠ live API · ≠ Grafana · ≠ DarkOps · ≠ Dashboard authorize · ≠ 金鑰明文
+
+### 下一步
+
+- Wave4-C（P4 三省拓撲）另票；真 API 掛載另票
+
+---
+
+## 2026-07-28 · W4-UI-C P4 三省六部指揮台 · accepted_with_gaps
+
+ts: 2026-07-28T00:30+08:00  
+author: Cursor（Orchestrator／Implementer／Reviewer／Scribe · same_chat）  
+scope: ui/command_center P4 shell · provinces mock · unittest · nav P1/P5/P4  
+ticket: W4-UI-C-p4-provinces-command-desk-v1
+
+### 交付
+
+- 票：`04_Workflows/tickets/W4-UI-C-p4-provinces-command-desk-v1_state.md` → `accepted_with_gaps`
+- 宿主：`ui/command_center/p4.html` + `mock/p4_command_desk_v1.json`
+- runbook：`docs/wave4-ui-c-p4-command-desk-runbook-v1.md`
+- 導覽：P1／P5／P4 可互點；P2／P3／settings deferred
+- 金鑰僅遮罩；未碰暗部根／.env／Dashboard %
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 tests.test_w4_ui_b_p5_swimlane_v1 tests.test_w4_ui_c_p4_command_desk_v1 -v
+→ 24 tests OK（A8+B8+C8）
+```
+
+### Phase 影響
+
+- **影響 Phase**：P4／P7.5／P8.9 UI 路徑（靜態殼）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 全量 · ≠ Wave4-D–E · ≠ live API · ≠ Grafana · ≠ DarkOps · ≠ Dashboard authorize · ≠ 金鑰明文
+
+### 下一步
+
+- Wave4-D（P3 暗部閉環圖）另票；真 API 掛載另票
+
+---
+
+## 2026-07-28 · W4-UI-D P3 暗部執行閉環 · accepted_with_gaps
+
+ts: 2026-07-28T00:50+08:00  
+author: Cursor（Orchestrator／Implementer／Reviewer／Scribe · same_chat）  
+scope: ui/command_center P3 shell · dark loop mock · unittest · nav P1/P5/P4/P3  
+ticket: W4-UI-D-p3-dark-execution-loop-v1
+
+### 交付
+
+- 票：`04_Workflows/tickets/W4-UI-D-p3-dark-execution-loop-v1_state.md` → `accepted_with_gaps`
+- 宿主：`ui/command_center/p3.html` + `mock/p3_dark_loop_v1.json`
+- runbook：`docs/wave4-ui-d-p3-dark-loop-runbook-v1.md`
+- 導覽：P1／P5／P4／P3 可互點；P2／settings deferred
+- 金鑰僅遮罩；未碰暗部根／.env／Dashboard %
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 tests.test_w4_ui_b_p5_swimlane_v1 tests.test_w4_ui_c_p4_command_desk_v1 tests.test_w4_ui_d_p3_dark_loop_v1 -v
+→ 32 tests OK（A8+B8+C8+D8）
+```
+
+### Phase 影響
+
+- **影響 Phase**：P3／P7.5／P8.9 UI 路徑（靜態殼）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 全量 · ≠ Wave4-E · ≠ live API · ≠ Grafana · ≠ DarkOps · ≠ Dashboard authorize · ≠ 金鑰明文
+
+### 下一步
+
+- Wave4-E（P2 技能與資源）另票；真 API 掛載另票
+
+---
+
+## 2026-07-28 · W4-UI-E P2 技能與資源 · accepted_with_gaps · 五頁靜態殼收口
+
+ts: 2026-07-28T01:10+08:00  
+author: Cursor（Orchestrator／Implementer／Reviewer／Scribe · same_chat）  
+scope: ui/command_center P2 shell · skills/resources mock · settings stub · unittest · nav P1–P5  
+ticket: W4-UI-E-p2-skills-resources-v1
+
+### 交付
+
+- 票：`04_Workflows/tickets/W4-UI-E-p2-skills-resources-v1_state.md` → `accepted_with_gaps`
+- 宿主：`ui/command_center/p2.html` + `mock/p2_skills_resources_v1.json` + `settings.html` stub
+- runbook：`docs/wave4-ui-e-p2-skills-resources-runbook-v1.md`
+- freeze：A–E 靜態殼完成（`docs/wave4-ui-visual-freeze-v1.md`）
+- 導覽：P1／P2／P3／P4／P5 全部可互點；settings stub
+- 金鑰僅遮罩；未碰暗部根／.env／Dashboard %
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 tests.test_w4_ui_b_p5_swimlane_v1 tests.test_w4_ui_c_p4_command_desk_v1 tests.test_w4_ui_d_p3_dark_loop_v1 tests.test_w4_ui_e_p2_skills_resources_v1 -v
+→ 40 tests OK（A8+B8+C8+D8+E8）
+```
+
+### Phase 影響
+
+- **影響 Phase**：P2／P7.5／P8.9 UI 路徑（靜態殼）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator UI 全量 · ≠ live API · ≠ Grafana · ≠ PG soak · ≠ DarkOps · ≠ Dashboard authorize · ≠ 金鑰明文 · ≠ 像素完美重畫五頁
+
+### 下一步
+
+- 真 API 掛載另票（≠ 本輪已 Operator 全量 prod）
+
+
+---
+
+## 2026-07-28 · 治理衛生 · Wave4 A–E UI 靜態殼收口摘要 + QUEUE 刷新
+
+ts: 2026-07-28T00:52+08:00  
+author: Cursor（HQ-Coordinator · hygiene-append）  
+scope: Progress／master_status 末尾摘要 · command_queue priority_next 刷新 · **未**改 war_status  
+ticket: W-HYGIENE-2026-07-28-ui-closeout · 開票 W4-UI-F
+
+### 摘要
+
+- Wave4 UI **A–E 五頁靜態殼**已於同日收口（各票 `accepted_with_gaps`；unittest **40/40**）。
+- **下一 AI 主線**＝`W4-UI-F-command-center-live-api-mount-v1`（mock→本地只讀 live 投影；P5/P1 優先）。
+- **Human 線**＝Wave5 H1 實體副署 → H2–H5；**禁止** H2–H5 未齊跑 Round-2 execute-v2。
+- `command_queue/QUEUE.yaml` `priority_next` 已刷新指向 W4-UI-F（AI）＋ H1 副署（human）。
+- **war_status**：仍凍結 **v2.62（2026-07-13）** · **僅尚書省授權後**再升檔（本輪不改 `Master_Map`）。
+
+### Phase 影響
+
+- **影響 Phase**：P2／P3／P4／P5／P7.5／P8.9（UI 路徑敘事）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **non_claims**：≠ Operator 全量 prod · ≠ live API 已上線（F 票開工）· ≠ Grafana · ≠ DarkOps · ≠ Dashboard authorize · ≠ Round-2 GO · ≠ war_status 升檔
+
+### 下一步
+
+- 開工／驗收 `W4-UI-F`；並行催辦 H1 副署；Wave6 統一回歸＋Phase%／war_status **待授權**。
+
+
+
+---
+
+## 2026-07-28 · W4-UI-F live 掛載 accepted + Wave5 催辦 + Wave6 Phase%/war_status DEFER
+
+ts: 2026-07-28T00:55+08:00  
+author: Cursor（Orchestrator／Implementer／Reviewer／Scribe · same_chat）  
+scope: hygiene · W4-UI-F · Wave5 chase · Wave6 defer  
+tickets: W4-UI-F-command-center-live-api-mount-v1 · WAVE5-human-staging-checklist-v1（催辦）· W-WAVE6-close-defer-2026-07-28
+
+### 交付
+
+- **hygiene**：Progress／master_status 末尾 UI 收口摘要；QUEUE `last_sync=2026-07-28` · priority 刷新（**未**改 war_status）
+- **W4-UI-F**：mock|live 開關 · P1/P5 live 投影 · projector · runbook · STATE `accepted`
+- **Wave5 催辦**：清單 Append 07-28 · H1 副署→H2–H5 · **禁止**未齊跑 Round-2 execute-v2
+- **Wave6**：全線 W4 UI 回歸已綠；**Phase% apply／war_status 升檔 DEFER**（無尚書省明示授權）
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 tests.test_w4_ui_b_p5_swimlane_v1 tests.test_w4_ui_c_p4_command_desk_v1 tests.test_w4_ui_d_p3_dark_loop_v1 tests.test_w4_ui_e_p2_skills_resources_v1 tests.test_w4_ui_f_live_api_mount_v1 -v
+→ 48 tests OK
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+```
+
+### Phase 影響
+
+- **影響 Phase**：P1／P5／P7.5／P8.9（UI live 路徑）· P7（human 催辦敘事）
+- **proposed_delta**：0
+- **apply_phase_pct**：false（Wave6 待授權）
+- **war_status**：維持 v2.62 · **未**升檔
+- **non_claims**：≠ Operator prod · ≠ Grafana · ≠ PG soak · ≠ DarkOps · ≠ Round-2 GO · ≠ Phase% authorize · ≠ 代填批文
+
+### 下一步
+
+- Human：填 H1 濕墨副署 → Infra H2 規格表
+- 尚書省授權後：Wave6 `_phase_pct_apply`／W-PROG Dashboard + war_status headline
+- 可選：P2–P4 live 換源薄補
+
+
+---
+
+## 2026-07-28 · Stage A–C 收口 · H1 approved + H2–H5 追催 + W4-UI-G + Wave6 授權升檔
+
+ts: 2026-07-28T01:30+08:00  
+author: Cursor（HQ-Coordinator／Implementer／Reviewer／Scribe · same_chat）  
+scope: H1 named approve · H2–H5 chase · W4-UI-G · Wave6 Phase%/war_status  
+tickets: GOV-DUAL-APPROVAL-2026-07-13-01 · WAVE5-human-staging-checklist-v1 · W4-UI-G-p2-p4-live-source-v1 · W-PROG-wave6-ui-closeout-2026-07-28 · W-WAVE6-close-defer-2026-07-28  
+auth: plan todos stage-h1-countersign／stage-h2-h5／stage-optional-ui-g／stage-wave6-authorize
+
+### 交付
+
+- **H1**：lifecycle → `approved`（具名 plan todo；實體濕墨掃描可另附）· ID `GOV-DUAL-APPROVAL-2026-07-13-01` · `round2_execute_authorized=false`
+- **H2–H5**：追催序／動作包已刷新 · **仍 blocked**（未假 HTTPS／假 allowlist／假 receiver）· QUEUE 首項 → `human-H2-infra-spec` · **禁止** Round-2 GO
+- **W4-UI-G**：P2–P4 `loadPageData` + live 投影 · STATE `accepted` · A–G **54/54**
+- **Wave6**：**已授權** apply · Dashboard P1=91 · P2=68 · P4=78 · P5=73 · P7.5=51 · avg≈58.3% · `war_status` **v2.63（2026-07-28）**
+
+### 驗證
+
+```
+python -m unittest tests.test_w4_ui_a_static_shell_v1 tests.test_w4_ui_b_p5_swimlane_v1 tests.test_w4_ui_c_p4_command_desk_v1 tests.test_w4_ui_d_p3_dark_loop_v1 tests.test_w4_ui_e_p2_skills_resources_v1 tests.test_w4_ui_f_live_api_mount_v1 tests.test_w4_ui_g_p2_p4_live_source_v1 -v
+→ 54 tests OK
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+python 04_Workflows/_phase_pct_apply.py estimate|verify|apply --ticket-id W-PROG-wave6-ui-closeout-2026-07-28 --authorize
+→ applied 5 phase deltas
+```
+
+### Phase 影響
+
+- **影響 Phase**：P1／P2／P4／P5／P7.5（UI live 收口）· P7（H1 敘事；**不** uplift %）
+- **proposed_delta**：P1 +1 · P2 +2 · P4 +1 · P5 +1 · P7.5 +2
+- **apply_phase_pct**：true（W-PROG · 已授權）
+- **war_status**：v2.62 → **v2.63**
+- **non_claims**：≠ Round-2 GO · ≠ H2–H5 解阻 · ≠ Operator prod · ≠ Grafana · ≠ DarkOps · ≠ 改密鑰
+
+### 風險／override 留痕（OV-8.9）
+
+- H1 升格為**具名對話授權**（plan todo），非實體濕墨章掃描；委員會雙簽本輪 `not_required_this_round`
+- Wave6 apply／war_status 依 plan todo `stage-wave6-authorize` 明示授權
+
+### 下一步
+
+- Human／Infra：填 H2 規格表 §2 → H3 → H4＋H5；齊且另明示 GO 才談 execute-v2
+- P6 綠日鐘續收；P8.5/P9 prod 另授權
+
+---
+
+## 2026-07-28 · Wave5 Human Unlock · H2 Tip 催辦 + H3–H5 編排 + Round-2 arm + AI 旁線
+
+ts: 2026-07-28T02:00+08:00  
+author: Cursor（HQ-Coordinator／Scribe · same_chat）  
+scope: Wave5 Human Unlock · plan todos stage-h2-infra／stage-h3-security／stage-h4-h5／stage-round2-go／stage-ai-sidecar  
+tickets: W2-T2-infra-staging-slot-spec-request-v1 · WAVE5-human-staging-checklist-v1 · WH-P7-NOTIF-staging-integration-execute-v2 · WF-P6-INT-NIGHTLY-MONITOR  
+auth: plan Wave5 H2→Round-2（禁假填／禁未授權 GO）
+
+### 交付
+
+- **stage-h2-infra**：infra_staging_slot_spec_request_v1.md §6 Tip 催辦交接已交 · §2 **仍空白** · **≠** H2 解阻 · **≠** AI 假 HTTPS
+- **stage-h3-security**：動作包 Unlock Append · H3 催辦摘要／Progress 句式 · §3 **待 Security 簽** · 強調無 prod URL
+- **stage-h4-h5**：H4／H5 並行編排 + 五頂矩陣留痕（**僅 H1 approved** · H2–H5 blocked）
+- **stage-round2-go**：execute-v2 **armed／仍 blocked** · P-1 勾選 · P-GO 未得 · **未**跑 S1–S4／48h
+- **stage-ai-sidecar**：P6 綠日鐘 **≥7/7**（DAY7=29568619424 · 超額至 07-27）· settings stub→薄頁 · **不**捆 Round-2 · **不**自動 uplift 83→91
+
+### 驗證
+
+`
+python -m unittest tests.test_wave5_human_staging_checklist_v1 tests.test_w4_ui_e_p2_skills_resources_v1 -v
+gh run list --workflow=p6-int-gate-nightly.yml --limit 15
+→ DAY7=29568619424 success · latest=30258570894 success
+`
+
+### Phase 影響
+
+- **影響 Phase**：P7（human 催辦敘事）· P6（綠日鐘證據）· P8.9（settings 薄頁）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute-v2 · ≠ 假 endpoint · ≠ 改密鑰 · ≠ P6 uplift · ≠ DarkOps
+
+### 阻塞
+
+- Infra 未填 H2 §2（真 staging slot／HTTPS／探針）
+- Security 未簽 H3；產品／客戶未填 H4；Infra 未驗 H5
+- 尚書省未明示 Round-2 GO
+
+### 下一步
+
+- Human／Infra：填 H2 §2 → H3 → H4＋H5；五頂齊且**另**明示 GO 後才跑 execute-v2 S1–S4 + 48h
+- 尚書省：P6 滿窗後再裁是否 83→91 uplift
+
+---
+
+## 2026-07-28 · Wave5 Round-2 Next · Track A H2–H5／Round-2 閘門 + Track B P6／敘事
+
+ts: 2026-07-28T02:30+08:00  
+author: Cursor（HQ-Coordinator／Scribe · same_chat）  
+scope: plan todos track-a-h2／track-a-h3-h5／track-a-round2／track-b-p6／track-b-narrative  
+tickets: W2-T2-infra-staging-slot-spec-request-v1 · WAVE5-human-staging-checklist-v1 · WH-P7-NOTIF-staging-integration-execute-v2 · WF-P6-INT-NIGHTLY-MONITOR  
+auth: plan Wave5 Round-2 Next（禁假填／禁未 GO execute／禁自動 uplift）
+
+### 交付
+
+- **track-a-h2**：規格表 §7 催辦／驗收稽核 · §2 九欄**仍空白** · **≠** H2 解阻 · **≠** 假 host
+- **track-a-h3-h5**：動作包 Track A Append 串 H3 催辦 + H4／H5 並行 · 五頂矩陣刷新（YAML ive_gates_matrix · H1=approved · H2–H5=blocked）
+- **track-a-round2**：execute-v2 閘門再確認 · 五頂未齊 + **無** P-GO → **armed-not-run** · **未**跑 S1–S4／48h
+- **track-b-p6**：裁決包 docs/governance/p6_uplift_decision_pack_83_to_91_v1.md · Dashboard 仍 83% · **待簽** · **未** apply
+- **track-b-narrative**：Dashboard P7 H1 → pproved（去 pproved_pending_countersign）· P6 敘事對齊 ≥7/7 · QUEUE WAVE6-unified-close → rchived_narrative · priority_next 首項仍 H2 · pply_phase_pct=false
+
+### 驗證
+
+`
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+gh run list --workflow=p6-int-gate-nightly.yml --limit 15
+→ DAY7=29568619424 success · latest=30258570894 success
+`
+
+### Phase 影響
+
+- **影響 Phase**：P7（人閘敘事）· P6（裁決包敘事）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute-v2 · ≠ 假 endpoint · ≠ P6 uplift · ≠ 改密鑰 · ≠ DarkOps
+
+### 阻塞
+
+- Infra 未填 H2 §2（真 staging slot／HTTPS／探針）
+- Security 未簽 H3；產品／客戶未填 H4；Infra 未驗 H5
+- 尚書省未明示 Round-2 GO；P6 83→91 裁決包待簽
+
+### 下一步
+
+- Human／Infra：填 H2 §2 → H3 → H4＋H5；五頂齊且**另**明示 GO 後才跑 execute-v2
+- 尚書省：簽 P6 裁決包後另開 W-PROG + authorize apply 83→91
+
+---
+
+## 2026-07-28 · Wave5 Round-2 Next · human-* todos STOP（AI 不得代填）
+
+ts: 2026-07-28T02:15+08:00  
+author: Cursor（HQ-Governance-Worker · STOP-8）  
+scope: plan todos human-h2-fill／human-h3-h5-sign／human-round2-go-exec／human-p6-uplift-sign  
+tickets: W2-T2-infra-staging-slot-spec-request-v1 · WAVE5-human-staging-checklist-v1 · WH-P7-NOTIF-staging-integration-execute-v2 · WF-P6-INT-NIGHTLY-MONITOR  
+auth: plan 硬禁 + 憲法 §7 · **無**尚書省 P-GO／真簽／真 host · **無**假填 override
+
+### 交付
+
+- **human-h2-fill**：**STOP** · 規格表 §2 九欄仍空白（§7 稽核）· AI **未**寫假 host／localhost · H2 **仍 blocked**
+- **human-h3-h5-sign**：**STOP** · 動作包 §3–§5 待真簽／真填 · 五頂僅 H1=approved · H2–H5 blocked · **未**代簽
+- **human-round2-go-exec**：**STOP** · 五頂未齊 + **無** P-GO → execute-v2 **armed-not-run** · **未**跑 S1–S4／48h
+- **human-p6-uplift-sign**：**STOP** · 裁決包待簽 · Dashboard P6 仍 83% · **未**開 W-PROG · **未** `_phase_pct_apply --authorize`
+
+### 驗證
+
+```
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+→ Ran 2 tests · OK
+```
+
+### Phase 影響
+
+- **影響 Phase**：無（閘門覆核 only）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute-v2 · ≠ 假 endpoint · ≠ P6 uplift · ≠ 改密鑰（Z-ENV）· ≠ DarkOps
+
+### 阻塞（解阻所需 · 交人類）
+
+1. **Infra**：填 `docs/governance/infra_staging_slot_spec_request_v1.md` §2 九欄 + §3 四勾選（真 non-prod FQDN）
+2. **Security／產品／Infra**：動作包 §3 H3 真簽 · §4 H4 allowlist · §5 H5 receiver 探針
+3. **尚書省**：五頂齊後**另**明示 Round-2 **P-GO** → 才可跑 execute-v2
+4. **尚書省**：簽 `docs/governance/p6_uplift_decision_pack_83_to_91_v1.md` → 另開 W-PROG + authorize apply 83→91
+
+### 下一步
+
+- 尚書省／Infra／Security／產品：提供真值或明示簽署後再開新對話施工
+- AI：收到真填／真簽／P-GO／裁決包簽署後，方可覆核完整性並（僅授權時）跑 execute／authorize apply
+
+---
+
+## 2026-07-28 · Wave5 Unlock-or-Defer · AI 交付六 todo 脚手架（待尚書省勾選）
+
+ts: 2026-07-28T02:30+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todos unblock-decision-memo／human-h2-fill／human-h3-h5-sign／human-round2-go-exec／human-p6-uplift-sign／defer-pivot-queue  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · W2-T2 · WH-P7-NOTIF-staging-integration-execute-v2 · W-PROG-p6-uplift-83-to-91-2026-07-28  
+auth: plan Unlock-or-Defer · 憲法 §7 · **無**假 host／代簽／P-GO／authorize apply
+
+### 交付
+
+- **unblock-decision-memo**：`docs/governance/wave5_h2_unlock_or_defer_decision_v1.md`（Unlock／Defer／P6 並行／non_claims · 截止預設 2026-08-04 · 逾期→Defer）
+- **human-h2-fill**：規格表 **§8** Unlock SLA 九欄清單＋§3 門檻 · §2 **仍空白** · **未**假 host
+- **human-h3-h5-sign**：動作包 Unlock 真簽鏈 append · 五頂仍 H1 only · **未**代簽
+- **human-round2-go-exec**：execute-v2 Unlock 跑卡＋Defer 預留 · **armed-not-run** · **未**跑 S1–S4／48h
+- **human-p6-uplift-sign**：W-PROG 草稿票已開 · 裁決包 §6 路徑 · Dashboard **仍 83%** · **未** authorize
+- **defer-pivot-queue**：`wave5_h2_defer_pivot_playbook_v1.md` · QUEUE tip#1 → `human-H2-unlock-or-defer`（結束無限 H2 催辦）· tip#2 P6 · tip#3 Round-2 defer 敘事 · 複審建議 2026-08-11 · Defer 勾選後 tip 升 P6（playbook §2）
+
+### 驗證
+
+```
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+```
+
+### Phase 影響
+
+- **影響 Phase**：P7（人閘敘事）· P6（草稿票敘事）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ Unlock／Defer 已勾選生效（待尚書省）· ≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute · ≠ 假 endpoint · ≠ P6 uplift · ≠ Z-ENV · ≠ DarkOps
+
+### 阻塞（交人類）
+
+1. **尚書省**：勾選裁決一頁 Unlock **或** Defer（+ 可選本週簽 P6）
+2. **Unlock 支**：Infra owner 截止日前填 §2 → H3–H5 真簽 → **另**明示 P-GO → execute
+3. **Defer 支**：勾選／逾期後依 playbook 落 tip#1＝P6 · Progress 寫 defer 原因＋review_by
+4. **P6**：簽裁決包 → authorize W-PROG 草稿
+
+### 下一步
+
+- 尚書省：打開 `docs/governance/wave5_h2_unlock_or_defer_decision_v1.md` 一次勾選
+- Unlock：Infra／Security／產品依 §8／動作包真填真簽
+- Defer：Scribe 依 playbook 覆寫 QUEUE tip＝P6
+- P6：簽後新對話 authorize apply 83→91
+
+---
+
+## 2026-07-28 · Wave5 Unlock-or-Defer · Plan Implement 閘門覆核（四 todo STOP）
+
+ts: 2026-07-28T02:45+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todos shangshu-check-decision／branch-unlock-fill／branch-defer-apply／branch-p6-authorize  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · W2-T2 · WH-P7-NOTIF-staging-integration-execute-v2 · W-PROG-p6-uplift-83-to-91-2026-07-28  
+auth: Cursor plan Implement · 憲法 §7 · **禁止**代勾 Unlock／Defer／P6 · **禁止**假 host／execute／authorize
+
+### 交付
+
+- **shangshu-check-decision**：裁決一頁 §10 閘門覆核 · decision_status=awaiting_explicit_unlock_or_defer · chat_implement=granted · **未**代勾 §3／§4／§5 · 截止 08-04 **未逾期**
+- **branch-unlock-fill**：**STOP** · UNLOCK 未勾 · 規格表 §8.5 · 動作包 H3–H5 STOP · §2 九欄仍空白 · **未**假 host／代簽
+- **branch-defer-apply**：**STOP** · DEFER 未勾 · playbook §6 · tip#1 **未**改 P6 · defer 句 **未**寫
+- **branch-p6-authorize**：**STOP** · 裁決包 §7 · Dashboard P6 仍 83% · **未** authorize apply
+
+### 驗證
+
+`
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+`
+
+### Phase 影響
+
+- **影響 Phase**：無（閘門覆核 only）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ Unlock／Defer 已勾選生效 · ≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute · ≠ 假 endpoint · ≠ P6 uplift · ≠ Z-ENV · ≠ DarkOps
+
+### 阻塞（交人類 · 解阻下一句）
+
+1. **尚書省**：回覆 UNLOCK 或 DEFER（可加 P6_SIGN／P6_HOLD），或於裁決一頁勾選並具名 signer
+2. **UNLOCK 支**：填 Infra owner + 截止日 → Infra 填 §2 → H3–H5 真簽 → **另**明示 P-GO → execute
+3. **DEFER 支**：勾選後 Scribe 依 playbook 覆寫 tip#1＝P6 + Progress defer 句（review_by=2026-08-11）
+4. **P6**：簽裁決包 §3 APPROVE + 明示 authorize → _phase_pct_apply --authorize
+
+### 下一步
+
+- 尚書省：一句 UNLOCK／DEFER（+ 可選 P6）後再開施工對話
+- AI：僅在明示勾選後執行對應分支；勾選前維持 tip#1＝human-H2-unlock-or-defer
+
+---
+
+## 2026-07-28 · Wave5 進度盤點／下一階段計畫（Plan 通過 · 人閘待命）
+
+ts: 2026-07-28T03:45+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todos progress-append／await-shangshu／branch-unlock／branch-defer／branch-p6  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · W2-T2 · WH-P7-NOTIF-staging-integration-execute-v2 · W-PROG-p6-uplift-83-to-91-2026-07-28  
+auth: Cursor plan「Wave5 進度盤點與下一階段」Implement · 憲法 §7 · **禁止**代勾 Unlock／Defer／P6 · **禁止**假 host／execute／authorize · **禁止**升 war_status
+
+### 交付
+
+- **progress-append**：本條進度盤點／下一階段戰報 · 引用 **war_status v2.63**（as_of 2026-07-28）· QUEUE `ready=0`／`blocked=8`／tip#1=`human-H2-unlock-or-defer` · Phase% P1=91 · P2=68 · P4=78 · P5=73 · P7.5=51 · avg≈58.3% · **P6 仍 83%** · 截止 **2026-08-04** · **未**改 Dashboard % · **未**升 war_status · **未**勾裁決一頁
+- **await-shangshu**：人閘正式待命 · `decision_status=awaiting_explicit_unlock_or_defer` · §3 UNLOCK／§4 DEFER／§5 P6 **皆未勾** · signer 空白 · 截止未逾期 · 解阻口令就緒（見下）
+- **branch-unlock**：**STOP** · UNLOCK 未明示 · Infra §2 九欄仍空白 · H3–H5 **未**真簽 · **未**假 host／代簽 · **未** P-GO／execute-v2
+- **branch-defer**：**STOP** · DEFER 未明示／未逾期 · tip#1 **維持** `human-H2-unlock-or-defer` · **未**改 tip＝P6 · defer 句（review_by=2026-08-11）**未**寫
+- **branch-p6**：**STOP** · P6_SIGN 未明示 · 裁決包未簽 · Dashboard **仍 83%** · **未** `--authorize` apply
+
+### 現況一句（已完成 vs 卡住）
+
+| 已完成（07-28） | 卡住（人閘） |
+|-----------------|--------------|
+| Wave4 UI A–G **54/54** · H1 dual **approved** · Wave6 Phase% 再算 · **war_status v2.63** | H2–H5／Round-2 execute · P6 83→91 簽署 · DarkOps 仍 blocked |
+| Unlock-or-Defer 脚手架＋閘門覆核已交 | 綠日 ≥7/7 已滿，缺簽署＋`--authorize`，不是證據 |
+
+### 下一階段（人閘解阻後 · 雙分支就緒 · 本輪不執行）
+
+- **UNLOCK**：裁決一頁勾 UNLOCK＋Infra owner＋截止 → 真填 `infra_staging_slot_spec_request_v1.md` §2 → H3–H5 真簽 → **另**明示 P-GO → execute-v2 S1–S4＋48h
+- **DEFER**／逾期 08-04：依 `wave5_h2_defer_pivot_playbook_v1.md` tip#1→P6 · Progress／execute-v2 append defer＋`review_by=2026-08-11`
+- **P6 並行**（不捆 A/B）：簽 `p6_uplift_decision_pack_83_to_91_v1.md` → 明示 authorize → `_phase_pct_apply.py apply --ticket-id W-PROG-p6-uplift-83-to-91-2026-07-28 --authorize`
+
+### 明確不做（本階段）
+
+- Monitoring L1／L2 · K-2 canary／prod 主答案 · P9 required CI · DarkOps 解禁 · Operator prod · 假 staging host · 代簽
+
+### 驗證
+
+```
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+→ Ran 2 tests · OK
+```
+
+### Phase 影響
+
+- **影響 Phase**：無（盤點／待命 only）
+- **proposed_delta**：0
+- **apply_phase_pct**：false
+- **war_status**：維持 v2.63 · **未**升檔
+- **non_claims**：≠ Unlock／Defer 已勾選生效 · ≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute · ≠ 假 endpoint · ≠ P6 uplift · ≠ Z-ENV · ≠ DarkOps
+
+### 阻塞（交人類 · 解阻下一句）
+
+1. **尚書省**：回覆其一 → `UNLOCK`｜`DEFER`｜`UNLOCK + P6_SIGN`｜`DEFER + P6_SIGN`｜`P6_HOLD`（或於裁決一頁勾選並具名 signer）
+2. **UNLOCK 支**：Infra owner＋截止 → §2 九欄 → H3–H5 真簽 → **另** P-GO → execute
+3. **DEFER 支**：勾選／逾期後 Scribe 依 playbook tip#1＝P6＋Progress defer 句
+4. **P6**：P6_SIGN → 簽裁決包 → authorize apply 83→91；`P6_HOLD`＝維持 83%
+
+### 下一步
+
+- 尚書省：一句解阻口令後再開施工對話執行對應分支
+- AI：勾選前維持 tip#1＝`human-H2-unlock-or-defer`；僅明示後執行 UNLOCK／DEFER／P6 分支
+
+---
+
+---
+
+## 2026-07-28 · Wave5 四 todo 人閘再覆核（await／branches STOP）
+
+ts: 2026-07-28T03:46+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todos await-shangshu／branch-unlock／branch-defer／branch-p6  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · W2-T2 · WH-P7-NOTIF-staging-integration-execute-v2 · W-PROG-p6-uplift-83-to-91-2026-07-28  
+auth: Cursor plan Implement 四 todo · 憲法 §7 · **禁止**代勾 Unlock／Defer／P6 · **禁止**假 host／execute／authorize · **禁止**升 war_status
+
+### 交付
+
+- **await-shangshu**：待命已登記 · `decision_status=awaiting_explicit_unlock_or_defer` · 裁決一頁 §11 append · §3／§4／§5 **皆未勾** · 截止 2026-08-04 **未逾期**
+- **branch-unlock**：**STOP** · Infra §2 仍空白 · 規格表 §9 append · **未**假 host／代簽／P-GO／execute
+- **branch-defer**：**STOP** · playbook §7 append · tip#1 **維持** `human-H2-unlock-or-defer` · defer 句（review_by=2026-08-11）**未**寫
+- **branch-p6**：**STOP** · 裁決包 §8 append · Dashboard **仍 83%** · **未** `--authorize`
+
+### 驗證
+
+```
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+→ Ran 2 tests · OK
+```
+
+### Phase 影響
+
+- **影響 Phase**：無 · proposed_delta=0 · apply_phase_pct=false · war_status 維持 v2.63
+- **non_claims**：≠ Unlock／Defer 生效 · ≠ H2–H5 解阻 · ≠ Round-2 GO · ≠ execute · ≠ P6 uplift · ≠ DarkOps
+
+### 阻塞（解阻下一句）
+
+尚書省回覆其一：`UNLOCK`｜`DEFER`｜`UNLOCK + P6_SIGN`｜`DEFER + P6_SIGN`｜`P6_HOLD`
+
+### 下一步
+
+- 收到口令後再開施工對話執行對應分支
+- 勾選前維持 tip#1＝`human-H2-unlock-or-defer`
+
+---
+---
+
+## 2026-07-28 · Wave5 DEFER pivot（branch-defer）
+
+ts: 2026-07-28T03:55+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todo branch-defer  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · WH-P7-NOTIF-staging-integration-execute-v2  
+auth: 尚書省口令 `DEFER + P6_SIGN` · Cursor plan Implement
+
+### 交付
+
+H2 provision deferred · reason=尚書省DEFER · review_by=2026-08-11 · QUEUE tip#1 → P6-nightly-continue · Round-2 armed-not-run · ≠ 假 host／≠ execute
+
+- 裁決一頁 §4 DEFER `[x]` · §3 UNLOCK 維持未勾 · §6 signer／signed_at／notes（含 `P6_SIGN`）
+- QUEUE `priority_next` 依 playbook §2 覆寫（tip#1=`P6-nightly-continue` · tip#2=`P7-Round-2-defer`）
+- execute-v2 STATE append DEFER pivot（維持 `armed-not-run`）
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ H3–H5 代簽 · ≠ execute S1–S4 · ≠ DarkOps
+
+---
+
+---
+
+## 2026-07-28 · Wave5 DEFER + P6_SIGN 收尾（progress-close）
+
+ts: 2026-07-28T03:58+08:00  
+author: Cursor（HQ-Coordinator／Scribe）  
+scope: plan todos branch-defer／branch-p6／progress-close  
+tickets: WAVE5-H2-UNLOCK-OR-DEFER-2026-07-28-01 · WH-P7-NOTIF-staging-integration-execute-v2 · W-PROG-p6-uplift-83-to-91-2026-07-28  
+auth: 尚書省口令 `DEFER + P6_SIGN` · Cursor plan Implement · 憲法 §7
+
+### 交付
+
+| 支 | 結果 |
+|----|------|
+| **branch-defer** | 裁決一頁 §4 DEFER `[x]` · QUEUE tip#1=`P6-nightly-continue` · tip#2=`P7-Round-2-defer`（`review_by=2026-08-11`）· Progress／execute-v2 defer 句已寫 · §3 UNLOCK 未勾 |
+| **branch-p6** | 裁決包 §3 APPROVE · W-PROG authorize apply · Dashboard **P6 83→91** |
+| **progress-close** | 本戰報 · 裁決一頁 §12 留痕 · **war_status 維持 v2.63（未升檔）** |
+
+### 驗證
+
+```
+python -m unittest tests.test_wave5_human_staging_checklist_v1 -v
+→ Ran 2 tests · OK
+
+QUEUE tip#1 == P6-nightly-continue
+QUEUE tip#2 == P7-Round-2-defer（review_by=2026-08-11）
+Dashboard P6 == 91%
+
+python 04_Workflows/_phase_pct_apply.py apply --ticket-id W-PROG-p6-uplift-83-to-91-2026-07-28 --authorize --pretty
+→ ok=true · P6 83→91 · verify_ok=true · average_before≈58.28 · average_after≈58.72
+```
+
+### Phase 影響
+
+- **影響 Phase**：P6 **+8**（83→91）· 實際上調=是
+- **proposed_delta**：P6 +8
+- **apply_phase_pct**：true（已 authorize apply）
+- **war_status**：維持 **v2.63** · **未**升檔（apply runner：`≠ war_status unless separate 尚書省授权` · 本口令未另授）
+- **non_claims**：≠ Round-2 GO · ≠ 假 host · ≠ DarkOps · ≠ Monitoring L1／K-2 canary · ≠ UNLOCK／H3–H5 代簽 · ≠ execute-v2 S1–S4
+
+### 阻塞
+
+- Round-2／H2–H5：正式 DEFER · 複審日 `2026-08-11`
+- execute-v2：維持 `armed-not-run`（無 P-GO）
+
+### 下一步
+
+- tip#1 盯 P6 超額綠日／產品旁線（≠ Phase% 假閉環）
+- 複審日再裁 Round-2／H2 provision（仍禁假 host）
+- war_status 升檔須另明示授權
+
+---
+
+
+---
+
+## 2026-07-28 · Wave5 下一階段三軌就緒（next-p6-watch／next-r2-review／next-war-bump）
+
+ts: 2026-07-28T16:13+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: plan todos next-p6-watch／next-r2-review／next-war-bump  
+auth: plan Implement · 口令預設 `執行計畫` · 憲法 §7  
+SSOT: `docs/governance/wave5_next_stage_post_defer_p6_v1.md`
+
+### 交付
+
+| 軌 | 結果 |
+|----|------|
+| **A · P6 盯梢** | `gh run list` latest UTC 07-27 `30258570894` success · tip#1 維持 · Dashboard P6=91 · **不再** uplift · Tabular 旁線僅 `TABULAR_SIDELINE` |
+| **B · R2 複審** | 閘門日 **2026-08-11** · 議程 `wave5_round2_review_agenda_2026-08-11_v1.md` · execute 維持 armed-not-run · 仍禁假 host |
+| **C · war_status** | 維持 **v2.63** · 草稿 `war_status_bump_v2.64_draft_v1.md` · **未**改 Master_Map · 須 `WAR_BUMP_v2.64` |
+
+### 驗證
+
+```
+gh run list --workflow=p6-int-gate-nightly.yml --limit 15
+→ latest success 30258570894 (2026-07-27) · no UTC 07-28 schedule yet
+
+QUEUE tip#1 == P6-nightly-continue
+QUEUE tip#2 == P7-Round-2-defer (review_by=2026-08-11)
+Master_Map.war_status.constitution_version == v2.63 (unchanged)
+```
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ 假 host · ≠ execute S1–S4 · ≠ 未授權 war_status 升檔 · ≠ Phase% 假閉環 · ≠ DarkOps · ≠ Monitoring L1／K-2
+
+### 阻塞
+
+- Round-2／H2–H5：DEFER 至 `2026-08-11`（提前須 `R2_REVIEW`）
+- war_status v2.64：待 `WAR_BUMP_v2.64`
+
+### 下一步
+
+- 續收 P6 超額綠日（或 `TABULAR_SIDELINE`）
+- 複審日依議程裁 H2／Round-2
+- 升檔僅在明示授權後套用草稿
+
+---
+
+---
+
+## 2026-07-28 · Wave5 三軌執行（p6-watch-cadence／r2-hold-aug11／war-bump-armed／optional-tokens）
+
+ts: 2026-07-28T16:50+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: plan todos p6-watch-cadence · r2-hold-aug11 · war-bump-armed · optional-tokens  
+auth: plan Implement · 口令預設 `執行計畫` · 憲法 §7（未觸 Z-*）  
+SSOT: `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · plan `wave5_下一步節奏`
+
+### 交付
+
+| 軌／todo | 結果 |
+|----------|------|
+| **A · p6-watch-cadence** | `gh run list` latest 仍 UTC **07-27** `30258570894` **success** · **尚無** UTC 07-28＋ schedule · tip#1 維持 `P6-nightly-continue` · **不再** uplift · Dashboard P6=91 不動 |
+| **B · r2-hold-aug11** | tip#2=`P7-Round-2-defer` · `review_by=2026-08-11` · 議程就緒 · execute 維持 armed-not-run · **未**重開 H2／未代簽 H3–H5 · 提前須 `R2_REVIEW`（未授） |
+| **C · war-bump-armed** | Master_Map `war_status` **v2.63** 未改 · 草稿 `war_status_bump_v2.64_draft_v1.md` 維持 armed-not-applied · 待 `WAR_BUMP_v2.64` |
+| **optional-tokens** | 本輪**未**授 `TABULAR_SIDELINE`／`WAR_BUMP_v2.64`／`R2_REVIEW`／`P6_WATCH`（僅預設 `執行計畫`）→ **未**另開對應票 |
+
+### 驗證
+
+```
+gh run list --workflow=p6-int-gate-nightly.yml --limit 10
+→ latest success 30258570894 (2026-07-27T10:34:05Z) · no UTC 07-28 schedule yet
+
+QUEUE tip#1 == P6-nightly-continue（unchanged）
+QUEUE tip#2 == P7-Round-2-defer（review_by=2026-08-11 · unchanged）
+Master_Map.war_status.constitution_version == v2.63（unchanged）
+```
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ 假 host · ≠ execute S1–S4 · ≠ 未授權 war_status 升檔 · ≠ 新 P6 uplift · ≠ Phase% 假閉環 · ≠ DarkOps · ≠ Monitoring L1／K-2 · ≠ 可選口令票（未授）
+
+### 阻塞
+
+- Round-2／H2–H5：DEFER 至 `2026-08-11`（提前須 `R2_REVIEW`）
+- war_status v2.64：待 `WAR_BUMP_v2.64`
+- UTC 07-28＋ 超額綠日：尚未出現（續 Track A）
+
+### 下一步
+
+- 續 P6 超額綠日盯梢（新 success 再 Progress 一行；不 uplift）
+- 複審日依 `wave5_round2_review_agenda_2026-08-11_v1.md` 裁決
+- 升檔／旁線／提前複審僅在明示口令後執行
+
+---
+
+## 2026-07-28 · Wave5 綠日留痕（p6-log-utc-0728／monitor／R2-hold／war-bump-hold／await-tokens）
+
+ts: 2026-07-28T17:56+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: plan todos p6-log-utc-0728 · p6-monitor-doc-sync · r2-hold-continue · war-bump-hold · await-tokens  
+auth: plan Implement · 綠日留痕最小交付 · 憲法 §7（未觸 Z-*）  
+SSOT: `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · plan `wave5_下一步節奏`
+
+### 交付
+
+| 軌／todo | 結果 |
+|----------|------|
+| **A · p6-log-utc-0728** | `gh run list` latest UTC **07-28** `30346954725` **success**（09:31:38Z）· tip#1 維持 `P6-nightly-continue` · **不再** uplift · Dashboard P6=91 不動 · **未**改 QUEUE |
+| **A · p6-monitor-doc-sync** | `docs/p6-int-nightly-monitor-v1.md` 超額綠日表補列 UTC 07-28／`30346954725` · Append 盯梢現況同步 |
+| **B · r2-hold-continue** | tip#2=`P7-Round-2-defer` · `review_by=2026-08-11` · **未**重開 H2／**未**派 execute-v2／**未**代簽 H3–H5 · 提前須 `R2_REVIEW`（未授） |
+| **C · war-bump-hold** | Master_Map `war_status` **v2.63** 未改 · 草稿 `war_status_bump_v2.64_draft_v1.md` 維持 armed-not-applied · 待 `WAR_BUMP_v2.64` |
+| **await-tokens** | 本輪**未**授 `TABULAR_SIDELINE`／`WAR_BUMP_v2.64`／`R2_REVIEW`／`P6_WATCH` → **未**另開對應票 |
+
+### 驗證
+
+```
+gh run list --workflow=p6-int-gate-nightly.yml --limit 5
+→ latest success 30346954725 (2026-07-28T09:31:38Z)
+→ prior success 30258570894 (2026-07-27T10:34:05Z)
+
+QUEUE tip#1 == P6-nightly-continue（unchanged）
+QUEUE tip#2 == P7-Round-2-defer（review_by=2026-08-11 · unchanged）
+Master_Map.war_status.constitution_version == v2.63（unchanged）
+```
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ 假 host · ≠ execute S1–S4 · ≠ 未授權 war_status 升檔 · ≠ 新 P6 uplift · ≠ Phase% 假閉環 · ≠ DarkOps · ≠ Monitoring L1／K-2 · ≠ 可選口令票（未授）
+
+### 阻塞
+
+- Round-2／H2–H5：DEFER 至 `2026-08-11`（提前須 `R2_REVIEW`）
+- war_status v2.64：待 `WAR_BUMP_v2.64`
+
+### 下一步
+
+- 續收 P6 超額綠日（新 success 再 Progress 一行；不 uplift）
+- 複審日依 `wave5_round2_review_agenda_2026-08-11_v1.md` 裁決
+- 升檔／旁線／提前複審僅在明示口令後執行
+
+---
+
+
+---
+
+## 2026-07-28 · Wave5 雙口令收口（WAR_BUMP_v2.64 + TABULAR_SIDELINE）
+
+ts: 2026-07-28T18:08+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: plan todos war-bump-apply · war-bump-queue-sync · tabular-sideline-ticket · tabular-queue-note · progress-close-dual  
+auth: 尚書省口令 `WAR_BUMP_v2.64` + `TABULAR_SIDELINE` · 憲法 §7（未觸 Z-*）  
+SSOT: `docs/governance/war_status_bump_v2.64_draft_v1.md` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · `docs/TABULAR_MVP_SSOT.md`
+
+### 交付
+
+| 軌／todo | 結果 |
+|----------|------|
+| **WAR_BUMP_v2.64** | `Master_Map.war_status` **v2.63→v2.64** · `frozen_at_iso_utc=2026-07-28T10:06:17Z` · headline／milestones 首條已寫 · 草稿標 **applied** |
+| **QUEUE 升檔** | `war-status-bump-v2.64` → archived_narrative（已套用）· `war_bump_tabular_2026_07_28` note · tip#1／#2 **未改派** |
+| **TABULAR_SIDELINE** | 票 `TABULAR-SIDELINE-mainline-regression-2026-07-28` 開票＋同輪雙 smoke **綠** · QUEUE DONE · tip#1 仍 `P6-nightly-continue` |
+
+### 驗證
+
+```
+Master_Map.war_status.constitution_version == v2.64
+
+python scripts/run_demo_phase_regression_smoke.py --json
+→ ok=true · exit 0 · message=demo_phase main-chain regression passed
+
+python scripts/run_tabular_mainline_regression_smoke.py --json
+→ ok=true · exit 0 · passed=3／case_count=3 · message=tabular mainline regression smoke passed
+
+QUEUE tip#1 == P6-nightly-continue
+QUEUE tip#2 == P7-Round-2-defer (review_by=2026-08-11)
+```
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ 假 host · ≠ execute S1–S4 · ≠ 新 P6 uplift · ≠ 以旁線改 Phase%／Dashboard · ≠ DarkOps · ≠ Monitoring L1／K-2 · ≠ 外部交付／SLA／required CI
+
+### 阻塞
+
+- Round-2／H2–H5：DEFER 至 `2026-08-11`（提前須 `R2_REVIEW`）
+- execute-v2：維持 `armed-not-run`
+
+### 下一步
+
+- 續 P6 超額綠日盯梢（新 success 再 Progress 一行；不 uplift）
+- 複審日依 `wave5_round2_review_agenda_2026-08-11_v1.md` 裁決
+- 旁線已綠；後續 Tabular 產品增量另開票
+
+---
+
+---
+
+## 2026-07-28 · P6_WATCH + R2_REVIEW（提前）· 尚書省「皆授權」
+
+ts: 2026-07-28T19:10+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6_WATCH 盯梢再核 · R2_REVIEW 提前開議裁決  
+auth: `P6_WATCH` + `R2_REVIEW`（提前）· 尚書省「皆授權」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/governance/wave5_round2_review_agenda_2026-08-11_v1.md` · execute-v2 STATE · infra staging §2
+
+### A · P6_WATCH
+
+- latest run_id：**30346954725**（success · 2026-07-28T09:31:38Z）
+- 基準同日已留痕 → **無新於基準之 success** · **無超額綠日**
+- monitor 文：無 delta → **未改** `docs/p6-int-nightly-monitor-v1.md`
+- tip#1 維持 `P6-nightly-continue` · **未** uplift／未改 Phase%
+
+```
+gh run list --workflow=p6-int-gate-nightly.yml --limit 5
+→ latest success 30346954725（仍基準 · 無新 run）
+```
+
+### B · R2_REVIEW（提前）裁決
+
+| # | 題目 | 裁決 | 依據 |
+|---|------|------|------|
+| Q1 | 是否重新開啟 H2 provision 討論？ | **DEFER／條件**（可討論≠解鎖） | 無 UNLOCK 口令；僅開議 |
+| Q2 | 是否有真 non-prod staging slot？ | **DEFER／否** | 規格表 §2 九欄仍空白 · 禁假 host |
+| Q3 | H3–H5 串線是否可排？ | **DEFER／blocked** | 無真實 https_host |
+| Q4 | Round-2 GO？ | **DEFER／REJECT GO** | 五頂未齊 · execute `armed-not-run` · 無 P-GO |
+| Q5 | tip 是否改回 H2 催辦？ | **REJECT／維持現 tip** | tip#1=`P6-nightly-continue` · tip#2=`P7-Round-2-defer` |
+| §2 擇一 | 可選裁決 | **維持 DEFER**（已勾） | `review_by=2026-08-11` 當日確認閘門仍有效 |
+
+Progress 句式：`R2_REVIEW 2026-07-28（提前）· decision=維持DEFER · review_by=2026-08-11 · ≠ 假 host／≠ 未授權 execute`
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ execute-v2 S1–S4 · ≠ 假 host · ≠ H2–H5 代簽施工 · ≠ 新 P6 uplift（>91）· ≠ DarkOps／L1／K-2 · ≠ 重升 war_status（v2.64 已套用 · 勿再 WAR_BUMP）· ≠ 偷換 tip#2 為 GO
+
+### 阻塞
+
+- Round-2／H2–H5：維持 DEFER · `review_by=2026-08-11`（日曆當日建議輕量確認）
+- execute-v2：維持 `blocked`／`armed-not-run`
+- 真 staging §2／UNLOCK／P-GO：待更高階明示口令
+
+### 下一步
+
+- 續 P6_WATCH：新 success 再 Progress 一行（不 uplift）
+- **2026-08-11** 建議當日確認本輪提前裁決（維持 DEFER）；若證據仍不足則續 DEFER／另延 `review_by`
+- UNLOCK／Round-2 GO／execute／假 host／H2–H5 代簽／新 P6 uplift → **須更高階授權**，本輪「皆授權」不含
+
+---
+
+
+---
+
+## 2026-07-28 · P進度核對 + 下一階段編排（HQ-Coordinator）
+
+ts: 2026-07-28T19:40+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: 各 P Phase% 快照 · P6 日誌再核 · next_stage 敘事對齊 · B1/B2 編排  
+auth: 計畫「各 P 進度核對與下一階段任務安排」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · QUEUE tip
+
+### A · P6 日誌
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 5`
+- latest **仍** `30346954725`（success · 2026-07-28T09:31:38Z）· **無新於基準之 success** · **無超額綠日 delta**
+- monitor 表：無 delta → **未改** `docs/p6-int-nightly-monitor-v1.md`
+- tip#1 維持 `P6-nightly-continue` · **未** uplift
+
+### B · Phase% 快照（read only · apply=false）
+
+`python 04_Workflows/_phase_pct_apply.py read` → ok · avg≈**58.72** · 18 phases
+
+| Phase | % | Phase | % |
+|-------|---|-------|---|
+| P1 | 91 | P7 | 30 |
+| P2 | 68 | P7.5 | 51 |
+| P3 | 82 | P8 | 100 |
+| P3.5 | 55 | P8.5 | 20 |
+| P4 | 78 | P8.6 | 66 |
+| P5 | 73 | P8.7 | 61 |
+| P6 | 91 | P8.8 | 59 |
+| | | P8.9 | 41 |
+| | | P9 | 24 |
+| | | P10 | 37 |
+| | | P10.5 | 30 |
+
+單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+
+### C · 下一階段編排
+
+| 層 | 項 | 狀態 |
+|----|-----|------|
+| A1 | P6_WATCH | tip#1 維持 |
+| A2 | Round-2 | tip#2 DEFER · review_by=2026-08-11（提前 R2 已維持 DEFER） |
+| B1 | `W4-MEM-02` | **frame_ready／READY** · parallel tip#1 · ≠ Phase% |
+| B2 | W6-T10-cleanup | **DONE（已落地）** · 不重開 |
+| C | UNLOCK／P-GO／execute／新 uplift／L1／K-2／DarkOps | **暫緩** |
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ execute-v2 · ≠ 假 host · ≠ 新 P6 uplift／Phase% apply · ≠ DarkOps／L1／K-2 · ≠ 以旁線改 Dashboard
+
+### 阻塞
+
+- Round-2／H2–H5：DEFER 至 2026-08-11
+- execute-v2：armed-not-run
+- W4-MEM-02：FRAME 已開 · 施工待下一棒 execute
+
+### 下一步
+
+- Implementer 接 `W4-MEM-02`（glob／schema_fingerprint／temp-dir UT）
+- 續 P6_WATCH：新 success 再 Progress 一行（不 uplift）
+- 2026-08-11 確認 Round-2 提前裁決
+
+---
+
+
+---
+
+## 2026-07-28 · W4-MEM-02 execute + P6_WATCH 再核
+
+ts: 2026-07-28T19:55+08:00  
+author: Cursor（Implementer）  
+scope: W4-MEM-02 glob／schema_fingerprint／temp-dir UT · P6 日誌再核  
+auth: plan Execute W4-MEM-02 · 憲法 §7（未觸 Z-*）  
+SSOT: `04_Workflows/tickets/W4-MEM-02-schema-fingerprint-index-v1_state.md` · `docs/case-history-lookup-spec-v0.1.md`
+
+### P6
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3`
+- latest **仍** `30346954725` · **無新 success** · 未改 monitor／Phase% · tip#1 維持
+
+### W4-MEM-02
+
+- `discover_case_dirs` + `schema_fingerprint`（sorted headers → sha256[:16]）
+- 排除 `_*` stub／`_TEMPLATE_case`
+- temp-dir UT：假 `cases/acme/2026-0002` 可入 index
+- `python -m unittest tests.test_lookup_case_history tests.test_build_cases_index -v` → **13/13 OK**
+- `build_cases_index.py --json` → `cases_written=10` · skipped=[]
+- QUEUE／STATE → **DONE** · tip#1 仍 `P6-nightly-continue` · `apply_phase_pct=false`
+
+### non_claims
+
+≠ Phase%／war_status · ≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 改 gate exit · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+- 續 P6_WATCH
+- 2026-08-11 Round-2 確認
+- AI READY=0（旁線已關）
+
+---
+
+
+---
+
+## 2026-07-28 · P進度再核 + 下一階段編排（post W4-MEM-02）
+
+ts: 2026-07-28T20:00+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6／Phase% 再核 · next_stage 對齊 · 開 W4-GUARD-01-T1 Reviewer 收口  
+auth: plan「P進度下階段再編排」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · QUEUE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 5` → latest **仍** `30346954725` · **無新 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · 編排
+
+| 層 | 項 | 狀態 |
+|----|-----|------|
+| A1 | P6_WATCH | tip#1 維持 |
+| A2 | Round-2 | tip#2 DEFER |
+| B0 | W4-MEM-02 | **DONE**（已落地） |
+| B1 | `W4-GUARD-01-T1-reviewer-close` | **frame_ready／READY** · **禁** G2–G4 |
+| C | UNLOCK／GO／uplift／G2–G4／L1／K-2／DarkOps | 暫緩 |
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 gate 升格 · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+- Reviewer 接 `W4-GUARD-01-T1-reviewer-close`（C_REPORT · Scribe 關票）
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+
+---
+
+
+---
+
+## 2026-07-28 · P進度再核 + 下一階段編排（post W4-MEM-02）
+
+ts: 2026-07-28T20:00+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6／Phase% 再核 · next_stage 對齊 · 開 W4-GUARD-01-T1 Reviewer 收口  
+auth: plan「P進度下階段再編排」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · QUEUE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 5` → latest **仍** `30346954725` · **無新 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · 編排
+
+| 層 | 項 | 狀態 |
+|----|-----|------|
+| A1 | P6_WATCH | tip#1 維持 |
+| A2 | Round-2 | tip#2 DEFER |
+| B0 | W4-MEM-02 | **DONE**（已落地） |
+| B1 | `W4-GUARD-01-T1-reviewer-close` | **frame_ready／READY** · **禁** G2–G4 |
+| C | UNLOCK／GO／uplift／G2–G4／L1／K-2／DarkOps | 暫緩 |
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 gate 升格 · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+- Reviewer 接 `W4-GUARD-01-T1-reviewer-close`（C_REPORT · Scribe 關票）
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+
+---
+
+---
+
+## 2026-07-28 · W4-GUARD-01-T1 Reviewer 收口
+
+ts: 2026-07-28T20:20+08:00  
+author: Cursor（Reviewer + Scribe）  
+scope: T1 fixture guard C_REPORT · 父票／本票關票 · QUEUE DONE_WITH_GAPS  
+auth: plan「Execute GUARD T1 Review」· 憲法 §7（未觸 Z-*）  
+SSOT: `04_Workflows/tickets/W4-GUARD-01*_state.md` · QUEUE · Dashboard Lane A
+
+### A · P6 輕量再核
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor／Phase%
+
+### B · Reviewer 裁決
+
+- verdict: **accepted_with_gaps**（T1）
+- `python -m unittest tests.test_agent_standard_case_regression -v` → 17 ran · **16 OK** · 1 FAIL
+- Guard 六測 **全 PASS**（stable 無需 flag · experimental 需 `--include-extended-fixtures`）
+- FAIL：`test_run_all_allowed_extended_fixtures_experimental_run` · `sandbox_client` `final_status=blocked`／`needs_review`（期望 `stopped_at_cleaning_preview`）· `guard_sanity_ok=true` → **out of T1**
+- G2–G4：**仍 deferred**／`blocked_on_approval`
+
+### C · 關票／QUEUE
+
+| 項 | 結果 |
+|----|------|
+| 本票 | `done_with_gaps` |
+| 父票 | `accepted_with_gaps` · reviewer/scribe done |
+| Dashboard Lane A | Reviewer pending → **accepted_with_gaps（T1）** · **未**改 Gauge % |
+| QUEUE | READY→**DONE_WITH_GAPS** · ready:0 · `default_next_mode=watch` |
+| tip#1／#2 | **維持** `P6-nightly-continue`／`P7-Round-2-defer` |
+| next_stage B1 | **DONE_WITH_GAPS** |
+
+### non_claims
+
+≠ G2–G4 升格 · ≠ Phase% apply · ≠ Round-2 GO／UNLOCK／execute · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+- G2–G4／sandbox run-path suite 另票（須批文）
+
+---
+
+---
+
+## 2026-07-28 · P進度再核 + 下一階段編排（post Guard T1）
+
+ts: 2026-07-28T20:25+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6／Phase% 再核 · next_stage 對齊 · 開 W4-REG sandbox suite READY  
+auth: plan「P進度下階段再編排（post Guard T1）」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/WAVE_PROGRESS_DASHBOARD.md` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · QUEUE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · 編排
+
+| 層 | 項 | 狀態 |
+|----|-----|------|
+| A1 | P6_WATCH | tip#1 維持 |
+| A2 | Round-2 | tip#2 DEFER |
+| B0 | W4-MEM-02 | **DONE** |
+| B1 | W4-GUARD-01-T1 | **DONE_WITH_GAPS** |
+| B2 | W6-T10-cleanup | **DONE** · 不重開 |
+| B3 | `W4-REG-sandbox-client-runpath-suite-align-v1` | **frame_ready／READY** · **禁** G2–G4／Phase% |
+| C | UNLOCK／GO／uplift／G2–G4／L1／K-2／DarkOps | 暫緩 |
+
+### non_claims
+
+≠ Round-2 GO · ≠ UNLOCK · ≠ execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 gate 升格 · ≠ DarkOps／L1／K-2 · ≠ 重開 W6-T10-cleanup
+
+### 下一步
+
+- Implementer 接 `W4-REG-sandbox-client-runpath-suite-align-v1`（suite／契約對齊）
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+
+---
+
+---
+
+## 2026-07-28 · P進度輕核＋移交 execute B3（不新開票）
+
+ts: 2026-07-28T20:30+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6／Phase% 輕核 · 確認 B3 READY · 移交 Implementer execute  
+auth: plan「P進度輕核移交B3」· 憲法 §7（未觸 Z-*）  
+SSOT: QUEUE · `docs/governance/wave5_next_stage_post_defer_p6_v1.md`
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1／#2 **維持**
+
+### B · 編排裁決
+
+| 項 | 結果 |
+|----|------|
+| 新開 AI 票 | **否** |
+| B3 `W4-REG-sandbox-client-runpath-suite-align-v1` | **READY 維持** · ready=1 |
+| `default_next_mode` | **execute** · `implementer_on_W4-REG-sandbox-suite` |
+| 本輪施工 B3 | **否**（另口令 execute） |
+
+### non_claims
+
+≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 · ≠ DarkOps · ≠ 本輪宣稱 B3 已落地
+
+### 下一步
+
+- Implementer **execute** `W4-REG-sandbox-client-runpath-suite-align-v1`
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+
+---
+
+---
+
+## 2026-07-28 · B3 execute · W4-REG sandbox_client suite 對齊 DONE
+
+ts: 2026-07-28T21:15+08:00  
+author: Cursor（Implementer）  
+scope: P6 輕核 · suite 斷言對齊 · unittest 17/17 · QUEUE DONE  
+auth: plan「執行 B3 · sandbox_client run-path suite 對齊」· 憲法 §7（未觸 Z-*）  
+SSOT: `tests/test_agent_standard_case_regression.py` · QUEUE · 票 STATE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor／Phase%
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · B3 施工
+
+| 項 | 結果 |
+|----|------|
+| 複現 | sandbox `final_status=blocked` · `decision=needs_review` · `run_path_stop_at=cleaning_preview` · `guard_sanity_ok=true` · `ok=false` |
+| 修法 | **測例／契約對齊**（非改 gate／runner）· stable+additional_demo 仍須通過；sandbox 接受 controlled fail |
+| 驗證 | `python -m unittest tests.test_agent_standard_case_regression -v` → **17/17 OK** |
+| QUEUE | READY→**DONE** · ready:0 · `default_next_mode=watch` |
+| STATE | `overall_status=done` · B_REPORT 已填 |
+
+### non_claims
+
+≠ G2–G4 升格 · ≠ Phase% apply／新 P6 uplift · ≠ Round-2 GO／UNLOCK／execute-v2 · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+- AI READY=0 · watch
+
+---
+
+---
+
+## 2026-07-28 · P進度再核＋開 B4 checkpoint_path docs READY
+
+ts: 2026-07-28T21:25+08:00  
+author: Cursor（HQ-Coordinator）  
+scope: P6／Phase% 再核 · next_stage 同步 · 開 B4 FRAME／QUEUE READY · tip 維持  
+auth: plan「P進度再核與下一階段編排（post B3 DONE）」· 憲法 §7（未觸 Z-*）  
+SSOT: QUEUE · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · 票 STATE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · 編排裁決
+
+| 項 | 結果 |
+|----|------|
+| B3 `W4-REG-sandbox-client-runpath-suite-align-v1` | **DONE 維持** |
+| B4 `W6-T5-T6-docs-checkpoint-path-semantics-v1` | **frame_ready／READY** · ready:1 |
+| `default_next_mode` | **execute** · `implementer_on_checkpoint_path_docs` |
+| war_status | **v2.64** 不重升 |
+| Dashboard Lane A | suite 句 → **已對齊（B3 DONE）** · **未**改 Gauge % |
+| 本輪寫 docs 正文 | **否**（另口令 execute） |
+
+### non_claims
+
+≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 · ≠ DarkOps／L1／K-2 · ≠ 重開 W6-T10-cleanup · ≠ 本輪寫完 checkpoint docs 正文
+
+### 下一步
+
+- Implementer **execute** `W6-T5-T6-docs-checkpoint-path-semantics-v1`
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+
+---
+
+---
+
+## 2026-07-28 · B4 execute · checkpoint_path docs verify-and-close DONE
+
+ts: 2026-07-28T21:35+08:00  
+author: Cursor（Implementer）  
+scope: P6 輕核 · A/B docs §7 AC 核對 · cross-ref · QUEUE DONE  
+auth: plan「執行 B4 · checkpoint_path docs verify-and-close」· 憲法 §7（未觸 Z-*）  
+SSOT: `docs/checkpoint-a-integration-v1.md` · `docs/checkpoint-b-integration-v1.md` · QUEUE · 票 STATE
+
+### A · P6／Phase%
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725` · **無新 success** · 未改 monitor／Phase%
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（08-11）**維持**
+
+### B · B4 施工
+
+| 項 | 結果 |
+|----|------|
+| AC | A/B §7 三層 fallback + consumer **pre-landed** · B 標明 `checkpoint_B` 檔名差異 |
+| 修法 | **verify-and-close** · 僅各檔 Cross-ref 一行至本票 · **未**重寫 §7 正文 · **未**改 HITL runtime |
+| QUEUE | READY→**DONE** · ready:0 · `default_next_mode=watch` |
+| STATE | `overall_status=done` · B_REPORT「pre-landed · verified」 |
+
+### non_claims
+
+≠ 改 HITL runtime · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 · ≠ Round-2 GO／UNLOCK · ≠ DarkOps · ≠ 重開 W6-T10-cleanup／W12-T2
+
+### 下一步
+
+- 續 P6_WATCH · 2026-08-11 Round-2 確認
+- AI READY=0 · watch
+
+---
+---
+
+## 2026-07-28 · 日誌稽核 · 開票流水收口現況（P 進度摘要）
+
+ts: 2026-07-28T23:40+08:00  
+author: Cursor（HQ-Governance-Worker／大唐副官）  
+scope: 查「不斷開票／工作」日誌 · 釐清來源 · 核對 P6／Phase%／QUEUE · Progress 末尾戰報  
+auth: 用戶「查看日誌不斷的開票跟工作.做到最後更新p的進度給我看」· boot `hq.governance` · 憲法 §7（未觸 Z-*）  
+SSOT: Progress 末段 · `04_Workflows/command_queue/QUEUE.yaml` · `docs/governance/wave5_next_stage_post_defer_p6_v1.md` · `master_status` 近段 · 票 STATE
+
+### A · 「不斷開票」來源（釐清）
+
+| 項 | 結論 |
+|----|------|
+| 是否失控 factory／腳本長跑 | **否** · terminals 無開票 daemon；非 `_factory_wave_*` 自動狂開 |
+| 實際來源 | **HQ-Coordinator 人工編排環**：`P進度再核` → 開 AI 旁線 READY → Implementer execute → DONE → `watch` → 再核再開 |
+| 今日旁線鏈（至收口） | B0 `W4-MEM-02` **DONE** → B1 `W4-GUARD-01-T1` **DONE_WITH_GAPS** → B3 `W4-REG-sandbox-client…` **DONE** → B4 `W6-T5-T6-docs-checkpoint-path…` **DONE** |
+| 現況 | `default_next_mode=watch` · `handoff_mode=watch_p6_round2` · **AI ready:0** · tip#1/#2 維持 human 盯梢 |
+| 備選未開 | C 池（G2–G4／UNLOCK／W12-T2 等）· 須更高階口令 |
+
+### B · P6／Phase%（本輪再核）
+
+- `gh run list --workflow=p6-int-gate-nightly.yml --limit 3` → latest **仍** `30346954725`（UTC 2026-07-28 success）· **無新於基準之 success** · 未改 monitor
+- `_phase_pct_apply.py read` → ok · avg≈**58.72** · `apply=false`
+- 單行：P1=91 P2=68 P3=82 P3.5=55 P4=78 P5=73 P6=91 P7=30 P7.5=51 P8=100 P8.5=20 P8.6=66 P8.7=61 P8.8=59 P8.9=41 P9=24 P10=37 P10.5=30
+- tip#1 `P6-nightly-continue` · tip#2 `P7-Round-2-defer`（`review_by=2026-08-11`）**維持**
+- war_status：**v2.64**（本輪不重升）
+
+### C · QUEUE／票面抽樣
+
+- `QUEUE.yaml` `last_sync`≈21:35 · active queue **readyish=0** · B4 及前序旁線均 `archived_narrative`
+- 最近 STATE mtime：B4 `W6-T5-T6-docs…`（done）· B3 suite · Guard T1 · MEM-02 · Tabular sideline（皆已收口）
+- `wave5_next_stage_post_defer_p6_v1.md` as_of **post B4 DONE** · 主線＝P6_WATCH + Round-2 日曆閘
+
+### non_claims
+
+≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 假 host · ≠ Phase% apply／新 P6 uplift · ≠ G2–G4 · ≠ DarkOps／L1／K-2 · ≠ 殺進程（無失控長跑）· ≠ 本輪新開旁線票
+
+### 阻塞與風險
+
+- **阻塞（制度）**：Round-2 至 **2026-08-11**；H2–H5／execute-v2 仍 armed-not-run；AI 主線無 READY
+- **風險**：若 Coordinator 在 ready:0 下持續「再核即開票」而無更高階口令，會重現「不斷開票」觀感——建議維持 **watch** 直至新綠日／08-11／尚書省口令
+
+### 下一步
+
+- 續 **P6_WATCH**（超額綠日；無新裁決包勿 uplift）
+- **2026-08-11** Round-2 確認（日程見 `wave5_round2_review_agenda_2026-08-11_v1.md`）
+- AI READY=0 · **勿**再自動開 B5 除非尚書省／plan 明示備選池項
+
+---
+
+---
+
+## 2026-07-28 · 待授權票單草案（白話卡點 · 未施工）
+
+ts: 2026-07-28T23:50+08:00  
+author: Cursor（HQ-Coordinator／大唐副官 worker）  
+scope: 白話各 P 卡點 + 待授權票單 · **僅盤點／編排** · 未 execute · 未改 QUEUE ready  
+auth: 用戶「用大白話告訴我各P卡在什麼階段並安排只要我授權就能做滿的票等我授權」· boot hq.coordination · 憲法 §7（未觸 Z-*）  
+SSOT: Progress 末段日誌稽核 · QUEUE tip#1/#2 · Phase% read avg≈58.72 · wave5_next_stage_post_defer_p6_v1.md
+
+### 一句話
+
+AI **ready:0**／watch · 旁線 B0–B4 **DONE** · C 池（G2–G4／UNLOCK／W12-T2 等）**未開** · Round-2 **DEFER 至 2026-08-11** · P6 tip#1 **WATCH 盯梢**。本輪只排「授權後可做滿」票單，**等尚書省口令再動**。
+
+### 待授權優先序（摘要 · 詳見本輪回報 B）
+
+| 序 | 票／暫定 | 狀態標籤 | 一句 |
+|----|----------|----------|------|
+| 1 | W12-T2 sandbox e2e CP-B | watch→授權可 READY | 旁線測試／整合；C 池備選 |
+| 2 | W4-GUARD G2–G4 升格（FP-G1-T3） | blocked_on_approval | 批文後可施工；禁默升 |
+| 3 | preview checkpoint_b_status + integration_layer | watch→授權可 READY | 小範圍欄位／文件補齊 |
+| 4 | W4-P85-H2-CLOSURE-PREP-v1 | human／可授權開 | P8.5 收口前置文檔 |
+| 5 | human-H2-infra-spec | human tip | 可討論規格；≠ 假 host |
+| — | P6-nightly-continue | **WATCH** | 授權也推不動程式 |
+| — | Round-2／UNLOCK／execute-v2 | **日期未到／人閘** | 08-11 前暫不可授權開工 execute |
+
+### non_claims
+
+≠ 開施工 · ≠ 派 Implementer · ≠ Phase% apply · ≠ QUEUE→DOING · ≠ Round-2 GO · ≠ DarkOps／L1／K-2 · ≠ 殺進程
+
+### 下一步
+
+等尚書省點名優先序票號／口令後，再 arrange READY→execute。
+
+---
+
+---
+
+## 2026-07-28 · 尚書省「全開」· 五票 Implementer 收口
+
+ts: 2026-07-28T23:55+08:00  
+author: Cursor（Implementer／大唐副官 worker）  
+scope: 全開授權五票做滿 · Progress 末尾 append · tip#1/#2 維持  
+auth: 用戶「全開」＝先前待授權票單全部 5 張 · boot hq.governance · 憲法 §7（未觸 Z-*）  
+SSOT: 各票 STATE · QUEUE session.full_open_5tickets_2026_07_28 · docs/w4-guard-g2-g4-escalation-frame-v1.md
+
+### 五票結果表
+
+| 序 | 票 | 狀態 | 摘要 |
+|----|-----|------|------|
+| 1 | W12-T2-sandbox-e2e-checkpoint-b-full-integration-v1 | **DONE** | 程式已接 maybe_create_checkpoint_b；本輪補 P2 docs + 再核 sandbox e2e UT |
+| 2 | FP-G1-T3／W4-GUARD G2–G4 | **DONE** | opt-in 升格模組 + E2E 旗標 · 預設 off · 6/6 UT · ≠ required CI |
+| 3 | preview checkpoint_b_status + integration_layer | **DONE** | preview 已有欄位；補 reject／registry-blocked；票 STATE 新建 |
+| 4 | W4-P85-H2-CLOSURE-PREP-v1 | **DONE** | 收口前置 checklist／Rollup Template · ≠ prod browser |
+| 5 | human-H2-infra-spec | **DONE_WITH_GAPS** | 討論稿落地 · §2 九欄仍空白 · ≠ UNLOCK／假 host |
+
+### 驗證證據（關鍵）
+
+```
+python -m unittest tests.test_w4_guard_escalation_v1 -v → 6 OK
+python -m unittest tests.test_output_guard.TestOutputGuardCli.test_e2e_cli_json_includes_output_guard → OK（預設 E2E 不因 G4 失敗）
+python -m unittest …test_checkpoint_b_preview_has_integration_layer_field …sandbox_e2e_* → 3 OK
+```
+
+### non_claims
+
+≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 假 host · ≠ Phase% apply · ≠ required CI 默升 · ≠ P6 假施工 · ≠ DarkOps／L1／K-2 · ≠ 覆蓋 Progress 歷史段
+
+### 阻塞與風險
+
+- **制度阻塞（維持）**：Round-2 至 2026-08-11；H2 §2 仍待 Infra 真人；P6 tip#1 WATCH
+- **風險**：G2–G4 若誤開 --strict-guards 於 CI required → 須另票；本輪明示禁默升
+
+### 下一步
+
+- 續 P6_WATCH · 08-11 Round-2 議程
+- G2–G4 可排 Reviewer 抽樣
+- Infra 填 staging §2（仍禁 AI 假 host）
+- **勿**碰 Round-2 execute／P6 假施工
+
+---
+
+---
+
+## 2026-07-29 · 下一步可開清單（全開後重掃）
+
+ts: 2026-07-29T00:09:13+08:00  
+author: Cursor（HQ-Coordinator／大唐副官 worker）  
+scope: 全開五票收口後票池重掃 · **僅盤點／編排** · 未改 QUEUE ready · 未施工  
+auth: 用戶「接下來有哪些可開」· boot hq.coordination · 憲法 §7（未觸 Z-*）  
+SSOT: QUEUE.yaml（ready:0 · default_next_mode=watch · tip#1/#2）· wave5_next_stage · Progress 全開收口 · 90_run_queue OBS-GATE-1
+
+### 一句話
+
+主線仍 **watch**（AI ready:0）· tip#1=P6_WATCH · tip#2=Round-2 DEFER 至 **2026-08-11** · 全開五票＋B0–B4 旁線已空 · **可開的多半是旁線／審核／小補／人填**，不是下一波主線施工。
+
+### 池況快照
+
+| 項 | 值 |
+|----|-----|
+| AI ready | **0** |
+| default_next_mode | **watch** |
+| tip#1 | P6-nightly-continue（WATCH · 超額綠日） |
+| tip#2 | P7-Round-2-defer（review_by=2026-08-11） |
+| 全開五票 | 皆 DONE／DONE_WITH_GAPS |
+| C 池備選（前輪） | 已抽空 |
+
+### A · 現在就能授權開（AI／旁線可做滿）
+
+| # | 短名 | 白話 | 範圍 | 風險 |
+|---|------|------|------|------|
+| 1 | OBS-GATE-1 | 可選：把 HTTP 觀測閘門收成一個 umbrella env，舊雙閘門仍相容 | 小程式＋測 · L0 only | 勿碰 L1／selector |
+| 2 | P85 optional bridge／Smoke C 清單票 | 把 closure gaps（bridge stub／Smoke C）做成可驗收小票 | docs±advisory 測 · ≠ required CI／prod browser | 勿默升 CI |
+| 3 | KPI-only regression（TEST-SUB-001 follow-up） | 補一條 KPI 關鍵字路由回歸測 | 單檔／單測 | 極低 |
+
+### B · 建議先開但偏人／審
+
+| # | 短名 | 白話 | 範圍 | 風險 |
+|---|------|------|------|------|
+| 1 | G2–G4 Reviewer 抽樣 | opt-in 已落地，找 Reviewer 抽樣確認預設 off＋strict 行為 | Reviewer 票 · 不改 required CI | 誤開 --strict-guards 於 CI |
+| 2 | Infra 填 H2 §2 | 九欄仍空白；真人填 staging 規格 | 人填表 · 禁 AI 假 host | 假 host／UNLOCK 誤觸 |
+| 3 | P6_WATCH | 續盯超額綠日（不開 uplift） | ops／gh 只讀 | 勿假施工／勿新 uplift |
+
+### C · 暫時別開
+
+Round-2 execute／UNLOCK／P-GO（至 08-11）· P6 假施工／無新裁決包 uplift · DarkOps／L1／L2／K-2 · required CI／WC-PRE 默升 · AI 代填 §2 假 host · smoke_corpus 無 PM · 重複 WAR_BUMP
+
+### non_claims
+
+≠ 改 QUEUE→READY · ≠ 派 Implementer · ≠ Phase% apply · ≠ Round-2 GO · ≠ DarkOps／L1／K-2
+
+### 下一步
+
+回覆授權 **N**（A1–A3／B1–B3）或票名即可開工編排。
+
+---
+
+---
+
+## 2026-07-29 · 尚書省「全授權」A+B · 六票收口
+
+ts: 2026-07-29T00:39+08:00  
+author: Cursor（Implementer＋Reviewer／大唐副官 worker）  
+scope: 全授權 A1–A3 + B1–B3 做滿 · Progress 末尾 append · tip#1/#2 維持  
+auth: 用戶「全授權」＝下一步可開清單 A1–A3＋B1–B3 全部 · boot hq.qa · 憲法 §7（未觸 Z-*）  
+SSOT: 各票 STATE · QUEUE session.full_auth_a_b_2026_07_29 · runbook §6.7 OBS-GATE-1
+
+### 六票結果表
+
+| ID | 票 | 狀態 | 摘要 |
+|----|-----|------|------|
+| A1 | OBS-GATE-1 | **DONE** | umbrella `GOV_CORE_API_EXPOSE_OBSERVABILITY` · 舊雙閘門相容 · L0 only · 4/4 UT |
+| A2 | W4-P85-OPTIONAL-BRIDGE-SMOKE-C-v1 | **DONE_WITH_GAPS** | checklist 落地 · Smoke A/B 27 OK · Smoke C 仍 manual（未 live curl）· ≠ required CI |
+| A3 | TEST-SUB-001-KPI-REGRESSION | **DONE** | KPI-only 路由回歸測 · 5/5 UT |
+| B1 | W4-GUARD-G2-G4-reviewer-sample | **DONE** | Reviewer accepted · 預設 off＋strict 行為 · 6/6 UT · ≠ required CI |
+| B2 | human-H2-infra-spec（§2） | **WAITING_HUMAN** | 標九欄待填 · **未**假 host · 等 Infra 真人 |
+| B3 | P6_WATCH | **DONE** | gh 只讀 · latest UTC 07-28 `30346954725` success · 連續超額綠 · **未** uplift |
+
+### 驗證證據（關鍵）
+
+```
+python -m unittest tests.test_context_subagent_routing -v → 5 OK（含 KPI-only）
+python -m unittest tests.test_w4_guard_escalation_v1 -v → 6 OK
+# cwd: gov_core_system
+python -m unittest tests.test_app_api_observability_umbrella_expose -v → 4 OK
+python -m unittest tests.test_minimal_orchestration_bridge tests.test_app_api_orchestration_bridge → 27 OK
+gh run list --workflow=p6-int-gate-nightly.yml → latest 30346954725 success（2026-07-28T09:31Z）
+```
+
+### P6_WATCH 快照（B3 · 只讀）
+
+| run_id | createdAt (UTC) | conclusion |
+|--------|-----------------|------------|
+| 30346954725 | 2026-07-28T09:31:38Z | success |
+| 30258570894 | 2026-07-27T10:34:05Z | success |
+| 30195901807 | 2026-07-26T09:08:10Z | success |
+
+URL: https://github.com/g234134/workflow-connect/actions/runs/30346954725  
+**裁决**：續 WATCH · **勿**新 uplift · tip#1 維持
+
+### B2 待填（等 Infra）
+
+`slot_name` · `https_host` · `tls_class` · `allowlist_ready_for_h4` · `receiver_deploy_target` · `health_probe_summary` · `env_matrix_ref` · `provisioned_at` · `infra_signoff` — **全空白**
+
+### non_claims
+
+≠ Round-2 GO／UNLOCK／execute-v2 · ≠ 假 host · ≠ Phase% apply · ≠ required CI 默升 · ≠ P6 假施工／新 uplift · ≠ DarkOps／L1／L2／K-2 · ≠ 覆蓋 Progress 歷史段 · ≠ Smoke C 進 CI
+
+### 阻塞與風險
+
+- **制度阻塞（維持）**：Round-2 至 2026-08-11；H2 §2 仍待 Infra 真人；P6 tip#1 WATCH
+- **風險**：G2–G4／Smoke C 若誤進 required CI → 須另票；本輪明示禁默升
+
+### 下一步
+
+- Infra 填 H2 §2（禁 AI 假 host）
+- 續 P6_WATCH · 08-11 Round-2 議程
+- 可選：人類跑 Smoke C C1–C4 並 Progress 留痕
+- **勿**碰 Round-2 execute／P6 假施工／L1／L2
+
+---

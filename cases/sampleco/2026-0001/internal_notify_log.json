@@ -1,0 +1,461 @@
+{
+  "schema_version": "tabular-internal-notify-v1",
+  "entries": [
+    {
+      "event": "case.idle_to_running",
+      "ts": "2026-06-26T23:44:12+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "previous_status": "idle",
+        "requested_by": "operator",
+        "restart": true
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:44:42+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:44:49+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:03:18+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:03:24+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:03:28+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:04:21+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:04:26+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:06:32+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:06:32+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:06:53+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:06:53+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:07:01+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:07:02+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:07:07+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:07:08+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:13:53+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:13:53+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:13:59+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:13:59+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:14:35+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:14:36+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:11+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:11+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:19+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:20+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:22:13+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:22:14+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:27:52+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:27:52+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:16+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:18+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:36+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:36+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:31:54+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:31:55+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-07-28T10:07:42+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-07-28T10:07:42+00:00",
+      "case_id": "2026-0001",
+      "payload": {
+        "checkpoint": "b",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_b",
+        "pause_reason": "awaiting_checkpoint_b",
+        "error": "Checkpoint B created; awaiting human decision."
+      }
+    }
+  ],
+  "case_id": "2026-0001",
+  "last_event_at": "2026-07-28T10:07:42+00:00"
+}

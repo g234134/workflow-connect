@@ -385,6 +385,38 @@
 
 ---
 
+## Wave B — 知識層 bootstrap（2026-06-05）
+
+```yaml
+- id: WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE
+  lane: P
+  title: 治理關鍵 subtree 真實 index 回填（W2-1 閉環）
+  status: done
+  primary_dimensions: [D2, D4, D5]
+  secondary_dimensions: []
+  expected_metric_shift: >
+    W2-1 pilot index 由 sample 升級為真實 repo_index_v1 bootstrap；案卷 kb_index_status=ready；IMP-AI-READY gate allow。
+  result_summary: >
+    workflow_v2/kb/wave_b_gov_scope.json + repo_index_bootstrap.py；index_status_W2-1.json（file_count=190，chunk_count=1204）；
+    sync/gate/RAG smoke 全綠；tests.test_kb_index_bootstrap 10/10 OK；暗部替換留 Wave C。
+```
+
+```yaml
+- id: WAVE-B-P2-EVAL-TRACE-CORRELATE
+  lane: P
+  title: eval_export 與 gov-trace-v2 關聯追查 CLI
+  status: done
+  primary_dimensions: [D4]
+  secondary_dimensions: [D5]
+  expected_metric_shift: >
+    needs_review / infra_risk 列可一鍵 join trace 摘要；減少手動 copy-paste trace_id 到 trace_query。
+  result_summary: >
+    observability/eval_trace_correlate.py；join trace_id>task_id>session_id；tests.test_eval_trace_correlate；
+    fixture sample_traces.jsonl 增 tr-3/t-infra；nightly artifact 留 Wave C。
+```
+
+---
+
 ## 決策備註（主代理留痕）
 
 - **2026-05-23**：倉庫原先無 `90_run_queue.md`；本檔為**首版落盤**，直接將本輪 6 線標為 `done`（代碼與測試已存在於戰車根／暗部，見各 `result_summary`）。  
@@ -401,3 +433,4 @@
 - **範圍裁決（尚書省 · 2026-06-05 · Option A）**：Phase 1 gate = local shadow only；remote → `K2-phase1-remote-rollout`（P1 · todo），不阻塞 Phase 2 canary。
 - **2026-05-25（K2-phase1-remote-rollout-runbook）**：遠端 rollout **runbook 藍圖** 結清 → Done（`docs/k2_phase1_remote_rollout_runbook.md`）；實作票见 `K2-phase1-remote-rollout`。
 - **2026-06-05（WAVE-CORE-P0-PHASE1-ROLLOUT-DECISION · Option A）**：Phase 1 gate = **local shadow only**（`K2-phase1-prod-shadow` 标 **local-only gate**）；remote prod rollout 另票 **`K2-phase1-remote-rollout`（P1 · todo）**，**不阻塞** Phase 2 canary；见 `00_master_plan.md` §4.8、`04_Workflows/00_Agent_Work_Progress.md` 战报。
+- **2026-06-05（WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE）**：Wave B repo index bootstrap **done**；治理 subtree 真實 index → sync → gate → manifest RAG smoke 全鏈跑通；見 `workflow_v2/20_pilot/W3-B/W3-B_index_pipeline_runbook.md` 附錄 A。

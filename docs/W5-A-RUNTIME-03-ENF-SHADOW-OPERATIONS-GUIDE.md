@@ -382,6 +382,7 @@ ENF-RULE-1 目前**看起來**咬在合理的高風險 pattern 上；C3-05 提�
 | `observability/enf-preview/README.md` | Preview 層簡介 |
 | `.github/workflows/eval-gate-ci.yml` | nightly ENF step 所在 workflow |
 | `tests/fixtures/enf/shadow_summaries_sample.log` | Analyzer 練習用 fixture（含 spike） |
+| `docs/phase3-5-cost-model-governance-contract-v1.md` | Phase 3.5 gate SSOT；`SG-ENF-PREVIEW` · **`GOV_ENF_BLOCKING_CANARY=0`** 语义 |
 
 ---
 

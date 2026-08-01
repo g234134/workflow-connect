@@ -1,0 +1,24 @@
+{
+  "schema_version": "graphrag_jobs_thin_fixture_v1",
+  "notes": "Local fixture only · ≠ production graphrag_jobs table · ≠ primary retrieval",
+  "jobs": [
+    {
+      "job_id": "grag-fixture-ok-001",
+      "job_type": "graphrag",
+      "status": "queued",
+      "attempt": 0,
+      "skeleton": true,
+      "payload_ref": "fixture://ok-path"
+    },
+    {
+      "job_id": "grag-fixture-fail-001",
+      "job_type": "graphrag",
+      "status": "queued",
+      "attempt": 0,
+      "skeleton": true,
+      "payload_ref": "fixture://fail-path",
+      "simulate": "fail",
+      "error_code": "FIXTURE_SIMULATED_FAIL"
+    }
+  ]
+}

@@ -270,3 +270,18 @@ flowchart TD
 - 路径：`docs/k2_deployment_governance.md`（本文件）  
 - 索引：`00_master_plan.md` §4.8、`_workflow_upgrade/90_run_queue.md` `K2-rollout-governance`  
 - Phase 2 canary 批文草案：见 `docs/drafts/HQ-GOV-K2-P2-CANARY-DRAFT.md`（草案 · 暂不生效）
+
+---
+
+## 11. Phase 3.5 contract 索引（WA-T3）
+
+> **SSOT**：`docs/phase3-5-cost-model-governance-contract-v1.md` — gate 分类（mandatory / optional / shadow-only）及 `blocks_mainline` 语义。
+
+| 本文件章节 | contract 引用 |
+|------------|---------------|
+| §3 Rollout 模式 · §4 Phase 0–4 矩阵 | contract §5（**不包含** Phase 2 prod canary 授权） |
+| §4.2 Phase 1 prod shadow | contract `SG-K2-SHADOW-EXPORT` · `SG-EVAL-SHADOW-NIGHTLY` |
+| §6 指标与 `eval_ci_check` | contract §4 nightly（0.60 + `infra_risk`）vs §3 PR（0.72） |
+| §7 回退 | contract §7 rollback 指针 |
+
+**Wave B/C 假设**：读 contract §2.1 知 PR mandatory trio；**不得** 因读本票误开 blocking canary 或改 eval 门槛。

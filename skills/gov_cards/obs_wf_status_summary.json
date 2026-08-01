@@ -1,0 +1,26 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.wf.status_summary",
+  "title": "WF status summary (Gate / Index / Trace)",
+  "brief": "Assemble one-page workflow status from eval report, index_status, and eval–trace correlate (read-only; no gate logic changes).",
+  "domain": "obs",
+  "module_path": "observability/wf_status_summary.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.wf_status_summary --eval tests/fixtures/eval/eval_export_sample.jsonl --index-status workflow_v2/20_pilot/W3-B/index_status_W2-1.json --trace-jsonl tests/fixtures/trace/sample_traces.jsonl --out-dir artifacts/wf",
+  "inputs": [
+    "--eval eval_export.jsonl",
+    "--index-status index_status_*.json",
+    "--trace-jsonl gov-trace-v2.jsonl",
+    "--out-dir"
+  ],
+  "outputs": [
+    "artifacts/wf/wf_status_summary.latest.md",
+    "artifacts/wf/wf_status_summary.latest.json"
+  ],
+  "verify_command": "python -m unittest tests.test_wf_status_summary -v",
+  "wave_ticket": "WAVE-B-P3-WF-STATUS-SUMMARY-CLI",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer", "scribe"],
+  "depends_on": ["obs.eval.report", "obs.eval.correlate", "kb.index.bootstrap"]
+}

@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "schema_version": "c2-demo-v1",
+    "job_id": "test-fiverr_titanic_v1",
+    "report_type": "clean_basic_generic",
+    "cleaning_profile_id": "fiverr_titanic_v1",
+    "generated_at": "2026-07-19T22:50:33.715362+00:00",
+    "disclaimer": "Generic low-risk profile; manual review recommended for first use",
+    "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+    "cleaning_profile_ref": "docs/tabular-cleaning-profiles-v1.md"
+  },
+  "case_id": "unknown",
+  "client_ref": "unknown",
+  "product_sku": "CLEAN-BASIC",
+  "generated_at": "2026-07-19T22:50:33.715362+00:00",
+  "summary": {
+    "job_id": "test-fiverr_titanic_v1",
+    "sku": "CLEAN-BASIC",
+    "total_rows": 891,
+    "accepted_rows": 891,
+    "accepted_units": 891,
+    "rejected_rows": 0,
+    "rejected_units": 0,
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "chargeable_hint": false
+  },
+  "product_metrics": {
+    "total_rows": 891,
+    "accepted_rows": 891,
+    "rejected_rows": 0,
+    "duplicate_rows_found": 0,
+    "duplicate_rows_removed": 0,
+    "missing_rate_by_field": {
+      "PassengerId": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Survived": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Pclass": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Name": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Sex": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Age": {
+        "before": 0.1987,
+        "after": 0.1987
+      },
+      "SibSp": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Parch": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Ticket": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Fare": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "Cabin": {
+        "before": 0.771,
+        "after": 0.771
+      },
+      "Embarked": {
+        "before": 0.0022,
+        "after": 0.0022
+      }
+    },
+    "anomaly_count_by_rule": {
+      "numeric_out_of_range": 0,
+      "format_unparseable": 0
+    },
+    "format_fixes_applied": {
+      "text_trimmed": 2,
+      "numeric_parsed": 4278
+    }
+  },
+  "cleaning_stats": {
+    "row_counts": {
+      "intake": 891,
+      "after_dedup": 891,
+      "ok": 891,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "PassengerId",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Survived",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Pclass",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Name",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Sex",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Age",
+        "missing_before": 177,
+        "missing_after": 177,
+        "rate_before": 0.1987,
+        "rate_after": 0.1987
+      },
+      {
+        "field": "SibSp",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Parch",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Ticket",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Fare",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Cabin",
+        "missing_before": 687,
+        "missing_after": 687,
+        "rate_before": 0.771,
+        "rate_after": 0.771
+      },
+      {
+        "field": "Embarked",
+        "missing_before": 2,
+        "missing_after": 2,
+        "rate_before": 0.0022,
+        "rate_after": 0.0022
+      }
+    ],
+    "product_metrics": {
+      "total_rows": 891,
+      "accepted_rows": 891,
+      "rejected_rows": 0,
+      "duplicate_rows_found": 0,
+      "duplicate_rows_removed": 0,
+      "missing_rate_by_field": {
+        "PassengerId": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Survived": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Pclass": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Name": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Sex": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Age": {
+          "before": 0.1987,
+          "after": 0.1987
+        },
+        "SibSp": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Parch": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Ticket": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Fare": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "Cabin": {
+          "before": 0.771,
+          "after": 0.771
+        },
+        "Embarked": {
+          "before": 0.0022,
+          "after": 0.0022
+        }
+      },
+      "anomaly_count_by_rule": {
+        "numeric_out_of_range": 0,
+        "format_unparseable": 0
+      },
+      "format_fixes_applied": {
+        "text_trimmed": 2,
+        "numeric_parsed": 4278
+      }
+    }
+  },
+  "issues_summary": {
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 0,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": []
+  },
+  "stats": {
+    "row_counts": {
+      "intake": 891,
+      "after_dedup": 891,
+      "ok": 891,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "PassengerId",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Survived",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Pclass",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Name",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Sex",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Age",
+        "missing_before": 177,
+        "missing_after": 177,
+        "rate_before": 0.1987,
+        "rate_after": 0.1987
+      },
+      {
+        "field": "SibSp",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Parch",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Ticket",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Fare",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "Cabin",
+        "missing_before": 687,
+        "missing_after": 687,
+        "rate_before": 0.771,
+        "rate_after": 0.771
+      },
+      {
+        "field": "Embarked",
+        "missing_before": 2,
+        "missing_after": 2,
+        "rate_before": 0.0022,
+        "rate_after": 0.0022
+      }
+    ],
+    "processing_time_ms": 0
+  },
+  "errors": {
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 0,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": []
+  },
+  "next_steps": {
+    "for_customer": [
+      "Review flagged numeric anomalies and unparseable values.",
+      "Confirm dedup rule (keep highest numeric compare column) matches business expectation."
+    ],
+    "recommended_actions": [
+      {
+        "action": "review_warnings",
+        "priority": "medium",
+        "reason": "generic profile first-run review"
+      }
+    ]
+  },
+  "cleaning_rules_applied": [
+    {
+      "rule": "trim_whitespace",
+      "description": "trim whitespace"
+    },
+    {
+      "rule": "deduplicate_by_pk",
+      "description": "deduplicate by pk"
+    },
+    {
+      "rule": "flag_numeric_outliers",
+      "description": "flag numeric outliers"
+    }
+  ],
+  "cleaning_profile_id": "fiverr_titanic_v1"
+}

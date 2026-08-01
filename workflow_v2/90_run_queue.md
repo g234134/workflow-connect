@@ -165,7 +165,7 @@
    165|   165|| W3-B-KB-CONTRACT | index 字段契约（案卷 + ENG-CTX） | W3 | G8/ENG | worker | TODO | W3-B-ORCH, W2-2-IMP-FIELD | `20_pilot/W3-B/kb_index_contract.md`；`_TEMPLATE_case`；`W3-B_case/` | 施工 **`kb_index_*`** 进模板 §2/§3；**禁止**本票改 G7/G8；`kb_index_status`：ready／stale／missing |
    166|   166|| W3-B-INDEX-PIPELINE | repo index 可查状态（批处理／离线） | W3 | ENG | worker | TODO | W3-B-KB-CONTRACT | `20_pilot/W3-B/index_pipeline_notes.md`；`index_status_*.json` 形状 | **文档 only**；对接 `repo_index_v1`／`repo_index_v1_job`；**非**全库实时；**不写** job 代码；宜先于 W3-A shadow |
    167|   167|| W3-B-GRAPHRAG-MIN | GraphRAG 最小探针（可选） | W3 | RAG | worker | TODO | W3-B-INDEX-PIPELINE | `20_pilot/W3-B/graphrag_min_probe.md` | 单 scope smoke；**不阻塞** §13.4 DoD；无 runbook 禁大型 job；产品化 → Wave 4 |
-   168|   168|| W3-B-SELECTOR-HOOK | selector 只读 hook 规格 | W3 | ENG | worker | TODO | W3-B-INDEX-PIPELINE | `20_pilot/W3-B/selector_hook_spec.md` | **规则 only**；`missing`→block repo 工具；`stale`→degrade；**不**改 prod selector／ask 主路径 |
+   168|   168|| W3-B-SELECTOR-HOOK | selector 只读 hook 规格 | W3 | ENG | worker | **DONE** | W3-B-INDEX-PIPELINE | `core/kb_index_selector_hook.py`；`W3-B_kb_contract.md` §5.4 | Wave B 最小规则；`missing`→block repo 工具；`stale`→degrade；prod flag 默认 OFF → Wave C |
    169|   169|
    170|   170|**W3-B 依赖链**：`W3-B-ORCH` → `W3-B-KB-CONTRACT` → `W3-B-INDEX-PIPELINE` → `W3-B-SELECTOR-HOOK`（`W3-B-GRAPHRAG-MIN` 并行可选）
    171|   171|
@@ -243,3 +243,11 @@
    243|   243|| `workflow_v2/10_governance/G8_artifact_contract/` | G8-* |
    244|   244|| `workflow_v2/10_governance/G10_governance_rulebook/` | G10-* |
    245|   245|
+   246|   246|---
+   247|   247|
+   248|   248|## Wave B — 知识层 bootstrap（HQ 侧车 · 2026-06-05）
+   249|   249|
+   250|   250|| ID | Title | Wave | Module | Role | Status | Depends on | Output File | Notes |
+   251|   251||----|-------|------|--------|------|--------|------------|-------------|-------|
+   252|   252|| WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE | 治理关键 subtree 真实 index 回填（W2-1 闭环） | W4+ | KB | worker | DONE | W4-B-INDEX-INTEGRATION | `kb/wave_b_gov_scope.json`；`kb/repo_index_bootstrap.py`；`20_pilot/W3-B/index_status_W2-1.json`；`20_pilot/W3-B/index_manifest_W2-1.json`；`tests/test_kb_index_bootstrap.py` | 2026-06-05：sample→真实 bootstrap；scope=core+subagents+context+observability+04_Workflows+AGENTS.md；`file_count=190`，`chunk_count=1204`；sync/gate allow；manifest RAG smoke hits≥1。**Wave C**：暗部 embed、全库增量 |
+   253|| WAVE-B-P3-WF-STATUS-SUMMARY-CLI | Gate / Index / Trace 一页总览 CLI | W4+ | Obs | worker | DONE | WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP；WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE | `observability/wf_status_summary.py`；`tests/test_wf_status_summary.py`；`artifacts/wf/wf_status_summary.latest.{md,json}` | 2026-06-05：只读组装 eval_report + index_status + trace join；单测 6/6 OK。**Wave C**：CI artifact |

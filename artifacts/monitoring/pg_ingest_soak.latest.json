@@ -1,0 +1,303 @@
+{
+  "ok": true,
+  "ingest_ok": true,
+  "ticket": "W1-T2",
+  "cohort_prefix": "w1t2-",
+  "n_requested": 20,
+  "n_api_ok": 20,
+  "pg_task_runs_count": 20,
+  "langfuse_trace_count": 20,
+  "jsonl_trace_end_count": 0,
+  "gap_pg_vs_langfuse": 0,
+  "min_pg_required": 18,
+  "max_gap_allowed": 2,
+  "preflight": {
+    "ok": true,
+    "checks": {
+      "api_reachable": {
+        "ok": true,
+        "message": "GET http://127.0.0.1:8000/healthz → HTTP 200"
+      },
+      "database_url": {
+        "ok": true,
+        "message": "DATABASE_URL set and postgres reachable"
+      },
+      "ingest_enabled": {
+        "ok": true,
+        "message": "GOV_CORE_MONITORING_INGEST_ENABLED is truthy in soak runner env"
+      },
+      "ingest_module": {
+        "ok": true,
+        "message": "core.monitoring_ingest.sync_traces importable"
+      },
+      "trace_jsonl_path": {
+        "ok": true,
+        "message": "trace JSONL not present yet at runtime/task_traces.jsonl (diagnostic only; file optional until ask pipeline writes)"
+      }
+    },
+    "message": "preflight passed",
+    "gov_core_root": "D:\\大唐三省六部\\01_Environments\\python_venvs\\gov_core_system",
+    "ingest_sync": {
+      "ok": true,
+      "traces_synced": 20,
+      "steps_synced": 160,
+      "traces_matched": 20,
+      "traces_fetched": 20,
+      "errors": [],
+      "message": "Some traces missing required fields; see missing_field_summary. Populate root trace metadata per langfuse_metadata.json.",
+      "since": "2026-06-07T06:49:41.135137+00:00",
+      "until": "2026-06-07T06:51:36.898772+00:00",
+      "session_prefix": "w1t2-",
+      "polls": 19
+    }
+  },
+  "details": [
+    {
+      "index": 1,
+      "session_id": "w1t2-958e18f2",
+      "trace_id": "5ba5e4e2488829e4d595af86d547bef5",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 2,
+      "session_id": "w1t2-856a357b",
+      "trace_id": "2032e5b3c191a366730b2a78a36bd5f3",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 3,
+      "session_id": "w1t2-19a963b0",
+      "trace_id": "5314a3844368cda0b42187a74c9ce363",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 4,
+      "session_id": "w1t2-bd67ddef",
+      "trace_id": "3ef120f3b1a32926f4777ebb5409687f",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 5,
+      "session_id": "w1t2-eded9f77",
+      "trace_id": "7c42d9cb677f9f861a3c1fd87b22fc59",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 6,
+      "session_id": "w1t2-686df780",
+      "trace_id": "595da5ffdf7f1ed4e0c429a8607c6ccf",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 7,
+      "session_id": "w1t2-21ce18c2",
+      "trace_id": "9b8d4352b339b9e087e148cd896a0262",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 8,
+      "session_id": "w1t2-9a610da3",
+      "trace_id": "86504e1c0b96bac5b4e32e55669943b3",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 9,
+      "session_id": "w1t2-f7bf68bc",
+      "trace_id": "df2ea613b58bdd0ab1080ede339e568a",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 10,
+      "session_id": "w1t2-da91995f",
+      "trace_id": "bd48747879cd90cc7d578858c16013ee",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 11,
+      "session_id": "w1t2-532d5321",
+      "trace_id": "31ff7f4bac84eb82974d50d3c811295d",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 12,
+      "session_id": "w1t2-8fb1eb96",
+      "trace_id": "388ba954ff340a133b20b574905330f5",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 13,
+      "session_id": "w1t2-8104b0dd",
+      "trace_id": "f845cf0c2121fc0ba7e72c2047e65fcb",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 14,
+      "session_id": "w1t2-0f14c032",
+      "trace_id": "a4834e60ba7b126b443a277cce247903",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 15,
+      "session_id": "w1t2-cd516952",
+      "trace_id": "55b542b6deb7f16a6d612bd3086833e3",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 16,
+      "session_id": "w1t2-b4556440",
+      "trace_id": "5708b13cf4ea60257db54930cae6fb56",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 17,
+      "session_id": "w1t2-0f4ab200",
+      "trace_id": "14b9d3053a34cfe0a4325180776bf1ef",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 18,
+      "session_id": "w1t2-e5200527",
+      "trace_id": "30bcea1654e3446723223a4a44d86f64",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 19,
+      "session_id": "w1t2-679e7699",
+      "trace_id": "998f3e350ff7b48bbd3d3c66d4570e60",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    },
+    {
+      "index": 20,
+      "session_id": "w1t2-54d7e8aa",
+      "trace_id": "f12f940b8822953ef76afbc518238f81",
+      "http_status": 200,
+      "api_ok": true,
+      "biz_ok": true,
+      "pg_row_found": true,
+      "langfuse_trace_found": true,
+      "langfuse_seen": true,
+      "jsonl_seen": false
+    }
+  ],
+  "message": "cohort counts within tolerance",
+  "generated_at": "2026-06-07T06:51:42+00:00",
+  "verification_commands": [
+    "python 04_Workflows/_phase5_pg_ingest_soak.py --n 20",
+    "curl http://127.0.0.1:8000/monitoring/overview",
+    "cd 01_Environments/python_venvs/gov_core_system && python -m pytest tests/test_monitoring_api.py -q -k ingest"
+  ]
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三省六部指揮台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0c12;color:#e2e4ea;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;background:#0d1017;border-right:1px solid #1a1e2a;display:flex;flex-direction:column;flex-shrink:0}
+.sidebar-brand{padding:16px 14px;font-size:13px;font-weight:700;color:#a0d2db;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;gap:8px}
+.brand-icon{font-size:16px}
+.sidebar-nav{flex:1;padding:8px 0;overflow-y:auto}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 14px;color:#8a8fa0;text-decoration:none;font-size:13px;transition:all .15s;border-left:3px solid transparent}
+.nav-item:hover{background:#131620;color:#e2e4ea}
+.nav-item.active{background:#131620;color:#a0d2db;border-left-color:#3b82f6;font-weight:600}
+.nav-icon{width:18px;text-align:center;font-size:13px;flex-shrink:0}
+.sidebar-footer{padding:12px 14px;border-top:1px solid #1a1e2a;font-size:12px;color:#5a5e6e;display:flex;align-items:center;gap:8px}
+.header{height:48px;background:#0d1017;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.header-title{font-size:15px;font-weight:600;color:#a0d2db}
+.header-sub{font-size:11px;color:#5a5e6e}
+.header-right{font-size:11px;color:#5a5e6e;text-align:right}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.content{flex:1;padding:16px 20px;overflow-y:auto}
+.section{background:#0d1017;border:1px solid #1a1e2a;border-radius:8px;padding:16px;margin-bottom:16px}
+.section-title{font-size:13px;font-weight:600;color:#a0d2db;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0}
+.dot-green{background:#22c55e}
+.dot-yellow{background:#eab308}
+.dot-red{background:#ef4444}
+.dot-blue{background:#3b82f6}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:#6a6e7e;padding:6px 8px;border-bottom:1px solid #1a1e2a;font-weight:500}
+td{padding:6px 8px;border-bottom:1px solid #111320;color:#c0c4cc}
+tr:hover td{background:#131620}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+
+/* Three Provinces flow */
+.province-flow{display:flex;align-items:stretch;gap:12px;margin-bottom:16px}
+.province-box{background:#131620;border:1px solid #1a1e2a;border-radius:8px;padding:14px;flex:1}
+.province-title{font-size:13px;font-weight:600;color:#a0d2db;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.province-item{font-size:12px;color:#c0c4cc;padding:4px 0;display:flex;justify-content:space-between}
+.province-item span:last-child{color:#6a6e7e}
+.flow-arrow-h{display:flex;align-items:center;color:#3b82f6;font-size:20px;flex-shrink:0}
+
+/* Dept cards */
+.dept-card{background:#131620;border:1px solid #1a1e2a;border-radius:8px;padding:14px}
+.dept-name{font-size:13px;font-weight:600;color:#e2e4ea;margin-bottom:6px;display:flex;align-items:center;justify-content:space-between}
+.dept-count{font-size:22px;font-weight:700;color:#a0d2db}
+.dept-detail{font-size:11px;color:#6a6e7e;margin-top:4px}
+.dept-agent{font-size:10px;color:#3b82f6;margin-top:4px}
+.dept-skills{font-size:10px;color:#5a5e6e;margin-top:2px}
+
+/* Task monitor */
+.task-col{background:#131620;border:1px solid #1a1e2a;border-radius:8px;padding:12px}
+.task-col-title{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.task-count{font-size:18px;font-weight:700}
+.task-item{font-size:11px;color:#c0c4cc;padding:4px 0;border-bottom:1px solid #111320}
+
+/* KPI in section */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:8px}
+.kpi-mini{background:#131620;border:1px solid #1a1e2a;border-radius:6px;padding:10px 12px;text-align:center}
+.kpi-mini-label{font-size:10px;color:#6a6e7e}
+.kpi-mini-value{font-size:16px;font-weight:700;color:#e2e4ea;margin-top:2px}
+.kpi-mini-delta{font-size:10px;margin-top:2px}
+@media(max-width:1200px){.kpi-row,.grid-3{grid-template-columns:repeat(2,1fr)}.province-flow{flex-direction:column}}
+@media(max-width:768px){.sidebar{width:56px}.sidebar-brand span:last-child,.nav-item span:last-child,.sidebar-footer span:last-child{display:none}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-brand"><span class="brand-icon">⚔</span><span>三省六部指揮中心</span></div>
+  <nav class="sidebar-nav">
+    <a href="page01.html" class="nav-item"><span class="nav-icon">🏠</span><span>總覽</span></a>
+    <a href="page04.html" class="nav-item active"><span class="nav-icon">🏛</span><span>三省六部</span></a>
+    <a href="page03.html" class="nav-item"><span class="nav-icon">🛡</span><span>暗部執行</span></a>
+    <a href="page02.html" class="nav-item"><span class="nav-icon">⚡</span><span>技能與資源</span></a>
+    <a href="page01.html" class="nav-item"><span class="nav-icon">⚙</span><span>設定</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="nav-icon">👤</span><span>指揮官 · 系統管理員</span></div>
+</aside>
+<div class="main">
+  <div class="header">
+    <div>
+      <div class="header-title">三省六部指揮台</div>
+      <div class="header-sub">治理中樞·協同作戰·高效治理</div>
+    </div>
+    <div class="header-right">
+      <div>亞洲 / 台北</div>
+      <div>2025/05/26 14:32:18 UTC+8</div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- Three Provinces Flow -->
+    <div class="province-flow">
+      <div class="province-box">
+        <div class="province-title">💬 聊天入口 → 👑 太子</div>
+      </div>
+      <div class="flow-arrow-h">→</div>
+      <div class="province-box">
+        <div class="province-title">🏛 中書省 — 策略規劃與任務整理</div>
+        <div class="province-item"><span>策略研擬</span><span style="color:#eab308">進行中 12</span></div>
+        <div class="province-item"><span>任務整合</span><span style="color:#eab308">進行中 18</span></div>
+        <div class="province-item"><span>資源評估</span><span style="color:#eab308">進行中 09</span></div>
+        <div class="province-item"><span>風險預判</span><span style="color:#eab308">進行中 07</span></div>
+      </div>
+      <div class="flow-arrow-h">→</div>
+      <div class="province-box">
+        <div class="province-title">📜 門下省 — 審核覆核驗證</div>
+        <div class="province-item"><span>審核中</span><span>12</span></div>
+        <div class="province-item"><span>覆核中</span><span>06</span></div>
+        <div class="province-item"><span>驗證中</span><span>08</span></div>
+        <div class="province-item"><span>返回中</span><span style="color:#ef4444">03</span></div>
+      </div>
+    </div>
+
+    <!-- 尚書省 KPI -->
+    <div class="section">
+      <div class="section-title">📋 尚書省（派工中心）— 統籌派工、資源協調、進度監控</div>
+      <div class="kpi-row">
+        <div class="kpi-mini"><div class="kpi-mini-label">總任務數</div><div class="kpi-mini-value">128</div><div class="kpi-mini-delta" style="color:#22c55e">+12%</div></div>
+        <div class="kpi-mini"><div class="kpi-mini-label">執行中</div><div class="kpi-mini-value">86</div><div class="kpi-mini-delta" style="color:#22c55e">+8%</div></div>
+        <div class="kpi-mini"><div class="kpi-mini-label">已完成</div><div class="kpi-mini-value">32</div><div class="kpi-mini-delta" style="color:#22c55e">+15%</div></div>
+        <div class="kpi-mini"><div class="kpi-mini-label">執行率</div><div class="kpi-mini-value">67%</div><div class="kpi-mini-delta" style="color:#6a6e7e">—</div></div>
+      </div>
+    </div>
+
+    <!-- Six Departments Grid -->
+    <div class="section">
+      <div class="section-title">🏛 六部任務數</div>
+      <div class="grid-3">
+        <div class="dept-card">
+          <div class="dept-name"><span>吏部</span><span class="dept-count">26</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：人事管理、績效追蹤</div>
+          <div class="dept-agent">負責代理：吏部·景明</div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name"><span>刑部</span><span class="dept-count">28</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：案件研判、風險評估</div>
+          <div class="dept-agent">負責代理：刑部·玄衡</div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name"><span>工部</span><span class="dept-count">36</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：流程編排、資源調度</div>
+          <div class="dept-agent">負責代理：工部·承遠</div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name"><span>兵部</span><span class="dept-count">24</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：兵情分析、戰備演練</div>
+          <div class="dept-agent">負責代理：兵部·凌霄</div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name"><span>禮部</span><span class="dept-count">18</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：文書審核、合規檢查</div>
+          <div class="dept-agent">負責代理：禮部·文耀</div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name"><span>戶部</span><span class="dept-count">32</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><span class="dot dot-green"></span><span class="dept-detail">運作正常</span></div>
+          <div class="dept-skills">技能：資源管理、預算控制</div>
+          <div class="dept-agent">負責代理：戶部·清源</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task Monitoring -->
+    <div class="section">
+      <div class="section-title">📡 任務監控</div>
+      <div class="grid-2" style="grid-template-columns:repeat(4,1fr)">
+        <div class="task-col">
+          <div class="task-col-title" style="color:#eab308">🟡 塞車中 <span class="task-count" style="color:#eab308">12</span></div>
+          <div class="task-item">刑部 · 案件研判 #J20250526031</div>
+          <div class="task-item">工部 · 流程自動化 #G20250526017</div>
+          <div class="task-item">兵部 · 戰情分析 #B20250526021</div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-title" style="color:#3b82f6">🔵 待驗證 <span class="task-count" style="color:#3b82f6">18</span></div>
+          <div class="task-item">禮部 · 文書審核 #L20250526009</div>
+          <div class="task-item">戶部 · 預算檢核 #H20250526015</div>
+          <div class="task-item">吏部 · 人事異動審核 #R20250526018</div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-title" style="color:#22c55e">🟢 即將交付 <span class="task-count" style="color:#22c55e">24</span></div>
+          <div class="task-item">工部 · 自動化執行 #G20250526008</div>
+          <div class="task-item">刑部 · 規則引擎 #J20250526007</div>
+          <div class="task-item">禮部 · 通知管理 #L20250526012</div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-title" style="color:#ef4444">🔴 告警 <span class="task-count" style="color:#ef4444">7</span></div>
+          <div class="task-item">戶部 · 資源使用率超過 85%</div>
+          <div class="task-item">兵部 · 戰情資料延遲 > 15 分鐘</div>
+          <div class="task-item">刑部 · 風險評估模型異常</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

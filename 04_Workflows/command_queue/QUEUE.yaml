@@ -3,25 +3,56 @@
 # 更新：編排/關票後由 Orchestrator 維護；FRAME 正文見 W-MASTER 或 tickets/*_state.md
 
 schema_version: v1
-last_sync: '2026-07-12'
-global_phase_avg_pct: 49
+last_sync: '2026-07-28T23:55+08:00'
+global_phase_avg_pct: 59
 global_phase_ssot: docs/WAVE_PROGRESS_DASHBOARD.md
-global_phase_ssot_date: '2026-06-27'
+global_phase_ssot_date: '2026-07-28'
 ssot:
   wave_master: 04_Workflows/tickets/W-MASTER-wave-plan_state.md
   full_phase: 04_Workflows/tickets/W-MASTER-full-phase-plan_state.md
   wave_next: 04_Workflows/tickets/W-ORCH-wave-next-control-plane-v1_state.md
   playbook: docs/wave-master-ticketing-playbook.md
   progress: 04_Workflows/00_Agent_Work_Progress.md
+  next_stage: docs/governance/wave5_next_stage_post_defer_p6_v1.md
 session:
-  last_mode: arrange
-  last_commander: HQ-Coordinator
-  last_updated: '2026-07-12'
-  default_next_mode: execute
-  handoff_mode: scribe_then_implementer
+  last_mode: execute
+  last_commander: Implementer
+  last_updated: '2026-07-28'
+  default_next_mode: watch
+  handoff_mode: watch_p6_round2
+  full_open_5tickets_2026_07_28: 尚書省「全開」· W12-T2 DONE · FP-G1-T3 G2–G4 opt-in DONE ·
+    preview CP-B integration_layer DONE · P85-H2-CLOSURE-PREP DONE · human-H2-infra-spec
+    DONE_WITH_GAPS（討論稿）· tip#1/#2 維持 · ≠ Phase%／Round-2 GO／假 host／required CI
+  b4_checkpoint_path_docs_done_2026_07_28: W6-T5-T6-docs-checkpoint-path-semantics-v1 DONE
+    · §7 pre-landed verify-and-close · cross-ref only · tip#1/#2 維持 · P6 仍 30346954725
+    · ready:0 · ≠ Phase%／G2–G4／Round-2 GO／runtime
+  arrange_post_b3_open_b4_2026_07_28: P 再核 · P6 仍 30346954725 · Phase% avg≈58.72 apply=false
+    · tip#1/#2 維持 · B3 DONE · 開 W6-T5-T6-docs-checkpoint-path-semantics-v1 READY · ≠ G2–G4／Round-2 GO／Phase%
+  b3_sandbox_suite_done_2026_07_28: W4-REG-sandbox-client-runpath-suite-align-v1 DONE · 17/17
+    UT · controlled fail 契約對齊 · tip#1/#2 維持 · P6 仍 30346954725 · ≠ G2–G4／Phase%／Round-2 GO
+  light_recheck_handoff_b3_2026_07_28: P 輕核 · P6 仍 30346954725 · Phase% avg≈58.72 apply=false
+    · tip#1/#2 維持 · B3 READY 不新開票 · 下一＝execute · ≠ G2–G4／Round-2 GO
+  arrange_post_guard_t1_2026_07_28: P 再核 · P6 仍 30346954725 · Phase% avg≈58.72 apply=false
+    · tip#1/#2 維持 · 開 W4-REG-sandbox-client-runpath-suite-align-v1 READY · ≠ G2–G4／Round-2 GO
+  guard_t1_close_2026_07_28: W4-GUARD-01-T1 Reviewer accepted_with_gaps · QUEUE DONE_WITH_GAPS
+    · tip#1/#2 維持 · P6 仍 30346954725 · ≠ G2–G4／Phase%／Round-2 GO
+  arrange_post_mem02_2026_07_28: P 再核 · P6 仍 30346954725 · Phase% read avg≈58.72 apply=false
+    · tip#1/#2 維持 · W4-MEM-02 DONE · 開 W4-GUARD-01-T1-reviewer-close READY · ≠ G2–G4／Round-2 GO
+  w4_mem_02_done_2026_07_28: W4-MEM-02 DONE · 13/13 UT · index 10 entries · tip#1 仍 P6
+    · apply_phase_pct=false · ≠ Round-2 GO
+  phase_snapshot_2026_07_28: P 進度核對 · `_phase_pct_apply.py read` avg≈58.72 · apply=false
+    · tip#1/#2 維持 · W4-MEM-02 READY · W6-T10-cleanup 已落地 DONE · ≠ Round-2 GO／≠ uplift
+  arrange_next_stage_2026_07_28: 口令執行計畫／P進度編排 · next_stage 敘事對齊 v2.64／30346954725／R2
+    維持DEFER · B1=W4-MEM-02 frame_ready · B2=cleanup DONE 不重開 · C類暫緩
   closure_tags:
     branch_ai_closed: AI 可達段收口（≠ Phase closure）
     branch_human_gated: 批文／GA 仍掛
+  war_bump_v264_2026_07_28: 尚書省口令 WAR_BUMP_v2.64 · Master_Map war_status **v2.64**
+    已套用 · 草稿 applied · ≠ Round-2 GO／≠ Phase%。
+  tabular_sideline_2026_07_28: 口令 TABULAR_SIDELINE · 票 TABULAR-SIDELINE-mainline-regression-2026-07-28
+    已開 · tip#1 **維持** P6-nightly-continue（旁線並行）· ≠ Phase% 假閉環。
+  wave6_archived_note: Wave6 unified close **已歸檔敘事**（v2.63 · Phase% applied 2026-07-28）·
+    priority tip 不再佔 active human · 下一＝H2
   branch_g1_note: G1 T1/T2/T4/T5 DONE · branch_ai_closed · T3 仍 BLOCKED · ≠ Phase
     closure／Round-2 GO
   branch_g5_note: G5 T1–T4 DONE · branch_ai_closed · ≠ Phase closure／Grafana 真接 PG
@@ -68,28 +99,129 @@ session:
     STATE→blocked_remote_land · 下一波須授權 LAND 或 human 盯 P6 DAY3。
   w1_t3_ci_land_done_2026_07_12: 尚書省授權 · commits d6a9c373c／bde9a8ea4 · CI PASS
     29195842807／29195843133 · W1-T3-CI-LAND DONE · P6 DAY3／Round-2 仍 defer。
+  abc_bundle_2026_07_13: A W1-T3 C_REPORT accepted · B P9 INDEX／overview 一句 · C H1
+    證據解鎖 H2 closure DONE_WITH_GAPS · ≠ Phase%。
   oa_unify_note: Multi-Chat 代號一律 O（Orchestrator／Operator）；廢止 A。
   boot_light_note: _boot_context.py --mode light --ticket-id --role；預設仍 full。
+  wh_p85_run_record_closed_2026_07_13: WH-P85-bridge-run-record-jsonl-v1 → DONE_WITH_GAPS
+    （17/17 · accept_with_gaps 收口）· 開 WH-P85-bridge-ci-hardening-v1 frame_ready／READY
+    · fixture-dom 仍並行 frame_ready · ≠ Phase closure／required CI · priority_next 仍 human。
+  wh_p85_ci_hardening_closed_2026_07_13: WH-P85-bridge-ci-hardening-v1 → DONE_WITH_GAPS
+    （CI advisory 14→17 · path-filter +run_record · accept_with_gaps 收口）· gaps 註記不另開
+    （遠端 GA／OSError）· fixture-dom 並行不動 · ≠ Phase closure／required CI · priority_next 仍 human。
+  wh_p85_fixture_dom_closed_2026_07_13: WH-P85-bridge-fixture-dom-port-v1 → DONE_WITH_GAPS
+    （A20/B7/runner14 · accept_with_gaps 收口）· 開 WH-P85-bridge-ci-hardening-v2 frame_ready／READY
+    （CI 顯示 17→20 · **不**重開 v1）· ≠ Phase closure／required CI · priority_next 仍 human。
+  wh_p85_ci_hardening_v2_closed_2026_07_13: WH-P85-bridge-ci-hardening-v2 → DONE_WITH_GAPS
+    （CI advisory 17→20 · path-filter +browser_dom · accepted_with_gaps 收口）· 遠端 GA 僅註記不另開
+    · ≠ Phase closure／required CI · priority_next 仍 human。
+  w4_p85_s2_garunbook_done_2026_07_13: W4-P85-S2-GA-RUNBOOK-v1 DONE · post-GA runbook／Evidence
+    Schema／INDEX 20/20 · Phase% Δ+0 · 下一 AI 建議 W4-P85-P9-EVIDENCE-SSOT-v1 · priority_next 仍 human。
+  w4_p85_p9_evidence_ssot_done_2026_07_13: W4-P85-P9-EVIDENCE-SSOT-v1 DONE · evidence_status=complete
+    · P85/P9 URL 齊 · Phase% Δ+0／+0 · AI READY=0 · priority_next 仍 human。
+  w_prog_ssot_sync_2026_07_13: Dashboard SSOT 日 07-13 · avg≈54% · P8.5=18 · P9=22 · ≠ 改數字本條。
+  w4_ui_static_close_2026_07_28: Wave4 A–E 靜態殼 accepted_with_gaps · 40/40 tests · 下一 AI＝W4-UI-F
+    live 只讀掛載 · Human＝H1 副署／H2–H5 · war_status 仍 v2.62 待授權 · ≠ Phase%／Round-2 GO。
+  stage_abc_close_2026_07_28: H1 approved（具名）· H2–H5 仍 blocked · W4-UI-G accepted · Wave6
+    Phase%/war_status v2.63 · priority→human-H2 · ≠ Round-2 GO。
+  wave5_human_unlock_2026_07_28: H2 tip §6 催辦已交 · H3–H5 編排 armed · 五頂未齊 · Round-2
+    armed-not-run（無 GO）· P6≥7/7 綠日回填 · settings 薄頁 · ≠ 假 host／≠ execute。
+  track_a_b_round2_next_2026_07_28: H2 §7 稽核空白 · H3–H5 串線 · 五頂矩陣 H1 only · Round-2
+    armed-not-run（無 P-GO）· P6 裁決包 83→91 待簽 · Dashboard／QUEUE 敘事對齊（H1 approved ·
+    Wave6 歸檔）· apply_phase_pct=false · ≠ 假 host／≠ execute／≠ 自動 uplift。
+  unlock_or_defer_2026_07_28: tip#1 → Unlock-or-Defer 裁決一頁（結束無限 H2 催辦死循環）·
+    Unlock SLA／H3–H5／execute 跑卡／P6 W-PROG 草稿／Defer playbook 已交 · 待尚書省勾選 ·
+    ≠ 假 host／≠ 代簽／≠ execute／≠ 自動 uplift。
+  implement_gate_audit_2026_07_28: plan Implement 閘門覆核 · decision_status=awaiting_explicit_unlock_or_defer
+    · Unlock／Defer／P6 皆未勾 · 未逾期 · tip#1 維持 human-H2-unlock-or-defer · branches STOP ·
+    ≠ 代勾／≠ 假 host／≠ Defer tip 覆寫／≠ authorize／≠ execute。
+  defer_p6_sign_2026_07_28: 尚書省口令 DEFER+P6_SIGN · tip#1→P6-nightly-continue · tip#2→P7-Round-2-defer
+    （review_by=2026-08-11）· human-H2-unlock-or-defer 降級離 tip#1 · P6 authorize 83→91 ·
+    ≠ UNLOCK／≠ Round-2 GO／≠ 假 host／≠ execute／≠ DarkOps。
+  next_stage_2026_07_28: tip#1 P6 超額綠日盯梢（latest=30258570894 · UTC 07-27）· R2 複審閘
+    議程預排 2026-08-11 · war_status 維持 v2.63（草稿待 WAR_BUMP_v2.64）· ≠ 假 host／≠ execute／≠ 未授權升檔。
+  war_bump_tabular_2026_07_28: war_status **v2.64** 已套用（WAR_BUMP_v2.64）· tip#1 維持
+    P6-nightly-continue（latest UTC 07-28 `30346954725`）· tip#2 Round-2 DEFER 08-11 ·
+    TABULAR_SIDELINE 旁線票已開（並行 · ≠ Phase%）· ≠ Round-2 GO／≠ 假 host／≠ execute。
+  full_auth_a_b_2026_07_29: |
+    尚書省「全授權」A1–A3+B1–B3 · tip#1 仍 P6-nightly-continue · tip#2 Round-2 DEFER 08-11 ·
+    ready 未改 · ≠ Round-2 GO · ≠ 假 host · ≠ required CI 默升 · ≠ P6 uplift
+
 stats:
-  total: 14
+  total: 21
   ready: 0
   doing: 0
   planned: 0
-  blocked: 9
-  done: 49
+  blocked: 8
+  done: 55
+  done_with_gaps: 2
   not_planned: 5
   deferred: 0
   archived_done: 48
-  archived_done_with_gaps: 0
+  archived_done_with_gaps: 4
 priority_next:
 - id: P6-nightly-continue
   seq: 1
   mode: human
-  reason: 綠日鐘續收 DAY3–7 · uplift 滿窗再裁（B2）· 目前 **2/7**（DAY2=29186698130）
+  reason: Defer 樞紐 · 綠日≥7/7 · 已 authorize 83→91 · 超額綠日續收（latest 仍 UTC 07-28
+    `30346954725` · 21:35 再核無新 success）· ≠ 新 uplift 除非新裁決包 · ≠ Round-2 GO · ≠ 假 host／execute
 - id: P7-Round-2-defer
   seq: 2
   mode: human
-  reason: B1 維持 DEFER · earliest 07-18
+  reason: 正式 DEFER Round-2 · H2 provision deferred · review_by=2026-08-11 · armed-not-run ·
+    提前 R2_REVIEW 維持 DEFER · 複審議程 wave5_round2_review_agenda_2026-08-11_v1.md · 仍禁假 host
+- id: W6-T5-T6-docs-checkpoint-path-semantics-v1
+  seq: 3
+  mode: archived_narrative
+  reason: DONE · §7 pre-landed verify-and-close · cross-ref only · ≠ Phase%／G2–G4／Round-2／runtime
+- id: W4-REG-sandbox-client-runpath-suite-align-v1
+  seq: 4
+  mode: archived_narrative
+  reason: DONE · suite 對齊 · 17/17 UT · sandbox controlled fail 契約 · ≠ G2–G4／Phase%／Round-2
+- id: W4-GUARD-01-T1-reviewer-close
+  seq: 5
+  mode: archived_narrative
+  reason: DONE_WITH_GAPS · Reviewer accepted_with_gaps（T1）· G2–G4 另見 FP-G1-T3 DONE（全開 opt-in）
+- id: W12-T2-sandbox-e2e-checkpoint-b-full-integration-v1
+  seq: 12
+  mode: archived_narrative
+  reason: DONE · 全開收口 · maybe_create_checkpoint_b · P2 docs · ≠ Phase%／Round-2
+- id: FP-G1-T3-guard-schema-ratio-escalation-frame-v1
+  seq: 13
+  mode: archived_narrative
+  reason: DONE · 全開批文 · G2–G4 opt-in · 預設 off · ≠ required CI
+- id: preview-checkpoint-b-status-integration-layer-v1
+  seq: 14
+  mode: archived_narrative
+  reason: DONE · preview／reject／registry-blocked 補 integration_layer
+- id: W4-P85-H2-CLOSURE-PREP-v1
+  seq: 15
+  mode: archived_narrative
+  reason: DONE · 收口前置 checklist／Rollup Template · ≠ prod browser
+- id: W4-MEM-02-schema-fingerprint-index-v1
+  seq: 6
+  mode: archived_narrative
+  reason: DONE · glob+schema_fingerprint+temp-dir UT · 13/13 · ≠ Phase%／Round-2
+- id: TABULAR-SIDELINE-mainline-regression-2026-07-28
+  seq: 7
+  mode: archived_narrative
+  reason: 'TABULAR_SIDELINE 已跑綠（雙 smoke exit 0）· tip#1 仍 P6 · ≠ Phase%'
+- id: W6-T10-cleanup-orchestrator-checkpoint-workarounds-v1
+  seq: 8
+  mode: archived_narrative
+  reason: 2026-06-16 已落地 · 本輪標 DONE 不重開 · ≠ 假 READY
+- id: human-H2-infra-spec
+  seq: 9
+  mode: human
+  reason: '討論稿 DONE_WITH_GAPS · §2 仍空白 · 複審日前可討論 · 仍禁假 host · ≠ UNLOCK'
+- id: WAVE6-unified-close
+  seq: 10
+  mode: archived_narrative
+  reason: Wave6 已歸檔敘事 · 不佔 active human tip
+- id: war-status-bump-v2.64
+  seq: 11
+  mode: archived_narrative
+  reason: '已套用 v2.64（口令 WAR_BUMP_v2.64 · 2026-07-28T18:06+08）· Master_Map constitution_version=v2.64 · ≠ Round-2 GO'
 human_ops_sequence:
 - seq: H1
   id: human-ga-ops-2026-07-11
@@ -105,9 +237,10 @@ human_ops_sequence:
   id: P6-nightly-7d-open
   when: '2026-07-11'
   decision: WINDOW_OPEN
-  status: open_day2_green
-  action: 窗已開 · DAY0 RED 不計 · DAY1 GREEN 29159219832 · DAY2 GREEN 29186698130
-    · 2/7 · 綠日鐘續收 · uplift 滿 7/7 再裁
+  status: green_7of7_met_continue
+  action: 窗已開 · DAY0 RED 不計 · DAY1–DAY7 GREEN（DAY7=29568619424）· **≥7/7 已滿** ·
+    uplift 83→91 **已 authorize**（2026-07-28）· 後續超額綠日續收（latest UTC 07-27=30258570894）·
+    **不再** uplift 除非新裁決包 · ≠ 自動再 uplift · ≠ Round-2 GO
   unlocks:
   - WF-P6-INT-NIGHTLY-MONITOR
 - seq: H3
@@ -140,7 +273,9 @@ human_ops_sequence:
   id: P6-uplift-resign
   when: after 7/7 green
   decision: RESIGN_AT_TIME
-  action: 滿 7/7 後尚書省再簽是否 83→91 · 非自動 uplift
+  action: 滿 7/7 後尚書省再簽是否 83→91 · 非自動 uplift · 裁決包
+    docs/governance/p6_uplift_decision_pack_83_to_91_v1.md（2026-07-28）**已 APPROVE** ·
+    W-PROG-p6-uplift-83-to-91-2026-07-28 **已 authorize apply** · P6=91% · ≠ Round-2
   unlocks:
   - WF-P6-INT-NIGHTLY-MONITOR
 - seq: H7
@@ -159,26 +294,24 @@ global_blocked:
   - W2-T4
   - W2-T5
   - WH-P7-NOTIF-staging-integration-execute-v2
-  reason: Batch-2 DEFER · 五頂未齊（P1批文/P2 Infra/P3 Security/P4 allowlist/P5 receiver）·
-    earliest_execute 2026-07-18 · ≠ GO
+  reason: 五頂 H2–H5 未齊 + 無尚書省 Round-2 GO · H1 approved ≠ GO · execute-v2 armed-not-run ·
+    earliest_discuss 已過仍 DEFER execute · ≠ GO
 - id: P8.5-Scenario2-GA
   affects:
-  - W4-P85-S2-GA-RUNBOOK-v1
   - W4-P85-H2-CLOSURE-PREP-v1
-  - WH-P85-wave-H2-closure-scribe-v1
-  reason: H1 DONE · EVD-GR-P85-S2 recorded run_id=29157178993 · Scenario2 PASS · wave-H2
-    其餘 bridge 增強仍 optional · ≠ Phase closure
+  reason: EVD-GR-P85-S2 recorded PASS run_id=29157178993 · wave-H2 DONE_WITH_GAPS ·
+    W4-P85-S2-GA-RUNBOOK DONE · 剩餘 H2-CLOSURE-PREP／P85-P9-EVIDENCE-SSOT 可開 ·
+    bridge 增強仍 optional · ≠ Phase closure
 - id: P9-CI-first-run
   affects:
   - W4-P9-CI-FIRST-RUN-SPEC-v1
   - W4-P9-CI-OBS-TRACE-v1
-  reason: 二次 PASS run_id=29159159265 · sandbox GA-remote recorded · ≠ prod provider
-    · WORKFLOW_INDEX 一句索引仍 gap
+  reason: 二次 PASS run_id=29159159265 · sandbox GA-remote recorded · INDEX／overview
+    一句已補（2026-07-13）· ≠ prod provider
 - id: P6-nightly-7d
   affects:
   - WF-P6-INT-NIGHTLY-MONITOR
-  reason: 窗 OPEN · DAY1 GREEN 29159219832 · DAY2 GREEN 29186698130 · 2/7 · 綠日鐘續收 ·
-    83→91 須再簽 · ≠ uplift
+  reason: '≥7/7 已滿（DAY7=29568619424）· uplift 83→91 **已 apply**（W-PROG-p6-uplift-83-to-91-2026-07-28）· ≠ Round-2'
 - id: P7-advisory-assertion
   affects:
   - W2-P7-ADV-assertion-fix-v1
@@ -191,6 +324,139 @@ global_blocked:
   reason: defer IDs WC-2026-07-10-06D / 07D · ≠ approved · ≥14d 後再裁 L1 · 禁止 required
     CI / branch protection
 queue:
+- id: W6-T5-T6-docs-checkpoint-path-semantics-v1
+  wave: SIDELINE
+  group: AgentLines
+  title: checkpoint_path 語義文件化（W6-T5/T6 docs）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P4
+  state_file: 04_Workflows/tickets/W6-T5-T6-docs-checkpoint-path-semantics-v1_state.md
+  frame_ref: docs/checkpoint-a-integration-v1.md
+  next_action: closed · §7 pre-landed verify-and-close · cross-ref only · ≠ Phase%／G2–G4／Round-2／runtime
+  closure_tag: branch_ai_closed
+  auth_token: arrange_post_b3_open_b4_2026_07_28
+  parallel_to_tip1: P6-nightly-continue
+  parallel_ok: true
+  implementer_b_report: done
+  implementer_date: '2026-07-28'
+- id: W4-REG-sandbox-client-runpath-suite-align-v1
+  wave: SIDELINE
+  group: Tabular
+  title: sandbox_client run-path suite 對齊（T1 gap follow-up）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/W4-REG-sandbox-client-runpath-suite-align-v1_state.md
+  frame_ref: 04_Workflows/tickets/W4-GUARD-01-T1-reviewer-close_state.md
+  next_action: closed · 17/17 UT · controlled fail 契約對齊 · ≠ G2–G4／Phase%／Round-2
+  closure_tag: branch_ai_closed
+  auth_token: arrange_post_guard_t1_2026_07_28
+  parallel_to_tip1: P6-nightly-continue
+  parallel_ok: true
+  implementer_b_report: done
+  implementer_date: '2026-07-28'
+- id: W4-GUARD-01-T1-reviewer-close
+  wave: SIDELINE
+  group: Tabular
+  title: W4-GUARD-01 T1 fixture guard Reviewer 收口
+  status: DONE_WITH_GAPS
+  lifecycle_phase: E
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/W4-GUARD-01-T1-reviewer-close_state.md
+  frame_ref: 04_Workflows/tickets/W4-GUARD-01_state.md
+  next_action: closed · accepted_with_gaps（T1）· G2–G4 另票＋批文 · ≠ Phase%／Round-2
+  closure_tag: branch_ai_closed
+  auth_token: arrange_post_mem02_2026_07_28
+  parallel_to_tip1: P6-nightly-continue
+  parallel_ok: true
+  reviewer_c_report: accepted_with_gaps
+  reviewer_date: '2026-07-28'
+  gaps: sandbox_client run-path suite FAIL out_of_T1 · G2-G4 deferred
+- id: W4-MEM-02-schema-fingerprint-index-v1
+  wave: SIDELINE
+  group: Tabular
+  title: Tabular 記憶索引增量（glob／schema_fingerprint · W4-MEM-02）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P2
+  state_file: 04_Workflows/tickets/W4-MEM-02-schema-fingerprint-index-v1_state.md
+  frame_ref: docs/case-history-lookup-spec-v0.1.md
+  next_action: closed · 13/13 UT · index 10 entries · ≠ Phase%／Round-2
+  closure_tag: branch_ai_closed
+  auth_token: arrange_next_stage_2026-07-28
+  parallel_to_tip1: P6-nightly-continue
+  parallel_ok: true
+  reviewer_c_report: same_chat_impl_done
+  reviewer_date: '2026-07-28'
+- id: W6-T10-cleanup-orchestrator-checkpoint-workarounds-v1
+  wave: AgentLines
+  group: W6
+  title: Orchestrator checkpoint cleanup（結案敘事 · 不重開）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P4
+  state_file: 04_Workflows/tickets/W6-T10-cleanup-orchestrator-checkpoint-workarounds-v1_state.md
+  frame_ref: 04_Workflows/tickets/W6-T10-orchestrator-checkpoint-wiring-v1_state.md
+  next_action: closed · 2026-06-16 已落地 · Dashboard 建議池陈旧索引已結
+  closure_tag: branch_ai_closed
+  parallel_to_tip1: P6-nightly-continue
+- id: TABULAR-SIDELINE-mainline-regression-2026-07-28
+  wave: SIDELINE
+  group: Tabular
+  title: Tabular 主鏈雙案 regression 旁線（TABULAR_SIDELINE）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P6
+  state_file: 04_Workflows/tickets/TABULAR-SIDELINE-mainline-regression-2026-07-28_state.md
+  frame_ref: docs/TABULAR_MVP_SSOT.md
+  next_action: closed · demo_phase + mainline smoke exit 0 · ≠ Phase%／Round-2
+  closure_tag: branch_ai_closed
+  auth_token: TABULAR_SIDELINE
+  parallel_to_tip1: P6-nightly-continue
+  reviewer_c_report: same_chat_smoke_green
+  reviewer_date: '2026-07-28'
+- id: W4-UI-G-p2-p4-live-source-v1
+  wave: W4
+  group: UI
+  title: P2–P4 live 換源薄補（共用 loadPageData）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P2
+  - P3
+  - P4
+  - P8.9
+  state_file: 04_Workflows/tickets/W4-UI-G-p2-p4-live-source-v1_state.md
+  frame_ref: docs/wave4-ui-g-p2-p4-live-source-runbook-v1.md
+  next_action: closed · P2/P3/P4 mock|live · apply_phase_pct=false · ≠ Operator prod／Round-2
+  closure_tag: branch_ai_closed
+  reviewer_c_report: accepted
+  reviewer_date: '2026-07-28'
+- id: W4-UI-F-command-center-live-api-mount-v1
+  wave: W4
+  group: UI
+  title: command_center mock→live 只讀 API 掛載（P5/P1 優先）
+  status: DONE
+  lifecycle_phase: E
+  phase_targets:
+  - P5
+  - P1
+  - P7.5
+  - P8.9
+  state_file: 04_Workflows/tickets/W4-UI-F-command-center-live-api-mount-v1_state.md
+  frame_ref: docs/wave4-ui-f-live-api-mount-runbook-v1.md
+  next_action: closed · P1/P5 mock|live 開關 + CLI 投影 · 48/48 tests · apply_phase_pct=false
+    · ≠ Operator prod／Round-2／Phase%／DarkOps
+  closure_tag: branch_ai_closed
+  reviewer_c_report: accepted
+  reviewer_date: '2026-07-28'
 - id: W2-T1
   wave: W2
   group: G7
@@ -237,16 +503,39 @@ queue:
   wave: W4
   group: G8
   title: Scenario2 GA 證據鏈 runbook
-  status: BLOCKED
-  lifecycle_phase: B
+  status: DONE
+  lifecycle_phase: O
   phase_targets:
   - P8.5
-  state_file: null
+  state_file: 04_Workflows/tickets/W4-P85-S2-GA-RUNBOOK-v1_state.md
   frame_ref: W-MASTER-wave-plan_state.md#W4-P85-S2-GA-RUNBOOK-v1
-  blocked_by:
-  - P8.5-Scenario2-GA
   human_seq: H1
-  next_action: 尚書省 07-11 dispatch 後回填 · 再 doc
+  next_action: closed · post-GA checklist／Evidence Schema／INDEX 20/20 · Phase% Δ+0 · ≠ Phase closure
+  closure_tag: branch_ai_closed
+  evidence:
+    runs:
+    - 29157178993
+  reviewer_c_report: accepted
+  reviewer_date: '2026-07-13'
+- id: W4-P85-P9-EVIDENCE-SSOT-v1
+  wave: W4
+  group: G8
+  title: P8.5/P9 跨線 GA·CI 證據 SSOT
+  status: DONE
+  lifecycle_phase: O
+  phase_targets:
+  - P8.5
+  - P9
+  state_file: 04_Workflows/tickets/W4-P85-P9-EVIDENCE-SSOT-v1_state.md
+  frame_ref: W-MASTER-wave-plan_state.md#W4-P85-P9-EVIDENCE-SSOT-v1
+  next_action: closed · evidence_status=complete · Phase% Δ+0／+0 · ≠ Phase closure
+  closure_tag: branch_ai_closed
+  evidence:
+    runs:
+    - 29157178993
+    - 29159159265
+  reviewer_c_report: accepted
+  reviewer_date: '2026-07-13'
 - id: W5-WC-PRE-06-governance-spec-v1
   wave: W5
   group: G1
@@ -283,40 +572,43 @@ queue:
 - id: FP-G1-T3-guard-schema-ratio-escalation-frame-v1
   wave: full-phase
   group: G1
-  title: W4-GUARD G2–G4 升格 FRAME（blocked_on_approval）
-  status: BLOCKED
-  lifecycle_phase: B
+  title: W4-GUARD G2–G4 升格 FRAME（opt-in landed · 預設 off）
+  status: DONE
+  lifecycle_phase: D
   phase_targets:
   - P3.5
   state_file: 04_Workflows/tickets/FP-G1-T3-guard-schema-ratio-escalation-frame-v1_state.md
   frame_ref: W-MASTER-full-phase-plan_state.md#G1
   depends_on:
   - FP-G1-T2-wc-pre-06-07-approval-tracker-v1
-  blocked_by:
-  - WC-PRE-approval
   branch_chat: G1
-  next_action: 尚書省後續 · 勿派 Implementer 升格
-  closure_tag: branch_human_gated
+  next_action: closed · 尚書省「全開」批文 · opt-in G2–G4 · 預設 off · ≠ required CI／Phase%
+  closure_tag: branch_ai_closed
   human_seq: H5
-  unblock_when: FP-G1-T2 approved 或尚書省／PM 顯式 waive
+  auth_note: 2026-07-28 全開 = waive blocked_on_approval
 - id: WH-P85-wave-H2-closure-scribe-v1
   wave: full-phase
   group: G5
   title: P8.5 wave-H+2 closure scribe（Scenario2 GA）
-  status: BLOCKED
-  lifecycle_phase: B
+  status: DONE_WITH_GAPS
+  lifecycle_phase: D
   phase_targets:
   - P8.5
   state_file: 04_Workflows/tickets/WH-P85-wave-H2-closure-scribe-v1_state.md
   frame_ref: W-MASTER-full-phase-plan_state.md#G5
   depends_on:
   - WH-P85-SMOKE-B-scenario2-ops-run-v1
-  blocked_by:
-  - P8.5-Scenario2-GA
-  next_action: 尚書省 H1 回填後 Scribe · 勿標 wave closed／Phase closure
-  closure_tag: branch_human_gated
+  next_action: closed · Scenario2 PASS 29157178993 · entry／INDEX／Progress 已收口 · ≠ Phase
+    closure
+  closure_tag: branch_ai_closed
   human_seq: H3
-  unblock_when: ops-run GA evidence（run URL + Progress append）齊
+  evidence:
+    runs:
+    - 29157178993
+  gaps:
+  - bridge-in-memory-stub
+  - smoke-c-manual
+  - optional-hardening
 - id: WF-P6-INT-NIGHTLY-MONITOR
   wave: tactical
   group: G6
@@ -329,7 +621,7 @@ queue:
   frame_ref: docs/p6-int-nightly-monitor-v1.md
   blocked_by:
   - P6-nightly-7d
-  next_action: DAY1 GREEN · 續收 DAY2–7 · 滿窗後治理 uplift
+  next_action: '≥7/7 已滿 · 裁決包 APPROVE · W-PROG authorize applied · P6 83→91 · ≠ Round-2'
   human_seq: H2
 - id: W1-T3-CI-LAND
   wave: W1
@@ -341,7 +633,7 @@ queue:
   - P3.5
   state_file: 04_Workflows/tickets/W1-T3_state.md
   frame_ref: 04_Workflows/tickets/W1-T3_state.md#LANDING
-  next_action: landed · CI green · 可選 Reviewer C_REPORT · ≠ P6 DAY3／Round-2
+  next_action: landed · CI green · C_REPORT accepted · ≠ P6 DAY3／Round-2
   evidence:
     commits:
     - d6a9c373c
@@ -350,6 +642,8 @@ queue:
     - 29195842807
     - 29195843133
   closure_tag: branch_ai_closed
+  reviewer_c_report: accepted
+  reviewer_date: '2026-07-13'
 unplanned_backlog:
 - id: FP-G10-S15-notify
   group: G10
@@ -403,4 +697,4 @@ unplanned_backlog:
   next_action: Round-2 後再排 · 見 human_ops H4
 archive:
   path: 04_Workflows/command_queue/QUEUE.archive.yaml
-  archived_count: 47
+  archived_count: 51

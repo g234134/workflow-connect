@@ -279,11 +279,13 @@ INT-REGRESSION-GATE first failure: test=... stage=envelope job_id=... first_qa_c
 
 - Exit code **`0`** 且 stdout JSON **`"ok": true`** 且 **`failed_tests` 为空**。
 - 改动了 envelope / manifest / QA-M1 / Wave 7 orchestrator / runner / artifact 路径治理时，**必须**跑 Tier-A；不要改用全库 `pytest` 代替（范围见 `WAVE7_INT_REGRESSION_GATE_v0.1.md` §4）。
-- Tier-B / ALL：当前 B 为空集；`--tier ALL` 在 B 未注册时等价于 A。
+- Tier-B / ALL：`python .\04_Workflows\_wave7_regression_gate.py --tier B` 或 `ALL`；B 已注册 3 模块；空注册时返回 `tier_b_pending: true`（见 contract §4）。
 
 ---
 
 ## 7. CI：挂 INT-REGRESSION-GATE
+
+> **Phase 6 SSOT**：`docs/phase6-int-regression-gate-contract-v1.md` §5–§6（CI 矩阵、PR 绿 ≠ INT 绿、local mandatory）。本 § 保留操作伪代码。
 
 ### 7.1 Runner 索引
 
@@ -302,8 +304,10 @@ INT-REGRESSION-GATE first failure: test=... stage=envelope job_id=... first_qa_c
   shell: pwsh   # 或 bash；Python 需能加载 gov_core_system（地图相对 venv）
 ```
 
-- **只跑** Tier-A 登记的 11 个 `tests.test_*` 模块（Wave 6/7），**不**跑全库。
+- **只跑** Tier-A 登记的 **14** 个 `tests.test_*` 模块（Wave 6/7/8 核心）；清单见 Phase 6 contract §3 或 `WAVE7_INT_REGRESSION_GATE_v0.1.md` §5。
+- Tier-B 当前 **3** 模块已注册（`--tier B`）；`tier_b_pending` 仅当 B 空注册时出现（contract §4）。
 - 使用与本地相同的 `gov_core_system` venv（CI 镜像需预装或 bootstrap 暗部 venv）。
+- **本票不强制** 新增 production workflow；PR 仍以 `core-agent-smoke.yml` + `eval-gate-ci.yml` 为准。
 
 ### 7.3 失败处理建议
 

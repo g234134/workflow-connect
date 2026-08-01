@@ -1,0 +1,62 @@
+{
+  "batch_id": "sample-batch-mvp-04",
+  "parent_ticket_id": "BATCH-MVP-04",
+  "subtasks": [
+    {
+      "parent_ticket_id": "BATCH-MVP-04",
+      "subtask_id": "S1",
+      "subtask_type": "implementer",
+      "target_paths": ["docs/batch_orchestrator_mvp.md"],
+      "allowed_paths": [
+        "04_Workflows/_batch_orchestrator/collector.py",
+        "docs/batch_orchestrator_mvp.md"
+      ],
+      "blocked_paths": ["core/**", "AGENTS.md"],
+      "scope_summary": "Implement collector aggregation for mock ExecutionResult rows",
+      "acceptance_checks": [
+        "python -m unittest tests.test_batch_e2e_mock -v"
+      ],
+      "priority": 10,
+      "dependencies": [],
+      "status": "pending",
+      "preferred_model": null
+    },
+    {
+      "parent_ticket_id": "BATCH-MVP-04",
+      "subtask_id": "S2",
+      "subtask_type": "implementer",
+      "target_paths": ["04_Workflows/_batch_orchestrator/reporter.py"],
+      "allowed_paths": [
+        "04_Workflows/_batch_orchestrator/reporter.py"
+      ],
+      "blocked_paths": ["04_Workflows/tickets/*_state.md"],
+      "scope_summary": "Implement reporter suggestion-only state patch JSON",
+      "acceptance_checks": [
+        "python -m unittest tests.test_batch_e2e_mock -v"
+      ],
+      "priority": 20,
+      "dependencies": ["S1"],
+      "status": "pending",
+      "preferred_model": null
+    },
+    {
+      "parent_ticket_id": "BATCH-MVP-04",
+      "subtask_id": "S3",
+      "subtask_type": "implementer",
+      "target_paths": ["04_Workflows/_batch_orchestrator/cli.py"],
+      "allowed_paths": [
+        "04_Workflows/_batch_orchestrator/cli.py",
+        "tests/test_batch_e2e_mock.py"
+      ],
+      "blocked_paths": ["core/**"],
+      "scope_summary": "Wire CLI mock E2E pipeline",
+      "acceptance_checks": [
+        "python -m _batch_orchestrator.cli run --manifest tests/fixtures/sample_manifest.json --mode mock --limit 2"
+      ],
+      "priority": 30,
+      "dependencies": ["S2"],
+      "status": "pending",
+      "preferred_model": null
+    }
+  ]
+}

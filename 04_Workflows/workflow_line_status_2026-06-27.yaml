@@ -1,0 +1,95 @@
+# Workflow line status SSOT · Orchestrator batch WF-2026-06-27
+# Updated by Scribe after Reviewer sign-off; Orchestrator owns schema.
+# Do NOT use this file to change global Phase% numbers.
+
+schema_version: workflow_line_status_v1
+as_of: "2026-06-27"
+orchestrator_batch: WF-2026-06-27
+prev_ssot_date: "2026-06-27"
+global_non_claims:
+  - no_ci_gate_change
+  - no_batch1_governance_yaml_change
+  - no_global_phase_pct_uplift
+
+lines:
+  p6_int_regression_gate:
+    ticket_state: 04_Workflows/tickets/WF-P6-INT-GATE_state.md
+    complete: true
+    lifecycle: done_with_gaps
+    phase_target: P6
+    current_phase_pct: 83
+    uplift_ready: true
+    uplift_ticket: 04_Workflows/tickets/WF-P6-INT-UPLIFT_state.md
+    ci_landing_ticket: 04_Workflows/tickets/WF-P6-INT-CI-LANDING_state.md
+    ci_landing_done: true
+    phase_uplift_interim_done: true
+    phase_uplift_interim_at: "2026-06-27"
+    phase_uplift_interim_evidence:
+      - .github/workflows/p6-int-gate-nightly.yml
+      - .github/workflows/p6-int-gate-pr-optional.yml
+      - 04_Workflows/tickets/WF-P6-INT-CI-LANDING_state.md
+    ci_tracks_landed:
+      - track_b_nightly
+      - track_a_pr_optional
+    ci_workflows:
+      nightly: .github/workflows/p6-int-gate-nightly.yml
+      pr_optional: .github/workflows/p6-int-gate-pr-optional.yml
+    governance_decision: governance_decision_p6_int_gate_2026-06-27
+    phase_uplift_policy:
+      current: 83
+      interim_after_ci_merge: 83
+      final_after_nightly_7d_stable: 91
+    functional_gaps:
+      - tier_b_heavier_integration_optional_not_mandatory
+      - nightly_7d_stability_monitor_pending
+      - phase_pct_final_uplift_91_pending
+    nightly_monitor_ticket: 04_Workflows/tickets/WF-P6-INT-NIGHTLY-MONITOR_state.md
+    nightly_monitor_doc: docs/p6-int-nightly-monitor-v1.md
+    artifacts:
+      contract: docs/phase6-int-regression-gate-contract-v1.md
+      verification_report: docs/phase6-int-regression-verification-report-v1.md
+      ci_design: docs/ci-design-p6-int-gate-v1.md
+      cli: 04_Workflows/_wave7_regression_gate.py
+      matrix_entry: routing/toolchain_smoke_matrix_v1.yaml#TS-INT-TIER-A
+    verification_commands:
+      contract_unittest: python -m unittest tests.test_phase6_int_regression_gate_contract_v1 -v
+      matrix_unittest: python -m unittest tests.test_phase6_toolchain_smoke_matrix_v1 -v
+      tier_a_live: python 04_Workflows/_wave7_regression_gate.py --tier A --pretty
+    baseline_checks:
+      contract_unittest: { ok: true, note: "24/24 OK @ 2026-06-27 implementer + reviewer rerun" }
+      matrix_unittest: { ok: true, note: "13/13 OK @ 2026-06-27 implementer + reviewer rerun" }
+      tier_a_live: { ok: true, note: "ok true · 14 modules · 112 passed · exit 0 @ 2026-06-27 reviewer rerun" }
+
+  p89_outbox_feedback:
+    ticket_state: 04_Workflows/tickets/WF-P89-OUTBOX_state.md
+    complete: true
+    lifecycle: done_with_gaps
+    phase_target: P8.9
+    functional_gaps:
+      - p89_t4_http_webhook_deferred
+      - multi_case_matrix_sweep_optional
+      - prod_delivery_bundle_ready_notify_not_wired
+    artifacts:
+      bundle_spec: docs/p8_9-verification-bundle-v1.md
+      verification_report: docs/p8_9-verification-report-v1.md
+      cli: scripts/run_p8_9_verification_bundle_v1.py
+      bundle_output_dir: outbox/verification/demo_phase/
+    verification_commands:
+      bundle_unittest: python -m unittest tests.test_p8_9_verification_bundle_v1 -v
+      bundle_live: python scripts/run_p8_9_verification_bundle_v1.py --case-ref demo_phase --format json
+    baseline_checks:
+      bundle_unittest: { ok: true, note: "2/2 OK @ 2026-06-27 implementer + reviewer rerun" }
+      bundle_live: { ok: true, note: "stdout ok true · exit 0 · demo_phase @ 2026-06-27 reviewer rerun" }
+
+  # Optional third line — NOT in first dispatch batch unless尚書省加批
+  tabular_mainline_hardening:
+    ticket_state: null
+    complete: true
+    lifecycle: done_with_gaps
+    phase_target: "P2/P3/P6/P8/P10 Tabular subline"
+    note: "tabular_c2_p2_subline_complete: true; report exists; skip unless regression refresh requested"
+    functional_gaps:
+      - global_phase_pct_not_uplifted
+    artifacts:
+      report: docs/tabular-mainline-e2e-verification-report-v1.md
+    dispatch_priority: deferred

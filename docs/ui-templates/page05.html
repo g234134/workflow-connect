@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多任務 Agent 協作作業台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0c12;color:#e2e4ea;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;background:#0d1017;border-right:1px solid #1a1e2a;display:flex;flex-direction:column;flex-shrink:0}
+.sidebar-brand{padding:16px 14px;font-size:13px;font-weight:700;color:#a0d2db;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;gap:8px}
+.brand-icon{font-size:16px}
+.sidebar-nav{flex:1;padding:8px 0;overflow-y:auto}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 14px;color:#8a8fa0;text-decoration:none;font-size:13px;transition:all .15s;border-left:3px solid transparent}
+.nav-item:hover{background:#131620;color:#e2e4ea}
+.nav-item.active{background:#131620;color:#a0d2db;border-left-color:#3b82f6;font-weight:600}
+.nav-icon{width:18px;text-align:center;font-size:13px;flex-shrink:0}
+.sidebar-footer{padding:12px 14px;border-top:1px solid #1a1e2a;font-size:12px;color:#5a5e6e;display:flex;align-items:center;gap:8px}
+.header{height:48px;background:#0d1017;border-bottom:1px solid #1a1e2a;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.header-title{font-size:15px;font-weight:600;color:#a0d2db}
+.header-sub{font-size:11px;color:#5a5e6e}
+.header-right{font-size:11px;color:#5a5e6e;text-align:right}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.content{flex:1;padding:16px 20px;overflow-y:auto}
+.section{background:#0d1017;border:1px solid #1a1e2a;border-radius:8px;padding:16px;margin-bottom:16px}
+.section-title{font-size:13px;font-weight:600;color:#a0d2db;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0}
+.dot-green{background:#22c55e}
+.dot-yellow{background:#eab308}
+.dot-red{background:#ef4444}
+.dot-blue{background:#3b82f6}
+.dot-gray{background:#5a5e6e}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:#6a6e7e;padding:6px 8px;border-bottom:1px solid #1a1e2a;font-weight:500}
+td{padding:6px 8px;border-bottom:1px solid #111320;color:#c0c4cc}
+tr:hover td{background:#131620}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+/* KPI */
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi-card{background:#0d1017;border:1px solid #1a1e2a;border-radius:8px;padding:14px 16px}
+.kpi-label{font-size:11px;color:#6a6e7e;margin-bottom:4px}
+.kpi-value{font-size:22px;font-weight:700;color:#e2e4ea}
+.kpi-delta{font-size:11px;margin-top:2px}
+.kpi-up{color:#22c55e}
+.kpi-down{color:#ef4444}
+
+/* Swimlane */
+.swimlane-legend{display:flex;gap:12px;margin-bottom:12px;font-size:11px;color:#6a6e7e}
+.swimlane-legend span{display:flex;align-items:center;gap:4px}
+.swim-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.swim-table th{font-size:10px;color:#6a6e7e;padding:8px 4px;border-bottom:1px solid #1a1e2a;text-align:center;font-weight:500}
+.swim-table td{padding:8px 4px;border-bottom:1px solid #111320;text-align:center;font-size:11px}
+.swim-table td:first-child{text-align:left;font-weight:600;color:#e2e4ea;width:160px}
+.cell-done{color:#22c55e}
+.cell-running{color:#3b82f6}
+.cell-wait{color:#eab308}
+.cell-error{color:#ef4444}
+.cell-pending{color:#5a5e6e}
+
+/* Progress bar in cell */
+.cell-progress{display:inline-flex;align-items:center;gap:4px}
+.mini-bar{width:40px;height:4px;background:#1a1e2a;border-radius:2px;overflow:hidden;display:inline-block}
+.mini-fill{height:100%;border-radius:2px}
+
+/* Sidebar sub-panels */
+.side-panel{background:#131620;border:1px solid #1a1e2a;border-radius:8px;padding:14px;margin-bottom:12px}
+.side-panel-title{font-size:12px;font-weight:600;color:#a0d2db;margin-bottom:8px}
+.side-kpi{display:flex;justify-content:space-between;padding:4px 0;font-size:12px;border-bottom:1px solid #111320}
+.side-kpi span:first-child{color:#c0c4cc}
+.side-kpi span:last-child{font-weight:600}
+.side-link{font-size:10px;color:#3b82f6;cursor:pointer;margin-top:4px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:500}
+.badge-green{background:#0a2e1a;color:#22c55e}
+.badge-blue{background:#0a1e3a;color:#3b82f6}
+.badge-yellow{background:#2e2a0a;color:#eab308}
+.badge-red{background:#2e0a0a;color:#ef4444}
+@media(max-width:1400px){.kpi-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.sidebar{width:56px}.sidebar-brand span:last-child,.nav-item span:last-child,.sidebar-footer span:last-child{display:none}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="sidebar-brand"><span class="brand-icon">⚔</span><span>三省六部指揮中心</span></div>
+  <nav class="sidebar-nav">
+    <a href="page01.html" class="nav-item"><span class="nav-icon">🏠</span><span>總覽</span></a>
+    <a href="page04.html" class="nav-item"><span class="nav-icon">🏛</span><span>三省六部</span></a>
+    <a href="page03.html" class="nav-item"><span class="nav-icon">🛡</span><span>暗部執行</span></a>
+    <a href="page02.html" class="nav-item"><span class="nav-icon">⚡</span><span>技能與資源</span></a>
+    <a href="page01.html" class="nav-item"><span class="nav-icon">⚙</span><span>設定</span></a>
+  </nav>
+  <div class="sidebar-footer"><span class="nav-icon">👤</span><span>指揮官 · 系統管理員</span></div>
+</aside>
+<div class="main">
+  <div class="header">
+    <div>
+      <div class="header-title">多任務 Agent 協作作業台</div>
+      <div class="header-sub">多 Agent 協同·高效執行·可觀測·可治理</div>
+    </div>
+    <div class="header-right">
+      <div>亞洲 / 台北</div>
+      <div>2025/05/26 14:32:18 UTC+8</div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- KPI Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">執行中任務</div><div class="kpi-value">12</div><div class="kpi-delta kpi-up">+20% 較昨日</div></div>
+      <div class="kpi-card"><div class="kpi-label">等待中交接</div><div class="kpi-value">8</div><div class="kpi-delta kpi-up">+14% 較昨日</div></div>
+      <div class="kpi-card"><div class="kpi-label">審核中節點</div><div class="kpi-value">15</div><div class="kpi-delta kpi-down">-6% 較昨日</div></div>
+      <div class="kpi-card"><div class="kpi-label">已完成任務</div><div class="kpi-value">128</div><div class="kpi-delta kpi-up">+18% 較昨日</div></div>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">平均處理時間</div><div class="kpi-value">24.6 分鐘</div><div class="kpi-delta kpi-down">-8% 較昨日</div></div>
+      <div class="kpi-card"><div class="kpi-label">告警數量</div><div class="kpi-value">7</div><div class="kpi-delta kpi-down">+12 較昨日</div></div>
+      <div class="kpi-card"><div class="kpi-label">已收款</div><div class="kpi-value">5</div><div class="kpi-delta kpi-up">+25% 較昨日</div></div>
+    </div>
+
+    <!-- Swimlane Diagram -->
+    <div class="section">
+      <div class="section-title">🏊 多任務協作泳道圖</div>
+      <div class="swimlane-legend">
+        <span><span class="dot dot-gray"></span>未開始</span>
+        <span><span class="dot dot-blue"></span>進行中</span>
+        <span><span class="dot dot-yellow"></span>等待</span>
+        <span><span class="dot dot-green"></span>完成</span>
+        <span><span class="dot dot-red"></span>異常</span>
+      </div>
+      <table class="swim-table">
+        <tr>
+          <th>任務</th>
+          <th>主控協調<br><span style="font-weight:400;color:#5a5e6e">接單與分流</span></th>
+          <th>任務規劃<br><span style="font-weight:400;color:#5a5e6e">拆解與排序</span></th>
+          <th>資料處理<br><span style="font-weight:400;color:#5a5e6e">清洗與整理</span></th>
+          <th>工具執行<br><span style="font-weight:400;color:#5a5e6e">模型與工具調用</span></th>
+          <th>審核驗證<br><span style="font-weight:400;color:#5a5e6e">品質與風險檢查</span></th>
+          <th>交付回寫<br><span style="font-weight:400;color:#5a5e6e">輸出與歸檔</span></th>
+          <th>驗收請款<br><span style="font-weight:400;color:#5a5e6e">商務閉環</span></th>
+        </tr>
+        <tr>
+          <td>#A20250526001<br><span style="font-size:10px;color:#6a6e7e">優先級：高</span></td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-running">
+            <div class="cell-progress">75%<div class="mini-bar"><div class="mini-fill progress-blue" style="width:75%"></div></div></div>
+          </td>
+          <td class="cell-wait">⏳ 等待</td>
+          <td class="cell-pending">— 未開始</td>
+          <td class="cell-pending">— 未開始</td>
+          <td class="cell-pending">待驗收 2</td>
+        </tr>
+        <tr>
+          <td>#B20250526002<br><span style="font-size:10px;color:#6a6e7e">優先級：中</span></td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-running">
+            <div class="cell-progress">42%<div class="mini-bar"><div class="mini-fill progress-blue" style="width:42%"></div></div></div>
+          </td>
+          <td class="cell-done">✓ 審核通過</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-wait">待請款 3</td>
+        </tr>
+        <tr>
+          <td>#C20250526003<br><span style="font-size:10px;color:#ef4444">優先級：高 · 異常</span></td>
+          <td class="cell-done">✓ 已分流</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-error">✗ 資料處理失敗</td>
+          <td class="cell-error">⟳ 重試中 (2/3)</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-pending">— 未開始</td>
+          <td class="cell-wait">收款中 2</td>
+        </tr>
+        <tr>
+          <td>#D20250526004<br><span style="font-size:10px;color:#6a6e7e">優先級：低</span></td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 完成</td>
+          <td class="cell-done">✓ 審核通過</td>
+          <td class="cell-done">✓ 已回寫沉澱</td>
+          <td class="cell-done">已結案 12</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <!-- Business Summary -->
+      <div class="section">
+        <div class="section-title">💼 商務摘要</div>
+        <div class="side-kpi"><span>待請款任務</span><span style="color:#eab308">9 <span style="font-size:10px;color:#22c55e">+12%</span></span></div>
+        <div class="side-kpi"><span>收款中</span><span style="color:#3b82f6">5 <span style="font-size:10px;color:#22c55e">+25%</span></span></div>
+        <div class="side-kpi"><span>已結案</span><span style="color:#22c55e">34 <span style="font-size:10px;color:#22c55e">+15%</span></span></div>
+        <div class="side-kpi"><span>人工介入</span><span style="color:#ef4444">2 <span style="font-size:10px;color:#22c55e">-20%</span></span></div>
+      </div>
+
+      <!-- Operational Monitor -->
+      <div class="section">
+        <div class="section-title">📡 營運監控</div>
+        <div class="side-kpi"><span>卡住任務</span><span style="color:#ef4444">3 <span class="side-link">查看詳情</span></span></div>
+        <div class="side-kpi"><span>等待回覆</span><span style="color:#eab308">5 <span class="side-link">查看詳情</span></span></div>
+        <div class="side-kpi"><span>重試中</span><span style="color:#3b82f6">4 <span class="side-link">查看詳情</span></span></div>
+        <div class="side-kpi"><span>異常技能</span><span style="color:#ef4444">3 <span class="side-link">查看詳情</span></span></div>
+      </div>
+    </div>
+
+    <!-- Skills & Tools Summary -->
+    <div class="section">
+      <div class="section-title">🔧 技能與工具摘要</div>
+      <div class="grid-2">
+        <div>
+          <div style="font-size:12px;color:#6a6e7e;margin-bottom:8px">常用技能 TOP 5</div>
+          <table>
+            <tr><th>技能</th><th>次數</th></tr>
+            <tr><td>資料清洗</td><td>1,248</td></tr>
+            <tr><td>資訊擷取</td><td>1,032</td></tr>
+            <tr><td>摘要生成</td><td>865</td></tr>
+            <tr><td>風險檢查</td><td>642</td></tr>
+            <tr><td>格式轉換</td><td>531</td></tr>
+          </table>
+        </div>
+        <div>
+          <div style="font-size:12px;color:#6a6e7e;margin-bottom:8px">工具狀態</div>
+          <table>
+            <tr><th>工具</th><th>狀態</th></tr>
+            <tr><td>資料庫查詢工具</td><td><span class="badge badge-green">正常</span></td></tr>
+            <tr><td>檔案處理工具</td><td><span class="badge badge-green">正常</span></td></tr>
+            <tr><td>網頁擷取工具</td><td><span class="badge badge-yellow">延遲中</span></td></tr>
+            <tr><td>流程引擎</td><td><span class="badge badge-green">正常</span></td></tr>
+            <tr><td>通知推送工具</td><td><span class="badge badge-green">正常</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model & API Status -->
+    <div class="grid-2">
+      <div class="section">
+        <div class="section-title">🤖 模型狀態</div>
+        <table>
+          <tr><th>模型</th><th>狀態</th><th>延遲</th></tr>
+          <tr><td>GPT-4a</td><td><span class="badge badge-green">健康</span></td><td>1.2s</td></tr>
+          <tr><td>Claude 3.5 Sonnet</td><td><span class="badge badge-green">健康</span></td><td>1.4s</td></tr>
+          <tr><td>Gemini 1.5 Pro</td><td><span class="badge badge-green">健康</span></td><td>1.6s</td></tr>
+          <tr><td>Embedding Model</td><td><span class="badge badge-green">健康</span></td><td>0.8s</td></tr>
+          <tr><td>Rerank Model</td><td><span class="badge badge-green">健康</span></td><td>0.7s</td></tr>
+        </table>
+      </div>
+      <div class="section">
+        <div class="section-title">🔌 API 狀態</div>
+        <table>
+          <tr><th>API</th><th>狀態</th><th>成功率</th></tr>
+          <tr><td>內部 API</td><td><span class="badge badge-green">正常</span></td><td>99.9%</td></tr>
+          <tr><td>第三方 API (A)</td><td><span class="badge badge-green">正常</span></td><td>99.5%</td></tr>
+          <tr><td>第三方 API (B)</td><td><span class="badge badge-yellow">警告</span></td><td>96.1%</td></tr>
+          <tr><td>第三方 API (C)</td><td><span class="badge badge-green">正常</span></td><td>99.2%</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+schema_version: routing_eval_cases_v1
+catalog_revision: "2026-06-10"
+catalog_ref: routing/intake_routing_catalog_v1.yaml
+description: >
+  Machine-readable routing / eval test cases for Wave 2 T2.
+  Each case states what an Agent or human should use for a given task_type.
+  Does NOT execute routing; consumed by future eval runners and manual checklists.
+
+cases:
+  - id: tabular_demo_phase_clean
+    task_type: tabular.cleaning.mvp
+    input_summary: "demo_phase 7-row phase-like CSV cleaning (cases/demo_phase)"
+    input_context:
+      case_dir: cases/demo_phase
+      trigger: agent
+      ticket_hint: "C2-D1 demo walkthrough or Local UI E2E"
+    expected_families:
+      - tabular_mvp
+    expected_tool_ids:
+      - validate.eligibility
+      - clean.phase_demo
+      - export.delivery_bundle
+    acceptable_orchestration_tool_ids:
+      - orchestrate.e2e
+    expected_entrypoint: scripts/run_case_e2e_validation.py
+    observation_points:
+      - "CLI invoked: python scripts/run_case_e2e_validation.py --case-dir cases/demo_phase"
+      - "Gate JSON mentions validate.eligibility semantics (check_case_eligibility)"
+      - "Reports under cases/demo_phase/reports/ (eligibility_result.json, cleaning_stats.json, report.json)"
+      - "Trace authority: docs/mvp-standard-trace-path.md §3.1"
+    eval_profile: none
+    notes:
+      - "demo_phase gate is review_needed; clean step may require --force (see catalog notes)"
+
+  - id: tabular_sampleco_e2e
+    task_type: tabular.cleaning.mvp
+    input_summary: "sampleco/2026-0001 near-real client CSV E2E"
+    input_context:
+      case_dir: cases/sampleco/2026-0001
+      trigger: cli
+    expected_families:
+      - tabular_mvp
+    expected_tool_ids:
+      - validate.eligibility
+      - clean.phase_demo
+      - export.delivery_bundle
+    acceptable_orchestration_tool_ids:
+      - orchestrate.e2e
+    expected_entrypoint: scripts/run_case_e2e_validation.py
+    observation_points:
+      - "Same E2E entrypoint as demo_phase; case_dir differs"
+      - "cases/sampleco/2026-0001/reports/* populated after successful run"
+      - "Cross-check docs/mvp-standard-trace-path.md §3.2"
+    eval_profile: none
+
+  - id: gov_obs_eval_gate
+    task_type: gov.observability.eval
+    input_summary: "Wave B eval export + report + workflow status (Langfuse / ask pipeline alignment check)"
+    input_context:
+      trigger: ci
+      policy_route_id: wave_b.eval_report
+    expected_families:
+      - gov_registry
+    expected_tool_ids:
+      - obs.eval.export
+      - obs.eval.report
+      - obs.wf.status_summary
+    optional_tool_ids:
+      - obs.eval.ci_check
+      - obs.eval.stats
+    expected_entrypoint: observability/eval_exporter.py
+    observation_points:
+      - "Routing policy route wave_b.eval_report in config/routing_policy.yaml"
+      - "Gov cards exist: skills/gov_cards/obs.eval.*.json"
+      - "CI subset: tests.test_eval_gate (see docs/testing.md §5)"
+      - "Artifacts may land under artifacts/eval/ (eval_report.latest.json)"
+    eval_profile: eval_gate_v1
+    notes:
+      - "Do NOT mix Tabular tool_ids into this task_type"
+      - "Composite obs.eval.triage is not a prod step; expand to correlate + trace.query if triaging"
+
+  - id: tabular_mainline_regression
+    task_type: tabular.cleaning.regression
+    input_summary: "MVP mainline regression over demo_phase + sampleco"
+    input_context:
+      trigger: reviewer
+    expected_families:
+      - tabular_mvp
+    expected_tool_ids:
+      - orchestrate.mainline_regression
+    acceptable_orchestration_tool_ids:
+      - orchestrate.e2e
+    expected_entrypoint: scripts/run_mvp_mainline_regression.py
+    observation_points:
+      - "CLI: python scripts/run_mvp_mainline_regression.py -v"
+      - "Wraps orchestrate.e2e per case; see docs/mvp-mainline-regression.md"
+    eval_profile: none

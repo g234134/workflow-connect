@@ -11,9 +11,10 @@
     "file_size_bytes": 4233
   },
   "schema": {
-    "field_count": null,
+    "field_count": 4,
     "primary_key": null,
-    "pii_fields": []
+    "percent_columns": ["之前", "現在（建議）"],
+    "required_columns": ["Phase", "名稱"]
   },
   "provenance": {
     "source_type": "owned",
@@ -25,5 +26,6 @@
     "contains_pii": false,
     "user_acknowledged_limitations": true
   },
-  "cleaning_goals": ""
+  "cleaning_goals": "SampleCo milestone export: phase-like percent normalization",
+  "cleaning_profile": "sampleco_order_profile"
 }

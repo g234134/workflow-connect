@@ -1,0 +1,77 @@
+{
+  "input": "D:\\大唐三省六部\\05_Temp_Cache\\_md.xlsx",
+  "output": "D:\\大唐三省六部\\05_Temp_Cache\\_md_c.xlsx",
+  "start_time": "2026-07-18T16:57:39.352927",
+  "stages": {
+    "0_inspect": {
+      "format": "xlsx",
+      "size_bytes": 4980,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "cols": 2
+        }
+      ],
+      "active_sheet": "Sheet1",
+      "columns": [
+        "N",
+        "V"
+      ],
+      "column_count": 2
+    },
+    "1_detect": {
+      "nulls": {
+        "N": {
+          "null_count": 1,
+          "null_pct": 25.0,
+          "total_rows": 4
+        },
+        "V": {
+          "null_count": 1,
+          "null_pct": 25.0,
+          "total_rows": 4
+        }
+      },
+      "total_nulls": 2,
+      "duplicates": {
+        "duplicate_count": 2,
+        "columns_checked": [
+          "N",
+          "V"
+        ]
+      },
+      "unique_values": {
+        "N": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "V": {
+          "unique_count": "error",
+          "is_numeric": null
+        }
+      }
+    },
+    "2_clean": {
+      "rows_before": 4,
+      "rows_after": 2,
+      "rows_cleaned": 2,
+      "nulls_filled": 2,
+      "duplicates_removed": 2,
+      "columns_standardized": true
+    }
+  },
+  "stats": {
+    "format": "xlsx",
+    "columns": [
+      "N",
+      "V"
+    ],
+    "active_sheet": "Sheet1",
+    "total_nulls": 2,
+    "duplicate_count": 2,
+    "rows_before": 4,
+    "rows_after": 2
+  },
+  "end_time": "2026-07-18T16:57:39.598025"
+}

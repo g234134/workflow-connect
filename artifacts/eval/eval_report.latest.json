@@ -1,0 +1,150 @@
+{
+  "summary": {
+    "ok": true,
+    "message": "analyzed 3 sample(s); needs_review 66.67%",
+    "sample_count": 3,
+    "needs_review_count": 2,
+    "needs_review_ratio": 0.6667,
+    "tag_counts": {
+      "infra_risk": 1,
+      "high_retry": 1
+    },
+    "suggested_thresholds": {
+      "max_needs_review_ratio_range": [
+        0.72,
+        0.87
+      ],
+      "max_needs_review_ratio_observed": 0.6667,
+      "fail_on_tags": [
+        "infra_risk"
+      ],
+      "confidence": "high",
+      "suggested_cli": {
+        "max_needs_review_ratio": 0.87,
+        "fail_on_tags": [
+          "infra_risk"
+        ]
+      }
+    },
+    "analyzed_at": "2026-06-07T07:49:23Z",
+    "input_files": [
+      "eval_export_sample.jsonl"
+    ],
+    "top_tags": [
+      {
+        "tag": "high_retry",
+        "count": 1
+      },
+      {
+        "tag": "infra_risk",
+        "count": 1
+      }
+    ],
+    "index_context_breakdown": {
+      "buckets": [
+        {
+          "kb_index_status": "ready",
+          "sample_count": 1,
+          "needs_review_count": 1,
+          "needs_review_ratio": 1.0,
+          "pass_count": 0
+        },
+        {
+          "kb_index_status": "not_set",
+          "sample_count": 2,
+          "needs_review_count": 1,
+          "needs_review_ratio": 0.5,
+          "pass_count": 1
+        }
+      ],
+      "rows_with_kb_index_status": 1,
+      "observability_only": true,
+      "note": "Index context is observability-only; does not affect eval_gate or selector hook."
+    },
+    "reproduce_command": "python -m observability.eval_report \"tests\\fixtures\\eval\\eval_export_sample.jsonl\" --out-dir artifacts/eval",
+    "suggested_cli": {
+      "max_needs_review_ratio": 0.87,
+      "fail_on_tags": [
+        "infra_risk"
+      ]
+    }
+  },
+  "analysis": {
+    "ok": true,
+    "message": "analyzed 3 sample(s); needs_review 66.67%",
+    "stats": {
+      "input_files": [
+        "eval_export_sample.jsonl"
+      ],
+      "group_by": "none",
+      "analyzed_at": "2026-06-07T07:49:23Z",
+      "overall": {
+        "total": 3,
+        "pass_count": 1,
+        "needs_review_count": 2,
+        "needs_review_ratio": 0.6667,
+        "unknown_gate_result_count": 0,
+        "rows_with_tags": 2,
+        "tag_counts": {
+          "infra_risk": 1,
+          "high_retry": 1
+        },
+        "tag_rates": {
+          "high_retry": 0.3333,
+          "infra_risk": 0.3333
+        },
+        "tag_shares_of_tagged_rows": {
+          "high_retry": 0.5,
+          "infra_risk": 0.5
+        },
+        "other_tags": []
+      },
+      "groups": {},
+      "schema_warnings": [],
+      "min_samples_for_recommendations": 1,
+      "sufficient_for_recommendations": true
+    },
+    "recommendations": {
+      "confidence": "high",
+      "notes": [
+        "Observed needs_review ratio: 66.67% (2/3).",
+        "Suggest --max-needs-review-ratio in [0.72, 0.87]: ceiling above typical batch with room for small regressions; tighten toward the low end once staging baseline stabilizes.",
+        "Observed infra_risk in 1/3 rows (33.33%) — any occurrence should fail CI."
+      ],
+      "max_needs_review_ratio": {
+        "observed": 0.6667,
+        "suggested_range": [
+          0.72,
+          0.87
+        ],
+        "ci_fixture_baseline": 0.8,
+        "ci_fixture_note": "Current workflow uses 0.8 on unit-test fixture (~67% needs_review); replace with suggested_range once real dev/staging export N≥30."
+      },
+      "fail_on_tags": [
+        {
+          "tag": "infra_risk",
+          "action": "fail",
+          "reason": "Infrastructure failures (timeout, context_overflow) should block CI even when overall needs_review ratio is within range."
+        },
+        {
+          "tag": "observability_gap",
+          "action": "optional_fail",
+          "reason": "Low frequency in current sample; enable --fail-on-tags observability_gap on nightly/production paths when baseline is near zero."
+        }
+      ],
+      "warn_tags": [
+        {
+          "tag": "high_retry",
+          "action": "monitor",
+          "reason": "high_retry seen 1 time(s) (33.33%); ratio gate usually sufficient — fail-on-tags only if policy requires."
+        }
+      ],
+      "suggested_cli": {
+        "max_needs_review_ratio": 0.87,
+        "fail_on_tags": [
+          "infra_risk"
+        ]
+      }
+    }
+  }
+}

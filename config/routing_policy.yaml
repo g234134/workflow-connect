@@ -1,0 +1,48 @@
+schema_version: "routing_policy_v1"
+default_env: "dev"
+
+tools:
+  - tool_id: "obs.eval.export"
+    enabled: true
+    review_required: false
+
+  - tool_id: "obs.eval.report"
+    enabled: true
+    review_required: false
+
+  - tool_id: "obs.wf.status_summary"
+    enabled: true
+    review_required: false
+
+  - tool_id: "kb.index.bootstrap"
+    enabled: true
+    review_required: false
+
+  - tool_id: "kb.index.rag_smoke"
+    enabled: true
+    review_required: false
+
+  - tool_id: "kb.index.selector_gate"
+    enabled: false
+    review_required: true
+
+routes:
+  - route_id: "wave_b.eval_report"
+    description: "Run eval export + report + wf status summary"
+    env: "dev"
+    steps:
+      - kind: "tool"
+        tool_id: "obs.eval.export"
+      - kind: "tool"
+        tool_id: "obs.eval.report"
+      - kind: "tool"
+        tool_id: "obs.wf.status_summary"
+
+  - route_id: "wave_b.kb_index_bootstrap"
+    description: "Bootstrap KB index and run rag smoke"
+    env: "dev"
+    steps:
+      - kind: "tool"
+        tool_id: "kb.index.bootstrap"
+      - kind: "tool"
+        tool_id: "kb.index.rag_smoke"

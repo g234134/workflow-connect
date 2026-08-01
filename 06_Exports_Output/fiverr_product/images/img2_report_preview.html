@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1280px; height:769px; background:#0f0f1a; font-family:'Segoe UI',system-ui,sans-serif; display:flex; flex-direction:column; align-items:center; padding:36px 60px; overflow:hidden; }
+
+.title { color:#fff; font-size:36px; font-weight:800; text-align:center; margin-bottom:6px; }
+.title span { color:#3a7bd5; }
+.subtitle { color:#8888aa; font-size:15px; text-align:center; margin-bottom:28px; }
+
+.report-card { width:100%; max-width:1080px; background:#1a1a2e; border-radius:16px; border:1px solid #2a2a40; overflow:hidden; flex:1; display:flex; flex-direction:column; }
+
+.report-header { background:linear-gradient(135deg,#1a1a2e,#252540); padding:20px 32px; border-bottom:1px solid #2a2a40; display:flex; justify-content:space-between; align-items:center; }
+.report-header h2 { color:#fff; font-size:20px; }
+.report-header .date { color:#666; font-size:13px; }
+
+.metrics { display:flex; gap:16px; padding:20px 32px; background:#151525; }
+.metric-card { flex:1; background:#1a1a2e; border-radius:12px; padding:16px 20px; text-align:center; border:1px solid #252540; }
+.metric-card .num { font-size:32px; font-weight:800; }
+.metric-card .num.blue { color:#3a7bd5; }
+.metric-card .num.green { color:#00e676; }
+.metric-card .num.red { color:#e94560; }
+.metric-card .label { font-size:11px; color:#8888aa; margin-top:4px; text-transform:uppercase; letter-spacing:1px; }
+
+.content { flex:1; display:flex; padding:16px 32px; gap:20px; }
+
+.left-table { flex:1.2; }
+.right-chart { flex:0.8; display:flex; flex-direction:column; gap:12px; }
+
+.section-title { color:#8888aa; font-size:12px; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:10px; font-weight:700; }
+
+table { width:100%; border-collapse:collapse; }
+th { background:#252540; color:#8888aa; font-size:11px; padding:8px 12px; text-align:left; }
+td { padding:7px 12px; font-size:12px; color:#ccc; border-bottom:1px solid #1f1f35; }
+.bar-wrap { height:20px; background:#252540; border-radius:4px; overflow:hidden; }
+.bar { height:100%; border-radius:4px; }
+.bar.blue { background:linear-gradient(90deg,#3a7bd5,#5a9bd5); }
+.bar.green { background:linear-gradient(90deg,#00c853,#00e676); }
+
+.pct { color:#3a7bd5; font-weight:700; }
+.pct-green { color:#00e676; font-weight:700; }
+
+.footer-note { color:#444; font-size:11px; text-align:center; padding:8px; }
+</style>
+</head>
+<body>
+<div class="title">Professional <span>Cleaning Report</span> Included</div>
+<div class="subtitle">Every job comes with a detailed HTML + JSON report</div>
+
+<div class="report-card">
+  <div class="report-header">
+    <h2>📊 Data Cleaning Report</h2>
+    <div class="date">Service: Data Cleaning Pipeline &nbsp;|&nbsp; Date: 2026-07-18</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric-card"><div class="num blue">2,004</div><div class="label">Rows Processed</div></div>
+    <div class="metric-card"><div class="num red">1,690</div><div class="label">Issues Fixed</div></div>
+    <div class="metric-card"><div class="num green">0</div><div class="label">Data Loss</div></div>
+    <div class="metric-card"><div class="num green">100%</div><div class="label">Clean Rate</div></div>
+  </div>
+
+  <div class="content">
+    <div class="left-table">
+      <div class="section-title">Column-Level Details</div>
+      <table>
+        <tr><th>Column</th><th>Nulls Found</th><th>Strategy</th><th>Before</th><th>After</th></tr>
+        <tr>
+          <td>sales_rep</td><td>224 (11.2%)</td><td>Mode</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:11.2%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>region</td><td>400 (20.0%)</td><td>Mode</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:20%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>product</td><td>353 (17.6%)</td><td>Mode</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:17.6%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>deal_amount</td><td>165 (8.2%)</td><td>Median</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:8.2%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>close_date</td><td>129 (6.4%)</td><td>Mode</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:6.4%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>status</td><td>232 (11.6%)</td><td>Mode</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:11.6%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+        <tr>
+          <td>commission</td><td>187 (9.3%)</td><td>Median</td>
+          <td><div class="bar-wrap"><div class="bar blue" style="width:9.3%"></div></div></td>
+          <td><span class="pct-green">0%</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="right-chart">
+      <div class="section-title">Summary</div>
+      <div style="background:#1f1f35;border-radius:12px;padding:20px;flex:1;">
+        <div style="margin-bottom:16px;">
+          <div style="color:#8888aa;font-size:11px;margin-bottom:4px;">TOTAL ISSUES</div>
+          <div style="color:#e94560;font-size:28px;font-weight:800;">1,690</div>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div style="color:#8888aa;font-size:11px;margin-bottom:4px;">NULL VALUES FILLED</div>
+          <div style="color:#3a7bd5;font-size:28px;font-weight:800;">1,690</div>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div style="color:#8888aa;font-size:11px;margin-bottom:4px;">COLUMNS STANDARDIZED</div>
+          <div style="color:#8888aa;font-size:28px;font-weight:800;">8</div>
+        </div>
+        <div>
+          <div style="color:#8888aa;font-size:11px;margin-bottom:4px;">DATA PRESERVED</div>
+          <div style="color:#00e676;font-size:28px;font-weight:800;">100%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-note">Report delivered as HTML (visual) + JSON (machine-readable) with every order</div>
+</body>
+</html>

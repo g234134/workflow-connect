@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "cleaning_profile_id": "generic_low_risk_profile",
+  "before": {
+    "row_count": 7,
+    "column_count": 4,
+    "missing_by_column": {
+      "Phase": {
+        "count": 1,
+        "rate": 0.1429
+      },
+      "名稱": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "之前": {
+        "count": 1,
+        "rate": 0.1429
+      },
+      "現在（建議）": {
+        "count": 0,
+        "rate": 0.0
+      }
+    },
+    "duplicate_full_rows": 0,
+    "duplicate_primary_keys": 0,
+    "primary_key_value_counts": {
+      "Phase 1": 1,
+      "Phase 2": 1,
+      "phase 2": 1,
+      "Phase 3": 1,
+      "Phase 4": 1,
+      "Phase 5": 1
+    },
+    "format_issues": [],
+    "range_issues": [],
+    "cleaning_profile_id": "generic_low_risk_profile"
+  },
+  "after": {
+    "row_count": 6,
+    "column_count": 4,
+    "missing_by_column": {
+      "Phase": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "名稱": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "之前": {
+        "count": 1,
+        "rate": 0.1667
+      },
+      "現在（建議）": {
+        "count": 0,
+        "rate": 0.0
+      }
+    },
+    "duplicate_full_rows": 0,
+    "duplicate_primary_keys": 0,
+    "primary_key_value_counts": {
+      "Phase 1": 1,
+      "Phase 2": 1,
+      "Phase 3": 1,
+      "Phase 4": 1,
+      "Phase 5": 1,
+      "phase 2": 1
+    },
+    "format_issues": [],
+    "range_issues": [],
+    "cleaning_profile_id": "generic_low_risk_profile"
+  },
+  "clean_meta": {
+    "dropped_rows": [
+      {
+        "row": 8,
+        "reason": "missing_Phase",
+        "field": "Phase"
+      }
+    ],
+    "deduped_rows": [],
+    "range_flags": [],
+    "output_row_count": 6,
+    "cleaning_profile_id": "generic_low_risk_profile",
+    "dedup_keys": [
+      "Phase"
+    ]
+  }
+}

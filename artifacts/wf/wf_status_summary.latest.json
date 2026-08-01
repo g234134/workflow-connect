@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "message": "wf status summary assembled",
+  "gate": {
+    "ok": true,
+    "message": "analyzed 3 sample(s); needs_review 66.67%",
+    "sample_count": 3,
+    "needs_review_count": 2,
+    "needs_review_ratio": 0.6667,
+    "tag_counts": {
+      "infra_risk": 1,
+      "high_retry": 1
+    },
+    "suggested_thresholds": {
+      "max_needs_review_ratio_range": [
+        0.72,
+        0.87
+      ],
+      "max_needs_review_ratio_observed": 0.6667,
+      "fail_on_tags": [
+        "infra_risk"
+      ],
+      "confidence": "high",
+      "suggested_cli": {
+        "max_needs_review_ratio": 0.87,
+        "fail_on_tags": [
+          "infra_risk"
+        ]
+      }
+    },
+    "analyzed_at": "2026-06-07T07:49:23Z",
+    "input_files": [
+      "eval_export_sample.jsonl"
+    ],
+    "top_tags": [
+      {
+        "tag": "high_retry",
+        "count": 1
+      },
+      {
+        "tag": "infra_risk",
+        "count": 1
+      }
+    ],
+    "index_context_breakdown": {
+      "buckets": [
+        {
+          "kb_index_status": "ready",
+          "sample_count": 1,
+          "needs_review_count": 1,
+          "needs_review_ratio": 1.0,
+          "pass_count": 0
+        },
+        {
+          "kb_index_status": "not_set",
+          "sample_count": 2,
+          "needs_review_count": 1,
+          "needs_review_ratio": 0.5,
+          "pass_count": 1
+        }
+      ],
+      "rows_with_kb_index_status": 1,
+      "observability_only": true,
+      "note": "Index context is observability-only; does not affect eval_gate or selector hook."
+    },
+    "reproduce_command": "python -m observability.eval_report \"tests\\fixtures\\eval\\eval_export_sample.jsonl\" --out-dir artifacts/eval",
+    "suggested_cli": {
+      "max_needs_review_ratio": 0.87,
+      "fail_on_tags": [
+        "infra_risk"
+      ]
+    }
+  },
+  "index_cases": [
+    {
+      "case_id": "W2-1",
+      "kb_index_status": "ready",
+      "job_id": "repo_index_v1_job__W2-1__wave_b_gov_scope",
+      "file_count": 190,
+      "chunk_count": 1204,
+      "last_updated": "2026-06-05T08:47:16Z",
+      "index_file_status": "ok",
+      "source": "workflow_v2/20_pilot/W3-B/index_status_W2-1.json"
+    }
+  ],
+  "trace_join_stats": {
+    "row_count": 2,
+    "trace_found_count": 1,
+    "hit_rate": 0.5,
+    "status": "ok",
+    "message": "correlated 2 eval row(s); trace_found=1"
+  },
+  "generated_at": "2026-06-07T07:49:23Z",
+  "inputs": {
+    "eval_export": "tests/fixtures/eval/eval_export_sample.jsonl",
+    "trace_jsonl": "tests/fixtures/trace/sample_traces.jsonl",
+    "index_status": [
+      "workflow_v2/20_pilot/W3-B/index_status_W2-1.json"
+    ],
+    "case_md": "workflow_v2/20_pilot/W2-1_case/W2-1_case.md"
+  }
+}

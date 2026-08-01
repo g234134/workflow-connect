@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>本機 MVP 介面</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/local-ui.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>本機 MVP 介面</h1>
+    <p class="tagline">MVP 案件工作台 — 僅封裝 CLI</p>
+    <div class="banner banner-warn" role="alert">
+      <strong>非正式環境</strong> · 單一使用者 · 僅限本機 · 無登入 · 無 SLA
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel" id="lookup-panel">
+      <h2>A. 查詢歷史案例</h2>
+      <form id="lookup-form" class="form-grid">
+        <label>客戶代號 <input type="text" name="client_ref" placeholder="例如：SAMPLECO"></label>
+        <label>產品 SKU <input type="text" name="product_sku" placeholder="選填"></label>
+        <label class="span-2">欄位名稱（以逗號分隔） <input type="text" name="schema_headers" placeholder="Phase,名稱（以逗號分隔）"></label>
+        <label class="checkbox"><input type="checkbox" name="list_all"> 列出全部案例</label>
+        <div class="actions span-2">
+          <button type="submit" class="btn btn-primary">執行查詢</button>
+          <button type="button" class="btn btn-secondary" id="btn-reindex">刷新索引</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" id="newcase-panel">
+      <h2>B. 新建案例 + Gate</h2>
+      <form id="newcase-form" class="form-grid">
+        <label class="span-2">來源檔案路徑 <input type="text" name="source_file" placeholder="CSV 檔案路徑，例如 cases/_experiment_samples/sampleco_milestone_export.csv"></label>
+        <label>客戶代號 <input type="text" name="client_ref" required placeholder="例如：acme"></label>
+        <label>產品 SKU <input type="text" name="product_sku" value="CLEAN-BASIC"></label>
+        <label>編碼 <input type="text" name="encoding" value="utf-8"></label>
+        <label>分隔符號 <input type="text" name="delimiter" value=","></label>
+        <label>檔案格式 <input type="text" name="file_format" placeholder="選填：csv、tsv"></label>
+        <label class="checkbox span-2"><input type="checkbox" name="run_gate" checked> 建案後立即執行 gate</label>
+        <div class="actions span-2">
+          <button type="submit" class="btn btn-primary">建立案例並執行 Gate</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" id="e2e-panel">
+      <h2>C. 既有案例 E2E</h2>
+      <form id="e2e-form" class="form-grid">
+        <label class="span-2">案例目錄 <input type="text" name="case_dir" id="case-dir-input" placeholder="cases/demo_phase"></label>
+        <div class="actions span-2">
+          <button type="button" class="btn btn-secondary preset" data-case="cases/demo_phase">demo_phase</button>
+          <button type="button" class="btn btn-secondary preset" data-case="cases/sampleco/2026-0001">sampleco/2026-0001</button>
+          <button type="submit" class="btn btn-primary">執行 E2E</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel panel-results" id="results-panel">
+      <h2>D. 執行結果</h2>
+      <div id="status-bar" class="status-bar hidden">
+        <span id="status-action" class="status-pill"></span>
+        <span id="status-ok" class="status-pill"></span>
+      </div>
+
+      <div id="highlights" class="highlights hidden">
+        <div class="highlight-row"><span class="label">案例目錄</span><span id="hl-case-dir" class="value mono"></span></div>
+        <div class="highlight-row"><span class="label">Gate 狀態</span><span id="hl-gate-status" class="value badge"></span></div>
+        <div class="highlight-row"><span class="label">Schema 備註</span><span id="hl-schema-notes" class="value"></span></div>
+        <div class="highlight-row"><span class="label">Schema 警示</span><span id="hl-schema-warnings" class="value"></span></div>
+        <div class="highlight-row"><span class="label">輸出護欄狀態</span><span id="hl-og-status" class="value badge"></span></div>
+        <div class="highlight-row"><span class="label">輸出護欄比例</span><span id="hl-og-ratio" class="value mono"></span></div>
+      </div>
+
+      <div id="artifacts" class="artifacts hidden">
+        <h3>產物路徑</h3>
+        <ul id="artifact-list"></ul>
+      </div>
+
+      <div id="matches-block" class="matches hidden">
+        <h3>查詢比對結果</h3>
+        <div id="matches-table"></div>
+        <p id="lookup-notes" class="notes"></p>
+        <p id="known-limits" class="notes"></p>
+      </div>
+
+      <details id="raw-json-wrap" class="raw-json hidden">
+        <summary>原始 JSON</summary>
+        <pre id="raw-json"></pre>
+      </details>
+
+      <div id="stderr-block" class="stderr hidden">
+        <h3>stderr</h3>
+        <pre id="stderr-text"></pre>
+      </div>
+
+      <p id="empty-state" class="empty-state">執行查詢、建立案例或 E2E 後，結果將顯示於此。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>封裝 scripts/lookup_case_history.py、new_cleaning_case.py、run_case_e2e_validation.py；不變更核心流程。</small>
+  </footer>
+
+  <script src="/static/local-ui.js"></script>
+</body>
+</html>

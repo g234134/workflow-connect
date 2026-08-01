@@ -1,0 +1,29 @@
+{
+  "case_id": "sandbox_client",
+  "client_ref": "sandbox-client",
+  "product_sku": "CLEAN-BASIC",
+  "data_file": "raw/sandbox_milestone_export.csv",
+  "file_format": "csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "scale": {
+    "row_count": 55,
+    "file_size_bytes": 2100
+  },
+  "schema": {
+    "field_count": null,
+    "primary_key": null,
+    "pii_fields": []
+  },
+  "provenance": {
+    "source_type": "owned",
+    "data_owner": "sandbox-client"
+  },
+  "sensitivity": "internal",
+  "structure": "text_only",
+  "security_compliance": {
+    "contains_pii": false,
+    "user_acknowledged_limitations": true
+  },
+  "cleaning_goals": "W7-T1 experiment-line fixture: sandbox client milestone export (55 rows)"
+}

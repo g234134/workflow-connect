@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "mode": "full",
+  "ops_cycle_schema_version": "v1",
+  "archive_checklist": {
+    "ok": true,
+    "mode": "full",
+    "ops_cycle_schema_version": "v1",
+    "steps": [
+      {
+        "id": "evidence",
+        "title": "執行證據封存",
+        "status": "manual",
+        "message": "保留本輪 CLI 輸出與結構化結果（含 ok、RUNTIME_METRIC）。"
+      },
+      {
+        "id": "milestone",
+        "title": "里程碑封存",
+        "status": "pass",
+        "message": "D:\\大唐三省六部\\04_Workflows\\project_status\\master_status.md"
+      },
+      {
+        "id": "battle_report",
+        "title": "戰報封存",
+        "status": "pass",
+        "message": "D:\\大唐三省六部\\04_Workflows\\00_Agent_Work_Progress.md"
+      },
+      {
+        "id": "runbook_calibration",
+        "title": "Runbook 校正",
+        "status": "manual",
+        "message": "與 runbook 差異重大時於戰報說明，尚書省裁決後更新正式檔。"
+      },
+      {
+        "id": "standards_calibration",
+        "title": "標準校正",
+        "status": "manual",
+        "message": "驗收標準變動須戰報標記並更新 Conditions 相應條目。"
+      },
+      {
+        "id": "forbidden_zone",
+        "title": "禁區確認",
+        "status": "manual",
+        "message": "確認未違反憲法禁區；邊界接觸須戰報留痕。"
+      },
+      {
+        "id": "war_status",
+        "title": "同步 war_status",
+        "status": "pass",
+        "message": "D:\\大唐三省六部\\04_Workflows\\Master_Map.json → war_status.headline"
+      },
+      {
+        "id": "constitution_readme",
+        "title": "對齊憲法 README",
+        "status": "manual",
+        "message": "README_Refresher.md 版本號與 constitution_version 對齊。"
+      },
+      {
+        "id": "fingerprints",
+        "title": "補登指紋",
+        "status": "pass",
+        "message": "D:\\大唐三省六部\\04_Workflows\\Chariot_Registry.db"
+      }
+    ],
+    "message": "Archive checklist (full): 9 steps"
+  },
+  "wave1_readiness": {
+    "ok": true,
+    "checks": [
+      {
+        "step_id": "smoke_keys",
+        "title": "三鑰盲測",
+        "status": "pass",
+        "message": "==== 三鑰盲測 (do not print keys) ====\n  OpenAI   : [OK]\n  Groq     : [OK]\n  Telegram : [OK]\n======================================",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "routing_policy_validate",
+        "title": "routing_policy validate",
+        "status": "pass",
+        "message": "{\n  \"ok\": true,\n  \"message\": \"valid\",\n  \"total_tools\": 6,\n  \"total_routes\": 2,\n  \"errors\": []\n}",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "eval_gate_ci_subset",
+        "title": "eval-gate CI check (fixture)",
+        "status": "pass",
+        "message": "[ENF] config: GOV_ENF_ENABLE=1, GOV_ENF_BLOCKING_CANARY=0 (shadow-only)\n{\n  \"ok\": true,\n  \"message\": \"CI check passed: needs_review 2/3 (66.67%), threshold 90.00%\",\n  \"stats\": {\n    \"sampled\": 3,\n    \"needs_review_count\": 2,\n    \"needs_review_ratio\": 0.6667,\n    \"max_needs_review_ratio\": 0.9,\n    \"min_samples\": 1,\n    \"ratio_triggered\": false,\n    \"tag_triggered\": false,\n    \"tag_counts\": {\n      \"high_retry\": 1,\n      \"infra_risk\": 1\n    },\n    \"fail_on_tags\": []\n  }\n}",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "darkops_route_gate",
+        "title": "DarkOps route gate",
+        "status": "pass",
+        "message": "assignable=False blocked=True",
+        "details": {
+          "exit_code": 1,
+          "assignable": false,
+          "blocked": true
+        },
+        "darkops_blocked_expected": true
+      }
+    ]
+  },
+  "message": "Archive checklist (full) + Wave 1 readiness: archive_ok=True wave1_ok=True",
+  "generated_at": "2026-07-25T01:30:08Z"
+}

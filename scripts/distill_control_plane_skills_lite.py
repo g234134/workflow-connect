@@ -23,6 +23,8 @@ PATH_ID_MAPPING: dict[str, str] = {
     "cp.dispatch_cards.generate": "wc.m2.dispatch.cards_generate",
     "cp.ticket_comms.state_transition": "wc.m2.comms.state_transition",
     "cp.ticket_comms.emit": "wc.m2.comms.state_transition",
+    # cp.ticket_state.b_report 無 T5 等價 · forbidden/HITL 語境（非 auto 路徑）
+    # canonical_fallback = 原值（cp.ticket_state.b_report）
 }
 
 _SOURCE_TYPE_CARD = "card"
@@ -235,16 +237,48 @@ def _scan_reports(reports_dir: Path) -> tuple[list[dict[str, Any]], list[dict[st
     for report_path in sorted(reports_dir.glob("*.md")):
         text = report_path.read_text(encoding="utf-8")
         rel = _repo_relative(report_path)
-        ticket_match = re.search(r"# TICKET STATE · ([^·]+) ·", text)
-        ticket_id = ticket_match.group(1).strip() if ticket_match else report_path.stem
+
+        # 嘗試多種 ticket_id 提取策略（容忍無標題或簡化格式）
+        # 策略 1: 標準標題格式 "# TICKET STATE · ID ·"
+        ticket_match = re.search(r"#\s*TICKET\s*STATE\s*·\s*([^·\n]+)\s*·", text, re.I)
+        if ticket_match:
+            ticket_id = ticket_match.group(1).strip()
+        else:
+            # 策略 2: 從檔名提取（移除 _state.md 後綴）
+            stem = report_path.stem  # e.g., "DEMO-ELIG_state"
+            if stem.endswith("_state"):
+                ticket_id = stem[:-6]  # 移除 "_state"
+            else:
+                ticket_id = stem
+
         ref = _ref(ticket_id=ticket_id, path=rel)
         source_refs.append(ref)
 
-        b_report = re.search(r"## B_REPORT\s+(.*?)(?=\n## |\Z)", text, re.DOTALL)
+        b_report = re.search(r"##\s*B_REPORT\s*(.*?)(?=\n##\s|\Z)", text, re.DOTALL | re.I)
         if not b_report:
+            # 無 B_REPORT 區塊視為格式錯誤（anti-pattern）
+            anti_patterns.append(
+                {
+                    "id": f"anti-b-report-missing-{ticket_id.lower()}",
+                    "title": "B_REPORT section missing or malformed",
+                    "description": (
+                        f"Report for {ticket_id} lacks ## B_REPORT section — "
+                        "skipping pattern extraction."
+                    ),
+                    "source_type": _SOURCE_TYPE_REPORT,
+                    "path_id": "cp.ticket_state.b_report",
+                    "recommendation": (
+                        "Ensure handoff report follows standard TICKET STATE format with B_REPORT."
+                    ),
+                    "source_refs": [ref],
+                }
+            )
             continue
+
         body = b_report.group(1)
-        has_verification = "verification:" in body.lower()
+        has_verification = "verification:" in body.lower() and (
+            "python" in body.lower() or "unittest" in body.lower() or "scripts/" in body.lower()
+        )
         has_changed = "changed_files:" in body.lower()
 
         if has_verification and has_changed:

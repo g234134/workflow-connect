@@ -430,6 +430,20 @@ python 04_Workflows/_wave7_regression_gate.py --tier A
 
 ---
 
+## 9. Wave 5 施工票 cross-ref（2026-06-26 · doc-only · 不改 §7 D1–D5 正文）
+
+> **Planner**：Wave 5 Chat 5 · **W5-WC-PRE-06** · **W5-WC-PRE-07**  
+> **目的**：將 Lane B 治理設計與 Master CP SSOT 對齊；**不**授權 CI 施工 · **不**填 `approval_status=approved`
+
+| Wave 5 票 | 對應 WC-PRE | 新增/對齊產物 | 與 §7 決策關係 |
+|-----------|-------------|---------------|----------------|
+| **W5-WC-PRE-06-governance-spec-v1** | WC-PRE-06 | `WC_PRE_06_approval_template.md` · `wc_pre_06_governance_policy_v1.json` · spec §12 | 引用 D2（score 不 hard assert）· 不修改 D1–D5 表 |
+| **W5-WC-PRE-07-approval-workflow-v1** | WC-PRE-07 | `toolchain-smoke-mandatory-ci-runner-v1.md` · `WC_PRE_07_approval_template.md` · `wc_pre_07_approval_workflow_policy_v1.json` | 引用 D3 白名單 · D5=YES 設計稿 · 不修改 D1–D5 表 |
+
+**誠實邊界**：Wave 5 交付 **`design_ready` + 批文 template**；implementation 仍走 §3 CH-* 與 `WC-IMPL-*` 票 · 須 human `wc_pre_approval_id` 後方可動 workflow。
+
+---
+
 ## 8. Phase 2 可施工清单（Lane B · 2026-06-13）
 
 > **原则**：L1 = advisory / non-blocking；L2 selective mandatory **未实装**；**不得**宣称 branch protection 已升格。

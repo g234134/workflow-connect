@@ -103,7 +103,11 @@ flowchart LR
 
 ## 6. Wave 6 E2E smoke 升格为集成回归门
 
-现有 `test_wave6_e2e_smoke` 在 Wave 7 完成后升格为 **INT-REGRESSION-GATE Tier-A（必跑）** 子集之一：任何改动 envelope / manifest / QA / orchestrator / runner 时须与模块层单测一并全绿，防止「模块层通过、装配层退化」。Tier-A 明细与不变量表见 `WAVE7_INT_REGRESSION_GATE_v0.1.md`；与 `GOV_CORE` smoke runbook 交叉索引即可，不在本总览展开 Tier 细节。
+现有 `test_wave6_e2e_smoke` 在 Wave 7 完成后升格为 **INT-REGRESSION-GATE Tier-A（必跑）** 子集之一：任何改动 envelope / manifest / QA / orchestrator / runner 时须与模块层单测一并全绿，防止「模块层通过、装配层退化」。
+
+- **Phase 6 SSOT**：`docs/phase6-int-regression-gate-contract-v1.md` — 过 gate 命令、CI 矩阵、失败诊断  
+- **Tier 明细与不变量表**：`WAVE7_INT_REGRESSION_GATE_v0.1.md` §5（implementation 附录）  
+- **流程图**：本总览 §5 装配链末步 **INT-REGRESSION-GATE**；与 `GOV_CORE` smoke runbook 交叉索引即可
 
 ---
 

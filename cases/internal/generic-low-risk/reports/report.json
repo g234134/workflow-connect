@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "schema_version": "c2-demo-v1",
+    "job_id": "case-generic-low-risk",
+    "report_type": "clean_basic_generic",
+    "cleaning_profile_id": "generic_low_risk_profile",
+    "generated_at": "2026-07-28T10:07:43.735409+00:00",
+    "disclaimer": "Generic low-risk profile; manual review recommended for first use",
+    "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+    "cleaning_profile_ref": "docs/tabular-cleaning-profiles-v1.md"
+  },
+  "case_id": "generic-low-risk",
+  "client_ref": "internal",
+  "product_sku": "CLEAN-BASIC",
+  "generated_at": "2026-07-28T10:07:43.735409+00:00",
+  "summary": {
+    "job_id": "case-generic-low-risk",
+    "sku": "CLEAN-BASIC",
+    "total_rows": 7,
+    "accepted_rows": 5,
+    "accepted_units": 5,
+    "rejected_rows": 1,
+    "rejected_units": 1,
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "chargeable_hint": false
+  },
+  "product_metrics": {
+    "total_rows": 7,
+    "accepted_rows": 5,
+    "rejected_rows": 1,
+    "duplicate_rows_found": 1,
+    "duplicate_rows_removed": 1,
+    "missing_rate_by_field": {
+      "order_id": {
+        "before": 0.1429,
+        "after": 0.0
+      },
+      "product": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "amount": {
+        "before": 0.0,
+        "after": 0.2
+      },
+      "notes": {
+        "before": 0.1429,
+        "after": 0.2
+      }
+    },
+    "anomaly_count_by_rule": {
+      "numeric_out_of_range": 1,
+      "format_unparseable": 1
+    },
+    "format_fixes_applied": {
+      "text_trimmed": 0,
+      "numeric_parsed": 6
+    }
+  },
+  "cleaning_stats": {
+    "row_counts": {
+      "intake": 7,
+      "after_dedup": 6,
+      "ok": 5,
+      "rejected": 1
+    },
+    "missing_value_stats": [
+      {
+        "field": "order_id",
+        "missing_before": 1,
+        "missing_after": 0,
+        "rate_before": 0.1429,
+        "rate_after": 0.0
+      },
+      {
+        "field": "product",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "amount",
+        "missing_before": 0,
+        "missing_after": 1,
+        "rate_before": 0.0,
+        "rate_after": 0.2
+      },
+      {
+        "field": "notes",
+        "missing_before": 1,
+        "missing_after": 1,
+        "rate_before": 0.1429,
+        "rate_after": 0.2
+      }
+    ],
+    "product_metrics": {
+      "total_rows": 7,
+      "accepted_rows": 5,
+      "rejected_rows": 1,
+      "duplicate_rows_found": 1,
+      "duplicate_rows_removed": 1,
+      "missing_rate_by_field": {
+        "order_id": {
+          "before": 0.1429,
+          "after": 0.0
+        },
+        "product": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "amount": {
+          "before": 0.0,
+          "after": 0.2
+        },
+        "notes": {
+          "before": 0.1429,
+          "after": 0.2
+        }
+      },
+      "anomaly_count_by_rule": {
+        "numeric_out_of_range": 1,
+        "format_unparseable": 1
+      },
+      "format_fixes_applied": {
+        "text_trimmed": 0,
+        "numeric_parsed": 6
+      }
+    }
+  },
+  "issues_summary": {
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 1,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 1,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 7,
+        "field": "amount",
+        "value": 99999.0
+      }
+    ]
+  },
+  "stats": {
+    "row_counts": {
+      "intake": 7,
+      "after_dedup": 6,
+      "ok": 5,
+      "rejected": 1
+    },
+    "missing_value_stats": [
+      {
+        "field": "order_id",
+        "missing_before": 1,
+        "missing_after": 0,
+        "rate_before": 0.1429,
+        "rate_after": 0.0
+      },
+      {
+        "field": "product",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "amount",
+        "missing_before": 0,
+        "missing_after": 1,
+        "rate_before": 0.0,
+        "rate_after": 0.2
+      },
+      {
+        "field": "notes",
+        "missing_before": 1,
+        "missing_after": 1,
+        "rate_before": 0.1429,
+        "rate_after": 0.2
+      }
+    ],
+    "processing_time_ms": 0
+  },
+  "errors": {
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 1,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 1,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": [
+      {
+        "row": 7,
+        "field": "amount",
+        "value": 99999.0
+      }
+    ]
+  },
+  "next_steps": {
+    "for_customer": [
+      "Review flagged numeric anomalies and unparseable values.",
+      "Confirm dedup rule (keep highest numeric compare column) matches business expectation."
+    ],
+    "recommended_actions": [
+      {
+        "action": "review_warnings",
+        "priority": "medium",
+        "reason": "generic profile first-run review"
+      }
+    ]
+  },
+  "cleaning_rules_applied": [
+    {
+      "rule": "trim_text_fields",
+      "description": "trim text fields"
+    },
+    {
+      "rule": "dedup_by_primary_key",
+      "description": "dedup by primary key"
+    },
+    {
+      "rule": "drop_missing_primary_key",
+      "description": "drop missing primary key"
+    },
+    {
+      "rule": "parse_numeric",
+      "description": "parse numeric"
+    },
+    {
+      "rule": "flag_out_of_range",
+      "description": "flag out of range"
+    }
+  ],
+  "cleaning_profile_id": "generic_low_risk_profile",
+  "output_guard": {
+    "guard_version": "output-guard-v0.1",
+    "ratio": 0.7143,
+    "input_rows": 7,
+    "output_rows": 5,
+    "threshold": 0.5,
+    "status": "ok",
+    "notes": []
+  }
+}

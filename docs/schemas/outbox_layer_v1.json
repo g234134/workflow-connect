@@ -1,0 +1,208 @@
+{
+  "schema_version": "outbox_layer_v1",
+  "contract_doc": "docs/outbox-and-feedback-layer-contract-v1.md",
+  "updated_at": "2026-06-11",
+  "phase": "8.9",
+  "track_separation": {
+    "phase_8_9_root": "outbox/",
+    "phase_8_8_module": "orchestration_bridge_outbox",
+    "merge_forbidden": true
+  },
+  "namespaces": [
+    {
+      "namespace_id": "tabular_case_ref",
+      "path_pattern": "outbox/<case_ref>/",
+      "schema_id": "tabular_outbox_v1",
+      "artifact_pattern": "<run_id>.json",
+      "run_id_pattern": "{UTC_compact}_{tool_slug}",
+      "producer": {
+        "module": "tools/tabular_tool_executor.py",
+        "writer": "tools/tabular_outbox_writer.py",
+        "write_conditions": [
+          "dry_run=false",
+          "tool_id in tabular_tool_catalog_v1.json",
+          "non-dry-run always writes including subprocess failure"
+        ]
+      },
+      "consumer": {
+        "module": "tools/tabular_outbox_consumer.py",
+        "cli": "tools/inspect_tabular_outbox.py"
+      },
+      "retention_days_suggested": 90,
+      "co_located_feedback_schemas": [
+        "hitl_checkpoint_v1",
+        "controlled_notify_experiment_v1"
+      ]
+    },
+    {
+      "namespace_id": "agent_experiment_regression",
+      "path_pattern": "outbox/agent_experiment_regression/",
+      "schema_id": "agent_experiment_regression_v1",
+      "artifact_pattern": "<timestamp>_<case_ref_slug>.json",
+      "producer": {
+        "scripts": [
+          "scripts/run_agent_standard_case_regression.py",
+          "scripts/run_agent_standard_case_experiment.py"
+        ]
+      },
+      "consumer": {
+        "scripts": [
+          "scripts/run_agent_audit_quickview.py",
+          "scripts/analyze_agent_lines_metrics.py"
+        ]
+      },
+      "retention_days_suggested": 90
+    },
+    {
+      "namespace_id": "agent_ci",
+      "path_pattern": "outbox/agent_ci/",
+      "schema_id": "agent_lines_ci_suite_v1",
+      "artifact_pattern": "<timestamp>_ci_summary.json",
+      "producer": {
+        "script": "scripts/run_agent_lines_ci_suite.py"
+      },
+      "consumer": {
+        "scripts": [
+          "scripts/analyze_agent_lines_metrics.py"
+        ]
+      },
+      "retention_days_suggested": 180
+    },
+    {
+      "namespace_id": "non_tabular_experiment",
+      "path_pattern": "outbox/non_tabular_experiment/",
+      "schema_id": "non_tabular_experiment_preview_v1",
+      "artifact_pattern": "<timestamp>_<fixture_slug>.json",
+      "producer": {
+        "script": "scripts/run_non_tabular_experiment_preview.py"
+      },
+      "consumer": {
+        "scripts": [
+          "scripts/run_agent_audit_quickview.py",
+          "scripts/analyze_agent_lines_metrics.py"
+        ]
+      },
+      "retention_days_suggested": 90,
+      "sandbox_only": true
+    },
+    {
+      "namespace_id": "sandbox_delivery",
+      "path_pattern": "outbox/sandbox_delivery/<case_ref>/",
+      "schema_id": "sandbox_delivery_bundle_v1",
+      "artifact_pattern": "<YYYYMMDDTHHMMSSZ>_<experiment_id_prefix>/manifest.json",
+      "producer": {
+        "module": "delivery/sandbox_delivery_bundle_v1.py"
+      },
+      "consumer": {
+        "scripts": [
+          "scripts/run_agent_audit_quickview.py"
+        ]
+      },
+      "retention_days_suggested": 90,
+      "maturity": "sandbox",
+      "allowlist_case_refs": ["additional_demo"]
+    },
+    {
+      "namespace_id": "agent_metrics",
+      "path_pattern": "outbox/agent_metrics/",
+      "schema_id": "agent_lines_metrics_v1",
+      "artifact_pattern": "metrics_summary.json",
+      "producer": {
+        "scripts": [
+          "scripts/analyze_agent_lines_metrics.py",
+          "scripts/generate_agent_lines_monthly_report.py"
+        ]
+      },
+      "consumer": {
+        "scripts": [
+          "scripts/generate_agent_lines_monthly_report.py"
+        ]
+      },
+      "retention_days_suggested": 365,
+      "aggregate_only": true
+    }
+  ],
+  "feedback_schemas": [
+    {
+      "feedback_kind": "hitl_checkpoint_a",
+      "schema_id": "hitl_checkpoint_v1",
+      "checkpoint_id": "A-intake-confirmation",
+      "storage_pattern": "outbox/<case_ref>/<checkpoint_id>_<ts>.json",
+      "authority_rank": 1
+    },
+    {
+      "feedback_kind": "hitl_checkpoint_b",
+      "schema_id": "hitl_checkpoint_v1",
+      "checkpoint_id": "B-delivery-confirmation",
+      "storage_pattern": "outbox/<case_ref>/<checkpoint_id>_<ts>.json",
+      "authority_rank": 1
+    },
+    {
+      "feedback_kind": "delivery_approval",
+      "schema_id": "hitl_checkpoint_v1",
+      "producer_module": "delivery/delivery_approval_cli_v1.py",
+      "authority_rank": 1
+    },
+    {
+      "feedback_kind": "controlled_notify_simulated",
+      "schema_id": "controlled_notify_experiment_v1",
+      "storage_pattern": "outbox/<case_ref>/notify_experiment_<ts>.json",
+      "simulated": true,
+      "authority_rank": 1
+    },
+    {
+      "feedback_kind": "downstream_ack",
+      "schema_id": "downstream_ack_v1",
+      "storage_pattern": "outbox/feedback/<case_ref>/acks/<event_id>_<handler_id>.json",
+      "producer_module": "delivery/feedback_ingest_v1.py",
+      "consumer_module": "delivery/workflow_event_consumer_v1.py",
+      "authority_rank": 2
+    }
+  ],
+  "dispatch_registry": {
+    "schema_id": "notification_handlers_v1",
+    "config_path": "routing/notification_handlers_v1.yaml",
+    "module": "delivery/notification_dispatch_v1.py",
+    "post_emit_hook": "delivery/notification_gateway_v1.py",
+    "fail_open": true,
+    "enable_env": "GOV_NOTIFICATION_DISPATCH_ENABLED",
+    "controlled_notify_env": "GOV_CONTROLLED_NOTIFY_ON_DISPATCH"
+  },
+  "join_with_case_history": {
+    "function": "tools.tabular_outbox_consumer.join_with_case_history",
+    "index_ssot": "cases/index.json",
+    "index_schema_version": "gov-cases-index-v0.1",
+    "case_match_key": "case_dir",
+    "case_fields": [
+      "case_dir",
+      "client_ref",
+      "case_id",
+      "product_sku",
+      "gate_status",
+      "schema_headers",
+      "known_limits"
+    ],
+    "runs_order": "chronological_oldest_first"
+  },
+  "legacy_degradation": {
+    "missing_schema_version_schema_id": "unknown",
+    "lookup_keys": ["case_ref", "case_summary.case_ref", "path_parent_dir"],
+    "strict_get_schema_version_required": true
+  },
+  "observability": {
+    "events_jsonl": {
+      "path": "outbox/events.jsonl",
+      "optional": true,
+      "event_types": ["tabular_tool_run", "tabular_tool_run_failed"]
+    },
+    "metrics": {
+      "outbox_write_count_source": "outbox/agent_metrics/metrics_summary.json",
+      "outbox_read_count": "reserved_wb_t4"
+    },
+    "trace_id": "optional_sidecar_not_guaranteed"
+  },
+  "forbidden_merge_paths": [
+    "orchestration_bridge_outbox",
+    "core/orchestration_bridge_outbox.py"
+  ]
+}

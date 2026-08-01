@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>戰車數據清洗 — 立即下單</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "PingFang TC", "Microsoft YaHei", sans-serif;
+    background: #0a0a0f; color: #e8e8ea;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  .form-container {
+    background: #12121c; border: 1px solid #1e1e30; border-radius: 16px;
+    padding: 40px 36px; width: 100%; max-width: 520px;
+  }
+  h1 { font-size: 24px; text-align: center; margin-bottom: 8px; }
+  h1 span { color: #3a7bd5; }
+  .subtitle { text-align: center; color: #808898; font-size: 14px; margin-bottom: 32px; }
+  label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #c0c4d0; }
+  input, select, textarea {
+    width: 100%; padding: 10px 14px; margin-bottom: 20px;
+    background: #1a1a2e; border: 1px solid #28283e; border-radius: 8px;
+    color: #e8e8ea; font-size: 14px; font-family: inherit;
+    transition: border-color .2s;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: #3a7bd5; }
+  textarea { resize: vertical; min-height: 80px; }
+  .radio-group { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .radio-group label { display: flex; align-items: center; gap: 6px; font-weight: 400; cursor: pointer; }
+  .radio-group input[type="radio"] { width: auto; margin: 0; }
+  .file-upload {
+    border: 2px dashed #28283e; border-radius: 10px; padding: 24px;
+    text-align: center; margin-bottom: 20px; cursor: pointer;
+    transition: border-color .2s;
+  }
+  .file-upload:hover { border-color: #3a7bd5; }
+  .file-upload input { display: none; }
+  .file-upload p { color: #808898; font-size: 13px; margin-top: 8px; }
+  .submit-btn {
+    width: 100%; padding: 12px; background: linear-gradient(135deg, #3a7bd5, #2563a8);
+    color: #fff; font-size: 16px; font-weight: 600; border: none; border-radius: 8px;
+    cursor: pointer; transition: transform .2s, box-shadow .2s;
+  }
+  .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(58,123,213,.35); }
+  .note { text-align: center; color: #505060; font-size: 12px; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h1>戰車<span>數據清洗</span> — 立即下單</h1>
+  <p class="subtitle">上傳您的檔案，我們將在最短時間內交付乾淨數據</p>
+
+  <form id="orderForm">
+    <label>姓名 *</label>
+    <input type="text" name="name" required placeholder="您的姓名">
+
+    <label>Email *</label>
+    <input type="email" name="email" required placeholder="example@email.com">
+
+    <label>聯絡電話</label>
+    <input type="tel" name="phone" placeholder="0912-345-678">
+
+    <label>服務方案 *</label>
+    <div class="radio-group">
+      <label><input type="radio" name="plan" value="basic" required> 基礎版 $999</label>
+      <label><input type="radio" name="plan" value="pro"> 專業版 $2,999</label>
+      <label><input type="radio" name="plan" value="enterprise"> 企業版 客製</label>
+    </div>
+
+    <label>上傳檔案 *</label>
+    <div class="file-upload" onclick="this.querySelector('input').click()">
+      <input type="file" name="file" accept=".xlsx,.xls,.csv" required>
+      <div style="font-size:32px;">📁</div>
+      <p>點擊選擇或拖曳 Excel / CSV 檔案</p>
+    </div>
+
+    <label>補充說明</label>
+    <textarea name="notes" placeholder="例如：需要去除重複行、統一日期格式為 YYYY-MM-DD..."></textarea>
+
+    <button type="submit" class="submit-btn">送出訂單 →</button>
+  </form>
+  <p class="note">🔒 您的檔案僅用於清洗服務，不會分享給第三方</p>
+</div>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const fd = new FormData(this);
+  const data = Object.fromEntries(fd.entries());
+  // In production, POST to your webhook endpoint
+  console.log('Order submitted:', data);
+  alert('✅ 訂單已送出！我們會盡快與您聯繫。');
+});
+</script>
+</body>
+</html>

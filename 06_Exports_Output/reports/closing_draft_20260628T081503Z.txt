@@ -1,0 +1,31 @@
+【結案報告草案 · v2.56】
+生成時間：2026-06-28T08:15:03+00:00
+
+一、處理總量：池 36236 件；本次比對掃描/快取 100 條；A 級命中 4 條
+二、雜訊過濾率（示意）：96.0%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508_type_promotion.py | score=8.8 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_type_promotion.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_doc2vec.py | score=7.95 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_doc2vec.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508__dict_learning.py | score=7.86 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__dict_learning.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508_openai_async.py | score=7.74 | sim=None% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_openai_async.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）
+  · 使用內部平台 internal_wave 進行數據清算
+  · 樣本數為 100，平均值為 4.743，等級分布為 B：56，D：35，C：5，A：4
+
+六、使用建議：
+  · 根據 match_report 中的 coverage_pct 和 is_high_yield，調整數據清算策略
+  · 優化 noise_filter_rate_pct_hint 以提高數據清算效率
+  · 根據 elite_index_stats 中的 files_seen 和 elite_count，調整數據清算範圍
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個使用內部平台 internal_wave 進行數據清算的項目。根據 match_report 中的數據，樣本數為 100，平均值為 4.743，等級分布為 B：56，D：35，C：5，A：4。數據清算效率高，noise_filter_rate_pct_hint 為 96.0%，virtual_savings_twd_hint 為 0.11。為了提高數據清算效率，建議根據 match_report 中的 coverage_pct 和 is_high_yield，調整數據清算策略，優化 noise_filter_rate_pct_hint，調整數據清算範圍。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

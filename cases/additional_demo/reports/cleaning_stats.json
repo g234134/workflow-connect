@@ -1,5 +1,6 @@
 {
   "ok": true,
+  "cleaning_profile_id": "phase_demo_v1",
   "before": {
     "row_count": 12,
     "column_count": 4,
@@ -45,7 +46,8 @@
         "value": 105.0,
         "phase": "Phase 4"
       }
-    ]
+    ],
+    "cleaning_profile_id": "phase_demo_v1"
   },
   "after": {
     "row_count": 11,
@@ -91,7 +93,8 @@
         "value": 105.0,
         "phase": "Phase 4"
       }
-    ]
+    ],
+    "cleaning_profile_id": "phase_demo_v1"
   },
   "clean_meta": {
     "dropped_rows": [],
@@ -114,6 +117,10 @@
         "phase": "Phase 4"
       }
     ],
-    "output_row_count": 11
+    "output_row_count": 11,
+    "cleaning_profile_id": "phase_demo_v1",
+    "dedup_keys": [
+      "Phase"
+    ]
   }
 }

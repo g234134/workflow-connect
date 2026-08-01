@@ -1,5 +1,7 @@
 # Wave 7 – INT-REGRESSION-GATE（v0.1）
 
+> **Phase 6 contract 为索引 SSOT**：gate 层级、过 gate 定义、CI 边界、失败诊断 → **`docs/phase6-int-regression-gate-contract-v1.md`**（WA-T6）。  
+> **本档角色**：implementation 附录 — Tier 逐测试不变量表、JSON 示例、Wave 8 纳管策略。  
 > **票号**：`INT-REGRESSION-GATE`  
 > **性质**：implementation / governance ticket  
 > **范围**：Wave 6/7 集成回归门禁定义 + 聚合入口  

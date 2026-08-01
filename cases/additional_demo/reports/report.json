@@ -3,15 +3,17 @@
     "schema_version": "c2-demo-v1",
     "job_id": "case-additional_demo",
     "report_type": "clean_basic_demo",
-    "generated_at": "2026-06-22T01:08:31.231393+00:00",
+    "cleaning_profile_id": "phase_demo_v1",
+    "generated_at": "2026-07-28T15:52:03.262457+00:00",
     "disclaimer": "Demo only; manual review required; not production SLA pipeline",
     "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
-    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md"
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+    "cleaning_profile_ref": "docs/tabular-cleaning-profiles-v1.md"
   },
   "case_id": "additional_demo",
   "client_ref": "additional-demo",
   "product_sku": "CLEAN-BASIC",
-  "generated_at": "2026-06-22T01:08:31.231393+00:00",
+  "generated_at": "2026-07-28T15:52:03.262457+00:00",
   "summary": {
     "job_id": "case-additional_demo",
     "sku": "CLEAN-BASIC",
@@ -229,25 +231,26 @@
   "cleaning_rules_applied": [
     {
       "rule": "normalize_phase_name",
-      "description": "Phase N casing unified"
+      "description": "normalize phase name"
     },
     {
       "rule": "dedup_by_phase",
-      "description": "Keep row with max 現在（建議）"
+      "description": "dedup by phase"
     },
     {
       "rule": "drop_missing_phase",
-      "description": "Reject rows with empty Phase"
+      "description": "drop missing phase"
     },
     {
       "rule": "parse_percent",
-      "description": "Strip % and store 0–100 numeric"
+      "description": "parse percent"
     },
     {
       "rule": "flag_out_of_range",
-      "description": "Mark 0–100 violations; do not auto-truncate in demo"
+      "description": "flag out of range"
     }
   ],
+  "cleaning_profile_id": "phase_demo_v1",
   "output_guard": {
     "guard_version": "output-guard-v0.1",
     "ratio": 0.9167,

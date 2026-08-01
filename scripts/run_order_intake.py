@@ -13,6 +13,8 @@ Usage:
     python scripts/run_order_intake.py lookup --order-id ORD-WC-T4
     python scripts/run_order_intake.py lookup --ticket-id WC-T4
     python scripts/run_order_intake.py list
+    python scripts/run_order_intake.py transition --order-id ORD-WC-DEMO-1 --to pending_payment
+    GOV_PAYMENT_SANDBOX_ENABLED=1 python scripts/run_order_intake.py pay --order-id ORD-WC-DEMO-1
 """
 
 from __future__ import annotations
@@ -29,7 +31,13 @@ if str(_WORKFLOWS) not in sys.path:
     sys.path.insert(0, str(_WORKFLOWS))
 
 from dispatch_executor import parse_ticket_state_markdown  # noqa: E402
-from order_ledger.service import create_order_for_ticket, list_orders, lookup_order  # noqa: E402
+from order_ledger.payment_adapter import charge  # noqa: E402
+from order_ledger.service import (  # noqa: E402
+    create_order_for_ticket,
+    list_orders,
+    lookup_order,
+    transition_order,
+)
 from order_ledger.store import JsonlFileStore  # noqa: E402
 
 DEFAULT_JSONL = _REPO_ROOT / "artifacts" / "order_ledger" / "orders.jsonl"
@@ -78,6 +86,27 @@ def cmd_list(args: argparse.Namespace) -> dict[str, Any]:
     return list_orders(store)
 
 
+def cmd_transition(args: argparse.Namespace) -> dict[str, Any]:
+    store = _build_store(args.jsonl_path)
+    return transition_order(
+        store,
+        args.order_id,
+        args.to,
+        actor=args.actor,
+        reason=args.reason,
+    )
+
+
+def cmd_pay(args: argparse.Namespace) -> dict[str, Any]:
+    store = _build_store(args.jsonl_path)
+    return charge(
+        store,
+        args.order_id,
+        amount_minor=args.amount_minor,
+        simulate=args.simulate,
+    )
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="WC-T4 order intake CLI")
     parser.add_argument(
@@ -111,6 +140,25 @@ def _build_parser() -> argparse.ArgumentParser:
     lookup_p = sub.add_parser("lookup", help="Lookup order by id or ticket")
     lookup_p.add_argument("--order-id", default=None)
     lookup_p.add_argument("--ticket-id", default=None)
+
+    transition_p = sub.add_parser("transition", help="Transition order status (sandbox state machine)")
+    transition_p.add_argument("--order-id", required=True)
+    transition_p.add_argument(
+        "--to",
+        required=True,
+        help="Target status: pending_payment | paid | refunded",
+    )
+    transition_p.add_argument("--actor", default="cli")
+    transition_p.add_argument("--reason", default="manual_transition")
+
+    pay_p = sub.add_parser("pay", help="Sandbox mock charge (requires GOV_PAYMENT_SANDBOX_ENABLED=1)")
+    pay_p.add_argument("--order-id", required=True)
+    pay_p.add_argument("--amount-minor", type=int, default=None)
+    pay_p.add_argument(
+        "--simulate",
+        default=None,
+        help="Optional failure inject: decline | timeout",
+    )
 
     sub.add_parser("list", help="List all orders")
 
@@ -148,6 +196,10 @@ def main(argv: list[str] | None = None) -> int:
             result = cmd_create(args)
         elif args.command == "lookup":
             result = cmd_lookup(args)
+        elif args.command == "transition":
+            result = cmd_transition(args)
+        elif args.command == "pay":
+            result = cmd_pay(args)
         else:
             result = cmd_list(args)
     except FileNotFoundError as exc:

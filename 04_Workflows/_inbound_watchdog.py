@@ -22,14 +22,17 @@ from _tang_paths import bootstrap_sys_path  # type: ignore
 _here = os.path.dirname(os.path.abspath(__file__))
 _root = bootstrap_sys_path(_here)
 
+from pathlib import Path
 from gov_paths import get_artifact_path, resolve_agent_output_path  # type: ignore
 
 try:
     from watchdog.events import FileSystemEventHandler
     from watchdog.observers import Observer
-except ImportError as e:  # pragma: no cover
-    print("[ERR] 需要主艙依賴 watchdog：請於 gov_main 安裝後再啟動。", file=sys.stderr)
-    raise SystemExit(2) from e
+    _watchdog_ok = True
+except ImportError:
+    FileSystemEventHandler = object  # fallback — _InboundHandler 變無操作
+    Observer = None
+    _watchdog_ok = False
 
 
 def _utc_iso() -> str:
@@ -265,13 +268,64 @@ def bootstrap_scan(raw_root: str) -> Dict[str, Any]:
     }
 
 
+def check_inbox(
+    inbox_path: str | None = None,
+    output_path: str | None = None,
+) -> dict:
+    """掃描 inbox 資料夾，回傳新檔案清單（原 check_inbox.py 核心邏輯）。"""
+    INBOX = Path(inbox_path or "D:/大唐三省六部/05_Temp_Cache/inbox")
+    OUTPUT = Path(output_path or "D:/大唐三省六部/05_Temp_Cache/output")
+    LOG = INBOX / "check_log.json"
+    EXTENSIONS = {'.xlsx', '.xls', '.csv'}
+
+    if not INBOX.exists():
+        return {"status": "empty", "files": [], "message": "Inbox folder not found"}
+
+    files = []
+    for f in INBOX.iterdir():
+        if f.is_file() and f.suffix.lower() in EXTENSIONS:
+            stat = f.stat()
+            files.append({
+                "name": f.name,
+                "size_kb": round(stat.st_size / 1024, 1),
+                "modified": datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat(),
+                "path": str(f),
+            })
+
+    files.sort(key=lambda x: x["modified"], reverse=True)
+    result = {
+        "status": "has_work" if files else "empty",
+        "count": len(files),
+        "files": files,
+        "timestamp": _utc_iso(),
+    }
+
+    # 存 log
+    LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(LOG, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    return result
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="刑部 raw_inbound 生料哨兵")
     parser.add_argument("--debounce", type=float, default=1.75, help="事件合併秒數")
     parser.add_argument("--no-bootstrap", action="store_true", help="啟動時不掃描全目錄")
     parser.add_argument("--bootstrap-only", action="store_true", help="僅執行一次 bootstrap 後退出")
     parser.add_argument("--skip-lock", action="store_true", help="略過單例 lock（除錯用）")
+    parser.add_argument("--inbox-check", action="store_true", help="單次掃描 inbox 後退出（合併自 check_inbox.py）")
     args = parser.parse_args()
+
+    if args.inbox_check:
+        r = check_inbox()
+        if r["status"] == "has_work":
+            print(f"📬 收到 {r['count']} 個新檔案：")
+            for f in r["files"]:
+                print(f"  - {f['name']} ({f['size_kb']} KB)")
+        else:
+            print("📭 目前沒有新工作")
+        return 0
 
     raw_root = _raw_inbound_dir()
     os.makedirs(raw_root, exist_ok=True)
@@ -291,6 +345,10 @@ def main() -> int:
         )
         if args.bootstrap_only:
             return 0 if boot.get("returncode", 0) == 0 else 1
+
+        if not _watchdog_ok:
+            print("[ERR] 需要 watchdog 套件：pip install watchdog（inbox-check 與 bootstrap 仍可用）", file=sys.stderr)
+            return 2
 
         def on_flush(paths: List[str]) -> None:
             rid = f"inbound_evt_{uuid.uuid4().hex[:12]}"

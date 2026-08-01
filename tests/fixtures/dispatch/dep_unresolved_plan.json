@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "generated_at": "2026-07-11T00:00:00+00:00",
+  "tickets_scanned": 1,
+  "runnable_now": [
+    {
+      "ticket_id": "TEST-DEP",
+      "title": "In-progress ticket with unresolved dependency",
+      "overall_status": "in_progress",
+      "current_owner": "implementer",
+      "source_path": "tests/fixtures/dispatch/dep_unresolved_ticket.md"
+    }
+  ],
+  "suggested_next": [
+    {
+      "ticket_id": "TEST-DEP",
+      "recommended_role": "implementer",
+      "reason": "unresolved-dependency fixture for eligibility gate=block",
+      "commands": [],
+      "blocked_by": ["W9-T9"],
+      "expected_output": "B_REPORT updated",
+      "bucket": "runnable_now"
+    }
+  ],
+  "warnings": []
+}

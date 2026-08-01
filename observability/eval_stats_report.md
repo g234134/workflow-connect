@@ -2,6 +2,8 @@
 
 > **Tool**: `python -m observability.eval_stats` (`observability/eval_stats.py`)  
 > **Wave B report CLI**: `python -m observability.eval_report` → `artifacts/eval/eval_report.latest.{md,json}`  
+> **Index context (P3)**: when export lines include `kb_index_status`, report JSON carries `index_context_breakdown` and Markdown **Index context** table (observability only — see `observability/eval_export.md` § kb_index_status sidecar)  
+> **Wave B correlate CLI**: `python -m observability.eval_trace_correlate` — join flagged eval rows to gov-trace-v2 (see `observability/eval_export.md` § correlate)
 > **Input**: `eval_export/v1` JSONL (from `eval_exporter`, not raw `ibridge_records`)  
 > **Scope**: Wave X / Chat B — analysis only; does **not** change `.github/workflows` or `eval_ci_check` defaults.
 
@@ -65,12 +67,25 @@ python -m observability.eval_ci_check artifacts/eval/eval_results.latest.jsonl \
 
 ## How to reproduce
 
+**Preferred (Wave B report CLI — generates `artifacts/eval/eval_report.latest.{md,json}`):**
+
+```bash
+python -m observability.eval_report tests/fixtures/eval/eval_export_sample.jsonl --out-dir artifacts/eval
+python -m observability.eval_report artifacts/eval/eval_export_v1_shadow_nightly.latest.jsonl --out-dir artifacts/eval
+```
+
+**Stats-only JSON (stable top-level schema: `sample_count`, `needs_review_ratio`, `tag_counts`, `suggested_thresholds`):**
+
+```bash
+python -m observability.eval_stats tests/fixtures/eval/eval_export_sample.jsonl --format json
+python -m observability.eval_stats artifacts/eval/eval_export_v1_shadow_nightly.latest.jsonl --format json
+```
+
+**Legacy text / append modes:**
+
 ```bash
 # Single fixture-aligned export (N=3)
 python -m observability.eval_stats tests/fixtures/eval/eval_export_sample.jsonl --format text
-
-# JSON for automation / battle report
-python -m observability.eval_stats artifacts/eval/smoke_eval_results.jsonl --format json
 
 # Group by run date (timestamp field)
 python -m observability.eval_stats path/to/eval_results.YYYYMMDD.jsonl --group-by date --format text

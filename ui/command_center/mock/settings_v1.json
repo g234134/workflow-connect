@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "schema_version": "w4_ui_settings_thin_v1",
+  "demo": true,
+  "read_only": true,
+  "page_kind": "settings_thin",
+  "host": "ui/command_center",
+  "generated_at": "2026-07-28T01:45:00+08:00",
+  "message": "Wave5 AI sidecar · settings stub→薄頁 · ≠ live config API · ≠ Round-2",
+  "secrets_policy": "mask_only",
+  "secrets": {
+    "api_key_display": "••••••••",
+    "note": "金鑰僅遮罩占位；禁止渲染明文"
+  },
+  "brand": {
+    "title": "三省六部指揮中心",
+    "page_title": "系統設定",
+    "subtitle": "薄頁 · 只讀偏好 · ≠ 完整設定／金鑰策略 UI",
+    "timezone_label": "亞洲 / 台北",
+    "clock_demo": "—",
+    "operator": "指揮官 · 系統管理員"
+  },
+  "nav": [
+    {"id": "p1", "label": "總覽", "href": "p1.html", "active": false},
+    {"id": "p5", "label": "協作作業台", "href": "p5.html", "active": false},
+    {"id": "p4", "label": "三省六部", "href": "p4.html", "active": false},
+    {"id": "p3", "label": "暗部執行", "href": "p3.html", "active": false},
+    {"id": "p2", "label": "技能與資源", "href": "p2.html", "active": false},
+    {"id": "settings", "label": "設定", "href": "settings.html", "active": true}
+  ],
+  "prefs": [
+    {"id": "timezone", "label": "時區", "value": "亞洲 / 台北（UTC+8）", "editable": false},
+    {"id": "locale", "label": "介面語系", "value": "zh-TW", "editable": false},
+    {"id": "data_source", "label": "資料源預設", "value": "mock（?source=live 可切換）", "editable": false},
+    {"id": "theme", "label": "主題", "value": "command_center dark shell", "editable": false}
+  ],
+  "security_notes": [
+    "金鑰僅遮罩顯示；禁止明文",
+    "本頁不寫 .env、不觸 Z-ENV",
+    "≠ Operator prod 設定台"
+  ],
+  "non_claims": [
+    "≠ live config API",
+    "≠ Phase% / Dashboard authorize",
+    "≠ Round-2 / H2–H5 解阻",
+    "≠ DarkOps"
+  ]
+}

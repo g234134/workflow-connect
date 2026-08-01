@@ -1,44 +1,22 @@
 {
   "schema_version": "scope-ledger-v0.1",
-  "updated_at": "2026-06-05T03:24:48+00:00",
+  "updated_at": "2026-07-28T16:49:44+00:00",
   "current_conversation_id": "unknown",
   "sessions": {
     "unknown": {
       "ticket_id": "TEST-SUB-002",
       "ticket_source": "prompt",
-      "started_at": "2026-05-25T00:16:07+00:00",
-      "last_event_at": "2026-06-05T03:24:48+00:00",
+      "started_at": "2026-06-15T04:28:31+00:00",
+      "last_event_at": "2026-07-28T16:49:44+00:00",
       "stop_status": "completed",
       "files_changed": [],
       "generation_ids": []
-    },
-    "live-verify-sub002": {
-      "ticket_id": "TEST-SUB-002",
-      "ticket_source": "prompt",
-      "started_at": "2026-05-25T00:19:08+00:00",
-      "last_event_at": "2026-05-25T00:19:11+00:00",
-      "stop_status": "completed",
-      "files_changed": [
-        {
-          "path": "smoke_test_scratch.txt",
-          "first_seen_at": "2026-05-25T00:19:08+00:00",
-          "last_seen_at": "2026-05-25T00:19:08+00:00",
-          "edit_count": 1,
-          "source_hook": "afterFileEdit",
-          "skipped": false
-        }
-      ],
-      "generation_ids": [
-        "gen-live-001"
-      ]
     }
   },
   "by_ticket": {
     "TEST-SUB-002": {
-      "conversation_id": "live-verify-sub002",
-      "files": [
-        "smoke_test_scratch.txt"
-      ]
+      "conversation_id": "unknown",
+      "files": []
     }
   }
 }

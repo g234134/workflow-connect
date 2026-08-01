@@ -14,7 +14,7 @@ from observability.eval_report import (
     format_markdown_report,
     write_eval_report,
 )
-from observability.eval_stats import analyze_export_files
+from observability.eval_stats import analyze_export_files, compute_index_context_breakdown
 
 _FIXTURE = Path(__file__).resolve().parent / "fixtures" / "eval" / "eval_export_sample.jsonl"
 
@@ -63,6 +63,29 @@ class TestEvalReport(unittest.TestCase):
             result = write_eval_report([empty], out)
             self.assertFalse(result["ok"])
             self.assertEqual(result["sample_count"], 0)
+
+    def test_index_context_breakdown_on_fixture(self) -> None:
+        breakdown = compute_index_context_breakdown([_FIXTURE])
+        self.assertEqual(breakdown["rows_with_kb_index_status"], 1)
+        buckets = {b["kb_index_status"]: b for b in breakdown["buckets"]}
+        self.assertIn("ready", buckets)
+        self.assertEqual(buckets["ready"]["sample_count"], 1)
+        self.assertEqual(buckets["ready"]["needs_review_count"], 1)
+        self.assertIn("not_set", {b["kb_index_status"] for b in breakdown["buckets"]})
+
+    def test_report_summary_includes_index_context(self) -> None:
+        analysis = analyze_export_files([_FIXTURE], min_samples_for_recommendations=1)
+        summary = build_report_summary(analysis, export_paths=[_FIXTURE])
+        self.assertIn("index_context_breakdown", summary)
+        self.assertTrue(summary["index_context_breakdown"]["observability_only"])
+
+    def test_markdown_includes_index_context_section(self) -> None:
+        analysis = analyze_export_files([_FIXTURE], min_samples_for_recommendations=1)
+        summary = build_report_summary(analysis, export_paths=[_FIXTURE])
+        md = format_markdown_report(summary, analysis)
+        self.assertIn("### Index context", md)
+        self.assertIn("Observability only", md)
+        self.assertIn("`ready`", md)
 
 
 if __name__ == "__main__":

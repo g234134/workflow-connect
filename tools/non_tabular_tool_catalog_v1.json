@@ -1,0 +1,36 @@
+{
+  "schema_version": "non_tabular_tool_catalog_v1",
+  "catalog_revision": "2026-06-10",
+  "description": "Non-Tabular shadow tool layer SSOT (symbolic stub only). Maps NT-A document and NT-B log pipelines; does not invoke heavy processors or external APIs.",
+  "maturity_default": "experimental",
+  "tools": [
+    {
+      "tool_id": "text_extractor",
+      "description": "Extract plain text from mixed-format documents (PDF, DOCX, images with OCR). Shadow stub only.",
+      "input_kind": "document",
+      "output_kind": "extracted_text",
+      "maturity": "experimental"
+    },
+    {
+      "tool_id": "doc_classifier",
+      "description": "Classify document types and assign content labels from extracted text. Shadow stub only.",
+      "input_kind": "document",
+      "output_kind": "document_labels",
+      "maturity": "experimental"
+    },
+    {
+      "tool_id": "log_parser",
+      "description": "Parse semi-structured server logs into normalized log records. Shadow stub only.",
+      "input_kind": "log",
+      "output_kind": "parsed_log_records",
+      "maturity": "experimental"
+    },
+    {
+      "tool_id": "anomaly_summarizer",
+      "description": "Summarize anomaly patterns and flagged intervals from parsed logs. Shadow stub only.",
+      "input_kind": "log",
+      "output_kind": "anomaly_summary",
+      "maturity": "experimental"
+    }
+  ]
+}

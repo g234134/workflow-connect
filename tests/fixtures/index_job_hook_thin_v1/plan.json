@@ -1,0 +1,20 @@
+{
+  "planned_jobs": [
+    {
+      "job_id": "fixture.doc.sample",
+      "pipeline": "document_chunks",
+      "mode": "fixture_dry_run",
+      "writes_index": false,
+      "source_rel": "sample.txt",
+      "notes": "thin runtime fixture · no ingest"
+    },
+    {
+      "job_id": "fixture.repo.sample",
+      "pipeline": "repo_chunks",
+      "mode": "fixture_dry_run",
+      "writes_index": false,
+      "source_rel": "sample.txt",
+      "notes": "thin runtime fixture · no repo_index write"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三省六部指揮台 · 三省六部指揮中心</title>
+  <link rel="stylesheet" href="css/shell.css">
+</head>
+<body>
+  <aside class="sidebar" aria-label="主選單">
+    <div class="sidebar-brand">
+      <span class="brand-mark">唐</span>
+      <span id="brand-title">三省六部指揮中心</span>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <div class="footer-row">
+        <span class="avatar" aria-hidden="true">A</span>
+        <div>
+          <div class="footer-text" id="operator-label">指揮官 · 系統管理員</div>
+          <div class="footer-text">金鑰占位：<span class="mask" id="secret-mask">••••••••</span></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="header">
+      <div>
+        <div class="header-title" id="page-title">三省六部指揮台</div>
+        <div class="header-sub" id="page-sub">治理中樞 · 協同作戰 · 高效治理（mock）</div>
+      </div>
+      <div class="header-right">
+        <div id="tz-label">亞洲 / 台北</div>
+        <div id="clock-label">—</div>
+        <span class="header-avatar" aria-hidden="true">A</span>
+      </div>
+    </header>
+
+    <div class="banner-demo" id="demo-banner">loading mock…</div>
+
+    <div class="content p4-content">
+      <div class="p4-main-grid">
+        <section class="section p4-hierarchy" aria-label="三省六部層級圖">
+          <div class="section-title">三省層級 · 派工拓撲</div>
+
+          <div class="p4-top-row" id="p4-top-row">
+            <div class="p4-entry-col" id="p4-entry-nodes"></div>
+            <div class="p4-province-card" id="p4-zhongshu"></div>
+            <div class="p4-province-card" id="p4-menxia"></div>
+          </div>
+
+          <div class="p4-connector" aria-hidden="true">
+            <span class="p4-line"></span>
+            <span class="p4-arrow">↓</span>
+            <span class="p4-line"></span>
+          </div>
+
+          <div class="p4-shangshu-wrap" id="p4-shangshu"></div>
+
+          <div class="p4-connector thin" aria-hidden="true">
+            <span class="p4-line"></span>
+            <span class="p4-arrow">↓ 六部</span>
+            <span class="p4-line"></span>
+          </div>
+
+          <div class="p4-ministries" id="p4-ministries" aria-label="六部"></div>
+        </section>
+
+        <aside class="p4-side" aria-label="任務監控">
+          <div class="section-title" id="p4-monitor-title">任務監控</div>
+          <div id="p4-task-queues"></div>
+        </aside>
+      </div>
+
+      <section class="section compact p4-op-section" aria-label="operator fields">
+        <div class="section-title">P8.9 operator_fields（sidecar · read_only）</div>
+        <div id="operator-fields"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/shell.js"></script>
+  <script>
+    (function () {
+      CommandCenterShell.loadPageData({
+        mockUrl: "mock/p4_command_desk_v1.json",
+        liveUrl: "live/p4_command_desk_v1.json",
+      })
+        .then(function (data) {
+          if (!data || data.ok !== true) throw new Error("page data ok!=true");
+          CommandCenterShell.renderP4(data);
+        })
+        .catch(function (err) {
+          var banner = document.getElementById("demo-banner");
+          if (banner) {
+            banner.textContent =
+              "資料載入失敗（請以 repo 根目錄 python -m http.server 開啟；預設 mock，live 用 ?source=live）。" +
+              String(err && err.message ? err.message : err);
+          }
+          console.error(err);
+        });
+    })();
+  </script>
+</body>
+</html>

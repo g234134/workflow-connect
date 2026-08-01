@@ -1,0 +1,53 @@
+{
+  "model": "oad/QwenVL",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "You are a UI comparison expert. Analyze TWO UI screenshots in Traditional Chinese.\n\n## Step 1: Describe REFERENCE image (01_全局總覽主頁, the first image)\n- Layout: sidebar? top nav? how is content arranged?\n- Count and arrange all KPI/dashboard cards (exact number, labels)\n- Pipeline/flow diagram: exact node labels\n- Left sidebar: exact number of items and their labels\n- Header: title, date/time display\n- Footer content\n- Color scheme\n- Any unique elements like tables, charts, alerts\n\n## Step 2: Describe the GENERATED image (tang-dashboard-v2.png, second image)\nSame format.\n\n## Step 3: List ALL differences\nFor each: WHAT differs, which side has what, importance (critical/moderate/cosmetic)\n\n## Step 4: Final verdict\n- Similarity percentage (0-100%)\n- TOP 3 changes needed\n\nBe EXTREMELY specific. Count actual items. Name actual labels."
+        },
+        {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64,JSONSTART
+
+# Append reference image base64
+echo -n "$REF_B64" >> "$TMPFILE"
+
+cat >> "$TMPFILE" << 'JSONMID'
+", "detail": "high"}},
+        {"type": "image_url", "image_url": {"url": "data:image/png;base64,JSONMID
+
+# Append generated image base64
+echo -n "$GEN_B64" >> "$TMPFILE"
+
+cat >> "$TMPFILE" << 'JSONEND'
+", "detail": "high"}}
+      ]
+    }
+  ],
+  "max_tokens": 4096
+}
+JSONEND
+
+echo "⏳ Calling oad/QwenVL..."
+curl -s -m 180 http://localhost:20128/v1/chat/completions \
+  -H "Authorization: Bearer $OMNROUTE_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d @"$TMPFILE" > "$OUT_PATH.response.json" 2>&1
+
+# Parse and display
+node -e "
+const fs = require('fs');
+const data = JSON.parse(fs.readFileSync('$OUT_PATH.response.json','utf-8'));
+if (data.error) {
+    console.log('❌ Error: ' + (data.error.message || JSON.stringify(data.error)));
+    process.exit(1);
+} else {
+    const content = data.choices?.[0]?.message?.content || '';
+    console.log(content);
+    fs.writeFileSync('$OUT_PATH', content, 'utf-8');
+    console.log('\n✅ Report saved to: $OUT_PATH');
+}
+" 2>&1
+
+rm -f "$TMPFILE"

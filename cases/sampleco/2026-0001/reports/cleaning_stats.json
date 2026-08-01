@@ -1,5 +1,6 @@
 {
   "ok": true,
+  "cleaning_profile_id": "sampleco_order_profile",
   "before": {
     "row_count": 115,
     "column_count": 4,
@@ -169,7 +170,8 @@
         "value": 105.0,
         "phase": "Phase 4"
       }
-    ]
+    ],
+    "cleaning_profile_id": "sampleco_order_profile"
   },
   "after": {
     "row_count": 8,
@@ -248,7 +250,8 @@
         "value": 105.0,
         "phase": "Phase 8"
       }
-    ]
+    ],
+    "cleaning_profile_id": "sampleco_order_profile"
   },
   "clean_meta": {
     "dropped_rows": [
@@ -1403,6 +1406,10 @@
         "phase": "Phase 4"
       }
     ],
-    "output_row_count": 8
+    "output_row_count": 8,
+    "cleaning_profile_id": "sampleco_order_profile",
+    "dedup_keys": [
+      "Phase"
+    ]
   }
 }

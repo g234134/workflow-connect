@@ -1,0 +1,36 @@
+﻿{
+  "description": "Data cleaning rules (Fixed Version)",
+  "last_updated": "2026-05-04",
+  "product_names": {
+    "apple": ["iPhone", "iPad", "MacBook"],
+    "generic": ["Laptop", "Desktop", "Monitor"]
+  },
+  "rules": {
+    "html_tags": {
+      "description": "Remove HTML tags",
+      "patterns": [
+        "<div[^>]*>.*?</div>",
+        "<[^>]*>",
+        "&[a-zA-Z]+;|&#\\d+;"
+      ],
+      "priority": 1
+    },
+    "programming": {
+      "description": "Remove code noise",
+      "patterns": [
+        "undefined|null|NaN",
+        "ERROR_\\w+",
+        "0x[0-9a-fA-F]+",
+        "function\\s*\\{.*?\\}"
+      ],
+      "priority": 2
+    },
+    "punctuation": {
+      "description": "Clean punctuation",
+      "patterns": [
+        "([.,!?])\\1+"
+      ],
+      "priority": 3
+    }
+  }
+}

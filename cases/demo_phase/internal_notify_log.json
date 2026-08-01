@@ -1,0 +1,600 @@
+{
+  "schema_version": "tabular-internal-notify-v1",
+  "entries": [
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:43:39+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-26T23:43:40+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "run_id": "20260626T234339Z_15185c59"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:43:45+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.dlq_enqueued",
+      "ts": "2026-06-26T23:43:46+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "run_id": "20260626T234338Z_b35a86e8",
+        "step_name": "intake",
+        "failure_class": "transient",
+        "retry_count": 3,
+        "error": "OSError: resource temporarily unavailable",
+        "entry_id": "20260626T234346Z_14ec4276_intake",
+        "dlq_index_path": "D:\\大唐三省六部\\cases\\demo_phase\\dlq\\dlq.json"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:43:46+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-26T23:44:01+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-26T23:44:01+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260626T234401Z_05c0d4b5"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:02:55+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-27T00:03:02+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260627T000302Z_70c1f569"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-27T00:04:49+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-27T00:04:49+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260627T000449Z_51048af0"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T08:56:06+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T08:56:06+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T085606Z_52ef84c5"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:03:49+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:03:50+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T090349Z_b9aaa024"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:06:32+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T090631Z_92d08bd9"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:06:53+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "approve_tabular_delivery",
+        "previous_automation_status": null,
+        "previous_delivery_ready": false,
+        "approved_by": "regression_smoke"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:06:54+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:06:54+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T090654Z_0077b65d"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:07:01+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T090700Z_5b29c4f1"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:07:07+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T090707Z_3b0b315a"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:13:52+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091352Z_dd3279ac"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:13:58+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091358Z_6301850a"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:14:35+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091435Z_93e1e20a"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:10+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091510Z_a8c0df6d"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:12+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:13+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091512Z_bd1c691e"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:19+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091518Z_998b2628"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:21+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:21+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091521Z_415d0eda"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:22:07+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:22:08+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172207Z_10e97997"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:22:13+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172213Z_70e3c1de"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:27:34+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:27:35+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172735Z_40271687"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:27:51+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172750Z_20dc6d30"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:09+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:30:10+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183009Z_c480aa54"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:30:16+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183016Z_055cd030"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:35+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:30:36+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183035Z_92565072"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:31:53+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:31:53+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183153Z_07726ac2"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:31:54+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183154Z_303008a4"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-07-28T10:07:39+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-07-28T10:07:40+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260728T100740Z_024fd987"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-07-28T10:07:41+00:00",
+      "case_id": "demo_phase",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260728T100741Z_523fa29f"
+      }
+    }
+  ],
+  "case_id": "demo_phase",
+  "last_event_at": "2026-07-28T10:07:41+00:00"
+}

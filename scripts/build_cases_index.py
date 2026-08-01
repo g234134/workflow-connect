@@ -17,12 +17,12 @@ _REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(_REPO_ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT / "scripts"))
 
-from cases_index_lib import REGISTERED_CASE_DIRS, refresh_cases_index  # noqa: E402
+from cases_index_lib import discover_case_dirs, refresh_cases_index  # noqa: E402
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Scan registered case dirs and write cases/index.json (read-only scan)."
+        description="Discover case dirs (anchors + glob) and write cases/index.json."
     )
     parser.add_argument(
         "--json",
@@ -32,9 +32,10 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     result = refresh_cases_index()
+    discovered = len(discover_case_dirs())
     summary = (
         f"cases_index refreshed: {result['cases_written']} entries "
-        f"from {len(REGISTERED_CASE_DIRS)} registered dirs -> {result['index_path']}"
+        f"from {discovered} discovered dirs -> {result['index_path']}"
     )
     print(summary)
     if result.get("skipped"):

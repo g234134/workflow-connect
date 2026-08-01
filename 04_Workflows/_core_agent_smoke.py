@@ -8,6 +8,32 @@ import sys
 from pathlib import Path
 
 
+def smoke_openai_key() -> int:
+    """OpenAI 單鑰盲測（原 _smoke_openai_key.py）。"""
+    from _tang_paths import bootstrap_sys_path  # type: ignore[import-untyped]
+    bootstrap_sys_path(str(Path(__file__).parent.resolve()))
+    from _tang_http import blind_http_dual_ssl  # type: ignore[import-untyped]
+    from gov_paths import get_secret  # type: ignore[import-untyped]
+
+    key = (get_secret("OPENAI_API_KEY", "") or "").strip()
+    if not key:
+        print("[FAILED] OPENAI_API_KEY code=0 type=key_missing")
+        return 1
+    if "PLACEHOLDER" in key.upper():
+        print("[FAILED] OPENAI_API_KEY code=0 type=placeholder")
+        return 1
+    code, etype = blind_http_dual_ssl(
+        "https://api.openai.com/v1/models",
+        method="GET",
+        headers={"Authorization": f"Bearer {key}"},
+        timeout=30,
+    )
+    status = "OK" if code == 200 else "FAILED"
+    suf = f" code={code}" + (f" type={etype}" if etype else "")
+    print(f"[{status}] OpenAI /v1/models{suf}")
+    return 0 if code == 200 else 1
+
+
 def main(argv: list[str] | None = None) -> int:
     workflows_dir = Path(__file__).resolve().parent
     repo_root = workflows_dir.parent
@@ -56,7 +82,15 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Pretty-print JSON result to stdout",
     )
+    parser.add_argument(
+        "--smoke-openai",
+        action="store_true",
+        help="OpenAI 單鑰盲測（合併自 _smoke_openai_key.py）",
+    )
     args = parser.parse_args(argv)
+
+    if args.smoke_openai:
+        return smoke_openai_key()
 
     verbosity = 1 + min(args.verbose, 2)
     gov_core = None

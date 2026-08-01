@@ -135,14 +135,14 @@ python scripts/distill_control_plane_skills_lite.py \
 
 下表描述 WC-T6 distillation 使用的 `cp.*` path_id 与 WC-T5 契约中 `wc.m2.*` path_id 的对应关系。未列出的 `path_id` 其 `canonical_path_id` fallback 为原值。
 
-| T6 path_id (`cp.*`) | T5 path_id (`wc.m2.*`) |
-|-----------------------------------|----------------------------------------|
-| `cp.dispatch_cards.eligibility_gate` | `wc.m2.dispatch.eligibility_gate_warn` |
-| `cp.dispatch_cards.generate` | `wc.m2.dispatch.cards_generate` |
-| `cp.ticket_comms.state_transition` | `wc.m2.comms.state_transition` |
-| `cp.ticket_comms.emit` | `wc.m2.comms.state_transition` |
-| `cp.ticket_state.b_report` | —（无 T5 登记；`canonical_path_id` fallback 为 source `path_id`） |
+| T6 path_id (`cp.*`) | T5 path_id (`wc.m2.*`) | 備註 |
+|-----------------------------------|----------------------------------------|------|
+| `cp.dispatch_cards.eligibility_gate` | `wc.m2.dispatch.eligibility_gate_warn` | — |
+| `cp.dispatch_cards.generate` | `wc.m2.dispatch.cards_generate` | — |
+| `cp.ticket_comms.state_transition` | `wc.m2.comms.state_transition` | — |
+| `cp.ticket_comms.emit` | `wc.m2.comms.state_transition` | — |
+| `cp.ticket_state.b_report` | —（無 T5 等價） | 「無 T5 等價 · forbidden/HITL 語境（非 auto 路徑）」· `canonical_path_id` fallback 為 source `path_id` |
 
 ---
 
-*WC-T6 design · v0.1 · 2026-06-13 · doc-only skeleton*
+*WC-T6 design · v0.2 · 2026-06-14 · WC-T6-v2 gap closure*

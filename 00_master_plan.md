@@ -11,6 +11,8 @@
 把既有 ask／編排工作流升級為**企業化補強層 v1**：主代理可穩定派工、員工代理可接力、上下文可治理、能力可沉澱、外部系統連接有邊界。  
 本輪不以「加功能點」為主，而以 **D1–D5 可度量、可複用入口** 為驗收軸。
 
+**Repo 產品主線（2026-06-27 收斂）**：This repo's core product path is tabular data cleaning and delivery automation; governance / CI / GA lines are supporting rails, not the primary product outcome. 主鏈 SSOT：`docs/TABULAR_MVP_SSOT.md`（intake → gate → clean → bundle → deliver；錨案 `cases/demo_phase/`）。
+
 ---
 
 ## 2. 五大維度（D1–D5）

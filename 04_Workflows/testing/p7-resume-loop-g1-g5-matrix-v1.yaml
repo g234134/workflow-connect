@@ -1,0 +1,174 @@
+# P7 resume-loop G-1–G-5 matrix (spec-only · trace contract)
+# Ticket: W2-P7-matrix-G1-G5-resume-loop-v1
+# NON-CLAIM: this file is NOT a runtime prod gate; does NOT modify orchestrator behavior.
+
+schema_version: p7_resume_loop_g_matrix_v1
+ticket_id: W2-P7-matrix-G1-G5-resume-loop-v1
+spec_doc: docs/p7-resume-loop-g1-g5-spec-v1.md
+matrix_doc: 04_Workflows/testing/standard-case-hitl-resume-notify-matrix.md
+
+non_claims:
+  - spec and trace contract only; not runtime prod gate
+  - G-1–G-5 dedicated unittest not landed (planned impl)
+  - does not claim resume-loop closed in staging or prod
+  - MP-SMOKE steps 1–2 gate trace must not be mixed with resume trace fields
+
+required_gap_ids:
+  - G-1
+  - G-2
+  - G-3
+  - G-4
+  - G-5
+
+entries:
+  G-1:
+    gap_id: G-1
+    matrix_row: R-11
+    checkpoint: A
+    trigger:
+      on_disk_status: awaiting_human
+      human_action: none
+      mode: run
+      precondition: expires_at in past while status still awaiting_human
+    expected_resume:
+      ok: false
+      final_status: stale_checkpoint
+      orchestrator_enters_s7_s13: false
+      notification_emitted: false
+    error_interrupt:
+      - checkpoint expired before human decision
+      - must apply run_hitl_checkpoint_cli --apply-decision before resume when not expired
+    trace_fields:
+      resume_eligibility: stale_checkpoint
+      resume_blocked_reason: null
+      checkpoint_path: logical outbox/checkpoints/<case_ref>/<checkpoint_id>.json
+    verify_commands:
+      - 'rg "G-1|stale_checkpoint" docs/p7-resume-loop-g1-g5-spec-v1.md'
+    unittest_ref: planned impl
+    related_tests:
+      - validate_resume_eligibility (scripts/run_agent_standard_case_experiment.py)
+
+  G-2:
+    gap_id: G-2
+    matrix_row: R-12
+    checkpoint: A
+    trigger:
+      on_disk_status: revise_needed
+      human_action: revise_plan
+      mode: run
+      precondition: after human revise_plan via HITL integration
+    expected_resume:
+      ok: false
+      final_status: blocked
+      orchestrator_enters_s7_s13: false
+      notification_emitted: false
+    error_interrupt:
+      - checkpoint status=revise_needed; v1 resume supports approved only
+    trace_fields:
+      resume_eligibility: blocked
+      resume_blocked_reason: revise_needed
+      checkpoint_path: logical outbox/checkpoints/<case_ref>/<checkpoint_id>.json
+    verify_commands:
+      - 'rg "G-2|revise_needed|resume_blocked_reason" docs/p7-resume-loop-g1-g5-spec-v1.md'
+    unittest_ref: planned impl
+    related_tests:
+      - test_human_decision_resume_plans (subTest revise_plan)
+      - test_resume_context_revise_plan_uses_gate
+
+  G-3:
+    gap_id: G-3
+    matrix_row: R-13
+    checkpoint: B
+    trigger:
+      on_disk_status: on_hold
+      human_action: hold
+      mode: run
+      precondition: after human hold via delivery CLI or integration
+    expected_resume:
+      ok: false
+      final_status: blocked
+      orchestrator_enters_s7_s13: false
+      notification_emitted: false
+    error_interrupt:
+      - checkpoint status=on_hold; v1 resume supports approved only
+    trace_fields:
+      resume_eligibility: blocked
+      resume_blocked_reason: on_hold
+      checkpoint_path: logical outbox/checkpoints/<case_ref>/<checkpoint_id>.json
+    verify_commands:
+      - 'rg "G-3|on_hold|resume_blocked_reason" docs/p7-resume-loop-g1-g5-spec-v1.md'
+    unittest_ref: planned impl
+    related_tests:
+      - test_delivery_plan_hold
+      - test_hold_on_hold
+
+  G-4:
+    gap_id: G-4
+    matrix_row: R-14
+    checkpoint: any
+    trigger:
+      on_disk_status: n/a
+      human_action: n/a
+      mode: run
+      precondition: invalid or missing --resume-checkpoint path
+    expected_resume:
+      ok: false
+      final_status: blocked
+      orchestrator_enters_s7_s13: false
+      notification_emitted: false
+    error_interrupt:
+      - FileNotFoundError or ValueError from load_checkpoint_for_resume
+      - no checkpoint artifact written to outbox on load failure
+    trace_fields:
+      resume_eligibility: blocked
+      checkpoint_load_error: present in message or resume sub-object
+      checkpoint_path: unresolved or invalid
+    verify_commands:
+      - 'rg "G-4|checkpoint_load_error|missing checkpoint" docs/p7-resume-loop-g1-g5-spec-v1.md'
+    unittest_ref: planned impl
+    related_tests:
+      - _run_experiment_resume_from_checkpoint load error path
+
+  G-5:
+    gap_id: G-5
+    matrix_row: R-15
+    checkpoint: A
+    trigger:
+      on_disk_status: approved
+      human_action: approve
+      mode: run
+      precondition: case_ref not in W7-T2 allowlist
+    expected_resume:
+      ok: false
+      final_status: blocked
+      orchestrator_enters_s7_s13: false
+      notification_emitted: false
+    error_interrupt:
+      - case_not_in_allowlist before checkpoint load
+      - early return in _run_experiment_resume_from_checkpoint
+    trace_fields:
+      resume_eligibility: blocked
+      case_allowlist_block: true
+      checkpoint_path: not reached when allowlist fails first
+    verify_commands:
+      - 'rg "G-5|case_allowlist_block|allowlist" docs/p7-resume-loop-g1-g5-spec-v1.md'
+    unittest_ref: planned impl
+    related_tests:
+      - is_allowlisted_case
+      - _run_experiment_resume_from_checkpoint early block
+
+trace_contract:
+  gate_trace_ssot: docs/p75-intake-gate-control-plane-trace-v1.md
+  gate_trace_status: active
+  resume_trace_fields:
+    - resume_eligibility
+    - resume_blocked_reason
+    - checkpoint_path
+    - checkpoint_load_error
+    - case_allowlist_block
+    - run.blocked
+  gate_trace_fields_do_not_mix:
+    - intake.gate_decision
+    - gate_status
+    - reason_codes
+  mp_smoke_boundary: MP-SMOKE steps 1–2 are gate-only; resume-loop trace is orchestrator resume path only

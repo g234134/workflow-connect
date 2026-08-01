@@ -46,15 +46,20 @@ class TestLookupCaseHistory(unittest.TestCase):
         match = result["matches"][0]
         self.assertEqual(match["case_dir"], "cases/sampleco/2026-0001")
         self.assertEqual(match["client_ref"], "sampleco")
-        self.assertEqual(match.get("cleaning_profile"), "clean_basic_demo")
+        self.assertEqual(match.get("cleaning_profile"), "sampleco_order_profile")
         self.assertIn("low_accepted_ratio", match.get("known_limits") or [])
 
     def test_verbose_includes_rules_and_template(self) -> None:
+        from cases_index_lib import refresh_cases_index
+
+        refresh_cases_index()
         result = _run_lookup("--client-ref", "sampleco", "--verbose")
         self.assertTrue(result["ok"])
         match = result["matches"][0]
         self.assertIn("cleaning_rules_applied", match)
         self.assertIn("delivery_template_ref", match)
+        self.assertIn("schema_fingerprint", match)
+        self.assertIsNotNone(match.get("schema_fingerprint"))
         self.assertIn("dedup_by_phase", match["cleaning_rules_applied"])
         self.assertEqual(match.get("qa_status"), "pass_with_warnings")
 

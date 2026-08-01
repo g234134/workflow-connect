@@ -1,6 +1,6 @@
 # Case History Lookup Spec v0.1
 
-> **票号**：`W4-MEM-01`（别名 `W-MVP-W4A-MEMO-LOOKUP` 字段补齐）  
+> **票号**：`W4-MEM-01` + **`W4-MEM-02`**（glob／`schema_fingerprint`）  
 > **类型**：只读轻量索引 · 非 RAG · 非 agent memory  
 > **SSOT 索引**：`cases/index.json`  
 > **维护脚本**：`scripts/build_cases_index.py`  
@@ -13,7 +13,7 @@
 | # | 问题 | 用法 |
 |---|------|------|
 | Q1 | 有没有历史案例？ | `--client-ref` · `--product-sku` · `--list-all` |
-| Q2 | 这组表头见过吗？ | `--schema-headers Phase,名稱` |
+| Q2 | 这组表头见过吗？ | `--schema-headers Phase,名稱`（亦可用 `schema_fingerprint` 机器比对） |
 | Q3 | 有什么已知限制 / 用过什么规则？ | 读 `known_limits` · `--verbose` 看 `cleaning_rules_applied` 与 `delivery_template_ref` |
 
 ---
@@ -22,12 +22,13 @@
 
 | 字段 | 必填 | 来源 |
 |------|------|------|
-| `case_dir` | 是 | 登记列表 |
+| `case_dir` | 是 | 锚点 `REGISTERED_CASE_DIRS` ∪ glob 发现 |
 | `client_ref` · `case_id` · `product_sku` | 是 | `intake.json` |
 | `schema_headers` | 是 | raw/cleaned CSV header |
+| `schema_fingerprint` | 否 | 排序后 headers `"\|".join` → sha256 hex **前 16**；空 headers → `null`（W4-MEM-02） |
 | `schema_notes` | 否 | 只读 `check_case_eligibility` → `dimensions.schema.notes` |
 | `gate_status` | 是 | `reports/eligibility_result.json` |
-| `cleaning_profile` | 是 | 登记表（`phase_demo_v1` / `clean_basic_demo`） |
+| `cleaning_profile` | 是 | 登记表（未知案 → `unknown`） |
 | `cleaning_rules_applied` | 否 | `reports/report.json` |
 | `delivery_template_ref` | 否 | `report.json` `meta.template_ref` 或 WAVE6 默认 |
 | `qa_status` · `accepted_ratio` | 否 | `report.json` row_counts |
@@ -44,7 +45,14 @@ python scripts/build_cases_index.py
 python scripts/build_cases_index.py --json
 ```
 
-扫描 `REGISTERED_CASE_DIRS`（当前：`demo_phase` · `sampleco/2026-0001`），写入 `cases/index.json`。
+**发现规则（W4-MEM-02）**：
+
+1. 保留锚点 `REGISTERED_CASE_DIRS`（`demo_phase` · `sampleco/2026-0001` · `internal-approved/2026-0001`）
+2. Glob：`cases/*/intake.json`（legacy 单层）与 `cases/*/*/intake.json`（`client/id`）
+3. 排除路径任一段以 `_` 开头者（如 `_TEMPLATE_case` · `_experiment_samples/**`）
+4. 合并去重：锚点顺序优先，其余按路径排序
+
+写入 `cases/index.json`。
 
 ### 查询
 
@@ -60,10 +68,12 @@ python scripts/lookup_case_history.py --client-ref sampleco --verbose
 ```json
 {
   "ok": true,
-  "matches": [ { "case_dir": "...", "cleaning_profile": "...", "known_limits": [] } ],
-  "notes": ["只登记 demo_phase, sampleco/2026-0001"]
+  "matches": [ { "case_dir": "...", "cleaning_profile": "...", "known_limits": [], "schema_fingerprint": "…" } ],
+  "notes": ["anchors + glob under cases/ (excl. _TEMPLATE / _* stubs); W4-MEM-02"]
 }
 ```
+
+`--verbose` 时 match 含 `schema_fingerprint` · `schema_headers` · rules · template。
 
 ---
 
@@ -75,12 +85,13 @@ python scripts/lookup_case_history.py --client-ref sampleco --verbose
 
 ---
 
-## 5. 限制与 deferred
+## 5. 限制
 
-- 登记列表硬编码；新案须扩展 `REGISTERED_CASE_DIRS` 后 refresh。  
 - 无自然语言 query；无向量相似度。  
-- 不输出「应选哪条 cleaner」决策。
+- 不输出「应选哪条 cleaner」决策。  
+- Glob 新案 `cleaning_profile` 可能为 `unknown`（仅锚点有静态 profile 表）。  
+- **已落地（W4-MEM-02）**：glob 自动登记 · `schema_fingerprint` · temp-dir refresh UT。
 
 ---
 
-*W4-MEM-01 · read-only case memory · 2026-06-13*
+*W4-MEM-01 · 2026-06-13 · W4-MEM-02 · 2026-07-28*

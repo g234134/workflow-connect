@@ -1,0 +1,36 @@
+【結案報告草案 · v2.56】
+生成時間：2026-07-26T19:00:35+00:00
+
+一、處理總量：池 36274 件；本次比對掃描/快取 100 條；A 級命中 9 條
+二、雜訊過濾率（示意）：99.89%（相對掃描樣本中非 elite 命中占比）
+三、本次精煉虛擬節省（示意 TWD）：約 0.11 元 （示意：以 70b 標價 input=0.59/1M output=0.79/1M ×32.0 TWD/USD 粗估 token）
+
+四、A 級資產清單（Top）：
+1. AI_Chariot_Legacy_666_1.0.0_20260508__collections_abc.py | score=8.8 | sim=1.1% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__collections_abc.py
+2. AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle.py | score=8.4 | sim=1.43% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_pickle.py
+3. AI_Chariot_Legacy_666_1.0.0_20260508__tokenizers.py | score=8.27 | sim=1.29% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__tokenizers.py
+4. AI_Chariot_Legacy_666_1.0.0_20260508__url.py | score=8.25 | sim=1.09% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__url.py
+5. AI_Chariot_Legacy_666_1.0.0_20260508__idl.py | score=8.2 | sim=1.61% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508__idl.py
+6. AI_Chariot_Legacy_666_1.0.0_20260508_test_col.py | score=7.98 | sim=1.26% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_test_col.py
+7. AI_Chariot_Legacy_666_1.0.0_20260508_threads.py | score=7.84 | sim=1.04% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_threads.py
+8. AI_Chariot_Legacy_666_1.0.0_20260508_vcs_attributes.py | score=7.62 | sim=1.3% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_vcs_attributes.py
+9. AI_Chariot_Legacy_666_1.0.0_20260508_python_parser.py | score=7.6 | sim=1.35% | D:\大唐三省六部\02_Agents_Core\AI_Chariot_Legacy_666_1.0.0_20260508_python_parser.py
+
+五、技術亮點：
+  · 全量數據清算大戰役（Asset_Value 精煉波次）採用內部波次平台
+  · 樣本數為100，平均值為5.374，等級分佈為B：62，D：24，A：9，C：5
+  · 掃描數量為100，精英資產匹配數為9，池大小為36274
+
+六、使用建議：
+  · 根據掃描結果，優先處理等級為A和B的資產
+  · 對於等級為D和C的資產，進行進一步分析和篩選
+  · 根據noise_filter_rate_pct_hint為99.89，進行數據清理和過濾
+
+七、摘要：
+全量數據清算大戰役（Asset_Value 精煉波次）是一個內部波次平台的數據清算任務，樣本數為100，平均值為5.374。掃描結果顯示，精英資產匹配數為9，池大小為36274。根據掃描結果，優先處理等級為A和B的資產，對於等級為D和C的資產，進行進一步分析和篩選。同時，根據noise_filter_rate_pct_hint為99.89，進行數據清理和過濾，以提高數據的準確性和可靠性。
+
+附：彈藥餘裕／精煉花費（v2.54 戰報格式）
+今日彈藥餘裕：llama-3.3-70b-versatile:100.0% qwen3-32b:100.0% llama-3.1-8b-instant:100.0%
+本次精煉花費：$0 元（免費額度），省下 [0] 元（Groq 標價示意×32.0 TWD/USD）
+
+Groq meta（無金鑰）：{"failover_chain": ["llama-3.3-70b-versatile", "qwen/qwen3-32b", "llama-3.1-8b-instant"], "models_tried": [{"model": "llama-3.3-70b-versatile", "http_code": 200}]}

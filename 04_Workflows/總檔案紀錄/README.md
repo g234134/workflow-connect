@@ -35,6 +35,7 @@
 | 修復任務進度 | [`tasks/INDEX.md`](./tasks/INDEX.md) |
 | 任務規則 | [`tasks/RULES.md`](./tasks/RULES.md) |
 | Wave 最終總報告 | [`_archive/Wave5-跨專案/W5_T2_最終總報告.md`](./_archive/Wave5-跨專案/W5_T2_最終總報告.md) |
+| Wave 6 D 槽整合 | [`_archive/Wave6-D槽整合/W6_T3_整合執行報告.md`](./_archive/Wave6-D槽整合/W6_T3_整合執行報告.md) |
 | 整合方案與病灶 | [`CONSOLIDATION_ANALYSIS.md`](./CONSOLIDATION_ANALYSIS.md) |
 
 ---
@@ -51,7 +52,8 @@
 │   ├── Wave2-OmniRoute/         ← W2_T1 僅摘要；FULL dump 本機
 │   ├── Wave3-AI_HUB/
 │   ├── Wave4-系統媒體/
-│   └── Wave5-跨專案/
+│   ├── Wave5-跨專案/
+│   └── Wave6-D槽整合/           ← 2026-07-25 D 槽根目錄整合
 └── tasks/                       ← 原「任務發布中心」（done；B3：`INDEX`／`RULES`）
 ```
 

@@ -1,0 +1,157 @@
+{
+  "input": "D:\\大唐三省六部\\05_Temp_Cache\\client_dirty.xlsx",
+  "output": "D:\\大唐三省六部\\06_Exports_Output\\fiverr_product\\cleaned_sales_data.xlsx",
+  "start_time": "2026-07-18T17:03:29.284287",
+  "stages": {
+    "0_inspect": {
+      "format": "xlsx",
+      "size_bytes": 95266,
+      "sheets": [
+        {
+          "name": "Sales Data",
+          "rows": 2005,
+          "cols": 8
+        }
+      ],
+      "active_sheet": "Sales Data",
+      "columns": [
+        "Deal ID",
+        "Sales Rep",
+        "Region",
+        "Product",
+        "Deal Amount",
+        "Close Date",
+        "Status",
+        "Commission %"
+      ],
+      "column_count": 8
+    },
+    "1_detect": {
+      "nulls": {
+        "Deal ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "Sales Rep": {
+          "null_count": 224,
+          "null_pct": 11.2,
+          "total_rows": 2004
+        },
+        "Region": {
+          "null_count": 400,
+          "null_pct": 20.0,
+          "total_rows": 2004
+        },
+        "Product": {
+          "null_count": 353,
+          "null_pct": 17.6,
+          "total_rows": 2004
+        },
+        "Deal Amount": {
+          "null_count": 165,
+          "null_pct": 8.2,
+          "total_rows": 2004
+        },
+        "Close Date": {
+          "null_count": 129,
+          "null_pct": 6.4,
+          "total_rows": 2004
+        },
+        "Status": {
+          "null_count": 232,
+          "null_pct": 11.6,
+          "total_rows": 2004
+        },
+        "Commission %": {
+          "null_count": 187,
+          "null_pct": 9.3,
+          "total_rows": 2004
+        }
+      },
+      "total_nulls": 1690,
+      "duplicates": {
+        "duplicate_count": 0,
+        "columns_checked": [
+          "Deal ID",
+          "Sales Rep",
+          "Region",
+          "Product",
+          "Deal Amount",
+          "Close Date",
+          "Status",
+          "Commission %"
+        ]
+      },
+      "unique_values": {
+        "Deal ID": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Sales Rep": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Region": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Product": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Deal Amount": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Close Date": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Status": {
+          "unique_count": "error",
+          "is_numeric": null
+        },
+        "Commission %": {
+          "unique_count": "error",
+          "is_numeric": null
+        }
+      }
+    },
+    "2_clean": {
+      "rows_before": 2004,
+      "rows_after": 2004,
+      "rows_cleaned": 0,
+      "nulls_filled": 7,
+      "duplicates_removed": 0,
+      "columns_standardized": true
+    },
+    "3_validate": {
+      "output_exists": true,
+      "output_rows": 2005,
+      "output_cols": 8,
+      "remaining_nulls": 0,
+      "remaining_dups": 0,
+      "valid": true
+    }
+  },
+  "stats": {
+    "format": "xlsx",
+    "columns": [
+      "Deal ID",
+      "Sales Rep",
+      "Region",
+      "Product",
+      "Deal Amount",
+      "Close Date",
+      "Status",
+      "Commission %"
+    ],
+    "active_sheet": "Sales Data",
+    "total_nulls": 1690,
+    "duplicate_count": 0,
+    "rows_before": 2004,
+    "rows_after": 2004
+  },
+  "end_time": "2026-07-18T17:03:30.985406"
+}

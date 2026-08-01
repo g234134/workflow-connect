@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "schema_version": "c2-demo-v1",
+    "job_id": "test-fiverr_netflix_v1",
+    "report_type": "clean_basic_generic",
+    "cleaning_profile_id": "fiverr_netflix_v1",
+    "generated_at": "2026-07-20T13:01:16.734623+00:00",
+    "disclaimer": "Generic low-risk profile; manual review recommended for first use",
+    "product_spec_ref": "docs/PRODUCT_TABULAR_CLEANING.md",
+    "template_ref": "04_Workflows/WAVE6_CLEAN_DELIVERABLE_TEMPLATES_v0.1.md",
+    "cleaning_profile_ref": "docs/tabular-cleaning-profiles-v1.md"
+  },
+  "case_id": "unknown",
+  "client_ref": "unknown",
+  "product_sku": "CLEAN-BASIC",
+  "generated_at": "2026-07-20T13:01:16.734623+00:00",
+  "summary": {
+    "job_id": "test-fiverr_netflix_v1",
+    "sku": "CLEAN-BASIC",
+    "total_rows": 6234,
+    "accepted_rows": 6234,
+    "accepted_units": 6234,
+    "rejected_rows": 0,
+    "rejected_units": 0,
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "chargeable_hint": false
+  },
+  "product_metrics": {
+    "total_rows": 6234,
+    "accepted_rows": 6234,
+    "rejected_rows": 0,
+    "duplicate_rows_found": 0,
+    "duplicate_rows_removed": 0,
+    "missing_rate_by_field": {
+      "show_id": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "type": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "title": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "director": {
+        "before": 0.3158,
+        "after": 0.3158
+      },
+      "cast": {
+        "before": 0.0914,
+        "after": 0.0914
+      },
+      "country": {
+        "before": 0.0764,
+        "after": 0.0764
+      },
+      "date_added": {
+        "before": 0.0018,
+        "after": 0.0018
+      },
+      "release_year": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "rating": {
+        "before": 0.0016,
+        "after": 0.0016
+      },
+      "duration": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "listed_in": {
+        "before": 0.0,
+        "after": 0.0
+      },
+      "description": {
+        "before": 0.0,
+        "after": 0.0
+      }
+    },
+    "anomaly_count_by_rule": {
+      "numeric_out_of_range": 0,
+      "format_unparseable": 0
+    },
+    "format_fixes_applied": {
+      "text_trimmed": 641,
+      "numeric_parsed": 6234
+    }
+  },
+  "cleaning_stats": {
+    "row_counts": {
+      "intake": 6234,
+      "after_dedup": 6234,
+      "ok": 6234,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "show_id",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "type",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "title",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "director",
+        "missing_before": 1969,
+        "missing_after": 1969,
+        "rate_before": 0.3158,
+        "rate_after": 0.3158
+      },
+      {
+        "field": "cast",
+        "missing_before": 570,
+        "missing_after": 570,
+        "rate_before": 0.0914,
+        "rate_after": 0.0914
+      },
+      {
+        "field": "country",
+        "missing_before": 476,
+        "missing_after": 476,
+        "rate_before": 0.0764,
+        "rate_after": 0.0764
+      },
+      {
+        "field": "date_added",
+        "missing_before": 11,
+        "missing_after": 11,
+        "rate_before": 0.0018,
+        "rate_after": 0.0018
+      },
+      {
+        "field": "release_year",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "rating",
+        "missing_before": 10,
+        "missing_after": 10,
+        "rate_before": 0.0016,
+        "rate_after": 0.0016
+      },
+      {
+        "field": "duration",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "listed_in",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "description",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      }
+    ],
+    "product_metrics": {
+      "total_rows": 6234,
+      "accepted_rows": 6234,
+      "rejected_rows": 0,
+      "duplicate_rows_found": 0,
+      "duplicate_rows_removed": 0,
+      "missing_rate_by_field": {
+        "show_id": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "type": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "title": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "director": {
+          "before": 0.3158,
+          "after": 0.3158
+        },
+        "cast": {
+          "before": 0.0914,
+          "after": 0.0914
+        },
+        "country": {
+          "before": 0.0764,
+          "after": 0.0764
+        },
+        "date_added": {
+          "before": 0.0018,
+          "after": 0.0018
+        },
+        "release_year": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "rating": {
+          "before": 0.0016,
+          "after": 0.0016
+        },
+        "duration": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "listed_in": {
+          "before": 0.0,
+          "after": 0.0
+        },
+        "description": {
+          "before": 0.0,
+          "after": 0.0
+        }
+      },
+      "anomaly_count_by_rule": {
+        "numeric_out_of_range": 0,
+        "format_unparseable": 0
+      },
+      "format_fixes_applied": {
+        "text_trimmed": 641,
+        "numeric_parsed": 6234
+      }
+    }
+  },
+  "issues_summary": {
+    "qa_status": "pass_with_warnings",
+    "completion_variant": "completed_with_failures",
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 0,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": []
+  },
+  "stats": {
+    "row_counts": {
+      "intake": 6234,
+      "after_dedup": 6234,
+      "ok": 6234,
+      "rejected": 0
+    },
+    "missing_value_stats": [
+      {
+        "field": "show_id",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "type",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "title",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "director",
+        "missing_before": 1969,
+        "missing_after": 1969,
+        "rate_before": 0.3158,
+        "rate_after": 0.3158
+      },
+      {
+        "field": "cast",
+        "missing_before": 570,
+        "missing_after": 570,
+        "rate_before": 0.0914,
+        "rate_after": 0.0914
+      },
+      {
+        "field": "country",
+        "missing_before": 476,
+        "missing_after": 476,
+        "rate_before": 0.0764,
+        "rate_after": 0.0764
+      },
+      {
+        "field": "date_added",
+        "missing_before": 11,
+        "missing_after": 11,
+        "rate_before": 0.0018,
+        "rate_after": 0.0018
+      },
+      {
+        "field": "release_year",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "rating",
+        "missing_before": 10,
+        "missing_after": 10,
+        "rate_before": 0.0016,
+        "rate_after": 0.0016
+      },
+      {
+        "field": "duration",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "listed_in",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      },
+      {
+        "field": "description",
+        "missing_before": 0,
+        "missing_after": 0,
+        "rate_before": 0.0,
+        "rate_after": 0.0
+      }
+    ],
+    "processing_time_ms": 0
+  },
+  "errors": {
+    "error_categories": [
+      {
+        "code": "MISSING-KEY",
+        "count": 0,
+        "severity": "P1"
+      },
+      {
+        "code": "RANGE-ANOMALY",
+        "count": 0,
+        "severity": "P2"
+      }
+    ],
+    "top_errors_sample": []
+  },
+  "next_steps": {
+    "for_customer": [
+      "Review flagged numeric anomalies and unparseable values.",
+      "Confirm dedup rule (keep highest numeric compare column) matches business expectation."
+    ],
+    "recommended_actions": [
+      {
+        "action": "review_warnings",
+        "priority": "medium",
+        "reason": "generic profile first-run review"
+      }
+    ]
+  },
+  "cleaning_rules_applied": [
+    {
+      "rule": "trim_whitespace",
+      "description": "trim whitespace"
+    },
+    {
+      "rule": "deduplicate_by_pk",
+      "description": "deduplicate by pk"
+    },
+    {
+      "rule": "flag_numeric_outliers",
+      "description": "flag numeric outliers"
+    }
+  ],
+  "cleaning_profile_id": "fiverr_netflix_v1"
+}

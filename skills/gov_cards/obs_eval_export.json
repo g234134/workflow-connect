@@ -1,0 +1,24 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.export",
+  "title": "Eval export (ibridge → eval JSONL)",
+  "brief": "Export ibridge task records to eval_gate JSONL. Optional GOV_EVAL_EXPORT_KB_INDEX_STATUS=1 sidecar for kb_index_status (Wave B P3; default OFF).",
+  "domain": "obs",
+  "module_path": "observability/eval_exporter.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.eval_exporter tests/fixtures/eval/ibridge_records.jsonl -o artifacts/eval/eval_export_sample.jsonl",
+  "inputs": [
+    "ibridge_records.jsonl",
+    "optional --case-index-map JSON",
+    "optional GOV_EVAL_EXPORT_KB_INDEX_STATUS=1"
+  ],
+  "outputs": [
+    "eval_export.jsonl",
+    "structured export summary dict"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_exporter -v",
+  "wave_ticket": "WAVE-B-P3-KB-INDEX-EVAL-OBSERVABILITY",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "implementer", "reviewer"]
+}

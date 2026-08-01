@@ -208,14 +208,21 @@ python -m unittest tests.test_order_ledger_integration -v
 | CLI 默认 ticket path | 无 `--ticket-path` 时读 `04_Workflows/tickets/<ticket_id>_state.md` |
 | 真实 ticket state → order 最小路径 | integration fixture `tests/fixtures/order_ledger/WC-T4-INT_state.md` + `tests/test_order_ledger_integration.py` |
 
-**仍 deferred（不在 v0.1）**
+**partial implemented（WC-M3 sandbox · 2026-06-24）**
+
+| 项 | 状态 |
+|----|------|
+| Order 状态机 DRAFT→PENDING_PAYMENT→PAID（+ 可选 REFUNDED） | **sandbox/demo** · `transition` CLI · audit JSONL · 见 [`WC_M3_payment_closure_scope_v1.md`](WC_M3_payment_closure_scope_v1.md) |
+| Mock payment adapter | **sandbox-only** · `GOV_PAYMENT_SANDBOX_ENABLED` gate · 无真实 provider |
+
+**仍 deferred（不在 v0.1 / sandbox）**
 
 | 项 | 说明 |
 |----|------|
 | Outbox / run_summary 联动 | W4-T3 deferred |
 | REST API | CLI only |
-| 支付 / Stripe / 真金流 | 另票 |
-| Order 状态机（DRAFT→CONFIRMED→…） | WAVE8 / W4-T3 |
+| 支付 / Stripe / **真金流** | **仍 deferred** · sandbox ≠ prod |
+| WAVE8 CONFIRMED→IN_PROGRESS 商务态 | WAVE8 / W4-T3 |
 | `*_state.md` 回写 | ticket STATE 仍人工 / Orchestrator |
 | milestone / billing_events | WAVE8 billing 数组 |
 | SQLite store | 可选后续 |

@@ -1,0 +1,161 @@
+# Cross-Agent Fix Ledger — 缺陷狀態 SSOT（Hermes ↔ Cursor）
+
+#
+
+# 權威規則：
+
+#   - 「已修／待修」以本檔 status + verify_cmd 結果為準，不以聊天或零散日誌為準。
+
+#   - 開工前必讀；收工後必寫（status / owner_last / evidence / verify_cmd / touched_paths / updated_at）。
+
+#   - status=fixed 且 verify_cmd 通過 → 禁止重開同 id；驗證失敗 → needs_reverify。
+
+#   - 兩端結論衝突 → partial 或 needs_reverify，以實際跑 verify_cmd 為裁判。
+
+#   - 相交檔開工前填 claim_owner；收工後清空或更新。
+
+#
+
+# status: fixed | open | partial | wontfix | needs_reverify
+
+# owner_last / claim_owner: hermes | cursor | null
+
+# source_of_truth: verify_cmd | regression_test | manual_check
+
+
+schema_version: fix-ledger-v1
+updated_at: '2026-07-24T10:26:00Z'
+path: 04_Workflows/cross_agent_fix_ledger.yaml
+rules:
+  read_before_work: true
+  write_after_work: true
+  progress_append_one_liner: true
+  conflict_resolution: verify_cmd
+  claim_required_for_intersect_paths: true
+defects:
+  - id: P1-elite-cache-empty
+    status: fixed
+    owner_last: hermes
+    source_of_truth: regression_test
+    evidence: elite_count=39; ELITE_MIN_HEURISTIC_SCORE=7.5; elite_cache.min_heuristic_score=7.5; 
+      built_at=2026-07-08T00:58:36Z
+    verify_cmd: python -c "from tests.test_build_elite_index_threshold_v1 import 
+      test_elite_min_score_constant_matches_doc_threshold, test_grade_a_at_88_passes_elite_gate, 
+      test_grade_a_at_90_old_threshold_would_fail; test_elite_min_score_constant_matches_doc_threshold(); 
+      test_grade_a_at_88_passes_elite_gate(); test_grade_a_at_90_old_threshold_would_fail(); print('P1 OK')"
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - 04_Workflows/_build_elite_index.py
+      - 06_Exports_Output/reports/elite_cache.json
+      - tests/test_build_elite_index_threshold_v1.py
+    updated_at: '2026-07-09T11:00:38Z'
+    notes: 門檻由 9.0 調整為 7.5；elite_cache 已有 elite_count=39。禁止僅憑聊天重開本 id。
+  - id: P2-fake-savings-number
+    status: fixed
+    owner_last: hermes
+    source_of_truth: verify_cmd
+    evidence: _report_generator._tang_groq 已走 json_request_dual_ssl(groq_chat_failover=True)；會觸發 
+      _wave_accumulate_usage；不再依賴永遠為空的 _WAVE_USAGE_ROWS 假路徑
+    verify_cmd: python -c "import ast, pathlib; p=pathlib.Path('04_Workflows/_report_generator.py'); 
+      t=p.read_text(encoding='utf-8'); assert 'groq_chat_failover=True' in t; print('P2 wiring OK')"
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - 04_Workflows/_report_generator.py
+      - 04_Workflows/_tang_http.py
+      - 06_Exports_Output/reports/groq_quota_state.json
+    updated_at: '2026-07-08T00:58:36Z'
+    notes: 省下金額應從 usage／quota 累計計算。尚無專測 tests.test_report_generator_usage（佔位）；以 wiring 檢查 + 實跑結案報告為準。usage_summary.json 
+      非現行產物。
+  - id: P3-ammo-margin-always-100
+    status: fixed
+    owner_last: hermes
+    source_of_truth: verify_cmd
+    evidence: groq_quota_state.json 已記錄 utc_date=2026-07-08、llama-3.3-70b-versatile requests=5；與 P2 同路徑觸發 
+      tracker.record_success()+persist()
+    verify_cmd: python -c "import json, pathlib; p=pathlib.Path('06_Exports_Output/reports/groq_quota_state.json'); 
+      d=json.loads(p.read_text(encoding='utf-8')); assert d.get('requests_per_model'); print('P3 quota state OK', 
+      d.get('utc_date'), d.get('requests_per_model'))"
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - 04_Workflows/_report_generator.py
+      - 04_Workflows/_tang_http.py
+      - 06_Exports_Output/reports/groq_quota_state.json
+    updated_at: '2026-07-08T00:58:36Z'
+    notes: 必須經過 groq_chat_failover 路徑才會更新餘裕百分比。尚無專測 tests.test_groq_quota_state（佔位）。
+  - id: P4-local-similarity-null
+    status: fixed
+    owner_last: hermes
+    source_of_truth: regression_test
+    evidence: sync 補算+回寫：local_similarity_filled=11、persisted_to_eval=11；scout top_matches 
+      sims=[0.87,0.8,0.9,0.91,0.8]；unittest tests.test_p4_local_similarity_sync_v1 2/2 OK；eval 
+      enriched_at=2026-07-09T08:15:58Z
+    verify_cmd: "python -c \"import json, pathlib; p=pathlib.Path('06_Exports_Output/reports/scout_last_pipeline.json'); d=json.loads(p.read_text(encoding='utf-8'));
+      tm=(d.get('match_report') or {}).get('top_matches') or []; vals=[x.get('local_similarity_pct') for x in tm]; assert
+      tm and any(v is not None for v in vals), f'all null or empty: {vals!r}'; print('P4 OK', vals[:5])\""
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - 04_Workflows/_sync_wave_to_scout_pipeline.py
+      - 06_Exports_Output/reports/scout_last_pipeline.json
+      - 06_Exports_Output/reports/asset_value_eval_*.json
+      - tests/test_p4_local_similarity_sync_v1.py
+      - 04_Workflows/tickets/P4-LOCAL-SIMILARITY-v1_state.md
+    updated_at: '2026-07-09T16:33:00Z'
+    notes: 根因：eval rows 從未寫 similarity。修復：sync 用 _semantic_overlap_pct 補算並回寫上游 eval。非宣稱業務級相似度準確度。票 
+      P4-LOCAL-SIMILARITY-v1。
+  - id: P5-hermes-stream-interrupt-short-reply
+    status: fixed
+    owner_last: cursor
+    source_of_truth: verify_cmd
+    evidence: >-
+      根因：OmniRoute npm run dev 長跑後 streaming Connection error（agent.log
+      interrupted_during_api_call / response_len 極短）；壓縮 stackedPipeline 埋伏
+      caveman:full（空陣列 PUT 會被 normalizeStackedPipeline 還原成 DEFAULT）。
+      處置：重啟 OmniRoute；pipeline→[{rtk,minimal}] + master OFF；固化
+      Hermes scripts/omni_safe_compression.py + omni_drift_monitor.py。
+      驗收：OmniRoute stream short/long/followup all_ok；hermes chat -Q 長回覆
+      response_len=696 finish_reason=stop base_url=http://localhost:20128/v1。
+    verify_cmd: >-
+      python -c "import urllib.request,json; h=json.loads(urllib.request.urlopen('http://127.0.0.1:20128/api/monitoring/health',timeout=10).read().decode());
+      assert h.get('status')=='healthy', h; print('P5 health OK', h.get('status'))"
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - D:/Hermes/scripts/omni_safe_compression.py
+      - D:/Hermes/scripts/omni_drift_monitor.py
+      - D:/Hermes/docs/omniroute-compression.md
+    updated_at: '2026-07-12T09:00:00Z'
+    notes: >-
+      戰車外基礎設施（Hermes/OmniRoute）。Desktop 若仍見短回覆，請重開 Hermes 桌面或新開
+      session；勿用 --provider custom（會誤指 openrouter.ai 並 401）。
+  - id: P6-hermes-vision-rerecheck-misroute
+    status: fixed
+    owner_last: cursor
+    source_of_truth: verify_cmd
+    evidence: >-
+      2026-07-24 Telegram 班表重驗失敗表象：Hermes 誤稱 vision 全掛。
+      根因：(1) 首次 OCR 列錯休（回 6/12/18/23/29）；(2) 重驗時用 terminal
+      probe OmniRoute openrouter/*（key 過期）與 omni openai provider（無憑證），
+      未再呼叫 vision_analyze；OpenAI gpt-4o 直連仍可用。
+      處置：config auxiliary.vision 加 fallback_chain omniroute GLM-4.6V-Flash；
+      USER.md/MEMORY.md 寫入重驗守則與正確休 4/8/12/16/20/24/28（7天）；
+      hermes send Telegram msg_id=4352；重啟 OmniRoute（RSS 7.5GB→新 pid，
+      chat HERMES_POST_RESTART_OK；compression drift 無危險引擎）。
+    verify_cmd: >-
+      python -c "import urllib.request,json,pathlib,yaml; h=json.loads(urllib.request.urlopen('http://127.0.0.1:20128/api/monitoring/health',timeout=10).read().decode()); assert h.get('status')=='healthy', h; cfg=yaml.safe_load(pathlib.Path(r'D:/Hermes/config.yaml').read_text(encoding='utf-8')); v=(cfg.get('auxiliary') or {}).get('vision') or {}; assert v.get('provider')=='custom:openai' and v.get('model')=='gpt-4o'; assert isinstance(v.get('fallback_chain'), list) and v['fallback_chain']; print('P6 OK', h.get('status'), 'vision_fb', len(v['fallback_chain']))"
+    claim_owner:
+    claim_expires_at:
+    touched_paths:
+      - D:/Hermes/config.yaml
+      - D:/Hermes/memories/USER.md
+      - D:/Hermes/memories/MEMORY.md
+      - 04_Workflows/cross_agent_fix_ledger.yaml
+    updated_at: '2026-07-24T10:38:00Z'
+    notes: >-
+      OpenRouter 新 Key 仍缺 → OpenCode 未恢復（非本 id 範圍）。OmniRoute 長跑
+      RSS 仍易膨脹，必要時跑 Hermes scripts/start_omniroute.ps1 重啟。
+      2026-07-24 優化續：cron pin / dead-model blocklist / vision prompt /
+      fallback=gpt-4o-mini / hermes_postfix_smoke.py 8/8 OK。

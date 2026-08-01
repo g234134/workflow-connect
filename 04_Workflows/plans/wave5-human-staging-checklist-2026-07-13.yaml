@@ -1,0 +1,152 @@
+# Wave 5 human/staging checklist — machine-readable companion
+# SSOT narrative: wave5-human-staging-checklist-2026-07-13.md
+# Ticket: WAVE5-human-staging-checklist-v1
+schema_version: wave5_human_staging_checklist_v1
+as_of: "2026-07-28"
+ticket_id: WAVE5-human-staging-checklist-v1
+plan_ref: 04_Workflows/plans/full-line-to-100-wave-plan-2026-07-13.md
+checklist_md: 04_Workflows/plans/wave5-human-staging-checklist-2026-07-13.md
+execute_ticket: WH-P7-NOTIF-staging-integration-execute-v2
+five_gates_doc: docs/governance-dual-unblock-checklist-v1.md
+human_action_pack: docs/governance/h2_h5_wet_ink_human_action_pack_v1.md
+unlock_attempt_ticket: WAVE5-h2-h5-wet-ink-unlock-attempt-v1
+unlock_attempt_note: "2026-07-15 AI attempted unlock; wet_ink+H2-H5 still blocked; no forged sign/host"
+chase_2026_07_28: "H1 approved (named plan-todo 2026-07-28); H2-H5 blocked; FORBID Round-2 execute until five gates; W4-UI-G optional"
+wave5_human_unlock_2026_07_28: "H2 tip handoff §6 delivered; H3-H5 chase armed; five-gates NOT complete; Round-2 armed-not-run (no GO); AI sidecar P6≥7/7 + settings thin; ≠ forged hosts"
+track_a_round2_next_2026_07_28: "H2 §7 audit blank; H3–H5 chase wired; five_gates matrix H1=approved H2–H5=blocked; P-GO=false; execute-v2 armed-not-run; ≠ forged hosts/signoffs"
+unlock_or_defer_2026_07_28: "decision memo wave5_h2_unlock_or_defer_decision_v1.md; Unlock SLA §8; H3-H5 sign chain; execute run card; P6 W-PROG draft; Defer playbook; QUEUE tip#1=unlock-or-defer; H2-H5 still blocked; ≠ forged host/sign/GO/uplift"
+five_gates_matrix:
+  H1: approved
+  H2: blocked
+  H3: blocked
+  H4: blocked
+  H5: blocked
+  all_complete: false
+  round2_go: false
+  note: "H1 approved ≠ Round-2 GO; H2 §2 blank; awaiting Unlock-or-Defer decision"
+
+non_claims:
+  - not_unblocked
+  - not_round2_go
+  - not_prod_go
+  - not_env_secret_edit
+  - not_dashboard_authorize
+  - not_wave4_ui
+  - not_darkops
+
+items:
+  - id: H1
+    title: governance_dual_true_approval
+    owner: human
+    owner_detail: shangshu_governance
+    status: approved
+    approval_id: GOV-DUAL-APPROVAL-2026-07-13-01
+    approval_doc: docs/governance/GOVERNANCE_DUAL_approval_template.md
+    blocked_reason: ""
+    prerequisites:
+      - round1_local_slot_go
+    acceptance_evidence:
+      - progress_append_with_approval_id
+      - ticket_crossref_non_simulated
+      - approval_template_landed
+      - shangshu_chat_authorization_2026-07-13
+      - named_sign_plan_todo_stage-h1-countersign_2026-07-28
+    next_eng_ticket: W2-T2-infra-staging-slot-spec-request-v1
+    ai_after_unblock: false
+    must_human_or_infra: true
+    note: H1 approved via named plan-todo 2026-07-28; ≠ Round-2 GO; H2-H5 still blocked; see human_action_pack
+  - id: H2
+    title: infra_staging_slot_https
+    owner: infra
+    owner_detail: infra_ops
+    status: blocked
+    blocked_reason: true_staging_slot_https_not_provisioned
+    prerequisites:
+      - H1_recommended
+    acceptance_evidence:
+      - slot_name_and_https_host_in_env_matrix
+      - health_probe_2xx_summary_no_secrets
+    next_eng_ticket: W2-T2-infra-staging-slot-spec-request-v1
+    request_form: docs/governance/infra_staging_slot_spec_request_v1.md
+    ai_after_unblock: false
+    must_human_or_infra: true
+    note: "§7 audit 2026-07-28 · §2 nine fields blank · tip §6 + chase delivered · ≠ H2 unblocked"
+  - id: H3
+    title: security_outbound_notify_signoff
+    owner: security
+    owner_detail: security_plus_shangshu
+    status: blocked
+    blocked_reason: no_security_signoff_on_outbound_post
+    prerequisites:
+      - H1
+      - H2_spec_reviewable
+    acceptance_evidence:
+      - written_signoff_in_progress
+      - no_prod_url_mixed_in
+    next_eng_ticket: execute-v2-P-3
+    request_form: docs/governance/h2_h5_wet_ink_human_action_pack_v1.md#3
+    ai_after_unblock: false
+    must_human_or_infra: true
+  - id: H4
+    title: customer_staging_allowlist
+    owner: human
+    owner_detail: product_customer
+    status: blocked
+    blocked_reason: customer_staging_allowlist_not_deployed
+    prerequisites:
+      - H2_host_known
+    acceptance_evidence:
+      - allowlist_scope_and_effective_conditions
+      - non_prod_endpoint_only
+    next_eng_ticket: execute-v2-P-4
+    request_form: docs/governance/h2_h5_wet_ink_human_action_pack_v1.md#4
+    ai_after_unblock: false
+    must_human_or_infra: true
+  - id: H5
+    title: receiver_deployed_ready
+    owner: infra
+    owner_detail: infra_plus_human_acceptance
+    status: blocked
+    blocked_reason: staging_receiver_not_ready
+    prerequisites:
+      - H2
+      - hmac_receiver_contract_available
+    acceptance_evidence:
+      - staging_verify_probe_summary
+    next_eng_ticket: execute-v2-P-5
+    request_form: docs/governance/h2_h5_wet_ink_human_action_pack_v1.md#5
+    ai_after_unblock: false
+    must_human_or_infra: true
+
+adjacent_gaps:
+  - id: A1
+    title: p85_prod_browser
+    owner: human_infra
+    status: gap
+    blocked_reason: bridge_stub_not_prod_browser
+    next_eng_ticket: p85-prod-browser-auth-ticket
+  - id: A2
+    title: p9_prod_provider_ledger_int
+    owner: human_payments
+    status: gap
+    blocked_reason: sandbox_only_prod_provider_ledger_int_required_ci_open
+    next_eng_ticket: p9-prod-auth-ticket
+  - id: A3
+    title: wave4_ui_visual_freeze_released
+    owner: human_user
+    status: released
+    blocked_reason: none_frozen_2026-07-27_unified_P1_P5
+    next_eng_ticket: W4-UI-A-static-shell-align-p1-v1
+    freeze_ssot: docs/wave4-ui-visual-freeze-v1.md
+    page_priority: [P1, P5, P4, P3, P2]
+  - id: A4
+    title: wc_pre_required_ci
+    owner: human_governance
+    status: defer
+    blocked_reason: required_ci_not_opened_this_phase
+    next_eng_ticket: FP-G1-T2-wc-pre
+
+post_unblock_ai_ticket:
+  id: WH-P7-NOTIF-staging-integration-execute-v2
+  when: all_of_H1_H5_and_shangshu_GO
+  note: S1-S4 plus 48h observe window; QUEUE H4 earliest 2026-07-18 discuss-early-not-execute-early

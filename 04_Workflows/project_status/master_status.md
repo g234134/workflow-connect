@@ -1,5 +1,27 @@
 # Master Status — 大唐三省六部
 
+## 2026-07-24 — 多智囊團架構完成
+
+- **Milestone**：六大智囊團（LC/LG/MCP/OBS/TOOL/MOD）架構定稿 + Router 實作
+- **Deliverables**：
+  - `docs/multi_advisory_council_v1.md`（架構文檔）
+  - `core/advisory_council_router.py`（路由實作）
+  - `tests/test_advisory_council_router.py`（測試 **8 passed**）
+  - Obsidian `AI-Research/Agent-Frameworks/多智囊團架構.md`（知識庫同步）
+- **與現有對齊**：
+  - Phase 4 Contract 四角色（O/B/C/D）→ 智囊團路由整合
+  - K1/K2 LangGraph flow → LG 智囊團
+  - Monitoring Graph L0 → OBS 智囊團
+  - Infra/Data/RAG/Governance Agent → TOOL + LC + MOD
+- **驗收**：
+  - 測試全過（8 passed）
+  - 不破壞 Phase 4 contract
+  - AGENTS.md 已更新 §多智囊團路由
+- **下一步**：
+  - Model routing 策略實作（成本/品質/隱私三策略）
+  - MCP 市場掃描 + 自動 register
+  - Observability 升級 L0 → L1（需批文）
+
 ## 2026-05-14 — ingest_verify 成功（smoke_corpus）
 
 - Milestone：四大板塊第一版完成
@@ -244,3 +266,236 @@ GAP-1（gate vs trace 命名）與 GAP-2（rollback_path_valid 語義）已由 W
 
 **W5-A ENF runtime status:**
 Phase 2 shadow-only 已完成 wiring + analyzer + 值班指南，BLOCKING-CRITERIA-01 計畫書已成文，第一波 blocking canary 僅鎖 ENF-RULE-1 × {infra_risk, security:critical}，需累積 ≥14 日 shadow 證據通過 O/C/F/G 門檻後，才會開 LIMITED-DENY 實作票。
+
+## 2026-06-24 · 全線狀態快照（增量相對 2026-06-23 Phase 表）
+
+- **口徑**：Phase 完成度 **仍以** `docs/WAVE_PROGRESS_DASHBOARD.md`（2026-06-23 SSOT）為準；本段疊加 2026-06-24 票級／戰報增量，**不修改 Phase% 數值**。
+- **SSOT 關係**：**Phase% 數字仍以 2026-06-23 Dashboard 為準**；本節只補充 06-24 之後 P7/P8.5/P9 的子線票級與 sandbox / local slot / GA landing 進展。
+- **Detail**：`04_Workflows/00_Agent_Work_Progress.md` →「2026-06-24 · P7 staging / P9 payment」；完整附錄見 `04_Workflows/tickets/W-PROG-phase-progress-refresh-2026-06_state.md` §D_REPORT。
+
+### 一句話總覽
+
+全專案 **17 個 Phase 簡單平均約 78%**，其中 **13/17 已達 ≥80%**；基礎治理、工具鏈、Intake Gate 與 Operator 主幹整體可用。  
+**主要瓶頸**集中在三條線：**P7 真環境 rollout**（staging 已演練、prod 未落地）、**P9 真金流**（sandbox happy-path 已通、prod provider 仍 blocked）、**P10 全自動化閉環**（實驗線 auto ≈86.7%，平台級 95% 目標仍遠）。  
+06-24 增量：P7 Round-1 local slot S1–S4 smoke GO · **Round-2 execute-v2 `blocked`**；P9 sandbox payment DRAFT→PAID + advisory CI yml landing（**本地 validated · GitHub 首跑 pending**）；P8.5 advisory CI 已 landing · **Scenario1/2 遠端 GA 未實跑**（ops-run **`blocked`**）。
+
+### Phase 完成度（06-23 SSOT · 本段不重算）
+
+| 分類 | 涵蓋 Phase | 約略完成度 | 摘要 |
+|------|-----------|-----------|------|
+| **P1–P6 · 基礎主幹** | P1 治理 · P2 知識索引 · P3 可觀測性 · P4 多 Agent 協作 · P5 Dashboard · P6 回歸 gate | **約 82%–95%**（多數 ≥80%） | 治理合約、trace、INT gate、toolchain health、multi-case smoke／metrics HTTP 已交付；Grafana/PG soak 等仍 placeholder。**整體 ok，非當前瓶頸。** |
+| **P7 · 自動客戶溝通** | P7（含 sandbox / prod / staging 子線） | **68%** | Sandbox 子線 **~90%**；prod phase-1 adapter + unittest **ready**；Round-1 **local slot S1–S4 smoke GO**（run_id `20260623T165252Z` · simulated governance_dual）；**Round-2 execute-v2 `blocked`**。**≠ prod · ≠ 客戶 staging endpoint**；rollout／governance flip／required CI **未落地**。 |
+| **P8.x · 商業化與工具鏈** | P7.5 · P8 · P8.5 · P8.6–P8.9 | **約 80%–85%** | P7.5 **81%** · Phase 8 **80%** · P8.9 **81%** · P8.6–8.8 **82%–85%**。**P8.5 83%**——本機 smoke **14/14·7/7 validated** · advisory CI **`bridge-smoke.yml` 已 landing**；**Scenario1/2 遠端 GA 未實跑** · ops-run **`blocked`** · bridge 仍 **in-memory stub · 非 prod browser · ≠ required CI**。 |
+| **P9 + P10 · 金流與全自動化** | P9 · P10 · P10.5 | **約 32%–60%** | **P9 60%**：sandbox **`done_with_gaps`** DRAFT→PAID（25/25 tests）+ runner **`--include-payment`** · **advisory CI `p9-payment-sandbox-smoke.yml` landing + 本地 21/21/e2e PAID validated** · **GitHub 首跑 pending** · **prod provider / ledger / INT / required CI 仍 gap**。**P10 48%** · **P10.5 32%**——實驗線自動化率高，但 S15 notify、intake API、prod 閉環仍 gap。**全線最大結構性缺口。** |
+
+> **≥80% 計數**：13/17（未達標：P7、P9、P10、P10.5）。
+
+### 核心進展（P7 / P8.5 / P9 · 06-24 增量）
+
+- **P7（68%）**：Sandbox **~90%**——emit→webhook 全鏈、DLQ/retry 等已 validated。Round-1 **local staging slot** S1–S4 **GO**（run_id `20260623T165252Z` · simulated governance_dual）；**Round-2 execute-v2 `blocked`**（governance_dual / Infra / Security / allowlist / receiver 未齊）。**Prod phase-1 ~54%**——URL/HMAC/retry/DLQ adapter unittest ready；真 prod rollout、governance dual、required CI **未落地**。**≠ prod-ready · ≠ 客戶-facing SLA**。
+- **P8.5（83%）**：Smoke A/B **設計 + 本機 smoke validated**（**14/14 · 7/7**）；advisory CI **`bridge-smoke.yml` 已 landing `origin/main`**（**advisory · non-blocking**）。**Scenario1/2 遠端 GA 未實跑** · 無 run_id/URL · ops-run **`blocked`**；wave-H+1 **100% closed**；bridge 仍 **in-memory stub · 非 prod browser · ≠ required CI**。**≠ 遠端 GA pass · ≠ 生產 browser 能力**。
+- **P9（60%）**：sandbox happy-path **`done_with_gaps`**——`WC-DEMO-*` · **DRAFT→PENDING_PAYMENT→PAID** · unittest **25/25 OK**；runner **`--include-payment` 一鍵 walkthrough** 已本地實測。**Advisory CI `p9-payment-sandbox-smoke.yml` 已 landing** · **本地 21/21 + e2e PAID validated** · **GitHub workflow_dispatch 首跑 pending**（無 run URL）。**prod provider / prod ledger / INT / required CI 仍 gap**；real provider（**`blocked`**）。**≠ prod 金流 · ≠ INT Tier-A**。
+
+### 主要缺口與下一步
+
+1. **P7 prod rollout** — Round-1 local slot S1–S4 已 GO；**Round-2 `blocked`**；下一步需 governance 批文 + 真 staging endpoint + prod env flip + required CI（`p7-notification-smoke.yml` 目前 advisory）。
+2. **P9 prod 金流** — `WH-P9-PROD-real-provider-v1` **blocked**；sandbox 僅 mock adapter，真 provider 與 prod order ledger 未閉環。
+3. **P9 advisory CI 首跑** — `p9-payment-sandbox-smoke.yml` 已 landing · 本地 validated；**GitHub workflow_dispatch 首跑 pending**（無 run URL）；**≠ required CI · ≠ INT · ≠ prod**。
+4. **P8.5 遠端 GA / 真 browser** — CI 已 landing；**Scenario2 GA 未 dispatch**（ops-run **`blocked`**）→ 取得 run_id/URL 後方可宣稱 deps-skip 遠端 validated；真 browser 仍 deferred。
+5. **P10 / P10.5 自動化閉環** — 實驗線 auto ≈86.7% ≠ 平台 95%；S15 notify gateway、intake API、prod 閉環與 skill 蒸馏仍 skeleton（P10 **48%** · P10.5 **32%**）。
+
+### dashboard-scribe 文字刷新（2026-06-24 · Wave-next · 无 Phase% 变更）
+
+- **依据**：`WH-REV-2026-06-P7-P8_5-P9-alignment-checklist-v1` C_REPORT verdict **`PARTIAL_READY`** · Progress 06-24 增量 · 子票 STATE（ops-run **`blocked`** · P9 CI `<RUN_URL>` pending）。
+- **变更**：`docs/WAVE_PROGRESS_DASHBOARD.md` P7/P8.5/P9 主表敘事 + Wave-G 脚注 + 子线註；本段 06-24 快照同步。
+- **Phase%**：**未重算**（仍 06-23 SSOT：P7 **68%** · P8.5 **83%** · P9 **60%**）。
+- **刻意保留 gap**：Scenario2 遠端 GA · P9 GitHub 首跑 · P7 Round-2 · prod/provider/INT/required CI。
+
+## 2026-07-13 — 工作流編排成熟度快照（相對 2026-06-27）
+
+- **Scope**：Multi-Chat／Wave Master／boot_context／command_queue／ticket 協議／advisory CI 編排銜接（**非**暗部 core 功能戰役）
+- **Status**：**編排層大幅完善 · doc/ops 為主** — **≠** production-ready · **≠** Phase closure
+- **相對 06-27 的工作流完善（摘要）**：
+  - **接戰**：三層 bootstrap（`_boot_context.py`）已成 AGENTS／Onboarding 標準入口
+  - **Multi-Chat + Wave Master**：W5-T1～T6（commands／template／checklist／INDEX §1.55／schema relay_mode·ops）+ skill／`multi_chat_roles.mdc`
+  - **進度治理**：FP-G1-T5／FP-G5-T3 append 協議＋模板；FP-PHASE-IMPACT（普通票只提案 Δ）；**W-PROG 07-13** 已保守寫入 Dashboard **P8.5 18%／P9 22%**（prev=06-27 10%／20%）
+  - **隊列**：command_queue A/B′/B3 清理＋Four-Piece／Batch 編排入 QUEUE
+  - **跨端**：`cross_agent_fix_ledger.yaml`（Hermes↔Cursor）
+  - **CI 銜接**：P6/P7/P9 advisory workflows landing + P8.5 bridge hardening／GA runbook／evidence SSOT（仍 **≠** required CI）
+- **仍阻塞／human**：P6 DAY3–7 · P7 Round-2 · WC-PRE · 部分 GA／首跑 URL；AI 主線近輪 **READY=0**
+- **刻意未改本輪**：`Master_Map.war_status`（仍 2026-05-17 凍結）· `Status.json` run 帳本 · Dashboard Phase%（已由 W-PROG 寫入，本快照不重算）
+- **Evidence**：`04_Workflows/00_Agent_Work_Progress.md` →「2026-07-13 · 工作流完善盤點 Rollup」· `docs/WAVE_PROGRESS_DASHBOARD.md`（07-13 SSOT）· 票 `W-PROG-phase-progress-refresh-2026-07-13_state.md` · `FP-PHASE-IMPACT-protocol-v1_state.md` · `W5-T*-*_state.md`
+- **Detail**：同上 Progress Rollup 條（分類＋時間線＋non_claims）
+
+
+## 2026-07-13 — war_status v2.62 + Phase% W-PROG-B（尚書省授權）
+
+- **授權**：用戶明示升版 `Master_Map.war_status` 並再算 Phase%（相對 06-27→07-13 盤點）
+- **war_status**：v2.61／2026-05-17 → **v2.62／2026-07-13**（編排成熟度 headline；見 `Master_Map.json`）
+- **Phase%（Dashboard SSOT · W-PROG-B）**：P8.5 **18→20** · P9 **22→24** · P4 **75→77** · P10 **35→37** · 其餘不變 · 平均仍 ≈54%
+- **證據**：Wave4 evidence SSOT complete · Multi-Chat／Wave Master／boot／QUEUE 盤點 · `_progress_recalc` H+2 ops-run=done
+- **non_claims**：≠ prod／required CI／Round-2 GO／Phase closure
+- **Detail**：`00_Agent_Work_Progress.md` →「W-PROG-B · war_status 升版」· 票 `W-PROG-war-status-phase-refresh-2026-07-13_state.md`
+
+## 2026-07-13 — 全線到100 Wave 計劃已登錄
+
+- **Status**：計劃已寫入 · Wave 0 DoD 凍結 · Wave 1 首票 P75-G6（本地 alert sink 契約）已落地
+- **SSOT**：`04_Workflows/plans/full-line-to-100-wave-plan-2026-07-13.md` · 票 `W-PROG-full-line-to-100-wave-plan-2026-07-13` · `P75-G6-alert-sink-contract-v1`
+- **策略**：後端／契約→~90% · UI→Wave 4 一次做完 · Wave 6 統一驗證
+- **Phase%**：本輪未寫 Dashboard 數字格（estimate P7.5 +1 only）
+- **non_claims**：≠ Phase closure · ≠ prod alert · ≠ UI
+- **Detail**：`00_Agent_Work_Progress.md` →「W-PROG-full-line-to-100-wave-plan-2026-07-13」
+
+## 2026-07-14 — Phase% 敘事同步收工全表（尚書省授權 · Governance）
+
+- **授權**：尚書省本輪明示授權同步本檔近段至 Dashboard／07-13 收工全表（此前 07-14 驗證票因 Governance 獨占未寫，現補齊）
+- **SSOT**：`docs/WAVE_PROGRESS_DASHBOARD.md`（Gauge `completion`）· runner `04_Workflows/_phase_pct_apply.py read`（2026-07-14 · ok · 18 phases · average_pct ≈ **57.89**）· 索引對照 `WORKFLOW_INDEX.md` §1.7
+- **相對上段（W-PROG-B 局部）**：上段僅摘要 P8.5／P9／P4／P10；本段改對齊 **07-13 收工全表**（數字格本輪**未重算**；read／self-test 已一致）
+- **Phase% 全表（當前＝07-13 收工）**：
+
+| Phase | % | 相對 07-13 開工／W-PROG A prev |
+|-------|---|-------------------------------|
+| P1 | 90 | 0 |
+| P2 | 66 | +1 |
+| P3 | 82 | 0 |
+| P3.5 | 55 | 0 |
+| P4 | 77 | +2 |
+| P5 | 72 | +2 |
+| P6 | **83** | 0 |
+| P7 | 30 | 0 |
+| P7.5 | 49 | +4 |
+| P8 | 100 | +55 |
+| P8.5 | 20 | +10 |
+| P8.6 | 66 | +1 |
+| P8.7 | 61 | +1 |
+| P8.8 | 59 | +1 |
+| P8.9 | 41 | +1 |
+| P9 | 24 | +4 |
+| P10 | 37 | +2 |
+| P10.5 | 30 | 0 |
+
+- **P6 註**：以 **Dashboard 83%** 為準；Progress **06-27** 文面曾寫 **72%**（06-26 口頭保守重估同源）＝**歷史敘事漂移**，**不**回寫改 83→72。詳見 Progress 本日記「P6 72↔83 稽核」。
+- **war_status**：仍 v2.62／2026-07-13（headline 關鍵摘要與 Dashboard 一致；本輪未改 `Master_Map`）
+- **non_claims**：≠ Phase closure · ≠ Round-2 GO · ≠ prod／required CI · ≠ 改 Dashboard 數字格
+- **Detail**：`00_Agent_Work_Progress.md` →「2026-07-14 · master_status Phase% 同步＋P6 稽核」
+
+
+
+## 2026-07-28 · Wave4 UI 靜態殼收口 + 下一主線 W4-UI-F（治理衛生）
+
+- **Scope**：command_center P1–P5 靜態殼 A–E 收口摘要；QUEUE priority 刷新；**未**升 war_status
+- **Status**：Wave4 **靜態殼** `accepted_with_gaps`（40/40 tests）· 下一 AI＝**真 API／CLI 只讀掛載**（`W4-UI-F`）· Human＝H1 副署／H2–H5
+- **Evidence**：`00_Agent_Work_Progress.md` 2026-07-28 W4-UI-A…E；`docs/wave4-ui-visual-freeze-v1.md`；QUEUE `last_sync=2026-07-28`
+- **war_status**：維持 v2.62（2026-07-13）· **須尚書省授權**後再動
+- **Phase%**：本輪 **不** apply（`apply_phase_pct=false`）
+- **non_claims**：≠ Operator prod · ≠ Round-2 GO · ≠ DarkOps · ≠ Dashboard authorize
+- **Detail**：Progress「治理衛生 · Wave4 A–E UI 靜態殼收口摘要」
+
+
+
+## 2026-07-28 · Wave6 DEFER（Phase%／war_status 待授權）
+
+- **Status**：W4-UI-F accepted（48/48）· Wave5 H1–H5 催辦已登錄 · **Phase%／war_status DEFER**
+- **Evidence**：`W-WAVE6-close-defer-2026-07-28_state.md` · Progress 同日條目
+- **war_status**：維持 v2.62（2026-07-13）· **未**改 `Master_Map`
+- **Phase%**：`apply_phase_pct=false`
+- **non_claims**：≠ Round-2 GO · ≠ Dashboard authorize · ≠ Operator prod
+
+
+## 2026-07-28 · Wave6 授權升檔 + H1 approved + W4-UI-G（Stage A–C）
+
+- **授權**：尚書省指派 plan todos `stage-h1-countersign`／`stage-wave6-authorize`／`stage-optional-ui-g`
+- **H1**：`GOV-DUAL-APPROVAL-2026-07-13-01` → **approved**（具名）· **≠** Round-2 GO · H2–H5 仍 blocked
+- **W4-UI-G**：P2–P4 live · A–G **54/54**
+- **war_status**：v2.62 → **v2.63（2026-07-28）**（`Master_Map.json`）
+- **Phase%**：W-PROG-Wave6 寫入 Dashboard（P1=91 · P2=68 · P4=78 · P5=73 · P7.5=51 · avg≈58.3%）
+- **Detail**：Progress「Stage A–C 收口」· 票 `W-PROG-wave6-ui-closeout-2026-07-28` · `W4-UI-G-p2-p4-live-source-v1`
+- **non_claims**：≠ Round-2 GO · ≠ H2–H5 解阻 · ≠ Operator prod · ≠ DarkOps
+
+
+## 2026-07-28 · WAR_BUMP_v2.64 + TABULAR_SIDELINE
+
+- **授權**：尚書省口令 `WAR_BUMP_v2.64` + `TABULAR_SIDELINE`
+- **war_status**：v2.63 → **v2.64（2026-07-28）**（`Master_Map.json`）
+- **TABULAR**：票 `TABULAR-SIDELINE-mainline-regression-2026-07-28` · 雙 smoke exit 0 · tip#1 仍 P6
+- **Phase%**：本輪 **不** apply（`apply_phase_pct=false`）
+- **Detail**：Progress「Wave5 雙口令收口」
+- **non_claims**：≠ Round-2 GO · ≠ H2–H5 解阻 · ≠ Phase% 假閉環 · ≠ DarkOps
+
+
+## 2026-07-28 · P進度快照 · 下一階段編排
+
+- **Scope**：Phase% read-only 快照 · P6 nightly 再核 · QUEUE arrange（W4-MEM-02 READY · W6-T10-cleanup DONE）
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：`_phase_pct_apply.py read` avg≈58.72 · **apply=false** · P1=91 P2=68 P3=82 P4=78 P5=73 P6=91 P7=30 P8=100
+- **編排**：tip#1/#2 不改 · B1=`W4-MEM-02` frame_ready · B2=cleanup 已落地不重開 · C類暫緩
+- **war_status**：維持 **v2.64**（本輪不重升）
+- **Evidence**：Progress「P進度核對 + 下一階段編排」· `docs/governance/wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ Phase% apply · ≠ 假 host／execute · ≠ DarkOps
+
+
+## 2026-07-28 · P進度再核 · 下一階段編排（post W4-MEM-02）
+
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：read avg≈58.72 · **apply=false**
+- **編排**：開 `W4-GUARD-01-T1-reviewer-close` READY · W4-MEM-02 DONE · tip#2 DEFER 08-11
+- **war_status**：維持 v2.64
+- **Evidence**：Progress「P進度再核 + 下一階段編排（post W4-MEM-02）」· `wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ G2–G4 升格 · ≠ Phase% apply · ≠ DarkOps
+
+
+## 2026-07-28 · P進度再核 · 下一階段編排（post W4-MEM-02）
+
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：read avg≈58.72 · **apply=false**
+- **編排**：開 `W4-GUARD-01-T1-reviewer-close` READY · W4-MEM-02 DONE · tip#2 DEFER 08-11
+- **war_status**：維持 v2.64
+- **Evidence**：Progress「P進度再核 + 下一階段編排（post W4-MEM-02）」· `wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ G2–G4 升格 · ≠ Phase% apply · ≠ DarkOps
+
+## 2026-07-28 · W4-GUARD-01-T1 Reviewer 收口
+- **裁決**：`accepted_with_gaps`（T1 fixture guard）· 父票／追蹤票已關
+- **證據**：unittest 16/17 · guard 六測全綠 · sandbox run-path FAIL out-of-T1
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **QUEUE**：B1 DONE_WITH_GAPS · ready:0 · `default_next_mode=watch` · tip#2 DEFER 08-11
+- **Dashboard**：Lane A 狀態句已更新 · **未**改 Phase% Gauge
+- **non_claims**：≠ G2–G4 升格 · ≠ Phase% apply · ≠ Round-2 GO · ≠ DarkOps
+
+## 2026-07-28 · P進度再核 · 下一階段編排（post Guard T1）
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：read avg≈58.72 · **apply=false**
+- **編排**：開 `W4-REG-sandbox-client-runpath-suite-align-v1` READY · B1 Guard T1 DONE_WITH_GAPS · tip#2 DEFER 08-11
+- **war_status**：維持 v2.64
+- **Evidence**：Progress「P進度再核 + 下一階段編排（post Guard T1）」· `wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ G2–G4 升格 · ≠ Phase% apply · ≠ DarkOps
+
+## 2026-07-28 · P進度輕核＋移交 execute B3
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：read avg≈58.72 · **apply=false**
+- **編排**：**不**新開票 · B3 READY 維持 · 下一＝Implementer execute
+- **war_status**：維持 v2.64
+- **Evidence**：Progress「P進度輕核＋移交 execute B3」· `wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ G2–G4 · ≠ Phase% apply · ≠ 本輪 B3 落地
+
+## 2026-07-28 · B3 sandbox_client suite 對齊 DONE
+- **裁決**：`W4-REG-sandbox-client-runpath-suite-align-v1` **DONE** · unittest **17/17**
+- **修法**：測例對齊 controlled fail（`blocked`+`needs_review` · `stop_at=cleaning_preview` · `guard_sanity_ok`）· **未**改 runner／gate
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **QUEUE**：READY→DONE · ready:0 · `default_next_mode=watch` · tip#2 DEFER 08-11
+- **Evidence**：Progress「B3 execute · W4-REG sandbox_client suite 對齊 DONE」· 票 B_REPORT
+- **non_claims**：≠ G2–G4 升格 · ≠ Phase% apply · ≠ Round-2 GO · ≠ DarkOps
+
+## 2026-07-28 · P進度再核 · 下一階段編排（post B3 · 開 B4）
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **Phase%**：read avg≈58.72 · **apply=false**
+- **編排**：開 `W6-T5-T6-docs-checkpoint-path-semantics-v1` READY · B3 suite DONE · tip#2 DEFER 08-11
+- **war_status**：維持 v2.64
+- **Evidence**：Progress「P進度再核＋開 B4 checkpoint_path docs READY」· `wave5_next_stage_post_defer_p6_v1.md`
+- **non_claims**：≠ Round-2 GO · ≠ G2–G4 升格 · ≠ Phase% apply · ≠ DarkOps · ≠ 本輪 docs 正文
+
+## 2026-07-28 · B4 checkpoint_path docs verify-and-close DONE
+- **裁決**：`W6-T5-T6-docs-checkpoint-path-semantics-v1` **DONE** · §7 pre-landed · cross-ref only
+- **P6**：latest 仍 `30346954725` · 無新 success · tip#1 維持 · ≠ uplift
+- **QUEUE**：READY→DONE · ready:0 · `default_next_mode=watch` · tip#2 DEFER 08-11
+- **Evidence**：Progress「B4 execute · checkpoint_path docs verify-and-close DONE」· 票 B_REPORT
+- **non_claims**：≠ HITL runtime · ≠ Phase% apply · ≠ G2–G4 · ≠ Round-2 GO · ≠ DarkOps

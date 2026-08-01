@@ -1,0 +1,50 @@
+# Wave Master FRAME 擴展區塊 — 複製貼入 <ticket_id>_state.md 的 ## FRAME 下
+# SSOT：docs/ticket-schema-master-v1.md · W5-T2-wave-master-ticket-template-v1
+# 規範：docs/wave-master-ticketing-playbook.md §3.2
+# 一般 Multi-Chat 票可省略；W1–W5 執行子票必填
+
+wave_id: W1  # W1 | W2 | W3 | W4 | W5 | null
+group_id: G7  # G1 | G2 | ... | G10 — Full-Phase 票必填
+lifecycle_phase: B  # B | C | D | O
+phase_targets:
+  - P7.5  # 只列 Dashboard Phase 名；不写 %
+estimated_cycles: 1  # 1 | 2 — 超过必须拆票
+mvp_allowed: true  # true 时 AC 须分 MVP vs stretch
+human_only_prereqs: []  # 无则 []；不可留空却隐含 human 已做
+infra_only_prereqs: []
+security_only_prereqs: []
+
+dependencies_detail:
+  upstream_tickets: []
+  downstream_waves: []
+  blocks_if_missing: []
+
+risks:
+  - id: RSK-EXAMPLE-01
+    description: ""
+    likelihood: L  # L | M | H
+    impact: L
+    mitigation: ""
+    residual: accept  # accept | block
+
+observability:
+  verify_commands:
+    - "python -m unittest tests.test_example -v"
+  evidence_artifacts:
+    - "子票 B_REPORT verification 段"
+  trace_fields:
+    - intake_decision_id
+    - case_ref
+    - evidence_tier
+  success_signals:
+    - "smoke ok=true"
+  failure_signals:
+    - "ok=false 任一步"
+
+ticket_class: doc/spec  # build | doc/spec | scribe/ops | blocked/planning
+evidence_tier: L-local  # L-local | CI-advisory | GA-remote | n/a
+parallel_ok: true
+
+non_claims:
+  - 不宣稱 Phase% 上调
+  - 不宣稱 prod/staging 已执行（无 run URL 时）

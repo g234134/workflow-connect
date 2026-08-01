@@ -1,0 +1,267 @@
+{
+  "schema_version": "tabular-internal-notify-v1",
+  "entries": [
+    {
+      "event": "case.idle_to_running",
+      "ts": "2026-06-29T09:14:36+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "previous_status": "idle",
+        "requested_by": "regression_smoke",
+        "restart": true
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:14:36+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:14:37+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "approve_tabular_delivery",
+        "previous_automation_status": null,
+        "previous_delivery_ready": false,
+        "approved_by": "regression_smoke"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:11+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:12+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091511Z_5c4800ce"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:18+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:19+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091518Z_0e5419bf"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-29T09:15:20+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-29T09:15:21+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260629T091520Z_f87d3d31"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:22:14+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:22:15+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172214Z_b891477e"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T17:27:53+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T17:27:54+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T172753Z_46ee08ff"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:18+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:30:20+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183018Z_b5a5c771"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:30:37+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:30:37+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183037Z_a20cbd13"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-06-30T18:31:55+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-06-30T18:31:56+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260630T183155Z_03ff00ad"
+      }
+    },
+    {
+      "event": "checkpoint.pending",
+      "ts": "2026-07-28T10:07:43+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "checkpoint": "a",
+        "checkpoint_status": "pending",
+        "step_name": "checkpoint_a",
+        "pause_reason": "awaiting_checkpoint_a",
+        "error": "Checkpoint A created; awaiting human decision"
+      }
+    },
+    {
+      "event": "case.completed_delivery_ready",
+      "ts": "2026-07-28T10:07:43+00:00",
+      "case_id": "generic-low-risk",
+      "payload": {
+        "automation_status": "completed",
+        "delivery_ready": true,
+        "source": "driver_chain_complete",
+        "previous_automation_status": "running",
+        "previous_delivery_ready": true,
+        "run_id": "20260728T100743Z_88b79da0"
+      }
+    }
+  ],
+  "case_id": "generic-low-risk",
+  "last_event_at": "2026-07-28T10:07:43+00:00"
+}

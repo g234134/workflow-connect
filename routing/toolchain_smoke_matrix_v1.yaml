@@ -9,6 +9,7 @@ description: >
 ssot_for:
   - docs/toolchain-health-dashboard-v1.md
   - docs/phase6-int-regression-gate-contract-v1.md
+  - docs/smoke-and-regression-contract-v1.md
 
 gate_class_values:
   - mandatory
@@ -16,11 +17,41 @@ gate_class_values:
   - shadow
 
 tier_values:
+  - local_mandatory
   - local_recommended
   - optional_ci
   - release_only
 
 entries:
+  - smoke_id: TS-INT-TIER-A
+    command: python 04_Workflows/_wave7_regression_gate.py --tier A --pretty
+    tier: local_mandatory
+    gate_class: mandatory
+    blocks_mainline: false
+    blocks_pr_ci: false
+    estimated_seconds: 120
+    wa_t3_gate_id: null
+    source_ticket: WF-P6-INT-GATE
+    notes: >
+      Phase 6 INT Tier-A assembly regression (14 modules). Local mandatory before
+      envelope/manifest/QA/orch/runner changes; NOT in PR CI mandatory trio
+      (blocks_pr_ci=false). CI wiring design-only: docs/ci-design-p6-int-gate-v1.md
+      Track A/B. Verification: docs/phase6-int-regression-verification-report-v1.md.
+
+  - smoke_id: TS-INT-TIER-B
+    command: python 04_Workflows/_wave7_regression_gate.py --tier B --pretty
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    blocks_pr_ci: false
+    estimated_seconds: 90
+    wa_t3_gate_id: null
+    source_ticket: WF-P6-INT-UPLIFT
+    notes: >
+      Phase 6 INT Tier-B heavier integration (M2 orch + Markdown render; 3 modules).
+      Pre-release recommended; does NOT block PR merge or mainline. Optional nightly
+      extension per docs/ci-design-p6-int-gate-v1.md Track B weekly variant.
+
   - smoke_id: TS-W3TL-UNIT
     command: >-
       python -m unittest tests.test_tabular_tool_catalog tests.test_tabular_tool_selector
@@ -144,3 +175,69 @@ entries:
     notes: >
       Release checklist mandatory; not in PR CI mandatory trio.
       blocks_mainline=true when interpreting Tabular MVP mainline readiness.
+
+  - smoke_id: TS-MP-SMOKE
+    command: python scripts/run_multi_phase_smoke_v1.py --case-ref demo_phase --format json
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 180
+    wa_t3_gate_id: null
+    source_ticket: MP-SMOKE
+    notes: >
+      Single-case seven-step release sanity (P7.5/P8/P8.9). L-local recommended;
+      does not replace INT Tier-A. Contract docs/smoke-and-regression-contract-v1.md.
+
+  - smoke_id: TS-MP-SMOKE-UNIT
+    command: python -m unittest tests.test_multi_phase_smoke_v1 -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 30
+    wa_t3_gate_id: null
+    source_ticket: MP-SMOKE
+    notes: MP-SMOKE contract unittest companion to TS-MP-SMOKE.
+
+  - smoke_id: TS-MC-SMOKE
+    command: python scripts/run_multi_case_smoke_v1.py --cases demo_phase,sampleco --format json
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 300
+    wa_t3_gate_id: null
+    source_ticket: MC-SMOKE
+    notes: >
+      Fleet multi-case smoke; release pass path excludes phi_demo deny probe.
+      Contract docs/smoke-and-regression-contract-v1.md.
+
+  - smoke_id: TS-MC-SMOKE-UNIT
+    command: python -m unittest tests.test_multi_case_smoke_v1 -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 30
+    wa_t3_gate_id: null
+    source_ticket: MC-SMOKE
+    notes: MC-SMOKE contract unittest companion to TS-MC-SMOKE.
+
+  - smoke_id: TS-CI-SMOKE
+    command: python scripts/run_ci_smoke_check_v1.py --case-ref demo_phase --format json
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 200
+    wa_t3_gate_id: null
+    source_ticket: CI-SMOKE
+    notes: >
+      MP-SMOKE + MP-METRICS wrapper; exit 1 on failure. L-local by default;
+      CI-advisory only when wired with continue-on-error. Not PR required.
+
+  - smoke_id: TS-CI-SMOKE-UNIT
+    command: python -m unittest tests.test_ci_smoke_check_v1 -v
+    tier: local_recommended
+    gate_class: optional
+    blocks_mainline: false
+    estimated_seconds: 20
+    wa_t3_gate_id: null
+    source_ticket: CI-SMOKE
+    notes: CI-SMOKE pass/fail policy unittest companion to TS-CI-SMOKE.

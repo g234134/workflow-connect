@@ -1,0 +1,23 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.ci_check",
+  "title": "Eval gate CI check",
+  "brief": "Sample recent eval export rows and fail CI when needs_review ratio or fail-on-tags exceed thresholds.",
+  "domain": "obs",
+  "module_path": "observability/eval_ci_check.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.eval_ci_check tests/fixtures/eval/ibridge_records.jsonl --limit 50",
+  "inputs": [
+    "ibridge_records.jsonl or eval_export.jsonl",
+    "--limit",
+    "--max-needs-review-ratio"
+  ],
+  "outputs": [
+    "CI verdict dict (ok, needs_review_ratio, sampled_count)"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_ci_check -v",
+  "wave_ticket": "eval-gate-ci",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer"]
+}

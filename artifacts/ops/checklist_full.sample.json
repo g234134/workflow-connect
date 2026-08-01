@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "mode": "full",
+  "generated_at": "2026-06-07T12:00:00Z",
+  "ops_cycle_schema_version": "v1",
+  "message": "Archive checklist (full) + Wave 1 readiness: archive_ok=true wave1_ok=true",
+  "archive_checklist": {
+    "ok": true,
+    "mode": "full",
+    "ops_cycle_schema_version": "v1",
+    "steps": [
+      {
+        "id": "milestone",
+        "title": "里程碑封存",
+        "status": "pass",
+        "message": "04_Workflows/project_status/master_status.md"
+      },
+      {
+        "id": "battle_report",
+        "title": "戰報封存",
+        "status": "pass",
+        "message": "04_Workflows/00_Agent_Work_Progress.md"
+      }
+    ]
+  },
+  "wave1_readiness": {
+    "ok": true,
+    "checks": [
+      {
+        "step_id": "smoke_keys",
+        "title": "三鑰盲測",
+        "status": "pass",
+        "message": "==== 三鑰盲測 (do not print keys) ====\n  OpenAI   : [OK]\n  Groq     : [OK]\n  Telegram : [OK]",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "routing_policy_validate",
+        "title": "routing_policy validate",
+        "status": "pass",
+        "message": "{\"ok\": true, \"total_tools\": 12, \"total_routes\": 3}",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "eval_gate_ci_subset",
+        "title": "eval-gate CI check (fixture)",
+        "status": "pass",
+        "message": "{\"ok\": true, \"stats\": {\"sampled_count\": 50}}",
+        "details": {
+          "exit_code": 0
+        }
+      },
+      {
+        "step_id": "darkops_route_gate",
+        "title": "DarkOps route gate",
+        "status": "pass",
+        "message": "assignable=false blocked=true",
+        "details": {
+          "exit_code": 0,
+          "assignable": false,
+          "blocked": true
+        },
+        "darkops_blocked_expected": true
+      }
+    ]
+  }
+}

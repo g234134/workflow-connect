@@ -53,16 +53,16 @@
 
 ## STATE
 
-- overall_status: in_progress
-- implementation_status: in_review
-- current_owner: reviewer
-- next_action: Reviewer 对照 AC-1～AC-5 验收；Scribe 补 `control_plane_dispatch_executor.md`（AC-6 deferred 本轮回覆）
-- last_updated: 2026-06-13 · implementer
+- overall_status: accepted_with_gaps
+- implementation_status: done
+- current_owner: orchestrator
+- next_action: 关票完成；可选 follow-up UT（unresolved-dependency + gate=block 集成场景）；入口 B/C 仍 deferred（WC-T1 §8.3 / §8.1 #C）
+- last_updated: 2026-06-14 · orchestrator · scribe
 - status_by_role:
   - orchestrator: done
   - implementer: done
-  - reviewer: pending
-  - scribe: pending
+  - reviewer: done
+  - scribe: done
 
 ---
 
@@ -90,16 +90,35 @@
 
 ## C_REPORT
 
-- conclusion: **pending** · Reviewer 关票前置
-- blocking_issues: 无（implementer 侧）
-- checks_summary: <!-- 2026-06-14 多 lane 收口：implementer done · unittest 21/21 OK（dispatch_cards + ticket_eligibility）；待对照 AC-1～AC-6 -->
+- conclusion: **accepted_with_gaps**
+- blocking_issues: 无（无 boundary violation；无须返工 code）
+- checks_summary: |
+  - AC-1（block · ineligible skip）：PASS — `test_gate_block_skips_ineligible_ticket`；`cards_generated=0`、`eligibility_blocked[0].reasons` 含 `overall_status_blocked`；未写 `*.cursor.md`。集成层仅 `overall_status=blocked` fixture（TEST-BLK）；unresolved dependency 未做 generate_cards 级 fixture，但 `test_ineligible_unresolved_dependency` 已绿。
+  - AC-2（gate off 回归）：PASS — `test_gate_off_generates_despite_ineligible`；`eligibility_gate=off`、仍写卡。
+  - AC-3（gate warn + provenance）：PASS — `test_gate_warn_generates_with_warning`；summary `eligibility_warn:*`、card record `eligibility_warnings`、Provenance 含 `eligibility_warning`。
+  - AC-4（force override）：PASS — `test_force_eligibility_override_in_block_mode`。
+  - AC-5（unittest 全绿）：PASS — `python -m unittest tests.test_dispatch_cards tests.test_ticket_eligibility -v` → **21/21 OK**；與 Lane C smoke 62/62 OK 一致。
+  - AC-6（dispatch executor 文檔）：GAP — `docs/control_plane_dispatch_executor.md` 尚無 eligibility gate 說明；與 B_REPORT deferred_items 一致。
+  - Boundary：PASS — 變更限於 AllowedPaths。
+  - Spec 對齊：PASS — `WC_T1_eligibility.md` §8 入口 A implemented；入口 B/C deferred。
 - risk_level: low
-- suggestions: AC-6 `control_plane_dispatch_executor.md` 文档可 Scribe 或 follow-up
+- suggestions: |
+  1. Scribe 補 AC-6：`docs/control_plane_dispatch_executor.md` § Dispatch Cards 增 Eligibility gate 小節。
+  2. 可選 follow-up UT：unresolved-dependency + gate=block 集成場景；非 blocking。
+  3. Orchestrator 更新 STATE：`overall_status` → done/accepted_with_gaps、`reviewer: done`；Scribe 末尾追加 Progress/Dashboard。
+- reviewed_by: reviewer
+- reviewed_at: 2026-06-14
 
 ---
 
 ## D_REPORT
 
-- docs_updates: <!-- Scribe：Progress 末尾 M2 条目；overview registry WC-T1-INTEGRATION -->
-- progress_entry: <!-- 1–3 句 -->
-- followup_suggestions: <!-- WC-T2 comms 通知 ineligible；hook 硬闸 env 试点 -->
+- docs_updates:
+  - `docs/control_plane_dispatch_executor.md` — § Dispatch Cards 增 **Eligibility gate** 小節（AC-6 收口）
+  - `docs/WAVE_PROGRESS_DASHBOARD.md` — 分票收口表 WC-T1-INTEGRATION 行更新
+  - `04_Workflows/00_Agent_Work_Progress.md` — 末尾关票条目
+- progress_entry: WC-T1-INTEGRATION Reviewer **accepted_with_gaps**（21/21 UT）；Scribe 已补 AC-6 eligibility gate 文档与 Progress/Dashboard 索引。
+- followup_suggestions:
+  - 可选 UT：unresolved-dependency + `--eligibility-gate block` 集成 fixture
+  - 入口 B：`.cursor/hooks/capture_session_context.py` 软/硬闸（WC-T1 §8.3）
+  - 入口 C：`build_dispatch_plan` eligibility annotate

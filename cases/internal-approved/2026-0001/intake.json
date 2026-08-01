@@ -1,0 +1,46 @@
+{
+  "case_id": "2026-0001",
+  "client_ref": "internal-approved",
+  "product_sku": "CLEAN-BASIC",
+  "data_file": "raw/Phase.csv",
+  "file_format": "csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "scale": {
+    "row_count": 7,
+    "file_size_bytes": 258
+  },
+  "schema": {
+    "field_count": 4,
+    "primary_key": "Phase",
+    "pii_fields": [],
+    "column_roles": {
+      "Phase": "primary_key",
+      "名稱": "text",
+      "之前": "text",
+      "現在（建議）": "text"
+    }
+  },
+  "provenance": {
+    "source_type": "owned",
+    "data_owner": "internal-approved"
+  },
+  "sensitivity": "internal",
+  "structure": "text_only",
+  "security_compliance": {
+    "contains_pii": false,
+    "user_acknowledged_limitations": true
+  },
+  "cleaning_goals": "",
+  "auto_detect": {
+    "headers": [
+      "Phase",
+      "名稱",
+      "之前",
+      "現在（建議）"
+    ],
+    "encoding": "utf-8-sig",
+    "delimiter": ","
+  },
+  "cleaning_profile": "generic_low_risk_profile"
+}

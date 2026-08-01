@@ -1,0 +1,115 @@
+{
+  "schema_version": "wc_pre_06_governance_policy_v1",
+  "policy_revision": "2026-06-26",
+  "status": "design_only",
+  "approval_status": {
+    "proposal_review": "pending",
+    "L1_pr_optional": "pending",
+    "L2_pr_required": "pending",
+    "note": "Design-only policy. Does NOT enable CI gates. Human signoff required before WC-IMPL-L1/L2."
+  },
+  "gate_axis": "toolchain_health",
+  "axis_disambiguation": "NOT monitoring_graph L0/L1/L2 (AGENTS.md). NOT prod selector enablement.",
+  "levels": {
+    "L0": {
+      "label": "observability_offline",
+      "pr_workflow": false,
+      "blocks_merge": false,
+      "blocks_mainline": false,
+      "runner": "scripts/run_toolchain_health_dashboard.py --format json --dry-run --no-write"
+    },
+    "L1": {
+      "label": "pr_optional_advisory",
+      "pr_workflow": true,
+      "blocks_merge": false,
+      "blocks_mainline": false,
+      "continue_on_error": true,
+      "proposed_gate_id": "OG-TOOLCHAIN-HEALTH",
+      "gate_class": "optional"
+    },
+    "L2": {
+      "label": "pr_required",
+      "pr_workflow": true,
+      "blocks_merge": true,
+      "blocks_mainline": false,
+      "proposed_gate_id": "OG-TOOLCHAIN-HEALTH",
+      "gate_class": "mandatory",
+      "hard_asserts": [
+        "ok == true",
+        "sections_populated >= 4",
+        "sections.catalog_health.ok == true"
+      ],
+      "excluded_hard_asserts": [
+        "aggregated_health_score >= 60"
+      ]
+    }
+  },
+  "escalation_gates": {
+    "L0_to_L1": {
+      "min_staging_green_days": 14,
+      "artifact_sections_populated_pct": 80,
+      "min_sections_populated": 3,
+      "hooks_ready": [
+        "HOOK-CATALOG-COUNT",
+        "HOOK-SMOKE-SUMMARY"
+      ],
+      "flake_rate_max_pct": null,
+      "human_signoff": {
+        "required": true,
+        "field": "approval_status.L1_pr_optional",
+        "approvers": [
+          "尚書省"
+        ]
+      },
+      "implementation_ticket": "WC-IMPL-L1"
+    },
+    "L1_to_L2": {
+      "min_l1_observation_days": 21,
+      "pr_optional_fail_rate_max_pct": 5,
+      "outbox_presence_7d_pct": 95,
+      "hooks_full": true,
+      "rollback_drill_required": true,
+      "human_signoff": {
+        "required": true,
+        "fields": [
+          "approval_status.L2_pr_required",
+          "governance_committee"
+        ],
+        "approvers": [
+          "尚書省",
+          "治理委員会"
+        ]
+      },
+      "implementation_ticket": "WC-IMPL-L2"
+    }
+  },
+  "eligible_ci_checks_for_escalation": [
+    {
+      "check_id": "OG-TOOLCHAIN-HEALTH",
+      "current_class": "optional",
+      "source": "docs/toolchain-observability-governance-upgrade-v1.md",
+      "may_escalate_to": [
+        "L1",
+        "L2"
+      ]
+    }
+  ],
+  "non_claims": [
+    "This policy does NOT enable branch protection or PR required checks.",
+    "This policy does NOT mean prod selector or Monitoring Graph L1/L2 is enabled.",
+    "This policy does NOT replace MG-EVAL-* / MG-CORE-AGENT-SMOKE-PR mandatory trio.",
+    "aggregated_health_score is NOT an SLA.",
+    "No human approval has been granted as of policy_revision date."
+  ],
+  "trace_fields": {
+    "wc_pre_approval_id": "UUID or Progress entry id linking human signoff to this policy revision",
+    "approval_status.L1": "pending | approved | rolled_back",
+    "approval_status.L2": "pending | approved | rolled_back",
+    "design_ready": "true when W5-WC-PRE-06 doc bundle complete; NOT approved"
+  },
+  "ssot_docs": [
+    "docs/toolchain-observability-governance-upgrade-v1.md",
+    "docs/governance/WC_PRE_06_approval_template.md",
+    "docs/governance/WC_PRE_06_07_rollout_plan.md"
+  ]
+}

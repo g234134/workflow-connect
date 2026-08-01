@@ -1,0 +1,100 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "本機 MVP 介面" [level=1] [ref=e3]
+    - paragraph [ref=e4]: MVP 案件工作台 — 僅封裝 CLI
+    - alert [ref=e5]:
+      - strong [ref=e6]: 非正式環境
+      - text: · 單一使用者 · 僅限本機 · 無登入 · 無 SLA
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "A. 查詢歷史案例" [level=2] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - text: 客戶代號
+          - textbox "客戶代號" [ref=e12]:
+            - /placeholder: 例如：SAMPLECO
+            - text: sampleco
+        - generic [ref=e13]:
+          - text: 產品 SKU
+          - textbox "產品 SKU" [ref=e14]:
+            - /placeholder: 選填
+        - generic [ref=e15]:
+          - text: 欄位名稱（以逗號分隔）
+          - textbox "欄位名稱（以逗號分隔）" [ref=e16]:
+            - /placeholder: Phase,名稱（以逗號分隔）
+        - generic [ref=e17]:
+          - checkbox "列出全部案例" [ref=e18]
+          - text: 列出全部案例
+        - generic [ref=e19]:
+          - button "執行查詢" [active] [ref=e20] [cursor=pointer]
+          - button "刷新索引" [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - heading "B. 新建案例 + Gate" [level=2] [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - text: 來源檔案路徑
+          - textbox "來源檔案路徑" [ref=e26]:
+            - /placeholder: CSV 檔案路徑，例如 cases/_experiment_samples/sampleco_milestone_export.csv
+        - generic [ref=e27]:
+          - text: 客戶代號
+          - textbox "客戶代號" [ref=e28]:
+            - /placeholder: 例如：acme
+        - generic [ref=e29]:
+          - text: 產品 SKU
+          - textbox "產品 SKU" [ref=e30]: CLEAN-BASIC
+        - generic [ref=e31]:
+          - text: 編碼
+          - textbox "編碼" [ref=e32]: utf-8
+        - generic [ref=e33]:
+          - text: 分隔符號
+          - textbox "分隔符號" [ref=e34]: ","
+        - generic [ref=e35]:
+          - text: 檔案格式
+          - textbox "檔案格式" [ref=e36]:
+            - /placeholder: 選填：csv、tsv
+        - generic [ref=e37]:
+          - checkbox "建案後立即執行 gate" [checked] [ref=e38]
+          - text: 建案後立即執行 gate
+        - button "建立案例並執行 Gate" [ref=e40] [cursor=pointer]
+    - generic [ref=e41]:
+      - heading "C. 既有案例 E2E" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - text: 案例目錄
+          - textbox "案例目錄" [ref=e45]:
+            - /placeholder: cases/demo_phase
+            - text: cases/sampleco/2026-0001
+        - generic [ref=e46]:
+          - button "demo_phase" [ref=e47] [cursor=pointer]
+          - button "sampleco/2026-0001" [ref=e48] [cursor=pointer]
+          - button "執行 E2E" [ref=e49] [cursor=pointer]
+    - generic [ref=e50]:
+      - heading "D. 執行結果" [level=2] [ref=e51]
+      - generic [ref=e54]:
+        - generic [ref=e55]: 操作：lookup
+        - generic [ref=e56]: 成功：true
+      - generic [ref=e91]:
+        - heading "查詢比對結果" [level=3] [ref=e92]
+        - table [ref=e94]:
+          - rowgroup [ref=e95]:
+            - row "案例目錄 客戶代號 case_id 產品 SKU Gate 狀態 known_limits" [ref=e96]:
+              - columnheader "案例目錄" [ref=e97]
+              - columnheader "客戶代號" [ref=e98]
+              - columnheader "case_id" [ref=e99]
+              - columnheader "產品 SKU" [ref=e100]
+              - columnheader "Gate 狀態" [ref=e101]
+              - columnheader "known_limits" [ref=e102]
+          - rowgroup [ref=e103]:
+            - row "cases/sampleco/2026-0001 sampleco CLEAN-BASIC accepted" [ref=e104]:
+              - cell "cases/sampleco/2026-0001" [ref=e105]
+              - cell "sampleco" [ref=e106]
+              - cell [ref=e107]
+              - cell "CLEAN-BASIC" [ref=e108]
+              - cell "accepted" [ref=e109]:
+                - generic [ref=e110]: accepted
+              - cell [ref=e111]
+        - paragraph [ref=e112]: 備註：只登记 demo_phase, sampleco/2026-0001
+        - paragraph [ref=e113]: 符合筆數：1
+      - group [ref=e84]:
+        - generic "原始 JSON" [ref=e85]
+  - contentinfo [ref=e53]: 封裝 scripts/lookup_case_history.py、new_cleaning_case.py、run_case_e2e_validation.py；不變更核心流程。

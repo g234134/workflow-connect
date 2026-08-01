@@ -1,0 +1,382 @@
+{
+  "schema_version": "tabular-automation-run-log-v1",
+  "run_id": "20260728T100742Z_b257c631",
+  "case_id": "2026-0001",
+  "case_dir": "cases\\sampleco\\2026-0001",
+  "cleaning_profile_id": "sampleco_order_profile",
+  "cleaning_profile_error": null,
+  "started_at": "2026-07-28T10:07:42+00:00",
+  "ended_at": "2026-07-28T10:07:42+00:00",
+  "dry_run": false,
+  "force": false,
+  "resume": false,
+  "start_from": "cleaning",
+  "stop_after": null,
+  "steps": [
+    {
+      "step_name": "cleaning",
+      "step_status": "completed",
+      "started_at": "2026-07-28T10:07:42+00:00",
+      "ended_at": "2026-07-28T10:07:42+00:00",
+      "artifacts": {
+        "cleaning_profile_id": "sampleco_order_profile",
+        "output_path": "cleaned\\sampleco_milestone_export_cleaned.csv",
+        "report_json": "cases\\sampleco\\2026-0001\\reports\\report.json",
+        "cleaning_stats_json": "cases\\sampleco\\2026-0001\\reports\\cleaning_stats.json"
+      },
+      "error": null,
+      "attempt": 1,
+      "error_if_any": null,
+      "dlq_if_any": null,
+      "retry_count": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "dlq_status": "none",
+      "detail": {
+        "ok": true,
+        "case_dir": "cases\\sampleco\\2026-0001",
+        "case_id": "2026-0001",
+        "cleaning_profile_id": "sampleco_order_profile",
+        "input_rows": 115,
+        "output_rows": 8,
+        "input_path": "raw/sampleco_milestone_export.csv",
+        "output_path": "cleaned\\sampleco_milestone_export_cleaned.csv",
+        "report_json": "cases\\sampleco\\2026-0001\\reports\\report.json"
+      }
+    },
+    {
+      "step_name": "report",
+      "step_status": "completed",
+      "started_at": "2026-07-28T10:07:42+00:00",
+      "ended_at": "2026-07-28T10:07:42+00:00",
+      "artifacts": {
+        "report_json": "cases\\sampleco\\2026-0001\\reports\\report.json",
+        "cleaning_stats_json": "cases\\sampleco\\2026-0001\\reports\\cleaning_stats.json",
+        "qa_status": "pass_with_warnings",
+        "output_guard_status": null,
+        "report_md": "cases\\sampleco\\2026-0001\\reports\\report.md"
+      },
+      "error": null,
+      "attempt": 1,
+      "error_if_any": null,
+      "dlq_if_any": null,
+      "retry_count": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "dlq_status": "none",
+      "detail": {
+        "output_guard": {},
+        "qa_status": "pass_with_warnings"
+      }
+    },
+    {
+      "step_name": "bundle",
+      "step_status": "completed",
+      "started_at": "2026-07-28T10:07:42+00:00",
+      "ended_at": "2026-07-28T10:07:42+00:00",
+      "artifacts": {
+        "cleaned_csv": [
+          "cleaned/sampleco_milestone_export_cleaned.csv"
+        ],
+        "report_json": "reports/report.json",
+        "report_md": "reports/report.md",
+        "cleaning_stats_json": "reports/cleaning_stats.json",
+        "eligibility_result_json": "reports/eligibility_result.json",
+        "delivery_signoff_md": "delivery_signoff.md"
+      },
+      "error": null,
+      "attempt": 1,
+      "error_if_any": null,
+      "dlq_if_any": null,
+      "retry_count": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "dlq_status": "none",
+      "detail": {
+        "ok": true,
+        "message": "delivery bundle ready",
+        "case_dir": "D:\\大唐三省六部\\cases\\sampleco\\2026-0001",
+        "case_id": "2026-0001",
+        "client_ref": "sampleco",
+        "product_sku": "CLEAN-BASIC",
+        "eligibility_status": "accepted",
+        "output_guard": {
+          "guard_version": "output-guard-v0.1",
+          "ratio": 0.0696,
+          "input_rows": 115,
+          "output_rows": 8,
+          "threshold": 0.5,
+          "status": "warning",
+          "notes": [
+            "output_rows (8) / input_rows (115) = 0.0696 below MVP threshold 0.5; manual review recommended",
+            "schema probe flagged ambiguous export pattern; see schema_flags"
+          ],
+          "schema_flags": [
+            "multi_row_export",
+            "schema_ambiguous"
+          ]
+        },
+        "artifacts": {
+          "cleaned_csv": [
+            "cleaned/sampleco_milestone_export_cleaned.csv"
+          ],
+          "report_json": "reports/report.json",
+          "report_md": "reports/report.md",
+          "cleaning_stats_json": "reports/cleaning_stats.json",
+          "eligibility_result_json": "reports/eligibility_result.json",
+          "delivery_signoff_md": "delivery_signoff.md"
+        },
+        "warnings": []
+      }
+    },
+    {
+      "step_name": "e2e",
+      "step_status": "completed",
+      "started_at": "2026-07-28T10:07:42+00:00",
+      "ended_at": "2026-07-28T10:07:42+00:00",
+      "artifacts": {
+        "cleaned_csv": [
+          "cleaned/sampleco_milestone_export_cleaned.csv"
+        ],
+        "report_json": "reports/report.json",
+        "report_md": "reports/report.md",
+        "cleaning_stats_json": "reports/cleaning_stats.json",
+        "eligibility_result_json": "reports/eligibility_result.json",
+        "delivery_signoff_md": "delivery_signoff.md"
+      },
+      "error": null,
+      "attempt": 1,
+      "error_if_any": null,
+      "dlq_if_any": null,
+      "retry_count": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "dlq_status": "none",
+      "detail": {
+        "ok": true,
+        "case_dir": "cases\\sampleco\\2026-0001",
+        "eligibility": "accepted",
+        "steps": {
+          "structure": {
+            "ok": true
+          },
+          "gate": {
+            "ok": true,
+            "exit_code": 0,
+            "eligibility": "accepted",
+            "reason_code": null
+          },
+          "cleaning": {
+            "ok": true,
+            "exit_code": 0,
+            "forced": false,
+            "output_path": "cleaned\\sampleco_milestone_export_cleaned.csv",
+            "report_json": "cases\\sampleco\\2026-0001\\reports\\report.json",
+            "cleaning_profile_id": "sampleco_order_profile"
+          },
+          "bundle": {
+            "ok": true,
+            "exit_code": 0,
+            "eligibility_status": "accepted"
+          }
+        },
+        "artifacts": {
+          "cleaned_csv": [
+            "cleaned/sampleco_milestone_export_cleaned.csv"
+          ],
+          "report_json": "reports/report.json",
+          "report_md": "reports/report.md",
+          "cleaning_stats_json": "reports/cleaning_stats.json",
+          "eligibility_result_json": "reports/eligibility_result.json",
+          "delivery_signoff_md": "delivery_signoff.md"
+        },
+        "message": "e2e validation passed",
+        "cleaning_profile_id": "sampleco_order_profile",
+        "output_guard": {
+          "guard_version": "output-guard-v0.1",
+          "ratio": 0.0696,
+          "input_rows": 115,
+          "output_rows": 8,
+          "threshold": 0.5,
+          "status": "warning",
+          "notes": [
+            "output_rows (8) / input_rows (115) = 0.0696 below MVP threshold 0.5; manual review recommended",
+            "schema probe flagged ambiguous export pattern; see schema_flags"
+          ],
+          "schema_flags": [
+            "multi_row_export",
+            "schema_ambiguous"
+          ]
+        }
+      }
+    },
+    {
+      "step_name": "checkpoint_b",
+      "step_status": "completed",
+      "started_at": "2026-07-28T10:07:42+00:00",
+      "ended_at": "2026-07-28T10:07:43+00:00",
+      "artifacts": {
+        "checkpoint_created": true,
+        "skip_reason": null,
+        "output_guard_status": "warning",
+        "warning_guard_profile": "sampleco",
+        "warning_guard_policy": {
+          "delivery_ready_allowed": false,
+          "cp_b_auto_skip_allowed": false,
+          "internal_use_allowed": true,
+          "partial_ready": true,
+          "usage_tier": "internal_only",
+          "profile": "sampleco",
+          "guard_status": "warning"
+        },
+        "checkpoint_b_status": "approved"
+      },
+      "error": "Checkpoint B created; awaiting human decision.",
+      "attempt": 1,
+      "error_if_any": "Checkpoint B created; awaiting human decision.",
+      "dlq_if_any": null,
+      "retry_count": 0,
+      "last_error": "Checkpoint B created; awaiting human decision.",
+      "last_error_at": "2026-07-28T10:07:42+00:00",
+      "dlq_status": "none",
+      "detail": {
+        "ok": true,
+        "checkpoint_created": true,
+        "skipped": false,
+        "skip_reason": null,
+        "checkpoint": {
+          "schema_version": "hitl_checkpoint_v1",
+          "checkpoint_id": "B-delivery-confirmation",
+          "case_ref": "sampleco/2026-0001",
+          "run_id": "2026-07-28T10-07-42Z_delivery_confirm",
+          "status": "awaiting_human",
+          "created_at": "2026-07-28T10:07:42Z",
+          "expires_at": "2026-07-28T10:12:42Z",
+          "task_type": "tabular.cleaning.mvp",
+          "agent_output": {
+            "task_type": "tabular.cleaning.mvp",
+            "execution_summary": {
+              "tools_executed": [
+                "clean.phase_demo",
+                "export.delivery_bundle"
+              ],
+              "outbox_runs": []
+            },
+            "cleaning_results": {
+              "input_rows": 115,
+              "output_rows": 8,
+              "removed_rows": 107,
+              "removal_ratio": null,
+              "qa_status": "pass_with_warnings"
+            },
+            "artifacts": {
+              "cleaned_csv": "cases\\sampleco\\2026-0001\\cleaned\\sampleco_milestone_export_cleaned.csv"
+            },
+            "output_guard": {
+              "guard_version": "output-guard-v0.1",
+              "ratio": 0.0696,
+              "input_rows": 115,
+              "output_rows": 8,
+              "threshold": 0.5,
+              "status": "warning",
+              "notes": [
+                "output_rows (8) / input_rows (115) = 0.0696 below MVP threshold 0.5; manual review recommended",
+                "schema probe flagged ambiguous export pattern; see schema_flags"
+              ],
+              "schema_flags": [
+                "multi_row_export",
+                "schema_ambiguous"
+              ]
+            },
+            "delivery_draft": {
+              "summary_text": "已清洗 115→8 rows；移除 107 行；output_guard.status=warning",
+              "confidence_score": 0.6
+            }
+          },
+          "checkpoint": {
+            "id": "B-delivery-confirmation",
+            "version": "v1",
+            "triggered_at": "2026-07-28T10:07:42Z",
+            "case_ref": "sampleco/2026-0001",
+            "task_type": "tabular.cleaning.mvp"
+          },
+          "human_decision": null,
+          "resume_context": null,
+          "case_dir": "cases/sampleco/2026-0001"
+        },
+        "checkpoint_path": "outbox\\sampleco\\2026-0001\\checkpoint_B-delivery-confirmation_2026-07-28T10-07-42Z.json",
+        "delivery_plan": {
+          "ok": true,
+          "checkpoint_id": "B-delivery-confirmation",
+          "case_ref": "sampleco/2026-0001",
+          "action": "await_human",
+          "resume_from": null,
+          "proceed_to_delivery": false,
+          "update_case_status": null,
+          "notify_client": false,
+          "checkpoint_path": "outbox\\sampleco\\2026-0001\\checkpoint_B-delivery-confirmation_2026-07-28T10-07-42Z.json",
+          "suggested_actions": [
+            "approve_delivery",
+            "hold",
+            "request_changes"
+          ],
+          "delivery_draft": {
+            "summary_text": "已清洗 115→8 rows；移除 107 行；output_guard.status=warning",
+            "confidence_score": 0.6
+          },
+          "output_guard": {
+            "guard_version": "output-guard-v0.1",
+            "ratio": 0.0696,
+            "input_rows": 115,
+            "output_rows": 8,
+            "threshold": 0.5,
+            "status": "warning",
+            "notes": [
+              "output_rows (8) / input_rows (115) = 0.0696 below MVP threshold 0.5; manual review recommended",
+              "schema probe flagged ambiguous export pattern; see schema_flags"
+            ],
+            "schema_flags": [
+              "multi_row_export",
+              "schema_ambiguous"
+            ]
+          },
+          "next_steps": [
+            "human_review",
+            "apply_decision_via_cli_or_experiment"
+          ],
+          "message": "Checkpoint B created; awaiting human decision."
+        },
+        "delivery_readiness": {
+          "ok": true,
+          "message": "delivery readiness evaluated",
+          "delivery_approval_status": "approved",
+          "delivery_ready": false,
+          "readiness_gaps": [
+            "cp_b:outbox.checkpoint_b.awaiting_human",
+            "output_guard:output_guard.warning",
+            "warning_guard:partial_ready_internal_only"
+          ],
+          "auto_updated": true
+        },
+        "checkpoint_b_status": "approved",
+        "synced_by": "regression_smoke"
+      },
+      "retry_attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-07-28T10:07:42+00:00",
+          "ended_at": "2026-07-28T10:07:42+00:00",
+          "error": "Checkpoint B created; awaiting human decision.",
+          "failure_class": "permanent_stop"
+        }
+      ]
+    }
+  ],
+  "automation_status": "paused",
+  "retry_count": 0,
+  "last_error": "Checkpoint B created; awaiting human decision.",
+  "last_error_at": "2026-07-28T10:07:42+00:00",
+  "dlq_status": "none",
+  "ok": false,
+  "message": "Checkpoint B created; awaiting human decision."
+}

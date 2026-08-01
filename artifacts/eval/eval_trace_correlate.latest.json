@@ -1,0 +1,176 @@
+{
+  "ok": true,
+  "message": "correlated 2 eval row(s); trace_found=1",
+  "rows": [
+    {
+      "eval_line_index": 1,
+      "trace_id": "tr-3",
+      "task_id": "t-infra",
+      "session_id": null,
+      "gate_result": "needs_review",
+      "tags": [
+        "infra_risk"
+      ],
+      "reasons": [
+        "error_type=timeout"
+      ],
+      "metrics": {
+        "success": false,
+        "retry_count": 0,
+        "handoff_count": 0,
+        "error_type": "timeout",
+        "context_tokens_total": 500,
+        "trace_completeness_score": 0.95
+      },
+      "kb_index_status": "ready",
+      "join_key": "trace_id",
+      "join_value": "tr-3",
+      "trace_found": true,
+      "message": "matched 2 trace event(s) via trace_id=tr-3",
+      "trace_summary": {
+        "event_count": 2,
+        "event_counts": {
+          "trace_start": 1,
+          "trace_end": 1
+        },
+        "first_event": {
+          "event": "trace_start",
+          "timestamp": "2026-05-23T10:01:30Z",
+          "trace_id": "tr-3",
+          "task_id": "t-infra",
+          "session_id": "sess-infra-001",
+          "status": "running",
+          "error_type": null,
+          "agent_name": "ask_pipeline",
+          "workflow_name": "ask",
+          "tool_name": null
+        },
+        "last_event": {
+          "event": "trace_end",
+          "timestamp": "2026-05-23T10:02:00Z",
+          "trace_id": "tr-3",
+          "task_id": "t-infra",
+          "session_id": "sess-infra-001",
+          "status": "failed",
+          "error_type": "timeout",
+          "agent_name": "ask_pipeline",
+          "workflow_name": "ask",
+          "tool_name": null
+        },
+        "first_timestamp": "2026-05-23T10:01:30Z",
+        "last_timestamp": "2026-05-23T10:02:00Z",
+        "trace_ids": [
+          "tr-3"
+        ],
+        "task_ids": [
+          "t-infra"
+        ],
+        "trace_completeness": {
+          "score": 0.6,
+          "present": [
+            "session_id",
+            "task_id",
+            "trace_id",
+            "agent_name",
+            "workflow_name",
+            "latency_ms",
+            "status",
+            "error_type",
+            "timestamp"
+          ],
+          "missing": [
+            "span_id",
+            "tool_name",
+            "token_input",
+            "token_output",
+            "token_cost",
+            "user_id"
+          ],
+          "required_fields": [
+            "session_id",
+            "task_id",
+            "trace_id",
+            "span_id",
+            "agent_name",
+            "workflow_name",
+            "tool_name",
+            "latency_ms",
+            "status",
+            "error_type",
+            "token_input",
+            "token_output",
+            "token_cost",
+            "user_id",
+            "timestamp"
+          ]
+        }
+      },
+      "triage": {
+        "why_flagged": "error_type=timeout",
+        "primary_tags": [
+          "infra_risk"
+        ],
+        "trace_ref": {
+          "join_key": "trace_id",
+          "join_value": "tr-3",
+          "trace_found": true
+        },
+        "kb_index_status": "ready"
+      }
+    },
+    {
+      "eval_line_index": 2,
+      "trace_id": "tr-2",
+      "task_id": "t-retry",
+      "session_id": null,
+      "gate_result": "needs_review",
+      "tags": [
+        "high_retry"
+      ],
+      "reasons": [
+        "retry_count=2 >= 2"
+      ],
+      "metrics": {
+        "success": true,
+        "retry_count": 2,
+        "handoff_count": 0,
+        "error_type": null,
+        "context_tokens_total": 2000,
+        "trace_completeness_score": 0.9
+      },
+      "kb_index_status": "unknown",
+      "join_key": null,
+      "join_value": null,
+      "trace_found": false,
+      "message": "no trace events for join keys (trace_id=tr-2, task_id=t-retry)",
+      "trace_summary": null,
+      "triage": {
+        "why_flagged": "retry_count=2 >= 2",
+        "primary_tags": [
+          "high_retry"
+        ],
+        "trace_ref": {
+          "join_key": null,
+          "join_value": null,
+          "trace_found": false
+        },
+        "kb_index_status": "unknown"
+      }
+    }
+  ],
+  "row_count": 2,
+  "trace_found_count": 1,
+  "eval_file": "tests/fixtures/eval/eval_export_sample.jsonl",
+  "trace_file": "tests/fixtures/trace/sample_traces.jsonl",
+  "only_flagged": true,
+  "only_needs_review": true,
+  "fail_on_tags": [
+    "infra_risk"
+  ],
+  "join_key_priority": [
+    "trace_id",
+    "task_id",
+    "session_id"
+  ],
+  "warnings": []
+}

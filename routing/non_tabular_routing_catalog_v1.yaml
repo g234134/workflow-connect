@@ -1,0 +1,271 @@
+# Non-Tabular Routing Catalog v1
+# Ticket: W9-T1 · non-tabular-routing-catalog-v1
+# Type: Structure / Skeleton (symbolic tool names only)
+# Date: 2026-06-10
+# Upstream: docs/non-tabular-shadow-flow-blueprint-v1.md (W8-T4)
+
+version: "1.0"
+family: "non-tabular"
+generated_at: "2026-06-10"
+status: "design-draft"
+
+# ============================================================
+# Task Type Entries
+# ============================================================
+
+task_types:
+  # --------------------------------------------------------
+  # NT-A: Document Processing
+  # --------------------------------------------------------
+  - task_type: "non-tabular.document.clean_and_annotate"
+    description: "Mixed-format document folder processing: text extraction, classification, structured summary generation"
+    case_profile: "docu-corp"
+    intake_schema: "schema-free"
+    intake_pattern:
+      client_ref:
+        type: "string"
+        pattern: "^[a-z][a-z0-9_-]+$"
+        example: "docu-corp"
+      case_id:
+        type: "string"
+        pattern: "^docu-[0-9]{4}-[0-9]+$"
+        example: "docu-2026-0001"
+      data_source:
+        type: "string"
+        pattern: "^raw/documents/.*$"
+        example: "raw/documents/"
+      document_count:
+        type: "integer"
+        range: "1-1000"
+        example: 50
+      schema_hint:
+        type: "enum"
+        values: ["schema-free", "semi-structured", "structured"]
+        default: "schema-free"
+      sensitivity:
+        type: "enum"
+        values: ["public", "internal", "confidential"]
+        default: "internal"
+    risk_tier: "medium"
+    default_tools:
+      - "validate.content_accessible"
+      - "extract.text_content"
+      - "extract.metadata"
+      - "bundle.multi_format"
+    content_type: "mixed_documents"
+    domain_hints:
+      document_count_hint: "<100"
+      requires_ocr: true
+      schema_flexibility: "high"
+      supported_formats: ["pdf", "docx", "png", "jpg"]
+    notes: >
+      W8-T4 Case Type A exemplar.
+      Symbolic tool names only - actual implementation in W9-T3/W9-T4.
+      Pre-intake format scan recommended for R-NT1 (content unreadable risk).
+
+  # --------------------------------------------------------
+  # NT-B: Log Analysis
+  # --------------------------------------------------------
+  - task_type: "non-tabular.log.parse_and_summarize"
+    description: "System log processing: parsing, anomaly detection, summary report generation"
+    case_profile: "log-analytics-co"
+    intake_schema: "semi-structured"
+    intake_pattern:
+      client_ref:
+        type: "string"
+        pattern: "^[a-z][a-z0-9_-]+$"
+        example: "log-analytics-co"
+      case_id:
+        type: "string"
+        pattern: "^logs-[0-9]{4}-[0-9]+$"
+        example: "logs-2026-0001"
+      data_source:
+        type: "string"
+        pattern: "^raw/server_logs/.*$"
+        example: "raw/server_logs/*.log"
+      volume_gb:
+        type: "number"
+        range: "0.1-100"
+        example: 2.0
+      time_range:
+        type: "string"
+        pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2} to [0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        example: "2026-05-01 to 2026-05-31"
+      schema_hint:
+        type: "enum"
+        values: ["schema-free", "semi-structured", "structured"]
+        default: "semi-structured"
+    risk_tier: "medium"
+    default_tools:
+      - "validate.content_accessible"
+      - "parse.log_structure"
+      - "analyze.anomaly_patterns"
+      - "bundle.multi_format"
+    content_type: "server_logs"
+    domain_hints:
+      volume_estimate: "1-10GB"
+      time_range_hint: "2026-05-01 to 2026-05-31"
+      log_format: ["text", "json"]
+      timeout_guards: true
+    notes: >
+      W8-T4 Case Type B exemplar.
+      Async queue recommended for R-NT3 (processing time unpredictable).
+      Anomaly ratio threshold TBD in output guard design.
+
+  # --------------------------------------------------------
+  # NT-C: Generic Transform (Reserved for future expansion)
+  # --------------------------------------------------------
+  - task_type: "non-tabular.generic.transform"
+    description: "Generic non-tabular content transformation placeholder for future expansion"
+    case_profile: "generic"
+    intake_schema: "schema-free"
+    intake_pattern:
+      client_ref:
+        type: "string"
+        pattern: "^[a-z][a-z0-9_-]+$"
+      case_id:
+        type: "string"
+      data_source:
+        type: "string"
+    risk_tier: "high"
+    default_tools:
+      - "validate.content_accessible"
+      - "transform.normalize"
+      - "analyze.content_stats"
+    content_type: "unknown"
+    domain_hints: {}
+    notes: >
+      Generic catch-all for non-tabular family.
+      High risk tier due to unknown format characteristics.
+      Requires explicit schema_hint for downstream processing.
+
+# ============================================================
+# Risk Tier Definitions (Reference)
+# ============================================================
+
+risk_tiers:
+  low:
+    description: "Known format, small volume (<100 files or <1GB), internal sensitivity, standard processing pipeline available"
+    decision_bias: "auto_accept_possible"
+    gate_threshold:
+      extraction_coverage: 0.9
+      text_quality_score: 0.7
+  medium:
+    description: "Mixed formats, medium volume (100-1000 files or 1-10GB), may require review, OCR or complex parsing needed"
+    decision_bias: "needs_review"
+    gate_threshold:
+      extraction_coverage: 0.7
+      text_quality_score: 0.5
+  high:
+    description: "Unknown format, large volume (>1000 files or >10GB), confidential sensitivity, or complex multi-step processing"
+    decision_bias: "needs_review_or_reject"
+    gate_threshold:
+      extraction_coverage: 0.5
+      text_quality_score: 0.3
+
+# ============================================================
+# Schema Hint Definitions
+# ============================================================
+
+schema_hints:
+  schema-free:
+    description: "No predefined schema; content structure discovered at processing time"
+    examples: ["mixed documents", "raw text dumps", "unlabeled images"]
+    flexibility: "high"
+  semi-structured:
+    description: "Partial structure known; some fields may vary"
+    examples: ["server logs with varying formats", "JSON with optional fields"]
+    flexibility: "medium"
+  structured:
+    description: "Well-defined schema with required fields"
+    examples: ["labeled datasets", "standardized forms"]
+    flexibility: "low"
+
+# ============================================================
+# Symbolic Tool Registry (Design Phase)
+# ============================================================
+# Note: These are symbolic names only. Actual tool implementations
+# will be defined in W9-T3 (tool catalog) and W9-T4 (glue layer).
+
+symbolic_tools:
+  validate.content_accessible:
+    purpose: "Check if files are readable and accessible"
+    input: "case_dir/raw/*"
+    output: "accessibility report"
+    analogous_tabular_tool: "validate.eligibility"
+
+  extract.text_content:
+    purpose: "Extract text from documents (with OCR for images)"
+    input: "raw/*.{pdf,docx,png}"
+    output: "cleaned/extracted_texts/"
+    analogous_tabular_tool: "clean.phase_demo"
+
+  extract.metadata:
+    purpose: "Extract file metadata (size, format, timestamps)"
+    input: "raw/*"
+    output: "cleaned/metadata.json"
+    analogous_tabular_tool: null
+
+  parse.log_structure:
+    purpose: "Parse log entries into structured format"
+    input: "raw/*.log"
+    output: "cleaned/parsed_logs.jsonl"
+    analogous_tabular_tool: null
+
+  analyze.anomaly_patterns:
+    purpose: "Detect anomalous patterns in logs"
+    input: "cleaned/parsed_logs.jsonl"
+    output: "reports/anomaly_flags.json"
+    analogous_tabular_tool: null
+
+  transform.normalize:
+    purpose: "Normalize encodings and formats"
+    input: "extracted text"
+    output: "cleaned/normalized/"
+    analogous_tabular_tool: null
+
+  analyze.content_stats:
+    purpose: "Generate content quality metrics"
+    input: "cleaned/"
+    output: "reports/content_stats.json"
+    analogous_tabular_tool: "cleaning_stats.json generator"
+
+  bundle.multi_format:
+    purpose: "Package multiple output formats into delivery bundle"
+    input: "cleaned/ + reports/"
+    output: "delivery/bundle.zip + manifest"
+    analogous_tabular_tool: "export.delivery_bundle"
+
+# ============================================================
+# Governance Notes
+# ============================================================
+
+governance:
+  checkpoint_a:
+    applies: true
+    note: "HITL confirmation required for medium/high risk_tier"
+  checkpoint_b:
+    applies: true
+    note: "Delivery gate; human approval required before bundle release"
+  auto_approve:
+    allowed: false
+    note: "Non-tabular family requires explicit human checkpoint (conservative design v1)"
+  experimental:
+    flag: true
+    note: "This catalog is design-phase only; no production behavior attached"
+
+# ============================================================
+# Cross-References
+# ============================================================
+
+cross_references:
+  upstream_blueprint: "docs/non-tabular-shadow-flow-blueprint-v1.md"
+  tabular_catalog: "routing/intake_routing_catalog_v1.yaml"
+  skill_card_nt_a: "docs/skill-cards-v2.md#skill-card-nt-a-document-extraction-pipeline"
+  skill_card_nt_b: "docs/skill-cards-v2.md#skill-card-nt-b-log-analysis-pipeline"
+  wave9_tickets:
+    - "W9-T2: non-tabular-decision-rules-v1"
+    - "W9-T3: non-tabular-tool-catalog-v1"
+    - "W9-T4: non-tabular-glue-layer-v1"
+    - "W9-T5: non-tabular-fixture-docu-corp-v1"
+    - "W9-T6: non-tabular-fixture-logs-co-v1"

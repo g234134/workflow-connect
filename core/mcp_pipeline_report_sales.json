@@ -1,0 +1,368 @@
+{
+  "input": "D:\\大唐三省六部\\06_Exports_Output\\fiverr_product\\cleaned_sales_data.xlsx",
+  "output": "D:\\大唐三省六部\\06_Exports_Output\\fiverr_product\\cleaned_sales_data_clean.xlsx",
+  "start_time": "2026-07-18T17:37:30.582373",
+  "stages": {
+    "0_inspect": {
+      "format": "xlsx",
+      "size_bytes": 94044,
+      "sheets": [
+        {
+          "name": "Sales Data",
+          "rows": 2005,
+          "cols": 8
+        }
+      ],
+      "active_sheet": "Sales Data",
+      "columns": [
+        "deal_id",
+        "sales_rep",
+        "region",
+        "product",
+        "deal_amount",
+        "close_date",
+        "status",
+        "commission_%"
+      ],
+      "column_count": 8
+    },
+    "1_detect": {
+      "nulls": {
+        "deal_id": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "sales_rep": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "region": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "product": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "deal_amount": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "close_date": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "status": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        },
+        "commission_%": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "total_rows": 2004
+        }
+      },
+      "total_nulls": 0,
+      "duplicates": {
+        "duplicate_count": 0,
+        "columns_checked": [
+          "deal_id",
+          "sales_rep",
+          "region",
+          "product",
+          "deal_amount",
+          "close_date",
+          "status",
+          "commission_%"
+        ]
+      },
+      "unique_values": {
+        "deal_id": {
+          "unique_count": 2000,
+          "data_type": "integer",
+          "top_values": [
+            {
+              "value": 10010,
+              "count": 2,
+              "percentage": 0.1
+            },
+            {
+              "value": 10015,
+              "count": 2,
+              "percentage": 0.1
+            },
+            {
+              "value": 10005,
+              "count": 2,
+              "percentage": 0.1
+            },
+            {
+              "value": 10001,
+              "count": 2,
+              "percentage": 0.1
+            },
+            {
+              "value": 10003,
+              "count": 1,
+              "percentage": 0.05
+            }
+          ]
+        },
+        "sales_rep": {
+          "unique_count": 9,
+          "data_type": "string",
+          "top_values": [
+            {
+              "value": "David",
+              "count": 433,
+              "percentage": 21.61
+            },
+            {
+              "value": "BOB",
+              "count": 208,
+              "percentage": 10.38
+            },
+            {
+              "value": "Bob",
+              "count": 206,
+              "percentage": 10.28
+            },
+            {
+              "value": "Grace",
+              "count": 200,
+              "percentage": 9.98
+            },
+            {
+              "value": "Alice",
+              "count": 197,
+              "percentage": 9.83
+            }
+          ]
+        },
+        "region": {
+          "unique_count": 4,
+          "data_type": "string",
+          "top_values": [
+            {
+              "value": "West",
+              "count": 823,
+              "percentage": 41.07
+            },
+            {
+              "value": "North",
+              "count": 412,
+              "percentage": 20.56
+            },
+            {
+              "value": "East",
+              "count": 400,
+              "percentage": 19.96
+            },
+            {
+              "value": "South",
+              "count": 369,
+              "percentage": 18.41
+            }
+          ]
+        },
+        "product": {
+          "unique_count": 5,
+          "data_type": "string",
+          "top_values": [
+            {
+              "value": "Keyboard",
+              "count": 698,
+              "percentage": 34.83
+            },
+            {
+              "value": "Tablet",
+              "count": 343,
+              "percentage": 17.12
+            },
+            {
+              "value": "Monitor",
+              "count": 336,
+              "percentage": 16.77
+            },
+            {
+              "value": "Phone",
+              "count": 320,
+              "percentage": 15.97
+            },
+            {
+              "value": "Laptop",
+              "count": 307,
+              "percentage": 15.32
+            }
+          ]
+        },
+        "deal_amount": {
+          "unique_count": 1839,
+          "data_type": "float",
+          "top_values": [
+            {
+              "value": 25457.62,
+              "count": 166,
+              "percentage": 8.28
+            },
+            {
+              "value": 32140.12,
+              "count": 1,
+              "percentage": 0.05
+            },
+            {
+              "value": 24776.6,
+              "count": 1,
+              "percentage": 0.05
+            },
+            {
+              "value": 29445.87,
+              "count": 1,
+              "percentage": 0.05
+            },
+            {
+              "value": 31385.72,
+              "count": 1,
+              "percentage": 0.05
+            }
+          ]
+        },
+        "close_date": {
+          "unique_count": 339,
+          "data_type": "string",
+          "top_values": [
+            {
+              "value": "2026-05-16",
+              "count": 142,
+              "percentage": 7.09
+            },
+            {
+              "value": "2026-09-15",
+              "count": 12,
+              "percentage": 0.6
+            },
+            {
+              "value": "2026-05-23",
+              "count": 12,
+              "percentage": 0.6
+            },
+            {
+              "value": "2026-09-04",
+              "count": 12,
+              "percentage": 0.6
+            },
+            {
+              "value": "2026-02-16",
+              "count": 12,
+              "percentage": 0.6
+            }
+          ]
+        },
+        "status": {
+          "unique_count": 8,
+          "data_type": "string",
+          "top_values": [
+            {
+              "value": "Won",
+              "count": 470,
+              "percentage": 23.45
+            },
+            {
+              "value": "won",
+              "count": 237,
+              "percentage": 11.83
+            },
+            {
+              "value": "pending",
+              "count": 231,
+              "percentage": 11.53
+            },
+            {
+              "value": "lost",
+              "count": 223,
+              "percentage": 11.13
+            },
+            {
+              "value": "PENDING",
+              "count": 215,
+              "percentage": 10.73
+            }
+          ]
+        },
+        "commission_%": {
+          "unique_count": 979,
+          "data_type": "float",
+          "top_values": [
+            {
+              "value": 0.0848,
+              "count": 190,
+              "percentage": 9.48
+            },
+            {
+              "value": 0.0243,
+              "count": 6,
+              "percentage": 0.3
+            },
+            {
+              "value": 0.1356,
+              "count": 6,
+              "percentage": 0.3
+            },
+            {
+              "value": 0.03,
+              "count": 6,
+              "percentage": 0.3
+            },
+            {
+              "value": 0.0389,
+              "count": 5,
+              "percentage": 0.25
+            }
+          ]
+        }
+      }
+    },
+    "2_clean": {
+      "rows_before": 2004,
+      "rows_after": 2004,
+      "rows_cleaned": 0,
+      "nulls_filled": 0,
+      "duplicates_removed": 0,
+      "columns_standardized": true
+    },
+    "3_validate": {
+      "output_exists": true,
+      "output_rows": 2005,
+      "output_cols": 8,
+      "remaining_nulls": 0,
+      "remaining_dups": 0,
+      "valid": true
+    }
+  },
+  "stats": {
+    "format": "xlsx",
+    "columns": [
+      "deal_id",
+      "sales_rep",
+      "region",
+      "product",
+      "deal_amount",
+      "close_date",
+      "status",
+      "commission_%"
+    ],
+    "active_sheet": "Sales Data",
+    "total_nulls": 0,
+    "duplicate_count": 0,
+    "rows_before": 2004,
+    "rows_after": 2004
+  },
+  "end_time": "2026-07-18T17:37:32.475325"
+}

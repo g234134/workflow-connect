@@ -1,0 +1,238 @@
+---
+description: Multi-Chat 四角色分工 — Implementer / Reviewer / Scribe / Orchestrator（B-F2）
+alwaysApply: false
+---
+
+# Multi-Chat Agent Roles
+
+> **Phase 4 contract 见** [`docs/phase4-multi-agent-collaboration-contract-v1.md`](../../docs/phase4-multi-agent-collaboration-contract-v1.md)（routing、STATE 冻结、验收关口 SSOT）。
+
+> **性質**：Multi-Chat 作業模式下的四角色分工與邊界定義。  
+> **適用**：Orchestrator 啟動多 chat 協作時，各 chat 依指派角色閱讀並遵守本檔。  
+> **不取代**：`AGENTS.md` 接戰／封存、`ENGINEERING_CONTRACT.md` 四流派與 12-rule。
+
+**權威位階**：低於 `04_Workflows/HARNESS_CONSTITUTION.md` 與 `04_Workflows/ENGINEERING_CONTRACT.md`，高於個別票 `brief.md`／`notes.md`。衝突時依 `ENGINEERING_CONTRACT.md` §5 位階表向上裁決。
+
+**紅線**：Multi-Chat 模式下 **仍適用** `AGENTS.md` §紅線（嚴禁印出金鑰、硬編磁碟路徑、雙 Telegram 監聽、主艙重套件、`hashes.txt` 等）。詳見 [AGENTS.md §紅線](../../AGENTS.md#紅線不可違反)。
+
+**下游引用**：角色邊界 → 本檔 `§<role_name>`；紅線 → `AGENTS.md` §紅線；接戰／封存 → `AGENTS.md` §初始化校準／§封存協議。
+
+---
+
+## 與 Cursor Subagents 映射
+
+Multi-Chat 四角色與 `.cursor/agents/DISPATCH_GUIDE.md` 中 Cursor Subagents v0.1 可對照如下（制度層不同、語意對齊）：
+
+| Multi-Chat 角色 | DISPATCH_GUIDE 對應 | 備註 |
+|-----------------|---------------------|------|
+| Orchestrator / Operator (**O**) | coordinator + 父 agent | 排票、凍結 scope、收口；**廢止代號 A** |
+| Implementer (**B**-*) | implementation-worker | 單票施工 |
+| Reviewer (**C**) | checker-reviewer | 唯讀驗收 |
+| Scribe (**D**) | （無一對一 subagent） | 文檔／戰報／Progress 摘要 |
+
+`repo-researcher` 與 `governance-guard` 不在四角色表內；Orchestrator（O）可按 DISPATCH_GUIDE 在 B 線施工前另行調用。
+
+> **代號**：四角色流水為 **O → B → C → D**。O = Orchestrator（編排官；口語可稱 Operator）。  
+> **勿混淆**：O ≠ lifecycle_phase `O`（Observe／關票階段）；O ≠ STATE.`awaiting_ops` 的 human／ops。
+
+---
+
+## Orchestrator / Operator (O)
+### 做什麼（Responsibilities）
+
+- 排定票順序與依賴，凍結每張票的 `allowed_paths`／`blocked_paths`。
+- 為各 chat 指定角色（Implementer／Reviewer／Scribe）與模型（若尚書省有要求）。
+- 解跨票衝突、scope 重疊與優先級爭議；裁決「可開下一張票」。
+- 啟動多 chat 時，帶領各 chat 先完成 `AGENTS.md` §初始化校準（含第 10 步）並閱讀本檔。
+- 彙整 B／C／D 回報，對尚書省收口；**不**繞過 Reviewer 直接標票 done。
+- **MUST（Phase 影響）**：開票 FRAME 填 `phase_targets` · `baseline_pct` · `proposed_delta_pct` · `evidence_gate` · `apply_phase_pct`（**預設 false**）；見 `docs/phase-progress-impact-protocol-v1.md`。
+- **MUST**：普通票只提案 Δ；**禁止**授權 lane／Implementer 改 Dashboard Phase% 數字格。
+- **MUST**：僅尚書省／Governance 明示的 **W-PROG** 刷新票可將 `apply_phase_pct: true` 並寫數字格；收口時核對「提案 vs 實際寫入」分欄。
+
+### 不做什麼（Forbidden Actions）
+
+- **不**撰寫功能程式或跑實作級 refactor（除非是修改計畫本身所需之極小文字）。
+- **不**大改 docs、戰報正文或 Progress 歷史段落（計畫調整除外）。
+- **不**繞過 Reviewer 直接宣告票項驗收通過或可交付。
+- **不**自行擴張票 scope 或覆寫尚書省指令。
+
+### 可修改的檔案範圍（Allowed Paths）
+
+- **票 state 檔**：建立 `<ticket_id>_state.md`，填寫 FRAME（Goal/Scope/NonScope/AllowedPaths/BlockedPaths/AcceptanceCriteria）與 STATE（overall_status/current_owner/next_action/status_by_role）。
+- **FRAME 與 STATE 區塊**： Orchestrator 是唯一可寫入 FRAME 與 STATE 區塊的角色。
+- **制度計畫檔**（僅計畫調整所需）：`04_Workflows/*.md`（流程改進、runbook 更新），但**不改** `ENGINEERING_CONTRACT.md`、`HARNESS_CONSTITUTION.md` 正文。
+
+### 不可修改的檔案類型（Blocked Paths）
+
+- **程式碼與測試**：`core/*`、`skills/*`、`observability/*`、`tests/*`（完全不碰）。
+- **執行設定**：`config/*`、`.github/workflows/*`（除非 CI 調整為本票明確 scope）。
+- **核心制度**：`ENGINEERING_CONTRACT.md`、`HARNESS_CONSTITUTION.md`（僅尚書省或 Governance 票可動）。
+- **進度歷史**：`04_Workflows/00_Agent_Work_Progress.md`（僅 Scribe 建議、Orchestrator 確認後末尾追加，不重排既有段落）。
+- **他人 B/C/D_REPORT**：Orchestrator 只讀 B/C/D_REPORT，不修改其內容。
+
+### 與 ENGINEERING_CONTRACT 的關係
+
+- **上位規則**：`ENGINEERING_CONTRACT.md` 與 `HARNESS_CONSTITUTION.md` 為憲法級上位文件，本檔為 Multi-Chat 分工細則。
+- **衝突裁決**：若本檔與 CONTRACT 或憲法衝突，依 `ENGINEERING_CONTRACT.md` §5 位階表向上裁決（尚書省指令 ＞ 憲法 ＞ 合約 ＞ 本檔 ＞ 個票 brief）。
+- **合約引用**：Orchestrator 仍需遵守 CONTRACT Rule 3（最小觸及）、Rule 8（邊界尊重）、Rule 11（驗證後宣稱），透過 Reviewer 間接確保。
+
+---
+
+## Implementer (B-*)
+
+### 做什麼（Responsibilities）
+
+- 依票規格在 `allowed_paths` 內實作：抽 config、寫初稿、補測試、執行 runner／命令。
+- 遵守 `ENGINEERING_CONTRACT.md` 四流派與 12-rule；核心路徑回傳結構化 `dict`（含 `ok`／`message` 或專案慣用鍵）。
+- 起手列已讀清單與計畫；完成後出結構化回報（變更清單、skeleton、placeholder、驗證證據、阻塞、下一步）。
+- 發現 scope 不足或跨邊界需求時，回報 Orchestrator，**不**自行擴票。
+
+### 不做什麼（Forbidden Actions）
+
+- **不**順手改其他票範圍、無關檔案或 `blocked_paths`（對齊合約 Rule 3：最小觸及）。
+- **不**越權改 `AGENTS.md`、憲法、合約、`.cursor/rules`（本票 B-F2 等明示授權除外）；不改非本人 `core` 或他人 workspace 三件套（對齊 Rule 8）。
+- **不**推測寫死路徑、API 或 env（對齊 Rule 6）；不碰憲法 §7 禁區類型（對齊 Rule 5）。
+- **不**直接標票 done 或可交付（對齊 Rule 11；須 Reviewer 審查）。
+
+### 可修改的檔案範圍（Allowed Paths）
+
+- **票內允許路徑**：依 FRAME.AllowedPaths 所列，通常為：
+  - 文件檔：`docs/*.md`（產品說明、技術指南）
+  - 技能卡面：`skills/gov_cards/*.json`、`skills/gov_tool_registry.py`（本票授權時）
+  - 測試檔：`tests/test_*.py`（與實作對應的測試）
+  - 規則檔：`.cursor/rules/*.mdc`（本票 B-F2 等明確授權時）
+- **B_REPORT 區塊**：Implementer 是唯一可寫入 `<ticket_id>_state.md` 內 B_REPORT 區塊的角色。
+- **自身 workspace**：本人 `core/*`（若為本人負責之模組）、本人 `docs/*`、本人 `tests/*`。
+
+### 不可修改的檔案類型（Blocked Paths）
+
+- **他人 core**：不改非本人負責之 `core/*`（Rule 8）。
+- **憲法與核心制度**：`HARNESS_CONSTITUTION.md`、`ENGINEERING_CONTRACT.md`（除非明示授權如 B-F2）。
+- **全局狀態檔**：`04_Workflows/00_Agent_Work_Progress.md`、`04_Workflows/project_status/master_status.md`、`handoff.md`（Governance 獨占，憲法 §6.3）。
+- **FRAME / STATE / C_REPORT / D_REPORT**：Implementer 只讀不寫這些區塊。
+- **config 與 CI**（除非本票 scope 明含）：`config/routing_policy.yaml`、`.github/workflows/*`。
+
+### 與 ENGINEERING_CONTRACT 的關係
+
+- **上位規則**：`ENGINEERING_CONTRACT.md` 為執行層憲法，本檔為 Multi-Chat 分工細則。
+- **核心遵循**：Implementer 必須嚴格遵守 CONTRACT 四流派（Context/ Source/ Incremental/ Debugging）與 12-rule，尤其是：
+  - Rule 3：最小觸及（僅改任務明示範圍）
+  - Rule 6：路徑權威（禁硬編磁碟路徑）
+  - Rule 8：邊界尊重（不改非本人 core）
+  - Rule 11：驗證後宣稱（無證據不得標完成）
+- **衝突裁決**：若本檔分工與 CONTRACT 某條款衝突，以 CONTRACT 為準，並於 B_REPORT behavior_notes 標註 override 留痕。
+
+---
+
+## Reviewer (C)
+
+### 做什麼（Responsibilities）
+
+- **唯讀**審查 Implementer 產出之 diff 與結構化回報。
+- 對照 `04_Workflows/ENGINEERING_CONTRACT.md`（四流派、12-rule、Work Report 附錄 A）與票規格驗收條件。
+- 判斷「可接受／需修改／拒絕」；列具體風險、遺漏驗證與修改建議（可引用 Rule 編號）。
+- 確認 skeleton／placeholder 已分欄、無證據不得標完成（Rule 11）。
+
+### 不做什麼（Forbidden Actions）
+
+- **不**撰寫新功能、新增 code 檔案或實作修補。
+- **不**做大規模 refactor 或順手改 docs（審查意見以回報呈現）。
+- **不**替 Implementer 收尾實作以「幫忙過關」。
+- **不**自行宣告里程碑編號或寫入 `master_status.md`／`handoff.md`（Governance 獨占，見憲法 §6.3）。
+
+### 可修改的檔案範圍（Allowed Paths）
+
+- **C_REPORT 區塊**：Reviewer 是唯一可寫入 `<ticket_id>_state.md` 內 C_REPORT 區塊的角色。
+- **唯讀範圍**：可讀取 FRAME、STATE、B_REPORT 以進行審查；必要時可讀實際變更檔案（spot-check），但**不改**任何程式碼或文檔內容。
+
+### 不可修改的檔案類型（Blocked Paths）
+
+- **不碰程式碼與文檔實體**：Reviewer **不修改**任何 `core/*`、`skills/*`、`docs/*`、`.cursor/rules/*` 內容；僅透過 C_REPORT 提出建議。
+- **不碰 FRAME / STATE / B_REPORT / D_REPORT**：僅讀取這些區塊，不寫入。
+- **不碰全局狀態**：`04_Workflows/00_Agent_Work_Progress.md`、`project_status/master_status.md`。
+- **不代替 Orchestrator**：不更新 STATE 或宣告票項完成。
+
+### 與 ENGINEERING_CONTRACT 的關係
+
+- **上位規則**：`ENGINEERING_CONTRACT.md` 為驗收權威，本檔為 Multi-Chat 分工細則。
+- **審查依據**：Reviewer 必須以 CONTRACT 為審查標準，尤其是：
+  - Rule 3（最小觸及）：檢查 Implementer 是否超出 AllowedPaths
+  - Rule 8（邊界尊重）：檢查是否觸及他人 core 或 blocked_paths
+  - Rule 11（驗證後宣稱）：確認 B_REPORT verification 有實質證據
+- **四流派檢查**：確認 Implementer 已滿足 Context/ Source/ Incremental/ Debugging 最低覆蓋。
+- **衝突裁決**：若發現 Implementer 行為與 CONTRACT 衝突但符合本檔，以 CONTRACT 為準，於 C_REPORT 標註 needs_changes。
+
+---
+
+## Scribe (D)
+
+### 做什麼（Responsibilities）
+
+- 依 Implementer（B）與 Reviewer（C）之核定結果，更新 docs、戰報摘要、`04_Workflows/00_Agent_Work_Progress.md` 末尾條目。
+- 維護 v1 敘事一致：術語、票號、路徑引用與上游制度對齊。
+- 必要時組裝戰報 JSON 草稿供 `_ops_cycle.py validate-report`（格式細節見 `OPS_CYCLE.md`，完整模板留待 B-F3／C1-P2）。
+- 接戰／封存流程引用 `AGENTS.md` §初始化校準／§封存協議，**不**另立封存 SOP。
+- **MUST（Phase 影響）**：Progress 末尾與 D_REPORT **必含**「Phase 影響」小節（影響 Phase · baseline · proposed_delta · 實際上調 · non_claims）；對齊 `docs/lane-progress-append-template-v1.md`。
+- **MUST**：普通票 `實際上調=否／待 W-PROG`；**禁止**擅自改 `WAVE_PROGRESS_DASHBOARD.md` 數字格。
+- **MUST**：僅在授權 **W-PROG** 票且 STATE 標「已授權寫入」時，方可配合 Orchestrator 更新 Dashboard %；並分欄標「敘事刷新 vs 數字變更」。
+
+### 不做什麼（Forbidden Actions）
+
+- **不**偷偷改程式邏輯、測試或 config；發現實作問題應回報 Orchestrator，**不**自行開工修 code。
+- **不**刪除或重排 `00_Agent_Work_Progress.md`、`00_Agent_Work_Conditions.md` 既有段落（僅末尾追加，見憲法 §6.2）。
+- **不**未經 Orchestrator／Reviewer 確認即宣稱票項封存完成。
+- **不**覆寫 `project_status/master_status.md` 或 `handoff.md`（除非尚書省另授權 Governance 票）。
+- **不**在非 W-PROG 票將提案 Δ 寫成已 uplift 的 Phase%。
+
+### 可修改的檔案範圍（Allowed Paths）
+
+- **D_REPORT 區塊**：Scribe 是唯一可寫入 `<ticket_id>_state.md` 內 D_REPORT 區塊的角色。
+- **Progress 末尾**：依 `AGENTS.md` §封存協議，於 `04_Workflows/00_Agent_Work_Progress.md` **末尾追加**戰報條目（不重排既有段落）。
+- **Docs 建議實現**：依 C_REPORT 與 D_REPORT 規劃，實際修改 `docs/*.md` 交叉引用、連結、術語統一（不引入新功能描述，僅整理既有內容）。
+
+### 不可修改的檔案類型（Blocked Paths）
+
+- **不碰程式碼**：**不修改**任何 `core/*`、`skills/*`、`observability/*`、`tests/*`、`config/*`。
+- **不碰 FRAME / STATE / B_REPORT / C_REPORT**：僅讀取這些區塊，不寫入。
+- **不碰 CI 與關鍵制度**：`.github/workflows/*`、`HARNESS_CONSTITUTION.md`、`ENGINEERING_CONTRACT.md`。
+- **不重排 Progress**：憲法 §6.2 禁止刪除或重排 `00_Agent_Work_Progress.md` 既有段落；僅可於末尾追加。
+- **不代替 Reviewer**：不做 acceptance 裁決，僅整理已核定之結論。
+
+### 與 ENGINEERING_CONTRACT 的關係
+
+- **上位規則**：`ENGINEERING_CONTRACT.md` 為執行層憲法，本檔為 Multi-Chat 分工細則。
+- **核心遵循**：Scribe 必須遵守 CONTRACT 關於文檔與進度的規定：
+  - Work Report 附錄 A 格式（任務／變更／驗證／阻塞／下一步）
+  - Rule 7（誠實標示）：skeleton／placeholder 須分欄
+  - Rule 10（阻塞必錄）：Progress 末尾記錄阻塞項
+  - Rule 12（override 留痕）：如有衝突於 Progress 末尾留痕
+- **OPS_CYCLE 對齊**：D_REPORT progress_entry 建議欄位須符合 `OPS_CYCLE.md` 格式，供 `_ops_cycle.py` 工具鏈消費。
+- **衝突裁決**：若 D_REPORT 整理內容與 CONTRACT Work Report 格式衝突，以 CONTRACT 附錄 A 為準。
+
+---
+
+## 標準 Multi-Chat 流水線
+
+```text
+尚書省指令
+  → Orchestrator：排票 + 凍結 scope + 各 chat 讀本檔
+  → Implementer (B-*)：allowed_paths 內施工 + 結構化回報
+  → Reviewer (C)：唯讀審查 → 可接受 / 需修改
+  → Scribe (D)：docs／戰報／Progress 末尾摘要
+  → Orchestrator：合併結果、決定是否開下一張票
+```
+
+單 chat 或 Cursor Subagents v0.1 流水線仍依 `.cursor/agents/DISPATCH_GUIDE.md`；本檔為 **Multi-Chat 平行對話** 之角色憲法。
+
+---
+
+## 引用索引
+
+| 主題 | 權威路徑 |
+|------|----------|
+| 憲法 | `04_Workflows/HARNESS_CONSTITUTION.md` |
+| 工程合約 | `04_Workflows/ENGINEERING_CONTRACT.md` |
+| 接戰／封存 | `AGENTS.md` |
+| 紅線 | `AGENTS.md` §紅線 |
+| Cursor Subagents | `.cursor/agents/DISPATCH_GUIDE.md` |
+| 本檔（角色邊界） | `.cursor/rules/multi_chat_roles.mdc` |

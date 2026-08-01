@@ -2,7 +2,7 @@ schema_version: notification_handlers_v1
 description: >
   Local downstream handler registry for W6-T10 workflow notification events (P8.9-T3).
   Handlers are Python callables invoked post-emit by notification_gateway_v1 (fail-open).
-  HTTP webhook sinks belong to P8.9-T4 — not registered here.
+  HTTP webhook sandbox = P8.9-T4 ≡ WD-P7-T2 (webhook_dispatch_v1 registered below; do not rebuild).
 
 handlers:
   - handler_id: bundle_ready_log_v1

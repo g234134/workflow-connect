@@ -1,0 +1,75 @@
+# web_pipeline_config.yaml — 網路數據清洗工作流配置
+---
+schema_version: "1.0"
+description: "全自動網路進料→清洗→評估工作流"
+
+# ── Stage 1: 目標 ──────────────────────────────
+targets:
+  # GitHub API — 直接抓 repo 裡的 Python 檔案
+  - id: github_click
+    name: "Pallets Click (Python CLI framework)"
+    type: github_api
+    repo: "pallets/click"
+    path: "src/click"
+    file_types: [".py"]
+    max_files: 20
+    tags: ["code", "python", "cli"]
+
+  - id: github_fastapi
+    name: "FastAPI"
+    type: github_api
+    repo: "fastapi/fastapi"
+    path: "fastapi"
+    file_types: [".py"]
+    max_files: 20
+    tags: ["code", "python", "web"]
+
+  - id: github_requests
+    name: "Requests"
+    type: github_api
+    repo: "psf/requests"
+    path: "src/requests"
+    file_types: [".py"]
+    max_files: 15
+    tags: ["code", "python", "http"]
+
+  # HTML 頁面 — 抓頁面上的檔案連結
+  - id: github_trending_python
+    name: "GitHub Trending Python (repos)"
+    type: html_page
+    base_url: "https://github.com/trending/python"
+    link_filter: "^/[\\w.-]+/[\\w.-]+$"
+    max_links: 10
+    depth: 1
+    file_types: []
+    tags: ["trending", "python"]
+
+  # 開放資料
+  - id: worldbank_data
+    name: "World Bank Open Data (CSV)"
+    type: github_api
+    repo: "WorldBankOpenData"
+    path: ""
+    file_types: [".csv", ".json"]
+    max_files: 10
+    tags: ["dataset", "csv", "economics"]
+
+# ── Stage 2: 清洗規則 ──────────────────────────
+cleaning:
+  dedup: true
+  max_file_size: 10485760    # 10MB
+  min_file_size: 10
+  fallback_encoding: "utf-8"
+  staging_dir: "05_Temp_Cache/web_staging"
+  download_log: "05_Temp_Cache/web_download_log.json"
+
+# ── Stage 3: 評估 ──────────────────────────────
+evaluation:
+  evaluator: "02_Agents_Core/Asset_Value_Evaluator_Agent.py"
+  sample_size: 50
+  progress_every: 10
+
+# ── Stage 4: 匯出 ──────────────────────────────
+reporting:
+  report_dir: "06_Exports_Output/reports"
+  telegram_alert: true

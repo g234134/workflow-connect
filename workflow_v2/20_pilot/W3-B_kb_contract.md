@@ -193,9 +193,63 @@ G7-2 要求 **ART-ENG-CTX** 等；**不**在 G7 正文新增「index」字句。
 |----|------|
 | **目标** | 工具选择层 **规则 only**：当 `runtime_context.kb_index_status`（或 ENG-CTX 镜像）为 `missing` 时 **block** `repo_*` retrieve／graph 类工具；`stale` 时 **degrade**（降优先级或强制 `cost_class=high` 审计） |
 | **依赖** | W3-B-INDEX-PIPELINE |
-| **产出** | `20_pilot/W3-B/selector_hook_spec.md`；映射 `repo_tool_preconditions` 的 `job_status` bucket 建议键 |
-| **禁区** | **不改** production `repo_tool_selector`／ask selector；不接 ask pipeline 默认路径 |
-| **DoD** | 规格含决策表 + 结构化 `decision_log` 示例行；与 `SPEC_tool_layer_vnext_draft.md` §2.1.2 对齐声明 |
+| **产出** | `core/kb_index_selector_hook.py`（Wave B 最小实现）；`tests/test_kb_index_selector_hook.py`；映射 `repo_tool_preconditions` 的 `job_status` bucket 建议键 |
+| **禁区** | **不改** production ask 主路径默认行为（feature flag 默认 OFF）；Wave C 再接 runtime 案卷读取 |
+| **DoD** | 决策表 + 结构化 `decide_kb_index_tool_gate` 回传；与 `SPEC_tool_layer_vnext_draft.md` §2.1.2 对齐声明 |
+
+#### 5.4.1 实现路径（Wave B · `WAVE-B-P2-KB-SELECTOR-HOOK-MIN`）
+
+| 项 | 值 |
+|----|-----|
+| **模块** | `core/kb_index_selector_hook.py` → `decide_kb_index_tool_gate(kb_index_status, tool_name)` |
+| **测试** | `tests/test_kb_index_selector_hook.py` |
+| **test harness** | `core/ask_rag_selector.py` → `apply_kb_index_tool_gate_from_hints(tool_name, selector_hints=...)`（注入 `kb_index_status`；无注入则 skip） |
+| **prod 开关** | 环境变量 `GOV_KB_INDEX_SELECTOR_HOOK_ENABLED`（默认 **0** / OFF）；Wave C 决定是否默认启用并接案卷／ENG-CTX |
+
+**repo retrieve/graph 工具判定**：`tool_name` 匹配 `^repo_.*(retrieve|graph|rag_query)`（如 `repo_code_retrieve_smoke`、`repo_graph_manifest_read`）；`repo_index_v1_job` 等 index/embed 类 **不** 受此 gate。
+
+#### 5.4.2 决策 truth table
+
+| `kb_index_status` | repo retrieve/graph 工具 | 非 repo 工具 | `ok` | `decision` |
+|-------------------|--------------------------|--------------|------|------------|
+| `missing` | block | allow | true | block / allow |
+| `stale` | degrade（`cost_class:high` 审计标签） | allow | true | degrade / allow |
+| `ready` | allow | allow | true | allow |
+| 未知／空 | block（安全默认） | allow | false（repo）/ true（非 repo） | block / allow |
+
+**回传字段**（冻结）：`ok`、`decision`（`allow` \| `degrade` \| `block`）、`message`、`audit_tags`（建议含 `kb_index:*`、`decision:*`、`hook:W3-B-SELECTOR-HOOK`）。
+
+**decision_log 示例行**（结构化侧车，Wave C 可写入 trace）：
+
+```json
+{
+  "hook": "W3-B-SELECTOR-HOOK",
+  "kb_index_status": "missing",
+  "tool_name": "repo_code_retrieve_smoke",
+  "decision": "block",
+  "audit_tags": ["hook:W3-B-SELECTOR-HOOK", "tool:repo_code_retrieve_smoke", "gate:repo_retrieve_graph", "kb_index:missing", "decision:block"]
+}
+```
+
+#### 5.4.3 Wave B P3 eval 侧车（`WAVE-B-P3-KB-INDEX-EVAL-OBSERVABILITY`）
+
+| 项 | 内容 |
+|----|------|
+| **定位** | **观测 only** — `eval_export` / `eval_report` 可选携带 `kb_index_status`；**不**改 selector prod 默认、**不**新增 CI fail 规则 |
+| **开关** | `GOV_EVAL_EXPORT_KB_INDEX_STATUS`（默认 **0**）；CLI `--case-index-map` 可选 |
+| **解析优先序** | `metadata.kb_index_status` → `selector_hints.kb_index_status` → `case_index_map[case_id]` |
+| **报表** | `eval_report` → `index_context_breakdown`（按 status 分桶 sample 数 + needs_review 比例） |
+| **对齐** | `index_status_W2-1.json` 的 `job_id` 可作 `kb_index_job_id` 侧车；案卷 `kb_index_status=ready` 语义不变 |
+| **禁区** | 禁止将本侧车当作 gate 规则或默认启用 `GOV_KB_INDEX_SELECTOR_HOOK_ENABLED` |
+
+#### 5.4.4 Wave B P3 triage enrich（`WAVE-B-P3-FLAGGED-TRIAGE-ENRICH`）
+
+| 项 | 内容 |
+|----|------|
+| **定位** | **观测 only** — correlate `triage-md` / `trace_query --format triage` 显示 gate 原因 + trace 摘要 + eval 列 `kb_index_status` |
+| **侧车** | `GOV_EVAL_EXPORT_KB_INDEX_STATUS=1` 时 export 行镜像 `source_ref.kb_index_status` / `trace_metadata_sidecar`（不改 trace middleware 默认写档） |
+| **correlate** | `--only-needs-review`（默认 true）；JSON 列 `triage.{why_flagged, primary_tags, trace_ref, kb_index_status}` |
+| **trace_query** | `summary.kb_index_status` 自 event metadata/selector_hints；无则省略键 |
 
 ---
 

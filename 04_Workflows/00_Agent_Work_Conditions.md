@@ -322,3 +322,17 @@
   - `hits[0].payload` 或 `documents_lookup` 能清楚看出來自 AGENTS.md
 - 詳細一次成功案例：見 `00_Agent_Work_Progress.md` 中 2026-05-17 RAG_Smoke_Test 條目。
 
+---
+
+### Phase 2 — KB Index Smoke Test（Wave B · v0.1）
+
+- 入口：`workflow_v2/kb/repo_index_bootstrap.py`；manifest RAG smoke：`workflow_v2/kb/rag_index_smoke.py`
+- scope 權威：`workflow_v2/kb/wave_b_gov_scope.json`；runbook 見 `workflow_v2/20_pilot/W3-B/W3-B_index_pipeline_runbook.md` 附錄 A
+- 單測：`python -m unittest tests.test_kb_index_bootstrap -v`
+- 判定條件（節錄）：
+  - `index_status_*`：`status=succeeded`；`file_count>0`；`chunk_count>0`；`manifest_ref` 非 `.sample.`
+  - `wf_kb_index_sync.ps1` 回填後案卷 `kb_index_status=ready`
+  - `wf_kb_index_gate.ps1 -TargetImpState IMP-AI-READY` → `verdict=allow`
+  - manifest RAG smoke：`ok=true` 且 `hit_count>=1`
+- 詳細成功案例：見 `00_Agent_Work_Progress.md` 中 `WAVE-B-P1-REPO-INDEX-GOV-SCOPE-LIVE` 條目。
+

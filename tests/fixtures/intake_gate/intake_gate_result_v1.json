@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "intake_gate_result_v1",
+  "title": "Intake Gate Result v1",
+  "type": "object",
+  "required": [
+    "ok",
+    "schema_version",
+    "decision",
+    "decision_normalized",
+    "task_type",
+    "case_ref",
+    "case_dir",
+    "risk_level",
+    "reason_codes",
+    "gate_checks",
+    "message",
+    "rules_engine",
+    "rules_engine_version",
+    "decider",
+    "mode",
+    "created_at"
+  ],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "schema_version": { "const": "intake_gate_result_v1" },
+    "intake_decision_id": { "type": "string" },
+    "decision": {
+      "type": "string",
+      "enum": ["accept", "review_needed", "reject"]
+    },
+    "decision_normalized": {
+      "type": "string",
+      "enum": ["accept", "review_needed", "reject"]
+    },
+    "decision_internal": { "type": "string" },
+    "task_type": { "type": "string" },
+    "case_ref": { "type": "string" },
+    "case_dir": { "type": "string" },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "gate_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "passed", "detail"],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "detail": { "type": "string" }
+        }
+      }
+    },
+    "message": { "type": "string" },
+    "suggested_route": {
+      "oneOf": [{ "type": "object" }, { "type": "null" }]
+    },
+    "policy_version": { "type": "string" },
+    "rules_engine": { "type": "string" },
+    "rules_engine_version": { "type": "string" },
+    "decider": { "const": "intake_gate_layer_v1" },
+    "mode": {
+      "type": "string",
+      "enum": ["preview", "run"]
+    },
+    "created_at": { "type": "string" },
+    "pm_decisions_applied": { "type": "object" },
+    "outbox_record_path": {
+      "oneOf": [{ "type": "string" }, { "type": "null" }]
+    },
+    "checkpoint_a": {
+      "type": "object",
+      "properties": {
+        "would_trigger": { "type": "boolean" },
+        "trigger_reason": { "type": "string" }
+      }
+    },
+    "glue_plan": { "type": "object" },
+    "record_type": { "type": "string" }
+  },
+  "if": { "properties": { "ok": { "const": true } } },
+  "then": {
+    "required": ["intake_decision_id"]
+  }
+}

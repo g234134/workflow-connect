@@ -36,7 +36,7 @@
 |-------|-------|
 | **`kb_index_status`** | `ready` |
 | **`kb_index_source`** | `repo_index_v1` |
-| **`kb_index_last_updated`** | `2026-06-05T08:38:25Z` |
+| **`kb_index_last_updated`** | `2026-06-05T08:47:16Z` |
 | **`kb_index_job_id`** | `repo_index_v1_job__W2-1__wave_b_gov_scope` |
 | **`kb_index_scope_kind`** | `repo_subtree_list` |
 | **`kb_index_subtree`** | `gov_wave_b_bootstrap` |
@@ -156,6 +156,7 @@
 | 2026-05-27 | W2-1-ENG：G7/G8 实质 diff + Eng artifact；IMP → **IMP-QA-READY** |
 | 2026-05-27 | W2-1-QA-REL：QA 独立复验 + internal doc-authority release；IMP → **IMP-OBSERVING** |
 | 2026-05-27 | W2-2-IMP-FIELD：§2／§3 对齐 `_TEMPLATE_case`；queue 行移入 §2 子节；章节 4–7 顺延 |
+
 
 
 

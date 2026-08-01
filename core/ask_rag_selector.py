@@ -11,6 +11,8 @@ from __future__ import annotations
 import re
 from typing import Any, Mapping
 
+from core.kb_index_selector_hook import decide_kb_index_tool_gate
+
 _GREETING_PATTERNS = (
     r"^你好[！!。.?？\s]*$",
     r"^您好[！!。.?？\s]*$",
@@ -191,3 +193,35 @@ def decide_use_rag(
         "selector_rule_id": "ASK-R6",
         "answer_mode": "rag",
     }
+
+
+def apply_kb_index_tool_gate_from_hints(
+    tool_name: str,
+    *,
+    selector_hints: Mapping[str, Any] | None = None,
+    task_input: Mapping[str, Any] | None = None,
+) -> dict[str, Any]:
+    """
+    Test harness entry for W3-B kb_index tool gate.
+
+    Reads ``kb_index_status`` from ``selector_hints`` or ``task_input.selector_hints``.
+    When absent, returns allow with ``gate:skipped_no_kb_index_status`` (no prod effect).
+    """
+    hints: dict[str, Any] = {}
+    if isinstance(task_input, Mapping):
+        raw = task_input.get("selector_hints")
+        if isinstance(raw, Mapping):
+            hints.update(raw)
+    if isinstance(selector_hints, Mapping):
+        hints.update(selector_hints)
+
+    status = hints.get("kb_index_status")
+    if status is None or str(status).strip() == "":
+        return {
+            "ok": True,
+            "decision": "allow",
+            "message": "kb_index_status not injected; gate skipped (test harness only)",
+            "audit_tags": ["gate:skipped_no_kb_index_status"],
+        }
+
+    return decide_kb_index_tool_gate(str(status), tool_name)

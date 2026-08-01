@@ -51,6 +51,18 @@ class TestContextSubagentRouting(unittest.TestCase):
             DEFAULT_AGENT_ID,
         )
 
+    def test_kpi_only_keyword_routes_to_monitoring_subagent(self) -> None:
+        """TEST-SUB-001 follow-up: bare KPI keyword (no /monitoring/ path) → ROUTE-MON-1."""
+        working = {
+            "task_input": {
+                "goal": "Review quarterly KPI trends for ops board",
+            }
+        }
+        decision = build_route_decision({}, working, {})
+        self.assertEqual(decision["target_agent_id"], MONITORING_AGENT_ID)
+        self.assertEqual(decision["rule_id"], "ROUTE-MON-1")
+        self.assertTrue(decision.get("signal_only"))
+
     def test_attach_writes_metadata_on_context_entry_output(self) -> None:
         built = build_rooted_context(
             {

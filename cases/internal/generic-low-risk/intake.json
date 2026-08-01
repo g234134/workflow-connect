@@ -1,0 +1,39 @@
+{
+  "case_id": "generic-low-risk",
+  "client_ref": "internal",
+  "product_sku": "CLEAN-BASIC",
+  "data_file": "raw/simple_orders.csv",
+  "file_format": "csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "scale": {
+    "row_count": 7,
+    "file_size_bytes": 280
+  },
+  "schema": {
+    "field_count": 4,
+    "primary_key": "order_id",
+    "column_roles": {
+      "order_id": "primary_key",
+      "product": "category",
+      "amount": "numeric",
+      "notes": "text"
+    },
+    "numeric_range": {
+      "amount": { "min": 0, "max": 10000 }
+    },
+    "pii_fields": []
+  },
+  "provenance": {
+    "source_type": "owned",
+    "data_owner": "internal"
+  },
+  "sensitivity": "internal",
+  "structure": "text_only",
+  "security_compliance": {
+    "contains_pii": false,
+    "user_acknowledged_limitations": true
+  },
+  "cleaning_goals": "Generic low-risk profile demo: primary key dedup + numeric parse",
+  "cleaning_profile": "generic_low_risk_profile"
+}

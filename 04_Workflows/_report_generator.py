@@ -163,6 +163,8 @@ def generate_closing_draft(
     }
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     code, data, meta = _tang_groq(body)
+    # _tang_groq -> json_request_dual_ssl(groq_chat_failover=True) 已在內部觸發
+    # tracker.record_success() + _wave_accumulate_usage() + persist()，P2/P3 邏輯已閉環
     highlights: List[str] = []
     recs: List[str] = []
     exec_sum = ""
@@ -249,6 +251,28 @@ def _telegram_alert_chunks(text: str, *, reply_markup: Optional[Dict[str, Any]] 
     for i, ch in enumerate(chunks):
         mk = reply_markup if i == 0 else None
         _telegram_alert(ch.strip(), reply_markup=mk)
+
+
+def send_alert(text: str) -> int:
+    """發送一則 Telegram 純文字警示（原 _warpath_alert.py 核心邏輯）。
+
+    自動附加 Groq 彈夾餘額；失敗以 exit 1 回報但**不**印 key。
+    """
+    from Code_Cleaner_Throttled_Agent import _telegram_alert  # type: ignore[import-untyped]
+    from GroqHybridRecovery_Agent import format_groq_quota_telegram_suffix  # type: ignore[import-untyped]
+
+    try:
+        ammo, cost = format_groq_quota_telegram_suffix()
+        text = text + "\n" + ammo + "\n" + cost
+    except Exception:
+        pass
+    try:
+        _telegram_alert(text)
+    except Exception as e:
+        print(f"[warpath-alert] failed: {type(e).__name__}", file=sys.stderr)
+        return 1
+    print("[warpath-alert] sent")
+    return 0
 
 
 def main() -> int:

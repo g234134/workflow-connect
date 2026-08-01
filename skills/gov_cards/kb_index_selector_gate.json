@@ -1,0 +1,22 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "kb.index.selector_gate",
+  "title": "KB index selector gate (reference)",
+  "brief": "Skeleton reference for decide_kb_index_tool_gate pure function. Wave C prod 接線留項: GOV_KB_INDEX_SELECTOR_HOOK_ENABLED default OFF; not wired into ask selector or prod gate by this catalog.",
+  "domain": "kb",
+  "module_path": "core/kb_index_selector_hook.py",
+  "entry_kind": "python_module",
+  "entrypoint": "decide_kb_index_tool_gate",
+  "inputs": [
+    "kb_index_status (ready|stale|missing)",
+    "tool_name (repo retrieve/graph class)"
+  ],
+  "outputs": [
+    "gate dict (ok, decision, message, audit_tags)"
+  ],
+  "verify_command": "python -m unittest tests.test_kb_index_selector_hook -v",
+  "wave_ticket": "WAVE-B-P2-KB-SELECTOR-HOOK-MIN",
+  "review_status": "approved",
+  "applicable_roles": ["reviewer", "implementer"],
+  "skeleton": true
+}

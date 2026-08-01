@@ -12,6 +12,7 @@
 ```
 cases/_TEMPLATE_case/
   intake.json              # 接案 intake 清单（Stage A SSOT）
+  automation_state.json    # 自动化控制面 state（start/pause/stop；见 control-plane doc）
   delivery_signoff.md      # 交付签核占位（P4 填模板内容）
   raw/                     # 客户原始档（只读；清洗不覆盖）
   cleaned/                 # 清洗产物 CSV
@@ -23,6 +24,7 @@ cases/_TEMPLATE_case/
 ```
 cases/<client_ref>/<case_id>/
   intake.json
+  automation_state.json
   delivery_signoff.md
   raw/
   cleaned/
@@ -43,6 +45,7 @@ cases/<client_ref>/<case_id>/
 | 路径 | 阶段 | 说明 |
 |------|------|------|
 | `intake.json` | A · Intake | 接案元数据；字段见 `_TEMPLATE_case/intake.json` 与下文 |
+| `automation_state.json` | Control | start/pause/resume/stop 状态；见 `docs/tabular-cleaning-control-plane-v1.md` |
 | `raw/<source_file>` | A | 原始 CSV/Excel（本 MVP 以 CSV 为主） |
 | `cleaned/*.csv` | B · Cleaning | 清洗后交付表 |
 | `reports/cleaning_stats.json` | B–C | 剖析 before/after |
@@ -91,6 +94,8 @@ cases/<client_ref>/<case_id>/
 - `demo_phase` 等示例案可能采用手工案号或特别名称（遗留路径，合法但非 CLI 产物）。
 - 正式 case 推荐使用 `scripts/new_cleaning_case.py` 生成标准路径 `cases/<client_ref>/<case_id>/`，其中 `case_id` 为 UTC 年 `YYYY-NNNN` 自增编号。
 - gate 裁决由 `scripts/check_case_eligibility.py` 负责；建案 CLI 只创建目录与 `intake.json`，不做业务裁决。
+- **自动化控制面**：`scripts/manage_tabular_automation_state.py`（start/pause/resume/stop/status）；state 落盘 `automation_state.json`。
+- **运营查现况**：运营查询 Tabular 案件现况，请用 `scripts/tabular_ops_summary.py`（`--case-id` / `--client-ref` / `--all` · 表格或 `--format json`）。
 - **历史案例索引**：`cases/index.json`（由 `scripts/build_cases_index.py` 刷新）；只读查询见下文「查历史案例（lookup）」。
 
 ---

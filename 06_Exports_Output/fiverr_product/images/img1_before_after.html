@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1280px; height:769px; background:#0f0f1a; font-family:'Segoe UI',system-ui,sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; overflow:hidden; }
+
+.title { color:#fff; font-size:38px; font-weight:800; text-align:center; margin-bottom:8px; letter-spacing:-0.5px; }
+.title span { color:#3a7bd5; }
+.subtitle { color:#8888aa; font-size:16px; text-align:center; margin-bottom:36px; }
+
+.container { display:flex; gap:32px; align-items:stretch; }
+
+.panel { width:520px; border-radius:16px; overflow:hidden; position:relative; }
+.panel-label { position:absolute; top:0; left:0; right:0; padding:10px 20px; font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:2px; text-align:center; z-index:2; }
+.panel-label.before { background:linear-gradient(135deg,#e94560,#c0392b); color:#fff; }
+.panel-label.after { background:linear-gradient(135deg,#00e676,#00c853); color:#0f0f1a; }
+
+.table-wrap { background:#1a1a2e; padding:16px; padding-top:44px; }
+table { width:100%; border-collapse:collapse; }
+th { background:#252540; color:#8888aa; font-size:12px; padding:8px 10px; text-align:left; font-weight:600; }
+td { padding:7px 10px; font-size:13px; border-bottom:1px solid #252540; }
+.row-normal td { color:#ccc; }
+.row-dirty td { color:#ff6b6b; }
+.row-dirty { background:rgba(233,69,96,0.08); }
+.row-clean td { color:#a0f0b0; }
+.row-clean { background:rgba(0,230,118,0.06); }
+.cell-null { color:#e94560; font-weight:700; background:rgba(233,69,96,0.15); border-radius:4px; text-align:center; }
+.cell-fixed { color:#00e676; font-weight:700; background:rgba(0,230,118,0.12); border-radius:4px; }
+.cell-ok { color:#666; }
+
+.badge-row { display:flex; gap:8px; margin-top:12px; }
+.badge { padding:4px 10px; border-radius:6px; font-size:11px; font-weight:600; }
+.badge.red { background:rgba(233,69,96,0.2); color:#e94560; }
+.badge.green { background:rgba(0,230,118,0.15); color:#00e676; }
+
+.arrow { display:flex; align-items:center; justify-content:center; color:#3a7bd5; font-size:48px; flex-shrink:0; }
+
+.bottom-bar { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(135deg,#1a1a2e,#12121c); padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
+.bottom-bar .stat { color:#8888aa; font-size:13px; }
+.bottom-bar .stat strong { color:#fff; }
+.bottom-bar .cta { background:#3a7bd5; color:#fff; padding:8px 20px; border-radius:8px; font-size:14px; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="title">From <span>Messy</span> to <span>Clean</span> in 24 Hours</div>
+<div class="subtitle">Automated data cleaning with zero data loss</div>
+
+<div class="container">
+  <!-- BEFORE -->
+  <div class="panel">
+    <div class="panel-label before">❌ Before</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Sales Rep</th><th>Region</th><th>Product</th><th>Amount</th><th>Status</th></tr>
+        <tr class="row-dirty"><td>john smith</td><td>North</td><td class="cell-null">NULL</td><td class="cell-null">—</td><td>Pending</td></tr>
+        <tr class="row-normal"><td class="cell-null">NULL</td><td>north</td><td>Widget A</td><td>1,250</td><td>Closed</td></tr>
+        <tr class="row-dirty"><td>JOHN SMITH</td><td class="cell-null">NULL</td><td>Widget B</td><td>—</td><td class="cell-null">NULL</td></tr>
+        <tr class="row-normal"><td>sara lee</td><td>South</td><td class="cell-null">NULL</td><td>890</td><td>Pending</td></tr>
+        <tr class="row-dirty"><td class="cell-null">NULL</td><td>SOUTH</td><td>Widget A</td><td class="cell-null">NULL</td><td>closed</td></tr>
+      </table>
+      <div class="badge-row">
+        <span class="badge red">1,690 null values</span>
+        <span class="badge red">84% dirty</span>
+        <span class="badge red">Mixed formats</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <!-- AFTER -->
+  <div class="panel">
+    <div class="panel-label after">✅ After</div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>sales_rep</th><th>region</th><th>product</th><th>amount</th><th>status</th></tr>
+        <tr class="row-clean"><td class="cell-fixed">John Smith</td><td>North</td><td class="cell-fixed">Widget A</td><td class="cell-fixed">$1,250</td><td>Pending</td></tr>
+        <tr class="row-normal"><td class="cell-fixed">N/A</td><td>North</td><td>Widget A</td><td>$1,250</td><td>Closed</td></tr>
+        <tr class="row-clean"><td>John Smith</td><td class="cell-fixed">North</td><td>Widget B</td><td class="cell-fixed">$0</td><td class="cell-fixed">N/A</td></tr>
+        <tr class="row-normal"><td>Sara Lee</td><td>South</td><td class="cell-fixed">Widget A</td><td>$890</td><td>Pending</td></tr>
+        <tr class="row-clean"><td class="cell-fixed">N/A</td><td>South</td><td>Widget A</td><td class="cell-fixed">$0</td><td>Closed</td></tr>
+      </table>
+      <div class="badge-row">
+        <span class="badge green">0 null values</span>
+        <span class="badge green">100% clean</span>
+        <span class="badge green">snake_case</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="stat">📊 <strong>2,004</strong> rows cleaned &nbsp;|&nbsp; <strong>1,690</strong> issues fixed &nbsp;|&nbsp; <strong>0</strong> data loss</div>
+  <div class="cta">Start Your Cleaning →</div>
+</div>
+</body>
+</html>

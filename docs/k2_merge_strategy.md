@@ -101,4 +101,5 @@ python -m unittest tests.test_k2_merge_adapter tests.test_k2_ask_shadow -v
 - `docs/k2_behavior_profile.md` — Chat A 行为画像  
 - `docs/k2_ask_shadow_findings.md` — 早期 findings  
 - `core/k2_merge_adapter.py` — 实现  
-- `docs/k2_deployment_governance.md` — Chat C rollout 审批、Phase、指标与回退
+- `docs/k2_deployment_governance.md` — Chat C rollout 审批、Phase、指标与回退  
+- `docs/phase3-5-cost-model-governance-contract-v1.md` — Phase 3.5 gate 分类 SSOT（shadow export · severe eval 与 nightly `infra_risk` 对齐；**不含** prod canary 授权）

@@ -1,0 +1,24 @@
+{
+  "schema_version": "gov_tool_card_v1",
+  "tool_id": "obs.eval.stats",
+  "title": "Eval export statistics",
+  "brief": "Analyze eval_export JSONL for tag distributions, needs_review ratio, and suggested CI thresholds.",
+  "domain": "obs",
+  "module_path": "observability/eval_stats.py",
+  "entry_kind": "python_cli",
+  "entrypoint": "main",
+  "cli_invocation": "python -m observability.eval_stats tests/fixtures/eval/eval_export_sample.jsonl",
+  "inputs": [
+    "eval_export.jsonl path(s)",
+    "--group-by",
+    "--min-samples"
+  ],
+  "outputs": [
+    "stats summary dict",
+    "optional observability/eval_stats_report.md append"
+  ],
+  "verify_command": "python -m unittest tests.test_eval_stats -v",
+  "wave_ticket": "WAVE-B-P1-EVAL-GATE-REPORT-BOOTSTRAP",
+  "review_status": "approved",
+  "applicable_roles": ["orchestrator", "reviewer", "implementer"]
+}

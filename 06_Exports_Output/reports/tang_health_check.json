@@ -1,0 +1,46 @@
+{
+  "check_time": "2026-07-25T09:44:28Z",
+  "agent": "hermes",
+  "project_root": "D:\\大唐三省六部",
+  "all_ok": true,
+  "checks": [
+    {
+      "id": "P1-elite-cache-empty",
+      "name": "精英快取（elite_cache）",
+      "ok": true,
+      "message": "elite_count=39, min_heuristic_score=7.5",
+      "evidence": "elite_count=39; score=7.5; built_at=2026-07-25T09:40:45+00:00"
+    },
+    {
+      "id": "P3-ammo-margin-always-100",
+      "name": "Groq 配額狀態（quota_state）",
+      "ok": true,
+      "message": "requests_per_model 正常: llama-3.3-70b-versatile=5",
+      "evidence": "utc_date=2026-07-25; llama-3.3-70b-versatile=5"
+    },
+    {
+      "id": "P2-fake-savings-number",
+      "name": "Groq 接線（groq_chat_failover）",
+      "ok": true,
+      "message": "groq_chat_failover 已接線",
+      "evidence": "wiring_present"
+    },
+    {
+      "id": "P4-local-similarity-null",
+      "name": "本地相似度（similarity）",
+      "ok": true,
+      "message": "9/9 筆有實數值: [0.83, 1.33, 0.96, 0.86, 1.48]",
+      "evidence": "ok_count=9; total=9"
+    },
+    {
+      "id": "GEN-reports-dir",
+      "name": "產出目錄完整性",
+      "ok": true,
+      "message": "reports 目錄存在，含 146 個 .json",
+      "evidence": "file_count=146"
+    }
+  ],
+  "ledger_changed": false,
+  "new_entries_added": 0,
+  "regressions_detected": 0
+}

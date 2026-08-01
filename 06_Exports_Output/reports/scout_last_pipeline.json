@@ -1,138 +1,156 @@
 {
   "schema_version": "1.0",
-  "saved_at": "2026-06-04T19:00:20+00:00",
-  "run_tag": "88b45b96540046e6ba13df271b3a984b",
+  "saved_at": "2026-08-01T19:00:27+00:00",
+  "run_tag": "4b6bca8222df46fe917f5afec1f26ab2",
   "lead": {
     "platform": "internal_wave",
     "title": "全量數據清算大戰役（Asset_Value 精煉波次）",
-    "description": "Run_ID=88b45b96540046e6ba13df271b3a984b  sampled=100 pool=36236 avg=4.626 grades={'B': 48, 'D': 38, 'A': 10, 'C': 4}",
+    "description": "Run_ID=4b6bca8222df46fe917f5afec1f26ab2  sampled=100 pool=36274 avg=5.603 grades={'A': 14, 'C': 4, 'B': 61, 'D': 21}",
     "budget": "",
     "url": ""
   },
   "match_report": {
     "ok": true,
-    "pool_size": 36236,
+    "pool_size": 36274,
     "scanned": 100,
     "match_source": "post_wave_asset_value_eval",
-    "elite_assets_matched": 10,
+    "elite_assets_matched": 14,
     "coverage_pct": 0.0,
     "is_high_yield": true,
     "best_match": {
-      "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0003_231_948c420dde43c414_AI_Chariot_Legacy_666_1.0.0_20260508__functions.py.json",
-      "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__functions.py",
-      "name": "AI_Chariot_Legacy_666_1.0.0_20260508__functions.py",
+      "stored_path": "D:\\大唐三省六部\\05_Temp_Cache\\cleaned_full\\full_w0040_108_dfcd1fc6dfdefba7_AI_Chariot_Legacy_666_1.0.0_20260508_web_test.py.json",
+      "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_web_test.py",
+      "name": "AI_Chariot_Legacy_666_1.0.0_20260508_web_test.py",
       "extension": ".py",
       "original_type": "python",
-      "size_bytes": 14697,
-      "content_sha256": "948c420dde43c414c6d4b44879d62cc70aabe121102174337bba80cfcf546db9",
+      "size_bytes": 129622,
+      "content_sha256": "dfcd1fc6dfdefba75091be202f177fbb9a7bc9a1fdc17447e6b7453fcb563af4",
       "clean_status": "ok",
       "local_score": 8.8,
       "confidence": 0.95,
       "tags": [
         "type:python",
-        "classes:6",
-        "funcs:30"
+        "classes:20",
+        "funcs:1"
       ],
       "groq_used": false,
       "groq_reason": null,
       "groq_value": null,
       "groq_rationale": null,
       "case_library_hit": false,
-      "local_judge_skip": false,
       "final_score": 8.8,
-      "grade": "A"
+      "grade": "A",
+      "local_similarity_pct": 1.06
     },
     "top_matches": [
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__functions.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508__functions.py",
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_web_test.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_web_test.py",
         "heuristic_score": 8.8,
         "final_score": 8.8,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 1.06
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_response_input_param.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_response_input_param.py",
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__agent_engines_utils.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508__agent_engines_utils.py",
         "heuristic_score": 8.8,
         "final_score": 8.8,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 1.2
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_responder.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_responder.py",
-        "heuristic_score": 8.56,
-        "final_score": 8.56,
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modular_metaclip_2.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modular_metaclip_2.py",
+        "heuristic_score": 8.8,
+        "final_score": 8.8,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 1.02
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_pipe_methods.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_pipe_methods.py",
-        "heuristic_score": 8.32,
-        "final_score": 8.32,
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mistral4.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_mistral4.py",
+        "heuristic_score": 8.797,
+        "final_score": 8.797,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 0.72
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_exported_program.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_exported_program.py",
-        "heuristic_score": 8.15,
-        "final_score": 8.15,
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_external_config.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_external_config.py",
+        "heuristic_score": 8.36,
+        "final_score": 8.36,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 0.8
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508__geometry.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508__geometry.py",
-        "heuristic_score": 7.99,
-        "final_score": 7.99,
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_deeplabv3.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_deeplabv3.py",
+        "heuristic_score": 8.27,
+        "final_score": 8.27,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 0.91
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_modeling_vitmatte.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_modeling_vitmatte.py",
-        "heuristic_score": 7.82,
-        "final_score": 7.82,
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_sam.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_image_processing_pil_sam.py",
+        "heuristic_score": 7.85,
+        "final_score": 7.85,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 0.7
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_multithreading.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_multithreading.py",
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_after_aot.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_after_aot.py",
+        "heuristic_score": 7.85,
+        "final_score": 7.85,
+        "grade": "A",
+        "local_similarity_pct": 1.41
+      },
+      {
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_configuration_qwen3_omni_moe.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_configuration_qwen3_omni_moe.py",
+        "heuristic_score": 7.807,
+        "final_score": 7.807,
+        "grade": "A",
+        "local_similarity_pct": 1.23
+      },
+      {
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_pydev_console_utils.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_pydev_console_utils.py",
+        "heuristic_score": 7.72,
+        "final_score": 7.72,
+        "grade": "A",
+        "local_similarity_pct": 1.11
+      },
+      {
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_array_ops.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_array_ops.py",
         "heuristic_score": 7.61,
         "final_score": 7.61,
         "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 1.18
       },
       {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_caching.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_caching.py",
+        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_heurisch.py",
+        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_heurisch.py",
         "heuristic_score": 7.6,
         "final_score": 7.6,
         "grade": "A",
-        "local_similarity_pct": null
-      },
-      {
-        "source_path": "D:\\大唐三省六部\\02_Agents_Core\\AI_Chariot_Legacy_666_1.0.0_20260508_test_demidovich.py",
-        "name": "AI_Chariot_Legacy_666_1.0.0_20260508_test_demidovich.py",
-        "heuristic_score": 7.57,
-        "final_score": 7.57,
-        "grade": "A",
-        "local_similarity_pct": null
+        "local_similarity_pct": 1.18
       }
     ],
     "grades": {
-      "B": 48,
-      "D": 38,
-      "A": 10,
-      "C": 4
+      "A": 14,
+      "C": 4,
+      "B": 61,
+      "D": 21
     },
-    "avg_score": 4.626,
-    "groq_calls": 1,
-    "groq_success": 1,
-    "wave_report_path": "D:/大唐三省六部/06_Exports_Output/reports/asset_value_eval_88b45b96540046e6ba13df271b3a984b.json"
+    "avg_score": 5.603,
+    "groq_calls": 6,
+    "groq_success": 6,
+    "wave_report_path": "D:/大唐三省六部/06_Exports_Output/reports/asset_value_eval_4b6bca8222df46fe917f5afec1f26ab2.json",
+    "local_similarity_filled": 14,
+    "local_similarity_persisted_to_eval": 14
   }
 }

@@ -1,12 +1,100 @@
 schema_version: v1-archive
 parent: 04_Workflows/command_queue/QUEUE.yaml
-last_sync: '2026-07-12'
+last_sync: '2026-07-13'
 note: DONE / DONE_WITH_GAPS 歸檔；活躍索引見 QUEUE.yaml。關票時 Orchestrator 將列移入本檔。
 stats:
-  archived_total: 48
+  archived_total: 52
   done: 48
-  done_with_gaps: 0
+  done_with_gaps: 4
 queue:
+- id: WH-P85-bridge-ci-hardening-v2
+  wave: Wave-P8.5
+  group: G5
+  title: Bridge Smoke A CI advisory 17→20 顯示名／path-filter
+  status: DONE_WITH_GAPS
+  lifecycle_phase: O
+  phase_targets:
+  - P8.5
+  state_file: 04_Workflows/tickets/WH-P85-bridge-ci-hardening-v2_state.md
+  frame_ref: 04_Workflows/tickets/WH-P85-bridge-ci-hardening-v2_state.md#FRAME
+  depends_on:
+  - WH-P85-bridge-fixture-dom-port-v1
+  next_action: closed · gaps 註記不另開（遠端 GA）· ≠ Phase closure
+  closure_tag: branch_ai_closed
+  evidence:
+    unittest: 20/20
+  gaps:
+  - remote-smoke-a-not-rerun
+  closed_at: '2026-07-13'
+
+- id: WH-P85-bridge-fixture-dom-port-v1
+  wave: Wave-P8.5
+  group: G5
+  title: Bridge file-backed DOM fixture port（dom_fixture_ref）
+  status: DONE_WITH_GAPS
+  lifecycle_phase: O
+  phase_targets:
+  - P8.5
+  state_file: 04_Workflows/tickets/WH-P85-bridge-fixture-dom-port-v1_state.md
+  frame_ref: 04_Workflows/tickets/WH-P85-bridge-fixture-dom-port-v1_state.md#FRAME
+  depends_on:
+  - WD-P85-T1
+  next_action: closed · follow-up WH-P85-bridge-ci-hardening-v2（17→20 · 勿重開 v1）· ≠ Phase
+    closure
+  closure_tag: branch_ai_closed
+  evidence:
+    unittest: 20/20
+    smoke_b: 7/7
+    browser_runner: 14/14
+  gaps:
+  - ci-display-name-17-vs-20
+  - negative-sparse-no-dedicated-test
+  closed_at: '2026-07-13'
+
+- id: WH-P85-bridge-ci-hardening-v1
+  wave: Wave-P8.5
+  group: G5
+  title: Bridge Smoke A CI advisory 14→17 顯示名／path-filter
+  status: DONE_WITH_GAPS
+  lifecycle_phase: O
+  phase_targets:
+  - P8.5
+  state_file: 04_Workflows/tickets/WH-P85-bridge-ci-hardening-v1_state.md
+  frame_ref: 04_Workflows/tickets/WH-P85-bridge-ci-hardening-v1_state.md#FRAME
+  depends_on:
+  - WH-P85-bridge-run-record-jsonl-v1
+  next_action: closed · gaps 註記不另開（遠端 GA／OSError）· parallel fixture-dom 不動 · ≠ Phase
+    closure
+  closure_tag: branch_ai_closed
+  evidence:
+    unittest: 17/17
+  gaps:
+  - remote-smoke-a-not-rerun
+  - optional-oserror-failopen-test
+  closed_at: '2026-07-13'
+
+- id: WH-P85-bridge-run-record-jsonl-v1
+  wave: Wave-P8.5
+  group: G5
+  title: Bridge opt-in run-record JSONL 側車
+  status: DONE_WITH_GAPS
+  lifecycle_phase: O
+  phase_targets:
+  - P8.5
+  state_file: 04_Workflows/tickets/WH-P85-bridge-run-record-jsonl-v1_state.md
+  frame_ref: 04_Workflows/tickets/WH-P85-bridge-run-record-jsonl-v1_state.md#FRAME
+  next_action: closed · follow-up WH-P85-bridge-ci-hardening-v1 · parallel fixture-dom · ≠ Phase
+    closure
+  closure_tag: branch_ai_closed
+  evidence:
+    unittest: 17/17
+  gaps:
+  - ci-display-name-14-vs-17
+  - remote-smoke-a-not-rerun
+  - frame-ac2-historical-14
+  - optional-oserror-failopen-test
+  closed_at: '2026-07-13'
+
 - id: W5-T6-ticket-schema-relay-ops-ssot-v1
   wave: W5
   group: G5

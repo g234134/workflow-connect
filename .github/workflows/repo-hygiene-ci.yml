@@ -1,0 +1,24 @@
+name: Repo hygiene gate (W4-D)
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+# 只做一個 job：hygiene
+# 版控衛生檢查：快取目錄 / >50MB 大檔 / 內嵌 git repo 不得進 index
+# 失敗 → exit 1 → block PR merge（配合 main protection required status check）
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run repo hygiene check
+        shell: bash
+        run: |
+          if ! bash scripts/repo_hygiene_check.sh; then
+            echo "::error::版控衛生檢查失敗 — 依 dev-workflow §7 處置清理後再推（快取目錄 git rm --cached、大檔 LFS、內嵌 repo 改 submodule 或 ignore）"
+            exit 1
+          fi
+          echo "✅ 版控衛生檢查全部通過"
